@@ -5,8 +5,8 @@
 - ID: classification_of_start_only_antipodal_colorings
 - Parent Section: higher_memory_norine_geodesics
 - Position: 6
-- Row version: 2
-- Development version: 2
+- Row version: 3
+- Development version: 3
 - Composition version: None
 - Composition stale: False
 
@@ -29,7 +29,7 @@ f(X\triangle S)=1-f(X)
 \]
 for every \(S\subseteq V\) of size
 \[
-d=n-k.
+d=n-r.
 \]
 
 When \(1\le d\le n-1\), such an \(f\) exists iff \(d\) is odd. In that case the only possibilities are

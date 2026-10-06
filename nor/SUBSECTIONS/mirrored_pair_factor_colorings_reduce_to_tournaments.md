@@ -5,8 +5,8 @@
 - ID: mirrored_pair_factor_colorings_reduce_to_tournaments
 - Parent Section: higher_memory_norine_geodesics
 - Position: 8
-- Row version: 1
-- Development version: 1
+- Row version: 2
+- Development version: 2
 - Composition version: None
 - Composition stale: False
 
@@ -20,17 +20,17 @@
 
 A substantial subclass of the directed tuple conjecture reduces to ordinary tournament Hamilton paths.
 
-Fix (kge2), and choose mirrored positions
+Fix (rge2), and choose mirrored positions
 [
-1le i<k+1-ile k.
+1le i<r+1-ile r.
 ]
 Set
 [
-d=k+1-2i>0.
+d=r+1-2i>0.
 ]
 Suppose the coloring factors through those two mirrored positions:
 [
-h(a_1,ldots,a_k)=t(a_i,a_{k+1-i}),
+h(a_1,ldots,a_k)=t(a_i,a_{r+1-i}),
 ]
 where (t) is a tournament coloring,
 [
@@ -38,7 +38,7 @@ t(y,x)=1-t(x,y).
 ]
 Then the reversal law for (h) is automatic.
 
-**Proposition.** Every such (h) admits a permutation whose entire sliding (k)-tuple word is constant. Hence (N_k) holds in zero-change form for all mirrored-pair factor colorings.
+**Proposition.** Every such (h) admits a permutation whose entire sliding (r)-tuple word is constant. Hence (N_k) holds in zero-change form for all mirrored-pair factor colorings.
 
 **Proof.** It is enough to construct a permutation
 [
@@ -52,9 +52,9 @@ qquad
 ]
 Indeed, a window beginning at position (j) has color
 [
-h(v_j,ldots,v_{j+k-1})
+h(v_j,ldots,v_{j+r-1})
 =
-t(v_{j+i-1},v_{j+k-i}),
+t(v_{j+i-1},v_{j+r-i}),
 ]
 and the two indices differ by (d).
 
@@ -64,11 +64,11 @@ Now partition the ground vertices arbitrarily into subsets having the correspond
 [
 t(v_p,v_{p+d})=0
 ]
-for every relevant (p). Thus every sliding (k)-window has color (0). ∎
+for every relevant (p). Thus every sliding (r)-window has color (0). ∎
 
-### Structural consequence for (k=3)
+### Structural consequence for (r=3)
 
-For (k=3), every directed tuple coloring can be written as a family of tournaments
+For (r=3), every directed tuple coloring can be written as a family of tournaments
 [
 T_bquad (bin V),
 ]

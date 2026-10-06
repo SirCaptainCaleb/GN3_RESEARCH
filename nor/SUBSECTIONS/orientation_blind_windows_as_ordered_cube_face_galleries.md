@@ -5,8 +5,8 @@
 - ID: orientation_blind_windows_as_ordered_cube_face_galleries
 - Parent Section: higher_memory_norine_geodesics
 - Position: 7
-- Row version: 1
-- Development version: 1
+- Row version: 2
+- Development version: 2
 - Composition version: None
 - Composition stale: False
 
@@ -21,7 +21,7 @@
 
 The support-orientation-blind repair has a cleaner geometric formulation.
 
-Represent a geodesic \(k\)-segment by
+Represent a geodesic \(r\)-segment by
 \[
 (X;v_1,\ldots,v_k),
 \]
@@ -37,7 +37,7 @@ Support-orientation blindness means that toggling any subset of the used coordin
 
 Therefore the color depends only on:
 
-1. the \(k\)-dimensional cube face
+1. the \(r\)-dimensional cube face
    \[
    F=\{Y\subseteq V:Y\setminus K=X\setminus K\},
    \]
@@ -48,9 +48,9 @@ Therefore the color depends only on:
    \]
    of the coordinate directions of that face.
 
-Thus the repaired local datum is naturally a binary coloring of **ordered \(k\)-faces** of \(Q_V\).
+Thus the repaired local datum is naturally a binary coloring of **ordered \(r\)-faces** of \(Q_V\).
 
-For \(k=1\), an ordered one-face has no nontrivial axis ordering, so this is exactly an ordinary undirected cube-edge coloring. For the translation-invariant GN3 subclass at \(k=3\), the color further forgets the location of the 3-face and depends only on its ordered coordinate directions.
+For \(r=1\), an ordered one-face has no nontrivial axis ordering, so this is exactly an ordinary undirected cube-edge coloring. For the translation-invariant GN3 subclass at \(r=3\), the color further forgets the location of the 3-face and depends only on its ordered coordinate directions.
 
 ### Sliding galleries induced by antipodal geodesics
 
@@ -64,23 +64,23 @@ be an antipodal geodesic with flip order
 \]
 For each
 \[
-0\le i\le n-k
+0\le i\le n-r
 \]
-let \(F_i\) be the ordered \(k\)-face with free directions
+let \(F_i\) be the ordered \(r\)-face with free directions
 \[
-(v_{i+1},\ldots,v_{i+k})
+(v_{i+1},\ldots,v_{i+r})
 \]
 and with outside coordinates fixed as in \(X_i\).
 
-Then consecutive faces \(F_i,F_{i+1}\) meet in the \((k-1)\)-face whose free directions are
+Then consecutive faces \(F_i,F_{i+1}\) meet in the \((r-1)\)-face whose free directions are
 \[
-(v_{i+2},\ldots,v_{i+k}).
+(v_{i+2},\ldots,v_{i+r}).
 \]
-Indeed \(F_{i+1}\) fixes the departing coordinate \(v_{i+1}\) to its value after the geodesic crosses it, while \(F_i\) fixes the entering coordinate \(v_{i+k+1}\) to its value before it is crossed; all other fixed coordinates agree. Their intersection is therefore exactly a codimension-one common face.
+Indeed \(F_{i+1}\) fixes the departing coordinate \(v_{i+1}\) to its value after the geodesic crosses it, while \(F_i\) fixes the entering coordinate \(v_{i+r+1}\) to its value before it is crossed; all other fixed coordinates agree. Their intersection is therefore exactly a codimension-one common face.
 
-Hence every antipodal cube geodesic canonically determines a **sliding ordered-\(k\)-face gallery**
+Hence every antipodal cube geodesic canonically determines a **sliding ordered-\(r\)-face gallery**
 \[
-F_0,F_1,\ldots,F_{n-k}.
+F_0,F_1,\ldots,F_{n-r}.
 \]
 The repaired one-change problem asks for such an antipodal sliding gallery whose face-color word changes at most once.
 
@@ -98,9 +98,9 @@ and the color is complemented.
 
 This is the direct higher-dimensional analogue of the original edge problem:
 
-- \(k=1\): colored cube edges along an antipodal geodesic;
-- general \(k\): colored ordered \(k\)-faces along the sliding gallery cut out by an antipodal geodesic.
+- \(r=1\): colored cube edges along an antipodal geodesic;
+- general \(r\): colored ordered \(r\)-faces along the sliding gallery cut out by an antipodal geodesic.
 
-The object being colored is no longer an oriented path fragment with an accidental choice of starting corner. The entire \(2^k\)-vertex face is the local cell, while the axis order records the directed memory that is essential for GN3.
+The object being colored is no longer an oriented path fragment with an accidental choice of starting corner. The entire \(2^r\)-vertex face is the local cell, while the axis order records the directed memory that is essential for GN3.
 
 This face-gallery formulation preserves both intended anchor cases and removes the uniform rank-parity defect. It is therefore a stronger candidate for the corrected NOR grand conjecture than full translation invariance.

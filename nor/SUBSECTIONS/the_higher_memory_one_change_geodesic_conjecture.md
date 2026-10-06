@@ -1,112 +1,96 @@
-# The directed ordered-tuple one-change conjecture
+# The ordered-tuple one-change conjecture
 
 ## Metadata
 
 - ID: the_higher_memory_one_change_geodesic_conjecture
 - Parent Section: higher_memory_norine_geodesics
 - Position: 1
-- Row version: 5
-- Development version: 3
-- Composition version: 2
-- Composition stale: True
+- Row version: 7
+- Development version: 4
+- Composition version: 3
+- Composition stale: False
 
 ## Composition
 
 
-Fix \(k\ge1\). Color every ordered \((k+1)\)-tuple
-\[
-(X_0,\ldots,X_k)
-\]
-forming a \(k\)-edge cube geodesic segment. Impose only the antipodal-reversal rule
-\[
-\chi(\bar X_k,\ldots,\bar X_0)=1-\chi(X_0,\ldots,X_k).
-\]
+(N_k) is indexed by the arity of the colored cube-vertex tuple. It colors ordered
+[
+(X_0,ldots,X_{k-1})
+]
+of (k) consecutive vertices and asks for an antipodal geodesic whose sliding (k)-tuple color word changes at most once.
 
-**Grand Conjecture \(N_k\).** Every such coloring admits an antipodal cube geodesic whose consecutive ordered-\(k\)-segment colors change at most once.
+Thus (N_1) is vertex coloring, (N_2) is edge coloring, (N_3) colors three-vertex/two-step windows, and (N_4) colors four-vertex/three-step windows.
 
-For \(k=1\), ordinary Norine edge colorings form the reversal-invariant subclass. For \(k=3\), every GN3 boundary tournament is a canonical subclass via
-\[
-\chi(X_0,X_1,X_2,X_3)=h(u,v,w),
-\]
-where \(u,v,w\) are the successive flipped coordinates. Every antipodal geodesic flips each coordinate exactly once, so its ordered-window word is exactly the GN3 status word of its flip order.
+When an (N_k) coloring is translation-invariant, it may be represented by a coordinate label
+[
+h(v_1,ldots,v_{k-1}),
+]
+so the coordinate-label arity is one less than the NOR index. In particular, ternary coordinate data such as GN3 belong to (N_4).
 
 
 ## Development
 
 
-## Grand conjecture: directed ordered tuples
+## Grand conjecture: tuple arity is the index
 
-Let \(V\) be an \(n\)-element set and fix \(k\ge2\).
+Let (Q_V) be the Boolean cube on coordinate set (V), and fix (kge 1).
 
-A directed ordered-\(k\)-tuple coloring is a binary function
-\[
-h(v_1,\ldots,v_k)\in\{0,1\}
-\]
-on ordered \(k\)-tuples of distinct elements of \(V\), satisfying reversal antisymmetry
-\[
-h(v_k,\ldots,v_1)=1-h(v_1,\ldots,v_k).
-\]
+A **colored (k)-tuple** is an ordered tuple
+[
+(X_0,ldots,X_{k-1})
+]
+of (k) consecutive vertices on a cube geodesic. Thus it contains (k-1) cube steps. The project index (k) is always the arity of this colored tuple.
 
-For a permutation
-\[
-\pi=(v_1,\ldots,v_n),
-\]
-its induced word is
-\[
-h(v_1,\ldots,v_k),\,
-h(v_2,\ldots,v_{k+1}),\ldots,
-h(v_{n-k+1},\ldots,v_n).
-\]
+A binary (N_k) coloring assigns
+[
+chi(X_0,ldots,X_{k-1})in{0,1}
+]
+to every permitted ordered geodesic (k)-tuple, subject to the active antipodal rule
+[
+chi(ar X_{k-1},ldots,ar X_0)=1-chi(X_0,ldots,X_{k-1}).
+]
 
-### Grand Conjecture \(N_k\)
+For an antipodal geodesic
+[
+G=(X_0,ldots,X_n),qquad X_n=ar X_0,
+]
+its (N_k) word is the sliding (k)-tuple word
+[
+chi(X_0,ldots,X_{k-1}),
+chi(X_1,ldots,X_k),
+ldots,
+chi(X_{n-k+1},ldots,X_n).
+]
 
-For every \(n\ge k\) and every such directed coloring \(h\), there exists a permutation whose induced word changes value at most once.
+### Grand Conjecture (N_k)
 
-Equivalently, some word is of the form
-\[
-0^*1^*
-\quad\text{or}\quad
-1^*0^*.
-\]
+Every admissible (N_k) coloring has an antipodal geodesic whose sliding (k)-tuple word changes value at most once, equivalently is of the form
+[
+0^*1^*qquad	ext{or}qquad1^*0^*.
+]
 
-### Cube formulation
+### Indexing examples
 
-Given an antipodal cube geodesic
-\[
-X_0,\ldots,X_n=\bar X_0
-\]
-with successive flipped coordinates
-\[
-v_1,\ldots,v_n,
-\]
-the directed tuple word is the word above.
+- (N_1) colors cube vertices.
+- (N_2) colors consecutive vertex pairs, i.e. cube edges.
+- (N_3) colors consecutive vertex triples, i.e. two-step windows.
+- (N_4) colors consecutive vertex quadruples, i.e. three-step windows; the GN3 coordinate-triple model lives here.
 
-Thus the coloring depends only on the ordered flipped coordinates, not on the absolute cube rank or starting vertex. Global XOR translation of the whole cube changes only the coordinate chart and leaves the directed tuple data unchanged.
+### Translation-invariant coordinate form
 
-Equivalently, \(N_k\) is the translation-invariant subclass of the larger ordered-window coloring problem.
+A (k)-tuple window has (r=k-1) successive flipped coordinates
+[
+v_1,ldots,v_r.
+]
+If its color is invariant under global symmetric-difference translation, then it has a coordinate representation
+[
+chi(X_0,ldots,X_r)=h(v_1,ldots,v_r).
+]
+Thus an (r)-ary coordinate label (h) belongs to the translation-invariant sector of (N_{r+1}), not (N_r).
 
-### Relation to known subclasses
+Under antipodal reversal this coordinate label satisfies
+[
+h(v_r,ldots,v_1)=1-h(v_1,ldots,v_r).
+]
 
-For \(k=2\), reversal antisymmetry is exactly a tournament orientation on unordered pairs, and a directed Hamilton path gives a constant word.
-
-For \(k=3\), every GN3 boundary tournament embeds by
-\[
-h(u,v,w)\in\{0,1\},
-\qquad
-h(w,v,u)=1-h(u,v,w).
-\]
-
-The ordinary undirected Norine edge problem is a related lower-memory problem but is not literally the \(k=1\) case of this reversal-antisymmetric directed-tuple definition, since reversal fixes a one-entry tuple.
-
-### Guardrail
-
-A broader coloring of full cube windows
-\[
-\chi(X_0,\ldots,X_k)
-\]
-that may depend on the absolute base vertex \(X_0\) is a different problem. Rank-parity gives a counterexample to that broader class. It does not refute \(N_k\) as defined here.
-
-
-## Uncompressed development
-
-- Development has changed since this Subsection's current composition.
+This (r=k-1) distinction is mandatory throughout NOR: (k) indexes the arity of the colored cube-vertex tuple; (r) may be used for the number of steps or the arity of a reduced coordinate label.

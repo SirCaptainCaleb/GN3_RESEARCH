@@ -5,8 +5,8 @@
 - ID: directed_nor_as_an_antipodal_cut_problem_on_overlap_words
 - Parent Section: higher_memory_norine_geodesics
 - Position: 10
-- Row version: 1
-- Development version: 1
+- Row version: 2
+- Development version: 2
 - Composition version: None
 - Composition stale: False
 
@@ -18,7 +18,7 @@
 
 ## Directed NOR as an antipodal cut problem on the injective-word overlap graph
 
-Fix (n) and (kge2). Let (mathcal O_{n,k}) be the directed overlap graph whose vertices are injective ordered (k)-tuples
+Fix (n) and (rge2). Let (mathcal O_{n,r}) be the directed overlap graph whose vertices are injective ordered (r)-tuples
 [
 (a_1,ldots,a_k),
 ]
@@ -29,7 +29,7 @@ with an arc
 whenever (b
 otin{a_1,ldots,a_k}).
 
-A directed NOR coloring (h) is simply a binary vertex coloring of (mathcal O_{n,k}) satisfying
+A directed NOR coloring (h) is simply a binary vertex coloring of (mathcal O_{n,r}) satisfying
 [
 h(Rw)=1-h(w),
 qquad
@@ -56,17 +56,17 @@ Every permutation
 ]
 induces the special overlap path
 [
-(v_1,ldots,v_k)	o(v_2,ldots,v_{k+1})	ocdots	o(v_{n-k+1},ldots,v_n).
+(v_1,ldots,v_k)	o(v_2,ldots,v_{r+1})	ocdots	o(v_{n-r+1},ldots,v_n).
 ]
-It is not an arbitrary path of (mathcal O_{n,k}): globally, the underlying coordinate sequence uses every ground element exactly once.
+It is not an arbitrary path of (mathcal O_{n,r}): globally, the underlying coordinate sequence uses every ground element exactly once.
 
 Therefore (N_k) is equivalent to the following cut-crossing statement:
 
-> Every reversal-odd 2-coloring of the vertices of (mathcal O_{n,k}) has a ground-set Hamiltonian overlap path crossing the color cut at most once.
+> Every reversal-odd 2-coloring of the vertices of (mathcal O_{n,r}) has a ground-set Hamiltonian overlap path crossing the color cut at most once.
 
-This separates two issues that are easy to conflate. Component arguments in the monochromatic subgraphs of (mathcal O_{n,k}) control arbitrary overlap walks, but NOR requires a globally injective ground-coordinate walk. Equality of monochromatic components is therefore not by itself a closure statement; one still needs a simple-word extraction mechanism.
+This separates two issues that are easy to conflate. Component arguments in the monochromatic subgraphs of (mathcal O_{n,r}) control arbitrary overlap walks, but NOR requires a globally injective ground-coordinate walk. Equality of monochromatic components is therefore not by itself a closure statement; one still needs a simple-word extraction mechanism.
 
-For (k=3), writing
+For (r=3), writing
 [
 a	o_{T_b}c Longleftrightarrow h(a,b,c)=0
 ]

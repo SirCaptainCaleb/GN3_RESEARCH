@@ -3,9 +3,9 @@
     "article_i_higher_memory_norine_geodesics": [
       {
         "id": "higher_memory_norine_geodesics",
-        "math_version": 6,
+        "math_version": 7,
         "position": 1,
-        "version": 6
+        "version": 7
       }
     ],
     "port_article_vii_ordered_tuple_norine_geometry": [
@@ -38,16 +38,16 @@
   "article_versions": {
     "article_i_higher_memory_norine_geodesics": {
       "composition": {
-        "body_chars": 1170,
-        "composed_through_revision": 2006,
-        "composition_version": 5,
+        "body_chars": 915,
+        "composed_through_revision": 2017,
+        "composition_version": 6,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Corrected Article composition after separating directed NOR, orientation-blind NOR, and the larger basepoint-dependent window model.",
+        "source_note": "Article recomposed after project-wide tuple-arity reindexing.",
         "stale": false,
         "stale_children": []
       },
-      "version": 6
+      "version": 7
     },
     "port_article_vii_ordered_tuple_norine_geometry": {
       "composition": {
@@ -72,23 +72,23 @@
   },
   "brainstorm_count": 1,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-06T05:43:40.330552+00:00",
+  "generated_at": "2026-10-06T06:05:35.10363+00:00",
   "mirror_format": 17,
   "schema": "nor",
   "section_versions": {
     "higher_memory_norine_geodesics": {
       "composition": {
-        "body_chars": 1218,
-        "composed_through_revision": 2005,
-        "composition_version": 5,
+        "body_chars": 907,
+        "composed_through_revision": 2016,
+        "composition_version": 6,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Terminology corrected: rank parity only refutes the basepoint-dependent enlargement; directed and orientation-blind NOR are distinct conjectural families.",
+        "source_note": "Recomposed after project-wide tuple-arity reindexing.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 6,
-      "version": 6
+      "math_version": 7,
+      "version": 7
     },
     "port_cube_geodesics_and_ordered_windows": {
       "composition": {
@@ -147,7 +147,7 @@
       "version": 4
     }
   },
-  "snapshot_revision": 2011,
+  "snapshot_revision": 2020,
   "startup_broadcasts": [],
   "subsection_versions": {
     "an_odd_violation_vector_whose_chamber_zeros_are_one_change_words": {
@@ -218,24 +218,24 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 2,
+      "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 2
+      "version": 3
     },
     "cochain_viewpoint_on_color_changes": {
       "composition": {
         "body_chars": 414,
         "composed_through_revision": 1977,
         "composition_version": 1,
-        "development_changed": false,
+        "development_changed": true,
         "has_composition": true,
         "source_note": "Ported cochain viewpoint from Article VII project notes.",
-        "stale": false,
+        "stale": true,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "port_cube_geodesics_and_ordered_windows",
-      "version": 2
+      "version": 3
     },
     "directed_n_k_at_nk2_via_an_odd_overlap_cycle": {
       "composition": {
@@ -245,11 +245,23 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 1
+      "version": 3
     },
     "directed_nor_as_an_antipodal_cut_problem_on_overlap_words": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "directed_sector_reduces_to_one_vertex_tight_fork_augmentation": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -284,9 +296,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 1
+      "version": 2
     },
     "freudenthal_charts_based_at_arbitrary_poles": {
       "composition": {
@@ -303,6 +315,18 @@
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
     },
+    "minimum_counterexample_endpoint_blocking": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
     "mirrored_pair_factor_colorings_reduce_to_tournaments": {
       "composition": {
         "composition_version": null,
@@ -311,9 +335,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 1
+      "version": 2
     },
     "one_change_and_the_width_one_inversion_relaxation": {
       "composition": {
@@ -330,20 +354,32 @@
       "section_id": "port_near_one_change_word_structure",
       "version": 2
     },
+    "one_change_orders_are_spanning_converging_tight_forks": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
     "ordered_windows_remove_the_distinguished_pole_restriction": {
       "composition": {
         "body_chars": 496,
         "composed_through_revision": 1944,
         "composition_version": 1,
-        "development_changed": false,
+        "development_changed": true,
         "has_composition": true,
         "source_note": "Ported from the corrected Article VII ordered-window dictionary.",
-        "stale": false,
+        "stale": true,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "port_cube_geodesics_and_ordered_windows",
-      "version": 2
+      "version": 3
     },
     "orientation_blind_repair_and_the_first_nontrivial_dimension": {
       "composition": {
@@ -353,9 +389,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 3,
+      "development_version": 4,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 3
+      "version": 4
     },
     "orientation_blind_windows_as_ordered_cube_face_galleries": {
       "composition": {
@@ -365,9 +401,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 1,
+      "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 1
+      "version": 2
     },
     "pole_rotation_as_a_covering_or_labeling_problem": {
       "composition": {
@@ -392,9 +428,21 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 2,
+      "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 2
+      "version": 3
+    },
+    "rank_parity_refutes_the_unrestricted_tuple_window_n_k": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
     },
     "rank_parity_refutes_unrestricted_n_k": {
       "composition": {
@@ -404,9 +452,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 2,
+      "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 2
+      "version": 3
     },
     "rook_labels_and_chain_level_antipodal_architecture": {
       "composition": {
@@ -438,20 +486,32 @@
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
     },
-    "the_higher_memory_one_change_geodesic_conjecture": {
+    "smallest_counterexamples_force_a_tight_cyclic_transition_block": {
       "composition": {
-        "body_chars": 759,
-        "composed_through_revision": 1918,
-        "composition_version": 2,
-        "development_changed": true,
-        "has_composition": true,
-        "source_note": "Reframed NOR from memory/base-set language to ordered geodesic tuples.",
-        "stale": true,
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
         "stale_children": []
       },
-      "development_version": 3,
+      "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 5
+      "version": 1
+    },
+    "the_higher_memory_one_change_geodesic_conjecture": {
+      "composition": {
+        "body_chars": 626,
+        "composed_through_revision": 2014,
+        "composition_version": 3,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Project-wide reindexing: k now means colored-tuple arity.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 4,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 7
     },
     "the_one_skeleton_is_not_enough": {
       "composition": {
@@ -476,9 +536,9 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 2,
+      "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 2
+      "version": 3
     }
   },
   "toolkit_count": 17,

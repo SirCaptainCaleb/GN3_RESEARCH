@@ -5,8 +5,8 @@
 - ID: rank_parity_counterexample_to_unrestricted_directed_nor
 - Parent Section: higher_memory_norine_geodesics
 - Position: 3
-- Row version: 2
-- Development version: 2
+- Row version: 3
+- Development version: 3
 - Composition version: None
 - Composition stale: False
 

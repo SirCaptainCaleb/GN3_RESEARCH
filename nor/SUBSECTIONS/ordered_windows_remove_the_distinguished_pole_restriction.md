@@ -5,10 +5,10 @@
 - ID: ordered_windows_remove_the_distinguished_pole_restriction
 - Parent Section: port_cube_geodesics_and_ordered_windows
 - Position: 2
-- Row version: 2
-- Development version: 1
+- Row version: 3
+- Development version: 2
 - Composition version: 1
-- Composition stale: False
+- Composition stale: True
 
 ## Composition
 
@@ -19,13 +19,13 @@ Ordered local windows are read directly from the coordinate order of an antipoda
 ## Development
 
 
-Let an ordered \(k\)-window coloring depend on the ordered cube vertices
+Let an ordered \(r\)-window coloring depend on the ordered cube vertices
 \[
-(X_i,\ldots,X_{i+k}),
+(X_i,\ldots,X_{i+r}),
 \]
-or equivalently on the ordered list of its \(k\) distinct flipped coordinates together with any additional allowed local data.
+or equivalently on the ordered list of its \(r\) distinct flipped coordinates together with any additional allowed local data.
 
-Along an arbitrary antipodal geodesic, consecutive windows are read in the coordinate order supplied by the geodesic itself. No distinguished start pole is needed. In particular, for the GN3 subclass of \(N_3\),
+Along an arbitrary antipodal geodesic, consecutive windows are read in the coordinate order supplied by the geodesic itself. No distinguished start pole is needed. In particular, for the GN3 subclass of \(N_4\),
 \[
 \chi(X_i,X_{i+1},X_{i+2},X_{i+3})=h(v_{i+1},v_{i+2},v_{i+3})
 \]
@@ -39,3 +39,8 @@ This yields a useful separation of models:
 - bare rank-oriented local data naturally support only the one-turn pole-crossing subfamily unless additional structure is supplied.
 
 The failed local XOR normalizations from the GN3 investigation illustrate the danger: a correction that varies from window to window can destroy a global one-change property even when it repairs local orientation.
+
+
+## Uncompressed development
+
+- Development has changed since this Subsection's current composition.

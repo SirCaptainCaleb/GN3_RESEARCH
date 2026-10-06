@@ -5,8 +5,8 @@
 - ID: orientation_blind_repair_and_the_first_nontrivial_dimension
 - Parent Section: higher_memory_norine_geodesics
 - Position: 5
-- Row version: 3
-- Development version: 3
+- Row version: 4
+- Development version: 4
 - Composition version: None
 - Composition stale: False
 
@@ -19,7 +19,7 @@
 
 There is a natural orientation-blind higher-uniformity family distinct from directed tuple NOR.
 
-Represent an ordered geodesic \(k\)-segment by
+Represent an ordered geodesic \(r\)-segment by
 \[
 (X;v_1,\ldots,v_k),
 \qquad
@@ -31,9 +31,9 @@ B=X\setminus K
 \]
 while identifying changes of \(X\) inside \(K\).
 
-This family contains the ordinary undirected Norine edge problem when \(k=1\), and it avoids the absolute-rank parity obstruction. It may well satisfy its own one-change theorem.
+This family contains the ordinary undirected Norine edge problem when \(r=1\), and it avoids the absolute-rank parity obstruction. It may well satisfy its own one-change theorem.
 
-However, it is not the main directed NOR family because the GN3 \(k=3\) embedding is genuinely directed:
+However, it is not the main directed NOR family because the GN3 \(r=3\) embedding is genuinely directed:
 \[
 h(u,v,w)
 \]
@@ -41,8 +41,8 @@ need not equal the color of the reversed triple. Thus the orientation-blind fami
 
 ### First nontrivial dimension
 
-If \(n=k+2\), every binary support-orientation-blind coloring has an antipodal geodesic whose three-window color word changes at most once; antipodal antisymmetry is not needed.
+If \(n=r+2\), every binary support-orientation-blind coloring has an antipodal geodesic whose three-window color word changes at most once; antipodal antisymmetry is not needed.
 
-The proof assumes every three-window word is \(010\) or \(101\), varies the two outside coordinates to force independence from \(B\), and reduces to a 2-coloring of the shift graph on ordered \(k\)-tuples. That graph contains an odd cycle, contradiction.
+The proof assumes every three-window word is \(010\) or \(101\), varies the two outside coordinates to force independence from \(B\), and reduces to a 2-coloring of the shift graph on ordered \(r\)-tuples. That graph contains an odd cycle, contradiction.
 
 This result should be read as evidence that the orientation-blind family is mathematically viable in its own right, not as a repair of directed NOR.

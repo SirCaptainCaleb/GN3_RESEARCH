@@ -5,8 +5,8 @@
 - ID: rank_parity_refutes_unrestricted_n_k
 - Parent Section: higher_memory_norine_geodesics
 - Position: 2
-- Row version: 2
-- Development version: 2
+- Row version: 3
+- Development version: 3
 - Composition version: None
 - Composition stale: False
 
@@ -29,7 +29,7 @@ Then the absolute-rank coloring
 \[
 \chi(X_0,\ldots,X_k)=|X_0|\pmod2
 \]
-gives a counterexample in any dimension \(n\ge k+2\) with \(n+k\) odd. It satisfies complement-plus-reversal antisymmetry, while along every antipodal geodesic its colors alternate.
+gives a counterexample in any dimension \(n\ge r+2\) with \(n+r\) odd. It satisfies complement-plus-reversal antisymmetry, while along every antipodal geodesic its colors alternate.
 
 This refutes that **basepoint-dependent enlargement**.
 
