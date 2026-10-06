@@ -11,7 +11,7 @@ from typing import Any
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
-SCHEMAS = ("gn3n", "linp")
+SCHEMAS = ("gn3n", "nor", "linp")
 TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources")
 PAGE = 500
 
@@ -622,10 +622,18 @@ Generated: {rev.get('generated_at')}
     })
 
 def main():
+    selected = os.environ.get("RESEARCH_SCHEMA", "").strip()
+    if selected:
+        if selected not in SCHEMAS:
+            raise SystemExit(f"Unsupported RESEARCH_SCHEMA={selected!r}; expected one of {SCHEMAS}")
+        schemas = (selected,)
+    else:
+        schemas = SCHEMAS
+
     if STAGE.exists():
         shutil.rmtree(STAGE)
     STAGE.mkdir()
-    for schema in SCHEMAS:
+    for schema in schemas:
         print(f"Building clean mirror for {schema}")
         build(schema)
     print("Mirror staging complete.")
