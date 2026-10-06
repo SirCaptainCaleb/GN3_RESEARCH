@@ -1,0 +1,71 @@
+name: Sync one research schema
+
+on:
+  workflow_call:
+    inputs:
+      schema:
+        description: Research schema to sync
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-mirror-sync-${{ inputs.schema }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Validate schema
+        env:
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          case "$RESEARCH_SCHEMA" in
+            gn3n|nor|linp) ;;
+            *) echo "Unsupported schema: $RESEARCH_SCHEMA" >&2; exit 2 ;;
+          esac
+      - name: Sync selected schema
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          set -euo pipefail
+          git config user.name "research-mirror[bot]"
+          git config user.email "research-mirror[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            rm -rf .mirror-stage
+            python scripts/sync_research_mirror.py
+            rsync -a --delete ".mirror-stage/$RESEARCH_SCHEMA/" "$RESEARCH_SCHEMA/"
+            rm -rf .mirror-stage template
+
+            git add -A -- "$RESEARCH_SCHEMA"
+            if git diff --cached --quiet; then
+              echo "$RESEARCH_SCHEMA mirror already current."
+              exit 0
+            fi
+
+            git commit -m "Sync $RESEARCH_SCHEMA research mirror"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "main advanced during sync; regenerating from latest main (attempt $attempt/3)."
+          done
+
+          echo "Failed to publish $RESEARCH_SCHEMA mirror after 3 regeneration attempts." >&2
+          exit 1
