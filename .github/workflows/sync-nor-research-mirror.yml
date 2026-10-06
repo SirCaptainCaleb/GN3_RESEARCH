@@ -1,0 +1,11 @@
+name: Sync NOR research mirror
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync-research-schema.yml
+    with:
+      schema: nor
+    secrets: inherit
