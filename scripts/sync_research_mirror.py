@@ -79,7 +79,7 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
             "has_composition": False,
             "composition_version": None,
             "stale": False,
-            "stale_children": [],
+            "stale_dependencies": [],
             "development_changed": False,
         }
 
@@ -95,7 +95,7 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
     memberships = data.get("article_sections", [])
 
     development_changed = False
-    stale_children: list[dict[str, Any]] = []
+    stale_dependencies: list[dict[str, Any]] = []
 
     if node_type == "subsection":
         row = next((s for s in subs if s.get("id") == node_id), None)
@@ -105,13 +105,13 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
             development_changed = old is None or current_version != old.get("source_version")
 
     elif node_type == "section":
-        current_children = {
+        current_sources = {
             s["id"]: s for s in subs if s.get("section_id") == node_id
         }
-        for child_id in sorted(current_children):
-            child_comp = latest_composition(data, "subsection", child_id)
+        for source_id in sorted(current_sources):
+            child_comp = latest_composition(data, "subsection", source_id)
             current_comp = child_comp.get("composition_version") if child_comp else None
-            old = snap.get(("subsection", child_id))
+            old = snap.get(("subsection", source_id))
             if current_comp is not None and (
                 old is None
                 or (
@@ -119,29 +119,29 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
                     and current_comp != old.get("source_composition_version")
                 )
             ):
-                stale_children.append({
-                    "source_id": child_id,
+                stale_dependencies.append({
+                    "source_id": source_id,
                     "parent_saw_composition_version": old.get("source_composition_version") if old else None,
                     "current_composition_version": current_comp,
                     "depends_on": bool(old.get("depends_on")) if old else False,
                 })
         for (source_type, child_id), old in snap.items():
-            if source_type == "subsection" and old.get("depends_on") and child_id not in current_children:
-                stale_children.append({
-                    "source_id": child_id,
+            if source_type == "subsection" and old.get("depends_on") and source_id not in current_sources:
+                stale_dependencies.append({
+                    "source_id": source_id,
                     "parent_saw_composition_version": old.get("source_composition_version"),
                     "current_composition_version": None,
                     "depends_on": True,
                 })
 
     elif node_type == "article":
-        current_children = {
+        current_sources = {
             m["section_id"]: m for m in memberships if m.get("article_id") == node_id
         }
-        for child_id in sorted(current_children):
-            child_comp = latest_composition(data, "section", child_id)
+        for source_id in sorted(current_sources):
+            child_comp = latest_composition(data, "section", source_id)
             current_comp = child_comp.get("composition_version") if child_comp else None
-            old = snap.get(("section", child_id))
+            old = snap.get(("section", source_id)
             if current_comp is not None and (
                 old is None
                 or (
@@ -149,16 +149,16 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
                     and current_comp != old.get("source_composition_version")
                 )
             ):
-                stale_children.append({
-                    "source_id": child_id,
+                stale_dependencies.append({
+                    "source_id": source_id,
                     "parent_saw_composition_version": old.get("source_composition_version") if old else None,
                     "current_composition_version": current_comp,
                     "depends_on": bool(old.get("depends_on")) if old else False,
                 })
         for (source_type, child_id), old in snap.items():
-            if source_type == "section" and old.get("depends_on") and child_id not in current_children:
-                stale_children.append({
-                    "source_id": child_id,
+            if source_type == "section" and old.get("depends_on") and source_id not in current_sources:
+                stale_dependencies.append({
+                    "source_id": source_id,
                     "parent_saw_composition_version": old.get("source_composition_version"),
                     "current_composition_version": None,
                     "depends_on": True,
@@ -167,8 +167,8 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
     return {
         "has_composition": True,
         "composition_version": target_version,
-        "stale": development_changed if node_type == "subsection" else bool(stale_children),
-        "stale_children": stale_children,
+        "stale": development_changed if node_type == "subsection" else bool(stale_dependencies),
+        "stale_dependencies": stale_dependencies,
         "development_changed": development_changed,
         "composed_through_revision": comp.get("composed_through_event_id"),
         "source_note": comp.get("source_note") or "",
@@ -212,9 +212,9 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
                     f"(`{s['id']}`; development v{s.get('development_version') or s.get('version')}; "
                     f"composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
                 )
-        if status.get("stale_children"):
-            bits += ["", "### Stale child compositions", ""]
-            for x in status["stale_children"]:
+        if status.get("stale_dependencies"):
+            bits += ["", "### Stale composition dependencies", ""]
+            for x in status["stale_dependencies"]:
                 bits.append(
                     f"- {x.get('source_id')}: parent saw composition "
                     f"v{x.get('parent_saw_composition_version')} → current "
@@ -285,9 +285,9 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
                 f"- {s.get('position')}. [{r.get('title') or r['id']}](../SECTIONS/{safe_name(r['id'])}.md) "
                 f"(`{r['id']}`; composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
             )
-    if status.get("stale_children"):
-        bits += ["", "## Stale child compositions", ""]
-        for x in status["stale_children"]:
+    if status.get("stale_dependencies"):
+        bits += ["", "## Stale composition dependencies", ""]
+        for x in status["stale_dependencies"]:
             bits.append(
                 f"- {x.get('source_id')}: parent saw composition "
                 f"v{x.get('parent_saw_composition_version')} → current "
@@ -344,7 +344,7 @@ Reads durable Article, Section, Subsection, Toolkit, and Brainstorm content.
 Shows mathematical dependencies, consumers, supersessions, Article references, and origin.
 
 ### composition_status(node_type, node_id)
-Shows the current development and composition versions together with dependency staleness.
+Shows the current composition version, explicit dependency staleness, and frontier metadata describing what material existed when the composition was written.
 
 ### dependencies(node_type, node_id)
 Shows the dependency manifest for a manuscript node.
@@ -354,20 +354,20 @@ Returns live events and current composition state since a revision.
 
 ## Development
 
-### new_subsection(session_id, section_id, payload, dependencies, expected_section_version)
-Creates a local Subsection development branch. Pass dependencies explicitly; use [] for an independent Subsection.
+### new_subsection(session_id, section_id, payload, expected_section_version)
+Creates a local Subsection development branch.
 
-### save_subsection(session_id, section_id, payload, dependencies, expected_section_version, expected_subsection_version)
-Edits an existing Subsection by stable ID and records its direct dependencies.
+### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
+Edits an existing Subsection by stable ID.
 
-### compose(session_id, node_type, node_id, body, expected_development_version, source_note)
-Compresses the current development of an Article, Section, or Subsection into a canonical composition. Composition automatically depends on the current development version of the same node.
+### compose(session_id, node_type, node_id, payload, expected_composition_version)
+Writes a deliberately lossy composition. payload contains body and, for Sections and Articles, depends_on as an explicit array of direct lower-level composition IDs. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
 
-### save_research(session_id, payload, dependencies, expected_version := null)
-Creates or edits a Section or Toolkit object and records its direct dependencies.
+### save_research(session_id, payload, expected_version := null)
+Creates or edits Section structure/metadata or a Toolkit object.
 
-### save_document(session_id, payload, dependencies, expected_version := null)
-Creates or edits a project document or Article and records its direct dependencies.
+### save_document(session_id, payload, expected_version := null)
+Creates or edits a project document or Article structure/metadata.
 
 ## Brainstorms
 
@@ -395,7 +395,7 @@ Completes a claimed audit or maintenance task.
 
 Use stage_batch_chunk, review_staged_batch, and commit_staged_batch for multi-operation publication. stage_batch_chunk accepts JSON text or base64:<blob>; base64 is decoded as UTF-8 before review and commit.
 
-Development-save operations place dependencies at the operation top level. Compose operations place body, expected_development_version, and source_note at the operation top level.
+Compose operations carry payload.body, payload.depends_on, expected_composition_version, and optional source_note. Development operations use their ordinary payload contracts.
 
 ### artifact_help()
 Returns artifact recovery and rebuild information.
