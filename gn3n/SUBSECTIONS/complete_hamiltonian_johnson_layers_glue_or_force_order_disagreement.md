@@ -1,0 +1,19 @@
+# Complete Hamiltonian Johnson layers glue or force order disagreement
+
+## Metadata
+
+- ID: complete_hamiltonian_johnson_layers_glue_or_force_order_disagreement
+- Parent Section: terminalization_reachability_and_the_exact_frontier
+- Position: 200
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Let W be a vertex set in a boundary tournament and let 3<=k<|W|. Assume every k-subset A of W is Hamiltonian. Choose one Hamilton order P_A for each k-subset. Consider the Johnson graph J(W,k). If two adjacent k-subsets A,B have chosen orders with relative-order disagreement on A cap B, an order-disagreement certificate already occurs. Assume no adjacent disagreement. Then the local orders glue to a global total order on W. For any pair u,v in W, the family of k-subsets containing {u,v} is connected under Johnson adjacency, so their relative order is independent of the chosen containing k-set. For any triple u,v,w, some k-set contains all three, and its local total order proves transitivity of the induced pair relation. Thus the induced relation is a total order of W. Take three consecutive vertices in this global order and choose a k-set containing them. Since no vertex of W lies between consecutive global vertices, those three are also consecutive in the restriction P_A, hence their ordered triple is tight. Therefore every consecutive triple in the global order is tight and H[W] is Hamiltonian. Consequently, if H[W] is non-Hamiltonian while every k-subset is Hamiltonian, every choice of local Hamilton orders must expose an adjacent Johnson pair with relative-order disagreement. By the established path-order comparison theorem this feeds the reversal/disturbance interface. In particular, a non-Hamiltonian boundary tournament all of whose one-vertex deletions are Hamiltonian is never a quiet terminal residue.

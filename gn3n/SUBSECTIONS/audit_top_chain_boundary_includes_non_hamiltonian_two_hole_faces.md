@@ -1,0 +1,19 @@
+# Audit: top-chain boundary includes non-Hamiltonian two-hole faces
+
+## Metadata
+
+- ID: audit_top_chain_boundary_includes_non_hamiltonian_two_hole_faces
+- Parent Section: terminalization_reachability_and_the_exact_frontier
+- Position: 256
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Audit and strengthening of [[the_top_deletion_cover_chain_has_boundary_exactly_at_unique_extension_two_hole_states]]. In the signed downward-closure complex E(H), a codimension-one face of a top deletion-cover simplex need not itself have both signed supports Hamiltonian: removing an interior vertex from one Hamiltonian support can destroy Hamiltonicity while the signed face remains present because it is contained in the original top facet. Let F=(A,B) have A union B=V-{x,y}, with no assumption that A,B themselves are Hamiltonian. Its top extensions are the four possible signed one-hole pairs obtained by adjoining x or y to A or B, but an extension is present only when both resulting sides are Hamiltonian. If A is non-Hamiltonian and B Hamiltonian, only A+x and A+y can possibly produce top facets, so the incidence degree is at most two; symmetrically if B is non-Hamiltonian. If both A and B are non-Hamiltonian, the degree is zero. If both are Hamiltonian, the original crossed-extension argument forbids simultaneously A+x with B+y and A+y with B+x, so degree three is impossible. Therefore for every codimension-one signed face of E(H), without any Hamiltonicity assumption on its two current sides, the top incidence degree lies in {0,1,2}; in particular odd incidence is exactly unique incidence. Hence the boundary of the mod-two sum of all top deletion-cover facets is precisely the set of all signed two-hole faces having a unique top extension, including faces whose current support pair is not itself Hamiltonian. Any chain-level closure argument must handle this broader class; two-hole support-state lemmas apply directly only to the subcase where both current sides are Hamiltonian.

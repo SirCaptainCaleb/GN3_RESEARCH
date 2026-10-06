@@ -151,3 +151,5 @@ This target is materially different from the earlier disturbance/minimal-hole pr
 ## Development tree
 
 - [Subsection 1 — Counting and single-switch consequences](../SUBSECTIONS/kappa_one_role_balance_and_ky_fan_subsection_a.md) (`kappa_one_role_balance_and_ky_fan_subsection_a`; development v3; composition vNone; stale=False)
+- [Subsection 2 — Fixed-hole Ky Fan forces every balanced deletion state](../SUBSECTIONS/fixed_hole_ky_fan_forces_every_balanced_deletion_state.md) (`fixed_hole_ky_fan_forces_every_balanced_deletion_state`; development v1; composition vNone; stale=False)
+- [Subsection 3 — Universal fixed-hole states have a half-order support cap](../SUBSECTIONS/universal_fixed_hole_states_have_a_half_order_support_cap.md) (`universal_fixed_hole_states_have_a_half_order_support_cap`; development v1; composition vNone; stale=False)

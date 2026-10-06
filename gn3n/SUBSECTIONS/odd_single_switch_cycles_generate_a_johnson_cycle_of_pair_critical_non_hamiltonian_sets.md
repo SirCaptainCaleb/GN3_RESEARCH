@@ -1,0 +1,19 @@
+# Odd single-switch cycles generate a Johnson cycle of pair-critical non-Hamiltonian sets
+
+## Metadata
+
+- ID: odd_single_switch_cycles_generate_a_johnson_cycle_of_pair_critical_non_hamiltonian_sets
+- Parent Section: terminalization_reachability_and_the_exact_frontier
+- Position: 218
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Assume the negative spanning support-agreement cycle has been put in the odd single-switch normal form on V={v_0,...,v_{2r}}. For each cycle edge v_i v_{i+1}, define A_i={v_i,v_{i+1},v_{i+3},v_{i+5},...,v_{i+2r-1}} with indices modulo 2r+1, and B_i=V-A_i. The two adjacent deletion covers F_{v_i},F_{v_{i+1}} agree on their common support partition and restore v_{i+1},v_i into the same aligned side. Consequently B_i is their common opposite support and is Hamiltonian, while A_i-{v_i} and A_i-{v_{i+1}} are the two varying Hamiltonian supports. The full set A_i is non-Hamiltonian: otherwise A_i|B_i would be a spanning two-cover of H. Thus every A_i is a non-Hamiltonian (r+1)-set with two specified Hamiltonian vertex deletions and Hamiltonian complement B_i. Furthermore A_i and A_{i+2} differ by one vertex and satisfy A_i intersection A_{i+2}=A_i-{v_{i+1}}=A_{i+2}-{v_{i+2}}, a Hamiltonian r-set. Since step 2 generates the cyclic index group modulo the odd number 2r+1, the family {A_i} itself forms a spanning cycle in the Johnson graph J(V,r+1). Hence the exceptional support-agreement cycle is equivalent to a cyclic family of pair-critical non-Hamiltonian one-vertex extensions of Hamiltonian common cores, each paired with a Hamiltonian complementary r-set.
