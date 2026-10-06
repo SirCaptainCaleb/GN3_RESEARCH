@@ -1,5 +1,5 @@
 name: Sync NOR research mirror
-# architecture refresh trigger
+# architecture refresh trigger 2
 
 on:
   workflow_dispatch:
