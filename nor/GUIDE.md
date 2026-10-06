@@ -30,6 +30,8 @@ When new mathematics changes the best exposition, update the relevant Subsection
 
 Audit canonical mathematical claims. When an audit finds a localized gap or correction, publish a focused audit Subsection stating the claim, the issue, and the repair obligation. Recompose after the repaired mathematics has stabilized.
 
+After making a substantive repair, judge whether the repaired result should be audited by another worker; request an audit when independent verification is warranted.
+
 ## Concurrent publication
 
 Use staged batches for related multi-object writes. Review the decoded batch for overlap, then commit it atomically.
