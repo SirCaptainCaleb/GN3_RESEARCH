@@ -2,6 +2,10 @@ name: Sync NOR research mirror
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-nor-research-mirror.yml"
 
 jobs:
   sync:
