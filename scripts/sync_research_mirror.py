@@ -74,13 +74,42 @@ def latest_composition(data: dict[str, list[dict[str, Any]]], node_type: str, no
 
 def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, node_id: str) -> dict[str, Any]:
     comp = latest_composition(data, node_type, node_id)
+    subs = data.get("section_subsections", [])
+    memberships = data.get("article_sections", [])
+
     if not comp:
+        frontier: dict[str, Any]
+        if node_type == "section":
+            current = [s for s in subs if s.get("section_id") == node_id]
+            frontier = {
+                "current": False,
+                "subsections_now": len(current),
+                "subsections_existing_when_composed": 0,
+                "latest_subsection_no_now": max((s.get("subsection_no") or 0 for s in current), default=None),
+                "latest_subsection_no_when_composed": None,
+            }
+        elif node_type == "article":
+            current = [m for m in memberships if m.get("article_id") == node_id]
+            frontier = {
+                "current": False,
+                "sections_now": len(current),
+                "sections_existing_when_composed": 0,
+                "latest_section_position_now": max((m.get("position") or 0 for m in current), default=None),
+                "latest_section_position_when_composed": None,
+            }
+        else:
+            row = next((s for s in subs if s.get("id") == node_id), None)
+            frontier = {
+                "current": False,
+                "development_version_now": (row or {}).get("development_version") or (row or {}).get("version"),
+                "development_version_when_composed": None,
+            }
         return {
             "has_composition": False,
             "composition_version": None,
             "stale": False,
             "stale_dependencies": [],
-            "development_changed": False,
+            "frontier": frontier,
         }
 
     target_version = comp.get("composition_version")
@@ -91,85 +120,84 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
         and s.get("target_composition_version") == target_version
     ]
     snap = {(s.get("source_type"), s.get("source_id")): s for s in snap_rows}
-    subs = data.get("section_subsections", [])
-    memberships = data.get("article_sections", [])
-
-    development_changed = False
     stale_dependencies: list[dict[str, Any]] = []
 
     if node_type == "subsection":
         row = next((s for s in subs if s.get("id") == node_id), None)
         old = snap.get(("subsection", node_id))
-        if row is not None:
-            current_version = row.get("development_version") or row.get("version")
-            development_changed = old is None or current_version != old.get("source_version")
+        current_version = (row or {}).get("development_version") or (row or {}).get("version")
+        seen_version = old.get("source_version") if old else None
+        frontier = {
+            "current": current_version == seen_version,
+            "development_version_now": current_version,
+            "development_version_when_composed": seen_version,
+        }
 
     elif node_type == "section":
         current_sources = {
             s["id"]: s for s in subs if s.get("section_id") == node_id
         }
-        for source_id in sorted(current_sources):
-            child_comp = latest_composition(data, "subsection", source_id)
-            current_comp = child_comp.get("composition_version") if child_comp else None
-            old = snap.get(("subsection", source_id))
-            if current_comp is not None and (
-                old is None
-                or (
-                    bool(old.get("depends_on"))
-                    and current_comp != old.get("source_composition_version")
-                )
-            ):
+        for source_id, old in [
+            (sid, row) for (stype, sid), row in snap.items()
+            if stype == "subsection" and bool(row.get("depends_on"))
+        ]:
+            source_comp = latest_composition(data, "subsection", source_id)
+            current_comp = source_comp.get("composition_version") if source_comp else None
+            if current_comp != old.get("source_composition_version"):
                 stale_dependencies.append({
                     "source_id": source_id,
-                    "parent_saw_composition_version": old.get("source_composition_version") if old else None,
+                    "composition_saw_version": old.get("source_composition_version"),
                     "current_composition_version": current_comp,
-                    "depends_on": bool(old.get("depends_on")) if old else False,
                 })
-        for (source_type, child_id), old in snap.items():
-            if source_type == "subsection" and old.get("depends_on") and source_id not in current_sources:
-                stale_dependencies.append({
-                    "source_id": source_id,
-                    "parent_saw_composition_version": old.get("source_composition_version"),
-                    "current_composition_version": None,
-                    "depends_on": True,
-                })
+
+        seen_rows = [s for s in snap_rows if s.get("source_type") == "subsection"]
+        latest_now = max((s.get("subsection_no") or 0 for s in current_sources.values()), default=None)
+        latest_seen = max((s.get("source_position") or 0 for s in seen_rows), default=None)
+        frontier = {
+            "current": len(seen_rows) == len(current_sources) and latest_seen == latest_now,
+            "subsections_now": len(current_sources),
+            "subsections_existing_when_composed": len(seen_rows),
+            "latest_subsection_no_now": latest_now,
+            "latest_subsection_no_when_composed": latest_seen,
+        }
 
     elif node_type == "article":
         current_sources = {
             m["section_id"]: m for m in memberships if m.get("article_id") == node_id
         }
-        for source_id in sorted(current_sources):
-            child_comp = latest_composition(data, "section", source_id)
-            current_comp = child_comp.get("composition_version") if child_comp else None
-            old = snap.get(("section", source_id)
-            if current_comp is not None and (
-                old is None
-                or (
-                    bool(old.get("depends_on"))
-                    and current_comp != old.get("source_composition_version")
-                )
-            ):
+        for source_id, old in [
+            (sid, row) for (stype, sid), row in snap.items()
+            if stype == "section" and bool(row.get("depends_on"))
+        ]:
+            source_comp = latest_composition(data, "section", source_id)
+            current_comp = source_comp.get("composition_version") if source_comp else None
+            if current_comp != old.get("source_composition_version"):
                 stale_dependencies.append({
                     "source_id": source_id,
-                    "parent_saw_composition_version": old.get("source_composition_version") if old else None,
+                    "composition_saw_version": old.get("source_composition_version"),
                     "current_composition_version": current_comp,
-                    "depends_on": bool(old.get("depends_on")) if old else False,
                 })
-        for (source_type, child_id), old in snap.items():
-            if source_type == "section" and old.get("depends_on") and source_id not in current_sources:
-                stale_dependencies.append({
-                    "source_id": source_id,
-                    "parent_saw_composition_version": old.get("source_composition_version"),
-                    "current_composition_version": None,
-                    "depends_on": True,
-                })
+
+        seen_rows = [s for s in snap_rows if s.get("source_type") == "section"]
+        latest_now = max((m.get("position") or 0 for m in current_sources.values()), default=None)
+        latest_seen = max((s.get("source_position") or 0 for s in seen_rows), default=None)
+        frontier = {
+            "current": len(seen_rows) == len(current_sources) and latest_seen == latest_now,
+            "sections_now": len(current_sources),
+            "sections_existing_when_composed": len(seen_rows),
+            "latest_section_position_now": latest_now,
+            "latest_section_position_when_composed": latest_seen,
+        }
+
+    else:
+        raise ValueError(f"invalid composition node type: {node_type}")
 
     return {
         "has_composition": True,
         "composition_version": target_version,
-        "stale": development_changed if node_type == "subsection" else bool(stale_dependencies),
+        "stale": bool(stale_dependencies),
         "stale_dependencies": stale_dependencies,
-        "development_changed": development_changed,
+        "frontier": frontier,
         "composed_through_revision": comp.get("composed_through_event_id"),
         "source_note": comp.get("source_note") or "",
         "body_chars": len(comp.get("body") or ""),
@@ -216,8 +244,8 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
             bits += ["", "### Stale composition dependencies", ""]
             for x in status["stale_dependencies"]:
                 bits.append(
-                    f"- {x.get('source_id')}: parent saw composition "
-                    f"v{x.get('parent_saw_composition_version')} → current "
+                    f"- {x.get('source_id')}: composition saw "
+                    f"v{x.get('composition_saw_version')} → current "
                     f"v{x.get('current_composition_version')}"
                 )
     return "\n".join(bits)
@@ -289,8 +317,8 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
         bits += ["", "## Stale composition dependencies", ""]
         for x in status["stale_dependencies"]:
             bits.append(
-                f"- {x.get('source_id')}: parent saw composition "
-                f"v{x.get('parent_saw_composition_version')} → current "
+                f"- {x.get('source_id')}: composition saw "
+                f"v{x.get('composition_saw_version')} → current "
                 f"v{x.get('current_composition_version')}"
             )
     return "\n".join(bits)
