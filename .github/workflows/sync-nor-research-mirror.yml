@@ -1,4 +1,5 @@
 name: Sync NOR research mirror
+# audit model refresh
 # architecture refresh trigger 2
 
 on:
