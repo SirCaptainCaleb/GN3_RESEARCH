@@ -46,3 +46,9 @@ If \(n=r+2\), every binary support-orientation-blind coloring has an antipodal g
 The proof assumes every three-window word is \(010\) or \(101\), varies the two outside coordinates to force independence from \(B\), and reduces to a 2-coloring of the shift graph on ordered \(r\)-tuples. That graph contains an odd cycle, contradiction.
 
 This result should be read as evidence that the orientation-blind family is mathematically viable in its own right, not as a repair of directed NOR.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 4

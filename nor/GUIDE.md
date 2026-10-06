@@ -13,6 +13,8 @@ Use Brainstorms for loose ideation, Subsections for local mathematical developme
 
 Development records the mathematics being worked on. Composition is the current concise canonical rendering of that same node.
 
+Treat each composition as a deliberately lossy compression of the material below it.
+
 Create local branches freely as Subsections. Edit earlier development whenever later mathematics improves it. Compose when a node has enough coherent mathematics to deserve a readable canonical form.
 
 Composition is selective: preserve useful lower-level development even when the composition omits it.

@@ -73,3 +73,8 @@ a	o_{T_b}c Longleftrightarrow h(a,b,c)=0
 identifies the color-zero vertices with transitions certified by the center-indexed tournaments (T_b). The mirrored-pair lemma is exactly the case in which all (T_b) coincide. In general, the cut formulation shows that the hard part is synchronizing these local tournaments while preserving global injectivity of the coordinate word.
 
 This formulation also explains a topological caution: the raw change indicator (delta) is reversal-even, so an antipodal Borsuk--Ulam argument cannot simply use (delta) as its odd label. Any topological proof must retain an odd lift such as (h), a violation vector, or a component-pair/root label whose zero or balance forces a low-cut Hamiltonian overlap path.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

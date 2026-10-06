@@ -71,3 +71,8 @@ It is therefore enough to prove the following one-vertex augmentation theorem in
 > can be recentered or exchanged to a spanning converging tight fork.
 
 This is materially narrower than arbitrary maximal-fork augmentation: minimum counterexample analysis reduces the uncovered set to one vertex and supplies a symmetric pair of reverse-front extension identities.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

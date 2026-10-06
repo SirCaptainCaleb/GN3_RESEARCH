@@ -5,6 +5,8 @@
 - Composition version: 4
 - Stale: True
 - Composed through revision: 1982
+- Sections existing when composed: 4
+- Sections now: 4
 
 ## Composition
 
@@ -31,6 +33,6 @@ The open task is to turn these symmetry and defect-map mechanisms into an unrest
 - 3. [Port from Article VII — Freudenthal charts, translation symmetry, and zero loci](../SECTIONS/port_freudenthal_pole_rotation_and_zero_loci.md) (`port_freudenthal_pole_rotation_and_zero_loci`; composition v2; stale=False)
 - 4. [Port from Article VII — Near-one-change word structure](../SECTIONS/port_near_one_change_word_structure.md) (`port_near_one_change_word_structure`; composition v2; stale=False)
 
-## Stale child compositions
+## Stale composition dependencies
 
-- port_permutahedral_antipodal_topology: parent saw composition v2 → current v3
+- port_permutahedral_antipodal_topology: composition saw v2 → current v3

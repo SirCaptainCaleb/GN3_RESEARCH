@@ -103,3 +103,8 @@ This identifies the remaining augmentation problem sharply: a maximal nonspannin
 
 ### Audit
 The equivalence uses no assumptions beyond reversal antisymmetry and distinctness of the underlying vertices. In particular it does not use topology, fixed excess, or any GN3-specific tournament structure.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

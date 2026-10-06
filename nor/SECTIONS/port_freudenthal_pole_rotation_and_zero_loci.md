@@ -20,6 +20,8 @@ Their collective symmetry may still be useful: Tucker, Ky Fan, KKM, or related a
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

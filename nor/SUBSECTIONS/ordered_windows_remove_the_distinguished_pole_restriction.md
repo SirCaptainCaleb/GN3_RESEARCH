@@ -8,7 +8,7 @@
 - Row version: 3
 - Development version: 2
 - Composition version: 1
-- Composition stale: True
+- Composition stale: False
 
 ## Composition
 
@@ -41,6 +41,7 @@ This yields a useful separation of models:
 The failed local XOR normalizations from the GN3 investigation illustrate the danger: a correction that varies from window to window can destroy a global one-change property even when it repairs local orientation.
 
 
-## Uncompressed development
+## Frontier
 
-- Development has changed since this Subsection's current composition.
+- Development version when composed: 1
+- Development version now: 2

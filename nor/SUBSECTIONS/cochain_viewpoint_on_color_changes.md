@@ -8,7 +8,7 @@
 - Row version: 3
 - Development version: 2
 - Composition version: 1
-- Composition stale: True
+- Composition stale: False
 
 ## Composition
 
@@ -37,6 +37,7 @@ and the change between adjacent triple windows compares
 The point is conceptual rather than formal cohomology: the ordinary Norine edge problem and higher-window NOR problems differ in the degree of the local datum, while the target remains sparse support of its change process along an antipodal geodesic.
 
 
-## Uncompressed development
+## Frontier
 
-- Development has changed since this Subsection's current composition.
+- Development version when composed: 1
+- Development version now: 2

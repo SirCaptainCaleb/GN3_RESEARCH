@@ -104,3 +104,9 @@ This is the direct higher-dimensional analogue of the original edge problem:
 The object being colored is no longer an oriented path fragment with an accidental choice of starting corner. The entire \(2^r\)-vertex face is the local cell, while the axis order records the directed memory that is essential for GN3.
 
 This face-gallery formulation preserves both intended anchor cases and removes the uniform rank-parity defect. It is therefore a stronger candidate for the corrected NOR grand conjecture than full translation invariance.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

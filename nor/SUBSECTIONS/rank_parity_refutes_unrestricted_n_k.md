@@ -40,3 +40,9 @@ It does **not** refute directed tuple NOR \(N_k\), because \(N_k\) requires
 for the successive flipped coordinates \(v_1,\ldots,v_k\). Equivalently, the intended directed coloring is invariant under global symmetric-difference translation of all window vertices.
 
 The parity example should therefore be used only as a guardrail: complement-plus-reversal symmetry on arbitrary cube windows is too weak. It is not evidence against the directed ordered-tuple conjecture.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

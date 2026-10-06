@@ -44,3 +44,9 @@ h(v_k,\ldots,v_1)=1-h(v_1,\ldots,v_k).
 Thus the directed tuple Grand Conjecture \(N_k\) and the translation-invariant ordered-window formulation are the same problem. “Translation invariance” is not an added repair hypothesis relative to directed tuples; it is simply the cube-coordinate expression of the directed tuple model itself.
 
 For \(r=2\), \(N_2\) follows from the Hamilton-path theorem for tournaments.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

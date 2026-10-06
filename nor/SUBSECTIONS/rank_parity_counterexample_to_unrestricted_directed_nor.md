@@ -32,3 +32,9 @@ h(v_1,\ldots,v_k)
 with reversal antisymmetry.
 
 This node supersedes its earlier wording and exists to prevent that formulation error from propagating.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

@@ -18,9 +18,11 @@ Every antipodal cube geodesic determines a coordinate permutation by its flip or
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 
 - [Subsection 1 — Antipodal cube geodesics are coordinate orders](../SUBSECTIONS/antipodal_cube_geodesics_are_coordinate_orders.md) (`antipodal_cube_geodesics_are_coordinate_orders`; development v1; composition v1; stale=False)
-- [Subsection 2 — Ordered windows remove the distinguished-pole restriction](../SUBSECTIONS/ordered_windows_remove_the_distinguished_pole_restriction.md) (`ordered_windows_remove_the_distinguished_pole_restriction`; development v2; composition v1; stale=True)
-- [Subsection 3 — Cochain viewpoint on color changes](../SUBSECTIONS/cochain_viewpoint_on_color_changes.md) (`cochain_viewpoint_on_color_changes`; development v2; composition v1; stale=True)
+- [Subsection 2 — Ordered windows remove the distinguished-pole restriction](../SUBSECTIONS/ordered_windows_remove_the_distinguished_pole_restriction.md) (`ordered_windows_remove_the_distinguished_pole_restriction`; development v2; composition v1; stale=False)
+- [Subsection 3 — Cochain viewpoint on color changes](../SUBSECTIONS/cochain_viewpoint_on_color_changes.md) (`cochain_viewpoint_on_color_changes`; development v2; composition v1; stale=False)

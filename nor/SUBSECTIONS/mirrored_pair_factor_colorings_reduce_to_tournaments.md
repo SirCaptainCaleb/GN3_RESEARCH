@@ -81,3 +81,8 @@ h(a,b,c)=0.
 The proposition says that if these center-indexed tournaments are all the same tournament, then the conjecture is trivial: split the permutation positions into the two parity classes and place a directed Hamilton path of that tournament in each class.
 
 Thus the genuine difficulty of (N_3) is not reversal antisymmetry itself and not even tournament structure at each center. It is the **variation of the tournament with the middle vertex**. Any closure mechanism for (N_3) can therefore focus on synchronizing the family ({T_b}), rather than treating (h) as an undifferentiated ternary coloring.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

@@ -78,3 +78,8 @@ So the unrestricted basepoint-dependent tuple-window version of \(N_k\) fails al
 Changing the project index so that \(k\) denotes cube-vertex tuple arity does not remove the old rank-parity obstruction. Any viable grand conjecture must retain an additional restriction excluding absolute-basepoint dependence (for example the directed translation-invariant coordinate sector), or adopt a different repaired family.
 
 This refutation concerns the widened tuple-window formulation only. It does not refute the directed translation-invariant coordinate conjecture.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

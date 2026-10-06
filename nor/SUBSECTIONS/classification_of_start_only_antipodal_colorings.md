@@ -43,3 +43,9 @@ Indeed, comparing two \(d\)-sets differing by one coordinate shows invariance un
 Thus absolute rank parity is the unique start-only obstruction in this enlarged model.
 
 Directed tuple NOR excludes this sector entirely because its color is a function only of the ordered flipped coordinates. This classification is therefore a boundary-of-formulation result, not evidence against \(N_k\).
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

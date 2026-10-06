@@ -20,6 +20,8 @@ Wu and Yang's proof of Norine's original conjecture supplies a stronger chain-le
 - Refutation: unrefuted
 - Composition version: 3
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

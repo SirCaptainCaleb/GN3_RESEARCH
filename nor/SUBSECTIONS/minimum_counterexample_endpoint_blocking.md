@@ -51,3 +51,8 @@ Prepending \(x\) gives the word \(d,c_1,\ldots,c_m\), where \(d=h(x,v_1,\ldots,v
 ### Consequence
 
 Every one-change ordering of every vertex deletion in a minimum counterexample is blocked at both ends. This converts minimality into local directed constraints on terminal \((r-1)\)-tuples, without any small-order assumption.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

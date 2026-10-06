@@ -75,3 +75,9 @@ immediately certifies the NOR conclusion.
 ### Audit
 
 The equivalence uses only the fact that every cut of a cyclic coordinate order is a permutation and that its nonwrapping (r)-windows are the indicated (r+1) consecutive cyclic windows. No reversal assumption is needed for the reformulation or the averaging inequality; reversal antisymmetry enters only when trying to prove that some cyclic order must have low variation.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

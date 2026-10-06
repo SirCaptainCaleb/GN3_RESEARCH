@@ -8,6 +8,14 @@
         "version": 7
       }
     ],
+    "article_ii_nor_union_closed_bridge": [
+      {
+        "id": "directed_nor_union_closed_bridge",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
+    ],
     "port_article_vii_ordered_tuple_norine_geometry": [
       {
         "id": "port_cube_geodesics_and_ordered_windows",
@@ -41,28 +49,61 @@
         "body_chars": 915,
         "composed_through_revision": 2017,
         "composition_version": 6,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 1,
+          "latest_section_position_when_composed": 1,
+          "sections_existing_when_composed": 1,
+          "sections_now": 1
+        },
         "has_composition": true,
         "source_note": "Article recomposed after project-wide tuple-arity reindexing.",
-        "stale": false,
-        "stale_children": []
+        "stale": true,
+        "stale_dependencies": [
+          {
+            "composition_saw_version": 6,
+            "current_composition_version": 7,
+            "source_id": "higher_memory_norine_geodesics"
+          }
+        ]
       },
       "version": 7
+    },
+    "article_ii_nor_union_closed_bridge": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "latest_section_position_now": 1,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
+          "sections_now": 1
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 1
     },
     "port_article_vii_ordered_tuple_norine_geometry": {
       "composition": {
         "body_chars": 1825,
         "composed_through_revision": 1982,
         "composition_version": 4,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 4,
+          "latest_section_position_when_composed": 4,
+          "sections_existing_when_composed": 4,
+          "sections_now": 4
+        },
         "has_composition": true,
         "source_note": "Expanded after scanning GN3 brainstorm migration history and project notes for portable NOR discoveries.",
         "stale": true,
-        "stale_children": [
+        "stale_dependencies": [
           {
+            "composition_saw_version": 2,
             "current_composition_version": 3,
-            "depends_on": true,
-            "parent_saw_composition_version": 2,
             "source_id": "port_permutahedral_antipodal_topology"
           }
         ]
@@ -70,22 +111,45 @@
       "version": 6
     }
   },
-  "brainstorm_count": 1,
+  "brainstorm_count": 4,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-06T06:06:53.250713+00:00",
+  "generated_at": "2026-10-06T16:53:32.225378+00:00",
   "mirror_format": 17,
   "schema": "nor",
   "section_versions": {
+    "directed_nor_union_closed_bridge": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
+          "subsections_now": 4
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
     "higher_memory_norine_geodesics": {
       "composition": {
-        "body_chars": 907,
-        "composed_through_revision": 2016,
-        "composition_version": 6,
-        "development_changed": false,
+        "body_chars": 2090,
+        "composed_through_revision": 2077,
+        "composition_version": 7,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 47,
+          "latest_subsection_no_when_composed": 47,
+          "subsections_existing_when_composed": 47,
+          "subsections_now": 47
+        },
         "has_composition": true,
-        "source_note": "Recomposed after project-wide tuple-arity reindexing.",
+        "source_note": "Recomposed through Subsection 47 after coverage/status repair; incorporates audited common-tail and antimatroid-frontier developments.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 7,
       "version": 7
@@ -95,11 +159,17 @@
         "body_chars": 537,
         "composed_through_revision": 1979,
         "composition_version": 2,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Expanded with the cochain/change-process viewpoint recovered from project notes.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 3,
       "version": 3
@@ -109,11 +179,17 @@
         "body_chars": 833,
         "composed_through_revision": 1968,
         "composition_version": 2,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
         "has_composition": true,
         "source_note": "Corrected Freudenthal port to treat pole changes as global translation symmetry, not an obstruction.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 3,
       "version": 3
@@ -123,11 +199,17 @@
         "body_chars": 624,
         "composed_through_revision": 1981,
         "composition_version": 2,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Expanded with the audited one-change violation-vector construction recovered from Toolkit-Limbo brainstorm history.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 3,
       "version": 3
@@ -137,32 +219,96 @@
         "body_chars": 938,
         "composed_through_revision": 1986,
         "composition_version": 3,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Updated with verified Wu--Yang literature architecture.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 4,
       "version": 4
     }
   },
-  "snapshot_revision": 2020,
+  "snapshot_revision": 2078,
   "startup_broadcasts": [],
   "subsection_versions": {
+    "a_common_tail_deletion_cycle_cannot_end_in_a_singleton_final_run": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "a_directed_cycle_of_compatible_deletion_prefixes_defeats_fixed_tail_completion": {
+      "composition": {
+        "body_chars": 1049,
+        "composed_through_revision": 2055,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Verified construction and symbolic obstruction; grand conjecture remains open.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
     "an_odd_violation_vector_whose_chamber_zeros_are_one_change_words": {
       "composition": {
         "body_chars": 473,
         "composed_through_revision": 1976,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported from an audited GN3 Toolkit-Limbo brainstorm; kept as a centered NOR template rather than a general theorem.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_near_one_change_word_structure",
+      "version": 2
+    },
+    "antimatroid_supports_do_not_determine_tight_witness_orders": {
+      "composition": {
+        "body_chars": 940,
+        "composed_through_revision": 2070,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Independent audit and explicit witness-language examples; no closure claim.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
       "version": 2
     },
     "antipodal_cube_geodesics_are_coordinate_orders": {
@@ -170,41 +316,139 @@
         "body_chars": 348,
         "composed_through_revision": 1943,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported from Article VII cube-geodesic dictionary.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_cube_geodesics_and_ordered_windows",
       "version": 2
+    },
+    "audit_of_tail_truncation_and_independent_singleton_run_repair": {
+      "composition": {
+        "body_chars": 1136,
+        "composed_through_revision": 2069,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Independent audit and explicit witness-language examples; no closure claim.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "audit_the_pair_defect_self_map_has_degree_1": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "audit_weighted_cube_boundary_zeros_remain_in_pole_stars": {
+      "composition": {
+        "body_chars": 6234,
+        "composed_through_revision": 2045,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Audited §34 and proved the bottom-link degree obstruction; preserves the valid descent argument and isolates the unproved pole-star conversion.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "blocked_front_recentering_exchange_for_tight_forks": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
     },
     "bourgin_yang_turns_target_compression_into_a_large_zero_locus": {
       "composition": {
         "body_chars": 389,
         "composed_through_revision": 1961,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported Bourgin--Yang multiplicity principle from Article VII.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
+    },
+    "canonical_uncentered_pair_defect_and_face_localization_descent": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
     },
     "cellular_odd_maps_from_reversal_odd_chamber_labels": {
       "composition": {
         "body_chars": 398,
         "composed_through_revision": 1945,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported from Article VII cellular root topology.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_permutahedral_antipodal_topology",
@@ -213,10 +457,14 @@
     "classification_of_start_only_antipodal_colorings": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 3,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
@@ -227,23 +475,63 @@
         "body_chars": 414,
         "composed_through_revision": 1977,
         "composition_version": 1,
-        "development_changed": true,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported cochain viewpoint from Article VII project notes.",
-        "stale": true,
-        "stale_children": []
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "port_cube_geodesics_and_ordered_windows",
       "version": 3
     },
+    "common_tail_cycles_polarize_the_first_post_switch_coordinate": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "cube_boundary_weighted_turn_defect_closes_directed_nor": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
     "directed_n_k_at_nk2_via_an_odd_overlap_cycle": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -252,10 +540,30 @@
     "directed_nor_as_an_antipodal_cut_problem_on_overlap_words": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "directed_nor_as_an_orientation_of_a_quotient_overlap_graph": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -264,10 +572,30 @@
     "directed_sector_reduces_to_one_vertex_tight_fork_augmentation": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "feasible_support_antimatroids_and_minimal_non_union_certificates": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
@@ -278,23 +606,63 @@
         "body_chars": 334,
         "composed_through_revision": 1948,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported finite local-witness lemma from Article VII.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_near_one_change_word_structure",
       "version": 2
     },
+    "first_last_transition_cores_and_a_rook_locality_dichotomy": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "first_last_turn_roots_localize_balanced_defects_to_one_face_block": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
     "fixed_excess_nor_as_a_cyclic_variation_problem": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -305,35 +673,159 @@
         "body_chars": 435,
         "composed_through_revision": 1959,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported and generalized from Article VII Freudenthal geometry.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
     },
+    "freudenthal_gallery_interpretation_of_prefix_tail_reachability": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "general_outer_splice_bridge_and_branch_length_forcing": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "incidence_compression_of_turn_defects_preserves_block_localization": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "minimal_support_square_obstructions_have_antimatroid_sides": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
     "minimum_counterexample_endpoint_blocking": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
       "version": 2
     },
+    "minimum_counterexamples_contain_a_deletion_root_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "minimum_counterexamples_force_a_zero_free_odd_pair_defect_self_map": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "minimum_directed_n_4_counterexamples_yield_four_change_extremal_cycles": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
     "mirrored_pair_factor_colorings_reduce_to_tournaments": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -344,11 +836,15 @@
         "body_chars": 343,
         "composed_through_revision": 1947,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported Article VII inversion-window relaxation with NOR distinction made explicit.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_near_one_change_word_structure",
@@ -357,10 +853,14 @@
     "one_change_orders_are_spanning_converging_tight_forks": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -371,11 +871,15 @@
         "body_chars": 496,
         "composed_through_revision": 1944,
         "composition_version": 1,
-        "development_changed": true,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported from the corrected Article VII ordered-window dictionary.",
-        "stale": true,
-        "stale_children": []
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "port_cube_geodesics_and_ordered_windows",
@@ -384,10 +888,14 @@
     "orientation_blind_repair_and_the_first_nontrivial_dimension": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 4,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 4,
       "section_id": "higher_memory_norine_geodesics",
@@ -396,10 +904,46 @@
     "orientation_blind_windows_as_ordered_cube_face_galleries": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "outer_splice_forcing_for_blocked_ternary_forks": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "pair_defect_self_map_has_the_antipodal_degree": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "higher_memory_norine_geodesics",
@@ -410,23 +954,47 @@
         "body_chars": 842,
         "composed_through_revision": 1967,
         "composition_version": 2,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
         "has_composition": true,
         "source_note": "Corrected the port: global XOR is a legitimate symmetry in directed NOR; only local window-dependent renormalization was problematic.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 4
     },
+    "prefix_tail_state_dag_and_antipodal_monochromatic_reachability": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
     "rank_parity_counterexample_to_unrestricted_directed_nor": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 3,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
@@ -435,10 +1003,14 @@
     "rank_parity_refutes_the_unrestricted_tuple_window_n_k": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
@@ -447,25 +1019,97 @@
     "rank_parity_refutes_unrestricted_n_k": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 3,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
       "version": 3
+    },
+    "reduction_program_and_obstruction_dictionary": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "research_charter_and_first_exact_dictionary": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "reversed_suffix_splice_forces_three_post_switch_windows": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 3,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 3,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 3
+    },
+    "rigidity_of_a_common_tail_deletion_3_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
     },
     "rook_labels_and_chain_level_antipodal_architecture": {
       "composition": {
         "body_chars": 539,
         "composed_through_revision": 1985,
         "composition_version": 2,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
         "has_composition": true,
         "source_note": "Updated after verifying Wu--Yang arXiv:2607.19276.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 2,
       "section_id": "port_permutahedral_antipodal_topology",
@@ -476,53 +1120,155 @@
         "body_chars": 330,
         "composed_through_revision": 1962,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported general root-balance mechanism from Article VII.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
     },
-    "smallest_counterexamples_force_a_tight_cyclic_transition_block": {
+    "singleton_branch_exchange_closes_the_six_vertex_ternary_case": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "six_coordinate_ternary_counterexamples_force_opposite_window_coherence": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
       "version": 1
     },
+    "smallest_counterexamples_force_a_tight_cyclic_transition_block": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "spanning_center_insertion_for_ternary_forks_and_its_unbounded_obstruction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "spanning_construction_from_paired_deletion_orders_and_common_tail_restrictions": {
+      "composition": {
+        "body_chars": 1088,
+        "composed_through_revision": 2054,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Verified construction and symbolic obstruction; grand conjecture remains open.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 2
+    },
+    "the_doubled_cube_lift_can_force_three_changes_despite_balanced_coordinate_frequencies": {
+      "composition": {
+        "body_chars": 853,
+        "composed_through_revision": 2076,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Explicit union-closed family separates coordinate-frequency conclusion from one-change geometry of the canonical lift.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "directed_nor_union_closed_bridge",
+      "version": 2
+    },
     "the_higher_memory_one_change_geodesic_conjecture": {
       "composition": {
-        "body_chars": 626,
-        "composed_through_revision": 2014,
-        "composition_version": 3,
-        "development_changed": false,
+        "body_chars": 5053,
+        "composed_through_revision": 2050,
+        "composition_version": 4,
+        "frontier": {
+          "current": true,
+          "development_version_now": 5,
+          "development_version_when_composed": 5
+        },
         "has_composition": true,
-        "source_note": "Project-wide reindexing: k now means colored-tuple arity.",
+        "source_note": "Added Caleb's supplied provenance from edge-ordered monotone paths through directed triples to N_4, including the two-cover construction and path-length conventions.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
-      "development_version": 4,
+      "development_version": 5,
       "section_id": "higher_memory_norine_geodesics",
-      "version": 7
+      "version": 9
     },
     "the_one_skeleton_is_not_enough": {
       "composition": {
         "body_chars": 372,
         "composed_through_revision": 1946,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Ported Article VII fence against graph-only Tucker reasoning.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "port_permutahedral_antipodal_topology",
@@ -531,19 +1277,55 @@
     "translation_invariant_repair_and_the_tuple_conjecture_t_k": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 3,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
       "version": 3
+    },
+    "turn_window_roots_make_face_block_localization_hereditary": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "unifying_conjecture_acceptance_tests": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
     }
   },
-  "toolkit_count": 17,
+  "toolkit_count": 18,
   "universal_document_versions": {
-    "guide": 20,
+    "guide": 21,
     "reflexes": 14
   }
 }

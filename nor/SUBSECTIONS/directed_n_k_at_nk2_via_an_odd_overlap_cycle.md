@@ -51,3 +51,9 @@ The proof uses only:
 3. the existence of the two cyclic overlap cycles.
 
 It does not use reversal antisymmetry and therefore proves a strictly stronger first-nontrivial-dimension statement for directed NOR. The argument does not automatically extend to (nge r+3), because a bad longer word need not alternate at every adjacent pair.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

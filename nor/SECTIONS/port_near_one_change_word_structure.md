@@ -24,6 +24,8 @@ form an odd defect vector whose chamber zeros are precisely the centered one-cha
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 
