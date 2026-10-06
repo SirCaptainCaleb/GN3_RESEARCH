@@ -1,14 +1,7 @@
-name: Build research context artifact
+name: Build combined research context artifact
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "Sync research mirror"
-      - "Sync GN3N research mirror"
-      - "Sync NOR research mirror"
-      - "Sync LINP research mirror"
-    types: [completed]
 
 permissions:
   contents: write
@@ -20,7 +13,6 @@ concurrency:
 
 jobs:
   artifact:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
