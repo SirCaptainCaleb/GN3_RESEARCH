@@ -106,3 +106,8 @@ The only remaining case is exactly the minority-hole signature. QED.
 Thus a large minimum balanced hole cannot remain an isolated zero-root phenomenon. It forces a global deletion-by-deletion dichotomy: every vertex is either carried by an anchored four-component spanning three-cover, or is the unique minority label against both exposed endpoints of the long side of a \(\Psi\)-minimal deletion cover.
 
 A single bounded four-support is not claimed as closure. The useful content is the simultaneous constraint over every deleted label.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

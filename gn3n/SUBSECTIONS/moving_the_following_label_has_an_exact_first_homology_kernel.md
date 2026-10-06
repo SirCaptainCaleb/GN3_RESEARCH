@@ -64,3 +64,8 @@ The formula determines the kernel, not all of H_1(D), its fundamental group, or 
 For a chordless four-cycle, every proper induced subgraph has zero first homology. Therefore any nonzero exit value makes the old H_1 inject into the enlarged locus. When every exit value on B is zero, the stronger endpoint-enlargement theorem makes the entire D contractible.
 
 For a larger graph this gives a precise filter for proposed repairs: cycles supported on labels with zero exit status can be filled by the explicit enlargement, while any old homology class outside their span survives regardless of unspecified tight triples. Further enlargements must address those surviving classes.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

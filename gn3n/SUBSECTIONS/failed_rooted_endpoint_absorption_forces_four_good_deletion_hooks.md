@@ -78,3 +78,8 @@ Equivalently, all possible one-label forward connectors across the corridor edge
 This strengthens [[rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue]] for the direct one-label attachment problem: the obstruction supplies at least four hooks, not merely three predecessor hooks, and those hooks are exactly the good-deletion labels of the six-packet.
 
 No prescribed-endpoint theorem, cyclic rotation, or minimum-counterexample hypothesis is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

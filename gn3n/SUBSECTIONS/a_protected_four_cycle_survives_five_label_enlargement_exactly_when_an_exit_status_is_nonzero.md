@@ -76,3 +76,8 @@ This is stronger than the earlier obstruction to merging each old outward face i
 Hence a repair in these remaining cases must leave this five-label face: for example by enlarging the movable label set further or changing the fixed boundary data. A Hamiltonian five-support on the same labels, supplied by [[a_mutual_terminal_pair_four_cycle_forces_a_hamiltonian_five_support]], does not remove this obstruction.
 
 This is an obstruction to a specified local protected carrier, not a counterexample to the grand conjecture. The initial finite diagnostic suggested the cocycle; the theorem above is a direct proof for every compatible boundary tournament and does not rely on enumeration.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

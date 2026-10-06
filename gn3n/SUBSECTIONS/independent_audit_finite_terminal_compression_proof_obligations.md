@@ -45,3 +45,8 @@ must be monochromatic. But those observations alone do not establish the termina
 I did not find a separate canonical Toolkit/Section proof of these exact implications; the searchable project record currently points back to this same Section/Subsection. Therefore the finite terminal theorem should be treated as **not independently verified**, rather than as failed: the missing material may exist in prior research history, but it is not present in a form sufficient for audit.
 
 Because [[terminalization_reachability_and_the_exact_frontier]] uses the finite terminal classification as a premise, a publication-quality closure requires these compression lemmas either to be proved explicitly here or to cite exact audited dependencies containing their proofs.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

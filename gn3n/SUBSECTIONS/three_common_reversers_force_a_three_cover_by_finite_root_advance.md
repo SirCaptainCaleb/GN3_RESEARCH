@@ -121,3 +121,8 @@ So a blocked exterior label has a stronger transport consequence than the single
 \]
 
 This still does not by itself give the required two-cover/outward replacement. But it removes the orientation-handoff dead end: the root-advance process cannot continue indefinitely or strand an uncontrolled bounded packet. The next step may invoke the established three-cover repartition machinery on this enlarged local cover, rather than solving a new fixed-junction problem from scratch.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

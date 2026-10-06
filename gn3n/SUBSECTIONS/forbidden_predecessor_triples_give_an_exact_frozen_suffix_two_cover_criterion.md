@@ -36,3 +36,8 @@ Proof. Write the path containing S as (L,S), where L is an ordered subset of W. 
 This elevates [[exact_frozen_suffix_conversion_criterion_for_an_eight_label_interface_packet]] from one prescribed pair and six packet labels to arbitrary packet size, arbitrary tight suffix length, and any collection of allowed interface pairs. The criterion retains the ordered pair: unordered support Hamiltonicity does not replace the junction tests.
 
 The hypothesis is a condition on actual consecutive triples, not cyclic rotations. It need not hold in every failed-absorption state. When it does hold, the remaining rooted problem is exactly a Hamiltonian deletion problem with at most two deleted packet vertices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

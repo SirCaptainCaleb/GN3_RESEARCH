@@ -32,3 +32,8 @@ In particular,
 \]
 
 This is the correct cyclic reformulation. It allows several separated blue runs provided two cut positions hit them all, which is exactly the information lost by counting monochromatic components alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

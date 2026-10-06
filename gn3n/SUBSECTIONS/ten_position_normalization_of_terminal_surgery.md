@@ -37,3 +37,8 @@ Therefore every terminal surgery may be normalized to a **ten-position surgery**
    Hence [[compatible_two_covers_under_a_one_vertex_terminal_support_exchange]] applies uniformly; no separate (6,7,8,9,10)-vertex compatibility analysis is needed.
 
 For generators entirely inside (J), the vertex set of the repair support does not change. For generators entirely outside (J), surgery commutes with the generator. Thus the only support-changing local transition is precisely the one-vertex exchange handled by the compatible (5|5) lemma.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

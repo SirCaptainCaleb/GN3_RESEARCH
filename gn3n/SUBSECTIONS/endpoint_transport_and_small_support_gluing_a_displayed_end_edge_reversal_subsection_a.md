@@ -63,3 +63,8 @@ Therefore:
 The initial edge is symmetric.
 
 At a minimum of \(\Phi\) in a connected component of the pairwise-repartition graph, only the one-vertex transfer remains.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

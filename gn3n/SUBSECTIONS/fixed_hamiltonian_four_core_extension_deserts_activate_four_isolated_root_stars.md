@@ -98,3 +98,8 @@ A fixed Hamiltonian \(K_4\) with a large family of bad one-vertex extensions is 
 Since every exterior label belongs to at least three root families, the quiet residue has dense overlap between these fixed-pair Hamiltonian-support systems. This supplies exactly the kind of mixed support-pair filling data that is invisible if one records only whether \(A+y\) itself is Hamiltonian.
 
 This is an upstream reuse of the late isolated-root theory at the rank-four support-carrier frontier.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

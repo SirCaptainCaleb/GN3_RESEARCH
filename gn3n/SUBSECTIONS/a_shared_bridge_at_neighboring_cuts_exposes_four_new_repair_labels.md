@@ -40,3 +40,8 @@ These have the asserted orientations and endpoint extensions because the two leg
 This is a two-stage sufficient repair certificate. It uses the failure of neighboring tests to force four good deletion supports and creates the compatible tail cover needed to consume them. It does not assume that the shared vertex bridges both tests or that a good deletion label must bridge the new tails. Their simultaneous failure remains a stated structural residue, rather than a completed finite reduction.
 
 A resulting two-cover order on the full reflected span is outward in the positive witness filtration. Equivariance and compatibility of the choices of neighboring cuts, transfers, and carriers across ambient faces remain separate.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

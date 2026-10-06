@@ -73,3 +73,8 @@ Thus arbitrary deletion distance still compresses canonically to the fixed layer
 \boxed{\kappa_2=3}
 \]
 for local analysis; what remains unproved is that these cores themselves have path-cover number three.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

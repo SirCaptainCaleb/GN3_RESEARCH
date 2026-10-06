@@ -21,3 +21,8 @@ Assume H has no two-cover and fix a vertex x in the universal branch of the fixe
 In particular, if n=2r+2 is even and x,y are two vertices both in the universal branch, use the universal balanced-partition theorem for hole x. Choose an r|(r+1) partition of V(H)-{x} with y on the (r+1)-side. That side is Hamiltonian and contains y, contradicting the support-size bound for y. Hence for even n at most one vertex can lie in the universal fixed-hole branch; every other vertex must admit an x-sparse unanimity face.
 
 If n=2r+1 is odd and x,y are both universal, then for every partition V(H)-{x,y}=R sqcup S with |R|=r-1 and |S|=r, the three sets R union {x}, R union {y}, and S are Hamiltonian, while R union {x,y} is non-Hamiltonian (otherwise it together with S would two-cover H). Thus the odd-order two-universal residue is a universal pair-critical family: every (r-1)-set R accepts x and y separately but never simultaneously.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

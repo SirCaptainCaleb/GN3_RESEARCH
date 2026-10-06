@@ -69,3 +69,8 @@ Any protected terminal-pair loop whose free reservoir block contains one or more
 In particular, when a genuine two-deletion normalization has a central movable block containing the two minimum-hole labels, that block cannot simultaneously serve as the protected boundary reservoir in this fixed-boundary model. A surviving carrier loop must therefore change roles: its reservoir labels must avoid the minimum pair, or its neighboring boundary must cease to be the fixed inherited path segment, or the carrier must use a different positional enlargement.
 
 This removes a much larger overlap between the genuine two-deletion core and the terminal-pair loop than previously recorded.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

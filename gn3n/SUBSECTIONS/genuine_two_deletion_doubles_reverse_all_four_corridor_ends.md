@@ -98,3 +98,8 @@ This is substantially stronger than generic failure of the terminal attachment m
 - the endpoint data contain two same-edge twins at each of four exposed edges and common-reverser configurations across the two initial edges and across the two terminal edges.
 
 The same-edge twin condition alone is insufficient, but the simultaneous four-end condition is the correct strengthened residue for the next local analysis. Any two-deletion closure theorem need only handle this configuration, not arbitrary Hall failure.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

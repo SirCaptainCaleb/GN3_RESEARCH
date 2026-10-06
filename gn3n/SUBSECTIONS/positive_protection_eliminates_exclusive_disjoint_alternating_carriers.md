@@ -69,3 +69,8 @@ The proof uses only positive forbidden patterns and independently variable face-
 Consequently the twelve-position upper bound for the exclusive disjoint alternating branch is unnecessary: that branch is eliminated. The exclusive disjoint span-two branch survives, but its determining span is at most ten vertices. Centered and overlapping supports already have their elementary bounded union sizes.
 
 The unresolved one-polarity compression branch is reflected-double occupation, where both occurrences coexist and \(L+R=1\) fails. The theorem makes no claim about that branch, terminal outwardness, or the global nested carrier assignment.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

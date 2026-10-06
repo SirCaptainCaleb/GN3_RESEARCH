@@ -125,3 +125,8 @@ The analogous right-hand statement follows from persistent \(001\).
 So the next lemma should not ask merely for a Hamiltonian bounded packet; that has already been obtained. It should ask for a **rooted handoff theorem**: use these universal one-label inward extensions at the two blocked ends, together with connector-path exclusion in the genuine \(\kappa_2=2\) layer, to either join the corridor cover after moving bounded endpoint labels, or force one of the enlarged-buffer success conditions.
 
 This is the shortest currently visible path from Article VII development to the grand theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

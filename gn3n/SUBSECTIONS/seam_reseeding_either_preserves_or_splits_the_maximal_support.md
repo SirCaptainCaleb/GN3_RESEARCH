@@ -101,3 +101,8 @@ K_{QP}=\{q_{t-1},q_t,p_1,p_2\},
 the theorem applies because each \(K\) is disjoint from \(S\).
 
 Thus the vague "reseed" branch of the seam descent is reduced to a support-preserving \(4\mid k\mid(n-k-4)\) three-cover or an explicit split-edge comparison certificate on \(S\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

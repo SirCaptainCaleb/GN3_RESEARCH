@@ -83,3 +83,8 @@ The rooted four-support behavior of \(x,y\) at the two corresponding endpoint pa
 (\tau_I(x)\oplus\tau_I(y),\,\tau_T(x)\oplus\tau_T(y))\in\{0,1\}^2.
 \]
 When the corresponding bit is zero, the fixed-pair theorem gives a Hamiltonian four-support on that endpoint pair together with \(x,y\). When it is one, the two singleton four-supports cross that boundary in opposite orientations. This reduces the exposed endpoint part of every genuine two-deletion state to a four-type interface; no path reversal is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

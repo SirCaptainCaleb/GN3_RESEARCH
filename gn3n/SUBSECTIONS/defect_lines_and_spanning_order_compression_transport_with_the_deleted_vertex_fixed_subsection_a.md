@@ -206,3 +206,9 @@ with
 Thus every three-vertex-side terminal state of the fixed-root transport has a strict \(\Phi\)-decrease in the same repartition component. \(\square\)
 
 Consequently the elaborate seven-set transport at the end of Lemma 4 is not needed merely to prove progress from the \(3\)-vs-long state. The two simultaneous end-reversal carriers already force strict descent by a two-step pairwise repartition.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

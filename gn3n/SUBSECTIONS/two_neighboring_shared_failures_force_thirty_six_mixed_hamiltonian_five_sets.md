@@ -33,3 +33,8 @@ The two classes are disjoint. Hence the eight-set A+Z contains at least thirty-s
 There is a graph description of the remaining bad supports of type 2|3. For a fixed triple D in Z, join two vertices a,b in A when {a,b}+D is non-Hamiltonian. This graph is triangle-free: on any three vertices B in A, the six-set B+D has three deletions of type 3|2 already known Hamiltonian by (1); four-of-six then forces at least one of its three deletions of type 2|3 Hamiltonian. Thus the three pairs in B cannot all be edges. Across the four triples D, each pair in A is bad for at most two D, by the count in (2).
 
 These many Hamiltonian packets are verified alternatives available to a repair. They do not alone yield a two-cover of the full determining span: the complement of an arbitrary mixed five-set need not be one tight path, and deletion of internal path vertices cannot be treated as harmless. An attachment or compatible tail decomposition is still required. This records the extra structure forced by two simultaneous shared-cut failures without replacing the remaining rooted problem by a density claim.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

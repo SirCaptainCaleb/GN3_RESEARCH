@@ -61,3 +61,8 @@ In both chambers the positive word 011 at the left non-tight old triple and the 
 This family refutes a local implication from universal smaller-radius cleanliness and opposite ordinary nearest labels to a greater-radius chamber. It is not a counterexample to the grand conjecture. If the intended auxiliary theorem additionally assumes that H is a grand counterexample, that global assumption would have to do extra work: the cited fixed-position theorem does not supply the stated conclusion, and the local proof does not use such extra information.
 
 A valid repair is to fix r as a singleton throughout the source face, or to prove a separate theorem synchronizing its positions before applying fixed-position window splicing. The example does not justify a uniform radius-three bound on non-singleton auxiliary carriers.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

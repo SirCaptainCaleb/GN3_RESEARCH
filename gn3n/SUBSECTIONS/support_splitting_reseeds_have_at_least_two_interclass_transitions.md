@@ -74,3 +74,8 @@ Therefore seam reseeding has only two structural modes:
 2. support-splitting, which is automatically a comparison disturbance with at least two interclass transitions.
 
 No minimum-counterexample hypothesis, cyclic rotation, path reversal, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

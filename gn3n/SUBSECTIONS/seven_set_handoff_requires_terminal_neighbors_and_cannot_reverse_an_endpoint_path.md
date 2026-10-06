@@ -60,3 +60,8 @@ Then:
 **Proof.** In (1), all packet triples and all tail triples are tight; the only new triple is (t,c_2,c_3), which is tight by hypothesis. In (2), the failed junctions have status zero and boundary antisymmetry reverses them. Statement (3) then has exactly the three required distinct hooks. ∎
 
 The existing prescribed-endpoint seven-set theorem supplies an unoriented endpoint-neighbor set, not the lower bound |T^-|>=3. The missing load-bearing theorem is directional endpoint control, or an alternative repartition that avoids this terminal requirement. No reverse-path or cyclic-rotation inference can fill that gap.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

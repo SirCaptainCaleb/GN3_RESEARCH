@@ -149,3 +149,8 @@ with
 all complementary endpoints reversing both ends of \(S\), and any complementary path within one vertex of \(|S|\) mutually reversed at both ends by \(S\).
 
 This imports the useful part of the Article IV maximal-support/sandwich machinery into Article VII without invoking the prohibited unbounded minimum-counterexample calculus.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

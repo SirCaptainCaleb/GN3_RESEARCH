@@ -88,3 +88,8 @@ Therefore the unbounded positive terminal branch has the exact dichotomy
 This is substantially narrower than the original two-path/two-endpoint interface. It identifies the remaining obstruction with the familiar double-end reversal geometry that also appears in longest-path and endpoint-transport arguments, but the present reduction uses no minimum-counterexample hypothesis.
 
 No universal absorption theorem is asserted for the second branch. In particular, existing longest-path examples show that a vertex reversing both end edges of a path is genuine structure rather than an automatic Hamiltonian extension. The next repair must exploit the presence of the *second* corridor path and second exterior vertex, or use the protected-face variation, rather than attempting to absorb the doubly reversing vertex into its path in isolation.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

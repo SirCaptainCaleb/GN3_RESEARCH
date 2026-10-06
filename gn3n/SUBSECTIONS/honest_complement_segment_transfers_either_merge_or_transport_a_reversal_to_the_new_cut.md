@@ -43,3 +43,8 @@ If either concatenation A^o R or R A^o is tight, these two paths merge and H has
 Thus an honest segment-transfer comparison cannot be a featureless alternative two-cover: either it yields a two-cover of H, or it transports an explicit external reversal to the comparison-path boundary, to the inherited cut edge of P, or to the new residual seam after wrapping T by the two end-edges of A.
 
 The four symmetric segment-transfer orientations satisfy the same conclusion. No small-order bound, cyclic rotation, path reversal, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

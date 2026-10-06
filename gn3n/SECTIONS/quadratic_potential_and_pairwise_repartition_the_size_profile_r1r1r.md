@@ -39,6 +39,8 @@ Now let \(T\) be a two-cover of \(A\cup B\cup C\). If there is an order disagree
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

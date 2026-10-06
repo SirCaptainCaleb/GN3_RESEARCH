@@ -40,3 +40,8 @@ h(s_3,s_2,u)=1.
 ]
 
 No unconditional propagation theorem is claimed here. See [[audit_cyclic_rotation_invalidates_the_new_descent_and_second_layer_claims]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

@@ -64,3 +64,8 @@ For a chosen ambient protected face H satisfying the hypotheses, all source subf
 For a global construction, if chosen ambient faces H(F) satisfy H(G) subset H(F) for G subset F, then the enlarged carriers D(H(F)) are naturally nested. Contractibility then supplies all simplex extensions. Choosing g independently on neighboring source faces does not establish this nesting; that compatibility remains a separate theorem.
 
 No existence of such an exterior vertex is claimed from boundary antisymmetry alone. The new conclusion is a precise sufficient local mechanism: a vertex satisfying the two ordered-pair tests and the protection test removes every topological obstruction of that pair factor.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -116,3 +116,8 @@ The high-hole zero-root branch now supplies two complementary canonical reductio
 2. every same-orientation hole pair gives a \(\kappa_2=2\) core with profile \(4\mid s\mid s\).
 
 The second form is especially well matched to the established “four-path beside a long path” descent/repartition lemmas. Thus a promising attack on a symmetric zero-root hole is to study the **family of overlapping \(4\mid s\mid s\) two-deletion cores indexed by the two orientation classes**, rather than one reflected-double packet at a time.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

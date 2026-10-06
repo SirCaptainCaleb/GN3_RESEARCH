@@ -135,3 +135,9 @@ is a tight path; in the second
 is. Together with \(Q\), either order gives a spanning two-cover of \(H\). This is outcome 2. \(\square\)
 
 Consequently, in the spanning odd-cycle support geometry, every adjacent pair of selected support edges immediately yields a reversal, a bounded Hamiltonian four-support, or a two-cover. Thus the odd-cycle geometry cannot support an additional quiet neutral omission-swap recurrence.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 5

@@ -100,3 +100,8 @@ form exactly the spanning odd support cycle of Article I.
 The negatively signed spanning cycle is therefore not a new support-agreement obstruction. It is canonically the old odd-cycle normal form already treated in [[deletion_covers_and_the_support_graph_the_odd_cycle_case]], which returns to the bounded-support / reversal-disturbance interface.
 
 Hence support-agreement connectivity adds no additional global terminal geometry beyond the existing Article I dichotomy.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

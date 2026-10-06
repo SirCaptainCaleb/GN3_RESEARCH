@@ -51,3 +51,8 @@ In particular, after [[two_bad_five_extensions_either_edge_order_the_six_set_or_
 - successful amalgamation forces an explicit reversed-edge or reversing-triple defect inside the same six-set.
 
 Thus every branch of the six-label equality packet now lands in one of the two established Article VII currencies: bounded Hamiltonian support or positioned reversal. The remaining task is no longer to classify the six-set itself, but to prove that these positioned reversals are compatible with the protected carrier handoff or force a spanning two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -40,3 +40,8 @@ S,\quad S\cup\{u\},\quad S\cup\{u,v\},\quad S\cup\{u,v,w\}
 of the staircase triangulation and is independent of the base subset \(S\). Complementation reverses the successive directions to \(w,v,u\) and therefore complements the color.
 
 This is the precise common structure with antipodal cube-coloring problems such as the Norine line of ideas: geodesics are permutations, opposite geodesics are reversals, and the local datum flips under the antipode. The important difference is that our color is attached to three consecutive directions, not directly to an ordinary cube edge. Any imported antipodal-path theorem must therefore survive this memory requirement rather than silently forgetting it.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

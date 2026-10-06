@@ -44,3 +44,8 @@ Consequently:
 3. a Hamiltonian five-vertex component tied to displayed endpoints of a complementary path.
 
 Repeated application either decreases \(\Phi\) or reaches a bounded Hamiltonian component carrying endpoint information.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

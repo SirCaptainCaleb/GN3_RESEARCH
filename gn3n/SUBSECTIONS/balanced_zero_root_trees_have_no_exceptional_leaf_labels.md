@@ -25,3 +25,8 @@ But |P|=|Q|=r, so |R|=0, contradicting the defining nonemptiness of R in the exc
 Hence no exceptional label exists at a leaf. Equivalently, for every y in Q, the selected deletion cover F_y contains a consecutive pair joining P to Q-{y}. In particular both endpoints of every Hamiltonian order on Q are available for the direct-mixing endpoint comparison.
 
 Thus, in the connected-tree branch containing a zero root, all containment and exceptional-transfer alternatives disappear. Every leaf endpoint comparison must exit through genuine order/path disturbance, endpoint reversal, a spanning two-cover, quadratic descent in the three-cover reconfiguration graph, or a balanced neutral omission swap.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

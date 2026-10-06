@@ -93,3 +93,8 @@ The word “anchor-containing” is essential. The three-hook theorem proves Ham
 This repairs the overreach identified in the corrected version of [[a_blocked_outward_buffer_creates_a_boundary_straddling_common_core_packet]]. The conclusion here does **not** invoke Lemma 6 of the same-side-extension section and therefore does not require its six-label simultaneous-extension family or an inherited two-coverable complement.
 
 It also does not yet produce an outward repair. The complement of the four- or five-support need not be Hamiltonian. The next gluing statement must add genuine endpoint control. A viable target is: from the connector-free conditions of [[connector_path_exclusion_for_genuine_two_deletion_packets]] and the known tight guard order, either obtain a Hamilton order of one of these bounded supports with a usable corridor-facing endpoint, or force the failed endpoint choices into reverse junctions on the same bounded two-layer interface.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

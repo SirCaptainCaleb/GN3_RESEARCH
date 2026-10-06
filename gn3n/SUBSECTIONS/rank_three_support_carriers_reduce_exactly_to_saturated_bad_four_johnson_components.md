@@ -57,3 +57,8 @@ In particular this turns the next closure obligation into a scale-independent st
 > Saturated-bad-component target. Prove that no boundary tournament admits a saturated connected component of non-Hamiltonian four-sets on the active carrier block; or prove that any such component can be absorbed by a mixed support-pair carrier using labels outside the block.
 
 This is not a small-order cutoff. It is the universal homological obstruction at carrier dimension three.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -98,3 +98,8 @@ h(y,q,x)=1,
 Thus failure of a cross-tail hole seed does not leave an arbitrary same-rail alternative. It forces two opposite same-rail hole-containing four-seeds and a complete four-by-four family of cross-tail hook relations through the two holes.
 
 Each same-rail seed has inherited two-interval complement: deleting both endpoints of one displayed path leaves its interior interval together with the other path. Hence either branch is compatible with interval-preserving seed maximalization.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

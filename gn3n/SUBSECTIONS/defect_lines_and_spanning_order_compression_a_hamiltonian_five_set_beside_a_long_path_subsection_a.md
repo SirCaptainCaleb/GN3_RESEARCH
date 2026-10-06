@@ -64,3 +64,8 @@ If \(H-K\) were Hamiltonian, a Hamilton path on \(K\) together with one on \(H-K
 Consequently a Hamiltonian support of order four **or five** carrying displayed endpoint information, with two-coverable complement, may always be replaced by an endpoint-rooted Hamiltonian four-support with the same complement property. Lemma 8 of the preceding Section then converts this four-support directly into a split/leave-and-return disturbance, an external end-edge reversal, or a two-cover.
 
 Thus the order-five support is no longer an independent terminal interface.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

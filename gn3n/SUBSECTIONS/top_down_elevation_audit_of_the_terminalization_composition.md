@@ -178,3 +178,8 @@ and
 \]
 
 Every higher-dimensional coherence issue and every nonzero unbounded exact-root issue has already been compressed away.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

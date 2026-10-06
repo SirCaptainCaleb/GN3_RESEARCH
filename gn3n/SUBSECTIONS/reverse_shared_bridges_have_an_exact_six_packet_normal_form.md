@@ -81,3 +81,8 @@ The reverse/reverse shared-bridge residue is therefore not an arbitrary six-pack
 \]
 
 No minimum-counterexample hypothesis or direct computation is used. The next gluing step may attack these two branches separately.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

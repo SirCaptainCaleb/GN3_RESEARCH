@@ -24,6 +24,8 @@ This construction is used twice below: first for root-balance statements, and th
 - Refutation: unrefuted
 - Composition version: 3
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

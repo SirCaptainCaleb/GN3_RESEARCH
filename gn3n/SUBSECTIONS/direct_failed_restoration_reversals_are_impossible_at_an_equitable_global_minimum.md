@@ -96,3 +96,8 @@ Thus, in any tournament of order greater than six satisfying the near-equitable 
 Equivalently, once the marked-reversal reduction has reached an equitable global minimum, a direct mixed-edge comparison cannot regenerate the external-reversal interface through the theorem's terminal failed-restoration case. It must instead yield a split/leave-and-return disturbance, a two-cover, strict descent, or a neutral omission swap; the neutral branch is already absorbed by the later omission-swap lemmas.
 
 This gives a genuine monotonicity improvement in the external-reversal recurrence: one entire mechanism by which a mixed comparison returned to an external reversal is eliminated at global minimum.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

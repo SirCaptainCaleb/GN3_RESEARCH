@@ -47,3 +47,8 @@ is non-tight. Boundary reversal gives
 tight, which reverses the displayed terminal edge \((u,c_h)\). If every vertex of \(C\) were absorbed, the resulting Hamilton path together with \(D\) would be a two-cover of \(H\). \(\square\)
 
 Thus endpoint realization gives a displayed end-edge reversal. The only alternative is that \(c_0\) is internal in every Hamiltonian order of \(X\cup\{c_0\}\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

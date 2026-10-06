@@ -94,3 +94,8 @@ qquad(rin R).
 ]
 
 Thus a genuine unbounded obstruction is not merely a two-deletion corridor. Unless it already admits an outward repair, an entire outer prefix or suffix is uniformly polarized against one exposed corridor edge. This is a global structural constraint unavailable to surgeries confined to (J).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

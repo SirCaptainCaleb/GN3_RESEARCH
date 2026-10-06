@@ -94,3 +94,8 @@ The protected-loop frontier can thus be stated purely combinatorially:
 > produce a sequence of zero-exit exterior labels that successively replaces every nonzero-exit vertex of the terminal-pair cycle.
 
 A universal exterior cone is sufficient but no longer necessary. The required adjacency pattern adapts locally as the cycle is repaired.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

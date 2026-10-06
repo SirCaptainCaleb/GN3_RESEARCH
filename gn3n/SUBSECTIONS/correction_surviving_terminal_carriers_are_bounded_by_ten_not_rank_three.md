@@ -42,3 +42,8 @@ The recent results remain useful inputs:
 4. all Coxeter directions completely outside (I) are safe product factors and preserve outwardness.
 
 Hence the remaining global problem is genuinely **finite-dimensional and local to at most ten terminal positions**, but it has not yet been reduced to rank three. Any closure should analyze these centered/overlapping terminal faces directly or prove an additional localization theorem for their sign-changing face blocks.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

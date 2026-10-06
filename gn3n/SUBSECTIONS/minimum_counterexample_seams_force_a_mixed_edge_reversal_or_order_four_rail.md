@@ -55,3 +55,8 @@ The Q->P seam is symmetric.
 If one complementary path has order two, the pure seam can consume that path completely; this remains a bounded short-rail interface and is the only exception to the displayed dichotomy.
 
 This replaces development version 1: the former order-four-rail branch is absorbed into the direct mixed-edge disturbance whenever both residual intervals are nonempty.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

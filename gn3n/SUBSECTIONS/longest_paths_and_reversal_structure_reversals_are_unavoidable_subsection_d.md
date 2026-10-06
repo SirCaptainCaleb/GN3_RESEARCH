@@ -107,3 +107,9 @@ Hence all conclusions previously proved for a globally (Phi)-minimal marked reve
 ]
 
 This removes any need to preserve a particular reversal certificate while descending in (Phi): every intermediate spanning three-cover automatically carries some displayed end-edge reversal.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 5

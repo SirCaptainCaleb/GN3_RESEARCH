@@ -27,3 +27,8 @@ Thus neither corridor length nor boundary-block rank is the essential remaining 
 Once such tuple-level repairs are supplied, the frozen-window carrier gives contractible protected target faces after collapsing neutral directions. A separate intersection-compatibility check between ambient-face normalizations is still required, but there is no longer an unbounded higher-dimensional Coxeter obstruction.
 
 This statement is a reduction of the repair frontier, not a proof of the packet-to-tail gluing theorem or of Article VII.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

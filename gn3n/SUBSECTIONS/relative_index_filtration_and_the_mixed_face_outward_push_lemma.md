@@ -194,3 +194,8 @@ The genus bound above is larger than the dimension of that target, so the map ha
 Applying the index-drop step gives (Y_{r+1}) with the same surplus of genus over the remaining witness-space dimension, and the corresponding relative averaging map gives a new positive balanced carrier supported entirely on depths at least (r+1). Thus from a carrier with innermost witness edge (e_r), the global separator mechanism yields either the finite terminal/two-cover branch or a new balanced carrier strictly farther outward.
 
 The important conceptual simplification is that the new carrier need not be extracted by reweighting the old non-antipodal face. It is regenerated from the invariant depth-filtered face poset, where the separator carries one less witness depth but loses at most one unit of (mathbb Z_2)-index.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

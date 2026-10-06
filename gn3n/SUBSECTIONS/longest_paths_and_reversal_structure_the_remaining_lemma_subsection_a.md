@@ -26,3 +26,8 @@ The preceding lemmas produce one of the following:
 **Remaining Lemma.** In a minimum counterexample, any one of these configurations yields a reversal of an end edge of a displayed path occurring in a deletion-cover or three-cover state, or directly yields a two-cover, or yields a spanning ordering of defect span at most \(2\).
 
 A proof completes the longest-path argument.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

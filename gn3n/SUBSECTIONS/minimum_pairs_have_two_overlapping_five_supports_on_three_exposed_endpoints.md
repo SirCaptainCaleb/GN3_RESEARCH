@@ -73,3 +73,8 @@ and at least two exposed endpoints.
 This strengthens the exposed-endpoint four-support theorem: the minimum-pair interface always has a pair of overlapping order-five admissible seeds, not merely one bounded support.
 
 No cyclic rotation, path reversal, minimum-counterexample hypothesis, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

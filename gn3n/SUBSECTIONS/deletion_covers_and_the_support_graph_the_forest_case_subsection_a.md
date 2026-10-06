@@ -126,3 +126,10 @@ Corollary 12 of
 shows that, in a selected support forest, no indefinitely neutral trajectory exists: every such continuation eventually leaves the neutral regime through a two-cover, bounded-support outcome, order disagreement, external reversal, split disturbance, or strict descent. (square)
 
 Thus the selected-support forest is no longer an independent global obstruction. After the Article I support-graph reductions, every forest branch returns to the same successful disturbance interfaces already used by Articles III–VI.
+
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 4

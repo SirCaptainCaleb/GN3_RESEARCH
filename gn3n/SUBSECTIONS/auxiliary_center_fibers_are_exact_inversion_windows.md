@@ -120,3 +120,8 @@ The remaining closure problem may therefore be phrased as a fiberwise one:
 > construct an antipodally compatible collapse of auxiliary insertion fibers to exact inversion-window data, and prove that the residual sign-changing cells—those in which the underlying original order changes—either admit the bounded center-preserving replacement at radius at most three or the fixed-position persistent-witness / outward-square alternative.
 
 This is a sharper target than global reflected-double repair and isolates the moving-center pathology exactly.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

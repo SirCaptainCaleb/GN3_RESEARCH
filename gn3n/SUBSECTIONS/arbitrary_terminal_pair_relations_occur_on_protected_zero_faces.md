@@ -51,3 +51,8 @@ Neither determining occurrence persists: the right one never occurs, and the lef
 This shows that replacing arbitrary tie labels by persistent face labels does not make the neither-persistent branch locally acyclic. Product splicing supplies an outward chamber; it does not supply a contractible carrier. The obstruction already occurs with a two-slot endpoint footprint, not only with a central three-block.
 
 The construction is a local protected-face example. It is not asserted to be a counterexample to the grand two-cover theorem, nor to satisfy a hypothetical global positive deletion distance. A grand-closure argument may use such global assumptions to obtain larger target carriers or additional forcing. It must state and prove that additional step.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

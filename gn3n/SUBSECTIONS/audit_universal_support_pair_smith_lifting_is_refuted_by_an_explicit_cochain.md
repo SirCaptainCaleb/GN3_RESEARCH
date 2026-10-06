@@ -141,3 +141,8 @@ The conditional Smith-chain closure criterion is not refuted. A proof under the 
 In particular, the earlier isolated-loop test asks for too much when it demands that every local loop fill, while the universal Smith route also asks for too much when it demands maximal index in all tournaments. The next admissible target is a relative or counterexample-specific obstruction using the blocked-extension information. No such theorem is asserted here.
 
 This is a fixed intrinsic counterexample to a proposed abstraction, not a small-order verification cutoff and not a counterexample to the grand conjecture.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

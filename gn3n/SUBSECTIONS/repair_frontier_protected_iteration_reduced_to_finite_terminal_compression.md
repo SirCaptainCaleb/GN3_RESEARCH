@@ -36,3 +36,8 @@ The remaining obligations are now finite.
 Thus the earlier “arbitrary higher-dimensional acyclic carrier” problem is no longer the frontier. The load-bearing unresolved point is the finite-terminal compression itself: provide explicit proofs of the block-size/cross-intersection statements used to obtain \(|B|\le4\) and eliminate the disjoint single-sided terminal branches.
 
 In particular, the next repair attempt should focus on the finite protected face combinatorics listed in [[independent_audit_finite_terminal_compression_proof_obligations]], not on further Coxeter coherence or on the existential face filtration.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

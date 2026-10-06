@@ -129,3 +129,8 @@ Thus any remaining nonzero \(k=5\) carrier is confined to the four root types
 (0,1),(1,0),(0,2),(2,0),
 \]
 while \((1,1)\) is exactly the zero-root branch. This is a finite seven-block interface for the next repair step.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

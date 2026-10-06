@@ -78,3 +78,8 @@ The consistent positive-only route now has the following shape.
 - Once rooted endpoint surgery is proved, the frozen-window/inherited-mask carrier construction can be applied to the two endpoint windows and the safe corridor/exterior product factors.
 
 So the polarity mismatch has been replaced by a finite rooted-interface problem rather than an unbounded terminal-support problem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

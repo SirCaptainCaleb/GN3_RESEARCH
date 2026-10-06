@@ -66,3 +66,8 @@ The order-ten boundary case is the smallest genuine candidate and is covered by 
 |J|ge11.
 ]
 Thus the unresolved branch begins only beyond the finite ten-vertex theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

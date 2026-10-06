@@ -22,6 +22,8 @@ These observations invalidate the corresponding shortcut arguments but do not af
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

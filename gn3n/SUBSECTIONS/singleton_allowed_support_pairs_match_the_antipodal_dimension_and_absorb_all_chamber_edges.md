@@ -138,3 +138,8 @@ The resulting closure program is precise:
 4. prove that the relevant carrier components have no higher homotopy, or otherwise supply higher fillings.
 
 If steps 3--4 hold equivariantly, Borsuk--Ulam forces a rank-\(n\) support pair, i.e. a spanning two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -35,3 +35,8 @@ Thus F has chambers labelled +e_r and -e_r, no inward witness in any chamber, an
 This does not contradict a bound on the block coupling both determining windows: B meets only the left one. It shows that a large one-sided boundary block can be essential through intrinsic/tie transitions, even though its intersection with the protected corridor has order only three. Therefore 'all blocks other than the two-window coupling block are harmless product factors' requires an additional repair/transport argument; it is false if interpreted as sign-neutrality of the actual central-gauge label.
 
 The example is a local protected balanced face, not a boundary tournament known to violate the grand two-cover conjecture. It also does not rule out collapsing B into a protected target carrier or choosing smaller zero carriers. Such choices need their own equivariance and compatibility proofs.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

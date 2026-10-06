@@ -182,6 +182,8 @@ The independent brainstorm [[meta_conjecture_gn3_closure_should_seed_generalized
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -47,3 +47,8 @@ Any sign convention retaining the forced signs of single-sided occurrences makes
 This is a counterexample to a universal local claim that product-splicing implies outward-locus acyclicity or a natural D_r-carried extension. It is not a counterexample to the grand conjecture or to a theorem whose global counterexample hypothesis supplies additional, presently unspecified constraints.
 
 A successful global construction must either use stronger hypotheses on the single-sided loci or permit larger outward carriers leaving the source face. The persistent-orientation theorem remains valid; the extra topology cannot be obtained from its product splice alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

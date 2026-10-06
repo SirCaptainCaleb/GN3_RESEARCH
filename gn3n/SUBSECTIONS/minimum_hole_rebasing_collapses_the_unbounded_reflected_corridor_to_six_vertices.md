@@ -49,3 +49,8 @@ If the complementary two-cover is balanced, r=s, then p=c=r-1. Thus a symmetric 
 Therefore the unbounded reflected-double corridor is not a persistent terminal obstruction after deletion distance two has been established. It is a presentation used to prove kappa_2<=2. Once a genuine kappa_2=2 minimum pair is identified, one may and should rebase on a minimum-hole concatenation, where the positive obstruction is six-vertex local.
 
 The surviving combinatorial task is consequently an anchored six-vertex routing problem: use the forced central tournament relations, together with the inherited path edges immediately outside the window, to repartition the two hole labels and boundary vertices into two paths compatible with the two untouched path interiors. No unbounded corridor analysis is required at this stage.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

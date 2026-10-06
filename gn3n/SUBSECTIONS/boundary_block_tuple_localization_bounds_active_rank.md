@@ -27,3 +27,8 @@ Consequently, among the N-1 adjacent generators of an N-vertex left boundary blo
 Therefore the sign-changing boundary interaction factors through rank at most eight, independent of the total boundary-block orders. Generators deeper in the blocks, and generators in blocks disjoint from both determining windows, are label-neutral and can be collapsed using the inherited-mask frozen-carrier construction.
 
 This does not produce the missing outward repair for a genuine two-deletion reflected double, nor does it solve compatibility between independently normalized ambient faces. It removes the separate concern that arbitrarily large one-sided boundary blocks force unbounded Coxeter coherence once a tuple-level repair is available.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

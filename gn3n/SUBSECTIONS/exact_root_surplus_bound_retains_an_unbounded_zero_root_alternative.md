@@ -25,3 +25,8 @@ In the first alternative, a chamber with zero root merely has p=c. Its canonical
 The role coordinates do not automatically remove zero-root chambers either. If an augmented zero occurs at a chamber vertex, its prescribed anchors all have role zero, so they all lie in the deletion hole. This implies d_2>=k+2, which is a lower bound on that particular chamber's hole, not an upper bound on the global minimum k. If a higher-dimensional carrier contains a zero-root chamber, zero weighted anchor averages need not be realized separately at that chamber.
 
 Thus the proven output is 'k<=5 or an augmented zero carrier containing a symmetric exact-root chamber.' The symmetric branch can have an unbounded displayed hole in the current proof. This does not refute the claimed inequality as a mathematical statement, and it does not refute the grand conjecture; it identifies the missing deduction. Any use of the dimension-surplus route must retain the zero-root alternative or prove a new symmetric-hole reduction. In particular it cannot currently replace the protected-filtration repair by an unconditional finite five-deletion problem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

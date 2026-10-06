@@ -117,3 +117,8 @@ Consequently the distinction between support-preserving and support-splitting *c
 Combined with [[support_preserving_seam_reseeds_immediately_create_a_short_rail_state]], seam reseeding reduces entirely to the short-rail regime or the already-established reversal/disturbance interface.
 
 No minimum-counterexample hypothesis, cyclic rotation, path reversal, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

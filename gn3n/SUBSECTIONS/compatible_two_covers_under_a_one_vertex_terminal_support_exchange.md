@@ -124,3 +124,8 @@ When a rank-two residue changes an order-ten terminal support by exchanging one 
 Bmid(A+x),qquad Bmid(A+y)
 ]
 with a common Hamiltonian side. Thus the local replacement can be chosen compatibly across that one-vertex support exchange; only the exchanged endpoint side changes. This removes the main combinatorial ambiguity in boundary-crossing square residues and is the natural input for the remaining braid-residue check.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

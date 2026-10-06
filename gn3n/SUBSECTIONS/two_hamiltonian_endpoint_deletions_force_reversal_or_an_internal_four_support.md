@@ -47,3 +47,8 @@ Therefore two Hamiltonian endpoint deletions of the same maximal-support complem
 - a complementary two-cover of S with one component of order four.
 
 There is no independent internal-four-support residue.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

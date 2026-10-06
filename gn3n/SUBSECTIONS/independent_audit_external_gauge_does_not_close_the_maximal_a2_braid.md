@@ -39,3 +39,8 @@ The remaining audit checks separate cleanly.
 **Smallest repair obligation.** Close the maximal order-eleven boundary (A_2) braid left by [[rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains]]. A sufficient finite statement is the common-core braid lemma: for the eight-vertex core (T) and moving vertices (a,b,c), find a Hamiltonian five-set (Bsubset T) such that, for (C=Tsetminus B), all of (C+{a,b}, C+{a,c}, C+{b,c}) are Hamiltonian. Alternatively, exhibit a more flexible contractible next-depth carrier joining the three normalized surgeries.
 
 Thus the grand conjecture is **not audited closed**. The correct frontier is the single maximal order-eleven (A_2) braid.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

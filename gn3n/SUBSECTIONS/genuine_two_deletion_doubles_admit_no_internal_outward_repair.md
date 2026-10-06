@@ -55,3 +55,8 @@ This changes the research target. Packet, attachment, and small-support lemmas c
 In particular the protected frozen-window carrier construction cannot by itself solve a genuine kappa_2=2 double by freezing J: its required base chamber in X_{r+1} does not exist inside that support.
 
 The four-end reversal theorem [[genuine_two_deletion_doubles_reverse_all_four_corridor_ends]] remains valuable because it is the sharp structure of any genuine two-deletion residue, but it should now be used either to contradict kappa_2=2 or to design an enlarged-window repair.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

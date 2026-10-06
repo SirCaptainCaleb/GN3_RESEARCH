@@ -118,3 +118,8 @@ This gives a chain-level closure target:
 > eliminate, pair, or equivariantly transport the unique-extension faces.
 
 Any successful local theorem doing that supplies an actual correction to the global top chain. This is a more precise role for the late endpoint/reversal and dissimilar-deletion-cover machinery than treating their local configurations as terminal proof states.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -103,3 +103,8 @@ Thus the combinatorial terminalization frontier can be reformulated globally:
 with the endpoint noninsertability, size inequalities, and sandwich-reversal conclusions already proved in [[maximal_support_normalization_applies_directly_to_article_vii_bounded_outputs]].
 
 The six-label antipodal-signature routing analysis remains useful for protected/carrier compatibility, but it is no longer needed merely to obtain a bounded Hamiltonian support with two-coverable complement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

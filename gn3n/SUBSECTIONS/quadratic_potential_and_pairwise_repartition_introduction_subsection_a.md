@@ -29,3 +29,8 @@ For a three-cover \(C=P_1\mid P_2\mid P_3\), define
 \Phi(C)=|P_1|^2+|P_2|^2+|P_3|^2.
 \]
 Fix a connected component of \(\mathcal R(H)\) containing a singleton lift and choose \(C\) in that component with minimum \(\Phi\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

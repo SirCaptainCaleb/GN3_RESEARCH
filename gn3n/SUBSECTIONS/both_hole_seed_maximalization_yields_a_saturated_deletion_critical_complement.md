@@ -105,3 +105,8 @@ If one complementary path has order at most two, that side is already a bounded 
 The strengthened twelve-label survivor of [[twelve_label_sat_remains_feasible_after_both_hole_seed_selectors_and_immediate_rooted_conversions]] should not be attacked by adding further unconditional local seed clauses. Each both-hole seam seed can instead be maximalized while retaining both holes, and the next obstruction is the compatibility of the four exposed-endpoint nonaugmentability relations with these four deletion-critical second-layer forks.
 
 This imports genuinely new ambient information absent from the twelve-label SAT model while using no minimum-counterexample induction, cyclic rotation, or path reversal.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

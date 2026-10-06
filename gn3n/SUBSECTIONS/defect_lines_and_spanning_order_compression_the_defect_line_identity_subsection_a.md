@@ -37,3 +37,8 @@ If the defect centers occur in maximal consecutive runs of lengths \(r_1,\ldots 
 \nu(L_\pi)=\sum_{j=1}^s\left\lceil\frac{r_j}{2}\right\rceil.
 \]
 In particular, \(c(\pi)=3\) exactly when there is one run of length three or four, or two separated runs, each of length one or two.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

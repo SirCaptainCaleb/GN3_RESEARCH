@@ -73,3 +73,8 @@ This is a scale-independent Hall obstruction on actual Hamiltonian supports. It 
 A zero exact root does not by itself imply that its hole is a minimum balanced deletion set, so this theorem must not be applied to an arbitrary zero-root chamber. It applies after minimizing the balanced deletion number \(\zeta_2(H)\), or whenever independent arguments certify minimality of the balanced hole.
 
 For a minimum counterexample, \(\kappa_2(H)=1\). Thus any route that supplies a balanced deletion state can minimize it and reduce all larger balanced holes to the two extension-desert residues above. A matching of size two is already a terminating improvement: it lowers the balanced hole by two.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

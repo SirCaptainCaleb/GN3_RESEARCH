@@ -99,3 +99,8 @@ The next local target is therefore the wrong-root exception: show that a Hamilto
 \{p_2,q_1,u,v,w\}
 \]
 with \(u,v,w\) common reversers either admits a Hamilton order releasing \(p_2\) or \(q_1\) in the required direction, or forces an opposite-tail extension / farther witness.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

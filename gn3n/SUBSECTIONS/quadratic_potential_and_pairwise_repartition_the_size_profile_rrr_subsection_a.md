@@ -23,3 +23,8 @@ If a comparison cover uses one edge joining different displayed sets, the three 
 **Lemma 6.** At a minimum of \(\Phi\) with size multiset \(\{r,r,r\}\), one obtains an order disagreement, at least two explicitly located edges between displayed classes in a comparison cover, or a reverse tight triple at a displayed join.
 
 The three equitable size profiles therefore all produce ordered information after numerical descent stops.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

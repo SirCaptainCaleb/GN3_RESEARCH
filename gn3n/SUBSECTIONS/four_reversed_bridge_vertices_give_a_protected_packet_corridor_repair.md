@@ -29,3 +29,8 @@ Application to [[arbitrarily_large_boundary_blocks_can_change_the_selected_posit
 On a fixed ambient source face, select one reference chamber and one such repair, freeze the whole repaired interval J, and use inherited masks of exterior components disjoint from J as in [[frozen_window_carriers_and_separator_relabeling_require_precise_invariants]]. The resulting carrier is protected and contractible. In this family the entire large boundary block meets J, so its generators are collapsed. Its unbounded source rank is not itself an obstruction to a protected local carrier.
 
 The bridge lemma is sufficient, not universal. It needs all four reverse bridges to the terminal pair of Q_0, and applies to a long corridor only when that reversed corridor is actually tight. A general mixed double can have two substantial corridor paths and need not satisfy either condition. Global compatibility of chosen packet decompositions and normalized carriers across ambient source faces also remains unproved.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

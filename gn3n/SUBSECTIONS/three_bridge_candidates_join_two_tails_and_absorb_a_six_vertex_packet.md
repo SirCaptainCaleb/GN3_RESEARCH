@@ -36,3 +36,8 @@ This is a bounded certificate for a successful repair, not an exhaustive finite 
 Unlike the failed simultaneous two-tail attachment target in [[protected_mixed_doubles_can_forbid_simultaneous_preservation_of_both_tail_pairs]], this construction places both old tails in the same final component. The other component uses the five packet vertices. It therefore changes the assignment of tails to final paths and does not require both final paths to end in old corridor pairs.
 
 The resulting two-cover can be normalized on the full determining span J and gives an outward positive-word order. Frozen inherited-mask carriers on a fixed ambient face remain available. Shorter corridor paths, failure of the bridge/deletion test, and compatibility of choices across ambient faces remain separate obligations.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

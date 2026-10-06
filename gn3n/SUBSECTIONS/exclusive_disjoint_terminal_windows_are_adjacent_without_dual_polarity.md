@@ -43,3 +43,8 @@ The corollary does not yet prove outwardness: containment of all at-most-current
 For the alternating branch the bound is twelve, not ten. Reducing twelve to ten requires a further one-polarity argument or handling the adjacent twelve-position model directly. No twelve-vertex two-cover theorem is asserted here.
 
 The useful repair direction is consequently: work with one positive-word depth; use adjacency compression for exclusive disjoint carriers; analyze reflected-double carriers separately; and then construct nested protected carriers. The six-word band cannot be imported into this route merely because complementing the tournament preserves global path-cover number.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

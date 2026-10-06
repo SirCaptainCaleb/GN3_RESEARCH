@@ -31,3 +31,8 @@ The correct geometric description is a family of tuple fibers. Each fiber is the
 The inherited-mask result in [[frozen_window_carriers_and_separator_relabeling_require_precise_invariants]] retains whole ambient Coxeter components disjoint from a fixed repaired window. It does not automatically justify discarding the neutral prefix of a connected boundary block while transporting its crossing generator. Applying it here would require additional tuple-level repair and gluing data.
 
 Corrected conclusion: under the stated tuple-factorization hypotheses, at most k generator positions in one boundary block can change the label in one swap. Bounded-rank coherence, and compatibility between tuple fibers, remain proof obligations. No bound on boundary-block order, and no completed protected genus iteration, follows from this observation alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

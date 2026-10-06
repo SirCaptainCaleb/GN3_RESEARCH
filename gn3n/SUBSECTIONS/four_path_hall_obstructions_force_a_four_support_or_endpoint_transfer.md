@@ -82,3 +82,8 @@ Therefore every spanning four-path cover satisfies:
 > either two cross-concatenations form a spanning two-cover, or the exposed four-block interface contains a Hamiltonian four-support, or one endpoint can be transferred legally from an isolated block to an opposite block.
 
 The matched-prefix Hall theorem is a special case obtained when the four blocks arise from two crossing deletion-cover cuts.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -63,3 +63,8 @@ The dual-polarity predicate excludes this example: \(\epsilon(\pi)\) contains \(
 The ambient tournament has a two-cover by the established ten-vertex theorem. Accordingly this construction refutes only the assertion that disjoint single-sided terminal carriers are eliminated using boundary antisymmetry, face independence, and positive selected-depth protection alone. It does not refute a theorem with an additional global counterexample hypothesis, but any use of that additional hypothesis must be explicit; none is used in the currently displayed local elimination proof.
 
 Together with [[audit_terminal_surgery_and_compression_use_different_witness_polarities]], this rules out silently choosing the positive depth predicate for surgery and the dual predicate for compression. A corrected one-polarity route must handle this surviving branch by outward surgery or a different carrier argument, rather than declaring it impossible.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

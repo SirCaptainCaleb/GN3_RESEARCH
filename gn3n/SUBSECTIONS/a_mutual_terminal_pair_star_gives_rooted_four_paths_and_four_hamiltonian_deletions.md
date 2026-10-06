@@ -49,3 +49,8 @@ This strengthens the attachment information supplied by [[a_mutual_terminal_pair
 The lemma prescribes an initial vertex, not a terminal one. Reversing any displayed tight order would reverse all of its triple statuses and is not permitted.
 
 Nor must deleting z leave B Hamiltonian: the triple orientations inside B are independent of the displayed mutual-pair prescriptions and may be chosen to realize a non-Hamiltonian four-set. Thus all four cycle-label deletions are available, but a fifth Hamiltonian deletion at z is not asserted.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

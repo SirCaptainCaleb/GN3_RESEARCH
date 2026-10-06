@@ -35,3 +35,8 @@ h(u,q_{t-2},q_{t-3})=1 and h(q_2,q_1,u)=1.
 These are constraints at both ends of the actual tight tail. They do not permit reversing that tail, and the existence of four Hamiltonian cross-packets does not alone join them to it. This preserves the remaining attachment obligation explicitly.
 
 Once one bridge exists, the resulting two-cover order of the full determining span gives an outward positive-word repair. Frozen-window inherited-mask carriers apply on a fixed ambient source face, as before. The lemma does not resolve the simultaneous wrong-way-hook case or global carrier compatibility.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

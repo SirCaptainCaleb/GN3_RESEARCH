@@ -88,3 +88,8 @@ Combining with [[failed_rooted_corridor_absorption_supplies_three_zero_exit_carr
 2. a Hamiltonian four-support containing both interface vertices and two of those labels.
 
 The remaining packet-repartition problem is now concentrated on the four unused packet labels and on the final junction from the rooted four-support back into the frozen corridor.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

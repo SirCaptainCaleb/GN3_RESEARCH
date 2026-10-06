@@ -55,3 +55,8 @@ STRATEGIC CONSEQUENCE.
 The relative top-homology group in 276 correctly DETECTS a full-support cell; support-only data does not FORCE one.
 A closure argument must retain enough ordered-path information to justify unbounded gluing, or prove a new support theorem using triple locality in its proof. Forgetting path orders and then applying only generic connectivity/index arguments loses this decisive implication.
 The next genuine mathematical target is therefore an augmentation or composition theorem for displayed tight paths. No such theorem, and no nonzero relative top class, is established by this countermodel.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

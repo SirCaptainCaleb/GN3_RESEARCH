@@ -56,3 +56,8 @@ Indeed, for an edge \(uv\), triangle-freeness makes the triples \(\{u,v,w\}\) wi
 Thus every component of \(R\) is a path, a cycle of length at least four, or a star \(K_{1,3}\), and \(|E(R)|\le8\).
 
 This is an audit-safe auxiliary reduction independent of the external-gauge shortcut. The endpoint-exclusion proof now closes the maximal braid more directly, but this lemma remains a fallback structural reduction for any future re-audit of that step.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

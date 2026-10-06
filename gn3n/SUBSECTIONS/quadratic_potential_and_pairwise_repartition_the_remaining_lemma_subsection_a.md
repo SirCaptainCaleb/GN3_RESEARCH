@@ -31,3 +31,8 @@ The quadratic-potential argument is reduced to the following statement.
 Then \(H\) has a two-cover or a spanning ordering of defect span at most \(2\).
 
 A proof of this lemma completes the argument, since strict decrease of \(\Phi\) is impossible at the chosen state and Sections 4–8 describe the equal-\(\Phi\) alternatives.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -46,3 +46,8 @@ Indeed O(F)={+} gives a chamber of F where the right occurrence is absent, while
 Thus opposite local choices are not automatically a new long-span surgery problem. When their hull is protected they expose a pre-existing outward chamber. If their hull is not protected, that failure must be retained explicitly; one cannot apply the splice inside X_r or treat the hull as an available source carrier.
 
 The resulting attack is precise: remove tie-induced sign changes on coherent families of persistent faces, and use protected outward hulls to patch incompatible local choices. A remaining chain with no such protected patch, or an antipodally invariant component, is an actual global obstruction to this particular relabeling scheme. Arbitrary independent face signs do not solve it.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

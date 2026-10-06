@@ -35,6 +35,8 @@ The bounded branch is discharged by the established ten-vertex two-cover theorem
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 15
+- Subsections now: 15
 
 ## Development tree
 

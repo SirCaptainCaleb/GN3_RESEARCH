@@ -39,3 +39,8 @@ P | (q_2,...,q_{t-1}),
 so the Q-rail shortens by two.
 
 Thus same-endpoint backtracking is not terminal merely because it yields a bounded support; bare bounded support is automatic under minimum-counterexample calculus. Its genuine output is a rooted, inherited rail-shortening state, with a direct two-cover for t<=2 and explicit shortening by two or four thereafter. No cyclic/path reversal or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

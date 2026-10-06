@@ -31,3 +31,8 @@ by
 so an outward move from a component at least two larger is a strict decrease.
 
 However, the Hall obstruction alone does not currently force the transfer to leave the dominant component when both receiving components are nontrivial. Therefore this subsection does not prove strong-imbalance descent. See [[audit_same_hall_transfer_polarity_is_not_excluded_by_boundary_antisymmetry]] and the corrected current version of [[hall_endpoint_transfers_give_terminating_quadratic_descent_from_strongly_imbalanced_three_covers]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

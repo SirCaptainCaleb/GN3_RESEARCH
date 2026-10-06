@@ -83,3 +83,8 @@ eqarnothing), hence a witness-free chamber and therefore a spanning two-cover.
 So the global terminalization theorem is reduced to a genuinely local statement on protected mixed cells: prove contractibility (or sufficient equivariant acyclicity) of the (e_r)-free outward locus. This is stronger than merely producing one outward chamber, but it is exactly the amount of local topology needed to make the relative-index recursion rigorous.
 
 The finite classification suggests the proof. In nonterminal mixed cells, the determining windows decouple across face blocks; the outward locus should be a face-product separator and hence contractible. The only failures of such product separation are precisely the centered/overlapping terminal configurations already bounded by ten vertices. The next step is therefore to prove the face-product contractibility directly and then check that the bounded terminal cases either close by the finite theorem or have contractible outward locus after terminal-support surgery.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

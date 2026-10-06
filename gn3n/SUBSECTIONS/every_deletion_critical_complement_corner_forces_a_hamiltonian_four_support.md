@@ -101,3 +101,8 @@ No cyclic rotation, path reversal, or recursive propagation is used. The inputs 
 - the parallel-middle lemma.
 
 Thus the second-layer fork state collapses at each of the two legitimate oriented seams to a deterministic bounded four-support certificate.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

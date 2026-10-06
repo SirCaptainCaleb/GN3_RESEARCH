@@ -133,3 +133,8 @@ up to exchanging the two long components.
 Hence two hole vertices with the same initial and terminal endpoint signatures produce one genuine deletion-distance-two induced core in which the same restored pair supports root-advancing five-components from both opposite boundaries.
 
 There are only four two-end signatures. Consequently, if \(|X|\ge5\), some pair \(x,y\in X\) has this property. More generally, every signature class contributes all of its vertex pairs, so minimum holes contain quadratically many such bidirectional pairs once a class is large.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

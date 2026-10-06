@@ -33,3 +33,8 @@ where t is the status of the ordered triple of free vertices. This has length n-
 The first window has word 001 or 011 according to t, and the last window has word 001. Both persist. No interior start has word 001 or 011, and no interior alternating word 0101 occurs. Therefore the face is protected at the reflected outer span-two depth while its left window contains a free central three-block. Reversal of the free triple changes t without destroying persistence.
 
 This correction preserves the endpoint reservoir bound of two, the separate inward five-position bound, and the persistent-face sign construction. It does not license a fixed-word argument for the central three positions. No conclusion of grand closure is drawn.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

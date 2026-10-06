@@ -57,3 +57,8 @@ Thus every hard rooted five-component has one of two stronger forms:
 2. **cross-tail repetition:** one hole-preserving four-core accepts an endpoint of \(P\) and an endpoint of \(Q\).
 
 This removes the possibility that all four endpoint cores are unrelated. The remaining handoff problem can be organized around a single four-core containing both holes and two ordinary labels, with only the placement of its two good endpoint incidences left to distinguish.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

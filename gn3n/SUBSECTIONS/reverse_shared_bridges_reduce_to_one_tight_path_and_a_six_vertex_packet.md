@@ -44,3 +44,8 @@ These tests may be witnessed by explicit insertions of w into the actual orders 
 Therefore a persistent no-two-cover instance must have |G_r|,|G_s|<=1 and their union of order at most two. Every surviving label in G_r must be the unique bad deletion of A+s, and every label in G_s the unique bad deletion of A+r. If A is non-Hamiltonian both sets must be empty.
 
 The conclusions use no minimal-counterexample induction or disturbance argument. They provide conditional absorption tests and exact residual restrictions, not a theorem forcing either absorption set to be nonempty. The inherited positive-depth repair and global carrier compatibility obligations are unchanged.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

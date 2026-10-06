@@ -53,3 +53,8 @@ The only remaining order-preserving case has replacement orders
 (x,q_1,\ldots ,q_m),\qquad (q_0,\ldots ,q_{m-1},x).
 \]
 Together with \(Q\), these give three deletion covers sharing the fixed support \(P\). Their singleton lifts form a triangle of equal-potential pairwise repartitions, and the two endpoint-replacement paths have an order disagreement on the common support \(\{x,q_1,\ldots ,q_{m-1}\}\). Thus opposite extreme insertion is a concrete recurrence configuration, not a Hamiltonian insertion of \(x\) into all of \(Q\). See [[leaf_endpoint_singleton_triangle01]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

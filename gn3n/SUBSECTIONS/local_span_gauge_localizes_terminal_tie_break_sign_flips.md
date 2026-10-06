@@ -35,3 +35,8 @@ If an adjacent transposition is disjoint from (I), it leaves the two span-endpoi
 Combining this with the intrinsic-orientation persistence argument gives: every terminal sign change is localized to the bounded determining span. Unique-orientation sign flips must alter the represented determining occurrence; tie-case sign flips must alter the local span gauge. Completely exterior Coxeter factors are sign-neutral and can be factored off.
 
 This does not assert the false universal identity (ell(pi)=g(pi)e_r). The gauge is still used only in genuine tie cases; the change is that the tie-break itself is now local to the selected support.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

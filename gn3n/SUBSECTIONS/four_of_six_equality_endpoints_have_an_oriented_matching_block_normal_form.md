@@ -47,3 +47,8 @@ separate the hole labels and are governed by the complete cross-hook rectangle a
 Thus a four-of-six equality endpoint is not an arbitrary six-label obstruction. It either exposes adjacent overlapping Hamiltonian four-supports or has one canonical edge-ordered matching-block normal form, with the two holes either paired together (yielding a Hamiltonian hole-preserving four-core) or split across the two matching blocks.
 
 This also corrects terminology used in earlier endpoint-core addenda: from (Y-r) union {e} Hamiltonian one may call Y-r a four-vertex core accepted by e, but Y-r itself is Hamiltonian only with additional input such as subcase (2a) above.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

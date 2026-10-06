@@ -69,3 +69,8 @@ The double corner may be assigned either available orientation. If it is assigne
 Hence a conflict between left and right persistent choices in a long separated face is not an unbounded terminal-surgery event. It is a rank-two bypass already containing an outward chamber. The actual remaining compatibility issue is global: organize these square bypasses coherently across overlapping protected faces and antipodal components.
 
 This result uses only block independence and chamber-graph connectivity; no two-cover theorem, minimum-counterexample argument, or direct computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

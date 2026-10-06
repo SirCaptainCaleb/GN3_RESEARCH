@@ -61,3 +61,8 @@ RELATION TO THE ODD UNIFORM CASE.
 If n=2r+1 and the uniform middle-layer profile holds, E(H) is an antipodal S^(n-2), but Z_H has dimension n-3: its largest allowed balanced cells have support sizes r|r and omit one vertex. Therefore the relative group above is zero, as it must be when no spanning cover exists. The large absolute index of E(H) comes from its monochromatic parts and cannot be transferred to Z_H without an additional avoidance argument.
 
 Limits. No nonzero relative class or local degree is constructed here. This target records exactly the existential conclusion we want and avoids the universally false maximal-index demand. Any future coherence proof must derive its relative nonvanishing from identifiable tournament or minimum-counterexample constraints.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

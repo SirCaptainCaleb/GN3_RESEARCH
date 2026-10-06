@@ -531,3 +531,9 @@ If the \(P\)-blocks are not inherited intervals, then some inherited edge of \(P
 When there are at least two crossing edges, outcome 3 follows from the block count. When there is exactly one, Lemma 11 gives outcome 2 unless the comparison blocks already disturb the inherited order.
 
 This is the global augmenting-path formulation: the move from maximal imbalance toward maximal balance is either an honest segment transfer or it leaves a concrete path disturbance. No bounded total order is involved.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 9

@@ -42,3 +42,8 @@ is already an inherited two-cover, where P^o is P with that end-edge removed. Th
 If both L,R are empty, then P={u,v}; K and Q are disjoint Hamiltonian supports covering H, contradiction.
 
 Therefore an equal internal insertion slot yields exactly: direct comparison disturbance, inherited rail shortening by two, or a spanning two-cover. No bare bounded-support terminal branch remains.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

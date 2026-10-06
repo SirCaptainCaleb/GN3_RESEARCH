@@ -34,6 +34,8 @@ In particular, \(c(\pi)=3\) exactly when there is one run of length three or fou
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

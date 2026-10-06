@@ -38,3 +38,8 @@ If the full span has no two-cover, every bridge candidate in each of the twelve 
 In the genuine deletion-distance-two case, there are further simplifications. For the packet consisting of the initial pairs of both paths, neither x nor y can bridge the remaining tails, because their terminal pairs are the original terminal pairs and neither exterior vertex can append to either path. For the packet consisting of both terminal pairs, neither exterior vertex can bridge, because the remaining tails have the original initial pairs and neither exterior vertex can prepend to either path. Hence in each of these two packet types at most two of the four corridor packet vertices are bridge candidates, all with non-Hamiltonian deletions.
 
 The exceptional 010-island corridor has only its unique cut, so it supplies four analogous fourteen-vertex tests, without the three-cut amplification. No direct computation is required by this certificate, and the simultaneous failure conditions are retained as a structural problem. Global compatibility of outward repairs remains separate.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

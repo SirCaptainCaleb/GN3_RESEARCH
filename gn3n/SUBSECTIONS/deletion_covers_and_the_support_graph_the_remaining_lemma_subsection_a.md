@@ -29,3 +29,8 @@ Then \(H\) has a spanning ordering of defect span at most \(2\).
 By Lemma 1, this would contradict the choice of \(H\). In the odd-cycle case it would also suffice to prove that the rank transport of Lemma 10 forces a Hamiltonian vertex cover of the ground cycle of order \(k+1\), since Lemma 11 would then give a two-cover directly.
 
 No further production of isolated reversals is required: Lemma 10 already supplies many. The unresolved point is to use their positions to remove one of the two independent defects in the spanning order arising from a deletion cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

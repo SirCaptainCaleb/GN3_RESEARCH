@@ -333,3 +333,8 @@ longrightarrow
 ]
 
 The broad memory-lift, extreme-switch, high-(k) flag, ten-window, and maximal-braid developments remain valuable history and infrastructure, but they are no longer the shortest load-bearing chain toward the grand theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -40,3 +40,8 @@ after the harmless side swap. Thus dissimilar deletion-cover orders are not even
 Generalization: if every row and column sum is at least 2t-1, one alignment has both diagonal cells of size at least t. Taking t=3, if all four original components have order at least 6, neighboring top-rank states have a common lower bound (U,V) with |U|=|V|=3; every three-set is Hamiltonian.
 
 This moves the dissimilar-cover frontier upward: pairwise connectivity is automatic in the large-component regime. The remaining obstruction for the Smith approach is higher-dimensional cycle filling, not order agreement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

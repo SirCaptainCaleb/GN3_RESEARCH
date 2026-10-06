@@ -77,3 +77,8 @@ K_{QP}=\{q_{t-1},q_t,p_1,p_2\}
 satisfies the analogous three nonaugmentability conclusions.
 
 Thus every explicit seam four-support is a Hamiltonian packet that is globally incompatible with adjoining either of its two rail pairs, or the whole packet, to the maximal support. Any successful seam conversion must therefore change the inherited order of \(S\), change the displayed complementary decomposition, or pass through a different admissible seed; simple endpoint-segment absorption is completely excluded.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

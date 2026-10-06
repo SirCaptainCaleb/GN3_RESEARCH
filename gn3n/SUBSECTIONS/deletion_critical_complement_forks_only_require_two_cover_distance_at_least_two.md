@@ -88,3 +88,8 @@ Then exactly one of the following happens:
 Thus the seam mechanism can be restarted after descent without requiring the descended graph to have deletion distance exactly two.
 
 No minimum-counterexample induction is used; this is a direct consequence of the definition of two-cover deletion distance.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

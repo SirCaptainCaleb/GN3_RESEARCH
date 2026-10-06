@@ -181,6 +181,8 @@ That distinction is the point at which the next Section begins.
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

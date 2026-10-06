@@ -72,3 +72,8 @@ The useful dichotomy is therefore not “rank-one endpoint interface versus inte
 The one-variable sector is exactly where [[prescribed_endpoint_subsets_of_a_permutahedron_give_contractible_outward_loci]] applies. If all allowed labels fail that one-vertex test, the large reservoir becomes algebraically useful: every label satisfies the same reversed boundary triple, producing the uniformly blocked common-hook structure used in the packet lemmas.
 
 This correction leaves the persistent-window and inward block-width lemmas unchanged, but withdraws the earlier claim that the full boundary interaction has Coxeter rank one.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

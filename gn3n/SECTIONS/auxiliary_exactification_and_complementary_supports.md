@@ -270,6 +270,8 @@ The second half asks what antipodal topology can force inside these exact models
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -37,3 +37,8 @@ These are three different covers of the same complement of the same packet. Henc
 In a genuine deletion-distance-two residue x,y cannot bridge any of these covers, since their terminal ordered pairs are the original corridor terminal pairs. Therefore at least two of the four corridor packet vertices c_1,c_2,c_{N-1},c_N never bridge either direction in any of the three cuts. Every label that ever does bridge has the same bad five-deletion across all cuts. This is an additional necessary synchronization condition, stronger than the separate at-most-two conditions recorded earlier.
 
 The lemma supplies a sufficient repair certificate and a coupled failure condition. It does not prove that three distinct candidates must occur, nor does it resolve global compatibility of the resulting outward carriers.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

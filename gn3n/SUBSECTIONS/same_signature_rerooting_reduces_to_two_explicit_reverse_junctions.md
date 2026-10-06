@@ -92,3 +92,8 @@ Hence:
 > **Two-junction rerooting dichotomy.** At either boundary of a same-signature minimum deletion pair, the Hamiltonian central four-support is not an unstructured routing problem. It either splices directly to the inherited complementary path and yields a two-cover, or a uniquely selected leading hole label \(\gamma\) witnesses one of two explicit reverse junctions across the next two anchor layers.
 
 Applying the theorem independently at the two opposite boundaries leaves only four binary rerooting types. The next closure step can therefore compare those reverse junctions with the cross-end five-path tests and the local bad-extension calculus, rather than ranging over Hamilton orders of the whole central support.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

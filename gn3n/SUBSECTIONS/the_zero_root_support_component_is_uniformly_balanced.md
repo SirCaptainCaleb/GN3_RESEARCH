@@ -23,3 +23,8 @@ Let T be the connected component of J containing the balanced edge PQ. Then ever
 Proof. On every edge AB of J, with hole label v, the supports are disjoint and A union B=V(H)-{v}; hence |A|+|B|=2r. Therefore along an edge, size transforms by s -> 2r-s. Along a path, support sizes alternate between two values s and 2r-s; equivalently the size is constant on each bipartition class of a tree and the same parity conclusion remains true around any walk. Since T contains adjacent supports P,Q with |P|=|Q|=r, both alternating values equal r. Hence every support reached from P or Q has size r.
 
 Thus the zero root propagates exact balance through its entire selected-support component without any order compatibility hypothesis. In particular strict support containment is impossible inside T, and every edge label occurring in T has a balanced minimum-imbalance deletion cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

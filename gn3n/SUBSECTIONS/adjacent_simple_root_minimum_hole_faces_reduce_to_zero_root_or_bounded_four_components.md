@@ -55,3 +55,8 @@ Therefore the valid dichotomy is:
 **Simple-root transport dichotomy.** A Psi-normalized minimum-hole face of adjacent-simple-root type either admits a neutral endpoint transfer to another minimum-hole face with the opposite adjacent simple root, or it already lies in the bounded four-component/deletion-distance-one interface.
 
 Consequently the unbounded adjacent-simple-root regime, if it exists, is a finite transport system whose states carry the two root signs and whose neutral endpoint-transfer edges interchange those signs. Zero root is not obtained by cardinality transfer alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

@@ -120,3 +120,8 @@ This makes the later four-/five-set extension theory relevant at the correct ear
 cones the exceptional carrier as well. Hence a genuine rank-three obstruction requires a relative four-set extension desert: no usable exterior vertex may Hamiltonian-extend the extreme block while remaining disjoint from the opposite common support.
 
 This is a carrier reduction, not yet a globally coherent rank-three extension theorem. It deliberately avoids assuming that independently chosen two-face fillings agree across adjacent rank-three faces.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

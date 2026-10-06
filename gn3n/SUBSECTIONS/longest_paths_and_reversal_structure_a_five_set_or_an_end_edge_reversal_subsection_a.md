@@ -55,3 +55,8 @@ Thus:
 is a Hamilton path, or a four-vertex tight path has an explicitly reversed end edge.
 
 In the second case the four-set supporting the displayed tight path is Hamiltonian, and the reversing triple uses one additional exterior vertex. In a minimum counterexample its complement is therefore non-Hamiltonian and has path-cover number two.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -146,3 +146,8 @@ Hence the former exact four-good equality packet is not a terminal disturbance b
 This replaces development version 3.
 
 No cyclic rotation, path reversal, minimum-counterexample hypothesis, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 4

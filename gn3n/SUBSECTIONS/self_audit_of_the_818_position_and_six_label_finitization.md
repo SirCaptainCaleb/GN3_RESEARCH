@@ -45,3 +45,8 @@ The outward-choice topology branch has therefore been reduced to:
 The double-persistent combinatorial branch remains separate. Its unbounded corridor is already compressed to deletion-distance two and bounded endpoint transport data. The two branches should meet only after one proves additional global deletion/cover structure that forces the finite pair-locus tests; local boundary antisymmetry is insufficient.
 
 This is the self-checked form of the finitization.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

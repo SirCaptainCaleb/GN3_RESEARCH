@@ -27,3 +27,8 @@ Therefore the grand two-cover conjecture is equivalent to the following single-c
 > For every boundary tournament \(H\), after adjoining \(r\) with \(h(u,v,r)=1\), the \(\sigma=1\) memory-lift graph of \(H^+\) contains a one-change geodesic from its distinguished source pole to its distinguished target pole.
 
 The local tournament at \(r\) may be chosen arbitrarily, for example transitively. This is the key exactification: topology is no longer being asked to prove the potentially stronger one-change assertion on \(H\) itself.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

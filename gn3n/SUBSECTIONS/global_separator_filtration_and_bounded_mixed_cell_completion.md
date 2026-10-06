@@ -57,3 +57,9 @@ Thus the global problem reduces to one bounded strengthening of the finite termi
 Every terminal determining support is a contiguous central interval of at most ten vertices. A two-cover of the induced support gives an ordering \(P,Q^{\rm rev}\) whose internal status word has no forbidden witness. Replacing the old order on that interval changes only status windows meeting one of the two ends outside the support. Those windows lie outside the selected innermost determining windows, so they cannot create a witness strictly closer to the center than \(e_i\). The only unresolved point is whether they can recreate \(e_i\) itself at an endpoint. This is a finite boundary-compatibility question involving at most two crossing status windows at each end.
 
 This compresses the former global carrier-terminalization problem to a finite endpoint-compatibility statement on the already bounded terminal supports, without minimum-counterexample or disturbance arguments.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

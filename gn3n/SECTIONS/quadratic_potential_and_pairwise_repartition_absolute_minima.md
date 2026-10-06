@@ -38,6 +38,8 @@ whenever the direct endpoint enlargement to a Hamiltonian four-set is unavailabl
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

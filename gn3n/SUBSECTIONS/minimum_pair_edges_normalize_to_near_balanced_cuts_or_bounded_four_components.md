@@ -51,3 +51,8 @@ Consequently:
 Thus a difficult cycle in the minimum-pair graph can be studied as a cycle of near-balanced support bipartitions. Arbitrary highly imbalanced support changes are already discharged into the bounded four-component interface.
 
 This normalization is edgewise and uses no minimum-counterexample hypothesis. It is intended to be combined with deletion-cover compatibility: compatible neighboring cuts force a reversal or four-support, while incompatible neighboring cuts now cross near-balanced support partitions rather than unrestricted ones.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

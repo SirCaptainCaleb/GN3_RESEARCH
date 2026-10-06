@@ -80,3 +80,8 @@ This repairs the polarity consistency for the exclusive branch:
 It does not solve [[positive_reflected_double_carriers_have_unbounded_local_spans]]. When both reflected positive occurrences coexist in every chamber, the exclusive-indicator equation is unavailable and their determining windows may be arbitrarily far apart.
 
 Thus the single-polarity frontier is now exactly the **reflected-double branch**, together with nested protected-carrier gluing after that branch is handled.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -73,3 +73,8 @@ The theorem above says that, in the no-growth branch, every such support avoidin
 Equivalently, among r-supports containing u and avoiding {a,b}, the rooted endpoint family is empty. This is substantially stronger than the previously proved bipartiteness of the rooted disjointness graph.
 
 The remaining closure target is now precise: show that the odd-uniform hypothesis forces u to be an endpoint of some Hamiltonian r-support avoiding {a,b}. That single endpoint realization grows the reversed pair to order four or directly produces an (r+1)-path. No bounded-order cutoff is involved.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

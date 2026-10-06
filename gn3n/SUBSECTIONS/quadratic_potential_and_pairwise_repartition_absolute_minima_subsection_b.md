@@ -25,3 +25,8 @@ At the boundary value \(s=5\), the same lemma gives an explicit equal-(\Phi\) ro
 3\mid5\longleftrightarrow5\mid3
 \]
 whenever the direct endpoint enlargement to a Hamiltonian four-set is unavailable. Thus the smallest surviving component is accompanied by a concrete neutral recurrence, not an unstructured exceptional case.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

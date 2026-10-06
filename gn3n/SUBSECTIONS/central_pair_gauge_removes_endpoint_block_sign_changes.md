@@ -37,3 +37,8 @@ Together with occurrence persistence this localizes every terminal sign-flip gen
 - in tie chambers, a sign flip must meet the fixed central gauge pair.
 
 Hence the potentially unbounded endpoint face blocks are sign-neutral factors. Their size no longer enlarges the sign-changing Coxeter rank. This is the appropriate gauge for a protected-carrier repair; the span-endpoint gauge is unnecessarily sensitive to support exchange at the boundary.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

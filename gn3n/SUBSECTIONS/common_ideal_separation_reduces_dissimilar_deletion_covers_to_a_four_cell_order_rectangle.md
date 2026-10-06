@@ -104,3 +104,8 @@ In particular, if one support-intersection cell is empty, then outcome 3 is impo
 This is purely order-theoretic and uses no small-order cutoff, no minimum-counterexample assumption, and no bounded-support conclusion. It changes the dissimilar-cover frontier: matched cuts need not be forced by overlap maximization or peeling. Their exact obstruction is alternating reachability, and after eliminating ordinary order disagreement the entire two-sided obstruction is one four-corner crossing rectangle.
 
 The four-corner rectangle should not yet be identified with the protected terminal-pair carrier \(C_4\): the latter is a mutual admissibility loop, whereas this object is a directed cycle in the union of two path-order relations. The closure question is now whether the late four-label/rectangle machinery can be strengthened to convert this earlier order rectangle into a spanning two-cover, a matched cut with a perfect Hall matching, or a protected carrier loop.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

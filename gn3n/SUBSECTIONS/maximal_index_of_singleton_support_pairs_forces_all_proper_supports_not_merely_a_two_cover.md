@@ -56,3 +56,8 @@ CORRECTION TO THE STRATEGIC READING OF 274.
 The equivalence in 274 for minimum counterexamples is unchanged. Its phrase 'the stronger bound index E(H)>=n-1 is the genuine closure target' must be read as a counterexample-specific conditional theorem, not a universal index lower bound for arbitrary H. Maximal absolute index is much stronger than existence of a spanning cover.
 
 The correct existential invariant is the presence of at least ONE full-support cell. Relative homology against the lower-dimensional skeleton detects this cell without demanding that every full-support partition be allowed. A relative or counterexample-specific construction must replace the invalid universal maximal-index claim. No such construction is proved by this audit alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

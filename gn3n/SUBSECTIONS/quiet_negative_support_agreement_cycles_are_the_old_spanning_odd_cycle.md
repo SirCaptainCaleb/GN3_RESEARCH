@@ -106,3 +106,8 @@ Consequently:
 > **Negative-cycle synthesis.** A negatively signed spanning support-agreement cycle either contains an adjacent order disagreement, hence an external reversal, or its quiet compatible branch is exactly the old spanning odd-cycle support graph with balanced deletion covers.
 
 Thus the signed support-agreement theorem introduces no new global terminal geometry beyond the established reversal/bounded-support interfaces of Article I.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

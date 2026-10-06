@@ -52,3 +52,8 @@ Consequently a genuine minimum two-hole state determines a four-label permutahed
 Thus, after kappa_2=2 has been reached, the combinatorial frontier is equivalent to excluding a fully protected anchored S_4 middle face subject to the minimum-hole reversal constraints. No unbounded corridor remains.
 
 This formulation also identifies the overlap with the carrier-localization route: protected commuting-square and minimal commuting-cube failures are already known to be eight-position local. The combinatorial endpoint obstruction and the topological protection obstruction therefore live on the same bounded positional scale. The missing theorem can be sought as a structural impossibility theorem for this anchored four-label face rather than as a global corridor-surgery theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

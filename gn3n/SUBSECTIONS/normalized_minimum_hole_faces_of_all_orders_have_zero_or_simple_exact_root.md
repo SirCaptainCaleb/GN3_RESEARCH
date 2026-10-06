@@ -33,3 +33,8 @@ Therefore the hard normalized branch has only two root types.
 Equivalently, writing n=|V(H)|, since r+s=n-k, parity determines the hard branch: if n-k is even, near-balance forces r=s and the minimum-hole face is zero-root; if n-k is odd, near-balance forces |r-s|=1 and the face has adjacent-simple root.
 
 Thus higher exact-root displacement never occurs on a Psi-normalized minimum-hole face unless the complement has already descended to the bounded four-component/deletion-distance-one interface. This holds for every deletion distance k, before any reduction to a genuine two-deletion state. It strengthens the k=2 normalization and isolates zero-root versus rank-one simple-root geometry as the only unbounded minimum-hole strata.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

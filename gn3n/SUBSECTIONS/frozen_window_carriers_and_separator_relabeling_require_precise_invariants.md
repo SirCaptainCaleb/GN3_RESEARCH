@@ -49,3 +49,8 @@ These hypotheses give the continuous equivariant carrier extension. Homological 
 Retaining the separator as the next free space and relabeling its vertices by outward chambers preserves the space's index, but requires a new invariant: every complementary event must localize to a protected source Coxeter edge, or another object with a proved surgery theorem. Arbitrary outward relabeling does not inherit the uniform-role property used by the earlier Ky Fan hole-sweeping proof. Those role labels are inherited under face inclusion; that property has not been proved for the proposed replacement labels.
 
 The three directions consequently have distinct obligations. Compression must fix the polarity mismatch and treat positive reflected-double carriers. Frozen parabolic carriers need shared normalizations and inherited masks compatible across ambient-face intersections. Separator relabeling needs edge localization for its new labels. Local square/hexagon path independence alone supplies none of these missing invariants.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

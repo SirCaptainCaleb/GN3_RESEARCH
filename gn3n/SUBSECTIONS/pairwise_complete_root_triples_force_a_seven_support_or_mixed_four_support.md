@@ -87,3 +87,8 @@ The second output is one of the bounded Hamiltonian disturbances excluded in the
 Consequently the quiet carrier residue has no order-seventeen two-triangle exception: it always grows to a Hamiltonian seven-support unless a bounded disturbance or maximal-support entry has already occurred.
 
 This is a finite computational lemma. The MILP formulation is exact over the binary boundary-tournament variables; an analytic proof would still be desirable, but no heuristic or relaxation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

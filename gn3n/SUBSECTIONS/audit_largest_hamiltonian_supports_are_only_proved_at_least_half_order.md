@@ -43,3 +43,8 @@ Therefore the mathematically justified statement is:
 > A largest proper Hamiltonian support in a minimum counterexample has order **at least** half the graph (up to the parity rounding above), and its two-coverable complement has total order at most \(s+1\).
 
 Any later argument that uses exact half-order or rules out a highly unbalanced complementary two-cover from subsection 212 alone is unsupported and should instead use an additional extremal or routing lemma.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

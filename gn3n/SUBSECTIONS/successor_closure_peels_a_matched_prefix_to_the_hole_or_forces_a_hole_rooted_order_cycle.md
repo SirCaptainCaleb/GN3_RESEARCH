@@ -23,3 +23,8 @@ The original development of this concurrently created Subsection was accidentall
 The exact original body is not recoverable from the live development table. The immediately preceding theorem [[matched_prefix_peeling_terminates_at_a_hole_frontier_or_an_alternating_order_cycle]] remains intact and contains the verified matched-prefix peeling argument. This Subsection should not be cited for additional mathematical content until its original successor-closure strengthening is reconstructed or rederived.
 
 No theorem is asserted here beyond the intact predecessor.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

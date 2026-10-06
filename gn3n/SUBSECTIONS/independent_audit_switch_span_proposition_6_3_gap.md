@@ -47,3 +47,8 @@ This example does not refute the proposition under the additional global hypothe
 from the extreme-switch map is presently unsupported.
 
 The later exact-inversion-root route does not need Proposition 6.3: its dimension saving comes directly from the exact deficiency \(\delta=q-p-1\). Thus this defect is nonfatal to the current intended endgame, but Article VII should not treat Proposition 6.3 as audited until repaired or removed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

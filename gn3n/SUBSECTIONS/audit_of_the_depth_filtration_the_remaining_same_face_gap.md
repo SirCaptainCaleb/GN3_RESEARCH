@@ -60,3 +60,9 @@ already implies
 gamma(Sigma_r)legamma(Y_{r+1}).
 ]
 Thus the exact remaining terminalization task is no longer to construct a new balanced carrier by hand, but to make the bounded terminal replacement **coherent on chains of mixed faces** (or prove the stronger same-face statement).
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

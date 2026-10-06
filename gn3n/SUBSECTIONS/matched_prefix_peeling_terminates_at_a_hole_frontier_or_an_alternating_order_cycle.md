@@ -56,3 +56,8 @@ At a terminal matched cut one of the following holds.
 Proof of the terminal trichotomy. Assume \(B\neq\varnothing\), \(b\) is not a \(P\)-prefix terminal, and no peelable label remains. Choose a \(P\)-prefix terminal \(x\). Then \(x\in B\), and because \(x\) is not peelable it is not an \(R\)-prefix terminal. Follow its \(R\)-path forward inside the prefix until the corresponding \(R\)-terminal label \(y\). Again \(y\) cannot be a \(P\)-prefix terminal, so follow its \(P\)-path forward inside the prefix to a \(P\)-terminal label \(z\). Because \(b\) is not terminal, \(z\in B\). Repeating gives an infinite alternating sequence of frontier labels in the finite prefix set, hence a repeated frontier label and therefore a directed cycle in the union of the two strict path orders. The intervening directed segments concatenate to the asserted alternating order cycle.
 
 This is a terminating normalization of a matched cut. It does not claim that the terminal cycle itself is already a two-cover. Its value is that endpoint-transfer/Hall analysis need only be run after all common terminal labels have been removed: the residual obstruction is forced either onto the hole frontier or into a cyclic disagreement of the two actual path orders. No bounded-order cutoff or bare bounded Hamiltonian support is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

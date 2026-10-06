@@ -50,6 +50,8 @@ Together with \(Q\), these give three deletion covers sharing the fixed support 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

@@ -54,3 +54,8 @@ where delta is one exactly when the distinguished block ends in z. Every strictl
 The theorem applies to D=H intersect X_{r+1}. It proves this whole enlarged outward locus contractible, independently of the original terminal-pair relation on B and independently of whether the original outward locus is empty, disconnected, or circular. The assumption that the original outward locus is nonempty, needed for speaking of its old inclusion, is not needed for this stronger conclusion.
 
 This is an elevation of the existing enlargement argument, not a proof that its exit-status hypotheses are forced in every separator face.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

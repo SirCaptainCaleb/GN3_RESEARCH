@@ -33,3 +33,8 @@ This obstruction already satisfies the positive protected-word conditions used b
 For scope, the corridor's displayed order is positive-word-free after the left occurrence, up to the far right occurrence, but its boundary root cannot automatically be used as a terminal vertex of a new tight path. Separately, [[positive_only_witness_filtration_is_antipodal_and_surgery_compatible]] correctly identifies the positive language as antipodal, but its assertion that every terminal support has order at most ten excludes this reflected-double branch without justification. The valid bounded claims concern the exclusive branches and the alternating double branch; see [[positive_reflected_double_carriers_have_unbounded_local_spans]] and [[positive_alternating_double_occurrences_have_support_at_most_eight]].
 
 The same example is protected on an entire ordered-partition face: make A one freely permutable block and every subsequent vertex a singleton. Under every A-permutation, all statuses from a onward remain fixed. New span-two positive words wholly in the variable prefix start at most a-2 (start a-1 ends in the fixed zero at a), and are strictly farther outward. Any new alternating occurrence starts at most a-2: starts a-1 and a end respectively in the fixed 011 and begin with 011, so neither can be 0101. These alternating windows are also strictly farther outward than the span-two occurrence at a. Thus there is no inward positive witness in any chamber, and both reflected occurrences persist throughout this whole face. This strengthens the obstruction from a single protected chamber to a protected reflected-double face.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

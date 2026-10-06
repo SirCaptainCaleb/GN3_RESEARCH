@@ -43,3 +43,8 @@ Additional moments of the exact root do not distinguish its zero-root chambers, 
 The protected witness filtration has a direct index budget and existing bounded-support surgery. The proposed separator attack uses those advantages while trying to avoid demanding a two-cover of every long double span. Bounded nonpersistent faces, whose span is at most twelve by the new theorem, remain explicit local obligations; twelve vertices have not been proved universally two-coverable.
 
 The grand theorem is not closed. The present choice is to work first on coherent persistent-orientation separators, using actual outward chambers where product splicing already supplies them, and return to full-span packet absorption when a demonstrated global obstruction makes it necessary.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

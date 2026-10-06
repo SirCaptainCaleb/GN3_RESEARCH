@@ -49,6 +49,8 @@ This is the current Article VII frontier.
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 26
+- Subsections now: 126
 
 ## Development tree
 

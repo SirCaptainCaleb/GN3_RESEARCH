@@ -35,7 +35,9 @@ Thus the current frontier is exact: start from a zero exact-root chamber in a mi
 - Audit: unaudited
 - Refutation: unrefuted
 - Composition version: 9
-- Composition stale: True
+- Composition stale: False
+- Subsections existing when composed: 291
+- Subsections now: 301
 
 ## Development tree
 
@@ -340,7 +342,3 @@ Thus the current frontier is exact: start from a zero exact-root chamber in a mi
 - [Subsection 299 — A whole maximum support is forced to have non-rigid initial pairs](../SUBSECTIONS/a_whole_maximum_support_is_forced_to_have_non_rigid_initial_pairs.md) (`a_whole_maximum_support_is_forced_to_have_non_rigid_initial_pairs`; development v1; composition vNone; stale=False)
 - [Subsection 300 — Replacement classes force four double-prefix reversers and an anchored five-path](../SUBSECTIONS/replacement_classes_force_four_double_prefix_reversers_and_an_anchored_five_path.md) (`replacement_classes_force_four_double_prefix_reversers_and_an_anchored_five_path`; development v1; composition vNone; stale=False)
 - [Subsection 301 — Non-rigid maximum supports can avoid any prescribed vertex pair](../SUBSECTIONS/non_rigid_maximum_supports_can_avoid_any_prescribed_vertex_pair.md) (`non_rigid_maximum_supports_can_avoid_any_prescribed_vertex_pair`; development v1; composition vNone; stale=False)
-
-### Stale child compositions
-
-- a_majority_coloring_closes_universal_endpoint_pair_rigidity_and_yields_an_anchored_three_vertex_prefix: parent saw composition vNone → current v1

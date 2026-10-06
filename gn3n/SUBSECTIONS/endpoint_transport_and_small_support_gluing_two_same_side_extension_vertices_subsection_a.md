@@ -38,3 +38,8 @@ Let the two five-sets be \(K\cup\{p\}\) and \(K\cup\{q\}\), where \(|K|=4\). The
 - the Hamiltonian deletion pairs form a matching, fixing the three pairwise insertion relations on the six vertices.
 
 Each form is a bounded common-core configuration with a two-coverable complement inherited from the construction.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -48,3 +48,8 @@ The stronger bound index E(H)>=n-1 is the genuine closure target, as in 243. Alt
 Top-dimensional homology, complement separation, and maximal possible index are therefore the SAME obstruction in this setting, rather than three independent ways to eliminate it.
 
 Limits. Neither the n-2 lower bound nor the Hamiltonian unrealizability of the odd middle layer is proved here. The explicit median homeomorphism explains why an unqualified appeal to stronger generic topology cannot by itself eliminate the surviving middle sphere.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

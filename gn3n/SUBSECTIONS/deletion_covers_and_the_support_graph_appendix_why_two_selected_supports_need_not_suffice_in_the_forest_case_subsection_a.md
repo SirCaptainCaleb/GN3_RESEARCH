@@ -25,3 +25,8 @@ Let \(J\) be a connected selected-support tree, with support \(S_u\) at each ver
 **Proof.** For an edge label \(e\), membership in \(S_w\) is determined by the parity of the distance from \(w\) to the nearer endpoint of \(e\): the label belongs to \(S_w\) exactly at odd distance. If \(P_{uv}\) has odd length, its first edge label is omitted by both supports. Assume the path has even length. Every label on the path then belongs to exactly one of \(S_u,S_v\). For an edge off the path, the first edge of its branch belongs to both supports exactly when its attachment point is at odd distance from \(u\); a second edge on the same branch would then be omitted by both. This proves the criterion. \(\square\)
 
 Consequently, if branching remains after suppressing degree-two vertices on one side of the tree bipartition and deleting leaves on that side, no two selected supports cover all vertices. Any two-cover must then use a Hamiltonian support not already present among the selected deletion-cover components. This obstruction concerns only selection from the existing support family; it does not obstruct the theorem itself.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

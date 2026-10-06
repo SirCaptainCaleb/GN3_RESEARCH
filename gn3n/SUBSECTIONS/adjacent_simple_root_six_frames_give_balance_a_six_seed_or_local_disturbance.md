@@ -92,3 +92,8 @@ Therefore:
 In particular the adjacent-simple-root size profile has no featureless residual state at the exposed-endpoint level.
 
 No cyclic rotation, path reversal, minimum-counterexample hypothesis, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

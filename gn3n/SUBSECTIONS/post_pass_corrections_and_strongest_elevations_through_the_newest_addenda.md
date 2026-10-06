@@ -79,3 +79,8 @@ Hence the repaired Article VII frontier has two finite but distinct obligations:
 - component/loop compatibility for enlarged protected carriers, with every genuine loop obstruction reduced to one four-label C4 and at most a six-label filling test.
 
 The grand theorem is not closed by this pass. The elevation pass instead removes the obsolete unbounded targets and identifies exactly which later claims are conditional or superseded.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -54,3 +54,8 @@ Fix a maximum word P beginning (a,b), and consider actual tight words ending (b,
 Thus increasing such a prefix to order r would terminate in an actual augmentation immediately, without synchronizing any disjoint maximum tail order. This identifies a legitimate possible endpoint for a prefix-growth argument.
 
 It does NOT prove that a prefix can always be increased, that an arbitrary restriction remains tight, or that order r is reachable. The missing growth step is retained as missing. The matching theorem closes its stated branch, while the unrestricted odd residue remains open.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

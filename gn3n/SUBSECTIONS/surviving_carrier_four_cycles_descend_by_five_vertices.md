@@ -74,3 +74,8 @@ This use of order minimality is bounded and explicit: the reduction decreases th
 The protected four-label carrier loop is therefore not an independent terminal obstruction in an inductive proof of the grand conjecture. Once the five-label Hamiltonian support and complement-path-cover theorem are retained, the loop branch closes by strict hereditary descent.
 
 The remaining Article VII obligation is consequently the combinatorial/maximal-support branch: produce a two-cover there, or obtain an equally explicit hereditary descent.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

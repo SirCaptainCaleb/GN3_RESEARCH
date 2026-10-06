@@ -72,3 +72,8 @@ Therefore a genuine deletion-distance-two obstruction must satisfy the simultane
 > no Hamiltonian ordering of the four middle labels extends the inherited left anchor edge \((u,a)\) to a six-vertex tight path, and no Hamiltonian ordering extends the inherited right anchor edge \((v,d)\) through all four middle labels.
 
 This converts the anchored \(S_4\) obstruction into a two-sided fixed-edge extension failure. The remaining local problem is to classify simultaneous failure of these two four-label extensions using the prescribed-endpoint and endpoint-pair Hamiltonicity calculus.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

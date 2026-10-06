@@ -88,3 +88,8 @@ Thus:
 This is an audit-safe consequence of the actual four-end synchronization identities. It does not use cyclic rotation or path reversal.
 
 Consequently the original genuine two-deletion frame always has two genuine boundary layers on both complementary paths, so second-layer endpoint arguments may be applied there without a separate order-two exception.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -52,6 +52,8 @@ In the second case the four-set supporting the displayed tight path is Hamiltoni
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

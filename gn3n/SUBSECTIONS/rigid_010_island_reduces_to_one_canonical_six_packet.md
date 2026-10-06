@@ -33,3 +33,8 @@ Thus the rigid 010-island branch is exactly a fixed six-packet / two-tail gluing
 Unlike the monotone branch, there is no cut-mobility mechanism forcing several decompositions: the corridor cut is unique. The remaining local obligation is therefore to exploit source-face variation or endpoint-packet structure to force a third bridge label, a Hamiltonian packet with a compatible tail join, or an outward repair leaving the full determining span.
 
 This gives the rigid branch a bounded-interface formulation parallel to the monotone branch. It is a reduction, not a closure theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

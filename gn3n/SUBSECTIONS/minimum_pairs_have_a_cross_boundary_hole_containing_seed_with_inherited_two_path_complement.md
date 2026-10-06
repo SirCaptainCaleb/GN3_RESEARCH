@@ -103,3 +103,8 @@ Smid P'mid Q'
 in which (S) contains (x,y), (P',Q') are inherited intervals of the original (P,Q), and no displayed endpoint of (P'|Q') can enlarge (S) Hamiltonianly.
 
 No splice failure, cyclic rotation, path reversal, minimum-counterexample hypothesis, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

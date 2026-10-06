@@ -116,3 +116,8 @@ All bridge orientations lead to a two-cover. Therefore (z=c_{u+3}) cannot be a b
 By reversing the left/right roles, if (uge5) the analogous shared-bridge configuration across the first two legal cuts is also impossible.
 
 Thus every monotone genuine two-deletion corridor of order greater than twelve has at least one side on which neighboring-cut bridge repetition is forbidden. At the first possible order (12), the only unresolved monotone exponent pair is (u=v=4), where the above two-tail packet has one tail of order one and needs a separate endpoint version.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

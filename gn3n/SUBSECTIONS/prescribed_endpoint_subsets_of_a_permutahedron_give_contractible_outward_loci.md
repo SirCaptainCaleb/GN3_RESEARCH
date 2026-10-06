@@ -43,3 +43,8 @@ The subcomplex in which that occurrence is absent in every chamber is C_S or its
 This theorem does not identify C_S with a small-rank Coxeter quotient. Its proof uses all suffix-subset facets and their nerve. Thus it accommodates the participation of arbitrarily many vertex labels noted in [[tuple_dependence_does_not_by_itself_give_a_bounded_rank_coxeter_quotient]].
 
 The hypothesis of one variable boundary vertex is essential here. If an indicator depends on an ordered triple from a free three-block, the corresponding locus can consist of three isolated vertices, as in [[separated_window_outward_loci_are_products_and_can_be_disconnected]]. No contractibility assertion for arbitrary ordered-tuple conditions is being made.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

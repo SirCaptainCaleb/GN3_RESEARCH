@@ -41,6 +41,8 @@ Repeated application either decreases \(\Phi\) or reaches a bounded Hamiltonian 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

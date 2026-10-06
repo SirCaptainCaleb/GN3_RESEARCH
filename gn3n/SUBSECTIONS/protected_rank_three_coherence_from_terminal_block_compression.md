@@ -53,3 +53,8 @@ Thus every irreducible rank-three residue meeting a terminal interaction is eith
 Assuming the terminal block-compression claim \(|B|\le4\) from [[local_witness_topology_and_the_finite_terminal_theorem]], all non-product terminal interaction lives in Coxeter rank at most three. Exterior blocks are disjoint permutahedron factors and safe transport preserves outwardness on every chamber of those factors. Hence the previous audit concern about arbitrary unbounded higher-dimensional terminal cells reduces completely to the already closed rank-two residues plus the rank-three statement above.
 
 This does **not** yet repair the Article VII proof by itself, because the independent audit also found that the terminal block-compression lemmas (including \(|B|\le4\)) are not presently written with enough proof detail to certify. But conditional on those finite-terminal compression lemmas, the higher-dimensional acyclic-carrier objection is removed: the only local carrier factors are protected points/edges/squares/hexagons/rank-three collapses, times safe exterior permutahedron factors, all contractible and wholly contained in \(X_{r+1}\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

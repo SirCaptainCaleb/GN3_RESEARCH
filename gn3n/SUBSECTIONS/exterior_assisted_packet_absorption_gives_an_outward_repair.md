@@ -59,3 +59,8 @@ This is the exterior analogue of the internal six-packet bridge lemma, but its c
 Failure has a precise bounded form. If neither adjacent exterior vertex yields an outward repair by this mechanism, then for each such \(z\) every \(z\)-assisted connector label lies in the same bad-deletion set \(B(S)\), of order at most two. Thus all good deletion labels are forbidden from every four assisted join orientations. Whenever three of the four required triples of one assisted order are already forced, the fourth must fail and boundary antisymmetry produces an explicit reverse triple involving \(z\). This converts failed exterior absorption into rooted information at the next outward layer.
 
 The lemma does not prove that an adjacent exterior vertex supplies an assisted connector. In particular one may not infer such a connector from the internal four-end reversals alone. The remaining gluing theorem may now target the following dichotomy: an adjacent exterior vertex produces a good assisted connector and hence an outward repair, or the forced reverse triples from all failed assisted connectors assemble into a strictly farther positive witness.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

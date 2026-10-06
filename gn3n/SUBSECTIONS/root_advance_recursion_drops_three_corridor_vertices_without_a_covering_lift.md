@@ -42,3 +42,8 @@ Thus “the total tail length decreases” proves termination of the sequence of
 This reduction becomes a three-cover theorem only after proving a lifting statement: a suitably specified three-cover of the shorter configuration extends over A without increasing the number of paths. A generic three-cover is not presently shown to have that property. An alternative valid induction must retain a state recording disjoint packet ownership and the required endpoint orientations.
 
 This audit concerns the proof's covering invariant. It is not a counterexample to the three-cover statement or the grand theorem, and it leaves the direct nonrecursive outcomes and the common-reverser five-path lemma intact.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

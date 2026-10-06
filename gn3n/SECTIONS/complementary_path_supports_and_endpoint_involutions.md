@@ -80,6 +80,8 @@ This formulation isolates the unresolved combinatorics as a disjointness problem
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

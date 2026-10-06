@@ -46,3 +46,8 @@ Let a pair reservoir have at most four labels before a fixed z, with a Hamiltoni
 Thus in this sector there is no loop obstruction. Disconnected terminal-label sectors can still obstruct a natural carrier, and must be treated separately. If the pair relation is connected, its natural locus is already contractible.
 
 The surviving global carrier-loop problem must therefore have a non-Hamiltonian complement to its Hamiltonian five-packet. In a positional model this can come from additional outer blocks, a second determining window, or different fixed boundary data. The remaining global forcing argument must account for that complement rather than trying to force exterior labels in the excluded one-sided model.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -62,3 +62,8 @@ be a longest path with fixed terminal pair (b,a), as in
 The localized theorem permits a fully non-rigid maximum support while avoiding ANY two selected vertices of R, for example {a,b}, {c_1,c_2}, or one vertex from each end.
 
 Thus the supportwise non-rigidity is not trapped on one support chosen before the fixed-terminal obstruction is known. It may be reselected after the obstruction is exposed, with two prescribed blockers removed. This is a scale-independent selection principle and is the appropriate input for subsequent seam forcing.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

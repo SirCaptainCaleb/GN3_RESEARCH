@@ -33,3 +33,8 @@ For each \(x\in V(H)\), choose a deletion cover
 F_x=P_x\mid Q_x
 \]
 that minimizes \(|P_x|^2+|Q_x|^2\) among all two-covers of \(H-x\). Equivalently, choose a deletion cover whose two component orders have minimum possible imbalance.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

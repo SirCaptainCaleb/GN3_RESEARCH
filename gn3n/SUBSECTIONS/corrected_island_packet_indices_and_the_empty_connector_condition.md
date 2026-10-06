@@ -57,3 +57,8 @@ All 36 triple tests are supported on S together with the first two and last two 
 At the first possible island order twelve, u=v=3 and the tail orders are 3|3. All six-subsets of J are non-Hamiltonian by the one-path complement bound, so in particular S itself is non-Hamiltonian, while at least four of its five-subsets are Hamiltonian by [[smallset01]]. Attachment of those supports remains an explicit obligation.
 
 The alternative phrasing in which one forces a third connector can be replaced, for the genuine two-deletion branch, by the stronger goal of forcing even one connector. For kappa_2=1, a single connector only reproves deletion distance at most one; its packet complement must still be Hamiltonian to obtain a full two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

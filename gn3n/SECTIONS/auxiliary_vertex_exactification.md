@@ -93,6 +93,8 @@ The local tournament at \(r\) may be chosen arbitrarily, for example transitivel
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

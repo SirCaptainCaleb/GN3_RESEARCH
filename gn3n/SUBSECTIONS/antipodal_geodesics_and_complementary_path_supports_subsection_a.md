@@ -396,3 +396,9 @@ Such a word changes color once exactly when the internal word has the form \(1^a
 > For every boundary tournament extended by a vertex \(r\) with \(h(u,v,r)=1\), the \(\sigma=1\) copy of its graph has a one-change geodesic between the poles.
 
 The local tournament at \(r\) may be chosen freely, for example transitive. The output need not specify a switch location or common terminal vertex: Theorem 7 and Corollary 8 supply both. The unresolved requirement is existence of that geodesic. This formulation retains every original vertex once and has exactly the strength of the two-cover conjecture, whereas the one-change target on the original vertex set remains a potentially stronger sufficient condition.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

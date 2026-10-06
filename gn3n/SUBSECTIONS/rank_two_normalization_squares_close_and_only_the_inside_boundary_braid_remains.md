@@ -37,3 +37,8 @@ For the surviving braid, write the three permuted vertices as (a,b,c) and the ot
 Moreover, if one insists that neighboring supports be compatible by sharing an entire Hamiltonian side, cyclic pairwise compatibility around this support triangle forces exactly such a common (Bsubset T). Indeed, if the common sides for two consecutive support pairs are distinct, they must be the two complementary sides of the intervening (5|5) cover; tracing this once around the triangle forces the third pair of supposed common sides to overlap on four vertices and hence not be complementary. Therefore the common-core lemma is not merely a convenient symmetric strengthening of side-sharing compatibility: it is the exact finite statement for that compatibility model.
 
 This removes the commuting-square obligation completely and reduces the braid obligation from arbitrary at-most-ten terminal supports to one order-eleven local configuration (Tcup{a,b,c}) with (|T|=8).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

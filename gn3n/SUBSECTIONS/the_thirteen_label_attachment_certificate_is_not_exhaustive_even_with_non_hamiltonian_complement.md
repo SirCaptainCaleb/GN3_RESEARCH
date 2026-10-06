@@ -78,3 +78,8 @@ The resulting family of boundary tournaments has the stated non-Hamiltonian comp
 The counterexample does not assert existence of a global no-two-cover tournament. It shows that the local cycle and complementary-path hypotheses alone cannot force one of the thirteen-label attachment tests to pass. Closure must either use additional consequences of the global no-two-cover assumption or allow a repartition that mixes several vertices of an inherited tail into the five-support.
 
 In this example the successful repartition incorporates all three vertices of P into one interleaved path while moving z to Q. The initial prescribed endpoints of the Hamiltonian five-path are not preserved, and no path is reversed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

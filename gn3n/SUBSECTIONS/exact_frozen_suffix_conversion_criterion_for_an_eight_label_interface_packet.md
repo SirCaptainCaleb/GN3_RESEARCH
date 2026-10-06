@@ -42,3 +42,8 @@ This is a local obstruction to a proposed rooted inference, not a counterexample
 More precisely, a two-cover retaining (z,q) as a contiguous final segment exists if and only if at least one of H[W] and H[A union {x}] is Hamiltonian. If its suffix path has no prefix, the other support is W. If its prefix has one label, that label must be y, leaving A union {x}. Prefixes of length at least two were excluded above. Conversely, either Hamilton support gives the cover W | (z,q), or (A union {x}) | (y,z,q), respectively. This equivalence is unconditional for the prescribed family; it does not assert that both Hamilton alternatives can simultaneously fail.
 
 A concrete choice of A is the non-Hamiltonian six-label edge-order tournament verified in [[the_thirteen_label_attachment_certificate_is_not_exhaustive_even_with_non_hamiltonian_complement]]. Its internal prescriptions are disjoint from every new interface prescription.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

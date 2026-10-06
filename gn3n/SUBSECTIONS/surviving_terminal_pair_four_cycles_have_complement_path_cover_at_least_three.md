@@ -74,3 +74,8 @@ Hence:
 > \]
 
 This strengthens [[a_mutual_four_cycle_with_hamiltonian_complement_already_gives_a_spanning_two_cover]], which treated only the Hamiltonian-complement case. The remaining topological frontier is therefore not an arbitrary protected \(C_4\), but a protected \(C_4\) whose forced Hamiltonian five-packet has genuinely three-path-or-worse complement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

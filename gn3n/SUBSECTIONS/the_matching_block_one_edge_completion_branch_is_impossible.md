@@ -115,3 +115,8 @@ R,\qquad \{a,b\}\subseteq R\subseteq U,\qquad 4\le |R|\le6.
 \]
 
 Thus the active one-edge-completion branch is eliminated: the matching-block equality residue always returns to the bounded Hamiltonian-support handoff.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

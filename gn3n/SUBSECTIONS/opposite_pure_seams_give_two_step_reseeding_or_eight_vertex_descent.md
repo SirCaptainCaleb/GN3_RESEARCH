@@ -134,3 +134,8 @@ Therefore:
 Equivalently, opposite pure seam certificates strip two boundary layers from both complementary rails before any genuinely higher-deletion-distance residue can survive.
 
 No cyclic rotation, path reversal, minimum-counterexample induction, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -25,3 +25,8 @@ Boundary reversal also remains local:
 (c,b,a)\text{ tight}.
 \]
 It does not justify reversing a path or cyclically rotating a triple. Every recurrence argument above therefore keeps the displayed path orders through each pairwise repartition.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

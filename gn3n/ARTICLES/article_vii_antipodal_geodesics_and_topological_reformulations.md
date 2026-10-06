@@ -5,6 +5,8 @@
 - Composition version: 9
 - Stale: False
 - Composed through revision: 1916
+- Sections existing when composed: 8
+- Sections now: 8
 
 ## Composition
 
@@ -60,5 +62,5 @@ Article VII therefore leaves a single scale-independent closure problem. Startin
 - 4. [Exact-root compression and bounded central structure](../SECTIONS/exact_root_compression_and_bounded_central_structure.md) (`exact_root_compression_and_bounded_central_structure`; composition v2; stale=False)
 - 5. [Deletion distance one: role-balanced four-blocks and Ky Fan alternation](../SECTIONS/kappa_one_role_balance_and_ky_fan.md) (`kappa_one_role_balance_and_ky_fan`; composition v2; stale=False)
 - 6. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (`local_witness_topology_and_the_finite_terminal_theorem`; composition v2; stale=False)
-- 7. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v9; stale=True)
+- 7. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v9; stale=False)
 - 8. [Synthesis and the exact topological frontier](../SECTIONS/article_vii_synthesis_and_exact_frontier.md) (`article_vii_synthesis_and_exact_frontier`; composition v2; stale=False)

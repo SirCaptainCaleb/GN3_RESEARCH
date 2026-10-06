@@ -42,3 +42,8 @@ The valid retained conclusion is only:
 To obtain the desired rooted absorption, one needs an **oriented endpoint** strengthening: enough of those covers must place (x) at the terminal end, or there must be a separate argument converting the initial-endpoint cases into a compatible repartition.
 
 Thus the reflected-double branch remains reduced to a bounded rooted interface problem, but not yet to the claimed three wrong-way hooks residue. This is the same orientation subtlety already flagged in [[correction_rooted_four_core_extension_is_not_automatic]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

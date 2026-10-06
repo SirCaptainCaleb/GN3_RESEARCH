@@ -80,3 +80,8 @@ This is a finite attachment certificate, not an upper bound on the order of a co
 [[a_mutual_four_cycle_with_hamiltonian_complement_already_gives_a_spanning_two_cover]] excludes the Hamiltonian-complement case outright. When the complement is non-Hamiltonian but has a two-cover, the present tests apply directly. If no complement two-cover is available, that hypothesis requires a separate proof before these tests can be used.
 
 The rooted paths here are derived solely from boundary antisymmetry, so they avoid the cyclic-rotation gap recorded in [[audit_cyclic_rotation_invalidates_the_new_descent_and_second_layer_claims]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

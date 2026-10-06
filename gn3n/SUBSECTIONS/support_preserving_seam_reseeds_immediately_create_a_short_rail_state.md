@@ -74,3 +74,8 @@ Hence:
 > **Short-rail reseed theorem.** A support-preserving seam reseed cannot generate a new unbounded maximal-support residue. Reinterpreting the reseed cover as the complementary two-cover \(K\mid R\) exposes an order-four rail, so one further seam step lands in bounded disturbance/reseeding or deletion distance at most two.
 
 Consequently the only genuinely new reseed branch left by [[seam_reseeding_either_preserves_or_splits_the_maximal_support]] is the support-splitting branch, where every two-cover of \(H-K\) under consideration cuts the displayed Hamilton path \(S\) across at least one edge.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -75,6 +75,8 @@ This is the precise common structure with antipodal cube-coloring problems such 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

@@ -51,6 +51,8 @@ In particular no nonempty subfamily of \(X\) can be absorbed into \(P\) and \(Q\
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

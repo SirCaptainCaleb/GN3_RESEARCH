@@ -192,3 +192,9 @@ Orient the Hamilton order of \(K\) from \(y\). \(\square\)
 Applying Lemma 8 with \(k_0=y\) now produces, unless \(H\) already has a two-cover, either an external end-edge reversal or a split/leave-and-return disturbance while preserving a label \(y\) that was already exposed as an endpoint in the independent cover \(H-X=P\mid Q\).
 
 This supplies a double endpoint anchor for the remaining compression problem: the same vertex is available simultaneously in the old complementary path geometry and in the new four-support comparison geometry.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 5

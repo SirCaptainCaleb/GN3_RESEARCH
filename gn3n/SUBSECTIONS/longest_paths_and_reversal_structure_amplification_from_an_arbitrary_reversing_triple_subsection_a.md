@@ -33,3 +33,8 @@ Thus the complement of \(J_T\) is triangle-free, so Mantel's theorem gives
 \qquad m=|V(H)-T|.
 \]
 Every edge gives a Hamiltonian five-set containing the same reversal and having two-coverable complement. Hence some exterior vertex lies in several such edges, producing Hamiltonian five-sets with a common four-vertex core. The insertion-position analysis following Lemma 6 then gives a Hamiltonian four- or six-set, an order disagreement, or another positioned reversal.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

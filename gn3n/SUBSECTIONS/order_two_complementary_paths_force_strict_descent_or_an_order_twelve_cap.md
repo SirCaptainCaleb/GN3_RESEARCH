@@ -41,3 +41,8 @@ The potential calculation
 remains correct only conditionally if such a Hamiltonian four-support is established independently.
 
 This subsection is withdrawn as a theorem. See [[audit_cyclic_rotation_invalidates_the_new_descent_and_second_layer_claims]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

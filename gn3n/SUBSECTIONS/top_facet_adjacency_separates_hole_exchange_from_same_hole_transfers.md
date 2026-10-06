@@ -102,3 +102,8 @@ Thus simple connectivity of the covering support space does not force every agre
 The bridge is now explicit. To invoke reconstruction, one needs connectivity of actual deletion-cover states after removing any two hole fibers, not connectivity obtained by dropping most support vertices. At top rank the only additional adjacency is same-hole vertex transfer, and minimum imbalance either excludes it (odd order) or restricts it to neutral near-balanced transfers (even order).
 
 The boundary-tournament conditions must supply a lifting from partial-support fillings to these top-rank states, or supply a proved sequence of support transfers which controls the same-class predicates. No such lifting, spanning two-cover, or terminating improvement has been proved here. The grand theorem remains open.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

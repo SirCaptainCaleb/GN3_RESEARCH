@@ -52,3 +52,8 @@ For a centered/overlapping span-two terminal interval of order at most eight, ch
 The orbit lemma does not give a globally nested assignment when repair orders or normalization windows vary. An inherited generator mask gives nesting only within a family sharing the same base repair and normalization, as in [[frozen_window_carriers_and_separator_relabeling_require_precise_invariants]]. It also does not handle the unbounded positive span-two reflected-double branch.
 
 Accordingly the local square/hexagon machinery can be retained for the bounded alternating and overlapping span-two types with a consistent positive polarity. The remaining local issues are precisely the ten-position exclusive disjoint span-two endpoint exchange and the unbounded span-two double branch, in addition to global compatibility of carrier choices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -929,6 +929,8 @@ Thus future arguments at the two cross corners must retain the central orientati
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

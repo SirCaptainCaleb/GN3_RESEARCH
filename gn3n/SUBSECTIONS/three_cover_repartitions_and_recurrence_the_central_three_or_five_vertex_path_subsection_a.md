@@ -78,3 +78,8 @@ is tight because its three consecutive triples are
 Repartitioning \(P\) with the three-vertex path gives the stated five-vertex central path. \(\square\)
 
 Thus every deleted label has a canonical bounded representative in the same component of \(\mathcal R(H)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

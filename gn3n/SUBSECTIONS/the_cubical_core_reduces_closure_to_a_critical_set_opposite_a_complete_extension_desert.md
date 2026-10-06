@@ -44,3 +44,8 @@ A non-Hamiltonian;
 A-x Hamiltonian and B+x non-Hamiltonian for all surviving coordinates x in D(A).
 
 The closure problem is therefore to control the size and interaction of these partial critical stars, or to show that the cubical cocycle necessarily contains a source with sufficiently rich outgoing star. No global monotonicity is presently established.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

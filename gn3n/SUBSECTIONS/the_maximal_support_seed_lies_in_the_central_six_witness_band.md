@@ -86,3 +86,8 @@ Consequently the two Article VII interfaces are no longer merely parallel reduct
 - the genuine two-deletion obstruction contains, inside its central six witness labels, a Hamiltonian seed for maximal-support normalization.
 
 The remaining bridge can therefore be sought entirely through how this central-six Hamiltonian seed sits in the protected four-label middle face and its pair-locus relation.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

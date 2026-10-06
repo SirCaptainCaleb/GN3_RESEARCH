@@ -31,3 +31,8 @@ Write \(A=(x,M,y)\), and let \(T\) be a two-cover of \(H-\{x,y\}\). If at least 
 Hence:
 
 **Lemma 5.** At a minimum of \(\Phi\) with size multiset \(\{r+1,r,r\}\), one obtains an order disagreement, an edge joining distinct displayed supports in a comparison cover, an inherited displayed edge split between the two paths of a comparison cover, two blocks of one displayed support separated by another, or a reverse tight triple at a displayed join.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

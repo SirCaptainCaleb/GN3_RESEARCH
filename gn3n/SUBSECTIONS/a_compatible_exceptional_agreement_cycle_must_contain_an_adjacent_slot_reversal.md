@@ -35,3 +35,8 @@ But the final negative identification, together with order compatibility on the 
 Consequently some edge has adjacent slots. Write its common varying support as L,z,R, with its two extensions (L,a,z,R) and (L,z,b,R). All consecutive triples of (L,a,z,b,R) are inherited from those extensions except (a,z,b). If that triple were tight, the resulting path and the unchanged common second path would two-cover H. Therefore h(a,z,b)=0 and h(b,z,a)=1.
 
 Thus a 2-connected agreement family does not leave an unstructured coherent loop: either some agreement edge already has order disagreement, or full compatibility forces an adjacent-slot positioned reversal. The theorem retains an actual reversing triple and the two deletion orders that locate it. Closing that reversal still requires a valid conversion; no bare four-support is being treated as terminal.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

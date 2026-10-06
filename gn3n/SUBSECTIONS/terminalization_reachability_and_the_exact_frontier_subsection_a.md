@@ -102,3 +102,8 @@ No separate solution of the old omission-facet, zero-root, neutral-corridor, or 
 The eventual terminalization proof should be audited for portability. The chamber topology, antipodal symmetry, witness-tree compression, and relative-index recursion appear substantially less dependent on GN3 translation invariance than the block-swap and splicing lemmas.
 
 This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3_closure_should_seed_generalized_norine]]: a substantial core of the eventual boundary-tournament proof should seed a generalized bounded-memory Norine geodesic theorem. That program is deliberately kept separate from the proof of the present conjecture, but the distinction between portable topology and GN3-specific face combinatorics should be tracked as the terminalization argument is developed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

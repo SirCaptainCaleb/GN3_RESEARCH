@@ -78,3 +78,8 @@ Therefore:
 Thus any featureless simple-root transport trajectory can be sampled every two moves to obtain a walk in a fixed Johnson layer. A recurrent sign-flip trajectory projects to a closed Johnson support-exchange walk; a nonrecurrent trajectory must terminate at a state where both long-side endpoint transfers fail, which is already in the bounded four-component/lower-deletion interface by [[normalized_simple_root_faces_either_flip_root_sign_neutrally_or_descend_to_four_components]].
 
 This converts the remaining adjacent-simple-root problem from root geometry to neutral support-exchange geometry. The next obstruction is therefore a closed Johnson walk of complementary Hamiltonian bipartitions, precisely the scale on which the existing support-compatibility, order-disagreement, and Johnson-density machinery operates.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

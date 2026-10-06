@@ -102,3 +102,8 @@ This is the correct replacement for the withdrawn cyclic-rotation propagation cl
 If \(S\) is maximal among Hamiltonian supports with two-coverable complement, each exposed endpoint of \(P\mid Q\) already reverses both displayed end edges of \(S\). Therefore whenever the first alternative in one of the forks occurs, the same exposed endpoint reverses two vertex-disjoint same-type edges: one in \(S\) and one one layer inside the opposite complementary path. The valid common-reverser lemma then yields a transversal Hamiltonian four-support.
 
 The remaining fork alternative transfers the reversal carrier to the newly exposed second-layer vertex. Thus the maximal-support obstruction has a finite one-layer carrier-switch structure rather than an unconstrained inward propagation.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -73,3 +73,8 @@ gamma(X_{r+1})ge gamma(X_r)-1.
 ]
 
 Thus the global audit gap has been reduced to a bounded ordered one-vertex exchange/adjacent-window bridge at terminal support order nine (and any analogous near-maximal slack normalization that cannot be covered by a single window).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

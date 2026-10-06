@@ -44,3 +44,8 @@ is then tight: its first triple is tight by the preceding complete root relation
 The terminal-endpoint version is symmetric.
 
 Therefore the exact odd uniform middle-layer residue cannot realize the quiet common-endpoint alternative of the isolated-root extension-star theorem. For every Hamiltonian (r-1)-core and any attempt to synchronize all of its one-root Hamiltonian extensions, some genuine order disagreement, positioned reversal, or internal Hamiltonian support must occur. This eliminates the quiet branch scale-independently; no bounded support is regarded as terminal progress.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

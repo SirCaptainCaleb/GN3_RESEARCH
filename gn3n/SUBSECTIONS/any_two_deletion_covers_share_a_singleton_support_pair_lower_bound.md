@@ -31,3 +31,8 @@ Thus every two normalized one-hole support-pair states of a minimum counterexamp
 Equivalently, arbitrary deletion-cover dissimilarity is never a pairwise connectivity obstruction in the singleton-allowed support-pair complex. Every two top-rank deletion-cover vertices are connected by a two-edge poset path through a singleton pair.
 
 The remaining coherence problem begins at triples of deletion covers. In sign language, two bipartitions can always be gauge-aligned so that both sign-agreement classes are nonempty; three bipartitions may have nontrivial Z_2 monodromy. This is where the old negative support-agreement cycles and the equivariant carrier problem naturally meet.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

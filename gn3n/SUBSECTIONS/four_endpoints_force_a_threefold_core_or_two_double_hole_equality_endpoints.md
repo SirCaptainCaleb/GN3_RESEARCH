@@ -27,3 +27,8 @@ Then at least one of the following holds.
 Proof. Suppose (1) fails. Then every ordinary label r in N lies in A_e for at most two endpoints, so sum_e |A_e|<=2|N|=6. If at most one endpoint had |A_e|=1, the other three endpoints would have |A_e|>=2, giving sum_e |A_e|>=7, a contradiction. Hence at least two endpoints have |A_e|=1. Fix such e with A_e={r}. Since |G_e|>=3 and only one ordinary label lies in G_e, both x and y lie in G_e. Together with deletion of e, which leaves Y Hamiltonian, the deletions e,x,y,r are good. The two remaining ordinary deletions must fail, for otherwise A_e would have order at least two. Hence the six-set is exactly a four-of-six equality case. ∎
 
 In branch (1), pigeonhole among three endpoints puts two on one tail and at least one on the other; failed neutral transports therefore force the same omitted ordinary label to reverse both second-layer ends of one tail and a second-layer end of the other. In branch (2), the remaining difficulty is concentrated in at least two six-vertex four-of-six equality configurations.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

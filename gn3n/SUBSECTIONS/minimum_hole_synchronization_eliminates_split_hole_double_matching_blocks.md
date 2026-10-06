@@ -115,3 +115,8 @@ Hence:
 > **No split-hole residue.** The split-hole double-matching normal forms isolated in [[hard_seam_equality_packets_reduce_to_split_hole_double_matching_blocks]] cannot occur in a genuine minimum-pair seam, because minimum-hole four-end synchronization forces one of their required bad four-deletions to be Hamiltonian.
 
 Consequently the hard seam equality branch has no new static residue. Every such seam instead yields one of the previously established outputs: adjacent overlapping Hamiltonian supports, the explicit cross-seam rail four-support, or an admissible inner five-/six-seed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

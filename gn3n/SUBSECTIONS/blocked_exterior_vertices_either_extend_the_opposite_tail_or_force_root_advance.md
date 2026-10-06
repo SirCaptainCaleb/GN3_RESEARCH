@@ -93,3 +93,8 @@ This sharpens the endpoint-repartition target. A remaining obstruction must simu
 2. all root-advancing five-paths from handing off to the untouched tails.
 
 Thus the next local theorem should be stated in terms of these two transport outputs rather than in terms of arbitrary Hamiltonian endpoint packets.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

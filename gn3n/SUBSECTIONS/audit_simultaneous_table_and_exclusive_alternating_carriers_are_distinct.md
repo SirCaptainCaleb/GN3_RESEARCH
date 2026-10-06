@@ -33,3 +33,8 @@ For example the words \(0101000001\) and \(0111110101\) separately satisfy the i
 The reflected-double alternating conclusion is supplied separately, in stronger form, by [[positive_alternating_double_occurrences_have_support_at_most_eight]]. Thus the concurrent addendum's intended compression conclusion can be retained with corrected proof references: the exclusive disjoint alternating branch is impossible, and the alternating double branch has at most eight determining vertices.
 
 The remaining unbounded reflected-double branch is span-two. Protected endpoint transport also has a separate exception on the surviving exclusive disjoint span-two support of order ten, identified in [[balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -100,3 +100,8 @@ If none of those states yields the rooted-five-path alternative, then the same f
 Hence the fixed-hole extremal target can be sharpened: one seeks an upper bound on complementary balanced Hamiltonian bipartitions whose chosen Hamilton orders have terminal endpoint pair completely dominating the initial endpoint pair in one fixed link tournament.
 
 The hypergraph dependence on the hole has therefore been compressed into an ordinary tournament on \(n-1\) vertices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

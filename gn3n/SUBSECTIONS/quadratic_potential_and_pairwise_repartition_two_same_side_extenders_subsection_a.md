@@ -27,3 +27,8 @@ In the first case, the two failed end insertions give two reverse tight triples 
 Two reverse triples through one end edge force a bounded common-core configuration. For each reverse triple, record pairs of exterior labels whose simultaneous extension fails. Each failure graph is triangle-free: three pairwise failures force, by applying boundary reversal to the three corresponding insertion triples, a Hamiltonian order on one of the three five-vertex extensions. On six exterior labels, if no pair succeeds for both reverse triples, the edges of \(K_6\) are covered by two triangle-free graphs. Coloring each edge by one graph containing it gives a two-coloring of \(K_6\) without a monochromatic triangle, contradicting \(R(3,3)=6\). Hence two labels simultaneously extend both reverse triples, producing two Hamiltonian five-vertex supports with a common four-vertex core.
 
 Their six-vertex union has three relevant possibilities: it is Hamiltonian; two Hamiltonian vertex deletions are adjacent; or the Hamiltonian vertex deletions form a matching. These give, respectively, a Hamiltonian six-vertex support, overlapping Hamiltonian four- and five-vertex supports, or a fixed matching-block configuration. Each alternative preserves the common four-vertex core.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

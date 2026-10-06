@@ -41,3 +41,8 @@ Thus in a no-two-cover state, for every pair of deletion covers and every pairin
 This is a direct conversion criterion for dissimilar covers, not a claim that an aligned cut always exists. It separates the actual remaining obligation from generic disagreement certificates: one must force this simultaneous set-and-edge alignment, or exploit the obstruction to it. The boundary interface uses only two ordered pairs, while the prefix-set condition retains the global incidence information that local triple tests cannot replace.
 
 This generalizes [[crossing_deletion_covers_close_by_ordered_overlap_and_a_contiguous_complementary_intersection]] in a different direction: fragmentation is allowed everywhere, provided the paired cuts satisfy the stated global prefix identity.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -400,6 +400,8 @@ The closure uses the two endpoint failures on the fixed second support \(Q\). It
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

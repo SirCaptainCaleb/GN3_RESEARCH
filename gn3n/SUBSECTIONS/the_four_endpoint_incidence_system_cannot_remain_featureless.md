@@ -125,3 +125,8 @@ Therefore:
 Equivalently, the ordinary-deletion-label synchronization problem is closed: there is no residual incidence pattern requiring a new endpoint-core theorem.
 
 This removes the endpoint-label synchronization branch from the Article VII frontier. The remaining obligation is the conversion of the resulting bounded disturbance into either a protected outward carrier or a spanning two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

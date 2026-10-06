@@ -23,3 +23,8 @@ Proof. Consider x. In the order obtained by inserting x alone into its R-slot in
 In a genuine minimum deletion pair {x,y} with H-{x,y}=P|Q, minimum-pair nonaugmentability makes both holes individually noninsertable into each inherited path. Consequently any coupled absorption of both holes into P while retaining the order of P has only two local forms: adjacent holes, or holes separated by one P-vertex. The same holds for Q. Long-range two-hole insertion is impossible.
 
 More generally, for a local rule of uniformity r, the identical argument shows that if each of two labels is individually noninsertable into a fixed geodesic order, then any successful simultaneous insertion preserving that order must place the two new labels in a common r-window, hence at positional distance at most r-1. This is a uniformity-portable locality principle.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

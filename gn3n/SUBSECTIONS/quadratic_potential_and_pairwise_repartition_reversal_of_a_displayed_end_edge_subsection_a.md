@@ -36,3 +36,8 @@ Thus a minimum of \(\Phi\) leaves only the one-vertex transfer.
 **Lemma 7.** If the transferred vertex can occur at opposite ends in its two Hamiltonian realizations, then comparison of the two orders gives a reversal of a displayed end edge. Hence a persistent equal-\(\Phi\) transfer has only two forms: the transferred vertex is internal in every relevant Hamilton order of one augmented support, or every endpoint realization places it on the same side.
 
 **Proof.** Opposite endpoint positions agree on the inherited core until the first position at which one order has already placed the transferred vertex and the other has not. At that position the two consecutive inherited core vertices occur in opposite local orders, producing the displayed end-edge reversal. \(\square\)
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

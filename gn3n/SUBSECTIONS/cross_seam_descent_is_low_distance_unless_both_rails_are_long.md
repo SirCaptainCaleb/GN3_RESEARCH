@@ -89,3 +89,8 @@ Therefore a pure seam descent can escape the already-developed deletion-distance
 \]
 
 This isolates the genuinely new maximal-support descent regime from the short-rail cases. No cyclic rotation, path reversal, minimum-counterexample induction, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

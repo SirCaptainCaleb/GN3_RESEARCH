@@ -49,3 +49,8 @@ The center-preserving condition is essential. An arbitrary unbalanced two-cover 
 This lemma completely handles a **given** first active radius \(d\le3\), including the double-nearest / median-wall configurations already localized to radii \(1,2\).
 
 It does **not** combine with a universal large-radius same-face escape. The addendum [[moving_the_auxiliary_center_can_reverse_arbitrary_large_nearest_radii_without_same_face_escape]] shows that on a non-singleton \(r\)-block, opposite nearest labels at arbitrarily large radius can be produced by moving \(r\) while the same absolute positive witnesses persist. Thus the remaining large-radius problem is the auxiliary-center fiber problem, not another bounded-support problem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

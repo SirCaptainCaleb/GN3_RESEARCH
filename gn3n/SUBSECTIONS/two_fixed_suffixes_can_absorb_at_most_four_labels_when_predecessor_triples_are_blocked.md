@@ -35,3 +35,8 @@ In particular |W|<=4 is necessary. If |W|=4, the exact criterion is a partition 
 More generally, for r disjoint fixed tight suffixes with the same blocking condition, an r-path cover retaining all suffixes as final segments exists exactly when W partitions into r allowed prefix supports of size at most two. Hence |W|<=2r.
 
 Application and scope. A six-label packet cannot be absorbed by two such fixed suffixes, however many unrooted local two-cover certificates the packet has. This is a conditional obstruction to insisting on two unchanged suffixes, not an obstruction to unrestricted two-covers. It does not claim that an Article VII protected carrier necessarily satisfies the blocking hypotheses at both boundaries. A reflected two-ended repair must either disprove one blocking hypothesis, move a suffix boundary, or change the ordering inside a suffix. This theorem specifies exactly where the fixed-suffix restriction runs out of room.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

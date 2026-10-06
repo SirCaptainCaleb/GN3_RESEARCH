@@ -43,3 +43,8 @@ satisfies
 **Proof.** Replacing \(P_i\mid P_j\) by \(R\mid S\) is a pairwise repartition. A smaller size difference would decrease \(\Phi\) by Lemma 1. \(\square\)
 
 Thus every displayed pair is as balanced as possible among its two-covers. Further information must come from path order, endpoint position, or comparison with another cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

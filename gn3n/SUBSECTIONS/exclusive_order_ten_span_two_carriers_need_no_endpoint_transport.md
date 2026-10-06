@@ -76,3 +76,8 @@ This uses the positive-word depth rule consistently throughout: no dual-polarity
 After this repair, the only unbounded positive terminal branch is the span-two reflected-double branch of [[positive_reflected_double_carriers_have_unbounded_local_spans]]. The alternating double branch is bounded by eight, the exclusive alternating branch is impossible, and the exclusive span-two branch is handled above.
 
 Therefore the genuinely new local theorem still needed is the reflected-double corridor/interface repair, together with global compatibility of the resulting frozen carriers across ambient zero faces.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

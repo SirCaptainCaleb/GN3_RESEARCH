@@ -49,3 +49,8 @@ If N=B, the enlarged clique complex is a cone on the cycle, and the terminal-pai
 Thus the two-direction admissibility condition in [[a_mutually_admissible_exterior_vertex_fills_the_terminal_pair_carrier]] is not merely a convenient sufficient condition for this obstruction. With one added vertex and the old terminal relation unchanged, mutual adjacency to all four labels is necessary to fill the forced cycle.
 
 A one-sided successful-buffer relation gives no mutual edge by itself and may leave the entire original homotopy type unchanged. This distinguishes an outward chamber from a coherent carrier containing all earlier outward choices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

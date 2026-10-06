@@ -52,3 +52,8 @@ This is an actual unbounded-gluing mechanism of the type missing from the trunca
 For a fixed maximum path B, any endpoint of a disjoint maximum path carries not merely the exposed-edge reversal from the universal odd-uniform theorem but a two-edge reversal fan into B. Thus any endpoint-availability theorem in the rooted-support graph of [[odd_cycles_of_actual_endpoint_paths_force_a_longer_path_without_compatible_insertion_orders]] immediately supplies stronger positioned seam data than was previously recorded.
 
 A natural global reformulation is to mark, on every Hamiltonian r-support, the vertices attainable as endpoints. For each root a, rooted endpoint supports form a bipartite subgraph of the disjointness graph on (r-1)-subsets of V-a, otherwise the odd-cycle theorem gives an (r+1)-path. Every support has at least two endpoint marks. Proving that these simultaneous rooted bipartiteness requirements are impossible would close the odd-uniform residue. This last marking obstruction is a target, not a proved theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

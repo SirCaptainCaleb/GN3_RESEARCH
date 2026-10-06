@@ -95,3 +95,8 @@ k\ge m+t-4.
 \]
 
 No minimum-counterexample induction is used; only global maximality of \(S\) among admissible Hamiltonian supports.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

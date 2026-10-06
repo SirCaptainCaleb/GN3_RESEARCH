@@ -100,3 +100,8 @@ The strategic consequence is precise.
 - After deleting \(r\), the remaining obstruction is exactly the fixed-position positive-word obstruction on \(\omega\), where the persistent-orientation and separated-window theorems apply without the moving-center ambiguity.
 
 Accordingly a promising hybrid proof should not try to prove that every large-radius auxiliary sign change is an outward event. It should first separate **fiber edges** (swaps involving \(r\)) from **base edges** (changes of the original order). Fiber edges encode movement of the two-status gap; base edges encode actual changes of the positive-witness geometry. The remaining topological task is to show that the extra dimension contributed by the insertion fibers can be collapsed without destroying the antipodal obstruction, leaving the positive-witness separator problem on the original Coxeter sphere.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

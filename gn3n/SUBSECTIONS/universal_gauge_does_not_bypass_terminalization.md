@@ -29,3 +29,8 @@ Therefore a universal gauge does not remove the need for terminalization. It cre
 In particular, the genuine reflected-double obstruction is not solved by changing only the sign convention. The productive route remains geometric: either construct an enlarged-window outward move, or prove that failure forces a farther witness.
 
 This also clarifies the earlier external-gauge audit. The problem was not merely that the old labeling was hybrid. A genuinely universal gauge would satisfy the desired sign identity, but that identity alone is insufficient for the separator-to-next-level map.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

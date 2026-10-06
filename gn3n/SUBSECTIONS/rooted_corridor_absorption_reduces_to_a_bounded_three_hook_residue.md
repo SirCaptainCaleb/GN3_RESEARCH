@@ -82,3 +82,8 @@ The local-extension toolkit already gives additional structure in this residue: 
 For reflected-double terminal surgery this is useful because each selected determining window uses at most six vertices. After adding the corridor interface vertex if necessary, every one-sided endpoint repair fits into the seven-set framework above. Hence the unbounded reflected-double branch reduces further to two bounded three-hook residues, one at each end, with the long positive-word-free corridor frozen between them.
 
 This does not yet close the branch: support-level Hamiltonicity of the anchor-containing four/five-set does not automatically give the required endpoint order, as emphasized by [[correction_rooted_four_core_extension_is_not_automatic]]. The remaining theorem is an ordered three-hook absorption/repartition statement, not a new unbounded phenomenon.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

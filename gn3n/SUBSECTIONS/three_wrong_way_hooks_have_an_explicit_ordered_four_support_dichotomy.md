@@ -91,3 +91,8 @@ No cyclic rotation, path reversal, edge-order representation, or minimum-counter
 In [[rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue]], the support-level conclusion was insufficient because the orientation of the Hamilton packet was uncontrolled. The present dichotomy supplies explicit orientations in both branches.
 
 It does not by itself complete absorption: the direct splice wants a packet path ending at the shared interface vertex \(x\), whereas branch 1 starts with \(y,x\) and branch 2 places \(x\) penultimate. The remaining problem is therefore strictly narrower: convert one of these two ordered four-support forms into a repartition of the six-vertex endpoint packet, or show that failure of that repartition yields a protected outward move.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -33,3 +33,8 @@ Therefore retain only the audited part:
 This remains useful for the adjacent-window problem because it supplies many candidate four-cores and five-cores, but an additional extension/selection argument is required to make the two ten-window repairs compatible.
 
 Any argument treating cyclic rotations of a tight triple as automatically tight is invalid in the present model and must not be used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

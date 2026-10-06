@@ -139,3 +139,8 @@ This suggests a new closure target for the first Smith extension:
 - the task is to show that such a family cannot realize the top-rank Smith obstruction without either producing a deficiency-one support pair or a mixed support-pair filling.
 
 The minimum-pair graph should therefore be studied together with the family of fixed tournaments \(\{T_x\}\), rather than through pairwise comparison of deletion-cover orders.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

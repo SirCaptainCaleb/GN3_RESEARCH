@@ -50,3 +50,8 @@ The concurrent result [[two_opposite_nonzero_exits_admit_independent_two_label_r
 For adjacent exceptional vertices, under the stated three-neighbor patterns, the replacements themselves must be consecutive on the new zero-exit cycle. Their mutual relation is consequently necessary, not just convenient for the proposed disk.
 
 This completes both placements of two nonzero exits for the basic two-replacement pattern. It remains conditional on the actual mutual neighborhoods, exit statuses, and availability of a protected ambient enlargement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

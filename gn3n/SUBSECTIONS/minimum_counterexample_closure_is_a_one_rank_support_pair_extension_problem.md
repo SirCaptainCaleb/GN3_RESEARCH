@@ -90,3 +90,8 @@ The universal support-pair source has equivariant height \(n-4\). Thus minimum c
 This is the natural place to seek closure: not by descending further to a two-hole state, but by proving that the one-hole top-rank support-pair family cannot support the final equivariant obstruction.
 
 No small-order cutoff is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

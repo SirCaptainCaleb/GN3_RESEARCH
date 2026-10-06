@@ -295,3 +295,9 @@ and the complement cannot be Hamiltonian, since a Hamilton path on \(H-K\) toget
 \(\square\)
 
 The closure uses the two endpoint failures on the fixed second support \(Q\). It does not use the false inference that two different exterior vertices reversing one common edge force a Hamiltonian four-set.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 10

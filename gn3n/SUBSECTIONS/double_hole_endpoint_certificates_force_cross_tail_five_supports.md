@@ -81,3 +81,8 @@ Therefore:
 This produces a bounded support simultaneously spanning the two complementary tails. In particular, the double-hole alternative cannot remain as two unrelated one-tail certificates: it automatically yields a cross-tail five/six-support interface on at most six labels.
 
 For the genuine two-deletion five-component state, this is the natural next input for endpoint handoff. A successful repartition using one of these cross-tail supports consumes one endpoint from each inherited tail at once; failure can now be analyzed by the existing prescribed-endpoint and order-disagreement lemmas on a six-label support rather than by separate long-tail arguments.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

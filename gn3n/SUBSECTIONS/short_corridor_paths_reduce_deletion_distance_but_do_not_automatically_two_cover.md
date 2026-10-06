@@ -25,3 +25,8 @@ If |P|=3, there are two possibilities. If either P+x or P+y is Hamiltonian, its 
 The same assertions hold with P,Q exchanged. In particular the 001/001 and 011/011 disjoint doubles, whose canonical corridor cover has a two-vertex component, belong to the deletion-distance-at-most-one layer. They are not closed merely by this observation. The actual two-cover tests in [[two_bridge_vertices_absorb_a_five_vertex_packet]] and [[successive_bad_five_packets_force_four_cross_endpoint_repairs]] continue to supply nontrivial repairs of these branches.
 
 Therefore a two-deletion interface theorem alone would leave the distance-one double branch unresolved. Conversely any assumed genuine kappa_2=2 residue must have both corridor components of order at least four, exactly as the cited proof establishes. This addendum adjusts the scope, not that conditional result.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

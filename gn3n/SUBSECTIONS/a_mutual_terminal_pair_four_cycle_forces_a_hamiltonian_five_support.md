@@ -45,3 +45,8 @@ When terminal-pair admissibility is h(u,v,z)=1, a chordless four-label cycle in 
 Thus the finite topological obstruction itself exposes an actual Hamiltonian five-support. This links the carrier-loop interface to the five-component interface in the compressed Article VII, without first finding exterior labels.
 
 A Hamilton five-support does not by itself fill the loop or concatenate to a corridor tail. Its tight order may move z and alter the inward boundary statuses. The new theorem supplies a genuine common combinatorial object for the two interfaces; protectedness and tail attachment remain separate obligations.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

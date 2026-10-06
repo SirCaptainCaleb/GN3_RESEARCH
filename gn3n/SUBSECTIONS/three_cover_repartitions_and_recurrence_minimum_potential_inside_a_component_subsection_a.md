@@ -44,3 +44,8 @@ Among triples of positive integers with fixed sum, the minimum of the sum of squ
 \{r+1,r+1,r\}.
 \]
 Strict decrease of \(\Phi\) must eventually stop, and it can stop at one of these profiles.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

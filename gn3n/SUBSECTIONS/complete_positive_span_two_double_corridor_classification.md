@@ -37,3 +37,8 @@ The first identity is the boundary reversal of epsilon_a=0; the second is epsilo
 There is a further immediate simplification. In case (i), P has exactly two vertices, so replace it by the tight three-vertex path (p_2,p_1,x). This absorbs x without changing Q. The full determining span is now partitioned into this tight three-path, the long tight path Q, and the remaining vertex y, with h(q_2,q_1,y)=1. Case (ii) symmetrically absorbs y into (q_2,q_1,y), leaving P and x. These are genuine three-path covers of the span, not two-path covers: absorption of the remaining endpoint or a compatible repartition is still needed.
 
 In case (iv), both P and Q have order at least three. It is the only disjoint double type which retains two substantial tails and both reversed endpoint attachments. Consequently the remaining local repair separates into (a) the tight three-path plus one long path plus one reversed endpoint, and (b) two long tight paths plus two reversed endpoints. Neither follows merely from the unrooted finite two-cover theorem. Any eventual protected surgery must also check all boundary-crossing positive windows and global compatibility of its carriers.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

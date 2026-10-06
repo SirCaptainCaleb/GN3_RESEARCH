@@ -100,3 +100,8 @@ Consequently the first possible missing-facet \(3\)-homology at rank four is not
 Every vertex of such a component is edge-orderable, because every non-Hamiltonian five-vertex boundary tournament is edge-orderable. Hence a surviving rank-four obstruction is a family of edge-ordered bad \(K_5\)'s equipped with a deterministic one-label exchange dynamics.
 
 This is scale-independent. The next closure target is to show that boundary-tournament edge-order structure forbids such a saturated bad-five component in the relative carrier arising from a minimum counterexample, or that mixed larger Hamiltonian supports fill its unique homology class.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -47,3 +47,8 @@ Thus boundary coherence is implied by the following finite statement:
 The existing small-set density bounds nearly force this by counting. For each of (x,y), the family of bad four-sets (Csubset A) for which (C+x) (respectively (C+y)) is non-Hamiltonian is strongly sparse by the four-of-six/Johnson-density theory. The ten-vertex two-cover theorem also guarantees many complementary Hamiltonian (5|5) partitions. The remaining issue is an extremal-overlap question: rule out the possibility that every Hamiltonian (Bsubset A) has its complementary (C=Asetminus B) bad for at least one of (x,y).
 
 This is a sharper finite target than arbitrary endpoint-compatible terminal surgery. It asks for one common Hamiltonian side across two one-vertex extensions of a nine-vertex core and is naturally suited to the existing Johnson-density/equality machinery in [[extremal01]].
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

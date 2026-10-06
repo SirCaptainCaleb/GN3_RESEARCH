@@ -17,3 +17,8 @@
 ## Development
 
 Let X|P|Q be as in the five-component endpoint-core theorem, with |X|=5 and both tails of order at least six. For an endpoint e let G_e be the set of r in X such that (X-{r}) union {e} is Hamiltonian. Since each G_e has order at least three, the two endpoint sets of each fixed tail intersect. Hence for each tail T=(t_1,...,t_m) there is r_T in X for which both (X-{r_T}) union {t_1} and (X-{r_T}) union {t_m} are Hamiltonian. For each of these two endpoint exchanges, either the complementary one-vertex extension is Hamiltonian and gives the neutral repartition from the preceding theorem, or it is non-Hamiltonian and the endpoint-replacement truncation theorem makes r_T noninsertable everywhere in the corresponding inherited truncation. Therefore, if both neutral exchanges against T fail, then r_T reverses the first two exposed edges at both ends: h(t_2,t_1,r_T)=h(t_3,t_2,r_T)=1 and h(r_T,t_m,t_{m-1})=h(r_T,t_{m-1},t_{m-2})=1. Thus every long tail independently admits a neutral exchange or a single two-layer synchronized reversing label. The labels supplied for P and Q may coincide or differ.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

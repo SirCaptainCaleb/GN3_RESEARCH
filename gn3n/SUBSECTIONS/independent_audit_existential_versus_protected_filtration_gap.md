@@ -64,3 +64,8 @@ and the claimed grand-conjecture closure do not follow.
 The current composition also invokes a “usual Coxeter-cell/acyclic-carrier extension” after checking commuting squares and braid hexagons. Rank-two Coxeter relations do give path-independence for chamber transport, but an acyclic-carrier extension over the whole separator additionally requires a compatible contractible/acyclic target carrier for every higher-dimensional source face. The existing rank-two notes construct such carriers residue-by-residue; they do not presently prove the required higher-face carrier condition. This is a second, potentially independent global obligation unless a precise Coxeter-carrier theorem is stated and its hypotheses verified here.
 
 Thus the endpoint-exclusion repair closes the **local maximal braid**, but Article VII remains globally unclosed at the protected-filtration / higher-carrier step.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

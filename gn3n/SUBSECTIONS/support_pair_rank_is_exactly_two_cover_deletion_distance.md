@@ -152,3 +152,8 @@ Consequently:
 This suggests that the late minimum-pair machinery should be re-read as candidate fillings for the **last two Smith equations**, rather than as endpoint-surgery lemmas. Hole-containing four/five seeds, minimum-hole synchronization, and seed-preserving maximalization are potentially useful precisely when they create mixed support-pair chains that fill those final codimension-one and codimension-zero obstructions.
 
 The abstraction is earlier than the deletion-cover compatibility frontier: once deletion distance is introduced, support-pair rank can replace path-order compatibility as the primary closure coordinate.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

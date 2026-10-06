@@ -118,3 +118,8 @@ This gives a new global structural alternative:
 - or there is a proper permutahedron face with a common protected radius, paired opposite nearest-violation labels at the first bad distance, and locally thin ordered-partition blocks around the auxiliary vertex.
 
 The conclusion uses no minimum-counterexample hypothesis and no disturbance analysis.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

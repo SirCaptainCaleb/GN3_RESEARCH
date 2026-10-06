@@ -53,3 +53,8 @@ tight whenever the displayed vertices exist. Thus
 (q_2,q_1,x,p_r,p_{r-1})
 \]
 is a tight path. The problem is therefore to reduce a spanning ordering of defect span \(3\) to one of defect span at most \(2\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

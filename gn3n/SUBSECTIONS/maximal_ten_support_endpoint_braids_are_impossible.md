@@ -62,3 +62,8 @@ Combining this with the previous rank-two normalization gives the terminal edge-
 Reversal gives the identical statement at the opposite endpoint. Therefore the bounded terminal surgery choices are coherent across every rank-two Coxeter residue. Together with the existing acyclic-carrier reduction, they extend equivariantly over the separator (S_r) into (Y_{r+1}).
 
 This closes the finite square/hexagon compatibility frontier without same-face escape, minimum-counterexample arguments, or disturbance arguments.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

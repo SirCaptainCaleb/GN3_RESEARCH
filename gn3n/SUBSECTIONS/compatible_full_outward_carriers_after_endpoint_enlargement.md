@@ -60,3 +60,8 @@ Consequently, if all outward mutual-pair faces are to be sent to whole outward f
 These exit values concern separate boundary-reversal orbits from the old pair prescriptions and fixed suffix conditions; either value is consistent with the original protected four-cycle construction. The exit condition therefore cannot be inferred from that local construction alone.
 
 This last statement obstructs this particular whole-face merging proof, not every possible filling in the enlarged locus. Other fillings, further positional enlargements, or a genuinely global hypothesis remain possible.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

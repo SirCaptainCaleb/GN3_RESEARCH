@@ -53,3 +53,8 @@ For a commuting square, if at most one generator meets an endpoint of the termin
 Thus a support-saturating obstruction can occur only at ambient order \(11\) or \(12\).
 
 Therefore all non-saturating rank-two residues are formally closed by the existential carrier geometry. The only possible remaining cases are a support-saturating order-11 braid and a support-saturating order-11 or order-12 two-ended square. Reversal exchanges the two endpoint orientations, so only one orientation of each residue type needs analysis.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

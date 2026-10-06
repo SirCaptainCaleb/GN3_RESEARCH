@@ -69,3 +69,8 @@ Verification. The word specifies one orientation of each reversal pair, so it de
 Scope. This example has a two-cover and is not a grand-conjecture counterexample. It also lacks the full ambient order 2r+1 of the odd residue (here r=5 and n=6). It proves that local reversed-seam information, even accompanied by Hamiltonicity of every r-subset and non-Hamiltonicity of the (r+1)-set itself, does not suffice for augmentation. Any valid ambient theorem must actually use the exterior balanced supports or other global counterexample hypotheses.
 
 The common-core-order augmentation above remains valid. Reversal of a four-core cannot be silently treated as preserving that required order agreement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

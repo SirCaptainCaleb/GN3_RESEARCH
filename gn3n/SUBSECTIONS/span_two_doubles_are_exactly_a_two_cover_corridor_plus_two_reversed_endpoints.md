@@ -96,3 +96,8 @@ is not expected: those two relations leave too much boundary-tournament freedom.
 and seek a repartition of the resulting eight-vertex interface that either absorbs (x,y) or exposes compatible ordered pairs for the two untouched tails.
 
 This is now a bounded interface theorem, independent of the length of the reflected-double span.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

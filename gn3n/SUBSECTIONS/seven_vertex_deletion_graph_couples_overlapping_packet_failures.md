@@ -33,3 +33,8 @@ Saturation certificate. Suppose distinct i,j,v lie in W, and v is a bridge for s
 For neighboring mobile-cut packets, their union has order seven whenever the packets differ by one corridor vertex. The same graph therefore tests their consistency. However the third packet S_v need not automatically have a two-tail complement: its removal may introduce an additional fragment or leave an exterior vertex outside the packet. The certificate requires the actual cover in D_v; it cannot be inferred by simply deleting an internal vertex of a tight path.
 
 This is a structural compatibility condition across overlapping packet tests. It supplies sufficient repairs when the specified three tests exist. It does not exclude all maximum-degree-two deletion graphs, nor does it reduce the whole unbounded corridor theorem to a seven-vertex computation.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

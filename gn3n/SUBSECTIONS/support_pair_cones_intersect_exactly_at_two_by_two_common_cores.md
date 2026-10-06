@@ -100,3 +100,8 @@ Accordingly a more closure-directed reformulation of the fixed-hole/topological 
 The latter is the genuine carrier-degeneration event. It should be compared with the late four-label protected-loop and endpoint-rectangle machinery; ordinary order disagreement by itself is not a degeneration in \(\mathcal P(H)\).
 
 This lemma is order-free, scale-independent, and applies immediately after minimum-counterexample reduction to \(\kappa_2=1\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

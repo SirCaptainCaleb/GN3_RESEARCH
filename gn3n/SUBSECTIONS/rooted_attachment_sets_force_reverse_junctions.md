@@ -78,3 +78,8 @@ For the canonical six-packet of the rigid \(010\)-island and for each six-packet
 3. a coherent reverse-junction chain reaching an exterior position, where the corresponding status change is a strictly farther positive witness or supplies an enlarged-window repair.
 
 The third alternative is not proved here. The point is that a genuine two-deletion residue no longer has arbitrary packet-tail interaction: all possible short joins are converted into explicit reverse triples on a bounded rooted interface.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

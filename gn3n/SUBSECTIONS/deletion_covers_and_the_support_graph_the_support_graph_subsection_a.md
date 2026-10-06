@@ -35,3 +35,8 @@ Two selected covers are support-compatible exactly when their edges of \(J\) sha
 Conversely, write \(F_a=A\mid B\) with \(b\in A\), and assume that the restrictions of \(F_a,F_b\) to \(H-\{a,b\}\) have the same support partition. Since neither component of a deletion cover is a singleton, the two restricted classes are \(A-\{b\}\) and \(B\). In \(F_b\), the restored vertex \(a\) must join one of them. If it joins \(B\), then \(A\) and \(B\cup\{a\}\) are disjoint Hamiltonian supports covering \(H\), a contradiction. Hence it joins \(A-\{b\}\), and \(B\) is a support of both selected covers. \(\square\)
 
 Thus the graph of support compatibility is the line graph \(L(J)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

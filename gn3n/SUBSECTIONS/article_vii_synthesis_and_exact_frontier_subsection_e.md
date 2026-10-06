@@ -99,3 +99,8 @@ Accordingly the structural frontier after the cubic reduction is:
 - (kge2): exploit equal-side holes and the universal-hole / anchored-role topology;
 - (k=1): analyze the bounded four-coordinate carrier together with direct side-transfer edges;
 - root-only odd moments need not be pursued further.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

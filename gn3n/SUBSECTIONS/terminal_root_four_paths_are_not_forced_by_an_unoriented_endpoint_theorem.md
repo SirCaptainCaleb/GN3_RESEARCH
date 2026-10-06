@@ -33,3 +33,8 @@ This construction does not refute rooted surgery under the actual protected-witn
 A valid rooted-interface lemma must either exploit additional relations forced by the selected witness and the frozen corridor, allow an orientation-adaptive repartition, or allow movement of the interface. Counting three unoriented path-neighbors does not guarantee even one terminal-root four-path.
 
 The elementary concatenation criterion remains valid whenever a terminal-root path is actually available: if \(K=(k_1,k_2,t,x)\), \(T=(x,y,z,\ldots)\), and \(h(t,x,y)=1\), then \(K\) concatenated with \(T-\{x\}\) is tight. The missing step is producing \(K\) in that orientation under the relevant interface assumptions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

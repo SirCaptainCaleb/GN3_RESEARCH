@@ -141,3 +141,9 @@ where \(Z\) ranges over all oriented Hamilton cycles of the complete graph on \(
 Conversely, concatenate the displayed tight orders in any path cover and close them cyclically. Cutting the joining edges recovers that cover; for a single Hamilton path cut only its added closing edge. Hence minimizing the preceding quantity over all cyclic orders gives precisely \(\operatorname{pc}(H)\). \(\square\)
 
 The equivalent cyclic target is therefore to cover every blue transition by two cut positions. It allows separated short blue components, as the four-class construction requires. The color-component count alone loses this distinction.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

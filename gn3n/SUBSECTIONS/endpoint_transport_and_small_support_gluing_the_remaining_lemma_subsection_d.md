@@ -468,3 +468,9 @@ The valid preceding statements remain unchanged. In particular:
   is indeed a tight five-path; if the opposite orientation ((p_m,x,q_1)) is tight, that five-path is unavailable and this is a genuine separate branch.
 
 Thus future arguments at the two cross corners must retain the central orientation as case data rather than infer it from the failure of the deletion-cover concatenation.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 8

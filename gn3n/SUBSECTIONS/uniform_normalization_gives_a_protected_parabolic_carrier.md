@@ -61,3 +61,8 @@ S_rlongrightarrow X_{r+1}.
 This removes the separate “rank two does not imply higher-dimensional acyclicity” objection. The remaining issue is now sharply localized: prove that each protected separator face can be covered by a **uniform normalization** satisfying assumptions 1--3, or prove that the finitely many possible shifts of the ten-window can be patched by protected overlaps.
 
 For a fixed window with slack, [[rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains]] supplies assumptions 1--3 locally. The maximal ten-support mixed braid is excluded by [[maximal_ten_support_endpoint_braids_are_impossible]]. What is not yet proved is simultaneous compatibility of the window shifts when one higher-dimensional source face meets both endpoint regimes.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

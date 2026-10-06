@@ -78,3 +78,8 @@ This example is not a counterexample to the grand theorem. It diagnoses an overs
 The unique-face collapses in subsection 258 may remove every top facet. If that happens there is no nonempty cut, no source upset, and no inclusion-minimal source from which to extract a critical pair. Thus even a correct nonempty-core-to-critical-pair theorem would not by itself reduce the entire grand conjecture to that pair. One must either prove that a relevant nonempty core survives or close the all-collapsed branch independently.
 
 No global closure is claimed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

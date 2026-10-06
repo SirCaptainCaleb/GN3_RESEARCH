@@ -45,3 +45,8 @@ At order twelve only u=v=3 remains, with corridor profile 5|5. The previously al
 For that order-twelve residue every six-subset of J must be non-Hamiltonian: a Hamiltonian six-subset would leave a six-vertex complement, which becomes Hamiltonian after one deletion and gives kappa_2<=1. More generally every tight path in an order-n genuine two-deletion instance has order at most n-7.
 
 These are necessary conditions on a fixed instance. They neither impose an upper bound on |J| nor eliminate the remaining island 5|5 residue. The kappa_2=1 repair and the protected carrier-gluing theorem remain open.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

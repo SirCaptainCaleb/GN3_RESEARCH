@@ -22,6 +22,8 @@ It does not justify reversing a path or cyclically rotating a triple. Every recu
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

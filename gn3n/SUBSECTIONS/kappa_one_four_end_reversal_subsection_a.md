@@ -55,3 +55,8 @@ Thus
 are all tight.
 
 This conclusion uses only deletion-distance one, minimum-hole synchronization inside the fixed graph, and the exact cyclic defect-cover identity. It uses neither minimum-counterexample induction nor path-disturbance descent.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -73,3 +73,8 @@ A_c=C\cup\{c\}.
 Then the triangle either already exposes an order disagreement, a positioned reversal, a bounded Hamiltonian four-support, or a Hamiltonian \((r+1)\)-support obtained by adjoining two exchange labels; otherwise all three supports arise by same-side endpoint extensions of one Hamiltonian \((r-1)\)-core \(C\).
 
 Thus a quiet recurrent simple-root Johnson triangle has a canonical rooted common core.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

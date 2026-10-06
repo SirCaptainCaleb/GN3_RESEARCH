@@ -45,3 +45,8 @@ For the two-skeleton program, distant generator pairs are therefore automatic. O
 can carry a new protection obstruction.
 
 Hence the unresolved two-skeleton compatibility problem is a finite local interface problem. No unbounded corridor can enter through interaction of separated generators.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

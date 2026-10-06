@@ -31,3 +31,8 @@ Therefore any relative-order disagreement between two tight paths of order at le
 For the five-deletion paths used in the Article VII six-label packets, the Hamiltonian support has order at most six.
 
 Hence [[the_four_endpoint_incidence_system_cannot_remain_featureless]] has only two essential bounded outputs: a Hamiltonian support of order at most six, or a positioned reversing triple. Order disagreement is not an independent frontier object.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -94,3 +94,8 @@ b_S=b_C=2.
 Thus each of the two reseed components contains exactly one \(S\)-block and exactly one \(C\)-block, joined by a single crossing edge. Any larger transition count is an even stronger block-interleaving disturbance.
 
 This conclusion uses only the path-cover transition identity and the distinction between support-preserving and support-splitting reseeds; no path reversal, cyclic permutation, or minimum-counterexample induction is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

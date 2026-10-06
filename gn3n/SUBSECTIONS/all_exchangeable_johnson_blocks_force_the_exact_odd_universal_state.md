@@ -66,3 +66,8 @@ Equivalently every vertex is in the universal fixed-hole branch: for fixed x, ev
 Therefore the all-exchangeable cubical obstruction is not a new general family. It is exactly the old odd universal balanced state, now derived canonically from minimum-degree cubical parity.
 
 The remaining work in this branch is to eliminate that universal odd state using the later Johnson-order disagreement / isolated-root machinery.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

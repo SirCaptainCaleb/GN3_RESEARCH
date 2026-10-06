@@ -108,3 +108,8 @@ h(p_s,x,q_1)=1.
 Hence each hole vertex carries two independent cross-end transport bits. Together with the four guaranteed end reversals, every minimum hole has a six-relation endpoint signature. These cross-end tests can be combined with the fixed-pair signature classes and the finite root-advance theorem; they are not merely arbitrary orientation data.
 
 This addendum records the corrected local consequence and explicitly rejects the invalid inference that a displayed tight path may be reversed wholesale.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

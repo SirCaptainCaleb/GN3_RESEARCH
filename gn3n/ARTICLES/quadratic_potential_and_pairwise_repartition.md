@@ -5,6 +5,8 @@
 - Composition version: 1
 - Stale: False
 - Composed through revision: 1083
+- Sections existing when composed: 11
+- Sections now: 11
 
 ## Composition
 

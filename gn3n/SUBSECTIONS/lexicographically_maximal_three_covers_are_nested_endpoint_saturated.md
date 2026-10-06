@@ -55,3 +55,8 @@ h(a_2,a_1,z)=h(z,a_r,a_{r-1})=h(b_2,b_1,z)=h(z,b_s,b_{s-1})=1.
 So a lexicographically maximal spanning three-cover is nested endpoint-saturated: the smallest path is trapped outside both larger paths, while the middle and smallest paths are trapped outside the largest.
 
 No small-order bound, cyclic rotation, path reversal, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -36,3 +36,8 @@ Its singleton lift
 P\mid Q\mid\{x\}
 \]
 is a vertex of \(\mathcal R(H)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

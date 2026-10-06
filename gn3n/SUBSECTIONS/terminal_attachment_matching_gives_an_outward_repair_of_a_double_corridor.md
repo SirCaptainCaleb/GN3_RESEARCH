@@ -31,3 +31,8 @@ Failure leaves the elementary Hall alternatives: one path has no terminal attach
 The obstruction in [[protected_mixed_doubles_can_forbid_simultaneous_preservation_of_both_tail_pairs]] is repaired by this criterion: its construction has h(u,v,e)=1 for all distinct u,v in the corridor and e in {x,y}, so its terminal attachment graph is complete. In fact (P,x) and (Q,y) are an explicit spanning two-cover of that construction. The counterexample therefore defeats simultaneous preservation of both old tail pairs, while exhibiting exactly why moving the exterior vertices to the terminal ends succeeds.
 
 For protected face carriers, this repair can be frozen on the whole interval J and combined with an inherited mask of exterior components disjoint from J, as in [[frozen_window_carriers_and_separator_relabeling_require_precise_invariants]]. The resulting product face is protected and contractible on a fixed ambient source face. Since J may be unbounded, this does not restore a bounded-rank interaction claim. Nor does it supply compatible choices of matching, cut, or repaired order across distinct ambient zero faces. Those obligations remain open.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

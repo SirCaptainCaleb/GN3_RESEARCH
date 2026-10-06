@@ -21,3 +21,8 @@ The conceptual analogy with antipodal cube-coloring problems remains useful but 
 The strengthened Norine-style intuition—seek an antipodal path whose coordinate directions are all used exactly once—matches exactly the role of geodesicity here. What is special in the present problem is that the coloring is induced by consecutive triples of directions and therefore naturally lives on the memory lift rather than on the bare cube.
 
 The strongest transferable idea is thus not a literal theorem statement but the topological architecture: antipodal symmetry, a sphere of geodesic order types, and a parity/fixed-point mechanism that should prevent an antipodal separation compatible with all local labels. The reachability corridor identifies the concrete separation that such a mechanism would need to forbid.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

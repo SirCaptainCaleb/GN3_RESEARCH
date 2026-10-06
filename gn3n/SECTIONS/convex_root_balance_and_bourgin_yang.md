@@ -42,6 +42,8 @@ The topology therefore acts directly on partial two-cover size profiles, not mer
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

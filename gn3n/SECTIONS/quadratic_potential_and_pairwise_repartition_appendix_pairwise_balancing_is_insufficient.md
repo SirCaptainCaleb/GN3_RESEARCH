@@ -14,6 +14,8 @@ Suppose one attempted to prove that every imbalanced two-coverable induced subto
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

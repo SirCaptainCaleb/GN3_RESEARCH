@@ -25,3 +25,8 @@ deg_in(R)=|U|-d+1
 exactly. Antipodality then gives a source with precisely this degree, and minimality of d yields |U|>=2d-1. Proper-induced two-coverability gives |U|<=2d-2 if U is proper, the required contradiction.
 
 No change to the spanning-block or odd-middle-layer conclusions is required. Only the inference from the lower-bound degree at K must be replaced by the exact degree at R.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

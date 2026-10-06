@@ -27,3 +27,8 @@ Consequently, in [[balanced_omission_swap_gives_descent_or_selected_singleton_re
 Thus the zero-root state defines a balance-preserving omission-swap component: every hole label reachable by neutral omission swaps has a selected balanced deletion cover, and all such singleton lifts lie at the common absolute minimum 2r^2+1.
 
 In particular any neutral recurrence starting from the zero root can be studied entirely inside the uniform-size support graph whose vertices are r-sets and whose selected cover edges join disjoint r-sets with one omitted label. Containment alternatives disappear in this component. The remaining exits are genuine two-cover, order/reversal disturbance, bounded Hamiltonian support with two-coverable complement, or escape to a new balanced omitted label.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -77,3 +77,8 @@ cannot be quiet once three exterior roots are present: a bounded Hamiltonian fou
 In particular the order-seventeen \(K_3\sqcup K_3\) exception and the later seven-support growth alternative are unnecessary for the bounded-disturbance dichotomy. The common-core density hierarchy may still be useful for other purposes, but it is not needed to force a bounded Hamiltonian disturbance.
 
 This proof is purely structural and uses only the fixed-pair orientation-class theorem; it replaces the finite MILP certificate in this application.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

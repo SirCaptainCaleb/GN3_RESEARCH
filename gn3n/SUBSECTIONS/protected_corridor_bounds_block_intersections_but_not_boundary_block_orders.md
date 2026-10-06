@@ -25,3 +25,8 @@ Consequently every block wholly contained in C has order at most four, and its p
 This is a bound on the intersection with the protected corridor, not on the full order of a boundary block. Large blocks extending outward may meet a determining window and change its predicate; they cannot be declared exterior sign-neutral factors solely because they fail to couple both reflected windows. The explicit construction in [[arbitrarily_large_boundary_blocks_can_change_the_selected_positive_witness_sign]] supplies that distinction.
 
 Thus the source face decomposes into bounded interior block factors and at most two potentially unbounded boundary factors. No bound on total rank follows: there may be many interior factors, and either boundary factor may itself have arbitrarily large rank. To obtain a bounded non-product interaction theorem, one must prove that the chosen repair and transport factor through the boundary-block data in a compatible way; the intersection inequality alone does not establish it.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

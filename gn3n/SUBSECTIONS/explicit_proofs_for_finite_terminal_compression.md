@@ -170,3 +170,8 @@ For span-two witnesses, the two five-vertex determining windows have reflected s
 Hence every terminal support has order at most ten. The established eight-vertex and ten-vertex two-cover theorems then give path-cover number at most two on every terminal support.
 
 This repairs the proof-material gap in the finite-terminal compression itself. It does **not** by itself settle the separate protected-carrier iteration problem for centered/overlapping terminal faces.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

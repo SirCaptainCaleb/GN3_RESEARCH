@@ -106,3 +106,8 @@ Therefore:
 The (Q	o P) seam gives the symmetric opposite-side certificate.
 
 This uses only literal boundary flips from endpoint-deletion criticality and the audited parallel-middle/common-reverser lemmas. No cyclic rotation or path reversal is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

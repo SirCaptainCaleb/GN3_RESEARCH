@@ -43,3 +43,8 @@ Thus:
 This strengthens [[maximal_ten_support_endpoint_braids_are_impossible]]: the same persistence mechanism excludes endpoint terminal sign flips for both the order-ten (start separation four) and order-nine (start separation three) reflected-alternating cases.
 
 For the protected-filtration repair, this removes the only near-maximal endpoint sign-flip sites that motivated switching between the two ten-position normalizations of an order-nine determining interval. Any actual terminal sign-flip edge lies in the overlap of the reflected determining windows and is internal to either normalization window. The remaining global issue is therefore not support exchange at an endpoint sign-flip edge, but proving a compatible protected carrier for larger mixed faces while collapsing sign-neutral directions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

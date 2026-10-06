@@ -56,3 +56,8 @@ n=2d-1,
 with every (d-1)-subset Hamiltonian and every d-subset non-Hamiltonian.
 
 Thus all Type I/exterior-label branches are eliminated scale-independently. The sole remaining cubical-core residue is the spanning odd universal balanced state.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

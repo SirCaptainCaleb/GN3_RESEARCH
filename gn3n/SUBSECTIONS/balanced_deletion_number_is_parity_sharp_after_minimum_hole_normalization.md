@@ -113,3 +113,8 @@ For \(\kappa_2(H)=2\), the hard branch therefore splits canonically:
 - if \(|V(H)|\) is odd, there is a balanced three-deletion state obtained by adjoining one endpoint of the long side to a genuine minimum pair.
 
 No topology is needed for this parity-sharp existence statement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -51,3 +51,8 @@ R=(a_0,\ldots ,a_{\lambda-3},y,a_{\lambda-2}).
 Delete the old endpoints and combine the corresponding left and right forms. Every consecutive triple is inherited from \(L\), \(R\), or the middle of \(A\), so the resulting order is Hamiltonian. \(\square\)
 
 Thus a difficult pair of opposite endpoint replacements must change the inherited order. Comparing deletion covers at \(a_0\) and \(a_{\lambda-1}\), one obtains either a reversed surviving edge of \(A\), different support partitions on the common double deletion, or an order disagreement on a common support.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

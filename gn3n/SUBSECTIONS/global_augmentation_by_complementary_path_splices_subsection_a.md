@@ -258,3 +258,8 @@ This inequality by itself does **not** imply that either path contains many dirt
 When dirty positions do occur, Lemma 6 converts each of them into a displayed-edge reversal through the deleted vertex. Thus a future density argument may legitimately use dirty positions as reversal certificates, but the clean-grid inequality alone supplies no such density.
 
 The unresolved global augmentation problem is therefore to supplement Lemma 5 with a valid source of clean-index lower bounds, or else to exploit the dirty reversals produced by Lemma 6 without assuming that they are numerous.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 6

@@ -33,3 +33,8 @@ Consequently, if no two-cover, strict decrease, or displayed end-edge reversal o
 - whenever \(x\) is an endpoint in either augmented support, it is always on the same side in both.
 
 The second possibility is governed by insertion positions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

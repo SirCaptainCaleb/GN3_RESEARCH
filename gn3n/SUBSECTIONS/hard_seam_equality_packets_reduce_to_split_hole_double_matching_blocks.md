@@ -102,3 +102,8 @@ So the hard seam equality branch is reduced to:
 - one of two split-hole double-matching six-label normal forms.
 
 This reduction uses only the exact four-good equality packet, the already-proved non-Hamiltonicity of the cross-tail core \(D\), and the six-set deletion-graph theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

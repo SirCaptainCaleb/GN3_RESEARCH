@@ -131,3 +131,8 @@ So the matching-block extension desert found earlier is **not** a genuine rank-t
 This is the first place where a later local theorem genuinely obsoletes an earlier frontier rather than merely refining it.
 
 The next possible obstruction is rank four, where an extreme active block may have order five. There the analogous boundary is an \(S^3\), and the six-set theorem guarantees at least four Hamiltonian five-deletions but not automatically all five replacement facets.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

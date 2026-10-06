@@ -82,3 +82,8 @@ This sharpens [[minimum_pairs_have_a_cross_boundary_hole_containing_seed_with_in
 The seed is especially suited to [[seed_preserving_maximalization_retains_absolute_endpoint_nonaugmentability]]: one may maximalize while retaining both minimum-hole labels and this endpoint-rooted four-support.
 
 Alternatively, maximizing only among hole-containing Hamiltonian supports whose complements remain two inherited intervals of the original (P|Q) preserves the original corridor geometry throughout.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

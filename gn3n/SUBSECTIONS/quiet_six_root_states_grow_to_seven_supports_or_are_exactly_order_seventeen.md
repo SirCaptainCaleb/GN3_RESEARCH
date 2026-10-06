@@ -116,3 +116,8 @@ A quiet surviving carrier loop therefore has one of two sharply separated forms:
    \]
 
 Thus order seventeen is the unique no-degree-three obstruction to the next common-core growth step. This gives an explicit finite target for the nongrowing branch without using cyclic rotation, path reversal, or unrestricted minimum-order reasoning.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

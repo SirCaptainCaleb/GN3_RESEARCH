@@ -60,3 +60,8 @@ What remains valid is only:
 A new theorem must use these hooks in their actual orientation. Proposition 1.1 cannot be invoked unless independent middle-position triples (h(c_{i+1},v,c_i)) are proved.
 
 No claim of a (5|4) packet is retained.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

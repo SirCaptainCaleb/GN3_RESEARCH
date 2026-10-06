@@ -39,3 +39,8 @@ The remaining reverse/reverse case is
 Its contiguous subpath R=(U,v,T) is tight and covers the complement of S=A+r+s. Hence this branch has one long tight path beside a six-vertex packet, rather than two unjoined tails. Its resulting absorption conditions are stated in [[reverse_shared_bridges_reduce_to_one_tight_path_and_a_six_vertex_packet]].
 
 These conclusions are conditional on the shared bridge existing. They do not guarantee its presence, rule out the Hamiltonian-common-core residue, or supply global protected-carrier compatibility.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -42,3 +42,8 @@ y:A\to B,\quad x:C\to A,\quad y:B\to C.
 After six moves the support partition returns to the initial state. The first three states and their unused reverse moves show that both \(x\) and \(y\) initial-extend each of \(A,B,C\). The terminal-end case is symmetric.
 
 Now let \(T\) be a two-cover of \(A\cup B\cup C\). If there is an order disagreement, (1) holds. Otherwise let \(t\) be the number of edges of \(T\) joining different cores. If \(t=1\), the block-count identity gives one block in each core. One path of \(T\) is the concatenation of two whole cores and the other is the third core. Prepending \(x\) to the first path and \(y\) to the second gives a two-cover of \(H\), a contradiction. Thus \(t\ge2\). If \(t\ge3\), (2) holds. If \(t=2\), Section 3 gives (3) or (4). \(\square\)
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

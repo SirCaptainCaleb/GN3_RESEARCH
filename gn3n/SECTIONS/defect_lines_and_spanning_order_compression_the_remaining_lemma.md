@@ -2021,6 +2021,8 @@ Consequently the mixed universal pattern has no independent terminal geometry: i
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 6
+- Subsections now: 6
 
 ## Development tree
 

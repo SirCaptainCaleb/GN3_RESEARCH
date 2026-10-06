@@ -62,3 +62,8 @@ Accordingly the next theorem should be formulated jointly rather than duplicated
 Let H have an order with exact root zero, first status 0 and last status 1, such that deleting the two endpoint vertices leaves a two-cover. Under the additional reflected-positive protection inherited from the local-witness carrier, either H has a two-cover or the configuration admits an enlarged-window/protected-carrier bypass.
 
 A proof of this theorem would simultaneously remove the unbounded reflected-double branch from the positive filtration and the symmetric zero-root alternative from the exact-root route.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

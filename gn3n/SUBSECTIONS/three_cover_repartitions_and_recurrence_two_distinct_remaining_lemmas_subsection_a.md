@@ -27,3 +27,8 @@ A proof rules out recurrence in one component.
 A proof rules out congestion of many deletion roots without requiring a secondary invariant on every equal-\(\Phi\) move.
 
 These statements are genuinely different. Lemma A orients one trajectory. Lemma B uses several rooted neighborhoods simultaneously.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

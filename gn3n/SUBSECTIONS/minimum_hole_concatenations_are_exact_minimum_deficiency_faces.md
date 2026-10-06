@@ -54,3 +54,8 @@ and the four central status positions have the form
 Thus a symmetric genuine two-deletion state is already an exact minimum-deficiency zero-root state; no second topological passage is needed to obtain equality of the deletion block with kappa_2.
 
 This is a direct sharpening of the deletion-distance identity and uses only minimality of the deletion set, not minimum-counterexample calculus.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

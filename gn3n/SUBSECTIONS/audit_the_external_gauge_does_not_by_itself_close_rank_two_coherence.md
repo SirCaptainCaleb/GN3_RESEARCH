@@ -29,3 +29,8 @@ The safe conclusions preceding that argument remain available. In particular, [[
 For the side-sharing compatibility model, the residual braid has an exact common-core form. If one assigns one (5|5) cover to each of the three supports and requires adjacent supports to share an entire Hamiltonian side, then cyclic compatibility forces one Hamiltonian five-set B subset T to be common to all three covers. Writing C=T minus B, the required finite statement is therefore: B, C+ab, C+ac, and C+bc are all Hamiltonian. Pairwise one-vertex-exchange compatibility alone cannot bypass this cyclic obstruction.
 
 Accordingly the grand-conjecture frontier remains the maximal-support A_2 braid, not the external-gauge lemma.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

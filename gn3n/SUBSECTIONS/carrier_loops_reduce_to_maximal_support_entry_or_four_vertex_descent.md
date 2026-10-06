@@ -31,3 +31,8 @@ Hence every surviving carrier loop has the exact structural fork:
 The current research restriction treats the second item as a reduction, not standalone closure.
 
 This supersedes the quiet common-core density residue for purposes of bridging the carrier loop to the combinatorial frontier: three exterior roots already force the required bounded four-support analytically.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

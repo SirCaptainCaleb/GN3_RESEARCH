@@ -52,3 +52,8 @@ r_1\ne r_2,\qquad
 (Y-\{r_i\})\cup\{e_i\}\text{ Hamiltonian}.
 \]
 Thus the rooted five-component handoff reduces further from a hole/nonhole dichotomy to synchronization of at most three ordinary deletion labels across the exposed tail endpoints.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

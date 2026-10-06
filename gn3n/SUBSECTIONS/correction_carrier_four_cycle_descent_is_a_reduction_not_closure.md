@@ -23,3 +23,8 @@ The valid theorem is the structural descent only. If Y is the five-label Hamilto
 Thus the loop produces one smaller no-two-cover state of order n-5 and four of order n-4.
 
 The stronger claim that this observation alone eliminates the carrier branch is withdrawn. Under the current research guidance, this hereditary descent is retained as a reduction and not used as a standalone closure argument.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

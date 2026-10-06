@@ -50,3 +50,8 @@ is tight, the central three vertices form a tight path. If it is non-tight, then
 whenever the displayed vertices exist.
 
 Thus every minimum-span ordering is a deletion-cover ordering whose central part is a Hamiltonian three-set or a Hamiltonian five-set.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -113,3 +113,8 @@ Hence the genuine two-deletion symmetric zero-root obstruction splits naturally 
 2. a **rigid 010-island residue**, with one canonical cut.
 
 The next finite local analysis should treat these separately.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

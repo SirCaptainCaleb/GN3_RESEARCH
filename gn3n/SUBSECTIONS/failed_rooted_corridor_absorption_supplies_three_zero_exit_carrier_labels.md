@@ -73,3 +73,8 @@ Thus the combinatorial and topological interfaces now coincide in one coordinate
 - the unresolved bridge is the **three-neighbor mutual-adjacency** condition for at least one candidate, or an alternative sequence of such replacements.
 
 This identifies the precise remaining information that an ordered packet-repartition theorem must produce.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

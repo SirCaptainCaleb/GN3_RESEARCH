@@ -102,3 +102,8 @@ No analogous third edge is forced by this length count alone: starting the inher
 The majority-coloring theorem supplies a maximum word beginning \((a,b)\) together with a genuine tight three-word ending \((b,a)\). Hence the hypotheses above occur in the odd uniform residue. The reversed-pair augmentation theorem prevents the fixed-terminal path from reaching order \(r\). Consequently the surviving odd-uniform branch contains a canonical large endpoint desert and a uniform two-edge reversal fan.
 
 This is stronger than merely saying that a reversed three-prefix failed to grow. Any closure argument may now attack the simultaneous family of forbidden endpoint roles, or combine the common two-edge fan with a second maximum-support order to force a seam. No spanning two-cover is claimed here.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

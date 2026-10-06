@@ -63,3 +63,8 @@ h(c_2,c_1,z)=1
 for every vertex \(z\) on a blocked left side, or its right-hand mirror. This is stronger than a single failed buffer and is genuinely information involving vertices outside \(J\).
 
 The next structural step must exploit the **family** of common reversers. One legitimate route is to build, from several blocked vertices, the full extension family required by the two-reverse-triples/common-core lemma; another is to combine the common reversers with the assisted-connector tests of [[exterior_assisted_packet_absorption_gives_an_outward_repair]]. What is not legitimate is to infer a Hamiltonian common core from one pair of reverse triples alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

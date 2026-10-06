@@ -35,3 +35,8 @@ H-4: (1,5,2,0,3);
 H-5: (2,4,1,0,3).
 
 Therefore full deletion-criticality of one bad support, even at order six, is not enough to eliminate the odd uniform residue. Any closure of that residue must use its ambient uniform threshold / complementary balanced supports / universal double-noninsertion, not merely the fact that each bad (r+1)-set has all r-deletions Hamiltonian.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

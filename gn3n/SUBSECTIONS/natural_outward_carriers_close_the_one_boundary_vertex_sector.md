@@ -52,3 +52,8 @@ For a proper sector Q, the theorem gives only
 the full separator's genus cannot be assigned to this sector without a separate argument.
 
 This result handles unbounded boundary blocks with one varying determining position. It does not require a bound on their Coxeter rank. The cases with two or more variable determining positions and the cases without same-face outward chambers remain outside its hypotheses. In particular the nine-isolated-chamber example prevents extending the proof by replacing single-vertex conditions with arbitrary triple conditions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

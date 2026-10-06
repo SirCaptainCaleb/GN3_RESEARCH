@@ -73,3 +73,8 @@ Fix two exposed endpoints \(u,v\). They are individually noninsertable into the 
 Thus every attempted two-endpoint enlargement either fails already in the local adjacent/one-separator tests, or any Hamilton comparison order on a related bounded support must change the inherited order on \(S\), producing exactly the order-disagreement interface used by the transport machinery.
 
 The maximal-support branch is therefore more rigid than the original endpoint statement: all four exposed complementary endpoints form a jointly nonaugmenting reservoir around the same Hamiltonian support.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

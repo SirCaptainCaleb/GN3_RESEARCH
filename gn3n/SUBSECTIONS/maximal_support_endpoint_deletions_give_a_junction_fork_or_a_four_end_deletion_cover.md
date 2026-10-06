@@ -33,3 +33,8 @@ Thus every exposed endpoint deletion of a maximal-support complement produces st
 In particular, the deletion-critical seam analysis is the non-Hamiltonian half of a more general minimum-counterexample endpoint dichotomy; the complementary Hamiltonian half is not featureless and enters the one-hole/four-end-reversal interface instead.
 
 No cyclic rotation or path reversal is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

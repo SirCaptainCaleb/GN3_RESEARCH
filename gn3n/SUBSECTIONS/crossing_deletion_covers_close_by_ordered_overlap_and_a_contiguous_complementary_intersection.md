@@ -42,3 +42,8 @@ No agreement of the full support partitions is assumed. All four common-domain i
 In a no-two-cover state, every pair of deletion covers therefore fails at least one of these geometric conditions: the two hole-containing paths do not meet in a common ordered terminal/initial block of length at least two, or the complementary intersection is fragmented in both remaining paths. This is a restriction on the actual dissimilar-cover interface, not a reduction to a bare bounded Hamiltonian support.
 
 The theorem is a closing criterion rather than a claim that every pair admits this geometry. Its useful next application is to crossing covers selected to maximize an ordered overlap and minimize fragmentation of the complementary intersection. Neither extremal objective alone is asserted to enforce the criterion.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

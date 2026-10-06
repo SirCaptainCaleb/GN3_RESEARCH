@@ -48,3 +48,8 @@ The desired strengthening is not yet proved. A useful target statement is:
 In the symmetric root-advance profile \(5|(s-1)|s\), if \(s\ge7\), both neighboring tails are long enough for the five-side/long-path theorem to apply on either side. Thus any surviving large-\(s\) obstruction must simultaneously realize the exceptional common-core alternative against both tails. This suggests a two-sided synchronization attack: intersect the two good-label sets supplied by the left and right five-side lemmas, then use the resulting shared four-core with four-of-six or prescribed-endpoint extension.
 
 This checkpoint deliberately does not assert that the two common-core alternatives synchronize automatically. Establishing that synchronization, or showing that failure forces a two-cover/root advance, is the next concrete elevation test.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

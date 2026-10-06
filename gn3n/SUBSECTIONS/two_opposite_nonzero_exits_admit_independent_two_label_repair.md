@@ -105,3 +105,8 @@ Hence the original \(C_4\) loop is null-homotopic.
 This is the two-vertex analogue of case (3) in [[a_four_cycle_has_an_exact_six_label_repair_classification_with_one_exterior_label]]. A single zero-exit exterior label can replace one nonzero-exit cycle vertex when it is mutually adjacent to that vertex and its two neighbors. When the two bad exit vertices are opposite, the two replacements commute: their triangle disks have disjoint bad vertices and do not require an edge between the new labels.
 
 Thus a protected four-cycle with two opposite nonzero exits admits an explicit seven-label repair once two such replacement labels are available.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

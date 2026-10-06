@@ -17,3 +17,8 @@
 ## Development
 
 In the matched-prefix-cut setting, let L=(...,u,v) be an isolated prefix in the 2x2 concatenation graph and let N_j=(a_j,b_j,...) be the two opposite tails. Each failed concatenation L N_j can fail only at h(u,v,a_j) or h(v,a_j,b_j). If h(v,a_j,b_j)=0 for both j, boundary flips give h(b_j,a_j,v)=1 for j=1,2, so the single carrier v reverses two disjoint initial edges a_1b_1,a_2b_2; the valid common-reverser lemma gives a Hamiltonian four-support. Otherwise for some j, h(v,a_j,b_j)=1. Since L N_j still fails, h(u,v,a_j)=0, hence h(a_j,v,u)=1. Thus a_j reverses the terminal edge uv of L, and the boundary-layer reversal theorem uses the already-tight h(v,a_j,b_j) to force the legal transfer L-v | (v,a_j,b_j,...). The isolated-tail case is symmetric. Therefore every matched-cut Hall obstruction yields either a Hamiltonian K4 or an explicit one-vertex endpoint transfer; it is not a terminal crossing-cover residue.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -45,3 +45,8 @@ Assuming a balanced deletion cover exists, a singleton lift has potential 2r^2+1
 This does not show that every neutral three-cover on that potential level has a singleton, or that every zero-root chamber has a one-vertex hole. The neutral recurrence conclusions must retain the exact hypotheses of the cited omission-swap lemma.
 
 Repair obligation outside the uniform residue: prove the existence of a deficiency-one zero-root chamber (equivalently, a balanced deletion cover) before applying the absolute minimum singleton-lift argument. This audit supplies no new global closure reduction.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

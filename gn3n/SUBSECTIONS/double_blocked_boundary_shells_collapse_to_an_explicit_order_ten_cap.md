@@ -39,3 +39,8 @@ Therefore every bidirectionally compatible genuine two-deletion core satisfies t
 The second alternative is stronger than a generic small-order reduction: its 5|5 cover is forced directly by the two six-shell equality relations, with one hole vertex on each five-side.
 
 The remaining obligation is anchored routing, not Hamiltonicity of the cap. One must repartition or order the two Hamiltonian five-sides so that the two neutral interiors can be threaded through them using the inherited oriented boundary edges. Four-end synchronization points those boundary edges in the reversing direction, so an arbitrary 5|5 cover of E is insufficient. Thus the blocked-blocked frontier is precisely a bounded order-ten endpoint-routing problem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

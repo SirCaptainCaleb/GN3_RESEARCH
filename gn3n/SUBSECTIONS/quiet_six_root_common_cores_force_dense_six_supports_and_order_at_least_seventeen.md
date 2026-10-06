@@ -97,3 +97,8 @@ A surviving mutual terminal-pair four-cycle therefore has one of two outputs:
    \]
 
 This is again independent of cyclic rotation, path reversal, and minimum-counterexample arguments.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

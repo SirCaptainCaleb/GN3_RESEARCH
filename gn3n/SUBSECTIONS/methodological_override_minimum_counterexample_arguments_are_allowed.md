@@ -37,3 +37,8 @@ Active Article VII work should therefore prefer arbitrary-order, structurally mo
 Minimum-counterexample arguments remain admissible only when the smaller-object step itself immediately contradicts another already-proved invariant and does not hand the unresolved theorem to an unspecified smaller graph.
 
 Accordingly, recent results whose essential step is generic minimality-to-pc<=2 are conditional diagnostics, not closure lemmas. The arbitrary-order seam and peeling results remain the active frontier.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

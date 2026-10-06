@@ -56,3 +56,8 @@ Consequently, if the repeated four-core accepts both endpoints of one tail, then
 If instead the repeated core accepts one endpoint of \(P\) and one endpoint of \(Q\), then either one corresponding hole-preserving exchange succeeds, or the same label \(r\) reverses a second-layer edge of each complementary tail.
 
 Thus failure of hole-preserving transport creates one synchronized ordinary reverser across exactly the tails on which the common four-core repeats.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

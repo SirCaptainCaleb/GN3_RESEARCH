@@ -20,6 +20,8 @@ Accordingly, every use of an endpoint in the main proof is tied to a displayed H
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

@@ -54,3 +54,8 @@ Therefore the currently justified isolated-block conclusion is asymmetric:
 In particular, for a strongly imbalanced three-cover, the Hall obstruction does not yet force a transfer out of the dominant component. The claimed strict quadratic descent remains conditional on eliminating the surviving \(x_1=x_2=0\) polarity by a valid boundary-tournament argument.
 
 This audit concerns only the polarity/directional claim. The basic four-path Hall obstruction theorem and the potential calculation for a transfer whose direction is already known remain valid.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

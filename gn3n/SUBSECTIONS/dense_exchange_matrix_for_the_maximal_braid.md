@@ -69,3 +69,8 @@ Thus a single bad member of the braid triple can always be removed while retaini
 If two of the three targets are bad, each bad target excludes at most one cell in every row. Therefore at least five of the fifteen swaps repair both bad targets simultaneously. The obstruction to a direct one-swap closure is now sharply localized: all such common repair cells could, in principle, lie among the at most six cells that destroy the Hamiltonian side \(B\). Any failure of the common-core braid lemma must therefore realize a near-extremal overlap between these three sparse failure matrices.
 
 This reduces the maximal braid to a concrete \(5\times3\) finite incidence problem. No minimum-counterexample or disturbance argument is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

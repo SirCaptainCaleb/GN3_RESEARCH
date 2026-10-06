@@ -118,3 +118,8 @@ Therefore:
 > **Opposite seed theorem for (kappa_2=1).** Every deletion-distance-one no-two-cover state carries two explicitly located Hamiltonian four-supports (K_I,K_T), both containing the unique deletion label (x), one at each opposite boundary of the deletion cover, and each having two-coverable complement by inherited path intervals.
 
 No minimum-counterexample hypothesis, cyclic rotation, path reversal, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

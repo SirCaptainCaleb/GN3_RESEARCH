@@ -65,3 +65,8 @@ Finally fix either ordering of \(B\). All other determining variables on the lef
 This rank-one statement applies only to the exclusive disjoint span-two branch. It supplies no rank bound for overlapping or reflected-double faces. It is compatible with [[positive_protection_allows_a_disjoint_single_sided_span_two_carrier]], whose two-vertex block attains the bound.
 
 The theorem permits collapsing the entire two-vertex interaction while freezing the ten-position repair. It does not justify endpoint transport: that target-side issue remains exactly the exception identified in [[balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits]]. A globally compatible choice of the frozen repair is still required.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

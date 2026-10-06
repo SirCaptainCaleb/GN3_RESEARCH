@@ -70,3 +70,8 @@ Therefore L(W) is exactly the proper nonempty Boolean subset poset, whose order 
 The local tetrahedral filling in 247/250 is valid. However, independently fillable face carriers do not by themselves prove that previously chosen boundary fillings lie in a common carrier. In particular, fixing b in B_F for a three-face requires its entire already chosen boundary image to stay in the b-containing subposet, or an established relative homotopy moving it there. Chamber vertices and edges having b on the right is insufficient to ensure this for previously chosen two-face disks. A globally coherent three-skeleton extension must specify a nested carrier system or prove the required relative extension. No such global conclusion is asserted by the theorem above.
 
 This result removes the apparent bad-four Johnson obstruction from the full fixed-support target. It also explains why merely proceeding to the next face rank is not a closure strategy: universal connectivity already stops at a three-sphere. The useful remaining question is how minimum-counterexample blocked extension and complementary deletion covers control the coupling of the two supports or a relative obstruction. The grand theorem remains open; no actual spanning two-cover or terminating cover improvement is claimed here.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

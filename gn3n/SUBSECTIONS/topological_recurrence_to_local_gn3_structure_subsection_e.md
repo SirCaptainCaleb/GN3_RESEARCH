@@ -359,3 +359,9 @@ P_\pi\mid X_\pi\mid Q_\pi,
 |X_\pi|=\delta(\pi)\ge k,
 \]
 and, ideally, force one with \(|X_\pi|=k\).
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 4

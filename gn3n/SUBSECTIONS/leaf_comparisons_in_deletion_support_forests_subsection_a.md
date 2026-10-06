@@ -711,3 +711,10 @@ Pmidigl((Q-{a,b})cup{x}igr).
 But in (G_a), the vertex (x) precedes (z), while in (G_b), the vertex (x) follows (z). Thus the two common-support orders disagree, giving outcome 4. (square)
 
 Therefore a disconnected support forest has no independent “both endpoints escape” residue. For every leaf-neighbor Hamiltonian path, at least one endpoint comparison enters direct mixing, order disagreement, or reversal, unless bounded support has already appeared.
+
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 18

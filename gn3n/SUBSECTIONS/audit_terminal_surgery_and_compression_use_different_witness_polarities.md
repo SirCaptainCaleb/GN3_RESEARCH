@@ -50,3 +50,8 @@ The alternatives must be kept precise.
 The addendum [[explicit_proofs_for_finite_terminal_compression]] is useful development, but its dual-polarity portions are conditional on genuine six-word protection. The protected rank-two and higher-carrier constructions are likewise conditional on an outwardness theorem for one consistently defined depth.
 
 The repair obligation is earlier than higher-dimensional carrier gluing: specify a single witness-selection/depth rule, then prove both its protected-face compression and its terminal outward replacement. After that, prove nested equivariant protected carriers. The current Article VII closure is not established.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

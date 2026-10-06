@@ -41,3 +41,8 @@ This is again a local counterexample, not a counterexample to the grand conjectu
 For branches where protectedness excludes coexistence altogether, the intrinsic persistence argument remains valid: a sign-flip edge must affect both determining occurrences. The new positive alternating results supply that condition for sufficiently separated alternating windows. The positive span-two double branch does not satisfy it.
 
 Thus the central-pair gauge can be retained, but unbounded endpoint factors cannot be discarded from the span-two double analysis merely because they preserve the gauge. A repair must control intrinsic/tie transitions or replace the orientation rule with one whose complete sign-localization theorem is proved.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

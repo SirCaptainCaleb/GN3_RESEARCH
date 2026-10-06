@@ -56,3 +56,8 @@ What is missing is **oriented endpoint control**. A valid rooted handoff theorem
 2. prove that systematic failure of the required endpoint orientation forces a bounded reverse-junction configuration, an outward buffer, or a farther positive witness.
 
 This orientation issue is not cosmetic. It is the exact obstruction between an endpoint-containing/endpoint-exposed Hamiltonian support and an actual tail absorption.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

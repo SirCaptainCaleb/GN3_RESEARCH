@@ -108,3 +108,8 @@ A minimum deletion hole therefore has a sharp dichotomy after minimizing the imb
 In particular, an attempt to force a balanced minimum hole need not attack arbitrary imbalance. Large imbalance automatically creates the exact bounded endpoint structures used by the Article III–V transport and disagreement machinery.
 
 This suggests an earlier replacement for part of the exact-root zero-hole problem: minimize \(\Psi\) inside a minimum deletion complement first, then either obtain near-balance immediately or enter a dense bounded-support regime around the shorter path.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

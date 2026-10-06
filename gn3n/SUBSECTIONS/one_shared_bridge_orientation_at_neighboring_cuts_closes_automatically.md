@@ -79,3 +79,8 @@ A^{m R}={x,y,c_{N-1},c_N}
 and the reversed tail decomposition. Thus a surviving shared bridge is not merely restricted to the at-most-two bad deletion labels; its **bridge orientation is forced inward from both packet ends**.
 
 This orientation constraint is stronger than the seven-vertex degree bound and is the next compatibility datum to propagate across the three mobile cuts.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

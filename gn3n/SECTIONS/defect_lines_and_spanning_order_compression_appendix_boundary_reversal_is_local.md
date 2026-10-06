@@ -18,6 +18,8 @@ It does not imply cyclic rotation of an ordered triple and does not reverse a ti
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

@@ -88,3 +88,8 @@ More generally, after excluding all bounded disturbances, the four-endpoint good
 Thus the residual endpoint synchronization problem is finite already at the incidence level: at least one exposed endpoint must either have at least two good ordinary deletion labels or participate in a bounded disturbance.
 
 This is the first constraint coupling the individual same-endpoint normal forms across different exposed endpoints.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

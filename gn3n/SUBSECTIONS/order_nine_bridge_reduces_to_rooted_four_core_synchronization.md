@@ -66,3 +66,8 @@ Acup{x,y}.
 > **Rooted four-core synchronization.** Given a Hamiltonian four-set (A) and two exterior vertices (x,y), choose rooted Hamiltonian extensions through (Acup{x}) and (Acup{y}) so that the two resulting ten-window repairs are joined inside the depth-(>r) chamber complex.
 
 A stronger but not universal formulation would ask for one Hamilton order of (A) simultaneously extendable by both (x) and (y) at an endpoint; that strengthening is false in general, so the bridge must allow a short reconfiguration of the four-core order. The remaining obstruction has therefore been compressed to a genuine six-vertex ordered problem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

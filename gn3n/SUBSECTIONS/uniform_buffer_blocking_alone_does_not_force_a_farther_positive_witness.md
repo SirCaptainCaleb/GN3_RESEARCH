@@ -56,3 +56,8 @@ This is a counterexample to the repair principle
 under positive-word/protection hypotheses alone.
 
 It is **not** asserted to realize the full genuine \(\kappa_2=2\) packet constraints. Consequently it does not challenge the current grand-conjecture route. It identifies exactly what additional information must be used next: deletion-distance-two connector exclusion, packet Hamiltonicity, or exterior-assisted absorption. Pure status-word geometry cannot turn the blocked-side family into the third alternative.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -22,6 +22,8 @@ Let \(c(\pi)\) be the minimum number of consecutive intervals into which \(\pi\)
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

@@ -56,3 +56,8 @@ is tight, so one of
 (c_1,r_1,r_2,r_3),\qquad(c_1,r_3,r_2,r_1)
 \]
 is a Hamilton path. This gives (3). The common terminal gap is symmetric. \(\square\)
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -56,3 +56,8 @@ We obtain:
 7. a one-vertex transfer whose endpoint realizations all use the same side.
 
 These are the local recurrence residues.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

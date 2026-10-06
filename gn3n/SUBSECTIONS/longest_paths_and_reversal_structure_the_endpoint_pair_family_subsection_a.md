@@ -38,3 +38,8 @@ is Hamiltonian; in the second, the reversed order is. Therefore every four-set
 is Hamiltonian, and its complement is non-Hamiltonian with path-cover number two.
 
 Among any three exterior vertices, orient \(p\to q\) when \((p,a_{\lambda-1},q)\) is tight. Some vertex has both an in-neighbor and an out-neighbor, yielding two Hamiltonian four-paths whose common pair is ordered oppositely. Thus this endpoint case gives a family of overlapping Hamiltonian four-sets with explicit order disagreement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

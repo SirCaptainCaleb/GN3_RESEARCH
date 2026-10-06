@@ -17,3 +17,8 @@
 ## Development
 
 - [[fivefence01]] — Five-set fence: bare complement witnesses are not closure
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

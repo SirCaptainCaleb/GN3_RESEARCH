@@ -53,3 +53,8 @@ A four-label terminal-pair cycle cannot lie wholly in a minimum deletion reservo
 This explains why the carrier-loop branch and the blocked minimum-hole branch cannot be identified merely because both expose small supports. A surviving loop must involve labels outside that uniform minimum-hole reservoir, lose the fixed long tight boundary, or use a different face geometry. The Hamiltonian-five-support theorem supplies their common local object, but a global handoff must track these roles explicitly.
 
 No minimum-counterexample assumption or disturbance argument is used; only minimality of the chosen deletion set, protection, and boundary antisymmetry.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

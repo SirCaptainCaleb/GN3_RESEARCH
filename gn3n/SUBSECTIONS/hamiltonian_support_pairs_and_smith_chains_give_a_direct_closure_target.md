@@ -84,3 +84,8 @@ Hamiltonian four/five-support results provide vertices of P(H), not closure. A u
 The relevant next obligation is to construct the Smith chains, or a map from the source sphere, permitting vertices to move between A and B. The accompanying frozen-support obstruction proves that carriers confined to the original two sides can already fail on a fixed local configuration.
 
 This route removes the automatic one-sided facets through the source's two-sign requirement, rather than excluding facets ad hoc. It preserves dissimilar support states instead of first asking their path orders to agree. The universal transport theorem and universal Smith-chain existence are refuted; a counterexample-specific construction remains an open possibility.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

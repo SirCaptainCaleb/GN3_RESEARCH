@@ -39,3 +39,8 @@ In (1) use S|Q'; in (2) use (S-q_t)|Q; in (3) the two-bridge lemma applies. If |
 If all three tests fail, the residual conditions are explicit: S and S-q_t are non-Hamiltonian, q_t is the unique terminal bridge from S to Q', and every u in V(R) union {y} satisfies the reverse triple h(u,q_{t-1},q_{t-2})=1. This is a finite packet plus one ordered tail-pair obstruction, not a proof that the branch is impossible.
 
 The 011/011 case is the counterpart obtained by applying the same argument to the other short path and its actual tight orientation. A two-cover of the complete determining span can be inserted as a positive-word-free order and yields an outward chamber, with frozen inherited-mask carriers on a fixed ambient source face. General mixed doubles and compatibility across ambient faces remain open.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

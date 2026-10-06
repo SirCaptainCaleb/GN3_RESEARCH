@@ -129,3 +129,8 @@ Thus:
 > **Simple-root sign-flip/four-component dichotomy.** A \(\Psi\)-normalized minimum-hole face with adjacent simple exact root either admits a neutral one-vertex repartition reversing the root sign, or it descends to a bounded Hamiltonian four-component, either already in \(H-X\) or in a canonical one-hole restoration of deletion distance \(k-1\).
 
 Consequently the unbounded rank-one exact-root branch has only one genuinely new behavior beyond the bounded four-component interface: neutral transport between the two opposite adjacent simple roots.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

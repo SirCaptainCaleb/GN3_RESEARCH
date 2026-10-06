@@ -145,3 +145,8 @@ Therefore:
 ]
 
 The local finite line is closed. The only remaining issue is global: prove that every balanced witness carrier can be terminalized, or use its escape geometry directly to build a spanning two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

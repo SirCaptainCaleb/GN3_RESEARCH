@@ -59,3 +59,8 @@ This conclusion is purely local. It does not require the complements of the five
 Consequently branch (1) of [[four_endpoints_force_a_threefold_core_or_two_double_hole_equality_endpoints]] already lies in the bounded-support/order-disagreement/reversal interfaces developed in Articles III--V. Together with [[four_of_six_equality_endpoints_force_local_order_disagreement]], the entire four-endpoint hard rooted-five-component dichotomy feeds existing disturbance machinery: the threefold-core branch gives a bounded support, disagreement, or reversal, while the equality branch gives disagreement directly.
 
 Thus the unresolved five-component endpoint handoff has been reduced one level further. No new unbounded endpoint configuration survives the four-endpoint analysis; what remains is to convert these bounded disturbances into the protected outward-carrier conclusion or into a two-cover.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

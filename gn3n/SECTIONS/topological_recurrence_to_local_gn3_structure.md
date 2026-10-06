@@ -802,6 +802,8 @@ and, ideally, force one with \(|X_\pi|=k\).
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 5
+- Subsections now: 5
 
 ## Development tree
 

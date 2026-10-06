@@ -41,3 +41,8 @@ G is disconnected, G has a cut vertex, or G is exactly a negatively signed spann
 In particular, a support-agreement graph containing a spanning cycle and even one additional agreement edge already closes the grand two-cover statement for that H.
 
 No internal Hamilton order agreement is assumed. The exceptional cycle records genuine failure to name the two sides consistently around all holes; it is not a bare bounded-support handoff. This identifies the precise global obstruction left by support-level coherence, independently of tournament order.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

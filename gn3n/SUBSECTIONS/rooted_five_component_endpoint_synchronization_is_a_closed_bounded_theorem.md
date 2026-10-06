@@ -66,3 +66,8 @@ The next theorem needed by Article VII is therefore a **rooted disturbance conve
 > Given a genuine two-deletion reflected-double state whose central/rooted five-component produces outcome 2 or 3 above, use the retained endpoint/root incidences to obtain either a spanning two-cover or an enlarged protected outward repair.
 
 This is strictly narrower than the previous endpoint-handoff problem: the input is now a bounded six-label Hamiltonian/reversal certificate attached to the actual exposed corridor endpoints.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

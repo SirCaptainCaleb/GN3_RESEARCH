@@ -28,6 +28,8 @@ Consequently, for minimum-counterexample work, the nonzero exact-root branch is 
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

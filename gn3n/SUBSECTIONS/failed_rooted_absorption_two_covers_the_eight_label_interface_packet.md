@@ -118,3 +118,8 @@ The three-hook residue is therefore stronger than a bounded Hamiltonian-support 
 > if direct absorption into the frozen corridor fails, the endpoint packet together with the first two corridor-interface vertices already has path-cover number at most two.
 
 This does **not** yet give a rooted repair of the whole corridor, because the resulting two-cover need not expose the ordered pair \(x,y\) in a position that can be concatenated with the fixed suffix \(z,\ldots\). The remaining obligation is now purely a **boundary-ordering problem for a known local two-cover**, rather than Hamiltonicity or path-cover existence on the endpoint packet.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

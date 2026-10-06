@@ -204,6 +204,8 @@ Consequently the elaborate seven-set transport at the end of Lemma 4 is not need
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

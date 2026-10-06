@@ -39,3 +39,8 @@ Therefore every support-compatible pair of deletion covers yields one of four st
 (d) explicit inherited rail shortening.
 
 In particular there is no remaining featureless compatible-pair or same-endpoint-backtracking state once bare bounded-support outputs are replaced by their retained positional geometry. No small-order cutoff or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

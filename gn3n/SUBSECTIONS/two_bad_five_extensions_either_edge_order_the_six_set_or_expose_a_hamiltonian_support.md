@@ -121,3 +121,8 @@ In the active six-shadow frontier, one need not first prove that the two bad \(K
 > either the entire six-label packet is edge-orderable, or the failure of edge-order amalgamation already produces a Hamiltonian \(4\)-, \(5\)-, or \(6\)-support containing both distinguished exterior labels.
 
 Thus the genuinely unresolved branch of the mostly-edge-ordered six-shadow is the fully edge-orderable \(K_6\) branch. Any non-orderability is already a bounded Hamiltonian-support output suitable for the existing Article III--VII transport machinery.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -53,3 +53,8 @@ Combining with branch (1) gives the sharper dichotomy:
 In the first branch, failed neutral transports give a single ordinary label reversing second-layer edges at three exposed ends, as in [[repeated_hole_preserving_cores_force_transport_or_synchronized_second_layer_reversals]]. In the second branch, the obstruction has already become a positioned local disturbance on two bounded packets.
 
 Thus the five-component handoff no longer has an unconstrained four-of-six equality residue. Its two surviving mechanisms are synchronized reversal and bounded order disagreement, both already native to the Article III–V transport machinery.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

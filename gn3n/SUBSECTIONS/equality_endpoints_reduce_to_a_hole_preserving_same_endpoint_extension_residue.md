@@ -72,3 +72,8 @@ Hence:
 The fourth case is the only featureless residue, and it is precisely the same-side extension geometry isolated in the earlier endpoint-transport program. Unlike the older occurrence there, the common core here canonically contains the entire minimum pair \(\{x,y\}\).
 
 Thus the equality branch of the rooted five-component frontier has been reduced to established bounded disturbances plus one hole-preserving same-endpoint extension state.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

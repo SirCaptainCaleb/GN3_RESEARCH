@@ -23,3 +23,8 @@ The following implications are not valid without additional hypotheses:
 - boundary reversal of one triple does not permit cyclic rotation of that triple or reversal of an entire tight path.
 
 Accordingly, every use of an endpoint in the main proof is tied to a displayed Hamilton order, and every iterative move is a pairwise repartition in a specified connected component.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

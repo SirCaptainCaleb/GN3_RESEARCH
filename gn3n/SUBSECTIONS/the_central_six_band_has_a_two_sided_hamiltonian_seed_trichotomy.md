@@ -72,3 +72,8 @@ Each output has a two-coverable complement in the full genuine two-deletion stat
 Thus the two-sided branch supplies **two different Hamiltonian four-supports with two-coverable complements, sharing exactly the minimum pair \(\{x,y\}\)** and rooted at opposite corridor ends.
 
 This is stronger than the existence statement in [[the_maximal_support_seed_lies_in_the_central_six_witness_band]]. The only case in which no middle or anchored-five seed exists automatically produces symmetric left/right four-supports. Hence the central-six bridge can be attacked through one of three concrete support geometries rather than an arbitrary bounded Hamiltonian subset.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

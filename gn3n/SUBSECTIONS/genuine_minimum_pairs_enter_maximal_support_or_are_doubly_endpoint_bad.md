@@ -82,3 +82,8 @@ Thus:
 The second branch is the exact residue not covered by same-signature root advance. It is stronger than merely saying the signatures differ: the two corresponding cross-class four-extensions are themselves bad. Any future local closure theorem need only treat this **doubly endpoint-bad antipodal-signature pair**.
 
 In particular, same-signature and accidentally-Hamiltonian opposite-signature pairs are no longer part of the genuine six-label routing frontier.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

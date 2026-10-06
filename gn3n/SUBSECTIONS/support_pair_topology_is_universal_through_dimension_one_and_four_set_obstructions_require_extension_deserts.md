@@ -42,3 +42,8 @@ Consequently a genuine four-set obstruction to the support-pair Smith extension 
 
 ### Strategic consequence
 The support-pair formulation is structurally empty through the first Smith equation. Its first tournament-specific local obstruction occurs where four-vertex Hamiltonicity enters, and even that obstruction disappears under one Hamiltonian five-extension. Therefore the relevant question is not whether non-Hamiltonian four-sets occur, but whether Article VII's four-/five-/six-set extension theorems prevent this all-bad-extension configuration in the kappa_2=2 layer.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

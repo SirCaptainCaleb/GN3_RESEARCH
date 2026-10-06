@@ -120,3 +120,8 @@ Therefore:
 The five-path branch gives a spanning three-cover with a distinguished rooted five-component and two inherited residual path intervals. The complete reverse rectangle is the only local configuration that avoids all four such opposite-boundary root advances.
 
 No minimum-counterexample assumption, cyclic rotation, path reversal, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

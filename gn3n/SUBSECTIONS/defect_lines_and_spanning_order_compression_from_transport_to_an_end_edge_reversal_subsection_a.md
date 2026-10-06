@@ -40,3 +40,8 @@ Hence:
 1. a strict decrease of \(\Phi\) inside the same component of the pairwise-repartition graph;
 2. a reversal of an end edge of a displayed Hamiltonian four-path;
 3. a Hamiltonian support of order four or five containing a displayed endpoint of the complementary path, with two-coverable complement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

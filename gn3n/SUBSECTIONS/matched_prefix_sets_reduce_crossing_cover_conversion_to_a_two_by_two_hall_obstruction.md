@@ -38,3 +38,8 @@ All interior triples are inherited. Hence the complete closing test uses at most
 This strengthens [[two_aligned_ordered_edge_cuts_splice_arbitrarily_dissimilar_deletion_covers]] by removing its shared-edge assumption. It also preserves global incidence information: the prefix-set identity is essential and is not implied merely by having eight locally favorable labels.
 
 The useful no-two-cover consequence is synchronized rather than four independent seam failures: at every matched cut there is one whole prefix or tail blocked against both alternatives. Neither existence of such cuts nor elimination of their isolated-vertex obstruction is yet proved. Those are the genuine crossing-cover obligations, not bare bounded-support outputs.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

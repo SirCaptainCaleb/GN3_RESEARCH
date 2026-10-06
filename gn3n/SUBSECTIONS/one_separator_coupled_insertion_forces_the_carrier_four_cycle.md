@@ -39,3 +39,8 @@ Thus h(y,b_{i+1},b_i)=1, hence y->b_i. Finally h(x,b_{i+1},y)=1 gives x->y. Thes
 For a genuine minimum deletion pair {x,y}, minimum-pair nonaugmentability supplies the individual noninsertability hypothesis on each inherited path. Thus any successful one-separator coupled absorption preserving an inherited path order produces this four-label directed local pattern.
 
 This directed cycle is not the terminal-pair carrier C4. Here all arcs have one fixed middle label b_{i+1}, so boundary antisymmetry makes the reverse arc complementary; the carrier C4 instead lives in a mutual ordered-pair graph and requires both directions of each cycle edge to be admissible. The result therefore supplies a bounded four-label local-tournament normal form, not a topological loop identification. Any transfer from this normal form to the carrier obstruction requires an additional theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

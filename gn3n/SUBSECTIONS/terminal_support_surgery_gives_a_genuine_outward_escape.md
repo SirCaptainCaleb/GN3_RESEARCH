@@ -51,3 +51,9 @@ Only triple-status coordinates meeting one of the two ends of (I) can change out
 This is exactly the global extension clause missing from the induced-support theorem. The local finite theorem need not produce a spanning two-cover of (H); it only needs to produce a two-cover of the terminal central span. Replacing that span either closes the theorem immediately or creates an honest chamber whose selected witness has moved strictly outward.
 
 Consequently the remaining terminalization problem is no longer finite-support extension. It is purely the topological promotion problem: use these outward replacement chambers to repair every mixed (+e_i/-e_i) crossing in the relative-index separator, so that the (e_i)-free separator retains index and the recursion can continue.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

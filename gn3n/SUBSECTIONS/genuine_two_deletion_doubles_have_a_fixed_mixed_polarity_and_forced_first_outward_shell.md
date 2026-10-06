@@ -97,3 +97,8 @@ h(z,x,c_1)=1,\qquad h(c_N,y,w)=0.
 \]
 
 These constraints concern the existing ambient order and use only the positive language \(\{001,011,0101\}\). They do not assert that the forced safe shell values by themselves give an outward repair. They are intended to be combined with [[outward_buffer_vertices_bypass_the_internal_two_deletion_obstruction]] and [[exterior_assisted_packet_absorption_gives_an_outward_repair]]: once no farther witness is already present, every failed exterior absorption occurs under these fixed shell orientations rather than under arbitrary boundary data.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

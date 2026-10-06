@@ -119,3 +119,8 @@ for at least six distinct exterior labels \(y\).
 Hence the genuinely new topological residue is not merely a Hamiltonian five-packet with path-cover-\(\ge3\) complement. It contains a Hamiltonian four-core \(C\) with at least six exterior Hamiltonian extensions, all of whose complementary graphs remain path-cover-\(\ge3\).
 
 This is an audit-safe replacement for the withdrawn second-layer propagation route: it uses only four-of-six, the proved four overlapping cycle deletions, and the ten-vertex two-cover theorem. No cyclic rotation, path reversal, or minimum-counterexample argument occurs.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

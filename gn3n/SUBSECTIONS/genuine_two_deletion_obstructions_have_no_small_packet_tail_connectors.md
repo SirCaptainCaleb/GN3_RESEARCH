@@ -50,3 +50,8 @@ h(u_{q-1},u_q,v)\,h(u_q,v,t_1)\,h(v,t_1,t_2)=0.
 These products express that each proposed joined order has at least one non-tight crossing triple. They must hold for every displayed complementary tail decomposition, including all legal mobile corridor cuts. They are stronger than saying a connector is confined to a non-Hamiltonian packet deletion.
 
 No internal deletion of a tight path is assumed in this argument. The sole deletion occurs inside the separate complement of the newly constructed long path.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

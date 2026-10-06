@@ -131,3 +131,8 @@ Therefore:
 This is not itself a proof that the reseeding/disturbance outputs close. It eliminates indefinite pure-descent propagation as an independent frontier.
 
 No minimum-counterexample induction, cyclic rotation, path reversal, or finite computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

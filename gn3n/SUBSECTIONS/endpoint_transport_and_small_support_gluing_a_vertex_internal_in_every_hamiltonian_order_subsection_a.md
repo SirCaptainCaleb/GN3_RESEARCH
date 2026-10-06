@@ -30,3 +30,8 @@ We record this as follows.
 3. the one- and two-label deletion covers preserve one common inherited order and one unchanged complementary path.
 
 The proof is the preceding block count applied successively to the one- and two-label deletions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

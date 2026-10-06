@@ -122,3 +122,8 @@ In the opposite-endpoint-signature case, there is no need to analyze the entire 
 In the same-signature case, the large-hole complement itself has a four-component three-cover with both long-path endpoint pairs shortened simultaneously.
 
 Therefore any proof that controls four-component three-covers at \(\kappa_2=1\), together with their all-old analogue, immediately constrains imbalance in every minimum deletion complement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

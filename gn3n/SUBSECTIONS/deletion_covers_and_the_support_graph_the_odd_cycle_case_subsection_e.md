@@ -85,3 +85,9 @@ Its complement cannot be Hamiltonian, or a Hamilton path on \(H-K\) together wit
 The crucial point is that the common-reverser argument uses **one deleted label and two disjoint displayed end edges**. Two different deleted labels reversing one common edge do not suffice.
 
 Therefore the spanning odd cycle is not an independent terminal support-graph geometry. At arbitrary order it immediately returns to the bounded-support/maximal-support route. Combined with the forest analysis, the selected support graph has no quiet global residue outside the bounded-support and reversal/disturbance interfaces.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

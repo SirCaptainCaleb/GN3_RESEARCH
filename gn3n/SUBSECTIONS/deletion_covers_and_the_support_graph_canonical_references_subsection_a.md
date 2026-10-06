@@ -17,3 +17,8 @@
 ## Development
 
 - [[mincex01]] — Minimum-counterexample calculus
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

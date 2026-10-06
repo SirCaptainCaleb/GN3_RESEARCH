@@ -41,6 +41,8 @@ Strict decrease of \(\Phi\) must eventually stop, and it can stop at one of thes
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

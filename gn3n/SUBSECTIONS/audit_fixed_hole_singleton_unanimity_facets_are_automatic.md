@@ -58,3 +58,8 @@ So the sparse-face alternative in [[fixed_hole_ky_fan_forces_every_balanced_dele
 The Johnson-layer elimination of the universal branch remains correct **conditional on entering that branch**, but it cannot be used to conclude new structure from the fixed-hole Ky Fan dichotomy unless the sparse alternative is strengthened.
 
 A nontrivial replacement must exclude these automatic extreme-position facets, for example by requiring additional carrier geometry, a lower bound on free-block size/dimension, or a sparse face whose unanimity defect is not explained solely by fixing the hole label at an extreme position.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

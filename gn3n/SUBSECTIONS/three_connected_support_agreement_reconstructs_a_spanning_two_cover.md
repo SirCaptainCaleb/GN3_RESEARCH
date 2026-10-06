@@ -37,3 +37,8 @@ Consequently, in a minimum-order counterexample, every selection of one deletion
 The argument is purely about support partitions and hereditary two-coverability; it requires no path reversal, finite-order verification cutoff, or assumption that local bounded Hamiltonian supports are terminal.
 
 Relevance to Article VII. The compatible-deletion-cover analysis must confront a global separation phenomenon: local agreement cannot be organized into a 3-connected graph without closing the theorem outright. Conversely, a separator in this graph is not yet a separator of the tournament and is not itself closure. The next conversion must exploit the incompatible covers across it, or prove sufficient agreement to eliminate it.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

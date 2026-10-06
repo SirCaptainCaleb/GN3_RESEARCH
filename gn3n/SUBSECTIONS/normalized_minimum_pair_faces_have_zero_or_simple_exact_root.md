@@ -29,3 +29,8 @@ Hence only two possibilities remain.
 2. If |V(H)| is odd, then r+s is odd, so |r-s|=1. Therefore psi(F_xy) is, up to sign, an adjacent simple root e_j-e_{j+1}. Thus every hard normalized minimum-pair edge determines a one-dimensional constant-root face of simple-root type.
 
 Consequently the difficult kappa_2=2 regime has no higher root displacement along normalized minimum-pair faces: after the bounded four-component branch is removed, the edgewise root geometry is zero-root in even order and rank-one simple-root in odd order. This connects the minimum-pair graph directly to the exact-root carrier geometry without any minimum-counterexample argument.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

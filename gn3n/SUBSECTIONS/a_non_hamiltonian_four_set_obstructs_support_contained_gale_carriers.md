@@ -59,3 +59,8 @@ It also does not refute every possible boundary assignment: it refutes the natur
 Thus a general realization theorem must allow support exchange, change the boundary assignment coherently, or use a genuinely different algebraic certificate. An arbitrary number of endpoint surgery lemmas confined to the two original supports cannot repair this particular carrier.
 
 The matching-block four-set theorem applies earlier here as a homological obstruction. This gives a precise reason to seek chain fillings using dissimilar support pairs, rather than treating order disagreement or a bounded Hamiltonian support as a terminal result.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

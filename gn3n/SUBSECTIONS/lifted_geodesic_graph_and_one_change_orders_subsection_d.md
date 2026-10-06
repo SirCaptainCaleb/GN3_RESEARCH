@@ -24,3 +24,8 @@ For any \(s\)-\(t\) walk \(W\), let \(m_v\) be the number of times its projectio
 Thus the geodesics are exactly the walks with \(m_v=1\) for every \(v\).
 
 This is the key constraint behind the analogy with antipodal path theorems. A theorem producing some one-change antipodal walk is insufficient if it allows repeated coordinates; repetition means repeated original vertices. Likewise, an antipodal theorem whose endpoint pair is allowed to vary is insufficient unless its output can be normalized to the distinguished poles \(s,t\). The desired topology must preserve both pole location and zero detour.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

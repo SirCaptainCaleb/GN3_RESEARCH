@@ -149,3 +149,8 @@ If the transfer moves one vertex from a path of order \(r\) to one of order \(s\
 2(s-r+1).
 \]
 Thus a transfer from a path at least two vertices larger than the receiving path is a strict \(\Phi\)-decrease.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

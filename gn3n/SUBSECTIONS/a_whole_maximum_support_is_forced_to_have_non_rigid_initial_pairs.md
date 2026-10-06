@@ -63,3 +63,8 @@ The terminal analogue is obtained by applying the terminal form of the majority-
 The current endpoint-growth obstruction was generated from one selected maximum word. The supportwise contrapositive removes that arbitrariness. Any closure argument may now choose the Hamilton order on S_* most convenient for a splice, exchange, or endpoint comparison, and the reversed-pair anchor is guaranteed to exist for that choice.
 
 In particular, if a later argument can realize one ordered pair (a,b) as the initial pair of a Hamilton order on S_* with additional prescribed incidence data, no separate non-universality proof is required: the corresponding reversed anchor follows automatically.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

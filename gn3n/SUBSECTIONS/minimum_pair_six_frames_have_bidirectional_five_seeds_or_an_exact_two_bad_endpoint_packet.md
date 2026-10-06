@@ -79,3 +79,8 @@ If (m=t+1), a good endpoint of the shorter path produces a five-support whose in
 Hence in the adjacent-simple-root size profile, failure to reach a balanced complementary cover through this five-seed forces the exact two-bad endpoint packet above.
 
 No path reversal, cyclic rotation, minimum-counterexample hypothesis, or computation is used.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

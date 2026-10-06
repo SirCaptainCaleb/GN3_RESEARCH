@@ -88,3 +88,8 @@ f_i:B\dashrightarrow C
 whose graphs are \(D_i\), with at most one common graph point, while the Hamiltonian-side failures are essentially the complement of the union of those two graphs.
 
 This is the exact equality regime that still needs local orientation analysis. Any strict improvement in one of the four-of-six inequalities already produces a side-preserving swap repairing both bad targets and reduces the braid from two bad targets to at most one.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

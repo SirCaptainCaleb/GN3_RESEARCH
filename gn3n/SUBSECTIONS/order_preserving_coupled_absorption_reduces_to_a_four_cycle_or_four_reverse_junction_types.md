@@ -100,3 +100,8 @@ For a genuine minimum deletion pair \(\{x,y\}\) and either inherited complementa
 2. **adjacent form:** the obstruction is one of four explicit two-sided reverse-junction types on at most six consecutive anchor labels.
 
 Thus coupled two-hole routing introduces no new unbounded interface. The only nontrivial order-preserving routing phenomena are a four-cycle or a bounded reverse-junction packet. This places the combinatorial two-deletion handoff on the same finite scale as the protected carrier \(C_4\) obstruction; the remaining work is to identify which reverse-junction types either generate the terminal-pair mutual \(C_4\), fill it by protected exterior labels, or force a rooted endpoint handoff.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

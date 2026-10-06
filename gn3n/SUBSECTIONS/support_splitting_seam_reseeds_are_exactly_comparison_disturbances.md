@@ -97,3 +97,8 @@ In the globally maximal seam setting, outcome 5 is already reduced to an order-f
 Hence seam reseeding introduces no independent recurrence phenomenon: outside the short-rail branch, it is exactly a comparison-disturbance interface.
 
 The proof is purely a component/block count. It uses no minimum-counterexample hypothesis, cyclic rotation, path reversal, or finite computation.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

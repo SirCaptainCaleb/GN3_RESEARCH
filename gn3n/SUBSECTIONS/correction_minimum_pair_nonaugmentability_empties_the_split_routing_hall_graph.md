@@ -40,3 +40,8 @@ Thus every hole has at least one explicit reverse junction on each tail.
 The split-routing theorem remains a valid sufficient criterion for a general two-label residue, but its perfect-matching branch cannot occur once \(\{x,y\}\) is known to be a minimum deletion pair.
 
 The live finite problem is therefore coupled two-hole routing: a successful path segment must use both \(x,y\) together, even though neither is individually insertable. Same-signature root-advance paths and the local two-bad-extension/parallel-middle lemmas are precisely of this coupled form.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

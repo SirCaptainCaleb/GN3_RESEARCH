@@ -85,3 +85,8 @@ Therefore the attachment-matching route has been reduced to one exact local resi
 Any proof that this residue can be converted either to an outward two-cover order or to a protected bounded carrier closes the local attachment dichotomy. All other terminal-attachment patterns either have a perfect matching or expose a Hamiltonian four-support immediately.
 
 This reduction is independent of the lengths of (P,Q) except for the trivial short-path cases, which are already finite.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

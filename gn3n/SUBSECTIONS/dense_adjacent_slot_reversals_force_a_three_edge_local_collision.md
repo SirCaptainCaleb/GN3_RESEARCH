@@ -17,3 +17,8 @@
 ## Development
 
 Retain the negative compatible agreement cycle on 2r+1 holes and let a cycle edge be marked when its compatible insertion slots are adjacent, hence carrying the positioned reversal from the adjacent-slot theorem. The monodromy bound gives at least r-1 marked edges. A subset of edges of a (2r+1)-cycle with pairwise cyclic distance at least three has cardinality at most floor((2r+1)/3). Therefore for r>=5, since r-1>floor((2r+1)/3), two marked edges occur at cyclic distance one or two. In the distance-two case, say edges i and i+2 are marked. The single-switch support normal form has F_{v_j}=B_{j-1}|B_j with coherent orders in the compatible branch. The edge-i adjacent-slot reversal is carried by the hole v_{i+1} across an internal displayed edge of B_{i+1}; the edge-(i+2) reversal is carried by the hole v_{i+2} across another internal displayed edge of the same Hamiltonian support B_{i+1}, with the opposite carrier orientation. Meanwhile v_{i+1},v_{i+2} are the two omitted labels of the intervening compatible pair F_{v_{i+1}},F_{v_{i+2}}. Thus every sufficiently long exceptional cycle contains either consecutive marked interfaces or a marked-middle-marked three-edge packet in which two consecutive holes reverse internal edges of one common ordered support. This localizes the dense disturbance network to a bounded three-edge interface; it does not by itself close the disturbance.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -73,3 +73,8 @@ Assume no nonhole lies in both good sets. Then
 If neither good set contained both \(x\) and \(y\), each would contain at most one distinguished label. Since each has order at least three, each would then contain at least two labels of the three-set \(N\). Two disjoint subsets of a three-set cannot both have order at least two, contradiction. Therefore one endpoint good set contains both \(x,y\). ∎
 
 For a rooted five-component produced from a minimum deletion pair, the first branch permits endpoint transport while retaining the entire minimum pair inside the moving four-core. The second branch is even more rigid: at one tail endpoint, deleting either hole from the five-component gives a Hamiltonian replacement with the same three ordinary labels and the same endpoint. Applying the dichotomy to both complementary tails reduces the rooted five-component handoff to a hole-preserving transport branch or two explicit double-hole endpoint certificates.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

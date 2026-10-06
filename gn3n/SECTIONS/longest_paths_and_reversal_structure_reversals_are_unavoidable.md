@@ -1054,6 +1054,8 @@ This removes any need to preserve a particular reversal certificate while descen
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

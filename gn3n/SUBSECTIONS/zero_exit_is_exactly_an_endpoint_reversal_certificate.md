@@ -81,3 +81,8 @@ for a bad cycle vertex \(v\) with current neighbors \(\ell,r\), find one of thes
 \]
 
 This isolates the exact bridge theorem still missing between the combinatorial and topological interfaces: **three-neighbor mutual admissibility**, not exit control.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

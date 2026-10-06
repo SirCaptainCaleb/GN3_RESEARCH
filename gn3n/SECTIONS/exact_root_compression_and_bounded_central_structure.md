@@ -36,6 +36,8 @@ The remaining task is not further root compression; it is to exploit the actual 
 - Refutation: unrefuted
 - Composition version: 2
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

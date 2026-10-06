@@ -27,3 +27,8 @@ For an exceptional corridor 1^u010^v, the unique cut gives path orders u+2,v+2. 
 Thus both genuine two-deletion corridor types begin at the same three path-size profiles, with distinct status geometry and cut mobility. These are necessary conditions, not a finite reduction of the entire unbounded branch. No enumeration or small-order testbed is invoked.
 
 In particular, the already proved ten-vertex theorem controls the distance-one reductions at order eleven but leaves the unrestricted distance-one two-cover question there open; and the order-twelve observation does not license assuming the two-deletion branch exists.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

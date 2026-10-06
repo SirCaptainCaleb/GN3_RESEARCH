@@ -221,3 +221,8 @@ end{array}}
 ]
 
 Most of the earlier bridge, tuple-rank, gauge, ten-window, and maximal-braid work is now either a corollary, a local toolkit lemma, or a preserved counterexample. The load-bearing local combinatorial residue is the (k=2) endpoint-handoff problem after root advance; the load-bearing topological residue is two-skeleton compatibility of the natural protected outward carriers.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -61,3 +61,8 @@ If the induced complex K_S has simply connected components, pi_1(D_0) injects in
 More generally, a proposed enlargement kills an old loop precisely when its class lies in the normal closure of loops carried by labels with zero exit status. This is a finite group-theoretic criterion for the pair-locus interface.
 
 The theorem does not determine higher homotopy of D. A trivial fundamental-group image need not make the inclusion of a higher-dimensional source null-homotopic. For a source homotopy equivalent to a connected graph, however, triviality of its fundamental-group image is sufficient for null-homotopy, because the map can be reduced to a bouquet of loops and each loop filled individually.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

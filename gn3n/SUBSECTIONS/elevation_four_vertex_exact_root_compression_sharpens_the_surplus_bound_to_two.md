@@ -90,3 +90,8 @@ p=c,
 i.e. the balanced canonical partial cover \(P\mid X\mid Q\) with \(|P|=|Q|\), together with the already-small \(k=1,2\) nonzero residues.
 
 No minimum-counterexample or disturbance hypothesis is used; this is only the old surplus argument recomposed with the newer four-vertex central compression.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

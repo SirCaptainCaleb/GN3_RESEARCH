@@ -52,3 +52,8 @@ Intersecting them with the fixed endpoint-subset subcomplex C produces the nonem
 For arbitrary neighboring ambient faces, selecting an exterior vertex independently does not imply the required monotonicity of I(F). This theorem isolates a sufficient global gluing condition: a fixed positional enlargement, or a face-monotone family of enlargements, together with protected contractible target loci.
 
 Neither positional coarsening nor equivariance establishes protection. The positive-word boundary tests must still be verified on each enlarged carrier. The operator supplies the missing nesting once those tests hold.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

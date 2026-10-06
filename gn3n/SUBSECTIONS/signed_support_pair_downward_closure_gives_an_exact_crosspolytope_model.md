@@ -39,3 +39,8 @@ Likewise, if a Hamiltonian support S has complement P|Q, then E(H) contains S+ u
 Topological closure target: prove the free antipodal complex E(H) has Z_2-index n-1. Since index is at most dimension, this forces dim E(H)>=n-1 and therefore kappa_2(H)=0. More generally an index lower bound d gives kappa_2(H)<=n-d-1.
 
 This is an exact order-free topological model of deletion distance inside the original crosspolytope sphere.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

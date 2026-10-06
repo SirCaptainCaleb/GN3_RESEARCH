@@ -1324,3 +1324,9 @@ During these moves, \(A\) and its end edge remain unchanged. The vertex supplyin
 Indeed, apply the theorem with \(r=3\) and the second profile. No reversal hypothesis on the starting state, minimum-counterexample assumption, or quadratic-minimality assumption is needed.
 
 This strengthens persistence at the terminal profile into simultaneous positional information on two different component supports. It does not assert that either reversal can be inserted into a Hamilton order on the same support, nor that the two certificates alone imply a two-cover.
+
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 21

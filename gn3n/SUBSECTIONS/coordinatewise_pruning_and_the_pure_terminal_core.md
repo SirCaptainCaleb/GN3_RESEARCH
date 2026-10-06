@@ -62,3 +62,8 @@ Accordingly the remaining carrier-level theorem may be sharpened to:
 > **Pure terminal core.** A proper protected face all of whose selected labels are (pm e_r), with both signs present, cannot realize a centered/overlapping terminal configuration in a counterexample; equivalently it either contains an outward chamber or the bounded terminal support extends to a spanning two-cover.
 
 This is strictly narrower than arbitrary mixed-cell completion. It separates the algebraic issue (already solved by coordinatewise pruning) from the face-coherence issue (pure centered/overlapping cells only).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

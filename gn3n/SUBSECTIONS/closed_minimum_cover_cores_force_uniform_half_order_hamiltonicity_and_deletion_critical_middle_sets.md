@@ -94,3 +94,8 @@ If all top facets collapse, there is NO nonempty core to which the theorem appli
 In particular a Hamiltonian support larger than floor(n/2) rules out a nonempty closed minimum-cover core; it forces the all-collapsed branch. This is a valid use of the largest-support lemmas, without mistakenly treating collapse alone as a spanning cover.
 
 No small-order cutoff is used. The square calculation and propagation are valid at arbitrary order.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

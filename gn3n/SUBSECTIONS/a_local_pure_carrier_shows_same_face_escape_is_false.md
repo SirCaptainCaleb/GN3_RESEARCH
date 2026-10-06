@@ -57,3 +57,8 @@ Therefore the terminal branch of the relative-index proof must genuinely leave t
 S_rlongrightarrow Y_{r+1}
 ]
 equivariantly, or an equivalent acyclic-carrier construction. The bounded terminal surgery must be made coherent across chains; literal inclusion of the terminal separator in the next-depth face poset cannot be expected.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

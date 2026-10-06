@@ -42,3 +42,8 @@ Accordingly the final proof should be decomposed after closure into:
 3. genuinely GN3-specific translation-invariant arguments.
 
 The independent brainstorm [[meta_conjecture_gn3_closure_should_seed_generalized_norine]] records this research program. It is not required for the present conjecture, but it should remain visible while the terminalization theorem is developed.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 3

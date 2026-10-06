@@ -90,3 +90,8 @@ h(z,b,a)=1,\qquad h(z,c,d)=1
 for both \(z=x,y\). Hence Hall failure does not leave an arbitrary four-label routing residue: it leaves one of finitely many adjacent reverse-junction patterns superimposed on the forced first-edge reversals.
 
 This is the exact split-routing specialization of the older two-extender Hall calculus. It sits strictly between the general four-middle-label routing formulation and the stronger one-sided six-path criterion.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

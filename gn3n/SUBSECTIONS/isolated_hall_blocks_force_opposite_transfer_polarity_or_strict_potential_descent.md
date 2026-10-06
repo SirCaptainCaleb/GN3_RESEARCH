@@ -41,3 +41,8 @@ h(a_1,v,u)=h(a_2,v,u)=1
 by cyclically rotating one triple; this is invalid. Boundary tournaments distinguish only the reversal pair \((r,s,t)\) and \((t,s,r)\), with the middle vertex fixed.
 
 Thus the claimed opposite-polarity theorem, directed near-balance inequalities, and unconditional potential descent are withdrawn. See [[audit_same_hall_transfer_polarity_is_not_excluded_by_boundary_antisymmetry]] for the independent audit.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

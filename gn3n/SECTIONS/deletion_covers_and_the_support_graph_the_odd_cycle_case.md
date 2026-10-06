@@ -166,6 +166,8 @@ Therefore the spanning odd cycle is not an independent terminal support-graph ge
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 5
+- Subsections now: 5
 
 ## Development tree
 

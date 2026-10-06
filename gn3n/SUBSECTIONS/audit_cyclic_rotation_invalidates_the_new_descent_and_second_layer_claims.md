@@ -67,3 +67,8 @@ Likewise, if the four-set {s_1,s_2,p_1,p_2} is independently known to be Hamilto
 For the order-twelve claim, establish the Hamiltonian four-support through a valid boundary-tournament argument, then justify the extremal choice used for descent. For the second-layer claim, establish an appropriate rooted Hamilton order or the individual tight triple h(s_1,u,s_2)=1. Neither repair may assume cyclic invariance.
 
 The exact five/six-label carrier results in the neighboring addenda use only the actual boundary flip and are independent of these two claims.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

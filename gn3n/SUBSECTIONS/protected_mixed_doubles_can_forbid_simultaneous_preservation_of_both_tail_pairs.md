@@ -35,3 +35,8 @@ Consequently there is no spanning two-path cover in which both paths end in orde
 The obstruction is stronger than failure to preserve one particular ordered pair: no choices of two terminal pairs wholly inside the old corridor can work. It is still a local counterexample to an attachment requirement, not to the unrestricted two-cover conjecture. A possible repair may concatenate or repartition the two tails into one final path, let another path end at an exterior vertex, move or reorder part of a tail, or use additional hypotheses unavailable from the protected status word alone.
 
 Thus [[span_two_doubles_are_exactly_a_two_cover_corridor_plus_two_reversed_endpoints]] gives a correct corridor decomposition (with all endpoint cases supplied by [[complete_positive_span_two_double_corridor_classification]]), but its suggested universal two-fragment repair preserving both ordered tail attachments cannot be the next theorem. The bounded-prefix target must explicitly permit a change in how the tails are assigned to the final paths. The protected outward-carrier and global compatibility checks then remain separate obligations.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

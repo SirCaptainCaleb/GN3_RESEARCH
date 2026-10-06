@@ -54,3 +54,8 @@ gamma(Y_{r+1})gegamma(Y_r)-1.
 ]
 
 Most rank-two residues are automatic. A generator supported disjointly from the terminal interval commutes with the local replacement; applying it before or after surgery changes only farther-out status windows. The only nontrivial residues are those meeting an endpoint or the interior of the bounded centered/overlapping terminal interval. Thus the global terminalization theorem has now been reduced to a finite Coxeter-coherence check localized at the terminal support, rather than an arbitrary mixed-face theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

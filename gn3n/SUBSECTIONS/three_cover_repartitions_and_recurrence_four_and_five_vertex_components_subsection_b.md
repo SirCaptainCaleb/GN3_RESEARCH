@@ -23,3 +23,8 @@ The rooted small-support descent now completely classifies the bounded case in w
 - \(4|4|6\), \(4|5|6\), and \(4|6|6\): every relevant \(4|6\) pair either exhibits an endpoint-six-set order disagreement or admits the neutral migration \(4|6\to6|4\). If no disagreement occurs, each state has at least two distinct neutral neighbors.
 
 Thus none of the six bounded four-support size profiles remains as an unstructured terminal case. At a minimum of \(\Phi\), the entire order-four regime has already been converted into explicit neutral recurrence or an order disturbance.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

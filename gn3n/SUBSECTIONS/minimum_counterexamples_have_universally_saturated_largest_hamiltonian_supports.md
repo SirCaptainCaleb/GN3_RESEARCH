@@ -81,3 +81,8 @@ Thus every exterior label simultaneously reverses the displayed initial and term
 4. The deletion-critical-complement theorem for genuine (kappa_2=2) states must **not** be imported here: a minimum counterexample has (kappa_2(H)=1), and (H-S-v) may be Hamiltonian. The valid replacement is the universal two-ended noninsertability above.
 
 This is scale-independent minimum-counterexample structure and does not use any small-order cutoff.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

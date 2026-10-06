@@ -173,3 +173,8 @@ with an explicit Hamilton order and with \(x,y\) drawn from the common double-re
 The Hamiltonian five-support is not by itself a terminal outcome in a minimum counterexample; bare bounded support is automatic once its complement is proper. The retained information is stronger: the support contains the first three vertices of a longest path with the prescribed terminal pair \((b,a)\), while its two added roots belong to a common exterior class reversing both adjacent prefix edges.
 
 The closure target is to use this anchored five-support to obtain inherited rail shortening, a compatible endpoint transfer, or a longer path preserving enough of the fixed-terminal geometry. No spanning two-cover is claimed here.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

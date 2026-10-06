@@ -145,6 +145,8 @@ The equivalent cyclic target is therefore to cover every blue transition by two 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

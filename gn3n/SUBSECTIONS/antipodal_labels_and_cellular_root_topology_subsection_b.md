@@ -59,3 +59,8 @@ Call such an \(F\) a **hole-sweeping face**. Its significance is global: one fix
 Two immediate consequences are worth recording. The first face block has order at least three, because the first two positions of every chamber always lie in \(P_\pi\); a block of order at most two would make one of its vertices uniformly positive. Symmetrically the last face block has order at least three.
 
 This theorem supplies the higher-dimensional consistency missing from the earlier graph-level Tucker attempt. The labels are actual vertices rather than switch positions, the exact deletion gap \(k\ge2\) forbids complementary labels across chamber edges, and Ky Fan forces failure of uniform signed labeling on one genuine permutahedral face.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

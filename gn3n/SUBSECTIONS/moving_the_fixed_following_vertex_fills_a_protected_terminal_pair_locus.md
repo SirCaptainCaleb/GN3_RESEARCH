@@ -68,3 +68,8 @@ Inside F, the selected occurrence is absent exactly when its terminal ordered pa
 The filling contains the entire old outward locus as its boundary data; it does not discard previously chosen outward chambers. It also does not reverse a tight path. The deformation is carried by explicitly protected convex faces M(G).
 
 This is a local relative extension. Across distinct source faces one still needs compatible enlarged ambient faces H. Fixed positional cut deletion provides an order-preserving construction when the same enlargement positions apply, but existence of the required exit statuses is a combinatorial hypothesis. Boundary antisymmetry alone does not force those statuses.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

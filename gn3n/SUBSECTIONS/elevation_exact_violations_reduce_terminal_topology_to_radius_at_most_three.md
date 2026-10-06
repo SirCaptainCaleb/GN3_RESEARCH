@@ -60,3 +60,8 @@ The useful surviving elevation is instead twofold:
 2. large-radius cancellations caused only by moving \(r\) should be treated as **fiber motion of the auxiliary center**, not as new absolute positive-witness geometry.
 
 Thus the next exact-violation attack should quotient or control the \(r\)-motion fibers, while the fixed-position positive-witness separator machinery handles genuine changes of absolute determining windows.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 2

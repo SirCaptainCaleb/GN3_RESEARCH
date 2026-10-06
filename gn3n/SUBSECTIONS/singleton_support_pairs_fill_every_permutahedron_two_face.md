@@ -146,3 +146,8 @@ already extends equivariantly over the entire two-skeleton.
 Thus the protected four-label \(C_4\) obstruction of the earlier terminal-carrier target is **not** an obstruction in the singleton-allowed support-pair target. It was created by retaining a more rigid carrier notion. The support-pair quotient absorbs all commuting-square and braid-hexagon coherence automatically.
 
 The next closure question is therefore genuinely higher-dimensional: determine whether the same facewise intersection/retraction mechanism extends over every permutahedron face, or whether a first obstruction appears in dimension at least three. Any such obstruction must survive after arbitrary singleton support contraction, so it is strictly stronger than the old four-label loop residue.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1
