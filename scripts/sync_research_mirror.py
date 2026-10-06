@@ -62,7 +62,10 @@ def safe_name(s: str) -> str:
     return "".join(c if c.isalnum() or c in "._-" else "_" for c in s)[:180] or "item"
 
 def doc_md(row: dict[str, Any]) -> str:
-    return f"# {row.get('title') or row['id']}\n\n{row.get('body') or ''}"
+    body = (row.get("body") or "").lstrip()
+    if body.startswith("# "):
+        return body
+    return f"# {row.get('title') or row['id']}\n\n{body}"
 
 def latest_composition(data: dict[str, list[dict[str, Any]]], node_type: str, node_id: str) -> dict[str, Any] | None:
     rows_ = [
