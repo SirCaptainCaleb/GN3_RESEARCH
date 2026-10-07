@@ -1,4 +1,5 @@
 name: Build NOR research artifact
+# manual refresh trigger after NOR mirror sync
 
 on:
   workflow_dispatch:
