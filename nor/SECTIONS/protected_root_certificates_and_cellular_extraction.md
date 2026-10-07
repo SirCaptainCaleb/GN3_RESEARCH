@@ -11,7 +11,7 @@
 - Composition version: 16
 - Composition stale: False
 - Subsections existing when composed: 129
-- Subsections now: 219
+- Subsections now: 220
 
 ## Development tree
 
@@ -234,3 +234,4 @@
 - [Subsection 217 — Audit: Brouwer carrier horizontal boundary orientation gap](../SUBSECTIONS/audit_brouwer_carrier_horizontal_boundary_orientation_gap.md) (`audit_brouwer_carrier_horizontal_boundary_orientation_gap`; development v1; composition vNone; stale=False)
 - [Subsection 218 — The bad neighbor-replacement branch is already a threshold-band boundary under nearest-violation selection](../SUBSECTIONS/the_bad_neighbor_replacement_branch_is_already_a_threshold_band_boundary_under_nearest_violation_selection.md) (`the_bad_neighbor_replacement_branch_is_already_a_threshold_band_boundary_under_nearest_violation_selection`; development v1; composition vNone; stale=False)
 - [Subsection 219 — A width-two full-full corridor is an exact barrier-reflection gadget](../SUBSECTIONS/a_width_two_full_full_corridor_is_an_exact_barrier_reflection_gadget.md) (`a_width_two_full_full_corridor_is_an_exact_barrier_reflection_gadget`; development v1; composition vNone; stale=False)
+- [Subsection 220 — A fully-curved boundary cannot lie two slots from the target switch](../SUBSECTIONS/a_fully_curved_boundary_cannot_lie_two_slots_from_the_target_switch.md) (`a_fully_curved_boundary_cannot_lie_two_slots_from_the_target_switch`; development v1; composition vNone; stale=False)

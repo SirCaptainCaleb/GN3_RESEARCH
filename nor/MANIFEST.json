@@ -155,7 +155,7 @@
   },
   "brainstorm_count": 6,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-07T14:33:49.288051+00:00",
+  "generated_at": "2026-10-07T14:38:58.522405+00:00",
   "mirror_format": 17,
   "schema": "nor",
   "section_versions": {
@@ -306,10 +306,10 @@
         "composition_version": 16,
         "frontier": {
           "current": false,
-          "latest_subsection_no_now": 219,
+          "latest_subsection_no_now": 220,
           "latest_subsection_no_when_composed": 129,
           "subsections_existing_when_composed": 129,
-          "subsections_now": 219
+          "subsections_now": 220
         },
         "has_composition": true,
         "source_note": "r=3 closure pass: selected verified dependencies, new endpoint surgery §128 and witness-class audit §129. Does not assert an exhaustive audit of all other subsections.",
@@ -340,7 +340,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2852,
+  "snapshot_revision": 2853,
   "startup_broadcasts": [
     {
       "body": "Updated fourth wisdom pass, through revision 2718. Replaces nor_fourth_wisdom_pass_20261007. Full live assessment: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development/composition 3.\n\nNOR remains open. The new constructive emphasis is where audited transport paths MEET, and the endpoint double-full gadget's non-returning resolution.\n\nWhat changed:\n- Root §§82,104 show one-sided audited transport roots are independent after projection to an ordered-partition path. A positive dependence cannot live on one such trajectory. Look for compatible gluing between trajectories, braid/commuting cells, or fully-curved stops; do not chase long recurrence within one flag.\n- Root §102 removes the old-corner hypothesis from the endpoint-to-double-full handoff. It applies to its canonical endpoint carrier with p,q>=3 and the displayed perfect-blocker scan. One resolution returns; the other exports risk. Seek a full-support one-change order or a proved improved witness from that exported state.\n- The honest switch prism (root §88) is an existing degree route using W plus a genuine side coordinate. Its labels are violating-window first-minus-last roots, not terminal slide roots. Prioritize compatible extraction, not another raw cancellation theorem.\n- A3 extraction is NOT complete: root §103 identifies the changed-middle gap in §98. Root §101 supplies an internal chamber for its balanced-four-cycle case, still requiring boundary verification.\n\nHighest priorities:\n1. Prove a boundary-safe escape from the non-returning endpoint resolution, retaining the exact blocker data and full changed packet.\n2. Prove the endpoint Johnson square-lift or a local strict-improvement alternative in root §93. Then supply a finite partner-alignment reduction. Telescoping partner defects do not ensure inverse jumps exist, and commuting alone does not prove they disappear. A closed partner-defect interval need not be a closed physical-root cycle (§87 qualification); §89's small synchronized cycles remain conditional.\n3. Repair A3 extraction by tracking the SAME middle coordinate through its block-boundary/exterior window. Produce a certified repair usable inside the declared extremal state class.\n4. Develop a compatible equivariant complex from zero-free transport flags and their actual gluing cells. Prove the needed obstruction survives any extremal energy/band restriction, and connect the forced event to a legal improvement.\n\nDistance-lift qualification (root §100): for the natural product-affine extension F(x,k)=(G(x),a(x)-k), the scalar zero just chooses k=a(x). Since a(x) is an average of allowed transition ranks, zeros correspond to zeros of G. Balanced distance is not automatically an additional physical restriction. Tie k to independent witness/extremal data or prove an extraction relation at that k. The at-least-six-block bound is inherited face localization; avoid successive larger-block classification without an improvement mechanism.\n\nRepair-potential qualification: fixed-cut quadratic distance controls the stated outward bubble class. Root §92's neighbor extension needs a full-packet and orientation audit before declaring every interior Tucker event terminating. Additional exterior windows and inward moves matter. Endpoint and cut-changing events remain distinct. A complementary path leaving an extremal class does not contradict its extremality.\n\nRetain: central-cut incidence is not successor attainment; tangent feasibility at a Johnson vertex already requires attainment. Raw separation of a reversal-closed family is vacuous. Odd lifts still cancel true reversal pairs; their extra relation matters inside compatible supports. Tensor trace one records provenance, not zero defect. Physical subcycle extraction can lose cut chronology. Small W perturbations cannot remove Hamiltonian circuits; irrational parameters do not split arbitrary real coefficients.\n\nDo not reuse the refuted p=2 monotone-scan shortcut or seek a universal splice from the four unconstrained reconnection bits. Keep flat alternating results separate from general reversal-odd labels, and canonical scan hypotheses explicit.\n\nThe desired next output is an actual one-change order, a genuine improved protected witness, or a carrier extraction theorem returning one. The current article has incorporated several earlier qualifications; future recomposition should retain exact repair scope and explicit lower-composition dependencies.\n",
@@ -549,6 +549,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "a_fully_curved_boundary_cannot_lie_two_slots_from_the_target_switch": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "a_fully_curved_cross_tetrahedron_closes_a_maximal_monochromatic_tail": {
