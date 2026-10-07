@@ -1,0 +1,59 @@
+# Window barycenters turn affine certificates into odd nonzero tangent vectors
+
+## Metadata
+
+- ID: window_barycenters_turn_affine_certificates_into_odd_nonzero_tangent_vectors
+- Parent Section: directed_nor_union_closed_bridge
+- Position: 104
+- Row version: 2
+- Development version: 2
+- Composition version: 1
+- Composition stale: False
+
+## Composition
+
+This constructs a tangent-space model of the all-uniformity affine certificates. It supplies a possible alternative to an ordinary Sperner vertex labeling, with its extension problem stated explicitly.
+
+Let the coordinate set have size n, let the coordinate arity be r, and put m=n-r+1. Consider a bad coordinate order pi, with signs epsilon_i and a certificate lambda in K(epsilon) as defined in Subsection 101. Work in H={x in R^n:sum_v x_v=0}. Define the centered rank vector x_pi by (x_pi)_{pi_j}=j-(n+1)/2. Define the barycenter of the i-th ordered window by q_i=(1/r) sum_{a=0}^{r-1} e_{pi_{i+a}}. Put
+
+Z(pi,lambda)=sum_{i=1}^m lambda_i epsilon_i q_i.
+
+Theorem. Z is a nonzero vector in H orthogonal to x_pi. Its coordinate sum is sum lambda_i epsilon_i=0. Also <x_pi,q_i>=i-(m+1)/2=t_i, so <x_pi,Z>=sum lambda_i epsilon_i t_i=0. To prove nonvanishing, the vectors q_1,...,q_m are linearly independent: in a relation sum z_i q_i=0, the coordinate pi_1 forces z_1=0; the coordinate pi_2 then forces z_2=0, and induction through pi_m forces all z_i=0. But z_i=lambda_i epsilon_i cannot all vanish because sum lambda_i=1. Thus Z is tangent to the sphere in H at the normalized rank vector x_pi.
+
+For each bad chamber the set C_pi={Z(pi,lambda):lambda in K(epsilon)} is therefore a nonempty compact convex subset of that tangent space which excludes zero. Every vector retains the common coordinate order and actual window signs used to build its certificate.
+
+Reversal symmetry. If pi is reversed and lambda is reflected in its m positions, then x_revpi=-x_pi, q_i(revpi)=q_{m+1-i}(pi), and epsilon_i(revpi)=-epsilon_{m+1-i}(pi). Consequently Z(revpi,rev lambda)=-Z(pi,lambda). The moment-plane reflection from Subsection 97 has become the proper odd tangent-field symmetry after embedding windows in coordinate space.
+
+Possible topological route. The unit sphere in H has dimension n-2. If n is even, it is an even-dimensional sphere and admits no continuous nowhere-zero tangent vector field. Thus an assumed counterexample, which supplies the nonempty sets C_pi in every chamber, would lead to a contradiction if one could extend compatible choices from these chamber rank points to a continuous nonvanishing tangent field on the whole sphere. No such extension has been proved here. In particular arbitrary interpolation followed by tangent projection may vanish on shared faces; such a zero can mix several orders and is not yet a NOR witness.
+
+What a modified triangulation must accomplish. Its face data must retain the relevant window order, and its interpolation or carrier rule must keep the resulting tangent vector away from zero whenever every incident order is bad. The adjacent-word shared-certificate criterion is one explicit test for a proposed gluing rule, but common certificate weights alone do not identify the window barycenters in two different chambers. That geometric compatibility is an additional requirement. A refinement by itself does not prove it.
+
+Scope. The construction works for every r whenever a bad word exists. The tangent-field contradiction currently addresses even n only; for odd n the sphere has odd dimension and may support a nonvanishing tangent field. No dimension-lifting reduction is assumed. This is a rigorously defined alternative topological interface, not a completed fixed-point proof.
+
+Constructive gluing across some adjacent chambers. Suppose pi' swaps coordinates in positions j,j+1. The window barycenters q_i and q_i' agree except possibly at i=j-r+1 and i=j+1, when those indices lie in {1,...,m}; only those two windows contain exactly one of the exchanged coordinates. Let A consist of positions outside these two boundary indices at which epsilon_i=epsilon_i'. If epsilon restricted to A has an alternating triple, use its three-point certificate in both orders. Both its signs and its window barycenters agree, so the resulting vector Z is identical for pi and pi'. It is orthogonal to both centered rank vectors, hence to every linear combination of them. Therefore the same nonzero Z defines a tangent field along the spherical geodesic joining their normalized rank vectors. This is a proved extension rule across these interfaces, not merely a shared-weight condition.
+
+There is also a canonical chamber choice: take the unique vector of minimum Euclidean norm in the compact convex set C_pi. It is nonzero and reversal sends it to its negative. These canonical vectors need not agree across interfaces; where the preceding common-vector condition applies, the common choice can instead be used for that edge. Compatibility among choices on higher-dimensional faces remains open.
+
+## Development
+
+This constructs a tangent-space model of the all-uniformity affine certificates. It supplies a possible alternative to an ordinary Sperner vertex labeling, with its extension problem stated explicitly.
+
+Let the coordinate set have size n, let the coordinate arity be r, and put m=n-r+1. Consider a bad coordinate order pi, with signs epsilon_i and a certificate lambda in K(epsilon) as defined in Subsection 101. Work in H={x in R^n:sum_v x_v=0}. Define the centered rank vector x_pi by (x_pi)_{pi_j}=j-(n+1)/2. Define the barycenter of the i-th ordered window by q_i=(1/r) sum_{a=0}^{r-1} e_{pi_{i+a}}. Put
+
+Z(pi,lambda)=sum_{i=1}^m lambda_i epsilon_i q_i.
+
+Theorem. Z is a nonzero vector in H orthogonal to x_pi. Its coordinate sum is sum lambda_i epsilon_i=0. Also <x_pi,q_i>=i-(m+1)/2=t_i, so <x_pi,Z>=sum lambda_i epsilon_i t_i=0. To prove nonvanishing, the vectors q_1,...,q_m are linearly independent: in a relation sum z_i q_i=0, the coordinate pi_1 forces z_1=0; the coordinate pi_2 then forces z_2=0, and induction through pi_m forces all z_i=0. But z_i=lambda_i epsilon_i cannot all vanish because sum lambda_i=1. Thus Z is tangent to the sphere in H at the normalized rank vector x_pi.
+
+For each bad chamber the set C_pi={Z(pi,lambda):lambda in K(epsilon)} is therefore a nonempty compact convex subset of that tangent space which excludes zero. Every vector retains the common coordinate order and actual window signs used to build its certificate.
+
+Reversal symmetry. If pi is reversed and lambda is reflected in its m positions, then x_revpi=-x_pi, q_i(revpi)=q_{m+1-i}(pi), and epsilon_i(revpi)=-epsilon_{m+1-i}(pi). Consequently Z(revpi,rev lambda)=-Z(pi,lambda). The moment-plane reflection from Subsection 97 has become the proper odd tangent-field symmetry after embedding windows in coordinate space.
+
+Possible topological route. The unit sphere in H has dimension n-2. If n is even, it is an even-dimensional sphere and admits no continuous nowhere-zero tangent vector field. Thus an assumed counterexample, which supplies the nonempty sets C_pi in every chamber, would lead to a contradiction if one could extend compatible choices from these chamber rank points to a continuous nonvanishing tangent field on the whole sphere. No such extension has been proved here. In particular arbitrary interpolation followed by tangent projection may vanish on shared faces; such a zero can mix several orders and is not yet a NOR witness.
+
+What a modified triangulation must accomplish. Its face data must retain the relevant window order, and its interpolation or carrier rule must keep the resulting tangent vector away from zero whenever every incident order is bad. The adjacent-word shared-certificate criterion is one explicit test for a proposed gluing rule, but common certificate weights alone do not identify the window barycenters in two different chambers. That geometric compatibility is an additional requirement. A refinement by itself does not prove it.
+
+Scope. The construction works for every r whenever a bad word exists. The tangent-field contradiction currently addresses even n only; for odd n the sphere has odd dimension and may support a nonvanishing tangent field. No dimension-lifting reduction is assumed. This is a rigorously defined alternative topological interface, not a completed fixed-point proof.
+
+Constructive gluing across some adjacent chambers. Suppose pi' swaps coordinates in positions j,j+1. The window barycenters q_i and q_i' agree except possibly at i=j-r+1 and i=j+1, when those indices lie in {1,...,m}; only those two windows contain exactly one of the exchanged coordinates. Let A consist of positions outside these two boundary indices at which epsilon_i=epsilon_i'. If epsilon restricted to A has an alternating triple, use its three-point certificate in both orders. Both its signs and its window barycenters agree, so the resulting vector Z is identical for pi and pi'. It is orthogonal to both centered rank vectors, hence to every linear combination of them. Therefore the same nonzero Z defines a tangent field along the spherical geodesic joining their normalized rank vectors. This is a proved extension rule across these interfaces, not merely a shared-weight condition.
+
+There is also a canonical chamber choice: take the unique vector of minimum Euclidean norm in the compact convex set C_pi. It is nonzero and reversal sends it to its negative. These canonical vectors need not agree across interfaces; where the preceding common-vector condition applies, the common choice can instead be used for that edge. Compatibility among choices on higher-dimensional faces remains open.

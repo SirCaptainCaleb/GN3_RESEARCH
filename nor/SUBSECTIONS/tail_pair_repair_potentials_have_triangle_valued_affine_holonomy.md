@@ -1,0 +1,24 @@
+# Tail-pair repair potentials have triangle-valued affine holonomy
+
+## Metadata
+
+- ID: tail_pair_repair_potentials_have_triangle_valued_affine_holonomy
+- Parent Section: directed_nor_union_closed_bridge
+- Position: 132
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+In the coboundary-flat pure-orientation sector define g_{q,r}(v)=alpha(v,q,r). For four distinct coordinates v,q,r,s, the tetrahedral cocycle identity delta alpha=0 gives alpha(q,r,s) xor alpha(v,r,s) xor alpha(v,q,s) xor alpha(v,q,r)=0. Therefore g_{q,r}(v) xor g_{r,s}(v) xor g_{q,s}(v)=alpha(q,r,s), a quantity independent of v. Thus the family of fixed-tail repair potentials is not arbitrary: changing the ordered far tail from (q,r) to (r,s) introduces an affine holonomy controlled exactly by the oriented tail triangle (q,r,s). Combined with the previous subsection, distance-2/3 repair selectors are exact along fixed-tail corridors, while every failure of exactness under tail changes is localized to a triangle of tail coordinates. This is the algebraic codimension-two carrier anticipated by the switch-prism program. If H_{q,r} is the odd-position xor potential on a fixed prefix, then H_{q,r} xor H_{r,s} xor H_{q,s} equals alpha(q,r,s) times the parity of the number of odd positions, provided the same prefix coordinates are being compared. The remaining bookkeeping problem is that actual repairs can move tail coordinates into and out of the prefix; a global no-cycle theorem must account for those support changes. Still, the local holonomy source is now explicit and triangle-valued rather than an unspecified repair defect.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

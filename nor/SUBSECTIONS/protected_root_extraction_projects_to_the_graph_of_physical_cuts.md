@@ -1,0 +1,23 @@
+# Protected-root extraction projects to the graph of physical cuts
+
+## Metadata
+
+- ID: protected_root_extraction_projects_to_the_graph_of_physical_cuts
+- Parent Section: protected_root_certificates_and_cellular_extraction
+- Position: 17
+- Row version: 1
+- Development version: 1
+- Composition version: 1
+- Composition stale: False
+
+## Composition
+
+For a normalized first-phase length p, project every chamber order pi to the physical p-set C(pi) occupying its first p positions. Adjacent transpositions away from positions p,p+1 leave C unchanged; the transposition across those two positions exchanges one element of C with one outside it. Thus the permutahedral chamber graph projects to the Johnson graph of physical p-cuts.
+
+Common-cut coorientation implies that no positive protected-root zero can lie entirely over one cut vertex. Hence every connected carrier piece supporting a genuine positive protected-root obstruction has nonconstant cut projection and contains an actual cut-changing chamber wall. Same-cut exchange loops collapse to one cut vertex and are root-inessential.
+
+The extraction target can therefore be reduced to the first cut-changing wall of a minimal obstruction: prove that such a wall yields a monotone protected replacement, enlarges the threshold-compatible band, or reduces the cut-space support. This does not yet prove the boundary theorem, but it localizes the missing compatibility to codimension one in cut space.
+
+## Development
+
+Cut-projection reduction for the protected-root carrier. Fix a normalized first-phase length p. To every chamber order pi assign the physical p-set C(pi) consisting of its first p coordinates. On the permutohedron, an adjacent transposition away from positions p,p+1 leaves C(pi) unchanged. The unique adjacent transposition at the cut replaces one element of C by one element of its complement. Thus the chamber-to-cut projection sends the permutohedral 1-skeleton to the Johnson graph on p-subsets, equivalently to the 1-skeleton of the hypersimplex. By the common-cut coorientation theorem, all canonical protected roots carried over one fiber C^{-1}(L) lie in a common strict open halfspace, so no positive protected-root zero can be supported entirely over one cut vertex L. Therefore any genuine protected-root Radon obstruction must project to a nonconstant configuration in cut space. In particular every connected carrier piece supporting such an obstruction contains a cut-changing wall, and every such wall is an actual adjacent exchange between the last coordinate on the left of the protected cut and the first coordinate on the right. This gives a smaller extraction target: rather than search arbitrary Coxeter-block chambers for a bridge, project first to the finite cut graph and analyze the first cut-changing wall on a minimal obstruction. Same-cut exchange loops, including the ternary distance-two A2 recurrence, collapse to a single cut vertex and are locally root-inessential. A closure theorem can therefore be split into (i) zero-free filling inside cut fibers, already supplied by strict coorientation, and (ii) a boundary theorem on cut-changing walls showing that a minimal nonconstant cut-space obstruction yields a monotone protected replacement or reduces its cut-space support.

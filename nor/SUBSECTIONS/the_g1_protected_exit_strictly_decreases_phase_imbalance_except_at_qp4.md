@@ -1,0 +1,24 @@
+# The g=1 protected exit strictly decreases phase imbalance except at q=p+4
+
+## Metadata
+
+- ID: the_g1_protected_exit_strictly_decreases_phase_imbalance_except_at_qp4
+- Parent Section: ternary_protected_bridges_and_scan_obstructions
+- Position: 21
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Phase-imbalance descent for the protected g=1 A2 exit. Work with a recurrent flat A2 deletion carrier normalized to run profile (p,q), where p is globally minimum over all deletion carriers, reversals, and color complements. Hence q>=p. The boundary-safe g=1 surgery produces another deletion carrier with profile (p+4,q-4). Let Delta=q-p>=0. If Delta<4, then q-4<p, and reversing/color-complementing the new carrier yields a normalized first phase below the global minimum p, contradiction. Thus any surviving g=1 move has Delta>=4. The normalized phase imbalance of the new carrier is Delta'=|(q-4)-(p+4)|=|Delta-8|. If Delta>4 then Delta'<Delta: for 4<Delta<8, Delta'=8-Delta<Delta, and for Delta>=8, Delta'=Delta-8<Delta. Therefore every g=1 boundary exit either contradicts minimum-phase extremality immediately, or strictly decreases the nonnegative integer phase imbalance. The unique nondecreasing case is Delta=4, where the new profile is (p+4,p) and reversal/color complement returns the same normalized profile (p,p+4). Hence the only possible recurrent g=1 boundary configuration lies on the sharply isolated profile q=p+4. Any termination proof for the g=1 branch now needs only eliminate or escape this equality case.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

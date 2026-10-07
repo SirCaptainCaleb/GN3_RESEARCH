@@ -40,7 +40,7 @@ The broader basepoint-dependent window model is retained only as a guardrail; it
 - Composition version: 7
 - Composition stale: False
 - Subsections existing when composed: 47
-- Subsections now: 47
+- Subsections now: 50
 
 ## Development tree
 
@@ -91,3 +91,6 @@ The broader basepoint-dependent window model is retained only as a guardrail; it
 - [Subsection 45 — Audit of tail truncation and independent singleton-run repair](../SUBSECTIONS/audit_of_tail_truncation_and_independent_singleton_run_repair.md) (`audit_of_tail_truncation_and_independent_singleton_run_repair`; development v1; composition v1; stale=False)
 - [Subsection 46 — Antimatroid supports do not determine tight witness orders](../SUBSECTIONS/antimatroid_supports_do_not_determine_tight_witness_orders.md) (`antimatroid_supports_do_not_determine_tight_witness_orders`; development v1; composition v1; stale=False)
 - [Subsection 47 — Audit: reversed-suffix propagation requires unproved switch polarization](../SUBSECTIONS/reversed_suffix_splice_forces_three_post_switch_windows.md) (`reversed_suffix_splice_forces_three_post_switch_windows`; development v3; composition vNone; stale=False)
+- [Subsection 48 — Two-window final runs force rear residual polarization](../SUBSECTIONS/two_window_final_runs_force_rear_residual_polarization.md) (`two_window_final_runs_force_rear_residual_polarization`; development v1; composition vNone; stale=False)
+- [Subsection 49 — Two-hole cage around a near-spanning ternary tight path](../SUBSECTIONS/two_hole_cage_around_a_near_spanning_ternary_tight_path.md) (`two_hole_cage_around_a_near_spanning_ternary_tight_path`; development v1; composition vNone; stale=False)
+- [Subsection 50 — Full-support interval reversal calculus for cyclic ternary NOR](../SUBSECTIONS/full_support_interval_reversal_calculus_for_cyclic_ternary_nor.md) (`full_support_interval_reversal_calculus_for_cyclic_ternary_nor`; development v1; composition vNone; stale=False)

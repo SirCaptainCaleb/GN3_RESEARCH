@@ -1,0 +1,24 @@
+# Adversarial blueprint: what a genuine ternary counterexample must evade
+
+## Metadata
+
+- ID: adversarial_blueprint_what_a_genuine_ternary_counterexample_must_evade
+- Parent Section: directed_nor_union_closed_bridge
+- Position: 61
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Adversarial blueprint for a possible ternary NOR counterexample, distilled from failed construction attempts. Any genuine false model must evade all of the following large escape mechanisms. (1) Defect-field-only obstruction is impossible: every optional triangle-defect vertex field admits a Hamilton order with no middle-vertex defects. Thus the alternating triangle orientation must itself be bad on every such defect-free order. (2) Endpoint-only labels h(a,b,c)=T(a,c) are impossible counterexamples: interleaving two directed Hamilton paths of T gives a monochromatic spanning order. (3) Center-independent cross structure is too weak: two mutually caged monochromatic cycles with cross tournaments independent of the center admit a monochromatic interleaving of Hamilton paths. Hence any cycle-cage false model needs genuinely center-dependent cross tournaments. (4) Local insertion induction can genuinely fail even with no defect field: relative to a one-change word 0^p1^q, the scan 1^(p+1)0^q blocks prepend, append, and every interior insertion when p,q>=2. Therefore a counterexample can plausibly protect each chosen deletion order by a monotone opposite scan. (5) The cleanest simultaneous realization of those scans found so far collapses: on Z_7 the cyclic deletion paths x+(1,3,4,6,5,2) partition triple ownership perfectly, but requiring every deletion word to be 0011/1100 and every omitted scan to be its blocking step pattern yields contradictory parity equations. Consequently a false model needs a less symmetric ownership system, longer deletion words, or nontrivial coupling between orientation and defect fields. (6) In the pure-orientation sector, fixing a pivot gives a tournament Hamilton-path problem whose cost word records centered triangle closures. Thus a coherent false model must make every pivot tournament Hamilton path have closure indicators with at least two changes. This is currently the cleanest adversarial target. A serious counterexample construction should therefore focus on a center-dependent family of pivot tournaments / triangle orientations with globally incompatible deletion scans, rather than on union-closure shadows, endpoint tournaments, scalar edge orders, or isolated local cages.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

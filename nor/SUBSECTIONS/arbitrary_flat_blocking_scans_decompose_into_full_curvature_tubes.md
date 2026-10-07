@@ -1,0 +1,24 @@
+# Arbitrary flat blocking scans decompose into full-curvature tubes
+
+## Metadata
+
+- ID: arbitrary_flat_blocking_scans_decompose_into_full_curvature_tubes
+- Parent Section: directed_nor_union_closed_bridge
+- Position: 222
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Arbitrary flat blocking scans decompose into full-curvature tubes. Let O have ternary word 0^p1^q in the coboundary-flat sector and let s_i=alpha(x,v_i,v_{i+1}) be the scan of an omitted coordinate whose insertion into every gap is bad. Deep inside the old 0-phase, inserting x after v_j has packet (s_{j-1},1-s_j,s_{j+1}) followed later by inherited zeros and then the old 1-phase. Such an insertion is good exactly when the packet is 000, i.e. when the scan has pattern 010. Hence a blocking scan contains no 010 wholly inside the 0-phase. Every scan-1 run there therefore has length at least two. For Q_i={x,v_i,v_{i+1},v_{i+2}} with w_i=0: if (s_i,s_{i+1})=(1,1), the ordered quadruple has consecutive statuses (1,0) and opposite face s_{i+1}=1 equal to the first status, so Q_i is fully curved; if (s_i,s_{i+1})=(1,0), the same transition has opposite face equal to the second status, so Q_i is flat. Dually, wholly inside the old 1-phase, blocking forbids scan pattern 101; every scan-0 run has length at least two; adjacent 00 gives a fully-curved tetrahedron and a 01 transition gives the flat alternative. Thus an arbitrary insertion-blocking scan canonically decomposes into full-curvature tubes carried by the scan phase opposite the carrier phase, separated by flat scan-transition tetrahedra. The earlier special scan 1^(p+1)0^q is only the extremal one-tube-per-side case. This tube decomposition is unconditional in the flat sector and provides the natural geometry for propagating the protected exits of the remaining antipodal braid cage.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

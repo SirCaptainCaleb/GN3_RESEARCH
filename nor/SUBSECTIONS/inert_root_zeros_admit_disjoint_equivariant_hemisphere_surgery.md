@@ -1,0 +1,24 @@
+# Inert root zeros admit disjoint equivariant hemisphere surgery
+
+## Metadata
+
+- ID: inert_root_zeros_admit_disjoint_equivariant_hemisphere_surgery
+- Parent Section: protected_root_certificates_and_cellular_extraction
+- Position: 10
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+Assume the protected-root map is piecewise affine on a finite free antipodal carrier complex. At an inert bridge vertex v the actual common-halfspace theorem supplies a functional phi_v positive on every nonzero root label in the whole local star. Hence, by affine interpolation, every punctured point sufficiently near v also has phi_v(F)>0: v is an isolated zero and a small link around v maps into one open halfspace. Choose pairwise-disjoint small balls around all inert zero vertices, paired antipodally. On each boundary sphere the map lands in a convex open halfspace, so it extends zero-free across the ball by coning to any fixed vector in that halfspace. Fill the antipodal ball by negation. Because the balls are disjoint, no compatibility between overlapping combinatorial stars is needed. Thus, once the global protected carrier/root map itself is justified, all inert-vertex zeros can be removed simultaneously and equivariantly without constructing a globally regular blow-up complex. The remaining topological obligation is to build the global carrier/root map and extract a protected bridge from any noninert zero that survives.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1
