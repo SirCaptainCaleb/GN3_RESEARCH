@@ -1,6 +1,6 @@
 name: Sync NOR research mirror
 # audit model refresh
-# architecture refresh trigger 3
+# architecture refresh trigger 4
 
 on:
   workflow_dispatch:
