@@ -7,12 +7,12 @@
 - Position: 16
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Audit repair. Blocking in the old 1-phase excludes a local 101 packet but does not force the entire insertion scan to be monotone; explicit globally flat blocked p=2 scans can rise later. Therefore the old p=2 s=110... classification and arguments depending on it are invalid. Separately, the former g=1 A2 splice omitted a new suffix boundary window. The g=0 boundary-safe surgery remains valid. Future local closure claims must track every changed boundary window and use the corrected arbitrary-scan replacement theorem.
 
 ## Development
 
@@ -68,8 +68,3 @@ Prefer local moves that preserve the right ordered boundary pair while toleratin
 The antipodal hexagon of Article II subsection 221 and the surviving g=1 A2 branch should be investigated as related boundary transport problems. Seek an augmenting sequence of actual good deletion witnesses, tracking omitted coordinate, ordered boundary pairs, and threshold position. A repeated state is an unresolved cycle unless an additional exit is proved. A finite bound on one kind of drift does not establish termination of the whole process.
 
 This is a concrete repair target: prove a boundary-preserving alternative for g=1, or show how its failed boundary window yields another usable deletion witness with a justified strict improvement. The local g=0 elimination and subsection 218's arbitrary-scan boundary replacement remain useful inputs.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

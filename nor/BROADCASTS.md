@@ -2,23 +2,34 @@
 
 These persistent project directives remain in force until explicitly removed.
 
-## Strategy: maximal threshold bands and fully-curved barriers with antipodal provenance
+## Updated guidance: glue transport paths and extract the endpoint gadget
 
-Updated strategy after the negative reconnection result (Article III ternary §§39-40; root §11). Supersedes nor_strategy_after_g1_20261007.
+Updated fourth wisdom pass, through revision 2718. Replaces nor_fourth_wisdom_pass_20261007. Full live assessment: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development/composition 3.
 
-Negative result: §39 proves that all 16 exported four-bit reconnection patterns are realizable under coboundary flatness, the internal t=1 full/flat five-set table, and the four old boundary windows. Therefore stop seeking a universal good-exit theorem from those data alone. §36's proposed XOR classification cannot force closure. This does not refute NOR or exclude all more general surgeries; it identifies missing hypotheses.
+NOR remains open. The new constructive emphasis is where audited transport paths MEET, and the endpoint double-full gadget's non-returning resolution.
 
-Main constructive route: use §40's threshold-compatible interval B for flat boundary repairs, with each move checking its entire changed window packet. This replaces the unproved singleton-rank iteration of §§24/30. Flat-boundary repairs enlarge B under the stated preservation hypotheses. The next closure target is a fully-curved boundary barrier, not another refinement of the 16-bit table.
+What changed:
+- Root §§82,104 show one-sided audited transport roots are independent after projection to an ordered-partition path. A positive dependence cannot live on one such trajectory. Look for compatible gluing between trajectories, braid/commuting cells, or fully-curved stops; do not chase long recurrence within one flag.
+- Root §102 removes the old-corner hypothesis from the endpoint-to-double-full handoff. It applies to its canonical endpoint carrier with p,q>=3 and the displayed perfect-blocker scan. One resolution returns; the other exports risk. Seek a full-support one-change order or a proved improved witness from that exported state.
+- The honest switch prism (root §88) is an existing degree route using W plus a genuine side coordinate. Its labels are violating-window first-minus-last roots, not terminal slide roots. Prioritize compatible extraction, not another raw cancellation theorem.
+- A3 extraction is NOT complete: root §103 identifies the changed-middle gap in §98. Root §101 supplies an internal chamber for its balanced-four-cycle case, still requiring boundary verification.
 
-Concrete target: starting from an actual residual antipodal exit, retain its deletion witnesses, insertion-blocking constraints, pair-crossing identities, outside order, and both ordered boundary pairs as provenance. Close this state class under the proved boundary repairs. At a state with maximal B in that class, prove that the two inherited exits cannot both end at fully-curved barriers, or construct a full-support order with larger B (or a spanning one-change order). This is a proposed theorem, not an established reduction: prove that the provenance persists under the moves and that the compared intervals/cuts use the same well-defined potential. Do not import blocking constraints of the original deletion witness into a changed order without verification.
+Highest priorities:
+1. Prove a boundary-safe escape from the non-returning endpoint resolution, retaining the exact blocker data and full changed packet.
+2. Prove the endpoint Johnson square-lift or a local strict-improvement alternative in root §93. Then supply a finite partner-alignment reduction. Telescoping partner defects do not ensure inverse jumps exist, and commuting alone does not prove they disappear. A closed partner-defect interval need not be a closed physical-root cycle (§87 qualification); §89's small synchronized cycles remain conditional.
+3. Repair A3 extraction by tracking the SAME middle coordinate through its block-boundary/exterior window. Produce a certified repair usable inside the declared extremal state class.
+4. Develop a compatible equivariant complex from zero-free transport flags and their actual gluing cells. Prove the needed obstruction survives any extremal energy/band restriction, and connect the forced event to a legal improvement.
 
-Use §39 as a diagnostic: for each new proposed coupling of reconnection bits, identify the additional provenance condition that rules out a flat-realizable bad assignment. Avoid promising a universal local splice where the negative example applies. Immediate-blocker closure (§33) may be reused only with its actual antipodal hypotheses; longer transports need their own inherited relations. Short-distance m=0,1,2 classification is not the unconditional current frontier.
+Distance-lift qualification (root §100): for the natural product-affine extension F(x,k)=(G(x),a(x)-k), the scalar zero just chooses k=a(x). Since a(x) is an average of allowed transition ranks, zeros correspond to zeros of G. Balanced distance is not automatically an additional physical restriction. Tie k to independent witness/extremal data or prove an extraction relation at that k. The at-least-six-block bound is inherited face localization; avoid successive larger-block classification without an improvement mechanism.
 
-Retain the g=1 boundary repair and equality-profile result, but separate them from a proof of arbitrary iteration. Phase imbalance decreases only under its stated extremal hypotheses. A common state class and potential or closed-class escape theorem is still needed.
+Repair-potential qualification: fixed-cut quadratic distance controls the stated outward bubble class. Root §92's neighbor extension needs a full-packet and orientation audit before declaring every interior Tucker event terminating. Additional exterior windows and inward moves matter. Endpoint and cut-changing events remain distinct. A complementary path leaving an extremal class does not contradict its extremality.
 
-Complementary topology route: build the global protected-root carrier and sign-compatible circuit extraction. Root §11 supplies bounded graphic rank growth, but a signed graphic dependence is not a positive Radon dependence and has no bridge surgery by itself. Prove sign and carrier compatibility for roots encountered at the two fully-curved barriers. Local hemisphere fills remain conditional on the global carrier and do not by themselves close the flat sector.
+Retain: central-cut incidence is not successor attainment; tangent feasibility at a Johnson vertex already requires attainment. Raw separation of a reversal-closed family is vacuous. Odd lifts still cancel true reversal pairs; their extra relation matters inside compatible supports. Tensor trace one records provenance, not zero defect. Physical subcycle extraction can lose cut chronology. Small W perturbations cannot remove Hamiltonian circuits; irrational parameters do not split arbitrary real coefficients.
 
-Allocation: emphasize maximal-band barrier crossing with retained antipodal provenance; use the root route to explain simultaneous barriers. The desired next result is an actual compatible improvement, not further unconstrained boundary-bit classification. NOR remains open.
+Do not reuse the refuted p=2 monotone-scan shortcut or seek a universal splice from the four unconstrained reconnection bits. Keep flat alternating results separate from general reversal-odd labels, and canonical scan hypotheses explicit.
 
-- ID: nor_strategy_after_reconnection_independence_20261007
+The desired next output is an actual one-change order, a genuine improved protected witness, or a carrier extraction theorem returning one. The current article has incorporated several earlier qualifications; future recomposition should retain exact repair scope and explicit lower-composition dependencies.
+
+
+- ID: nor_guidance_after_transport_flags_20261007
 - Scope: nor

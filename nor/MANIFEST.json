@@ -110,9 +110,9 @@
     },
     "article_iii_protected_deletion_descent": {
       "composition": {
-        "body_chars": 3150,
-        "composed_through_revision": 2581,
-        "composition_version": 8,
+        "body_chars": 2586,
+        "composed_through_revision": 2753,
+        "composition_version": 13,
         "frontier": {
           "current": true,
           "latest_section_position_now": 3,
@@ -121,7 +121,7 @@
           "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Article III refreshed through terminating local ternary dynamics, actual-root fixed-point topology, side-lifted provenance, and minimal lifted-cycle decomposition.",
+        "source_note": "Bottom-up r=3 closure pass, incorporating root §128 endpoint surgery and §129 witness-class audit through selected section dependencies.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -155,7 +155,7 @@
   },
   "brainstorm_count": 6,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-07T03:05:24.02458+00:00",
+  "generated_at": "2026-10-07T14:33:49.288051+00:00",
   "mirror_format": 17,
   "schema": "nor",
   "section_versions": {
@@ -301,44 +301,38 @@
     },
     "protected_root_certificates_and_cellular_extraction": {
       "composition": {
-        "body_chars": 3372,
-        "composed_through_revision": 2580,
-        "composition_version": 10,
+        "body_chars": 2629,
+        "composed_through_revision": 2752,
+        "composition_version": 16,
         "frontier": {
           "current": false,
-          "latest_subsection_no_now": 45,
-          "latest_subsection_no_when_composed": 38,
-          "subsections_existing_when_composed": 38,
-          "subsections_now": 45
+          "latest_subsection_no_now": 219,
+          "latest_subsection_no_when_composed": 129,
+          "subsections_existing_when_composed": 129,
+          "subsections_now": 219
         },
         "has_composition": true,
-        "source_note": "Recomposed through side-balanced circuit decomposition and the even-order actual-root fixed-point flow; closure frontier reduced to minimal cut exchanges in the faithful root+cut+side state.",
-        "stale": true,
-        "stale_dependencies": [
-          {
-            "composition_saw_version": 1,
-            "current_composition_version": 2,
-            "source_id": "even_order_fixed_points_force_descent_root_flow_across_every_face_cut"
-          }
-        ]
+        "source_note": "r=3 closure pass: selected verified dependencies, new endpoint surgery §128 and witness-class audit §129. Does not assert an exhaustive audit of all other subsections.",
+        "stale": false,
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
     },
     "ternary_protected_bridges_and_scan_obstructions": {
       "composition": {
-        "body_chars": 1876,
-        "composed_through_revision": 2579,
-        "composition_version": 8,
+        "body_chars": 1732,
+        "composed_through_revision": 2631,
+        "composition_version": 9,
         "frontier": {
-          "current": false,
+          "current": true,
           "latest_subsection_no_now": 63,
-          "latest_subsection_no_when_composed": 62,
-          "subsections_existing_when_composed": 62,
+          "latest_subsection_no_when_composed": 63,
+          "subsections_existing_when_composed": 63,
           "subsections_now": 63
         },
         "has_composition": true,
-        "source_note": "Refresh through the two one-sided resolutions of every double-full singleton; local ternary dynamics now hand off entirely to protected-root extraction.",
+        "source_note": "Audit repair: removes the refuted p=2 monotone-scan handoff and recomposes around corrected arbitrary-scan dynamics and provenance-sensitive boundary transport.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -346,16 +340,16 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2597,
+  "snapshot_revision": 2852,
   "startup_broadcasts": [
     {
-      "body": "Updated strategy after the negative reconnection result (Article III ternary §§39-40; root §11). Supersedes nor_strategy_after_g1_20261007.\n\nNegative result: §39 proves that all 16 exported four-bit reconnection patterns are realizable under coboundary flatness, the internal t=1 full/flat five-set table, and the four old boundary windows. Therefore stop seeking a universal good-exit theorem from those data alone. §36's proposed XOR classification cannot force closure. This does not refute NOR or exclude all more general surgeries; it identifies missing hypotheses.\n\nMain constructive route: use §40's threshold-compatible interval B for flat boundary repairs, with each move checking its entire changed window packet. This replaces the unproved singleton-rank iteration of §§24/30. Flat-boundary repairs enlarge B under the stated preservation hypotheses. The next closure target is a fully-curved boundary barrier, not another refinement of the 16-bit table.\n\nConcrete target: starting from an actual residual antipodal exit, retain its deletion witnesses, insertion-blocking constraints, pair-crossing identities, outside order, and both ordered boundary pairs as provenance. Close this state class under the proved boundary repairs. At a state with maximal B in that class, prove that the two inherited exits cannot both end at fully-curved barriers, or construct a full-support order with larger B (or a spanning one-change order). This is a proposed theorem, not an established reduction: prove that the provenance persists under the moves and that the compared intervals/cuts use the same well-defined potential. Do not import blocking constraints of the original deletion witness into a changed order without verification.\n\nUse §39 as a diagnostic: for each new proposed coupling of reconnection bits, identify the additional provenance condition that rules out a flat-realizable bad assignment. Avoid promising a universal local splice where the negative example applies. Immediate-blocker closure (§33) may be reused only with its actual antipodal hypotheses; longer transports need their own inherited relations. Short-distance m=0,1,2 classification is not the unconditional current frontier.\n\nRetain the g=1 boundary repair and equality-profile result, but separate them from a proof of arbitrary iteration. Phase imbalance decreases only under its stated extremal hypotheses. A common state class and potential or closed-class escape theorem is still needed.\n\nComplementary topology route: build the global protected-root carrier and sign-compatible circuit extraction. Root §11 supplies bounded graphic rank growth, but a signed graphic dependence is not a positive Radon dependence and has no bridge surgery by itself. Prove sign and carrier compatibility for roots encountered at the two fully-curved barriers. Local hemisphere fills remain conditional on the global carrier and do not by themselves close the flat sector.\n\nAllocation: emphasize maximal-band barrier crossing with retained antipodal provenance; use the root route to explain simultaneous barriers. The desired next result is an actual compatible improvement, not further unconstrained boundary-bit classification. NOR remains open.",
-      "broadcast_id": "nor_strategy_after_reconnection_independence_20261007",
-      "created_at": "2026-10-07T02:06:40.349537+00:00",
-      "creation_revision": 2465,
-      "priority": 15,
+      "body": "Updated fourth wisdom pass, through revision 2718. Replaces nor_fourth_wisdom_pass_20261007. Full live assessment: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development/composition 3.\n\nNOR remains open. The new constructive emphasis is where audited transport paths MEET, and the endpoint double-full gadget's non-returning resolution.\n\nWhat changed:\n- Root §§82,104 show one-sided audited transport roots are independent after projection to an ordered-partition path. A positive dependence cannot live on one such trajectory. Look for compatible gluing between trajectories, braid/commuting cells, or fully-curved stops; do not chase long recurrence within one flag.\n- Root §102 removes the old-corner hypothesis from the endpoint-to-double-full handoff. It applies to its canonical endpoint carrier with p,q>=3 and the displayed perfect-blocker scan. One resolution returns; the other exports risk. Seek a full-support one-change order or a proved improved witness from that exported state.\n- The honest switch prism (root §88) is an existing degree route using W plus a genuine side coordinate. Its labels are violating-window first-minus-last roots, not terminal slide roots. Prioritize compatible extraction, not another raw cancellation theorem.\n- A3 extraction is NOT complete: root §103 identifies the changed-middle gap in §98. Root §101 supplies an internal chamber for its balanced-four-cycle case, still requiring boundary verification.\n\nHighest priorities:\n1. Prove a boundary-safe escape from the non-returning endpoint resolution, retaining the exact blocker data and full changed packet.\n2. Prove the endpoint Johnson square-lift or a local strict-improvement alternative in root §93. Then supply a finite partner-alignment reduction. Telescoping partner defects do not ensure inverse jumps exist, and commuting alone does not prove they disappear. A closed partner-defect interval need not be a closed physical-root cycle (§87 qualification); §89's small synchronized cycles remain conditional.\n3. Repair A3 extraction by tracking the SAME middle coordinate through its block-boundary/exterior window. Produce a certified repair usable inside the declared extremal state class.\n4. Develop a compatible equivariant complex from zero-free transport flags and their actual gluing cells. Prove the needed obstruction survives any extremal energy/band restriction, and connect the forced event to a legal improvement.\n\nDistance-lift qualification (root §100): for the natural product-affine extension F(x,k)=(G(x),a(x)-k), the scalar zero just chooses k=a(x). Since a(x) is an average of allowed transition ranks, zeros correspond to zeros of G. Balanced distance is not automatically an additional physical restriction. Tie k to independent witness/extremal data or prove an extraction relation at that k. The at-least-six-block bound is inherited face localization; avoid successive larger-block classification without an improvement mechanism.\n\nRepair-potential qualification: fixed-cut quadratic distance controls the stated outward bubble class. Root §92's neighbor extension needs a full-packet and orientation audit before declaring every interior Tucker event terminating. Additional exterior windows and inward moves matter. Endpoint and cut-changing events remain distinct. A complementary path leaving an extremal class does not contradict its extremality.\n\nRetain: central-cut incidence is not successor attainment; tangent feasibility at a Johnson vertex already requires attainment. Raw separation of a reversal-closed family is vacuous. Odd lifts still cancel true reversal pairs; their extra relation matters inside compatible supports. Tensor trace one records provenance, not zero defect. Physical subcycle extraction can lose cut chronology. Small W perturbations cannot remove Hamiltonian circuits; irrational parameters do not split arbitrary real coefficients.\n\nDo not reuse the refuted p=2 monotone-scan shortcut or seek a universal splice from the four unconstrained reconnection bits. Keep flat alternating results separate from general reversal-odd labels, and canonical scan hypotheses explicit.\n\nThe desired next output is an actual one-change order, a genuine improved protected witness, or a carrier extraction theorem returning one. The current article has incorporated several earlier qualifications; future recomposition should retain exact repair scope and explicit lower-composition dependencies.\n",
+      "broadcast_id": "nor_guidance_after_transport_flags_20261007",
+      "created_at": "2026-10-07T04:12:49.135856+00:00",
+      "creation_revision": 2721,
+      "priority": 10,
       "scope": "nor",
-      "title": "Strategy: maximal threshold bands and fully-curved barriers with antipodal provenance"
+      "title": "Updated guidance: glue transport paths and extract the endpoint gadget"
     }
   ],
   "subsection_versions": {
@@ -407,6 +401,22 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 2
     },
+    "a_complementary_tucker_edge_seeds_a_terminating_central_threshold_band": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "a_continuous_antipodal_face_carrier_retains_actual_descent_roots": {
       "composition": {
         "body_chars": 663,
@@ -445,6 +455,22 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 2
     },
+    "a_distance_lifted_all_descent_switch_prism_carrier_pushes_every_forced_zero_beyond_a4": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "a_doubly_extremal_threshold_state_has_full_curvature_at_the_cut_or_within_three_ranks": {
       "composition": {
         "composition_version": null,
@@ -461,6 +487,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "a_face_bijective_balanced_lifted_a3_four_cycle_forces_full_curvature": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "a_five_set_contains_at_most_two_fully_curved_tetrahedra": {
       "composition": {
         "composition_version": null,
@@ -475,6 +517,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "a_flat_ternary_switch_carries_an_exact_boundary_separated_repair_square": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "a_fully_curved_2_to_1_corner_immediately_collapses_a_four_change_carrier": {
@@ -507,6 +565,54 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "a_fully_curved_target_switch_cannot_be_one_slot_from_a_fully_curved_boundary": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_fully_curved_ten_barrier_has_a_canonical_zero_deletion_shadow": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_global_good_order_selector_makes_sperner_face_witnesses_block_local_along_every_flag": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "a_globally_maximal_threshold_band_is_bracketed_only_by_full_curvature": {
@@ -592,6 +698,38 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "a_minimum_first_deletion_witness_has_a_fully_curved_internal_switch_once_the_first_phase_has_length_at_least_four": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_one_band_per_face_sperner_carrier_yields_a_witnessed_macro_root_closing_path": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "a_perfect_blocker_has_exactly_one_flat_tetrahedron_in_its_curvature_tube": {
       "composition": {
         "composition_version": null,
@@ -626,13 +764,16 @@
     },
     "a_protected_root_canonically_determines_its_adjacent_johnson_cut": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 545,
+        "composed_through_revision": 2603,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -673,6 +814,25 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "a_second_splice_bit_preserves_endpoint_provenance_and_closes_the_phase_three_pinned_branch": {
+      "composition": {
+        "body_chars": 567,
+        "composed_through_revision": 2748,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Exact symbolic window audit; preserves endpoint witness class instead of minimizing mixed physical circuits.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "a_singleton_threshold_defect_shifts_right_unless_its_curvature_type_is_full_flat": {
@@ -723,6 +883,38 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "a_stopped_endpoint_pivot_either_ejects_a_farther_root_or_enters_flat_transport": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_support_minimal_honest_lifted_zero_has_at_most_two_physical_cycle_components": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "a_two_root_radon_zero_in_one_carrier_cell_contains_the_needed_coxeter_swap_direction": {
       "composition": {
         "composition_version": null,
@@ -737,6 +929,70 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "a_vertical_cut_edge_carries_a_canonical_complementary_middle_pair_in_the_top_permutahedron": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_width_two_full_full_corridor_is_an_exact_barrier_reflection_gadget": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_witnessed_product_cell_brouwer_carrier_removes_the_averaging_provenance_gap": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "a_zero_distance_descent_at_the_switch_is_always_a_direct_compatible_repair_event": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "actual_root_face_averages_are_strictly_inward_when_all_ternary_blocks_have_size_at_most_five": {
@@ -892,6 +1148,22 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "an_irrational_two_moment_perturbation_forces_hamiltonian_regular_cut_designs": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "an_odd_violation_vector_whose_chamber_zeros_are_one_change_words": {
       "composition": {
         "body_chars": 473,
@@ -910,6 +1182,22 @@
       "development_version": 1,
       "section_id": "port_near_one_change_word_structure",
       "version": 2
+    },
+    "an_unextracted_full_dimensional_lifted_circuit_has_sign_separated_middle_fibers": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     },
     "antimatroid_saturation_and_the_two_obstruction_dichotomy": {
       "composition": {
@@ -1045,6 +1333,25 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "arbitrary_complementary_tucker_cells_still_contain_a_controlled_local_repair_event": {
+      "composition": {
+        "body_chars": 604,
+        "composed_through_revision": 2672,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "arbitrary_flat_blocking_scans_admit_a_replacement_on_one_side_of_the_switch": {
       "composition": {
         "body_chars": 490,
@@ -1082,6 +1389,25 @@
     },
     "arbitrary_scan_flat_replacement_dynamics_reduce_to_one_a2_recurrence": {
       "composition": {
+        "body_chars": 509,
+        "composed_through_revision": 2628,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "arithmetic_progression_synchronized_shifts_are_monochromatic": {
+      "composition": {
         "composition_version": null,
         "frontier": {
           "current": false,
@@ -1093,7 +1419,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_a3_reversal_does_not_automatically_preserve_protected_root_provenance": {
@@ -1108,6 +1434,73 @@
         },
         "has_composition": true,
         "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "audit_a_closed_johnson_cut_orbit_need_not_be_a_one_token_physical_cycle": {
+      "composition": {
+        "body_chars": 464,
+        "composed_through_revision": 2651,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Scoped mathematical development after review of current fixed-point, shore-cycle, and perturbation work.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "audit_a_full_ten_barrier_deletion_exposes_one_additional_crossing_window": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "audit_a_global_fixed_block_order_selector_is_not_automatically_antipodal": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "audit_a_hamiltonian_root_simplex_has_nonzero_local_degree_and_cannot_be_removed_relative_to_its_boundary": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1134,6 +1527,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_alternate_middle_a3_extraction_changes_the_tracked_tucker_coordinate": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_antipodal_exits_are_boundary_safe_but_e1_rank_transport_remains_unproved": {
       "composition": {
         "composition_version": null,
@@ -1148,6 +1557,22 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "audit_brouwer_carrier_horizontal_boundary_orientation_gap": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_cellular_bubble_extraction_requires_a_fixed_order_of_the_other_coordinates": {
@@ -1169,6 +1594,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_complementary_middle_reversal_does_not_automatically_stay_in_one_vertical_product_cell": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_crossed_endpoint_circuits_used_unproved_pair_cycle_persistence": {
       "composition": {
         "composition_version": null,
@@ -1183,6 +1624,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "audit_deleting_a_full_barrier_vertex_creates_an_extra_outer_splice_window": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_endpoint_scan_agreement_does_not_imply_an_a2_suffix_holonomy_loop": {
@@ -1236,6 +1693,25 @@
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
+    "audit_hamiltonian_endpoint_cycle_shortcuts_must_preserve_the_minimization_class": {
+      "composition": {
+        "body_chars": 600,
+        "composed_through_revision": 2750,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Closure pass: exact witness-class audit and the established zero-free transport theorem.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_insertion_blocking_does_not_force_the_special_blocker_scan": {
       "composition": {
         "body_chars": 449,
@@ -1255,6 +1731,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_irrational_moment_coefficients_do_not_separate_arbitrary_topological_zero_weights": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_late_blocker_descent_leaves_m012_not_only_m12": {
       "composition": {
         "composition_version": null,
@@ -1271,6 +1763,22 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "audit_lifted_circuit_size_does_not_force_an_n_dimensional_domain_simplex_under_averaged_carrier_labels": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_local_a2_scan_constraints_do_not_imply_global_scan_monotonicity": {
       "composition": {
         "composition_version": null,
@@ -1285,6 +1793,22 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "audit_minimum_counterexamplehood_does_not_orient_every_proper_block_zero_to_one": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_minimum_middle_run_needs_a_rooted_extremality_lemma": {
@@ -1414,6 +1938,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 2
     },
+    "audit_pinned_hamiltonian_endpoint_boundaries_always_give_an_immediate_chord": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_protected_deletion_carrier_descent_closes_the_flat_ternary_sector": {
       "composition": {
         "body_chars": 808,
@@ -1465,6 +2005,25 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_raw_antipodal_terminal_root_separation_is_vacuous_without_an_orientation_slice": {
+      "composition": {
+        "body_chars": 480,
+        "composed_through_revision": 2671,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_rear_circuit_descent_is_one_step": {
       "composition": {
         "composition_version": null,
@@ -1483,13 +2042,16 @@
     },
     "audit_short_phase_scan_rises_and_the_missing_a2_suffix_window": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 523,
+        "composed_through_revision": 2629,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1529,6 +2091,22 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "audit_switch_prism_odd_maps_have_a_tautological_interior_center_zero": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_synthesis_g1_boundary_repair_is_complete_locally_iteration_still_needs_a_common_potential": {
       "composition": {
         "composition_version": null,
@@ -1543,6 +2121,25 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "audit_terminal_band_roots_need_not_cross_the_normalized_johnson_cut": {
+      "composition": {
+        "body_chars": 286,
+        "composed_through_revision": 2694,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_the_canonical_full_permutahedron_root_map_has_a_trivial_central_zero": {
@@ -1577,6 +2174,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_the_cut_moment_perturbation_encodes_side_but_not_cut_identity": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_the_cyclic_repair_status_circle_has_length_n_not_n_2": {
       "composition": {
         "composition_version": null,
@@ -1591,6 +2204,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "audit_the_distance_three_square_or_root_theorem_covers_only_inward_facing_singleton_repairs": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_the_even_cycle_z2_repair_charge_is_identically_zero": {
@@ -1753,6 +2382,38 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_the_special_scan_endpoint_double_full_branch_is_already_excluded_by_deletion_descent": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "audit_the_three_step_chord_transfers_hamiltonian_degree_rather_than_removing_it": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_the_two_to_one_corner_swap_and_repair_the_canonical_deletion_carrier": {
       "composition": {
         "body_chars": 611,
@@ -1772,6 +2433,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "audit_theta_bypass_descent_has_a_degenerate_single_edge_return_path_endpoint": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "audit_tournament_two_chord_reduction_is_sufficient_not_equivalent": {
       "composition": {
         "composition_version": null,
@@ -1786,6 +2463,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "audit_two_cycle_lifted_zeros_need_not_meet_in_at_most_one_vertex": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "audit_weighted_cube_boundary_zeros_remain_in_pole_stars": {
@@ -1875,6 +2568,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "balanced_a3_four_cycles_force_an_internal_switch_chamber_the_22_residue_is_crossed_diagonal": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "balanced_homogeneous_tournament_cuts_give_monochromatic_interleavings": {
@@ -2036,6 +2745,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "brouwer_gives_a_protected_root_circuit_or_an_exposed_global_shore_potential": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "bubble_repair_extraction_works_for_prism_carriers_across_adjacent_cut_levels": {
       "composition": {
         "composition_version": null,
@@ -2051,6 +2776,25 @@
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
+    },
+    "canonical_endpoint_swap_reaches_the_double_full_gadget": {
+      "composition": {
+        "body_chars": 679,
+        "composed_through_revision": 2715,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "canonical_flat_sector_carriers_have_a_double_curvature_barrier": {
       "composition": {
@@ -2068,6 +2812,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "canonical_sperner_witness_gluing_reduces_to_disjoint_merge_squares_and_three_block_associativity_diamonds": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "canonical_switch_roots_lie_in_a_strict_protected_cut_cone": {
       "composition": {
         "body_chars": 405,
@@ -2080,6 +2840,41 @@
         },
         "has_composition": true,
         "source_note": "Audited protected-root carrier refinement.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "canonical_ternary_switch_packets_split_exactly_into_full_and_flat_descent_types": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "canonical_ternary_switch_packets_split_into_forced_flat_and_forced_full_descent_types": {
+      "composition": {
+        "body_chars": 486,
+        "composed_through_revision": 2682,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -2291,6 +3086,22 @@
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
+    "common_face_protected_root_zeros_localize_to_a_threshold_hypersimplex": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "common_tail_cycles_polarize_the_first_post_switch_coordinate": {
       "composition": {
         "composition_version": null,
@@ -2355,6 +3166,54 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "complementary_tucker_paths_can_avoid_global_endpoint_loss_outside_the_solved_a2_case": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "connected_bicyclic_honest_lifted_circuits_have_an_exact_path_flow_normal_form": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "consecutive_endpoint_barriers_form_a_corner_bit_compatibility_tetrahedron": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "convex_run_extremality_forces_curvature_barriers_between_long_runs": {
       "composition": {
         "composition_version": null,
@@ -2388,6 +3247,22 @@
       },
       "development_version": 1,
       "section_id": "protected_coordinate_deletion_descent",
+      "version": 1
+    },
+    "corner_lifting_plus_endpoint_pivots_eliminates_hamiltonian_endpoint_cycles": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "corrected_endpoint_repairs_transport_a_switch_by_two_or_three_positions": {
@@ -2463,6 +3338,41 @@
       "section_id": "protected_coordinate_deletion_descent",
       "version": 1
     },
+    "cut_incompatibility_around_a_protected_root_cycle_is_itself_a_zero_sum_defect_circulation": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "cut_moment_perturbations_encode_side_provenance_without_increasing_target_dimension": {
+      "composition": {
+        "body_chars": 912,
+        "composed_through_revision": 2600,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "defect_free_run_reversal_localizes_the_joint_obstruction": {
       "composition": {
         "composition_version": null,
@@ -2478,6 +3388,22 @@
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
+    },
+    "degree_saturated_connected_lifted_circuits_either_repair_in_a3_or_force_one_exception_fans": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "deleting_the_middle_old_coordinate_collapses_the_recursive_packet_to_one_earlier_holonomy_bit": {
       "composition": {
@@ -2496,6 +3422,22 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "dimension_saturation_forces_the_vertical_edge_and_a_complementary_tucker_cell": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "directed_n_k_at_nk2_via_an_odd_overlap_cycle": {
@@ -2562,6 +3504,22 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 1
     },
+    "disjoint_full_support_lifted_cycles_have_an_actual_transverse_cross_shore_window": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "distance_three_backtracks_now_terminate_through_one_sided_resolution": {
       "composition": {
         "composition_version": null,
@@ -2576,6 +3534,22 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "distance_three_flat_repair_overlaps_are_square_or_root": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "double_full_singleton_traps_admit_one_sided_compatible_monochromatic_resolutions": {
@@ -2610,6 +3584,95 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "elevation_article_iii_is_a_fibered_cut_exchange_system": {
+      "composition": {
+        "body_chars": 482,
+        "composed_through_revision": 2655,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "elevation_threshold_bands_and_barrier_roots_live_in_the_graded_cut_cube": {
+      "composition": {
+        "body_chars": 735,
+        "composed_through_revision": 2656,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "endpoint_barriers_force_a_rank_two_protected_root_cycle_with_unit_cut_defects": {
+      "composition": {
+        "body_chars": 565,
+        "composed_through_revision": 2681,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "endpoint_corner_lifting_yields_constant_core_arcs_joined_by_pinned_johnson_triangles": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "endpoint_geometry_forces_two_independent_protected_root_circulations": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "endpoint_only_ternary_labels_always_have_a_monochromatic_spanning_order": {
       "composition": {
         "composition_version": null,
@@ -2624,6 +3687,54 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "endpoint_partner_bubble_sort_reduces_square_realizable_hamiltonian_cycles_to_synchronized_shifts": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "endpoint_partner_defects_are_johnson_square_holonomy": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "endpoint_pivots_either_stop_on_one_splice_bit_or_realize_a_johnson_triangle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "endpoint_repair_never_increases_cyclic_variation": {
@@ -2644,6 +3755,41 @@
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
+    },
+    "equality_bubble_transport_strictly_increases_quadratic_distance_from_the_switch": {
+      "composition": {
+        "body_chars": 524,
+        "composed_through_revision": 2683,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "essential_top_cell_root_circuits_must_be_hamiltonian": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "even_length_flat_repair_components_carry_a_conserved_z2_charge": {
       "composition": {
@@ -2679,6 +3825,54 @@
       "development_version": 2,
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 2
+    },
+    "every_center_replacement_closing_path_reduces_to_one_two_shore_crossing": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_codimension_one_sperner_merge_has_uniformly_bounded_transition_complexity": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_common_face_protected_a3_dependence_has_a_terminating_local_extraction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     },
     "every_counterexample_exposes_a_punctured_boolean_frankl_obstruction": {
       "composition": {
@@ -2769,6 +3963,38 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "every_honest_lifted_a3_zero_contains_a_controlled_repair_event": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
+    "every_honest_side_balanced_a3_carrier_has_a_same_middle_switch_crossing_repair_edge": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "every_maximal_tight_path_has_punctured_boolean_obstructions_at_both_ends": {
       "composition": {
         "composition_version": null,
@@ -2804,6 +4030,73 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "every_minimal_side_lifted_a2_zero_contains_a_complementary_middle_repair_pair": {
+      "composition": {
+        "body_chars": 515,
+        "composed_through_revision": 2696,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_one_cycle_honest_lifted_zero_is_removable_by_parity_transversality": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_pinned_endpoint_junction_yields_a_shorter_positive_protected_root_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_pinned_endpoint_pivot_stop_emits_a_shortcut_root_or_a_new_deletion_witness": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "every_protected_root_radon_carrier_contains_a_cut_changing_chamber_wall": {
       "composition": {
         "composition_version": null,
@@ -2835,6 +4128,54 @@
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
+    },
+    "every_sperner_block_merge_refines_to_local_swap_galleries_with_only_square_and_braid_coherence": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_sperner_flag_zero_decomposes_into_positive_block_local_merge_increments": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_support_minimal_root_zero_in_a_proper_face_has_a_transverse_actual_root_blow_up": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "every_terminal_threshold_band_barrier_emits_a_protected_physical_root": {
       "composition": {
@@ -2888,6 +4229,38 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "every_three_root_protected_zero_in_a_pure_ternary_carrier_is_removable_or_closes_nor": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "every_two_term_honest_lifted_a3_zero_yields_a_controlled_repair": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "exact_distance_three_backtracks_are_double_full_opposite_root_packets": {
@@ -3005,6 +4378,70 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "extremal_total_cut_defect_in_the_hamiltonian_regular_design": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "extreme_synchronized_endpoint_shifts_give_a_monochromatic_spanning_order": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "face_normal_degree_rescues_the_fixed_block_selector_without_antipodal_symmetry": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "face_repetition_in_a_lifted_a3_four_cycle_forces_equal_side_signs": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "feasible_support_antimatroids_and_minimal_non_union_certificates": {
       "composition": {
         "composition_version": null,
@@ -3019,6 +4456,22 @@
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "figure_eight_lifted_circuits_reduce_to_one_edge_theta_outside_a_tiny_side_residue": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "finite_witnesses_for_a_separated_color_inversion": {
@@ -3171,6 +4624,41 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "flat_repair_squares_factor_tucker_middle_labels_and_threshold_defects_coordinatewise": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "flat_switch_transport_traces_a_strict_central_cut_chain_in_the_boolean_simplex": {
+      "composition": {
+        "body_chars": 495,
+        "composed_through_revision": 2673,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "flat_transition_tetrahedra_admit_both_endpoint_repairs": {
       "composition": {
         "composition_version": null,
@@ -3205,6 +4693,60 @@
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
+    },
+    "four_root_directed_cycles_admit_a_two_stage_middle_swap_descent": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "four_window_neighbor_replacement_gives_a_sharp_outward_descent_criterion": {
+      "composition": {
+        "body_chars": 747,
+        "composed_through_revision": 2844,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states": {
+      "composition": {
+        "body_chars": 10316,
+        "composed_through_revision": 2719,
+        "composition_version": 3,
+        "frontier": {
+          "current": true,
+          "development_version_now": 3,
+          "development_version_when_composed": 3
+        },
+        "has_composition": true,
+        "source_note": "Updated fourth wisdom pass through live revision 2718: transport-flag independence, endpoint handoff, A3 middle audit, and signed-distance free-parameter qualification.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 3,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 3
     },
     "free_antipodal_carrier_cells_can_be_modified_in_mirrored_pairs": {
       "composition": {
@@ -3291,6 +4833,38 @@
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
+    },
+    "full_cut_perturbations_exclude_every_zero_defect_ternary_root_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "full_support_connected_lifted_circuits_return_to_complementary_tucker_repair": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "full_support_interval_reversal_calculus_for_cyclic_ternary_nor": {
       "composition": {
@@ -3509,6 +5083,89 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "hamiltonian_root_circuits_are_removable_by_a_three_step_chord": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "hamiltonian_root_cycle_zeros_are_stable_under_every_small_dimension_preserving_perturbation": {
+      "composition": {
+        "body_chars": 433,
+        "composed_through_revision": 2663,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "hamiltonian_root_cycles_survive_every_small_perturbation_inside_physical_root_space": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "hamiltonian_stopped_pivot_transport_survives_only_by_reusing_an_old_cycle_direction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "honest_lifted_minimal_circuits_have_physical_cycle_rank_exactly_two": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "idea_blow_up_inert_protected_exchanges_into_pair_order_intervals": {
       "composition": {
         "composition_version": null,
@@ -3587,6 +5244,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "identical_codimension_two_blocker_scans_collapse_to_one_explicit_omission": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "in_the_first_ternary_cancellation_block_every_root_is_an_endpoint_edge": {
@@ -3721,6 +5394,38 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "isolated_band_macro_roots_telescope_through_flat_transport_with_only_block_defects": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "long_double_one_endpoint_stops_reduce_to_one_rigid_holonomy_one_packet": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "maximal_feasible_supports_plus_one_blocker_already_give_four_change_carriers": {
@@ -3863,6 +5568,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "minimal_rank_two_cut_defect_is_constant_core_or_a_synchronized_second_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "minimal_side_lifted_zeros_use_one_balanced_cycle_or_two_oppositely_imbalanced_cycles": {
       "composition": {
         "body_chars": 565,
@@ -3933,6 +5654,22 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 2
     },
+    "minimum_counterexample_makes_the_all_refinements_root_carrier_zero_free_on_every_proper_permutahedron_face": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "minimum_counterexamples_contain_a_deletion_root_cycle": {
       "composition": {
         "composition_version": null,
@@ -3965,6 +5702,25 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 1
     },
+    "minimum_defect_regular_designs_reduce_to_gcd_one": {
+      "composition": {
+        "body_chars": 616,
+        "composed_through_revision": 2624,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "minimum_directed_n_4_counterexamples_yield_four_change_extremal_cycles": {
       "composition": {
         "composition_version": null,
@@ -3979,6 +5735,22 @@
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "minimum_endpoint_cycles_reduce_pinned_boundaries_to_one_bit_pivot_stops": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "minimum_flat_sector_counterexamples_canonically_produce_the_cyclic_profile_1pq2": {
@@ -4080,6 +5852,25 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "minimum_short_phase_normalization_restores_antipodal_cut_provenance": {
+      "composition": {
+        "body_chars": 470,
+        "composed_through_revision": 2667,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "minimum_ternary_counterexamples_have_exactly_one_threshold_defect": {
       "composition": {
         "composition_version": null,
@@ -4094,6 +5885,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "minimum_ternary_deletion_cuts_never_meet_the_cut_moment_middle_exception": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "mirrored_pair_factor_colorings_reduce_to_tournaments": {
@@ -4128,6 +5935,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "nearest_violation_selection_removes_the_disjoint_two_cycle_lifted_zero": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "non_full_transitions_transport_by_two_or_annihilate": {
       "composition": {
         "composition_version": null,
@@ -4142,6 +5965,41 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "odd_order_cube_carriers_force_a_radial_terminal_root_packet": {
+      "composition": {
+        "body_chars": 530,
+        "composed_through_revision": 2674,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "on_one_ternary_face_the_violation_side_determines_a_directed_root_triangle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "one_and_two_vertex_absorption_from_monochromatic_tight_cycles": {
@@ -4214,6 +6072,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "one_exception_fans_give_clone_insertion_and_force_a_matched_a3_switch_chamber": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "one_holonomy_class_closes_the_all_curved_terminal_state": {
       "composition": {
         "composition_version": null,
@@ -4230,6 +6104,25 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "one_left_a3_directed_cycles_have_no_long_circuit": {
+      "composition": {
+        "body_chars": 423,
+        "composed_through_revision": 2602,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "one_left_protected_a3_reversal_pairs_have_a_boundary_safe_full_support_splice": {
       "composition": {
         "body_chars": 578,
@@ -4242,6 +6135,25 @@
         },
         "has_composition": true,
         "source_note": "Checked complete window formulas and face-carrier scope before publication.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "one_sided_flat_transport_is_a_quotient_path_with_disjoint_block_defects": {
+      "composition": {
+        "body_chars": 471,
+        "composed_through_revision": 2751,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Closure pass: exact witness-class audit and the established zero-free transport theorem.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -4279,6 +6191,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "opposite_side_a3_root_pairs_with_different_middles_have_a_switch_compatible_internal_chamber": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "opposite_signed_middle_carriers_contain_a_legal_bubble_repair_edge": {
@@ -4380,6 +6308,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "pair_defect_labels_repair_the_proper_face_orientation_gap": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "pair_defect_self_map_has_the_antipodal_degree": {
       "composition": {
         "composition_version": null,
@@ -4463,6 +6407,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "planar_a2_recycling_is_impossible_middle_swaps_strictly_eliminate_10_descents": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "pole_rotation_as_a_covering_or_labeling_problem": {
       "composition": {
         "body_chars": 842,
@@ -4514,6 +6474,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "proper_support_multi_cycle_honest_lifted_zeros_have_transverse_crossing_labels": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "protected_a3_reversal_pairs_project_to_johnson_geodesics_of_length_at_most_two": {
       "composition": {
         "body_chars": 528,
@@ -4535,13 +6511,16 @@
     },
     "protected_a3_two_cycles_are_not_closed_flat_sector_obstructions": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 562,
+        "composed_through_revision": 2601,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -4654,6 +6633,22 @@
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
+    "protected_roots_are_oriented_hypersimplex_edges_and_root_cycles_preserve_cut_barycenters": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "protected_switch_insertion_reduces_to_one_two_bit_holonomy_class": {
       "composition": {
         "composition_version": null,
@@ -4750,6 +6745,38 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "pure_ternary_opposite_root_overlaps_below_six_coordinates_always_have_a_one_change_weave": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "pure_ternary_two_root_protected_zeros_are_removable_by_an_actual_middle_swap_root": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "pure_triangle_orientations_reduce_to_pivot_tournament_path_optimization": {
       "composition": {
         "body_chars": 435,
@@ -4767,6 +6794,41 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "quadratic_cut_vector_perturbations_retain_full_cut_provenance_in_physical_root_space": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "quadratic_switch_distance_also_terminates_neighbor_replacement_equality_transport": {
+      "composition": {
+        "body_chars": 427,
+        "composed_through_revision": 2697,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "radon_root_cycles_in_a_permutohedral_carrier_localize_to_one_coxeter_block": {
@@ -4900,6 +6962,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "replacing_the_center_label_by_one_actual_root_forces_a_monotone_proper_face_closing_path": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "research_charter_and_first_exact_dictionary": {
       "composition": {
         "composition_version": null,
@@ -4996,6 +7074,22 @@
       "section_id": "higher_memory_norine_geodesics",
       "version": 3
     },
+    "reversing_a_minimum_first_phase_compresses_a_long_double_full_endpoint_band_to_a_one_or_two_window_deletion_defect": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "rigidity_of_a_common_tail_deletion_3_cycle": {
       "composition": {
         "composition_version": null,
@@ -5049,6 +7143,22 @@
       "development_version": 1,
       "section_id": "port_freudenthal_pole_rotation_and_zero_loci",
       "version": 2
+    },
+    "root_separation_supplies_one_global_johnson_shore_potential": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     },
     "same_ground_set_union_closure_erases_a_minimal_nor_obstruction": {
       "composition": {
@@ -5114,6 +7224,54 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "same_side_opposite_window_roots_force_a_four_coordinate_slide_transition": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "same_slot_five_coordinate_opposite_root_overlaps_have_an_unconditional_one_change_weave": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "scan_separations_one_and_two_reduce_to_a_single_isolated_band_state": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "second_companion_weave_forces_the_immediate_residual_scan_pair_to_be_00": {
       "composition": {
         "composition_version": null,
@@ -5144,6 +7302,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "separated_ternary_repair_moves_fill_realized_commuting_squares": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "set_valued_cellular_tucker_removes_nearest_violation_tie_breaking": {
@@ -5248,6 +7422,22 @@
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
+    "side_moment_perturbations_rigorously_exclude_every_proper_support_simple_root_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "simplex_connector_program_reduces_to_defect_walls_and_tetrahedral_curvature": {
       "composition": {
         "composition_version": null,
@@ -5326,6 +7516,22 @@
       },
       "development_version": 1,
       "section_id": "higher_memory_norine_geodesics",
+      "version": 1
+    },
+    "small_synchronized_endpoint_cycles_reuse_the_original_protected_root_directions": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "smallest_counterexamples_force_a_tight_cyclic_transition_block": {
@@ -5417,6 +7623,41 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 3
     },
+    "square_lifting_closes_the_injective_hamiltonian_endpoint_cycle_branch": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "successor_closed_realized_shores_force_a_zero_defect_protected_root_cycle": {
+      "composition": {
+        "body_chars": 493,
+        "composed_through_revision": 2668,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 3,
+          "development_version_when_composed": 3
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 3,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 3
+    },
     "switch_insertion_always_exposes_an_internal_protected_root_descent": {
       "composition": {
         "body_chars": 433,
@@ -5468,6 +7709,44 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "tangent_cone_closure_of_a_johnson_edge_is_discrete_successor_realization": {
+      "composition": {
+        "body_chars": 566,
+        "composed_through_revision": 2650,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Scoped mathematical development after review of current fixed-point, shore-cycle, and perturbation work.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "terminal_barrier_roots_have_canonical_central_cuts_in_the_centered_boolean_cube": {
+      "composition": {
+        "body_chars": 390,
+        "composed_through_revision": 2662,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "ternary_bipolar_circuits_land_on_the_four_change_cyclic_frontier": {
       "composition": {
         "body_chars": 598,
@@ -5485,6 +7764,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "ternary_insertion_jumps_reduce_to_same_side_descents_or_complementary_middle_edges": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "ternary_insertion_packets_and_nonunique_blocking_scans": {
@@ -5539,6 +7834,25 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "ternary_switch_insertion_has_a_unique_canonical_descent_root": {
+      "composition": {
+        "body_chars": 429,
+        "composed_through_revision": 2660,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "ternary_three_element_front_circuits_are_exactly_cyclic_deletion_triples": {
@@ -5640,7 +7954,55 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "the_bad_neighbor_replacement_branch_is_already_a_threshold_band_boundary_under_nearest_violation_selection": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_barycentric_center_zero_carries_the_entire_boundary_degree": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_blown_up_antipodal_cell_has_a_zero_free_equivariant_quotient_fill": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_canonical_endpoint_branch_is_fully_absorbed_by_the_special_perfect_blocker_theorem": {
       "composition": {
         "composition_version": null,
         "frontier": {
@@ -5688,6 +8050,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "the_center_replacement_closing_path_can_be_chosen_through_the_largest_face_witnessed_root": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_common_left_reconnection_of_a_holonomy_toggle_is_a_forced_full_barrier": {
       "composition": {
         "body_chars": 948,
@@ -5707,6 +8085,73 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "the_consecutive_change_defect_gives_a_symmetric_sperner_carrier_with_one_band_labels": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_consecutive_change_defect_is_a_local_transition_root_sum_with_only_endpoint_correction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_crossed_diagonal_a3_two_plus_two_residue_contains_a_complementary_tucker_edge": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_cut_root_correlation_tensor_recovers_johnson_cut_defect_after_a_physical_root_zero": {
+      "composition": {
+        "body_chars": 473,
+        "composed_through_revision": 2670,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_cyclic_seven_point_deletion_path_false_model_has_an_unavoidable_parity_contradiction": {
       "composition": {
         "composition_version": null,
@@ -5721,6 +8166,38 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "the_degenerate_theta_endpoint_still_has_a_successful_surviving_bypass": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_distance_three_pair_insertion_residue_is_rigid_full_flat_full": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "the_double_full_singleton_holonomy_is_exactly_the_distance_four_chord": {
@@ -5908,6 +8385,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "the_flat_repair_square_is_an_exact_two_bit_sperner_chart": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_forced_flat_corner_repair_transports_a_singleton_with_its_full_barrier_attached": {
       "composition": {
         "composition_version": null,
@@ -5996,13 +8489,16 @@
     },
     "the_g1_a2_equality_profile_is_impossible": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 475,
+        "composed_through_revision": 2630,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -6024,6 +8520,22 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "the_hamiltonian_physical_cycle_order_reduces_the_last_top_cell_zero_to_a_proper_support_circuit": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "the_higher_memory_one_change_geodesic_conjecture": {
@@ -6121,6 +8633,22 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "the_honest_side_lift_removes_the_hamiltonian_root_simplex_by_an_odd_parity_transverse_window": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_identity_sphere_field_extends_weighted_root_topology_to_n_congruent_3_mod_4": {
       "composition": {
         "composition_version": null,
@@ -6191,6 +8719,54 @@
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 1
     },
+    "the_long_phase_double_splice_endpoint_branch_is_a_one_defect_threshold_band_state": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_long_stopped_endpoint_splice_reduces_to_at_most_three_prefix_repairs": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_long_stopped_splice_has_an_exact_three_barrier_prefix_extraction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_one_skeleton_is_not_enough": {
       "composition": {
         "body_chars": 372,
@@ -6224,6 +8800,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "the_only_dimension_saturated_multi_cycle_lifted_zero_is_a_one_vertex_figure_eight": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "the_p2_arbitrary_scan_flat_boundary_enters_the_same_replacement_dynamics": {
@@ -6260,6 +8852,22 @@
       "development_version": 2,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
       "version": 2
+    },
+    "the_proper_face_boundary_degree_admits_a_one_root_per_face_witnessed_sperner_carrier": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     },
     "the_pure_orientation_size_three_curvature_tube_closes_by_a_five_step_weave": {
       "composition": {
@@ -6424,6 +9032,54 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "the_rigid_holonomy_one_endpoint_packet_resolves_to_a_leading_one_band_with_finite_transport": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_rigid_holonomy_one_endpoint_residue_has_a_full_support_one_sided_exit": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "the_rigid_long_stop_packet_forces_the_next_splice_bit_to_one": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "the_rooted_singleton_middle_case_is_caged_at_both_ends": {
       "composition": {
         "composition_version": null,
@@ -6439,6 +9095,25 @@
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
+    },
+    "the_separation_potential_is_valid_on_the_minimum_first_johnson_layer": {
+      "composition": {
+        "body_chars": 562,
+        "composed_through_revision": 2669,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
     },
     "the_size_three_curvature_tube_is_invisible_to_the_first_coboundary_connector": {
       "composition": {
@@ -6470,6 +9145,25 @@
       },
       "development_version": 1,
       "section_id": "ternary_protected_bridges_and_scan_obstructions",
+      "version": 1
+    },
+    "the_switch_prism_forces_a_side_balanced_physical_root_dependence_in_the_honest_lifted_space": {
+      "composition": {
+        "body_chars": 442,
+        "composed_through_revision": 2695,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "the_symmetric_p_equals_q_equals_2_endpoint_residue_closes_explicitly": {
@@ -6568,6 +9262,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "theta_honest_lifted_circuits_strictly_shorten_by_a_branch_bypass": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "three_element_front_circuits_are_fully_curved_tetrahedra_transported_across_the_tail": {
       "composition": {
         "composition_version": null,
@@ -6630,6 +9340,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "three_root_protected_zeros_reduce_to_a_planar_a2_recycling_residue": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "three_step_curvature_transport_requires_a_distance_four_memory_bit": {
@@ -6731,6 +9457,57 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "tmp": {
+      "composition": {
+        "body_chars": 532,
+        "composed_through_revision": 2618,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
+    "top_cell_complementary_middle_lemma": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
+    "top_cell_complementary_middles_eliminate_every_unextracted_full_dimensional_lifted_circuit": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 2,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 2
+    },
     "transitive_center_tournaments_can_fail_support_union_closure_at_a_sink": {
       "composition": {
         "composition_version": null,
@@ -6778,6 +9555,25 @@
       "development_version": 3,
       "section_id": "higher_memory_norine_geodesics",
       "version": 3
+    },
+    "transverse_projection_controls_the_first_order_limit_of_a_perturbed_root_circuit": {
+      "composition": {
+        "body_chars": 733,
+        "composed_through_revision": 2652,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Scoped mathematical development after review of current fixed-point, shore-cycle, and perturbation work.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     },
     "turn_window_roots_make_face_block_localization_hereditary": {
       "composition": {
@@ -6828,6 +9624,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "two_exterior_scans_give_an_exact_pair_insertion_four_window_formula": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "two_full_switches_around_a_singleton_have_a_monochromatic_five_vertex_resolution": {
@@ -6897,6 +9709,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "two_left_a3_triangles_resolve_and_four_cycles_are_impossible": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "two_left_flat_protected_a3_reversal_pairs_either_splice_or_emit_an_exterior_insertion_root": {
       "composition": {
         "body_chars": 626,
@@ -6949,6 +9777,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "two_root_protected_radon_zeros_localize_to_at_most_six_active_coordinates": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "two_step_endpoint_transports_preserve_flat_curvature_type": {
@@ -7088,6 +9932,22 @@
       "section_id": "directed_nor_union_closed_bridge",
       "version": 1
     },
+    "unrestricted_endpoint_defects_compress_to_two_windows": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
     "whole_front_circuits_force_rear_circuit_descent_or_bipolarity": {
       "composition": {
         "composition_version": null,
@@ -7102,6 +9962,22 @@
       },
       "development_version": 1,
       "section_id": "directed_nor_union_closed_bridge",
+      "version": 1
+    },
+    "widely_separated_blocker_scans_force_codimension_two_pair_insertion": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
     "window_barycenters_turn_affine_certificates_into_odd_nonzero_tangent_vectors": {
@@ -7141,9 +10017,25 @@
       "development_version": 1,
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
+    },
+    "zero_cut_defect_gives_a_one_token_johnson_cycle": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
     }
   },
-  "toolkit_count": 25,
+  "toolkit_count": 27,
   "universal_document_versions": {
     "guide": 23,
     "reflexes": 14

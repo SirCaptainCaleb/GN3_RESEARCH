@@ -2,9 +2,9 @@
 
 ## Composition status
 
-- Composition version: 8
+- Composition version: 13
 - Stale: False
-- Composed through revision: 2581
+- Composed through revision: 2753
 - Sections existing when composed: 3
 - Sections now: 3
 
@@ -15,5 +15,5 @@
 ## Contained Sections
 
 - 1. [Endpoint defects and protected deletion descent](../SECTIONS/protected_coordinate_deletion_descent.md) (`protected_coordinate_deletion_descent`; composition v2; stale=False)
-- 2. [Ternary replacement bridges and insertion-scan obstructions](../SECTIONS/ternary_protected_bridges_and_scan_obstructions.md) (`ternary_protected_bridges_and_scan_obstructions`; composition v8; stale=False)
-- 3. [Protected root certificates and cellular extraction](../SECTIONS/protected_root_certificates_and_cellular_extraction.md) (`protected_root_certificates_and_cellular_extraction`; composition v10; stale=True)
+- 2. [Ternary replacement bridges and insertion-scan obstructions](../SECTIONS/ternary_protected_bridges_and_scan_obstructions.md) (`ternary_protected_bridges_and_scan_obstructions`; composition v9; stale=False)
+- 3. [Protected root certificates and cellular extraction](../SECTIONS/protected_root_certificates_and_cellular_extraction.md) (`protected_root_certificates_and_cellular_extraction`; composition v16; stale=False)

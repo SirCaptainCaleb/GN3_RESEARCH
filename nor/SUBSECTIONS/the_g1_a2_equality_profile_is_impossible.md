@@ -7,12 +7,12 @@
 - Position: 29
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+For the audited g=1 A2 transport, the boundary-safe replacement changes the profile from (p,q) to (p+4,q-4) with explicit retained scan data. If q-p<4 minimality is contradicted; if q-p>4 phase imbalance decreases; and in the equality case q=p+4 the corrected arbitrary-scan replacement theorem forces a phase below the global minimum, with the short terminal case closing directly. Hence repeated g=1 transport is terminating when its stated boundary provenance is retained.
 
 ## Development
 
@@ -88,9 +88,3 @@ Combined with the phase-transfer trichotomy:
 - if q-p=4, the argument above gives a contradiction.
 
 Therefore repeated g=1 A2 boundary transport is terminating. The g=1 A2 branch is not a recurrent flat-sector obstruction.
-
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

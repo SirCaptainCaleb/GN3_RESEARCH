@@ -7,12 +7,12 @@
 - Position: 6
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+In a minimum flat ternary counterexample, the corrected arbitrary-scan replacement theorem forces protected replacements to alternate right then left. Two-step outcomes are (2,2), (3,3), or (3,2): the unequal case gives finite phase drift, the distance-three equal case is an exact backtrack, and the distance-two equal case is the unique nontrivial recurrent A2 three-state exchange cycle. Thus the flat local frontier is an explicit provenance-sensitive A2 boundary recurrence, not arbitrary scan wandering.
 
 ## Development
 
@@ -126,8 +126,3 @@ The arbitrary-scan flat sector is therefore reduced to this one (A_2) recurrence
 The recurrence has three deletion carriers with the same prefix, suffix, switch rank, and run profile. It contains a perfect seven-coordinate local threshold weave, leaving only a two-window right-boundary reconnection. The three companion weaves force the residual suffix scans to be coordinatewise nonincreasing across the first reconnection step.
 
 Thus the unconditional flat-sector closure problem is no longer termination of a large repair graph. It is the boundary-preserving elimination of one explicit (A_2) exchange cycle.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

@@ -8,9 +8,9 @@
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Composition version: 8
+- Composition version: 9
 - Composition stale: False
-- Subsections existing when composed: 62
+- Subsections existing when composed: 63
 - Subsections now: 63
 
 ## Development tree
@@ -20,7 +20,7 @@
 - [Subsection 3 — Arbitrary flat blocking scans admit a replacement on one side of the switch](../SUBSECTIONS/arbitrary_flat_blocking_scans_admit_a_replacement_on_one_side_of_the_switch.md) (`arbitrary_flat_blocking_scans_admit_a_replacement_on_one_side_of_the_switch`; development v1; composition v1; stale=False)
 - [Subsection 4 — The recurrent flat A2 cycle contains a perfect seven coordinate threshold weave](../SUBSECTIONS/the_recurrent_flat_a2_cycle_contains_a_perfect_seven_coordinate_threshold_weave.md) (`the_recurrent_flat_a2_cycle_contains_a_perfect_seven_coordinate_threshold_weave`; development v1; composition vNone; stale=False)
 - [Subsection 5 — Companion A2 weaves forbid an immediate zero to one rise in every residual scan](../SUBSECTIONS/companion_a2_weaves_forbid_an_immediate_zero_to_one_rise_in_every_residual_scan.md) (`companion_a2_weaves_forbid_an_immediate_zero_to_one_rise_in_every_residual_scan`; development v1; composition vNone; stale=False)
-- [Subsection 6 — Arbitrary scan flat replacement dynamics reduce to one A2 recurrence](../SUBSECTIONS/arbitrary_scan_flat_replacement_dynamics_reduce_to_one_a2_recurrence.md) (`arbitrary_scan_flat_replacement_dynamics_reduce_to_one_a2_recurrence`; development v1; composition vNone; stale=False)
+- [Subsection 6 — Arbitrary scan flat replacement dynamics reduce to one A2 recurrence](../SUBSECTIONS/arbitrary_scan_flat_replacement_dynamics_reduce_to_one_a2_recurrence.md) (`arbitrary_scan_flat_replacement_dynamics_reduce_to_one_a2_recurrence`; development v1; composition v1; stale=False)
 - [Subsection 7 — Residual A2 scans are single-step functions with same-parity drop ranks](../SUBSECTIONS/residual_a2_scans_are_single_step_functions_with_same_parity_drop_ranks.md) (`residual_a2_scans_are_single_step_functions_with_same_parity_drop_ranks`; development v1; composition vNone; stale=False)
 - [Subsection 8 — The recurrent flat A2 cycle forces the residual triple and forbids scan valleys](../SUBSECTIONS/the_recurrent_flat_a2_cycle_forces_the_residual_triple_and_forbids_scan_valleys.md) (`the_recurrent_flat_a2_cycle_forces_the_residual_triple_and_forbids_scan_valleys`; development v1; composition vNone; stale=False)
 - [Subsection 9 — Audit single step residual scans require an unproved propagation lemma](../SUBSECTIONS/audit_single_step_residual_scans_require_an_unproved_propagation_lemma.md) (`audit_single_step_residual_scans_require_an_unproved_propagation_lemma`; development v1; composition vNone; stale=False)
@@ -30,7 +30,7 @@
 - [Subsection 13 — Second companion weave forces the immediate residual scan pair to be 00](../SUBSECTIONS/second_companion_weave_forces_the_immediate_residual_scan_pair_to_be_00.md) (`second_companion_weave_forces_the_immediate_residual_scan_pair_to_be_00`; development v1; composition vNone; stale=False)
 - [Subsection 14 — Audit: local A2 scan constraints do not imply global scan monotonicity](../SUBSECTIONS/audit_local_a2_scan_constraints_do_not_imply_global_scan_monotonicity.md) (`audit_local_a2_scan_constraints_do_not_imply_global_scan_monotonicity`; development v1; composition vNone; stale=False)
 - [Subsection 15 — The recurrent flat A2 cycle forces the residual triple and forbids scan valleys](../SUBSECTIONS/the_recurrent_flat_a2_cycle_forces_the_residual_triple_and_forbids_scan_valleys_b.md) (`the_recurrent_flat_a2_cycle_forces_the_residual_triple_and_forbids_scan_valleys_b`; development v1; composition vNone; stale=False)
-- [Subsection 16 — Audit: short-phase scan rises and the missing A2 suffix window](../SUBSECTIONS/audit_short_phase_scan_rises_and_the_missing_a2_suffix_window.md) (`audit_short_phase_scan_rises_and_the_missing_a2_suffix_window`; development v1; composition vNone; stale=False)
+- [Subsection 16 — Audit: short-phase scan rises and the missing A2 suffix window](../SUBSECTIONS/audit_short_phase_scan_rises_and_the_missing_a2_suffix_window.md) (`audit_short_phase_scan_rises_and_the_missing_a2_suffix_window`; development v1; composition v1; stale=False)
 - [Subsection 17 — The g=1 A2 boundary failure yields a protected q-minus-four deletion witness](../SUBSECTIONS/the_g1_a2_boundary_failure_yields_a_protected_q_minus_four_deletion_witness.md) (`the_g1_a2_boundary_failure_yields_a_protected_q_minus_four_deletion_witness`; development v1; composition vNone; stale=False)
 - [Subsection 18 — g=1 A2 boundary failure exits to a protected deletion witness](../SUBSECTIONS/g1_a2_boundary_failure_exits_to_a_protected_deletion_witness.md) (`g1_a2_boundary_failure_exits_to_a_protected_deletion_witness`; development v1; composition vNone; stale=False)
 - [Subsection 19 — Antipodal backtrack exits either close or expose a transverse protected root](../SUBSECTIONS/antipodal_backtrack_exits_either_close_or_expose_a_transverse_protected_root.md) (`antipodal_backtrack_exits_either_close_or_expose_a_transverse_protected_root`; development v1; composition vNone; stale=False)
@@ -43,7 +43,7 @@
 - [Subsection 26 — Antipodal braid exits preserve the entire outside order](../SUBSECTIONS/antipodal_braid_exits_preserve_the_entire_outside_order.md) (`antipodal_braid_exits_preserve_the_entire_outside_order`; development v1; composition vNone; stale=False)
 - [Subsection 27 — The residual full-flat holonomy packet has two protected one-sided exits](../SUBSECTIONS/the_residual_full_flat_holonomy_packet_has_two_protected_one_sided_exits.md) (`the_residual_full_flat_holonomy_packet_has_two_protected_one_sided_exits`; development v1; composition vNone; stale=False)
 - [Subsection 28 — Exact remaining flat lemma after two-exit and hemisphere reductions](../SUBSECTIONS/exact_remaining_flat_lemma_after_two_exit_and_hemisphere_reductions.md) (`exact_remaining_flat_lemma_after_two_exit_and_hemisphere_reductions`; development v1; composition vNone; stale=False)
-- [Subsection 29 — The g=1 A2 equality profile is impossible](../SUBSECTIONS/the_g1_a2_equality_profile_is_impossible.md) (`the_g1_a2_equality_profile_is_impossible`; development v1; composition vNone; stale=False)
+- [Subsection 29 — The g=1 A2 equality profile is impossible](../SUBSECTIONS/the_g1_a2_equality_profile_is_impossible.md) (`the_g1_a2_equality_profile_is_impossible`; development v1; composition v1; stale=False)
 - [Subsection 30 — A late t=1 full-flat blocker still gives strict outward defect progress](../SUBSECTIONS/a_late_t1_full_flat_blocker_still_gives_strict_outward_defect_progress.md) (`a_late_t1_full_flat_blocker_still_gives_strict_outward_defect_progress`; development v1; composition vNone; stale=False)
 - [Subsection 31 — Audit: late-blocker descent leaves m=0,1,2, not only m=1,2](../SUBSECTIONS/audit_late_blocker_descent_leaves_m012_not_only_m12.md) (`audit_late_blocker_descent_leaves_m012_not_only_m12`; development v1; composition vNone; stale=False)
 - [Subsection 32 — Audit: antipodal exits are boundary safe but E1 rank transport remains unproved](../SUBSECTIONS/audit_antipodal_exits_are_boundary_safe_but_e1_rank_transport_remains_unproved.md) (`audit_antipodal_exits_are_boundary_safe_but_e1_rank_transport_remains_unproved`; development v1; composition vNone; stale=False)
