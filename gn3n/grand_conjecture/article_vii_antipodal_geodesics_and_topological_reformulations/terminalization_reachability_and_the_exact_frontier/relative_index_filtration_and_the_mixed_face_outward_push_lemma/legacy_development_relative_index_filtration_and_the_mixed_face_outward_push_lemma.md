@@ -1,9 +1,5 @@
 # Relative-index filtration proves terminalization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Relative-index filtration proves terminalization

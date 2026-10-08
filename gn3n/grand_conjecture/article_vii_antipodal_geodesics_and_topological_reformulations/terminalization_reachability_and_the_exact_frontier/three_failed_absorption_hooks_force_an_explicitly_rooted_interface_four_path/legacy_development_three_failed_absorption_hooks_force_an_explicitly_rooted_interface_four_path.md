@@ -1,9 +1,5 @@
 # Three failed-absorption hooks force an explicitly rooted interface four-path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three failed-absorption hooks force an explicitly rooted interface four-path

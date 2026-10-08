@@ -1,9 +1,5 @@
 # Audit: same Hall transfer polarity is not excluded by boundary antisymmetry — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: same Hall transfer polarity is not excluded by boundary antisymmetry

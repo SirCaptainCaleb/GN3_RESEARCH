@@ -1,9 +1,5 @@
 # Minimum-counterexample closure is a one-rank support-pair extension problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum-counterexample closure is a one-rank support-pair extension problem

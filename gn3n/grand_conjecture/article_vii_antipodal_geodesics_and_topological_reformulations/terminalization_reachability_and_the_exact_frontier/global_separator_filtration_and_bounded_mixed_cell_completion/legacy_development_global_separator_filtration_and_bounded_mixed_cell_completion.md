@@ -1,9 +1,5 @@
 # Global separator filtration and bounded mixed-cell completion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

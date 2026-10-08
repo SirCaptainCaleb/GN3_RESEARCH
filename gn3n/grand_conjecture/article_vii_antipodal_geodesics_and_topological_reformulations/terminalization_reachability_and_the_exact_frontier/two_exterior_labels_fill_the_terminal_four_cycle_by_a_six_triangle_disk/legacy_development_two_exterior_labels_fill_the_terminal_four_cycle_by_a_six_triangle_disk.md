@@ -1,9 +1,5 @@
 # Two exterior labels fill the terminal four-cycle by a six-triangle disk — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two exterior labels fill the four-cycle without a universal label

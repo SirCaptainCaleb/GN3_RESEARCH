@@ -1,9 +1,5 @@
 # Every deletion cover yields a four-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Every deletion cover contains a doubly reversed end edge

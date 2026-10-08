@@ -1,9 +1,5 @@
 # Boundary-layer external reversals give a four-support or endpoint transfer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Boundary-layer external reversals give a four-support or a legal endpoint transfer

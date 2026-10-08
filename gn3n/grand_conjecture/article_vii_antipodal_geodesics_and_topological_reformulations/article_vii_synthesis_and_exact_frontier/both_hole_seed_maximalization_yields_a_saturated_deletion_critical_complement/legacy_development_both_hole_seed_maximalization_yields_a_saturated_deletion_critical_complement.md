@@ -1,9 +1,5 @@
 # Both-hole seed maximalization yields a saturated deletion-critical complement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Both-hole seed maximalization yields a saturated deletion-critical complement

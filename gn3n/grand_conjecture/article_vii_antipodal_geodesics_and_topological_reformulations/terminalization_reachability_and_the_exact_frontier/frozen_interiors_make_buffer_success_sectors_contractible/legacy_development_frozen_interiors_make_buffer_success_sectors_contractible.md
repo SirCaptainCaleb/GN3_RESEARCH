@@ -1,9 +1,5 @@
 # Frozen interiors make buffer-success sectors contractible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## After freezing the interior, buffer-success sectors have natural contractible carriers

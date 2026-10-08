@@ -1,9 +1,5 @@
 # Four reversed bridge vertices give a protected packet-corridor repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Lemma. Let A be a four-vertex set, let y be another vertex, and let Z=(z_1,...,z_d), d>=2, be disjoint from A union {y}. Suppose Q_0=(z_d,...,z_1) is a tight path and h(u,z_1,z_2)=0 for every u in A. Then H[A union V(Z) union {y}] has a two-path cover with component orders 4,d+1. One component contains y and three vertices of A; the other is Q_0 followed by the remaining vertex of A.

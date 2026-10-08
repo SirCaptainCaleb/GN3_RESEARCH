@@ -1,9 +1,5 @@
 # Terminal attachment matching gives an outward repair of a double corridor — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let a protected positive span-two double have reflected starts a<b and full determining span J=[a,b+4]. Decompose its corridor into tight paths P=(p_1,...,p_s) and Q=(q_1,...,q_t), each of order at least two, and let x=v_a,y=v_{b+4} be the two exterior vertices, as in [[complete_positive_span_two_double_corridor_classification]].

@@ -1,9 +1,5 @@
 # Closure: width-three mixed-end handoff — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

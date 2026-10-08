@@ -1,9 +1,5 @@
 # Complete positive span-two double corridor classification — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work only with positive witness words W+={001,011,0101}. Let a<b be reflected starts of two positive span-two occurrences in one protected chamber, with d=b-a>=5 so their five-vertex determining windows are disjoint. Put x=v_a, y=v_{b+4}, and C=(v_{a+1},...,v_{b+3}). The internal status word t of C is epsilon_{a+1}...epsilon_{b+1}, of length M=d+1. Every positive forbidden occurrence wholly inside this interval is strictly inward of the selected span-two edge: span-two starts lie from a+1 through b-1, and alternating starts from a+1 through b-2. Therefore t avoids W+.

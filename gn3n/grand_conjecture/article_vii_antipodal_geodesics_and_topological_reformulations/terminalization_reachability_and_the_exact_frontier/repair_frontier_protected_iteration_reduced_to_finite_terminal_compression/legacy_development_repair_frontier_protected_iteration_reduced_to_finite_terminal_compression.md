@@ -1,9 +1,5 @@
 # Repair frontier: protected iteration reduced to finite terminal compression — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Repair frontier after the protected-carrier audit

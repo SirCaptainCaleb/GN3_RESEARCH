@@ -1,9 +1,5 @@
 # Compatible two-covers under a one-vertex terminal-support exchange — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A one-vertex exchange admits compatible (5|5) two-covers

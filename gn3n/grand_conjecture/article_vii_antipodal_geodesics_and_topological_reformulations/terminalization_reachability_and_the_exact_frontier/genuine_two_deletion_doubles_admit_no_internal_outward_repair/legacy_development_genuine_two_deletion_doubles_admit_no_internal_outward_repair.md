@@ -1,9 +1,5 @@
 # Genuine two-deletion doubles admit no internal outward repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Genuine two-deletion doubles cannot be repaired inside their determining span

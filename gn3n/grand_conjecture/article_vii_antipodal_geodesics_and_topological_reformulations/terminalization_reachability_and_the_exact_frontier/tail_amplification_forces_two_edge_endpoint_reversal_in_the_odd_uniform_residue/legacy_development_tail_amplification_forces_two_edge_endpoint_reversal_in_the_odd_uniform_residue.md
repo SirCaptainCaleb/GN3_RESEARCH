@@ -1,9 +1,5 @@
 # Tail amplification forces two-edge endpoint reversal in the odd uniform residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Tail amplification across disjoint maximum paths

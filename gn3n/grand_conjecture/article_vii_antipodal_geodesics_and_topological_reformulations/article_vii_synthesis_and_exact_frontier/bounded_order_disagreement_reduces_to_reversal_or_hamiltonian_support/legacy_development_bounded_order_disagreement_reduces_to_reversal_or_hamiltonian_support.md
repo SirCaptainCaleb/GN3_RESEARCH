@@ -1,9 +1,5 @@
 # Bounded order disagreement reduces to reversal or Hamiltonian support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Bounded Hamilton-order disagreement reduces to reversal or Hamiltonian support

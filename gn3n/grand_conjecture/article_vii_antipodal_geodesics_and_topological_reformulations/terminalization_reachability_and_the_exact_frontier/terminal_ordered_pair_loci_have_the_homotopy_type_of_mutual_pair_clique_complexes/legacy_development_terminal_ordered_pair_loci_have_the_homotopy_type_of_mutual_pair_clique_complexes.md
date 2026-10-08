@@ -1,9 +1,5 @@
 # Terminal ordered-pair loci have the homotopy type of mutual-pair clique complexes — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact topology of a prescribed terminal ordered-pair locus

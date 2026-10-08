@@ -1,9 +1,5 @@
 # Cross-seam descent is low-distance unless both rails are long — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Cross-seam descent is low-distance unless both complementary rails are long

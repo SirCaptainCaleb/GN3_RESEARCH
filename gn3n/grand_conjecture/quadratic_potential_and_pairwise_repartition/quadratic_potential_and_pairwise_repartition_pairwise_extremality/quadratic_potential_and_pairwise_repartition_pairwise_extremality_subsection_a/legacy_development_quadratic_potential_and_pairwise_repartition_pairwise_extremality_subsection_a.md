@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 **Lemma 1.** Let \(a+b=s\) and \(a',b'>0\) with \(a'+b'=s\). Then

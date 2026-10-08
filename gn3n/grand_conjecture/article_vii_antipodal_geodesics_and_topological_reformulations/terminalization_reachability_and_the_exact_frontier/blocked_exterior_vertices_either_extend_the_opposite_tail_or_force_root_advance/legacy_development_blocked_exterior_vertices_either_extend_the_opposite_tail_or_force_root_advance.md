@@ -1,9 +1,5 @@
 # Blocked exterior vertices either extend the opposite tail or force root advance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Elevation of the blocked endpoint: direct opposite-tail extension or root advance

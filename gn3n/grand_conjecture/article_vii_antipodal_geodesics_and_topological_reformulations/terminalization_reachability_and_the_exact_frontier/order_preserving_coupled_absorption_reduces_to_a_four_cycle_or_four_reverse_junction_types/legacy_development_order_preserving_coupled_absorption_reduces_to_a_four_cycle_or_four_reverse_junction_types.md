@@ -1,9 +1,5 @@
 # Order-preserving coupled absorption reduces to a four-cycle or four reverse-junction types — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Order-preserving coupled absorption has only two bounded obstruction types

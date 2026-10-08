@@ -1,9 +1,5 @@
 # Successor closure peels a matched prefix to the hole or forces a hole-rooted order cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Recovery note

@@ -1,9 +1,5 @@
 # Dissimilar minimum-pair support states have a common lower carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Dissimilar minimum-pair support states have an order-free common lower bound

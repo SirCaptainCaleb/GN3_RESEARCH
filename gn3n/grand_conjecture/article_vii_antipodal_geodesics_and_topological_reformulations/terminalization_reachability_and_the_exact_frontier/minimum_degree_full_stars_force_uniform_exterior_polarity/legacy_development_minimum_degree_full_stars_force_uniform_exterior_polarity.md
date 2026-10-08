@@ -1,9 +1,5 @@
 # Minimum-degree full stars force uniform exterior polarity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum source degree forces uniform polarity across every exterior coordinate

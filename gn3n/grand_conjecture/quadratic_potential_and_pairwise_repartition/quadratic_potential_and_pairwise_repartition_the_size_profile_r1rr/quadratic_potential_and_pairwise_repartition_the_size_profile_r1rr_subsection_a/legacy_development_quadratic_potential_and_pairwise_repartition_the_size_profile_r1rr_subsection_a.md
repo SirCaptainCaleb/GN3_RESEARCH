@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(A\mid B\mid C\) have orders \(r+1,r,r\), and let \(x,y\) be the endpoints of \(A\).

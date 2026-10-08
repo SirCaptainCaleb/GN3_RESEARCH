@@ -1,9 +1,5 @@
 # Genuine two-deletion doubles have both corridor paths of order at least four — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A genuine two-deletion double has two substantial corridor paths

@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For an ordered triple \((u,v,z)\), the boundary-reversed triple is

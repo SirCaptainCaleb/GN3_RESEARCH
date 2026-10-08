@@ -1,9 +1,5 @@
 # Order-nine bridge reduces to rooted four-core synchronization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The order-nine bridge reduces to a six-vertex rooted synchronization problem

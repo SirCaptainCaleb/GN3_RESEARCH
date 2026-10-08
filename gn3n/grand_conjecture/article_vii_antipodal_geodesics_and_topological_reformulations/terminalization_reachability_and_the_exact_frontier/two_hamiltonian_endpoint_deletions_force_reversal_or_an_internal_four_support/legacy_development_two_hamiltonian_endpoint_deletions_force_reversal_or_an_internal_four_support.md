@@ -1,9 +1,5 @@
 # Two Hamiltonian endpoint deletions reduce to reversal or an order-four rail — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum-order counterexample. Let S be a fixed Hamiltonian support and put G=H-S. Let a,b be distinct vertices of G such that G-a and G-b are Hamiltonian.

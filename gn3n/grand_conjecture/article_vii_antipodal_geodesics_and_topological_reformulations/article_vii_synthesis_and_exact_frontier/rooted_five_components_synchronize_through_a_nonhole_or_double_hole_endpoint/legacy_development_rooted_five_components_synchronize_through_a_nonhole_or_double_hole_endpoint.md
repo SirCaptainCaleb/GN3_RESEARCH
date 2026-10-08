@@ -1,9 +1,5 @@
 # Rooted five-components synchronize through a nonhole or double-hole endpoint — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rooted five-components synchronize through a nonhole or a double-hole endpoint

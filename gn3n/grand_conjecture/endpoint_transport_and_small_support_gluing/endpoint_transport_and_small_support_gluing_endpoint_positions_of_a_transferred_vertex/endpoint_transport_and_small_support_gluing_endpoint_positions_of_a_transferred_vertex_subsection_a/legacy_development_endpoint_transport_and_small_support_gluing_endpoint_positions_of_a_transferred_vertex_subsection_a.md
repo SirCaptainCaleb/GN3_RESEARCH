@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both

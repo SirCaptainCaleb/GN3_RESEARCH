@@ -1,9 +1,5 @@
 # Half-order maximal support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### A maximal support contains at least half the tournament

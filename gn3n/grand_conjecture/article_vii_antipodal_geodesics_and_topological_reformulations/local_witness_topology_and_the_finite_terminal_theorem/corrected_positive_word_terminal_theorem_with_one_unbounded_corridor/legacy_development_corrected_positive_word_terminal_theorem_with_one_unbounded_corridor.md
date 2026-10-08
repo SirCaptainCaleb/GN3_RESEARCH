@@ -1,9 +1,5 @@
 # Corrected positive-word terminal theorem with one unbounded corridor — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Corrected positive-word terminal theorem: one explicit unbounded branch remains

@@ -1,9 +1,5 @@
 # The universal four-support is immediate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### The first descent can preserve the universal reversal

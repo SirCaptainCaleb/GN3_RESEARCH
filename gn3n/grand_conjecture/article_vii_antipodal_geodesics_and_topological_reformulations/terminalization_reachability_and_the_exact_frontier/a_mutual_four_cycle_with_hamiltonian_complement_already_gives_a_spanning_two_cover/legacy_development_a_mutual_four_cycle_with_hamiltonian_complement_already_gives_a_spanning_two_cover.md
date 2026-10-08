@@ -1,9 +1,5 @@
 # A mutual four-cycle with Hamiltonian complement already gives a spanning two-cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A mutual four-cycle with Hamiltonian complement already gives a spanning two-cover

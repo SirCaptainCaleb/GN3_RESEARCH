@@ -1,9 +1,5 @@
 # Defect intervals and the exact Helly criterion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Spanning orders and status words

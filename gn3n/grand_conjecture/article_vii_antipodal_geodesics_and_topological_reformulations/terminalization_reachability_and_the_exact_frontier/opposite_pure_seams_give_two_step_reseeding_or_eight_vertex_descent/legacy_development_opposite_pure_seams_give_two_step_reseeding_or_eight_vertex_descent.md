@@ -1,9 +1,5 @@
 # Opposite pure seams give two-step reseeding or eight-vertex descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Opposite pure seams give a two-step descent/reseed mechanism

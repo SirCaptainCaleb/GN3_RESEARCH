@@ -1,9 +1,5 @@
 # Positive protection eliminates exclusive disjoint alternating carriers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Disjoint alternating terminal carriers are impossible under positive protection

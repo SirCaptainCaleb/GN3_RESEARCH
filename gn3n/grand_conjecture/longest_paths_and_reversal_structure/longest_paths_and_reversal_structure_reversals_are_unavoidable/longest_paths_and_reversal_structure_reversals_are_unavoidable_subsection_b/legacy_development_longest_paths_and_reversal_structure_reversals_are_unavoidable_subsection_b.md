@@ -1,9 +1,5 @@
 # Neutral internalization of a double reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Every terminal witness has two neutral swaps into either four-component

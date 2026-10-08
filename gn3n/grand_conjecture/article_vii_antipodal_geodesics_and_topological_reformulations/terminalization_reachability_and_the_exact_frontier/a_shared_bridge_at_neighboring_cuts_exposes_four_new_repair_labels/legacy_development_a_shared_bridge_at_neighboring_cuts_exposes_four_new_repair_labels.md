@@ -1,9 +1,5 @@
 # A shared bridge at neighboring cuts exposes four new repair labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Lemma. Let A be a four-vertex set, r,v,s three further vertices, and T,U disjoint tight paths of order at least two, with all these vertex sets disjoint. Suppose (T,r) and (U,s) are tight. Consider the two six-packets

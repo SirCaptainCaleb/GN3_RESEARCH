@@ -1,9 +1,5 @@
 # Balance, circulation, and multiplicity of zeros — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Convex balance is directed circulation

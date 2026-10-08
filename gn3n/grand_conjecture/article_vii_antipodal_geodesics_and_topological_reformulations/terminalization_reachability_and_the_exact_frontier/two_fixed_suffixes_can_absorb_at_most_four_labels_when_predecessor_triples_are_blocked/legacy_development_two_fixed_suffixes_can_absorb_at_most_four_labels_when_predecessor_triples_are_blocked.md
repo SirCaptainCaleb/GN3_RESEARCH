@@ -1,9 +1,5 @@
 # Two fixed suffixes can absorb at most four labels when predecessor triples are blocked — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two fixed suffixes can absorb at most four labels when predecessor triples are blocked

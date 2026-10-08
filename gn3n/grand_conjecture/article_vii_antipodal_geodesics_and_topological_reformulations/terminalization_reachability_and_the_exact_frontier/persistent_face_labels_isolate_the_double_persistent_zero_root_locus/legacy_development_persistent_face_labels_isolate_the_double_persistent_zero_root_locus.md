@@ -1,9 +1,5 @@
 # Persistent face labels isolate the double-persistent zero-root locus — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Face-level persistent labels isolate the genuinely double-persistent obstruction

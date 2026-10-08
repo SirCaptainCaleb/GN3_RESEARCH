@@ -1,9 +1,5 @@
 # Balanced ten-position repairs have explicit protected endpoint orbits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Full endpoint-transport orbits of a balanced ten-position repair

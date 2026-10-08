@@ -1,9 +1,5 @@
 # Span-two doubles are exactly a two-cover corridor plus two reversed endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The unbounded span-two double is exactly a two-cover corridor plus two reversed endpoints

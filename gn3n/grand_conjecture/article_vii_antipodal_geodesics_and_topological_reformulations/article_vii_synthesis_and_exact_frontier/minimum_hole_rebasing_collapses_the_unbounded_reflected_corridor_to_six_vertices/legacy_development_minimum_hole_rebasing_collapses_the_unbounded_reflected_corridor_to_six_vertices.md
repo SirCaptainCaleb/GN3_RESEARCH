@@ -1,9 +1,5 @@
 # Minimum-hole rebasing collapses the unbounded reflected corridor to six vertices — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rebase at a minimum hole: the unbounded corridor collapses to six vertices

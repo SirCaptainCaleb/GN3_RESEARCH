@@ -1,9 +1,5 @@
 # Uniform buffer blocking alone does not force a farther positive witness — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Uniform buffer blocking does not by itself force a farther positive witness

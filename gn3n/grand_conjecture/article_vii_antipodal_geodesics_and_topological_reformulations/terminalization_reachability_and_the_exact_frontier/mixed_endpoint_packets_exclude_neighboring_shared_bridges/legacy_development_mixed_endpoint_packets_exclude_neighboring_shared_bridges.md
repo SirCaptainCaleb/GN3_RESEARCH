@@ -1,9 +1,5 @@
 # Mixed endpoint packets exclude neighboring shared bridges — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Mixed endpoint packets exclude a shared bridge across the last two monotone cuts

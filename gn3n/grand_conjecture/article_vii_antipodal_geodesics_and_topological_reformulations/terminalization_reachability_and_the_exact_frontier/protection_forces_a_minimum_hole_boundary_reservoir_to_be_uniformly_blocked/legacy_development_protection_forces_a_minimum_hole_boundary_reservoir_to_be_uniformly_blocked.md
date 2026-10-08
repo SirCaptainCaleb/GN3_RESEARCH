@@ -1,9 +1,5 @@
 # Protection forces a minimum-hole boundary reservoir to be uniformly blocked — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protection and a minimum deletion set force a hole reservoir to be blocked

@@ -1,9 +1,5 @@
 # Outward buffer vertices bypass the internal two-deletion obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Outward buffer replacement converts a genuine double to a one-triple boundary test

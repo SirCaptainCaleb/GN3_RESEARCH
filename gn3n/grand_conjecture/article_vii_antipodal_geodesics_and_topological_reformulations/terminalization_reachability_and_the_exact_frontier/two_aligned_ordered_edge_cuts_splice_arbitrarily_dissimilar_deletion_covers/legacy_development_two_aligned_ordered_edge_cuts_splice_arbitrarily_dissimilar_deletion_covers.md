@@ -1,9 +1,5 @@
 # Two aligned ordered edge cuts splice arbitrarily dissimilar deletion covers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two aligned ordered-edge cuts splice arbitrarily dissimilar deletion covers

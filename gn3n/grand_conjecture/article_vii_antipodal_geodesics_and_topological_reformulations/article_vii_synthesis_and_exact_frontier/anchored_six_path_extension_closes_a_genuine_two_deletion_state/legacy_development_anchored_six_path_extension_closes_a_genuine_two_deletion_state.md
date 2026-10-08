@@ -1,9 +1,5 @@
 # Anchored six-path extension closes a genuine two-deletion state — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Anchored six-path extension closes a genuine two-deletion state

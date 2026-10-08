@@ -1,9 +1,5 @@
 # Audit of the exterior-label degree argument: use the exact degree at R — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The conclusion of 271, that the saturated Johnson block is spanning, is correct by 269. Its displayed degree argument at K=R+y does not by itself prove that conclusion.

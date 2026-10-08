@@ -1,9 +1,5 @@
 # Type I labels are impossible, so the Johnson block is spanning — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Type I exterior labels are impossible; the saturated Johnson block is spanning

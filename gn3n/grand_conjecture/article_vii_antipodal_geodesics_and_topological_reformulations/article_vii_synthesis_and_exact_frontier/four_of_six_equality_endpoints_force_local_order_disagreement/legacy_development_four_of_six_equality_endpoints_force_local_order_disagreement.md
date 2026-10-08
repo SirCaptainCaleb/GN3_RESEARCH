@@ -1,9 +1,5 @@
 # Four-of-six equality endpoints force local order disagreement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four-of-six equality endpoints force local order disagreement

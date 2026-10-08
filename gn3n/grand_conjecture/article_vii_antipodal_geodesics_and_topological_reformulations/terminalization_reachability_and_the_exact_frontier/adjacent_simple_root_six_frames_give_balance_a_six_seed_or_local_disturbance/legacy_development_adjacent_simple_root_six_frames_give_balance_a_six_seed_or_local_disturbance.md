@@ -1,9 +1,5 @@
 # Adjacent-simple-root six-frames give balance, a six-seed, or local disturbance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Adjacent-simple-root minimum pairs have a sharp six-frame trichotomy

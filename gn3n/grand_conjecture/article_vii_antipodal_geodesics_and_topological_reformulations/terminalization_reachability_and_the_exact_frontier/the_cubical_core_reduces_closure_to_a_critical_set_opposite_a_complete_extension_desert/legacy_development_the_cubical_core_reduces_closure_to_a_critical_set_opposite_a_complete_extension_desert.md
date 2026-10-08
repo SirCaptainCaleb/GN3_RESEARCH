@@ -1,9 +1,5 @@
 # Audit: the cubical core gives partial critical stars, not a monotone separator — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: pure source-sink cubical cocycles need not be monotone

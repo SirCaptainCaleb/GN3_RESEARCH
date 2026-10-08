@@ -1,9 +1,5 @@
 # Reverse shared bridges reduce to one tight path and a six-vertex packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Retain the neighboring-cut setup and suppose the two bridge orientations are

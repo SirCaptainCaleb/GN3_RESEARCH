@@ -1,9 +1,5 @@
 # Correction: rooted four-core extension is not automatic — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction to the rooted-four-core reduction

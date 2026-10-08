@@ -1,9 +1,5 @@
 # Moving the following label has an exact first-homology kernel — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact first-homology kernel for moving the following label

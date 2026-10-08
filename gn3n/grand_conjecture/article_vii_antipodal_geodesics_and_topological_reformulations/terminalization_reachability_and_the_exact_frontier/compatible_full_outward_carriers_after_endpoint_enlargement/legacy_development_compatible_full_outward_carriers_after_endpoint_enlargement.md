@@ -1,9 +1,5 @@
 # Compatible full outward carriers after endpoint enlargement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Compatible full outward carriers after endpoint enlargement

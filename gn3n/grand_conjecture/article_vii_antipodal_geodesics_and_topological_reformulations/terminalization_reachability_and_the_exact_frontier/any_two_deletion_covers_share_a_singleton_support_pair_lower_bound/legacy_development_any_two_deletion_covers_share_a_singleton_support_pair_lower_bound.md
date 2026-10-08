@@ -1,9 +1,5 @@
 # Any two deletion covers share a singleton support-pair lower bound — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Any two normalized deletion covers of a minimum counterexample have a common singleton lower pair

@@ -1,9 +1,5 @@
 # Face-monotone positional coarsening gives compatible enlarged protected carriers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Positional coarsening supplies nested enlarged carriers

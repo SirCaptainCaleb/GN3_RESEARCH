@@ -1,9 +1,5 @@
 # Local forbidden patterns and witness handoff — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The exact criterion

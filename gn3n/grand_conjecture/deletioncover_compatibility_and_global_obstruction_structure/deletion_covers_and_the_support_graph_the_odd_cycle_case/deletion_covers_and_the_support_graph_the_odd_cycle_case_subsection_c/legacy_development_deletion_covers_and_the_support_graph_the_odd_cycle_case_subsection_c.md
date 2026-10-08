@@ -1,9 +1,5 @@
 # 6.2 Rank transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For consecutive compatible covers,

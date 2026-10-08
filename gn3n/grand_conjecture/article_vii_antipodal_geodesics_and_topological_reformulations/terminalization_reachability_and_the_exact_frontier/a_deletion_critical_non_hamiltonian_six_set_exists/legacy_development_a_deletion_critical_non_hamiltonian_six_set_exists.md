@@ -1,9 +1,5 @@
 # A deletion-critical non-Hamiltonian six-set exists — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 A direct binary feasibility search followed by exhaustive verification gives a genuine six-vertex boundary tournament which is non-Hamiltonian although every vertex deletion is Hamiltonian. This refutes the proposed scale-independent shortcut that every deletion-critical non-Hamiltonian support has order at most five.

@@ -1,9 +1,5 @@
 # Minimum deletion holes of order at least three force canonical root-advance three-covers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Elevation of minimum-hole synchronization by the three-reverser lemma

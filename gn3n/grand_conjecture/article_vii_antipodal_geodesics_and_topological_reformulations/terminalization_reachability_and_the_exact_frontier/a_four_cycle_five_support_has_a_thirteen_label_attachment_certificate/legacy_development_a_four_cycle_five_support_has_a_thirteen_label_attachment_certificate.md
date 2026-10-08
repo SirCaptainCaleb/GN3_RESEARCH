@@ -1,9 +1,5 @@
 # A four-cycle five-support has a thirteen-label attachment certificate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A four-cycle five-support has a thirteen-label attachment certificate

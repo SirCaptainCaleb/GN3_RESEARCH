@@ -1,9 +1,5 @@
 # Cubical parity propagates a partial source star to a complete critical star — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Cubical parity propagates every partial source star to a full source star

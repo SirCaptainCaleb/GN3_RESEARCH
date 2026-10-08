@@ -1,9 +1,5 @@
 # Maximal-support endpoint deletions give a junction fork or a four-end deletion cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum-order counterexample. Let S be a globally maximal proper Hamiltonian support and fix H-S=P|Q, with P=(p_1,...,p_m), Q=(q_1,...,q_t).

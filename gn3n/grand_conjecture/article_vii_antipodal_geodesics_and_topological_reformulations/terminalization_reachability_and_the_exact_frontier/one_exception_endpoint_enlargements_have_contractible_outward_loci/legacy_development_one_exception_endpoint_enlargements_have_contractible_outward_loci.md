@@ -1,9 +1,5 @@
 # One-exception endpoint enlargements have contractible outward loci — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A one-exception endpoint enlargement is contractible

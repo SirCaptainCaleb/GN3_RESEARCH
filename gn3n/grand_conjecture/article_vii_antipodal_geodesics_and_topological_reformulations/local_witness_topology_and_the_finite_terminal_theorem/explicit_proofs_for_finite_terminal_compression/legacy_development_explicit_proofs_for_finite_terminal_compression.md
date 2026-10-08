@@ -1,9 +1,5 @@
 # Explicit proofs for finite terminal compression — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Explicit proof package for the finite terminal compression

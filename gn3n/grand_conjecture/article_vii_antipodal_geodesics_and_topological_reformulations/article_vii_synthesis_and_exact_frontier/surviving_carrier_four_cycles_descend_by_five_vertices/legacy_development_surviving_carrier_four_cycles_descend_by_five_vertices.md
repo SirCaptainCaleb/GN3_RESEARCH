@@ -1,9 +1,5 @@
 # Surviving carrier four-cycles descend by five vertices — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A surviving carrier four-cycle gives strict hereditary descent by five vertices

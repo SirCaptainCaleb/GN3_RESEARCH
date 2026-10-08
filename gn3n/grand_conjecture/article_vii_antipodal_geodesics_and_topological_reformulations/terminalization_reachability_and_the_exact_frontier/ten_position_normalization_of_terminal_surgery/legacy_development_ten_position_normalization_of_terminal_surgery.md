@@ -1,9 +1,5 @@
 # Ten-position normalization of terminal surgery — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Normalizing terminal surgery to a ten-position window

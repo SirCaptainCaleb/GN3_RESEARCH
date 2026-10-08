@@ -1,9 +1,5 @@
 # Moving the following label has an exact fundamental-group kernel — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact fundamental-group kernel for moving the following label

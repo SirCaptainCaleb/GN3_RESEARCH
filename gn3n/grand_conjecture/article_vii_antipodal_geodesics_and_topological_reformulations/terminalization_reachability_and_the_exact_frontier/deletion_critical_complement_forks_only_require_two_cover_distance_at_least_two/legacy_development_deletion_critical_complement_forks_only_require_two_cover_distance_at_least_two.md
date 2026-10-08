@@ -1,9 +1,5 @@
 # Deletion-critical complement forks only require two-cover distance at least two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Elevation: complement deletion-criticality only needs (kappa_2(H)ge2)

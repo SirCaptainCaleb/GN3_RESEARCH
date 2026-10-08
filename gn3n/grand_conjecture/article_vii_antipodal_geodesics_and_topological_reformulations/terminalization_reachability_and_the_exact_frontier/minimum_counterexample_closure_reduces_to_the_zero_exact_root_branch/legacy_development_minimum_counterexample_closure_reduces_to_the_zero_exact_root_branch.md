@@ -1,9 +1,5 @@
 # Minimum-counterexample closure reduces to the zero exact-root branch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum-counterexample closure reduces to the zero exact-root branch

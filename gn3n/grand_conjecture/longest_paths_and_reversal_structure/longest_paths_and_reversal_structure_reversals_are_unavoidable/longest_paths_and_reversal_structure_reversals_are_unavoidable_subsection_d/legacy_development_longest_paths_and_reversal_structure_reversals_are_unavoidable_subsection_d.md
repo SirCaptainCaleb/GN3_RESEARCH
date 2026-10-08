@@ -1,9 +1,5 @@
 # Marked minima are global minima — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

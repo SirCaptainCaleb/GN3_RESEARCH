@@ -1,9 +1,5 @@
 # Minimum-hole singleton restorations have opposite-boundary four-supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Singleton restorations have opposite-boundary four-supports

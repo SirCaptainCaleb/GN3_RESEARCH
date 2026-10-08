@@ -1,9 +1,5 @@
 # A four-cycle has an exact six-label repair classification with one exterior label — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact six-label repair with one exterior label

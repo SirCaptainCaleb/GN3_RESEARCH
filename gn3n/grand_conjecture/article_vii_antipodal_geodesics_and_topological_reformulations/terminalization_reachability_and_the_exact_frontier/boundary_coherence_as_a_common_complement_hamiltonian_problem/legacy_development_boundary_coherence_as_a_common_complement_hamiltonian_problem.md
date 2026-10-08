@@ -1,9 +1,5 @@
 # Boundary coherence as a common-complement Hamiltonian problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Boundary coherence reduces to a common complementary Hamiltonian pair problem

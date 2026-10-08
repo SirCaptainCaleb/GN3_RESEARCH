@@ -1,9 +1,5 @@
 # Verified five-position obstruction and ordered-tuple compression — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two compression lemmas with explicit hypotheses

@@ -1,9 +1,5 @@
 # Defective-core insertion augmentation and a deletion-critical refutation of reversed-seam gluing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Adjacent insertion augmentation does not require a Hamiltonian root-deleted core

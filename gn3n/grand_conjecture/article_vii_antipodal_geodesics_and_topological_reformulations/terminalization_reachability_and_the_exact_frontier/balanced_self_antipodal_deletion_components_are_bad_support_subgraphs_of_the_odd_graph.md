@@ -1,9 +1,1 @@
 # Balanced self-antipodal deletion components are bad-support subgraphs of the odd graph
-
-## Composition
-
-(none yet)
-
-## Development
-
-Assume n=2r+1 and let C be a self-antipodal source-sink deletion-cover component. By fixed-rank rigidity, its sources have plus-size r+1 and its sinks plus-size r. Quotient C by sign antipode. Represent each antipodal vertex orbit by its source, hence by a bad (r+1)-set A whose complement is Hamiltonian. A deletion-cover edge from source A to sink A-{x} becomes in the quotient an edge from A to the source representing the antipode of that sink, namely D=V-(A-{x})=(V-A) union {x}. Thus A and D are both (r+1)-sets and satisfy A union D=V and A intersect D={x}. Conversely this relation is equivalent to the r-set complements V-A and V-D being disjoint. Therefore the quotient of every balanced self-antipodal deletion component is a subgraph of the odd graph O_{r+1}, equivalently the Kneser graph on r-subsets of a (2r+1)-set after taking complements. Each quotient edge has the unique label x=A intersect D, and its deletion cover is (A-{x}) | (D-{x}), two complementary Hamiltonian r-sets of H-x; both one-vertex restorations A and D are non-Hamiltonian in a counterexample. A path from a source to its antipode projects to an odd closed walk, so every self-antipodal component contains an odd cycle in this bad-support odd-graph subgraph. The earlier spanning odd support-cycle normal form is therefore one special realization of a more intrinsic obstruction: an odd cycle of balanced non-Hamiltonian supports in the odd graph, every edge certified by a complementary Hamiltonian deletion pair. Two successive quotient edges induce a one-vertex Johnson exchange between their bad supports, explaining the later Johnson-cycle formulation.

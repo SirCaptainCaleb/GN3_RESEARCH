@@ -1,9 +1,5 @@
 # Support-pair topology is universal through dimension one, and four-set obstructions require extension deserts — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Universal low-rank structure in the Hamiltonian support-pair complex

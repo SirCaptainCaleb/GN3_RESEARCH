@@ -1,9 +1,5 @@
 # A protected four-cycle survives five-label enlargement exactly when an exit status is nonzero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact five-label obstruction for the protected four-cycle

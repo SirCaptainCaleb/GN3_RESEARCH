@@ -1,9 +1,5 @@
 # Failure of reversed-pair growth forces a global endpoint desert — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One-step failure forces a global rooted endpoint desert

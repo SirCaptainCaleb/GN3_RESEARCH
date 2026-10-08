@@ -1,9 +1,5 @@
 # Full Article VII top-down elevation pass: repair addenda — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Top-down elevation pass over the recent Article VII repair addenda

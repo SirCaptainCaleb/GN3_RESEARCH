@@ -1,9 +1,5 @@
 # Double blocked boundary shells collapse to an explicit order-ten cap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Double blocked boundary shells collapse to an explicit order-ten cap

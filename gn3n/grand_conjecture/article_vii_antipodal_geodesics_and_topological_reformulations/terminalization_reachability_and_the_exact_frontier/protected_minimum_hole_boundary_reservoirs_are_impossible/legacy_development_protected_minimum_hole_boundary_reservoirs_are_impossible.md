@@ -1,9 +1,5 @@
 # Protected fixed-boundary reservoirs are disjoint from minimum holes — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Strengthening: a protected fixed-boundary reservoir cannot contain even one minimum-hole label

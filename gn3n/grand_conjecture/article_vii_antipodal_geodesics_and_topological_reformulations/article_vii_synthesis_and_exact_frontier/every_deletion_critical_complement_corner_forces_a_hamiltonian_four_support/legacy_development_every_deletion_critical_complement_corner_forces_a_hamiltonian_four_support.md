@@ -1,9 +1,5 @@
 # Every deletion-critical oriented seam forces a Hamiltonian four-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every deletion-critical oriented seam forces a Hamiltonian four-support

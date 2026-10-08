@@ -1,9 +1,5 @@
 # Same-endpoint backtracking gives rooted rail shortening — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Correct and sharpen the same-endpoint backtracking analysis. Suppose compatible deletion covers have

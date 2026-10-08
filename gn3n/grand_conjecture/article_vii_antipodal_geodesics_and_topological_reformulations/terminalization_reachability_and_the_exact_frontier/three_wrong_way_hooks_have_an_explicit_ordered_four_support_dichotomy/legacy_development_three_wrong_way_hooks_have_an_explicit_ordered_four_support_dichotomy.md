@@ -1,9 +1,5 @@
 # Three wrong-way hooks have an explicit ordered four-support dichotomy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three wrong-way hooks have an explicit ordered four-support dichotomy

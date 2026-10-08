@@ -1,9 +1,5 @@
 # Four-of-six equality endpoints have an oriented matching-block normal form — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let Y be a Hamiltonian five-set with distinguished labels x,y and ordinary labels r,s,t. Let e be an exterior label such that U=Y union {e} is non-Hamiltonian. Assume the good deletion labels of U are exactly

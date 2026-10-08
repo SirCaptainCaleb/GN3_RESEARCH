@@ -1,9 +1,5 @@
 # Exact inversion-window criterion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Exact inversion-window criterion

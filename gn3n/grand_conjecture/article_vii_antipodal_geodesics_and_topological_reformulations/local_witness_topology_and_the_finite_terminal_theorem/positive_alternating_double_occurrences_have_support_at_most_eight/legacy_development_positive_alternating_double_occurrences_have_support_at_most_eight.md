@@ -1,9 +1,5 @@
 # Positive alternating double occurrences have support at most eight — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reflected positive alternating double occurrences have support at most eight

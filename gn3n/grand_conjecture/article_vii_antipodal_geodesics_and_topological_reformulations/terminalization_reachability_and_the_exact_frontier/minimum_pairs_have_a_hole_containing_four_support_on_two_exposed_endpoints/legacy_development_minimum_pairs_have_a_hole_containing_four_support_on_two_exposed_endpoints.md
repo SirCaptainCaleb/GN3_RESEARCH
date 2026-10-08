@@ -1,9 +1,5 @@
 # Minimum pairs have a hole-containing four-support on two exposed endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A minimum pair has a Hamiltonian four-support on two actual complementary endpoints

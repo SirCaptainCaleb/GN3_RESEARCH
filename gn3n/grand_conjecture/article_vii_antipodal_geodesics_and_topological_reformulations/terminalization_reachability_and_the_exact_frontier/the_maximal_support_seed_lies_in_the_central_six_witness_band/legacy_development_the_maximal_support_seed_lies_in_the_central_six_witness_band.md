@@ -1,9 +1,5 @@
 # The maximal-support seed lies in the central six witness band — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The universal maximal-support seed lies inside the central six-label witness band

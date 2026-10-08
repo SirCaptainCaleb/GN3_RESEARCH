@@ -1,9 +1,5 @@
 # Correction: surviving terminal carriers are bounded by ten, not rank three — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: the rank-three reduction does not cover the surviving terminal branch

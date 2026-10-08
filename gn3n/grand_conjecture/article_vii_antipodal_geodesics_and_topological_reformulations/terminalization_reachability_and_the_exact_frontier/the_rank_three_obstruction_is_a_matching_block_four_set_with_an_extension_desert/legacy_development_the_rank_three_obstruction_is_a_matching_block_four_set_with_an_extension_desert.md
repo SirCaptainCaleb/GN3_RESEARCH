@@ -1,9 +1,5 @@
 # The rank-three obstruction is a matching-block four-set with an extension desert — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The rank-three obstruction is a matching-block four-set with an exterior extension desert

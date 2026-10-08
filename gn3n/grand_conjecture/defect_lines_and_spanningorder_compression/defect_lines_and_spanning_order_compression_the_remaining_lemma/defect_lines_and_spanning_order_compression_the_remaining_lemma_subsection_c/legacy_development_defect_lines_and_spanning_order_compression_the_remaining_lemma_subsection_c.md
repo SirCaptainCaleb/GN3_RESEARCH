@@ -1,9 +1,5 @@
 # Slot synchronization reductions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Central slots and opposite endpoint slots

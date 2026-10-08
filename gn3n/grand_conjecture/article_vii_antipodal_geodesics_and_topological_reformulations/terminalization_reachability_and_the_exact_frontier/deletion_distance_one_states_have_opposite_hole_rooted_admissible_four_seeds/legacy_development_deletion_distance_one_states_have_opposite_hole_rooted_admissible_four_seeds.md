@@ -1,9 +1,5 @@
 # Deletion-distance-one states have opposite hole-rooted admissible four-seeds — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Deletion-distance-one states have canonical admissible four-seeds at both ends

@@ -1,9 +1,5 @@
 # Featureless equality endpoints have distinct ordinary deletion labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Featureless equality endpoints have distinct ordinary deletion labels

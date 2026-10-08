@@ -1,9 +1,5 @@
 # Monotone two-deletion corridors force a six-triple reversal fan — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three legal corridor cuts amplify the two-deletion reversal constraints

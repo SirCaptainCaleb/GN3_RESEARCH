@@ -1,9 +1,5 @@
 # Elevation: genuine reflected doubles are minimum-hole Boolean squares — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A genuine reflected double is a minimum-hole Boolean square

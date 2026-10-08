@@ -1,9 +1,5 @@
 # Protected mixed doubles can forbid simultaneous preservation of both tail pairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The two-tail interface target must permit more than independent prefix absorption.

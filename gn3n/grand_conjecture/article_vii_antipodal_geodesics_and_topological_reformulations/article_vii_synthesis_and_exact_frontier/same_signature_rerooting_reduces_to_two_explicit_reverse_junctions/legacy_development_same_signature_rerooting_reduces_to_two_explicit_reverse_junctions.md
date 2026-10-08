@@ -1,9 +1,5 @@
 # Same-signature rerooting reduces to two explicit reverse junctions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same-signature central supports reduce rerooting to two reverse junctions

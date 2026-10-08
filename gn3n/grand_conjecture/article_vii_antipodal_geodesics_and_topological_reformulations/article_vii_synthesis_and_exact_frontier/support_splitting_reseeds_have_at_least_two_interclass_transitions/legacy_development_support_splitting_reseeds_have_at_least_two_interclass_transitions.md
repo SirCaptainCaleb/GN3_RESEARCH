@@ -1,9 +1,5 @@
 # Support-splitting reseeds have at least two interclass transitions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Genuine support-splitting reseeds have at least two interclass comparison edges

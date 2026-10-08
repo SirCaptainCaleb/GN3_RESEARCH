@@ -1,9 +1,5 @@
 # Post-pass corrections and strongest elevations through the newest addenda — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Post-pass corrections and strongest elevations through the newest repair addenda

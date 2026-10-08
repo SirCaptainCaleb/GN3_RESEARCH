@@ -1,9 +1,5 @@
 # Replacement classes force four double-prefix reversers and an anchored five-path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Replacement classes for a longest reversed-pair path

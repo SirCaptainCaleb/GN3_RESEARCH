@@ -1,9 +1,5 @@
 # Independent audit: external gauge does not close the maximal A2 braid — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Independent audit of the terminal edge-surgery closure

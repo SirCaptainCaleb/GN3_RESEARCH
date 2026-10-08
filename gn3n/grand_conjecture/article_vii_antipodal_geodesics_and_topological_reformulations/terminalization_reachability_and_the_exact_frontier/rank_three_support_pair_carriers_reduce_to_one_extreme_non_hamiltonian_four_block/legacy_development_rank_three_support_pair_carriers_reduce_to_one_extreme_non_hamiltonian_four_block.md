@@ -1,9 +1,5 @@
 # Rank-three support-pair carriers reduce to one extreme non-Hamiltonian four-block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rank-three support-pair carriers reduce to one extreme non-Hamiltonian four-block

@@ -1,9 +1,5 @@
 # Independent audit: finite-terminal compression proof obligations — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Independent audit: finite-terminal compression needs explicit proofs

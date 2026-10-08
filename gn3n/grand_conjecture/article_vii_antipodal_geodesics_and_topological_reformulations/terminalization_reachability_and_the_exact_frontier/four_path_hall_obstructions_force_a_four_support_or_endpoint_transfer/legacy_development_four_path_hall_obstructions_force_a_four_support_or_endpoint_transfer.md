@@ -1,9 +1,5 @@
 # Four-path Hall obstructions force a four-support or endpoint transfer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Any four-path Hall obstruction gives a four-support or endpoint transfer

@@ -1,9 +1,5 @@
 # Self-audit of the 8/18-position and six-label finitization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Self-audit of the new finitization

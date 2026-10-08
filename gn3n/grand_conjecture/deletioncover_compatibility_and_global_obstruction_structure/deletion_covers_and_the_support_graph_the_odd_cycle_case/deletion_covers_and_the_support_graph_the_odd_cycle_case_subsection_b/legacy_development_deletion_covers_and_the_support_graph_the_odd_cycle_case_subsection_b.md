@@ -1,9 +1,5 @@
 # 6.1 Consecutive double deletions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For each \(i\), let \(T_i\) be any two-cover of

@@ -1,9 +1,5 @@
 # A local pure carrier shows same-face escape is false — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The same-face strengthening is false locally

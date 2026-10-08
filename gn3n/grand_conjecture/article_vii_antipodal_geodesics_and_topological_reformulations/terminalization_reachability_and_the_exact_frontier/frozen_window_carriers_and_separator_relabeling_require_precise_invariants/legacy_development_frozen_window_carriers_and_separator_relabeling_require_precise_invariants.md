@@ -1,9 +1,5 @@
 # Frozen-window carriers and separator relabeling require precise invariants — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A protected frozen-window carrier and its exact compatibility condition

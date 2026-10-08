@@ -1,9 +1,5 @@
 # Exact-deficiency sharpening of the terminal handoff — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

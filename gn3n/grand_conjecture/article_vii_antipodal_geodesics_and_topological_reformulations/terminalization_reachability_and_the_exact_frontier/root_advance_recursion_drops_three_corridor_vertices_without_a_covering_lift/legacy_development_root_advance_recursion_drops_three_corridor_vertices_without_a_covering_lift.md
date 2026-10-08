@@ -1,9 +1,5 @@
 # Root-advance recursion drops three corridor vertices without a covering lift — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Root-advance recursion must preserve the vertices already cut off

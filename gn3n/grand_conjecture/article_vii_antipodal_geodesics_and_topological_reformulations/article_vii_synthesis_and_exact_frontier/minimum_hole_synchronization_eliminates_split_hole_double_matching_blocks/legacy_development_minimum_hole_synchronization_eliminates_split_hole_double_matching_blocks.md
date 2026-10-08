@@ -1,9 +1,5 @@
 # Minimum-hole synchronization eliminates split-hole double matching blocks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Split-hole double matching blocks are impossible under minimum-hole synchronization

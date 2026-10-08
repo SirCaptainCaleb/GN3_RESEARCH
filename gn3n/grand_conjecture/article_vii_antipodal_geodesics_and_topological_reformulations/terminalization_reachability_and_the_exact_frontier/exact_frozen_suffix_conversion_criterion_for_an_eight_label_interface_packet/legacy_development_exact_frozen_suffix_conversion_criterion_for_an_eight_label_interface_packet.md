@@ -1,9 +1,5 @@
 # Exact frozen suffix conversion criterion for an eight label interface packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact frozen-suffix conversion criterion for an eight-label interface packet

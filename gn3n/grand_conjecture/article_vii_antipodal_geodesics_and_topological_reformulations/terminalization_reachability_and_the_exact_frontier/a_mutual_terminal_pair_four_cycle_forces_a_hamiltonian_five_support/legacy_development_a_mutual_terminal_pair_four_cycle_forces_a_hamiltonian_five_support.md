@@ -1,9 +1,5 @@
 # A mutual terminal-pair four-cycle forces a Hamiltonian five-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A terminal-pair four-cycle forces a Hamiltonian five-support

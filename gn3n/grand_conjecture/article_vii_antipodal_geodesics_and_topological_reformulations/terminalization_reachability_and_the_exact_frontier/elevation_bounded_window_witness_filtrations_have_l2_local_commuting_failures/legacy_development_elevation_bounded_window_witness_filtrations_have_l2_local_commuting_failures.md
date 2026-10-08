@@ -1,9 +1,5 @@
 # Elevation: bounded-window witness filtrations have L+2-local commuting failures — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## General locality principle for protected commuting cubes

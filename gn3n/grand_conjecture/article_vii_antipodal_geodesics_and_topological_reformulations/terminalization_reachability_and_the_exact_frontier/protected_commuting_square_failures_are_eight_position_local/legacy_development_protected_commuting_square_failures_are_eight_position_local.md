@@ -1,9 +1,5 @@
 # Protected commuting-square failures are eight-position local — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected commuting-square failures are supported on at most eight positions

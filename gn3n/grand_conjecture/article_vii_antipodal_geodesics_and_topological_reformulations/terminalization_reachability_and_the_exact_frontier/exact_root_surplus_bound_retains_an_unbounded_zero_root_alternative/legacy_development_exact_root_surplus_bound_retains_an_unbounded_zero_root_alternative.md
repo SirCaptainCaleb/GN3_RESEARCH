@@ -1,9 +1,5 @@
 # Exact-root surplus bound retains an unbounded zero-root alternative — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The dimension count and anchor argument in [[exact_root_surplus_forces_deletion_distance_at_most_five]] do not establish the unconditional conclusion kappa_2(H)<=5.

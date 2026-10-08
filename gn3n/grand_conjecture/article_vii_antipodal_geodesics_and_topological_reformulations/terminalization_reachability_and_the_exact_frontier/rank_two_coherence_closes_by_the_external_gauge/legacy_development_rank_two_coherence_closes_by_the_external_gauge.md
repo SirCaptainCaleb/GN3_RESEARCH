@@ -1,9 +1,5 @@
 # Rank-two coherence closes by the external gauge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The terminal edge-surgery coherence lemma

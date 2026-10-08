@@ -1,9 +1,5 @@
 # Correction: second-layer propagation needs an independently rooted triple — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: previous second-layer propagation claim withdrawn

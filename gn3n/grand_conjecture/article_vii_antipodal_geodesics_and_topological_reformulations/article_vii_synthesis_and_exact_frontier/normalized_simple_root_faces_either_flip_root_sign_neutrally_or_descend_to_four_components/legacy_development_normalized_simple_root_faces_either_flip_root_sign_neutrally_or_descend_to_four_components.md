@@ -1,9 +1,5 @@
 # Normalized simple-root faces either flip root sign neutrally or descend to four-components — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A normalized simple-root minimum-hole face either flips root sign neutrally or descends to a four-component

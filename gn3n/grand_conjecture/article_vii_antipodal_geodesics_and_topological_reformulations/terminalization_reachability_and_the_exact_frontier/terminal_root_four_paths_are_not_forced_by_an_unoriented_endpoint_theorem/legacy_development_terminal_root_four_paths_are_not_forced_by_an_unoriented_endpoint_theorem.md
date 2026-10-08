@@ -1,9 +1,5 @@
 # Terminal-root four-paths are not forced by an unoriented endpoint theorem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## An oriented terminal-root strengthening needs additional hypotheses

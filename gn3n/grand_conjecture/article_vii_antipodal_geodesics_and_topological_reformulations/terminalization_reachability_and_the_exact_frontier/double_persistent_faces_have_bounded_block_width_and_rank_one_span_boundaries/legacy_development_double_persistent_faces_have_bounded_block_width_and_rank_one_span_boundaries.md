@@ -1,9 +1,5 @@
 # Double-persistent faces have bounded block width and bounded boundary footprints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Double-persistent faces have bounded block width and bounded boundary footprints

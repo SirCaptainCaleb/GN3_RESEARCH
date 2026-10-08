@@ -1,9 +1,5 @@
 # Audit: terminal surgery and compression use different witness polarities — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The witness polarity must be fixed before terminal surgery

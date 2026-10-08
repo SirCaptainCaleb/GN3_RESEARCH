@@ -1,9 +1,5 @@
 # Rooted corridor absorption reduces to a bounded three-hook residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rooted corridor absorption reduces to a three-hook residue

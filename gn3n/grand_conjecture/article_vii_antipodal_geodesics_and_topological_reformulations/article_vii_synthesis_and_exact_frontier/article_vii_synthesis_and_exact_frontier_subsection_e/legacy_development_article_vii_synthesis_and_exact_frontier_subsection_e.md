@@ -1,9 +1,5 @@
 # Root-only exhaustion and the k=1 anchored residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### A cubic root moment kills the last asymmetric circulation

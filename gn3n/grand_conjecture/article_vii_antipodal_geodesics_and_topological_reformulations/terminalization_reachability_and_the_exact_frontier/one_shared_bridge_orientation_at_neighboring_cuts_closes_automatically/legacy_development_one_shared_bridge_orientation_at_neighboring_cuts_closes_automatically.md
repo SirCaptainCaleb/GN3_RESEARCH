@@ -1,9 +1,5 @@
 # One shared-bridge orientation at neighboring cuts closes automatically — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One shared-bridge orientation at neighboring cuts closes automatically

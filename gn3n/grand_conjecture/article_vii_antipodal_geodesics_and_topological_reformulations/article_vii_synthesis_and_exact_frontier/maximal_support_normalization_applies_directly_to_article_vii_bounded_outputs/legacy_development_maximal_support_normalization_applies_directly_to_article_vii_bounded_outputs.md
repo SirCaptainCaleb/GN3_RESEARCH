@@ -1,9 +1,5 @@
 # Maximal-support normalization applies directly to Article VII bounded outputs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Maximal-support normalization is valid once a two-coverable complement is known

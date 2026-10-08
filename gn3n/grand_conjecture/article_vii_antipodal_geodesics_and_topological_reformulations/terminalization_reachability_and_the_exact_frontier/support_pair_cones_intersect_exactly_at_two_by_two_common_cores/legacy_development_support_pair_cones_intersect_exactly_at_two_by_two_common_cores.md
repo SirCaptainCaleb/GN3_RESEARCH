@@ -1,9 +1,5 @@
 # Support-pair cones intersect exactly at two-by-two common cores — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two-cover compatibility should be measured by common support-pair cores, not by path-order agreement

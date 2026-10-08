@@ -1,9 +1,5 @@
 # Three connected support agreement reconstructs a spanning two cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three-connected support agreement reconstructs a spanning two-cover

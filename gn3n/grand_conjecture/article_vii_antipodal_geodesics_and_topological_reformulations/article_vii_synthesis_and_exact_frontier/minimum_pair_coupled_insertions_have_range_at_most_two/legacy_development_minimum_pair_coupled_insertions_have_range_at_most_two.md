@@ -1,9 +1,5 @@
 # Minimum-pair coupled insertions have range at most two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let B=(b_1,...,b_m) be a tight path and let x,y be vertices outside B. Assume neither B+x nor B+y is Hamiltonian in the inherited order: inserting either vertex alone into any slot of B fails. Suppose nevertheless that there is a tight order R on V(B) union {x,y} whose restriction to V(B) is exactly the displayed order B. Then x and y occur at positional distance at most two in R. Equivalently, they are adjacent in R or exactly one vertex of B lies between them.

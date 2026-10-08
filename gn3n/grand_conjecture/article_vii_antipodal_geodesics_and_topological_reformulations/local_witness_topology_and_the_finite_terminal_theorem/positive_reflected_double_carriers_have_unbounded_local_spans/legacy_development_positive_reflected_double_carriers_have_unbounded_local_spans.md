@@ -1,9 +1,5 @@
 # Positive reflected-double carriers have unbounded local spans — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Positive reflected-double carriers can have arbitrarily long determining spans

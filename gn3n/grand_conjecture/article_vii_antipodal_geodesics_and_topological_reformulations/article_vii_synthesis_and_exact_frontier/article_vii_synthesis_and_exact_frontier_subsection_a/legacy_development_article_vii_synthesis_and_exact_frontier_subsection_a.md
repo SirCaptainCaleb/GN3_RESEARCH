@@ -1,9 +1,5 @@
 # Exact formulations and the pre-compression frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### The exact equivalence chain

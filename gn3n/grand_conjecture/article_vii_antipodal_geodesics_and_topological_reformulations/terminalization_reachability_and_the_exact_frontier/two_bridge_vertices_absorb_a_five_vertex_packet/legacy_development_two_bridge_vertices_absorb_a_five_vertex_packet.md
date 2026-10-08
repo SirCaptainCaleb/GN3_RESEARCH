@@ -1,9 +1,5 @@
 # Two bridge vertices absorb a five-vertex packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Lemma. Let S be any five-vertex set and Q=(q_1,...,q_t), t>=2, a disjoint tight path in a boundary tournament. Put

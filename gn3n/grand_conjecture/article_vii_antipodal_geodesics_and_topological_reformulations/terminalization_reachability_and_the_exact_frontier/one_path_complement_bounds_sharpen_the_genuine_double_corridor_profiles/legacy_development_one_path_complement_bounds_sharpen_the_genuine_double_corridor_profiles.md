@@ -1,9 +1,5 @@
 # One path complement bounds sharpen the genuine double corridor profiles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every corridor component has at least five vertices

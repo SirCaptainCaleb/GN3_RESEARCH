@@ -1,9 +1,5 @@
 # Elevation: four-vertex exact-root compression sharpens the surplus bound to two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Elevation: the four-vertex central theorem sharpens the exact-root surplus bound

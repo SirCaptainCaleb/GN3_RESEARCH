@@ -1,9 +1,5 @@
 # A mutually admissible exterior vertex fills the terminal-pair carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One exterior vertex fills a terminal-pair carrier

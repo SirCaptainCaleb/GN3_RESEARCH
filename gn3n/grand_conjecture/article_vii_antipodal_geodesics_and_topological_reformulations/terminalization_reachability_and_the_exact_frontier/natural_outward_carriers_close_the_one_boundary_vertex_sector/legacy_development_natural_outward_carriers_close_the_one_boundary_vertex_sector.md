@@ -1,9 +1,5 @@
 # Natural outward carriers close the one boundary vertex sector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A globally compatible extension on an explicit sector

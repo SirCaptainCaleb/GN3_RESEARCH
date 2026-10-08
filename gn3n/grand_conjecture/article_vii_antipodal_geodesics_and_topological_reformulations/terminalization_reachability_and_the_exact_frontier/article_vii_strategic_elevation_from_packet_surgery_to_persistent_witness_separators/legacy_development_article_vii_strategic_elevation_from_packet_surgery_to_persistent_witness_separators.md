@@ -1,9 +1,5 @@
 # Article VII strategic elevation from packet surgery to persistent witness separators — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Choice of attack

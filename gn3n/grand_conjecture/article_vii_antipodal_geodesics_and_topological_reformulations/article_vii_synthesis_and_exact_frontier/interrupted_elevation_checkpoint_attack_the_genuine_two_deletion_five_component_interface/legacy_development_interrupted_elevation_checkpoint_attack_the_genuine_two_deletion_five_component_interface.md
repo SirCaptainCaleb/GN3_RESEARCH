@@ -1,9 +1,5 @@
 # Interrupted elevation checkpoint: attack the genuine two-deletion five-component interface — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Interrupted elevation checkpoint: the five-component two-deletion interface

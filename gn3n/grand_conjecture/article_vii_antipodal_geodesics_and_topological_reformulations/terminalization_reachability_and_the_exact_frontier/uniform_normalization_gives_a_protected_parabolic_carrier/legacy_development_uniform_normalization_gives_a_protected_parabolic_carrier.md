@@ -1,9 +1,5 @@
 # Uniform normalization gives a protected parabolic carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Higher-dimensional Coxeter extension from a uniform protected normalization

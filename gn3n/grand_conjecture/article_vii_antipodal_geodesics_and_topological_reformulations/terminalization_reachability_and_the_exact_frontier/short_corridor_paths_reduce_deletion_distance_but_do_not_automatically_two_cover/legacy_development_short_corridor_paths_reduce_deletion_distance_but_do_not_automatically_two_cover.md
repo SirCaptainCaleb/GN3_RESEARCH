@@ -1,9 +1,5 @@
 # Short corridor paths reduce deletion distance but do not automatically two-cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The short-path deduction in [[genuine_two_deletion_doubles_have_both_corridor_paths_of_order_at_least_four]] is valid as an exclusion of kappa_2=2, but its sentence saying that all short-path cases collapse directly to a two-cover is stronger than the proof.

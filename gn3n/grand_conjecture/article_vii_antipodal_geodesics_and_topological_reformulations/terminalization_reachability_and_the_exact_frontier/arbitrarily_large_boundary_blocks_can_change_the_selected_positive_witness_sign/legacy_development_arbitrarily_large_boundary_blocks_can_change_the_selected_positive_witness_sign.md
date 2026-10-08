@@ -1,9 +1,5 @@
 # Arbitrarily large boundary blocks can change the selected positive witness sign — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The protected corridor intersection bound does not make boundary blocks sign-neutral.

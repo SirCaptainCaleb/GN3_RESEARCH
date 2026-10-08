@@ -1,9 +1,5 @@
 # An unused vertex converts a reversed endpoint-pair match into an actual two-cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reversed endpoint pairs give an actual augmentation through an unused vertex

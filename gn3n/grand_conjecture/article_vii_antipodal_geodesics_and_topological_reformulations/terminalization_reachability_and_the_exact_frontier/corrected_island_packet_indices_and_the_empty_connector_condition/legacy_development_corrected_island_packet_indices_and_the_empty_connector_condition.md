@@ -1,9 +1,5 @@
 # Corrected island packet indices and the empty connector condition — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact packet and tail orders

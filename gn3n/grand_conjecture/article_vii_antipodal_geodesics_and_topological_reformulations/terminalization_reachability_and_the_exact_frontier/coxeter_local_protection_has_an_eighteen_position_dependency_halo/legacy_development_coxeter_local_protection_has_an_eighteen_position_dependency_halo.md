@@ -1,9 +1,5 @@
 # Coxeter-local protection has an eighteen-position dependency halo — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The full protection dependency halo has order at most eighteen

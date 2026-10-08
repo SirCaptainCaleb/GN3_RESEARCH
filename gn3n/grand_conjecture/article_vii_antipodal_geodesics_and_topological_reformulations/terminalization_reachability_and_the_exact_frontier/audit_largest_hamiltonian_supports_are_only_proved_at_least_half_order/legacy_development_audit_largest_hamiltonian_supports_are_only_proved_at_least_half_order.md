@@ -1,9 +1,5 @@
 # Audit: largest Hamiltonian supports are only proved at least half-order — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the largest-support argument gives only a half-order lower bound

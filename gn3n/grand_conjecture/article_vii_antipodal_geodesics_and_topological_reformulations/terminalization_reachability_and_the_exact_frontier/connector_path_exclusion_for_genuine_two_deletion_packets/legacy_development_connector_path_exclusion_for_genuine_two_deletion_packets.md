@@ -1,9 +1,5 @@
 # Connector-path exclusion for genuine two-deletion packets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Connector-path exclusion in a genuine two-deletion residue

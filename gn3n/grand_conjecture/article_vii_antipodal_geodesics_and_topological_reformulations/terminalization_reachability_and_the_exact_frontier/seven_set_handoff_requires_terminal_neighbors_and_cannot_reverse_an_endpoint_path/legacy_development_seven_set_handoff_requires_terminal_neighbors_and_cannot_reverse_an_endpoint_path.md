@@ -1,9 +1,5 @@
 # Seven-set handoff requires terminal neighbors and cannot reverse an endpoint path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The seven-set endpoint handoff needs terminal, not unoriented, neighbors

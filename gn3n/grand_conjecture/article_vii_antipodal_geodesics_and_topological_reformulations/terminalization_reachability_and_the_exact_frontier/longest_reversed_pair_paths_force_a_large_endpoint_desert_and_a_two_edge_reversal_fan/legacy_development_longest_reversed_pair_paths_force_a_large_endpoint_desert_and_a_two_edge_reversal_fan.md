@@ -1,9 +1,5 @@
 # Longest reversed-pair paths force a large endpoint desert and a two-edge reversal fan — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Longest reversed-pair paths force a one-sided endpoint desert and a two-edge fan

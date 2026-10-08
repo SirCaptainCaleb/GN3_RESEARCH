@@ -1,9 +1,5 @@
 # A mutual terminal-pair star gives rooted four-paths and four Hamiltonian deletions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rooted four-paths supplied by a mutual terminal-pair star

@@ -1,9 +1,5 @@
 # Correction: order-two descent requires an independently rooted four-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: previous descent claim withdrawn

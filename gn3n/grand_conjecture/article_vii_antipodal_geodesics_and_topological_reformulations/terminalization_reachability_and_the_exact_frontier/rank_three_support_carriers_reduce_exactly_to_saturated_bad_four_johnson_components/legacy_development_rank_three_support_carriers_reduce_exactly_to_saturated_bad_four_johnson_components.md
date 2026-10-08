@@ -1,9 +1,5 @@
 # Rank-three support carriers reduce exactly to saturated bad-four Johnson components — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The first higher carrier obstruction is a saturated Johnson component of bad four-sets

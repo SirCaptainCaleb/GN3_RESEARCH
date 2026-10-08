@@ -1,9 +1,5 @@
 # Tuple dependence does not by itself give a bounded rank Coxeter quotient — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of the inference from tuple dependence to rank

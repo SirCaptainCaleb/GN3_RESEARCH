@@ -1,9 +1,5 @@
 # Support-pair rank is exactly two-cover deletion distance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamiltonian support-pair rank is exactly two-cover deletion distance

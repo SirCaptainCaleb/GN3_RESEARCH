@@ -1,9 +1,5 @@
 # Large minimum balanced holes force uniform one-hole imbalance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Large minimum balanced holes force uniform one-hole imbalance

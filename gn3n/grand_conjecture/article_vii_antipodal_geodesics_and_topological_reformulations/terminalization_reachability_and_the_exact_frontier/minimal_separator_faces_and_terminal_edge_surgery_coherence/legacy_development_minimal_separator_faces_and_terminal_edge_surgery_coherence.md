@@ -1,9 +1,5 @@
 # Minimal separator faces and terminal edge-surgery coherence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal separator faces are outward chambers or terminal sign-flip edges

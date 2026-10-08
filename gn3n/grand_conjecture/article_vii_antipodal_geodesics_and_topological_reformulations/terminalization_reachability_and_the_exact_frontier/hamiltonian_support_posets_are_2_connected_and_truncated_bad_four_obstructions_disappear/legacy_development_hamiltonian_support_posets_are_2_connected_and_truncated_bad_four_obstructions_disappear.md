@@ -1,9 +1,5 @@
 # Hamiltonian-support posets are 2-connected and truncated bad-four obstructions disappear — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The Hamiltonian-support poset is universally 2-connected

@@ -1,9 +1,5 @@
 # Central-pair gauge does not exclude intrinsic–tie endpoint sign flips — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A fixed central gauge does not make all endpoint factors sign-neutral

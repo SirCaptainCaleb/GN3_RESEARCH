@@ -1,9 +1,5 @@
 # Closed minimum-cover cores force uniform half-order Hamiltonicity and deletion-critical middle sets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Closed cores of minimum-imbalance covers have only a middle-rank residue

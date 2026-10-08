@@ -1,9 +1,5 @@
 # Two simple-root sign flips are one Johnson support swap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two simple-root sign flips are one Johnson support swap

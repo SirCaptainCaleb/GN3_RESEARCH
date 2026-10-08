@@ -1,9 +1,5 @@
 # Moving the auxiliary center can reverse arbitrary large nearest radii without same face escape — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A moving-center obstruction to the radius-three elevation

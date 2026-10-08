@@ -1,9 +1,5 @@
 # Protected-carrier separator and the acyclic-carrier reduction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected-carrier filtration and the exact separator obligation

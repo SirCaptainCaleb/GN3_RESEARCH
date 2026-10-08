@@ -1,9 +1,5 @@
 # Two-skeleton loop obstructions reduce to one four-label cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every loop obstruction is detected by one four-label pair factor

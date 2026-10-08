@@ -1,9 +1,5 @@
 # Correction: blocked outward buffers give a family of rooted reversers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: a blocked outward buffer produces a second rooted reverser, but not automatically a common-core packet

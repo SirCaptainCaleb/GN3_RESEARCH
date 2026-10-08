@@ -1,9 +1,5 @@
 # Double-hole endpoint certificates always contain a hole-preserving core — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Double-hole endpoint certificates always contain a hole-preserving core

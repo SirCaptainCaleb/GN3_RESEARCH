@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(A,B,C\) be disjoint vertex sets and let \(T\) be a two-cover of their union. Decompose the paths of \(T\) into maximal nonempty blocks contained in one of \(A,B,C\). If \(b_A,b_B,b_C\) are the corresponding block counts and \(t\) is the number of edges of the paths of \(T\) whose endpoints lie in different sets among \(A,B,C\), then

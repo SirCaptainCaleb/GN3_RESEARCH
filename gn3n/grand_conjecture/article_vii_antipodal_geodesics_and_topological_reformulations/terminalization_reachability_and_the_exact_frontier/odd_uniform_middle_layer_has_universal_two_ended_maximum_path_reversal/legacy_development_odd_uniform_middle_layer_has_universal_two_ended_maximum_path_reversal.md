@@ -1,9 +1,5 @@
 # Odd uniform middle layer has universal two-ended maximum-path reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume the exact odd uniform middle-layer state:

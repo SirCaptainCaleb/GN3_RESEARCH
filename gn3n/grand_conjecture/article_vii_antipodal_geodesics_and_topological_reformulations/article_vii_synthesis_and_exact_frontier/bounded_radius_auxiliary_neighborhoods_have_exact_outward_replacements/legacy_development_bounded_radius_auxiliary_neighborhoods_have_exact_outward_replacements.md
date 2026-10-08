@@ -1,9 +1,5 @@
 # Bounded-radius auxiliary neighborhoods have exact outward replacements — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Center-preserving bounded-radius replacement

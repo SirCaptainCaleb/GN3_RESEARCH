@@ -1,9 +1,5 @@
 # Common four-core repair for the maximal braid — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A common four-core for the maximal braid

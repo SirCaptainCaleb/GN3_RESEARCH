@@ -1,9 +1,1 @@
 # Two-target common side in the maximal A2 braid
-
-## Composition
-
-(none yet)
-
-## Development
-
-Backup lemma independent of endpoint exclusion. In V=T union {a,b,c}, |T|=8, there is a Hamiltonian five-set B subset T such that, for C=T minus B, at least two of C+ab, C+ac, C+bc are Hamiltonian. Four-of-six gives at least 38 Hamiltonian five-subsets B of T. For each prescribed moving pair P, the fixed-subset Hamilton-five density bound on T+P gives at most 24 bad triples C. If every Hamiltonian B worked for at most one moving pair, the 38 choices would contribute at least 76 bad pair incidences, while the three moving pairs contribute at most 72. Contradiction. Thus two support surgeries always admit a common Hamiltonian side. This is retained as an audit-safe fallback; the stronger endpoint-exclusion argument currently makes the maximal braid vacuous.

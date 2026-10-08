@@ -1,9 +1,5 @@
 # Minimum-counterexample seams reduce to reversal or an order-four rail — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum-order counterexample and let S|P|Q be a saturated maximal-support state.

@@ -1,9 +1,5 @@
 # Counting and single-switch consequences — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let k=\kappa_2(H)=1. The exact-root image lies in a linear space of dimension n-5, leaving three dimensions on the antipodal sphere S^{n-2}. For any prescribed triple S of actual vertices, augment the exact-root label by the three canonical role coordinates \rho_z\in\{+1,0,-1\} (left path, hole, right path), z\in S. Reversal negates the whole label, so Borsuk--Ulam gives a proper carrier face F with strictly positive weights, exact-root balance, and zero weighted role average for every z\in S.

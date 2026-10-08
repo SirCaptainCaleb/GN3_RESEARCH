@@ -1,9 +1,5 @@
 # All-exchangeable Johnson blocks force the exact odd universal state — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## An all-exchangeable Johnson block is forced to the exact odd balanced threshold

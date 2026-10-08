@@ -1,9 +1,5 @@
 # Audit: universal support-pair Smith lifting is refuted by an explicit cochain — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: universal Smith lifting fails even when a two-cover exists

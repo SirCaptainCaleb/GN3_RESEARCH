@@ -1,9 +1,5 @@
 # Quiet six-root common cores force dense six-supports and order at least seventeen — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A quiet six-root common core forces dense Hamiltonian six-supports and complement order at least twelve

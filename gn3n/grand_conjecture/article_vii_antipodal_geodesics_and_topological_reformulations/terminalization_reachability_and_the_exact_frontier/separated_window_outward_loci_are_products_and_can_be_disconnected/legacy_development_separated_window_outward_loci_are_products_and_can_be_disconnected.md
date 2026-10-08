@@ -1,9 +1,5 @@
 # Separated window outward loci are products and can be disconnected — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The exact outward-locus product

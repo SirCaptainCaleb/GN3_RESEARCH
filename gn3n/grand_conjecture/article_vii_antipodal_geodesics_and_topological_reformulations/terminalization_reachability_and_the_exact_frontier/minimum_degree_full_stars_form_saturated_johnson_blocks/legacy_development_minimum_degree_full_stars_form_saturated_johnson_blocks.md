@@ -1,9 +1,5 @@
 # Minimum-degree full stars form saturated Johnson blocks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum-degree full stars form uniform Johnson blocks

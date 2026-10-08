@@ -1,9 +1,5 @@
 # Minimum-pair endpoint seeds are cross-tail or a complete matching-block rectangle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exposed minimum-pair seeds are cross-tail or form a complete matching-block rectangle

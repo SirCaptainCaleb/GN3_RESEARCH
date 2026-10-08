@@ -1,9 +1,5 @@
 # Minimum counterexamples have universally saturated largest Hamiltonian supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Universal saturation of a largest proper Hamiltonian support

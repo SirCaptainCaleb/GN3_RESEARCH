@@ -1,9 +1,5 @@
 # Hall failure in a double corridor forces a double-end reverser — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hall dichotomy for the reflected span-two double corridor

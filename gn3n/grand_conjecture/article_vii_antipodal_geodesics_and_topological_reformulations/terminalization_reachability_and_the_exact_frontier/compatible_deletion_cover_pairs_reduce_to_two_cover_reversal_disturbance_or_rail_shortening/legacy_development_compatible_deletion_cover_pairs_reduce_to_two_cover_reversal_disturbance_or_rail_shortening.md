@@ -1,9 +1,5 @@
 # Compatible deletion-cover pairs reduce to two-cover, reversal, disturbance, or rail shortening — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum counterexample and let F_a,F_b be deletion covers of H-a and H-b.

@@ -1,9 +1,5 @@
 # Audit: strong-imbalance Hall descent still lacks transfer-direction control — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction

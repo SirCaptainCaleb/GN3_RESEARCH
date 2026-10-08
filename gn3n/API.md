@@ -17,7 +17,7 @@ Reads durable Article, Section, Subsection, Toolkit, and Brainstorm content.
 Shows mathematical dependencies, consumers, supersessions, Article references, and origin.
 
 ### composition_status(node_type, node_id)
-Shows the current composition version, explicit dependency staleness, and frontier metadata describing what material existed when the composition was written.
+Returns composition_state=absent or present. Articles, Sections, and Subsections may legitimately have no composition. For existing compositions it shows version, dependencies, and frontier.
 
 ### dependencies(node_type, node_id)
 Shows the dependency manifest for a manuscript node.
@@ -49,10 +49,10 @@ Revises an individual Result with optimistic concurrency.
 Returns the manuscript hierarchy from the grand conjecture through Article, Section, Subsection, Item, and Result.
 
 ### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
-Edits an existing Subsection by stable ID.
+Edits a Subsection title only. Subsection development bodies are retired; mathematical development belongs in Items and Results.
 
 ### compose(session_id, node_type, node_id, payload, expected_composition_version)
-Writes a deliberately lossy composition for an Item, Subsection, Section, or Article. payload contains body and depends_on as an explicit array of selected direct lower-level composition IDs. Items use [] and compress their Results. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
+Writes optional, publication-quality mathematical exposition for an Item, Subsection, Section, or Article. An absent composition is valid. An existing composition must have precise mathematical statements, full definitions locally or in the Dictionary, justified proofs, and explicit uncertainties; a child inventory or progress log is not a composition. payload contains body and depends_on as an explicit array of selected direct lower-level composition IDs. Items use [] and compress their Results. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
 
 ### save_research(session_id, payload, expected_version := null)
 Creates or edits Section structure/metadata or a Toolkit object.

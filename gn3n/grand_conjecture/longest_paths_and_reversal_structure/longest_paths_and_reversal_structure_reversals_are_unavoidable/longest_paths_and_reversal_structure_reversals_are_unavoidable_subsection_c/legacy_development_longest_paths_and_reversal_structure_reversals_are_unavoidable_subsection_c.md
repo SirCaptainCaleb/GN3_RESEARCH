@@ -1,9 +1,5 @@
 # Global marked-reversal minimization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Imbalance in a frozen complement forces a new reversal carrier

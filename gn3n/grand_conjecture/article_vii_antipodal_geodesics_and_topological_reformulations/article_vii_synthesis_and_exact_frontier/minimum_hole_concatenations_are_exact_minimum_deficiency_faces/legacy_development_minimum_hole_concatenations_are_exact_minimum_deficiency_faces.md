@@ -1,9 +1,5 @@
 # Minimum-hole concatenations are exact minimum-deficiency faces — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum-hole concatenations attain the deletion distance exactly

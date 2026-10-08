@@ -1,9 +1,5 @@
 # Full Article VII top-down elevation pass: composed results — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Full top-down elevation pass over the current Article VII composition

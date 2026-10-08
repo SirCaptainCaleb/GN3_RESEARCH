@@ -1,9 +1,5 @@
 # Imbalanced minimum-hole complements force dense endpoint-spanning four-supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Imbalanced minimum-hole complements force dense endpoint-spanning four-supports

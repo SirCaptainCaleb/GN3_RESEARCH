@@ -1,9 +1,5 @@
 # A non-Hamiltonian four-set obstructs support-contained Gale carriers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A fixed local obstruction to support-contained topological transport

@@ -1,9 +1,5 @@
 # A whole maximum support is forced to have non-rigid initial pairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The majority theorem has a supportwise contrapositive

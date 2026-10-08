@@ -1,9 +1,5 @@
 # Compatibility criterion for persistent orientation relabeling — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact global criterion for the proposed change of labels

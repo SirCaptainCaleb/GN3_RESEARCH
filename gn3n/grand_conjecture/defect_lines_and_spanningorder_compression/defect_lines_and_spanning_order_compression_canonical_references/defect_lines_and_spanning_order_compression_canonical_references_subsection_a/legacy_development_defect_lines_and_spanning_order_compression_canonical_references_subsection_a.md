@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 - [[common_endpoint_constraints_fivewindow_counterexample01]] — Common endpoint constraints do not force Hamiltonian five-vertex windows

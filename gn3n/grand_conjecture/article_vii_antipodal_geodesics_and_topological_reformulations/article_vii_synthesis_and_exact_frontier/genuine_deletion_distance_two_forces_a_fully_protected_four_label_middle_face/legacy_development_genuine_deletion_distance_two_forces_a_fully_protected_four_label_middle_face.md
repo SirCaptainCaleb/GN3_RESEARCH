@@ -1,9 +1,5 @@
 # Genuine deletion distance two forces a fully protected four-label middle face — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Genuine deletion distance two forces a fully protected four-label middle face

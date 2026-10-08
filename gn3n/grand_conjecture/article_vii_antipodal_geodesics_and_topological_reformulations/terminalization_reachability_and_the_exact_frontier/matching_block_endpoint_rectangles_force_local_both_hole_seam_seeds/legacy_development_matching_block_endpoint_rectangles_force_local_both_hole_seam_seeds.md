@@ -1,9 +1,5 @@
 # Matching-block seam bands always yield a local both-hole admissible seed — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Complete matching-block seam bands always yield a both-hole admissible seed

@@ -1,9 +1,5 @@
 # Normalized minimum-pair faces have zero or simple exact root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H satisfy kappa_2(H)=2 and let xy be an edge of the minimum-pair graph. Choose a two-cover H-{x,y}=P|Q minimizing Psi(P,Q)=|P|^2+|Q|^2. Exclude the bounded four-component branch of the imbalanced minimum-hole theorem, so that ||P|-|Q||<=1.

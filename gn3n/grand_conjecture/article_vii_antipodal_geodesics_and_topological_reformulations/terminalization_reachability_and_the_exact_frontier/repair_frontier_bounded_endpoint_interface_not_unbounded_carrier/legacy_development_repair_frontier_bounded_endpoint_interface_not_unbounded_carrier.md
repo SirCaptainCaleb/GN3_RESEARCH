@@ -1,9 +1,5 @@
 # Repair frontier: bounded endpoint interface, not unbounded carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The consistent positive-word repair has reduced the former protected-filtration gap to a bounded interface problem.

@@ -1,9 +1,5 @@
 # Three compatible covers force a reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### A connected support path already closes the theorem

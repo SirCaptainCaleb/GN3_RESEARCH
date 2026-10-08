@@ -1,9 +1,5 @@
 # Reflected-double carriers reduce to two bounded rooted endpoint interfaces — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reflected-double carriers have a two-cover corridor; only the endpoint interfaces remain

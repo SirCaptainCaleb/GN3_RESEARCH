@@ -1,9 +1,5 @@
 # Three common initial reversers force a root-advancing five-path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let

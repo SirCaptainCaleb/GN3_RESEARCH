@@ -1,9 +1,5 @@
 # Pairwise-complete root triples force a seven-support or mixed four-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Finite seven-label lemma: a pairwise-complete root triple cannot stay quiet

@@ -1,9 +1,5 @@
 # Six-deletion coupling and the sparse abc-obstruction graph — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Six-deletion coupling in the maximal braid

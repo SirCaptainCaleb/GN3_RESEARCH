@@ -1,9 +1,5 @@
 # Order-nine endpoint exclusion for reflected alternating terminal supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Order-nine reflected alternating supports also exclude endpoint sign flips

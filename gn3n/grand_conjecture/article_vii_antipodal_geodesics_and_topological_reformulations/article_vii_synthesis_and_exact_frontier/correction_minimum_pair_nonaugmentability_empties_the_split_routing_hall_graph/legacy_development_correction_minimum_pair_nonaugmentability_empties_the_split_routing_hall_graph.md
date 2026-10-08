@@ -1,9 +1,5 @@
 # Correction: minimum-pair nonaugmentability empties the split-routing Hall graph — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction/elevation: the split-attachment Hall graph is empty for a minimum pair

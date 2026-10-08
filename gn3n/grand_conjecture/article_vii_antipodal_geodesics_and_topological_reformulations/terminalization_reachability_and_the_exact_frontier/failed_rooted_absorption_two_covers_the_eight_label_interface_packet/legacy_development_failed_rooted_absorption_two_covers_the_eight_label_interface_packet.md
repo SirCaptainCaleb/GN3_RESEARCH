@@ -1,9 +1,5 @@
 # Failed rooted absorption two-covers the eight-label interface packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failed direct rooted absorption always two-covers the eight-label interface packet

@@ -1,9 +1,5 @@
 # Positive balance on every chamber and the switch-separation bound — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Explicit odd root maps and positive carrier balance

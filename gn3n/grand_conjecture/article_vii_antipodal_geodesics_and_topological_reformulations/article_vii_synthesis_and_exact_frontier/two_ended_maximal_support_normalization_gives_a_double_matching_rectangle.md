@@ -1,9 +1,1 @@
 # Two-ended maximal-support normalization gives a double matching rectangle
-
-## Composition
-
-(none yet)
-
-## Development
-
-Applying the endpoint-rectangle normalization at both ends of a maximal Hamiltonian support shows: at each end either a cross endpoint pair gives a Hamiltonian four-support, or the endpoint Hamiltonicity graph is exactly the matching formed by the two endpoint pairs of the complementary paths. If neither end has a cross four-core, the same matching-block rectangle occurs simultaneously at both ends. This is a bounded endpoint normal form; the remaining issue is attachment through the support.

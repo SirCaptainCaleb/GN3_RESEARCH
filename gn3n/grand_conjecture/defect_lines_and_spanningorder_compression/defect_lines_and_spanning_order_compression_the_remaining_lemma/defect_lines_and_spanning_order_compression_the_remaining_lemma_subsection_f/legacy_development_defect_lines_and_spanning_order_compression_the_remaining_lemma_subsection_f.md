@@ -1,9 +1,5 @@
 # Coherent residue collapses — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### The coherent bridge residue already contains a bounded support

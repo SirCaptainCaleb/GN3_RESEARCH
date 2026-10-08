@@ -1,9 +1,5 @@
 # Seven-vertex deletion graph couples overlapping packet failures — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let W be a seven-vertex set in a boundary tournament. Define an ordinary graph G_W on W by

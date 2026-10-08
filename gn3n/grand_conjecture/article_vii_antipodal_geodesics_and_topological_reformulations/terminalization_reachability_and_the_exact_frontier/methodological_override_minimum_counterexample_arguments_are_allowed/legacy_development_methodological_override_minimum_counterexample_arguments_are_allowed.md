@@ -1,9 +1,5 @@
 # Methodological correction: minimum-counterexample descent is not a closure mechanism — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Shared worker guidance correction

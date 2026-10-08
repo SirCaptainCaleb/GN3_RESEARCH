@@ -1,9 +1,5 @@
 # Two-label one-defect bridge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### The opposite-endpoint residue is a two-label completion problem

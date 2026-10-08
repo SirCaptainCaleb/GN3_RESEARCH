@@ -1,9 +1,5 @@
 # Minimum pairs have two overlapping five-supports on three exposed endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four-of-six gives two overlapping hole-preserving five-supports

@@ -1,9 +1,5 @@
 # Forbidden predecessor triples give an exact frozen suffix two cover criterion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Forbidden predecessor triples give an exact frozen-suffix two-cover criterion

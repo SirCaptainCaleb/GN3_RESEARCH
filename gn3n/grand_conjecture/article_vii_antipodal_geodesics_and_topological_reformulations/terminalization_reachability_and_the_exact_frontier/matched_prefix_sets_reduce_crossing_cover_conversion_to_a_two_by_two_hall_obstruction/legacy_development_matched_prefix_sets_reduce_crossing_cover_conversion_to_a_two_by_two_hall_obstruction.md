@@ -1,9 +1,5 @@
 # Matched prefix sets reduce crossing cover conversion to a two by two Hall obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Matched prefix sets reduce crossing-cover conversion to a two-by-two Hall obstruction

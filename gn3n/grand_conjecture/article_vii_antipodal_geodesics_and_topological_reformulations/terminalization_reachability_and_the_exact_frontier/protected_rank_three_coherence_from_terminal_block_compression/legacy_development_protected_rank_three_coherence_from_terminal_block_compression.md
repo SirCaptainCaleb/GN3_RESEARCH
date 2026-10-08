@@ -1,9 +1,5 @@
 # Protected rank-three coherence from terminal block compression — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected rank-three coherence closes once the terminal block bound is used

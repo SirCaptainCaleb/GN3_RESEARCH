@@ -1,9 +1,5 @@
 # Audit: the external gauge does not by itself close rank-two coherence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of the proposed external-gauge closure

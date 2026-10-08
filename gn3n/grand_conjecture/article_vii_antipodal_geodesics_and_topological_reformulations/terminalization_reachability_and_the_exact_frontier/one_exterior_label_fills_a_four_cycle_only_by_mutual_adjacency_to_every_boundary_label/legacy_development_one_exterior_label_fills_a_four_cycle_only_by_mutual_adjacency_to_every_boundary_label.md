@@ -1,9 +1,5 @@
 # One exterior label fills a four-cycle only by mutual adjacency to every boundary label — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Terminal-pair homotopy is natural under prefix enlargement

@@ -1,9 +1,5 @@
 # Every genuine two-deletion state enters maximal support through a four- or five-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every genuine two-deletion state has a four- or five-support with two-coverable complement

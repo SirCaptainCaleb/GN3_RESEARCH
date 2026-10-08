@@ -1,9 +1,5 @@
 # Maximal supports are absolutely nonaugmentable by exposed endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Maximality forbids every exposed-endpoint enlargement

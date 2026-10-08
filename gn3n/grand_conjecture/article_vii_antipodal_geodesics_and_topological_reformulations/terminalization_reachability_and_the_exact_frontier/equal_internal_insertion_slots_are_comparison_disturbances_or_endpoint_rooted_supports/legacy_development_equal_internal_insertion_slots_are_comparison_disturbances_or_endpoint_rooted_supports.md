@@ -1,9 +1,5 @@
 # Equal internal insertion slots give disturbance or rail shortening — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let F_a,F_b be compatible deletion covers. On H-{a,b}, let their common ordered supports be

@@ -1,9 +1,5 @@
 # Audit: source-sink coorientation is not globally monotone and critical-pair nonexistence is false — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of the monotone-separator and critical-pair closure claims

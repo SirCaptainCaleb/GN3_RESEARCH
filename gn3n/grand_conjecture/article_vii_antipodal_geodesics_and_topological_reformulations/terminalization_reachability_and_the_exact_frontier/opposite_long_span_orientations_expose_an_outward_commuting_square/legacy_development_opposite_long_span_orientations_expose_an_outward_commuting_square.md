@@ -1,9 +1,5 @@
 # Opposite long-span orientations expose an outward commuting square — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Opposite long-span orientations expose an outward commuting square

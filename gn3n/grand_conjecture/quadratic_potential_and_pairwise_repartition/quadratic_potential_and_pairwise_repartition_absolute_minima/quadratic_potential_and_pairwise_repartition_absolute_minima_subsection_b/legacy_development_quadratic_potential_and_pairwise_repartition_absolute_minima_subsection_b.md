@@ -1,9 +1,5 @@
 # Small-component consequences — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Two elementary balancing facts substantially narrow the possible minimum states. By [[toolkit_minimal_three_covers_have_no_components_of_order_one_or_two]], every component of a minimum-(\Phi\) three-cover has order at least three.

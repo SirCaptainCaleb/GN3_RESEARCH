@@ -1,9 +1,5 @@
 # Maximal index of singleton support pairs forces all proper supports, not merely a two-cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This is a structural audit of the universal index/coindex proposals in 241 and 243, not a small-order cutoff argument. The counterexample-specific conditional criteria remain logically sufficient; the universal versions ask for substantially more than the grand conjecture.

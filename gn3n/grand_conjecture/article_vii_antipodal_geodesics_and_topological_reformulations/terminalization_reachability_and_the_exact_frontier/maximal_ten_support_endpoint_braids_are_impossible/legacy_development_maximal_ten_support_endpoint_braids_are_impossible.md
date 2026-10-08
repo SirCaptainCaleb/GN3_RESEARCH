@@ -1,9 +1,5 @@
 # Maximal ten-support endpoint braids are impossible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Maximal ten-support endpoint braids are impossible

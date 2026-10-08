@@ -1,9 +1,5 @@
 # Support-splitting seam reseeds force at least two cross edges — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A support-splitting seam reseed has at least two support-complement crossings

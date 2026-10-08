@@ -1,9 +1,5 @@
 # Two bad five-extensions either edge-order the six-set or expose a Hamiltonian support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two bad five-extensions either amalgamate to an edge order or expose a Hamiltonian support through both exterior labels

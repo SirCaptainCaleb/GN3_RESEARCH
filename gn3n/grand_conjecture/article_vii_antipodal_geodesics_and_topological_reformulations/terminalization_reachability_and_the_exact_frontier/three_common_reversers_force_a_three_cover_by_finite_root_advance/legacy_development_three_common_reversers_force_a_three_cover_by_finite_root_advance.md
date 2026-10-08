@@ -1,9 +1,5 @@
 # Three common reversers force a three-cover by finite root advance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three common reversers force a three-cover by finite root advance

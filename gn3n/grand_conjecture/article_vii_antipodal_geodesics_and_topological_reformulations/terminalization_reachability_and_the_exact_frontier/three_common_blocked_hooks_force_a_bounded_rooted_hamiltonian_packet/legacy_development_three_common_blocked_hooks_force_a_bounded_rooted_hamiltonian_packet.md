@@ -1,9 +1,5 @@
 # Three common blocked hooks force a bounded anchor-containing Hamiltonian packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three common blocked hooks force a bounded anchor-containing Hamiltonian packet

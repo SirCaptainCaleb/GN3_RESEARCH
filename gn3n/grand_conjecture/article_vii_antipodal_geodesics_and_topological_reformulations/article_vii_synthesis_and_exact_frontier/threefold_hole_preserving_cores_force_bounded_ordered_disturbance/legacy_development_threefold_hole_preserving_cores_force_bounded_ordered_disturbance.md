@@ -1,9 +1,5 @@
 # Threefold hole-preserving cores force bounded ordered disturbance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Threefold hole-preserving cores already force bounded ordered structure

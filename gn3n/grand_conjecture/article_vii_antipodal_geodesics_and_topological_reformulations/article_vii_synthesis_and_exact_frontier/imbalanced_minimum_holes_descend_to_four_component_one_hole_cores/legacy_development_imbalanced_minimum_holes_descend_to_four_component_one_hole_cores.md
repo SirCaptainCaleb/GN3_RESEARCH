@@ -1,9 +1,5 @@
 # Imbalanced minimum holes descend to four-component one-hole cores — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Imbalance descends either to an all-old four-support or to deletion-distance one

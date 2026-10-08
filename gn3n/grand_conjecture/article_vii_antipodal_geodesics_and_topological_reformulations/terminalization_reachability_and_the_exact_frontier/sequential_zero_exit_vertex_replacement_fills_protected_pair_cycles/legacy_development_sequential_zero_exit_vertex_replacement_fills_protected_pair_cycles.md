@@ -1,9 +1,5 @@
 # Sequential zero-exit vertex replacement fills protected pair cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Sequential zero-exit vertex replacement fills a protected terminal-pair cycle

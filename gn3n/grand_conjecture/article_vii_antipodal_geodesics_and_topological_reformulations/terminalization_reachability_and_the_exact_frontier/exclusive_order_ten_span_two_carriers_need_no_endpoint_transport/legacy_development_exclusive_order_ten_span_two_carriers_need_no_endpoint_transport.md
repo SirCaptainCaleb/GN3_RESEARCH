@@ -1,9 +1,5 @@
 # Exclusive order-ten span-two carriers need no endpoint transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The order-ten exclusive span-two branch has a protected frozen carrier without endpoint transport

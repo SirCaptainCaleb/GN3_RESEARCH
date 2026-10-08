@@ -1,9 +1,5 @@
 # Rank-two normalization: squares close and only the inside-boundary braid remains — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rank-two normalization: squares close and only the inside-boundary braid remains

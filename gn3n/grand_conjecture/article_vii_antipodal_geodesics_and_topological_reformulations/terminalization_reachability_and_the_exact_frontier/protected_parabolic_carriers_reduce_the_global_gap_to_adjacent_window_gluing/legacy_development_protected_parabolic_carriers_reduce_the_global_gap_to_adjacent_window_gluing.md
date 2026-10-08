@@ -1,9 +1,5 @@
 # Protected parabolic carriers reduce the global gap to adjacent-window gluing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected parabolic carriers and the exact global gluing frontier

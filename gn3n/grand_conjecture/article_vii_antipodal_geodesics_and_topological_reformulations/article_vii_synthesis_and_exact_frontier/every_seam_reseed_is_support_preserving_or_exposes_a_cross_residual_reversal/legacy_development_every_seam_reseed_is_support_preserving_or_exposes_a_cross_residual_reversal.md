@@ -1,9 +1,5 @@
 # Every seam reseed is support-preserving or exposes a cross-residual reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every seam reseed is support-preserving or exposes a cross-residual reversal

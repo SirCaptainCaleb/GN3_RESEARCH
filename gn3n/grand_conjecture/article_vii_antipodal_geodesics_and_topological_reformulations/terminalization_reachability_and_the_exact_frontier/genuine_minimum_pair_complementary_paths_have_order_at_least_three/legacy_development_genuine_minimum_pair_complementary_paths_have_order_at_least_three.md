@@ -1,9 +1,5 @@
 # Genuine minimum-pair complementary paths have order at least three — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A genuine minimum-pair complement has no component of order one or two

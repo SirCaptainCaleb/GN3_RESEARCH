@@ -1,9 +1,5 @@
 # Local span gauge localizes terminal tie-break sign flips — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Local span gauge

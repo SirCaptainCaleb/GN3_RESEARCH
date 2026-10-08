@@ -1,9 +1,5 @@
 # Four exposed endpoints force a repeated hole-preserving core — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four exposed endpoints force a repeated hole-preserving core

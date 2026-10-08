@@ -1,9 +1,5 @@
 # Existential carrier reduction for rank-two terminal residues — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Existential carriers make every non-saturating rank-two residue automatic

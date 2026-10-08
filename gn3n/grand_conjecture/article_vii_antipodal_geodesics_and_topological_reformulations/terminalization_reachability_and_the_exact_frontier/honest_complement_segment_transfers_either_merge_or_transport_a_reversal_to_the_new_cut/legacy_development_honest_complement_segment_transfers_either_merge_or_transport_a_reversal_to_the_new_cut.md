@@ -1,9 +1,5 @@
 # Honest complement segment transfers either merge or transport a reversal to the new cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum counterexample. Let A=(a_1,...,a_r) be a globally longest Hamiltonian path. Then every z outside A is noninsertable at both ends of A, so

@@ -1,9 +1,5 @@
 # Reverse shared bridges have an exact six-packet normal form — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact six-packet normal form in the reverse/reverse shared-bridge residue

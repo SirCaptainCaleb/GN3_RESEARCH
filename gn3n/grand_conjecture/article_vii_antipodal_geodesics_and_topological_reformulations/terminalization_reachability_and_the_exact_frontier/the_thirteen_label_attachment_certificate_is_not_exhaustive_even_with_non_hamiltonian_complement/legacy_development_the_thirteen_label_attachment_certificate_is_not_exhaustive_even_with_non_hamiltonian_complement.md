@@ -1,9 +1,5 @@
 # The thirteen-label attachment certificate is not exhaustive even with non-Hamiltonian complement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The thirteen-label attachment tests are not exhaustive

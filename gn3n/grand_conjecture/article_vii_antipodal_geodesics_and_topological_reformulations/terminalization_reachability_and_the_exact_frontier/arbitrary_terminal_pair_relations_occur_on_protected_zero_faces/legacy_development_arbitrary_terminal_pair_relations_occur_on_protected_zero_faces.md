@@ -1,9 +1,5 @@
 # Arbitrary terminal pair relations occur on protected zero faces — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every terminal ordered-pair relation occurs in a protected determining-window sector

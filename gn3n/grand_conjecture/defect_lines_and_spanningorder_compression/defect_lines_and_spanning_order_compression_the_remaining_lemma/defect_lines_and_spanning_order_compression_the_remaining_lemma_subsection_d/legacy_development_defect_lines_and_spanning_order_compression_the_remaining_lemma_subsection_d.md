@@ -1,9 +1,5 @@
 # Same-side endpoint reduction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Same-side endpoint squares return to bounded support

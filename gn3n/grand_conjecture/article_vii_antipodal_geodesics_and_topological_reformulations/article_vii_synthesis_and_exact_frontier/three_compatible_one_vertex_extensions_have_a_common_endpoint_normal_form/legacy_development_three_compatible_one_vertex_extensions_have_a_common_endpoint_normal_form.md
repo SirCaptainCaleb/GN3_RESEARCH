@@ -1,9 +1,5 @@
 # Three compatible one-vertex extensions have a common-endpoint normal form — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three compatible one-vertex extensions have a common-endpoint normal form

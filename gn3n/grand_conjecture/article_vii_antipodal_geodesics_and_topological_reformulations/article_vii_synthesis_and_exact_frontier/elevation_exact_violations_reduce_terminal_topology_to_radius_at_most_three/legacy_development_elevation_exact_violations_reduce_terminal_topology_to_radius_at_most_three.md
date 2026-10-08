@@ -1,9 +1,5 @@
 # Correction: exact violations, fixed centers, and positive windows — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: absolute positive windows and auxiliary radii coincide only at fixed center

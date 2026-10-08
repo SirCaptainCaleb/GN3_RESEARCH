@@ -1,9 +1,5 @@
 # Second-layer forks force a transversal or cross-seam four-support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Second-layer forks force a four-support at every complementary seam

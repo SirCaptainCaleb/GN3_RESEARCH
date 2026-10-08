@@ -1,9 +1,5 @@
 # Normalized minimum-hole faces of all orders have zero or simple exact root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let X be a minimum two-cover deletion set of order k in H. Among all two-covers H-X=P|Q choose one minimizing Psi(P,Q)=|P|^2+|Q|^2, and write r=|P|<=|Q|=s.

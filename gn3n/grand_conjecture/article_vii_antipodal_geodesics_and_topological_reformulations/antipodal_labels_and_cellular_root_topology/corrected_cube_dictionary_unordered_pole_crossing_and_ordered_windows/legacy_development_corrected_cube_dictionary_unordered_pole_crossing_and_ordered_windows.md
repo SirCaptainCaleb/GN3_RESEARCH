@@ -1,9 +1,5 @@
 # Corrected cube dictionary: unordered pole-crossing and ordered windows — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Corrected cube dictionary: unordered pole-crossing versus ordered windows

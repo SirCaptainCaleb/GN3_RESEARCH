@@ -1,9 +1,5 @@
 # Genuine two deletion obstructions have no small packet tail connectors — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A one-path complement bound

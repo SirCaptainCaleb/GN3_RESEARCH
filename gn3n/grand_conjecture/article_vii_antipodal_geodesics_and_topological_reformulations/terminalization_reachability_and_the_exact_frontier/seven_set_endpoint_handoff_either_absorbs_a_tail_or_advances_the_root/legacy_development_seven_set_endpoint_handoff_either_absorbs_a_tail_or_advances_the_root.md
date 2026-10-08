@@ -1,9 +1,5 @@
 # Audit: unoriented endpoint exposure does not give a tail handoff — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The proposed handoff from a seven-set endpoint cover to a fixed tight tail is not justified.

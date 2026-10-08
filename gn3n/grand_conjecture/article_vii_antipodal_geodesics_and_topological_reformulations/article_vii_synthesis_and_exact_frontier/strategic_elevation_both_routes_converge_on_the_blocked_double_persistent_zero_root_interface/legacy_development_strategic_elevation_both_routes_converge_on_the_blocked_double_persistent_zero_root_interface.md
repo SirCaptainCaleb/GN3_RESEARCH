@@ -1,9 +1,5 @@
 # Strategic elevation: both routes converge on the blocked double-persistent zero-root interface — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Strategic elevation: the two Article VII routes now meet at one blocked zero-root interface

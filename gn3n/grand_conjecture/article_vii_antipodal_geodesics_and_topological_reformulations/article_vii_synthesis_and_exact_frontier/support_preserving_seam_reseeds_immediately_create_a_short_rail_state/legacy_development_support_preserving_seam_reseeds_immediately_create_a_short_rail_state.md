@@ -1,9 +1,5 @@
 # Support-preserving seam reseeds immediately create a short-rail state — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Support-preserving seam reseeds immediately create a short-rail state

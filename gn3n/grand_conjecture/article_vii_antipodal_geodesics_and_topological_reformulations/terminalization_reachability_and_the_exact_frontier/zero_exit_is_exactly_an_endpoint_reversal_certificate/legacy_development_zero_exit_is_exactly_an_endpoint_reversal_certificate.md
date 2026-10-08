@@ -1,9 +1,5 @@
 # Zero exit is exactly an endpoint-reversal certificate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Zero exit is exactly an endpoint-reversal certificate

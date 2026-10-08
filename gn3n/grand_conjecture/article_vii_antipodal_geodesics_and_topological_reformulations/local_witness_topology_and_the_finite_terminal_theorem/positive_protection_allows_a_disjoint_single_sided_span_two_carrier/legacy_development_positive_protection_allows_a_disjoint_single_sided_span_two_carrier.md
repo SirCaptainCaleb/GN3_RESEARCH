@@ -1,9 +1,5 @@
 # Positive protection allows a disjoint single-sided span-two carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A disjoint single-sided carrier survives positive-word protection

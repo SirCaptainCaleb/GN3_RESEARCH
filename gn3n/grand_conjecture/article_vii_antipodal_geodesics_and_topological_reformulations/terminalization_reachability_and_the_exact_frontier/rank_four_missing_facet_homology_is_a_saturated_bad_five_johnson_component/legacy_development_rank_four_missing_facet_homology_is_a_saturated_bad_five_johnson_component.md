@@ -1,9 +1,5 @@
 # Rank-four missing-facet homology is a saturated bad-five Johnson component — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rank-four missing-facet homology is a saturated bad-five Johnson component

@@ -1,9 +1,5 @@
 # Two-slot persistent boundary reservoirs are uniformly blocked and rooted — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A two-slot persistent boundary reservoir is automatically blocked and supplies rooted four-paths

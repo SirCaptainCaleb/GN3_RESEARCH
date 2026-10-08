@@ -1,9 +1,5 @@
 # Fixed Hamiltonian four-core extension deserts activate four isolated-root stars — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A fixed Hamiltonian four-core extension desert activates four isolated-root stars

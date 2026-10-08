@@ -1,9 +1,5 @@
 # Cap-attained universal holes have a clique-plus-isolated root extension graph — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume n=2r+2 and x lies in the universal branch of the fixed-hole Ky Fan theorem. Let M be a maximum-cardinality Hamiltonian support containing x. The universal fixed-hole support cap gives |M|<=r. Assume the cap is attained: |M|=r. Put D=M-{x} and Y=V(H)-(D union {x}), so |D|=r-1 and |Y|=r+2. Then D+x=M is Hamiltonian. For every y in Y, D+y is an r-subset of H-x, hence Hamiltonian because every balanced bipartition of H-x has Hamiltonian sides. For distinct y,z in Y, D+y+z has order r+1 and lies in H-x, hence is Hamiltonian for the same reason. On the other hand D+x+y has order r+1 and contains x. It is non-Hamiltonian by the universal blocker property (equivalently by maximality of M among x-containing Hamiltonian supports). Therefore, if roots a,b in {x} union Y are joined when D+a+b is Hamiltonian, the two-root extension graph is exactly K_Y disjoint union {x}: every pair of non-x roots is compatible, while x is incompatible with every non-x root. This is an intrinsic common-core extension residue, independent of ambient small-order verification.

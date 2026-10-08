@@ -1,9 +1,5 @@
 # Root advance plus four-of-six leaves one wrong-root exception — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Root advance plus four-of-six reduces to one wrong-root exception

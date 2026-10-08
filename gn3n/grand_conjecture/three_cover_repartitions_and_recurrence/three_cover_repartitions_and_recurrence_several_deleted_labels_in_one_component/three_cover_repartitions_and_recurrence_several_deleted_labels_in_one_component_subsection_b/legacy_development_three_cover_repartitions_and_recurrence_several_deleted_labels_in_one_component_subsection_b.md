@@ -1,9 +1,5 @@
 # Support-graph shadow of neutral recurrence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Compatibility cycles project to the support graph

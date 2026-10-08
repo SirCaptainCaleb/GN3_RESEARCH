@@ -1,9 +1,5 @@
 # A persistent span-two occurrence permits a central three-position block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: a persistent positive span-two occurrence need not have a fixed middle status

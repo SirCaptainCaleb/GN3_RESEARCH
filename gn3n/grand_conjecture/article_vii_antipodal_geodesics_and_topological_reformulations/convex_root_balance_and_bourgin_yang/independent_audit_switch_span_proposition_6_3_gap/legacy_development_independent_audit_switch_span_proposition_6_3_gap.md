@@ -1,9 +1,5 @@
 # Independent audit: switch-span Proposition 6.3 gap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Independent audit: switch-span Proposition 6.3 is not proved

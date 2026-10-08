@@ -1,9 +1,5 @@
 # Audit: simultaneous table and exclusive alternating carriers are distinct — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A simultaneous-occurrence table proves a different claim

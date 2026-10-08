@@ -1,9 +1,5 @@
 # Auxiliary-center fibers are two-status deletion fibers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Auxiliary-center fibers are two-status deletion fibers of one original order

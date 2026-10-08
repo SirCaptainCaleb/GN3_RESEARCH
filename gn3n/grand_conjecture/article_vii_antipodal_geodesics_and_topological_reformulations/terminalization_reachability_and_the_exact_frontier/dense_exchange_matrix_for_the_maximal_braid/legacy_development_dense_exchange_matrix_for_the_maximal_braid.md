@@ -1,9 +1,5 @@
 # Dense exchange matrix for the maximal braid — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A dense exchange matrix for the maximal braid

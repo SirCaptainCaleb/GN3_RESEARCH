@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 **Lemma 3.** Among triples of positive integers with fixed sum \(n\), the minimum of \(a^2+b^2+c^2\) is attained exactly when the largest and smallest entries differ by at most one.

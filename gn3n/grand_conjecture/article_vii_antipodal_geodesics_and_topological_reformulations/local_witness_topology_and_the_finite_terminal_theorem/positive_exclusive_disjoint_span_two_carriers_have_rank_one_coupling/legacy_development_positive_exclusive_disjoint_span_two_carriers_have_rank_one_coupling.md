@@ -1,9 +1,5 @@
 # Positive exclusive disjoint span-two carriers have rank-one coupling — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The surviving exclusive disjoint span-two carrier has a two-vertex coupling block

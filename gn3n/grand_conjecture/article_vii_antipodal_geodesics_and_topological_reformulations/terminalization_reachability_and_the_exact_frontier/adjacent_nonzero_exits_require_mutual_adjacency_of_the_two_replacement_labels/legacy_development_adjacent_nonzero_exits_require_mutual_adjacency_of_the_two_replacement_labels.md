@@ -1,9 +1,5 @@
 # Adjacent nonzero exits require mutual adjacency of the two replacement labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Adjacent nonzero exits require a relation between the two replacement labels

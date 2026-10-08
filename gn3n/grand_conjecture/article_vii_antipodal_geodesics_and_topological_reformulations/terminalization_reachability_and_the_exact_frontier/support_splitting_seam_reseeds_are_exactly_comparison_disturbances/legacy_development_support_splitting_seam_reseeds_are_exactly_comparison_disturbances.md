@@ -1,9 +1,5 @@
 # Support-splitting seam reseeds are exactly comparison disturbances — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Support-splitting seam reseeds cannot remain quiet

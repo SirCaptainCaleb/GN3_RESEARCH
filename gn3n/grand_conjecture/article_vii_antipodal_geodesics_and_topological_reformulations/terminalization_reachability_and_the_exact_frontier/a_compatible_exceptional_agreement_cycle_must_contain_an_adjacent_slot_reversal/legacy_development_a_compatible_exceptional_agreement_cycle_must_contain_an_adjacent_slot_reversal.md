@@ -1,9 +1,5 @@
 # A compatible exceptional agreement cycle must contain an adjacent slot reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A compatible exceptional agreement cycle must contain an adjacent-slot reversal

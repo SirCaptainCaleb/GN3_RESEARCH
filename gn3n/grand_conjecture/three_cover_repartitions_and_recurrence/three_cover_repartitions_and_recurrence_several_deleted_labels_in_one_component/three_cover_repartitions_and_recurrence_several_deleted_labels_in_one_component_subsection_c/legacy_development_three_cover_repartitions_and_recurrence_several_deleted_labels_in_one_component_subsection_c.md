@@ -1,9 +1,5 @@
 # Forest recurrence collapses to endpoint backtracking — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### In the no-reversal forest residue, neutral recurrence cannot cycle

@@ -1,9 +1,5 @@
 # Correction: seven-set endpoint absorption needs oriented endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: the seven-set endpoint theorem is unoriented

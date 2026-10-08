@@ -1,9 +1,5 @@
 # Hamiltonian support pairs and Smith chains give a direct closure target — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit status: the universal lifting proposal is refuted

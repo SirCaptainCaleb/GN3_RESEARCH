@@ -1,9 +1,5 @@
 # Truncated path systems isolate the triple-local gluing hypothesis missing from support-only closure — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This is an abstract countermodel to specified support-only hypotheses, NOT a counterexample boundary tournament. It explains why 276's relative detector does not itself supply a nonzero class.

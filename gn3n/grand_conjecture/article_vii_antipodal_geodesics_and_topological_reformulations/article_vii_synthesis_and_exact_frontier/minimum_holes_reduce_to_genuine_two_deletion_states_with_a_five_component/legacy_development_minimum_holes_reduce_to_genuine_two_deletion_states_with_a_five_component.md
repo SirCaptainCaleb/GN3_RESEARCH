@@ -1,9 +1,5 @@
 # Minimum holes reduce to genuine two-deletion states with a five-component — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum holes reduce canonically to a genuine two-deletion five-component state

@@ -1,9 +1,5 @@
 # Neighboring shared bridges have a sharp orientation and deletion fork — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Use the neighboring-cut notation from [[a_shared_bridge_at_neighboring_cuts_exposes_four_new_repair_labels]]:

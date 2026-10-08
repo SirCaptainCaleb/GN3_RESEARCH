@@ -1,9 +1,5 @@
 # Top-facet adjacency separates hole exchange from same-hole transfers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Top-facet adjacency separates hole exchange from same-hole transfer

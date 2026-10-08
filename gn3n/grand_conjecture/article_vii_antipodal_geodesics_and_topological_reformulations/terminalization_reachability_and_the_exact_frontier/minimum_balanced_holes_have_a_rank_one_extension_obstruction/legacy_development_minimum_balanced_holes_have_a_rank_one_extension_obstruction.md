@@ -1,9 +1,5 @@
 # Minimum balanced holes have a rank-one extension obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum balanced holes have a rank-one extension obstruction

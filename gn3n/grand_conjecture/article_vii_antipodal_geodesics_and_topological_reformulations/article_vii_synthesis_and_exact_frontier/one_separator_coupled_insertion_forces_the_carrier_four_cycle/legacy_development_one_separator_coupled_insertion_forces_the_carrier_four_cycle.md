@@ -1,9 +1,5 @@
 # One-separator coupled insertion forces a directed local four-cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let B=(b_1,...,b_m) be a tight path, let x,y be outside B, and assume neither x nor y can be inserted individually into any slot of the inherited order of B. Suppose nevertheless that for some i with 1<=i<=m-2 the order

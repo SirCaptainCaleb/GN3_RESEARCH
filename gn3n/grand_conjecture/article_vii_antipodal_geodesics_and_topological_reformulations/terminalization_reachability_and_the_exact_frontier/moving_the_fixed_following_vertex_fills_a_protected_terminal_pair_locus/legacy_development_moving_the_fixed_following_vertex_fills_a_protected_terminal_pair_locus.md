@@ -1,9 +1,5 @@
 # Moving the fixed following vertex fills a protected terminal-pair locus — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Moving the fixed following vertex fills the outward locus

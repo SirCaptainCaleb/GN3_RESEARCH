@@ -1,9 +1,5 @@
 # Two connected support agreement closes except for a negatively signed spanning cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A two-connected support-agreement graph closes unless it is one negatively signed spanning cycle

@@ -1,9 +1,5 @@
 # Unbounded positive doubles are exactly symmetric zero-root obstructions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The unbounded reflected-double branch is exactly a local zero-root obstruction

@@ -1,9 +1,5 @@
 # Auxiliary-center fibers are exact inversion windows — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Auxiliary-center fibers are exact inversion windows

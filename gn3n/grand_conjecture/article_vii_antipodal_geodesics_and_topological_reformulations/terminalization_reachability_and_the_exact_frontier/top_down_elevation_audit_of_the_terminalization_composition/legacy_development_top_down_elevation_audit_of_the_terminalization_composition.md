@@ -1,9 +1,5 @@
 # Top-down elevation audit of the terminalization composition — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Top-down elevation audit of the current terminalization composition

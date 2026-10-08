@@ -1,9 +1,5 @@
 # Every rank-three singleton-support carrier fills — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every rank-three singleton-support carrier fills

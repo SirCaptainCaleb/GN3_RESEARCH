@@ -1,9 +1,5 @@
 # Correction: exact-root deletion distance at least two does force a zero root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Correction: the exact-root \(k\ge2\) zero-root theorem is proved

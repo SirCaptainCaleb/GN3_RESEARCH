@@ -1,9 +1,5 @@
 # Coordinatewise pruning and the pure terminal core — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Coordinatewise pruning reduces terminalization to pure one-edge carriers

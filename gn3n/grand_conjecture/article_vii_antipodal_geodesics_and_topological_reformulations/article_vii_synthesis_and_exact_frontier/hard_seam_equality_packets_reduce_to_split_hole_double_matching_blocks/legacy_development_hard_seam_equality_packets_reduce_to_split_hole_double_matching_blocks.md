@@ -1,9 +1,5 @@
 # Hard seam equality packets reduce to split-hole double matching blocks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The hard seam equality packet is a double matching-block residue

@@ -1,9 +1,5 @@
 # Fixed-hole reverse rectangles are cuts in an ordinary link tournament — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The fixed-hole opposite-boundary obstruction is an ordinary link-tournament cut

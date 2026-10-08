@@ -1,9 +1,5 @@
 # Deletion distance one has root advance or a complete reverse rectangle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Deletion distance one has an opposite-boundary five-path or a complete reverse rectangle

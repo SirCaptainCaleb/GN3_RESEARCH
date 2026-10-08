@@ -1,9 +1,5 @@
 # Prescribed endpoint subsets of a permutahedron give contractible outward loci — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A contractible locus for one varying boundary vertex

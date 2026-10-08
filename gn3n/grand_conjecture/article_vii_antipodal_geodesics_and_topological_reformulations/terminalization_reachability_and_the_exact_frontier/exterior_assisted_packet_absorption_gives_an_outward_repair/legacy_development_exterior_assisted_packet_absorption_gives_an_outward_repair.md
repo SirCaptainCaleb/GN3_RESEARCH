@@ -1,9 +1,5 @@
 # Exterior-assisted packet absorption gives an outward repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One exterior vertex can turn a packet bridge into an enlarged-window outward repair

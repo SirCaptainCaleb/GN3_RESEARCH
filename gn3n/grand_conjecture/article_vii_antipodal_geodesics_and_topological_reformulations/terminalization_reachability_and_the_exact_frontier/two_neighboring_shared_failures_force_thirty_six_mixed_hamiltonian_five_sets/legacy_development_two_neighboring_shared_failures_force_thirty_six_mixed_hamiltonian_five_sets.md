@@ -1,9 +1,5 @@
 # Two neighboring shared failures force thirty-six mixed Hamiltonian five-sets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume the monotone corridor has shared bridge labels at both neighboring cut pairs j=u and j=u+1, and that neither of the two original packet tests at either pair yields a two-cover. Let

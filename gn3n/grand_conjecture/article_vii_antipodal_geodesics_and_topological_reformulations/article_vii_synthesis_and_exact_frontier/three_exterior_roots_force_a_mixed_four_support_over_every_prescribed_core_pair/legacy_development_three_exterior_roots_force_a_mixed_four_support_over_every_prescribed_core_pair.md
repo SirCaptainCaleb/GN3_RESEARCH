@@ -1,9 +1,5 @@
 # Three exterior roots force a mixed four-support over every prescribed core pair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Analytic strengthening: three exterior roots force a mixed Hamiltonian four-support over every prescribed core pair

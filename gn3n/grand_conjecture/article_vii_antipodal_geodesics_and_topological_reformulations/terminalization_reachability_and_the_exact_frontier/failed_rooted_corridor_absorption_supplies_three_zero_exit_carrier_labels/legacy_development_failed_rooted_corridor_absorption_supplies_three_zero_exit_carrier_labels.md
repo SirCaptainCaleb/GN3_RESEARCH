@@ -1,9 +1,5 @@
 # Failed rooted corridor absorption supplies three zero-exit carrier labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failed rooted corridor absorption automatically supplies three zero-exit carrier labels

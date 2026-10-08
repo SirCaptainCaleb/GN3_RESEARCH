@@ -1,9 +1,1 @@
 # Equivariant leaf collapse reduces one-hole covers to a source-sink cubical separator
-
-## Composition
-
-(none yet)
-
-## Development
-
-Encode every top one-hole deletion-cover facet of the signed downward-closure complex E(H) by its dual edge in the sign cube. Orient a cube edge in coordinate x from the endpoint where x has sign + to the endpoint where x has sign -. In a minimum counterexample, an incident outgoing deletion edge at a sign partition (A,B) certifies B Hamiltonian, while an incident incoming deletion edge certifies A Hamiltonian. Hence a vertex incident with both orientations would give the spanning two-cover A|B. Therefore every nonisolated vertex of the deletion-edge graph is a pure source or pure sink. Now perform elementary collapses of top facets along codimension-one faces having unique top incidence, always together with the antipodal collapse. This terminates because the number of top facets decreases. If a top-dimensional core remains, every codimension-one face has incidence zero or two. In the dual cube this means the surviving edge set has even intersection with the boundary of every square, i.e. it is a mod-two cubical 1-cocycle. Since the cube is contractible, the edge set equals delta f for a Boolean 0-cochain f. Thus every nonempty collapsed top core of a minimum counterexample is a cut hypersurface of the sign cube whose boundary vertices are all pure sources or pure sinks. On each connected edge component, all sources have one f-value and all sinks the other, so the component is coherently cooriented. This gives a terminating normalization of the one-hole family: either all top facets collapse, or the residue is a cooriented source-sink cubical separator. The latter is the natural global obstruction object; local endpoint/critical-support results should be interpreted as restrictions on the Boolean separator rather than as terminal support bounds.

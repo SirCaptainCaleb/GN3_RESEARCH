@@ -1,9 +1,5 @@
 # The central six band has a two-sided Hamiltonian seed trichotomy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The central six witness band has a two-sided Hamiltonian seed trichotomy

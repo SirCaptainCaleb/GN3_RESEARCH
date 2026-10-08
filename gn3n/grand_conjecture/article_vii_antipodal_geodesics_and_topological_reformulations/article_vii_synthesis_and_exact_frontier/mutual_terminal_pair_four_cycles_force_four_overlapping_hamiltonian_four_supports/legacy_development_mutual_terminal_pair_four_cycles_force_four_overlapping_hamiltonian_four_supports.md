@@ -1,9 +1,5 @@
 # Mutual terminal-pair four-cycles force four overlapping Hamiltonian four-supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A mutual terminal-pair four-cycle forces four overlapping Hamiltonian four-supports

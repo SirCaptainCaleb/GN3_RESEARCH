@@ -1,9 +1,5 @@
 # Audit: fixed-hole singleton-unanimity facets are automatic — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the fixed-hole sparse-face alternative is automatic

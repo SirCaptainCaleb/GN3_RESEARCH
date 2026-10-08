@@ -1,9 +1,5 @@
 # A majority coloring closes universal endpoint-pair rigidity and yields an anchored three-vertex prefix — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A functional-graph coloring lemma

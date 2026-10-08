@@ -1,9 +1,5 @@
 # Quiet negative support agreement cycles are the old spanning odd cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A quiet negative support-agreement cycle is exactly the old spanning odd-cycle support geometry

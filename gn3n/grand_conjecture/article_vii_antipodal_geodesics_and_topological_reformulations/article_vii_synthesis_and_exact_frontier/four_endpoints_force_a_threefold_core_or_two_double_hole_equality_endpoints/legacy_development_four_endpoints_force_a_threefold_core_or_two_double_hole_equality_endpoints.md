@@ -1,9 +1,5 @@
 # Four endpoints force a threefold core or two double-hole equality endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let Y|P|Q be a spanning three-cover with |Y|=5, where Y contains distinguished hole labels x,y. Put N=Y-{x,y}, so |N|=3. For each of the four displayed endpoints e of P,Q assume Y union {e} is non-Hamiltonian, and define G_e={r in Y : (Y-{r}) union {e} is Hamiltonian} and A_e=G_e intersect N. By four-of-six, |G_e|>=3, hence A_e is nonempty.

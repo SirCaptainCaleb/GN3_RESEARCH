@@ -1,9 +1,5 @@
 # Positive-word filtration is antipodal and exclusive alternating windows collapse — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A consistent positive-word filtration and elimination of the twelve-position alternating residue

@@ -1,9 +1,5 @@
 # Genuine two-deletion doubles reverse all four corridor ends — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## In the genuine two-deletion case both exterior vertices reverse every exposed corridor end

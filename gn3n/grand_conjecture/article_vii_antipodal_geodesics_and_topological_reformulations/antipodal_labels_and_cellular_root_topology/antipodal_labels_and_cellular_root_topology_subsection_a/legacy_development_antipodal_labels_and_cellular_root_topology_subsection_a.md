@@ -1,9 +1,5 @@
 # From rook labels to cellular roots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Extreme-switch labels

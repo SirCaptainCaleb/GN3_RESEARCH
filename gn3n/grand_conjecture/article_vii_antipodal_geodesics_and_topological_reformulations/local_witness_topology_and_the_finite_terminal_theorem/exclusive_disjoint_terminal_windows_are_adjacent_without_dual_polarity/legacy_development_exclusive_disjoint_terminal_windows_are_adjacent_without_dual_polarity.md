@@ -1,9 +1,5 @@
 # Exclusive disjoint terminal windows are adjacent without dual polarity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The exclusive disjoint branch has adjacent windows without using dual polarity

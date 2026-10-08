@@ -1,9 +1,5 @@
 # Audit of the depth filtration: the remaining same-face gap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

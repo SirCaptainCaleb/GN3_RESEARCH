@@ -1,9 +1,5 @@
 # Reflected-double spans have deletion distance at most two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reflected-double spans have two-cover deletion distance at most two

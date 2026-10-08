@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is

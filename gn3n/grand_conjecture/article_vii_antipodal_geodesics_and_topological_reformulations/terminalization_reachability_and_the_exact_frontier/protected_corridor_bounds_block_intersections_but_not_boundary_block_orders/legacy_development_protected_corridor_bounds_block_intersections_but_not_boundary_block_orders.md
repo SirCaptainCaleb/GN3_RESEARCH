@@ -1,9 +1,5 @@
 # Protected corridor bounds block intersections but not boundary block orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let F be an ordered-partition face protected at a positive span-two witness edge whose reflected starts are a<b. Set C=[a+1,b+3], the vertex interval whose internal statuses are [a+1,b+1]. Every chamber of F avoids 001,011,0101 wholly inside that status interval.

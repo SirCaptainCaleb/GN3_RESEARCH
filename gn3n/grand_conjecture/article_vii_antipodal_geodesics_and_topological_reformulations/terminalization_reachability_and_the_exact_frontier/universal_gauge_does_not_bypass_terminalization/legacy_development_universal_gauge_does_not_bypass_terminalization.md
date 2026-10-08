@@ -1,9 +1,5 @@
 # Universal gauge does not bypass terminalization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Universal external sign does not remove the terminalization problem

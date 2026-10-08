@@ -1,9 +1,5 @@
 # Positive protection does not guarantee fixed-root corridor absorption — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This is a local obstruction to one prescribed-interface repair, not a counterexample to the global two-cover theorem.

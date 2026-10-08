@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A three-cover

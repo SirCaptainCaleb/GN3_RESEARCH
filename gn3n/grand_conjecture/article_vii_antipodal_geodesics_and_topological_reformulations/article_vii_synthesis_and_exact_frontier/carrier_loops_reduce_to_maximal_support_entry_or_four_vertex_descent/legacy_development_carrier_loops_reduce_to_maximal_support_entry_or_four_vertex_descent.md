@@ -1,9 +1,5 @@
 # Carrier loops reduce to maximal-support entry or four-vertex descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Retain the six-root common-core state: Y=B union {z}, R=H-Y, C=Y-{b_*}, and E subset R with |E|>=6.

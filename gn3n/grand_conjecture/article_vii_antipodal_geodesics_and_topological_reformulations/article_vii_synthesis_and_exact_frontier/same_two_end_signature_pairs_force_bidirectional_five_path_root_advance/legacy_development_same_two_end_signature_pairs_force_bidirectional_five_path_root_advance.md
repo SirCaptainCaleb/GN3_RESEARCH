@@ -1,9 +1,5 @@
 # Same two-end signature pairs force bidirectional five-path root advance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same two-end signature pairs give bidirectional five-path root advance

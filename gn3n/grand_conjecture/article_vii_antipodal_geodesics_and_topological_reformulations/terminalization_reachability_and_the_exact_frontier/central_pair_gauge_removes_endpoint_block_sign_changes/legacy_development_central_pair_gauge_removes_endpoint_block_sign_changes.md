@@ -1,9 +1,5 @@
 # Central-pair gauge removes endpoint-block sign changes — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Central-pair gauge strengthens localization

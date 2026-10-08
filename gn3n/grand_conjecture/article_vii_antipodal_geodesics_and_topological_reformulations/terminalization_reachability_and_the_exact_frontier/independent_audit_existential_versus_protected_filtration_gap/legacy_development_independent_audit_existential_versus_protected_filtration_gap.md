@@ -1,9 +1,5 @@
 # Independent audit: existential versus protected filtration gap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Independent audit: the existential/protected filtration gap remains

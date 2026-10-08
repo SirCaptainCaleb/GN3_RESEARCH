@@ -1,9 +1,5 @@
 # Audit: zero exact root does not by itself supply a balanced deletion cover — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of the premise in 287

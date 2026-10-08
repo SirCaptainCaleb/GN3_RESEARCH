@@ -1,9 +1,5 @@
 # Near-equality obstruction for two bad braid targets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Near-equality form of a two-bad-target obstruction

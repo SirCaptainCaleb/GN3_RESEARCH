@@ -1,9 +1,5 @@
 # Successive bad five-packets force four cross-endpoint repairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Lemma. Let A be a four-vertex set and let r,s be two further vertices. If both five-sets A union {r} and A union {s} are non-Hamiltonian, then for every u in A the five-set (A-u) union {r,s} is Hamiltonian.

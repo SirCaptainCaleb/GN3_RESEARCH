@@ -1,9 +1,5 @@
 # Double-corridor Hall failure reduces to one zero-degree path residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hall failure for double-corridor attachment has one genuinely new residue

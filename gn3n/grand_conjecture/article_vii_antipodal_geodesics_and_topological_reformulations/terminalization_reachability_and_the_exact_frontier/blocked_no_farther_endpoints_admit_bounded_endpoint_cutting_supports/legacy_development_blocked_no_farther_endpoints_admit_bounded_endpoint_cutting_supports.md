@@ -1,9 +1,5 @@
 # Blocked no-farther endpoints admit bounded endpoint-cutting supports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A blocked/no-farther endpoint has a bounded endpoint-cutting Hamiltonian support

@@ -1,9 +1,5 @@
 # Negative support-agreement cycles are exactly the Article I odd cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A negative spanning support-agreement cycle is exactly the old odd support-cycle geometry

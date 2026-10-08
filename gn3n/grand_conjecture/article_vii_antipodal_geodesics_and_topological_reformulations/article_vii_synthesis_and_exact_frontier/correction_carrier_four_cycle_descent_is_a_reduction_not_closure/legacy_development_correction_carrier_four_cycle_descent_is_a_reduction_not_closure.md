@@ -1,9 +1,5 @@
 # Correction: carrier four-cycle descent is a reduction, not closure — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Correction to [[surviving_carrier_four_cycles_descend_by_five_vertices]].

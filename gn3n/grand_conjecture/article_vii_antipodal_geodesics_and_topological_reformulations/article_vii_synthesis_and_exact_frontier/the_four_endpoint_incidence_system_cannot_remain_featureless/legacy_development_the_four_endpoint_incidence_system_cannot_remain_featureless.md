@@ -1,9 +1,5 @@
 # The four-endpoint incidence system cannot remain featureless — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The four-endpoint incidence system cannot remain featureless

@@ -1,9 +1,5 @@
 # Balanced zero-root trees have no exceptional leaf labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let H be a minimum counterexample on n=2r+1 vertices, choose minimum-imbalance deletion covers, and suppose the selected support graph J is a connected tree containing the balanced zero-root edge. By [[the_zero_root_support_component_is_uniformly_balanced]], every support vertex of J has order r.

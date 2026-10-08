@@ -1,9 +1,5 @@
 # Non-rigid maximum supports can avoid any prescribed vertex pair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Localized majority contrapositive

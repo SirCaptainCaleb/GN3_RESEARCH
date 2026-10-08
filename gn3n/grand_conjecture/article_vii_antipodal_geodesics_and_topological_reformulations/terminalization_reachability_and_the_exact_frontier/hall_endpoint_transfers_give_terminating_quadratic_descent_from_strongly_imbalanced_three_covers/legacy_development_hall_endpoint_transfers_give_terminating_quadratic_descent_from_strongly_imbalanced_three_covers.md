@@ -1,9 +1,5 @@
 # Superseded: Hall descent direction remains open — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Superseded audit note

@@ -1,9 +1,5 @@
 # Antipodal degree and minimality force every closed deletion core to be the complete odd middle layer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume H is a minimum-order boundary 3-tournament without a spanning two-path cover. Let C be ANY nonempty antipodally invariant pure source-sink cubical 1-cocycle made of actual one-hole deletion-cover edges. No minimum-imbalance restriction is imposed.

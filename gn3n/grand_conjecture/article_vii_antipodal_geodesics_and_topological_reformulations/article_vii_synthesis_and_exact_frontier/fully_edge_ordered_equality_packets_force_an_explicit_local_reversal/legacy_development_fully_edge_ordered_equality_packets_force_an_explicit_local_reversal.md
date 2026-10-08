@@ -1,9 +1,5 @@
 # Fully edge-ordered equality packets force an explicit local reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Fully edge-ordered four-of-six equality packets force an explicit local reversal

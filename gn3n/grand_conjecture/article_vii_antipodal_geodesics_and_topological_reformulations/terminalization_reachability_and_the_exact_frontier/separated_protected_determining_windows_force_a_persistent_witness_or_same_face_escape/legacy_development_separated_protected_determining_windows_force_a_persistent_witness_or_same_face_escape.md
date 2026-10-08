@@ -1,9 +1,5 @@
 # Separated protected determining windows force a persistent witness or same face escape — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Elevating the five-position obstruction to the separator step

@@ -1,9 +1,5 @@
 # Minimal commuting-cube protection failures are eight-position local — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal protection failures in commuting cubes are eight-position local

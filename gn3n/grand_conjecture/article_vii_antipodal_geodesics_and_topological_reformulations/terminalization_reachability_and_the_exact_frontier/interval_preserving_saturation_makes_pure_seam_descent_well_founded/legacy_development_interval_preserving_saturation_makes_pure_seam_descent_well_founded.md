@@ -1,9 +1,5 @@
 # Interval-preserving saturation makes pure seam descent well-founded — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Interval-preserving saturation makes the pure seam branch well-founded

@@ -1,9 +1,5 @@
 # The remaining face-to-cover conversion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ### Current status of the face-to-cover conversion

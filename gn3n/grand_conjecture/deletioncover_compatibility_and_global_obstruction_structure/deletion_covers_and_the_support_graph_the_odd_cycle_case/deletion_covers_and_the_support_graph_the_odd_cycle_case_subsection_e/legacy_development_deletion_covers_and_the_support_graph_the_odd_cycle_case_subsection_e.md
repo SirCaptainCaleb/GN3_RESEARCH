@@ -1,9 +1,5 @@
 # Odd cycle forces bounded support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

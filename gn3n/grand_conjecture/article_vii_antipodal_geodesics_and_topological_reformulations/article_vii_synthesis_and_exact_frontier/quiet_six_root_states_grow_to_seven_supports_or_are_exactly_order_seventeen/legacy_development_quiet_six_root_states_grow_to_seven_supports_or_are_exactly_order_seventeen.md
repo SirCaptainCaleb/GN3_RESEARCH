@@ -1,9 +1,5 @@
 # Quiet six-root states grow to seven-supports or are exactly order seventeen — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The quiet six-root state either grows to a seven-support or is the exact order-seventeen two-triangle case

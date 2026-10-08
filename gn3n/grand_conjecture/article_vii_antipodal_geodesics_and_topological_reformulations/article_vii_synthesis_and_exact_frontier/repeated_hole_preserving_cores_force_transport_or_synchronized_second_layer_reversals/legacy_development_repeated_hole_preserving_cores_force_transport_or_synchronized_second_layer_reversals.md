@@ -1,9 +1,5 @@
 # Repeated hole-preserving cores force transport or synchronized second-layer reversals — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Repeated hole-preserving cores force transport or synchronized second-layer reversals

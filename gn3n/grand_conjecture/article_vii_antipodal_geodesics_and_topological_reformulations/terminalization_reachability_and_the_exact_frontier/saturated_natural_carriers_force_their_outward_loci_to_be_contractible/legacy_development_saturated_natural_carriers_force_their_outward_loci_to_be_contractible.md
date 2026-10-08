@@ -1,9 +1,5 @@
 # Saturated natural carriers force their outward loci to be contractible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Saturated natural carriers force contractibility

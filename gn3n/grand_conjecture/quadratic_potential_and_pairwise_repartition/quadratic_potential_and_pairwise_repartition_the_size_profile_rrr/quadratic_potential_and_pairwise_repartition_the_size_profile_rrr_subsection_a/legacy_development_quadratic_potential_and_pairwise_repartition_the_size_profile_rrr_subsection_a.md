@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(A\mid B\mid C\) have equal orders. Delete an endpoint of one displayed path and compare a deletion cover with the inherited three-part partition. The block count of Section 3 applies.

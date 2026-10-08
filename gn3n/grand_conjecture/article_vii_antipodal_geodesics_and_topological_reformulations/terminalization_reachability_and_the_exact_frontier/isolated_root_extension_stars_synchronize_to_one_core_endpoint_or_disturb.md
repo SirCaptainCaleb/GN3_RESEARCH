@@ -1,9 +1,1 @@
 # Isolated-root extension stars synchronize to one core endpoint or disturb
-
-## Composition
-
-(none yet)
-
-## Development
-
-Let D be a vertex set and let x be an exterior root. Let Y be a set of at least two further exterior roots. Assume D+x and D+y are Hamiltonian for every y in Y, while D+x+y is non-Hamiltonian for every y in Y. Fix a Hamilton order on D+x, and for each y choose a Hamilton order on D+y. Apply the compatible one-vertex insertion calculus to the pair x,y. If the two chosen orders disagree on D, there is an order-disturbance certificate. Otherwise they induce one common order on D. Since D+x+y is non-Hamiltonian, x and y cannot occupy separated insertion gaps. Adjacent gaps force the positioned boundary-reversal alternative; a common internal gap forces a Hamiltonian four-support on that core edge with x,y. Therefore, if order disagreement, positioned reversal, and internal four-support are all excluded, x and y must occupy the same endpoint gap of the common order on D. Because the Hamilton order of D+x is fixed, repeating this for every y shows that all chosen D+y orders induce the same core order and insert y into the same endpoint gap as x. Thus an isolated bad root against an arbitrary good-root family has a dichotomy: bounded/order disturbance, or global same-endpoint synchronization of the entire root family. Applied to the cap-attained universal-hole residue K_Y disjoint union {x}, the quiet branch synchronizes x and all r+2 roots of Y to one endpoint of one Hamilton order of D. This statement is scale-independent.
