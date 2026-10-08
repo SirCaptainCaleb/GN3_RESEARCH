@@ -1,7 +1,9 @@
 # Three coherent full deletion connectors have one exceptional packet
 
+## Development
+
+Statement:
 Let U=A union {x,z}, |U|>=5, and let a,b,c be distinct shore vertices. Suppose compatible zero connectors C_a,C_b,C_c on U minus a,b,c respectively agree on all common pair comparisons. Then either (i) comparisons among a,b,c form a directed cycle, or (ii) they induce a unique total order C on U with forward endpoint pairs, and all consecutive triples zero except possibly the consecutive triple a,b,c. In (ii) closure holds if the three omitted labels are nonconsecutive or their triple color is zero. In (i), the three omitted labels occupy the same gap of the order on W=U minus {a,b,c}.
 
-## Proof
-
+Proof:
 For every pair of U choose one deletion witness containing it; pairwise agreement makes the comparison well-defined. Every triple other than {a,b,c} lies in a deletion witness and has transitive comparisons. Thus only {a,b,c} can be cyclic. If it is transitive, the comparisons define a unique full order C and restrict exactly to all C_d. Any consecutive triple of C other than {a,b,c} survives as a consecutive triple in one C_d and has zero color. Each endpoint pair is inherited from a deletion witness, so both are forward. If {a,b,c} is cyclic, its three labels must have an identical gap among W: otherwise positions in distinct gaps force the comparison triangle to be transitive (the pair with distinct gaps has a fixed comparison relative to the third). This gives the alternatives.

@@ -1,9 +1,11 @@
 # Parity-path identity, bipartition sizes, and the complementary-support criterion
 
+## Development
+
+Statement:
 Let A be a finite nonempty shore, and let G have distinct vertex supports S⊆A and one edge e_a joining complementary subsets of A\{a} for each chosen deletion a (at most one edge per a). For any two support vertices S,T joined by a simple path of length ℓ with labels L⊆A: S△T=L if ℓ is even and S△T=A\L if ℓ is odd. If a component is a tree containing all |A| deletion edges, then for each vertex v, S(v)={a∈A:dist(v,e_a) odd}, and |S(v)| equals the number of vertices in v's tree-bipartition class minus one. In this tree, complementary support vertices exist exactly when the tree is an even-length spanning path, and those vertices are its endpoints. In particular, a branching spanning tree cannot close by merely selecting complementary support witnesses.
 
-## Proof
-
+Proof:
 Let G have a vertex for each distinct support subset S of A appearing in a chosen fully ported two-path deletion cover. Edge e_a joins the disjoint supports S_a,T_a with S_a union T_a=A\{a}. Each deletion label appears on at most one edge. For fixed u∈A, its indicator flips across every edge e_a with a≠u; across e_u it is zero at both ends. Take a simple path of length ℓ with edge-label set L. The parity of flips in indicator u is ℓ−1_{u∈L} (mod 2). Thus S△T=L for even ℓ and S△T=A\L for odd ℓ. This holds inside any connected component, including one contained in the odd-cycle configuration, for its simple paths.
 
 Suppose G is a tree with all |A|=n labeled edges. Fix edge e_u with endpoints v0,v1; both supports omit u. Along the unique path from either endpoint of e_u to a vertex v, membership of u flips at every traversed edge other than e_u. Therefore u∈S(v) iff d_T(v,e_u) is odd, where distance to an edge is the smaller of the two endpoint distances.

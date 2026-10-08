@@ -176,10 +176,10 @@
   },
   "brainstorm_count": 7,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T08:24:18.362617+00:00",
-  "item_count": 824,
+  "generated_at": "2026-10-08T14:08:55.4026+00:00",
+  "item_count": 831,
   "mirror_format": 18,
-  "result_count": 7,
+  "result_count": 0,
   "schema": "nor",
   "section_versions": {
     "directed_nor_union_closed_bridge": {
@@ -13602,7 +13602,7 @@
   },
   "toolkit_count": 29,
   "universal_document_versions": {
-    "guide": 38,
+    "guide": 40,
     "reflexes": 21
   }
 }
