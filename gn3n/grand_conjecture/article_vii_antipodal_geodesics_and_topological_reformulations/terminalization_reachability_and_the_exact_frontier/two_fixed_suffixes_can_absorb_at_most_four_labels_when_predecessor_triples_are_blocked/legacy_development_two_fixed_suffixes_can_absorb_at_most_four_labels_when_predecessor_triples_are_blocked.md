@@ -1,7 +1,5 @@
 # Two fixed suffixes can absorb at most four labels when predecessor triples are blocked — preserved pre-item development
 
-## Development
-
 ## Two fixed suffixes can absorb at most four labels when predecessor triples are blocked
 
 Let S_1,S_2 be vertex-disjoint tight paths, each of length at least two, and let W be disjoint from both. For i=1,2 write the first two suffix labels as z_i,q_i and set

@@ -1,7 +1,5 @@
 # Two bridge vertices absorb a five-vertex packet — preserved pre-item development
 
-## Development
-
 Lemma. Let S be any five-vertex set and Q=(q_1,...,q_t), t>=2, a disjoint tight path in a boundary tournament. Put
 G={u in S:h(q_{t-1},q_t,u)=1}.
 If |G|>=2, then S union V(Q) has a two-path cover. More precisely, either S is Hamiltonian and the cover is S|Q, or there is u in G such that S-u is Hamiltonian and the cover is (S-u)|(Q,u), of orders 4,t+1.

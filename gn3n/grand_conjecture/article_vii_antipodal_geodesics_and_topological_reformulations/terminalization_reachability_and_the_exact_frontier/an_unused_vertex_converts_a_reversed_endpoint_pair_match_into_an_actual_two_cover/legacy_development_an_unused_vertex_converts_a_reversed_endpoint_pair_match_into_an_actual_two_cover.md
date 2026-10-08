@@ -1,7 +1,5 @@
 # An unused vertex converts a reversed endpoint-pair match into an actual two-cover — preserved pre-item development
 
-## Development
-
 ## Reversed endpoint pairs give an actual augmentation through an unused vertex
 
 Let P and Q be actual tight paths in a boundary 3-tournament. Suppose

@@ -1,7 +1,5 @@
 # Tuple dependence does not by itself give a bounded rank Coxeter quotient — preserved pre-item development
 
-## Development
-
 ## Audit of the inference from tuple dependence to rank
 
 This addendum concerns [[boundary_block_tuple_localization_bounds_active_rank]]. Its local observation about the number of potentially label-changing *positions* does not establish its conclusion that all other generators can be collapsed to obtain bounded Coxeter coherence.

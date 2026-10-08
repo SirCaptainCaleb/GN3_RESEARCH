@@ -1,7 +1,5 @@
 # Audit: cyclic rotation invalidates the new descent and second-layer claims — preserved pre-item development
 
-## Development
-
 ## Audit: cyclic rotations do not preserve tightness in a boundary tournament
 
 This audit concerns development version 1 of

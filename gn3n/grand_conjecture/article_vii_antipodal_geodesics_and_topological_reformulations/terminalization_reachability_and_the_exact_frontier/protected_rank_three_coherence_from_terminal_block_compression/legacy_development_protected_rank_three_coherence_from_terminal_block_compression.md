@@ -1,7 +1,5 @@
 # Protected rank-three coherence from terminal block compression — preserved pre-item development
 
-## Development
-
 ## Protected rank-three coherence closes once the terminal block bound is used
 
 The audit gap between existential and protected carriers can be reduced further. The key point is that the protected terminal classification already claims that the unique face block coupling the two reflected determining windows has order at most four. Hence, after factoring off disjoint exterior face blocks, the only genuinely non-product Coxeter residue that can contain terminal sign-flip surgery has rank at most three.

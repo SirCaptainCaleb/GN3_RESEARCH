@@ -1,7 +1,5 @@
 # Order-nine bridge reduces to rooted four-core synchronization — preserved pre-item development
 
-## Development
-
 ## The order-nine bridge reduces to a six-vertex rooted synchronization problem
 
 The adjacent-window obstruction from [[protected_parabolic_carriers_reduce_the_global_gap_to_adjacent_window_gluing]] admits a stronger common-core reduction.

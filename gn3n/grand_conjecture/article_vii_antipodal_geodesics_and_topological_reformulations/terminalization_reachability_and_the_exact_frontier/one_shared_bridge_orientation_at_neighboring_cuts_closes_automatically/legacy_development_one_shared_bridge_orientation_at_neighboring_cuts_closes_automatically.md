@@ -1,7 +1,5 @@
 # One shared-bridge orientation at neighboring cuts closes automatically — preserved pre-item development
 
-## Development
-
 ## One shared-bridge orientation at neighboring cuts closes automatically
 
 Retain the notation of [[a_shared_bridge_at_neighboring_cuts_exposes_four_new_repair_labels]] in its monotone-corridor application:

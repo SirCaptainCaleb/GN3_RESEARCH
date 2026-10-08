@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(T\) be the vertex set of a reversing tight triple, and let \(J_T\) be the graph on \(V(H)-T\) in which \(yz\) is an edge exactly when \(T\cup\{y,z\}\) is Hamiltonian.
 
 **Lemma 8.**

@@ -1,7 +1,5 @@
 # Half-order maximal support — preserved pre-item development
 
-## Development
-
 ### A maximal support contains at least half the tournament
 
 **Lemma 13 (half-order bound).** Let (H) be a minimum counterexample on (n) vertices, and let

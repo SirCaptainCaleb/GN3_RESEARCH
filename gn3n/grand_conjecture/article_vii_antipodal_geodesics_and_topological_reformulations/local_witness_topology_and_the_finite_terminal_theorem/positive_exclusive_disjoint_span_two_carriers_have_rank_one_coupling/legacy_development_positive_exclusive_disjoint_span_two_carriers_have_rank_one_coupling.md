@@ -1,7 +1,5 @@
 # Positive exclusive disjoint span-two carriers have rank-one coupling — preserved pre-item development
 
-## Development
-
 ## The surviving exclusive disjoint span-two carrier has a two-vertex coupling block
 
 This strengthens the positive-word adjacency compression. The span-two branch need not be eliminated; its entire sign-changing freedom has rank one.

@@ -1,7 +1,5 @@
 # Bounded pair reservoirs reduce natural carrier extension to the two-skeleton — preserved pre-item development
 
-## Development
-
 ## Bounded ordered-pair factors remove all extension obstructions above dimension two
 
 Let Q be an antipodally invariant subposet of proper protected faces at one witness depth. For each F in Q let

@@ -1,7 +1,5 @@
 # A common packet synchronizes bridge obstructions across tail decompositions — preserved pre-item development
 
-## Development
-
 Lemma (six-vertex packet). Let S be a six-vertex set in a boundary tournament H, and let D be any family of two-path covers T|U of H-S, with both displayed paths having order at least two. For a cover D_0, call v in S a bridge if either (T,v,U) or (U,v,T) is tight, with the actual displayed path orientations. Let G be the union of these bridge labels over all covers in D.
 
 If |G|>=3, H has a two-cover. More exactly, any v in G for which S-v is Hamiltonian supplies a two-cover.

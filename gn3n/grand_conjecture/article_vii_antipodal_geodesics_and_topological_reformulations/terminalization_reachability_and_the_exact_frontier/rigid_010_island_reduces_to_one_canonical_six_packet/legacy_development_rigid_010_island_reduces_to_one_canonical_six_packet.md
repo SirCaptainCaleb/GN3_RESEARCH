@@ -1,7 +1,5 @@
 # Rigid 010-island reduces to one canonical six-packet — preserved pre-item development
 
-## Development
-
 Let a genuine positive reflected span-two double have corridor C=(c_1,...,c_N) with status word 1^u010^v and kappa_2(H[J])=2, where J=C union {x,y}. The exact inversion criterion gives the unique corridor cut j=u+2, hence the canonical tight cover
 P=(c_1,...,c_{u+2}), Q=(c_N,...,c_{u+3}).
 

@@ -1,7 +1,5 @@
 # Bounded order disagreement reduces to reversal or Hamiltonian support — preserved pre-item development
 
-## Development
-
 ## Bounded Hamilton-order disagreement reduces to reversal or Hamiltonian support
 
 Let P,Q be tight paths of order at least three whose common vertices occur in different relative orders.

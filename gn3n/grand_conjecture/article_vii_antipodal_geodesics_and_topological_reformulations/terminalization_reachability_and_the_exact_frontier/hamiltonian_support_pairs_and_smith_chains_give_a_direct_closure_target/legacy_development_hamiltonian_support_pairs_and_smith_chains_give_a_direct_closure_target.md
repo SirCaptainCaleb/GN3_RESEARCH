@@ -1,7 +1,5 @@
 # Hamiltonian support pairs and Smith chains give a direct closure target — preserved pre-item development
 
-## Development
-
 ## Audit status: the universal lifting proposal is refuted
 
 The conditional closure criterion, source-index calculation, and Smith-chain implication below remain valid. The proposed universal map Delta Q_n -> K(H), and the assertion that every H admits Smith chains through degree n-4, are false. An explicit edge-ordered six-vertex tournament already has a two-cover but admits no length-two Smith chains; see [[audit_universal_support_pair_smith_lifting_is_refuted_by_an_explicit_cochain]]. Any surviving application must construct chains using additional counterexample-specific hypotheses. Full support rank is not maximal equivariant index.

@@ -1,7 +1,5 @@
 # Correction: second-layer propagation needs an independently rooted triple — preserved pre-item development
 
-## Development
-
 ## Correction: previous second-layer propagation claim withdrawn
 
 Development version 1 of this subsection is invalid. It used the false implication

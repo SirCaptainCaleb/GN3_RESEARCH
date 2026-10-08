@@ -1,7 +1,5 @@
 # Normalized simple-root faces either flip root sign neutrally or descend to four-components — preserved pre-item development
 
-## Development
-
 ## A normalized simple-root minimum-hole face either flips root sign neutrally or descends to a four-component
 
 Let \(X\) be a minimum two-cover deletion set of order \(k\), and choose a \(\Psi\)-minimal complementary two-cover

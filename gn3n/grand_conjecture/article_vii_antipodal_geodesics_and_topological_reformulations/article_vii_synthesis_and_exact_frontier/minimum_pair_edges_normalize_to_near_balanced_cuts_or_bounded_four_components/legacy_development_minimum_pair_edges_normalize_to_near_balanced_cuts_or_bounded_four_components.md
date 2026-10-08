@@ -1,7 +1,5 @@
 # Minimum-pair edges normalize to near-balanced cuts or bounded four-components — preserved pre-item development
 
-## Development
-
 ## Minimum-pair edges admit a near-balanced normalization or a bounded four-component certificate
 
 Let \(H\) satisfy \(\kappa_2(H)=2\), and let \(M\) be its minimum-pair graph:

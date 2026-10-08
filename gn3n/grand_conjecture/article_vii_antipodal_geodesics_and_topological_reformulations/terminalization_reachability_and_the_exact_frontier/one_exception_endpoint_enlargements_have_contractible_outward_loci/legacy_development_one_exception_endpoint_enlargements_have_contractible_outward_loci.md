@@ -1,7 +1,5 @@
 # One-exception endpoint enlargements have contractible outward loci — preserved pre-item development
 
-## Development
-
 ## A one-exception endpoint enlargement is contractible
 
 This strengthens [[moving_the_fixed_following_vertex_fills_a_protected_terminal_pair_locus]] from a null-homotopy of the old inclusion to contractibility of the entire enlarged outward locus.

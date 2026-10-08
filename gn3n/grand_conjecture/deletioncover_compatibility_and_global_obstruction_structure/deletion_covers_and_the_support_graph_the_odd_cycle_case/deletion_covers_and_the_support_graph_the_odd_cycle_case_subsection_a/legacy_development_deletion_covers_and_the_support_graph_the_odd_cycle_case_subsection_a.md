@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Assume now that \(J\) is the cycle of Lemma 4. Write
 \[
 V(H)=\{d_0,\ldots ,d_{2k}\},

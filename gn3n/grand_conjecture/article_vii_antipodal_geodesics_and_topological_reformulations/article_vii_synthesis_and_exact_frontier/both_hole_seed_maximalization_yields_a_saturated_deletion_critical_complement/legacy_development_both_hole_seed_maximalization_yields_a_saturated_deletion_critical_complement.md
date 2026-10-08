@@ -1,7 +1,5 @@
 # Both-hole seed maximalization yields a saturated deletion-critical complement — preserved pre-item development
 
-## Development
-
 ## Both-hole seed maximalization yields a saturated deletion-critical complement
 
 Let \(H\) satisfy \(\kappa_2(H)=2\). Suppose \(S_0\) is a Hamiltonian support containing a distinguished minimum deletion pair

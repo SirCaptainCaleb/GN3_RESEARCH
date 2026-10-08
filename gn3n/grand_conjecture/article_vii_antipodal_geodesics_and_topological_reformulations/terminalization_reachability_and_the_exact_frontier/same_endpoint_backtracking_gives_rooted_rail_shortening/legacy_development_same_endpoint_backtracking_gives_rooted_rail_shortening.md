@@ -1,7 +1,5 @@
 # Same-endpoint backtracking gives rooted rail shortening — preserved pre-item development
 
-## Development
-
 Correct and sharpen the same-endpoint backtracking analysis. Suppose compatible deletion covers have
 F_a=(b,p_1,...,p_m)|Q,
 F_b=(a,p_1,...,p_m)|Q,

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The preceding lemmas produce one of the following:
 - a Hamiltonian support of order four, five, or six with two-coverable complement and displayed endpoint information;
 - three Hamiltonian five-sets with a common four-set;

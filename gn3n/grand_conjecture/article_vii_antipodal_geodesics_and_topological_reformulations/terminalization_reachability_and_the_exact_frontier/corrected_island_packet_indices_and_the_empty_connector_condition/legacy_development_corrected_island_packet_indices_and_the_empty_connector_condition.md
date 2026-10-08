@@ -1,7 +1,5 @@
 # Corrected island packet indices and the empty connector condition — preserved pre-item development
 
-## Development
-
 ## Exact packet and tail orders
 
 This corrects the indexing and strengthens the genuine-deletion-distance condition in [[rigid_010_island_reduces_to_one_canonical_six_packet]].

@@ -1,7 +1,5 @@
 # Natural outward carriers close the one boundary vertex sector — preserved pre-item development
 
-## Development
-
 ## A globally compatible extension on an explicit sector
 
 Fix depth r in the positive witness filtration. Let Q be an invariant subposet of protected separator faces. Assume that for every F in Q:

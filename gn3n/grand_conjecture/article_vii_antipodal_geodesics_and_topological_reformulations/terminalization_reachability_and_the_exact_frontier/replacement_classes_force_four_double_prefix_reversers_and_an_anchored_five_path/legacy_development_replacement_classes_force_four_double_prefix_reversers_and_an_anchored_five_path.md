@@ -1,7 +1,5 @@
 # Replacement classes force four double-prefix reversers and an anchored five-path — preserved pre-item development
 
-## Development
-
 ## Replacement classes for a longest reversed-pair path
 
 Assume the odd uniform residue on \(n=2r+1\) vertices, \(r\ge3\): every \(r\)-set is Hamiltonian and every \((r+1)\)-set is non-Hamiltonian. Retain a maximum path beginning in an ordered pair \((a,b)\), and let

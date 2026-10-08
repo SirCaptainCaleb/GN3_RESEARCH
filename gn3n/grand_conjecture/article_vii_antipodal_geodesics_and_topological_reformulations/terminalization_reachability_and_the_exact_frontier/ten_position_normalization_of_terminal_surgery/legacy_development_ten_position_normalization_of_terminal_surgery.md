@@ -1,7 +1,5 @@
 # Ten-position normalization of terminal surgery — preserved pre-item development
 
-## Development
-
 ## Normalizing terminal surgery to a ten-position window
 
 The terminal repair need not use the minimal determining support.

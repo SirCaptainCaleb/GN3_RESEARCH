@@ -1,7 +1,5 @@
 # The matching-block one-edge completion branch is impossible — preserved pre-item development
 
-## Development
-
 ## The matching-block six-shadow cannot complete to one edge order
 
 Let

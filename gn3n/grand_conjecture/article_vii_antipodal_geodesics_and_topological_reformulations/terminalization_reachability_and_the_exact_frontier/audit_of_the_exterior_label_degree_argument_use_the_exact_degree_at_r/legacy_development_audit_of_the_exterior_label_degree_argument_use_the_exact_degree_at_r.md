@@ -1,7 +1,5 @@
 # Audit of the exterior-label degree argument: use the exact degree at R — preserved pre-item development
 
-## Development
-
 The conclusion of 271, that the saturated Johnson block is spanning, is correct by 269. Its displayed degree argument at K=R+y does not by itself prove that conclusion.
 
 The known incoming edges at K give deg_in(K) >= |U|-d+1. Antipodality and minimum positive source degree give d <= deg_in(K). These two lower bounds on the SAME degree do not imply d <= |U|-d+1. Additional incoming edges from exterior labels have not been excluded there.

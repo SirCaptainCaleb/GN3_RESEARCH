@@ -1,7 +1,5 @@
 # Correction: exact-root deletion distance at least two does force a zero root — preserved pre-item development
 
-## Development
-
 ## Correction: the exact-root \(k\ge2\) zero-root theorem is proved
 
 An earlier version of this audit incorrectly stated that [[exact_root_compression_and_bounded_central_structure_subsection_a]] asserted, without proof, that

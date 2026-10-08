@@ -1,7 +1,5 @@
 # Minimum holes contain bidirectionally compatible four-support pair cores — preserved pre-item development
 
-## Development
-
 ## Two-end fixed-pair elevation: many hole pairs are simultaneously compatible at both boundaries
 
 Let

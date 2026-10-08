@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 ## Exact-root compression and bounded central structure
 
 The exact status coordinates from [[spanning_orders_and_defect_helly]] are

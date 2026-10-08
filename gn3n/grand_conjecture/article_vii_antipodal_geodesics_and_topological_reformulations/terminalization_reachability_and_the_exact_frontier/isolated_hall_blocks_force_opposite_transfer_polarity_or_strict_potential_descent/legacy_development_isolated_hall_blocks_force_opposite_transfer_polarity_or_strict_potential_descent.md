@@ -1,7 +1,5 @@
 # Audit: isolated Hall blocks do not yet force opposite transfer polarity — preserved pre-item development
 
-## Development
-
 ## Audit correction
 
 The previous development is withdrawn beyond its per-pair transfer statement.

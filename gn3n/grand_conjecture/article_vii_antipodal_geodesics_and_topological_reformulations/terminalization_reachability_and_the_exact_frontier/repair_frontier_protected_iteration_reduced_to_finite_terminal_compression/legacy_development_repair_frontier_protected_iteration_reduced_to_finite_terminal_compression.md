@@ -1,7 +1,5 @@
 # Repair frontier: protected iteration reduced to finite terminal compression — preserved pre-item development
 
-## Development
-
 ## Repair frontier after the protected-carrier audit
 
 The failed existential filtration should not be repaired by returning to \(Y_r\). The correct iteration target is the protected complex

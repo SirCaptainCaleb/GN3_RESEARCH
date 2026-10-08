@@ -1,7 +1,5 @@
 # Two-slot persistent boundary reservoirs are uniformly blocked and rooted — preserved pre-item development
 
-## Development
-
 ## A two-slot persistent boundary reservoir is automatically blocked and supplies rooted four-paths
 
 Let \(F\subset X_r\) be a double-persistent protected face for a mixed reflected span-two occurrence. On the left, every chamber has the persistent word

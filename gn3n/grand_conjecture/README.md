@@ -1,6 +1,6 @@
 # Grand conjecture
 
-Research hierarchy: Articles → Sections → Subsections → Items → Results.
+Research hierarchy: Articles → Sections → Subsections → Items.
 Each level's composition is adjacent to its corresponding directory.
 
 - [Article I — deletion-cover compatibility and global obstruction structure](deletioncover_compatibility_and_global_obstruction_structure.md)

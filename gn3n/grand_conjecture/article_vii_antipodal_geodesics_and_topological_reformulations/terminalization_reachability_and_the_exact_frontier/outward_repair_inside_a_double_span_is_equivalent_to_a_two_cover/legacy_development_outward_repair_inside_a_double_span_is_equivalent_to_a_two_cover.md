@@ -1,7 +1,5 @@
 # Outward repair inside a double span is equivalent to a two-cover — preserved pre-item development
 
-## Development
-
 Let J=[a,b+4] be the full determining span of a protected positive span-two reflected double at witness depth r. Reorder only the vertices in J, fixing every position outside J.
 
 Such a reorder is outward at depth r if and only if its internal status word on J avoids 001,011,0101; hence an outward reorder supported on J exists if and only if H[J] has a two-cover.

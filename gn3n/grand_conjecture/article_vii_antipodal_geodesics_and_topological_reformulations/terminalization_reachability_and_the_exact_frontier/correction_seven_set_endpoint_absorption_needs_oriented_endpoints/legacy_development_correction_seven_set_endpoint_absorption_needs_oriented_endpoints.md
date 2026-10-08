@@ -1,7 +1,5 @@
 # Correction: seven-set endpoint absorption needs oriented endpoints — preserved pre-item development
 
-## Development
-
 ## Correction: the seven-set endpoint theorem is unoriented
 
 The preceding addendum [[rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue]] used more than the cited theorem supplies.

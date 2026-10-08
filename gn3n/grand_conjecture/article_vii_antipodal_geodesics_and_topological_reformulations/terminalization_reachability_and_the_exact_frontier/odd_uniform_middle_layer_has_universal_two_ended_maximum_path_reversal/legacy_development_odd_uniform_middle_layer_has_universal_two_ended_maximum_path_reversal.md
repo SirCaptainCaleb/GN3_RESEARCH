@@ -1,7 +1,5 @@
 # Odd uniform middle layer has universal two-ended maximum-path reversal — preserved pre-item development
 
-## Development
-
 Assume the exact odd uniform middle-layer state:
 n=2r+1, every r-set is Hamiltonian, and every (r+1)-set is non-Hamiltonian.
 

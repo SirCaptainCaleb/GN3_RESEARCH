@@ -1,7 +1,5 @@
 # The forest case — preserved pre-item development
 
-## Development
-
 Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf support and \(Q\) its neighbor. Thus
 \[
 V(H)=P\mathbin{\dot\cup}Q\mathbin{\dot\cup}\{x\}.

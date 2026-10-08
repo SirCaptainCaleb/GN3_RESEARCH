@@ -1,7 +1,5 @@
 # Rank-four missing-facet homology is a saturated bad-five Johnson component — preserved pre-item development
 
-## Development
-
 ## Rank-four missing-facet homology is a saturated bad-five Johnson component
 
 Let \(W\) be a finite vertex set. Define \(X_5(W)\) to be the simplicial complex consisting of

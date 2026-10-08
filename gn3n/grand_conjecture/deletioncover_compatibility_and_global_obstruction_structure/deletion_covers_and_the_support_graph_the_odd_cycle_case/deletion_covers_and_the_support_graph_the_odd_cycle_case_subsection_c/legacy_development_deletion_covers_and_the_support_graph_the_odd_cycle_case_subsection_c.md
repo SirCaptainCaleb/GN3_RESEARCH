@@ -1,7 +1,5 @@
 # 6.2 Rank transport — preserved pre-item development
 
-## Development
-
 For consecutive compatible covers,
 \[
 S_i\cap S_{i+2}=S_i-\{d_{i+1}\}=S_{i+2}-\{d_i\}.

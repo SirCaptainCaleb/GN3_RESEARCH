@@ -1,7 +1,5 @@
 # Compatible two-covers under a one-vertex terminal-support exchange — preserved pre-item development
 
-## Development
-
 ## A one-vertex exchange admits compatible (5|5) two-covers
 
 The boundary-crossing coherence problem requires a stronger statement than mere two-coverability of each terminal support. The required strengthening is true.

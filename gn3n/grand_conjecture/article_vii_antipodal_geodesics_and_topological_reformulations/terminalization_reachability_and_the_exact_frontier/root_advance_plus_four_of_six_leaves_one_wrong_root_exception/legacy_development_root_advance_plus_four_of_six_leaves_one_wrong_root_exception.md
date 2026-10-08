@@ -1,7 +1,5 @@
 # Root advance plus four-of-six leaves one wrong-root exception — preserved pre-item development
 
-## Development
-
 ## Root advance plus four-of-six reduces to one wrong-root exception
 
 Retain the common-reverser branch of [[blocked_exterior_vertices_either_extend_the_opposite_tail_or_force_root_advance]]. Thus

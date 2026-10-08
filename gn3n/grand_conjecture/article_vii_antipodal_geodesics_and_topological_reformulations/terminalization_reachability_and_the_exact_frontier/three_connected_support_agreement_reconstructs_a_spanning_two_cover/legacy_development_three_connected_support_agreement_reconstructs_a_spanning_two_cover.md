@@ -1,7 +1,5 @@
 # Three connected support agreement reconstructs a spanning two cover — preserved pre-item development
 
-## Development
-
 ## Three-connected support agreement reconstructs a spanning two-cover
 
 Let H be a boundary tournament on a vertex set V with |V|>=4. For each x in V choose a cover F_x of H-x by at most two tight paths. Regard its supports as an unordered partition of V-{x}, allowing an empty part.

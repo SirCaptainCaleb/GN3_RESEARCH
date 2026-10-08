@@ -1,7 +1,5 @@
 # Correction: carrier four-cycle descent is a reduction, not closure — preserved pre-item development
 
-## Development
-
 Correction to [[surviving_carrier_four_cycles_descend_by_five_vertices]].
 
 The valid theorem is the structural descent only. If Y is the five-label Hamiltonian support of a genuinely surviving terminal-pair four-cycle and R=H-Y, then pc(R)>=3, and pc(R union {w})>=3 for each of the four cycle labels w.

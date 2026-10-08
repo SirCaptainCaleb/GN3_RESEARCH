@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The quadratic-potential argument is reduced to the following statement.
 
 **Remaining Lemma.** Let \(C\) minimize \(\Phi\) in the component of \(\mathcal R(H)\) containing a singleton lift. Suppose one of the following occurs:

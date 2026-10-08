@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(A\mid B\mid C\) have orders \(r+1,r,r\), and let \(x,y\) be the endpoints of \(A\).
 
 Suppose first that \(x\) extends both \(B\) and \(C\). For a two-cover \(T\) of \(H-x\), use the partition

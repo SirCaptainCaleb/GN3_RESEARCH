@@ -1,7 +1,5 @@
 # Auxiliary-center fibers are exact inversion windows — preserved pre-item development
 
-## Development
-
 ## Auxiliary-center fibers are exact inversion windows
 
 Fix a spanning order of the original tournament

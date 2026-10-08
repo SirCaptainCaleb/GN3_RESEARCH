@@ -1,7 +1,5 @@
 # Existential carrier reduction for rank-two terminal residues — preserved pre-item development
 
-## Development
-
 ## Existential carriers make every non-saturating rank-two residue automatic
 
 The corrected relative-index target is the existential depth-filtered face space

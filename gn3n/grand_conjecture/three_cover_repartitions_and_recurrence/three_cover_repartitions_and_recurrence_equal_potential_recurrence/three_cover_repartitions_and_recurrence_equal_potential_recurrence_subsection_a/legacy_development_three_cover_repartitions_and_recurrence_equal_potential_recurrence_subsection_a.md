@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Equal-\(\Phi\) moves occur at the equitable size profiles and in the one-vertex transfer case. They must therefore be treated directly.
 
 Consider first the size multiset

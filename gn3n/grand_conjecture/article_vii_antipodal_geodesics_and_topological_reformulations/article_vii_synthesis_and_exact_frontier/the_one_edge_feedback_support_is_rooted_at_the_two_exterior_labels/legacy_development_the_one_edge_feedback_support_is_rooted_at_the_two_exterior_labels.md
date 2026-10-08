@@ -1,5 +1,3 @@
 # The one-edge feedback support is rooted at the two exterior labels — preserved pre-item development
 
-## Development
-
 In the canonical matching-block six-set U=C union {a,b}, the full comparison digraph is cyclic but becomes acyclic after deleting the shadow edge ab, and every shortest feedback cycle through ab has length m in {4,5,6}. Such a shortest cycle is a vertex-simple ordinary cycle because comparison triangles through ab were excluded. Write its ordinary vertices cyclically as a=v_0,v_1,...,v_{m-2},v_{m-1}=b,a, with ab the closing edge. Removing the comparison vertex ab from the directed comparison cycle leaves the directed chain av_1 -> v_1v_2 -> ... -> v_{m-2}b. By comparison representation, (a,v_1,...,v_{m-2},b) is a tight Hamilton path on the cycle support. Therefore the forced Hamiltonian 4/5/6-support is not merely a support containing a and b: it admits a Hamilton order whose two endpoints are exactly a and b. This rooted form is the correct output for Article VII endpoint handoff and gluing.

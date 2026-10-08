@@ -1,7 +1,5 @@
 # Failed rooted absorption two-covers the eight-label interface packet — preserved pre-item development
 
-## Development
-
 ## Failed direct rooted absorption always two-covers the eight-label interface packet
 
 Retain the rooted corridor setup

@@ -1,7 +1,5 @@
 # Carrier loops reduce to maximal-support entry or four-vertex descent — preserved pre-item development
 
-## Development
-
 Retain the six-root common-core state: Y=B union {z}, R=H-Y, C=Y-{b_*}, and E subset R with |E|>=6.
 
 Choose any pair u,v in C and any three distinct roots x,y,w in E. By [[three_exterior_roots_force_a_mixed_four_support_over_every_prescribed_core_pair]], one of {u,v,x,y}, {u,v,x,w}, {u,v,y,w} is Hamiltonian. Call this four-set K.

@@ -1,7 +1,5 @@
 # Separated window outward loci are products and can be disconnected — preserved pre-item development
 
-## Development
-
 ## The exact outward-locus product
 
 Let F be protected at a fixed reflected span-two depth r, and suppose an ordered-block boundary separates its two determining windows. Write F=F_L times F_R by grouping the blocks on the two sides. Let D_L be the subcomplex of F_L consisting of faces on which the left occurrence is absent in every chamber; define D_R symmetrically. Then

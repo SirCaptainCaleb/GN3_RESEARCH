@@ -1,7 +1,5 @@
 # Odd cycles of actual endpoint paths force a longer path without compatible insertion orders — preserved pre-item development
 
-## Development
-
 ## Scope and audit
 
 The grand conjecture remains open. Sections 269 and 272 identify a possible closed residue, not an augmentation of it. The proofs in 279–281 correctly use actual path orders. The examples in 282 and 283 block universal compatibility and deletion-criticality shortcuts. The hexadecimal encoding in 283 is read most-significant bit first in the stated lexicographic variable order; direct verification gives no Hamiltonian six-path and deletion counts 8,10,5,5,2,2.

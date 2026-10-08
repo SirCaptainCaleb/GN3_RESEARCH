@@ -1,7 +1,5 @@
 # Exact-root surplus forces deletion distance at most five — preserved pre-item development
 
-## Development
-
 ## Exact-root surplus forces deletion distance at most five
 
 Let

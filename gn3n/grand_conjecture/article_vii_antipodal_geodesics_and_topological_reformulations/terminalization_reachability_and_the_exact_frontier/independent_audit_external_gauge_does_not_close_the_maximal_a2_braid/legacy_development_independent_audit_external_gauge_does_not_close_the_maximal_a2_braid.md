@@ -1,7 +1,5 @@
 # Independent audit: external gauge does not close the maximal A2 braid — preserved pre-item development
 
-## Development
-
 ## Independent audit of the terminal edge-surgery closure
 
 The claimed closure in [[rank_two_coherence_closes_by_the_external_gauge]] fails at its first load-bearing implication.

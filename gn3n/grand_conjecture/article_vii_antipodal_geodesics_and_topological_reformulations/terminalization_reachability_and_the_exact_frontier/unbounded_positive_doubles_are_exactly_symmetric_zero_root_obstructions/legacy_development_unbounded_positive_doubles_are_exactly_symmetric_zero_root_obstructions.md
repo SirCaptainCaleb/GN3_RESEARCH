@@ -1,7 +1,5 @@
 # Unbounded positive doubles are exactly symmetric zero-root obstructions — preserved pre-item development
 
-## Development
-
 ## The unbounded reflected-double branch is exactly a local zero-root obstruction
 
 Let J be the full determining span of a protected positive span-two reflected double, written in its displayed chamber order. Let m_J=|J|-2 be the length of its status word.

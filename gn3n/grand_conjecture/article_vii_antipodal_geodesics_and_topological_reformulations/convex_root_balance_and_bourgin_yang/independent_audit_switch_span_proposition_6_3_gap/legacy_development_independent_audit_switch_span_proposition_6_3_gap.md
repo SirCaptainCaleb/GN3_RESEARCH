@@ -1,7 +1,5 @@
 # Independent audit: switch-span Proposition 6.3 gap — preserved pre-item development
 
-## Development
-
 ## Independent audit: switch-span Proposition 6.3 is not proved
 
 The current proof of Proposition 6.3,

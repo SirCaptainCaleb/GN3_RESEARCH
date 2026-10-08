@@ -1,7 +1,5 @@
 # Antipodal degree and minimality force every closed deletion core to be the complete odd middle layer — preserved pre-item development
 
-## Development
-
 Assume H is a minimum-order boundary 3-tournament without a spanning two-path cover. Let C be ANY nonempty antipodally invariant pure source-sink cubical 1-cocycle made of actual one-hole deletion-cover edges. No minimum-imbalance restriction is imposed.
 
 Use the full-star descent and minimum-degree polarity results (265-267). Choose a source of minimum positive outdegree d and descend to a full-star source D of size d. Let U be its saturated Johnson block. Every d-subset F of U is a full-star source, hence non-Hamiltonian. Every (d-1)-subset R of U is Hamiltonian. For each y outside U, Type I polarity holds relative to every such F: the edge F+y -> F is absent, and every R+y is a sink. In particular the edge R+y -> R is absent.

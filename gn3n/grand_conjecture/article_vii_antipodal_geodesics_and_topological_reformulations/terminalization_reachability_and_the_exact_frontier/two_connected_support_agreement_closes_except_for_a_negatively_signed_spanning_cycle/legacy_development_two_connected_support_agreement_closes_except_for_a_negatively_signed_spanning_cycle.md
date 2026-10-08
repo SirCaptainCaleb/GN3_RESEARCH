@@ -1,7 +1,5 @@
 # Two connected support agreement closes except for a negatively signed spanning cycle — preserved pre-item development
 
-## Development
-
 ## A two-connected support-agreement graph closes unless it is one negatively signed spanning cycle
 
 Retain the deletion covers F_x and the support-agreement graph G from [[three_connected_support_agreement_reconstructs_a_spanning_two_cover]], with |V|>=4.

@@ -1,7 +1,5 @@
 # Support-splitting seam reseeds force at least two cross edges — preserved pre-item development
 
-## Development
-
 ## A support-splitting seam reseed has at least two support-complement crossings
 
 Let \(H\) be a no-two-cover boundary tournament, let

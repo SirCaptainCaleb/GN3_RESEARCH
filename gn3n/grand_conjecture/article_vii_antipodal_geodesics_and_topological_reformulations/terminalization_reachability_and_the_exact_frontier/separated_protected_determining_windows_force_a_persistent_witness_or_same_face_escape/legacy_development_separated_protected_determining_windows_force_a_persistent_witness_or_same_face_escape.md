@@ -1,7 +1,5 @@
 # Separated protected determining windows force a persistent witness or same face escape — preserved pre-item development
 
-## Development
-
 ## Elevating the five-position obstruction to the separator step
 
 Work with the positive witness language {001,011,0101}. Fix a noncentral reflected span-two depth r with starts a<b, whose determining vertex intervals are

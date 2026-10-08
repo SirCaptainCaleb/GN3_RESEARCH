@@ -1,7 +1,5 @@
 # Bounded four-support closure — preserved pre-item development
 
-## Development
-
 The rooted small-support descent now completely classifies the bounded case in which a minimum-\(\Phi\) state contains a component of order four. Unless an order-three component or a \(4|6\) endpoint order disagreement is already present, every component order lies in \(\{4,5,6\}\). The six possible profiles containing a four then behave as follows.
 
 - \(4|4|4\): every displayed \(4|4\) pair lies on an eight-set with at least seven complementary Hamiltonian \(4+4\) decompositions. Applying this to all three component pairs gives at least eighteen distinct nontrivial neutral neighbors at every state.

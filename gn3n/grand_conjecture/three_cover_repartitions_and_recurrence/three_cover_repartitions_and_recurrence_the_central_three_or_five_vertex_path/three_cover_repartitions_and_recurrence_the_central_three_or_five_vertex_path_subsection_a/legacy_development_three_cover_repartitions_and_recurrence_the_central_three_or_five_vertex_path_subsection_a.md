@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Write
 \[
 P=(p_0,\ldots ,p_m),\qquad

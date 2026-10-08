@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 For an ordered triple \((u,v,z)\), the boundary-reversed triple is
 \[
 (z,v,u),

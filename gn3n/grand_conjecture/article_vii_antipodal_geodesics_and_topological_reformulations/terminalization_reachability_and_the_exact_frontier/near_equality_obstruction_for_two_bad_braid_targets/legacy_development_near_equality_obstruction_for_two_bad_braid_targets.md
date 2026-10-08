@@ -1,7 +1,5 @@
 # Near-equality obstruction for two bad braid targets — preserved pre-item development
 
-## Development
-
 ## Near-equality form of a two-bad-target obstruction
 
 Continue with the exchange matrix of [[dense_exchange_matrix_for_the_maximal_braid]]. Suppose two moving pairs, say \(P_1,P_2\), give non-Hamiltonian targets

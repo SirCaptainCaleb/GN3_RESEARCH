@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 **Lemma 1.**
 \[
 c(\pi)=1+\tau(L_\pi)=1+\nu(L_\pi).

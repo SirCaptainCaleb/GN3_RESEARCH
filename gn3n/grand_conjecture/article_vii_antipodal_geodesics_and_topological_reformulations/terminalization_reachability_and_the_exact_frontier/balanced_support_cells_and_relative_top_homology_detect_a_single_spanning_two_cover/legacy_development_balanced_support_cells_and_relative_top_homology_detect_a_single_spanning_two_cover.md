@@ -1,7 +1,5 @@
 # Balanced support cells and relative top homology detect a single spanning two-cover — preserved pre-item development
 
-## Development
-
 This supplies an exact relative target after the missing-point audit 275. It is a reformulation, not a proof of the required nonvanishing.
 
 BALANCED DOWNWARD-CLOSURE COMPLEX.

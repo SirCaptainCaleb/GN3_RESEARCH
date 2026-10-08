@@ -1,7 +1,5 @@
 # Imbalanced minimum holes descend to four-component one-hole cores — preserved pre-item development
 
-## Development
-
 ## Imbalance descends either to an all-old four-support or to deletion-distance one
 
 Retain the setup of [[imbalanced_minimum_hole_complements_force_dense_endpoint_spanning_four_supports]].

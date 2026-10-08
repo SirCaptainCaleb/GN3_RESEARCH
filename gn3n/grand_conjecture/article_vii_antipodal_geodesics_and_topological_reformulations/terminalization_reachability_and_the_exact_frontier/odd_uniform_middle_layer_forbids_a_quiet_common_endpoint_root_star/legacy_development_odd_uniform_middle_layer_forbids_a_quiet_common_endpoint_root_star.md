@@ -1,7 +1,5 @@
 # Odd uniform middle layer forbids a quiet common-endpoint root star — preserved pre-item development
 
-## Development
-
 Assume n=2r+1 and that every r-set is Hamiltonian while every (r+1)-set is non-Hamiltonian. Let D be a Hamiltonian (r-1)-set with displayed order D=(d_1,...,d_{r-1}), and put Y=V(H)-D.
 
 Suppose that for every y in Y the Hamiltonian support D+y has a Hamilton order obtained by inserting y in one common endpoint gap of this same displayed order. After symmetry, assume

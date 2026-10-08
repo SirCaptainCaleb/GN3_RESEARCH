@@ -1,7 +1,5 @@
 # The four-endpoint incidence system cannot remain featureless — preserved pre-item development
 
-## Development
-
 ## The four-endpoint incidence system cannot remain featureless
 
 Retain the hard rooted five-component setup

@@ -1,7 +1,5 @@
 # A protected four-cycle survives five-label enlargement exactly when an exit status is nonzero — preserved pre-item development
 
-## Development
-
 ## Exact five-label obstruction for the protected four-cycle
 
 Let B={a,b,c,d}, with mutual terminal-pair graph the chordless cycle a-b-c-d-a before a fixed label z. Thus h(u,v,z)=h(v,u,z)=1 exactly on mutual cycle edges; a diagonal may have a one-way admissibility relation, but is not mutual.

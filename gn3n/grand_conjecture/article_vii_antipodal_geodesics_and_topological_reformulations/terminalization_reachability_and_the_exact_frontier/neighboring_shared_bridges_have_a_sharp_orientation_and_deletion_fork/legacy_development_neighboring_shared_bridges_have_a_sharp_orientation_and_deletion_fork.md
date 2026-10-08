@@ -1,7 +1,5 @@
 # Neighboring shared bridges have a sharp orientation and deletion fork — preserved pre-item development
 
-## Development
-
 Use the neighboring-cut notation from [[a_shared_bridge_at_neighboring_cuts_exposes_four_new_repair_labels]]:
 A={x,y,c_1,c_2}, r=c_{j+1}, v=c_{j+2}, s=c_{j+3},
 T=(c_3,...,c_j), U=(c_N,...,c_{j+4}), with j=u or u+1 in a monotone corridor 1^u0^v_status, u,v_status>=4.

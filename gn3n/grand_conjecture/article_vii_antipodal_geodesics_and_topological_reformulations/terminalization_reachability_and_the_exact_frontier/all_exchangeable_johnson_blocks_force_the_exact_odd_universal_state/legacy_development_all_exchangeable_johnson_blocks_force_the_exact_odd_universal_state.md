@@ -1,7 +1,5 @@
 # All-exchangeable Johnson blocks force the exact odd universal state — preserved pre-item development
 
-## Development
-
 ## An all-exchangeable Johnson block is forced to the exact odd balanced threshold
 
 Retain a minimum-degree saturated Johnson block U from [[minimum_degree_full_stars_form_saturated_johnson_blocks]], with full-star size d.

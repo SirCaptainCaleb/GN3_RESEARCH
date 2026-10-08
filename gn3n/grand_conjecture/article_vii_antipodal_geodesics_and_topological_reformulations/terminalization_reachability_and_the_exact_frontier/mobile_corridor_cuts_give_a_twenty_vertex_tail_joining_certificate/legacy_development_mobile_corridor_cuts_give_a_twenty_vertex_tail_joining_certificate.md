@@ -1,7 +1,5 @@
 # Mobile corridor cuts give a twenty-vertex tail-joining certificate — preserved pre-item development
 
-## Development
-
 Let a monotone positive double corridor C=(c_1,...,c_N) have status word 1^u0^v, with u,v>=4 and N=u+v+2. Let x,y be its two exterior vertices. The three legal cuts j=u,u+1,u+2 give tight paths P_j=(c_1,...,c_j) and Q_j=(c_N,...,c_{j+1}), both of order at least four.
 
 For any of these covers independently remove either its initial two or its terminal two vertices from P_j, and do the same for Q_j. This gives four choices of a packet

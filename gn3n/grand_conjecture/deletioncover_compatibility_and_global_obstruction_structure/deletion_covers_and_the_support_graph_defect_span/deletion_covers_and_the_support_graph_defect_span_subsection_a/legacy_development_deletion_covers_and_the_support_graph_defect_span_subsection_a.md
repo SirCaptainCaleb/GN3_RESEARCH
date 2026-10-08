@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 For an ordering \(\pi=(v_1,\ldots ,v_n)\), an index \(i\), \(2\le i\le n-1\), is a defect center if
 \[
 (v_{i-1},v_i,v_{i+1})

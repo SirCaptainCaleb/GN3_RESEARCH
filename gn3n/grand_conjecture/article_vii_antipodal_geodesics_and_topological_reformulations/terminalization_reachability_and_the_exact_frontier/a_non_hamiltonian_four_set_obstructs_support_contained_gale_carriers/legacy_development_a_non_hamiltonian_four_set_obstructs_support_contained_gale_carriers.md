@@ -1,7 +1,5 @@
 # A non-Hamiltonian four-set obstructs support-contained Gale carriers — preserved pre-item development
 
-## Development
-
 ## A fixed local obstruction to support-contained topological transport
 
 Use the support-pair poset P(H) and the moment-constraint sphere defined in [[hamiltonian_support_pairs_and_smith_chains_give_a_direct_closure_target]].

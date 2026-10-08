@@ -1,7 +1,5 @@
 # Minimum-degree full stars form saturated Johnson blocks — preserved pre-item development
 
-## Development
-
 ## Minimum-degree full stars form uniform Johnson blocks
 
 Retain a minimum-degree full-star source D from [[minimum_degree_full_stars_force_uniform_exterior_polarity]], with |D|=d.

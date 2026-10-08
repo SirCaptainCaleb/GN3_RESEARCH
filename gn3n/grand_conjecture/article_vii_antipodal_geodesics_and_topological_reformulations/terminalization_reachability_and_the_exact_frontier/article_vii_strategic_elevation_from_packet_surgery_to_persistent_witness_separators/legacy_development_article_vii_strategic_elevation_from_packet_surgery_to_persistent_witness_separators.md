@@ -1,7 +1,5 @@
 # Article VII strategic elevation from packet surgery to persistent witness separators — preserved pre-item development
 
-## Development
-
 ## Choice of attack
 
 The next effort within Article VII should target the depth-r separator construction using persistent witness orientations. This is a research judgment, not a theorem that this route will close the conjecture.

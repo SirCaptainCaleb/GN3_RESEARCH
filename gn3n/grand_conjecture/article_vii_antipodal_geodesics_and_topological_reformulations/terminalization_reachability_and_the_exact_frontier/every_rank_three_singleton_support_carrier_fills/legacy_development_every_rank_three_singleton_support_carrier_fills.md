@@ -1,7 +1,5 @@
 # Every rank-three singleton-support carrier fills — preserved pre-item development
 
-## Development
-
 ## Every rank-three singleton-support carrier fills
 
 Continue from [[rank_three_support_pair_carriers_reduce_to_one_extreme_non_hamiltonian_four_block]].

@@ -1,7 +1,5 @@
 # Support-pair rank is exactly two-cover deletion distance — preserved pre-item development
 
-## Development
-
 ## Hamiltonian support-pair rank is exactly two-cover deletion distance
 
 Let \(H\) be a boundary tournament on \(n\) vertices. Let \(\mathcal P(H)\) be the poset of ordered pairs

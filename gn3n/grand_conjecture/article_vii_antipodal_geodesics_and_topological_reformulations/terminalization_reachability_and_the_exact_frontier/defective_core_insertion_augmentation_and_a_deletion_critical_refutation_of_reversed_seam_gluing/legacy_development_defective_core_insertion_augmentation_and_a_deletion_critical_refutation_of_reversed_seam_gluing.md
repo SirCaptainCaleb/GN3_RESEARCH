@@ -1,7 +1,5 @@
 # Defective-core insertion augmentation and a deletion-critical refutation of reversed-seam gluing — preserved pre-item development
 
-## Development
-
 ## Adjacent insertion augmentation does not require a Hamiltonian root-deleted core
 
 Let sigma=(d_1,...,d_k) be ANY ordering of distinct vertices, not assumed tight. For a root z outside sigma, call a gap feasible when inserting z there gives an actual Hamiltonian word on its k+1 vertices.

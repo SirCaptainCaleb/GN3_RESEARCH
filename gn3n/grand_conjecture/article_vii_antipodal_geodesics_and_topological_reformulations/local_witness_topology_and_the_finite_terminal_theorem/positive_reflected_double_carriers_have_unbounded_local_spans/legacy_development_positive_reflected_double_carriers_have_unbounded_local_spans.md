@@ -1,7 +1,5 @@
 # Positive reflected-double carriers have unbounded local spans — preserved pre-item development
 
-## Development
-
 ## Positive reflected-double carriers can have arbitrarily long determining spans
 
 There is also an unbounded local obstruction to transferring the dual-polarity finite-terminal theorem into the positive-word filtration.

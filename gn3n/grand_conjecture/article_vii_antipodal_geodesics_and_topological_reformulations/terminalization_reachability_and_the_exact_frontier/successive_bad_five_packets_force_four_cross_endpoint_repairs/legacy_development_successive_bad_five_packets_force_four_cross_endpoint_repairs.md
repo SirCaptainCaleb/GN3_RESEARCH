@@ -1,7 +1,5 @@
 # Successive bad five-packets force four cross-endpoint repairs — preserved pre-item development
 
-## Development
-
 Lemma. Let A be a four-vertex set and let r,s be two further vertices. If both five-sets A union {r} and A union {s} are non-Hamiltonian, then for every u in A the five-set (A-u) union {r,s} is Hamiltonian.
 
 Proof. In the six-set A union {r,s}, the four-of-six theorem of [[smallset01]] supplies at least four Hamiltonian five-subsets. The two deletions s and r are already non-Hamiltonian, so all four remaining deletions u in A must be Hamiltonian. No assumption that A itself is Hamiltonian is needed. QED.

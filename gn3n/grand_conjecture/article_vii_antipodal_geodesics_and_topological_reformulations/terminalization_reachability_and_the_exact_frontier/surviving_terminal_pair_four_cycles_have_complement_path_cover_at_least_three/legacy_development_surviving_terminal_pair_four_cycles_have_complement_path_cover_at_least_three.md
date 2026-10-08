@@ -1,7 +1,5 @@
 # Surviving terminal-pair four-cycles have complement path-cover at least three — preserved pre-item development
 
-## Development
-
 ## A surviving terminal-pair four-cycle must have complement path-cover number at least three
 
 Let \(H\) be a boundary tournament with no spanning two-cover. Let

@@ -1,7 +1,5 @@
 # Surviving carrier four-cycles descend by five vertices — preserved pre-item development
 
-## Development
-
 ## A surviving carrier four-cycle gives strict hereditary descent by five vertices
 
 Let \(H\) be a boundary tournament with no spanning two-cover. Suppose a protected terminal-pair carrier loop survives all local filling branches, and let

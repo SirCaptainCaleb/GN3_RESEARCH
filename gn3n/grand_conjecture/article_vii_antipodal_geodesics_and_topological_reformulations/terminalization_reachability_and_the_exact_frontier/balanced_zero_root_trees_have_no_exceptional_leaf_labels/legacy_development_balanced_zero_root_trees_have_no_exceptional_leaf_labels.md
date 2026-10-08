@@ -1,7 +1,5 @@
 # Balanced zero-root trees have no exceptional leaf labels — preserved pre-item development
 
-## Development
-
 Let H be a minimum counterexample on n=2r+1 vertices, choose minimum-imbalance deletion covers, and suppose the selected support graph J is a connected tree containing the balanced zero-root edge. By [[the_zero_root_support_component_is_uniformly_balanced]], every support vertex of J has order r.
 
 Fix a leaf support P with neighbor Q and edge label x. In the exceptional non-mixing case of the leaf comparison theorem, Corollary 10 of [[leaf_comparisons_in_deletion_support_forests_subsection_a]] gives a proper support S subset P and transferred block R=P-S with

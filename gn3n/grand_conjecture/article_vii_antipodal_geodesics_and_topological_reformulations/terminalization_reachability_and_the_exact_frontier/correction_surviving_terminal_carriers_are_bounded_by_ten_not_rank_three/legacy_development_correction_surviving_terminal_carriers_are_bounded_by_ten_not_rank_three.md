@@ -1,7 +1,5 @@
 # Correction: surviving terminal carriers are bounded by ten, not rank three — preserved pre-item development
 
-## Development
-
 ## Correction: the rank-three reduction does not cover the surviving terminal branch
 
 The claim in [[protected_rank_three_coherence_from_terminal_block_compression]] that the terminal coupling-block bound (|B|le4) reduces every non-product terminal interaction to Coxeter rank at most three uses that block bound outside its proved scope.

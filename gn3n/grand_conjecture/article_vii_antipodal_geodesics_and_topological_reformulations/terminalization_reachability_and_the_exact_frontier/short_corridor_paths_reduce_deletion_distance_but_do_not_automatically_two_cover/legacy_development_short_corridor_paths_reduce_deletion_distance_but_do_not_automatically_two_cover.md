@@ -1,7 +1,5 @@
 # Short corridor paths reduce deletion distance but do not automatically two-cover — preserved pre-item development
 
-## Development
-
 The short-path deduction in [[genuine_two_deletion_doubles_have_both_corridor_paths_of_order_at_least_four]] is valid as an exclusion of kappa_2=2, but its sentence saying that all short-path cases collapse directly to a two-cover is stronger than the proof.
 
 Let J=P union Q union {x,y}, with P,Q actual tight paths, each of order at least two. If |P|=2, P union {x} is a Hamiltonian three-set. Consequently (P+x)|Q is a two-cover of J-y, proving kappa_2(H[J])<=1. No deduction concerning J itself follows from this cover without absorbing y or repartitioning.

@@ -1,7 +1,5 @@
 # The universal four-support is immediate — preserved pre-item development
 
-## Development
-
 ### The first descent can preserve the universal reversal
 
 The strict descent from Lemma 19 can be chosen so that the exposed endpoint reversal survives.

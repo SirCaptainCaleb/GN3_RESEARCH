@@ -1,7 +1,5 @@
 # Normalized minimum-pair faces have zero or simple exact root — preserved pre-item development
 
-## Development
-
 Let H satisfy kappa_2(H)=2 and let xy be an edge of the minimum-pair graph. Choose a two-cover H-{x,y}=P|Q minimizing Psi(P,Q)=|P|^2+|Q|^2. Exclude the bounded four-component branch of the imbalanced minimum-hole theorem, so that ||P|-|Q||<=1.
 
 Let r=|P| and s=|Q|. Form the ordered-partition face F_xy whose chambers are the two minimum-hole orders (P,x,y,Q^rev) and (P,y,x,Q^rev). By minimum-hole exactness, every chamber of F_xy has deficiency two and the same exact root

@@ -1,7 +1,5 @@
 # Any two deletion covers share a singleton support-pair lower bound — preserved pre-item development
 
-## Development
-
 ## Any two normalized deletion covers of a minimum counterexample have a common singleton lower pair
 
 Let H be a minimum-order counterexample. For each vertex x choose a two-cover H-x=A_x|B_x. Normalize it so both supports have order at least two; if one side is a singleton, move an endpoint from the other path onto that side.

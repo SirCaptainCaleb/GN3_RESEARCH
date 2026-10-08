@@ -1,7 +1,5 @@
 # Two exterior labels fill the terminal four-cycle by a six-triangle disk — preserved pre-item development
 
-## Development
-
 ## Two exterior labels fill the four-cycle without a universal label
 
 Let B={a,b,c,d}, with mutual-pair graph exactly the chordless cycle a-b-c-d-a. Add two distinct labels g,h. Suppose the enlarged directed relation E^+ restricts to the original relation on B and its mutual graph has the following edges:

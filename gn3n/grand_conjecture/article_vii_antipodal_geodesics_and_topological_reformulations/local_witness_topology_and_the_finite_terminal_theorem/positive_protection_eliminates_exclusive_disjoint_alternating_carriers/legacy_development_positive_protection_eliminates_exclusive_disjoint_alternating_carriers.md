@@ -1,7 +1,5 @@
 # Positive protection eliminates exclusive disjoint alternating carriers — preserved pre-item development
 
-## Development
-
 ## Disjoint alternating terminal carriers are impossible under positive protection
 
 This repairs the alternating elimination without using \(110,100,1010\).

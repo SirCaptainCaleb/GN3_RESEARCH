@@ -1,7 +1,5 @@
 # A mutually admissible exterior vertex fills the terminal-pair carrier — preserved pre-item development
 
-## Development
-
 ## One exterior vertex fills a terminal-pair carrier
 
 Let B be a finite set with |B|>=2, E a loopless directed relation on B, and g not in B. Let E^+ on B^+=B union {g} restrict to E on B and satisfy

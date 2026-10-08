@@ -1,7 +1,5 @@
 # Hamiltonian one-vertex extensions need not admit compatible insertion orders — preserved pre-item development
 
-## Development
-
 The universal ordered-insertion bridge is false, already for four vertices in a genuine boundary 3-tournament. Let V={0,1,2,3}, and declare exactly the following ordered triples tight:
 (0,1,3), (0,2,1), (1,0,2), (1,2,3),
 (1,3,0), (2,0,3), (2,1,0), (2,3,0),

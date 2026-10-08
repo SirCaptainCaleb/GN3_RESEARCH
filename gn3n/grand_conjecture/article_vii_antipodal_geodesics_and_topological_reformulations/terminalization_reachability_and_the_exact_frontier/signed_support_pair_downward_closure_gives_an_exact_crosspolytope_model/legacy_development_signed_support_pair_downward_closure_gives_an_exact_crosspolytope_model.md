@@ -1,7 +1,5 @@
 # Signed support-pair downward closure gives an exact crosspolytope model — preserved pre-item development
 
-## Development
-
 Let O_n be the boundary complex of the n-crosspolytope, with signed vertices v+ and v-. Define E(H) as the simplicial downward closure of disjoint Hamiltonian support pairs: A+ union B- is a face iff A,B are disjoint and there exist disjoint Hamiltonian supports A' superset A and B' superset B.
 
 E(H) is antipodally invariant under sign swap. It is a genuine simplicial complex even though Hamiltonianity itself is not hereditary, because a subface keeps the same witnessing support pair.

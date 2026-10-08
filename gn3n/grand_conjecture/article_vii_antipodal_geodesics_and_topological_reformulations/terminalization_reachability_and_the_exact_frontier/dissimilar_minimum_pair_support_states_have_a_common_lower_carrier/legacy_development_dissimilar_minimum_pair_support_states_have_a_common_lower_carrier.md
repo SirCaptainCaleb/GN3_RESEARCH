@@ -1,7 +1,5 @@
 # Dissimilar minimum-pair support states have a common lower carrier — preserved pre-item development
 
-## Development
-
 ## Dissimilar minimum-pair support states have an order-free common lower bound
 
 Let kappa_2(H)=2. Fix x,y,z with xy and xz edges of the minimum-pair graph, and choose arbitrary two-covers

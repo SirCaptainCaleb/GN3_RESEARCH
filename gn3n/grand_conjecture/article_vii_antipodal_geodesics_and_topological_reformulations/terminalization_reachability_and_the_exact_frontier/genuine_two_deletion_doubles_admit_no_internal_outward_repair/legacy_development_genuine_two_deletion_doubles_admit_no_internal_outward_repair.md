@@ -1,7 +1,5 @@
 # Genuine two-deletion doubles admit no internal outward repair — preserved pre-item development
 
-## Development
-
 ## Genuine two-deletion doubles cannot be repaired inside their determining span
 
 Let J=[a,b+4] be the full determining span of a protected positive span-two reflected double, and suppose

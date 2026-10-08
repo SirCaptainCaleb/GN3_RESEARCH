@@ -1,7 +1,5 @@
 # Genuine two-deletion doubles have both corridor paths of order at least four — preserved pre-item development
 
-## Development
-
 ## A genuine two-deletion double has two substantial corridor paths
 
 Retain the genuine two-deletion setup of [[genuine_two_deletion_doubles_reverse_all_four_corridor_ends]]:

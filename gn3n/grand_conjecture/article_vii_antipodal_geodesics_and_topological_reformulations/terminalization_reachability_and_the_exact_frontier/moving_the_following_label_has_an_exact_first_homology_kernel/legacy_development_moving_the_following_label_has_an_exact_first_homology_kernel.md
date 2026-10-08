@@ -1,7 +1,5 @@
 # Moving the following label has an exact first-homology kernel — preserved pre-item development
 
-## Development
-
 ## Exact first-homology kernel for moving the following label
 
 The four-cycle obstruction extends to an arbitrary terminal-pair relation.

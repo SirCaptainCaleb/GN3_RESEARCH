@@ -1,7 +1,5 @@
 # Minimum holes reduce to genuine two-deletion states with a five-component — preserved pre-item development
 
-## Development
-
 ## Minimum holes reduce canonically to a genuine two-deletion five-component state
 
 Retain the setup of [[minimum_deletion_holes_of_order_at_least_three_force_canonical_root_advance_three_covers]]. Let

@@ -1,7 +1,5 @@
 # Opposite long-span orientations expose an outward commuting square — preserved pre-item development
 
-## Development
-
 ## Opposite long-span orientations expose an outward commuting square
 
 Fix a protected face F at a reflected positive span-two depth r, with left and right determining windows I_L and I_R. Assume their starts satisfy b-a>=8, so the windows are separated as in [[separated_protected_determining_windows_force_a_persistent_witness_or_same_face_escape]].

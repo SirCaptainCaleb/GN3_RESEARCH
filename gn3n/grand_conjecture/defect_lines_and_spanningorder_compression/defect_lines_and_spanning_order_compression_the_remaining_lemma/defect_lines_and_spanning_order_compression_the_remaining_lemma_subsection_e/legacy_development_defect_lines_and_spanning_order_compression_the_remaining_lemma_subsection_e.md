@@ -1,7 +1,5 @@
 # Two-label one-defect bridge — preserved pre-item development
 
-## Development
-
 ### The opposite-endpoint residue is a two-label completion problem
 
 **Lemma 34 (one-defect bridge with two one-label completions).** In the opposite-endpoint case of Lemma 27, normalize the common slot orders so that

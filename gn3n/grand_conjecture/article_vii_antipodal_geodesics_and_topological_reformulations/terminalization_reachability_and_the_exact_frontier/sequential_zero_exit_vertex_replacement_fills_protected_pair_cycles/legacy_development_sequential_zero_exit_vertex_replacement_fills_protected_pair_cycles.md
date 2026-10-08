@@ -1,7 +1,5 @@
 # Sequential zero-exit vertex replacement fills protected pair cycles — preserved pre-item development
 
-## Development
-
 ## Sequential zero-exit vertex replacement fills a protected terminal-pair cycle
 
 Work in the terminal-pair clique-complex model before a fixed following label \(z\). Let

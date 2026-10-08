@@ -1,7 +1,5 @@
 # Persistent face labels isolate the double-persistent zero-root locus — preserved pre-item development
 
-## Development
-
 ## Face-level persistent labels isolate the genuinely double-persistent obstruction
 
 Fix one reflected positive span-two witness depth (r) in the protected complex (X_r). For a protected face (Fsubset X_r), let

@@ -1,7 +1,5 @@
 # Root-advance recursion drops three corridor vertices without a covering lift — preserved pre-item development
 
-## Development
-
 ## Root-advance recursion must preserve the vertices already cut off
 
 The local alternatives in [[three_common_reversers_force_a_three_cover_by_finite_root_advance]] are valid up to its recursive call. But that call proves a statement on a strictly smaller vertex set and does not supply the asserted three-cover of the original set.

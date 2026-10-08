@@ -1,7 +1,5 @@
 # Interval-preserving saturation makes pure seam descent well-founded — preserved pre-item development
 
-## Development
-
 ## Interval-preserving saturation makes the pure seam branch well-founded
 
 Let (H) be a no-two-cover boundary tournament and suppose

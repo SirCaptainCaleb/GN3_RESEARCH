@@ -1,7 +1,5 @@
 # Compatible full outward carriers after endpoint enlargement — preserved pre-item development
 
-## Development
-
 ## Compatible full outward carriers after endpoint enlargement
 
 Combine [[one_exception_endpoint_enlargements_have_contractible_outward_loci]] with [[face_monotone_positional_coarsening_gives_compatible_enlarged_protected_carriers]].

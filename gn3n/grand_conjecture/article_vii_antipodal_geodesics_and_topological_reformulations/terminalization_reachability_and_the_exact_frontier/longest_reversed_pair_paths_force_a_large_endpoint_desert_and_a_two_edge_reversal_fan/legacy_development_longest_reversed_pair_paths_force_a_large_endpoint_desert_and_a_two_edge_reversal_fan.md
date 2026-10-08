@@ -1,7 +1,5 @@
 # Longest reversed-pair paths force a large endpoint desert and a two-edge reversal fan — preserved pre-item development
 
-## Development
-
 ## Longest reversed-pair paths force a one-sided endpoint desert and a two-edge fan
 
 Assume the odd uniform residue on \(n=2r+1\) vertices, with \(r\ge 3\): every \(r\)-set is Hamiltonian and every \((r+1)\)-set is non-Hamiltonian. Hence the global maximum tight-path order is exactly \(r\).

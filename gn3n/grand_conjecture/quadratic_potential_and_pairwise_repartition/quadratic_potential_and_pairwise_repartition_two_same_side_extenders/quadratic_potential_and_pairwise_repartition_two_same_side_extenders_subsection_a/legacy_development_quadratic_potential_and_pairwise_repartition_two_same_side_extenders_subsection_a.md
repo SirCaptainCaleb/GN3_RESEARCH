@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(x,y\) be two labels that can occur only at the same side of the relevant core paths, and let \(R\mid S\) be a two-cover of \(H-\{x,y\}\). Form a bipartite graph with left class \(\{x,y\}\) and right class \(\{R,S\}\), joining a label to a path when adjoining the label at the prescribed end gives a Hamiltonian path.
 
 A perfect matching gives a two-cover of \(H\). If no perfect matching exists, Hall's theorem gives one of two possibilities:

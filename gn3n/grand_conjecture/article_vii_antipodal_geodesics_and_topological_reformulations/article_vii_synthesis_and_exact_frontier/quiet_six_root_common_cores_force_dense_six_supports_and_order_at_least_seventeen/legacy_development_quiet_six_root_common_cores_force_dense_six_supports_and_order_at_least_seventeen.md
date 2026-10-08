@@ -1,7 +1,5 @@
 # Quiet six-root common cores force dense six-supports and order at least seventeen — preserved pre-item development
 
-## Development
-
 ## A quiet six-root common core forces dense Hamiltonian six-supports and complement order at least twelve
 
 Retain the robust common-core state of [[surviving_terminal_pair_four_cycles_force_a_six_root_robust_common_core]]:

@@ -1,7 +1,5 @@
 # Uniform buffer blocking alone does not force a farther positive witness — preserved pre-item development
 
-## Development
-
 ## Uniform buffer blocking does not by itself force a farther positive witness
 
 The rooted polarization in [[a_blocked_outward_buffer_creates_a_boundary_straddling_common_core_packet]] is genuine, but it cannot by itself close the repair.

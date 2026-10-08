@@ -1,7 +1,5 @@
 # Normalized minimum-hole faces of all orders have zero or simple exact root — preserved pre-item development
 
-## Development
-
 Let X be a minimum two-cover deletion set of order k in H. Among all two-covers H-X=P|Q choose one minimizing Psi(P,Q)=|P|^2+|Q|^2, and write r=|P|<=|Q|=s.
 
 If s>=r+2, the imbalanced minimum-hole theorem already gives a bounded output: either an all-old spanning three-cover with a Hamiltonian four-component, or deletion-distance-one cores carrying Hamiltonian four-components through the restored hole labels. Exclude that bounded branch. Then necessarily |r-s|<=1.

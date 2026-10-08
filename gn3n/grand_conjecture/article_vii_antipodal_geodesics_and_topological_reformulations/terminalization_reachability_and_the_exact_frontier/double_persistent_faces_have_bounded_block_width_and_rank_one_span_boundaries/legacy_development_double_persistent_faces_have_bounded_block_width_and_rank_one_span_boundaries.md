@@ -1,7 +1,5 @@
 # Double-persistent faces have bounded block width and bounded boundary footprints — preserved pre-item development
 
-## Development
-
 ## Double-persistent faces have bounded block width and bounded boundary footprints
 
 Let (Fsubset X_r) be a protected face at a reflected positive span-two depth (r). Assume the left and right depth-(r) occurrences are present in **every** chamber of (F). Write their five-vertex determining windows as

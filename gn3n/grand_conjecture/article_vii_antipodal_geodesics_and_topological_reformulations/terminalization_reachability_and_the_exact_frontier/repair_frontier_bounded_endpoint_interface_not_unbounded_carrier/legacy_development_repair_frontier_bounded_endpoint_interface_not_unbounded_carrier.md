@@ -1,7 +1,5 @@
 # Repair frontier: bounded endpoint interface, not unbounded carrier — preserved pre-item development
 
-## Development
-
 The consistent positive-word repair has reduced the former protected-filtration gap to a bounded interface problem.
 
 For a genuine reflected span-two double, the full determining span is J=C union {x,y}, with kappa_2(H[J])=2. The corridor C is either monotone 1^u0^v or rigid 1^u010^v. In the monotone branch the three legal cuts amplify endpoint reversals and allow overlapping five- and six-packet tests. Neighboring failures reduce further to one tight path R plus a six-packet S=A union {r,s}: every S-w, w in A, is Hamiltonian; R+r and R+s are Hamiltonian; every R+w, w in A, is non-Hamiltonian and hence each w reverses both displayed end edges of R. The surviving two-vertex absorption sets have union of order at most two.

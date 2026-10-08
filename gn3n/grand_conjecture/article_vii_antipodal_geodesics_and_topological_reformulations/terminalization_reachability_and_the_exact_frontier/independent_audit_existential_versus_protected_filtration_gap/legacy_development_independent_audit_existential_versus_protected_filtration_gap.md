@@ -1,7 +1,5 @@
 # Independent audit: existential versus protected filtration gap — preserved pre-item development
 
-## Development
-
 ## Independent audit: the existential/protected filtration gap remains
 
 The current composition does **not** yet justify the final genus iteration.

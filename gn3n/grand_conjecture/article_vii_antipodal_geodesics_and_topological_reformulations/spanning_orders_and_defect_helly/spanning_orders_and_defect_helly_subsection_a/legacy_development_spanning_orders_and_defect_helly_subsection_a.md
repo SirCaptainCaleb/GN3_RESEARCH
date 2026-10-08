@@ -1,7 +1,5 @@
 # Defect intervals and the exact Helly criterion — preserved pre-item development
 
-## Development
-
 ### Spanning orders and status words
 
 Let \(H\) be a boundary \(3\)-tournament on vertex set \(V\), and let

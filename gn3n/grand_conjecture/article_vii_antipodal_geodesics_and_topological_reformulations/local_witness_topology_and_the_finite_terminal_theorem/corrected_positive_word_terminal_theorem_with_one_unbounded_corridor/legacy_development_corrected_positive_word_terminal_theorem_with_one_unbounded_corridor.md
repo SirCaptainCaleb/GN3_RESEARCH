@@ -1,7 +1,5 @@
 # Corrected positive-word terminal theorem with one unbounded corridor — preserved pre-item development
 
-## Development
-
 ## Corrected positive-word terminal theorem: one explicit unbounded branch remains
 
 Use the single witness language

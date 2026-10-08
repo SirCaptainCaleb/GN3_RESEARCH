@@ -1,7 +1,5 @@
 # Reflected-double spans have deletion distance at most two — preserved pre-item development
 
-## Development
-
 ## Reflected-double spans have two-cover deletion distance at most two
 
 Let J be the full determining span of a protected positive span-two reflected double. By [[complete_positive_span_two_double_corridor_classification]],

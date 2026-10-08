@@ -1,7 +1,5 @@
 # Correction: exact violations, fixed centers, and positive windows — preserved pre-item development
 
-## Development
-
 ## Correction: absolute positive windows and auxiliary radii coincide only at fixed center
 
 The first lemma below remains valid chamberwise, but the former large-radius same-face theorem was too strong because it silently treated radius coordinates as fixed absolute positions across a face.

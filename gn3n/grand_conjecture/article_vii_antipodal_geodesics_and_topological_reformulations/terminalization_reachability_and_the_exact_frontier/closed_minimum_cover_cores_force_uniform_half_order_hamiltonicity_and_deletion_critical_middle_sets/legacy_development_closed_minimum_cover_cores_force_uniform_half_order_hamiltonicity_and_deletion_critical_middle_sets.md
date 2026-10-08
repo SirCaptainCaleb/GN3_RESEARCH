@@ -1,7 +1,5 @@
 # Closed minimum-cover cores force uniform half-order Hamiltonicity and deletion-critical middle sets — preserved pre-item development
 
-## Development
-
 ## Closed cores of minimum-imbalance covers have only a middle-rank residue
 
 Assume H has no spanning two-cover, on n vertices. For each hole, keep only deletion-cover support partitions minimizing Phi at that hole. Represent an oriented deletion facet by its dual cube edge A -> A-{x}, with x in A; its two Hamiltonian supports are A-{x} and V-A.

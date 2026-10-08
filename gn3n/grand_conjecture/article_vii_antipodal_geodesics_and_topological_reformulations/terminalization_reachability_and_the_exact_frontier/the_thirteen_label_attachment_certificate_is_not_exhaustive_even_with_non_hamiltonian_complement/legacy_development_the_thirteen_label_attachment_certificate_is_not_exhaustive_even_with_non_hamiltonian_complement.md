@@ -1,7 +1,5 @@
 # The thirteen-label attachment certificate is not exhaustive even with non-Hamiltonian complement — preserved pre-item development
 
-## Development
-
 ## The thirteen-label attachment tests are not exhaustive
 
 The conditions in [[a_four_cycle_five_support_has_a_thirteen_label_attachment_certificate]] are sufficient tests. Their simultaneous failure does not follow from the local four-cycle and complementary two-cover hypotheses as an impossibility. Here is a concrete example where every listed attachment and single-label joining test fails, the complement is non-Hamiltonian, and a different repartition gives a spanning two-cover.

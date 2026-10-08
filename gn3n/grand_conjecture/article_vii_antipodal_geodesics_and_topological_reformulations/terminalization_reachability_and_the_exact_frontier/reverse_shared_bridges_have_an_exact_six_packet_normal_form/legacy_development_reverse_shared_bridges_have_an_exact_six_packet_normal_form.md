@@ -1,7 +1,5 @@
 # Reverse shared bridges have an exact six-packet normal form — preserved pre-item development
 
-## Development
-
 ## Exact six-packet normal form in the reverse/reverse shared-bridge residue
 
 Retain the reverse/reverse configuration from [[reverse_shared_bridges_reduce_to_one_tight_path_and_a_six_vertex_packet]]. Thus

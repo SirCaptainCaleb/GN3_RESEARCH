@@ -1,7 +1,5 @@
 # Equal internal insertion slots give disturbance or rail shortening — preserved pre-item development
 
-## Development
-
 Let F_a,F_b be compatible deletion covers. On H-{a,b}, let their common ordered supports be
 P=(p_1,...,p_m) and Q.
 Assume a,b are both inserted into the same internal gap between consecutive vertices

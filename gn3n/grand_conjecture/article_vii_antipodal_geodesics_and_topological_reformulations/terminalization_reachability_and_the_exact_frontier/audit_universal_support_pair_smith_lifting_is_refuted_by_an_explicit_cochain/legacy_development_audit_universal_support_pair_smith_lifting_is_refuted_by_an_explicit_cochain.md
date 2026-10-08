@@ -1,7 +1,5 @@
 # Audit: universal support-pair Smith lifting is refuted by an explicit cochain — preserved pre-item development
 
-## Development
-
 ## Audit: universal Smith lifting fails even when a two-cover exists
 
 This audits the proposed universal transport in [[hamiltonian_support_pairs_and_smith_chains_give_a_direct_closure_target]]. Its conditional closure theorem remains correct. The stronger assertion that every boundary tournament admits the required Smith chains in the support-pair order complex is false.

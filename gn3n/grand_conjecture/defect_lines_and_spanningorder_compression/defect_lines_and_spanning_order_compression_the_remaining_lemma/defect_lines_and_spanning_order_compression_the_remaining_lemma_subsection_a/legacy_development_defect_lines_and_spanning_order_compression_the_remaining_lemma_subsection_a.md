@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 
 ### Two-cut normal form
 

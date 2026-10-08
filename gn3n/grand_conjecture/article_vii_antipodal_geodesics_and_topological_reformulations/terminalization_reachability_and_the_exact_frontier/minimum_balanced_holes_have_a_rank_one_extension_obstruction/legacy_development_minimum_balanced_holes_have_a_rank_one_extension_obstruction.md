@@ -1,7 +1,5 @@
 # Minimum balanced holes have a rank-one extension obstruction — preserved pre-item development
 
-## Development
-
 ## Minimum balanced holes have a rank-one extension obstruction
 
 Let H be a boundary 3-tournament with no spanning two-cover. Let

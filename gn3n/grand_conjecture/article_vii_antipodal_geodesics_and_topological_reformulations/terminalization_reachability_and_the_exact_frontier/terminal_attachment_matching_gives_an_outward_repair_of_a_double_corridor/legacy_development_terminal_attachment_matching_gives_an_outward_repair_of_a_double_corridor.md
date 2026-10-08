@@ -1,7 +1,5 @@
 # Terminal attachment matching gives an outward repair of a double corridor — preserved pre-item development
 
-## Development
-
 Let a protected positive span-two double have reflected starts a<b and full determining span J=[a,b+4]. Decompose its corridor into tight paths P=(p_1,...,p_s) and Q=(q_1,...,q_t), each of order at least two, and let x=v_a,y=v_{b+4} be the two exterior vertices, as in [[complete_positive_span_two_double_corridor_classification]].
 
 Form a bipartite graph with left vertices P,Q and right vertices x,y. Put an edge Te precisely when h(t_{last-1},t_last,e)=1. If this graph has a perfect matching, append the matched exterior vertex to each corridor path. The two resulting paths partition J, so their order (P,e_P,e_Q,Q^{rev}) is a two-cover order on J. This permits a global reorder of J: the exterior vertices move from the old ends to the new cut. It does not preserve the old tail pairs.

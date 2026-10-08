@@ -1,7 +1,5 @@
 # Positive alternating double occurrences have support at most eight — preserved pre-item development
 
-## Development
-
 ## Reflected positive alternating double occurrences have support at most eight
 
 The reflected-double obstruction can also be removed for the alternating type without dual polarity.

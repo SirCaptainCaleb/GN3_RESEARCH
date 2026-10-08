@@ -1,7 +1,5 @@
 # Non-rigid maximum supports can avoid any prescribed vertex pair — preserved pre-item development
 
-## Development
-
 ## Localized majority contrapositive
 
 Assume the odd uniform residue on n=2r+1 vertices and assume there is no tight path of order r+1.

@@ -1,7 +1,5 @@
 # One exterior label fills a four-cycle only by mutual adjacency to every boundary label — preserved pre-item development
 
-## Development
-
 ## Terminal-pair homotopy is natural under prefix enlargement
 
 Suppose B subset B', E' restricts to E on B, and embed P(B) in the face consisting of a fixed ordered prefix on B'-B followed by the free block B. This embeds C_E in C_{E'}.

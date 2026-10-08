@@ -1,7 +1,5 @@
 # Failed rooted endpoint absorption forces four good-deletion hooks — preserved pre-item development
 
-## Development
-
 ## Failed rooted endpoint absorption forces at least four good-deletion wrong-way hooks
 
 Let

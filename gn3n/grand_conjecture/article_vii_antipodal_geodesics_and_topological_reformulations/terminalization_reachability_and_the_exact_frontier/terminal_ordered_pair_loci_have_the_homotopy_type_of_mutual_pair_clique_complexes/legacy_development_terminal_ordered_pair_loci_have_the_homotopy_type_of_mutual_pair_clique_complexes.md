@@ -1,7 +1,5 @@
 # Terminal ordered-pair loci have the homotopy type of mutual-pair clique complexes — preserved pre-item development
 
-## Development
-
 ## Exact topology of a prescribed terminal ordered-pair locus
 
 Let B be finite with |B|>=2, and let E be a set of ordered pairs (u,v) of distinct elements of B. Let C_E be the permutahedral subcomplex consisting of those faces every chamber of which has its last ordered pair in E.

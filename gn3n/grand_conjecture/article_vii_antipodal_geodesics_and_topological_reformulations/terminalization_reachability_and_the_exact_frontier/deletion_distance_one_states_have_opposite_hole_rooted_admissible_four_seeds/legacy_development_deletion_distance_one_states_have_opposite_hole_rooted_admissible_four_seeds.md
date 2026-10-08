@@ -1,7 +1,5 @@
 # Deletion-distance-one states have opposite hole-rooted admissible four-seeds — preserved pre-item development
 
-## Development
-
 ## Deletion-distance-one states have canonical admissible four-seeds at both ends
 
 Assume (H) has no spanning two-cover and

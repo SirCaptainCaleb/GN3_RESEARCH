@@ -1,7 +1,5 @@
 # Double blocked boundary shells collapse to an explicit order-ten cap — preserved pre-item development
 
-## Development
-
 ## Double blocked boundary shells collapse to an explicit order-ten cap
 
 Let G be a genuine two-deletion state. Suppose G-{x,y}=P|Q, where P=(p_1,...,p_s) and Q=(q_1,...,q_t), with s,t at least 4. Assume x,y have the same initial fixed-pair signature and the same terminal fixed-pair signature. Then K_I={x,y,p_1,q_1} and K_T={x,y,p_s,q_t} are Hamiltonian four-supports.

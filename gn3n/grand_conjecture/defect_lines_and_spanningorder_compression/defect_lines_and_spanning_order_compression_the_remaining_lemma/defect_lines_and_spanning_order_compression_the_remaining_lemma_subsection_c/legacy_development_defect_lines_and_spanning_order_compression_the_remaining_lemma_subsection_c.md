@@ -1,7 +1,5 @@
 # Slot synchronization reductions — preserved pre-item development
 
-## Development
-
 ### Central slots and opposite endpoint slots
 
 The nine slot pairs left by Lemma 26 separate into two immediate structural classes.

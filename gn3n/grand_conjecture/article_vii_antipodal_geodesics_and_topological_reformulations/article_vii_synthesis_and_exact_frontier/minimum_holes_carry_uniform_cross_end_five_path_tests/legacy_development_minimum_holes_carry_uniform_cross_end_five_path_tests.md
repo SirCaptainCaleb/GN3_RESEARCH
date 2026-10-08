@@ -1,7 +1,5 @@
 # Minimum holes carry uniform cross-end five-path tests — preserved pre-item development
 
-## Development
-
 ## Absolute nonaugmentability forces two additional cross-end relations
 
 Let

@@ -1,7 +1,5 @@
 # Exclusive disjoint terminal windows are adjacent without dual polarity — preserved pre-item development
 
-## Development
-
 ## The exclusive disjoint branch has adjacent windows without using dual polarity
 
 The numerical compression of a genuinely exclusive disjoint carrier can be salvaged without declaring that carrier impossible.

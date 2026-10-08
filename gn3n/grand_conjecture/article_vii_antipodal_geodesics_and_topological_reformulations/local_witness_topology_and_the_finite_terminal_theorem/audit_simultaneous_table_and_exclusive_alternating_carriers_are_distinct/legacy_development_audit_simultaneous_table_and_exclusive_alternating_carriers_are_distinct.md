@@ -1,7 +1,5 @@
 # Audit: simultaneous table and exclusive alternating carriers are distinct — preserved pre-item development
 
-## Development
-
 ## A simultaneous-occurrence table proves a different claim
 
 The antipodality observation in [[positive_word_filtration_is_antipodal_and_exclusive_alternating_windows_collapse]] is correct: reverse-complement preserves \(001,011,0101\), so a positive-word filtration is consistent with chamber reversal.

@@ -1,7 +1,5 @@
 # Coordinatewise pruning and the pure terminal core — preserved pre-item development
 
-## Development
-
 ## Coordinatewise pruning reduces terminalization to pure one-edge carriers
 
 The fixed-path local-witness labels are signed basis vectors:

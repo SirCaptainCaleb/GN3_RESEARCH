@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 **Lemma 1.** Let \(a+b=s\) and \(a',b'>0\) with \(a'+b'=s\). Then
 \[
 (a')^2+(b')^2<a^2+b^2

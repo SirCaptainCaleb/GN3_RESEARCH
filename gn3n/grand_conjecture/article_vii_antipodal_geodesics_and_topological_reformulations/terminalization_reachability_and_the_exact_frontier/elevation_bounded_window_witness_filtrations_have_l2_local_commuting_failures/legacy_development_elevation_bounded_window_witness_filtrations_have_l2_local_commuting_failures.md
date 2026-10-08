@@ -1,7 +1,5 @@
 # Elevation: bounded-window witness filtrations have L+2-local commuting failures — preserved pre-item development
 
-## Development
-
 ## General locality principle for protected commuting cubes
 
 Let a local witness filtration on spanning orders be defined by a family (mathcal W) of forbidden configurations such that every witness is determined by an interval of at most (L) consecutive vertex positions.

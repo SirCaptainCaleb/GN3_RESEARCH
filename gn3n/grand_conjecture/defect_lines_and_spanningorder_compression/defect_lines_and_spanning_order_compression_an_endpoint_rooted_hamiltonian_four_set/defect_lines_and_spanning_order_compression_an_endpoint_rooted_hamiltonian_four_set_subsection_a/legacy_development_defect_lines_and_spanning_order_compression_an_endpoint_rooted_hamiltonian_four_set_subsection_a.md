@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Suppose
 \[
 W\mid P\mid Q

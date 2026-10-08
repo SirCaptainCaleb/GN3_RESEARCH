@@ -1,7 +1,5 @@
 # Surviving terminal-pair four-cycles force a six-root robust common core — preserved pre-item development
 
-## Development
-
 ## A surviving terminal-pair four-cycle forces a six-root robust common four-core
 
 Let

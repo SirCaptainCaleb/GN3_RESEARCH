@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A three-cover
 \[
 P_1\mid P_2\mid P_3

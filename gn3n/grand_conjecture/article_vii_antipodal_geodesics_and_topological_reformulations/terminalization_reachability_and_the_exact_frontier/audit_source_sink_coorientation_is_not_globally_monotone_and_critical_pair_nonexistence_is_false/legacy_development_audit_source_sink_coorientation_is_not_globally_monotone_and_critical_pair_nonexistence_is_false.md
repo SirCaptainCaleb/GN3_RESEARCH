@@ -1,7 +1,5 @@
 # Audit: source-sink coorientation is not globally monotone and critical-pair nonexistence is false — preserved pre-item development
 
-## Development
-
 ## Audit of the monotone-separator and critical-pair closure claims
 
 This audits subsection 261, in the context of the valid source/sink and square-cocycle statements in 258-259.

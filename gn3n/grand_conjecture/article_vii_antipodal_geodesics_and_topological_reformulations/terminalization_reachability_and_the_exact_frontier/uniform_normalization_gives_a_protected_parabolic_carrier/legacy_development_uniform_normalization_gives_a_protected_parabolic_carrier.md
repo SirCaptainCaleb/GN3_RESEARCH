@@ -1,7 +1,5 @@
 # Uniform normalization gives a protected parabolic carrier — preserved pre-item development
 
-## Development
-
 ## Higher-dimensional Coxeter extension from a uniform protected normalization
 
 The higher-face issue in [[independent_audit_existential_versus_protected_filtration_gap]] has a clean resolution once a separator face admits one **uniform** terminal normalization.

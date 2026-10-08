@@ -1,7 +1,5 @@
 # The maximal-support seed lies in the central six witness band — preserved pre-item development
 
-## Development
-
 ## The universal maximal-support seed lies inside the central six-label witness band
 
 Retain a genuine minimum deletion pair

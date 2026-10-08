@@ -1,7 +1,5 @@
 # Correction: minimum holes have four-end synchronization and bidirectional root-advance certificates — preserved pre-item development
 
-## Development
-
 ## Correction: minimum holes are four-end synchronized and three-hole cores have bidirectional one-step root advance
 
 Let

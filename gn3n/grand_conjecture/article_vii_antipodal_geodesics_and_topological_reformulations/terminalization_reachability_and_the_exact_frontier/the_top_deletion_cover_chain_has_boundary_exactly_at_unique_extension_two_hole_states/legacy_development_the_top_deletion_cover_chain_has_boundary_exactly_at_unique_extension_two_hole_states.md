@@ -1,7 +1,5 @@
 # The top deletion-cover chain has boundary exactly at unique-extension two-hole states — preserved pre-item development
 
-## Development
-
 ## The top deletion-cover chain has boundary exactly at unique-extension two-hole states
 
 Assume \(H\) has no spanning two-cover.

@@ -1,7 +1,5 @@
 # Odd cycle forces bounded support — preserved pre-item development
 
-## Development
-
 
 ### The spanning odd cycle immediately yields bounded support
 

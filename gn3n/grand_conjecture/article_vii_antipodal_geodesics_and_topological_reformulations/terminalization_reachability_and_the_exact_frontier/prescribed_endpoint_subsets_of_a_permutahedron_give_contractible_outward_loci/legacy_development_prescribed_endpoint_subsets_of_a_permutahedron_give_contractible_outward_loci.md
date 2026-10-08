@@ -1,7 +1,5 @@
 # Prescribed endpoint subsets of a permutahedron give contractible outward loci — preserved pre-item development
 
-## Development
-
 ## A contractible locus for one varying boundary vertex
 
 Let B be a nonempty finite set, let P(B) be its permutahedron, and let S subset B. Define C_S to be the subcomplex consisting of faces every one of whose chamber orders ends in a vertex of S.

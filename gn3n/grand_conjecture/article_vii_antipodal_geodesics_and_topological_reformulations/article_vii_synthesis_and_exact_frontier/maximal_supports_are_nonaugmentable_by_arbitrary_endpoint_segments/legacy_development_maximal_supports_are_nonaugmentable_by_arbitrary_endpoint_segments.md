@@ -1,7 +1,5 @@
 # Maximal supports are nonaugmentable by arbitrary endpoint segments — preserved pre-item development
 
-## Development
-
 ## Maximal supports are nonaugmentable by arbitrary endpoint segments
 
 Let

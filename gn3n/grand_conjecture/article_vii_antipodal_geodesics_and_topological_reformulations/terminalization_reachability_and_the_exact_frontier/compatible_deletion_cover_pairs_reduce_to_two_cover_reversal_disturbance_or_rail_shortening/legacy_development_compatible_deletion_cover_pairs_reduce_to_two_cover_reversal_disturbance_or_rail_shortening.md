@@ -1,7 +1,5 @@
 # Compatible deletion-cover pairs reduce to two-cover, reversal, disturbance, or rail shortening — preserved pre-item development
 
-## Development
-
 Let H be a minimum counterexample and let F_a,F_b be deletion covers of H-a and H-b.
 
 If their restricted support partitions agree but their common-support orders disagree, the order-disagreement theorem yields a displayed-edge reversal.

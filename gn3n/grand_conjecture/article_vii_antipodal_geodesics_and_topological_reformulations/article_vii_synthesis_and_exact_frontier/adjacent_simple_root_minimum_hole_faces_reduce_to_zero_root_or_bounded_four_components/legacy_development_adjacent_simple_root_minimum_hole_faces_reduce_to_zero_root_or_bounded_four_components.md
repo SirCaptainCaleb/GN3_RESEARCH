@@ -1,7 +1,5 @@
 # Correction: adjacent-simple-root minimum-hole faces flip sign or enter the bounded interface — preserved pre-item development
 
-## Development
-
 ## Correction: adjacent-simple-root transport flips the root sign
 
 Let X be a minimum two-cover deletion set of order k, and let

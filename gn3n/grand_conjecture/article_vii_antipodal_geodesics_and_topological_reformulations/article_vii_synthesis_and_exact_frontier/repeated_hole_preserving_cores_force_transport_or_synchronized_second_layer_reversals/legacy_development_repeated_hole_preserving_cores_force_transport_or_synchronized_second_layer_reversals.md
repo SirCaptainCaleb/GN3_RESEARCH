@@ -1,7 +1,5 @@
 # Repeated hole-preserving cores force transport or synchronized second-layer reversals — preserved pre-item development
 
-## Development
-
 ## Repeated hole-preserving cores force transport or synchronized second-layer reversals
 
 Retain the setup of [[four_exposed_endpoints_force_a_repeated_hole_preserving_core]]. Thus

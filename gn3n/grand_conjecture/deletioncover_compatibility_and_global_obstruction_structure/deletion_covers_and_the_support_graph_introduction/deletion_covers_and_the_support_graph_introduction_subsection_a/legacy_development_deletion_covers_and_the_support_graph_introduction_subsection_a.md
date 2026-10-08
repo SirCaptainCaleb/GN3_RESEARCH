@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
 \[
 (v_1,\ldots ,v_m)

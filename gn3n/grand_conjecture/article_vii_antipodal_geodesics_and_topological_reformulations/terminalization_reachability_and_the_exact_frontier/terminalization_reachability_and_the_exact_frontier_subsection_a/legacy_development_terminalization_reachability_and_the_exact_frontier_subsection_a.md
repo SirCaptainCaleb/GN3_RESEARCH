@@ -1,7 +1,5 @@
 # Current closure frontier — preserved pre-item development
 
-## Development
-
 The geodesic program now has a sharply separated finite and global structure.
 
 ### What is already closed

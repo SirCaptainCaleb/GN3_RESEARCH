@@ -1,7 +1,5 @@
 # Correction: minimum-pair nonaugmentability empties the split-routing Hall graph — preserved pre-item development
 
-## Development
-
 ## Correction/elevation: the split-attachment Hall graph is empty for a minimum pair
 
 Retain the setup of [[two_tail_split_routing_is_an_exact_hall_problem]] with minimum deletion pair

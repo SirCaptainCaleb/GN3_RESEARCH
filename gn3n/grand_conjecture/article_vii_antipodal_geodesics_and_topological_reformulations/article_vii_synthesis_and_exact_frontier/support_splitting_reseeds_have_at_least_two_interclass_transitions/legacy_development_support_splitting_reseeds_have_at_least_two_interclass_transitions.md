@@ -1,7 +1,5 @@
 # Support-splitting reseeds have at least two interclass transitions — preserved pre-item development
 
-## Development
-
 ## Genuine support-splitting reseeds have at least two interclass comparison edges
 
 Retain the setup of [[support_splitting_seam_reseeds_are_exactly_comparison_disturbances]]:

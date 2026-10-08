@@ -1,7 +1,5 @@
 # Seven-vertex deletion graph couples overlapping packet failures — preserved pre-item development
 
-## Development
-
 Let W be a seven-vertex set in a boundary tournament. Define an ordinary graph G_W on W by
 iv in E(G_W) if and only if H[W-{i,v}] is non-Hamiltonian.
 Then Delta(G_W)<=2.

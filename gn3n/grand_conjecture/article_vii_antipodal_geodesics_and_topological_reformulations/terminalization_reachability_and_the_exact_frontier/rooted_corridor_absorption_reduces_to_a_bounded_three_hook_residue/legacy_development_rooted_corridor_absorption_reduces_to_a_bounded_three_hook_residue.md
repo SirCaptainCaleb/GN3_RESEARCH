@@ -1,7 +1,5 @@
 # Rooted corridor absorption reduces to a bounded three-hook residue — preserved pre-item development
 
-## Development
-
 ## Rooted corridor absorption reduces to a three-hook residue
 
 The rooted endpoint problem from [[reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces]] admits a useful finite reduction using the prescribed-endpoint seven-set theorem in [[localextend01]].

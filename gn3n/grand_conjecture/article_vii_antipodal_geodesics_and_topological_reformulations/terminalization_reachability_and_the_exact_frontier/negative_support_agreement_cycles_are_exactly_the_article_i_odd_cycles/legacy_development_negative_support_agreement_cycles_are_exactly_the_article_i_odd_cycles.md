@@ -1,7 +1,5 @@
 # Negative support-agreement cycles are exactly the Article I odd cycles — preserved pre-item development
 
-## Development
-
 ## A negative spanning support-agreement cycle is exactly the old odd support-cycle geometry
 
 Let \(H\) be a minimum counterexample, choose one deletion cover \(F_x\) for every hole \(x\), and let \(G\) be the support-agreement graph of [[two_connected_support_agreement_closes_except_for_a_negatively_signed_spanning_cycle]].

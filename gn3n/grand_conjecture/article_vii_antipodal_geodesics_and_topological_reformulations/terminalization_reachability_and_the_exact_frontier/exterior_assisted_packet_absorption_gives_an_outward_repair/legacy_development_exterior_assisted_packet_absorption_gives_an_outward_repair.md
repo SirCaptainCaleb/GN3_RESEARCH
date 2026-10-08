@@ -1,7 +1,5 @@
 # Exterior-assisted packet absorption gives an outward repair — preserved pre-item development
 
-## Development
-
 ## One exterior vertex can turn a packet bridge into an enlarged-window outward repair
 
 Let \(J\) be the full determining interval of a protected positive reflected double at witness depth \(r\). Let \(z\notin J\) be the immediately adjacent source-order vertex on either side of \(J\), and put

@@ -1,7 +1,5 @@
 # Minimum pairs have a cross-boundary hole-containing seed with inherited two-path complement — preserved pre-item development
 
-## Development
-
 ## Every minimum pair has a cross-boundary hole-containing Hamiltonian seed
 
 Let

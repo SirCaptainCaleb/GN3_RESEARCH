@@ -1,7 +1,5 @@
 # Genuine two-deletion corridors start at order twelve — preserved pre-item development
 
-## Development
-
 Assume the established theorem that every boundary tournament of order at most ten has a two-cover. If kappa_2(H[J])=2, then |J|>=12. Indeed for |J|<=11, deleting any one vertex leaves a tournament of order at most ten and hence a two-cover; thus kappa_2<=1. This sharpens the order-at-least-eleven statement in [[genuine_two_deletion_doubles_have_both_corridor_paths_of_order_at_least_four]]. It does not assert that all eleven-vertex tournaments themselves have two-covers.
 
 For a monotone positive corridor with status word 1^u0^v, the three legal cuts j=u,u+1,u+2 give corridor paths of orders

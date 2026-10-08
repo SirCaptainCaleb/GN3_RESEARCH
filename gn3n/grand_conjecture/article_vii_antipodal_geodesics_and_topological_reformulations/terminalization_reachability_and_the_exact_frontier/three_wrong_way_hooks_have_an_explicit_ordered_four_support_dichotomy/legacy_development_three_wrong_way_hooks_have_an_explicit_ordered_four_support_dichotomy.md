@@ -1,7 +1,5 @@
 # Three wrong-way hooks have an explicit ordered four-support dichotomy — preserved pre-item development
 
-## Development
-
 ## Three wrong-way hooks have an explicit ordered four-support dichotomy
 
 Let \(x,y,t_1,t_2,t_3\) be distinct vertices and assume

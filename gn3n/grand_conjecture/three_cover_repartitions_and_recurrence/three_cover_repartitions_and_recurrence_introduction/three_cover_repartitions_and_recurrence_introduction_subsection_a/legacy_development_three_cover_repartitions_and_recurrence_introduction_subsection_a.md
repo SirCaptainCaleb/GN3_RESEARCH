@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
 
 Let \(\mathcal R(H)\) be the graph whose vertices are spanning three-covers of \(H\). Two vertices of \(\mathcal R(H)\) are adjacent when one is obtained from the other by a pairwise repartition. For

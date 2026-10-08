@@ -1,7 +1,5 @@
 # Protected-carrier separator and the acyclic-carrier reduction — preserved pre-item development
 
-## Development
-
 ## Protected-carrier filtration and the exact separator obligation
 
 The existential face-poset filtration in the current composition is not, by itself, sufficient for iteration. If

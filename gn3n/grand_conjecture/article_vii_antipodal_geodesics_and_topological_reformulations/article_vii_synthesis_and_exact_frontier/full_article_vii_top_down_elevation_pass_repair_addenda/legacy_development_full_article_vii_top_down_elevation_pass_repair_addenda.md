@@ -1,7 +1,5 @@
 # Full Article VII top-down elevation pass: repair addenda — preserved pre-item development
 
-## Development
-
 ## Top-down elevation pass over the recent Article VII repair addenda
 
 This continues [[full_article_vii_top_down_elevation_pass_composed_results]] through the post-composition repair chain. The order below follows the repair chronology. Corrections and counterexamples are treated as successful elevation when they identify the correct invariant.

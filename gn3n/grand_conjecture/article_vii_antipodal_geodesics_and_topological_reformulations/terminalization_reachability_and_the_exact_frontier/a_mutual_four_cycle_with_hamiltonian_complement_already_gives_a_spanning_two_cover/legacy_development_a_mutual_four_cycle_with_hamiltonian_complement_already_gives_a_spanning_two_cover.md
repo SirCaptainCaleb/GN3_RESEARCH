@@ -1,7 +1,5 @@
 # A mutual four-cycle with Hamiltonian complement already gives a spanning two-cover — preserved pre-item development
 
-## Development
-
 ## A mutual four-cycle with Hamiltonian complement already gives a spanning two-cover
 
 Let H be any finite boundary tournament. Let B={a,b,c,d} and z be five distinct vertices. Suppose the mutual terminal-pair graph before z contains the cycle a-b-c-d-a:

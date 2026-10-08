@@ -1,7 +1,5 @@
 # Minimum-degree full stars force uniform exterior polarity — preserved pre-item development
 
-## Development
-
 ## Minimum source degree forces uniform polarity across every exterior coordinate
 
 Let C be a nonempty pure source-sink cubical 1-cocycle arising from the surviving one-hole deletion-cover core of a minimum counterexample.

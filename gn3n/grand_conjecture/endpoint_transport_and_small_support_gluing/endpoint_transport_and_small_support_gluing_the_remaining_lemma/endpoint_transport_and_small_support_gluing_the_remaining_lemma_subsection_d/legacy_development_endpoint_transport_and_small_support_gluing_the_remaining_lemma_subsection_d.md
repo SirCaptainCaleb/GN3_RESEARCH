@@ -1,7 +1,5 @@
 # Junction-rooted four-support — preserved pre-item development
 
-## Development
-
 ### The four-support can retain the deleted label at a Hamiltonian endpoint
 
 **Lemma 16 (junction-rooted four-support).** Let

@@ -1,7 +1,5 @@
 # Two opposite nonzero exits admit independent two-label repair — preserved pre-item development
 
-## Development
-
 ## Two opposite nonzero exits can be repaired independently by two exterior labels
 
 Let

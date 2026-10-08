@@ -1,7 +1,5 @@
 # Fixed Hamiltonian four-core extension deserts activate four isolated-root stars — preserved pre-item development
 
-## Development
-
 ## A fixed Hamiltonian four-core extension desert activates four isolated-root stars
 
 Let \(A\) be a Hamiltonian four-set in a boundary tournament \(H\), and let

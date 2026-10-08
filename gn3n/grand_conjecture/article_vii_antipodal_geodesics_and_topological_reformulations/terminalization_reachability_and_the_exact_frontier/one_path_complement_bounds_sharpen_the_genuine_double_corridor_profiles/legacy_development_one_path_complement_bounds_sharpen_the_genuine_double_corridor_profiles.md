@@ -1,7 +1,5 @@
 # One path complement bounds sharpen the genuine double corridor profiles — preserved pre-item development
 
-## Development
-
 ## Every corridor component has at least five vertices
 
 Suppose kappa_2(H[J])=2 and deleting x,y leaves a two-cover P|Q of the corridor C. If |P|<=4, the set V(P) union {x,y} has order at most six. By [[genuine_two_deletion_obstructions_have_no_small_packet_tail_connectors]], some deletion of at most one vertex makes that set Hamiltonian. Its Hamilton path together with Q two-covers J after at most one deletion, contradicting kappa_2=2. Thus |P|>=5, and symmetrically |Q|>=5.

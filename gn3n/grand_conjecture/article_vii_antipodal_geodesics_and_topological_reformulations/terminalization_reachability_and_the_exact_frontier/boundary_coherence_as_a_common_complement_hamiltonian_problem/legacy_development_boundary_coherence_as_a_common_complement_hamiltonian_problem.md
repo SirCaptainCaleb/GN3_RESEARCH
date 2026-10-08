@@ -1,7 +1,5 @@
 # Boundary coherence as a common-complement Hamiltonian problem — preserved pre-item development
 
-## Development
-
 ## Boundary coherence reduces to a common complementary Hamiltonian pair problem
 
 Consider the only nontrivial rank-two coherence situation left after terminal edge reduction: two bounded terminal supports differ by one boundary vertex. Write

@@ -1,7 +1,5 @@
 # Protected parabolic carriers reduce the global gap to adjacent-window gluing — preserved pre-item development
 
-## Development
-
 ## Protected parabolic carriers and the exact global gluing frontier
 
 The existential carrier used in the current composition is unnecessarily weak on any region where one normalization window can be held fixed.

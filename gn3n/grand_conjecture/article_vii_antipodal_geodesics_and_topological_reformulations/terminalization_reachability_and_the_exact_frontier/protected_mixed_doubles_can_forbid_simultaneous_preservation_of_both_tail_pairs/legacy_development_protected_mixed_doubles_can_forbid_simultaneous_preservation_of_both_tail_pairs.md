@@ -1,7 +1,5 @@
 # Protected mixed doubles can forbid simultaneous preservation of both tail pairs — preserved pre-item development
 
-## Development
-
 The two-tail interface target must permit more than independent prefix absorption.
 
 Construction. Take disjoint sets U=P union Q and E={x,y}, with displayed paths P=(p_1,...,p_s), Q=(q_1,...,q_t), s,t>=4. Prescribe their displayed internal triples tight. For every e in E and every ordered pair of distinct u,v in U, set h(u,v,e)=1, and hence h(e,v,u)=0. Equivalently every triple with an exterior vertex first and two corridor vertices next is non-tight. These prescriptions are consistent: all their boundary reversals have an exterior vertex first, and the original prescriptions have one last. The middle-exterior pairs can be completed arbitrarily.

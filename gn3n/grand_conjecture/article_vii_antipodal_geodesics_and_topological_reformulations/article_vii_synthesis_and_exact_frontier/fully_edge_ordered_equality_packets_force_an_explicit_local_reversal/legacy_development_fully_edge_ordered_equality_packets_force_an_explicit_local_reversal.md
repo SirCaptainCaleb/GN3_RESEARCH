@@ -1,7 +1,5 @@
 # Fully edge-ordered equality packets force an explicit local reversal — preserved pre-item development
 
-## Development
-
 ## Fully edge-ordered four-of-six equality packets force an explicit local reversal
 
 Let \(U\) be a six-vertex four-of-six equality packet: \(H[U]\) is non-Hamiltonian and exactly four one-vertex deletions are Hamiltonian. Assume moreover that \(H[U]\) is edge-orderable.

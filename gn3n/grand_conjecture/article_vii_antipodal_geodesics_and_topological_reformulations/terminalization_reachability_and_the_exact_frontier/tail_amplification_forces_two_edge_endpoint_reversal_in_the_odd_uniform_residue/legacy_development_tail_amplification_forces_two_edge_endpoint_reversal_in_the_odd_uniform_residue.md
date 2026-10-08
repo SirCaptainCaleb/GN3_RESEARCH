@@ -1,7 +1,5 @@
 # Tail amplification forces two-edge endpoint reversal in the odd uniform residue — preserved pre-item development
 
-## Development
-
 ## Tail amplification across disjoint maximum paths
 
 Assume the odd uniform middle-layer state on

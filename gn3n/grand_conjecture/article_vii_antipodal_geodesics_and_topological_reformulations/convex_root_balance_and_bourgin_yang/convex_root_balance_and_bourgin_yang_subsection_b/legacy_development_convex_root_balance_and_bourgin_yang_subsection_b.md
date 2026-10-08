@@ -1,7 +1,5 @@
 # Positive balance on every chamber and the switch-separation bound — preserved pre-item development
 
-## Development
-
 ### Explicit odd root maps and positive carrier balance
 
 Assume \(H\) has no spanning two-cover and put \(m=n-2\).

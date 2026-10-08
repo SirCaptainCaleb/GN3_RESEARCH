@@ -1,7 +1,5 @@
 # Dense exchange matrix for the maximal braid — preserved pre-item development
 
-## Development
-
 ## A dense exchange matrix for the maximal braid
 
 Work in the residual order-eleven braid configuration

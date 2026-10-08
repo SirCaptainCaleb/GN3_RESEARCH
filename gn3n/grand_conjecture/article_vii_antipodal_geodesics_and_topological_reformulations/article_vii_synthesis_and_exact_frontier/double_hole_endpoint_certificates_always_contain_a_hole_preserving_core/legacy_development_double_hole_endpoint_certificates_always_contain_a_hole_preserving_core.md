@@ -1,7 +1,5 @@
 # Double-hole endpoint certificates always contain a hole-preserving core — preserved pre-item development
 
-## Development
-
 ## Double-hole endpoint certificates always contain a hole-preserving core
 
 Let \(Y\) be a Hamiltonian five-set with distinguished labels \(x,y\), and put

@@ -1,7 +1,5 @@
 # Correction: order-two descent requires an independently rooted four-support — preserved pre-item development
 
-## Development
-
 ## Correction: previous descent claim withdrawn
 
 Development version 1 of this subsection is invalid. It used the implication

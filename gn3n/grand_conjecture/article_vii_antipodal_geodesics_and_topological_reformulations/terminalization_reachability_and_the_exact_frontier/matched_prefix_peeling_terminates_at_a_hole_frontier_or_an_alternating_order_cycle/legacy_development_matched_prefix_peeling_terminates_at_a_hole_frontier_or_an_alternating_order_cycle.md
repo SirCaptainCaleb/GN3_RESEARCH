@@ -1,7 +1,5 @@
 # Matched-prefix peeling terminates at a hole frontier or an alternating order cycle — preserved pre-item development
 
-## Development
-
 ## Matched-prefix peeling terminates at a hole frontier or an alternating order cycle
 
 Let

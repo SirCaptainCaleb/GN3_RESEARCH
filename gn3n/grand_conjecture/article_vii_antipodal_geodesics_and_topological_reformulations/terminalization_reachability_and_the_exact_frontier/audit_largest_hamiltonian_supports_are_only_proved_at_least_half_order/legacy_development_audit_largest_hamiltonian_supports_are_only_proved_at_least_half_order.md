@@ -1,7 +1,5 @@
 # Audit: largest Hamiltonian supports are only proved at least half-order — preserved pre-item development
 
-## Development
-
 ## Audit: the largest-support argument gives only a half-order lower bound
 
 The development in [[largest_hamiltonian_supports_in_minimum_counterexamples_have_half_order]] correctly proves the following.

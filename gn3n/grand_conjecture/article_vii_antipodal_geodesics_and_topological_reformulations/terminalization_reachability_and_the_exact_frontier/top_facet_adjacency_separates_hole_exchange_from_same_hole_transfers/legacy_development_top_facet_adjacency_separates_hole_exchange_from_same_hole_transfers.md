@@ -1,7 +1,5 @@
 # Top-facet adjacency separates hole exchange from same-hole transfers — preserved pre-item development
 
-## Development
-
 ## Top-facet adjacency separates hole exchange from same-hole transfer
 
 Assume H has no spanning two-cover, on n vertices. Let E(H) be the signed downward-closure complex of disjoint nonempty Hamiltonian support pairs, as in subsection 243. Let E_top be the union of its simplices of total support n-1 and all their faces; in a minimum counterexample these simplices are exactly the oriented deletion-cover support pairs.

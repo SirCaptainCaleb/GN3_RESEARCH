@@ -1,7 +1,5 @@
 # Maximal ten-support endpoint braids are impossible — preserved pre-item development
 
-## Development
-
 ## Maximal ten-support endpoint braids are impossible
 
 The sole braid left by [[rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains]] cannot actually occur as a terminal sign-flip residue.

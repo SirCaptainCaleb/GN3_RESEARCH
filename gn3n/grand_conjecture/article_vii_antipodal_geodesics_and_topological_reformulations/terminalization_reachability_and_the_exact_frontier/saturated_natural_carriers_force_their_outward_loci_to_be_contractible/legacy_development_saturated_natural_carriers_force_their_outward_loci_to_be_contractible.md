@@ -1,7 +1,5 @@
 # Saturated natural carriers force their outward loci to be contractible — preserved pre-item development
 
-## Development
-
 ## Saturated natural carriers force contractibility
 
 Fix a protected witness depth and put D(F)=F intersect X_{r+1}. Let Q be a poset of proper protected faces. Suppose F belongs to Q and every outward face G subset F also belongs to Q. Here “outward face” means G subset X_{r+1}, so D(G)=G.

@@ -1,7 +1,5 @@
 # Terminal support surgery gives a genuine outward escape — preserved pre-item development
 
-## Development
-
 
 ### Terminal support surgery gives a genuine outward escape
 

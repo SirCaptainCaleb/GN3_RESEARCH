@@ -1,7 +1,5 @@
 # A whole maximum support is forced to have non-rigid initial pairs — preserved pre-item development
 
-## Development
-
 ## The majority theorem has a supportwise contrapositive
 
 Assume the odd uniform residue on n=2r+1 vertices and suppose, for contradiction, that no tight path of order r+1 exists.

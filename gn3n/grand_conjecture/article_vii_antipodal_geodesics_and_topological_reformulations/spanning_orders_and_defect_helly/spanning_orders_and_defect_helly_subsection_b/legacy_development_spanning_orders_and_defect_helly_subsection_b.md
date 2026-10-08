@@ -1,7 +1,5 @@
 # Exact inversion-window criterion — preserved pre-item development
 
-## Development
-
 ### Exact inversion-window criterion
 
 There is a sharper order-relative formulation of the two-cover problem than the extreme-switch compression.

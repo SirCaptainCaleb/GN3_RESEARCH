@@ -1,7 +1,5 @@
 # Central-pair gauge removes endpoint-block sign changes — preserved pre-item development
 
-## Development
-
 ## Central-pair gauge strengthens localization
 
 The local gauge in [[local_span_gauge_localizes_terminal_tie_break_sign_flips]] can be made independent even of terminal-span endpoint exchanges.

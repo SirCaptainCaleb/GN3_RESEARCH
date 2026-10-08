@@ -1,7 +1,5 @@
 # Arbitrarily large boundary blocks can change the selected positive witness sign — preserved pre-item development
 
-## Development
-
 The protected corridor intersection bound does not make boundary blocks sign-neutral.
 
 For any N>=4 and d>=6 set a=N-3, b=a+d, n=a+b+3=2N+d-3, and m=n-2. Let F have one freely permutable block B of N vertices in the first N positions, followed by singleton vertices z_1,...,z_{n-N}. The protected corridor C=[a+1,b+3] meets B in exactly its last three positions.

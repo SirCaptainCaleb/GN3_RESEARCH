@@ -1,7 +1,5 @@
 # Correction: rooted four-core extension is not automatic — preserved pre-item development
 
-## Development
-
 ## Correction to the rooted-four-core reduction
 
 The Hamiltonian (5|4) core lemma in [[order_nine_bridge_reduces_to_rooted_four_core_synchronization]] is valid, but the subsequent claimed automatic rooted extension of the entire four-side (A) by each exterior vertex is **not justified**.

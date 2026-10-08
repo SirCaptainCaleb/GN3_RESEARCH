@@ -1,7 +1,5 @@
 # Seven-set handoff requires terminal neighbors and cannot reverse an endpoint path — preserved pre-item development
 
-## Development
-
 ## The seven-set endpoint handoff needs terminal, not unoriented, neighbors
 
 The proof in [[seven_set_endpoint_handoff_either_absorbs_a_tail_or_advances_the_root]] says to orient a Hamilton order with prescribed endpoint c_2 so that its final two vertices are t_i,c_2. This does not follow from a prescribed-endpoint theorem for boundary tournaments.

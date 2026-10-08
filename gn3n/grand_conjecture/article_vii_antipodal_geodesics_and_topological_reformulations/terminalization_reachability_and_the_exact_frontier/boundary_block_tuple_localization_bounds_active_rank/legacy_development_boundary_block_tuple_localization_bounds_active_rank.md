@@ -1,7 +1,5 @@
 # Boundary-block tuple localization bounds active rank — preserved pre-item development
 
-## Development
-
 Let F be protected at positive witness depth r, and restrict to chambers whose selected unsigned edge remains e_r. Suppose a boundary face block B meets a depth-r determining window in its final k positions, k<=4, with all other block orders fixed.
 
 Lemma. The signed depth-r label depends on the order of B only through the ordered k-tuple occupying those final k positions.

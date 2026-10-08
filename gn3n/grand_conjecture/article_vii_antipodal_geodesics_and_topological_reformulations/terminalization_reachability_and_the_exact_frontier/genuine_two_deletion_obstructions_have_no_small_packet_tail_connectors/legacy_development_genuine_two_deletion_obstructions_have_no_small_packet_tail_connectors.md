@@ -1,7 +1,5 @@
 # Genuine two deletion obstructions have no small packet tail connectors — preserved pre-item development
 
-## Development
-
 ## A one-path complement bound
 
 Let R be any tight path in a boundary tournament H, and let E=V(H)-V(R). If deleting at most t vertices from H[E] makes E Hamiltonian, then kappa_2(H)<=t: use that Hamilton path together with R. This is an explicit cover construction, not a minimum-counterexample argument.

@@ -1,7 +1,5 @@
 # Separated and adjacent insertion gaps give genuine unbounded path augmentation — preserved pre-item development
 
-## Development
-
 Let H be a boundary 3-tournament with maximum tight-path order r, and let D=(d_1,...,d_{r-1}) be a displayed tight path. Number its insertion gaps 0,...,r-1, including both endpoints. For y outside D let I(y) be the set of gaps at which inserting y into this displayed word gives a tight r-path. This is an ordered-path notion; Hamiltonicity of the support D+y does not imply I(y) is nonempty.
 
 Separated-gap augmentation. If distinct x,y have i in I(x), j in I(y), and |i-j|>=2, insert both vertices into these gaps. Every consecutive triple is either inherited from D or from one of the two single insertions: no consecutive triple contains both new vertices. Thus the resulting word is a genuine tight (r+1)-path, contradicting maximality. This uses the sufficiency of the triple-local path definition and retains the entire old path.

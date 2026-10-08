@@ -1,7 +1,5 @@
 # Zero root makes omission-swap recurrence exactly balance-preserving — preserved pre-item development
 
-## Development
-
 Let H be a minimum counterexample on n=2r+1 vertices and let F_x=P|Q be a balanced deletion cover of H-x, |P|=|Q|=r, supplied by the zero exact-root theorem. For each label v choose a deletion cover F_v of H-v minimizing the two-component quadratic potential, and choose F_x to be the balanced one.
 
 The singleton lift F_x|{x} has

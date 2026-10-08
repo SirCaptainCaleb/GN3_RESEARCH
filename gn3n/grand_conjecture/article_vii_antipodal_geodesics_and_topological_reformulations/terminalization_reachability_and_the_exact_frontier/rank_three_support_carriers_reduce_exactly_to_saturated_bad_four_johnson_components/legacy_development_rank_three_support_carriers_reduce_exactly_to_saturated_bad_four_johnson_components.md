@@ -1,7 +1,5 @@
 # Rank-three support carriers reduce exactly to saturated bad-four Johnson components — preserved pre-item development
 
-## Development
-
 ## The first higher carrier obstruction is a saturated Johnson component of bad four-sets
 
 Let W be a finite vertex set. Define X_4(W) to be the simplicial complex containing every subset of W of order at most three, together with a 3-simplex on every Hamiltonian four-set of H[W]. This is well-defined because every set of order at most three is Hamiltonian.

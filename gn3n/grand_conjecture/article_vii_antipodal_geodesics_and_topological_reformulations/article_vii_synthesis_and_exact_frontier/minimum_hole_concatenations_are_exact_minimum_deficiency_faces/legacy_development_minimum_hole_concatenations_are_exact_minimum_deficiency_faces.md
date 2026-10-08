@@ -1,7 +1,5 @@
 # Minimum-hole concatenations are exact minimum-deficiency faces — preserved pre-item development
 
-## Development
-
 ## Minimum-hole concatenations attain the deletion distance exactly
 
 Let X be a minimum two-cover deletion set in a boundary tournament H, with |X|=k, and fix a displayed two-cover

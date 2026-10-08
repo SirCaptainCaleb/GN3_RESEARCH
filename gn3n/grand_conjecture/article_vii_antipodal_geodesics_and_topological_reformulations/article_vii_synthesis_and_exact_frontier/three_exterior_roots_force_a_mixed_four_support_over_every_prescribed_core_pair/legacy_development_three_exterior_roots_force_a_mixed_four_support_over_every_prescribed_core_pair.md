@@ -1,7 +1,5 @@
 # Three exterior roots force a mixed four-support over every prescribed core pair — preserved pre-item development
 
-## Development
-
 ## Analytic strengthening: three exterior roots force a mixed Hamiltonian four-support over every prescribed core pair
 
 Let \(C\) be any vertex set with at least two vertices, let

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Suppose a state in \(\mathcal C\) has the form
 \[
 X\mid P\mid Q,

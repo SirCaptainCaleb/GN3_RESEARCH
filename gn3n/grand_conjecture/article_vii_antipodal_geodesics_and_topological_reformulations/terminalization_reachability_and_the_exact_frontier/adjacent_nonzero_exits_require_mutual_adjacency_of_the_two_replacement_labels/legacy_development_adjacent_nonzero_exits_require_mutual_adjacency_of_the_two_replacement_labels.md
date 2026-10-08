@@ -1,7 +1,5 @@
 # Adjacent nonzero exits require mutual adjacency of the two replacement labels — preserved pre-item development
 
-## Development
-
 ## Adjacent nonzero exits require a relation between the two replacement labels
 
 Let B={a,b,c,d} have mutual terminal-pair graph the chordless cycle a-b-c-d-a before z. Assume

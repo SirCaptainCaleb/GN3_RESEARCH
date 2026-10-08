@@ -1,7 +1,5 @@
 # Universal gauge does not bypass terminalization — preserved pre-item development
 
-## Development
-
 ## Universal external sign does not remove the terminalization problem
 
 Consider redefining the sign of every selected unsigned witness edge by one fixed odd gauge on chambers, rather than using intrinsic occurrence orientation.

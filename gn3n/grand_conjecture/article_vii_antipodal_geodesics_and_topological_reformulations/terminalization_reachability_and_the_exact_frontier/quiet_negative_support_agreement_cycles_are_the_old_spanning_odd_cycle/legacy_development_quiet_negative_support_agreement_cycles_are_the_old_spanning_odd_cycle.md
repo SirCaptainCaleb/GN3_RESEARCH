@@ -1,7 +1,5 @@
 # Quiet negative support agreement cycles are the old spanning odd cycle — preserved pre-item development
 
-## Development
-
 ## A quiet negative support-agreement cycle is exactly the old spanning odd-cycle support geometry
 
 Let \(H\) be a minimum counterexample and choose one deletion cover

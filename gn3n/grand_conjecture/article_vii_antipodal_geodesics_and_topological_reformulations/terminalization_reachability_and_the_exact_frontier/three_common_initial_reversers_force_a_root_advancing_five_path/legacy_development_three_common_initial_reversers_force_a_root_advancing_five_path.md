@@ -1,7 +1,5 @@
 # Three common initial reversers force a root-advancing five-path — preserved pre-item development
 
-## Development
-
 Let
 [
 P=(p_1,p_2,ldots),qquad Q=(q_1,q_2,ldots)

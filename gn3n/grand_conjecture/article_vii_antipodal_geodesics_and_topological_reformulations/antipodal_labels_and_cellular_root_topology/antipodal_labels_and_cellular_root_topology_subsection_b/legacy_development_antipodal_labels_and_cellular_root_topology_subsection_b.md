@@ -1,7 +1,5 @@
 # Ky Fan forces a hole-sweeping face — preserved pre-item development
 
-## Development
-
 ### Ky Fan forces a hole-sweeping face
 
 Assume

@@ -1,7 +1,5 @@
 # Frozen interiors make buffer-success sectors contractible — preserved pre-item development
 
-## Development
-
 ## After freezing the interior, buffer-success sectors have natural contractible carriers
 
 Retain a double-persistent protected face (Fsubset X_r) and its full reflected determining span (J). By [[double_persistent_faces_have_bounded_block_width_and_rank_one_span_boundaries]], every block wholly inside the long inward corridor has bounded order, while a block straddling an outer boundary of (J) may be large but occupies at most two determining-window positions.

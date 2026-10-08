@@ -1,7 +1,5 @@
 # Outward buffer vertices bypass the internal two-deletion obstruction — preserved pre-item development
 
-## Development
-
 ## Outward buffer replacement converts a genuine double to a one-triple boundary test
 
 Let a protected positive span-two reflected double have displayed full determining span

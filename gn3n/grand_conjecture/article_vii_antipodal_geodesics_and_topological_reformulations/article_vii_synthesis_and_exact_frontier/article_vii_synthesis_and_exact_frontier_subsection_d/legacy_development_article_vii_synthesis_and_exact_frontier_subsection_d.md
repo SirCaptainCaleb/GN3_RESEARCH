@@ -1,7 +1,5 @@
 # The remaining face-to-cover conversion — preserved pre-item development
 
-## Development
-
 ### Current status of the face-to-cover conversion
 
 The earlier descriptions in this Section of Article VII as closed, and the assertion that no further topological continuation is justified, are superseded by the following precise status. The small-support compression results do not prove a two-cover and do not prove that every obstruction to the grand conjecture has been eliminated. The exact reachability intersection remains unproved.

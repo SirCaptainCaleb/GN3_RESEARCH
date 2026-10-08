@@ -1,7 +1,5 @@
 # Connector-path exclusion for genuine two-deletion packets — preserved pre-item development
 
-## Development
-
 ## Connector-path exclusion in a genuine two-deletion residue
 
 Let \(H\) be a boundary tournament with \(\kappa_2(H)\ge 2\). Suppose

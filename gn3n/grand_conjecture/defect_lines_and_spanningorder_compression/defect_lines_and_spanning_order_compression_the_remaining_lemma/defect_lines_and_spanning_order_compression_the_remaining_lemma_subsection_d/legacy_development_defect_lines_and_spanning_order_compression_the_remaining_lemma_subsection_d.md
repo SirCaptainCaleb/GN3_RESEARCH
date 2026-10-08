@@ -1,7 +1,5 @@
 # Same-side endpoint reduction — preserved pre-item development
 
-## Development
-
 ### Same-side endpoint squares return to bounded support
 
 **Lemma 29 (same-side endpoint reduction).** In the quiet double same-slot square of Lemma 25, suppose both cores use endpoint slots on the same side. Then either (H) has a two-cover, or (H) contains a Hamiltonian support of order four or five whose complement is non-Hamiltonian with path-cover number two.

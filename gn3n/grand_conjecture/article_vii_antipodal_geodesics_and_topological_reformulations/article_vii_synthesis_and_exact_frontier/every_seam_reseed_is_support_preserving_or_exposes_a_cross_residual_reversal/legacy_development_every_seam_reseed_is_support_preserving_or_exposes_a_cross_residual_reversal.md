@@ -1,7 +1,5 @@
 # Every seam reseed is support-preserving or exposes a cross-residual reversal — preserved pre-item development
 
-## Development
-
 ## Every seam reseed is support-preserving or exposes a cross-residual reversal
 
 Let \(H\) be a no-two-cover boundary tournament and let

@@ -1,7 +1,5 @@
 # Coxeter-local protection has an eighteen-position dependency halo — preserved pre-item development
 
-## Development
-
 ## The full protection dependency halo has order at most eighteen
 
 Let B=[a,b] be a consecutive positional band, and compare two spanning orders which agree outside B but may reorder the labels inside B. Work with W_+={001,011,0101}.

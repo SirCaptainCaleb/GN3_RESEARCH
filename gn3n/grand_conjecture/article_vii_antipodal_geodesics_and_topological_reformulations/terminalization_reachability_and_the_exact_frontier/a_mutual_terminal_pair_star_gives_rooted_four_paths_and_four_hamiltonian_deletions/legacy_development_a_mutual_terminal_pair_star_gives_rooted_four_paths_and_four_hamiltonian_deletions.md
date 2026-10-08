@@ -1,7 +1,5 @@
 # A mutual terminal-pair star gives rooted four-paths and four Hamiltonian deletions — preserved pre-item development
 
-## Development
-
 ## Rooted four-paths supplied by a mutual terminal-pair star
 
 Let v,r,s,z be distinct vertices of a boundary tournament. Suppose

@@ -1,7 +1,5 @@
 # Minimal commuting-cube protection failures are eight-position local — preserved pre-item development
 
-## Development
-
 ## Minimal protection failures in commuting cubes are eight-position local
 
 Work with the positive witness language W_+={001,011,0101}. Every positive occurrence is determined by a consecutive vertex interval I of order at most six.

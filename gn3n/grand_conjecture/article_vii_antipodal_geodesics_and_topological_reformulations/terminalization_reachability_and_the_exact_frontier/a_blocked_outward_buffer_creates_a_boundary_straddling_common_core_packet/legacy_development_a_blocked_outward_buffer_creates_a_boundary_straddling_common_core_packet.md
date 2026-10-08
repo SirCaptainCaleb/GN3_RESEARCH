@@ -1,7 +1,5 @@
 # Correction: blocked outward buffers give a family of rooted reversers — preserved pre-item development
 
-## Development
-
 ## Correction: a blocked outward buffer produces a second rooted reverser, but not automatically a common-core packet
 
 Retain the genuine two-deletion mixed double from [[genuine_two_deletion_doubles_have_a_fixed_mixed_polarity_and_forced_first_outward_shell]]:

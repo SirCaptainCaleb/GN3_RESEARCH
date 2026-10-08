@@ -1,7 +1,5 @@
 # A mutual terminal-pair four-cycle forces a Hamiltonian five-support — preserved pre-item development
 
-## Development
-
 ## A terminal-pair four-cycle forces a Hamiltonian five-support
 
 Let a,b,c,d,z be distinct vertices of a boundary tournament. Suppose both orientations of each cycle edge are admissible before z:

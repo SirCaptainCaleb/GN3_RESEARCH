@@ -1,7 +1,5 @@
 # Protection forces a minimum-hole boundary reservoir to be uniformly blocked — preserved pre-item development
 
-## Development
-
 ## Protection and a minimum deletion set force a hole reservoir to be blocked
 
 Let X be a minimum two-cover deletion set of H and let H-X=P|Q, with

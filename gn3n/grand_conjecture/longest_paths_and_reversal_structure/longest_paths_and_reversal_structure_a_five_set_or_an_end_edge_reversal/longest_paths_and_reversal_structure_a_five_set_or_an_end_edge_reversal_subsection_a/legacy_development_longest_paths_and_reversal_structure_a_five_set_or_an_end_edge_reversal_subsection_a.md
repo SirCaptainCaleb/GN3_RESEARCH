@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 For \(y\in U\), the first and third triples of
 \[
 (a_1,a_0,y,a_{\lambda-1},a_{\lambda-2})

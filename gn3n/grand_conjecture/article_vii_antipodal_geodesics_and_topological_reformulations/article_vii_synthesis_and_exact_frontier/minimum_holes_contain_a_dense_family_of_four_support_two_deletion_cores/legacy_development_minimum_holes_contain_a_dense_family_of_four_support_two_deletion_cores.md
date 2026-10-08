@@ -1,7 +1,5 @@
 # Minimum holes contain a dense family of four-support two-deletion cores — preserved pre-item development
 
-## Development
-
 ## Fixed-pair elevation: every minimum hole has a dense family of four-support two-deletion cores
 
 Let

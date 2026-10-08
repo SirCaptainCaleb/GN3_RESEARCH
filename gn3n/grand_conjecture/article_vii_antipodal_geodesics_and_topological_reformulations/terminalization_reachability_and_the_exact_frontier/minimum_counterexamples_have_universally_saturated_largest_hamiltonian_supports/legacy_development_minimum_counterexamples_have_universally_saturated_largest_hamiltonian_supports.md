@@ -1,7 +1,5 @@
 # Minimum counterexamples have universally saturated largest Hamiltonian supports — preserved pre-item development
 
-## Development
-
 ## Universal saturation of a largest proper Hamiltonian support
 
 Let (H) be a minimum-order counterexample to spanning two-coverability.

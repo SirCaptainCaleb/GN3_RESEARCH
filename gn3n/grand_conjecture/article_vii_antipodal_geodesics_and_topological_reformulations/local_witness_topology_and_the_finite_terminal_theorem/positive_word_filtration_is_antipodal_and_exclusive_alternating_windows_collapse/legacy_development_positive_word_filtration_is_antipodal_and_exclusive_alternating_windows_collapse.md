@@ -1,7 +1,5 @@
 # Positive-word filtration is antipodal and exclusive alternating windows collapse — preserved pre-item development
 
-## Development
-
 ## A consistent positive-word filtration and elimination of the twelve-position alternating residue
 
 The polarity mismatch can be avoided without sacrificing antipodal equivariance.

@@ -1,7 +1,5 @@
 # Large minimum balanced holes force uniform one-hole imbalance — preserved pre-item development
 
-## Development
-
 ## Large minimum balanced holes force uniform one-hole imbalance
 
 Let H be a boundary 3-tournament with at least one one-hole deletion cover. Define

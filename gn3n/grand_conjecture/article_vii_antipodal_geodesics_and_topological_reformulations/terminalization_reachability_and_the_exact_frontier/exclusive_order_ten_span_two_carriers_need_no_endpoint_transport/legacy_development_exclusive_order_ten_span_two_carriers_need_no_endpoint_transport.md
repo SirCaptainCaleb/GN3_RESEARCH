@@ -1,7 +1,5 @@
 # Exclusive order-ten span-two carriers need no endpoint transport — preserved pre-item development
 
-## Development
-
 ## The order-ten exclusive span-two branch has a protected frozen carrier without endpoint transport
 
 The exception in [[balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits]] is removable once the rank-one coupling theorem [[positive_exclusive_disjoint_span_two_carriers_have_rank_one_coupling]] is used correctly.

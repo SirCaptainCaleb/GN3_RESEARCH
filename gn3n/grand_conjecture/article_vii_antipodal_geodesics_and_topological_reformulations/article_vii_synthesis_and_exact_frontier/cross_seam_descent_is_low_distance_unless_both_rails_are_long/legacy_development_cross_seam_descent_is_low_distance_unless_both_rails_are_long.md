@@ -1,7 +1,5 @@
 # Cross-seam descent is low-distance unless both rails are long — preserved pre-item development
 
-## Development
-
 ## Cross-seam descent is low-distance unless both complementary rails are long
 
 Let \(H\) satisfy \(\kappa_2(H)=2\), and let

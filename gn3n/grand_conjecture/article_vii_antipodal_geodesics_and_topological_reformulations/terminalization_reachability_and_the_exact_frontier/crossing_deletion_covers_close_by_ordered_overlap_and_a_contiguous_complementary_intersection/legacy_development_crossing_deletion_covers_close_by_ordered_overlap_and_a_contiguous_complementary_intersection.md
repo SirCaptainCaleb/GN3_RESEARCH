@@ -1,7 +1,5 @@
 # Crossing deletion covers close by ordered overlap and a contiguous complementary intersection — preserved pre-item development
 
-## Development
-
 ## Crossing deletion covers close by an ordered overlap and a contiguous complementary intersection
 
 Let a,b be distinct vertices of a boundary tournament H. Let

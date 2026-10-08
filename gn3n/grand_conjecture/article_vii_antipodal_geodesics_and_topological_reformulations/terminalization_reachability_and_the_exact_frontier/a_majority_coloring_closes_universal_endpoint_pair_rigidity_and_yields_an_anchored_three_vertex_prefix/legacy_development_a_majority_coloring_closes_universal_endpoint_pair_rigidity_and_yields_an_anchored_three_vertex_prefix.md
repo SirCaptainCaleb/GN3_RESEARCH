@@ -1,7 +1,5 @@
 # A majority coloring closes universal endpoint-pair rigidity and yields an anchored three-vertex prefix — preserved pre-item development
 
-## Development
-
 ## A functional-graph coloring lemma
 
 Let F be a finite directed graph with no loops in which every vertex has outdegree zero or one. Then V(F) has a two-coloring with the following properties:

@@ -1,7 +1,5 @@
 # Local span gauge localizes terminal tie-break sign flips — preserved pre-item development
 
-## Development
-
 ## Local span gauge
 
 The external antipodal gauge is needed only when the selected unsigned witness edge is represented in both orientations, including the centered self-reflecting tie case. It can be replaced by a local odd tie-break.

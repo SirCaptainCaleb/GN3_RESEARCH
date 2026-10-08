@@ -1,7 +1,5 @@
 # Rank-two normalization: squares close and only the inside-boundary braid remains — preserved pre-item development
 
-## Development
-
 ## Rank-two normalization: squares close and only the inside-boundary braid remains
 
 Normalize every terminal repair to a contiguous ten-position window (J) containing the terminal determining span (I). Let (omega) be an outward chamber obtained by replacing the order on (J) by a Hamiltonian (5|5) two-cover order.

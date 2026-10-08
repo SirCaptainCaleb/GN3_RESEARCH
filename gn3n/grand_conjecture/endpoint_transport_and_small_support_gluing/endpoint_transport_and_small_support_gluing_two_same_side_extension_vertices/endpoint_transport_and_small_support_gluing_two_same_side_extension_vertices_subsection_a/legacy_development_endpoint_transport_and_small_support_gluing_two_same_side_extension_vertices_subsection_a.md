@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Suppose \(x,y\) can occur only at the same endpoint side of the relevant augmented supports, and let
 \[
 R\mid S

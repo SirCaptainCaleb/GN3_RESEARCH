@@ -1,7 +1,5 @@
 # Order-nine endpoint exclusion for reflected alternating terminal supports — preserved pre-item development
 
-## Development
-
 ## Order-nine reflected alternating supports also exclude endpoint sign flips
 
 Consider a reflected alternating terminal witness whose two four-status occurrences start three status positions apart. This is exactly the case in which the union of the two six-vertex determining windows has order nine.

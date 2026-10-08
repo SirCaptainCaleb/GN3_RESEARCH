@@ -1,7 +1,5 @@
 # Balanced deletion number is parity-sharp after minimum-hole normalization — preserved pre-item development
 
-## Development
-
 ## The balanced deletion number is parity-sharp after minimum-hole normalization
 
 For a boundary tournament \(H\), define the balanced two-cover deletion number

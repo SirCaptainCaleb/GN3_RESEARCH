@@ -1,7 +1,5 @@
 # Bounded-radius auxiliary neighborhoods have exact outward replacements — preserved pre-item development
 
-## Development
-
 ## Center-preserving bounded-radius replacement
 
 Retain the auxiliary extension \(H^+\), a chamber with \(r=v_k\), and the symmetric radius-\(d\) interval

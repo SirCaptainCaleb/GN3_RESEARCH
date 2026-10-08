@@ -1,7 +1,5 @@
 # Exact frozen suffix conversion criterion for an eight label interface packet — preserved pre-item development
 
-## Development
-
 ## Exact frozen-suffix conversion criterion for an eight-label interface packet
 
 The eight-label conclusion in [[failed_rooted_absorption_two_covers_the_eight_label_interface_packet]] does not guarantee a two-cover attaching both interface vertices to the unchanged suffix.

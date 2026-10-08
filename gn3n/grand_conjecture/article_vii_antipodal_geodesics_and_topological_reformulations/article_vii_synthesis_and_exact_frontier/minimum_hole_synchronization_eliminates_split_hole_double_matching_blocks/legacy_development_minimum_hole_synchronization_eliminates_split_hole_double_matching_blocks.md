@@ -1,7 +1,5 @@
 # Minimum-hole synchronization eliminates split-hole double matching blocks — preserved pre-item development
 
-## Development
-
 ## Split-hole double matching blocks are impossible under minimum-hole synchronization
 
 First record a four-vertex closure fact.

@@ -1,7 +1,5 @@
 # A minimum-pair star lives in one fixed ordinary link tournament — preserved pre-item development
 
-## Development
-
 ## The fixed-hole link tournament applies simultaneously to an entire minimum-pair star
 
 Let \(H\) satisfy

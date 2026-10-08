@@ -1,7 +1,5 @@
 # Pairwise-complete root triples force a seven-support or mixed four-support — preserved pre-item development
 
-## Development
-
 ## Finite seven-label lemma: a pairwise-complete root triple cannot stay quiet
 
 Let \(C\) be a Hamiltonian four-set and let \(x,y,z\notin C\) be distinct. Assume

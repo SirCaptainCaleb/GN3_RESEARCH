@@ -1,7 +1,5 @@
 # Positive protection does not guarantee fixed-root corridor absorption — preserved pre-item development
 
-## Development
-
 This is a local obstruction to one prescribed-interface repair, not a counterexample to the global two-cover theorem.
 
 Fix k>=2 and d>=6. Put a=k-1, b=a+d, n=a+b+3=2k+d+1, and m=n-2. Take the displayed order (t_1,...,t_k,x,y,z,...), with A={t_1,...,t_k}. Prescribe its status word to be

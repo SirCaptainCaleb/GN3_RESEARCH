@@ -1,7 +1,5 @@
 # Minimum-pair six-frames have bidirectional five-seeds or an exact two-bad endpoint packet — preserved pre-item development
 
-## Development
-
 ## Endpoint-deletion dichotomy in the minimum-pair six-frame
 
 Let

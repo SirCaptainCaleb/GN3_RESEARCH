@@ -1,7 +1,5 @@
 # Zero exit is exactly an endpoint-reversal certificate — preserved pre-item development
 
-## Development
-
 ## Zero exit is exactly an endpoint-reversal certificate
 
 Retain the separated terminal-pair enlargement model with fixed following labels

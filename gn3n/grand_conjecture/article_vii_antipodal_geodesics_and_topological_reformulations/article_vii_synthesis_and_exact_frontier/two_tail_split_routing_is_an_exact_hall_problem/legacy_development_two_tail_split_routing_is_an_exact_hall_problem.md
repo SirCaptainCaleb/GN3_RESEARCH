@@ -1,7 +1,5 @@
 # Two-tail split routing is an exact Hall problem — preserved pre-item development
 
-## Development
-
 ## Split routing of the two hole labels is an exact Hall problem
 
 Let \(X=\{x,y\}\) be a minimum deletion pair and fix

@@ -1,7 +1,5 @@
 # Reverse shared bridges reduce to one tight path and a six-vertex packet — preserved pre-item development
 
-## Development
-
 Retain the neighboring-cut setup and suppose the two bridge orientations are
 (U,s,v,T) and (U,v,T,r).
 Put R=(U,v,T) and S=A union {r,s}. Then R is a tight path, S has order six, and they partition the full span. There are also actual Hamilton orders on R+s and R+r:

@@ -1,7 +1,5 @@
 # Successor closure peels a matched prefix to the hole or forces a hole-rooted order cycle — preserved pre-item development
 
-## Development
-
 ## Recovery note
 
 The original development of this concurrently created Subsection was accidentally overwritten during an audit edit because an older compatibility path of save_subsection targets the most recent Subsection when no explicit subsection id is supplied.

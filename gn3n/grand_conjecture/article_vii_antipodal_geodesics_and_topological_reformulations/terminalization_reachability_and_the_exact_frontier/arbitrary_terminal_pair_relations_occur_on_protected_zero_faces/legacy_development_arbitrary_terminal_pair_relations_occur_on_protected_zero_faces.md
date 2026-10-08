@@ -1,7 +1,5 @@
 # Arbitrary terminal pair relations occur on protected zero faces — preserved pre-item development
 
-## Development
-
 ## Every terminal ordered-pair relation occurs in a protected determining-window sector
 
 Let B be any finite set of order k>=2 and let E be any loopless directed relation on B. Take n>=2k+9 vertices. Let F have B as its first ordered-partition block, occupying positions 1,...,k, and let every other block be a singleton. Write the next three fixed labels as z,z_1,z_2. Set a=k-1 and b=n-3-a; then b-a>=8.

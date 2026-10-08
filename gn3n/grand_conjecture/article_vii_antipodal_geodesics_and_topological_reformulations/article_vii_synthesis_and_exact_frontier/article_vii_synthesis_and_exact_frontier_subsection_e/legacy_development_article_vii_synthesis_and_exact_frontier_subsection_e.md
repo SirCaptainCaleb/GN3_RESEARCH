@@ -1,7 +1,5 @@
 # Root-only exhaustion and the k=1 anchored residue — preserved pre-item development
 
-## Development
-
 ### A cubic root moment kills the last asymmetric circulation
 
 Assume a positively balanced exact-root carrier has already been reduced by [[topological_recurrence_to_local_gn3_structure]] to the four-coordinate nonzero branch. Translate the occurring exact-root coordinates so that they lie in

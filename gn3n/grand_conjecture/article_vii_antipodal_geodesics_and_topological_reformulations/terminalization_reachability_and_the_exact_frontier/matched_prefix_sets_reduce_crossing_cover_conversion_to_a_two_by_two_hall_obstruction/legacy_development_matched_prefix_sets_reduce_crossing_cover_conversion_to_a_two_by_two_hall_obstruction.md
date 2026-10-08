@@ -1,7 +1,5 @@
 # Matched prefix sets reduce crossing cover conversion to a two by two Hall obstruction — preserved pre-item development
 
-## Development
-
 ## Matched prefix sets reduce crossing-cover conversion to a two-by-two Hall obstruction
 
 Let F_a=P_1|P_2 cover H-a and F_b=R_1|R_2 cover H-b, a!=b. Choose cuts P_i=L_i T_i and R_i=M_i N_i such that

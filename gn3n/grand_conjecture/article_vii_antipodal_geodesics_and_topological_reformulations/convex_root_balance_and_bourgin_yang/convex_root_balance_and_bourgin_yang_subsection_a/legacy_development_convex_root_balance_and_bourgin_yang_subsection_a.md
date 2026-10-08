@@ -1,7 +1,5 @@
 # Balance, circulation, and multiplicity of zeros — preserved pre-item development
 
-## Development
-
 ### Convex balance is directed circulation
 
 Let \(I\) be a finite coordinate set and let

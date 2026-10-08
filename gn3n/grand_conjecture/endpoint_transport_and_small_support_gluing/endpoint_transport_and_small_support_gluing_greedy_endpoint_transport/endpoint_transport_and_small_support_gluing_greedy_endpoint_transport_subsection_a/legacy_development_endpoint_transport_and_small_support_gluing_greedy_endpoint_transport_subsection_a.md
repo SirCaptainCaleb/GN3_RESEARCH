@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let
 \[
 X\mid C\mid D

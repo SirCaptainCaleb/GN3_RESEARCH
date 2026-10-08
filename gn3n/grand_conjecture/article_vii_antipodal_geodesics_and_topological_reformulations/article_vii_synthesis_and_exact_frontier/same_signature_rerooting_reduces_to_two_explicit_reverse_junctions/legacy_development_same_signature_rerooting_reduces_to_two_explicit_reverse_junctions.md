@@ -1,7 +1,5 @@
 # Same-signature rerooting reduces to two explicit reverse junctions — preserved pre-item development
 
-## Development
-
 ## Same-signature central supports reduce rerooting to two reverse junctions
 
 Let \(X=\{x,y\}\) be a minimum deletion pair and

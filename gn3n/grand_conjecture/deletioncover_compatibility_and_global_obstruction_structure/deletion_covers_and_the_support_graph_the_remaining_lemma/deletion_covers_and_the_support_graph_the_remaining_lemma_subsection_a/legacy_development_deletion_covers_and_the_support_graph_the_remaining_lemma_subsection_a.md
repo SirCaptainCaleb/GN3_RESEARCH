@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The preceding argument reduces the deletion-cover method to the following statement.
 
 **Remaining Lemma.** Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be a deletion cover. Suppose that the selected deletion covers yield, relative to \(P\mid Q\) or to a consecutive double deletion,

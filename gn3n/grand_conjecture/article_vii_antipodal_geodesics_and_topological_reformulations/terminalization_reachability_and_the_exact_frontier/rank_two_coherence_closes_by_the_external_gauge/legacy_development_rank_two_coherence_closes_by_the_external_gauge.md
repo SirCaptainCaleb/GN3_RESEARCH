@@ -1,7 +1,5 @@
 # Rank-two coherence closes by the external gauge — preserved pre-item development
 
-## Development
-
 ## The terminal edge-surgery coherence lemma
 
 The remaining square/hexagon problem collapses once one uses the way the orientation on the fixed witness path was defined.

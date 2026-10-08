@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The one-trajectory and many-root arguments require different conclusions.
 
 **Remaining Lemma A.** Let \(\mathcal C\) contain a singleton lift and let \(C\in\mathcal C\) minimize \(\Phi\). If \(C\) has one of the recurrence residues in Lemma 4, then either \(H\) has a two-cover, or \(\mathcal C\) contains a three-cover of smaller \(\Phi\), or there is an equal-\(\Phi\) move that strictly decreases a well-founded secondary integer.

@@ -1,7 +1,5 @@
 # Support-splitting seam reseeds are exactly comparison disturbances — preserved pre-item development
 
-## Development
-
 ## Support-splitting seam reseeds cannot remain quiet
 
 Let (H) be a no-two-cover boundary tournament. Let

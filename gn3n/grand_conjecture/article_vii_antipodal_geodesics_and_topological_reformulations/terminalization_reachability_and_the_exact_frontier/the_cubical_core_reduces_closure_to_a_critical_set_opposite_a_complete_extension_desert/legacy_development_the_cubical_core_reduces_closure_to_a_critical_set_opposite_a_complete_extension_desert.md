@@ -1,7 +1,5 @@
 # Audit: the cubical core gives partial critical stars, not a monotone separator — preserved pre-item development
 
-## Development
-
 ## Audit correction: pure source-sink cubical cocycles need not be monotone
 
 The previous version incorrectly claimed that a surviving source-sink cubical cocycle C=delta f can be normalized so that f is monotone in the natural cube orientation.

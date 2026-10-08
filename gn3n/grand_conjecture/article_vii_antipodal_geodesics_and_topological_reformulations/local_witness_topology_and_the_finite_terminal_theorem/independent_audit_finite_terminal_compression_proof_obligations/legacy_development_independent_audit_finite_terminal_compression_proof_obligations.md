@@ -1,7 +1,5 @@
 # Independent audit: finite-terminal compression proof obligations — preserved pre-item development
 
-## Development
-
 ## Independent audit: finite-terminal compression needs explicit proofs
 
 The finite endpoint theorems used at the end of this Section are sound: the eight-vertex and ten-vertex two-cover results follow from the audited four-of-six theorem by short counting arguments.

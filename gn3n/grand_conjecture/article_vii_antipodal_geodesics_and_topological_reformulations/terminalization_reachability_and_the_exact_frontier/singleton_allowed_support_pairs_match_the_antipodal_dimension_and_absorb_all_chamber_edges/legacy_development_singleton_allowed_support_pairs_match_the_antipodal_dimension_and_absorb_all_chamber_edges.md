@@ -1,7 +1,5 @@
 # Singleton-allowed support pairs match the antipodal dimension and absorb all chamber edges — preserved pre-item development
 
-## Development
-
 ## The singleton-allowed support-pair complex is the dimension-matched topological target
 
 Let \(\widehat{\mathcal P}(H)\) be the poset of ordered pairs

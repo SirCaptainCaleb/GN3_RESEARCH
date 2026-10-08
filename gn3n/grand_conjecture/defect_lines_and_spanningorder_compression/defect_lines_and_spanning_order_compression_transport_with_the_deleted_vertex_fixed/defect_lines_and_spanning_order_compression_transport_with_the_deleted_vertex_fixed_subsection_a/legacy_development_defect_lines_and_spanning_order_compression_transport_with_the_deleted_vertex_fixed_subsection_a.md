@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Assume the middle join is tight. Write
 \[
 H-x=P\mid Q.

@@ -1,7 +1,5 @@
 # Minimum-counterexample closure reduces to the zero exact-root branch — preserved pre-item development
 
-## Development
-
 ## Minimum-counterexample closure reduces to the zero exact-root branch
 
 Let H be a minimum-order counterexample to the spanning two-cover conjecture.

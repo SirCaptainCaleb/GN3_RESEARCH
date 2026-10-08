@@ -1,7 +1,5 @@
 # Four-of-six equality endpoints force local order disagreement — preserved pre-item development
 
-## Development
-
 ## Four-of-six equality endpoints force local order disagreement
 
 Retain branch (2) of [[four_endpoints_force_a_threefold_core_or_two_double_hole_equality_endpoints]]. Thus for at least two exposed endpoints \(e\), the six-set

@@ -1,7 +1,5 @@
 # Three bridge candidates join two tails and absorb a six-vertex packet — preserved pre-item development
 
-## Development
-
 Lemma. Let S be a six-vertex set and let T=(t_1,...,t_k), U=(u_1,...,u_l), k,l>=2, be vertex-disjoint tight paths disjoint from S. Call v in S a bridge candidate if either (T,v,U) or (U,v,T) is tight. These conditions are tested respectively by
 h(t_{k-1},t_k,v)=h(t_k,v,u_1)=h(v,u_1,u_2)=1,
 or by the symmetric three triples with T,U exchanged.

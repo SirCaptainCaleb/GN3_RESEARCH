@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(x,y\notin V(A)\). Suppose \(L\) is a Hamilton path on
 \[
 (V(A)-\{a_0\})\cup\{x\}

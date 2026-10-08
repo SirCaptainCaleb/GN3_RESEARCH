@@ -1,7 +1,5 @@
 # Every deletion-critical oriented seam forces a Hamiltonian four-support — preserved pre-item development
 
-## Development
-
 ## Every deletion-critical oriented seam forces a Hamiltonian four-support
 
 Retain the saturated state of [[both_hole_seed_maximalization_yields_a_saturated_deletion_critical_complement]]:

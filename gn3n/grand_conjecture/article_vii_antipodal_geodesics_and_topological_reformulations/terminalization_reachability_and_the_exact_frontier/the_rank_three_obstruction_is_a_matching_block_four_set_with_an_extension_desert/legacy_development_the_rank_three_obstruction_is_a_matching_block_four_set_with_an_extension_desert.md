@@ -1,7 +1,5 @@
 # The rank-three obstruction is a matching-block four-set with an extension desert — preserved pre-item development
 
-## Development
-
 ## The rank-three obstruction is a matching-block four-set with an exterior extension desert
 
 Continue in the exceptional branch of [[rank_three_support_pair_carriers_reduce_to_one_extreme_non_hamiltonian_four_block]].

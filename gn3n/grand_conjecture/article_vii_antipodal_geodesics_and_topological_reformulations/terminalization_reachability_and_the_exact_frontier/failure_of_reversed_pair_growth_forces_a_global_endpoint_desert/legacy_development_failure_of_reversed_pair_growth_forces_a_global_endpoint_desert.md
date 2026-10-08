@@ -1,7 +1,5 @@
 # Failure of reversed-pair growth forces a global endpoint desert — preserved pre-item development
 
-## Development
-
 ## One-step failure forces a global rooted endpoint desert
 
 Assume the odd uniform residue on n=2r+1 vertices:

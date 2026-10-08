@@ -1,7 +1,5 @@
 # Three compatible covers force a reversal — preserved pre-item development
 
-## Development
-
 ### A connected support path already closes the theorem
 
 **Lemma 6 (connected support path closure).** Let one deletion cover (F_x) be selected for every vertex (xin V(H)), and let (J) be the resulting support graph. If (J) is a connected path, then (H) has a two-cover.

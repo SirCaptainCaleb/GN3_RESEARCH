@@ -1,7 +1,5 @@
 # Audit: zero exact root does not by itself supply a balanced deletion cover — preserved pre-item development
 
-## Development
-
 ## Audit of the premise in 287
 
 The implication "a zero exact-root chamber supplies a balanced deletion cover" is not established by 284. A zero exact root means p=c and therefore supplies a symmetric canonical partial cover P|X|Q with |P|=|Q|. It does not assert |X|=1.

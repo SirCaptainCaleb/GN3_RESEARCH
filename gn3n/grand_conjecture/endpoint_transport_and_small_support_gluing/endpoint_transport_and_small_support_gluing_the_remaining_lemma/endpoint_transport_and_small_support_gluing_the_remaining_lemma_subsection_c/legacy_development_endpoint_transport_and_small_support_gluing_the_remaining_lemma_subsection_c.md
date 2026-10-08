@@ -1,7 +1,5 @@
 # Every deletion cover yields a four-support — preserved pre-item development
 
-## Development
-
 ### Every deletion cover contains a doubly reversed end edge
 
 **Lemma 14 (four-fold deletion reversal).** Let (H) be a minimum counterexample and let

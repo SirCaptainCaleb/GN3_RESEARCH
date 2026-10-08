@@ -1,7 +1,5 @@
 # Seam reseeding either preserves or splits the maximal support — preserved pre-item development
 
-## Development
-
 ## A seam reseed either preserves the maximal support or splits its displayed order
 
 Let

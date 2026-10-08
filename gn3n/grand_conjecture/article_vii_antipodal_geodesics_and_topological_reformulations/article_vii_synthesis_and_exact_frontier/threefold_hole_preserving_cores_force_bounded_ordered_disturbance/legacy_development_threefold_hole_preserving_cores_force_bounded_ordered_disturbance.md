@@ -1,7 +1,5 @@
 # Threefold hole-preserving cores force bounded ordered disturbance — preserved pre-item development
 
-## Development
-
 ## Threefold hole-preserving cores already force bounded ordered structure
 
 Retain branch (1) of [[four_endpoints_force_a_threefold_core_or_two_double_hole_equality_endpoints]]. Thus

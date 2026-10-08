@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both
 \[
 (X\cup\{x\})\mid Y\mid D

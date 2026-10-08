@@ -1,7 +1,5 @@
 # Correction: minimum holes contain canonical exact three-deletion cores — preserved pre-item development
 
-## Development
-
 ## Correction: every large minimum deletion hole contains canonical exact three-deletion cores
 
 Let

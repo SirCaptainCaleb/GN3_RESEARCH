@@ -1,7 +1,5 @@
 # Face-monotone positional coarsening gives compatible enlarged protected carriers — preserved pre-item development
 
-## Development
-
 ## Positional coarsening supplies nested enlarged carriers
 
 For an ordered-partition face F on n labels, its cuts occur at the cumulative block orders, a subset Cut(F) of {1,...,n-1}. For I subset {1,...,n-1}, define M_I(F) by deleting the cuts belonging to I, thereby merging the adjacent blocks separated by them.

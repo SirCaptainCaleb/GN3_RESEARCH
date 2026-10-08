@@ -1,7 +1,5 @@
 # Two aligned ordered edge cuts splice arbitrarily dissimilar deletion covers — preserved pre-item development
 
-## Development
-
 ## Two aligned ordered-edge cuts splice arbitrarily dissimilar deletion covers
 
 Let F_a=P_1|P_2 be a tight two-cover of H-a and F_b=R_1|R_2 one of H-b, with a!=b. Pair the paths in either order.

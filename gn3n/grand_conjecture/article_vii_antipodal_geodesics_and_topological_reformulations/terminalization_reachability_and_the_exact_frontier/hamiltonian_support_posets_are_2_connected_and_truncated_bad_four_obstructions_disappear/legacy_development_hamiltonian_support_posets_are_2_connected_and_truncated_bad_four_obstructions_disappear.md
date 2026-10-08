@@ -1,7 +1,5 @@
 # Hamiltonian-support posets are 2-connected and truncated bad-four obstructions disappear — preserved pre-item development
 
-## Development
-
 ## The Hamiltonian-support poset is universally 2-connected
 
 For a finite vertex set W, let L(W) be the inclusion poset of its nonempty Hamiltonian subsets, and write |L(W)| for its order complex. Hamiltonicity is not assumed hereditary.

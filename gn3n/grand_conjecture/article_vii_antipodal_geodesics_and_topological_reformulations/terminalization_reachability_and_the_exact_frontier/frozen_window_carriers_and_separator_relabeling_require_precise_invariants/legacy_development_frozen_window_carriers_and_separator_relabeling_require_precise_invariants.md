@@ -1,7 +1,5 @@
 # Frozen-window carriers and separator relabeling require precise invariants — preserved pre-item development
 
-## Development
-
 ## A protected frozen-window carrier and its exact compatibility condition
 
 Fix a positive-word depth rule and an outward repair order \(\omega\). Let \(J\) be a positional interval containing every determining window of every witness edge of depth at most \(r\). Suppose \(\omega\) avoids the positive forbidden words internally on \(J\).

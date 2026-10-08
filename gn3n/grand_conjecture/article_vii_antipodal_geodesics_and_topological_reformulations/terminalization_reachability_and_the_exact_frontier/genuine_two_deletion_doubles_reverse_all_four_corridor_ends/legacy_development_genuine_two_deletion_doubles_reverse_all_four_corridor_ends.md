@@ -1,7 +1,5 @@
 # Genuine two-deletion doubles reverse all four corridor ends — preserved pre-item development
 
-## Development
-
 ## In the genuine two-deletion case both exterior vertices reverse every exposed corridor end
 
 Let J=C union {x,y} be a reflected-double span with corridor two-cover

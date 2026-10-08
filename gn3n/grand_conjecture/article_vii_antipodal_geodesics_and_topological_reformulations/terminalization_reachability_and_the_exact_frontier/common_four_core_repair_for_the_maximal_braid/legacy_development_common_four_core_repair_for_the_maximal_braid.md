@@ -1,7 +1,5 @@
 # Common four-core repair for the maximal braid — preserved pre-item development
 
-## Development
-
 ## A common four-core for the maximal braid
 
 Work in the maximal order-eleven braid

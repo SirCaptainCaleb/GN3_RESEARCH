@@ -1,7 +1,5 @@
 # Genuine two-deletion doubles have a fixed mixed polarity and forced first outward shell — preserved pre-item development
 
-## Development
-
 ## Genuine two-deletion doubles have a fixed mixed polarity and a forced first outward shell
 
 Let

@@ -1,7 +1,5 @@
 # Self-audit of the 8/18-position and six-label finitization — preserved pre-item development
 
-## Development
-
 ## Self-audit of the new finitization
 
 The recent localization results establish three different bounds which must not be conflated.

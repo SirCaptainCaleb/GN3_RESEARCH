@@ -1,7 +1,5 @@
 # Two-skeleton loop obstructions reduce to one four-label cycle — preserved pre-item development
 
-## Development
-
 ## Every loop obstruction is detected by one four-label pair factor
 
 Assume the hypotheses of [[bounded_pair_reservoirs_reduce_natural_carrier_extension_to_the_two_skeleton]]. Thus for a protected face F, each connected component of

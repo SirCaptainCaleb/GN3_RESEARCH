@@ -1,7 +1,5 @@
 # Rank-three support-pair carriers reduce to one extreme non-Hamiltonian four-block — preserved pre-item development
 
-## Development
-
 ## Rank-three support-pair carriers reduce to one extreme non-Hamiltonian four-block
 
 Work with the singleton-allowed support-pair target

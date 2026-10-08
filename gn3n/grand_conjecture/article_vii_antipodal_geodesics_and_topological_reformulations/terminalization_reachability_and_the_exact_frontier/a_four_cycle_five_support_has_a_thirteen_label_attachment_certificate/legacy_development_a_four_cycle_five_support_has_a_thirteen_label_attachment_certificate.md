@@ -1,7 +1,5 @@
 # A four-cycle five-support has a thirteen-label attachment certificate — preserved pre-item development
 
-## Development
-
 ## A four-cycle five-support has a thirteen-label attachment certificate
 
 Let S={a,b,c,d,z} have the mutual four-cycle a-b-c-d-a before z. Suppose its complement has a displayed two-cover P|Q, where P and Q are nonempty tight paths. Write R_u for the explicit tight four-path on S-u from [[a_mutual_terminal_pair_star_gives_rooted_four_paths_and_four_hamiltonian_deletions]], for each u in {a,b,c,d}.

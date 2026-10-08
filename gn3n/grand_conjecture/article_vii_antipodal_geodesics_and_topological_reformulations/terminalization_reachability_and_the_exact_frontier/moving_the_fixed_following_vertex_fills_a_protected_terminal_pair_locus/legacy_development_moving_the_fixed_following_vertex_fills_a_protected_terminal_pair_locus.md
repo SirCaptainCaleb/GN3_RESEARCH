@@ -1,7 +1,5 @@
 # Moving the fixed following vertex fills a protected terminal-pair locus — preserved pre-item development
 
-## Development
-
 ## Moving the fixed following vertex fills the outward locus
 
 Let B be nonempty, let z not belong to B, and let F be an ordered-partition face with consecutive blocks B|{z}, followed and preceded by fixed source blocks. Let H be obtained by merging B|{z} into the single block B union {z}. Assume:

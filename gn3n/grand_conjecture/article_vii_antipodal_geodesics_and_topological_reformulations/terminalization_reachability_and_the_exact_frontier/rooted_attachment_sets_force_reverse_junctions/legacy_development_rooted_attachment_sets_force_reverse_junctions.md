@@ -1,7 +1,5 @@
 # Rooted attachment sets force reverse junctions — preserved pre-item development
 
-## Development
-
 ## Rooted attachment sets turn connector failure into forced reverse triples
 
 Let

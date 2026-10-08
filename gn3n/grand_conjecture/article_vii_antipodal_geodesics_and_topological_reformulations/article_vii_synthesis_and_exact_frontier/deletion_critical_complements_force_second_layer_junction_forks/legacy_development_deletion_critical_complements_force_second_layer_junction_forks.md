@@ -1,7 +1,5 @@
 # Deletion-critical complements force second-layer junction forks — preserved pre-item development
 
-## Development
-
 ## A \(\kappa_2=2\) maximal-support complement is endpoint-deletion-critical and forces second-layer junction forks
 
 Let \(H\) satisfy

@@ -1,7 +1,5 @@
 # Audit: strong-imbalance Hall descent still lacks transfer-direction control — preserved pre-item development
 
-## Development
-
 ## Audit correction
 
 This proposed repair depended on the now-withdrawn assertion that an isolated Hall block forces opposite transfer polarities.

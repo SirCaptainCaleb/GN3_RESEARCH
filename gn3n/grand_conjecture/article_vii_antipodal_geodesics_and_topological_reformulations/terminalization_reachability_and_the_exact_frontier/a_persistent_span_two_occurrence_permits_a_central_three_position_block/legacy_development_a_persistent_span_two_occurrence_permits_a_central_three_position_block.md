@@ -1,7 +1,5 @@
 # A persistent span-two occurrence permits a central three-position block — preserved pre-item development
 
-## Development
-
 ## Audit: a persistent positive span-two occurrence need not have a fixed middle status
 
 A positive span-two occurrence is the disjunction 001 or 011. Equivalently its first status is 0 and its third status is 1; its middle status is unrestricted. Thus the proof of Lemma 1 in [[double_persistent_faces_have_bounded_block_width_and_rank_one_span_boundaries]] does not establish its asserted bound of two positions for every block.

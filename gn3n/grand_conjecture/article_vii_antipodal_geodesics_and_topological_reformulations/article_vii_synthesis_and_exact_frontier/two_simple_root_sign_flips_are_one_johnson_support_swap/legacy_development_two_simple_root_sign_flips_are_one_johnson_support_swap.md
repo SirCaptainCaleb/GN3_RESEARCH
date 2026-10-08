@@ -1,7 +1,5 @@
 # Two simple-root sign flips are one Johnson support swap — preserved pre-item development
 
-## Development
-
 ## Two simple-root sign flips are one Johnson support swap
 
 Let \(X\) be a fixed minimum deletion set and suppose

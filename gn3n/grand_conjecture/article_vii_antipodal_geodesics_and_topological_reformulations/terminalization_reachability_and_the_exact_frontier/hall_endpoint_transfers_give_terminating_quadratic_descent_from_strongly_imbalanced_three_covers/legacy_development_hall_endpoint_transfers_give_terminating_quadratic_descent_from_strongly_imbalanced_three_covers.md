@@ -1,7 +1,5 @@
 # Superseded: Hall descent direction remains open — preserved pre-item development
 
-## Development
-
 ## Superseded audit note
 
 The original version claimed that applying the four-path Hall-obstruction theorem to an isolated dominant component automatically transfers an endpoint out of that component, hence decreases the quadratic three-cover potential. That directional inference was not justified by the older Hall theorem.

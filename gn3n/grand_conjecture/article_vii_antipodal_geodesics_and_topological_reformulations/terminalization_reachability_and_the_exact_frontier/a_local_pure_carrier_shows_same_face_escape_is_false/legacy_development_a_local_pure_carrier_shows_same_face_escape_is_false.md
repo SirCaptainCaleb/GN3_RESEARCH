@@ -1,7 +1,5 @@
 # A local pure carrier shows same-face escape is false — preserved pre-item development
 
-## Development
-
 ## The same-face strengthening is false locally
 
 The terminal coherence problem cannot be removed by asserting that every protected mixed face itself contains an outward chamber. There is already a six-vertex local model in which a proper face is a pure balanced centered-witness carrier with no third chamber available.

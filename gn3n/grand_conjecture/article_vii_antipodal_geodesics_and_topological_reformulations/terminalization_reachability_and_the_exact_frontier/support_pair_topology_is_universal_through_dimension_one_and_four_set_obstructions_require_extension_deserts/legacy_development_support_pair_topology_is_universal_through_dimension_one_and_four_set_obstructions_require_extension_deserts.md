@@ -1,7 +1,5 @@
 # Support-pair topology is universal through dimension one, and four-set obstructions require extension deserts — preserved pre-item development
 
-## Development
-
 ## Universal low-rank structure in the Hamiltonian support-pair complex
 
 Let P(H) be the ordered poset of disjoint Hamiltonian support pairs (A,B) with |A|,|B|>=2, ordered componentwise by inclusion, and let K(H)=Delta P(H) with free involution T(A,B)=(B,A).

@@ -1,7 +1,5 @@
 # Protected commuting-square failures are eight-position local — preserved pre-item development
 
-## Development
-
 ## Protected commuting-square failures are supported on at most eight positions
 
 Work in the positive witness language W_+={001,011,0101}. A positive occurrence is determined by at most six consecutive vertex positions: 001 and 011 use five vertices, while 0101 uses six.

@@ -1,7 +1,5 @@
 # Local forbidden patterns and witness handoff — preserved pre-item development
 
-## Development
-
 The exact criterion
 [
 q(pi)le p(pi)+1

@@ -1,7 +1,5 @@
 # Protected fixed-boundary reservoirs are disjoint from minimum holes — preserved pre-item development
 
-## Development
-
 ## Strengthening: a protected fixed-boundary reservoir cannot contain even one minimum-hole label
 
 Let (X) be a minimum two-cover deletion set and let

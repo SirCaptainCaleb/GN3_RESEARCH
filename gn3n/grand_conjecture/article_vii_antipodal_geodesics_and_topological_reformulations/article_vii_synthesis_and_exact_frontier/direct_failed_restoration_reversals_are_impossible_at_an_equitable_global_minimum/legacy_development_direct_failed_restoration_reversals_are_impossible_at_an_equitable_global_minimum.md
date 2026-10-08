@@ -1,7 +1,5 @@
 # Direct failed-restoration reversals are impossible at an equitable global minimum — preserved pre-item development
 
-## Development
-
 ## The direct failed-restoration reversal cannot recur at an equitable global \(\Phi\)-minimum
 
 Let

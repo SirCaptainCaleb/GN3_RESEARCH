@@ -1,7 +1,5 @@
 # Protected corridor bounds block intersections but not boundary block orders — preserved pre-item development
 
-## Development
-
 Let F be an ordered-partition face protected at a positive span-two witness edge whose reflected starts are a<b. Set C=[a+1,b+3], the vertex interval whose internal statuses are [a+1,b+1]. Every chamber of F avoids 001,011,0101 wholly inside that status interval.
 
 Then every positional face block B satisfies |B intersect C|<=4. Indeed the intersection is an interval. If it had at least five positions, choose five consecutive positions i,...,i+4 inside it. Here a+1<=i<=b-1. Freeze all other positions and freely permute the five vertices in these positions, which is permitted by the face block. Protectedness forbids positive 001 and 011 in the three internal statuses of each of the 120 orders. This contradicts the five-position obstruction in [[verified_five_position_obstruction_and_ordered_tuple_compression]]. Thus the intersection has at most four positions.

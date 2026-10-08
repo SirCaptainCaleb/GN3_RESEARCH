@@ -1,7 +1,5 @@
 # From rook labels to cellular roots — preserved pre-item development
 
-## Development
-
 ### Extreme-switch labels
 
 Return first to the unexactified permutation sphere, where the local topology is easiest to see. For a spanning order whose status word contains at least two runs, let

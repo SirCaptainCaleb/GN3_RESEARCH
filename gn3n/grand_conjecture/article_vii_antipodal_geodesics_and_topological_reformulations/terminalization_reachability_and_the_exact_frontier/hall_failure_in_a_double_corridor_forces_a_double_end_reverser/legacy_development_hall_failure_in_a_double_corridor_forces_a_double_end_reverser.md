@@ -1,7 +1,5 @@
 # Hall failure in a double corridor forces a double-end reverser — preserved pre-item development
 
-## Development
-
 ## Hall dichotomy for the reflected span-two double corridor
 
 Retain the exact corridor form of [[complete_positive_span_two_double_corridor_classification]]. Thus the protected determining span consists of two disjoint tight paths

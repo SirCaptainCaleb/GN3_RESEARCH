@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(K\) be a vertex set and let \(x,y\notin K\). Suppose \(K\cup\{x\}\) and \(K\cup\{y\}\) have Hamilton paths that induce the same order
 \[
 C=(c_1,\ldots ,c_m)

@@ -1,7 +1,5 @@
 # Audit: fixed-hole singleton-unanimity facets are automatic — preserved pre-item development
 
-## Development
-
 ## Audit: the fixed-hole sparse-face alternative is automatic
 
 Retain the fixed-hole Ky Fan notation. For a chamber

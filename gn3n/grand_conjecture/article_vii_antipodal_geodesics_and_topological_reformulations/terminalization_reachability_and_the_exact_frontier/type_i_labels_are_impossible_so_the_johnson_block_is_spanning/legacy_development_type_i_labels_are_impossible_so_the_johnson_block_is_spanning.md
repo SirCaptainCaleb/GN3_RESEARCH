@@ -1,7 +1,5 @@
 # Type I labels are impossible, so the Johnson block is spanning — preserved pre-item development
 
-## Development
-
 ## Type I exterior labels are impossible; the saturated Johnson block is spanning
 
 Retain a minimum-degree saturated Johnson block U of degree d from [[minimum_degree_full_stars_form_saturated_johnson_blocks]].

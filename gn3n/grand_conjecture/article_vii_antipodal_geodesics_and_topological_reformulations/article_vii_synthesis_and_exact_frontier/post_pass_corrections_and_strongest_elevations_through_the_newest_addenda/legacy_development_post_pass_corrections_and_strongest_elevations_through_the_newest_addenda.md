@@ -1,7 +1,5 @@
 # Post-pass corrections and strongest elevations through the newest addenda — preserved pre-item development
 
-## Development
-
 ## Post-pass corrections and strongest elevations through the newest repair addenda
 
 This addendum records the corrections forced by reading the composed Article VII and every repair addendum in chronological order through the current development horizon.

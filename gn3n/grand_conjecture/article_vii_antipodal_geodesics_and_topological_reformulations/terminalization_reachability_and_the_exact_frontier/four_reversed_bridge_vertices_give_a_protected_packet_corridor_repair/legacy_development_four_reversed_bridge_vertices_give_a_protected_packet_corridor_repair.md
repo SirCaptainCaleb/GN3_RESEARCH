@@ -1,7 +1,5 @@
 # Four reversed bridge vertices give a protected packet-corridor repair — preserved pre-item development
 
-## Development
-
 Lemma. Let A be a four-vertex set, let y be another vertex, and let Z=(z_1,...,z_d), d>=2, be disjoint from A union {y}. Suppose Q_0=(z_d,...,z_1) is a tight path and h(u,z_1,z_2)=0 for every u in A. Then H[A union V(Z) union {y}] has a two-path cover with component orders 4,d+1. One component contains y and three vertices of A; the other is Q_0 followed by the remaining vertex of A.
 
 Proof. There is a Hamiltonian four-set K contained in A union {y} and containing y. For an explicit citation, choose a tight order on any three vertices of A (boundary antisymmetry always supplies such an order), and use the prescribed-exterior-endpoint lemma in [[localextend01]] with the fourth vertex of A and the prescribed vertex y. It produces a Hamiltonian support of order four or five with y as an endpoint. In the five-vertex case delete the endpoint opposite y to obtain K of order four. This argument never reverses a tight path and does not require a prescribed terminal orientation.

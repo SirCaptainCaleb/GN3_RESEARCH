@@ -1,7 +1,5 @@
 # Anchored six-path extension closes a genuine two-deletion state — preserved pre-item development
 
-## Development
-
 ## Anchored six-path extension closes a genuine two-deletion state
 
 Let \(H\) satisfy \(\kappa_2(H)=2\), let \(X=\{x,y\}\) be a minimum deletion pair, and fix

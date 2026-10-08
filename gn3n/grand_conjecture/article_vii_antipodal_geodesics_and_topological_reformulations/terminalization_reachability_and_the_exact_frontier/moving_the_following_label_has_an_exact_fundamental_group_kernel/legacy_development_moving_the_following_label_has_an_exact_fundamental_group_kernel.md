@@ -1,7 +1,5 @@
 # Moving the following label has an exact fundamental-group kernel — preserved pre-item development
 
-## Development
-
 ## Exact fundamental-group kernel for moving the following label
 
 Use the chamber-defined enlargement from [[moving_the_following_label_has_an_exact_first_homology_kernel]]. Namely B is finite, z is outside B, delta(z)=1, and D is the subcomplex of P(B union {z}) whose allowed chambers are exactly those ending in a label w with delta(w)=0 or having a tight final triple. Put D_0=D intersect (P(B)|{z}).

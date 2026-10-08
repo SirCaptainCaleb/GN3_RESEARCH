@@ -1,7 +1,5 @@
 # Genuine deletion distance two forces a fully protected four-label middle face — preserved pre-item development
 
-## Development
-
 ## Genuine deletion distance two forces a fully protected four-label middle face
 
 Let H satisfy kappa_2(H)=2. Let X={x,y} be a minimum deletion pair and fix a displayed two-cover

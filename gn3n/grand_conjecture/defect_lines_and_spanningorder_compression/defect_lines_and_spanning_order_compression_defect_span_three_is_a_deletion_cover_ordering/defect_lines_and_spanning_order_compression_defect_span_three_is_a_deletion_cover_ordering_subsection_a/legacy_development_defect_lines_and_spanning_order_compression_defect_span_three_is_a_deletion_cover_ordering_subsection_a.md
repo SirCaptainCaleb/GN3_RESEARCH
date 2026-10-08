@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is
 \[
 \max D(\pi)-\min D(\pi)+1.

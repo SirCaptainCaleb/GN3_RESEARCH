@@ -1,7 +1,5 @@
 # Top homology and equivariant index detect exactly the odd uniform middle layer — preserved pre-item development
 
-## Development
-
 Let H be a minimum-order counterexample on n vertices, E(H) its signed support-pair downward-closure complex, and D its full cubical deletion interface. Then dim E(H)=n-2.
 
 The following conditions are equivalent:

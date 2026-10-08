@@ -1,7 +1,5 @@
 # Cubical parity propagates a partial source star to a complete critical star — preserved pre-item development
 
-## Development
-
 ## Cubical parity propagates every partial source star to a full source star
 
 Let C be a nonempty cubical 1-cocycle in the naturally oriented Boolean cube on V. Assume every vertex incident with C is pure: all its incident C-edges are either outgoing or all incoming.

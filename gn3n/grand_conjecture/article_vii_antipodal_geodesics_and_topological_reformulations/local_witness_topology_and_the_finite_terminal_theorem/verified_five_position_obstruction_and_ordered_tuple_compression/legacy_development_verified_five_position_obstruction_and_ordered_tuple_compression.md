@@ -1,7 +1,5 @@
 # Verified five-position obstruction and ordered-tuple compression — preserved pre-item development
 
-## Development
-
 ## Two compression lemmas with explicit hypotheses
 
 These lemmas repair two elementary steps without importing six-word protection. They do not certify the remaining positional reductions in [[explicit_proofs_for_finite_terminal_compression]].

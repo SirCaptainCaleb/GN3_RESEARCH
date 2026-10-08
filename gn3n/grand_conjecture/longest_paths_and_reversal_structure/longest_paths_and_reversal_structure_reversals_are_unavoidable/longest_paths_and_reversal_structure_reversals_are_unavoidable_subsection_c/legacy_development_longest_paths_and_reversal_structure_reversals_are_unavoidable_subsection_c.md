@@ -1,7 +1,5 @@
 # Global marked-reversal minimization — preserved pre-item development
 
-## Development
-
 ### Imbalance in a frozen complement forces a new reversal carrier
 
 Call a spanning three-cover

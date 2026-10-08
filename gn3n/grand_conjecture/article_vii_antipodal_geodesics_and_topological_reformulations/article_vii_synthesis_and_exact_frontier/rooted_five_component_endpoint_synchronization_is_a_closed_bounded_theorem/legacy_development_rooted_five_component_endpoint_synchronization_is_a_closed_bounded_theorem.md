@@ -1,7 +1,5 @@
 # Rooted five-component endpoint synchronization is a closed bounded theorem — preserved pre-item development
 
-## Development
-
 ## Rooted five-component endpoint synchronization is now a closed bounded theorem
 
 Let

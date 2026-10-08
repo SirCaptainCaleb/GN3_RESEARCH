@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Put
 \[
 D=\{a_1,a_0,a_{\lambda-1},a_{\lambda-2}\}.

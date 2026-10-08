@@ -1,7 +1,5 @@
 # Double-hole endpoint certificates force cross-tail five-supports — preserved pre-item development
 
-## Development
-
 ## Double-hole endpoint certificates synchronize across the two tails
 
 Let

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let
 \[
 H-x=P\mid Q,\qquad P=(p_0,\ldots ,p_m),

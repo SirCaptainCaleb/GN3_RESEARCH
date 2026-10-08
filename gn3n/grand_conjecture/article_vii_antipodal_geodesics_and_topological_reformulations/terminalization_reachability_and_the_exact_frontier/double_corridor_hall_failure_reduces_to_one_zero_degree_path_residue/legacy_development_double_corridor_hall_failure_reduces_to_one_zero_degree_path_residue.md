@@ -1,7 +1,5 @@
 # Double-corridor Hall failure reduces to one zero-degree path residue — preserved pre-item development
 
-## Development
-
 ## Hall failure for double-corridor attachment has one genuinely new residue
 
 Retain the notation of [[terminal_attachment_matching_gives_an_outward_repair_of_a_double_corridor]]. The terminal attachment graph is bipartite with left side ({P,Q}) and right side ({x,y}), where

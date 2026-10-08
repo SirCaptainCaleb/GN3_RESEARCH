@@ -1,7 +1,5 @@
 # Minimum-counterexample closure is a one-rank support-pair extension problem — preserved pre-item development
 
-## Development
-
 ## Minimum-counterexample closure is a one-rank support-pair extension problem
 
 Let \(H\) be a minimum-order counterexample to the spanning two-cover theorem. Then every proper induced subtournament satisfies the theorem. In particular, for every vertex \(x\),

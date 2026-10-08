@@ -1,7 +1,5 @@
 # Central-pair gauge does not exclude intrinsic–tie endpoint sign flips — preserved pre-item development
 
-## Development
-
 ## A fixed central gauge does not make all endpoint factors sign-neutral
 
 The central-pair tie-break in [[central_pair_gauge_removes_endpoint_block_sign_changes]] is odd and does eliminate flips of the gauge itself under endpoint exchanges. Its stronger sign-localization conclusion needs an additional hypothesis: an endpoint swap may change whether the chamber is a tie case or a unique-orientation case, even though the gauge is unchanged.

@@ -1,7 +1,5 @@
 # Minimum-counterexample seams force a mixed edge or positioned reversal — preserved pre-item development
 
-## Development
-
 Let H be a minimum-order counterexample. Let S be a globally maximal Hamiltonian support and write
 H-S=P|Q,
 with P=(p_1,...,p_m), Q=(q_1,...,q_t).

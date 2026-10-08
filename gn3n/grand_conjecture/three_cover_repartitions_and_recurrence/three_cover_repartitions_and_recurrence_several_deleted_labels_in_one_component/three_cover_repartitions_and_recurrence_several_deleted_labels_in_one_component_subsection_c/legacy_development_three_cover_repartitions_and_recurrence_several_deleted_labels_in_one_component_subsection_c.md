@@ -1,7 +1,5 @@
 # Forest recurrence collapses to endpoint backtracking — preserved pre-item development
 
-## Development
-
 ### In the no-reversal forest residue, neutral recurrence cannot cycle
 
 Retain the selected deletion covers, support graph (J), and compatibility graph (K) from Lemma 6.

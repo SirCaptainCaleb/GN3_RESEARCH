@@ -1,7 +1,5 @@
 # Explicit proofs for finite terminal compression — preserved pre-item development
 
-## Development
-
 ## Explicit proof package for the finite terminal compression
 
 This addendum supplies the proof material identified as missing by [[independent_audit_finite_terminal_compression_proof_obligations]]. The arguments below are reconstructed from the archived migration proofs, with the failed archived shortcut for the span-two block omitted.

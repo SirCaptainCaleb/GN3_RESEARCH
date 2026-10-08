@@ -1,7 +1,5 @@
 # Three compatible one-vertex extensions have a common-endpoint normal form — preserved pre-item development
 
-## Development
-
 ## Three compatible one-vertex extensions have a common-endpoint normal form
 
 Let \(C\) be a vertex set and let \(a,b,c\notin C\) be distinct. Suppose

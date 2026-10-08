@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 A large support-compatible family has only one varying support.
 
 **Lemma 6 (localization).** Let \(D\subseteq V(H)\), \(|D|\ge3\), and suppose \(\{F_d:d\in D\}\) is pairwise support-compatible. Then there are disjoint sets \(X,Q\) with \(V(H)=X\cup Q\), \(D\subseteq X\), such that

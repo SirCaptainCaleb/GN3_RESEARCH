@@ -1,7 +1,5 @@
 # A deletion-critical non-Hamiltonian six-set exists — preserved pre-item development
 
-## Development
-
 A direct binary feasibility search followed by exhaustive verification gives a genuine six-vertex boundary tournament which is non-Hamiltonian although every vertex deletion is Hamiltonian. This refutes the proposed scale-independent shortcut that every deletion-critical non-Hamiltonian support has order at most five.
 
 Use vertices 0,...,5. Index the 60 independent reversal-pair variables lexicographically by triples (m,u,w) with u<w, u,w distinct from m. Bit 1 means (u,m,w) is tight and bit 0 means its boundary reverse (w,m,u) is tight. The 60-bit orientation word, padded on the left to hexadecimal, is

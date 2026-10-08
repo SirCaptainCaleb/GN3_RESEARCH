@@ -1,7 +1,5 @@
 # Corrected cube dictionary: unordered pole-crossing and ordered windows — preserved pre-item development
 
-## Development
-
 ### Corrected cube dictionary: unordered pole-crossing versus ordered windows
 
 Let \(Q_V\) be the Boolean cube on \(V\). An antipodal cube geodesic

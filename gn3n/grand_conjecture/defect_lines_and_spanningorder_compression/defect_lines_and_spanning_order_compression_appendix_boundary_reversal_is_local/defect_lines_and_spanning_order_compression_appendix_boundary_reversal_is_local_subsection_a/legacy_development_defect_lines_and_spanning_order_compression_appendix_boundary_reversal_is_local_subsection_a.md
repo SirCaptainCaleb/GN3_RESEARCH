@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Boundary reversal says only that
 \[
 (a,b,c)\text{ is non-tight}\quad\Longleftrightarrow\quad(c,b,a)\text{ is tight}.

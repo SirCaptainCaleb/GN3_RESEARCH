@@ -1,7 +1,5 @@
 # Moving the auxiliary center can reverse arbitrary large nearest radii without same face escape — preserved pre-item development
 
-## Development
-
 ## A moving-center obstruction to the radius-three elevation
 
 This addendum examines the use of [[separated_protected_determining_windows_force_a_persistent_witness_or_same_face_escape]] in [[elevation_exact_violations_reduce_terminal_topology_to_radius_at_most_three]]. The separated-window theorem fixes absolute determining positions throughout a face. Auxiliary-radius protection is measured from the position of r, which can change within its face block. These hypotheses are not interchangeable.

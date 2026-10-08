@@ -1,7 +1,5 @@
 # The zero-root support component is uniformly balanced — preserved pre-item development
 
-## Development
-
 Let H be a minimum counterexample on n=2r+1 vertices. For each hole v choose a minimum-imbalance deletion cover F_v, and suppose the zero exact-root theorem supplies one balanced selected cover F_x=P|Q with |P|=|Q|=r. Let J be the selected support graph: its vertices are the path supports occurring in the F_v and the edge labeled v joins the two supports of F_v.
 
 Let T be the connected component of J containing the balanced edge PQ. Then every support vertex of T has cardinality r. Consequently every selected deletion cover whose edge lies in T is balanced r|r.

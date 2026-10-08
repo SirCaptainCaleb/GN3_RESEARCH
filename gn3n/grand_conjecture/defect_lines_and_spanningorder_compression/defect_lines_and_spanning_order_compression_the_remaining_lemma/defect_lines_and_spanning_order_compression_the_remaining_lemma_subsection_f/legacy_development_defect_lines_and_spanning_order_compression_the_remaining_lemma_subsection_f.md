@@ -1,7 +1,5 @@
 # Coherent residue collapses — preserved pre-item development
 
-## Development
-
 ### The coherent bridge residue already contains a bounded support
 
 **Lemma 36 (coherent residue collapse).** In the coherent failure residue of Lemma 35, the four-set

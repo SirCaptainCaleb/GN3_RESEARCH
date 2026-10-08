@@ -1,7 +1,5 @@
 # Balanced ten-position repairs have explicit protected endpoint orbits — preserved pre-item development
 
-## Development
-
 ## Full endpoint-transport orbits of a balanced ten-position repair
 
 This proves the orbit condition left explicit in [[frozen_window_carriers_and_separator_relabeling_require_precise_invariants]], using only positive witnesses.

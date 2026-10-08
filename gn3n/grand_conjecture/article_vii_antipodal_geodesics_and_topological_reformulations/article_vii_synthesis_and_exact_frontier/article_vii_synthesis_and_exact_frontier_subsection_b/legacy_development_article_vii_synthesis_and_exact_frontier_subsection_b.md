@@ -1,7 +1,5 @@
 # Closure: width-three mixed-end handoff — preserved pre-item development
 
-## Development
-
 
 ### Article VII closure theorem
 

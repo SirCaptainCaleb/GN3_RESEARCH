@@ -1,7 +1,5 @@
 # Singleton support pairs fill every permutahedron two-face — preserved pre-item development
 
-## Development
-
 ## Singleton supports make every permutahedron two-face loop fill
 
 Work in the singleton-allowed Hamiltonian support-pair poset

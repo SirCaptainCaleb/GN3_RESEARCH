@@ -1,7 +1,5 @@
 # Common-ideal separation reduces dissimilar deletion covers to a four-cell order rectangle — preserved pre-item development
 
-## Development
-
 ## Common ideals are the correct interface for two deletion covers
 
 Let

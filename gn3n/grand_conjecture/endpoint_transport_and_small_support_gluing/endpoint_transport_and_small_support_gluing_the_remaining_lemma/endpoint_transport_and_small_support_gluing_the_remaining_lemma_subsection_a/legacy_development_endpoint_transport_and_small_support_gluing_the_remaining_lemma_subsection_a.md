@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 All non-decreasing cases now have one of the following forms:
 - a displayed end-edge reversal;
 - a one-vertex transfer whose endpoint realizations all use the same side;

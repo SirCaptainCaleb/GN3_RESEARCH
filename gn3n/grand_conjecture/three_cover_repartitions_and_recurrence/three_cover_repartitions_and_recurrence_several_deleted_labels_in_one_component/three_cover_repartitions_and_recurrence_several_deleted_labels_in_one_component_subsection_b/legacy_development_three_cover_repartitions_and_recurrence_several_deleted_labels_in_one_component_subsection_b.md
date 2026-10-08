@@ -1,7 +1,5 @@
 # Support-graph shadow of neutral recurrence — preserved pre-item development
 
-## Development
-
 ### Compatibility cycles project to the support graph
 
 Fix one selected deletion cover (F_d) for each label (d), and let (J) be the selected support graph. Let (K) be the graph on labels in which (ab) is an edge when (F_a,F_b) are compatible.

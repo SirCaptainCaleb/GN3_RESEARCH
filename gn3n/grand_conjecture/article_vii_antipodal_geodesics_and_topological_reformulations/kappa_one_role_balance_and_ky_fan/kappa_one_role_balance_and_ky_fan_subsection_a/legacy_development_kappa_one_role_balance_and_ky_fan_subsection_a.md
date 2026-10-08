@@ -1,7 +1,5 @@
 # Counting and single-switch consequences — preserved pre-item development
 
-## Development
-
 Let k=\kappa_2(H)=1. The exact-root image lies in a linear space of dimension n-5, leaving three dimensions on the antipodal sphere S^{n-2}. For any prescribed triple S of actual vertices, augment the exact-root label by the three canonical role coordinates \rho_z\in\{+1,0,-1\} (left path, hole, right path), z\in S. Reversal negates the whole label, so Borsuk--Ulam gives a proper carrier face F with strictly positive weights, exact-root balance, and zero weighted role average for every z\in S.
 
 Assume F has no zero exact root. Apply the four-central-vertices theorem. Every block strictly before the central block B is uniformly in the left canonical path and every block strictly after B is uniformly in the right canonical path. Hence a prescribed anchor with zero role average cannot lie outside B, so S\subseteq B. The two-vertex central case is impossible.

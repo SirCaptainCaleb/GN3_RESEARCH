@@ -1,7 +1,5 @@
 # Reseeding forces the maximal support to dominate the complement — preserved pre-item development
 
-## Development
-
 ## Reseeding forces the maximal support to dominate the complement
 
 Let

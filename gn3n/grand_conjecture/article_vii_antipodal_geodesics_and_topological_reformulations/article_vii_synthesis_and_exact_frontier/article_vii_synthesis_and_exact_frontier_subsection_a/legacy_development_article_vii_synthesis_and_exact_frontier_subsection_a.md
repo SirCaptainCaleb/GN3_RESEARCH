@@ -1,7 +1,5 @@
 # Exact formulations and the pre-compression frontier — preserved pre-item development
 
-## Development
-
 ### The exact equivalence chain
 
 The purpose of Article VII is not to replace the local GN3 theory of Articles I–VI. It is to identify the global obstruction geometrically and to translate the original conjecture into exact antipodal models.

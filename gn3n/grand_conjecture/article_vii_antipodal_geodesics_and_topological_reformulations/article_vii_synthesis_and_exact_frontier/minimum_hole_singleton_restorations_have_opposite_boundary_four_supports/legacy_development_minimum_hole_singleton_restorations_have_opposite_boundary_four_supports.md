@@ -1,7 +1,5 @@
 # Minimum-hole singleton restorations have opposite-boundary four-supports — preserved pre-item development
 
-## Development
-
 ## Singleton restorations have opposite-boundary four-supports
 
 Let \(X\) be a minimum two-cover deletion set and fix

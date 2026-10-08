@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The forest alternative cannot in general be completed by choosing two supports already present in the selected family.
 
 Let \(J\) be a connected selected-support tree, with support \(S_u\) at each vertex \(u\). For vertices \(u,v\), let \(P_{uv}\) be their tree path.

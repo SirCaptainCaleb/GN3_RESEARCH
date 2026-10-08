@@ -1,7 +1,5 @@
 # Lexicographically maximal three-covers are nested endpoint-saturated — preserved pre-item development
 
-## Development
-
 ## Lexicographically maximal three-covers have nested endpoint saturation
 
 Let H be a minimum-order counterexample.

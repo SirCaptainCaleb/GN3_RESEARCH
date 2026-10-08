@@ -1,7 +1,5 @@
 # Minimum-counterexample seams reduce to reversal or an order-four rail — preserved pre-item development
 
-## Development
-
 Let H be a minimum-order counterexample and let S|P|Q be a saturated maximal-support state.
 
 Every proper Hamiltonian support K has pc(H-K)=2: minimality gives pc(H-K)<=2, while a Hamiltonian H-K would two-cover H together with K.

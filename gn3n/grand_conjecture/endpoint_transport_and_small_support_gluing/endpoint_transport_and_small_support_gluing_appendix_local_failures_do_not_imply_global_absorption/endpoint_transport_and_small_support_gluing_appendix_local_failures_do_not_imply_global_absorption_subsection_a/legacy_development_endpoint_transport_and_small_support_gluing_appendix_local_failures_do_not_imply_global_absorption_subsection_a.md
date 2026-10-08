@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The following implications are not valid without additional hypotheses:
 - two vertices extending the same end of a path need not concatenate with each other;
 - two reverse triples through the two ends of a small support need not make that support Hamiltonian;

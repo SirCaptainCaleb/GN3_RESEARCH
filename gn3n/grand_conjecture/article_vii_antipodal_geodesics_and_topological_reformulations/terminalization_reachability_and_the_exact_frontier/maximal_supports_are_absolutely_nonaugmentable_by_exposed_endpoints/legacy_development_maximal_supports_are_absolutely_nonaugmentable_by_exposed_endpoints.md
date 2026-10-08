@@ -1,7 +1,5 @@
 # Maximal supports are absolutely nonaugmentable by exposed endpoints — preserved pre-item development
 
-## Development
-
 ## Maximality forbids every exposed-endpoint enlargement
 
 Retain the setting of [[maximal_support_normalization_applies_directly_to_article_vii_bounded_outputs]]:

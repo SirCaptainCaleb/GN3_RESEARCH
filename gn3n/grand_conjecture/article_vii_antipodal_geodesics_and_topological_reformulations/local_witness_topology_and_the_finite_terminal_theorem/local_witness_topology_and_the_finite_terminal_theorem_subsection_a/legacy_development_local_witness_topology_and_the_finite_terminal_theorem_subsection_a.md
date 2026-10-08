@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 ## Local-witness topology and the finite terminal theorem
 
 The exact inversion-window criterion admits a local language that is better suited to chamber topology than the extreme-root coordinates.

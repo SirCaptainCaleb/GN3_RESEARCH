@@ -1,7 +1,5 @@
 # Marked minima are global minima — preserved pre-item development
 
-## Development
-
 
 ### Endpoint polarities on a three-cover force an anchored four-support
 

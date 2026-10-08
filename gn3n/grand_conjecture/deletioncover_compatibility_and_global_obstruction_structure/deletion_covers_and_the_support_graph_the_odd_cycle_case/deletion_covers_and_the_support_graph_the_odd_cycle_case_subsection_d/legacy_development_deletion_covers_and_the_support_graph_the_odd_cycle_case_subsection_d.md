@@ -1,7 +1,5 @@
 # 6.3 Incidence identities — preserved pre-item development
 
-## Development
-
 Let \(C\) be the ordinary cycle on ground vertices \(d_0,\ldots ,d_{2k}\), with edge \(\{d_{i-1},d_i\}\). The support identities are
 \[
 \mathbf 1_{S_i}+\mathbf 1_{S_{i+1}}=\mathbf 1_V-\mathbf 1_{\{d_i\}},

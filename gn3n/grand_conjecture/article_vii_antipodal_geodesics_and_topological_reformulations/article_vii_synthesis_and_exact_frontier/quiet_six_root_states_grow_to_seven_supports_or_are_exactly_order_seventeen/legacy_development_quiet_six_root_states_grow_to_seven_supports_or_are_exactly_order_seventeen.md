@@ -1,7 +1,5 @@
 # Quiet six-root states grow to seven-supports or are exactly order seventeen — preserved pre-item development
 
-## Development
-
 ## The quiet six-root state either grows to a seven-support or is the exact order-seventeen two-triangle case
 
 Retain the quiet common-core state of [[quiet_six_root_common_cores_force_dense_six_supports_and_order_at_least_seventeen]]:

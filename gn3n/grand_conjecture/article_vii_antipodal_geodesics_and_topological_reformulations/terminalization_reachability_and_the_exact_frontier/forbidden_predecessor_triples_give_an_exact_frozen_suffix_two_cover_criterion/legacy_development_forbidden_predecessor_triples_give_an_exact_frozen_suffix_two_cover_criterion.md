@@ -1,7 +1,5 @@
 # Forbidden predecessor triples give an exact frozen suffix two cover criterion — preserved pre-item development
 
-## Development
-
 ## Forbidden predecessor triples give an exact frozen-suffix two-cover criterion
 
 Let W be a finite vertex set disjoint from a fixed tight path S=(z,q,s_3,...), with |S|>=2, in a boundary 3-tournament. Define

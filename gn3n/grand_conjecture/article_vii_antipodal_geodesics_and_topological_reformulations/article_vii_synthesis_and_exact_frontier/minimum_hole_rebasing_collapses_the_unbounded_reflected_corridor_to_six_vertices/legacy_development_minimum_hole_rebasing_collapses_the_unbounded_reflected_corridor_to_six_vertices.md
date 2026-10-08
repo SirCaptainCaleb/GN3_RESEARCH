@@ -1,7 +1,5 @@
 # Minimum-hole rebasing collapses the unbounded reflected corridor to six vertices — preserved pre-item development
 
-## Development
-
 ## Rebase at a minimum hole: the unbounded corridor collapses to six vertices
 
 Let H have kappa_2(H)=2, let X={x,y} be a minimum deletion pair, and fix a two-cover

@@ -1,7 +1,5 @@
 # Positive protection allows a disjoint single-sided span-two carrier — preserved pre-item development
 
-## Development
-
 ## A disjoint single-sided carrier survives positive-word protection
 
 This local construction distinguishes the positive three-word filtration from the dual-polarity filtration. It is not a counterexample to the grand two-cover conjecture.

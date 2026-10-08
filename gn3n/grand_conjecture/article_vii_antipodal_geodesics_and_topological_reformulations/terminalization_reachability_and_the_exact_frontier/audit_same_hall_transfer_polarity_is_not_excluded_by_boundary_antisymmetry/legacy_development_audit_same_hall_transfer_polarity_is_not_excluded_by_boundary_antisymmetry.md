@@ -1,7 +1,5 @@
 # Audit: same Hall transfer polarity is not excluded by boundary antisymmetry — preserved pre-item development
 
-## Development
-
 ## Audit: same Hall transfer polarity is not excluded by boundary antisymmetry
 
 The argument in [[isolated_hall_blocks_force_opposite_transfer_polarity_or_strict_potential_descent]] contains an invalid cyclic-rotation step, and [[opposite_hall_polarity_repairs_strong_imbalance_quadratic_descent]] therefore does not yet repair the directional gap.

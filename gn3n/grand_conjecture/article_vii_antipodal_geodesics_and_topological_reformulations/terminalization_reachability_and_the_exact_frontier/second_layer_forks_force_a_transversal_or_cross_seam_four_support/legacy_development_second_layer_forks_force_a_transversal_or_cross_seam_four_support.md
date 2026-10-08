@@ -1,7 +1,5 @@
 # Second-layer forks force a transversal or cross-seam four-support — preserved pre-item development
 
-## Development
-
 ## Second-layer forks force a four-support at every complementary seam
 
 Let (H) satisfy (kappa_2(H)=2). Let

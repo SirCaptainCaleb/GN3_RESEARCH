@@ -1,7 +1,5 @@
 # Terminal-root four-paths are not forced by an unoriented endpoint theorem — preserved pre-item development
 
-## Development
-
 ## An oriented terminal-root strengthening needs additional hypotheses
 
 The correction in [[correction_seven_set_endpoint_absorption_needs_oriented_endpoints]] identifies the missing endpoint orientation. Under bare boundary-tournament hypotheses, the proposed universal terminal-root strengthening is false.

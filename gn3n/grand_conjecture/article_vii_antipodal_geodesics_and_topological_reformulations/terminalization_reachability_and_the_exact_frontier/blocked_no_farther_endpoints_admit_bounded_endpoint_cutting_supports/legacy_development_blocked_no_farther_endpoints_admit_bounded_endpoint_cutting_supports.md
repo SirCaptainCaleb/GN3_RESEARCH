@@ -1,7 +1,5 @@
 # Blocked no-farther endpoints admit bounded endpoint-cutting supports — preserved pre-item development
 
-## Development
-
 ## A blocked/no-farther endpoint has a bounded endpoint-cutting Hamiltonian support
 
 Retain a genuine mixed reflected-double chamber

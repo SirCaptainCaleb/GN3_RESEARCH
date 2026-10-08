@@ -1,7 +1,5 @@
 # Support-preserving seam reseeds immediately create a short-rail state — preserved pre-item development
 
-## Development
-
 ## Support-preserving seam reseeds immediately create a short-rail state
 
 Let \(H\) be a no-two-cover boundary tournament with

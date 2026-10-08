@@ -1,7 +1,5 @@
 # Equality endpoints reduce to a hole-preserving same-endpoint extension residue — preserved pre-item development
 
-## Development
-
 ## Equality endpoints reduce to a hole-preserving same-endpoint extension residue
 
 Let

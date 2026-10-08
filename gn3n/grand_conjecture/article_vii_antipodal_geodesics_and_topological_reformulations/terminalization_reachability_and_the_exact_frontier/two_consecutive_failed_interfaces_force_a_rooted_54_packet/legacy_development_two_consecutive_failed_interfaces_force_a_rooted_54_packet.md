@@ -1,7 +1,5 @@
 # Correction: consecutive failed-interface hooks do not imply the rooted 5|4 packet — preserved pre-item development
 
-## Development
-
 ## Correction: the proposed consecutive-interface (5|4) theorem is invalid
 
 Development version 1 is withdrawn.

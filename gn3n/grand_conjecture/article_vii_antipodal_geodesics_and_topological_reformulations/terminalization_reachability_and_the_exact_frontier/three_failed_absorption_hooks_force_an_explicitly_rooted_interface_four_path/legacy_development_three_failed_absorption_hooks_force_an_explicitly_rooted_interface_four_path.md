@@ -1,7 +1,5 @@
 # Three failed-absorption hooks force an explicitly rooted interface four-path — preserved pre-item development
 
-## Development
-
 ## Three failed-absorption hooks force an explicitly rooted interface four-path
 
 Retain three distinct labels

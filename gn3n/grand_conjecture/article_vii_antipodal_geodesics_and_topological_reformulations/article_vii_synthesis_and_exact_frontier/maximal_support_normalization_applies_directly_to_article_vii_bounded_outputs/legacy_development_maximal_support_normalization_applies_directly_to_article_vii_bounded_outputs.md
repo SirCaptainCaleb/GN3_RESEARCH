@@ -1,7 +1,5 @@
 # Maximal-support normalization applies directly to Article VII bounded outputs — preserved pre-item development
 
-## Development
-
 ## Maximal-support normalization is valid once a two-coverable complement is known
 
 Let \(H\) be a boundary tournament with no spanning two-cover. Suppose there exists a proper Hamiltonian support \(S_0\subsetneq V(H)\) such that \(H-S_0\) has a two-cover. This hypothesis is supplied in several Article VII bounded-output branches, including the same-signature central four-support branch.

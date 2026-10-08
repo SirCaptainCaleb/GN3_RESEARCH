@@ -1,7 +1,5 @@
 # Hamiltonian prefix chains force every closed deletion subfamily to be the whole monotone interface — preserved pre-item development
 
-## Development
-
 Let H be any boundary 3-tournament with no spanning two-path cover. Let D be the family of ALL actual one-hole deletion-cover edges in the Boolean cube. An edge A -> A-x belongs to D precisely when A-x and V-A are nonempty Hamiltonian supports. In particular its tail has Hamiltonian complement and its head is Hamiltonian. No minimum-order hypothesis is used in this theorem.
 
 THE PREFIX-CHAIN OBSERVATION.

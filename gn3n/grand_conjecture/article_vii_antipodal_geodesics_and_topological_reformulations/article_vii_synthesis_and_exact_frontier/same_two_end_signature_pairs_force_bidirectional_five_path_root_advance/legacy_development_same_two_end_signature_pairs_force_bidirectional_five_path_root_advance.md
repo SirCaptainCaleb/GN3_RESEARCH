@@ -1,7 +1,5 @@
 # Same two-end signature pairs force bidirectional five-path root advance — preserved pre-item development
 
-## Development
-
 ## Same two-end signature pairs give bidirectional five-path root advance
 
 Let \(X\) be a minimum two-cover deletion set and fix

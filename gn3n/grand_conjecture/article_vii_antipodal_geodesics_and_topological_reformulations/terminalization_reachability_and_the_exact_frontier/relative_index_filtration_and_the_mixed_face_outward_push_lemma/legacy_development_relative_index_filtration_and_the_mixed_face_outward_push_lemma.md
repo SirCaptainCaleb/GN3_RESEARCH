@@ -1,7 +1,5 @@
 # Relative-index filtration proves terminalization — preserved pre-item development
 
-## Development
-
 ## Relative-index filtration proves terminalization
 
 Order the fixed witness-path edges from the center outward as

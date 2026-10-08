@@ -1,7 +1,5 @@
 # Blocked exterior vertices either extend the opposite tail or force root advance — preserved pre-item development
 
-## Development
-
 ## Elevation of the blocked endpoint: direct opposite-tail extension or root advance
 
 Retain a genuine mixed reflected double

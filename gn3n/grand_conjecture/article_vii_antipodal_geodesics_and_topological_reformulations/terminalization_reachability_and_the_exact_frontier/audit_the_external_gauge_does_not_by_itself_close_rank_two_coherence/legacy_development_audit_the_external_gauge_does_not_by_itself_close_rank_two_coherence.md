@@ -1,7 +1,5 @@
 # Audit: the external gauge does not by itself close rank-two coherence — preserved pre-item development
 
-## Development
-
 ## Audit of the proposed external-gauge closure
 
 The proposed argument in [[rank_two_coherence_closes_by_the_external_gauge]] is not valid for the witness labeling actually used in Article VII. The fixed external antipodal gauge does **not** orient every occurrence of a fixed unsigned witness edge.

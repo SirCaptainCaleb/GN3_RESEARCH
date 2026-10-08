@@ -1,7 +1,5 @@
 # Interrupted elevation checkpoint: attack the genuine two-deletion five-component interface — preserved pre-item development
 
-## Development
-
 ## Interrupted elevation checkpoint: the five-component two-deletion interface
 
 This note records the unfinished elevation direction reached immediately before stopping. It is a research checkpoint, not a closure claim.

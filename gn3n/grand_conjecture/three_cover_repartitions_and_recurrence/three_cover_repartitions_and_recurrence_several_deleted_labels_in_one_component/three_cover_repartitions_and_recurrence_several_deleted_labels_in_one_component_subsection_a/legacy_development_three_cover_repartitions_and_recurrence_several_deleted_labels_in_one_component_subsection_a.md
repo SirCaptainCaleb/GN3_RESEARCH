@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 There is a second argument that does not follow one trajectory.
 
 Two deletion covers are compatible when, after deleting both omitted labels, they induce the same support partition and the same relative order on every common support.

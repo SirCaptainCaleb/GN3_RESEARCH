@@ -1,7 +1,5 @@
 # Compatibility criterion for persistent orientation relabeling — preserved pre-item development
 
-## Development
-
 ## Exact global criterion for the proposed change of labels
 
 Fix one reflected positive span-two depth r. Let A be an invariant finite family of protected faces, none of which contains an outward chamber, and each of which has a nonempty set O(F) of orientations occurring in every chamber. Faces with determining span at least thirteen satisfy this last condition by [[separated_protected_determining_windows_force_a_persistent_witness_or_same_face_escape]].

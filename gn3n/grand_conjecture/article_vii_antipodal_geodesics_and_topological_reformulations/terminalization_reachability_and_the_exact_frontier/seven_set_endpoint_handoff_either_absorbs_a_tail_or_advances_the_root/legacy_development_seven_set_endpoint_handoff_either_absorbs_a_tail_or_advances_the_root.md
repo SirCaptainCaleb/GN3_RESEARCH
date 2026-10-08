@@ -1,7 +1,5 @@
 # Audit: unoriented endpoint exposure does not give a tail handoff — preserved pre-item development
 
-## Development
-
 The proposed handoff from a seven-set endpoint cover to a fixed tight tail is not justified.
 
 The theorem in [[localextend01]] says that for a seven-set (U) and prescribed (win U), there is a (4|3) cover (K|R) in which a Hamilton order of (K) has (w) as **an endpoint**, and at least three different vertices can occur as its neighbor. It does not say that (w) can be prescribed as the initial endpoint or as the terminal endpoint.

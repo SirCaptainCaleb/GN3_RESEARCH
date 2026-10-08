@@ -1,7 +1,5 @@
 # Full Article VII top-down elevation pass: composed results — preserved pre-item development
 
-## Development
-
 ## Full top-down elevation pass over the current Article VII composition
 
 This pass applies the project elevation reflex to the current Article VII composition from its first exact order formulation through terminalization. The question at each step is: can later mathematics generalize it, strengthen it, or move it earlier so that downstream obligations disappear?

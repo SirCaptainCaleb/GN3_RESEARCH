@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Choose a longest tight path
 \[
 A=(a_0,\ldots ,a_{\lambda-1})

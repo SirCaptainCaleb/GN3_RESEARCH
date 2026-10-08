@@ -1,7 +1,5 @@
 # Fixed-hole reverse rectangles are cuts in an ordinary link tournament — preserved pre-item development
 
-## Development
-
 ## The fixed-hole opposite-boundary obstruction is an ordinary link-tournament cut
 
 Fix a vertex \(x\) of a boundary tournament \(H\). Define a directed graph \(T_x\) on

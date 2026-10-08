@@ -1,7 +1,5 @@
 # A compatible exceptional agreement cycle must contain an adjacent slot reversal — preserved pre-item development
 
-## Development
-
 ## A compatible exceptional agreement cycle must contain an adjacent-slot reversal
 
 Let H have no spanning two-cover, |V(H)|>=5. Choose deletion covers whose support-agreement graph is 2-connected. Suppose additionally that the path orders agree on every agreement edge after restricting to its common domain.

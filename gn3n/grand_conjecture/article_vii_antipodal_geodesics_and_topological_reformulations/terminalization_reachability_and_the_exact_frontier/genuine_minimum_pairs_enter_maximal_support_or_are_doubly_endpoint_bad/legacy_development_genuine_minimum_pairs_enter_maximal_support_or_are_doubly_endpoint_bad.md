@@ -1,7 +1,5 @@
 # Genuine minimum pairs enter maximal support or are doubly endpoint-bad — preserved pre-item development
 
-## Development
-
 ## A genuine minimum pair either enters maximal-support normalization or is doubly endpoint-bad
 
 Let

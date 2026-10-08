@@ -1,7 +1,5 @@
 # Exact-root surplus bound retains an unbounded zero-root alternative — preserved pre-item development
 
-## Development
-
 The dimension count and anchor argument in [[exact_root_surplus_forces_deletion_distance_at_most_five]] do not establish the unconditional conclusion kappa_2(H)<=5.
 
 Retain its notation k=kappa_2(H)>=1 and m=n-2. The argument shows the following conditional disjunction: the augmented exact-root/role map has a zero with a minimal carrier F; either F contains a zero exact-root chamber, or, using the cited bounded-central-block theorem and uniform exterior roles, its k+2 anchors fit into a block of order at most seven and hence k<=5. The conclusion in the second alternative is sound subject to that cited theorem's hypotheses.

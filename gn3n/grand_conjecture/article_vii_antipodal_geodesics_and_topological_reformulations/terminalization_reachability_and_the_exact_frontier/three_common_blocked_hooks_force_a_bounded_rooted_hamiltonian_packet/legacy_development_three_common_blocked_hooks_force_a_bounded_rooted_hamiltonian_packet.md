@@ -1,7 +1,5 @@
 # Three common blocked hooks force a bounded anchor-containing Hamiltonian packet — preserved pre-item development
 
-## Development
-
 ## Three common blocked hooks force a bounded anchor-containing Hamiltonian packet
 
 Retain the genuine mixed reflected-double residue

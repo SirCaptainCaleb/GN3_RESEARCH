@@ -1,7 +1,5 @@
 # Audit: terminal surgery and compression use different witness polarities — preserved pre-item development
 
-## Development
-
 ## The witness polarity must be fixed before terminal surgery
 
 The proof currently uses two different avoidance predicates. Put
