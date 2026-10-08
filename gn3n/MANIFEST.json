@@ -539,7 +539,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T07:55:36.204753+00:00",
+  "generated_at": "2026-10-08T14:19:48.633749+00:00",
   "item_count": 576,
   "mirror_format": 18,
   "result_count": 0,
@@ -11273,7 +11273,7 @@
   },
   "toolkit_count": 56,
   "universal_document_versions": {
-    "guide": 38,
+    "guide": 40,
     "reflexes": 21
   }
 }
