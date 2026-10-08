@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: research-mirror-sync-${{ inputs.schema }}
+  group: research-mirror-sync-all-schemas
   cancel-in-progress: false
 
 jobs:
