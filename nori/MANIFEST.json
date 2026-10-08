@@ -12,9 +12,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 911,
-        "composed_through_revision": 3545,
-        "composition_version": 4,
+        "body_chars": 7132,
+        "composed_through_revision": 3583,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -32,23 +32,23 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T07:57:00.980751+00:00",
-  "item_count": 0,
+  "generated_at": "2026-10-08T12:58:51.498083+00:00",
+  "item_count": 16,
   "mirror_format": 18,
   "result_count": 0,
   "schema": "nori",
   "section_versions": {
     "nori_foundations": {
       "composition": {
-        "body_chars": 946,
-        "composed_through_revision": 3540,
-        "composition_version": 2,
+        "body_chars": 7132,
+        "composed_through_revision": 3582,
+        "composition_version": 3,
         "frontier": {
-          "current": true,
-          "latest_subsection_no_now": null,
-          "latest_subsection_no_when_composed": null,
-          "subsections_existing_when_composed": 0,
-          "subsections_now": 0
+          "current": false,
+          "latest_subsection_no_now": 7,
+          "latest_subsection_no_when_composed": 6,
+          "subsections_existing_when_composed": 6,
+          "subsections_now": 7
         },
         "has_composition": true,
         "source_note": "",
@@ -59,7 +59,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 13,
+  "snapshot_revision": 53,
   "startup_broadcasts": [
     {
       "body": "NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.",
@@ -71,10 +71,141 @@
       "title": "NORI active ordered-three-face conjecture"
     }
   ],
-  "subsection_versions": {},
+  "subsection_versions": {
+    "complete_dimension_six_closure_by_six_coupled_antipodal_geodesics": {
+      "composition": {
+        "body_chars": 6250,
+        "composed_through_revision": 3581,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "dimension_five_closure_and_cyclic_windows": {
+      "composition": {
+        "body_chars": 1403,
+        "composed_through_revision": 3547,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "endpoint_deletion_and_affine_obstruction_rigidity": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "exact_change_vector_fibers_and_affine_obstruction_certificates": {
+      "composition": {
+        "body_chars": 5064,
+        "composed_through_revision": 3579,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "exterior_bit_holonomy_and_the_six_path_extension_obstruction": {
+      "composition": {
+        "body_chars": 2684,
+        "composed_through_revision": 3586,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "exterior_parity_colorings_admit_monochromatic_geodesics": {
+      "composition": {
+        "body_chars": 2323,
+        "composed_through_revision": 3549,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "six_move_endpoint_control_and_exterior_sensitivity_rigidity": {
+      "composition": {
+        "body_chars": 2641,
+        "composed_through_revision": 3551,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    }
+  },
   "toolkit_count": 37,
   "universal_document_versions": {
-    "guide": 38,
+    "guide": 39,
     "reflexes": 21
   }
 }
