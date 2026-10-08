@@ -11,7 +11,7 @@ from typing import Any
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
-SCHEMAS = ("gn3n", "nor", "linp")
+SCHEMAS = ("gn3n", "nor", "linp", "nori")
 TABLES = ("nodes","article_sections","dictionary","compositions","composition_sources")
 PAGE = 500
 
