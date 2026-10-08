@@ -1,4 +1,4 @@
-name: Refresh NORI research context
+name: NORI | Rebuild current artifact (sync Supabase first)
 
 on:
   workflow_dispatch:
