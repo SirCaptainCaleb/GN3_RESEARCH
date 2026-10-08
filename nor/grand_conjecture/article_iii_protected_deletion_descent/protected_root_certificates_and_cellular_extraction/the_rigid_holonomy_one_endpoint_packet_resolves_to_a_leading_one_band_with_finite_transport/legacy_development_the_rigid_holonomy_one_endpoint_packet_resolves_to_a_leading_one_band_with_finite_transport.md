@@ -1,9 +1,5 @@
 # The rigid holonomy-one endpoint packet resolves to a leading one-band with finite transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue the unique residual long endpoint packet of root 145.

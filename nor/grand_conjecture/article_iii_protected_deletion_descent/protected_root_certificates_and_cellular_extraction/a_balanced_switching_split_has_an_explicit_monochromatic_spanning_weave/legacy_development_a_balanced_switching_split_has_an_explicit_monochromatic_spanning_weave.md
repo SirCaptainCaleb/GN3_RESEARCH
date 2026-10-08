@@ -1,9 +1,5 @@
 # Audit correction: mixed Hamiltonian weaves obey a binary second-order recurrence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: arbitrary run-at-most-two merging is not monochromatic

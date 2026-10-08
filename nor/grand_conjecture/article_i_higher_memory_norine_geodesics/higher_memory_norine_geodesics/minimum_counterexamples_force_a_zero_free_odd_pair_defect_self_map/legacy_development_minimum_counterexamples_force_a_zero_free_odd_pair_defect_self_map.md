@@ -1,9 +1,5 @@
 # Minimum counterexamples force a zero-free odd pair-defect self-map — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum counterexamples force a zero-free odd pair-defect self-map

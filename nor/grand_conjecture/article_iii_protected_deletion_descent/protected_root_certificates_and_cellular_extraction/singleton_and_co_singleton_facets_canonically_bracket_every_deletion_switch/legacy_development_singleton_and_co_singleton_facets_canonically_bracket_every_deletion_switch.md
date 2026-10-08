@@ -1,9 +1,5 @@
 # Singleton and co-singleton facets canonically bracket every deletion switch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Singleton and co-singleton facets canonically bracket every deletion switch

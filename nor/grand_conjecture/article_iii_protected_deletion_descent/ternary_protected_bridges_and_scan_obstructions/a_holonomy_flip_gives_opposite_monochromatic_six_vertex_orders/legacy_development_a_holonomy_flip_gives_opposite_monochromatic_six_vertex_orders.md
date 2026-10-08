@@ -1,9 +1,5 @@
 # A holonomy flip gives opposite monochromatic six-vertex orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A holonomy flip gives opposite monochromatic six-vertex orders

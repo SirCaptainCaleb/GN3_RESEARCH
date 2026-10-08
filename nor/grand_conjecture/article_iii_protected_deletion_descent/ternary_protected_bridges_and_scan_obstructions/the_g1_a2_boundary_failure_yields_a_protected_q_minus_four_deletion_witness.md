@@ -1,9 +1,1 @@
 # The g=1 A2 boundary failure yields a protected q-minus-four deletion witness
-
-## Composition
-
-(none yet)
-
-## Development
-
-Boundary-safe resolution of the recurrent flat A2 g=1 branch. Use residual coordinates a,b,c in the forward cyclic order a->b->c->a and common outside order ...A,B,...,C,D,E,F,... . Assume g=alpha(u,B,C)=1 for every residual u. If the suffix terminates before E, the previously advertised full weave has no unchecked next boundary window and closes directly. Otherwise the audited companion constraints in the recurrent A2 configuration give alpha(u,D,E)=alpha(u,E,F)=0 for every residual u, while alpha(D,E,F)=1 is the untouched suffix color. Instead of using the faulty full weave through c, omit c and take the deletion order with local block (A,B,a,C,b,D,E,F). Its six consecutive statuses are: alpha(A,B,a)=0; alpha(B,a,C)=0 because alpha(a,B,C)=1; alpha(a,C,b)=0 because alpha(a,b,C)=1; alpha(C,b,D)=0 because alpha(b,C,D)=1; alpha(b,D,E)=0 by the companion boundary constraint; and alpha(D,E,F)=1. Hence the local word is exactly 000001. Every coordinate outside the block remains in its original order, the left ordered boundary pair (A,B) is unchanged, and the right ordered boundary pair (E,F) is unchanged. Therefore this is a genuine one-change deletion witness, omitting c, with no hidden reconnection windows. Relative to the original recurrent carrier, the 0-to-1 threshold is transported four windows to the right; equivalently the right/1 phase is shortened by four. Thus the g=1 branch has the precise strategy form requested by the boundary-surgery broadcast: either the suffix is too short and the full weave finishes NOR, or the failed boundary window yields an actual protected deletion witness with a strict one-sided phase-length improvement. No claim of global termination is made from this move alone.

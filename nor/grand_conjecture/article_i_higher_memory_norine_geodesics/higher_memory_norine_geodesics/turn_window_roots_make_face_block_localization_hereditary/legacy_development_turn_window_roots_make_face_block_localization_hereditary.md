@@ -1,9 +1,5 @@
 # Turn-window roots make face-block localization hereditary — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Turn-window roots repair the boundary leakage in first/last-state localization

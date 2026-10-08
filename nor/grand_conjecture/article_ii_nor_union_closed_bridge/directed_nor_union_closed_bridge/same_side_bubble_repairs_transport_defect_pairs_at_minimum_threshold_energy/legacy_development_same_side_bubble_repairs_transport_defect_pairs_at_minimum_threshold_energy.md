@@ -1,9 +1,5 @@
 # Same-side bubble repairs transport defect pairs at minimum threshold energy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same-side bubble toggles are nonincreasing for threshold defect count

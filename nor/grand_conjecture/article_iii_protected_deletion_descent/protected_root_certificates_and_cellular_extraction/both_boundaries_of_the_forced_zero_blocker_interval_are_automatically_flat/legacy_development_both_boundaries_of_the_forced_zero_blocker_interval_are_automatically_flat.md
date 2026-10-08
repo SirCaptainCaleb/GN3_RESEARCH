@@ -1,9 +1,5 @@
 # Both boundaries of the forced-zero blocker interval are automatically flat — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Both boundaries of the forced-zero blocker interval are automatically flat

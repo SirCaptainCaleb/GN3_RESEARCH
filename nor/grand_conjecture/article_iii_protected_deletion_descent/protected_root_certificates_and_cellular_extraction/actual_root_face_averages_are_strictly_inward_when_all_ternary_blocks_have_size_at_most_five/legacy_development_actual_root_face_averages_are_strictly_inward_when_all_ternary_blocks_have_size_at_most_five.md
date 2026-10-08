@@ -1,9 +1,5 @@
 # Actual-root face averages are zero-free on ternary faces with blocks of size at most five — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Actual-root face averages are zero-free on ternary faces with blocks of size at most five

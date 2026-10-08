@@ -1,23 +1,5 @@
 # Five-face curvature gives a canonical Sperner label when no facet is flat
 
-## Composition
-
-Work with a pure alternating ternary orientation alpha. Call a tetrahedron flat when all four pivot links are transitive, singly curved when exactly one pivot link is cyclic, and fully curved when all four pivot links are cyclic, using the established three-way tetrahedral classification.
-
-Lemma. A five-element set W contains at most two fully curved tetrahedra. If three existed, their intersection would contain two vertices. Choose a pivot o in that intersection. Each of those tetrahedra would give a different directed triangle in the link tournament G_o on W minus {o}, which has four vertices. But a four-vertex tournament has at most two directed triangles. For completeness, its number of cyclic triangles is 4 minus sum_v binom(d^+(v),2): each transitive triple has one vertex beating the other two. Since the outdegrees sum to six, that sum is at least two (the minimum is attained at degrees 1,1,2,2). This proves the bound.
-
-Proposition: labeling a five-face with no flat tetrahedral facet. If W has no flat tetrahedral facet, it has exactly one fully curved facet and four singly curved facets. Indeed the number s of singly curved facets is even by delta^2 f=0, the number u of fully curved facets is at most two by the lemma, and s+u=5. The only possibility is s=4,u=1.
-
-Define q(W) to be the unique vertex omitted by that fully curved facet. This is an intrinsic choice label q(W) in W, with no auxiliary coordinate order. In particular W minus {q(W)} is the unique fully curved tetrahedron; all four other tetrahedral facets are singly curved. This label has a direct combinatorial consequence: if a fully labeled barycentric chain reaches W at rank five, and its label at W is q(W), then its rank-four predecessor is necessarily the fully curved facet. Its first four coordinates therefore contain exactly one unavoidable alpha switch, independent of their internal order.
-
-This is a curvature-based Sperner label, rather than a label selecting the endpoint of an unrelated witness. On five-faces possessing a flat facet one may choose a vertex opposite a selected flat facet; that gives a legal choice label too, although it is not canonical when several flat facets exist. In either branch the rank-five label selects the curvature type of the preceding rank-four face.
-
-Limitations and refinement. The result does not yet give a label on all ranks whose fully labeled chamber is NOR-good. Appending q(W) after an arbitrary order of the fully curved predecessor can introduce a return switch. Subsection fully_curved_tetrahedra_have_a_unique_predecessor_for_every_prescribed_exit resolves this local ambiguity by selecting the first two vertices while retaining the ordered last pair and the coface vertex. The remaining requirement is compatibility of those coface-dependent selections across overlapping five-faces. A connector argument must control that transport of orientation signs. This is not a small-order cutoff claim: the statement applies to every five-face of the simplex, in arbitrary ambient size, and is intended as a local boundary rule for the refined simplex labeling.
-
-The at-most-two bound was also independently posted in a_five_set_contains_at_most_two_fully_curved_tetrahedra. The contribution here is its combination with coboundary parity to define the canonical no-flat choice label.
-
-## Development
-
 Work with a pure alternating ternary orientation alpha. Call a tetrahedron flat when all four pivot links are transitive, singly curved when exactly one pivot link is cyclic, and fully curved when all four pivot links are cyclic, using the established three-way tetrahedral classification.
 
 Lemma. A five-element set W contains at most two fully curved tetrahedra. If three existed, their intersection would contain two vertices. Choose a pivot o in that intersection. Each of those tetrahedra would give a different directed triangle in the link tournament G_o on W minus {o}, which has four vertices. But a four-vertex tournament has at most two directed triangles. For completeness, its number of cyclic triangles is 4 minus sum_v binom(d^+(v),2): each transitive triple has one vertex beating the other two. Since the outdegrees sum to six, that sum is at least two (the minimum is attained at degrees 1,1,2,2). This proves the bound.

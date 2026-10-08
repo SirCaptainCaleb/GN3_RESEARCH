@@ -1,9 +1,5 @@
 # Smallest directed-sector counterexamples force a tight cyclic transition block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Lemma: smallest counterexamples in the directed sector force a tight cyclic transition block

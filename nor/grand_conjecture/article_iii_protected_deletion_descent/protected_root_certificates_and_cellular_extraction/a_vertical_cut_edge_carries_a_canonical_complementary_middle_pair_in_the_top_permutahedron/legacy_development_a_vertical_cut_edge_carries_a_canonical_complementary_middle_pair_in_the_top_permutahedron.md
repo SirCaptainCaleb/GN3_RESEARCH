@@ -1,9 +1,5 @@
 # A vertical cut edge carries a canonical complementary-middle pair in the top permutahedron — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Corrected local complementary-middle lemma

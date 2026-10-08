@@ -1,9 +1,5 @@
 # Uniform comparisons forbid every contiguous two-color exterior splice — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Uniform comparisons exclude every contiguous cycle-path splice

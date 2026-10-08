@@ -1,9 +1,5 @@
 # Lexicographic extremality forces full boundaries on every wide two-change band — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Lexicographic extremality forces full boundaries on every wide two-change band

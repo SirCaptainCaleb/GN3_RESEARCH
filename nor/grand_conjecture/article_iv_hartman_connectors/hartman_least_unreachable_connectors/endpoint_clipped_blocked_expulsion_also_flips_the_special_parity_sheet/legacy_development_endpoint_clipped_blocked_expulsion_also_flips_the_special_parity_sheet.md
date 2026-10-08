@@ -1,9 +1,5 @@
 # Endpoint-clipped blocked expulsion also flips the special parity sheet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue with the zero-polarity blocked x-cell

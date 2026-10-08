@@ -1,9 +1,5 @@
 # Audit: raw antipodal terminal-root separation is vacuous without an orientation slice — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The graded central-cut model for terminal barriers is valid, but its finite-separation branch needs one qualification.

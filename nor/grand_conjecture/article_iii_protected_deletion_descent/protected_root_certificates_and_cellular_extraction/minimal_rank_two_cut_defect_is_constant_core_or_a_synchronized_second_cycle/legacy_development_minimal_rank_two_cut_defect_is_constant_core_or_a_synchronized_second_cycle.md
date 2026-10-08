@@ -1,9 +1,5 @@
 # Repeated partners split the defect circulation but not the protected root cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For the endpoint-induced protected root cycle of root 84,

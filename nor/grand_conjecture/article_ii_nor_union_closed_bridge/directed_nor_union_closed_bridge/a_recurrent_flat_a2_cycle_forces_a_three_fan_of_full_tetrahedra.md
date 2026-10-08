@@ -1,9 +1,1 @@
 # A recurrent flat A2 cycle forces a three-fan of full tetrahedra
-
-## Composition
-
-(none yet)
-
-## Development
-
-Exact local normal form for a recurrent flat A2 replacement cycle. Use the common carriers ...A,B,z,y,C,D... omit x, ...A,B,y,x,C,D... omit z, and ...A,B,x,z,C,D... omit y, all with the same 0-to-1 switch between alpha(A,B,u)=0 and the directed residual-pair status at pivot B. The residual tournaments at B,C,D are the directed cycle x->z->y->x on the front suffix packet. Flatness implies g:=alpha(u,B,C) is independent of u. Let h:=alpha(A,B,C). If g=1, choose any forward cyclic order a->b->c->a of U and replace the local block by A,B,a,C,b,c,D. Its five statuses are 0,0,0,1,1, so with the untouched 0-prefix and 1-suffix this is a spanning one-change order. Hence a counterexample forces g=0. If g=0 and h=0, then for any forward residual edge u->v the deletion order with local block A,B,C,u,v,D has statuses 0,0,1,1 and is again one-change; it leaves the A2 same-profile recurrence and enters the finite drift/escape dynamics. Therefore a genuinely recurrent A2 obstruction forces h=1 as well. With g=0,h=1, the flat four-face identity on {A,B,C,u} gives alpha(A,C,u)=1 for every u in U. Thus each tetrahedron {A,B,C,u} is fully curved in the ordered pattern (u,A,B,C): alpha(u,A,B)=0, alpha(A,B,C)=1, alpha(u,A,C)=1, alpha(u,B,C)=0. The only surviving recurrent flat packet is therefore a three-fan of fully-curved tetrahedra sharing the face {A,B,C}. This is a substantially more rigid target than the original A2 exchange cycle.

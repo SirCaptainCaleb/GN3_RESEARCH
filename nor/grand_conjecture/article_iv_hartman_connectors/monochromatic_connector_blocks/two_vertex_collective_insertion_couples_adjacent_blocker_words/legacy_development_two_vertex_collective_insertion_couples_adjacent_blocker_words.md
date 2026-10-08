@@ -1,9 +1,5 @@
 # Two-vertex collective insertion couples adjacent blocker words — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let C=(c_1,...,c_m) be a compatible zero connector in path-normalized square-path gauge, and let a,b be two uncovered shore vertices. Choose switching states on a,b so that the ordered pair a,b is forward. This choice is unique up to complementing both switch bits simultaneously.

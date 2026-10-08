@@ -1,9 +1,5 @@
 # Audit: gap weights have coloring-independent zeros on cooriented faces — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: gap weights have coloring-independent zeros on cooriented faces

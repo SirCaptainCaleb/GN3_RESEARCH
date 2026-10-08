@@ -1,9 +1,5 @@
 # Simplex connector program reduces to defect walls and tetrahedral curvature — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

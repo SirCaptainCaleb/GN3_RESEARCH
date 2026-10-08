@@ -1,9 +1,5 @@
 # Any chamber path shorter than the arity is root-cooriented — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Any chamber path shorter than the arity is root-cooriented

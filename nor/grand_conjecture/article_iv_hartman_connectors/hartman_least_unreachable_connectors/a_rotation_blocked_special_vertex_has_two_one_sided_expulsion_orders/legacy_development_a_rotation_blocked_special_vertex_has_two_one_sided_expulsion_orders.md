@@ -1,9 +1,5 @@
 # A rotation-blocked special vertex has two one-sided expulsion orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in the zero-polarity case of the blocked special cell from §21:

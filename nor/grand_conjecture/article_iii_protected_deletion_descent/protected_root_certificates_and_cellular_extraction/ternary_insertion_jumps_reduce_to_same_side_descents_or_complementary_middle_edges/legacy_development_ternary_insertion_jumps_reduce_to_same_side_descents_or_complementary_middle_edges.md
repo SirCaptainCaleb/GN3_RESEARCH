@@ -1,9 +1,5 @@
 # Ternary insertion jumps reduce to same-side descents or complementary middle edges — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Ternary insertion-jump classification

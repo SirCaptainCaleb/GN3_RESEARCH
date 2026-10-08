@@ -1,9 +1,5 @@
 # Opposite-side A3 root pairs with different middles have a switch-compatible internal chamber — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Opposite-side A3 root pairs with different middles have a switch-compatible internal chamber

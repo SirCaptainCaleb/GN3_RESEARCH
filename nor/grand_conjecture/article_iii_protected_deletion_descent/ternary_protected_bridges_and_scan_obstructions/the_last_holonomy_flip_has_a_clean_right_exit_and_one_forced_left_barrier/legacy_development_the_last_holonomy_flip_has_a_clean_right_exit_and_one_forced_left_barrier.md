@@ -1,9 +1,5 @@
 # The last holonomy flip has a clean right exit and one forced left barrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The last holonomy flip has a clean right exit and one forced left barrier

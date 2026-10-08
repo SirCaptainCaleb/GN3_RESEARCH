@@ -1,9 +1,5 @@
 # Four-root directed cycles admit a two-stage middle-swap descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four-root directed cycles admit a two-stage middle-swap descent

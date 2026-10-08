@@ -1,9 +1,5 @@
 # Scan separations one and two reduce to a single isolated-band state — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Scan separations one and two reduce to a single isolated-band state

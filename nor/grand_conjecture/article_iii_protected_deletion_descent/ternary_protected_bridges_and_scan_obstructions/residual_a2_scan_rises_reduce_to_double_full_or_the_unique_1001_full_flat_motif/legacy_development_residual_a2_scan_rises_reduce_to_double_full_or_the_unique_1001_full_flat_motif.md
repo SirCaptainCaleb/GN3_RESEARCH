@@ -1,9 +1,5 @@
 # Residual A2 scan rises reduce to double-full or the unique 1001 full-flat motif — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Any later rise in a residual A2 suffix scan creates a canonical singleton barrier

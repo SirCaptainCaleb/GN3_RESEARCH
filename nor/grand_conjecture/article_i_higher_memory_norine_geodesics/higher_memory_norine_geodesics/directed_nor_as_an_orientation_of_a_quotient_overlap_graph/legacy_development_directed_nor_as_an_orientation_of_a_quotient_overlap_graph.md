@@ -1,9 +1,5 @@
 # Directed sector as an orientation of a quotient overlap graph — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Quotient-overlap orientation model for the directed sector

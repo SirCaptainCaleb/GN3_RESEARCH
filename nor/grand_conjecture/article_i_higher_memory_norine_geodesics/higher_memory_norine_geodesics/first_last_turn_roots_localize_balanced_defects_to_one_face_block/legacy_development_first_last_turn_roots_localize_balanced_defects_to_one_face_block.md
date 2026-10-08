@@ -1,9 +1,5 @@
 # First-last turn roots localize balanced defects to one face block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## First–last turn roots and face-block localization

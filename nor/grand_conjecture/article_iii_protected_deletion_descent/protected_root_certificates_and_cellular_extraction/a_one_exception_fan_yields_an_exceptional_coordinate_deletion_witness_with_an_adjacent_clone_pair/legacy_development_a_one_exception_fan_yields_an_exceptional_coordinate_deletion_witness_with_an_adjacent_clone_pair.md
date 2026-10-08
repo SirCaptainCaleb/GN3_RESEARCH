@@ -1,9 +1,5 @@
 # A one-exception fan yields an exceptional-coordinate deletion witness with an adjacent clone pair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Fan-to-deletion handoff

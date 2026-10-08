@@ -1,9 +1,5 @@
 # One- and two-vertex absorption from monochromatic tight cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One- and two-vertex absorption from a monochromatic tight cycle

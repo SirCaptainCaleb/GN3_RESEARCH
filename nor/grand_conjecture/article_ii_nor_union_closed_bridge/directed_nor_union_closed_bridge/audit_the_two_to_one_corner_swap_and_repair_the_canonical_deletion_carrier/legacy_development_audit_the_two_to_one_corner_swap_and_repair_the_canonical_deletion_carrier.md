@@ -1,9 +1,5 @@
 # Audit the two-to-one corner swap and repair the canonical deletion carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This audits §§164,166,169. Work with an alternating ternary orientation.

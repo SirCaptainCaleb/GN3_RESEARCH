@@ -1,9 +1,5 @@
 # The canonical endpoint repair creates a double-full singleton packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # Reversing any monochromatic run gives a monochromatic seed with only two two-bit collars — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reversing any monochromatic run gives a monochromatic seed with only two two-bit collars

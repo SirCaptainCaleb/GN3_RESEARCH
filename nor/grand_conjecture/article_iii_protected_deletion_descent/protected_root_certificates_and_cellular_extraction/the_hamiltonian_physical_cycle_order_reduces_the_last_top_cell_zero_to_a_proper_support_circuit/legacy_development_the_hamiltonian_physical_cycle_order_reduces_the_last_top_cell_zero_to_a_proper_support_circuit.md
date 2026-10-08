@@ -1,9 +1,5 @@
 # The Hamiltonian physical-cycle order reduces the last top-cell zero to a proper-support circuit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The Hamiltonian physical-cycle order reduces the last top-cell zero to a proper-support circuit

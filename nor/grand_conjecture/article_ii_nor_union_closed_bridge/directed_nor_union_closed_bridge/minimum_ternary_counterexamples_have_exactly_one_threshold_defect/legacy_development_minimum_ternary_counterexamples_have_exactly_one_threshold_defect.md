@@ -1,9 +1,5 @@
 # Minimum ternary counterexamples have exactly one threshold defect — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum counterexamples have threshold defect one

@@ -1,9 +1,5 @@
 # Clarification: Article II does not derive NOR from Frankl's heavy-element conclusion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

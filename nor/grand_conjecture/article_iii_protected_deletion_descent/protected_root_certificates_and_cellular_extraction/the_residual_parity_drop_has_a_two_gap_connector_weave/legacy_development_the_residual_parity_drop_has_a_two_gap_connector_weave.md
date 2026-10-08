@@ -1,9 +1,5 @@
 # The residual parity drop has a two-gap connector weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The residual parity drop has a two-gap connector weave

@@ -1,9 +1,5 @@
 # A flag-compatible outermost-root cycle has a unique backward edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A flag-compatible outermost-root cycle has a unique backward edge

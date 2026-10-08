@@ -1,9 +1,5 @@
 # The center-replacement closing path can be chosen through the largest-face witnessed root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The center-replacement closing path can be chosen through the largest-face witnessed root

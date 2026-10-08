@@ -1,9 +1,5 @@
 # Face-normal degree rescues the fixed block selector without antipodal symmetry — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Face-normal degree rescues the fixed block selector without antipodal symmetry

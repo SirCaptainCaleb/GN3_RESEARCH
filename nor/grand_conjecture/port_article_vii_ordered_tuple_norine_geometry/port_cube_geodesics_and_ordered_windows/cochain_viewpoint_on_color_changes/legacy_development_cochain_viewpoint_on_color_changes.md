@@ -1,9 +1,5 @@
 # Cochain viewpoint on color changes — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

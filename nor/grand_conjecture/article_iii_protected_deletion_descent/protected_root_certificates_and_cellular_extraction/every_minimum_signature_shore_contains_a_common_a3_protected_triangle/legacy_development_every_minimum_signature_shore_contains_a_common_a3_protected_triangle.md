@@ -1,9 +1,5 @@
 # Every minimum signature shore contains a common-A3 protected triangle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every minimum signature shore contains a common-A3 protected triangle

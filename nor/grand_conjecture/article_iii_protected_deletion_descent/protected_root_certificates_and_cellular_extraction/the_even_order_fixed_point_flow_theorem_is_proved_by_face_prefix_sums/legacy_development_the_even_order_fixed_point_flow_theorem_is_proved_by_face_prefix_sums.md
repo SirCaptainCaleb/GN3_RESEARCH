@@ -1,9 +1,5 @@
 # The even-order fixed-point flow theorem is proved by face prefix sums — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The even-order fixed-point flow theorem is proved by face prefix sums

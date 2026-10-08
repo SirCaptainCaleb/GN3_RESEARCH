@@ -1,9 +1,5 @@
 # Short flat phases reduce to one explicit boundary scan — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Short flat phases reduce to one explicit boundary scan

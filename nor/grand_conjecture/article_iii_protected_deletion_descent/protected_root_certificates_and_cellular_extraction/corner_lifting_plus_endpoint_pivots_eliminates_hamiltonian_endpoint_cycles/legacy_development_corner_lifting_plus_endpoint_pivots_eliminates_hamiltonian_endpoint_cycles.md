@@ -1,9 +1,5 @@
 # Corner lifting plus endpoint pivots eliminates Hamiltonian endpoint cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume the witness-preserving endpoint CORNER-LIFT property of roots §§93/114. Choose an actual endpoint-root cycle

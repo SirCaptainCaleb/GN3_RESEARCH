@@ -1,9 +1,5 @@
 # The flat A2 replacement cycle induces a residual pair holonomy loop along the common suffix — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The flat A2 replacement cycle induces a residual pair-holonomy loop along the common suffix

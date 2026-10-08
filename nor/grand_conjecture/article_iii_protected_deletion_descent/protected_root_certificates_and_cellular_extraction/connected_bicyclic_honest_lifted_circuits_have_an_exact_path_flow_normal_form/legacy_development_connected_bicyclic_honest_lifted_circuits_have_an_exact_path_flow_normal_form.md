@@ -1,9 +1,5 @@
 # Connected bicyclic honest-lifted circuits have an exact path-flow normal form — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact flow normal form for connected bicyclic honest-lifted circuits

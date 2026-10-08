@@ -1,9 +1,5 @@
 # The lexicographically extremal width-two full-full band has an exact two-bit six-set table — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The lexicographically extremal width-two full-full band has an exact two-bit six-set table

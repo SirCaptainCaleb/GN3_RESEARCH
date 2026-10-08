@@ -1,9 +1,5 @@
 # After crossing the flip block the surviving defect becomes a monotone one-band — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## After crossing the flip block the surviving defect becomes a monotone one-band

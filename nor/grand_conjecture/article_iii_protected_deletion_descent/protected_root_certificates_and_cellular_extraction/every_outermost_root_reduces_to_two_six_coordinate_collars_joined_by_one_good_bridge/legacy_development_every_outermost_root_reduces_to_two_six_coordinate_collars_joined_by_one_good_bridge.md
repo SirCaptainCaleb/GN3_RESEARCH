@@ -1,9 +1,5 @@
 # Every outermost root reduces to two six-coordinate collars joined by one good bridge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every outermost root reduces to two six-coordinate collars joined by one good bridge

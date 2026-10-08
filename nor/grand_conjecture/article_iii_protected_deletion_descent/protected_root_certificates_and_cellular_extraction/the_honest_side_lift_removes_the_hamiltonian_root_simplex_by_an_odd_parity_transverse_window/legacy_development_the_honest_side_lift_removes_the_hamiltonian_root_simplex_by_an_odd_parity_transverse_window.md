@@ -1,9 +1,5 @@
 # The honest side lift removes the Hamiltonian root simplex by an odd-parity transverse window — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The honest side lift removes the Hamiltonian root simplex by an odd-parity transverse window

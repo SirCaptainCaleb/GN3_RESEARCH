@@ -1,9 +1,5 @@
 # The t=sigma double-full branch has six explicit boundary transport states — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The t=sigma double-full branch reduces to six four-run boundary states

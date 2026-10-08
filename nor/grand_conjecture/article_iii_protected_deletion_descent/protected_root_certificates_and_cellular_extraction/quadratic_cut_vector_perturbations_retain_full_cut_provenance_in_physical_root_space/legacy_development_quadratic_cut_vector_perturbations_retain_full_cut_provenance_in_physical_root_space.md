@@ -1,9 +1,5 @@
 # Quadratic cut-vector perturbations retain full cut provenance in physical root space — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A quadratic cut-vector perturbation remembers the full protected cut

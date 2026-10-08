@@ -1,9 +1,5 @@
 # Every terminal threshold-band barrier emits a protected physical root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every terminal threshold-band barrier emits a protected physical root

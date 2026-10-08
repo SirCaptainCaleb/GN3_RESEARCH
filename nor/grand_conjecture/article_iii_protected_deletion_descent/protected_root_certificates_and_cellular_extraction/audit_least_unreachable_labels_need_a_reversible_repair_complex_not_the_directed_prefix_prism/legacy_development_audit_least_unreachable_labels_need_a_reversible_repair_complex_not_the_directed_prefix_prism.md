@@ -1,9 +1,5 @@
 # Audit: least-unreachable labels need a reversible repair complex, not the directed prefix prism — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: least-unreachable labels need a reversible repair complex, not the directed prefix prism

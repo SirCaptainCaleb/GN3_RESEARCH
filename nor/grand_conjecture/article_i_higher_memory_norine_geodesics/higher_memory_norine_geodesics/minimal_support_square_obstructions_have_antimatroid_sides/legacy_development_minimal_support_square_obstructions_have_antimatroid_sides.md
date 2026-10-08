@@ -1,9 +1,5 @@
 # Minimal support-square obstructions have antimatroid sides — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal top-missing squares have antimatroid side restrictions

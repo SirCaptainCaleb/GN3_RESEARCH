@@ -1,9 +1,5 @@
 # Every lexicographically extremal width-two type forces the same left double-full kernel — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every lexicographically extremal width-two type forces the same left double-full kernel

@@ -1,9 +1,5 @@
 # Unifying-conjecture acceptance tests — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Unifying-conjecture acceptance tests

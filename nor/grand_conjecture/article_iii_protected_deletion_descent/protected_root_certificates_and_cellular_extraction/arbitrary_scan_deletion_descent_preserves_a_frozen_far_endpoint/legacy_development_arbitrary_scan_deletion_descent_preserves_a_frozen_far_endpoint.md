@@ -1,9 +1,5 @@
 # Arbitrary-scan deletion descent preserves a frozen far endpoint — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Arbitrary-scan deletion descent preserves a frozen far endpoint

@@ -1,9 +1,5 @@
 # Minimal front defects are one-missing-top Boolean families — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal front defects are one-missing-top Boolean families

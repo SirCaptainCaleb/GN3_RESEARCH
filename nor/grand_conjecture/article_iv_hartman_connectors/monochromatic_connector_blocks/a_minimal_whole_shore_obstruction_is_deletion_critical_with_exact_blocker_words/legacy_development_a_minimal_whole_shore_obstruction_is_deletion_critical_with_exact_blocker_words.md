@@ -1,9 +1,5 @@
 # A minimal whole-shore obstruction is deletion-critical with exact blocker words — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume A is inclusion-minimal among shore sets for which no spanning compatible monochromatic connector on A union {x,z} exists. By the small-support theorem, |A|>=7.

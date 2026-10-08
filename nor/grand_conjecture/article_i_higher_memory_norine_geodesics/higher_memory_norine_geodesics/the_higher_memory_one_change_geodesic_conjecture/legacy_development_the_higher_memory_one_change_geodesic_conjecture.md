@@ -1,9 +1,5 @@
 # The ordered-tuple one-change conjecture — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

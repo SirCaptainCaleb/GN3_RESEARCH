@@ -1,9 +1,5 @@
 # Pair-defect labels repair the proper-face orientation gap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Pair-defect labels repair the proper-face orientation gap

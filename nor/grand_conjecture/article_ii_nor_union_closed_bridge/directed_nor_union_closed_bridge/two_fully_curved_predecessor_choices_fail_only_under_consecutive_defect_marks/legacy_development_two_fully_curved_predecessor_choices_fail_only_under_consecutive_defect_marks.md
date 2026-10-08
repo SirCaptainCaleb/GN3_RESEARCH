@@ -1,9 +1,5 @@
 # Two fully curved predecessor choices fail only under consecutive defect marks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Retain the setting of Subsection 76: Q={a,b,c,d} is fully curved for the alternating orientation alpha, but now the actual label h may have defects, with h(p,q,r)=alpha(p,q,r) xor 1_{d({p,q,r})=q}. Fix a suffix beginning (c,d,v,...) that is monochromatic for h, with color z=h(c,d,v). Consider the two possible orders obtained by prepending (a,b) or (b,a). Put s=alpha(b,c,d). Full curvature gives alpha(a,b,c)=1-s, alpha(b,a,c)=s, and alpha(a,c,d)=1-s.

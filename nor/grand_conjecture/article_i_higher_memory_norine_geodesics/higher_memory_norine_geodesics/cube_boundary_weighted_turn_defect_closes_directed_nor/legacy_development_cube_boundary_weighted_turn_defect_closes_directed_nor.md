@@ -1,9 +1,5 @@
 # Cube-boundary weighted turn defect closes directed NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Cube-boundary lift closes the directed translation-invariant sector

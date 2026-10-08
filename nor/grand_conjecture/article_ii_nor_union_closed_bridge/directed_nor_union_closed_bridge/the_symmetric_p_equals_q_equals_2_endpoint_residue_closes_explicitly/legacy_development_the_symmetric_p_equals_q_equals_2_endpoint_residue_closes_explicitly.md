@@ -1,9 +1,5 @@
 # The symmetric p equals q equals 2 endpoint residue closes explicitly — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

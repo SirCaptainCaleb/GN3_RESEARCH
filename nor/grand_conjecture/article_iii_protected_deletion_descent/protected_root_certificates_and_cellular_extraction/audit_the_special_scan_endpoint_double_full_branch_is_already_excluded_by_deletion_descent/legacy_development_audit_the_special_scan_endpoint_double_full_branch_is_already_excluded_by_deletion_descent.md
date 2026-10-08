@@ -1,9 +1,5 @@
 # Audit: the special-scan endpoint double-full branch is already excluded by deletion descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the special-scan endpoint double-full branch is already excluded by deletion descent

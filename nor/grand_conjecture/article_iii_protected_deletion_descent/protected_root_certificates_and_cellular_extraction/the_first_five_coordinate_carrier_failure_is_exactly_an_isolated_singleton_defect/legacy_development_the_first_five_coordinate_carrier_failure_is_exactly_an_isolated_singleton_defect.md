@@ -1,9 +1,5 @@
 # The first five-coordinate carrier failure is exactly an isolated-singleton defect — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The first five-coordinate failure of packet separation is exactly an isolated singleton defect

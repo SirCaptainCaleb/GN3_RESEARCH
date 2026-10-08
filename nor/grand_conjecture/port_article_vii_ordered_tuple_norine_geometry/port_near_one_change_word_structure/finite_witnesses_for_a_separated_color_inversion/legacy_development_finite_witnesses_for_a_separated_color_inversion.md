@@ -1,9 +1,5 @@
 # Finite witnesses for a separated color inversion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # The double-full singleton holonomy is exactly the distance-four chord — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

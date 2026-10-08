@@ -1,9 +1,5 @@
 # Audit: alternate-middle A3 extraction changes the tracked Tucker coordinate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the alternate-middle reduction changes the tracked middle coordinate

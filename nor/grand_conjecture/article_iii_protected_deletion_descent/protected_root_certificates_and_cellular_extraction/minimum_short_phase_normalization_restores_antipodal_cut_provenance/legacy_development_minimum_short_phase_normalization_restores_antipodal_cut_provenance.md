@@ -1,9 +1,5 @@
 # Audit: minimum-short-phase symmetry does not give one Johnson cut layer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let a ternary deletion order O=(v_1,...,v_m) have one-change word 0^p1^q, and let L={v_1,...,v_p} be the canonical physical cut used by the protected-root theorem. The canonical insertion root crosses L.

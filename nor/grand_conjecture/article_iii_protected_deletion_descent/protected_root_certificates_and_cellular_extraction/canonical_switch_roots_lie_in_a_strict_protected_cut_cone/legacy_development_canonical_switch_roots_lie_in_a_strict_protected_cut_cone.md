@@ -1,9 +1,5 @@
 # Canonical switch roots lie in a strict protected cut cone — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical switch roots lie in a strict protected cut cone

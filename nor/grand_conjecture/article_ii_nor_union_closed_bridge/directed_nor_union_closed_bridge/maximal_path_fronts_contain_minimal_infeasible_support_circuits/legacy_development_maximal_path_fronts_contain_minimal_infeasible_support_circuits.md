@@ -1,9 +1,5 @@
 # Maximal-path fronts contain minimal infeasible support circuits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal infeasible front circuits are the exact obstruction exposed by a maximal tight path

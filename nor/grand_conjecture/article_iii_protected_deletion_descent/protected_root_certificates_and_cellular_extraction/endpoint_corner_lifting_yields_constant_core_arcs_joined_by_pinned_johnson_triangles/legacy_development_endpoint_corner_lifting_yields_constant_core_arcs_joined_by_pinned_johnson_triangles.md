@@ -1,9 +1,5 @@
 # Endpoint corner lifting yields constant-core arcs joined by pinned Johnson triangles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit and replacement: the endpoint corner lift is a backward-copy move, yielding a constant-core arc decomposition

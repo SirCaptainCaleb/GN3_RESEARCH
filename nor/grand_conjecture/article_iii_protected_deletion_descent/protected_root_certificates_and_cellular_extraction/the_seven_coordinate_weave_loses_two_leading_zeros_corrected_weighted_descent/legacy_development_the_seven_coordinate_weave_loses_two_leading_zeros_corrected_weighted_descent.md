@@ -1,9 +1,5 @@
 # The seven-coordinate weave loses two leading zeros: corrected weighted descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The seven-coordinate weave loses two leading zeros: corrected weighted descent

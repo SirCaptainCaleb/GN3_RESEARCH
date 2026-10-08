@@ -1,9 +1,5 @@
 # A second splice bit preserves endpoint provenance and closes the phase-three pinned branch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A second splice bit retains endpoint provenance at a pinned junction

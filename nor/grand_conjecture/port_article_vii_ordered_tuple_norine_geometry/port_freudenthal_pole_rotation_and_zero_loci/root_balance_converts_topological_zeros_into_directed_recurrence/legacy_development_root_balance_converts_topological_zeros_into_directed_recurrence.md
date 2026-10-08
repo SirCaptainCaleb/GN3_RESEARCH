@@ -1,9 +1,5 @@
 # Root balance converts topological zeros into directed recurrence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

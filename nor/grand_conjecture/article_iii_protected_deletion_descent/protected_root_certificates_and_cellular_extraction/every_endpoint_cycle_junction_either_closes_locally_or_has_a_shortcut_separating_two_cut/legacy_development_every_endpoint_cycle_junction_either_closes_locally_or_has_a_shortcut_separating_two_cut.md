@@ -1,9 +1,5 @@
 # Every endpoint-cycle junction either closes locally or has a shortcut-separating two-cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every endpoint-cycle junction either closes locally or has a shortcut-separating two-cut

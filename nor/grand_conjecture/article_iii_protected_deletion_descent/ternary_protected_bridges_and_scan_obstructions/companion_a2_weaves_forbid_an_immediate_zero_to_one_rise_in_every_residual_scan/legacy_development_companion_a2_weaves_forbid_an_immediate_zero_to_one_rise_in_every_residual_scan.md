@@ -1,9 +1,5 @@
 # Companion A2 weaves forbid an immediate zero to one rise in every residual scan — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Companion A2 weaves forbid an immediate zero-to-one rise in every residual scan

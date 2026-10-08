@@ -1,9 +1,5 @@
 # Balanced homogeneous tournament cuts give monochromatic interleavings — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Balanced homogeneous tournament cuts give monochromatic interleavings

@@ -1,9 +1,5 @@
 # Set valued cellular Tucker removes nearest violation tie breaking — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Set-valued cellular Tucker removes nearest-violation tie breaking

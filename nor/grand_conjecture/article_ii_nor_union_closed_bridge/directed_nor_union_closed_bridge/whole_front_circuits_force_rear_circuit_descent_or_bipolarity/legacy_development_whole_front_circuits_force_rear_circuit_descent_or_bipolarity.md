@@ -1,9 +1,5 @@
 # Whole-front circuits force rear circuit descent or bipolarity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Whole-front circuits force rear circuit descent or bipolarity

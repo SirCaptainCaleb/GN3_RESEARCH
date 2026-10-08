@@ -1,9 +1,5 @@
 # Minimum-defect regular designs reduce to gcd one — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume the Hamiltonian regular-cut obstruction of the two-moment perturbation and the extremal total defect Delta=n. Write C_i=B_i union {v_{i+1}} as in the defect-variation theorem. Then every coordinate x belongs to B_i for one cyclic interval I_x of exactly L=p-1 consecutive indices.

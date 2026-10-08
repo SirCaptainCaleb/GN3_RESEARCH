@@ -1,9 +1,5 @@
 # Wu--Yang rook labels and chain-level antipodal architecture — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

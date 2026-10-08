@@ -1,9 +1,5 @@
 # A fully-curved barrier has a common-flag two-return flow — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A fully-curved barrier has a common-flag two-return flow

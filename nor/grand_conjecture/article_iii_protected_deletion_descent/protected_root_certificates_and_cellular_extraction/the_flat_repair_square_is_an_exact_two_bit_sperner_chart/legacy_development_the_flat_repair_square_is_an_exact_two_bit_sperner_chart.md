@@ -1,9 +1,5 @@
 # The flat repair square is an exact two-bit Sperner chart — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The flat repair square is an exact two-bit Sperner chart

@@ -1,9 +1,5 @@
 # Second companion weave forces the immediate residual scan pair to be 00 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

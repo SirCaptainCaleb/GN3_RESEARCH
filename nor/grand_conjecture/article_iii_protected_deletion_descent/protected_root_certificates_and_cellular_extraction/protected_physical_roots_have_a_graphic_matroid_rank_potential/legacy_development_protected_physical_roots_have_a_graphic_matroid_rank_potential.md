@@ -1,9 +1,5 @@
 # Protected physical roots have a graphic matroid rank potential — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected physical roots have a graphic-matroid rank potential

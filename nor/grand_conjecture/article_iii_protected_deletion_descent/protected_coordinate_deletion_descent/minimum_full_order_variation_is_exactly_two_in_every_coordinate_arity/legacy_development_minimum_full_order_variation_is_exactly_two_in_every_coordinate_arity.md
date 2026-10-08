@@ -1,9 +1,5 @@
 # Minimum full-order variation is exactly two in every coordinate arity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum full-order variation is exactly two in every coordinate arity

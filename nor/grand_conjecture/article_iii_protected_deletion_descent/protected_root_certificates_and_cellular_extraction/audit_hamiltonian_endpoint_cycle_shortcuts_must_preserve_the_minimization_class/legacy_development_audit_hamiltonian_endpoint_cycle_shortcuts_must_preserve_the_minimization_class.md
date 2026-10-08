@@ -1,9 +1,5 @@
 # Audit: Hamiltonian endpoint-cycle shortcuts must preserve the minimization class — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: endpoint-cycle minimality must survive every replacement

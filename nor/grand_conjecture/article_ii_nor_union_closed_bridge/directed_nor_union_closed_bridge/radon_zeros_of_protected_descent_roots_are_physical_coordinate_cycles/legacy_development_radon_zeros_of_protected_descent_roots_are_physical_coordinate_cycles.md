@@ -1,9 +1,5 @@
 # Radon zeros of protected descent roots are physical coordinate cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Radon zeros of protected descent roots are physical coordinate cycles

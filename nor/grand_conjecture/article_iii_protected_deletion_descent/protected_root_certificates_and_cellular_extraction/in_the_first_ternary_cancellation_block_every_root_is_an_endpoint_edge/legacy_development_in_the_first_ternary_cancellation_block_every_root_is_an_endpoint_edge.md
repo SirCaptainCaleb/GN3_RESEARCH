@@ -1,9 +1,5 @@
 # In the first ternary cancellation block every root is an endpoint edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## In the first ternary cancellation block every root is an endpoint edge

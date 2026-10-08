@@ -1,9 +1,5 @@
 # A switch-adjacent xz insertion absorbs the whole shore unless three two-step edge descents are absent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let A be a shore of the switching split B -> z -> A -> x, and let

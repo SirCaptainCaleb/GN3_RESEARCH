@@ -1,9 +1,5 @@
 # Equality bubble transport strictly increases quadratic distance from the switch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix a ternary switch state with cut between window ranks k and k+1. For a defect at rank r define its nonnegative distance from the switch by

@@ -1,9 +1,5 @@
 # Square-path insertion is exactly a two-by-two orientation transition — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

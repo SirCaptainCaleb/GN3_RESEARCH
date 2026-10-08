@@ -1,9 +1,5 @@
 # Audit terminal band roots need not cross the normalized Johnson cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Article III currently uses two distinct classes of protected physical roots, and they must not be conflated.

@@ -1,9 +1,5 @@
 # A pure three circuit forms a full curvature tube with flat cross walls — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A pure three-circuit forms a full-curvature tube with flat cross walls

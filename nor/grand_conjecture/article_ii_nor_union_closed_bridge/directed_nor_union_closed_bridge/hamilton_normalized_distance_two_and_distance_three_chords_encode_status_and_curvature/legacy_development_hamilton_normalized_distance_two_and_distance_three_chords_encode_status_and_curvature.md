@@ -1,9 +1,5 @@
 # Hamilton-normalized distance-two and distance-three chords encode status and curvature — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamilton-normalized chord coordinates encode both status and curvature

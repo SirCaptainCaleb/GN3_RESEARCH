@@ -1,9 +1,5 @@
 # Crossed endpoint failure contains the protected shortcut in the first four-coordinate packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Crossed endpoint failure contains the protected shortcut immediately

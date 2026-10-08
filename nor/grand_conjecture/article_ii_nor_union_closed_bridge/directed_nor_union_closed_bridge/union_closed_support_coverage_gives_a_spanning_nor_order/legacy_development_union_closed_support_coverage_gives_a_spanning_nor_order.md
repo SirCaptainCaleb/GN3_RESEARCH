@@ -1,9 +1,5 @@
 # Union-closed support coverage gives a spanning NOR order — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Support coverage, rather than frequency, is sufficient under union closure

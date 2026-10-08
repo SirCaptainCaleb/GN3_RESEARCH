@@ -1,9 +1,5 @@
 # Three-block shortcut failure forces an endpoint barrier with one shortcut endpoint frozen — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failure of a three-block shortcut forces an endpoint barrier with the shortcut endpoint frozen

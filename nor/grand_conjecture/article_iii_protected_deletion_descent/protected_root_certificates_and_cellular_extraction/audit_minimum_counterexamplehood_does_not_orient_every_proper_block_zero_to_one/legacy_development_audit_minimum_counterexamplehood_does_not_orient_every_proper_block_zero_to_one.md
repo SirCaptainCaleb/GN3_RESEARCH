@@ -1,9 +1,5 @@
 # Audit minimum counterexamplehood does not orient every proper block zero-to-one — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Audit of root 139 and every topological result depending on its all-proper-face zero-freeness.

@@ -1,9 +1,5 @@
 # Residual flat drift terminates by reversal minimality — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Residual flat drift terminates by reversal-minimality

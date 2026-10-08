@@ -1,9 +1,5 @@
 # Pure-orientation three-circuits propagate unchanged along the whole monochromatic tail — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

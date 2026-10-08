@@ -1,9 +1,5 @@
 # A fully curved cross tetrahedron closes a maximal monochromatic tail — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

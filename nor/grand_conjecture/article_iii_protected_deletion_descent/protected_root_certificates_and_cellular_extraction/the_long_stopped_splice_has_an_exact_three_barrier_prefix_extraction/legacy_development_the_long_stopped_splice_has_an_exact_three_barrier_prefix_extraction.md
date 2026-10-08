@@ -1,9 +1,5 @@
 # The long stopped splice has an exact three-barrier prefix extraction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue with the long stopped splice state of root §133:

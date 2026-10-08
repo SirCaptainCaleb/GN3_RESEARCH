@@ -1,9 +1,5 @@
 # Two exterior scans give an exact pair-insertion four-window formula — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two exterior scans give an exact pair-insertion four-window formula

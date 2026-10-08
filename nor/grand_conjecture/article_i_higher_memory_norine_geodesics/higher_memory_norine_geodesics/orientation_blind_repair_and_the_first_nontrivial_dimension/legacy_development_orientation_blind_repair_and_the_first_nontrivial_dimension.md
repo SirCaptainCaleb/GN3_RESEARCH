@@ -1,9 +1,5 @@
 # Orientation-blind NOR as a neighboring conjectural family — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

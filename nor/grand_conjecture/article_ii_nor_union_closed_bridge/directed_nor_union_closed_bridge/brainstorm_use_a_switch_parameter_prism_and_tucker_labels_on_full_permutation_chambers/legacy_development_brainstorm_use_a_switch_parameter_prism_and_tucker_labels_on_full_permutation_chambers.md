@@ -1,9 +1,5 @@
 # Brainstorm: use a switch-parameter prism and Tucker labels on full permutation chambers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

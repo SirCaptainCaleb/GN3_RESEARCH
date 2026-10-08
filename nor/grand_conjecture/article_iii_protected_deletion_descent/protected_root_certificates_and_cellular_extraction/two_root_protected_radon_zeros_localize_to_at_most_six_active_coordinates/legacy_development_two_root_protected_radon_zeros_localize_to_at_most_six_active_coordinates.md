@@ -1,9 +1,5 @@
 # Two-root protected Radon zeros localize to at most six active coordinates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two-root protected Radon zeros localize to the union of two four-coordinate witness packets

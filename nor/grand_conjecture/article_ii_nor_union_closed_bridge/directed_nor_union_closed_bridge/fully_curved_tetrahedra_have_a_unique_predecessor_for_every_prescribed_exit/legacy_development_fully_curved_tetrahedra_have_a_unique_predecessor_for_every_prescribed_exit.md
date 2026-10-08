@@ -1,9 +1,5 @@
 # Fully curved tetrahedra have a unique predecessor for every prescribed exit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let alpha be a pure alternating triangle orientation, and let Q={a,b,c,d} be fully curved: every pivot link on Q is a directed triangle. Fix an ordered pair (c,d) in Q and any exterior vertex v.

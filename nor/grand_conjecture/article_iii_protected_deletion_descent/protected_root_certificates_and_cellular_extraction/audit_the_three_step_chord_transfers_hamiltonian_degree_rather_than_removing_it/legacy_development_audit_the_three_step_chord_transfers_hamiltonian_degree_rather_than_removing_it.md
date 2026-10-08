@@ -1,9 +1,5 @@
 # Audit: the three-step chord transfers Hamiltonian degree rather than removing it — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the three-step chord transfers Hamiltonian degree; it does not remove it

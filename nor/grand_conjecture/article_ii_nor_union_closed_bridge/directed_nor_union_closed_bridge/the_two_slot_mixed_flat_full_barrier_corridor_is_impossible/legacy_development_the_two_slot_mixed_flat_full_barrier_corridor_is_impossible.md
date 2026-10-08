@@ -1,9 +1,5 @@
 # The two-slot mixed flat-full barrier corridor is impossible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

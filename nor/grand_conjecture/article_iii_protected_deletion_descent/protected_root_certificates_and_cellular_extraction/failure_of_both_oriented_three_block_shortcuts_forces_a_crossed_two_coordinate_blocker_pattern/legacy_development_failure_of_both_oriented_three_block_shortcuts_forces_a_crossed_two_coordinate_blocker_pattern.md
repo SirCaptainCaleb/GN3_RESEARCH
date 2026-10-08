@@ -1,9 +1,5 @@
 # Failure of both oriented three-block shortcuts forces a crossed two-coordinate blocker pattern — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failure of both oriented three-block shortcuts forces a crossed two-coordinate blocker pattern

@@ -1,9 +1,5 @@
 # Endpoint partner bubble-sort reduces square-realizable Hamiltonian cycles to synchronized shifts — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Endpoint partner bubble-sort: square lifting reduces injective Hamiltonian partners to a cyclic shift

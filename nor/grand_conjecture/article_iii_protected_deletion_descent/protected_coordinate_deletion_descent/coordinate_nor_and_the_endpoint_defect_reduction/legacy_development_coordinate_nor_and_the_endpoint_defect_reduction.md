@@ -1,9 +1,5 @@
 # Coordinate NOR and the endpoint defect reduction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §§162,173. This is a consolidated proof, with coordinate and cube-window scopes separated.

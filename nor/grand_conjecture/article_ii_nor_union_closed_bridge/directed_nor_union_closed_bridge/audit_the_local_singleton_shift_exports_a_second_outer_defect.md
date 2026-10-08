@@ -1,9 +1,1 @@
 # Audit: the local singleton shift exports a second outer defect
-
-## Composition
-
-(none yet)
-
-## Development
-
-Audit of the singleton-threshold transport claim. In the local pattern on consecutive coordinates 0,1,2,3,4, suppose alpha(0,1,2)=0, alpha(1,2,3)=1, alpha(2,3,4)=0, and the next exterior status alpha(3,4,5)=0 lies on the same constant target side. If the right transition tetrahedron is full, subsection 177 swaps 3,4 and correctly obtains the three internal statuses 0,0,1. But the swap also changes the next exterior window from alpha(3,4,5)=0 to alpha(4,3,5)=1 by alternation. Thus the four-status packet is 0,1,0,0 -> 0,0,1,1, not 0,0,1,0. The same issue affects any proposed iteration that does not explicitly control the outer packet. Therefore subsection 177 is valid only as an internal five-set transport statement; it does not preserve a singleton threshold defect or the E=1 locus by itself. This is exactly the protected-boundary issue emphasized by the second wisdom pass. A usable endpoint-defect surgery must preserve the ordered outer boundary pair or account for the exported second defect.

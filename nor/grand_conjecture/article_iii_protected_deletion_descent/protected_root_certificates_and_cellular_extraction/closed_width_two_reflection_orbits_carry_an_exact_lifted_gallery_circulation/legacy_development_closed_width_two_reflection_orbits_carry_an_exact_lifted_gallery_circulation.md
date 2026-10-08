@@ -1,9 +1,5 @@
 # Closed width-two reflection orbits carry an exact lifted gallery circulation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Closed width-two reflection orbits carry an exact lifted gallery circulation

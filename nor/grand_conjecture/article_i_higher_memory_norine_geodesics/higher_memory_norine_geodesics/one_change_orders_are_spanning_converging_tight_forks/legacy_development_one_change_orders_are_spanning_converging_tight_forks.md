@@ -1,9 +1,5 @@
 # One-change orders are spanning converging tight forks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Converging tight-fork formulation

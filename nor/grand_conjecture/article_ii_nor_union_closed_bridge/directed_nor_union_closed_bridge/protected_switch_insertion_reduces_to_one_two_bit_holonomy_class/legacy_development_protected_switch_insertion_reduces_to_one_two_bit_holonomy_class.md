@@ -1,9 +1,5 @@
 # Protected switch insertion reduces to one two-bit holonomy class — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

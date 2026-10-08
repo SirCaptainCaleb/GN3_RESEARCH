@@ -1,9 +1,5 @@
 # The residual flat switch also transfers a monochromatic connector to the opposite shore — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The residual flat switch also transfers a monochromatic connector to the opposite shore

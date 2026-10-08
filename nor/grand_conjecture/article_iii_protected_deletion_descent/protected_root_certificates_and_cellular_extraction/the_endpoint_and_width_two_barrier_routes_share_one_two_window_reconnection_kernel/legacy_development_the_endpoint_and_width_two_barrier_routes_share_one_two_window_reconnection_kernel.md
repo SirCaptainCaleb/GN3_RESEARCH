@@ -1,9 +1,5 @@
 # The endpoint and width-two barrier routes share one two-window reconnection kernel — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two independent closure routes meet at one two-window reconnection kernel

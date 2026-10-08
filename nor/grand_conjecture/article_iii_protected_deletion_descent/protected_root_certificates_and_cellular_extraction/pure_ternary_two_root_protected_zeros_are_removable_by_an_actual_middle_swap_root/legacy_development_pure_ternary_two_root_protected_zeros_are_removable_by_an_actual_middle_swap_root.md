@@ -1,9 +1,5 @@
 # Pure ternary two-root protected zeros are removable by an actual middle-swap root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Pure ternary two-root protected zeros are locally removable by a middle swap

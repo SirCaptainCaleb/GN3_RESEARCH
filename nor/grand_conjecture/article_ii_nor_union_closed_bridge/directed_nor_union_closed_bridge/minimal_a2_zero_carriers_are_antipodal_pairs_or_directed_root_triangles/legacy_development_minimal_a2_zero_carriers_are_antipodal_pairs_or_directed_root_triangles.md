@@ -1,9 +1,5 @@
 # Minimal A2 zero carriers are antipodal pairs or directed root triangles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal A2 zero carriers are antipodal pairs or directed root triangles

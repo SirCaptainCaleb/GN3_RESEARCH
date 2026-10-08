@@ -1,9 +1,5 @@
 # Every minimum counterexample has a spanning order with between two and nine changes — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every minimum counterexample has a spanning order with between two and nine changes

@@ -1,9 +1,5 @@
 # Audit correction: tournament representation survives but source-sink induction fails — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: the tournament representation is valid, but the source/sink induction is not

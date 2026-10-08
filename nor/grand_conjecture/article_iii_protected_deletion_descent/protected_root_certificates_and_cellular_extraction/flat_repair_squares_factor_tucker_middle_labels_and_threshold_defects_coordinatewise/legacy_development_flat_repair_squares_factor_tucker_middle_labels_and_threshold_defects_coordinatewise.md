@@ -1,9 +1,5 @@
 # Flat repair squares factor Tucker middle labels and threshold defects coordinatewise — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Flat repair squares factor Tucker middle labels and threshold defects coordinatewise

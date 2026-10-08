@@ -1,9 +1,5 @@
 # A minimum-shore directed triangle gives twin A3 carriers and a monochromatic five-coordinate connector seed — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Twin A3 structure over a minimum signature shore

@@ -1,9 +1,5 @@
 # Every one-cycle honest lifted zero is removable by parity transversality — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work with the honest switch-prism lifted labels

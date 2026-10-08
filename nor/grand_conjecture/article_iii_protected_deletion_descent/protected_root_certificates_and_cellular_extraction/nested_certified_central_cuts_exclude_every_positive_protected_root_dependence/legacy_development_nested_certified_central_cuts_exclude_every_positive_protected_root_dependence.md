@@ -1,9 +1,5 @@
 # Nested certified central cuts exclude every positive protected-root dependence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Nested certified central cuts exclude every positive protected-root dependence

@@ -1,9 +1,5 @@
 # Endpoint deletion yields a boundary hole exchange — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let C=(c_1,...,c_m) be a monochromatic-zero connector in path-normalized square-path gauge and let a be a missing shore vertex. Write r_i for the incidence bit of c_i against a.

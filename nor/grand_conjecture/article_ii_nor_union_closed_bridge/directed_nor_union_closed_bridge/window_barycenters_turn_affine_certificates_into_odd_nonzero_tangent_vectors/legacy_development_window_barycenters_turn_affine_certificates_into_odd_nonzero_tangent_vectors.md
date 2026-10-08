@@ -1,9 +1,5 @@
 # Window barycenters turn affine certificates into odd nonzero tangent vectors — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This constructs a tangent-space model of the all-uniformity affine certificates. It supplies a possible alternative to an ordinary Sperner vertex labeling, with its extension problem stated explicitly.

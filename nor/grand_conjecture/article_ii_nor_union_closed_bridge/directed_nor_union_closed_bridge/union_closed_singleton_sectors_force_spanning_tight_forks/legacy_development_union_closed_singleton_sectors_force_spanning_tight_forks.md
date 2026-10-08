@@ -1,9 +1,5 @@
 # Union-closed singleton sectors force spanning tight forks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Union-closed singleton sectors force spanning tight forks

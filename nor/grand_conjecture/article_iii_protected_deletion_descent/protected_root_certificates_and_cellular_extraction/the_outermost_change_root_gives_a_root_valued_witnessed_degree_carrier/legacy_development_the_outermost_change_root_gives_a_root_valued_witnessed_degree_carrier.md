@@ -1,9 +1,5 @@
 # The outermost-change root gives a root-valued witnessed-degree carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The outermost-change root gives a simpler witnessed-degree carrier

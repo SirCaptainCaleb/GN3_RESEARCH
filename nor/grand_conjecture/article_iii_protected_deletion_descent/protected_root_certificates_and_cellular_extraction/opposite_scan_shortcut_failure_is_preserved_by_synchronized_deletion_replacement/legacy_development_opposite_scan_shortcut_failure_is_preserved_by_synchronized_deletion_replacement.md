@@ -1,9 +1,5 @@
 # Opposite-scan shortcut failure is preserved by synchronized deletion replacement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Opposite-scan shortcut failure is preserved by synchronized deletion replacement

@@ -1,9 +1,5 @@
 # Eight coherent ternary deletion orders suffice, and the general locality bound is sharp — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Sharp deletion-coherence threshold for one-change orders

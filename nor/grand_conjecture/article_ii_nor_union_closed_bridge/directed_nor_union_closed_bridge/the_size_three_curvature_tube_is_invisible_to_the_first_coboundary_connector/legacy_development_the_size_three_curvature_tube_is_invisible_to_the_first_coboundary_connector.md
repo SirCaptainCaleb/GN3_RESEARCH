@@ -1,9 +1,5 @@
 # The size-three curvature tube is invisible to the first coboundary connector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

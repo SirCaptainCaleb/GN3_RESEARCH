@@ -1,9 +1,5 @@
 # The doubled-cube lift can force three changes despite balanced coordinate frequencies — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The canonical doubled-cube lift can force three changes on every antipodal geodesic

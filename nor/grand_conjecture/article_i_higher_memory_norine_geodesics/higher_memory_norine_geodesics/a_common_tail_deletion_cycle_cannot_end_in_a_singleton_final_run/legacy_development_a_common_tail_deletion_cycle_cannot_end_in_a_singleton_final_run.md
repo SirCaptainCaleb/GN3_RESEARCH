@@ -1,9 +1,5 @@
 # A common-tail deletion cycle cannot end in a singleton final run — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Singleton final run is impossible

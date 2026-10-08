@@ -1,9 +1,5 @@
 # A singleton switching shore has exactly one exceptional endpoint-state type — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A singleton switching shore has exactly one exceptional endpoint-state type

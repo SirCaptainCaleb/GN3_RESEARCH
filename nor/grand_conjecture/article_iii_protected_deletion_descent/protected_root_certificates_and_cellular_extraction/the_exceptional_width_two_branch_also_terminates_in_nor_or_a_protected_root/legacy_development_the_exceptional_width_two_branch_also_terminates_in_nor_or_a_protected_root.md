@@ -1,9 +1,5 @@
 # The exceptional width-two branch also terminates in NOR or a protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The exceptional width-two branch has a finite threshold-band handoff

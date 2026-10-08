@@ -1,9 +1,5 @@
 # Prefix-tail state DAG and antipodal monochromatic reachability — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Prefix-tail state DAG and the antipodal reachability criterion

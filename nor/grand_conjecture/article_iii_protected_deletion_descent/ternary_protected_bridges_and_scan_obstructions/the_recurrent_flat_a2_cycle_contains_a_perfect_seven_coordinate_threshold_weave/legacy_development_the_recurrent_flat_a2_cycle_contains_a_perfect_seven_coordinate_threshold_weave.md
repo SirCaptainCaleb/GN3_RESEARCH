@@ -1,9 +1,5 @@
 # The recurrent flat A2 cycle contains a perfect seven coordinate threshold weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The recurrent flat A2 cycle contains a perfect seven-coordinate threshold weave

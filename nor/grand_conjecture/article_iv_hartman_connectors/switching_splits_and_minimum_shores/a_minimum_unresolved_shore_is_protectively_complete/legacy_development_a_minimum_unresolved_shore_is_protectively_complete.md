@@ -1,9 +1,5 @@
 # A minimum unresolved shore is protectively complete — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Choose a shortcut-free pair x,z whose smaller nonempty signature shore A has minimum size.

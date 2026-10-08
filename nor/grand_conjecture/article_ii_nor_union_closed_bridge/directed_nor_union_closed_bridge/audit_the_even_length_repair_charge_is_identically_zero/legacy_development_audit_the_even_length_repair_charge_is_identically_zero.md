@@ -1,9 +1,5 @@
 # Audit: the even-length repair charge is identically zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the proposed even-length Z2 charge is tautologically zero

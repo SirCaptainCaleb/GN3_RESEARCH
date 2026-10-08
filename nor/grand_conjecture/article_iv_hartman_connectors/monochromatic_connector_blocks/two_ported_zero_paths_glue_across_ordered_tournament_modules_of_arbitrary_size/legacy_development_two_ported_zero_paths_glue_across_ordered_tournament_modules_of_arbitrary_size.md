@@ -1,9 +1,5 @@
 # Two ported zero paths glue across ordered tournament modules of arbitrary size — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Closure under ordered joins and strong-component reduction

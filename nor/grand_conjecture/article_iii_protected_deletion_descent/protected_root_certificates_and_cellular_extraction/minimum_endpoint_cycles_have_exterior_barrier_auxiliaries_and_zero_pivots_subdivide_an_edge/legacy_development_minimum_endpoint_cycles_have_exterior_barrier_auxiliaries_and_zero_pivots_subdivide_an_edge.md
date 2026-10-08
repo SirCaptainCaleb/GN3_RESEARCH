@@ -1,9 +1,5 @@
 # Minimum protected-root cycles have exterior barrier auxiliaries and zero pivots subdivide an edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum protected-root cycles have exterior barrier auxiliaries and zero pivots subdivide an edge

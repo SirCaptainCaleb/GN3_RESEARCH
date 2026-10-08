@@ -1,9 +1,5 @@
 # Minimum endpoint cycles reduce pinned boundaries to one-bit pivot stops — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimal endpoint cycles reduce pinned boundaries to one-bit pivot stops

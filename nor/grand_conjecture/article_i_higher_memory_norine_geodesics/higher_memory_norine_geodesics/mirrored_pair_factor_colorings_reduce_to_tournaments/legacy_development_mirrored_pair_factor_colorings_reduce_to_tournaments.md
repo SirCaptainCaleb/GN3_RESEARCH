@@ -1,9 +1,5 @@
 # Mirrored-pair factor colorings reduce to tournaments — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Mirrored-pair factor colorings are completely soluble

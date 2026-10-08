@@ -1,9 +1,5 @@
 # Audit: ordered shortcut realization is valid; ambient gluing still needs carrier compatibility — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the ordered-shortcut theorem is valid, while local opposite-root weaving still needs carrier compatibility

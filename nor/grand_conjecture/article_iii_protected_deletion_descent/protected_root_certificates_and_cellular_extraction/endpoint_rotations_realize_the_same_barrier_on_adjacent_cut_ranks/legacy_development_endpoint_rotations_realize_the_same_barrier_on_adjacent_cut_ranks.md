@@ -1,9 +1,5 @@
 # Endpoint rotations realize the same barrier on adjacent cut ranks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Endpoint rotations realize the same barrier on adjacent cut ranks

@@ -1,9 +1,5 @@
 # Pure alternating orientations have no two-element front circuits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Pure alternating triangle orientations admit no two-element fixed-tail support circuit. Fix an ordered tail F=(f_1,f_2) and a color tau. Suppose {x} and {y} are tau-feasible at F. Then alpha(x,f_1,f_2)=alpha(y,f_1,f_2)=tau. If {x,y} were minimally infeasible, neither ordering (x,y,F) nor (y,x,F) could be tau-tight. In the first ordering the second window alpha(y,f_1,f_2) is already tau, so failure forces alpha(x,y,f_1)=1-tau. In the second ordering the second window alpha(x,f_1,f_2) is tau, so failure forces alpha(y,x,f_1)=1-tau. But alpha is alternating, hence alpha(y,x,f_1)=1-alpha(x,y,f_1). The two forced equalities are impossible. Therefore every pair of tau-feasible singletons has at least one tau-tight two-element witness at the same tail.

@@ -1,9 +1,5 @@
 # Audit: the distance-three square-or-root theorem covers only inward-facing singleton repairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the distance-three square-or-root theorem covers only inward-facing singleton repairs

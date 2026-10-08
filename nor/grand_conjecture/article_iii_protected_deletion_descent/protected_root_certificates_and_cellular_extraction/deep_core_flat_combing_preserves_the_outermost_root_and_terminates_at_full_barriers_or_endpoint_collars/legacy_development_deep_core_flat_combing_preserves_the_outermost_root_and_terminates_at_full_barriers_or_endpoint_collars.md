@@ -1,9 +1,5 @@
 # Deep-core flat combing preserves the outermost root and terminates at full barriers or endpoint collars — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Deep-core flat combing preserves the outermost root and terminates at full barriers or endpoint collars

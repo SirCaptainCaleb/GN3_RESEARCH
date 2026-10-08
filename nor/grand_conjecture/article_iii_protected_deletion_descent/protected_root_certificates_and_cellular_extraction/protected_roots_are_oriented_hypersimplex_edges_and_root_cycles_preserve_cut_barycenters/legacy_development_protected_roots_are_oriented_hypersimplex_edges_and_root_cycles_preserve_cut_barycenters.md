@@ -1,9 +1,5 @@
 # Protected roots are oriented hypersimplex edges and root cycles preserve cut barycenters — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected roots are oriented hypersimplex edges and root cycles preserve cut barycenters

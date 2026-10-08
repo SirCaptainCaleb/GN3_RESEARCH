@@ -1,9 +1,5 @@
 # One-change pivot forks and near-spanning pivot paths close NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let h be reversal odd in ternary coordinate arity and assume its center tournaments are transitive. Fix o and use the pivot graph G_o of Subsection 43: a->b if h(o,a,b)=h(a,b,o)=0. Regard each underlying edge as carrying color 0 in its directed orientation and color 1 in the reverse orientation.

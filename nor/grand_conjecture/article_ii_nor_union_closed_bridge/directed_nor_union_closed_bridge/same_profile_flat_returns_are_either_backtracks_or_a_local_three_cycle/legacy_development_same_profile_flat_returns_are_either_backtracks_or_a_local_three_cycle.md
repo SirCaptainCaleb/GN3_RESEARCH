@@ -1,9 +1,5 @@
 # Same profile flat returns are either backtracks or a local three cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same-profile flat returns are either backtracks or a local three-cycle

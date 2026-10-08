@@ -1,9 +1,5 @@
 # Every rail disagreement already carries the physical shortcut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 At any index i with X_i≠Z_i, the four-coordinate order

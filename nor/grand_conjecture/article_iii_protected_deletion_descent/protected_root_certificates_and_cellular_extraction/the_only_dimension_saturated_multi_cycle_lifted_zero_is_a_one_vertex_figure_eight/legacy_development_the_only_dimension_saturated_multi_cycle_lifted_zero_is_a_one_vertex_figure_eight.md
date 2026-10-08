@@ -1,9 +1,5 @@
 # The only dimension-saturated multi-cycle lifted zero is a one-vertex figure eight — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The only dimension-saturated multi-cycle lifted zero is a one-vertex figure eight

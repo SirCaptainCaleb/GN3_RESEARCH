@@ -1,9 +1,5 @@
 # Audit: reversed-suffix propagation requires unproved switch polarization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit

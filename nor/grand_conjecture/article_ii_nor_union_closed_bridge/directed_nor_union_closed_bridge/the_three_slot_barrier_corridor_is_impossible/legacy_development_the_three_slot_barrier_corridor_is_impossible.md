@@ -1,9 +1,5 @@
 # The three slot barrier corridor is impossible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The three-slot barrier corridor is impossible

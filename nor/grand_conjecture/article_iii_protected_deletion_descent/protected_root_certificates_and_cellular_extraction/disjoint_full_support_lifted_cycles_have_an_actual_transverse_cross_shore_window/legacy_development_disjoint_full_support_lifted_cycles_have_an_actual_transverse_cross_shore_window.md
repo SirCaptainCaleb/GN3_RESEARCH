@@ -1,9 +1,5 @@
 # Disjoint full-support lifted cycles have an actual transverse cross-shore window — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Full-support disjoint two-cycle lifted circuits have an actual transverse cross-shore window

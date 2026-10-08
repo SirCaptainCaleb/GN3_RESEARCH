@@ -1,9 +1,5 @@
 # Orientation-blind windows as ordered cube-face galleries — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # Arbitrary flat blocking scans admit a replacement on one side of the switch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Consolidated from Article II §205. This repairs the use of scan uniqueness, while keeping the remaining termination obligation explicit.

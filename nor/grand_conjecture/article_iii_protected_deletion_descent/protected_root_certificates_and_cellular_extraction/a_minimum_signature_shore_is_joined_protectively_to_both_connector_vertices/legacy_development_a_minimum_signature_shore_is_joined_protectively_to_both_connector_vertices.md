@@ -1,9 +1,5 @@
 # A minimum signature shore is joined protectively to both connector vertices — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A minimum signature shore is joined protectively to both connector vertices

@@ -1,9 +1,5 @@
 # Tangent-cone closure of a Johnson edge is discrete successor realization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Tangent-cone closure of a Johnson edge is discrete successor realization

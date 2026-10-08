@@ -1,9 +1,5 @@
 # Shore reversal induces an exact involution on endpoint states — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Shore reversal induces an exact involution on endpoint states

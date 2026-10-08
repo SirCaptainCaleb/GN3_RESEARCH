@@ -1,9 +1,5 @@
 # The identity sphere field extends the formal weighted-field obstruction to n congruent 3 mod 4 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

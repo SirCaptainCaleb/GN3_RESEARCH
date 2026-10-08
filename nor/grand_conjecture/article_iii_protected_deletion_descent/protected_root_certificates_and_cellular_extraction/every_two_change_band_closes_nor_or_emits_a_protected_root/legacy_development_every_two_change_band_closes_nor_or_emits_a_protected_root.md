@@ -1,9 +1,5 @@
 # Every two-change band closes NOR or emits a protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every two-change band closes NOR or emits a protected root

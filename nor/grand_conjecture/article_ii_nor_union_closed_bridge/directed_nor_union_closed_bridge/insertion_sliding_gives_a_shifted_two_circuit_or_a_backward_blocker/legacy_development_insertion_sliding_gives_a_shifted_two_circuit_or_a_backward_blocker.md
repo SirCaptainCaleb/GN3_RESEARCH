@@ -1,9 +1,5 @@
 # Insertion sliding gives a shifted two-circuit or a backward blocker — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Sliding a missing vertex yields a two-circuit or a backward blocker

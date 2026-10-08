@@ -1,9 +1,5 @@
 # General outer-splice bridge and branch-length forcing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## General outer-splice bridge

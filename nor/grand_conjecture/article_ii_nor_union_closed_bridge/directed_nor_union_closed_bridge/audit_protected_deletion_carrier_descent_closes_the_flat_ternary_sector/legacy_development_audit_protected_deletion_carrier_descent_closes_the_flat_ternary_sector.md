@@ -1,9 +1,5 @@
 # Audit protected deletion carrier descent closes the flat ternary sector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: protected deletion-carrier descent closes the flat ternary sector

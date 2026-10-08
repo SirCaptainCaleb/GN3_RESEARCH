@@ -1,9 +1,5 @@
 # Audit single step residual scans require an unproved propagation lemma — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: single-step residual scans require an unproved propagation lemma

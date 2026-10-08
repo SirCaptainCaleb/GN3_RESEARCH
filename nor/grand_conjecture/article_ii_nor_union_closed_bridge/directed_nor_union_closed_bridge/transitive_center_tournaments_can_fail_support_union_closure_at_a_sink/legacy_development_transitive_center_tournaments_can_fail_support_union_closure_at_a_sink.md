@@ -1,9 +1,5 @@
 # Transitive center tournaments can fail support union closure at a sink — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Local transitivity does not imply support union closure, even at a sink tail

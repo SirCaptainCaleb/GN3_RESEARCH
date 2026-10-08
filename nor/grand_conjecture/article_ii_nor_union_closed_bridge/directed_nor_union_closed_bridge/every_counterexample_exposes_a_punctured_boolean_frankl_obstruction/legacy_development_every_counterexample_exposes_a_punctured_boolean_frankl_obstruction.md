@@ -1,9 +1,5 @@
 # Every counterexample exposes a punctured-Boolean Frankl obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every counterexample exposes a punctured-Boolean Frankl obstruction

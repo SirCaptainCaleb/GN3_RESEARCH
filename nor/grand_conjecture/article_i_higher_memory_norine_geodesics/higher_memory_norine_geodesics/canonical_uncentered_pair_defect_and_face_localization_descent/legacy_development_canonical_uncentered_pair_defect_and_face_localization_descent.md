@@ -1,9 +1,5 @@
 # Canonical uncentered pair-defect and face-localization descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical uncentered pair-defect for directed NOR

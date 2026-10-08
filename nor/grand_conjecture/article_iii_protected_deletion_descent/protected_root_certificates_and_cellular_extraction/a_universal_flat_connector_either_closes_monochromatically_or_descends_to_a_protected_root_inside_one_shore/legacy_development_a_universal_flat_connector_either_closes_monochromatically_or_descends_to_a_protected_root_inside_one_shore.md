@@ -1,9 +1,5 @@
 # A universal flat connector either closes monochromatically or descends to a protected root inside one shore — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Universal flat connectors have a strict shore descent

@@ -1,9 +1,5 @@
 # Shortcut-free splits with shore-size gap at most four close by a Hamiltonian binary weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Shortcut-free splits with shore-size gap at most four close by a Hamiltonian binary weave

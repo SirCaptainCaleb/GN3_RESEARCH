@@ -1,9 +1,5 @@
 # Every misaligned rail disagreement realizes the protected shortcut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every misaligned rail disagreement realizes the protected shortcut

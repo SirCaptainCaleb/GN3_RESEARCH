@@ -1,9 +1,5 @@
 # Every maximal tight path has punctured-Boolean obstructions at both ends — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every maximal tight path has punctured-Boolean obstructions at both ends

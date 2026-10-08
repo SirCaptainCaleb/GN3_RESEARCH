@@ -1,9 +1,5 @@
 # A complementary Tucker edge seeds a terminating central threshold band — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A complementary Tucker edge seeds a terminating central threshold band

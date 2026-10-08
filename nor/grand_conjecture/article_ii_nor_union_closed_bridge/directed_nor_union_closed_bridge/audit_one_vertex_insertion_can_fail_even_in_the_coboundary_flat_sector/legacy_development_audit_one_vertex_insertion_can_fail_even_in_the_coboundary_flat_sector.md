@@ -1,9 +1,5 @@
 # Audit: one-vertex insertion can fail even in the coboundary-flat sector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

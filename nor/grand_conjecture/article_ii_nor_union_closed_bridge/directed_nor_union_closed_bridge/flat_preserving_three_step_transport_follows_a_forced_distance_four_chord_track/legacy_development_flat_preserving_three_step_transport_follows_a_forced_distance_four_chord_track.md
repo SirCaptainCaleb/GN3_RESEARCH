@@ -1,9 +1,5 @@
 # Flat preserving three step transport follows a forced distance four chord track — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Flat-preserving three-step transport follows a forced distance-four chord track

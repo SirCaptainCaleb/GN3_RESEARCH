@@ -1,9 +1,5 @@
 # Alternation supplies the singleton endpoint-swap law; general reversal-odd extraction remains separate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Alternation is the hypothesis for the singleton endpoint-swap law

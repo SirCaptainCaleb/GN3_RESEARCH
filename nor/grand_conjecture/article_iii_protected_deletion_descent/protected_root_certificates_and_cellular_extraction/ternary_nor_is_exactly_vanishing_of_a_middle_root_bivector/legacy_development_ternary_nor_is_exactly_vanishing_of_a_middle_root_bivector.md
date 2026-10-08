@@ -1,9 +1,5 @@
 # Ternary NOR is exactly vanishing of a middle root bivector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Ternary NOR is exactly vanishing of a middle-root bivector

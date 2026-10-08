@@ -1,9 +1,5 @@
 # Pure-sign jumps in a fixed insertion fiber localize to a protected 2r-coordinate packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

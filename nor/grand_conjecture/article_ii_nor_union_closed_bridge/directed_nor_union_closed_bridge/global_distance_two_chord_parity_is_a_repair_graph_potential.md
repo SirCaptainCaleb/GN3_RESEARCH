@@ -1,9 +1,1 @@
 # Global distance-two chord parity is a repair-graph potential
-
-## Composition
-
-(none yet)
-
-## Development
-
-Fix a tournament representative t of the coboundary-flat switching class and define J2(pi) as the xor, over cyclic indices, of t(v_i,v_{i+2}). For a successful right endpoint repair swapping c,d in (...,a,b,c,d,q,r,...), only the four distance-two chords (a,c),(b,d),(c,q),(d,r) are replaced by (a,d),(b,c),(d,q),(c,r). The xor change splits into a near packet and a far packet. The near packet equals alpha(a,b,c) xor alpha(a,b,d), which vanishes exactly because the repair criterion is alpha(a,b,d)=alpha(a,b,c). The far packet equals alpha(c,q,r) xor alpha(d,q,r), which is exactly the corrected transport selector lambda from subsection 95: lambda=0 for distance 2 and lambda=1 for distance 3. Hence every successful repair satisfies Delta J2=lambda. By reversal the same holds for left repairs. Therefore every closed loop in the full-support endpoint-repair graph has even parity of distance-3 transports. The previously observed tail-dependent holonomy is gauged away globally by J2. Also reversal of a cyclic order reverses every distance-two chord, so J2(pi^rev)=J2(pi) xor (n mod 2). This does not yet exclude a closed component, but any mechanism that returns to the same repair state after an odd number of distance-3 transports is impossible. The next target is to prove that escaping and returning to the singleton-trap extremal state forces odd transport parity or odd winding.

@@ -1,9 +1,5 @@
 # Every three shore vertices support a compatible five-coordinate connector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Use the switching-normalized split B -> z -> A -> x. Let u,a,b be any three distinct vertices of A, and orient the last two so that a -> b in the shore tournament. Then C=(u,x,z,a,b) has ternary word 000. Indeed alpha(u,x,z)=alpha(x,z,u)=0 by the shore signature, alpha(x,z,a)=0 for the same reason, and alpha(z,a,b)=0 because z dominates both a,b while a->b. The first endpoint pair u->x is forward and the last pair a->b is forward. Thus every three-element subset of A supports a compatible monochromatic connector on those three vertices together with x,z. Directed-triangle structure is not needed for seed existence; it supplies only additional A3 root information.

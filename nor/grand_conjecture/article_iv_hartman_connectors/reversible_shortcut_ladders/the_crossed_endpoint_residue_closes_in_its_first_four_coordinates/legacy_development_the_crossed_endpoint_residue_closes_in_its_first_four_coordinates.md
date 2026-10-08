@@ -1,9 +1,5 @@
 # The crossed endpoint residue closes in its first four coordinates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 In the only crossed endpoint types surviving the earlier three-block shortcut analysis, the first rail disagreement satisfies X_1=R_1. Therefore

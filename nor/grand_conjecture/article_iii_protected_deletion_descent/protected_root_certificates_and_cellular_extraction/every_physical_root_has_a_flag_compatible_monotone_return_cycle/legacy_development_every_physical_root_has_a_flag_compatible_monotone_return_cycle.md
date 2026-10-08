@@ -1,9 +1,5 @@
 # Every physical root has a flag-compatible monotone return cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let D be the zero-free nonzero-degree root-valued boundary carrier from section 243. Fix any nonzero type-A root rho=e_s-e_t, including a protected root emitted by a terminal barrier.

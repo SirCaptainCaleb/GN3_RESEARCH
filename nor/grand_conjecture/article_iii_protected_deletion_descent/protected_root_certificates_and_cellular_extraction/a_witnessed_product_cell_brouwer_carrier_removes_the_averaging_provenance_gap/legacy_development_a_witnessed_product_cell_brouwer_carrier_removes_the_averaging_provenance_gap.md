@@ -1,9 +1,5 @@
 # A witnessed product-cell Brouwer carrier removes the averaging provenance gap — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in ternary arity under counterexamplehood on the switch prism X=P_V x I, with target space W direct-sum R. Use the natural polytopal cell structure whose cells are F x J, with F a permutahedron face and J either a cut vertex or a cut interval. Barycentrically subdivide this cell structure.

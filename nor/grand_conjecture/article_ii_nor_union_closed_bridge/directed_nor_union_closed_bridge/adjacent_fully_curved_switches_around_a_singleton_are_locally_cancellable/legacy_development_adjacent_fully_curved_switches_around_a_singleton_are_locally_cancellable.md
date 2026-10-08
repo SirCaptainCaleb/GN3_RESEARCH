@@ -1,9 +1,5 @@
 # Adjacent fully curved switches around a singleton are locally cancellable — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Adjacent fully-curved switches around a singleton are locally cancellable

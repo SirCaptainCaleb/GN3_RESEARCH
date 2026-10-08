@@ -1,9 +1,5 @@
 # Ternary switch insertion has a unique canonical descent root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Ternary switch insertion has a unique canonical descent root

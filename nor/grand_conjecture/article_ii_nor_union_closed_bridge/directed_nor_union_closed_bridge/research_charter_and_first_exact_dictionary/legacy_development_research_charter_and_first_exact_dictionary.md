@@ -1,9 +1,5 @@
 # Research charter and first exact dictionary — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Research charter: reduction first, unification second

@@ -1,9 +1,5 @@
 # An odd violation vector whose chamber zeros are one-change words — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

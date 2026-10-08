@@ -1,9 +1,5 @@
 # The residual full switch transfers the monochromatic connector to the opposite shore — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The residual full switch transfers the monochromatic connector to the opposite shore

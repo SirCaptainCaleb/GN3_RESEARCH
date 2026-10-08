@@ -1,9 +1,5 @@
 # Arbitrary scan flat replacement dynamics reduce to one A2 recurrence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Arbitrary-scan flat replacement dynamics reduce to one A2 recurrence

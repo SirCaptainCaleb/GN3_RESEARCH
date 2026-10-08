@@ -1,9 +1,5 @@
 # Middle run reversal forces a blocker at each reconnection — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Middle-run reversal forces a blocker at each reconnection

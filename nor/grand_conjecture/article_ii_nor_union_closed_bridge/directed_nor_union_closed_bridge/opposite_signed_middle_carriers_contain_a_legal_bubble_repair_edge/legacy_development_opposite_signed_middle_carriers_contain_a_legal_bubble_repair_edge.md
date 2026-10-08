@@ -1,9 +1,5 @@
 # Opposite signed-middle carriers contain a legal bubble repair edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Bubble extraction from a cellular Tucker carrier

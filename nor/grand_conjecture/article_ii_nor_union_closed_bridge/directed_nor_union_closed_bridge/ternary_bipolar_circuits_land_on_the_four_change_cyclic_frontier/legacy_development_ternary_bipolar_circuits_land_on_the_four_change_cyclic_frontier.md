@@ -1,9 +1,5 @@
 # Ternary bipolar circuits land on the four-change cyclic frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Ternary bipolar circuits land on the four-change cyclic frontier

@@ -1,9 +1,5 @@
 # Antimatroid saturation and the two-obstruction dichotomy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Antimatroid saturation and the two-obstruction dichotomy

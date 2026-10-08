@@ -1,9 +1,5 @@
 # Packet reversal realizes opposite physical roots with the descent certificate intact — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Combination of Article I's full-support interval-reversal calculus and Article II's physical window-slide roots.

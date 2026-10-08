@@ -1,9 +1,5 @@
 # Three-root protected zeros reduce to a planar A2 recycling residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in the pure alternating ternary sector. Consider a support-minimal positive zero of actual window-slide roots contained in one ordered-partition carrier cell, and suppose the support has exactly three roots.

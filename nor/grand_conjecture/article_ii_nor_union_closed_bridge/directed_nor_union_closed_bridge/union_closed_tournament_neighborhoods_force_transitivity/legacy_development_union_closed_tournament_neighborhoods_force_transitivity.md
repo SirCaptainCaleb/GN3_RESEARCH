@@ -1,9 +1,5 @@
 # Union-closed tournament neighborhoods force transitivity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Union-closed tournament neighborhoods are precisely the transitive case

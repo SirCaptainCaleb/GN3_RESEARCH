@@ -1,9 +1,5 @@
 # Audit: the pair-defect self-map has degree +1 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the normalized pair-defect map is carried by the identity

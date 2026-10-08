@@ -1,9 +1,5 @@
 # Every additional minimum-shore vertex extends the monochromatic connector seed — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue from §344. Let

@@ -1,9 +1,5 @@
 # Outer-splice forcing for blocked ternary forks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Outer-splice lemma for ternary coordinate labels

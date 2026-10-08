@@ -1,9 +1,5 @@
 # Switch-prism Borsuk-Ulam localizes NOR obstruction to r-element Coxeter blocks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Switch-prism Borsuk--Ulam localization

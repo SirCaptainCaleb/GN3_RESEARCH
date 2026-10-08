@@ -1,9 +1,5 @@
 # Same-profile flat replacement cycles are exactly the two minimal A2 root carriers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

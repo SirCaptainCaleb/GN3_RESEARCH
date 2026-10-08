@@ -1,9 +1,5 @@
 # Hamiltonian root-cycle zeros are stable under every small dimension-preserving perturbation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamiltonian root-cycle zeros are stable under every small dimension-preserving perturbation

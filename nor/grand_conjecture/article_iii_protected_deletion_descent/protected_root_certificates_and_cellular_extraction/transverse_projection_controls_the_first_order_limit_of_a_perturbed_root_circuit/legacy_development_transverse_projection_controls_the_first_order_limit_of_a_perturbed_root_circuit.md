@@ -1,9 +1,5 @@
 # Transverse projection controls the first-order limit of a perturbed root circuit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Transverse projection controls the first-order limit of a perturbed root circuit

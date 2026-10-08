@@ -1,9 +1,5 @@
 # Hartman’s least-unreachable labeling principle and the NOR translation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Hartman's Connector proof suggests labeling a state by the least boundary target that is not reachable inside its own monochromatic component. The decisive feature is component invariance: adjacent states of the same color lie in one monochromatic component and therefore have the same reachable-target set and the same least-unreachable label. A Sperner-complete cell then contradicts the limited number of underlying colors.

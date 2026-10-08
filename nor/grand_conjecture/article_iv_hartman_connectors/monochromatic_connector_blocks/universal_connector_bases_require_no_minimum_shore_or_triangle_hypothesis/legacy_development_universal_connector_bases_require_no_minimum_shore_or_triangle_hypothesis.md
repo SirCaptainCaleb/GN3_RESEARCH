@@ -1,9 +1,5 @@
 # Universal connector bases require no minimum-shore or triangle hypothesis — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Universal connector bases require no minimum-shore or triangle hypothesis

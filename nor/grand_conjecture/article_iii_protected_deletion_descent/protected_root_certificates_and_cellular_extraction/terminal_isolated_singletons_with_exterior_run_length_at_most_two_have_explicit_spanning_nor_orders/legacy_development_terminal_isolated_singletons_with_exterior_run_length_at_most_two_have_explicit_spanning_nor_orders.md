@@ -1,9 +1,5 @@
 # Terminal isolated singletons with exterior run length at most two have explicit spanning NOR orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every flat alternating global singleton with a short terminal run has a spanning NOR order

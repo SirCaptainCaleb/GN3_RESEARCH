@@ -1,9 +1,5 @@
 # A five-block switch insertion leaves one local parity pattern — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact switch insertion by the five-coordinate connector

@@ -1,9 +1,5 @@
 # Two-block facet witnesses alone form a strongly connected root digraph — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two-block facet witnesses alone form a strongly connected root digraph

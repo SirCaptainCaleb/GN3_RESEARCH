@@ -1,9 +1,5 @@
 # Dominating or dominated zero-path modules absorb into every compatible connector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Relative absorption of a whole extremal shore module

@@ -1,9 +1,5 @@
 # A fully-curved target switch cannot be one slot from a fully-curved boundary — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A full-curvature target switch cannot sit one slot from a full boundary

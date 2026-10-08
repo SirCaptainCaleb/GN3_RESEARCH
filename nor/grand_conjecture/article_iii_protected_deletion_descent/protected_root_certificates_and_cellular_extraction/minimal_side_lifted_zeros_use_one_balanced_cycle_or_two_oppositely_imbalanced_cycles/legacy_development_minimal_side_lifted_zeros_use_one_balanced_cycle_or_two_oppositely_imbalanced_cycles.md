@@ -1,9 +1,5 @@
 # Minimal side-lifted zeros use one balanced cycle or two oppositely imbalanced cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

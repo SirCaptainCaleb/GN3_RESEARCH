@@ -1,9 +1,5 @@
 # The outermost-root degree zero contains a canonical two-shore closing cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The outermost-root degree zero contains a canonical two-shore closing cycle

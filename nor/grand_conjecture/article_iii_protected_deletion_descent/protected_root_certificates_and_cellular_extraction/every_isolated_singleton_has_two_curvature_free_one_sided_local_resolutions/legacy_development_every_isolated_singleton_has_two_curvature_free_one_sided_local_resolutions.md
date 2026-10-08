@@ -1,9 +1,5 @@
 # Every isolated singleton has two curvature-free one-sided local resolutions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every isolated singleton has two curvature-free one-sided local resolutions

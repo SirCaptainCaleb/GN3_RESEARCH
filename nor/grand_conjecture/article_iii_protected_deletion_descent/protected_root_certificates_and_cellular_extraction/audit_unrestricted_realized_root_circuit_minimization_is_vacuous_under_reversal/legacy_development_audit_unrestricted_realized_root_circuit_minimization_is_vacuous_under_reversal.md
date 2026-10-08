@@ -1,9 +1,5 @@
 # Audit: unrestricted realized-root circuit minimization is vacuous under reversal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: unrestricted realized-root minimization collapses to antipodal 2-cycles

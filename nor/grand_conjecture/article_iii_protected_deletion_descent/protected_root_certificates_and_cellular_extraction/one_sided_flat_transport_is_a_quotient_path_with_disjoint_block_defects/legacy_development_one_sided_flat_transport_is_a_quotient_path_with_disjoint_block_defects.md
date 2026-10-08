@@ -1,9 +1,5 @@
 # One-sided flat transport is a quotient path with disjoint block defects — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One-sided flat transport is a quotient path with disjoint block defects

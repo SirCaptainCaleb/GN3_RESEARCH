@@ -1,9 +1,5 @@
 # Every good deletion witness in a minimum counterexample is blocked at both endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every good deletion witness in a minimum counterexample is blocked at both endpoints

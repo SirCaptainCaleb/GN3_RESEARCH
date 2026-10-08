@@ -1,9 +1,5 @@
 # Idea: four canonical internal weaves cover the residual antipodal five-set — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Intermediate antipodal result; local only, not yet a boundary-safe closure theorem.

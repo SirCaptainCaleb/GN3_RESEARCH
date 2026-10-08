@@ -1,9 +1,5 @@
 # Width-two rotations retain their extremal-class obligation, and the exported second bit is forced — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Keep the width-two comparison class and account for the forced exported bit

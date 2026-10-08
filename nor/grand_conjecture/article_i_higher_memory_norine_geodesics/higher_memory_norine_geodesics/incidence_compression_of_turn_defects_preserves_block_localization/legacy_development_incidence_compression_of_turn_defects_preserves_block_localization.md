@@ -1,9 +1,5 @@
 # Incidence compression of turn defects preserves block localization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Incidence compression of turn defects

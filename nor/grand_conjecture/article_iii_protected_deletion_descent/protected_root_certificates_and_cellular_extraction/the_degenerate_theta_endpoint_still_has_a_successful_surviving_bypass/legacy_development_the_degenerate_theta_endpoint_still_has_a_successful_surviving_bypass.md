@@ -1,9 +1,5 @@
 # The degenerate theta endpoint still has a successful surviving bypass — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The degenerate theta endpoint still has a successful surviving bypass

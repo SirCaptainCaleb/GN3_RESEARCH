@@ -1,9 +1,5 @@
 # GN3N article transfer assessment and coherent NOR deletion-order closure — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Reviewed only the seven GN3N article compositions: article_vii_antipodal_geodesics_and_topological_reformulations v9; defect_lines_and_spanningorder_compression v1; deletioncover_compatibility_and_global_obstruction_structure v1; endpoint_transport_and_small_support_gluing v1; longest_paths_and_reversal_structure v1; quadratic_potential_and_pairwise_repartition v1; three_cover_repartitions_and_recurrence v1. No underlying GN3N sections or subsections, literature, SAT, or MILP were used.

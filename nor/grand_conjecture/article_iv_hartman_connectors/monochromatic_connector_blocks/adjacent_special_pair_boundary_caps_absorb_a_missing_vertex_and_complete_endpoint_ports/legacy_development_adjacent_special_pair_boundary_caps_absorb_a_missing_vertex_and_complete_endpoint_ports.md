@@ -1,9 +1,5 @@
 # Adjacent special-pair boundary caps absorb a missing vertex and complete endpoint ports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Combination of the monochromatic zero-path formulation, special-pair signatures, and Article IV's relaxed boundary-target state space.

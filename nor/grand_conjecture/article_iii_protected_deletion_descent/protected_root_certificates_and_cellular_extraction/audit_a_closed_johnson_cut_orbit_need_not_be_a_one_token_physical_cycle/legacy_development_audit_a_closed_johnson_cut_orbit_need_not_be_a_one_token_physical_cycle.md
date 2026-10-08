@@ -1,9 +1,5 @@
 # Audit: a closed Johnson-cut orbit need not be a one-token physical cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: a closed Johnson-cut orbit need not be a one-token physical cycle

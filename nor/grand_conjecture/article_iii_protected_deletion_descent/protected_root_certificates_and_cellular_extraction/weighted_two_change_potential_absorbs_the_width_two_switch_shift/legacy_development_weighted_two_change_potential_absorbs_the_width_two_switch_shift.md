@@ -1,9 +1,5 @@
 # Audit: 7A+4B undercounts the seven-coordinate weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: the scalar 7A+4B undercounts the seven-coordinate weave

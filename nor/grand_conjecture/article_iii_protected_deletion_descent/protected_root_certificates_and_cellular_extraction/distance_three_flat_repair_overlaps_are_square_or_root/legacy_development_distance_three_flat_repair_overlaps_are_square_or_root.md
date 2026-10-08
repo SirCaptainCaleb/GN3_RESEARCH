@@ -1,9 +1,5 @@
 # Distance-three flat repair overlaps are square-or-root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Distance-three flat repair overlaps are square-or-root

@@ -1,9 +1,5 @@
 # Separation is valid on the minimum-first layer but does not yet control terminal band roots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let p be the globally minimum possible FIRST-phase length and restrict to normalized witnesses with displayed word 0^p1^q. Their canonical switch-insertion roots cross the physical first-p cut, so the finite alternative applies on one Johnson layer.

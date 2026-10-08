@@ -1,9 +1,5 @@
 # Ternary three-element front circuits are exactly cyclic deletion triples — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Ternary three-element front circuits are exactly cyclic deletion triples

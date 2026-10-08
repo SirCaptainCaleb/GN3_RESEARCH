@@ -1,9 +1,5 @@
 # Freudenthal gallery interpretation of prefix-tail reachability — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Prefix-tail states are Freudenthal faces

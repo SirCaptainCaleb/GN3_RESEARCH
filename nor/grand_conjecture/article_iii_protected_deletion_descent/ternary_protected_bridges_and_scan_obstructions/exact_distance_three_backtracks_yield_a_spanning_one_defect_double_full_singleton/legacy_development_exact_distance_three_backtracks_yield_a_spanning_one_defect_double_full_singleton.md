@@ -1,9 +1,5 @@
 # Exact distance-three backtracks yield a spanning one-defect double-full singleton — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

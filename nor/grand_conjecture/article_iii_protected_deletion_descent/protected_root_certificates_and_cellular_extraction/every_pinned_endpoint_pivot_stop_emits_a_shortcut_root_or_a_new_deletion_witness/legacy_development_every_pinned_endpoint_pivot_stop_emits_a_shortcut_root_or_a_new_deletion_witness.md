@@ -1,9 +1,5 @@
 # Every pinned endpoint pivot stop emits a shortcut root or a new deletion witness — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 At a pinned boundary of a minimum-length endpoint-root cycle, use the endpoint witness

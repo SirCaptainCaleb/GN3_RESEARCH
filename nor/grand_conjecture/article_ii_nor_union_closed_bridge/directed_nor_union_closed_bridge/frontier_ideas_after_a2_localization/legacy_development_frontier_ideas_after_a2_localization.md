@@ -1,9 +1,5 @@
 # Frontier ideas after A2 localization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Frontier ideas after A2 localization

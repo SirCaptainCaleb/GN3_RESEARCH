@@ -1,9 +1,5 @@
 # Backward insertion blockers are exactly local directed triangles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Backward insertion blockers are exactly local directed triangles

@@ -1,9 +1,5 @@
 # Equivalence of directed tuples and translation-invariant windows — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

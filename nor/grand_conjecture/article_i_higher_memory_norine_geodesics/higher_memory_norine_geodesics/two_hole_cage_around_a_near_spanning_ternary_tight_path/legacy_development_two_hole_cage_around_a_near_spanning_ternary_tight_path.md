@@ -1,9 +1,5 @@
 # Two-hole cage around a near-spanning ternary tight path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two-hole cage around a near-spanning tight path

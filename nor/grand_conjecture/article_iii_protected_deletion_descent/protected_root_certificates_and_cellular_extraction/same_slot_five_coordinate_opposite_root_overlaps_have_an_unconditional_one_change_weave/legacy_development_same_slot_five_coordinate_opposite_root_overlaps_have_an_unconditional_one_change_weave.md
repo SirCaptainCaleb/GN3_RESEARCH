@@ -1,9 +1,5 @@
 # Same-slot five-coordinate opposite-root overlaps have an unconditional one-change weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same-slot five-coordinate opposite-root overlaps have an unconditional one-change weave

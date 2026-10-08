@@ -1,9 +1,5 @@
 # Pairwise-blocked shared walls carry a coherent direction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix one connector gap boundary at which a family of individually blocked incidence words all change from 1 to 0. For each word, individual blocking allows at most one of two thickness flags: left-thick means the preceding bit is also 1, and right-thick means the following bit is also 0. By the collective-insertion theorem, two vertices with opposite thicknesses at this same wall would insert together in one of the two internal orders. Hence in a pairwise-blocked family, left-thick and right-thick words cannot coexist at a shared wall. Every nontrivial shared blocker wall therefore has a coherent orientation: all thick words point left, all point right, or all are thin. The complemented statement holds for a shared 0-to-1 wall. This supplies a discrete directed-wall structure for a Hartman least-unreachable argument.

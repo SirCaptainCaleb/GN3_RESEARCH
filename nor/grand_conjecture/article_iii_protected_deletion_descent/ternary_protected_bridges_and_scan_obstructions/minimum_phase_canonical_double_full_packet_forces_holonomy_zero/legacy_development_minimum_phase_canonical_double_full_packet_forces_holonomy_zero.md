@@ -1,9 +1,5 @@
 # Minimum-phase canonical double-full packet forces holonomy zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

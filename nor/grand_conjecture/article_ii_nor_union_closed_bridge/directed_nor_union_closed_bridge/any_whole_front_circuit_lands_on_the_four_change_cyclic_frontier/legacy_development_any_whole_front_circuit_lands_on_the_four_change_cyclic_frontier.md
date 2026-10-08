@@ -1,9 +1,5 @@
 # Any whole-front circuit lands on the four-change cyclic frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Any whole-front circuit lands on the four-change cyclic frontier

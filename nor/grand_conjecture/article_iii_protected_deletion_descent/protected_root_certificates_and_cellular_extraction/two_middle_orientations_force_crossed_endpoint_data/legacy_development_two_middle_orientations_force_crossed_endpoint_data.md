@@ -1,9 +1,5 @@
 # Two middle orientations force crossed endpoint data — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two orientations of the middle force crossed endpoint data

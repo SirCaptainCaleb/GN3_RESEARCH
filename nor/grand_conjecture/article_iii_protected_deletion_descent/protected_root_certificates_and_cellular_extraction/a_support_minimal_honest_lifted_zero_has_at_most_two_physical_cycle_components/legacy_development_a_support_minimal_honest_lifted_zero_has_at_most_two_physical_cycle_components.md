@@ -1,9 +1,5 @@
 # A support-minimal honest lifted zero has at most two physical cycle components — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A support-minimal honest lifted zero has at most two physical cycle components

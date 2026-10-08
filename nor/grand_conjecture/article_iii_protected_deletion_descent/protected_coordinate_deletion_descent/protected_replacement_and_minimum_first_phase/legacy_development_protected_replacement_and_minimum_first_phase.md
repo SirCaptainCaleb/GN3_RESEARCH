@@ -1,9 +1,5 @@
 # Protected replacement and minimum first phase — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §§190,192,193,200. The short-phase qualification below is necessary.

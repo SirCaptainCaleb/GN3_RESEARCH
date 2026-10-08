@@ -1,9 +1,5 @@
 # First--last transition cores and a rook-locality dichotomy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

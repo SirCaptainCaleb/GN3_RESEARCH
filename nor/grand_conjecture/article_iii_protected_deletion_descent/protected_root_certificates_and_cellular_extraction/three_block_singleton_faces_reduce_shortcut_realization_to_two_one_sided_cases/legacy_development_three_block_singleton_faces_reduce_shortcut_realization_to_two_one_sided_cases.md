@@ -1,9 +1,5 @@
 # Three-block singleton faces reduce shortcut realization to two one-sided cases — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three-block singleton faces reduce shortcut realization to two one-sided cases

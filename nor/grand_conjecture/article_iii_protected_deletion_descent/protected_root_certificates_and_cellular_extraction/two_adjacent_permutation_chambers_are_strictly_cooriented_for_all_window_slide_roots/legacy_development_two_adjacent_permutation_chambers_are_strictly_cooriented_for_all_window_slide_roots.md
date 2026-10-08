@@ -1,9 +1,5 @@
 # Two adjacent permutation chambers are strictly cooriented for all window slide roots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two adjacent permutation chambers are strictly cooriented for all window-slide roots

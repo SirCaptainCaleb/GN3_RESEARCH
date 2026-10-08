@@ -1,9 +1,5 @@
 # Canonical flat sector carriers have a double curvature barrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical flat-sector carriers have a double curvature barrier

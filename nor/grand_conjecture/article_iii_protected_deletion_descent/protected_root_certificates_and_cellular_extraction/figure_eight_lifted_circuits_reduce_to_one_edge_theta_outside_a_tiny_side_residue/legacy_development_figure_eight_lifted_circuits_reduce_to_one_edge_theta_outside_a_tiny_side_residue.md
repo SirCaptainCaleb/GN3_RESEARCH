@@ -1,9 +1,5 @@
 # Figure eight lifted circuits reduce to one edge theta outside a tiny side residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Figure-eight circuits reduce to one-edge theta pivots except for a tiny side-imbalance residue

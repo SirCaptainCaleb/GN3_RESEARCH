@@ -1,9 +1,5 @@
 # Audit: endpoint relocation does not enlarge the width-two compatible band — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction

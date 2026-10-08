@@ -1,9 +1,5 @@
 # Minimum counterexample makes the all-refinements root carrier zero-free on every proper permutahedron face — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum counterexample makes the all-refinements root carrier zero-free on every proper permutahedron face

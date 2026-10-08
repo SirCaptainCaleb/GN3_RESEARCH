@@ -1,9 +1,5 @@
 # Proper-support multi-cycle honest lifted zeros have transverse crossing labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in the pure alternating ternary sector with the honest switch-prism labels

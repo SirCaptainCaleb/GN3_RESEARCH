@@ -1,9 +1,5 @@
 # Fully curved tetrahedra are universal switch gadgets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Fully curved tetrahedra are universal switch gadgets

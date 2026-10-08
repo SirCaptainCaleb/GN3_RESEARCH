@@ -1,9 +1,5 @@
 # Small synchronized endpoint cycles reuse the original protected root directions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Consider the injective synchronized endpoint obstruction of root 87:

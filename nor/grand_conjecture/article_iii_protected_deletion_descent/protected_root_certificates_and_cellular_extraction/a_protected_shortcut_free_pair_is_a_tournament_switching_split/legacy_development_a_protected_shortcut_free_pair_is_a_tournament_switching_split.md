@@ -1,9 +1,5 @@
 # A protected-shortcut-free pair is a tournament switching split — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A protected-shortcut-free pair is a tournament switching split

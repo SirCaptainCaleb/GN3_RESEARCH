@@ -1,9 +1,5 @@
 # Minimum counterexamples contain a deletion-root cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Deletion orders generate a root recurrence without topology

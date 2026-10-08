@@ -1,9 +1,5 @@
 # Root locality confines carrier cancellations to large tied blocks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Combination of the ordered-partition geometry in Article II §228, the physical window-slide dictionary in §225, and the all-arity outermost carrier.

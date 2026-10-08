@@ -1,9 +1,5 @@
 # Corrected: the crossed shortcut has two endpoint-pinned threshold transports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Corrected: the crossed shortcut has two endpoint-pinned threshold transports

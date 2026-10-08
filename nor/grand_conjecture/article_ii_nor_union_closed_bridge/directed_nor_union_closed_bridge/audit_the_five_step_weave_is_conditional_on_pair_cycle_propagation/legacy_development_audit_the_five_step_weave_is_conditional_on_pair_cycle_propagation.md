@@ -1,9 +1,5 @@
 # Audit: the five-step weave is conditional on pair-cycle propagation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

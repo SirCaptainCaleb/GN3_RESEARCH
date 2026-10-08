@@ -1,9 +1,5 @@
 # Antimatroid supports do not determine tight witness orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Antimatroid supports do not determine tight witness orders

@@ -1,9 +1,5 @@
 # Minimal front obstructions are punctured Boolean cubes with uniform Frankl deficit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A counterexample exposes a punctured Boolean cube with uniform Frankl deficit

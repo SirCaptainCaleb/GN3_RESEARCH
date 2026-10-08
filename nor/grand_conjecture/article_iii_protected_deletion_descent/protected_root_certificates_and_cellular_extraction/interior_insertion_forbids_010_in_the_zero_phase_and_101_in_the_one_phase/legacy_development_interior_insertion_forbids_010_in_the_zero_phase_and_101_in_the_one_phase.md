@@ -1,9 +1,5 @@
 # Interior insertion forbids 010 in the zero phase and 101 in the one phase — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Interior insertion forbids 010 in the zero phase and 101 in the one phase

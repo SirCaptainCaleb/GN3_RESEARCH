@@ -1,9 +1,5 @@
 # Window-slide roots form a forest and adjacent walls have one transverse direction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Window-slide roots form a forest, and an adjacent chamber wall has one transverse direction

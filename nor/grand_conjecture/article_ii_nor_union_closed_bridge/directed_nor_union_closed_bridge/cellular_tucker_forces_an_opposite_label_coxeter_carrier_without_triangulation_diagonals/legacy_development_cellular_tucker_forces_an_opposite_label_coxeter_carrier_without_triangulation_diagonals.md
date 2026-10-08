@@ -1,9 +1,5 @@
 # Cellular Tucker forces an opposite label Coxeter carrier without triangulation diagonals — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Cellular Tucker forces an opposite-label Coxeter carrier without triangulation diagonals

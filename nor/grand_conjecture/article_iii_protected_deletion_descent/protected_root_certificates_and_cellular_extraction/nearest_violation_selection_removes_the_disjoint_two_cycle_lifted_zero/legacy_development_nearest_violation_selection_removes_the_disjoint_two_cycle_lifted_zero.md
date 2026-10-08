@@ -1,9 +1,5 @@
 # Nearest-violation selection removes the disjoint two-cycle lifted zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Nearest-violation selection removes the disjoint two-cycle lifted zero

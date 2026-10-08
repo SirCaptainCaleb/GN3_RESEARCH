@@ -1,9 +1,5 @@
 # The crossed-diagonal A3 two-plus-two residue contains a complementary Tucker edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in one exact ternary A3 block and the no-internal-switch-chamber branch of root 101. After global color complementation if necessary, label the four block coordinates

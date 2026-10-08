@@ -1,9 +1,5 @@
 # The one-change automaton has a conserved initial-polarity color — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The one-change automaton has a conserved initial-polarity color

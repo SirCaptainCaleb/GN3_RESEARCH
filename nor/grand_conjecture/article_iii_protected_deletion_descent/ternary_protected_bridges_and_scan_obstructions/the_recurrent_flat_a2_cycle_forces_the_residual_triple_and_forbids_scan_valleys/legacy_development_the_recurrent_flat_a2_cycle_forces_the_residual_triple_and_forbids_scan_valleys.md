@@ -1,9 +1,5 @@
 # The recurrent flat A2 cycle forces the residual triple and forbids scan valleys — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The recurrent flat A2 cycle forces the residual triple and forbids scan valleys

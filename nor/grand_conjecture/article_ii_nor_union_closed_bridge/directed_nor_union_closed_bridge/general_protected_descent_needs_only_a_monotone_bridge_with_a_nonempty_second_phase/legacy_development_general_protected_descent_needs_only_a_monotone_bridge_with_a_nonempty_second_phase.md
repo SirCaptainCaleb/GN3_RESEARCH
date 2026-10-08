@@ -1,9 +1,5 @@
 # General protected descent needs only a monotone bridge with a nonempty second phase — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## General protected descent needs only a monotone bridge with a nonempty second phase

@@ -1,9 +1,5 @@
 # A perfect blocker has exactly one flat tetrahedron in its curvature tube — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

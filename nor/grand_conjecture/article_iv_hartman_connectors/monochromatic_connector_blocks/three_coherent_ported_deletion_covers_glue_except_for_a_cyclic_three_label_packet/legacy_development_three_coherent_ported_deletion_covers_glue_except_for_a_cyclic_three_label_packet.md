@@ -1,9 +1,5 @@
 # Three coherent ported deletion covers glue except for a cyclic three-label packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 # Three coherent deletion covers: gluing except for one cyclic three-label packet

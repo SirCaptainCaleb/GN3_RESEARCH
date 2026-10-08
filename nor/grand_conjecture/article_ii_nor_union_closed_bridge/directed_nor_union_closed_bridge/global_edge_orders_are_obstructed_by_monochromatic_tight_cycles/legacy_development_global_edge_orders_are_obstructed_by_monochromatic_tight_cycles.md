@@ -1,9 +1,5 @@
 # Global edge orders are obstructed by monochromatic tight cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Global edge-order representation and monochromatic tight cycles

@@ -1,9 +1,5 @@
 # Reflection gallery roots are genuine side-lifted terminal barrier roots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Label conversion for width-two reflection dynamics

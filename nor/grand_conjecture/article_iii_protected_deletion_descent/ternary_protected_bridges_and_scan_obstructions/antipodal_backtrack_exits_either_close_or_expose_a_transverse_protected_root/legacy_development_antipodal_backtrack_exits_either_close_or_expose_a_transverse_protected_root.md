@@ -1,9 +1,5 @@
 # Antipodal backtrack exits either close or expose a transverse protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

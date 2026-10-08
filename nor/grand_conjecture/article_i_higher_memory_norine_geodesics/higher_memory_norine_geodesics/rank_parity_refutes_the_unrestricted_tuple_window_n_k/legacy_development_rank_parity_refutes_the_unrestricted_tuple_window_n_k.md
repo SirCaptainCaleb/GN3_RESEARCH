@@ -1,9 +1,5 @@
 # Rank parity refutes the unrestricted tuple-window N_k — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Refutation of the unrestricted tuple-window formulation

@@ -1,9 +1,5 @@
 # Residual A2 scan rises either close or exit through a protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Residual A2 rises admit a boundary-safe rightward handoff

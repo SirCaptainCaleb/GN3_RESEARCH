@@ -1,9 +1,5 @@
 # Open frontier notes: pair-cycle holonomy and codimension-two blocker transfer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Open research notes / adversarial frontier after the latest audits.

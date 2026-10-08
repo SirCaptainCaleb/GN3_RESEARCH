@@ -1,9 +1,5 @@
 # Inert protected exchanges force a mutual blocker pair defect — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Inert protected exchanges force a mutual-blocker pair defect

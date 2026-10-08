@@ -1,9 +1,5 @@
 # Three nonrigid width-two types close at a three-window exterior, with exact interior collar transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three nonrigid width-two types close at a three-window exterior, with exact interior collar transport

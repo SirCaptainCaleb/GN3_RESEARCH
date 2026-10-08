@@ -1,9 +1,5 @@
 # Root separation supplies one global Johnson-shore potential — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let V be the finite set of minimum-short-shore protected states after the antipodally closed normalization of root 61. For each state write S for its short shore and r_S for a chosen shore-oriented canonical protected root. Thus r_S=e_a-e_c with a in S and c outside S, and complement-reversal fixes S and r_S.

@@ -1,9 +1,5 @@
 # Maximal tight paths force a union-closure defect at the exposed front — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Maximal tight paths force a union-closure defect at the exposed front

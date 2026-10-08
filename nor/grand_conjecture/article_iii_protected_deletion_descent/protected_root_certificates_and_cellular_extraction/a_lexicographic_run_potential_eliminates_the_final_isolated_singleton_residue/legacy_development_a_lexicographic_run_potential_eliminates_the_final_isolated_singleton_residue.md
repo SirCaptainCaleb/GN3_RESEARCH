@@ -1,9 +1,5 @@
 # A lexicographic run potential eliminates the final isolated-singleton residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A lexicographic run potential eliminates the final isolated-singleton residue

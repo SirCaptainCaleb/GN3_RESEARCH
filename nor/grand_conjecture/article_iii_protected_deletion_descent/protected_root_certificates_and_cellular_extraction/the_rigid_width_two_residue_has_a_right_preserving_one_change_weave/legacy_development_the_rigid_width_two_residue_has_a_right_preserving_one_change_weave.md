@@ -1,9 +1,5 @@
 # The rigid width-two residue has a right-preserving one-change weave — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A one-sided splice for the rigid width-two six-set

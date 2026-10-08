@@ -1,9 +1,5 @@
 # Threshold band length is a strict potential for outward flat combing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Threshold-band length is a strict potential for outward flat combing

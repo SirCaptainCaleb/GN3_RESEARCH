@@ -1,9 +1,5 @@
 # Arithmetic-progression synchronized shifts are monochromatic — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue with a synchronized Hamiltonian endpoint cycle on k ambient coordinates:

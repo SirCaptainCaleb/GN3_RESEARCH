@@ -1,9 +1,5 @@
 # Audit adjacent swap transport omitted a fourth changed status — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: adjacent-swap transport omitted a fourth changed status

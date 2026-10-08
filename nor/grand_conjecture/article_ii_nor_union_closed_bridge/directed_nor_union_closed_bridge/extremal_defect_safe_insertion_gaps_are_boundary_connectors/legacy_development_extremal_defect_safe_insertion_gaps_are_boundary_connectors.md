@@ -1,9 +1,5 @@
 # Extremal defect-safe insertion gaps are boundary connectors — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

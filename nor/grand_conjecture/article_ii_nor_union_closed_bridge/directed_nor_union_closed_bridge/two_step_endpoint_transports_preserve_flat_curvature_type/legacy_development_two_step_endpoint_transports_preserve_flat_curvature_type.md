@@ -1,9 +1,5 @@
 # Two-step endpoint transports preserve flat curvature type — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 In Hamilton-normalized chord coordinates, let a flat central transition occur in (...,a,b,c,d,q,r,...), with local statuses x,1-x,z,R and normalized distance-three chord t(a,d)=1. A successful right repair swaps c,d and gives x,x,1-z,V. In the distance-two branch V=R, and because the target transition between 1-z and V is newly created, the old transition there was absent, so z=R. Renormalizing along (...,a,b,d,c,q,r,...) requires switch bits s_d=1-x, s_c=x, and common suffix switch z xor x. Therefore the new distance-three chord across the target quadruple (d,c,q,r) is t_new(d,r)=R xor (1-x) xor (z xor x)=1 xor R xor z=1. At a transition, normalized distance-three chord 1 is exactly the flat case. Hence every successful distance-two endpoint repair carries a flat transition to another flat transition. Curvature type can therefore change only on the distance-three transport branch. Combined with the global J2 law, curvature-changing transports occur with even parity on every closed repair loop.

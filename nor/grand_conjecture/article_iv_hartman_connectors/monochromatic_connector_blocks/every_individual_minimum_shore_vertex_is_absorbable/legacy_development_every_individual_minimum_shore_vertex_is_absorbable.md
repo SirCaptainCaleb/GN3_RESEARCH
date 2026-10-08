@@ -1,9 +1,5 @@
 # Every individual minimum-shore vertex is absorbable — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix any additional a∈A\{u,v,w}. Relative to the anchor u, exactly one of a→u or u→a holds.

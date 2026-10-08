@@ -1,9 +1,5 @@
 # Audit: the canonical full-permutahedron root map has a trivial central zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

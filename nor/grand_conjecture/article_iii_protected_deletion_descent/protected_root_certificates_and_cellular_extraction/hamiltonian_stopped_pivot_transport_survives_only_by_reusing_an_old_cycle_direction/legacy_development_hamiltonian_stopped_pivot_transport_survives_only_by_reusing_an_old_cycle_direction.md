@@ -1,9 +1,5 @@
 # Hamiltonian stopped-pivot transport survives only by reusing an old cycle direction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamiltonian stopped-pivot transport can survive only by reusing an old cycle direction

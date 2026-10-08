@@ -1,9 +1,5 @@
 # Antipodal cube geodesics are coordinate orders — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

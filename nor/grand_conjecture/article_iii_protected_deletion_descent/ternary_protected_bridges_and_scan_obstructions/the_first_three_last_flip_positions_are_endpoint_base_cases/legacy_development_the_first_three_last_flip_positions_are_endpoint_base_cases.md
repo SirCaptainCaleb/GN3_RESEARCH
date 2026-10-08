@@ -1,9 +1,5 @@
 # The first three last-flip positions are endpoint base cases — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The first three last-flip positions are endpoint base cases

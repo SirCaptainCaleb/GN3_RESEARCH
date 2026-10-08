@@ -1,9 +1,5 @@
 # The crossed shortcut ladder gives two antipodal exchange fans at the same rank-two cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The crossed shortcut ladder gives two antipodal exchange fans at the same rank-two cut

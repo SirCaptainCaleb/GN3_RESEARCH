@@ -1,9 +1,5 @@
 # Endpoint repair never increases cyclic variation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Endpoint repair never increases cyclic variation

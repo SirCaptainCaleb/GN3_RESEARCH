@@ -1,9 +1,5 @@
 # Audit correction: separated connector vertices require ordered boundary parity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # Defect-free run reversal localizes the joint obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Defect-free run reversal localizes the joint obstruction

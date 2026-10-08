@@ -1,9 +1,5 @@
 # Audit: tail truncation does not propagate switch polarization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit

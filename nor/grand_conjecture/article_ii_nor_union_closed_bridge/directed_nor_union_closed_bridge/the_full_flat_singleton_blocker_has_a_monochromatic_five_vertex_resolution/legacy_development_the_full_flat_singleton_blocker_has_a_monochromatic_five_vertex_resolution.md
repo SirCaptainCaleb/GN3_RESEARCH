@@ -1,9 +1,5 @@
 # The full flat singleton blocker has a monochromatic five vertex resolution — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The full-flat singleton blocker has a monochromatic five-vertex resolution

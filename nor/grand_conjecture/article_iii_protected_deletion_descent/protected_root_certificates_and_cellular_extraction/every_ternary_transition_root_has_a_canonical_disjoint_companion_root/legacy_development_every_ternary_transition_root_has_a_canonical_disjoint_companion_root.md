@@ -1,9 +1,5 @@
 # Every ternary transition carrier has a realized disjoint companion root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: every ternary transition root has a realized disjoint companion relation

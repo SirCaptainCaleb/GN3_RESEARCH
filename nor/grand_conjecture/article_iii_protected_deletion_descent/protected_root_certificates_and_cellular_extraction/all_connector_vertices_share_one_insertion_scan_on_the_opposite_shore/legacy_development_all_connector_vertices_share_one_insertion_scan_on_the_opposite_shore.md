@@ -1,9 +1,5 @@
 # All connector vertices share one insertion scan on the opposite shore — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The switching split has one universal connector scan

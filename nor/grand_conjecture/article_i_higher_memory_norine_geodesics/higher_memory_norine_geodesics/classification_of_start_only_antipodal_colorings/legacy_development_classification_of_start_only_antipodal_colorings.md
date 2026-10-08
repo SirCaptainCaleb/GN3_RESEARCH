@@ -1,9 +1,5 @@
 # Start-only obstructions in the broader window model — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

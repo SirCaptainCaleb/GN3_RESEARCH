@@ -1,9 +1,5 @@
 # The four-state holonomy gadget is transition-optimal for every boundary coloring — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The four-state holonomy gadget is transition-optimal for every boundary coloring

@@ -1,9 +1,5 @@
 # Fixed insertion fibers force either a protected root descent or one pure-sign jump edge — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

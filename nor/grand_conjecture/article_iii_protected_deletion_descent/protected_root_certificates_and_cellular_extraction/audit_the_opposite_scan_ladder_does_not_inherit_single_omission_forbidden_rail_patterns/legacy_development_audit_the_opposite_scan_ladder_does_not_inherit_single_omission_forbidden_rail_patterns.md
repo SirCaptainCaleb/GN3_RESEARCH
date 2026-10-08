@@ -1,9 +1,5 @@
 # Audit: the opposite-scan ladder does not inherit single-omission forbidden rail patterns — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the opposite-scan ladder does not inherit the single-omission forbidden rail patterns

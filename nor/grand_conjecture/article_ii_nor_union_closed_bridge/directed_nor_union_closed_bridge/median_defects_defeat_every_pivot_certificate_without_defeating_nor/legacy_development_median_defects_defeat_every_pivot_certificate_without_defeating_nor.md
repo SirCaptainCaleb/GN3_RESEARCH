@@ -1,9 +1,5 @@
 # Median defects defeat every pivot certificate without defeating NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The pivot certificates of Subsections 43 and 45 are sufficient but cannot close the whole locally transitive sector by a universal existence theorem. Let V carry a strict scalar order lambda and define h(a,b,c)=1 if lambda(a)>lambda(c), and 0 otherwise. This is reversal odd and every center tournament is transitive. The increasing vertex order is monochromatic of color 0, so NOR holds directly.

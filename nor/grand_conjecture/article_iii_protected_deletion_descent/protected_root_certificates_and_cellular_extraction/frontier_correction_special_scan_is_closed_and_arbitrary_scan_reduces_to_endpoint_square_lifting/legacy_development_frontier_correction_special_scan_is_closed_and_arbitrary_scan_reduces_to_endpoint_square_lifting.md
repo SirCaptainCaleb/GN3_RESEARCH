@@ -1,9 +1,5 @@
 # Frontier correction: special scan is closed and arbitrary scan reduces to endpoint square lifting — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Frontier correction after recent Article III developments

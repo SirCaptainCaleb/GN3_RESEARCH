@@ -1,9 +1,5 @@
 # The two-change potential (A+B,A) absorbs the width-two switch shift — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The potential (A+B,A) is adapted to the full two-change surgery system

@@ -1,9 +1,5 @@
 # Every spanning compatible monochromatic connector closes across a homogeneous cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every spanning compatible monochromatic connector closes across a homogeneous cut

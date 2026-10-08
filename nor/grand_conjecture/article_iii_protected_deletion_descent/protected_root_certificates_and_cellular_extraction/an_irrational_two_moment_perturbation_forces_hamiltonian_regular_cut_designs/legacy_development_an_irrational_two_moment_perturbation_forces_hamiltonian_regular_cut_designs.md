@@ -1,9 +1,5 @@
 # An irrational two-moment perturbation forces Hamiltonian regular cut designs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## An irrational two-moment perturbation forces a Hamiltonian regular cut design

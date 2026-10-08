@@ -1,9 +1,5 @@
 # Complementary Tucker paths can avoid global endpoint loss outside the solved A2 case — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Complementary Tucker paths can avoid global endpoint loss outside the solved A2 case

@@ -1,9 +1,5 @@
 # Complementary signed-middle Tucker edges are switch-crossing endpoint repairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Complementary signed-middle edges are switch-crossing endpoint repairs

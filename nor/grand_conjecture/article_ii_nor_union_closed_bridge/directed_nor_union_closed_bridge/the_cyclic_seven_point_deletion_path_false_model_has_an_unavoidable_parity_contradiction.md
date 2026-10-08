@@ -1,15 +1,1 @@
 # The cyclic seven-point deletion-path false model has an unavoidable parity contradiction
-
-## Composition
-
-(none yet)
-
-## Development
-
-Adversarial 7-vertex construction attempt and obstruction. Work with a pure alternating ternary orientation alpha (no defect vertices) on V=Z_7. For each omitted x define the cyclicly translated Hamilton path D_x=x+(1,3,4,6,5,2). The five edge sets of D_0 are {1,3},{3,4},{4,6},{5,6},{2,5}. The 15 pairs in Z_7\{0} split into five three-element ownership orbits: {12,16,56}, {13,26,45}, {14,36,34}, {15,46,23}, {24,25,35}; D_0 chooses exactly one pair from each orbit. Consequently every unordered triple T in Z_7 has exactly one distinguished vertex x such that T\{x} is an edge of D_x. Thus assigning the five scan bits s^x_i=alpha(x,D_x(i),D_x(i+1)) for every x defines alpha on every triple without conflicts. This is a particularly clean candidate architecture for a minimum counterexample.
-
-Try to force every D_x to have the shortest nontrivial one-change word 0011 or 1100, and simultaneously force x to be noninsertable at every gap. For word 0011, the pure-orientation insertion calculus shows the unique monotone step scan that blocks prepend, append, and every interior insertion is 11100; by color complement, word 1100 requires scan 00011. Encode the choice by t_x in {0,1}: t_x=0 means w^x=0011 and s^x=11100, while t_x=1 means w^x=1100 and s^x=00011.
-
-Directly tracing ownership for the four consecutive triples of D_0 gives w^0_1=s^{4}_3, w^0_2=s^{3}_1, w^0_3=s^{6}_4, and w^0_4=1-s^{2}_2. Translation gives the same formulas at every x. Substituting the two step scans yields the necessary relations t_{x+4}=1-t_x, t_{x+3}=1-t_x, t_{x+6}=1-t_x, and t_{x+2}=1-t_x for every x. But applying the last relation twice gives t_{x+4}=t_x, contradicting t_{x+4}=1-t_x. Therefore this cyclic 7-point ownership design cannot support simultaneous extremal blocked deletion orders.
-
-This does not prove NOR and does not exclude other 7-point or larger counterexample architectures. Its value is adversarial: an almost ideal conflict-free design for independently controlling all omitted-vertex scans still fails when the deletion words and insertion blockers are made self-consistent. Any false model must use a less symmetric ownership design, longer/more complicated deletion words, nonempty defect field, or a fundamentally different obstruction than simultaneous step-scan blocking.

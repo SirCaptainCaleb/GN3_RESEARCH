@@ -1,9 +1,5 @@
 # The distance-three pair-insertion residue is rigid full-flat-full — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The distance-three pair-insertion residue is rigid full-flat-full

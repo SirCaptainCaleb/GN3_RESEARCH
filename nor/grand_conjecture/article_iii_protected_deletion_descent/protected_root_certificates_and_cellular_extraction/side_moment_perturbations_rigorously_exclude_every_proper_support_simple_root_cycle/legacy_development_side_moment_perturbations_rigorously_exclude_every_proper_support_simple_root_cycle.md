@@ -1,9 +1,5 @@
 # Side-moment perturbations rigorously exclude every proper-support simple root cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Side-moment perturbations rigorously exclude every proper-support simple root cycle

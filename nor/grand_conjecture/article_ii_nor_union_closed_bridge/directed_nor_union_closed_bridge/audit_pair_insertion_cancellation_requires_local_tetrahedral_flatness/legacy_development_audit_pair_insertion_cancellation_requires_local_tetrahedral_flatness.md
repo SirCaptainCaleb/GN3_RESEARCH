@@ -1,9 +1,5 @@
 # Audit: pair insertion cancellation requires local tetrahedral flatness — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Scope correction and a local pair-extension lemma

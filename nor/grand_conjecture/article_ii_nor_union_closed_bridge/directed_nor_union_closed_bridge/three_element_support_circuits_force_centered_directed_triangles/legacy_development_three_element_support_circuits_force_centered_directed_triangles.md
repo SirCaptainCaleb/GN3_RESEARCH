@@ -1,9 +1,5 @@
 # Three-element support circuits force centered directed triangles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three-element support circuits are blocked cycles with three centered triangles

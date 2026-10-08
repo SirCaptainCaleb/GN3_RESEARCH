@@ -1,9 +1,5 @@
 # Favorable shore endpoint orientations give an immediate spanning one-change order — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Favorable shore endpoint orientations give an immediate spanning one-change order

@@ -1,9 +1,5 @@
 # Hamiltonian endpoint cycles emit an immediate chord without corner lifting — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamiltonian endpoint cycles emit an immediate chord without corner lifting

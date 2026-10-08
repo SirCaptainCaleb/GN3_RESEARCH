@@ -1,9 +1,5 @@
 # Inert exchanges and descent root certificates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §§195,197, under the admissibility conditions of the protected replacement lemma.

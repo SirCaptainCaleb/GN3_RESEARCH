@@ -1,9 +1,5 @@
 # Minimum flat-sector endpoint runs have length at least three — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

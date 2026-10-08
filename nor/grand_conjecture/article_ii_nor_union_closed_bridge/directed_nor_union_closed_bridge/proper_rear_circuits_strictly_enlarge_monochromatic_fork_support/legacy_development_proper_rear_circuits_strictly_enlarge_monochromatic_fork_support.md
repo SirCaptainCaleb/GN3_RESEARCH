@@ -1,9 +1,5 @@
 # Proper rear circuits strictly enlarge monochromatic fork support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Proper rear circuits strictly enlarge monochromatic fork support

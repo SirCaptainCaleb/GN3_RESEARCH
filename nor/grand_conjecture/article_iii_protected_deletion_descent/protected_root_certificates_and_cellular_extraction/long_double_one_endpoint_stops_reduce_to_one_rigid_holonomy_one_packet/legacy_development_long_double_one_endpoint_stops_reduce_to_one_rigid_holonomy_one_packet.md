@@ -1,9 +1,5 @@
 # Long double-one endpoint stops reduce to one rigid holonomy-one packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Long double-one endpoint stops reduce to one rigid six-coordinate pattern

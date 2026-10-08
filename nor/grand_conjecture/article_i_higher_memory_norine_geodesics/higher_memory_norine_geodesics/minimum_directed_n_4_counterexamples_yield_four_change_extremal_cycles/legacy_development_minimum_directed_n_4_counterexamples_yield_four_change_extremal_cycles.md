@@ -1,9 +1,5 @@
 # Minimum directed N_4 counterexamples yield four-change extremal cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four-change extremal cycle at directed N_4

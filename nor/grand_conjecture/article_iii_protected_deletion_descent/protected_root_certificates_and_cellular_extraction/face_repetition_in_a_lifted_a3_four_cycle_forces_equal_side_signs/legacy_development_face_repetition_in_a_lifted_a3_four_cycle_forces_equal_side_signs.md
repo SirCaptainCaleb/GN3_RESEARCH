@@ -1,9 +1,5 @@
 # Face repetition in a lifted A3 four-cycle forces equal side signs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Face repetition in a lifted A3 four-cycle forces equal side signs

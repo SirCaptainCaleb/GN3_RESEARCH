@@ -1,9 +1,5 @@
 # Two monochromatic tight cycles join unless both junctions contain directed triangles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two monochromatic cycles can be joined unless both junctions contain directed triangles

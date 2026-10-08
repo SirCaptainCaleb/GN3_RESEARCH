@@ -1,9 +1,5 @@
 # Every bad full order lies on a flag-compatible outermost-root cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every bad full order lies on a flag-compatible outermost-root cycle

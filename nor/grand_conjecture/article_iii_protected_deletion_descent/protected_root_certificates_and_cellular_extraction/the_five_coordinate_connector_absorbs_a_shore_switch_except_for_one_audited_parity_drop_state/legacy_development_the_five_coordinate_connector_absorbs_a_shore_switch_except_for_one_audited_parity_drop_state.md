@@ -1,9 +1,5 @@
 # The five-coordinate connector absorbs a shore switch except for one audited parity-drop state — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact audited switch absorption by the minimum-shore connector block

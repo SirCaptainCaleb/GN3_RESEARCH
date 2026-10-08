@@ -1,9 +1,5 @@
 # Audit: late-blocker descent leaves m=0,1,2, not only m=1,2 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

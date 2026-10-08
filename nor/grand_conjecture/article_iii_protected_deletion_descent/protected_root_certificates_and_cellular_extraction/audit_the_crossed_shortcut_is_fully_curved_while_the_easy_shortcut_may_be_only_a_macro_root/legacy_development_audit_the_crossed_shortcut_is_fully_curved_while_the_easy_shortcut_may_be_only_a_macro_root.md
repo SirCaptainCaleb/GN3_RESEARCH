@@ -1,9 +1,5 @@
 # Audit: the crossed shortcut is fully curved, while the easy shortcut may be only a macro-root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Scope correction for the ordered-shortcut theorem

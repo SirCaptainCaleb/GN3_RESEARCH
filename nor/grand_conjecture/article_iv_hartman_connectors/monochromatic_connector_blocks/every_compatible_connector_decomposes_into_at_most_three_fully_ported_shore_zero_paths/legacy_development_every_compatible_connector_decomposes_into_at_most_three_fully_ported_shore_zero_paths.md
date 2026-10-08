@@ -1,9 +1,5 @@
 # Every compatible connector decomposes into at most three fully ported shore zero paths — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical ported shore-block decomposition of arbitrary compatible connectors

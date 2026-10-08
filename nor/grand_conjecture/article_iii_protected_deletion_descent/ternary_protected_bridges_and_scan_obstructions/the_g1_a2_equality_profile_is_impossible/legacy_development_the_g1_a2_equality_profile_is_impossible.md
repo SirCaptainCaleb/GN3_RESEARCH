@@ -1,9 +1,5 @@
 # The g=1 A2 equality profile is impossible — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

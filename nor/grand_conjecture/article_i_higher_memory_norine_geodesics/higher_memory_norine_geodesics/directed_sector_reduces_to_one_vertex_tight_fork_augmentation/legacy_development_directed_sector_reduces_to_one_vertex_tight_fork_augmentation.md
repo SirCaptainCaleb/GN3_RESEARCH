@@ -1,9 +1,5 @@
 # Directed sector reduces to one-vertex tight-fork augmentation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Directed sector: reduction to one-vertex tight-fork augmentation

@@ -1,9 +1,5 @@
 # Audit correction for the minimum-shore edge witness — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Section 345 needs a scope correction.

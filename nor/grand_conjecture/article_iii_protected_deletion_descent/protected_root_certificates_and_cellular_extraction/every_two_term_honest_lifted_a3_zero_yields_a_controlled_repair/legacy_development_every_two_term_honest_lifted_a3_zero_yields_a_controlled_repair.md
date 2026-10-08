@@ -1,9 +1,5 @@
 # Every two-term honest lifted A3 zero yields a controlled repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in the coboundary-flat alternating ternary sector and in one exact A3 Coxeter block B={a,b,c,d}, with a fixed switch between the two internal ternary-window ranks. Consider a two-term positive zero of the honest switch-prism lifted labels:

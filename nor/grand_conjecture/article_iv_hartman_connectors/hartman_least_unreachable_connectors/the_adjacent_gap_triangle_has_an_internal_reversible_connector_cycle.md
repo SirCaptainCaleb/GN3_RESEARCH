@@ -1,9 +1,3 @@
 # The adjacent-gap triangle has an internal reversible connector cycle
 
-## Composition
-
 A directed shore triangle gives three compatible seed connectors connected through explicit deletions and insertions on the five-coordinate support. These are actual internal component paths. Their exposed outside pairs change, so use inside a larger connector requires a relative collar-preserving realization.
-
-## Development
-
-Let a,c,b be shore vertices with directed triangle a->c->b->a. The five-coordinate connector C1=(a,x,z,c,b) is monochromatic zero and compatible. Deleting b gives D1=(a,x,z,c), still compatible. From D1, insert b at the front: E=(b,a,x,z,c) is monochromatic zero because b->a->x is transitive and the remaining windows are the standard x,z seed windows. Deleting a gives D2=(b,x,z,c), again compatible. From D2, insert a between z and c to obtain C2=(b,x,z,a,c), also a compatible monochromatic connector because a->c. Thus C1 and C2 lie in one reversible connector component through support-deficient states. Cyclically, the three directed-triangle seed connectors are connected. This resolves the internal A2 state-space obstruction on {a,b,c,x,z}. It does not yet prove a relative repair inside a larger connector: the exposed outside pairs of the local block change along the cycle and must be matched to the ambient order.

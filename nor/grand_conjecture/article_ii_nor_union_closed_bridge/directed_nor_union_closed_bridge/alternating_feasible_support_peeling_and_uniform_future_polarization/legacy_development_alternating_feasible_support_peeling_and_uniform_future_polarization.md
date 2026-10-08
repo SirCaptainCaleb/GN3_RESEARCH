@@ -1,9 +1,5 @@
 # Alternating feasible-support peeling and uniform future polarization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Alternating feasible-support peeling and uniform future polarization

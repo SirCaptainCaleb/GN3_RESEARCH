@@ -1,9 +1,5 @@
 # Complementary signed-middle edges give phase-compatible switch transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A complementary signed-middle edge gives a phase-compatible switch transport in the prism

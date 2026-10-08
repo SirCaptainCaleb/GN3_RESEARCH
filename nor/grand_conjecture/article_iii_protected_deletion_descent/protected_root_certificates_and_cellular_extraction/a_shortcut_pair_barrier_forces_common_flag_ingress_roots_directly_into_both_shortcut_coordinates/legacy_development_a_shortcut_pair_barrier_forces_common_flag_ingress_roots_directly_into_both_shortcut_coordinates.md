@@ -1,9 +1,5 @@
 # A shortcut-pair barrier forces common-flag ingress roots directly into both shortcut coordinates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A shortcut-pair barrier forces common-flag ingress roots directly into both shortcut coordinates

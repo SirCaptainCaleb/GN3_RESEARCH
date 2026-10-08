@@ -1,9 +1,5 @@
 # Absence of a protected shortcut forces a universal two-shore connector — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Absence of a protected shortcut forces a universal two-shore connector

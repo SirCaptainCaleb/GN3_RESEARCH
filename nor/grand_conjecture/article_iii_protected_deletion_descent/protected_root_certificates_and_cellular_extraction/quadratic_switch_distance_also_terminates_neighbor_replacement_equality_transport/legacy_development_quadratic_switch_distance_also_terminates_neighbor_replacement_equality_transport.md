@@ -1,9 +1,5 @@
 # Quadratic switch distance also terminates neighbor-replacement equality transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Extend the quadratic distance potential of root 86 to the neighbor-replacement equality events from root 81.

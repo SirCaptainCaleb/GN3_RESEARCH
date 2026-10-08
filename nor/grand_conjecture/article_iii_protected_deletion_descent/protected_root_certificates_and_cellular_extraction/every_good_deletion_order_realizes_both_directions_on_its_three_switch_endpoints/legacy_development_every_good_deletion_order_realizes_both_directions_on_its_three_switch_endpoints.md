@@ -1,9 +1,5 @@
 # Every good deletion order realizes both directions on its three switch endpoints — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every good deletion order realizes both directions on its three switch endpoints

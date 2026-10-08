@@ -1,9 +1,5 @@
 # Deleting the middle old coordinate collapses the recursive packet to one earlier holonomy bit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Deleting the middle old coordinate collapses the recursive packet to one earlier holonomy bit

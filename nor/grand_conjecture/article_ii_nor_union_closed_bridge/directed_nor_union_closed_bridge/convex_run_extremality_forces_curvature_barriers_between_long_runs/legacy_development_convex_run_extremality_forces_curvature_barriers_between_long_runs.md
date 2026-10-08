@@ -1,9 +1,5 @@
 # Convex run extremality forces curvature barriers between long runs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Convex run extremality forces curvature barriers between long runs

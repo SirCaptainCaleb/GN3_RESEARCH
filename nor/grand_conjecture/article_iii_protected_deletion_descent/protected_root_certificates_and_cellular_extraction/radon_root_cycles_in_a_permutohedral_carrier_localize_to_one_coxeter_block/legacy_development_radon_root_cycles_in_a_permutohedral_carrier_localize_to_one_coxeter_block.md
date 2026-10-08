@@ -1,9 +1,5 @@
 # Radon root cycles in a permutohedral carrier localize to one Coxeter block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Radon root cycles in a permutohedral carrier localize to one Coxeter block

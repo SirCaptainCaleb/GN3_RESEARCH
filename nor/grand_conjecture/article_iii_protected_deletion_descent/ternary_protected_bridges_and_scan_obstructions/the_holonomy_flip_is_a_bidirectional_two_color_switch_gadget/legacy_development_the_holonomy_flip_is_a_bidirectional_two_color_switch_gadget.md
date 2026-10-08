@@ -1,9 +1,5 @@
 # The holonomy flip is a bidirectional two-color switch gadget — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The holonomy flip is a bidirectional two-color switch gadget

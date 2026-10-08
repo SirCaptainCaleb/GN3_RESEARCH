@@ -1,9 +1,5 @@
 # Flatness leaves the four full-flat reconnection bits independent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Flatness does not couple the four exported reconnection bits

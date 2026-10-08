@@ -1,9 +1,5 @@
 # Cellular odd maps from reversal-odd chamber labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

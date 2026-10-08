@@ -1,9 +1,5 @@
 # The one-skeleton is not enough — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

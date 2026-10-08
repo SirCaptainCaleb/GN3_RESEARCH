@@ -1,9 +1,5 @@
 # Two perfect insertion blockers cancel by consecutive pair insertion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Pure-orientation two-blocker cancellation. Let O=(v_1,...,v_m) have alpha-word 0^p 1^q with p,q>=1. For an exterior vertex x write s_i^x=alpha(x,v_i,v_{i+1}), 1<=i<=m-1. The one-vertex insertion calculus shows that the unique scan which blocks prepend, append, and every interior insertion into O is B=1^(p+1)0^q (with the evident truncation at the ends). Suppose two exterior vertices x,y both have this blocking scan.

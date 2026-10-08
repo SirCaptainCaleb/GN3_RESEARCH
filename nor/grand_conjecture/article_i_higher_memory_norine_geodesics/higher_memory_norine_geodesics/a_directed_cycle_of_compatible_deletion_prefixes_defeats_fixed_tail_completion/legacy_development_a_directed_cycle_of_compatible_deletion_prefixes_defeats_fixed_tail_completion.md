@@ -1,9 +1,5 @@
 # A directed cycle of compatible deletion prefixes defeats fixed-tail completion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A common tail can support every residual deletion but no full prefix

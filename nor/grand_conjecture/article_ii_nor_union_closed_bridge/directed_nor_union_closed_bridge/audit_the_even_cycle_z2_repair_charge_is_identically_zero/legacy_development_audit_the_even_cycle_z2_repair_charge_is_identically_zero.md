@@ -1,9 +1,5 @@
 # Audit the even cycle Z2 repair charge is identically zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the even-cycle Z2 repair charge is identically zero

@@ -1,9 +1,5 @@
 # The barycentric center zero carries the entire boundary degree — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The barycentric center zero carries the entire boundary degree

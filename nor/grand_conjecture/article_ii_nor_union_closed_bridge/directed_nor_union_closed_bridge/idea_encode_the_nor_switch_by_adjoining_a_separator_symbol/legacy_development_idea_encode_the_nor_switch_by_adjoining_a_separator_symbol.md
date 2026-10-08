@@ -1,9 +1,5 @@
 # Idea: encode the NOR switch by adjoining a separator symbol — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Separator-symbol triangulation for one-change NOR

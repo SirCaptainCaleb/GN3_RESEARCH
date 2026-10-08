@@ -1,9 +1,5 @@
 # A zero-distance descent at the switch is always a direct compatible repair event — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A zero-distance descent at the switch is always a direct compatible repair event

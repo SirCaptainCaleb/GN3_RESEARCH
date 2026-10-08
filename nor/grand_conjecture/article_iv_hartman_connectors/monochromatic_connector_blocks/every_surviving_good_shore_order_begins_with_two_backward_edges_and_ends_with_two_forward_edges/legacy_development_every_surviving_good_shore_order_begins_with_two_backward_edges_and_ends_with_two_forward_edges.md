@@ -1,9 +1,5 @@
 # Every surviving good shore order begins with two backward edges and ends with two forward edges — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every surviving good shore order begins with two backward edges and ends with two forward edges

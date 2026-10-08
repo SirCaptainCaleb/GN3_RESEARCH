@@ -1,9 +1,5 @@
 # A relocated xz pair fills the unique bad adjacent-gap A2 residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Use the bad adjacent-gap configuration P,L,M,R,S with uncovered vertices a and b. The insertion collars are P,L->a->M,R and L,M->b->R,S, and the bad mutual orientation is b->a. If the special pair x,z is relocated adjacent into this local cell, then the order P,L,a,x,z,M,b,R,S is monochromatic zero. The seven local windows are zero: P,L,a by the a-collar; L,a,x because L->a and shore vertices dominate x; a,x,z and x,z,M by the shore signature; z,M,b because M->b; M,b,R because M->b->R and M->R; and b,R,S by the b-collar. The exterior ordered pairs P,L and R,S are unchanged. Thus the unique rank-two adjacent-gap obstruction disappears completely once an adjacent xz pair is available locally. No outer incidences P->b or a->S are required.

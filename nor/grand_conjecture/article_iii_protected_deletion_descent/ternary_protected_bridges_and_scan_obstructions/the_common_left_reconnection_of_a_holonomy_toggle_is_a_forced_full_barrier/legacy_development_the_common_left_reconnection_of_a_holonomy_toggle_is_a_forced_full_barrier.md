@@ -1,9 +1,5 @@
 # The common left reconnection of a holonomy toggle is a forced full barrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The common left reconnection of a holonomy toggle is a forced full barrier

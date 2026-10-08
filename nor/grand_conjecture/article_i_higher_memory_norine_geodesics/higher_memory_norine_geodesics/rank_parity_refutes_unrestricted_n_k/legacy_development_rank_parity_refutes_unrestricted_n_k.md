@@ -1,9 +1,5 @@
 # Rank parity refutes only the basepoint-dependent enlargement — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

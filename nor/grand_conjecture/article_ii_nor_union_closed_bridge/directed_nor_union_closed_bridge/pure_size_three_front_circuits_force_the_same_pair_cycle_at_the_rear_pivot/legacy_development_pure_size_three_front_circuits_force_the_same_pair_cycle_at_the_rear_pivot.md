@@ -1,9 +1,5 @@
 # Pure size three front circuits force the same pair cycle at the rear pivot — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Pure size-three front circuits force the same pair cycle at the rear pivot

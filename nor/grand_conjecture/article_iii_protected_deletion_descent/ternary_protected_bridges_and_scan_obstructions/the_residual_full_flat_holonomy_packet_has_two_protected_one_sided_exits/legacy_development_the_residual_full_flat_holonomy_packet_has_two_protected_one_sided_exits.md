@@ -1,9 +1,5 @@
 # The residual full-flat holonomy packet has two protected one-sided exits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The residual full-flat holonomy packet has two protected one-sided exits

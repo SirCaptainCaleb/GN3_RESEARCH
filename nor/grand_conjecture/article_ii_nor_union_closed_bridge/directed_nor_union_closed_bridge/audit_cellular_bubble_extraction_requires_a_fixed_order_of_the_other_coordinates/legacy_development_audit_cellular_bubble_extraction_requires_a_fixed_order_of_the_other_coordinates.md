@@ -1,9 +1,5 @@
 # Audit cellular bubble extraction requires a fixed order of the other coordinates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This audits the extraction step in §§143,150,154 while preserving the cellular degree obstruction of §§141,150,168 and the local repair identities of §§118,144,156,161.

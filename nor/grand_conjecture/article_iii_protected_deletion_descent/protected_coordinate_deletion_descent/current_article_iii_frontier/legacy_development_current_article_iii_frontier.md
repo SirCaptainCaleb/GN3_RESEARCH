@@ -1,9 +1,5 @@
 # Current Article III frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Current frontier after the Article IV elevation pass. Minimum coordinate counterexamples have minimum full-order variation exactly two in every arity. General protected replacement still requires its stated long-phase hypothesis; short phases and provenance-preserving global extraction remain open. In ternary arity the audited residual A2 scans now close or hand off an actual protected root, including the right-boundary windows, so the old unresolved scan recurrence is superseded. Physical shortcut existence is established locally but does not imply carrier-compatible ambient gluing. The flat switching sector is now treated in Article IV: a whole-support compatible zero connector closes by homogeneous-cut insertion; the outstanding problem is port-preserving collective growth and the full-state union-closure/coherence hypotheses needed for a Hartman argument. Omitted-coordinate exchange roots and physical window-slide roots remain distinct certificates unless a dictionary theorem connects them.

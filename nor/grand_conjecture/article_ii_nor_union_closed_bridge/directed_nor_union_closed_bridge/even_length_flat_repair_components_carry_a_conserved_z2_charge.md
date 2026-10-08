@@ -1,9 +1,1 @@
 # Even-length flat repair components carry a conserved Z2 charge
-
-## Composition
-
-(none yet)
-
-## Development
-
-Let m=n-2 be the cyclic ternary status length and assume m is even. For a four-change cyclic order C, define P(C) as the parity of the sum of its four transition-slot indices. This is independent of the choice of cyclic origin because shifting every transition index by one changes the sum by four. Under a successful endpoint repair, one transition at slot i is removed and a new one appears at i+2 or i+3. Since m is even, wraparound does not alter parity, so Delta P is 0 for a distance-2 transport and 1 for a distance-3 transport; thus Delta P=lambda. The global chord-parity theorem gives Delta J2=lambda for the same move. Consequently I(C)=J2(C) xor P(C) is invariant under every successful endpoint repair. Hence every repair component in the even-length flat sector carries a conserved Z2 charge. This does not yet rule out closed components, but it gives a genuine component invariant unavailable from run lengths alone. Any local packet cancellation or topological complementary-edge extraction that lands in a state of the opposite I-charge cannot lie in the same equality component and therefore must cross a variation-lowering or non-repair move. For odd m the slot-parity P is not compatible with wraparound; there the missing correction is a winding parity on the universal cover of the transition circle.

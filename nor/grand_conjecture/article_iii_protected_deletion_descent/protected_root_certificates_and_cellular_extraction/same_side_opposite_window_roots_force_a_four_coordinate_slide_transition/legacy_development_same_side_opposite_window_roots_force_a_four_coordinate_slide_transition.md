@@ -1,9 +1,5 @@
 # Same-side opposite window roots force a four-coordinate slide transition — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Same-side opposite window roots force a four-coordinate slide transition

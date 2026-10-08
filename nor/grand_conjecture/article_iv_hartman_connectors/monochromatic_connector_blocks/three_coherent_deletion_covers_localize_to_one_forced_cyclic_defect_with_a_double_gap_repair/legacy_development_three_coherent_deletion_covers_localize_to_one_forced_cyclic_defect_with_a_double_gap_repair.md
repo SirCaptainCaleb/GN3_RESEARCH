@@ -1,9 +1,5 @@
 # Three coherent deletion covers localize to one forced cyclic defect, with a double-gap repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Theorem: three coherent ported deletions have one forced cyclic defect

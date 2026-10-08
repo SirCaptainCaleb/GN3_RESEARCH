@@ -1,9 +1,5 @@
 # Every Sperner flag zero decomposes into positive block-local merge increments — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every Sperner flag zero decomposes into positive block-local merge increments

@@ -1,9 +1,5 @@
 # The bad neighbor-replacement branch is already a threshold-band boundary under nearest-violation selection — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Use the corrected four-window neighbor-replacement notation. On the pre-switch side let the tracked b-centered defect be at rank t+1<=k and suppose the proposed neighbor-disappearance move has B=C=0, the exceptional case where the fixed-cut potential need not improve.

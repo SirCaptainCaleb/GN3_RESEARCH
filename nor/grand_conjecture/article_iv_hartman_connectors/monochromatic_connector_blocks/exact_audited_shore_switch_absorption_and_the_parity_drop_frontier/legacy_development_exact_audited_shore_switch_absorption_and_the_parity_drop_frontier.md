@@ -1,9 +1,5 @@
 # Exact audited shore-switch absorption and the parity-drop frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let P_B=(b_1,…,b_r) be a good opposite-shore order with normalized word

@@ -1,9 +1,5 @@
 # The first blocker derived double full packet has forced holonomy one — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The first blocker-derived double-full packet has forced holonomy one

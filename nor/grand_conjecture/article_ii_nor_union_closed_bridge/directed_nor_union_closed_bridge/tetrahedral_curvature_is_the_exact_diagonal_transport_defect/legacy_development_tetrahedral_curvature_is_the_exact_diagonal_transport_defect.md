@@ -1,9 +1,5 @@
 # Tetrahedral curvature is the exact diagonal transport defect — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

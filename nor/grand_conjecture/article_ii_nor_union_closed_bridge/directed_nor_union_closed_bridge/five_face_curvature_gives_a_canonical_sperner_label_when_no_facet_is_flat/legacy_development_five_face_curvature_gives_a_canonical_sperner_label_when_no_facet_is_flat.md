@@ -1,9 +1,5 @@
 # Five-face curvature gives a canonical Sperner label when no facet is flat — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work with a pure alternating ternary orientation alpha. Call a tetrahedron flat when all four pivot links are transitive, singly curved when exactly one pivot link is cyclic, and fully curved when all four pivot links are cyclic, using the established three-way tetrahedral classification.

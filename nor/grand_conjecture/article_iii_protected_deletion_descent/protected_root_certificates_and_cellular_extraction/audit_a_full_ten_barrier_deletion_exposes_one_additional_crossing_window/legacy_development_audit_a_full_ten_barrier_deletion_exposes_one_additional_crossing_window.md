@@ -1,9 +1,5 @@
 # Audit a full ten barrier deletion exposes one additional crossing window — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Audit of the claimed canonical deletion shadow for a fully-curved 10 barrier.

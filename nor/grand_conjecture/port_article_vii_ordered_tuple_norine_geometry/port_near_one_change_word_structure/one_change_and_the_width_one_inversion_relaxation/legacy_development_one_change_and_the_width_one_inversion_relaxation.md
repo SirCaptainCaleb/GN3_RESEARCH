@@ -1,9 +1,5 @@
 # One change and the width-one inversion relaxation — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

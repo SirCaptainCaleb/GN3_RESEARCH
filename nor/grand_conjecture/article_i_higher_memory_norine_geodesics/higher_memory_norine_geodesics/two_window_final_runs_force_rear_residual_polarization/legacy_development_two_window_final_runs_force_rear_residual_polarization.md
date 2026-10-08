@@ -1,9 +1,5 @@
 # Two-window final runs force rear residual polarization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The two-window final run forces a rear residual polarization

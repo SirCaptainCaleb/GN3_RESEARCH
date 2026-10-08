@@ -1,9 +1,5 @@
 # Fixed-excess NOR as a cyclic variation problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

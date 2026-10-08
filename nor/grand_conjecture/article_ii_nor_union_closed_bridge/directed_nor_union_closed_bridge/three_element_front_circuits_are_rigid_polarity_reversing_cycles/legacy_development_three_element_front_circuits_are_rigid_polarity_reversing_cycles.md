@@ -1,9 +1,5 @@
 # Three-element front circuits are rigid polarity-reversing cycles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three-element front circuits are rigid cyclic obstructions

@@ -1,9 +1,5 @@
 # Cut-moment perturbations encode side provenance without increasing target dimension — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Cut-moment encoding of protected side provenance in physical root space

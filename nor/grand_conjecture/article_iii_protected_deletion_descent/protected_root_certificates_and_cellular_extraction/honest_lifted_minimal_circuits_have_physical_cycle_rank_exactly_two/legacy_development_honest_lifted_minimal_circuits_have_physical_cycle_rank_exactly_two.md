@@ -1,9 +1,5 @@
 # Honest lifted minimal circuits have physical cycle rank exactly two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Honest lifted circuits have physical cycle rank exactly two

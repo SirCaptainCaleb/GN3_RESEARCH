@@ -1,9 +1,5 @@
 # Every protected barrier root has a flag-compatible opposite cut crossing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every protected barrier root has a flag-compatible opposite cut crossing

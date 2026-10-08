@@ -1,9 +1,5 @@
 # Crossed endpoint data always realizes the ordered shortcut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Crossed endpoint data always realizes the ordered shortcut

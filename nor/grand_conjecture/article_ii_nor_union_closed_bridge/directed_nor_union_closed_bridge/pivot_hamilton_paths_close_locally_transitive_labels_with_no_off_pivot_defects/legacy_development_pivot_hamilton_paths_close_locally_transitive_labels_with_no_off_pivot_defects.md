@@ -1,9 +1,5 @@
 # Pivot Hamilton paths close locally transitive labels with no off-pivot defects — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in ternary coordinate arity, with reversal-odd h. For a pivot o define a directed graph G_o on V minus {o}: put a->b precisely when h(o,a,b)=h(a,b,o)=0. Reversal shows that both directions cannot occur. In the triangle-orientation/defect decomposition, a pair {a,b} has a directed edge in G_o if and only if the triangle {o,a,b} is coherent or its defect vertex is o. If the defect is a or b, the pair is absent.

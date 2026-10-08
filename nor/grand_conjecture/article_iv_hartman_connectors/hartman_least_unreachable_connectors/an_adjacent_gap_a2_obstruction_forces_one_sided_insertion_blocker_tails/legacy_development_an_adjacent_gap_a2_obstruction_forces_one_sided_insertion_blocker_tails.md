@@ -1,9 +1,5 @@
 # An adjacent-gap A2 obstruction forces one-sided insertion blocker tails — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let a be insertable at gap i and b at gap i+1 of a path-normalized connector, with the bad mutual orientation b->a.

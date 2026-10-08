@@ -1,9 +1,5 @@
 # Outermost-change roots give an all-arity proper-face carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Combination of Article I's all-arity two-change reduction and Article III root §243.

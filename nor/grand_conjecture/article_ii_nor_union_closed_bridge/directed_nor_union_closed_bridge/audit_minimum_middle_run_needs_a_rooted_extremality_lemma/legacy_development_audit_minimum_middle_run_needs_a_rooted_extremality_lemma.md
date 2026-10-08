@@ -1,9 +1,5 @@
 # Audit minimum middle run needs a rooted extremality lemma — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The subsection claiming that a minimum-middle-run spanning two-change order may be written in prepended-deletion form has a gap. Minimum counterexample deletion plus endpoint blocking guarantees the existence of rooted sandwiches of the form tau,sigma^p,tau^q with singleton first run, but does not show that a globally minimum middle-run two-change order has a singleton outer run. Conversely, if p is minimized only among rooted sandwiches, swapping the first two coordinates and obtaining tau^2 sigma^(p-1) tau^q does not contradict that rooted minimality because the new order is not rooted by a one-change deletion order in the same evident way. Therefore the exclusions of the (tau,tau) case and the resulting two-circuit-or-crossed-pattern dichotomy require an additional rooted-extremality lemma. The p=1 shifted-two-circuit theorem remains valid because it uses only counterexamplehood, not this extremality step. A correct continuation should either prove that some global minimum-middle two-change order has a singleton outer run, or use the middle-run reversal blockers for the case where both outer runs have length at least two.

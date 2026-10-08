@@ -1,9 +1,5 @@
 # Switching splits have an exact finite endpoint-state composition law — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Switching splits have an exact finite endpoint-state composition law

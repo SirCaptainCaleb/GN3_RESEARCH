@@ -1,9 +1,5 @@
 # Audit: a global fixed block-order selector is not automatically antipodal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: a global fixed block-order selector is not automatically antipodal

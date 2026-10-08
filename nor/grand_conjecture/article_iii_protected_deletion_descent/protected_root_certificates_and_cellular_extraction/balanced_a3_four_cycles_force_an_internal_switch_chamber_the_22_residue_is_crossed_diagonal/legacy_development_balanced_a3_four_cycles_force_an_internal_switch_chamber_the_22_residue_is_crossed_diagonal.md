@@ -1,9 +1,5 @@
 # Balanced A3 four-cycles force an internal switch chamber; the 2+2 residue is crossed-diagonal — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A3 terminalization: balanced four-cycles force an internal switch chamber

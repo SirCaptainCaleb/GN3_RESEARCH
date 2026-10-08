@@ -1,9 +1,5 @@
 # Audit: lifted circuit size does not force an n-dimensional domain simplex under averaged carrier labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Audit of the dimension-saturation handoff. The switch-prism construction in root 88 allows a subdivision-vertex label to be a convex average of several incident genuine state labels. A zero of the affine PL map on a domain simplex therefore expands to a positive dependence among genuine state labels that need not correspond one-for-one to the vertices of that domain simplex.

@@ -1,9 +1,5 @@
 # Every codimension-one Sperner merge has uniformly bounded transition complexity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every codimension-one Sperner merge has uniformly bounded transition complexity

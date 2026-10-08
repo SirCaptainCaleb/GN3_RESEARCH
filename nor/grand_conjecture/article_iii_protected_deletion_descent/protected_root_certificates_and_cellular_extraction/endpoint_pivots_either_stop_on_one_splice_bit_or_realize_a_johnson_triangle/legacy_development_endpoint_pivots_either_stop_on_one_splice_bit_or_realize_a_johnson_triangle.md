@@ -1,9 +1,5 @@
 # Endpoint pivots either stop on one splice bit or realize a Johnson triangle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let an arbitrary-scan endpoint witness in the coboundary-flat alternating ternary sector be

@@ -1,9 +1,5 @@
 # Extremal arbitrary-scan deletion dynamics always close or eject a protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Extremal arbitrary-scan deletion dynamics always close or eject a protected root

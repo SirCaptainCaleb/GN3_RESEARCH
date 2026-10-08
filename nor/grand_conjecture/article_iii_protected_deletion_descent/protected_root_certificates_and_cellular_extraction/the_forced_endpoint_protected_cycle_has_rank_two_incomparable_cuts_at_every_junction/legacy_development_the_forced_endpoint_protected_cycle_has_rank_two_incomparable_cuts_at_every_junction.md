@@ -1,9 +1,5 @@
 # The forced endpoint protected cycle has rank-two incomparable cuts at every junction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The protected cycle from the endpoint-deletion construction can be chosen with every edge an endpoint-barrier root. Write consecutive edges as x->y and y->z. Their certified cuts are C={x,a} and D={y,c}, because the central cut of an endpoint barrier lies after its first two coordinates. Both cuts have size two. Since y is not in C and y is in D, C and D are distinct; equal cardinality then makes them incomparable. Thus every junction of this endpoint protected cycle is already a consecutive incomparable-cut junction.

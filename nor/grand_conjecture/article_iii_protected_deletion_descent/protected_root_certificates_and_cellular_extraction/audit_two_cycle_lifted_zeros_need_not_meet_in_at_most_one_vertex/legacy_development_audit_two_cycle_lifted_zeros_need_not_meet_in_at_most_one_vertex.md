@@ -1,9 +1,5 @@
 # Audit: two-cycle lifted zeros need not meet in at most one vertex — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the two-cycle lifted-zero dichotomy does not imply a one-vertex intersection bound

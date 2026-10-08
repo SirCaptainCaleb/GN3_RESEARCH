@@ -1,9 +1,5 @@
 # Blocked-front recentering exchange for tight forks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Blocked-front recentering exchange

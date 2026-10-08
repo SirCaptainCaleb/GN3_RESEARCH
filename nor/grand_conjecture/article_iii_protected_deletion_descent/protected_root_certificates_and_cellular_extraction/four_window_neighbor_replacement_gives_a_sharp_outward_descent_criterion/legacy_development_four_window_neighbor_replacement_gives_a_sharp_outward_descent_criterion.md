@@ -1,9 +1,5 @@
 # Four-window neighbor replacement gives a sharp outward descent criterion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Four-window neighbor replacement and the corrected descent criterion

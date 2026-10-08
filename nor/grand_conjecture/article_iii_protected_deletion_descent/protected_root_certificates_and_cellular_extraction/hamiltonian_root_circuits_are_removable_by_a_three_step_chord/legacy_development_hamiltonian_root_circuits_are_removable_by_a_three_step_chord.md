@@ -1,9 +1,5 @@
 # Hamiltonian root circuits are removable by a three-step chord — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Hamiltonian root circuits are removable by a three-step chord

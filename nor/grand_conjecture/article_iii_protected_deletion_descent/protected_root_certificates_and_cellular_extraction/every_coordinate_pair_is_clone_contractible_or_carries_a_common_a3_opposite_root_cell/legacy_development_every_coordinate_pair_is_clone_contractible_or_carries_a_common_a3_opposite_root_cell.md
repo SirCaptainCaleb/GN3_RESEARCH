@@ -1,9 +1,5 @@
 # Every coordinate pair is clone-contractible or carries a common-A3 opposite-root cell — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every coordinate pair is clone-contractible or carries a common-A3 opposite-root cell

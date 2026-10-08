@@ -1,9 +1,5 @@
 # Singleton traps orient non full repairs in a four change cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Singleton traps orient non-full repairs in a four-change cycle

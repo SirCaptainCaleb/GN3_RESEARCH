@@ -1,9 +1,5 @@
 # Ported deletion support graphs are forests or spanning odd cycles, and spanning support paths close NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix the flat split and port convention of the preceding four-cover theorem. Suppose for every d∈A, A\{d} has a chosen cover by exactly two nonempty fully ported zero paths. Form a graph whose vertices are their support subsets and whose edge e_d joins the two supports in the d-cover. Supports, rather than path orders, identify vertices. The graph is simple: the union of the two endpoints determines the omitted label, so distinct labels give distinct edges.

@@ -1,9 +1,5 @@
 # Flat switch transport traces a strict central-cut chain in the Boolean simplex — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Flat switch transport traces a strict central-cut chain in the Boolean simplex

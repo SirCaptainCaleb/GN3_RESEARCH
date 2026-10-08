@@ -1,9 +1,5 @@
 # Repair parity equals mobile switch winding parity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Repair parity equals mobile-switch winding parity

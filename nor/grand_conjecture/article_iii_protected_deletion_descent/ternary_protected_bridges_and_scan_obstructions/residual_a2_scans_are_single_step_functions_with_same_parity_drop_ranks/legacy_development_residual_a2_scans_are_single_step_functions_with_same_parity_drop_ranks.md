@@ -1,9 +1,5 @@
 # Residual A2 scans are single-step functions with same-parity drop ranks — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

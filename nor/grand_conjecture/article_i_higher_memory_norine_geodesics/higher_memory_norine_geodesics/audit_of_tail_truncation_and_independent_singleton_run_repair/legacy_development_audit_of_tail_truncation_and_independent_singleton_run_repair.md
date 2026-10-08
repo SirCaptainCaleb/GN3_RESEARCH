@@ -1,9 +1,5 @@
 # Audit of tail truncation and independent singleton-run repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of tail truncation in section 42; independent repair of section 43

@@ -1,9 +1,5 @@
 # The explicit p equals 2 boundary scan closes through the size three curvature tube — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The explicit p=2 boundary scan closes through the size-three curvature tube

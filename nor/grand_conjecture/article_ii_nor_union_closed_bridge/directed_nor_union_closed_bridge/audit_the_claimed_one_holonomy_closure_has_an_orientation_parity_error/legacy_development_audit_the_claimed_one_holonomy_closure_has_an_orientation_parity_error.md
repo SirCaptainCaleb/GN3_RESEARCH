@@ -1,9 +1,5 @@
 # Audit: the claimed one-holonomy closure has an orientation-parity error — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: subsection 127's claimed closing order has a parity error

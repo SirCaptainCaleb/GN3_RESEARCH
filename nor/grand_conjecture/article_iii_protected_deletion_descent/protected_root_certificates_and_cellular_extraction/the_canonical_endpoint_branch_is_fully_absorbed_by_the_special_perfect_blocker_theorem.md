@@ -1,9 +1,1 @@
 # The canonical endpoint branch is fully absorbed by the special perfect-blocker theorem
-
-## Composition
-
-(none yet)
-
-## Development
-
-A canonical flat-sector endpoint carrier in a minimum counterexample comes from a one-change deletion order 0^p1^q with omitted perfect blocker x and exact scan s_i=1^(p+1)0^q. These are precisely the special perfect-blocker hypotheses used in the holonomy-flip transport theorem. That theorem chooses the last holonomy drop and proves, by explicit deletion collapse and one-sided threshold-band combing, that the branch terminates in either a spanning/full one-change order, a one-change deletion carrier, or a fully-curved protected physical root. This argument does not use the refuted generic 2-to-1 corner closure claim. Root 102 gives an additional unconditional local handoff from the same canonical endpoint carrier to a double-full singleton, but it is not a separate unresolved endpoint frontier: its non-returning resolution lies inside the same one-sided special-scan transport geometry. Therefore the canonical endpoint branch is locally discharged. Any surviving minimum flat-sector counterexample must contribute a protected fully-curved root with retained perfect-blocker/outside-order provenance; the next obstruction is global compatibility/extraction of such emitted roots, not further endpoint transport.

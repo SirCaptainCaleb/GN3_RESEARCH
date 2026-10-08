@@ -1,9 +1,5 @@
 # Isolated-band macro roots telescope through flat transport with only block defects — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Isolated-band macro roots telescope through flat transport with only block defects

@@ -1,9 +1,5 @@
 # Directed NOR as an antipodal cut problem on overlap words — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Directed NOR as an antipodal cut problem on the injective-word overlap graph

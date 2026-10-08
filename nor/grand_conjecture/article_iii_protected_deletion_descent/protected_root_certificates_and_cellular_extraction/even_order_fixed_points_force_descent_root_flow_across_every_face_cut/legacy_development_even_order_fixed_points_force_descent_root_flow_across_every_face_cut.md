@@ -1,9 +1,5 @@
 # Even-order fixed points force descent-root flow across every face cut — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 **Proof repair (root §44).** The fixed-point flow conclusion below is valid, but the original radial-sign argument confused a permutahedron face with its dual braid face. The correct sign follows from its strictly negative initial-block rank sums. The following version uses those sums.

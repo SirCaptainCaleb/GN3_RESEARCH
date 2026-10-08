@@ -1,9 +1,5 @@
 # Extreme synchronized endpoint shifts give a monochromatic spanning order — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Extreme synchronized endpoint shifts give a monochromatic spanning order

@@ -1,9 +1,5 @@
 # Every front circuit already carries a canonical four-change cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every front circuit already carries a canonical four-change cycle

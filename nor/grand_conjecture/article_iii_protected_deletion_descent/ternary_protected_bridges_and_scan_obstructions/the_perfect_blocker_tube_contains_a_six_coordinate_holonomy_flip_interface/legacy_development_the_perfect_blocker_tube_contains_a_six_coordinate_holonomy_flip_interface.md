@@ -1,9 +1,5 @@
 # The perfect-blocker tube contains a six-coordinate holonomy-flip interface — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

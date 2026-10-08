@@ -1,9 +1,5 @@
 # Adjacent swapping across a fully curved transition toggles the two outer change bits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Adjacent swapping across a fully curved transition toggles the two outer change bits

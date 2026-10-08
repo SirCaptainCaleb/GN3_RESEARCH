@@ -1,9 +1,5 @@
 # The full permutahedron carries a canonical odd descent-root map with a forced zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # A leading-run potential resolves all singleton branches except the holonomy-one full-flat residue — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A leading-run potential resolves three singleton curvature types and the zero-holonomy mixed branch

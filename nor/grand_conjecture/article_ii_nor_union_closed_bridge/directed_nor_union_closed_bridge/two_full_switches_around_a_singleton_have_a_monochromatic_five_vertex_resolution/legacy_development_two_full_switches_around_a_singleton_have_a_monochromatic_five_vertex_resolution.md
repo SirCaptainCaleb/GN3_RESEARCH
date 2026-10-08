@@ -1,9 +1,5 @@
 # Two full switches around a singleton have a monochromatic five-vertex resolution — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A singleton trapped between two fully-curved switches has a monochromatic five-vertex resolution

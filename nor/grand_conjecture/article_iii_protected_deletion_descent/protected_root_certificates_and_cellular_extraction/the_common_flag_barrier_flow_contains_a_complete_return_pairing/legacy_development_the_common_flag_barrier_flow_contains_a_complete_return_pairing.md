@@ -1,9 +1,5 @@
 # The common-flag barrier flow contains a complete return pairing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The common-flag barrier flow contains a complete return pairing

@@ -1,9 +1,5 @@
 # Idea: signed middle-coordinate Tucker labels on switch states — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Signed middle-coordinate Tucker label for ternary switch states

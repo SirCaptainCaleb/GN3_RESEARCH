@@ -1,9 +1,5 @@
 # A minimum signature shore has internal witness partners and size at least two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A minimum signature shore has no singleton case and carries internal witness partners

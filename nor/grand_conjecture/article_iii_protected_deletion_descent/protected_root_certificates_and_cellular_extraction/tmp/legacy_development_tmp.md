@@ -1,9 +1,5 @@
 # Hamiltonian regular cut designs have defect at least n — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assume the surviving single-cycle zero of the irrational two-moment perturbation. Thus the physical roots form a Hamiltonian cycle v_1,...,v_n, all barrier sides agree, and the protected p-cuts C_i are p-regular with v_i notin C_i and v_{i+1} in C_i.

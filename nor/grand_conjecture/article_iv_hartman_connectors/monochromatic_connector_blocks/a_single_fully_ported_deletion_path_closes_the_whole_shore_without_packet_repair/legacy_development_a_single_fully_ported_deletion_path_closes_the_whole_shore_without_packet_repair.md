@@ -1,9 +1,5 @@
 # A single fully ported deletion path closes the whole shore without packet repair — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One-deletion Hamiltonian port implies unconditional spanning closure

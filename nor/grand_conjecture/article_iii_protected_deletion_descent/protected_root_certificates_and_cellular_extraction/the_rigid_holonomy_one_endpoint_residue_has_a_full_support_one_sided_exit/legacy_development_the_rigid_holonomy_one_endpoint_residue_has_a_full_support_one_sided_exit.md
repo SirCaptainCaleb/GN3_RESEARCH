@@ -1,9 +1,5 @@
 # The rigid holonomy-one endpoint residue has a full-support one-sided exit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue in the unique residual long endpoint pattern of root §145:

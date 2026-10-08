@@ -1,9 +1,5 @@
 # A stopped endpoint pivot either ejects a farther root or enters flat transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Continue with the arbitrary endpoint witness

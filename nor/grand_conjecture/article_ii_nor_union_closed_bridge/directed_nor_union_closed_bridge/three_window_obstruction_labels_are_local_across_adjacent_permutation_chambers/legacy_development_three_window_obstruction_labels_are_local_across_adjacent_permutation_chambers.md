@@ -1,9 +1,5 @@
 # Three-window obstruction labels are local across adjacent permutation chambers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # A face-bijective balanced lifted A3 four-cycle forces full curvature — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A face-bijective balanced lifted A3 four-cycle forces full curvature

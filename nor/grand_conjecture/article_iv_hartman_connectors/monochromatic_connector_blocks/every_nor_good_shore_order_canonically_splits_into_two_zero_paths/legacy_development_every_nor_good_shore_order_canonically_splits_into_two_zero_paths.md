@@ -1,9 +1,5 @@
 # Every NOR-good shore order canonically splits into two zero paths — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

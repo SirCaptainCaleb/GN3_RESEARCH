@@ -1,9 +1,5 @@
 # Audit: complementary middle reversal does not automatically stay in one vertical product cell — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit of the top-cell complementary-middle claim

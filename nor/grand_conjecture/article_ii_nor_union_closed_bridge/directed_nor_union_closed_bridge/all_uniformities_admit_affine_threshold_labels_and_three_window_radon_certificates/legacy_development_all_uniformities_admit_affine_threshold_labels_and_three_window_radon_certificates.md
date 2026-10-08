@@ -1,9 +1,5 @@
 # All uniformities admit affine threshold labels and three-window Radon certificates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This offers a convex-geometric interface for every coordinate arity r, not just the ternary sector. Let pi be a coordinate order with m=n-r+1 nonempty windows and signs epsilon_i=(-1)^{h(pi_i,...,pi_{i+r-1})}. Set t_i=i-(m+1)/2, and define signed points v_i=epsilon_i(1,t_i) in R^2. Empty window words are automatically NOR-good and are handled separately.

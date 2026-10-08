@@ -1,9 +1,5 @@
 # Failed one-vertex connector absorption has a two-sided blocker normal form — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failure to absorb one shore vertex into a zero connector has a two-sided blocker normal form

@@ -1,9 +1,5 @@
 # A minimum shortcut-free signature shore is a protected clique — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A minimum shortcut-free signature shore is a protected clique

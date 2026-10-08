@@ -1,9 +1,5 @@
 # Exact simultaneous insertion calculus for triangle orientation and defects — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact simultaneous insertion calculus for triangle orientation and defects

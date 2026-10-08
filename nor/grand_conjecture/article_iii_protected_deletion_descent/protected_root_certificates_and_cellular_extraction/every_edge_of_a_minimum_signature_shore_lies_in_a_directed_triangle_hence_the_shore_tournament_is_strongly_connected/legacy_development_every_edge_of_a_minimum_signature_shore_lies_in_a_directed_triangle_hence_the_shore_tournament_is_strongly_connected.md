@@ -1,9 +1,5 @@
 # Every edge of a minimum signature shore lies in a directed triangle, hence the shore tournament is strongly connected — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every edge of a minimum signature shore lies in a directed triangle, hence the shore tournament is strongly connected

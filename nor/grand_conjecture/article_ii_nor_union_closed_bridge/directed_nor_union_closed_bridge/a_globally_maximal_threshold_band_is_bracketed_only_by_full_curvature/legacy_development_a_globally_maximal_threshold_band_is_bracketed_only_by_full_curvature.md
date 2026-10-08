@@ -1,9 +1,5 @@
 # A globally maximal threshold band is bracketed only by full curvature — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A globally maximal threshold band is bracketed only by full curvature

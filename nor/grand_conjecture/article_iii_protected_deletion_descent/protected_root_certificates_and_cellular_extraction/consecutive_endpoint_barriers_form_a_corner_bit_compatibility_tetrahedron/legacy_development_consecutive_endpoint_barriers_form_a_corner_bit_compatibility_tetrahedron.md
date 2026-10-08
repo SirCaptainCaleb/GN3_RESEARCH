@@ -1,9 +1,5 @@
 # Consecutive endpoint barriers form a corner-bit compatibility tetrahedron — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Consecutive endpoint barriers form a corner-bit compatibility tetrahedron

@@ -1,9 +1,5 @@
 # Audit correction: rail disagreement alignment controls curvature — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

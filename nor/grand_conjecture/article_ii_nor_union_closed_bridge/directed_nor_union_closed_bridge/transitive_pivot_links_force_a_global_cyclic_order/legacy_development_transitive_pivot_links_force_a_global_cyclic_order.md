@@ -1,9 +1,5 @@
 # Transitive pivot links force a global cyclic order — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Transitive pivot links force a global cyclic order

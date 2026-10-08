@@ -1,9 +1,5 @@
 # Cellular antipodal obstruction and the extraction boundary — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §§141,150,168,174. This records the valid topological result and separates it from unproved extraction.

@@ -1,9 +1,5 @@
 # Backward blockers are isolated-defect full-support witnesses — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Backward blockers are isolated-defect full-support witnesses

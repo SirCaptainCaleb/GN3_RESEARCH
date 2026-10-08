@@ -1,9 +1,5 @@
 # Two-block facet roots build a spanning arborescence by one-vertex cut transfers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two-block facet roots build a spanning arborescence by one-vertex cut transfers

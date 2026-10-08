@@ -1,9 +1,5 @@
 # Square lifting closes the injective Hamiltonian endpoint-cycle branch — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Square lifting closes the injective Hamiltonian endpoint-cycle branch

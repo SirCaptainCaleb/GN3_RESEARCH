@@ -1,9 +1,5 @@
 # The fixed deletion fiber contains three consecutive interior one defect states — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The fixed deletion fiber contains three consecutive interior one-defect states

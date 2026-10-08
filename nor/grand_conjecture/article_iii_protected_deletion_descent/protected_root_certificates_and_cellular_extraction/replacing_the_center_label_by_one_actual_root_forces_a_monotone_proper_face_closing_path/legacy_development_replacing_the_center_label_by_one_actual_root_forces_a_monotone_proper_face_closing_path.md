@@ -1,9 +1,5 @@
 # Replacing the center label by one actual root forces a monotone proper-face closing path — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let P be the centered permutahedron in the type-A space W, and work in a minimum-coordinate ternary counterexample.

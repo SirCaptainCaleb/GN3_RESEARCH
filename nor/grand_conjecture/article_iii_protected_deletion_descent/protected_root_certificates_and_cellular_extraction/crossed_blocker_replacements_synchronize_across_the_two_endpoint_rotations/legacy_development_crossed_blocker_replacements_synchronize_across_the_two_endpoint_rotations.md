@@ -1,9 +1,5 @@
 # Crossed blocker replacements synchronize across the two endpoint rotations — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Crossed blocker replacements synchronize across the two endpoint rotations

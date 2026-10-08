@@ -1,9 +1,5 @@
 # Coboundary flat orientations reduce exactly to tournament two chord words — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Coboundary-flat orientations reduce exactly to tournament two-chord words

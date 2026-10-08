@@ -1,9 +1,5 @@
 # One-left protected A3 reversal pairs have a boundary-safe full-support splice — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One-left protected A3 reversal pairs have a boundary-safe full-support splice

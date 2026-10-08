@@ -1,9 +1,5 @@
 # Audit: theta bypass descent has a degenerate single-edge return-path endpoint — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: theta bypass descent has a degenerate single-edge return-path endpoint

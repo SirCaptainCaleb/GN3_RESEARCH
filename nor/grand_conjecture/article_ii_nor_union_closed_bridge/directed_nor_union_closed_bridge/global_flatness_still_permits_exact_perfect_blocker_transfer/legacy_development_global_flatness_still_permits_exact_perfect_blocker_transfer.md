@@ -1,9 +1,5 @@
 # Global flatness still permits exact perfect-blocker transfer — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

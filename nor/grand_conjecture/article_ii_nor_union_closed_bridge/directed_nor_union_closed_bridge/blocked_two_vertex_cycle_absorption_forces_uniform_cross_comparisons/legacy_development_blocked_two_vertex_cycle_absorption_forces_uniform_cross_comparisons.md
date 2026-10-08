@@ -1,9 +1,5 @@
 # Blocked two-vertex cycle absorption forces uniform cross comparisons — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failure of two-vertex cycle absorption forces uniform comparisons

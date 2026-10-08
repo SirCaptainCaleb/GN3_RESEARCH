@@ -1,9 +1,5 @@
 # Terminal barrier roots have canonical central cuts in the centered Boolean cube — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 A terminal ternary threshold-band root has a canonical cut-crossing provenance even when it does not cross the original normalized phase cut.

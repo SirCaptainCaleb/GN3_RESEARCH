@@ -1,9 +1,5 @@
 # Spanning construction from paired deletion orders and common-tail restrictions — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Spanning construction from two deletion orders

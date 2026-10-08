@@ -1,9 +1,5 @@
 # A minimum shortcut-free signature shore cannot have size three — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A minimum shortcut-free signature shore cannot have size three

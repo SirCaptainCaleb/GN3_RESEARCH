@@ -1,9 +1,5 @@
 # Audit: antipodal exits are boundary safe but E1 rank transport remains unproved — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: antipodal braid exits are boundary-safe, but later E=1 rank transport is not yet justified

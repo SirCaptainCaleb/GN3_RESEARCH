@@ -1,9 +1,5 @@
 # Five-position carrier equality forces a singleton defect — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Five-position carrier equality forces a singleton defect

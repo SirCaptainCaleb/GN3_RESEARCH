@@ -1,9 +1,5 @@
 # Audit correction: same-position replacement is already implied by insertion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

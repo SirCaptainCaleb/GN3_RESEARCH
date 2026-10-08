@@ -1,9 +1,5 @@
 # Every three-root protected zero in a pure ternary carrier is removable or closes NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every three-root protected zero in a pure ternary carrier is removable or closes NOR

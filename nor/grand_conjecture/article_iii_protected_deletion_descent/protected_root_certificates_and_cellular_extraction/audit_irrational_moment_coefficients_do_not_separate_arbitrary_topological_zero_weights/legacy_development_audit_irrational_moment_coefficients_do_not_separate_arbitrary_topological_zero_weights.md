@@ -1,9 +1,5 @@
 # Audit: irrational moment coefficients do not separate arbitrary topological zero weights — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: irrational moment coefficients do not separate arbitrary topological zero weights

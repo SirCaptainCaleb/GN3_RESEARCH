@@ -1,9 +1,5 @@
 # Protected A3 reversal pairs project to Johnson geodesics of length at most two — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Protected A3 reversal pairs project to Johnson geodesics of length at most two

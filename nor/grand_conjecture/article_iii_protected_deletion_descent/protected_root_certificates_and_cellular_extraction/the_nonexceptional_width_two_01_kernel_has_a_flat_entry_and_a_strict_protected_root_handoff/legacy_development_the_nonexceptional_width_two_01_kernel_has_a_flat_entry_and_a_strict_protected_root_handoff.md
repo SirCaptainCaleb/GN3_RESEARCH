@@ -1,9 +1,5 @@
 # The s=0 width-two types have a flat-entry protected-root handoff — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Two nonexceptional width-two types have an automatic flat-entry protected-root handoff

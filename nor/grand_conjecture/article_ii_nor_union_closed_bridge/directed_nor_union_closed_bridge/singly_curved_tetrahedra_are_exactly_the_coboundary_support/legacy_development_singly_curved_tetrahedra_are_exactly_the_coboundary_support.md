@@ -1,9 +1,5 @@
 # Singly curved tetrahedra are exactly the coboundary support — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Singly curved tetrahedra are exactly the coboundary support

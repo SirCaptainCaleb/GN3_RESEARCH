@@ -1,9 +1,5 @@
 # Three-step curvature transport requires a distance-four memory bit — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three-step curvature transport requires one new memory coordinate

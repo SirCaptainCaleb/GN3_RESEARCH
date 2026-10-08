@@ -1,9 +1,5 @@
 # A one-sided adjacent-gap failure resolves after one outward step — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in path-normalized square-path gauge with consecutive connector vertices

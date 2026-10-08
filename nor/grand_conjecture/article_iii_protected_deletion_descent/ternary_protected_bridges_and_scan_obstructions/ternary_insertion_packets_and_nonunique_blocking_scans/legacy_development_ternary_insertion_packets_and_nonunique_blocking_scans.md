@@ -1,9 +1,5 @@
 # Ternary insertion packets and nonunique blocking scans — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §117 and the audit 'Insertion blocking does not force the special blocker scan'. This consolidates the valid insertion calculation and a parametric obstruction.

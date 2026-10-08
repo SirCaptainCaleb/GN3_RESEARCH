@@ -1,9 +1,5 @@
 # A lexicographic moment potential forbids cycles of same side bubble repairs — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A lexicographic moment potential forbids cycles of same-side bubble repairs

@@ -1,9 +1,5 @@
 # Three of four transitions are curved in an extremal perfect blocker carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Three of four transitions are curved in an extremal perfect-blocker carrier

@@ -1,9 +1,5 @@
 # Audit: the full permutahedron odd map zero is the fixed center zero — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: the full-permutahedron odd-map zero is the fixed-center zero

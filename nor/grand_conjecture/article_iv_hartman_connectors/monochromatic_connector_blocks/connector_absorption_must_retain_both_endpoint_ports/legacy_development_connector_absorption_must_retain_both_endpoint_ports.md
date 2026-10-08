@@ -1,9 +1,5 @@
 # Connector absorption must retain both endpoint ports — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Connector absorption must retain both endpoint ports

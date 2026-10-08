@@ -1,9 +1,5 @@
 # Equal-ended shortcut residue closes by pair insertion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Equal-ended shortcut residue closes by pair insertion

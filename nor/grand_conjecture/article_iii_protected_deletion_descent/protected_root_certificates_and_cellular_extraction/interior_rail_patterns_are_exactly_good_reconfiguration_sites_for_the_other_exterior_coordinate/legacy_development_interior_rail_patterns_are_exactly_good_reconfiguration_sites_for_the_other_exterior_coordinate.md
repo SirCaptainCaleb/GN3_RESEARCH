@@ -1,9 +1,5 @@
 # Interior rail patterns are exactly good reconfiguration sites for the other exterior coordinate — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Interior rail patterns are exactly good reconfiguration sites for the other exterior coordinate

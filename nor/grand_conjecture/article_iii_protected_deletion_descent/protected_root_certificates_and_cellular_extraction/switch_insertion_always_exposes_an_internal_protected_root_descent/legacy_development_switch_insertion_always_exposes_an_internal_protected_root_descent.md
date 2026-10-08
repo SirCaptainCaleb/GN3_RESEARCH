@@ -1,9 +1,5 @@
 # Switch insertion always exposes an internal protected root descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Switch insertion always exposes an internal protected root descent

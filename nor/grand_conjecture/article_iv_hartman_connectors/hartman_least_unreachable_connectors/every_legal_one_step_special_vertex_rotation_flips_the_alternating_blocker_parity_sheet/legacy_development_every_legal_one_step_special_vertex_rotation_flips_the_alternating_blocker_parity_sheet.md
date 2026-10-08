@@ -1,9 +1,5 @@
 # Every legal one-step special-vertex rotation flips the alternating-blocker parity sheet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Use the special parity

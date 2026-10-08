@@ -1,9 +1,5 @@
 # Widely separated blocker scans force codimension-two pair insertion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Widely separated blocker scans force codimension-two pair insertion

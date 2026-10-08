@@ -1,9 +1,5 @@
 # A shortest Hamiltonian realized-transition circuit is purely flat and companion-saturated — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Shortest Hamiltonian transition-root cycles are forced entirely flat

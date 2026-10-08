@@ -1,9 +1,5 @@
 # Every pinned endpoint junction yields a shorter positive protected-root cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every pinned endpoint junction yields a shorter positive protected-root cycle

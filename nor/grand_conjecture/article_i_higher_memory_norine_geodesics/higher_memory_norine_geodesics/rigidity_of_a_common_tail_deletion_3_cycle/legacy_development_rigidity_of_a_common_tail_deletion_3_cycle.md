@@ -1,9 +1,5 @@
 # Rigidity of a common-tail deletion 3-cycle — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rigidity of a common-tail deletion 3-cycle

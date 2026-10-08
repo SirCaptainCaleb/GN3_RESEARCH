@@ -1,9 +1,5 @@
 # A terminal width-two full-full corridor has a rigid three-rotation six-set — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Rigid classification of the width-two full-full corridor

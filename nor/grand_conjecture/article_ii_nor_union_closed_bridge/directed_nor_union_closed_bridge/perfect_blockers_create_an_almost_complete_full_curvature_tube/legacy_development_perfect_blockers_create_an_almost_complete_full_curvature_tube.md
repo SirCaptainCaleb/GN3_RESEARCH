@@ -1,9 +1,5 @@
 # Perfect blockers create an almost complete full curvature tube — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Perfect blockers create an almost-complete full-curvature tube

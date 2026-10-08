@@ -1,9 +1,5 @@
 # No-rise residual A2 scans close or exit through a protected root — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A no-rise residual A2 scan closes or exits through a protected root

@@ -1,9 +1,5 @@
 # Audit refinement: the universal connector leaves a shore phase-alignment problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

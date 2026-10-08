@@ -1,9 +1,5 @@
 # Adjacent chamber certificates glue precisely through a sign-agreement class — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For a binary sign word epsilon=(epsilon_1,...,epsilon_m), use distinct increasing positions t_i and define the certificate polytope K(epsilon) by lambda_i>=0, sum lambda_i=1, sum lambda_i epsilon_i=0, and sum lambda_i epsilon_i t_i=0. The affine threshold theorem shows that K is nonempty exactly when epsilon has at least two changes.

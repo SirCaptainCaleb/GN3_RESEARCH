@@ -1,9 +1,5 @@
 # Audit: fixed-point flow uses permutahedron block sums, not pointwise block constancy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: fixed-point flow uses permutahedron block sums, not pointwise block constancy

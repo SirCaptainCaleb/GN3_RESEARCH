@@ -1,9 +1,5 @@
 # Antipodal A2 root pairs require crossing the selected window cut level — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Antipodal A2 root pairs require crossing the selected window cut level

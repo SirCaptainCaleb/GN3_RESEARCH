@@ -1,9 +1,1 @@
 # A boundary-compatible five-set weave kills the flat A2 replacement cycle
-
-## Composition
-
-(none yet)
-
-## Development
-
-Closure of the nontrivial d=e=2 flat A2 replacement recurrence. Work in the recurrent local normal form of subsection 214. The three deletion carriers share a block ...R,A,B,u,v,C,D,..., where u->v is a forward edge of the residual directed cycle, the old local statuses satisfy alpha(R,A,B)=0, alpha(A,B,u)=0, alpha(B,u,v)=1, alpha(u,v,C)=1, alpha(v,C,D)=1, and the surviving recurrence forces g=alpha(w,B,C)=0 for every residual w and h=alpha(A,B,C)=1. Flatness then gives alpha(A,C,w)=1 for every residual w. The residual tournaments at A,B,C,D are the same directed cycle on U, so alpha(u,v,A)=alpha(u,v,B)=alpha(u,v,C)=alpha(u,v,D)=1 for every forward residual edge u->v. Now keep the same omitted third residual coordinate and replace the five-coordinate block A,B,u,v,C by A,v,B,u,C. The internal statuses are: alpha(A,v,B)=1 because alpha(v,A,B)=0; alpha(v,B,u)=1 because alpha(v,u,B)=0 for the reverse residual edge; alpha(B,u,C)=1 because alpha(u,B,C)=0; and the first untouched right status alpha(u,C,D)=1. Thus from alpha(A,v,B) onward the entire old 1-suffix is still monochromatic 1. The only newly uncontrolled left reconnection is alpha(R,A,v). If it is 0, the new deletion carrier switches from 0 to 1 one window earlier than the original carrier; if it is 1, the switch occurs still earlier. In either case the new order is a genuine one-change deletion carrier whose normalized first-run length is strictly smaller than the globally minimal p. Contradiction. Therefore the nontrivial d=e=2 A2 replacement cycle cannot occur in a minimum coboundary-flat ternary counterexample. The corrected flat-sector frontier is reduced to the d=e=3 antipodal backtrack together with the finite residual drift, the latter already terminated by reversal minimality.

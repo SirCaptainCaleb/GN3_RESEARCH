@@ -1,9 +1,5 @@
 # Threshold cuts turn one-change NOR into antipodal rankwise reachability intersection — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

@@ -1,9 +1,5 @@
 # An unextracted full-dimensional lifted circuit has sign-separated middle fibers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## An unextracted full-dimensional lifted circuit has sign-separated middle fibers

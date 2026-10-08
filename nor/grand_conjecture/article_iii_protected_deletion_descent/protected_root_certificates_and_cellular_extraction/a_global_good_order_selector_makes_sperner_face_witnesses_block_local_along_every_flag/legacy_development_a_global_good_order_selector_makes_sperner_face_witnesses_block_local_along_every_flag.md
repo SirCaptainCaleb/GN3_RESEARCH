@@ -1,9 +1,5 @@
 # A global good-order selector makes Sperner face witnesses block-local along every flag — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A global good-order selector makes Sperner face witnesses block-local along every flag

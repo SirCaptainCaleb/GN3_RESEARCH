@@ -1,9 +1,5 @@
 # Theta honest lifted circuits strictly shorten by a branch bypass — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Theta lifted circuits shorten by an honest branch bypass

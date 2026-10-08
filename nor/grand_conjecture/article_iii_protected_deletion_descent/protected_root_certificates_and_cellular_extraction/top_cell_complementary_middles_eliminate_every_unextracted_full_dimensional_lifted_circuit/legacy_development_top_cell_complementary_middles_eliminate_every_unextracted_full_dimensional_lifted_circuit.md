@@ -1,9 +1,5 @@
 # Audit correction: top-cell reversal does not automatically give same-cell complementarity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: top-cell reversal alone does not give same-product-cell complementarity

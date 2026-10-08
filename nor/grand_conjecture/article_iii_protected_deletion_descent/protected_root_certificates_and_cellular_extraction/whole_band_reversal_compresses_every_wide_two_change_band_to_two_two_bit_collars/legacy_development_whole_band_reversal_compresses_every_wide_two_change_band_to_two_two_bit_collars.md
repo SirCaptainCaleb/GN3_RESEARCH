@@ -1,9 +1,5 @@
 # Whole-band reversal compresses every wide two-change band to two two-bit collars — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Whole-band reversal compresses an arbitrary two-change band to two two-bit boundary defects

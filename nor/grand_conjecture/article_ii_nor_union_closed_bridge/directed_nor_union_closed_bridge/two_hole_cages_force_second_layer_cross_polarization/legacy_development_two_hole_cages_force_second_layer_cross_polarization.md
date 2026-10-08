@@ -1,9 +1,5 @@
 # Two hole cages force second layer cross polarization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let P=(v1,...,vm) be a sigma-tight path missing exactly x,y, and tau=1-sigma. The two-hole cage gives h(x,v1,v2)=h(y,v1,v2)=tau, h(v_{m-1},v_m,x)=h(v_{m-1},v_m,y)=tau, and h(x,y,v1)=h(y,x,v1)=h(v_m,x,y)=h(v_m,y,x)=sigma. Reversal gives h(v1,x,y)=h(v1,y,x)=h(x,y,v_m)=h(y,x,v_m)=tau. Consider the spanning order (v1,x,y,v_m,v_{m-1},...,v2); its word is tau,tau,sigma,tau,... . Reverse its first four vertices to obtain (v_m,y,x,v1,v_{m-1},v_{m-2},...,v2). Its word begins sigma,sigma,A,B and then only tau, where A=h(x,v1,v_{m-1}) and B=h(v1,v_{m-1},v_{m-2}). Since a counterexample forbids at most one change, the only possible pair is A=tau,B=sigma. Swapping x,y gives h(y,v1,v_{m-1})=tau. Applying the same argument to P reversed forces h(x,v_m,v2)=h(y,v_m,v2)=sigma and h(v_m,v2,v3)=tau. Thus the two-hole cage propagates polarization one layer inward from both ends. An iteration of this forcing would make the two propagating fronts collide and is a concrete closure target for the size-two circuit case.

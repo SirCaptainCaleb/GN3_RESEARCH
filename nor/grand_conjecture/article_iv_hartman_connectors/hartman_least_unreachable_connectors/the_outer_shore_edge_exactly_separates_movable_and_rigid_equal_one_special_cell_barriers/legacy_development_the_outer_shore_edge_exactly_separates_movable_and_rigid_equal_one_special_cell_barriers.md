@@ -1,9 +1,5 @@
 # The outer shore edge exactly separates movable and rigid equal-one special-cell barriers — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Combine the audited special-vertex rotation law with one-sided packet surgery.

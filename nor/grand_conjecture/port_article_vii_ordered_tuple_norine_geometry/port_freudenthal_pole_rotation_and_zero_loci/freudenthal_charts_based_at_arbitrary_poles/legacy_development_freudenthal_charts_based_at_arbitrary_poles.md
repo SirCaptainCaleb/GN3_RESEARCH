@@ -1,9 +1,5 @@
 # Freudenthal charts based at arbitrary poles — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

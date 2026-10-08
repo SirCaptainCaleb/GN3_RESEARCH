@@ -1,9 +1,5 @@
 # Feasible-support antimatroids and minimal non-union certificates — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Feasible-support antimatroids and minimal failures of union closure

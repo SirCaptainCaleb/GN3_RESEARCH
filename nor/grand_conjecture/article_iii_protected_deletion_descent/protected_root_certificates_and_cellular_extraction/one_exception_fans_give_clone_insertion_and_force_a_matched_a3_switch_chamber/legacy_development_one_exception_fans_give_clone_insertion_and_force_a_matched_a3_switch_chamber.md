@@ -1,9 +1,5 @@
 # One-exception fans give exact clone insertion — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## One-exception fans give exact clone insertion

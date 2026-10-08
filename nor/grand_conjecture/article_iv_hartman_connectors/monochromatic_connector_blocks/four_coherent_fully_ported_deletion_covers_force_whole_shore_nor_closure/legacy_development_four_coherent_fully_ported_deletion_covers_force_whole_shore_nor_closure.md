@@ -1,9 +1,5 @@
 # Four coherent fully ported deletion covers force whole-shore NOR closure — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The GN3N article deletioncover_compatibility_and_global_obstruction_structure (composition 1) supplies a compatibility-gluing argument that uses tuple locality alone. Here is its port-preserving NOR transfer.

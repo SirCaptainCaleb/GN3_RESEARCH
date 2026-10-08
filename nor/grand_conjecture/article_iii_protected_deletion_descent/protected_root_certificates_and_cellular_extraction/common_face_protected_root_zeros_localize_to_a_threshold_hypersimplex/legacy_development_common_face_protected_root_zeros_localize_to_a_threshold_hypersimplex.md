@@ -1,9 +1,5 @@
 # Common-face protected-root zeros localize to a threshold hypersimplex — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let F=B_1|...|B_s be a proper permutahedron face and suppose a family of protected roots carried by refinements of F has a positive physical dependence. Fix the normalized p-cut. Let B=B_j be the unique face block containing the cut boundary, with K=B_1 union ... union B_{j-1} and r=p-|K|, so 1<=r<=|B|-1 unless the cut lies exactly between blocks.

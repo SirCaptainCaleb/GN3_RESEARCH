@@ -1,9 +1,5 @@
 # Ternary relative splicing has an exact width-two collar law — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

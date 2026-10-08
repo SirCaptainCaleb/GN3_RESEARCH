@@ -1,9 +1,5 @@
 # The last flat corner has a forced noncolliding transport pattern — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The last flat corner has only one surviving transport pattern in each direction

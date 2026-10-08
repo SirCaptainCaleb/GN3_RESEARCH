@@ -1,9 +1,5 @@
 # Common-cut protected root cells are automatically zero-free — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Common-cut cells are automatically zero-free

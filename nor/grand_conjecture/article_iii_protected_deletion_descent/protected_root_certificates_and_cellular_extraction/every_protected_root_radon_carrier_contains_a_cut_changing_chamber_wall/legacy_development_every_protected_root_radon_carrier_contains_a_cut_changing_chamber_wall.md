@@ -1,9 +1,5 @@
 # Every protected-root Radon carrier contains a cut-changing chamber wall — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every protected-root Radon carrier contains a cut-changing chamber wall

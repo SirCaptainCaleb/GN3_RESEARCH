@@ -1,9 +1,5 @@
 # The cyclic double-backward collar forbids every seven-coordinate fixed-boundary zero surgery — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Fixed-collar obstruction at the coherent triple

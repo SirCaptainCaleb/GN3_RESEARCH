@@ -1,9 +1,5 @@
 # Endpoint geometry forces two independent protected-root circulations — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Scope correction after root §106. The two-circulation construction is valid as a formal consequence of the SPECIAL perfect-blocker endpoint hypotheses used in root §102: each omitted coordinate would carry both the original endpoint root and the opposite-end double-full root, producing two physical circulations by finite functional-digraph arguments.

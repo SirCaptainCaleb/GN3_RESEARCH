@@ -1,9 +1,5 @@
 # Canonical Sperner witness gluing reduces to disjoint merge squares and three-block associativity diamonds — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical Sperner witness gluing reduces to disjoint merge squares and three-block associativity diamonds

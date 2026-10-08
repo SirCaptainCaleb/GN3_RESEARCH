@@ -1,9 +1,5 @@
 # Identical codimension-two blocker scans collapse to one explicit omission — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let alpha be alternating with zero tetrahedral coboundary. Let

@@ -1,9 +1,5 @@
 # Pair-defect map deforms to the canonical endpoint carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Pair-defect map deforms to the canonical endpoint carrier

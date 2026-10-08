@@ -1,9 +1,5 @@
 # A failed two-sided three-block shortcut produces a full barrier with the shortcut pair as its source shore — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A failed two-sided three-block shortcut produces a full barrier with the shortcut pair as its source shore

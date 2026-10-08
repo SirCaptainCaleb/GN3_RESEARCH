@@ -1,9 +1,5 @@
 # Planar A2 recycling is impossible: middle swaps strictly eliminate 10 descents — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Planar A2 recycling is impossible: middle swaps strictly eliminate 10 descents

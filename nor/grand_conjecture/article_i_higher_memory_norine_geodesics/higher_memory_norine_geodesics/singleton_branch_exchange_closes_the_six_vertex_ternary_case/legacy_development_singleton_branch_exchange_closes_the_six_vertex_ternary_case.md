@@ -1,9 +1,5 @@
 # Audit: singleton-branch exchange does not contradict splice forcing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Failed singleton-branch contradiction: color flip makes the two constraints agree

@@ -1,9 +1,5 @@
 # Spanning center insertion for ternary forks and its unbounded obstruction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A spanning center-insertion exchange, and why it does not close the conjecture

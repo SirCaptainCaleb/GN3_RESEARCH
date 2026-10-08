@@ -1,9 +1,5 @@
 # Canonical ternary switch packets split into forced flat and forced full descent types — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Canonical ternary switch packets split into forced flat and forced full descent types

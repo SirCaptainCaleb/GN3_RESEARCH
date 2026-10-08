@@ -1,9 +1,5 @@
 # A fully curved ten barrier has a canonical zero deletion shadow — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A fully curved ten barrier has a canonical zero deletion shadow

@@ -1,9 +1,5 @@
 # Minimum-counterexample endpoint blocking — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum-counterexample endpoint blocking

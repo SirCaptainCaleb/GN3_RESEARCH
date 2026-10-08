@@ -1,9 +1,5 @@
 # The rooted singleton middle case is caged at both ends — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The rooted singleton-middle case is caged at both ends

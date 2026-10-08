@@ -1,9 +1,5 @@
 # Reduction program and obstruction dictionary — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Reduction program: what a successful transformation must preserve

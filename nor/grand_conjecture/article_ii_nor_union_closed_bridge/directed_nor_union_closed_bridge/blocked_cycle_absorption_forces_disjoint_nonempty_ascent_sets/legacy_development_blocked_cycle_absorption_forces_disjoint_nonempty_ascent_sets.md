@@ -1,9 +1,5 @@
 # Blocked cycle absorption forces disjoint nonempty ascent sets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Disjoint ascent sets in the uniform obstruction to cycle absorption

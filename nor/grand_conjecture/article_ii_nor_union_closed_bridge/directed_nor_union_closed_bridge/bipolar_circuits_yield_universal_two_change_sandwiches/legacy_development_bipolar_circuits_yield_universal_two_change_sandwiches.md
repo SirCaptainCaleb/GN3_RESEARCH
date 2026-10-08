@@ -1,9 +1,5 @@
 # Bipolar circuits yield universal two-change sandwiches — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Bipolar circuits yield universal two-change sandwiches

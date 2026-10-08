@@ -1,9 +1,5 @@
 # A size three curvature tube creates crossed endpoint circuits — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A size-three curvature tube creates crossed-endpoint circuits

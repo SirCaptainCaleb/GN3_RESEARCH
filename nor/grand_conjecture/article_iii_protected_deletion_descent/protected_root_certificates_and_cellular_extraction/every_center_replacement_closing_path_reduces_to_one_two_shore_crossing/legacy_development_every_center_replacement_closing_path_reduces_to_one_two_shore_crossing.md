@@ -1,9 +1,5 @@
 # Every center-replacement closing path reduces to one two-shore crossing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Strengthen root §144 from an arbitrary proper ordered partition to one two-block facet.

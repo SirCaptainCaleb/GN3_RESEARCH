@@ -1,9 +1,5 @@
 # Threshold-band potential replaces singleton-defect transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Threshold-band potential replaces singleton-defect transport

@@ -1,9 +1,5 @@
 # Bourgin-Yang turns target compression into a large zero locus — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 

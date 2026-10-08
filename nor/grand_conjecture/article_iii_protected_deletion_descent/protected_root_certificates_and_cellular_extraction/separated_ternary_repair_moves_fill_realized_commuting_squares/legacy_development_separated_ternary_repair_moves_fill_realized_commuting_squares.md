@@ -1,9 +1,5 @@
 # Separated ternary repair moves fill realized commuting squares — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Separated ternary repair moves fill realized commuting squares

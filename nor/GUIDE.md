@@ -18,6 +18,12 @@ Treat each composition as a deliberately lossy compression of the material below
 
 Create Items freely in the relevant Subsection. Develop their individual Results with statements, evidence, proofs, and status. Compose an Item when its Results form a useful synthesis, then compose its parent Subsection, Section, and Article at natural accumulation points.
 
+## Composition eligibility and publication standard
+
+Articles, Sections, and Subsections may have **no composition**. That is an ordinary, valid state, not an error or an obligation to manufacture prose. Compose only when the child material supports a coherent mathematical argument. In all read, status, tree, and mirror interfaces, distinguish absent composition from an existing composition and never substitute an invented summary or a child inventory as if it were a mathematical composition.
+
+Every composition that does exist must read as a genuine mathematical publication at its level: an Article as an integrated paper-scale argument, a Section as a developed section of that paper, and a Subsection as a coherent local mathematical exposition. State precisely defined hypotheses, objects, results, proofs or explicitly identified proof gaps, and logical dependencies. Define every technical term in the composition itself or in the project Dictionary; distinguish proved claims from conjectures, heuristics, and strategic tasks. Synthesize children mathematically rather than listing them or narrating the work history. A list of item titles, numbered container references, status bullet points, or a progress report is not a composition. When the material is not yet ripe for mathematical synthesis, leave its parent composition absent and keep working in Items and Results.
+
 ## Dependencies and staleness
 
 Dependencies belong to compositions. An Item composition compresses its Results. A Subsection composition may depend on selected direct Item compositions; a Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions.

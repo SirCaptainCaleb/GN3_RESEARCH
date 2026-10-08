@@ -1,9 +1,5 @@
 # Full deletion connector orders glue from four coherent witnesses or two nonadjacent-gap witnesses — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Coherence of full deletion connectors gives spanning closure directly

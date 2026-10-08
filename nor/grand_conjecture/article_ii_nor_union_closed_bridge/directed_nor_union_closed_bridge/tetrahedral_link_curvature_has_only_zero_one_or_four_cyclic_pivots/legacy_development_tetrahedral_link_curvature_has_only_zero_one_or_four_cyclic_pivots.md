@@ -1,9 +1,5 @@
 # Tetrahedral link curvature has only zero one or four cyclic pivots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Tetrahedral link-curvature has only 0, 1, or 4 cyclic pivots

@@ -1,9 +1,5 @@
 # Every ternary A3 descent root has its opposite in the same block — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every ternary A3 descent root has its opposite in the same block

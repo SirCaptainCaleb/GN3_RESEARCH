@@ -1,9 +1,5 @@
 # Every fixed insertion state has a protected ten descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every fixed insertion state has a protected ten-descent

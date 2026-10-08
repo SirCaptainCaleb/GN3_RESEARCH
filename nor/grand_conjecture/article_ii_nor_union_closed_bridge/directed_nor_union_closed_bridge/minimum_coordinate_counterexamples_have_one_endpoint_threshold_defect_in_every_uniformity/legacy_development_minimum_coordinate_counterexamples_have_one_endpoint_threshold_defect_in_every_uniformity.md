@@ -1,9 +1,5 @@
 # Minimum coordinate counterexamples have one endpoint threshold defect in every uniformity — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let h be a binary coloring of ordered r-tuples of distinct coordinates, r>=2, odd under reversal. A good full order is one whose consecutive r-tuple word changes at most once. Assume a counterexample on V of minimum cardinality in this class, and put M=|V|-r+1.

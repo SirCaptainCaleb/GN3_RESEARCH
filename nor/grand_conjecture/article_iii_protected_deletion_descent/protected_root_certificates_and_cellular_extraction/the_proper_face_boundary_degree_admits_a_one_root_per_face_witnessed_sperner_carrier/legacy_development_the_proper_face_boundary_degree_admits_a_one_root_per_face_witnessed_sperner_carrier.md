@@ -1,9 +1,5 @@
 # The proper-face boundary degree admits a one-root-per-face witnessed Sperner carrier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The proper-face boundary degree can be represented using ONE actual witnessed crossing root per face, rather than an average over all refinements.

@@ -1,9 +1,5 @@
 # Monochromatic-band combing has the same strict potential as threshold-band combing — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Monochromatic-band combing has the same strict potential as threshold-band combing

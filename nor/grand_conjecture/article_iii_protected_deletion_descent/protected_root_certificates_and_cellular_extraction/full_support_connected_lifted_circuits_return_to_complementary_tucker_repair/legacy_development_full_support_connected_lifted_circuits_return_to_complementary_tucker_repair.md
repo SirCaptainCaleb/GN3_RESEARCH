@@ -1,9 +1,5 @@
 # Connected full-support lifted circuits reduce to fixed-middle vertical transport — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit correction: connected full-support lifted circuits reduce to fixed-middle vertical transport

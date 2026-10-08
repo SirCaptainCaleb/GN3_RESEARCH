@@ -1,9 +1,5 @@
 # The exceptional 11 width-two type is the rigid six-set and forces a left double-full packet — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The exceptional (r,s)=(1,1) width-two type is exactly the rigid six-set

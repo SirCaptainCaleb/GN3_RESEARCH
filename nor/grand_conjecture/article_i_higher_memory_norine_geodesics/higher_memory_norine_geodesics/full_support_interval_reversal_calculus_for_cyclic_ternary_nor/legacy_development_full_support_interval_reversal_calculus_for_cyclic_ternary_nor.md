@@ -1,9 +1,5 @@
 # Full-support interval reversal calculus for cyclic ternary NOR — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Full-support interval reversal calculus for cyclic ternary NOR

@@ -1,9 +1,5 @@
 # Shortest middle run equals the shifted two-circuit frontier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Shortest middle run equals the shifted two-circuit frontier

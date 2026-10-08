@@ -1,9 +1,5 @@
 # Audit: A3 reversal does not automatically preserve protected-root provenance — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Audit: A3 reversal gives an opposite raw descent, not automatically an opposite protected root

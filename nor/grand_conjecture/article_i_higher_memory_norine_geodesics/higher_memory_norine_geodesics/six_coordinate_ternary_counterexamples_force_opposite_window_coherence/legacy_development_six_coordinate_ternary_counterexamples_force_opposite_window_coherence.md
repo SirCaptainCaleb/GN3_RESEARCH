@@ -1,9 +1,5 @@
 # Six-coordinate ternary counterexamples force opposite-window coherence — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Six-coordinate ternary counterexamples force opposite-window coherence

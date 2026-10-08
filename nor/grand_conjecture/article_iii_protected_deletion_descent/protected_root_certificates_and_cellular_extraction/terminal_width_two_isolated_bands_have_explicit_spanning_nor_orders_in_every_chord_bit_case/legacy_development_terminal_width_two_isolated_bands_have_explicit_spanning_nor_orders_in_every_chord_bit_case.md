@@ -1,9 +1,5 @@
 # Terminal width-two isolated bands have explicit spanning NOR orders in every chord-bit case — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A width-two isolated one-band at the global endpoint always closes NOR in the flat alternating sector

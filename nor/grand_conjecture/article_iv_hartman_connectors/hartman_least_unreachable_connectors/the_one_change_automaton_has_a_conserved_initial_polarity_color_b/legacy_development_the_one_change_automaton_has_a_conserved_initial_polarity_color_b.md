@@ -1,9 +1,5 @@
 # The one-change automaton has a conserved initial-polarity color — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For a legal one-change partial order, let c be the last ternary-window color and let t∈{0,1} record whether the unique switch has already occurred. Define

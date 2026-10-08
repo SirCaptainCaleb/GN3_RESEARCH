@@ -1,9 +1,5 @@
 # An extremal width-two band forces the bad reconnection bit and a one-rank switch shift — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A lexicographically extremal width-two band forces the bad §226 reconnection bit

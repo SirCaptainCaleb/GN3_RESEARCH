@@ -1,9 +1,5 @@
 # The consecutive-change defect gives a symmetric Sperner carrier with one-band labels — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The consecutive-change defect gives a symmetric Sperner carrier with one-band labels

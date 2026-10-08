@@ -1,9 +1,5 @@
 # Direct switching-split gluing can close only when at most one shore is bichromatic — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Direct switching-split gluing can close only when at most one shore is bichromatic

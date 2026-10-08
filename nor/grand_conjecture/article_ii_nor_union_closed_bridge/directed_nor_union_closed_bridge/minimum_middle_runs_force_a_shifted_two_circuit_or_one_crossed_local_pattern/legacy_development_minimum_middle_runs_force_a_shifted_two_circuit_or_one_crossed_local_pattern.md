@@ -1,9 +1,5 @@
 # Minimum middle runs force a shifted two circuit or one crossed local pattern — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Minimum middle runs force a shifted two-circuit or one crossed local pattern

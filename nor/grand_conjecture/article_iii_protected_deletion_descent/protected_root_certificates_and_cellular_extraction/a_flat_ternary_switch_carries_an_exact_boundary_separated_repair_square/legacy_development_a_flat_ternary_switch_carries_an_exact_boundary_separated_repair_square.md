@@ -1,9 +1,5 @@
 # A flat ternary switch carries an exact boundary-separated repair square — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A flat ternary switch carries an exact boundary-separated repair square

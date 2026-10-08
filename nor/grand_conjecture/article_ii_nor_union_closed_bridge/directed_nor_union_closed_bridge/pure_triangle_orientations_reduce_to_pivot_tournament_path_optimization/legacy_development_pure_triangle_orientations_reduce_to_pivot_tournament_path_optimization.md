@@ -1,9 +1,5 @@
 # Pure triangle orientations reduce to pivot tournament path optimization — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Pure triangle orientations reduce to pivot-tournament path optimization

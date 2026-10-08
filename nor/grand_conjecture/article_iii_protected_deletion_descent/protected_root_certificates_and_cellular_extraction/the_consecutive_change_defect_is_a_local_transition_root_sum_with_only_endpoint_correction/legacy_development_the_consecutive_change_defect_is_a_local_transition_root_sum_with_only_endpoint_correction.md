@@ -1,9 +1,5 @@
 # The consecutive-change defect is a local transition-root sum with only endpoint correction — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The consecutive-change defect is a local transition-root sum with only endpoint correction

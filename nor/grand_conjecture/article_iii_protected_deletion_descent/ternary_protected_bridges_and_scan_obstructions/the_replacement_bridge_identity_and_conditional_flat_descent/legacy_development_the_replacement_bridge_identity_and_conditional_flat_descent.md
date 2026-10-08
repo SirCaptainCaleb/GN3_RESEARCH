@@ -1,9 +1,5 @@
 # The replacement bridge identity and conditional flat descent — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Sources: Article II §§187,188,191,194,199, with the scan premise corrected.

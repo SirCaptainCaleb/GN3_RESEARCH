@@ -1,9 +1,5 @@
 # The last-flip left defect is another double-full singleton three ranks earlier — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## The last-flip left defect is another double-full singleton three ranks earlier

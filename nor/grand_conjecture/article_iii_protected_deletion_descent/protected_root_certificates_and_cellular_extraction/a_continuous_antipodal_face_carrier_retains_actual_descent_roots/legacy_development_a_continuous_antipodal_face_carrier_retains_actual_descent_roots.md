@@ -1,9 +1,5 @@
 # A continuous antipodal face carrier retains actual descent roots — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A continuous antipodal face carrier retains actual descent roots

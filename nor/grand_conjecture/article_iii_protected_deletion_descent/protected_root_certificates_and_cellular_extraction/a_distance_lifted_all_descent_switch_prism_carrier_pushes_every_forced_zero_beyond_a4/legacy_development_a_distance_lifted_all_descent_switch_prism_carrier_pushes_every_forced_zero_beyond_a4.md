@@ -1,9 +1,5 @@
 # A distance-lifted all-descent switch-prism carrier pushes every forced zero beyond A4 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## A distance-lifted all-descent switch-prism carrier pushes every forced zero beyond A4

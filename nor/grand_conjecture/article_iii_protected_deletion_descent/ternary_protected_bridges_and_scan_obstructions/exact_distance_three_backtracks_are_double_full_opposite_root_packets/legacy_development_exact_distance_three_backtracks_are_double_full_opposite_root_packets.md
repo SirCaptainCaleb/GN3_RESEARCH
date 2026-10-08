@@ -1,9 +1,5 @@
 # Exact distance three backtracks are double full opposite root packets — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Exact distance-three backtracks are double-full opposite-root packets

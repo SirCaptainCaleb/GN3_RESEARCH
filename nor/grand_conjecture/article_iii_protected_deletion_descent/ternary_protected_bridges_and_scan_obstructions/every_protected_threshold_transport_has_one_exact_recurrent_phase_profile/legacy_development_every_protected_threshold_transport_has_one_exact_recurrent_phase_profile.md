@@ -1,9 +1,5 @@
 # Every protected threshold transport has one exact recurrent phase profile — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Protected phase-transfer trichotomy. Let a one-change deletion carrier be normalized to run profile (p,q), with p globally minimum over all deletion carriers, reversals, and color complements; hence q>=p. Suppose a boundary-safe surgery produces another genuine deletion carrier by transporting the 0-to-1 threshold exactly k windows to the right, so the new profile is (p+k,q-k), with both phases nonempty. Put Delta=q-p. If Delta<k, then q-k<p, so after reversal/color complement the new carrier has normalized first phase below p, contradicting global minimality. If Delta>k, the normalized phase imbalance strictly decreases: Delta'=|(q-k)-(p+k)|=|Delta-2k|<Delta. If Delta=k, the new profile is (p+k,p), whose reversal/color complement is again normalized as (p,p+k); this is the unique equality/recurrent case. Thus every protected threshold-transport deletion witness comes with a canonical well-founded improvement, except at one sharply specified balanced profile. Applications: the g=1 A2 boundary exit has k=4, so recurrence requires q-p=4; the first antipodal deletion-witness exit has k=2, so recurrence requires q-p=2; the second antipodal deletion-witness exit has k=1, so recurrence requires q-p=1. The residual caged antipodal state is the only branch where neither deletion transfer is available; there the two boundary exits instead give the codimension-one quotient improvement proved in the protected-root section.

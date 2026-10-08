@@ -1,9 +1,5 @@
 # Corrected Hamilton chord identities for status curvature and five-set holonomy — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Work in the coboundary-flat alternating ternary sector with the convention

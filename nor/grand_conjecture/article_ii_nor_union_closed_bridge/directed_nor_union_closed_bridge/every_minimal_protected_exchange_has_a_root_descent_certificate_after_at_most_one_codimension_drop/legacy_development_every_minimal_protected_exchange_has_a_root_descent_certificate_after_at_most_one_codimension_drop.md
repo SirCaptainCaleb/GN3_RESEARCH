@@ -1,9 +1,5 @@
 # Every minimal protected exchange has a root descent certificate after at most one codimension drop — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Every minimal protected exchange has a root descent certificate after at most one codimension drop

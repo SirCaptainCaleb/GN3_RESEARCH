@@ -1,9 +1,5 @@
 # Residual A2 suffix holonomy factors through the Klein four group — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 ## Residual A2 suffix holonomy factors through the Klein four group
