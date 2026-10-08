@@ -32,7 +32,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T14:19:30.33694+00:00",
+  "generated_at": "2026-10-08T14:43:00.432011+00:00",
   "item_count": 23,
   "mirror_format": 18,
   "result_count": 0,
@@ -65,7 +65,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 67,
+  "snapshot_revision": 85,
   "startup_broadcasts": [
     {
       "body": "NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.",

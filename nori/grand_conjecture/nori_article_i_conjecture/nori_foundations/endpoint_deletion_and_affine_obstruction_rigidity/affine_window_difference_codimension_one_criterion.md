@@ -1,7 +1,5 @@
 # Codimension-one affine change images contain a good geodesic
 
-## Development
-
 Statement:
 Fix n>=4 and a coordinate order p of the n coordinate moves. Suppose each ordered-three-face color on this order is an affine Boolean function of the starting vertex x in F_2^n (for example every c(F,pi) is affine in fixed exterior bits). Let w_p(x) in F_2^{n-2} be the window colors, and let Delta_p(x)=(w_1+w_2,...,w_{n-3}+w_{n-2}) be the change-indicator vector, with additions in F_2. If the linear part of the affine map Delta_p has rank at least n-4, there is a start x for which the order p has at most one color change. In particular in dimension n=6 a failed fixed order must have change-map rank at most one.
 

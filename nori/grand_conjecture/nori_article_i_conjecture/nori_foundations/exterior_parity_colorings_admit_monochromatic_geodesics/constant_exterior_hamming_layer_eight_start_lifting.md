@@ -1,7 +1,5 @@
 # Eight constant exterior-Hamming-layer starts and nonlinear weight lifting
 
-## Development
-
 Fix any dimension \(n\ge3\) and any order \(p=(p_1,\ldots,p_n)\) of the coordinates. If the starting bits in this order are \(x_1,\ldots,x_n\), let \(K_i\) be the number of 1-bits fixed outside the consecutive three-face with free directions \(p_i,p_{i+1},p_{i+2}\), after the first \(i-1\) directions have been traversed. Then
 \[
 K_i=\sum_{j<i}(1-x_j)+\sum_{j>i+2}x_j,\qquad
@@ -32,3 +30,7 @@ for every ordered triple \(\pi\) and all \(0\le k\le m\). For example, reversal-
 *Proof.* When the window shifts right by one direction, the departing coordinate \(p_i\) enters the fixed exterior at its toggled bit \(1-x_i\), and the arriving direction \(p_{i+3}\) leaves the fixed exterior, removing \(x_{i+3}\). This proves the difference formula. Its vanishing for every \(i\) is equivalent to the displayed recurrence. Three freely chosen initial bits determine all later bits uniquely, giving exactly eight starts. Under these starts \(f(K_i)\) is constant, so it changes no adjacent color differences. The antipodal condition follows because complementation sends \(K\) to \(m-K\) and reverses the ordered free directions. \(\square\)
 
 **Scope.** This proves a genuinely nonlinear face-dependent subclass of NORI but does not resolve arbitrary face-position dependence or arbitrary reversal-odd coordinate-only \(h\).
+
+**Statement**
+
+For every coordinate order there are exactly eight starts with constant exterior Hamming weight across all three-face windows; this yields monochromatic geodesics for any color depending only on that weight, and transfers all one-change coordinate-only orders through arbitrary additive weight perturbations.

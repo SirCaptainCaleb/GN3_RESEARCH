@@ -1,7 +1,5 @@
 # Two sensitivities force a comparison coloring; three are impossible
 
-## Development
-
 Statement:
 Under the hypotheses of the preceding lemma, let T=(a,b,c) and U={d,e,f}. If C_T is sensitive to both exterior bits d and e, then every ordered triple σ on U is face-independent, and there exists h∈{0,1} such that C_σ=h when d occurs before e in σ, and C_σ=1-h when e occurs before d. Consequently, for every ordered triple T in any hypothetical six-dimensional NORI counterexample, C_T depends on at most two of its three exterior bits (a two-junta).
 

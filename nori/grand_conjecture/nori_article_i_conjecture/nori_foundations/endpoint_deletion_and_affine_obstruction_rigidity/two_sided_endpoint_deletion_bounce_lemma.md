@@ -1,7 +1,5 @@
 # Two-sided endpoint deletion forces a single interior run
 
-## Development
-
 Statement:
 Let n>=5 and let P be an antipodal n-geodesic, with ordered-three-face color word w_1...w_{n-2}. Suppose the (n-1)-geodesics obtained by deleting respectively the first and last move each have at most one color change. If P itself has at least two changes, its word is exactly 0 1^{n-4} 0 or 1 0^{n-4} 1. No antipodal coloring hypothesis is required.
 

@@ -1,7 +1,5 @@
 # One active exterior coordinate forces constant complementary ordered faces
 
-## Development
-
 Statement:
 Let c be an antipodal-reversal-odd binary coloring of ordered three-faces of Q_6, and assume every antipodal geodesic has at least two color changes. Fix distinct a,b,c,d,e,f. If the color C_{abc} of faces with ordered free axes (a,b,c) is sensitive to the fixed exterior bit x_d, then C_{def} and C_{dfe} are constant over all assignments of their exterior bits and have the same constant value h. Their reversal partners C_{fed} and C_{efd} are constant with value 1-h.
 

@@ -1,7 +1,5 @@
 # Even flipper sets descend antipodal oddness
 
-## Development
-
 Statement:
 Let c be an antipodally odd ordered-three-face coloring of Q_{A⊔B} satisfying the universal-flipper condition on A. Its induced coloring g_B on the B-subcube obeys g_B(bar F,rev π)=g_B(F,π)⊕1⊕(|A| mod 2). If |A| is even, a counterexample c forces an antipodally odd counterexample g_B in dimension |B|. In particular a minimum-dimensional NORI counterexample with n≥6 has at most one universal-flipper coordinate.
 

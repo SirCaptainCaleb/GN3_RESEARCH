@@ -1,7 +1,5 @@
 # A sensitive ordered triple forces constant complementary endpoint orientations
 
-## Development
-
 Statement:
 Let c be an antipodally odd ordered-three-face coloring of Q_6 for which every antipodal geodesic has at least two window-color changes. Let (a,b,c,d,e,f) list the six coordinates. If the color of ordered face (a,b,c) is sensitive to the fixed exterior bit d for any choice of its other exterior bits e,f, then there is κ∈{0,1} such that, on every face with free set {d,e,f}, the ordered-face colors of (d,e,f) and (d,f,e) are both κ, whereas those of (f,e,d) and (e,f,d) are both 1−κ. In particular the four indicated ordered faces are each independent of all three exterior bits.
 

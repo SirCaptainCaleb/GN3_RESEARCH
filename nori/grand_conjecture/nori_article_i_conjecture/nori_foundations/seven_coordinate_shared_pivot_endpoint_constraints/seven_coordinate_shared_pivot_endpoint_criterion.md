@@ -1,7 +1,5 @@
 # Independent and shared endpoint pivots for ordered k-face windows
 
-## Development
-
 Central-pivot structure for consecutive ordered k-face windows.
 
 Statement.

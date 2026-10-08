@@ -1,7 +1,5 @@
 # No-good six-coordinate ternary labels are endpoint twists of alternating triangle orientations
 
-## Development
-
 Statement:
 Let h(a,b,c)∈F₂ be defined for all ordered triples of distinct elements of a six-element set V and satisfy h(c,b,a)=h(a,b,c)⊕1. Suppose every permutation π of V has at least two color changes in its four consecutive h-values. Then there exist vertex bits s_v and an alternating triangle orientation α, satisfying α(abc)=α(bca)=α(cab) and α(cba)=α(abc)⊕1, such that h(a,b,c)=α(a,b,c)⊕s_a⊕s_c for every triple. Equivalently, the sensitivity h(a,b,c)⊕h(a,c,b) of swapping adjacent final directions is independent of a and equals 1⊕s_b⊕s_c.
 

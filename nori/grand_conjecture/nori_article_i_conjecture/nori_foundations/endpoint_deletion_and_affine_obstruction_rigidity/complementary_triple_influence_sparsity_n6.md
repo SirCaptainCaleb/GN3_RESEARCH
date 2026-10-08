@@ -1,7 +1,5 @@
 # Antipodal sensitivity forces sparsity on complementary triple
 
-## Development
-
 Statement:
 Assume n=6 and c is an antipodally odd ordered-three-face coloring with no good antipodal geodesic. For each unordered triple T and middle axis b in T, define I(T,b) as the set of exterior coordinates d outside T on which the color of an ordered face with free triple T and middle b is sensitive for some assignment of the remaining exterior bits. Antipodal reversal makes I(T,b) well-defined for the two opposite orders on T. Write U=V\T. If d belongs to I(T,b), then for each e in U\{d}, I(U,e) is contained in {b}. Consequently, if |I(T,b)|>=2, then I(U,e) is contained in {b} for every e in U. Thus any dimension-six counterexample with two or more sensitivities in one orientation class forces all three opposite orientation classes to depend on at most one fixed coordinate.
 

@@ -1,7 +1,5 @@
 # Two active exterior coordinates force an alternating four-triple cycle
 
-## Development
-
 Statement:
 Assume an antipodal-reversal-odd coloring of Q_6 has no one-change antipodal geodesic. Let d,e,a,b,c,f be the six coordinates. If the ordered-triple color C_{abc} is sensitive to both fixed exterior bits d,e, then the four ordered triples (a,b,c), (f,a,b), (c,f,a), (b,c,f) are all independent of the remaining exterior bit in {a,b,c,f}, and, as functions of the two fixed bits d,e, their colors are respectively F, 1-F, F, 1-F for one Boolean function F(d,e) genuinely depending on both variables.
 

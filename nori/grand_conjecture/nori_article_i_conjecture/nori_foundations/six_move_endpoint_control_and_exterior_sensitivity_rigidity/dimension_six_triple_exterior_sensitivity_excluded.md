@@ -1,7 +1,5 @@
 # Three exterior sensitivities force dimension-six closure
 
-## Development
-
 Statement:
 For an antipodally odd ordered-three-face coloring of Q_6, if there is an ordered coordinate triple (a,b,c) whose color is sensitive to each of the three fixed exterior coordinates d,e,f (sensitivity may occur at different exterior-bit assignments), then a good antipodal geodesic exists. Equivalently, in every counterexample each ordered triple has exterior Boolean-sensitivity support of size at most two. If a triple has sensitivity to two exterior coordinates, every orientation of its complementary free triple is face-independent.
 

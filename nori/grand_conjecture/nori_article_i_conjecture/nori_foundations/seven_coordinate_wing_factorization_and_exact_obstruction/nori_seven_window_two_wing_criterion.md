@@ -1,5 +1,11 @@
 # Exact two-wing criterion for a seven-coordinate geodesic
 
-## Development
-
 This local exact criterion isolates the first seven-dimensional obstruction beyond the six-coordinate endpoint square. Its premise is fully unrestricted and therefore applies to NORI. It describes each of four starting vertices associated with a fixed coordinate order and five fixed bits; the NORI antipodal symmetry gives additional relations between different orders, and those global relations remain to be exploited. To close Q_7, exclude simultaneous central-pair avoidance by both nonconstant wings across all orders, or use an order with one zero-cost and one at-most-one-cost wing. Do not infer full Q_7 closure from the local lemma.
+
+**Statement**
+
+For any binary coloring of ordered three-faces of Q_7, with no symmetry assumption, fix a coordinate order (a,b,c,d,e,f,g) and fix the initial bits at a,b,d,f,g. Allow u=x_e and v=x_c to vary independently. The five-window color word has the form (A(u),B(u),C,D(v),E(v)). Define L(u)=[A(u)≠B(u)]+[B(u)≠C] and R(v)=[C≠D(v)]+[D(v)≠E(v)]. A good antipodal geodesic of this order among the four starts exists if and only if min_u L(u)+min_v R(v)≤1. In particular, if both wing maps u↦(A(u),B(u)) and v↦(D(v),E(v)) are nonconstant, then the four starts all fail if and only if neither wing ever equals (C,C). If one wing attains (C,C) and the opposite wing is nonconstant, a good start exists.
+
+**Proof**
+
+The five windows have direction triples abc, bcd, cde, def, efg. In windows 1 and 2 the direction e is exterior and c is free; in window 3 both c,e are free; in windows 4 and 5 c is exterior and e is free. Hence the claimed separate variable dependence. The four adjacent color-change indicators split into the two terms L(u) and R(v), so minimizing over independent u,v gives min L+min R. For a left wing pair (s,t), the value [s≠t]+[t≠C] equals 0 exactly at (C,C), equals 2 exactly at (C,1-C), and equals 1 at the two remaining pairs. For the right wing pair (s,t), [C≠s]+[s≠t] equals 0 exactly at (C,C), equals 2 exactly at (1-C,C), and equals 1 at the remaining pairs. A nonconstant map from a two-point domain cannot always equal the unique cost-2 pair, so each nonconstant wing has minimum cost at most 1. If both are nonconstant, a good choice exists exactly when at least one has minimum cost 0, equivalently one wing attains (C,C). The final sufficient condition follows similarly.

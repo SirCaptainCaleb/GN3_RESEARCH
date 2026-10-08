@@ -1,7 +1,5 @@
 # Mobile exterior-coordinate cycle criterion and no-go for verbatim six-path lifting
 
-## Development
-
 Let \(S\) be the directions of a collection of based paths, each equipped with specified consecutive ordered-three-face windows. A comparison edge \(e=(r,\alpha;s,\beta)\) identifies a window of row \(r\) with one of row \(s\), either as the same ordered face (\(\epsilon_e=0\)) or as antipodal reversals (\(\epsilon_e=1\)). Suppose the comparison already holds on the \(S\)-coordinates.
 
 **Mobile exterior-coordinate criterion.** Add one direction \(g\notin S\). In row \(r\), insert \(g\) at a cut leaving every compared three-direction window consecutive. Write \(t_{r,e}\in\mathbb F_2\) for whether \(g\) precedes the window incident with \(e\), and \(z_r\in\mathbb F_2\) for the initial \(g\)-bit of row \(r\). All comparison edges hold also at coordinate \(g\) if and only if
@@ -23,3 +21,7 @@ Suppose the original forcing proof must be preserved verbatim: row 2 needs its f
 If one preserves only the endpoint comparison windows, then row 2 can remain an unchanged six-block and the holonomy can be repaired by inserting \(g\) centrally into row 4, between its third and fourth moves. This preserves row 4's first and last windows while toggling \(g\) between them. But row 4's original third window \(bfe\), which the forcing argument compares to row 6, is then destroyed: the augmented order is \(dcbgfea\). Thus mobile holonomy is algebraically repairable, while the existing six-path proof does not lift unchanged. Any dimension-raising forcing certificate must include genuinely new windows involving \(g\), or a revised comparison pattern.
 
 The theorem concerns face-identification compatibility only; the color-word consequences of every full augmented path being bad require a separate proof.
+
+**Statement**
+
+An inserted exterior direction yields a solvable graph coboundary system exactly when every comparison cycle has zero signed insertion parity; the existing six-row dimension-six forcing proof cannot retain its crucial windows and repair its odd comparison triangle by one-coordinate insertion.
