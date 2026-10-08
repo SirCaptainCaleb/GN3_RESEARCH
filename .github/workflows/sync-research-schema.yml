@@ -1,4 +1,4 @@
-name: Sync one research schema
+name: INTERNAL | Sync Supabase schema into Git mirror
 
 on:
   workflow_call:
