@@ -1,7 +1,5 @@
 # Corollary 2 — preserved pre-item development
 
-## Development
-
 For every nonisolated vertex \(v\),
 \[
 t(v)\le \gamma(\phi(v)). \tag{3}

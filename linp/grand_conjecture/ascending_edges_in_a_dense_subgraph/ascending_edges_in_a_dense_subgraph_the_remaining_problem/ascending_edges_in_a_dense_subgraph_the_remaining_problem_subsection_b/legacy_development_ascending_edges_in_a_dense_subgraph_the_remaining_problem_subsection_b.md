@@ -1,7 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Development
-
 Show that, in a \(P_\ell^{(3)}\)-free linear \(3\)-graph, the near-top-rank families isolated by Lemmas 7 and 8 cannot occur with total size \(\Theta(\ell n)\).
 
 Any of the following would suffice:

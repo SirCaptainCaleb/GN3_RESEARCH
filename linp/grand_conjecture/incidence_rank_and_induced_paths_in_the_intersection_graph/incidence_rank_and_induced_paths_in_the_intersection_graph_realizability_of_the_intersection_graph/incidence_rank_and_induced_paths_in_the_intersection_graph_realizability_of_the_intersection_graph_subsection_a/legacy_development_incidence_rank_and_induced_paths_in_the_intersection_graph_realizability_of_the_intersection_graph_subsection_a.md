@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The graph \(F\) is not arbitrary.
 
 For each vertex \(x\in V(H)\), let

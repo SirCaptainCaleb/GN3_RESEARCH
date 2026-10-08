@@ -1,7 +1,5 @@
 # Lemma 9 — preserved pre-item development
 
-## Development
-
 After deleting \(o(S)\) further incidences, one obtains families \(H_v\subseteq G_v\) satisfying
 \[
 \sum_v\left(\frac{\phi(v)}8-|H_v|\right)_+=o(S), \tag{36}

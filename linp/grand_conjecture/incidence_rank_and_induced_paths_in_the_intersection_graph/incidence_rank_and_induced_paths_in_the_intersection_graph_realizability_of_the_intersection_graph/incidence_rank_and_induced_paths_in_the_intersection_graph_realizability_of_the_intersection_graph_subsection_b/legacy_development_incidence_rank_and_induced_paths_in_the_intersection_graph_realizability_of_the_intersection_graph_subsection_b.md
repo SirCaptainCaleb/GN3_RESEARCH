@@ -1,7 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Development
-
 The indexed clique family \(\{C_x:x\in V(H)\}\) has the following properties.
 
 1. Every vertex of \(F\) belongs to exactly three cliques.

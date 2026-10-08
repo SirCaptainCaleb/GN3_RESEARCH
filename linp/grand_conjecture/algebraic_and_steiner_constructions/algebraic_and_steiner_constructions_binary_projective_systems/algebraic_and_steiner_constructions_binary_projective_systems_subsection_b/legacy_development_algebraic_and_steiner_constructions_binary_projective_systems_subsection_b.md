@@ -1,7 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Development
-
 Suppose a spanning linear path in \(H_d\) has joint set \(J\). Then
 \[
 \sum_{x\in J}x=0. \tag{3}

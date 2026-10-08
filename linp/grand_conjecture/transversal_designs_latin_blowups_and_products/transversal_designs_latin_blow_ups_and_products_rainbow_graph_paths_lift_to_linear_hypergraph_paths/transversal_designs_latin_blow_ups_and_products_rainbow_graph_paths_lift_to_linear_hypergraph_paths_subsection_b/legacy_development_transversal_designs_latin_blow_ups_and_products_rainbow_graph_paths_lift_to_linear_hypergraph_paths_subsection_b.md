@@ -1,7 +1,5 @@
 # Theorem 2 — preserved pre-item development
 
-## Development
-
 Every properly \(q\)-edge-colored \(q\)-regular graph using exactly \(q\) colors contains a rainbow path with
 \[
 q-o(q)

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 It is not true that
 \[
 \beta(T)\le s.

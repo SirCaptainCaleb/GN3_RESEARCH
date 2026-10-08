@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 A sequence of distinct hyperedges
 \[
 e_1,\ldots,e_t

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Form a graph \(J\) whose edges are the terminal pairs \(uv\) of the edges
 \[
 e=\{x,u,v\}

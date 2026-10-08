@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The identity also controls the intersections at the unique entrance and at the two terminals.
 
 By (20), \(A-C=o(S)\). Hence, after deleting \(o(S)\) ascending edges, if

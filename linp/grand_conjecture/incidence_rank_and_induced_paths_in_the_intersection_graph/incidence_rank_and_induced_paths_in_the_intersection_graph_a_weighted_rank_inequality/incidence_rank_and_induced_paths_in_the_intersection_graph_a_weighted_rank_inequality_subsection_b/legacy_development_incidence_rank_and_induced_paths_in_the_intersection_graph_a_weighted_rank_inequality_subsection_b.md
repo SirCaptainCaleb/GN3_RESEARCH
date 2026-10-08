@@ -1,7 +1,5 @@
 # Corollary 5 — preserved pre-item development
 
-## Development
-
 If \(\Delta(H)\le \ell-2\), then
 \[
 \ell\,\operatorname{rank}N\ge 3m. \tag{9}

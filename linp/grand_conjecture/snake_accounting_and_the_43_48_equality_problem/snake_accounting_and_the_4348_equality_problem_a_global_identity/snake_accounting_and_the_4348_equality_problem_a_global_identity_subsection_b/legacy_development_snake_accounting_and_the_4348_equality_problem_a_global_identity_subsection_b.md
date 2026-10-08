@@ -1,7 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Development
-
 For every nonisolated \(v\),
 \[
 t(v)-D_v\le \beta(p_v). \tag{6}

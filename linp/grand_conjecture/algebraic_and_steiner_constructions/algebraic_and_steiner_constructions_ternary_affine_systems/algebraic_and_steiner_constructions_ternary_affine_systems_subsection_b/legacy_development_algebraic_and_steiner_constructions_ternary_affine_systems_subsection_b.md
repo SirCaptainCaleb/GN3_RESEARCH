@@ -1,7 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Development
-
 If \(A_d\) has a spanning linear path with joint set \(J\), then
 \[
 \sum_{x\in J}x=0. \tag{6}

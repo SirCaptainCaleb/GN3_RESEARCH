@@ -1,7 +1,5 @@
 # Theorem 6 — preserved pre-item development
 
-## Development
-
 Let \(A\) have odd cardinality \(n\), and let \(M\) be the number of unordered pairs \(\{x,y\}\subseteq A\) for which \(x+y\notin A\). If
 \[
 M<n,

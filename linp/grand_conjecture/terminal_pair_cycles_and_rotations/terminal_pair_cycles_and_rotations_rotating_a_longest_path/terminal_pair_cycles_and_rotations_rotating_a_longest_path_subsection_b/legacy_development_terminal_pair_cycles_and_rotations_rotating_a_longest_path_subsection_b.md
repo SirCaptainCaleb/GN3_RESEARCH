@@ -1,7 +1,5 @@
 # Lemma 6 — preserved pre-item development
 
-## Development
-
 Let
 \[
 P=(g_1,\ldots,g_L)

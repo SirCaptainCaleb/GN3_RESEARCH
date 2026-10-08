@@ -1,7 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Development
-
 If \(H\) has \(m\) edges and \(n\) vertices, then
 \[
 3m-A\le \sum_{v}(2\phi(v)-1). \tag{1}

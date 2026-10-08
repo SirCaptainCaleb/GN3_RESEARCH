@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 This rehearsal concerns lower bounds. A finite \(P_\ell^{(3)}\)-free linear \(3\)-graph \(G\) with \(v\) vertices and \(m\) edges gives, by taking disjoint copies,
 \[
 \operatorname{ex}_L(n,P_\ell^{(3)})

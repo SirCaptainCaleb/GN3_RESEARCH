@@ -1,7 +1,5 @@
 # Lemma 7 — preserved pre-item development
 
-## Development
-
 If \(H\) contains a linear path with \(\ell\) edges, then the binary column span of \(M_H\) contains a vector of Hamming weight \(\ell+2\).
 
 #### Proof

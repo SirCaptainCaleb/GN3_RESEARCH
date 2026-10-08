@@ -1,7 +1,5 @@
 # Theorem 5 — preserved pre-item development
 
-## Development
-
 \[
 6|E(H)|
 =

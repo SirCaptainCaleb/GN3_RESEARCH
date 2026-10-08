@@ -1,6 +1,6 @@
 # Grand conjecture
 
-Research hierarchy: Articles → Sections → Subsections → Items → Results.
+Research hierarchy: Articles → Sections → Subsections → Items.
 Each level's composition is adjacent to its corresponding directory.
 
 - [Article 1 — Snake accounting and the 43/48 equality problem](snake_accounting_and_the_43_48_equality_problem.md)

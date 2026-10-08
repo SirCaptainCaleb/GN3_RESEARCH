@@ -1,7 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Development
-
 Let \(P\) be a \(p\)-edge path ending at \(v\), and let \(F_Q\) be a family of ascending edges \(e=\{x,u,v\}\) at which \(v\) is terminal and
 \[
 \phi(e)\le Q,\qquad

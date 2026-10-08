@@ -1,7 +1,5 @@
 # Lemma 5 — preserved pre-item development
 
-## Development
-
 Let \(e\) and \(f\) be two nonspecial hyperedges whose terminal pairs are adjacent in \(T\) at a common terminal \(v\). If
 \[
 \phi(f)\ge\phi(e),

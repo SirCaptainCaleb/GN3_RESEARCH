@@ -1,7 +1,5 @@
 # Lemma 8 — preserved pre-item development
 
-## Development
-
 \[
 D'_v+I_v
 \ge

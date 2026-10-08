@@ -1,7 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Development
-
 Let \(S\subseteq V(H)\), and let \(N_H(S)\) be the set of hyperedges meeting \(S\). Then
 \[
 r_d(H-S)

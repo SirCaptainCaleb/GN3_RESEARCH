@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 There is a simpler reduction that forces color-vertex disjointness by construction, at the cost of a factor two.
 
 Choose a partition

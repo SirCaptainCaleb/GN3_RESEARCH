@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Define
 \[
 \beta(1)=0,\quad

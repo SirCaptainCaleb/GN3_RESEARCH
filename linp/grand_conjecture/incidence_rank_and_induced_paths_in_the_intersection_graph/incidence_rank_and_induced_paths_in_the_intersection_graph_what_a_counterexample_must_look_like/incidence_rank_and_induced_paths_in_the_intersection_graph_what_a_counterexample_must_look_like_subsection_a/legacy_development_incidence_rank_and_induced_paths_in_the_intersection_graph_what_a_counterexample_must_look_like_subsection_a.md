@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Several simple classes cannot contain a counterexample to (1).
 
 The low-degree class is excluded by Corollary 5.

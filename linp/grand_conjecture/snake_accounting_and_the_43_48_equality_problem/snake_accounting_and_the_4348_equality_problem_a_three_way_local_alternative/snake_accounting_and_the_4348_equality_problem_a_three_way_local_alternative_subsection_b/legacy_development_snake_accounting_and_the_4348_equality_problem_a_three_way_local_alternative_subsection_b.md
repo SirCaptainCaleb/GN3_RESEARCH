@@ -1,7 +1,5 @@
 # Theorem 10 — preserved pre-item development
 
-## Development
-
 Outside a set of vertices of total vertex rank \(o(S)\), every high-rank vertex \(v\) has a family \(H_v\) satisfying Lemma 9 and at least one of the following:
 
 1. at least

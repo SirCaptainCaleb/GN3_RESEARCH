@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 Let \(h\) be an ascending edge of edge rank \(q\ge4\), and let \(v\) be terminal at \(h\). Then
 \[
 \bigl|\{f\ni v:\phi(f)\le q\}\bigr|

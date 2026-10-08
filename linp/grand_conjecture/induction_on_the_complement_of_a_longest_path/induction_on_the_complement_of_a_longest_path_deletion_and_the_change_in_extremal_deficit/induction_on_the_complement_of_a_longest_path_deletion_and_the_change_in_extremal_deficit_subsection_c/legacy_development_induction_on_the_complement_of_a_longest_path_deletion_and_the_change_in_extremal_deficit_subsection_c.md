@@ -1,7 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Development
-
 Let \(H\) be vertex-minimal among linear \(3\)-graphs satisfying all of the following:
 
 1. \(|E(H)|/|V(H)|\ge d\);

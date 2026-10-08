@@ -1,7 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Development
-
 \[
 N^{T}N=3I_m+A(F). \tag{4}
 \]

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Several natural strengthenings are false.
 
 The terminal-pair graph of all ascending edges need not be rainbow-\(P_4\)-free, even when all terminal vertices on the graph path have the same vertex rank. It need not be a forest or a pseudoforest. Hence the rank parameter cannot be discarded.

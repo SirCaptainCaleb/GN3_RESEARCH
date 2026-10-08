@@ -1,7 +1,5 @@
 # Lemma 7 — preserved pre-item development
 
-## Development
-
 There is a family \(F_v\subseteq T(v)\) of edges that meet \(Q\) in both vertices outside \(v\) and meet \(P\) in exactly one vertex outside \(v\), with
 \[
 |F_v|

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let \(H\) be a finite linear \(3\)-graph. For an edge \(e\) and a vertex \(v\in e\), let \(\phi(e,v)\) be the maximum length of a linear path with last edge \(e\) and last vertex \(v\). Put
 \[
 \phi(e)=\max_{v\in e}\phi(e,v),

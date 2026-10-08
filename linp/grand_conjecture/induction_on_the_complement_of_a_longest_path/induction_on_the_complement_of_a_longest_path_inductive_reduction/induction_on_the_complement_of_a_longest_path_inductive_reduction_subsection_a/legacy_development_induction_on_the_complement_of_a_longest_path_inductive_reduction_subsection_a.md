@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 Assume the inductive inequality
 \[
 3m_Y\le \ell |Y|.

@@ -1,7 +1,5 @@
 # Lemma 5 — preserved pre-item development
 
-## Development
-
 Suppose
 \[
 |E(H)|=dn

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Choose for every vertex \(v\) a maximum path
 \[
 P_v=(g_1,\ldots,g_p),\qquad p=\phi(v),

@@ -1,7 +1,5 @@
 # Proposition 5 — preserved pre-item development
 
-## Development
-
 The affine plane \(A_2\) contains no spanning \(4\)-edge linear path.
 
 #### Proof

@@ -1,7 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Development
-
 Let \(e\in E(T)\setminus E(F)\), and let \(C_e\) be its fundamental cycle in \(F+e\). Then \(e\) has minimum weight on \(C_e\).
 
 #### Proof

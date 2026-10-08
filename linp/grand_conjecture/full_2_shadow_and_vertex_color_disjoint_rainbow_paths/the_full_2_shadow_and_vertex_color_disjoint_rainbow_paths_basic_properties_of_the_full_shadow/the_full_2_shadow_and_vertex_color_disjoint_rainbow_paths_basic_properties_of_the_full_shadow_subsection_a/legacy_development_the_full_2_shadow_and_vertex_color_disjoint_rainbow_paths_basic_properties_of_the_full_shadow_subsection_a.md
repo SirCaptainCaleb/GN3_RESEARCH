@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 The coloring (1) is proper. Moreover,
 \[
 e(G)=3|E(H)| \tag{2}

@@ -1,7 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Development
-
 For every longest \(k\)-edge path \(P\) in a \(P_\ell^{(3)}\)-free linear \(3\)-graph \(H\), with
 \[
 X=V(P),\qquad Y=V(H)\setminus X,

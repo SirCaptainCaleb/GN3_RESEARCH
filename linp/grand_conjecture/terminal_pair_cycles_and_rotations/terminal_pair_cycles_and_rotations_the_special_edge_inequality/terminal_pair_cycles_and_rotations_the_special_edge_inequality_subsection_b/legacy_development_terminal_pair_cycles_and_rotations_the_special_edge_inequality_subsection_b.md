@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 For every vertex \(v\),
 \[
 d^-_{\mathrm{snake}}(v)\le 2\phi(v)-1. \tag{1}

@@ -1,7 +1,5 @@
 # Theorem 4 — preserved pre-item development
 
-## Development
-
 Assign weights \(0\le w_e\le1\) to the edges of \(H\). Put
 \[
 W=\sum_e w_e,

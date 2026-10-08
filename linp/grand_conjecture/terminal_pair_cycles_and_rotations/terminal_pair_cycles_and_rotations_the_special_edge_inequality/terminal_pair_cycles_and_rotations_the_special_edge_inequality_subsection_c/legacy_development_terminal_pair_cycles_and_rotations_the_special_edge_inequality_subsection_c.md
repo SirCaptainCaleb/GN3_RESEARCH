@@ -1,7 +1,5 @@
 # Corollary 2 — preserved pre-item development
 
-## Development
-
 \[
 2m+s\le \sum_v(2\phi(v)-1)\le (2\ell-3)n. \tag{2}
 \]

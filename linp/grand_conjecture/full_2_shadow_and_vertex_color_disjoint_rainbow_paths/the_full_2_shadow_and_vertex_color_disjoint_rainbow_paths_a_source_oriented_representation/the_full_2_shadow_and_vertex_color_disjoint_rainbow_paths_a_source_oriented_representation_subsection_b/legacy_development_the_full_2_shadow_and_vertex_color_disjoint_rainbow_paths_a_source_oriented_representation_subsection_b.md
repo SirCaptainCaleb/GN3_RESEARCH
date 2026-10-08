@@ -1,7 +1,5 @@
 # Lemma 5 — preserved pre-item development
 
-## Development
-
 For every vertex \(v\),
 \[
 \frac12 d_D^+(v)+d_D^-(v)=d_H(v). \tag{10}

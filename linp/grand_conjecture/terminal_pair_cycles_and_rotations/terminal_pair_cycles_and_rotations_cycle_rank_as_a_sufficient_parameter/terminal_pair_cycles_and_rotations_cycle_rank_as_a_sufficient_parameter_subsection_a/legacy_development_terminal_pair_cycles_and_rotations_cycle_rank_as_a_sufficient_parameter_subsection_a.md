@@ -1,7 +1,5 @@
 # Proposition 3 — preserved pre-item development
 
-## Development
-
 Suppose
 \[
 \beta(T)\le Cs+Dn \tag{3}

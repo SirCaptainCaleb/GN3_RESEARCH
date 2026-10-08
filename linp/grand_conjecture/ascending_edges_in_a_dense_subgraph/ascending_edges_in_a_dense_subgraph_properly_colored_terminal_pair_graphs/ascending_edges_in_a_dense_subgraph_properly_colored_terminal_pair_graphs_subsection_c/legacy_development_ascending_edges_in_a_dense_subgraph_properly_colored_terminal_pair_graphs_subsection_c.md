@@ -1,7 +1,5 @@
 # Corollary 5 — preserved pre-item development
 
-## Development
-
 For a nonspecial edge \(e\), let \(a(e)\) be the vertex rank of its unique entrance and let
 \[
 p(e)=\min\{\phi(u),\phi(v)\}

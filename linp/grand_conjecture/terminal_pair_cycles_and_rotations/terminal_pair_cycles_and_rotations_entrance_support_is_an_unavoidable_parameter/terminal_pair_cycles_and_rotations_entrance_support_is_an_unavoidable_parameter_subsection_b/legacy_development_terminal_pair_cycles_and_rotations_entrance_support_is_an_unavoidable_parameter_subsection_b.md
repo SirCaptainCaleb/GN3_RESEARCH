@@ -1,7 +1,5 @@
 # Proposition 7 — preserved pre-item development
 
-## Development
-
 \[
 \operatorname{nullity}(N_{\mathrm{ns}})\le \beta(T)+h. \tag{5}
 \]

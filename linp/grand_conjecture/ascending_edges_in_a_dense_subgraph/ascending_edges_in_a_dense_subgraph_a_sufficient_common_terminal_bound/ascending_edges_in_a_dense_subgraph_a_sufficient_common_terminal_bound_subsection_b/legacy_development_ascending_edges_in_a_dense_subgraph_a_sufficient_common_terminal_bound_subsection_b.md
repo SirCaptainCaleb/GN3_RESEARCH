@@ -1,7 +1,5 @@
 # Proposition 6 — preserved pre-item development
 
-## Development
-
 Suppose \(g\) is nondecreasing and
 \[
 c(v)\le g(\phi(v))

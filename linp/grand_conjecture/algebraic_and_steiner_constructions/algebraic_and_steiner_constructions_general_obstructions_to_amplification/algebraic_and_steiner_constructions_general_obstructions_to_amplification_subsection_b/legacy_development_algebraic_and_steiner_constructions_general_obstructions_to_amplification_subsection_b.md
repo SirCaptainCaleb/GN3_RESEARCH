@@ -1,7 +1,5 @@
 # Proposition 9 — preserved pre-item development
 
-## Development
-
 A fixed number of full two-bit Boolean fibre extensions cannot increase the limiting normalized density
 \[
 \frac{|E(H)|}{|V(H)|(L(H)+1)},

@@ -1,7 +1,5 @@
 # Lemma 6 — preserved pre-item development
 
-## Development
-
 Let
 \[
 v_0v_1\cdots v_p

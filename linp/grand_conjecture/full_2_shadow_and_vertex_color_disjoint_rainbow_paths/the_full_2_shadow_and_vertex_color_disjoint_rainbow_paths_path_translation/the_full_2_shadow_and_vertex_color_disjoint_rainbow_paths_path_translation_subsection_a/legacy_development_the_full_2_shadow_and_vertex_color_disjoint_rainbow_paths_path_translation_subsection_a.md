@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let
 \[
 x_0x_1\cdots x_k

@@ -1,7 +1,5 @@
 # Theorem 5 — preserved pre-item development
 
-## Development
-
 If \(H_r\) is \(P_\ell^{(3)}\)-free for arbitrarily large \(r\), then
 \[
 \frac{|E(G)|}{u}\le \frac{\lceil\ell/2\rceil}{2}. \tag{6}

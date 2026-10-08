@@ -1,7 +1,5 @@
 # Open problem A — preserved pre-item development
 
-## Development
-
 Find a finite linear \(3\)-graph \(T\) with \(v\) vertices, \(m\) edges, and linear circumference \(s(T)\) satisfying
 \[
 s(T)<\frac{3m}{v}, \tag{8}

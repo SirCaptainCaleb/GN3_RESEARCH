@@ -1,7 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Development
-
 Suppose \(D\subseteq V(H)\) has the property that every edge of \(H-D\) belongs to the edge set of a linear path \(P\). Then \(H-D\) is a disjoint union of linear paths and isolated vertices. In particular,
 \[
 \Delta(H-D)\le2

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Assume now that
 \[
 |E(H)|=\left(\frac{43}{48}-o(1)\right)S,

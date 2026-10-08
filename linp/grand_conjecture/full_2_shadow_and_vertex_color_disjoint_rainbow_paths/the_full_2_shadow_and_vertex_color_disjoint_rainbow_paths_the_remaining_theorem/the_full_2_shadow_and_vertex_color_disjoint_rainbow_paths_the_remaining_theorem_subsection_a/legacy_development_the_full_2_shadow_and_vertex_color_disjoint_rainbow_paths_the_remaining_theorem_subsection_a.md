@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 The full-shadow approach is reduced to Target theorem (8).
 
 A proof must distinguish between two regimes.

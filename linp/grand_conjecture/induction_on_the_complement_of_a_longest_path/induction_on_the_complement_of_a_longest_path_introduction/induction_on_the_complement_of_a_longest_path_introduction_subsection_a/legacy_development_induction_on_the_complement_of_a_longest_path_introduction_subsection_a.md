@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Fix \(\ell\ge2\). This approach seeks to prove
 \[
 3|E(H)|\le \ell |V(H)| \tag{1}

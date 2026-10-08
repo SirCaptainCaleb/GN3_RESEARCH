@@ -1,7 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Development
-
 Let \(e\) have edge rank \(q\).
 
 1. If \(q>t\), then every vertex of \(e\) lies in \(V_t\).

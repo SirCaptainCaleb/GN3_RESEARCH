@@ -1,7 +1,5 @@
 # Proposition 10 — preserved pre-item development
 
-## Development
-
 Let \(S\) be an edge-transitive Steiner triple system on \(v=2\ell+1\) vertices. If \(S\) has a spanning \(\ell\)-edge path, then every set of blocks meeting every spanning \(\ell\)-edge path has size at least
 \[
 v/3. \tag{10}

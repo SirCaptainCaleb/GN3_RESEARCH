@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Fix \(t\ge1\). Form a graph \(R_t\) as follows. For every nonspecial edge
 \[
 e=\{x,u,v\}

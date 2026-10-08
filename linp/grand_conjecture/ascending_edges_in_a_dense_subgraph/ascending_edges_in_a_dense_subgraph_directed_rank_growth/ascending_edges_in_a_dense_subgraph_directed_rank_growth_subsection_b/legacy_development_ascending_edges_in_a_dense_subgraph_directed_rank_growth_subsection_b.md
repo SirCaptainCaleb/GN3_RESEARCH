@@ -1,7 +1,5 @@
 # Lemma 9 — preserved pre-item development
 
-## Development
-
 Along every directed arc \(x\to y\),
 \[
 \phi(y)\ge\phi(x)+1.

@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Let
 \[
 V=\mathbb F_2^d\setminus\{0\},

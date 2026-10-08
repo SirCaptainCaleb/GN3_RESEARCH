@@ -1,7 +1,5 @@
 # Theorem 8 — preserved pre-item development
 
-## Development
-
 If
 \[
 \frac{|E(H)|}{|V(H)|}>\frac{\ell}{3},

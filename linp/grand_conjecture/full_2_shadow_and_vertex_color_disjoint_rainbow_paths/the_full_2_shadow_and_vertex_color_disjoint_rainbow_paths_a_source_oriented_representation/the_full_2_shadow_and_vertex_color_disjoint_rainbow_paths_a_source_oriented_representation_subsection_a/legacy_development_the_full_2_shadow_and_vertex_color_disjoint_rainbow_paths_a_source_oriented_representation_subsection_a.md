@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 A second representation keeps one distinguished vertex of every hyperedge.
 
 For each hyperedge \(T=\{x,y,z\}\), choose one vertex \(\sigma(T)\) as its source. If \(\sigma(T)=x\), draw the directed arcs

@@ -1,7 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Development
-
 Prove that every properly edge-colored graph satisfying the triangle rule (4) and
 \[
 e(G)>\ell n

@@ -1,7 +1,5 @@
 # Corollary 6 — preserved pre-item development
 
-## Development
-
 If \(H\) is \(P_\ell^{(3)}\)-free and \(\ell\ge8\), then
 \[
 |E(H)|

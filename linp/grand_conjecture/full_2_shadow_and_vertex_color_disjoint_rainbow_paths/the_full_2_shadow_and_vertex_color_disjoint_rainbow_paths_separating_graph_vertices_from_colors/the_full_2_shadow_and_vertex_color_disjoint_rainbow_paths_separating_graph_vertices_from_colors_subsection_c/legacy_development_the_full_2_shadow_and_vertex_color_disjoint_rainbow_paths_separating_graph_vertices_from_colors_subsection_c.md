@@ -1,7 +1,5 @@
 # Proposition 4 — preserved pre-item development
 
-## Development
-
 Suppose there is a constant \(\alpha>0\) and an absolute constant \(C\) such that every properly edge-colored graph of average degree \(d\) contains a rainbow path with at least
 \[
 \alpha d-C

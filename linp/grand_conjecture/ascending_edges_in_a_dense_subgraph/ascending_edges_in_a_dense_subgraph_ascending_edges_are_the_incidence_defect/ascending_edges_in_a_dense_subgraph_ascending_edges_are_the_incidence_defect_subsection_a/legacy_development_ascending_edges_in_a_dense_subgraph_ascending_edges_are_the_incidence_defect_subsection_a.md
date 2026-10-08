@@ -1,7 +1,5 @@
 # Lemma 1 — preserved pre-item development
 
-## Development
-
 For every incident pair \(v\in e\),
 \[
 \phi(e)\le \phi(v)+1.

@@ -1,7 +1,5 @@
 # Theorem 3 — preserved pre-item development
 
-## Development
-
 The projective system on \(\mathbb F_2^4\setminus\{0\}\) contains no \(7\)-edge linear path. Consequently
 \[
 \operatorname{ex}_L(n,P_7^{(3)})

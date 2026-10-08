@@ -1,7 +1,5 @@
 # Lemma 8 — preserved pre-item development
 
-## Development
-
 Let \(U(v)\) be the class \(U\) edges assigned to \(v\). There is a set \(W(v)\) of vertices with
 \[
 \phi(w)\ge\phi(v)\qquad (w\in W(v))

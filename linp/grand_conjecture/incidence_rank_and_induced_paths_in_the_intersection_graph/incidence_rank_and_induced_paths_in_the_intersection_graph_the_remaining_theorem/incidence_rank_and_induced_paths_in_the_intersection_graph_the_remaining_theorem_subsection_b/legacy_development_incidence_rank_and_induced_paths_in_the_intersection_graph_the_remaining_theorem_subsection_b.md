@@ -1,7 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Development
-
 Let \(F\) be induced-\(P_\ell\)-free and equipped with an indexed clique family such that every vertex of \(F\) belongs to exactly three cliques and every edge of \(F\) belongs to exactly one. Let \(N\) be the corresponding incidence matrix. Prove
 \[
 \operatorname{rank}N\ge \frac{3m}{\ell}. \tag{12}

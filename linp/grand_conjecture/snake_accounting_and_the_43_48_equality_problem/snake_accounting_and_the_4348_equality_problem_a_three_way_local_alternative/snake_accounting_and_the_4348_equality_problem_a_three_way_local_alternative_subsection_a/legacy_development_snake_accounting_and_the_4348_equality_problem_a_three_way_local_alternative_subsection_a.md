@@ -1,7 +1,5 @@
 #  — preserved pre-item development
 
-## Development
-
 Fix \(v\), put \(p=\phi(v)\), and let \(F\subseteq H_v\) contain \(k\) edges that meet the chosen maximum \(p\)-edge path \(P\) in exactly one off-\(v\) vertex.
 
 Separate \(F\) into \(U\) and \(X\), where an edge belongs to \(U\) if that intersection is its opposite terminal and belongs to \(X\) if that intersection is its unique entrance.

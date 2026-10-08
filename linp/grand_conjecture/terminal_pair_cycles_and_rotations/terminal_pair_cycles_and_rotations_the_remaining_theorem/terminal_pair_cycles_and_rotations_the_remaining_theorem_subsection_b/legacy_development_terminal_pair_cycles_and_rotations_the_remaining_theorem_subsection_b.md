@@ -1,7 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Development
-
 Let \(F\) be a maximum-total-rank spanning forest of the terminal-pair graph. For each of the \(\beta(T)\) nonforest edges, take the two second intersections supplied by Lemma 5. Prove that these data imply
 \[
 \beta(T)+h\le Cs+Dn \tag{7}

@@ -1,7 +1,5 @@
 # Theorem 3 — preserved pre-item development
 
-## Development
-
 Suppose \(T\) contains a linear cycle with \(s\) edges. Then every blow-up \(T(q)\) described above contains a linear path with
 \[
 sq-o(q) \tag{3}

@@ -1,7 +1,5 @@
 # Corollary 4 — preserved pre-item development
 
-## Development
-
 Let \(s(T)\) be the maximum number of edges in a linear cycle of \(T\). Then every arbitrary Latin blow-up of \(T\) has normalized density at most
 \[
 \frac{m}{v\,s(T)}+o(1). \tag{4}

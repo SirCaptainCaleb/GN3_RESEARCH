@@ -1,7 +1,5 @@
 # Proposition 1 — preserved pre-item development
 
-## Development
-
 For every \(\ell\ge2\),
 \[
 \operatorname{ex}_L(n,P_\ell^{(3)})
