@@ -1,4 +1,4 @@
-name: Sync GN3N research mirror
+name: GN3N | Rebuild current artifact (sync Supabase first)
 # audit model refresh
 
 on:
@@ -9,13 +9,22 @@ on:
       - ".github/workflows/sync-gn3n-research-mirror.yml"
       - ".github/workflows/sync-research-schema.yml"
       - "scripts/sync_research_mirror.py"
+      - ".github/workflows/build-research-schema-artifact.yml"
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   sync:
     uses: ./.github/workflows/sync-research-schema.yml
+    with:
+      schema: gn3n
+    secrets: inherit
+
+  build:
+    needs: sync
+    uses: ./.github/workflows/build-research-schema-artifact.yml
     with:
       schema: gn3n
     secrets: inherit
