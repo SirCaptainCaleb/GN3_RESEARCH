@@ -32,8 +32,8 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T13:21:06.488498+00:00",
-  "item_count": 16,
+  "generated_at": "2026-10-08T14:10:11.579298+00:00",
+  "item_count": 23,
   "mirror_format": 18,
   "result_count": 0,
   "schema": "nori",
@@ -45,21 +45,27 @@
         "composition_version": 3,
         "frontier": {
           "current": false,
-          "latest_subsection_no_now": 7,
+          "latest_subsection_no_now": 9,
           "latest_subsection_no_when_composed": 6,
           "subsections_existing_when_composed": 6,
-          "subsections_now": 7
+          "subsections_now": 9
         },
         "has_composition": true,
         "source_note": "",
-        "stale": false,
-        "stale_dependencies": []
+        "stale": true,
+        "stale_dependencies": [
+          {
+            "composition_saw_version": 1,
+            "current_composition_version": 2,
+            "source_id": "dimension_five_closure_and_cyclic_windows"
+          }
+        ]
       },
       "math_version": 1,
       "version": 1
     }
   },
-  "snapshot_revision": 53,
+  "snapshot_revision": 67,
   "startup_broadcasts": [
     {
       "body": "NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.",
@@ -93,9 +99,9 @@
     },
     "dimension_five_closure_and_cyclic_windows": {
       "composition": {
-        "body_chars": 1403,
-        "composed_through_revision": 3547,
-        "composition_version": 1,
+        "body_chars": 4030,
+        "composed_through_revision": 3602,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
@@ -183,6 +189,44 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "seven_coordinate_shared_pivot_endpoint_constraints": {
+      "composition": {
+        "body_chars": 2635,
+        "composed_through_revision": 3598,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "seven_coordinate_wing_factorization_and_exact_obstruction": {
+      "composition": {
+        "body_chars": 3172,
+        "composed_through_revision": 3599,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
     "six_move_endpoint_control_and_exterior_sensitivity_rigidity": {
       "composition": {
         "body_chars": 2641,
@@ -203,7 +247,7 @@
       "version": 1
     }
   },
-  "toolkit_count": 37,
+  "toolkit_count": 38,
   "universal_document_versions": {
     "guide": 40,
     "reflexes": 21
