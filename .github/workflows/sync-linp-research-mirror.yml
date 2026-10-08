@@ -1,4 +1,4 @@
-name: LINP | Rebuild current artifact (sync Supabase first)
+name: LINP | Refresh research artifact
 
 on:
   workflow_dispatch:
