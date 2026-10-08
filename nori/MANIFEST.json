@@ -1,0 +1,80 @@
+{
+  "article_sequences": {
+    "nori_article_i_conjecture": [
+      {
+        "id": "nori_foundations",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
+    ]
+  },
+  "article_versions": {
+    "nori_article_i_conjecture": {
+      "composition": {
+        "body_chars": 911,
+        "composed_through_revision": 3545,
+        "composition_version": 4,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 1,
+          "latest_section_position_when_composed": 1,
+          "sections_existing_when_composed": 1,
+          "sections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 1
+    }
+  },
+  "brainstorm_count": 0,
+  "composition_model": "recursive-composition-v7",
+  "generated_at": "2026-10-08T07:57:00.980751+00:00",
+  "item_count": 0,
+  "mirror_format": 18,
+  "result_count": 0,
+  "schema": "nori",
+  "section_versions": {
+    "nori_foundations": {
+      "composition": {
+        "body_chars": 946,
+        "composed_through_revision": 3540,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": null,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
+          "subsections_now": 0
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    }
+  },
+  "snapshot_revision": 13,
+  "startup_broadcasts": [
+    {
+      "body": "NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.",
+      "broadcast_id": "nori_ordered_three_face_primary_20261008",
+      "created_at": "2026-10-08T07:41:46.781742+00:00",
+      "creation_revision": 3542,
+      "priority": 1100,
+      "scope": "nori",
+      "title": "NORI active ordered-three-face conjecture"
+    }
+  ],
+  "subsection_versions": {},
+  "toolkit_count": 37,
+  "universal_document_versions": {
+    "guide": 38,
+    "reflexes": 21
+  }
+}
