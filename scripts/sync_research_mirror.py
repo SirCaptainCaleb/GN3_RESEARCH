@@ -12,7 +12,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "nor", "linp")
-TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources")
+TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources","items","item_results")
 PAGE = 500
 
 def headers():
@@ -597,7 +597,7 @@ def build(schema: str):
 
 Review startup_notices returned by boot().
 
-Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read ARTICLES/README.md.
+Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read grand_conjecture/README.md.
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
@@ -607,6 +607,24 @@ Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
 """
     write(root / "BOOT.md", boot)
+
+    # The research manuscript is exported as the database's canonical folder tree.
+    # Auxiliary material (guide, toolkit, brainstorms, etc.) remains at the schema root.
+    for old in ("ARTICLES", "SECTIONS", "SUBSECTIONS"):
+        shutil.rmtree(root / old, ignore_errors=True)
+    tree = tree_paths(schema)
+    for node in tree:
+        relative = Path(node["path"])
+        if relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "grand_conjecture":
+            raise ValueError(f"invalid canonical tree path: {relative}")
+        write(root / relative, node.get("content") or "")
+    index = ["# Grand conjecture", "",
+             "Research hierarchy: Articles → Sections → Subsections → Items → Results.",
+             "Each level's composition is adjacent to its corresponding directory.", ""]
+    for a in articles:
+        index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
+    write(root / "grand_conjecture" / "README.md", "\n".join(index))
+
 
     write_json(root / "MANIFEST.json", {
         "schema": schema,
@@ -655,9 +673,23 @@ Generated: {rev.get('generated_at')}
         "toolkit_count": len(toolkit_items),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
-        "mirror_format": 17,
+        "mirror_format": 18,
         "composition_model": "recursive-composition-v6",
     })
+
+def tree_paths(schema: str) -> list[dict[str, Any]]:
+    """Read the canonical database tree, in paginated filesystem form."""
+    out, offset = [], 0
+    while True:
+        page = rpc("research_mirror_tree_paths", {
+            "p_schema": schema, "p_offset": offset, "p_limit": PAGE
+        })
+        got = page["rows"]
+        out.extend(got)
+        if page["complete"]:
+            return out
+        offset += len(got)
+
 
 def main():
     selected = os.environ.get("RESEARCH_SCHEMA", "").strip()
