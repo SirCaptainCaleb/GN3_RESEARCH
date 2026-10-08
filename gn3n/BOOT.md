@@ -9,4 +9,4 @@ Call changes(...) once using this artifact's snapshot revision as the freshness 
 Then begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: 3415
-Generated: 2026-10-08T07:55:22.649249+00:00
+Generated: 2026-10-08T07:55:36.204753+00:00
