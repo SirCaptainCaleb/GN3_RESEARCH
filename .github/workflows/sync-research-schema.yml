@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: research-mirror-sync-all-schemas
+  group: research-mirror-sync-${{ inputs.schema }}
   cancel-in-progress: false
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
           git config user.name "research-mirror[bot]"
           git config user.email "research-mirror[bot]@users.noreply.github.com"
 
-          for attempt in 1 2 3; do
+          for attempt in $(seq 1 12); do
             git fetch origin main
             git reset --hard origin/main
 
@@ -65,8 +65,9 @@ jobs:
               exit 0
             fi
 
-            echo "main advanced during sync; regenerating from latest main (attempt $attempt/3)."
+            echo "main advanced during sync; regenerating from latest main (attempt $attempt/12)."
+            sleep "$((attempt * 2))"
           done
 
-          echo "Failed to publish $RESEARCH_SCHEMA mirror after 3 regeneration attempts." >&2
+          echo "Failed to publish $RESEARCH_SCHEMA mirror after 12 regeneration attempts." >&2
           exit 1
