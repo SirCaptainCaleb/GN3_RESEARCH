@@ -1,3 +1,1 @@
 # A protected root canonically determines its adjacent Johnson cut
-
-For a protected root rho=e_a-e_c crossing a physical first-phase cut C, the adjacent Johnson cut is forced: C'=(C\{a}) union {c}, and 1_C-1_C'=rho. Thus root extraction contains no choice of cut exchange. The remaining issue is realizability of this specific Johnson edge as a legal protected threshold/deletion transition; failure must instead be converted into band improvement or carrier reduction. Opposite-root opposite-side pairs should therefore be interpreted as failed realizations of the same short cut exchange in opposite directions.

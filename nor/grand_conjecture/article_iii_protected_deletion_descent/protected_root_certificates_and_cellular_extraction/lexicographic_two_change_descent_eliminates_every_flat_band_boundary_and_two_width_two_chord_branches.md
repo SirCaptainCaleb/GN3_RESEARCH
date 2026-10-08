@@ -1,3 +1,1 @@
 # Lexicographic two-change descent eliminates every flat band boundary and two width-two chord branches
-
-For global words 0^A1^B0^C in the flat alternating sector, a flat first boundary strictly increases A; a flat last boundary preserves A and strictly increases B. Each move retains the two-change class or closes NOR. Lexicographic descent therefore terminates at a full/full band of width at least two. At width two, further boundary-safe surgeries exclude bce=0 and the branch bce=1,abe=0. The surviving chord bits are bce=abe=1, with subsequent endpoint branches addressed by the terminal theorem.

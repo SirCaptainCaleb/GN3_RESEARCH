@@ -1,3 +1,1 @@
 # Side-lifted protected roots remove same-side A3 reversal cancellation
-
-Record with each threshold-band barrier root rho a side sign s indicating the left or right boundary of the protected band. The lifted vector (rho,s) is still odd under complement-reversal. Two opposite A3 roots arising on the same side cannot sum with positive weights to zero in the lifted space, while any zero-sum lifted family must balance total weight from the two sides. This removes the spurious same-side reversal pairing without adding unprotected states and makes any remaining dependence couple the two protected boundaries.

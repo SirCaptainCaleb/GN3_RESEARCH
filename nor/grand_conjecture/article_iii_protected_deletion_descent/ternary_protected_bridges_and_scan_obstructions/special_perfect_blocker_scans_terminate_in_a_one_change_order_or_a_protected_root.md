@@ -1,3 +1,1 @@
 # Special perfect-blocker scans terminate in a one-change order or a protected root
-
-Under the special perfect-blocker hypotheses, the last-holonomy-drop analysis now terminates completely. Endpoint positions j=1,2 close with spanning one-change orders and j=3 gives a one-change deletion carrier. For j>=4, middle-coordinate deletion either closes immediately or leaves one earlier defect; forced repairs then either hit a fully-curved protected root or create a contiguous 1-band whose right boundary advances monotonically by the threshold-band potential. Hence the special branch always produces a one-change full/deletion order or a protected physical root; no local recurrence remains.

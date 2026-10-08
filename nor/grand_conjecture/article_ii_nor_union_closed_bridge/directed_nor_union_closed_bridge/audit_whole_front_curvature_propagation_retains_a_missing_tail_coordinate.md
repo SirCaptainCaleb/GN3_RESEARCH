@@ -1,3 +1,1 @@
 # Audit whole-front curvature propagation retains a missing tail coordinate
-
-Audit: the claimed propagation of a pure size-three front circuit along an entire monochromatic tail dropped the original tail coordinate f1. The edge-flip witness was only an order of V minus {f1}, so counterexamplehood does not forbid it. Only the original front circuit and one-step singleton propagation are proved. If an edge flip occurs, the valid deletion witness has word tau^3 sigma^(m-3); appending the omitted f1 closes unless a specific rear wrap color is forced. All full-tube conclusions depending on pair-cycle persistence are conditional.

@@ -1,3 +1,1 @@
 # Arbitrary complementary Tucker cells still contain a controlled local repair event
-
-Along any product-cell path from +b to -b, the first disappearance or switch-side change of the selected b-centered violation is a controlled event. Vertical cut changes strictly remove the defect; same-side bubbles give strict improvement or outward transport; switch-crossing swaps give a legal phase-compatible repair; neighbor replacement gives strict improvement or one-slot transport; endpoint loss is nonincreasing with equality transport. Thus arbitrary complementary Tucker cells still expose a legal local repair event, though termination of all equality-transport classes remains to be proved.

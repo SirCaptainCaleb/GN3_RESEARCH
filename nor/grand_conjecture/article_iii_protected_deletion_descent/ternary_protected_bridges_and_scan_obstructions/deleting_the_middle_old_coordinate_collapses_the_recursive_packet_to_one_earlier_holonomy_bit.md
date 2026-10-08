@@ -1,3 +1,1 @@
 # Deleting the middle old coordinate collapses the recursive packet to one earlier holonomy bit
-
-Deleting the middle old coordinate from the recursive double-full singleton removes the local 010 packet while preserving the ordered right boundary pair and hence the already-clean suffix. The only new left crossing is the earlier holonomy bit h_{j-4}. If that bit is 0 the deletion carrier is globally one-change; if it is 1 the sole remaining defect lies strictly farther left. Thus the recursive obstruction admits an explicit protected deletion that strictly ejects all failure from the old packet.

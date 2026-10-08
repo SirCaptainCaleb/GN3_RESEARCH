@@ -1,3 +1,1 @@
 # Separation is valid on the minimum-first layer but does not yet control terminal band roots
-
-On the fixed minimum-first p-layer, Gordan separation is rigorous: either the canonical roots positively depend or a functional w yields a cut potential Phi strictly decreasing along every forced canonical Johnson successor. A Phi-minimal realized cut therefore has a missing successor. This does not directly control terminal threshold-band roots, which may lie far from the p-cut. The missing interface is canonical-to-terminal provenance, repaired for terminal states by their own graded central cuts rather than by pretending they stay in the original layer.

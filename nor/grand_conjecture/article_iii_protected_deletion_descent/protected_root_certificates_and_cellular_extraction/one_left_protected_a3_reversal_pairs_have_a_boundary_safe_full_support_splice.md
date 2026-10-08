@@ -1,3 +1,1 @@
 # One-left protected A3 reversal pairs have a boundary-safe full-support splice
-
-In the alternating ternary sector, genuinely witnessed literal A3 reversal chambers whose cut meets the block in one coordinate admit two full-support orders with words 0^p1U1^{q-1} and 0^p1V1^{q-1}. Their boundary bits satisfy U xor V = 1 xor kappa(abde) xor kappa(acde). Equal curvatures therefore give an actual spanning one-change splice; this includes the flat case. Every outside attachment is inherited from one of the two deletion witnesses. An unresolved instance forces the two boundary curvatures to differ. Raw opposite roots without both witnesses are insufficient.

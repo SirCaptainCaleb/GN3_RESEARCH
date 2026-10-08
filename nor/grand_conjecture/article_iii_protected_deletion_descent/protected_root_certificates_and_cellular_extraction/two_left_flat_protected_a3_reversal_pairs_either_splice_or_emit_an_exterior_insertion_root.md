@@ -1,3 +1,1 @@
 # Two-left flat protected A3 reversal pairs either splice or emit an exterior insertion root
-
-For alternating ternary labels, a genuinely witnessed two-left A3 reversal pair with kappa(abce)=kappa(bcde)=0 yields either a full-support one-change order, a deletion witness whose first phase is p-2, or a full insertion order with word 0^{p-1}1101^{q-1}. At minimum p in a full counterexample, only the last alternative remains. Its actual 10 root is e_d-e_f or e_a-e_f, outside the old four-block, and it retains the original deletion witness literally. This increases a root span confined to that block. The new insertion is noncanonical, so common-cut canonical-root conclusions and global termination cannot be assumed.

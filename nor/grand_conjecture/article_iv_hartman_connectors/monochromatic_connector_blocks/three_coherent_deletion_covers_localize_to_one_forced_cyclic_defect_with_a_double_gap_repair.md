@@ -1,3 +1,1 @@
 # Three coherent deletion covers localize to one forced cyclic defect, with a double-gap repair
-
-Three pairwise coherent deletion covers of a shore into at most two fully ported zero paths reconstruct a two-class relative order except for one comparison-directed three-cycle on the three deleted labels. The exceptional packet is consecutive and necessarily has color 1; every other window is zero and all exterior endpoint ports remain forward. If the reconstructed shore uses one class, two ported splits and the explicit double-gap special-vertex repair L,u,z,v,x,w,R close every internal cyclic collar except the uniform backward case p←{a,b,c}←q. Endpoint cyclic packets close by a ported split. A second reconstructed class remains a separate routing obligation.

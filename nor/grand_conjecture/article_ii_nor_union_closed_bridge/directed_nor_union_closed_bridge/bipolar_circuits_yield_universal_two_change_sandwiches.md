@@ -1,3 +1,1 @@
 # Bipolar circuits yield universal two-change sandwiches
-
-If the whole omitted set X is a punctured-Boolean circuit at both ends of one maximal sigma-tight path P, with opposite colors at the two poles, then every proper bipartition X=A dot B gives a spanning tau-sigma-tau sandwich: use a tau-tight witness for A at the front pole, P as the sigma core, and the reverse of a sigma-tight witness for B at the rear pole. Consequently each x in X yields spanning sandwiches with a singleton first or final tau-run, and V\{x} has one-change deletion orders in both switch directions tau->sigma and sigma->tau.

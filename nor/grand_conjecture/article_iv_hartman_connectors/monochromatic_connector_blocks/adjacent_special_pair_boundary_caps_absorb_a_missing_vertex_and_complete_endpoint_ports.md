@@ -1,3 +1,1 @@
 # Adjacent special-pair boundary caps absorb a missing vertex and complete endpoint ports
-
-In the fixed split, an empty or singleton shore cap next to adjacent x,z absorbs any omitted shore vertex while making both endpoint ports forward, provided the opposite port is already forward. Empty caps also absorb two omitted vertices as a forward ordered pair; singleton caps absorb two when their three shore vertices are transitive. One- or two-deletion witnesses of these types become whole-shore compatible connectors and close the ambient instance by homogeneous-cut composition. These legal boundary absorptions exclude explicit Hartman boundary classes and resolve their rank-two unions without general component union closure.

@@ -1,3 +1,1 @@
 # Minimal side-lifted zeros use one balanced cycle or two oppositely imbalanced cycles
-
-Any positive side-lifted protected-root zero projects to a positive physical circulation and hence decomposes into directed simple physical cycles. Each constituent cycle already sums to zero in physical-root space and contributes only its scalar side imbalance. Support minimality forces exactly one of two forms: a single side-balanced cycle, or the union of two side-unbalanced cycles with opposite imbalances. In ternary A3, a primitive balanced constituent is therefore a 2- or 4-cycle; a triangle can occur only coupled to another oppositely imbalanced cycle.

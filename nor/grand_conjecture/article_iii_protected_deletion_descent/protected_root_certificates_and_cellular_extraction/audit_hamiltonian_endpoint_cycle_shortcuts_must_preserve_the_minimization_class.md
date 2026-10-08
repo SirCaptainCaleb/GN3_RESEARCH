@@ -1,3 +1,1 @@
 # Audit: Hamiltonian endpoint-cycle shortcuts must preserve the minimization class
-
-The recent Hamiltonian endpoint-cycle exclusion is unproved: a stopped-pivot root may lie on a bad deletion word 0,1,0^(p-2),1^q, and a shorter mixed circuit does not contradict endpoint-family minimality. Minimizing only Hamiltonian cycles also cannot exclude proper-support shortcuts. Unrestricted reversal-closed raw transition families already contain trivial two-circuits. Endpoint descent must preserve an explicit admissible witness class; §128 achieves this in the second-splice-zero branch and resolves phase-three pinned stops. Corner lifting and the long-phase double-one stop remain open.

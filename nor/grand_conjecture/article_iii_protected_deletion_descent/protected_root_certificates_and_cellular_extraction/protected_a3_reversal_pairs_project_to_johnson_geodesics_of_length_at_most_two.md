@@ -1,3 +1,1 @@
 # Protected A3 reversal pairs project to Johnson geodesics of length at most two
-
-If both orientations of a ternary A3 endpoint root genuinely carry minimum-p protected provenance, canonical switch geometry forces the four-block to start at p or p-1. Under block reversal the corresponding protected cuts are therefore Johnson distance one or two. Explicit reduced chamber paths realize the reversal with exactly that many cut-changing walls and all remaining walls inside fixed-cut fibers. Thus, after collapsing cooriented fibers, a genuine protected A3 two-cycle reduces to at most two actual cut exchanges.

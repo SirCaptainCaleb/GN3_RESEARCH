@@ -1,3 +1,1 @@
 # Every isolated singleton has two curvature-free one-sided local resolutions
-
-Every five-coordinate isolated singleton u,(1-u),u has two explicit curvature-free one-sided resolutions. Swapping the first pair gives (1-u),z,u and preserves the ordered right boundary pair; swapping the last pair gives u,z',(1-u) and preserves the ordered left boundary pair. Each resulting binary triple has at most one change for arbitrary z,z'. Thus the first five-position carrier failure has no intrinsic interior obstruction; in the flat transport branch its exported side can be threshold-combed to NOR closure or a protected fully-curved barrier.

@@ -1,3 +1,1 @@
 # Union-closed tournament neighborhoods force transitivity
-
-A finite tournament's out-neighborhood family is union-closed if and only if the tournament is transitive, equivalently its neighborhoods are nested. For a->b, closure forces their union to be N+(a): a third representative c would beat a, putting a in a union that excludes a. Thus the proposed local union-closed intermediary coincides with local transitivity. Independent transitive center orders remain broader than global scalar edge orders: three distinguished edges can impose a cyclic comparison, and the construction extends to arbitrary ground sets.

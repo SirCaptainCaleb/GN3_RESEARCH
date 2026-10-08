@@ -1,3 +1,1 @@
 # The outer shore edge exactly separates movable and rigid equal-one special-cell barriers
-
-In a blocked zero packet p,a,x,b,c with equal-one central barrier bits, the single edge p→c decides local passage. If forward, a,x,p,b,c and p,a,c,x,b are zero permutations preserving respectively the right and left ordered collar. If backward, the original packet is the unique zero permutation retaining either of those collars; its shore vertices form a directed four-cycle with two fixed chords. Equal-zero barriers retain the existing collar-deletion law. The rigid equal-one branch needs more support, both-side collar changes, or the second special vertex; every one-sided passage still requires the other exterior collar audit.

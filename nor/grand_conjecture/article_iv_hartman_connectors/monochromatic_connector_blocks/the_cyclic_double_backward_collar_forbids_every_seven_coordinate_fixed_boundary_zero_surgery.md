@@ -1,3 +1,1 @@
 # The cyclic double-backward collar forbids every seven-coordinate fixed-boundary zero surgery
-
-In the cyclic packet with a→b→c→a, q→{a,b,c}→p, z dominating all shore vertices and all shore vertices dominating x, there is no monochromatic-zero permutation of p,{a,b,c,x,z},q retaining p first and q last, irrespective of p↔q. An exhaustive symbolic split by the relative positions of x,z proves this using only the parity of ordered triangle edges: for a directed 3-cycle, the two consecutive edges of any triple order have the same direction. This strengthens the fixed-collar barrier: the cyclic double-backward sandwich requires exterior boundary changes or additional support, rather than another seven-coordinate reordering.

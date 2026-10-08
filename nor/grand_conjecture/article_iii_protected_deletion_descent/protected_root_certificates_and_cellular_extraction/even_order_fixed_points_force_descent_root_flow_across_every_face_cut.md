@@ -1,3 +1,1 @@
 # Even-order fixed points force descent-root flow across every face cut
-
-For even n, tangential projection of the continuous actual physical-root face carrier has a zero by hairy ball. Either the carrier itself vanishes, yielding a positive dependence of actual roots, or G=-mu u with mu>0. The sign follows from negative initial-block rank sums and nonnegative crossing root flow, rather than a rootwise radial-sign assumption. Each proper face cut with k coordinates receives positive flow mu k(n-k)/(2||p(u)||). This is a genuine fixed-point alternative, but protected-witness compatibility and spanning surgery remain open.

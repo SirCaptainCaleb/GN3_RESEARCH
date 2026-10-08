@@ -1,3 +1,1 @@
 # Blocked cycle absorption forces disjoint nonempty ascent sets
-
-Under local transitivity, let a color-0 cycle C and exterior set E, |E|>=3, admit no monochromatic path on C plus any two exterior vertices. In uniform case (I), the sets A_x={c:h(c,x,s(c))=0} are nonempty and pairwise disjoint: an ascent forces x to be least in E at center c, otherwise (y,c,x,s(c),...,p(c)) absorbs x,y. In case (II), B_x={c:h(p(c),x,c)=0} similarly forces x greatest, using (s(c),...,p(c),x,c,y). A strict total order cannot descend around an entire cycle, so each ascent set is nonempty. Therefore |E|<=|C|. Equality forces singleton ascent sets and reverse cyclic orders at exterior centers. This is a necessary obstruction constraint, not a spanning closure theorem or a Frankl implication.

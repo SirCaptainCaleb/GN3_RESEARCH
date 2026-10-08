@@ -1,3 +1,1 @@
 # Canonical endpoint swap reaches the double-full gadget
-
-For every canonical flat-sector endpoint carrier with p,q>=3, swapping the omitted blocker x past the final deletion coordinate creates a 101 singleton packet whose two transition tetrahedra are fully curved. The proof uses the exact perfect-blocker scan to control the previously missing outer windows and does not require any hypothesis on the old 2-to-1 corner. Hence the two proved one-sided monotone resolutions of a double-full singleton apply unconditionally to the canonical endpoint carrier. One resolution returns toward the original endpoint state; the other exports all remaining reconnection risk to one chosen side, where threshold-band/transport machinery resumes.

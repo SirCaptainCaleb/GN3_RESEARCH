@@ -1,3 +1,1 @@
 # Maximal tight paths force a union-closure defect at the exposed front
-
-Every directed NOR counterexample exposes a canonical union-closure defect at the front of each inclusion-maximal monochromatic tight path. If P is sigma-tight, F its exposed first (r-1)-tuple, and X the omitted vertices, maximality forces every singleton {x}, x in X, to lie in the opposite-color family F_{1-sigma,F}; yet X itself cannot lie there, because a witness for X spliced onto P would give a spanning one-change order. Hence the restricted front family is accessible, contains all singleton omitted vertices, and omits their total union. Full union closure is therefore sufficient for NOR, and the remaining bridge problem is exactly to resolve this missing union while preserving witness order.

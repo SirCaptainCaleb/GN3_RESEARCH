@@ -1,3 +1,1 @@
 # The even-order fixed-point flow theorem is proved by face prefix sums
-
-The even-n hairy-ball fixed-point flow dichotomy remains valid after a proof repair. A permutahedron face point need not be constant inside its blocks, so the original rootwise radial-sign claim is unavailable. Instead, each proper initial block union of k coordinates has centered rank sum -k(n-k)/2. Nonnegative actual-root flow over this cut implies that a nonzero tangent fixed point G=lambda u has lambda<0. Its cut flow is mu k(n-k)/(2||p(u)||)>0, proving the claimed crossing of every face cut without the false radial premise.

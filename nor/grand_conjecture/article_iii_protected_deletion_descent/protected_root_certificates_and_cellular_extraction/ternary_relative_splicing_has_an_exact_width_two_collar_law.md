@@ -1,3 +1,1 @@
 # Ternary relative splicing has an exact width-two collar law
-
-For a contiguous ternary block replacement P M Q -> P M' Q, only two windows per side can cross the block boundary. Matching the first two and last two block coordinates preserves every exterior/crossing window. Matching the first coordinate and ordered last pair preserves every such window except one left crossing bit; the reversed statement holds on the other side. Hence Article III relative splicing reduces to endpoint/collar attainment: a four-coordinate collar gives an immediate legal splice, while a three-coordinate collar feeds exactly one exported bit into the existing double-full/transport machinery. Section §226 is an instance of this general collar normal form.

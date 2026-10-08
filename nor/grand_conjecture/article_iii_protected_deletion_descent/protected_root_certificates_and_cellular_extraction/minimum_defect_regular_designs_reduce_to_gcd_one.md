@@ -1,3 +1,1 @@
 # Minimum-defect regular designs reduce to gcd one
-
-At extremal total cut defect Delta=n, write each reduced cut B_i as the p-1 coordinates whose membership intervals cover state i. Constant row size forces the interval-start multiplicities s_i to satisfy s_i=s_{i-(p-1)}, and Delta_i=s_i. If every step has positive defect, then sum s_i=n forces s_i=1 for all i. The secondary defect exchange is then conjugate to the cyclic shift by p-1 and decomposes into gcd(n,p-1) directed cycles. Hence a support-irreducible equality case must have gcd(n,p-1)=1 and a second Hamiltonian defect cycle; otherwise there is a zero-defect step or a proper smaller defect circulation.

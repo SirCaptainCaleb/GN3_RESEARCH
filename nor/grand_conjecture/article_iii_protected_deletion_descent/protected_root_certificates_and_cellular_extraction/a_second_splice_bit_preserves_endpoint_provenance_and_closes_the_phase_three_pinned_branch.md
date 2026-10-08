@@ -1,3 +1,1 @@
 # A second splice bit preserves endpoint provenance and closes the phase-three pinned branch
-
-In the flat alternating endpoint regime, a stopped first pivot has an explicit full order with word 0,1,1,0^(p-2),1^q, closing p=2. For p>=3, deleting the old third coordinate gives word 0,0,mu,0^(p-3),1^q, where mu=alpha(a,d,e). If mu=0 this is a genuine good deletion witness with endpoint root c->a and cut {c,x}; at a pinned junction a->x->c it yields an actual endpoint three-cycle. If p=3 and mu=1 it strictly decreases the first phase. The surviving local branch p>=4, lambda=mu=1 remains unresolved. Corner lifting and unrestricted r=3 closure are not proved.

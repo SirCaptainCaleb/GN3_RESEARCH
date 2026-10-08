@@ -1,3 +1,1 @@
 # Every front circuit already carries a canonical four-change cycle
-
-For ternary NOR, every minimal front circuit U of a maximal sigma-tight path P already determines a cyclic four-change carrier on V(P) union U. A facet witness for U minus one vertex gives linear word sigma, tau^(|U|-1), sigma^(|P|-2). Maximality of the reversed path forces the first wrap status to be tau; the second wrap status may be either color, but in both cases the cyclic run profile is, up to rotation and reversal, 1, |P|-2, |U|-1, 2. Thus whole-frontness is needed only for spanningness, not for the four-change geometry. The remaining task is exterior absorption into this carrier without raising cyclic variation, or extracting a stronger obstruction from failed absorption.

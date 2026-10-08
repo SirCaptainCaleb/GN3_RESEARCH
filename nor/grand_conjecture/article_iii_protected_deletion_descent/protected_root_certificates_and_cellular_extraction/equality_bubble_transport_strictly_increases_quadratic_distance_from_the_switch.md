@@ -1,3 +1,1 @@
 # Equality bubble transport strictly increases quadratic distance from the switch
-
-For a fixed switch cut define Q as the sum of squared distances of all threshold defects from the cut. In an equality same-side bubble, two consecutive defects move to the two outer ranks. Q increases by 4 if all remain on one side and by 3 in the boundary-adjacent case. Therefore (E,-Q) strictly decreases throughout the pure same-side bubble dynamics. This does not by itself globalize cellular Tucker because arbitrary complementary-cell paths include other transport classes and Tucker does not force an E-minimal cell.

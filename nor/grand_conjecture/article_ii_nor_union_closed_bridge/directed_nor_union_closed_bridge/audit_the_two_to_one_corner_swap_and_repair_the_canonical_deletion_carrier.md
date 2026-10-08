@@ -1,3 +1,1 @@
 # Audit the two-to-one corner swap and repair the canonical deletion carrier
-
-The proposed 2|1 corner collapse in §164 omits the changed outer window alpha(x,u,a)->alpha(x,u,b); a specified globally flat tournament leaves four changes after the swap. The r=1 wrap word in §166 also has four changes, not two. Nevertheless reversing the deletion witness repairs the canonical profile to 1,p,q,2. In a minimum flat alternating counterexample p,q>=3 by §171, and the 1|p and q|2 barriers are fully curved. The remaining 2|1 corner is not proved flat, so §169's packet surgery remains conditional. Canonical profile existence and global convex-run maximality have not been proved simultaneous.

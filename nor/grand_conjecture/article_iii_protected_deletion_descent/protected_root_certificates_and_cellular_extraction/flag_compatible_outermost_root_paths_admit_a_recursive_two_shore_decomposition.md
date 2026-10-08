@@ -1,3 +1,1 @@
 # Flag-compatible outermost-root paths admit a recursive two-shore decomposition
-
-A return path of outermost roots drawn from one nested face flag admits a recursive two-shore decomposition. In any contiguous subpath, the root from the coarsest occurring face is strictly forward across any block boundary it crosses, while every other edge is weakly forward there; hence that pivot is the unique crossing and splits the subpath into opposite shores. Recursing gives a binary tree with strictly decreasing face rank down branches. The flag-cycle realization problem therefore reduces recursively to one relative merge at a time.

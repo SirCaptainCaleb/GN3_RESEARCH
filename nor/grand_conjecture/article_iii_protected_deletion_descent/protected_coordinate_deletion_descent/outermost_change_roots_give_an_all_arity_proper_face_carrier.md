@@ -1,3 +1,1 @@
 # Outermost-change roots give an all-arity proper-face carrier
-
-For reversal-odd coordinate labels of every arity r≥2, D_r(π)=e_{v_p}−e_{v_{q+r}}, with p<q the first and last change, vanishes exactly on NOR-good orders and is reversal-odd. Its nonzero root spans at least r+2 consecutive coordinates. Concatenating good orders on proper ordered-partition blocks forces this root across a block boundary. A block-rank functional is strict on that face's label and weak on refining labels, giving a zero-free barycentric proper-face carrier in every arity. This extends the ternary boundary construction while retaining the separate extraction obligation.

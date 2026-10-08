@@ -1,3 +1,1 @@
 # Protected A3 two-cycles are not closed flat-sector obstructions
-
-In the coboundary-flat alternating ternary sector, a genuine protected A3 opposite-root pair is not a closed four-coordinate obstruction. The one-left case admits a boundary-safe full-support splice. In the two-left case, the paired witnesses either close, improve the deletion first phase by two, or emit an actual protected insertion root with an endpoint outside the A3 block. Hence a support-minimal obstruction confined to one A3 block cannot be a balanced two-cycle; the surviving primitive cases are balanced four-cycles or coupled side-imbalanced cycles.

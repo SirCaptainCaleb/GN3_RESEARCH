@@ -1,3 +1,1 @@
 # Dominating or dominated zero-path modules absorb into every compatible connector
-
-Let A=H⊔R with H a shore module that dominates R or is dominated by R. If H has a fully ported zero Hamilton path, every compatible zero connector on R∪{x,z} extends to A∪{x,z} by a relative one-sided insertion, even when x,z move independently. The left-side argument uses the allowed starts shore→shore/x or z→shore; a prefix z,x,shore is impossible because α(z,x,shore)=1, and z,x can occur only as the length-two connector when R is empty. The right-side dual preserves both ports. Hence a minimal connector obstruction has no universal shore source/sink and no proper extreme module supporting a ported zero path.

@@ -1,3 +1,1 @@
 # Tangent-cone closure of a Johnson edge is discrete successor realization
-
-At a realized p-cut C, a forced Johnson direction e_c-e_a lies in the tangent cone of the attained-cut convex hull if and only if its successor C-a+c is itself attained. Fixed 0/1 coordinates force every convex contributor on this edge to be one of its two endpoints. A missing successor has an explicit exposing potential with coordinate weights in {-2,0,1,2}, uniquely maximizing at C among attained cuts and gaining one at the successor. Thus the Brouwer tangent-closure premise is precisely discrete successor realization, not a weaker convex replacement for it.

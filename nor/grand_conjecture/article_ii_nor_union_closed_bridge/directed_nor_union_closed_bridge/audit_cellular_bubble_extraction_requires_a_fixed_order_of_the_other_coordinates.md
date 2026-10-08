@@ -1,3 +1,1 @@
 # Audit cellular bubble extraction requires a fixed order of the other coordinates
-
-Cellular Tucker gives a complementary product cell, but the b-only bubble extraction in §§143,150,154 needs an additional premise: both endpoint orders must agree after deleting b. Arbitrary vertices of a permutohedron face do not satisfy it. General carrier paths can change the b-centered window by swapping a neighbor while b remains fixed, or by making b an endpoint; the two-central-defect repair calculation does not cover these events. The fiberwise bubble lemma, the cellular degree obstruction, and the specified local repair formulas remain valid. Unconditional carrier-to-legal-edge extraction remains unproved.

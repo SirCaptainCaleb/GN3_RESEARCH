@@ -1,5 +1,1 @@
 # Article I — Ordered-tuple Norine geodesics
-
-Article I defines the ordered-coordinate NOR program, its monotone-path motivation, and the spanning converging tight-fork target. N_k counts colored cube vertices; coordinate arity r belongs to N_{r+1}, so ternary NOR is N_4. The edge-order subclass gives a two-monotone-path cover, while mirrored-pair factors admit monochromatic spanning orders.
-
-The first general reduction is now elevated: a minimal reversal-odd coordinate counterexample has minimum full-order variation exactly two, in every arity. The remaining work is order-sensitive augmentation or extraction preserving the whole ground set. Antimatroid supports alone do not synchronize witnesses; common-tail rigidity and the two-hole cage retain their exact hypotheses. Full-support interval reversal gives finite boundary inequalities, with overlapping transitions counted once, but no contradiction yet. The topological pole-star obstruction requires a genuine carrier-to-witness theorem. Articles II–IV develop the support-saturation, protected-root, and connector routes to that same spanning objective.

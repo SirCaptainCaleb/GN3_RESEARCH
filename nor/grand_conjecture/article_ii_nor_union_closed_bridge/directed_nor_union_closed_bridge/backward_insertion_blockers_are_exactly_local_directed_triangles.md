@@ -1,3 +1,1 @@
 # Backward insertion blockers are exactly local directed triangles
-
-At a ternary insertion transition along a deletion witness for a front circuit, either the missing vertex creates a shifted two-element front circuit or the backward-blocker alternative creates a directed triangle in the center tournament at the crossed vertex. Indeed the three relevant comparisons are p->x, x->b, and b->p in the color-sigma center tournament. Hence failure of circuit contraction is exactly a local failure of neighborhood union closure. In particular, if all center tournaments are transitive, every front circuit contracts immediately to a shifted two-circuit.

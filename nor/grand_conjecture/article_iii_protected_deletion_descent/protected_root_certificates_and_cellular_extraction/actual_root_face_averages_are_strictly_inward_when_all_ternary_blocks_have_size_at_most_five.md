@@ -1,3 +1,1 @@
 # Actual-root face averages are zero-free on ternary faces with blocks of size at most five
-
-For any binary r-tuple label, cyclic rotation supplies a no-10 order on r+1 coordinates, and also on r+2 coordinates when r is odd. Therefore, under the all-full-orders-bad hypothesis, every face with such bounded blocks has an actual 10 root crossing distinct blocks. Its all-refinements averaged carrier is separated from zero by the inward face normal, and has an odd zero-free homotopy to the inward radial map on that subcomplex. In ternary arity any zero of this particular carrier must involve a block of at least six coordinates. This does not exclude selected A3 root circuits or force a global zero.

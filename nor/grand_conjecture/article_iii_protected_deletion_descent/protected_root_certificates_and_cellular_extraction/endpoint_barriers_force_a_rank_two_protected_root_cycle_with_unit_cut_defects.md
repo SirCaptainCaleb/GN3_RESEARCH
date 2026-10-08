@@ -1,3 +1,1 @@
 # Endpoint barriers force a rank-two protected root cycle with unit cut defects
-
-In the flat alternating endpoint-full regime, choose for each omitted coordinate x a normalized good deletion order beginning (a_x,b_x,c_x,...). Prepending x gives a fully-curved endpoint root rho_x=e_x-e_{c_x} with rank-two central cut {x,a_x}. The map f(x)=c_x has no fixed points, so a functional cycle yields an actual positive protected-root cycle without topology. Along such a cycle, every cut defect is unit: D_i=e_{a_{i+1}}-e_{a_i}. Thus all incompatibility is a secondary partner-coordinate circulation; constant partner gives exact Johnson concatenation.

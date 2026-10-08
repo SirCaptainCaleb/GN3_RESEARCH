@@ -1,7 +1,1 @@
 # Threshold-band potential replaces singleton-defect transport
-
-In the coboundary-flat ternary sector, the correct common potential for repeated boundary repairs is not singleton-defect rank but the length B of the maximal contiguous threshold-compatible interval around a chosen one-change cut. If the nearest mismatch outside that interval is supported by a flat boundary tetrahedron, the outward endpoint repair changes (wrong,right) to (right,right), preserves the old compatible interval, and absorbs the mismatch. Hence B strictly increases. Flat boundary repairs therefore cannot cycle; they terminate either in a spanning one-change order or at a fully-curved boundary barrier.
-
-Applied to the residual antipodal braid exits, this removes the need for the unproved E=1 singleton-transport claims. The audited 0100 -> 0011 local change must be evaluated as a complete boundary packet: the extra outer change is allowed, because subsequent flat repair is governed by B rather than defect count. Thus a residual protected exit can be combed outward through all flat boundary states with a genuine well-founded potential.
-
-The remaining antipodal obstruction is correspondingly sharper: after finite flat combing, an unresolved protected exit reaches a fully-curved boundary barrier. Closing the flat sector now requires a boundary-safe crossing of such a barrier, or a proof that the two antipodal exits cannot both terminate at fully-curved barriers in a globally maximal-band state.

@@ -1,3 +1,1 @@
 # Ternary bipolar circuits land on the four-change cyclic frontier
-
-In a minimum ternary counterexample, the singleton-cap sandwich of a bipolar circuit has linear word tau sigma^p tau^q with p=|P|-2 and q=|X|-1. Deleting the initial singleton gives a one-change deletion order ending in tau, so endpoint blocking forces the first cyclic wrap status to be sigma. The resulting cyclic order therefore has exactly four changes and, up to rotation and reversal, run profile 1,p,q,2. Thus ternary bipolar circuits are instances of the four-change cyclic frontier from Article I; circuit sizes two and three correspond to the singleton- and two-window middle-run regimes.

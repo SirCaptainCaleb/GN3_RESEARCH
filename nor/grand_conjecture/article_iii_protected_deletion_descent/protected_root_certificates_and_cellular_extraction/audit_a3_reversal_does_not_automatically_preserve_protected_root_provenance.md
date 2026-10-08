@@ -1,3 +1,1 @@
 # Audit: A3 reversal does not automatically preserve protected-root provenance
-
-Reversing a ternary A3 block converts any raw 10 descent root rho into the opposite raw descent -rho, but it does not automatically preserve canonical protected-root provenance. A minimum-first-phase deletion witness 0^p1^q reverses to 0^q1^p; unless the reversed witness is independently admissible for the fixed minimum-p carrier, the opposite chamber need not carry a canonical protected root. Hence protected A3 minimal circuits remain genuine endpoint cycles of length 2, 3, or 4; a protected two-cycle requires independent provenance on both orientations. Topological constructions must retain these provenance labels or justify any enlargement to raw chamber descents.

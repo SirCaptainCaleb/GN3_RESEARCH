@@ -1,3 +1,1 @@
 # Width-two rotations retain their extremal-class obligation, and the exported second bit is forced
-
-The rigid width-two rotations compare threshold-band states; their reconnection windows require verification before use in the global two-change lexicographic class. A flat six-coordinate table shows that bce=abe=1 leaves further chord freedom. In §260's conditional rigid-table exported packet, alternation forces ell_1=1 from the original zero prefix, leaving only ell_0 arbitrary. The resulting extra band requires a verified return to the declared comparison class or an enlarged-state progress theorem. Terminal cases close by §259.

@@ -1,3 +1,1 @@
 # A continuous antipodal face carrier retains actual descent roots
-
-For reversal-odd coordinate labels with every order bad, average all actual 10 dropped/entering-coordinate roots over each proper permutahedron face and extend over barycentric flags. This defines a continuous odd map on the free antipodal boundary. The map is nonzero on every face whose blocks have size at most r, including arbitrary products of small blocks. Any zero expands into a positive dependence of actual roots refining one common face, and a directed cycle localizes in a block of size at least r+1. This removes gap-weight artifacts. No theorem yet forces a zero, and the raw root carrier does not automatically retain protected deletion provenance.

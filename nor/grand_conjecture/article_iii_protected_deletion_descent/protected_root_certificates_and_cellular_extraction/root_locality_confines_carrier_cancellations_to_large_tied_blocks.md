@@ -1,3 +1,1 @@
 # Root locality confines carrier cancellations to large tied blocks
-
-In an ordered-partition cell whose root labels come from actual refining chamber orders, a block-rank functional is nonpositive on each source-to-target root. A zero positive combination therefore uses only within-block roots. Window-slide roots span r+1 consecutive coordinates, so their noninert cancellations require a tied block of size at least r+1; outermost-change roots require r+2. The remaining positive roots form a balanced flow and hence contain a directed cycle in one tied block. Ternary thresholds are four and five coordinates. Adjacent-swap refinement destroys the same window-slide certificate; packet-sized realization and the inert-zero attachment analysis remain the exact obligations.
