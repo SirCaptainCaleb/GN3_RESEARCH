@@ -27,3 +27,4 @@ jobs:
     with:
       schema: nor
     secrets: inherit
+# Manual NOR artifact regeneration request, 2026-10-08.
