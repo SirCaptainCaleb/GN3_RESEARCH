@@ -1,0 +1,29 @@
+name: Refresh NORI research context
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-nori-research-mirror.yml"
+      - ".github/workflows/sync-research-schema.yml"
+      - "scripts/sync_research_mirror.py"
+      - ".github/workflows/build-research-schema-artifact.yml"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    uses: ./.github/workflows/sync-research-schema.yml
+    with:
+      schema: nori
+    secrets: inherit
+
+  build:
+    needs: sync
+    uses: ./.github/workflows/build-research-schema-artifact.yml
+    with:
+      schema: nori
+    secrets: inherit
