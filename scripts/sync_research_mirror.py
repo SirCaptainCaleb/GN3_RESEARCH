@@ -12,7 +12,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "nor", "linp")
-TABLES = ("nodes","article_sections","brainstorms","dictionary","compositions","composition_sources")
+TABLES = ("nodes","article_sections","dictionary","compositions","composition_sources")
 PAGE = 500
 
 def headers():
@@ -490,13 +490,13 @@ def build(schema: str):
     # dictionaries are in-memory projections for the existing Markdown builders,
     # not extra database tables, queries, or persistent caches.
     projected = {"documents": [], "research": [], "section_subsections": [],
-                 "items": [], "item_results": []}
+                 "items": [], "item_results": [], "brainstorms": []}
     source_by_type = {
         "article": "documents", "overview": "documents",
         "guide": "documents", "reflexes": "documents",
         "section": "research", "toolkit": "research",
         "subsection": "section_subsections", "item": "items",
-        "result": "item_results",
+        "result": "item_results", "brainstorm": "brainstorms",
     }
     for node in data["nodes"]:
         group = source_by_type.get(node["type"])
