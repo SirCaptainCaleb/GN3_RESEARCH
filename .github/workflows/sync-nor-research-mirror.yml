@@ -2,13 +2,6 @@ name: NOR | Rebuild current artifact (sync Supabase first)
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/sync-nor-research-mirror.yml"
-      - ".github/workflows/sync-research-schema.yml"
-      - "scripts/sync_research_mirror.py"
-      - ".github/workflows/build-research-schema-artifact.yml"
 
 permissions:
   contents: write
