@@ -1,1 +1,3 @@
 # One change and the width-one inversion relaxation
+
+A finite binary word has at most one color change precisely when it is 0^a1^b or 1^a0^b for nonnegative a,b. In the fixed orientation 1→0, let p be the position of the first 0 and q that of the last 1. The inequality q≤p+1 is a weaker width-one seam condition: a 0 may occur before a later 1, provided the inversion spans no more than one adjacent gap. Consequently a theorem for the seam relaxation is not the NOR conclusion. Any argument using this relaxation must either eliminate the remaining mixed seam or explicitly return to the full one-change property.

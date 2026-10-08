@@ -140,9 +140,9 @@
     },
     "article_iv_hartman_connectors": {
       "composition": {
-        "body_chars": 8405,
-        "composed_through_revision": 3511,
-        "composition_version": 1,
+        "body_chars": 8467,
+        "composed_through_revision": 3519,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_section_position_now": 4,
@@ -176,7 +176,7 @@
   },
   "brainstorm_count": 7,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T06:16:49.369144+00:00",
+  "generated_at": "2026-10-08T06:41:14.164167+00:00",
   "item_count": 824,
   "mirror_format": 18,
   "result_count": 7,
@@ -416,7 +416,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 3451,
+  "snapshot_revision": 3459,
   "startup_broadcasts": [],
   "subsection_versions": {
     "a2_recurrent_carriers_are_cooriented_in_physical_root_space": {
@@ -2078,13 +2078,16 @@
     },
     "antipodal_cube_geodesics_are_coordinate_orders": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 741,
+        "composed_through_revision": 3512,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -3854,13 +3857,16 @@
     },
     "cellular_odd_maps_from_reversal_odd_chamber_labels": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 902,
+        "composed_through_revision": 3514,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -6660,13 +6666,16 @@
     },
     "freudenthal_charts_based_at_arbitrary_poles": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 705,
+        "composed_through_revision": 3516,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -8234,13 +8243,16 @@
     },
     "one_change_and_the_width_one_inversion_relaxation": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 562,
+        "composed_through_revision": 3518,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -8509,13 +8521,16 @@
     },
     "ordered_windows_remove_the_distinguished_pole_restriction": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 783,
+        "composed_through_revision": 3513,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 2,
-          "development_version_when_composed": null
+          "development_version_when_composed": 2
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -9549,13 +9564,16 @@
     },
     "root_balance_converts_topological_zeros_into_directed_recurrence": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 717,
+        "composed_through_revision": 3517,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -11750,13 +11768,16 @@
     },
     "the_one_skeleton_is_not_enough": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 761,
+        "composed_through_revision": 3515,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -13581,7 +13602,7 @@
   },
   "toolkit_count": 29,
   "universal_document_versions": {
-    "guide": 36,
+    "guide": 37,
     "reflexes": 21
   }
 }

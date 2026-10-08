@@ -1,1 +1,3 @@
 # Freudenthal charts based at arbitrary poles
+
+For a fixed S⊆V define A⪯_S B when A△S⊆B△S, where △ denotes symmetric difference. This partial order identifies the cube with the ordinary Boolean lattice, now with bottom S and top V\S. An antipodal geodesic starting at S is a maximal chain in the resulting Freudenthal triangulation and is indexed by the order of its n coordinate flips. These charts exist at every S; the symmetric-difference translation is only a change of geometric coordinates. The coloring itself must be transported if translation invariance is not assumed. Consequently the family of pole charts gives a legitimate geometric flexibility but cannot silently replace a basepoint-dependent coloring with a translation-invariant one.
