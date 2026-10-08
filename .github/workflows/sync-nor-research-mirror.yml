@@ -1,4 +1,4 @@
-name: Refresh NOR research context
+name: NOR | Rebuild current artifact (sync Supabase first)
 
 on:
   workflow_dispatch:
