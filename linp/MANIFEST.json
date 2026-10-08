@@ -562,9 +562,11 @@
     }
   },
   "brainstorm_count": 2,
-  "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-06T17:13:58.85937+00:00",
-  "mirror_format": 17,
+  "composition_model": "recursive-composition-v7",
+  "generated_at": "2026-10-08T00:53:49.783203+00:00",
+  "item_count": 127,
+  "mirror_format": 18,
+  "result_count": 0,
   "schema": "linp",
   "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {
@@ -1868,7 +1870,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1086,
+  "snapshot_revision": 3415,
   "startup_broadcasts": [],
   "subsection_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_a": {
@@ -4090,9 +4092,9 @@
       "version": 1
     }
   },
-  "toolkit_count": 1,
+  "toolkit_count": 4,
   "universal_document_versions": {
-    "guide": 23,
-    "reflexes": 14
+    "guide": 28,
+    "reflexes": 17
   }
 }

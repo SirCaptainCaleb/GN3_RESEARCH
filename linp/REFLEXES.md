@@ -9,3 +9,6 @@ These are behavioral heuristics for mathematical judgment during active research
 3. **Audit exact claims.** Localize the precise gap, false implication, or missing hypothesis; preserve the valid surrounding mathematics and repair at the narrowest level that restores the argument.
 
 4. **Preserve informative failures.** Counterexamples, failed routes, and broken strengthenings are mathematical information when they delimit the viable proof space.
+
+
+5. **Compress at natural accumulation points.** At every research level, let its children develop until their combined structure supports a useful synthesis; then compose, preserving detail below and strengthening the route above.
