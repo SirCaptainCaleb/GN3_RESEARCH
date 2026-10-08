@@ -768,3 +768,4 @@ if __name__ == "__main__":
     main()
 
 # Regeneration marker: composition clean slate 2026-10-07; resync NOR, GN3N, and LINP.
+# Resync marker: restored historical consumed_by links 2026-10-08 across NOR, GN3N, LINP.
