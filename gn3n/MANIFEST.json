@@ -426,18 +426,15 @@
   "article_versions": {
     "article_vii_antipodal_geodesics_and_topological_reformulations": {
       "composition": {
-        "body_chars": 7281,
-        "composed_through_revision": 1916,
-        "composition_version": 9,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 8,
-          "latest_section_position_when_composed": 8,
-          "sections_existing_when_composed": 8,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 8
         },
-        "has_composition": true,
-        "source_note": "Recomposed Article VII to integrate the corrected unordered-versus-ordered cube geodesic dictionary and remove the false distinguished-pole restriction for ordered windows.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -445,18 +442,15 @@
     },
     "defect_lines_and_spanningorder_compression": {
       "composition": {
-        "body_chars": 105842,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 10,
-          "latest_section_position_when_composed": 10,
-          "sections_existing_when_composed": 10,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 10
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -464,18 +458,15 @@
     },
     "deletioncover_compatibility_and_global_obstruction_structure": {
       "composition": {
-        "body_chars": 35584,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 10,
-          "latest_section_position_when_composed": 10,
-          "sections_existing_when_composed": 10,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 10
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -483,18 +474,15 @@
     },
     "endpoint_transport_and_small_support_gluing": {
       "composition": {
-        "body_chars": 40520,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 9,
-          "latest_section_position_when_composed": 9,
-          "sections_existing_when_composed": 9,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 9
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -502,18 +490,15 @@
     },
     "longest_paths_and_reversal_structure": {
       "composition": {
-        "body_chars": 65200,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 10,
-          "latest_section_position_when_composed": 10,
-          "sections_existing_when_composed": 10,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 10
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -521,18 +506,15 @@
     },
     "quadratic_potential_and_pairwise_repartition": {
       "composition": {
-        "body_chars": 16329,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 11,
-          "latest_section_position_when_composed": 11,
-          "sections_existing_when_composed": 11,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 11
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -540,18 +522,15 @@
     },
     "three_cover_repartitions_and_recurrence": {
       "composition": {
-        "body_chars": 32468,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 10,
-          "latest_section_position_when_composed": 10,
-          "sections_existing_when_composed": 10,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 10
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -560,7 +539,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T01:47:08.246592+00:00",
+  "generated_at": "2026-10-08T01:59:26.474748+00:00",
   "item_count": 576,
   "mirror_format": 18,
   "result_count": 0,
@@ -568,18 +547,15 @@
   "section_versions": {
     "antipodal_geodesics_and_complementary_path_supports": {
       "composition": {
-        "body_chars": 22132,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -588,18 +564,15 @@
     },
     "antipodal_labels_and_cellular_root_topology": {
       "composition": {
-        "body_chars": 2932,
-        "composed_through_revision": 1915,
-        "composition_version": 3,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Integrated corrected cube dictionary into the Article VII topology spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -608,18 +581,15 @@
     },
     "antipodal_permutation_geometry": {
       "composition": {
-        "body_chars": 2922,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -628,18 +598,15 @@
     },
     "antipodal_reachability_and_neutral_corridor": {
       "composition": {
-        "body_chars": 9960,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -648,18 +615,15 @@
     },
     "antipodal_reachability_and_topological_frontier": {
       "composition": {
-        "body_chars": 4877,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -668,18 +632,15 @@
     },
     "article_vii_synthesis_and_exact_frontier": {
       "composition": {
-        "body_chars": 1809,
-        "composed_through_revision": 1573,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
           "current": false,
           "latest_subsection_no_now": 126,
-          "latest_subsection_no_when_composed": 26,
-          "subsections_existing_when_composed": 26,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 126
         },
-        "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -688,18 +649,15 @@
     },
     "auxiliary_exactification_and_complementary_supports": {
       "composition": {
-        "body_chars": 9173,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -708,18 +666,15 @@
     },
     "auxiliary_vertex_exactification": {
       "composition": {
-        "body_chars": 4044,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -728,18 +683,15 @@
     },
     "balanced_cuts_obstruct_the_two_component_spanning_cycle_target": {
       "composition": {
-        "body_chars": 9359,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -748,18 +700,15 @@
     },
     "complementary_path_supports_and_endpoint_involutions": {
       "composition": {
-        "body_chars": 3401,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -768,18 +717,15 @@
     },
     "convex_root_balance_and_bourgin_yang": {
       "composition": {
-        "body_chars": 1076,
-        "composed_through_revision": 1569,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -788,18 +734,15 @@
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions": {
       "composition": {
-        "body_chars": 2938,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -808,18 +751,15 @@
     },
     "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
       "composition": {
-        "body_chars": 2598,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -828,18 +768,15 @@
     },
     "defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set": {
       "composition": {
-        "body_chars": 6968,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -848,18 +785,15 @@
     },
     "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local": {
       "composition": {
-        "body_chars": 338,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -868,18 +802,15 @@
     },
     "defect_lines_and_spanning_order_compression_canonical_references": {
       "composition": {
-        "body_chars": 319,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -888,18 +819,15 @@
     },
     "defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering": {
       "composition": {
-        "body_chars": 1273,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -908,18 +836,15 @@
     },
     "defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal": {
       "composition": {
-        "body_chars": 2481,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -928,18 +853,15 @@
     },
     "defect_lines_and_spanning_order_compression_introduction": {
       "composition": {
-        "body_chars": 527,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -948,18 +870,15 @@
     },
     "defect_lines_and_spanning_order_compression_the_defect_line_identity": {
       "composition": {
-        "body_chars": 811,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -968,18 +887,15 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma": {
       "composition": {
-        "body_chars": 83099,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 6,
-          "latest_subsection_no_when_composed": 6,
-          "subsections_existing_when_composed": 6,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 6
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -988,18 +904,15 @@
     },
     "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed": {
       "composition": {
-        "body_chars": 5908,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1008,18 +921,15 @@
     },
     "deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case": {
       "composition": {
-        "body_chars": 1536,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1028,18 +938,15 @@
     },
     "deletion_covers_and_the_support_graph_canonical_references": {
       "composition": {
-        "body_chars": 48,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1048,18 +955,15 @@
     },
     "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers": {
       "composition": {
-        "body_chars": 7536,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1068,18 +972,15 @@
     },
     "deletion_covers_and_the_support_graph_defect_span": {
       "composition": {
-        "body_chars": 1576,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1088,18 +989,15 @@
     },
     "deletion_covers_and_the_support_graph_introduction": {
       "composition": {
-        "body_chars": 1047,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1108,18 +1006,15 @@
     },
     "deletion_covers_and_the_support_graph_support_compatible_families": {
       "composition": {
-        "body_chars": 4572,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1128,18 +1023,15 @@
     },
     "deletion_covers_and_the_support_graph_the_forest_case": {
       "composition": {
-        "body_chars": 7680,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1148,18 +1040,15 @@
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case": {
       "composition": {
-        "body_chars": 6632,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 5,
-          "latest_subsection_no_when_composed": 5,
-          "subsections_existing_when_composed": 5,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 5
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1168,18 +1057,15 @@
     },
     "deletion_covers_and_the_support_graph_the_remaining_lemma": {
       "composition": {
-        "body_chars": 1206,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1188,18 +1074,15 @@
     },
     "deletion_covers_and_the_support_graph_the_support_graph": {
       "composition": {
-        "body_chars": 2434,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1208,18 +1091,15 @@
     },
     "endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal": {
       "composition": {
-        "body_chars": 1085,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1228,18 +1108,15 @@
     },
     "endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order": {
       "composition": {
-        "body_chars": 1614,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1248,18 +1125,15 @@
     },
     "endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption": {
       "composition": {
-        "body_chars": 659,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1268,18 +1142,15 @@
     },
     "endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions": {
       "composition": {
-        "body_chars": 2442,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1288,18 +1159,15 @@
     },
     "endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex": {
       "composition": {
-        "body_chars": 1017,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1308,18 +1176,15 @@
     },
     "endpoint_transport_and_small_support_gluing_greedy_endpoint_transport": {
       "composition": {
-        "body_chars": 1434,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1328,18 +1193,15 @@
     },
     "endpoint_transport_and_small_support_gluing_introduction": {
       "composition": {
-        "body_chars": 594,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1348,18 +1210,15 @@
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma": {
       "composition": {
-        "body_chars": 28231,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1368,18 +1227,15 @@
     },
     "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices": {
       "composition": {
-        "body_chars": 2063,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1388,18 +1244,15 @@
     },
     "exact_root_compression_and_bounded_central_structure": {
       "composition": {
-        "body_chars": 1005,
-        "composed_through_revision": 1570,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1408,18 +1261,15 @@
     },
     "global_augmentation_by_complementary_path_splices": {
       "composition": {
-        "body_chars": 10273,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1428,18 +1278,15 @@
     },
     "kappa_one_four_end_reversal": {
       "composition": {
-        "body_chars": 1871,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1448,18 +1295,15 @@
     },
     "kappa_one_role_balance_and_ky_fan": {
       "composition": {
-        "body_chars": 1015,
-        "composed_through_revision": 1893,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Recomposed to retain the closure-relevant kappa-one exact-root reduction and four-block impossibility.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1468,18 +1312,15 @@
     },
     "leaf_comparisons_in_deletion_support_forests": {
       "composition": {
-        "body_chars": 58338,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1488,18 +1329,15 @@
     },
     "lifted_geodesic_graph_and_one_change_orders": {
       "composition": {
-        "body_chars": 3269,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1508,18 +1346,15 @@
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
       "composition": {
-        "body_chars": 130660,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1528,18 +1363,15 @@
     },
     "local_witness_topology_and_the_finite_terminal_theorem": {
       "composition": {
-        "body_chars": 1053,
-        "composed_through_revision": 1571,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 15,
-          "latest_subsection_no_when_composed": 15,
-          "subsections_existing_when_composed": 15,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 15
         },
-        "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1548,18 +1380,15 @@
     },
     "longest_paths_and_reversal_structure_a_common_four_vertex_core": {
       "composition": {
-        "body_chars": 2029,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1568,18 +1397,15 @@
     },
     "longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal": {
       "composition": {
-        "body_chars": 1277,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1588,18 +1414,15 @@
     },
     "longest_paths_and_reversal_structure_a_longest_path": {
       "composition": {
-        "body_chars": 20034,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1608,18 +1431,15 @@
     },
     "longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple": {
       "composition": {
-        "body_chars": 1067,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1628,18 +1448,15 @@
     },
     "longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts": {
       "composition": {
-        "body_chars": 567,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1648,18 +1465,15 @@
     },
     "longest_paths_and_reversal_structure_introduction": {
       "composition": {
-        "body_chars": 150,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1668,18 +1482,15 @@
     },
     "longest_paths_and_reversal_structure_opposite_endpoint_replacements": {
       "composition": {
-        "body_chars": 1231,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1688,18 +1499,15 @@
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable": {
       "composition": {
-        "body_chars": 35744,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1708,18 +1516,15 @@
     },
     "longest_paths_and_reversal_structure_the_endpoint_pair_family": {
       "composition": {
-        "body_chars": 1009,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1728,18 +1533,15 @@
     },
     "longest_paths_and_reversal_structure_the_remaining_lemma": {
       "composition": {
-        "body_chars": 748,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1748,18 +1550,15 @@
     },
     "memory_lift_and_exact_antipodal_geodesics": {
       "composition": {
-        "body_chars": 4141,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1768,18 +1567,15 @@
     },
     "norine_gn3_dictionary_and_freudenthal_geometry": {
       "composition": {
-        "body_chars": 8036,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1788,18 +1584,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_a_block_count_identity": {
       "composition": {
-        "body_chars": 842,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1808,18 +1601,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_absolute_minima": {
       "composition": {
-        "body_chars": 1696,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1828,18 +1618,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient": {
       "composition": {
-        "body_chars": 661,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1848,18 +1635,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_introduction": {
       "composition": {
-        "body_chars": 781,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1868,18 +1652,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_pairwise_extremality": {
       "composition": {
-        "body_chars": 796,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1888,18 +1669,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge": {
       "composition": {
-        "body_chars": 1518,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1908,18 +1686,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_the_remaining_lemma": {
       "composition": {
-        "body_chars": 1119,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1928,18 +1703,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r": {
       "composition": {
-        "body_chars": 2376,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1948,18 +1720,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr": {
       "composition": {
-        "body_chars": 1900,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1968,18 +1737,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_the_size_profile_rrr": {
       "composition": {
-        "body_chars": 1141,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1988,18 +1754,15 @@
     },
     "quadratic_potential_and_pairwise_repartition_two_same_side_extenders": {
       "composition": {
-        "body_chars": 1978,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2008,18 +1771,15 @@
     },
     "spanning_orders_and_defect_helly": {
       "composition": {
-        "body_chars": 1153,
-        "composed_through_revision": 1567,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2028,18 +1788,15 @@
     },
     "terminalization_reachability_and_the_exact_frontier": {
       "composition": {
-        "body_chars": 2441,
-        "composed_through_revision": 1892,
-        "composition_version": 9,
+        "composition_version": null,
         "frontier": {
           "current": false,
           "latest_subsection_no_now": 301,
-          "latest_subsection_no_when_composed": 291,
-          "subsections_existing_when_composed": 291,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 301
         },
-        "has_composition": true,
-        "source_note": "Recomposed after elevating current minimum-counterexample, odd-uniform, root-seam, and endpoint-cycle results.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2048,18 +1805,15 @@
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "composition": {
-        "body_chars": 651,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2068,18 +1822,15 @@
     },
     "three_cover_repartitions_and_recurrence_canonical_references": {
       "composition": {
-        "body_chars": 77,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2088,18 +1839,15 @@
     },
     "three_cover_repartitions_and_recurrence_equal_potential_recurrence": {
       "composition": {
-        "body_chars": 2388,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2108,18 +1856,15 @@
     },
     "three_cover_repartitions_and_recurrence_four_and_five_vertex_components": {
       "composition": {
-        "body_chars": 2274,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2128,18 +1873,15 @@
     },
     "three_cover_repartitions_and_recurrence_introduction": {
       "composition": {
-        "body_chars": 500,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2148,18 +1890,15 @@
     },
     "three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component": {
       "composition": {
-        "body_chars": 995,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2168,18 +1907,15 @@
     },
     "three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side": {
       "composition": {
-        "body_chars": 1415,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2188,18 +1924,15 @@
     },
     "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component": {
       "composition": {
-        "body_chars": 20222,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2208,18 +1941,15 @@
     },
     "three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path": {
       "composition": {
-        "body_chars": 1362,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2228,18 +1958,15 @@
     },
     "three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas": {
       "composition": {
-        "body_chars": 1120,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2248,18 +1975,15 @@
     },
     "topological_recurrence_to_local_gn3_structure": {
       "composition": {
-        "body_chars": 47914,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 5,
-          "latest_subsection_no_when_composed": 5,
-          "subsections_existing_when_composed": 5,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 5
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2428,16 +2152,13 @@
     },
     "a_majority_coloring_closes_universal_endpoint_pair_rigidity_and_yields_an_anchored_three_vertex_prefix": {
       "composition": {
-        "body_chars": 2170,
-        "composed_through_revision": 1901,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Audited recovery after worker usage-limit cutoff: persisted the functional-graph majority-coloring fence and its actual r+1 path extension.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2735,16 +2456,13 @@
     },
     "antipodal_degree_and_minimality_force_every_closed_deletion_core_to_be_the_complete_odd_middle_layer": {
       "composition": {
-        "body_chars": 3399,
-        "composed_through_revision": 1880,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2770,16 +2488,13 @@
     },
     "antipodal_labels_and_cellular_root_topology_subsection_a": {
       "composition": {
-        "body_chars": 898,
-        "composed_through_revision": 1535,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2805,16 +2520,13 @@
     },
     "antipodal_permutation_geometry_subsection_a": {
       "composition": {
-        "body_chars": 735,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2824,16 +2536,13 @@
     },
     "antipodal_permutation_geometry_subsection_b": {
       "composition": {
-        "body_chars": 972,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2859,16 +2568,13 @@
     },
     "antipodal_reachability_and_neutral_corridor_subsection_a": {
       "composition": {
-        "body_chars": 5622,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2894,16 +2600,13 @@
     },
     "antipodal_reachability_and_topological_frontier_subsection_a": {
       "composition": {
-        "body_chars": 1176,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2913,16 +2616,13 @@
     },
     "antipodal_reachability_and_topological_frontier_subsection_b": {
       "composition": {
-        "body_chars": 1127,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2932,16 +2632,13 @@
     },
     "antipodal_reachability_and_topological_frontier_subsection_c": {
       "composition": {
-        "body_chars": 1297,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3031,16 +2728,13 @@
     },
     "article_vii_synthesis_and_exact_frontier_subsection_a": {
       "composition": {
-        "body_chars": 6777,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 5,
-          "development_version_when_composed": 5
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3050,16 +2744,13 @@
     },
     "article_vii_synthesis_and_exact_frontier_subsection_b": {
       "composition": {
-        "body_chars": 4969,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3069,16 +2760,13 @@
     },
     "article_vii_synthesis_and_exact_frontier_subsection_c": {
       "composition": {
-        "body_chars": 2369,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3088,16 +2776,13 @@
     },
     "article_vii_synthesis_and_exact_frontier_subsection_d": {
       "composition": {
-        "body_chars": 43928,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 18,
-          "development_version_when_composed": 18
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3267,16 +2952,13 @@
     },
     "audit_the_exact_root_kappa_two_equality_case_remains_unproved": {
       "composition": {
-        "body_chars": 718,
-        "composed_through_revision": 1562,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3382,16 +3064,13 @@
     },
     "auxiliary_exactification_and_complementary_supports_subsection_a": {
       "composition": {
-        "body_chars": 9093,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3417,16 +3096,13 @@
     },
     "auxiliary_vertex_exactification_subsection_a": {
       "composition": {
-        "body_chars": 1219,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3436,16 +3112,13 @@
     },
     "auxiliary_vertex_exactification_subsection_b": {
       "composition": {
-        "body_chars": 973,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3455,16 +3128,13 @@
     },
     "auxiliary_vertex_exactification_subsection_c": {
       "composition": {
-        "body_chars": 831,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3602,16 +3272,13 @@
     },
     "blocked_no_farther_endpoints_admit_bounded_endpoint_cutting_supports": {
       "composition": {
-        "body_chars": 476,
-        "composed_through_revision": 1553,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3701,16 +3368,13 @@
     },
     "bounded_pair_reservoirs_reduce_natural_carrier_extension_to_the_two_skeleton": {
       "composition": {
-        "body_chars": 599,
-        "composed_through_revision": 1555,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3944,16 +3608,13 @@
     },
     "complementary_path_supports_and_endpoint_involutions_subsection_a": {
       "composition": {
-        "body_chars": 853,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3963,16 +3624,13 @@
     },
     "complementary_path_supports_and_endpoint_involutions_subsection_b": {
       "composition": {
-        "body_chars": 767,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3982,16 +3640,13 @@
     },
     "complementary_path_supports_and_endpoint_involutions_subsection_c": {
       "composition": {
-        "body_chars": 910,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4049,16 +3704,13 @@
     },
     "connector_path_exclusion_for_genuine_two_deletion_packets": {
       "composition": {
-        "body_chars": 550,
-        "composed_through_revision": 1546,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4068,16 +3720,13 @@
     },
     "convex_root_balance_and_bourgin_yang_subsection_a": {
       "composition": {
-        "body_chars": 858,
-        "composed_through_revision": 1536,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4087,16 +3736,13 @@
     },
     "convex_root_balance_and_bourgin_yang_subsection_b": {
       "composition": {
-        "body_chars": 1226,
-        "composed_through_revision": 1537,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 18,
-          "development_version_when_composed": 18
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Retains the exact-root map and its proved dimension statement; excludes the unsupported extreme-switch Proposition 6.3.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4122,16 +3768,13 @@
     },
     "corrected_cube_dictionary_unordered_pole_crossing_and_ordered_windows": {
       "composition": {
-        "body_chars": 2677,
-        "composed_through_revision": 1914,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Compressed statement of the corrected unordered-versus-ordered cube dictionary.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4157,16 +3800,13 @@
     },
     "corrected_positive_word_terminal_theorem_with_one_unbounded_corridor": {
       "composition": {
-        "body_chars": 653,
-        "composed_through_revision": 1543,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4304,16 +3944,13 @@
     },
     "coxeter_local_protection_has_an_eighteen_position_dependency_halo": {
       "composition": {
-        "body_chars": 539,
-        "composed_through_revision": 1558,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4355,16 +3992,13 @@
     },
     "cubical_parity_propagates_a_partial_source_star_to_a_complete_critical_star": {
       "composition": {
-        "body_chars": 2452,
-        "composed_through_revision": 1876,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4374,16 +4008,13 @@
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a": {
       "composition": {
-        "body_chars": 829,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4393,16 +4024,13 @@
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions_subsection_b": {
       "composition": {
-        "body_chars": 1125,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4556,16 +4184,13 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_a": {
       "composition": {
-        "body_chars": 24486,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 14,
-          "development_version_when_composed": 14
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4575,16 +4200,13 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_b": {
       "composition": {
-        "body_chars": 18023,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 10,
-          "development_version_when_composed": 10
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4594,16 +4216,13 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_c": {
       "composition": {
-        "body_chars": 3435,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4613,16 +4232,13 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_d": {
       "composition": {
-        "body_chars": 7183,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 6,
-          "development_version_when_composed": 6
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4632,16 +4248,13 @@
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_e": {
       "composition": {
-        "body_chars": 4829,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4731,16 +4344,13 @@
     },
     "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_a": {
       "composition": {
-        "body_chars": 3020,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4830,16 +4440,13 @@
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_a": {
       "composition": {
-        "body_chars": 580,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4849,16 +4456,13 @@
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_b": {
       "composition": {
-        "body_chars": 1284,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4868,16 +4472,13 @@
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_c": {
       "composition": {
-        "body_chars": 1249,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4887,16 +4488,13 @@
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_d": {
       "composition": {
-        "body_chars": 1153,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5162,16 +4760,13 @@
     },
     "elevation_bounded_window_witness_filtrations_have_l2_local_commuting_failures": {
       "composition": {
-        "body_chars": 2525,
-        "composed_through_revision": 1498,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected verbatim: this development contains one precise theorem used by the recomposed Article VII.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5213,16 +4808,13 @@
     },
     "elevation_genuine_reflected_doubles_are_minimum_hole_boolean_squares": {
       "composition": {
-        "body_chars": 753,
-        "composed_through_revision": 1561,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5360,16 +4952,13 @@
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_a": {
       "composition": {
-        "body_chars": 10400,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 8,
-          "development_version_when_composed": 8
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5379,16 +4968,13 @@
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_b": {
       "composition": {
-        "body_chars": 1330,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5398,16 +4984,13 @@
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_c": {
       "composition": {
-        "body_chars": 2969,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -5609,16 +5192,13 @@
     },
     "exact_root_compression_and_bounded_central_structure_subsection_a": {
       "composition": {
-        "body_chars": 1280,
-        "composed_through_revision": 1538,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Includes the later correction establishing the kappa_2 >= 2 zero-root theorem and omits superseded root-moment discussion.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6060,16 +5640,13 @@
     },
     "frozen_interiors_make_buffer_success_sectors_contractible": {
       "composition": {
-        "body_chars": 462,
-        "composed_through_revision": 1550,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6399,16 +5976,13 @@
     },
     "hamiltonian_one_vertex_extensions_need_not_admit_compatible_insertion_orders": {
       "composition": {
-        "body_chars": 1839,
-        "composed_through_revision": 1885,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6418,16 +5992,13 @@
     },
     "hamiltonian_prefix_chains_force_every_closed_deletion_subfamily_to_be_the_whole_monotone_interface": {
       "composition": {
-        "body_chars": 5163,
-        "composed_through_revision": 1881,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6709,16 +6280,13 @@
     },
     "kappa_one_role_balance_and_ky_fan_subsection_a": {
       "composition": {
-        "body_chars": 7771,
-        "composed_through_revision": 1874,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6792,16 +6360,13 @@
     },
     "lifted_geodesic_graph_and_one_change_orders_subsection_a": {
       "composition": {
-        "body_chars": 756,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6811,16 +6376,13 @@
     },
     "lifted_geodesic_graph_and_one_change_orders_subsection_b": {
       "composition": {
-        "body_chars": 697,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6830,16 +6392,13 @@
     },
     "lifted_geodesic_graph_and_one_change_orders_subsection_c": {
       "composition": {
-        "body_chars": 890,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -6865,16 +6424,13 @@
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_a": {
       "composition": {
-        "body_chars": 4071,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 8,
-          "development_version_when_composed": 8
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7044,16 +6600,13 @@
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_a": {
       "composition": {
-        "body_chars": 14561,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 8,
-          "development_version_when_composed": 8
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7063,16 +6616,13 @@
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_b": {
       "composition": {
-        "body_chars": 2389,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7082,16 +6632,13 @@
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_c": {
       "composition": {
-        "body_chars": 13809,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 7,
-          "development_version_when_composed": 7
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7405,16 +6952,13 @@
     },
     "memory_lift_and_exact_antipodal_geodesics_subsection_a": {
       "composition": {
-        "body_chars": 4090,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7536,16 +7080,13 @@
     },
     "minimum_counterexample_closure_reduces_to_the_zero_exact_root_branch": {
       "composition": {
-        "body_chars": 1898,
-        "composed_through_revision": 1886,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7619,16 +7160,13 @@
     },
     "minimum_degree_full_stars_force_uniform_exterior_polarity": {
       "composition": {
-        "body_chars": 2537,
-        "composed_through_revision": 1877,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7638,16 +7176,13 @@
     },
     "minimum_degree_full_stars_form_saturated_johnson_blocks": {
       "composition": {
-        "body_chars": 3203,
-        "composed_through_revision": 1878,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7657,16 +7192,13 @@
     },
     "minimum_deletion_holes_of_order_at_least_three_force_canonical_root_advance_three_covers": {
       "composition": {
-        "body_chars": 533,
-        "composed_through_revision": 1563,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Retains the valid one-step pair-selection content and removes the invalid recursive covering conclusion.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7756,16 +7288,13 @@
     },
     "minimum_holes_are_four_end_synchronized_and_three_hole_cores_have_bidirectional_root_advance": {
       "composition": {
-        "body_chars": 633,
-        "composed_through_revision": 1565,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7807,16 +7336,13 @@
     },
     "minimum_holes_contain_bidirectionally_compatible_four_support_pair_cores": {
       "composition": {
-        "body_chars": 680,
-        "composed_through_revision": 1566,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -7826,16 +7352,13 @@
     },
     "minimum_holes_reduce_to_genuine_two_deletion_states_with_a_five_component": {
       "composition": {
-        "body_chars": 797,
-        "composed_through_revision": 1564,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8181,16 +7704,13 @@
     },
     "no_farther_positive_witness_forces_monochromatic_outward_status_rays": {
       "composition": {
-        "body_chars": 397,
-        "composed_through_revision": 1548,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8200,16 +7720,13 @@
     },
     "no_farther_witness_bounds_relevant_face_blocks_by_four": {
       "composition": {
-        "body_chars": 439,
-        "composed_through_revision": 1551,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8235,16 +7752,13 @@
     },
     "norine_gn3_dictionary_and_freudenthal_geometry_subsection_a": {
       "composition": {
-        "body_chars": 6303,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8318,16 +7832,13 @@
     },
     "odd_cycles_of_actual_endpoint_paths_force_a_longer_path_without_compatible_insertion_orders": {
       "composition": {
-        "body_chars": 6439,
-        "composed_through_revision": 1888,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8369,16 +7880,13 @@
     },
     "odd_uniform_middle_layer_has_universal_two_ended_maximum_path_reversal": {
       "composition": {
-        "body_chars": 1730,
-        "composed_through_revision": 1882,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8388,16 +7896,13 @@
     },
     "odd_uniform_residue_is_a_universal_balanced_double_noninsertion_state": {
       "composition": {
-        "body_chars": 1490,
-        "composed_through_revision": 1883,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8679,16 +8184,13 @@
     },
     "outward_repair_inside_a_double_span_is_equivalent_to_a_two_cover": {
       "composition": {
-        "body_chars": 370,
-        "composed_through_revision": 1545,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8714,16 +8216,13 @@
     },
     "persistent_face_labels_isolate_the_double_persistent_zero_root_locus": {
       "composition": {
-        "body_chars": 746,
-        "composed_through_revision": 1549,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8733,16 +8232,13 @@
     },
     "positive_alternating_double_occurrences_have_support_at_most_eight": {
       "composition": {
-        "body_chars": 313,
-        "composed_through_revision": 1541,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8768,16 +8264,13 @@
     },
     "positive_only_witness_filtration_is_antipodal_and_surgery_compatible": {
       "composition": {
-        "body_chars": 447,
-        "composed_through_revision": 1542,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Retains only the consistent positive filtration; removes the superseded claim that every terminal support is bounded.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -8851,16 +8344,13 @@
     },
     "positive_reflected_double_carriers_have_unbounded_local_spans": {
       "composition": {
-        "body_chars": 455,
-        "composed_through_revision": 1540,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9062,16 +8552,13 @@
     },
     "quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_a": {
       "composition": {
-        "body_chars": 600,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9465,16 +8952,13 @@
     },
     "reflected_double_spans_have_deletion_distance_at_most_two": {
       "composition": {
-        "body_chars": 341,
-        "composed_through_revision": 1544,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9660,16 +9144,13 @@
     },
     "root_deletion_localizes_extension_incompatibility_to_one_adjacent_two_defect_seam": {
       "composition": {
-        "body_chars": 802,
-        "composed_through_revision": 1887,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9839,16 +9320,13 @@
     },
     "saturated_natural_carriers_force_their_outward_loci_to_be_contractible": {
       "composition": {
-        "body_chars": 557,
-        "composed_through_revision": 1556,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9922,16 +9400,13 @@
     },
     "separated_and_adjacent_insertion_gaps_give_genuine_unbounded_path_augmentation": {
       "composition": {
-        "body_chars": 3249,
-        "composed_through_revision": 1884,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -9941,16 +9416,13 @@
     },
     "separated_protected_determining_windows_force_a_persistent_witness_or_same_face_escape": {
       "composition": {
-        "body_chars": 582,
-        "composed_through_revision": 1547,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10168,16 +9640,13 @@
     },
     "spanning_orders_and_defect_helly_subsection_a": {
       "composition": {
-        "body_chars": 4598,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 4,
-          "development_version_when_composed": 4
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10187,16 +9656,13 @@
     },
     "spanning_orders_and_defect_helly_subsection_b": {
       "composition": {
-        "body_chars": 1673,
-        "composed_through_revision": 1499,
-        "composition_version": 2,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 8,
-          "development_version_when_composed": 8
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10206,16 +9672,13 @@
     },
     "spanning_orders_and_defect_helly_subsection_c": {
       "composition": {
-        "body_chars": 834,
-        "composed_through_revision": 1534,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Removes the obsolete dual-polarity refinement and retains the local language exactly equivalent to the two-cover criterion.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10497,16 +9960,13 @@
     },
     "terminal_ordered_pair_loci_have_the_homotopy_type_of_mutual_pair_clique_complexes": {
       "composition": {
-        "body_chars": 584,
-        "composed_through_revision": 1554,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10612,16 +10072,13 @@
     },
     "the_kappa_one_nonzero_four_block_is_impossible": {
       "composition": {
-        "body_chars": 854,
-        "composed_through_revision": 1875,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10695,16 +10152,13 @@
     },
     "the_odd_closed_core_is_exactly_the_middle_bier_sphere": {
       "composition": {
-        "body_chars": 1620,
-        "composed_through_revision": 1879,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10858,16 +10312,13 @@
     },
     "three_common_initial_reversers_force_a_root_advancing_five_path": {
       "composition": {
-        "body_chars": 454,
-        "composed_through_revision": 1560,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -10973,16 +10424,13 @@
     },
     "three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_a": {
       "composition": {
-        "body_chars": 1012,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11056,16 +10504,13 @@
     },
     "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a": {
       "composition": {
-        "body_chars": 1686,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 2,
-          "development_version_when_composed": 2
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11075,16 +10520,13 @@
     },
     "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b": {
       "composition": {
-        "body_chars": 3319,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11254,16 +10696,13 @@
     },
     "topological_recurrence_to_local_gn3_structure_subsection_a": {
       "composition": {
-        "body_chars": 6339,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 5,
-          "development_version_when_composed": 5
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11273,16 +10712,13 @@
     },
     "topological_recurrence_to_local_gn3_structure_subsection_b": {
       "composition": {
-        "body_chars": 9768,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 5,
-          "development_version_when_composed": 5
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11292,16 +10728,13 @@
     },
     "topological_recurrence_to_local_gn3_structure_subsection_c": {
       "composition": {
-        "body_chars": 4232,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 3,
-          "development_version_when_composed": 3
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11311,16 +10744,13 @@
     },
     "topological_recurrence_to_local_gn3_structure_subsection_d": {
       "composition": {
-        "body_chars": 1564,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 6,
-          "development_version_when_composed": 6
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11522,16 +10952,13 @@
     },
     "two_exterior_labels_fill_the_terminal_four_cycle_by_a_six_triangle_disk": {
       "composition": {
-        "body_chars": 514,
-        "composed_through_revision": 1557,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11621,16 +11048,13 @@
     },
     "two_skeleton_loop_obstructions_reduce_to_one_four_label_cycle": {
       "composition": {
-        "body_chars": 555,
-        "composed_through_revision": 1559,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11640,16 +11064,13 @@
     },
     "two_slot_persistent_boundary_reservoirs_are_uniformly_blocked_and_rooted": {
       "composition": {
-        "body_chars": 577,
-        "composed_through_revision": 1552,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -11803,16 +11224,13 @@
     },
     "verified_five_position_obstruction_and_ordered_tuple_compression": {
       "composition": {
-        "body_chars": 547,
-        "composed_through_revision": 1539,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
