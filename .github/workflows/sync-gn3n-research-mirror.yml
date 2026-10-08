@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/sync-gn3n-research-mirror.yml"
+      - ".github/workflows/sync-research-schema.yml"
+      - "scripts/sync_research_mirror.py"
 
 permissions:
   contents: write
