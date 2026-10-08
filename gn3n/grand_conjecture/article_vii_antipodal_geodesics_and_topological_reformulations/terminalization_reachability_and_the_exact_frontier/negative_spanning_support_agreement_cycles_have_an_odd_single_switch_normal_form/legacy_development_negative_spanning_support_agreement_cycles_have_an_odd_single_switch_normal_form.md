@@ -1,0 +1,9 @@
+# Negative spanning support-agreement cycles have an odd single-switch normal form — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Let H be a minimum counterexample and choose one deletion two-cover F_x for each x. Suppose the support-agreement graph is exactly a spanning cycle C=(v_0,...,v_{n-1},v_0) whose agreement-edge sign product is negative. Name the two supports of each F_i by signs chi_i in {+1,-1}. For an agreement edge v_i v_{i+1}, let epsilon_i be the sign identifying the common support partition. First observe that the two restored labels must enter the same aligned support: if chi_i(v_{i+1}) and epsilon_i chi_{i+1}(v_i) were opposite, then the support of F_i containing v_{i+1} and the opposite support of F_{i+1} containing v_i would be disjoint Hamiltonian supports covering all of H. Thus chi_i(v_{i+1})=epsilon_i chi_{i+1}(v_i) on every cycle edge. Gauge the support names so epsilon_i=+1 for 0<=i<n-1 and epsilon_{n-1}=-1. For each vertex v_j, agreement propagation along the path C-v_j shows that there is a sign alpha_j such that chi_i(v_j)=alpha_j when i<j and chi_i(v_j)=-alpha_j when i>j. The same-side condition on each positive edge i,i+1 gives alpha_{i+1}=-alpha_i. On the closing negative edge it gives alpha_{n-1}=alpha_0. Hence n is odd, say n=2r+1, and alpha_j=(-1)^j alpha_0. Consequently every deletion cover F_{v_i} has the phase-switch alternating support partition: vertices before the hole alternate with one parity, vertices after the hole alternate with the opposite parity. Both supports have order r. Thus the unique two-connected support-agreement obstruction from the signed-cycle theorem is necessarily an odd balanced single-switch deletion-cover family; it is the same set-theoretic geometry as the alternating-cover patterns arising in the kappa_2=1 Ky Fan analysis, now derived purely from support agreement and the no-two-cover condition.

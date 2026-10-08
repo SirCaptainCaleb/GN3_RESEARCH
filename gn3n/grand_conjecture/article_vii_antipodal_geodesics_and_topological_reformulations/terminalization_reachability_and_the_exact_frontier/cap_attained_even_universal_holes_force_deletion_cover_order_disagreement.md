@@ -1,0 +1,9 @@
+# Cap-attained even universal holes force deletion-cover order disagreement
+
+## Composition
+
+(none yet)
+
+## Development
+
+Assume n=2r+2 and x is in the universal fixed-hole branch. Let M be a Hamiltonian support containing x with |M|=r, attaining the universal support cap, and put Y=V(H)-M, so |Y|=r+2. Every set Y-{y}, y in Y, has order r+1 and lies in H-x. By the universal balanced-partition theorem it is Hamiltonian. Fix one Hamilton order on M. For each y in Y choose any Hamilton order on Y-{y} and form the deletion cover F_y = M | (Y-{y}) of H-y. If |Y|>=4 and the family {F_y:y in Y} were pairwise compatible on common domains, the deletion-cover compatibility gluing theorem would produce a spanning two-cover of H, contradiction. Therefore some F_y,F_z are incompatible. Their support partitions on H-{y,z} are nevertheless identical: M | (Y-{y,z}), and the order on M was fixed identically. Hence the incompatibility is an order disagreement between the chosen Hamilton orders on Y-{y} and Y-{z} when restricted to Y-{y,z}. By the order-disagreement machinery this yields a tight reversing triple / positioned reversal on the exterior support. Thus the cap-attained even universal fixed-hole branch cannot remain quiet: it necessarily enters the established reversal-disturbance interface. This uses no ambient small-order cutoff; |Y|<4 is only the intrinsic bounded threshold of the four-cover gluing lemma.

@@ -1,0 +1,9 @@
+# Seed-preserving maximalization retains absolute endpoint nonaugmentability — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Let S_0 be any Hamiltonian support with pc(H-S_0)<=2. Among Hamiltonian supports S containing S_0 and satisfying pc(H-S)<=2, choose one of maximum cardinality. Fix a two-cover H-S=P|Q. Then for every nonempty subset E of the displayed endpoints of P and Q, H[S union E] is non-Hamiltonian. Indeed deleting E from the displayed complementary paths leaves at most two inherited intervals, so pc(H-(S union E))<=2. If S union E were Hamiltonian, it would be a larger admissible support still containing S_0, contradicting the constrained maximality of S. In particular every exposed complementary endpoint z is noninsertable into every Hamilton order of S that would witness an enlargement, and for any displayed Hamilton order S=(s_1,...,s_k) one has h(s_2,s_1,z)=1 and h(z,s_k,s_{k-1})=1. Thus all local endpoint-hook and absolute-nonaugmentability consequences of maximal-support normalization survive when maximality is imposed subject to retaining a prescribed seed. What is lost is the global comparison |P|,|Q|<=|S|, since P and Q need not contain S_0 and therefore are not competitors in the constrained optimization. For Article VII, one may take S_0 to be the central four- or five-support produced inside the minimum-hole six-label band. This preserves the hole-bearing provenance of the bounded seed while retaining the local maximal-support endpoint geometry.

@@ -1,0 +1,9 @@
+# The matching-block exception is necessarily a one-edge feedback defect — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Retain the canonical matching-block six-set U=C union {a,b}, with fixed-pair classes C_+={y_1,y_2}, C_-={z_1,z_2}. The comparison digraph with shadow edge ab deleted is acyclic. We prove that the full comparison digraph cannot be acyclic. Suppose otherwise and choose a global edge order representing H[U]. In the non-Hamiltonian core C, let J={y_1y_2,z_1z_2} be the opposite-edge matching formed by the two fixed-pair classes. The three opposite-edge matchings of C occur in strict blocks. If J is the lowest block, order z_1,z_2 so that az_1<az_2. For every cross pair the hook rectangle gives ay<yz<az. Hence y_1y_2<y_2z_1<az_1<az_2, so (y_1,y_2,z_1,a,z_2) is an increasing Hamilton path of C+a, contradiction. If J is the highest block, order y_1,y_2 so ay_1<ay_2. Then ay_1<ay_2<y_2z_1<z_1z_2, giving the increasing Hamilton path (y_1,a,y_2,z_1,z_2), again a contradiction. Therefore J would have to be the middle block. Let the two cross matchings be M_low<M_high. Order y_i,y_j so ay_i<ay_j, and let z_k be the unique vertex for which y_jz_k belongs to M_low. The hook rectangle gives ay_j<y_jz_k, while M_low<J gives y_jz_k<z_1z_2. Hence ay_i<ay_j<y_jz_k<z_1z_2, and (y_i,a,y_j,z_k,z_{3-k}) is an increasing Hamilton path of C+a, contradiction. Thus Gamma(U) is necessarily cyclic whereas Gamma(U)-{ab} is acyclic. Combined with the no-triangle insertion theorem, every canonical matching-block exception has a shortest directed comparison cycle through ab of length 4, 5, or 6. Deleting ab from that cycle exposes a Hamiltonian support of the same order containing a and b.
