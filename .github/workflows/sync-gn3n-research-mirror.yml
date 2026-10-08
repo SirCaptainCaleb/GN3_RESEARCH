@@ -1,4 +1,4 @@
-name: GN3N | Rebuild current artifact (sync Supabase first)
+name: GN3N | Refresh research artifact
 # audit model refresh
 
 on:
