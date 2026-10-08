@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The rank problem also receives information from the terminal-pair graph of nonspecial edges.

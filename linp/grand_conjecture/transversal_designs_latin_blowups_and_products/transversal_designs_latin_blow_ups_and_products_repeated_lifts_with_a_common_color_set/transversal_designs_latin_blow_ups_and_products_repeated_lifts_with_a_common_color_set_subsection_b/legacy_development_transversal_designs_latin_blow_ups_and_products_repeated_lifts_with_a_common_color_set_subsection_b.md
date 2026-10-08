@@ -1,9 +1,5 @@
 # Theorem 5 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 If \(H_r\) is \(P_\ell^{(3)}\)-free for arbitrarily large \(r\), then

@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with

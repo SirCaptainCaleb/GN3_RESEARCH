@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix \(\ell\ge2\). This approach seeks to prove

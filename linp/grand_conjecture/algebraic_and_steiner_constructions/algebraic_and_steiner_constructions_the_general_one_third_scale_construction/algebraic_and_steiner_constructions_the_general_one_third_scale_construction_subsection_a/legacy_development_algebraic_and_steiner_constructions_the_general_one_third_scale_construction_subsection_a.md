@@ -1,9 +1,5 @@
 # Proposition 1 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For every \(\ell\ge2\),

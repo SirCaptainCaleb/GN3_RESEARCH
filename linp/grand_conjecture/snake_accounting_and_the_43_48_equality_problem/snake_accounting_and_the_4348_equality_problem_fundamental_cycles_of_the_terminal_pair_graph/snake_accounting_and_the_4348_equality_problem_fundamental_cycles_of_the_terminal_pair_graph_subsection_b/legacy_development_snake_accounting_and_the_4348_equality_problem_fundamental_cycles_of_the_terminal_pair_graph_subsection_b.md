@@ -1,9 +1,5 @@
 # Lemma 9 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 After deleting \(o(S)\) further incidences, one obtains families \(H_v\subseteq G_v\) satisfying

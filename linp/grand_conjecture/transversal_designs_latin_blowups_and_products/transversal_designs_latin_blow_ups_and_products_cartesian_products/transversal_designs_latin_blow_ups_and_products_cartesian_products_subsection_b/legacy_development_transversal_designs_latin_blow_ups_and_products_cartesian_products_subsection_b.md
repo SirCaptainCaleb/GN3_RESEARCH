@@ -1,9 +1,5 @@
 # Theorem 6 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 If \(H\) contains a linear path with \(a\) edges and \(K\) contains one with \(b\) edges, then \(H\square K\) contains a linear path with

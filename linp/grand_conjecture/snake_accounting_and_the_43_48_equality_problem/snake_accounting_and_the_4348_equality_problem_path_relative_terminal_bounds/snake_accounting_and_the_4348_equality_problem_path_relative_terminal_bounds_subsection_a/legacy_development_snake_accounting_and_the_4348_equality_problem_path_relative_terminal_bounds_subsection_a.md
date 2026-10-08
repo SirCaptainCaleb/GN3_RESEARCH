@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For a maximum \(p\)-edge path \(P\) ending at \(v\), and an incident edge \(f\ne g_p\), let

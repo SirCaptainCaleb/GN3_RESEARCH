@@ -1,9 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(e\) have edge rank \(q\).

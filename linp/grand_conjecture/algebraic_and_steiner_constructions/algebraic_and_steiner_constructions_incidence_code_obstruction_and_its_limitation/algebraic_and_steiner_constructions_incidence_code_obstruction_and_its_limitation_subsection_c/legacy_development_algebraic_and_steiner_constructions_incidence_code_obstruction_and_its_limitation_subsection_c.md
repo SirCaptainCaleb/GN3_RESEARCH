@@ -1,9 +1,5 @@
 # Theorem 8 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 If

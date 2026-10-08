@@ -1,9 +1,5 @@
 # Theorem 4 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Assign weights \(0\le w_e\le1\) to the edges of \(H\). Put

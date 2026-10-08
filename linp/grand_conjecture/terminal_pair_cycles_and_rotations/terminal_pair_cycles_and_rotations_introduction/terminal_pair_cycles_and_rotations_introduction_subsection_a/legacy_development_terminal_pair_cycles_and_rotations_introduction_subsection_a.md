@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(H\) be a finite \(P_\ell^{(3)}\)-free linear \(3\)-graph with \(m\) edges and \(n\) vertices. Let \(s\) be the number of special edges.

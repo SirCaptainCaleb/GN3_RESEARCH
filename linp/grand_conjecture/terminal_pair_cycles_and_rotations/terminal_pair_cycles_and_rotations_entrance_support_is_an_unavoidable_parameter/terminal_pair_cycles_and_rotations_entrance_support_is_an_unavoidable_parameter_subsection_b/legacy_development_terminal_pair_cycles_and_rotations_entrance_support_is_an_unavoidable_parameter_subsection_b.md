@@ -1,9 +1,5 @@
 # Proposition 7 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 \[

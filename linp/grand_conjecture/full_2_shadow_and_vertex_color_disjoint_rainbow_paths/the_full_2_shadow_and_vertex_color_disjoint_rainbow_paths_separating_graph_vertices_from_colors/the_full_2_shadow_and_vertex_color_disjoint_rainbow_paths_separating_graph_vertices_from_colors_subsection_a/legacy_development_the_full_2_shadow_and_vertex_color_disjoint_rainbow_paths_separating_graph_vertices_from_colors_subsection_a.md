@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 There is a simpler reduction that forces color-vertex disjointness by construction, at the cost of a factor two.

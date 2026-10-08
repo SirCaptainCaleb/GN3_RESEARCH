@@ -1,9 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(H\) be vertex-minimal among linear \(3\)-graphs satisfying all of the following:

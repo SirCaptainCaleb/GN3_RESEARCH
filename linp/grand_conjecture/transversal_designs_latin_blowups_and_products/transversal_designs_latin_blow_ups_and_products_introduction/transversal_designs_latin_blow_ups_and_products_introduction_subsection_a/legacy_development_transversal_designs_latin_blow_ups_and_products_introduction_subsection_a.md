@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 This rehearsal asks whether a dense finite \(P_\ell^{(3)}\)-free component can be enlarged while preserving a favorable ratio between edge density and maximum path length.

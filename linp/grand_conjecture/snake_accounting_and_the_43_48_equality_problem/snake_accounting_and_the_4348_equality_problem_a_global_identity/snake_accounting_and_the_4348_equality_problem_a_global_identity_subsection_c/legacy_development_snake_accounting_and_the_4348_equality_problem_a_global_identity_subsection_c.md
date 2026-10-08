@@ -1,9 +1,5 @@
 # Theorem 5 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 \[

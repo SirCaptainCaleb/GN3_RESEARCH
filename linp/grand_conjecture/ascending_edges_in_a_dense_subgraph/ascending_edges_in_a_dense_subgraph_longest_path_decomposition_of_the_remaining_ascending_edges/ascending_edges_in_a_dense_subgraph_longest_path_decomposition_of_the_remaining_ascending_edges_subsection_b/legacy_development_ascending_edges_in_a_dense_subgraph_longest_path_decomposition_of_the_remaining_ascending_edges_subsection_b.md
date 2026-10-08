@@ -1,9 +1,5 @@
 # Lemma 7 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix \(\varepsilon>0\). Among the edges in class \(X\) assigned to a fixed vertex \(v\), only \(O_\varepsilon(1)\) can satisfy

@@ -1,9 +1,5 @@
 # Theorem 2 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The hyperedges \(e_1,\ldots,e_k\) form a linear hypergraph path if and only if

@@ -1,9 +1,5 @@
 # Corollary 5 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 If \(\Delta(H)\le \ell-2\), then

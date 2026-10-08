@@ -1,9 +1,5 @@
 # Corollary 5 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For a nonspecial edge \(e\), let \(a(e)\) be the vertex rank of its unique entrance and let

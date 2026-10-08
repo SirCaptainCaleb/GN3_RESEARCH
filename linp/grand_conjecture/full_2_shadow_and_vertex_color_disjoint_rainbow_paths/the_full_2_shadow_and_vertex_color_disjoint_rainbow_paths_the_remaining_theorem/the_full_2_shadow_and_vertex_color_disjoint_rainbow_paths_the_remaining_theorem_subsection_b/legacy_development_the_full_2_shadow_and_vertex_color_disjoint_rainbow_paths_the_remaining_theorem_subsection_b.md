@@ -1,9 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Prove that every properly edge-colored graph satisfying the triangle rule (4) and

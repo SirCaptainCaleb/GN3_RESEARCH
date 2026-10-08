@@ -1,9 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Determine whether there is an infinite family of line-sign functions in (12) for which the resulting Steiner triple systems have no spanning linear path.

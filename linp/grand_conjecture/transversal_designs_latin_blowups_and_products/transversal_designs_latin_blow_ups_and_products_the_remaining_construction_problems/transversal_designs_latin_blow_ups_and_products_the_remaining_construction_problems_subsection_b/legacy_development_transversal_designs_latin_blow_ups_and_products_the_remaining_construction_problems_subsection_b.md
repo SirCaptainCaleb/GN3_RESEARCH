@@ -1,9 +1,5 @@
 # Open problem A — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Find a finite linear \(3\)-graph \(T\) with \(v\) vertices, \(m\) edges, and linear circumference \(s(T)\) satisfying

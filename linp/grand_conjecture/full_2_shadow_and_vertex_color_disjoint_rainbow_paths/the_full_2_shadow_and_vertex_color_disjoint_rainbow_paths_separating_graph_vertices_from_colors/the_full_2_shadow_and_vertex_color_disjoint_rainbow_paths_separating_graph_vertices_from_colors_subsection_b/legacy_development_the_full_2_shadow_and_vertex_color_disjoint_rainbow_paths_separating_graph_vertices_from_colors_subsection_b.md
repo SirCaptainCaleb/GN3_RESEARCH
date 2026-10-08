@@ -1,9 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Every rainbow path in \(J\) lifts to a linear hypergraph path of the same length in \(H\).

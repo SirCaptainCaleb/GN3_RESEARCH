@@ -12,3 +12,6 @@ These are behavioral heuristics for mathematical judgment during active research
 
 
 5. **Compress at natural accumulation points.** At every research level, let its children develop until their combined structure supports a useful synthesis; then compose, preserving detail below and strengthening the route above.
+
+
+6. **Compose as mathematics, not metadata.** Composition is optional at every organizing level. When present, write publication-quality mathematical exposition with precise statements, defined terminology (locally or in the Dictionary), warranted proofs, and clear open obligations. Synthesize the child mathematics; never replace exposition with a table of contents or progress inventory.

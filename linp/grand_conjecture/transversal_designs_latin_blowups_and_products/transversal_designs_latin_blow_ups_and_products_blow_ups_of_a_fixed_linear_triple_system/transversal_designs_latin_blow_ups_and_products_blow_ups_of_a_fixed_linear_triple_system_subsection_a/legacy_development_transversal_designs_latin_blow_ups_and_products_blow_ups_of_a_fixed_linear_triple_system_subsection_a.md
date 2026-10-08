@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(T\) be a fixed linear \(3\)-graph with \(v\) vertices and \(m\) edges. Replace every vertex \(x\in V(T)\) by a class \(X_x\) of \(q\) vertices. For each hyperedge \(\{x,y,z\}\in E(T)\), place an arbitrary \(TD(3,q)\) on

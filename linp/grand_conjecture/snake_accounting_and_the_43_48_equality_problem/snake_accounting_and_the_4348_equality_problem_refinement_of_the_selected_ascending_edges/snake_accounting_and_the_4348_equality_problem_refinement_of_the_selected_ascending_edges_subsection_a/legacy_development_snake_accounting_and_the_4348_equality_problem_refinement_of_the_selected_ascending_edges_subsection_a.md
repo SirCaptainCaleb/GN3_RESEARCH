@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The identity also controls the intersections at the unique entrance and at the two terminals.

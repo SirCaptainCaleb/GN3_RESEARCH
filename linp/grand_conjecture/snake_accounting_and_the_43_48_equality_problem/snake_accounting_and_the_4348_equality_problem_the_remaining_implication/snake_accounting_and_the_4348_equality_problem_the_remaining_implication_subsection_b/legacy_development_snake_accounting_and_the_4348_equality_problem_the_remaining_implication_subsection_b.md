@@ -1,9 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For one of the three families in Theorem 10, prove that \(\Omega(S)\) vertex-indexed occurrences cannot be supported by \(o(S)\) distinct global objects with unbounded multiplicity.

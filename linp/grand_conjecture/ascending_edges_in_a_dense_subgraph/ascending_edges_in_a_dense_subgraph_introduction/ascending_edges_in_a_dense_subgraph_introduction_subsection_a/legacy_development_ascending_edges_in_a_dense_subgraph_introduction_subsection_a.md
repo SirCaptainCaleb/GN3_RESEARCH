@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(H\) be a finite linear \(3\)-graph. We use the notation \(\phi(e,v)\), \(\phi(e)\), and \(\phi(v)\) from the preceding rehearsal. A nonspecial edge \(e\) with unique entrance \(x\) is ascending when

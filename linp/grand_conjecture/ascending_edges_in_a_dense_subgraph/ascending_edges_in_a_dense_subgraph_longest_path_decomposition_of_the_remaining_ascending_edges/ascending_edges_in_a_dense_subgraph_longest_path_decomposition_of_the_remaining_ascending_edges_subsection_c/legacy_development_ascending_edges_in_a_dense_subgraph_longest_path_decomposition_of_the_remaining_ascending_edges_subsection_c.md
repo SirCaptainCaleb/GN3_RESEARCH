@@ -1,9 +1,5 @@
 # Lemma 8 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(U(v)\) be the class \(U\) edges assigned to \(v\). There is a set \(W(v)\) of vertices with

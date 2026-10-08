@@ -1,9 +1,5 @@
 # Lemma 6 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let

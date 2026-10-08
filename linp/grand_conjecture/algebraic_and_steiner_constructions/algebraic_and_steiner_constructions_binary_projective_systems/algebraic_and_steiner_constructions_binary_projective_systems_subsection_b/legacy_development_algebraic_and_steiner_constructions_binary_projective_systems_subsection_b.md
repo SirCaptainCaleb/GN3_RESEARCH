@@ -1,9 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Suppose a spanning linear path in \(H_d\) has joint set \(J\). Then

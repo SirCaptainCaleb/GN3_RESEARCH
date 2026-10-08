@@ -1,9 +1,5 @@
 # Theorem 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The projective system on \(\mathbb F_2^4\setminus\{0\}\) contains no \(7\)-edge linear path. Consequently

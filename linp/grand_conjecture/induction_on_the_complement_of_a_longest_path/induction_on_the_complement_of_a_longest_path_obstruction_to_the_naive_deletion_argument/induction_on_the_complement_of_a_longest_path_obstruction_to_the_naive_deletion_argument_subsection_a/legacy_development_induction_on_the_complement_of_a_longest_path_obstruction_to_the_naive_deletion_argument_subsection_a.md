@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the precise conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).

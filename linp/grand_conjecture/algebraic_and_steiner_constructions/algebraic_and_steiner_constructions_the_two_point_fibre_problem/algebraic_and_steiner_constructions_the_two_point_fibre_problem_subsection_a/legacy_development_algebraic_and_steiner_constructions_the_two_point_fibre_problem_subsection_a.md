@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The most economical remaining Boolean model has one distinguished point \(\infty\) and, over each point \(x\) of a binary projective quotient, a pair

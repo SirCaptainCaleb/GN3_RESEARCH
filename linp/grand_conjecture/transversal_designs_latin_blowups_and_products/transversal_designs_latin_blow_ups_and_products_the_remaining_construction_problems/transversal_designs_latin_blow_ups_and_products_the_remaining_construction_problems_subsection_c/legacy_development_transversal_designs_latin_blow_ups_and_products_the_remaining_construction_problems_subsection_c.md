@@ -1,9 +1,5 @@
 # Open problem B — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Construct a partial or nonregular transversal system with nearly quadratic many triples in its three classes but without the long rainbow paths forced by full transversal designs.

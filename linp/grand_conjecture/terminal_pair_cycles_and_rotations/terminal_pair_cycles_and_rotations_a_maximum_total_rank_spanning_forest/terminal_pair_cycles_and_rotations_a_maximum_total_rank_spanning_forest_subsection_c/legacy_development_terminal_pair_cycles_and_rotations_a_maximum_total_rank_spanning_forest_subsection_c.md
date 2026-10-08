@@ -1,9 +1,5 @@
 # Lemma 5 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(e\) and \(f\) be two nonspecial hyperedges whose terminal pairs are adjacent in \(T\) at a common terminal \(v\). If

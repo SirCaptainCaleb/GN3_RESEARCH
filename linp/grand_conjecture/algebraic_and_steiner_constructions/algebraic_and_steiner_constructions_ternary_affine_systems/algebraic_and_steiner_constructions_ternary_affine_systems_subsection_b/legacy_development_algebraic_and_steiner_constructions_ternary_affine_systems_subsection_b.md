@@ -1,9 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 If \(A_d\) has a spanning linear path with joint set \(J\), then

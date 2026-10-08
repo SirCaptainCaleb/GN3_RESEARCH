@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For linear \(3\)-graphs \(H\) and \(K\), define their Cartesian product on \(V(H)\times V(K)\) by taking edges of the forms

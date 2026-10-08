@@ -1,9 +1,5 @@
 # Lemma 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(P\) be a \(p\)-edge path ending at \(v\), and let \(F_Q\) be a family of ascending edges \(e=\{x,u,v\}\) at which \(v\) is terminal and

@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple

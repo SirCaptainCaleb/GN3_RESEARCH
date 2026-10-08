@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Fix \(t\ge1\). Form a graph \(R_t\) as follows. For every nonspecial edge

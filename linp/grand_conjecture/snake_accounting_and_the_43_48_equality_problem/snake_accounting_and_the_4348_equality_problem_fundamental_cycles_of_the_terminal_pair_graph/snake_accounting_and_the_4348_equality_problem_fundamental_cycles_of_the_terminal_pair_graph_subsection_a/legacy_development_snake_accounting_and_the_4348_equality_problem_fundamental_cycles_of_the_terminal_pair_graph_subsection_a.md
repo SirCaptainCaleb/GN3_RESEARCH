@@ -1,9 +1,5 @@
 #  — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Form a graph \(J\) whose edges are the terminal pairs \(uv\) of the edges

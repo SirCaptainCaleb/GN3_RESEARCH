@@ -1,9 +1,5 @@
 # Lemma 9 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Along every directed arc \(x\to y\),

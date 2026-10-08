@@ -1,9 +1,5 @@
 # Lemma 4 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For every nonisolated \(v\),

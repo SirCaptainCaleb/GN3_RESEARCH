@@ -1,9 +1,5 @@
 # Open problem — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For every longest \(k\)-edge path \(P\) in a \(P_\ell^{(3)}\)-free linear \(3\)-graph \(H\), with

@@ -1,9 +1,5 @@
 # Lemma 2 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 The indexed clique family \(\{C_x:x\in V(H)\}\) has the following properties.

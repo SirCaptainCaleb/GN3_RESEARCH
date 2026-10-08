@@ -1,9 +1,5 @@
 # Proposition 7 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 For every \(t\), there is a linear \(3\)-graph whose full shadow contains the graph path

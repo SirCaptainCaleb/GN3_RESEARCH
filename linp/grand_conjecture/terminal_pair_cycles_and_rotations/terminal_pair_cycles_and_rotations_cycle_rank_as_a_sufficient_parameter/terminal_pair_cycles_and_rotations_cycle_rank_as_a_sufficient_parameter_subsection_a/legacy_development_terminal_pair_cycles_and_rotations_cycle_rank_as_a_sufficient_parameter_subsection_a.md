@@ -1,9 +1,5 @@
 # Proposition 3 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Suppose

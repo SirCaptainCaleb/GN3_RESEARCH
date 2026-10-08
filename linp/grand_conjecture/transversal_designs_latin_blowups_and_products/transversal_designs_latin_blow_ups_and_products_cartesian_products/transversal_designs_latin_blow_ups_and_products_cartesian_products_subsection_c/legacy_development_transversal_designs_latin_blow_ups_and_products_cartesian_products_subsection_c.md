@@ -1,9 +1,5 @@
 # Corollary 7 — preserved pre-item development
 
-## Composition
-
-(none yet)
-
 ## Development
 
 Let \(H\) have \(n\) vertices, \(m\) edges, and maximum path length \(L\). Its \(t\)-fold Cartesian power has density
