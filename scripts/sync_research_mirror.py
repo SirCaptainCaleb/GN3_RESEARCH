@@ -730,3 +730,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Manual regeneration requested after subsection-development retirement and composition policy update.
