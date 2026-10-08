@@ -731,4 +731,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Manual regeneration requested after subsection-development retirement and composition policy update.
+# Regeneration marker: composition clean slate 2026-10-07; resync NOR, GN3N, and LINP.
