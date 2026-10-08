@@ -27,7 +27,7 @@ Returns live events and current composition state since a revision.
 
 ## Mathematical consumption (independent of containment and composition)
 
-All Article, Section, Subsection, Item, and Result IDs are globally unique per schema. Their unified typed records are in `nodes(id, type, data, consumed_by, consumes)`; the existing level-specific tables remain synchronized compatibility storage. Consumption RPCs infer node type from ID; callers must not supply a type.
+All Article, Section, Subsection, Item, and Result IDs are globally unique per schema. Their unified typed records are in `nodes(id, type, data, consumed_by, consumes)`; the former level-specific physical tables have been retired. Consumption RPCs infer node type from ID; callers must not supply a type.
 
 The child is authoritative: Sections, Subsections, Items and Results each store `consumed_by: [parent_ids]`. One child may have multiple consumers. Parent Articles, Sections, Subsections, and Items cache the corresponding `consumes: [child_ids]`; changes update that cache transactionally. None of these links requires an existing composition.
 
@@ -61,7 +61,7 @@ Revises an individual Result with optimistic concurrency.
 Returns the manuscript hierarchy from the grand conjecture through Article, Section, Subsection, Item, and Result.
 
 ### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
-Edits a Subsection title only. Subsection development bodies are retired; mathematical development belongs in Items and Results.
+Edits a Subsection title and/or its explicit consumes list. Subsection development bodies are retired; mathematical development belongs in Items and Results.
 
 ### compose(session_id, node_type, node_id, payload, expected_composition_version)
 Writes optional, publication-quality mathematical exposition for an Item, Subsection, Section, or Article. An absent composition is valid. An existing composition must have precise mathematical statements, full definitions locally or in the Dictionary, justified proofs, and explicit uncertainties; a child inventory or progress log is not a composition. payload contains body and depends_on as an explicit array of selected direct lower-level composition IDs. Items use [] and compress their Results. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
