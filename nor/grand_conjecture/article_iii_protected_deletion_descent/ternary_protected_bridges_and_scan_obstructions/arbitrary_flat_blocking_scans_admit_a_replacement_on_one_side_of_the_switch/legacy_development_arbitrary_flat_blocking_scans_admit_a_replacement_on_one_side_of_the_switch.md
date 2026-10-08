@@ -1,7 +1,5 @@
 # Arbitrary flat blocking scans admit a replacement on one side of the switch — preserved pre-item development
 
-## Development
-
 Consolidated from Article II §205. This repairs the use of scan uniqueness, while keeping the remaining termination obligation explicit.
 
 Let alpha be alternating with zero tetrahedral coboundary. Let O=(v_1,...,v_m) have word 0^p1^q with p,q>=3, and let an exterior coordinate x block all insertions. Set s_i=alpha(x,v_i,v_{i+1}).

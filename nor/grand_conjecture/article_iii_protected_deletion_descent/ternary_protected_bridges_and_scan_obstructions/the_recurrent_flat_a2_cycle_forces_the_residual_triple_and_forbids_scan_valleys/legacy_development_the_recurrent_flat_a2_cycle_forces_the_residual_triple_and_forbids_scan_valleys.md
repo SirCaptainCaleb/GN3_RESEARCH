@@ -1,7 +1,5 @@
 # The recurrent flat A2 cycle forces the residual triple and forbids scan valleys — preserved pre-item development
 
-## Development
-
 ## The recurrent flat A2 cycle forces the residual triple and forbids scan valleys
 
 Work in the recurrent flat A2 replacement cycle with residual coordinates

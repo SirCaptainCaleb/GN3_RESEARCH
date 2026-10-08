@@ -1,7 +1,5 @@
 # The directed prefix prism fails the Hartman invariance test — preserved pre-item development
 
-## Development
-
 The literal threshold-prefix automaton is directed and acyclic. If z→z' is a legal extension, the set of boundary targets reachable forward from z' can be a proper subset of the set reachable from z. Consequently adjacent same-polarity states need not have equal reachable-target sets.
 
 Thus a label defined as the least unreachable target is not constant along directed same-color edges. This destroys the key Hartman implication.

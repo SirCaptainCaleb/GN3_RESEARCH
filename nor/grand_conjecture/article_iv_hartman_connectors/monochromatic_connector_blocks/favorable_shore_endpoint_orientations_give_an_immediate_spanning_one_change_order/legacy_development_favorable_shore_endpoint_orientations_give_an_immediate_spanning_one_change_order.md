@@ -1,7 +1,5 @@
 # Favorable shore endpoint orientations give an immediate spanning one-change order — preserved pre-item development
 
-## Development
-
 ## Favorable shore endpoint orientations give an immediate spanning one-change order
 
 Work in the switching-normalized split

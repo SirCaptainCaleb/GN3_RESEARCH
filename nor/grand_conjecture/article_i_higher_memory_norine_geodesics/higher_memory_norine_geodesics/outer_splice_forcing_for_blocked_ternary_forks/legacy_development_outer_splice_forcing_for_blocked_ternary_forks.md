@@ -1,7 +1,5 @@
 # Outer-splice forcing for blocked ternary forks — preserved pre-item development
 
-## Development
-
 ## Outer-splice lemma for ternary coordinate labels
 
 Work in coordinate arity \(r=3\), the directed translation-invariant sector of \(N_4\). Normalize the fork color to \(0\).

@@ -1,7 +1,5 @@
 # Widely separated blocker scans force codimension-two pair insertion — preserved pre-item development
 
-## Development
-
 ## Widely separated blocker scans force codimension-two pair insertion
 
 Continue with the exact two-exterior scan formula of root §158.

@@ -1,7 +1,5 @@
 # A one-band-per-face Sperner carrier yields a witnessed macro-root closing path — preserved pre-item development
 
-## Development
-
 ## A one-band-per-face Sperner carrier yields a witnessed macro-root closing path
 
 Continue with the consecutive-change defect of root §155.

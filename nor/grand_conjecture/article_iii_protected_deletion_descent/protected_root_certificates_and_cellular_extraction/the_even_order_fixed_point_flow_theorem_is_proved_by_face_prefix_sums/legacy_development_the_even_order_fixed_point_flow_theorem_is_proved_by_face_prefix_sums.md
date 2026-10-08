@@ -1,7 +1,5 @@
 # The even-order fixed-point flow theorem is proved by face prefix sums — preserved pre-item development
 
-## Development
-
 ## The even-order fixed-point flow theorem is proved by face prefix sums
 
 This is a proof repair of root §35, preserving its fixed-point dichotomy and cut-flow conclusion.

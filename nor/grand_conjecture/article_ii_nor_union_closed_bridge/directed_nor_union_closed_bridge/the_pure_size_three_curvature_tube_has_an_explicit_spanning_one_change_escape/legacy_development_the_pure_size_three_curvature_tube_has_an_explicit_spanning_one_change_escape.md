@@ -1,7 +1,5 @@
 # The pure size-three curvature tube has an explicit spanning one-change escape — preserved pre-item development
 
-## Development
-
 Work in the pure-orientation ternary sector h=alpha. Let P=(f_1,...,f_m) be a sigma-monochromatic path and suppose its entire omitted set is U={a,b,c}. Put tau=1-sigma. Assume U is a tau-front circuit at (f_1,f_2), with persistent directed pair cycle a->b->c->a. The propagation theorem gives, for every relevant j,
 alpha(a,b,f_j)=alpha(b,c,f_j)=alpha(c,a,f_j)=tau,
 and

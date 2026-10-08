@@ -1,7 +1,5 @@
 # Two ported zero paths glue across ordered tournament modules of arbitrary size — preserved pre-item development
 
-## Development
-
 ## Closure under ordered joins and strong-component reduction
 
 Fix the flat split B→z→A→x and the representing shore tournament T=t[A]. A ported zero path is an ordered shore path with color zero on each consecutive triple and forward first and last ordered pairs when defined. An empty path is permitted as a member of a two-path cover.

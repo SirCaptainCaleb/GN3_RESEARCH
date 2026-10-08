@@ -1,7 +1,5 @@
 # Audit: tail truncation does not propagate switch polarization — preserved pre-item development
 
-## Development
-
 ## Audit
 
 The earlier version claimed that a common-tail deletion 3-cycle with tail word sigma^p(1-sigma)^q forces polarization at the first post-switch coordinate by truncating the final run to length one.

@@ -1,7 +1,5 @@
 # Hamiltonian regular cut designs have defect at least n — preserved pre-item development
 
-## Development
-
 Assume the surviving single-cycle zero of the irrational two-moment perturbation. Thus the physical roots form a Hamiltonian cycle v_1,...,v_n, all barrier sides agree, and the protected p-cuts C_i are p-regular with v_i notin C_i and v_{i+1} in C_i.
 
 Define B_i=C_i minus {v_{i+1}}. Then |B_i|=p-1 and B_i avoids both v_i and v_{i+1}. Because the successor matching uses every coordinate once and the C_i incidence design is p-regular, every coordinate belongs to exactly p-1 of the n sets B_i.

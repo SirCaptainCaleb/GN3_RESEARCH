@@ -1,7 +1,5 @@
 # Hamiltonian endpoint cycles emit an immediate chord without corner lifting — preserved pre-item development
 
-## Development
-
 ## Hamiltonian endpoint cycles emit an immediate chord without corner lifting
 
 Work in the coboundary-flat alternating ternary endpoint regime. Let

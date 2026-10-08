@@ -1,7 +1,5 @@
 # Shortest middle run equals the shifted two-circuit frontier — preserved pre-item development
 
-## Development
-
 ## Shortest middle run equals the shifted two-circuit frontier
 
 Work in a minimum directed ternary counterexample. Delete a vertex (x), and choose a one-change order

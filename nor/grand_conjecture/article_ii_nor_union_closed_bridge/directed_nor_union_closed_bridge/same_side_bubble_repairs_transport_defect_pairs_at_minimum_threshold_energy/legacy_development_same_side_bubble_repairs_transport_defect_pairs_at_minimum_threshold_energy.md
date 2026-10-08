@@ -1,7 +1,5 @@
 # Same-side bubble repairs transport defect pairs at minimum threshold energy — preserved pre-item development
 
-## Development
-
 ## Same-side bubble toggles are nonincreasing for threshold defect count
 
 Fix a ternary coordinate order and a switch cut. Let E be the number of ternary windows whose actual color disagrees with the threshold target prescribed by the cut.

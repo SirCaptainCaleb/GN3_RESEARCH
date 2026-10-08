@@ -1,7 +1,5 @@
 # Failure of both oriented three-block shortcuts forces a crossed two-coordinate blocker pattern — preserved pre-item development
 
-## Development
-
 ## Failure of both oriented three-block shortcuts forces a crossed two-coordinate blocker pattern
 
 Assume a minimum counterexample. Fix distinct coordinates \(x,z\), and let

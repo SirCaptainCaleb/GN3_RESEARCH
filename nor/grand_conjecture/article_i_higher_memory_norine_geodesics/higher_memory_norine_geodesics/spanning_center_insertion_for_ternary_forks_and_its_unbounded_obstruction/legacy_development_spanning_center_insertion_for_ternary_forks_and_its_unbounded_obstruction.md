@@ -1,7 +1,5 @@
 # Spanning center insertion for ternary forks and its unbounded obstruction — preserved pre-item development
 
-## Development
-
 ## A spanning center-insertion exchange, and why it does not close the conjecture
 
 Work in coordinate arity r=3, the directed translation-invariant sector of N_4, with h(c,b,a)=1-h(a,b,c).

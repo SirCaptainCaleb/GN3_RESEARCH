@@ -1,7 +1,5 @@
 # The lexicographically extremal width-two full-full band has an exact two-bit six-set table — preserved pre-item development
 
-## Development
-
 ## The lexicographically extremal width-two full-full band has an exact two-bit six-set table
 
 Work in the coboundary-flat alternating ternary sector. Let a lexicographically maximal two-change order contain six consecutive coordinates

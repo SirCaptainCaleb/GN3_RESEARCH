@@ -1,7 +1,5 @@
 # Separated ternary repair moves fill realized commuting squares — preserved pre-item development
 
-## Development
-
 ## Separated ternary repair moves fill realized commuting squares
 
 Work in the alternating ternary repair graph on full coordinate orders. An adjacent transposition at bond i swaps the coordinates in positions i,i+1.

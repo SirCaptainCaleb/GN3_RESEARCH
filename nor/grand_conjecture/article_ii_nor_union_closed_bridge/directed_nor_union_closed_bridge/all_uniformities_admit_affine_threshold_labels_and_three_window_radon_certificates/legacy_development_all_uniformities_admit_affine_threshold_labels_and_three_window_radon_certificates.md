@@ -1,7 +1,5 @@
 # All uniformities admit affine threshold labels and three-window Radon certificates — preserved pre-item development
 
-## Development
-
 This offers a convex-geometric interface for every coordinate arity r, not just the ternary sector. Let pi be a coordinate order with m=n-r+1 nonempty windows and signs epsilon_i=(-1)^{h(pi_i,...,pi_{i+r-1})}. Set t_i=i-(m+1)/2, and define signed points v_i=epsilon_i(1,t_i) in R^2. Empty window words are automatically NOR-good and are handled separately.
 
 Separation theorem. The word has at most one change if and only if 0 does not belong to conv{v_1,...,v_m}. Equivalently there exist a,b in R with epsilon_i(a+b t_i)>0 for every i. If the word has one change, choose an affine function with its unique root strictly between the two runs and slope of the appropriate sign; for a constant word choose a nonzero constant. Conversely an affine function on a line can change sign at most once, so strict feasibility implies NOR. To see that failure has the claimed convex certificate without invoking an external separation theorem, any word with at least two changes contains i<j<k with epsilon_i=epsilon_k=-epsilon_j. The following positive coefficients sum to one and give a zero combination of v_i,v_j,v_k:

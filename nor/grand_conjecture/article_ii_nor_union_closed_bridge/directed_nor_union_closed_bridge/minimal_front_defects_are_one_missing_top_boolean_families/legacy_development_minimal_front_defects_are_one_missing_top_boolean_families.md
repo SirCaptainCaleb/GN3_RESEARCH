@@ -1,7 +1,5 @@
 # Minimal front defects are one-missing-top Boolean families — preserved pre-item development
 
-## Development
-
 ## Minimal front defects are one-missing-top Boolean families
 
 Work in the directed translation-invariant sector with coordinate arity (r\ge2). Let

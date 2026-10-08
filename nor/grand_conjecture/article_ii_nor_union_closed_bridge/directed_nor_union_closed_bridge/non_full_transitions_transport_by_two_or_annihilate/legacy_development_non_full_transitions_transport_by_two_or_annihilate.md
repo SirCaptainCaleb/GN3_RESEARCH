@@ -1,7 +1,5 @@
 # Non full transitions transport by two or annihilate — preserved pre-item development
 
-## Development
-
 ## Non-full transitions transport by two or annihilate
 
 Let

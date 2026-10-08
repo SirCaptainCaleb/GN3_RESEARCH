@@ -1,7 +1,5 @@
 # Face repetition in a lifted A3 four-cycle forces equal side signs — preserved pre-item development
 
-## Development
-
 ## Face repetition in a lifted A3 four-cycle forces equal side signs
 
 Consider an honest side-lifted positive zero whose physical support is a directed simple four-cycle

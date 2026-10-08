@@ -1,7 +1,5 @@
 # Minimum-run flat replacements alternate sides and have only one residual two-step drift — preserved pre-item development
 
-## Development
-
 
 Use the arbitrary-scan flat replacement theorem. Among all one-change deletion carriers in a minimum coboundary-flat ternary counterexample, including reversals and color complements, choose one
 

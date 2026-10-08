@@ -1,7 +1,5 @@
 # Reflection gallery roots are genuine side-lifted terminal barrier roots — preserved pre-item development
 
-## Development
-
 ## Label conversion for width-two reflection dynamics
 
 Use the rigid width-two full-full corridor normalized as

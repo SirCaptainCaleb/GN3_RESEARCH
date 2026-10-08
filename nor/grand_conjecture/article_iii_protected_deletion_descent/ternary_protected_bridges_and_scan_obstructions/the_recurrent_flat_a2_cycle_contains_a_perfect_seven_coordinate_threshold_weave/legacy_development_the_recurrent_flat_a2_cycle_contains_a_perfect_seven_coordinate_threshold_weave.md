@@ -1,7 +1,5 @@
 # The recurrent flat A2 cycle contains a perfect seven coordinate threshold weave — preserved pre-item development
 
-## Development
-
 ## The recurrent flat A2 cycle contains a perfect seven-coordinate threshold weave
 
 Assume the nontrivial (d=e=2) same-profile flat replacement cycle. Use the notation

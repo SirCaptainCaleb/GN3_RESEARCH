@@ -1,7 +1,5 @@
 # Residual flat drift terminates by reversal minimality — preserved pre-item development
 
-## Development
-
 ## Residual flat drift terminates by reversal-minimality
 
 Continue the setup of §206. Choose, among all one-change deletion carriers in a minimum coboundary-flat ternary counterexample, including reversals and global color complements, one whose normalized first run length

@@ -1,7 +1,5 @@
 # Monochromatic-band combing has the same strict potential as threshold-band combing — preserved pre-item development
 
-## Development
-
 ## Monochromatic-band combing has the same strict potential as threshold-band combing
 
 Work in the coboundary-flat alternating ternary sector. Fix a color \(\eta\in\{0,1\}\) and let \(I=[L,R]\) be a contiguous interval of window ranks on which every status equals \(\eta\).

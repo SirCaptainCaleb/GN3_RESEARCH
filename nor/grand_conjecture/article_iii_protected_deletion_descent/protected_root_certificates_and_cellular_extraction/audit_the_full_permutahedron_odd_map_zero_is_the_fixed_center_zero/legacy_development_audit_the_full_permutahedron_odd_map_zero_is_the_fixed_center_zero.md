@@ -1,7 +1,5 @@
 # Audit: the full permutahedron odd map zero is the fixed center zero — preserved pre-item development
 
-## Development
-
 ## Audit: the full-permutahedron odd-map zero is the fixed-center zero
 
 Subsection 14 constructs an odd piecewise-affine descent-root map on the entire centered permutahedron

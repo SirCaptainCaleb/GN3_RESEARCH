@@ -1,7 +1,5 @@
 # Audit synthesis: g=1 boundary repair is complete locally; iteration still needs a common potential — preserved pre-item development
 
-## Development
-
 This is a synthesis/audit note.
 
 The old g=1 missing-boundary-window issue is solved and should not be reopened:

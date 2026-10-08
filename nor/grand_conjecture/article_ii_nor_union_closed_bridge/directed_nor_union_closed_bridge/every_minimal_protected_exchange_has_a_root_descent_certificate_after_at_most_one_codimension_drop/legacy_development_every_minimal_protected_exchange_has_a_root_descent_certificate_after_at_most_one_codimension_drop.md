@@ -1,7 +1,5 @@
 # Every minimal protected exchange has a root descent certificate after at most one codimension drop — preserved pre-item development
 
-## Development
-
 ## Every minimal protected exchange has a root descent certificate after at most one codimension drop
 
 Let (h) be a reversal-odd binary label on ordered (r)-tuples. Work at a one-change deletion witness in a minimum coordinate counterexample chosen with first run (p) minimal, and consider the protected replacement bridge

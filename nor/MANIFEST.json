@@ -176,7 +176,7 @@
   },
   "brainstorm_count": 7,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T14:19:54.749647+00:00",
+  "generated_at": "2026-10-08T14:43:06.18956+00:00",
   "item_count": 831,
   "mirror_format": 18,
   "result_count": 0,
@@ -416,7 +416,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 3459,
+  "snapshot_revision": 3466,
   "startup_broadcasts": [],
   "subsection_versions": {
     "a2_recurrent_carriers_are_cooriented_in_physical_root_space": {

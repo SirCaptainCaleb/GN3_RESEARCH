@@ -1,7 +1,5 @@
 # A flat ternary switch carries an exact boundary-separated repair square — preserved pre-item development
 
-## Development
-
 ## A flat ternary switch carries an exact boundary-separated repair square
 
 Work in the coboundary-flat alternating ternary sector. Let four consecutive coordinates

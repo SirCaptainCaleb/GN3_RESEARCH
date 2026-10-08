@@ -1,7 +1,5 @@
 # Finite witnesses for a separated color inversion — preserved pre-item development
 
-## Development
-
 
 Let \(p\) be the first \(0\) and \(q\) the last \(1\) of a binary word. Then
 \[

@@ -1,7 +1,5 @@
 # Every honest side-balanced A3 carrier has a same-middle switch-crossing repair edge — preserved pre-item development
 
-## Development
-
 Let an honest side-lifted switch-prism zero be supported in one exact ternary A3 Coxeter block B of four consecutive coordinates. Because its lifted scalar coordinate is side-balanced, the support contains both pre-switch and post-switch internal labels. Therefore the switch lies between the two internal ternary-window ranks of B.
 
 Normalize the target to 0 on the pre side and 1 on the post side.

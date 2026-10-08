@@ -1,7 +1,5 @@
 # Every three-root protected zero in a pure ternary carrier is removable or closes NOR — preserved pre-item development
 
-## Development
-
 ## Every three-root protected zero in a pure ternary carrier is removable or closes NOR
 
 Continue from root §177 in the pure alternating ternary sector.

@@ -1,7 +1,5 @@
 # Audit: alternate-middle A3 extraction changes the tracked Tucker coordinate — preserved pre-item development
 
-## Development
-
 ## Audit: the alternate-middle reduction changes the tracked middle coordinate
 
 Subsection 98 claims that every honest lifted A3 zero contains a controlled repair. Its local cycle calculations are useful, but the first reduction step does not currently justify invoking the arbitrary complementary-cell extraction theorem.

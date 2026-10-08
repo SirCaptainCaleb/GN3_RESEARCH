@@ -1,7 +1,5 @@
 # Deep-core flat combing preserves the outermost root and terminates at full barriers or endpoint collars — preserved pre-item development
 
-## Development
-
 ## Deep-core flat combing preserves the outermost root and terminates at full barriers or endpoint collars
 
 Let \(\pi\) be a bad ternary order with first and last change positions

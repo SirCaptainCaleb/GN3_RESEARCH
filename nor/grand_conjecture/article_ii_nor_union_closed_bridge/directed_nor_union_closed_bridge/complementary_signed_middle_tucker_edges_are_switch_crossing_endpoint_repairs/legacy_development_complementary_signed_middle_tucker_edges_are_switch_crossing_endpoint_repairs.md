@@ -1,7 +1,5 @@
 # Complementary signed-middle Tucker edges are switch-crossing endpoint repairs — preserved pre-item development
 
-## Development
-
 ## Complementary signed-middle edges are switch-crossing endpoint repairs
 
 This is a local theorem/bridge for the proposed signed-middle Tucker program. It does not by itself prove that the Tucker labeling extends admissibly to the whole triangulation.

@@ -1,7 +1,5 @@
 # Two perfect insertion blockers cancel by consecutive pair insertion — preserved pre-item development
 
-## Development
-
 Pure-orientation two-blocker cancellation. Let O=(v_1,...,v_m) have alpha-word 0^p 1^q with p,q>=1. For an exterior vertex x write s_i^x=alpha(x,v_i,v_{i+1}), 1<=i<=m-1. The one-vertex insertion calculus shows that the unique scan which blocks prepend, append, and every interior insertion into O is B=1^(p+1)0^q (with the evident truncation at the ends). Suppose two exterior vertices x,y both have this blocking scan.
 
 Define c_i=alpha(x,y,v_i). In any tournament representative of the switching class normalized so O is a directed Hamilton path, write q_i^x=t(x,v_i), q_i^y=t(y,v_i). Then s_i^x=q_i^x xor q_{i+1}^x and similarly for y, while c_i differs from q_i^x xor q_i^y by a constant depending only on the oriented edge xy. Consequently

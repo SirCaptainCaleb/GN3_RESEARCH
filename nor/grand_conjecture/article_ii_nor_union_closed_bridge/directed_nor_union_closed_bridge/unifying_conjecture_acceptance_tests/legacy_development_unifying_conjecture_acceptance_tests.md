@@ -1,7 +1,5 @@
 # Unifying-conjecture acceptance tests — preserved pre-item development
 
-## Development
-
 ## Unifying-conjecture acceptance tests
 
 A future common conjecture should use one canonical class of cubical objects carrying both support structure and ordered traces. It should recover Frankl from coordinate-frequency conclusions and directed NOR from one-change trace conclusions.

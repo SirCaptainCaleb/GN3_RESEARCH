@@ -1,7 +1,5 @@
 # Every fully-curved ternary barrier carries a complete K22 Johnson exchange square — preserved pre-item development
 
-## Development
-
 ## A fully-curved tetrahedron realizes the complete (K_{2,2}) exchange square at one central cut
 
 Strengthen the preceding side-root observation.

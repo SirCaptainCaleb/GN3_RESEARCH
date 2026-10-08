@@ -1,7 +1,5 @@
 # Minimal front obstructions are punctured Boolean cubes with uniform Frankl deficit — preserved pre-item development
 
-## Development
-
 ## A counterexample exposes a punctured Boolean cube with uniform Frankl deficit
 
 Continue with a maximal \(\sigma\)-tight witness \(P\) ending at \(S\), exposed front \(F\), and omitted set

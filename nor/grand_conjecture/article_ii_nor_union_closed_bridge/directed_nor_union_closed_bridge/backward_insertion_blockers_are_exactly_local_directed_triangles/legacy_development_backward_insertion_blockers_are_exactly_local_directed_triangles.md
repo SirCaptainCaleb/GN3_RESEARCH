@@ -1,7 +1,5 @@
 # Backward insertion blockers are exactly local directed triangles — preserved pre-item development
 
-## Development
-
 ## Backward insertion blockers are exactly local directed triangles
 
 Continue the insertion-sliding setup for ternary arity. Let \(U\) be a front circuit in color \(\tau\), let \(x\in U\), and let

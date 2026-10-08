@@ -1,7 +1,5 @@
 # The proper-face boundary degree admits a one-root-per-face witnessed Sperner carrier — preserved pre-item development
 
-## Development
-
 The proper-face boundary degree can be represented using ONE actual witnessed crossing root per face, rather than an average over all refinements.
 
 Let F=B_1|...|B_s be a proper face of the centered permutahedron. Every block B_j is a proper coordinate subset of the minimum counterexample. Choose, for each block, a spanning order with no internal 10 descent (equivalently a one-change ternary word), and concatenate these block orders in the fixed face order.

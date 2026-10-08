@@ -1,7 +1,5 @@
 # Every outermost root reduces to two six-coordinate collars joined by one good bridge — preserved pre-item development
 
-## Development
-
 ## Every outermost root reduces to two six-coordinate collars joined by one good bridge
 
 Continue from §251. Let a bad witness \(\pi\) have first and last change positions \(p<q\) and outermost root

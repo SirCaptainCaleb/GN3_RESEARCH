@@ -1,7 +1,5 @@
 # A minimum shore contains a canonical common-A3 protected triangle — preserved pre-item development
 
-## Development
-
 Every vertex of the minimum shore has both an in-neighbor and an out-neighbor in the induced switched tournament, so A contains a directed triangle
 u→v→w→u.
 

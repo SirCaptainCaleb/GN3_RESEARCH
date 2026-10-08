@@ -1,7 +1,5 @@
 # Minimal A2 zero carriers are antipodal pairs or directed root triangles — preserved pre-item development
 
-## Development
-
 ## Minimal A2 zero carriers are antipodal pairs or directed root triangles
 
 Consider the switch-prism Borsuk--Ulam construction in ternary arity (r=3). Let a zero of the odd root map have a minimal Coxeter carrier whose unique nontrivial tied block is

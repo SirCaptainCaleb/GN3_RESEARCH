@@ -1,7 +1,5 @@
 # Audit: Hamiltonian endpoint-cycle shortcuts must preserve the minimization class — preserved pre-item development
 
-## Development
-
 ## Audit: endpoint-cycle minimality must survive every replacement
 
 The local endpoint pivot calculations in roots §§113,119,123-125 produce real coordinate orders and physical roots. However the claimed exclusion of Hamiltonian endpoint cycles in §§121/124 is not yet established, even conditional on corner lifting.

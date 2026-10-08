@@ -1,7 +1,5 @@
 # Two monochromatic tight cycles join unless both junctions contain directed triangles — preserved pre-item development
 
-## Development
-
 ## Two monochromatic cycles can be joined unless both junctions contain directed triangles
 
 Work with a reversal-antisymmetric ternary coordinate label h on V, so h(z,y,x)=1-h(x,y,z). Let C and D be vertex-disjoint monochromatic tight cyclic orders, each containing at least three vertices. Reverse either cycle if necessary so that both have color 0.

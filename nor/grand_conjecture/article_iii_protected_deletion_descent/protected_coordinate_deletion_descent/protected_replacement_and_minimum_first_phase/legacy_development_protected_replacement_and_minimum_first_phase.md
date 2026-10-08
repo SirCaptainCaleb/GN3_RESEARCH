@@ -1,7 +1,5 @@
 # Protected replacement and minimum first phase — preserved pre-item development
 
-## Development
-
 Sources: Article II §§190,192,193,200. The short-phase qualification below is necessary.
 
 In a minimum coordinate counterexample, let O=(v_1,...,v_m) be a deletion good order with word 0^p1^q and omitted x. Assume p>=r. Replace coordinate v_p by x:

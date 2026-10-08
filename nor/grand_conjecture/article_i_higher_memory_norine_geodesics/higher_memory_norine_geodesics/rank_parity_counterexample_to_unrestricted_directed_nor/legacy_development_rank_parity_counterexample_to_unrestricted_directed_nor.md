@@ -1,7 +1,5 @@
 # Audit: the rank-parity example is outside directed tuple NOR — preserved pre-item development
 
-## Development
-
 
 The rank-parity construction
 \[

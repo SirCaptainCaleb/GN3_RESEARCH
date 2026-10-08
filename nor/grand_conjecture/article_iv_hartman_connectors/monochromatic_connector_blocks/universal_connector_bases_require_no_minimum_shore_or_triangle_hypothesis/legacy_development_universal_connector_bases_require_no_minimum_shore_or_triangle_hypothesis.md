@@ -1,7 +1,5 @@
 # Universal connector bases require no minimum-shore or triangle hypothesis — preserved pre-item development
 
-## Development
-
 ## Universal connector bases require no minimum-shore or triangle hypothesis
 
 In the fixed switching split B -> z -> A -> x, compatible zero connectors exist on every shore support of size zero, one, two, or three.

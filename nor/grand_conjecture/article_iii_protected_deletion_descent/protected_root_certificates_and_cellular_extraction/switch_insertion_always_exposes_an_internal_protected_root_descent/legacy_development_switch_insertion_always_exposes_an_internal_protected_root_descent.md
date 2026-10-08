@@ -1,7 +1,5 @@
 # Switch insertion always exposes an internal protected root descent — preserved pre-item development
 
-## Development
-
 ## Switch insertion always exposes an internal protected root descent
 
 Let (h) be any reversal-odd binary label on ordered (r)-tuples. Let

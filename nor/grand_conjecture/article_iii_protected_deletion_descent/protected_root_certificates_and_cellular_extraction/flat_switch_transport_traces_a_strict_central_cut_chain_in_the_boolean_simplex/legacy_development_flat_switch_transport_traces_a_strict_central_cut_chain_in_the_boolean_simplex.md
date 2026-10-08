@@ -1,7 +1,5 @@
 # Flat switch transport traces a strict central-cut chain in the Boolean simplex — preserved pre-item development
 
-## Development
-
 ## Flat switch transport traces a strict central-cut chain in the Boolean simplex
 
 Work in the alternating ternary sector with the corrected endpoint-repair law. Let a transition occur at consecutive window indices i,i+1 in a coordinate order

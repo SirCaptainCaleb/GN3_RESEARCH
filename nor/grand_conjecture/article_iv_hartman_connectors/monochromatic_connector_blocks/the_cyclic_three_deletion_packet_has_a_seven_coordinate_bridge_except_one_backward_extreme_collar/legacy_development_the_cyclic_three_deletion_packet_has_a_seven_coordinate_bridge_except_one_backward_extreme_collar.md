@@ -1,7 +1,5 @@
 # The cyclic three-deletion packet has a seven-coordinate bridge except one backward-extreme collar — preserved pre-item development
 
-## Development
-
 # A seven-coordinate bridge repairs every cyclic three-deletion packet except the backward-extreme sandwich
 
 Work in the normalized flat tournament z -> A -> x. Put

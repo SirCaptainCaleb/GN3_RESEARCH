@@ -1,7 +1,5 @@
 # Every shortcut-free minimum shore of size at most six has a spanning compatible connector — preserved pre-item development
 
-## Development
-
 ## Every shortcut-free minimum shore of size at most six has a spanning compatible connector
 
 Use the two-transitive-block connector theorem from the monochromatic-connector section:

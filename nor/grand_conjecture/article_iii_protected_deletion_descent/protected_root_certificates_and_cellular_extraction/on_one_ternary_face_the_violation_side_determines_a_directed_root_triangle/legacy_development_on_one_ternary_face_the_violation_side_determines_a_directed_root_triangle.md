@@ -1,7 +1,5 @@
 # On one ternary face the violation side determines a directed root triangle — preserved pre-item development
 
-## Development
-
 ## On one ternary face the violation side determines a directed root triangle
 
 Fix an unordered triple F={a,b,c} and choose the reference orientation (a,b,c). Put t=alpha(a,b,c).

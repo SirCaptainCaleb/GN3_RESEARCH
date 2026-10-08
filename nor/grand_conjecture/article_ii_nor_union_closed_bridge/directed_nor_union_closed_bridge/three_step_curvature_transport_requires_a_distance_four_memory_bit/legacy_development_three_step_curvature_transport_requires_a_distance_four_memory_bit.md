@@ -1,7 +1,5 @@
 # Three-step curvature transport requires a distance-four memory bit — preserved pre-item development
 
-## Development
-
 ## Three-step curvature transport requires one new memory coordinate
 
 Continue in Hamilton-normalized tournament coordinates. Let

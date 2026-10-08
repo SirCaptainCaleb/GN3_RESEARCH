@@ -1,7 +1,5 @@
 # Canonical endpoint swap reaches the double-full gadget — preserved pre-item development
 
-## Development
-
 Let the canonical cyclic endpoint carrier come from deletion word 0^p1^q with p,q>=3, deletion order (v_1,...,v_m), omitted blocker x, and perfect-blocker scan
 s_i=alpha(x,v_i,v_{i+1})=1^(p+1)0^q.
 

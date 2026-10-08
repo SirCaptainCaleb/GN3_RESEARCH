@@ -1,7 +1,5 @@
 # Orientation-blind NOR as a neighboring conjectural family — preserved pre-item development
 
-## Development
-
 
 There is a natural orientation-blind higher-uniformity family distinct from directed tuple NOR.
 

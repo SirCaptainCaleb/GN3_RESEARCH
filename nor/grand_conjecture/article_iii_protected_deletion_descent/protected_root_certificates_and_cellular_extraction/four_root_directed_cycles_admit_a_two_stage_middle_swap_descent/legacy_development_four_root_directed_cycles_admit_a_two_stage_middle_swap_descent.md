@@ -1,7 +1,5 @@
 # Four-root directed cycles admit a two-stage middle-swap descent — preserved pre-item development
 
-## Development
-
 ## Four-root directed cycles admit a two-stage middle-swap descent
 
 Work in the pure alternating ternary sector inside one ordered-partition carrier cell.

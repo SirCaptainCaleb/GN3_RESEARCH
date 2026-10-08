@@ -1,7 +1,5 @@
 # Minimum counterexample makes the all-refinements root carrier zero-free on every proper permutahedron face — preserved pre-item development
 
-## Development
-
 ## Minimum counterexample makes the all-refinements root carrier zero-free on every proper permutahedron face
 
 Work in ternary arity in a minimum-coordinate counterexample. Let G be the all-refinements actual-10-root carrier of root §42 on the centered permutahedron.

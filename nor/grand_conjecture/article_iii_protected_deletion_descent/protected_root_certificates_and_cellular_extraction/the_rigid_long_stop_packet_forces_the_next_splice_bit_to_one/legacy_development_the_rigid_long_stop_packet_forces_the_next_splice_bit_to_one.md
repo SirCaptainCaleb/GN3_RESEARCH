@@ -1,7 +1,5 @@
 # The rigid long-stop packet forces the next splice bit to one — preserved pre-item development
 
-## Development
-
 ## The rigid long-stop packet forces the next splice bit to one
 
 Continue from Subsection 145. Thus

@@ -1,7 +1,5 @@
 # A width-two full-full corridor is an exact barrier-reflection gadget — preserved pre-item development
 
-## Development
-
 Work in the coboundary-flat alternating ternary sector. Let six consecutive coordinates (a,b,c,d,e,f) have status word A,B,B,A with B=1-A. Assume both end transitions A->B on {a,b,c,d} and B->A on {c,d,e,f} are fully curved.
 
 Swap only the two central coordinates c,d, obtaining (a,b,d,c,e,f). Exactly four ternary windows change, all inside this six-coordinate packet; exterior windows are untouched.

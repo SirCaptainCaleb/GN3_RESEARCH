@@ -1,7 +1,5 @@
 # Elevation: threshold bands and barrier roots live in the graded cut cube — preserved pre-item development
 
-## Development
-
 
 ## Elevation from the unused Article III subsections
 

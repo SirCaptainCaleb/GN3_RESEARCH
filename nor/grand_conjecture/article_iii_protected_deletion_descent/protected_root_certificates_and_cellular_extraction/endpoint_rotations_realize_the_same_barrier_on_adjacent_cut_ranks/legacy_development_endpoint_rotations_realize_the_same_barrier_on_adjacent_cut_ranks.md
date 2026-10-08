@@ -1,7 +1,5 @@
 # Endpoint rotations realize the same barrier on adjacent cut ranks — preserved pre-item development
 
-## Development
-
 ## Endpoint rotations realize the same barrier on adjacent cut ranks
 
 Continue with the synchronized trajectory of §§308–309. At every stage there is a common middle order M and a distinguished coordinate x such that xM and Mx are both good deletion witnesses omitting the same coordinate.

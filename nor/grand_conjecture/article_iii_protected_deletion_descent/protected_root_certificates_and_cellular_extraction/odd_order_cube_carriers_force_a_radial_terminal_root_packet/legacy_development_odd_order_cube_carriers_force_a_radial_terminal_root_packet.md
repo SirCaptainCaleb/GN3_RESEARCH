@@ -1,7 +1,5 @@
 # Odd order cube carriers force a radial terminal root packet — preserved pre-item development
 
-## Development
-
 Let Q=[-1/2,1/2]^n be the centered Boolean cube and identify its boundary radially with the sphere S^{n-1}. For every proper cut C the cube vertex is
 u_C=1_C-(1/2)1,
 with ||u_C||^2=n/4.

@@ -1,7 +1,5 @@
 # Idea: four canonical internal weaves cover the residual antipodal five-set — preserved pre-item development
 
-## Development
-
 Intermediate antipodal result; local only, not yet a boundary-safe closure theorem.
 
 In the residual exact distance-three backtrack / double-full singleton packet, keep the outside coordinates fixed and consider only reorderings of the five internal coordinates supporting the two adjacent fully-curved tetrahedra. The local flat completion has one residual five-set bit. A direct symbolic case split shows that four simple internal weaves suffice to cover all values of that residual bit together with the two possible orientations of the relevant boundary pair: for every local completion, at least one of the four candidate five-vertex permutations has a threshold-compatible internal ternary word (monochromatic or one-change in the required orientation).

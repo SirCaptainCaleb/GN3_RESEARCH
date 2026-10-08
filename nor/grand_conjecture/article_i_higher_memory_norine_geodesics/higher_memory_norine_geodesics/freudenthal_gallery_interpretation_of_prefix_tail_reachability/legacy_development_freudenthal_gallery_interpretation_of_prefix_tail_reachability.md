@@ -1,7 +1,5 @@
 # Freudenthal gallery interpretation of prefix-tail reachability — preserved pre-item development
 
-## Development
-
 ## Prefix-tail states are Freudenthal faces
 
 Fix coordinate-label arity (rge2) on (V). Identify cube vertices with subsets of (V), and use the standard Freudenthal triangulation of ([0,1]^V).

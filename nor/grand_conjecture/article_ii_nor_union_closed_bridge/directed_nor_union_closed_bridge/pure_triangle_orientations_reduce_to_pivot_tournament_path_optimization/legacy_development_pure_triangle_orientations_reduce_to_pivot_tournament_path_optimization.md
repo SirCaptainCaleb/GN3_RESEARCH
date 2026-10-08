@@ -1,7 +1,5 @@
 # Pure triangle orientations reduce to pivot tournament path optimization — preserved pre-item development
 
-## Development
-
 ## Pure triangle orientations reduce to pivot-tournament path optimization
 
 Suppose the ternary defect field vanishes, so

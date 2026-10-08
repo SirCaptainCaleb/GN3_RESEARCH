@@ -1,7 +1,5 @@
 # Audit single step residual scans require an unproved propagation lemma — preserved pre-item development
 
-## Development
-
 ## Audit: single-step residual scans require an unproved propagation lemma
 
 Subsection "Residual A2 scans are single-step functions with same-parity drop ranks" uses the statement that an immediate (0	o1) rise in any residual suffix scan produces a spanning companion weave.

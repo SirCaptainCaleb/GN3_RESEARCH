@@ -1,7 +1,5 @@
 # A pure three circuit forms a full curvature tube with flat cross walls — preserved pre-item development
 
-## Development
-
 ## A pure three-circuit forms a full-curvature tube with flat cross walls
 
 Continue the pure-orientation whole-front size-three setup. Let

@@ -1,7 +1,5 @@
 # A minimum signature shore has internal witness partners and size at least two — preserved pre-item development
 
-## Development
-
 ## A minimum signature shore has no singleton case and carries internal witness partners
 
 Continue from §334. Let x,z be a shortcut-free pair with a minimum nonempty signature shore

@@ -1,5 +1,3 @@
 # Hartman closure requires union closure of absorbed supports — preserved pre-item development
 
-## Development
-
 A repair component may reach each coordinate separately without reaching all of them simultaneously. Therefore the least-unreachable label is justified only after adding a union-closure hypothesis: whenever one oriented repair component reaches absorbed supports A and B, it also reaches a state containing A union B. Then reaching every singleton target forces the full support by finite iteration. Under this strengthened hypothesis, the two-polarity Sperner argument is valid. The same-gap and separated absorption fillers are exactly local pieces of this union-closure law; the adjacent-gap directed triangle is the remaining rank-two obstruction.

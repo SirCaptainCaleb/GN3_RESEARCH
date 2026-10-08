@@ -1,7 +1,5 @@
 # Audit: the opposite-scan ladder does not inherit single-omission forbidden rail patterns — preserved pre-item development
 
-## Development
-
 ## Audit: the opposite-scan ladder does not inherit the single-omission forbidden rail patterns
 
 The exact rung identity of §310 is valid. Its final invocation of the §290 rail-pattern exclusions requires correction.

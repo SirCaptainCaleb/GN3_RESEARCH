@@ -1,5 +1,3 @@
 # Collective zero-path absorption has an exact six-edge collar — preserved pre-item development
 
-## Development
-
 In square-path gauge, inserting a disjoint zero path as one block changes only the two-coordinate collar on each side. For a block P=(p1,...,pr) inserted between consecutive connector coordinates c_i,c_{i+1}, the only new requirements are that the two preceding connector coordinates dominate the first two block coordinates in the square-path pattern, and that the last two block coordinates dominate the two succeeding connector coordinates. With a fixed path-normalizing switching on P this is a six-incidence pattern with three equal left bits and the opposite three right bits. Complementing all switching bits on P flips the six incidences, so the two legal collar patterns are complementary. The r=1 case is exactly the existing four-bit vertex insertion rule. Hence whole zero paths from the canonical shore decomposition may be absorbed collectively; ternary locality leaves only a width-two block collar obstruction.

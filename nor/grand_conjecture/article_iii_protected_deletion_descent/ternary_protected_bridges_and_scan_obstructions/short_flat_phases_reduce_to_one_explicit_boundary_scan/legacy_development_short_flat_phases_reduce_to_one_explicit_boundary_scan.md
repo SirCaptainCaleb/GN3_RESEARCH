@@ -1,7 +1,5 @@
 # Short flat phases reduce to one explicit boundary scan — preserved pre-item development
 
-## Development
-
 ## Short flat phases reduce to one explicit boundary scan
 
 Work in the coboundary-flat alternating ternary sector. Let

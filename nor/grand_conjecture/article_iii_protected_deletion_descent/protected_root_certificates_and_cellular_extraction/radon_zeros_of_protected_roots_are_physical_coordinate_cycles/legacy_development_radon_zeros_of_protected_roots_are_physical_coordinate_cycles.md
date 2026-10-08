@@ -1,7 +1,5 @@
 # Radon zeros of protected roots are physical coordinate cycles — preserved pre-item development
 
-## Development
-
 For every protected replacement bridge, an adjacent 10 descent gives a physical root rho=e_a-e_c, where a is the dropped coordinate and c the entering coordinate.
 
 Suppose a positive dependence occurs:

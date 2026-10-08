@@ -1,7 +1,5 @@
 # Replacing the center label by one actual root forces a monotone proper-face closing path — preserved pre-item development
 
-## Development
-
 Let P be the centered permutahedron in the type-A space W, and work in a minimum-coordinate ternary counterexample.
 
 By root 139, the all-refinements actual-10-root carrier H is nonzero on the entire boundary of P. On every proper face its vectors lie strictly in the inward face-normal halfspace, and the normalized boundary map has the nonzero degree of the inward radial map.

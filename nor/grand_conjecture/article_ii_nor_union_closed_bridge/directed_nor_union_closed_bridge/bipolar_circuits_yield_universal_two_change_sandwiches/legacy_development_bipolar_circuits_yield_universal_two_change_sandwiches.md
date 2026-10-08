@@ -1,7 +1,5 @@
 # Bipolar circuits yield universal two-change sandwiches — preserved pre-item development
 
-## Development
-
 ## Bipolar circuits yield universal two-change sandwiches
 
 Let \(P\) be a maximal \(\sigma\)-tight path with first state \(F\), last state \(R\), and omitted set \(X\). Put \(\tau=1-\sigma\). Assume \(X\) is a **bipolar circuit**:

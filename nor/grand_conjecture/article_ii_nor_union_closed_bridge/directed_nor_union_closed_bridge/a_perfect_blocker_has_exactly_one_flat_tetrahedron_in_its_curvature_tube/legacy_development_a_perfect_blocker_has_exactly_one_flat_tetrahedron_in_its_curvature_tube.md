@@ -1,7 +1,5 @@
 # A perfect blocker has exactly one flat tetrahedron in its curvature tube — preserved pre-item development
 
-## Development
-
 
 Work in a minimum coboundary-flat pure-orientation ternary counterexample. Let
 

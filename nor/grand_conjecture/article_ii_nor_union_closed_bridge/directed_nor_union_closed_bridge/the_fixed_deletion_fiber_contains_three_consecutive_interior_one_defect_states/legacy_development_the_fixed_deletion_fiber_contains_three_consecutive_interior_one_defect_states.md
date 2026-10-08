@@ -1,7 +1,5 @@
 # The fixed deletion fiber contains three consecutive interior one defect states — preserved pre-item development
 
-## Development
-
 ## The fixed deletion fiber contains three consecutive interior one-defect states
 
 Audit and strengthen the fixed-fiber claim. Work in a minimum coboundary-flat ternary counterexample with deletion order

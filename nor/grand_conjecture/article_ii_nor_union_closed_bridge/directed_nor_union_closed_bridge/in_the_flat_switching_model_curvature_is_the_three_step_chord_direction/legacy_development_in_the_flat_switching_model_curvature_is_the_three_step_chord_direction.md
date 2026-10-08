@@ -1,7 +1,5 @@
 # In the flat switching model, curvature is the three-step chord direction — preserved pre-item development
 
-## Development
-
 
 Work in the coboundary-flat ternary sector. Choose a tournament representative and switch it so a coordinate order v_1,...,v_n is a directed Hamilton path. Then alpha(v_i,v_{i+1},v_{i+2}) is exactly the tournament bit of the distance-two chord v_i v_{i+2}.
 

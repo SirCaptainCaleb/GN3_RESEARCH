@@ -1,7 +1,5 @@
 # Small synchronized endpoint cycles reuse the original protected root directions — preserved pre-item development
 
-## Development
-
 Consider the injective synchronized endpoint obstruction of root 87:
 rho_i=e_{x_i}-e_{x_{i+1}},
 D_i=e_{a_{i+1}}-e_{a_i},

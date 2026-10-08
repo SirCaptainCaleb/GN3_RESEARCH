@@ -1,7 +1,5 @@
 # Minimum endpoint cycles reduce pinned boundaries to one-bit pivot stops — preserved pre-item development
 
-## Development
-
 ## Minimal endpoint cycles reduce pinned boundaries to one-bit pivot stops
 
 Assume the witness-preserving endpoint CORNER-LIFT property of Subsection 93. By Subsection 114, after minimizing partner changes and pushing every partner block backward, an unresolved endpoint-root cycle decomposes into exact constant-core arcs joined at pinned boundaries.

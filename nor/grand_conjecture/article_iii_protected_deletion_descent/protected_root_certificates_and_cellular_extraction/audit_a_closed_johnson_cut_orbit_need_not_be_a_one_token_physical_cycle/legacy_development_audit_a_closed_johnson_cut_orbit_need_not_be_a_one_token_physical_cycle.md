@@ -1,7 +1,5 @@
 # Audit: a closed Johnson-cut orbit need not be a one-token physical cycle — preserved pre-item development
 
-## Development
-
 ## Audit: a closed Johnson-cut orbit need not be a one-token physical cycle
 
 Root §66 correctly proves that a successor-closed finite family of realized shores contains a directed Johnson cycle, and its corresponding physical edge vectors sum to zero. Its next assertion, that restricting to a simple shore cycle makes the cuts one-token over a common core, does not follow.

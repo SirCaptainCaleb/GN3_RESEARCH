@@ -1,7 +1,5 @@
 # Minimum counterexamples contain a deletion-root cycle — preserved pre-item development
 
-## Development
-
 ## Deletion orders generate a root recurrence without topology
 
 Fix coordinate-label arity \(r\ge2\), and suppose \(h\) is a minimum directed-sector counterexample on an \(n\)-element ground set \(V\).

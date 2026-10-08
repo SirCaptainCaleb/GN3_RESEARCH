@@ -1,7 +1,5 @@
 # The one-change automaton has a conserved initial-polarity color — preserved pre-item development
 
-## Development
-
 ## The one-change automaton has a conserved initial-polarity color
 
 Use the exact continuation state from the ordered-tail formulation. After at least one ternary window has been read, a legal partial order carries state

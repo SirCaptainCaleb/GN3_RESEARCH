@@ -1,7 +1,5 @@
 # Residual A2 scan rises either close or exit through a protected root — preserved pre-item development
 
-## Development
-
 ## Residual A2 rises admit a boundary-safe rightward handoff
 
 Continue from the residual A2 scan-rise reduction. Fix one residual coordinate (u) and its companion deletion order. The protected front and the untouched suffix are already target-compatible in color (1). Suppose a later scan rise is present.

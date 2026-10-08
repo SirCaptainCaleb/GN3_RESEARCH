@@ -1,7 +1,5 @@
 # The four-state holonomy gadget is transition-optimal for every boundary coloring — preserved pre-item development
 
-## Development
-
 ## The four-state holonomy gadget is transition-optimal for every boundary coloring
 
 Use the four local states of ternary subsection 50, all attached through the same ordered boundary pairs (x,a) and (c,e):

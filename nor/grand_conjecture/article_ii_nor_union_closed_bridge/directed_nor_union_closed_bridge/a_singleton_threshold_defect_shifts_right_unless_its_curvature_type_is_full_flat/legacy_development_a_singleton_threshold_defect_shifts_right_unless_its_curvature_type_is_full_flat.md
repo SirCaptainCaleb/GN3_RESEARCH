@@ -1,7 +1,5 @@
 # A singleton threshold defect shifts right unless its curvature type is full-flat — preserved pre-item development
 
-## Development
-
 
 Work in the coboundary-flat ternary sector on five consecutive coordinates 0,1,2,3,4 with local threshold-defect pattern
 

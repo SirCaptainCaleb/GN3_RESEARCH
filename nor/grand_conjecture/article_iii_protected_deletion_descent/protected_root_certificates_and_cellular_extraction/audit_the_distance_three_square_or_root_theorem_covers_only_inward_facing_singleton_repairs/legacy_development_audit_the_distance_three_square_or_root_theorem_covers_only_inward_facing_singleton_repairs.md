@@ -1,7 +1,5 @@
 # Audit: the distance-three square-or-root theorem covers only inward-facing singleton repairs — preserved pre-item development
 
-## Development
-
 ## Audit: the distance-three square-or-root theorem covers only inward-facing singleton repairs
 
 Root §126 proves a correct local dichotomy, but its final topological scope was stated too broadly.

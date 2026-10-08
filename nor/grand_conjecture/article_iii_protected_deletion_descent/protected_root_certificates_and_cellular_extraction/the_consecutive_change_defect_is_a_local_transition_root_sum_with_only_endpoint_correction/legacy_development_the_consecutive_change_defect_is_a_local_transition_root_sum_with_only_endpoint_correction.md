@@ -1,7 +1,5 @@
 # The consecutive-change defect is a local transition-root sum with only endpoint correction — preserved pre-item development
 
-## Development
-
 ## The consecutive-change defect is a local transition-root sum with only endpoint correction
 
 Let a ternary coordinate order

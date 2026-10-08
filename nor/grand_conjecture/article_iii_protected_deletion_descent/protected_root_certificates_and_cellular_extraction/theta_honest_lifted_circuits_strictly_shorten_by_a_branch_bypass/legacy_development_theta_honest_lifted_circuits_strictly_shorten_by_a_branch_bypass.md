@@ -1,7 +1,5 @@
 # Theta honest lifted circuits strictly shorten by a branch bypass — preserved pre-item development
 
-## Development
-
 ## Theta lifted circuits shorten by an honest branch bypass
 
 Work in a full-support connected support-minimal honest lifted zero whose physical support is a theta graph.

@@ -1,7 +1,5 @@
 # Repeated partners split the defect circulation but not the protected root cycle — preserved pre-item development
 
-## Development
-
 For the endpoint-induced protected root cycle of root 84,
 rho_i=e_{x_i}-e_{x_{i+1}},
 with carrying cuts C_i={x_i,a_i}, the cut-defect vectors are

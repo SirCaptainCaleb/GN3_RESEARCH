@@ -1,7 +1,5 @@
 # Cross-wall thickness reversals obey a parity law
 
-## Development
-
 Statement:
 Retain the maximal connector and path-normalized tournament gauge of the wall-dominance theorem. Before separately wall-normalizing omitted vertices, write u_k(v)=t(c_k,v). Suppose distinct outside vertices a,b belong to opposite thickness classes at each of two internal gaps i and j. Set ε_k(a,b)=0 when a∈L_k,b∈R_k and ε_k(a,b)=1 when a∈R_k,b∈L_k. Then ε_i(a,b)⊕ε_j(a,b)=u_i(a)⊕u_i(b)⊕u_j(a)⊕u_j(b). In particular if a∈L_i and b∈R_i, then a and b cannot also lie in the same respective classes L_{i+2},R_{i+2} (provided i+2 is an internal gap); if both are opposite-thickness blockers at gap i+2, their types must reverse, a∈R_{i+2} and b∈L_{i+2}. No pair of opposite-thickness blockers at i is simultaneously wall-normalizable at either adjacent gap i−1 or i+1.
 

@@ -1,7 +1,5 @@
 # Hamiltonian root-cycle zeros are stable under every small dimension-preserving perturbation — preserved pre-item development
 
-## Development
-
 ## Hamiltonian root-cycle zeros are stable under every small dimension-preserving perturbation
 
 This identifies a structural limit of the side/cut perturbation program.

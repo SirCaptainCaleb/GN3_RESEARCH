@@ -1,7 +1,5 @@
 # A minimum signature shore is a protected clique with one possible missing edge — preserved pre-item development
 
-## Development
-
 ## A minimum signature shore is a protected clique, leaving only the connector edge missing
 
 Continue with the minimum shortcut-free signature shore

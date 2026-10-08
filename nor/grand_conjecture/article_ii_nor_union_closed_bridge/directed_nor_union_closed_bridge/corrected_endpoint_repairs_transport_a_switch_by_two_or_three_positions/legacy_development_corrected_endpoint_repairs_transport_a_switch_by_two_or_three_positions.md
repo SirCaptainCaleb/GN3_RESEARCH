@@ -1,7 +1,5 @@
 # Corrected endpoint repairs transport a switch by two or three positions — preserved pre-item development
 
-## Development
-
 This sharpens the corrected endpoint-repair calculation in endpoint_repair_never_increases_cyclic_variation. Work in a pure alternating ternary orientation, with enough distinct surrounding coordinates for the displayed packet. A successful last-pair repair changes the consecutive statuses (L,x,1-x,z,R,S) to (L,x,x,1-z,V,S). Let the central transition have index i, so it is deleted. The transition at i+1 is unchanged. Only the two later transition bits at i+2,i+3 can change: their old values are a=z xor R, b=R xor S, and their new values are a'=(1-z) xor V, b'=V xor S.
 
 Proposition. Exactly one of a,b toggles. Indeed a xor b=z xor S while a' xor b'=1 xor z xor S. The parity of the pair changes, so their Hamming distance is odd; with two bits it must be one. All other transition bits, apart from the deleted central bit, are unchanged.

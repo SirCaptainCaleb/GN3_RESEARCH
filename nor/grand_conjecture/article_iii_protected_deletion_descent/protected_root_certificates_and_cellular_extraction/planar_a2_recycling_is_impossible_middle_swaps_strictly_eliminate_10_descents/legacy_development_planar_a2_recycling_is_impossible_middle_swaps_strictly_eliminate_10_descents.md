@@ -1,7 +1,5 @@
 # Planar A2 recycling is impossible: middle swaps strictly eliminate 10 descents — preserved pre-item development
 
-## Development
-
 ## Planar A2 recycling is impossible: middle swaps strictly eliminate 10 descents
 
 Work in the pure alternating ternary sector and in one ordered-partition carrier cell.

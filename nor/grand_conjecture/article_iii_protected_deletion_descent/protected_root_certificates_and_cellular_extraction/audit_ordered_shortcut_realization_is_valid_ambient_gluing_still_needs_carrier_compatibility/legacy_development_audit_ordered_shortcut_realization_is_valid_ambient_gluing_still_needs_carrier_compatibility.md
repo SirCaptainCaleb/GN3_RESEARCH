@@ -1,7 +1,5 @@
 # Audit: ordered shortcut realization is valid; ambient gluing still needs carrier compatibility — preserved pre-item development
 
-## Development
-
 ## Audit: the ordered-shortcut theorem is valid, while local opposite-root weaving still needs carrier compatibility
 
 Section §320 proves a genuine and important statement: in the crossed endpoint residue, an explicit fully-curved four-coordinate carrier realizes the ordered root

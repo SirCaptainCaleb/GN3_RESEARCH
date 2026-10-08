@@ -1,7 +1,5 @@
 # Every good deletion order realizes both directions on its three switch endpoints — preserved pre-item development
 
-## Development
-
 ## Every good deletion order realizes both directions on its three switch endpoints
 
 Assume a minimum counterexample and fix x. Let O_x=(a_1,...,a_{n-1}) be a NOR-good deletion order of V without x, with normalized word 0^p 1^q. Let its unique switch use (a_p,a_{p+1},a_{p+2},a_{p+3}), and put l=a_p and r=a_{p+3}.

@@ -1,7 +1,5 @@
 # Arbitrary complementary Tucker cells still contain a controlled local repair event — preserved pre-item development
 
-## Development
-
 The same-deleted-order hypothesis from the cellular bubble audit is sufficient for the old b-only path argument, but it is not necessary for local extraction. Along an arbitrary product-cell edge, every possible first disappearance of a selected b-centered violation has a controlled local repair law.
 
 Consider a product-cell 1-skeleton path beginning at a state carrying +b and ending at a state carrying -b. Track the unique ternary window centered at b whenever b is not at a global endpoint. Stop at the first edge on which either the b-centered violation disappears or its side relative to the switch changes while remaining a violation.

@@ -1,7 +1,5 @@
 # The crossed endpoint residue closes in its first four coordinates — preserved pre-item development
 
-## Development
-
 In the only crossed endpoint types surviving the earlier three-block shortcut analysis, the first rail disagreement satisfies X_1=R_1. Therefore
 (x,w_1,w_2,z)
 is not merely a transition carrier of x→z; it is fully curved.

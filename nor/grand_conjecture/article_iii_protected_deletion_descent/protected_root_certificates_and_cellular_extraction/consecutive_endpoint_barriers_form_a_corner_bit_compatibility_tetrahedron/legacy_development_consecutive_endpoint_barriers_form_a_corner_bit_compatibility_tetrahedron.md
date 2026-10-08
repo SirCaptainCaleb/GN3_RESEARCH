@@ -1,7 +1,5 @@
 # Consecutive endpoint barriers form a corner-bit compatibility tetrahedron — preserved pre-item development
 
-## Development
-
 ## Consecutive endpoint barriers form a corner-bit compatibility tetrahedron
 
 Consider two consecutive edges of an actual endpoint-root cycle,

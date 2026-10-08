@@ -1,7 +1,5 @@
 # Figure eight lifted circuits reduce to one edge theta outside a tiny side residue — preserved pre-item development
 
-## Development
-
 ## Figure-eight circuits reduce to one-edge theta pivots except for a tiny side-imbalance residue
 
 Work in a full-support dimension-saturated honest lifted circuit whose physical support is a directed figure-eight.

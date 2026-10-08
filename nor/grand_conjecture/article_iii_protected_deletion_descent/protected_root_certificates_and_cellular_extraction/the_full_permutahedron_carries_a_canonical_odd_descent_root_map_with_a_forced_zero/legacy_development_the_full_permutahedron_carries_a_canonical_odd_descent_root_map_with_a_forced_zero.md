@@ -1,7 +1,5 @@
 # The full permutahedron carries a canonical odd descent-root map with a forced zero — preserved pre-item development
 
-## Development
-
 
 Let h be a reversal-odd binary label on ordered r-tuples, and assume the full instance is a counterexample to one-change NOR.
 

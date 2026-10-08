@@ -1,7 +1,5 @@
 # Quadratic cut-vector perturbations retain full cut provenance in physical root space — preserved pre-item development
 
-## Development
-
 ## A quadratic cut-vector perturbation remembers the full protected cut
 
 The first cut-moment perturbation in root §47 encodes the barrier side but, as audited in root §51, its moment M(C,rho)=Pi_W(z_C odot rho) depends only on the cut size p and the oriented root rho. The cut identity itself is lost. There is a different dimension-preserving perturbation that retains the entire cut.

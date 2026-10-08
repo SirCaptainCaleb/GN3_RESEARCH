@@ -1,7 +1,5 @@
 # Rank parity refutes the unrestricted tuple-window N_k — preserved pre-item development
 
-## Development
-
 ## Refutation of the unrestricted tuple-window formulation
 
 Under the current tuple-arity indexing, suppose \(N_k\) is interpreted as allowing an arbitrary binary coloring

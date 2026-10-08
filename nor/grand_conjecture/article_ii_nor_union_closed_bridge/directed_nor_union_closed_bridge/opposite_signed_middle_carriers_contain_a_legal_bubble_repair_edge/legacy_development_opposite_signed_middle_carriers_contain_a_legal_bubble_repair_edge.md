@@ -1,7 +1,5 @@
 # Opposite signed-middle carriers contain a legal bubble repair edge — preserved pre-item development
 
-## Development
-
 ## Bubble extraction from a cellular Tucker carrier
 
 Consider a ternary switch-prism product cell containing two genuine state vertices labeled +b and -b by the signed-middle rule. Fix the cut level for the moment; the same argument applies inside a horizontal slice of a minimal product carrier.

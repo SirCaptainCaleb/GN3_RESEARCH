@@ -1,7 +1,5 @@
 # Minimum protected-root cycles have exterior barrier auxiliaries and zero pivots subdivide an edge — preserved pre-item development
 
-## Development
-
 ## Minimum protected-root cycles have exterior barrier auxiliaries and zero pivots subdivide an edge
 
 Work in the coboundary-flat alternating sector. Let

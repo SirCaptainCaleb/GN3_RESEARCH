@@ -1,7 +1,5 @@
 # Union-closed tournament neighborhoods force transitivity — preserved pre-item development
 
-## Development
-
 ## Union-closed tournament neighborhoods are precisely the transitive case
 
 Let T be a finite tournament, and let N+(a)={b:a->b}. The family {N+(a):a in V(T)} is union-closed if and only if T is transitive; equivalently these neighborhoods are nested.

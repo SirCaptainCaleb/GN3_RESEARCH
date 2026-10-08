@@ -1,7 +1,5 @@
 # The long-phase double-splice endpoint branch is a one-defect threshold-band state — preserved pre-item development
 
-## Development
-
 Continue the pinned endpoint surgery of root 128. The only branch left open there has
 p>=4,
 lambda=alpha(a,c,d)=1,

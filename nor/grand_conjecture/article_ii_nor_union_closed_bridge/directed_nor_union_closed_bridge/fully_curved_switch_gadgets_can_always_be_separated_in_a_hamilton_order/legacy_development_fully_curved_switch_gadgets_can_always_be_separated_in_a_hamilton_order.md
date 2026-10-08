@@ -1,7 +1,5 @@
 # Fully curved switch gadgets can always be separated in a Hamilton order — preserved pre-item development
 
-## Development
-
 
 ## Fully curved switch gadgets can always be separated in a Hamilton order
 

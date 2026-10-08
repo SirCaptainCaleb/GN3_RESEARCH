@@ -1,7 +1,5 @@
 # Every positive protected-root dependence has a consecutive incomparable-cut junction — preserved pre-item development
 
-## Development
-
 ## Consecutive roots in every positive protected dependence have an incomparable-cut junction
 
 Let

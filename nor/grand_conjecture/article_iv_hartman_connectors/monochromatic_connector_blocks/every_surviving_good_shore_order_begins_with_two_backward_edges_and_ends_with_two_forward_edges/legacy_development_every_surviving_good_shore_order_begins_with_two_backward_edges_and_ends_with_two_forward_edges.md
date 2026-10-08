@@ -1,7 +1,5 @@
 # Every surviving good shore order begins with two backward edges and ends with two forward edges — preserved pre-item development
 
-## Development
-
 ## Every surviving good shore order begins with two backward edges and ends with two forward edges
 
 Continue in the switching-normalized split

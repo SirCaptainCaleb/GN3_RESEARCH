@@ -1,7 +1,5 @@
 # Arbitrary scan flat replacement dynamics reduce to one A2 recurrence — preserved pre-item development
 
-## Development
-
 ## Arbitrary-scan flat replacement dynamics reduce to one A2 recurrence
 
 Work in a minimum coboundary-flat alternating ternary counterexample.

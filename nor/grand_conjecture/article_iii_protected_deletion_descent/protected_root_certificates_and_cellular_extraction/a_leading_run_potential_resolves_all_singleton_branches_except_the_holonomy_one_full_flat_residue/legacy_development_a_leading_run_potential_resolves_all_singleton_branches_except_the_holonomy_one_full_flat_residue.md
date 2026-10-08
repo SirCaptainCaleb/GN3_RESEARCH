@@ -1,7 +1,5 @@
 # A leading-run potential resolves all singleton branches except the holonomy-one full-flat residue — preserved pre-item development
 
-## Development
-
 ## A leading-run potential resolves three singleton curvature types and the zero-holonomy mixed branch
 
 Work with a coboundary-flat alternating ternary label. Fix the global color convention once. Consider a full coordinate order whose entire status word is

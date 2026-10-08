@@ -1,7 +1,5 @@
 # Orientation-blind windows as ordered cube-face galleries — preserved pre-item development
 
-## Development
-
 
 ## Orientation-blind windows are ordered cube faces
 

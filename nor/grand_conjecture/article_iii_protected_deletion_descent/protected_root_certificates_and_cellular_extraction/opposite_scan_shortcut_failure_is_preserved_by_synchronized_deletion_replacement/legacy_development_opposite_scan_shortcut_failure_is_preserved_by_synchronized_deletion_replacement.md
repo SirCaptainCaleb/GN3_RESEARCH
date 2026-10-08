@@ -1,7 +1,5 @@
 # Opposite-scan shortcut failure is preserved by synchronized deletion replacement — preserved pre-item development
 
-## Development
-
 ## Opposite-scan shortcut failure is preserved by synchronized deletion replacement
 
 Work in the surviving shortcut residue of §§299–301. Normalize a good middle order

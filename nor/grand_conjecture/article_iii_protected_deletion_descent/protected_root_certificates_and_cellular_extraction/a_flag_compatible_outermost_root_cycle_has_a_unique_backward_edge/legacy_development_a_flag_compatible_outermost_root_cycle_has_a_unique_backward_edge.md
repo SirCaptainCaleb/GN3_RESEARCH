@@ -1,7 +1,5 @@
 # A flag-compatible outermost-root cycle has a unique backward edge — preserved pre-item development
 
-## Development
-
 ## A flag-compatible outermost-root cycle has a unique backward edge
 
 Continue with a cycle supplied by the preceding conical-degree theorem. Let

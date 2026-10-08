@@ -1,7 +1,5 @@
 # A fully curved ten barrier has a canonical zero deletion shadow — preserved pre-item development
 
-## Development
-
 ## A fully curved ten barrier has a canonical zero deletion shadow
 
 Work in the coboundary-flat alternating ternary sector. Let four consecutive coordinates

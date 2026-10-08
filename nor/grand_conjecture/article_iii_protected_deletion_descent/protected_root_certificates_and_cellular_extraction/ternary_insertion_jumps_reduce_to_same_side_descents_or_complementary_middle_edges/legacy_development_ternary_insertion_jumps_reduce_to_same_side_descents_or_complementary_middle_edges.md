@@ -1,7 +1,5 @@
 # Ternary insertion jumps reduce to same-side descents or complementary middle edges — preserved pre-item development
 
-## Development
-
 ## Ternary insertion-jump classification
 
 Work in the pure alternating ternary sector; no tetrahedral flatness is assumed.

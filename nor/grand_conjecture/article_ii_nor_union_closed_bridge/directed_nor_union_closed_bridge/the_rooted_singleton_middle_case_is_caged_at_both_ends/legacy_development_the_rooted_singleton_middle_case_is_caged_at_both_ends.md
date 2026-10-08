@@ -1,7 +1,5 @@
 # The rooted singleton middle case is caged at both ends — preserved pre-item development
 
-## Development
-
 ## The rooted singleton-middle case is caged at both ends
 
 Work in a minimum directed ternary counterexample. Let

@@ -1,7 +1,5 @@
 # Width-two rotations retain their extremal-class obligation, and the exported second bit is forced — preserved pre-item development
 
-## Development
-
 ## Keep the width-two comparison class and account for the forced exported bit
 
 Root §260 imports the rigid six-set theorem §221 into a lexicographically extremal global two-change band. These constructions use distinct extremal states.

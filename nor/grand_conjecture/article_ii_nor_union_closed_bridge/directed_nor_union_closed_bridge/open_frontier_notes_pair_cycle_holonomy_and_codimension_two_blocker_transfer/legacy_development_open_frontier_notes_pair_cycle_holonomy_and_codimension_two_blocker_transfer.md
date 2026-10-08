@@ -1,7 +1,5 @@
 # Open frontier notes: pair-cycle holonomy and codimension-two blocker transfer — preserved pre-item development
 
-## Development
-
 Open research notes / adversarial frontier after the latest audits.
 
 1. Pair-cycle holonomy for a pure three-circuit.

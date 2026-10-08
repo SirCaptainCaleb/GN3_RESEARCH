@@ -1,7 +1,5 @@
 # A five-set contains at most two fully curved tetrahedra — preserved pre-item development
 
-## Development
-
 
 ## A five-set contains at most two fully curved tetrahedra
 

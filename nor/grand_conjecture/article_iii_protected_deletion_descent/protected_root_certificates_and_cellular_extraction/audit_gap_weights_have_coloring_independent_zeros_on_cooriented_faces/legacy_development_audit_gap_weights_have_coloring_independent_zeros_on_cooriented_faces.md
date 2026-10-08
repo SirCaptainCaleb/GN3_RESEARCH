@@ -1,7 +1,5 @@
 # Audit: gap weights have coloring-independent zeros on cooriented faces — preserved pre-item development
 
-## Development
-
 ## Audit: gap weights have coloring-independent zeros on cooriented faces
 
 This audits root §23. Its continuity, oddness, open-chamber independence, and even-n Stiefel--Whitney calculation remain valid. The existence of a wall degeneracy, however, is already forced by the weights independently of the coloring. It does not establish a positive physical window-slide root dependence.

@@ -1,7 +1,5 @@
 # Audit adjacent swap transport omitted a fourth changed status — preserved pre-item development
 
-## Development
-
 ## Audit: adjacent-swap transport omitted a fourth changed status
 
 Two recent subsections overstated the effect of an adjacent coordinate swap:

@@ -1,7 +1,5 @@
 # Audit deleting a full-barrier vertex creates an extra outer splice window — preserved pre-item development
 
-## Development
-
 Root §136 correctly identifies the local off-face of a fully-curved 10 tetrahedron, but its deletion-shadow conclusion omits one changed outer window.
 
 Let an actual order contain

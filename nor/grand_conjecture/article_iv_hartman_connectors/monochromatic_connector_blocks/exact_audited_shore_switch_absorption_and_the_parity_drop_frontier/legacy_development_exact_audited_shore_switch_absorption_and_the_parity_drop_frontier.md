@@ -1,7 +1,5 @@
 # Exact audited shore-switch absorption and the parity-drop frontier — preserved pre-item development
 
-## Development
-
 Let P_B=(b_1,…,b_r) be a good opposite-shore order with normalized word
 0^p1^q, p,q≥1.
 Choose switching bits σ_i making P_B a directed Hamiltonian path in a switching-equivalent shore tournament and put

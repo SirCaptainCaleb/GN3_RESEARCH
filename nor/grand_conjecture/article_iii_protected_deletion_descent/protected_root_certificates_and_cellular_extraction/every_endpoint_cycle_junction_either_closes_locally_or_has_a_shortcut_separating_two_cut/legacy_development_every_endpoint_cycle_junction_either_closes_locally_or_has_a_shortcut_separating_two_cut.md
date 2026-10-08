@@ -1,7 +1,5 @@
 # Every endpoint-cycle junction either closes locally or has a shortcut-separating two-cut — preserved pre-item development
 
-## Development
-
 ## Every endpoint-cycle junction either closes locally or has a shortcut-separating two-cut
 
 Work in a minimum counterexample.

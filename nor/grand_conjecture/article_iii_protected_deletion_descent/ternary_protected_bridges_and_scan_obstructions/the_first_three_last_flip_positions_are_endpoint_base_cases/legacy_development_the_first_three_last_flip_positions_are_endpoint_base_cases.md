@@ -1,7 +1,5 @@
 # The first three last-flip positions are endpoint base cases — preserved pre-item development
 
-## Development
-
 ## The first three last-flip positions are endpoint base cases
 
 Continue in the special perfect-blocker branch and choose j as the last index with h_j=1,h_{j+1}=0. Use the color-0 full-support last-flip order from subsection 54, whose six-set interior and entire right suffix are threshold-compatible.

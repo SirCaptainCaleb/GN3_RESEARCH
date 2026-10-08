@@ -1,7 +1,5 @@
 # Minimum-phase canonical double-full packet forces holonomy zero — preserved pre-item development
 
-## Development
-
 
 Work in a minimum coboundary-flat ternary counterexample. Let
 O=(v_1,...,v_m)

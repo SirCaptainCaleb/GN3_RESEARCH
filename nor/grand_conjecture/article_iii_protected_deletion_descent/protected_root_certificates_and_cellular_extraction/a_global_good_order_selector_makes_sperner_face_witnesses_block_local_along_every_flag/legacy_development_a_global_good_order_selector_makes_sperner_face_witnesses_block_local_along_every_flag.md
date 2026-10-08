@@ -1,7 +1,5 @@
 # A global good-order selector makes Sperner face witnesses block-local along every flag — preserved pre-item development
 
-## Development
-
 ## A global good-order selector makes Sperner face witnesses block-local along every flag
 
 Work in a minimum counterexample. Every proper nonempty coordinate subset S is a smaller instance and therefore has a NOR-good spanning order. Fix once and for all one such order

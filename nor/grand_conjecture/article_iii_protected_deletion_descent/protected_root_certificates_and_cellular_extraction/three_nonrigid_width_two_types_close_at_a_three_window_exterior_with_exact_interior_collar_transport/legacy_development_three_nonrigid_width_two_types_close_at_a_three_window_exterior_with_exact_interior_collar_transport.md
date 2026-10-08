@@ -1,7 +1,5 @@
 # Three nonrigid width-two types close at a three-window exterior, with exact interior collar transport — preserved pre-item development
 
-## Development
-
 ## Three nonrigid width-two types close at a three-window exterior, with exact interior collar transport
 
 Work in the coboundary-flat alternating ternary sector. Suppose a full order has word 0^A 1^2 0^3, A>=1, and its two band boundaries are full. Write its final eight coordinates (a,b,c,d,e,f,g,h), so their six window labels are 011000. Put t=bce, u=abe. We give actual spanning orders, without maximizing over a restricted short-tail family.

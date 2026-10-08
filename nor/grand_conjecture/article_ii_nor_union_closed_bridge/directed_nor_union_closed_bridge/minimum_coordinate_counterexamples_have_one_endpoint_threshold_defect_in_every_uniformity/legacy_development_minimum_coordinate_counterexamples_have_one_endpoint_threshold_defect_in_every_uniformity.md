@@ -1,7 +1,5 @@
 # Minimum coordinate counterexamples have one endpoint threshold defect in every uniformity — preserved pre-item development
 
-## Development
-
 Let h be a binary coloring of ordered r-tuples of distinct coordinates, r>=2, odd under reversal. A good full order is one whose consecutive r-tuple word changes at most once. Assume a counterexample on V of minimum cardinality in this class, and put M=|V|-r+1.
 
 Theorem. The minimum number E of disagreements with a one-change threshold target, minimized over full orders, cut positions, and polarities, is one. There is an E=1 witness with the defect at an endpoint window. Every good order of every single-coordinate deletion is genuinely bichromatic.

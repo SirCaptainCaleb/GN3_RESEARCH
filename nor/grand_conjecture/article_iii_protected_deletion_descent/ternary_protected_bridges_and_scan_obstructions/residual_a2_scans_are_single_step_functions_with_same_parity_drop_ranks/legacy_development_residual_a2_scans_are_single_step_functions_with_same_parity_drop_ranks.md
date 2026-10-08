@@ -1,7 +1,5 @@
 # Residual A2 scans are single-step functions with same-parity drop ranks — preserved pre-item development
 
-## Development
-
 
 Assume the recurrent flat A2 replacement obstruction with residual coordinates U={x,y,z} and common suffix T=(t_1,t_2,...). For u in U write
 

@@ -1,7 +1,5 @@
 # Outermost-change roots give an all-arity proper-face carrier — preserved pre-item development
 
-## Development
-
 Combination of Article I's all-arity two-change reduction and Article III root §243.
 
 Let h be reversal-odd on ordered r-tuples, r≥2. For a full coordinate order π=(v_1,...,v_n), write its window word as c_1...c_L, L=n−r+1. If this word has at least two changes, let p<q be the first and last change indices, and define D_r(π)=e_{v_p}−e_{v_{q+r}}. Set D_r(π)=0 on NOR-good orders.

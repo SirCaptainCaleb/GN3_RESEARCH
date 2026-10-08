@@ -1,7 +1,5 @@
 # A lexicographic run potential eliminates the final isolated-singleton residue — preserved pre-item development
 
-## Development
-
 ## A lexicographic run potential eliminates the final isolated-singleton residue
 
 Continue in the coboundary-flat alternating ternary sector and consider a full order with global word

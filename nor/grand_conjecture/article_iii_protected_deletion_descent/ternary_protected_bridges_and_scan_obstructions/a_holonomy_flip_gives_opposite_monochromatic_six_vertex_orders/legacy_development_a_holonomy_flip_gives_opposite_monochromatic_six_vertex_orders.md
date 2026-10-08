@@ -1,7 +1,5 @@
 # A holonomy flip gives opposite monochromatic six-vertex orders — preserved pre-item development
 
-## Development
-
 ## A holonomy flip gives opposite monochromatic six-vertex orders
 
 Work in the special perfect-blocker branch of ternary subsection 43. At a holonomy flip write the six protected coordinates as

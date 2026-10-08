@@ -1,7 +1,5 @@
 # Flatness leaves the four full-flat reconnection bits independent — preserved pre-item development
 
-## Development
-
 ## Flatness does not couple the four exported reconnection bits
 
 Consider the normalized residual full/flat five-set from ternary §27 on internal coordinates

@@ -1,7 +1,5 @@
 # Three coherent ported deletion covers glue except for a cyclic three-label packet — preserved pre-item development
 
-## Development
-
 # Three coherent deletion covers: gluing except for one cyclic three-label packet
 
 Work in the normalized flat split B -> z -> A -> x, with alpha the tournament-derived reversal-odd ternary label. A fully ported zero path is an ordered shore path with alpha=0 on every consecutive triple and both defined terminal ordered pairs forward. A cover is a partition of the shore into at most two such paths.

@@ -1,7 +1,5 @@
 # A support-minimal honest lifted zero has at most two physical cycle components — preserved pre-item development
 
-## Development
-
 ## A support-minimal honest lifted zero has at most two physical cycle components
 
 Work in the honest switch-prism target

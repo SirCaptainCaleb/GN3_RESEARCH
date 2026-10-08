@@ -1,7 +1,5 @@
 # A terminal width-two full-full corridor has a rigid three-rotation six-set — preserved pre-item development
 
-## Development
-
 ## Rigid classification of the width-two full-full corridor
 
 Normalize a globally maximal-band width-two full-full corridor to six consecutive coordinates

@@ -1,7 +1,5 @@
 # General protected descent needs only a monotone bridge with a nonempty second phase — preserved pre-item development
 
-## Development
-
 ## General protected descent needs only a monotone bridge with a nonempty second phase
 
 Refine subsection 190. Let (h) be a reversal-odd binary label on ordered (r)-tuples, and assume a minimum coordinate counterexample. Let

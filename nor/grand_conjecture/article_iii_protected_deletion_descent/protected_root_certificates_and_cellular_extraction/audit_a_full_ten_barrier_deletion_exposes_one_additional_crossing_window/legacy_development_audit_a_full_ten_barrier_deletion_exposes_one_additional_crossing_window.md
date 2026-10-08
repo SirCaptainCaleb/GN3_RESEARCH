@@ -1,7 +1,5 @@
 # Audit a full ten barrier deletion exposes one additional crossing window — preserved pre-item development
 
-## Development
-
 Audit of the claimed canonical deletion shadow for a fully-curved 10 barrier.
 
 Let a longer coordinate order contain consecutive coordinates

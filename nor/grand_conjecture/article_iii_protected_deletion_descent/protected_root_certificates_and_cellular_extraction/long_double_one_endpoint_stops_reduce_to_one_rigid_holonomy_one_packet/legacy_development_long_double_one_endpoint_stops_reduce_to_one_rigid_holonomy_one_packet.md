@@ -1,7 +1,5 @@
 # Long double-one endpoint stops reduce to one rigid holonomy-one packet — preserved pre-item development
 
-## Development
-
 ## Long double-one endpoint stops reduce to one rigid six-coordinate pattern
 
 Work in the coboundary-flat alternating ternary sector. Let

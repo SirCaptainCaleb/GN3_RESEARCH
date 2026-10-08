@@ -1,7 +1,5 @@
 # The flat repair square is an exact two-bit Sperner chart — preserved pre-item development
 
-## Development
-
 ## The flat repair square is an exact two-bit Sperner chart
 
 Continue with the boundary-separated flat repair square on a flat transition tetrahedron (a,b,c,d).

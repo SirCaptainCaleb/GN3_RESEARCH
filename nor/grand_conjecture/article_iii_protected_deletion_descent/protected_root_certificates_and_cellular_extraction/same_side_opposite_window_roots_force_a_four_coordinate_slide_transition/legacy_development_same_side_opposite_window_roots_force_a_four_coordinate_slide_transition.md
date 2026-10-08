@@ -1,7 +1,5 @@
 # Same-side opposite window roots force a four-coordinate slide transition — preserved pre-item development
 
-## Development
-
 ## Same-side opposite window roots force a four-coordinate slide transition
 
 Work in the coboundary-flat alternating ternary sector.

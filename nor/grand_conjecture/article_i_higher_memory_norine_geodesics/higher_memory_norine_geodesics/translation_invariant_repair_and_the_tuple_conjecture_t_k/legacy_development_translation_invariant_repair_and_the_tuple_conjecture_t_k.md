@@ -1,7 +1,5 @@
 # Equivalence of directed tuples and translation-invariant windows — preserved pre-item development
 
-## Development
-
 
 A full ordered cube-window coloring is translation-invariant when
 \[

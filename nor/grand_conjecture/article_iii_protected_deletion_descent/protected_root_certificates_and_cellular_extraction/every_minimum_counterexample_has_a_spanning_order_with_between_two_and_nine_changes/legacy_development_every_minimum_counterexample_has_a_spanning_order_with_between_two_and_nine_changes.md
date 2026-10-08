@@ -1,7 +1,5 @@
 # Every minimum counterexample has a spanning order with between two and nine changes — preserved pre-item development
 
-## Development
-
 ## Every minimum counterexample has a spanning order with between two and nine changes
 
 Assume a minimum ternary counterexample.

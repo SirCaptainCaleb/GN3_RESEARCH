@@ -1,7 +1,5 @@
 # Balanced homogeneous tournament cuts give monochromatic interleavings — preserved pre-item development
 
-## Development
-
 ## Balanced homogeneous tournament cuts give monochromatic interleavings
 
 Work in the coboundary-flat pure-orientation sector, with tournament representation

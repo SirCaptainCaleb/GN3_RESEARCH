@@ -1,7 +1,5 @@
 # Both double-full holonomy branches enter the same outward bubble state — preserved pre-item development
 
-## Development
-
 
 Assume the minimum flat-sector endpoint normal form with p,q>=3. Perform the canonical flat wrap repair, producing a singleton 0-run bracketed by two fully-curved switches.
 

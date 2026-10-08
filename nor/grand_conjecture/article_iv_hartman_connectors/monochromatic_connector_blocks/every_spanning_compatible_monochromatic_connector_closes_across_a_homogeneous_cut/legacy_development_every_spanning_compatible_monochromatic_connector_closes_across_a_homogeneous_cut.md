@@ -1,7 +1,5 @@
 # Every spanning compatible monochromatic connector closes across a homogeneous cut — preserved pre-item development
 
-## Development
-
 ## Every spanning compatible monochromatic connector closes across a homogeneous cut
 
 Work in the coboundary-flat alternating ternary sector and use the fixed switching-normalized tournament. Partition V=U disjoint-union B, with every vertex of B dominating every vertex of U. Suppose U has a coordinate order C=(c_1,...,c_M), M>=2, whose ternary word is monochromatic zero and whose first and last ordered pairs are forward in this fixed representative. Its reversal C^rev has monochromatic word one and backward endpoint pairs. Assume B has a NOR-good coordinate order P=(b_1,...,b_r).

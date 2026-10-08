@@ -1,7 +1,5 @@
 # Audit: least-unreachable labels need a reversible repair complex, not the directed prefix prism — preserved pre-item development
 
-## Development
-
 ## Audit: least-unreachable labels need a reversible repair complex, not the directed prefix prism
 
 The Hartman-style least-unreachable idea is promising only after one distinguishes two different notions of reachability.

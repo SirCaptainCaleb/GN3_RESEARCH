@@ -1,7 +1,5 @@
 # Every additional minimum-shore vertex extends the monochromatic connector seed — preserved pre-item development
 
-## Development
-
 Continue from §344. Let
 C=(u,x,z,v,w)
 be the monochromatic five-coordinate connector seed with word 000, where u,v,w lie in the minimum signature shore A and form a directed triangle in the switching-normalized shore tournament

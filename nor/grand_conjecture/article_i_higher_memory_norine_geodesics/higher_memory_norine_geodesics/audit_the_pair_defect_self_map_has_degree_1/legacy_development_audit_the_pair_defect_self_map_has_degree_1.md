@@ -1,7 +1,5 @@
 # Audit: the pair-defect self-map has degree +1 — preserved pre-item development
 
-## Development
-
 ## Audit: the normalized pair-defect map is carried by the identity
 
 Assume a minimum directed-sector counterexample on a ground set (V), and let

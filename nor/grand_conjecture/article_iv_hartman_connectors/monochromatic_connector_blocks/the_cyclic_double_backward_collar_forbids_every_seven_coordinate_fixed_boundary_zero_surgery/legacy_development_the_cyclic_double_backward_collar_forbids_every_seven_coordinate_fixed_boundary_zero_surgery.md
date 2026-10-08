@@ -1,7 +1,5 @@
 # The cyclic double-backward collar forbids every seven-coordinate fixed-boundary zero surgery — preserved pre-item development
 
-## Development
-
 ## Fixed-collar obstruction at the coherent triple
 
 Consider the normalized flat switching tournament on the seven labels

@@ -1,7 +1,5 @@
 # The cyclic seven-point deletion-path false model has an unavoidable parity contradiction — preserved pre-item development
 
-## Development
-
 Adversarial 7-vertex construction attempt and obstruction. Work with a pure alternating ternary orientation alpha (no defect vertices) on V=Z_7. For each omitted x define the cyclicly translated Hamilton path D_x=x+(1,3,4,6,5,2). The five edge sets of D_0 are {1,3},{3,4},{4,6},{5,6},{2,5}. The 15 pairs in Z_7\{0} split into five three-element ownership orbits: {12,16,56}, {13,26,45}, {14,36,34}, {15,46,23}, {24,25,35}; D_0 chooses exactly one pair from each orbit. Consequently every unordered triple T in Z_7 has exactly one distinguished vertex x such that T\{x} is an edge of D_x. Thus assigning the five scan bits s^x_i=alpha(x,D_x(i),D_x(i+1)) for every x defines alpha on every triple without conflicts. This is a particularly clean candidate architecture for a minimum counterexample.
 
 Try to force every D_x to have the shortest nontrivial one-change word 0011 or 1100, and simultaneously force x to be noninsertable at every gap. For word 0011, the pure-orientation insertion calculus shows the unique monotone step scan that blocks prepend, append, and every interior insertion is 11100; by color complement, word 1100 requires scan 00011. Encode the choice by t_x in {0,1}: t_x=0 means w^x=0011 and s^x=11100, while t_x=1 means w^x=1100 and s^x=00011.

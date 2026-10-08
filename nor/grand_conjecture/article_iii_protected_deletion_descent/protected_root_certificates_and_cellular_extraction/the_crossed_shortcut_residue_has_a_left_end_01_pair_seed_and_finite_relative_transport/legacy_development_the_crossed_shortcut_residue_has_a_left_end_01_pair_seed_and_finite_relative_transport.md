@@ -1,7 +1,5 @@
 # The crossed shortcut residue has a left-end 01 pair seed and finite relative transport — preserved pre-item development
 
-## Development
-
 ## The crossed two-exterior shortcut residue has a left-end 01 pair seed and finite relative transport
 
 Work in the sole crossed shortcut residue of §§301,304–305. Let

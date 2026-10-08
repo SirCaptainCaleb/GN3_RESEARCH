@@ -1,7 +1,5 @@
 # A minimum-first deletion witness has a fully curved internal switch once the first phase has length at least four — preserved pre-item development
 
-## Development
-
 ## A minimum-first deletion witness has a fully curved internal switch once the first phase has length at least four
 
 Work in the coboundary-flat alternating ternary sector of a minimum counterexample.

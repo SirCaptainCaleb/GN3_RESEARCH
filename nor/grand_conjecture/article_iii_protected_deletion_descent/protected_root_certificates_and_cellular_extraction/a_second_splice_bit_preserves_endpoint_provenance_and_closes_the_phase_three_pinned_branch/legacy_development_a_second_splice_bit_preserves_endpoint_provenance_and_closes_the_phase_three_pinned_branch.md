@@ -1,7 +1,5 @@
 # A second splice bit preserves endpoint provenance and closes the phase-three pinned branch — preserved pre-item development
 
-## Development
-
 ## A second splice bit retains endpoint provenance at a pinned junction
 
 Work in a minimum counterexample in the coboundary-flat alternating ternary sector. Fix the common global status convention. Let a good deletion witness omitting x be

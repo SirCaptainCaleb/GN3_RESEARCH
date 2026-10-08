@@ -1,7 +1,5 @@
 # Corrected: the crossed shortcut has two endpoint-pinned threshold transports — preserved pre-item development
 
-## Development
-
 ## Corrected: the crossed shortcut has two endpoint-pinned threshold transports
 
 Continue from §314. Let

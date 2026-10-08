@@ -1,7 +1,5 @@
 # Spanning construction from paired deletion orders and common-tail restrictions — preserved pre-item development
 
-## Development
-
 ## Spanning construction from two deletion orders
 
 Work in the directed translation-invariant sector of N_{r+1}, with coordinate arity r>=2 and h(W^rev)=1-h(W). All sequences below have distinct vertices.

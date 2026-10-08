@@ -1,7 +1,5 @@
 # Prefix-tail state DAG and antipodal monochromatic reachability — preserved pre-item development
 
-## Development
-
 ## Prefix-tail state DAG and the antipodal reachability criterion
 
 Fix coordinate-label arity \(r\ge 2\) in the directed translation-invariant sector,

@@ -1,7 +1,5 @@
 # Nested certified central cuts exclude every positive protected-root dependence — preserved pre-item development
 
-## Development
-
 ## Nested certified central cuts exclude every positive protected-root dependence
 
 Work with any finite family of actual ternary protected roots

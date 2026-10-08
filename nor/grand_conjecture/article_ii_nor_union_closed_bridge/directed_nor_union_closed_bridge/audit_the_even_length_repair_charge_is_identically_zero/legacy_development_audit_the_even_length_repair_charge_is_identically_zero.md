@@ -1,7 +1,5 @@
 # Audit: the even-length repair charge is identically zero — preserved pre-item development
 
-## Development
-
 ## Audit: the proposed even-length Z2 charge is tautologically zero
 
 Subsection 134 defined, for an even-length cyclic ternary status word with four changes,

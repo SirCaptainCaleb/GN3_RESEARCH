@@ -1,7 +1,5 @@
 # Lexicographic extremality forces full boundaries on every wide two-change band — preserved pre-item development
 
-## Development
-
 ## Lexicographic extremality forces full boundaries on every wide two-change band
 
 Work in the coboundary-flat alternating ternary sector. Consider a full order with exactly two changes,

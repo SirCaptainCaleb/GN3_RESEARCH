@@ -1,7 +1,5 @@
 # Every one-cycle honest lifted zero is removable by parity transversality — preserved pre-item development
 
-## Development
-
 Work with the honest switch-prism lifted labels
 (rho,s) in W direct-sum R,
 with s in {+1,-1}.

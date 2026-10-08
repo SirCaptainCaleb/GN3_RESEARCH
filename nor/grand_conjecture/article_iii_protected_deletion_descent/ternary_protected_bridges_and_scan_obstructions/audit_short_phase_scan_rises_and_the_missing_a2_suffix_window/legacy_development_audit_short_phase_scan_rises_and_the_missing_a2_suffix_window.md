@@ -1,7 +1,5 @@
 # Audit: short-phase scan rises and the missing A2 suffix window — preserved pre-item development
 
-## Development
-
 ## Audit of short-phase scan classification and the A2 spanning splice
 
 This note distinguishes two unproved deductions from the useful local replacement formulas. It does not refute NOR.

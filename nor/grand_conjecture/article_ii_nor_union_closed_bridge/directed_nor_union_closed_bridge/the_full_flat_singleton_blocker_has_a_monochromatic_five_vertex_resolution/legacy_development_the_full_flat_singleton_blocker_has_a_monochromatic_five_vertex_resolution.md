@@ -1,7 +1,5 @@
 # The full flat singleton blocker has a monochromatic five vertex resolution — preserved pre-item development
 
-## Development
-
 ## The full-flat singleton blocker has a monochromatic five-vertex resolution
 
 Work in the coboundary-flat pure-orientation ternary sector. Let five consecutive coordinates

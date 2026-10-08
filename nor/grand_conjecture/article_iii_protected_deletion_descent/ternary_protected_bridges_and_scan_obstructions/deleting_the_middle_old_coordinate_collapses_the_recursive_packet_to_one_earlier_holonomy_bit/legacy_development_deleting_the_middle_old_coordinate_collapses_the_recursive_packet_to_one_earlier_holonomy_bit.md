@@ -1,7 +1,5 @@
 # Deleting the middle old coordinate collapses the recursive packet to one earlier holonomy bit — preserved pre-item development
 
-## Development
-
 ## Deleting the middle old coordinate collapses the recursive packet to one earlier holonomy bit
 
 Continue with the recursive double-full singleton from subsection 55:

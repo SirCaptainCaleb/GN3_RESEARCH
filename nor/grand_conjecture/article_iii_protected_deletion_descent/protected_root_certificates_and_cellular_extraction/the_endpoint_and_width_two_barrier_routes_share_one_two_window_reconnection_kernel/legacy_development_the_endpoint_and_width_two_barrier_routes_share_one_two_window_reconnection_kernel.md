@@ -1,7 +1,5 @@
 # The endpoint and width-two barrier routes share one two-window reconnection kernel — preserved pre-item development
 
-## Development
-
 ## Two independent closure routes meet at one two-window reconnection kernel
 
 Recent Article III work has reduced two apparently different obstructions to the same bounded interface problem.

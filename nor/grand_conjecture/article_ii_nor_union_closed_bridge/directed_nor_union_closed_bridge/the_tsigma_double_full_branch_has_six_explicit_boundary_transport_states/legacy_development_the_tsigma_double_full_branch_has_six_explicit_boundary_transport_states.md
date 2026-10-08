@@ -1,7 +1,5 @@
 # The t=sigma double-full branch has six explicit boundary transport states — preserved pre-item development
 
-## Development
-
 ## The t=sigma double-full branch reduces to six four-run boundary states
 
 Continue in the coboundary-flat pure-orientation sector with a four-change carrier of canonical profile

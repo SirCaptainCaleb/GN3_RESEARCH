@@ -1,7 +1,5 @@
 # Window barycenters turn affine certificates into odd nonzero tangent vectors — preserved pre-item development
 
-## Development
-
 This constructs a tangent-space model of the all-uniformity affine certificates. It supplies a possible alternative to an ordinary Sperner vertex labeling, with its extension problem stated explicitly.
 
 Let the coordinate set have size n, let the coordinate arity be r, and put m=n-r+1. Consider a bad coordinate order pi, with signs epsilon_i and a certificate lambda in K(epsilon) as defined in Subsection 101. Work in H={x in R^n:sum_v x_v=0}. Define the centered rank vector x_pi by (x_pi)_{pi_j}=j-(n+1)/2. Define the barycenter of the i-th ordered window by q_i=(1/r) sum_{a=0}^{r-1} e_{pi_{i+a}}. Put

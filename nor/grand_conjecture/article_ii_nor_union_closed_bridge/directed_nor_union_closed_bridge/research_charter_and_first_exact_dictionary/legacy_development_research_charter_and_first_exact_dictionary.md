@@ -1,7 +1,5 @@
 # Research charter and first exact dictionary — preserved pre-item development
 
-## Development
-
 ## Research charter: reduction first, unification second
 
 The goal of this article is to investigate a structural bridge between directed NOR and Frankl's union-closed sets conjecture.

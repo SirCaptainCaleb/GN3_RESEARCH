@@ -1,7 +1,5 @@
 # Transverse projection controls the first-order limit of a perturbed root circuit — preserved pre-item development
 
-## Development
-
 ## Transverse projection controls the first-order limit of a perturbed root circuit
 
 This develops the correct coefficient-sensitive replacement for equal-weight moment separation. It complements the arbitrary-perturbation stability theorem in root §68 and the audit in root §65.

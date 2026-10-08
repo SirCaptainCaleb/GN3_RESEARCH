@@ -1,7 +1,5 @@
 # The common left reconnection of a holonomy toggle is a forced full barrier — preserved pre-item development
 
-## Development
-
 ## The common left reconnection of a holonomy toggle is a forced full barrier
 
 Continue in the special perfect-blocker branch. Let the holonomy-flip six-set begin at old coordinate a=v_j, and write the two preceding old coordinates

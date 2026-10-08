@@ -1,7 +1,5 @@
 # Antipodal cube geodesics are coordinate orders — preserved pre-item development
 
-## Development
-
 
 Let \(Q_V\) be the Boolean cube on an \(n\)-element coordinate set \(V\). If
 \[

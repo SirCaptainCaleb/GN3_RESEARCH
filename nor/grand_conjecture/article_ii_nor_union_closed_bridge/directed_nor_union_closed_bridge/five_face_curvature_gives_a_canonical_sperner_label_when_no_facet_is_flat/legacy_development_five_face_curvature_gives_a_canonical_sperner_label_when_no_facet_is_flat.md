@@ -1,7 +1,5 @@
 # Five-face curvature gives a canonical Sperner label when no facet is flat — preserved pre-item development
 
-## Development
-
 Work with a pure alternating ternary orientation alpha. Call a tetrahedron flat when all four pivot links are transitive, singly curved when exactly one pivot link is cyclic, and fully curved when all four pivot links are cyclic, using the established three-way tetrahedral classification.
 
 Lemma. A five-element set W contains at most two fully curved tetrahedra. If three existed, their intersection would contain two vertices. Choose a pivot o in that intersection. Each of those tetrahedra would give a different directed triangle in the link tournament G_o on W minus {o}, which has four vertices. But a four-vertex tournament has at most two directed triangles. For completeness, its number of cyclic triangles is 4 minus sum_v binom(d^+(v),2): each transitive triple has one vertex beating the other two. Since the outdegrees sum to six, that sum is at least two (the minimum is attained at degrees 1,1,2,2). This proves the bound.

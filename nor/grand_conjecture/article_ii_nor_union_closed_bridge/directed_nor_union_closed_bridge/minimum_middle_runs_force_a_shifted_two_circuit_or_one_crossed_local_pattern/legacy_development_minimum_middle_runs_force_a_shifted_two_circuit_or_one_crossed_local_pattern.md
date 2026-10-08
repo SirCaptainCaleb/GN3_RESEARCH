@@ -1,7 +1,5 @@
 # Minimum middle runs force a shifted two circuit or one crossed local pattern — preserved pre-item development
 
-## Development
-
 ## Minimum middle runs force a shifted two-circuit or one crossed local pattern
 
 Work in a directed ternary minimum counterexample. Among all spanning coordinate orders with exactly two changes, choose one whose middle color run has minimum positive length. Using a minimum-counterexample deletion order and endpoint blocking, write such an order in the form

@@ -1,7 +1,5 @@
 # Every bad full order lies on a flag-compatible outermost-root cycle — preserved pre-item development
 
-## Development
-
 ## Every bad full order lies on a flag-compatible outermost-root cycle
 
 Assume the outermost-change boundary carrier D from the preceding subsection and suppose the ambient instance is a counterexample.

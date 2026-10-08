@@ -1,7 +1,5 @@
 # Terminal isolated singletons with exterior run length at most two have explicit spanning NOR orders — preserved pre-item development
 
-## Development
-
 ## Every flat alternating global singleton with a short terminal run has a spanning NOR order
 
 Let alpha be a coboundary-flat alternating ternary label. Suppose a full coordinate order has global word

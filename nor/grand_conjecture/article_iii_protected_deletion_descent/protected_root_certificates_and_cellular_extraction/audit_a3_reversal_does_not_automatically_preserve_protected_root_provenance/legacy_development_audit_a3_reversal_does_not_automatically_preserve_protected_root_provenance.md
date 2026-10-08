@@ -1,7 +1,5 @@
 # Audit: A3 reversal does not automatically preserve protected-root provenance — preserved pre-item development
 
-## Development
-
 ## Audit: A3 reversal gives an opposite raw descent, not automatically an opposite protected root
 
 The local reversal calculation in the preceding A3 analysis is correct at the level of ternary chamber labels, but its protected-root consequence requires an additional provenance hypothesis.

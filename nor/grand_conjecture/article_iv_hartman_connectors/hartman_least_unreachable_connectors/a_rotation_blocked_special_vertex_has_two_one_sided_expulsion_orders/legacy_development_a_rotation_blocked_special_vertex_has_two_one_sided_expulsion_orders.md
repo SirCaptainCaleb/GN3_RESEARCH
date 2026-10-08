@@ -1,7 +1,5 @@
 # A rotation-blocked special vertex has two one-sided expulsion orders — preserved pre-item development
 
-## Development
-
 Work in the zero-polarity case of the blocked special cell from §21:
 (p,a,x,b,c),
 with both A2 rotations blocked. Then the barrier bits are zero, and the shore relations imply that

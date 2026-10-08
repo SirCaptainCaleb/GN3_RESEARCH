@@ -1,7 +1,5 @@
 # Three-element support circuits force centered directed triangles — preserved pre-item development
 
-## Development
-
 ## Three-element support circuits are blocked cycles with three centered triangles
 
 Let h be a reversal-antisymmetric ternary coordinate coloring. Fix a tail F=(f_1,f_2) and color tau. Suppose U={a,b,c} is a minimal infeasible support in F_{tau,F}: every proper subset is feasible at F, while U is not. Put sigma=1-tau.

@@ -1,7 +1,5 @@
 # Turn-window roots make face-block localization hereditary — preserved pre-item development
 
-## Development
-
 ## Turn-window roots repair the boundary leakage in first/last-state localization
 
 Fix coordinate-label arity (rge2) in the directed translation-invariant sector. For a coordinate permutation

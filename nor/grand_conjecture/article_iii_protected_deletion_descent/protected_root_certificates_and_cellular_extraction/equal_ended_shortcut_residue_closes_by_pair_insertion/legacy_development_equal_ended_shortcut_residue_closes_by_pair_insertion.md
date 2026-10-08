@@ -1,7 +1,5 @@
 # Equal-ended shortcut residue closes by pair insertion — preserved pre-item development
 
-## Development
-
 ## Equal-ended shortcut residue closes by pair insertion
 
 Continue with §299. Let O=(w_1,...,w_m) have word 0^p1^q, and suppose both middle orientations fail to close or realize x->z. Then

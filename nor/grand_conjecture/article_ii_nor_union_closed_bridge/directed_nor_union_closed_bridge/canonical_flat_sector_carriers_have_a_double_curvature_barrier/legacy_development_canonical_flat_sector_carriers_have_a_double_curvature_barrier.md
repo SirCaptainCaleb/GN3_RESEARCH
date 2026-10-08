@@ -1,7 +1,5 @@
 # Canonical flat sector carriers have a double curvature barrier — preserved pre-item development
 
-## Development
-
 ## Canonical flat-sector carriers have a double curvature barrier
 
 Work in the coboundary-flat pure-orientation sector. Let C be a four-change cyclic order maximizing

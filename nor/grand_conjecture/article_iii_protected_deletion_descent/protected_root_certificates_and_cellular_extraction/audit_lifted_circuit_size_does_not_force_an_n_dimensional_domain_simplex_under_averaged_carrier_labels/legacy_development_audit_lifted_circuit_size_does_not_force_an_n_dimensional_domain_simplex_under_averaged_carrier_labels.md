@@ -1,7 +1,5 @@
 # Audit: lifted circuit size does not force an n-dimensional domain simplex under averaged carrier labels — preserved pre-item development
 
-## Development
-
 Audit of the dimension-saturation handoff. The switch-prism construction in root 88 allows a subdivision-vertex label to be a convex average of several incident genuine state labels. A zero of the affine PL map on a domain simplex therefore expands to a positive dependence among genuine state labels that need not correspond one-for-one to the vertices of that domain simplex.
 
 Consequently, even if a support-minimal expanded genuine-label dependence is a connected spanning bicyclic circuit with n+1 labels and rank n in W direct-sum R, one cannot infer that the domain simplex carrying the zero has n+1 vertices or dimension n. Several of those genuine labels may occur inside the convex average attached to a single subdivision vertex.

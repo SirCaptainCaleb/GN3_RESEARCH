@@ -1,7 +1,5 @@
 # The switch prism forces a side-balanced physical root dependence in the honest lifted space — preserved pre-item development
 
-## Development
-
 ## The switch prism forces a side-balanced physical root dependence in the honest lifted space
 
 Let h be a reversal-odd ordered-r-tuple coloring on n physical coordinates and assume counterexamplehood: every full coordinate order has at least two color changes.

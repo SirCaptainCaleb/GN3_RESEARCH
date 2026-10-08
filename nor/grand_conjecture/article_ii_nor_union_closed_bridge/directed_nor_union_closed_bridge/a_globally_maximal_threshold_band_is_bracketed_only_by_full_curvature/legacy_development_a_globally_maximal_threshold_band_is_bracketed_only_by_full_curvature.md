@@ -1,7 +1,5 @@
 # A globally maximal threshold band is bracketed only by full curvature — preserved pre-item development
 
-## Development
-
 ## A globally maximal threshold band is bracketed only by full curvature
 
 Work in the coboundary-flat pure-orientation sector. For every full coordinate order pi, switch cut k, and polarity eta, define

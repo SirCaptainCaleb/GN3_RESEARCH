@@ -1,7 +1,5 @@
 # Corner lifting plus endpoint pivots eliminates Hamiltonian endpoint cycles — preserved pre-item development
 
-## Development
-
 Assume the witness-preserving endpoint CORNER-LIFT property of roots §§93/114. Choose an actual endpoint-root cycle
 rho_i=e_{x_i}-e_{x_{i+1}}
 of minimum possible length, and suppose its support is Hamiltonian, i.e. it contains every ambient coordinate.

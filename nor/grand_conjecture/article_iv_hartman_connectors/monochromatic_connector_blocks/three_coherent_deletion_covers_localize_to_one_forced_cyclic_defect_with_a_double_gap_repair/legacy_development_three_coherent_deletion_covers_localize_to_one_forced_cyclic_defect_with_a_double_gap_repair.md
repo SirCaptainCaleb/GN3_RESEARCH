@@ -1,7 +1,5 @@
 # Three coherent deletion covers localize to one forced cyclic defect, with a double-gap repair — preserved pre-item development
 
-## Development
-
 ## Theorem: three coherent ported deletions have one forced cyclic defect
 
 Fix the flat ternary split and the representing tournament t, writing t(u,v)=1 when u→v and

@@ -1,7 +1,5 @@
 # Every ternary A3 descent root has its opposite in the same block — preserved pre-item development
 
-## Development
-
 ## Every ternary A3 descent root has its opposite in the same block
 
 Work in a four-coordinate A3 Coxeter block B={a,b,c,d}. Suppose the chamber order

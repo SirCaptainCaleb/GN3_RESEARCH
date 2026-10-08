@@ -1,7 +1,5 @@
 # Every legal one-step special-vertex rotation flips the alternating-blocker parity sheet — preserved pre-item development
 
-## Development
-
 Use the special parity
 chi = |i_z-i_x| + sigma_x + sigma_z mod 2
 from the preceding subsection, where sigma is the path-normalizing switching vector.

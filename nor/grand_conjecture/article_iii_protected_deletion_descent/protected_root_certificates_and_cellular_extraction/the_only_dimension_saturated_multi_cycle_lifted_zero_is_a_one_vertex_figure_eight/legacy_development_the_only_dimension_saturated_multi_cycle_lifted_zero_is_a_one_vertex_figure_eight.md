@@ -1,7 +1,5 @@
 # The only dimension-saturated multi-cycle lifted zero is a one-vertex figure eight — preserved pre-item development
 
-## Development
-
 ## The only dimension-saturated multi-cycle lifted zero is a one-vertex figure eight
 
 Continue from root §188. A support-minimal honest lifted zero is either one physical simple cycle or the union of exactly two physical simple cycles with opposite nonzero side imbalances.

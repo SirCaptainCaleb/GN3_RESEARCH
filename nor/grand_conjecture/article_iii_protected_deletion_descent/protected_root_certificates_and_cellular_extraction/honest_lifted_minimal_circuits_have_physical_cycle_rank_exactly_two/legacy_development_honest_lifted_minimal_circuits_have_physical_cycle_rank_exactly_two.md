@@ -1,7 +1,5 @@
 # Honest lifted minimal circuits have physical cycle rank exactly two — preserved pre-item development
 
-## Development
-
 ## Honest lifted circuits have physical cycle rank exactly two
 
 Work with a support-minimal positive dependence of honest ternary switch-prism labels

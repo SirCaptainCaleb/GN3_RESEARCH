@@ -1,7 +1,5 @@
 # Audit switch-prism odd maps have a tautological interior center zero — preserved pre-item development
 
-## Development
-
 The switch-prism degree constructions have an interior fixed-point caveat analogous to the older full-permutahedron center audit.
 
 Let

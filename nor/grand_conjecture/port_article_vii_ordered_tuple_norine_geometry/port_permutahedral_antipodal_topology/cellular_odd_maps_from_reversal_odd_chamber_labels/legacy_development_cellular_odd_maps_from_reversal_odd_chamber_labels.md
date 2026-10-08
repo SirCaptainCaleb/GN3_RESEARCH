@@ -1,7 +1,5 @@
 # Cellular odd maps from reversal-odd chamber labels — preserved pre-item development
 
-## Development
-
 
 The permutations of \(V\) are the chambers of the type-\(A\) Coxeter complex, equivalently the chamber set associated with the permutahedron. Reversal of a permutation defines the antipodal chamber involution.
 

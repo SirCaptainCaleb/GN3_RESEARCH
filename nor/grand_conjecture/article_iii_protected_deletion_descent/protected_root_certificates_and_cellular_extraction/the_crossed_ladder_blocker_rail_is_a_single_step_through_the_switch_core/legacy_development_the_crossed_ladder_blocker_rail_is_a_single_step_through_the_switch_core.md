@@ -1,7 +1,5 @@
 # The crossed ladder blocker rail is a single step through the switch core — preserved pre-item development
 
-## Development
-
 ## The crossed ladder blocker rail is a single step through the switch core
 
 Use the normalization of §310:

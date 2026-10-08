@@ -1,7 +1,5 @@
 # Both boundaries of the forced-zero blocker interval are automatically flat — preserved pre-item development
 
-## Development
-
 ## Both boundaries of the forced-zero blocker interval are automatically flat
 
 Continue with §360.

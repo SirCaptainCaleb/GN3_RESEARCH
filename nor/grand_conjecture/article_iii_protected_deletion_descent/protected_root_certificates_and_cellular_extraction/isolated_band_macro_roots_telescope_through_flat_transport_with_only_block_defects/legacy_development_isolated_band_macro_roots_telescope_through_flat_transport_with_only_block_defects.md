@@ -1,7 +1,5 @@
 # Isolated-band macro roots telescope through flat transport with only block defects — preserved pre-item development
 
-## Development
-
 ## Isolated-band macro roots telescope through flat transport with only block defects
 
 Consider an isolated monochromatic band in a ternary order. Keep its left change fixed and transport its right change outward by the audited flat endpoint repairs.

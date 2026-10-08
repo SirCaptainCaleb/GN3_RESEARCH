@@ -1,7 +1,5 @@
 # Endpoint barriers force a rank-two protected root cycle with unit cut defects — preserved pre-item development
 
-## Development
-
 Work in a minimum ternary counterexample in the coboundary-flat alternating sector, in the endpoint regime where the standard normalized deletion witness has both phases nonempty and the canonical endpoint tetrahedron is fully curved.
 
 For every coordinate x choose one good order of V minus {x} and normalize it as

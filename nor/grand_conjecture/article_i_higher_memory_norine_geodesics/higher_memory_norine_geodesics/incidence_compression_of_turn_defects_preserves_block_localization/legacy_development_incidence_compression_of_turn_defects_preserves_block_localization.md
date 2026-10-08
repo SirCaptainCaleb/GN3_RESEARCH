@@ -1,7 +1,5 @@
 # Incidence compression of turn defects preserves block localization — preserved pre-item development
 
-## Development
-
 ## Incidence compression of turn defects
 
 Fix coordinate-label arity \(r\ge 2\) in the directed translation-invariant sector on an \(n\)-element ground set \(V\). Under a counterexample hypothesis every coordinate permutation is bad.

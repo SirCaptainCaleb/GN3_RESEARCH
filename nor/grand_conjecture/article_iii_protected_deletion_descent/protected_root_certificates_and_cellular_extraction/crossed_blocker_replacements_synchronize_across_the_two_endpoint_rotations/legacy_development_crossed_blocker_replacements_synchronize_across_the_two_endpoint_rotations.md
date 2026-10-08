@@ -1,7 +1,5 @@
 # Crossed blocker replacements synchronize across the two endpoint rotations — preserved pre-item development
 
-## Development
-
 ## Crossed blocker replacements synchronize across the two endpoint rotations
 
 Work in the Type-I crossed blocker normalization of §304. Let

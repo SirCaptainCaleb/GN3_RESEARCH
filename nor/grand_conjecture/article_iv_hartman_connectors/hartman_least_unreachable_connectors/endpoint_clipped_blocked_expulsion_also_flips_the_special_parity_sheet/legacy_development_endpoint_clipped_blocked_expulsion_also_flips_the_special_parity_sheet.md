@@ -1,7 +1,5 @@
 # Endpoint-clipped blocked expulsion also flips the special parity sheet — preserved pre-item development
 
-## Development
-
 Continue with the zero-polarity blocked x-cell
 (p,a,x,b,c)
 of the preceding subsection. In the old path-normalized switching,

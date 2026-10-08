@@ -1,7 +1,5 @@
 # Connected bicyclic honest-lifted circuits have an exact path-flow normal form — preserved pre-item development
 
-## Development
-
 ## Exact flow normal form for connected bicyclic honest-lifted circuits
 
 Work with a support-minimal positive dependence of honest ternary switch-prism labels

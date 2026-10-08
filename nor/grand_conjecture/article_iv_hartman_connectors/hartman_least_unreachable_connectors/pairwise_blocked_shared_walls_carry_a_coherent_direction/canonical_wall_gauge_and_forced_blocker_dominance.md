@@ -1,5 +1,3 @@
 # Canonical shared-wall gauges force a dominance cut among blocked vertices
 
-## Development
-
 Fix a monochromatic-zero connector C=(c_1,...,c_m) in the flat tournament split, with both exposed endpoint pairs forward. Switch its vertices to the path-normalized gauge in which c_j→c_{j+1} and c_j→c_{j+2} whenever defined. Fix an internal gap c_i|c_{i+1}, 2≤i≤m−2. For each omitted vertex a with α(c_i,a,c_{i+1})=0, there is a unique switching state of a for which c_i→a→c_{i+1}. Define L_i and R_i by the left and right outer incidences c_{i−1}→a and a→c_{i+2}, respectively. The main result proves that in a support-maximal connector L_i and R_i are disjoint, and all edges between them point R_i→L_i in these jointly chosen wall-normalized switching states. This replaces the earlier unsupported claim that opposite thicknesses can never coexist. They may coexist, but then their mutual orientations are forced. The corollary identifies the two-sided adjacent-collar obstruction to either two-vertex ordering.

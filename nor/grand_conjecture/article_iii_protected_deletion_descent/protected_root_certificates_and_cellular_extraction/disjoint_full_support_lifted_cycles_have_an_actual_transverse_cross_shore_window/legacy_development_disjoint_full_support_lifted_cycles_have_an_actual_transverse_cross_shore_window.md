@@ -1,7 +1,5 @@
 # Disjoint full-support lifted cycles have an actual transverse cross-shore window — preserved pre-item development
 
-## Development
-
 ## Full-support disjoint two-cycle lifted circuits have an actual transverse cross-shore window
 
 Work in one honest switch-prism product carrier cell. Suppose a support-minimal lifted zero has physical support equal to two vertex-disjoint directed cycles on coordinate sets A and B, with A disjoint union B=V, and with opposite nonzero side imbalance.

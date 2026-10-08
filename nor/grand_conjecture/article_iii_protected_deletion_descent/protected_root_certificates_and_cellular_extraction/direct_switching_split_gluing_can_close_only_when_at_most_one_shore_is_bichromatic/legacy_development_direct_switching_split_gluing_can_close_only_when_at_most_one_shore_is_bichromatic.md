@@ -1,7 +1,5 @@
 # Direct switching-split gluing can close only when at most one shore is bichromatic — preserved pre-item development
 
-## Development
-
 ## Direct switching-split gluing can close only when at most one shore is bichromatic
 
 Use the exact endpoint-state composition law of §333. In the switching-normalized split

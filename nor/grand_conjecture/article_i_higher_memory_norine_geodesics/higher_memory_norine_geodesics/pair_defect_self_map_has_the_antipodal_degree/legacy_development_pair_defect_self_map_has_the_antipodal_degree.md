@@ -1,7 +1,5 @@
 # Pair-defect map deforms to the canonical endpoint carrier — preserved pre-item development
 
-## Development
-
 ## Pair-defect map deforms to the canonical endpoint carrier
 
 Assume a minimum counterexample in the directed translation-invariant sector on a ground set \(V\), \(|V|=n\). Let

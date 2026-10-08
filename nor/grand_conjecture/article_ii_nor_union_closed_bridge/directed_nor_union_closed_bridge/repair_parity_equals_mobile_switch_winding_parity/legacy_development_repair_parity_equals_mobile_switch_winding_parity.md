@@ -1,7 +1,5 @@
 # Repair parity equals mobile switch winding parity — preserved pre-item development
 
-## Development
-
 ## Repair parity equals mobile-switch winding parity
 
 Work in the coboundary-flat pure-orientation sector. Consider a repair path along which one distinguished transition is transported without annihilation. Lift its transition position from the cyclic status circle of length m to the integers.

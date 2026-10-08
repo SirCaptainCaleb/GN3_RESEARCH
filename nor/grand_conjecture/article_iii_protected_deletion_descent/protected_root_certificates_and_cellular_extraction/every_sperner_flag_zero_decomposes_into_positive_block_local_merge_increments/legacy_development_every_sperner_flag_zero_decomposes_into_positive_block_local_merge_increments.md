@@ -1,7 +1,5 @@
 # Every Sperner flag zero decomposes into positive block-local merge increments — preserved pre-item development
 
-## Development
-
 ## Every Sperner flag zero decomposes into positive block-local merge increments
 
 Use the canonical consecutive-change defect labels

@@ -1,7 +1,5 @@
 # The distance-three pair-insertion residue is rigid full-flat-full — preserved pre-item development
 
-## Development
-
 ## The distance-three pair-insertion residue is rigid full-flat-full
 
 Continue with root §159 in the only nonclosing scan-threshold-separation-three branch.

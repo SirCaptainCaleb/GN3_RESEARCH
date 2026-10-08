@@ -1,7 +1,5 @@
 # Audit: the crossed shortcut is fully curved, while the easy shortcut may be only a macro-root — preserved pre-item development
 
-## Development
-
 ## Scope correction for the ordered-shortcut theorem
 
 The proof of §320 has two different output classes and they must not be conflated.

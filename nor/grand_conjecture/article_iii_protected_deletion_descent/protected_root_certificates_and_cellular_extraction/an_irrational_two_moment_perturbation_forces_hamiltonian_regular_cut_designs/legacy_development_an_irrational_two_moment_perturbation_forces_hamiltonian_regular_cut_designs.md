@@ -1,7 +1,5 @@
 # An irrational two-moment perturbation forces Hamiltonian regular cut designs — preserved pre-item development
 
-## Development
-
 ## An irrational two-moment perturbation forces a Hamiltonian regular cut design
 
 There are now two antipodally even provenance moments in the physical root space W.

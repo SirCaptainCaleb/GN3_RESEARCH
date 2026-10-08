@@ -1,7 +1,5 @@
 # Clarification: Article II does not derive NOR from Frankl's heavy-element conclusion — preserved pre-item development
 
-## Development
-
 
 ## Clarification: distinguish union closure from Frankl's conclusion
 

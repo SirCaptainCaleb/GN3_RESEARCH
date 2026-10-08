@@ -1,7 +1,5 @@
 # Canonical ternary switch packets split exactly into full and flat descent types — preserved pre-item development
 
-## Development
-
 ## Canonical ternary switch packets split exactly into full and flat descent types
 
 Let a ternary one-change deletion witness have old local coordinates

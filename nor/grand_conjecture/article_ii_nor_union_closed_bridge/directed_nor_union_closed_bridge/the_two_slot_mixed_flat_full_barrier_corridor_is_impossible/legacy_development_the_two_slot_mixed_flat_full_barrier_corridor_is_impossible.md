@@ -1,7 +1,5 @@
 # The two-slot mixed flat-full barrier corridor is impossible — preserved pre-item development
 
-## Development
-
 
 Work in the doubly extremal threshold state of the coboundary-flat ternary sector. Suppose the target switch is flat and the nearest unresolved full-curvature boundary lies exactly two transition slots to the right.
 

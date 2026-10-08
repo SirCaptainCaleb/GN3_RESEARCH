@@ -1,7 +1,5 @@
 # One- and two-vertex absorption from monochromatic tight cycles — preserved pre-item development
 
-## Development
-
 ## One- and two-vertex absorption from a monochromatic tight cycle
 
 Let C be a color-0 tight cyclic order with at least three vertices for a reversal-antisymmetric ternary label h. Fix c in C, with predecessor p and successor s, so h(p,c,s)=0. Let C_c^+ be C cut to end in (...,p,c), and let C_{c,start}^+ be C cut to start (c,s,...).

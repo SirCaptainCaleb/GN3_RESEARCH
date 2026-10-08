@@ -1,7 +1,5 @@
 # The exceptional width-two branch also terminates in NOR or a protected root — preserved pre-item development
 
-## Development
-
 ## The exceptional width-two branch has a finite threshold-band handoff
 
 Continue from §266 in the exceptional (r,s)=(1,1) width-two type. The stronger rigid weave forces its unique left reconnection bit to be one and creates the double-full singleton

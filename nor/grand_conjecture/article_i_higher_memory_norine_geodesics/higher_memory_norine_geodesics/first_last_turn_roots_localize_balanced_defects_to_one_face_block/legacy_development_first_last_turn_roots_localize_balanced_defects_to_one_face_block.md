@@ -1,7 +1,5 @@
 # First-last turn roots localize balanced defects to one face block — preserved pre-item development
 
-## Development
-
 ## First–last turn roots and face-block localization
 
 Fix coordinate-label arity (r\ge2), so we are in the directed sector of (N_{r+1}). Use the quotient-overlap graph (mathcal G_{n,r}) whose vertices are reversal-orbits of ordered ((r-1))-tuples.

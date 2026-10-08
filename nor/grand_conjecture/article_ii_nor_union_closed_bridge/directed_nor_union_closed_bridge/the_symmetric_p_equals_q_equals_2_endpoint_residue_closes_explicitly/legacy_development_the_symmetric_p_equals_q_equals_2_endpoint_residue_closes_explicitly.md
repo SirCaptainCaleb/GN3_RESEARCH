@@ -1,7 +1,5 @@
 # The symmetric p equals q equals 2 endpoint residue closes explicitly — preserved pre-item development
 
-## Development
-
 
 Assume the minimum-counterexample endpoint normal form in the coboundary-flat ternary sector has p=q=2.
 

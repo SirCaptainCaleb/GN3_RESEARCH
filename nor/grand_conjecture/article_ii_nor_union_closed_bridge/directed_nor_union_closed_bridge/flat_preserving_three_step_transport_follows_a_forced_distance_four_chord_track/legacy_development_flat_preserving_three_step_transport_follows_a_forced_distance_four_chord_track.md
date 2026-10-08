@@ -1,7 +1,5 @@
 # Flat preserving three step transport follows a forced distance four chord track — preserved pre-item development
 
-## Development
-
 ## Flat-preserving three-step transport follows a forced distance-four chord track
 
 Work in the coboundary-flat sector in Hamilton-normalized tournament coordinates. Let a flat isolated transition separate a left status color x from a right monochromatic run of color 1-x, and suppose a successful right endpoint repair transports that switch by distance three without meeting another transition.

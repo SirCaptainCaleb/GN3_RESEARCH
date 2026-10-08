@@ -1,7 +1,5 @@
 # A complementary Tucker edge seeds a terminating central threshold band — preserved pre-item development
 
-## Development
-
 ## A complementary Tucker edge seeds a terminating central threshold band
 
 Work in the coboundary-flat alternating ternary sector with a switch target of color eta on the pre side and 1-eta on the post side.

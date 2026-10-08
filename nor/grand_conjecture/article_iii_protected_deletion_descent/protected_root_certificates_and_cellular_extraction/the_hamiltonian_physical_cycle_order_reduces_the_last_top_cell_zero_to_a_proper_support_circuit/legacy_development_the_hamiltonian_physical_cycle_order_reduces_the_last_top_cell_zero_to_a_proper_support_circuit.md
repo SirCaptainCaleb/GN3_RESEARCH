@@ -1,7 +1,5 @@
 # The Hamiltonian physical-cycle order reduces the last top-cell zero to a proper-support circuit — preserved pre-item development
 
-## Development
-
 ## The Hamiltonian physical-cycle order reduces the last top-cell zero to a proper-support circuit
 
 Continue from root §181. Work in a minimum-coordinate pure ternary counterexample and suppose an essential support-minimal top-cell positive root circuit is Hamiltonian:

@@ -1,7 +1,5 @@
 # Every protected barrier root has a flag-compatible opposite cut crossing — preserved pre-item development
 
-## Development
-
 ## Every protected barrier root has a flag-compatible opposite cut crossing
 
 Assume the root-valued proper-face boundary carrier D of §243. Let

@@ -1,7 +1,5 @@
 # One change and the width-one inversion relaxation — preserved pre-item development
 
-## Development
-
 
 For a binary word \(w=\epsilon_1\cdots\epsilon_m\), a genuine one-change word is of the form
 \[

@@ -1,7 +1,5 @@
 # Second companion weave forces the immediate residual scan pair to be 00 — preserved pre-item development
 
-## Development
-
 
 Assume the recurrent flat A2 replacement configuration with residual coordinates x,y,z and common suffix C,D,E,F,... . Fix u=z and use the other two residuals x,y.
 

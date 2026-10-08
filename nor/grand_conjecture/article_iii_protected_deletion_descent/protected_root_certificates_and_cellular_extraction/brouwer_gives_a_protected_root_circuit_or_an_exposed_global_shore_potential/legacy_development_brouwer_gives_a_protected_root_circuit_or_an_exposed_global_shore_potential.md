@@ -1,7 +1,5 @@
 # Brouwer gives a protected-root circuit or an exposed global shore potential — preserved pre-item development
 
-## Development
-
 Let V be any finite family of realized protected p-cuts, regarded as vertices z_C of the centered hypersimplex, and let P=conv(V). For each C in V choose an actual canonical protected root rho_C=e_a-e_c crossing C and write its forced Johnson successor C^+=(C-{a}) union {c}. Put d_C=z_{C^+}-z_C=-rho_C.
 
 There is a convex-topological dichotomy.

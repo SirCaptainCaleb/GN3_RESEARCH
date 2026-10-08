@@ -1,7 +1,5 @@
 # Canonical uncentered pair-defect and face-localization descent — preserved pre-item development
 
-## Development
-
 ## Canonical uncentered pair-defect for directed NOR
 
 Fix coordinate-label arity \(r\ge 2\), a ground set \(V\) of size \(n\), and a reversal-antisymmetric coloring

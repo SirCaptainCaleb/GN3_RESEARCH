@@ -1,7 +1,5 @@
 # Three switch-adjacent cuts absorb the entire shore into one monochromatic connector — preserved pre-item development
 
-## Development
-
 Let A be one shore of a shortcut-free switching split B -> z -> A -> x, so z dominates A, A dominates x, and alpha(x,z,a)=0 for every a in A.
 
 Take a NOR-good order

@@ -1,7 +1,5 @@
 # Flat repair squares factor Tucker middle labels and threshold defects coordinatewise — preserved pre-item development
 
-## Development
-
 ## Flat repair squares factor Tucker middle labels and threshold defects coordinatewise
 
 Continue with the flat repair square on consecutive coordinates (a,b,c,d). Let

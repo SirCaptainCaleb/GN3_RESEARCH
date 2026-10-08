@@ -1,7 +1,5 @@
 # Blocked-front recentering exchange for tight forks — preserved pre-item development
 
-## Development
-
 ## Blocked-front recentering exchange
 
 Fix coordinate arity (r\ge2) and a color (sigma). Let

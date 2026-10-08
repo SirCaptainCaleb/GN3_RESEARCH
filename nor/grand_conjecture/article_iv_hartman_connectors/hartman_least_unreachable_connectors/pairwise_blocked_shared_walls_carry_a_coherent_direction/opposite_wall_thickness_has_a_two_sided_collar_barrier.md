@@ -1,7 +1,5 @@
 # Opposite thicknesses are separated by two outer collar obstructions
 
-## Development
-
 Statement:
 Under the wall-dominance theorem, for a∈L_i and b∈R_i, the normalized incidence patterns at (c_{i−1},c_i,c_{i+1},c_{i+2}) are (1,1,0,1) for a and (0,1,0,0) for b, where a 1 means c_j→vertex. The unique directed order of {a,b} is b→a. The block (a,b) fails only at its mutual edge among its six exterior square-path conditions; the opposite block (b,a) fails at both outer square-path incidences c_{i−1}→b and a→c_{i+2}. Hence opposite-thickness blockers coexist only as a two-sided exchange barrier. In the canonical gauge the bipartite tournament between R_i and L_i is homogeneously oriented R_i→L_i.
 

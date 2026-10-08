@@ -1,7 +1,5 @@
 # A one-sided adjacent-gap failure resolves after one outward step — preserved pre-item development
 
-## Development
-
 Work in path-normalized square-path gauge with consecutive connector vertices
 H,P,L,M,R,S.
 Let a be insertable at L|M and b at M|R, and assume the bad mutual orientation b->a.

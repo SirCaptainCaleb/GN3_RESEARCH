@@ -1,7 +1,5 @@
 # Every misaligned rail disagreement realizes the protected shortcut — preserved pre-item development
 
-## Development
-
 ## Every misaligned rail disagreement realizes the protected shortcut
 
 Continue with the crossed shortcut ladder

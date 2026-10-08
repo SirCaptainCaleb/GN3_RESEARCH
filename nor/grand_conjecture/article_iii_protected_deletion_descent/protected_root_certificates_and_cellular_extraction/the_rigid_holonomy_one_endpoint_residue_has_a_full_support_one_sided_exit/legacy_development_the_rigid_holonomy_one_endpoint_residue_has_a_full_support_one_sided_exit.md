@@ -1,7 +1,5 @@
 # The rigid holonomy-one endpoint residue has a full-support one-sided exit — preserved pre-item development
 
-## Development
-
 Continue in the unique residual long endpoint pattern of root §145:
 r=1, u=0, t=1.
 Thus the six-coordinate face data include

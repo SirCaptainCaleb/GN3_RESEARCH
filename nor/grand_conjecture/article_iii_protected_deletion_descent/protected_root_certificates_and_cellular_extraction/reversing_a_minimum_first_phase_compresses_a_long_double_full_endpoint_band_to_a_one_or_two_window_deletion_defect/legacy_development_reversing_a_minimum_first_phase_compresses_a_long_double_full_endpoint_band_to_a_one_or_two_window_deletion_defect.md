@@ -1,7 +1,5 @@
 # Reversing a minimum first phase compresses a long double-full endpoint band to a one-or-two-window deletion defect — preserved pre-item development
 
-## Development
-
 ## Reversing a minimum first phase compresses a long double-full endpoint band to a one-or-two-window deletion defect
 
 Continue with root §172. Let

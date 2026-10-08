@@ -1,7 +1,5 @@
 # Extreme synchronized endpoint shifts give a monochromatic spanning order — preserved pre-item development
 
-## Development
-
 ## Extreme synchronized endpoint shifts give a monochromatic spanning order
 
 Consider the endpoint rank-two protected cycle

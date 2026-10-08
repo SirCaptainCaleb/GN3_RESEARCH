@@ -1,7 +1,5 @@
 # A vertical cut edge carries a canonical complementary-middle pair in the top permutahedron — preserved pre-item development
 
-## Development
-
 ## Corrected local complementary-middle lemma
 
 Work in ternary arity over the TOP permutahedron face, so every permutation of the physical coordinates is available in the same horizontal carrier face.

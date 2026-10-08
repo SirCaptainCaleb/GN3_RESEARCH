@@ -1,7 +1,5 @@
 # Protected A3 reversal pairs project to Johnson geodesics of length at most two — preserved pre-item development
 
-## Development
-
 ## Protected A3 reversal pairs project to Johnson geodesics of length at most two
 
 Assume ternary arity and a genuine protected A3 two-cycle: a canonical minimum-first-phase root rho and its opposite -rho are both realized in the same four-coordinate Coxeter block by protected states normalized to the same first-phase length p.

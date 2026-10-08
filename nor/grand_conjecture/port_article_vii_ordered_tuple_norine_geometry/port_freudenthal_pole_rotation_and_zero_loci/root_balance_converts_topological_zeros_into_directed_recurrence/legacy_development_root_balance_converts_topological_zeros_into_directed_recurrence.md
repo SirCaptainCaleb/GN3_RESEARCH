@@ -1,7 +1,5 @@
 # Root balance converts topological zeros into directed recurrence — preserved pre-item development
 
-## Development
-
 
 A particularly useful algebraic compression uses type-\(A\) roots.
 

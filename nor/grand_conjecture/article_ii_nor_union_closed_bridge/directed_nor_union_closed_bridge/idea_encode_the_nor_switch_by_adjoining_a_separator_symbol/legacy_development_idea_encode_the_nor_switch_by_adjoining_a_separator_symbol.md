@@ -1,7 +1,5 @@
 # Idea: encode the NOR switch by adjoining a separator symbol — preserved pre-item development
 
-## Development
-
 ## Separator-symbol triangulation for one-change NOR
 
 Idea / research direction, not yet a theorem.

@@ -1,7 +1,5 @@
 # The holonomy phase toggle is one exact Coxeter wall — preserved pre-item development
 
-## Development
-
 ## The holonomy phase toggle is one exact Coxeter wall
 
 At the special perfect-blocker holonomy-flip interface, consider the two full-support orders

@@ -1,7 +1,5 @@
 # Antipodal A2 root pairs require crossing the selected window cut level — preserved pre-item development
 
-## Development
-
 ## Antipodal A2 root pairs require crossing the selected window cut level
 
 Work in ternary arity in the switch-prism root construction. Let a minimal zero carrier project to an A2 Coxeter face with tied block B={a,b,c}. The three coordinates of B occupy three consecutive positions in every refining permutation.

@@ -1,7 +1,5 @@
 # Cut-moment perturbations encode side provenance without increasing target dimension — preserved pre-item development
 
-## Development
-
 ## Cut-moment encoding of protected side provenance in physical root space
 
 Let the physical coordinate set have size n>=3 and let

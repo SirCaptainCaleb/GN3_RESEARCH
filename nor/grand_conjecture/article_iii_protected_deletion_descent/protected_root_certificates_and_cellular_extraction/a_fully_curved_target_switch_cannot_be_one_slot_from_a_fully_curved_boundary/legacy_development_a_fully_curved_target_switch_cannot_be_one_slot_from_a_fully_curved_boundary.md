@@ -1,7 +1,5 @@
 # A fully-curved target switch cannot be one slot from a fully-curved boundary — preserved pre-item development
 
-## Development
-
 ## A full-curvature target switch cannot sit one slot from a full boundary
 
 Work in the coboundary-flat ternary sector. Choose a bad switch state with globally maximal target-compatible band length (B), and among those states impose the usual secondary extremality. By the existing mixed-corridor analysis, the target-switch tetrahedron is fully curved. Every unresolved band boundary is also fully curved.

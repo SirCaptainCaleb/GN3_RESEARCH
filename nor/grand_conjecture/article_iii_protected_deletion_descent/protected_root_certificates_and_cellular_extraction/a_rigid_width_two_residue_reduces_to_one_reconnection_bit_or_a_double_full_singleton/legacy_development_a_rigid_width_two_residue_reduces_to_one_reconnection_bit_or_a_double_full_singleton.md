@@ -1,7 +1,5 @@
 # A rigid width-two residue reduces to one reconnection bit or a double-full singleton — preserved pre-item development
 
-## Development
-
 ## A rigid width-two residue exports only one reconnection bit, and the bad bit is a double-full singleton
 
 Work in the coboundary-flat alternating ternary sector and continue from the rigid terminal width-two table on coordinates

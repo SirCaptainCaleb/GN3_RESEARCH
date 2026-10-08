@@ -1,7 +1,5 @@
 # Every two-change band closes NOR or emits a protected root — preserved pre-item development
 
-## Development
-
 ## Every two-change band closes NOR or emits a protected root
 
 Work in the coboundary-flat alternating ternary sector. Let a full order have exactly two changes,

@@ -1,7 +1,5 @@
 # Two-left flat protected A3 reversal pairs either splice or emit an exterior insertion root — preserved pre-item development
 
-## Development
-
 ## Two-left flat protected A3 reversal pairs either splice or emit an exterior insertion root
 
 Use the alternating ternary label and mod-two curvature of the preceding splice theorem.

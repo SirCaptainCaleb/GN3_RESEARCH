@@ -1,7 +1,5 @@
 # Audit correction: tournament representation survives but source-sink induction fails — preserved pre-item development
 
-## Development
-
 ## Audit correction: the tournament representation is valid, but the source/sink induction is not
 
 Section 328 contains a genuine structural representation and an invalid induction step.

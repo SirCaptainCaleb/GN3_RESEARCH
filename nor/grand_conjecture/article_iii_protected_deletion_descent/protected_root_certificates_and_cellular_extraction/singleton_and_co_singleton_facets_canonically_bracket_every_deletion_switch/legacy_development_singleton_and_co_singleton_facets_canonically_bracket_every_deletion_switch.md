@@ -1,7 +1,5 @@
 # Singleton and co-singleton facets canonically bracket every deletion switch — preserved pre-item development
 
-## Development
-
 ## Singleton and co-singleton facets canonically bracket every deletion switch
 
 Assume a minimum counterexample. For each coordinate \(x\), fix a good deletion order

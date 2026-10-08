@@ -1,7 +1,5 @@
 # Connector absorption must retain both endpoint ports — preserved pre-item development
 
-## Development
-
 ## Connector absorption must retain both endpoint ports
 
 The collective connector state consists of a monochromatic zero order C together with forward first and last ordered tournament pairs. Absorption moves must preserve all three requirements.

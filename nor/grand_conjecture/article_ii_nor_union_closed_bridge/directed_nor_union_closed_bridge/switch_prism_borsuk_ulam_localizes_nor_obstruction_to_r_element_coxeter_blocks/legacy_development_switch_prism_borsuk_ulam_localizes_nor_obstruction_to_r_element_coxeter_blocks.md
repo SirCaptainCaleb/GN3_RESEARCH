@@ -1,7 +1,5 @@
 # Switch-prism Borsuk-Ulam localizes NOR obstruction to r-element Coxeter blocks — preserved pre-item development
 
-## Development
-
 ## Switch-prism Borsuk--Ulam localization
 
 Fix coordinate arity r and a reversal-odd directed NOR label h on n coordinates. Put m=n-r+1, and assume for contradiction that no coordinate order has at most one color change.

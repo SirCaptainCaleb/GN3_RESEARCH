@@ -1,7 +1,5 @@
 # The residual five-set bit is the exact two-sided boundary holonomy — preserved pre-item development
 
-## Development
-
 ## The residual five-set bit is exactly the two-sided boundary-reversal holonomy
 
 Normalize a double-full singleton five-set as in subsection 124:

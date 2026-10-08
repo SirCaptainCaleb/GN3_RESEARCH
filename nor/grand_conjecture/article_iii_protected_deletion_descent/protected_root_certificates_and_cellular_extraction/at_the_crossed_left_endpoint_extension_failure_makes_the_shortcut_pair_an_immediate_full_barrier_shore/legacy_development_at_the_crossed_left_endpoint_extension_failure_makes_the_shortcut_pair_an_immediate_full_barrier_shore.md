@@ -1,7 +1,5 @@
 # At the crossed left endpoint, extension failure makes the shortcut pair an immediate full-barrier shore — preserved pre-item development
 
-## Development
-
 ## At the crossed left endpoint, either a pair orientation extends or the shortcut pair is an immediate full-barrier shore
 
 Work in the crossed normalization

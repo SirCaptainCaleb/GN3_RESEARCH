@@ -1,7 +1,5 @@
 # Nearest-violation selection removes the disjoint two-cycle lifted zero — preserved pre-item development
 
-## Development
-
 ## Nearest-violation selection removes the disjoint two-cycle lifted zero
 
 Use the honest ternary switch-prism lift with the following fixed reversal-compatible selector: at every bad switch state choose a violating ternary window of minimum distance from the proposed cut, with any deterministic reversal-compatible tie rule.

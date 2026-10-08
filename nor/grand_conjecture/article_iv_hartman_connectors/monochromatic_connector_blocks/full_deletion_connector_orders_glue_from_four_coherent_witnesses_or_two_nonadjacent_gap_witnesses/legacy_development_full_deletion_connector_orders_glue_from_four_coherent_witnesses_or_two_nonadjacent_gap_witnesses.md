@@ -1,7 +1,5 @@
 # Full deletion connector orders glue from four coherent witnesses or two nonadjacent-gap witnesses — preserved pre-item development
 
-## Development
-
 ## Coherence of full deletion connectors gives spanning closure directly
 
 Work in the flat split B→z→A→x, with z→x and the fixed tournament t. Set U=A∪{x,z}. A compatible connector is a linear order of its coordinates with α=0 on all consecutive triples and forward first and last ordered pairs. Each deletion connector below contains BOTH special coordinates x,z. Order agreement means agreement of every relative comparison on the full common coordinate domain, including x,z.

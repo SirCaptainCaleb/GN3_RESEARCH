@@ -1,7 +1,5 @@
 # A face-bijective balanced lifted A3 four-cycle forces full curvature — preserved pre-item development
 
-## Development
-
 ## A face-bijective balanced lifted A3 four-cycle forces full curvature
 
 Consider a side-balanced honest lifted zero whose physical roots form one directed simple four-cycle on an exact ternary A3 block Q={0,1,2,3}. Assume its four carrying windows occupy the four distinct triangular facets of Q, one label per facet.

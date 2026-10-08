@@ -1,7 +1,5 @@
 # Threshold-band potential replaces singleton-defect transport — preserved pre-item development
 
-## Development
-
 ## Threshold-band potential replaces singleton-defect transport
 
 Work in the coboundary-flat ternary sector. For a full coordinate order pi, a proposed threshold cut k, and polarity eta, let B(pi,k,eta) be the length of the maximal contiguous interval of ternary-window ranks containing the cut on which the actual color word agrees with the one-change target.

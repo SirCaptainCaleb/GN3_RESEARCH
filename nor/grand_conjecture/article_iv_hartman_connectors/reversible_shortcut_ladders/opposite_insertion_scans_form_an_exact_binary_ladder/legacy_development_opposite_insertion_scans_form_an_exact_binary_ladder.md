@@ -1,7 +1,5 @@
 # Opposite insertion scans form an exact binary ladder — preserved pre-item development
 
-## Development
-
 Fix distinct exterior coordinates x,z and a good middle order O=(w_1,…,w_m). Define
 X_i=α(x,w_i,w_{i+1}),
 Z_i=α(z,w_i,w_{i+1}),

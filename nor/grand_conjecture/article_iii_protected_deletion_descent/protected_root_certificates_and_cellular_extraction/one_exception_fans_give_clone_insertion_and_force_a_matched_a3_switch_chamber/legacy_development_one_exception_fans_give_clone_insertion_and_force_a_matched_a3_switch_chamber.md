@@ -1,7 +1,5 @@
 # One-exception fans give exact clone insertion — preserved pre-item development
 
-## Development
-
 ## One-exception fans give exact clone insertion
 
 Assume the one-exception fan branch of the preceding fixed-cut A3 dichotomy actually occurs.

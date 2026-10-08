@@ -1,7 +1,5 @@
 # Perfect blockers create an almost complete full curvature tube — preserved pre-item development
 
-## Development
-
 ## Perfect blockers create an almost-complete full-curvature tube
 
 Work in a minimum coboundary-flat pure-orientation ternary counterexample. Let

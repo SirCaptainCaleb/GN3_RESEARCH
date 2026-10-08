@@ -1,7 +1,5 @@
 # Three coherent full deletion connectors have one exceptional packet
 
-## Development
-
 Statement:
 Let U=A union {x,z}, |U|>=5, and let a,b,c be distinct shore vertices. Suppose compatible zero connectors C_a,C_b,C_c on U minus a,b,c respectively agree on all common pair comparisons. Then either (i) comparisons among a,b,c form a directed cycle, or (ii) they induce a unique total order C on U with forward endpoint pairs, and all consecutive triples zero except possibly the consecutive triple a,b,c. In (ii) closure holds if the three omitted labels are nonconsecutive or their triple color is zero. In (i), the three omitted labels occupy the same gap of the order on W=U minus {a,b,c}.
 

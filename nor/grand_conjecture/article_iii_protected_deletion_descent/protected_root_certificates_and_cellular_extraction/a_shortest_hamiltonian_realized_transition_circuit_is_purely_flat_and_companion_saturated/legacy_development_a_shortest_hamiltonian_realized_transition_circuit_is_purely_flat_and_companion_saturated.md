@@ -1,7 +1,5 @@
 # A shortest Hamiltonian realized-transition circuit is purely flat and companion-saturated — preserved pre-item development
 
-## Development
-
 ## Shortest Hamiltonian transition-root cycles are forced entirely flat
 
 Let (mathcal R) be the directed graph on coordinates whose edge (u	o v) is present whenever some full coordinate order realizes a genuine ternary transition on four consecutive coordinates with dropped coordinate (u) and entering coordinate (v).

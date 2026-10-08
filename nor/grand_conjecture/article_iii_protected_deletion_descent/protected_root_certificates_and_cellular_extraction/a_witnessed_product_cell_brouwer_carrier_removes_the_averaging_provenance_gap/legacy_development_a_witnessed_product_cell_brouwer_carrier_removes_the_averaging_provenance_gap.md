@@ -1,7 +1,5 @@
 # A witnessed product-cell Brouwer carrier removes the averaging provenance gap — preserved pre-item development
 
-## Development
-
 Work in ternary arity under counterexamplehood on the switch prism X=P_V x I, with target space W direct-sum R. Use the natural polytopal cell structure whose cells are F x J, with F a permutahedron face and J either a cut vertex or a cut interval. Barycentrically subdivide this cell structure.
 
 Choose ONE genuine bad switch state q_C incident with every cell C, and label the barycenter of C by one genuine violating-window label L_C=(rho_C,s_C) from q_C. For interior cells the choice is arbitrary. On boundary cells choose it as follows.

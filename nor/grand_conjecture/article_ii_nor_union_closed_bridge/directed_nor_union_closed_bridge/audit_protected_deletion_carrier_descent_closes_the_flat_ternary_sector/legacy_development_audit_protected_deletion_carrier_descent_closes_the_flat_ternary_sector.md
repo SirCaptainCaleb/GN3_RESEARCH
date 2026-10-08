@@ -1,7 +1,5 @@
 # Audit protected deletion carrier descent closes the flat ternary sector — preserved pre-item development
 
-## Development
-
 ## Audit: protected deletion-carrier descent closes the flat ternary sector
 
 The closure argument of subsection 187 survives direct index audit.

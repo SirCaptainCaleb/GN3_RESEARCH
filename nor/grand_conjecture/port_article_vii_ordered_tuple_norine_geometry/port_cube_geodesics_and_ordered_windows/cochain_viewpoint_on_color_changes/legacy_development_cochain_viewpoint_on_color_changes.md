@@ -1,7 +1,5 @@
 # Cochain viewpoint on color changes — preserved pre-item development
 
-## Development
-
 
 The Article VII notes also identified a useful degree-shifted analogy.
 

@@ -1,7 +1,5 @@
 # Singly curved tetrahedra are exactly the coboundary support — preserved pre-item development
 
-## Development
-
 ## Singly curved tetrahedra are exactly the coboundary support
 
 Fix a global linear order on (V). Encode the alternating triangle orientation by an unordered face bit

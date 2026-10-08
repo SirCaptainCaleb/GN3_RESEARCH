@@ -1,7 +1,5 @@
 # Packet reversal realizes opposite physical roots with the descent certificate intact — preserved pre-item development
 
-## Development
-
 Combination of Article I's full-support interval-reversal calculus and Article II's physical window-slide roots.
 
 Let π contain a consecutive packet W=(a_0,...,a_r), r≥2, with h(a_0,...,a_{r−1})=1 and h(a_1,...,a_r)=0. This is an actual 10 window descent with root ρ=e_{a_0}−e_{a_r}. Reverse precisely these r+1 consecutive coordinates and leave all other coordinates in their existing positions.

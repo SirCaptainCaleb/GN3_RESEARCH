@@ -1,7 +1,5 @@
 # Lexicographic two-change descent eliminates every flat band boundary and two width-two chord branches — preserved pre-item development
 
-## Development
-
 ## All flat boundaries of a global two-change band admit strict run descent
 
 Work in the coboundary-flat alternating ternary sector with a full order of global word

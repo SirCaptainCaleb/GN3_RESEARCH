@@ -1,7 +1,5 @@
 # Maximal tight paths force a union-closure defect at the exposed front — preserved pre-item development
 
-## Development
-
 ## Maximal tight paths force a union-closure defect at the exposed front
 
 Fix coordinate arity \(r\ge 2\), a reversal-antisymmetric binary label \(h\), a color \(\sigma\), and a terminal ordered \((r-1)\)-tuple \(S\). Let

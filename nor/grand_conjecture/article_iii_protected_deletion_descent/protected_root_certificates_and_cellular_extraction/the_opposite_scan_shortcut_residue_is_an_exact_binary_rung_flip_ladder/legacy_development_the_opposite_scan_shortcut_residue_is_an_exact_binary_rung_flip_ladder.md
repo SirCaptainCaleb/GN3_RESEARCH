@@ -1,7 +1,5 @@
 # The opposite-scan shortcut residue is an exact binary rung-flip ladder — preserved pre-item development
 
-## Development
-
 ## The opposite-scan shortcut residue is an exact binary rung-flip ladder
 
 Work in the sole unresolved two-sided shortcut residue of §§301,305. Let

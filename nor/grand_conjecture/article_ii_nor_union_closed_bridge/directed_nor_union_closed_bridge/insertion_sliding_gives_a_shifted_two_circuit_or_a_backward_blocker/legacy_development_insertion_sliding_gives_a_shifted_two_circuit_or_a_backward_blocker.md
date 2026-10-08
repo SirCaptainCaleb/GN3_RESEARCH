@@ -1,7 +1,5 @@
 # Insertion sliding gives a shifted two-circuit or a backward blocker — preserved pre-item development
 
-## Development
-
 ## Sliding a missing vertex yields a two-circuit or a backward blocker
 
 Work in ternary arity. Let \(U\) be a front circuit in \(\mathcal F_{\tau,F}\), with

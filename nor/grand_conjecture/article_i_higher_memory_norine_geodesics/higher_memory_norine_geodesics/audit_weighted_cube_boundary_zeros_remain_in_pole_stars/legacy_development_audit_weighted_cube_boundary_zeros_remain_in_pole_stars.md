@@ -1,7 +1,5 @@
 # Audit: weighted cube-boundary zeros remain in pole stars — preserved pre-item development
 
-## Development
-
 ## Audit of §34: pole stars are not pole vertices
 
 ### Claim under audit

@@ -1,7 +1,5 @@
 # A positive protected root cycle prescribes one cut ejection per cycle vertex — preserved pre-item development
 
-## Development
-
 ## A positive protected-root cycle prescribes one cut ejection per cycle vertex
 
 Let

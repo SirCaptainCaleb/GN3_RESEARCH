@@ -1,7 +1,5 @@
 # Any chamber path shorter than the arity is root-cooriented — preserved pre-item development
 
-## Development
-
 ## Any chamber path shorter than the arity is root-cooriented
 
 Let the ordered-window arity be r>=2. Let

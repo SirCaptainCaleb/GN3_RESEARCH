@@ -1,7 +1,5 @@
 # Rigidity of a common-tail deletion 3-cycle — preserved pre-item development
 
-## Development
-
 ## Rigidity of a common-tail deletion 3-cycle
 
 Work in the directed ternary sector, so

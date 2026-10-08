@@ -1,7 +1,5 @@
 # Every good deletion witness in a minimum counterexample is blocked at both endpoints — preserved pre-item development
 
-## Development
-
 ## Every good deletion witness in a minimum counterexample is blocked at both endpoints
 
 Work in the coboundary-flat alternating ternary sector of a minimum counterexample.

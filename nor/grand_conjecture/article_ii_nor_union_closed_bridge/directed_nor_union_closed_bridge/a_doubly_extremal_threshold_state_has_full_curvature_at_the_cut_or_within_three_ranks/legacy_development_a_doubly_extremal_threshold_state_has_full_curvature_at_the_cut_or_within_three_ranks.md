@@ -1,7 +1,5 @@
 # A doubly extremal threshold state has full curvature at the cut or within three ranks — preserved pre-item development
 
-## Development
-
 
 Work in the coboundary-flat ternary sector. For a switch state (pi,k,eta), let B be the length of its maximal target-compatible band around the proposed cut. Choose a bad state maximizing B globally. By the maximal-band theorem, every unresolved boundary of that band is fully curved.
 

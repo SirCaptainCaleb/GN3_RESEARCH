@@ -1,7 +1,5 @@
 # Flag-compatible outermost-root paths admit a recursive two-shore decomposition — preserved pre-item development
 
-## Development
-
 ## Flag-compatible outermost-root paths admit a recursive two-shore decomposition
 
 Consider a directed path of physical roots

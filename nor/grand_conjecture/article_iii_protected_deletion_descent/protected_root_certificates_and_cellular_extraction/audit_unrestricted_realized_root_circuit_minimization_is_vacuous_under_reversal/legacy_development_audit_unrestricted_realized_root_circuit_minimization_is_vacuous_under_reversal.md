@@ -1,7 +1,5 @@
 # Audit: unrestricted realized-root circuit minimization is vacuous under reversal — preserved pre-item development
 
-## Development
-
 ## Audit: unrestricted realized-root minimization collapses to antipodal 2-cycles
 
 This corrects the strategic interpretation of the preceding shortest-Hamiltonian realized-transition-circuit subsection.

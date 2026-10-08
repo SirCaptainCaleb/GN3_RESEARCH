@@ -1,7 +1,5 @@
 # Minimum ternary counterexamples have exactly one threshold defect — preserved pre-item development
 
-## Development
-
 ## Minimum counterexamples have threshold defect one
 
 Work in ternary arity and assume a minimum counterexample on n coordinates. For a full coordinate order pi, a cut k and polarity eta, let B(pi,k,eta) be the length of the maximal contiguous interval of linear ternary-window ranks containing the cut on which the actual word agrees with the one-change threshold target. A full order has n-2 linear windows.

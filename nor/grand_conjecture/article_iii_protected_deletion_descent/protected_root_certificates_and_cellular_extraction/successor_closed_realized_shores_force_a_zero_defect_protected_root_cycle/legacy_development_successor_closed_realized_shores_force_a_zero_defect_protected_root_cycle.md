@@ -1,7 +1,5 @@
 # Successor-closed minimum-first cuts force a telescoping protected-root dependence — preserved pre-item development
 
-## Development
-
 Fix the oriented minimum-FIRST-phase p-layer. Let R be its finite set of realized physical p-cuts. For each S in R choose one canonical protected root rho_S=e_a-e_c and its forced Johnson successor sigma(S)=S-{a}+{c}.
 
 If sigma(S) lies in R for every S, iteration gives a directed cycle of realized cuts

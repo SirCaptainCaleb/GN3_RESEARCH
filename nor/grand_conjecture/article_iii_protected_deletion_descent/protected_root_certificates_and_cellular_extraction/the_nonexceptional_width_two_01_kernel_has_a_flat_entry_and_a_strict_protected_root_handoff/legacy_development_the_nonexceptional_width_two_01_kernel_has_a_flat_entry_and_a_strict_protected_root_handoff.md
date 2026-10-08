@@ -1,7 +1,5 @@
 # The s=0 width-two types have a flat-entry protected-root handoff — preserved pre-item development
 
-## Development
-
 ## Two nonexceptional width-two types have an automatic flat-entry protected-root handoff
 
 Continue with §265. For the two six-set types with s=0, the left-pair-preserving replacement

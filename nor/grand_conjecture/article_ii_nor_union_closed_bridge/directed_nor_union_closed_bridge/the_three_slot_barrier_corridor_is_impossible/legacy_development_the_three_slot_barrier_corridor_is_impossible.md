@@ -1,7 +1,5 @@
 # The three slot barrier corridor is impossible — preserved pre-item development
 
-## Development
-
 ## The three-slot barrier corridor is impossible
 
 Work in the doubly extremal threshold state of subsection 155. Thus the target-compatible band has globally maximum length B, and among such states the distance from the target switch to the nearest unresolved full-curvature boundary is minimum.

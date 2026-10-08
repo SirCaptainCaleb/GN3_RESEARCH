@@ -1,7 +1,5 @@
 # Every counterexample exposes a punctured-Boolean Frankl obstruction — preserved pre-item development
 
-## Development
-
 ## Every counterexample exposes a punctured-Boolean Frankl obstruction
 
 The maximal-front theorem gives a particularly rigid local object in every directed NOR counterexample. Let \(P\) be an inclusion-maximal \(\sigma\)-tight path, let \(F\) be its exposed first \((r-1)\)-tuple, and let \(X\) be the omitted vertices. Put \(\tau=1-\sigma\) and restrict the opposite-color front family to \(X\):

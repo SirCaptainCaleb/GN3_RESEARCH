@@ -1,7 +1,5 @@
 # The barycentric center zero carries the entire boundary degree — preserved pre-item development
 
-## Development
-
 ## The barycentric center zero carries the entire boundary degree
 
 Continue with the all-refinements actual-root carrier on the centered permutahedron P in a minimum counterexample.

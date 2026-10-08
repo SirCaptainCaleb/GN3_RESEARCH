@@ -1,7 +1,5 @@
 # Three of four transitions are curved in an extremal perfect blocker carrier — preserved pre-item development
 
-## Development
-
 ## Three of four transitions are curved in an extremal perfect-blocker carrier
 
 Continue in the coboundary-flat pure-orientation sector. Let C maximize

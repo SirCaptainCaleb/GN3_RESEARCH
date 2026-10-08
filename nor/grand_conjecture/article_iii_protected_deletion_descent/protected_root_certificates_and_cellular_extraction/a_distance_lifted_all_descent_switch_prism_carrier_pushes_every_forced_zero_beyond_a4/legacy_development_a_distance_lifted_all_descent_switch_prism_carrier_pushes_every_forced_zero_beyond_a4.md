@@ -1,7 +1,5 @@
 # A distance-lifted all-descent switch-prism carrier pushes every forced zero beyond A4 — preserved pre-item development
 
-## Development
-
 ## A distance-lifted all-descent switch-prism carrier pushes every forced zero beyond A4
 
 Work in ternary arity under counterexamplehood, so every full coordinate order has at least two color changes. Hence every binary status word has at least one 10 transition.

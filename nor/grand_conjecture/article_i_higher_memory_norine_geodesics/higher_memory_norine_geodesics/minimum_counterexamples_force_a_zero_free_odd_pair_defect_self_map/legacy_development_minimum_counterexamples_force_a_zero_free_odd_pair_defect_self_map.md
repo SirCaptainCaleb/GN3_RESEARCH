@@ -1,7 +1,5 @@
 # Minimum counterexamples force a zero-free odd pair-defect self-map — preserved pre-item development
 
-## Development
-
 ## Minimum counterexamples force a zero-free odd pair-defect self-map
 
 Assume the directed translation-invariant sector has a counterexample on a ground set \(V\) of minimum size \(n\). Let

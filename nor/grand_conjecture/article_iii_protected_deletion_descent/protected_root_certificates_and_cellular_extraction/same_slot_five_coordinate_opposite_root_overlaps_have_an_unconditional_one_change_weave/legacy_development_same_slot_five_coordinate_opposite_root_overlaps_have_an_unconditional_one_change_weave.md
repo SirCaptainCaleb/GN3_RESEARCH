@@ -1,7 +1,5 @@
 # Same-slot five-coordinate opposite-root overlaps have an unconditional one-change weave — preserved pre-item development
 
-## Development
-
 ## Same-slot five-coordinate opposite-root overlaps have an unconditional one-change weave
 
 Continue the two-root common-cell localization. Suppose

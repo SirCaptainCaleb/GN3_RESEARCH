@@ -1,7 +1,5 @@
 # The outermost-change root gives a root-valued witnessed-degree carrier — preserved pre-item development
 
-## Development
-
 ## The outermost-change root gives a simpler witnessed-degree carrier
 
 For a full ternary order pi=(v_1,...,v_n), let p be its first change position and q its last change position whenever pi has at least two changes. Define

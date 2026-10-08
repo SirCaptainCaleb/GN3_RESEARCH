@@ -1,7 +1,5 @@
 # A late t=1 full-flat blocker still gives strict outward defect progress — preserved pre-item development
 
-## Development
-
 
 Consider the residual one-sided E=1 transport issued from an antipodal braid exit. Track the rank j of the exported singleton threshold defect in the protected constant-color phase, and transport it outward by the audited singleton-defect move.
 

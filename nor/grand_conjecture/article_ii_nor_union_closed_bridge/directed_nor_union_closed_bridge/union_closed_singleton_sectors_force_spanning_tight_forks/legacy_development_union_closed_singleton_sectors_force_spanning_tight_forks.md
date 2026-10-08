@@ -1,7 +1,5 @@
 # Union-closed singleton sectors force spanning tight forks — preserved pre-item development
 
-## Development
-
 ## Union-closed singleton sectors force spanning tight forks
 
 Fix coordinate arity \(r\ge2\), a reversal-antisymmetric binary label \(h\), a color \(\sigma\in\{0,1\}\), and an ordered terminal \((r-1)\)-tuple \(S\). Write

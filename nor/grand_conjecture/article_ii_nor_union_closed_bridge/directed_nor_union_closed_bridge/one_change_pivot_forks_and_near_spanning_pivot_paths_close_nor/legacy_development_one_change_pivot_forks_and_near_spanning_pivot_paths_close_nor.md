@@ -1,7 +1,5 @@
 # One-change pivot forks and near-spanning pivot paths close NOR — preserved pre-item development
 
-## Development
-
 Let h be reversal odd in ternary coordinate arity and assume its center tournaments are transitive. Fix o and use the pivot graph G_o of Subsection 43: a->b if h(o,a,b)=h(a,b,o)=0. Regard each underlying edge as carrying color 0 in its directed orientation and color 1 in the reverse orientation.
 
 Theorem. If the underlying graph of G_o has a Hamilton vertex order (u1,...,um) whose oriented edge colors e1,...,e_{m-1} change at most once, then (o,u1,...,um) is a spanning NOR order. For an edge of color e_i, both h(o,ui,ui+1) and h(ui,ui+1,o) equal e_i, including color 1 by reversal. Whenever e_i=e_{i+1}=sigma, transitivity of the color-sigma center tournament at ui+1 forces h(ui,ui+1,ui+2)=sigma. If there is one edge-color switch, only its straddling triple is not forced. Its binary color can be either adjacent run color, so it introduces at most one change. The first window equals e1. Short orders satisfy the statement directly.

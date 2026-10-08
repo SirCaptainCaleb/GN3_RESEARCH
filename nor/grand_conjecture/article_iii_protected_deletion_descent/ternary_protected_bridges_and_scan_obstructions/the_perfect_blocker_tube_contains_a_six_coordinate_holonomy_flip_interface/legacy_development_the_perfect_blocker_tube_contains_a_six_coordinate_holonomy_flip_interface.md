@@ -1,7 +1,5 @@
 # The perfect-blocker tube contains a six-coordinate holonomy-flip interface — preserved pre-item development
 
-## Development
-
 
 Continue with a globally minimum-first-phase deletion carrier
 O=(v_1,...,v_m),  w=0^p1^q,  p,q>=4,

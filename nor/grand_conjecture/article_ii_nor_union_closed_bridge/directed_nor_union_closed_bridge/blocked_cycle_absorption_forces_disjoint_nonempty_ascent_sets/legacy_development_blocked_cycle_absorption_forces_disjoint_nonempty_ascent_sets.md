@@ -1,7 +1,5 @@
 # Blocked cycle absorption forces disjoint nonempty ascent sets — preserved pre-item development
 
-## Development
-
 ## Disjoint ascent sets in the uniform obstruction to cycle absorption
 
 Work in a locally transitive ternary coloring. Let C be a color-0 tight cycle, E a disjoint exterior set with |E|>=3, and suppose no color-0 path spans C union {x,y} for any distinct x,y in E. Write p(c),s(c) for the neighbors of c on C.

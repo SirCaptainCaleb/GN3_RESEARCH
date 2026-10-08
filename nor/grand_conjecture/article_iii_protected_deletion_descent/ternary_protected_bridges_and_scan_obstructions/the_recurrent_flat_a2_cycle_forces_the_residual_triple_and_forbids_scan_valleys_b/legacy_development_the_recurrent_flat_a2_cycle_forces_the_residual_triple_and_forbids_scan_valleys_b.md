@@ -1,7 +1,5 @@
 # The recurrent flat A2 cycle forces the residual triple and forbids scan valleys — preserved pre-item development
 
-## Development
-
 Work in the recurrent flat A2 replacement cycle with residual coordinates U={x,y,z} and common deletion carriers
 ...A,B,z,y,C,D,... (omit x),
 ...A,B,y,x,C,D,... (omit z),

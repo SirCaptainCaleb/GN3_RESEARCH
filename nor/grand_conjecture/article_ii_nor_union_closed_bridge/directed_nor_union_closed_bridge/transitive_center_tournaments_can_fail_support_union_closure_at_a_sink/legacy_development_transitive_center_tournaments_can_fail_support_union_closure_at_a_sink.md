@@ -1,7 +1,5 @@
 # Transitive center tournaments can fail support union closure at a sink — preserved pre-item development
 
-## Development
-
 ## Local transitivity does not imply support union closure, even at a sink tail
 
 The neighborhood theorem and the support-coverage theorem leave a precise gap: do transitive center tournaments force union closure of the support family at a local sink? The answer is no.

@@ -1,7 +1,5 @@
 # The doubled-cube lift can force three changes despite balanced coordinate frequencies — preserved pre-item development
 
-## Development
-
 ## The canonical doubled-cube lift can force three changes on every antipodal geodesic
 
 This tests the doubled-cube construction in the research charter against the proposed one-change geometry. It uses a union-closed family, not an arbitrary set family.

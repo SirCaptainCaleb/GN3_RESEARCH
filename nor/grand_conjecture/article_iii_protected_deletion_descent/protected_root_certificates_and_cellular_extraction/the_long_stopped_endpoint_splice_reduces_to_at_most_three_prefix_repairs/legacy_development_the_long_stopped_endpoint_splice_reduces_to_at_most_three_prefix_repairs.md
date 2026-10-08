@@ -1,7 +1,5 @@
 # The long stopped endpoint splice reduces to at most three prefix repairs — preserved pre-item development
 
-## Development
-
 Work in the long stopped endpoint branch of root §128. Thus
 O_x=(a,b,c,d,e,...)
 is a good deletion witness omitting x with word 0^p1^q, p>=4, the first splice bit

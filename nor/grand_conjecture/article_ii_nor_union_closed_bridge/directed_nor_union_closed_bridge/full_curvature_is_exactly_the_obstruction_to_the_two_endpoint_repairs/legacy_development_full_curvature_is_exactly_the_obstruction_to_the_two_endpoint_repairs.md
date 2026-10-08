@@ -1,7 +1,5 @@
 # Full curvature is exactly the obstruction to the two endpoint repairs — preserved pre-item development
 
-## Development
-
 ## Full curvature is exactly the obstruction to the two endpoint repairs
 
 Let

@@ -1,7 +1,5 @@
 # Audit: singleton-branch exchange does not contradict splice forcing — preserved pre-item development
 
-## Development
-
 ## Failed singleton-branch contradiction: color flip makes the two constraints agree
 
 Work in coordinate arity \(r=3\), the directed translation-invariant sector of \(N_4\).

@@ -1,7 +1,5 @@
 # Every codimension-one Sperner merge has uniformly bounded transition complexity — preserved pre-item development
 
-## Development
-
 ## Every codimension-one Sperner merge has uniformly bounded transition complexity
 
 Use the global good-order selector g(S) of root §163.

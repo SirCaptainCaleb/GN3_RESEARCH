@@ -1,7 +1,5 @@
 # A minimal whole-shore obstruction is deletion-critical with exact blocker words — preserved pre-item development
 
-## Development
-
 Assume A is inclusion-minimal among shore sets for which no spanning compatible monochromatic connector on A union {x,z} exists. By the small-support theorem, |A|>=7.
 
 For every a in A, the proper shore A minus {a} has a spanning compatible connector C_a. Since A itself is obstructed, a cannot be compatibly inserted into C_a. In path-normalized square-path gauge for C_a, its incidence word therefore:

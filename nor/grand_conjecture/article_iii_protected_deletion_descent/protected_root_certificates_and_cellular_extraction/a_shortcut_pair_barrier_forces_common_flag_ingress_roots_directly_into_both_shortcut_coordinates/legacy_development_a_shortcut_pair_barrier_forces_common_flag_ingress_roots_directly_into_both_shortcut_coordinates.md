@@ -1,7 +1,5 @@
 # A shortcut-pair barrier forces common-flag ingress roots directly into both shortcut coordinates — preserved pre-item development
 
-## Development
-
 ## A shortcut-pair barrier forces common-flag ingress roots directly into both shortcut coordinates
 
 Assume the exceptional source-shore outcome of §319. Thus a fully-curved barrier realizes

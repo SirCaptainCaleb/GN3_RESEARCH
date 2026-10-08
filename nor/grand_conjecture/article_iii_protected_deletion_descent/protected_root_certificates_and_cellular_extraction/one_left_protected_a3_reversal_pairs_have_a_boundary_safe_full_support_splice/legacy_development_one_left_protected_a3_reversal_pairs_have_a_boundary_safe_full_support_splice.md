@@ -1,7 +1,5 @@
 # One-left protected A3 reversal pairs have a boundary-safe full-support splice — preserved pre-item development
 
-## Development
-
 ## One-left protected A3 reversal pairs have a boundary-safe full-support splice
 
 Work with an alternating ternary binary label alpha: cyclic permutations preserve its value and odd permutations complement it. Reversal oddness alone is not enough for this lemma. For distinct a,b,c,d define

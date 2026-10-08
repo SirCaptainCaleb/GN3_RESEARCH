@@ -1,7 +1,5 @@
 # The surviving earlier defect either hits a full barrier or crosses the flip block — preserved pre-item development
 
-## Development
-
 ## The surviving earlier defect either hits a full barrier or crosses the flip block
 
 Continue with subsection 56 in the branch h_{j-4}=1. After deleting t=v_{j-2}, the local order is

@@ -1,7 +1,5 @@
 # Three width-two six-set types have a forced right 01 reconnection kernel — preserved pre-item development
 
-## Development
-
 ## Three width-two six-set types have a forced right 01 reconnection kernel
 
 Continue with §264 for a lexicographically extremal width-two full/full band 0^A 1^2 0^C on six consecutive coordinates (a,b,c,d,e,f). Put r=alpha(a,b,f) and s=alpha(b,c,f). Terminal short-tail cases are already covered by §259.

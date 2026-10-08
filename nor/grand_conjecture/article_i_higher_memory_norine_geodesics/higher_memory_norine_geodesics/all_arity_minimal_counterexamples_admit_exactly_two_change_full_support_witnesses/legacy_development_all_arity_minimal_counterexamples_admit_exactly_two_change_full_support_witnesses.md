@@ -1,5 +1,3 @@
 # All-arity minimal counterexamples admit exactly-two-change full-support witnesses — preserved pre-item development
 
-## Development
-
 Let r≥2 and let h be a reversal-odd binary label on ordered r-tuples of distinct coordinates. In an inclusion-minimal NOR counterexample V, each V\{x} has a one-change order. Appending x creates exactly one additional r-window, so a full order with at most two changes exists. Counterexamplehood excludes at most one change; hence the minimum full-order variation is exactly two. A monochromatic deletion order would extend with at most one change and is likewise excluded. This is the argument elevated from Article III root §282 to the general endpoint section §4, now placed alongside Article I's all-arity tight-fork formulation. Its scope is the translation-invariant coordinate sector N_{r+1}; it does not assert a deletion locality theorem for unrestricted basepoint-dependent cube labels or invariance under subsequent repair moves.

@@ -1,7 +1,5 @@
 # The common-flag barrier flow contains a complete return pairing — preserved pre-item development
 
-## Development
-
 ## The common-flag barrier flow contains a complete return pairing
 
 Continue from §284. A fully-curved barrier realizes the protected square

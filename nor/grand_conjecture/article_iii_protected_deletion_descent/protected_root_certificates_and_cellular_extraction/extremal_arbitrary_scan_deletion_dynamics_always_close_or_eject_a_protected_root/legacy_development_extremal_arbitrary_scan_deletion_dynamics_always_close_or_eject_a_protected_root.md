@@ -1,7 +1,5 @@
 # Extremal arbitrary-scan deletion dynamics always close or eject a protected root — preserved pre-item development
 
-## Development
-
 ## Extremal arbitrary-scan deletion dynamics always close or eject a protected root
 
 Work in a minimum coboundary-flat alternating ternary counterexample.

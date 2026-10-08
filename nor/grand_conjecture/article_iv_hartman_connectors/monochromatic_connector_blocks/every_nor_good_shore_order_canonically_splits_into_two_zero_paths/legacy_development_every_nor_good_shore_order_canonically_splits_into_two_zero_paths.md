@@ -1,7 +1,5 @@
 # Every NOR-good shore order canonically splits into two zero paths — preserved pre-item development
 
-## Development
-
 
 Let O=(a_1,...,a_k) be a NOR-good order of the shore A, normalized so its ternary word is
 0^p 1^q,

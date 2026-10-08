@@ -1,7 +1,5 @@
 # Dimension saturation forces the vertical edge and a complementary Tucker cell — preserved pre-item development
 
-## Development
-
 Let a support-minimal honest lifted zero have connected physical support spanning all n coordinates and be genuinely multi-cycle. By the cycle-rank theorem, the support graph is connected bicyclic, hence has n+1 edges, while the lifted columns have rank n in W direct-sum R. Thus the minimal zero is a full linear circuit of n+1 labels, so any domain simplex carrying it is an n-simplex.
 
 Block-rank neutrality forces every support edge to lie inside one tied block of the carrying permutahedral face. Connectedness and full support make that block all of V, so the horizontal factor is the top permutahedron P_V, dimension n-1.

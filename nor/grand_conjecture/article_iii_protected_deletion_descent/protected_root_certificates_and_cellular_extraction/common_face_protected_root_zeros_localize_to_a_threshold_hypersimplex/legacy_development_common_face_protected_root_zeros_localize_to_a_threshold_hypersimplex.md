@@ -1,7 +1,5 @@
 # Common-face protected-root zeros localize to a threshold hypersimplex — preserved pre-item development
 
-## Development
-
 Let F=B_1|...|B_s be a proper permutahedron face and suppose a family of protected roots carried by refinements of F has a positive physical dependence. Fix the normalized p-cut. Let B=B_j be the unique face block containing the cut boundary, with K=B_1 union ... union B_{j-1} and r=p-|K|, so 1<=r<=|B|-1 unless the cut lies exactly between blocks.
 
 Pair every carried root with the inward face-normal functional used in root 42. A root whose endpoints lie in different face blocks has strictly positive face-normal value, while a root internal to one block has value zero. A positive dependence summing to zero has zero total pairing, so no cross-block root can occur. Since every protected root crosses the physical p-cut, an internal root can only lie in the boundary block B. If the cut lies exactly between blocks, every protected crossing root is cross-block, so no positive dependence exists at all.

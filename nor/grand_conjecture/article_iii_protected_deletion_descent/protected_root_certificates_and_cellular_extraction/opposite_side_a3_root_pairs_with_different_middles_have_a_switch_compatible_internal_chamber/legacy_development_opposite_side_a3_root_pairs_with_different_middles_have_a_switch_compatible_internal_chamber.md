@@ -1,7 +1,5 @@
 # Opposite-side A3 root pairs with different middles have a switch-compatible internal chamber — preserved pre-item development
 
-## Development
-
 ## Opposite-side A3 root pairs with different middles have a switch-compatible internal chamber
 
 Work in the coboundary-flat alternating ternary sector on one exact A3 Coxeter block {a,b,c,d}. Suppose two violating ternary windows carry opposite physical roots and opposite switch-side signs, but have different middle coordinates. Up to relabeling they are

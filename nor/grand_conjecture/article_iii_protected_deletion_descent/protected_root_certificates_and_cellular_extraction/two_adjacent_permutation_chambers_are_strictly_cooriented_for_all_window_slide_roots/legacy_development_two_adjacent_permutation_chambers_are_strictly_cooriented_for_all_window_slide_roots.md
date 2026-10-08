@@ -1,7 +1,5 @@
 # Two adjacent permutation chambers are strictly cooriented for all window slide roots — preserved pre-item development
 
-## Development
-
 ## Two adjacent permutation chambers are strictly cooriented for all window-slide roots
 
 Let h have ordered-window arity r>=2. Let

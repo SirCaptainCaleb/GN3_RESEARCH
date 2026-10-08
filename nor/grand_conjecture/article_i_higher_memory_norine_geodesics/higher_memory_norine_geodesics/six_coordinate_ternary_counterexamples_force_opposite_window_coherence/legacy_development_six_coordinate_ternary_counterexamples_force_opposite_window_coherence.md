@@ -1,7 +1,5 @@
 # Six-coordinate ternary counterexamples force opposite-window coherence — preserved pre-item development
 
-## Development
-
 ## Six-coordinate ternary counterexamples force opposite-window coherence
 
 Work in coordinate arity \(r=3\) on exactly six coordinates. Suppose, for contradiction, that the directed translation-invariant sector of \(N_4\) has a counterexample.

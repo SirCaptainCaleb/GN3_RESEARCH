@@ -1,7 +1,5 @@
 # Adjacent fully curved switches around a singleton are locally cancellable — preserved pre-item development
 
-## Development
-
 ## Adjacent fully-curved switches around a singleton are locally cancellable
 
 Work in the coboundary-flat pure-orientation sector. Let five consecutive coordinates be

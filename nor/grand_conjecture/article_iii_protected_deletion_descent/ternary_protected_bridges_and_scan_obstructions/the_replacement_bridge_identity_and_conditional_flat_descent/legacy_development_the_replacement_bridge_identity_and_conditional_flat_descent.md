@@ -1,7 +1,5 @@
 # The replacement bridge identity and conditional flat descent — preserved pre-item development
 
-## Development
-
 Sources: Article II §§187,188,191,194,199, with the scan premise corrected.
 
 Use a ternary deletion order O of word 0^p1^q, p>=3, and omitted x. Put s_i=alpha(x,v_i,v_{i+1}). Let

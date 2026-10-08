@@ -1,7 +1,5 @@
 # Reduction program and obstruction dictionary — preserved pre-item development
 
-## Development
-
 ## Reduction program: what a successful transformation must preserve
 
 A genuine reduction should transform a counterexample to one conjecture into a counterexample to the other, or transform a theorem for one class into a theorem for the other without importing the desired conclusion by hand.

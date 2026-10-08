@@ -1,7 +1,5 @@
 # The cut root correlation tensor recovers Johnson cut defect after a physical root zero — preserved pre-item development
 
-## Development
-
 Let a legitimate cut-crossing protected state consist of a physical cut C and root rho=e_a-e_d with a in C and d outside C. Put
 u_C=1_C-(1/2)1
 and define the cut-root correlation tensor

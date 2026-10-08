@@ -1,7 +1,5 @@
 # Hamiltonian stopped-pivot transport survives only by reusing an old cycle direction — preserved pre-item development
 
-## Development
-
 ## Hamiltonian stopped-pivot transport can survive only by reusing an old cycle direction
 
 Assume the endpoint CORNER-LIFT theorem of Subsection 93 and choose a physical endpoint-root cycle of minimum length among all actual protected endpoint-root cycles in the minimum-counterexample class.

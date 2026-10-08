@@ -1,7 +1,5 @@
 # A universal flat connector either closes monochromatically or descends to a protected root inside one shore — preserved pre-item development
 
-## Development
-
 ## Universal flat connectors have a strict shore descent
 
 Work in the coboundary-flat alternating ternary sector. Fix distinct coordinates (x,z) and assume there is no fully-curved transition carrier of the protected root (x	o z).

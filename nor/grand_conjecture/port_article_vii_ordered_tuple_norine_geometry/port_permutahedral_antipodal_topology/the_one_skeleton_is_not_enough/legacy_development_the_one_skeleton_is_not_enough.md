@@ -1,7 +1,5 @@
 # The one-skeleton is not enough — preserved pre-item development
 
-## Development
-
 
 Article VII found a reusable fence against graph-only Tucker reasoning.
 

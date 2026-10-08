@@ -1,7 +1,5 @@
 # The long stopped splice has an exact three-barrier prefix extraction — preserved pre-item development
 
-## Development
-
 Continue with the long stopped splice state of root §133:
 O_c=(x,b,a,d,e,f,...)
 omitting c, with target 0^p1^q and exact prefix statuses

@@ -1,7 +1,5 @@
 # Every Sperner block merge refines to local swap galleries with only square and braid coherence — preserved pre-item development
 
-## Development
-
 Use the symmetric consecutive-change defect label C(pi) of root 155.
 
 Consider one codimension-one canonical Sperner face merge

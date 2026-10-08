@@ -1,7 +1,5 @@
 # Smallest directed-sector counterexamples force a tight cyclic transition block — preserved pre-item development
 
-## Development
-
 ## Lemma: smallest counterexamples in the directed sector force a tight cyclic transition block
 
 Fix a coordinate-label arity \(r\ge2\). Thus we study the translation-invariant directed sector of \(N_{r+1}\), with

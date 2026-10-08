@@ -1,7 +1,5 @@
 # Five-position carrier equality forces a singleton defect — preserved pre-item development
 
-## Development
-
 ## Five-position carrier equality forces a singleton defect
 
 For a bad ternary order pi with change positions p_1<...<p_k, recall

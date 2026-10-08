@@ -1,7 +1,5 @@
 # Every minimal side-lifted A2 zero contains a complementary middle repair pair — preserved pre-item development
 
-## Development
-
 ## Every minimal side-lifted A2 zero contains a complementary middle repair pair
 
 Work in ternary arity with the honest switch-prism lifted labels

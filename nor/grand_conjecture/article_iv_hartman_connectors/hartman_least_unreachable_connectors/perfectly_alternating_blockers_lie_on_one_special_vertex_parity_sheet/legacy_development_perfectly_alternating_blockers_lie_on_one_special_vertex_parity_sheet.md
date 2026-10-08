@@ -1,7 +1,5 @@
 # Perfectly alternating blockers lie on one special-vertex parity sheet — preserved pre-item development
 
-## Development
-
 Let C=(c_1,...,c_m) be a monochromatic-zero connector in path-normalized square-path gauge. Fix an uncovered shore vertex a and take its switch bit to be zero when defining the incidence word r_i=t'(c_i,a).
 
 Let x and z occur at positions i_x and i_z. In the fixed switching-normalized split, x loses to every shore vertex and z dominates every shore vertex. If sigma_x,sigma_z are the connector path-normalizing switch bits, then

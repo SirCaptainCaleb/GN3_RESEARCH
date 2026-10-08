@@ -1,7 +1,5 @@
 # Side-lifted protected roots remove same-side A3 reversal cancellation — preserved pre-item development
 
-## Development
-
 
 ## Side-lifted protected roots remove same-side A3 reversal cancellation
 

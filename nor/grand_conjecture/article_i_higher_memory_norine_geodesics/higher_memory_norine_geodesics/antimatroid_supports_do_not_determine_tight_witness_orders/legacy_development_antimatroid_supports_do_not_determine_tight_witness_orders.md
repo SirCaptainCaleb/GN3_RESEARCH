@@ -1,7 +1,5 @@
 # Antimatroid supports do not determine tight witness orders — preserved pre-item development
 
-## Development
-
 ## Antimatroid supports do not determine tight witness orders
 
 The support arguments in sections 41 and 44 are valid as statements about feasible sets. Their use in NOR still requires a separate theorem about witness orders. The following example makes the distinction explicit.

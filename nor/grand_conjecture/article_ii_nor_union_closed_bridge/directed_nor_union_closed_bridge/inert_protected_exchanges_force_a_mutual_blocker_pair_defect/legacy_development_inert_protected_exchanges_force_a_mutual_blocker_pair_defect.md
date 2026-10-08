@@ -1,7 +1,5 @@
 # Inert protected exchanges force a mutual blocker pair defect — preserved pre-item development
 
-## Development
-
 ## Inert protected exchanges force a mutual-blocker pair defect
 
 Work in a minimum coordinate counterexample for a reversal-odd binary label on ordered (r)-tuples. Choose a one-change deletion carrier

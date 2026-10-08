@@ -1,7 +1,5 @@
 # A minimum shortcut-free signature shore is a protected clique — preserved pre-item development
 
-## Development
-
 ## A minimum shortcut-free signature shore is a protected clique
 
 Continue with a minimum shortcut-free pair \(x,z\) and its minimum nonempty signature shore

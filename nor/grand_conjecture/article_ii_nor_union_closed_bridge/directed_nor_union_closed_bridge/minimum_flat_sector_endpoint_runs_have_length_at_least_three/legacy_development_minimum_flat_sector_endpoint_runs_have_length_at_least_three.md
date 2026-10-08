@@ -1,7 +1,5 @@
 # Minimum flat-sector endpoint runs have length at least three — preserved pre-item development
 
-## Development
-
 
 Let O=(v_1,...,v_m) be a one-change deletion carrier with word 0^p1^q in a minimum coboundary-flat ternary counterexample, and let x be the omitted perfect blocker. Its scan is 1^(p+1)0^q.
 

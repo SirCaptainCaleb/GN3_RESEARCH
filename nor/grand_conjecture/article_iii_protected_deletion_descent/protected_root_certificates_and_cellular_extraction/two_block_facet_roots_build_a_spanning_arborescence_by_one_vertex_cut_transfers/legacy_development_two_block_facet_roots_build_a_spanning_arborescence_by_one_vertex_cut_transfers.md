@@ -1,7 +1,5 @@
 # Two-block facet roots build a spanning arborescence by one-vertex cut transfers — preserved pre-item development
 
-## Development
-
 ## Two-block facet roots build a spanning arborescence by one-vertex cut transfers
 
 Fix the canonical good-order selector (g(S)) on every proper nonempty coordinate subset, and use the two-block facet roots of §294.

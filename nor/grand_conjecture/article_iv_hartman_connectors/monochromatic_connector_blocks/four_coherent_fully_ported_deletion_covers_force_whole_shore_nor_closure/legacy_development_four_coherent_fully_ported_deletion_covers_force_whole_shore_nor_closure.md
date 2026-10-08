@@ -1,7 +1,5 @@
 # Four coherent fully ported deletion covers force whole-shore NOR closure — preserved pre-item development
 
-## Development
-
 The GN3N article deletioncover_compatibility_and_global_obstruction_structure (composition 1) supplies a compatibility-gluing argument that uses tuple locality alone. Here is its port-preserving NOR transfer.
 
 Fix a ternary flat split B→z→A→x, with B dominating A∪{x,z}, and a fixed representing tournament t. A fully ported zero path has h=0 on each consecutive triple and has its first and last ordered pair forward whenever those pairs exist. Let D⊆A have at least four labels. For each d∈D suppose A\{d} is partitioned into at most two fully ported zero paths. Assume pairwise compatibility: after restriction to A\{d,e}, the induced equivalence relation of belonging to one path agrees, and the relative orders on each common support agree. No persistent names for the two paths are required.

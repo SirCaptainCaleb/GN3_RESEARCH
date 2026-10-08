@@ -1,7 +1,5 @@
 # A switch-adjacent xz insertion absorbs the whole shore unless three two-step edge descents are absent — preserved pre-item development
 
-## Development
-
 Let A be a shore of the switching split B -> z -> A -> x, and let
 O=(a_1,...,a_k)
 be a NOR-good A-order with word 0^p1^q.

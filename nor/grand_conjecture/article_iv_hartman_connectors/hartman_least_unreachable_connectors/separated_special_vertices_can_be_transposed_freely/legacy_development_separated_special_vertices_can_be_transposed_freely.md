@@ -1,5 +1,3 @@
 # Separated special vertices can be transposed freely — preserved pre-item development
 
-## Development
-
 The two special vertices x and z are ternary twins on every pair of shore vertices. Therefore, in any monochromatic connector where their positions are at distance at least three, swapping the labels x and z changes no ternary window color: no window contains both, and every affected window simply replaces one twin by the other. This is an involutive repair move on the same support. Endpoint compatibility may change and is treated only as a boundary target. Distances one and two remain the only local exceptional cases.

@@ -1,7 +1,5 @@
 # A fully-curved barrier has a common-flag two-return flow — preserved pre-item development
 
-## Development
-
 ## A fully-curved barrier has a common-flag two-return flow
 
 Use the zero-free nonzero-degree canonical proper-face carrier (D) from §243.

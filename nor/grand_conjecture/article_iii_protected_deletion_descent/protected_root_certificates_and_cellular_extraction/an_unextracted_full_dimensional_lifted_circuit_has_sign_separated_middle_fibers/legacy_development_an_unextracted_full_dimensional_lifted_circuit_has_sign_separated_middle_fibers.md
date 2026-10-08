@@ -1,7 +1,5 @@
 # An unextracted full-dimensional lifted circuit has sign-separated middle fibers — preserved pre-item development
 
-## Development
-
 ## An unextracted full-dimensional lifted circuit has sign-separated middle fibers
 
 Work in ternary arity with the honest nearest-violation switch-prism labels

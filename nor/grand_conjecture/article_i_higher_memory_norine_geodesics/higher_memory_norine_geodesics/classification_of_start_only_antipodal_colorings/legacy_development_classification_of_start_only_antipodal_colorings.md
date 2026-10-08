@@ -1,7 +1,5 @@
 # Start-only obstructions in the broader window model — preserved pre-item development
 
-## Development
-
 
 This subsection classifies a specific obstruction in the broader basepoint-dependent cube-window model, not in directed tuple NOR.
 

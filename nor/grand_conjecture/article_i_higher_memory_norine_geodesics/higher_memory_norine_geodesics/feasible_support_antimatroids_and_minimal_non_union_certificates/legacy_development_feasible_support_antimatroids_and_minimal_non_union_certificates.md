@@ -1,7 +1,5 @@
 # Feasible-support antimatroids and minimal non-union certificates — preserved pre-item development
 
-## Development
-
 ## Feasible-support antimatroids and minimal failures of union closure
 
 Fix coordinate arity \(r\ge2\), a color \(\sigma\), and an ordered terminal \((r-1)\)-tuple

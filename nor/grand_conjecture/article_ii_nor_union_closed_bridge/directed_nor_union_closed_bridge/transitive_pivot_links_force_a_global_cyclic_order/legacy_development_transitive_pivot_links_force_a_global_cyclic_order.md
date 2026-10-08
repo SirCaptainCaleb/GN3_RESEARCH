@@ -1,7 +1,5 @@
 # Transitive pivot links force a global cyclic order — preserved pre-item development
 
-## Development
-
 ## Transitive pivot links force a global cyclic order
 
 Let (alpha) be an alternating orientation of every unordered triple of a finite vertex set (V). For each pivot (o), define the link tournament (G_o) on (Vsetminus{o}) by

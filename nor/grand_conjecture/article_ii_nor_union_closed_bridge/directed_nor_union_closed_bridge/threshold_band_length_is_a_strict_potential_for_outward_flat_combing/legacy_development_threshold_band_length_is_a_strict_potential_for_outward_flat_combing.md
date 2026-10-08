@@ -1,7 +1,5 @@
 # Threshold band length is a strict potential for outward flat combing — preserved pre-item development
 
-## Development
-
 ## Threshold-band length is a strict potential for outward flat combing
 
 Fix a ternary one-change target with cut k and polarity eta in the coboundary-flat pure-orientation sector.

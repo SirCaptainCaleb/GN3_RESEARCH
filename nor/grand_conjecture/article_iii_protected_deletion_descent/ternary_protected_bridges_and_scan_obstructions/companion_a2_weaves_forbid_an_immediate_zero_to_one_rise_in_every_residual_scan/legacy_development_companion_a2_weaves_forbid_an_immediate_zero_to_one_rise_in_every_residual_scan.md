@@ -1,7 +1,5 @@
 # Companion A2 weaves forbid an immediate zero to one rise in every residual scan — preserved pre-item development
 
-## Development
-
 ## Companion A2 weaves forbid an immediate zero-to-one rise in every residual scan
 
 Continue the recurrent flat (A_2) replacement cycle and its three companion seven-coordinate threshold weaves.

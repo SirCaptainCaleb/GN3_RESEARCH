@@ -1,7 +1,5 @@
 # A lexicographic moment potential forbids cycles of same side bubble repairs — preserved pre-item development
 
-## Development
-
 ## A lexicographic moment potential forbids cycles of same-side bubble repairs
 
 Fix a ternary switch cut k and threshold target. For a switch state z let

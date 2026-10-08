@@ -1,7 +1,5 @@
 # Closed width-two reflection orbits carry an exact lifted gallery circulation — preserved pre-item development
 
-## Development
-
 ## Closed width-two reflection orbits carry an exact lifted gallery circulation
 
 Work in the coboundary-flat alternating ternary sector and use the exact width-two full/full reflection gadget of root §219.

@@ -1,7 +1,5 @@
 # A continuous antipodal face carrier retains actual descent roots — preserved pre-item development
 
-## Development
-
 ## A continuous antipodal face carrier retains actual descent roots
 
 Work in the translation-invariant coordinate sector of NOR. Let h be a reversal-odd binary label on ordered r-tuples of distinct coordinates, and assume every full coordinate order has at least two color changes. Every order then contains a 10 transition. This hypothesis is the negation of the coordinate-sector conclusion; no basepoint-dependent claim is made.

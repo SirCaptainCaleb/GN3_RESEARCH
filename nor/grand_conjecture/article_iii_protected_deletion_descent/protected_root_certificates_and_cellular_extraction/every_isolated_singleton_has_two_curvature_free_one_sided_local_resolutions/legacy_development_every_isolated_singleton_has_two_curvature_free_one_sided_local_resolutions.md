@@ -1,7 +1,5 @@
 # Every isolated singleton has two curvature-free one-sided local resolutions — preserved pre-item development
 
-## Development
-
 ## Every isolated singleton has two curvature-free one-sided local resolutions
 
 Let five consecutive coordinates be

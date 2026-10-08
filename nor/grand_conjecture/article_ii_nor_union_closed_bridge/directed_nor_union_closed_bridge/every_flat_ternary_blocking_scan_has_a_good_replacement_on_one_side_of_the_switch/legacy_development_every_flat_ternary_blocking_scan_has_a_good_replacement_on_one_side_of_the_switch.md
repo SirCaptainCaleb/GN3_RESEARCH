@@ -1,7 +1,5 @@
 # Every flat ternary blocking scan has a good replacement on one side of the switch — preserved pre-item development
 
-## Development
-
 
 Let alpha be coboundary-flat and alternating. Let
 

@@ -1,7 +1,5 @@
 # The last holonomy flip has a clean right exit and one forced left barrier — preserved pre-item development
 
-## Development
-
 ## The last holonomy flip has a clean right exit and one forced left barrier
 
 Continue in the special perfect-blocker branch with holonomy sequence

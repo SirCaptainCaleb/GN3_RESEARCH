@@ -1,7 +1,5 @@
 # The one-slot mixed flat-full barrier corridor is impossible — preserved pre-item development
 
-## Development
-
 
 Work in the globally maximal threshold-band state of the coboundary-flat ternary sector. Suppose the target switch is flat and the nearest unresolved full-curvature boundary lies exactly one transition slot to the right.
 

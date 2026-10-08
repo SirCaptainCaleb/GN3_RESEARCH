@@ -1,7 +1,5 @@
 # Side-balanced A3 endpoint cycles have even length — preserved pre-item development
 
-## Development
-
 
 ## Side-balanced A3 endpoint cycles have even length
 

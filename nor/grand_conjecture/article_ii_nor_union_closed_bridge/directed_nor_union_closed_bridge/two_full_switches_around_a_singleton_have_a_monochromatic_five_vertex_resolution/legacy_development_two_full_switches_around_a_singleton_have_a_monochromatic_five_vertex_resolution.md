@@ -1,7 +1,5 @@
 # Two full switches around a singleton have a monochromatic five-vertex resolution — preserved pre-item development
 
-## Development
-
 ## A singleton trapped between two fully-curved switches has a monochromatic five-vertex resolution
 
 Work in the coboundary-flat pure-orientation sector. Let five consecutive coordinates be

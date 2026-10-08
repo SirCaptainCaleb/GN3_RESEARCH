@@ -1,7 +1,5 @@
 # Canonical proper-face outermost roots form a strongly connected physical digraph — preserved pre-item development
 
-## Development
-
 ## Canonical proper-face outermost roots form a strongly connected physical digraph
 
 Let \(H\) be the directed graph on the physical coordinate set \(V\) defined as follows.

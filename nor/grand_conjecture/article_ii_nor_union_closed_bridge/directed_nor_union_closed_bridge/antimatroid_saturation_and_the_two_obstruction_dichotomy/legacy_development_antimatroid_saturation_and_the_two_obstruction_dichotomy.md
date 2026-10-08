@@ -1,7 +1,5 @@
 # Antimatroid saturation and the two-obstruction dichotomy — preserved pre-item development
 
-## Development
-
 ## Antimatroid saturation and the two-obstruction dichotomy
 
 Fix coordinate arity (r\ge2), a color (sigma), and an ordered terminal ((r-1))-tuple (S). Let

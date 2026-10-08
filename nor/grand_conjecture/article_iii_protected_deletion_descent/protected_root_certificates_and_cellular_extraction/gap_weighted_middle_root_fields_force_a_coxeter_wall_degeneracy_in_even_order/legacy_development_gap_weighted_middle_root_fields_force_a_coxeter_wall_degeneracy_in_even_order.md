@@ -1,7 +1,5 @@
 # Gap weighted middle root fields force a Coxeter wall degeneracy in even order — preserved pre-item development
 
-## Development
-
 **Audit qualification (root §30).** The field formulas and characteristic-class calculation below are valid, but both fields already vanish independently of the coloring on the universal gap-weight zero locus. Minimum-codimension examples use only disjoint doubleton ties, where physical window-slide roots remain strictly cooriented. Therefore this construction does not by itself force a coloring-sensitive physical root obstruction. Root §32 gives a continuous carrier of actual slide roots without these weight zeros; global zero forcing and protected-witness compatibility remain open.
 
 ## Gap-weighted middle-root fields force a Coxeter-wall degeneracy in even order

@@ -1,7 +1,5 @@
 # Audit terminal band roots need not cross the normalized Johnson cut — preserved pre-item development
 
-## Development
-
 Article III currently uses two distinct classes of protected physical roots, and they must not be conflated.
 
 A canonical switch root comes from reinserting the omitted coordinate at the switch of a one-change deletion witness. The switch-root theorem proves that its two consecutive ternary windows both contain the inserted coordinate and that the dropped endpoint lies strictly on the left of the normalized phase cut while the entering endpoint lies strictly on the right. Therefore this root genuinely crosses the fixed p-cut. The cut-projection and Johnson/hypersimplex theorems apply to this class.

@@ -1,7 +1,5 @@
 # The pure-orientation size-three curvature tube closes by a five-step weave — preserved pre-item development
 
-## Development
-
 
 ## The pure-orientation size-three curvature tube closes by a five-step weave
 

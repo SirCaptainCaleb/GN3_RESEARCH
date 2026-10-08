@@ -1,7 +1,5 @@
 # Elevation: Article III is a fibered cut-exchange system — preserved pre-item development
 
-## Development
-
 
 ## Elevation from the currently composed Article III
 

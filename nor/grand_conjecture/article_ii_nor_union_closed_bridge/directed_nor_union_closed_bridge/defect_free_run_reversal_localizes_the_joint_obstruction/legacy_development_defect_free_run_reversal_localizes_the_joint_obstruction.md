@@ -1,7 +1,5 @@
 # Defect-free run reversal localizes the joint obstruction — preserved pre-item development
 
-## Development
-
 ## Defect-free run reversal localizes the joint obstruction
 
 Use the ternary decomposition

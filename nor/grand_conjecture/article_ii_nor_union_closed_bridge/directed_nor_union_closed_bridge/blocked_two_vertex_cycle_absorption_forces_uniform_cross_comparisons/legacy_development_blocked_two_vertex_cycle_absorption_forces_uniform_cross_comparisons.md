@@ -1,7 +1,5 @@
 # Blocked two-vertex cycle absorption forces uniform cross comparisons — preserved pre-item development
 
-## Development
-
 ## Failure of two-vertex cycle absorption forces uniform comparisons
 
 Assume every center tournament of a reversal-antisymmetric ternary coloring h is transitive. Let C be a color-0 tight cyclic order with at least three vertices, and let E be a disjoint set of at least three exterior vertices. Suppose there is no color-0 tight path on C union {x,y} for any two distinct x,y in E.

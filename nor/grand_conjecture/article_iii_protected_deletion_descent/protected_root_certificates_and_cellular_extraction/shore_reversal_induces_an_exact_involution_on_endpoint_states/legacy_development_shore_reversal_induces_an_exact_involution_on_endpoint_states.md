@@ -1,7 +1,5 @@
 # Shore reversal induces an exact involution on endpoint states — preserved pre-item development
 
-## Development
-
 ## Shore reversal induces an exact involution on endpoint states
 
 Use the switching-split endpoint state of §333. A shore order

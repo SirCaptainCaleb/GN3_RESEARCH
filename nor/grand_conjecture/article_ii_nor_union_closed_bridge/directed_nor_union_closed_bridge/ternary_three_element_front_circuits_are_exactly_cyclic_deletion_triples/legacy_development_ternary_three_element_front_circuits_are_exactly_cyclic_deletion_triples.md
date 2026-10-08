@@ -1,7 +1,5 @@
 # Ternary three-element front circuits are exactly cyclic deletion triples — preserved pre-item development
 
-## Development
-
 ## Ternary three-element front circuits are exactly cyclic deletion triples
 
 Work at ternary coordinate arity. Let (F=(f_1,f_2)) be a terminal pair and let (	auin{0,1}). Suppose

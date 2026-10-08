@@ -1,7 +1,5 @@
 # Absence of a protected shortcut forces a universal two-shore connector — preserved pre-item development
 
-## Development
-
 ## Absence of a protected shortcut forces a universal two-shore connector
 
 Fix distinct x,z and define the pair signature

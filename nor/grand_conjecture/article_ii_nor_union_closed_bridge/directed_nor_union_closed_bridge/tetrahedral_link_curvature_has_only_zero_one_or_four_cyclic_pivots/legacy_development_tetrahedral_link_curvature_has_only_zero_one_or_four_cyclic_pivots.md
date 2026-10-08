@@ -1,7 +1,5 @@
 # Tetrahedral link curvature has only zero one or four cyclic pivots — preserved pre-item development
 
-## Development
-
 ## Tetrahedral link-curvature has only 0, 1, or 4 cyclic pivots
 
 Let (alpha) be an alternating orientation on triples. For a four-set

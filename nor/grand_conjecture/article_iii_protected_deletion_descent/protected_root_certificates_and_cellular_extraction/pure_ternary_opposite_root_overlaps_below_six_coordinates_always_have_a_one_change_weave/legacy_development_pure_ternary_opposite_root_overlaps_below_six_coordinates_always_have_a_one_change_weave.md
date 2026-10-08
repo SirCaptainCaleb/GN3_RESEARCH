@@ -1,7 +1,5 @@
 # Pure ternary opposite-root overlaps below six coordinates always have a one-change weave — preserved pre-item development
 
-## Development
-
 ## In pure ternary orientation every five-coordinate opposite-root overlap has a one-change weave
 
 Continue with opposite protected ternary slide roots

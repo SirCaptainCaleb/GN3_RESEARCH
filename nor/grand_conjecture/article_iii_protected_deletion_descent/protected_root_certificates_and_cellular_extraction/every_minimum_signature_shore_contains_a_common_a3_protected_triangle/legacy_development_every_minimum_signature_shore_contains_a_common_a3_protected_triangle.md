@@ -1,7 +1,5 @@
 # Every minimum signature shore contains a common-A3 protected triangle — preserved pre-item development
 
-## Development
-
 ## Every minimum signature shore contains a common-A3 protected triangle
 
 Use the switching normalization of §332:

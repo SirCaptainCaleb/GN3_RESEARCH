@@ -1,7 +1,5 @@
 # The antipodal backtrack has a k=3 phase exit or a transverse quotient-root exit — preserved pre-item development
 
-## Development
-
 
 In the exact d=e=3 antipodal backtrack, let the original one-change deletion carrier have normalized profile (p,q), with p globally minimum over all deletion carriers, reversals, and color complements.
 

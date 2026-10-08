@@ -1,7 +1,5 @@
 # Rank parity refutes only the basepoint-dependent enlargement — preserved pre-item development
 
-## Development
-
 
 ## A warning about an over-broad cube-window formulation
 

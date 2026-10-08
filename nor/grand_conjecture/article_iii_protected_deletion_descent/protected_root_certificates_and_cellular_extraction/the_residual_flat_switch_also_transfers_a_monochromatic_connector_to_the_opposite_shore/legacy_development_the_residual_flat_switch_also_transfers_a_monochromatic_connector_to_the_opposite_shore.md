@@ -1,7 +1,5 @@
 # The residual flat switch also transfers a monochromatic connector to the opposite shore — preserved pre-item development
 
-## Development
-
 ## The residual flat switch also transfers a monochromatic connector to the opposite shore
 
 Use the switching-normalized shortcut-free split

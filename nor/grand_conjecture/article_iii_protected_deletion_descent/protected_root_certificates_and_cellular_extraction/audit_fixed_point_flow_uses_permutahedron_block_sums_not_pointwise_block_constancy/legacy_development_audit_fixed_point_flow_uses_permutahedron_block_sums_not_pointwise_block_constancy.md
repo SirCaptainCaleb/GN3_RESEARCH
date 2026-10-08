@@ -1,7 +1,5 @@
 # Audit: fixed-point flow uses permutahedron block sums, not pointwise block constancy — preserved pre-item development
 
-## Development
-
 ## Audit: fixed-point flow uses permutahedron block sums, not pointwise block constancy
 
 The fixed-point conclusion of the even-order physical-root carrier survives, but one step in its first proof was too strong.

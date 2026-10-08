@@ -1,7 +1,5 @@
 # Face-normal degree rescues the fixed block selector without antipodal symmetry — preserved pre-item development
 
-## Development
-
 ## Face-normal degree rescues the fixed block selector without antipodal symmetry
 
 Root §169 correctly observes that the global fixed block-order selector of §§163-167 is not generally reversal-equivariant. However this does NOT invalidate its use in the proper-face Brouwer/Sperner degree argument.

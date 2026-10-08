@@ -1,7 +1,5 @@
 # Failure of a protected shortcut produces a universal switching split — preserved pre-item development
 
-## Development
-
 Assume a pair x,z has no fully-curved carrier of x→z. Its pair signature
 d(u)=α(x,z,u)
 is nonconstant in a minimum counterexample; otherwise x,z are clone-contractible.

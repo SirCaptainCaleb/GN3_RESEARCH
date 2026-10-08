@@ -1,7 +1,5 @@
 # Threshold cuts turn one-change NOR into antipodal rankwise reachability intersection — preserved pre-item development
 
-## Development
-
 
 Fix a polarity s in {+1,-1}. Let the ternary memory-lift DAG be layered by the number q of completed window transitions, with m=n-2 window signs in a full order.
 

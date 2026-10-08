@@ -1,7 +1,5 @@
 # Every good deletion witness carries two tautological protected two-cycles — preserved pre-item development
 
-## Development
-
 ## Every good deletion witness carries two tautological protected two-cycles
 
 Assume a minimum counterexample and let

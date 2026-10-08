@@ -1,7 +1,5 @@
 # Cellular Tucker forces an opposite label Coxeter carrier without triangulation diagonals — preserved pre-item development
 
-## Development
-
 ## Cellular Tucker forces an opposite-label Coxeter carrier without triangulation diagonals
 
 Work in ternary arity with the switch-prism state space. Let P_V be the type-A permutohedron on the n physical coordinates and subdivide the switch interval I at the genuine cut levels. The product

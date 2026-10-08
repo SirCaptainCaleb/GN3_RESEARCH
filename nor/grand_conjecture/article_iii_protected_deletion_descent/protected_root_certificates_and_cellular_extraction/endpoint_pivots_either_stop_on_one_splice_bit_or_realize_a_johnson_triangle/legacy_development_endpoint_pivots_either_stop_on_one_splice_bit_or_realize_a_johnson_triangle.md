@@ -1,7 +1,5 @@
 # Endpoint pivots either stop on one splice bit or realize a Johnson triangle — preserved pre-item development
 
-## Development
-
 Let an arbitrary-scan endpoint witness in the coboundary-flat alternating ternary sector be
 O_x=(a,b,c,d,...)
 omitting x, with word 0^p1^q and p>=3. Prepending x gives the endpoint-defect word 1,0^p,1^q, and the endpoint tetrahedron (x,a,b,c) is fully curved. Hence

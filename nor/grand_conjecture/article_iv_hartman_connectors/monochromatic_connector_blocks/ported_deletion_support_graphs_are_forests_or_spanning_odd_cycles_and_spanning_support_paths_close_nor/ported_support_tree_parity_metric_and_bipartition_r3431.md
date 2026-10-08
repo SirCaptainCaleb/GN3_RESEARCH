@@ -1,5 +1,3 @@
 # Tree parity metric for ported-deletion support graphs
 
-## Development
-
 Strengthens the forest-versus-odd-cycle support theorem. The support family has a parity-distance representation in every support component. When one tree component contains all deletion labels, its support cardinalities are precisely the two bipartition-class sizes minus one. This identifies branching trees as the sole connected forest obstruction to complementary support gluing, and supplies a metric invariant for comparing actual ported deletion witnesses. Full NOR closure still requires a port-preserving exchange or an alternative connector.

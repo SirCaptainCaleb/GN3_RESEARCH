@@ -1,7 +1,5 @@
 # An extremal width-two band forces the bad reconnection bit and a one-rank switch shift — preserved pre-item development
 
-## Development
-
 ## A lexicographically extremal width-two band forces the bad §226 reconnection bit
 
 Work in the coboundary-flat alternating ternary sector. Let a lexicographically maximal two-change full order have global word

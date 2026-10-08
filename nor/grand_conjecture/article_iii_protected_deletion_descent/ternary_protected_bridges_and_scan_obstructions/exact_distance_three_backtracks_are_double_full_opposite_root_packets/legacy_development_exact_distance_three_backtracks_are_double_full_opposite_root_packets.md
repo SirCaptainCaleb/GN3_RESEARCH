@@ -1,7 +1,5 @@
 # Exact distance three backtracks are double full opposite root packets — preserved pre-item development
 
-## Development
-
 ## Exact distance-three backtracks are double-full opposite-root packets
 
 Work in the coboundary-flat alternating ternary sector. Choose a one-change deletion carrier

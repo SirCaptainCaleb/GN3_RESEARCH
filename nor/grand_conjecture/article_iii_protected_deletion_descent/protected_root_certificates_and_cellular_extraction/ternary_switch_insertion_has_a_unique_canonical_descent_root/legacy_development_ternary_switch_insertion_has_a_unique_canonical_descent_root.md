@@ -1,7 +1,5 @@
 # Ternary switch insertion has a unique canonical descent root — preserved pre-item development
 
-## Development
-
 ## Ternary switch insertion has a unique canonical descent root
 
 Let a ternary one-change deletion witness have word

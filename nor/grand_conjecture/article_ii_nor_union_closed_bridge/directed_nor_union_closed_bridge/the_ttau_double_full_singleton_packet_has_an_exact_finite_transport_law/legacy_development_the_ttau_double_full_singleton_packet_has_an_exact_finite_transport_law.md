@@ -1,7 +1,5 @@
 # The t=tau double-full singleton packet has an exact finite transport law — preserved pre-item development
 
-## Development
-
 ## In the t=tau branch, double-full cancellation transports the singleton packet by a finite run transformation
 
 Continue with a Phi-extremal flat-sector four-change cyclic order of profile

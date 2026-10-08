@@ -1,7 +1,5 @@
 # A failed two-sided three-block shortcut produces a full barrier with the shortcut pair as its source shore — preserved pre-item development
 
-## Development
-
 ## A failed two-sided three-block shortcut produces a full barrier with the shortcut pair as its source shore
 
 Continue from §304. Fix distinct \(x,z\), and a good order

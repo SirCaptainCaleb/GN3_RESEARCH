@@ -1,7 +1,5 @@
 # Every maximal tight path has punctured-Boolean obstructions at both ends — preserved pre-item development
 
-## Development
-
 ## Every maximal tight path has punctured-Boolean obstructions at both ends
 
 Fix coordinate arity \(r\ge2\) and a reversal-antisymmetric label \(h\). Let

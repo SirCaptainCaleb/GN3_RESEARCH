@@ -1,7 +1,5 @@
 # Coordinate NOR and the endpoint defect reduction — preserved pre-item development
 
-## Development
-
 Sources: Article II §§162,173. This is a consolidated proof, with coordinate and cube-window scopes separated.
 
 Let V be finite, r>=2, and let h assign a binary value to every ordered r-tuple of distinct elements of V. Assume h(reverse T)=1-h(T). For O=(v_1,...,v_n), its word consists of h(v_i,...,v_{i+r-1}), 1<=i<=n-r+1. A good order has at most one color change. This is the translation-invariant coordinate sector of N_{r+1}; no statement here deletes a coordinate from an unrestricted basepoint-dependent antipodal coloring.

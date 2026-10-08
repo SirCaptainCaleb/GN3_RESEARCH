@@ -1,7 +1,5 @@
 # Complementary signed-middle edges give phase-compatible switch transport — preserved pre-item development
 
-## Development
-
 ## A complementary signed-middle edge gives a phase-compatible switch transport in the prism
 
 Work in ternary arity. Suppose a genuine horizontal adjacent-transposition edge at cut k carries the complementary signed-middle situation of subsection 118.

@@ -1,7 +1,5 @@
 # Directed sector as an orientation of a quotient overlap graph — preserved pre-item development
 
-## Development
-
 ## Quotient-overlap orientation model for the directed sector
 
 Fix a coordinate-label arity \(r\ge2\), so this is the translation-invariant directed sector of \(N_{r+1}\). Let \(\mathcal G_{n,r}\) be the graph whose vertices are reversal-orbits

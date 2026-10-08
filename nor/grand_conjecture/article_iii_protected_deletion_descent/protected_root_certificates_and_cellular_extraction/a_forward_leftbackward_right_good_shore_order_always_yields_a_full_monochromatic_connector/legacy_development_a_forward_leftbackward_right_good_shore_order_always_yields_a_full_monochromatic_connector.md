@@ -1,7 +1,5 @@
 # Exact endpoint criterion for a switch-adjacent whole-shore compatible connector — preserved pre-item development
 
-## Development
-
 ## Exact endpoint criterion for a switch-adjacent whole-shore compatible connector
 
 Audit correction to the previous version.

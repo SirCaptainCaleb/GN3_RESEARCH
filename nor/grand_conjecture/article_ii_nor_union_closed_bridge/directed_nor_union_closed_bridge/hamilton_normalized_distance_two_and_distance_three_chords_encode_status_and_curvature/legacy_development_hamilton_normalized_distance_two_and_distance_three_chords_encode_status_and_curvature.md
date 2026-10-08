@@ -1,7 +1,5 @@
 # Hamilton-normalized distance-two and distance-three chords encode status and curvature — preserved pre-item development
 
-## Development
-
 ## Hamilton-normalized chord coordinates encode both status and curvature
 
 Work in the coboundary-flat pure-orientation sector with a tournament representative t. Fix a linear coordinate order

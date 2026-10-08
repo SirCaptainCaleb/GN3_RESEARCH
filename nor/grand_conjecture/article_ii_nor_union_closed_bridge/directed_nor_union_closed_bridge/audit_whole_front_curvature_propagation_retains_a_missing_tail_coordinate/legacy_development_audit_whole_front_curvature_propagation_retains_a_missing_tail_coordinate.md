@@ -1,7 +1,5 @@
 # Audit whole-front curvature propagation retains a missing tail coordinate — preserved pre-item development
 
-## Development
-
 Audit of pure_orientation_three_circuits_propagate_unchanged_along_the_whole_monochromatic_tail and its dependent tube statements. Step 2 constructs (x,z,y,f2,f3,...,fm), which omits f1. It is therefore a NOR order on V minus {f1}, not a spanning order, even when {x,y,z} is the entire set omitted by P. Counterexamplehood does not exclude this order. Consequently the no-edge-flip conclusion, the shifted-circuit induction, and the full-tube conclusions depending on that induction have not been proved.
 
 Step 1 at the original front survives: (x,y,f1,z,f2,...,fm) is spanning, and its displayed window calculation forces alpha(z,f2,f3)=tau for all z in the original circuit when f3 exists. This gives one-step singleton propagation. Iteration would require a new full-support argument accounting for the consumed coordinates.

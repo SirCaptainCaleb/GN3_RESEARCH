@@ -1,7 +1,5 @@
 # Every terminal threshold-band barrier emits a protected physical root — preserved pre-item development
 
-## Development
-
 ## Every terminal threshold-band barrier emits a protected physical root
 
 Work in the coboundary-flat ternary sector with a one-change target and a maximal threshold-compatible interval [L,R] around its cut. Suppose an unresolved boundary remains after all available outward flat repairs. By the threshold-band normal form, its supporting tetrahedron is fully curved.

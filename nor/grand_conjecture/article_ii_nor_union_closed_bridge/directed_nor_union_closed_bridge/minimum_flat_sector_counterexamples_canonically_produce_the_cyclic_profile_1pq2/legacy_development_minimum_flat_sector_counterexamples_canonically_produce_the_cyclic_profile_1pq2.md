@@ -1,7 +1,5 @@
 # Minimum flat-sector counterexamples canonically produce the cyclic profile 1,p,q,2 — preserved pre-item development
 
-## Development
-
 
 Assume a minimum ternary counterexample in the coboundary-flat pure-orientation sector.
 

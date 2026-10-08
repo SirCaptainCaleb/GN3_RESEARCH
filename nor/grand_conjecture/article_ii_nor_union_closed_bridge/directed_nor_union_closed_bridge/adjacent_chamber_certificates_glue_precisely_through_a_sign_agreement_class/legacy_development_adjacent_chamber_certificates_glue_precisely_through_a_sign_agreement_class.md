@@ -1,7 +1,5 @@
 # Adjacent chamber certificates glue precisely through a sign-agreement class — preserved pre-item development
 
-## Development
-
 For a binary sign word epsilon=(epsilon_1,...,epsilon_m), use distinct increasing positions t_i and define the certificate polytope K(epsilon) by lambda_i>=0, sum lambda_i=1, sum lambda_i epsilon_i=0, and sum lambda_i epsilon_i t_i=0. The affine threshold theorem shows that K is nonempty exactly when epsilon has at least two changes.
 
 Proposition 1. The vertices of K are precisely the three-point certificates on alternating triples i<j<k with epsilon_i=epsilon_k=-epsilon_j. No certificate can have support one or two: for opposite signs the zeroth moment forces equal mass, and the first moment would force equal positions. A vertex has support at most three, because with more than three positive coordinates the three linear equations admit a nonzero supported perturbation, in both directions while preserving nonnegativity. On a three-element support the two equal signs must bracket the opposite sign, and the coefficients are the unique positive interpolation weights of Subsection 97. Conversely that unique solution on its support is a vertex. Hence K is the convex hull of its alternating-triple certificates.

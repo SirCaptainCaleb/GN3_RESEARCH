@@ -1,7 +1,5 @@
 # Every pinned endpoint pivot stop emits a shortcut root or a new deletion witness — preserved pre-item development
 
-## Development
-
 At a pinned boundary of a minimum-length endpoint-root cycle, use the endpoint witness
 O_x=(a,b,c,d,e,...)
 omitting x, with one-change word beginning in at least three zero windows. Prepending x gives the fully-curved endpoint barrier, so

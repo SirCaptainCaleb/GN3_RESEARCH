@@ -1,7 +1,5 @@
 # Fixed insertion fibers force either a protected root descent or one pure-sign jump edge — preserved pre-item development
 
-## Development
-
 
 Let h be reversal-odd on ordered r-tuples and let O=(v_1,...,v_m) be a one-change deletion order in a minimum coordinate counterexample, with word 0^p1^q and omitted coordinate x.
 

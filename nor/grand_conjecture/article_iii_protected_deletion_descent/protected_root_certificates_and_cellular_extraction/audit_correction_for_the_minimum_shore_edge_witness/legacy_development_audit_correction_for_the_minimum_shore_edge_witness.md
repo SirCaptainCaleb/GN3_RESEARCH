@@ -1,7 +1,5 @@
 # Audit correction for the minimum-shore edge witness — preserved pre-item development
 
-## Development
-
 Section 345 needs a scope correction.
 
 Let u -> v be an oriented edge inside the minimum signature shore A, so t(u,v)=1. Minimality supplies some w in A minus {u,v} with alpha(u,v,w)=1.

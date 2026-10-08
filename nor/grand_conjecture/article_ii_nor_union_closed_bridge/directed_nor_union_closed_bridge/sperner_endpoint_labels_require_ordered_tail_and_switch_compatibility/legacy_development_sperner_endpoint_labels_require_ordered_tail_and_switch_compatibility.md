@@ -1,7 +1,5 @@
 # Sperner endpoint labels require ordered-tail and switch compatibility — preserved pre-item development
 
-## Development
-
 The completed-cube macroface B_0=sd(Delta^{n-1}) gives a legal Sperner labeling from every choice function l(S) in S. Its fully labeled maximal chain is unique, not merely guaranteed to exist. Indeed the final element of the associated permutation must be l(V); the preceding element must be l(V minus {l(V)}), and so on. Conversely these successive deletions construct the fully labeled chain. Thus this particular Sperner interface is a deterministic elimination order. This does not invalidate the simplex construction; it identifies the mathematical work that a NOR labeling must perform.
 
 An explicit failure of endpoint labels. On V={1,2,3,4,5}, define h(a,b,c)=1_{a>c}, except flip h(2,3,4) to 1 and its reversal h(4,3,2) to 0. Reversal oddness is preserved. Let l(S)=max S. For every nonempty S there exists a NOR order of S ending at l(S): for |S|<=4 the window word has length at most two, hence automatically at most one change; for S=V use (2,1,3,4,5), whose word is 000. Therefore l is a legal Sperner label selecting an attainable good endpoint on every subset. Nevertheless its unique fully labeled chain gives (1,2,3,4,5), whose word is 010. Endpoint attainability on subsets does not supply witness compatibility.

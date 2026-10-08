@@ -1,7 +1,5 @@
 # The g=1 A2 equality profile is impossible — preserved pre-item development
 
-## Development
-
 
 Work in the recurrent coboundary-flat ternary A2 branch with g=1. The audited boundary-safe surgery produces a genuine one-change deletion carrier
 

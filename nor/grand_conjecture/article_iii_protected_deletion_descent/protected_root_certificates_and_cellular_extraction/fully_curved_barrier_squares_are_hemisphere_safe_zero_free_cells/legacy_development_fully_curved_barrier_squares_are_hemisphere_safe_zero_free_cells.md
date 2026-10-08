@@ -1,7 +1,5 @@
 # Fully-curved barrier squares are hemisphere-safe zero-free cells — preserved pre-item development
 
-## Development
-
 ## The fully-curved (K_{2,2}) cell is canonically zero-free in the central-cut hemisphere
 
 Continue with a fully-curved ternary barrier on four consecutive coordinates

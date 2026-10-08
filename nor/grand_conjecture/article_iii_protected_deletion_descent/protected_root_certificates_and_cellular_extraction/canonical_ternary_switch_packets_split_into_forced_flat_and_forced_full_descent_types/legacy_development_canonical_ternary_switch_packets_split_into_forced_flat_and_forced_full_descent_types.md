@@ -1,7 +1,5 @@
 # Canonical ternary switch packets split into forced flat and forced full descent types — preserved pre-item development
 
-## Development
-
 ## Canonical ternary switch packets split into forced flat and forced full descent types
 
 Work in the coboundary-flat alternating ternary sector. Let

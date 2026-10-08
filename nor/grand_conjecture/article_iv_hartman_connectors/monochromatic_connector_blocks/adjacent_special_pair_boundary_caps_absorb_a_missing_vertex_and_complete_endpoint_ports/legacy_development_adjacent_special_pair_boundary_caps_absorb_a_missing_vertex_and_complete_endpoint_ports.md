@@ -1,7 +1,5 @@
 # Adjacent special-pair boundary caps absorb a missing vertex and complete endpoint ports — preserved pre-item development
 
-## Development
-
 Combination of the monochromatic zero-path formulation, special-pair signatures, and Article IV's relaxed boundary-target state space.
 
 Work in the fixed normalized split B→z→A→x. The signatures are α(a,x,z)=α(x,z,a)=0 for every shore coordinate a, and α(a,b,x)=α(z,a,b)=1−t(a,b), where t(a,b)=1 iff a→b. All port statements below refer to this fixed representative.

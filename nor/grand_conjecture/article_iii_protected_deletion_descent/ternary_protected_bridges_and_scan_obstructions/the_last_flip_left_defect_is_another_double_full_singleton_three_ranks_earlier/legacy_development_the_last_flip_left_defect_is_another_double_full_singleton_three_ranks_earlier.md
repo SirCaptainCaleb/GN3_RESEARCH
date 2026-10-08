@@ -1,7 +1,5 @@
 # The last-flip left defect is another double-full singleton three ranks earlier — preserved pre-item development
 
-## Development
-
 ## The last-flip left defect is another double-full singleton three ranks earlier
 
 Continue from subsection 54. The canonical last-holonomy-flip state has otherwise threshold-compatible word, with one isolated left defect

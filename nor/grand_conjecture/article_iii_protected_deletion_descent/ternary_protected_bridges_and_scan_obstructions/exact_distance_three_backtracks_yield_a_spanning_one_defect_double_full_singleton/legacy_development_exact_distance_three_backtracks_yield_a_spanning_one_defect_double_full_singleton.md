@@ -1,7 +1,5 @@
 # Exact distance-three backtracks yield a spanning one-defect double-full singleton — preserved pre-item development
 
-## Development
-
 
 Work in the coboundary-flat ternary sector and assume the exact d=e=3 backtrack of the corrected arbitrary-scan replacement dynamics.
 

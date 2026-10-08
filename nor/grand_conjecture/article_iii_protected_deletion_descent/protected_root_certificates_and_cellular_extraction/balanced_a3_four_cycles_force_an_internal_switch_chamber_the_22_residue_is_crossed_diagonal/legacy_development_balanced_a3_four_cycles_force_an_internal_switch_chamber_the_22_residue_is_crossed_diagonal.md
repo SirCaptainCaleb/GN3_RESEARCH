@@ -1,7 +1,5 @@
 # Balanced A3 four-cycles force an internal switch chamber; the 2+2 residue is crossed-diagonal — preserved pre-item development
 
-## Development
-
 ## A3 terminalization: balanced four-cycles force an internal switch chamber
 
 Normalize the switch target to 0 on the pre-switch side and 1 on the post-switch side. Thus a pre-switch violation has actual ternary color 1, while a post-switch violation has actual color 0.

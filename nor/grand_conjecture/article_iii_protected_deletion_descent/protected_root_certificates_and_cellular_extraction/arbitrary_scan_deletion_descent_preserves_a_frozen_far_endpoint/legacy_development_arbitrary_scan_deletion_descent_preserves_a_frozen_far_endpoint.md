@@ -1,7 +1,5 @@
 # Arbitrary-scan deletion descent preserves a frozen far endpoint — preserved pre-item development
 
-## Development
-
 ## Arbitrary-scan deletion descent preserves a frozen far endpoint
 
 Work in a minimum coboundary-flat alternating ternary counterexample.

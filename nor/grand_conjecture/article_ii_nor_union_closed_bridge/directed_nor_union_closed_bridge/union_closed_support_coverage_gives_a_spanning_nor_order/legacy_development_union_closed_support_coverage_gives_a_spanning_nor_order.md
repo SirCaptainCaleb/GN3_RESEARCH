@@ -1,7 +1,5 @@
 # Union-closed support coverage gives a spanning NOR order — preserved pre-item development
 
-## Development
-
 ## Support coverage, rather than frequency, is sufficient under union closure
 
 Fix a reversal-antisymmetric coordinate label h of arity r>=2 on a finite ground set V, with |V|>=r. This is the translation-invariant directed sector of N_{r+1}. Fix a color sigma and an ordered terminal tuple S of length r-1. Let W=V\setminus underlying(S), and let F_{sigma,S} consist of supports A subseteq W having a sigma-tight witness (an ordering of A followed by S).

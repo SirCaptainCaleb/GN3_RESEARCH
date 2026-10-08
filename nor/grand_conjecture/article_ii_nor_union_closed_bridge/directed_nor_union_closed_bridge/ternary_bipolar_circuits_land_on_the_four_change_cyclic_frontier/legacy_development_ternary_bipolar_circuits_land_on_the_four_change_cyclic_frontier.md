@@ -1,7 +1,5 @@
 # Ternary bipolar circuits land on the four-change cyclic frontier — preserved pre-item development
 
-## Development
-
 ## Ternary bipolar circuits land on the four-change cyclic frontier
 
 Work in a minimum counterexample to directed ternary NOR. Let \(P\) be a maximal \(\sigma\)-tight path with omitted set \(X\), and suppose \(X\) is a bipolar circuit at the two ends of \(P\). Put \(\tau=1-\sigma\),

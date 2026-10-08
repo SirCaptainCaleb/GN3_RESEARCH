@@ -1,7 +1,5 @@
 # Wu--Yang rook labels and chain-level antipodal architecture — preserved pre-item development
 
-## Development
-
 
 Hehui Wu and Ningyuan Yang proved Norine's original non-geodesic antipodal-coloring conjecture in 2026 using a chain-level Borsuk--Ulam obstruction.
 

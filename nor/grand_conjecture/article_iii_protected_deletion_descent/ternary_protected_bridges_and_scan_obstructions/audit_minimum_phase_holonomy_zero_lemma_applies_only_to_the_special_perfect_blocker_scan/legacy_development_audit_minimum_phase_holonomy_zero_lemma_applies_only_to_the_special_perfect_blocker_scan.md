@@ -1,7 +1,5 @@
 # Audit: minimum-phase holonomy-zero lemma applies only to the special perfect-blocker scan — preserved pre-item development
 
-## Development
-
 
 Scope audit of subsection 42.
 

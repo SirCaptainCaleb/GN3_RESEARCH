@@ -1,7 +1,5 @@
 # Every lexicographically extremal width-two type forces the same left double-full kernel — preserved pre-item development
 
-## Development
-
 ## Every lexicographically extremal width-two type forces the same left double-full kernel
 
 Work in the coboundary-flat alternating ternary sector. Let a lexicographically maximal global two-change order contain six consecutive coordinates

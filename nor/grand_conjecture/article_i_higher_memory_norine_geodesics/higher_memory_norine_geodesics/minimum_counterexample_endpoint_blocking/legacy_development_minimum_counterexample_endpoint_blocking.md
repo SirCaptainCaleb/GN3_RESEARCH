@@ -1,7 +1,5 @@
 # Minimum-counterexample endpoint blocking — preserved pre-item development
 
-## Development
-
 ## Minimum-counterexample endpoint blocking
 
 Fix \(r\ge 2\), and suppose \(h\) is a counterexample to \(N_k\) on a ground set \(V\) of minimum possible size \(n\).

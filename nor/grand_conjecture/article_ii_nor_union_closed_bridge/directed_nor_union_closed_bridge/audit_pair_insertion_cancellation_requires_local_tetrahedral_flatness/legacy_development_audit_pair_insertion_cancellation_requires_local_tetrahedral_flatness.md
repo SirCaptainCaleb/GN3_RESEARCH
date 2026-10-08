@@ -1,7 +1,5 @@
 # Audit: pair insertion cancellation requires local tetrahedral flatness — preserved pre-item development
 
-## Development
-
 ## Scope correction and a local pair-extension lemma
 
 This audits subsection 103. Work with an alternating ternary orientation alpha, not an arbitrary reversal-odd h. Let O=(v_1,...,v_m) have word 0^p 1^q and let s_i^x=alpha(x,v_i,v_{i+1}), c_i=alpha(x,y,v_i). Define

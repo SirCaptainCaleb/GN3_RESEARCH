@@ -1,7 +1,5 @@
 # A seven-label branching support tree is realizable by fully ported zero-path deletion covers
 
-## Development
-
 Statement:
 Let A have seven labels. There is a family of seven genuinely realizable fully ported two-path deletion covers whose support graph is a branching tree with eight distinct supports, each of cardinality three, and contains no pair of complementary supports. It is realizable in the transitive tournament on A. Therefore support incidence alone cannot force complementary-support gluing, even for honest compatible zero-path witnesses.
 

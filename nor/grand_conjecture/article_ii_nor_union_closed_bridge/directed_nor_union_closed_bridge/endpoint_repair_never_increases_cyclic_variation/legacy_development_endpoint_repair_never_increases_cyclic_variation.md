@@ -1,7 +1,5 @@
 # Endpoint repair never increases cyclic variation — preserved pre-item development
 
-## Development
-
 ## Endpoint repair never increases cyclic variation
 
 Work in a pure alternating ternary orientation. Let a cyclic order contain

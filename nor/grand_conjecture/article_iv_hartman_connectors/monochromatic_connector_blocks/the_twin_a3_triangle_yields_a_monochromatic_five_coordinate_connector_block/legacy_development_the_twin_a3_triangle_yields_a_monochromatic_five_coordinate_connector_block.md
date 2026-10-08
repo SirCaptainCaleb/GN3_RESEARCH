@@ -1,7 +1,5 @@
 # The twin A3 triangle yields a monochromatic five-coordinate connector block — preserved pre-item development
 
-## Development
-
 For the directed triangle u→v→w→u in A, consider
 C_0=(u,x,z,v,w).
 

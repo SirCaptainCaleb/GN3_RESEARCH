@@ -1,7 +1,5 @@
 # The honest side lift removes the Hamiltonian root simplex by an odd-parity transverse window — preserved pre-item development
 
-## Development
-
 ## The honest side lift removes the Hamiltonian root simplex by an odd-parity transverse window
 
 Work in ternary arity with the honest switch-prism lifted labels

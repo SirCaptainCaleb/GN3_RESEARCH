@@ -1,7 +1,5 @@
 # Degree-saturated connected lifted circuits expose a complementary A3 pair or a one-exception fan — preserved pre-item development
 
-## Development
-
 ## A fixed-cut A3 alternative for degree-saturated connected lifted circuits
 
 Work in the pure alternating ternary sector with the honest switch-prism labels

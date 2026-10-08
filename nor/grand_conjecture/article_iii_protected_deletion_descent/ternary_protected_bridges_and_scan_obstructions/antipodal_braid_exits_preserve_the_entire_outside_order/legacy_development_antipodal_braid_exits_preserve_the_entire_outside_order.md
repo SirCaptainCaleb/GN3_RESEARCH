@@ -1,7 +1,5 @@
 # Antipodal braid exits preserve the entire outside order — preserved pre-item development
 
-## Development
-
 
 In the flat d=e=3 antipodal backtrack, subsection 221 gives the caged braid-hexagon on local coordinates a,b,x,y,c,d and its two protected exits
 

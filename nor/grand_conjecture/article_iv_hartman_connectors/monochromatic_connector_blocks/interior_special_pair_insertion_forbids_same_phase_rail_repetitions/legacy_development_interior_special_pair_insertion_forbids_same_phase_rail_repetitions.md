@@ -1,7 +1,5 @@
 # Interior special-pair insertion forbids same-phase rail repetitions — preserved pre-item development
 
-## Development
-
 ## Interior special-pair insertion forbids \(11\) in the zero phase and \(00\) in the one phase along each edge-parity rail
 
 Work in the switching-normalized split

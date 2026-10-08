@@ -1,7 +1,5 @@
 # Minimum directed N_4 counterexamples yield four-change extremal cycles — preserved pre-item development
 
-## Development
-
 ## Four-change extremal cycle at directed N_4
 
 Work in the directed translation-invariant sector of (N_4), so the coordinate label has arity (r=3):

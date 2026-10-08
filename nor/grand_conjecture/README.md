@@ -1,6 +1,6 @@
 # Grand conjecture
 
-Research hierarchy: Articles → Sections → Subsections → Items → Results.
+Research hierarchy: Articles → Sections → Subsections → Items.
 Each level's composition is adjacent to its corresponding directory.
 
 - [Article I — Ordered-tuple Norine geodesics](article_i_higher_memory_norine_geodesics.md)

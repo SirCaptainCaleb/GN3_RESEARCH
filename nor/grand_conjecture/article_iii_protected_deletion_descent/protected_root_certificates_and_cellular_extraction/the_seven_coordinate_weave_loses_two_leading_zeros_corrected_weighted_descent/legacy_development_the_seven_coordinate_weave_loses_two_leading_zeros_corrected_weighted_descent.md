@@ -1,7 +1,5 @@
 # The seven-coordinate weave loses two leading zeros: corrected weighted descent — preserved pre-item development
 
-## Development
-
 ## The seven-coordinate weave loses two leading zeros: corrected weighted descent
 
 Work in the flat alternating sector and compare full orders with word 0^A1^B0^C. The proposed weight 7A+4B in §270 does not cover the seven-coordinate all-one weave: its leading-run loss was undercounted.

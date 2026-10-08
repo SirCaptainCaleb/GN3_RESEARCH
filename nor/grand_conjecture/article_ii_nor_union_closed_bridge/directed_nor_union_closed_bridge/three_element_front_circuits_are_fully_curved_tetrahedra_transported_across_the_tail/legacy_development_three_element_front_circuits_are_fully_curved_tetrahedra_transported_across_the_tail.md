@@ -1,7 +1,5 @@
 # Three-element front circuits are fully curved tetrahedra transported across the tail — preserved pre-item development
 
-## Development
-
 
 ## Three-element front circuits are fully curved tetrahedra transported across the tail
 

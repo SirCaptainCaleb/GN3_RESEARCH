@@ -1,7 +1,5 @@
 # Audit correction: separated connector vertices require ordered boundary parity — preserved pre-item development
 
-## Development
-
 
 The previous development claim that every ternary window meeting x or z and two shore vertices is automatically zero was false: alpha is alternating, so the coordinate order still matters even when the underlying tournament triple is transitive.
 

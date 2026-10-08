@@ -1,7 +1,5 @@
 # Audit insertion blocking does not force the special blocker scan — preserved pre-item development
 
-## Development
-
 The claimed unique perfect-blocker scan 1^(p+1)0^q is not a consequence of failure of all insertions into a prescribed alternating ternary carrier. This premise is used in §§178-200 and in the flat-sector closure §§187,188,191.
 
 Parametric counterexample. Let O=(v_1,...,v_m), m=p+q+2, have word 0^p1^q with p,q>=2. Assign an exterior vertex x the scan s_i=alpha(x,v_i,v_{i+1}) with

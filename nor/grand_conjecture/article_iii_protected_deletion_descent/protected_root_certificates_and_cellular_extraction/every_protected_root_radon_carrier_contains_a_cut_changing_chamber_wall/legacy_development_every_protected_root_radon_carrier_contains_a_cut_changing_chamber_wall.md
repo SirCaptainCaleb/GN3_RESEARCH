@@ -1,7 +1,5 @@
 # Every protected-root Radon carrier contains a cut-changing chamber wall — preserved pre-item development
 
-## Development
-
 ## Every protected-root Radon carrier contains a cut-changing chamber wall
 
 Consider a connected permutohedral carrier cell whose chambers carry canonical protected roots from normalized one-change deletion states with a fixed first-phase length p. For a chamber C, let L(C) be the physical set occupying the first p positions of its deletion carrier.

@@ -1,7 +1,5 @@
 # Canonical Sperner witness gluing reduces to disjoint merge squares and three-block associativity diamonds — preserved pre-item development
 
-## Development
-
 ## Canonical Sperner witness gluing reduces to disjoint merge squares and three-block associativity diamonds
 
 Use the global good-order selector g(S) from root §163. A proper ordered-partition face

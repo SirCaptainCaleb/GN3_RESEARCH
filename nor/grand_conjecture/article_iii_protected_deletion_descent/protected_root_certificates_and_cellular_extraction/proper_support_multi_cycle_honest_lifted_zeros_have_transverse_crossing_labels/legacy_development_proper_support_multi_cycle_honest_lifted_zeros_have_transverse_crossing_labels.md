@@ -1,7 +1,5 @@
 # Proper-support multi-cycle honest lifted zeros have transverse crossing labels — preserved pre-item development
 
-## Development
-
 Work in the pure alternating ternary sector with the honest switch-prism labels
 (rho,s) in W direct-sum R.
 Let a support-minimal positive lifted zero be genuinely multi-cycle, and let U be the set of physical coordinates incident with its support graph.

@@ -1,7 +1,5 @@
 # Set valued cellular Tucker removes nearest violation tie breaking — preserved pre-item development
 
-## Development
-
 ## Set-valued cellular Tucker removes nearest-violation tie breaking
 
 Work in the ternary switch prism

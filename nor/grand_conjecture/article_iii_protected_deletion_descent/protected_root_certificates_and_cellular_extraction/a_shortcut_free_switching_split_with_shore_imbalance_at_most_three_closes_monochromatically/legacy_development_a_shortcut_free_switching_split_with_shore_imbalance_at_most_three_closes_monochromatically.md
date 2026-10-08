@@ -1,7 +1,5 @@
 # A shortcut-free switching split with shore imbalance at most three closes monochromatically — preserved pre-item development
 
-## Development
-
 ## Balanced cuts eliminate all nearly balanced switching splits
 
 Use the switching-normalized shortcut-free split

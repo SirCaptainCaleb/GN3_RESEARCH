@@ -1,7 +1,5 @@
 # Cellular antipodal obstruction and the extraction boundary — preserved pre-item development
 
-## Development
-
 Sources: Article II §§141,150,168,174. This records the valid topological result and separates it from unproved extraction.
 
 Let X=P_V times I be the n-dimensional switch-prism ball for ternary coordinate orders. Its boundary involution reverses the order and reflects the cut. At every bad state, label each violating window by its signed physical middle coordinate, positive on the pre-cut side and negative on the post-cut side. A state has no opposite pair within its label set; reversal sends the entire set to its negative.

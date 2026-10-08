@@ -1,7 +1,5 @@
 # Same profile flat returns are either backtracks or a local three cycle — preserved pre-item development
 
-## Development
-
 ## Same-profile flat returns are either backtracks or a local three-cycle
 
 Continue the minimum-run coboundary-flat ternary dynamics of §206.

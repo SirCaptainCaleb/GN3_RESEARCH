@@ -1,7 +1,5 @@
 # Common-cut protected root cells are automatically zero-free — preserved pre-item development
 
-## Development
-
 ## Common-cut cells are automatically zero-free
 
 Let (Csubsetneq V) be a nontrivial cut and write

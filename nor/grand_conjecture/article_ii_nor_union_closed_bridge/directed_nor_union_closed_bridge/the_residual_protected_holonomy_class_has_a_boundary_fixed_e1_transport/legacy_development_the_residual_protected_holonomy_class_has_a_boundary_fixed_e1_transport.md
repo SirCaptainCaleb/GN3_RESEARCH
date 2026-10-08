@@ -1,7 +1,5 @@
 # The residual protected holonomy class has a boundary-fixed E=1 transport — preserved pre-item development
 
-## Development
-
 
 Continue the protected switch-insertion setup. Use consecutive coordinates
 

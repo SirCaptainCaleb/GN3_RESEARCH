@@ -1,7 +1,5 @@
 # Proper rear circuits strictly enlarge monochromatic fork support — preserved pre-item development
 
-## Development
-
 ## Proper rear circuits strictly enlarge monochromatic fork support
 
 Work in arbitrary coordinate arity \(r\ge2\). Let

@@ -1,7 +1,5 @@
 # Every honest lifted A3 zero contains a controlled repair event — preserved pre-item development
 
-## Development
-
 Work in the coboundary-flat alternating ternary sector and one exact A3 Coxeter block B of four coordinates. Consider a positive zero of honest switch-prism labels (rho,s) supported in this block. Its physical root component is a positive circulation on the four block coordinates.
 
 Normalize the pre-switch target color to 0. Thus a violating window has actual color y=1 on the pre-switch side and y=0 on the post-switch side.

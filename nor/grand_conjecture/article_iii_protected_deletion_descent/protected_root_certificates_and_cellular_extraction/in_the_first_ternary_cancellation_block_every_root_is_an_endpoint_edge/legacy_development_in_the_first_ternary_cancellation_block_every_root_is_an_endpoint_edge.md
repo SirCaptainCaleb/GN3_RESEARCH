@@ -1,7 +1,5 @@
 # In the first ternary cancellation block every root is an endpoint edge — preserved pre-item development
 
-## Development
-
 ## In the first ternary cancellation block every root is an endpoint edge
 
 By the block-coorientation theorem, a positive physical window-slide dependence in ternary arity cannot be supported in a Coxeter block of size at most 3. The first possible block has size 4, an A3 permutohedral block.

@@ -1,7 +1,5 @@
 # Dominating or dominated zero-path modules absorb into every compatible connector — preserved pre-item development
 
-## Development
-
 ## Relative absorption of a whole extremal shore module
 
 Work in the fixed flat split B→z→A→x with z→A→x and z→x. A compatible zero connector C on U=R∪{x,z} is an order with every consecutive ternary color zero and both exposed ordered pairs forward in the fixed representing tournament t. A *ported zero path* P on a nonempty subset H⊆A has zero ternary word and forward first/last ordered pair whenever the pair exists (singletons qualify).

@@ -1,7 +1,5 @@
 # One-change orders are spanning converging tight forks — preserved pre-item development
 
-## Development
-
 ## Converging tight-fork formulation
 
 Fix a directed ordered-(r)-tuple coloring (h) on (V) with

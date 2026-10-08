@@ -1,7 +1,5 @@
 # Audit: reversed-suffix propagation requires unproved switch polarization — preserved pre-item development
 
-## Development
-
 ## Audit
 
 The earlier version attempted to propagate a common-tail deletion cycle through a reversed post-switch suffix and claimed q>=3.

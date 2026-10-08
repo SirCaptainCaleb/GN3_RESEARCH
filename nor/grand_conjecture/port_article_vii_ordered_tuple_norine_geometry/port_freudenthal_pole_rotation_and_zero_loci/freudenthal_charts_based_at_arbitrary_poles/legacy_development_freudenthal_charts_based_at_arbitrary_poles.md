@@ -1,7 +1,5 @@
 # Freudenthal charts based at arbitrary poles — preserved pre-item development
 
-## Development
-
 
 The usual Freudenthal triangulation of the cube organizes monotone chains from \(\varnothing\) to \(V\): a permutation \((v_1,\ldots,v_n)\) gives the maximal simplex
 \[

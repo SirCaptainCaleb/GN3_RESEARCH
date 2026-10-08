@@ -1,7 +1,5 @@
 # Audit: the special-scan endpoint double-full branch is already excluded by deletion descent — preserved pre-item development
 
-## Development
-
 ## Audit: the special-scan endpoint double-full branch is already excluded by deletion descent
 
 Root §102 studies a canonical endpoint carrier with deletion word

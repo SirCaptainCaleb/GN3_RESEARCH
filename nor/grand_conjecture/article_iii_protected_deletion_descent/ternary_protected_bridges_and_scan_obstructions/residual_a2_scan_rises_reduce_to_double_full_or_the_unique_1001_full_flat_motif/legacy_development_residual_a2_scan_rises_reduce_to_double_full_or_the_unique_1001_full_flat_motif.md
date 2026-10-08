@@ -1,7 +1,5 @@
 # Residual A2 scan rises reduce to double-full or the unique 1001 full-flat motif — preserved pre-item development
 
-## Development
-
 ## Any later rise in a residual A2 suffix scan creates a canonical singleton barrier
 
 Work in the recurrent flat A2 replacement cycle. For one residual coordinate (u), use its companion protected deletion order obtained by deleting the final (u) from the seven-coordinate weave. Its protected front has word

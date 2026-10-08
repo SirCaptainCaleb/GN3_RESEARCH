@@ -1,7 +1,5 @@
 # Every compatible connector decomposes into at most three fully ported shore zero paths — preserved pre-item development
 
-## Development
-
 ## Canonical ported shore-block decomposition of arbitrary compatible connectors
 
 Fix the flat normalized split z→A→x and z→x, with α(u,v,w)=t(u,v)+t(v,w)+t(w,u) modulo 2. Let C be any compatible zero connector on R∪{x,z}, R⊆A. Delete x,z from its written order, retaining the maximal contiguous shore blocks P_1,...,P_k that were separated by special coordinates (discard empty blocks).

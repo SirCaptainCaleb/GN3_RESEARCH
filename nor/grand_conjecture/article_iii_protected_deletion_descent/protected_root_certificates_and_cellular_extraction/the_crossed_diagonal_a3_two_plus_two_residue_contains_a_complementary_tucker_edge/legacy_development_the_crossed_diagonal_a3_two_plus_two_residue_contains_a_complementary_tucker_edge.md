@@ -1,7 +1,5 @@
 # The crossed-diagonal A3 two-plus-two residue contains a complementary Tucker edge — preserved pre-item development
 
-## Development
-
 Work in one exact ternary A3 block and the no-internal-switch-chamber branch of root 101. After global color complementation if necessary, label the four block coordinates
 1<2<3<4
 so every increasing triple has color 0. Normalize the switch target to 0 on the pre side and 1 on the post side.

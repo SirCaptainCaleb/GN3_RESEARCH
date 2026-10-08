@@ -1,7 +1,5 @@
 # The ordered-tuple one-change conjecture — preserved pre-item development
 
-## Development
-
 
 ## Grand conjecture: tuple arity is the index
 

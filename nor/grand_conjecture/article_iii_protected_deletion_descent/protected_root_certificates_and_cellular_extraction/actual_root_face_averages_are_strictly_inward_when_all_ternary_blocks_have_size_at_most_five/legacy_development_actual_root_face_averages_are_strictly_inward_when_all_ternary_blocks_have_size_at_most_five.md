@@ -1,7 +1,5 @@
 # Actual-root face averages are zero-free on ternary faces with blocks of size at most five — preserved pre-item development
 
-## Development
-
 ## Actual-root face averages are zero-free on ternary faces with blocks of size at most five
 
 This strengthens root §32 for its particular all-refinements averaged carrier. It does not strengthen strict coorientation of arbitrary root sets: raw positive circuits still exist in four-coordinate A3 blocks.

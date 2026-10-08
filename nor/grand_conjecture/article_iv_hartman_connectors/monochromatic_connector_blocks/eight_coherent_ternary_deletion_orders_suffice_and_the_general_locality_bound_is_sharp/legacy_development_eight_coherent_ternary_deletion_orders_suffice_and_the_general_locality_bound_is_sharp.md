@@ -1,7 +1,5 @@
 # Eight coherent ternary deletion orders suffice, and the general locality bound is sharp — preserved pre-item development
 
-## Development
-
 ## Sharp deletion-coherence threshold for one-change orders
 
 Let r>=2 and let h assign a binary color to every ordered r-tuple of distinct labels of V. An order is good when its consecutive r-window color word has at most one change. Neither oddness nor tournament representability is assumed.

@@ -1,7 +1,5 @@
 # Reversing any monochromatic run gives a monochromatic seed with only two two-bit collars — preserved pre-item development
 
-## Development
-
 ## Reversing any monochromatic run gives a monochromatic seed with only two two-bit collars
 
 Let a full ternary order have an arbitrary binary status word, and let

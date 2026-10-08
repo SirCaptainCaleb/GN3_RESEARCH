@@ -1,7 +1,5 @@
 # Antipodal backtrack exits either close or expose a transverse protected root — preserved pre-item development
 
-## Development
-
 
 In the audited flat d=e=3 antipodal backtrack, use local order ...q,r,a,b,y,c,d,e,f... with x omitted, old statuses 0,0,1,1,1,1,1, and x-bridge alpha(a,b,x)=alpha(b,x,c)=alpha(x,c,d)=0.
 

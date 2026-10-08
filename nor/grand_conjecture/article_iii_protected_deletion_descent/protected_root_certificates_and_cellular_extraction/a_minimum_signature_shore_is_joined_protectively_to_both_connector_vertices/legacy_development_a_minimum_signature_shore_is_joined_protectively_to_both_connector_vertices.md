@@ -1,7 +1,5 @@
 # A minimum signature shore is joined protectively to both connector vertices — preserved pre-item development
 
-## Development
-
 ## A minimum signature shore is joined protectively to both connector vertices
 
 Assume shortcut-free pairs exist. Among all ordered pairs x,z with no protected shortcut and nonconstant pair signature, choose one for which the smaller signature shore has minimum size. Reverse x,z if necessary and write

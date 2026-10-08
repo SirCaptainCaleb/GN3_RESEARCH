@@ -1,7 +1,5 @@
 # Middle run reversal forces a blocker at each reconnection — preserved pre-item development
 
-## Development
-
 ## Middle-run reversal forces a blocker at each reconnection
 
 Work in directed ternary NOR. Let

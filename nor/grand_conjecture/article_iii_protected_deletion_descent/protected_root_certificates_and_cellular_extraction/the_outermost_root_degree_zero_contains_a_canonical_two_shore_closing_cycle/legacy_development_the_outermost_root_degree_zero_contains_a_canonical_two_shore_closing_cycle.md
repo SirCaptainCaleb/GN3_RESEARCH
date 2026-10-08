@@ -1,7 +1,5 @@
 # The outermost-root degree zero contains a canonical two-shore closing cycle — preserved pre-item development
 
-## Development
-
 ## The outermost-root degree zero contains a canonical two-shore closing cycle
 
 Use the root-valued boundary carrier

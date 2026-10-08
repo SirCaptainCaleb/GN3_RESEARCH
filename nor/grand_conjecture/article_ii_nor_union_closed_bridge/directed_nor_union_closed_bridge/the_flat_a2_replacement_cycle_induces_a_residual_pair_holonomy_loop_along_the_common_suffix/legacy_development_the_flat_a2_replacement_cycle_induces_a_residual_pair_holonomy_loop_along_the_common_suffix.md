@@ -1,7 +1,5 @@
 # The flat A2 replacement cycle induces a residual pair holonomy loop along the common suffix — preserved pre-item development
 
-## Development
-
 ## The flat A2 replacement cycle induces a residual pair-holonomy loop along the common suffix
 
 Assume the nontrivial same-profile (d=e=2) replacement cycle of §§207–209 occurs in a minimum coboundary-flat ternary counterexample.

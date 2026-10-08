@@ -1,7 +1,5 @@
 # Frontier ideas after A2 localization — preserved pre-item development
 
-## Development
-
 ## Frontier ideas after A2 localization
 
 These are research directions, not established theorems.

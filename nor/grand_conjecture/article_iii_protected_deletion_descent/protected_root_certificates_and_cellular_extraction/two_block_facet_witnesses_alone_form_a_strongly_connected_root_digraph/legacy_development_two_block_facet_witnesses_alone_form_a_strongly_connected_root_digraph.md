@@ -1,7 +1,5 @@
 # Two-block facet witnesses alone form a strongly connected root digraph — preserved pre-item development
 
-## Development
-
 ## Two-block facet witnesses alone form a strongly connected root digraph
 
 Assume a minimum ternary counterexample and fix, for every proper nonempty subset \(C\subsetneq V\), one NOR-good order \(g(C)\) of the induced instance on \(C\).

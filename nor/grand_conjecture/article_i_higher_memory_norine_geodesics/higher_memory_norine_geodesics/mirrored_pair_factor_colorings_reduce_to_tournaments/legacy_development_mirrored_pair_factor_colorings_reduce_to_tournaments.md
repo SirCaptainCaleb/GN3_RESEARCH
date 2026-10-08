@@ -1,7 +1,5 @@
 # Mirrored-pair factor colorings reduce to tournaments — preserved pre-item development
 
-## Development
-
 ## Mirrored-pair factor colorings are completely soluble
 
 A substantial subclass of the directed tuple conjecture reduces to ordinary tournament Hamilton paths.

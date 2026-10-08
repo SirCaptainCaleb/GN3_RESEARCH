@@ -1,7 +1,5 @@
 # The two-change potential (A+B,A) absorbs the width-two switch shift — preserved pre-item development
 
-## Development
-
 ## The potential (A+B,A) is adapted to the full two-change surgery system
 
 Work in the coboundary-flat alternating ternary sector. For a full order with exactly two changes and word

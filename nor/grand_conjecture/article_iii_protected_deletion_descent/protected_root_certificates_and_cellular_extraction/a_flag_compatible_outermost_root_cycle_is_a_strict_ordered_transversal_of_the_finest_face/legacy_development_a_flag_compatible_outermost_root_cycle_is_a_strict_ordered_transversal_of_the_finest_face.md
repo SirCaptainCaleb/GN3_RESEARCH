@@ -1,7 +1,5 @@
 # A flag-compatible outermost-root cycle is a strict ordered transversal of the finest face — preserved pre-item development
 
-## Development
-
 ## A flag-compatible outermost-root cycle is a strict ordered transversal of the finest face
 
 Continue with the directed cycle supplied by §244/§245:

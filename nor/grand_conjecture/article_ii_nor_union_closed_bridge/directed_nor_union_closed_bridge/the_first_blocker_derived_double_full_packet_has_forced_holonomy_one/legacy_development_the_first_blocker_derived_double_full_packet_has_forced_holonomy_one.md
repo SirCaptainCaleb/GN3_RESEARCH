@@ -1,7 +1,5 @@
 # The first blocker derived double full packet has forced holonomy one — preserved pre-item development
 
-## Development
-
 ## The first blocker-derived double-full packet has forced holonomy one
 
 Work in a minimum coboundary-flat pure-orientation ternary counterexample. Let

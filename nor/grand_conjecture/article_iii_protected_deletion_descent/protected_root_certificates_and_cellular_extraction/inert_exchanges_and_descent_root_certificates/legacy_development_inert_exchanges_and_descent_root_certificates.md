@@ -1,7 +1,5 @@
 # Inert exchanges and descent root certificates — preserved pre-item development
 
-## Development
-
 Sources: Article II §§195,197, under the admissibility conditions of the protected replacement lemma.
 
 At a minimum-first-phase deletion witness with p>=r, the replacement packet B is inert (0^r) or contains 10. For each adjacent 10 in B, let a_i be the coordinate dropped as that window slides and c_i the coordinate entering. Define

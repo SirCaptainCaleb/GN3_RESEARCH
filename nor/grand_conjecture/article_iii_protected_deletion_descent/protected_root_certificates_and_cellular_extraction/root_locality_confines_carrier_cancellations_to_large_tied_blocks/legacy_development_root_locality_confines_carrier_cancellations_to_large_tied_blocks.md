@@ -1,7 +1,5 @@
 # Root locality confines carrier cancellations to large tied blocks — preserved pre-item development
 
-## Development
-
 Combination of the ordered-partition geometry in Article II §228, the physical window-slide dictionary in §225, and the all-arity outermost carrier.
 
 Theorem. Let F=B_1|...|B_s be an ordered-partition cell. Suppose every root contributing to its affine labels is attached to an actual coordinate order refining F. Orient every root from an earlier coordinate of that order to a later one. Choose a block-rank functional φ(e_a−e_c)=rank_F(a)−rank_F(c). Every contributing root has φ≤0. If a positive weighted sum of these roots is zero, each contributing root with positive weight must have φ=0. Thus every surviving cancellation edge lies entirely in one tied block.

@@ -1,7 +1,5 @@
 # Radon zeros of protected descent roots are physical coordinate cycles — preserved pre-item development
 
-## Development
-
 ## Radon zeros of protected descent roots are physical coordinate cycles
 
 Work with the protected bridge setup in a minimum coordinate counterexample. For every noninert protected replacement bridge

@@ -1,7 +1,5 @@
 # Directed sector reduces to one-vertex tight-fork augmentation — preserved pre-item development
 
-## Development
-
 ## Directed sector: reduction to one-vertex tight-fork augmentation
 
 Let \(r\ge2\) be the arity of a translation-invariant coordinate label

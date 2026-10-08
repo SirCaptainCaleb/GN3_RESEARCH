@@ -1,7 +1,5 @@
 # Fully curved tetrahedra have a unique predecessor for every prescribed exit — preserved pre-item development
 
-## Development
-
 Let alpha be a pure alternating triangle orientation, and let Q={a,b,c,d} be fully curved: every pivot link on Q is a directed triangle. Fix an ordered pair (c,d) in Q and any exterior vertex v.
 
 Lemma: unique exit predecessor. Exactly one of the two vertices in Q minus {c,d}, denoted b, satisfies alpha(b,c,d)=alpha(c,d,v). Let a be the other. Then (a,b,c,d,v) has word (1-sigma,sigma,sigma), where sigma=alpha(c,d,v). Proof: in the pivot link at c, the vertex d has one outgoing and one incoming edge to the other two vertices. Thus their two alpha(b,c,d) values are opposite, and precisely one matches sigma. Full curvature of Q then forces alpha(a,b,c)=1-alpha(b,c,d). This proves both uniqueness and the stated word.

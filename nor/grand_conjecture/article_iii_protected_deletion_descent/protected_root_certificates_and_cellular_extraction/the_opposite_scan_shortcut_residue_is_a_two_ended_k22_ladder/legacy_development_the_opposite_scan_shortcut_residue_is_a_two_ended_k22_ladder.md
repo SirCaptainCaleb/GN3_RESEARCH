@@ -1,7 +1,5 @@
 # The opposite-scan shortcut residue is a two-ended K22 ladder — preserved pre-item development
 
-## Development
-
 ## The opposite-scan shortcut residue is a two-ended K22 ladder
 
 Continue from §§299–301. Let

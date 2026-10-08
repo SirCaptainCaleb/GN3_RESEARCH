@@ -1,7 +1,5 @@
 # Arithmetic-progression synchronized shifts are monochromatic — preserved pre-item development
 
-## Development
-
 Continue with a synchronized Hamiltonian endpoint cycle on k ambient coordinates:
 V={x_0,...,x_{k-1}},
 rho_i=e_{x_i}-e_{x_{i+1}},

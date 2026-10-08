@@ -1,7 +1,5 @@
 # After crossing the flip block the surviving defect becomes a monotone one-band — preserved pre-item development
 
-## Development
-
 ## After crossing the flip block the surviving defect becomes a monotone one-band
 
 Continue from subsection 58 in the branch h_{j-4}=1 and lambda=0. After deleting v_{j-2} and performing the three forced forward endpoint repairs, the local order has the form

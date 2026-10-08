@@ -1,7 +1,5 @@
 # Audit correction: rail disagreement alignment controls curvature — preserved pre-item development
 
-## Development
-
 
 The preceding subsection 322 contains an orientation mistake: alpha(x,w_i,z)=1-R_i, not R_i. The corrected local dichotomy is as follows.
 

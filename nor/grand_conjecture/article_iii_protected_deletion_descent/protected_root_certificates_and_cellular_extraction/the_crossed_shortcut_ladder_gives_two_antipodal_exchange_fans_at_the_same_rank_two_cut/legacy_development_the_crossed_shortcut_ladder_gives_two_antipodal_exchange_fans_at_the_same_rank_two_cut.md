@@ -1,7 +1,5 @@
 # The crossed shortcut ladder gives two antipodal exchange fans at the same rank-two cut — preserved pre-item development
 
-## Development
-
 ## The crossed shortcut ladder gives two antipodal exchange fans at the same rank-two cut
 
 Continue with the two-ended barrier ladder of §305:

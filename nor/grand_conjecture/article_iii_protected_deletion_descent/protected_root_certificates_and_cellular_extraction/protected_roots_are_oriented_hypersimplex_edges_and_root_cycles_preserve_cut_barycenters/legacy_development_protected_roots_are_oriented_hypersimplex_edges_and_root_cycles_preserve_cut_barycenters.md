@@ -1,7 +1,5 @@
 # Protected roots are oriented hypersimplex edges and root cycles preserve cut barycenters — preserved pre-item development
 
-## Development
-
 ## Protected roots are oriented hypersimplex edges and root cycles preserve cut barycenters
 
 Fix a normalized first-phase size p. For every p-cut C define its centered cut vector

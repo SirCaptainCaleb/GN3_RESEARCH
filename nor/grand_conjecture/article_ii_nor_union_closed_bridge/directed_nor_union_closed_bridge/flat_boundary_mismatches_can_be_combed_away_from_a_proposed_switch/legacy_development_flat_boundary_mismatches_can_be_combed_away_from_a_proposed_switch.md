@@ -1,7 +1,5 @@
 # Flat boundary mismatches can be combed away from a proposed switch — preserved pre-item development
 
-## Development
-
 
 Fix a one-change target word with cut k and polarity s in the coboundary-flat ternary sector. Suppose a current full order agrees with the target on a contiguous interval of window ranks containing the cut.
 

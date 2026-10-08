@@ -1,7 +1,5 @@
 # Global edge orders are obstructed by monochromatic tight cycles — preserved pre-item development
 
-## Development
-
 ## Global edge-order representation and monochromatic tight cycles
 
 Let h be a reversal-antisymmetric ternary coordinate coloring on V, and suppose each center tournament T_b is transitive. Equivalently, each center b supplies a strict total order on the unordered edges incident with b.

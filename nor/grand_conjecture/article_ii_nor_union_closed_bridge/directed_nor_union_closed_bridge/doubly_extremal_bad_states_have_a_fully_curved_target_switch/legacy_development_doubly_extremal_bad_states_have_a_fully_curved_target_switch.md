@@ -1,7 +1,5 @@
 # Doubly extremal bad states have a fully curved target switch — preserved pre-item development
 
-## Development
-
 ## Doubly extremal bad states have a fully-curved target switch
 
 Continue with the doubly extremal threshold state:

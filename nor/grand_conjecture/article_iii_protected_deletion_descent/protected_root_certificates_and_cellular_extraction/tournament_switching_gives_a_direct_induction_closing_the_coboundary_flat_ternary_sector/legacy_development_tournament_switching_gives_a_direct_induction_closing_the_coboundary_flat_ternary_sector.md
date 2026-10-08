@@ -1,7 +1,5 @@
 # Tournament switching gives a direct induction closing the coboundary-flat ternary sector — preserved pre-item development
 
-## Development
-
 ## Tournament switching gives a direct induction closing the coboundary-flat alternating ternary sector
 
 Work with a coboundary-flat alternating ternary orientation alpha on V.

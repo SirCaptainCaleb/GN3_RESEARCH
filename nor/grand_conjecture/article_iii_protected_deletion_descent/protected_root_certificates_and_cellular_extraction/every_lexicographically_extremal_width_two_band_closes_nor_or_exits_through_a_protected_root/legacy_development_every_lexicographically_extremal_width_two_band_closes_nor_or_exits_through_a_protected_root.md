@@ -1,7 +1,5 @@
 # Every lexicographically extremal width-two band closes NOR or exits through a protected root — preserved pre-item development
 
-## Development
-
 ## Every lexicographically extremal width-two band closes NOR or exits through a protected root
 
 Continue from the uniform strong-weave theorem §272.

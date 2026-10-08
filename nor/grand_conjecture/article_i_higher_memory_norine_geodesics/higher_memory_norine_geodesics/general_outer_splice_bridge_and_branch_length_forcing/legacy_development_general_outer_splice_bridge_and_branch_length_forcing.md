@@ -1,7 +1,5 @@
 # General outer-splice bridge and branch-length forcing — preserved pre-item development
 
-## Development
-
 ## General outer-splice bridge
 
 Fix coordinate arity r>=2. Let

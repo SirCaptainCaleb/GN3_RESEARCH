@@ -1,7 +1,5 @@
 # Audit: raw antipodal terminal-root separation is vacuous without an orientation slice — preserved pre-item development
 
-## Development
-
 The graded central-cut model for terminal barriers is valid, but its finite-separation branch needs one qualification.
 
 If the terminal-state family is closed under complement-reversal, then every state (C,rho) occurs together with (C^c,-rho). Hence the raw physical-root family automatically contains the positive two-term dependence

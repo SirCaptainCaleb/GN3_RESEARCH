@@ -1,7 +1,5 @@
 # Two-root protected Radon zeros localize to at most six active coordinates — preserved pre-item development
 
-## Development
-
 ## Two-root protected Radon zeros localize to the union of two four-coordinate witness packets
 
 Work in ternary arity. Consider one carrier cell indexed by an ordered partition, and suppose a positive two-term zero is supported by opposite actual window-slide roots

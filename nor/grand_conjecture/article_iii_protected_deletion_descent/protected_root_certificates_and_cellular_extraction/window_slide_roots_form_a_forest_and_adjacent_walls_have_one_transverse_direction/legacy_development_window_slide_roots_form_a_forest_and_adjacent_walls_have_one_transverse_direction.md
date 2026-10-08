@@ -1,7 +1,5 @@
 # Window-slide roots form a forest and adjacent walls have one transverse direction — preserved pre-item development
 
-## Development
-
 ## Window-slide roots form a forest, and an adjacent chamber wall has one transverse direction
 
 Let pi=(v_1,...,v_n) be an order of distinct coordinates and let r>=2 be the coordinate arity, with n>=r+1. Consecutive r-windows have dropped/entering-coordinate vectors

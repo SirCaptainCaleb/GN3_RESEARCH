@@ -1,7 +1,5 @@
 # Two-window final runs force rear residual polarization — preserved pre-item development
 
-## Development
-
 ## The two-window final run forces a rear residual polarization
 
 Work in the directed ternary sector, with

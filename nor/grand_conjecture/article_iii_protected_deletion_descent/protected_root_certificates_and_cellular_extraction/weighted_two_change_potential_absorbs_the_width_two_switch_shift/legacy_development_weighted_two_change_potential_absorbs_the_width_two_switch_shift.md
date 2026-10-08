@@ -1,7 +1,5 @@
 # Audit: 7A+4B undercounts the seven-coordinate weave — preserved pre-item development
 
-## Development
-
 ## Audit correction: the scalar 7A+4B undercounts the seven-coordinate weave
 
 The original development proposed Psi=7A+4B for a two-change word 0^A1^B0^C. Subsection §273 audits the seven-coordinate all-one weave and shows that this scalar is not monotone for every clean width-two surgery: the exact trade can be

@@ -1,7 +1,5 @@
 # Directed NOR as an antipodal cut problem on overlap words — preserved pre-item development
 
-## Development
-
 ## Directed NOR as an antipodal cut problem on the injective-word overlap graph
 
 Fix (n) and (rge2). Let (mathcal O_{n,r}) be the directed overlap graph whose vertices are injective ordered (r)-tuples

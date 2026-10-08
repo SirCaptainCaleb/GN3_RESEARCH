@@ -1,7 +1,5 @@
 # A single fully ported deletion path closes the whole shore without packet repair — preserved pre-item development
 
-## Development
-
 ## One-deletion Hamiltonian port implies unconditional spanning closure
 
 Fix the switching-normalized flat split B→z→A→x. Suppose a∈A and P is a fully ported monochromatic-zero Hamiltonian path on A\{a}: every consecutive ternary window of P has color zero and its first and last ordered pairs point forward in the fixed tournament (when defined).

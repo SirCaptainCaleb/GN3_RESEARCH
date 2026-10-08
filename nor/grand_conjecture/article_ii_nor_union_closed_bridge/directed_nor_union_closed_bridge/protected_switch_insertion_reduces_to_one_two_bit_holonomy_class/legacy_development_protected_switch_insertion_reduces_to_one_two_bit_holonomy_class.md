@@ -1,7 +1,5 @@
 # Protected switch insertion reduces to one two-bit holonomy class — preserved pre-item development
 
-## Development
-
 
 Work in a minimum coboundary-flat ternary counterexample with a deletion carrier
 

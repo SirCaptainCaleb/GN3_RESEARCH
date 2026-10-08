@@ -1,7 +1,5 @@
 # An immediate t=1 full-flat blocker after the antipodal exit closes — preserved pre-item development
 
-## Development
-
 
 Work in the residual right exit of the exact d=e=3 antipodal braid. Use the audited local order
 

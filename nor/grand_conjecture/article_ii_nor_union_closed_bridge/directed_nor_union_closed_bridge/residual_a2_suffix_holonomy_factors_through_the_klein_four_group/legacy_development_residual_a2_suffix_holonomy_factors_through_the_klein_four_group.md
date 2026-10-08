@@ -1,7 +1,5 @@
 # Residual A2 suffix holonomy factors through the Klein four group — preserved pre-item development
 
-## Development
-
 ## Residual A2 suffix holonomy factors through the Klein four group
 
 Continue the flat (A_2) replacement-cycle setup of the previous subsection. Let

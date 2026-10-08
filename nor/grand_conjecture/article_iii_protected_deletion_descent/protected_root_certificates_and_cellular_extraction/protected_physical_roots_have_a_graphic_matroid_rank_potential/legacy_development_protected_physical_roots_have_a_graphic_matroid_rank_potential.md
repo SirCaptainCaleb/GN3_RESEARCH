@@ -1,7 +1,5 @@
 # Protected physical roots have a graphic matroid rank potential — preserved pre-item development
 
-## Development
-
 ## Protected physical roots have a graphic-matroid rank potential
 
 Every protected descent certificate has type-A form

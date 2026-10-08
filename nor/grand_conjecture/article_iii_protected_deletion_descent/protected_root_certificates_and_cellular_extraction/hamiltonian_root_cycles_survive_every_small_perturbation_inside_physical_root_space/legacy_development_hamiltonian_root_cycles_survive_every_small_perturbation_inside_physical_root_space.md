@@ -1,7 +1,5 @@
 # Hamiltonian root cycles survive every small perturbation inside physical root space — preserved pre-item development
 
-## Development
-
 There is a structural limitation on every attempt to encode protected provenance by a small perturbation that remains in the physical type-A root space W.
 
 Let v_1,...,v_n be all physical coordinates and let

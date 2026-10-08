@@ -1,7 +1,5 @@
 # Audit: the claimed one-holonomy closure has an orientation-parity error — preserved pre-item development
 
-## Development
-
 ## Audit: subsection 127's claimed closing order has a parity error
 
 Subsection 127 claimed that in the normalized double-full singleton five-set with

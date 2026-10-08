@@ -1,7 +1,5 @@
 # Backward blockers are isolated-defect full-support witnesses — preserved pre-item development
 
-## Development
-
 ## Backward blockers are isolated-defect full-support witnesses
 
 Work in the ternary setting of the insertion-sliding lemma. Let (U) be a front circuit in (mathcal F_{	au,F}), fix (xin U), and let

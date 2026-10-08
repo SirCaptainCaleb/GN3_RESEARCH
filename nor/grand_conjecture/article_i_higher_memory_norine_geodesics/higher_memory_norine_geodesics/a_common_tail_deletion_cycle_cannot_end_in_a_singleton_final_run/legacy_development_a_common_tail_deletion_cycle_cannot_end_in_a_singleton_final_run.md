@@ -1,7 +1,5 @@
 # A common-tail deletion cycle cannot end in a singleton final run — preserved pre-item development
 
-## Development
-
 ## Singleton final run is impossible
 
 Work in the directed ternary sector. Suppose a reversal-antisymmetric coloring on the full ambient set V has no spanning one-change order.

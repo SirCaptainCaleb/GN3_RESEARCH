@@ -1,7 +1,5 @@
 # Side-moment perturbations rigorously exclude every proper-support simple root cycle — preserved pre-item development
 
-## Development
-
 ## Side-moment perturbations rigorously exclude every proper-support simple root cycle
 
 This repairs the proper-support part of the invalid irrational-separation argument in root §55. No rationality assumption on topological zero weights is used.

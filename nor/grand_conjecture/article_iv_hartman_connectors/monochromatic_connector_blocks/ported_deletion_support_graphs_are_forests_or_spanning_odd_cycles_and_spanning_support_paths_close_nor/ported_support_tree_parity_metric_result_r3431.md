@@ -1,7 +1,5 @@
 # Parity-path identity, bipartition sizes, and the complementary-support criterion
 
-## Development
-
 Statement:
 Let A be a finite nonempty shore, and let G have distinct vertex supports S⊆A and one edge e_a joining complementary subsets of A\{a} for each chosen deletion a (at most one edge per a). For any two support vertices S,T joined by a simple path of length ℓ with labels L⊆A: S△T=L if ℓ is even and S△T=A\L if ℓ is odd. If a component is a tree containing all |A| deletion edges, then for each vertex v, S(v)={a∈A:dist(v,e_a) odd}, and |S(v)| equals the number of vertices in v's tree-bipartition class minus one. In this tree, complementary support vertices exist exactly when the tree is an even-length spanning path, and those vertices are its endpoints. In particular, a branching spanning tree cannot close by merely selecting complementary support witnesses.
 

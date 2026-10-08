@@ -1,7 +1,5 @@
 # The residual endpoint type itself yields a four-shore-vertex monochromatic connector — preserved pre-item development
 
-## Development
-
 Let O=(a_1,...,a_k) be a NOR-good order of the minimum shore A in the switching-normalized split B -> z -> A -> x. Suppose its endpoint tournament-edge state is the reversal-stable residual type
 e_1=0, e_{k-1}=1,
 so a_2 -> a_1 and a_{k-1} -> a_k.

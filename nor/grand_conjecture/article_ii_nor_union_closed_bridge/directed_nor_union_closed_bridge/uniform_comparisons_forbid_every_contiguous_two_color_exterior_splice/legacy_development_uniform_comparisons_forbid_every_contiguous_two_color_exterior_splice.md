@@ -1,7 +1,5 @@
 # Uniform comparisons forbid every contiguous two-color exterior splice — preserved pre-item development
 
-## Development
-
 ## Uniform comparisons exclude every contiguous cycle-path splice
 
 Let C be a color-0 monochromatic tight cycle of length at least three, and let Q be an exterior spanning order whose ternary color word w has exactly one change, with both color runs nonempty. Suppose C and the support E of Q satisfy one of the two uniform-comparison configurations from the cycle-absorption theorem.

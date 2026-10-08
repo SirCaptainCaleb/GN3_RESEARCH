@@ -1,7 +1,5 @@
 # Maximal-path fronts contain minimal infeasible support circuits — preserved pre-item development
 
-## Development
-
 ## Minimal infeasible front circuits are the exact obstruction exposed by a maximal tight path
 
 Fix coordinate arity \(r\ge2\), a reversal-antisymmetric binary label \(h\), and a color \(\sigma\). Let

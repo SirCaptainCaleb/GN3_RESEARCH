@@ -1,7 +1,5 @@
 # Every pinned endpoint junction yields a shorter positive protected-root cycle — preserved pre-item development
 
-## Development
-
 ## Every pinned endpoint junction yields a shorter positive protected-root cycle
 
 Assume the witness-preserving endpoint CORNER-LIFT property of Subsection 93.

@@ -1,7 +1,5 @@
 # Audit correction: top-cell reversal does not automatically give same-cell complementarity — preserved pre-item development
 
-## Development
-
 ## Audit correction: top-cell reversal alone does not give same-product-cell complementarity
 
 The previous development overstated the consequence of the top permutahedron localization.

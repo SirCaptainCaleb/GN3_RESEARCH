@@ -1,7 +1,5 @@
 # Audit: endpoint relocation does not enlarge the width-two compatible band — preserved pre-item development
 
-## Development
-
 ## Audit correction
 
 The endpoint-relocation argument in the previous development does NOT prove that a width-two full-full corridor is impossible.

@@ -1,7 +1,5 @@
 # Double-full singleton traps admit one-sided compatible monochromatic resolutions — preserved pre-item development
 
-## Development
-
 ## The double-full singleton gadget always has a one-sided tau-compatible resolution
 
 Continue the five-vertex setup of the previous subsection. Let

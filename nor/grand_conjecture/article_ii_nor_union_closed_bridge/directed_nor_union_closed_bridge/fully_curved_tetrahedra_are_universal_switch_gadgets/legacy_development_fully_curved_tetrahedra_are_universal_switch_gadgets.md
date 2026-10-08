@@ -1,7 +1,5 @@
 # Fully curved tetrahedra are universal switch gadgets — preserved pre-item development
 
-## Development
-
 ## Fully curved tetrahedra are universal switch gadgets
 
 Let (Q={a,b,c,d}) be a four-set in a pure alternating triangle orientation (alpha). Recall that (Q) is **fully curved** when, for every pivot (xin Q), the link tournament (G_x) on (Qsetminus{x}) is a directed triangle.

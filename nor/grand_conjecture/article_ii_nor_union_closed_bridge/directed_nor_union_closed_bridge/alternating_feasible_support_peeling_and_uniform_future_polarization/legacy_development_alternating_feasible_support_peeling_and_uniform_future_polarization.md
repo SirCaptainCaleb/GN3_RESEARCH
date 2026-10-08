@@ -1,7 +1,5 @@
 # Alternating feasible-support peeling and uniform future polarization — preserved pre-item development
 
-## Development
-
 ## Alternating feasible-support peeling and uniform future polarization
 
 Work in arbitrary coordinate arity (rge2). Let (P) be an inclusion-maximal (sigma)-tight path in a directed NOR counterexample, let (F_0) be its exposed first ordered ((r-1))-state, and let

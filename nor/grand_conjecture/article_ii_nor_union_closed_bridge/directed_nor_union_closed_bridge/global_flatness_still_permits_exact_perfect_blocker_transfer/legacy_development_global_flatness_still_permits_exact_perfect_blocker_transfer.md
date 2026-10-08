@@ -1,7 +1,5 @@
 # Global flatness still permits exact perfect-blocker transfer — preserved pre-item development
 
-## Development
-
 
 The codimension-two insertion strategy does not close merely from global coboundary flatness.
 

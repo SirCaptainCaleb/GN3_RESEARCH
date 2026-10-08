@@ -1,7 +1,5 @@
 # The holonomy flip is a bidirectional two-color switch gadget — preserved pre-item development
 
-## Development
-
 ## The holonomy flip is a bidirectional two-color switch gadget
 
 Continue with the special perfect-blocker holonomy-flip interface on the six physical coordinates {x,a,b,c,d,e}.

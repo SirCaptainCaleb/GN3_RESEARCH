@@ -1,7 +1,5 @@
 # Pure-sign jumps in a fixed insertion fiber localize to a protected 2r-coordinate packet — preserved pre-item development
 
-## Development
-
 
 Continue the fixed insertion-fiber dichotomy. Let h have ordered-tuple arity r, let O be a fixed one-change deletion order with omitted coordinate x, and let F_j,F_{j+1} be adjacent insertion states obtained by swapping x across one old coordinate.
 

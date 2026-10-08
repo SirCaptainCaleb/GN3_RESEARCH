@@ -1,7 +1,5 @@
 # Ternary insertion packets and nonunique blocking scans — preserved pre-item development
 
-## Development
-
 Sources: Article II §117 and the audit 'Insertion blocking does not force the special blocker scan'. This consolidates the valid insertion calculation and a parametric obstruction.
 
 Let alpha be alternating: cyclic rotations preserve its value, and odd permutations complement it. Let O=(v_1,...,v_m) have word 0^p1^q and let s_i=alpha(x,v_i,v_{i+1}). Inserting x after v_i replaces the relevant old windows by

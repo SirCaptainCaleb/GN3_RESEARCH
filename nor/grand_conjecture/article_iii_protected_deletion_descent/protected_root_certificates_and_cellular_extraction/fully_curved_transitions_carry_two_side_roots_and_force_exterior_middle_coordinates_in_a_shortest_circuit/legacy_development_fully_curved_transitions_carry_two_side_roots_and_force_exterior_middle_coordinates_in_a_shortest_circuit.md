@@ -1,7 +1,5 @@
 # Fully-curved transitions carry two side roots and force exterior middle coordinates in a shortest circuit — preserved pre-item development
 
-## Development
-
 ## A fully-curved transition has two fully-curved side roots
 
 Let a full coordinate order contain four consecutive coordinates

@@ -1,7 +1,5 @@
 # Homogeneous-module expansion of compatible zero connectors
 
-## Development
-
 Statement:
 Let T be a shore tournament, M⊆V(T) a nonempty homogeneous module, and Q=T/M its tournament quotient, with module vertex m. Extend both tournaments by the special vertices z (source) and x (sink) in the flat switching representative. Suppose P=(p_1,…,p_s) orders M, has α=0 on each consecutive triple, and has p_1→p_2 and p_{s−1}→p_s whenever the respective edges exist. If C is a compatible zero connector in Q∪{x,z}, then replacing its unique occurrence of m by the entire block P produces a compatible zero connector in T∪{x,z}. The same block substitution preserves a cover by at most two fully ported shore-zero paths. Consequently, a smallest-order tournament without such a connector has no proper nontrivial homogeneous module that has a fully ported zero Hamiltonian path; especially no homogeneous pair and no transitive module.
 

@@ -1,7 +1,5 @@
 # Pivot Hamilton paths close locally transitive labels with no off-pivot defects — preserved pre-item development
 
-## Development
-
 Work in ternary coordinate arity, with reversal-odd h. For a pivot o define a directed graph G_o on V minus {o}: put a->b precisely when h(o,a,b)=h(a,b,o)=0. Reversal shows that both directions cannot occur. In the triangle-orientation/defect decomposition, a pair {a,b} has a directed edge in G_o if and only if the triangle {o,a,b} is coherent or its defect vertex is o. If the defect is a or b, the pair is absent.
 
 Pivot-path lemma. Suppose G_o has a directed Hamilton path (u1,...,um), and for each consecutive triple ui,ui+1,ui+2 the center tournament at ui+1 has no directed triangle on {ui,o,ui+2}. Then (o,u1,...,um) is a monochromatic spanning order of color 0. Indeed, the path edges give h(ui,ui+1,o)=0 and h(o,ui+1,ui+2)=0. These are ui->o->ui+2 at center ui+1. The absence of the closing directed triangle forces h(ui,ui+1,ui+2)=0. The first window has color 0 by the first path edge. Orders on fewer than three vertices are vacuous.

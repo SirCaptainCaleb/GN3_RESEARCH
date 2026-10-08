@@ -1,7 +1,5 @@
 # Hamiltonian root circuits are removable by a three-step chord — preserved pre-item development
 
-## Development
-
 ## Hamiltonian root circuits are removable by a three-step chord
 
 Work in the pure alternating ternary sector and a minimum-coordinate counterexample.

@@ -1,7 +1,5 @@
 # The degenerate theta endpoint still has a successful surviving bypass — preserved pre-item development
 
-## Development
-
 ## The degenerate theta endpoint still has a successful surviving bypass
 
 This repairs the endpoint gap identified in root §198.

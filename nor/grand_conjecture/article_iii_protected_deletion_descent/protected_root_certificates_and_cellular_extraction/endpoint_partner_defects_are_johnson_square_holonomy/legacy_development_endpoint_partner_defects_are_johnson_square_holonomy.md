@@ -1,7 +1,5 @@
 # Endpoint partner defects are Johnson square holonomy — preserved pre-item development
 
-## Development
-
 Consider the endpoint-induced rank-two protected cycle
 rho_i=e_{x_i}-e_{x_{i+1}},
 C_i={x_i,a_i},

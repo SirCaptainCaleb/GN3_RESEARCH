@@ -1,7 +1,5 @@
 # Square-path insertion is exactly a two-by-two orientation transition — preserved pre-item development
 
-## Development
-
 
 Let C=(c_1,...,c_m) be a compatible monochromatic zero connector. Pass to its path-normalized switching representative, so every distance-one and distance-two edge of C points forward.
 

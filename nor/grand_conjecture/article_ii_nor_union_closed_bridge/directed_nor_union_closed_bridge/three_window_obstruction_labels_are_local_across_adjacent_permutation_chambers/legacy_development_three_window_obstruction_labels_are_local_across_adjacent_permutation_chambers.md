@@ -1,7 +1,5 @@
 # Three-window obstruction labels are local across adjacent permutation chambers — preserved pre-item development
 
-## Development
-
 
 Fix coordinate arity r and a permutation pi. Let epsilon_i be the sign of the ordered r-window beginning at position i.
 

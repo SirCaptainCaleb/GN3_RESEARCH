@@ -1,7 +1,5 @@
 # Whole-front circuits force rear circuit descent or bipolarity — preserved pre-item development
 
-## Development
-
 ## Whole-front circuits force rear circuit descent or bipolarity
 
 Work in ternary arity. Let

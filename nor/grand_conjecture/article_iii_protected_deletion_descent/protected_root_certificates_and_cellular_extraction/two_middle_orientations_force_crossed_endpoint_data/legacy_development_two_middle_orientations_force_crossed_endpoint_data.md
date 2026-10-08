@@ -1,7 +1,5 @@
 # Two middle orientations force crossed endpoint data — preserved pre-item development
 
-## Development
-
 ## Two orientations of the middle force crossed endpoint data
 
 Fix distinct x,z and a NOR-good order O=(w_1,...,w_m) of V minus {x,z}, with internal word 0^p1^q.

@@ -1,7 +1,5 @@
 # Every fixed insertion state has a protected ten descent — preserved pre-item development
 
-## Development
-
 ## Every fixed insertion state has a protected ten-descent
 
 Let (h) be any reversal-odd binary label on ordered (r)-tuples. Let

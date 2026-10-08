@@ -1,7 +1,5 @@
 # Audit: pinned Hamiltonian endpoint boundaries always give an immediate chord — preserved pre-item development
 
-## Development
-
 ## Audit and simplification: a pinned boundary in a Hamiltonian endpoint cycle always gives an immediate chord
 
 Subsection 121 has the correct strategic conclusion but its stopped-pivot case conflates two bits.

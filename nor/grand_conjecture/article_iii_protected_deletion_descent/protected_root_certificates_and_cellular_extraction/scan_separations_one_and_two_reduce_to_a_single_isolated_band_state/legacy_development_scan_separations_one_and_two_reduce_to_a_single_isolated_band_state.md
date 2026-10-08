@@ -1,7 +1,5 @@
 # Scan separations one and two reduce to a single isolated-band state — preserved pre-item development
 
-## Development
-
 ## Scan separations one and two reduce to a single isolated-band state
 
 Continue with two exterior coordinates x,y which both block all insertions into one long-phase carrier

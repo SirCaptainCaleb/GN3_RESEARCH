@@ -1,7 +1,5 @@
 # Quadratic switch distance also terminates neighbor-replacement equality transport — preserved pre-item development
 
-## Development
-
 Extend the quadratic distance potential of root 86 to the neighbor-replacement equality events from root 81.
 
 Fix a switch cut k and let E be threshold defect count. For each defective window rank r let d_k(r) be its nonnegative distance from the switch, and put Q_k=sum d_k(r)^2.

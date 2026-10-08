@@ -1,7 +1,5 @@
 # Tangent-cone closure of a Johnson edge is discrete successor realization — preserved pre-item development
 
-## Development
-
 ## Tangent-cone closure of a Johnson edge is discrete successor realization
 
 Let R be a nonempty finite family of p-subsets of V, with 0<p<|V|, and put

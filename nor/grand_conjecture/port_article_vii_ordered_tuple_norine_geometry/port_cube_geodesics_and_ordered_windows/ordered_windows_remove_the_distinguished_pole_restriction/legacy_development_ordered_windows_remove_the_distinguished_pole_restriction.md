@@ -1,7 +1,5 @@
 # Ordered windows remove the distinguished-pole restriction — preserved pre-item development
 
-## Development
-
 
 Let an ordered \(r\)-window coloring depend on the ordered cube vertices
 \[

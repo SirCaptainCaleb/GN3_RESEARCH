@@ -1,7 +1,5 @@
 # Singleton traps orient non full repairs in a four change cycle — preserved pre-item development
 
-## Development
-
 ## Singleton traps orient non-full repairs in a four-change cycle
 
 Let (C) be a minimum-variation cyclic order in a pure alternating ternary counterexample, with

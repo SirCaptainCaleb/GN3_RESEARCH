@@ -1,7 +1,5 @@
 # Two-hole cage around a near-spanning ternary tight path — preserved pre-item development
 
-## Development
-
 ## Two-hole cage around a near-spanning tight path
 
 Work in the directed ternary sector, with h(c,b,a)=1-h(a,b,c). Assume h is a counterexample on V. Let P=(v_1,...,v_m), m=|V|-2, be a color-sigma tight path, and let the omitted vertices be x,y.

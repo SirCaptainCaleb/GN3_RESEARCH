@@ -1,7 +1,5 @@
 # The consecutive-change defect gives a symmetric Sperner carrier with one-band labels — preserved pre-item development
 
-## Development
-
 ## The consecutive-change defect gives a symmetric Sperner carrier with one-band labels
 
 The all-pairs defect repairs the proper-face orientation issue, but its individual macro roots may span many intervening changes. There is a sharper variant.

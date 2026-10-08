@@ -1,7 +1,5 @@
 # The rigid width-two residue has a right-preserving one-change weave — preserved pre-item development
 
-## Development
-
 ## A one-sided splice for the rigid width-two six-set
 
 Continue from the rigid terminal width-two table on coordinates {0,1,2,3,4,5}. In increasing orientation the needed values include

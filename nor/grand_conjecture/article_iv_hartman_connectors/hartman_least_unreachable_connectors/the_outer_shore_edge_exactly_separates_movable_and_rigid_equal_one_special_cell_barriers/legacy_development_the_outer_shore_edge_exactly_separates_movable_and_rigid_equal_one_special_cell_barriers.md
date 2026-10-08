@@ -1,7 +1,5 @@
 # The outer shore edge exactly separates movable and rigid equal-one special-cell barriers — preserved pre-item development
 
-## Development
-
 Combine the audited special-vertex rotation law with one-sided packet surgery.
 
 Let (p,a,x,b,c) be a monochromatic-zero five-coordinate packet with p,a,b,c in the shore. Zero labels give p→a, b→a, b→c. Assume both central rotations are blocked, so u=t(p,b)=t(a,c)=v.

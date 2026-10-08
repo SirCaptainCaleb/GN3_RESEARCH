@@ -1,7 +1,5 @@
 # Pure size three front circuits force the same pair cycle at the rear pivot — preserved pre-item development
 
-## Development
-
 ## Pure size-three front circuits force the same pair cycle at the rear pivot
 
 Work in the pure alternating sector (h=alpha). Let

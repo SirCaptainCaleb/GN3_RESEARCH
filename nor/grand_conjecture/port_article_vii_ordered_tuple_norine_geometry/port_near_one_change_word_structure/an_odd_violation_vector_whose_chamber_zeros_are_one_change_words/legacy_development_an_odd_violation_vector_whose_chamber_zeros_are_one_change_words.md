@@ -1,7 +1,5 @@
 # An odd violation vector whose chamber zeros are one-change words — preserved pre-item development
 
-## Development
-
 
 A useful construction survived in the GN3 brainstorm archive.
 

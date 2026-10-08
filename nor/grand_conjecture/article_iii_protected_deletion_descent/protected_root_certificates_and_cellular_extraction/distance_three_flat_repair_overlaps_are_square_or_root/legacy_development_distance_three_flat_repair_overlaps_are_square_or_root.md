@@ -1,7 +1,5 @@
 # Distance-three flat repair overlaps are square-or-root — preserved pre-item development
 
-## Development
-
 ## Distance-three flat repair overlaps are square-or-root
 
 Work in the coboundary-flat alternating ternary sector on five consecutive coordinates

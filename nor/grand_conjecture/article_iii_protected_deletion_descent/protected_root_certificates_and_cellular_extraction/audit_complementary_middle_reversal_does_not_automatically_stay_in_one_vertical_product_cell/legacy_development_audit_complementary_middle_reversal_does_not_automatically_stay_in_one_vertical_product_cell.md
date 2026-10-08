@@ -1,7 +1,5 @@
 # Audit: complementary middle reversal does not automatically stay in one vertical product cell — preserved pre-item development
 
-## Development
-
 ## Audit of the top-cell complementary-middle claim
 
 The reversal calculation behind the top-cell complementary-middle lemma is correct, but its same-product-cell conclusion needs a vertical-locality hypothesis.

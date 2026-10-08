@@ -1,7 +1,5 @@
 # Every ternary transition carrier has a realized disjoint companion root — preserved pre-item development
 
-## Development
-
 ## Audit correction: every ternary transition root has a realized disjoint companion relation
 
 Work in the coboundary-flat alternating ternary sector.

@@ -1,7 +1,5 @@
 # Complementary Tucker paths can avoid global endpoint loss outside the solved A2 case — preserved pre-item development
 
-## Development
-
 ## Complementary Tucker paths can avoid global endpoint loss outside the solved A2 case
 
 Work in one product cell of the switch-prism / permutahedral refinement carrying complementary signed-middle labels +b and -b.

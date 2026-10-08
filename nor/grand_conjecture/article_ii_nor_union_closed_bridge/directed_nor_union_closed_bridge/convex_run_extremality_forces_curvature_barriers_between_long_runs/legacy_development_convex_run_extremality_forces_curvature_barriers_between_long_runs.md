@@ -1,7 +1,5 @@
 # Convex run extremality forces curvature barriers between long runs — preserved pre-item development
 
-## Development
-
 ## Convex run extremality forces curvature barriers between long runs
 
 Work in the coboundary-flat pure-orientation sector. Let C be a cyclic full-support order of minimum positive variation in a counterexample, so q(C)=4. Among all four-change cyclic orders, choose C maximizing

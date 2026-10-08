@@ -1,7 +1,5 @@
 # The canonical endpoint repair creates a double-full singleton packet — preserved pre-item development
 
-## Development
-
 
 Continue with the canonical minimum-counterexample cyclic carrier
 

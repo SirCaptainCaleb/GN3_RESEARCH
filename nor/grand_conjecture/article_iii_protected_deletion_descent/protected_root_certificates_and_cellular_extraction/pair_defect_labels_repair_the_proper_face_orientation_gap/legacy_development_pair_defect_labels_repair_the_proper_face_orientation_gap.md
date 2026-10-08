@@ -1,7 +1,5 @@
 # Pair-defect labels repair the proper-face orientation gap — preserved pre-item development
 
-## Development
-
 ## Pair-defect labels repair the proper-face orientation gap
 
 Root §150 correctly audits the actual-10-root boundary argument: minimum counterexamplehood does not let one orient every proper block as 0^*1^*. The older canonical pair-defect D repairs exactly this issue because it vanishes on BOTH directions of one-change word.

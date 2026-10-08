@@ -1,7 +1,5 @@
 # Corrected Hamilton chord identities for status curvature and five-set holonomy — preserved pre-item development
 
-## Development
-
 Work in the coboundary-flat alternating ternary sector with the convention
 alpha(a,b,c)=1 xor t(a,b) xor t(b,c) xor t(c,a),
 t(v,u)=1 xor t(u,v).

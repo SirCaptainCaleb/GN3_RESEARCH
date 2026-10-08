@@ -1,7 +1,5 @@
 # A stopped endpoint pivot either ejects a farther root or enters flat transport — preserved pre-item development
 
-## Development
-
 Continue with the arbitrary endpoint witness
 O=(a,b,c,d,...)
 omitting x, with word beginning 0,0,... and fully-curved endpoint tetrahedron (x,a,b,c). Thus

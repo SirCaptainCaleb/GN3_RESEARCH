@@ -1,7 +1,5 @@
 # A zero-distance descent at the switch is always a direct compatible repair event — preserved pre-item development
 
-## Development
-
 ## A zero-distance descent at the switch is always a direct compatible repair event
 
 Work in the coboundary-flat alternating ternary sector with a proposed switch cut whose target colors are

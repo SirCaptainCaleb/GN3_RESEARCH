@@ -1,7 +1,5 @@
 # The residual full-flat holonomy packet has two protected one-sided exits — preserved pre-item development
 
-## Development
-
 ## The residual full-flat holonomy packet has two protected one-sided exits
 
 Normalize the five consecutive coordinates as

@@ -1,7 +1,5 @@
 # Three-block singleton faces reduce shortcut realization to two one-sided cases — preserved pre-item development
 
-## Development
-
 ## Three-block singleton faces reduce shortcut realization to two one-sided cases
 
 Assume a minimum counterexample. Fix distinct coordinates (x,z) and put

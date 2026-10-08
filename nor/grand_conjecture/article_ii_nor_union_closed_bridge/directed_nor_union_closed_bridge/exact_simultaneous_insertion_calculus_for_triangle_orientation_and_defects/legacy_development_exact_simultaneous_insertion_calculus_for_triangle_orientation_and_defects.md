@@ -1,7 +1,5 @@
 # Exact simultaneous insertion calculus for triangle orientation and defects — preserved pre-item development
 
-## Development
-
 ## Exact simultaneous insertion calculus for triangle orientation and defects
 
 Use the ternary decomposition

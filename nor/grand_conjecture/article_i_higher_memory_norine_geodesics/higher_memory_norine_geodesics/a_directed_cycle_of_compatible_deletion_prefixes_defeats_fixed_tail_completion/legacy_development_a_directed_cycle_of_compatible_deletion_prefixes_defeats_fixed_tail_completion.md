@@ -1,7 +1,5 @@
 # A directed cycle of compatible deletion prefixes defeats fixed-tail completion — preserved pre-item development
 
-## Development
-
 ## A common tail can support every residual deletion but no full prefix
 
 Work at coordinate arity r=3, the directed translation-invariant sector of N_4. The following family tests the attempt in §38 to obtain a spanning order from good deletion orders sharing a tail.

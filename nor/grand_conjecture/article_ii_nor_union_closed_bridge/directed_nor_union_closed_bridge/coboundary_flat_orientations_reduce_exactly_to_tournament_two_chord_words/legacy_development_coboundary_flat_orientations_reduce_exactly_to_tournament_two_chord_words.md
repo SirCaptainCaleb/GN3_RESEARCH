@@ -1,7 +1,5 @@
 # Coboundary flat orientations reduce exactly to tournament two chord words — preserved pre-item development
 
-## Development
-
 ## Coboundary-flat orientations reduce exactly to tournament two-chord words
 
 Fix a global linear order on (V), and encode the alternating triangle orientation by unordered face bits

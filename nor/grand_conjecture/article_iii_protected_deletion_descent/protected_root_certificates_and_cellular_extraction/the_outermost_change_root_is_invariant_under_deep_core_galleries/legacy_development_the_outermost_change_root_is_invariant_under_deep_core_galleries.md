@@ -1,7 +1,5 @@
 # The outermost-change root is invariant under deep-core galleries — preserved pre-item development
 
-## Development
-
 ## The outermost-change root is invariant under deep-core galleries
 
 Let

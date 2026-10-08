@@ -1,7 +1,5 @@
 # The double-full singleton holonomy is exactly the distance-four chord — preserved pre-item development
 
-## Development
-
 
 Work in the coboundary-flat ternary sector and normalize a coordinate order so every adjacent tournament edge points forward. Then consecutive ternary statuses are the distance-two chord bits.
 

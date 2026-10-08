@@ -1,7 +1,5 @@
 # Every outermost root has a nine-change representative with both extreme collars fixed — preserved pre-item development
 
-## Development
-
 ## Every outermost root has a nine-change representative with both extreme collars fixed
 
 Let

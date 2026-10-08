@@ -1,7 +1,5 @@
 # Audit the even cycle Z2 repair charge is identically zero — preserved pre-item development
 
-## Development
-
 ## Audit: the even-cycle Z2 repair charge is identically zero
 
 This audits the proposed invariant I=J2 xor P from subsection 134.

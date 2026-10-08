@@ -1,7 +1,5 @@
 # Same-ground-set union closure erases a minimal NOR obstruction — preserved pre-item development
 
-## Development
-
 
 ## Same-ground-set union closure erases a minimal NOR obstruction
 

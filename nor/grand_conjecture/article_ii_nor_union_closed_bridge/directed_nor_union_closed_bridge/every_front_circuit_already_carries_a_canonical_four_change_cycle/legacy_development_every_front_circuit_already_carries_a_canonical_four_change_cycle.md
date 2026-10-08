@@ -1,7 +1,5 @@
 # Every front circuit already carries a canonical four-change cycle — preserved pre-item development
 
-## Development
-
 ## Every front circuit already carries a canonical four-change cycle
 
 Work in ternary arity in a directed NOR counterexample. Let

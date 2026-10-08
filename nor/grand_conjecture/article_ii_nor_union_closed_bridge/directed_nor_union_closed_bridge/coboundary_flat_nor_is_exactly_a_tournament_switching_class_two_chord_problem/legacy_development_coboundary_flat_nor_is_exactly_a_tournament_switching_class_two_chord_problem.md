@@ -1,7 +1,5 @@
 # Coboundary-flat NOR is exactly a tournament switching-class two-chord problem — preserved pre-item development
 
-## Development
-
 Exact switching-class formulation of the coboundary-flat pure-orientation sector. Let alpha be represented by a tournament bit t through alpha(a,b,c)=1 xor t(a,b) xor t(b,c) xor t(c,a), with the convention adjusted consistently with the existing edge-potential subsection. Vertex switching at a subset S toggles every tournament edge with exactly one endpoint in S. This preserves the parity of the three edge bits on every triangle, hence preserves alpha.
 
 Fix any coordinate order O=(v_1,...,v_n). Let e_i=t(v_i,v_{i+1}). Choose switching bits s(v_1)=0 and recursively s(v_{i+1})=s(v_i) xor e_i (up to the fixed orientation convention). In the switched tournament T^s every adjacent edge v_i v_{i+1} is oriented forward along O. Therefore O is a directed Hamilton path of T^s. Since alpha is switching-invariant, along O the ternary status reduces exactly to the distance-two shortcut bit in T^s. Conversely, any directed Hamilton path in any switched representative produces the same alpha word by the same formula.

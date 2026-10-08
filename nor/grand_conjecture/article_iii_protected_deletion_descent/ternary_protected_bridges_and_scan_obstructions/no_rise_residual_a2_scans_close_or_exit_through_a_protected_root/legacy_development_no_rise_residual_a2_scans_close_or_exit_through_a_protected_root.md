@@ -1,7 +1,5 @@
 # No-rise residual A2 scans close or exit through a protected root — preserved pre-item development
 
-## Development
-
 ## A no-rise residual A2 scan closes or exits through a protected root
 
 Continue in the recurrent flat A2 replacement configuration and fix one residual coordinate u.

@@ -1,7 +1,5 @@
 # The explicit p equals 2 boundary scan closes through the size three curvature tube — preserved pre-item development
 
-## Development
-
 ## The explicit p=2 boundary scan closes through the size-three curvature tube
 
 Continue the coboundary-flat alternating ternary sector. Suppose a blocked one-change deletion carrier has

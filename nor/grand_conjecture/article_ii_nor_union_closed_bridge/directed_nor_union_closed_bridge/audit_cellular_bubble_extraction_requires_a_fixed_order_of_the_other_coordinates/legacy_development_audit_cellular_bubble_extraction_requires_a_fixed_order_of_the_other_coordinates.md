@@ -1,7 +1,5 @@
 # Audit cellular bubble extraction requires a fixed order of the other coordinates — preserved pre-item development
 
-## Development
-
 This audits the extraction step in §§143,150,154 while preserving the cellular degree obstruction of §§141,150,168 and the local repair identities of §§118,144,156,161.
 
 The missing premise. A path connecting arbitrary permutations pi and sigma cannot in general move only b while keeping the relative order of all other coordinates fixed. Removing b from every vertex on such a path gives the SAME order. Thus such a path exists only if pi without b equals sigma without b. Membership in one permutohedron face does not impose that condition. Even a single block face contains vertices with arbitrary different relative orders of its other coordinates.

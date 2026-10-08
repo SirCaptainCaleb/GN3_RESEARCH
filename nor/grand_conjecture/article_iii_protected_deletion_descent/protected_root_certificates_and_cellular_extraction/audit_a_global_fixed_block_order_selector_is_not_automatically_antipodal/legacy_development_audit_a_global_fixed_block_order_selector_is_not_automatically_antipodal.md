@@ -1,7 +1,5 @@
 # Audit: a global fixed block-order selector is not automatically antipodal — preserved pre-item development
 
-## Development
-
 ## Audit: a global fixed block-order selector is not automatically antipodal
 
 Roots §§163-167 introduce a useful block-local selector: fix one NOR-good order g(S) for every proper subset S and label an ordered-partition face

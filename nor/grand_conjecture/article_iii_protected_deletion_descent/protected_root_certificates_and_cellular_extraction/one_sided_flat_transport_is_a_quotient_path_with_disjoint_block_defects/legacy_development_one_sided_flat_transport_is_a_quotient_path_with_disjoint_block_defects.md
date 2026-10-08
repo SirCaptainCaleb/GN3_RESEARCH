@@ -1,7 +1,5 @@
 # One-sided flat transport is a quotient path with disjoint block defects — preserved pre-item development
 
-## Development
-
 ## One-sided flat transport is a quotient path with disjoint block defects
 
 Work in the alternating ternary sector along one audited rightward flat-transport trajectory. Let

@@ -1,7 +1,5 @@
 # Minimum full-order variation is exactly two in every coordinate arity — preserved pre-item development
 
-## Development
-
 ## Minimum full-order variation is exactly two in every coordinate arity
 
 Let h be a reversal-odd binary label on ordered r-tuples of distinct coordinates, r>=2. A good coordinate order is one whose consecutive r-window word has at most one change. Let V be an inclusion-minimal counterexample.
