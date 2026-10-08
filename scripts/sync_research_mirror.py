@@ -390,6 +390,16 @@ Shows the dependency manifest for a manuscript node.
 ### changes(since_revision := 0, until_revision := null, limit := 100)
 Returns live events and current composition state since a revision.
 
+## Mathematical consumption (independent of containment and composition)
+
+The child is authoritative: Sections, Subsections, Items and Results each store `consumed_by: [parent_ids]`. One child may have multiple consumers. Parent Articles, Sections, Subsections, and Items cache the corresponding `consumes: [child_ids]`; changes update that cache transactionally. None of these links requires an existing composition.
+
+### set_consumed_by(session_id, child_type, child_id, consumer_ids)
+Replaces all consumers of one child, automatically refreshing the affected parents' `consumes` caches.
+
+### set_consumes(session_id, parent_type, parent_id, child_ids)
+Atomically replaces one parent's consumed children by updating the children's authoritative `consumed_by` lists. Omitted children lose *only that parent*, keeping their other consumers. Omit the `consumes` key on a parent creation/edit to leave relationships unchanged; explicitly pass an empty array to clear them. Creation RPCs for Articles, Sections, Subsections, and Items accept `payload.consumes`.
+
 ## Development
 
 ### new_subsection(session_id, section_id, payload, expected_section_version)
