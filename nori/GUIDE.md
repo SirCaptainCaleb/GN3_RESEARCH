@@ -2,86 +2,44 @@
 
 ## Working principle
 
-**Publish cheaply downward; compress deliberately upward.**
+**Develop freely in atomic Items; publish selectively upward.**
 
-Use Brainstorms for loose ideation, Items for local mathematical development (including audits, strategic notes, techniques, and findings), Subsections for groups of Items, Sections for coherent research regions, Articles for top-level routes, and Toolkit for reusable mathematics that naturally crosses routes.
+Use Brainstorms for loose ideation, Items for individual research contributions, Subsections for local mathematical development, Sections for coherent regions, Articles for principal arguments, and Toolkit for reusable mathematics across routes.
 
 ## Session lifecycle
 
-Use boot() once at conversational-worker startup. Keep the returned session_id and reuse it for every later write in that conversation. Use status() for current project state and changes(...) for incremental updates.
+Call boot() once per conversational worker. Reuse its session_id for subsequent writes. Use status() for project state, changes(...) for updates since the artifact snapshot, and read(...) for exact live content.
 
-## Development and composition
+## Atomic Items and compositions
 
-Items are atomic research contributions directly under Subsections. Each Item independently records one theorem, proof, audit addendum, note, technique, question, clarification, code contribution, or other research contribution, with its own kind, body, status, version, and dependencies. Items contain no child research nodes and have no compositions. Subsections, Sections, and Articles organize direct children and may expose compositions. Historical Subsection development is retained as legacy-development Items.
+Each Item belongs directly to a Subsection and is an atomic contribution: for example, a theorem, proof, audit addendum, technique, relationship, question, clarification, or shared code. Give it a descriptive kind, title, body, and appropriate mathematical statement, proof, status, and references. Items have versions and may consume other Items, but contain no child research nodes and have no compositions. The retired Result node type is not used; the ordinary mathematical word “result” remains appropriate.
 
-Treat each composition as a deliberately lossy compression of the material below it.
+Only Subsections, Sections, and Articles have compositions. A missing composition is valid: never invent prose to fill it. Compose when selected child material supports a coherent mathematical exposition, not merely because new Items exist. Update an Item when its mathematics changes and recompose higher levels when the best argument warrants it.
 
-Create atomic Items freely in the relevant Subsection. Give mathematical Items precise statements, evidence, proofs, and status in the Item itself; use other Item kinds for audits, techniques, questions, clarifications, and code. Compose the parent Subsection, Section, and Article when the material supports coherent mathematical synthesis. Never compose Items.
+## Publication standard and selective synthesis
 
-## Composition eligibility and publication standard
+A composition is nearly publication-ready mathematical prose, not a digest, inventory, chronology, or progress report. Integrate the strongest relevant child mathematics into a coherent argument with explicit hypotheses, definitions, statements, proofs, logical dependencies, and clearly identified gaps. Distinguish theorems from conjectures and heuristics. Use standard terminology, the project Dictionary, and natural mathematical language. Establish every reduction and additional assumption; do not silently transfer a claim from a special class to a broader one. Explain unresolved obligations mathematically rather than in managerial language.
 
-Articles, Sections, and Subsections may have **no composition**. That is an ordinary, valid state, not an error or an obligation to manufacture prose. Compose only when the child material supports a coherent mathematical argument. In all read, status, tree, and mirror interfaces, distinguish absent composition from an existing composition and never substitute an invented summary or a child inventory as if it were a mathematical composition.
+**Selective synthesis** means both integrating chosen contributions rigorously and omitting superseded, redundant, exploratory, inconclusive, or irrelevant material. An Article may omit Sections, a Section may omit Subsections, and a Subsection may omit Items; omission does not delete the underlying work. Dependencies identify what the exposition actually uses, not every descendant. Never mistake permission to omit material for permission to omit necessary arguments.
 
-Every composition that does exist must read as a genuine mathematical publication at its level: an Article as an integrated paper-scale argument, a Section as a developed section of that paper, and a Subsection as a coherent local mathematical exposition. State precisely defined hypotheses, objects, mathematical results, proofs or explicitly identified proof gaps, and logical dependencies. Define every technical term in the composition itself or in the project Dictionary; distinguish proved claims from conjectures, heuristics, and strategic tasks. Synthesize children mathematically rather than listing them or narrating the work history. A list of Item titles, numbered container references, status bullet points, or a progress report is not a composition. When material is not ripe for mathematical synthesis, leave its parent composition absent and keep working in Items.
-
-## Publication-worthy selective synthesis
-
-**Publication-worthy selective synthesis** is the two-part operation of (1) integrating selected lower-level mathematics into a coherent, precise, publication-quality argument and (2) deliberately omitting lower-level material that is superseded, redundant, exploratory, inconclusive, or no longer relevant to the strongest route. An Article may omit Sections, a Section may omit Subsections, and a Subsection may omit Items. Omitted material remains preserved in its own lower-level records; omission means exclusion from higher-level exposition, not deletion. Dependencies identify selected mathematical inputs, not every child in the container.
+An Article must stand alone as a manuscript: include indispensable local mathematics and proofs directly rather than citing internal Sections or Items as substitutes. Only precise Dictionary definitions and explicitly identified Toolkit results may serve as external mathematical prerequisites. Sections may rely on established Article context; Subsections may rely on identified Section context. **All three levels require the same rigor and editorial quality.** Define objects before referring to them, introduce notation before using it, write continuous arguments with lemmas where helpful, and revise grammar and mathematical phrasing as carefully as correctness. A composition's database status alone does not certify publication quality.
 
 ## Dependencies and staleness
 
-Dependencies of compositions belong to Articles, Sections and Subsections. A Subsection composition may select direct atomic Items as sources; a Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions. An Item may declare research consumption relationships independently, without acquiring a composition.
+A Subsection composition selects atomic Items as sources; a Section composition selects Subsection compositions; an Article composition selects Section compositions. Only a newer version of an explicitly depended-on composition causes dependency staleness. Frontier metadata separately records which lower-level material existed at composition time. Item consumption relationships are independent of containment, composition, and proof status; an Item may be consumed by multiple research nodes without nesting.
 
-A composition becomes stale only when an explicitly depended-on composition is replaced by a newer composition version. Frontier metadata separately records what lower-level material existed when the composition was written.
+## Research flow and auditing
 
-## Research flow
+Read current compositions before their supporting children. If an Article or Section is incomplete, inspect the relevant Subsections and atomic Items before deciding the proof frontier; recency is not evidence of mathematical strength. Compose bottom-up only when each level admits a rigorous synthesis.
 
-Read the current composition first, then inspect its dependent children. Use Subsections to locate their atomic Items. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
+Audit exact mathematical claims. For a localized gap, publish a focused audit Item identifying the affected claim, the missing justification or counterexample, and a repair obligation. Preserve surrounding valid arguments. Request independent verification when a substantive repair warrants it. Keep useful failed approaches as research evidence without promoting them as established mathematics.
 
-When new mathematics changes the best exposition, update the appropriate atomic Item and recompose its Subsection, Section and Article when accumulation makes a synthesis worthwhile.
+For concurrent publication, stage related writes, inspect the decoded batch for conflicts, and commit atomically.
 
-## Audits
+## Storage and auxiliary workflows
 
-Audit canonical mathematical claims. When an audit finds a localized gap or correction, publish a focused audit Item in the appropriate Subsection stating the claim, the issue, and the repair obligation. Recompose after the repaired mathematics has stabilized.
+Articles, Sections, Subsections, Items, Toolkit records, Brainstorms, and auxiliary documents share each project's typed nodes table with project-unique IDs; data holds their records. The former Result node type has been retired, and its research content was migrated to Items without changing IDs. The consumption API resolves types from IDs: set_consumes(session,parent_id,child_ids) and set_consumed_by(session,child_id,consumer_ids). The child's consumed_by list is authoritative; a parent's consumes list is maintained when relationships change.
 
-After making a substantive repair, judge whether the repaired result should be audited by another worker; request an audit when independent verification is warranted.
+Brainstorms remain typed nodes, accessible using brainstorms(), save_brainstorm(...), and promote_brainstorm(...). Promotion preserves the original seed and full body in an Item under a newly created Subsection.
 
-## Concurrent publication
-
-Use staged batches for related multi-object writes. Review the decoded batch for overlap, then commit it atomically.
-
-## Style
-
-Use standard mathematical vocabulary and the project Dictionary. State results publication-style, preserve useful failed routes as development evidence, and keep operational instructions concise and affirmative.
-
-## Publication-quality selective synthesis
-
-Publication-quality selective synthesis combines two operations: integrating selected child mathematics into a coherent, rigorous argument, and deliberately omitting material superseded by stronger arguments, redundant, exploratory, or no longer part of the best route. The composition must read as mathematical publication prose, with precise statements, proofs or clear gaps, and every technical term defined locally or in the Dictionary. Articles may omit Sections, Sections may omit Subsections, and Subsections may omit Items. Omission from a composition never deletes the underlying research. Dependencies identify child compositions or atomic Item sources actually used, not an inventory of all children.
-
-
-## Consumption references
-
-Consumption is independent of containment and of composition. Sections, Subsections and Items maintain authoritative consumed_by relationships with other research nodes; multiple consumers may reuse the same Item. Articles, Sections, and Subsections may expose cached consumes lists. Workers can atomically set consumes or consumed_by through the project APIs; ID-based calls resolve types. An Item can cite other Items without containing them. A consumption relation does not imply a composition or a proved claim.
-
-
-## Unified typed research nodes
-
-Articles, Sections, Subsections, and atomic Items are represented in one per-schema nodes table keyed by an ID unique within that schema. The type identifies the level and data holds the full record. A former Result node is now an Item, with its original ID, statement, proof, status and provenance retained. There is no separate Result node type and no Item composition. Toolkit and auxiliary records share the nodes table. Consumption APIs resolve node types by ID.
-
-
-## Brainstorms are typed research nodes
-
-Brainstorms are stored in the same per-project nodes table as Articles, Sections, Subsections, Items, Toolkit records, and auxiliary documents, with type=brainstorm. Their IDs are globally unique within the project schema. Brainstorm metadata lives in nodes.data and projected columns. Use brainstorms(), save_brainstorm(session,payload,expected_version), or promote_brainstorm(session,id,payload,expected_version). Promotion preserves the original seed and full body in an Item under a Subsection of the promoted Section.
-
-
-## Bottom-up Article composition intake
-
-When Article/Section/Subsection compositions are blank or stale, read the existing compositions and all relevant atomic Items to establish the real proof frontier; never infer strength solely from recency. Use article_subsection_intake(article_id, offset, limit, result_order) or article_results(article_id,offset,limit,order) only as historical read-only compatibility APIs if available: their result-named fields reflect older layouts and must be interpreted as atomic Item content. Read direct Items and their current versions, and compose bottom-up: Subsection, Section, Article. Do not create Result nodes or Item compositions.
-
-
-## Article and Section manuscript self-containment (mandatory)
-An Article composition is a self-contained mathematical manuscript. A reader must be able to follow its definitions, hypotheses, deductions and exact unresolved proof obligations without reading its Sections, Subsections, Items, research history, prior Articles or broadcasts. Only explicitly identified Toolkit theorems and precise Dictionary definitions are permitted as external mathematical prerequisites. Integrate indispensable local statements and proofs directly into the Article. Qualify every conjectural or unproved step.
-
-A Section composition is a publication-ready mathematical section: all reasoning must be rigorous, grammatically natural and internally coherent, but it may use definitions and established hypotheses already introduced by the containing Article. A Subsection composition is publication-ready local exposition and may rely on explicitly identified local context at its Section level. This difference concerns self-containment only, not standards of proof.
-
-Prefer ordinary professional mathematical prose: introduce objects with "Let X be ...", specifying assumptions and scope, before using definite references such as "the object". Do not write "fix the ..." unless the object has already been introduced, or the quantification has otherwise been stated. Introduce notation when used; define each technical noun locally or rely on an exact Dictionary definition. Do not conflate a general problem with a special subclass; every reduction or additional hypothesis must be established before use. Explain and prove every reduction in scope or explicitly cite an applicable Toolkit theorem. Avoid managerial phrases ("current frontier", "the existing construction", "research route", "our progress") in the body of the manuscript; express an unresolved obligation mathematically after the preceding argument naturally leads to it. Write as a continuous proof with clear lemmas or theorem statements where needed, not as a chronology or inventory of Results. Revise phrasing for idiomatic English and readability as carefully as for correctness. Publication-ready does not mean merely marked current by the composition database.
+For bulk manuscript intake, use article_subsection_intake(...) and article_results(...) only where available as legacy read-only interfaces; names containing “result” reflect historical APIs, not a current Result node type. Verify what each returns against live Items. Build compositions in order: Subsection, Section, Article.
