@@ -411,10 +411,10 @@ Creates a new Subsection container.
 Lists Items under a Subsection; reads an Item and its Results; lists Results under an Item.
 
 ### new_item(session_id, subsection_id, payload)
-Creates an Item. The payload provides id, kind, title, and body; the position is local to its Subsection.
+Creates an Item. The payload provides id, kind, title, status, and body; the position is local to its Subsection. Put all mathematical statements, proofs, and exposition in body. Separate statement and proof fields are rejected.
 
 ### save_item(session_id, item_id, payload, expected_version)
-Revises an Item with optimistic concurrency.
+Revises an Item with optimistic concurrency. Mathematical content belongs in body alone; statement and proof fields are rejected.
 
 ### new_item_result(session_id, item_id, payload)
 Creates a named Result/claim within an Item. The payload provides id, kind, title, statement, proof, and status.
@@ -673,7 +673,7 @@ Generated: {rev.get('generated_at')}
             raise ValueError(f"invalid canonical tree path: {relative}")
         write(root / relative, node.get("content") or "")
     index = ["# Grand conjecture", "",
-             "Research hierarchy: Articles → Sections → Subsections → Items → Results.",
+             "Research hierarchy: Articles → Sections → Subsections → Items.",
              "Each level's composition is adjacent to its corresponding directory.", ""]
     for a in articles:
         index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
