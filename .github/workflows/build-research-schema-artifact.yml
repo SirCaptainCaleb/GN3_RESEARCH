@@ -1,4 +1,4 @@
-name: Build one research schema artifact
+name: INTERNAL | Package already-synced mirror (no Supabase refresh)
 
 on:
   workflow_call:
