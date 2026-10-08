@@ -7,12 +7,12 @@
 - Position: 1
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Every minimum counterexample for a reversal-odd coordinate r-tuple label has a bichromatic good order on each single-coordinate deletion. Appending or prepending the missing coordinate preserves all deletion windows, so a full order with exactly one endpoint threshold defect exists. This holds in every translation-invariant coordinate arity r>=2, and does not automatically extend to basepoint-dependent cube colorings.
+For a minimum reversal-odd coordinate counterexample, every good one-coordinate deletion order is bichromatic. Restoring the omitted coordinate at either endpoint produces a single endpoint threshold defect, since only one new window is added. This applies in every coordinate arity, independently of unrestricted basepoint-dependent cube labels.
 
 ## Development
 

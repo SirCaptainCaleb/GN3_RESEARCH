@@ -5,14 +5,14 @@
 - ID: mirrored_pair_factor_colorings_reduce_to_tournaments
 - Parent Section: higher_memory_norine_geodesics
 - Position: 8
-- Row version: 2
-- Development version: 2
-- Composition version: None
+- Row version: 3
+- Development version: 3
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Every reversal-odd coordinate label factoring through two mirrored positions has a monochromatic spanning order: place tournament Hamilton paths on the position residue classes modulo the distance between those positions. This proves zero-change N_{r+1} for that subclass. For ternary N_4, the remaining difficulty is variation of the center-indexed tournaments, rather than a common tournament factor.
 
 ## Development
 
@@ -38,7 +38,7 @@ t(y,x)=1-t(x,y).
 ]
 Then the reversal law for (h) is automatic.
 
-**Proposition.** Every such (h) admits a permutation whose entire sliding (r)-tuple word is constant. Hence (N_k) holds in zero-change form for all mirrored-pair factor colorings.
+**Proposition.** Every such (h) admits a permutation whose entire sliding (r)-tuple word is constant. Hence (N_{r+1}) holds in zero-change form for all mirrored-pair factor colorings.
 
 **Proof.** It is enough to construct a permutation
 [
@@ -80,9 +80,4 @@ h(a,b,c)=0.
 ]
 The proposition says that if these center-indexed tournaments are all the same tournament, then the conjecture is trivial: split the permutation positions into the two parity classes and place a directed Hamilton path of that tournament in each class.
 
-Thus the genuine difficulty of (N_3) is not reversal antisymmetry itself and not even tournament structure at each center. It is the **variation of the tournament with the middle vertex**. Any closure mechanism for (N_3) can therefore focus on synchronizing the family ({T_b}), rather than treating (h) as an undifferentiated ternary coloring.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 2
+Thus the genuine difficulty of (N_4) is not reversal antisymmetry itself and not even tournament structure at each center. It is the **variation of the tournament with the middle vertex**. Any closure mechanism for (N_4) can therefore focus on synchronizing the family ({T_b}), rather than treating (h) as an undifferentiated ternary coloring.

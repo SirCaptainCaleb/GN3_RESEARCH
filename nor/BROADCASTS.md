@@ -2,34 +2,38 @@
 
 These persistent project directives remain in force until explicitly removed.
 
-## Updated guidance: glue transport paths and extract the endpoint gadget
+## Guidance: witnessed degree, relative splicing, and exported reconnection
 
-Updated fourth wisdom pass, through revision 2718. Replaces nor_fourth_wisdom_pass_20261007. Full live assessment: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development/composition 3.
+Reassessment through revision 2878. Full guidance: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development 5 / composition 4. NOR remains open.
 
-NOR remains open. The new constructive emphasis is where audited transport paths MEET, and the endpoint double-full gadget's non-returning resolution.
+PRIMARY ROUTE: witnessed degree plus relative block splicing.
+Use the consecutive-change defect carrier (§§155,163,170). Fix one NOR-good order g(S) per proper subset. A proper face B1|...|Bs has the concrete witness g(B1)...g(Bs); its band labels cross face blocks and give strict face-normal separation. This supplies an orientation-symmetric, zero-free nonzero-degree boundary carrier. Ordinary degree applies to the fixed selector.
 
-What changed:
-- Root §§82,104 show one-sided audited transport roots are independent after projection to an ordered-partition path. A positive dependence cannot live on one such trajectory. Look for compatible gluing between trajectories, braid/commuting cells, or fully-curved stops; do not chase long recurrence within one flag.
-- Root §102 removes the old-corner hypothesis from the endpoint-to-double-full handoff. It applies to its canonical endpoint carrier with p,q>=3 and the displayed perfect-blocker scan. One resolution returns; the other exports risk. Seek a full-support one-change order or a proved improved witness from that exported state.
-- The honest switch prism (root §88) is an existing degree route using W plus a genuine side coordinate. Its labels are violating-window first-minus-last roots, not terminal slide roots. Prioritize compatible extraction, not another raw cancellation theorem.
-- A3 extraction is NOT complete: root §103 identifies the changed-middle gap in §98. Root §101 supplies an internal chamber for its balanced-four-cycle case, still requiring boundary verification.
+The closure task is a relative splice for the actual flag witnesses:
+P g(A)g(B) Q -> P g(A union B) Q.
+Preserve the outside order, record both ordered boundary collars and all crossing windows, and produce a spanning good order or a strict admissible improvement. Abel label increments and merge-chain endpoint identities are algebraic coherence data. Prove the legal replacement and its progress measure. Treat the top merge into the full coordinate set explicitly.
 
-Highest priorities:
-1. Prove a boundary-safe escape from the non-returning endpoint resolution, retaining the exact blocker data and full changed packet.
-2. Prove the endpoint Johnson square-lift or a local strict-improvement alternative in root §93. Then supply a finite partner-alignment reduction. Telescoping partner defects do not ensure inverse jumps exist, and commuting alone does not prove they disappear. A closed partner-defect interval need not be a closed physical-root cycle (§87 qualification); §89's small synchronized cycles remain conditional.
-3. Repair A3 extraction by tracking the SAME middle coordinate through its block-boundary/exterior window. Produce a certified repair usable inside the declared extremal state class.
-4. Develop a compatible equivariant complex from zero-free transport flags and their actual gluing cells. Prove the needed obstruction survives any extremal energy/band restriction, and connect the forced event to a legal improvement.
+IMMEDIATE LOCAL TARGET: exported reconnection.
+Root §226 strengthens the width-two weave to (0,3,1,2,4,5). It preserves the first coordinate and the last ordered pair, leaving ONE crossing bit. The bad bit is a double-full singleton. Root §213 reverses an arbitrary reversal-odd endpoint phase and confines failure to two crossing windows. Use their inherited blocker/extremal data to resolve the exported boundary and its first full barrier. Obtain a spanning order or a well-founded witness descent. The earlier §235 two-window width-two target is sharpened by §226.
 
-Distance-lift qualification (root §100): for the natural product-affine extension F(x,k)=(G(x),a(x)-k), the scalar zero just chooses k=a(x). Since a(x) is an average of allowed transition ranks, zeros correspond to zeros of G. Balanced distance is not automatically an additional physical restriction. Tie k to independent witness/extremal data or prove an extraction relation at that k. The at-least-six-block bound is inherited face localization; avoid successive larger-block classification without an improvement mechanism.
+COMPATIBLE CUT CELLS:
+Root §237 separates every family whose certified central cuts form an inclusion chain. A positive dependence therefore uses incomparable cuts. Full barriers realize same-cut K2,2 cells (§230), with zero-free convex hulls (§234). Investigate the first compatible passage between incomparable cut states. Prove admissibility of all side-root replacements and actual successor attainment. A bounded square/braid localization remains a theorem to establish.
 
-Repair-potential qualification: fixed-cut quadratic distance controls the stated outward bubble class. Root §92's neighbor extension needs a full-packet and orientation audit before declaring every interior Tucker event terminating. Additional exterior windows and inward moves matter. Endpoint and cut-changing events remain distinct. A complementary path leaving an extremal class does not contradict its extremality.
+FOCUSED ALTERNATIVE:
+Prove the endpoint missing-corner witness for the SAME root x_i->x_(i+1), with cut {x_i,a_(i+1)}, or obtain a spanning order or strict improvement. This copies the next partner backward. Supply a finite alignment potential and handle pinned junctions. §128 gives genuine endpoint descent in its second-splice-zero and phase-three branches. Preserve the family used for cycle minimality (§§129,232).
 
-Retain: central-cut incidence is not successor attainment; tangent feasibility at a Johnson vertex already requires attainment. Raw separation of a reversal-closed family is vacuous. Odd lifts still cancel true reversal pairs; their extra relation matters inside compatible supports. Tensor trace one records provenance, not zero defect. Physical subcycle extraction can lose cut chronology. Small W perturbations cannot remove Hamiltonian circuits; irrational parameters do not split arbitrary real coefficients.
+CURRENT TOPOLOGICAL OBLIGATIONS:
+§138: an odd centered switch prism has an automatic center zero; prove useful extraction or noncentral localization.
+§184: a Hamiltonian root simplex has nonzero local degree; account for that degree in any zero-removal surgery.
+§212: an expanded circuit inside averaged labels requires a separate domain-cell realization theorem.
+§209: the canonical vertical-edge complementary-middle pair is available as genuine cell states; prove carrier inclusion/selection and retained degree.
+State the domain, target, boundary condition, state support, and legal extraction before invoking the fixed-point theorem.
 
-Do not reuse the refuted p=2 monotone-scan shortcut or seek a universal splice from the four unconstrained reconnection bits. Keep flat alternating results separate from general reversal-odd labels, and canonical scan hypotheses explicit.
+Recent ternary §§65-66 give local close-or-root exits for rise and no-rise A2 scans. Use their exact boundary hypotheses and complete the global root extraction.
 
-The desired next output is an actual one-change order, a genuine improved protected witness, or a carrier extraction theorem returning one. The current article has incorporated several earlier qualifications; future recomposition should retain exact repair scope and explicit lower-composition dependencies.
+Keep each flat alternating theorem's extra symmetries explicit. The special-scan descent retains its scan-class hypothesis; recursive use verifies that hypothesis on every new witness.
 
+Allocate effort to relative block splicing and exported reconnection, using compatible cut squares as tools. The desired next result is an explicit spanning NOR order or a proved terminating admissible improvement.
 
-- ID: nor_guidance_after_transport_flags_20261007
+- ID: nor_guidance_relative_splicing_20261007
 - Scope: nor

@@ -2,9 +2,9 @@
 
 ## Composition status
 
-- Composition version: 6
-- Stale: True
-- Composed through revision: 2017
+- Composition version: 7
+- Stale: False
+- Composed through revision: 3311
 - Sections existing when composed: 1
 - Sections now: 1
 
@@ -28,8 +28,4 @@ This article develops the one-change conjecture under that convention and keeps 
 
 ## Contained Sections
 
-- 1. [Ordered-tuple Norine geodesics](../SECTIONS/higher_memory_norine_geodesics.md) (`higher_memory_norine_geodesics`; composition v7; stale=False)
-
-## Stale composition dependencies
-
-- higher_memory_norine_geodesics: composition saw v6 → current v7
+- 1. [Ordered-tuple Norine geodesics](../SECTIONS/higher_memory_norine_geodesics.md) (`higher_memory_norine_geodesics`; composition v8; stale=False)

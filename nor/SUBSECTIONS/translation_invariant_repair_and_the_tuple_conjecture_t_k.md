@@ -5,14 +5,14 @@
 - ID: translation_invariant_repair_and_the_tuple_conjecture_t_k
 - Parent Section: higher_memory_norine_geodesics
 - Position: 4
-- Row version: 3
-- Development version: 3
-- Composition version: None
+- Row version: 4
+- Development version: 4
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Translation invariance identifies a cube window with its ordered list of flipped coordinates. Complement-plus-reversal becomes reversal antisymmetry of that coordinate label. Thus r coordinate steps correspond to N_{r+1}, and r=2 is N_3, settled by tournament Hamilton paths. This dictionary does not assert the unrestricted basepoint-dependent cube statement.
 
 ## Development
 
@@ -41,12 +41,6 @@ Under complement-plus-reversal, the flip order reverses, so the cube antisymmetr
 h(v_k,\ldots,v_1)=1-h(v_1,\ldots,v_k).
 \]
 
-Thus the directed tuple Grand Conjecture \(N_k\) and the translation-invariant ordered-window formulation are the same problem. “Translation invariance” is not an added repair hypothesis relative to directed tuples; it is simply the cube-coordinate expression of the directed tuple model itself.
+Thus the directed tuple Grand Conjecture \(N_{k+1}\) and the translation-invariant ordered-window formulation are the same problem. “Translation invariance” is not an added repair hypothesis relative to directed tuples; it is simply the cube-coordinate expression of the directed tuple model itself.
 
-For \(r=2\), \(N_2\) follows from the Hamilton-path theorem for tournaments.
-
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 3
+For \(r=2\), \(N_3\) follows from the Hamilton-path theorem for tournaments.

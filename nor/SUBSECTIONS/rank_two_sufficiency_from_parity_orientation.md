@@ -1,0 +1,19 @@
+# Rank-two sufficiency from parity orientation
+
+## Metadata
+
+- ID: rank_two_sufficiency_from_parity_orientation
+- Parent Section: hartman_least_unreachable_connectors
+- Position: 13
+- Row version: 2
+- Development version: 2
+- Composition version: 1
+- Composition stale: False
+
+## Composition
+
+Missing-set parity offers a candidate two-orientation assignment. Local rank-two fillers establish pieces of same-orientation transport. A global theorem still needs coherent state selection, connectivity for arbitrary comparable ranks, and compatible carrier attachments. Parity alone proves no higher-coherence conclusion.
+
+## Development
+
+Assigning connector orientation by missing-set parity separates consecutive ranks into opposite orientation classes. Rank-two fillers give candidate generators for same-orientation transport, provided a coherent selection of states and boundary-preserving fillers is available. This parity assignment alone does not establish that arbitrary nested same-orientation witnesses lie in one repair component, nor that higher carrier extensions agree on shared boundaries. A full coherence theorem must prove these selection and attachment conditions, including nonconsecutive comparable missing sets. Same-gap and separated fillers establish explicit local pieces. The adjacent-gap relative repair remains a local obstruction; closing it is not yet a proof that all higher coherence follows.

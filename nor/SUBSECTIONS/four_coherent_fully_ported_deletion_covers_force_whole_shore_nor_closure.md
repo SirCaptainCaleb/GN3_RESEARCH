@@ -1,0 +1,39 @@
+# Four coherent fully ported deletion covers force whole-shore NOR closure
+
+## Metadata
+
+- ID: four_coherent_fully_ported_deletion_covers_force_whole_shore_nor_closure
+- Parent Section: monochromatic_connector_blocks
+- Position: 40
+- Row version: 1
+- Development version: 1
+- Composition version: 1
+- Composition stale: False
+
+## Composition
+
+The GN3N article deletioncover_compatibility_and_global_obstruction_structure (composition 1) supplies a compatibility-gluing argument that uses tuple locality alone. Here is its port-preserving NOR transfer.
+
+Fix a ternary flat split B→z→A→x, with B dominating A∪{x,z}, and a fixed representing tournament t. A fully ported zero path has h=0 on each consecutive triple and has its first and last ordered pair forward whenever those pairs exist. Let D⊆A have at least four labels. For each d∈D suppose A\{d} is partitioned into at most two fully ported zero paths. Assume pairwise compatibility: after restriction to A\{d,e}, the induced equivalence relation of belonging to one path agrees, and the relative orders on each common support agree. No persistent names for the two paths are required.
+
+THEOREM. These data yield a spanning compatible connector on A∪{x,z}; together with any NOR-good order on B they yield a full NOR order.
+
+PROOF. For u,v∈A, select d∈D outside {u,v} and declare u∼v when they belong to the same path in the d-cover. Compatibility makes this independent of d. A label outside any three tested vertices exists, so transitivity follows from its two-cover; the same argument excludes three distinct equivalence classes. The compatible relative orders induce total orders on the at most two classes: transitivity is tested in a deletion cover avoiding the three vertices. Any consecutive triple in a global class survives a deletion avoiding it and remains consecutive there, hence is zero. A global first or last pair survives a deletion avoiding the pair and remains an endpoint pair there, hence is forward. Thus the reconstructed class paths are fully ported.
+
+For two nonempty reconstructed paths P,Q, concatenate P,x,z,Q. The crossing triples are zero by h(a,x,z)=h(x,z,a)=0 and h(a,b,x)=h(z,a,b)=1−t(a,b), using the relevant forward ports. Endpoint pairs are inherited or are the forward edges a→x and z→a when a path is a singleton. For one nonempty class P use z,P,x: its junction triples are zero by the same identities and both exterior endpoint pairs are forward. A singleton gives z,a,x; an empty shore uses z,x. These are spanning compatible connectors. Apply every_spanning_compatible_monochromatic_connector_closes_across_a_homogeneous_cut. QED.
+
+The hypothesis is a selection of actual ordered, fully ported witnesses. Deletion-critical existence of unrestricted compatible connectors alone does not supply this selection: x,z may be separated and the two extracted shore paths may lack ports. The theorem closes every instance admitting four coherent ported deletion covers and makes their nonexistence an explicit necessary condition on a remaining obstruction. Its proof requires no boundary-3-tournament Hamiltonicity axiom, no potential descent, and no higher-cell filling theorem.
+
+## Development
+
+The GN3N article deletioncover_compatibility_and_global_obstruction_structure (composition 1) supplies a compatibility-gluing argument that uses tuple locality alone. Here is its port-preserving NOR transfer.
+
+Fix a ternary flat split B→z→A→x, with B dominating A∪{x,z}, and a fixed representing tournament t. A fully ported zero path has h=0 on each consecutive triple and has its first and last ordered pair forward whenever those pairs exist. Let D⊆A have at least four labels. For each d∈D suppose A\{d} is partitioned into at most two fully ported zero paths. Assume pairwise compatibility: after restriction to A\{d,e}, the induced equivalence relation of belonging to one path agrees, and the relative orders on each common support agree. No persistent names for the two paths are required.
+
+THEOREM. These data yield a spanning compatible connector on A∪{x,z}; together with any NOR-good order on B they yield a full NOR order.
+
+PROOF. For u,v∈A, select d∈D outside {u,v} and declare u∼v when they belong to the same path in the d-cover. Compatibility makes this independent of d. A label outside any three tested vertices exists, so transitivity follows from its two-cover; the same argument excludes three distinct equivalence classes. The compatible relative orders induce total orders on the at most two classes: transitivity is tested in a deletion cover avoiding the three vertices. Any consecutive triple in a global class survives a deletion avoiding it and remains consecutive there, hence is zero. A global first or last pair survives a deletion avoiding the pair and remains an endpoint pair there, hence is forward. Thus the reconstructed class paths are fully ported.
+
+For two nonempty reconstructed paths P,Q, concatenate P,x,z,Q. The crossing triples are zero by h(a,x,z)=h(x,z,a)=0 and h(a,b,x)=h(z,a,b)=1−t(a,b), using the relevant forward ports. Endpoint pairs are inherited or are the forward edges a→x and z→a when a path is a singleton. For one nonempty class P use z,P,x: its junction triples are zero by the same identities and both exterior endpoint pairs are forward. A singleton gives z,a,x; an empty shore uses z,x. These are spanning compatible connectors. Apply every_spanning_compatible_monochromatic_connector_closes_across_a_homogeneous_cut. QED.
+
+The hypothesis is a selection of actual ordered, fully ported witnesses. Deletion-critical existence of unrestricted compatible connectors alone does not supply this selection: x,z may be separated and the two extracted shore paths may lack ports. The theorem closes every instance admitting four coherent ported deletion covers and makes their nonexistence an explicit necessary condition on a remaining obstruction. Its proof requires no boundary-3-tournament Hamiltonicity axiom, no potential descent, and no higher-cell filling theorem.

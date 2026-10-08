@@ -7,16 +7,12 @@
 - Position: 4
 - Row version: 2
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Let V={a,b} union R and F={C:C subseteq R} union {C union {a,b}:C subseteq R}. This union-closed family contains each old coordinate in half its members. Its membership sign is g(A)=(-1)^{x_a+x_b}, so the canonical doubled-cube lift is G(A,s)=(-1)^{x_a+x_b+s}.
-
-Every antipodal geodesic flips a,b,star once, and therefore its vertex-color word changes three times, regardless of starting point, coordinate order, or how many free coordinates R contains.
-
-Thus Frankl's bias conclusion, which holds here with equality, does not imply a one-change antipodal vertex path in the canonical lift. A reduction must change the colored objects or use another construction. This does not refute the directed coordinate conjecture: the lift is a basepoint-dependent vertex coloring, whereas that conjecture colors reversal-antisymmetric ordered coordinate windows.
+The doubled-cube encoding has an explicit configuration with balanced coordinate frequencies but three changes. It refutes the naive inference from a Frankl-style heavy element or balanced frequencies to a one-change path. Preserve the encoding as a dictionary, not a proved NOR reduction.
 
 ## Development
 

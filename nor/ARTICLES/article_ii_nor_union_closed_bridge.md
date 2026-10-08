@@ -2,9 +2,9 @@
 
 ## Composition status
 
-- Composition version: 3
+- Composition version: 5
 - Stale: False
-- Composed through revision: 2388
+- Composed through revision: 3359
 - Sections existing when composed: 1
 - Sections now: 1
 
@@ -14,4 +14,4 @@
 
 ## Contained Sections
 
-- 1. [Directed NOR and union-closed structures](../SECTIONS/directed_nor_union_closed_bridge.md) (`directed_nor_union_closed_bridge`; composition v9; stale=False)
+- 1. [Directed NOR and union-closed structures](../SECTIONS/directed_nor_union_closed_bridge.md) (`directed_nor_union_closed_bridge`; composition v12; stale=False)

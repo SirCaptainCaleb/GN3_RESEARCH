@@ -7,12 +7,12 @@
 - Position: 7
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Even transitive center tournaments can have a fixed-tail feasible family that fails union closure at a sink. Local tournament transitivity and neighborhood union closure therefore cannot substitute for union closure of the actual ordered support family.
 
 ## Development
 
@@ -38,8 +38,3 @@ The construction retains v as a sink of T_u and retains transitivity at every ce
 Even at the most favorable terminal pair, where every singleton outside the tail is feasible, local neighborhood union closure does not supply support union closure. The obstruction already resides in comparisons at the two different centers a and b. It is not a failure to choose the sink correctly.
 
 This does not refute directed NOR for the locally transitive class, and it does not refute the general conjecture. It refutes only the implication from local transitivity to support union closure, including the attempted sink-tail specialization. A proof for that class needs exchanges between terminal states or a direct spanning construction; applying antimatroid frequency or coverage at one tail cannot establish the missing premise.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

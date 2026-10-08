@@ -7,12 +7,12 @@
 - Position: 48
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+For the stated common-tail configuration with tail word σ^p(1−σ)^2 and three cyclic residual-pair deletion witnesses, the final tail vertex sees the cyclic residual pairs in color 1−σ. A contrary label constructs an explicit monochromatic n−1-vertex path and hence a full NOR order. The resulting rear-cap forks are valid local structure; eliminating the two-window final run still requires a controlled splice from the untouched prefix.
 
 ## Development
 
@@ -126,8 +126,3 @@ To eliminate \(q=2\), one must use this rear-cap polarization together with the 
 (t_1,\ldots,t_{m-2})
 \]
 to force a spanning fork or a one-change order. Any such argument must control the bridge from the prefix's final pair into one of the three forced rear forks.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

@@ -7,12 +7,12 @@
 - Position: 10
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Finite union-closed feasible families saturate their entire feasible support; accessible families that fail union closure expose a missing-square obstruction. This distinguishes support-level saturation from the unresolved compatibility of tight witness orders. Antimatroid support structure alone is not an ordered-witness merging theorem.
 
 ## Development
 
@@ -99,9 +99,3 @@ Hence the NOR--Frankl bridge yields a useful local dichotomy rather than merely 
 ### Closure target
 
 A directed-NOR counterexample must therefore sustain these obstructions at every terminal state. A promising next step is to exploit reversal to couple them: show that a terminal exclusion set on one side forces saturation on a reversed or shifted terminal state, or that a minimal square defect propagates to a smaller defect after recentering. Either mechanism would eliminate one branch of the dichotomy and could force a spanning fork.
-
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

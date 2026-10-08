@@ -7,12 +7,12 @@
 - Position: 11
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-For ternary reversal-antisymmetric labels with transitive center tournaments, global injective scalar edge-order representation is equivalent to acyclicity of the comparison graph on unordered edges, and to absence of monochromatic tight cyclic orders on distinct coordinates. A shortest directed comparison cycle has no chord. A triangle with a common endpoint is excluded by local transitivity; every remaining chordless line-graph cycle comes from a simple coordinate cycle. Its directed comparisons give color 0 on all cyclic triples. A spanning such cycle closes directed N_4, while absorption of exterior coordinates remains unproved.
+Representability of local center comparisons by one global strict edge order requires their comparison digraph to be acyclic. Monochromatic tight cycles can obstruct this. The edge-order subclass is therefore narrower than general reversal-odd ternary labels; its motivation does not justify assuming a global edge order.
 
 ## Development
 

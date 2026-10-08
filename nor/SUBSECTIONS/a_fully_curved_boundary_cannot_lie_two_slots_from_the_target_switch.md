@@ -1,12 +1,12 @@
-# A fully-curved boundary cannot lie two slots from the target switch
+# Audit: endpoint relocation does not enlarge the width-two compatible band
 
 ## Metadata
 
 - ID: a_fully_curved_boundary_cannot_lie_two_slots_from_the_target_switch
 - Parent Section: protected_root_certificates_and_cellular_extraction
 - Position: 220
-- Row version: 1
-- Development version: 1
+- Row version: 2
+- Development version: 2
 - Composition version: None
 - Composition stale: False
 
@@ -16,55 +16,29 @@
 
 ## Development
 
-## Width-two full-full corridors are impossible by endpoint relocation
+## Audit correction
 
-Work in the coboundary-flat alternating ternary sector. Let a bad switch state have globally maximal target-compatible band. Suppose the target switch is followed on the right by exactly two matched post-switch windows before the first unresolved boundary, and suppose that boundary is fully curved.
+The endpoint-relocation argument in the previous development does NOT prove that a width-two full-full corridor is impossible.
 
-Normalize the six consecutive coordinates as
-(0,1,2,3,4,5)
-and the local status word as
-A,B,B,A,
-where B=1-A. Thus the target cut lies between the first two displayed window ranks, and the final A is the first mismatch on the post side.
+Keep the local notation
+A,B,B,A
+on six consecutive coordinates (0,1,2,3,4,5), with B=1-A, and assume the right B->A boundary on {2,3,4,5} is fully curved. Then indeed
+alpha(2,4,5)=B,
+and if t=alpha(1,2,4), relocating coordinate 3 to a remote global endpoint changes the local corridor to
+A,t,B.
+If t=B one keeps the cut; if t=A one shifts the cut one rank right. In either case the displayed local windows are target-compatible.
 
-The right boundary tetrahedron is {2,3,4,5}, with consecutive statuses B,A, and is fully curved. For a fully-curved B->A transition its B-shadow off-face is
-alpha(2,4,5)=B.
+The error was the claim that this strictly enlarges the target-compatible band. Removing coordinate 3 from the corridor also removes one ternary window rank. If the next unchanged exterior window is mismatching, that exterior mismatch shifts inward by one rank. Consequently the number of matched windows in the maximal band can remain exactly the same as before.
 
-On the middle four-set {1,2,3,4}, the two consecutive faces both have color B:
-alpha(1,2,3)=alpha(2,3,4)=B.
-Coboundary parity therefore gives
-alpha(1,2,4)=alpha(1,3,4).
-Put
-t=alpha(1,2,4) in {A,B}.
+Thus relocation is a legitimate transport of the boundary obstruction, not a strict band-length improvement.
 
-Now REMOVE coordinate 3 from its present position and reinsert it at the global right endpoint of the full coordinate order. This is still a full spanning coordinate order; no deletion-instance argument is being used.
+This is consistent with the independently proved barrier-reflection gadget: width-two full-full corridors have exact transport structure, but no monotone potential has yet been established for repeated reflections/relocations.
 
-Near the old corridor, the three surviving consecutive statuses are exactly
-alpha(0,1,2)=A,
-alpha(1,2,4)=t,
-alpha(2,4,5)=B.
-Every window strictly to the left of this packet is unchanged. Every window beginning with the old ordered pair (4,5) and continuing into the old right exterior is also unchanged; moving 3 to the global endpoint alters only the final endpoint windows far to the right.
+Safe retained fact: the fully-curved B->A boundary has a canonical B-shadow alpha(2,4,5)=B, so moving its second coordinate away removes that particular barrier without creating any new defect inside the shortened local packet. Any global use must account for the rank compression and the new first exterior window.
 
-There are two cases.
-
-1. t=B.
-Keep the original cut. The local word is A,B,B, so all three displayed ranks are target-compatible. In particular the old first mismatching rank has disappeared and the compatible band extends strictly farther right.
-
-2. t=A.
-Move the proposed cut one window rank to the right. The local word is A,A,B, again exactly target-compatible. Every old matched rank to the left remains matched, and the old first mismatching rank has again disappeared. The compatible band extends strictly farther right.
-
-In either case the only new windows created by reinserting coordinate 3 occur at the global right endpoint, strictly beyond the old unresolved right boundary. They therefore cannot prevent the maximal target-compatible band around the displayed cut from containing the entire old band plus the old boundary rank.
-
-This contradicts global maximality of the band.
-
-### Theorem
-
-A globally maximal target-compatible bad switch state cannot have a fully-curved unresolved boundary exactly two matched transition slots from the target switch.
-
-Combined with the one-slot full-full exclusion, the nearest fully-curved boundary in an all-curvature extremal state must lie at distance at least three.
-
-The mechanism is worth retaining: a fully-curved boundary has a canonical target-color deletion shadow, and instead of actually deleting that coordinate one may relocate it to a remote global endpoint. This preserves full support while exporting all reinsertion risk beyond the boundary being improved.
+No width-two exclusion is claimed.
 
 ## Frontier
 
 - Development version when composed: None
-- Development version now: 1
+- Development version now: 2

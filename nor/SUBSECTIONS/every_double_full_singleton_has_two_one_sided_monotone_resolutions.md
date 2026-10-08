@@ -7,12 +7,12 @@
 - Position: 62
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Every ternary 010 packet whose two transition tetrahedra are fully curved has two one-sided monotone resolutions. Swapping only the last pair changes 010 to 001 while preserving the ordered left boundary pair; swapping only the first pair changes it to 100 while preserving the ordered right boundary pair. Thus the residual five-set holonomy bit is irrelevant for one-sided monotone passage. After choosing a side, threshold-band combing on the exported side terminates either in a global one-change carrier or at a fully-curved protected-root barrier.
+A 010 packet bounded by fully curved tetrahedra has two one-sided resolutions, 001 preserving the left boundary pair or 100 preserving the right. The exported reconnection risk is handled by threshold-band combing, which closes or reaches a fully-curved protected root. Local passage is not global root extraction.
 
 ## Development
 

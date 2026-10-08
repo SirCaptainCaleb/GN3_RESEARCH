@@ -7,14 +7,12 @@
 - Position: 9
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-For a terminal state (S), union closure of the fixed-tail support family fills every subset of its feasible singleton sector. If both orientations (S,S^{\rm rev}) are union-closed for one color and their singleton sectors cover all exterior coordinates, those sectors can be partitioned into two monochromatic tight branches forming a spanning converging fork.
-
-Therefore, in a counterexample, each center has a sharp alternative: some oriented/color support family fails union closure, or—if all four are union-closed—both colors have exterior vertices that are simultaneously feasible against (S) and (S^{\rm rev}), producing opposite polar pairs and short monochromatic bridges.
+When both oppositely oriented fixed-tail sectors are union-closed and together cover the exterior coordinates through the stated singleton coverage, their saturated tight witnesses form a spanning converging fork. Closure of the supports must belong to the specified ordered sectors; arbitrary support accessibility alone is insufficient.
 
 ## Development
 

@@ -7,12 +7,12 @@
 - Position: 61
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-For globally minimum ternary deletion carriers, p=1 closes directly. At p=2, blocking and replacement force a full-flat singleton 010 packet; its monochromatic five-coordinate resolution removes the left reconnection, and threshold-band combing on the right either reaches the old one-phase and yields a spanning one-change order or stops at a fully-curved boundary with a protected root. Thus short minimum phases do not form an escape case: p<=2 closes or hands off to protected-root extraction.
+For globally minimum ternary deletion carriers the audited short-phase mechanism closes or emits a protected physical root with the actual reconnection windows retained. This is a ternary root handoff; it does not solve short phases in arbitrary coordinate arity.
 
 ## Development
 

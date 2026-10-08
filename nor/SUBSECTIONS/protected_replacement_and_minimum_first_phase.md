@@ -7,12 +7,12 @@
 - Position: 2
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-For p>=r, replacing coordinate v_p of a deletion witness 0^p1^q by the omitted coordinate changes just r windows. Its word becomes 0^(p-r),B,1^q. A packet B=0^a1^(r-a), a<r, gives a strictly shorter first phase or a monochromatic deletion that immediately extends. At minimum first phase, B must be inert or contain 10. Short phases p<r need separate treatment.
+For a deletion word 0^p1^q with p≥r, replacement at the cut changes exactly r windows and protects the remaining outside order and suffix. A monotone replacement packet containing a one strictly reduces the first phase. At a globally minimum-first-phase witness the packet is inert or contains an actual 10 descent. Short phases p<r require a separate argument.
 
 ## Development
 

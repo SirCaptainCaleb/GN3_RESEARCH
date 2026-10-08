@@ -1,0 +1,29 @@
+# Every individual minimum-shore vertex is absorbable
+
+## Metadata
+
+- ID: every_individual_minimum_shore_vertex_is_absorbable
+- Parent Section: monochromatic_connector_blocks
+- Position: 2
+- Row version: 1
+- Development version: 1
+- Composition version: 2
+- Composition stale: False
+
+## Composition
+
+Each individual additional vertex admits a compatible extension of the seed, selected by its edge to an anchor. The same phenomenon already starts from a two-shore-vertex seed. Individual extension supplies no collective union-closure or arbitrary-state boundary reachability theorem.
+
+## Development
+
+Fix any additional a∈A\{u,v,w}. Relative to the anchor u, exactly one of a→u or u→a holds.
+
+If a→u, then
+(a,u,x,z,v,w)
+is monochromatic 0: the new triple (a,u,x) is transitive and all later windows are those of the old 000 seed.
+
+If u→a, then
+(u,a,x,z,v,w)
+is also monochromatic 0: both (u,a,x) and (a,x,z) have color 0, and the remaining windows again come from the seed.
+
+Thus every single shore target is individually reachable from the connector state. The obstruction is necessarily collective. This is precisely the boundary-reachability condition that motivates a least-unreachable label.

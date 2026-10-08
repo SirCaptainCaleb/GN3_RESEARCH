@@ -7,12 +7,12 @@
 - Position: 12
 - Row version: 2
 - Development version: 2
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+A reversal-odd one-change coordinate order is equivalent, in every arity, to two same-color tight paths converging to reversed orientations of a shared (r−1)-coordinate center and together covering the whole ground set. A vertex blocking both fronts becomes a common right-extension of the reversed fronts. Closure requires an order-sensitive augmentation or recentering move preserving all coordinates.
 
 ## Development
 
@@ -103,8 +103,3 @@ This identifies the remaining augmentation problem sharply: a maximal nonspannin
 
 ### Audit
 The equivalence uses no assumptions beyond reversal antisymmetry and distinctness of the underlying vertices. In particular it does not use topology, fixed excess, or any GN3-specific tournament structure.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 2

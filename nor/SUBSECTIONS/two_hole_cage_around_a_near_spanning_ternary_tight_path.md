@@ -7,12 +7,12 @@
 - Position: 49
 - Row version: 1
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+If a counterexample has a monochromatic path on all but two vertices, endpoint blocking forces both hole-pair orders and both exposed ends. The two corresponding full cyclic orders have the same four-change word with two singleton opposite-color runs. The hypothesis that such a near-spanning monochromatic path exists is essential and is not proved for every counterexample.
 
 ## Development
 
@@ -50,8 +50,3 @@ For |V|=6 this is the opposite-window-coherent pattern sigma,(1-sigma),sigma,sig
 
 ### Significance
 The two holes are blocked at both ends, while both orders of the hole pair are forced to have color sigma against the exposed one-coordinate ends. This gives a rigid interface between maximum tight paths and the deletion-root-cycle route. No claim is made that every minimum counterexample contains such a path.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1

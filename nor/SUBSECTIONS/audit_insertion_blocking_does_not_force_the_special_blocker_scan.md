@@ -7,12 +7,12 @@
 - Position: 202
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Insertion blocking does not force the scan 1^(p+1)0^q. For every p,q>=2, the alternative scan 11,0^(p+q-1) blocks every insertion into a 0^p1^q carrier and is globally flat tournament-realizable. The claimed flat closure and its audits therefore retain an unproved scan-selection premise. This refutes that premise from insertion alone, not NOR. The valid replacement formula for arbitrary scans is (s_{p-2},1 xor s_{p-1} xor s_p xor kappa,s_{p+1}).
+All insertions into an arbitrarily long globally flat one-change carrier can fail with scan 11 followed by zeros, rather than the advertised special blocker scan. The example is not a NOR counterexample; it refutes the uniqueness premise used in the old flat-closure claim. Special-scan replacement calculations survive only under that explicit hypothesis, while arbitrary-scan routing belongs to Article III.
 
 ## Development
 

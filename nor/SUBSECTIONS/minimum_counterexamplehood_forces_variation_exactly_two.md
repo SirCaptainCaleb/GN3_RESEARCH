@@ -1,0 +1,19 @@
+# Minimum counterexamplehood forces variation exactly two
+
+## Metadata
+
+- ID: minimum_counterexamplehood_forces_variation_exactly_two
+- Parent Section: protected_root_certificates_and_cellular_extraction
+- Position: 282
+- Row version: 1
+- Development version: 1
+- Composition version: 2
+- Composition stale: False
+
+## Composition
+
+A minimum ternary counterexample has minimum full-order variation exactly two by one-window endpoint extension. The argument needs no ternary geometry and now appears in the general endpoint section for every coordinate arity. It supplies a witness, not invariance of two-change states under repairs.
+
+## Development
+
+Fix x. A good order of V minus {x} exists by minimum counterexamplehood. Appending x creates exactly one new ternary window, so the resulting full order has at most two changes. Counterexamplehood excludes at most one change, hence the full order has exactly two changes. Therefore the global minimum variation is exactly two. By section 277 the two-change order must emit a protected fully-curved physical root. Thus variation levels 3 through 9 are irrelevant in a minimum counterexample; the closure frontier begins directly with a protected root, which section 278 places on a flag-compatible monotone return cycle.

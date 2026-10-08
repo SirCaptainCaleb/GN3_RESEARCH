@@ -6,6 +6,10 @@
 
 Use Brainstorms for loose ideation, Subsections for local mathematical development, Sections for coherent research regions, Articles for top-level routes, and Toolkit for reusable mathematics that naturally crosses routes.
 
+## Session lifecycle
+
+Use boot() once at conversational-worker startup. Keep the returned session_id and reuse it for every later write in that conversation. Use status() for current project state and changes(...) for incremental updates.
+
 ## Development and composition
 
 Subsections are the manuscript development objects. Sections and Articles organize material and expose compositions rather than independent development prose.

@@ -7,16 +7,12 @@
 - Position: 45
 - Row version: 2
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Section 42's truncation argument does not justify first-post-switch polarization when q>1. The shortened ground set is a proper restriction of the minimum counterexample; it is not itself a counterexample. Thus neither endpoint blocking at the new endpoint nor rejection of a good cyclic cut is inherited.
-
-Section 43's singleton-final-run conclusion is valid independently. On the full ground set, let T have word sigma^p(1-sigma) and residual deletion prefixes form a directed 3-cycle. Put w=t_m. If h(w,b,c)=1-sigma, the full order (w,b,c,a,t_1,...,t_{m-1}) has word (1-sigma)^2 sigma^{p+2}, closing the instance. Otherwise the cyclic rotations give h(w,a,b)=h(w,b,c)=h(w,c,a)=sigma. Then (w,a,b,t_1,...,t_{m-1}) is a constant-color deletion order, and prepending c closes the instance. No minimum-size hypothesis is needed.
-
-Hence a counterexample's common-tail deletion cycle must have final run length at least two. This cannot be iterated by truncation. Development includes an arbitrarily long globally soluble family satisfying all local rigidity and endpoint identities while violating the claimed general switch polarization.
+A truncated deletion tail is a proper restriction and does not inherit ambient endpoint blocking or counterexamplehood. The singleton-final-run exclusion survives by a separate explicit full-support construction. It cannot be iterated by truncation to claim general suffix polarization.
 
 ## Development
 

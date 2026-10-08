@@ -7,16 +7,12 @@
 - Position: 46
 - Row version: 2
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-Two reversal-antisymmetric ternary colorings can have the same antimatroid support family F_{0,(u,v)}=2^{ {a,b} } but disjoint maximal-support tight witness orders. In both, set h(a,u,v)=h(b,u,v)=0. In one, set h(a,b,u)=0,h(b,a,u)=1; in the other interchange those colors. Complete reverses complementarily. The full-support witnesses are respectively (a,b,u,v) and (b,a,u,v).
-
-Thus a feasible-support chain need not lift through front extensions of the chosen witness, and the antimatroid basic-word language need not coincide with the tight witness language. Sections 41 and 44's set-family structure remains valid, but gluing needs control of exposed ordered tuples and actual witness orders.
-
-Any spanning conclusion must also account for vertices outside the local support plus terminal tuple. An abundant coordinate in a support family supplies a counting statement, with a further witness-preserving step needed to reach NOR closure.
+Identical antimatroid feasible-support families can require disjoint maximal-support tight witness orders. Support chains therefore need not lift through front extensions of a chosen witness. An augmentation theorem must preserve exposed ordered tuples, actual witness orders, and all ambient coordinates.
 
 ## Development
 

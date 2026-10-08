@@ -8,10 +8,10 @@
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Composition version: 9
+- Composition version: 10
 - Composition stale: False
-- Subsections existing when composed: 63
-- Subsections now: 63
+- Subsections existing when composed: 66
+- Subsections now: 66
 
 ## Development tree
 
@@ -75,6 +75,9 @@
 - [Subsection 58 — The surviving earlier defect either hits a full barrier or crosses the flip block](../SUBSECTIONS/the_surviving_earlier_defect_either_hits_a_full_barrier_or_crosses_the_flip_block.md) (`the_surviving_earlier_defect_either_hits_a_full_barrier_or_crosses_the_flip_block`; development v1; composition vNone; stale=False)
 - [Subsection 59 — After crossing the flip block the surviving defect becomes a monotone one-band](../SUBSECTIONS/after_crossing_the_flip_block_the_surviving_defect_becomes_a_monotone_one_band.md) (`after_crossing_the_flip_block_the_surviving_defect_becomes_a_monotone_one_band`; development v1; composition vNone; stale=False)
 - [Subsection 60 — Special perfect-blocker scans terminate in a one-change order or a protected root](../SUBSECTIONS/special_perfect_blocker_scans_terminate_in_a_one_change_order_or_a_protected_root.md) (`special_perfect_blocker_scans_terminate_in_a_one_change_order_or_a_protected_root`; development v1; composition v1; stale=False)
-- [Subsection 61 — Ternary short minimum phases close or emit a protected root](../SUBSECTIONS/ternary_short_minimum_phases_close_or_emit_a_protected_root.md) (`ternary_short_minimum_phases_close_or_emit_a_protected_root`; development v1; composition v1; stale=False)
-- [Subsection 62 — Every double-full singleton has two one-sided monotone resolutions](../SUBSECTIONS/every_double_full_singleton_has_two_one_sided_monotone_resolutions.md) (`every_double_full_singleton_has_two_one_sided_monotone_resolutions`; development v1; composition v1; stale=False)
+- [Subsection 61 — Ternary short minimum phases close or emit a protected root](../SUBSECTIONS/ternary_short_minimum_phases_close_or_emit_a_protected_root.md) (`ternary_short_minimum_phases_close_or_emit_a_protected_root`; development v1; composition v2; stale=False)
+- [Subsection 62 — Every double-full singleton has two one-sided monotone resolutions](../SUBSECTIONS/every_double_full_singleton_has_two_one_sided_monotone_resolutions.md) (`every_double_full_singleton_has_two_one_sided_monotone_resolutions`; development v1; composition v2; stale=False)
 - [Subsection 63 — Distance-three backtracks now terminate through one-sided resolution](../SUBSECTIONS/distance_three_backtracks_now_terminate_through_one_sided_resolution.md) (`distance_three_backtracks_now_terminate_through_one_sided_resolution`; development v1; composition vNone; stale=False)
+- [Subsection 64 — Residual A2 scan rises reduce to double-full or the unique 1001 full-flat motif](../SUBSECTIONS/residual_a2_scan_rises_reduce_to_double_full_or_the_unique_1001_full_flat_motif.md) (`residual_a2_scan_rises_reduce_to_double_full_or_the_unique_1001_full_flat_motif`; development v1; composition v1; stale=False)
+- [Subsection 65 — Residual A2 scan rises either close or exit through a protected root](../SUBSECTIONS/residual_a2_scan_rises_either_close_or_exit_through_a_protected_root.md) (`residual_a2_scan_rises_either_close_or_exit_through_a_protected_root`; development v1; composition v1; stale=False)
+- [Subsection 66 — No-rise residual A2 scans close or exit through a protected root](../SUBSECTIONS/no_rise_residual_a2_scans_close_or_exit_through_a_protected_root.md) (`no_rise_residual_a2_scans_close_or_exit_through_a_protected_root`; development v1; composition v1; stale=False)

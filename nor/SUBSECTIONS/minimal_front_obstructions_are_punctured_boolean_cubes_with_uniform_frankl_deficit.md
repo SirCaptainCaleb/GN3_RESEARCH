@@ -7,20 +7,12 @@
 - Position: 12
 - Row version: 1
 - Development version: 1
-- Composition version: 1
+- Composition version: 2
 - Composition stale: False
 
 ## Composition
 
-A maximal monochromatic tight path in a directed-NOR counterexample exposes an opposite-color front family containing every omitted singleton but not their total union. Choosing an inclusion-minimal infeasible support (U) gives exactly
-[
-2^U\setminus\{U\}
-]
-on that support: every proper subset has a tight witness ending at the same terminal state, while (U) has none. Hence every deletion (U\setminus\{u\}) has a same-tail witness blocked by (u) at its exposed front.
-
-The support shadow has (|2^U\setminus\{U\}|=2^{|U|}-1), and each coordinate occurs (2^{|U|-1}-1) times, so every signed Frankl bias is exactly (-1). Adding the single missing top simultaneously restores union closure and moves every coordinate to bias (0). Thus the local NOR synchronization defect and the local Frankl deficit are literally the same missing join.
-
-The remaining closure problem is ordered: exploit the complete family of same-tail deletion witnesses to realize the missing top or splice/recenter them into a spanning one-change order.
+A minimal fixed-front support obstruction can realize all proper subsets while missing their full union, with a uniform frequency deficit. This isolates the missing top as an ordered spanning target; frequency information does not create its witness.
 
 ## Development
 

@@ -5,14 +5,14 @@
 - ID: full_support_interval_reversal_calculus_for_cyclic_ternary_nor
 - Parent Section: higher_memory_norine_geodesics
 - Position: 50
-- Row version: 1
-- Development version: 1
-- Composition version: None
+- Row version: 2
+- Development version: 2
+- Composition version: 1
 - Composition stale: False
 
 ## Composition
 
-(none yet)
+Reversing a proper cyclic coordinate interval reverses and complements its internal ternary status string, preserving all internal change counts and full support. Variation changes only through four reconnection statuses and at most six distinct incident transitions; overlapping reconnection zones are counted once. A minimum-variation cycle satisfies every resulting boundary non-improvement inequality. These inequalities supply an exact repair calculus, not an established contradiction.
 
 ## Development
 
@@ -77,7 +77,7 @@ h(x_2,x_1,b),\quad h(x_1,b,q).
 \]
 Every other changed status is an internal status of \(R\), hence belongs to the reversed-complemented block from Lemma 1.
 
-Equivalently, the difference \(q(C^R)-q(C)\) is determined entirely by the six transition bits incident with these two pairs of boundary statuses. No proper subset of the ambient vertex set is introduced.
+Equivalently, the difference \(q(C^R)-q(C)\) is determined entirely by at most six distinct transition bits incident with these two pairs of boundary statuses. When only two vertices lie outside the interval, the reconnection zones overlap; their shared transition is counted only once. No proper subset of the ambient vertex set is introduced.
 
 ### Corollary 3: extremal cycles satisfy every interval-reversal inequality
 
@@ -85,7 +85,7 @@ If \(C\) has minimum cyclic variation among all cyclic coordinate orders on the 
 \[
 q(C^R)\ge q(C).
 \]
-By Lemma 1 this is a purely boundary inequality: the six new boundary transition bits contribute at least as much total variation as the six old boundary transition bits.
+By Lemma 1 this is a purely boundary inequality: the new distinct boundary transition bits contribute at least as much total variation as the old ones, counting any overlap of the two reconnection zones only once.
 
 In particular, for a minimum directed-\(N_4\) counterexample, Section 20 supplies a cyclic order with \(q(C)=4\). That order is globally variation-minimal, so every full-support interval reversal satisfies the boundary non-improvement inequality.
 
@@ -100,8 +100,3 @@ The four-change profile from a deletion order has cyclic run lengths
 up to rotation. Closure at ternary arity can therefore be attacked by choosing reversals whose endpoints straddle selected run boundaries and showing that the resulting boundary inequality cannot hold simultaneously for all choices.
 
 This note does not assert that the resulting inequality system is already inconsistent. Its contribution is to replace truncation by a full-support move with an invariant interior and a finite boundary obligation.
-
-## Frontier
-
-- Development version when composed: None
-- Development version now: 1
