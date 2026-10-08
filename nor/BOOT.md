@@ -8,5 +8,5 @@ Call changes(...) once using this artifact's snapshot revision as the freshness 
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
-Snapshot revision: 3432
-Generated: 2026-10-08T05:20:27.007004+00:00
+Snapshot revision: 3451
+Generated: 2026-10-08T06:16:49.369144+00:00

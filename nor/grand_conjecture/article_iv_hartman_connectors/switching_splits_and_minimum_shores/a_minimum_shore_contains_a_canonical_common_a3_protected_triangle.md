@@ -1,1 +1,3 @@
 # A minimum shore contains a canonical common-A3 protected triangle
+
+Under the minimum-shore protected-completeness conclusions, every vertex of A has both an in-neighbor and an out-neighbor in the switched tournament induced by A. Consequently A cannot be transitive and contains a directed three-cycle u→v→w→u. The special-coordinate identity α(x,a,b)=α(z,a,b), valid for a,b∈A, identifies the ternary face table around this triangle with either x or z. Thus the minimum obstruction contains a common four-coordinate protected triangle; its existence gives a local seed but does not yet absorb all shore coordinates.

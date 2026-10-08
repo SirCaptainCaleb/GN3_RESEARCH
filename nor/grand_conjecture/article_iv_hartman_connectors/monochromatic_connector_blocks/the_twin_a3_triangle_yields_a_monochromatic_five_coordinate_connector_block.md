@@ -1,1 +1,3 @@
 # The twin A3 triangle yields a monochromatic five-coordinate connector block
+
+Fix a switched flat split B→z→A→x and a directed shore triangle u→v→w→u. The five-coordinate order (u,x,z,v,w) has color zero on each of its three consecutive triples: the special-pair flatness identities give zero on (u,x,z) and (x,z,v), and the final directed edge v→w gives zero on (z,v,w). Both exposed ordered pairs u→x and v→w are forward. The reversal gives the complementary monochromatic orientation. Thus the triangle yields a compatible connector on five coordinates. This proves existence of a protected seed, not extension to arbitrary A.

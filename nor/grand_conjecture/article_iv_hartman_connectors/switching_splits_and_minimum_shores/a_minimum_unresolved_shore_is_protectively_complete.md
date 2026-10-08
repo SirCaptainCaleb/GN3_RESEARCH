@@ -1,1 +1,3 @@
 # A minimum unresolved shore is protectively complete
+
+In a shortcut-free normalized split B→z→A→x, select a nonempty signature shore A minimal by cardinality. For every u∈A, absence of a protected shortcut on xu or zu would yield a smaller nonempty signature shore; thus each such pair is protectively adjacent. For u,v∈A, the signature outside A is constant. If uv were shortcut-free and nonclonal, the opposite nonempty signature shore would be properly contained in A, again contradicting minimality. Therefore the induced protected adjacency graph on A∪{x,z} is complete apart from the distinguished missing edge xz. This is a structural reduction, not an assertion that all the corresponding connector orders can be chosen coherently.

@@ -1,1 +1,3 @@
 # The crossed endpoint residue closes in its first four coordinates
+
+In the crossed endpoint configurations surviving the previously established three-block shortcut analysis, the first rail disagreement of the binary ladder has X_1=R_1. The four-coordinate carrier (x,w_1,w_2,z) consequently has the actual shortcut x→z and its two complementary faces are curved. Thus this particular crossed endpoint branch already contains a protected shortcut in its first four coordinates; it requires neither long ladder transport nor a topological zero-extraction argument. The remaining challenge lies in transporting a realized shortcut into the outside-order context needed for closure, not in producing it locally in this branch.

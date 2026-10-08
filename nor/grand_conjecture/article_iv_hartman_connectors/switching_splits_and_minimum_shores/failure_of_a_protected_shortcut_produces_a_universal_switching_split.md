@@ -1,1 +1,3 @@
 # Failure of a protected shortcut produces a universal switching split
+
+Assume a pair x,z has no fully curved protected carrier of the shortcut from x to z. Put d(u)=α(x,z,u), and let A and B be its zero and one shores. The pair signature is nonconstant in a minimal counterexample, since a constant signature permits clone contraction. The flatness identities of the representing tournament admit a switching normalization with the block dominance B→z→A→x, including B→A. This fixes the orientation convention for every subsequent connector calculation. The passage from the absence of a shortcut to the split is proved conditionally upon the established minimal-counterexample and contraction reductions; the split itself does not produce a spanning NOR-good order.
