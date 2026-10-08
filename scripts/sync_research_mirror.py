@@ -12,7 +12,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "nor", "linp")
-TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources","items","item_results","nodes")
+TABLES = ("nodes","article_sections","brainstorms","dictionary","compositions","composition_sources")
 PAGE = 500
 
 def headers():
@@ -484,6 +484,30 @@ def toolkit_entry_line(r: dict[str, Any]) -> str:
 def build(schema: str):
     root = STAGE / schema
     data = {t: rows(schema, t) for t in TABLES}
+
+    # Canonical data: all Article/Section/Subsection/Item/Result/Toolkit/auxiliary
+    # document records are stored in the single typed nodes table. The following
+    # dictionaries are in-memory projections for the existing Markdown builders,
+    # not extra database tables, queries, or persistent caches.
+    projected = {"documents": [], "research": [], "section_subsections": [],
+                 "items": [], "item_results": []}
+    source_by_type = {
+        "article": "documents", "overview": "documents",
+        "guide": "documents", "reflexes": "documents",
+        "section": "research", "toolkit": "research",
+        "subsection": "section_subsections", "item": "items",
+        "result": "item_results",
+    }
+    for node in data["nodes"]:
+        group = source_by_type.get(node["type"])
+        if group:
+            rec = dict(node.get("data") or {})
+            rec["id"] = node["id"]
+            rec["consumes"] = node.get("consumes", [])
+            rec["consumed_by"] = node.get("consumed_by", [])
+            rec["type"] = node["type"]
+            projected[group].append(rec)
+    data.update(projected)
     rev = context(schema, "revision")
     universal_docs = context(schema, "universal_documents")
     broadcasts = context(schema, "startup_broadcasts")
