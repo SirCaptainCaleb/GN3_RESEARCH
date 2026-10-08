@@ -410,18 +410,15 @@
   "article_versions": {
     "algebraic_and_steiner_constructions": {
       "composition": {
-        "body_chars": 16888,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 8,
-          "latest_section_position_when_composed": 8,
-          "sections_existing_when_composed": 8,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 8
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -429,18 +426,15 @@
     },
     "ascending_edges_in_a_dense_subgraph": {
       "composition": {
-        "body_chars": 12611,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 9,
-          "latest_section_position_when_composed": 9,
-          "sections_existing_when_composed": 9,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 9
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -448,18 +442,15 @@
     },
     "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": {
       "composition": {
-        "body_chars": 11419,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 7,
-          "latest_section_position_when_composed": 7,
-          "sections_existing_when_composed": 7,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 7
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -467,18 +458,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph": {
       "composition": {
-        "body_chars": 9674,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 8,
-          "latest_section_position_when_composed": 8,
-          "sections_existing_when_composed": 8,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 8
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -486,18 +474,15 @@
     },
     "induction_on_the_complement_of_a_longest_path": {
       "composition": {
-        "body_chars": 9167,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 8,
-          "latest_section_position_when_composed": 8,
-          "sections_existing_when_composed": 8,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 8
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -505,18 +490,15 @@
     },
     "snake_accounting_and_the_43_48_equality_problem": {
       "composition": {
-        "body_chars": 19870,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 11,
-          "latest_section_position_when_composed": 11,
-          "sections_existing_when_composed": 11,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 11
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -524,18 +506,15 @@
     },
     "terminal_pair_cycles_and_rotations": {
       "composition": {
-        "body_chars": 9149,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 8,
-          "latest_section_position_when_composed": 8,
-          "sections_existing_when_composed": 8,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 8
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -543,18 +522,15 @@
     },
     "transversal_designs_latin_blowups_and_products": {
       "composition": {
-        "body_chars": 11659,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_section_position_now": 6,
-          "latest_section_position_when_composed": 6,
-          "sections_existing_when_composed": 6,
+          "latest_section_position_when_composed": null,
+          "sections_existing_when_composed": 0,
           "sections_now": 6
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -563,7 +539,7 @@
   },
   "brainstorm_count": 2,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-08T01:46:48.998853+00:00",
+  "generated_at": "2026-10-08T01:58:45.585108+00:00",
   "item_count": 127,
   "mirror_format": 18,
   "result_count": 0,
@@ -571,18 +547,15 @@
   "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {
       "composition": {
-        "body_chars": 3744,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -591,18 +564,15 @@
     },
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case": {
       "composition": {
-        "body_chars": 2857,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -611,18 +581,15 @@
     },
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification": {
       "composition": {
-        "body_chars": 3030,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -631,18 +598,15 @@
     },
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation": {
       "composition": {
-        "body_chars": 1988,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -651,18 +615,15 @@
     },
     "algebraic_and_steiner_constructions_introduction": {
       "composition": {
-        "body_chars": 371,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -671,18 +632,15 @@
     },
     "algebraic_and_steiner_constructions_ternary_affine_systems": {
       "composition": {
-        "body_chars": 1538,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -691,18 +649,15 @@
     },
     "algebraic_and_steiner_constructions_the_general_one_third_scale_construction": {
       "composition": {
-        "body_chars": 1041,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -711,18 +666,15 @@
     },
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem": {
       "composition": {
-        "body_chars": 1154,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -731,18 +683,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound": {
       "composition": {
-        "body_chars": 638,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -751,18 +700,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect": {
       "composition": {
-        "body_chars": 1847,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -771,18 +717,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth": {
       "composition": {
-        "body_chars": 707,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -791,18 +734,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_introduction": {
       "composition": {
-        "body_chars": 579,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -811,18 +751,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges": {
       "composition": {
-        "body_chars": 3076,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -831,18 +768,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments": {
       "composition": {
-        "body_chars": 684,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -851,18 +785,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs": {
       "composition": {
-        "body_chars": 2188,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -871,18 +802,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_rank_superlevels": {
       "composition": {
-        "body_chars": 883,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -891,18 +819,15 @@
     },
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem": {
       "composition": {
-        "body_chars": 728,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -911,18 +836,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality": {
       "composition": {
-        "body_chars": 1943,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -931,18 +853,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction": {
       "composition": {
-        "body_chars": 529,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -951,18 +870,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths": {
       "composition": {
-        "body_chars": 908,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -971,18 +887,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity": {
       "composition": {
-        "body_chars": 1008,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -991,18 +904,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph": {
       "composition": {
-        "body_chars": 1402,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1011,18 +921,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem": {
       "composition": {
-        "body_chars": 947,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1031,18 +938,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity": {
       "composition": {
-        "body_chars": 731,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1051,18 +955,15 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like": {
       "composition": {
-        "body_chars": 915,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1071,18 +972,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion": {
       "composition": {
-        "body_chars": 982,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1091,18 +989,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit": {
       "composition": {
-        "body_chars": 2165,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1111,18 +1006,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_inductive_reduction": {
       "composition": {
-        "body_chars": 905,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1131,18 +1023,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_introduction": {
       "composition": {
-        "body_chars": 480,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1151,18 +1040,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument": {
       "composition": {
-        "body_chars": 459,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1171,18 +1057,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality": {
       "composition": {
-        "body_chars": 923,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1191,18 +1074,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold": {
       "composition": {
-        "body_chars": 1188,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1211,18 +1091,15 @@
     },
     "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource": {
       "composition": {
-        "body_chars": 753,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1231,18 +1108,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_global_identity": {
       "composition": {
-        "body_chars": 3115,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1251,18 +1125,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative": {
       "composition": {
-        "body_chars": 1787,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1271,18 +1142,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph": {
       "composition": {
-        "body_chars": 1520,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1291,18 +1159,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_introduction": {
       "composition": {
-        "body_chars": 845,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1311,18 +1176,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations": {
       "composition": {
-        "body_chars": 599,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1331,18 +1193,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds": {
       "composition": {
-        "body_chars": 1083,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1351,18 +1210,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges": {
       "composition": {
-        "body_chars": 1524,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1371,18 +1227,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound": {
       "composition": {
-        "body_chars": 2672,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1391,18 +1244,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count": {
       "composition": {
-        "body_chars": 2620,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1411,18 +1261,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication": {
       "composition": {
-        "body_chars": 886,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1431,18 +1278,15 @@
     },
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces": {
       "composition": {
-        "body_chars": 1582,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1451,18 +1295,15 @@
     },
     "terminal_pair_cycles_and_rotations_a_false_strengthening": {
       "composition": {
-        "body_chars": 483,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1471,18 +1312,15 @@
     },
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest": {
       "composition": {
-        "body_chars": 1524,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1491,18 +1329,15 @@
     },
     "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter": {
       "composition": {
-        "body_chars": 644,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1511,18 +1346,15 @@
     },
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter": {
       "composition": {
-        "body_chars": 1512,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1531,18 +1363,15 @@
     },
     "terminal_pair_cycles_and_rotations_introduction": {
       "composition": {
-        "body_chars": 563,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1551,18 +1380,15 @@
     },
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path": {
       "composition": {
-        "body_chars": 1079,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1571,18 +1397,15 @@
     },
     "terminal_pair_cycles_and_rotations_the_remaining_theorem": {
       "composition": {
-        "body_chars": 964,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1591,18 +1414,15 @@
     },
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality": {
       "composition": {
-        "body_chars": 1294,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1611,18 +1431,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation": {
       "composition": {
-        "body_chars": 2169,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1631,18 +1448,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow": {
       "composition": {
-        "body_chars": 906,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1651,18 +1465,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction": {
       "composition": {
-        "body_chars": 494,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1671,18 +1482,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation": {
       "composition": {
-        "body_chars": 1507,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1691,18 +1499,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction": {
       "composition": {
-        "body_chars": 1484,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1711,18 +1516,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors": {
       "composition": {
-        "body_chars": 2544,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 4
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1731,18 +1533,15 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem": {
       "composition": {
-        "body_chars": 1198,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1751,18 +1550,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system": {
       "composition": {
-        "body_chars": 3609,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1771,18 +1567,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_cartesian_products": {
       "composition": {
-        "body_chars": 1937,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1791,18 +1584,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_introduction": {
       "composition": {
-        "body_chars": 518,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 1
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1811,18 +1601,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths": {
       "composition": {
-        "body_chars": 1300,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1831,18 +1618,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set": {
       "composition": {
-        "body_chars": 2185,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 2,
-          "latest_subsection_no_when_composed": 2,
-          "subsections_existing_when_composed": 2,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 2
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1851,18 +1635,15 @@
     },
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems": {
       "composition": {
-        "body_chars": 1157,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": null,
+          "subsections_existing_when_composed": 0,
           "subsections_now": 3
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1875,16 +1656,13 @@
   "subsection_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_a": {
       "composition": {
-        "body_chars": 249,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1894,16 +1672,13 @@
     },
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_b": {
       "composition": {
-        "body_chars": 561,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1929,16 +1704,13 @@
     },
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a": {
       "composition": {
-        "body_chars": 162,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1964,16 +1736,13 @@
     },
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_a": {
       "composition": {
-        "body_chars": 104,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -1983,16 +1752,13 @@
     },
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_b": {
       "composition": {
-        "body_chars": 695,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2018,16 +1784,13 @@
     },
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a": {
       "composition": {
-        "body_chars": 93,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2037,16 +1800,13 @@
     },
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b": {
       "composition": {
-        "body_chars": 506,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2088,16 +1848,13 @@
     },
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_a": {
       "composition": {
-        "body_chars": 99,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2107,16 +1864,13 @@
     },
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_b": {
       "composition": {
-        "body_chars": 404,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2158,16 +1912,13 @@
     },
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a": {
       "composition": {
-        "body_chars": 607,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2193,16 +1944,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_a": {
       "composition": {
-        "body_chars": 95,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2228,16 +1976,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_a": {
       "composition": {
-        "body_chars": 678,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2263,16 +2008,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_a": {
       "composition": {
-        "body_chars": 160,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2314,16 +2056,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_a": {
       "composition": {
-        "body_chars": 840,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2333,16 +2072,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_b": {
       "composition": {
-        "body_chars": 1011,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2384,16 +2120,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_a": {
       "composition": {
-        "body_chars": 265,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2403,16 +2136,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_b": {
       "composition": {
-        "body_chars": 881,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2438,16 +2168,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a": {
       "composition": {
-        "body_chars": 48,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2473,16 +2200,13 @@
     },
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_a": {
       "composition": {
-        "body_chars": 48,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2508,16 +2232,13 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a": {
       "composition": {
-        "body_chars": 1389,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2575,16 +2296,13 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_a": {
       "composition": {
-        "body_chars": 238,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2610,16 +2328,13 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_a": {
       "composition": {
-        "body_chars": 128,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2645,16 +2360,13 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem_subsection_a": {
       "composition": {
-        "body_chars": 93,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2712,16 +2424,13 @@
     },
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_a": {
       "composition": {
-        "body_chars": 155,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2747,16 +2456,13 @@
     },
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_a": {
       "composition": {
-        "body_chars": 229,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2766,16 +2472,13 @@
     },
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_b": {
       "composition": {
-        "body_chars": 461,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2849,16 +2552,13 @@
     },
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a": {
       "composition": {
-        "body_chars": 58,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2884,16 +2584,13 @@
     },
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_a": {
       "composition": {
-        "body_chars": 90,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2935,16 +2632,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_a": {
       "composition": {
-        "body_chars": 445,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2954,16 +2648,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_b": {
       "composition": {
-        "body_chars": 1251,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -2973,16 +2664,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_c": {
       "composition": {
-        "body_chars": 890,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3008,16 +2696,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_a": {
       "composition": {
-        "body_chars": 1101,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3043,16 +2728,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph_subsection_a": {
       "composition": {
-        "body_chars": 224,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3110,16 +2792,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a": {
       "composition": {
-        "body_chars": 237,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3161,16 +2840,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_a": {
       "composition": {
-        "body_chars": 2384,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3196,16 +2872,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_a": {
       "composition": {
-        "body_chars": 854,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3231,16 +2904,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a": {
       "composition": {
-        "body_chars": 96,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3266,16 +2936,13 @@
     },
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a": {
       "composition": {
-        "body_chars": 724,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3317,16 +2984,13 @@
     },
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a": {
       "composition": {
-        "body_chars": 194,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3336,16 +3000,13 @@
     },
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b": {
       "composition": {
-        "body_chars": 515,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3387,16 +3048,13 @@
     },
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_a": {
       "composition": {
-        "body_chars": 232,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3438,16 +3096,13 @@
     },
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_a": {
       "composition": {
-        "body_chars": 88,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3473,16 +3128,13 @@
     },
     "terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a": {
       "composition": {
-        "body_chars": 77,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3508,16 +3160,13 @@
     },
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_a": {
       "composition": {
-        "body_chars": 237,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3527,16 +3176,13 @@
     },
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_b": {
       "composition": {
-        "body_chars": 637,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3562,16 +3208,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_a": {
       "composition": {
-        "body_chars": 519,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3581,16 +3224,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_b": {
       "composition": {
-        "body_chars": 567,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3648,16 +3288,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_a": {
       "composition": {
-        "body_chars": 159,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3667,16 +3304,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_b": {
       "composition": {
-        "body_chars": 1109,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3702,16 +3336,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a": {
       "composition": {
-        "body_chars": 88,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3737,16 +3368,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_a": {
       "composition": {
-        "body_chars": 295,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3756,16 +3384,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_b": {
       "composition": {
-        "body_chars": 324,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3775,16 +3400,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_c": {
       "composition": {
-        "body_chars": 1197,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3810,16 +3432,13 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_a": {
       "composition": {
-        "body_chars": 552,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3845,16 +3464,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_a": {
       "composition": {
-        "body_chars": 453,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3864,16 +3480,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_b": {
       "composition": {
-        "body_chars": 2462,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3899,16 +3512,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a": {
       "composition": {
-        "body_chars": 225,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3918,16 +3528,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b": {
       "composition": {
-        "body_chars": 1138,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -3969,16 +3576,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_a": {
       "composition": {
-        "body_chars": 748,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4004,16 +3608,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_a": {
       "composition": {
-        "body_chars": 329,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4039,16 +3640,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_a": {
       "composition": {
-        "body_chars": 71,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
@@ -4058,16 +3656,13 @@
     },
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_b": {
       "composition": {
-        "body_chars": 358,
-        "composed_through_revision": 402,
-        "composition_version": 1,
+        "composition_version": null,
         "frontier": {
-          "current": true,
+          "current": false,
           "development_version_now": 1,
-          "development_version_when_composed": 1
+          "development_version_when_composed": null
         },
-        "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "has_composition": false,
         "stale": false,
         "stale_dependencies": []
       },
