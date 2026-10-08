@@ -24,6 +24,10 @@ Articles, Sections, and Subsections may have **no composition**. That is an ordi
 
 Every composition that does exist must read as a genuine mathematical publication at its level: an Article as an integrated paper-scale argument, a Section as a developed section of that paper, and a Subsection as a coherent local mathematical exposition. State precisely defined hypotheses, objects, results, proofs or explicitly identified proof gaps, and logical dependencies. Define every technical term in the composition itself or in the project Dictionary; distinguish proved claims from conjectures, heuristics, and strategic tasks. Synthesize children mathematically rather than listing them or narrating the work history. A list of item titles, numbered container references, status bullet points, or a progress report is not a composition. When the material is not yet ripe for mathematical synthesis, leave its parent composition absent and keep working in Items and Results.
 
+## Publication-worthy selective synthesis
+
+**Publication-worthy selective synthesis** is the two-part operation of (1) integrating selected lower-level mathematics into a coherent, precise, publication-quality argument and (2) deliberately omitting lower-level material that is superseded, redundant, exploratory, inconclusive, or no longer relevant to the strongest route. An Article may omit Sections, a Section may omit Subsections, and a Subsection may omit Items or individual Results. Omitted material remains preserved in its own lower-level records; omission means exclusion from the higher-level exposition, not deletion. Dependencies identify the selected mathematical inputs, not every child in the container. A composition is not a catalog, progress report, or mandatory summary of all children.
+
 ## Dependencies and staleness
 
 Dependencies belong to compositions. An Item composition compresses its Results. A Subsection composition may depend on selected direct Item compositions; a Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions.
@@ -49,3 +53,7 @@ Use staged batches for related multi-object writes. Review the decoded batch for
 ## Style
 
 Use standard mathematical vocabulary and the project Dictionary. State results publication-style, preserve useful failed routes as development evidence, and keep operational instructions concise and affirmative.
+
+## Publication-quality selective synthesis
+
+Publication-quality selective synthesis combines two operations: integrating selected child mathematics into a coherent, rigorous argument, and deliberately omitting material superseded by stronger arguments, redundant, exploratory, or no longer part of the best route. The composition must read as mathematical publication prose, with precise statements, proofs or clear gaps, and every technical term defined locally or in the Dictionary. Articles may omit Sections, Sections may omit Subsections, and Subsections may omit Items or individual Results. Omission from a composition never deletes the underlying research. Dependencies identify the child compositions actually used, not an inventory of all children.

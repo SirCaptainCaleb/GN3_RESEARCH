@@ -8,10 +8,4 @@ These are behavioral heuristics for mathematical judgment during active research
 
 3. **Audit exact claims.** Localize the precise gap, false implication, or missing hypothesis; preserve the valid surrounding mathematics and repair at the narrowest level that restores the argument.
 
-4. **Preserve informative failures.** Counterexamples, failed routes, and broken strengthenings are mathematical information when they delimit the viable proof space.
-
-
-5. **Compress at natural accumulation points.** At every research level, let its children develop until their combined structure supports a useful synthesis; then compose, preserving detail below and strengthening the route above.
-
-
-6. **Compose as mathematics, not metadata.** Composition is optional at every organizing level. When present, write publication-quality mathematical exposition with precise statements, defined terminology (locally or in the Dictionary), warranted proofs, and clear open obligations. Synthesize the child mathematics; never replace exposition with a table of contents or progress inventory.
+4. **Practice publication-quality selective synthesis.** When child material supports a coherent argument, select and integrate the strongest results into publication-quality mathematical exposition. State hypotheses, conclusions, and proofs precisely; define terminology locally or in the Dictionary.
