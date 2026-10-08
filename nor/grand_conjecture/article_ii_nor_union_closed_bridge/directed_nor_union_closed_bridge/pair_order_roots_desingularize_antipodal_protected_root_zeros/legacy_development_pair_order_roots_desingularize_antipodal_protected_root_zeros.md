@@ -1,0 +1,9 @@
+# Pair-order roots desingularize antipodal protected-root zeros — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Local desingularization of an antipodal protected-root two-cycle. Suppose a level-1 protected exchange produces opposite physical roots rho=e_x-e_y and -rho=e_y-e_x. The corresponding zero is the antipodal two-cycle base case of the Radon program. On the common codimension-two core, the inert/mutual-blocker construction gives a consecutive pair-insertion packet in one of the orders (x,y) or (y,x). Counterexamplehood forces a 10 descent in that packet, hence a secondary physical root sigma=e_a-e_c from two adjacent pair windows. At least one of a,c is a core coordinate distinct from x,y: while the pair slides through the local packet, an adjacent-window step cannot drop x and enter y (or vice versa), because x and y occur consecutively and the pair order is fixed; internal slides drop/enter core coordinates, and the final slide can drop one blocker only while entering a core coordinate. Therefore sigma is never a nonzero scalar multiple of rho. In the type-A root space W this means rho and sigma are linearly independent. Consequently the broken path rho -> sigma -> -rho can be chosen inside W\{0}; after radial normalization it gives a path on the root sphere joining the two antipodal level-1 directions through an actual codimension-two protected certificate. This supplies the local analytic model for blowing up an antipodal root zero: replace the straight edge between rho and -rho, which necessarily crosses the origin, by two edges through the secondary pair-order vertex sigma. Reversal gives the mirrored path -rho -> -sigma -> rho on the antipodal partner cell. Together with the free-cell pairing lemma, there is no local equivariance obstruction. The remaining global task is to verify that these secondary vertices attach consistently when several inert exchanges share a protected codimension-two face.

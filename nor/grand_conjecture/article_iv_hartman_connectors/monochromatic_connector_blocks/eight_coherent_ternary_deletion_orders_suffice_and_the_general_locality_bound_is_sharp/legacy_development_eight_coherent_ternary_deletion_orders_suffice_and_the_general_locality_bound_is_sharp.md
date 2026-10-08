@@ -1,0 +1,23 @@
+# Eight coherent ternary deletion orders suffice, and the general locality bound is sharp — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+## Sharp deletion-coherence threshold for one-change orders
+
+Let r>=2 and let h assign a binary color to every ordered r-tuple of distinct labels of V. An order is good when its consecutive r-window color word has at most one change. Neither oddness nor tournament representability is assumed.
+
+THEOREM. Let D be a set of at least 2r+2 labels. For each d in D, suppose V\{d} has a good order pi_d. If the pi_d agree on the relative order of every pair of labels shared by their domains, then V has a good order pi whose restriction to V\{d} is pi_d for every d in D. For ternary NOR, eight mutually coherent deletion orders suffice (strengthening the earlier ten-witness bound in connector-block subsection 42).
+
+PROOF. Agreement defines a strict order on each pair: choose any d outside the pair. Every triple of labels has a common deletion d in D outside it; the restriction pi_d proves transitivity, so these comparisons define a total order pi. Its restriction to every V\{d} equals pi_d.
+
+Suppose pi has at least two color changes. Select the adjacent r-windows W_i,W_{i+1} at the first change, with colors a,b (a≠b). Choose the earliest later window W_j of color a (the next change back). The ordered color subsequence is a,b,a. The support of W_i and W_{i+1} has exactly r+1 labels; adding W_j uses at most 2r+1 labels. Since |D|>=2r+2, select d in D outside their union. All three windows remain consecutive in pi_d, in their original order and with the same colors. This contradicts goodness of pi_d.
+
+SHARPNESS FOR GENERAL REVERSAL-ODD COLORINGS. The bound 2r+2 cannot be reduced within the class of arbitrary reversal-odd r-tuple colorings, even when D=V and all orders pi_d come from deleting d in a single prescribed bad order. Let V=[2r+1] and pi=(1,...,2r+1). Give the consecutive r-windows W_1 and W_{r+2} color 0 and all intervening consecutive r-windows color 1; pi has word 0,1^r,0 and is bad. For any d≠r+1, give every new r-window introduced by deleting d color 1. For the middle deletion d=r+1 give all its new r-windows color 0. The newly introduced windows are increasing r-tuples with a unique gap at d; as r>=2, no such window occurs as a new window for another deletion, and none is an original consecutive window. Thus all assignments are consistent. Deleting d<r+1 yields a word 1^*0 (possibly with an initial 0 absent), deleting d>r+1 yields 0 1^*, and deleting the middle gives all zeros. All 2r+1 deletions are good and pairwise order-consistent. Assign all remaining increasing r-tuples arbitrarily and define the colors of their reversals by complementation; reversal has no fixed ordered r-tuple for r>=2. This extends the construction to a reversal-odd coloring.
+
+The sharpness example concerns the compatibility-gluing implication, not the existence of some other good full order. In particular, any improvement to seven witnesses in the ternary flat switching sector must use additional structural hypotheses beyond reversal oddness and locality.
+
+ARTICLE-IV IMPLICATION. For an obstruction with >=8 deletion labels, every chosen family of good deletion orders has an incompatible pair. The stronger four-cover theorem for fully ported zero paths remains the priority for connector closure; this theorem sharpens the independent coherent-order fallback.

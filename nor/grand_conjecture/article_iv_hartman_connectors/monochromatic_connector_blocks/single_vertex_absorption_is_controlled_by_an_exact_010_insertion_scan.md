@@ -1,0 +1,9 @@
+# Single-vertex absorption is controlled by an exact 010 insertion scan
+
+## Composition
+
+A genuine interior insertion preserves zero exactly on the scan packet 010; endpoints additionally require dominance of the exposed forward pair. The xz pair supplies a forced zero in the adjacent-pair model. No-010 excludes isolated internal one-runs and permits singleton zero-runs.
+
+## Development
+
+Let C=(c1,...,cm) be a monochromatic zero connector with forward first and last ordered pairs, and let a be a new shore vertex. Define s_i=alpha(a,c_i,c_{i+1}). Inserting a in the interior gap c_i|c_{i+1} replaces the old zero windows by the three statuses s_{i-1}, 1-s_i, s_{i+1}. Hence an interior insertion preserves the monochromatic zero word exactly when the scan contains 010 centered at i. Endpoint insertion preserves both monochromaticity and endpoint compatibility precisely when a dominates the first two connector vertices, or when the last two connector vertices both dominate a. If the connector contains the fixed adjacent pair x,z, then s_k=alpha(a,x,z)=0 at that edge. Therefore a vertex resisting absorption has no 010 in its scan, is not above the first endpoint pair, is not below the last endpoint pair, and no isolated internal one-run occurs. The zero-run containing the xz edge may have length one. This gives an exact local obstruction for growing the connector.

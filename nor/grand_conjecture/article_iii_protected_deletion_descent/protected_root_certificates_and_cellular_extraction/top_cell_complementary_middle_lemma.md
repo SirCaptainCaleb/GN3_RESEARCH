@@ -1,0 +1,9 @@
+# Connected spanning lifted circuits are automatically complementary Tucker cells
+
+## Composition
+
+(none yet)
+
+## Development
+
+If a lifted zero has connected physical support spanning V, block-rank neutrality puts all support endpoints in one Coxeter block; hence its permutahedral carrier is the top face. Take any violating triple (a,m,b). If it is a pre-side violation for target eta, then alpha(a,m,b)=1-eta, while reversal gives alpha(b,m,a)=eta. In the same top product cell place (b,m,a) at the window rank toggled by the vertical cut edge and take the endpoint where that rank is post-switch. Its target is 1-eta, so it is a post-side violation. Thus the same cell contains +m and -m. The post-to-pre case is symmetric. Therefore every connected spanning honest lifted zero is automatically a complementary signed-middle Tucker cell, so the arbitrary-cell Tucker extraction theorem applies. This subsumes the dimension-saturated Hamiltonian, theta, and figure-eight extraction problem. The remaining gap is global termination after the resulting controlled repair/threshold-band handoff.

@@ -1,0 +1,9 @@
+# Endpoint defects and protected deletion descent
+
+The general reduction begins with the elevated all-arity theorem: a minimum reversal-odd coordinate NOR counterexample has minimum full-order variation exactly two. Append the omitted coordinate to a good deletion order; one new window raises variation by at most one, and counterexamplehood excludes at most one change. Every good deletion order is bichromatic, and either endpoint extension has one endpoint threshold defect. These statements use coordinate-window locality and do not extend automatically to unrestricted basepoint-dependent cube labels.
+
+Protected replacement turns a deletion word 0^p1^q into a packet problem while retaining outside order. If p≥r, replacement at the cut changes exactly r windows. A monotone packet with a one strictly reduces the first phase. Thus a globally minimum-first-phase witness has either an inert packet or an actual 10 descent. The long-phase qualification is genuine; arbitrary arity still needs a short-phase theorem or alternative geometry.
+
+The ternary continuation now supplies close-or-protected-root scan reductions. A protected root or an ordered physical shortcut is still a handoff, not a spanning conclusion: relative certificate persistence and ambient gluing are delegated to the root section. Flat switching configurations continue in Article IV, where spanning port-compatible connector growth is the current target. This replaces the obsolete A2 recurrence description while keeping the general short-phase limitation visible.
+
+The outermost-change boundary carrier also extends to every coordinate arity. Its root e_{v_p}−e_{v_{q+r}} spans the whole multichange region and crosses the ordered block boundary when proper blocks use good witnesses. This combines the all-arity minimal-counterexample reduction with the witnessed carrier, giving a zero-free proper-face construction independent of ternary scan geometry.

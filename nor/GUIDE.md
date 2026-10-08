@@ -4,7 +4,7 @@
 
 **Publish cheaply downward; compress deliberately upward.**
 
-Use Brainstorms for loose ideation, Subsections for local mathematical development, Sections for coherent research regions, Articles for top-level routes, and Toolkit for reusable mathematics that naturally crosses routes.
+Use Brainstorms for loose ideation, Items for local mathematical development (including audits, strategic notes, techniques, and findings), Subsections for groups of Items, Sections for coherent research regions, Articles for top-level routes, and Toolkit for reusable mathematics that naturally crosses routes.
 
 ## Session lifecycle
 
@@ -12,27 +12,27 @@ Use boot() once at conversational-worker startup. Keep the returned session_id a
 
 ## Development and composition
 
-Subsections are the manuscript development objects. Sections and Articles organize material and expose compositions rather than independent development prose.
+Items are the primary development objects, and each Item may contain multiple named Results. Subsections, Sections, and Articles organize collections of their direct children and expose compositions. Historical Subsection development is retained as legacy-development Items.
 
 Treat each composition as a deliberately lossy compression of the material below it.
 
-Create local mathematical branches freely as Subsections. Edit earlier Subsection development whenever later mathematics improves it. Recompose Sections and Articles when a better synthesis is worthwhile.
+Create Items freely in the relevant Subsection. Develop their individual Results with statements, evidence, proofs, and status. Compose an Item when its Results form a useful synthesis, then compose its parent Subsection, Section, and Article at natural accumulation points.
 
 ## Dependencies and staleness
 
-Dependencies belong to compositions. A Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions; a Subsection composition has no lower composition layer.
+Dependencies belong to compositions. An Item composition compresses its Results. A Subsection composition may depend on selected direct Item compositions; a Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions.
 
 A composition becomes stale only when an explicitly depended-on composition is replaced by a newer composition version. Frontier metadata separately records what lower-level material existed when the composition was written.
 
 ## Research flow
 
-Read the current composition first, then inspect the Subsections or dependencies relevant to the task. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
+Read the current composition first, then inspect its dependent children. Use Subsections to locate Items and Items to locate individual Results. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
 
-When new mathematics changes the best exposition, update the relevant Subsection development and recompose upward when the synthesis is worthwhile.
+When new mathematics changes the best exposition, update the relevant Item or Result and recompose upward when accumulation makes a synthesis worthwhile.
 
 ## Audits
 
-Audit canonical mathematical claims. When an audit finds a localized gap or correction, publish a focused audit Subsection stating the claim, the issue, and the repair obligation. Recompose after the repaired mathematics has stabilized.
+Audit canonical mathematical claims. When an audit finds a localized gap or correction, publish a focused audit Item in the appropriate Subsection stating the claim, the issue, and the repair obligation. Recompose after the repaired mathematics has stabilized.
 
 After making a substantive repair, judge whether the repaired result should be audited by another worker; request an audit when independent verification is warranted.
 

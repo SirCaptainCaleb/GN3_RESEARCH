@@ -1,0 +1,9 @@
+# Flat A2 recurrence forbids the obvious three-residual monochromatic splice — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Local rigidity of the flat A2 replacement cycle. In the recurrent d=e=2 state, let U={x,y,z} and suppose the residual tournaments at the common boundary pivots B and C=t_1 are the same directed cycle x->z->y->x, meaning alpha(x,z,B)=alpha(z,y,B)=alpha(y,x,B)=1 and similarly at C. Apply zero tetrahedral coboundary to the ordered four-set (x,z,y,B). Since alpha(z,y,B)=1, alpha(x,y,B)=0, and alpha(x,z,B)=1, flatness forces alpha(x,z,y)=0. Hence the three cyclic orders following the boundary tournament cycle have internal alpha-value 0, while their reverses have value 1. Therefore no ordering (u,v,w) of U can simultaneously satisfy alpha(B,u,v)=1 and alpha(u,v,w)=1. Because the tournament at C is the same cycle, no ordering can simultaneously have internal value 1 and alpha(v,w,C)=1 either. In particular, the obvious attempt to replace the two residual vertices before the suffix by all three residual vertices cannot create a monochromatic color-1 block. This shows that the final A2 recurrence is a genuine rank-two local obstruction, not an artifact of missing an elementary splice. Closure must use the suffix holonomy excursion, a block reversal, or a protected exchange that changes the residual tournament class.

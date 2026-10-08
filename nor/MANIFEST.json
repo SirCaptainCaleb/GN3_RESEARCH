@@ -149,9 +149,9 @@
     },
     "article_iv_hartman_connectors": {
       "composition": {
-        "body_chars": 3455,
-        "composed_through_revision": 3372,
-        "composition_version": 8,
+        "body_chars": 8483,
+        "composed_through_revision": 3414,
+        "composition_version": 14,
         "frontier": {
           "current": true,
           "latest_section_position_now": 4,
@@ -160,15 +160,9 @@
           "sections_now": 4
         },
         "has_composition": true,
-        "source_note": "Elevate GN3N article-only transfer proofs with explicit selection and port hypotheses.",
-        "stale": true,
-        "stale_dependencies": [
-          {
-            "composition_saw_version": 7,
-            "current_composition_version": 9,
-            "source_id": "monochromatic_connector_blocks"
-          }
-        ]
+        "source_note": "Elevate full deletion-connector gluing and its sole adjacent-gap triple barrier, retaining live prior sources.",
+        "stale": false,
+        "stale_dependencies": []
       },
       "version": 1
     },
@@ -199,9 +193,11 @@
     }
   },
   "brainstorm_count": 7,
-  "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-08T00:04:05.866321+00:00",
-  "mirror_format": 17,
+  "composition_model": "recursive-composition-v7",
+  "generated_at": "2026-10-08T00:52:49.261681+00:00",
+  "item_count": 820,
+  "mirror_format": 18,
+  "result_count": 0,
   "schema": "nor",
   "section_versions": {
     "directed_nor_union_closed_bridge": {
@@ -266,18 +262,18 @@
     },
     "monochromatic_connector_blocks": {
       "composition": {
-        "body_chars": 2374,
-        "composed_through_revision": 3394,
-        "composition_version": 9,
+        "body_chars": 5497,
+        "composed_through_revision": 3413,
+        "composition_version": 15,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 50,
-          "latest_subsection_no_when_composed": 50,
-          "subsections_existing_when_composed": 50,
-          "subsections_now": 50
+          "latest_subsection_no_now": 52,
+          "latest_subsection_no_when_composed": 52,
+          "subsections_existing_when_composed": 52,
+          "subsections_now": 52
         },
         "has_composition": true,
-        "source_note": "Synthesis through 49",
+        "source_note": "Elevate full deletion-connector gluing and its sole adjacent-gap triple barrier, retaining live prior sources.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -465,7 +461,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 3396,
+  "snapshot_revision": 3415,
   "startup_broadcasts": [
     {
       "body": "Reassessment through revision 2878. Full guidance: Article III root §90, fourth_wisdom_pass_realized_exchanges_and_topology_on_compatible_states, development 5 / composition 4. NOR remains open.\n\nPRIMARY ROUTE: witnessed degree plus relative block splicing.\nUse the consecutive-change defect carrier (§§155,163,170). Fix one NOR-good order g(S) per proper subset. A proper face B1|...|Bs has the concrete witness g(B1)...g(Bs); its band labels cross face blocks and give strict face-normal separation. This supplies an orientation-symmetric, zero-free nonzero-degree boundary carrier. Ordinary degree applies to the fixed selector.\n\nThe closure task is a relative splice for the actual flag witnesses:\nP g(A)g(B) Q -> P g(A union B) Q.\nPreserve the outside order, record both ordered boundary collars and all crossing windows, and produce a spanning good order or a strict admissible improvement. Abel label increments and merge-chain endpoint identities are algebraic coherence data. Prove the legal replacement and its progress measure. Treat the top merge into the full coordinate set explicitly.\n\nIMMEDIATE LOCAL TARGET: exported reconnection.\nRoot §226 strengthens the width-two weave to (0,3,1,2,4,5). It preserves the first coordinate and the last ordered pair, leaving ONE crossing bit. The bad bit is a double-full singleton. Root §213 reverses an arbitrary reversal-odd endpoint phase and confines failure to two crossing windows. Use their inherited blocker/extremal data to resolve the exported boundary and its first full barrier. Obtain a spanning order or a well-founded witness descent. The earlier §235 two-window width-two target is sharpened by §226.\n\nCOMPATIBLE CUT CELLS:\nRoot §237 separates every family whose certified central cuts form an inclusion chain. A positive dependence therefore uses incomparable cuts. Full barriers realize same-cut K2,2 cells (§230), with zero-free convex hulls (§234). Investigate the first compatible passage between incomparable cut states. Prove admissibility of all side-root replacements and actual successor attainment. A bounded square/braid localization remains a theorem to establish.\n\nFOCUSED ALTERNATIVE:\nProve the endpoint missing-corner witness for the SAME root x_i->x_(i+1), with cut {x_i,a_(i+1)}, or obtain a spanning order or strict improvement. This copies the next partner backward. Supply a finite alignment potential and handle pinned junctions. §128 gives genuine endpoint descent in its second-splice-zero and phase-three branches. Preserve the family used for cycle minimality (§§129,232).\n\nCURRENT TOPOLOGICAL OBLIGATIONS:\n§138: an odd centered switch prism has an automatic center zero; prove useful extraction or noncentral localization.\n§184: a Hamiltonian root simplex has nonzero local degree; account for that degree in any zero-removal surgery.\n§212: an expanded circuit inside averaged labels requires a separate domain-cell realization theorem.\n§209: the canonical vertical-edge complementary-middle pair is available as genuine cell states; prove carrier inclusion/selection and retained degree.\nState the domain, target, boundary condition, state support, and legal extraction before invoking the fixed-point theorem.\n\nRecent ternary §§65-66 give local close-or-root exits for rise and no-rise A2 scans. Use their exact boundary hypotheses and complete the global root extraction.\n\nKeep each flat alternating theorem's extra symmetries explicit. The special-scan descent retains its scan-class hypothesis; recursive use verifies that hypothesis on every new witness.\n\nAllocate effort to relative block splicing and exported reconnection, using compatible cut squares as tools. The desired next result is an explicit spanning NOR order or a proved terminating admissible improvement.",
@@ -1507,13 +1503,16 @@
     },
     "a_single_fully_ported_deletion_path_closes_the_whole_shore_without_packet_repair": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 812,
+        "composed_through_revision": 3396,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 2,
-          "development_version_when_composed": null
+          "development_version_when_composed": 2
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -5470,6 +5469,25 @@
       "section_id": "protected_root_certificates_and_cellular_extraction",
       "version": 1
     },
+    "every_compatible_connector_decomposes_into_at_most_three_fully_ported_shore_zero_paths": {
+      "composition": {
+        "body_chars": 1078,
+        "composed_through_revision": 3408,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 2,
+          "development_version_when_composed": 2
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 2,
+      "section_id": "monochromatic_connector_blocks",
+      "version": 2
+    },
     "every_coordinate_pair_is_clone_contractible_or_carries_a_common_a3_opposite_root_cell": {
       "composition": {
         "composition_version": null,
@@ -7185,6 +7203,25 @@
       },
       "development_version": 1,
       "section_id": "protected_root_certificates_and_cellular_extraction",
+      "version": 1
+    },
+    "full_deletion_connector_orders_glue_from_four_coherent_witnesses_or_two_nonadjacent_gap_witnesses": {
+      "composition": {
+        "body_chars": 5821,
+        "composed_through_revision": 3412,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Full-state deletion gluing: constant-window locality, tournament same-gap cocycle, and one-triple adjacent-gap residue.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "monochromatic_connector_blocks",
       "version": 1
     },
     "full_support_connected_lifted_circuits_return_to_complementary_tucker_repair": {
@@ -14457,7 +14494,7 @@
   },
   "toolkit_count": 29,
   "universal_document_versions": {
-    "guide": 24,
-    "reflexes": 14
+    "guide": 28,
+    "reflexes": 17
   }
 }

@@ -1,0 +1,21 @@
+# Median defects defeat every pivot certificate without defeating NOR
+
+## Composition
+
+The pivot certificates of Subsections 43 and 45 are sufficient but cannot close the whole locally transitive sector by a universal existence theorem. Let V carry a strict scalar order lambda and define h(a,b,c)=1 if lambda(a)>lambda(c), and 0 otherwise. This is reversal odd and every center tournament is transitive. The increasing vertex order is monochromatic of color 0, so NOR holds directly.
+
+For any pivot o, the graph G_o has a->b precisely when lambda(a)<lambda(o)<lambda(b). Thus it is the complete bipartite directed graph from the lower vertices to the upper vertices, with no edges within either part. Every directed path has at most two vertices. Every pair of directed paths meeting at a common initial or terminal vertex has at most three vertices, since every arm has at most one edge. When |V|>=5, no pivot graph has a spanning converging/diverging fork, and no pivot graph has a directed path on |V|-2 vertices. Hence all the sufficient certificates in Subsection 45 fail for every pivot, although a monochromatic spanning order exists.
+
+In the orientation/defect decomposition, every triangle is defective at its median vertex: for a<b<c its cyclic colors are 0,1,1, and the minority term is centered at b. This gives a concrete configuration satisfying the defect coverage obstruction from Subsection 43. It is not a NOR counterexample.
+
+Conclusion for the closure program: pivot graphs expose a valid monochromatic/fork mechanism, but a proof for all locally transitive labels must also exploit missing pairs or use a different certificate. Missing pairs cannot be treated as inherently bad consecutive pairs: in this example they supply the increasing monochromatic order. The general directed problem additionally retains centered directed triangles.
+
+## Development
+
+The pivot certificates of Subsections 43 and 45 are sufficient but cannot close the whole locally transitive sector by a universal existence theorem. Let V carry a strict scalar order lambda and define h(a,b,c)=1 if lambda(a)>lambda(c), and 0 otherwise. This is reversal odd and every center tournament is transitive. The increasing vertex order is monochromatic of color 0, so NOR holds directly.
+
+For any pivot o, the graph G_o has a->b precisely when lambda(a)<lambda(o)<lambda(b). Thus it is the complete bipartite directed graph from the lower vertices to the upper vertices, with no edges within either part. Every directed path has at most two vertices. Every pair of directed paths meeting at a common initial or terminal vertex has at most three vertices, since every arm has at most one edge. When |V|>=5, no pivot graph has a spanning converging/diverging fork, and no pivot graph has a directed path on |V|-2 vertices. Hence all the sufficient certificates in Subsection 45 fail for every pivot, although a monochromatic spanning order exists.
+
+In the orientation/defect decomposition, every triangle is defective at its median vertex: for a<b<c its cyclic colors are 0,1,1, and the minority term is centered at b. This gives a concrete configuration satisfying the defect coverage obstruction from Subsection 43. It is not a NOR counterexample.
+
+Conclusion for the closure program: pivot graphs expose a valid monochromatic/fork mechanism, but a proof for all locally transitive labels must also exploit missing pairs or use a different certificate. Missing pairs cannot be treated as inherently bad consecutive pairs: in this example they supply the increasing monochromatic order. The general directed problem additionally retains centered directed triangles.

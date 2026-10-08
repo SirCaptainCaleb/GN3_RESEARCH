@@ -1,0 +1,9 @@
+# Inert protected-root zeros have zero local topological index
+
+## Composition
+
+An isolated inert zero has a link image in an open hemisphere under the common-halfspace attachment, so its local index is zero and it can be removed by an equivariant local perturbation. Positive-dimensional inert loci require a further regular-neighborhood or isolation theorem. Essential physical-root cancellation is not yet a legal-path extraction.
+
+## Development
+
+Local-index consequence of the common-halfspace attachment. Suppose an inert protected exchange appears as an isolated zero vertex z of a PL protected-root map f on a triangulated carrier. By the common-halfspace theorem, every nonzero root label on the link of z lies in one open halfspace phi>0. Therefore the normalized link map f/||f|| has image in an open hemisphere of the root sphere and is null-homotopic. Hence z has local degree/index zero. Equivalently, one may move f(z) a small distance into the same halfspace and linearly re-extend over the star, removing the zero without creating a new zero. On the antipodal mate tau z perform the opposite perturbation, preserving oddness. Thus isolated inert-exchange zeros cannot carry the essential Borsuk-Ulam/Tucker obstruction. After an equivariant generic perturbation which separates such local zero strata, any essential zero must be a genuine convex/Radon cancellation among nonzero protected window-slide roots. This does not by itself handle a positive-dimensional connected inert zero locus; for that one needs either a regular-neighborhood blow-up or a proof that the chosen protected carrier makes inert zeros isolated. But it shows why the project should spend its topology budget on physical coordinate cycles rather than on the inert branch itself.

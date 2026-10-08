@@ -1,0 +1,9 @@
+# The fixed deletion fiber has a unique interior one-defect double-full state
+
+## Composition
+
+(none yet)
+
+## Development
+
+Fix a minimum coboundary-flat ternary counterexample, a one-change deletion order O=(v1,...,vm) with word 0^p1^q, p,q>=3, and omitted perfect blocker x with scan s=1^(p+1)0^q. Consider only the insertion fiber obtained by placing x in each gap of O, never changing the relative order of the v_i. For insertion between v_j and v_{j+1}, the three new statuses are L=s_{j-1}, M=1-s_j, R=s_{j+1} when defined. Against the threshold inherited from O, deep inside the 0-run this is 1,0,1 against 0,0,0, so there are exactly two outer violations; deep inside the 1-run it is 0,1,0 against 1,1,1, again exactly two outer violations. At the left and right endpoints there is the known single endpoint defect. There is one distinguished interior gap, j=p+2, where the new packet is 1,1,0 against 1,1,1, hence the full order has exactly one threshold defect. Explicitly its word is 0^p,1,1,0,1^(q-2). The singleton defect is the window alpha(x,v_{p+3},v_{p+4})=0. Its left transition tetrahedron is Q_{p+2}={x,v_{p+2},v_{p+3},v_{p+4}} and its right transition tetrahedron is Q_{p+3}={x,v_{p+3},v_{p+4},v_{p+5}}; both are fully curved by the exact perfect-blocker tube. Thus every minimum flat-sector counterexample canonically supplies, inside a SAME-DELETED-ORDER insertion fiber, an interior E=1 singleton defect bracketed by two full-curvature barriers. This is a protected carrier: all coordinates other than x remain in the deletion order O. The closure problem can therefore focus on a boundary-controlled surgery of this canonical double-full singleton, rather than arbitrary carrier extraction.

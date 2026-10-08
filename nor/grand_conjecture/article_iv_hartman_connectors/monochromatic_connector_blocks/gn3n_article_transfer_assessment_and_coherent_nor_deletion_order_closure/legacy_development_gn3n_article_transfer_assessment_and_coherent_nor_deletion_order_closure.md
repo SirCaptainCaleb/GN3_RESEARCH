@@ -1,0 +1,25 @@
+# GN3N article transfer assessment and coherent NOR deletion-order closure — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Reviewed only the seven GN3N article compositions: article_vii_antipodal_geodesics_and_topological_reformulations v9; defect_lines_and_spanningorder_compression v1; deletioncover_compatibility_and_global_obstruction_structure v1; endpoint_transport_and_small_support_gluing v1; longest_paths_and_reversal_structure v1; quadratic_potential_and_pairwise_repartition v1; three_cover_repartitions_and_recurrence v1. No underlying GN3N sections or subsections, literature, SAT, or MILP were used.
+
+The strongest direct transfers are ordered deletion-cover gluing and support-graph incidence. The preceding two NOR developments strengthen them with the fixed endpoint ports that permit whole-shore closure. A second purely combinatorial gluing statement applies to NOR itself.
+
+THEOREM. For an r-coordinate labeling, if D⊆V has |D|≥2r+2 and each d∈D has a NOR-good order π_d of V\{d}, with pairwise agreement of relative order on the common domain, then V has a NOR-good order. In particular eight coherent good deletion orders suffice for ternary NOR.
+
+PROOF. Pairwise consistency defines a global order: every pair survives a deletion, and its order is independent of the deletion chosen; every triple survives a deletion, proving transitivity. Each π_d is its restriction. If the global consecutive-window color word has at least two changes, choose the adjacent windows at the first color change, and one window of the original color after the second change. They have colors 010 or 101 in order. The adjacent pair uses r+1 coordinates, and the third uses at most r more, for a total of at most 2r+1 coordinates. Some d∈D lies outside that union. Each selected window remains consecutive in π_d, and their order and colors persist, forcing at least two changes in π_d, contradiction. QED. The bound is sufficient; optimality is not claimed. Reversal oddness is not required for this coherence lemma.
+
+Potential transfer: Φ=Σ|P_i|² and ΔΦ=2(a−b+1) for transferring a vertex from a b-path to an a-path are universal algebra. Minimization is useful only over actual legal states retaining the required certificate and collars. GN3N's defect-line identity c(π)=1+τ(L_π)=1+ν(L_π) transfers verbatim to covers by ternary zero paths, but this is a monochromatic cover target with a different closure criterion from a NOR-good color word; the identity alone does not solve NOR.
+
+The topological lesson from Article VII is to couple an odd root map to an exact quantitative defect and an independently proved closure theorem for every possible zero. Its zero can express a symmetric positive-deficiency state. GN3N's deletion-distance-to-two-cover formula and middle-layer residue therefore cannot be substituted into NOR's root carrier without a new NOR-specific exactness theorem. A promising NOR target is a topological zero that realizes coherent ported deletion witnesses, because the four-cover theorem supplies an actual closure implication.
+
+The descent and recurrence articles repeatedly separate an entry state from a component minimum and distinguish reachability from invariant-preserving termination. NOR should retain the entire ordered packet, fixed-representative ports, and external collar through every legal move; strict potential descent losing these data cannot terminate at the desired connector.
+
+The GN3N mapping covers a subclass of NOR. Assertions using parallel-middle Hamiltonicity, edge-order representations, small Hamiltonian-deletion counts, or minimal counterexamples to pc₀≤2 require additional justification for arbitrary NOR. Minimal NOR counterexamplehood does not imply pc₀>2. Reversing a zero path gives a one path, so whole-path reversal is not a legal zero-path move without an explicit polarity and port update. Same-edge reversal twins and cyclic rotations are especially unsafe; the article corrections explicitly withdraw those shortcuts.
+
+Strategic priority for Article IV: obtain a selection of fully ported two-path shore deletion covers, then force either four pairwise coherent witnesses or a spanning support-path configuration. Both outcomes now have complete closure proofs. If neither can be forced, isolate the precise order/port disagreement and use the existing collar calculus there. The general conjecture remains open; this assessment proves conditional closure classes and identifies the extra selection/coherence obligations.

@@ -1,0 +1,9 @@
+# Audit pure orientation one vertex insertion is insufficient — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+Even with defect field identically absent, preserving a one-change Hamilton order by inserting one new vertex can fail. Let an old defect-free pure-orientation order have alpha word w=000111, and for a new vertex x let the scan s_i=alpha(x,v_i,v_{i+1}) be 1111000. Prepending is bad because s_1=1 creates 1,000111; appending is bad because the last scan value is 0 after the terminal 1-run. For an interior gap i, the two old affected statuses are replaced by the three alpha signs (s_{i-1},1-s_i,s_{i+1}), with the evident endpoint truncations. Direct inspection by run position shows that gaps inside the initial 0-run create an extra 1-island, gaps inside the final 1-run create an extra 0-island, and the gaps at the old switch inherit both. Hence every insertion has at least two changes. Because an alternating orientation assigns signs independently to unordered triangles, this scan is realizable. This refutes only the simple insertion induction for pure alpha; it is not a counterexample to pure-orientation NOR, since a different global reorder may still work. Block reversals or Hamilton-path exchanges are genuinely necessary.

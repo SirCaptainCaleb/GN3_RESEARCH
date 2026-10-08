@@ -1,0 +1,21 @@
+# All uniformities admit affine threshold labels and three-window Radon certificates — preserved pre-item development
+
+## Composition
+
+(none yet)
+
+## Development
+
+This offers a convex-geometric interface for every coordinate arity r, not just the ternary sector. Let pi be a coordinate order with m=n-r+1 nonempty windows and signs epsilon_i=(-1)^{h(pi_i,...,pi_{i+r-1})}. Set t_i=i-(m+1)/2, and define signed points v_i=epsilon_i(1,t_i) in R^2. Empty window words are automatically NOR-good and are handled separately.
+
+Separation theorem. The word has at most one change if and only if 0 does not belong to conv{v_1,...,v_m}. Equivalently there exist a,b in R with epsilon_i(a+b t_i)>0 for every i. If the word has one change, choose an affine function with its unique root strictly between the two runs and slope of the appropriate sign; for a constant word choose a nonzero constant. Conversely an affine function on a line can change sign at most once, so strict feasibility implies NOR. To see that failure has the claimed convex certificate without invoking an external separation theorem, any word with at least two changes contains i<j<k with epsilon_i=epsilon_k=-epsilon_j. The following positive coefficients sum to one and give a zero combination of v_i,v_j,v_k:
+
+lambda_i=(t_k-t_j)/(2(t_k-t_i)), lambda_j=1/2, lambda_k=(t_j-t_i)/(2(t_k-t_i)).
+
+The first coordinates cancel because lambda_i+lambda_k=lambda_j, and the second coordinates cancel by linear interpolation of t_j between t_i,t_k. These are three-point Radon certificates for failure of one-change behavior.
+
+A concrete alternative labeling. At an ordered chamber choose, for example, the lexicographically first alternating triple (i,j,k), if one exists, and attach the displayed positive certificate to its three ordered-window faces. A good chamber is precisely a chamber where no such certificate exists. This makes the obstruction carried by three specified windows, rather than by endpoints of unrelated subset witnesses. Any refinement used for this label must retain those ordered windows and their common coordinate order.
+
+Symmetry matters. Under reversal-oddness, epsilon_i(rev pi)=-epsilon_{m+1-i}(pi), while the centered positions change sign. Therefore the point configuration transforms by (u,v)->(-u,v), a reflection, not by the antipodal map. The affine-separator parameters transform as (a,b)->(-a,b). Thus a topological argument using this interface naturally has a reflected threshold parameter; ordinary odd-map hypotheses cannot simply be asserted.
+
+Proof obligations for a fixed-point or KKM approach. The local certificate is complete, but no global theorem has yet forced a chamber without a certificate. Moreover a convex combination of vectors from different chambers is not a certificate for any one coordinate order. An altered triangulation must preserve that common-order condition. The nearest-point-to-origin map is also unsuitable as a good-chamber zero map: its zero set consists of bad chambers, so merely forcing one of its zeros would prove nothing toward NOR. The value of this formulation is a dimension-two separation target and explicit positive obstruction coefficients, valid in all uniformities, for testing an appropriate carrier or covering theorem.

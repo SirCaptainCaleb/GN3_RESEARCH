@@ -1,0 +1,9 @@
+# Free antipodal carrier cells can be modified in mirrored pairs
+
+## Composition
+
+(none yet)
+
+## Development
+
+Equivariant local modification lemma for the protected carrier complex. Let K be a regular CW complex with a free cellular involution tau, intended to model reversal on a switch/protected-exchange carrier. Then no closed cell e-bar can be setwise invariant under tau. Indeed e-bar is a closed ball. If tau(e-bar)=e-bar, the restriction tau:e-bar->e-bar is a continuous self-map, so Brouwer's fixed-point theorem gives a point fixed by tau, contradicting freeness. Hence every cell occurs in a distinct pair e,tau(e). Consequently any local stellar subdivision, blow-up, or retriangulation supported inside one problematic carrier cell may be performed independently on e and mirrored on tau(e), automatically preserving the free involution. In particular the caged A2 braid carrier and the inert protected-exchange cells can be replaced by surgery-aware local complexes without having to solve a self-equivariant triangulation problem on one disk. The remaining issue is global attachment along shared faces: the modified cell must agree with the unmodified neighboring protected fibers on its boundary. This isolates the topology problem to boundary attachment, not local antipodal symmetry.
