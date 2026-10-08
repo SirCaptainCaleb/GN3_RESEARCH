@@ -8,3 +8,127 @@ NORI primary conjecture is the ordered-three-face version. An ordered three-face
 
 - ID: nori_ordered_three_face_primary_20261008
 - Scope: nori
+
+## Topological reachability labels: force an antipodal pair in one uncolored R(x)
+
+NORI TOPOLOGICAL REACHABILITY PRIORITY — this supersedes the earlier color-indexed R_i(x) formulation. The user's intended target is reachability itself.
+
+FIRST PROVE THE SIMPLER EDGE CASE: Let c be an antipodally odd binary EDGE coloring of Q_n, c(bar e)=1-c(e). Define the COLOR-FREE set
+  R(x) = {z in Q_n : there exists a MONOCHROMATIC GEODESIC from x to z, of EITHER edge color}.
+Include the length-zero path. Do NOT split R(x) into R_0(x), R_1(x) when constructing the principal topological labels. The color of a witness path is unnecessary for this extraction.
+
+EXACT GRAND-CLOSURE FORMULATION IN THE EDGE CASE:
+  exists x, z with z and bar z both in R(x);
+equivalently,
+  exists x : R(x) intersect bar(R(x)) is nonempty;
+equivalently, by edge-color antipodal oddness R(bar x)=bar(R(x)),
+  exists x : R(x) intersect R(bar x) is nonempty.
+Here bar(S)={bar z:z in S}. Two monochromatic geodesics joining x to z and x to bar z have DISJOINT coordinate supports and concatenate through x to an antipodal GEODESIC with at most one color change. In an antipodally odd EDGE coloring any such one-switch antipodal geodesic rotates via antipodal complementation to a MONOCHROMATIC full antipodal geodesic. Thus this unlabeled-color overlap criterion is EXACTLY EQUIVALENT to edge-geodesic closure. It is EXISTENTIAL in x: rooted closure for every x is neither the target nor generally true in NORI.
+
+TOPLOGICAL TASK: Build vertex/face/complex labels encoding genuine sets R(x), or a faithful invariant of them, and use Borsuk–Ulam, Tucker, Sperner, KKM, Hartman-style least-unreachable/connector reasoning, etc. to FORCE an antipodal pair INSIDE ONE R(x). An abstract equality of labels must come with a proved implication to actual overlap. A coincidence may occur at an abstract state/face even if the extracted paths have roots/vertices elsewhere. Do not require the topological carrier (e.g. a balanced root-slide ridge) itself to be a good geodesic; local extraction at an arbitrary prescribed root fails for legitimate colorings. Prove label equivariance, face incidence, boundary conditions, and the actual intersection/extraction implication.
+
+Investigate root-coupled Freudenthal constructions, all-root geodesic complexes, and the n-root-bits plus n-location-bits idea; establish the geometry and hypotheses instead of assuming a 2n-cube triangulation works. Seek a DIMENSION-INDEPENDENT closure theorem, not Q_7 subclass enumeration. Small n may test a construction.
+
+TRANSFER TO ACTIVE NORI: The grand conjecture concerns ordered-three-face colors with c(bar F, reverse pi)=1-c(F,pi), seeking a full antipodal geodesic whose ordered three-face window colors change at most once. In that setting, concatenating monochromatic geodesic branches creates TWO new junction windows; reversing a branch changes ordered triples on the same physical faces and cannot be treated as color-preserving automatically. Establish the correct directed reachability and junction compatibility BEFORE claiming the edge-case extraction extends to NORI. Existing research may supply finite-memory bridge states.
+
+No web or literature searches. Use the NORI toolkit if needed, and keep conjecture-specific strategy out of the generic GUIDE.
+
+- ID: nori_topological_antipodal_reachability_20261008
+- Scope: nori
+
+## NORI strategic reset: dimension-independent grand closure
+
+NORI STRATEGIC RESET — effective immediately. Retire Q_7 subclass-by-subclass closure as an active research objective. The grand target is the antipodal-reversal-odd ordered-three-face conjecture for arbitrary dimension n. Small dimensional results (including Q_7) remain examples, test cases, and sources of techniques, not milestones to extend by further cataloguing obstructions. Prioritize a DIMENSION-INDEPENDENT proof mechanism: either (a) a local-to-global exchange/descent that strictly lowers a well-founded defect measure on full antipodal geodesics; (b) a minimal-counterexample operation that lowers dimension while preserving the precise ordered-face antipodal-reversal axiom and forbidden-good-geodesic property; or (c) a root-coupled topological/combinatorial path-space construction (e.g. Hartman least-unreachable/connector labeling) with proved local incidence, antipodal equivariance, boundary condition and an actual extraction theorem for a full one-switch geodesic. In particular, investigate local order exchanges and globally compatible root changes, not isolated Q_7 structural subclasses. Exact proof obligations and counterexamples to proposed general lemmas are valuable; further sufficient conditions confined to Q_7 or six-coordinate residual classifications are deprioritized. Do not add this conjecture-specific strategy to the generic research GUIDE. Publication claims require a complete n-independent proof, or an explicitly scoped lemma with a clear role in a terminating global argument. Web and literature search remain prohibited by the user's NORI instruction.
+
+- ID: nori_dimension_independent_reset_20261008
+- Scope: nori
+
+## Active NORI four-facet cap-memory odd cycle directly forces grand closure
+
+NORI NEW PROVED DIRECT GRAND EXTRACTION (active ordered-three-face, arbitrary n>=5): read Item nori_canonical_near_spanning_mono_geodesic_first_last_cap_bipartite_cut_20261008 (including the four-facet strengthening) and Item nori_antipodal_near_spanning_monochrom_core_first_last_pivot_odd_cycle_extraction_20261008.
+
+Fix U of size n-2, missing directions a,b, and projected root r in Q_U. For each i in U define the ACTUAL ordered-face cap bit A_i(r)=c(F(x;{a,b,i}),(a,b,i)), where x has U-bits r and ANY exterior (a,b) bits. Physical face locality makes A_i(r) independent of BOTH missing-coordinate bits. Define COLOR-FREE graph H_U(r) on U: i,j adjacent if ANY of the FOUR parallel U-facets has a directed MONOCHROMATIC U-spanning geodesic from projected root r whose first and last directions are i,j in either order; OMIT its monochromatic color.
+
+PROVED: IF grand closure FAILS, every such edge crosses the canonical binary cut A_i(r) != A_j(r). Proof: for any monochrom n-2 path color q with first i,last j, the no-closure hypothesis forces the first cap c(F(x;abi),(a,b,i))=q by prepending BOTH missing coords, and the final reversed cap c(F(x xor U;abj),(j,b,a))=q by appending both. The physical latter face is the antipodal face of F(x;abj), with reversed order, so its color is 1-A_j(r). Therefore q=A_i(r)=1-A_j(r). All four facet charts use the SAME cap bits.
+
+CLOSURE CRITERION: if H_U(r) contains ANY ODD cycle (a triangle already suffices), or has more than floor((n-2)^2/4) distinct first/last pairs, active NORI grand closure follows. Also a single monochrom U-spanning path with A_first=A_last forces closure. No color index appears in the reachability graph; the colors only verify extraction. There is a companion root-mobile signed pivot criterion linking path witnesses under a one-coordinate root slide.
+
+REMAINING TASK: FORCE a nonbipartite four-facet memory graph, or complementary reversed-two-tail reachability overlap, from the full physical face-incidence structure. Such near-spanning monochrom U-cores need not be supplied at any prescribed root. This is a dimension-independent rigorous connector, NOT a universal grand proof. Coordinate with the exact uncolored reversed-two-tail equivalence broadcast. No web/literature search; keep conjecture guidance outside generic GUIDE.
+
+- ID: nori_four_facet_cap_bipartite_memory_connector_20261008
+- Scope: nori
+
+## NORI cap orientation disagreement forces closure; fixed support can have no cores
+
+NORI RESEARCH UPDATE (dimension-independent active ordered-three-face; no grand proof yet). Read two proved Items: nori_two_ordered_cap_orientations_stable_direction_cut_20261008 and nori_four_parallel_facets_no_monochromatic_spanning_cores_valid_odd_20261008.
+
+STRONGER DIRECT EXTRACTION. Fix U of size n-2 and missing directions a,b. At projected U-root r, for each i in U define cap orientations A_i=c(F(r;{a,b,i}),(a,b,i)) and B_i=c(F(r;{a,b,i}),(b,a,i)). Both are the SAME physical face across all four parallel U-facets. If there exists any monochromatic U-spanning geodesic with FIRST direction i or LAST direction i, and A_i != B_i, a FULL one-switch antipodal NORI geodesic immediately exists, by choosing the order of the two missing directions at the appropriate end. Under any hypothetical failure, every first/last direction on such a mono core is stable A_i=B_i; the first direction has cap bit q (the mono core color), the last bit 1-q. Thus the four-facet color-free first/last memory graph lies in the bipartite cut between stable caps of bits 0 and1. All unstable cap directions are isolated. Odd cycle, unstable incident direction, or edge count > |S0||S1| forces grand closure.
+
+IMPORTANT HONEST GUARDRAIL. For EVERY n>=7 there is a FULLY LEGAL active NORI coloring and a selected U of size n-2 such that ALL four U-parallel facets have NO monochromatic U-spanning geodesic from ANY root; the four-facet graph is literally empty. Explicit marker construction: select two marked directions inside U, let f(i,j,k)=1 iff j unmarked and at least one outer direction marked. For faces with triple free inside U put c(F,(i,j,k))=f(i,j,k) XOR bit_a(F) where a is one missing direction; f is reversal-even, while exterior bit_a flips antipodally, giving NORI oddness. Along any U-permutation with |U|>=5, the window word f contains both colors, hence no mono U-spanning path. Extend remaining ordered face reversal-orbits arbitrarily. Therefore NEVER presume a prescribed U/facet supplies any near-spanning mono core, or that its memory graph is nonempty.
+
+FORCING FRONTIER: seek a GLOBAL support-selection principle over all U/r, or use the more robust exact complementary REVERSED-TWO-TAIL reachability basins (Item nori_exact_color_free_reversed_two_tail_complement_reachability_grand_equivalence_20261008). The near-spanning cap theorem provides powerful extraction only WHEN sufficient long monochromatic reachability exists. This distinguishes the two proof tracks and prevents circular assumptions. No web/literature search; keep conjecture-specific material outside GUIDE.
+
+- ID: nori_cap_orientation_stability_and_fixed_support_nogo_20261008
+- Scope: nori
+
+## Cubical Tucker/Sperner and multilabeled Hex for exact NORI reachability
+
+CANONICAL TOOLKIT FILE ID: literature_fixed_point_theorems
+TITLE: Literature Fixed Point Theorems
+LOCATION: nori.nodes (type=toolkit, id=literature_fixed_point_theorems). Read this exact toolkit file first. It is the SINGLE consolidated source for all fixed-point, cubical Sperner/Tucker, KKM, Hex and multilabeled Hex statements; discussions follow the theorems at the end.
+
+NORI CUBICAL FIXED-POINT AND MULTILABELED HEX GUIDANCE — literature ingested into the nori TOOLKIT. This is a new research option, NOT grand closure and NOT a replacement for the existing exact-reversed-two-tail extraction theorem. Do not move problem-specific strategy into the generic GUIDE.
+
+READ THE CONSOLIDATED TOOLKIT ENTRY:
+  literature_fixed_point_theorems — unified statement-first reference for Brouwer/Borsuk–Ulam, Poincare–Miranda, Sperner/KKM, Tucker, cubical and octahedral Sperner, Kuhn/Fan/Wolsey, Gale Hex, Steinhaus chessboard, colorful Hex, and multilabeled n-essential Hex. The formal theorem statements are in Part I, sources in Part II, and all discussions/caveats/NORI uses in the LAST Part III.
+Ten older toolkit entries were superseded and archived with their complete prior content preserved. Consult this ONE entry rather than the retired individual literature nodes.
+
+PRECISE GRAND TARGET — IMPORTANT UPDATE over older generic common-target discussions: see PROVED item nori_exact_color_free_reversed_two_tail_complement_reachability_grand_equivalence_20261008 and existing startup broadcast nori_exact_reversed_two_tail_color_free_reachability_20261008. Fix root x and ordered distinct terminal directions J=(a,b), let D=[n]\\{a,b}. Define COLOR-FREE R_(a,b)(x) as supports U nonempty in D for which an EITHER-COLOR monochromatic ordered-three-face geodesic from x has direction order (an ordering of U,a,b). Active NORI one-switch grand closure is EXACTLY equivalent to finding U in R_(a,b)(x), and D\\U in R_(b,a)(x), with both nonempty. The reversed two-direction terminal memory absorbs BOTH seam windows, so no additional junction-color hypothesis is necessary for this PARTICULAR splice. Do NOT demand matching colors, and do NOT confuse the two required families with arbitrary common-target branches.
+
+TOP FIXED-POINT TRANSFER TESTS:
+A. Cubical Tucker + nested SUPPORT chains: if labels on a neutral simplex form an inclusion chain, they contain empty and full supports. If that simplex is ONE ACTUAL path-certified chain, it yields a full geodesic. But the full NORI extraction uses TWO DIFFERENT reversed-tail families R_J and R_revJ on D, with U and complementary D\\U. A neutral single-family simplex alone does not solve that cross-family collision. Moreover physical antipodality and NORI's correct reversed-complement path involution generally PRESERVE used-coordinate supports, whereas cubical Tucker's boundary condition requires COMPLEMENTARY labels. You must prove the boundary equivariance, chain compatibility, and exact two-family extraction; do not assume them.
+B. Binary cubical Sperner: every LEGAL one-coordinate geodesic extension changes the support string by exactly one bit, satisfying the local Hamming-one condition on legal arcs. No full cubical grid of legal arcs, correct face boundary labels, or same-root/reversed-tail pairing is known. Constructing these is the gap; full 2^|D| label cell would give complementary pairs only WITH genuine path/root/tail certificates.
+C. Gale/Steinhaus and colorful/multilabeled Hex: consider covers/tiles of root–support or repair-state complexes by SET-VALUED, ACTUALLY WITNESSED regions for (x,J,U), and two games for J vs rev J. Seek a connected winning set / multilabel neighborhood certificate that can be converted via a directed monotone connector/exchange to a single same-root complementary-support pair. A connected Hex path is not automatically geodesic; no repeated coordinates and coherent terminal directions need proof.
+D. Poincare–Miranda, Brouwer, cubical KKM, colorful KKMS/Komiya and Ky Fan are useful for zeros/balanced intersection/alternating simplices, but zero in a convex hull may be produced by noncomplementary labels (e.g. 000,011,101,110). Distinct physical reachable labels cannot be substituted by coordinatewise averages without an exact extraction theorem.
+E. Ordinary Tucker forced EXACT complementary n-bit pair on an n-dimensional arbitrary-label ball is FALSE for n>=3: there are 2^(n-1) complementary label pairs. Grouping them into classical signed scalar types would require ambient dimension >=2^(n-1). Reachability-specific restrictions, nested chains or two-family compatibility must supply the strengthening.
+
+RESEARCH PRIORITY: dimension-independent carrier with proved topological boundary/facet condition, actual geodesic witnesses, and an exact collision of R_(a,b)(x) with complement(R_(b,a)(x)). Compare chain-neutrality Tucker, full-label cubical Sperner and multilabeled Hex. Preserve the existing standing restriction on any NEW web/literature searches unless the user authorizes them; this requested ingestion has already verified and archived its sources. Explicitly distinguish literature theorems, proved extraction reductions, conditional applications, and open carrier forcing.
+
+- ID: nori_cubical_fixed_point_hex_bitstring_reachability_20261008
+- Scope: nori
+
+## NORI exact grand extraction: complementary monochromatic supports with reversed two-direction tails
+
+NORI MAJOR PROVED EXTRACTION THEOREM — DIRECTLY TARGETS THE ACTIVE ORDERED-THREE-FACE GRAND CONJECTURE. This is a NECESSARY AND SUFFICIENT, DIMENSION-INDEPENDENT color-free reachability reformulation, NOT YET a proof of existence. Read Item nori_exact_color_free_reversed_two_tail_complement_reachability_grand_equivalence_20261008 in subsection root_endpoint_state_torus_and_geodesic_connectors.
+
+For each cube root x and ordered pair of DISTINCT coordinates J=(a,b), let D=[n]\\{a,b}. Define R_J(x) as the family of support sets U⊆D for which SOME MONOCHROMATIC directed geodesic from x (of EITHER ordered-three-face color) has direction word (some ordering of U, a,b). Color is NOT recorded; retain just the root x, support U and ordered terminal pair J. For n>=4, one-switch grand closure is EXACTLY EQUIVALENT to
+   exists x,a,b,U:  U in R_(a,b)(x) AND (D\\U) in R_(b,a)(x),
+with both supports nonempty.
+
+EXACT SPLICE: Pick A from x with direction word (U,a,b) and B from SAME x with word (V,b,a), U⊔V=D, both monochromatic in arbitrary colors q,r. The antipodal reversal of B begins at x⊕U and has directions (a,b,reverse V), its windows all color 1-r. Follow the U-prefix of A, then the entire antipodal reversal of B. This produces the FULL antipodal geodesic (U,a,b,reverse V). The FIRST |U| ordered-three-face windows coincide with windows of A and are color q; the LAST |V| coincide with windows of antipodally reversed B and are color 1-r. There are EXACTLY n-2 windows, so no uncontrolled junction windows. It has zero or one color change.
+
+CONVERSE: Split any full one-switch geodesic immediately after the first color block; the two shared middle directions a,b are placed at the tail of its monochromatic prefix and, IN REVERSE ORDER, at the tail of the antipodally reversed monochromatic suffix, both rooted at the original x. Their outside supports U,V complement in D. A completely monochromatic full geodesic also permits an arbitrary interior cut. Thus the criterion is IF AND ONLY IF.
+
+TOPOLOGICAL TASK: Force complementary support labels between R_(a,b)(x) and R_(b,a)(x) for SOME root x and coordinate pair (a,b). This is the exact counterpart of the earlier k=1 edge case R(x) intersect bar(R(x))≠empty. It solves the previously outstanding TWO-SEAM extraction issue for this precise reversed-tail connector class. Do not require the colors q,r to agree. Do not assert arbitrary common-target branch pairs are compatible; reversed two-coordinate terminal memory is essential.
+
+GENERALIZATION: For ordered k-face reversal-odd colorings, replace ordered (a,b) by an ordered (k-1)-tuple J and pair R_J(x) against the COMPLEMENTARY SUPPORT region R_rev(J)(x). The k=1 empty-tail case recovers the user's original uncolored monochromatic reachability formulation. Research priority is now FORCE THIS PRECISE LABEL COINCIDENCE via Tucker / Sperner / Borsuk-Ulam / KKM / Hartman / connector arguments with proved incidence and boundary conditions, aiming dimension-independently at grand closure. Web and literature search prohibited; keep conjecture-specific strategy outside generic GUIDE.
+
+- ID: nori_exact_reversed_two_tail_color_free_reachability_20261008
+- Scope: nori
+
+## Three nonlinear direction faults: even-dimensional NORI closure via antipodal root-chart connectivity
+
+NORI MAJOR PROVED ALL-DIMENSION SUBCLASS CLOSURE (not unrestricted grand closure). Read Item nori_even_dimension_three_arbitrary_nonlinear_coordinate_faults_full_grand_closure_20261008 (version 2), the six-order synchronization Item nori_three_nonlinear_coordinate_faults_six_order_antipodal_suffix_sync_20261008, and the abstract chart extraction Item nori_three_fault_reachability_root_chart_antipodal_connection_extraction_20261008.
+
+THEOREM: For EVERY EVEN n>=8 and ANY fixed three directions K={a,b,c}, let D=[n]\\K. Assume that for every physical ordered three-face whose three free directions lie entirely in D, c(F,(i,j,k)) equals parity of ALL exterior face bits, optionally plus q+eta_i+eta_j+eta_k for arbitrary coordinate bits eta_i and one fixed q. There is NO restriction on the colors of ANY ordered face whose free triple meets K: they can have arbitrary NONLINEAR dependence on exterior face bits, subject only to active NORI reversal oddness. THEN A FULL ANTIPODAL GEODESIC WITH AT MOST ONE ORDERED-THREE-FACE COLOR CHANGE MUST EXIST.
+
+PROOF STRUCTURE: Let m=n-3 odd. For any order p of D, the 8 outside roots whose m-2 parity windows are MONOCHROMATIC have a 6-periodic binary pattern across p, with consecutive bits at positions j and j+3 complementary. Assume NO full good NORI path. For all SIX permutations of exceptional K as terminal directions, the final three window colors must alternate. Antipodal reversal between the two opposite physical K-faces forces the SIX suffix words to SHARE ONE BIT t(S), independent of K-root bits and terminal order; t(bar S)=1-t(S). The first exceptional ordered face after D (free directions p_(m-1),p_m,a) must have color t(S), and is physically unchanged when the outside root changes only in p_(m-1),p_m and the prefix order changes. Hence these certified root-chart overlaps force equality of t.
+
+A completely proved 6-periodic template graph lemma shows that for odd m>=5 these overlaps connect either the two middle Hamming layers (m=5,7 modulo6), or four central layers (m=9 modulo6), in a connected antipodally invariant graph. Its edges include EVERY adjacent cube edge between the specified consecutive layers. Thus t would be constant along a path from S to bar S, contradicting t(bar S)=1-t(S). The separable intercept q+eta_i+eta_j+eta_k is eliminated by a root-bit translation x_i->x_i+eta_i.
+
+UNRESTRICTED GRAND STILL OPEN. THE NEW CLOSURE FRONTIER is to establish antipodal chart connectivity for a general reversal-compatible ordered triple intercept h, or better for truly arbitrary exterior-face colorings. Define G_p by early parity-plus-intercept monochrom constraints; connect outside-root states witnessing the SAME actual first-exceptional physical ordered face. The proved theorem nori_three_fault_reachability_root_chart_antipodal_connection_extraction_20261008 says ANY component containing a vertex and its antipode suffices for full NORI closure. This is a real geometric reachability/connector mechanism, not a convex-hull coincidence.
+
+No web/literature search. Keep problem-specific guidance outside GUIDE.
+
+- ID: nori_even_three_nonlinear_faults_chart_connectivity_closure_20261008
+- Scope: nori

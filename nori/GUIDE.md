@@ -8,7 +8,9 @@ Use Brainstorms for loose ideation, Items for individual research contributions,
 
 ## Session lifecycle
 
-Call boot() once per conversational worker. Reuse its session_id for subsequent writes. Use status() for project state, changes(...) for updates since the artifact snapshot, and read(...) for exact live content.
+**One boot per conversation, per project schema.** Call `boot()` exactly once, at the initial startup of an independent conversational worker. Preserve the returned `session_id` and use that same identifier for **every subsequent write throughout the conversation**, even after multiple user messages, retries, task changes, summaries, or research restarts. **Never call `boot()` on a follow-up** (including “continue”, “again”, “try again”, “resume”, or “solve it”); such requests continue the existing session. If any earlier message or summary in the conversation contains a session ID for this schema, reuse it instead of booting. For ongoing work, use `status()`, `changes(...)`, and `read(...)` to obtain fresh state; refresh an artifact using `artifact_help()` rather than rebooting. Only a genuinely new, independent conversation with no existing session ID calls `boot()`.
+
+For every follow-up, use `status()` for project state, `changes(...)` for updates since the last known revision, and `read(...)` for exact live content.
 
 ## Atomic Items and compositions
 

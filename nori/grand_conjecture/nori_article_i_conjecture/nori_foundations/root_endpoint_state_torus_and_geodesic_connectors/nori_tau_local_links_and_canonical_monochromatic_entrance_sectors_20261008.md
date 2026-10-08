@@ -1,0 +1,19 @@
+# Local antipodal link spheres and canonical common-root selectors
+
+# Antipodal endpoint links are high-index spheres with canonical monochromatic entrance sectors
+
+Continue the rooted two-end state torus T_n=(S^1)^n of ordered pairs (u,v) in Q_n^2, with rank d_H(u,v), endpoint exchange sigma(u,v)=(v,u), simultaneous antipodality alpha(u,v)=(bar u,bar v), and tau=alpha sigma. Each coordinate circle is the square 00--01--11--10--00, with angles 0,pi/2,pi,3pi/2.
+
+**Theorem 1 (local antipodal link).** For n>=2, every top-rank state a_x=(x,bar x) is an isolated fixed point of tau, and a sufficiently small link L_x around a_x is an (n-1)-sphere on which tau acts as ordinary antipodality. Its natural crosspolytope cell decomposition has 2n signed vertices (two inward rank-decreasing choices for each coordinate), and its 2^n orthant facets are indexed by all possible common connector vertices z in Q_n. Opposite orthants correspond to z and bar z.
+
+*Proof.* In angular coordinates, tau(theta)=pi-theta coordinatewise. At a_x each theta_i is pi/2 or 3pi/2. In a sufficiently small local chart delta around a_x, tau(delta)=-delta. A small Euclidean ball is tau-invariant, and its boundary is the stated antipodal sphere. The 2n inward directions are the two arcs in each coordinate circle from a_x toward the two diagonal states 00 and 11. Choosing one arc per coordinate gives precisely a product n-cube from the diagonal state (z,z) to a_x, with z_i the chosen diagonal bit. The sector's directed chains are geodesics built by extending either endpoint at each unused direction. Tau sends the diagonal root (z,z) to (bar z,bar z), proving the opposite-sector claim.
+
+**Theorem 2 (canonical entrance-sector selectors).** Let c be an antipodally odd coloring of the undirected edges of Q_n. Write c_i(x)=c({x,x XOR e_i}), and define a cube vertex z_q(x), q in {0,1}, by
+(z_q(x))_i = x_i XOR 1 XOR c_i(x) XOR q.
+For each antipodal endpoint state a_x=(x,bar x), the q-colored incoming cover edges at a_x select exactly one of the two inward signs in each coordinate. These n signs together specify the unique orthant sector whose *all n immediate final edges into a_x* have color q, and its diagonal root is z_q(x). Moreover
+z_1(x)=bar z_0(x),
+z_q(bar x)=z_q(x).
+
+*Proof.* The two inward covers in coordinate i add either the edge incident with x of color c_i(x) or its antipodal edge incident with bar x of color 1-c_i(x). The first cover belongs to the sector with diagonal coordinate z_i=bar x_i; the second to z_i=x_i. Thus the sector whose incoming cover has color q has z_i=bar x_i when c_i(x)=q and z_i=x_i when c_i(x)!=q, exactly z_i=x_i XOR 1 XOR c_i(x) XOR q. Each coordinate's two incoming colors are complementary, so the sector is unique. The first displayed relation is immediate, and the second follows from c_i(bar x)=1-c_i(x).
+
+**Precise topological opportunity and extraction warning.** The simultaneous-antipodality action alpha on the entire T_n has equivariant cohomological index only one, but the tau action on each punctured neighborhood of a target a_x has link S^(n-1) with full local antipodal index n-1. The selected z_0(x) and z_1(x) are complementary labels encoding the last-edge color data, precisely matching the proposed antipodal-coordinate labels. Nevertheless color agreement of all n last edges does **not** imply a monochromatic directed chain from the corresponding diagonal root to a_x: interior covers can obstruct, and a successful chain could also enter through a sector whose other last edges have different colors. A Hartman/Tucker/Sperner argument would have to label each local sector by jointly realizable *directed reachability* and prove the required boundary/incidence relations; the local high index and final-edge selectors alone do not settle the edge conjecture or ordered-three-face NORI.

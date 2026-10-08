@@ -1,18 +1,18 @@
-# Rank-parity counterexample to unrestricted antipodal-reversal-odd length-three geodesic conjecture
+# Rank-parity counterexample to unrestricted based-window antipodal reversal conjecture
 
 ## Statement
 
-For every even n≥6, the unrestricted NORI conjecture is false.
+For every even n≥6, the unrestricted based-window antipodal-reversal-odd conjecture is false; this construction is excluded from the active ordered-three-face NORI coloring class.
 
 ## Body
 
-Let n be even and n≥6. For each directed length-three geodesic P=(x0,x1,x2,x3) of Q_n define c(P)=|x0| mod 2, where |x| is Hamming weight. Antipodal reversal gives J(P)=(bar x3,bar x2,bar x1,bar x0). Since length three flips exactly three bits, |x3|≡|x0|+3 (mod 2), and |bar x3|≡n−|x3|≡|x0|+1 (mod 2) for even n. Hence c(JP)=1−c(P). On any antipodal geodesic γ=(v0,...,vn), the ith length-three window starts at vi, and |v(i+1)|≡|vi|+1 (mod 2). Thus the consecutive window colors strictly alternate, giving n−3 color changes. For n≥6 this exceeds one. Therefore there is no good antipodal geodesic. This counterexample is in the original NOR Article I development under rank_parity_refutes_unrestricted_n_k and rank_parity_refutes_the_unrestricted_tuple_window_n_k; its exclusion was valid only for NOR's coordinate-only model, not NORI. Status: rigorous counterexample to NORI's current conjecture.
+Let n be even and n≥6. For each directed length-three geodesic P=(x0,x1,x2,x3), set c(P)=|x0| mod 2. For the antipodal reversal J(P)=(bar x3,bar x2,bar x1,bar x0), the parity of |bar x3| is opposite to that of |x0|, so c(J(P))=1−c(P). Along any full antipodal geodesic, consecutive length-three windows begin at adjacent vertices; hence their colors strictly alternate, giving n−3≥3 changes. This rigorously refutes the historical unrestricted based-window statement. It does not refute active NORI: two length-three paths traversing the same ordered three-face from different corners can have distinct starting-vertex parities, violating the defining requirement that the color depend only on the face and ordered free directions.
 
 ## Metadata
 
 - ID: nori_rank_parity_counterexample_even_dimensions
 - Kind: toolkit
-- Version: 1
-- Math version: 1
+- Version: 2
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted

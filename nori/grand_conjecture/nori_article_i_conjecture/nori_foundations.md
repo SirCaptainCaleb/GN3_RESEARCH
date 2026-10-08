@@ -1,34 +1,51 @@
 # The antipodal-reversal-odd geodesic conjecture
 
-Let \(Q_n=\{0,1\}^n\). An ordered three-face \((F,\pi)\) consists of a three-dimensional cube face \(F\) and an ordering \(\pi\) of its three free directions. A binary coloring \(c\) is **antipodal-reversal odd** when \(c(\bar F,\operatorname{rev}\pi)=1\oplus c(F,\pi)\), where \(\bar F\) complements every cube coordinate. Along an antipodal geodesic, obtained by changing each coordinate exactly once, record the colors of the consecutive length-three windows. The grand conjecture asks for a geodesic whose color word changes at most once. This formulation includes the coordinate-only, reversal-odd ternary problem; color values may depend on all fixed exterior coordinates of \(F\).
+# Antipodal-reversal-odd geodesics and their topological extraction
 
-**Lemma 1 (unrestricted dimension five).** Every binary coloring of ordered three-faces of \(Q_5\), with no symmetry hypothesis, has a five-direction antipodal geodesic with at most one change.
+Let \(Q_n=\mathbb F_2^n\). An *ordered three-face* \((F,\pi)\) is a three-dimensional coordinate face with an ordering \(\pi\) of its free directions, independent of its initial traversal corner. Its binary color satisfies
+\[
+c(\bar F,\operatorname{rev}\pi)=1\oplus c(F,\pi).
+\tag{1}
+\]
+The **NORI conjecture** asserts that some full antipodal geodesic has at most one change between its \(n-2\) consecutive ordered-three-face colors. Both the corner-independence and the freedom to choose the root are essential; the stronger arbitrary based-window and fixed-root formulations fail.
 
-**Proof.** Otherwise every color word on a five-direction geodesic would be \(010\) or \(101\), so its first and third colors agree. For a fixed coordinate order \((a,b,c,d,e)\), the first window color depends only on the fixed \(d,e\)-bits, while the third depends only on the fixed \(a,b\)-bits (after the first two directions have been toggled). Independence of those four bits forces each of these two window colors to be constant over all face positions. As every ordered triple occurs as the first window of some five-coordinate order, the entire coloring depends only on ordered triples, say \(h(a,b,c)\). Universal failure would force \(h(a,b,c)\ne h(b,c,d)\) for every five-distinct order. Applying this to the five cyclic rotations of \((a,b,c,d,e)\) alternates binary labels around an odd 5-cycle, impossible. \(\square\)
+**Finite foundations.** For \(Q_5\), even an arbitrary face coloring has a full geodesic with at most one change. Otherwise every three-window word alternates, so its first and last window colors coincide. Their disjoint exterior-bit dependencies force all face colors to depend only on direction triples \(h(a,b,c)\). But \(h(a,b,c)\ne h(b,c,d)\) for every four distinct directions would require binary alternation around five cyclic rotations of a five-set, impossible. For \(Q_6\), antipodal reversal combined with six coupled geodesics lifts a monochromatic four-direction segment from the \(Q_5\) theorem to a full good geodesic. These are established closure theorems; they do not induct directly because restricting to a facet fixes exterior bits and loses the required antipodal pairing.
 
-**Lemma 2 (six-path forcing).** Fix distinct directions \(a,b,c,d,e,f\), and a four-edge based path through the first four directions \(a,b,c,d\) whose two ordered-three-face window colors agree. Write its starting bits as \(x=(A,B,C,D,E,F)\) in coordinate order \((a,b,c,d,e,f)\), and use \(\bar A=1\oplus A\), etc. At least one of the following six *complete* antipodal geodesics has at most one color change:
+## Reachability with the correct terminal memory
 
-| Direction order | Starting bits |
-|---|---|
-| \(a\,b\,c\,d\,e\,f\) | \(A,B,C,D,E,F\) |
-| \(d\,c\,b\,a\,e\,f\) | \(A,B,C,D,\bar E,\bar F\) |
-| \(d\,c\,b\,a\,f\,e\) | \(A,\bar B,\bar C,D,\bar E,\bar F\) |
-| \(d\,c\,b\,f\,e\,a\) | \(A,\bar B,\bar C,\bar D,\bar E,\bar F\) |
-| \(d\,e\,f\,a\,c\,b\) | \(\bar A,\bar B,\bar C,\bar D,E,F\) |
-| \(d\,e\,f\,b\,c\,a\) | \(\bar A,\bar B,\bar C,D,\bar E,\bar F\) |
+In an antipodally odd *edge*-colored cube, let \(R(x)\) be the vertices monochromatically geodesically reachable from \(x\), of either color. Reversal and complementation imply \(R(\bar x)=\overline{R(x)}\). A vertex reachable from both \(x\) and \(\bar x\) supplies two monochromatic geodesics with disjoint coordinate supports; concatenate them into a one-switch antipodal geodesic and rotate its unequal-color blocks by antipodal complementation to obtain a full monochromatic geodesic. Hence a monochromatic full geodesic exists **iff** \(R(x)\cap R(\bar x)\ne\varnothing\) for some \(x\).
 
-**Proof.** Complement all colors if necessary so that the given four-edge path's two window colors are \(00\), and suppose all six full geodesics have at least two changes. Write \(W_i\) for the four-window word of table row \(i\). A bad four-window word beginning \(00\) equals \(0010\); one beginning \(11\) equals \(1101\); one beginning with \(1\) and ending with \(0\) equals \(1010\).
+For ordered three-faces, an arbitrary monochromatic connector produces two uncontrolled seam windows. The exact remedy is terminal memory of **two ordered directions**. Fix \(n\ge5\), a root \(x\), \(J=(a,b)\), and \(D=[n]\setminus\{a,b\}\). Let \(R_J(x)\) contain nonempty supports \(U\subseteq D\) for which some monochromatic geodesic from \(x\) has word \((u_1,\ldots,u_k,a,b)\), \(\{u_i\}=U\). The witness color is intentionally forgotten.
 
-First \(W_1=0010\); its final \(def\) face has color 0. The first two windows of row 2 are antipodal reversals, respectively, of the second and first windows of row 1, so \(W_2=1101\), making its final \(aef\) window color 1. The first two windows of row 3 have the same antipodal-reversal relations; thus \(W_3=1101\), making its final \(afe\) window color 1. Row 4 starts with an antipodal reversal of row 1's second window (color 1), and ends with an antipodal reversal of row 2's final \(aef\) window (color 0); hence \(W_4=1010\), making its third \(bfe\) window color 1. Row 5 starts with the *same ordered face* \(def\) as row 1's last window (color 0), and its second \(efa\) window is the antipodal reversal of row 3's final \(afe\) window (color 0); thus \(W_5=0010\), making its last \(acb\) window color 0. Finally row 6 starts with the same ordered \(def\) face as row 1's final window (color 0), has second \(efb\) window antipodally reversed from row 4's third \(bfe\) window (color 0), and ends with \(bca\), antipodally reversed from row 5's last \(acb\) window (color 1). Therefore \(W_6=00*1\), which has at most one change, a contradiction.
+**Theorem (exact reversal-tail equivalence).** There is a full NORI geodesic with at most one change if and only if, for some \(x,a,b\), there are nonempty \(U,V\) with \(U\sqcup V=D\) satisfying
+\[
+U\in R_{(a,b)}(x),\qquad V\in R_{(b,a)}(x).
+\tag{2}
+\]
 
-To verify every equality and complement used, for an order \(p\) and starting bits \(y\), the window on \(p_i,p_{i+1},p_{i+2}\) has fixed bit \(y_t\oplus \mathbf1_{t\in\{p_1,\ldots,p_{i-1}\}}\) at each exterior coordinate \(t\). Substituting the six displayed starts yields exactly the asserted identical-face or antipodal-reversal pairs, including all three exterior bits. \(\square\)
+**Proof.** Let \(A\) and \(B\) be witnesses with respective words \((U,a,b)\) and \((V,b,a)\). Antipodally reverse \(B\). It starts at \(\overline{x\oplus\chi_V\oplus e_a\oplus e_b}=x\oplus\chi_U\), follows \((a,b,\operatorname{rev}V)\), and is monochromatic in the complementary color. Concatenate it after the \(U\)-prefix of \(A\). The \(k=|U|\) initial windows coincide with those of \(A\); the \(m=|V|\) last windows coincide with those of reversed \(B\). Since \(k+m=n-2\), these are *all* windows. Thus the full path has at most one switch. Conversely, cutting a good full word between its color blocks, and antipodally reversing the suffix, produces the two witnesses from the original root, with complementary supports and reversed terminal directions. For a monochromatic full path choose any interior cut. \(\square\)
 
-**Theorem 3 (full NORI closure for \(n=6\)).** Every antipodal-reversal-odd coloring of ordered three-faces of \(Q_6\) has an antipodal geodesic whose color word changes at most once.
+## Geometry and genuinely certified labels
 
-**Proof.** Fix any five-dimensional facet. Its induced coloring is arbitrary, so Lemma 1 supplies a five-direction geodesic with at most one change. Among its three consecutive window colors, some adjacent pair agrees. The corresponding contiguous four-edge subpath therefore has two equal window colors. Label those four directions \(a,b,c,d\) and the remaining two directions \(e,f\). Lemma 2 supplies one of six explicit full six-direction geodesics with at most one change. \(\square\)
+The all-root full-geodesic complex is a connected closed \(n\)-pseudomanifold. Its rooted chambers are balls \(e_x*\operatorname{sd}(\partial\Delta^{n-1})\); its dual moves are adjacent direction exchanges and endpoint root slides. Physical antipodality fixes the midpoint of each endpoint edge, so an ordinary free Borsuk–Ulam theorem on this whole complex is unavailable.
 
-**Exact change-vector fibers for universal-flipper coordinates.** If a set \(A\) of \(r\) directions has the property that flipping any one of its *fixed exterior* bits complements every ordered-face color, and the other \(m\ge3\) directions form \(B\), take the direction order \(AB\). For any fixed starting \(B\)-bits, the \(r\) initial adjacent color-change bits are prescribed independently and bijectively by the \(r\) starting \(A\)-bits, while the last \(m-3\) changes equal the change vector of the induced \(B\)-geodesic. Indeed, writing the initial \(A\)-bits as \(z_1,\ldots,z_r\), each early difference has the form \(d_i=G_i\oplus G_{i+1}\oplus1\oplus z_i\oplus\mathbf1_{i+3\le r}z_{i+3}\); solve for \(z_i\) in descending order. A monochromatic residual \(B\)-path has exactly \(r+1\) good lifts; a residual path with one switch has exactly one. In the special case \(m\le3\), every binary change vector of length \(n-3\) is realized by exactly eight starting vertices for every fixed direction order with \(A\) first.
+The \(2n\)-bit root–progress cube faithfully places different rooted Freudenthal charts on distinct faces. A second endpoint-pair construction realizes the genuine monochromatic extension states as an \(n\)-torus, not a ball. In NORI, deleting the first move of a monochromatic \((U,a,b)\) witness preserves its endpoint and terminal memory while moving the root and shrinking \(U\). Geometrically the move runs on one of two crossing diagonals of a root/support coordinate square, depending on an endpoint bit. A projected crossing is not a pair of actual path witnesses; independent slides need not preserve a common root.
 
-**Affine obstruction certificate.** For any face coloring affine in its exterior bits and fixed direction order, the change vector is \(d(x)=Mx\oplus b\in\mathbb F_2^{n-3}\). Let \(H\) be full row rank with \(\ker H=\operatorname{im}M\). A geodesic with this direction order is good exactly when \(Hb\in\{0,He_1,\ldots,He_{n-3}\}\), by the definition of the affine image. This specializes to an unconditional existence criterion whenever \(\operatorname{rank}M\ge n-4\).
+Two proved examples forbid standard shortcuts. In antipodally odd edge-colored \(Q_4\), the reachability nerve can contain all triangular faces of a cube square while lacking the full four-corner simplex. In paired-coordinate edge colorings of \(Q_{2m}\),
+\[
+|R(x)|=3^{A+H}+3^{B+H}-2^H\le 2\cdot3^m-2^m<2^{2m-1}
+\]
+for \(m\ge5\), with \(A,B,H\) the counts of initial \(00,11,\) and mixed pairs. A mixed-pair root nevertheless has a full monochromatic antipodal geodesic. Large cardinality and automatic cubical nerve filling are therefore not universal mechanisms. A convex-hull zero of bit-string labels may likewise be witnessed by noncomplementary labels.
 
-**Unresolved general dimension.** For \(n\ge7\), a face of a six-coordinate subcube has additional fixed exterior bits. The six-geodesic forcing proof demands selected faces be identical and others antipodal reversals; independently holding the extra bits fixed does not satisfy all these relations. A full-dimensional extension must traverse or otherwise control the extra coordinates while retaining the one-switch condition. The conjecture in general dimension is open.
+## Two exact topological closure targets
+
+**Reversed-tail carrier.** Build an equivariant simplicial/cubical/Hex carrier whose labels are genuinely witnessed \(R_{(a,b)}(x)\) and \(R_{(b,a)}(x)\), with incidence, boundary conditions, and same-root compatibility sufficient to force (2). An alternating simplex, root-sheet crossing, or balanced interpolation is insufficient unless accompanied by an *actual extraction* of (2).
+
+**Four-facet cap-memory graph.** Fix \(n-2\) directions \(U\), omit \(a,b\), and choose a projected root \(r\) on \(U\). Let \(A_i(r)\) be the color on the physical ordered face \((a,b,i)\). It is independent of fixed \(a,b\) bits. Join first and last directions \(i,j\in U\) of any monochromatic \(U\)-spanning path in one of four parallel facets based at \(r\). The proved two-cap comparison under hypothetical global failure gives, for its witness color \(q\),
+\[
+q=A_i(r)=1\oplus A_j(r).
+\tag{3}
+\]
+Thus the graph must be bipartite. **Any odd cycle** forces grand closure. The remaining obligation is producing enough compatible near-spanning monochromatic paths to violate this cut.
+
+The conjecture remains open for \(n\ge7\). The present conclusions replace an assortment of low-dimensional cases by two exact dimension-independent extraction targets: a same-root reversed-tail collision, or an odd cycle of physically witnessed cap-memory connectors. A fixed-point proof must now establish the necessary *existence* implication, not merely a topological symmetry of an abstract label space.
