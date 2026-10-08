@@ -31,7 +31,7 @@ jobs:
           RESEARCH_SCHEMA: ${{ inputs.schema }}
         run: |
           case "$RESEARCH_SCHEMA" in
-            gn3n|nor|linp) ;;
+            gn3n|nor|linp|nori) ;;
             *) echo "Unsupported schema: $RESEARCH_SCHEMA" >&2; exit 2 ;;
           esac
           test -f "$RESEARCH_SCHEMA/MANIFEST.json"
