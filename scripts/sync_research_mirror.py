@@ -373,7 +373,7 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 Starts a session and returns the artifact snapshot revision, startup broadcasts, notices, and session ID.
 
 ### search(query, filters := {})
-Discovers Articles, Sections, Subsections, Toolkit, documents, and Brainstorms.
+Discovers Articles, Sections, Subsections, Toolkit, documents, and Brainstorms. Explore an individual Subsection using items(subsection_id).
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
 Reads durable Article, Section, Subsection, Toolkit, and Brainstorm content.
@@ -393,13 +393,31 @@ Returns live events and current composition state since a revision.
 ## Development
 
 ### new_subsection(session_id, section_id, payload, expected_section_version)
-Creates a local Subsection development branch.
+Creates a new Subsection container.
+
+### items(subsection_id) / read_item(item_id) / item_results(item_id)
+Lists Items under a Subsection; reads an Item and its Results; lists Results under an Item.
+
+### new_item(session_id, subsection_id, payload)
+Creates an Item. The payload provides id, kind, title, and body; the position is local to its Subsection.
+
+### save_item(session_id, item_id, payload, expected_version)
+Revises an Item with optimistic concurrency.
+
+### new_item_result(session_id, item_id, payload)
+Creates a named Result/claim within an Item. The payload provides id, kind, title, statement, proof, and status.
+
+### save_item_result(session_id, result_id, payload, expected_version)
+Revises an individual Result with optimistic concurrency.
+
+### tree()
+Returns the manuscript hierarchy from the grand conjecture through Article, Section, Subsection, Item, and Result.
 
 ### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
 Edits an existing Subsection by stable ID.
 
 ### compose(session_id, node_type, node_id, payload, expected_composition_version)
-Writes a deliberately lossy composition. payload contains body and, for Sections and Articles, depends_on as an explicit array of direct lower-level composition IDs. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
+Writes a deliberately lossy composition for an Item, Subsection, Section, or Article. payload contains body and depends_on as an explicit array of selected direct lower-level composition IDs. Items use [] and compress their Results. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
 
 ### save_research(session_id, payload, expected_version := null)
 Creates or edits Section structure/metadata or a Toolkit object.
@@ -671,10 +689,12 @@ Generated: {rev.get('generated_at')}
             for s in data["section_subsections"]
         },
         "toolkit_count": len(toolkit_items),
+        "item_count": len(data["items"]),
+        "result_count": len(data["item_results"]),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
         "mirror_format": 18,
-        "composition_model": "recursive-composition-v6",
+        "composition_model": "recursive-composition-v7",
     })
 
 def tree_paths(schema: str) -> list[dict[str, Any]]:
