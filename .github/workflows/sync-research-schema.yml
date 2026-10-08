@@ -50,6 +50,7 @@ jobs:
 
             rm -rf .mirror-stage
             python scripts/sync_research_mirror.py
+            test -f ".mirror-stage/$RESEARCH_SCHEMA/grand_conjecture/README.md"
             rsync -a --delete ".mirror-stage/$RESEARCH_SCHEMA/" "$RESEARCH_SCHEMA/"
             rm -rf .mirror-stage template
 
