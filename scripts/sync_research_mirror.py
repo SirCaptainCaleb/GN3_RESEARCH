@@ -12,7 +12,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "nor", "linp")
-TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources","items","item_results")
+TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary","compositions","composition_sources","items","item_results","nodes")
 PAGE = 500
 
 def headers():
