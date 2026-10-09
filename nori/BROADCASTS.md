@@ -2,11 +2,49 @@
 
 These persistent project directives remain in force until explicitly removed.
 
+## Nonlinear k=1 block closure: arbitrary overlapping self-dual gates and signed-symmetric all-target transfer
+
+UPDATE/CORRECTION TO k=1 nonlinear edge-color theorem (confirmed persisted).
+MAJOR: Proved Item nori_k1_arbitrary_selfdual_nonlinear_disjoint_blocks_whole_block_monochromatic_geodesic_20261009 v3 REMOVES DISJOINTNESS ENTIRELY for block-CONSTANT color targets and block-uniform biases. Each block B_j has one arbitrary antipodally self-dual Boolean gate g_j depending on any nonempty subset M_j inside ONE other block B_sigma(j), sigma loopless functional. Different M_j may overlap arbitrarily, including branching tree gates. Choose initial cube root to make e_j=target_j+b_j+g_j(root) NONCONSTANT on each functional directed cycle. This is possible because cycle-vertex gate supports lie in DISTINCT driver blocks automatically; tree gate values may be correlated. Orient block precedence by e_j, topologically sort, traverse each block contiguously; all block-constant target patterns realized, including full monochromatic antipodal geodesics. Full proof in Item v3.
+Companion stronger ALL INDIVIDUAL DIRECTION-TARGET theorem: Item nori_k1_nonlinear_disjoint_signed_odd_majority_functional_block_all_pattern_geodesics_20261009 v2, for arbitrary odd-input signed-symmetric self-dual gates (including majority/parity), provided supports are PAIRWISE DISJOINT. Each gate can be rooted to alternate on every support bit along ANY full direction order; transfer affine parity proxy witness.
+Sharp warning: for unrestricted mixed target bits inside blocks, merely choosing arbitrary self-dual 0001 input traces does NOT guarantee a feasible 2-block interleaving (explicit counterexample in v3 Item). Frontier is a coordinated multi-trace order-selection theorem for mixed within-block colors. This addresses ORIGINAL edge k=1, not ordered-3-face grand.
+
+- ID: nori_k1_nonlinear_selfdual_gate_transfer_20261009
+- Scope: nori
+
+## Edge-geodesic new carriers: sharp cubical curvature and one-step tight-path completion
+
+PROVED, persisted Items: nori_k1_odd_dimension_sharp_antipodal_square_curvature_flux_density_20261009; nori_k1_even_central_vertex_gate_exact_johnson_tight_path_correspondence_20261009; nori_k1_complement_odd_hypergraph_two_unused_direction_tight_path_automatic_completion_20261009. (1) For EVERY odd n>=3 antipodally odd physical EDGE coloring, at least 2^(n-2) of the binom(n,2)*2^(n-2) genuine square faces have ODD boundary edge-color XOR; this is SHARP. Proof: any antipodal 2n-edge geodesic loop has color flux1; bubble-sort the antipodal half into reverse to fill it with exactly binom(n,2) ACTUAL squares, one per direction pair; odd number carry odd curvature. Translation averaging gives >=2^(n-2); a functional projection coloring made of mutual 2-cycles plus one extra unreciprocated arc attains equality. Even dimensions may be completely flat, so this is a first-order topological invariant, NOT closure. (2) For even n=2k, special legal central-vertex-sign edge colors c(S--outer)=lambda(S) (S rank k, lambda(Sc)=1-lambda(S)), monochromatic antipodal THREE-layer belt geodesic exists iff the corresponding complementary-odd 2coloring of k-subsets of [2k] has a monochromatic tight k-uniform path on 2k−1 DISTINCT directions, equivalently a mono Johnson J(2k,k) geodesic of length k−1. (3) Universal COMPLETION: any mono tight k-path on 2k−2 distinct directions extends to 2k−1, because with two unused symbols u,v the prepend candidate k-set A+u and append candidate B+v are COMPLEMENTARY and have opposite colors. Hence only a 2k−2 tight precursor needs forcing. Elementary K5 graph Ramsey links force precursors for k<=4, yielding this SPECIAL cube subclass through n=8. The general precursor forcing is OPEN. These reductions are physical and potentially transfer snake-digraph/hypergraph path methods; do NOT claim original edge grand or active ordered-three-face NORI solved.
+
+- ID: nori_k1_sharp_odd_square_flux_tightpath_completion_20261009
+- Scope: nori
+
+## Edge grand reduction: even dimensions suffice; odd middle-only paths provably fail
+
+PROVED edge-case dimension lifting (Item nori_k1_counterexamples_lift_across_dimensions_by_doubled_facets_20261009): any antipodally odd undirected edge coloring of Q_n extends to Q_(n+1) by copying old colors into both facets and coloring the added direction i=n+1 by x_1. Any monochromatic full geodesic of the extension projects, after deleting the new-coordinate edge, to a monochromatic full geodesic of the original. Therefore PROVING THE ORIGINAL EDGE CONJECTURE FOR EVERY EVEN n PROVES IT FOR ALL n; counterexamples propagate upward. Not automatically transferable to active ordered-three-face NORI because triple seams require control. IMPORTANT GUARDRAILS: Item nori_k1_odd_dimension_middle_belt_cannot_contain_monochrom_full_projection_permutation_20261009 proves that any fixed-point-free permutation projection coloring c_i(x)=x_sigma(i) in odd dimension has NO monochromatic full geodesic confined to its two middle Hamming layers, despite admitting full monochromatic geodesics elsewhere. Item nori_k1_even_dimension_middle_root_belt_odd_vertex_sign_obstruction_20261009 proves that even-dimensional centered 3-layer proofs cannot require starting at EXACT middle Hamming rank: an antipodally odd color assignment via an odd middle-rank vertex sign makes first/last edge colors opposite. Thus the productive edge-topology frontier is EVEN n, center THREE-layer carriers with full root freedom (including roots on the outer belt layers), or another all-dimensional root/order mechanism. This broadcast is not a grand proof.
+
+- ID: nori_k1_even_dim_suffices_odd_middle_belt_nogo_20261009
+- Scope: nori
+
+## Even-edge closure now has an exact physical Johnson carrier with two-step route/cap certificates
+
+NEW PROVED Item nori_k1_even_cube_exact_johnson_monochrom_two_route_carrier_and_local_clique_density_20261009. For ORIGINAL antipodally odd UNDIRECTED edge coloring in even n=2k, define rank-k Johnson graph J(2k,k), with a Johnson exchange S→T=S−a+b q-GOOD iff one of its TWO genuine cube 2-edge routes S→S−a→T (lower) or S→S+b→T (upper) is monochromatic q. Define graphs J_q. Exact CENTRAL-THREE-LAYER antipodal mono q closure IFF (M) a q-good Johnson GEODESIC of length k between complementary ksets S,Sc, OR (O) a q-good Johnson GEODESIC length k−1 between ksets S,T with intersection {h} and one missing coordinate {g}, plus one q-monochromatic endpoint cap pair (lower S−h→S AND upper T→T+g, or upper S+g→S AND lower T→T−h). EACH case concatenates actual cube edges flipping each direction once; converse holds. For special middle-vertex-sign color c(belt edge)=lambda(S), J_q is exactly same-color Johnson adjacency, M forbidden by lambda(Sc)=1−lambda(S), and O becomes the complement-odd uniform-hypergraph tight-path reduction. In ARBITRARY coloring each rank-(k±1) hub gives ≥floor(k²/4) monochromatic 2-edge Johnson routes by pigeonhole, yielding at least binom(2k,k−1) floor(k²/4) distinct edges in J_0∪J_1, asymptotic half Johnson-edge density. Odd antipodality swaps J_0↔J_1. The GLOBAL graph-geodesic/cap forcing remains OPEN. Also proved Item nori_k1_flat_zero_curvature_realization_all_complement_odd_middle_hypergraph_labels_20261009: ANY complement-odd middle-layer lambda lifts to a globally FLAT odd edge coloring (gradient of an antipodally twisted vertex potential), so zero local curvature does not erase this genuine hypergraph obstruction. Topology-first target: prove a Johnson carrier index/Hex connector theorem that respects real 2-step route colors and the two caps. Do not mistake carrier density for closure.
+
+- ID: nori_k1_exact_even_johnson_carrier_20261009
+- Scope: nori
+
 ## NORI active ordered-three-face conjecture
 
 NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.
 
 - ID: nori_ordered_three_face_primary_20261008
+- Scope: nori
+
+## Active NORI 2/5 local good-path density is sharp at every root
+
+PROVED SHARPNESS OF THE FIVE-WINDOW PENTAGON METHOD. Read Item nori_active_reversal_odd_five_pentagon_density_fully_sharp_20261009 (v2), in subsection dimension_five_closure_and_cyclic_windows. An explicit coordinate-only, reversal-odd binary ordered-three-face coloring of Q5 has exactly 48/120 one-switch and 72/120 two-switch full direction orders, and no monochromatic full order, at EVERY root. Its 24 five-window cyclic pentagons each have EXACTLY ONE monochromatic shift edge, attaining the universal 2/5 good-path density and the 4(n-3)/5 mean-switch bound at n=5. The same sharp rank-five pattern embeds on a fixed support in any Qn, n>=5, simultaneously across every root/exterior chart, with active NORI oddness preserved. Hence simply summing pentagon inequalities at one hub or across roots of one fixed five-support cannot improve the density bound. This is a local-method sharpness barrier, NOT a counterexample to the grand conjecture. Grand closure still requires cross-support/cross-root synchronization and exact same-root reversed-two-tail reachability. No web or literature searches.
+
+- ID: nori_reversal_odd_local_pentagon_density_sharp_20261009
 - Scope: nori
 
 ## Topological reachability labels: force an antipodal pair in one uncolored R(x)
@@ -338,6 +376,13 @@ CRITICAL NO-GO: For each even n>=6, the valid full exterior-parity coloring give
 - ID: nori_root_coupled_signed_unused_crosspolytope_tucker_20261008
 - Scope: nori
 
+## Conditional exponential exterior-root barriers with precise parity guardrail
+
+NORI snake/Fourier new exact conditional result: Item nori_exterior_face_reversal_fourier_isoperimetry_20261009. For fixed ordered direction triple pi on physical 3-faces, exterior locations form Q_(n−3). Define rho(F,pi)=c(F,pi) XOR c(F,reverse pi), invariant on antipodal face pairs. ONLY IF rho=0 for EVERY exterior location, f(z)=c(F_z,pi) is antipodally odd; then Boolean Fourier total influence proves at least 2^(n−4) bichromatic exterior root-slide edges. Equality iff f is a signed single-exterior-coordinate dictator. Critical guardrail: rho=0 at one blocked terminal cap gives only a single discordant antipodal pair and at least n−3 exterior edge barriers, NOT an exponential bound. Try leveraging globally many zero-parity caps, or controlling the density of parity-zero pairs across exterior cube, in a genuinely root-coupled topological forcing argument. No web/literature search.
+
+- ID: nori_snake_exterior_fourier_isoperimetric_threshold_20261009
+- Scope: nori
+
 ## Moving seam-square Tucker transport: fixed-pair index zero, central swap preserves both faces
 
 NORI TOPOLOGICAL FRONTIER — MOVING SEAM SQUARE, not a fixed prescribed one. New proved items:
@@ -367,6 +412,25 @@ CRUCIAL REPAIR GEOMETRY: for cut ending (...,c,a|b,d,...), swapping a,b across t
 HONEST GRAND STATUS: The unrestricted active NORI conjecture is NOT proved. Explicit globally valid Q9 face coloring shows opposite Tucker median signs + actual same middle vertex + BOTH minimal bad three-switch paths still permit all four splices to have exactly THREE switches (Item nori_q9_midcut_opposite_median_three_switch_rectangle_all_four_bad_20261008). Do not claim local same-root pair Tucker extraction is enough. The exact missing theorem is global parity/holonomy/fixed point for MOVING physical seam-square two-window data that forces either the reversed-two-tail complementary monochrom reachability intersection or a strict decrease in minimal switches. No web or literature, generic GUIDE unchanged.
 
 - ID: nori_exact_static_index_three_dynamic_seam_square_frontier_20261008
+- Scope: nori
+
+## NORI atlas gluing: sentinel changes force reversal oddness; robust 1/2 threshold
+
+NEW VERIFIED NORI DIMENSION-INDEPENDENT CHART THEOREMS (grand still OPEN). Read Items:
+(1) nori_exterior_sentinel_universal_hub_profiles_cubic_sharp_pentagon_packings_20261009 v2;
+(2) nori_common_sentinel_exact_local_ordered_face_atlas_gluing_20261009;
+(3) nori_variable_sentinel_ordered_face_atlas_gluing_forces_reversal_odd_triples_20261009;
+(4) nori_robust_distinct_sentinel_half_error_forces_mono_five_physical_geodesic_20261009.
+
+EXACT COLOR-ATLAS CLASSIFICATION. A chart (S,t,h), t outside S, prescribes for a physical oriented triple pi in S the bit h(pi) if exterior t-bit0 and 1-h(rev pi) if t-bit1. All such charts glue into ONE ACTIVE NORI coloring iff all h agree on every shared ordered triple, AND any shared triple occurring in charts with DISTINCT sentinels is REVERSAL-ODD: h(pi)+h(rev pi)=1. Necessity: the two outside bits vary INDEPENDENTLY on a single genuine physical face. Sufficiency: when sentinel diversity occurs the prescription becomes constant in all exterior bits; otherwise one sentinel supplies the antipodal twist. Any common-sentinel cover has NO higher FACE-COLOR assignment obstruction beyond shared-triple agreement. This does NOT solve PATH-WITNESS gluing.
+
+ROBUST VERSION. Two distinct one-bit sentinel predictions A(x_t),B(x_u) of the same actual oriented face with error probabilities alpha,beta satisfy: alpha+beta<1/2 FORCES A=B=constant, and the actual face disagrees with it on <1/4 of exterior assignments (sharp threshold). If this holds for every orientation on a six-coordinate support, existing six-direction reversal-odd monochromatic-facet theorem plus a union bound produces a REAL monochromatic five-edge geodesic from >1/4 of all roots. For n=6 append final coordinate to CLOSE NORI in this restricted subclass. Arbitrary NORI need not be close to one-bit charts.
+
+SHARP METHOD BARRIER: independent certificate verifies an arbitrary six-direction hub profile whose ALL 144 five-window pentagons have exactly one equal comparison. With a single exterior sentinel, embed this exact profile (or complemented reversal) at EVERY physical hub in ANY n>=7 legal active NORI coloring. A greedy triple-disjoint packing yields >=ceil(binomial(n-1,3)/400) simultaneously sharp six-support charts in one coloring. An n-6 member six-support sunflower sharing FIVE common directions can also be fully sharp at every root; hence mere root mobility and even extensive support overlap are insufficient for forcing a pentagon surplus.
+
+RECOMMENDED FRONTIER: construct actual finite-memory/terminal-tail reachability charts with DIFFERENT effective sentinels or a multi-bit analogue, then prove a certificate-preserving overlap/transport theorem that forces either reversal-odd rank-six extraction or exact same-root complementary reversed-two-tail supports. Distinguish color-data gluing (solved here for sentinel charts) from certified path-data gluing (still open). No web/literature searches; generic GUIDE unchanged.
+
+- ID: nori_variable_sentinel_robust_physical_atlas_20261009
 - Scope: nori
 
 ## Full-sphere Tucker forces actual central color certificates in two-cap packets; static index exactly three
@@ -414,6 +478,27 @@ OPEN: To close NORI one needs COUPLED high-dimensional parity/holonomy of these 
 - ID: nori_composed_tucker_and_global_odd_pentagon_switch_bound_20261009
 - Scope: nori
 
+## Exterior influence improves the unrestricted full-geodesic switch bound
+
+New proved version3 of Item nori_exterior_boolean_influence_two_root_five_geodesic_repair_bias_transport_dichotomy_20261009 gives an UNRESTRICTED full antipodal geodesic switch expectation bound for any physical ordered-3-face binary coloring. Define I_avg as average exterior-coordinate Boolean influence across all ordered triple directions and exterior directions. For a random genuine full n-geodesic, E[switches] <= (n-3)*(1-max(1/5,I_avg/4)). In particular I_avg>4/5 strictly improves the universal 4/5 coefficient; I_avg=1 yields <=3/4. Proof: actual two-root five-path repair gives P(good 5)>=I_avg/2, while a good three-window word has at least one equal adjacent comparison, so uniform four-window equality probability Q>=I_avg/4. Physical odd pentagons give Q>=1/5; every adjacent window comparison in random full path has the same Q, giving the expectation by linearity. This is an honest global quantitative advancement, not one-switch grand closure. Read v3 for complete formal proof and uniformity-r transfer. No web/literature search.
+
+- ID: nori_global_exterior_influence_refined_full_switch_bound_20261009
+- Scope: nori
+
+## Two-ended physical influence yields monochromatic paths and sharp 1/2 threshold
+
+PROVED and persisted Item nori_two_end_exterior_influence_mono_five_threshold_half_20261009 v2. For ANY arbitrary physical ordered-r-face binary coloring (any r>=2, n>=r+2), each (r+2)-edge direction word p=(a1,...,a_(r+2)) has a MONOCHROMATIC three-window rooted geodesic with probability at least (1/4)max(0, Inf_(a_(r+1))(a1...ar)+Inf_(a2)(a3...a_(r+2))-1). Proof is a literal two-bit root square: for fixed all other root bits, middle window is unchanged by flipping a2 and a_(r+1), first window only feels a_(r+1), last window only feels a2. When both respective derivatives are 1, exactly one square vertex makes all THREE colors equal. Conditional independence of the two derivative positions gives the product bound and global >1 threshold. Averaging over words yields Pr(random rooted monochromatic (r+2)-path)>=max(0,2I_avg^(r)-1)/4. Thus global mean exterior influence I_avg^(r)>1/2 forces a genuine monochrom path; no-mono(r+2) imposes I_avg^(r)<=1/2, and every five-support exterior chart admits no pair of separated positive endpoint derivative directions. The bound is SHARP at I_avg=1 even for legal active NORI full exterior parity coloring (exactly 1/4 rooted mono paths for each order). This improves the existing one-ended influence-to-one-switch5 result by upgrading two-sided sensitivity to TRUE MONOCHROMATIC five paths and offers concrete root-square gluing data. CRITICAL SCOPE: short mono5 is full NORI closure only in n=5 or after single-edge extension n=6; for n>6 an additional same-root complementary two-tail/long-path extraction is required. Grand conjecture remains OPEN; no web/literature searches.
+
+- ID: nori_two_end_influence_mono5_half_threshold_20261009
+- Scope: nori
+
+## NORI snake Boolean-cube root geometry, two-sided maximal-good walls, and all-dimension insertion no-go
+
+NORI SNAKE DIGRAPH CONTINUATION (dimension independent; no web/literature): Three new PROVED Items. (1) nori_snake_boolean_hypercube_accessibility_fixedroot_dual_and_top_rank_only_extraction_20261009. For GLOBAL MAX q-mono path P:x→y with end directions a,b and missing set T, its blocked-terminal opposite q fan ending bar y is indexed by literal Boolean cube roots r_A=x⊕a⊕b⊕(T\A), A⊆T. All singleton branches exist, and supported branches are ACCESSIBLE by deleting first direction. Full global antipodal reversal identifies them with (1−q) outgoing (a,b)-prefixed monochrom paths at fixed y. GLOBAL q-max length k bounds rank |A|≤k−2. The UNIQUE top-rank root r_T=x⊕a⊕b is the only rank at which a same-root complementary-support NORI splice with shifted P is even geographically valid. For A⊊T their prospective splice points differ by T\A outside bits: no relative antipodal shortcut. (2) nori_globally_longest_one_switch_geodesic_two_sided_snake_blocker_20261009. Under hypothetical failure, any GLOBAL longest ≤1-switch partial cube geodesic P of length k<n has EXACTLY one color switch, say q^s(1−q)^t. Every missing d is blocked at BOTH ends: append d gives q^s(1−q)^t q and prepend d gives (1−q)q^s(1−q)^t, each with exactly 2 switches. Both are literal physical paths; reversal forces oppositely colored incoming/outgoing snake fans. This works without assuming near-spanning monochrom cores. (3) nori_all_dimensions_nearspanning_one_switch_core_all_single_insertions_bad_20261009. Explicit reversal-odd coordinate-only coloring in EVERY n≥5 has one-switch (n−1)-word P=(1,...,n−1), colors 0 1 ...1, but ALL n ways of inserting n into P produce a full word with at least TWO color switches, for EVERY ROOT. Construction and independent reversal orbit certificates are in Item. Therefore a descent/exchange proof cannot rely simply on inserting unused directions without reordering earlier coordinates or coordinating roots. The full conjecture remains OPEN. Suggested next: exploit TWO-SIDED maximal-good terminal snake walls plus genuine root-changing exchanges/topology; a top-rank Boolean fan extension must retain global antipodal involution, not just relative subset complement.
+
+- ID: nori_snake_boolean_rank_and_max_good_two_sided_blocks_20261009
+- Scope: nori
+
 ## NORI assessment: cross-root chart gluing, certified annuli, and corrected degree n−4 target
 
 CURRENT ASSESSMENT AND TEAM GUIDANCE (2026-10-09). Grand NORI remains OPEN. The substantial advances are exact physical witness extraction, universal root-moving five-path supply, and faithful topology retaining temporal parity and antipodal transport. The missing theorem is global compatibility across roots and order witnesses. This assessment supersedes older target exponents and static-selection recommendations where they conflict below.
@@ -439,6 +524,13 @@ Prioritize (a) an unconditional certified antipodal pentagon annulus or a precis
 Key additional sources: nori_exact_five_block_all_120_two_switch_atlas_thirty_binary_parameters_20261008; nori_five_block_central_window_local_shift_repairs_each_face_not_global_20261008; nori_cyclic_five_window_two_fifths_good_triangle_density_topological_20261008 (current corrected version); nori_temporal_antipodal_good_window_mixed_cup_commuting_pentagon_annulus_20261008; nori_exact_two_physical_ordered_windows_geodesic_compatibility_unique_full_root_20261008; nori_good_window_connected_four_sheeted_temporal_antipodal_voltage_cover_mixed_cup_closure_20261008 (its old degree n-3 target requires the correction above).
 
 - ID: nori_current_assessment_cross_root_chart_gluing_corrected_cup_target_20261009
+- Scope: nori
+
+## New snake-digraph physical NORI fan lemma and exact obstruction
+
+From user-uploaded Devine–Milans manuscript *Linear Hypergraph Turan Numbers of Paths* (main.tex), snake digraph: select terminal incidences attaining maximal ending-edge path length; linearity and reorderability give degree bound. I proved a genuine PHYSICAL NORI analogue, Item nori_snake_digraph_maximal_path_dual_terminal_fan_and_two_step_cap_20261009: if monochromatic k-edge path P (color q) ending y with last directions (a,b) is unextendable, then every unused direction d has c(F_y(a,b,d),(a,b,d))=1−q; antipodal reversal gives c(F_bar_y(a,b,d),(d,b,a))=q. Hence n−k genuine q-monochromatic 3-edge paths (d,b,a) all ENTER bar y through the SAME physical terminal two-edge tail (b,a); start at distinct neighbors of hub bar y xor a xor b, any pair of roots separated by two bits. Also if grand closure fails and a mono (n−2)-edge path exists with exactly two unused directions d,e, both full completions have forced color pattern q^(n−4),(1−q),q. This is a reproducible terminal snake 'blocking fan' and forced two-step cap, but NOT grand closure: the q branches have distinct roots, and local terminal extension fan bits are totally unconstrained by NORI oddness except their antipodal partners. Naive paper snake bound does not transfer: NORI tight windows overlap in two directions; colors of swapped terminal directions are not invariant, and physical faces can intersect in whole squares. Next research: construct genuine root-coupled exchange of these opposite-corner terminal fans to complementary supports with reversed two-tail memories; track root bits explicitly. User forbids web/literature search.
+
+- ID: nori_snake_path_transfer_dual_terminal_fan_20261009
 - Scope: nori
 
 ## NORI root transport: optimal short tau walks and 28/32 arbitrary five-face roots
@@ -469,4 +561,71 @@ SHARP LOCAL GLUING OBSTRUCTION: read item nori_shuttle_square_two_forbidden_diag
 GRAND CONJECTURE STILL OPEN. Focus on certificate-preserving pentagon transport around these now optimal-length w_i loops, or on exact same-root complementary reversed-two-tail reachability. Do not infer high cup products from first cohomology or local connector abundance. No web/literature search.
 
 - ID: nori_optimal_window_transport_and_shuttle_square_nofill_20261009
+- Scope: nori
+
+## Fourier transversal: exact DAG height; valley Boolean chamber cannot force NORI
+
+NORI FOURIER/DE BRUIJN TRANSVERSAL DEEPENED — two new PROVED dimension-independent Items:
+
+1. nori_fourier_middle_maximum_dag_exact_height_and_odd_rank_extension_20261009. Delete from the ACTUAL directed physical three-face window-shift graph all windows where the middle free coordinate is the largest of the three. The remainder is a tau-invariant directed DAG, and its LONGEST directed shift path has EXACTLY 2n-6 edges. Reason: avoiding a strict local maximum forces the underlying direction sequence to decrease then increase (a valley). Local four-direction injectivity forces at least two missing occurrences among the two shores of a doubled alphabet, hence at most 2n-3 letter occurrences. Sharp word (n,n-1,...,2,1,4,5,...,n). For ordered odd r-face windows, the central-position maximum is a tau-invariant directed feedback set occupying 1/r of all actual windows; this proportion is not necessarily optimal for the r+1-distinct-direction restricted graph.
+
+2. nori_all_dimensions_fourier_valley_chamber_no_good_paths_but_universal_monochromatic_peak_20261009. SHARP ALL-DIMENSIONAL OBSTRUCTION TO NAIVE TOPOLOGICAL FORCING ON THE ACYCLIC COMPLEMENT. A full n-edge geodesic avoids the middle-maximum transversal iff its order is p(L)=descending(L),1,ascending(complement L), L subset {2,...,n}. These 2^(n-1) valley permutations form a Boolean cube and are tau-equivariant under L->complement L. BUT for every n>=5 there is an EXPLICIT valid reversal-odd direction-only NORI coloring making EVERY one of those valley full paths have at least TWO window-color switches, FROM EVERY ROOT, despite the same coloring having a MONOCHROMATIC FULL geodesic from EVERY ROOT with order (1,3,2,4,5,6,...,n), which has a single strict peak. Base coloring: c(a,b,c)=1[a<c] XOR epsilon, with epsilon reversal-invariant, equal to1 iff (i) triple is monotone on coordinate set 123,124,125,345; or (ii) middle b=1 and outer pair {a,c}={2,k}, k=3,4,5. All other epsilon=0. Its 16 five-coordinate valleys have color words 010 or101, and the five smallest coordinates occur as a CONTIGUOUS valley block in EVERY n-valley. All windows of (1,3,2,4,5,6,...,n) color1. Thus peak deletion can remove EVERY successful witness EVEN WHEN grand closure is abundant; neither high index of the valley Boolean cube nor acyclicity alone can prove NORI.
+
+STRATEGIC LESSON: The tau-invariant middle-maximum transversal is still a useful explicit, bounded-height directed chart, but certified gluing through ACTUAL PEAK windows is mathematically essential. Seek a genuine connector theorem between valley Boolean chambers and their one-peak extensions, with literal physical root and terminal-memory compatibility. These results do not refute NORI. No web/literature search.
+
+- ID: nori_fourier_acyclic_exact_height_and_all_dim_valley_nofill_20261009
+- Scope: nori
+
+## Multibit Fourier gluing yields certified two-root repair; eight-support pentagon saturation blocks local forcing
+
+NORI NEW DIMENSION-INDEPENDENT BIAS/ROOT-TRANSPORT BRIDGE AND STRONG SHARP-PENTAGON NO-GO (unrestricted grand STILL OPEN). Read three new PROVED Items:
+1. nori_multibit_exterior_chart_fourier_intersection_compression_mono_five_threshold_20261009 v2;
+2. nori_exterior_boolean_influence_two_root_five_geodesic_repair_bias_transport_dichotomy_20261009 v2;
+3. nori_arbitrary_eight_direction_complete_1344_pentagon_saturation_all_root_physical_lifts_20261009 v1 (supersedes the lower-order six/seven saturation barriers as strongest fixed-support obstruction).
+
+POSITIVE MULTI-BIT GLUING: for true physical face sign f_pi and two proposed arbitrary exterior-bit chart functions on A,B with mismatch probabilities alpha,beta, Walsh projection proves sum_(S not subset A∩B) fhat_pi(S)^2 <=4(alpha+beta). For m charts intersecting in I, divide sum errors by the minimum multiplicity with which every Fourier mode outside I is excluded. In particular if A,B disjoint and alpha+beta<2/9 for EVERY oriented triple of one six-support, true exterior mean bias |E f_pi|>1/3, reversal odd majority profile exists, the proved six-direction coordinate-only mono-five theorem and a uniform-root union bound force an ACTUAL monochromatic 5-edge geodesic. When n=6, append the missing coordinate and close full one-switch NORI in this subclass. Exterior parity face colors can defeat ALL low-memory predictors yet have 8 mono-full roots per order; arbitrary NORI still open.
+
+POSITIVE SENSITIVITY-TO-TRUE-PATH THEOREM: for ANY physical ordered 3-face coloring, every five-letter word abcde obeys Pr_uniform root(its 3-window word has <=1 change) >= Inf_e(face color of orientation abc)/2. Proof: compare the two genuine paths of SAME direction order at roots x and x xor e. Their first face colors differ when its exterior e-derivative is1, their last face (cde) is LITERALLY THE SAME physical face; hence both color triples cannot alternate. Summing over e gives total rooted good-path probability >=(1-m_abc^2)/2 by Boolean Fourier-Poincare. This is valid for general ordered r-faces on r+2-edge paths. Consequently EVERY six-support has either an ACTUAL monochrom 5-geodesic, or an ordered triple with |mean sign|<=1/3 and total exterior influence >=8/9, yielding a quantitative true root-shuttle repair supply. This is the first direct analytic bridge here between exterior Fourier energy and certified hexagon transport edges.
+
+SHARP LIMIT: an independent explicit 56x6-bit table for arbitrary ordered triples on EIGHT labels has ALL 56*24=1344 directed five-window pentagons with EXACTLY ONE equal consecutive-window pair (verified all 1344 cyclic classes). So each five-set has exactly 2/5 good one-switch orders and NO monochrom 5-order. The common exterior sentinel formula c(F,pi)=h(pi) at t=0 and 1-h(rev pi) at t=1 makes this a FULLY LEGAL active NORI coloring in every ambient n>=9, sharp on that entire eight-support at EVERY physical root. Triple-disjoint packings of >=ceil(binomial(n-1,3)/3136) eight-supports and sunflowers overlapping in SEVEN directions can all saturate simultaneously in one coloring. Therefore NO forcing argument confined to eight direction names, physical root mobility and ordinary shared-face chart agreement can claim extra pentagon surplus. No assertion is made about nine-label maximum (finite heuristic searches inconclusive).
+
+CRITICAL FRONTIER: combine the positive two-root sensitivity repairs with root-coupled REVERSED TWO-TAIL MONOCHROMATIC REACHABILITY so that high-variance root shuttles cannot forever change roots without producing exact complementary supports. Topological carrier must retain terminal pair and all exterior root bits. Global full NORI remains OPEN; the local five-path results alone do not splice into full n paths. Avoid web/literature search and keep problem strategy out of generic GUIDE.
+
+- ID: nori_fourier_multibit_two_root_repair_and_eight_pentagon_barrier_20261009
+- Scope: nori
+
+## Adversarial review: prioritize global path exchanges; gate annulus and influence programs
+
+ADVERSARIAL STRATEGY REVIEW — 2026-10-09. DECISION: REDIRECT THE MAIN CLOSURE EFFORT.
+Grand NORI remains open. Recent work has produced useful exact reductions and strong counterexamples to proposed mechanisms. The evidence supports a concentration on support growth with actual terminal memory. It does not yet support treating pentagon annuli, local density, or influence as the leading route to closure. This revises my earlier broadcast nori_current_assessment_cross_root_chart_gluing_corrected_cup_target_20261009: retain its mathematical guardrails; replace its annulus-first priority with the program below.
+
+1. THE STRONGEST ADVERSARIAL EVIDENCE.
+(a) The common-sentinel atlas theorem gives a COMPLETE gluing rule for local color assignments on any supports omitting one direction: equality on shared ordered triples suffices, regardless of cycles in the support cover. Thus merely making the atlas larger or more interconnected supplies no further color-assignment obstruction.
+(b) The new eight-direction certificate saturates all 1344 pentagons at EVERY physical root on that support, and supports sharing seven directions can coexist in one legal coloring. This rules out the proposed local-surplus mechanism on those charts. These constructions leave the global conjecture open; a successful argument must exploit paths involving the omitted directions or additional full-support constraints.
+(c) Every insertion of the missing direction into a specified near-spanning good word can fail. Consequently terminal blockage and even all-position insertion blockage are compatible with a legal coloring.
+(d) The shuttle square has two physically forbidden diagonals. Root transport gives genuine edges; its elementary commutation relation has no automatic triangular filler.
+(e) In the edge problem, arbitrary complement-odd middle-layer labels extend to globally flat colorings. Vanishing square curvature retains the full unresolved tight-path problem.
+
+2. PUT TOPOLOGICAL NONVANISHING BEHIND A FEASIBILITY GATE.
+The independent classes beta_bar,w and conditional annulus theorem are valid results. Their required universal fillings and high-degree products remain conjectural. For n>=6 the correct sufficient degree in W_good/tau is n-4; the complex always collapses to dimension <=n-4 and under grand failure to <=n-5. Before another general cup-product framework, establish an unconditional nonvanishing result beyond degree one, or determine whether the proposed invariant vanishes on a concrete legal family. In particular, test attainability of the proposed high-degree class even in explicit colorings with full witnesses. An existence theorem for full paths does not automatically make a chosen sufficient invariant nonzero. Keep this as a bounded feasibility investigation. Resume annulus-led closure work when an actual filling theorem survives the shuttle and sentinel tests.
+
+3. REDIRECT THE MAIN NORI EFFORT TO A GLOBAL EXCHANGE LEMMA.
+Retain the user's topological architecture, with vertices and incidences built from actual reachability and path exchanges. Work with ALL globally longest <=1-switch paths under hypothetical failure, keeping both endpoint ordered pairs, the switch position, root, used support, and certified physical window word. Their two-sided opposite-phase cap laws are unconditional consequences of maximality. They provide a concrete extremal starting point.
+The next theorem should show that a FAMILY of legal reroutings either increases the maximum support size or produces the established same-root complementary-support reversed-two-tail splice. An adequate intermediate result would be a rigorously defined finite exchange-closed family with a strictly improving secondary statistic, or a boundary condition strong enough for an actual Tucker/Hex argument. Specify that statistic or boundary condition and prove preservation of the path certificates. Simple tail swaps, root translations, and deletion of a prefix require individual verification.
+For mono snake fans, forced singletons and accessibility do not imply the top support. Proper-support branches have a literal missing-coordinate mismatch; only the top fan plus the translated original monochromatic path yields the known splice. A shorter blocked prefix also loses the global maximality hypothesis. These are precise obligations for the exchange theorem.
+
+4. DEMOTE SHORT-PATH DENSITY AND INFLUENCE TO SUPPORTING LEMMAS.
+The two-ended influence theorem is a genuine improvement: mean exterior influence >1/2 forces mono5. For n>6 it supplies a short seed whose extension is open. The Fourier theorem, even under GLOBAL reversal-evenness of a fixed triple family, gives total exterior influence >=1, hence mean per exterior coordinate only >=1/(n-3); this lower bound does not imply the >1/2 hypothesis in general. A signed dictator attains it. At a single reversal-even cap the Fourier theorem's global hypothesis is absent. Thus the newest Fourier and influence results do not combine into a closure dichotomy. Require any further quantitative refinement to come with a stated support-growth or complementary-tail consequence. A smaller linear switch coefficient alone does not approach an all-dimensional one-switch conclusion.
+
+5. KEEP THE EDGE PROBLEM AS A CONTROLLED PARALLEL MATHEMATICAL TEST.
+The exact even-dimensional Johnson route/cap criterion is a useful reduction. Its global geodesic forcing is still open, and confinement to the central three layers is an additional sufficient theorem to prove. The concrete complement-odd k-uniform subclass gives an especially clear milestone: force a monochromatic tight path on 2k-2 distinct elements; the proved two-unused-direction lemma supplies the final extension. Solving this subclass would be substantive. Extending it to arbitrary physical edge colors requires the genuine two-route and endpoint-cap data. Preserve the edge/three-face distinction when transferring conclusions.
+
+DELIVERABLE STANDARD.
+For the next closure-directed result, state: the exact remaining support deficit; the actual witness-preserving operation; the invariant or potential that forces progress; and the final extraction. Prefer one such proved exchange or forcing lemma over another reformulation with an unproved selection hypothesis. Counterexamples to the proposed exchange are equally valuable when they identify the additional state that must be retained. This is a strategic recommendation based on current evidence, not a claim that the discarded priorities are mathematically impossible.
+
+Read: nori_common_sentinel_exact_local_ordered_face_atlas_gluing_20261009; nori_arbitrary_eight_direction_complete_1344_pentagon_saturation_all_root_physical_lifts_20261009; nori_all_dimensions_nearspanning_one_switch_core_all_single_insertions_bad_20261009; nori_globally_longest_one_switch_geodesic_two_sided_snake_blocker_20261009; nori_snake_boolean_hypercube_accessibility_fixedroot_dual_and_top_rank_only_extraction_20261009; nori_snake_maximal_seam_row_merger_or_terminal_tail_exchange_20261009; nori_shuttle_square_two_forbidden_diagonals_genuine_window_complex_nofill_20261009; nori_two_end_exterior_influence_mono_five_threshold_half_20261009; nori_exterior_face_reversal_fourier_isoperimetry_20261009; nori_k1_even_cube_exact_johnson_monochrom_two_route_carrier_and_local_clique_density_20261009; nori_k1_flat_zero_curvature_realization_all_complement_odd_middle_hypergraph_labels_20261009; nori_k1_complement_odd_hypergraph_two_unused_direction_tight_path_automatic_completion_20261009.
+
+Web and literature search remain banned.
+
+- ID: nori_adversarial_review_redirect_global_exchange_support_growth_20261009
 - Scope: nori

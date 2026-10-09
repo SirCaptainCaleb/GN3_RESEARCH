@@ -6,41 +6,121 @@
         "math_version": 1,
         "position": 1,
         "version": 2
+      }
+    ],
+    "nori_article_ii_topological_carriers": [
+      {
+        "id": "nori_topological_carriers",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
       },
       {
-        "id": "nori_affine_exterior_colorings",
+        "id": "nori_topological_obstructions",
         "math_version": 1,
         "position": 2,
         "version": 1
       },
       {
-        "id": "nori_seven_coordinate_structure",
+        "id": "nori_topological_path_exchanges",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      }
+    ],
+    "nori_article_iii_reachability": [
+      {
+        "id": "nori_reachability_and_splicing",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "nori_reachability_topological_extraction",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "nori_reachability_branch_memory",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      }
+    ],
+    "nori_article_iv_windows": [
+      {
+        "id": "nori_cyclic_window_transport",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "nori_physical_window_transport",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      }
+    ],
+    "nori_article_v_local_connectors": [
+      {
+        "id": "nori_local_connector_geometry",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "nori_connector_dead_edge_geometry",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "nori_connector_root_hubs",
         "math_version": 1,
         "position": 3,
         "version": 1
       },
       {
-        "id": "nori_local_connector_geometry",
+        "id": "nori_maximal_geodesic_exchanges",
         "math_version": 1,
         "position": 4,
         "version": 1
-      },
+      }
+    ],
+    "nori_article_vi_affine_exterior": [
       {
-        "id": "nori_cyclic_window_transport",
+        "id": "nori_affine_exterior_colorings",
         "math_version": 1,
-        "position": 5,
+        "position": 1,
         "version": 1
       },
       {
-        "id": "nori_reachability_and_splicing",
+        "id": "nori_affine_sensitivity",
         "math_version": 1,
-        "position": 6,
+        "position": 2,
+        "version": 1
+      }
+    ],
+    "nori_article_vii_seven_coordinate": [
+      {
+        "id": "nori_seven_coordinate_structure",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
+    ],
+    "nori_article_viii_edges": [
+      {
+        "id": "nori_edge_affine_blocks",
+        "math_version": 1,
+        "position": 1,
         "version": 1
       },
       {
-        "id": "nori_topological_carriers",
+        "id": "nori_edge_central_carriers",
         "math_version": 1,
-        "position": 7,
+        "position": 2,
         "version": 1
       }
     ]
@@ -48,28 +128,161 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 45001,
-        "composed_through_revision": 4327,
-        "composition_version": 14,
+        "body_chars": 12040,
+        "composed_through_revision": 4458,
+        "composition_version": 15,
         "frontier": {
           "current": true,
-          "latest_section_position_now": 7,
-          "latest_section_position_when_composed": 7,
-          "sections_existing_when_composed": 7,
-          "sections_now": 7
+          "latest_section_position_now": 1,
+          "latest_section_position_when_composed": 1,
+          "sections_existing_when_composed": 1,
+          "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Final seven-section dependency synchronization after repaired source Item intake.",
+        "source_note": "Standalone foundational manuscript synchronized to the current one-section hierarchy.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 4
+    },
+    "nori_article_ii_topological_carriers": {
+      "composition": {
+        "body_chars": 3950,
+        "composed_through_revision": 4451,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 3,
+          "latest_section_position_when_composed": 3,
+          "sections_existing_when_composed": 3,
+          "sections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_iii_reachability": {
+      "composition": {
+        "body_chars": 3828,
+        "composed_through_revision": 4452,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 3,
+          "latest_section_position_when_composed": 3,
+          "sections_existing_when_composed": 3,
+          "sections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_iv_windows": {
+      "composition": {
+        "body_chars": 3099,
+        "composed_through_revision": 4453,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 2,
+          "latest_section_position_when_composed": 2,
+          "sections_existing_when_composed": 2,
+          "sections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_v_local_connectors": {
+      "composition": {
+        "body_chars": 4250,
+        "composed_through_revision": 4454,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 4,
+          "latest_section_position_when_composed": 4,
+          "sections_existing_when_composed": 4,
+          "sections_now": 4
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
         "stale": false,
         "stale_dependencies": []
       },
       "version": 3
+    },
+    "nori_article_vi_affine_exterior": {
+      "composition": {
+        "body_chars": 3381,
+        "composed_through_revision": 4455,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 2,
+          "latest_section_position_when_composed": 2,
+          "sections_existing_when_composed": 2,
+          "sections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_vii_seven_coordinate": {
+      "composition": {
+        "body_chars": 2863,
+        "composed_through_revision": 4456,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 1,
+          "latest_section_position_when_composed": 1,
+          "sections_existing_when_composed": 1,
+          "sections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 1
+    },
+    "nori_article_viii_edges": {
+      "composition": {
+        "body_chars": 3256,
+        "composed_through_revision": 4457,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 2,
+          "latest_section_position_when_composed": 2,
+          "sections_existing_when_composed": 2,
+          "sections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 1
     }
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-09T03:45:10.361547+00:00",
-  "item_count": 391,
+  "generated_at": "2026-10-09T20:21:08.083068+00:00",
+  "item_count": 434,
   "mirror_format": 18,
   "result_count": 0,
   "schema": "nori",
@@ -80,14 +293,74 @@
         "composed_through_revision": 4312,
         "composition_version": 2,
         "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 7,
+          "current": false,
+          "latest_subsection_no_now": 6,
           "latest_subsection_no_when_composed": 7,
           "subsections_existing_when_composed": 7,
-          "subsections_now": 7
+          "subsections_now": 4
         },
         "has_composition": true,
         "source_note": "Integrated topical subsection results and refreshed direct composition dependencies.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_affine_sensitivity": {
+      "composition": {
+        "body_chars": 3785,
+        "composed_through_revision": 4446,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 8,
+          "latest_subsection_no_when_composed": 8,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis of rooted physical geometry and controlled exterior sensitivity.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_connector_dead_edge_geometry": {
+      "composition": {
+        "body_chars": 3134,
+        "composed_through_revision": 4443,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Selective proof-oriented synthesis of physical connector lemmas.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_connector_root_hubs": {
+      "composition": {
+        "body_chars": 3351,
+        "composed_through_revision": 4444,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 9,
+          "latest_subsection_no_when_composed": 9,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Selective proof-oriented synthesis of physical connector lemmas.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -100,14 +373,54 @@
         "composed_through_revision": 4321,
         "composition_version": 2,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 4,
           "latest_subsection_no_when_composed": 4,
           "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "subsections_now": 3
         },
         "has_composition": true,
         "source_note": "Bottom-up synchronization after direct subsection Item-intake recomposition; proofs retained.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_edge_affine_blocks": {
+      "composition": {
+        "body_chars": 2713,
+        "composed_through_revision": 4449,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis from a single established edge-coloring subsection.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_edge_central_carriers": {
+      "composition": {
+        "body_chars": 2064,
+        "composed_through_revision": 4450,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis from a single established edge-coloring subsection.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -140,14 +453,54 @@
         "composed_through_revision": 4306,
         "composition_version": 1,
         "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 9,
+          "current": false,
+          "latest_subsection_no_now": 6,
           "latest_subsection_no_when_composed": 9,
           "subsections_existing_when_composed": 9,
-          "subsections_now": 9
+          "subsections_now": 3
         },
         "has_composition": true,
         "source_note": "Coherent thematic synthesis of direct subsection proofs with precise physical window hypotheses and limits.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_maximal_geodesic_exchanges": {
+      "composition": {
+        "body_chars": 5515,
+        "composed_through_revision": 4438,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Integrates established maximal-good-path blockers, monochromatic snake fan, Johnson merge rows, and physical adjacent transpositions.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_physical_window_transport": {
+      "composition": {
+        "body_chars": 4613,
+        "composed_through_revision": 4439,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Synthesis of physical two-step shuttles, sharp antipodal distance, averaged connectors, and exact no-fill obstructions.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -160,14 +513,54 @@
         "composed_through_revision": 4326,
         "composition_version": 4,
         "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 10,
+          "current": false,
+          "latest_subsection_no_now": 7,
           "latest_subsection_no_when_composed": 10,
           "subsections_existing_when_composed": 10,
-          "subsections_now": 10
+          "subsections_now": 4
         },
         "has_composition": true,
         "source_note": "Dependency refresh after repaired two-window subsection frontier.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_reachability_branch_memory": {
+      "composition": {
+        "body_chars": 2948,
+        "composed_through_revision": 4441,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 10,
+          "latest_subsection_no_when_composed": 10,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis from established physical and topological subsection arguments.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_reachability_topological_extraction": {
+      "composition": {
+        "body_chars": 5927,
+        "composed_through_revision": 4440,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 9,
+          "latest_subsection_no_when_composed": 9,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
+        "has_composition": true,
+        "source_note": "Integrates four reachability-carrier subsections, retaining edge/NORI extraction distinction and exact physical hypotheses.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -200,11 +593,11 @@
         "composed_through_revision": 4311,
         "composition_version": 2,
         "frontier": {
-          "current": true,
+          "current": false,
           "latest_subsection_no_now": 12,
           "latest_subsection_no_when_composed": 12,
           "subsections_existing_when_composed": 12,
-          "subsections_now": 12
+          "subsections_now": 8
         },
         "has_composition": true,
         "source_note": "Elevation after repartition into focused subsections: new major lemmas integrated into mathematical narrative and direct dependencies fully refreshed.",
@@ -213,10 +606,86 @@
       },
       "math_version": 1,
       "version": 1
+    },
+    "nori_topological_obstructions": {
+      "composition": {
+        "body_chars": 3064,
+        "composed_through_revision": 4442,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 9,
+          "latest_subsection_no_when_composed": 9,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis from established physical and topological subsection arguments.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_topological_path_exchanges": {
+      "composition": {
+        "body_chars": 3594,
+        "composed_through_revision": 4445,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Selective section synthesis of rooted physical geometry and controlled exterior sensitivity.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
     }
   },
-  "snapshot_revision": 757,
+  "snapshot_revision": 881,
   "startup_broadcasts": [
+    {
+      "body": "UPDATE/CORRECTION TO k=1 nonlinear edge-color theorem (confirmed persisted).\nMAJOR: Proved Item nori_k1_arbitrary_selfdual_nonlinear_disjoint_blocks_whole_block_monochromatic_geodesic_20261009 v3 REMOVES DISJOINTNESS ENTIRELY for block-CONSTANT color targets and block-uniform biases. Each block B_j has one arbitrary antipodally self-dual Boolean gate g_j depending on any nonempty subset M_j inside ONE other block B_sigma(j), sigma loopless functional. Different M_j may overlap arbitrarily, including branching tree gates. Choose initial cube root to make e_j=target_j+b_j+g_j(root) NONCONSTANT on each functional directed cycle. This is possible because cycle-vertex gate supports lie in DISTINCT driver blocks automatically; tree gate values may be correlated. Orient block precedence by e_j, topologically sort, traverse each block contiguously; all block-constant target patterns realized, including full monochromatic antipodal geodesics. Full proof in Item v3.\nCompanion stronger ALL INDIVIDUAL DIRECTION-TARGET theorem: Item nori_k1_nonlinear_disjoint_signed_odd_majority_functional_block_all_pattern_geodesics_20261009 v2, for arbitrary odd-input signed-symmetric self-dual gates (including majority/parity), provided supports are PAIRWISE DISJOINT. Each gate can be rooted to alternate on every support bit along ANY full direction order; transfer affine parity proxy witness.\nSharp warning: for unrestricted mixed target bits inside blocks, merely choosing arbitrary self-dual 0001 input traces does NOT guarantee a feasible 2-block interleaving (explicit counterexample in v3 Item). Frontier is a coordinated multi-trace order-selection theorem for mixed within-block colors. This addresses ORIGINAL edge k=1, not ordered-3-face grand.",
+      "broadcast_id": "nori_k1_nonlinear_selfdual_gate_transfer_20261009",
+      "created_at": "2026-10-09T04:12:04.739826+00:00",
+      "creation_revision": 4353,
+      "priority": 6,
+      "scope": "nori",
+      "title": "Nonlinear k=1 block closure: arbitrary overlapping self-dual gates and signed-symmetric all-target transfer"
+    },
+    {
+      "body": "PROVED, persisted Items: nori_k1_odd_dimension_sharp_antipodal_square_curvature_flux_density_20261009; nori_k1_even_central_vertex_gate_exact_johnson_tight_path_correspondence_20261009; nori_k1_complement_odd_hypergraph_two_unused_direction_tight_path_automatic_completion_20261009. (1) For EVERY odd n>=3 antipodally odd physical EDGE coloring, at least 2^(n-2) of the binom(n,2)*2^(n-2) genuine square faces have ODD boundary edge-color XOR; this is SHARP. Proof: any antipodal 2n-edge geodesic loop has color flux1; bubble-sort the antipodal half into reverse to fill it with exactly binom(n,2) ACTUAL squares, one per direction pair; odd number carry odd curvature. Translation averaging gives >=2^(n-2); a functional projection coloring made of mutual 2-cycles plus one extra unreciprocated arc attains equality. Even dimensions may be completely flat, so this is a first-order topological invariant, NOT closure. (2) For even n=2k, special legal central-vertex-sign edge colors c(S--outer)=lambda(S) (S rank k, lambda(Sc)=1-lambda(S)), monochromatic antipodal THREE-layer belt geodesic exists iff the corresponding complementary-odd 2coloring of k-subsets of [2k] has a monochromatic tight k-uniform path on 2k−1 DISTINCT directions, equivalently a mono Johnson J(2k,k) geodesic of length k−1. (3) Universal COMPLETION: any mono tight k-path on 2k−2 distinct directions extends to 2k−1, because with two unused symbols u,v the prepend candidate k-set A+u and append candidate B+v are COMPLEMENTARY and have opposite colors. Hence only a 2k−2 tight precursor needs forcing. Elementary K5 graph Ramsey links force precursors for k<=4, yielding this SPECIAL cube subclass through n=8. The general precursor forcing is OPEN. These reductions are physical and potentially transfer snake-digraph/hypergraph path methods; do NOT claim original edge grand or active ordered-three-face NORI solved.",
+      "broadcast_id": "nori_k1_sharp_odd_square_flux_tightpath_completion_20261009",
+      "created_at": "2026-10-09T11:47:14.01721+00:00",
+      "creation_revision": 4393,
+      "priority": 960,
+      "scope": "nori",
+      "title": "Edge-geodesic new carriers: sharp cubical curvature and one-step tight-path completion"
+    },
+    {
+      "body": "PROVED edge-case dimension lifting (Item nori_k1_counterexamples_lift_across_dimensions_by_doubled_facets_20261009): any antipodally odd undirected edge coloring of Q_n extends to Q_(n+1) by copying old colors into both facets and coloring the added direction i=n+1 by x_1. Any monochromatic full geodesic of the extension projects, after deleting the new-coordinate edge, to a monochromatic full geodesic of the original. Therefore PROVING THE ORIGINAL EDGE CONJECTURE FOR EVERY EVEN n PROVES IT FOR ALL n; counterexamples propagate upward. Not automatically transferable to active ordered-three-face NORI because triple seams require control. IMPORTANT GUARDRAILS: Item nori_k1_odd_dimension_middle_belt_cannot_contain_monochrom_full_projection_permutation_20261009 proves that any fixed-point-free permutation projection coloring c_i(x)=x_sigma(i) in odd dimension has NO monochromatic full geodesic confined to its two middle Hamming layers, despite admitting full monochromatic geodesics elsewhere. Item nori_k1_even_dimension_middle_root_belt_odd_vertex_sign_obstruction_20261009 proves that even-dimensional centered 3-layer proofs cannot require starting at EXACT middle Hamming rank: an antipodally odd color assignment via an odd middle-rank vertex sign makes first/last edge colors opposite. Thus the productive edge-topology frontier is EVEN n, center THREE-layer carriers with full root freedom (including roots on the outer belt layers), or another all-dimensional root/order mechanism. This broadcast is not a grand proof.",
+      "broadcast_id": "nori_k1_even_dim_suffices_odd_middle_belt_nogo_20261009",
+      "created_at": "2026-10-09T04:33:38.323056+00:00",
+      "creation_revision": 4377,
+      "priority": 975,
+      "scope": "nori",
+      "title": "Edge grand reduction: even dimensions suffice; odd middle-only paths provably fail"
+    },
+    {
+      "body": "NEW PROVED Item nori_k1_even_cube_exact_johnson_monochrom_two_route_carrier_and_local_clique_density_20261009. For ORIGINAL antipodally odd UNDIRECTED edge coloring in even n=2k, define rank-k Johnson graph J(2k,k), with a Johnson exchange S→T=S−a+b q-GOOD iff one of its TWO genuine cube 2-edge routes S→S−a→T (lower) or S→S+b→T (upper) is monochromatic q. Define graphs J_q. Exact CENTRAL-THREE-LAYER antipodal mono q closure IFF (M) a q-good Johnson GEODESIC of length k between complementary ksets S,Sc, OR (O) a q-good Johnson GEODESIC length k−1 between ksets S,T with intersection {h} and one missing coordinate {g}, plus one q-monochromatic endpoint cap pair (lower S−h→S AND upper T→T+g, or upper S+g→S AND lower T→T−h). EACH case concatenates actual cube edges flipping each direction once; converse holds. For special middle-vertex-sign color c(belt edge)=lambda(S), J_q is exactly same-color Johnson adjacency, M forbidden by lambda(Sc)=1−lambda(S), and O becomes the complement-odd uniform-hypergraph tight-path reduction. In ARBITRARY coloring each rank-(k±1) hub gives ≥floor(k²/4) monochromatic 2-edge Johnson routes by pigeonhole, yielding at least binom(2k,k−1) floor(k²/4) distinct edges in J_0∪J_1, asymptotic half Johnson-edge density. Odd antipodality swaps J_0↔J_1. The GLOBAL graph-geodesic/cap forcing remains OPEN. Also proved Item nori_k1_flat_zero_curvature_realization_all_complement_odd_middle_hypergraph_labels_20261009: ANY complement-odd middle-layer lambda lifts to a globally FLAT odd edge coloring (gradient of an antipodally twisted vertex potential), so zero local curvature does not erase this genuine hypergraph obstruction. Topology-first target: prove a Johnson carrier index/Hex connector theorem that respects real 2-step route colors and the two caps. Do not mistake carrier density for closure.",
+      "broadcast_id": "nori_k1_exact_even_johnson_carrier_20261009",
+      "created_at": "2026-10-09T11:51:42.689421+00:00",
+      "creation_revision": 4398,
+      "priority": 990,
+      "scope": "nori",
+      "title": "Even-edge closure now has an exact physical Johnson carrier with two-step route/cap certificates"
+    },
     {
       "body": "NORI primary conjecture is the ordered-three-face version. An ordered three-face (F,pi) is a three-dimensional cube face plus an ordering of its three free coordinates. Colors satisfy c(antipode(F),reverse(pi))=1-c(F,pi). The color is independent of starting corner inside F but may vary between distinct faces. Seek an antipodal geodesic whose consecutive ordered-three-face colors change at most once. This includes reversal-odd coordinate-triple NOR as a subclass and is analogous to the antipodally odd edge coloring of the original Norine conjecture. Arbitrary based-window coloring is NOT the active target: rank parity refutes that broader claim. Article I states the new conjecture.",
       "broadcast_id": "nori_ordered_three_face_primary_20261008",
@@ -225,6 +694,15 @@
       "priority": 1100,
       "scope": "nori",
       "title": "NORI active ordered-three-face conjecture"
+    },
+    {
+      "body": "PROVED SHARPNESS OF THE FIVE-WINDOW PENTAGON METHOD. Read Item nori_active_reversal_odd_five_pentagon_density_fully_sharp_20261009 (v2), in subsection dimension_five_closure_and_cyclic_windows. An explicit coordinate-only, reversal-odd binary ordered-three-face coloring of Q5 has exactly 48/120 one-switch and 72/120 two-switch full direction orders, and no monochromatic full order, at EVERY root. Its 24 five-window cyclic pentagons each have EXACTLY ONE monochromatic shift edge, attaining the universal 2/5 good-path density and the 4(n-3)/5 mean-switch bound at n=5. The same sharp rank-five pattern embeds on a fixed support in any Qn, n>=5, simultaneously across every root/exterior chart, with active NORI oddness preserved. Hence simply summing pentagon inequalities at one hub or across roots of one fixed five-support cannot improve the density bound. This is a local-method sharpness barrier, NOT a counterexample to the grand conjecture. Grand closure still requires cross-support/cross-root synchronization and exact same-root reversed-two-tail reachability. No web or literature searches.",
+      "broadcast_id": "nori_reversal_odd_local_pentagon_density_sharp_20261009",
+      "created_at": "2026-10-09T04:02:33.086617+00:00",
+      "creation_revision": 4343,
+      "priority": 1125,
+      "scope": "nori",
+      "title": "Active NORI 2/5 local good-path density is sharp at every root"
     },
     {
       "body": "NORI TOPOLOGICAL REACHABILITY PRIORITY — this supersedes the earlier color-indexed R_i(x) formulation. The user's intended target is reachability itself.\n\nFIRST PROVE THE SIMPLER EDGE CASE: Let c be an antipodally odd binary EDGE coloring of Q_n, c(bar e)=1-c(e). Define the COLOR-FREE set\n  R(x) = {z in Q_n : there exists a MONOCHROMATIC GEODESIC from x to z, of EITHER edge color}.\nInclude the length-zero path. Do NOT split R(x) into R_0(x), R_1(x) when constructing the principal topological labels. The color of a witness path is unnecessary for this extraction.\n\nEXACT GRAND-CLOSURE FORMULATION IN THE EDGE CASE:\n  exists x, z with z and bar z both in R(x);\nequivalently,\n  exists x : R(x) intersect bar(R(x)) is nonempty;\nequivalently, by edge-color antipodal oddness R(bar x)=bar(R(x)),\n  exists x : R(x) intersect R(bar x) is nonempty.\nHere bar(S)={bar z:z in S}. Two monochromatic geodesics joining x to z and x to bar z have DISJOINT coordinate supports and concatenate through x to an antipodal GEODESIC with at most one color change. In an antipodally odd EDGE coloring any such one-switch antipodal geodesic rotates via antipodal complementation to a MONOCHROMATIC full antipodal geodesic. Thus this unlabeled-color overlap criterion is EXACTLY EQUIVALENT to edge-geodesic closure. It is EXISTENTIAL in x: rooted closure for every x is neither the target nor generally true in NORI.\n\nTOPLOGICAL TASK: Build vertex/face/complex labels encoding genuine sets R(x), or a faithful invariant of them, and use Borsuk–Ulam, Tucker, Sperner, KKM, Hartman-style least-unreachable/connector reasoning, etc. to FORCE an antipodal pair INSIDE ONE R(x). An abstract equality of labels must come with a proved implication to actual overlap. A coincidence may occur at an abstract state/face even if the extracted paths have roots/vertices elsewhere. Do not require the topological carrier (e.g. a balanced root-slide ridge) itself to be a good geodesic; local extraction at an arbitrary prescribed root fails for legitimate colorings. Prove label equivariance, face incidence, boundary conditions, and the actual intersection/extraction implication.\n\nInvestigate root-coupled Freudenthal constructions, all-root geodesic complexes, and the n-root-bits plus n-location-bits idea; establish the geometry and hypotheses instead of assuming a 2n-cube triangulation works. Seek a DIMENSION-INDEPENDENT closure theorem, not Q_7 subclass enumeration. Small n may test a construction.\n\nTRANSFER TO ACTIVE NORI: The grand conjecture concerns ordered-three-face colors with c(bar F, reverse pi)=1-c(F,pi), seeking a full antipodal geodesic whose ordered three-face window colors change at most once. In that setting, concatenating monochromatic geodesic branches creates TWO new junction windows; reversing a branch changes ordered triples on the same physical faces and cannot be treated as color-preserving automatically. Establish the correct directed reachability and junction compatibility BEFORE claiming the edge-case extraction extends to NORI. Existing research may supply finite-memory bridge states.\n\nNo web or literature searches. Use the NORI toolkit if needed, and keep conjecture-specific strategy out of the generic GUIDE.",
@@ -380,6 +858,15 @@
       "title": "NORI topology-first: five-cycle root transport, certified annuli and high-degree cup forcing"
     },
     {
+      "body": "NORI snake/Fourier new exact conditional result: Item nori_exterior_face_reversal_fourier_isoperimetry_20261009. For fixed ordered direction triple pi on physical 3-faces, exterior locations form Q_(n−3). Define rho(F,pi)=c(F,pi) XOR c(F,reverse pi), invariant on antipodal face pairs. ONLY IF rho=0 for EVERY exterior location, f(z)=c(F_z,pi) is antipodally odd; then Boolean Fourier total influence proves at least 2^(n−4) bichromatic exterior root-slide edges. Equality iff f is a signed single-exterior-coordinate dictator. Critical guardrail: rho=0 at one blocked terminal cap gives only a single discordant antipodal pair and at least n−3 exterior edge barriers, NOT an exponential bound. Try leveraging globally many zero-parity caps, or controlling the density of parity-zero pairs across exterior cube, in a genuinely root-coupled topological forcing argument. No web/literature search.",
+      "broadcast_id": "nori_snake_exterior_fourier_isoperimetric_threshold_20261009",
+      "created_at": "2026-10-09T13:10:54.126271+00:00",
+      "creation_revision": 4405,
+      "priority": 1550,
+      "scope": "nori",
+      "title": "Conditional exponential exterior-root barriers with precise parity guardrail"
+    },
+    {
       "body": "NORI TOPOLOGICAL FRONTIER — MOVING SEAM SQUARE, not a fixed prescribed one. New proved items:\nnori_fixed_pair_separating_permutohedron_facets_antipodal_index_zero_square_alignment_nogo_20261008 and nori_moving_seam_square_three_adjacent_swap_exact_physical_face_transport_20261008. Also root-square flatness nori_two_seam_physical_face_common_middle_root_square_flatness_20261008, color-sensitive Tucker nori_odd_nori_tucker_forces_opposite_color_mono_four_witnesses_at_near_midpoint_cut_20261008, and inner high-index theorem nori_relative_inner_cut_permutohedral_high_index_forces_incompatible_physical_window_selection_20261008.\n\nKEY OBSTRUCTION: In a full geodesic prefix/suffix cut S, the shared free directions v (last prefix) and w (first suffix) of the TWO crossing ordered three-face windows satisfy v in S, w not in S. The literal root square that preserves BOTH window face objects is exactly the physical {v,w} square. If we PRESELECT square axes {a,b} and restrict the genuine permutohedral high-index carrier to facets whose prefix cut separates a,b (one inside,one outside), that subcomplex has antipodal index ZERO! The relative-order bit a-before-b is constant on every such simplex and flips under full permutation reversal, yielding an explicit odd map to S0. Therefore the multiroot Tucker theorem cannot simply prescribe a root square and force its two axes to straddle the shared cut from the same topological index. The square axes must MOVE WITH THE PATH/CUT.\n\nPRECISE MOVING-SEAM GEOMETRY: At cut ell, let four adjacent directions be (c,a | b,d) and physical cut vertex y. Old two seam ordered faces are (F(y;{c,a,b}),(c,a,b)) and (F(y;{a,b,d}),(a,b,d)). Crossing swap of central adjacent a,b gives (c,b | a,d), new cut y'=y XOR a XOR b, and the TWO seam ordered faces lie on the SAME TWO literal PHYSICAL faces, with orientations (c,b,a) and (b,a,d). All four old/new seam color bits are invariant as root varies over the physical {a,b} square. Left-neighbor swap (c,a)->(a,c) keeps cut y fixed, changes seam pair {a,b}->{c,b}, but preserves the LEFT physical face; right-neighbor swap (b,d)->(d,b) keeps cut fixed, changes seam pair {a,b}->{a,d}, but preserves the RIGHT physical face. These are exactly three honest adjacent-permutation generator moves for a root-square-coupled SEAM-TRANSPORT COMPLEX.\n\nGLOBAL STATUS: Active unrestricted NORI grand conjecture STILL OPEN. Topology forces honest near-middle path packets, and in odd n forces opposite-color real mono4 paths on them, but physical root-square/seam alignment and full monochromatic branch compatibility are NOT forced. Exact globally NORI-valid Q9 two-path example (item nori_q9_midcut_opposite_median_three_switch_rectangle_all_four_bad_20261008) disproves naive pair-only Tucker-splice inference: all four exchanged paths stay bad with 3 changes. Static good-path two-sided Helly topology is universally index3 or4; k>=6 path states are isolated antipodal components under grand failure. Need genuinely CERTIFIED ORDER-EXCHANGE ROOT-TRANSPORT CELLS carrying ordered-face window colors and a parity/holonomy forcing proof, not static box convexification or an abstract equality of colored labels.\n\nRESEARCH PRIORITY: Build the DYNAMIC seam-square bundle whose fiber over a rooted full direction permutation at central cut is the physical square span{p_l,p_(l+1)}, with Θ swapping their order and central adjacent swaps transporting both physical seam faces. Aim an equivariant fixed-point/Tucker/Hex argument that forces a compatible pair of MONOCHROMATIC branches (reversed two-tail exact NORI criterion) or strictly reduces a minimal odd switch-defect. Avoid selecting a fixed square and discarding index, and verify the two physical junction windows in every proposed splice. No web or literature searches; GUIDE unchanged.",
       "broadcast_id": "nori_dynamic_moving_seam_square_tucker_transport_20261008",
       "created_at": "2026-10-09T00:11:07.933817+00:00",
@@ -396,6 +883,15 @@
       "priority": 1600,
       "scope": "nori",
       "title": "Exact static witness index is THREE; focus Tucker on moving physical seam-square exchange cells"
+    },
+    {
+      "body": "NEW VERIFIED NORI DIMENSION-INDEPENDENT CHART THEOREMS (grand still OPEN). Read Items:\n(1) nori_exterior_sentinel_universal_hub_profiles_cubic_sharp_pentagon_packings_20261009 v2;\n(2) nori_common_sentinel_exact_local_ordered_face_atlas_gluing_20261009;\n(3) nori_variable_sentinel_ordered_face_atlas_gluing_forces_reversal_odd_triples_20261009;\n(4) nori_robust_distinct_sentinel_half_error_forces_mono_five_physical_geodesic_20261009.\n\nEXACT COLOR-ATLAS CLASSIFICATION. A chart (S,t,h), t outside S, prescribes for a physical oriented triple pi in S the bit h(pi) if exterior t-bit0 and 1-h(rev pi) if t-bit1. All such charts glue into ONE ACTIVE NORI coloring iff all h agree on every shared ordered triple, AND any shared triple occurring in charts with DISTINCT sentinels is REVERSAL-ODD: h(pi)+h(rev pi)=1. Necessity: the two outside bits vary INDEPENDENTLY on a single genuine physical face. Sufficiency: when sentinel diversity occurs the prescription becomes constant in all exterior bits; otherwise one sentinel supplies the antipodal twist. Any common-sentinel cover has NO higher FACE-COLOR assignment obstruction beyond shared-triple agreement. This does NOT solve PATH-WITNESS gluing.\n\nROBUST VERSION. Two distinct one-bit sentinel predictions A(x_t),B(x_u) of the same actual oriented face with error probabilities alpha,beta satisfy: alpha+beta<1/2 FORCES A=B=constant, and the actual face disagrees with it on <1/4 of exterior assignments (sharp threshold). If this holds for every orientation on a six-coordinate support, existing six-direction reversal-odd monochromatic-facet theorem plus a union bound produces a REAL monochromatic five-edge geodesic from >1/4 of all roots. For n=6 append final coordinate to CLOSE NORI in this restricted subclass. Arbitrary NORI need not be close to one-bit charts.\n\nSHARP METHOD BARRIER: independent certificate verifies an arbitrary six-direction hub profile whose ALL 144 five-window pentagons have exactly one equal comparison. With a single exterior sentinel, embed this exact profile (or complemented reversal) at EVERY physical hub in ANY n>=7 legal active NORI coloring. A greedy triple-disjoint packing yields >=ceil(binomial(n-1,3)/400) simultaneously sharp six-support charts in one coloring. An n-6 member six-support sunflower sharing FIVE common directions can also be fully sharp at every root; hence mere root mobility and even extensive support overlap are insufficient for forcing a pentagon surplus.\n\nRECOMMENDED FRONTIER: construct actual finite-memory/terminal-tail reachability charts with DIFFERENT effective sentinels or a multi-bit analogue, then prove a certificate-preserving overlap/transport theorem that forces either reversal-odd rank-six extraction or exact same-root complementary reversed-two-tail supports. Distinguish color-data gluing (solved here for sentinel charts) from certified path-data gluing (still open). No web/literature searches; generic GUIDE unchanged.",
+      "broadcast_id": "nori_variable_sentinel_robust_physical_atlas_20261009",
+      "created_at": "2026-10-09T04:37:35.811889+00:00",
+      "creation_revision": 4383,
+      "priority": 1600,
+      "scope": "nori",
+      "title": "NORI atlas gluing: sentinel changes force reversal oddness; robust 1/2 threshold"
     },
     {
       "body": "NORI NEW HIGH-INDEX FULL-SPHERE TUCKER RESULT IN ALL DIMENSIONS (grand still OPEN). Read proved Item nori_all_dimensions_full_permutohedron_two_cap_centered_color_borsuk_ulam_packet_20261008 and odd special Item nori_odd_full_permutohedron_two_cap_actual_opposite_central_face_colors_20261008. Compared with endpoint-opposed K_x (index n-3), the entire actual full-permutation permutohedron boundary has index n-2 and supports an additional ACTUAL odd CENTERED FACE-COLOR scalar without giving up either of the two terminal cap directions.\n\nFor EVERY active NORI coloring, EVERY n>=6, EVERY physical root x, EVERY distinguished coordinate i, and ANY prescribed two other directions a,b, take T=[n] minus {i,a,b} of size n-3. For every ACTUAL full x-rooted direction order p, its real physical i-edge projected position bits v_i(p)_j have v_i(reverse p)=1-v_i(p). Add ONE actual CENTER WINDOW signed value h(p): if n odd with unique central 3-face window color q, h=2q-1 ∈{±1}; if n even with the TWO central window colors u,v, h=u+v-1∈{-1,0,1}. Physical NORI reversal sends each h to −h. The combined odd PL vector (v_i_j−1/2 for j∈T, h) has EXACT dimension n-2, so Borsuk–Ulam on ∂permutohedron S^(n-2) forces a zero. Face-barycenter averaging + Carathéodory extract <=n−1 ACTUAL full rooted geodesics in ONE common proper permutohedron face H_S, with positive weights, balancing every j-in-T before/after i and with weighted h=0. Such a face MUST have a ONE- OR TWO-DIRECTION EARLY OR LATE CAP: either nonempty S⊆{a,b} or nonempty complement(S)⊆{a,b}. In ODD n, the genuine CENTRAL ordered 3-face colors in that packet include BOTH colors0,1 with equal total weight. In EVEN n, either an ACTUAL central two-window color SWITCH occurs in some packet path (h=0), or actual MONOCHROMATIC CENTERED FOUR-edge subpaths of BOTH colors occur among the packet witnesses (h=±1).\n\nThis is ACTUAL PHYSICAL COLOR-CERTIFIED full-path topology, not only abstract position balance or color-free label coincidence. The cap directions a,b can be arbitrarily prescribed. However the cap may contain BOTH directions on the same side; it does not force them to separate the shared cut, and the central color witnesses need not occupy one common physical face or form reversed-tail complementary mono reachability. Thus this is a proved Tucker/Borsuk–Ulam forcing theorem, NOT unrestricted grand closure.\n\nSIMULTANEOUS EXACT METHOD LIMIT CLOSED: the static honest two-sided root-sheet witness nerve E_c has antipodal index EXACTLY THREE under hypothetical grand failure, not 3-or4, by Item nori_exact_static_two_sided_helly_antipodal_index_three_all_no_grand_colorings_20261008. Distinct 4-path boxes and 4-vs3 boxes intersect in dimension<=2; attach quotient 4-cubes along <=2-dim sets, so H^4 cannot appear. Color-dependent 5-path boxes are 2D, k>=6 boxes detach antipodally; w^3 survives. Static good-path Helly never supplies high index no matter how many long partial witnesses.\n\nNEXT GLOBAL CLOSURE: combine the full-sphere TWO-CAP real central color packet with DYNAMIC moving root/seam square physical order-exchange cells. Central cross-cut adjacent swap (c,a|b,d) -> (c,b|a,d) moves cut vertex by a XOR b while preserving BOTH actual seam three-face OBJECTS; root-square translations span{a,b} preserve their colors. Need a global topological/holonomy compatibility theorem forcing a same-root REVERSED-TWO-TAIL complementary monochrom reachability pair or a genuine switch-defect descent. Beware exact Q9 pair-only Tucker no-go where both original and both hybrid paths all have three changes.\n\nNo web or literature search. Generic GUIDE untouched.",
@@ -425,6 +921,33 @@
       "title": "NORI composition refreshed; new universal full-geodesic 4/5 switch bound from physical odd pentagons"
     },
     {
+      "body": "New proved version3 of Item nori_exterior_boolean_influence_two_root_five_geodesic_repair_bias_transport_dichotomy_20261009 gives an UNRESTRICTED full antipodal geodesic switch expectation bound for any physical ordered-3-face binary coloring. Define I_avg as average exterior-coordinate Boolean influence across all ordered triple directions and exterior directions. For a random genuine full n-geodesic, E[switches] <= (n-3)*(1-max(1/5,I_avg/4)). In particular I_avg>4/5 strictly improves the universal 4/5 coefficient; I_avg=1 yields <=3/4. Proof: actual two-root five-path repair gives P(good 5)>=I_avg/2, while a good three-window word has at least one equal adjacent comparison, so uniform four-window equality probability Q>=I_avg/4. Physical odd pentagons give Q>=1/5; every adjacent window comparison in random full path has the same Q, giving the expectation by linearity. This is an honest global quantitative advancement, not one-switch grand closure. Read v3 for complete formal proof and uniformity-r transfer. No web/literature search.",
+      "broadcast_id": "nori_global_exterior_influence_refined_full_switch_bound_20261009",
+      "created_at": "2026-10-09T11:53:19.02792+00:00",
+      "creation_revision": 4400,
+      "priority": 1680,
+      "scope": "nori",
+      "title": "Exterior influence improves the unrestricted full-geodesic switch bound"
+    },
+    {
+      "body": "PROVED and persisted Item nori_two_end_exterior_influence_mono_five_threshold_half_20261009 v2. For ANY arbitrary physical ordered-r-face binary coloring (any r>=2, n>=r+2), each (r+2)-edge direction word p=(a1,...,a_(r+2)) has a MONOCHROMATIC three-window rooted geodesic with probability at least (1/4)max(0, Inf_(a_(r+1))(a1...ar)+Inf_(a2)(a3...a_(r+2))-1). Proof is a literal two-bit root square: for fixed all other root bits, middle window is unchanged by flipping a2 and a_(r+1), first window only feels a_(r+1), last window only feels a2. When both respective derivatives are 1, exactly one square vertex makes all THREE colors equal. Conditional independence of the two derivative positions gives the product bound and global >1 threshold. Averaging over words yields Pr(random rooted monochromatic (r+2)-path)>=max(0,2I_avg^(r)-1)/4. Thus global mean exterior influence I_avg^(r)>1/2 forces a genuine monochrom path; no-mono(r+2) imposes I_avg^(r)<=1/2, and every five-support exterior chart admits no pair of separated positive endpoint derivative directions. The bound is SHARP at I_avg=1 even for legal active NORI full exterior parity coloring (exactly 1/4 rooted mono paths for each order). This improves the existing one-ended influence-to-one-switch5 result by upgrading two-sided sensitivity to TRUE MONOCHROMATIC five paths and offers concrete root-square gluing data. CRITICAL SCOPE: short mono5 is full NORI closure only in n=5 or after single-edge extension n=6; for n>6 an additional same-root complementary two-tail/long-path extraction is required. Grand conjecture remains OPEN; no web/literature searches.",
+      "broadcast_id": "nori_two_end_influence_mono5_half_threshold_20261009",
+      "created_at": "2026-10-09T13:07:02.747479+00:00",
+      "creation_revision": 4403,
+      "priority": 1700,
+      "scope": "nori",
+      "title": "Two-ended physical influence yields monochromatic paths and sharp 1/2 threshold"
+    },
+    {
+      "body": "NORI SNAKE DIGRAPH CONTINUATION (dimension independent; no web/literature): Three new PROVED Items. (1) nori_snake_boolean_hypercube_accessibility_fixedroot_dual_and_top_rank_only_extraction_20261009. For GLOBAL MAX q-mono path P:x→y with end directions a,b and missing set T, its blocked-terminal opposite q fan ending bar y is indexed by literal Boolean cube roots r_A=x⊕a⊕b⊕(T\\A), A⊆T. All singleton branches exist, and supported branches are ACCESSIBLE by deleting first direction. Full global antipodal reversal identifies them with (1−q) outgoing (a,b)-prefixed monochrom paths at fixed y. GLOBAL q-max length k bounds rank |A|≤k−2. The UNIQUE top-rank root r_T=x⊕a⊕b is the only rank at which a same-root complementary-support NORI splice with shifted P is even geographically valid. For A⊊T their prospective splice points differ by T\\A outside bits: no relative antipodal shortcut. (2) nori_globally_longest_one_switch_geodesic_two_sided_snake_blocker_20261009. Under hypothetical failure, any GLOBAL longest ≤1-switch partial cube geodesic P of length k<n has EXACTLY one color switch, say q^s(1−q)^t. Every missing d is blocked at BOTH ends: append d gives q^s(1−q)^t q and prepend d gives (1−q)q^s(1−q)^t, each with exactly 2 switches. Both are literal physical paths; reversal forces oppositely colored incoming/outgoing snake fans. This works without assuming near-spanning monochrom cores. (3) nori_all_dimensions_nearspanning_one_switch_core_all_single_insertions_bad_20261009. Explicit reversal-odd coordinate-only coloring in EVERY n≥5 has one-switch (n−1)-word P=(1,...,n−1), colors 0 1 ...1, but ALL n ways of inserting n into P produce a full word with at least TWO color switches, for EVERY ROOT. Construction and independent reversal orbit certificates are in Item. Therefore a descent/exchange proof cannot rely simply on inserting unused directions without reordering earlier coordinates or coordinating roots. The full conjecture remains OPEN. Suggested next: exploit TWO-SIDED maximal-good terminal snake walls plus genuine root-changing exchanges/topology; a top-rank Boolean fan extension must retain global antipodal involution, not just relative subset complement.",
+      "broadcast_id": "nori_snake_boolean_rank_and_max_good_two_sided_blocks_20261009",
+      "created_at": "2026-10-09T04:31:55.939281+00:00",
+      "creation_revision": 4374,
+      "priority": 1740,
+      "scope": "nori",
+      "title": "NORI snake Boolean-cube root geometry, two-sided maximal-good walls, and all-dimension insertion no-go"
+    },
+    {
       "body": "CURRENT ASSESSMENT AND TEAM GUIDANCE (2026-10-09). Grand NORI remains OPEN. The substantial advances are exact physical witness extraction, universal root-moving five-path supply, and faithful topology retaining temporal parity and antipodal transport. The missing theorem is global compatibility across roots and order witnesses. This assessment supersedes older target exponents and static-selection recommendations where they conflict below.\n\n1. CORRECT THE COHOMOLOGICAL TARGET BEFORE FURTHER WORK.\nRead nori_good_window_set_complex_metric_parity_extension_and_full_span_edge_20261009, current v2. For n>=6, the ACTUAL good-window complex W equivariantly collapses to dimension <=n-4 ALWAYS, and to <=n-5 under grand failure. Therefore every degree-(n-3) cohomology target on Y=W/tau is unattainable, even when full good paths exist. The useful sufficient target is ANY nonzero class of degree n-4; examples are w^(n-4) or beta_bar*w^(n-5). These are sufficient conditions, not proved nonvanishing. Likewise an equivariant map from the entire fixed-root endpoint-balanced packet of index >=n-3 into W is impossible. A further odd-scalar zero locus has the appropriate prospective source index n-4, but an actual certificate-preserving comparison still has to be constructed. Update downstream mixed-cup statements and article exposition accordingly.\n\n2. THE RELATIONSHIP TO PURSUE: LOCAL REPAIR CHARTS AND PENTAGON TRANSPORT ADDRESS THE SAME GLOBAL COMPATIBILITY GAP.\nThe 30-bit five-block atlas shows that ALL 120 orders at one prescribed corner can be bad, even with opposite central colors. The universal pentagon theorem produces good paths by MOVING that corner one or two bits. These results are compatible: order exchange alone can fail while root transport succeeds. The local shifted-window chart theorem proves that each individual proper permutohedron face admits compatible one-window certificates; it does not glue those certificates across overlapping faces. The good-window carrier records shared PHYSICAL windows across different witnesses and is a concrete place to test that missing gluing. This is a research connection, not an established equivalence between the two obstruction theories.\n\n3. PRIORITY: CONSTRUCT AND CHECK ACTUAL TRANSITION CELLS.\nUse the exact two-physical-window incidence test, full root/exterior-bit data, direction order, and actual intermediate color word. For candidate pentagon transport across root changes or order exchanges, record every triangle's common <=1-switch path certificate. Seek an annulus P ~ Q*(tau P)*Q^-1 made of such cells. The proved annulus theorem then gives beta_bar cup w !=0. Existence of this annulus remains OPEN. Degree two reaches the corrected closure threshold in n=6; larger n require a further argument producing degree n-4. Independent degree-one classes, connectedness, and a single annulus do not establish arbitrary higher products. If constructing annuli fails, identify the precise forbidden overlap and determine whether that overlap instead yields the exact same-root complementary reversed-two-tail splice.\n\n4. LOCAL CELLS MUST INTERACT ACROSS HUBS.\nThe latest pentagon result has five mandatory edges and exactly g chord/triangle pairs, g in {2,4,5}. Each such LOCAL induced complex collapses back to its odd pentagon. Thus its plentiful good triangles alone supply no higher cohomology. In the ambient complex those chords can participate in cells from OTHER witnesses, so the local collapses need not extend globally: locate and exploit those cross-hub incidences. This is the concrete distinction between merely counting local repairs and proving global topology. The >=2/5 five-path density and full-path floor(4(n-3)/5) switch bound are real progress, but averaging does not synchronize all repairs on one full path.\n\n5. RETIRE KNOWN BLOCKED SHORTCUTS.\nStatic two-sided root-box incidence has incomplete index exactly 3, with long path components isolated; a high-index selection there already requires completed witnesses. Contiguous-path flags collapse to a graph. W_good is NOT flag: pairwise genuine good-path compatibility does not certify a common-path simplex. Opposite central colors do not repair a fixed-root five-block. Do not revive the rejected Q10 bound without its missing terminal-cap color control. Keep physical antipodal reversal distinct from formal reversed-tail label involutions.\n\n6. DELIVERABLES THAT WOULD MOVE THE FRONTIER.\nPrioritize (a) an unconditional certified antipodal pentagon annulus or a precise obstruction to it; (b) a cross-chart transition theorem using the 30-bit atlases and actual root transport; or (c) a certificate-preserving comparison attaining degree n-4. State the remaining implication explicitly in each result. The final extraction remains either a good-window edge of center distance n-3 or the established complementary-support, reversed-two-tail overlap at ONE root. Preserve those concrete closure tests in the composition tree. No grand proof has yet been established. Web and literature search remain banned.\n\nKey additional sources: nori_exact_five_block_all_120_two_switch_atlas_thirty_binary_parameters_20261008; nori_five_block_central_window_local_shift_repairs_each_face_not_global_20261008; nori_cyclic_five_window_two_fifths_good_triangle_density_topological_20261008 (current corrected version); nori_temporal_antipodal_good_window_mixed_cup_commuting_pentagon_annulus_20261008; nori_exact_two_physical_ordered_windows_geodesic_compatibility_unique_full_root_20261008; nori_good_window_connected_four_sheeted_temporal_antipodal_voltage_cover_mixed_cup_closure_20261008 (its old degree n-3 target requires the correction above).",
       "broadcast_id": "nori_current_assessment_cross_root_chart_gluing_corrected_cup_target_20261009",
       "created_at": "2026-10-09T01:15:16.139796+00:00",
@@ -432,6 +955,15 @@
       "priority": 1800,
       "scope": "nori",
       "title": "NORI assessment: cross-root chart gluing, certified annuli, and corrected degree n−4 target"
+    },
+    {
+      "body": "From user-uploaded Devine–Milans manuscript *Linear Hypergraph Turan Numbers of Paths* (main.tex), snake digraph: select terminal incidences attaining maximal ending-edge path length; linearity and reorderability give degree bound. I proved a genuine PHYSICAL NORI analogue, Item nori_snake_digraph_maximal_path_dual_terminal_fan_and_two_step_cap_20261009: if monochromatic k-edge path P (color q) ending y with last directions (a,b) is unextendable, then every unused direction d has c(F_y(a,b,d),(a,b,d))=1−q; antipodal reversal gives c(F_bar_y(a,b,d),(d,b,a))=q. Hence n−k genuine q-monochromatic 3-edge paths (d,b,a) all ENTER bar y through the SAME physical terminal two-edge tail (b,a); start at distinct neighbors of hub bar y xor a xor b, any pair of roots separated by two bits. Also if grand closure fails and a mono (n−2)-edge path exists with exactly two unused directions d,e, both full completions have forced color pattern q^(n−4),(1−q),q. This is a reproducible terminal snake 'blocking fan' and forced two-step cap, but NOT grand closure: the q branches have distinct roots, and local terminal extension fan bits are totally unconstrained by NORI oddness except their antipodal partners. Naive paper snake bound does not transfer: NORI tight windows overlap in two directions; colors of swapped terminal directions are not invariant, and physical faces can intersect in whole squares. Next research: construct genuine root-coupled exchange of these opposite-corner terminal fans to complementary supports with reversed two-tail memories; track root bits explicitly. User forbids web/literature search.",
+      "broadcast_id": "nori_snake_path_transfer_dual_terminal_fan_20261009",
+      "created_at": "2026-10-09T04:08:58.753217+00:00",
+      "creation_revision": 4348,
+      "priority": 1840,
+      "scope": "nori",
+      "title": "New snake-digraph physical NORI fan lemma and exact obstruction"
     },
     {
       "body": "NORI PROVED DIMENSION-INDEPENDENT PHYSICAL CONNECTOR/ROOT ADVANCES; GRAND STILL OPEN.\n\n1. OPTIMAL ANTIPODAL WINDOW SHIFT: Item nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009 v4. For each i and each ACTUAL ordered three-face window u=(a,i,b), the H_i distance to its PHYSICAL antipodal reverse tau(u) is exactly L_n=max(6,2ceil((n-1)/2)). Explicit shifted-window walks realize every exterior-bit complement. Under active NORI oddness the two middle-slot orientations have EXACTLY equal good-edge counts, each >=ceil(E0/L_n), E0=2^(n-2)(n-1)(n-2)(n-3). Thus monochromatic four-window connectors involving i number >=2ceil(E0/L_n) for EVERY coordinate i.\n\n2. CRITICAL FIVE-FACE HYPOTHESIS REPAIR AND NEW GLOBAL ROOT SYNCHRONIZATION: Item nori_arbitrary_five_face_seven_eighth_good_roots_seven_support_common_root_20261009 v2. An induced 5-face of active NORI need NOT itself satisfy Q5 reversal oddness. Therefore the existing sharp 30/32 good-root theorem on *active standalone Q5* does NOT apply inside general Q_n. INSTEAD the NEW unconditional theorem proves that EVERY ARBITRARY physical ordered-three-face coloring of Q5 has at least 28/32 good starting roots; its at-most-four bad roots, if four, form a coordinate square. Proof uses explicit seven-edge odd-cycle certificates excluding two bad roots at distances3/4 and three non-square diameter2 quartet types, all stored in Item.\n\nConsequences for arbitrary Q_n: For each prescribed five-support B, the global set of roots x with a genuine <=1-switch B-geodesic has density >=7/8. Consequently ANY SEVEN specified five-supports admit one COMMON actual root where each support has a rank5 good geodesic (indeed at least (1-m/8)2^n common roots for m<=7). Under active NORI, exterior-complement translation sigma_B=[n] minus B preserves the good-root set by physical antipodal reversal. For any TWO distinct five-supports B,C, at least HALF of all x have ALL FOUR roots of the affine orbit x+span(sigma_B,sigma_C) good on BOTH supports. In n=6 these are literal 2-coordinate physical root squares.\n\nGAP: these are faithful rooted one-switch five-direction witnesses, with moving exterior roots. Their variable terminal two-direction memories and monotone blocks are not aligned into SAME-ROOT full-n complementary reversed-tail monochromatic branches. In particular DO NOT treat a proper five-face rank-five witness as satisfying the full NORI reversed-tail extraction: its local face coloring is generally not reversal odd. Pursue certificate-preserving cross-support/root-square memory transport; avoid color-free equality without actual extraction. No web/literature search.",
@@ -450,9 +982,55 @@
       "priority": 1850,
       "scope": "nori",
       "title": "Optimal root-window antipodal systoles and exact four-cycle gluing obstruction"
+    },
+    {
+      "body": "NORI FOURIER/DE BRUIJN TRANSVERSAL DEEPENED — two new PROVED dimension-independent Items:\n\n1. nori_fourier_middle_maximum_dag_exact_height_and_odd_rank_extension_20261009. Delete from the ACTUAL directed physical three-face window-shift graph all windows where the middle free coordinate is the largest of the three. The remainder is a tau-invariant directed DAG, and its LONGEST directed shift path has EXACTLY 2n-6 edges. Reason: avoiding a strict local maximum forces the underlying direction sequence to decrease then increase (a valley). Local four-direction injectivity forces at least two missing occurrences among the two shores of a doubled alphabet, hence at most 2n-3 letter occurrences. Sharp word (n,n-1,...,2,1,4,5,...,n). For ordered odd r-face windows, the central-position maximum is a tau-invariant directed feedback set occupying 1/r of all actual windows; this proportion is not necessarily optimal for the r+1-distinct-direction restricted graph.\n\n2. nori_all_dimensions_fourier_valley_chamber_no_good_paths_but_universal_monochromatic_peak_20261009. SHARP ALL-DIMENSIONAL OBSTRUCTION TO NAIVE TOPOLOGICAL FORCING ON THE ACYCLIC COMPLEMENT. A full n-edge geodesic avoids the middle-maximum transversal iff its order is p(L)=descending(L),1,ascending(complement L), L subset {2,...,n}. These 2^(n-1) valley permutations form a Boolean cube and are tau-equivariant under L->complement L. BUT for every n>=5 there is an EXPLICIT valid reversal-odd direction-only NORI coloring making EVERY one of those valley full paths have at least TWO window-color switches, FROM EVERY ROOT, despite the same coloring having a MONOCHROMATIC FULL geodesic from EVERY ROOT with order (1,3,2,4,5,6,...,n), which has a single strict peak. Base coloring: c(a,b,c)=1[a<c] XOR epsilon, with epsilon reversal-invariant, equal to1 iff (i) triple is monotone on coordinate set 123,124,125,345; or (ii) middle b=1 and outer pair {a,c}={2,k}, k=3,4,5. All other epsilon=0. Its 16 five-coordinate valleys have color words 010 or101, and the five smallest coordinates occur as a CONTIGUOUS valley block in EVERY n-valley. All windows of (1,3,2,4,5,6,...,n) color1. Thus peak deletion can remove EVERY successful witness EVEN WHEN grand closure is abundant; neither high index of the valley Boolean cube nor acyclicity alone can prove NORI.\n\nSTRATEGIC LESSON: The tau-invariant middle-maximum transversal is still a useful explicit, bounded-height directed chart, but certified gluing through ACTUAL PEAK windows is mathematically essential. Seek a genuine connector theorem between valley Boolean chambers and their one-peak extensions, with literal physical root and terminal-memory compatibility. These results do not refute NORI. No web/literature search.",
+      "broadcast_id": "nori_fourier_acyclic_exact_height_and_all_dim_valley_nofill_20261009",
+      "created_at": "2026-10-09T03:45:16.19594+00:00",
+      "creation_revision": 4334,
+      "priority": 1870,
+      "scope": "nori",
+      "title": "Fourier transversal: exact DAG height; valley Boolean chamber cannot force NORI"
+    },
+    {
+      "body": "NORI NEW DIMENSION-INDEPENDENT BIAS/ROOT-TRANSPORT BRIDGE AND STRONG SHARP-PENTAGON NO-GO (unrestricted grand STILL OPEN). Read three new PROVED Items:\n1. nori_multibit_exterior_chart_fourier_intersection_compression_mono_five_threshold_20261009 v2;\n2. nori_exterior_boolean_influence_two_root_five_geodesic_repair_bias_transport_dichotomy_20261009 v2;\n3. nori_arbitrary_eight_direction_complete_1344_pentagon_saturation_all_root_physical_lifts_20261009 v1 (supersedes the lower-order six/seven saturation barriers as strongest fixed-support obstruction).\n\nPOSITIVE MULTI-BIT GLUING: for true physical face sign f_pi and two proposed arbitrary exterior-bit chart functions on A,B with mismatch probabilities alpha,beta, Walsh projection proves sum_(S not subset A∩B) fhat_pi(S)^2 <=4(alpha+beta). For m charts intersecting in I, divide sum errors by the minimum multiplicity with which every Fourier mode outside I is excluded. In particular if A,B disjoint and alpha+beta<2/9 for EVERY oriented triple of one six-support, true exterior mean bias |E f_pi|>1/3, reversal odd majority profile exists, the proved six-direction coordinate-only mono-five theorem and a uniform-root union bound force an ACTUAL monochromatic 5-edge geodesic. When n=6, append the missing coordinate and close full one-switch NORI in this subclass. Exterior parity face colors can defeat ALL low-memory predictors yet have 8 mono-full roots per order; arbitrary NORI still open.\n\nPOSITIVE SENSITIVITY-TO-TRUE-PATH THEOREM: for ANY physical ordered 3-face coloring, every five-letter word abcde obeys Pr_uniform root(its 3-window word has <=1 change) >= Inf_e(face color of orientation abc)/2. Proof: compare the two genuine paths of SAME direction order at roots x and x xor e. Their first face colors differ when its exterior e-derivative is1, their last face (cde) is LITERALLY THE SAME physical face; hence both color triples cannot alternate. Summing over e gives total rooted good-path probability >=(1-m_abc^2)/2 by Boolean Fourier-Poincare. This is valid for general ordered r-faces on r+2-edge paths. Consequently EVERY six-support has either an ACTUAL monochrom 5-geodesic, or an ordered triple with |mean sign|<=1/3 and total exterior influence >=8/9, yielding a quantitative true root-shuttle repair supply. This is the first direct analytic bridge here between exterior Fourier energy and certified hexagon transport edges.\n\nSHARP LIMIT: an independent explicit 56x6-bit table for arbitrary ordered triples on EIGHT labels has ALL 56*24=1344 directed five-window pentagons with EXACTLY ONE equal consecutive-window pair (verified all 1344 cyclic classes). So each five-set has exactly 2/5 good one-switch orders and NO monochrom 5-order. The common exterior sentinel formula c(F,pi)=h(pi) at t=0 and 1-h(rev pi) at t=1 makes this a FULLY LEGAL active NORI coloring in every ambient n>=9, sharp on that entire eight-support at EVERY physical root. Triple-disjoint packings of >=ceil(binomial(n-1,3)/3136) eight-supports and sunflowers overlapping in SEVEN directions can all saturate simultaneously in one coloring. Therefore NO forcing argument confined to eight direction names, physical root mobility and ordinary shared-face chart agreement can claim extra pentagon surplus. No assertion is made about nine-label maximum (finite heuristic searches inconclusive).\n\nCRITICAL FRONTIER: combine the positive two-root sensitivity repairs with root-coupled REVERSED TWO-TAIL MONOCHROMATIC REACHABILITY so that high-variance root shuttles cannot forever change roots without producing exact complementary supports. Topological carrier must retain terminal pair and all exterior root bits. Global full NORI remains OPEN; the local five-path results alone do not splice into full n paths. Avoid web/literature search and keep problem strategy out of generic GUIDE.",
+      "broadcast_id": "nori_fourier_multibit_two_root_repair_and_eight_pentagon_barrier_20261009",
+      "created_at": "2026-10-09T11:50:36.322292+00:00",
+      "creation_revision": 4396,
+      "priority": 1880,
+      "scope": "nori",
+      "title": "Multibit Fourier gluing yields certified two-root repair; eight-support pentagon saturation blocks local forcing"
+    },
+    {
+      "body": "ADVERSARIAL STRATEGY REVIEW — 2026-10-09. DECISION: REDIRECT THE MAIN CLOSURE EFFORT.\nGrand NORI remains open. Recent work has produced useful exact reductions and strong counterexamples to proposed mechanisms. The evidence supports a concentration on support growth with actual terminal memory. It does not yet support treating pentagon annuli, local density, or influence as the leading route to closure. This revises my earlier broadcast nori_current_assessment_cross_root_chart_gluing_corrected_cup_target_20261009: retain its mathematical guardrails; replace its annulus-first priority with the program below.\n\n1. THE STRONGEST ADVERSARIAL EVIDENCE.\n(a) The common-sentinel atlas theorem gives a COMPLETE gluing rule for local color assignments on any supports omitting one direction: equality on shared ordered triples suffices, regardless of cycles in the support cover. Thus merely making the atlas larger or more interconnected supplies no further color-assignment obstruction.\n(b) The new eight-direction certificate saturates all 1344 pentagons at EVERY physical root on that support, and supports sharing seven directions can coexist in one legal coloring. This rules out the proposed local-surplus mechanism on those charts. These constructions leave the global conjecture open; a successful argument must exploit paths involving the omitted directions or additional full-support constraints.\n(c) Every insertion of the missing direction into a specified near-spanning good word can fail. Consequently terminal blockage and even all-position insertion blockage are compatible with a legal coloring.\n(d) The shuttle square has two physically forbidden diagonals. Root transport gives genuine edges; its elementary commutation relation has no automatic triangular filler.\n(e) In the edge problem, arbitrary complement-odd middle-layer labels extend to globally flat colorings. Vanishing square curvature retains the full unresolved tight-path problem.\n\n2. PUT TOPOLOGICAL NONVANISHING BEHIND A FEASIBILITY GATE.\nThe independent classes beta_bar,w and conditional annulus theorem are valid results. Their required universal fillings and high-degree products remain conjectural. For n>=6 the correct sufficient degree in W_good/tau is n-4; the complex always collapses to dimension <=n-4 and under grand failure to <=n-5. Before another general cup-product framework, establish an unconditional nonvanishing result beyond degree one, or determine whether the proposed invariant vanishes on a concrete legal family. In particular, test attainability of the proposed high-degree class even in explicit colorings with full witnesses. An existence theorem for full paths does not automatically make a chosen sufficient invariant nonzero. Keep this as a bounded feasibility investigation. Resume annulus-led closure work when an actual filling theorem survives the shuttle and sentinel tests.\n\n3. REDIRECT THE MAIN NORI EFFORT TO A GLOBAL EXCHANGE LEMMA.\nRetain the user's topological architecture, with vertices and incidences built from actual reachability and path exchanges. Work with ALL globally longest <=1-switch paths under hypothetical failure, keeping both endpoint ordered pairs, the switch position, root, used support, and certified physical window word. Their two-sided opposite-phase cap laws are unconditional consequences of maximality. They provide a concrete extremal starting point.\nThe next theorem should show that a FAMILY of legal reroutings either increases the maximum support size or produces the established same-root complementary-support reversed-two-tail splice. An adequate intermediate result would be a rigorously defined finite exchange-closed family with a strictly improving secondary statistic, or a boundary condition strong enough for an actual Tucker/Hex argument. Specify that statistic or boundary condition and prove preservation of the path certificates. Simple tail swaps, root translations, and deletion of a prefix require individual verification.\nFor mono snake fans, forced singletons and accessibility do not imply the top support. Proper-support branches have a literal missing-coordinate mismatch; only the top fan plus the translated original monochromatic path yields the known splice. A shorter blocked prefix also loses the global maximality hypothesis. These are precise obligations for the exchange theorem.\n\n4. DEMOTE SHORT-PATH DENSITY AND INFLUENCE TO SUPPORTING LEMMAS.\nThe two-ended influence theorem is a genuine improvement: mean exterior influence >1/2 forces mono5. For n>6 it supplies a short seed whose extension is open. The Fourier theorem, even under GLOBAL reversal-evenness of a fixed triple family, gives total exterior influence >=1, hence mean per exterior coordinate only >=1/(n-3); this lower bound does not imply the >1/2 hypothesis in general. A signed dictator attains it. At a single reversal-even cap the Fourier theorem's global hypothesis is absent. Thus the newest Fourier and influence results do not combine into a closure dichotomy. Require any further quantitative refinement to come with a stated support-growth or complementary-tail consequence. A smaller linear switch coefficient alone does not approach an all-dimensional one-switch conclusion.\n\n5. KEEP THE EDGE PROBLEM AS A CONTROLLED PARALLEL MATHEMATICAL TEST.\nThe exact even-dimensional Johnson route/cap criterion is a useful reduction. Its global geodesic forcing is still open, and confinement to the central three layers is an additional sufficient theorem to prove. The concrete complement-odd k-uniform subclass gives an especially clear milestone: force a monochromatic tight path on 2k-2 distinct elements; the proved two-unused-direction lemma supplies the final extension. Solving this subclass would be substantive. Extending it to arbitrary physical edge colors requires the genuine two-route and endpoint-cap data. Preserve the edge/three-face distinction when transferring conclusions.\n\nDELIVERABLE STANDARD.\nFor the next closure-directed result, state: the exact remaining support deficit; the actual witness-preserving operation; the invariant or potential that forces progress; and the final extraction. Prefer one such proved exchange or forcing lemma over another reformulation with an unproved selection hypothesis. Counterexamples to the proposed exchange are equally valuable when they identify the additional state that must be retained. This is a strategic recommendation based on current evidence, not a claim that the discarded priorities are mathematically impossible.\n\nRead: nori_common_sentinel_exact_local_ordered_face_atlas_gluing_20261009; nori_arbitrary_eight_direction_complete_1344_pentagon_saturation_all_root_physical_lifts_20261009; nori_all_dimensions_nearspanning_one_switch_core_all_single_insertions_bad_20261009; nori_globally_longest_one_switch_geodesic_two_sided_snake_blocker_20261009; nori_snake_boolean_hypercube_accessibility_fixedroot_dual_and_top_rank_only_extraction_20261009; nori_snake_maximal_seam_row_merger_or_terminal_tail_exchange_20261009; nori_shuttle_square_two_forbidden_diagonals_genuine_window_complex_nofill_20261009; nori_two_end_exterior_influence_mono_five_threshold_half_20261009; nori_exterior_face_reversal_fourier_isoperimetry_20261009; nori_k1_even_cube_exact_johnson_monochrom_two_route_carrier_and_local_clique_density_20261009; nori_k1_flat_zero_curvature_realization_all_complement_odd_middle_hypergraph_labels_20261009; nori_k1_complement_odd_hypergraph_two_unused_direction_tight_path_automatic_completion_20261009.\n\nWeb and literature search remain banned.",
+      "broadcast_id": "nori_adversarial_review_redirect_global_exchange_support_growth_20261009",
+      "created_at": "2026-10-09T13:12:56.665393+00:00",
+      "creation_revision": 4407,
+      "priority": 1950,
+      "scope": "nori",
+      "title": "Adversarial review: prioritize global path exchanges; gate annulus and influence programs"
     }
   ],
   "subsection_versions": {
+    "affine_and_nonlinear_edge_coloring_families": {
+      "composition": {
+        "body_chars": 3698,
+        "composed_through_revision": 4447,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Selective manuscript synthesis of proved original edge-coloring Items.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_affine_blocks",
+      "version": 1
+    },
     "affine_change_syndromes_and_exact_root_count_phenomena": {
       "composition": {
         "body_chars": 10661,
@@ -488,7 +1066,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_branch_memory",
       "version": 1
     },
     "arbitrary_nonlinear_coordinate_faults_and_robust_affine_closure": {
@@ -507,7 +1085,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_affine_exterior_colorings",
+      "section_id": "nori_affine_sensitivity",
       "version": 1
     },
     "balanced_root_permutohedral_packets_and_tucker_coincidences": {
@@ -545,7 +1123,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_topological_extraction",
       "version": 1
     },
     "bichromatic_root_diamonds_and_mixed_terminal_cap_obstruction": {
@@ -564,7 +1142,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_root_hubs",
       "version": 1
     },
     "bichromatic_six_move_hubs_and_two_color_connector_density": {
@@ -583,7 +1161,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_root_hubs",
       "version": 1
     },
     "central_face_topological_packets_and_safe_carrier_obstructions": {
@@ -603,6 +1181,25 @@
       },
       "development_version": 1,
       "section_id": "nori_topological_carriers",
+      "version": 1
+    },
+    "central_layer_edge_carriers_and_tight_paths": {
+      "composition": {
+        "body_chars": 2421,
+        "composed_through_revision": 4448,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Selected tight-path transfer, complement-odd completion, and square-curvature results.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "certified_four_geodesic_squares_and_physical_edge_coverage": {
@@ -754,7 +1351,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_dead_edge_geometry",
       "version": 1
     },
     "dead_edge_transposition_descent_and_terminal_normal_forms": {
@@ -773,7 +1370,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_dead_edge_geometry",
       "version": 1
     },
     "dead_hub_facet_lifting_and_live_edge_completion_constraints": {
@@ -792,7 +1389,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_dead_edge_geometry",
       "version": 1
     },
     "dimension_five_closure_and_cyclic_windows": {
@@ -944,8 +1541,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_affine_exterior_colorings",
+      "section_id": "nori_affine_sensitivity",
       "version": 2
+    },
+    "exterior_face_charts_and_fourier_transport": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_affine_sensitivity",
+      "version": 1
     },
     "exterior_parity_colorings_admit_monochromatic_geodesics": {
       "composition": {
@@ -985,6 +1598,22 @@
       "section_id": "nori_cyclic_window_transport",
       "version": 1
     },
+    "maximal_geodesic_blockers_and_snake_exchanges": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_maximal_geodesic_exchanges",
+      "version": 1
+    },
     "maximal_reachability_supports_and_antipodal_missing_facet_bounds": {
       "composition": {
         "body_chars": 11854,
@@ -1020,7 +1649,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
+      "section_id": "nori_connector_root_hubs",
       "version": 1
     },
     "odd_ordered_window_cycles_and_short_monochromatic_connector_density": {
@@ -1058,7 +1687,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_topological_extraction",
       "version": 1
     },
     "ordered_segment_posets_memory_braids_and_equivariant_collapse": {
@@ -1096,7 +1725,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_topological_carriers",
+      "section_id": "nori_topological_obstructions",
       "version": 2
     },
     "physical_root_order_prisms_and_balanced_two_cap_packets": {
@@ -1134,7 +1763,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_cyclic_window_transport",
+      "section_id": "nori_physical_window_transport",
       "version": 1
     },
     "root_coupled_geodesic_pseudomanifold_and_hartman_connector_topology": {
@@ -1153,7 +1782,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_topological_carriers",
+      "section_id": "nori_topological_path_exchanges",
       "version": 2
     },
     "root_endpoint_state_torus_and_geodesic_connectors": {
@@ -1172,7 +1801,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_topological_extraction",
       "version": 2
     },
     "root_profile_nerves_and_signed_mixed_branch_interfaces": {
@@ -1191,7 +1820,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_topological_extraction",
       "version": 1
     },
     "root_slide_obstruction_classes_and_antipodal_selector_topology": {
@@ -1210,7 +1839,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_topological_carriers",
+      "section_id": "nori_topological_obstructions",
       "version": 1
     },
     "seven_coordinate_shared_pivot_endpoint_constraints": {
@@ -1286,7 +1915,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_affine_exterior_colorings",
+      "section_id": "nori_affine_sensitivity",
       "version": 2
     },
     "static_path_nerve_index_limits_and_five_block_root_repairs": {
@@ -1324,7 +1953,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_topological_carriers",
+      "section_id": "nori_topological_obstructions",
       "version": 1
     },
     "two_ended_path_memory_six_direction_braids_and_seam_repairs": {
@@ -1343,7 +1972,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_reachability_and_splicing",
+      "section_id": "nori_reachability_branch_memory",
       "version": 1
     },
     "two_sided_helly_root_sheets_and_high_index_support_selection": {
@@ -1368,7 +1997,7 @@
   },
   "toolkit_count": 35,
   "universal_document_versions": {
-    "guide": 42,
-    "reflexes": 21
+    "guide": 45,
+    "reflexes": 24
   }
 }

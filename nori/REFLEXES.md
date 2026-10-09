@@ -9,3 +9,8 @@ These are behavioral heuristics for mathematical judgment during active research
 3. **Audit exact claims.** Localize the precise gap, false implication, or missing hypothesis; preserve the valid surrounding mathematics and repair at the narrowest level that restores the argument.
 
 4. **Practice publication-quality selective synthesis.** When child material supports a coherent argument, select and integrate the strongest results into publication-quality mathematical exposition. State hypotheses, conclusions, and proofs precisely; define terminology locally or in the Dictionary.
+
+
+5. **Spawn articles for independent approaches.** When a parallel route develops a substantial coherent argument and its own frontier, give it a standalone Article with its complete argument.
+
+6. **Reassess mathematical placement.** Group Items by thrust, Subsections by mechanism, and Sections by standalone approach as the research evolves.

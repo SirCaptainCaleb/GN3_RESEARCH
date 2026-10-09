@@ -1,3 +1,5 @@
 # NORI — ordered-three-face antipodal conjecture
 
 NORI studies the conjecture for binary colorings c of ordered three-dimensional faces (F,pi) of the Boolean cube Q_n, where pi orders the three free coordinate directions. The required oddness is c(bar F,rev pi)=1-c(F,pi). The color may vary between faces but is independent of the starting corner chosen within F for the same ordered directions. The conjecture asks for an antipodal geodesic whose consecutive ordered-three-face colors change at most once. Article I gives the formulation. The more general coloring of arbitrary directed length-three windows is false, by the even-dimensional rank-parity counterexample, and is not the active NORI problem. NOR coordinate-only reversal-odd triple colorings form a subclass. Imported Toolkit and literature resources require explicit applicability checks.
+
+NORI ordering: nodes.logical_order is nullable double precision metadata. Order siblings ascending with NULLS LAST; ties and null siblings have arbitrary relative order. Values are relative to each parent. Use integers initially and fractions for insertion. The value resides in node data under logical_order.

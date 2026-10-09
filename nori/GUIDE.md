@@ -18,6 +18,16 @@ Each Item belongs directly to a Subsection and is an atomic contribution: for ex
 
 Only Subsections, Sections, and Articles have compositions. A missing composition is valid: never invent prose to fill it. Compose when selected child material supports a coherent mathematical exposition, not merely because new Items exist. Update an Item when its mathematics changes and recompose higher levels when the best argument warrants it.
 
+## Article formation
+
+Spawn an Article when a distinct mathematical approach develops a substantial independent chain of results, a coherent proof objective, and its own unresolved frontier. Give parallel approaches separate, standalone Articles. Each Article contains its complete mathematical argument, with external prerequisites drawn only from the Dictionary and Toolkit. Keep individual lemmas and local extensions in Sections and Subsections.
+
+## Mathematical placement and architecture
+
+Group Items sharing one mathematical thrust into a Subsection. Group Subsections developing one coherent mechanism into a Section. Give substantial independent approaches standalone Articles. Reassess placement as arguments develop; retain complete mathematics and its provenance.
+
+Write architectural instructions tersely, precisely, affirmatively, and without redundancy. State each desired action directly.
+
 ## Publication standard and selective synthesis
 
 A composition is nearly publication-ready mathematical prose, not a digest, inventory, chronology, or progress report. Integrate the strongest relevant child mathematics into a coherent argument with explicit hypotheses, definitions, statements, proofs, logical dependencies, and clearly identified gaps. Distinguish theorems from conjectures and heuristics. Use standard terminology, the project Dictionary, and natural mathematical language. Establish every reduction and additional assumption; do not silently transfer a claim from a special class to a broader one. Explain unresolved obligations mathematically rather than in managerial language.
