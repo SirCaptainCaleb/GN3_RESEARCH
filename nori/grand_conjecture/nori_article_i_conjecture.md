@@ -2,6 +2,14 @@
 
 Let \(Q_n=\{0,1\}^n\). An ordered three-face \((F,\pi)\) consists of a three-dimensional cube face \(F\) and an ordering \(\pi\) of its three free directions. A binary coloring \(c\) is **antipodal-reversal odd** when \(c(\bar F,\operatorname{rev}\pi)=1\oplus c(F,\pi)\), where \(\bar F\) complements every cube coordinate. Along an antipodal geodesic, obtained by changing each coordinate exactly once, record the colors of the consecutive length-three windows. The grand conjecture asks for a geodesic whose color word changes at most once. This formulation includes the coordinate-only, reversal-odd ternary problem; color values may depend on all fixed exterior coordinates of \(F\).
 
+## Mathematical organization
+
+Article I now has seven topical sections, with each mathematical Item housed in a small subsection whose composition develops a specific group of hypotheses and conclusions. The progression is: (I) full low-dimensional closure and root mobility; (II) affine and nonlinear-fault reductions; (III) six/seven-direction endpoint control and tournament orders; (IV) certified local connectors and dead-edge rigidity; (V) cyclic window transport and quantitative switch density; (VI) exact complementary reachability and two-tail splicing; and (VII) antipodal permutohedral topology and genuine good-window cohomology. The order distinguishes finite closed theorems from local input-to-output mechanisms and from the outstanding global topology-to-extraction transition.
+
+The argument is organized by mathematical mechanism. The unrestricted \(Q_5\) theorem and antipodal \(Q_6\) closure are the finite foundations; a complete \(Q_5\) rooted-obstruction classification explains why the initial root must be allowed to move. Affine exterior-coordinate recurrences and universal-flipper eliminations give all-dimensional positive subclasses, while the seven-direction wing and shared-pivot identities isolate exact local obstruction patterns. The complementary reversed-two-tail reachability equivalence gives a precise necessary-and-sufficient splice criterion. Finally, root-coupled permutohedral topology yields genuine centrally colored path packets, while the physical good-window complex converts grand closure to a maximum-distance edge and identifies the attainable cohomological threshold \(n-4\).
+
+The remaining conjectural implication is to globally couple these physically certified path witnesses across root slides and order exchanges. Every claimed theorem below retains its stated hypotheses; the unrestricted ordered-three-face NORI conjecture remains open.
+
 **Lemma 1 (unrestricted dimension five).** Every binary coloring of ordered three-faces of \(Q_5\), with no symmetry hypothesis, has a five-direction antipodal geodesic with at most one change.
 
 **Proof.** Otherwise every color word on a five-direction geodesic would be \(010\) or \(101\), so its first and third colors agree. For a fixed coordinate order \((a,b,c,d,e)\), the first window color depends only on the fixed \(d,e\)-bits, while the third depends only on the fixed \(a,b\)-bits (after the first two directions have been toggled). Independence of those four bits forces each of these two window colors to be constant over all face positions. As every ordered triple occurs as the first window of some five-coordinate order, the entire coloring depends only on ordered triples, say \(h(a,b,c)\). Universal failure would force \(h(a,b,c)\ne h(b,c,d)\) for every five-distinct order. Applying this to the five cyclic rotations of \((a,b,c,d,e)\) alternates binary labels around an odd 5-cycle, impossible. \(\square\)
@@ -250,3 +258,74 @@ q=A_i(r)=1\oplus A_j(r).
 Hence this graph would have to be bipartite. **An odd cycle in the actually witnessed graph forces grand closure.** Neither this theorem nor (*) currently ensures that the needed compatible connectors exist.
 
 The open problem is to construct a dimension-independent equivariant fixed-point/connector carrier whose verified boundary and incidence conditions force either a same-root complementary pair in (*) or a nonbipartite four-facet cap-memory graph. A balanced simplex of abstract bit strings, a crossing of different endpoint sheets, or a zero of an interpolated map is not yet such an extraction. Thus the grand conjecture remains open beyond the established finite dimensions, but its most promising topological routes now have rigorous, explicit completion obligations.
+
+
+## Current closure frontier: colored Tucker packets and dynamic terminal-memory transport
+
+The recent topological work substantially strengthens the genuine-path picture without establishing the unrestricted conjecture. At any root \(x\), the honest endpoint-opposed full-geodesic permutohedral nerve carries antipodal class \(w_1^{n-3}\ne0\). A relative-index Tucker argument forces two ACTUAL endpoint-opposed full geodesics of opposite signed median/central-color label sharing a near-middle prefix-support set. For any four prescribed square roots, a multi-root variant synchronizes eight actual full paths at one middle support cut.
+
+Using the FULL permutohedral boundary (index \(n-2\)) rather than just its endpoint-opposed zero carrier gains an independent actual central-color constraint. For every root \(x\), designated direction \(i\), and two other directions \(a,b\), Borsuk–Ulam gives a weighted packet of at most \(n-1\) original full geodesics lying in ONE proper face with a shared one- or two-direction early/late cap. In odd dimensions the packet contains actual central ordered three-faces of both colors, and an opposite-color pair has actual projected \(i\)-edge positions separated in at least \(\lceil(n-3)/2\rceil\) other coordinates. In even dimensions the packet exhibits a central color change or centered monochromatic four-edge subpaths of both colors. These are real paths and real colored physical faces, not imaginary path labels.
+
+The remaining *physical* junction is sharp. For a common-support prefix/suffix exchange, the two new ordered three-face windows \((u,v,w)\), \((v,w,t)\) lie on actual faces through the common intermediate vertex; both are invariant on exactly the physical root square with directions \(\{v,w\}\). Swapping the last prefix and first suffix directions across the cut moves the cut vertex through that square but preserves both underlying physical faces, changing their ordered labels. Selecting a FIXED pair of square directions before applying Tucker collapses the separating-cut carrier to index zero. A globally legal \(Q_9\) coloring shows two real three-switch Tucker paths of opposite median signs can share a middle vertex while both exchanged full paths still have three switches. **Global moving-square order compatibility, not merely a complementary sign pair, is necessary**.
+
+The genuine static two-sided partial-path root-sheet Helly carrier has antipodal index exactly \(3\) under hypothetical failure for all \(n\ge8\): all six-edge or longer admitted partial paths form detached exchanged root/support components, and the universal 3/4-edge plus color-dependent five-edge boxes cannot produce degree-four cohomology. Therefore the next proof must enrich the HIGH-index actual full-path carrier by *genuine root-transport, adjacent-order-exchange, and two-window seam-repair cells*, forcing either the exact same-root complementary reversed-two-tail reachability overlap
+\(U\in R_{(a,b)}(x),\ D\setminus U\in R_{(b,a)}(x)\)
+or a strict defect-reducing exchange. Neither has yet been forced in the unrestricted coloring.
+
+These statements are synthesized in subsection 13, “Root-coupled geodesic pseudomanifold and Hartman connector topology,” and subsection 14, “Root-endpoint state torus and geodesic connectors,” now composed through their full current research intake. They refine the closure program, while preserving the proved dimension-five/six and nonlinear subclass results and the **open** status of the general conjecture.
+
+
+**Root-transport pentagon consequence (new all-dimensional global bound).** Each physical five-direction hub yields an odd number of equal adjacent ordered-three-face color pairs around the five cyclic windows; each such equality becomes an actual good five-edge path after moving its root by the first direction. Averaging this local literal-physical repair over cube roots and uniform full direction orders bounds the probability of a change at each of the \(n-3\) full-path switch positions by \(4/5\). Thus for every binary coloring of physical ordered three-faces, even WITHOUT NORI oddness,
+\[
+\exists\text{ a full }n\text{-geodesic with at most }\lfloor4(n-3)/5\rfloor\text{ switches}.
+\]
+The expectation and a Markov fraction bound are proved in Item `nori_universal_ordered_r_full_antipodal_switch_expectation_four_fifths_nori_20261009`. For \(n=5\) this already gives at most one change, rederiving unrestricted dimension-five closure. The result shows how local odd-cycle transport can be used globally without the invalid assumption that separately transported geodesic segments concatenate into one path. The missing grand proof still requires controlling correlations among windows so as to reduce the full switch budget from a linear fraction down to one.
+
+
+## Rooted failure versus strong five-cube root density
+
+The NORI assertion is existential in both the root and the coordinate order. The rooted strengthening is false for every n>=5. For even n, color each ordered physical three-face by the parity of the exterior-one coordinates. This is reversal-odd because the number n-3 of exterior directions is odd; every full path starting at 0 has successive exterior weights 0,...,n-3, so it has exactly n-3 changes. For odd n>=7, write n-3=2s and use k mod 2 for exterior weight k<s, its complemented parity for k>s, and a reversal-odd ordered-triple label when k=s. The two alternating wings have opposite colors immediately next to the middle window; precisely one middle comparison changes, forcing n-4 changes. Cube translation handles any prescribed root.
+
+In dimension five, the rooted obstruction is completely classified. For a direction t and a two-element set P avoiding t, fix a bit H(P,t) with
+\[
+H(P,t)+H((V\setminus\{t\})\setminus P,t)=1.
+\]
+For an ordered triple (a,b,c) with exterior-one set S, define the face color to be H({a,b},c) at |S|=0, 1+H(S∪{a},b) at |S|=1, and H(S,a) at |S|=2. On every 0-rooted five-order (a,b,c,d,e), the resulting three-window word is (h,1+h,h), h=H({a,b},c), and hence is bad. Conversely any coloring bad at 0 must have alternating words; equality of its first and last windows and swapping the first two free directions force precisely this parametrization. There are three free complementary-pair bits for each of five choices of t, hence exactly 2^15 rooted obstruction colorings.
+
+This classification yields a sharper unrooted conclusion. If x and y are two bad Q5 roots, translate x to 0 and insert the above three-layer color formula into the alternating constraints for paths from y. When d(x,y)=2, the rooted orders bdeac, abdce, bedac give three equations of the form A+B=B+C=C+A=1, contradicting their sum. For distances three or four, the orders adebc and badce demand the same H-bit difference to be both 0 and 1; the orders abcde and adebc do likewise at distance five. Therefore distinct bad roots must be adjacent, and at most two bad roots can exist. Sharpness follows by fixing direction a and taking H(P,t)=1_{a∉P} for t≠a, with any complementary assignment for t=a; then both roots 0 and e_a have alternating three-window words for every order. Thus every legal Q5 coloring has **at least 30 good roots among its 32 vertices**, sharply. The universality of dimension-five closure and the failure of its rooted strengthening are therefore simultaneously quantified.
+
+## Exact good-window carrier and the degree-(n−4) obstruction
+
+Let W_c be the abstract simplicial complex with actual ordered physical three-face windows as vertices, a finite set spanning a simplex precisely if a *single* at-most-one-switch geodesic contains all of them. Physical antipodal reversal acts freely. For u=(F,pi), v=(G,rho), set
+\[
+d(u,v)=\|m(F)-m(G)\|_1,
+\]
+using the centers of their physical faces. When u and v lie at positions i<j on one direction-distinct geodesic, the successive center displacements are coordinatewise monotone and each has L1 length one, so d(u,v)=j-i. Hence the conjecture for c is **equivalent** to existence of an edge of W_c with d=n-3: an actual common good-path witness of such an edge trims to 3+(n-3)=n distinct-coordinate edges. The metric is intrinsic, while the existence of a common witness requires exact ordered physical face incidence; numerical distance and pairwise simplex tests alone do not suffice.
+
+Define a one-cochain β on each edge of W_c by β(uv)=d(u,v) mod2. On any triangle with a common witnessing path at positions i<j<k, its coboundary equals (j-i)+(k-j)+(k-i)=0 mod2. Thus β descends to a cohomology class β_bar on Y=W_c/τ. The antipodal double cover has characteristic class w∈H^1(Y;F2). Around a literal five-window physical pentagon through one cube vertex, β evaluates to one, whereas its lift is a closed loop and hence w evaluates to zero. The two degree-one classes are independent. Local certified triangles are abundant but do not automatically yield a higher cup product: the induced complex on the five windows consists of the pentagon plus 2, 4, or 5 chord–triangle pairs, and each extra pair collapses back to the odd cycle. The precise 2/5 five-path density theorem follows from the corresponding cyclic three-window color count and two-bit root transport.
+
+There is a decisive dimension correction. For any maximum-length good path with k≥5 edges, the simplex of all its k-2 physical windows has an equivariantly paired free codimension-one face obtained by deleting an internal window: the retained overlapping ordered triples determine the intervening direction order, and the extreme physical faces determine all physical windows. Elementary collapses in antipodal pairs therefore reduce the dimension of W_c by one from the trivial window-count bound. For n≥6,
+\[
+\operatorname{ind}_{\mathbb Z_2}(W_c)\le n-4
+\quad\text{always};\qquad
+\operatorname{ind}_{\mathbb Z_2}(W_c)\le n-5
+\quad\text{if no full good path exists}.
+\]
+Consequently a **nonzero degree-(n−4)** class, for example w^(n-4) or β_bar∪w^(n-5), would force grand closure. No degree-(n-3) class exists on this carrier, even if closure has already been achieved. In particular a putative equivariant map from the entire endpoint-balanced index-(n-3) permutohedral packet to W_c cannot exist.
+
+A conditional physically witnessed bridge to degree two is explicit. Suppose a path Q in W_c connects one vertex of a physical odd pentagon P to its antipodal mate, and P is simplicially homotopic to Q*(τP)*Q^(-1) through jointly good-path-certified faces. In Y the projected pentagon and Q-loops commute. The induced torus has first cohomology generators a,b with β_bar pulling back to a+εb and w to b; therefore β_bar∪w pulls back to a∪b≠0. The unconditional existence of this certificate, and a dimension-growing degree-(n-4) extension, remain open.
+
+**Current mathematical boundary.** Exact reversed-two-tail reachability overlap at one root and the distance-(n-3) edge of W_c are faithful equivalent closure tests. The proved high-index permutohedral packets, physical moving-seam-square transport, and ubiquitous rooted pentagon certificates each exhibit part of the required geometry; no established gluing theorem forces the final overlap or maximum-distance edge. The general NORI conjecture remains open.
+
+
+## Two complementary local mechanisms
+
+The physical square carrier and cyclic shift theory provide two different routes to controlled path witnesses. First, a physical edge is *dead* when no monochromatic four-edge geodesic traverses it. Such an edge forces a common color on all ordered three-faces through either endpoint whose free triples avoid the dead direction. For \(n\ge7\), choosing six other directions and passing through a dead endpoint at the central vertex gives a genuinely monochromatic six-edge geodesic: every consecutive three-face window contains that vertex. Thus a missing four-edge certificate paradoxically supplies a stronger six-edge local certificate. In low dimensions that path spans enough directions for one-switch closure; in general it must be extended without creating incompatible seam windows.
+
+Second, centered physical five-window cycles yield a universal short-path density result. If \(a_0,\ldots,a_4\) are binary colors around a genuine cyclic five-window configuration, its five change bits \(\delta_i=a_i\oplus a_{i+1}\) have even sum, so at most four are one. At most three of the five adjacent pairs \((\delta_i,\delta_{i+1})\) can both equal one. Consequently at least two of the five three-window words have at most one color change. Averaging the corresponding physical five-cycle identities over roots and full direction orders gives
+\[
+\mathbb E D(P)\le\frac45(n-3),
+\]
+where \(D(P)\) is the number of successive ordered-three-face color changes of a full antipodal geodesic. Thus some full path has no more than \(\lfloor4(n-3)/5\rfloor\) changes without any oddness axiom. This falls short of the grand one-switch conclusion but supplies many local seeds and a quantitative global defect bound.
+
+The root-coupled topological program must combine such actual local certificates with the full-permutohedral opposite-color packets, preserving two crucial data: a common physical root/support chain and the two ordered three-face windows created by every splice. A high-index domain, a static Helly intersection, or a complementary bit label without those certificates is not a closure proof. The grand conjecture remains open.

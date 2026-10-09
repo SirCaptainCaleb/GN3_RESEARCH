@@ -1,0 +1,22 @@
+# Even genuine opposite-color two-cap Borsuk packets can be position-balanced without any complementary pair of actual root profiles
+
+THEOREM (EXPLICIT PHYSICAL NORI CONVEX-TO-DISCRETE EXTRACTION NO-GO). In Q7 there exists an active antipodal-reversal odd ordered-three-face coloring c and a family of FIVE ACTUAL full x-rooted antipodal geodesics lying in ONE COMMON PROPER permutohedral facet, with exact color-and-position balances of the full-sphere two-cap theorem, yet NO TWO of the five genuine paths have complementary before-i positions on the four prescribed noncap coordinates. Thus the Caratheodory packet alone (even supplemented with witnessed CENTRAL opposite-color faces and literal same-root common two-cap incidence) cannot be upgraded to an actual complementary support pair by a convex-hull argument.
+CONSTRUCTION. Let n=7, root x=0000000, distinguished i=0, cap directions (a,b)=(5,6), and T={1,2,3,4}. In all paths the FIRST coordinate is 5 and LAST coordinate6, so their original permutohedron vertices lie in the same proper facet H_{5}, with common literal first cap direction 5. Let the five TRUE direction orders and weights be
+  P0=(5,0,1,2,3,4,6), weight 1/3, central window color0;
+  P1=(5,2,3,4,0,1,6), weight 1/6, central color0;
+  P2=(5,1,3,4,0,2,6), weight 1/6, central color1;
+  P3=(5,1,2,4,0,3,6), weight 1/6, central color1;
+  P4=(5,1,2,3,0,4,6), weight 1/6, central color1.
+Their literal before-0 bit supports on T are respectively empty, {2,3,4}, {1,3,4}, {1,2,4}, {1,2,3}. Every j∈T is before i in exactly THREE of the latter FOUR paths, so its weighted mean is 3*(1/6)=1/2. The total weight of paths with central color0 is 1/3+1/6=1/2, and color1 is3*(1/6)=1/2. But NO two of the five supports are complements: the complement of empty is all T, absent; the complement of any 3-subset is a singleton, also absent.
+PHYSICAL NORI CERTIFICATE. The actual CENTER (third) ordered-three-face windows (ordered triple; decimal exterior-one mask) of these five actual paths are, in the displayed order:
+  (1,2,3;33) color0;
+  (3,4,0;36) color0;
+  (3,4,0;34) color1;
+  (2,4,0;34) color1;
+  (2,3,0;34) color1.
+These five are DISTINCT physical ordered-face objects. Their active NORI antipodal-reversal mates are respectively
+  (3,2,1;80), (0,4,3;66), (0,4,3;68), (0,4,2;72), (0,3,2;80),
+none of which belongs to the original five. Thus all color assignments are simultaneously consistent with active NORI. Assign each mate its opposite bit and all remaining face involution orbits arbitrary bits to obtain a full VALID active NORI coloring. Every selected central window is a genuine face with the assigned color.
+This is NOT a grand-conjecture counterexample: the full global coloring may have many good antipodal geodesics. The result pinpoints the exact extra required combinatorial/topological step: a physical witness-CHAIN, ordered-two-tail compatibility, or exchange principle strong enough to convert COMPLEMENTARY CONVEX COLOR CONDITIONAL MEANS into a LITERAL complementary pair. In particular simply concluding existence of a complementary two-tail profile collision from the full-sphere two-cap weighted-packet equations is INVALID.
+
+STRENGTHENING — EVERY PATH IN THE OBSTRUCTING PACKET CAN BE ENDPOINT-OPPOSED. The SAME five seven-direction orders above admit the extra prescriptions that EACH path's FIRST ordered 3-window has color 0 and its LAST ordered 3-window has color 1, while the central ordered-window color assignments remain (0,0,1,1,1). The five first ordered-face objects (ordered triple; exterior fixed-one mask) are (5,0,1;0), (5,2,3;0), (5,1,3;0), (5,1,2;0), (5,1,2;0). The five last objects are (3,4,6;39), (0,1,6;60), (0,2,6;58), (0,3,6;54), (0,4,6;46). These objects plus the five central objects comprise only 14 distinct physical ordered-face involution orbits; ALL prescriptions are mutually consistent with one another and with antipodal-reversed complementarity. Therefore a globally valid active NORI coloring exists in which all FIVE selected paths are themselves ACTUAL ENDPOINT-OPPOSED paths and have both central colors, satisfy full moment balance, share a proper one-direction facet, yet still no two selected before-i supports complement. This rules out an additional tempting shortcut: even adding actual endpoint-opposition for EVERY path of the selected Caratheodory packet does not make convex complementary means extract an actual complementary path pair.

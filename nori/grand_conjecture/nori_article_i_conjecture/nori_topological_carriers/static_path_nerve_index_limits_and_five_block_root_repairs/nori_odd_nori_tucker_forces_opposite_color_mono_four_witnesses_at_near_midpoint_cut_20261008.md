@@ -1,0 +1,26 @@
+# Odd-dimensional Tucker forces genuine opposite-color monochromatic four-geodesic witnesses in near-middle shared-root packets
+
+# Color-sensitive Tucker forcing: opposite-color GENUINE monochromatic four-geodesic witnesses occur on full paths sharing a near-middle cut (odd dimension)
+
+Let n>=9 be ODD. Let c be any active NORI ordered-three-face binary coloring satisfying c(bar F,reverse pi)=1-c(F,pi). Fix ANY physical cube root x. Let K_x be the genuine endpoint-opposed full-path permutohedral face nerve, whose vertices are ACTUAL full antipodal geodesics from x with opposite FIRST and LAST window colors and whose antipodal involution sends direction order pi to reverse pi. Its established index has w1^(n-3) nonzero.
+
+**LEMMA (every endpoint-opposed full word has a real mono-four seed when n is odd).** A full n-geodesic has n-2 actual ordered-three-face windows and n-3 consecutive switch positions. For ODD n, n-3 is EVEN. If the first and last colors differ, the total number of switches is ODD, hence cannot equal the EVEN maximum n-3; there is at least ONE ZERO switch indicator. The corresponding two adjacent same-colored physical ordered-three-face windows form a genuine MONOCHROMATIC directed FOUR-edge subpath. This holds with no assumption of full NORI grand failure.
+
+Choose for each vertex pi∈K_x ONE of its actual mono-four subpaths M_pi, requiring the choice to be equivariant: for each reversal orbit {pi,reverse pi}, choose arbitrarily for one representative and set M_(reverse pi)=ΘM_pi, the physical antipodal complement+reverse path. This is a legitimate subpath of the same-root reversed full geodesic. The common two-window color q(pi)∈F2 then satisfies
+  q(reverse pi)=1-q(pi),
+so the real path witness's monochromatic COLOR is a genuine signed ONE-BIT Tucker label.
+
+**THEOREM 1 (unconditional color-opposed genuine Tucker pair).** Put k=floor((n-2)/2). For EVERY such equivariant mono-four selector, there exist TWO ACTUAL endpoint-opposed full x-geodesics P=(x,pi), Q=(x,sigma) and a proper prefix support S with
+  k <= |S| <= n-k,
+such that
+(a) the full P,Q use precisely S as their first |S| direction sets, and therefore meet at the SAME physical intermediate cube vertex y=x XOR S at a nearly central rank;
+(b) their selected actual mono-four geodesic subpaths M_pi,M_sigma have OPPOSITE genuine ordered-three-face colors, q(pi)=1-q(sigma);
+(c) P,Q are not a tautological antipodal-reversal pair, since no common proper permutohedron face contains pi together with reverse pi.
+
+**Proof.** Apply the proved relative-index OUTER-FACET localization lemma to X=K_x with d=n-3 and one odd scalar label f(pi)=(-1)^{q(pi)}. Let O_k be the union of full simplices D_T indexed by supports |T|<k or |T|>n-k. Its equivariant nerve is the poset of outer nested supports of dimension at most 2k-3, so w1^(2k-2)|O_k=0. Suppose the scalar PL map f extended on K_x has all its zeros inside O_k. Outside O_k it is nonzero and would yield an equivariant map to S^0, killing w1 there. The relative cup product would force w1^(2k-1)=0 on all K_x. But 2k-1<=n-3 by the chosen k, contradicting w1^(n-3)!=0. Hence f has some zero z outside O_k. Its minimal supporting simplex contains two vertices with opposed genuine mono-four color bits, and because it lies outside O_k, those orders share an INNER proper prefix support S of rank k..n-k. All corresponding full paths are literal rooted physical cube geodesics, proving (a)-(c). QED.
+
+**THEOREM 2 (entire physical root-square packet, odd n>=11).** Fix ANY square of FOUR physical cube roots x1,x2,x3,x4. Let K_X be the team's genuine endpoint-opposed t=4 packet complex, with proven w1^(n-6)!=0. At each packet vertex choose an actual monochromatic four-edge subpath of its distinguished x1-rooted full geodesic, equivariantly under simultaneous path reversal; its genuine color is an odd one-bit label. Put
+  k=floor((n-5)/2).
+The same relative-index proof forces TWO packet vertices, hence EIGHT actual endpoint-opposed full cube geodesics (one from each root in each packet), whose direction orders all have ONE COMMON prefix used support S with k<=|S|<=n-k, and whose distinguished-root selected genuine mono-four witnesses have OPPOSITE face colors. The four cut vertices form the translated actual root square. For odd n>=11, k>=3, so both sides of the cut have physically real internal three-face windows.
+
+**SCOPE AND GRAND FRONTIER.** This is a new genuine COLOR-SENSITIVE topological forcing statement: actual monochromatic four-geodesic witnesses of BOTH colors are forced inside a synchronized near-middle family of actual full geodesic paths, even if the global path color words have many switches. The selected mono-four witnesses may lie at DIFFERENT positions or centers, and their middle physical squares need not share any edge. A full NORI one-switch antipodal path is NOT extracted from opposite colors and common prefix SUPPORT alone. The next forcing task is to synchronize the mono-four witness CENTERS or ordered terminal-two-direction memories with the common root-square's splice seam, using physical adjacent-swap and centered-square certificates. This is genuinely more structured than an abstract color label, but does not prove unrestricted grand closure.

@@ -1,0 +1,24 @@
+# Every no-shared-edge bichromatic NORI hub supports reverse one-switch six-geodesic lenses
+
+# Reversible six-direction, opposite-switch geodesic lenses at every bichromatic NORI hub in the no-common-edge branch
+
+Assume active NORI n>=7 and no physical cube edge supports middle-square monochromatic certificates of both colors. Let z be any bichromatic certified-square hub with direction classes A (color0), B (color1), |A|,|B|>=2 and |A|+|B|>=n-1>=6. The mixed-middle selector fixes every centered ordered triple with its middle direction in one color class and an outer direction in the other class. The theorem nori_unique_edge_shadow_every_bichromatic_hub_has_six_edge_one_switch_20261008 guarantees one-switch six-paths at every such hub.
+
+**THEOREM (actual two-color geodesic lens).** There exist six pairwise distinct coordinate directions with set W, and two ACTUAL six-edge directed geodesics P_0 from x to y=x xor W and P_1 from y back to x, BOTH centered at the same physical vertex z (after three moves), such that
+  window-colors(P_0)=(0,0,1,1),
+  window-colors(P_1)=(1,1,0,0).
+Thus each directed path is geodesic, of one-switch type, and the two are complementary traversals of the same six-dimensional facet between the SAME two physical endpoints. The paths are not ordinary direction-word reversals; their deliberate reorderings preserve physical centered middle-selector values. The two concatenated arcs make a genuine closed twelve-edge cube walk, each half geodesic and each containing all six W directions exactly once. No claim is made about the two new three-face windows at the joining points of the closed walk.
+
+**Balanced construction.** If |A|,|B|>=3, choose ordered distinct triples a1,a2,a3∈A and b1,b2,b3∈B. Put x=z xor {b1,a1,a2} and y=z xor {b2,b3,a3}. Then
+ P_0 directions (b1,a1,a2,b2,b3,a3) have word 0011,
+ P_1 directions (a3,b2,b3,a1,a2,b1) have word 1100.
+Both reach z after three flips from their respective starts. For P_1 the four ordered triples have middle B,B,A,A, each adjacent to the opposite class, so 1100 follows. The proof for P_0 was established in the preceding hub six-path theorem.
+
+**Unbalanced construction.** Suppose |B|=2, |A|>=4. As proved by the no-common-edge obstruction, some ordered triple (a,b,c) of distinct A directions has actual centered ordered-face color0: if EVERY ordered A-triple were1, any all-A four-edge geodesic would certify a color1 middle square on incident edges already carrying A's color0. Pick a fourth A direction d and ordered B={u,v}. Put x=z xor{a,b,c}, y=z xor{d,u,v}. Then
+ P_0 directions (a,b,c,u,v,d) have word 0011,
+ P_1 directions (d,u,v,a,b,c) have word 1100.
+For P_0: first actual face (a,b,c) has color0 by choice, and other three window middles c,u,v are A,B,B with opposite-class neighbors. For P_1: first three windows have middles u,v,a with opposite-class neighbors, giving1,1,0; its final triple (a,b,c) has color0. Both paths therefore have the claimed color word and share endpoints reversed. If |A|=2,|B|>=4 swap color classes and the roles of P_0,P_1, obtaining the same statement.
+
+**Quantitative improvement.** Let p=|A|,q=|B|. In the balanced case there are at least (p)_3(q)_3 ordered choices of the P_0 orientation, each paired to a distinct P_1 path, hence at least 2(p)_3(q)_3 distinct one-switch six-paths, minimum72 when p=q=3. In the unbalanced q=2,p>=4 case, the earlier density argument gives >=(p)_3/2 actual zero-colored ordered A-triples (a,b,c). For each such triple choose d in A outside its support (p−3 choices) and an ordered pair (u,v) of B (two choices). This constructs >=(p)_4 distinct P_0 witnesses and ALSO >=(p)_4 distinct P_1 witnesses. These two order families are disjoint because P_0 begins with THREE A directions and P_1 begins with A,B,B. Thus there are >=2(p)_4 >=48 one-switch directed six-geodesics centered at z, paired into >=(p)_4 >=24 opposite-orientation six-edge lenses. Symmetrically for p=2,q>=4.
+
+**Topological/reachability import.** Each lens is a real, rooted, physically witnessed cyclic pair of one-switch length-six geodesics, using a common direction set W and connecting two *U-antipodal* physical roots x,y. It provides a concrete rank-six two-pole "color-flexible" carrier in the unique-certified-edge regime, with two complementary switch orientations. Unlike a synthetic Tucker label, the endpoints and paths are actual. For the active full n-dimensional conjecture, however, y is not necessarily the full antipode bar x when n>6 (there are unused coordinates), and the lens's two arcs individually have ONE change rather than being monochromatic; the exact reversed-two-tail monochromatic connector criterion cannot be applied directly. Establishing a compatible lift in the missing coordinate directions, or a topological transfer of these lenses among hubs, remains open.
