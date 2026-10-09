@@ -2,6 +2,10 @@ name: NORI | Refresh research artifact
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sync-nori-research-mirror.yml
 
 permissions:
   contents: write
