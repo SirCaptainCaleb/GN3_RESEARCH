@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS nori.coordination_objectives (
   "strongest_obstruction" text NOT NULL,
   "decisive_step" text NOT NULL,
   "selection_rationale" text NOT NULL,
+  "priority_rank" integer,
+  "selection_assessment" jsonb DEFAULT '{}'::jsonb NOT NULL,
   "lifecycle" text DEFAULT 'proposed'::text NOT NULL,
   "truth_status" text DEFAULT 'open'::text NOT NULL,
   "reopening_condition" text,
@@ -368,8 +370,8 @@ select jsonb_build_object(
  'active_objectives',(select coalesce(jsonb_agg(jsonb_build_object(
   'id',id,'target',target_statement,'relevance',relevance,'bridge',unresolved_bridge,
   'obstruction',strongest_obstruction,'decisive_step',decisive_step,
-  'reason',selection_rationale,'revision',revision,'evidence',evidence,'state',lifecycle)
-  order by case id when 'reachability_terminal_collision' then 1 when 'full_geodesic_exchange' then 2 when 'dimension_six_extension' then 3 when 'physical_topology_extraction' then 4 when 'exterior_bit_holonomy' then 5 else 6 end),'[]'::jsonb)
+  'reason',selection_rationale,'selection_assessment',selection_assessment,'priority_rank',priority_rank,'revision',revision,'evidence',evidence,'state',lifecycle)
+  order by priority_rank nulls last,id),'[]'::jsonb)
  from nori.coordination_objectives where lifecycle in ('active','proposed')),
  'active_claims',(select coalesce(jsonb_agg(to_jsonb(t) order by t.started_at),'[]'::jsonb) from nori.coordination_tasks t where t.status='claimed' and t.lease_expires_at>now()),
  'parked_objectives',(select coalesce(jsonb_agg(jsonb_build_object('id',id,'reopening_condition',reopening_condition)),'[]'::jsonb) from nori.coordination_objectives where lifecycle='parked'),
@@ -379,7 +381,6 @@ select jsonb_build_object(
 );
 $function$
 ;
-
 -- nori.coordination_change_event
 CREATE OR REPLACE FUNCTION nori.coordination_change_event()
  RETURNS trigger
@@ -424,16 +425,26 @@ CREATE OR REPLACE FUNCTION nori.boot()
  SECURITY DEFINER
  SET search_path TO 'pg_catalog', 'nori', 'research_core'
 AS $function$
-select (
- research_core.boot('nori')::jsonb ||
- jsonb_build_object(
-  'coordination',nori.coordination_strategy(),
-  'coordination_instructions','Read STRATEGY.md in the artifact, then refresh nori.coordination_strategy() before selecting or claiming a task. Give one precise target, consequence, remaining bridge, decisive test, and strongest alternative. Preserve boot session_id in every write.'
- )
-)::json;
+with baseline as materialized(select research_core.boot('nori')::jsonb b),
+s as materialized(select nori.coordination_strategy() v)
+select (baseline.b || jsonb_build_object(
+ 'coordination',jsonb_build_object(
+  'freshness',s.v->'freshness',
+  'priority_bridges',(select coalesce(jsonb_agg(jsonb_build_object(
+   'id',x->>'id','rank',x->'priority_rank','state',x->>'state',
+   'bridge',x->>'bridge','next_test',x->>'decisive_step')
+   order by (x->>'priority_rank')::integer),'[]'::jsonb)
+   from jsonb_array_elements(s.v->'active_objectives') x),
+  'active_claims',(select coalesce(jsonb_agg(jsonb_build_object(
+   'id',x->>'id','objective',x->>'objective_id','role',x->>'role',
+   'question',x->>'question','lease_expires_at',x->>'lease_expires_at')),'[]'::jsonb)
+   from jsonb_array_elements(s.v->'active_claims') x),
+  'recent_strategy_change_count',jsonb_array_length(s.v->'recent_strategic_updates')
+ ),
+ 'coordination_instructions','Read STRATEGY.md then query coordination_strategy() for full evidence and current changes. Select and claim an exact decisive question; record consequence, residual bridge and strongest alternative. Use the boot session_id for every write.'
+))::json from baseline cross join s
 $function$
 ;
-
 -- public.research_mirror_context
 CREATE OR REPLACE FUNCTION public.research_mirror_context(p_schema text, p_kind text, p_arg text DEFAULT NULL::text)
  RETURNS jsonb
@@ -498,3 +509,33 @@ REVOKE EXECUTE ON FUNCTION public.research_artifact_publish_schema(text,bigint,t
 REVOKE EXECUTE ON FUNCTION public.research_mirror_tree_paths(text,integer,integer) FROM PUBLIC, anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.research_artifact_publish_schema(text,bigint,text,text,text,text,text,bigint,text,bigint) TO service_role;
 GRANT EXECUTE ON FUNCTION public.research_mirror_tree_paths(text,integer,integer) TO service_role;
+
+-- nori.coordination_prioritize
+CREATE OR REPLACE FUNCTION nori.coordination_prioritize(p_session text, p_objective_id text, p_expected_revision integer, p_priority_rank integer, p_assessment jsonb, p_selection_rationale text)
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+ SET search_path TO 'pg_catalog', 'nori', 'research_core'
+AS $function$
+declare v_row nori.coordination_objectives%rowtype;
+begin
+ if not exists(select 1 from research_core.sessions where public_id=p_session and project_schema='nori') then raise exception 'invalid session'; end if;
+ if p_priority_rank not between 1 and 100 or nullif(btrim(p_selection_rationale),'') is null then raise exception 'priority and decision rationale required'; end if;
+ if not(p_assessment ?& array['mathematical_relevance','tractability','information_gain','reuse','expected_effort','active_overlap','strongest_alternative']) then
+  raise exception 'selection comparison requires all seven dimensions';
+ end if;
+ update nori.coordination_objectives
+ set priority_rank=p_priority_rank,selection_assessment=p_assessment,selection_rationale=p_selection_rationale,
+ updated_session=p_session,updated_at=now(),revision=revision+1
+ where id=p_objective_id and revision=p_expected_revision
+ returning * into v_row;
+ if not found then raise exception 'objective priority version conflict for %',p_objective_id; end if;
+ perform nori.coordination_publish_update(p_session,'priority',array[p_objective_id],'[]'::jsonb,
+ p_selection_rationale,'Explicit selection comparison revises task priority',
+ 'Rank '||p_priority_rank,coalesce(v_row.evidence,'{}'::jsonb),null);
+ return to_jsonb(v_row);
+end $function$
+;
+
+REVOKE ALL ON FUNCTION nori.coordination_prioritize(text,text,integer,integer,jsonb,text) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION nori.coordination_prioritize(text,text,integer,integer,jsonb,text) TO service_role;
