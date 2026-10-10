@@ -18,6 +18,7 @@ Old IDs resolve through `nori.historical_item(old_id)`, `nori.historical_find(qu
 4. `nori_manuscript_first_search_current_compositions` — default search over live Article/Section/Subsection composition text, overview and Toolkit.
 5. `nori_expose_manuscript_read_search_status_and_exact_composition_audits` and `nori_fix_exact_manuscript_audit_provenance_insert` — manuscript reads, versioned audit records, startup status.
 6. `nori_read_legacy_id_redirects_to_committed_github_sources` — historical IDs resolve from ordinary read without returning to active search.
+7. `nori_remove_legacy_chores_from_manuscript_worker_startup` — removes editorial chore notices and claim APIs from NORI worker startup; manuscript auditing remains voluntary and versioned.
 
 The earlier coordination system was retired separately; no task claims, leases, checkpoints or rankings remain.
 
@@ -42,3 +43,5 @@ select count(*) from nori.nodes where type='item'; -- 0
 ```
 
 New mathematical writing uses `nori.publish_subsection(session,subsection_id,body,expected_composition_version,source_note)`. No publication is required after an inconclusive research session. Do not run `boot()` again while continuing an existing NORI conversation.
+
+The successful final manuscript-only artifact build was GitHub Actions run `38030865336`, artifact `11661988124` (snapshot revision `1077`), with eight assembled manuscripts, 53 Subsection compositions, no Item files, and `KNOWN_OBSTRUCTIONS.md` plus `WORKER_PROMPT.md`.
