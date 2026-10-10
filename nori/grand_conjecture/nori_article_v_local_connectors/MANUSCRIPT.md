@@ -1,60 +1,18 @@
 # Article V — Local connectors and exchange geometry
 
-## Article synopsis and main argument
-
-# Certified connectors and extremal geodesic exchanges
+## Article setting and orientation
 
 Let c be a binary coloring of actual ordered three-faces of Q_n with c(bar F,rev pi)=1-c(F,pi). A k-edge direction-distinct cube geodesic has k-2 ordered-face window colors; call it good when there is at most one change. We study genuine local monochromatic connectors and global consequences of choosing a maximal good path.
 
-## Dead edges force transverse monochromatic geometry
-
 A physical cube edge is live if some monochromatic four-edge geodesic traverses it, and dead otherwise. Let e={z,z xor e_i} be dead. The dead-edge rigidity theorem asserts that every ordered physical three-face through either endpoint whose free directions avoid i has one common color q, independent of their direction order. Accordingly choose any k distinct directions avoiding i, with 3<=k<=min(n-1,6), and root their k-edge path so an endpoint of e lies in its central window overlap. Every length-three window then contains that vertex and has color q. This gives genuine monochromatic six-edge paths through dead-edge endpoints when n>=7.
 
-For n>=8, each eight-dimensional coordinate facet containing e inherits a dead edge. The dimension-eight dead-edge bootstrap supplies a full good eight-edge path inside that facet. Appending the remaining n-8 unused coordinates creates at most n-8 additional color changes, giving a full n-edge path with at most n-7 changes. This is a global quantitative bound conditional on a dead edge.
-
-## Bichromatic diamonds and the seam formula
-
-Suppose two monochromatic four-edge geodesics of opposite colors run between the same roots along two distinct orders of a four-direction support. Appending a fresh direction e gives one new ordered three-face window for each candidate path. These cap windows may be different orders of the same physical face, so their colors are separately constrained rather than dictated by the original monochromatic runs. Under appropriate maximality the forbidden extensions yield precise opposite-color cap equations.
-
-Now take two full antipodal geodesics rooted at x whose prefixes of length ell use the same set S. Both reach the physical vertex y=x xor S. Every choice of either prefix with either complementary suffix is a genuine full geodesic. If a prefix ends (u,v) and a suffix starts (w,t), their concatenation has exactly two new seam windows,
-c(F_y({u,v,w});(u,v,w)) and c(F_y({v,w,t});(v,w,t)).
-All other windows lie strictly inside the original prefix or suffix. Thus an attempted monochromatic two-tail splice reduces to two actual physical color checks. Connector abundance or a midpoint crossing is not sufficient until these checks are certified.
-
-## Longest good paths have forced two-sided walls
-
-Assume the grand conjecture fails and choose globally longest good partial geodesic P, length k<n, with ordered word q^s r^t, where q≠r. It must have exactly one change: appending any unused direction to a monochromatic P would still be good. Let its initial pair be (alpha,beta) and last pair (a,b). For each unused d, the physical appended cap (a,b,d) has color q, and the prepended cap (d,alpha,beta) has color r. Otherwise one extension remains good. Both extensions therefore have two changes, with words q^s r^t q and r q^s r^t. Antipodal reversal transfers these walls to the opposite cube roots.
-
-A separate globally longest q-monochromatic path forces opposite-corner q-colored three-edge fans, indexed by all missing directions. Pairwise merged roots form a Johnson graph on two-subsets of missing directions. Their first-window colors can be prescribed independently in legal physical colorings, explaining why the root geometry alone gives no global merge. Nevertheless a seam direction with two certified q windows forces an entire row of monochromatic four-edge opposite-corner branches by maximality: otherwise a longer monochromatic path would exist.
-
-Swapping adjacent travel directions preserves every physical three-face window except at most four consecutive positions. This sharply localizes the certificate check for exchanges. The missing global lemma is a terminating exchange rule or a connector selection theorem that forces one full good path from the two-sided walls and genuine cap geometry.
+*Full Article composition: [source manuscript](../nori_article_v_local_connectors.md).*
 
 ## Local monochromatic connectors, certified squares, and dead-edge rigidity
 
-# Certified squares, dead-edge rigidity, and monochromatic hubs
-
 A physical cube edge is called *live* if some genuinely monochromatic four-edge geodesic traverses it, and *dead* otherwise. These notions depend on actual ordered-three-face colors, not merely on an edge shadow assigning one arbitrarily selected color to each edge. Under NORI antipodal-reversal oddness, certified short paths organize into antipodally related physical root squares, and dead edges exhibit strong local rigidity.
 
-## Local rigidity converts missing certificates into long ones
-
-**Theorem 1 (dead-edge hub lemma).** Let \(n\ge7\). If an edge \(e=\{z,z\oplus e_i\}\) is dead, there is a bit \(t\) such that at either endpoint \(h\) of \(e\), every ordered three-face through \(h\) with free triple avoiding direction \(i\) has color \(t\). Consequently \(h\) lies on monochromatic six-edge geodesics in any chosen six distinct directions avoiding \(i\), with its position among their vertices chosen so every three-direction window contains \(h\).
-
-**Proof.** If two such local ordered faces of different colors met through the same endpoint in an admissible four-move gallery passing through \(e\), a cyclic five-direction exchange would supply a monochromatic four-edge witness traversing \(e\), contradicting deadness. Propagating this constraint around the three-face incidence links gives a common bit \(t\) for all triples avoiding \(i\). Choose six other directions \(p_1,\ldots,p_6\) and any root \(h\oplus\{p_1,p_2,p_3\}\); the directed geodesic through \(h\) after three moves has each consecutive three-window spanning \(h\). Every such window has color \(t\), so the full six-move word is monochromatic. \(\square\)
-
-For \(5\le n\le7\), a similarly placed spanning path already yields the requested zero- or one-switch antipodal geodesic. In larger dimensions the six-move hub is a certified local component, not by itself a full-dimensional solution.
-
-## Geometry of the certified root-square carrier
-
-The dead edges form a matching: if two adjacent cube edges were both dead, their common physical three-face exchange links would force one of them into a monochromatic four-geodesic. Accordingly every antipodal path has live-edge opportunities, and the set of completely four-geodesic-covered roots separates some dead-edge regions. Under the ordered-face reversal law, centered five-window parity also creates physical certified squares, often in both colors; these squares form honest two-dimensional carriers with constraints on their antipodal connectivity and local degree.
-
-If a hub supports both monochromatic colors, the overlap gives a *bichromatic root diamond*: two real short path families with compatible root-square incidence, but potentially incompatible outward terminal colors. The exact two-ended cap equalities force either a short one-switch six-geodesic or a rigid mixed-color obstruction. The latter cannot be ignored when extending a short hub path to a full geodesic.
-
-## Transposition descent and near-midpoint defects
-
-Swapping adjacent directions of a full order changes only the three-window comparisons local to the exchanged directions. When a dead-edge incidence is present, the admissible swaps can be chosen not to increase total defect. Repetition yields normal forms where interior dead-edge obstacles have been eliminated and any obstruction remains near a terminal cap. This is a structural reduction, not a global one-switch theorem: a path can still have several changes in its live interior.
-
-Likewise, high-index permutation topology guarantees genuine paths through near-midpoint physical hubs, but meeting at the same hub with opposite central labels does not suffice for a one-switch splice. There are legal local root rectangles in which both original paths and both exchanges retain three changes. Each proposed repair must check both new ordered-three-face seam windows, with their correct fixed exterior bits.
-
-Thus certified squares and dead-edge rigidity give two complementary sources of control: short monochromatic geodesics in the presence of dead edges, and dense genuinely certified carriers when few are dead. The remaining closure problem is to connect their paths through valid two-window seams without accumulating further defects.
+*Full Section composition: [source manuscript](nori_local_connector_geometry.md).*
 
 ### Certified four-geodesic squares and physical edge coverage
 
@@ -273,27 +231,11 @@ The color shadow is not a substitute for the original ordered faces. Any global 
 
 ## Dead-edge rigidity and extension constraints
 
-# Dead-edge rigidity, monochromatic hubs, and facet lifting
-
 Fix a binary coloring of ordered physical three-faces of Q_n. A physical cube edge is certified when some genuine monochromatic four-edge geodesic traverses it. Call an edge dead if no such geodesic exists. The following rigidity holds even without antipodal oddness.
-
-## Rigidity around a dead edge
 
 Let e={z,z xor e_i} be dead. The dead-edge rigidity theorem forces a color q for all ordered physical three-faces through either endpoint whose three free directions avoid i, independently of their ordering. Consequently, any directed path of length 3<=k<=min(n-1,6) through one endpoint that uses k distinct directions avoiding i is monochromatic whenever that endpoint occurs at a vertex position j satisfying k−3<=j<=3 (with the usual endpoint truncations). Indeed every consecutive three-face window along the path contains that vertex and has its free directions outside i, so each has color q. In particular for n>=7, arbitrary six-direction orders avoiding i can be rooted to pass through a dead-edge endpoint and yield genuine monochromatic six-edge geodesics.
 
-This exhibits the tradeoff: failure of a local four-edge connector forces extensive monochromatic rigidity on transverse faces. The conclusion concerns actual physical faces; exterior bits are fixed by the chosen common hub.
-
-## Facet-local amplification
-
-Suppose n>=8 and e is dead. Let H be any coordinate 8-face containing e. The restriction of the coloring to H still has e dead: every four-edge witness in H would also be a witness in Q_n. Applying the established dimension-eight dead-edge polarity bootstrap inside H gives a full antipodal 8-geodesic with at most one window-color change. Its six windows are physical windows of the ambient coloring.
-
-Order the remaining n−8 unused directions after this eight-edge path. The extension remains a full ambient geodesic and introduces at most n−8 additional windows, hence at most n−8 additional color changes. The resulting global switch count is at most 1+(n−8)=n−7. This is a conditional all-dimensional quantitative consequence of a single dead edge, rather than full one-switch closure.
-
-The general hub-extension results further constrain how a collection of certified middle edges may be lifted across facets. Each extension must keep the actual fixed exterior coordinates and evaluate the new ordered windows; a local monochromatic hub need not persist as a globally monochromatic full path without this boundary control.
-
-## Exact role in the global argument
-
-Dead-edge rigidity and certified-edge density split the problem into two regimes: a dead edge yields transverse monochromatic paths and an eight-face good seed; the complementary live-edge regime supplies abundant certified local four-geodesics. The outstanding step is to synchronize these seeds or certificates across complementary supports with compatible root and terminal windows. The present theorems give physical local forcing and a global switch bound, while preserving the distinction between a long monochromatic partial path and a full antipodal one-switch geodesic.
+*Full Section composition: [source manuscript](nori_connector_dead_edge_geometry.md).*
 
 ### Dead-edge hub rigidity and forced short monochromatic geodesics
 
@@ -436,31 +378,11 @@ Facet-level success is not synonymous with full-dimensional success. Where the l
 
 ## Root hubs, midpoint witnesses and terminal caps
 
-# Bichromatic root diamonds and certified seam repairs
-
 Let c color actual ordered three-faces of Q_n. A monochromatic four-edge geodesic is witnessed by its two overlapping ordered three-face windows. A bichromatic hub is a cube vertex supporting such genuine connectors in both colors. Two questions then arise: which endpoint caps does a hub force, and when can two paths through the same hub be spliced without introducing additional changes?
-
-## Same-root opposite-color diamonds
 
 Suppose x and y are cube vertices at distance four and there are monochromatic geodesics P_0 and P_1 from x to y with direction orders (c,a,b,d) and (a,c,d,b), of colors 0 and 1 respectively. Let e be an unused coordinate. Appending e to either path produces a genuine five-edge geodesic, with two original windows of constant color and one new terminal window. Both new windows lie in the same actual three-face through y, with free set {b,d,e} but with distinct orders (b,d,e) and (d,b,e). Their colors are independent unless a physical reversal relation actually identifies their orbits. The diamond therefore provides two candidate continuations with explicit terminal-color tests, not an automatic common monochromatic extension.
 
-Under additional global maximality assumptions, failures of both continuations force the corresponding ordered-cap colors to be opposite to their original path colors. Such identities can feed a root exchange, provided the newly exposed starting and terminal windows are checked in the same manner.
-
-## Four-way splicing at a common physical midpoint
-
-Let P and Q be full antipodal geodesics from the same root x, whose first ell used-coordinate sets agree, where 3<=ell<=n−3. Both paths reach the identical midpoint y after ell steps, and both suffixes traverse the complementary coordinate support. Hence any of the four choices of prefix from P or Q and suffix from P or Q yields a genuine full antipodal geodesic: no direction is repeated.
-
-Write a chosen prefix A with last two directions (u,v) and a chosen suffix B with first two directions (w,t). The actual window-color word of AB consists, in order, of the interior three-windows of A, followed by
-
-c(F_y({u,v,w});(u,v,w)),  c(F_y({v,w,t});(v,w,t)),
-
-and then the interior windows of B. This follows by listing consecutive triples of the concatenated direction word; exactly two triples straddle the seam. The two displayed windows are physical faces at the common midpoint, so root identification is exact.
-
-Thus selecting a prefix and suffix whose interior words each have the desired constant phase leaves exactly two independently checkable seam colors. A monochromatic hub through y may repair both when its certified edge geometry matches the ordered pairs. Merely knowing that P and Q cross at y, or have balancing topological labels, does not settle those seam colors.
-
-## Closure obligation
-
-The four-way splice lemma converts a topological or counting coincidence into a finite set of physical seam checks. The opposite-color diamond supplies locally rich candidates but can be blocked by ordered-cap colors on shared physical faces. A global connector theorem must force one successful choice across a compatible family of roots or cut positions. This is the precise interface between local bichromatic hub abundance and full one-switch antipodal extraction.
+*Full Section composition: [source manuscript](nori_connector_root_hubs.md).*
 
 ### Bichromatic root diamonds and mixed terminal cap obstruction
 
@@ -857,36 +779,11 @@ The explicit bad rectangles show that a common midpoint and opposite central col
 
 ## Maximal good paths and snake exchanges
 
-# Maximal geodesics, endpoint blockers, and snake exchanges
-
 Let c be a binary coloring of physical ordered three-faces of Q_n satisfying c(bar F,rev pi)=1-c(F,pi). A direction-distinct k-edge path from x is a geodesic; its k-2 consecutive ordered-face colors are its window word. Call the path good when this word has at most one change. We establish the extremal consequences of a hypothetical failure of full antipodal good-path closure, then compare maximal monochromatic snakes.
-
-## Longest good paths have two oppositely colored end walls
 
 Assume no full good path exists. Let P=(p_1,...,p_k) from x to y maximize k among good paths over all cube roots and direction orders. We have k<n. For k>=4 write its window word q^s r^t, with positive s,t and q≠r, and put T=[n]\S, S={p_j}. Such a two-phase description is necessary: if P were monochromatic, appending any d in T would introduce one window and still produce a good path, contradicting maximality.
 
-Set a=p_(k-1), b=p_k, alpha=p_1, beta=p_2. For every d in T,
-c(F_y({a,b,d});(a,b,d))=q,
-c(F_x({d,alpha,beta});(d,alpha,beta))=r.
-Indeed the appended color must differ from the final r, while the prepended color must differ from the first q. Prepending uses starting root x xor d, so its remaining windows are literally the original faces of P. Thus extension at either end produces precisely two color changes, q^s r^t q or r q^s r^t. Antipodal reversal makes the corresponding incoming windows at bar y color r and those at bar x color q. This is a two-ended physical blocker theorem for all globally longest good paths.
-
-## Monochromatic endpoint snakes
-
-Independently let P=(u_1,...,u_(k-2),a,b) be a globally longest q-monochromatic path with k<n and used set S; write T=[n]\S and m=|T|. Every unused d has terminal cap c(F_y({a,b,d});(a,b,d))=1-q. Antipodal reversal supplies a q-monochromatic three-edge path (d,b,a) ending at bar y, with starting root h xor d, where h=bar y xor {a,b}. Consequently the m first-level roots form a physical cube star. For every pair d,e in T there are two actual four-edge paths (d,e,b,a) and (e,d,b,a) rooted at h xor {d,e}. Their last ordered three-face windows already have color q. Their respective first windows have colors c(F_h({b,d,e});(d,e,b)) and c(F_h({b,d,e});(e,d,b)). This gives an exact Johnson J(m,2) configuration of potential merging roots: the roots are indexed by unordered two-subsets, with distance two corresponding to Johnson adjacency. The first-window bits may be assigned independently in legal reversal-odd physical colorings, so the geometry alone forces no monochromatic merge.
-
-For any A subseteq T, let r_A=h xor A. A q-monochromatic incoming path with direction order consisting of A followed by (b,a) witnesses that A is in the incoming snake family. The family contains every singleton and is accessible by deleting the first direction of a witness; it is not automatically a downward-closed family. Reversing antipodally identifies these witnesses with (1-q)-monochromatic paths from y beginning (a,b). The distinguished top root is r_T=x xor {a,b}. This is the only rank at which the root agrees with the translated original path in the standard complementary reversed-two-tail extraction.
-
-## A conditional row-merging theorem
-
-Suppose the q-monochromatic P above is globally longest of its color, k>=4, and |T|>=2. Put v=u_(k-2), w=u_(k-3), t=y xor {a,b}, and let alpha be the color of the genuine (w,v,b) seam after replacing the last pair (a,b) by b. For d in T let beta_d color the corresponding (v,b,d) seam. If alpha=beta_d=q, then for each e in T\{d} the path (u_1,...,u_(k-2),b,d,e) has all preceding windows q and final window gamma_de=c(F_t({b,d,e});(b,d,e)). Its length k+1 contradicts maximality if gamma_de=q; hence gamma_de=1-q. Antipodal reversal gives c(F_h({b,d,e});(e,d,b))=q. Together with the forced q-colored terminal (d,b,a) window, the actual four-edge path (e,d,b,a) from h xor {d,e} to bar y is monochromatic q. One admissible seam direction therefore certifies m-1 complete merge branches.
-
-If instead alpha=q and every beta_d=1-q, consider the remaining seam (v,b,a). When it has color q, swapping the final two directions gives another q-monochromatic k-edge path with the same endpoints. When it has color 1-q, the shortened monochromatic prefix ending in b has a blocked terminal fan including a and all unused directions. This supplies a precise exchange alternative; maximality of the shortened prefix is an additional condition for iteration.
-
-## Locality of adjacent direction exchanges
-
-Swapping consecutive directions p_i,p_(i+1) preserves the root, endpoint and support. The prefix vertices coincide through step i-1 and from step i+1 onward, so every physical ordered three-face window beginning outside [i-2,i+1] stays identical. Thus only four consecutive window colors and their boundary comparisons require recertification. Conversely, there exist legal reversal-odd colorings in every n>=5 for which every insertion of a single missing direction into a specified near-spanning good word is bad. Any successful maximal-path argument must therefore prove progress using a family of genuine reroutings or a compatible complementary-support witness.
-
-The open global step is a terminating exchange or equivariant incidence theorem for these physically rooted path families. The endpoint blocker laws, Johnson roots, and adjacent swaps provide exact inputs to such a theorem; none individually implies a full one-switch antipodal geodesic.
+*Full Section composition: [source manuscript](nori_maximal_geodesic_exchanges.md).*
 
 ### Maximal geodesic blockers and snake exchanges
 

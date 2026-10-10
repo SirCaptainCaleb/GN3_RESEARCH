@@ -1,40 +1,16 @@
 # Article III — Monochromatic reachability and antipodal splicing
 
-## Article synopsis and main argument
-
-# Complementary reachability and antipodal extraction
+## Article setting and orientation
 
 Let c be a reversal-odd coloring of ordered physical three-faces of Q_n. A geodesic of length k has k-2 consecutive ordered-window colors. It is monochromatic when this word is constant, and good when the word changes at most once. The central question is to extract a full good path from two genuinely monochromatic branches whose coordinate supports are complementary.
 
-## Reversed-two-tail criterion
-
 Fix an ordered terminal pair J=(a,b) and D=[n] without {a,b}. For a cube root x, define R_J(x) as the family of supports U subset D for which some monochromatic direction-distinct path starts at x, uses precisely U and then the final ordered directions (a,b). The monochromatic color is existential. The exact reversed-tail extraction theorem states that a complementary pair U in R_(a,b)(x) and D without U in R_(b,a)(x), from the same root, yields a full antipodal geodesic with at most one change.
 
-The physical terminal order matters. Ordinary concatenation of arbitrary monochromatic three-window paths creates two new ordered windows at the seam, and the colors of those windows are not determined by the two interior monochromatic colors. In the reversed-two-tail construction, the actual common root, complementary supports, and reversed terminal pairs provide the special face identifications that make extraction valid. Thus a topological coincidence of support labels is useful precisely when it retains these data.
-
-## Accessibility and state carriers
-
-For an undirected edge coloring, let E_q(x,S) assert existence of a q-monochromatic geodesic from x with direction support S. For nonempty S, deleting its first direction proves
-
-E_q(x,S) iff there exists a in S such that c({x,x xor e_a})=q and E_q(x xor e_a,S without {a}).
-
-The converse prepends the edge. The union E_0 union E_1 is accessible under deletion of at least one direction, but need not be a Boolean downset. Its collision with the same-root complementary-support transform is equivalent to a one-switch antipodal edge geodesic. Under antipodal oddness, the standard rotation converts such an existential one-switch edge witness into a monochromatic antipodal witness.
-
-Root-endpoint states (x,y), ranked by the number of differing coordinates, admit covers by extending either endpoint in an unused direction. Every monochromatic cover-chain from a diagonal state is an actual monochromatic geodesic. Coordinatewise the order complex is a circle, so the full state complex triangulates an n-torus, with restricted equivariant index. Barycentric reachability carriers also encode exact targets: the center of the support face D lies in the simplex complex genuinely witnessed by q-paths from x exactly when x can reach x xor D monochromatically. Nestedness forces the carrier simplex to contain both empty and D supports.
-
-## Signed profile topology
-
-For NORI use label pairs (J,U), and let the involution send (J,U) to (rev J,D without U). At each root x retain only labels of actual monochromatic witnesses. Their signed nerve has two complete shores because every three-edge path is automatically monochromatic. Mixed shore intersections at distinct roots can form equivariant four-cycles even under failure of the grand conjecture. The missing same-root diagonals are exactly the desired complementary-terminal coincidences.
-
-A reduced two-ended path memory records the two endpoints, first and last direction pairs, and switch-state information. At rank six distinct histories can share one such memory state, so a quotient-level intersection must be lifted using actual seams and roots. This identifies the exact gap: a topological theorem must force a diagonal signed-root intersection with complementary reversed terminal memory, rather than a generic equivariant label coincidence.
+*Full Article composition: [source manuscript](../nori_article_iii_reachability.md).*
 
 ## Doubling, complementary reachability, and geodesic splicing
 
-# Complementary monochromatic reachability and two-window splicing
-
 Write \(c(F,\pi)\in\mathbb F_2\) for an antipodal-reversal-odd coloring of physical ordered three-faces of \(Q_n\), so \(c(\bar F,\operatorname{rev}\pi)=1+c(F,\pi)\). Any directed geodesic has its actual consecutive three-face colors. A monochromatic directed geodesic is one whose entire window word has a constant bit, of either color. The difficulty with joining arbitrary monochromatic branches is that their junction creates two new ordered-three-face windows.
-
-## The exact two-tail extraction theorem
 
 For two distinct directions \(a,b\), let \(D=[n]\setminus\{a,b\}\). Define the *color-free terminal reachability family*
 \[
@@ -47,55 +23,7 @@ For two distinct directions \(a,b\), let \(D=[n]\setminus\{a,b\}\). Define the *
 \]
 The monochromatic bit is deliberately forgotten; the ordered two-direction terminal memory is retained.
 
-**Theorem 1 (exact grand equivalence).** A full antipodal geodesic with at most one ordered-three-face color change exists if and only if for some common root \(x\), some ordered pair \((a,b)\), and nonempty complementary supports \(U,V\subseteq D\),
-\[
-U\sqcup V=D,\qquad
-U\in\mathcal R_{(a,b)}(x),\quad
-V\in\mathcal R_{(b,a)}(x).
-\tag{1}
-\]
-
-**Proof.** Suppose (1) holds, and choose two monochromatic \(x\)-rooted witnesses with direction words
-\[
-A=(u_1,\ldots,u_s,a,b),\qquad
-B=(v_1,\ldots,v_t,b,a),
-\]
-of colors \(q,r\), respectively. Antipodal reversal of \(B\) begins at
-\[
-\overline{x\oplus(V\cup\{a,b\})}=x\oplus U,
-\]
-has direction word \((a,b,v_t,\ldots,v_1)\), and has all window colors \(1+r\). Retain the first \(s\) moves of \(A\), ending at \(x\oplus U\), and then follow this reversed \(B\). The concatenation is a full path changing each coordinate once. Its first \(s\) ordered-face windows are precisely those of \(A\), and its last \(t\) are precisely those of the reversed \(B\). Since \(s+t=n-2\), these blocks exhaust every window and have word \(q^s(1+r)^t\), containing at most one change.
-
-Conversely, let \(P\) be a good full order \((p_1,\ldots,p_n)\) from root \(x\). Choose a cut between positions \(s\) and \(s+1\) in the \(n-2\) window word where both nonempty sides are constant; if \(P\) is monochromatic any interior cut works. Set \(a=p_{s+1},b=p_{s+2}\), \(U=\{p_1,\ldots,p_s\}\), and \(V=\{p_{s+3},\ldots,p_n\}\). The initial \((s+2)\)-move subpath with terminal directions \((a,b)\) is monochromatic, witnessing \(U\in\mathcal R_{(a,b)}(x)\). Reversing and antipodally complementing the terminal subpath gives an \(x\)-rooted monochromatic witness ending in \((b,a)\) with support \(V\). These supports are nonempty, disjoint, and complementary. \(\square\)
-
-The proof works for ordered \(k\)-faces with a common terminal memory of \(k-1\) directions. The two-tail overlap (1) is therefore a faithful, color-free target for a topological or combinatorial proof of NORI.
-
-## Why direct cube doubling requires care
-
-Let \(b\) be any binary coloring of ordered three-faces of \(Q_n\), and introduce a new coordinate \(g\). On faces omitting \(g\), color the lower facet by \(b(F,\pi)\) and the upper by
-\[
-1+b(\bar F,\operatorname{rev}\pi).
-\]
-Choose values on \(g\)-containing faces in complementary antipodal-reversal pairs. This defines a legal NORI coloring of \(Q_{n+1}\). The reversal and physical complementation in the upper formula are both necessary.
-
-Suppose \(b\) is reversal-blind, \(b(F,\operatorname{rev}\pi)=b(F,\pi)\), and a monochromatic full doubled geodesic crosses \(g\) once. After decoding its lower and upper portions into a full path in \(Q_n\), the windows lying completely on the two sides have constant complementary colors. At their splice exactly two three-direction windows remain uncontrolled. With long flanks the resulting word may be
-\[
-(1+q)^{\,t},z_1,z_2,q^{\,s},
-\]
-which can have three changes, for example when \((z_1,z_2)=(q,1+q)\). Without reversal-blindness even the decoded upper-flank colors need not be controlled. Thus the direct edge-color doubling argument does not automatically establish the ordered-three-face NORI conjecture. This is a precise two-window obstruction, not a counterexample to the grand assertion.
-
-## Codimension-two cap rigidity
-
-Fix a set \(U\) of \(n-2\) directions, with omitted directions \(a,b\), and a projected root \(r\) on \(U\). For \(i\in U\) define physical cap bits
-\[
-A_i=c(F(r;\{a,b,i\}),(a,b,i)),\qquad
-B_i=c(F(r;\{a,b,i\}),(b,a,i)).
-\]
-Because \(a,b\) are free on those physical faces, these bits are the same across the four parallel \(U\)-facets.
-
-If a monochromatic \(U\)-spanning geodesic of color \(q\) begins with direction \(i\) and ends with \(j\), inspect completions by placing the two missing directions in either order at the beginning or end. Under hypothetical failure of grand closure, all these completions must fail. The first cap must then be stable and agree with \(q\): \(A_i=B_i=q\); the terminal cap must be stable and opposite: \(A_j=B_j=1+q\). Otherwise one of the full completions has at most one change. Accordingly, the *color-free* graph on \(U\) whose edges join witnessed first and last directions in any of the four facets must be bipartite across the stable cap classes. An odd cycle or an unstable incident direction certifies grand closure.
-
-This cap criterion is a positive extraction theorem conditional on near-spanning monochromatic witnesses. Such witnesses need not exist in a prescribed \(U\)-facet; valid NORI colorings can make the whole four-facet near-spanning memory graph empty. Hence a global proof must force either the complementary two-tail reachability coincidence (1) or sufficiently rich compatible near-spanning cores. Current local cap rigidity does not furnish that existence theorem.\n\n## Refined physical reachability\n\nThe exact two-tail closure criterion requires a common root, complementary used-direction supports, and reversed terminal two-direction memories. Monochromatic basin convexity or a Tucker label collision without those witnesses is insufficient. The new subsections establish maximal support bounds, barycentric carrier obstructions, root-profile interface conditions, and exact codimension-two cap compatibilities under this same physical extraction requirement.
+*Full Section composition: [source manuscript](nori_reachability_and_splicing.md).*
 
 ### Doubling equivalence and the two-window splice obstruction
 
@@ -440,41 +368,11 @@ The support-fiber bounds control the distribution of reachable paths but do not 
 
 ## Topological reachability spaces and extraction
 
-# Topological reachability spaces and extraction
-
 This section separates exact discrete geodesic extraction from the topology of its continuous carriers. The underlying objects are initially antipodally odd physical edge colorings, with c(bar e)=1-c(e). The ordered-three-face problem requires additional ordered terminal-memory data because joining two monochromatic branches creates two new three-face windows.
-
-## The doubled root–endpoint cube
 
 For x,y in Q_n, put S(x,y)={i:x_i≠y_i} and rank rho(x,y)=|S(x,y)|. A state (x,y) represents the endpoints of a path using precisely S. For any i outside S one may replace (x,y) by (x xor e_i,y) or by (x,y xor e_i). The respective covers prepend or append the corresponding genuine edge, and raise the rank by one. If a chain begins at (z,z) and all covers have color q, it constructs a monochromatic q-geodesic: each coordinate is used once. Conversely any monochromatic geodesic is encoded by appending its edges. A chain to rank n yields an antipodal geodesic.
 
-For each coordinate, the four endpoint-bit states form a height-one poset whose order complex is the square boundary S^1. Their product has an order-complex triangulation of (S^1)^n, the n-torus. Thus the 2n endpoint bits give an n-dimensional topological carrier with exact cover-chain path meaning. Its topology alone has limited antipodal index, so a forcing argument must use the colored reachable part and its actual incidence data.
-
-## The root–support reachability recursion
-
-For q∈{0,1}, define E_q(x,S) to mean that some q-monochromatic geodesic begins at x and uses exactly S, ending at x xor 1_S; include S=empty. For nonempty S,
-
-E_q(x,S) iff there exists a∈S such that c({x,x xor e_a})=q and E_q(x xor e_a,S\{a}).
-
-This follows by deleting the first edge, and the converse follows by prepending it. Reversal gives E_q(x,S)=E_q(x xor 1_S,S). Antipodal reversal gives E_q(bar x,S)=E_(1-q)(x,S). Root movement can also prepend an unused q-edge while retaining the terminal vertex. These are genuine geometrical covers, rather than formal implications among labels.
-
-Let E=E_0∪E_1. Define sigma(x,S)=(x,[n]\S). There is a one-switch antipodal edge-geodesic iff E meets sigma(E). Indeed a collision yields monochromatic branches from x to x xor 1_S and from x to x xor 1_([n]\S), with disjoint direction supports. Reverse the first branch and concatenate at x to obtain an antipodal geodesic with at most one color change. Antipodally odd edge colors also permit the standard rotation argument to turn this existential one-switch witness into a monochromatic antipodal witness. Equivalently there exists x whose color-free monochromatic reachable set R(x) contains both z and bar z. The same condition may be written as a common endpoint reachable monochromatically from x and bar x.
-
-## Honest Freudenthal carriers and midpoint extraction
-
-Fix x. A monochromatic geodesic with nested prefix supports S_0⊂...⊂S_k determines a simplex of the usual cubical triangulation of the support cube. Let K_q(x) be the union of simplices witnessed by actual q-monochromatic geodesics from x. The face center associated with D={i:x_i≠y_i} lies in K_q(x) precisely when some q-monochromatic geodesic joins x to y.
-
-For the forward implication, the simplex of the witness contains the empty and D prefix vertices, hence their midpoint. Conversely, if the center of the D-face lies in one witnessed chain simplex, all coordinates outside D vanish and all coordinates in D equal 1/2. Nestedness forces the extremal supports represented by positive barycentric coefficients to be empty and D: otherwise some D-coordinate stays 0 or stays 1, or some outside coordinate remains positive. Thus the same witness path reaches D. This midpoint criterion faithfully encodes target reachability without creating paths from merely convex combinations of unrelated witnesses.
-
-The candidate global argument seeks a topologically forced intersection between antipodally related honest carriers or labels. A zero of a continuous extension in the ambient 2n-cube need not belong to a discrete witnessed simplex, so an additional boundary or incidence theorem is indispensable.
-
-## Terminal profiles and equivariant nerves in NORI
-
-For active ordered-three-face colorings, fix an ordered terminal pair J=(a,b) and let D_J=[n]\{a,b}. Denote by R_J(x) the supports U⊂D_J of q-monochromatic physical geodesics from x ending in ordered directions (a,b), with color q existentially quantified. The reversed-tail splice theorem requires complementary supports U and D_J\U at the *same root*, with terminal orders J and rev J.
-
-Form signed profiles L_x of true pairs (J,U) and their formal reversed-complement profiles tau L_x. The nerve of these signed sets has all positive vertices spanning one simplex and all negative vertices spanning another: every three-edge path has just one ordered-face window and hence supplies a monochromatic singleton-support label from every root. A mixed edge between (x,+) and (y,-) witnesses compatible labels at potentially different roots. When x=y it supplies the desired reversed-tail splice. When x≠y, antipodal symmetry supplies the mirrored mixed edge; along with the two universal same-shore edges these give a genuine equivariant four-cycle, whose two same-root mixed diagonals are precisely the missing grand-closure certificates. Therefore the nerve's nontrivial low-dimensional topology can survive under hypothetical grand failure.
-
-This distinguishes the two forcing tasks. In the edge case, an antipodal collision in one uncolored R(x) is the exact extraction condition. In NORI, a collision must additionally preserve the physical terminal orders and same-root complementary supports. The present reachability carriers and signed-root nerves provide exact encodings and identifiable boundary configurations; a global coincidence theorem enforcing that strengthened compatibility remains open.
+*Full Section composition: [source manuscript](nori_reachability_topological_extraction.md).*
 
 ### Root-endpoint state torus and geodesic connectors
 
@@ -865,25 +763,11 @@ A topological coincidence in this nerve implies grand closure only when it reali
 
 ## Terminal memory and branch splicing
 
-# Terminal-memory reachability and physical seam extraction
-
 Let c be a binary coloring of ordered physical three-faces of Q_n satisfying c(bar F,rev pi)=1-c(F,pi). Every direction-distinct path of length k has an ordered color word of k-2 windows. Reversing the path at the antipodal root complements and reverses this word.
-
-## Accessible supports and their limits
 
 For an undirected edge coloring of Q_n, fix x and let R(x) be endpoints reachable from x by a monochromatic geodesic of either color. Its direction-support family A_x consists of S for which x xor 1_S belongs to R(x). Each nonempty S in A_x admits i in S with S without {i} in A_x: delete the final edge of an actual monochromatic witness. All prefixes of one witness give an entire nested support chain. The family need not contain every subset of S, since a different subset need not admit a monochromatic order.
 
-## Reversed-two-tail terminal profiles
-
-For ordered-three-face NORI, fix an ordered terminal pair J=(a,b), and put D=[n] without {a,b}. Record U subset D when a monochromatic geodesic begins at x, uses directions U and finally (a,b), with all windows referring to their actual physical faces. A second monochromatic witness from x ending in (b,a) and using the complementary support D without U is precisely the input of the proved reversed-two-tail splice criterion. The two witness colors may differ. The same physical root, complementary supports and reversed terminal order are essential: they certify the two newly formed three-face windows after rearrangement.
-
-These data define a signed profile nerve by retaining witness labels and exchanging J,U with rev J,D without U. Each sign shore is a full simplex: every three-edge path, with its single ordered-face window, is monochromatic from every root. Mixed intersections at two different roots are genuine compatibility information but are not yet same-root splice certificates. A diagonal mixed intersection gives the intended antipodal extraction.
-
-## Boundary-memory states
-
-For a genuine k-edge path P, record its endpoints, first and last two directions, terminal window colors and switch count truncated at two. Its endpoint difference records the used direction support. This state is sufficient to check admissibility of endpoint extensions only after the new physical seam windows have been evaluated. The rank-six braid construction identifies distinct histories with one reduced boundary state and thereby exhibits nontrivial incidence hidden by state compression. The corresponding physical square has to be certified with its actual paths, rather than filled combinatorially by the mere equality of state labels.
-
-A topological extraction theorem must therefore produce a profile coincidence with one common root and complementary reversed tails, and provide a physical lift of any quotient-level path. Accessibility and the braid construction supply exact constraints on this missing theorem.
+*Full Section composition: [source manuscript](nori_reachability_branch_memory.md).*
 
 ### Two-ended path memory, six-direction braids, and seam repairs
 

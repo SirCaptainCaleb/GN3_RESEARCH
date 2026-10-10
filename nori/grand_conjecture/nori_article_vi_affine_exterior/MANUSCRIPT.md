@@ -1,95 +1,18 @@
 # Article VI - Affine exterior methods
 
-## Article synopsis and main argument
-
-# Affine exterior-bit control and robust nonlinear face colorings
+## Article setting and orientation
 
 For a physical ordered three-face (F,pi), let b_j(F) be the bit fixed outside its three free coordinates. Its color may depend on all these exterior bits and on their free-direction order. In structured families, this dependence can be controlled by the starting root of a full geodesic.
 
-## Root equations for exterior-parity colorings
-
 Consider c(F,pi)=f(pi)+sum_{j outside free(F)} b_j(F) modulo two, with arbitrary direction-order function f. Fix an order p=(p_1,...,p_n) and initial root x. The j-th ordered three-window has its three free directions p_j,p_(j+1),p_(j+2), with earlier used directions at bits opposite their starting values and later unused exterior coordinates at their starting values. Hence its color is an affine function of x. The difference between consecutive window colors is affine in x as well, with the root coefficients determined by which coordinate enters and leaves the window. These equations permit exact counting of roots realizing prescribed color-change patterns in the exterior-parity class, including monochromatic full paths. Since the underlying structure is algebraic, much of this closure theory holds without global antipodal oddness.
 
-## Six-direction endpoint control
-
-For a six-move direction order (a,b,c,d,e,f), hold all root bits except u=x_d and v=x_c fixed. Its four window colors have the form (A(u),B,C,D(v)): both central ordered faces contain c,d as free coordinates and are independent of u,v, while the outer windows can depend on one of those bits each. If B≠C, a choice with at most one change exists exactly when B belongs to the image of A and C belongs to the image of D. If B=C, matching either endpoint to B is sufficient. In particular both endpoint functions being nonconstant yields a good six-edge path by choosing (B,B,C,C). On Q_6, crossed exterior sensitivity can therefore force closure along the fixed direction order.
-
-The controlled nonlinear-tail theorem starts from a full-parity baseline whose affine change map is onto, retains its clean prefix, and permits arbitrary nonlinear colors in the final two window types. The baseline provides independently adjustable root bits and a prefix-flipping involution preserving those last physical windows. Under the theorem's hypotheses at least sixteen roots realize a full good path for ordered three-faces. Such root freedom is the mechanism, rather than unrestricted arbitrary-color extension.
-
-## Exterior holonomy limits local lifting
-
-Moving a six-coordinate forcing table into a larger cube requires consistency of the fixed exterior bits. If an outside coordinate g has row bits z_1,z_2,z_4, three purported antipodal face identifications might require z_2=1-z_1, z_4=1-z_1 and z_4=1-z_2. The first two give z_2=z_4, contradicting the third. More generally a diagram of physical-face identifications imposes equality or complementation constraints on every fixed exterior coordinate; its cycle parities must be consistent. This is a genuine holonomy obstruction to naive dimensional lifting.
-
-Affine change syndromes, crossed endpoint sensitivity and nonlinear fault tolerance prove full closure in substantial physical-face coloring classes. A global proof for all legal colorings must supply a new means of coordinating exterior root bits or overcoming inconsistent local charts.
+*Full Article composition: [source manuscript](../nori_article_vi_affine_exterior.md).*
 
 ## Affine colorings, exterior-bit control, and lifting obstructions
 
-# Affine face colorings and exterior-coordinate control
-
 For an ordered three-face \((F,\pi)\), its exterior-bit vector consists of the coordinates fixed outside the free triple \(\pi\). This section isolates classes in which the dependence on those bits can be controlled algebraically, and explains why local lifting arguments must preserve their actual physical positions. The strongest general method is an explicit root-solving recurrence, which works even without antipodal oddness.
 
-## Exact root count in the exterior-parity class
-
-**Theorem (exterior-parity twist, arbitrary window length).** Fix integers 1≤k≤n, a coordinate order p=(p_1,…,p_n), and any binary function f of ordered k-tuples of distinct coordinates. For each ordered k-face (F,σ), let
-c(F,σ)=f(σ) ⊕ (⊕_{u∉free(F)} b_u(F)),
-where b_u(F) is the constant bit of coordinate u on F and ⊕ denotes addition in F_2. Then **exactly 2^k starting vertices** yield a monochromatic sequence of all n−k+1 ordered k-face windows along the antipodal geodesic with direction order p. In particular, for k=3 exactly eight starts work for **every fixed permutation**, for all n≥3, regardless of f.
-
-**Proof.** Identify starting vertex bits in p-order by x_1,…,x_n and let X=⊕_{j=1}^n x_j. At window i, the first i−1 directions have been toggled. Its color is
-w_i=f(p_i,…,p_{i+k−1}) ⊕ X ⊕ (⊕_{j=i}^{i+k−1}x_j) ⊕ ((i−1) mod 2).
-We seek w_i=t for a single t∈F_2. Put q=X⊕t. Choose q and x_1,…,x_{k−1} freely, and successively define
-x_{i+k−1}=f(p_i,…,p_{i+k−1}) ⊕ ((i−1) mod2) ⊕ q ⊕ (⊕_{j=i}^{i+k−2}x_j)
-for i=1,…,n−k+1. Every x_k,…,x_n is determined, and setting t=X⊕q verifies w_i=t at every window. Conversely, any monochromatic starting vertex has its unique t and q=X⊕t and therefore appears exactly once in this construction. The choices are injective, since the first k−1 bits are freely specified and x_k determines q. Hence exactly 2^k starting vertices work. □
-
-**Antipodal compatibility.** The coloring satisfies c(bar F,rev σ)=1⊕c(F,σ) exactly when f(rev σ)=f(σ)⊕(1+(n−k) mod2). Thus for k=3 this supplies a substantial NORI subclass, with reversal-even f in even n and reversal-odd f in odd n. The theorem also works without antipodal symmetry.
-
-**Affine rank criterion (generalization).** Suppose more generally every ordered k-face color is affine over F_2 in the outside face bits. For a fixed coordinate order p the n−k+1 window colors form w(x)=A_p x⊕b_p. If the augmented matrix [A_p | 1] has full row rank n−k+1, a monochromatic window sequence exists: solve A_px⊕t1=b_p. The exterior-parity theorem above gives a constructive proof of this rank criterion for its special coefficient matrix, and proves the stronger exact count 2^k.
-
-**Scope.** General Boolean dependence on outside face bits, and rank-deficient affine colorings, remain untreated. The grand NORI conjecture remains open.
-
-
-## Universal flippers and affine change fibers
-
-Say that a coordinate \(a\) is a *universal flipper* if toggling its exterior fixed bit complements every ordered-face color whenever \(a\) is outside the free triple. If \(V=A\sqcup B\) and every coordinate of \(A\) is such a flipper, the coloring has the factorization
-\[
-c(F,\pi)=\bigoplus_{a\in A\setminus\operatorname{free}(F)}x_a(F)
-         \oplus g(\pi,x_{B\setminus\operatorname{free}(F)}).
-\]
-Put all \(A\)-directions first in the geodesic order, followed by an arbitrary \(B\)-order, and fix the \(B\)-starting bits. If \(A=(a_1,\ldots,a_r)\), shifting the three-window from position \(i\) to \(i+1\), for \(i\le r\), gives the change indicator
-\[
-d_i=G_i+G_{i+1}+1+z_i+\mathbf1_{i+3\le r}z_{i+3},
-\]
-where \(z_i\) is the initial \(a_i\)-bit and \(G_i\) is independent of every \(z_j\). Solve backward from \(i=r\) to \(1\). This triangular system makes the map from the \(r\) root bits to the first \(r\) change indicators a bijection. The remaining indicators are precisely those on the \(B\)-geodesic. Consequently, as \(A\)-bits range freely, the change-vector fiber is
-\[
-\{\,(u,\delta_B):u\in\mathbb F_2^r\,\}.
-\]
-If the residual \(B\)-geodesic has zero changes there are \(r+1\) full good lifts; if it has one there is exactly one; if it has at least two there are none. In particular, when \(|B|\le5\), the unrestricted five-dimensional theorem yields a full good lifted order. Under NORI oddness, removing an even number of flippers retains the antipodal-reversal axiom on the residual cube, furnishing a legitimate minimum-counterexample reduction.
-
-For another affine approach, fix a full direction order \(p\) and let \(\Delta_p:\mathbb F_2^n\to\mathbb F_2^{n-3}\) be the vector of successive window-color changes as the root varies. If every window color is affine and the linear part of \(\Delta_p\) has rank at least \(n-4\), the affine image has codimension at most one. Any affine hyperplane \(\lambda\cdot z=b\) contains either \(0\) (when \(b=0\)) or a unit vector \(e_j\) with \(\lambda_j=1\) (when \(b=1\)). Thus the fixed order has a root with at most one change. A fixed bad order requires strictly lower rank.
-
-## Two independently adjustable endpoint bits
-
-For six distinct directions \(a,b,c,d,e,f\), hold all initial bits except \(u=x_d\), \(v=x_c\). The four-window word has the exact form
-\[
-(A(u),B,C,D(v)),
-\]
-because \(d\) is free in both interior windows and exterior to the first, while \(c\) is free in both interior windows and exterior to the last. If both endpoint functions toggle, independently select \(u,v\) to produce \((B,B,C,C)\), a good six-move block. In dimension six, sensitivity of the first \(abc\)-face to exterior bit \(d\) and sensitivity of the last \(def\)-face to exterior bit \(c\) can be realized simultaneously: their remaining exterior controls are disjoint. This proves the crossed-sensitivity closure criterion and yields complementary influence sparsity constraints under hypothetical failure. In larger cubes it produces a local block, with extension across other coordinates requiring additional control.
-
-## Exterior-bit holonomy
-
-Let \(S=\{a,b,c,d,e,f\}\subsetneq V\), and suppose \(g\in V\setminus S\). Consider attempting to reuse the six-geodesic forcing certificate of the dimension-six theorem inside an \(S\)-coordinate block of \(Q_V\), with the \(g\)-coordinate untraversed throughout the four consecutive length-three windows associated with each of the six orders. Each window in one such geodesic has the same fixed \(g\)-bit \(z_i\), determined by the starting vertex and by whether \(g\) occurs before or after the entire \(S\)-block.
-
-**Lemma (exterior-bit parity obstruction).** There is no choice of bits \(z_1,z_2,z_4\in\mathbb F_2\) for the first, second, and fourth rows of the dimension-six forcing table that simultaneously preserves all three face identifications used in that proof:
-(i) row 2's first \(dcb\)-window is the antipodal reversal of row 1's second \(bcd\)-window;
-(ii) row 4's first \(dcb\)-window is likewise the antipodal reversal of row 1's second \(bcd\)-window;
-(iii) row 4's last \(fea\)-window is the antipodal reversal of row 2's last \(aef\)-window.
-
-**Proof.** To be antipodal reversals in the ambient cube, the fixed exterior \(g\)-bits of two compared faces must be complements. Relation (i) forces \(z_2=1\oplus z_1\), relation (ii) forces \(z_4=1\oplus z_1\), and relation (iii) forces \(z_4=1\oplus z_2=z_1\). Thus \(z_1=1\oplus z_1\), impossible. \(\square\)
-
-**General parity principle.** Build a graph whose vertices are windows or blocks with a fixed value of a chosen outside coordinate \(g\); mark an identification edge 0 when the two windows are required to be the same ordered face, and mark it 1 when the two windows are required to be antipodal reversals. Existence of consistent \(g\)-bit assignments is equivalent to the parity label being a coboundary: every cycle must contain an even number of edges marked 1. The equivalence follows by propagating one chosen root bit along edges; consistency on cycles is necessary and sufficient. In the six-path forcing gadget, rows 1,2,4 form a triangle with three marked-1 edges, giving odd holonomy.
-
-**Precise extension obligation.** A dimension-raising use of this six-path gadget must (a) traverse at least one additional coordinate between selected comparison windows in some path, so the exterior bit changes within that path, or (b) replace at least one of the three antipodal comparisons by another valid forcing relation. Simply appending or prepending all additional coordinates to contiguous six-coordinate blocks cannot preserve the proof's face identifications. This is a limitation of this particular forcing certificate; it does not assert any obstruction to the grand conjecture for \(n\ge7\).
-
-The parity contradiction in the six-path extension is sharply local. It applies to a fixed contiguous block whose extra exterior coordinates remain untraversed. A dimension-independent proof must move such coordinates between the compared physical windows or replace some of the required antipodal face comparisons. The exact exterior-parity and universal-flipper theorems furnish broad all-dimensional positive subclasses; the holonomy obstruction diagnoses one failure of a naive induction rather than an obstruction to the NORI conjecture itself.\n\n## Affine syndromes and nonlinear exceptions\n\nFor a fixed order the change vector is affine in the root when each ordered face color is affine in exterior bits. A codimension-one image meets the radius-one Hamming ball, and the full exterior-parity recurrence gives eight monochromatic roots per order. The separate nonlinear-fault theorems allow a small exceptional coordinate set while preserving parity on all clean triples. Their scope is strictly conditional on that clean-triple hypothesis.
+*Full Section composition: [source manuscript](nori_affine_exterior_colorings.md).*
 
 ### Exterior parity colorings admit monochromatic geodesics
 
@@ -536,33 +459,11 @@ These results solve broad affine and near-affine subclasses and quantify the exc
 
 ## Nonlinear faults, exterior sensitivity and holonomy
 
-# Exterior sensitivity, nonlinear faults, and lifting holonomy
-
 A physical ordered three-face coloring may depend arbitrarily on its fixed exterior coordinate bits. For a direction word p=(p_1,...,p_n), the consecutive windows along the full rooted geodesic are functions of the starting root x; every window ignores the three free coordinates in its own ordered triple.
-
-## The six-move endpoint square
 
 For six distinct directions (a,b,c,d,e,f), fix all root bits except x_d=u and x_c=v. The four consecutive window colors have the form
 
-(A(u),B,C,D(v)).
-
-Indeed the middle windows (b,c,d) and (c,d,e) contain both c and d among their free directions, so their colors are independent of u,v. The first window (a,b,c) may depend on d but ignores c; the last (d,e,f) may depend on c but ignores d.
-
-If B≠C, a choice of u,v yields at most one change precisely when B is in the image of A and C is in the image of D: choose (B,B,C,C). If B=C, one change is achievable when at least one endpoint image contains the middle color, since the other endpoint can then contribute at most one switch. When A and D are both nonconstant, both middle colors can be matched independently. In an actual six-dimensional cube, crossed exterior sensitivity at the two opposite endpoint windows can be witnessed using disjoint remaining root bits, producing a full six-edge geodesic with at most one change.
-
-## Affine change maps and controlled nonlinear tails
-
-Consider the baseline exterior-parity coloring c_0(F,pi)=h(pi)+sum_{i outside F} x_i modulo two. Along a fixed direction order, the vector of consecutive color differences is an affine map of the root bits. In the full-parity case this change map is surjective, and fibers contain many roots with all but a selected change coordinate zero.
-
-Suppose a coloring agrees with c_0 on the first L−2 window types of one fixed direction order, where L=n−2, while its last two ordered window types may depend arbitrarily and nonlinearly on the exterior bits. The robust-tail theorem proves that at least 2^(r+1) roots give full at-most-one-switch geodesics for ordered r-faces when its prescribed affine control hypotheses hold; for r=3 this yields sixteen roots. Its proof uses surjectivity of the prefix change map and an independent root-bit involution that flips the entire clean prefix without changing the last two physical windows. The latter property is an explicit ingredient, not a consequence of arbitrary NORI symmetry.
-
-## Exterior-coordinate holonomy
-
-A forcing certificate verified within a six-coordinate cube need not preserve antipodal physical-face identifications after embedding into Q_n. Fix an outside coordinate g. If three supposed antipodal-reversal identifications between rows 1,2,4 require exterior fixed-bit relations z_2=1−z_1, z_4=1−z_1 and z_4=1−z_2, the first two yield z_2=z_4 whereas the third requires z_2≠z_4. Thus no assignment of the g-bit realizes all three physical identifications at once.
-
-More generally assign a parity requirement to each proposed identification edge in a diagram of root charts: zero for equality of fixed exterior bits and one for complementation. Realizability requires each cycle have even total parity. The six-path extension obstruction is exactly a nonzero mod-two holonomy cycle. This criterion explains why local Q_6 color equalities cannot simply be transported to arbitrary ambient dimension.
-
-Together, these results give rigorous good-path closure for controlled nonlinear perturbations, exact endpoint sensitivity tests, and a complete parity obstruction to one class of naive lifting arguments. The unrestricted problem requires either stronger root-control structure or a global method which varies the exterior charts while preserving genuine physical window identities.
+*Full Section composition: [source manuscript](nori_affine_sensitivity.md).*
 
 ### Six-move endpoint control and exterior-sensitivity rigidity
 
