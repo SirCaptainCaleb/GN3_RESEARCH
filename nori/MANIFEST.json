@@ -281,9 +281,9 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-10T05:56:22.84632+00:00",
-  "item_count": 493,
-  "mirror_format": 18,
+  "generated_at": "2026-10-10T06:20:21.837221+00:00",
+  "item_count": 0,
+  "mirror_format": 19,
   "result_count": 0,
   "schema": "nori",
   "section_versions": {
@@ -433,11 +433,11 @@
         "composed_through_revision": 4309,
         "composition_version": 10,
         "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 3,
+          "current": false,
+          "latest_subsection_no_now": 4,
           "latest_subsection_no_when_composed": 3,
           "subsections_existing_when_composed": 3,
-          "subsections_now": 3
+          "subsections_now": 4
         },
         "has_composition": true,
         "source_note": "Elevation after repartition into focused subsections: new major lemmas integrated into mathematical narrative and direct dependencies fully refreshed.",
@@ -481,8 +481,14 @@
         },
         "has_composition": true,
         "source_note": "Integrates established maximal-good-path blockers, monochromatic snake fan, Johnson merge rows, and physical adjacent transpositions.",
-        "stale": false,
-        "stale_dependencies": []
+        "stale": true,
+        "stale_dependencies": [
+          {
+            "composition_saw_version": null,
+            "current_composition_version": 1,
+            "source_id": "maximal_geodesic_blockers_and_snake_exchanges"
+          }
+        ]
       },
       "math_version": 1,
       "version": 1
@@ -648,7 +654,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1073,
+  "snapshot_revision": 1077,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -716,6 +722,25 @@
       },
       "development_version": 1,
       "section_id": "nori_reachability_branch_memory",
+      "version": 1
+    },
+    "appendix_known_obstructions_to_proposed_nori_mechanisms": {
+      "composition": {
+        "body_chars": 4567,
+        "composed_through_revision": 4680,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Curated cross-Article limitations; precise scope, proof locations, and remaining options",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
       "version": 1
     },
     "arbitrary_nonlinear_coordinate_faults_and_robust_affine_closure": {
@@ -1195,13 +1220,16 @@
     },
     "exterior_face_charts_and_fourier_transport": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 12465,
+        "composed_through_revision": 4678,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Selectively integrated two general Boolean mechanisms and the Q8 single-sentinel computational theorem with exact restricted scope",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1249,13 +1277,16 @@
     },
     "maximal_geodesic_blockers_and_snake_exchanges": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 17719,
+        "composed_through_revision": 4677,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
+          "current": true,
           "development_version_now": 1,
-          "development_version_when_composed": null
+          "development_version_when_composed": 1
         },
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Curated manuscript: four proved or verified historical items; preserves full derivations and Q7 reproducible certificate in a coherent obstruction/exchange argument",
         "stale": false,
         "stale_dependencies": []
       },

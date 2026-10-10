@@ -1,0 +1,488 @@
+# Article IV - Window methods
+
+## Article synopsis and main argument
+
+# Physical window transport and cyclic parity
+
+Let W_z(a,b,c) denote an actual ordered physical three-face of Q_n, with directions a,b,c free and other bits fixed as in z. Antipodal reversal sends W_z(a,b,c) to W_(bar z)(c,b,a) and complements its color. A consecutive pair of windows from a genuine four-edge geodesic is a physical window-shift edge; if their colors agree, the four-edge path is monochromatic.
+
+## Exact physical two-step shuttles
+
+Fix a direction i and restrict to the window-shift graph H_i in which i belongs to the common middle directions of every shift. For pairwise distinct a,b,d,i,k, the sequence
+
+W_z(a,i,b), W_z(i,b,k), W_(z xor e_k)(d,i,b)
+
+is a genuine two-edge path in H_i. The shared middle face has free directions i,b,k, so replacing its representative by one differing only in k does not change the physical face. The shuttle exchanges an outer free direction and flips a chosen exterior coordinate. Variants perform the same outer exchange without that flip.
+
+By iterating these moves, each actual window can be connected to its antipodal reversed window through an even-length H_i path linear in n. In the optimal transport theorem, the minimum length is max(6,2 ceil((n-1)/2)), for n>=5. The construction accounts separately for the exterior bits to be complemented and the exchange of outer ordered directions.
+
+## Forced monochromatic connectors
+
+An even-length path from v to its antipodal reverse has oppositely colored endpoints. If every shift changed color, even parity would force equal endpoint colors, a contradiction. Hence at least one edge along each such antipodal transport path is monochromatic, meaning its two ordered three-face windows agree.
+
+Let E_0=2^(n-2)(n-1)(n-2)(n-3), the number of edges in each middle-orientation orbit under root translations and permutations fixing i. Averaging translates of an optimal antipodal path of length L gives a lower bound of 2 ceil(E_0/L) for the total monochromatic H_i connector edges, with the two orientation classes equally represented by antipodal reversal. This forces exponentially many actual local connectors, yet their roots and direction supports may differ.
+
+## Cyclic seams and the global limitation
+
+Cyclic window-shift structures have odd cycles and associated parity/monodromy constraints. They provide complementary routes to short monochromatic seeds and average bounds on the switch defects of full geodesics. The physical shuttles also exhibit literal square cycles whose diagonals are not genuine four-edge window shifts. A topological filling using those diagonals would therefore misrepresent path incidence. Adjacent permutation exchanges can move a unique equality seam across the midpoint while both full paths remain bad, so the seam side alone is not a locally constant Tucker label.
+
+The physical transport theory supplies connected root-moving carriers and numerous certified local monochromatic windows. The global missing statement is a compatibility or gluing theorem choosing those connectors along one direction-distinct full antipodal path with at most one switch.
+
+## Cyclic window transport, seam parity, and geodesic density
+
+# Cyclic window transport and geodesic switch bounds
+
+The shift graph of physical ordered three-face windows has canonical odd five-cycles. Their binary transition parities force short monochromatic seeds, while averaging over actual rooted full orders gives a dimension-dependent bound on global color changes. The proof below retains the physical window structure and the limit of purely cyclic averaging.
+
+# Global geodesic density and cyclic root-transport bounds
+
+Local monochromatic connectors arise from cyclic five-window parity, while global geodesic switch bounds arise by averaging changes along complete coordinate orders and roots. These are distinct but complementary counting arguments: one supplies abundant short seeds, the other supplies at least one long path with controlled defect.
+
+## COLOR-FREE reachability odd-cycle obstruction and the middle Kneser graph
+
+Let c be an antipodally odd binary UNDIRECTED edge coloring of Q_n. For root x write
+\[
+\mathcal R_x=\{S\subseteq[n]:x\oplus S\in R(x)\},
+\]
+where R(x) is the color-FREE set of endpoints of monochromatic geodesics starting at x, of EITHER color. Define a graph \(\Gamma_x\) on \(\mathcal R_x\) by joining distinct supports S,T exactly when
+\[
+S\cap T=\varnothing,\qquad S\cup T=[n]\setminus\{i\}
+\]
+for some i. Thus two adjacent supports are disjoint and cover n-1 of the n coordinate directions.
+
+**Theorem (odd-cycle reachability certificate).** If \(\Gamma_x\) is nonbipartite for any root x, then c has a MONOCHROMATIC FULL ANTIPODAL GEODESIC. Equivalently, in every hypothetical counterexample, \(\Gamma_x\) is bipartite for EVERY x. This condition is expressed entirely in the uncolored reachability set R(x); it requires no colors in the definition or the topological labeling.
+
+**Proof.** Let S--T be an edge of \(\Gamma_x\). Any two actual monochromatic geodesics from x to x⊕S and x⊕T with the SAME color concatenate in reverse/forward order to a monochromatic (n-1)-edge geodesic, omitting the sole direction i. Its two possible endpoint-extension edges are antipodes and therefore have opposite colors; one has the path color and produces a full monochromatic antipodal geodesic. Consequently, under the hypothesis of NO full monochromatic antipodal geodesic, two reachable supports joined by an edge must have OPPOSITE witness colors. Furthermore, a support incident to any edge must admit a UNIQUE possible monochromatic witness color, since availability of both colors would allow a same-color match with its neighbor. These unique witness colors give a proper binary vertex coloring of all nonisolated vertices of \(\Gamma_x\). Isolated vertices can be colored arbitrarily. Hence \(\Gamma_x\) is bipartite. Contraposition proves the theorem. \(\square\)
+
+**Odd dimensions and the Kneser graph.** For n=2k+1, restrict \(\Gamma_x\) to reachable supports of size k. Two k-subsets are joined exactly when they are disjoint, so this is the subgraph of the Kneser graph KG(2k+1,k) induced by the reachable middle-layer supports. The full KG(2k+1,k) contains an explicit (2k+1)-cycle. For any order p_1,...,p_n, set S_0={p_2,p_4,...,p_{2k}} and iteratively
+\[
+S_t=S_{t-1}\mathbin{\triangle}([n]\setminus\{p_t\}),\quad 1\le t\le n.
+\]
+Because p_t has bit 0 in S_{t-1}, S_{t-1} and S_t are disjoint k-subsets whose union omits exactly p_t. Each step toggles 2k bits, preserving cardinality k. The n steps return to S_0 because each coordinate is toggled n-1 times, an even number. The S_t for 0<=t<n are distinct (any shorter nonempty consecutive product of distinct toggle masks is nonzero). Hence they form an odd n-cycle. If ALL these S_t lie in \(\mathcal R_x\), closure follows.
+
+**Quantitative obstruction.** For every hypothetical counterexample, at least one vertex of each such middle-layer n-cycle is absent from \(\mathcal R_x\). Averaging the n cyclic supports over uniformly random permutations p, each position is uniformly distributed among k-subsets. Therefore every root x has at least
+\[
+\frac1n\binom nk
+\]
+unreachable k-subsets. For n=3, k=1, all singletons are reachable from every root, contradicting this condition, giving an immediate proof of the edge-geodesic conjecture in n=3.
+
+**Parity limitation.** For even n, every edge of \(\Gamma_x\) joins a set of even size to a set of odd size, because |S|+|T|=n-1 is odd. Thus \(\Gamma_x\) is automatically bipartite in even dimension; the odd-cycle criterion provides information only for odd n (or after a further higher-order construction).
+
+**Research direction.** The theorem changes topological extraction from a single 'balanced ridge is good' assertion to a global statement: seek topological / Kneser / Tucker forcing of a nonbipartite near-complementary-support graph \(\Gamma_x\) for SOME root x. This is a precise COLOR-FREE reachability-label coincidence: the desired odd-cycle vertices are actual reachable supports, and the edge-color witness consistency is derived only in the extraction proof. The existence of such a root for all odd-colorings remains an unsolved forcing obligation; the theorem itself is an exact sufficient condition.
+
+## Quadratic-exponent random NORI closure via a greedy orbit-disjoint FULL-GEODESIC PACKING
+
+Consider the COMPLETE UNRESTRICTED binary coloring space for ordered physical 3-faces of Q_n, n>=4, obeying active antipodal reversal oddness:
+  c(bar F,(k,j,i)) = 1 - c(F,(i,j,k)).
+Sample a color independently and fairly on every pair-orbit of this free involution and give the paired reversed-complemented ordered face the opposite bit. The coloring need NOT be affine, parity-based, coordinate-only, or otherwise structured.
+
+**Theorem 1 (large family of mutually disjoint genuine window-orbits).** In Q_n there exists a family P of DIRECTED FULL antipodal geodesics (specified by starting vertex x and ordered permutation of ALL n directions) such that NO TWO chosen paths visit any shared antipodal-reversal ORBIT of an actual ordered physical 3-face, and
+    |P| >= ceil( 2^n n(n-1) / [16(n-2)] ).
+In particular |P| is of order n*2^n, greatly exceeding the previous distance-four-root-code packing combined with O(n) disjoint direction orders.
+
+**Proof.** There are exactly N=2^n n! directed full geodesics. Each carries L=n-2 consecutive ordered physical three-face windows, whose unordered free-coordinate 3-sets are all distinct; hence the L window objects lie in L distinct antipodal-reversal face orbits.
+
+Fix ONE actual ordered face object (F,(i,j,k)), with pairwise distinct free directions. Exactly (n-2)! ordered full direction permutations contain the ordered triple (i,j,k) as consecutive entries: collapse the triple into a block among n-2 permuted objects. For each such direction permutation, the requirement that its physical consecutive window equals F fixes all n-3 exterior starting-root bits and leaves 3 free starting-root bits, hence exactly 2³=8 possible roots. So precisely 8(n-2)! full geodesics contain this single oriented physical face object. The antipodal-reversal orbit also contains exactly one second object (bar F,(k,j,i)), likewise on 8(n-2)! geodesics. A full geodesic cannot contain both orbit objects, since they have the same free-coordinate support but each ordered full direction permutation visits any unordered triple support at most once. Thus EVERY face orbit lies in exactly
+   D = 16(n-2)!
+directed full geodesics.
+
+Greedily select a remaining full geodesic P and discard ALL remaining geodesics sharing at least one of its L orbits. At each selection, at most LD paths are discarded (by the union bound; overlaps can only reduce this count). To discard all N original paths requires at least N/(LD) selections. Therefore
+  |P| >= ceil(2^n n! / [16(n-2)(n-2)!])
+      = ceil(2^n n(n-1) / [16(n-2)]).
+QED.
+
+**Theorem 2 (quadratic-exponent UNRESTRICTED grand-success probability).** In the uniform active NORI coloring space, each chosen path P∈P has an INDEPENDENT uniformly random binary color word of length L=n-2. A word of length L is fully monochromatic with probability p_mono=2/2^L=2^(3-n). A word has at most ONE color change with probability
+  p_good=2L/2^L=(n-2)2^(3-n)
+(because there are two choices of initial bit and L possible switch positions, including no switch).
+
+Therefore
+  Pr(there is NO one-switch full antipodal geodesic ANYWHERE in Q_n)
+   <= (1-p_good)^|P|
+   <= exp(-n(n-1)/2).
+And, substantially stronger than prior NORI random results,
+  Pr(there is NO fully MONOCHROMATIC full antipodal geodesic ANYWHERE in Q_n)
+   <= (1-p_mono)^|P|
+   <= exp(-n(n-1)/[2(n-2)]).
+The first bound tends to zero as exp(-Theta(n²)); the second tends to zero as exp(-n/2), for the FULL unrestricted space of valid antipodal-reversal-odd physical ordered-three-face colorings. Every selected color word is genuinely independent of the others because the paths query pairwise disjoint involution-orbit variables. No dependence approximation or local lemma is used.
+
+**Theorem 3 (certified independent witness counts).** Let X_good and X_mono denote the number of good and monochromatic full paths among the explicitly selected orbit-disjoint family P. Then
+  X_good ~ Binomial(|P|, p_good),
+  X_mono ~ Binomial(|P|, p_mono).
+Their expected values obey
+  E X_good >= n(n-1)/2,
+  E X_mono >= n(n-1)/[2(n-2)].
+Consequently standard binomial tail bounds give concentrations around quadratically many good witnesses and linearly many fully monochromatic witnesses with exponentially small failure probabilities in n. These are LOWER BOUNDS on counts in the full family of ALL antipodal geodesics.
+
+**General ordered-r-face extension (r>=2).** For binary ordered physical r-faces under an antipodal reversal-odd free involution, each ordered face object belongs to 2^r (n-r+1)! full geodesics, and each face orbit belongs to
+  D_r=2^(r+1)(n-r+1)!
+full directed geodesics. Each full geodesic contains L=n-r+1 distinct face orbits. The same greedy method packs at least
+  ceil[ 2^n n! / (L 2^(r+1)(n-r+1)!) ]
+pairwise orbit-disjoint full antipodal paths. Their binary window words are independent fair words of length L, giving analogous explicit probabilistic lower bounds for mono and <=1-change full paths. No antipodal oddness beyond independent coloring of free reversal orbits is needed to count the paths.
+
+**Significance and limits.** This strictly strengthens both nori_unrestricted_random_coloring_one_switch_exponential_success_code_packing_20261008 (whose exponent was only Omega(n)) and the affine-ensemble results: for arbitrary random valid NORI coloring, the chance of a hypothetical counterexample is bounded above by exp(-n(n-1)/2), and failure of the STRONGER monochromatic variant has exponentially small probability exp(-Omega(n)). This does NOT prove that the counterexample set is empty. An adversarial coloring could make ALL selected words bad; to obtain universal grand closure from this packing one needs a deterministic parity/topological consistency obstruction among the remaining overlapping paths not retained in the independent family.
+
+## Universal full antipodal geodesic switch bound from local odd-cycle physical root transport
+
+Let r>=2 and n>=2r-1. Color all physical ordered r-faces of Q_n by arbitrary binary values (NO antipodal oddness assumption). For a rooted full n-coordinate geodesic (x,p) with direction word p=(p1,...,pn), its actual consecutive ordered-r-face colors form a word of length n-r+1, with exactly m=n-r potentially switching adjacent pairs. Let D(x,p) count their total number of switches.
+
+**THEOREM (universal all-dimensional linear full-switch bound).** Under these completely arbitrary colorings,
+\[
+\boxed{\mathbb E_{X\in Q_n,\ P\in S_n}D(X,P)\ \le\ \frac{2r-2}{2r-1}(n-r).}
+\]
+Consequently there exists an ACTUAL full antipodal n-edge geodesic with
+\[
+\boxed{D(x,p)\ \le\ \left\lfloor \frac{2r-2}{2r-1}(n-r)\right\rfloor.}
+\]
+More quantitatively, for every integer q>=0 with q+1>(2r-2)(n-r)/(2r-1), the fraction of all 2^n n! rooted full antipodal geodesics having at most q switches is at least
+\[
+\boxed{1-\frac{(2r-2)(n-r)}{(2r-1)(q+1)}.}
+\]
+All three statements hold without any reversal-odd coloring assumption.
+
+**PROOF.** The team's proved ordered-r odd-cycle root-transport theorem nori_ordered_r_face_odd_cycle_root_transport_two_r_minus_one_seed_20261008 says: fix any q0=2r-1 distinct coordinate directions B and any physical reference root z. Among the (q0)! orders of B, at least (q0-1)! have the first TWO actual r-face windows EQUAL on the rooted q0-edge geodesic that starts at z XOR its first direction, uses that direction order, and passes through z after its first step. The equality follows from odd-cycle alternation of the q0 genuine ordered r-face colors THROUGH z. Indeed an odd cycle of binary vertex colors must have two adjacent equal colors, and each such equal pair is an actual root-neighbor transported (2r-1)-edge witness. The map (z,pi)->(x=z XOR first(pi),pi) is a BIJECTION for each fixed B. Summing over z therefore proves that for a uniformly random starting root X and uniformly random permutation of B, the first TWO actual ordered-r-face window colors of that (2r-1)-edge path agree with probability AT LEAST 1/(2r-1).
+
+Now choose a uniformly random full n-coordinate direction permutation P and independent uniform full-cube root X. Fix any switch location j∈{1,...,n-r}. Consider the consecutive block of r+1 distinct directions (P_j,...,P_(j+r)), and the true physical root Y of this block, reached after the first j-1 directions from X. The joint law of Y and this ordered direction block is uniform over all physical cube roots and all ordered (r+1)-tuples of distinct coordinates: conditioned on P, XOR with the preceding used-support is a bijection on the uniform cube roots. For any ordered (r+1)-tuple, extend it by q0-(r+1)=r-2 distinct unused coordinate directions to an ordered (2r-1)-tuple, chosen uniformly and independently of Y. This is possible because n>=2r-1. The equality of the first TWO r-face windows depends ONLY on Y and the first r+1 ordered directions; it is unaffected by the auxiliary appended r-2 directions. Sampling the entire q0-block uniformly (via a random B and its random order) has exactly the same initial (Y,ordered r+1 tuple) distribution. Therefore the root-transport theorem forces
+\[
+\Pr[w_j(X,P)=w_{j+1}(X,P)]\ge\frac1{2r-1},
+\qquad
+\Pr[w_j\ne w_{j+1}]\le\frac{2r-2}{2r-1}
+\]
+for EVERY j.
+
+Sum over all m=n-r adjacent switch indicators and apply linearity of expectation. Some genuine full rooted path attains at most the integer floor of the expectation bound. Finally apply Markov to the nonnegative integer random variable D:
+\[
+\Pr[D\ge q+1]\le \frac{\mathbb E D}{q+1}\le
+\frac{(2r-2)(n-r)}{(2r-1)(q+1)},
+\]
+which yields the stated quantitative fraction. QED.
+
+**ACTIVE NORI CASE r=3.** Every binary physical ORDERED three-face coloring of Q_n, n>=5, with or WITHOUT antipodal-reversal oddness, has SOME full n-edge antipodal geodesic with at most
+\[
+\boxed{\left\lfloor\tfrac45(n-3)\right\rfloor}
+\]
+three-face window-color changes. In particular for n=5, \(\lfloor\frac45\cdot2\rfloor=1\), immediately reproving the UNRESTRICTED dimension-five NORI theorem from physical root-transport parity + averaging. The result is nontrivial in all dimensions and supplies a positive fraction of moderately low-defect FULL paths, but does not give a ONE-switch full path for n>=6.
+
+**NEAR-OPTIMAL INTERPRETATION AND NEXT TOPOLOGICAL TASK.** This elementary proof demonstrates that literal five-cycle physical root transports can be integrated along the ENTIRE n-coordinate permutation distribution WITHOUT assuming independent local repairs or splicing separately shifted short paths. It gives a correctly glued GLOBAL expectation statement, unlike naive concatenation of independently repaired five-blocks. However a high-index topological proof of grand NORI closure would need to leverage DEPENDENCES between the m switch indicators more strongly than this separate-marginal bound. The odd pentagon identity supplies a universal degree-one cohomological certificate; the missing step is to build a genuine high-dimensional overlapping-pentagon carrier whose nonzero cup product forces sufficiently many ZERO switches in the SAME full direction order, or to force one-switch via the reversed two-tail exact reachability splice. This theorem does not close unrestricted NORI.
+
+Probabilistic abundance and averaged switch bounds narrow the obstruction class without closing the universal theorem. The final one-switch conclusion requires coherence of several short certificates on one full physical path.
+
+Root shuttles and cyclic seam comparisons supply further real path witnesses. These witness families do not automatically concatenate into a good full antipodal geodesic, because the adjacent physical ordered faces at every junction must remain compatible.
+
+### Cyclic edge seams, parity monodromy, and root-slide defects
+
+# Cyclic edge seams, parity monodromy, and root-slide defects
+
+A cyclic antipodal geodesic is obtained by traversing a complete coordinate order twice. In the edge-colored model, its consecutive color discontinuities form an odd set of domain walls, and sliding the root around the cycle permutes the same physical edge colors. This creates a parity invariant that controls long-path switch numbers, while revealing the additional order-reversal information needed for ordered-three-face colors.
+
+## Rooted monochromatic-geodesic reachability and exact antipodal extraction
+
+Let an antipodally odd binary edge coloring of Q_n satisfy c(bar e)=1-c(e). Define R_i(x) as the vertices reachable from x by an i-monochromatic shortest path, including the empty path; put U(x)=R_0(x) union R_1(x).
+
+**Theorem (exact extraction).** There is an antipodal geodesic starting at x with at most one change of edge color if and only if U(x) contains a complementary vertex pair z,bar z.
+
+**Proof.** Given a monochromatic geodesic x->z of color i and another x->bar z of color j, apply antipodality to the second path and reverse it. The result is a monochromatic z->bar x path of color 1-j. The first path changes S={k:x_k != z_k}; the second changes [n]\S. Concatenation therefore traverses each dimension exactly once, and uses at most two monochromatic blocks. Conversely, cut any at-most-one-change antipodal geodesic x->bar x at its change (choose an endpoint for a monochromatic path). Its first block reaches some z monochromatically from x; the antipodal reversal of its second block reaches bar z monochromatically from x. QED.
+
+**Equivariance and transport.** R_(1-i)(bar x)=bar R_i(x), hence U(bar x)=bar U(x). Monochromatic geodesic reachability is symmetric in x,z. If xy is a color-i edge, and H_(y|x)={z:d(x,z)=1+d(y,z)}, then R_i(y) intersect H_(y|x) is contained in R_i(x): prepend edge xy to a shortest monochromatic y->z path. Therefore any all-root counterexample gives antipodal-free reachability sets U(x) with |U(x)|<=2^(n-1), equivariant complement, and these color-resolved edgewise halfcube transport inclusions. They are concrete necessary conditions on a candidate topological labeling.
+
+**Fixed-root no-go, all even n>=4.** Color an edge between Hamming levels r and r+1 by r mod 2. Its antipodal edge runs between levels n-r-1 and n-r and has opposite color for even n. Every geodesic starting at 0^n has color sequence 0,1,0,1,... . Hence U(0^n) consists of 0^n and its n neighbors and has no complementary pair for n>=4. Thus one cannot force the coincidence in an arbitrary prescribed rooted slice; root coupling is necessary.
+
+**A genuinely simplicial topological extraction target.** In the all-root geodesic complex K_n (facets are full cube geodesic vertex sets), define C_i(x) as the simplicial subcomplex generated by all i-monochromatic geodesic path vertex sets from x, including prefixes; define C(x)=C_0(x) union C_1(x). Each is a cone with apex x; its vertex set is R_i(x), respectively U(x). Antipodal oddness gives C(bar x)=bar C(x). Since C(x) and C(bar x) are subcomplexes of the *same* abstract simplicial complex, their geometric realizations meet exactly when they share an actual cube vertex. Therefore the edge one-switch conjecture is equivalent to the assertion that |C(x)| intersects |C(bar x)| for some x. Such an intersection extracts a real monochromatic-geodesic connector without any extra rounding or convex-hull assumptions. The missing dimension-independent theorem is to force this intersection using the edgewise transport inclusions across varying roots.
+
+This result is for antipodally odd EDGE colorings, the broadcast-prescribed proving ground. Transfer to ordered-three-face NORI is an open separate obligation.
+
+**Strengthening to every dimension n>=4.** The same minimal reachable set U(0^n)={0^n,e_1,...,e_n} occurs in an antipodally odd edge coloring for *every* n>=4. Give every edge between levels 0 and 1 color 0, and every edge between levels 1 and 2 color 1. Their antipodal counterparts lie between ranks (n-1,n) and (n-2,n-1), respectively, which are disjoint from the prescribed ranks for n>=4. Assign those counterpart colors 1 and 0, then extend arbitrarily to remaining two-element antipodal edge orbits, giving opposite colors within each orbit. All second steps from 0^n have color 1, while all first steps have color 0, so no monochromatic geodesic from 0^n has length greater than one. By translating the rank layers, any *prescribed* root can be made to have this property. The even-dimensional parity pattern above is simply an explicit special case.
+
+Let n>=4 and c(F,pi) be an ordered-three-face NORI coloring with c(bar F, reverse pi)=1-c(F,pi). Fix any root x and coordinate permutation p. Traverse p twice to form the 2n-edge antipodally symmetric geodesic cycle. At cyclic edge index j, let F_j be the physical ordered three-face swept by the three successive directions p_j,p_(j+1),p_(j+2), with indices modulo n, and let pi_j denote that ordered triple. Define forward and reverse-orientation color channels a_j=c(F_j,pi_j) and b_j=c(F_j,reverse pi_j). Since the second half of the cycle is the cube antipode of the first with the SAME direction order, F_(j+n)=bar F_j and pi_(j+n)=pi_j. Applying the exact NORI axiom in both orientations yields (a_(j+n),b_(j+n))=(1-b_j,1-a_j). Encode signs A_j=(-1)^(a_j),B_j=(-1)^(b_j) and define U_j=A_j+B_j, V_j=A_j-B_j. Then U_(j+n)=-U_j, but V_(j+n)=V_j. Thus the natural color representation decomposes into an antipodally ODD symmetric channel U and an antipodally EVEN antisymmetric channel V. At each window exactly one of U,V is nonzero: U is supported when a_j=b_j; V is supported when a_j!=b_j. In the coordinate-only reversal-odd subclass c(F,reverse pi)=1-c(F,pi), the odd channel U is identically zero throughout the geometry; forward colors a_(j+n)=a_j are periodic, not antiperiodic. Therefore the edge-case odd cyclic seam invariant cannot be transferred merely by following the same oriented triple windows around a doubled geodesic cycle. A viable transfer must preserve the full two-channel twisted involution or use root/order-reversing geometry where the reversal information survives. These are exact dimension-independent geometry/color-transport statements, not grand closure.
+
+THEOREM (exact topological realization of the edge case). Let n>=3 and let Q_n have a binary edge coloring c with c(bar e)=1-c(e). Let H_n be the line graph of Q_n: its vertices are the undirected cube edges, and two vertices are joined when the corresponding distinct cube edges have a common cube endpoint. Cube antipodality acts freely on H_n. Let Y_n=|H_n|/(e~bar e) and let L be the real sign line bundle associated with the double cover |H_n| -> Y_n. The signs s(e)=(-1)^{c(e)} obey s(bar e)=-s(e), hence define a canonical antipodally odd piecewise-affine map on |H_n| and therefore a continuous section sigma_c of L. On each line-graph edge joining e,f, this section has exactly one transverse zero iff c(e)!=c(f), located at its midpoint; otherwise it has no zero.
+For each full antipodal cube geodesic P(x,p), traverse its direction order p twice to form the 2n-edge antipodally invariant cube cycle (e_1,...,e_n,bar e_1,...,bar e_n). Its sequence of edge-midpoints is a 2n-cycle in H_n, projecting to an n-edge closed loop gamma(x,p) in Y_n. The lifted loop begins at e_1 and ends at bar e_1 after n steps; hence its double-cover holonomy is nontrivial and w_1(L) evaluates to 1 on gamma. Its intersection number with the discrete zero set Z(sigma_c), COUNTED AS ACTUAL CROSSINGS rather than mod 2, is precisely the cyclic seam count m(x,p)=sum_(j=1)^n [c(e_j)!=c(e_(j+1))], with e_(n+1)=bar e_1. The count is positive odd, and m=1 is equivalent to a monochromatic antipodal geodesic, by cutting the 2n-cycle at its two antipodal zero crossings.
+Root slides change the based lift and preserve the unoriented underlying projective loop, hence preserve m. A square exchange of consecutive directions modifies a length-two edge-vertex subpath in H_n and its antipodal mate; it changes the number of section-zero crossings by -2, 0, or +2. Thus the original edge-geodesic conjecture is EXACTLY a special combinatorial 'intersection-one representative' problem: for every antipodally odd edge section of L, some distinguished projective loop obtained from a cube geodesic has exactly one transverse zero. The first Stiefel-Whitney class alone forces only ODD intersection, not intersection one; the substantive missing topological theorem must exploit the coherent family of direction-once loops and their legal cube-square surgeries.
+This formulation is derived solely from cube geometry and antipodal oddness. For NORI ordered-three-face colors, a vertex of the suitable analogous turn/state complex must retain an oriented three-direction face; its antipodal involution also reverses that order, so the present line-graph section does not transfer without a directed-memory carrier.
+
+Cyclic parity is a genuine invariant of the specified physical color word; it is not an automatic transfer theorem from edge windows to ordered three-face windows. Moving to the higher-window model requires literal seam identifications, not only an abstract odd wall count.
+
+### Odd ordered-window cycles and short monochromatic connector density
+
+# Odd ordered-window cycles and short monochromatic connector density
+
+Form the physical ordered-window shift graph by overlapping consecutive three-direction faces along genuine cube paths. Its universal odd cycles force an adjacent agreement of some colors, hence short monochromatic connectors. To convert that local existence into a global argument, one must count witnesses without treating reversal-equivalent path histories as independent.
+
+THEOREM. For every n>=2, every binary edge coloring c of Q_n satisfying c(bar e)=1-c(e) has an antipodal geodesic with at most 2 floor((n-2)/4) color changes. In particular all such colorings in dimensions 2<=n<=5 admit a MONOCHROMATIC antipodal geodesic; dimensions 6<=n<=9 admit one with at most two changes; dimensions 10<=n<=13 at most four; and so on. This is a dimension-independent quantitative theorem for the edge-color case, not closure in arbitrary n or for NORI's ordered-three-face colors.
+PROOF. Let m(P) be the odd cyclic seam count and D(P) the switches in the original n-edge antipodal half. Root sliding can choose a seam at a color boundary so D=m-1. The proved averaging identity gives E[m]<=B_n=2 floor(n^2/4)/(n-1). Since m is odd, this already yields D<=2 floor((n-1)/4). Only the residue class n=4t+1>=5 needs improvement. There B_n=2t+1 EXACTLY. If all m>=2t+1, their mean lies between 2t+1 and its upper bound 2t+1, so every chamber necessarily has the same m=2t+1>=3. But the proved global-nonflatness theorem forbids any antipodally odd edge coloring with globally constant m>1 in dimension n>=5. Therefore some chamber has m<=2t-1, and a root-slide representative has D=m-1<=2t-2=2 floor((n-2)/4). All other residue classes have this identical bound directly from B_n and oddness. QED.
+The proof replaces small-dimension case enumeration with a global energy average, an exact square-swap rigidity identity, and an odd-parity equality argument. Its missing closure step is to derive genuinely sublinear or constant m without depending on the dimension through the degree-average upper bound.
+
+THEOREM (UNIVERSAL ORDERED-WINDOW ODD CYCLE). Let 1<=k<=n-2 and let H_n^(k) be the graph whose vertices are physical k-dimensional cube faces F equipped with an ordered list pi=(a1,...,ak) of its distinct free coordinates, with edges between successive ordered-k-face windows in an actual (k+1)-step cube geodesic. The graph H_n^(k) contains an explicit closed ODD walk of length 2k+3, entirely inside any chosen (k+2)-dimensional coordinate face of Q_n, and hence is nonbipartite. Consequently, for EVERY binary coloring of ordered k-faces (NO antipodal oddness required), every (k+2)-dimensional cube face contains a (k+1)-step directed geodesic whose TWO consecutive ordered-k-face window colors coincide.
+CONSTRUCTION AND PROOF. Fix k+2 distinct free coordinate directions a1,...,a_(k+2) in the chosen (k+2)-face, choose any starting vertex x of it, and take the cyclic direction word
+  P=(a1,a2,...,a_(k+2),a2,a3,...,a_(k+2)),
+of odd length L=2k+3. Each coordinate other than a1 appears twice, separated by k+1 positions around the cyclic word; coordinate a1 appears once. Thus every cyclic consecutive block of k+1 symbols has pairwise distinct directions, so every step from one ordered-k-face window to the next is an actual legal (k+1)-step cube geodesic. Let x_j be the vertex reached after j successive flips of this word, and let w_j be the physical ordered-k-face swept by its next k directions. After L steps the ordered direction list returns to its starting k-list (a1,...,ak), and x_L=x xor e_(a1), because all other symbols occur twice. These two root positions differ only in a1, which is FREE in the initial k-face, so the exterior coordinates of w_L and w_0 coincide: w_L=w_0 as exact ordered physical faces. Therefore the w_j form a closed odd walk of length L in H_n^(k). An odd closed walk contains an odd cycle and cannot have every edge bichromatic in a binary vertex coloring. Some adjacent w_j,w_(j+1) have the same color. Their adjacency is realized by a legal directed (k+1)-step geodesic, supplying the claimed two-window monochromatic seed within the chosen (k+2)-face. QED.
+APPLICATION TO NORI k=3. Every five-dimensional face of ANY Q_n (n>=5), under ANY binary ordered-three-face coloring, has a genuine four-edge geodesic with two same-color ordered-three-face windows. In particular, for n=5 this four-edge path can be extended by the sole remaining coordinate at either end to an antipodal five-edge geodesic. Its three ordered-three-face windows contain two equal adjacent colors, so the full word changes at most ONCE. This proves the full ordered-three-face one-switch conclusion on Q_5 for arbitrary binary ordered-face colorings, even without antipodal reversal oddness, by a single universal odd-cycle argument. For n>5 the same seed is local; the outstanding global target is to absorb the other n-5 coordinates while retaining at most one transition. The odd-cycle construction is explicit, face-local, requires no literature, and is dimension independent.
+
+Let n>=5 and let B be the quotient by active NORI's free tau=(antipodal physical face, reversed ordered triple) of the genuine ordered-three-face window-shift graph H. Let w in H^1(B;F2) be the class of the connected double cover H->B. For any active NORI coloring, let alpha in H^1(B;F2) be represented by the same-color window-shift indicator: alpha(uv)=1 iff its lifted endpoint ordered faces have equal colors. The established exact cochain identity gives alpha=[1_B]+w. A centered 5-cycle C in H projects to a closed length-five walk bar C in B, and the double-cover holonomy of bar C is zero because C is closed in H. Thus w(bar C)=0, while alpha(bar C)=5 mod 2=1.
+Construct a 2-dimensional CW-complex Z by attaching a 2-disk to B along each chosen projected centered five-cycle (or any nonempty tau-invariant family of such loops). Then the long exact cohomology sequence for the pair (Z,B) has boundary map delta:H^1(B;F2)->H^2(Z,B;F2). Since each projected pentagon evaluates alpha=1, the relative class delta(alpha) evaluates to 1 on the relative 2-cell of EACH glued pentagon, so delta(alpha) is nonzero. Consequently alpha CANNOT extend as an absolute H^1 class from B to Z, and no cohomologically equivalent same-color marking can be a cocycle after filling these pentagons; every pentagon carries unavoidable odd mod-two curvature.
+In contrast, w evaluates zero on every attached loop, so it DOES extend to a class in H^1(Z;F2) (equivalently, the double cover extends over all the pentagon disks). This follows from the exactness criterion in the same long exact sequence, since delta(w)=0 on every relative 2cell.
+Therefore the two independent graph-level classes behave differently under honest pentagon fillings: monochromatic connector parity becomes a CANONICAL NONZERO relative 2-dimensional curvature class, while antipodal covering holonomy survives. This is a coloring-independent chain-level seed for a prospective relative KKM/Hex or cup-product argument on a root-coupled higher-dimensional witness carrier. It does NOT prove any nonzero product of these classes, and Z's attached abstract disks are NOT automatically actual full monochromatic-geodesic witness surfaces. The outstanding grand-closure step is to realize the relative curvature and its interactions with w in a path-certified carrier whose forced intersection yields an exact reversed-terminal-pair complementary-support witness.
+
+The odd-cycle and density inequalities provide uniform local seeds in every dimension. Their compatibility across the remaining unused directions is a further, separate mathematical problem.
+
+### Global geodesic density and cyclic root-transport bounds
+
+# Global geodesic density and cyclic root-transport bounds
+
+Local monochromatic connectors arise from cyclic five-window parity, while global geodesic switch bounds arise by averaging changes along complete coordinate orders and roots. These are distinct but complementary counting arguments: one supplies abundant short seeds, the other supplies at least one long path with controlled defect.
+
+## COLOR-FREE reachability odd-cycle obstruction and the middle Kneser graph
+
+Let c be an antipodally odd binary UNDIRECTED edge coloring of Q_n. For root x write
+\[
+\mathcal R_x=\{S\subseteq[n]:x\oplus S\in R(x)\},
+\]
+where R(x) is the color-FREE set of endpoints of monochromatic geodesics starting at x, of EITHER color. Define a graph \(\Gamma_x\) on \(\mathcal R_x\) by joining distinct supports S,T exactly when
+\[
+S\cap T=\varnothing,\qquad S\cup T=[n]\setminus\{i\}
+\]
+for some i. Thus two adjacent supports are disjoint and cover n-1 of the n coordinate directions.
+
+**Theorem (odd-cycle reachability certificate).** If \(\Gamma_x\) is nonbipartite for any root x, then c has a MONOCHROMATIC FULL ANTIPODAL GEODESIC. Equivalently, in every hypothetical counterexample, \(\Gamma_x\) is bipartite for EVERY x. This condition is expressed entirely in the uncolored reachability set R(x); it requires no colors in the definition or the topological labeling.
+
+**Proof.** Let S--T be an edge of \(\Gamma_x\). Any two actual monochromatic geodesics from x to x⊕S and x⊕T with the SAME color concatenate in reverse/forward order to a monochromatic (n-1)-edge geodesic, omitting the sole direction i. Its two possible endpoint-extension edges are antipodes and therefore have opposite colors; one has the path color and produces a full monochromatic antipodal geodesic. Consequently, under the hypothesis of NO full monochromatic antipodal geodesic, two reachable supports joined by an edge must have OPPOSITE witness colors. Furthermore, a support incident to any edge must admit a UNIQUE possible monochromatic witness color, since availability of both colors would allow a same-color match with its neighbor. These unique witness colors give a proper binary vertex coloring of all nonisolated vertices of \(\Gamma_x\). Isolated vertices can be colored arbitrarily. Hence \(\Gamma_x\) is bipartite. Contraposition proves the theorem. \(\square\)
+
+**Odd dimensions and the Kneser graph.** For n=2k+1, restrict \(\Gamma_x\) to reachable supports of size k. Two k-subsets are joined exactly when they are disjoint, so this is the subgraph of the Kneser graph KG(2k+1,k) induced by the reachable middle-layer supports. The full KG(2k+1,k) contains an explicit (2k+1)-cycle. For any order p_1,...,p_n, set S_0={p_2,p_4,...,p_{2k}} and iteratively
+\[
+S_t=S_{t-1}\mathbin{\triangle}([n]\setminus\{p_t\}),\quad 1\le t\le n.
+\]
+Because p_t has bit 0 in S_{t-1}, S_{t-1} and S_t are disjoint k-subsets whose union omits exactly p_t. Each step toggles 2k bits, preserving cardinality k. The n steps return to S_0 because each coordinate is toggled n-1 times, an even number. The S_t for 0<=t<n are distinct (any shorter nonempty consecutive product of distinct toggle masks is nonzero). Hence they form an odd n-cycle. If ALL these S_t lie in \(\mathcal R_x\), closure follows.
+
+**Quantitative obstruction.** For every hypothetical counterexample, at least one vertex of each such middle-layer n-cycle is absent from \(\mathcal R_x\). Averaging the n cyclic supports over uniformly random permutations p, each position is uniformly distributed among k-subsets. Therefore every root x has at least
+\[
+\frac1n\binom nk
+\]
+unreachable k-subsets. For n=3, k=1, all singletons are reachable from every root, contradicting this condition, giving an immediate proof of the edge-geodesic conjecture in n=3.
+
+**Parity limitation.** For even n, every edge of \(\Gamma_x\) joins a set of even size to a set of odd size, because |S|+|T|=n-1 is odd. Thus \(\Gamma_x\) is automatically bipartite in even dimension; the odd-cycle criterion provides information only for odd n (or after a further higher-order construction).
+
+**Research direction.** The theorem changes topological extraction from a single 'balanced ridge is good' assertion to a global statement: seek topological / Kneser / Tucker forcing of a nonbipartite near-complementary-support graph \(\Gamma_x\) for SOME root x. This is a precise COLOR-FREE reachability-label coincidence: the desired odd-cycle vertices are actual reachable supports, and the edge-color witness consistency is derived only in the extraction proof. The existence of such a root for all odd-colorings remains an unsolved forcing obligation; the theorem itself is an exact sufficient condition.
+
+## Quadratic-exponent random NORI closure via a greedy orbit-disjoint FULL-GEODESIC PACKING
+
+Consider the COMPLETE UNRESTRICTED binary coloring space for ordered physical 3-faces of Q_n, n>=4, obeying active antipodal reversal oddness:
+  c(bar F,(k,j,i)) = 1 - c(F,(i,j,k)).
+Sample a color independently and fairly on every pair-orbit of this free involution and give the paired reversed-complemented ordered face the opposite bit. The coloring need NOT be affine, parity-based, coordinate-only, or otherwise structured.
+
+**Theorem 1 (large family of mutually disjoint genuine window-orbits).** In Q_n there exists a family P of DIRECTED FULL antipodal geodesics (specified by starting vertex x and ordered permutation of ALL n directions) such that NO TWO chosen paths visit any shared antipodal-reversal ORBIT of an actual ordered physical 3-face, and
+    |P| >= ceil( 2^n n(n-1) / [16(n-2)] ).
+In particular |P| is of order n*2^n, greatly exceeding the previous distance-four-root-code packing combined with O(n) disjoint direction orders.
+
+**Proof.** There are exactly N=2^n n! directed full geodesics. Each carries L=n-2 consecutive ordered physical three-face windows, whose unordered free-coordinate 3-sets are all distinct; hence the L window objects lie in L distinct antipodal-reversal face orbits.
+
+Fix ONE actual ordered face object (F,(i,j,k)), with pairwise distinct free directions. Exactly (n-2)! ordered full direction permutations contain the ordered triple (i,j,k) as consecutive entries: collapse the triple into a block among n-2 permuted objects. For each such direction permutation, the requirement that its physical consecutive window equals F fixes all n-3 exterior starting-root bits and leaves 3 free starting-root bits, hence exactly 2³=8 possible roots. So precisely 8(n-2)! full geodesics contain this single oriented physical face object. The antipodal-reversal orbit also contains exactly one second object (bar F,(k,j,i)), likewise on 8(n-2)! geodesics. A full geodesic cannot contain both orbit objects, since they have the same free-coordinate support but each ordered full direction permutation visits any unordered triple support at most once. Thus EVERY face orbit lies in exactly
+   D = 16(n-2)!
+directed full geodesics.
+
+Greedily select a remaining full geodesic P and discard ALL remaining geodesics sharing at least one of its L orbits. At each selection, at most LD paths are discarded (by the union bound; overlaps can only reduce this count). To discard all N original paths requires at least N/(LD) selections. Therefore
+  |P| >= ceil(2^n n! / [16(n-2)(n-2)!])
+      = ceil(2^n n(n-1) / [16(n-2)]).
+QED.
+
+**Theorem 2 (quadratic-exponent UNRESTRICTED grand-success probability).** In the uniform active NORI coloring space, each chosen path P∈P has an INDEPENDENT uniformly random binary color word of length L=n-2. A word of length L is fully monochromatic with probability p_mono=2/2^L=2^(3-n). A word has at most ONE color change with probability
+  p_good=2L/2^L=(n-2)2^(3-n)
+(because there are two choices of initial bit and L possible switch positions, including no switch).
+
+Therefore
+  Pr(there is NO one-switch full antipodal geodesic ANYWHERE in Q_n)
+   <= (1-p_good)^|P|
+   <= exp(-n(n-1)/2).
+And, substantially stronger than prior NORI random results,
+  Pr(there is NO fully MONOCHROMATIC full antipodal geodesic ANYWHERE in Q_n)
+   <= (1-p_mono)^|P|
+   <= exp(-n(n-1)/[2(n-2)]).
+The first bound tends to zero as exp(-Theta(n²)); the second tends to zero as exp(-n/2), for the FULL unrestricted space of valid antipodal-reversal-odd physical ordered-three-face colorings. Every selected color word is genuinely independent of the others because the paths query pairwise disjoint involution-orbit variables. No dependence approximation or local lemma is used.
+
+**Theorem 3 (certified independent witness counts).** Let X_good and X_mono denote the number of good and monochromatic full paths among the explicitly selected orbit-disjoint family P. Then
+  X_good ~ Binomial(|P|, p_good),
+  X_mono ~ Binomial(|P|, p_mono).
+Their expected values obey
+  E X_good >= n(n-1)/2,
+  E X_mono >= n(n-1)/[2(n-2)].
+Consequently standard binomial tail bounds give concentrations around quadratically many good witnesses and linearly many fully monochromatic witnesses with exponentially small failure probabilities in n. These are LOWER BOUNDS on counts in the full family of ALL antipodal geodesics.
+
+**General ordered-r-face extension (r>=2).** For binary ordered physical r-faces under an antipodal reversal-odd free involution, each ordered face object belongs to 2^r (n-r+1)! full geodesics, and each face orbit belongs to
+  D_r=2^(r+1)(n-r+1)!
+full directed geodesics. Each full geodesic contains L=n-r+1 distinct face orbits. The same greedy method packs at least
+  ceil[ 2^n n! / (L 2^(r+1)(n-r+1)!) ]
+pairwise orbit-disjoint full antipodal paths. Their binary window words are independent fair words of length L, giving analogous explicit probabilistic lower bounds for mono and <=1-change full paths. No antipodal oddness beyond independent coloring of free reversal orbits is needed to count the paths.
+
+**Significance and limits.** This strictly strengthens both nori_unrestricted_random_coloring_one_switch_exponential_success_code_packing_20261008 (whose exponent was only Omega(n)) and the affine-ensemble results: for arbitrary random valid NORI coloring, the chance of a hypothetical counterexample is bounded above by exp(-n(n-1)/2), and failure of the STRONGER monochromatic variant has exponentially small probability exp(-Omega(n)). This does NOT prove that the counterexample set is empty. An adversarial coloring could make ALL selected words bad; to obtain universal grand closure from this packing one needs a deterministic parity/topological consistency obstruction among the remaining overlapping paths not retained in the independent family.
+
+## Universal full antipodal geodesic switch bound from local odd-cycle physical root transport
+
+Let r>=2 and n>=2r-1. Color all physical ordered r-faces of Q_n by arbitrary binary values (NO antipodal oddness assumption). For a rooted full n-coordinate geodesic (x,p) with direction word p=(p1,...,pn), its actual consecutive ordered-r-face colors form a word of length n-r+1, with exactly m=n-r potentially switching adjacent pairs. Let D(x,p) count their total number of switches.
+
+**THEOREM (universal all-dimensional linear full-switch bound).** Under these completely arbitrary colorings,
+\[
+\boxed{\mathbb E_{X\in Q_n,\ P\in S_n}D(X,P)\ \le\ \frac{2r-2}{2r-1}(n-r).}
+\]
+Consequently there exists an ACTUAL full antipodal n-edge geodesic with
+\[
+\boxed{D(x,p)\ \le\ \left\lfloor \frac{2r-2}{2r-1}(n-r)\right\rfloor.}
+\]
+More quantitatively, for every integer q>=0 with q+1>(2r-2)(n-r)/(2r-1), the fraction of all 2^n n! rooted full antipodal geodesics having at most q switches is at least
+\[
+\boxed{1-\frac{(2r-2)(n-r)}{(2r-1)(q+1)}.}
+\]
+All three statements hold without any reversal-odd coloring assumption.
+
+**PROOF.** The team's proved ordered-r odd-cycle root-transport theorem nori_ordered_r_face_odd_cycle_root_transport_two_r_minus_one_seed_20261008 says: fix any q0=2r-1 distinct coordinate directions B and any physical reference root z. Among the (q0)! orders of B, at least (q0-1)! have the first TWO actual r-face windows EQUAL on the rooted q0-edge geodesic that starts at z XOR its first direction, uses that direction order, and passes through z after its first step. The equality follows from odd-cycle alternation of the q0 genuine ordered r-face colors THROUGH z. Indeed an odd cycle of binary vertex colors must have two adjacent equal colors, and each such equal pair is an actual root-neighbor transported (2r-1)-edge witness. The map (z,pi)->(x=z XOR first(pi),pi) is a BIJECTION for each fixed B. Summing over z therefore proves that for a uniformly random starting root X and uniformly random permutation of B, the first TWO actual ordered-r-face window colors of that (2r-1)-edge path agree with probability AT LEAST 1/(2r-1).
+
+Now choose a uniformly random full n-coordinate direction permutation P and independent uniform full-cube root X. Fix any switch location j∈{1,...,n-r}. Consider the consecutive block of r+1 distinct directions (P_j,...,P_(j+r)), and the true physical root Y of this block, reached after the first j-1 directions from X. The joint law of Y and this ordered direction block is uniform over all physical cube roots and all ordered (r+1)-tuples of distinct coordinates: conditioned on P, XOR with the preceding used-support is a bijection on the uniform cube roots. For any ordered (r+1)-tuple, extend it by q0-(r+1)=r-2 distinct unused coordinate directions to an ordered (2r-1)-tuple, chosen uniformly and independently of Y. This is possible because n>=2r-1. The equality of the first TWO r-face windows depends ONLY on Y and the first r+1 ordered directions; it is unaffected by the auxiliary appended r-2 directions. Sampling the entire q0-block uniformly (via a random B and its random order) has exactly the same initial (Y,ordered r+1 tuple) distribution. Therefore the root-transport theorem forces
+\[
+\Pr[w_j(X,P)=w_{j+1}(X,P)]\ge\frac1{2r-1},
+\qquad
+\Pr[w_j\ne w_{j+1}]\le\frac{2r-2}{2r-1}
+\]
+for EVERY j.
+
+Sum over all m=n-r adjacent switch indicators and apply linearity of expectation. Some genuine full rooted path attains at most the integer floor of the expectation bound. Finally apply Markov to the nonnegative integer random variable D:
+\[
+\Pr[D\ge q+1]\le \frac{\mathbb E D}{q+1}\le
+\frac{(2r-2)(n-r)}{(2r-1)(q+1)},
+\]
+which yields the stated quantitative fraction. QED.
+
+**ACTIVE NORI CASE r=3.** Every binary physical ORDERED three-face coloring of Q_n, n>=5, with or WITHOUT antipodal-reversal oddness, has SOME full n-edge antipodal geodesic with at most
+\[
+\boxed{\left\lfloor\tfrac45(n-3)\right\rfloor}
+\]
+three-face window-color changes. In particular for n=5, \(\lfloor\frac45\cdot2\rfloor=1\), immediately reproving the UNRESTRICTED dimension-five NORI theorem from physical root-transport parity + averaging. The result is nontrivial in all dimensions and supplies a positive fraction of moderately low-defect FULL paths, but does not give a ONE-switch full path for n>=6.
+
+**NEAR-OPTIMAL INTERPRETATION AND NEXT TOPOLOGICAL TASK.** This elementary proof demonstrates that literal five-cycle physical root transports can be integrated along the ENTIRE n-coordinate permutation distribution WITHOUT assuming independent local repairs or splicing separately shifted short paths. It gives a correctly glued GLOBAL expectation statement, unlike naive concatenation of independently repaired five-blocks. However a high-index topological proof of grand NORI closure would need to leverage DEPENDENCES between the m switch indicators more strongly than this separate-marginal bound. The odd pentagon identity supplies a universal degree-one cohomological certificate; the missing step is to build a genuine high-dimensional overlapping-pentagon carrier whose nonzero cup product forces sufficiently many ZERO switches in the SAME full direction order, or to force one-switch via the reversed two-tail exact reachability splice. This theorem does not close unrestricted NORI.
+
+Probabilistic abundance and averaged switch bounds narrow the obstruction class without closing the universal theorem. The final one-switch conclusion requires coherence of several short certificates on one full physical path.
+
+## Physical window shifts and root-shuttle transport
+
+# Physical window shifts, antipodal transport, and connector obstructions
+
+Fix n>=5. An actual ordered three-face window is denoted W_z(a,b,c), with three distinct free coordinate directions a,b,c and all other coordinates fixed as in z. As z ranges over its face the same ordered physical window is represented; this independence is essential when gluing successive four-edge windows. The active NORI involution is tau W_z(a,b,c)=W_(bar z)(c,b,a), and its color is complementary.
+
+## Transport in the distinguished-middle-direction graph
+
+Fix i. The window-shift graph H_i has actual ordered windows containing i, with an edge when the two windows are consecutive triples along a genuine four-edge direction-distinct path and i belongs to the two common middle directions. For pairwise distinct a,b,d,i,k, a two-step shuttle connects W_z(a,i,b) to W_(z xor k)(d,i,b) through W_z(i,b,k). Both constituent edges are actual four-edge shifts. The intermediate face has free set {i,b,k}, so changing the k-bit of its representative leaves this physical face unchanged. This allows an exterior bit to be toggled while exchanging an outer free direction. Two-step shuttles can likewise preserve the exterior bit.
+
+The shuttles provide explicit paths from any v to tau(v), by successively bringing exterior coordinates into a free slot, changing their fixed bits, and returning the desired free directions. A proved construction gives even-length paths linear in n; the strengthened exact transport theorem establishes the shortest length
+
+L(n)=max(6, 2 ceil((n-1)/2))
+
+for every actual window and all n>=5. In particular each exterior coordinate must enter a free slot to complement its fixed bit, and the original outer directions must undergo an exchange to reverse the ordered window. These necessities account for the lower bound, with the even parity of H_i paths and the minimal outer exchange supplying the remaining restriction. The companion constructive shuttles attain the bound.
+
+## Guaranteed monochromatic shifts
+
+An H_i path of even length from v to tau(v) has endpoints of opposite colors. Therefore at least one consecutive edge along it joins windows of equal color: if all L consecutive colors differed and L were even, the endpoint colors would coincide. Such an equal-color shift corresponds to an actual monochromatic four-edge geodesic connector.
+
+Let E_0=2^(n-2)(n-1)(n-2)(n-3) be the number of edges in each of the two middle-slot orientation orbits. Translate roots and permute directions fixing i to average a chosen optimal antipodal path over the full orbit. If N_i is the total number of distinct equal-color connector edges in both middle-slot orbits, the averaging argument and antipodal reversal give
+
+N_i >= 2 ceil(E_0/L(n)).
+
+The lower bound is quantitative and applies to arbitrary exterior-dependent physical ordered-three-face colorings. It forces many real local monochromatic connectors, with the two middle-slot types equally represented. Their respective roots and unused supports may vary.
+
+## Physical gluing constraints
+
+A root shuttle also exhibits an induced four-cycle on four actual windows, with both diagonals forbidden by direction-distinct four-edge incidence. Thus the shuttle square is a genuine 1-dimensional loop in the physical incidence graph; filling it by triangles on the same four vertices would introduce nonexistent cube paths. Any topological filling argument must use further actual windows with verifiable ordered-face incidence.
+
+There is a separate obstruction to orienting a simple zero-seam-side label continuously under adjacent exchanges. Two full Q_7 geodesics differing by one adjacent transposition can both have opposite endpoint colors and three switches while the position of their unique equal adjacent pair moves across the midpoint. The prescribed windows extend to a legal reversal-odd coloring since their physical-face orbits impose consistent color constraints. Accordingly the transport graph requires richer path-memory data than the location of a single equality seam.
+
+## Extraction frontier
+
+The transport theorem yields genuine antipodal paths in window space, a nontrivial quotient-cover class, and exponentially many monochromatic four-edge connectors. Full NORI requires a single n-edge geodesic with at most one change. The missing theorem is a certificate-preserving global compatibility rule that selects connectors with matching physical roots, ordered terminal pairs, and complementary remaining coordinate supports. The local existence and density results above establish the carrier geometry for that global problem.
+
+### Physical window-shift paths and root-shuttle transport
+
+# Physical window-shift paths and root-shuttle transport
+
+A moving root or adjacent direction exchange transports a physical ordered three-face through a graph of genuine window shifts. The shift graph carries the extra data that a coordinate-label-only model discards: fixed exterior bits, ordered free directions, and the actual root-square used in a shuttle. Antipodal routes in this graph admit explicit constructions and distance estimates.
+
+THEOREM (EXACT LOCAL NO-GO FOR THE NAIVE PERMUTOHEDRAL GAP-SIDE LABEL). In Q7 there exists an ACTIVE NORI binary ordered-three-face coloring such that TWO full antipodal geodesics from the SAME root x=0000000, whose coordinate orders differ by ONE ADJACENT TRANSPOSITION, both have opposite first/last window colors and exactly THREE window-color changes, but the location of their unique EQUAL adjacent window pair lies on opposite sides of the middle. Hence the tempting +/- label on endpoint-balanced bad geodesics recording whether their unique equal seam belongs to positions {1,2} or {3,4} is NOT locally constant even along legal adjacent-swap edges that preserve endpoint balance. The local crossing does not by itself guarantee an at-most-one-switch witness.
+EXPLICIT CERTIFICATE. Use coordinate directions 0,1,...,6 and root x=0. Let P have order p=(0,1,2,3,4,5,6), and prescribe its five genuine ordered 3-face window colors as (0,1,1,0,1), with its only equal adjacent pair at seam2. Let Q have order p'=(0,1,3,2,4,5,6), obtained by swapping positions3 and4, and prescribe its five ordered 3-face window colors as (0,1,0,0,1), with its only equal pair at seam3. Each word starts0 and ends1, and has exactly three changes; both are BAD in a hypothetical grand counterexample but locally do not themselves contradict closure. Their actual ordered face data, written as (ordered free triple; exterior fixed bits represented by the integer mask of coordinates fixed to1), are:
+ P: (0,1,2;0)->0, (1,2,3;1)->1, (2,3,4;3)->1, (3,4,5;7)->0, (4,5,6;15)->1.
+ Q: (0,1,3;0)->0, (1,3,2;1)->1, (3,2,4;3)->0, (2,4,5;11)->0, (4,5,6;15)->1.
+The only EXACT common ordered physical face is the last (4,5,6;15), prescribed consistently color1. None of the other prescribed ordered faces is the antipodal physical face with REVERSED free-coordinate order of another prescribed face: if such a pair existed, their free triples would be reverse orders and their exterior masks would be complements on the four fixed directions, which the displayed list plainly excludes. Therefore the ten partial color assignments extend to a GLOBAL active NORI coloring by independently choosing colors for each remaining orbit under (F,pi)->(bar F,rev pi), and giving orbit mates complementary colors. This validates the example without any SAT or literature search.
+LIMITATION OF EXAMPLE. The constructed full coloring MAY have other good one-switch geodesics; it is NOT a counterexample to NORI. It disproves only the asserted LOCAL CONTINUITY/NO-CROSSING statement for the simple zero-seam-side label on actual bad endpoint-balanced adjacent permutation vertices. A higher-index permutohedral proof must incorporate richer ordered-window certificates or a cellwise carrier, rather than depending on that one-bit label being locally constant.
+
+## Two-step movable-root shuttles halve the antipodal window transport length
+
+Let n>=5 and fix a distinguished direction i. Write W_z(a,i,b) for the ACTUAL physical ordered 3-face through vertex z with ordered free directions (a,i,b). Its physical identity depends only on the bits of z outside {a,i,b}. Let H_i denote the genuine four-edge window-shift graph retaining i in the two middle directions, as in Item nori_certified_square_complex_connected_antipodal_one_class_20261008.
+
+**Lemma (exact two-step exterior-bit shuttle).** For distinct a,b,d,i,k, the two edges
+ W_z(a,i,b) -- W_z(i,b,k) -- W_(z xor k)(d,i,b)
+are genuine physical consecutive-window-shift edges of H_i. The first edge has full direction word (a,i,b,k), the second has (d,i,b,k) read backward. Their intermediate ordered physical face is literally the SAME because k belongs to its free triple, and its outside fixed bits coincide. More generally choose an arbitrary representative of the initial face differing in free coordinates, and the endpoint d-face can have its newly fixed a-bit freely selected. Replacing z xor k by z gives an equally valid two-step move that swaps the outer direction a→d without toggling k. Interchanging a,d reverses the construction.
+
+**THEOREM (short antipodal path, all dimensions).** For each actual ordered window v=W_z(a,i,b), there exists an EVEN H_i path from v to its actual antipodal reversal tau v=W_(bar z)(b,i,a) of length at most
+ L_n = 2n-2 if n is EVEN, and L_n=2n if n is ODD.
+This path involves genuine physical ordered-face windows at every step; no abstract identification of distinct root charts is used.
+
+**Proof.** Choose one buffer direction d outside {a,b,i}; let K=[n]\{a,b,i,d}, of size m=n-4>=1. Starting with W_z(a,i,b), process every k in K exactly once by the above two-edge shuttle, alternately replacing the left outer direction a by d and d by a, and toggling the exterior bit k. This costs precisely 2m window-shift edges. While d is free, its eventual exterior fixed bit on returning to a can be selected arbitrarily through the hub representative at the intermediate face: the intermediate (i,b,k) face has d as a fixed coordinate when the left outer is a, but after the a→d move, d is free, and can be set before the d→a move. Choose this d-bit to be the COMPLEMENT of its initial value on the last d→a transition. The original a-bit is free at both the initial and final a-middle windows and poses no constraint. The original exterior bits k∈K have each been toggled exactly once; the b and i free bits are irrelevant to the physical ordered face.
+
+If m is even, the outer direction returns to a after 2m edges; the resulting physical face has the same free triple and order (a,i,b), with EVERY exterior bit in K∪{d} complemented. If m is odd, the outer direction is d; use one additional two-edge no-flip shuttle d→a with helper k_0∈K. This leaves the already flipped k_0 exterior bit unchanged and lets us choose the final d-bit as above. The exterior bits are now all complemented. Finally, at this fixed physical hub, swap the two outer free directions by three two-edge SAME-HUB direction replacements
+ (a,i,b) -> (h,i,b) -> (h,i,a) -> (b,i,a),
+where h is a third direction distinct from a,b,i; each arrow is a two-edge genuine window-shift path with a helper direction distinct from the four involved directions, possible because n>=5. This six-edge operation does not change the exterior bit assignment of the original {a,b,i} face. Hence we reach tau v with length
+ 2(n-4)+6 = 2n-2 if n even,
+ 2(n-4)+2+6 = 2n if n odd.
+The length is even. QED.
+
+**Quantitative corollary (strengthens Item nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009).** Under active NORI oddness, write N_i for the number of DISTINCT monochromatic certified window-shift edges having i in their middle pair. Antipodal reversal pairs the two directional edge-orbits, so their good-edge counts agree, N_L=N_R. Let E0=2^(n-2)(n-1)(n-2)(n-3) be the exact number of edges in EACH oriented H_i orbit. For any path P of the above length L<=L_n, every translated-and-coordinate-permuted (fixing i) copy gP joins a face to its antipodal reversed mate in EVEN steps; because its endpoint colors are opposite, gP has at least ONE equal-color adjacent window pair. Orbit averaging yields
+ 1 <= E_g[# good edges on gP] = L*N_L/E0.
+Consequently
+  N_L=N_R >= ceil(E0/L_n),
+  N_i >= 2*ceil(2^(n-2)(n-1)(n-2)(n-3)/L_n).
+In particular n=5 gives N_i>=40, n=6 gives N_i>=192, n=7 gives N_i>=550. These are exponentially many actual monochromatic directed four-edge connectors per direction, with balanced i-middle orientations.
+
+**Global forcing gap.** The two-step shuttles give exact coordinatewise physical root transport using ONE shared intermediate actual ordered face and a linear-length equivariant antipodal connector. This improves the previous 4n-6 path-length bound and its per-coordinate counting certificate. Nonetheless translated short paths may choose different good edges. The result gives a concrete local cross-root transition chart, but does NOT imply that these monochromatic connectors globally synchronize into one reversed-two-tail support collision or a full one-switch geodesic. The missing gluing theorem must relate edges selected from DIFFERENT translated shuttles while retaining full terminal two-direction and monochromatic run memory.
+
+## Root-bit shuttle squares are literal induced 4-cycles with two forbidden diagonals
+
+Fix n>=5 and four distinct directions a,i,b,k. For an actual physical cube vertex z, use the notation W_z(p,q,r) for the actual ordered three-face through z with ordered free directions (p,q,r). Put
+  A  = W_z(a,i,b),
+  B  = W_z(i,b,k),
+  A' = W_(z xor e_k)(a,i,b),
+  C  = W_z(k,a,i) = W_(z xor e_k)(k,a,i).
+The equality in C holds because k is a free direction. A and A' are DIFFERENT actual physical ordered-face windows: k is fixed outside their common free triple and its bit is opposite.
+
+**THEOREM (exact shuttle-square incidence, coloring-independent).** The four actual physical windows A,B,A',C are distinct and form an INDUCED FOUR-CYCLE in the full physical window-shift graph H_i:
+ A--B--A'--C--A.
+All four edges remain edges of W_good(c), the simplicial complex of jointly realizable <=1-switch geodesic windows, for EVERY binary physical ordered-three-face coloring c, because any consecutive two-window four-edge geodesic has at most one switch. However BOTH diagonals
+ A--A' and B--C
+are ABSENT even from the full color-free actual cooccurrence relation on direction-distinct geodesics. In particular the induced W_good complex on these four windows is exactly a C4 with NO 2-simplex. Neither local triangular subdivision of this square on its four vertices is valid.
+
+**Proof of the four edges.** A and B are the two consecutive actual windows of an ordered four-edge path with direction word (a,i,b,k) centered through z. Because B is FREE in k, it is the SAME ordered physical three-face when represented by z xor k, so B and A' are also consecutive actual windows of another path with the same four-direction order (a,i,b,k). Likewise C and A are consecutive windows with word (k,a,i,b), and C and A' are consecutive windows with that same order represented by z xor k. Every comparison has i in the shared middle pair. Thus these are four literal sector H_i shift edges.
+
+**Proof of the forbidden diagonals.** A and A' have identical ordered free-direction triples (a,i,b) but are distinct physical faces. Along any direction-distinct geodesic, the unordered free triples of windows at different positions are distinct: equality would repeat at least one direction. Thus no genuine path contains BOTH A,A'. For B and C, the ordered free triples are respectively (i,b,k) and (k,a,i); they share exactly the two free directions {i,k}. If two windows with a two-direction free overlap occur along a direction-distinct geodesic, their window positions must differ by exactly one, and their ordered triples must have a literal two-letter de Bruijn overlap, either the final two directions of B equaling the initial two of C or vice versa. Here (b,k)!=(k,a) and (a,i)!=(i,b). Hence no such path contains BOTH B,C. The induced 4-vertex complex has exactly the four claimed edges and no diagonals or triangles. QED.
+
+**Alternating obstruction is ACTUALLY REALIZABLE in active NORI.** Assign c(A)=c(A')=0 and c(B)=c(C)=1. These are valid independent face assignments: none of the four displayed ordered physical faces is the antipodal reversed mate of another (the potential pair A/A' has different ordered orientation under reversal since a!=b; B/C have different free triples). Therefore extend to a legal GLOBAL active coloring by assigning complementary colors to all physical antipodal-reversal mates and choosing any colors on remaining orbits. In this coloring the shuttle 4-cycle has NO monochromatic window-shift edge at all (all four compare unequal colors), although its four literal good-window-complex edges remain available as at-most-one-switch four-geodesics. In particular an arbitrary centered shuttle square need not yield a single good connector, nor can its two transport orders be merged into a good-window triangle using only these four windows.
+
+**Global interpretation.** The optimal-length antipodal root transport theorem (Item nori_exact_optimal_antipodal_window_shift_transport_length_and_density_20261009) constructs sector routes as sequences of genuine shifts. Its binary endpoint-parity forces an ODD number of monochromatic edges on the complete antipodal path, but this local 4-cycle shows why the elementary root-bit-shuttle relation cannot be filled automatically in W_good. A prospective beta*w pentagon annulus must recruit ADDITIONAL physical ordered windows and actual common <=1-switch geodesic certificates. The present no-go is local and sharp: it rules out the naive four-vertex triangular filler, not arbitrary longer annuli or the full NORI conjecture.
+
+Short antipodal transport and abundant monochromatic short connectors do not force a monochromatic or one-switch full path unless the successive transported windows are simultaneously certified by compatible geodesics.
+
+## Recent witness refinement
+
+# Root-bit shuttle squares are literal induced 4-cycles with two forbidden diagonals
+
+Fix n>=5 and four distinct directions a,i,b,k. For an actual physical cube vertex z, use the notation W_z(p,q,r) for the actual ordered three-face through z with ordered free directions (p,q,r). Put
+  A  = W_z(a,i,b),
+  B  = W_z(i,b,k),
+  A' = W_(z xor e_k)(a,i,b),
+  C  = W_z(k,a,i) = W_(z xor e_k)(k,a,i).
+The equality in C holds because k is a free direction. A and A' are DIFFERENT actual physical ordered-face windows: k is fixed outside their common free triple and its bit is opposite.
+
+**THEOREM (exact shuttle-square incidence, coloring-independent).** The four actual physical windows A,B,A',C are distinct and form an INDUCED FOUR-CYCLE in the full physical window-shift graph H_i:
+ A--B--A'--C--A.
+All four edges remain edges of W_good(c), the simplicial complex of jointly realizable <=1-switch geodesic windows, for EVERY binary physical ordered-three-face coloring c, because any consecutive two-window four-edge geodesic has at most one switch. However BOTH diagonals
+ A--A' and B--C
+are ABSENT even from the full color-free actual cooccurrence relation on direction-distinct geodesics. In particular the induced W_good complex on these four windows is exactly a C4 with NO 2-simplex. Neither local triangular subdivision of this square on its four vertices is valid.
+
+**Proof of the four edges.** A and B are the two consecutive actual windows of an ordered four-edge path with direction word (a,i,b,k) centered through z. Because B is FREE in k, it is the SAME ordered physical three-face when represented by z xor k, so B and A' are also consecutive actual windows of another path with the same four-direction order (a,i,b,k). Likewise C and A are consecutive windows with word (k,a,i,b), and C and A' are consecutive windows with that same order represented by z xor k. Every comparison has i in the shared middle pair. Thus these are four literal sector H_i shift edges.
+
+**Proof of the forbidden diagonals.** A and A' have identical ordered free-direction triples (a,i,b) but are distinct physical faces. Along any direction-distinct geodesic, the unordered free triples of windows at different positions are distinct: equality would repeat at least one direction. Thus no genuine path contains BOTH A,A'. For B and C, the ordered free triples are respectively (i,b,k) and (k,a,i); they share exactly the two free directions {i,k}. If two windows with a two-direction free overlap occur along a direction-distinct geodesic, their window positions must differ by exactly one, and their ordered triples must have a literal two-letter de Bruijn overlap, either the final two directions of B equaling the initial two of C or vice versa. Here (b,k)!=(k,a) and (a,i)!=(i,b). Hence no such path contains BOTH B,C. The induced 4-vertex complex has exactly the four claimed edges and no diagonals or triangles. QED.
+
+**Alternating obstruction is ACTUALLY REALIZABLE in active NORI.** Assign c(A)=c(A')=0 and c(B)=c(C)=1. These are valid independent face assignments: none of the four displayed ordered physical faces is the antipodal reversed mate of another (the potential pair A/A' has different ordered orientation under reversal since a!=b; B/C have different free triples). Therefore extend to a legal GLOBAL active coloring by assigning complementary colors to all physical antipodal-reversal mates and choosing any colors on remaining orbits. In this coloring the shuttle 4-cycle has NO monochromatic window-shift edge at all (all four compare unequal colors), although its four literal good-window-complex edges remain available as at-most-one-switch four-geodesics. In particular an arbitrary centered shuttle square need not yield a single good connector, nor can its two transport orders be merged into a good-window triangle using only these four windows.
+
+**Global interpretation.** The optimal-length antipodal root transport theorem (Item nori_exact_optimal_antipodal_window_shift_transport_length_and_density_20261009) constructs sector routes as sequences of genuine shifts. Its binary endpoint-parity forces an ODD number of monochromatic edges on the complete antipodal path, but this local 4-cycle shows why the elementary root-bit-shuttle relation cannot be filled automatically in W_good. A prospective beta*w pentagon annulus must recruit ADDITIONAL physical ordered windows and actual common <=1-switch geodesic certificates. The present no-go is local and sharp: it rules out the naive four-vertex triangular filler, not arbitrary longer annuli or the full NORI conjecture.

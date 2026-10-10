@@ -1,3 +1,0 @@
-# Antipodal-reversal amplification: complementary triples and the two-junta obstruction
-
-In dimension six, endpoint-square rigidity strengthens sharply under antipodal-reversal oddness. Under failure of all six-step antipodal geodesics, sensitivity of an ordered triple to one exterior coordinate forces four orderings of its complementary triple to have constant colors; sensitivity to two exterior coordinates forces an order-only comparison coloring on all six complementary orderings. Hence sensitivity to all three exterior directions is impossible. Precise statements and proofs are in the associated Results.

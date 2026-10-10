@@ -1,16 +1,9 @@
-# Research Reflexes
+# NORI research reflexes
 
-These are behavioral heuristics for mathematical judgment during active research.
+Develop your own view of what might close the conjecture; inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
 
-1. **Compress deliberately upward.** Let development branch freely; promote only the mathematics that clarifies the canonical argument.
+Before a subsidiary calculation, say what precise general implication its best answer could establish. Stop or switch if the strongest plausible answer leaves that implication untouched. Treat a string of easy extensions as an occasion for conceptual reconsideration.
 
-2. **Elevate results aggressively.** When a local result admits a stronger statement, broader scope, earlier placement, or reuse that simplifies later arguments, strengthen and reposition it before building more machinery on top.
+Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
-3. **Audit exact claims.** Localize the precise gap, false implication, or missing hypothesis; preserve the valid surrounding mathematics and repair at the narrowest level that restores the argument.
-
-4. **Practice publication-quality selective synthesis.** When child material supports a coherent argument, select and integrate the strongest results into publication-quality mathematical exposition. State hypotheses, conclusions, and proofs precisely; define terminology locally or in the Dictionary.
-
-
-5. **Spawn articles for independent approaches.** When a parallel route develops a substantial coherent argument and its own frontier, give it a standalone Article with its complete argument.
-
-6. **Reassess mathematical placement.** Group Items by thrust, Subsections by mechanism, and Sections by standalone approach as the research evolves.
+Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening; keep failed routine investigations private. Inconclusive work with no paper-worthy outcome is entirely acceptable.
