@@ -392,6 +392,7 @@ Items are atomic nodes under Subsections with one body and optional mathematical
 - `coordination_checkpoint(session,task_id,checkpoint,lease_minutes := 90)`: checkpoint and renewal; JSON requires mathematical_change, obligation_effect, next_step, alternative_comparison. Optional bridge_unchanged tracks repeated unchanged central obligations.
 - `coordination_finish(session,task_id,outcome,decision)`: outcome JSON requires mathematical_change, evidence, remaining_bridge, next_step, alternative_comparison; decision: continue, park, resolve, switch.
 - `coordination_publish_update(session,kind,objectives,item_versions,discovery,implication,priority_change,evidence := [],reopening_condition := null)`: records mathematical and strategic impact with exact currently valid Item versions, notifying active dependent claims.
+- `coordination_commit_batch_update(session,batch_id,overlap_checked,kind,objective_ids,item_versions,discovery,implication,priority_change,evidence := [],reopening_condition := null)`: commits a staged mathematical publication and its strategic consequences in one transaction; Item versions are checked after manuscript commit and rollback together on failure.
 - `coordination_decide_versioned(session,objective_id,expected_revision,state,truth_status,reason,reopening_condition := null)`: optimistic objective lifecycle changes; state proposed/active/parked/resolved. Track truth independently.
 - `coordination_prioritize(session,objective_id,expected_revision,priority_rank,selection_assessment,selection_rationale)`: optimistic ranking and documented comparison; assessment JSON requires mathematical_relevance, tractability, information_gain, reuse, expected_effort, active_overlap, strongest_alternative.
 - `coordination_record_baseline(session,snapshot_revision)`: dated inventory and obligations.
@@ -496,7 +497,7 @@ def build(schema: str):
         lines += ["", "## Objectives and exact bridges", ""]
         for obj in strategy.get("active_objectives", []):
             lines += [
-                "### " + obj["id"] + " (" + obj["relevance"] + "; " + obj["state"] + ")",
+                "### " + str(obj.get("priority_rank") or "?") + ". " + obj["id"] + " (" + obj["relevance"] + "; " + obj["state"] + ")",
                 "",
                 "- Target: " + obj["target"],
                 "- Central bridge: " + obj["bridge"],
