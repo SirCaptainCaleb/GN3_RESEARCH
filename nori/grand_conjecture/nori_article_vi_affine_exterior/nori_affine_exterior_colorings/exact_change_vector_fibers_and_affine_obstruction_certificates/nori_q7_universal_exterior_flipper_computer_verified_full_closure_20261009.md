@@ -1,0 +1,19 @@
+# Q7 one-universal-flipper closure: exact physical g-third SAT certificate
+
+# Q7 universal-flipper forcing: exact five-window criterion and finite SAT certificate
+
+Let R be six coordinate directions and g the seventh. Let c be any legal antipodally reversal-odd coloring of **physical ordered three-faces** of Q_7. Assume g is a universal exterior flipper: for every ordered face whose free directions omit g, changing its fixed g-bit complements its color. Equivalently, write c(F,π)=x_g+f(F|R,π) on these faces. Antipodal reversal makes f complement-reversal **even** on Q_6:
+f(bar H,rev π)=f(H,π).
+For the ordered faces containing g, write h; these carry the original complement-reversal **odd** relation, with arbitrary nonlinear dependence on their four residual exterior bits.
+
+**Computer-assisted theorem (reproducible exact finite encoding).** Under these hypotheses, a full Q_7 antipodal geodesic with at most one three-face color change exists **with g in the third move**. Consequently, combining this finite result with the established exact universal-flipper lifting theorem and Q_6 NORI closure, every legal Q_n coloring having at most six non-universal-flipper directions has a good full geodesic.
+
+**Analytic extraction lemma.** Take a full order (a,b,g,c,d,e,f) and fix all six residual starting bits. Its five ordered-face colors have form
+(G_1,G_2,G_3, z+F_1,z+F_2),
+where (G_1,G_2,G_3) are the literal h-colors of (a,b,g),(b,g,c),(g,c,d), the two F-values are the f-colors of (c,d,e),(d,e,f), and z=1+x_g may be chosen freely. At least one of the two g-start bits gives a good full path whenever (i) G_1=G_2=G_3, or (ii) (G_1,G_2,G_3) has exactly one change and F_1=F_2. Conversely neither choice works if G alternates, or if G has one change and F_1≠F_2. This follows by choosing z to match the first trailing color to G_3 and counting changes. Thus the seven-dimensional proof obligation reduces to forcing one of (i),(ii) in a physical residual root/order packet.
+
+**Exact SAT encoding.** One Boolean variable represents each complement-reversal-even orbit of a no-g ordered physical three-face of Q_6: (20 unordered free triples) × (6 direction orders) × (8 residual exterior assignments) / 2 = 480 variables. A second Boolean variable represents each complement-reversal-odd orbit of a g-containing ordered physical three-face: 15 × 6 × 16 / 2 = 720 variables, with the opposite member interpreted as the variable plus one. Total: 1200 variables. For each of 6! residual permutations (a,b,c,d,e,f) and each of the 2^7 actual starting roots, evaluate literally the five ordered-face colors of (a,b,g,c,d,e,f), with the exterior fixed bit at window i equal to its initial bit plus its prefix-traversal indicator. Forbid each of the ten constant-or-one-switch 5-bit patterns using one 5-literal clause. This makes 921600 clauses before exact syntactic deduplication and 737280 after deduplication. Unsatisfiability is precisely the claimed existence conclusion for every coloring of this class.
+
+**Computation.** The attached self-contained Python/ctypes source `nori_q7_universal_flipper_sat.py` implements the exact quotient, physical exterior-bit accounting, and all clauses, invoking system libz3.so.4. Its execution printed `numvars 1200`, `clauses 737280`, and `unsat` (Z3). The same model with g allowed in positions 3,4,5 was also UNSAT. This is a computational proof conditional on the correctness of the generator and solver; an independently checkable SAT UNSAT certificate or conceptual argument is a desirable next audit. No claim is made for arbitrary Q_7 colorings without a universal flipper, nor for the unrestricted grand conjecture.
+
+**Further task.** Extract a human proof of the force-(i)-or-(ii) packet lemma, ideally from antipodal reversal plus six-coordinate face equality. Independently verify the Boolean encoding/certificate and pursue replacements for the universal-flipper hypothesis.

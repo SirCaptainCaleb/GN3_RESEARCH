@@ -1,0 +1,17 @@
+# Q7 closure for arbitrary nonlinear color dependence on at most four globally active exterior axes
+
+# Q7 NORI closure for arbitrary nonlinear dependence on four global exterior coordinates
+
+Fix any set A⊂[7] with |A|≤4. Let c be a legal antipodally reversal-odd coloring of physical ORDERED three-faces of Q7 such that, for each ordered free triple t=(a,b,c), the color depends only on t and the fixed exterior bits in A\\{a,b,c}; fixed bits outside A are inert. The dependence on bits of A may be COMPLETELY arbitrary and nonlinear, and may vary between triples; there are no flipper, affine, or layer assumptions.
+
+**Computer-verified theorem.** Every coloring in this class admits a full seven-edge antipodal cube geodesic whose five ordered-three-face colors change at most once.
+
+**Exact finite reduction.** By relabeling take A={0,1,2,3}. For each of the 7·6·5=210 ordered triples t, let E_t=A\\set(t) be the sorted list of fixed active directions. A physical color parameter is indexed by (t,z) with z∈{0,1}^{E_t}. The NORI equation identifies (t,z) with (reverse t,1−z), assigning the complementary color. There are 576 reversal-orbit Boolean variables (this count is the exact orbit enumeration). For each complete direction order p and initial A-bit vector x∈{0,1}^4, calculate the five actual ordered-face color variables using z=restriction of x plus the prefix-toggle indicator to E_{p_i p_(i+1) p_(i+2)}. The other three starting bits are irrelevant. For each path, forbid all ten binary five-window words with at most one switch. Reversed direction orders encode the same path constraints under NORI, so one may take lexicographically one representative of each reversal pair: 7!/2=2520 orders. The resulting formula has EXACTLY 2520·16·10=403200 distinct 5-literal clauses and 576 variables.
+
+Z3 returned UNSAT in 9.7 seconds for this exact instance. Its reproducible self-contained generator is nori_q7_exterior_axis_support_sat.py with ACTIVE=4. For ACTIVE=1,2,3 the same generator returned UNSAT with respectively (165,50400), (255,100800), and (387,201600) (variables,clauses). Therefore the theorem holds for any |A|≤4.
+
+**Proof scope.** This is a complete finite SAT exhaustion relative to the correctness of the generator and SAT solver; an independent LRAT/DRAT refutation or conceptual proof should be sought. It is a strictly larger Q7 subclass than the former one-global-exceptional-bit family (Item nori_q7_one_exceptional_exterior_bit_forced_second_position_20261009), allowing any four exterior bits to interact nonlinearly. Arbitrary NORI Q7 can depend on all seven exterior axes across different ordered faces and remains unresolved.
+
+**Consequence for a potential Q7 counterexample.** If one exists, for every choice of four-coordinate set A there must be some ordered-three-face color whose value changes upon toggling a fixed coordinate outside A, with the other fixed exterior bits held constant. Equivalently its global essential exterior-coordinate set has size at least FIVE. This is an exact low-dimensional sensitivity lower bound on any counterexample.
+
+**Frontier.** The analogous ACTIVE=5 instance has 840 variables and 806400 clauses; Z3 did not resolve it within the run budget. Higher active-coordinate complexity, and extension to all dimensions, remain open. Seek analytic certificates replacing the finite Q7 computations, and root/order transfer that makes the size of the globally active exterior set irrelevant.

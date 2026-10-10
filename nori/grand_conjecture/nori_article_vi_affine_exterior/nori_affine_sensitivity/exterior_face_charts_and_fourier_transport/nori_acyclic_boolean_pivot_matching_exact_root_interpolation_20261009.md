@@ -1,0 +1,13 @@
+# Acyclic Boolean pivotal matching: dimension-independent root interpolation
+
+Theorem (acyclic Boolean pivot matching). Fix any dimension n>=4, order p, rooted window colors w_i(x), and seam bits d_i=w_i+w_(i+1), i in [m], m=n-3. For a Boolean function f write Delta_j f(x)=f(x)+f(x+e_j). Select a set I of seam indices and injectively assign distinct root coordinates rho(i) to i in I. Assume Delta_(rho(i)) d_i = 1 at every root. Form a directed graph on I with arc j to i (j!=i) whenever d_i depends on x_(rho(j)); equivalently Delta_(rho(j))d_i is not identically zero. If this graph is acyclic, then for ANY target seam values t_i at i in I, exactly 2^(n-|I|) roots realize d_i=t_i simultaneously. In particular, min_root switches <= m-|I|. If |I|>=m-1, a full one-switch antipodal geodesic exists.
+
+Proof. Choose the n-|I| unused root bits arbitrarily. Process seam indices in topological order of the directed graph. On processing i, every other pivotal coordinate influencing d_i has already been assigned, because a missing arc means the corresponding Boolean derivative vanishes identically. The pivotal coordinate rho(i) toggles d_i for every choice of other bits, hence there is exactly one value making d_i=t_i. Later choices preserve previous equations. Counting the free root bits gives 2^(n-|I|) roots.
+
+Feedback-set corollary. If removing B from the pivotal dependency graph makes it acyclic, the same reasoning on I\B gives exactly 2^(n-|I|+|B|) roots satisfying all retained seam equations and at most m-|I|+|B| changes. Define alpha(p) as the maximum number of seams admitting an acyclic pivotal matching. Any putative NORI counterexample must obey alpha(p)<=n-5 for every full direction order p. The physical-face condition guarantees w_i are true faces; the proof needs no oddness assumption.
+
+Extension: right-triangular seam interpolation (Item nori_order_local_boolean_seam_triangularization_dimension_independent_20261009) is the case rho(i)=p_(i+3), whose dependency arcs point forward. This result allows arbitrary pivotal coordinates and arbitrary nonlinear lower-order dependencies.
+
+Abstract sharpness example: d_1=u+v and d_2=1+u+v have global unit derivatives in each variable. Assigning distinct pivots yields a directed two-cycle, and the equations d_1=d_2=0 are inconsistent; exactly one of them can vanish. This example is a statement about arbitrary Boolean seam systems and makes no claim of NORI realizability.
+
+Open obligation: Find an all-but-one acyclic pivotal matching (or a fiberwise nonlinear substitute) in at least one genuine full direction order of each legal coloring.
