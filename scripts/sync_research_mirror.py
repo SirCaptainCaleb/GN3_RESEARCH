@@ -480,6 +480,33 @@ Put correct, significant mathematics into the coherent manuscript. Preserve deci
         appendix = latest_composition(data, "subsection", "appendix_known_obstructions_to_proposed_nori_mechanisms")
         if appendix:
             write(root / "KNOWN_OBSTRUCTIONS.md", appendix.get("body") or "")
+        write(root / "WORKER_PROMPT.md", """# NORI research worker
+
+You are an independent mathematician trying to solve the NORI grand conjecture.
+Use Supabase RESEARCH (`fewmvjslkhoygixiimgn`), schema `nori`.
+In a new conversation begin with `select * from nori.boot();` and preserve
+its session_id. In this continuing conversation reuse the existing session_id;
+refresh with `nori.status()` and `nori.changes(...)`.
+
+Read BOOT.md, OVERVIEW.md, GUIDE.md, REFLEXES.md, KNOWN_OBSTRUCTIONS.md,
+API.md and all eight Article compositions; investigate relevant Sections and
+Subsections. Develop your own view of how a full proof might work. Challenge
+shared assumptions and representations. Before spending substantial effort
+on a subsidiary question, identify the precise general implication its
+success would establish. Reconsider after repeated locally tractable results
+that leave that implication open. Explore a different formulation whenever
+that is the strongest mathematical opportunity.
+
+Publish only correct, significant, coherent mathematics using
+`nori.publish_subsection` or the Section/Article composition interface.
+Subsections are the smallest publication unit. Preserve exact hypotheses,
+proofs, reproducible obstructions and true status. Review closely related
+manuscripts before adding another Subsection. There are no Items, claims,
+leases, checkpoints, assigned rankings or publication quotas.
+
+Persist manuscript advances selectively. If nothing deserves space in the
+paper, finish candidly: “I couldn't find anything worth publishing.”
+""")
 
     broadcast_lines = [
         "# Startup broadcasts", "",
@@ -636,14 +663,32 @@ Generated: {rev.get('generated_at')}
             index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
     write(root / "grand_conjecture" / "README.md", "\n".join(index))
     if schema == "nori":
-        # A readable assembled paper alongside the individually revisable
-        # Article, Section and Subsection compositions. Preserve their exact text.
+        # Render a coherent paper without duplicating complete parent-level
+        # proofs at each hierarchy level. Full parent compositions remain
+        # accessible beside the assembled manuscript.
+        def contextual_preamble(body: str) -> str:
+            paragraphs = []
+            for para in (body or "").strip().split("\\n\\n"):
+                p = para.strip()
+                if not p or p.startswith("#"):
+                    continue
+                if p.startswith(("**Theorem", "**Lemma", "Theorem ", "Lemma ", "Proof.", "Proof:")):
+                    break
+                if len(p) > 1750:
+                    break
+                paragraphs.append(p)
+                if len(paragraphs) >= 2 or sum(len(x) for x in paragraphs) >= 1400:
+                    break
+            return "\\n\\n".join(paragraphs)
+
         sections_by_id = {x["id"]: x for x in section_items}
         for a in articles:
             combined = [f"# {a.get('title') or a['id']}", ""]
             main = latest_composition(data, "article", a["id"])
             if main:
-                combined += ["## Article synopsis and main argument", "", main.get("body") or "", ""]
+                combined += ["## Article setting and orientation", "",
+                             contextual_preamble(main.get("body") or ""), "",
+                             f"*Full Article composition: [source manuscript](../{a['id']}.md).*", ""]
             members = sorted((x for x in data["article_sections"] if x.get("article_id") == a["id"]),
                              key=lambda x: (x.get("position") or 0, x.get("section_id") or ""))
             for member in members:
@@ -653,7 +698,8 @@ Generated: {rev.get('generated_at')}
                 combined += [f"## {sec.get('title') or sec['id']}", ""]
                 sc = latest_composition(data, "section", sec["id"])
                 if sc:
-                    combined += [sc.get("body") or "", ""]
+                    combined += [contextual_preamble(sc.get("body") or ""), "",
+                                 f"*Full Section composition: [source manuscript]({sec['id']}.md).*", ""]
                 subs = sorted(subsections_by_section.get(sec["id"], []),
                               key=lambda x: (x.get("subsection_no") or 0, x.get("id") or ""))
                 for sub in subs:
