@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: Article Section Subsection; add Aharoni-Haxell Toolkit 2026-10-10
+# NORI assembled publication: Article Section Subsection; Aharoni-Haxell Toolkit freshness sync
 
 on:
   workflow_dispatch:
