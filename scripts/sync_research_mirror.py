@@ -478,6 +478,11 @@ def build(schema: str):
             {k: u.get(k) for k in ("id", "kind", "objective_ids", "affected_item_versions", "mathematical_discovery", "implication", "priority_change", "reopening_condition", "evidence_references", "created_at")}
             for u in strategy.get("recent_strategic_updates", [])
         ]
+        public_strategy["relationships"] = [
+            {k: e.get(k) for k in ("id", "source_id", "target_id", "relation",
+                                 "evidence_item_ids", "assessment", "created_at")}
+            for e in strategy.get("relationships", [])
+        ]
         write_json(root / "COORDINATION.json", public_strategy)
         lines = [
             "# NORI live-strategy snapshot", "",
