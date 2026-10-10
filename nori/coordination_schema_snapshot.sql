@@ -362,7 +362,7 @@ select jsonb_build_object(
   'live_revision',(select live_revision from clk),
   'changes_since_snapshot',(select count(*) from research_core.events e where e.project_schema='nori' and e.local_revision>(select snapshot_revision from clk)),
   'composition_dependency_stale',(select count(*) from jsonb_array_elements((select v->'articles' from stat)) x where (x->'composition_status'->>'stale')::boolean),
-  'new_item_candidates_since_article_composition',(select jsonb_array_length(items) from fresh_items),
+  'new_item_candidates_since_article_composition',(select count(*) from nori.nodes where type='item' and created_at>(select max_composed from article_age)),
   'strategic_updates_after_snapshot',(select count(*) from nori.coordination_updates u join research_core.events e on e.project_schema='nori' and e.entity_type='coordination_updates' and e.entity_id=u.id::text where e.local_revision>(select snapshot_revision from clk))
  ),
  'active_objectives',(select coalesce(jsonb_agg(jsonb_build_object(
@@ -492,3 +492,9 @@ GRANT EXECUTE ON FUNCTION nori.coordination_strategy() TO service_role;
 GRANT EXECUTE ON FUNCTION nori.coordination_metrics() TO service_role;
 GRANT EXECUTE ON FUNCTION nori.coordination_record_baseline(text,bigint) TO service_role;
 GRANT EXECUTE ON FUNCTION nori.coordination_decide_versioned(text,text,integer,text,text,text,text) TO service_role;
+
+-- Artifact publisher/tree export are private service endpoints.
+REVOKE EXECUTE ON FUNCTION public.research_artifact_publish_schema(text,bigint,text,text,text,text,text,bigint,text,bigint) FROM PUBLIC, anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.research_mirror_tree_paths(text,integer,integer) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.research_artifact_publish_schema(text,bigint,text,text,text,text,text,bigint,text,bigint) TO service_role;
+GRANT EXECUTE ON FUNCTION public.research_mirror_tree_paths(text,integer,integer) TO service_role;
