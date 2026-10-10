@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# coordination strategy rollout: refresh ranked-objective, security, and freshness-adjusted artifact
+# coordination strategy rollout: final atomic-publication API and rank-aware artifact
 
 on:
   workflow_dispatch:
