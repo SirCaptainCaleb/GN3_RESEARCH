@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI standard research workflow: mathematical overview and selective publication
+# NORI full-manuscript workflow: Article Section Subsection publication
 
 on:
   workflow_dispatch:
