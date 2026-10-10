@@ -503,7 +503,7 @@ def build(schema: str):
             lines.append("- " + str(u["id"]) + " (" + u["kind"] + "): " +
                          str(u["mathematical_discovery"]) + ". Implication: " + str(u["implication"]))
         lines += ["", "Consult nori.coordination_strategy() and nori.status() for current state. Artifacts are snapshots.", ""]
-        write(root / "STRATEGY.md", "\\n".join(lines))
+        write(root / "STRATEGY.md", "\n".join(lines))
         guide_text = (root / "GUIDE.md").read_text(encoding="utf-8")
         write(root / "GUIDE.md", guide_text + """
 ## NORI coordination
