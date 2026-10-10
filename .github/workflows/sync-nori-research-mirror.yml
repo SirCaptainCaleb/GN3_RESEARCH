@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: Article Section Subsection; refresh worker frontiers after logarithmic lower and upper results
+# NORI assembled publication: update startup to NORI1-preserving strengthened structures only
 
 on:
   workflow_dispatch:
