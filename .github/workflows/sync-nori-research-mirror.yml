@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# coordination strategy rollout: refresh after research mirror generator and database APIs
+# coordination strategy rollout: refresh ranked-objective, security, and freshness-adjusted artifact
 
 on:
   workflow_dispatch:
