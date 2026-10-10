@@ -446,7 +446,7 @@ def build(schema: str):
 **Publish mathematics that resolves consequential questions after the unrestricted NORI3 conjecture's refutation. Establish correctness, precise scope, and its effect on an open problem.**
 
 ## Research freely
-Begin by developing your own view of the most consequential remaining open questions: logarithmic monochromatic-path guarantees, boundary-compatible reversal symmetry, edge-order realizability, and unrestricted NORI1/NORI2. Use the repository to test and improve that view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
+Begin by developing your own view of stronger NORI-like structural hypotheses that preserve EVERY legal antipodally odd NORI1 physical-edge coloring, and preferably all direction-only boundary 3-tournaments. Seek a genuine common theorem or transfer, not just two cases packaged in one definition. Study boundary-compatible reversal symmetry and global edge-order realizability only when they materially advance this NORI1-preserving goal. Unrestricted NORI2 and unrestricted NORI3 logarithmic extremal refinements are no longer research targets. Use the repository to test and improve your view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
 
 Before investing deeply in a subsidiary question, identify the mathematical implication that would make its solution useful. Make that implication explicit enough to examine. If the strongest plausible answer would leave the main argument in essentially the same position, reconsider the question.
 
@@ -456,6 +456,9 @@ When an approach already has substantial development, assess what additional ins
 
 Spend your effort on the strongest mathematical opportunity you can identify. Report an inconclusive outcome plainly when that is where the investigation ends.
 
+## Strengthening criterion
+A proposed framework must retain the ENTIRE original NORI1 class, not just affine, direction-only, or otherwise selected edge colorings. Prefer retaining all direction-only boundary 3-tournaments as well. Same-face reversal-oddness and antipodal invariance form a plausible 3-face subclass, but reversal of a one-element order is the identity, so same-face reversal-oddness cannot literally be required for NORI1. Explain explicitly how any uniform definition handles that degeneracy. Before proposing a subsidiary theorem, identify its actual implication for arbitrary NORI1 edge colorings or a common statement genuinely uniting NORI1 and boundary 3-tournaments. Excluding the logarithmic (3,3)-tournament construction is necessary but not sufficient. Mere piecewise definitions, new constants, and unrelated restricted classes are not consequential.
+
 ## Manuscript structure and publication
 Read the original (now refuted) grand conjecture, the latest counterexamples, OVERVIEW.md, KNOWN_OBSTRUCTIONS.md, and all eight Article compositions before choosing your approach; follow relevant Sections and Subsections for proofs. Historical effort is evidence about cost, not a ranking. Independently challenge inherited formulations and pursue original routes.
 
@@ -463,7 +466,7 @@ Articles, Sections, and Subsections form one assembled manuscript. **A Subsectio
 
 Publish only substantial proofs, useful reductions, consequential counterexamples, meaningful corrections, or well-motivated promising mechanisms. A short decisive lemma qualifies; length, work expended, and another tractable special case do not themselves justify publication. An uncertain idea should be labeled accurately. A serious session may finish with **nothing worth publishing**; routine failed attempts do not need a permanent record.
 
-The Known obstructions appendix preserves counterexamples and reusable false implications with their exact scopes. The unrestricted original NORI3 one-switch conjecture and all fixed k>=3 switch hierarchies are disproved. Do not treat these as open questions or revive the obsolete universal square-root monochromatic-path target. Distinguish them from open unrestricted NORI1/NORI2 and sharp logarithmic/boundary-compatible questions.
+The Known obstructions appendix preserves counterexamples and reusable false implications with their exact scopes. The unrestricted original NORI3 one-switch conjecture and all fixed k>=3 switch hierarchies are disproved. Do not treat these as open questions or revive the obsolete universal square-root monochromatic-path target. Distinguish them from the open unrestricted NORI1 full-monochromatic-geodesic problem and NORI1-preserving strengthened variants of the higher-face problems. Do not initiate old unrestricted NORI2 investigations. Preserve established logarithmic NORI3 counterexamples as obstructions against overly weak proposed generalizations.
 
 Use the boot session_id for writes. Publish Subsections with `publish_subsection` and optimistic composition versions; use `compose` for Sections and Articles. Stage related writes and commit atomically when needed. Historical identifiers are recoverable from a fixed GitHub snapshot through explicit lookup only. No Items, tasks, leases, checkpoints, or compulsory progress reporting.
 """)
@@ -496,21 +499,30 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-Choose independently a consequential unresolved question:
-1. Does every legal NORIk coloring have a monochromatic geodesic of
-   length Omega_k(log n)? Determine the sharp unrestricted scale.
-   For bounded exterior support, the logarithmic bound is already sharp.
-2. What long-path guarantee survives same-face reversal oddness and
-   antipodal invariance, especially for boundary 3-tournaments?
-3. Which boundary comparison orientations are globally edge-orderable?
-   Any transfer must preserve original-vertex simplicity and physical faces.
-4. Can unrestricted exterior-dependent NORI2 force two switches? What
-   principle resolves NORI1?
+The ONLY active target is a stronger NORI-style class or theorem that
+retains every legal antipodally odd NORI1 physical-edge coloring,
+and ideally also all direction-only boundary 3-tournaments.
+Do not work on old unrestricted NORI2, or further refine the unrestricted
+NORI3 logarithmic obstruction for its own sake.
+
+Investigate independently a consequential route toward such a unification.
+A candidate three-face symmetry is separate same-face reversal oddness
+c(F,rev(pi))=1-c(F,pi) and antipodal invariance c(bar F,pi)=c(F,pi).
+It excludes the existing logarithmic NORI3 examples and contains boundary
+3-tournaments. But it cannot be imposed verbatim for k=1, where reversal
+is the identity. A serious framework must explain how ALL legal NORI1
+instances survive, without merely placing unrelated cases side by side.
+
+Prioritize a proven common long/spanning-path theorem, a meaningful lift
+or transfer preserving real physical faces and original-direction
+simplicity, or a rigorous obstruction to a proposed unified structure.
+Edge-order acyclicity and boundary comparisons are useful only insofar
+as they illuminate this common NORI1-preserving problem.
 
 Challenge shared assumptions and representations. Before substantial work,
 identify the exact implication its strongest possible result would establish.
-Avoid routine constant improvements and low-dimensional searches without
-a consequential implication. Explore new formulations independently.
+Avoid routine construction improvements, unrestricted NORI2, and
+small-dimensional searches without a consequential NORI1-preserving implication. Explore new formulations independently.
 
 Publish only correct, significant, coherent mathematics using
 `nori.publish_subsection` or the Section/Article composition interface.
