@@ -446,7 +446,7 @@ def build(schema: str):
 **Publish mathematics that resolves consequential questions after the unrestricted NORI3 conjecture's refutation. Establish correctness, precise scope, and its effect on an open problem.**
 
 ## Research freely
-Begin by developing your own view of stronger NORI-like structural hypotheses that preserve EVERY legal antipodally odd NORI1 physical-edge coloring, and preferably all direction-only boundary 3-tournaments. Seek a genuine common theorem or transfer, not just two cases packaged in one definition. Study boundary-compatible reversal symmetry and global edge-order realizability only when they materially advance this NORI1-preserving goal. Unrestricted NORI2 and unrestricted NORI3 logarithmic extremal refinements are no longer research targets. Use the repository to test and improve your view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
+Begin by developing your own view of stronger NORI-like structural hypotheses that preserve EVERY legal antipodally odd NORI1 physical-edge coloring AND EVERY direction-only boundary 3-tournament, with edge-ordered graph increasing-tight-path boundary tournaments as a NONNEGOTIABLE minimum if preserving the entire boundary class encounters a rigorous obstruction. Seek a genuine common theorem or transfer, not just two cases packaged in one definition. Study boundary-compatible reversal symmetry and global edge-order realizability only when they materially advance this NORI1-preserving goal. Unrestricted NORI2 and unrestricted NORI3 logarithmic extremal refinements are no longer research targets. Use the repository to test and improve your view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
 
 Before investing deeply in a subsidiary question, identify the mathematical implication that would make its solution useful. Make that implication explicit enough to examine. If the strongest plausible answer would leave the main argument in essentially the same position, reconsider the question.
 
@@ -457,7 +457,7 @@ When an approach already has substantial development, assess what additional ins
 Spend your effort on the strongest mathematical opportunity you can identify. Report an inconclusive outcome plainly when that is where the investigation ends.
 
 ## Strengthening criterion
-A proposed framework must retain the ENTIRE original NORI1 class, not just affine, direction-only, or otherwise selected edge colorings. Prefer retaining all direction-only boundary 3-tournaments as well. Same-face reversal-oddness and antipodal invariance form a plausible 3-face subclass, but reversal of a one-element order is the identity, so same-face reversal-oddness cannot literally be required for NORI1. Explain explicitly how any uniform definition handles that degeneracy. Before proposing a subsidiary theorem, identify its actual implication for arbitrary NORI1 edge colorings or a common statement genuinely uniting NORI1 and boundary 3-tournaments. Excluding the logarithmic (3,3)-tournament construction is necessary but not sufficient. Mere piecewise definitions, new constants, and unrelated restricted classes are not consequential.
+A proposed framework has TWO preservation tests. (1) Retain the ENTIRE original NORI1 class, including arbitrary nonlinear antipodally odd physical-edge colorings; never replace it by an affine or special subclass. (2) Retain the ENTIRE direction-only boundary 3-tournament class whenever feasible: for each triple of distinct directions a,b,c, a rule b(a,b,c) obeying b(c,b,a)=1-b(a,b,c) must be admitted by c(F,(a,b,c))=b(a,b,c) on every physical face. As an absolute minimum, no proposal may discard edge-ordered-graph boundary tournaments arising from ANY global strict edge order prec on K_n via b(a,b,c)=1_{ {a,b} prec {b,c} }. This subclass is precisely the acyclic-comparison-orientation edge-order-realizable class, and its increasing vertex-simple paths are the motivating tight paths. A proposal preserving only that minimum instead of all boundary tournaments must identify explicitly what additional hypothesis excludes the rest and why it is indispensable. Do not silently narrow either family. Same-face reversal-oddness and antipodal invariance form a plausible 3-face subclass, but reversal of a one-element order is the identity, so same-face reversal-oddness cannot literally be required for NORI1. Explain explicitly how any uniform definition handles that degeneracy. Before proposing a subsidiary theorem, test its hypotheses explicitly against BOTH mandatory families, and identify its actual implication for arbitrary NORI1 edge colorings and edge-ordered increasing tight paths; strive for the entire boundary tournament class. An improvement restricted solely to a peripheral subclass is not progress toward the requested strengthening. Excluding the logarithmic (3,3)-tournament construction is necessary but not sufficient. Mere piecewise definitions, new constants, and unrelated restricted classes are not consequential.
 
 ## Manuscript structure and publication
 Read the original (now refuted) grand conjecture, the latest counterexamples, OVERVIEW.md, KNOWN_OBSTRUCTIONS.md, and all eight Article compositions before choosing your approach; follow relevant Sections and Subsections for proofs. Historical effort is evidence about cost, not a ranking. Independently challenge inherited formulations and pursue original routes.
@@ -500,22 +500,32 @@ Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
 The ONLY active target is a stronger NORI-style class or theorem that
-retains every legal antipodally odd NORI1 physical-edge coloring,
-and ideally also all direction-only boundary 3-tournaments.
+retains EVERY legal antipodally odd NORI1 physical-edge coloring AND
+EVERY direction-only boundary 3-tournament. The ABSOLUTE MINIMUM,
+if a rigorous obstruction prevents full boundary preservation, is ALL
+boundary tournaments induced by global edge orders of K_n:
+b(a,b,c)=1 exactly when {a,b} precedes {b,c} in the edge order.
+These include increasing tight paths in ordinary edge-ordered graphs.
+A proposal retaining only this minimum must explicitly justify the
+exclusion of other boundary tournaments; arbitrary weakening is rejected.
 Do not work on old unrestricted NORI2, or further refine the unrestricted
 NORI3 logarithmic obstruction for its own sake.
 
 Investigate independently a consequential route toward such a unification.
 A candidate three-face symmetry is separate same-face reversal oddness
 c(F,rev(pi))=1-c(F,pi) and antipodal invariance c(bar F,pi)=c(F,pi).
-It excludes the existing logarithmic NORI3 examples and contains boundary
-3-tournaments. But it cannot be imposed verbatim for k=1, where reversal
-is the identity. A serious framework must explain how ALL legal NORI1
-instances survive, without merely placing unrelated cases side by side.
+It excludes the existing logarithmic NORI3 examples and contains ALL
+boundary 3-tournaments, including edge-ordered comparison tournaments.
+But it cannot be imposed verbatim for k=1, where reversal is the identity.
+A serious framework must explain how ALL legal NORI1 instances and the
+edge-ordered boundary instances survive, without simply juxtaposing
+unrelated cases. Check proposed definitions against BOTH families.
 
 Prioritize a proven common long/spanning-path theorem, a meaningful lift
 or transfer preserving real physical faces and original-direction
 simplicity, or a rigorous obstruction to a proposed unified structure.
+Never confuse line-graph directed paths with vertex-simple increasing
+paths of the underlying edge-ordered K_n.
 Edge-order acyclicity and boundary comparisons are useful only insofar
 as they illuminate this common NORI1-preserving problem.
 
