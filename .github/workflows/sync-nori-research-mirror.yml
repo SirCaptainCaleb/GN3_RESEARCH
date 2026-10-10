@@ -8,6 +8,10 @@ on:
     paths:
       - .github/workflows/sync-nori-research-mirror.yml
 
+concurrency:
+  group: nori-schema-artifact-refresh
+  cancel-in-progress: false
+
 permissions:
   contents: write
   actions: write
