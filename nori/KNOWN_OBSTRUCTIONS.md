@@ -1,6 +1,10 @@
 # Appendix — Known obstructions
 
-These are **proved limitations of specific proposed implications**, not counterexamples to the unrooted grand NORI conjecture. Proofs and finite certificates are in the indicated Subsections; historical identifiers resolve through the legacy-reference lookup.
+**Status correction (October 10, 2026).** The original unrestricted NORI3 one-switch conjecture **has been refuted**: a legal physical `Q9` obstruction persists in larger dimensions, and the Devine–Milans `(3,3)`-tournament lift yields monochromatic paths of length at most `O(log n)` and `S_3(n)=Omega(n/log n)` compulsory switches. Thus a universal `Omega(sqrt n)` monochromatic-path lower bound is also refuted. All fixed `k>=3` admit unbounded compulsory switches, whereas NORI1 and unrestricted NORI2 remain open. The older mechanism-specific obstructions below remain valid within their stated scopes but should not be interpreted as supporting a proof of the refuted conjecture. Proofs and finite certificates appear in their Subsections; historical identifiers resolve through the legacy-reference lookup.
+
+**Current structural barriers.** The logarithmic Devine–Milans `(3,3)`-tournament fails boundary same-triple reversal oddness on **every** unordered triple: of the three reversal pairs, one is `(0,0)`, one `(1,1)`, and one has opposite bits. Any direction-only boundary tournament differs in at least two of six ordered values per triple; thus no global edge order realizes it. The tournament lower-bound proof relies on exactly three accepted orderings of each triple, which an arbitrary physical NORI3 fiber need not have. Even an appropriately balanced fiber need not stay consistent along a cube path as the root's exterior bits change. See the revised Subsection *Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament*.
+
+
 
 ## Prescribed roots and unsupported support lifting
 
