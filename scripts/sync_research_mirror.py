@@ -363,27 +363,26 @@ def dictionary_text(items: list[dict[str, Any]]) -> str:
     return "\n".join(out)
 
 def api_text(schema: str) -> str:
-    base = """# Research API
+    if schema == "nori":
+        return """# NORI manuscript API
 
-## Startup and live reads
-- `boot()`: once per independent conversation; preserve returned session_id for every write.
-- `status()`: live project revision, Articles, Sections, and composition dependency states.
-- `changes(since_revision, until_revision := null, limit := 100)`: local project revision events; use artifact snapshot revision at startup.
-- `search(query, filters := {})`, `read(ids, math_versions := {}, cursor := null, page_chars := 9000)`, `context(research_id)`, `items(subsection_id)`, `read_item(item_id)`: research content.
-- `composition_status(node_type,node_id)` and `dependencies(node_type,node_id)`: direct composition dependencies and source coverage.
-- `artifact_help()` and `help()`: artifact and interface metadata.
+## Startup and reading
+- `nori.boot()` once per independent conversation only. Reuse its `session_id` for every subsequent write. In continued sessions call `nori.status()` and `nori.changes(snapshot_revision, null, 100)`.
+- Read `OVERVIEW.md`, `KNOWN_OBSTRUCTIONS.md`, all eight Article compositions, and the relevant Section/Subsection manuscripts. `nori.search(query, filters := {})` searches **current composed manuscript text**, overview and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
+- The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
-## Atomic Items, consumption, and composition
-Items are atomic nodes under Subsections with one body and optional mathematical status; the Result node type is retired. `new_item(session_id,subsection_id,payload)` takes id, kind, title, status, body; `save_item(session_id,item_id,payload,expected_version)` updates by optimistic version. `new_item_result` and `save_item_result` reject writes. `item_results` and `article_results` are legacy read names.
+## Manuscript publication
+- `nori.publish_subsection(session, subsection_id, body, expected_composition_version, source_note := '')` directly revises a Subsection manuscript. Pass null expected version for its first composition, otherwise exact current version. Version conflicts reject the write.
+- `nori.new_subsection(session,section_id,payload,expected_section_version)` creates a coherent new Subsection; then compose it.
+- `nori.compose(session,type,id,payload,expected_composition_version)` revises Section and Article exposition. Provide `body` and `depends_on` direct-child IDs; Subsections use `[]`.
+- `nori.record_manuscript_audit(session,type,id,exact_composition_version,verdict,claim,explanation,references)` records optional, precisely versioned mathematical verification/corrections.
+- `nori.stage_batch_chunk`, `nori.review_staged_batch`, `nori.commit_staged_batch` and `nori.discard_staged_batch` retain all-or-nothing publication.
 
-`set_consumes(session_id,parent_id,child_ids)` and `set_consumed_by(session_id,child_id,consumer_ids)` replace mathematical-consumption lists transactionally; preserve existing relationships when extending them.
-
-`compose(session_id,node_type,node_id,payload,expected_composition_version)` applies only to Subsections, Sections, and Articles. The payload contains body and explicit depends_on direct-child IDs. Pass NULL only when absent; then use current composition version. Compose selectively when rigorous mathematical exposition is ready.
-
-`new_subsection`, `save_subsection`, `save_research`, `save_document`, `save_brainstorm`, `promote_brainstorm` perform structured development. `stage_batch_chunk`, `review_staged_batch`, `commit_staged_batch`, `discard_staged_batch` support atomic publication. `claim_chore`, `finish_chore`, and `request_audit` support stewardship.
-
+## History and judgment
+- For retired identifiers only: `nori.historical_item(old_id)`, `nori.historical_find(query,limit)` redirect to the fixed GitHub backup and successor Subsection. Historic Items are not active research.
+- Publish mathematics that deserves space in a research paper pursuing the grand conjecture. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.
+- A serious session may produce **nothing worth publishing**. No tasks, claims, leases, checkpoints, ranked queue, or mandatory progress report.
 """
-    return base
 
 def toolkit_entry_line(r: dict[str, Any]) -> str:
     fn = safe_name(r["id"]) + ".md"
@@ -440,15 +439,47 @@ def build(schema: str):
     write(root / "DICTIONARY.md", dictionary_text(data["dictionary"]))
     write(root / "API.md", api_text(schema))
     if schema == "nori":
-        guide_text = (root / "GUIDE.md").read_text(encoding="utf-8")
-        write(root / "GUIDE.md", guide_text + """
+        # Research guidance is specific to NORI; the shared universal guide still
+        # documents atomic Items for other project schemas.
+        write(root / "GUIDE.md", """# NORI manuscript research guide
 
-## Independent NORI research judgment
+**Publish mathematics that deserves space in a research paper pursuing the grand conjecture. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.**
 
-Choose your approach independently after understanding the research landscape. Treat existing priorities and activity as fallible evidence. Pursue ideas whose success would materially advance the conjecture, and reconsider your direction when that connection weakens. Share substantial discoveries and consequential obstructions selectively. A careful investigation that produces nothing worth reporting is an acceptable outcome.
+## Research freely
+Begin by developing your own view of what could resolve the full conjecture. Use the repository to test and improve that view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
 
-Understand the actual proof mechanisms in Article I and the other Articles, and consider approaches outside the existing hierarchy. A special-case theorem or sharper bound is valuable when it tests a reusable general mechanism or clarifies an obstruction. A session may produce no Item. Publish distinct advances with exact hypotheses, evidence and provenance; label unproved ideas clearly. Preserve useful failed mechanisms and consolidate overlapping results. Pursue a promising direction deeply while its mathematical prospects justify the effort.
+Before investing deeply in a subsidiary question, identify the mathematical implication that would make its solution useful. Make that implication explicit enough to examine. If the strongest plausible answer would leave the main argument in essentially the same position, reconsider the question.
+
+Treat a succession of tractable extensions as a reason to step back. Look for the conceptual change that would make those extensions matter. Choose finite-dimensional computations to discriminate between general claims or reveal mechanisms.
+
+When an approach already has substantial development, assess what additional insight your investigation could supply. Consider a substantially different route when the existing work repeatedly reaches the same obstacle.
+
+Spend your effort on the strongest mathematical opportunity you can identify. Report an inconclusive outcome plainly when that is where the investigation ends.
+
+## Manuscript structure and publication
+Read the grand conjecture, OVERVIEW.md, KNOWN_OBSTRUCTIONS.md, and all eight Article compositions before choosing your approach; follow relevant Sections and Subsections for proofs. Historical effort is evidence about cost, not a ranking. Independently challenge inherited formulations and pursue original routes.
+
+Articles, Sections, and Subsections form one assembled manuscript. **A Subsection is the smallest durable mathematical publication.** Revise a Subsection when a proof or correction belongs there. Create a new one only for coherent substantial development. Section and Article prose should connect arguments rather than repeat every proof. Check adjacent manuscripts before publishing; combine overlapping statements, preserve distinct meaningful proofs, and state exact dependencies and uncertainty.
+
+Publish only substantial proofs, useful reductions, consequential counterexamples, meaningful corrections, or well-motivated promising mechanisms. A short decisive lemma qualifies; length, work expended, and another tractable special case do not themselves justify publication. An uncertain idea should be labeled accurately. A serious session may finish with **nothing worth publishing**; routine failed attempts do not need a permanent record.
+
+The concise Known obstructions appendix preserves reusable false implications and their exact scopes. Revise the appendix when new mathematics changes a route's interpretation; never confuse a failure of a method with refutation of the conjecture.
+
+Use the boot session_id for writes. Publish Subsections with `publish_subsection` and optimistic composition versions; use `compose` for Sections and Articles. Stage related writes and commit atomically when needed. Historical identifiers are recoverable from a fixed GitHub snapshot through explicit lookup only. No Items, tasks, leases, checkpoints, or compulsory progress reporting.
 """)
+        write(root / "REFLEXES.md", """# NORI research reflexes
+
+Develop your own view of what might close the conjecture; inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
+
+Before a subsidiary calculation, say what precise general implication its best answer could establish. Stop or switch if the strongest plausible answer leaves that implication untouched. Treat a string of easy extensions as an occasion for conceptual reconsideration.
+
+Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
+
+Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening; keep failed routine investigations private. Inconclusive work with no paper-worthy outcome is entirely acceptable.
+""")
+        appendix = latest_composition(data, "subsection", "appendix_known_obstructions_to_proposed_nori_mechanisms")
+        if appendix:
+            write(root / "KNOWN_OBSTRUCTIONS.md", appendix.get("body") or "")
 
     broadcast_lines = [
         "# Startup broadcasts", "",
@@ -578,7 +609,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, OVERVIEW.md includes a short landscape of Articles I–VIII and additional possibilities. Evaluate the proofs and alternatives independently; no task assignment or reporting quota is required.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, read KNOWN_OBSTRUCTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; judge mathematical significance independently. A session may end with no publication.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
@@ -596,11 +627,41 @@ Generated: {rev.get('generated_at')}
             raise ValueError(f"invalid canonical tree path: {relative}")
         write(root / relative, node.get("content") or "")
     index = ["# Grand conjecture", "",
-             "Research hierarchy: Articles → Sections → Subsections → Items.",
+             "Research hierarchy: Articles → Sections → Subsections." if schema == "nori" else "Research hierarchy: Articles → Sections → Subsections → Items.",
              "Each level's composition is adjacent to its corresponding directory.", ""]
     for a in articles:
-        index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
+        if schema == "nori":
+            index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}/MANUSCRIPT.md)")
+        else:
+            index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
     write(root / "grand_conjecture" / "README.md", "\n".join(index))
+    if schema == "nori":
+        # A readable assembled paper alongside the individually revisable
+        # Article, Section and Subsection compositions. Preserve their exact text.
+        sections_by_id = {x["id"]: x for x in section_items}
+        for a in articles:
+            combined = [f"# {a.get('title') or a['id']}", ""]
+            main = latest_composition(data, "article", a["id"])
+            if main:
+                combined += ["## Article synopsis and main argument", "", main.get("body") or "", ""]
+            members = sorted((x for x in data["article_sections"] if x.get("article_id") == a["id"]),
+                             key=lambda x: (x.get("position") or 0, x.get("section_id") or ""))
+            for member in members:
+                sec = sections_by_id.get(member["section_id"])
+                if not sec:
+                    continue
+                combined += [f"## {sec.get('title') or sec['id']}", ""]
+                sc = latest_composition(data, "section", sec["id"])
+                if sc:
+                    combined += [sc.get("body") or "", ""]
+                subs = sorted(subsections_by_section.get(sec["id"], []),
+                              key=lambda x: (x.get("subsection_no") or 0, x.get("id") or ""))
+                for sub in subs:
+                    subc = latest_composition(data, "subsection", sub["id"])
+                    if subc:
+                        combined += [f"### {sub.get('title') or sub['id']}", "", subc.get("body") or "", ""]
+            write(root / "grand_conjecture" / a["id"] / "MANUSCRIPT.md", "\n".join(combined))
+
 
 
     write_json(root / "MANIFEST.json", {
@@ -652,7 +713,7 @@ Generated: {rev.get('generated_at')}
         "result_count": len(data["item_results"]),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
-        "mirror_format": 18,
+        "mirror_format": 19 if schema == "nori" else 18,
         "composition_model": "recursive-composition-v7",
     })
 
