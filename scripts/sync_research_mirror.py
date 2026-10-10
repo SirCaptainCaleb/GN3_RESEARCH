@@ -383,25 +383,7 @@ Items are atomic nodes under Subsections with one body and optional mathematical
 `new_subsection`, `save_subsection`, `save_research`, `save_document`, `save_brainstorm`, `promote_brainstorm` perform structured development. `stage_batch_chunk`, `review_staged_batch`, `commit_staged_batch`, `discard_staged_batch` support atomic publication. `claim_chore`, `finish_chore`, and `request_audit` support stewardship.
 
 """
-    if schema != "nori":
-        return base
-    return base + """## NORI coordination
-- `coordination_strategy()`: live scope, obligations, active claims, parked approaches, decisive updates, stale/freshness signals, and exact evidence.
-- `coordination_metrics()`: prospective coordination indicators.
-- `coordination_claim(session,objective_id,target_key,question,method,decision_enabled,role,selection,lease_minutes := 90)`: transactional target claim. Role: primary_proof, independent_verification, alternative_method, counterexample_search, synthesis, or exploration. Selection JSON requires target, consequence, remaining_gap, decisive_step, alternative.
-- `coordination_checkpoint(session,task_id,checkpoint,lease_minutes := 90)`: checkpoint and renewal; JSON requires mathematical_change, obligation_effect, next_step, alternative_comparison. Optional bridge_unchanged tracks repeated unchanged central obligations.
-- `coordination_finish(session,task_id,outcome,decision)`: outcome JSON requires mathematical_change, evidence, remaining_bridge, next_step, alternative_comparison; decision: continue, park, resolve, switch.
-- `coordination_publish_update(session,kind,objectives,item_versions,discovery,implication,priority_change,evidence := [],reopening_condition := null)`: records mathematical and strategic impact with exact currently valid Item versions, notifying active dependent claims.
-- `coordination_commit_batch_update(session,batch_id,overlap_checked,kind,objective_ids,item_versions,discovery,implication,priority_change,evidence := [],reopening_condition := null)`: commits a staged mathematical publication and its strategic consequences in one transaction; Item versions are checked after manuscript commit and rollback together on failure.
-- `coordination_decide_versioned(session,objective_id,expected_revision,state,truth_status,reason,reopening_condition := null)`: optimistic objective lifecycle changes; state proposed/active/parked/resolved. Track truth independently.
-- `coordination_prioritize(session,objective_id,expected_revision,priority_rank,selection_assessment,selection_rationale)`: optimistic ranking and documented comparison; assessment JSON requires mathematical_relevance, tractability, information_gain, reuse, expected_effort, active_overlap, strongest_alternative.
-- `coordination_record_baseline(session,snapshot_revision)`: dated inventory and obligations.
-- `coordination_relationships`: evidence-backed strengthening, duplication, refutation, and transfer relationships (maintained by research stewards).
-
-At task selection state the exact assertion, consequence, remaining closure gap, decisive test, and strongest alternative. Compare relevance, tractability, information, reuse, effort, and active overlap. Reassess after a decisive result, failed attempt, significant update, or session end. Two bridge-unchanged extensions trigger review, with room for justified persistence.
-
-Research Items and Article compositions remain the mathematical record. Preserve source versions and provenance, and synthesize selectively.
-"""
+    return base
 
 def toolkit_entry_line(r: dict[str, Any]) -> str:
     fn = safe_name(r["id"]) + ".md"
@@ -458,80 +440,15 @@ def build(schema: str):
     write(root / "DICTIONARY.md", dictionary_text(data["dictionary"]))
     write(root / "API.md", api_text(schema))
     if schema == "nori":
-        # Live coordination is exported as a dated snapshot. Strip session IDs from
-        # public GitHub artifacts; only the authenticated database keeps provenance.
-        strategy = context(schema, "coordination")
-        # The artifact.latest pointer still names the preceding artifact
-        # until this build completes; use the revision captured for this build.
-        strategy["freshness"] = dict(strategy.get("freshness", {}))
-        strategy["freshness"].update({
-            "artifact_snapshot_revision": rev.get("revision"),
-            "changes_since_snapshot": max(
-                0, int(strategy["freshness"].get("live_revision") or 0)
-                   - int(rev.get("revision") or 0)),
-            "strategic_updates_after_snapshot": 0,
-        })
-        public_strategy = dict(strategy)
-        public_strategy["active_claims"] = [
-            {k: t.get(k) for k in ("id", "objective_id", "target_key", "role", "started_at", "lease_expires_at")}
-            for t in strategy.get("active_claims", [])
-        ]
-        public_strategy["recent_strategic_updates"] = [
-            {k: u.get(k) for k in ("id", "kind", "objective_ids", "affected_item_versions", "mathematical_discovery", "implication", "priority_change", "reopening_condition", "evidence_references", "created_at")}
-            for u in strategy.get("recent_strategic_updates", [])
-        ]
-        public_strategy["relationships"] = [
-            {k: e.get(k) for k in ("id", "source_id", "target_id", "relation",
-                                 "evidence_item_ids", "assessment", "created_at")}
-            for e in strategy.get("relationships", [])
-        ]
-        write_json(root / "COORDINATION.json", public_strategy)
-        lines = [
-            "# NORI live-strategy snapshot", "",
-            "**Current conjecture.** " + strategy["conjecture"], "",
-            "**Established scope.** " + strategy["established_scope"], "",
-            "## Freshness", "",
-        ]
-        lines += ["- " + k.replace("_", " ") + ": " + str(v)
-                  for k,v in strategy.get("freshness", {}).items()]
-        lines += ["", "## Objectives and exact bridges", ""]
-        for obj in strategy.get("active_objectives", []):
-            lines += [
-                "### " + str(obj.get("priority_rank") or "?") + ". " + obj["id"] + " (" + obj["relevance"] + "; " + obj["state"] + ")",
-                "",
-                "- Target: " + obj["target"],
-                "- Central bridge: " + obj["bridge"],
-                "- Obstruction: " + obj["obstruction"],
-                "- Next test: " + obj["decisive_step"],
-                "- Selection reason: " + obj["reason"],
-                "",
-            ]
-        lines += ["## Active claims", ""]
-        for claim in public_strategy["active_claims"]:
-            lines.append("- " + claim["objective_id"] + " / " + claim["target_key"] +
-                         " (" + claim["role"] + "; lease through " + str(claim["lease_expires_at"]) + ")")
-        if not public_strategy["active_claims"]:
-            lines.append("- No active claims at snapshot time.")
-        lines += ["", "## Parked objectives", ""]
-        for obj in strategy.get("parked_objectives", []):
-            lines.append("- " + obj["id"] + ": reopen if " + str(obj["reopening_condition"]))
-        lines += ["", "## Recent strategic changes", ""]
-        for u in public_strategy["recent_strategic_updates"]:
-            lines.append("- " + str(u["id"]) + " (" + u["kind"] + "): " +
-                         str(u["mathematical_discovery"]) + ". Implication: " + str(u["implication"]))
-        lines += ["", "Consult nori.coordination_strategy() and nori.status() for current state. Artifacts are snapshots.", ""]
-        write(root / "STRATEGY.md", "\n".join(lines))
         guide_text = (root / "GUIDE.md").read_text(encoding="utf-8")
         write(root / "GUIDE.md", guide_text + """
-## NORI coordination
-After reading all Article compositions, consult STRATEGY.md and the live coordination_strategy(). Select a precise closure-relevant obligation, compare the strongest alternative, claim the target, and checkpoint after substantive results. Publish significant mathematical implications with exact Item versions. Reconsider after two extensions leaving the same bridge unchanged. Park an exhausted approach with a reopening condition. Keep rigorous proofs in Items and compositions.
-""")
-        reflex_text = (root / "REFLEXES.md").read_text(encoding="utf-8")
-        write(root / "REFLEXES.md", reflex_text + """
-## NORI selection reflex
-Ask which new fact would make the grand conjecture easier. Require support-density arguments to name the extra root/terminal compatibility they force and edge-coloring routes to name the physical ordered-face transfer. Record obstacles faithfully and switch when a stronger route becomes available.
-""")
 
+## Independent NORI research judgment
+
+Choose your approach independently after understanding the research landscape. Treat existing priorities and activity as fallible evidence. Pursue ideas whose success would materially advance the conjecture, and reconsider your direction when that connection weakens. Share substantial discoveries and consequential obstructions selectively. A careful investigation that produces nothing worth reporting is an acceptable outcome.
+
+Understand the actual proof mechanisms in Article I and the other Articles, and consider approaches outside the existing hierarchy. A special-case theorem or sharper bound is valuable when it tests a reusable general mechanism or clarifies an obstruction. A session may produce no Item. Publish distinct advances with exact hypotheses, evidence and provenance; label unproved ideas clearly. Preserve useful failed mechanisms and consolidate overlapping results. Pursue a promising direction deeply while its mathematical prospects justify the effort.
+""")
 
     broadcast_lines = [
         "# Startup broadcasts", "",
@@ -661,7 +578,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read STRATEGY.md and then query nori.coordination_strategy() for current claims, decisions, and freshness before selecting a task. The stored snapshot can be older than the live coordination state.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, OVERVIEW.md includes a short landscape of Articles I–VIII and additional possibilities. Evaluate the proofs and alternatives independently; no task assignment or reporting quota is required.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
