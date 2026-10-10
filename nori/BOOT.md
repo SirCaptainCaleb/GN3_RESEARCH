@@ -11,4 +11,4 @@ For NORI, read STRATEGY.md and then query nori.coordination_strategy() for curre
 Then begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: 1038
-Generated: 2026-10-10T03:25:16.291564+00:00
+Generated: 2026-10-10T03:26:49.503264+00:00
