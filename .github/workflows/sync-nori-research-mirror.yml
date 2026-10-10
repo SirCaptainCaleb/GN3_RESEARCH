@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: Article Section Subsection; EH follow-on results Toolkit sync 2026-10-10
+# NORI assembled publication: Article Section Subsection; refresh worker frontiers after logarithmic lower and upper results
 
 on:
   workflow_dispatch:
