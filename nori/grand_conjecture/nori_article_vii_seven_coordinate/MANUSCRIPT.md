@@ -426,98 +426,113 @@ See also the companion NORI research manuscript *Scope of the distinguished-coor
 
 ### Polynomial monochromatic geodesics from sparse triplewise exterior support
 
-# Polynomial monochromatic geodesics from sparse triplewise exterior support
+# Long monochromatic NORI3 geodesics under sparse triplewise exterior dependence
 
-## Theorem and structural significance
+## Theorem
 
-Let \(V\) be the \(n\) coordinate directions of \(Q_n\). A binary coloring \(c(F,(a,b,c))\) of **physical ordered three-faces** is *same-face reversal-odd* when
+Let \(V\) be the \(n\) coordinate directions of \(Q_n\). Let \(c(F,(a,b,c))\in\{0,1\}\) color *physical ordered three-faces*. Assume **same-face reversal oddness**
 \[
 c(F,(a,b,c))=1-c(F,(c,b,a))
 \tag{R}
 \]
-for every physical face and distinct ordered free directions. The boundary-compatible NORI3 class additionally obeys \(c(\bar F,\pi)=c(F,\pi)\); together these are equivalent to the ordinary NORI antipodal-reversal law plus (R).
+for every ordered physical face. For each unordered triple \(T\subset V\), suppose there exists a set of exterior coordinates \(S_T\subset V\setminus T\) of size at most \(d\), such that all six ordered-face colors with free set \(T\) depend only on their free-direction order and the fixed bits on \(S_T\). These support sets are allowed to vary arbitrarily with \(T\).
 
-**Definition (triplewise exterior support).** For each *unordered* direction triple \(T\in\binom V3\), suppose there is an assigned subset \(S_T\subseteq V\setminus T\) such that, for each of the six ordered triples \(\pi\) of \(T\), the physical face color \(c(F,\pi)\) depends only on \(\pi\) and the fixed exterior bits in \(S_T\). The supports \(S_T\) are allowed to differ arbitrarily with \(T\). Assume \(|S_T|\le d\) for every \(T\). In particular, no common small global exterior-support set is required.
-
-**Theorem (sparse-dependency extraction).** Suppose (R) holds and the coloring has triplewise exterior support of size at most \(d\), for \(n\ge4\). If \(d\ge1\), put
+**Theorem (sparse exterior-support boundary-snake transfer).** For \(1\le d\le n-3\), as \(n/d\to\infty\), the coloring has a monochromatic *genuine coordinate-distinct geodesic* of length
 \[
-p=\min\left\{1,\left(\frac{n}{4d\binom n3}\right)^{1/3}\right\},\qquad
-M=\left\lceil\tfrac34np\right\rceil .
+\boxed{\Omega((n/d)^{1/3})}.
 \tag{1}
 \]
-Then some monochromatic direction-distinct cube geodesic has at least
+The explicit estimate \(L_{\max}(c)\ge1+(n/d)^{1/3}/2100\) holds whenever \(n/d\ge32^{3/2}\).
+
+If \(d=0\), then \(c\) is direction-only, and the full Devine–Milans boundary-tournament snake theorem gives
 \[
-\boxed{1+\sqrt{(M-1)/2}}
+L_{\max}(c)\ge1+\sqrt{(n-1)/2}.
 \tag{2}
 \]
-coordinate moves (understood with the usual integral rounding). In particular, whenever \(1\le d=o(n)\) and \(n\to\infty\), the guarantee is
+If all ordinary triples outside a *common* set \(S\) of \(t\) directions depend only on their exterior bits in \(S\), the same theorem directly yields
 \[
-\boxed{L_{\max}(c)=\Omega((n/d)^{1/6})}.
+L_{\max}(c)\ge1+\sqrt{(n-t-1)/2}\quad(n-t\ge3).
 \tag{3}
 \]
-For \(d=0\), the full direction set is flat and the sharper boundary-tournament guarantee
+
+Condition (R) is exactly the additional same-face reversal symmetry proposed for **boundary-compatible NORI3**. When the ordinary NORI law \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\) also holds, (R) is equivalent to the additional antipodal invariance \(c(\bar F,\pi)=c(F,\pi)\). No antipodal hypothesis beyond (R) is needed for the theorem.
+
+## Lemma: robust boundary snake with selectively discarded terminal pairs
+
+A **partial boundary 3-tournament** on \(N\) vertices has a set of available unordered triples. For every available triple, exactly one ordering of each same-middle reversal pair is a positive directed triple; unavailable triples have no positive orderings. For an unordered pair \(e=\{u,v\}\), let \(b(e)\) be the number of unavailable triples containing \(e\). Fix \(b\ge0\), call \(e\) *clean* when \(b(e)\le b\), and let
 \[
-L_{\max}(c)\ge1+\sqrt{(n-1)/2}
+\alpha=\frac{\#\{\mathrm{clean\ unordered\ pairs}\}}{\binom N2}.
+\]
+If \(L\ge2\) is the maximum vertex order of a vertex-simple positive directed tight path, then
+\[
+\boxed{\alpha\frac{N-1}{2}\le(L-1)^2+b(L-1).}
 \tag{4}
 \]
-holds. These results hold even without antipodal invariance; with it, they apply to the proposed boundary-compatible subclass of legal NORI3 colorings.
 
-**Stronger global-support corollary.** If there exists one set \(S\subseteq V\) of \(|S|=t\) whose fixed bits determine all ordered three-face colors whenever the free directions avoid \(S\), and if (R) holds, then there is a monochromatic geodesic on at least
+**Proof.** For each *clean* unordered pair \(\{u,v\}\), find a longest positive directed tight path ending either in \(uv\) or in \(vu\), giving a terminal order \(r(\{u,v\})\in[2,L]\). Orient the pair toward the endpoint of the chosen path, breaking ties arbitrarily. Orienting only the clean pairs produces a partial tournament on the \(N\) vertices with \(\alpha\binom N2\) arcs. Hence some vertex \(v\) has at least \(\alpha(N-1)/2\) incoming clean pairs.
+
+For \(r=2,\ldots,L\), let \(U_r\) be its incoming clean neighbors having terminal order \(r\), and put \(q=|U_r|\). For distinct \(u,w\in U_r\), whenever \(\{u,v,w\}\) is available, direct the comparison \(u\to w\) precisely when \((u,v,w)\) is positive. Same-middle reversal oddness makes this a partial tournament. Since the terminal pair \(\{u,v\}\) is clean for every \(u\in U_r\), each \(u\) participates in at most \(b\) missing comparisons. The induced comparison tournament therefore has at most \(bq/2\) missing edges, and some \(u\in U_r\) has outdegree at least \((q-1-b)/2\).
+
+Take a longest positive \(r\)-vertex path \(P\) ending \(uv\). Each outneighbor \(w\) in the comparison tournament must already belong to \(P\), or \((u,v,w)\) extends \(P\) to a positive \((r+1)\)-vertex path ending \(vw\), contradicting that the clean pair \(\{v,w\}\) is oriented \(w\to v\) and has terminal order exactly \(r\). There are at most \(r-2\) such outneighbors. Thus \(q\le2r+b-3\), and
 \[
-\boxed{1+\sqrt{(n-t-1)/2}}
+\alpha(N-1)/2\le\sum_{r=2}^L|U_r|
+\le \sum_{r=2}^L(2r+b-3)
+=(L-1)^2+b(L-1).
+\]
+This proves (4). The positive tight path is *vertex-simple in the original \(N\)-vertex hypergraph*, not merely a directed path in a line graph. \(\square\)
+
+When \(b=0,\alpha=1\), (4) recovers the scrapbook's \(L\ge1+\sqrt{(N-1)/2}\). This robust version is useful even when many triples are unavailable, provided most terminal pairs have few unavailable extensions.
+
+## Random extraction: retain good triples and clean pairs
+
+Assume \(d\ge1\). Choose each original direction independently with probability
+\[
+p=(d^2n)^{-1/3},\qquad \mu=np=(n/d)^{2/3}.
+\]
+Let \(X\) be the selected direction set, of size \(N\). Call \(T\subseteq X\) **bad** if \(S_T\cap X\ne\varnothing\), and let \(B(X)\) count bad unordered triples. Every bad triple is witnessed by a four-element inclusion \(T\cup\{u\}\subseteq X\) for some \(u\in S_T\). By linearity of expectation,
+\[
+\mathbb E B(X)\le d\binom n3p^4
+\le\frac16\mu^{5/2}.
 \tag{5}
 \]
-distinct directions, for \(n-t\ge3\). This is substantially stronger than the purely two-color logarithmic guarantee under the same exterior-support hypothesis without (R). For a **legal** boundary-compatible coloring with \(|S_T|\le1\), antipodal invariance additionally implies every such one-bit function is constant (because \(f(z)=f(1-z)\)); hence it is direction-only, and (4) applies.
-
-## Proof
-
-**Step 1: Extract a large set of directions with no internal exterior dependencies.**
-Build a 4-uniform hypergraph \(\mathcal H\) on \(V\): for every unordered triple \(T\) and \(u\in S_T\), insert the 4-element hyperedge \(T\cup\{u\}\). Its number of hyperedges is at most
+Markov gives \(\Pr(B(X)>\mu^{5/2})\le1/6\), and Chernoff gives \(\Pr(N<\mu/2)\le e^{-\mu/8}<1/6\) whenever \(\mu\ge32\). Consequently some \(X\) satisfies
 \[
-B=\sum_{T\in\binom V3}|S_T|\le d\binom n3.
-\]
-A random \(p\)-subset \(X\subseteq V\) has expected size \(np\) and contains at most \(Bp^4\) hyperedges in expectation. Our choice of \(p\) guarantees \(Bp^4\le np/4\). Consequently some \(X\) satisfies
-\[
-|X|-|E(\mathcal H[X])|\ge \tfrac34np.
-\]
-Delete one direction from each hyperedge remaining in \(\mathcal H[X]\), yielding an independent set \(D\subseteq X\) with
-\[
-|D|\ge M=\lceil3np/4\rceil.
+N\ge\mu/2,\qquad B(X)\le\mu^{5/2}.
 \tag{6}
 \]
-By independence, \(S_T\cap D=\varnothing\) for every triple \(T\subseteq D\). Equivalently, *none of the exterior coordinates that can affect a three-face entirely supported in \(D\) will ever be traversed by a path using only \(D\)*.
 
-**Step 2: Construct one direction-only boundary tournament in a genuine physical cube fiber.**
-Fix *any* cube root \(x\in Q_n\). For any three directions of \(D\), the exterior bits in \(S_T\) remain equal to those of \(x\) under every path using only directions in \(D\), because \(S_T\cap D=\varnothing\). Define
+Construct a partial boundary tournament on \(X\) by declaring each *good* unordered triple \(T\) (those with \(S_T\cap X=\varnothing\)) available. Define its orientations using one fixed exterior cube root \(x_0\), as explained below; (R) guarantees exactly one orientation in each reversal pair. For each unordered pair \(\{u,v\}\subseteq X\), let \(b(\{u,v\})\) count bad triples containing it. Since each bad triple contributes to exactly three unordered pairs,
 \[
-b_x(a,b,c)=c(F,(a,b,c))
+\sum_{\{u,v\}\subset X}b(\{u,v\})=3B(X).
 \]
-for any physical face \(F\) with free set \(\{a,b,c\}\subseteq D\) and fixed \(S_T\)-bits inherited from \(x\). The triplewise exterior-support hypothesis makes this well defined, *independently of every other exterior bit within \(D\)*. Hypothesis (R) gives
+Choose the clean-pair threshold \(b=128\sqrt\mu\). There are at most \(3\mu^2/128\) dirty pairs. Because \(N\ge\mu/2\ge16\),
 \[
-b_x(c,b,a)=1-b_x(a,b,c).
+\binom N2\ge N^2/4\ge\mu^2/16.
 \]
-Thus \(b_x\) is exactly a **boundary 3-tournament** on \(|D|\) distinct coordinate directions. This construction is valid even though the original coloring may vary nonlinearly with many exterior bits and the sets \(S_T\) are all different.
-
-**Step 3: Apply the snake-digraph terminal-pair theorem and realize its path physically.**
-The Devine–Milans antisymmetric boundary-tournament theorem (scrapbook, “Antisymmetric Tournaments” and “Boundary Tournaments”) gives a monochromatic tight path (in its directed-edge convention, color 1) of order at least
+Therefore dirty pairs constitute at most \(3/8\) of all pairs, and the clean proportion obeys \(\alpha\ge5/8\). Lemma (4) implies
 \[
-1+\sqrt{(|D|-1)/2}\ge1+\sqrt{(M-1)/2}.
+\frac{N-1}{4}\le(L-1)^2+128\sqrt\mu(L-1).
+\tag{7}
 \]
-Let its distinct direction sequence be \((u_1,\ldots,u_\ell)\subseteq D\). Traverse those directions in that order, starting at the selected cube vertex \(x\). This is a genuine cube geodesic: no direction repeats. At its \(j\)th ordered three-window, all \(S_T\)-bits equal \(x|_{S_T}\) and the **physical ordered face** has color
+Put \(z=L-1\). If \(z\ge\sqrt\mu\), the claimed bound follows. Otherwise \(z^2\le z\sqrt\mu\), and \(N\ge\mu/2\), \(\mu\ge32\) imply
 \[
-c(F_j,(u_j,u_{j+1},u_{j+2}))
-=b_x(u_j,u_{j+1},u_{j+2})=1.
+\mu/16\le(N-1)/4\le129z\sqrt\mu,
+\qquad z\ge\sqrt\mu/2064>\sqrt\mu/2100.
 \]
-Thus the entire actual physical cube geodesic is monochromatic. There is no tacit identification of faces from different roots and no need to transport a maximal terminal path between incompatible cube fibers. This proves (2).
+Since \(\sqrt\mu=(n/d)^{1/3}\), this proves the explicit estimate in (1).
 
-For \(d\ge1\), equation (1) simplifies for \(n\ge4\) to \(p^3=3/[2d(n-1)(n-2)]\) (unless capped by 1). Hence \(M=\Omega((n/d)^{1/3})\), and (2) yields (3). When \(d=0\), simply take \(D=V\), proving (4). If a **single common** support \(S\) works for all ordinary triples avoiding \(S\), take \(D=V\setminus S\) directly without random deletion, obtaining (5). \(\square\)
+## Exact physical-fiber realization and root consistency
 
-## Relation to existing results and sharp limitations
+Fix a single cube vertex \(x_0\in Q_n\) BEFORE orienting any available triple. For every good triple \(T\subseteq X\), the support \(S_T\) lies outside \(X\), so none of its influential fixed exterior bits ever changes along *any* cube path using directions from \(X\). Thus for every ordering \(\pi\) of \(T\), all actual physical faces with free directions \(T\) encountered by such paths have exactly the color determined by \(\pi\) and \(x_0|_{S_T}\), regardless of other exterior-coordinate bits. This defines one direction-only same-face reversal-odd tournament chart on the good triples. Omit the bad triples altogether.
 
-The established *Sharp logarithmic monochromatic geodesics under bounded exterior support* proves an \(\Omega(\log(n-t))\) lower bound without reversal oddness and has a legal one-sentinel matching construction. **The present theorem has a different, indispensable hypothesis (R)**: for one common exterior support the lower bound improves all the way to \(\Omega(\sqrt{n-t})\); for *different sparse supports per triple* it remains polynomial, \(\Omega((n/d)^{1/6})\). It therefore identifies a concrete quantitative joint role for local reversal antisymmetry and sparse exterior dependence. It does not settle the fully unrestricted boundary-compatible class, where the support of one direction triple can have size \(\Theta(n)\).
+By the robust snake lemma, there is a positive directed tight path \(u_1,\ldots,u_L\) of DISTINCT vertices/directions using only good triples. Starting at \(x_0\), traverse the actual cube coordinates in this order. The resulting cube path is a genuine direction-distinct geodesic; its successive physical ordered 3-faces have the precisely matched good-triple colors and are all positive. There is no incompatible-root transfer, no abstract physical-face substitution, and no repeated cube direction.
 
-The antichain-rank two-sentinel short-path NORI3 construction violates (R) (its two reversed triples can have equal color on the same physical face), and so is not a counterexample. The boundary snake mechanism operates only **after** an independent direction set eliminates all relevant exterior dependencies. Arbitrary globally dependent physical colorings need not admit such a large flat direction set by this argument.
+For \(d=0\), take \(X=V\) and apply the complete Devine–Milans snake theorem. For a common exterior support \(S\), choose \(X=V\setminus S\), freeze \(S\)-bits at \(x_0\), and apply the complete theorem on \(n-t\) directions. This proves (2)–(3). \(\square\)
 
-For a legal coloring satisfying (R), antipodal invariance is automatic from the two reversal laws. In particular, for \(|S_T|\le1\) every induced dependence on that lone bit is constant, so the full coloring is direction-only; this is a useful strengthening for the first nontrivial parameter. For \(|S_T|\ge2\), genuinely varying antipodally invariant XOR-type dependence is possible, and the polynomial extraction proof applies.
+## Consequences, prior improvements, and boundary of applicability
 
-**Sources:** Devine–Milans scrapbook, “Antisymmetric Tournaments” and “Boundary Tournaments,” for the terminal-pair \(\sqrt n\) theorem; existing NORI foundational manuscript *Sharp logarithmic monochromatic geodesics under bounded exterior support* for the comparison without (R).
+This resolves a nontrivial intermediate structural class: **polynomial-length monochromatic paths survive both same-face reversal oddness and arbitrary triple-specific exterior interactions of bounded support**, even though no global exterior support is available. The earlier hypergraph-independent-set proof supplied only exponent \(1/6\). A first robust snake bound controlling missing triples per vertex improved it to \(1/4\). The selective-terminal-pair lemma above gives the current strongest exponent \(1/3\), making the earlier arguments valid but superseded.
+
+For legal boundary-compatible NORI3, complement invariance implies that a face color depending on at most ONE exterior bit cannot genuinely depend on that bit; such colorings are direction-only, so (2) holds for \(d\le1\). Genuine nonconstant complement-invariant dependencies first appear with \(d\ge2\). In unrestricted boundary-compatible NORI3, a triple can depend on \(\Theta(n)\) exterior bits, where (1) gives no growing bound. Likewise this does not settle unrestricted NORI3's universal \(\Omega(\log n)\) question: the antichain and self-dual constructions avoiding that structural hypothesis have \(O(\log n)\) maximum monochromatic geodesics. The problem of improving the exponent \(1/3\) within the sparse-support class is separately open; no sharpness claim is made.
+
+**Source attribution.** The complete boundary-tournament \(1+\sqrt{(N-1)/2}\) terminal-pair bound is from R. C. Devine and K. G. Milans, *Tight paths in fully directed hypergraphs*, the supplied scrapbook, sections “Antisymmetric Tournaments” and “Boundary Tournaments.” The partial-tournament clean-pair lemma, probabilistic extraction, and physical-face transfer giving exponent \(1/3\) above are new to this manuscript.

@@ -128,9 +128,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 22878,
-        "composed_through_revision": 4779,
-        "composition_version": 33,
+        "body_chars": 24708,
+        "composed_through_revision": 4796,
+        "composition_version": 36,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -139,7 +139,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Sharp logarithmic mono-geodesic scale for bounded exterior support",
+        "source_note": "Integrates directed pair one-sentinel Raynaud NORI2 closure",
         "stale": false,
         "stale_dependencies": []
       },
@@ -242,9 +242,9 @@
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 4227,
-        "composed_through_revision": 4783,
-        "composition_version": 3,
+        "body_chars": 6203,
+        "composed_through_revision": 4800,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -253,7 +253,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Integrates polynomial snake transfer for same-face reversal oddness and sparse per-triple physical exterior dependence.",
+        "source_note": "Integrates the final sharpest proven exponent 1/3 sparse exterior-support boundary transfer and selective-pair robust snake lemma.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -261,9 +261,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 3256,
-        "composed_through_revision": 4457,
-        "composition_version": 1,
+        "body_chars": 3946,
+        "composed_through_revision": 4793,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -272,7 +272,7 @@
           "sections_now": 2
         },
         "has_composition": true,
-        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "source_note": "Adds Leader-Long established n/2 partial monotone cube-geodesic baseline; full antipodal remains open.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -281,7 +281,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-10T16:53:07.259226+00:00",
+  "generated_at": "2026-10-10T17:12:28.425999+00:00",
   "item_count": 0,
   "mirror_format": 19,
   "result_count": 0,
@@ -429,26 +429,20 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 29146,
-        "composed_through_revision": 4777,
-        "composition_version": 29,
+        "body_chars": 31255,
+        "composed_through_revision": 4795,
+        "composition_version": 32,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 16,
-          "latest_subsection_no_when_composed": 16,
-          "subsections_existing_when_composed": 16,
-          "subsections_now": 16
+          "latest_subsection_no_now": 17,
+          "latest_subsection_no_when_composed": 17,
+          "subsections_existing_when_composed": 17,
+          "subsections_now": 17
         },
         "has_composition": true,
-        "source_note": "Integrates sharp bounded-exterior-support logarithmic lower bound and Devine-Milans matching example",
-        "stale": true,
-        "stale_dependencies": [
-          {
-            "composition_saw_version": 1,
-            "current_composition_version": 2,
-            "source_id": "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament"
-          }
-        ]
+        "source_note": "Integrates Raynaud directed-pair one-sentinel one-switch theorem",
+        "stale": false,
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 2
@@ -575,9 +569,9 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 7810,
-        "composed_through_revision": 4782,
-        "composition_version": 5,
+        "body_chars": 9998,
+        "composed_through_revision": 4799,
+        "composition_version": 7,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 5,
@@ -586,7 +580,7 @@
           "subsections_now": 5
         },
         "has_composition": true,
-        "source_note": "Integrates sparse triplewise exterior-support extraction and physical snake theorem; all five subordinate manuscripts current.",
+        "source_note": "Updated Section to strongest exponent 1/3 theorem, robust clean-terminal-pair snake, after subsection full rewrite.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -654,7 +648,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1170,
+  "snapshot_revision": 1187,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -1351,6 +1345,25 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry": {
+      "composition": {
+        "body_chars": 8356,
+        "composed_through_revision": 4787,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Sparse triplewise support extraction plus ordered Ramsey; logarithmic paths without reversal oddness and near-linear average sensitivity barrier",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
       "composition": {
         "body_chars": 13813,
@@ -1467,16 +1480,16 @@
     },
     "nori2_sentinel_barrier_and_exact_one_switch_examples": {
       "composition": {
-        "body_chars": 7249,
-        "composed_through_revision": 4740,
-        "composition_version": 1,
+        "body_chars": 12332,
+        "composed_through_revision": 4794,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Exact NORI2 sentinel-family closure and sharpness via red-blue complete graph path partition; direction-only tournament corollary",
+        "source_note": "Directed two-color Hamilton-cycle theorem strengthens one-sentinel closure to arbitrary asymmetric pair functions; retains symmetric sharpness and source proofs",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1600,16 +1613,16 @@
     },
     "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
       "composition": {
-        "body_chars": 7785,
-        "composed_through_revision": 4781,
-        "composition_version": 1,
+        "body_chars": 9543,
+        "composed_through_revision": 4798,
+        "composition_version": 4,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Independent hypergraph extraction theorem for triplewise sparse exterior support, using same-face reversal oddness and the Devine-Milans boundary snake bound; explicit physical-root realization.",
+        "source_note": "Clean coherent proof of strongest 1/3 exponent theorem; selectively pruned terminal-pair robust snake and physical root-consistent sampling. Supersedes 1/4 and 1/6.",
         "stale": false,
         "stale_dependencies": []
       },

@@ -1,6 +1,55 @@
 # NORI2 sentinel barrier and exact one-switch examples
 
-# NORI2 sentinel barrier: one-switch closure for all symmetric direction-pair rules
+# NORI2 sentinel barrier: all directed pair rules and sharp one-switch examples
+
+## Stronger theorem: no symmetry of the ordinary pair rule is needed
+
+**Theorem 0 (directed one-sentinel closure).** Fix \(n\ge3\) and one coordinate \(s\), and put \(D=V(Q_n)\setminus\{s\}\). Suppose an arbitrary binary coloring \(c\) of genuine ordered physical two-faces obeys only:
+
+1. On every ordered square \((u,v)\) with \(u,v\in D\) and with the exterior fixed \(s\)-bit equal to 0, its color is some fixed **directed** pair function \(h(u,v)\), independent of all other exterior bits. No relation is assumed between \(h(u,v)\) and \(h(v,u)\).
+2. On every ordered square with \(s\) **last**, \(c(F,(u,s))=0\), independent of all exterior bits.
+
+There are **no** conditions on ordered squares with \(s\) first or on ordinary ordered squares with fixed exterior \(s\)-bit 1. Nevertheless, there is a full antipodal geodesic whose consecutive ordered-square color word changes at most **once**. The assertion does not require NORI legality.
+
+More generally, replace the constant 0 in hypothesis 2 by any common bit \(b\); the same conclusion holds, choosing the reverse color-run orientation.
+
+**Proof.** On \(D\) form the complete symmetric digraph with arc \(u\to v\) colored \(h(u,v)\). By Raynaud's 1973 theorem, this two-colored complete symmetric digraph has a directed Hamiltonian cycle which is the union of a color-0 directed path and a color-1 directed path (either color may be absent). Cutting this cycle at a suitable edge yields a Hamiltonian **path** \(q=(q_1,\ldots,q_{n-1})\) whose arc-color word has the **prescribed order**
+\[
+1,\ldots,1,\;0,\ldots,0.
+\tag{D1}
+\]
+Indeed, if both colors occur, the cyclic arc-color word has exactly two monochromatic runs; delete its last color-0 arc before the start of the color-1 run. The remaining directed path starts with its 1-run and ends with its 0-run. If a color is absent, any cut gives a monochromatic path. For terminal color \(b=1\), reverse the choice of transition, obtaining \(0,\ldots,0,1,\ldots,1\).
+
+Choose a cube root \(x\) with \(x_s=0\) and traverse the full direction order
+\[
+q_1,\ldots,q_{n-1},s.
+\tag{D2}
+\]
+Every ordinary pair window is a **physical** square with exterior \(s\)-bit still 0, hence has its prescribed \(h\)-color from (D1). The final ordered square \((q_{n-1},s)\) has color 0 by hypothesis 2. The complete physical window word is therefore a block of 1s followed by a block of 0s, including the terminal 0; there is at most one switch. Distinctness of the directions and root consistency are immediate. \(\square\)
+
+**Legal NORI2 corollary.** In particular, for an **arbitrary asymmetric** \(h\) on ordinary directed pairs, define a legal ordered-physical-square coloring by
+\[
+c(F,(u,v))=
+\begin{cases}
+h(u,v),& u,v\in D,\ z_s(F)=0,\\
+1-h(v,u),&u,v\in D,\ z_s(F)=1,\\
+1,&u=s,\\
+0,&v=s.
+\end{cases}
+\tag{D3}
+\]
+Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares and reversal swaps the ordered pair, so these clauses complement. When \(s\) belongs to the face, reversal interchanges its first and last positions and flips 1/0. Thus (D3) satisfies the exact legal law
+\(c(\bar F,(v,u))=1-c(F,(u,v))\) on every physical square. Theorem 0 gives a full antipodal geodesic with at most one switch. This strictly strengthens the symmetric \(h\) theorem below.
+
+**Sharpness.** The existing clique-plus-star symmetric \(h\) example of Theorem B below is a member of (D3) and forces at least one switch for \(n\ge5\). Thus one switch is best possible even in the wider asymmetric family.
+
+**Finite independent checks.** Exhaustively enumerate all directed functions \(h:D^{(2)}\to\{0,1\}\) for \(|D|=4\) and \(|D|=5\), all full direction orders, and both choices of the root \(s\)-bit in (D3). In the first case, among \(2^{12}=4096\) functions, 4076 admit a monochromatic full geodesic and the remaining 20 have minimum exactly one switch. In the second, among \(2^{20}=1,048,576\) functions, 1,046,626 admit zero switches and 1950 require exactly one. None requires two; the general proof is independent of these checks.
+
+**Scope.** Theorem 0 improves the previously known \(t+1=2\) bound for the one-exterior-direction NORI2 family when the terminal special-direction square is constant, even if the ordinary pair rule is wholly asymmetric. It does **not** prove the unrestricted NORI2 one-switch conjecture: general ordered squares meeting \(s\) may have arbitrary exterior-bit dependence, and arbitrary ordinary squares may depend on many ordinary exterior bits. Any one-sentinel counterexample within the finite-support framework must violate the uniform terminal-square hypothesis (or the flat ordinary-pair hypothesis) of Theorem 0.
+
+**Literature.** H. Raynaud (1973), *Sur le circuit hamiltonien bi-colore dans les graphes orientés*, Periodica Mathematica Hungarica 3, 289–297; see A. Gyárfás, *Vertex covers by monochromatic pieces — a survey of results and problems*, Theorem 2, for the explicit complete-symmetric-digraph formulation, https://www.renyi.hu/~gyarfas/Cikkek/172_krakowrev3.pdf.
+
+## Earlier symmetric-pair theorem and further subclasses
 
 ## Main theorem
 

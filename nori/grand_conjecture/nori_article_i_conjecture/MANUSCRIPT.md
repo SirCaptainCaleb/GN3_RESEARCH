@@ -2,22 +2,17 @@
 
 ## Article setting and orientation
 
-**Matching logarithmic path scale under fixed exterior support.** For any legal (indeed, arbitrary) physical ordered 3-face coloring whose ordinary triples depend only on a fixed t-coordinate exterior support, the longest monochromatic geodesic has length at least 1 + (1/2)log_2(n-t). The terminal ordered-pair label proof gives n-t <= binomial(2L-2,L-1). The Devine-Milans one-sentinel construction matches this within constant factors, so the extremal scale for every fixed t>=1 is Theta(log n). The unrestricted problem remains open because different windows may sample inconsistent ordinary exterior fibers. See the new Foundations Subsection.
+**NORI2 stronger directed one-sentinel result.** In a legal physical ordered-square coloring with a distinguished direction s, it suffices for c(F,(u,v)) at fixed exterior s-bit0 to equal any directed pair function h(u,v), with no symmetry requirement, and for all ordered squares (u,s) to have one uniform fixed color (say 0). Raynaud's bichromatic Hamilton-cycle theorem orders the ordinary directions with arc colors 1...10...0. Placing s last from root s-bit0 gives a full physical antipodal geodesic with at most one color change. The other s sheet may be defined by 1-h(v,u), and s-first squares by1, yielding the exact legal reversal law. The symmetric clique/star example is sharp. Thus directed asymmetry alone does not defeat the NORI2 hierarchy; arbitrary exterior-sensitive sentinel squares remain the frontier.
 
-**New sharp qualitative obstruction: logarithmic monochromatic NORI3 paths and near-linear switches.** Combining the explicit logarithmic-short-path \((3,3)\)-tournament from Devine–Milans' uploaded *Tight paths in fully directed hypergraphs* with its newly proved reverse-complement self-duality and one physical exterior sentinel yields legal NORI3 colorings in **every \(n\ge5\)** with no monochromatic geodesic longer than \(2\lceil\log_2(n-1)\rceil+6\) moves. Consequently
-\[
- S_3(n)\ge\left\lceil\frac{n-2}{2\lceil\log_2(n-1)\rceil+4}\right\rceil-1
- =\Omega(n/\log n).
-\]
-This supersedes \(\Omega(\sqrt n)\) as a universal construction lower bound, and refutes the proposed universal \(\Omega(\sqrt n)\) monochromatic-geodesic guarantee. The fully rigorous physical-face proof is in the new Foundations Subsection *Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament*. The scrapbook's antisymmetric square-root bound is a distinct theorem for same-face reversal-odd boundary tournaments; unrestricted NORI3 permits same-face reversal-even pairs.
+**Unrestricted NORI3 logarithmic frontier: an exterior-sensitivity threshold.** Even without same-face reversal oddness or any antipodal assumption, if the mean number d of essential exterior coordinate variables per unordered direction triple (taking all six ordered faces) satisfies d=O(n^(1-epsilon)), every physical coloring has a monochromatic geodesic of Omega_epsilon(log n) moves. The proof extracts a direction set independent in the triple-exterior 4-uniform dependency hypergraph and applies the ordered-tight-path ideal-counting lemma in one root-consistent physical fiber. Quantitatively, if the longest monochromatic geodesic has length L with 4^(L-1)<3n/4, the average dependence satisfies d>=81n/(128*64^(L-1)). Thus a hypothetical sublogarithmic example must have d>=n^(1-o(1)); in the constant-average-support subclass the logarithmic guarantee matches the Devine-Milans construction. The unconditional unrestricted logarithmic theorem remains open. See the new Foundations manuscript.
 
 *Full Article composition: [source manuscript](../nori_article_i_conjecture.md).*
 
 ## Foundational closure theorems and rooted obstructions
 
-**Sharp logarithmic lower bound with bounded exterior support.** If the colors of every ordered three-face avoiding a distinguished set S of t coordinates depend only on its ordered free directions and the fixed exterior S bits, there is a monochromatic coordinate geodesic of length at least 1+(1/2)log_2(n-t), without assuming legality. The proof uses ordered Ramsey terminal-pair path-length labels and pairwise distinct grid order ideals: n-t <= binomial(2L-2,L-1) <= 4^(L-1). The self-dual Devine-Milans single-sentinel construction attains O(log n) longest monochromatic geodesics. Hence, for every fixed t>=1, the minimum over legal NORI3 colorings of exterior-support at most t of the longest monochromatic geodesic is Theta(log n). This does not settle unrestricted exterior dependence; it identifies coherence between ordinary exterior fibers as the obstruction. See Subsection Sharp logarithmic monochromatic paths under bounded exterior support.
+**NORI2 one-sentinel directed-pair closure (stronger).** The revised sentinel-barrier Subsection proves a sharp <=1 switch full antipodal geodesic for *arbitrary asymmetric* ordinary ordered-pair rules h(u,v), provided ordinary square colors at exterior s-bit0 are independent of other exterior bits and squares ordered (u,s) have a uniform terminal color 0 (or another fixed bit). Raynaud's bichromatic Hamiltonian-cycle theorem for a two-colored complete symmetric digraph supplies an ordinary-direction Hamilton path whose arc-color word is 1...10...0; traverse this order followed by s from a root with s-bit0. The full physical square word still has <=1 change. For legal coloring, define its other exterior s-bit sheet by 1-h(v,u) and give s-first squares color1; this satisfies exact antipodal-reversal oddness. Symmetry h(u,v)=h(v,u) is no longer needed. The old symmetric clique/star example shows sharpness. No theorem yet for genuinely arbitrary colors on squares containing s.
 
-**Stronger NORI3 extremal theorem (2026-10-10).** Every \(n\ge5\) has a legal coloring of genuine physical ordered three-faces for which **every monochromatic geodesic has at most \(2\lceil\log_2(n-1)\rceil+6\) moves**. Hence \(S_3(n)\ge\lceil(n-2)/(2\lceil\log_2(n-1)\rceil+4)\rceil-1=\Omega(n/\log n)\), superseding the multilevel \(\Omega(\sqrt n)\) lower bound asymptotically. The self-contained Subsection *Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament* derives this by an exact one-sentinel physical lift of the explicit Devine-Milans logarithmic-short-path (3,3)-tournament from their attached publication. The new algebraic identity is \(h_t(\widehat c,\widehat b,\widehat a)=1-h_t(a,b,c)\), ensuring short tight paths in **both** colors. The lift satisfies actual antipodal-reversal oddness, while the \(0,\varepsilon,1\) sentinel windows force the sentinel to an end of any monochromatic path. The scrapbook's antisymmetric \(\Omega(\sqrt n)\) theorem remains correct for boundary tournaments but is inapplicable to general NORI3 because its same-triple reversal condition is stronger. The new construction refutes a universal \(\Omega(\sqrt n)\) monochromatic-geodesic lower bound.
+**Sparse exterior dependence: quantitative necessity for sublogarithmic paths.** For each unordered direction triple T, let S_T be the union of essential exterior-bit supports over its six ordered face colors; write B=sum_T |S_T| and average d=B/binomial(n,3). Without any reversal or antipodal hypothesis, a random independent set in the 4-uniform dependency hypergraph has m>=ceil(3np/4), p=min(1,(n/(4B))^(1/3)), and all its triple colors become direction-only on a fixed physical cube fiber. The terminal-pair order-ideal Ramsey lemma then yields a monochromatic geodesic of length at least 1+0.5 log_2 m. Thus average d=O(n^(1-epsilon)) guarantees Omega_epsilon(log n); d=o(n) alone guarantees only an unbounded length. Conversely, if all monochromatic geodesics have length L with 4^(L-1)<3n/4, necessarily d>=81n/(128*64^(L-1)). In particular L=o(log n) requires near-linear average exterior sensitivity n^(1-o(1)). See the new Subsection Logarithmic geodesics from sparse exterior dependence without reversal symmetry. This complements the polynomial stronger result requiring same-face reversal antisymmetry.
 
 *Full Section composition: [source manuscript](nori_foundations.md).*
 
@@ -1445,7 +1440,56 @@ A separately written physical-mask evaluator checked 2,000 random physical order
 
 ### NORI2 sentinel barrier and exact one-switch examples
 
-# NORI2 sentinel barrier: one-switch closure for all symmetric direction-pair rules
+# NORI2 sentinel barrier: all directed pair rules and sharp one-switch examples
+
+## Stronger theorem: no symmetry of the ordinary pair rule is needed
+
+**Theorem 0 (directed one-sentinel closure).** Fix \(n\ge3\) and one coordinate \(s\), and put \(D=V(Q_n)\setminus\{s\}\). Suppose an arbitrary binary coloring \(c\) of genuine ordered physical two-faces obeys only:
+
+1. On every ordered square \((u,v)\) with \(u,v\in D\) and with the exterior fixed \(s\)-bit equal to 0, its color is some fixed **directed** pair function \(h(u,v)\), independent of all other exterior bits. No relation is assumed between \(h(u,v)\) and \(h(v,u)\).
+2. On every ordered square with \(s\) **last**, \(c(F,(u,s))=0\), independent of all exterior bits.
+
+There are **no** conditions on ordered squares with \(s\) first or on ordinary ordered squares with fixed exterior \(s\)-bit 1. Nevertheless, there is a full antipodal geodesic whose consecutive ordered-square color word changes at most **once**. The assertion does not require NORI legality.
+
+More generally, replace the constant 0 in hypothesis 2 by any common bit \(b\); the same conclusion holds, choosing the reverse color-run orientation.
+
+**Proof.** On \(D\) form the complete symmetric digraph with arc \(u\to v\) colored \(h(u,v)\). By Raynaud's 1973 theorem, this two-colored complete symmetric digraph has a directed Hamiltonian cycle which is the union of a color-0 directed path and a color-1 directed path (either color may be absent). Cutting this cycle at a suitable edge yields a Hamiltonian **path** \(q=(q_1,\ldots,q_{n-1})\) whose arc-color word has the **prescribed order**
+\[
+1,\ldots,1,\;0,\ldots,0.
+\tag{D1}
+\]
+Indeed, if both colors occur, the cyclic arc-color word has exactly two monochromatic runs; delete its last color-0 arc before the start of the color-1 run. The remaining directed path starts with its 1-run and ends with its 0-run. If a color is absent, any cut gives a monochromatic path. For terminal color \(b=1\), reverse the choice of transition, obtaining \(0,\ldots,0,1,\ldots,1\).
+
+Choose a cube root \(x\) with \(x_s=0\) and traverse the full direction order
+\[
+q_1,\ldots,q_{n-1},s.
+\tag{D2}
+\]
+Every ordinary pair window is a **physical** square with exterior \(s\)-bit still 0, hence has its prescribed \(h\)-color from (D1). The final ordered square \((q_{n-1},s)\) has color 0 by hypothesis 2. The complete physical window word is therefore a block of 1s followed by a block of 0s, including the terminal 0; there is at most one switch. Distinctness of the directions and root consistency are immediate. \(\square\)
+
+**Legal NORI2 corollary.** In particular, for an **arbitrary asymmetric** \(h\) on ordinary directed pairs, define a legal ordered-physical-square coloring by
+\[
+c(F,(u,v))=
+\begin{cases}
+h(u,v),& u,v\in D,\ z_s(F)=0,\\
+1-h(v,u),&u,v\in D,\ z_s(F)=1,\\
+1,&u=s,\\
+0,&v=s.
+\end{cases}
+\tag{D3}
+\]
+Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares and reversal swaps the ordered pair, so these clauses complement. When \(s\) belongs to the face, reversal interchanges its first and last positions and flips 1/0. Thus (D3) satisfies the exact legal law
+\(c(\bar F,(v,u))=1-c(F,(u,v))\) on every physical square. Theorem 0 gives a full antipodal geodesic with at most one switch. This strictly strengthens the symmetric \(h\) theorem below.
+
+**Sharpness.** The existing clique-plus-star symmetric \(h\) example of Theorem B below is a member of (D3) and forces at least one switch for \(n\ge5\). Thus one switch is best possible even in the wider asymmetric family.
+
+**Finite independent checks.** Exhaustively enumerate all directed functions \(h:D^{(2)}\to\{0,1\}\) for \(|D|=4\) and \(|D|=5\), all full direction orders, and both choices of the root \(s\)-bit in (D3). In the first case, among \(2^{12}=4096\) functions, 4076 admit a monochromatic full geodesic and the remaining 20 have minimum exactly one switch. In the second, among \(2^{20}=1,048,576\) functions, 1,046,626 admit zero switches and 1950 require exactly one. None requires two; the general proof is independent of these checks.
+
+**Scope.** Theorem 0 improves the previously known \(t+1=2\) bound for the one-exterior-direction NORI2 family when the terminal special-direction square is constant, even if the ordinary pair rule is wholly asymmetric. It does **not** prove the unrestricted NORI2 one-switch conjecture: general ordered squares meeting \(s\) may have arbitrary exterior-bit dependence, and arbitrary ordinary squares may depend on many ordinary exterior bits. Any one-sentinel counterexample within the finite-support framework must violate the uniform terminal-square hypothesis (or the flat ordinary-pair hypothesis) of Theorem 0.
+
+**Literature.** H. Raynaud (1973), *Sur le circuit hamiltonien bi-colore dans les graphes orientés*, Periodica Mathematica Hungarica 3, 289–297; see A. Gyárfás, *Vertex covers by monochromatic pieces — a survey of results and problems*, Theorem 2, for the explicit complete-symmetric-digraph formulation, https://www.renyi.hu/~gyarfas/Cikkek/172_krakowrev3.pdf.
+
+## Earlier symmetric-pair theorem and further subclasses
 
 ## Main theorem
 
@@ -1901,3 +1945,117 @@ For **unrestricted** legal NORI3 colorings the reduction (8) generally fails: at
 The logarithmic extremal scale is settled **within the bounded-exterior-support class**. An unrestricted counterexample to \(\Omega(\log n)\) cannot have bounded exterior-coordinate support, and any successful universal theorem must handle changes of the induced ordered-triple coloring as ordinary coordinates are traversed. Thus the remaining problem is fundamentally an *exterior-fiber coherence problem*, not merely a better path theorem for fixed \((3,3)\)-tournaments.
 
 **Cross-reference.** The established manuscript *Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament* supplies (4). The present proof of Lemma 3 is independent of published literature and can be checked directly.
+
+### Logarithmic geodesics from sparse exterior dependence without reversal symmetry
+
+# Logarithmic monochromatic cube geodesics from sparse exterior dependence, without reversal symmetry
+
+## Statement and implication for the unrestricted NORI3 frontier
+
+Let \(V\) be the \(n\)-element direction set of \(Q_n\), \(n\ge4\), and let \(c(F,\pi)\) be **any** binary coloring of ordered physical three-faces, with traversal-corner independence as usual. No antipodal law and no same-face reversal symmetry are needed for this result.
+
+For each unordered triple \(T\in\binom V3\), let \(S_T\subseteq V\setminus T\) be a set of exterior coordinates such that, for each ordering \(\pi\) of \(T\), the color on a physical face with free set \(T\) is determined entirely by \(\pi\) and the exterior bits indexed by \(S_T\). A canonical choice is the union, over all six orderings, of the essential-variable sets of their Boolean face-color functions. The **total exterior-dependence incidence** and **average support** are
+\[
+B=\sum_{T\in\binom V3}|S_T|,\qquad
+\bar d=B/\binom n3.
+\]
+No common support set is assumed; the \(S_T\) can be unrelated.
+
+**Theorem A (sparse-dependence bound).** When \(B>0\), set
+\[
+p=\min\left\{1,\left(\frac{n}{4B}\right)^{1/3}\right\},
+\quad M=\left\lceil\frac{3np}{4}\right\rceil.
+\tag{1}
+\]
+There exists a monochromatic coordinate-geodesic of length \(L\) (number of distinct coordinate moves) with
+\[
+\boxed{L\ \ge\ 1+\tfrac12\log_2 M}
+\tag{2}
+\]
+whenever \(M\ge2\), and in all cases a path with at least \(\max\{3,\lceil1+\frac12\log_2 M\rceil\}\) moves for \(n\ge3\). For \(B=0\), one can take \(M=n\).
+
+In particular, if \(\bar d\ge1\), using \(B\le\bar d\,n^3/6\) in (1) yields
+\[
+\boxed{L\ \ge\ 1+\tfrac16\log_2(n/\bar d)-O(1)}
+\tag{3}
+\]
+with an absolute additive constant. If \(\bar d=O(n^{1-\epsilon})\) for a **fixed** \(\epsilon>0\), then
+\[
+\boxed{L=\Omega_\epsilon(\log n)}.
+\tag{4}
+\]
+For \(\bar d=O(1)\), the lower bound is \(\Omega(\log n)\), even if the supports \(S_T\) differ arbitrarily from triple to triple.
+
+**Theorem B (near-linear essential-support barrier).** Let \(L_{\max}(c)\) be the maximum monochromatic geodesic length of \(c\). If
+\[
+4^{L_{\max}(c)-1}<3n/4,
+\]
+then the canonical total essential-variable incidence \(B\) satisfies
+\[
+\boxed{B\ge\frac{27n^4}{256\,64^{L_{\max}(c)-1}}}
+\tag{5}
+\]
+and hence
+\[
+\boxed{\bar d\ge\frac{81n}{128\,64^{L_{\max}(c)-1}}}.
+\tag{6}
+\]
+In particular, an unrestricted NORI3 family with \(L_{\max}(c_n)=o(\log n)\) **must** have
+\[
+\bar d(c_n)\ge n^{1-o(1)}.
+\tag{7}
+\]
+Thus a sublogarithmic obstruction, if one exists, cannot be based on low- or moderately sparse exterior sensitivity on average: for asymptotically almost linear (in exponent) numbers of ordinary directions, triple face colors must depend essentially on many other coordinates, averaged across triples.
+
+## Proof: removing all internal exterior dependencies
+
+Create the 4-uniform hypergraph \(\mathcal H\) on \(V\), including hyperedge \(T\cup\{u\}\) for each unordered triple \(T\) and \(u\in S_T\). Repeated hyperedges are allowed conceptually but can be discarded; in either case the number of distinct edges is at most \(B\).
+
+For \(p\) from (1), choose a random subset \(X\subseteq V\) by retaining each direction independently with probability \(p\). Then
+\[
+\mathbb E|X|=np,\qquad
+\mathbb E e(\mathcal H[X])\le Bp^4\le np/4.
+\]
+Therefore a particular \(X\) satisfies \(|X|-e(\mathcal H[X])\ge3np/4\). By removing at most one vertex from each edge of \(\mathcal H[X]\) (using the original finite edge list), one obtains an independent direction set \(D\subseteq V\) with
+\[
+|D|\ge \left\lceil3np/4\right\rceil=M.
+\tag{8}
+\]
+Independence means, for every three-set \(T\subseteq D\),
+\[
+S_T\cap D=\varnothing. \tag{9}
+\]
+This is **not** a common-global-support hypothesis: the sets \(S_T\) may be disjoint, overlapping, nonlinear, and nonuniform. It asserts only that no exterior coordinate capable of affecting a face supported on \(D\) is itself traversed inside \(D\).
+
+Fix any root \(x\in Q_n\). For each ordered triple \(\pi=(a,b,c)\) of distinct directions in \(D\), define \(h_x(a,b,c)\) as the color of any physical face with free set \(\{a,b,c\}\) whose fixed bits on \(S_{\{a,b,c\}}\) agree with \(x\). By the support condition this is well-defined, independent of all other exterior bits. By (9), every geodesic using only directions in \(D\), starting at \(x\), maintains the relevant \(S_T\)-bits unchanged at every ordered-three-face window. Therefore every such path's actual physical color word is *exactly* its consecutive-triple color word under this single direction-only function \(h_x\).
+
+Choose an arbitrary strict total order on \(D\). The two-color ordered-tight-path Ramsey lemma (proved independently in the sibling manuscript *Sharp logarithmic monochromatic geodesics under bounded exterior support*) says that for any binary coloring of increasing triples on \(m=|D|\) vertices, there is an increasing monochromatic tight path on \(L\) distinct vertices with
+\[
+m\le\binom{2L-2}{L-1}\le4^{L-1}. \tag{10}
+\]
+For completeness, label each pair \(i<j\) by the two maximum orders of color-0 and color-1 increasing tight paths ending in \((i,j)\). Along each triple, the coordinate corresponding to that triple's color strictly increases between its first and second pair. For every \(j\), form the downwards-closed ideal in the \((L-1)\times(L-1)\) grid generated by incoming pair labels \((i,j)\). For \(i<j\), the label of \((i,j)\) belongs to the ideal of \(j\) but cannot belong to that of \(i\), by the strict increase. Thus all \(m\) vertex ideals are distinct, and the square grid has precisely \(\binom{2L-2}{L-1}\) ideals. This proves (10).
+
+Read the resulting increasing path \(p_1,\ldots,p_L\) as a sequence of *distinct cube directions*. Starting at the fixed root \(x\), traverse them once each. Equation (9) guarantees that every actual ordered physical window has exactly the prescribed \(h_x\)-color. Hence the cube geodesic is monochromatic, and (10) gives (2). When \(B=0\), all supports are empty, one may simply take \(D=V\), giving \(M=n\). This proves Theorem A. \(\square\)
+
+## Proof: quantitative barrier for prospective sublogarithmic examples
+
+Let \(L=L_{\max}(c)\). Suppose \(4^{L-1}<3n/4\). Theorem A would give \(L\ge1+\frac12\log_2(3n/4)\) if \(B\le n/4\), a contradiction, so \(B>n/4\) and
+\(p=(n/(4B))^{1/3}<1\). Combining (8)–(10),
+\[
+4^{L-1}\ge M\ge\frac{3n}{4}\left(\frac{n}{4B}\right)^{1/3}.
+\]
+Cubing and rearranging gives
+\[
+64^{L-1}\ge\frac{27n^4}{256B},
+\]
+establishing (5). Since \(\binom n3\le n^3/6\), dividing by \(\binom n3\) gives (6). If \(L=o(\log n)\), the premise \(4^{L-1}<3n/4\) holds for all sufficiently large \(n\), while \(64^{L-1}=n^{o(1)}\), yielding (7). \(\square\)
+
+## Why this changes the frontier
+
+The previously established fixed-common-exterior-support theorem gives a sharp \(\Theta(\log n)\) guarantee for one set of finitely many special directions, with no reversal assumption. The previous *Polynomial monochromatic geodesics from sparse triplewise exterior support* gives a **stronger polynomial** guarantee for \(d=o(n)\), but **requires same-face reversal oddness** in order to invoke the Devine–Milans boundary-tournament square-root path theorem.
+
+The present theorem has neither restriction. Its supports can vary with the triple and its coloring can violate same-face antisymmetry maximally. For all physical ordered-three-face colorings, including legal unrestricted NORI3, it pins any potential sublogarithmic construction to the near-linear average essential-support regime. The established legal one-sentinel Devine–Milans construction has \(\bar d\le1\) and all monochromatic paths \(O(\log n)\), so (4) is **asymptotically sharp** for legal colorings with bounded *average triplewise* support, even though these need not admit a fixed common support.
+
+The method deliberately does not establish the universal conjectural \(\Omega(\log n)\) lower bound for arbitrary physical colorings: if \(\bar d=\Theta(n)\), the support hypergraph may be complete, and the independent-set extraction need yield only constantly many directions. A fundamentally different *exterior-fiber coherence* argument would be needed in that regime.
+
+There is also no immediate implication that \(\bar d=n^{1-o(1)}\) is **sufficient** for sublogarithmic examples. Theorems A–B give necessity only.
