@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI full-manuscript workflow: Article Section Subsection publication
+# NORI assembled publication: Article Section Subsection and independent worker prompt
 
 on:
   workflow_dispatch:
