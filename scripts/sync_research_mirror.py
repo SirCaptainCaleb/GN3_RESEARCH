@@ -668,7 +668,7 @@ Generated: {rev.get('generated_at')}
         # accessible beside the assembled manuscript.
         def contextual_preamble(body: str) -> str:
             paragraphs = []
-            for para in (body or "").strip().split("\\n\\n"):
+            for para in (body or "").strip().split("\n\n"):
                 p = para.strip()
                 if not p or p.startswith("#"):
                     continue
@@ -679,7 +679,7 @@ Generated: {rev.get('generated_at')}
                 paragraphs.append(p)
                 if len(paragraphs) >= 2 or sum(len(x) for x in paragraphs) >= 1400:
                     break
-            return "\\n\\n".join(paragraphs)
+            return "\n\n".join(paragraphs)
 
         sections_by_id = {x["id"]: x for x in section_items}
         for a in articles:
