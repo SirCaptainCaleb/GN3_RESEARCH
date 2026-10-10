@@ -482,3 +482,13 @@ CREATE TRIGGER coordination_revision_event AFTER INSERT OR UPDATE ON nori.coordi
 REVOKE ALL ON FUNCTION nori.coordination_change_event() FROM PUBLIC, anon, authenticated;
 -- The active project's actual baseline, objective map and strategic updates are data, not migration defaults.
 -- Reconcile privileges and existing triggers before applying to an already deployed project.
+
+-- RPC privileges: privileged project services and database owners only.
+REVOKE ALL ON FUNCTION nori.coordination_strategy() FROM PUBLIC, anon, authenticated;
+REVOKE ALL ON FUNCTION nori.coordination_metrics() FROM PUBLIC, anon, authenticated;
+REVOKE ALL ON FUNCTION nori.coordination_record_baseline(text,bigint) FROM PUBLIC, anon, authenticated;
+REVOKE ALL ON FUNCTION nori.coordination_decide_versioned(text,text,integer,text,text,text,text) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION nori.coordination_strategy() TO service_role;
+GRANT EXECUTE ON FUNCTION nori.coordination_metrics() TO service_role;
+GRANT EXECUTE ON FUNCTION nori.coordination_record_baseline(text,bigint) TO service_role;
+GRANT EXECUTE ON FUNCTION nori.coordination_decide_versioned(text,text,integer,text,text,text,text) TO service_role;
