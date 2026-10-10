@@ -459,6 +459,16 @@ def build(schema: str):
         # Live coordination is exported as a dated snapshot. Strip session IDs from
         # public GitHub artifacts; only the authenticated database keeps provenance.
         strategy = context(schema, "coordination")
+        # The artifact.latest pointer still names the preceding artifact
+        # until this build completes; use the revision captured for this build.
+        strategy["freshness"] = dict(strategy.get("freshness", {}))
+        strategy["freshness"].update({
+            "artifact_snapshot_revision": rev.get("revision"),
+            "changes_since_snapshot": max(
+                0, int(strategy["freshness"].get("live_revision") or 0)
+                   - int(rev.get("revision") or 0)),
+            "strategic_updates_after_snapshot": 0,
+        })
         public_strategy = dict(strategy)
         public_strategy["active_claims"] = [
             {k: t.get(k) for k in ("id", "objective_id", "target_key", "role", "started_at", "lease_expires_at")}
