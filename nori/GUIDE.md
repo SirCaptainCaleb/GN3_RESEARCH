@@ -55,3 +55,6 @@ Articles, Sections, Subsections, Items, Toolkit records, Brainstorms, and auxili
 Brainstorms remain typed nodes, accessible using brainstorms(), save_brainstorm(...), and promote_brainstorm(...). Promotion preserves the original seed and full body in an Item under a newly created Subsection.
 
 For bulk manuscript intake, use article_subsection_intake(...) and article_results(...) only where available as legacy read-only interfaces; names containing “result” reflect historical APIs, not a current Result node type. Verify what each returns against live Items. Build compositions in order: Subsection, Section, Article.
+
+## NORI coordination
+After reading all Article compositions, consult STRATEGY.md and the live coordination_strategy(). Select a precise closure-relevant obligation, compare the strongest alternative, claim the target, and checkpoint after substantive results. Publish significant mathematical implications with exact Item versions. Reconsider after two extensions leaving the same bridge unchanged. Park an exhausted approach with a reopening condition. Keep rigorous proofs in Items and compositions.

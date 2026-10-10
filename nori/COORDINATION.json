@@ -1,0 +1,355 @@
+{
+  "active_claims": [],
+  "active_objectives": [
+    {
+      "bridge": "Derive same-root complementary intersections in actual R_(a,b)(x), R_(b,a)(x), including terminal memory and seam compatibility; support coverage by itself does not force it.",
+      "decisive_step": "Characterize an invariant of both reversed-terminal families preserved under legitimate root slides, then prove a complementary-intersection theorem or produce a legal counterexample.",
+      "evidence": {
+        "articles": [
+          "III",
+          "IV",
+          "II"
+        ],
+        "obstruction_item_version": 3
+      },
+      "id": "reachability_terminal_collision",
+      "obstruction": "Verified Q7 legal coloring with all proper supports good at one root but no full good path from that root; generic equivariant root label collisions also fail to force the needed diagonal.",
+      "reason": "Direct sufficient condition and explicit extraction theorem. More closure-directed than raw connector-count improvements; counterexample to proper-support coverage raises the information requirement.",
+      "relevance": "equivalent",
+      "revision": 2,
+      "state": "active",
+      "target": "For every legal ordered-three-face coloring, exhibit a root x, an ordered terminal pair (a,b), and complementary supports U and D\\U both realized by monochromatic genuine geodesics with reversed terminal memories (a,b) and (b,a)."
+    },
+    {
+      "bridge": "Select compatible cap colors from two-sided extremal walls and a potential preventing exchange cycles.",
+      "decisive_step": "Write exact four-window-change exchange table for an extremal witness, search a cycle-free lexicographic potential, and falsify claimed monotonicity on small legal instances.",
+      "evidence": {
+        "articles": [
+          "V",
+          "IV",
+          "I"
+        ]
+      },
+      "id": "full_geodesic_exchange",
+      "obstruction": "Rooted forcing fails, local good connectors can have incompatible roots/memories, and midpoint seam location is not locally constant under swaps.",
+      "reason": "Competing global approach with no preliminary topological index. A decisive potential would force closure and reuse Article IV transport; risk is persistent cycles.",
+      "relevance": "sufficient",
+      "revision": 2,
+      "state": "active",
+      "target": "Prove that every legal coloring with no full good antipodal geodesic admits an improving root-moving exchange on a suitably extremal full or maximal good path; establish a well-founded descent potential."
+    },
+    {
+      "bridge": "Resolve equality/complement consistency of exterior fixed bits for the multi-path gadget, or replace it by a chart-independent higher-dimensional family.",
+      "decisive_step": "Extract a minimal full-dimensional face-identity constraint system for a Q7 gadget; prove its satisfiability for every coloring or construct a rigorous obstruction.",
+      "evidence": {
+        "articles": [
+          "I",
+          "VII",
+          "VI"
+        ]
+      },
+      "id": "dimension_six_extension",
+      "obstruction": "Simple facet lifting fails due to inconsistent exterior-bit holonomy, and fixed-root formulations are false.",
+      "reason": "Strong proved base and physical certificate, but direct generalization faces an explicit parity obstruction; should be revisited after exterior control discoveries.",
+      "relevance": "special_case_extension",
+      "revision": 2,
+      "state": "active",
+      "target": "Extend the Q6 six-geodesic forcing certificate to n>=7 by a face-identification-consistent embedding or a new full-dimensional finite forcing family; retain actual exterior bits."
+    },
+    {
+      "bridge": "Construct actual jointly-witnessed cells and prove sufficient nontrivial cup product/filling rather than one-dimensional ambient equivariant classes.",
+      "decisive_step": "Construct a finite explicit carrier cover from genuine window-shift cells and audit its intersection index against a small legal obstruction model.",
+      "evidence": {
+        "articles": [
+          "II",
+          "III",
+          "IV"
+        ]
+      },
+      "id": "physical_topology_extraction",
+      "obstruction": "Equivariant zeros in ambient K_n are insufficient; formal diagonals in physical shuttles do not correspond to real four-edge windows.",
+      "reason": "Cross-cutting with potential for a global proof; less direct than certified reversed-terminal reachability and heavily constrained by physical witness compatibility.",
+      "relevance": "sufficient",
+      "revision": 2,
+      "state": "proposed",
+      "target": "Prove sufficient equivariant index or mixed class nonvanishing for a color-dependent subcomplex whose simplices are jointly witnessed by genuine good antipodal geodesics, yielding a good full path."
+    },
+    {
+      "bridge": "Eliminate genuine odd holonomy or repair incompatible face assignments when lifting lower-dimensional forcing gadgets.",
+      "decisive_step": "Classify all minimal inconsistent exterior face-identification cycles with distinct sentinels and test a root-chart invariant that detects compatible actual witness seams.",
+      "evidence": {
+        "articles": [
+          "VI",
+          "VII",
+          "I"
+        ]
+      },
+      "id": "exterior_bit_holonomy",
+      "obstruction": "Exterior equality/complement constraints can produce parity-inconsistent cycles; one common sentinel can absorb local face-color constraints without securing terminal witness compatibility.",
+      "reason": "Covers the principal physical-lifting failure, and negative classifications redirect both Q6-extension and reachability. More tractable in constrained classes than a general topological index.",
+      "relevance": "exploratory",
+      "revision": 2,
+      "state": "active",
+      "target": "Classify exterior-bit dependence patterns of legal ordered-three-face colorings that defeat current affine-root interpolation, and establish either a universal compatible-root chart theorem or an explicit obstruction with sharper hypotheses."
+    },
+    {
+      "bridge": "Represent overlapping ordered-three-face windows by edge states without erasing 2-direction terminal memory or genuine physical exterior dependence.",
+      "decisive_step": "Formulate candidate transfer on lifted oriented edge/flag memory; check exact local equivalence or produce a small legal refutation.",
+      "evidence": {
+        "articles": [
+          "VIII",
+          "II",
+          "III"
+        ]
+      },
+      "id": "edge_transfer_ordered_faces",
+      "obstruction": "An edge geodesic's color word does not determine ordered-three-face triple-window colors; special middle-belt results do not cover unrestricted edge colorings.",
+      "reason": "Potentially reusable across combinatorial methods but two independent open transfer gaps; currently outranked by direct reversed-terminal and exchange mechanisms.",
+      "relevance": "exploratory",
+      "revision": 2,
+      "state": "proposed",
+      "target": "State and prove an explicit map from an edge-coloring path theorem to legal ordered-three-face NORI colorings that preserves a full antipodal geodesic and bounds ordered-window color switches by one."
+    }
+  ],
+  "conjecture": "Every antipodal-reversal-odd coloring of physical ordered three-faces of Q_n admits a full antipodal geodesic with at most one color change",
+  "established_scope": "Q5 unconditional and Q6 under antipodal reversal oddness; general n open",
+  "freshness": {
+    "artifact_snapshot_revision": 1001,
+    "changes_since_snapshot": 25,
+    "composition_dependency_stale": 0,
+    "live_revision": 1026,
+    "new_item_candidates_since_article_composition": 12,
+    "strategic_updates_after_snapshot": 3
+  },
+  "new_mathematical_candidates": [
+    {
+      "created_at": "2026-10-10T02:02:24.79212+00:00",
+      "id": "nori_q8_single_sentinel_exterior_complete_sat_20261009",
+      "title": "Complete face-dependent Q8 one-sentinel closure: dichotomy and two UNSAT certificates",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T01:56:31.534998+00:00",
+      "id": "nori_q6_six_oddness_defect_and_single_support_robustness_20261009",
+      "title": "Q6 closure survives eight antipodal-law defects, or any number on one direction triple",
+      "version": 3
+    },
+    {
+      "created_at": "2026-10-10T01:55:37.279202+00:00",
+      "id": "nori_q6_922_good_geodesics_pentagon_certificate_20261009",
+      "title": "At least 922 good full Q6 geodesics from pentagon connectors and six-path forcing",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T01:52:59.94457+00:00",
+      "id": "nori_eight_coordinate_only_full_one_switch_sat_certificate_20261009",
+      "title": "Complete Q8 coordinate-only one-switch closure: 168-variable UNSAT certificate",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T01:44:06.636289+00:00",
+      "id": "nori_q7_twenty_of_twentyone_five_supports_common_good_roots_and_even_dimensional_no_go_20261009",
+      "title": "At least 32 Q7 roots have 20/21 good five-supports; exact even-dimensional no-go",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T01:39:05.906483+00:00",
+      "id": "nori_q7_rooted_bad_rank_five_missing_pair_matching_obstruction_20261009",
+      "title": "Q7 rooted bad five-supports form a matching-two graph; ten good supports at every root",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T00:41:11.478208+00:00",
+      "id": "nori_q7_all_proper_supports_good_one_root_no_full_rooted_geodesic_explicit_1680bit_certificate_20261009",
+      "title": "Q7 exact legal root obstruction: all proper supports good and two-color monochromatic coverage through rank five",
+      "version": 3
+    },
+    {
+      "created_at": "2026-10-10T00:38:42.237026+00:00",
+      "id": "nori_all_dimensions_same_root_every_half_rank_path_good_no_full_path_and_q7_all21_supports_20261009",
+      "title": "Legal NORI root with every half-rank path good but every full path bad; Q7 all 21 five-supports",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T00:32:17.538536+00:00",
+      "id": "nori_marked_tournament_monochromatic_all_dimensions_through_sixteen_tournament_pattern_classification_20261009",
+      "title": "All center-marked tournament triple colorings close monochromatically through dimension sixteen",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T00:29:59.261537+00:00",
+      "id": "nori_q7_four_heavy_facet_obstruction_and_fourteen_common_good_roots_20261009",
+      "title": "Four heavy five-supports impossible in Q7; any fourteen supports share ≥4 good roots",
+      "version": 2
+    },
+    {
+      "created_at": "2026-10-10T00:27:48.733298+00:00",
+      "id": "nori_power_two_tournament_oriented_path_parity_and_infinite_marked_center_mono_dimensions_20261009",
+      "title": "Power-of-two universal oriented tournament Hamilton paths imply marked-center monochromatic NORI in infinitely many dimensions",
+      "version": 1
+    },
+    {
+      "created_at": "2026-10-10T00:25:18.740579+00:00",
+      "id": "nori_q7_heavy_rank_five_support_packing_and_twelve_common_good_roots_20261009",
+      "title": "Heavy Q7 five-supports form a six-edge intersecting family; any twelve share ≥4 good roots",
+      "version": 1
+    }
+  ],
+  "parked_objectives": [],
+  "recent_strategic_updates": [
+    {
+      "affected_item_versions": [
+        {
+          "id": "nori_q6_six_oddness_defect_and_single_support_robustness_20261009",
+          "version": 3
+        },
+        {
+          "id": "nori_q8_single_sentinel_exterior_complete_sat_20261009",
+          "version": 1
+        }
+      ],
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_references": [
+        "nori_q6_six_oddness_defect_and_single_support_robustness_20261009",
+        "nori_q8_single_sentinel_exterior_complete_sat_20261009"
+      ],
+      "id": 3,
+      "implication": "These are robust special-case theorems and provide candidate constraints for physical-face lifting; the unrestricted all-dimension exterior synchronization gap remains",
+      "kind": "discovery",
+      "mathematical_discovery": "Q6 closure tolerates reported restricted oddness faults; Q8 one-sentinel exterior family has a complete finite SAT dichotomy certificate",
+      "objective_ids": [
+        "dimension_six_extension",
+        "exterior_bit_holonomy"
+      ],
+      "priority_change": "Evaluate SAT certificate provenance/independent verification before elevating; probe whether sentinel assumptions admit inductive compatible physical identification",
+      "reopening_condition": "Generalize only when exterior dependence and proof certificates are preserved"
+    },
+    {
+      "affected_item_versions": [],
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_references": [
+        "nori_k1_nine_vertex_tight_four_ramsey_exact_sat_q12_central_edge_closure_20261009",
+        "nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009"
+      ],
+      "id": 2,
+      "implication": "Preserve independent exposition and construction methods; use canonical exact-SAT Q12 and exact-optimal H_i distance references; neither implies the ordered-three-face grand theorem",
+      "kind": "duplication",
+      "mathematical_discovery": "Two nine-vertex tight-four Ramsey/Q12 central-sign manuscripts have identical principal statements and computational proof encodings; three H_i transport publications form a strict geometric strengthening chain",
+      "objective_ids": [
+        "edge_transfer_ordered_faces",
+        "full_geodesic_exchange"
+      ],
+      "priority_change": "Avoid repeating certificate generation or connector counting absent a closure transfer",
+      "reopening_condition": "Reopen only for a genuinely independent proof/certificate or a verified ordered-face transfer"
+    },
+    {
+      "affected_item_versions": [
+        {
+          "id": "nori_q7_all_proper_supports_good_one_root_no_full_rooted_geodesic_explicit_1680bit_certificate_20261009",
+          "version": 3
+        }
+      ],
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_references": [
+        "nori_q7_all_proper_supports_good_one_root_no_full_rooted_geodesic_explicit_1680bit_certificate_20261009"
+      ],
+      "id": 1,
+      "implication": "Refutes any deduction from same-root proper-support coverage alone; must retain reversed terminal memory and a compatible seam",
+      "kind": "obstruction",
+      "mathematical_discovery": "Explicit legal Q7 rooted coloring has good paths on all proper supports at one root yet no full good path from that root",
+      "objective_ids": [
+        "reachability_terminal_collision",
+        "full_geodesic_exchange"
+      ],
+      "priority_change": "Elevate direct terminal collision and moving-root exchange over additional support-density increments",
+      "reopening_condition": "Reconsider coverage-based methods only with a stated new compatibility mechanism"
+    }
+  ],
+  "relationships": [
+    {
+      "assessment": "Explicit transfer from edge-coloring witnesses to ordered physical triple windows remains unproved. Treat edge theorems as separate special-problem results.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [],
+      "id": 7,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "transfer_required",
+      "source_id": "edge_transfer_ordered_faces",
+      "target_id": "reachability_terminal_collision"
+    },
+    {
+      "assessment": "Both need a same-root complementary reversed-terminal mixed intersection witnessed by genuine path states. Pure support-index lower bounds lack that conclusion.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_exact_color_free_reversed_two_tail_complement_reachability_grand_equivalence_20261008"
+      ],
+      "id": 6,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "shares_bridge",
+      "source_id": "physical_topology_extraction",
+      "target_id": "reachability_terminal_collision"
+    },
+    {
+      "assessment": "Both require consistent physical-face equality/complement identification when moving a Q6 forcing certificate into larger n. Count a joint compatible-root theorem once across objectives.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_q6_six_oddness_defect_and_single_support_robustness_20261009"
+      ],
+      "id": 5,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "shares_bridge",
+      "source_id": "exterior_bit_holonomy",
+      "target_id": "dimension_six_extension"
+    },
+    {
+      "assessment": "Legal explicit Q7 rooted coloring with complete proper-support good-path coverage and no full good path at that root. Refutes a coverage-only lifting implication; does not refute grand NORI or terminal-specific common-root complement criterion.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_q7_all_proper_supports_good_one_root_no_full_rooted_geodesic_explicit_1680bit_certificate_20261009"
+      ],
+      "id": 4,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "refutes_extension",
+      "source_id": "nori_q7_all_proper_supports_good_one_root_no_full_rooted_geodesic_explicit_1680bit_certificate_20261009",
+      "target_id": "reachability_terminal_collision"
+    },
+    {
+      "assessment": "Older <=2n transport bound and density are quantitatively superseded by exact optimal max(6,2ceil((n-1)/2)) and corresponding improved connector count. Preserve elementary shuttle lemma/proof.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_two_step_root_shuttle_short_antipodal_window_path_and_connector_density_20261009",
+        "nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009"
+      ],
+      "id": 3,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "supersedes",
+      "source_id": "nori_two_step_root_shuttle_short_antipodal_window_path_and_connector_density_20261009",
+      "target_id": "nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009"
+    },
+    {
+      "assessment": "Batched-buffer constructive upper bound equals sharp optimal distance later established by matching lower bound. Canonical sharp distance and connector density: optimal item v5; retain batched-buffer proof as alternative construction. Extraction of a single full good geodesic still open.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_batched_buffer_exterior_root_shuttle_antipodal_h_i_length_n_connector_density_20261009",
+        "nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009"
+      ],
+      "id": 2,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "complementary",
+      "source_id": "nori_batched_buffer_exterior_root_shuttle_antipodal_h_i_length_n_connector_density_20261009",
+      "target_id": "nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009"
+    },
+    {
+      "assessment": "Same nine-vertex tight-four monochromatic eight-path claim, 126 Boolean variables, 181440 reversal path classes, and Q12 middle-belt application. Canonical exposition: exact_sat item (contains standalone Z3 script). Later item preserves independent presentation but shares the computational mechanism; no independent UNSAT proof established. Neither transfers to ordered-three-face NORI.",
+      "created_at": "2026-10-10T03:08:56.969916+00:00",
+      "evidence_item_ids": [
+        "nori_k1_nine_vertex_tight_four_ramsey_q12_central_sign_closure_20261009",
+        "nori_k1_nine_vertex_tight_four_ramsey_exact_sat_q12_central_edge_closure_20261009"
+      ],
+      "id": 1,
+      "recorded_session": "session_nori_r4593_2",
+      "relation": "duplicates",
+      "source_id": "nori_k1_nine_vertex_tight_four_ramsey_q12_central_sign_closure_20261009",
+      "target_id": "nori_k1_nine_vertex_tight_four_ramsey_exact_sat_q12_central_edge_closure_20261009"
+    }
+  ]
+}

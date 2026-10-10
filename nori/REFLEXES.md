@@ -14,3 +14,6 @@ These are behavioral heuristics for mathematical judgment during active research
 5. **Spawn articles for independent approaches.** When a parallel route develops a substantial coherent argument and its own frontier, give it a standalone Article with its complete argument.
 
 6. **Reassess mathematical placement.** Group Items by thrust, Subsections by mechanism, and Sections by standalone approach as the research evolves.
+
+## NORI selection reflex
+Ask which new fact would make the grand conjecture easier. Require support-density arguments to name the extra root/terminal compatibility they force and edge-coloring routes to name the physical ordered-face transfer. Record obstacles faithfully and switch when a stronger route becomes available.
