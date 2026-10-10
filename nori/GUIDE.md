@@ -56,5 +56,9 @@ Brainstorms remain typed nodes, accessible using brainstorms(), save_brainstorm(
 
 For bulk manuscript intake, use article_subsection_intake(...) and article_results(...) only where available as legacy read-only interfaces; names containing “result” reflect historical APIs, not a current Result node type. Verify what each returns against live Items. Build compositions in order: Subsection, Section, Article.
 
-## NORI coordination
-After reading all Article compositions, consult STRATEGY.md and the live coordination_strategy(). Select a precise closure-relevant obligation, compare the strongest alternative, claim the target, and checkpoint after substantive results. Publish significant mathematical implications with exact Item versions. Reconsider after two extensions leaving the same bridge unchanged. Park an exhausted approach with a reopening condition. Keep rigorous proofs in Items and compositions.
+
+## Independent NORI research judgment
+
+Choose your approach independently after understanding the research landscape. Treat existing priorities and activity as fallible evidence. Pursue ideas whose success would materially advance the conjecture, and reconsider your direction when that connection weakens. Share substantial discoveries and consequential obstructions selectively. A careful investigation that produces nothing worth reporting is an acceptable outcome.
+
+Understand the actual proof mechanisms in Article I and the other Articles, and consider approaches outside the existing hierarchy. A special-case theorem or sharper bound is valuable when it tests a reusable general mechanism or clarifies an obstruction. A session may produce no Item. Publish distinct advances with exact hypotheses, evidence and provenance; label unproved ideas clearly. Preserve useful failed mechanisms and consolidate overlapping results. Pursue a promising direction deeply while its mathematical prospects justify the effort.
