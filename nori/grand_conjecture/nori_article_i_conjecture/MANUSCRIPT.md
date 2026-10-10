@@ -411,6 +411,51 @@ For sharpness fix coordinate \(a\), and in (1) set \(H(P,t)=\mathbf1_{\{a\notin 
 
 The rooted strengthening therefore fails for every \(n\ge5\), whereas the unrooted five-dimensional theorem has the stronger conclusion that at least \(15/16\) of the roots succeed. This makes root mobility an essential part of any global topological or inductive extraction.
 
+## Exact thin-shell theorem for good roots of exterior parity
+
+The sharp five-dimensional lower bound on the proportion of good roots has no dimension-independent analogue. For even \(n\ge6\), consider the legal coloring
+\[
+c(F,\pi)=\bigoplus_{t\notin\mathrm{free}(F)}b_t(F).
+\]
+Write \(G_n\subseteq Q_n\) for its roots admitting a full geodesic with at most one color change, and put
+\[
+\rho_n=\begin{cases}1&n\equiv0\pmod6,\\2&n\equiv2,4\pmod6.\end{cases}
+\]
+
+**Theorem 4 (exact good-root shell).** For this NORI coloring,
+\[
+G_n=\{x\in Q_n:|\operatorname{wt}(x)-n/2|\le\rho_n\}.
+\tag{3}
+\]
+Consequently
+\[
+\frac{|G_n|}{2^n}
+=2^{-n}\sum_{j=-\rho_n}^{\rho_n}\binom n{n/2+j}
+=(2\rho_n+1)\sqrt{\frac{2}{\pi n}}\,(1+O(n^{-1})).
+\tag{4}
+\]
+In particular, the good-root density tends to zero along even dimensions, and every good root has Hamming distance at least \(n/2-\rho_n\) from \(0^n\). Translating the coloring places such a bad-root ball around any prescribed vertex.
+
+**Proof.** The coloring is legal because antipodal complementation toggles all \(n-3\) exterior bits and \(n-3\) is odd. Fix a root \(x\) and a full coordinate order \(p=(p_1,\ldots,p_n)\). Write \(a_i=x_{p_i}\). If \(K_i\) is the exterior-one count of the \(i\)-th physical three-face, then
+\[
+K_{i+1}-K_i=1-a_i-a_{i+3}\quad(1\le i\le n-3).
+\]
+The two consecutive colors differ precisely when \(a_i=a_{i+3}\). Hence a full order is good exactly when the three disjoint position chains
+\[
+(a_r,a_{r+3},a_{r+6},\ldots),\qquad r=1,2,3,
+\tag{5}
+\]
+have **at most one adjacent equal pair in total**.
+
+A fully alternating chain of length \(2m\) has exactly \(m\) ones, and one of length \(2m+1\) has \(m\) or \(m+1\) ones. Allowing a single adjacent equal pair changes an even-length chain's possible one-count to \(m-1,m,m+1\), while an odd-length chain still has \(m\) or \(m+1\) ones. These claims follow by splitting at the exceptional pair into two alternating segments; both extreme even-chain counts are obtained, for example, by beginning \(00,10,10,\ldots\) or its complement.
+
+For \(n=6m\), the three chain lengths are \(2m,2m,2m\). Without an exceptional pair the total is \(3m\), and one exception permits \(3m\pm1\). For \(n=6m+2\), the lengths are \(2m+1,2m+1,2m\): alternating chains give totals \(3m,3m+1,3m+2\), and one exception in the even chain additionally realizes \(3m-1\) and \(3m+3\). For \(n=6m+4\), the lengths are \(2m+2,2m+1,2m+1\): alternating chains give \(3m+1,3m+2,3m+3\), and one exception in the even chain additionally realizes \(3m\) and \(3m+4\). Thus the possible total number of ones in a good order is exactly the interval in (3).
+
+Because the coloring is invariant under permutations of coordinate names, every root of a feasible Hamming weight admits an order placing its one-bits into a suitable chain pattern. This proves (3). Summing the binomial layers gives the exact formula (4), and the displayed asymptotic follows from the central binomial estimate for fixed offsets \(j\). The distance and translation assertions follow immediately. \(\square\)
+
+**Implication for a general proof.** A universal argument cannot assume a fixed positive fraction of good starting roots, or guarantee a good root within \(o(n)\) bit flips of an arbitrary prescribed root. This obstruction arises in the same exterior-parity class for which every *fixed order* has eight monochromatic starts; abundance over orders can coexist with severe geometric concentration of successful roots. The theorem concerns a structured legal coloring and does not weaken the unrooted NORI conjecture.
+
+
 ### Appendix — Known obstructions to proposed NORI mechanisms
 
 # Appendix — Known obstructions
@@ -420,6 +465,8 @@ These are **proved limitations of specific proposed implications**, not countere
 ## Prescribed roots and unsupported support lifting
 
 **A prescribed root need not support any full good geodesic.** In dimensions \(n\geq 6\) the exterior-weight parity construction (with the central reversal-odd correction in odd \(n\)) is legal and forces multiple color changes for every full order from a chosen root. Root motion remains permissible and necessary; see *Sharp rooted obstructions to one-change antipodal geodesics*.
+
+**No dimension-independent positive density or sublinear root-localization bound.** For even \(n\ge6\), the legal exterior-parity coloring has good roots *exactly* at Hamming weights \(n/2-\rho_n,\ldots,n/2+\rho_n\), with \(\rho_n=1\) if \(6\mid n\) and \(\rho_n=2\) otherwise. Their density is \(\Theta(n^{-1/2})\), and the nearest good root to \(0^n\) is at distance \(n/2-\rho_n\). Thus neither a uniform positive fraction of successful roots nor a universal \(o(n)\)-radius search around a prescribed root can be assumed. See the exact thin-shell theorem in *Sharp rooted obstructions to one-change antipodal geodesics*.
 
 **Good paths on every proper support do not imply a full good path at that root.** A verified legal \(Q_7\) coloring has an ordering with at most one switch on *every* proper support of size 3–6, yet every full seven-order from the same root has at least two switches. The full 1680-bit face-color certificate and exhaustive verifier are retained in *Maximal geodesic blockers and snake exchanges*. A more general exterior-weight construction gives all-dimensional short-path coverage without rooted full closure. These refute **coverage-only rooted implications**, not same-root *complementary reversed-terminal* intersections with their correct ordered memory, nor an unrooted conclusion.
 

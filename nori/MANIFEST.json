@@ -128,9 +128,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 12040,
-        "composed_through_revision": 4458,
-        "composition_version": 15,
+        "body_chars": 12771,
+        "composed_through_revision": 4691,
+        "composition_version": 16,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -139,7 +139,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Standalone foundational manuscript synchronized to the current one-section hierarchy.",
+        "source_note": "Refreshes Article I with the exact thin-shell quantitative rooted obstruction.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -281,7 +281,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-10T13:55:39.752743+00:00",
+  "generated_at": "2026-10-10T13:58:14.834496+00:00",
   "item_count": 0,
   "mirror_format": 19,
   "result_count": 0,
@@ -429,18 +429,18 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 12040,
-        "composed_through_revision": 4309,
-        "composition_version": 10,
+        "body_chars": 12890,
+        "composed_through_revision": 4690,
+        "composition_version": 11,
         "frontier": {
-          "current": false,
+          "current": true,
           "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 4,
           "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Elevation after repartition into focused subsections: new major lemmas integrated into mathematical narrative and direct dependencies fully refreshed.",
+        "source_note": "Integrates the exact thin-shell rooted-obstruction theorem and refreshes dependencies.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -654,7 +654,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1077,
+  "snapshot_revision": 1084,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -726,16 +726,16 @@
     },
     "appendix_known_obstructions_to_proposed_nori_mechanisms": {
       "composition": {
-        "body_chars": 4567,
-        "composed_through_revision": 4680,
-        "composition_version": 1,
+        "body_chars": 5193,
+        "composed_through_revision": 4692,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Curated cross-Article limitations; precise scope, proof locations, and remaining options",
+        "source_note": "Records the proved sparse-good-root and linear-root-distance obstruction with exact even-dimensional scope.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1562,16 +1562,16 @@
     },
     "sharp_rooted_obstructions_to_one_change_antipodal_geodesics": {
       "composition": {
-        "body_chars": 4697,
-        "composed_through_revision": 4163,
-        "composition_version": 1,
+        "body_chars": 8283,
+        "composed_through_revision": 4689,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "",
+        "source_note": "Typography correction for exact thin-shell theorem; mathematics unchanged.",
         "stale": false,
         "stale_dependencies": []
       },
