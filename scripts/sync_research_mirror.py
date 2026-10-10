@@ -499,15 +499,16 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-The ONLY active target is a stronger NORI-style class or theorem that
-retains EVERY legal antipodally odd NORI1 physical-edge coloring AND
-EVERY direction-only boundary 3-tournament. The ABSOLUTE MINIMUM,
-if a rigorous obstruction prevents full boundary preservation, is ALL
-boundary tournaments induced by global edge orders of K_n:
-b(a,b,c)=1 exactly when {a,b} precedes {b,c} in the edge order.
-These include increasing tight paths in ordinary edge-ordered graphs.
-A proposal retaining only this minimum must explicitly justify the
-exclusion of other boundary tournaments; arbitrary weakening is rejected.
+The TWO EQUALLY PRIMARY targets are: (1) solve unrestricted NORI1 for
+all legal antipodally odd physical edge colorings; (2) solve the long
+vertex-simple monochromatic tight-path problem for ALL ordinary boundary
+3-tournaments b satisfying b(c,b,a)=1-b(a,b,c). Do not assume a global
+edge order or acyclic line-graph comparison orientation for target (2).
+A strengthened NORI theory must preserve BOTH full classes.
+The boundary 3-tournaments induced by global orders on edges of K_n are
+a USEFUL FALLBACK if the general boundary case hits a proved obstacle,
+NOT a substitute for its solution. A theorem restricted to edge-ordered
+cases must identify the remaining gap and seek a general transfer.
 Do not work on old unrestricted NORI2, or further refine the unrestricted
 NORI3 logarithmic obstruction for its own sake.
 
