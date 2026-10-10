@@ -128,9 +128,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 12771,
-        "composed_through_revision": 4691,
-        "composition_version": 16,
+        "body_chars": 22878,
+        "composed_through_revision": 4779,
+        "composition_version": 33,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -139,7 +139,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Refreshes Article I with the exact thin-shell quantitative rooted obstruction.",
+        "source_note": "Sharp logarithmic mono-geodesic scale for bounded exterior support",
         "stale": false,
         "stale_dependencies": []
       },
@@ -204,9 +204,9 @@
     },
     "nori_article_v_local_connectors": {
       "composition": {
-        "body_chars": 4250,
-        "composed_through_revision": 4454,
-        "composition_version": 1,
+        "body_chars": 4938,
+        "composed_through_revision": 4723,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_section_position_now": 4,
@@ -215,7 +215,7 @@
           "sections_now": 4
         },
         "has_composition": true,
-        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "source_note": "Integrates and contextualizes the exact all-dimensional adjacent-swap plateau theorem.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -242,9 +242,9 @@
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 2863,
-        "composed_through_revision": 4456,
-        "composition_version": 1,
+        "body_chars": 4227,
+        "composed_through_revision": 4783,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -253,7 +253,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "source_note": "Integrates polynomial snake transfer for same-face reversal oddness and sparse per-triple physical exterior dependence.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -281,7 +281,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-10T14:08:24.138577+00:00",
+  "generated_at": "2026-10-10T16:53:07.259226+00:00",
   "item_count": 0,
   "mirror_format": 19,
   "result_count": 0,
@@ -429,20 +429,26 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 12890,
-        "composed_through_revision": 4690,
-        "composition_version": 11,
+        "body_chars": 29146,
+        "composed_through_revision": 4777,
+        "composition_version": 29,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "latest_subsection_no_now": 16,
+          "latest_subsection_no_when_composed": 16,
+          "subsections_existing_when_composed": 16,
+          "subsections_now": 16
         },
         "has_composition": true,
-        "source_note": "Integrates the exact thin-shell rooted-obstruction theorem and refreshes dependencies.",
-        "stale": false,
-        "stale_dependencies": []
+        "source_note": "Integrates sharp bounded-exterior-support logarithmic lower bound and Devine-Milans matching example",
+        "stale": true,
+        "stale_dependencies": [
+          {
+            "composition_saw_version": 1,
+            "current_composition_version": 2,
+            "source_id": "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament"
+          }
+        ]
       },
       "math_version": 1,
       "version": 2
@@ -469,9 +475,9 @@
     },
     "nori_maximal_geodesic_exchanges": {
       "composition": {
-        "body_chars": 5515,
-        "composed_through_revision": 4438,
-        "composition_version": 1,
+        "body_chars": 6429,
+        "composed_through_revision": 4722,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 1,
@@ -480,15 +486,9 @@
           "subsections_now": 1
         },
         "has_composition": true,
-        "source_note": "Integrates established maximal-good-path blockers, monochromatic snake fan, Johnson merge rows, and physical adjacent transpositions.",
-        "stale": true,
-        "stale_dependencies": [
-          {
-            "composition_saw_version": null,
-            "current_composition_version": 1,
-            "source_id": "maximal_geodesic_blockers_and_snake_exchanges"
-          }
-        ]
+        "source_note": "Integrates the all-dimensional maximal-switch one-move plateau and refreshes direct subsection provenance.",
+        "stale": false,
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -575,18 +575,18 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 5475,
-        "composed_through_revision": 4323,
-        "composition_version": 3,
+        "body_chars": 7810,
+        "composed_through_revision": 4782,
+        "composition_version": 5,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 3,
-          "subsections_now": 3
+          "latest_subsection_no_now": 5,
+          "latest_subsection_no_when_composed": 5,
+          "subsections_existing_when_composed": 5,
+          "subsections_now": 5
         },
         "has_composition": true,
-        "source_note": "Bottom-up synchronization after direct subsection Item-intake recomposition; proofs retained.",
+        "source_note": "Integrates sparse triplewise exterior-support extraction and physical snake theorem; all five subordinate manuscripts current.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -654,7 +654,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1087,
+  "snapshot_revision": 1170,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -667,6 +667,25 @@
     }
   ],
   "subsection_versions": {
+    "a_legal_q15_counterexample_to_unrooted_nori_via_a_three_class_reversal_even_word_obstruction": {
+      "composition": {
+        "body_chars": 11943,
+        "composed_through_revision": 4746,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Strengthens the explicit Q15 NORI3 counterexample to exact minimum three switches using a 18840-case critical certificate and physical equality witness.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
     "affine_and_nonlinear_edge_coloring_families": {
       "composition": {
         "body_chars": 3698,
@@ -726,16 +745,16 @@
     },
     "appendix_known_obstructions_to_proposed_nori_mechanisms": {
       "composition": {
-        "body_chars": 5193,
-        "composed_through_revision": 4692,
-        "composition_version": 2,
+        "body_chars": 8060,
+        "composed_through_revision": 4756,
+        "composition_version": 6,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Records the proved sparse-good-root and linear-root-distance obstruction with exact even-dimensional scope.",
+        "source_note": "Records sharp switch-hierarchy refutations and exact multilevel NORI3 defect.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -836,6 +855,25 @@
       },
       "development_version": 1,
       "section_id": "nori_connector_root_hubs",
+      "version": 1
+    },
+    "bounded_nori2_switches_from_finite_exterior_coordinate_support": {
+      "composition": {
+        "body_chars": 7069,
+        "composed_through_revision": 4764,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "All-dimensional NORI2 finite-exterior-support bound t+1 using Raynaud directed 2-colored Hamilton paths; full physical-square proof",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
       "version": 1
     },
     "central_face_topological_packets_and_safe_carrier_obstructions": {
@@ -1085,6 +1123,25 @@
       "section_id": "nori_foundations",
       "version": 2
     },
+    "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
+      "composition": {
+        "body_chars": 10744,
+        "composed_through_revision": 4712,
+        "composition_version": 3,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Editorial repair of executable code fences; preserves independently audited physical-cube verification",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
     "doubling_equivalence_and_the_two_window_splice_obstruction": {
       "composition": {
         "body_chars": 14709,
@@ -1275,10 +1332,10 @@
       "section_id": "nori_cyclic_window_transport",
       "version": 1
     },
-    "maximal_geodesic_blockers_and_snake_exchanges": {
+    "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine": {
       "composition": {
-        "body_chars": 17719,
-        "composed_through_revision": 4677,
+        "body_chars": 7772,
+        "composed_through_revision": 4716,
         "composition_version": 1,
         "frontier": {
           "current": true,
@@ -1286,7 +1343,64 @@
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Curated manuscript: four proved or verified historical items; preserves full derivations and Q7 reproducible certificate in a coherent obstruction/exchange argument",
+        "source_note": "Independent local deletion contraction lemma and all-n>=9 physical NORI counterexample extension",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
+      "composition": {
+        "body_chars": 13813,
+        "composed_through_revision": 4778,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Adds exact 1/3 Hamming distance to boundary tournaments and a physical-fiber counterexample to a naive (3,3) lower-bound transfer",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "logarithmic_monochromatic_path_obstruction_and_near_linear_switch_amplification": {
+      "composition": {
+        "body_chars": 4907,
+        "composed_through_revision": 4772,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Antichain-rank two-sentinel physical construction: logarithmic longest monochromatic geodesics, near-linear compulsory switches for fixed k>=3; exact physical checks.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "maximal_geodesic_blockers_and_snake_exchanges": {
+      "composition": {
+        "body_chars": 21571,
+        "composed_through_revision": 4721,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Adds constructive all-dimensional reversal-odd flat worst-case adjacent-swap trap, ruling out strict local descent even with arbitrary root moves.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1330,6 +1444,44 @@
       },
       "development_version": 1,
       "section_id": "nori_connector_root_hubs",
+      "version": 1
+    },
+    "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments": {
+      "composition": {
+        "body_chars": 7272,
+        "composed_through_revision": 4760,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Near-linear acyclic boundary-tournament geodesic transfer from published edge-order altitude theorem; sharp scope for exterior fibers",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "nori2_sentinel_barrier_and_exact_one_switch_examples": {
+      "composition": {
+        "body_chars": 7249,
+        "composed_through_revision": 4740,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Exact NORI2 sentinel-family closure and sharpness via red-blue complete graph path partition; direction-only tournament corollary",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
       "version": 1
     },
     "odd_ordered_window_cycles_and_short_monochromatic_connector_density": {
@@ -1446,6 +1598,25 @@
       "section_id": "nori_physical_window_transport",
       "version": 1
     },
+    "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
+      "composition": {
+        "body_chars": 7785,
+        "composed_through_revision": 4781,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Independent hypergraph extraction theorem for triplewise sparse exterior support, using same-face reversal oddness and the Devine-Milans boundary snake bound; explicit physical-root realization.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
     "root_coupled_geodesic_pseudomanifold_and_hartman_connector_topology": {
       "composition": {
         "body_chars": 11612,
@@ -1522,6 +1693,25 @@
       "section_id": "nori_topological_obstructions",
       "version": 1
     },
+    "scope_of_distinguished_coordinate_counterexamples_and_edge_order_realizability": {
+      "composition": {
+        "body_chars": 6876,
+        "composed_through_revision": 4726,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Analytic proofs for lower-arity distinguished-coordinate families and exact line-graph realization; candidate stronger symmetry clearly conjectural",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
     "seven_coordinate_shared_pivot_endpoint_constraints": {
       "composition": {
         "body_chars": 2635,
@@ -1559,6 +1749,25 @@
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
       "version": 2
+    },
+    "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support": {
+      "composition": {
+        "body_chars": 8821,
+        "composed_through_revision": 4776,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Sharp Θ(log n) extremal monochromatic geodesic length for fixed exterior-support NORI3; self-contained ordered-Ramsey terminal-pair ideal bound",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
     },
     "sharp_rooted_obstructions_to_one_change_antipodal_geodesics": {
       "composition": {
@@ -1672,6 +1881,63 @@
       },
       "development_version": 1,
       "section_id": "nori_topological_carriers",
+      "version": 1
+    },
+    "unbounded_compulsory_switches_for_every_even_ordered_face_dimension": {
+      "composition": {
+        "body_chars": 8363,
+        "composed_through_revision": 4749,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Replaces weaker two-sentinel proof by sharp one-sentinel sign-and-selector construction, matching odd-k switch bound",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "unbounded_compulsory_switches_for_every_odd_ordered_face_dimension": {
+      "composition": {
+        "body_chars": 10605,
+        "composed_through_revision": 4753,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Sharp odd-k insertion lemma improves maximum switch loss k-1 to k-2 and improves every odd-k forced-switch bound by one.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "unbounded_mandatory_color_changes_from_multilevel_local_minima": {
+      "composition": {
+        "body_chars": 11307,
+        "composed_through_revision": 4752,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Sharpens ternary sentinel loss from two to one using boundary parity; establishes exact multilevel family minimum 2r-3 and witnesses.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
       "version": 1
     }
   },

@@ -1,5 +1,7 @@
 # Article VII — Seven-coordinate structural and tournament methods
 
+All-dimensional boundary-tournament altitude transfer: any direction-only boundary 3-tournament with an acyclic line-graph comparison orientation has a monochromatic cube geodesic using n/2^{O(sqrt(log n loglog n))} distinct coordinates, via a global edge order and the Bucić et al. 2020 nearly-linear increasing-path theorem. The transfer exactly preserves original-vertex simplicity and physical face colors. Directed comparison cycles are therefore necessary for shorter-path obstructions in this subclass. See the new Section Subsection; exterior dependence remains unresolved.
+
 # Seven-direction endpoint factorization
 
 Let c color physical ordered three-faces of Q_n. For a direction-distinct path (p_1,...,p_k) rooted at x, let w_j be the color of the actual ordered three-face traversed by (p_j,p_(j+1),p_(j+2)). Exterior-coordinate bits determine the root dependence of these colors.
@@ -23,3 +25,5 @@ Let the three fixed middle bits be (M_1,M_2,M_3), and let A,E be the endpoint ma
 The endpoint maps are functions of the same pivot, so their attainable value pairs are correlated. The seven-coordinate wing-factorization results exploit this correlation together with changes of direction order, complemented faces and alternative pivots. Under the established crossed-sensitivity and flat-bridge hypotheses, a good antipodal seven-geodesic is forced. These structural criteria expose what a general proof would need: a coordinated pivot change or interchangeable wing that removes an endpoint obstruction while preserving the genuine middle ordered-face colors.
 
 This article gives exact endpoint-root formulas and provable closure tests, with seven-coordinate special families providing further forced configurations. The general-dimension conjecture remains a separate global compatibility question.
+
+**New polynomial structural lower bound.** When a boundary-compatible physical ordered-three-face coloring has at most d influential exterior coordinates *per unordered triple* (with arbitrary triple-specific supports), a 4-uniform dependency-hypergraph extraction yields a flat direction subset of size Omega((n/d)^(1/3)). The Devine-Milans snake lower bound on the induced genuine boundary tournament produces an Omega((n/d)^(1/6))-edge monochromatic geodesic. For one common support set of size t, the stronger sqrt(n-t) bound holds directly. The proof requires same-face reversal oddness and correct physical-root consistency; it does not require a common comparison order or a global exterior support. See Article VII's new sparse triplewise exterior-dependence Subsection.

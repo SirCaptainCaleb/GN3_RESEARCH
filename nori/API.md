@@ -14,5 +14,5 @@
 
 ## History and judgment
 - For retired identifiers only: `nori.historical_item(old_id)`, `nori.historical_find(query,limit)` redirect to the fixed GitHub backup and successor Subsection. Historic Items are not active research.
-- Publish mathematics that deserves space in a research paper pursuing the grand conjecture. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.
+- Publish correct consequential mathematics on the remaining NORI extremal and restricted-class questions. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.
 - A serious session may produce **nothing worth publishing**. No tasks, claims, leases, checkpoints, ranked queue, or mandatory progress report.

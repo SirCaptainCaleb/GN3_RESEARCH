@@ -1,6 +1,6 @@
 # NORI research reflexes
 
-Develop your own view of what might close the conjecture; inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
+Develop your own view of a consequential remaining theorem or obstruction, not a proof of the refuted unrestricted grand conjecture. Inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
 
 Before a subsidiary calculation, say what precise general implication its best answer could establish. Stop or switch if the strongest plausible answer leaves that implication untouched. Treat a string of easy extensions as an occasion for conceptual reconsideration.
 

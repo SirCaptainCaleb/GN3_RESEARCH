@@ -130,3 +130,53 @@ The terminal r-colored opposite-corner incoming snake of P lies in a Boolean T-r
 ## Logical boundary
 
 Universal existence of good paths on proper supports, even at one root, does not imply a rooted full good geodesic. Nor do forced caps yield a globally decreasing exchange automatically: new seam windows are actual physical faces. An unrooted extraction mechanism may move roots and retain terminal-order memory. Further improvements to support counts should be interpreted only with such a mechanism.
+
+## An all-dimensional flat worst-case exchange trap
+
+**Theorem (strict adjacent-swap descent fails in every \(n\ge7\)).**
+For every \(n\ge7\) there is a *position-independent*, antipodal-reversal-odd ordered-three-face coloring \(c\) and permutations
+\[
+p=(1,2,\ldots,n),\qquad
+q=(1,3,5,\ldots;\ 2,4,6,\ldots)
+\]
+such that the window word of \(p\) and of *every one of its \(n-1\) adjacent transpositions* is the same maximally alternating word
+\[
+1,0,1,0,\ldots
+\]
+(of length \(n-2\), hence with \(n-3\) color changes), whereas the word of \(q\) is monochromatic. These assertions hold at *every* cube root. In particular, even permitting arbitrary starting-root changes alongside a single adjacent swap cannot guarantee a strict improvement in the number of switches, despite a globally optimal monochromatic full geodesic.
+
+**Proof.**
+Let \(\mathcal B=\{p,\tau_1p,\ldots,\tau_{n-1}p\}\). A triple \(t=(a,b,c)\) occurring as the \(i\)-th consecutive three-window in a member of \(\mathcal B\) has
+\[
+a+b+c\in\{3i+2,3i+3,3i+4\}.
+\tag{E1}
+\]
+Indeed, the identity permutation has \((i,i+1,i+2)\) at that window, and an adjacent swap can change the sum of the three occupied labels by at most one. The three-element intervals in (E1) are disjoint for distinct \(i\). Thus each such *ordered triple* has a unique window index \(i(t)\). Prescribe
+\[
+h(t)=i(t)\pmod2\qquad(t\text{ occurring in }\mathcal B).
+\tag{E2}
+\]
+Every member of \(\mathcal B\) has at most one inversion relative to the natural order of labels. Consequently each of its ordered triples has at most one inversion, while its reversal has at least two of the three possible inversions. Therefore no triple in \(\mathcal B\) is the reverse of another triple in \(\mathcal B\), and the assignments (E2) are consistent with
+\[
+h(c,b,a)=1\oplus h(a,b,c).
+\tag{E3}
+\]
+
+Now put all odd labels in increasing order, followed by all even labels in increasing order, to form \(q\). For \(n\ge7\), the numerical span \(\max\{a,b,c\}-\min\{a,b,c\}\) of every consecutive triple of \(q\) is at least four: inside either parity block the three labels are spaced by two, and either of the two triples crossing the block boundary spans at least five. Conversely, every triple appearing in \(\mathcal B\) has numerical span at most three, since one adjacent swap changes only one boundary label of a consecutive triple. Thus none of \(q\)'s ordered triples, nor any of their reversals, has been assigned a value in (E2). Moreover, the consecutive triples of the single permutation \(q\) are distinct and never reversals of each other. Assign
+\[
+h(q_i,q_{i+1},q_{i+2})=0 \qquad(1\le i\le n-2).
+\tag{E4}
+\]
+Finally extend \(h\) to all ordered triples, choosing one bit arbitrarily in each still-unassigned reversal pair and assigning the complementary bit to the reversed triple.
+
+Define \(c(F,(a,b,c))=h(a,b,c)\) independently of the physical face's exterior bits. Equation (E3) is exactly the NORI antipodal-reversal law for this coloring. Equations (E1)–(E2) give alternating words for \(p\) and every immediate swap neighbor; equation (E4) gives a monochromatic word for \(q\). Exterior-independence makes all statements uniform in the starting vertex. \(\square\)
+
+**Scope and obstruction.**
+The theorem disproves the universal *strict local descent* implication
+\[
+\exists\text{ a good full geodesic}
+\quad\Longrightarrow\quad
+\forall\text{ bad }(x,p)\ \exists\,x',j:
+\operatorname{switches}(x',\tau_jp)<\operatorname{switches}(x,p).
+\]
+It does **not** exclude neutral-step sequences, exchanges that change several positions, a different global potential, or an antipodal/topological forcing mechanism. In particular, any general exchange proof must tolerate arbitrarily high-defect one-move plateaus; the obstruction holds in every ambient dimension and already in the exterior-independent class.

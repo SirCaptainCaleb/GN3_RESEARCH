@@ -1,10 +1,15 @@
+# Known obstructions after the Q9 refutation
+
+**Global status (October 10, 2026).** The original unrestricted physical ordered-three-face NORI conjecture is **false**. A fully legal, unrooted \(Q_9\) counterexample is proved in *Dimension-nine counterexample to the physical ordered-three-face NORI conjecture* (foundational Subsection 6). Therefore the universal conclusion of any proposed extraction argument from only antipodal-reversal oddness is false. The mechanism-level counterexamples below are independently useful because they distinguish which weakened, rooted, conditional, or related statements fail. In particular, the earlier statement that the listed *mechanism obstructions* are not themselves unrooted counterexamples remains correct, while an actual unrooted counterexample is now known.
+
+**No fixed-switch correction survives.** The fully elementary *Unbounded mandatory color changes from multilevel local minima* construction proves that for each \(r\ge3\), in all dimensions \(n\ge2r^2+r+1\) a legal antipodal-reversal-odd physical coloring forces at least \(2r-4\) changes on every full geodesic. Thus there is **no universal constant \(K\)** for which every legal coloring admits a full geodesic with at most \(K\) switches. Quantitatively, the worst-case minimum is at least \(\sqrt{2n}-O(1)\). This is an obstruction to a family of weakened universal conjectures, and is stronger in scope than the two-switch Q9 refutation.
+
+
+---
+
 # Appendix — Known obstructions
 
-**Status correction (October 10, 2026).** The original unrestricted NORI3 one-switch conjecture **has been refuted**: a legal physical `Q9` obstruction persists in larger dimensions, and the Devine–Milans `(3,3)`-tournament lift yields monochromatic paths of length at most `O(log n)` and `S_3(n)=Omega(n/log n)` compulsory switches. Thus a universal `Omega(sqrt n)` monochromatic-path lower bound is also refuted. All fixed `k>=3` admit unbounded compulsory switches, whereas NORI1 and unrestricted NORI2 remain open. The older mechanism-specific obstructions below remain valid within their stated scopes but should not be interpreted as supporting a proof of the refuted conjecture. Proofs and finite certificates appear in their Subsections; historical identifiers resolve through the legacy-reference lookup.
-
-**Current structural barriers.** The logarithmic Devine–Milans `(3,3)`-tournament fails boundary same-triple reversal oddness on **every** unordered triple: of the three reversal pairs, one is `(0,0)`, one `(1,1)`, and one has opposite bits. Any direction-only boundary tournament differs in at least two of six ordered values per triple; thus no global edge order realizes it. The tournament lower-bound proof relies on exactly three accepted orderings of each triple, which an arbitrary physical NORI3 fiber need not have. Even an appropriately balanced fiber need not stay consistent along a cube path as the root's exterior bits change. See the revised Subsection *Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament*.
-
-
+These are **proved limitations of specific proposed implications**, not counterexamples to the unrooted grand NORI conjecture. Proofs and finite certificates are in the indicated Subsections; historical identifiers resolve through the legacy-reference lookup.
 
 ## Prescribed roots and unsupported support lifting
 
@@ -33,3 +38,5 @@
 **Edge-coloring results do not automatically transfer.** A path's physical edge-color word does not determine the ordered colors of its overlapping three-faces. Affine and central-Johnson edge theorems remain valid for the edge problem, but a NORI transfer must preserve actual exterior bits, terminal order and seam colors. See Article VIII.
 
 These entries are curated by *mechanism*, not by the history of unsuccessful searches. A new exact proof may supersede an entry; its mathematical statement and surviving scope should then be revised.
+
+**Flat maximal-defect one-move plateaus exist in every dimension \(n\ge7\).** An explicit position-independent, reversal-odd ordered-three-face coloring makes the identity order and each of its \(n-1\) adjacent swaps have the maximum \(n-3\) window-color changes, while another order is entirely monochromatic. All roots have the same word for each order. Thus strict descent in the raw switch count by one adjacent swap, even supplemented with arbitrary root changes, is *false*. The proof is the all-dimensional flat exchange-trap theorem in *Maximal geodesic blockers and snake exchanges*. It leaves neutral sequences, larger exchanges, and other global potentials open.\n\n**Sharp quantitative NORI3 refutations.** An exact 18,840-case reduction upgrades the Q15 three-class counterexample to minimum three switches. A further boundary-parity argument improves one-sentinel switch loss from two to one; the multilevel NORI3 coloring has exact minimum 2r-3 in dimension n>=2r²+r+1 (for each fixed class partition with >=2r+1 directions per class). Thus Q22, Q37 and Q56 admit constructed colorings with exact minima 3, 5 and 7. For every odd k>=3, the insertion loss improves from k-1 to k-2 and the forced-switch lower bound improves to 2r-2k+3. These are counterexamples to universal k-1 switch guarantees; they preserve the physical-face antipodal-reversal law and allow every direction interleaving.

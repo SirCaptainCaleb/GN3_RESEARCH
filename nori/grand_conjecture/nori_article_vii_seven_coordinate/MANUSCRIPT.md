@@ -2,13 +2,15 @@
 
 ## Article setting and orientation
 
-Let c color physical ordered three-faces of Q_n. For a direction-distinct path (p_1,...,p_k) rooted at x, let w_j be the color of the actual ordered three-face traversed by (p_j,p_(j+1),p_(j+2)). Exterior-coordinate bits determine the root dependence of these colors.
+All-dimensional boundary-tournament altitude transfer: any direction-only boundary 3-tournament with an acyclic line-graph comparison orientation has a monochromatic cube geodesic using n/2^{O(sqrt(log n loglog n))} distinct coordinates, via a global edge order and the Bucić et al. 2020 nearly-linear increasing-path theorem. The transfer exactly preserves original-vertex simplicity and physical face colors. Directed comparison cycles are therefore necessary for shorter-path obstructions in this subclass. See the new Section Subsection; exterior dependence remains unresolved.
 
-For seven distinct directions (a,b,c,d,e,f,g), fix the initial root bits other than x_d=t. The five window colors have the form
+Let c color physical ordered three-faces of Q_n. For a direction-distinct path (p_1,...,p_k) rooted at x, let w_j be the color of the actual ordered three-face traversed by (p_j,p_(j+1),p_(j+2)). Exterior-coordinate bits determine the root dependence of these colors.
 
 *Full Article composition: [source manuscript](../nori_article_vii_seven_coordinate.md).*
 
 ## Seven-coordinate endpoint constraints and tournament structure
+
+Acyclic boundary-tournament transfer (all dimensions): a direction-only reversal-odd triple coloring whose comparison orientation of L(K_n) is acyclic inherits an edge order on K_n. The Bucić-Kwan-Pokrovskiy-Sudakov-Tran-Wagner increasing-path theorem then yields a monochromatic coordinate geodesic of length n/2^{O(sqrt(log n loglog n))}. The graph path is original-vertex-simple, so every cube direction is distinct. This exact transfer is proved in the new Subsection on nearly-linear monochromatic geodesics. Exterior-dependent comparison orders require a separate coherence principle.
 
 A directed geodesic with direction word \(p_1,\ldots,p_m\) produces a binary word \(w_1,\ldots,w_{m-2}\) of colors of its consecutive physical ordered three-faces. The dependence of \(w_i\) on the initial cube vertex is confined to the coordinates exterior to that face. We exploit this locality to separate endpoint choices from an invariant middle block.
 
@@ -332,3 +334,190 @@ obeys \(w_i(x,\operatorname{rev}p)=1\oplus w_{n-1-i}(x,p)\) and \(d_i(x,\operato
 Thus the graph of full orders, with edges given by adjacent swaps, is the **permutohedron**, equipped with a free reversal involution and an antipodally equivariant, locally constrained word label. The NORI conjecture asks for some root and vertex in this coupled family of permutohedra whose word has at most one change.
 
 **Research obligation.** This lemma gives a dimension-independent local move for a possible minimal-defect exchange/descent argument. It is not itself a decreasing-move theorem. A closure proof must show that the no-good-geodesic hypothesis, together with cross-root face-fiber incidence and antipodal reversal, forces either a strictly improving local exchange (possibly following a finite sequence of nonincreasing exchanges) or a topological obstruction to all local minima. Such a proof would apply uniformly to every dimension, unlike further Q7 subclass classifications.
+
+### Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments
+
+# Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments
+
+## Scope and principal transfer theorem
+
+Let \(V\) be an \(n\)-element coordinate set, \(n\ge3\). A **boundary 3-tournament** is a function \(b(a,b,c)\in\{0,1\}\) on ordered triples of distinct coordinates obeying \(b(c,b,a)=1-b(a,b,c)\). The corresponding direction-only coloring of genuine physical ordered 3-faces is
+\[
+ c(F,(a,b,c)):=b(a,b,c).
+ \tag{1}
+\]
+This satisfies both \(c(F,\operatorname{rev}\pi)=1-c(F,\pi)\) and \(c(\bar F,\pi)=c(F,\pi)\), hence the combined NORI antipodal-reversal oddness condition.
+
+Associate to \(b\) an orientation \(\vec L\) of the line graph \(L(K_V)\), whose vertices are unordered edges of \(K_V\), by orienting
+\[
+ \{a,b\}\longrightarrow\{b,c\}
+ \quad\Longleftrightarrow\quad b(a,b,c)=1.
+ \tag{2}
+\]
+The reversal identity makes (2) well defined.
+
+**Theorem (acyclic transfer, using the edge-ordered-graph altitude theorem).** If \(\vec L\) is acyclic, the coloring (1) has a monochromatic geodesic traversing at least
+\[
+ \frac{n}{2^{C\sqrt{(\log n)(\log\log n)}}}
+ \tag{3}
+\]
+distinct coordinate directions, for some absolute constant \(C>0\) and all sufficiently large \(n\). In particular its longest monochromatic geodesic has length \(n^{1-o(1)}\).
+
+The count in (3) is of **edges of the original simple path in \(K_V\)**, equivalently of coordinate moves in the cube. It is not a count of vertices of \(L(K_V)\) without an incidence-consistent lift. The resulting cube geodesic may be partial; (3) makes no spanning assertion.
+
+**Proof.** Since the finite orientation \(\vec L\) is acyclic, take a topological order \(\prec\) of its vertices. These vertices are precisely the unordered edges of \(K_V\), so \(\prec\) is one strict ordering of the edges of \(K_V\). Every comparison (2) is respected:
+\[
+ b(a,b,c)=1\quad\Longleftrightarrow\quad \{a,b\}\prec\{b,c\}. \tag{4}
+\]
+For the converse direction in (4), note that the two line-graph vertices are adjacent and their edge is oriented exactly one way; topological order must respect that orientation.
+
+Apply the theorem of M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran and A. Z. Wagner (*Nearly-linear monotone paths in edge-ordered graphs*, Israel J. Math. 238 (2020), 663–685, Theorem 1.1; DOI 10.1007/s11856-020-2035-7) to the edge-ordered complete graph \((K_V,\prec)\). This gives a **vertex-simple** original-graph path
+\[
+ v_0,v_1,\ldots,v_\ell,\quad
+ \{v_0,v_1\}\prec\{v_1,v_2\}\prec\cdots
+ \prec\{v_{\ell-1},v_\ell\},
+ \tag{5}
+\]
+with \(\ell\) at least the quantity in (3).
+
+Choose any cube starting vertex \(x\) and traverse distinct coordinate directions \(v_0,v_1,\ldots,v_\ell\) in this order. Because no coordinate is repeated, this is a genuine geodesic of length \(\ell+1\) if we traverse every \(v_i\), or \(\ell\) if we traverse \(v_0,\ldots,v_{\ell-1}\). In either case, all its consecutive ordered 3-face windows have color 1 by (4)–(5), using the direction-only rule (1). Choosing all \(\ell+1\) vertices of the original graph path as distinct coordinate moves yields a cube geodesic of length \(\ell+1\), with exactly \(\ell-1\) windows, each colored 1. Thus (3) follows (indeed with one extra coordinate move). The start \(x\) is arbitrary because the coloring ignores fixed exterior bits. \(\square\)
+
+**Length convention.** The edge-ordered increasing path has \(\ell\) edges and \(\ell+1\) distinct original vertices. These \(\ell+1\) distinct vertices become \(\ell+1\) cube coordinate directions. Thus there is no hidden loss through repeated original vertices, and there is no appeal to an arbitrary directed path of \(L(K_V)\).
+
+## What directed cycles can obstruct
+
+**Corollary.** Any sequence of direction-only boundary 3-tournaments \(b_n\) whose longest monochromatic cube geodesic has \(o(n^{1-o(1)})\) length (in particular \(O(\sqrt n)\)) must have a **directed cycle in its line-graph comparison orientation** for all sufficiently large \(n\).
+
+More quantitatively, if a direction-only boundary tournament on \(n\) directions has no monochromatic geodesic of length at least the explicit lower bound (3), then its line-graph orientation contains a directed cycle.
+
+This is the contrapositive of the theorem. It gives a precise requirement for a prospective short-path boundary obstruction: the local comparisons cannot all arise from one global edge ordering.
+
+The converse is false: presence of a directed cycle says nothing by itself about the largest monochromatic simple path. It only obstructs an exact edge-order realization. The orientation and realizability correspondence are proved independently in the sibling manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability*.
+
+## Exact limitation: exterior dependence
+
+The theorem applies to the **direction-only** coloring (1), and in particular to every edge-ordered complete graph. For a general physical coloring \(c(F,(a,b,c))\), even assuming
+\[
+ c(F,(c,b,a))=1-c(F,(a,b,c)),\qquad
+ c(\bar F,(a,b,c))=c(F,(a,b,c)),
+ \tag{6}
+\]
+the comparison assigned to adjacent edges \(\{a,b\}\) and \(\{b,c\}\) can depend on the exterior coordinate bits of the physical face \(F\). Different windows along a cube path generally belong to different exterior fibers. Even if each fiber separately admits an acyclic comparison orientation, its topological order may depend on the fiber and therefore need not supply a common monotone original-graph path.
+
+A sufficient **global-flatness hypothesis** for the proof is that one total edge order \(\prec\) of \(K_V\) realizes every comparison uniformly:
+\[
+ c(F,(a,b,c))=\mathbf1_{\{\{a,b\}\prec\{b,c\}\}}\quad
+ \text{for every physical face }F.
+ \tag{7}
+\]
+This is stronger than separate fiberwise acyclicity. Identifying a weaker coherent-transport hypothesis under which (3) persists is an explicit structural problem with a clear mathematical payoff.
+
+## Relation to NORI-k switch amplification
+
+The unbounded-switch multilevel coloring of ordered physical 3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
+
+In particular, the old NORI3 obstruction does not imply an edge-ordered increasing-path obstruction. The near-linear bound (3) is an application of the published Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner theorem, **not** a new lower bound for altitude. The contribution here is the exact incidence- and face-consistent transfer and its explicit boundary on possible counterexamples.
+
+## References
+
+M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran, A. Z. Wagner, *Nearly-linear monotone paths in edge-ordered graphs*, Israel Journal of Mathematics **238** (2020), 663–685. DOI: 10.1007/s11856-020-2035-7. arXiv:1809.01468.
+
+See also the companion NORI research manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability* for the exact correspondence between boundary 3-tournaments and orientations of \(L(K_n)\).
+
+### Polynomial monochromatic geodesics from sparse triplewise exterior support
+
+# Polynomial monochromatic geodesics from sparse triplewise exterior support
+
+## Theorem and structural significance
+
+Let \(V\) be the \(n\) coordinate directions of \(Q_n\). A binary coloring \(c(F,(a,b,c))\) of **physical ordered three-faces** is *same-face reversal-odd* when
+\[
+c(F,(a,b,c))=1-c(F,(c,b,a))
+\tag{R}
+\]
+for every physical face and distinct ordered free directions. The boundary-compatible NORI3 class additionally obeys \(c(\bar F,\pi)=c(F,\pi)\); together these are equivalent to the ordinary NORI antipodal-reversal law plus (R).
+
+**Definition (triplewise exterior support).** For each *unordered* direction triple \(T\in\binom V3\), suppose there is an assigned subset \(S_T\subseteq V\setminus T\) such that, for each of the six ordered triples \(\pi\) of \(T\), the physical face color \(c(F,\pi)\) depends only on \(\pi\) and the fixed exterior bits in \(S_T\). The supports \(S_T\) are allowed to differ arbitrarily with \(T\). Assume \(|S_T|\le d\) for every \(T\). In particular, no common small global exterior-support set is required.
+
+**Theorem (sparse-dependency extraction).** Suppose (R) holds and the coloring has triplewise exterior support of size at most \(d\), for \(n\ge4\). If \(d\ge1\), put
+\[
+p=\min\left\{1,\left(\frac{n}{4d\binom n3}\right)^{1/3}\right\},\qquad
+M=\left\lceil\tfrac34np\right\rceil .
+\tag{1}
+\]
+Then some monochromatic direction-distinct cube geodesic has at least
+\[
+\boxed{1+\sqrt{(M-1)/2}}
+\tag{2}
+\]
+coordinate moves (understood with the usual integral rounding). In particular, whenever \(1\le d=o(n)\) and \(n\to\infty\), the guarantee is
+\[
+\boxed{L_{\max}(c)=\Omega((n/d)^{1/6})}.
+\tag{3}
+\]
+For \(d=0\), the full direction set is flat and the sharper boundary-tournament guarantee
+\[
+L_{\max}(c)\ge1+\sqrt{(n-1)/2}
+\tag{4}
+\]
+holds. These results hold even without antipodal invariance; with it, they apply to the proposed boundary-compatible subclass of legal NORI3 colorings.
+
+**Stronger global-support corollary.** If there exists one set \(S\subseteq V\) of \(|S|=t\) whose fixed bits determine all ordered three-face colors whenever the free directions avoid \(S\), and if (R) holds, then there is a monochromatic geodesic on at least
+\[
+\boxed{1+\sqrt{(n-t-1)/2}}
+\tag{5}
+\]
+distinct directions, for \(n-t\ge3\). This is substantially stronger than the purely two-color logarithmic guarantee under the same exterior-support hypothesis without (R). For a **legal** boundary-compatible coloring with \(|S_T|\le1\), antipodal invariance additionally implies every such one-bit function is constant (because \(f(z)=f(1-z)\)); hence it is direction-only, and (4) applies.
+
+## Proof
+
+**Step 1: Extract a large set of directions with no internal exterior dependencies.**
+Build a 4-uniform hypergraph \(\mathcal H\) on \(V\): for every unordered triple \(T\) and \(u\in S_T\), insert the 4-element hyperedge \(T\cup\{u\}\). Its number of hyperedges is at most
+\[
+B=\sum_{T\in\binom V3}|S_T|\le d\binom n3.
+\]
+A random \(p\)-subset \(X\subseteq V\) has expected size \(np\) and contains at most \(Bp^4\) hyperedges in expectation. Our choice of \(p\) guarantees \(Bp^4\le np/4\). Consequently some \(X\) satisfies
+\[
+|X|-|E(\mathcal H[X])|\ge \tfrac34np.
+\]
+Delete one direction from each hyperedge remaining in \(\mathcal H[X]\), yielding an independent set \(D\subseteq X\) with
+\[
+|D|\ge M=\lceil3np/4\rceil.
+\tag{6}
+\]
+By independence, \(S_T\cap D=\varnothing\) for every triple \(T\subseteq D\). Equivalently, *none of the exterior coordinates that can affect a three-face entirely supported in \(D\) will ever be traversed by a path using only \(D\)*.
+
+**Step 2: Construct one direction-only boundary tournament in a genuine physical cube fiber.**
+Fix *any* cube root \(x\in Q_n\). For any three directions of \(D\), the exterior bits in \(S_T\) remain equal to those of \(x\) under every path using only directions in \(D\), because \(S_T\cap D=\varnothing\). Define
+\[
+b_x(a,b,c)=c(F,(a,b,c))
+\]
+for any physical face \(F\) with free set \(\{a,b,c\}\subseteq D\) and fixed \(S_T\)-bits inherited from \(x\). The triplewise exterior-support hypothesis makes this well defined, *independently of every other exterior bit within \(D\)*. Hypothesis (R) gives
+\[
+b_x(c,b,a)=1-b_x(a,b,c).
+\]
+Thus \(b_x\) is exactly a **boundary 3-tournament** on \(|D|\) distinct coordinate directions. This construction is valid even though the original coloring may vary nonlinearly with many exterior bits and the sets \(S_T\) are all different.
+
+**Step 3: Apply the snake-digraph terminal-pair theorem and realize its path physically.**
+The Devine–Milans antisymmetric boundary-tournament theorem (scrapbook, “Antisymmetric Tournaments” and “Boundary Tournaments”) gives a monochromatic tight path (in its directed-edge convention, color 1) of order at least
+\[
+1+\sqrt{(|D|-1)/2}\ge1+\sqrt{(M-1)/2}.
+\]
+Let its distinct direction sequence be \((u_1,\ldots,u_\ell)\subseteq D\). Traverse those directions in that order, starting at the selected cube vertex \(x\). This is a genuine cube geodesic: no direction repeats. At its \(j\)th ordered three-window, all \(S_T\)-bits equal \(x|_{S_T}\) and the **physical ordered face** has color
+\[
+c(F_j,(u_j,u_{j+1},u_{j+2}))
+=b_x(u_j,u_{j+1},u_{j+2})=1.
+\]
+Thus the entire actual physical cube geodesic is monochromatic. There is no tacit identification of faces from different roots and no need to transport a maximal terminal path between incompatible cube fibers. This proves (2).
+
+For \(d\ge1\), equation (1) simplifies for \(n\ge4\) to \(p^3=3/[2d(n-1)(n-2)]\) (unless capped by 1). Hence \(M=\Omega((n/d)^{1/3})\), and (2) yields (3). When \(d=0\), simply take \(D=V\), proving (4). If a **single common** support \(S\) works for all ordinary triples avoiding \(S\), take \(D=V\setminus S\) directly without random deletion, obtaining (5). \(\square\)
+
+## Relation to existing results and sharp limitations
+
+The established *Sharp logarithmic monochromatic geodesics under bounded exterior support* proves an \(\Omega(\log(n-t))\) lower bound without reversal oddness and has a legal one-sentinel matching construction. **The present theorem has a different, indispensable hypothesis (R)**: for one common exterior support the lower bound improves all the way to \(\Omega(\sqrt{n-t})\); for *different sparse supports per triple* it remains polynomial, \(\Omega((n/d)^{1/6})\). It therefore identifies a concrete quantitative joint role for local reversal antisymmetry and sparse exterior dependence. It does not settle the fully unrestricted boundary-compatible class, where the support of one direction triple can have size \(\Theta(n)\).
+
+The antichain-rank two-sentinel short-path NORI3 construction violates (R) (its two reversed triples can have equal color on the same physical face), and so is not a counterexample. The boundary snake mechanism operates only **after** an independent direction set eliminates all relevant exterior dependencies. Arbitrary globally dependent physical colorings need not admit such a large flat direction set by this argument.
+
+For a legal coloring satisfying (R), antipodal invariance is automatic from the two reversal laws. In particular, for \(|S_T|\le1\) every induced dependence on that lone bit is constant, so the full coloring is direction-only; this is a useful strengthening for the first nontrivial parameter. For \(|S_T|\ge2\), genuinely varying antipodally invariant XOR-type dependence is possible, and the polynomial extraction proof applies.
+
+**Sources:** Devine–Milans scrapbook, “Antisymmetric Tournaments” and “Boundary Tournaments,” for the terminal-pair \(\sqrt n\) theorem; existing NORI foundational manuscript *Sharp logarithmic monochromatic geodesics under bounded exterior support* for the comparison without (R).
