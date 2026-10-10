@@ -11,15 +11,15 @@ API.md and all eight Article compositions; investigate relevant Sections and
 Subsections, especially the legal Q9 counterexample, multilevel switch amplification,
 and self-dual Devine-Milans logarithmic-path construction.
 The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
-Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
+Every fixed k>=3 has legal physical colorings with longest monochromatic geodesic O_k(log n) and compulsory switches Omega_k(n/log n), by the two-sentinel antichain/rank construction. The one-sentinel Devine-Milans NORI3 construction gives the same scale. Both are construction lower bounds on switches, NOT universal upper bounds.
 The original universal square-root monochromatic-path target is also false.
 
 Choose independently a consequential unresolved question:
 1. Does every legal NORIk coloring have a monochromatic geodesic of
    length Omega_k(log n)? Determine the sharp unrestricted scale.
-   For bounded exterior support, the logarithmic bound is already sharp.
+   For NORI3 with bounded exterior-coordinate support, the logarithmic scale is proved sharp. Unrestricted NORI3 has no established matching lower bound.
 2. What long-path guarantee survives same-face reversal oddness and
-   antipodal invariance, especially for boundary 3-tournaments?
+   antipodal invariance, especially for boundary 3-tournaments?\n   Look for a symmetry framework retaining every NORI1 instance.
 3. Which boundary comparison orientations are globally edge-orderable?
    Any transfer must preserve original-vertex simplicity and physical faces.
 4. Can unrestricted exterior-dependent NORI2 force two switches? What
