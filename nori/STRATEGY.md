@@ -15,7 +15,7 @@
 
 ## Objectives and exact bridges
 
-### reachability_terminal_collision (equivalent; active)
+### 1. reachability_terminal_collision (equivalent; active)
 
 - Target: For every legal ordered-three-face coloring, exhibit a root x, an ordered terminal pair (a,b), and complementary supports U and D\U both realized by monochromatic genuine geodesics with reversed terminal memories (a,b) and (b,a).
 - Central bridge: Derive same-root complementary intersections in actual R_(a,b)(x), R_(b,a)(x), including terminal memory and seam compatibility; support coverage by itself does not force it.
@@ -23,7 +23,7 @@
 - Next test: Characterize an invariant of both reversed-terminal families preserved under legitimate root slides, then prove a complementary-intersection theorem or produce a legal counterexample.
 - Selection reason: Exact equivalent criterion with a certified extraction theorem; test common-root reversed-terminal invariant rather than improve support counts.
 
-### full_geodesic_exchange (sufficient; active)
+### 2. full_geodesic_exchange (sufficient; active)
 
 - Target: Prove that every legal coloring with no full good antipodal geodesic admits an improving root-moving exchange on a suitably extremal full or maximal good path; establish a well-founded descent potential.
 - Central bridge: Select compatible cap colors from two-sided extremal walls and a potential preventing exchange cycles.
@@ -31,7 +31,7 @@
 - Next test: Write exact four-window-change exchange table for an extremal witness, search a cycle-free lexicographic potential, and falsify claimed monotonicity on small legal instances.
 - Selection reason: Pursue independent global mechanism; prioritize falsifiable improvement tables and cycle-free termination.
 
-### exterior_bit_holonomy (exploratory; active)
+### 3. exterior_bit_holonomy (exploratory; active)
 
 - Target: Classify exterior-bit dependence patterns of legal ordered-three-face colorings that defeat current affine-root interpolation, and establish either a universal compatible-root chart theorem or an explicit obstruction with sharper hypotheses.
 - Central bridge: Eliminate genuine odd holonomy or repair incompatible face assignments when lifting lower-dimensional forcing gadgets.
@@ -39,7 +39,7 @@
 - Next test: Classify all minimal inconsistent exterior face-identification cycles with distinct sentinels and test a root-chart invariant that detects compatible actual witness seams.
 - Selection reason: Identify minimal face-identification consistency equations before extending special forcing certificates.
 
-### dimension_six_extension (special_case_extension; active)
+### 4. dimension_six_extension (special_case_extension; active)
 
 - Target: Extend the Q6 six-geodesic forcing certificate to n>=7 by a face-identification-consistent embedding or a new full-dimensional finite forcing family; retain actual exterior bits.
 - Central bridge: Resolve equality/complement consistency of exterior fixed bits for the multi-path gadget, or replace it by a chart-independent higher-dimensional family.
@@ -47,7 +47,7 @@
 - Next test: Extract a minimal full-dimensional face-identity constraint system for a Q7 gadget; prove its satisfiability for every coloring or construct a rigorous obstruction.
 - Selection reason: Treat the Q6 certificate as a robust base; escalate after explicit compatible physical-face identification.
 
-### physical_topology_extraction (sufficient; proposed)
+### 5. physical_topology_extraction (sufficient; proposed)
 
 - Target: Prove sufficient equivariant index or mixed class nonvanishing for a color-dependent subcomplex whose simplices are jointly witnessed by genuine good antipodal geodesics, yielding a good full path.
 - Central bridge: Construct actual jointly-witnessed cells and prove sufficient nontrivial cup product/filling rather than one-dimensional ambient equivariant classes.
@@ -55,7 +55,7 @@
 - Next test: Construct a finite explicit carrier cover from genuine window-shift cells and audit its intersection index against a small legal obstruction model.
 - Selection reason: Keep as independent global approach conditioned on a physically real mixed-index witness.
 
-### edge_transfer_ordered_faces (exploratory; proposed)
+### 6. edge_transfer_ordered_faces (exploratory; proposed)
 
 - Target: State and prove an explicit map from an edge-coloring path theorem to legal ordered-three-face NORI colorings that preserves a full antipodal geodesic and bounds ordered-window color switches by one.
 - Central bridge: Represent overlapping ordered-three-face windows by edge states without erasing 2-direction terminal memory or genuine physical exterior dependence.
