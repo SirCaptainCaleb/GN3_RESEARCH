@@ -388,7 +388,7 @@ def api_text(schema: str) -> str:
 
 ## History and judgment
 - For retired identifiers only: `nori.historical_item(old_id)`, `nori.historical_find(query,limit)` redirect to the fixed GitHub backup and successor Subsection. Historic Items are not active research.
-- Publish correct consequential mathematics on the remaining NORI extremal and restricted-class questions. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.
+- Research objective: one coherent unifying theorem or mechanism with honest, nontrivial specializations to unrestricted NORI1 and every ordinary boundary 3-tournament; NORI1 is a useful model, and boundary tournaments test the common principle. Explain how each subsidiary proof contributes to this shared program.
 - A serious session may produce **nothing worth publishing**. No tasks, claims, leases, checkpoints, ranked queue, or mandatory progress report.
 """
 
@@ -459,8 +459,19 @@ def build(schema: str):
 
 **Publish mathematics that resolves consequential questions after the unrestricted NORI3 conjecture's refutation. Establish correctness, precise scope, and its effect on an open problem.**
 
-## Research freely
-Begin with TWO PRIMARY mathematical problems: unrestricted NORI1 for EVERY legal physical-edge coloring, and the long vertex-simple tight-path problem for EVERY ordinary boundary 3-tournament, without assuming any global edge order or acyclicity. Seek a common structure or theorem advancing both. Edge-ordered tournaments are a FALLBACK or a source of techniques, not a replacement for the general boundary-tournament problem. Seek a genuine common theorem or transfer, not just two cases packaged in one definition. Study boundary-compatible reversal symmetry and global edge-order realizability only when they materially advance this NORI1-preserving goal. Unrestricted NORI2 and unrestricted NORI3 logarithmic extremal refinements are no longer research targets. Use the repository to test and improve your view. Give particular attention to assumptions and representations shared by existing approaches: their common obstacle may indicate that a different formulation is needed.
+## One central research objective: a genuine unification
+
+**Develop and prove one natural mathematical theory that treats unrestricted NORI1 and ordinary boundary 3-tournaments as instances of the same structural phenomenon.** The research target is one common theorem, selection mechanism, representation, or transfer principle with nontrivial long-path implications in BOTH settings—not two proofs conducted in parallel and grouped under one title.
+
+The first test family comprises every antipodally odd coloring of genuine undirected physical cube edges, including nonlinear NORI1 colorings. The second comprises every ordinary reversal-odd boundary 3-tournament on triples of distinct directions, with no assumed global edge order. An edge-ordered comparison tournament is a useful especially concrete example; ultimately the common framework should account for the full boundary family. For both families the path must be a legitimate path in the original structure, respecting physical edge/face identity and original-vertex simplicity where relevant.
+
+**NORI1 as a mathematical laboratory.** Work freely on physical-edge colorings, even on specialized constructions, to discover the geometry, root-consistency, common-witness selection, or splicing principle that a unified theorem may need. A NORI1 lemma is most useful when accompanied by a plausible lift to ordered-triple paths or a precise account of the extra seam windows to be handled. Complete standalone positive theorems remain valid mathematical background, but the research agenda is the shared mechanism rather than improvement of NORI1 bounds for their own sake.
+
+**Boundary tournaments as a stress test of the same idea.** When a proposed unifying object or hypothesis is on the table, use arbitrary boundary tournaments—including pathological non-edge-orderable cases—to determine whether the object is defined, whether it yields actual vertex-simple paths, and whether the proof transports. Calculations about comparisons, rank potentials and edge orders are valuable when they test or sharpen that common mechanism.
+
+The most compelling progress is a structural statement with honest specialization maps and compatible witnesses for both test families, followed by a common proof or transparent transfer. Even a carefully proved obstruction can help when it isolates why a candidate unification fails and what exact compatibility condition is missing.
+
+Study the existing manuscripts and relevant notes as evidence, not as the research agenda. Invent and challenge representations independently. Work on whatever subsidiary question seems most likely to expose the shared principle; if its best conceivable outcome would not inform the common theorem, reassess its usefulness. A serious investigation may conclude that a proposed unification cannot work or may have no publication-worthy outcome.
 
 Before investing deeply in a subsidiary question, identify the mathematical implication that would make its solution useful. Make that implication explicit enough to examine. If the strongest plausible answer would leave the main argument in essentially the same position, reconsider the question.
 
@@ -470,8 +481,17 @@ When an approach already has substantial development, assess what additional ins
 
 Spend your effort on the strongest mathematical opportunity you can identify. Report an inconclusive outcome plainly when that is where the investigation ends.
 
-## Strengthening criterion
-A proposed framework has TWO preservation tests. (1) Retain the ENTIRE original NORI1 class, including arbitrary nonlinear antipodally odd physical-edge colorings; never replace it by an affine or special subclass. (2) Retain the ENTIRE direction-only boundary 3-tournament class whenever feasible: for each triple of distinct directions a,b,c, a rule b(a,b,c) obeying b(c,b,a)=1-b(a,b,c) must be admitted by c(F,(a,b,c))=b(a,b,c) on every physical face. As an absolute minimum, no proposal may discard edge-ordered-graph boundary tournaments arising from ANY global strict edge order prec on K_n via b(a,b,c)=1_{ {a,b} prec {b,c} }. This subclass is precisely the acyclic-comparison-orientation edge-order-realizable class, and its increasing vertex-simple paths are the motivating tight paths. A proposal preserving only that minimum instead of all boundary tournaments must identify explicitly what additional hypothesis excludes the rest and why it is indispensable. Do not silently narrow either family. Same-face reversal-oddness and antipodal invariance form a plausible 3-face subclass, but reversal of a one-element order is the identity, so same-face reversal-oddness cannot literally be required for NORI1. Explain explicitly how any uniform definition handles that degeneracy. Before proposing a subsidiary theorem, test its hypotheses explicitly against BOTH mandatory families, and identify its actual implication for arbitrary NORI1 edge colorings and edge-ordered increasing tight paths; strive for the entire boundary tournament class. An improvement restricted solely to a peripheral subclass is not progress toward the requested strengthening. Excluding the logarithmic (3,3)-tournament construction is necessary but not sufficient. Mere piecewise definitions, new constants, and unrelated restricted classes are not consequential.
+## How to evaluate a candidate unification
+
+Describe the common objects and their structural assumptions first, then give two honest specializations:
+1. **Physical-edge NORI1:** arbitrary antipodally odd physical edge colorings of Q_n, not just affine or symmetric subclasses.
+2. **Ordinary boundary 3-tournaments:** direction-only ordered triples b(a,b,c) satisfying b(c,b,a)=1-b(a,b,c), including instances whose incident-edge comparisons are not induced by a global edge order.
+
+Show why a common path/witness concept specializes to full cube geodesics in the first family and original-vertex-simple monochromatic tight paths in the second. Explain exactly what theorem would follow in each family and which step still needs proof. A tentative common notion may legitimately start in a toy subclass, provided the missing route to both full classes is made mathematically explicit.
+
+For higher ordered faces, reversal oddness and antipodal invariance are natural structural candidates. At k=1, reversal of a one-letter word is the identity; a useful uniform formalism must account for that degeneracy without eliminating arbitrary NORI1 colorings. Physical-face consistency, the two additional ordered-triple seam windows, and simultaneous rather than pairwise witness realizability are important tests. Edge-ordered tournaments furnish an instructive tractable case, while the full reversal-odd boundary family is the intended specialization.
+
+Judge progress by whether it advances the shared mathematical statement, not by the number of separate peripheral bounds proved.
 
 ## Selective research notes — separate from manuscript publication
 Save a note only when another researcher could make a materially better decision. Use the narrowest primary home (Project, Article, Section or Subsection), and link additional relevant manuscripts or notes. Record the precise claim, scope, evidence, why it matters, and a discriminating next step where applicable. Before starting or revisiting an approach, inspect the Known obstructions appendix and only the relevant notes. Extend existing notes on the same question rather than fragmenting them.
@@ -493,9 +513,9 @@ Use the boot session_id for writes. Publish Subsections with `publish_subsection
 """)
         write(root / "REFLEXES.md", """# NORI research reflexes
 
-Develop your own view of a consequential remaining theorem or obstruction, not a proof of the refuted unrestricted grand conjecture. Inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
+Work toward ONE structural theorem or bridge unifying arbitrary antipodally odd NORI1 physical-edge colorings and ordinary reversal-odd boundary 3-tournaments. Build a single shared definition with honest specialization and path-witness maps for both. NORI1 is a useful toy laboratory; boundary tournaments are a test of the proposed shared mechanism. Seek a real common argument rather than parallel work on separate conjectures. Challenge inherited representations, and use the repository to test new ideas.
 
-Before a subsidiary calculation, say what precise general implication its best answer could establish. Stop or switch if the strongest plausible answer leaves that implication untouched. Treat a string of easy extensions as an occasion for conceptual reconsideration.
+Before a subsidiary calculation, articulate how its strongest conceivable answer would improve a shared theorem, a specialization map, or a common-witness mechanism. A useful NORI1 toy theorem can illuminate the missing ordered-triple seam constraints. Examine whether a string of easy extensions suggests a better common representation.
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
@@ -520,41 +540,48 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-The TWO EQUALLY PRIMARY targets are: (1) solve unrestricted NORI1 for
-all legal antipodally odd physical edge colorings; (2) solve the long
-vertex-simple monochromatic tight-path problem for ALL ordinary boundary
-3-tournaments b satisfying b(c,b,a)=1-b(a,b,c). Do not assume a global
-edge order or acyclic line-graph comparison orientation for target (2).
-A strengthened NORI theory must preserve BOTH full classes.
-The boundary 3-tournaments induced by global orders on edges of K_n are
-a USEFUL FALLBACK if the general boundary case hits a proved obstacle,
-NOT a substitute for its solution. A theorem restricted to edge-ordered
-cases must identify the remaining gap and seek a general transfer.
-Do not work on old unrestricted NORI2, or further refine the unrestricted
-NORI3 logarithmic obstruction for its own sake.
+There is ONE grand research objective: find a natural mathematical framework
+and prove a common theorem unifying two model families:
+(A) every unrestricted, antipodally odd coloring of physical cube edges
+    (NORI1, including arbitrary nonlinear instances);
+(B) every ordinary reversal-odd boundary 3-tournament b on ordered triples,
+    b(c,b,a)=1-b(a,b,c), with its actual vertex-simple tight paths.
+These are TWO TESTS OF ONE THEOREM, not two independent research programs.
+Describe the common objects, the maps from both full classes, the
+compatible path witnesses and the mathematical conclusion obtained in
+each specialization. The unification should do real work in both
+classes; presenting two unrelated theorems in one definition is not
+a shared mechanism.
 
-Investigate independently a consequential route toward such a unification.
-A candidate three-face symmetry is separate same-face reversal oddness
-c(F,rev(pi))=1-c(F,pi) and antipodal invariance c(bar F,pi)=c(F,pi).
-It excludes the existing logarithmic NORI3 examples and contains ALL
-boundary 3-tournaments, including edge-ordered comparison tournaments.
-But it cannot be imposed verbatim for k=1, where reversal is the identity.
-A serious framework must explain how ALL legal NORI1 instances and the
-edge-ordered boundary instances survive, without simply juxtaposing
-unrelated cases. Check proposed definitions against BOTH families.
+NORI1 is a productive TOY LABORATORY. Explore its physical squares,
+root consistency, antipodal pairings, full-geodesic witnesses and
+restricted examples to discover the right general statement. Explain how
+a lemma from that toy model could extend to the ordered-triple setting
+and what extra seam/compatibility difficulty must be overcome.
+Independent rigorous NORI1 results are useful background, but orient
+the new research toward the common structural proof.
 
-Prioritize a proven common long/spanning-path theorem, a meaningful lift
-or transfer preserving real physical faces and original-direction
-simplicity, or a rigorous obstruction to a proposed unified structure.
-Never confuse line-graph directed paths with vertex-simple increasing
-paths of the underlying edge-ordered K_n.
-Edge-order acyclicity and boundary comparisons are useful only insofar
-as they illuminate this common NORI1-preserving problem.
+Test each proposed shared mechanism against ordinary boundary tournaments,
+including non-edge-orderable examples. Edge-ordered K_n tournaments
+are helpful examples and fallback models, but the target boundary
+family includes every reversal-odd triple coloring. Ensure any inferred
+path is vertex-simple in the ORIGINAL K_n, not only in the ordered-pair
+transition digraph. Track exact physical faces and starting-root
+compatibility in the cube specialization.
 
-Challenge shared assumptions and representations. Before substantial work,
-identify the exact implication its strongest possible result would establish.
-Avoid routine construction improvements, unrestricted NORI2, and
-small-dimensional searches without a consequential NORI1-preserving implication. Explore new formulations independently.
+An optional candidate: on physical ordered three-faces impose separate
+same-face reversal oddness and antipodal invariance. It contains all
+ordinary boundary tournaments and excludes the known logarithmic
+three-face obstructions, but literal reversal oddness degenerates at
+k=1. Find a natural common definition covering this mismatch, or invent
+a different one. Test whether one genuinely compatible selection or
+path theorem follows from it.
+
+Before investing deeply in a subsidiary problem, identify how its best
+outcome would inform the unified theorem. A rigorous disproof of one
+unifying mechanism, with an exact compatibility obstruction, can be
+valuable. Original mathematical exploration is encouraged; the expected
+result is a better common theorem, not a tally of isolated advances.
 
 Publish only correct, independently significant, coherent mathematics using
 `nori.publish_subsection` or the Section/Article composition interface.
@@ -838,7 +865,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. The research agenda is ONE unifying theorem for unrestricted NORI1 and ordinary boundary tournaments, with NORI1 available as a toy laboratory and boundary tournaments serving as a full-class test of the same structure. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
