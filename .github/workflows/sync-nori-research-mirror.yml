@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: selective research-note layer and manuscript-preserving artifact refresh
+# NORI assembled publication: note authorship, retired brainstorm endpoints, refreshed worker artifact
 
 on:
   workflow_dispatch:
