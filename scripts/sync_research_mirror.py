@@ -730,66 +730,85 @@ Generated: {rev.get('generated_at')}
     for old in ("ARTICLES", "SECTIONS", "SUBSECTIONS"):
         shutil.rmtree(root / old, ignore_errors=True)
     tree = tree_paths(schema)
-    for node in tree:
-        relative = Path(node["path"])
-        if relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "grand_conjecture":
-            raise ValueError(f"invalid canonical tree path: {relative}")
-        write(root / relative, node.get("content") or "")
-    index = ["# Grand conjecture", "",
-             "Research hierarchy: Articles → Sections → Subsections." if schema == "nori" else "Research hierarchy: Articles → Sections → Subsections → Items.",
-             "Each level's composition is adjacent to its corresponding directory.", ""]
-    for a in articles:
-        if schema == "nori":
+    if schema == "nori":
+        # Only selected-child parent compositions represent current papers.
+        by_id = {n["id"]: n for n in data["nodes"]}
+        superseded = {
+            n["id"] for n in data["nodes"]
+            if n.get("data", {}).get("research_status") == "superseded"
+        }
+        current_articles = [a for a in articles if a["id"] not in superseded]
+        for node in tree:
+            relative = Path(node["path"])
+            if relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "grand_conjecture":
+                raise ValueError(f"invalid canonical tree path: {relative}")
+            identifier = relative.stem
+            node_info = by_id.get(identifier, {})
+            if node_info.get("type") in ("article", "section"):
+                # Eliminate independently authored parent summaries.
+                continue
+            if identifier in superseded:
+                write(root / "SUPERSEDED" / relative.relative_to("grand_conjecture"),
+                      "# SUPERSEDED RESEARCH — retained for historical reference\n\n"
+                      + (node_info.get("data", {}).get("superseded_reason") or
+                         "Superseded by the refutation of the NORI3 one-switch conjecture.")
+                      + "\n\n" + (node.get("content") or ""))
+            else:
+                write(root / relative, node.get("content") or "")
+        # Latest database parent composition is the selected-child assembly.
+        current_comps = {}
+        for composition in data["compositions"]:
+            if composition["node_type"] in ("article", "section"):
+                key = (composition["node_type"], composition["node_id"])
+                if key not in current_comps or (
+                    composition.get("composition_version") or 0
+                ) > (current_comps[key].get("composition_version") or 0):
+                    current_comps[key] = composition
+        active_article_ids = {a["id"] for a in current_articles}
+        article_by_section = {
+            x["section_id"]: x["article_id"]
+            for x in data["article_sections"]
+            if x["article_id"] in active_article_ids
+        }
+        for a in current_articles:
+            comp = current_comps.get(("article", a["id"]))
+            if not comp:
+                raise ValueError(f"missing assembled Article composition {a['id']}")
+            write(root / "grand_conjecture" / a["id"] / "MANUSCRIPT.md", comp["body"])
+        for section_id, article_id in article_by_section.items():
+            if section_id in superseded:
+                continue
+            comp = current_comps.get(("section", section_id))
+            if not comp:
+                raise ValueError(f"missing assembled Section composition {section_id}")
+            write(root / "grand_conjecture" / article_id / section_id / "MANUSCRIPT.md", comp["body"])
+
+        archive = ["# Superseded research", "",
+                   "These manuscripts retain their proofs but are not active.",
+                   ""]
+        for a in articles:
+            if a["id"] in superseded:
+                archive.append("- " + a["title"] + ": " +
+                    str(by_id[a["id"]].get("data", {}).get("superseded_reason") or "Superseded"))
+        write(root / "SUPERSEDED" / "README.md", "\n".join(archive))
+        index = ["# Active research Articles", "",
+                 "Each paper assembles selected Subsection compositions through "
+                 "Section compositions. Superseded work is retained in "
+                 "[SUPERSEDED](../SUPERSEDED/README.md).", ""]
+        for a in current_articles:
             index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}/MANUSCRIPT.md)")
-        else:
+    else:
+        for node in tree:
+            relative = Path(node["path"])
+            if relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "grand_conjecture":
+                raise ValueError(f"invalid canonical tree path: {relative}")
+            write(root / relative, node.get("content") or "")
+        index = ["# Grand conjecture", "",
+                 "Research hierarchy: Articles → Sections → Subsections → Items.",
+                 "Each level's composition is adjacent to its corresponding directory.", ""]
+        for a in articles:
             index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}.md)")
     write(root / "grand_conjecture" / "README.md", "\n".join(index))
-    if schema == "nori":
-        # Render a coherent paper without duplicating complete parent-level
-        # proofs at each hierarchy level. Full parent compositions remain
-        # accessible beside the assembled manuscript.
-        def contextual_preamble(body: str) -> str:
-            paragraphs = []
-            for para in (body or "").strip().split("\n\n"):
-                p = para.strip()
-                if not p or p.startswith("#"):
-                    continue
-                if p.startswith(("**Theorem", "**Lemma", "Theorem ", "Lemma ", "Proof.", "Proof:")):
-                    break
-                if len(p) > 1750:
-                    break
-                paragraphs.append(p)
-                if len(paragraphs) >= 2 or sum(len(x) for x in paragraphs) >= 1400:
-                    break
-            return "\n\n".join(paragraphs)
-
-        sections_by_id = {x["id"]: x for x in section_items}
-        for a in articles:
-            combined = [f"# {a.get('title') or a['id']}", ""]
-            main = latest_composition(data, "article", a["id"])
-            if main:
-                combined += ["## Article setting and orientation", "",
-                             contextual_preamble(main.get("body") or ""), "",
-                             f"*Full Article composition: [source manuscript](../{a['id']}.md).*", ""]
-            members = sorted((x for x in data["article_sections"] if x.get("article_id") == a["id"]),
-                             key=lambda x: (x.get("position") or 0, x.get("section_id") or ""))
-            for member in members:
-                sec = sections_by_id.get(member["section_id"])
-                if not sec:
-                    continue
-                combined += [f"## {sec.get('title') or sec['id']}", ""]
-                sc = latest_composition(data, "section", sec["id"])
-                if sc:
-                    combined += [contextual_preamble(sc.get("body") or ""), "",
-                                 f"*Full Section composition: [source manuscript]({sec['id']}.md).*", ""]
-                subs = sorted(subsections_by_section.get(sec["id"], []),
-                              key=lambda x: (x.get("subsection_no") or 0, x.get("id") or ""))
-                for sub in subs:
-                    subc = latest_composition(data, "subsection", sub["id"])
-                    if subc:
-                        combined += [f"### {sub.get('title') or sub['id']}", "", subc.get("body") or "", ""]
-            write(root / "grand_conjecture" / a["id"] / "MANUSCRIPT.md", "\n".join(combined))
-
 
 
     write_json(root / "MANIFEST.json", {
@@ -846,8 +865,8 @@ Generated: {rev.get('generated_at')}
         "result_count": len(data["item_results"]),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
-        "mirror_format": 19 if schema == "nori" else 18,
-        "composition_model": "recursive-composition-v7",
+        "mirror_format": 20 if schema == "nori" else 18,
+        "composition_model": "selected-child-assembly-v1" if schema == "nori" else "recursive-composition-v7",
     })
 
 def tree_paths(schema: str) -> list[dict[str, Any]]:
