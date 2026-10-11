@@ -371,6 +371,13 @@ def api_text(schema: str) -> str:
 - Read `OVERVIEW.md`, `KNOWN_OBSTRUCTIONS.md`, all eight Article compositions, and the relevant Section/Subsection manuscripts. `nori.search(query, filters := {})` searches **current composed manuscript text**, overview and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
+## Research notes: selective non-manuscript memory
+- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, labels, related [{type,id,version?}], epistemic_status, lifecycle. Revisions require exact expected_version.
+- nori.read_note(id,version:=null) reads an exact version; nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
+- nori.notes_for(type,id) finds primary-home and linked notes. read_manuscript includes related_notes metadata; manuscripts never automatically incorporate note bodies.
+- lifecycle active|resolved|superseded is separate from epistemic_status. Resolution and supersession require disposition, and supersession requires a valid successor_id.
+- The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
+
 ## Manuscript publication
 - `nori.publish_subsection(session, subsection_id, body, expected_composition_version, source_note := '')` directly revises a Subsection manuscript. Pass null expected version for its first composition, otherwise exact current version. Version conflicts reject the write.
 - `nori.new_subsection(session,section_id,payload,expected_section_version)` creates a coherent new Subsection; then compose it.
@@ -396,6 +403,9 @@ def toolkit_entry_line(r: dict[str, Any]) -> str:
 def build(schema: str):
     root = STAGE / schema
     data = {t: rows(schema, t) for t in TABLES}
+    if schema == 'nori':
+        data['research_notes'] = rows(schema, 'research_notes')
+        data['research_note_versions'] = rows(schema, 'research_note_versions')
 
     # Canonical data: all Article/Section/Subsection/Item/Result/Toolkit/auxiliary
     # document records are stored in the single typed nodes table. The following
@@ -459,6 +469,11 @@ Spend your effort on the strongest mathematical opportunity you can identify. Re
 ## Strengthening criterion
 A proposed framework has TWO preservation tests. (1) Retain the ENTIRE original NORI1 class, including arbitrary nonlinear antipodally odd physical-edge colorings; never replace it by an affine or special subclass. (2) Retain the ENTIRE direction-only boundary 3-tournament class whenever feasible: for each triple of distinct directions a,b,c, a rule b(a,b,c) obeying b(c,b,a)=1-b(a,b,c) must be admitted by c(F,(a,b,c))=b(a,b,c) on every physical face. As an absolute minimum, no proposal may discard edge-ordered-graph boundary tournaments arising from ANY global strict edge order prec on K_n via b(a,b,c)=1_{ {a,b} prec {b,c} }. This subclass is precisely the acyclic-comparison-orientation edge-order-realizable class, and its increasing vertex-simple paths are the motivating tight paths. A proposal preserving only that minimum instead of all boundary tournaments must identify explicitly what additional hypothesis excludes the rest and why it is indispensable. Do not silently narrow either family. Same-face reversal-oddness and antipodal invariance form a plausible 3-face subclass, but reversal of a one-element order is the identity, so same-face reversal-oddness cannot literally be required for NORI1. Explain explicitly how any uniform definition handles that degeneracy. Before proposing a subsidiary theorem, test its hypotheses explicitly against BOTH mandatory families, and identify its actual implication for arbitrary NORI1 edge colorings and edge-ordered increasing tight paths; strive for the entire boundary tournament class. An improvement restricted solely to a peripheral subclass is not progress toward the requested strengthening. Excluding the logarithmic (3,3)-tournament construction is necessary but not sufficient. Mere piecewise definitions, new constants, and unrelated restricted classes are not consequential.
 
+## Selective research notes — separate from manuscript publication
+Save a note only when another researcher could make a materially better decision. Use the narrowest primary home (Project, Article, Section or Subsection), and link additional relevant manuscripts or notes. Record the precise claim, scope, evidence, why it matters, and a discriminating next step where applicable. Before starting or revisiting an approach, inspect the Known obstructions appendix and only the relevant notes. Extend existing notes on the same question rather than fragmenting them.
+
+Distinguish a proved false implication, an exhaustive exclusion within explicit bounds, a method-specific limitation, and merely an unsuccessful attempt. Keep epistemic status separate from lifecycle; resolve or supersede notes with an explanation and successor link. Substantial correct mathematics belongs in a coherent Subsection manuscript; notes are not numbered and never automatically composed. Neither publication nor a note is mandatory; note existence, recency and a convenient next step do not determine research priorities.
+
 ## Manuscript structure and publication
 Read the original (now refuted) grand conjecture, the latest counterexamples, OVERVIEW.md, KNOWN_OBSTRUCTIONS.md, and all eight Article compositions before choosing your approach; follow relevant Sections and Subsections for proofs. Historical effort is evidence about cost, not a ranking. Independently challenge inherited formulations and pursue original routes.
 
@@ -478,7 +493,7 @@ Before a subsidiary calculation, say what precise general implication its best a
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
-Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening; keep failed routine investigations private. Inconclusive work with no paper-worthy outcome is entirely acceptable.
+Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening. Save a separate research note only for precise decision-changing obstructions, conjectures, approaches or partial arguments. Update existing notes instead of duplicates; distinguish proved, bounded computational, method-specific and inconclusive negative information. Epistemic and lifecycle status are distinct. No quotas, required notes, progress reports or ranked agenda. Inconclusive work without a manuscript or a note is acceptable.
 """)
         appendix = latest_composition(data, "subsection", "appendix_known_obstructions_to_proposed_nori_mechanisms")
         if appendix:
@@ -542,8 +557,7 @@ proofs, reproducible obstructions and true status. Review closely related
 manuscripts before adding another Subsection. There are no Items, claims,
 leases, checkpoints, assigned rankings or publication quotas.
 
-Persist manuscript advances selectively. If nothing deserves space in the
-paper, finish candidly: “I couldn't find anything worth publishing.”
+Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. Use nori.save_note only for decision-changing unfinished findings, at their narrowest scope, and revise existing notes on the same question. Do not confuse proved obstructions, bounded searches, method limits and failed attempts. Promote correct substantial mathematics into coherent Subsections, not notes. A session may end with no manuscript and no note.
 """)
 
     broadcast_lines = [
@@ -674,7 +688,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read KNOWN_OBSTRUCTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; judge mathematical significance independently. A session may end with no publication.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Follow ONLY relevant notes, not all of them at startup. Notes are non-manuscript memory and never rank the research agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
@@ -750,6 +764,7 @@ Generated: {rev.get('generated_at')}
 
     write_json(root / "MANIFEST.json", {
         "schema": schema,
+        "research_note_count": len(data.get("research_notes", [])),
         "snapshot_revision": rev.get("revision"),
         "generated_at": rev.get("generated_at"),
         "universal_document_versions": {d["id"]: d.get("version") for d in universal_docs},
