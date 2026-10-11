@@ -376,6 +376,7 @@ def api_text(schema: str) -> str:
 - nori.read_note(id,version:=null) reads the current or immediately previous note revision ONLY. On revision, the previous snapshot replaces any older snapshot; no unbounded note history. nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
 - nori.notes_for(type,id) finds primary-home and linked notes. read_manuscript includes related_notes metadata; manuscripts never automatically incorporate note bodies.
 - lifecycle active|resolved|superseded is separate from epistemic_status. Resolution and supersession require disposition, and supersession requires a valid successor_id.
+- **Editorial rule:** negative results default to research notes even when completely proved, extensive, or occupying an entire Section. Exception: decisive refutations of important conjectures (such as NORI3 Q9) or independently significant theorems. Mixed manuscripts retain self-standing mathematical advances and link scoped obstruction notes. Preserve proofs, precise hypotheses and certificates when reclassifying; never discard content merely because it is negative.
 - Separate brainstorm writes are retired in NORI; use only the selective research-note entity. The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
 
 ## Manuscript publication
@@ -472,14 +473,16 @@ A proposed framework has TWO preservation tests. (1) Retain the ENTIRE original 
 ## Selective research notes — separate from manuscript publication
 Save a note only when another researcher could make a materially better decision. Use the narrowest primary home (Project, Article, Section or Subsection), and link additional relevant manuscripts or notes. Record the precise claim, scope, evidence, why it matters, and a discriminating next step where applicable. Before starting or revisiting an approach, inspect the Known obstructions appendix and only the relevant notes. Extend existing notes on the same question rather than fragmenting them.
 
-Distinguish a proved false implication, an exhaustive exclusion within explicit bounds, a method-specific limitation, and merely an unsuccessful attempt. Keep epistemic status separate from lifecycle; resolve or supersede notes with an explanation and successor link. Substantial correct mathematics belongs in a coherent Subsection manuscript; notes are not numbered and never automatically composed. Neither publication nor a note is mandatory; note existence, recency and a convenient next step do not determine research priorities.
+**Default destination for negative results is a research note, EVEN IF rigorous, lengthy, technically sophisticated, or currently developed as a complete Section or Subsection.** This includes counterexamples to a proposed implication, methods that provably cannot close a gap, bounded exhaustive exclusions, and failed generalizations whose principal value is redirecting future research. Proof size and amount of effort do not by themselves confer publication status. Make a genuine exception for a negative theorem or counterexample that decisively resolves a central conjecture, establishes an independently important mathematical result, or makes another substantial standalone contribution (for example, the legal Q9 refutation and its all-dimensional consequences). Evaluate mathematical significance, NOT the positive/negative label alone.
+
+For mixed material, preserve the independently significant positive theorem or reduction in a coherent Subsection and put the method-specific obstruction, exact failure certificate or unsuccessful extension in a linked research note. An entire Section dominated by negative method audits may properly be consolidated into notes; preserve every reusable rigorous proof and provenance while revising the containing Article/Section compositions rather than silently discarding mathematics. The Known Obstructions appendix remains a curated high-level synthesis, with detailed evidence linked from notes, not a dumping ground for all negative experiments. Distinguish proved false implications, exhaustive exclusions within explicit bounds, limitations of a specific method and attempts that merely failed. Keep epistemic status separate from lifecycle; resolve or supersede notes with an explanation and successor link. Notes are never automatically composed into manuscripts; neither publication nor a note is mandatory. Notes, recency and convenient next steps do not rank the research agenda.
 
 ## Manuscript structure and publication
 Read the original (now refuted) grand conjecture, the latest counterexamples, OVERVIEW.md, KNOWN_OBSTRUCTIONS.md, and all eight Article compositions before choosing your approach; follow relevant Sections and Subsections for proofs. Historical effort is evidence about cost, not a ranking. Independently challenge inherited formulations and pursue original routes.
 
 Articles, Sections, and Subsections form one assembled manuscript. **A Subsection is the smallest durable mathematical publication.** Revise a Subsection when a proof or correction belongs there. Create a new one only for coherent substantial development. Section and Article prose should connect arguments rather than repeat every proof. Check adjacent manuscripts before publishing; combine overlapping statements, preserve distinct meaningful proofs, and state exact dependencies and uncertainty.
 
-Publish only substantial proofs, useful reductions, consequential counterexamples, meaningful corrections, or well-motivated promising mechanisms. A short decisive lemma qualifies; length, work expended, and another tractable special case do not themselves justify publication. An uncertain idea should be labeled accurately. A serious session may finish with **nothing worth publishing**; routine failed attempts do not need a permanent record.
+Publish coherent, correct, independently consequential theorems, reductions, decisive counterexamples to central conjectures, and necessary corrections. A short decisive lemma may qualify; length, proof sophistication, effort spent, and the existence of a complete counterexample to a subsidiary METHOD are insufficient for manuscript admission. Negative results ordinarily go to selective notes even when extensive. A negative result may remain a manuscript only if its actual mathematical consequence is independently publication-worthy. An inconclusive session may leave neither manuscript nor note; routine failed attempts have no preservation requirement.
 
 The Known obstructions appendix preserves counterexamples and reusable false implications with their exact scopes. The unrestricted original NORI3 one-switch conjecture and all fixed k>=3 switch hierarchies are disproved. Do not treat these as open questions or revive the obsolete universal square-root monochromatic-path target. Distinguish them from the open unrestricted NORI1 full-monochromatic-geodesic problem and NORI1-preserving strengthened variants of the higher-face problems. Do not initiate old unrestricted NORI2 investigations. Preserve established logarithmic NORI3 counterexamples as obstructions against overly weak proposed generalizations.
 
@@ -493,7 +496,7 @@ Before a subsidiary calculation, say what precise general implication its best a
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
-Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening. Save a separate research note only for precise decision-changing obstructions, conjectures, approaches or partial arguments. Update existing notes instead of duplicates; distinguish proved, bounded computational, method-specific and inconclusive negative information. Epistemic and lifecycle status are distinct. No quotas, required notes, progress reports or ranked agenda. Inconclusive work without a manuscript or a note is acceptable.
+Put independently consequential mathematics into coherent manuscripts; decisive counterexamples to central conjectures may belong there. **A negative result's default home is a research note, even if long, rigorous or Section-sized**, when it chiefly limits a proposed implication or method. Preserve its precise proof and certificate in the note instead of promoting a methodological dead end into the publication manuscript. For mixed work publish the independently meaningful theorem and link the detailed obstruction note. Assess entire existing Sections and Subsections with the same criterion; keep historical provenance and don't erase mathematics merely to shorten the paper. Distinguish proved, bounded computational, method-specific and inconclusive negative information. Update existing notes rather than duplicating them. No quotas, required notes, progress reports or ranked agenda. Inconclusive work without a manuscript or note is acceptable.
 """)
         appendix = latest_composition(data, "subsection", "appendix_known_obstructions_to_proposed_nori_mechanisms")
         if appendix:
@@ -550,14 +553,19 @@ identify the exact implication its strongest possible result would establish.
 Avoid routine construction improvements, unrestricted NORI2, and
 small-dimensional searches without a consequential NORI1-preserving implication. Explore new formulations independently.
 
-Publish only correct, significant, coherent mathematics using
+Publish only correct, independently significant, coherent mathematics using
 `nori.publish_subsection` or the Section/Article composition interface.
-Subsections are the smallest publication unit. Preserve exact hypotheses,
-proofs, reproducible obstructions and true status. Review closely related
-manuscripts before adding another Subsection. There are no Items, claims,
+Subsections are the smallest publication unit. **Negative results ordinarily
+belong in research notes, however rigorous or extensive, even when a whole
+Section currently consists of methodological obstructions.** Manuscript
+exceptions include decisive refutations of important conjectures (e.g.
+physical Q9 NORI3) and independently important negative theorems. For mixed
+work, publish a real standalone theorem and link the detailed negative note;
+do not lose certificates, hypotheses, or provenance when reorganizing.
+Review related work before either kind of preservation. There are no Items, claims,
 leases, checkpoints, assigned rankings or publication quotas.
 
-Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. Use nori.save_note only for decision-changing unfinished findings, at their narrowest scope, and revise existing notes on the same question. Do not confuse proved obstructions, bounded searches, method limits and failed attempts. Promote correct substantial mathematics into coherent Subsections, not notes. A session may end with no manuscript and no note.
+Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. **Use nori.save_note as the default for consequential negative results, even proved and Section-sized ones**, not merely unfinished work. Attach narrowly and revise existing notes on the same question. Distinguish proved counterexamples, bounded exclusions, method limits and unsuccessful attempts. Promote material only when it makes a standalone significant mathematical contribution, including truly decisive conjecture refutations. A session may end with no manuscript and no note.
 """)
 
     broadcast_lines = [
@@ -777,7 +785,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Follow ONLY relevant notes, not all of them at startup. Notes are non-manuscript memory and never rank the research agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
