@@ -6,7 +6,7 @@
 - Labels: obstruction, rank_potential, boundary_tournament
 - Lifecycle: resolved
 - Epistemic status: proved
-- Current version: 3
+- Current version: 5
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4981_3
 - Updated session: session_nori_r4593_2
@@ -24,7 +24,7 @@
 
 ## Theorem (finite graph version)
 
-Let G=(V,E) be a finite simple graph with at least one edge. For every vertex v and distinct neighbors a,c of v, designate exactly one of the oriented length-two walks (a,v,c) and (c,v,a) as positive. Let rho(u,v) be an integer rank in {1,...,m} on every oriented edge uv. Assume that every positive triple (a,v,c) satisfies
+Let G=(V,E) be a finite simple graph with at least one edge. For every vertex v and distinct neighbors a,c of v, designate precisely one of the oriented length-two walks (a,v,c) and (c,v,a) as positive. Let rho(u,v) be an integer rank in {1,...,m} on every oriented edge uv. Assume that every positive triple (a,v,c) satisfies
 
 rho(a,v) < rho(v,c).                                      (1)
 
@@ -40,7 +40,7 @@ Fix v. Define D_v={a in N(v): rho(v,a)<=rho(a,v)}. For each a in D_v introduce t
 
 I(v,a)=[rho(v,a),rho(a,v)] intersection {1,...,m}.
 
-The intervals I(v,a), a in D_v, are pairwise disjoint. Indeed, if distinct a,c have a common integer t, then rho(v,a)<=t<=rho(a,v) and rho(v,c)<=t<=rho(c,v). Thus both candidate inequalities rho(a,v)<rho(v,c) and rho(c,v)<rho(v,a) fail. Yet exactly one of (a,v,c),(c,v,a) is positive, contradicting (1).
+The intervals I(v,a), a in D_v, are pairwise disjoint. Indeed, if distinct a,c have a common integer t, then rho(v,a)<=t<=rho(a,v) and rho(v,c)<=t<=rho(c,v). Thus both candidate inequalities rho(a,v)<rho(v,c) and rho(c,v)<rho(v,a) fail. Yet precisely one of (a,v,c),(c,v,a) is positive, contradicting (1).
 
 Consequently sum_{a in D_v}|I(v,a)| <= m for each v. Summing over v gives at most m|V|.
 
@@ -58,10 +58,10 @@ More generally, a d-regular class-I graph with a proper d-edge-coloring attains 
 
 ## Scope and research consequence
 
-This is an exact obstruction to attempts to construct ordinary boundary tournaments with O(sqrt(n))-length positive paths by assigning O(sqrt(n)) global integer levels to ordered pairs and forcing every positive transition to increase its level. Such a construction is impossible even before imposing vertex simplicity or restricting to paths. The theorem does NOT prove long vertex-simple tight paths: an increasing walk of ordered-pair states can repeat original vertices. Moreover, many ordinary boundary tournaments have directed cycles in their ordered-pair transition digraph and hence admit no strict integer rank at all. The result gives no full-class improvement beyond the Devine-Milans square-root theorem, and makes no claim about unrestricted NORI1 edge colorings.
+This is an precise obstruction to attempts to construct ordinary boundary tournaments with O(sqrt(n))-length positive paths by assigning O(sqrt(n)) global integer levels to ordered pairs and forcing every positive transition to increase its level. Such a construction is impossible even before imposing vertex simplicity or restricting to paths. The theorem does NOT prove long vertex-simple tight paths: an increasing walk of ordered-pair states can repeat original vertices. Moreover, many ordinary boundary tournaments have directed cycles in their ordered-pair transition digraph and hence admit no strict integer rank at all. The result gives no full-class improvement beyond the Devine-Milans square-root theorem, and makes no claim about unrestricted NORI1 edge colorings.
 
 A useful next step is to formulate an obstruction/construction with ranks that may fall on a quantitatively controlled exceptional family of transitions, preserving explicit predecessor-path witnesses; any stronger universal long-path deduction must exploit the joint realizability of those witness paths rather than only scalar pair ranks.
 
 ## Editorial disposition: single unified goal
 
-Proved rank-height obstruction preserved. This closes the isolated transition-rank investigation as a NORI research direction; the rank theorem provides a diagnostic for candidate common rank/selection mechanisms. Explore its consequences within a concrete shared object and compare its honest path-witness specializations in NORI1 and ordinary boundary tournaments.
+Proved rank-height obstruction preserved. This closes the isolated transition-rank investigation as a NORI research direction; the rank theorem provides a diagnostic for candidate common rank/selection mechanisms. Explore its consequences within a explicit shared object and compare its honest path-witness specializations in NORI1 and ordinary boundary tournaments.

@@ -1,0 +1,205 @@
+{
+    "objects": [
+        {
+            "id": "nori_article_i_conjecture",
+            "type": "article",
+            "title": "Article I — Antipodal-reversal-odd geodesic colorings of the cube",
+            "version": 4,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_article_vii_seven_coordinate",
+            "type": "article",
+            "title": "Article VII — Seven-coordinate structural and tournament methods",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_article_viii_edges",
+            "type": "article",
+            "title": "Article VIII - Antipodally odd edge colorings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_edge_central_carriers",
+            "type": "section",
+            "title": "Central edge carriers and antipodal topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_foundations",
+            "type": "section",
+            "title": "Foundational closure theorems and rooted obstructions",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_seven_coordinate_structure",
+            "type": "section",
+            "title": "Seven-coordinate endpoint constraints and tournament structure",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "a_legal_q15_counterexample_to_unrooted_nori_via_a_three_class_reversal_even_word_obstruction",
+            "type": "subsection",
+            "title": "A legal Q15 counterexample to unrooted NORI via a three-class reversal-even word obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
+            "type": "subsection",
+            "title": "Antipodal multifacet bridge and seven-coordinate universality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "appendix_known_obstructions_to_proposed_nori_mechanisms",
+            "type": "subsection",
+            "title": "Appendix — Known obstructions to proposed NORI mechanisms",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "coupled_chronological_saddle_potentials_and_checkerboard_obstructions",
+            "type": "subsection",
+            "title": "Coupled chronological saddle potentials and checkerboard obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture",
+            "type": "subsection",
+            "title": "Dimension-nine counterexample to the physical ordered-three-face NORI conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "endpoint_density_snakes_and_bounded_algebraic_degree",
+            "type": "subsection",
+            "title": "Endpoint-density snakes and bounded algebraic degree",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "endpoint_tournament_factorization_and_monochromatic_orders",
+            "type": "subsection",
+            "title": "Endpoint-tournament factorization and monochromatic orders",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "full_geodesic_color_profiles_span_the_entire_binary_space",
+            "type": "subsection",
+            "title": "Full-geodesic color profiles span the entire binary space",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing",
+            "type": "subsection",
+            "title": "Generic full geodesics in physical boundary-compatible NORI3 and affine smoothing",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine",
+            "type": "subsection",
+            "title": "Hereditary sentinel-word contraction and NORI counterexamples in every dimension at least nine",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier",
+            "type": "subsection",
+            "title": "Layered boundary snakes and a dense rank-sensitivity barrier",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament",
+            "type": "subsection",
+            "title": "Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments",
+            "type": "subsection",
+            "title": "Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support",
+            "type": "subsection",
+            "title": "Polynomial monochromatic geodesics from sparse triplewise exterior support",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "seven_coordinate_wing_factorization_and_exact_obstruction",
+            "type": "subsection",
+            "title": "Seven-coordinate wing factorization and exact obstruction",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support",
+            "type": "subsection",
+            "title": "Sharp logarithmic monochromatic paths under bounded exterior support",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "unbounded_mandatory_color_changes_from_multilevel_local_minima",
+            "type": "subsection",
+            "title": "Unbounded mandatory color changes from multilevel local minima",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_three_direction_edge_color_prescription",
+            "type": "subsection",
+            "title": "Universal three-direction edge-color prescription",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        }
+    ],
+    "publication": "active_only",
+    "supersession": {
+        "status": "superseded",
+        "recovery": "Research database or historical Git commits",
+        "article_count": 5,
+        "section_count": 13,
+        "subsection_count": 45,
+        "included_in_current_artifact": false
+    }
+}

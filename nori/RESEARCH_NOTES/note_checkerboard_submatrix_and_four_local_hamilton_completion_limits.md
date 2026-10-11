@@ -6,7 +6,7 @@
 - Labels: obstruction, counterexample
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -19,7 +19,7 @@
 
 ## Research note
 
-# Editorial scope and exact provenance
+# Editorial scope and precise provenance
 
 These sections supply proved limitations and finite counterexamples to specific checkerboard/exchange strategies. The independent saddle, minimax and full-class path/defect reductions stay in the Subsection manuscript.
 
@@ -33,7 +33,7 @@ k\le \left(\frac8{\log(3/2)}+o(1)\right)\log N.
 \tag{5}
 \]
 
-**Proof.** Fix disjoint sets \(A,B\) of size \(k\). Partition \(\lfloor k/2\rfloor\) disjoint pairs from \(A\), and likewise from \(B\). The pair products generate \(\lfloor k/2\rfloor^2\) edge-disjoint \(K_{2,2}\) rectangles. For each rectangle, among the six choices of its two smallest edges exactly two choices yield a disjoint pair; its checkerboard-obstruction probability is \(1/3\). Relative orders on disjoint edge sets in a uniform random permutation are independent. Hence
+**Proof.** Fix disjoint sets \(A,B\) of size \(k\). Partition \(\lfloor k/2\rfloor\) disjoint pairs from \(A\), and likewise from \(B\). The pair products generate \(\lfloor k/2\rfloor^2\) edge-disjoint \(K_{2,2}\) rectangles. For each rectangle, among the six choices of its two smallest edges precisely two choices yield a disjoint pair; its checkerboard-obstruction probability is \(1/3\). Relative orders on disjoint edge sets in a uniform random permutation are independent. Hence
 \[
 \Pr[(A,B)\ \text{checkerboard-free}]
 \le (2/3)^{\lfloor k/2\rfloor^2}.
@@ -56,7 +56,7 @@ Consequently, attempting to prove a polynomial or nearly linear monotone-path bo
 
 **Proposition 5.** There is an edge ordering of \(K_5\) for which every induced \(K_4\) admits an increasing Hamilton path but \(K_5\) admits none.
 
-**Proof (exact certificate).** On vertices \(0,1,2,3,4\), rank the ten edges from 0 to 9 in the following increasing order:
+**Proof (precise certificate).** On vertices \(0,1,2,3,4\), rank the ten edges from 0 to 9 in the following increasing order:
 \[
 14,\quad12,\quad03,\quad04,\quad23,\quad34,\quad02,\quad13,\quad24,\quad01.
 \tag{7}

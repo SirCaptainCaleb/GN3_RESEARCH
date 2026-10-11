@@ -4,13 +4,13 @@
 
 ## Main theorem
 
-**Theorem.** There exists a binary coloring of the physical ordered three-faces of \(Q_{15}\) satisfying
+**Theorem.** There exists a binary coloring of the  ordered three-faces of \(Q_{15}\) satisfying
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w))
 \]
 for every ordered three-face, for which **every** full antipodal geodesic has at least two changes among its thirteen consecutive ordered-three-face colors. Consequently, the unrooted NORI grand conjecture, as stated for all dimensions, is false.
 
-The construction is explicit except for an arbitrary fixed linear order on fourteen distinguished coordinates. Its only finite verification has 252,252 ternary words and also admits an exact 1,427-state dynamic-programming evaluation.
+The construction is explicit except for an arbitrary fixed linear order on fourteen distinguished coordinates. Its only finite verification has 252,252 ternary words and also admits an  1,427-state dynamic-programming evaluation.
 
 ## 1. Reversal-even three-letter obstruction
 
@@ -72,7 +72,7 @@ All legal completions are considered, because at each state the recurrence branc
 with zero words of 0, 1, 2, or 3 switches. As one explicit equality witness, the word
 \(00122001221112\) has triple-color word \(011100111000\), containing exactly four switches. \(\square\)
 
-## 2. Explicit physical-face coloring
+## 2. Explicit -face coloring
 
 Partition a set \(D\) of fourteen distinct coordinate directions as
 \[
@@ -81,7 +81,7 @@ D=D_0\sqcup D_1\sqcup D_2,\qquad
 \]
 and let \(\tau(d)=i\) for \(d\in D_i\). Adjoin a fifteenth direction, denoted \(s\), and fix any total ordering \(<\) of the fourteen directions in \(D\).
 
-For a physical three-face \(F\), let \(z_s(F)\) be its fixed \(s\)-coordinate whenever \(s\) is not one of its three varying directions. Define the bit \(c(F,(u,v,w))\) as follows.
+For a  three-face \(F\), let \(z_s(F)\) be its fixed \(s\)-coordinate whenever \(s\) is not one of its three varying directions. Define the bit \(c(F,(u,v,w))\) as follows.
 
 1. If \(u,v,w\in D\), put
 \[
@@ -98,7 +98,7 @@ c(F,(u,s,v))=\mathbf 1_{\{u>v\}} .
 \]
 Here \(u,v\in D\) are distinct and the inequality is in the fixed total ordering.
 
-These definitions depend only on the physical face and its ordered varying directions; in particular, they are independent of the traversing corner.
+These definitions depend only on the  face and its ordered varying directions; in particular, they are independent of the traversing corner.
 
 **Lemma (legality).** The coloring (3)--(4) is antipodal-reversal-odd.
 
@@ -118,7 +118,7 @@ and the second to
 \[
 H_k,\ldots,H_{12},
 \]
-where out-of-range intervals are empty. In the first segment, all the physical colors are \(H_i\oplus x_s\); in the second, they are \(H_i\oplus (1-x_s)\), because the \(s\)-coordinate flips once along the geodesic, when the direction \(s\) is traversed. Thus **every switch strictly inside either surviving segment is retained**.
+where out-of-range intervals are empty. In the first segment, all the  colors are \(H_i\oplus x_s\); in the second, they are \(H_i\oplus (1-x_s)\), because the \(s\)-coordinate flips once along the geodesic, when the direction \(s\) is traversed. Thus **every switch strictly inside either surviving segment is retained**.
 
 Passing from the original twelve-term word \(H\) to those two segments deletes at most the two terms \(H_{k-2},H_{k-1}\), and therefore removes at most three of its adjacent comparisons. Consequently, for \(4\le k\le12\) the two surviving segments together retain at least \(4-3=1\) switch. In this range all three \(s\)-containing windows occur; by (4), their color word is
 \[
@@ -126,21 +126,21 @@ Passing from the original twelve-term word \(H\) to those two segments deletes a
 \]
 which has an additional switch. The full geodesic therefore has at least two switches.
 
-If \(k\notin\{4,\ldots,12\}\), then deleting the terms at positions \(k-2,k-1\) removes at most two actual comparisons of \(H\): the two deleted entries touch an end or are partly out of range. Hence the surviving segments already retain at least \(4-2=2\) switches, independently of the colors of any \(s\)-containing windows.
+If \(k\notin\{4,\ldots,12\}\), then deleting the terms at positions \(k-2,k-1\) removes at most two  comparisons of \(H\): the two deleted entries touch an end or are partly out of range. Hence the surviving segments already retain at least \(4-2=2\) switches, independently of the colors of any \(s\)-containing windows.
 
 In every case, the full antipodal geodesic has at least two changes. The root and permutation were arbitrary, establishing the theorem. \(\square\)
 
 ## 4. Independent checks, scope, and consequence
 
-A separate direct enumeration evaluates all \(252252\) three-class direction words, fifteen insertion positions for \(s\), both possible initial \(s\)-coordinate bits, and **both** possible middle-\(s\) window colors. Across \(252252\cdot15\cdot2\cdot2=15135120\) resulting color words there are zero with zero or one switch (indeed, the minimum is three in this finite enumeration). This second check allows an adversarial choice of the middle-\(s\) bit and so is stronger than the face rule (4) on the tested class words. A further independent direct physical-face implementation checked random antipodal ordered-face pairings and randomly rooted full geodesics. All agree with the mathematical proof above.
+A separate direct enumeration evaluates all \(252252\) three-class direction words, fifteen insertion positions for \(s\), both possible initial \(s\)-coordinate bits, and **both** possible middle-\(s\) window colors. Across \(252252\cdot15\cdot2\cdot2=15135120\) resulting color words there are zero with zero or one switch (indeed, the minimum is three in this finite enumeration). This second check allows an adversarial choice of the middle-\(s\) bit and so is stronger than the face rule (4) on the tested class words. A further independent direct -face implementation checked random antipodal ordered-face pairings and randomly rooted full geodesics. All agree with the mathematical proof above.
 
-The construction refutes the **unrooted, unrestricted, antipodal-reversal-odd, physical ordered-three-face** grand conjecture already in dimension fifteen. It preserves the established Q5 and Q6 positive theorems; it does not claim dimension fifteen is minimal. The ternary finite lemma is the sole computer-assisted step, with complete recursion and direct enumeration cross-check given above.
+The construction refutes the **unrooted, unrestricted, antipodal-reversal-odd,  ordered-three-face** grand conjecture already in dimension fifteen. It preserves the established Q5 and Q6 positive theorems; it does not claim dimension fifteen is minimal. The ternary finite lemma is the sole computer-assisted step, with complete recursion and direct enumeration cross-check given above.
 
-The main conceptual point is that a reversal-even local triple word obstructed by four switches can be inserted across one distinguished exterior coordinate: at most three of its switches are lost, while the distinguished triple windows contribute the final forcing switch. This yields an actual physical-face counterexample rather than a prescribed-root obstruction.
+The main conceptual point is that a reversal-even local triple word obstructed by four switches can be inserted across one distinguished exterior coordinate: at most three of its switches are lost, while the distinguished triple windows contribute the final forcing switch. This yields an  -face counterexample rather than a prescribed-root obstruction.
 
-## Sharpening: the exact minimum is three switches in Q15
+## Sharpening: the  minimum is three switches in Q15
 
-**Theorem (sharp switch certificate).** For the physical coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal two-switch NORI3 bound in ambient dimension fifteen. The original two-switch lower bound above remains valid but is superseded by this strengthening.
+**Theorem (sharp switch certificate).** For the  coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal two-switch NORI3 bound in ambient dimension fifteen. The original two-switch lower bound above remains valid but is superseded by this strengthening.
 
 **Proof and smaller complete certificate.** Write \(\sigma\) for the change count. The proved four-switch ordinary-word lemma gives \(\sigma(H)\ge4\), and the sentinel insertion inequality gives \(\sigma(C)\ge\sigma(H)-2\) for every sentinel position, initial sentinel bit \(z\), and arbitrary middle-sentinel bit \(\varepsilon\). Consequently, **only** ordinary class words with \(\sigma(H)=4\) could possibly produce \(\sigma(C)\le2\). There are exactly 314 such words among the \(14!/(4!5!5!)=252252\) ordinary class words, by the independently recorded histogram in Section 1.
 
@@ -189,14 +189,14 @@ assert (critical,checked)==(314,18840)
 assert hist=={3:1592,4:2632,5:13024,6:1136,7:456}
 ~~~
 
-The bit \(\varepsilon\) is allowed adversarially, so this covers every actual choice induced by the strict order of the two ordinary directions adjacent to \(s\). In fact, equality is realized: an abstract direction-class order
+The bit \(\varepsilon\) is allowed adversarially, so this covers every  choice induced by the strict order of the two ordinary directions adjacent to \(s\). In fact, equality is realized: an abstract direction-class order
 \[
 (0,s,0,1,2,2,0,0,1,2,2,1,1,1,2)
 \]
-with starting sentinel bit \(z=1\) and middle-sentinel bit \(\varepsilon=1\) has physical color word
+with starting sentinel bit \(z=1\) and middle-sentinel bit \(\varepsilon=1\) has  color word
 \[
 1111100111000
 \]
-and exactly three changes. Choose the first of the two adjacent class-0 directions greater than the second in the prescribed strict direction order to realize \(\varepsilon=1\); all directions are distinct and all classes retain their prescribed multiplicities. Other initial vertex bits are arbitrary. Therefore the actual physical minimum is **exactly three**. \(\square\)
+and exactly three changes. Choose the first of the two adjacent class-0 directions greater than the second in the prescribed strict direction order to realize \(\varepsilon=1\); all directions are distinct and all classes retain their prescribed multiplicities. Other initial vertex bits are arbitrary. Therefore the   minimum is **exactly three**. \(\square\)
 
 **Relation to amplification.** The later multilevel construction forces four changes already on \(Q_{37}\) and unboundedly many as \(n\) grows. The present sharp \(Q_{15}\) result supplies a substantially smaller explicit violation of the conjectural NORI3 two-switch budget. No dimension-minimality claim is made.

@@ -4,9 +4,9 @@
 
 ## Theorem
 
-**Theorem.** For every integer \(n\ge9\), there is a legal antipodal-reversal-odd coloring of the physical ordered three-faces of \(Q_n\) for which **every** full antipodal geodesic has at least two ordered-three-face color changes. Consequently the unrooted NORI grand conjecture fails in *each* dimension \(n\ge9\).
+**Theorem.** For every integer \(n\ge9\), there is a legal antipodal-reversal-odd coloring of the  ordered three-faces of \(Q_n\) for which **every** full antipodal geodesic has at least two ordered-three-face color changes. Consequently the unrooted NORI grand conjecture fails in *each* dimension \(n\ge9\).
 
-This strengthens the explicit \(Q_9\) counterexample in *A dimension-nine counterexample to the physical NORI conjecture* by a dimension-free contraction principle. The finite \(Q_9\) obstruction requires only 2,016 comparisons; the new hereditary lemma is certified by 22,272 local comparisons of length at most seven, independently of \(n\).
+This strengthens the explicit \(Q_9\) counterexample in *A dimension-nine counterexample to the  NORI conjecture* by a dimension-free contraction principle. The finite \(Q_9\) obstruction requires only 2,016 comparisons; the new hereditary lemma is certified by 22,272 local comparisons of length at most seven, independently of \(n\).
 
 ## 1. The abstract sentinel word
 
@@ -81,7 +81,7 @@ assert checks == 22272
 
 This exhausts the local cases and proves the deletion lemma for arbitrary word length. \(\square\)
 
-## 2. All-dimensional legal physical-face coloring
+## 2. All-dimensional legal -face coloring
 
 Let \(n\ge9\), partition the coordinate directions into
 \[
@@ -89,7 +89,7 @@ V=A\sqcup B\sqcup\{s\},\qquad |A|=3,\quad |B|=n-4\ge5,
 \]
 and assign types \(0\) to \(A\) and \(1\) to \(B\). Fix any strict total order on \(A\sqcup B\).
 
-For a physical ordered three-face \((F,(u,v,w))\), define
+For a  ordered three-face \((F,(u,v,w))\), define
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -100,19 +100,19 @@ z_s(F)\oplus h(\tau(u),\tau(v),\tau(w)),&s\notin\{u,v,w\},\\
 \end{cases}
 \tag{2}
 \]
-The first case uses the fixed \(s\)-bit of the face. Each case depends solely on the physical face and free-coordinate order, never on the traversal corner.
+The first case uses the fixed \(s\)-bit of the face. Each case depends solely on the  face and free-coordinate order, never on the traversal corner.
 
 **Legality.** For triples avoiding \(s\), antipodal complementation flips \(z_s(F)\), while reversal preserves \(h\). For triples with \(s\) first or last, reversal interchanges the complementary constants \(1,0\). For triples with \(s\) middle, reversal interchanges two distinct ordinary directions, complementing the strict-order indicator. Thus \(c(\bar F,(w,v,u))=1-c(F,(u,v,w))\) for every face.
 
-**No good geodesic.** Fix any root and any full direction order. Replace the ordinary directions by their types, leaving the sentinel in place. The actual physical window-color word is precisely \(C_{z,\varepsilon}(w)\) for \(z\) equal to the root's \(s\)-bit and \(\varepsilon\) equal to the order comparison between the two directions adjacent to \(s\) (when this middle window exists). Delete \(n-9\) occurrences of type \(1\), leaving a nine-letter abstract word with three zeros, five ones, and one sentinel, while retaining the same formal \(z,\varepsilon\). Repeated application of (1) gives
+**No good geodesic.** Fix any root and any full direction order. Replace the ordinary directions by their types, leaving the sentinel in place. The   window-color word is precisely \(C_{z,\varepsilon}(w)\) for \(z\) equal to the root's \(s\)-bit and \(\varepsilon\) equal to the order comparison between the two directions adjacent to \(s\) (when this middle window exists). Delete \(n-9\) occurrences of type \(1\), leaving a nine-letter abstract word with three zeros, five ones, and one sentinel, while retaining the same formal \(z,\varepsilon\). Repeated application of (1) gives
 \[
 V_{z,\varepsilon}(w)\ \ge\
 V_{z,\varepsilon}(w_{\mathrm{reduced}}).
 \]
-The exact \(Q_9\) finite certificate (*A dimension-nine counterexample to the physical NORI conjecture*) checks all \(\binom83\cdot9\cdot2\cdot2=2016\) possible reduced words and parameters and proves that the right side is at least two. Hence every rooted full geodesic for (2) has at least two changes. \(\square\)
+The  \(Q_9\) finite certificate (*A dimension-nine counterexample to the  NORI conjecture*) checks all \(\binom83\cdot9\cdot2\cdot2=2016\) possible reduced words and parameters and proves that the right side is at least two. Hence every rooted full geodesic for (2) has at least two changes. \(\square\)
 
 ## 3. Significance
 
 The hereditary lemma identifies the missing dimension-lifting mechanism for the explicit sentinel construction. Rather than embedding a finite forcing *proof* with inconsistent exterior-bit holonomy, it enlarges a globally legal counterexample while retaining a monotone obstruction under deletion of ordinary direction occurrences. The chosen total order on distinct directions realizes one value of \(\varepsilon\); allowing both values in the reduced certificate makes the proof independent of the changing identities adjacent to the sentinel.
 
-The original \(Q_9\) physical-face proof remains the base case. The \(Q_{15}\) three-class construction and its independent verification remain valid historical certificates but are dimensionally superseded. This argument establishes failure for every \(n\ge9\); dimensions \(7\) and \(8\) are not decided by it.
+The original \(Q_9\) -face proof remains the base case. The \(Q_{15}\) three-class construction and its independent verification remain valid historical certificates but are dimensionally superseded. This argument establishes failure for every \(n\ge9\); dimensions \(7\) and \(8\) are not decided by it.

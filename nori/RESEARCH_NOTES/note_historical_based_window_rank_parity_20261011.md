@@ -6,7 +6,7 @@
 - Labels: obstruction, historical_scope, counterexample
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r5005_1
 - Updated session: session_nori_r5005_1
@@ -19,7 +19,7 @@
 
 ## Research note
 
-Historical model only: the directed based-window J-odd class permits different colors at different starting corners of the same ordered physical face. Rank parity is a valid counterexample to that superseded conjecture and ILLEGAL in the active physical ordered-face NORI class. The start-only parity classification is likewise limited to that broader model. Original Toolkit versions are retained as archived records. This note preserves the proofs verbatim.
+Historical model only: the directed based-window J-odd class permits different colors at different starting corners of the same ordered underlying face. Rank parity is a valid counterexample to that superseded conjecture and ILLEGAL in the active underlying ordered-face NORI class. The start-only parity classification is likewise limited to that broader model. Original Toolkit versions are retained as archived records. This note preserves the proofs verbatim.
 
 ## Original Toolkit source: nori_rank_parity_counterexample_even_dimensions
 

@@ -6,7 +6,7 @@
 - Labels: approach, historical_scope
 - Lifecycle: active
 - Epistemic status: proposed
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r5005_1
 - Updated session: session_nori_r5005_1
@@ -33,4 +33,4 @@ For LINP, a candidate is a construction whose failure exposes a specified repeat
 
 These are proposed application requirements, not a proved LINP algorithm. Linearity alone does not give a uniform bound on how many edges meet a high-degree vertex. A global longest-path condition may produce many dependent failures. Randomization does not turn a nonextendible path into an extendible one without a legitimate repair.
 
-Entropy compression may establish termination even when defect counts fluctuate, but it cannot repair an invalid move or recover boundary data that were never recorded. In contrast to flag-algebra averaging, its main output can be an actual successful finite construction, provided the algorithm and decoder have been proved.
+Entropy compression may establish termination even when defect counts fluctuate, but it cannot repair an invalid move or recover boundary data that were never recorded. In contrast to flag-algebra averaging, its main output can be an realized successful finite construction, provided the algorithm and decoder have been proved.

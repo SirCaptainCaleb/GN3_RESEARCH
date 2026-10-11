@@ -6,7 +6,7 @@
 - Labels: historical_scope, archive
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r5005_1
 - Updated session: session_nori_r5005_1
@@ -31,7 +31,7 @@ Phi(C)=sum_i s_i^2.
 1. VARIANCE FORM.
 Since sum_i s_i=n,
 Phi(C)=n^2/q+sum_i(s_i-n/q)^2.
-Thus, for fixed n and q, minimizing Phi is exactly minimizing component-size variance. The integer minimum occurs when component orders differ pairwise by at most one.
+Thus, for fixed n and q, minimizing Phi is precisely minimizing component-size variance. The integer minimum occurs when component orders differ pairwise by at most one.
 
 2. ONE-VERTEX TRANSFER.
 For a legal transfer from a component of order a to one of order b,
@@ -45,7 +45,7 @@ Therefore:
 3. TWO-COMPONENT REPARTITION.
 For fixed m=a+b,
 a^2+b^2=(m^2+(a-b)^2)/2.
-Hence among legal two-covers of one fixed union, Phi order is exactly absolute-imbalance order.
+Hence among legal two-covers of one fixed union, Phi order is precisely absolute-imbalance order.
 
 4. EXTREMAL NORMALIZATION.
 Fix a class of path covers together with its specified legal moves. If C is Phi-minimal in this class, every legal repartition of any component pair has imbalance at least that of the displayed pair. If C is Phi-maximal in this class, every legal local transfer that would increase imbalance is forbidden. This yields obstruction information even when no descent is available.

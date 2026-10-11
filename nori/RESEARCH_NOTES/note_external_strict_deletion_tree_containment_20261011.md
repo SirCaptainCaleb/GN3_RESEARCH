@@ -6,7 +6,7 @@
 - Labels: historical_scope, archive
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r5005_1
 - Updated session: session_nori_r5005_1
@@ -31,7 +31,7 @@ whenever \(uv\) is the edge labeled \(d\). No order or Hamiltonicity assumption 
 
 **Lemma 1 (membership).** For an edge label \(d\in D\), membership of \(d\) in \(S_w\) holds precisely when the distance from \(w\) to the nearer endpoint of the edge labeled \(d\) is odd. For \(d\in V-D\), the vertices \(w\) with \(d\in S_w\) form one bipartition class of \(T\). Moreover, \(|S_w|\) is constant on each bipartition class.
 
-**Proof.** The two endpoints of the edge labeled \(d\) both omit \(d\). Along every other edge, exactly one endpoint set contains \(d\). The unique paths in the tree therefore give the asserted parity rule. For a label outside \(D\), membership alternates across every edge. Finally, adjacent set sizes sum to \(|V|-1\), so set sizes agree at distance two and consequently throughout either bipartition class. \(\square\)
+**Proof.** The two endpoints of the edge labeled \(d\) both omit \(d\). Along every other edge, precisely one endpoint set contains \(d\). The unique paths in the tree therefore give the asserted parity rule. For a label outside \(D\), membership alternates across every edge. Finally, adjacent set sizes sum to \(|V|-1\), so set sizes agree at distance two and consequently throughout either bipartition class. \(\square\)
 
 **Theorem 2 (containment).** Suppose \(p\ne r\) and \(S_r\subsetneq S_p\). Write the \(p\)-\(r\) path as
 \[
@@ -59,7 +59,7 @@ For each label outside \(D\), membership at \(p,r\) is complementary by Lemma 1.
 
 Under the three conditions, every path-edge label has the same membership in both sets, every off-path edge label belongs to \(S_p\) alone, and every label outside \(D\) belongs to \(S_p\) alone. The inclusion and difference formula follow. \(\square\)
 
-**Corollary 3 (uniqueness).** For each vertex \(p\), at most one vertex \(r\ne p\) satisfies \(S_r\subsetneq S_p\). If such a vertex exists, \(p\) is a leaf. Among the edges incident with \(r\), exactly one has its label outside \(S_p\): the final edge of the \(p\)-\(r\) path.
+**Corollary 3 (uniqueness).** For each vertex \(p\), at most one vertex \(r\ne p\) satisfies \(S_r\subsetneq S_p\). If such a vertex exists, \(p\) is a leaf. Among the edges incident with \(r\), precisely one has its label outside \(S_p\): the final edge of the \(p\)-\(r\) path.
 
 **Proof.** Theorem 2 allows no off-path edge at \(p=v_0\), so \(p\) is a leaf. All off-path vertices are pendant at odd-indexed path vertices and hence lie in the bipartition class of \(p\).
 

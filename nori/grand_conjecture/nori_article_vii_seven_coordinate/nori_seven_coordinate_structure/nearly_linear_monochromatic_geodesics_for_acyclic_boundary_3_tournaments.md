@@ -4,7 +4,7 @@
 
 ## Scope and principal transfer theorem
 
-Let \(V\) be an \(n\)-element coordinate set, \(n\ge3\). A **boundary 3-tournament** is a function \(b(a,b,c)\in\{0,1\}\) on ordered triples of distinct coordinates obeying \(b(c,b,a)=1-b(a,b,c)\). The corresponding direction-only coloring of genuine physical ordered 3-faces is
+Let \(V\) be an \(n\)-element coordinate set, \(n\ge3\). A **boundary 3-tournament** is a function \(b(a,b,c)\in\{0,1\}\) on ordered triples of distinct coordinates obeying \(b(c,b,a)=1-b(a,b,c)\). The corresponding direction-only coloring of ordered 3-faces is
 \[
  c(F,(a,b,c)):=b(a,b,c).
  \tag{1}
@@ -43,7 +43,7 @@ Apply the theorem of M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran and 
 \]
 with \(\ell\) at least the quantity in (3).
 
-Choose any cube starting vertex \(x\) and traverse distinct coordinate directions \(v_0,v_1,\ldots,v_\ell\) in this order. Because no coordinate is repeated, this is a genuine geodesic of length \(\ell+1\) if we traverse every \(v_i\), or \(\ell\) if we traverse \(v_0,\ldots,v_{\ell-1}\). In either case, all its consecutive ordered 3-face windows have color 1 by (4)–(5), using the direction-only rule (1). Choosing all \(\ell+1\) vertices of the original graph path as distinct coordinate moves yields a cube geodesic of length \(\ell+1\), with exactly \(\ell-1\) windows, each colored 1. Thus (3) follows (indeed with one extra coordinate move). The start \(x\) is arbitrary because the coloring ignores fixed exterior bits. \(\square\)
+Choose any cube starting vertex \(x\) and traverse distinct coordinate directions \(v_0,v_1,\ldots,v_\ell\) in this order. Because no coordinate is repeated, this is a geodesic of length \(\ell+1\) if we traverse every \(v_i\), or \(\ell\) if we traverse \(v_0,\ldots,v_{\ell-1}\). In either case, all its consecutive ordered 3-face windows have color 1 by (4)–(5), using the direction-only rule (1). Choosing all \(\ell+1\) vertices of the original graph path as distinct coordinate moves yields a cube geodesic of length \(\ell+1\), with exactly \(\ell-1\) windows, each colored 1. Thus (3) follows (indeed with one extra coordinate move). The start \(x\) is arbitrary because the coloring ignores fixed exterior bits. \(\square\)
 
 **Length convention.** The edge-ordered increasing path has \(\ell\) edges and \(\ell+1\) distinct original vertices. These \(\ell+1\) distinct vertices become \(\ell+1\) cube coordinate directions. Thus there is no hidden loss through repeated original vertices, and there is no appeal to an arbitrary directed path of \(L(K_V)\).
 
@@ -55,37 +55,37 @@ More quantitatively, if a direction-only boundary tournament on \(n\) directions
 
 This is the contrapositive of the theorem. It gives a precise requirement for a prospective short-path boundary obstruction: the local comparisons cannot all arise from one global edge ordering.
 
-The converse is false: presence of a directed cycle says nothing by itself about the largest monochromatic simple path. It only obstructs an exact edge-order realization. The orientation and realizability correspondence are proved independently in the sibling manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability*.
+The converse is false: presence of a directed cycle says nothing by itself about the largest monochromatic simple path. It only obstructs an  edge-order realization. The orientation and realizability correspondence are proved independently in the sibling manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability*.
 
-## Exact limitation: exterior dependence
+##  limitation: exterior dependence
 
-The theorem applies to the **direction-only** coloring (1), and in particular to every edge-ordered complete graph. For a general physical coloring \(c(F,(a,b,c))\), even assuming
+The theorem applies to the **direction-only** coloring (1), and in particular to every edge-ordered complete graph. For a general  coloring \(c(F,(a,b,c))\), even assuming
 \[
  c(F,(c,b,a))=1-c(F,(a,b,c)),\qquad
  c(\bar F,(a,b,c))=c(F,(a,b,c)),
  \tag{6}
 \]
-the comparison assigned to adjacent edges \(\{a,b\}\) and \(\{b,c\}\) can depend on the exterior coordinate bits of the physical face \(F\). Different windows along a cube path generally belong to different exterior fibers. Even if each fiber separately admits an acyclic comparison orientation, its topological order may depend on the fiber and therefore need not supply a common monotone original-graph path.
+the comparison assigned to adjacent edges \(\{a,b\}\) and \(\{b,c\}\) can depend on the exterior coordinate bits of the  face \(F\). Different windows along a cube path generally belong to different exterior fibers. Even if each fiber separately admits an acyclic comparison orientation, its topological order may depend on the fiber and therefore need not supply a common monotone original-graph path.
 
 A sufficient **global-flatness hypothesis** for the proof is that one total edge order \(\prec\) of \(K_V\) realizes every comparison uniformly:
 \[
  c(F,(a,b,c))=\mathbf1_{\{\{a,b\}\prec\{b,c\}\}}\quad
- \text{for every physical face }F.
+ \text{for every  face }F.
  \tag{7}
 \]
 This is stronger than separate fiberwise acyclicity. Identifying a weaker coherent-transport hypothesis under which (3) persists is an explicit structural problem with a clear mathematical payoff.
 
 ## Relation to NORI-k switch amplification
 
-The unbounded-switch multilevel coloring of ordered physical 3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
+The unbounded-switch multilevel coloring of ordered  3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
 
-In particular, the old NORI3 obstruction does not imply an edge-ordered increasing-path obstruction. The near-linear bound (3) is an application of the published Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner theorem, **not** a new lower bound for altitude. The contribution here is the exact incidence- and face-consistent transfer and its explicit boundary on possible counterexamples.
+In particular, the old NORI3 obstruction does not imply an edge-ordered increasing-path obstruction. The near-linear bound (3) is an application of the published Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner theorem, **not** a new lower bound for altitude. The contribution here is the  incidence- and face-consistent transfer and its explicit boundary on possible counterexamples.
 
 ## References
 
 M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran, A. Z. Wagner, *Nearly-linear monotone paths in edge-ordered graphs*, Israel Journal of Mathematics **238** (2020), 663–685. DOI: 10.1007/s11856-020-2035-7. arXiv:1809.01468.
 
-See also the companion NORI research manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability* for the exact correspondence between boundary 3-tournaments and orientations of \(L(K_n)\).
+See also the companion NORI research manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability* for the  correspondence between boundary 3-tournaments and orientations of \(L(K_n)\).
 
 ## Directed-pair rank rigidity and quantitative boundary defects
 
@@ -114,7 +114,7 @@ s(\{a,b\})<s(\{b,c\}).
 \]
 If \(h(a,b,c)=0\), apply the previous argument to the reversed triple, for which \(h(c,b,a)=1\), to obtain the reverse *strict* score inequality. Consequently every pair of incident edges has distinct \(s\)-scores and the strict inequalities induced by \(h\) coincide with their comparisons under \(s\). Sort undirected edges by \(s\), breaking possible ties only between disjoint edges. This produces the total edge order (9). Conversely, assign to both directed copies \((a,b)\) and \((b,a)\) the rank of \(\{a,b\}\) in any prescribed total edge order. Formula (8) reproduces its adjacent-edge comparisons. \(\square\)
 
-**Corollary (nearly-linear positive tight paths).** Every reversal-odd boundary tournament represented by directed-pair strict comparisons (8) admits a positive vertex-simple tight path on \(n/2^{O(\sqrt{\log n\log\log n})}\) vertices, by the preceding acyclic-transfer theorem and the Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner monotone-path theorem. The original graph vertices are distinct; their labels provide distinct cube directions in the corresponding direction-only physical coloring.
+**Corollary (nearly-linear positive tight paths).** Every reversal-odd boundary tournament represented by directed-pair strict comparisons (8) admits a positive vertex-simple tight path on \(n/2^{O(\sqrt{\log n\log\log n})}\) vertices, by the preceding acyclic-transfer theorem and the Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner monotone-path theorem. The original graph vertices are distinct; their labels provide distinct cube directions in the corresponding direction-only  coloring.
 
 The rigidity admits a quantitative form *without assuming reversal oddness*. For each unordered triple \(\{a,b,c\}\), say it is **defective** if at least one of its three possible middle vertices violates \(h(c,b,a)=1-h(a,b,c)\), with \(h\) still defined by (8). Let \(B\) be the number of defective unordered triples.
 
@@ -140,4 +140,4 @@ if \(m=O(\log n)\) along a family with \(n\to\infty\), then \(B=\Omega(n^3/\log 
 \]
 Summing over \(b\) counts at most three violating middle-vertex choices for each defective unordered triple. Dividing by three and taking the nonnegative part gives (11). If \(B=0\), every star has \(n-1\) pairwise distinct symmetric integer scores in a set of size \(2m-1\), implying (12). The asymptotic defect bound follows by substituting \(m=O(\log n)\) into (11). \(\square\)
 
-**Scope and consequence.** The proof holds for arbitrary asymmetric ordered-pair scores, arbitrary discrete ranking/tie patterns, and (by rank normalization) every totally ordered score set, including lexicographically ordered tuples. It is an exact no-go for transferring an \(O(\log n)\)-height *directed-pair strict-comparison* construction to an ordinary boundary 3-tournament. It does **not** imply global edge-orderability for arbitrary boundary 3-tournaments, because their line-graph comparison orientations can contain directed cycles. It makes no assertion about unrestricted exterior-dependent physical 3-face colorings or unrestricted NORI1. A full ordinary boundary theorem must exploit mechanisms beyond strict comparisons of directed-pair potentials.
+**Scope and consequence.** The proof holds for arbitrary asymmetric ordered-pair scores, arbitrary discrete ranking/tie patterns, and (by rank normalization) every totally ordered score set, including lexicographically ordered tuples. It is an  no-go for transferring an \(O(\log n)\)-height *directed-pair strict-comparison* construction to an ordinary boundary 3-tournament. It does **not** imply global edge-orderability for arbitrary boundary 3-tournaments, because their line-graph comparison orientations can contain directed cycles. It makes no assertion about unrestricted exterior-dependent  3-face colorings or unrestricted NORI1. A full ordinary boundary theorem must exploit mechanisms beyond strict comparisons of directed-pair potentials.

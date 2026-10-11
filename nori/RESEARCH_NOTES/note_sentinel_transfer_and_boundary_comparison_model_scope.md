@@ -6,7 +6,7 @@
 - Labels: obstruction, partial_argument
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -23,7 +23,7 @@
 
 Detailed scope analysis establishing what the distinguished-coordinate constructions imply—and fail to imply—about NORI1, NORI2, and ordinary boundary tournaments.
 
-The exact compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
+The precise compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
 
 
 ---
@@ -32,15 +32,15 @@ The exact compositions below are copied verbatim from the previous manuscript hi
 
 Source ID: `scope_of_distinguished_coordinate_counterexamples_and_edge_order_realizability`
 Source Section: `nori_foundations`
-Exact original Subsection composition: v1.
+precise original Subsection composition: v1.
 
 # Scope of the distinguished-coordinate construction and edge-order realizability
 
-The dimension-nine NORI counterexample separates physical ordered-three-face colorings from two more constrained structures: lower-arity distinguished-coordinate colorings and boundary 3-tournaments. This subsection proves the relevant distinctions. It establishes no counterexample to general NORI1 or NORI2.
+The dimension-nine NORI counterexample separates underlying ordered-three-face colorings from two more constrained structures: lower-arity distinguished-coordinate colorings and boundary 3-tournaments. This subsection proves the relevant distinctions. It establishes no counterexample to general NORI1 or NORI2.
 
 ## The one-face distinguished-coordinate family always has a monochromatic antipodal geodesic
 
-Let the cube directions be D together with s. For every ordinary direction d in D choose a bit a_d, and color its physical edges by c_d(x)=x_s XOR a_d. Color each s-edge by g(x_D), where g(complement y)=1-g(y). These are legal undirected antipodally odd edge colors.
+Let the cube directions be D together with s. For every ordinary direction d in D choose a bit a_d, and color its underlying edges by c_d(x)=x_s XOR a_d. Color each s-edge by g(x_D), where g(complement y)=1-g(y). These are legal undirected antipodally odd edge colors.
 
 **Proposition.** Every such coloring admits a monochromatic full antipodal geodesic.
 
@@ -48,7 +48,7 @@ Let the cube directions be D together with s. For every ordinary direction d in 
 
 ## The two-face distinguished-coordinate family always has a one-switch antipodal geodesic
 
-Here NORI2 means binary colors of ordered physical squares satisfying c(complement F,(b,a))=1-c(F,(a,b)).
+Here NORI2 means binary colors of ordered underlying squares satisfying c(complement F,(b,a))=1-c(F,(a,b)).
 
 **Lemma.** Every binary coloring of the edges of a complete graph has a Hamilton vertex order whose consecutive edge colors change at most once.
 
@@ -67,17 +67,17 @@ These propositions rule out the direct lower-arity versions of this construction
 
 ## Boundary 3-tournaments are orientations of a line graph
 
-A boundary 3-tournament on V chooses exactly one of (a,b,c) and (c,b,a) for every triple of distinct vertices with specified middle vertex b. Call the chosen triples right.
+A boundary 3-tournament on V chooses precisely one of (a,b,c) and (c,b,a) for every triple of distinct vertices with specified middle vertex b. Call the chosen triples right.
 
 **Proposition.** Boundary 3-tournaments on V correspond bijectively to orientations of the line graph L(K_V).
 
-**Proof.** Vertices of L(K_V) are unordered pairs ab. Its adjacent vertices ab and bc share a unique vertex b. Orient ab -> bc exactly when (a,b,c) is right. Reversal of the triple reverses this one line-graph edge. Every adjacency corresponds to exactly one such reversal pair, proving the bijection. QED.
+**Proof.** Vertices of L(K_V) are unordered pairs ab. Its adjacent vertices ab and bc share a unique vertex b. Orient ab -> bc precisely when (a,b,c) is right. Reversal of the triple reverses this one line-graph edge. Every adjacency corresponds to precisely one such reversal pair, proving the bijection. QED.
 
-**Corollary (exact edge-order realizability).** A boundary 3-tournament arises from one strict ordering of the edges of K_V, with (a,b,c) right precisely when ab < bc, if and only if the corresponding orientation of L(K_V) is acyclic.
+**Corollary (precise edge-order realizability).** A boundary 3-tournament arises from one strict ordering of the edges of K_V, with (a,b,c) right precisely when ab < bc, if and only if the corresponding orientation of L(K_V) is acyclic.
 
 **Proof.** An edge ordering is a strictly increasing potential on every directed line-graph edge, which forbids directed cycles. Conversely a topological ordering of any finite acyclic orientation orders the vertices of the line graph, hence the original graph edges, and realizes every specified comparison. QED.
 
-For a noncomplete graph G the same statement holds for the partial triple system on actual two-edge paths. An increasing vertex-simple path in G is exactly a sequence of distinct original vertices whose successive original edges form a directed line-graph path. Arbitrary directed paths in the line graph need not have this property: they may repeatedly pass through the same original vertex. Thus the original path-incidence and vertex-distinctness constraints remain essential.
+For a noncomplete graph G the same statement holds for the partial triple system on realized two-edge paths. An increasing vertex-simple path in G is precisely a sequence of distinct original vertices whose successive original edges form a directed line-graph path. Arbitrary directed paths in the line graph need not have this property: they may repeatedly pass through the same original vertex. Thus the original path-incidence and vertex-distinctness constraints remain essential.
 
 Transitivity of the comparison tournament at each individual middle vertex is necessary but insufficient for global realizability. Already on three vertices the comparisons ab<bc, bc<ca, ca<ab give a cycle while each individual vertex has only two incident edges and hence a transitive local comparison.
 

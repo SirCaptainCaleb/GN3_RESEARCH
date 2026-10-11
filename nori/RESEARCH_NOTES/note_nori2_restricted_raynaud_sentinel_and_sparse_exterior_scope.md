@@ -6,7 +6,7 @@
 - Labels: theorem, approach, scope
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -22,21 +22,21 @@
 
 # Restricted NORI2 results: scope and disposition
 
-These complete positive special-family proofs are retained as reference material, not as an independently prioritized universal NORI2 publication line. They do not imply unrestricted NORI1 closure or resolve the ordinary boundary 3-tournament problem. The exact former published compositions follow verbatim.
+These complete positive special-family proofs are retained as reference material, not as an independently prioritized universal NORI2 publication line. They do not imply unrestricted NORI1 closure or resolve the ordinary boundary 3-tournament problem. The precise former published compositions follow verbatim.
 
 
 ---
 
 ## Transferred Subsection: Bounded NORI2 switches from finite exterior-coordinate support
 
-Exact old composition v1
+precise old composition v1
 Original manuscript `bounded_nori2_switches_from_finite_exterior_coordinate_support`
 
 # Bounded NORI2 switches from finite exterior-coordinate support
 
 ## Theorem
 
-Let \(V\) be the \(n\) coordinate directions of \(Q_n\), let \(S\subseteq V\) have \(t\) elements, and put \(D=V\setminus S\). Suppose a binary coloring \(c(F,(u,v))\) is defined on **physical ordered squares** and has the following exterior-support property:
+Let \(V\) be the \(n\) coordinate directions of \(Q_n\), let \(S\subseteq V\) have \(t\) elements, and put \(D=V\setminus S\). Suppose a binary coloring \(c(F,(u,v))\) is defined on **underlying ordered squares** and has the following exterior-support property:
 
 **(ES)** For every two ordered distinct directions \(u,v\in D\), the value \(c(F,(u,v))\) depends only on the ordered pair \((u,v)\) and on the \(t\) fixed bits \(z_S(F)\) of \(F\) in directions in \(S\). In particular it is independent of all other exterior fixed bits. There is no condition whatsoever on colors of squares meeting \(S\).
 
@@ -44,7 +44,7 @@ Let \(V\) be the \(n\) coordinate directions of \(Q_n\), let \(S\subseteq V\) ha
 \[
 \boxed{t+1}
 \]
-switches. This holds for every \(n\) and every such physical coloring, with **no antipodal-reversal hypothesis needed**. Consequently it holds for legal NORI2 colorings satisfying (ES).
+switches. This holds for every \(n\) and every such underlying coloring, with **no antipodal-reversal hypothesis needed**. Consequently it holds for legal NORI2 colorings satisfying (ES).
 
 In particular:
 - One distinguished exterior direction, allowing *arbitrary directed* pair rules and arbitrary colors of squares containing that direction, guarantees at most two changes.
@@ -71,7 +71,7 @@ Let \(S=(s_1,\dots,s_t)\) be any order of the special directions. Fix any initia
 \[
  \beta = \bigl(1-x_{s_1},\dots,1-x_{s_t}\bigr).
 \]
-By (ES), for each ordered pair \(u,v\in D\) the color of **every physical square** with ordered free directions \((u,v)\) and fixed \(S\)-bits \(\beta\) is a well-defined bit
+By (ES), for each ordered pair \(u,v\in D\) the color of **every underlying square** with ordered free directions \((u,v)\) and fixed \(S\)-bits \(\beta\) is a well-defined bit
 \[
  h_\beta(u,v)\in\{0,1\}. \tag{1}
 \]
@@ -89,7 +89,7 @@ Traverse the complete direction permutation
  p=(s_1,\dots,s_t,q_1,\dots,q_m)
  \tag{3}
 \]
-from the chosen cube root \(x\). For every consecutive ordered-square window entirely inside the ordinary \(q\)-block, its physical fixed \(S\)-bits are exactly \(\beta\); therefore its color equals the corresponding entry of \(H\) in (2), regardless of exterior bits on the other ordinary directions, by (ES). The suffix of the actual full square-color word thus contributes at most one internal switch.
+from the chosen cube root \(x\). For every consecutive ordered-square window entirely inside the ordinary \(q\)-block, its underlying fixed \(S\)-bits are precisely \(\beta\); therefore its color equals the corresponding entry of \(H\) in (2), regardless of exterior bits on the other ordinary directions, by (ES). The suffix of the realized full square-color word thus contributes at most one internal switch.
 
 When \(t\ge1\), precisely the first \(t\) consecutive ordered-square windows in (3) meet \(S\): their free direction pairs are
 \[
@@ -102,7 +102,7 @@ For \(t=1\), only \((s_1,q_1)\) occurs. The colors of these \(t\) windows can be
 \]
 For \(t=0\), the complete word is \(H\) and has at most one switch. If \(D\) has zero or one coordinate, the full word is too short to violate the claimed bound. This covers all cases.
 
-Crucially, the argument evaluates each window as an actual **physical square with its correct fixed exterior bits**; the prefix of special directions is a genuine cube geodesic, and the ordinary suffix is a genuine simple Hamilton order of distinct directions. There is no root or coordinate-interleaving assumption. \(\square\)
+Crucially, the argument evaluates each window as an realized **underlying square with its correct fixed exterior bits**; the prefix of special directions is a valid cube geodesic, and the ordinary suffix is a valid simple Hamilton order of distinct directions. There is no root or coordinate-interleaving assumption. \(\square\)
 
 ## Implications for the NORI hierarchy
 
@@ -120,16 +120,16 @@ The directed statement is also quoted as Theorem 2.1 in *The size Ramsey number 
 
 ---
 
-## Transferred Subsection: NORI2 sentinel barrier and exact one-switch examples
+## Transferred Subsection: NORI2 sentinel barrier and precise one-switch examples
 
-Exact old composition v2
+precise old composition v2
 Original manuscript `nori2_sentinel_barrier_and_exact_one_switch_examples`
 
 # NORI2 sentinel barrier: all directed pair rules and sharp one-switch examples
 
 ## Stronger theorem: no symmetry of the ordinary pair rule is needed
 
-**Theorem 0 (directed one-sentinel closure).** Fix \(n\ge3\) and one coordinate \(s\), and put \(D=V(Q_n)\setminus\{s\}\). Suppose an arbitrary binary coloring \(c\) of genuine ordered physical two-faces obeys only:
+**Theorem 0 (directed one-sentinel closure).** Fix \(n\ge3\) and one coordinate \(s\), and put \(D=V(Q_n)\setminus\{s\}\). Suppose an arbitrary binary coloring \(c\) of valid ordered underlying two-faces obeys only:
 
 1. On every ordered square \((u,v)\) with \(u,v\in D\) and with the exterior fixed \(s\)-bit equal to 0, its color is some fixed **directed** pair function \(h(u,v)\), independent of all other exterior bits. No relation is assumed between \(h(u,v)\) and \(h(v,u)\).
 2. On every ordered square with \(s\) **last**, \(c(F,(u,s))=0\), independent of all exterior bits.
@@ -143,16 +143,16 @@ More generally, replace the constant 0 in hypothesis 2 by any common bit \(b\); 
 1,\ldots,1,\;0,\ldots,0.
 \tag{D1}
 \]
-Indeed, if both colors occur, the cyclic arc-color word has exactly two monochromatic runs; delete its last color-0 arc before the start of the color-1 run. The remaining directed path starts with its 1-run and ends with its 0-run. If a color is absent, any cut gives a monochromatic path. For terminal color \(b=1\), reverse the choice of transition, obtaining \(0,\ldots,0,1,\ldots,1\).
+Indeed, if both colors occur, the cyclic arc-color word has precisely two monochromatic runs; delete its last color-0 arc before the start of the color-1 run. The remaining directed path starts with its 1-run and ends with its 0-run. If a color is absent, any cut gives a monochromatic path. For terminal color \(b=1\), reverse the choice of transition, obtaining \(0,\ldots,0,1,\ldots,1\).
 
 Choose a cube root \(x\) with \(x_s=0\) and traverse the full direction order
 \[
 q_1,\ldots,q_{n-1},s.
 \tag{D2}
 \]
-Every ordinary pair window is a **physical** square with exterior \(s\)-bit still 0, hence has its prescribed \(h\)-color from (D1). The final ordered square \((q_{n-1},s)\) has color 0 by hypothesis 2. The complete physical window word is therefore a block of 1s followed by a block of 0s, including the terminal 0; there is at most one switch. Distinctness of the directions and root consistency are immediate. \(\square\)
+Every ordinary pair window is a **underlying** square with exterior \(s\)-bit still 0, hence has its prescribed \(h\)-color from (D1). The final ordered square \((q_{n-1},s)\) has color 0 by hypothesis 2. The complete underlying window word is therefore a block of 1s followed by a block of 0s, including the terminal 0; there is at most one switch. Distinctness of the directions and root consistency are immediate. \(\square\)
 
-**Legal NORI2 corollary.** In particular, for an **arbitrary asymmetric** \(h\) on ordinary directed pairs, define a legal ordered-physical-square coloring by
+**Legal NORI2 corollary.** In particular, for an **arbitrary asymmetric** \(h\) on ordinary directed pairs, define a legal ordered-underlying-square coloring by
 \[
 c(F,(u,v))=
 \begin{cases}
@@ -163,12 +163,12 @@ h(u,v),& u,v\in D,\ z_s(F)=0,\\
 \end{cases}
 \tag{D3}
 \]
-Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares and reversal swaps the ordered pair, so these clauses complement. When \(s\) belongs to the face, reversal interchanges its first and last positions and flips 1/0. Thus (D3) satisfies the exact legal law
-\(c(\bar F,(v,u))=1-c(F,(u,v))\) on every physical square. Theorem 0 gives a full antipodal geodesic with at most one switch. This strictly strengthens the symmetric \(h\) theorem below.
+Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares and reversal swaps the ordered pair, so these clauses complement. When \(s\) belongs to the face, reversal interchanges its first and last positions and flips 1/0. Thus (D3) satisfies the precise legal law
+\(c(\bar F,(v,u))=1-c(F,(u,v))\) on every underlying square. Theorem 0 gives a full antipodal geodesic with at most one switch. This strictly strengthens the symmetric \(h\) theorem below.
 
 **Sharpness.** The existing clique-plus-star symmetric \(h\) example of Theorem B below is a member of (D3) and forces at least one switch for \(n\ge5\). Thus one switch is best possible even in the wider asymmetric family.
 
-**Finite independent checks.** Exhaustively enumerate all directed functions \(h:D^{(2)}\to\{0,1\}\) for \(|D|=4\) and \(|D|=5\), all full direction orders, and both choices of the root \(s\)-bit in (D3). In the first case, among \(2^{12}=4096\) functions, 4076 admit a monochromatic full geodesic and the remaining 20 have minimum exactly one switch. In the second, among \(2^{20}=1,048,576\) functions, 1,046,626 admit zero switches and 1950 require exactly one. None requires two; the general proof is independent of these checks.
+**Finite independent checks.** Exhaustively enumerate all directed functions \(h:D^{(2)}\to\{0,1\}\) for \(|D|=4\) and \(|D|=5\), all full direction orders, and both choices of the root \(s\)-bit in (D3). In the first case, among \(2^{12}=4096\) functions, 4076 admit a monochromatic full geodesic and the remaining 20 have minimum precisely one switch. In the second, among \(2^{20}=1,048,576\) functions, 1,046,626 admit zero switches and 1950 require precisely one. None requires two; the general proof is independent of these checks.
 
 **Scope.** Theorem 0 improves the previously known \(t+1=2\) bound for the one-exterior-direction NORI2 family when the terminal special-direction square is constant, even if the ordinary pair rule is wholly asymmetric. It does **not** prove the unrestricted NORI2 one-switch conjecture: general ordered squares meeting \(s\) may have arbitrary exterior-bit dependence, and arbitrary ordinary squares may depend on many ordinary exterior bits. Any one-sentinel counterexample within the finite-support framework must violate the uniform terminal-square hypothesis (or the flat ordinary-pair hypothesis) of Theorem 0.
 
@@ -182,7 +182,7 @@ Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares
 \[
 h(u,v)=h(v,u).
 \]
-For an ordered physical two-face \(F\) with ordered free directions \((u,v)\), define
+For an ordered underlying two-face \(F\) with ordered free directions \((u,v)\), define
 \[
 c(F,(u,v))=
 \begin{cases}
@@ -215,26 +215,26 @@ has at most one change. Traverse the \(n\) coordinates in the order \((s,q_1,\ld
 \[
 1\oplus z\oplus H_1,\;\ldots,\;1\oplus z\oplus H_{n-2}.
 \]
-Choose the starting vertex with \(z=H_1\) (all other root bits arbitrary). The initial two square colors are then both 1, and the remainder has exactly the color changes of \(H\). Hence the full square-color word has at most one change. \(\square\)
+Choose the starting vertex with \(z=H_1\) (all other root bits arbitrary). The initial two square colors are then both 1, and the remainder has precisely the color changes of \(H\). Hence the full square-color word has at most one change. \(\square\)
 
 ## Sharpness inside the one-sentinel family
 
-**Theorem B.** For every \(n\ge5\), there is a coloring of the form (1) for which every full antipodal geodesic has at least one change. Thus the universal bound of Theorem A is exact for this family.
+**Theorem B.** For every \(n\ge5\), there is a coloring of the form (1) for which every full antipodal geodesic has at least one change. Thus the universal bound of Theorem A is precise for this family.
 
 **Proof.** Partition the \(n-1\) ordinary directions into \(A\sqcup\{b\}\) with \(|A|=n-2\ge3\), and set \(h(u,v)=0\) for \(u,v\in A\), and \(h(u,b)=h(b,u)=1\) for \(u\in A\). The color-0 complete-graph edges form a clique on \(A\) and isolate \(b\). The color-1 graph is a star centered at \(b\), with at least three leaves. Neither graph contains a Hamiltonian path, so for **every** order \(q\) of the ordinary directions, its adjacent-pair color word \(H\) has at least one change.
 
-For a full cube geodesic with \(s\) in the first position, its later ordinary pair windows give \(H\) up to uniform complementation, and therefore at least one change. The same holds if \(s\) is last. If \(s\) is at an interior position, the two successive square windows containing \(s\) have free-direction orders \((u,s)\) and \((s,v)\) and colors \(0,1\), giving an unavoidable change. Thus every root and every full direction order has at least one switch. By Theorem A, some full path has exactly one. \(\square\)
+For a full cube geodesic with \(s\) in the first position, its later ordinary pair windows give \(H\) up to uniform complementation, and therefore at least one change. The same holds if \(s\) is last. If \(s\) is at an interior position, the two successive square windows containing \(s\) have free-direction orders \((u,s)\) and \((s,v)\) and colors \(0,1\), giving an unavoidable change. Thus every root and every full direction order has at least one switch. By Theorem A, some full path has precisely one. \(\square\)
 
 ## Further comparison: direction-only legal NORI2 colorings
 
-**Theorem C.** Suppose a legal physical ordered-two-face coloring is independent of all fixed exterior face bits, so \(c(F,(u,v))=g(u,v)\) depends only on the ordered free directions. Then there is a **monochromatic** full antipodal geodesic.
+**Theorem C.** Suppose a legal underlying ordered-two-face coloring is independent of all fixed exterior face bits, so \(c(F,(u,v))=g(u,v)\) depends only on the ordered free directions. Then there is a **monochromatic** full antipodal geodesic.
 
 **Proof.** Legality gives \(g(v,u)=1-g(u,v)\); hence \(u\to v\) whenever \(g(u,v)=1\) defines a tournament on the coordinate directions. Every tournament has a directed Hamiltonian path (Rédei's theorem). For completeness, the elementary insertion proof starts with one directed path; a new vertex can be inserted at its beginning if it dominates the first vertex, at its end if dominated by the last, or between two successive vertices where the preceding vertex dominates it and it dominates the following vertex. Inserting vertices successively yields a directed Hamiltonian path. Traversing its direction order gives color 1 in every consecutive square, at any root. \(\square\)
 
 ## Scope and implications for the proposed switch hierarchy
 
-Theorem B realizes the predicted NORI2 budget of one exactly; Theorem A shows that any attempted amplification based solely on a reversal-even pair rule and a single exterior sentinel bit necessarily collapses to that budget. In contrast, the higher odd-\(k\) construction uses a central triple with a local-minimum run-count obstruction. The obstruction has no analog for a symmetric *pair* rule because the two-colored complete graph admits a Hamiltonian order with at most one color change.
+Theorem B realizes the predicted NORI2 budget of one precisely; Theorem A shows that any attempted amplification based solely on a reversal-even pair rule and a single exterior sentinel bit necessarily collapses to that budget. In contrast, the higher odd-\(k\) construction uses a central triple with a local-minimum run-count obstruction. The obstruction has no analog for a symmetric *pair* rule because the two-colored complete graph admits a Hamiltonian order with at most one color change.
 
-These are exact statements for two explicitly defined subfamilies of legal colorings. They do **not** establish the unrestricted NORI2 conjecture: arbitrary physical two-face colors may depend on many exterior coordinates, and no direction-only complete-graph reduction then applies. Likewise they do not settle unrestricted NORI1; the NORI1 path-rotation mechanism concerns antipodally odd physical edges rather than ordered squares.
+These are precise statements for two explicitly defined subfamilies of legal colorings. They do **not** establish the unrestricted NORI2 conjecture: arbitrary underlying two-face colors may depend on many exterior coordinates, and no direction-only complete-graph reduction then applies. Likewise they do not settle unrestricted NORI1; the NORI1 path-rotation mechanism concerns antipodally odd underlying edges rather than ordered squares.
 
 Literature: L. Gerencsér and A. Gyárfás (1967), the red/blue vertex-disjoint path-partition theorem; L. Rédei (1934), the tournament Hamiltonian-path theorem.

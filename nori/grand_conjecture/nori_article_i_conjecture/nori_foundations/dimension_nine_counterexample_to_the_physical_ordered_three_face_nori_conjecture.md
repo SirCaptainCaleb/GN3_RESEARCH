@@ -1,10 +1,10 @@
 # Dimension-nine counterexample to the physical ordered-three-face NORI conjecture
 
-# A dimension-nine counterexample to the physical NORI conjecture
+# A dimension-nine counterexample to the  NORI conjecture
 
 ## Theorem
 
-There exists a binary coloring of **physical ordered three-faces** of \(Q_9\) obeying
+There exists a binary coloring of ** ordered three-faces** of \(Q_9\) obeying
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w))
 \]
@@ -22,7 +22,7 @@ h(a,b,c)=\mathbf1_{\{(a,b,c)=(0,0,0)\ \text{or}\ [b=1\ \text{and}\ (a=0\text{ or
 \qquad h(a,b,c)=h(c,b,a).
 \tag{1}
 \]
-For each physical ordered three-face \((F,(u,v,w))\), set
+For each  ordered three-face \((F,(u,v,w))\), set
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -35,7 +35,7 @@ z_s(F)\oplus h(\tau(u),\tau(v),\tau(w)),& u,v,w\in D,\\
 \]
 Here \(z_s(F)\) is the fixed \(s\)-coordinate when \(s\notin\{u,v,w\}\). In the last three cases \(s\) is one of the varying directions, so no \(s\)-bit is needed. These cases are mutually exclusive. The rule is independent of any traversal corner within \(F\).
 
-**Lemma 1 (legality).** The coloring in (2) satisfies the physical ordered-face antipodal-reversal law.
+**Lemma 1 (legality).** The coloring in (2) satisfies the  ordered-face antipodal-reversal law.
 
 *Proof.* For triples avoiding \(s\), complementation flips the fixed bit \(z_s(F)\), and reversal leaves \(h\) unchanged. For triples containing \(s\) at an endpoint, reversal interchanges the constant values \(1\) and \(0\). For triples containing \(s\) in the middle, reversal interchanges distinct outside directions \(u,w\), and \(\mathbf1_{\{u>w\}}\oplus\mathbf1_{\{w>u\}}=1\). These cases exhaust all faces. \(\square\)
 
@@ -93,25 +93,25 @@ assert histogram == [0, 0, 112, 524, 812, 484, 84]
 
 In particular no word with at most one switch occurs. The reported histogram independently specifies the entire 2,016-case distribution and provides an additional arithmetic check. \(\square\)
 
-## From the finite lemma to every physical geodesic
+## From the finite lemma to every  geodesic
 
 Fix any starting vertex \(x\in Q_9\) and any ordering \(p\) of the nine distinct coordinate directions. Delete \(s\) from \(p\) and replace the eight remaining directions by their types; this gives a word \(q\) with three zeros and five ones. The position of \(s\) in \(p\) is \(k\), and its initial bit is \(z=x_s\).
 
-For a window avoiding \(s\), its physical face has \(s\)-coordinate fixed at \(z\) before the \(s\)-move and \(1-z\) after that move. Therefore its color in (2) is precisely the color specified in Lemma 2. For a window containing \(s\), the first/last sentinel clauses of (2) likewise agree with Lemma 2. If \(s\) is middle, (2) selects one definite value \(\varepsilon\in\{0,1\}\) by comparing the two adjacent, distinct directions. Lemma 2 allows *either* value.
+For a window avoiding \(s\), its  face has \(s\)-coordinate fixed at \(z\) before the \(s\)-move and \(1-z\) after that move. Therefore its color in (2) is precisely the color specified in Lemma 2. For a window containing \(s\), the first/last sentinel clauses of (2) likewise agree with Lemma 2. If \(s\) is middle, (2) selects one definite value \(\varepsilon\in\{0,1\}\) by comparing the two adjacent, distinct directions. Lemma 2 allows *either* value.
 
-Consequently the actual seven-window color word of **every** rooted full antipodal geodesic appears among the finite words of Lemma 2 and has at least two changes. The starting vertex and full direction order were arbitrary, proving the theorem. \(\square\)
+Consequently the  seven-window color word of **every** rooted full antipodal geodesic appears among the finite words of Lemma 2 and has at least two changes. The starting vertex and full direction order were arbitrary, proving the theorem. \(\square\)
 
 ## Scope and relation to earlier constructions
 
-This is an **unrooted counterexample in the exact active physical ordered-three-face model**. Its face color does not depend on traversal corner, and its legality uses antipodal reversal rather than ordinary reversal. The earlier \(Q_{15}\) three-class construction also provides a correct, independent finite certificate but is superseded as a dimension bound. Unconditional positive results in dimensions five and six remain true. This proof makes no minimal-dimension claim, and leaves dimensions seven and eight for separate consideration.
+This is an **unrooted counterexample in the  active  ordered-three-face model**. Its face color does not depend on traversal corner, and its legality uses antipodal reversal rather than ordinary reversal. The earlier \(Q_{15}\) three-class construction also provides a correct, independent finite certificate but is superseded as a dimension bound. Unconditional positive results in dimensions five and six remain true. This proof makes no minimal-dimension claim, and leaves dimensions seven and eight for separate consideration.
 
-The structural obstruction is a reversal-even local direction-word rule shielded by one exterior sentinel bit; the sentinel-containing triples satisfy global oddness via order reversal, while the class-word switch constraints survive every possible sentinel insertion. This is a globally physical counterexample and removes the extraction premise of the proposed universal NORI theorem.
+The structural obstruction is a reversal-even local direction-word rule shielded by one exterior sentinel bit; the sentinel-containing triples satisfy global oddness via order reversal, while the class-word switch constraints survive every possible sentinel insertion. This is a globally  counterexample and removes the extraction premise of the proposed universal NORI theorem.
 
-## Independent exhaustive physical-cube verification
+## Independent exhaustive -cube verification
 
-Composition version 1 was independently audited in session session_nori_r4584_4. A separately written C++ implementation uses the literal triple truth table (1,0,1,1,0,0,1,0), labels A={0,1,2}, B={3,4,5,6,7}, s=8, and compares ordinary coordinate labels for the middle-sentinel clause. It checks all 32,256 ordered physical faces for antipodal-reversal oddness and all 258,048 choices of a face and traversal corner for corner independence. It then constructs the actual ten cube vertices of each of the 512 * 9! = 185,794,560 rooted full geodesics, derives each window's fixed-one mask by intersecting its four vertices, and evaluates its color directly. This enumeration uses no reduction to class words and no SAT solver.
+Composition version 1 was independently audited in session session_nori_r4584_4. A separately written C++ implementation uses the literal triple truth table (1,0,1,1,0,0,1,0), labels A={0,1,2}, B={3,4,5,6,7}, s=8, and compares ordinary coordinate labels for the middle-sentinel clause. It checks all 32,256 ordered  faces for antipodal-reversal oddness and all 258,048 choices of a face and traversal corner for corner independence. It then constructs the  ten cube vertices of each of the 512 * 9! = 185,794,560 rooted full geodesics, derives each window's fixed-one mask by intersecting its four vertices, and evaluates its color directly. This enumeration uses no reduction to class words and no SAT solver.
 
-The exact numbers of full rooted geodesics with 0 through 6 switches are respectively (0, 0, 10137600, 48476160, 75018240, 44421120, 7741440). The minima by sentinel position are (3,2,2,2,2,2,2,2,3). A minimum witness starts at the all-zero vertex with order (0,1,2,3,8,4,5,6,7) and color word 1000111. Independently reimplementing the reduced class-word check also reproduced the stated 2,016-case histogram. Thus the construction satisfies the exact physical-face hypotheses and excludes good full paths at every root.
+The  numbers of full rooted geodesics with 0 through 6 switches are respectively (0, 0, 10137600, 48476160, 75018240, 44421120, 7741440). The minima by sentinel position are (3,2,2,2,2,2,2,2,3). A minimum witness starts at the all-zero vertex with order (0,1,2,3,8,4,5,6,7) and color word 1000111. Independently reimplementing the reduced class-word check also reproduced the stated 2,016-case histogram. Thus the construction satisfies the  -face hypotheses and excludes good full paths at every root.
 
 Reproducible independent verifier (C++17; compile with optimization):
 
@@ -121,7 +121,7 @@ Reproducible independent verifier (C++17; compile with optimization):
 #include <cassert>
 #include <iostream>
 using namespace std;
-// Physical face is encoded by its free-coordinate mask and fixed-one mask.
+//  face is encoded by its free-coordinate mask and fixed-one mask.
 int color(int a,int b,int c,int fixed){
  if(a==8) return 1;
  if(c==8) return 0;
@@ -154,7 +154,7 @@ int main(){
  do{
   int slot=find(p.begin(),p.end(),8)-p.begin();
   for(int root=0;root<512;root++){
-   // Traverse actual cube vertices. Derive each face from its four vertices.
+   // Traverse  cube vertices. Derive each face from its four vertices.
    array<int,10> v;v[0]=root;
    for(int j=0;j<9;j++)v[j+1]=v[j]^(1<<p[j]);
    assert(v[9]==(root^511));
@@ -170,7 +170,7 @@ int main(){
    if(changes==2&&witnessRoot<0){witnessRoot=root;witness=p;wcolors=colors;}
   }
  }while(next_permutation(p.begin(),p.end()));
- cout<<"ordered physical faces "<<faces<<"; corner checks "<<corners<<"; full rooted paths "<<paths<<"\n";
+ cout<<"ordered  faces "<<faces<<"; corner checks "<<corners<<"; full rooted paths "<<paths<<"\n";
  cout<<"histogram ";for(auto x:hist)cout<<x<<' ';cout<<"\nminima ";for(auto x:mins)cout<<x<<' ';
  cout<<"\nwitness root "<<witnessRoot<<" order ";for(auto x:witness)cout<<x<<' ';cout<<" colors ";for(auto x:wcolors)cout<<x;cout<<'\n';
 }

@@ -6,13 +6,13 @@
 
 #### Main theorem
 
-**Theorem.** There exists a binary coloring of the physical ordered three-faces of \(Q_{15}\) satisfying
+**Theorem.** There exists a binary coloring of the  ordered three-faces of \(Q_{15}\) satisfying
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w))
 \]
 for every ordered three-face, for which **every** full antipodal geodesic has at least two changes among its thirteen consecutive ordered-three-face colors. Consequently, the unrooted NORI grand conjecture, as stated for all dimensions, is false.
 
-The construction is explicit except for an arbitrary fixed linear order on fourteen distinguished coordinates. Its only finite verification has 252,252 ternary words and also admits an exact 1,427-state dynamic-programming evaluation.
+The construction is explicit except for an arbitrary fixed linear order on fourteen distinguished coordinates. Its only finite verification has 252,252 ternary words and also admits an  1,427-state dynamic-programming evaluation.
 
 #### 1. Reversal-even three-letter obstruction
 
@@ -74,7 +74,7 @@ All legal completions are considered, because at each state the recurrence branc
 with zero words of 0, 1, 2, or 3 switches. As one explicit equality witness, the word
 \(00122001221112\) has triple-color word \(011100111000\), containing exactly four switches. \(\square\)
 
-#### 2. Explicit physical-face coloring
+#### 2. Explicit -face coloring
 
 Partition a set \(D\) of fourteen distinct coordinate directions as
 \[
@@ -83,7 +83,7 @@ D=D_0\sqcup D_1\sqcup D_2,\qquad
 \]
 and let \(\tau(d)=i\) for \(d\in D_i\). Adjoin a fifteenth direction, denoted \(s\), and fix any total ordering \(<\) of the fourteen directions in \(D\).
 
-For a physical three-face \(F\), let \(z_s(F)\) be its fixed \(s\)-coordinate whenever \(s\) is not one of its three varying directions. Define the bit \(c(F,(u,v,w))\) as follows.
+For a  three-face \(F\), let \(z_s(F)\) be its fixed \(s\)-coordinate whenever \(s\) is not one of its three varying directions. Define the bit \(c(F,(u,v,w))\) as follows.
 
 1. If \(u,v,w\in D\), put
 \[
@@ -100,7 +100,7 @@ c(F,(u,s,v))=\mathbf 1_{\{u>v\}} .
 \]
 Here \(u,v\in D\) are distinct and the inequality is in the fixed total ordering.
 
-These definitions depend only on the physical face and its ordered varying directions; in particular, they are independent of the traversing corner.
+These definitions depend only on the  face and its ordered varying directions; in particular, they are independent of the traversing corner.
 
 **Lemma (legality).** The coloring (3)--(4) is antipodal-reversal-odd.
 
@@ -120,7 +120,7 @@ and the second to
 \[
 H_k,\ldots,H_{12},
 \]
-where out-of-range intervals are empty. In the first segment, all the physical colors are \(H_i\oplus x_s\); in the second, they are \(H_i\oplus (1-x_s)\), because the \(s\)-coordinate flips once along the geodesic, when the direction \(s\) is traversed. Thus **every switch strictly inside either surviving segment is retained**.
+where out-of-range intervals are empty. In the first segment, all the  colors are \(H_i\oplus x_s\); in the second, they are \(H_i\oplus (1-x_s)\), because the \(s\)-coordinate flips once along the geodesic, when the direction \(s\) is traversed. Thus **every switch strictly inside either surviving segment is retained**.
 
 Passing from the original twelve-term word \(H\) to those two segments deletes at most the two terms \(H_{k-2},H_{k-1}\), and therefore removes at most three of its adjacent comparisons. Consequently, for \(4\le k\le12\) the two surviving segments together retain at least \(4-3=1\) switch. In this range all three \(s\)-containing windows occur; by (4), their color word is
 \[
@@ -128,21 +128,21 @@ Passing from the original twelve-term word \(H\) to those two segments deletes a
 \]
 which has an additional switch. The full geodesic therefore has at least two switches.
 
-If \(k\notin\{4,\ldots,12\}\), then deleting the terms at positions \(k-2,k-1\) removes at most two actual comparisons of \(H\): the two deleted entries touch an end or are partly out of range. Hence the surviving segments already retain at least \(4-2=2\) switches, independently of the colors of any \(s\)-containing windows.
+If \(k\notin\{4,\ldots,12\}\), then deleting the terms at positions \(k-2,k-1\) removes at most two  comparisons of \(H\): the two deleted entries touch an end or are partly out of range. Hence the surviving segments already retain at least \(4-2=2\) switches, independently of the colors of any \(s\)-containing windows.
 
 In every case, the full antipodal geodesic has at least two changes. The root and permutation were arbitrary, establishing the theorem. \(\square\)
 
 #### 4. Independent checks, scope, and consequence
 
-A separate direct enumeration evaluates all \(252252\) three-class direction words, fifteen insertion positions for \(s\), both possible initial \(s\)-coordinate bits, and **both** possible middle-\(s\) window colors. Across \(252252\cdot15\cdot2\cdot2=15135120\) resulting color words there are zero with zero or one switch (indeed, the minimum is three in this finite enumeration). This second check allows an adversarial choice of the middle-\(s\) bit and so is stronger than the face rule (4) on the tested class words. A further independent direct physical-face implementation checked random antipodal ordered-face pairings and randomly rooted full geodesics. All agree with the mathematical proof above.
+A separate direct enumeration evaluates all \(252252\) three-class direction words, fifteen insertion positions for \(s\), both possible initial \(s\)-coordinate bits, and **both** possible middle-\(s\) window colors. Across \(252252\cdot15\cdot2\cdot2=15135120\) resulting color words there are zero with zero or one switch (indeed, the minimum is three in this finite enumeration). This second check allows an adversarial choice of the middle-\(s\) bit and so is stronger than the face rule (4) on the tested class words. A further independent direct -face implementation checked random antipodal ordered-face pairings and randomly rooted full geodesics. All agree with the mathematical proof above.
 
-The construction refutes the **unrooted, unrestricted, antipodal-reversal-odd, physical ordered-three-face** grand conjecture already in dimension fifteen. It preserves the established Q5 and Q6 positive theorems; it does not claim dimension fifteen is minimal. The ternary finite lemma is the sole computer-assisted step, with complete recursion and direct enumeration cross-check given above.
+The construction refutes the **unrooted, unrestricted, antipodal-reversal-odd,  ordered-three-face** grand conjecture already in dimension fifteen. It preserves the established Q5 and Q6 positive theorems; it does not claim dimension fifteen is minimal. The ternary finite lemma is the sole computer-assisted step, with complete recursion and direct enumeration cross-check given above.
 
-The main conceptual point is that a reversal-even local triple word obstructed by four switches can be inserted across one distinguished exterior coordinate: at most three of its switches are lost, while the distinguished triple windows contribute the final forcing switch. This yields an actual physical-face counterexample rather than a prescribed-root obstruction.
+The main conceptual point is that a reversal-even local triple word obstructed by four switches can be inserted across one distinguished exterior coordinate: at most three of its switches are lost, while the distinguished triple windows contribute the final forcing switch. This yields an  -face counterexample rather than a prescribed-root obstruction.
 
-#### Sharpening: the exact minimum is three switches in Q15
+#### Sharpening: the  minimum is three switches in Q15
 
-**Theorem (sharp switch certificate).** For the physical coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal two-switch NORI3 bound in ambient dimension fifteen. The original two-switch lower bound above remains valid but is superseded by this strengthening.
+**Theorem (sharp switch certificate).** For the  coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal two-switch NORI3 bound in ambient dimension fifteen. The original two-switch lower bound above remains valid but is superseded by this strengthening.
 
 **Proof and smaller complete certificate.** Write \(\sigma\) for the change count. The proved four-switch ordinary-word lemma gives \(\sigma(H)\ge4\), and the sentinel insertion inequality gives \(\sigma(C)\ge\sigma(H)-2\) for every sentinel position, initial sentinel bit \(z\), and arbitrary middle-sentinel bit \(\varepsilon\). Consequently, **only** ordinary class words with \(\sigma(H)=4\) could possibly produce \(\sigma(C)\le2\). There are exactly 314 such words among the \(14!/(4!5!5!)=252252\) ordinary class words, by the independently recorded histogram in Section 1.
 
@@ -191,24 +191,24 @@ assert (critical,checked)==(314,18840)
 assert hist=={3:1592,4:2632,5:13024,6:1136,7:456}
 ~~~
 
-The bit \(\varepsilon\) is allowed adversarially, so this covers every actual choice induced by the strict order of the two ordinary directions adjacent to \(s\). In fact, equality is realized: an abstract direction-class order
+The bit \(\varepsilon\) is allowed adversarially, so this covers every  choice induced by the strict order of the two ordinary directions adjacent to \(s\). In fact, equality is realized: an abstract direction-class order
 \[
 (0,s,0,1,2,2,0,0,1,2,2,1,1,1,2)
 \]
-with starting sentinel bit \(z=1\) and middle-sentinel bit \(\varepsilon=1\) has physical color word
+with starting sentinel bit \(z=1\) and middle-sentinel bit \(\varepsilon=1\) has  color word
 \[
 1111100111000
 \]
-and exactly three changes. Choose the first of the two adjacent class-0 directions greater than the second in the prescribed strict direction order to realize \(\varepsilon=1\); all directions are distinct and all classes retain their prescribed multiplicities. Other initial vertex bits are arbitrary. Therefore the actual physical minimum is **exactly three**. \(\square\)
+and exactly three changes. Choose the first of the two adjacent class-0 directions greater than the second in the prescribed strict direction order to realize \(\varepsilon=1\); all directions are distinct and all classes retain their prescribed multiplicities. Other initial vertex bits are arbitrary. Therefore the   minimum is **exactly three**. \(\square\)
 
 **Relation to amplification.** The later multilevel construction forces four changes already on \(Q_{37}\) and unboundedly many as \(n\) grows. The present sharp \(Q_{15}\) result supplies a substantially smaller explicit violation of the conjectural NORI3 two-switch budget. No dimension-minimality claim is made.
 
 
-### A dimension-nine counterexample to the physical NORI conjecture
+### A dimension-nine counterexample to the  NORI conjecture
 
 #### Theorem
 
-There exists a binary coloring of **physical ordered three-faces** of \(Q_9\) obeying
+There exists a binary coloring of ** ordered three-faces** of \(Q_9\) obeying
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w))
 \]
@@ -226,7 +226,7 @@ h(a,b,c)=\mathbf1_{\{(a,b,c)=(0,0,0)\ \text{or}\ [b=1\ \text{and}\ (a=0\text{ or
 \qquad h(a,b,c)=h(c,b,a).
 \tag{1}
 \]
-For each physical ordered three-face \((F,(u,v,w))\), set
+For each  ordered three-face \((F,(u,v,w))\), set
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -239,7 +239,7 @@ z_s(F)\oplus h(\tau(u),\tau(v),\tau(w)),& u,v,w\in D,\\
 \]
 Here \(z_s(F)\) is the fixed \(s\)-coordinate when \(s\notin\{u,v,w\}\). In the last three cases \(s\) is one of the varying directions, so no \(s\)-bit is needed. These cases are mutually exclusive. The rule is independent of any traversal corner within \(F\).
 
-**Lemma 1 (legality).** The coloring in (2) satisfies the physical ordered-face antipodal-reversal law.
+**Lemma 1 (legality).** The coloring in (2) satisfies the  ordered-face antipodal-reversal law.
 
 *Proof.* For triples avoiding \(s\), complementation flips the fixed bit \(z_s(F)\), and reversal leaves \(h\) unchanged. For triples containing \(s\) at an endpoint, reversal interchanges the constant values \(1\) and \(0\). For triples containing \(s\) in the middle, reversal interchanges distinct outside directions \(u,w\), and \(\mathbf1_{\{u>w\}}\oplus\mathbf1_{\{w>u\}}=1\). These cases exhaust all faces. \(\square\)
 
@@ -297,25 +297,25 @@ assert histogram == [0, 0, 112, 524, 812, 484, 84]
 
 In particular no word with at most one switch occurs. The reported histogram independently specifies the entire 2,016-case distribution and provides an additional arithmetic check. \(\square\)
 
-#### From the finite lemma to every physical geodesic
+#### From the finite lemma to every  geodesic
 
 Fix any starting vertex \(x\in Q_9\) and any ordering \(p\) of the nine distinct coordinate directions. Delete \(s\) from \(p\) and replace the eight remaining directions by their types; this gives a word \(q\) with three zeros and five ones. The position of \(s\) in \(p\) is \(k\), and its initial bit is \(z=x_s\).
 
-For a window avoiding \(s\), its physical face has \(s\)-coordinate fixed at \(z\) before the \(s\)-move and \(1-z\) after that move. Therefore its color in (2) is precisely the color specified in Lemma 2. For a window containing \(s\), the first/last sentinel clauses of (2) likewise agree with Lemma 2. If \(s\) is middle, (2) selects one definite value \(\varepsilon\in\{0,1\}\) by comparing the two adjacent, distinct directions. Lemma 2 allows *either* value.
+For a window avoiding \(s\), its  face has \(s\)-coordinate fixed at \(z\) before the \(s\)-move and \(1-z\) after that move. Therefore its color in (2) is precisely the color specified in Lemma 2. For a window containing \(s\), the first/last sentinel clauses of (2) likewise agree with Lemma 2. If \(s\) is middle, (2) selects one definite value \(\varepsilon\in\{0,1\}\) by comparing the two adjacent, distinct directions. Lemma 2 allows *either* value.
 
-Consequently the actual seven-window color word of **every** rooted full antipodal geodesic appears among the finite words of Lemma 2 and has at least two changes. The starting vertex and full direction order were arbitrary, proving the theorem. \(\square\)
+Consequently the  seven-window color word of **every** rooted full antipodal geodesic appears among the finite words of Lemma 2 and has at least two changes. The starting vertex and full direction order were arbitrary, proving the theorem. \(\square\)
 
 #### Scope and relation to earlier constructions
 
-This is an **unrooted counterexample in the exact active physical ordered-three-face model**. Its face color does not depend on traversal corner, and its legality uses antipodal reversal rather than ordinary reversal. The earlier \(Q_{15}\) three-class construction also provides a correct, independent finite certificate but is superseded as a dimension bound. Unconditional positive results in dimensions five and six remain true. This proof makes no minimal-dimension claim, and leaves dimensions seven and eight for separate consideration.
+This is an **unrooted counterexample in the  active  ordered-three-face model**. Its face color does not depend on traversal corner, and its legality uses antipodal reversal rather than ordinary reversal. The earlier \(Q_{15}\) three-class construction also provides a correct, independent finite certificate but is superseded as a dimension bound. Unconditional positive results in dimensions five and six remain true. This proof makes no minimal-dimension claim, and leaves dimensions seven and eight for separate consideration.
 
-The structural obstruction is a reversal-even local direction-word rule shielded by one exterior sentinel bit; the sentinel-containing triples satisfy global oddness via order reversal, while the class-word switch constraints survive every possible sentinel insertion. This is a globally physical counterexample and removes the extraction premise of the proposed universal NORI theorem.
+The structural obstruction is a reversal-even local direction-word rule shielded by one exterior sentinel bit; the sentinel-containing triples satisfy global oddness via order reversal, while the class-word switch constraints survive every possible sentinel insertion. This is a globally  counterexample and removes the extraction premise of the proposed universal NORI theorem.
 
-#### Independent exhaustive physical-cube verification
+#### Independent exhaustive -cube verification
 
-Composition version 1 was independently audited in session session_nori_r4584_4. A separately written C++ implementation uses the literal triple truth table (1,0,1,1,0,0,1,0), labels A={0,1,2}, B={3,4,5,6,7}, s=8, and compares ordinary coordinate labels for the middle-sentinel clause. It checks all 32,256 ordered physical faces for antipodal-reversal oddness and all 258,048 choices of a face and traversal corner for corner independence. It then constructs the actual ten cube vertices of each of the 512 * 9! = 185,794,560 rooted full geodesics, derives each window's fixed-one mask by intersecting its four vertices, and evaluates its color directly. This enumeration uses no reduction to class words and no SAT solver.
+Composition version 1 was independently audited in session session_nori_r4584_4. A separately written C++ implementation uses the literal triple truth table (1,0,1,1,0,0,1,0), labels A={0,1,2}, B={3,4,5,6,7}, s=8, and compares ordinary coordinate labels for the middle-sentinel clause. It checks all 32,256 ordered  faces for antipodal-reversal oddness and all 258,048 choices of a face and traversal corner for corner independence. It then constructs the  ten cube vertices of each of the 512 * 9! = 185,794,560 rooted full geodesics, derives each window's fixed-one mask by intersecting its four vertices, and evaluates its color directly. This enumeration uses no reduction to class words and no SAT solver.
 
-The exact numbers of full rooted geodesics with 0 through 6 switches are respectively (0, 0, 10137600, 48476160, 75018240, 44421120, 7741440). The minima by sentinel position are (3,2,2,2,2,2,2,2,3). A minimum witness starts at the all-zero vertex with order (0,1,2,3,8,4,5,6,7) and color word 1000111. Independently reimplementing the reduced class-word check also reproduced the stated 2,016-case histogram. Thus the construction satisfies the exact physical-face hypotheses and excludes good full paths at every root.
+The  numbers of full rooted geodesics with 0 through 6 switches are respectively (0, 0, 10137600, 48476160, 75018240, 44421120, 7741440). The minima by sentinel position are (3,2,2,2,2,2,2,2,3). A minimum witness starts at the all-zero vertex with order (0,1,2,3,8,4,5,6,7) and color word 1000111. Independently reimplementing the reduced class-word check also reproduced the stated 2,016-case histogram. Thus the construction satisfies the  -face hypotheses and excludes good full paths at every root.
 
 Reproducible independent verifier (C++17; compile with optimization):
 
@@ -325,7 +325,7 @@ Reproducible independent verifier (C++17; compile with optimization):
 #include <cassert>
 #include <iostream>
 using namespace std;
-// Physical face is encoded by its free-coordinate mask and fixed-one mask.
+//  face is encoded by its free-coordinate mask and fixed-one mask.
 int color(int a,int b,int c,int fixed){
  if(a==8) return 1;
  if(c==8) return 0;
@@ -358,7 +358,7 @@ int main(){
  do{
   int slot=find(p.begin(),p.end(),8)-p.begin();
   for(int root=0;root<512;root++){
-   // Traverse actual cube vertices. Derive each face from its four vertices.
+   // Traverse  cube vertices. Derive each face from its four vertices.
    array<int,10> v;v[0]=root;
    for(int j=0;j<9;j++)v[j+1]=v[j]^(1<<p[j]);
    assert(v[9]==(root^511));
@@ -374,7 +374,7 @@ int main(){
    if(changes==2&&witnessRoot<0){witnessRoot=root;witness=p;wcolors=colors;}
   }
  }while(next_permutation(p.begin(),p.end()));
- cout<<"ordered physical faces "<<faces<<"; corner checks "<<corners<<"; full rooted paths "<<paths<<"\n";
+ cout<<"ordered  faces "<<faces<<"; corner checks "<<corners<<"; full rooted paths "<<paths<<"\n";
  cout<<"histogram ";for(auto x:hist)cout<<x<<' ';cout<<"\nminima ";for(auto x:mins)cout<<x<<' ';
  cout<<"\nwitness root "<<witnessRoot<<" order ";for(auto x:witness)cout<<x<<' ';cout<<" colors ";for(auto x:wcolors)cout<<x;cout<<'\n';
 }
@@ -386,9 +386,9 @@ int main(){
 
 #### Theorem
 
-**Theorem.** For every integer \(n\ge9\), there is a legal antipodal-reversal-odd coloring of the physical ordered three-faces of \(Q_n\) for which **every** full antipodal geodesic has at least two ordered-three-face color changes. Consequently the unrooted NORI grand conjecture fails in *each* dimension \(n\ge9\).
+**Theorem.** For every integer \(n\ge9\), there is a legal antipodal-reversal-odd coloring of the  ordered three-faces of \(Q_n\) for which **every** full antipodal geodesic has at least two ordered-three-face color changes. Consequently the unrooted NORI grand conjecture fails in *each* dimension \(n\ge9\).
 
-This strengthens the explicit \(Q_9\) counterexample in *A dimension-nine counterexample to the physical NORI conjecture* by a dimension-free contraction principle. The finite \(Q_9\) obstruction requires only 2,016 comparisons; the new hereditary lemma is certified by 22,272 local comparisons of length at most seven, independently of \(n\).
+This strengthens the explicit \(Q_9\) counterexample in *A dimension-nine counterexample to the  NORI conjecture* by a dimension-free contraction principle. The finite \(Q_9\) obstruction requires only 2,016 comparisons; the new hereditary lemma is certified by 22,272 local comparisons of length at most seven, independently of \(n\).
 
 #### 1. The abstract sentinel word
 
@@ -463,7 +463,7 @@ assert checks == 22272
 
 This exhausts the local cases and proves the deletion lemma for arbitrary word length. \(\square\)
 
-#### 2. All-dimensional legal physical-face coloring
+#### 2. All-dimensional legal -face coloring
 
 Let \(n\ge9\), partition the coordinate directions into
 \[
@@ -471,7 +471,7 @@ V=A\sqcup B\sqcup\{s\},\qquad |A|=3,\quad |B|=n-4\ge5,
 \]
 and assign types \(0\) to \(A\) and \(1\) to \(B\). Fix any strict total order on \(A\sqcup B\).
 
-For a physical ordered three-face \((F,(u,v,w))\), define
+For a  ordered three-face \((F,(u,v,w))\), define
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -482,28 +482,28 @@ z_s(F)\oplus h(\tau(u),\tau(v),\tau(w)),&s\notin\{u,v,w\},\\
 \end{cases}
 \tag{2}
 \]
-The first case uses the fixed \(s\)-bit of the face. Each case depends solely on the physical face and free-coordinate order, never on the traversal corner.
+The first case uses the fixed \(s\)-bit of the face. Each case depends solely on the  face and free-coordinate order, never on the traversal corner.
 
 **Legality.** For triples avoiding \(s\), antipodal complementation flips \(z_s(F)\), while reversal preserves \(h\). For triples with \(s\) first or last, reversal interchanges the complementary constants \(1,0\). For triples with \(s\) middle, reversal interchanges two distinct ordinary directions, complementing the strict-order indicator. Thus \(c(\bar F,(w,v,u))=1-c(F,(u,v,w))\) for every face.
 
-**No good geodesic.** Fix any root and any full direction order. Replace the ordinary directions by their types, leaving the sentinel in place. The actual physical window-color word is precisely \(C_{z,\varepsilon}(w)\) for \(z\) equal to the root's \(s\)-bit and \(\varepsilon\) equal to the order comparison between the two directions adjacent to \(s\) (when this middle window exists). Delete \(n-9\) occurrences of type \(1\), leaving a nine-letter abstract word with three zeros, five ones, and one sentinel, while retaining the same formal \(z,\varepsilon\). Repeated application of (1) gives
+**No good geodesic.** Fix any root and any full direction order. Replace the ordinary directions by their types, leaving the sentinel in place. The   window-color word is precisely \(C_{z,\varepsilon}(w)\) for \(z\) equal to the root's \(s\)-bit and \(\varepsilon\) equal to the order comparison between the two directions adjacent to \(s\) (when this middle window exists). Delete \(n-9\) occurrences of type \(1\), leaving a nine-letter abstract word with three zeros, five ones, and one sentinel, while retaining the same formal \(z,\varepsilon\). Repeated application of (1) gives
 \[
 V_{z,\varepsilon}(w)\ \ge\
 V_{z,\varepsilon}(w_{\mathrm{reduced}}).
 \]
-The exact \(Q_9\) finite certificate (*A dimension-nine counterexample to the physical NORI conjecture*) checks all \(\binom83\cdot9\cdot2\cdot2=2016\) possible reduced words and parameters and proves that the right side is at least two. Hence every rooted full geodesic for (2) has at least two changes. \(\square\)
+The  \(Q_9\) finite certificate (*A dimension-nine counterexample to the  NORI conjecture*) checks all \(\binom83\cdot9\cdot2\cdot2=2016\) possible reduced words and parameters and proves that the right side is at least two. Hence every rooted full geodesic for (2) has at least two changes. \(\square\)
 
 #### 3. Significance
 
 The hereditary lemma identifies the missing dimension-lifting mechanism for the explicit sentinel construction. Rather than embedding a finite forcing *proof* with inconsistent exterior-bit holonomy, it enlarges a globally legal counterexample while retaining a monotone obstruction under deletion of ordinary direction occurrences. The chosen total order on distinct directions realizes one value of \(\varepsilon\); allowing both values in the reduced certificate makes the proof independent of the changing identities adjacent to the sentinel.
 
-The original \(Q_9\) physical-face proof remains the base case. The \(Q_{15}\) three-class construction and its independent verification remain valid historical certificates but are dimensionally superseded. This argument establishes failure for every \(n\ge9\); dimensions \(7\) and \(8\) are not decided by it.
+The original \(Q_9\) -face proof remains the base case. The \(Q_{15}\) three-class construction and its independent verification remain valid historical certificates but are dimensionally superseded. This argument establishes failure for every \(n\ge9\); dimensions \(7\) and \(8\) are not decided by it.
 
 ### Unbounded obligatory switches in legal ordered-three-face colorings
 
 #### Main theorem
 
-**Theorem.** For every integer \(r\ge 3\) and every \(n\ge r(2r+1)+1\), there is a binary coloring of the *physical ordered three-faces* of \(Q_n\) satisfying
+**Theorem.** For every integer \(r\ge 3\) and every \(n\ge r(2r+1)+1\), there is a binary coloring of the * ordered three-faces* of \(Q_n\) satisfying
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w))
 \]
@@ -558,7 +558,7 @@ Adjoin one new letter \(s\) to \(q\), inserted at any of its \(m+1\) possible po
 
 **Proof.** The ordinary triples surviving the insertion form a prefix and a suffix of the original \(H\); at most two *consecutive* terms of \(H\) are omitted. Within either surviving segment, XOR by a constant preserves all adjacent changes. Removing two consecutive terms deletes at most three adjacent comparisons. If all three \(s\)-containing triples occur, they appear in the order \((u,v,s),(u,s,v),(s,u,v)\) and have color word \((0,\varepsilon,1)\), which contributes at least one further change. Therefore the total is at least \(T-3+1=T-2\). If fewer than three \(s\)-containing triples occur, \(s\) occupies one of the first two or last two positions. In that case at most one ordinary \(H\)-term is omitted, and it is an endpoint; at most one original comparison is lost. The surviving changes alone are therefore at least \(T-1\). \(\square\)
 
-#### 3. A legal physical coloring with unbounded defect
+#### 3. A legal  coloring with unbounded defect
 
 Choose a partition
 \[
@@ -568,7 +568,7 @@ V=D_0\sqcup\cdots\sqcup D_{r-1}\sqcup\{s\},
 \]
 of the \(n\) coordinate directions. Write \(\tau(u)=i\) for \(u\in D_i\), and fix any strict total ordering \(<\) of the ordinary directions \(V\setminus\{s\}\).
 
-For each **physical** three-face \(F\) with ordered free directions \((u,v,w)\), set
+For each **** three-face \(F\) with ordered free directions \((u,v,w)\), set
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -579,11 +579,11 @@ z_s(F)\oplus h(\tau(u),\tau(v),\tau(w)),&s\notin\{u,v,w\},\\
 \end{cases}
 \tag{5}
 \]
-Here \(z_s(F)\) is the fixed \(s\)-coordinate of \(F\) in the first case. The four cases are mutually exclusive, depend only on the physical face and its ordered free directions, and are independent of the traversing corner.
+Here \(z_s(F)\) is the fixed \(s\)-coordinate of \(F\) in the first case. The four cases are mutually exclusive, depend only on the  face and its ordered free directions, and are independent of the traversing corner.
 
 The coloring is antipodal-reversal-odd. On a triple avoiding \(s\), complementation flips the fixed \(s\)-bit and reversal leaves \(h\) invariant. For a triple with \(s\) at an endpoint, reversal interchanges the complementary constants 1 and 0. For \(s\) in the middle, reversal exchanges two distinct outside directions and therefore flips the strict-order indicator.
 
-Now fix **any** root and **any** full direction order. Delete the one occurrence of \(s\) and replace every other direction by its class \(\tau\). By (4), the resulting word satisfies Lemma 1, so its ordinary triple-color word has at least \(T=2r-2\) changes. The actual physical three-face colors along the original full path are precisely those prescribed in Lemma 2: the fixed \(s\)-bit before the \(s\)-move is its starting bit \(z\), and after the move it is \(1-z\); the middle-\(s\) bit is one definite \(\varepsilon\in\{0,1\}\) selected by the two neighboring directions. Lemma 2 therefore gives at least
+Now fix **any** root and **any** full direction order. Delete the one occurrence of \(s\) and replace every other direction by its class \(\tau\). By (4), the resulting word satisfies Lemma 1, so its ordinary triple-color word has at least \(T=2r-2\) changes. The   three-face colors along the original full path are precisely those prescribed in Lemma 2: the fixed \(s\)-bit before the \(s\)-move is its starting bit \(z\), and after the move it is \(1-z\); the middle-\(s\) bit is one definite \(\varepsilon\in\{0,1\}\) selected by the two neighboring directions. Lemma 2 therefore gives at least
 \[
 T-2\ge2r-4
 \]
@@ -593,7 +593,7 @@ changes along **every** full antipodal geodesic. This proves the theorem. \(\squ
 
 The previously published binary-class sentinel coloring disproves one-change NORI for every \(n\ge9\), but gives a dimension-independent lower bound of two changes. The multilevel construction (5) proves a qualitatively different statement: **every proposed universal bounded-switch replacement is also false**, with a quantitative \(\Omega(\sqrt n)\) lower bound. The positive \(Q_5\) and \(Q_6\) results and the undecided \(Q_7,Q_8\) cases are unaffected. The ordinary-word lemma is sharp; no sharpness for the final geodesic bound is asserted.
 
-#### Sharp improvement: a one-switch insertion loss and exact extremal value
+#### Sharp improvement: a one-switch insertion loss and  extremal value
 
 **Lemma (sharp ternary sentinel insertion).** In the insertion construction of Lemma 2, for *every* ordinary class word \(q\), every sentinel position and both independent bits \(z,\varepsilon\), the full color word \(C\) satisfies
 \[
@@ -601,13 +601,13 @@ The previously published binary-class sentinel coloring disproves one-change NOR
 \]
 In particular, the earlier two-switch insertion-loss estimate is valid but suboptimal.
 
-**Proof.** If the insertion has two nonempty surviving ordinary-window segments, it deletes two adjacent letters of \(H\), eliminating at most three adjacent comparisons. Between the surviving physical segments there are three sentinel-containing windows, whose colors are \(0,\varepsilon,1\); their internal switch count is exactly one. If fewer than three of the removed comparisons change color, the claimed loss of at most one follows immediately.
+**Proof.** If the insertion has two nonempty surviving ordinary-window segments, it deletes two adjacent letters of \(H\), eliminating at most three adjacent comparisons. Between the surviving  segments there are three sentinel-containing windows, whose colors are \(0,\varepsilon,1\); their internal switch count is exactly one. If fewer than three of the removed comparisons change color, the claimed loss of at most one follows immediately.
 
-Suppose all three removed comparisons do change color. Let \(a\) and \(b\) be the surviving \(H\)-bits immediately before and after the deleted pair. Three successive differences give \(b=1-a\). The actual physical color immediately before the sentinel windows is \(a\oplus z\), while the physical color immediately afterward is \(b\oplus(1-z)=a\oplus z\). These two boundary colors are *equal*. The sentinel windows start at color zero and end at color one. Therefore at least one of their **two external boundary comparisons** must also change, irrespective of \(\varepsilon\). At least two new comparisons change (one inside and one outside the sentinel run), compensating for three removed changes. Thus (6) holds.
+Suppose all three removed comparisons do change color. Let \(a\) and \(b\) be the surviving \(H\)-bits immediately before and after the deleted pair. Three successive differences give \(b=1-a\). The   color immediately before the sentinel windows is \(a\oplus z\), while the  color immediately afterward is \(b\oplus(1-z)=a\oplus z\). These two boundary colors are *equal*. The sentinel windows start at color zero and end at color one. Therefore at least one of their **two external boundary comparisons** must also change, irrespective of \(\varepsilon\). At least two new comparisons change (one inside and one outside the sentinel run), compensating for three removed changes. Thus (6) holds.
 
 If one ordinary segment is empty, the sentinel occupies one of the first three or final three direction slots. In the first or last two slots, at most one original comparison is removed. In the third or third-last slot, at most two original comparisons are removed, while all three sentinel windows occur and contribute one switch. In each case the net loss is at most one. These possibilities exhaust all positions. \(\square\)
 
-**Theorem (exact compulsory defect of the multilevel family).** For every \(r\ge3\) and every partition of the ordinary directions into \(r\) nonempty ordered classes with \(|D_i|\ge2r+1\), the legal physical coloring (5) has
+**Theorem ( compulsory defect of the multilevel family).** For every \(r\ge3\) and every partition of the ordinary directions into \(r\) nonempty ordered classes with \(|D_i|\ge2r+1\), the legal  coloring (5) has
 \[
 \boxed{\min_{x,p}\sigma(C(x,p))=2r-3.}\tag{7}
 \]
@@ -616,7 +616,7 @@ Consequently, for every \(n\ge 2r^2+r+1\) a legal NORI3 coloring exists forcing 
 2\left\lfloor\frac{\sqrt{8n-7}-1}{4}\right\rfloor-3
 =\sqrt{2n}-O(1).
 \]
-In particular, this family has exact minimum three in \(Q_{22}\), five in \(Q_{37}\), and seven in \(Q_{56}\).
+In particular, this family has  minimum three in \(Q_{22}\), five in \(Q_{37}\), and seven in \(Q_{56}\).
 
 **Proof.** Lemma 1 proves \(\sigma(H(q))\ge2r-2\) for every coordinate-class permutation. The sharp insertion lemma now gives \(\sigma(C)\ge2r-3\), uniformly in starting root and full coordinate order.
 
@@ -624,14 +624,14 @@ For equality, choose the full coordinate direction order
 \[
 (D_0\text{ in any order}),\ s,\ (D_1\text{ in any order}),\ldots,(D_{r-1}\text{ in any order}),
 \]
-and take initial sentinel bit \(z=0\). The ordinary \(h\)-word is zero inside each constant class block and has exactly one isolated 1 at each ascending class boundary. The insertion of \(s\) removes the first such boundary: the surviving windows before \(s\) are all zero, the three \(s\)-containing windows are \(0,\varepsilon,1\), and the surviving ordinary windows after \(s\) start at one and have two changes at each of the remaining \(r-2\) class boundaries. The total is \(1+2(r-2)=2r-3\), for either value of \(\varepsilon\). This is an actual full antipodal geodesic from any root with \(x_s=0\). Thus equality holds for the physical coloring. \(\square\)
+and take initial sentinel bit \(z=0\). The ordinary \(h\)-word is zero inside each constant class block and has exactly one isolated 1 at each ascending class boundary. The insertion of \(s\) removes the first such boundary: the surviving windows before \(s\) are all zero, the three \(s\)-containing windows are \(0,\varepsilon,1\), and the surviving ordinary windows after \(s\) start at one and have two changes at each of the remaining \(r-2\) class boundaries. The total is \(1+2(r-2)=2r-3\), for either value of \(\varepsilon\). This is an  full antipodal geodesic from any root with \(x_s=0\). Thus equality holds for the  coloring. \(\square\)
 
-**Scope.** The improvement exploits a physical sign flip *across* the sentinel together with the forced opposite endpoint colors of the sentinel windows. Counting deleted switches without these two features loses one unit of sharpness. No cancellation or noninterleaving assumption is made.
+**Scope.** The improvement exploits a  sign flip *across* the sentinel together with the forced opposite endpoint colors of the sentinel windows. Counting deleted switches without these two features loses one unit of sharpness. No cancellation or noninterleaving assumption is made.
 
 
 #### Consolidated independent proof: two-sentinel antichain
 
-Previous Subsection `logarithmic_monochromatic_path_obstruction_and_near_linear_switch_amplification`, exact original composition version 1.
+Previous Subsection `logarithmic_monochromatic_path_obstruction_and_near_linear_switch_amplification`,  original composition version 1.
 
 ### Logarithmic monochromatic geodesics and near-linear compulsory switches
 
@@ -639,7 +639,7 @@ Previous Subsection `logarithmic_monochromatic_path_obstruction_and_near_linear_
 \[
 m=\min\{d\ge2:\binom d{\lfloor d/2\rfloor}\ge N\}.
 \]
-There is a legal binary coloring of ordered PHYSICAL \(k\)-faces of \(Q_n\) such that every monochromatic coordinate-distinct geodesic has at most \(3m+3k-4\) edges, while every full antipodal geodesic has at least
+There is a legal binary coloring of ordered  \(k\)-faces of \(Q_n\) such that every monochromatic coordinate-distinct geodesic has at most \(3m+3k-4\) edges, while every full antipodal geodesic has at least
 \[
 \boxed{\max\{0,\lceil(n-3k+1)/(m-1)\rceil-3\}}
 \]
@@ -651,29 +651,29 @@ h(u,v,w)=\mathbf1_{\{\lambda(u,v)<\lambda(v,w)\}}.
 \]
 A monochromatic run of consecutive \(h\)-triples forces all successive directed-pair labels to strictly increase (color 1) or decrease (color 0). There are only \(m\) possible labels, so such a run contains at most \(m-1\) triple windows. The same statement holds for the reverse rule \(h(w,v,u)\), by reading the word backward.
 
-**Physical coloring and legality.** Adjoin distinct sign and selector directions \(s,t\). For an ordered physical \(k\)-face \((F,\pi)\) with neither sentinel free, let \(g(\pi)=h(\pi_1,\pi_2,\pi_3)\). Assign color \(z_s(F)\oplus g(\pi)\) if \(z_t(F)=0\), or \(z_s(F)\oplus g(\operatorname{rev}\pi)\) if \(z_t(F)=1\). If at least one sentinel is free, assign \(\mathbf1_{\{\pi_1>\pi_k\}}\) using an arbitrary fixed strict order of all coordinate directions. The rule depends only on the genuine physical face and its free-direction order; it never depends on the traversing corner.
+** coloring and legality.** Adjoin distinct sign and selector directions \(s,t\). For an ordered  \(k\)-face \((F,\pi)\) with neither sentinel free, let \(g(\pi)=h(\pi_1,\pi_2,\pi_3)\). Assign color \(z_s(F)\oplus g(\pi)\) if \(z_t(F)=0\), or \(z_s(F)\oplus g(\operatorname{rev}\pi)\) if \(z_t(F)=1\). If at least one sentinel is free, assign \(\mathbf1_{\{\pi_1>\pi_k\}}\) using an arbitrary fixed strict order of all coordinate directions. The rule depends only on the face and its free-direction order; it never depends on the traversing corner.
 
-Under antipodal reversal both exterior sentinel bits flip, and reversal swaps the two selector alternatives. Thus the chosen \(g\)-term remains unchanged and the XOR sign flips. If a sentinel is free, the distinct first and last ordered free directions exchange, complementing their strict-order comparison. Hence for EVERY physical ordered face,
+Under antipodal reversal both exterior sentinel bits flip, and reversal swaps the two selector alternatives. Thus the chosen \(g\)-term remains unchanged and the XOR sign flips. If a sentinel is free, the distinct first and last ordered free directions exchange, complementing their strict-order comparison. Hence for EVERY  ordered face,
 \[
 c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi).
 \]
 
 **Monochromatic length.** Delete the at most two sentinel steps from any direction-distinct monochromatic geodesic, splitting ordinary directions into at most three contiguous blocks. Within each block both sentinel bits are fixed. The colors of consecutive ordinary \(k\)-windows therefore reproduce, up to one constant XOR, consecutive \(h\)-triples on either the first three or reversed last three directions of each window. A block of \(b\ge k\) ordinary directions contains \(b-k+1\) such windows, so \(b-k+1\le m-1\), or \(b\le m+k-2\). A shorter block obeys this bound trivially. Adding at most three blocks and two sentinels yields length at most \(3(m+k-2)+2=3m+3k-4\).
 
-**Compulsory switches, with arbitrary interleaving.** In a full \(n\)-direction geodesic, let the at most three ordinary blocks have lengths \(b_i\), with \(\sum_i b_i=n-2\). Block \(i\) contains \(w_i=\max(0,b_i-k+1)\) actual consecutive ordinary physical \(k\)-window colors. Each monochromatic run among those \(w_i\) colors has at most \(m-1\) terms, so its INTERNAL physically adjacent comparisons force at least \(w_i/(m-1)-1\) switches. Those internal comparisons from distinct blocks are disjoint genuine comparisons of the full geodesic's color word; NO addition or noncancellation assumption is made about intervening sentinel windows. Summing gives
+**Compulsory switches, with arbitrary interleaving.** In a full \(n\)-direction geodesic, let the at most three ordinary blocks have lengths \(b_i\), with \(\sum_i b_i=n-2\). Block \(i\) contains \(w_i=\max(0,b_i-k+1)\)  consecutive ordinary  \(k\)-window colors. Each monochromatic run among those \(w_i\) colors has at most \(m-1\) terms, so its INTERNAL physically adjacent comparisons force at least \(w_i/(m-1)-1\) switches. Those internal comparisons from distinct blocks are disjoint comparisons of the full geodesic's color word; NO addition or noncancellation assumption is made about intervening sentinel windows. Summing gives
 \[
 \sigma(P)\ge\frac{\sum_i w_i}{m-1}-3
 \ge\frac{n-2-3(k-1)}{m-1}-3.
 \]
 Take a ceiling and the trivial nonnegative bound. Stirling gives \(m=\log_2n+O(\log\log n)\), completing the theorem.
 
-**Relation to the scrapbook snake bound.** The boundary 3-tournament \(\sqrt n\) proof uses reversal antisymmetry at the SAME triple to orient a tournament of terminal-pair competitors. The active NORI axiom relates different ANTIPODAL physical faces instead. Two exterior coordinates legally encode the arbitrary rank-comparison \(h\) and its reverse in complementary charts, refuting a universal \(\Omega(\sqrt n)\) monochromatic-geodesic claim already for NORI3. The universal positive longest-path lower bound and matching extremal switch upper bound are still open; NORI1 and NORI2 are not addressed.
+**Relation to the scrapbook snake bound.** The boundary 3-tournament \(\sqrt n\) proof uses reversal antisymmetry at the SAME triple to orient a tournament of terminal-pair competitors. The active NORI axiom relates different ANTIPODAL  faces instead. Two exterior coordinates legally encode the arbitrary rank-comparison \(h\) and its reverse in complementary charts, refuting a universal \(\Omega(\sqrt n)\) monochromatic-geodesic claim already for NORI3. The universal positive longest-path lower bound and matching extremal switch upper bound are still open; NORI1 and NORI2 are not addressed.
 
-**Verification.** Independently coded tests checked antipodal-reversal legality on every ordered physical \(k\)-face in dimensions \(5\) through \(8\), \(3\le k\le5\) where applicable, using actual exterior bitmasks. Further checks covered randomly rooted coordinate-distinct paths and verified \(\lambda(u,v)\ne\lambda(v,w)\) for ordinary-set sizes \(3\) through \(119\). The proof above is independent of these tests.
+**Verification.** Independently coded tests checked antipodal-reversal legality on every ordered  \(k\)-face in dimensions \(5\) through \(8\), \(3\le k\le5\) where applicable, using  exterior bitmasks. Further checks covered randomly rooted coordinate-distinct paths and verified \(\lambda(u,v)\ne\lambda(v,w)\) for ordinary-set sizes \(3\) through \(119\). The proof above is independent of these tests.
 
 #### Consolidated independent proof: even-face theorem
 
-Previous Subsection `unbounded_compulsory_switches_for_every_even_ordered_face_dimension`, exact original composition version 2.
+Previous Subsection `unbounded_compulsory_switches_for_every_even_ordered_face_dimension`,  original composition version 2.
 
 ### Unbounded compulsory switches for every even ordered-face dimension
 
@@ -683,7 +683,7 @@ Previous Subsection `unbounded_compulsory_switches_for_every_even_ordered_face_d
 \[
  n\ge \max\{k,\;r(2r+1)+1\},
 \]
-there is a legal binary coloring of **physical ordered \(k\)-faces** of \(Q_n\), obeying
+there is a legal binary coloring of ** ordered \(k\)-faces** of \(Q_n\), obeying
 \[
  c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi),
 \]
@@ -712,9 +712,9 @@ This is the multilevel local-minimum run lemma of *Unbounded mandatory color cha
 
 For completeness, if \(\sigma(H)\le2r-3\), there are at most \(r-1\) runs of 1-centers. At each 1-center \(j\), either \(q_j>q_{j-1}\) or \(q_j>q_{j+1}\). Across a consecutive run of such centers, once a difference \(q_{i+1}-q_i\) is nonpositive, all subsequent differences in the run are strictly negative. Hence the center values first increase, then decrease, with at most a two-letter plateau at their peak; each class occurs at most twice in any one-run. A class occurs at least \(2r-1\) times among all interior centers, so it has at least one 0-center. Two consecutive 0-centers must have the same class, since their inequalities imply both \(q_j\le q_{j+1}\) and \(q_{j+1}\le q_j\). Therefore the \(r\) classes require at least \(r\) different zero-runs, and the binary word must have at least \(2r-2\) changes, a contradiction.
 
-#### 2. One-sentinel coloring of genuine physical even faces
+#### 2. One-sentinel coloring of even faces
 
-Adjoin one distinguished direction \(s\) to the ordinary classes. Fix a physical \(k=2m\) face \(F\) with free-coordinate order \(\pi=(u_1,\dots,u_{2m})\).
+Adjoin one distinguished direction \(s\) to the ordinary classes. Fix a  \(k=2m\) face \(F\) with free-coordinate order \(\pi=(u_1,\dots,u_{2m})\).
 
 If \(s\notin\pi\), let \(z_s(F)\) be its fixed exterior \(s\)-coordinate, and define the two neighboring central triple statistics
 \[
@@ -731,21 +731,21 @@ Set
  0,&s=u_j,\ m+1\le j\le 2m.
  \end{cases} \tag{4}
 \]
-The clauses use the actual **fixed exterior bit of the physical face** and the order of its varying coordinates; they are independent of the traversing corner. All cases are disjoint and exhaustive.
+The clauses use the  **fixed exterior bit of the  face** and the order of its varying coordinates; they are independent of the traversing corner. All cases are disjoint and exhaustive.
 
 **Legality.** Reversal of a \(2m\)-tuple interchanges its left and right central triples, so by reversal-evenness of \(h\),
 \[
  L(\operatorname{rev}\pi)=R(\pi),\qquad R(\operatorname{rev}\pi)=L(\pi). \tag{5}
 \]
-If \(s\) is exterior, antipodal complementation changes its fixed bit \(z\) to \(1-z\). The first clause of (4) becomes the second applied to the reversed tuple, and conversely; by (5) the selected \(h\)-value stays the same while the leading bit complements. Hence \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\). If \(s\) is free, reversal sends its position \(j\) to \(2m+1-j\), interchanging the two constant values 1 and 0. Legality holds for every ordered physical \(k\)-face.
+If \(s\) is exterior, antipodal complementation changes its fixed bit \(z\) to \(1-z\). The first clause of (4) becomes the second applied to the reversed tuple, and conversely; by (5) the selected \(h\)-value stays the same while the leading bit complements. Hence \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\). If \(s\) is free, reversal sends its position \(j\) to \(2m+1-j\), interchanging the two constant values 1 and 0. Legality holds for every ordered  \(k\)-face.
 
-#### 3. Arbitrary insertion and exact comparison survival
+#### 3. Arbitrary insertion and  comparison survival
 
 Fix **any** cube root \(x\) and **any** direction permutation \(p\) defining a full antipodal geodesic. Delete \(s\), leaving the ordinary class word \(q\), split at the deletion position into a prefix \(A\) of length \(a\) and suffix \(B\) of length \(b\), where \(a+b=N=n-1\).
 
 Within each ordinary block the traversed \(s\)-coordinate is constant. Therefore consecutive \(k\)-windows avoiding \(s\) have colors given by consecutive triple statistics of \(H\), with one fixed index offset (left central triple if \(z_s=0\), right central triple if \(z_s=1\)) and a fixed XOR sign. Their **adjacent comparisons are precisely the corresponding adjacent comparisons of \(H\)**. The offset and possible complementation may differ between \(A\) and \(B\), but that affects only the missing seam comparisons.
 
-A block of \(a\) ordinary directions contains \(\max(0,a-k)\) adjacent comparisons between two fully contained \(k\)-windows; similarly the suffix contributes \(\max(0,b-k)\). All these comparisons are witnessed by actual adjacent physical faces and remain unchanged relative to distinct comparisons of the original \(H\). Since \(H\) has \(N-3\) comparisons, at most
+A block of \(a\) ordinary directions contains \(\max(0,a-k)\) adjacent comparisons between two fully contained \(k\)-windows; similarly the suffix contributes \(\max(0,b-k)\). All these comparisons are witnessed by  adjacent  faces and remain unchanged relative to distinct comparisons of the original \(H\). Since \(H\) has \(N-3\) comparisons, at most
 \[
  M=(N-3)-\max(0,a-k)-\max(0,b-k) \tag{6}
 \]
@@ -755,37 +755,37 @@ If \(a,b\ge k\), then \(M=2k-3\). In that case all \(k\) windows involving \(s\)
 \[
  \underbrace{00\cdots0}_{m}\underbrace{11\cdots1}_{m},
 \]
-and contributes **one additional genuine switch**, regardless of root, interleaving, and ordinary colors. The switch is distinct from all surviving ordinary-block comparisons.
+and contributes **one additional switch**, regardless of root, interleaving, and ordinary colors. The switch is distinct from all surviving ordinary-block comparisons.
 
 If \(a<k\le b\), (6) gives \(M=a+k-3\le2k-4\). The symmetric case \(b<k\le a\) is identical. If both \(a,b<k\), then \(N\le2k-2\), and \(M=N-3\le2k-5\). Thus in **every** case the switches witnessed in the ordinary blocks, supplemented when necessary by the internal sentinel switch, give
 \[
  \begin{aligned}
- \sigma(\text{full physical }k\text{-window colors})
+ \sigma(\text{full  }k\text{-window colors})
  &\ge \sigma(H)-(2k-4)\\
  &\ge (2r-2)-(2k-4)=2r-2(k-1).
  \end{aligned} \tag{7}
 \]
-No changes from different components are added speculatively: every switch counted is an explicit comparison of adjacent physical windows. This proof works for every sentinel position and every ordering of the remaining coordinates, including arbitrary interleaving of all \(r\) classes. The starting root was arbitrary, establishing (T).
+No changes from different components are added speculatively: every switch counted is an explicit comparison of adjacent  windows. This proof works for every sentinel position and every ordering of the remaining coordinates, including arbitrary interleaving of all \(r\) classes. The starting root was arbitrary, establishing (T).
 
 #### 4. Scope and NORI1/NORI2 rotation
 
 The odd-\(k\) theorem and (T) together give a **uniform unbounded-switch construction for all fixed \(k\ge3\)**, with the same lower bound \(2r-2(k-1)\) in dimension \(n\ge r(2r+1)+1\). For fixed \(k\), choosing \(r\) on the order of \(\sqrt{n/2}\) yields \(\sqrt{2n}-O(k)\) compulsory changes.
 
-The construction genuinely needs at least three ordered free directions to define the local-minimum obstruction. The distinct case \(k=2\) has a symmetric **pair** statistic; the sibling result *NORI2 sentinel barrier and exact one-switch examples* proves that every one-sentinel symmetric-pair coloring of the analogous form admits a one-switch full geodesic. For \(k=1\), if an antipodally odd physical-edge geodesic has one switch, rotating its direction sequence at the switch and replacing the old prefix by its antipodal copy yields a monochromatic full geodesic. These lower-dimensional features explain why the present theorem does not settle NORI1 or unrestricted NORI2.
+The construction genuinely needs at least three ordered free directions to define the local-minimum obstruction. The distinct case \(k=2\) has a symmetric **pair** statistic; the sibling result *NORI2 sentinel barrier and  one-switch examples* proves that every one-sentinel symmetric-pair coloring of the analogous form admits a one-switch full geodesic. For \(k=1\), if an antipodally odd -edge geodesic has one switch, rotating its direction sequence at the switch and replacing the old prefix by its antipodal copy yields a monochromatic full geodesic. These lower-dimensional features explain why the present theorem does not settle NORI1 or unrestricted NORI2.
 
 #### 5. Independent stress tests
 
-A separately written physical-mask evaluator checked 2,000 random physical ordered \(k\)-faces for legality and 300 sampled full rooted geodesics, including the sorted direction order, for each \((k,r)=(4,6),(6,8),(8,10),(10,13)\). Respectively, \((n,\text{proved minimum},\text{sampled minimum})\) was \((79,6,10),(137,6,15),(211,6,19),(352,8,24)\). These tests additionally derive each ordinary \(k\)-face's exterior \(s\)-bit from the path's actual traversed vertex. The proof (1)–(7) is unconditional and independent of testing.
+A separately written -mask evaluator checked 2,000 random  ordered \(k\)-faces for legality and 300 sampled full rooted geodesics, including the sorted direction order, for each \((k,r)=(4,6),(6,8),(8,10),(10,13)\). Respectively, \((n,\text{proved minimum},\text{sampled minimum})\) was \((79,6,10),(137,6,15),(211,6,19),(352,8,24)\). These tests additionally derive each ordinary \(k\)-face's exterior \(s\)-bit from the path's  traversed vertex. The proof (1)–(7) is unconditional and independent of testing.
 
 #### Consolidated independent proof: odd-face theorem
 
-Previous Subsection `unbounded_compulsory_switches_for_every_odd_ordered_face_dimension`, exact original composition version 2.
+Previous Subsection `unbounded_compulsory_switches_for_every_odd_ordered_face_dimension`,  original composition version 2.
 
 ### Unbounded compulsory switches for every odd ordered-face dimension
 
 #### Theorem
 
-**Theorem.** Let \(k=2t+1\ge3\) and \(r\ge3\). For each \(n\ge\max\{k,r(2r+1)+1\}\), there exists a binary coloring of physical ordered \(k\)-faces of \(Q_n\) satisfying
+**Theorem.** Let \(k=2t+1\ge3\) and \(r\ge3\). For each \(n\ge\max\{k,r(2r+1)+1\}\), there exists a binary coloring of  ordered \(k\)-faces of \(Q_n\) satisfying
 \[
 c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)
 \]
@@ -822,7 +822,7 @@ is obtained from \(H\) by deleting exactly \(t-1\) terms at each end. Thus
 \sigma(G)\ge2r-2-2(t-1)=2r-2t. \tag{2}
 \]
 
-#### General insertion lemma: exact interleaving control
+#### General insertion lemma:  interleaving control
 
 Insert a distinguished letter \(s\) at an arbitrary position in \(q\), producing a word \(p\) of length \(m+1\). Fix arbitrary bits \(z,\varepsilon\). Color each consecutive \(k\)-window as follows: if it avoids \(s\), use \(g_k\oplus z\) before \(s\) and \(g_k\oplus(1-z)\) after \(s\); if the position of \(s\) within the window is less than \(t+1\), use 1; if greater than \(t+1\), use 0; if exactly \(t+1\), use \(\varepsilon\). Let \(C\) be this color word. Then
 \[
@@ -839,13 +839,13 @@ so they contribute at least one internal change. Net loss is at most \(k-1\).
 
 If one ordinary segment is empty, the missing terms are a prefix or suffix of at most \(k-1\) terms and hence remove at most \(k-1\) comparisons. If both segments are empty, \(G\) has at most \(k-1\) terms and thus at most \(k-2\) changes, so (3) holds automatically. This covers every insertion position, without restrictions on coordinate interleaving. \(\square\)
 
-#### The legal coloring of genuine physical faces
+#### The legal coloring of faces
 
 Partition the coordinate directions as
 \[
 V=D_0\sqcup\cdots\sqcup D_{r-1}\sqcup\{s\},\qquad |D_i|\ge2r+1.
 \]
-Let \(\tau(u)=i\) for \(u\in D_i\), and choose a strict total ordering \(<\) of the ordinary directions. For a *physical* \(k\)-face \(F\) with ordered free directions \(\pi=(u_1,\ldots,u_k)\), define
+Let \(\tau(u)=i\) for \(u\in D_i\), and choose a strict total ordering \(<\) of the ordinary directions. For a ** \(k\)-face \(F\) with ordered free directions \(\pi=(u_1,\ldots,u_k)\), define
 \[
 c(F,\pi)=
 \begin{cases}
@@ -856,11 +856,11 @@ z_s(F)\oplus h(\tau(u_t),\tau(u_{t+1}),\tau(u_{t+2})),&
 \mathbf1_{\{u_t>u_{t+2}\}},&s=u_{t+1}.
 \end{cases} \tag{4}
 \]
-Here \(z_s(F)\) is the fixed \(s\)-coordinate of \(F\), defined exactly in the first case. These cases are mutually exclusive, depend only on the physical face and its free-direction ordering, and are independent of the corner through which the face is traversed.
+Here \(z_s(F)\) is the fixed \(s\)-coordinate of \(F\), defined exactly in the first case. These cases are mutually exclusive, depend only on the  face and its free-direction ordering, and are independent of the corner through which the face is traversed.
 
 **Legality.** When \(s\) is outside the face, antipodal complementation flips \(z_s(F)\), and reversal leaves the central-triple \(h\)-value unchanged. When \(s\) is a noncentral free direction, reversal takes a position left of center to one right of center, interchanging 1 and 0. When \(s\) is central, reversal interchanges its two distinct immediate neighbors, complementing the strict-order indicator. Thus \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\) in every case.
 
-**Forced switches.** Fix any starting vertex \(x\) and any full coordinate order \(p\). Delete \(s\) from \(p\) and replace each ordinary direction by its class to produce \(q\). This has at least \(2r+1\) occurrences of each symbol. Put \(z=x_s\). The actual window colors avoiding \(s\) equal \(g_k\oplus z\) before the \(s\)-move and \(g_k\oplus(1-z)\) afterward, since precisely the physical face's fixed \(s\)-bit changes. The sentinel windows have the prescribed left/central/right colors, with the central bit \(\varepsilon\) fixed by comparing its distinct neighboring directions. Thus the complete physical path word is exactly an instance of the insertion lemma:
+**Forced switches.** Fix any starting vertex \(x\) and any full coordinate order \(p\). Delete \(s\) from \(p\) and replace each ordinary direction by its class to produce \(q\). This has at least \(2r+1\) occurrences of each symbol. Put \(z=x_s\). The  window colors avoiding \(s\) equal \(g_k\oplus z\) before the \(s\)-move and \(g_k\oplus(1-z)\) afterward, since precisely the  face's fixed \(s\)-bit changes. The sentinel windows have the prescribed left/central/right colors, with the central bit \(\varepsilon\) fixed by comparing its distinct neighboring directions. Thus the complete  path word is exactly an instance of the insertion lemma:
 \[
 \sigma(C)\ge\sigma(G)-(k-1)\ge(2r-2t)-2t
 =2r-2(k-1).
@@ -871,7 +871,7 @@ The root and permutation were arbitrary, proving the theorem. \(\square\)
 
 Take \(r=\lfloor(\sqrt{8n-7}-1)/4\rfloor\), with \(r\ge3\). Then \(r(2r+1)+1\le n\), giving a lower bound \(\sqrt{2n}-O(k)\) on the minimum changes of the constructed coloring. For \(k=3\), the result recovers the established multilevel construction. For \(k=5\), \(r=7,n=106\) forces at least six changes (versus the hierarchy's proposed four). For \(k=7\), \(r=10,n=211\) forces at least eight (versus the proposed six).
 
-The use of the central triple requires odd \(k\). For even \(k\), reversing an ordered face interchanges its two middle positions, and this exact projection is unavailable. The argument therefore makes no assertion about unrestricted NORI2 or higher even \(k\). For NORI1, there is no triple and no central sentinel with two distinct neighbors; the well-known cyclic root-rotation converting a one-switch edge path into a monochromatic edge path has no analogue in this construction.
+The use of the central triple requires odd \(k\). For even \(k\), reversing an ordered face interchanges its two middle positions, and this  projection is unavailable. The argument therefore makes no assertion about unrestricted NORI2 or higher even \(k\). For NORI1, there is no triple and no central sentinel with two distinct neighbors; the well-known cyclic root-rotation converting a one-switch edge path into a monochromatic edge path has no analogue in this construction.
 
 **Independent finite stress test.** Exhaustive tests enumerated all ternary ordinary words, insertion positions, both starting sentinel bits and both central bits for \((k,m)=(3,7),(5,7),(5,8),(7,9)\); all 1,163,484 tests satisfied (3). The mathematical proof above is unconditional.
 
@@ -883,17 +883,17 @@ The use of the central triple requires odd \(k\). For even \(k\), reversing an o
 \]
 It is uniform over every ordinary word \(G\), every sentinel insertion position and both independent choices \(z,\varepsilon\). The previous \(k-1\)-loss estimate is valid but can be sharpened.
 
-**Proof.** When both surviving ordinary \(k\)-window blocks are nonempty, the insertion removes \(k-1\) consecutive terms of \(G\), and thus at most \(k\) original comparisons. The \(k\) sentinel-containing physical windows have the color word
+**Proof.** When both surviving ordinary \(k\)-window blocks are nonempty, the insertion removes \(k-1\) consecutive terms of \(G\), and thus at most \(k\) original comparisons. The \(k\) sentinel-containing  windows have the color word
 \[
 0,\ldots,0,\varepsilon,1,\ldots,1
 \]
 with exactly one internal switch. If at most \(k-1\) deleted comparisons were switches, the total loss is at most \(k-2\).
 
-It remains to examine the unique possible worst case: all \(k\) deleted comparisons were switches. Let \(a\) and \(b\) be the surviving ordinary \(G\)-bits bordering the erased interval. Since **\(k\) is odd**, \(b=1-a\). Across the physical sentinel step the exterior sign changes, so the physical colors at the two ends of the inserted sentinel word are \(a\oplus z\) and \(b\oplus(1-z)=a\oplus z\): they are **equal**. The sentinel word itself begins with zero and ends with one. Hence its two *external* seams cannot both be color-preserving; at least one additional comparison switches, independently of \(\varepsilon\). The new word therefore contains at least two switches in the inserted region, losing at most \(k-2\) relative to the removed \(k\) switches.
+It remains to examine the unique possible worst case: all \(k\) deleted comparisons were switches. Let \(a\) and \(b\) be the surviving ordinary \(G\)-bits bordering the erased interval. Since **\(k\) is odd**, \(b=1-a\). Across the  sentinel step the exterior sign changes, so the  colors at the two ends of the inserted sentinel word are \(a\oplus z\) and \(b\oplus(1-z)=a\oplus z\): they are **equal**. The sentinel word itself begins with zero and ends with one. Hence its two *external* seams cannot both be color-preserving; at least one additional comparison switches, independently of \(\varepsilon\). The new word therefore contains at least two switches in the inserted region, losing at most \(k-2\) relative to the removed \(k\) switches.
 
 If exactly one ordinary \(k\)-window block survives, the omitted original terms form an initial or final segment of \(G\), of length at most \(k-1\). If its length is at most \(k-2\), at most \(k-2\) comparisons disappear and the inequality follows. If its length equals \(k-1\), the sentinel occupies precisely the \(k\)-th position from that end, so all \(k\) sentinel windows occur and their internal switch compensates for one removed comparison. If neither block survives, \(G\) has at most \(k-1\) terms and therefore at most \(k-2\) switches, making the inequality immediate. These cases exhaust all insertion positions. \(\square\)
 
-**Strengthened odd-\(k\) amplification theorem.** Under the legal physical coloring (4), for every \(r\ge3\) and every \(n\ge\max\{k,2r^2+r+1\}\), all full antipodal geodesics have at least
+**Strengthened odd-\(k\) amplification theorem.** Under the legal  coloring (4), for every \(r\ge3\) and every \(n\ge\max\{k,2r^2+r+1\}\), all full antipodal geodesics have at least
 \[
 \boxed{2r-2k+3}
 \]
@@ -901,16 +901,16 @@ ordered-\(k\)-face color changes. Indeed, the ordinary word has at least \(2r-2\
 \[
 (2r-2)-(k-3)-(k-2)=2r-2k+3.
 \]
-For \(k=3\), the separate multilevel Subsection further establishes that the bound \(2r-3\) is **exact for the constructed coloring**, achieved by ordered constant class blocks with the sentinel at their first boundary. For larger odd \(k\), no assertion of exactness is made.
+For \(k=3\), the separate multilevel Subsection further establishes that the bound \(2r-3\) is ** for the constructed coloring**, achieved by ordered constant class blocks with the sentinel at their first boundary. For larger odd \(k\), no assertion of exactness is made.
 
-The improvement is a genuine antipodal-sign constraint: parity of the \(k\) missing comparisons makes the two surviving exterior-complemented boundary colors identical, while the sentinel-color bridge has distinct endpoints. It directly accounts for all possible interleavings and does not assume that switches from separate components add.
+The improvement is a antipodal-sign constraint: parity of the \(k\) missing comparisons makes the two surviving exterior-complemented boundary colors identical, while the sentinel-color bridge has distinct endpoints. It directly accounts for all possible interleavings and does not assume that switches from separate components add.
 
 
 ### Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament
 
 #### Theorem: near-linear compulsory switches
 
-**Theorem.** For every \(n\ge5\) there exists a legal coloring of genuine **physical ordered three-faces** of \(Q_n\), with
+**Theorem.** For every \(n\ge5\) there exists a legal coloring of ** ordered three-faces** of \(Q_n\), with
 \[
 c(\bar F,(w,v,u))=1-c(F,(u,v,w)),
 \tag{1}
@@ -927,7 +927,7 @@ coordinate moves. Consequently every full antipodal geodesic has at least
 \]
 color changes. In particular, \(S_3(n)=\Omega(n/\log n)\). This disproves the conjecture that every legal NORI3 coloring possesses a monochromatic geodesic of length \(\Omega(\sqrt n)\).
 
-The source input is the explicit \((3,3)\)-tournament in R. C. Devine and K. G. Milans, *Tight paths in fully directed hypergraphs*, uploaded main-appendix manuscript, Theorem (33)-upper. That theorem constructs a tournament on \(\mathbb F_2^t\) with all directed tight paths of order at most \(2t+4\). The new steps are a **complement-reversal self-duality** of that tournament and a legal one-sentinel physical NORI3 lift preserving both colors' short-path bounds.
+The source input is the explicit \((3,3)\)-tournament in R. C. Devine and K. G. Milans, *Tight paths in fully directed hypergraphs*, uploaded main-appendix manuscript, Theorem (33)-upper. That theorem constructs a tournament on \(\mathbb F_2^t\) with all directed tight paths of order at most \(2t+4\). The new steps are a **complement-reversal self-duality** of that tournament and a legal one-sentinel  NORI3 lift preserving both colors' short-path bounds.
 
 #### The source (3,3)-tournament
 
@@ -969,11 +969,11 @@ for all distinct \(a,b,c\).
 
 This is not a boundary 3-tournament: generally \(h_t(a,b,c)\) and \(h_t(c,b,a)\) need not be opposite. **Bitwise complementing the underlying labels is essential** to the new duality.
 
-#### Physical NORI3 lift with one sentinel
+####  NORI3 lift with one sentinel
 
 Choose \(t=\lceil\log_2(n-1)\rceil\), and injectively label the \(n-1\) ordinary cube directions by distinct strings from \(B_t\). Write \(D\subseteq B_t\) for these labels. Add one sentinel cube direction \(s\) and fix any total order \(<\) on \(D\).
 
-For a physical ordered three-face \(F\) with ordered free directions \((u,v,w)\), define
+For a  ordered three-face \(F\) with ordered free directions \((u,v,w)\), define
 \[
 c(F,(u,v,w))=
 \begin{cases}
@@ -986,22 +986,22 @@ h_t(\widehat u,\widehat v,\widehat w),
 \end{cases}
 \tag{7}
 \]
-In the first two cases, \(z_s(F)\) is the actual fixed exterior \(s\)-bit of the **physical face**. All cases depend only on the ordered free directions and a genuine fixed exterior coordinate, independently of the traversal corner.
+In the first two cases, \(z_s(F)\) is the  fixed exterior \(s\)-bit of the ** face**. All cases depend only on the ordered free directions and a fixed exterior coordinate, independently of the traversal corner.
 
-**Legality.** When \(s\) is exterior, the antipodal face has fixed \(s\)-bit \(1-z_s(F)\), and reversing the order changes \(h_t(u,v,w)\) to \(h_t(\widehat w,\widehat v,\widehat u)\) (or conversely), which is its complement by (6). When \(s\) is free at an endpoint, reversal interchanges the constant values 1 and 0. With \(s\) in the middle, reversal interchanges its distinct ordinary neighbors and complements their strict-order indicator. Thus (1) holds for every genuine physical ordered face. \(\square\)
+**Legality.** When \(s\) is exterior, the antipodal face has fixed \(s\)-bit \(1-z_s(F)\), and reversing the order changes \(h_t(u,v,w)\) to \(h_t(\widehat w,\widehat v,\widehat u)\) (or conversely), which is its complement by (6). When \(s\) is free at an endpoint, reversal interchanges the constant values 1 and 0. With \(s\) in the middle, reversal interchanges its distinct ordinary neighbors and complements their strict-order indicator. Thus (1) holds for every ordered face. \(\square\)
 
 #### Every monochromatic geodesic is short
 
 Fix any starting vertex and any geodesic with \(m\) distinct coordinate moves \(p_1,\dots,p_m\).
 
-If \(s\) is absent, its bit \(z\) remains fixed along the path. All physical face colors are successive \(h_t\)-triple values on the distinct label list \(p_1,\dots,p_m\) (for \(z=0\)), or on the uniformly complemented list \(\widehat p_1,\dots,\widehat p_m\) (for \(z=1\)). If the path is monochromatic, the corollary gives \(m\le M_t\).
+If \(s\) is absent, its bit \(z\) remains fixed along the path. All  face colors are successive \(h_t\)-triple values on the distinct label list \(p_1,\dots,p_m\) (for \(z=0\)), or on the uniformly complemented list \(\widehat p_1,\dots,\widehat p_m\) (for \(z=1\)). If the path is monochromatic, the corollary gives \(m\le M_t\).
 
 If \(s\) occurs at position \(j\) with \(3\le j\le m-2\), the three consecutive windows in which \(s\) is respectively last, middle, and first have colors
 \[
 (0,\varepsilon,1),\qquad\varepsilon\in\{0,1\}.
 \tag{8}
 \]
-Thus a monochromatic geodesic containing \(s\) must have \(j\le2\) or \(j\ge m-1\). Removing \(s\) leaves, on one side, a contiguous ordinary segment with at least \(m-2\) moves. Its actual physical windows are monochromatic and have a constant \(s\)-bit, so the corollary applies to that segment: \(m-2\le M_t\). This proves (2) for every root and every coordinate ordering.
+Thus a monochromatic geodesic containing \(s\) must have \(j\le2\) or \(j\ge m-1\). Removing \(s\) leaves, on one side, a contiguous ordinary segment with at least \(m-2\) moves. Its   windows are monochromatic and have a constant \(s\)-bit, so the corollary applies to that segment: \(m-2\le M_t\). This proves (2) for every root and every coordinate ordering.
 
 #### Full antipodal paths and the switch count
 
@@ -1012,17 +1012,17 @@ If there are \(R\) runs, \(n-2\le RM_t\), so the number of switches is
 R-1\ge \left\lceil\frac{n-2}{M_t}\right\rceil-1
 =\left\lceil\frac{n-2}{2\lceil\log_2(n-1)\rceil+4}\right\rceil-1,
 \]
-as claimed. The entire argument counts **actual adjacent physical face colors along one full geodesic**, and requires no blockwise concatenation or anti-cancellation hypothesis.
+as claimed. The entire argument counts ** adjacent  face colors along one full geodesic**, and requires no blockwise concatenation or anti-cancellation hypothesis.
 
 #### Independent checks
 
-An independent implementation exhaustively verified both the \((3,3)\)-property and duality (6) on all \(24,336,3360\) ordered triples for \(t=2,3,4\), respectively. Exact maximum-path dynamic programming found maxima \(4,7,9\) for both colors at \(t=2,3,4\), consistent with (5). An independent physical face evaluator checked 100,000 random antipodal-reversal face pairings for \(Q_{17}\), and 10,000 randomly rooted full geodesics for the claimed monochromatic-run bound. All tests passed. The stated theorem follows from the supplied publication's proved (5) and the fully written algebraic argument above.
+An independent implementation exhaustively verified both the \((3,3)\)-property and duality (6) on all \(24,336,3360\) ordered triples for \(t=2,3,4\), respectively.  maximum-path dynamic programming found maxima \(4,7,9\) for both colors at \(t=2,3,4\), consistent with (5). An independent  face evaluator checked 100,000 random antipodal-reversal face pairings for \(Q_{17}\), and 10,000 randomly rooted full geodesics for the claimed monochromatic-run bound. All tests passed. The stated theorem follows from the supplied publication's proved (5) and the fully written algebraic argument above.
 
 #### Interpretation of the scrapbook antisymmetry proof
 
 The scrapbook's terminal-pair tournament argument proves \(g(n,3)\ge1+\sqrt{(n-1)/2}\) for **boundary/antisymmetric 3-tournaments**. Its crucial step compares \(uvw\) and \(wvu\) **at the same combinatorial triple**, ensuring an orientation of the auxiliary tournament on competing terminal directions.
 
-The physical NORI3 axiom (1) compares two **antipodal physical faces**, not the two reversals on one face. The lifted coloring (7) exhibits this distinction exactly: both same-face reversals may have equal color, while antipodal reversal always complements it. The scrapbook's square-root conclusion therefore does not apply to general NORI3. It remains applicable to direction-only boundary-compatible colorings; under exterior-dependent same-face reversal oddness, any extension must also control transport between distinct physical face fibers.
+The  NORI3 axiom (1) compares two **antipodal  faces**, not the two reversals on one face. The lifted coloring (7) exhibits this distinction exactly: both same-face reversals may have equal color, while antipodal reversal always complements it. The scrapbook's square-root conclusion therefore does not apply to general NORI3. It remains applicable to direction-only boundary-compatible colorings; under exterior-dependent same-face reversal oddness, any extension must also control transport between distinct  face fibers.
 
 This settles the proposed extension to unrestricted NORI3 in the strongest negative sense: the broader law allows monochromatic paths of logarithmic maximum length and hence near-linear compulsory switches.
 
@@ -1036,7 +1036,7 @@ R. C. Devine and K. G. Milans, user-supplied scrapbook manuscript, Sections “A
 
 The published \(h_t\) has a stronger local obstruction to boundary-tournament or edge-ordered realization than mere failure of reversal-oddness.
 
-**Proposition (exact reversal-defect distance).** For **every** unordered triple \(T=\{u,v,w\}\subseteq B_t\), the three reversal pairs \((uvw,wvu)\), \((uwv,vwu)\), and \((vuw,wuv)\) include exactly **one** equal-zero pair \((0,0)\), exactly **one** equal-one pair \((1,1)\), and exactly **one** opposite-color pair. Consequently the minimum Hamming distance between the ordered-triple indicator \(h_t\) and **any** direction-only boundary 3-tournament is
+**Proposition ( reversal-defect distance).** For **every** unordered triple \(T=\{u,v,w\}\subseteq B_t\), the three reversal pairs \((uvw,wvu)\), \((uwv,vwu)\), and \((vuw,wuv)\) include exactly **one** equal-zero pair \((0,0)\), exactly **one** equal-one pair \((1,1)\), and exactly **one** opposite-color pair. Consequently the minimum Hamming distance between the ordered-triple indicator \(h_t\) and **any** direction-only boundary 3-tournament is
 \[
 2\binom{2^t}{3},
 \tag{12}
@@ -1047,20 +1047,20 @@ exactly **one third of all** \(6\binom{2^t}{3}\) ordered-triple values. In parti
 
 A boundary 3-tournament must make the two members of *every* reversal pair opposite. Therefore it needs at least one flip in each of the two equal pairs on every unordered triple, or two flips per triple. Conversely such two flips suffice to make each triple separately boundary-compatible; the choices are independent across unordered triples. Summation gives (12). A global edge ordering is an even smaller subclass of boundary 3-tournaments, so it is also impossible. \(\square\)
 
-This pinpoints the **very first** failure of edge-order realizability: the logarithmic obstruction does not even define an orientation of \(L(K_n)\), so acyclicity is not yet an applicable test. For genuine boundary tournaments, the orientation exists, and *then* directed cycles are the exact obstruction to one global edge ordering.
+This pinpoints the **very first** failure of edge-order realizability: the logarithmic obstruction does not even define an orientation of \(L(K_n)\), so acyclicity is not yet an applicable test. For boundary tournaments, the orientation exists, and *then* directed cycles are the  obstruction to one global edge ordering.
 
 #### Why the published (3,3)-tournament lower bound does not automatically transfer
 
 The source paper also proves \(f(n,3,3)\ge \Omega((\ln n/\ln\ln n)^{1/2})\). Its proof begins with a uniform tournament on the same \(n\) vertices, first extracts an induced subgraph with no long directed walks, and then labels pairs by longest directed-walk lengths. It uses **exactly three accepted permutations on each unordered triple** to rule out monochromatic triangles in an auxiliary edge coloring. (See the uploaded main-appendix manuscript, Theorem (33)-lower.)
 
-None of those hypotheses is supplied by arbitrary legal physical NORI3, even after fixing a reference cube vertex. For example, for any \(n\ge4\), any free triple \(T\), and any ordered physical face \(F\) with those free directions, let \(j(T)\) be the smallest direction outside \(T\), and set
+None of those hypotheses is supplied by arbitrary legal  NORI3, even after fixing a reference cube vertex. For example, for any \(n\ge4\), any free triple \(T\), and any ordered  face \(F\) with those free directions, let \(j(T)\) be the smallest direction outside \(T\), and set
 \[
  c(F,\pi):=z_{j(T)}(F),\quad \pi\text{ any ordering of }T.
  \tag{13}
 \]
 The antipodal face flips this exterior bit, so \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\): (13) is perfectly legal. Yet in the fiber obtained by fixing all exterior bits from the zero vertex, **all six permutations of every triple have color zero**, not three. Thus the initial \((3,3)\)-tournament premise fails completely.
 
-Moreover even if some reference fiber happened to satisfy the three-of-six balance, its direction-only tight path would not automatically be a physical geodesic of matching colors: the \(i\)-th physical window of a geodesic starting at \(x\) sees outside bits from \(x\oplus e_{p_1}\oplus\cdots\oplus e_{p_{i-1}}\), not generally the initial fiber \(x\). This is the **root-consistency** obstruction. The source Ramsey labeling proof does not furnish a way to maintain a common exterior-bit assignment as distinct directions are traversed.
+Moreover even if some reference fiber happened to satisfy the three-of-six balance, its direction-only tight path would not automatically be a  geodesic of matching colors: the \(i\)-th  window of a geodesic starting at \(x\) sees outside bits from \(x\oplus e_{p_1}\oplus\cdots\oplus e_{p_{i-1}}\), not generally the initial fiber \(x\). This is the **root-consistency** obstruction. The source Ramsey labeling proof does not furnish a way to maintain a common exterior-bit assignment as distinct directions are traversed.
 
 Therefore the published \(\Omega(\sqrt{\log n/\log\log n})\) lower bound is **not** an established NORI3 universal lower bound. Any transfer must supply both a balanced (3,3)-tournament reduction and a face-consistent lift of its vertex-simple tight path. Obtaining such a reduction remains a separate substantive problem.
 
@@ -1068,9 +1068,9 @@ Therefore the published \(\Omega(\sqrt{\log n/\log\log n})\) lower bound is **no
 
 #### Main theorem and its sharpness
 
-Let \(V\) be the \(n\) coordinate directions of \(Q_n\), let \(S\subseteq V\) be a distinguished set of size \(t\), and put \(D=V\setminus S\), of size \(m=n-t\). Consider **any** binary coloring \(c(F,(a,b,d))\) of genuine physical ordered three-faces satisfying:
+Let \(V\) be the \(n\) coordinate directions of \(Q_n\), let \(S\subseteq V\) be a distinguished set of size \(t\), and put \(D=V\setminus S\), of size \(m=n-t\). Consider **any** binary coloring \(c(F,(a,b,d))\) of ordered three-faces satisfying:
 
-**Exterior-support hypothesis ES3(S):** If the three free directions belong to \(D\), the color of their ordered physical face depends only on their ordered directions and on the fixed exterior coordinate bits in \(S\), with no dependence on any other fixed exterior bits. Colors of ordered faces meeting \(S\) are completely unrestricted.
+**Exterior-support hypothesis ES3(S):** If the three free directions belong to \(D\), the color of their ordered  face depends only on their ordered directions and on the fixed exterior coordinate bits in \(S\), with no dependence on any other fixed exterior bits. Colors of ordered faces meeting \(S\) are completely unrestricted.
 
 **Theorem 1 (uniform logarithmic lower bound).** If \(m\ge3\), some monochromatic coordinate geodesic, traversing only directions from \(D\), has at least
 \[
@@ -1084,7 +1084,7 @@ m\ \le\ \binom{2L-2}{L-1}.
 \]
 The proof assumes **neither** antipodal-reversal oddness nor reversal symmetry; it is a self-contained ordered-Ramsey argument for colored consecutive triples.
 
-**Corollary 2 (sharp order for one or finitely many sentinels).** Let \(\mathcal C_t(n)\) consist of all legal antipodal-reversal-odd physical ordered-three-face colorings admitting some support \(S\) of size at most \(t\) satisfying ES3(S), and define
+**Corollary 2 (sharp order for one or finitely many sentinels).** Let \(\mathcal C_t(n)\) consist of all legal antipodal-reversal-odd  ordered-three-face colorings admitting some support \(S\) of size at most \(t\) satisfying ES3(S), and define
 \[
 \Lambda_t(n)=\min_{c\in\mathcal C_t(n)}
 \max_{\text{monochromatic coordinate geodesics }P}|E(P)|.
@@ -1094,7 +1094,7 @@ For every fixed \(t\ge1\),
 \boxed{\Lambda_t(n)=\Theta_t(\log n)}\qquad(n\to\infty).
 \tag{3}
 \]
-The lower bound follows from Theorem 1 using \(m\ge n-t\). For the upper bound, the established self-dual Devine--Milans \((3,3)\)-tournament physical one-sentinel lift belongs to \(\mathcal C_1(n)\subseteq\mathcal C_t(n)\) and forces
+The lower bound follows from Theorem 1 using \(m\ge n-t\). For the upper bound, the established self-dual Devine--Milans \((3,3)\)-tournament  one-sentinel lift belongs to \(\mathcal C_1(n)\subseteq\mathcal C_t(n)\) and forces
 \[
 \max_P|E(P)|\le2\lceil\log_2(n-1)\rceil+6
 \tag{4}
@@ -1135,32 +1135,32 @@ But the color of the increasing triple \((h,i,j)\), by (6) applied either to \(A
 
 The number of order ideals in a product of two chains of length \(L-1\) is exactly \(\binom{2L-2}{L-1}\), obtained by identifying the staircase boundary of an ideal with a monotone lattice path having \(L-1\) horizontal and \(L-1\) vertical steps. We have \(m\) distinct ideals, yielding the first inequality in (5). The elementary bound \(\binom{2d}{d}\le2^{2d}=4^d\) gives the second. Taking base-two logarithms proves \(L\ge1+\tfrac12\log_2m\). \(\square\)
 
-**Remark.** This is the exact terminal-*ordered*-pair/ideal-counting mechanism behind the classical ordered Ramsey bound for two-colored 3-uniform monotone tight paths. Unlike the scrapbook's boundary-tournament \(\sqrt n\) theorem, it assumes neither antisymmetry nor a tournament condition. Its price is the weaker logarithmic conclusion.
+**Remark.** This is the  terminal-*ordered*-pair/ideal-counting mechanism behind the classical ordered Ramsey bound for two-colored 3-uniform monotone tight paths. Unlike the scrapbook's boundary-tournament \(\sqrt n\) theorem, it assumes neither antisymmetry nor a tournament condition. Its price is the weaker logarithmic conclusion.
 
-#### 2. Transfer to physical cube geodesics
+#### 2. Transfer to  cube geodesics
 
 **Proof of Theorem 1.** Fix any cube vertex \(x\) and any strict total ordering of the ordinary directions \(D\). Put \(\beta=x|_S\). For every ordered triple \(a<b<d\) of *ordinary directions*, exterior support ES3(S) makes
 \[
 h_\beta(a,b,d)=c(F,(a,b,d))
 \tag{8}
 \]
-well defined for **every** physical face \(F\) whose free directions are \(a,b,d\) and whose fixed \(S\)-coordinates equal \(\beta\). The bits of \(F\) outside \(S\cup\{a,b,d\}\) are immaterial, by the hypothesis.
+well defined for **every**  face \(F\) whose free directions are \(a,b,d\) and whose fixed \(S\)-coordinates equal \(\beta\). The bits of \(F\) outside \(S\cup\{a,b,d\}\) are immaterial, by the hypothesis.
 
 Apply Lemma 3 to \(h_\beta\), obtaining a strictly increasing list of \(L\) distinct ordinary coordinate directions \(p_1<\cdots<p_L\) with all its consecutive \(h_\beta\)-triples colored by one bit.
 
-Starting at the chosen cube vertex \(x\), traverse the \(L\) directions \(p_1,\ldots,p_L\) exactly once each. This is a genuine coordinate geodesic with \(L\) edges. Every ordered-three-face window along it is a genuine physical face, and since no direction in \(S\) is ever traversed, its fixed \(S\)-bit vector is still \(\beta\). By (8), the actual physical colors of the consecutive windows equal
+Starting at the chosen cube vertex \(x\), traverse the \(L\) directions \(p_1,\ldots,p_L\) exactly once each. This is a coordinate geodesic with \(L\) edges. Every ordered-three-face window along it is a face, and since no direction in \(S\) is ever traversed, its fixed \(S\)-bit vector is still \(\beta\). By (8), the   colors of the consecutive windows equal
 \[
 h_\beta(p_i,p_{i+1},p_{i+2})
 \]
-and are monochromatic. This proves both the path assertion and the explicit bound (2), with no root changes during the argument. The directions are distinct because they are strictly increasing, and physical face consistency is ensured by ES3(S). \(\square\)
+and are monochromatic. This proves both the path assertion and the explicit bound (2), with no root changes during the argument. The directions are distinct because they are strictly increasing, and  face consistency is ensured by ES3(S). \(\square\)
 
 #### 3. Matching construction, scope, and failure of unrestricted transfer
 
 The Devine--Milans one-sentinel lift is legal and has \(S=\{s\}\). For every face avoiding \(s\), its color depends solely on ordered free directions and the fixed exterior bit \(z_s(F)\); all other exterior bits are ignored. It therefore satisfies ES3(S) and has logarithmically bounded longest monochromatic geodesics in *both* colors, by complement-reversal self-duality. Combining with Theorem 1 proves (3) even though the lift also colors arbitrary faces meeting \(s\).
 
-For **unrestricted** legal NORI3 colorings the reduction (8) generally fails: at different windows of the same cube geodesic, the exterior ordinary bits reflect different previously traversed directions. A single ordered triple may consequently be assigned different colors on different physical faces with the same ordered free directions and the same \(\beta\). No fixed \(h_\beta\) can represent all those windows. In particular **neither** the \((3,3)\)-tournament lower-bound mechanism nor the ordered-Ramsey proof above transfers without an additional coherence/transport hypothesis. The theorem is exactly sharp as a conclusion for fixed-size exterior support; it is deliberately not promoted to a universal bound.
+For **unrestricted** legal NORI3 colorings the reduction (8) generally fails: at different windows of the same cube geodesic, the exterior ordinary bits reflect different previously traversed directions. A single ordered triple may consequently be assigned different colors on different  faces with the same ordered free directions and the same \(\beta\). No fixed \(h_\beta\) can represent all those windows. In particular **neither** the \((3,3)\)-tournament lower-bound mechanism nor the ordered-Ramsey proof above transfers without an additional coherence/transport hypothesis. The theorem is exactly sharp as a conclusion for fixed-size exterior support; it is deliberately not promoted to a universal bound.
 
-**Further scope.** The same argument applies if one can find a subset \(D\) of \(m\) directions and a fixed exterior fiber for which all ordered physical three-faces on \(D\) are independent of the other \(D\)-exterior bits (regardless of how the coloring behaves elsewhere). It also applies to *nonlegal* binary ordered physical-face colorings: the lower bound is a purely combinatorial consequence of exterior-bit flatness.
+**Further scope.** The same argument applies if one can find a subset \(D\) of \(m\) directions and a fixed exterior fiber for which all ordered  three-faces on \(D\) are independent of the other \(D\)-exterior bits (regardless of how the coloring behaves elsewhere). It also applies to *nonlegal* binary ordered -face colorings: the lower bound is a purely combinatorial consequence of exterior-bit flatness.
 
 #### Consequential research implication
 
@@ -1170,15 +1170,15 @@ The logarithmic extremal scale is settled **within the bounded-exterior-support 
 
 #### Consolidated independent proof: sparse-dependence theorem
 
-Previous Subsection `logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry`, exact original composition version 1.
+Previous Subsection `logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry`,  original composition version 1.
 
 ### Logarithmic monochromatic cube geodesics from sparse exterior dependence, without reversal symmetry
 
 #### Statement and implication for the unrestricted NORI3 frontier
 
-Let \(V\) be the \(n\)-element direction set of \(Q_n\), \(n\ge4\), and let \(c(F,\pi)\) be **any** binary coloring of ordered physical three-faces, with traversal-corner independence as usual. No antipodal law and no same-face reversal symmetry are needed for this result.
+Let \(V\) be the \(n\)-element direction set of \(Q_n\), \(n\ge4\), and let \(c(F,\pi)\) be **any** binary coloring of ordered  three-faces, with traversal-corner independence as usual. No antipodal law and no same-face reversal symmetry are needed for this result.
 
-For each unordered triple \(T\in\binom V3\), let \(S_T\subseteq V\setminus T\) be a set of exterior coordinates such that, for each ordering \(\pi\) of \(T\), the color on a physical face with free set \(T\) is determined entirely by \(\pi\) and the exterior bits indexed by \(S_T\). A canonical choice is the union, over all six orderings, of the essential-variable sets of their Boolean face-color functions. The **total exterior-dependence incidence** and **average support** are
+For each unordered triple \(T\in\binom V3\), let \(S_T\subseteq V\setminus T\) be a set of exterior coordinates such that, for each ordering \(\pi\) of \(T\), the color on a  face with free set \(T\) is determined entirely by \(\pi\) and the exterior bits indexed by \(S_T\). A canonical choice is the union, over all six orderings, of the essential-variable sets of their Boolean face-color functions. The **total exterior-dependence incidence** and **average support** are
 \[
 B=\sum_{T\in\binom V3}|S_T|,\qquad
 \bar d=B/\binom n3.
@@ -1251,7 +1251,7 @@ S_T\cap D=\varnothing. \tag{9}
 \]
 This is **not** a common-global-support hypothesis: the sets \(S_T\) may be disjoint, overlapping, nonlinear, and nonuniform. It asserts only that no exterior coordinate capable of affecting a face supported on \(D\) is itself traversed inside \(D\).
 
-Fix any root \(x\in Q_n\). For each ordered triple \(\pi=(a,b,c)\) of distinct directions in \(D\), define \(h_x(a,b,c)\) as the color of any physical face with free set \(\{a,b,c\}\) whose fixed bits on \(S_{\{a,b,c\}}\) agree with \(x\). By the support condition this is well-defined, independent of all other exterior bits. By (9), every geodesic using only directions in \(D\), starting at \(x\), maintains the relevant \(S_T\)-bits unchanged at every ordered-three-face window. Therefore every such path's actual physical color word is *exactly* its consecutive-triple color word under this single direction-only function \(h_x\).
+Fix any root \(x\in Q_n\). For each ordered triple \(\pi=(a,b,c)\) of distinct directions in \(D\), define \(h_x(a,b,c)\) as the color of any  face with free set \(\{a,b,c\}\) whose fixed bits on \(S_{\{a,b,c\}}\) agree with \(x\). By the support condition this is well-defined, independent of all other exterior bits. By (9), every geodesic using only directions in \(D\), starting at \(x\), maintains the relevant \(S_T\)-bits unchanged at every ordered-three-face window. Therefore every such path's   color word is *exactly* its consecutive-triple color word under this single direction-only function \(h_x\).
 
 Choose an arbitrary strict total order on \(D\). The two-color ordered-tight-path Ramsey lemma (proved independently in the sibling manuscript *Sharp logarithmic monochromatic geodesics under bounded exterior support*) says that for any binary coloring of increasing triples on \(m=|D|\) vertices, there is an increasing monochromatic tight path on \(L\) distinct vertices with
 \[
@@ -1259,7 +1259,7 @@ m\le\binom{2L-2}{L-1}\le4^{L-1}. \tag{10}
 \]
 For completeness, label each pair \(i<j\) by the two maximum orders of color-0 and color-1 increasing tight paths ending in \((i,j)\). Along each triple, the coordinate corresponding to that triple's color strictly increases between its first and second pair. For every \(j\), form the downwards-closed ideal in the \((L-1)\times(L-1)\) grid generated by incoming pair labels \((i,j)\). For \(i<j\), the label of \((i,j)\) belongs to the ideal of \(j\) but cannot belong to that of \(i\), by the strict increase. Thus all \(m\) vertex ideals are distinct, and the square grid has precisely \(\binom{2L-2}{L-1}\) ideals. This proves (10).
 
-Read the resulting increasing path \(p_1,\ldots,p_L\) as a sequence of *distinct cube directions*. Starting at the fixed root \(x\), traverse them once each. Equation (9) guarantees that every actual ordered physical window has exactly the prescribed \(h_x\)-color. Hence the cube geodesic is monochromatic, and (10) gives (2). When \(B=0\), all supports are empty, one may simply take \(D=V\), giving \(M=n\). This proves Theorem A. \(\square\)
+Read the resulting increasing path \(p_1,\ldots,p_L\) as a sequence of *distinct cube directions*. Starting at the fixed root \(x\), traverse them once each. Equation (9) guarantees that every  ordered  window has exactly the prescribed \(h_x\)-color. Hence the cube geodesic is monochromatic, and (10) gives (2). When \(B=0\), all supports are empty, one may simply take \(D=V\), giving \(M=n\). This proves Theorem A. \(\square\)
 
 #### Proof: quantitative barrier for prospective sublogarithmic examples
 
@@ -1278,17 +1278,17 @@ establishing (5). Since \(\binom n3\le n^3/6\), dividing by \(\binom n3\) gives 
 
 The previously established fixed-common-exterior-support theorem gives a sharp \(\Theta(\log n)\) guarantee for one set of finitely many special directions, with no reversal assumption. The previous *Polynomial monochromatic geodesics from sparse triplewise exterior support* gives a **stronger polynomial** guarantee for \(d=o(n)\), but **requires same-face reversal oddness** in order to invoke the Devine–Milans boundary-tournament square-root path theorem.
 
-The present theorem has neither restriction. Its supports can vary with the triple and its coloring can violate same-face antisymmetry maximally. For all physical ordered-three-face colorings, including legal unrestricted NORI3, it pins any potential sublogarithmic construction to the near-linear average essential-support regime. The established legal one-sentinel Devine–Milans construction has \(\bar d\le1\) and all monochromatic paths \(O(\log n)\), so (4) is **asymptotically sharp** for legal colorings with bounded *average triplewise* support, even though these need not admit a fixed common support.
+The present theorem has neither restriction. Its supports can vary with the triple and its coloring can violate same-face antisymmetry maximally. For all  ordered-three-face colorings, including legal unrestricted NORI3, it pins any potential sublogarithmic construction to the near-linear average essential-support regime. The established legal one-sentinel Devine–Milans construction has \(\bar d\le1\) and all monochromatic paths \(O(\log n)\), so (4) is **asymptotically sharp** for legal colorings with bounded *average triplewise* support, even though these need not admit a fixed common support.
 
-The method deliberately does not establish the universal conjectural \(\Omega(\log n)\) lower bound for arbitrary physical colorings: if \(\bar d=\Theta(n)\), the support hypergraph may be complete, and the independent-set extraction need yield only constantly many directions. A fundamentally different *exterior-fiber coherence* argument would be needed in that regime.
+The method deliberately does not establish the universal conjectural \(\Omega(\log n)\) lower bound for arbitrary  colorings: if \(\bar d=\Theta(n)\), the support hypergraph may be complete, and the independent-set extraction need yield only constantly many directions. A fundamentally different *exterior-fiber coherence* argument would be needed in that regime.
 
 There is also no immediate implication that \(\bar d=n^{1-o(1)}\) is **sufficient** for sublogarithmic examples. Theorems A–B give necessity only.
 
 ### Known obstructions after the Q9 refutation
 
-**Global status (October 10, 2026).** The original unrestricted physical ordered-three-face NORI conjecture is **false**. A fully legal, unrooted \(Q_9\) counterexample is proved in *Dimension-nine counterexample to the physical ordered-three-face NORI conjecture* (foundational Subsection 6). Therefore the universal conclusion of any proposed extraction argument from only antipodal-reversal oddness is false. The mechanism-level counterexamples below are independently useful because they distinguish which weakened, rooted, conditional, or related statements fail. In particular, the earlier statement that the listed *mechanism obstructions* are not themselves unrooted counterexamples remains correct, while an actual unrooted counterexample is now known.
+**Global status (October 10, 2026).** The original unrestricted  ordered-three-face NORI conjecture is **false**. A fully legal, unrooted \(Q_9\) counterexample is proved in *Dimension-nine counterexample to the  ordered-three-face NORI conjecture* (foundational Subsection 6). Therefore the universal conclusion of any proposed extraction argument from only antipodal-reversal oddness is false. The mechanism-level counterexamples below are independently useful because they distinguish which weakened, rooted, conditional, or related statements fail. In particular, the earlier statement that the listed *mechanism obstructions* are not themselves unrooted counterexamples remains correct, while an  unrooted counterexample is now known.
 
-**No fixed-switch correction survives.** The fully elementary *Unbounded mandatory color changes from multilevel local minima* construction proves that for each \(r\ge3\), in all dimensions \(n\ge2r^2+r+1\) a legal antipodal-reversal-odd physical coloring forces at least \(2r-4\) changes on every full geodesic. Thus there is **no universal constant \(K\)** for which every legal coloring admits a full geodesic with at most \(K\) switches. Quantitatively, the worst-case minimum is at least \(\sqrt{2n}-O(1)\). This is an obstruction to a family of weakened universal conjectures, and is stronger in scope than the two-switch Q9 refutation.
+**No fixed-switch correction survives.** The fully elementary *Unbounded mandatory color changes from multilevel local minima* construction proves that for each \(r\ge3\), in all dimensions \(n\ge2r^2+r+1\) a legal antipodal-reversal-odd  coloring forces at least \(2r-4\) changes on every full geodesic. Thus there is **no universal constant \(K\)** for which every legal coloring admits a full geodesic with at most \(K\) switches. Quantitatively, the worst-case minimum is at least \(\sqrt{2n}-O(1)\). This is an obstruction to a family of weakened universal conjectures, and is stronger in scope than the two-switch Q9 refutation.
 
 
 ---
@@ -1301,28 +1301,28 @@ These are **proved limitations of specific proposed implications**, not countere
 
 **A prescribed root need not support any full good geodesic.** In dimensions \(n\geq 6\) the exterior-weight parity construction (with the central reversal-odd correction in odd \(n\)) is legal and forces multiple color changes for every full order from a chosen root. Root motion remains permissible and necessary; see *Sharp rooted obstructions to one-change antipodal geodesics*.
 
-**No dimension-independent positive density or sublinear root-localization bound.** For even \(n\ge6\), the legal exterior-parity coloring has good roots *exactly* at Hamming weights \(n/2-\rho_n,\ldots,n/2+\rho_n\), with \(\rho_n=1\) if \(6\mid n\) and \(\rho_n=2\) otherwise. Their density is \(\Theta(n^{-1/2})\), and the nearest good root to \(0^n\) is at distance \(n/2-\rho_n\). Thus neither a uniform positive fraction of successful roots nor a universal \(o(n)\)-radius search around a prescribed root can be assumed. See the exact thin-shell theorem in *Sharp rooted obstructions to one-change antipodal geodesics*.
+**No dimension-independent positive density or sublinear root-localization bound.** For even \(n\ge6\), the legal exterior-parity coloring has good roots *exactly* at Hamming weights \(n/2-\rho_n,\ldots,n/2+\rho_n\), with \(\rho_n=1\) if \(6\mid n\) and \(\rho_n=2\) otherwise. Their density is \(\Theta(n^{-1/2})\), and the nearest good root to \(0^n\) is at distance \(n/2-\rho_n\). Thus neither a uniform positive fraction of successful roots nor a universal \(o(n)\)-radius search around a prescribed root can be assumed. See the  thin-shell theorem in *Sharp rooted obstructions to one-change antipodal geodesics*.
 
 **Good paths on every proper support do not imply a full good path at that root.** A verified legal \(Q_7\) coloring has an ordering with at most one switch on *every* proper support of size 3–6, yet every full seven-order from the same root has at least two switches. The full 1680-bit face-color certificate and exhaustive verifier are retained in *Maximal geodesic blockers and snake exchanges*. A more general exterior-weight construction gives all-dimensional short-path coverage without rooted full closure. These refute **coverage-only rooted implications**, not same-root *complementary reversed-terminal* intersections with their correct ordered memory, nor an unrooted conclusion.
 
 #### Exterior-bit consistency and restricted positional claims
 
-**Naively embedding the six-path forcing certificate is unsound.** Each added exterior coordinate must meet actual equality and complemented-face constraints. A signed cycle with an odd number of complementation edges yields \(z=z\oplus1\), so the six-row pattern can have no consistent higher-dimensional physical realization. The \(Q_6\) theorem and six-path implication proof remain correct. An entirely new globally compatible forcing network or a different inductive invariant remains possible. See *Exterior-bit holonomy and the six-path extension obstruction*.
+**Naively embedding the six-path forcing certificate is unsound.** Each added exterior coordinate must meet  equality and complemented-face constraints. A signed cycle with an odd number of complementation edges yields \(z=z\oplus1\), so the six-row pattern can have no consistent higher-dimensional  realization. The \(Q_6\) theorem and six-path implication proof remain correct. An entirely new globally compatible forcing network or a different inductive invariant remains possible. See *Exterior-bit holonomy and the six-path extension obstruction*.
 
-**Prescribing a sentinel slot is too strong even when a restricted family closes.** Legal face-dependent \(Q_7\) colorings can forbid every full good path with a designated direction third or fifth (exact finite coloring/certificate; historical ID \(nori_q7_fixed_sentinel_third_and_fifth_slot_2sat_counterexample_20261009\)). This does **not** refute ordinary \(Q_7\) closure with a free order. Positive one-sentinel \(Q_7\) and \(Q_8\) computer-assisted results retain their explicitly restricted exterior-dependence hypotheses; see *Seven-coordinate wing factorization and exact obstruction* and *Exterior face charts and Fourier transport*.
+**Prescribing a sentinel slot is too strong even when a restricted family closes.** Legal face-dependent \(Q_7\) colorings can forbid every full good path with a designated direction third or fifth ( finite coloring/certificate; historical ID \(nori_q7_fixed_sentinel_third_and_fifth_slot_2sat_counterexample_20261009\)). This does **not** refute ordinary \(Q_7\) closure with a free order. Positive one-sentinel \(Q_7\) and \(Q_8\) computer-assisted results retain their explicitly restricted exterior-dependence hypotheses; see *Seven-coordinate wing factorization and  obstruction* and *Exterior face charts and Fourier transport*.
 
-#### Physical witness geometry versus abstract carriers
+####  witness geometry versus abstract carriers
 
-**Formal equal-support diagonals need not be actual path transitions.** The physical window-shift graph contains squares whose abstract diagonals do not correspond to any four-edge ordered-window shift. Topological or parity arguments using them as actual incidence require correction. The proven optimal physical transport and connector counts survive; extracting one full compatible path remains open. See the Article IV window-transport Subsections.
+**Formal equal-support diagonals need not be  path transitions.** The  window-shift graph contains squares whose abstract diagonals do not correspond to any four-edge ordered-window shift. Topological or parity arguments using them as  incidence require correction. The proven optimal  transport and connector counts survive; extracting one full compatible path remains open. See the Article IV window-transport Subsections.
 
-**Index in an ambient uncolored carrier is insufficient.** Actual good-path cells require joint witnessing, not pairwise label compatibility. For contiguous extension-flag models, the established equivariant collapse to the window-level graph limits the index information such a model retains. This does not rule out a different, more informative jointly witnessed carrier. See the Article II topological-carrier Subsections.
+**Index in an ambient uncolored carrier is insufficient.**  good-path cells require joint witnessing, not pairwise label compatibility. For contiguous extension-flag models, the established equivariant collapse to the window-level graph limits the index information such a model retains. This does not rule out a different, more informative jointly witnessed carrier. See the Article II topological-carrier Subsections.
 
 #### Exchange and representation limitations
 
-**Every adjacent exchange is local, but need not improve a defect.** A swap changes at most four consecutive physical windows; local caps and opposite-color extremal walls can coexist with insertion/swap obstructions. A strict globally terminating potential remains unproved. See *Maximal geodesic blockers and snake exchanges* and Article V.
+**Every adjacent exchange is local, but need not improve a defect.** A swap changes at most four consecutive  windows; local caps and opposite-color extremal walls can coexist with insertion/swap obstructions. A strict globally terminating potential remains unproved. See *Maximal geodesic blockers and snake exchanges* and Article V.
 
-**Edge-coloring results do not automatically transfer.** A path's physical edge-color word does not determine the ordered colors of its overlapping three-faces. Affine and central-Johnson edge theorems remain valid for the edge problem, but a NORI transfer must preserve actual exterior bits, terminal order and seam colors. See Article VIII.
+**Edge-coloring results do not automatically transfer.** A path's  edge-color word does not determine the ordered colors of its overlapping three-faces. Affine and central-Johnson edge theorems remain valid for the edge problem, but a NORI transfer must preserve  exterior bits, terminal order and seam colors. See Article VIII.
 
-These entries are curated by *mechanism*, not by the history of unsuccessful searches. A new exact proof may supersede an entry; its mathematical statement and surviving scope should then be revised.
+These entries are curated by *mechanism*, not by the history of unsuccessful searches. A new  proof may supersede an entry; its mathematical statement and surviving scope should then be revised.
 
-**Flat maximal-defect one-move plateaus exist in every dimension \(n\ge7\).** An explicit position-independent, reversal-odd ordered-three-face coloring makes the identity order and each of its \(n-1\) adjacent swaps have the maximum \(n-3\) window-color changes, while another order is entirely monochromatic. All roots have the same word for each order. Thus strict descent in the raw switch count by one adjacent swap, even supplemented with arbitrary root changes, is *false*. The proof is the all-dimensional flat exchange-trap theorem in *Maximal geodesic blockers and snake exchanges*. It leaves neutral sequences, larger exchanges, and other global potentials open.\n\n**Sharp quantitative NORI3 refutations.** An exact 18,840-case reduction upgrades the Q15 three-class counterexample to minimum three switches. A further boundary-parity argument improves one-sentinel switch loss from two to one; the multilevel NORI3 coloring has exact minimum 2r-3 in dimension n>=2r²+r+1 (for each fixed class partition with >=2r+1 directions per class). Thus Q22, Q37 and Q56 admit constructed colorings with exact minima 3, 5 and 7. For every odd k>=3, the insertion loss improves from k-1 to k-2 and the forced-switch lower bound improves to 2r-2k+3. These are counterexamples to universal k-1 switch guarantees; they preserve the physical-face antipodal-reversal law and allow every direction interleaving.
+**Flat maximal-defect one-move plateaus exist in every dimension \(n\ge7\).** An explicit position-independent, reversal-odd ordered-three-face coloring makes the identity order and each of its \(n-1\) adjacent swaps have the maximum \(n-3\) window-color changes, while another order is entirely monochromatic. All roots have the same word for each order. Thus strict descent in the raw switch count by one adjacent swap, even supplemented with arbitrary root changes, is *false*. The proof is the all-dimensional flat exchange-trap theorem in *Maximal geodesic blockers and snake exchanges*. It leaves neutral sequences, larger exchanges, and other global potentials open.\n\n**Sharp quantitative NORI3 refutations.** An  18,840-case reduction upgrades the Q15 three-class counterexample to minimum three switches. A further boundary-parity argument improves one-sentinel switch loss from two to one; the multilevel NORI3 coloring has  minimum 2r-3 in dimension n>=2r²+r+1 (for each fixed class partition with >=2r+1 directions per class). Thus Q22, Q37 and Q56 admit constructed colorings with  minima 3, 5 and 7. For every odd k>=3, the insertion loss improves from k-1 to k-2 and the forced-switch lower bound improves to 2r-2k+3. These are counterexamples to universal k-1 switch guarantees; they preserve the -face antipodal-reversal law and allow every direction interleaving.

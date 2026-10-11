@@ -2,6 +2,9 @@
 
 Toolkit is for genuinely reusable mathematics whose natural formulation transcends its originating route. There is no intermediate Toolkit state: an object either is Toolkit or it is not. Route-local lemma graphs belong in Sections/Subsections.
 
+- [Flag algebras: counting, positivity, and sparse applicability](literature_flag_algebras_counting_positivity_and_sparse_applicability.md) — other
+- [LINP transferable mechanisms: structured lower-bound constructions](linp_transferable.md) — other
+- [LINP utilities: linear path, terminal shadow, and incidence lemmas](linp_utilities.md) — other
 - [Aharoni–Haxell economically hierarchic simplex triangulation and Sperner selection](literature_aharoni_haxell_economically_hierarchic_sperner_construction.md) — construction — An EH triangulation exposes at most |I|-1 compatible boundary constraints at a face of index set I. Inductive non-pinned hyperedge labels become a global rainbow matching through Sperner; local extension plus global compatibility.
 - [Based antipodal geodesics, root charts, and ordered physical-face windows](nori_based_permutation_symmetry.md) — general_nori
 - [Convex zero certificates: directed cycles and oriented-tree cancellation](nori_root_zero_circulation_criterion.md) — general_nori

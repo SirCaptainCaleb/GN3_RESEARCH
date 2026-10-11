@@ -2,7 +2,7 @@
 
 # Coupled chronological saddle potentials and checkerboard obstructions
 
-## 1. An exact simultaneous-compatibility criterion
+## 1. An  simultaneous-compatibility criterion
 
 Let \(A=\{a_1,\dots,a_p\}\) and \(B=\{b_1,\dots,b_q\}\) be the parts of an edge-ordered complete bipartite graph, with \(p=q\) or \(p=q+1\). Write \(w(a,b)\) for the distinct numerical ranks of its edges. For an ordering \(A^\ast=(a_1,\dots,a_p)\) and \(B^\ast=(b_1,\dots,b_q)\), define
 \[
@@ -32,9 +32,9 @@ For \(p=q\), the relevant indices end at \(q-1\); for \(p=q+1\) they end at \(q\
 \]
 Because all edge weights are distinct, the first local-optimality requirement is precisely \(w(a_i,b_i)<w(a_{i+1},b_i)\), and the second is precisely \(w(a_{i+1},b_i)<w(a_{i+1},b_{i+1})\). Together they are *all* consecutive edge inequalities for the displayed interleaving, with the correct endpoint convention in either parity. \(\square\)
 
-Thus the two chronological tournament constraints admit an exact **pure local saddle** formulation on two permutation spaces. The existing chronological theorem for transitive tournaments guarantees the minimizing half for each fixed \(B^\ast\); the simultaneous maximizing half is the missing coupling. The four-vertex example in *Endpoint-tournament factorization and monochromatic orders* shows that an arbitrary edge order need not possess such a local saddle for a spanning interleaving.
+Thus the two chronological tournament constraints admit an  **pure local saddle** formulation on two permutation spaces. The existing chronological theorem for transitive tournaments guarantees the minimizing half for each fixed \(B^\ast\); the simultaneous maximizing half is the missing coupling. The four-vertex example in *Endpoint-tournament factorization and monochromatic orders* shows that an arbitrary edge order need not possess such a local saddle for a spanning interleaving.
 
-The criterion uses only ranks of edges between \(A\) and \(B\) and makes no assumption on edges within the two parts. It therefore transfers directly to the edge-order-generated ordinary boundary 3-tournament on an interleaving of those directions. For physical cube three-faces the transfer is valid for direction-only colors, where every exterior fiber has the same chart.
+The criterion uses only ranks of edges between \(A\) and \(B\) and makes no assumption on edges within the two parts. It therefore transfers directly to the edge-order-generated ordinary boundary 3-tournament on an interleaving of those directions. For  cube three-faces the transfer is valid for direction-only colors, where every exterior fiber has the same chart.
 
 ## 2. Threshold chain graphs and the two-by-two obstruction
 
@@ -65,7 +65,7 @@ b' \;-\; a \;-\; b \;-\; a',
 w(a,b')<w(a,b)<w(a',b).
 \tag{4}
 \]
-The missing step is **global compatibility**: choosing successive pivots and their connectors without reusing vertices or reversing the chronology of earlier edges. The following open problem is a natural exact test of the mechanism.
+The missing step is **global compatibility**: choosing successive pivots and their connectors without reusing vertices or reversing the chronology of earlier edges. The following open problem is a natural  test of the mechanism.
 
 **Chain-prefix Hamilton conjecture (OPEN).** Every edge ordering of \(K_{m,m}\) in which every initial edge segment is a chain graph has a strictly increasing alternating Hamilton path. The assertion concerns the complete spanning path; Theorem 3 proves only the hereditary local pivot property.
 
@@ -101,8 +101,8 @@ Consequently at most \(2\sqrt N/c\) blocks are removed. Concatenate their vertex
 
 **Implication for the full grand-conjecture boundary goal.** The established hereditary square-root path guarantee supplies a spanning permutation with \(D=O(\sqrt N)\). A universal bound \(D=o(\sqrt N)\) for **every** ordinary boundary tournament would, by Lemma 6, force a positive path on \(\omega(\sqrt N)\) vertices, improving the universal square-root baseline. Conversely, improving path bounds can be leveraged back into stronger defect bounds by the same greedy packing argument.
 
-The triangular potential (1) applies specifically to globally edge-ordered instances, whereas the defect variable (8) is meaningful in the **full** ordinary boundary class. Their relationship is a candidate direction for research, not an asserted transfer to unrestricted NORI1: the latter requires independent physical-edge and root-fiber compatibility.
+The triangular potential (1) applies specifically to globally edge-ordered instances, whereas the defect variable (8) is meaningful in the **full** ordinary boundary class. Their relationship is a candidate direction for research, not an asserted transfer to unrestricted NORI1: the latter requires independent -edge and root-fiber compatibility.
 
 ## Status and significance
 
-Theorems 1, 3, 4, Propositions 2, 5 and Lemmas 6–7 are proved with exact hypotheses; the chain-prefix Hamilton conjecture remains OPEN. This package isolates a joint local-saddle mechanism, a genuine four-local obstruction, a probabilistic barrier to extracting clean submatrices, and a quantitative route by which stronger coupling could improve the full ordinary-boundary lower bound. No theorem here settles unrestricted NORI1 or the Hamilton/long-path problem for every ordinary boundary 3-tournament.
+Theorems 1, 3, 4, Propositions 2, 5 and Lemmas 6–7 are proved with  hypotheses; the chain-prefix Hamilton conjecture remains OPEN. This package isolates a joint local-saddle mechanism, a four-local obstruction, a probabilistic barrier to extracting clean submatrices, and a quantitative route by which stronger coupling could improve the full ordinary-boundary lower bound. No theorem here settles unrestricted NORI1 or the Hamilton/long-path problem for every ordinary boundary 3-tournament.

@@ -6,7 +6,7 @@
 - Labels: obstruction, approach
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -21,13 +21,13 @@
 
 ## Research note
 
-## Exact representability fact
+## precise representability fact
 
 A (direction-only) ordinary boundary 3-tournament assigns each ordered triple of distinct vertices a bit b(a,b,c), with b(c,b,a)=1−b(a,b,c). Interpret b(a,b,c) as a comparison of incident edges ab and bc in the line graph L(K_n). Reversal oddness makes this a well-defined tournament orientation on the *edges* of L(K_n).
 
 Such a tournament comes from ONE global strict total order of E(K_n), with b(a,b,c)=1_{ab≺bc}, **if and only if** this comparison orientation on L(K_n) is acyclic. Necessity follows because a strict global order cannot contain directed comparison cycles. For sufficiency topologically sort the acyclic orientation of L(K_n) to a total order of vertices E(K_n); it induces every specified adjacent-edge comparison.
 
-This is a straightforward order-theoretic equivalence, NOT a novel NORI theorem. For a concrete nonglobal example in K4, prescribe comparisons e12≺e13, e13≺e14 and e14≺e12 at their shared endpoint 1; complete remaining triple colors arbitrarily respecting reversal. It satisfies the ordinary boundary reversal law but has a directed comparison triangle, so no global edge order realizes it.
+This is a straightforward order-theoretic equivalence, NOT a novel NORI theorem. For a explicit nonglobal example in K4, prescribe comparisons e12≺e13, e13≺e14 and e14≺e12 at their shared endpoint 1; complete remaining triple colors arbitrarily respecting reversal. It satisfies the ordinary boundary reversal law but has a directed comparison triangle, so no global edge order realizes it.
 
 ## Consequential methodological distinction
 
@@ -35,6 +35,6 @@ Increasing Hamilton paths in edge-ordered complete graphs handle precisely the *
 
 ## Discriminating next step
 
-For the relevant proposed lifting, identify the exact line-graph directed cycles it cannot accommodate and whether any local modification preserves a long tight path in the original vertex set. A comparison-DAG argument alone is insufficient: line-graph paths may reuse original vertices and therefore need not be vertex-simple K_n tight paths.
+For the relevant proposed lifting, identify the precise line-graph directed cycles it cannot accommodate and whether any local modification preserves a long tight path in the original vertex set. A comparison-DAG argument alone is insufficient: line-graph paths may reuse original vertices and therefore need not be vertex-simple K_n tight paths.
 
 **Scope:** representation obstruction; not an impossibility theorem for long ordinary boundary-tournament paths.

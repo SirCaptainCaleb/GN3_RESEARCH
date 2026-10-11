@@ -12,9 +12,9 @@ b(a,v,c)=t(a,c)\oplus s(v)
 \]
 for pairwise distinct \(a,v,c\). Thus the local comparison tournament at a middle vertex \(v\) is either \(T[V\setminus\{v\}]\) or its complete reversal, with the choice allowed to vary at *every* middle vertex.
 
-**Theorem (arbitrary middle-sign spanning tight path).** For every \(n\ge3\), every such \(b\) has a vertex-simple **spanning positive tight path**. Its direction-only realization \(c(F,(a,v,c))=b(a,v,c)\) on the *physical ordered three-faces* of \(Q_n\) obeys both same-face reversal oddness and antipodal invariance, and admits a **monochromatic full antipodal cube geodesic from every starting root**.
+**Theorem (arbitrary middle-sign spanning tight path).** For every \(n\ge3\), every such \(b\) has a vertex-simple **spanning positive tight path**. Its direction-only realization \(c(F,(a,v,c))=b(a,v,c)\) on the * ordered three-faces* of \(Q_n\) obeys both same-face reversal oddness and antipodal invariance, and admits a **monochromatic full antipodal cube geodesic from every starting root**.
 
-**Proof.** We have \(t(c,a)=1\oplus t(a,c)\), hence \(b(c,v,a)=1\oplus b(a,v,c)\). Direction-only physical-face coloring therefore has \(c(F,\operatorname{rev}\pi)=1\oplus c(F,\pi)\) and \(c(\bar F,\pi)=c(F,\pi)\), giving the legal combined NORI antipodal-reversal law.
+**Proof.** We have \(t(c,a)=1\oplus t(a,c)\), hence \(b(c,v,a)=1\oplus b(a,v,c)\). Direction-only -face coloring therefore has \(c(F,\operatorname{rev}\pi)=1\oplus c(F,\pi)\) and \(c(\bar F,\pi)=c(F,\pi)\), giving the legal combined NORI antipodal-reversal law.
 
 Put \(m=\lceil n/2\rceil\ge2\) and \(k=\lfloor n/2\rfloor\). By pigeonhole, some bit \(\varepsilon\) occurs at least \(m\) times among the values \(s(v)\). We choose an \(m\)-element set \(O\subseteq s^{-1}(\varepsilon)\), and put \(E=V\setminus O\), so \(|E|=k\). For \(m\notin\{3,5,7\}\), any \(O\) will work. If \(m\in\{3,5,7\}\) and \(|s^{-1}(\varepsilon)|\ge m+1\), choose \(O\) so that \(T[O]\) is **not regular**. Such a set exists by the following elementary observation.
 
@@ -28,7 +28,7 @@ t(e_j,e_{j+1})=\varepsilon\quad(1\le j<k).
 \]
 For \(\varepsilon=0\), use an ordinary directed Hamilton path in \(T[E]\); for \(\varepsilon=1\), reverse one.
 
-Now prescribe an orientation of the *abstract* path on \(m\) consecutively numbered vertices: its \(j\)-th edge points forward precisely when \(s(e_j)=0\), and backward precisely when \(s(e_j)=1\), for \(1\le j<m\). These \(m-1\) bits are defined because \(k\ge m-1\) in both parities. Havet and Thomassé's exact theorem states that every tournament contains every orientation of a Hamilton path of the same order **except** for an antidirected path in one of three regular tournaments: the directed \(3\)-cycle, the regular \(5\)-vertex tournament, and the Paley \(7\)-vertex tournament. If \(m\notin\{3,5,7\}\), there is no exception (this includes \(m=2\)). If \(m\in\{3,5,7\}\) and the majority class has size at least \(m+1\), our nonregular choice of \(T[O]\) avoids all exceptions. In the remaining case, \(E\) has constant sign \(1\oplus\varepsilon\), so the prescribed abstract path is uniformly directed (or uniformly reversed), and the elementary tournament Hamilton-path theorem applies even if \(T[O]\) is exceptional. Thus in **every dimension \(n\ge3\)** we can realize the prescribed orientation inside \(T[O]\). We obtain an ordering \(o_1,\ldots,o_m\) of all \(O\), with
+Now prescribe an orientation of the *abstract* path on \(m\) consecutively numbered vertices: its \(j\)-th edge points forward precisely when \(s(e_j)=0\), and backward precisely when \(s(e_j)=1\), for \(1\le j<m\). These \(m-1\) bits are defined because \(k\ge m-1\) in both parities. Havet and Thomassé's  theorem states that every tournament contains every orientation of a Hamilton path of the same order **except** for an antidirected path in one of three regular tournaments: the directed \(3\)-cycle, the regular \(5\)-vertex tournament, and the Paley \(7\)-vertex tournament. If \(m\notin\{3,5,7\}\), there is no exception (this includes \(m=2\)). If \(m\in\{3,5,7\}\) and the majority class has size at least \(m+1\), our nonregular choice of \(T[O]\) avoids all exceptions. In the remaining case, \(E\) has constant sign \(1\oplus\varepsilon\), so the prescribed abstract path is uniformly directed (or uniformly reversed), and the elementary tournament Hamilton-path theorem applies even if \(T[O]\) is exceptional. Thus in **every dimension \(n\ge3\)** we can realize the prescribed orientation inside \(T[O]\). We obtain an ordering \(o_1,\ldots,o_m\) of all \(O\), with
 \[
 t(o_j,o_{j+1})=s(e_j)\quad(1\le j<m).
 \]
@@ -54,11 +54,11 @@ b(e_j,o_{j+1},e_{j+1})
 =t(e_j,e_{j+1})\oplus s(o_{j+1})
 =\varepsilon\oplus\varepsilon=0.
 \]
-Thus \(p\) is a spanning positive tight path. The physical cube path traversing the coordinates in the order \(p\) uses each coordinate once and is therefore a full antipodal geodesic. Its consecutive physical ordered-three-face windows all have color zero because the coloring depends only on the ordered coordinate triple, so **every starting cube vertex works**. \(\square\)
+Thus \(p\) is a spanning positive tight path. The  cube path traversing the coordinates in the order \(p\) uses each coordinate once and is therefore a full antipodal geodesic. Its consecutive  ordered-three-face windows all have color zero because the coloring depends only on the ordered coordinate triple, so **every starting cube vertex works**. \(\square\)
 
-**Corollary (large induced factorized chart).** Let \(b\) be an arbitrary ordinary boundary 3-tournament on \(V\). If some \(X\subseteq V\), \(|X|\ge3\), has an induced triple coloring of the above factorized form, then \(b\) has a positive vertex-simple tight path on all \(|X|\) vertices of \(X\), hence a genuine monochromatic cube geodesic of \(|X|\) moves. More generally, the same conclusion holds for physical ordered-three-face colorings on a fixed cube fiber whenever every triple on \(X\) is insensitive to changing the coordinates of \(X\) outside its free set and, on that common fiber, agrees with the factorized rule. This fiber hypothesis ensures that all windows share the *same* direction-only chart.
+**Corollary (large induced factorized chart).** Let \(b\) be an arbitrary ordinary boundary 3-tournament on \(V\). If some \(X\subseteq V\), \(|X|\ge3\), has an induced triple coloring of the above factorized form, then \(b\) has a positive vertex-simple tight path on all \(|X|\) vertices of \(X\), hence a monochromatic cube geodesic of \(|X|\) moves. More generally, the same conclusion holds for  ordered-three-face colorings on a fixed cube fiber whenever every triple on \(X\) is insensitive to changing the coordinates of \(X\) outside its free set and, on that common fiber, agrees with the factorized rule. This fiber hypothesis ensures that all windows share the *same* direction-only chart.
 
-**Interpretation and exact limitation.** The earlier all-dimensional theorem below permits one exceptional value of \(s\) and uses elementary tournament Hamilton paths. The new theorem permits **arbitrary sign patterns at all \(n\) middle directions**, replacing the required second parity-path orientation by the universal oriented-Hamilton-path theorem; the three exceptional oriented-Hamilton-path instances of orders \(3,5,7\) are avoided by choosing a nonregular majority subtournament or, when the majority class has exactly the required size, by observing that the prescribed orientation pattern is constant. Thus the theorem holds in every dimension \(n\ge3\). This does not assert the same result for a general boundary 3-tournament: there the local middle tournaments \(T_v\) can vary independently, rather than being restrictions of one tournament or its reverse. Handling a chronologically *prescribed sequence of different tournaments* on one parity class is the missing transfer. The familiar theorem on transversal Hamilton paths through a family of tournaments does not automatically supply this ordered requirement. The arbitrary exterior-dependent physical NORI3 case and the separate unrestricted NORI1 full-geodesic conjecture also remain unresolved.
+**Interpretation and  limitation.** The earlier all-dimensional theorem below permits one exceptional value of \(s\) and uses elementary tournament Hamilton paths. The new theorem permits **arbitrary sign patterns at all \(n\) middle directions**, replacing the required second parity-path orientation by the universal oriented-Hamilton-path theorem; the three exceptional oriented-Hamilton-path instances of orders \(3,5,7\) are avoided by choosing a nonregular majority subtournament or, when the majority class has exactly the required size, by observing that the prescribed orientation pattern is constant. Thus the theorem holds in every dimension \(n\ge3\). This does not assert the same result for a general boundary 3-tournament: there the local middle tournaments \(T_v\) can vary independently, rather than being restrictions of one tournament or its reverse. Handling a chronologically *prescribed sequence of different tournaments* on one parity class is the missing transfer. The familiar theorem on transversal Hamilton paths through a family of tournaments does not automatically supply this ordered requirement. The arbitrary exterior-dependent  NORI3 case and the separate unrestricted NORI1 full-geodesic conjecture also remain unresolved.
 
 **External theorem used.** F. Havet and S. Thomassé, *Oriented Hamiltonian Paths in Tournaments: A Proof of Rosenfeld's Conjecture*, Journal of Combinatorial Theory, Series B **78** (2000), 243–273, DOI 10.1006/jctb.1999.1945. The published theorem has three small antidirected-path exceptions on 3, 5, and 7 vertices; there are no exceptions on at least eight vertices.
 
@@ -75,7 +75,7 @@ Then \(b\) contains a vertex-simple positive tight path of order at least
 \[
 \boxed{\lceil 2n/3\rceil}.
 \]
-If the two middle-vertex classes \(A=s^{-1}(0)\) and \(B=s^{-1}(1)\) differ in cardinality by at most one, \(b\) contains a **spanning positive tight path**. Both conclusions give monochromatic genuine coordinate-distinct cube geodesics of the same move lengths for the corresponding direction-only physical face coloring.
+If the two middle-vertex classes \(A=s^{-1}(0)\) and \(B=s^{-1}(1)\) differ in cardinality by at most one, \(b\) contains a **spanning positive tight path**. Both conclusions give monochromatic coordinate-distinct cube geodesics of the same move lengths for the corresponding direction-only  face coloring.
 
 **Proof.** For any vertex set \(X\) all of whose middle vertices have the same type \(j\), its induced triple coloring is \(b(a,v,c)=t_j(a,c)\). Split \(X\) into two parity classes with cardinalities differing by at most one. Choose a directed Hamilton path in \(T_j\) restricted to each parity class, and interleave their vertices. Every consecutive ordered triple has its outer vertices consecutive within one of those directed paths and hence has color zero. Thus \(X\) admits a spanning positive tight path.
 
@@ -87,7 +87,7 @@ Consequently the longest positive path has order at least \(\max(a,2b_0)\). As \
 \]
 so integer path order is at least \(\lceil2n/3\rceil\).
 
-If \(a=b_0\), the equal-size interleaving already spans \(V\). If \(a=b_0+1\), instead choose a directed Hamilton path of order \(a\) in the tournament of the other class, a directed Hamilton path of order \(b_0\) in the tournament of the first class, and interleave beginning and ending with a vertex from the larger class. Every window is again positive, and all \(n\) vertices occur. The physical realization is exact because the direction-only colors depend exclusively on these ordered triples and all directions are distinct. \(\square\)
+If \(a=b_0\), the equal-size interleaving already spans \(V\). If \(a=b_0+1\), instead choose a directed Hamilton path of order \(a\) in the tournament of the other class, a directed Hamilton path of order \(b_0\) in the tournament of the first class, and interleave beginning and ending with a vertex from the larger class. Every window is again positive, and all \(n\) vertices occur. The  realization is  because the direction-only colors depend exclusively on these ordered triples and all directions are distinct. \(\square\)
 
 **Scope.** The balanced conclusion permits independent and arbitrarily cyclic local tournaments \(T_0,T_1\), with no common global edge order and no reversal relationship between them. The \(\lceil 2n/3\rceil\) result is a genuinely linear guarantee even for unbalanced classes; the arbitrary-middle-sign theorem above strengthens it to full spanning when \(T_1\) is the reverse of \(T_0\) and \(n\ge3\). For a general boundary 3-tournament, the number of distinct local tournament types can grow with \(n\), so neither result asserts a universal linear bound. A promising precise next obstacle is a **chronologically prescribed** Hamilton path through two or more varying tournaments, rather than an unordered transversal that can assign its colors to positions after the path is chosen.
 
@@ -139,13 +139,13 @@ where \(t(a,d)=0\) for \(a\to d\) in some tournament on \([n]\setminus\{g\}\), \
 
 **Proof.** The balanced two-path tournament lemma proved above supplies a monochromatic full geodesic in the specified \((n-1)\)-facet. Apply the lemma above. \(\square\)
 
-**Research role.** A single suitably structured facet suffices for full one-change closure. In particular, face-dependent behavior outside that facet and across the entering ordered-three-face window cannot spoil the construction. This is a route for extending monochromatic coordinate-only theorems to genuine face-dependent NORI families.
+**Research role.** A single suitably structured facet suffices for full one-change closure. In particular, face-dependent behavior outside that facet and across the entering ordered-three-face window cannot spoil the construction. This is a route for extending monochromatic coordinate-only theorems to face-dependent NORI families.
 
 ## Recent consequences and compatibility conditions
 
 **Theorem.** There is a coordinate-only reversal-odd ordered-three-face coloring of Q_7 with no monochromatic six-direction geodesic in any coordinate facet. It nevertheless admits a full one-change geodesic. Thus the six-direction monochromatic-five-facet theorem cannot be extended by requiring a monochromatic (n-1)-facet in every dimension.
 
-**Exact construction.** Let V={0,1,2,3,4,5,6}. List the ordered triples (a,b,c) with a<c in lexicographic order, starting at index 0. There are 105 such triples. Let
+** construction.** Let V={0,1,2,3,4,5,6}. List the ordered triples (a,b,c) with a<c in lexicographic order, starting at index 0. There are 105 such triples. Let
 M=0x1ace4c51f1eca17f4237e025d13.
 For a<c, define h(a,b,c) to be bit i of M, where i is that triple's index. For a>c, put h(a,b,c)=1-h(c,b,a). Color each ordered face by h of its direction order, independently of its exterior bits. Reversal oddness follows immediately from the definition.
 
@@ -168,7 +168,7 @@ For a<c, define h(a,b,c) to be bit i of M, where i is that triple's index. For a
             counts[sum(x != y for x,y in zip(w,w[1:]))] += 1
         print(k, dict(sorted(counts.items())))
 
-The exact output is:
+The  output is:
 
 | directions traversed | zero changes | one change | two changes | three changes | four changes |
 |---|---:|---:|---:|---:|---:|
@@ -176,7 +176,7 @@ The exact output is:
 | 6 | 0 | 792 | 2520 | 1728 | 0 |
 | 7 | 0 | 144 | 1332 | 2376 | 1188 |
 
-Because colors ignore exterior bits, the zero in the six-direction row excludes every monochromatic six-direction path at every starting cube vertex. The example is a finite exact counterexample to the monochromatic-facet strengthening; the full one-change statement holds.
+Because colors ignore exterior bits, the zero in the six-direction row excludes every monochromatic six-direction path at every starting cube vertex. The example is a finite  counterexample to the monochromatic-facet strengthening; the full one-change statement holds.
 
 **Compatibility mechanism.** The cyclic direction order
 (0,1,2,5,3,4,6)
@@ -192,7 +192,7 @@ has word 00111.
 
 # Dimension-independent adjacent-order exchange law
 
-Let \(n\ge4\), \(x\in Q_n\), and \(p=(p_1,\ldots,p_n)\) be a permutation of the coordinate directions. For \(1\le i\le n-2\), let \(W_i(x,p)\) be the *actual* ordered three-face window of the full geodesic from \(x\) following \(p\), and let \(w_i(x,p)=c(W_i(x,p))\) for an arbitrary binary ordered-face coloring \(c\). For \(1\le i\le n-3\), write \(d_i(x,p)=w_i(x,p)\oplus w_{i+1}(x,p)\). Let \(\tau_kp\) interchange adjacent directions \(p_k,p_{k+1}\), where \(1\le k\le n-1\).
+Let \(n\ge4\), \(x\in Q_n\), and \(p=(p_1,\ldots,p_n)\) be a permutation of the coordinate directions. For \(1\le i\le n-2\), let \(W_i(x,p)\) be the ** ordered three-face window of the full geodesic from \(x\) following \(p\), and let \(w_i(x,p)=c(W_i(x,p))\) for an arbitrary binary ordered-face coloring \(c\). For \(1\le i\le n-3\), write \(d_i(x,p)=w_i(x,p)\oplus w_{i+1}(x,p)\). Let \(\tau_kp\) interchange adjacent directions \(p_k,p_{k+1}\), where \(1\le k\le n-1\).
 
 **Theorem (four-window locality).** For every \(x,p,k\),
 \[
@@ -233,7 +233,7 @@ Thus the graph of full orders, with edges given by adjacent swaps, is the **perm
 
 ## Chronologically prescribed transitive tournaments: a rank-potential theorem and the coupled-parity obstruction
 
-A tempting strengthening of the two-parity factorization method is to replace one fixed comparison tournament by a tournament that varies with the *position* in a path. The correct transitive case has a simple exact solution. It still does not synchronize the two interleaved parity paths.
+A tempting strengthening of the two-parity factorization method is to replace one fixed comparison tournament by a tournament that varies with the *position* in a path. The correct transitive case has a simple  solution. It still does not synchronize the two interleaved parity paths.
 
 **Theorem (chronological transitive Hamilton paths).** Let \(X\) be a set of \(m\ge 2\) vertices, and for each \(1\le i<m\) let \(T_i\) be a transitive tournament on \(X\). There is an ordering \(x_1,\ldots,x_m\) of all of \(X\) such that
 \[
@@ -264,4 +264,4 @@ has **every triple centered in \(B\)** positive. Its remaining windows, centered
 
 
 
-*Exact scoped proof in note* note_chronological_local_center_parity_and_rank_potential_limitations.
+* scoped proof in note* note_chronological_local_center_parity_and_rank_potential_limitations.

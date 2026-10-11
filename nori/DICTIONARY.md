@@ -48,6 +48,9 @@ color word: The sequence of colors of consecutive ordered k-face windows along a
 
 exterior coordinates: The coordinates fixed on a cube face, complementary to its free-coordinate directions.
 
+k-splice: A colored geodesic is k-splice if its color word admits a partition into at most k+1 consecutive monochromatic blocks. The blocks may have either color independently; their colors need not differ. A 0-splice geodesic is monochromatic.
+  Note: The parameter k counts permitted joins, independent of the dimension of the colored faces. For cube-edge colorings, any two monochromatic geodesics from antipodal endpoints meeting at one vertex concatenate into a 1-splice antipodal geodesic, regardless of their colors. A splice counts the permitted block decomposition; a switch or color change refers to different adjacent colors.
+
 ordered three-face: A three-dimensional cube face F together with an ordering of its three free directions.
   Note: No traversal corner is distinguished.
 
@@ -79,6 +82,10 @@ certified edge: A cube edge lying on at least one monochromatic four-edge geodes
 
 dead edge: A cube edge lying on no monochromatic four-edge geodesic for the specified ordered-three-face coloring.
 
+## Reachability
+
+monochromatic reachability: R(a) denotes all endpoints of monochromatic geodesics rooted at a, in either color, including a. R^x(a) restricts to length x. When a proof requires color i, write R(a;i) or R^x(a;i).
+
 ## Terminology
 
 NORI conjecture [alias -> NORI3]: 
@@ -92,8 +99,23 @@ NORI odd coloring: Ambiguous historical term for a coloring of directed three-ed
 actual [prohibited]: 
   Note: Rhetorical modifier in compositions; express the mathematical claim instead.
 
+concrete [prohibited]: 
+  Note: Avoid redundant emphasis in mathematical compositions.
+
 exact [prohibited]: 
   Note: Filler modifier in compositions; specify the equation or hypothesis instead.
 
+genuine [prohibited]: 
+  Note: Avoid redundant emphasis in mathematical compositions.
+
+literally [prohibited]: 
+  Note: Avoid redundant emphasis in mathematical compositions.
+
 physical [prohibited]: 
   Note: Redundant modifier in compositions; name the face, edge, or path in the definition.
+
+really [prohibited]: 
+  Note: Avoid redundant emphasis in mathematical compositions.
+
+truly [prohibited]: 
+  Note: Avoid redundant emphasis in mathematical compositions.
