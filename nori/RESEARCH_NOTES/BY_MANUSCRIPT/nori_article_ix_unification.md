@@ -1,0 +1,41 @@
+# Research notes linked to article nori_article_ix_unification
+
+Sidecar only; no note body is included in the mathematical manuscript.
+
+- [Affine Q4 certificate: convex reachability intersections need not splice](../note_affine_q4_convexified_reachability_false_intersection.md) — active/proved
+- [Alternating geodesic-window colors at every order](../note_uniform_length_all_roots_obstruction.md) — active/proved
+- [Antipodal geodesic concatenation and monochromatic reachability intersections](../note_antipodal_geodesic_reachability_splicing.md) — active/proved
+- [Antipodal-involution index differences and bichromatic bad-root limitations](../note_antipodal_involution_index_and_bichromatic_bad_root_limits.md) — active/proved
+- [Can a colorful topological selection complex preserve joint path realizability?](../note_joint_realizability_selection_for_nori1_and_boundary_tournaments.md) — active/proposed
+- [Carrier compatibility must mean common realizability, not just pairwise window agreement](../note_nori_carrier_requires_joint_actual_geodesic_witnesses.md) — active/method_limitation
+- [Color-blind antipodal reachability criterion for NORI1](../note_antipodal_midpoint_splice_candidate.md) — active/proved
+- [Color-blind antipodal reachability criterion for NORI1](../note_antipodal_midpoint_splice_candidate.md) — active/proved
+- [Common Freudenthal carrier: topological intersection certifies antipodal geodesic splicing](../note_common_freudenthal_reachability_intersection_extraction.md) — active/proved
+- [Common triangulation of monochromatic reachability](../note_common_triangulation_reachability_intersection_20261011.md) — active/proved
+- [Common triangulation of monochromatic reachability](../note_common_triangulation_reachability_intersection_20261011.md) — active/proved
+- [Eight-way block reversal does not repair boundary-tournament seams](../note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) — active/method_limitation
+- [Eight-way block reversal does not repair boundary-tournament seams](../note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) — active/method_limitation
+- [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](../note_grand_structure_uniform_length_geodesics.md) — active/open
+- [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](../note_grand_structure_uniform_length_geodesics.md) — active/open
+- [Induced reachability complexes in one fixed triangulation](../note_induced_reachability_complexes_fixed_triangulation.md) — active/proved
+- [Induced reachability subcomplexes in one fixed cube triangulation](../note_fixed_triangulation_induced_reachability_endpoint_intersection.md) — active/proved
+- [Linear height barrier for global ordered-pair transition ranks](../note_boundary_pair_rank_linear_height_barrier.md) — resolved/proved
+- [Monochromatic geodesic reachability forms accessible families, not necessarily simplicial complexes](../note_geodesic_reachability_accessibility_not_simplicial.md) — active/proved
+- [Ordered-pair antipodal edge model: a three-step connectivity obstruction](../note_ordered_pair_antipodal_graph_bridge_and_decoding_obstruction_20261011.md) — active/proved
+- [Ordered-pair antipodal edge model: a three-step connectivity obstruction](../note_ordered_pair_antipodal_graph_bridge_and_decoding_obstruction_20261011.md) — active/proved
+- [Ordinary boundary 3-tournaments need not come from a global edge order](../note_boundary_tournament_edge_orderability_is_strict_fallback.md) — active/proved
+- [Orientation-sensitive odd-window grand-conjecture candidate](../note_orientation_sensitive_odd_window_grand_candidate_20261011.md) — active/proposed
+- [Orientation-sensitive odd-window grand-conjecture candidate](../note_orientation_sensitive_odd_window_grand_candidate_20261011.md) — active/proposed
+- [Paired-start exact criterion for NORI1 as a unification toy model](../note_antipodal_paired_start_nori1_toy_unification_probe.md) — active/proved
+- [Refuted reversal-coherent odd-face conjecture](../note_reversal_coherent_odd_face_grand_conjecture_candidate.md) — active/refuted
+- [Refuted reversal-coherent odd-face conjecture](../note_reversal_coherent_odd_face_grand_conjecture_candidate.md) — active/refuted
+- [Reversal-odd transition networks: shared encoding and terminal-support obstruction](../note_reversible_transition_networks_terminal_support_obstruction_20261011.md) — active/proved
+- [Reversal-odd transition networks: shared encoding and terminal-support obstruction](../note_reversible_transition_networks_terminal_support_obstruction_20261011.md) — active/proved
+- [Root-slide selector topology: what high index cannot extract](../note_root_slide_selector_and_topological_index_limits.md) — active/method_limitation
+- [Scope limits of distinguished-direction NORI constructions and boundary edge-order models](../note_sentinel_transfer_and_boundary_comparison_model_scope.md) — active/proved
+- [Terminal-basin and root-profile nerve extraction gaps](../note_terminal_basins_and_root_profile_nerve_extraction_limits.md) — active/method_limitation
+- [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
+- [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
+- [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
+- [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
+- [Withdrawn proposal: balanced antipodal reachability](../note_orientation_sensitive_balanced_antipodal_reachability_candidate_20261011.md) — active/proposed

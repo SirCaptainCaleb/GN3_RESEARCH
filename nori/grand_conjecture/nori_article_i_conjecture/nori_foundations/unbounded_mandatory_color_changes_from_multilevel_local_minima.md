@@ -55,7 +55,7 @@ is reversal-even: \(h(a,b,c)=h(c,b,a)\).
 
 Adjoin one new letter \(s\) to \(q\), inserted at any of its \(m+1\) possible positions. Fix arbitrary \(z,\varepsilon\in\{0,1\}\). Color every consecutive triple avoiding \(s\) by its \(h\)-value XOR \(z\) if it occurs before \(s\), and XOR \(1-z\) if after \(s\). Color the triples with \(s\) at their final, middle, or initial position by \(0,\varepsilon,1\), respectively.
 
-**Lemma 2 (two-switch loss).** If the original \(H\) has \(T\) changes, every resulting \((m-1)\)-term triple-color word has at least \(T-2\) changes, independently of the insertion position and of \(z,\varepsilon\).
+**Lemma 2 (loss of two color changes).** If the original \(H\) has \(T\) changes, every resulting \((m-1)\)-term triple-color word has at least \(T-2\) changes, independently of the insertion position and of \(z,\varepsilon\).
 
 **Proof.** The ordinary triples surviving the insertion form a prefix and a suffix of the original \(H\); at most two *consecutive* terms of \(H\) are omitted. Within either surviving segment, XOR by a constant preserves all adjacent changes. Removing two consecutive terms deletes at most three adjacent comparisons. If all three \(s\)-containing triples occur, they appear in the order \((u,v,s),(u,s,v),(s,u,v)\) and have color word \((0,\varepsilon,1)\), which contributes at least one further change. Therefore the total is at least \(T-3+1=T-2\). If fewer than three \(s\)-containing triples occur, \(s\) occupies one of the first two or last two positions. In that case at most one ordinary \(H\)-term is omitted, and it is an endpoint; at most one original comparison is lost. The surviving changes alone are therefore at least \(T-1\). \(\square\)
 
@@ -92,15 +92,15 @@ changes along **every** full antipodal geodesic. This proves the theorem. \(\squ
 
 ## Consequence and scope
 
-The previously published binary-class sentinel coloring disproves one-change NORI for every \(n\ge9\), but gives a dimension-independent lower bound of two changes. The multilevel construction (5) proves a qualitatively different statement: **every proposed universal bounded-switch replacement is also false**, with a quantitative \(\Omega(\sqrt n)\) lower bound. The positive \(Q_5\) and \(Q_6\) results and the undecided \(Q_7,Q_8\) cases are unaffected. The ordinary-word lemma is sharp; no sharpness for the final geodesic bound is asserted.
+The previously published binary-class sentinel coloring disproves one-change NORI for every \(n\ge9\), but gives a dimension-independent lower bound of two changes. The multilevel construction (5) proves a qualitatively different statement: **every proposed universal bounded-cp replacement is also false**, with a quantitative \(\Omega(\sqrt n)\) lower bound. The positive \(Q_5\) and \(Q_6\) results and the undecided \(Q_7,Q_8\) cases are unaffected. The ordinary-word lemma is sharp; no sharpness for the final geodesic bound is asserted.
 
-## Sharp improvement: a one-switch insertion loss and  extremal value
+## Sharp improvement: a 2-cp insertion loss and  extremal value
 
 **Lemma (sharp ternary sentinel insertion).** In the insertion construction of Lemma 2, for *every* ordinary class word \(q\), every sentinel position and both independent bits \(z,\varepsilon\), the full color word \(C\) satisfies
 \[
 \boxed{\sigma(C)\ge \sigma(H(q))-1.}\tag{6}
 \]
-In particular, the earlier two-switch insertion-loss estimate is valid but suboptimal.
+In particular, the earlier 3-cp insertion-loss estimate is valid but suboptimal.
 
 **Proof.** If the insertion has two nonempty surviving ordinary-window segments, it deletes two adjacent letters of \(H\), eliminating at most three adjacent comparisons. Between the surviving  segments there are three sentinel-containing windows, whose colors are \(0,\varepsilon,1\); their internal switch count is exactly one. If fewer than three of the removed comparisons change color, the claimed loss of at most one follows immediately.
 
@@ -270,9 +270,9 @@ No changes from different components are added speculatively: every switch count
 
 ## 4. Scope and NORI1/NORI2 rotation
 
-The odd-\(k\) theorem and (T) together give a **uniform unbounded-switch construction for all fixed \(k\ge3\)**, with the same lower bound \(2r-2(k-1)\) in dimension \(n\ge r(2r+1)+1\). For fixed \(k\), choosing \(r\) on the order of \(\sqrt{n/2}\) yields \(\sqrt{2n}-O(k)\) compulsory changes.
+The odd-\(k\) theorem and (T) together give a **uniform unbounded-cp construction for all fixed \(k\ge3\)**, with the same lower bound \(2r-2(k-1)\) in dimension \(n\ge r(2r+1)+1\). For fixed \(k\), choosing \(r\) on the order of \(\sqrt{n/2}\) yields \(\sqrt{2n}-O(k)\) compulsory changes.
 
-The construction genuinely needs at least three ordered free directions to define the local-minimum obstruction. The distinct case \(k=2\) has a symmetric **pair** statistic; the sibling result *NORI2 sentinel barrier and  one-switch examples* proves that every one-sentinel symmetric-pair coloring of the analogous form admits a one-switch full geodesic. For \(k=1\), if an antipodally odd -edge geodesic has one switch, rotating its direction sequence at the switch and replacing the old prefix by its antipodal copy yields a monochromatic full geodesic. These lower-dimensional features explain why the present theorem does not settle NORI1 or unrestricted NORI2.
+The construction genuinely needs at least three ordered free directions to define the local-minimum obstruction. The distinct case \(k=2\) has a symmetric **pair** statistic; the sibling result *NORI2 sentinel barrier and  2-cp examples* proves that every one-sentinel symmetric-pair coloring of the analogous form admits a 2-cp full geodesic. For \(k=1\), if an antipodally odd -edge geodesic has one switch, rotating its direction sequence at the switch and replacing the old prefix by its antipodal copy yields a monochromatic full geodesic. These lower-dimensional features explain why the present theorem does not settle NORI1 or unrestricted NORI2.
 
 ## 5. Independent stress tests
 
@@ -372,7 +372,7 @@ The root and permutation were arbitrary, proving the theorem. \(\square\)
 
 Take \(r=\lfloor(\sqrt{8n-7}-1)/4\rfloor\), with \(r\ge3\). Then \(r(2r+1)+1\le n\), giving a lower bound \(\sqrt{2n}-O(k)\) on the minimum changes of the constructed coloring. For \(k=3\), the result recovers the established multilevel construction. For \(k=5\), \(r=7,n=106\) forces at least six changes (versus the hierarchy's proposed four). For \(k=7\), \(r=10,n=211\) forces at least eight (versus the proposed six).
 
-The use of the central triple requires odd \(k\). For even \(k\), reversing an ordered face interchanges its two middle positions, and this  projection is unavailable. The argument therefore makes no assertion about unrestricted NORI2 or higher even \(k\). For NORI1, there is no triple and no central sentinel with two distinct neighbors; the well-known cyclic root-rotation converting a one-switch edge path into a monochromatic edge path has no analogue in this construction.
+The use of the central triple requires odd \(k\). For even \(k\), reversing an ordered face interchanges its two middle positions, and this  projection is unavailable. The argument therefore makes no assertion about unrestricted NORI2 or higher even \(k\). For NORI1, there is no triple and no central sentinel with two distinct neighbors; the well-known cyclic root-rotation converting a 2-cp edge path into a monochromatic edge path has no analogue in this construction.
 
 **Independent finite stress test.** Exhaustive tests enumerated all ternary ordinary words, insertion positions, both starting sentinel bits and both central bits for \((k,m)=(3,7),(5,7),(5,8),(7,9)\); all 1,163,484 tests satisfied (3). The mathematical proof above is unconditional.
 

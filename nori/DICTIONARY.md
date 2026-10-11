@@ -41,15 +41,15 @@ antipodal geodesic: An n-edge path in Q_n from x to its bitwise complement bar x
 antipodal reversal of a geodesic: The map (x_0,…,x_m)↦(bar x_m,…,bar x_0).
   Note: Reverses direction order and complements the face.
 
-color change: A position between adjacent entries of a binary color word at which the values differ; synonymous with switch.
+color change: A position between adjacent entries of a binary color word at which the values differ.
 
 color word: The sequence of colors of consecutive ordered k-face windows along a directed cube geodesic.
   Note: For an m-edge path, m−k+1 windows exist when m≥k.
 
 exterior coordinates: The coordinates fixed on a cube face, complementary to its free-coordinate directions.
 
-k-splice: A colored geodesic is k-splice if its color word admits a partition into at most k+1 consecutive monochromatic blocks. The blocks may have either color independently; their colors need not differ. A 0-splice geodesic is monochromatic.
-  Note: The parameter k counts permitted joins, independent of the dimension of the colored faces. For cube-edge colorings, any two monochromatic geodesics from antipodal endpoints meeting at one vertex concatenate into a 1-splice antipodal geodesic, regardless of their colors. A splice counts the permitted block decomposition; a switch or color change refers to different adjacent colors.
+k-cp: A path is k-cp (color-partitioned) if its edges admit a partition into at most k consecutive subpaths such that every ordered-face window fully contained within each subpath has the same color. Windows crossing a partition boundary are unrestricted. Equivalently, it is a concatenation of at most k monochromatic subpaths. The color word of the whole path may have more than k-1 changes.
+  Note: The parameter k counts monochromatic subpaths, not color changes in the full window word. For an edge coloring, a 2-cp has at most one color change. For ordered higher-dimensional face colorings, boundary-crossing windows may contribute additional color changes. Two monochromatic geodesics from antipodal cube vertices to a common vertex always concatenate into a 2-cp antipodal geodesic, regardless of their colors.
 
 ordered three-face: A three-dimensional cube face F together with an ordering of its three free directions.
   Note: No traversal corner is distinguished.
@@ -62,11 +62,11 @@ root: The first vertex of a directed cube geodesic.
 
 ## Cube Models
 
-NORI switch number S_3(n): S_3(n)=max_c min_P #{i:c_i(P)≠c_{i+1}(P)}, where c ranges over NORI3 colorings and P over antipodal geodesics of Q_n.
+NORI color-change number S_3(n): S_3(n)=max_c min_P #{i:c_i(P)≠c_{i+1}(P)}, where c ranges over NORI3 colorings and P over antipodal geodesics of Q_n.
   Note: A property of the k=3 coloring class.
 
 NORI_K: For 1≤k≤n, the class of binary colorings c(F,π) of pairs comprising a k-dimensional face F of Q_n and an ordering π of its k free coordinate directions, satisfying c(bar F,rev π)=1−c(F,π). A length-n antipodal geodesic has n−k+1 consecutive ordered k-face windows.
-  Note: NORI_K names the coloring class, not a conjecture; NORIK is synonymous. The discarded universal one-switch assertion concerns the k=3 case. For every fixed k≥3 and n≥k+2, the two-sentinel antichain construction supplies a coloring with no monochromatic coordinate-distinct geodesic longer than 3m+3k−4, where m=min{d≥2: binom(d,floor(d/2))≥n−2}=O(log n). Its proof is preserved in the foundational Section of Article I.
+  Note: NORI_K names the coloring class, not a conjecture; NORIK is synonymous. The discarded universal 2-cp assertion concerns the k=3 case. For every fixed k≥3 and n≥k+2, the two-sentinel antichain construction supplies a coloring with no monochromatic coordinate-distinct geodesic longer than 3m+3k−4, where m=min{d≥2: binom(d,floor(d/2))≥n−2}=O(log n). Its proof is preserved in the foundational Section of Article I.
 
 NORIK [alias -> NORI_K]: 
   Note: Short spelling of NORI_K.
@@ -89,7 +89,7 @@ monochromatic reachability: R(a) denotes all endpoints of monochromatic geodesic
 ## Terminology
 
 NORI conjecture [alias -> NORI3]: 
-  Note: Historical alias for the refuted unrestricted one-switch assertion concerning NORI3; it is not synonymous with the class NORI3.
+  Note: Historical alias for the refuted unrestricted 2-cp assertion concerning NORI3; it is not synonymous with the class NORI3.
 
 NORI odd coloring: Ambiguous historical term for a coloring of directed three-edge windows rather than of ordered cube faces.
   Note: Specify the model.

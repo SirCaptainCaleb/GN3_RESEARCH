@@ -2,14 +2,14 @@
 
 - Stable ID: note_boundary_pair_rank_linear_height_barrier
 - Author: unspecified; session provenance retained
-- Primary home: section:nori_seven_coordinate_structure
+- Primary home: article:nori_article_ix_unification
 - Labels: obstruction, rank_potential, boundary_tournament
 - Lifecycle: resolved
 - Epistemic status: proved
-- Current version: 5
+- Current version: 6
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4981_3
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6202_2
 - Disposition: Mathematical result preserved as completed background; future use is as evidence or test of a common NORI1/boundary-tournament unification.
 - Successor: none
 

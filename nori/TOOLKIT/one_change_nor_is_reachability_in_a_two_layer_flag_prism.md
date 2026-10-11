@@ -9,7 +9,7 @@ For reversal-odd direction-only ordered r-tuple colorings, a two-phase flag-memo
 ## Body
 
 
-## One-switch automaton
+## 2-cp automaton
 
 Fix coordinate arity r and a reversal-odd label h on ordered r-tuples.
 

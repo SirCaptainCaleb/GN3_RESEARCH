@@ -40,7 +40,7 @@ Apply the economically hierarchic triangulation construction recorded separately
 
 ## Application test for NORI (not a theorem about NORI)
 
-A promising application must *first* define families \(H_i\) of **realizable physical one-switch cube-path certificates**, and a conflict relation encoded by honest hyperedge intersections. It must then establish:
+A promising application must *first* define families \(H_i\) of **realizable physical 2-cp cube-path certificates**, and a conflict relation encoded by honest hyperedge intersections. It must then establish:
 
 1. Why pairwise disjointness of one selected edge per family yields **one actual full antipodal geodesic with at most one color change**, rather than unrelated local paths; in particular, agree on the cube root, ordered seam windows, and exterior-face bits.
 2. Why for every nonempty \(I\) the union \(H_I\) contains a matching resistant to fewer than \(|I|\) pairwise-disjoint pinning edges (or prove the stronger quantitative corollary).

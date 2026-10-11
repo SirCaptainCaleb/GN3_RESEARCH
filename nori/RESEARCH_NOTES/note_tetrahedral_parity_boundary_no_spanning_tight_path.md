@@ -2,14 +2,14 @@
 
 - Stable ID: note_tetrahedral_parity_boundary_no_spanning_tight_path
 - Author: unspecified; session provenance retained
-- Primary home: project:nori
+- Primary home: article:nori_article_ix_unification
 - Labels: obstruction, conjecture-selection, proved
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 3
+- Current version: 5
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r0_3
-- Updated session: session_nori_r0_3
+- Updated session: session_nori_r6202_2
 - Disposition: none
 - Successor: none
 
@@ -17,6 +17,7 @@
 
 - article:nori_article_vii_seven_coordinate
 - note:note_boundary_tournament_edge_orderability_is_strict_fallback
+- article:nori_article_ix_unification
 
 ## Research note
 

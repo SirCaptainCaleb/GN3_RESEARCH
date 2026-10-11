@@ -2,14 +2,14 @@
 
 - Stable ID: note_joint_realizability_selection_for_nori1_and_boundary_tournaments
 - Author: unspecified; session provenance retained
-- Primary home: project:nori
+- Primary home: article:nori_article_ix_unification
 - Labels: approach, conjecture
 - Lifecycle: active
 - Epistemic status: proposed
-- Current version: 3
+- Current version: 4
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6202_2
 - Disposition: none
 - Successor: none
 

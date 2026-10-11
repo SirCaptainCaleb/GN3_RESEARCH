@@ -2,14 +2,14 @@
 
 - Stable ID: note_antipodal_paired_start_nori1_toy_unification_probe
 - Author: unspecified; session provenance retained
-- Primary home: subsection:antipodal_multifacet_bridge_and_seven_coordinate_universality
+- Primary home: article:nori_article_ix_unification
 - Labels: approach, proved, toy_model
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 4
+- Current version: 6
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6202_2
 - Disposition: none
 - Successor: none
 
@@ -60,4 +60,4 @@ Conversely, take a full all-zero \(c\)-geodesic and reverse its traversal, if ne
 
 For any set \(S\subseteq Q_k\), the condition \(S\cap g^{-1}(0)\ne\varnothing\) for *every* antipodally odd function \(g\) is equivalent to \(S\cap\tau S\ne\varnothing\): if \(S\) contains an antipodal pair, precisely one of its two members has \(g=0\); if it contains no such pair, independently set \(g=1\) on all members of \(S\) and extend antipodally to the remaining pairs. Applying this with \(S=G(d)\), (13), and the normal form (12) proves (11). Finally, reversing a full geodesic changes a \(0^a1^{k-a}\) word starting at \(\bar u\) into a \(1^{k-a}0^a\) word starting at \(u\), establishing the same-root formulation. \(\square\)
 
-**precise gap and certificate principle.** The one-switch assertion \(B_k\) ensures only that \(G(d)\ne\varnothing\); the full unrestricted NORI1 assertion one dimension higher requires an *antipodally paired* pair of successful starts. Any underlying \(d\) for which \(G(d)\cap\tau G(d)=\varnothing\) would give an explicit counterexample to \(A_{k+1}\): choose an odd \(g\) equal to \(1\) on \(G(d)\) and use (12). Conversely, any failure of \(A_{k+1}\) yields a lower-facet \(d\) with this property. The reduction therefore retains every nonlinear NORI1 coloring and identifies the missing root-compatibility mechanism precisely. It is a dimension-by-dimension refinement of the established Leader–Long bridge perspective; it is not a proof of \(A_{k+1}\), nor a transfer theorem for ordinary boundary 3-tournaments.
+**precise gap and certificate principle.** The 2-cp assertion \(B_k\) ensures only that \(G(d)\ne\varnothing\); the full unrestricted NORI1 assertion one dimension higher requires an *antipodally paired* pair of successful starts. Any underlying \(d\) for which \(G(d)\cap\tau G(d)=\varnothing\) would give an explicit counterexample to \(A_{k+1}\): choose an odd \(g\) equal to \(1\) on \(G(d)\) and use (12). Conversely, any failure of \(A_{k+1}\) yields a lower-facet \(d\) with this property. The reduction therefore retains every nonlinear NORI1 coloring and identifies the missing root-compatibility mechanism precisely. It is a dimension-by-dimension refinement of the established Leader–Long bridge perspective; it is not a proof of \(A_{k+1}\), nor a transfer theorem for ordinary boundary 3-tournaments.

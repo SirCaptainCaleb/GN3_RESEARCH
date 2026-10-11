@@ -1,6 +1,6 @@
 {
-  "active_section_count": 3,
-  "active_subsection_count": 18,
+  "active_section_count": 4,
+  "active_subsection_count": 23,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -8,6 +8,14 @@
         "math_version": 1,
         "position": 1,
         "version": 2
+      }
+    ],
+    "nori_article_ix_unification": [
+      {
+        "id": "nori_unification_foundations",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
       }
     ],
     "nori_article_vii_seven_coordinate": [
@@ -30,9 +38,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 104384,
-        "composed_through_revision": 5100,
-        "composition_version": 41,
+        "body_chars": 109071,
+        "composed_through_revision": 6180,
+        "composition_version": 42,
         "frontier": {
           "current": null
         },
@@ -43,11 +51,26 @@
       },
       "version": 4
     },
+    "nori_article_ix_unification": {
+      "composition": {
+        "body_chars": 2473,
+        "composed_through_revision": 6257,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 103899,
-        "composed_through_revision": 5097,
-        "composition_version": 20,
+        "body_chars": 111783,
+        "composed_through_revision": 6199,
+        "composition_version": 22,
         "frontier": {
           "current": null
         },
@@ -60,7 +83,7 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 21823,
+        "body_chars": 21805,
         "composed_through_revision": 5098,
         "composition_version": 14,
         "frontier": {
@@ -76,10 +99,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-11T17:34:47.952491+00:00",
+  "generated_at": "2026-10-11T21:32:28.377337+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 20,
+  "research_note_count": 40,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -87,7 +110,7 @@
   "section_versions": {
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 21774,
+        "body_chars": 21756,
         "composed_through_revision": 5093,
         "composition_version": 9,
         "frontier": {
@@ -103,9 +126,9 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 104315,
-        "composed_through_revision": 5099,
-        "composition_version": 37,
+        "body_chars": 109002,
+        "composed_through_revision": 6179,
+        "composition_version": 38,
         "frontier": {
           "current": null
         },
@@ -119,9 +142,25 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 103831,
-        "composed_through_revision": 5095,
-        "composition_version": 26,
+        "body_chars": 111715,
+        "composed_through_revision": 6198,
+        "composition_version": 28,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_unification_foundations": {
+      "composition": {
+        "body_chars": 2411,
+        "composed_through_revision": 6256,
+        "composition_version": 1,
         "frontier": {
           "current": null
         },
@@ -134,7 +173,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1453,
+  "snapshot_revision": 1533,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -149,7 +188,7 @@
   "subsection_versions": {
     "a_legal_q15_counterexample_to_unrooted_nori_via_a_three_class_reversal_even_word_obstruction": {
       "composition": {
-        "body_chars": 11821,
+        "body_chars": 11798,
         "composed_through_revision": 4746,
         "composition_version": 2,
         "frontier": {
@@ -164,9 +203,26 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "alternating_rook_galleries_and_the_root_rank_criterion_for_simple_tight_paths": {
+      "composition": {
+        "body_chars": 3837,
+        "composed_through_revision": 6196,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank criterion for full boundary class",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
-        "body_chars": 10550,
+        "body_chars": 10532,
         "composed_through_revision": 4989,
         "composition_version": 3,
         "frontier": {
@@ -183,7 +239,7 @@
     },
     "appendix_known_obstructions_to_proposed_nori_mechanisms": {
       "composition": {
-        "body_chars": 7909,
+        "body_chars": 7905,
         "composed_through_revision": 4756,
         "composition_version": 6,
         "frontier": {
@@ -197,6 +253,22 @@
       "development_version": 1,
       "section_id": "nori_foundations",
       "version": 2
+    },
+    "color_blind_antipodal_co_reachability_characterizes_nori1": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
+      "version": 1
     },
     "coupled_chronological_saddle_potentials_and_checkerboard_obstructions": {
       "composition": {
@@ -251,7 +323,7 @@
     },
     "endpoint_tournament_factorization_and_monochromatic_orders": {
       "composition": {
-        "body_chars": 26040,
+        "body_chars": 26034,
         "composed_through_revision": 4943,
         "composition_version": 7,
         "frontier": {
@@ -285,7 +357,7 @@
     },
     "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing": {
       "composition": {
-        "body_chars": 11788,
+        "body_chars": 11778,
         "composed_through_revision": 4829,
         "composition_version": 1,
         "frontier": {
@@ -353,7 +425,7 @@
     },
     "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments": {
       "composition": {
-        "body_chars": 12275,
+        "body_chars": 12271,
         "composed_through_revision": 4825,
         "composition_version": 2,
         "frontier": {
@@ -378,6 +450,23 @@
         },
         "has_composition": true,
         "source_note": "Clean coherent proof of strongest 1/3 exponent theorem; selectively pruned terminal-pair robust snake and physical root-consistent sampling. Supersedes 1/4 and 1/6.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs": {
+      "composition": {
+        "body_chars": 4059,
+        "composed_through_revision": 6191,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Properly edge-labelled terminal-edge tournament theorem",
         "stale": null,
         "stale_dependencies": []
       },
@@ -419,9 +508,26 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "the_common_path_symmetry_problem": {
+      "composition": {
+        "body_chars": 2357,
+        "composed_through_revision": 6255,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Opening scope of Article IX",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_unification_foundations",
+      "version": 1
+    },
     "unbounded_mandatory_color_changes_from_multilevel_local_minima": {
       "composition": {
-        "body_chars": 35275,
+        "body_chars": 35247,
         "composed_through_revision": 4924,
         "composition_version": 5,
         "frontier": {
@@ -429,6 +535,23 @@
         },
         "has_composition": true,
         "source_note": "Full proof merged from unbounded_compulsory_switches_for_every_odd_ordered_face_dimension",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_foundations",
+      "version": 1
+    },
+    "unbounded_switches_under_reversal_coherence_in_arities_congruent_to_one_modulo_four": {
+      "composition": {
+        "body_chars": 4738,
+        "composed_through_revision": 6177,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Odd-face symmetry obstruction",
         "stale": null,
         "stale_dependencies": []
       },

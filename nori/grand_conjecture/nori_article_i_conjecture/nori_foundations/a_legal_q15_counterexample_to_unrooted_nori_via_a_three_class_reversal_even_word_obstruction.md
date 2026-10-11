@@ -24,7 +24,7 @@ h(a,b,c)=\begin{cases}
 \]
 In particular, \(h(a,b,c)=h(c,b,a)\).
 
-**Lemma (four-switch ternary obstruction).** Every word \(q=q_1\cdots q_{14}\) with precisely four zeros, five ones, and five twos has at least four switches in its consecutive-triple word
+**Lemma (non-4-cp ternary obstruction).** Every word \(q=q_1\cdots q_{14}\) with precisely four zeros, five ones, and five twos has at least four switches in its consecutive-triple word
 \[
 H(q)=(h(q_1,q_2,q_3),\ldots,h(q_{12},q_{13},q_{14})).
 \tag{2}
@@ -108,7 +108,7 @@ These definitions depend only on the  face and its ordered varying directions; i
 
 Fix an arbitrary root \(x\in\{0,1\}^{15}\) and any permutation \(p\) of the fifteen directions; it specifies an antipodal geodesic. Let \(k\in\{1,\ldots,15\}\) be the position of \(s\) in \(p\), and let \(q=(q_1,\ldots,q_{14})\) be the ordered list obtained by deleting \(s\) from \(p\).
 
-Define \(H_i=h(\tau(q_i),\tau(q_{i+1}),\tau(q_{i+2}))\) for \(1\le i\le12\). By the four-switch lemma, \(H_1,\ldots,H_{12}\) has at least four switches.
+Define \(H_i=h(\tau(q_i),\tau(q_{i+1}),\tau(q_{i+2}))\) for \(1\le i\le12\). By the 5-cp lemma, \(H_1,\ldots,H_{12}\) has at least four switches.
 
 Of the thirteen length-three windows in \(p\), the windows avoiding \(s\) appear in two contiguous segments. The first segment corresponds, in order, to
 \[
@@ -140,9 +140,9 @@ The main conceptual point is that a reversal-even local triple word obstructed b
 
 ## Sharpening: the  minimum is three switches in Q15
 
-**Theorem (sharp switch certificate).** For the  coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal two-switch NORI3 bound in ambient dimension fifteen. The original two-switch lower bound above remains valid but is superseded by this strengthening.
+**Theorem (sharp switch certificate).** For the  coloring (3)--(4), *every* full antipodal geodesic has **at least three**, and some full antipodal geodesic has **exactly three**, consecutive ordered-three-face color changes. Thus this construction already refutes the proposed universal 3-cp NORI3 bound in ambient dimension fifteen. The original two-color-change lower bound above remains valid but is superseded by this strengthening.
 
-**Proof and smaller complete certificate.** Write \(\sigma\) for the change count. The proved four-switch ordinary-word lemma gives \(\sigma(H)\ge4\), and the sentinel insertion inequality gives \(\sigma(C)\ge\sigma(H)-2\) for every sentinel position, initial sentinel bit \(z\), and arbitrary middle-sentinel bit \(\varepsilon\). Consequently, **only** ordinary class words with \(\sigma(H)=4\) could possibly produce \(\sigma(C)\le2\). There are exactly 314 such words among the \(14!/(4!5!5!)=252252\) ordinary class words, by the independently recorded histogram in Section 1.
+**Proof and smaller complete certificate.** Write \(\sigma\) for the change count. The proved 5-cp ordinary-word lemma gives \(\sigma(H)\ge4\), and the sentinel insertion inequality gives \(\sigma(C)\ge\sigma(H)-2\) for every sentinel position, initial sentinel bit \(z\), and arbitrary middle-sentinel bit \(\varepsilon\). Consequently, **only** ordinary class words with \(\sigma(H)=4\) could possibly produce \(\sigma(C)\le2\). There are exactly 314 such words among the \(14!/(4!5!5!)=252252\) ordinary class words, by the independently recorded histogram in Section 1.
 
 The following standalone Python 3 certificate enumerates these 314 critical words, all fifteen sentinel slots and both choices each of \(z,\varepsilon\). It checks the stronger bound \(\sigma(C)\ge3\) for all \(314\cdot15\cdot4=18840\) cases:
 
@@ -199,4 +199,4 @@ with starting sentinel bit \(z=1\) and middle-sentinel bit \(\varepsilon=1\) has
 \]
 and exactly three changes. Choose the first of the two adjacent class-0 directions greater than the second in the prescribed strict direction order to realize \(\varepsilon=1\); all directions are distinct and all classes retain their prescribed multiplicities. Other initial vertex bits are arbitrary. Therefore the   minimum is **exactly three**. \(\square\)
 
-**Relation to amplification.** The later multilevel construction forces four changes already on \(Q_{37}\) and unboundedly many as \(n\) grows. The present sharp \(Q_{15}\) result supplies a substantially smaller explicit violation of the conjectural NORI3 two-switch budget. No dimension-minimality claim is made.
+**Relation to amplification.** The later multilevel construction forces four changes already on \(Q_{37}\) and unboundedly many as \(n\) grows. The present sharp \(Q_{15}\) result supplies a substantially smaller explicit violation of the conjectural NORI3 3-cp budget. No dimension-minimality claim is made.

@@ -2,20 +2,20 @@
 
 - Stable ID: note_grand_structure_uniform_length_geodesics
 - Author: unspecified; session provenance retained
-- Primary home: project:nori
+- Primary home: article:nori_article_ix_unification
 - Labels: grand-conjecture, research-direction, uniformity, reachability
 - Lifecycle: active
 - Epistemic status: open
-- Current version: 1
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r6150_1
-- Updated session: session_nori_r6150_1
+- Updated session: session_nori_r6202_2
 - Disposition: none
 - Successor: none
 
 ## Related references
 
-- None
+- article:nori_article_ix_unification
 
 ## Research note
 

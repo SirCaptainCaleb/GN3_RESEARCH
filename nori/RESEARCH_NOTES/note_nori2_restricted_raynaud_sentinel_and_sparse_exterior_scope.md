@@ -6,10 +6,10 @@
 - Labels: theorem, approach, scope
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 3
+- Current version: 4
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6175_1
 - Disposition: none
 - Successor: none
 
@@ -51,7 +51,7 @@ In particular:
 - Two distinguished exterior directions, allowing arbitrary nonlinear interactions of their exterior bits and arbitrary square colors meeting either direction, guarantee at most three changes.
 - Every family with an exterior dependence support of fixed size \(t\) has a switch budget bounded independently of ambient dimension.
 
-The sharp previously established one-switch theorem for a **symmetric pair rule with one sentinel** is stronger under its additional hypotheses. The present bound is intentionally independent of reversal symmetry of the ordinary pair function.
+The sharp previously established 2-cp theorem for a **symmetric pair rule with one sentinel** is stronger under its additional hypotheses. The present bound is intentionally independent of reversal symmetry of the ordinary pair function.
 
 ## Raynaud's directed two-color Hamiltonian path theorem
 
@@ -108,7 +108,7 @@ Crucially, the argument evaluates each window as an realized **underlying square
 
 The multilevel NORI3 amplification uses a constant number of sentinel directions but a *ternary* local-minimum statistic, whose mandatory changes grow unboundedly with the number of direction classes. The present theorem proves a qualitatively different phenomenon for **square** colorings: the same finite-support architecture has a uniform switch bound, even if the ordinary ordered-pair rule is asymmetric and the colors of special-direction squares are otherwise unconstrained.
 
-Therefore a putative NORI2 coloring forcing an **unbounded** number of switches must have unbounded minimal exterior-coordinate support (in the precise sense (ES)) as \(n\to\infty\). A coloring forcing **two** switches might already exist with one or two exterior directions; (5) does not decide this. The sharp symmetric-pair one-sentinel result rules out a two-switch obstruction in that restricted subfamily. Nor does (5) settle unrestricted NORI2, where ordinary squares can depend on arbitrarily many exterior coordinate bits.
+Therefore a putative NORI2 coloring forcing an **unbounded** number of switches must have unbounded minimal exterior-coordinate support (in the precise sense (ES)) as \(n\to\infty\). A coloring forcing **two** switches might already exist with one or two exterior directions; (5) does not decide this. The sharp symmetric-pair one-sentinel result rules out a 3-cp obstruction in that restricted subfamily. Nor does (5) settle unrestricted NORI2, where ordinary squares can depend on arbitrarily many exterior coordinate bits.
 
 ## References
 
@@ -120,12 +120,12 @@ The directed statement is also quoted as Theorem 2.1 in *The size Ramsey number 
 
 ---
 
-## Transferred Subsection: NORI2 sentinel barrier and precise one-switch examples
+## Transferred Subsection: NORI2 sentinel barrier and precise 2-cp examples
 
 precise old composition v2
 Original manuscript `nori2_sentinel_barrier_and_exact_one_switch_examples`
 
-# NORI2 sentinel barrier: all directed pair rules and sharp one-switch examples
+# NORI2 sentinel barrier: all directed pair rules and sharp 2-cp examples
 
 ## Stronger theorem: no symmetry of the ordinary pair rule is needed
 
@@ -170,7 +170,7 @@ Antipodal complementation flips the fixed exterior \(s\)-bit on ordinary squares
 
 **Finite independent checks.** Exhaustively enumerate all directed functions \(h:D^{(2)}\to\{0,1\}\) for \(|D|=4\) and \(|D|=5\), all full direction orders, and both choices of the root \(s\)-bit in (D3). In the first case, among \(2^{12}=4096\) functions, 4076 admit a monochromatic full geodesic and the remaining 20 have minimum precisely one switch. In the second, among \(2^{20}=1,048,576\) functions, 1,046,626 admit zero switches and 1950 require precisely one. None requires two; the general proof is independent of these checks.
 
-**Scope.** Theorem 0 improves the previously known \(t+1=2\) bound for the one-exterior-direction NORI2 family when the terminal special-direction square is constant, even if the ordinary pair rule is wholly asymmetric. It does **not** prove the unrestricted NORI2 one-switch conjecture: general ordered squares meeting \(s\) may have arbitrary exterior-bit dependence, and arbitrary ordinary squares may depend on many ordinary exterior bits. Any one-sentinel counterexample within the finite-support framework must violate the uniform terminal-square hypothesis (or the flat ordinary-pair hypothesis) of Theorem 0.
+**Scope.** Theorem 0 improves the previously known \(t+1=2\) bound for the one-exterior-direction NORI2 family when the terminal special-direction square is constant, even if the ordinary pair rule is wholly asymmetric. It does **not** prove the unrestricted NORI2 2-cp conjecture: general ordered squares meeting \(s\) may have arbitrary exterior-bit dependence, and arbitrary ordinary squares may depend on many ordinary exterior bits. Any one-sentinel counterexample within the finite-support framework must violate the uniform terminal-square hypothesis (or the flat ordinary-pair hypothesis) of Theorem 0.
 
 **Literature.** H. Raynaud (1973), *Sur le circuit hamiltonien bi-colore dans les graphes orientés*, Periodica Mathematica Hungarica 3, 289–297; see A. Gyárfás, *Vertex covers by monochromatic pieces — a survey of results and problems*, Theorem 2, for the explicit complete-symmetric-digraph formulation, https://www.renyi.hu/~gyarfas/Cikkek/172_krakowrev3.pdf.
 
@@ -193,7 +193,7 @@ z_s(F)\oplus h(u,v),&s\notin\{u,v\},\\
 \]
 Then (1) satisfies the antipodal-reversal law, and there is a full antipodal geodesic whose consecutive two-face colors change at most **once**.
 
-This applies to arbitrary symmetric direction-pair rules, arbitrary direction multiplicities/classes, and any ambient dimension. Thus the direct one-sentinel mechanism that gives unbounded obligatory changes for NORI3 **cannot disprove the proposed one-switch NORI2 bound**.
+This applies to arbitrary symmetric direction-pair rules, arbitrary direction multiplicities/classes, and any ambient dimension. Thus the direct one-sentinel mechanism that gives unbounded obligatory changes for NORI3 **cannot disprove the proposed 2-cp NORI2 bound**.
 
 **Proof of legality.** For a square avoiding \(s\), its antipodal square has the opposite fixed \(s\)-bit; reversing the ordered pair preserves \(h\). For squares containing \(s\), reversal exchanges the two clauses 1 and 0. The color is independent of traversal corner in all cases. \(\square\)
 

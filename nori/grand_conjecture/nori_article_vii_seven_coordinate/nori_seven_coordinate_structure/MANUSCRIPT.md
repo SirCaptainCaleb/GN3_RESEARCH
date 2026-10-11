@@ -302,7 +302,7 @@ t(p_i,p_{i+2})\oplus s(p_{i+1})=s(p_{i+1}).
 \]
 All middle positions \(p_2,\ldots,p_{n-1}\) avoid \(v\), so this value is constant. Since the face coloring ignores exterior fixed bits, the starting cube vertex is arbitrary; every such starting vertex yields a monochromatic antipodal geodesic. \(\square\)
 
-**Scope.** This solves a nontrivial all-dimensional subclass of coordinate-only, reversal-odd ternary colorings, including every endpoint-tournament labeling \(t(a,c)\) and every perturbation by a single exceptional middle direction. It does not treat general triangle-dependent ternary colorings or exterior-face-dependent NORI. The proof exhibits the potential usefulness of balanced two-path covers with prescribed extreme vertices as a replacement for one-switch endpoint repairs.
+**Scope.** This solves a nontrivial all-dimensional subclass of coordinate-only, reversal-odd ternary colorings, including every endpoint-tournament labeling \(t(a,c)\) and every perturbation by a single exceptional middle direction. It does not treat general triangle-dependent ternary colorings or exterior-face-dependent NORI. The proof exhibits the potential usefulness of balanced two-path covers with prescribed extreme vertices as a replacement for 2-cp endpoint repairs.
 
 ### Facet monochromatic lifting and a face-dependent tournament-factorized class
 
@@ -524,7 +524,7 @@ This is stronger than separate fiberwise acyclicity. Identifying a weaker cohere
 
 #### Relation to NORI-k switch amplification
 
-The unbounded-switch multilevel coloring of ordered  3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
+The unbounded-cp multilevel coloring of ordered  3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
 
 In particular, the old NORI3 obstruction does not imply an edge-ordered increasing-path obstruction. The near-linear bound (3) is an application of the published Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner theorem, **not** a new lower bound for altitude. The contribution here is the  incidence- and face-consistent transfer and its explicit boundary on possible counterexamples.
 
@@ -907,11 +907,11 @@ So the full-rank probability for ANY fixed full direction order is greater than 
 
 #### Relation to established work and open frontier
 
-The deterministic affine change-vector and syndrome framework, including  root counts and a corank-at-most-one guarantee for one-switch words, already appears in the earlier NORI Subsection * change-vector fibers and affine obstruction certificates*. It is NOT claimed as an original theorem here. This manuscript's distinct contributions are the independent arithmetic-progression full-order packing, the  antipodal-orbit second moment/Janson results for arbitrary nonlinear BC colorings, and the quantitative adversarial-base random-affine smoothing theorem.
+The deterministic affine change-vector and syndrome framework, including  root counts and a corank-at-most-one guarantee for 2-cp words, already appears in the earlier NORI Subsection * change-vector fibers and affine obstruction certificates*. It is NOT claimed as an original theorem here. This manuscript's distinct contributions are the independent arithmetic-progression full-order packing, the  antipodal-orbit second moment/Janson results for arbitrary nonlinear BC colorings, and the quantitative adversarial-base random-affine smoothing theorem.
 
 Devine–Milans (supplied *Scrapbook*, “Antisymmetric Tournaments”) proves EVERY ordinary direction-only boundary 3-tournament has a simple positive tight path of order at least \(1+\sqrt{(n-1)/2}\). The fully exterior-dependent  BC class is larger, and its universal deterministic square-root guarantee is not established by the present results. In particular, random full-geodesic existence does NOT imply existence in adversarial colorings. The theorems show that generic independent global exterior variation promotes rather than obstructs long paths, so any deterministic counterexample must rely on globally correlated exterior behavior.
 
-**Verification.** Independent GF(2) rank simulations verified the order-packing triple disjointness and generic full-row-rank rates on n=9,11,13,15,17,19,21,25 (300 trials each). Independent face-orbit sampling checked the full  nonlinear model in n=7,8,9,10 (500 trials each). A further exhaustive-root linear-algebra implementation verified the previously known corank-to-switch consequence for 500 random face-affine matrices in every n=5,...,11. These tests supplement, rather than replace, the  proofs above.
+**Verification.** Independent GF(2) rank simulations verified the order-packing triple disjointness and generic full-row-rank rates on n=9,11,13,15,17,19,21,25 (300 trials each). Independent face-orbit sampling checked the full  nonlinear model in n=7,8,9,10 (500 trials each). A further exhaustive-root linear-algebra implementation verified the previously known corank-to-cp consequence for 500 random face-affine matrices in every n=5,...,11. These tests supplement, rather than replace, the  proofs above.
 
 ### Endpoint-density snakes and bounded-degree  NORI3
 
@@ -1104,3 +1104,114 @@ The triangular potential (1) applies specifically to globally edge-ordered insta
 #### Status and significance
 
 Theorems 1, 3, 4, Propositions 2, 5 and Lemmas 6–7 are proved with  hypotheses; the chain-prefix Hamilton conjecture remains OPEN. This package isolates a joint local-saddle mechanism, a four-local obstruction, a probabilistic barrier to extracting clean submatrices, and a quantitative route by which stronger coupling could improve the full ordinary-boundary lower bound. No theorem here settles unrestricted NORI1 or the Hamilton/long-path problem for every ordinary boundary 3-tournament.
+
+### Rainbow terminal-edge theorem for locally ordered graphs
+
+Let \(G=(V,E)\) be a finite simple graph, \(|E|>0\). Label its edges by \(\lambda:E\to\Lambda\), with distinct labels on incident edges. At each \(v\in V\), fix a tournament \(T_v\) on the edges incident with \(v\). A path \(P=(v_1,\ldots,v_\ell)\) is **admissible** if its vertices are distinct, its edge labels are distinct, and
+\[
+v_{i-1}v_i\longrightarrow v_iv_{i+1}\quad\text{in }T_{v_i}
+\quad (2\le i\le\ell-1).
+\tag{1}
+\]
+Paths of two vertices are admissible. Let \(L\) be the maximum order of an admissible path and \(\bar d=2|E|/|V|\).
+
+**Theorem.**
+\[
+\boxed{\bar d/2\le (L-1)(2L-3),\qquad
+L\ge (5+\sqrt{1+4\bar d})/4.}
+\tag{2}
+\]
+If the labels of all graph edges are distinct, then
+\[
+\boxed{\bar d/2\le (L-1)^2.} \tag{3}
+\]
+
+**Proof.** For every undirected edge \(e=\{u,v\}\), let \(r(e)\) be the greatest order of an admissible path ending in \(u,v\) or \(v,u\). Direct \(e\) toward the final vertex of a maximizing path, breaking ties arbitrarily. Some vertex \(v\) has indegree at least \(\bar d/2\). For \(r=2,\ldots,L\), let
+\[
+U_r=\{u:u\to v,\ r(\{u,v\})=r\},\qquad q=|U_r|.
+\]
+The tournament \(T_v\) on \(\{uv:u\in U_r\}\) contains an edge \(uv\) beating at least \((q-1)/2\) other incident edges \(vw\). Choose an admissible \(r\)-vertex path
+\[
+P=(a_1,\ldots,a_{r-2},u,v)
+\]
+ending with \(uv\). Whenever \(uv\to vw\) in \(T_v\), adding \(w\) satisfies the required comparison at \(v\). If \(w\) were new to \(P\) and \(\lambda(vw)\) unused on \(P\), the extension would be admissible of order \(r+1\), contradicting \(r(\{v,w\})=r\).
+
+Among the beaten edges, at most \(r-2\) have \(w\in\{a_1,\ldots,a_{r-2}\}\). At most another \(r-2\) have \(\lambda(vw)\) previously used: \(\lambda(vw)\ne\lambda(uv)\) by properness, and each of the remaining \(r-2\) labels appears on at most one edge incident with \(v\). Therefore
+\[
+(q-1)/2\le2r-4,\qquad |U_r|\le4r-7.
+\]
+Consequently
+\[
+\bar d/2\le\deg^-(v)=\sum_{r=2}^L|U_r|
+\le\sum_{r=2}^L(4r-7)=(L-1)(2L-3).
+\]
+Solving the quadratic gives the second inequality in (2).
+
+With globally distinct edge labels, every edge \(vw\) differs from every edge of \(P\), so only repeated vertices can block extensions. Thus \((q-1)/2\le r-2\), implying \(|U_r|\le2r-3\) and
+\[
+\bar d/2\le\sum_{r=2}^L(2r-3)=(L-1)^2.
+\]
+This proves (3). \(\square\)
+
+**Corollary (all ordinary boundary tournaments).** For any \(n\)-vertex function \(b(a,v,w)\in\{0,1\}\) on distinct ordered triples with \(b(w,v,a)=1-b(a,v,w)\), take \(G=K_n\), label each edge separately, and direct
+\[
+av\to vw\quad\text{in }T_v\quad\Longleftrightarrow\quad b(a,v,w)=1.
+\]
+These comparisons define tournaments at every vertex. An admissible graph path is precisely a vertex-simple positive tight path for \(b\). Since \(\bar d=n-1\), (3) gives
+\[
+L\ge1+\sqrt{(n-1)/2}.
+\tag{4}
+\]
+This recovers the Devine–Milans boundary-tournament terminal-pair lower bound without an edge-orderability assumption.
+
+**Corollary (all cube-edge colorings).** For any binary coloring \(c\) of the undirected edges of \(Q_n\), put \(G=Q_n\) and label each edge by its coordinate direction. At each vertex, order the incident edges first by their binary colors and break equal-color ties arbitrarily, taking \(T_v\) to be the resulting transitive tournament. Every admissible path is a cube geodesic because its directions are distinct. Its edge-color word is weakly increasing, hence has at most one change. With \(\bar d=n\), (2) yields an admissible geodesic of at least
+\[
+(5+\sqrt{1+4n})/4-1
+\tag{5}
+\]
+edges. The conclusion holds in particular for unrestricted antipodally odd edge colorings.
+
+The two corollaries use the same graph-theoretic comparison, admissibility predicate, and extremal proof. The cube bound concerns a partial geodesic, so its extension to a full antipodal geodesic needs additional global edge-consistency and antipodal linkage. The complete-graph bound is the established square-root boundary result; its proper-edge-label extension is the new common structural theorem.
+
+### Alternating rook galleries and the root-rank criterion for simple tight paths
+
+Let \(V\) be a finite set with \(|V|=n\ge3\), and let \(b:V^{\underline 3}\to\{0,1\}\) satisfy \(b(c,v,a)=1-b(a,v,c)\). Put
+\[
+\Omega_V=\{(a,c):a,c\in V,\ a\ne c\},\qquad
+\rho(a,c)=e_a-e_c\in\mathbb R^V,\qquad J(a,c)=(c,a).
+\]
+The **rook graph** on \(\Omega_V\) joins two different ordered pairs if their first or second coordinates agree. Orient its edges by
+\[
+(a,v)\longrightarrow(c,v),\qquad
+(v,a)\longrightarrow(v,c)
+\quad\Longleftrightarrow\quad b(a,v,c)=0.\tag{1}
+\]
+The reversal law makes (1) an orientation of each row and column clique; \(J\) is an automorphism of this oriented graph. An **alternating rook gallery** is a rook walk whose steps alternate between columns (equal second coordinate) and rows (equal first coordinate).
+
+**Theorem.** For \(3\le L\le n\), color-zero vertex-simple tight paths \((v_1,\ldots,v_L)\), with \(b(v_i,v_{i+1},v_{i+2})=0\) for all \(i\), correspond bijectively to directed alternating rook galleries \(q_1,\ldots,q_{L-1}\) beginning with a column step and satisfying linear independence of the roots \(\rho(q_1),\ldots,\rho(q_{L-1})\). The map is
+\[
+q_i=\begin{cases}(v_i,v_{i+1}),&i\text{ odd},\\
+(v_{i+1},v_i),&i\text{ even}.
+\end{cases}\tag{2}
+\]
+A directed alternating rook gallery beginning with a row step can be converted to one beginning with a column step by applying \(J\) to all its terms, preserving directedness and root rank.
+
+More generally, for every alternating rook gallery \(q_1,\ldots,q_m\) and its induced vertex walk \(v_1,\ldots,v_{m+1}\),
+\[
+\operatorname{rank}_{\mathbb R}\{\rho(q_1),\ldots,\rho(q_m)\}
+=|\{v_1,\ldots,v_{m+1}\}|-1.\tag{3}
+\]
+Thus the induced walk is vertex-simple if and only if its root vectors are linearly independent. Its rank deficit is
+\[
+m-\operatorname{rank}\{\rho(q_i)\}=(m+1)-|\{v_1,\ldots,v_{m+1}\}|.\tag{4}
+\]
+
+**Proof.** For odd \(i\), the pairs \(q_i=(v_i,v_{i+1})\) and \(q_{i+1}=(v_{i+2},v_{i+1})\) share the second coordinate; (1) directs the connecting rook edge forward precisely when \(b(v_i,v_{i+1},v_{i+2})=0\). For even \(i\), the pairs \(q_i=(v_{i+1},v_i)\) and \(q_{i+1}=(v_{i+1},v_{i+2})\) share the first coordinate, with the same condition. Conversely, the first pair of a column-first gallery determines \(v_1,v_2\), and each next rook edge determines its new coordinate \(v_{i+2}\). Its orientation enforces the color-zero triple condition. Hence (2) gives the correspondence for vertex walks with no immediate backtracking.
+
+For each \(i\),
+\[
+\rho(q_i)=(-1)^{i-1}(e_{v_i}-e_{v_{i+1}}).\tag{5}
+\]
+The undirected multigraph with edges \(v_iv_{i+1}\) is connected on its encountered vertices. Its oriented incidence vectors span the codimension-one subspace of real vectors supported on those vertices and having coordinate sum zero. To see this, a vector orthogonal to every incidence vector must be constant on endpoints of each edge, hence constant on the connected graph. The span therefore has dimension one fewer than its vertex set. The signs in (5) preserve this rank, proving (3) and (4). The induced walk has no repeated vertex precisely when it uses \(m+1\) vertices, equivalent by (3) to rank \(m\). Finally \(J\) exchanges columns with rows, preserves orientation (1), and negates every root, so it preserves directedness and linear independence. \(\square\)
+
+**Corollary.** An arbitrary boundary 3-tournament has a monochromatic vertex-simple tight path on \(L\) vertices if and only if its rook orientation has a directed alternating gallery with \(L-1\) linearly independent roots in the type-\(A_{n-1}\) root system. A color-one tight path reverses to a color-zero path by the reversal law. In particular, the distinct-original-vertex constraint is a graphic-matroid independence condition on an alternating rook gallery.

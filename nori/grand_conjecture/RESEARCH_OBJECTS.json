@@ -9,6 +9,14 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_ix_unification",
+            "type": "article",
+            "title": "Article IX — Unification of NORI1 and Boundary Tournaments",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_article_vii_seven_coordinate",
             "type": "article",
             "title": "Article VII — Seven-coordinate structural and tournament methods",
@@ -28,6 +36,14 @@
             "id": "nori_edge_central_carriers",
             "type": "section",
             "title": "Central edge carriers and antipodal topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_unification_foundations",
+            "type": "section",
+            "title": "Common path symmetry and exchange compatibility",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -57,6 +73,14 @@
             "research_status": "active"
         },
         {
+            "id": "alternating_rook_galleries_and_the_root_rank_criterion_for_simple_tight_paths",
+            "type": "subsection",
+            "title": "Alternating rook galleries and the root-rank criterion for simple tight paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
             "type": "subsection",
             "title": "Antipodal multifacet bridge and seven-coordinate universality",
@@ -69,6 +93,14 @@
             "type": "subsection",
             "title": "Appendix — Known obstructions to proposed NORI mechanisms",
             "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "color_blind_antipodal_co_reachability_characterizes_nori1",
+            "type": "subsection",
+            "title": "Color-blind antipodal co-reachability characterizes NORI1",
+            "version": 1,
             "superseded": false,
             "research_status": "active"
         },
@@ -161,6 +193,14 @@
             "research_status": "active"
         },
         {
+            "id": "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs",
+            "type": "subsection",
+            "title": "Rainbow terminal-edge theorem for locally tournament-ordered graphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "seven_coordinate_wing_factorization_and_exact_obstruction",
             "type": "subsection",
             "title": "Seven-coordinate wing factorization and exact obstruction",
@@ -177,9 +217,25 @@
             "research_status": "active"
         },
         {
+            "id": "the_common_path_symmetry_problem",
+            "type": "subsection",
+            "title": "The common path-symmetry problem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "unbounded_mandatory_color_changes_from_multilevel_local_minima",
             "type": "subsection",
             "title": "Unbounded mandatory color changes from multilevel local minima",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "unbounded_switches_under_reversal_coherence_in_arities_congruent_to_one_modulo_four",
+            "type": "subsection",
+            "title": "Unbounded switches under reversal coherence in arities congruent to one modulo four",
             "version": 1,
             "superseded": false,
             "research_status": "active"

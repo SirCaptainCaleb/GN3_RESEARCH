@@ -1,4 +1,4 @@
-# Rooted one-switch failures and exact good-root localization obstructions
+# Rooted 2-cp failures and exact good-root localization obstructions
 
 - Stable ID: note_rooted_restriction_and_good_root_density_limitations
 - Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
@@ -6,10 +6,10 @@
 - Labels: obstruction, counterexample
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 4
+- Current version: 5
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6175_1
 - Disposition: none
 - Successor: none
 

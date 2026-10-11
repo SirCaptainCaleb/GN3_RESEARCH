@@ -2,14 +2,14 @@
 
 - Stable ID: note_sentinel_transfer_and_boundary_comparison_model_scope
 - Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
-- Primary home: section:nori_foundations
+- Primary home: article:nori_article_ix_unification
 - Labels: obstruction, partial_argument
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 3
+- Current version: 5
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
-- Updated session: session_nori_r4593_2
+- Updated session: session_nori_r6202_2
 - Disposition: none
 - Successor: none
 
@@ -46,7 +46,7 @@ Let the cube directions be D together with s. For every ordinary direction d in 
 
 **Proof.** Let D_0 and D_1 be the directions with a_d=0 and a_d=1. Choose z in {0,1} and y with g(y)=z; antipodal oddness guarantees such y. Set x_s=z and x_D=y XOR D_0. Traverse all directions in D_0, then s, then all directions in D_1. Before s, each ordinary edge has color z. The s-edge is traversed at ordinary-coordinate vector y and also has color z. After s, each ordinary edge has color (1-z) XOR 1=z. Every direction occurs once. This covers empty D_0 or D_1 as well. QED.
 
-## The two-face distinguished-coordinate family always has a one-switch antipodal geodesic
+## The two-face distinguished-coordinate family always has a 2-cp antipodal geodesic
 
 Here NORI2 means binary colors of ordered underlying squares satisfying c(complement F,(b,a))=1-c(F,(a,b)).
 
