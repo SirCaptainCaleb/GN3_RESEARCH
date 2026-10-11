@@ -1,6 +1,7 @@
 # Carrier compatibility must mean common realizability, not just pairwise window agreement
 
 - Stable ID: note_nori_carrier_requires_joint_actual_geodesic_witnesses
+- Author: unspecified; session provenance retained
 - Primary home: article:nori_article_ii_topological_carriers
 - Labels: obstruction, partial_argument
 - Lifecycle: active

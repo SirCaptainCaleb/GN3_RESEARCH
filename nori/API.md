@@ -6,11 +6,11 @@
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
 ## Research notes: selective non-manuscript memory
-- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, labels, related [{type,id,version?}], epistemic_status, lifecycle. Revisions require exact expected_version.
+- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, author, labels, related [{type,id,version?}], epistemic_status, lifecycle. Revisions require exact expected_version.
 - nori.read_note(id,version:=null) reads an exact version; nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
 - nori.notes_for(type,id) finds primary-home and linked notes. read_manuscript includes related_notes metadata; manuscripts never automatically incorporate note bodies.
 - lifecycle active|resolved|superseded is separate from epistemic_status. Resolution and supersession require disposition, and supersession requires a valid successor_id.
-- The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
+- Separate brainstorm writes are retired in NORI; use only the selective research-note entity. The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
 
 ## Manuscript publication
 - `nori.publish_subsection(session, subsection_id, body, expected_composition_version, source_note := '')` directly revises a Subsection manuscript. Pass null expected version for its first composition, otherwise exact current version. Version conflicts reject the write.

@@ -1,6 +1,7 @@
 # Ordinary boundary 3-tournaments need not come from a global edge order
 
 - Stable ID: note_boundary_tournament_edge_orderability_is_strict_fallback
+- Author: unspecified; session provenance retained
 - Primary home: section:nori_seven_coordinate_structure
 - Labels: obstruction, approach
 - Lifecycle: active

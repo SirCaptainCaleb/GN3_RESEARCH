@@ -1,6 +1,7 @@
 # Can a colorful topological selection complex preserve joint path realizability?
 
 - Stable ID: note_joint_realizability_selection_for_nori1_and_boundary_tournaments
+- Author: unspecified; session provenance retained
 - Primary home: project:nori
 - Labels: approach, conjecture
 - Lifecycle: active
