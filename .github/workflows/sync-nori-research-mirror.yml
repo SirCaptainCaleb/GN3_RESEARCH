@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: canonical universal four-item reflexes and schema-independent shared guidance
+# NORI assembled publication: canonical manuscript only, universal guide/reflexes, no overview appendix mirror or worker prompt
 
 on:
   workflow_dispatch:
