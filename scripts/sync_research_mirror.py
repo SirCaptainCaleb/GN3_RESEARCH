@@ -116,6 +116,17 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
         }
 
     target_version = comp.get("composition_version")
+    if data.get("_legacy_composition_sources_absent"):
+        return {
+            "has_composition": True,
+            "composition_version": target_version,
+            "stale": None,
+            "stale_dependencies": [],
+            "frontier": {"current": None},
+            "composed_through_revision": comp.get("composed_through_event_id"),
+            "source_note": comp.get("source_note") or "",
+            "body_chars": len(comp.get("body") or ""),
+        }
     snap_rows = [
         s for s in data.get("composition_sources", [])
         if s.get("target_type") == node_type
@@ -403,10 +414,15 @@ def toolkit_entry_line(r: dict[str, Any]) -> str:
 
 def build(schema: str):
     root = STAGE / schema
-    data = {t: rows(schema, t) for t in TABLES}
+    data = {t: rows(schema, t) for t in TABLES
+            if not (schema == 'nori' and t == 'composition_sources')}
     if schema == 'nori':
+        # NORI stores selected children in compositions, without legacy source snapshots.
+        data['_legacy_composition_sources_absent'] = True
+        data['composition_sources'] = []
         data['research_notes'] = rows(schema, 'research_notes')
-        data['research_note_versions'] = rows(schema, 'research_note_versions')
+        # Research-note previous versions are no longer a mirror-exported table.
+        data['research_note_versions'] = []
 
     # Canonical data: all Article/Section/Subsection/Item/Result/Toolkit/auxiliary
     # document records are stored in the single typed nodes table. The following
