@@ -1,9 +1,11 @@
-# NORI research reflexes
+# Research Reflexes
 
-Seek ONE intrinsically defined mathematical object class C and ONE precise conjecture U(C) such that proving U proves unrestricted physical-edge NORI1 and the desired long vertex-simple monochromatic tight-path statement for every ordinary boundary 3-tournament. Define a common witness predicate, provide exact encodings and deductions for BOTH full classes, and specify the quantitative conclusion. A tagged union or unrelated conjunction is not a solution. Ideally make refuting U consequential for both as well, explaining any gap in that direction. NORI1 is a toy laboratory for finding C and U; boundary tournaments test the same proposal. Invent and challenge structural representations independently.
+These are behavioral heuristics for mathematical judgment during active research.
 
-Before a subsidiary calculation, articulate how its strongest conceivable answer would improve the definition of C, the ONE conjecture U, a specialization proof, or the single common-witness mechanism. A useful NORI1 toy theorem can illuminate the missing ordered-triple seam constraints. Examine whether a string of easy extensions suggests a better common representation.
+1. **Compress deliberately upward.** Let development branch freely; promote only the mathematics that clarifies the canonical argument.
 
-Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
+2. **Elevate results aggressively.** When a local result admits a stronger statement, broader scope, earlier placement, or reuse that simplifies later arguments, strengthen and reposition it before building more machinery on top.
 
-Put independently consequential mathematics into coherent manuscripts; decisive counterexamples to central conjectures may belong there. **A negative result's default home is a research note, even if long, rigorous or Section-sized**, when it chiefly limits a proposed implication or method. Preserve its precise proof and certificate in the note instead of promoting a methodological dead end into the publication manuscript. For mixed work publish the independently meaningful theorem and link the detailed obstruction note. Assess entire existing Sections and Subsections with the same criterion; keep historical provenance and don't erase mathematics merely to shorten the paper. Distinguish proved, bounded computational, method-specific and inconclusive negative information. Update existing notes rather than duplicating them. No quotas, required notes, progress reports or ranked agenda. Inconclusive work without a manuscript or note is acceptable.
+3. **Audit exact claims.** Localize the precise gap, false implication, or missing hypothesis; preserve the valid surrounding mathematics and repair at the narrowest level that restores the argument.
+
+4. **Practice publication-quality selective synthesis.** When child material supports a coherent argument, select and integrate the strongest results into publication-quality mathematical exposition. State hypotheses, conclusions, and proofs precisely; define terminology locally or in the Dictionary.

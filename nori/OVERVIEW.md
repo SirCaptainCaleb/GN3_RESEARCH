@@ -1,5 +1,13 @@
 # NORI: the grand conjecture is refuted in every dimension \(n\ge9\)
 
+## Active research objective: one structure and one conjecture
+
+The original unrestricted NORI3 statement is refuted, but the current research objective is different: **discover one natural intrinsic class of mathematical structures and formulate one precise conjecture about those structures whose proof would resolve both unrestricted NORI1 and the long monochromatic vertex-simple tight-path problem for every ordinary boundary 3-tournament.**
+
+The proposed conjecture must have a common witness notion, genuine instance encodings and rigorous deductions for **both** full classes, not a tagged union or the conjunction of two unrelated assertions. Arbitrary nonlinear antipodally odd physical-edge colorings must be accommodated on the NORI1 side; all reversal-odd ordered-triple tournaments (including non-edge-orderable instances) must be accommodated on the boundary side. Actual cube geodesics, physical face windows, and simplicity of original tournament vertices are essential.
+
+NORI1 is an appropriate toy laboratory for identifying root-consistency and joint-witness mechanisms. Boundary-tournament examples test the **same** proposed conjecture, particularly its additional seam windows and path-simplicity demands. A suitable structure and conjecture have not yet been established; individual results may still be valuable background but should be evaluated for their relevance to discovering this single object and assertion.
+
 **New dimension-free strengthening.** The explicit \(Q_9\) physical ordered-three-face counterexample extends to every \(Q_n\), \(n\ge9\). Keep three directions of class 0, \(n-4\) directions of class 1, and one sentinel; retain exactly the \(Q_9\) face-coloring rule. The new *hereditary sentinel-word contraction* lemma shows that deleting any ordinary direction occurrence never increases the number of adjacent window-color switches. All comparisons affected by a deletion fit inside seven consecutive letters; a complete 22,272-case finite-local check proves the lemma. Repeatedly deleting class-1 letters reduces any allegedly good geodesic to the verified 2,016-case \(Q_9\) obstruction. The complete theorem, proof and verifier are in foundational Subsection 7, *Hereditary sentinel-word contraction and NORI counterexamples in every dimension at least nine*. Article I and the Foundations Section incorporate the result. Positive \(Q_5,Q_6\) theorems remain true; dimensions seven and eight remain open.
 
 
