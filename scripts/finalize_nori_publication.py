@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finalize the NORI publication artifact without retaining superseded work."""
+"""Finalize NORI artifact metadata without retaining superseded work in Git."""
 from __future__ import annotations
 
 import json
