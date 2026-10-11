@@ -774,6 +774,43 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
         ]
         write(root / "RESEARCH_NOTES" / "QUESTIONS.md", "\n".join(question_map))
 
+        # Every retired manuscript has an exact publication-to-note pointer.
+        retired_subsections = sorted(
+            [n for n in data["nodes"] if n.get("type") == "subsection" and n.get("archived_at")],
+            key=lambda n: ((n.get("section_id") or ""), (n.get("subsection_no") or 0),n["id"])
+        )
+        retired_sections = sorted(
+            [n for n in data["nodes"] if n.get("type") == "section" and n.get("archived_at")],
+            key=lambda n:n["id"])
+        migration = [
+            "# Research-note migration and manuscript retirements", "",
+            "Editorial retirement preserves entire proof texts in notes and original exact composition versions in the database. Retired manuscripts no longer appear in the assembled publication.",
+            "", "## Fully retired Subsections", "",
+        ]
+        for old in retired_subsections:
+            links = []
+            for note in notes:
+                if any(ref.get("type") == "subsection" and ref.get("id") == old["id"] for ref in (note.get("related") or [])):
+                    links.append("[" + note["title"] + "](" + safe_name(note["id"]) + ".md)")
+            migration.append("- " + old["id"] + " (" + str(old.get("section_id") or "?") + ") -> " +
+                            (", ".join(links) if links else "UNLINKED: audit needed"))
+        migration += ["", "## Fully retired Sections", ""]
+        for old in retired_sections:
+            links = []
+            for note in notes:
+                if any(ref.get("type") == "section" and ref.get("id") == old["id"] for ref in (note.get("related") or [])):
+                    links.append("[" + note["title"] + "](" + safe_name(note["id"]) + ".md)")
+            migration.append("- " + old["id"] + " -> " + (", ".join(links) if links else "UNLINKED: audit needed"))
+        migration += ["", "## Active Subsections with extracted negative proof blocks", ""]
+        active_sub_ids = {n["id"] for n in data["nodes"] if n.get("type") == "subsection" and not n.get("archived_at")}
+        for note in notes:
+            for ref in note.get("related") or []:
+                if ref.get("type") == "subsection" and ref.get("id") in active_sub_ids and "version" in ref:
+                    migration.append("- [" + note["title"] + "](" + safe_name(note["id"]) + ".md) -> " +
+                                     ref["id"] + " (source composition v" + str(ref["version"]) + ")")
+        write(root / "RESEARCH_NOTES" / "MIGRATION.md", "\n".join(migration))
+
+
     for b in data["brainstorms"]:
         write(
             root / "BRAINSTORMS" / (safe_name(b["id"]) + ".md"),
@@ -865,6 +902,10 @@ Generated: {rev.get('generated_at')}
     write_json(root / "MANIFEST.json", {
         "schema": schema,
         "research_note_count": len(data.get("research_notes", [])),
+        "active_subsection_count": len([n for n in data["nodes"] if n.get("type")=="subsection" and not n.get("archived_at")]),
+        "retired_subsection_count": len([n for n in data["nodes"] if n.get("type")=="subsection" and n.get("archived_at")]),
+        "active_section_count": len([n for n in data["nodes"] if n.get("type")=="section" and not n.get("archived_at")]),
+        "retired_section_count": len([n for n in data["nodes"] if n.get("type")=="section" and n.get("archived_at")]),
         "snapshot_revision": rev.get("revision"),
         "generated_at": rev.get("generated_at"),
         "universal_document_versions": {d["id"]: d.get("version") for d in universal_docs},
