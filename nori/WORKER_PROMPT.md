@@ -14,23 +14,34 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-The ONLY active target is a stronger NORI-style class or theorem that
-retains every legal antipodally odd NORI1 physical-edge coloring,
-and ideally also all direction-only boundary 3-tournaments.
+The TWO EQUALLY PRIMARY targets are: (1) solve unrestricted NORI1 for
+all legal antipodally odd physical edge colorings; (2) solve the long
+vertex-simple monochromatic tight-path problem for ALL ordinary boundary
+3-tournaments b satisfying b(c,b,a)=1-b(a,b,c). Do not assume a global
+edge order or acyclic line-graph comparison orientation for target (2).
+A strengthened NORI theory must preserve BOTH full classes.
+The boundary 3-tournaments induced by global orders on edges of K_n are
+a USEFUL FALLBACK if the general boundary case hits a proved obstacle,
+NOT a substitute for its solution. A theorem restricted to edge-ordered
+cases must identify the remaining gap and seek a general transfer.
 Do not work on old unrestricted NORI2, or further refine the unrestricted
 NORI3 logarithmic obstruction for its own sake.
 
 Investigate independently a consequential route toward such a unification.
 A candidate three-face symmetry is separate same-face reversal oddness
 c(F,rev(pi))=1-c(F,pi) and antipodal invariance c(bar F,pi)=c(F,pi).
-It excludes the existing logarithmic NORI3 examples and contains boundary
-3-tournaments. But it cannot be imposed verbatim for k=1, where reversal
-is the identity. A serious framework must explain how ALL legal NORI1
-instances survive, without merely placing unrelated cases side by side.
+It excludes the existing logarithmic NORI3 examples and contains ALL
+boundary 3-tournaments, including edge-ordered comparison tournaments.
+But it cannot be imposed verbatim for k=1, where reversal is the identity.
+A serious framework must explain how ALL legal NORI1 instances and the
+edge-ordered boundary instances survive, without simply juxtaposing
+unrelated cases. Check proposed definitions against BOTH families.
 
 Prioritize a proven common long/spanning-path theorem, a meaningful lift
 or transfer preserving real physical faces and original-direction
 simplicity, or a rigorous obstruction to a proposed unified structure.
+Never confuse line-graph directed paths with vertex-simple increasing
+paths of the underlying edge-ordered K_n.
 Edge-order acyclicity and boundary comparisons are useful only insofar
 as they illuminate this common NORI1-preserving problem.
 
@@ -46,5 +57,4 @@ proofs, reproducible obstructions and true status. Review closely related
 manuscripts before adding another Subsection. There are no Items, claims,
 leases, checkpoints, assigned rankings or publication quotas.
 
-Persist manuscript advances selectively. If nothing deserves space in the
-paper, finish candidly: “I couldn't find anything worth publishing.”
+Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. Use nori.save_note only for decision-changing unfinished findings, at their narrowest scope, and revise existing notes on the same question. Do not confuse proved obstructions, bounded searches, method limits and failed attempts. Promote correct substantial mathematics into coherent Subsections, not notes. A session may end with no manuscript and no note.

@@ -86,3 +86,58 @@ In particular, the old NORI3 obstruction does not imply an edge-ordered increasi
 M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran, A. Z. Wagner, *Nearly-linear monotone paths in edge-ordered graphs*, Israel Journal of Mathematics **238** (2020), 663–685. DOI: 10.1007/s11856-020-2035-7. arXiv:1809.01468.
 
 See also the companion NORI research manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability* for the exact correspondence between boundary 3-tournaments and orientations of \(L(K_n)\).
+
+## Directed-pair rank rigidity and quantitative boundary defects
+
+The following rigidity result closes a natural attempt to enlarge the edge-ordered boundary-tournament class by assigning asymmetric scores to *ordered* pairs.
+
+**Theorem (directed-pair score symmetrization).** Let \(V\) be a finite set, and let \(\lambda(a,b)\) take values in an arbitrary totally ordered set for all distinct \(a,b\in V\). Define
+\[
+h(a,b,c)=\mathbf 1\{\lambda(a,b)<\lambda(b,c)\},\qquad a,b,c\ \text{distinct}.
+\tag{8}
+\]
+If \(h(c,b,a)=1-h(a,b,c)\) for every ordered triple, then there exists one total order \(\prec\) of the undirected edges of \(K_V\) for which
+\[
+h(a,b,c)=1\quad\Longleftrightarrow\quad\{a,b\}\prec\{b,c\}.
+\tag{9}
+\]
+Conversely, every boundary tournament induced by a global edge order admits the representation (8).
+
+**Proof.** Because \(V\) is finite, replace each \(\lambda\)-value by its rank among the \(m\) distinct values attained by \(\lambda\). This preserves all strict and weak comparisons. Write \(\rho(a,b)\in\{1,\ldots,m\}\) for the resulting rank and put
+\[
+s(\{a,b\})=\rho(a,b)+\rho(b,a).
+\tag{10}
+\]
+If \(h(a,b,c)=1\), then \(\rho(a,b)<\rho(b,c)\). The reversal identity gives \(h(c,b,a)=0\), so \(\rho(c,b)\ge\rho(b,a)\). Adding yields
+\[
+s(\{a,b\})<s(\{b,c\}).
+\]
+If \(h(a,b,c)=0\), apply the previous argument to the reversed triple, for which \(h(c,b,a)=1\), to obtain the reverse *strict* score inequality. Consequently every pair of incident edges has distinct \(s\)-scores and the strict inequalities induced by \(h\) coincide with their comparisons under \(s\). Sort undirected edges by \(s\), breaking possible ties only between disjoint edges. This produces the total edge order (9). Conversely, assign to both directed copies \((a,b)\) and \((b,a)\) the rank of \(\{a,b\}\) in any prescribed total edge order. Formula (8) reproduces its adjacent-edge comparisons. \(\square\)
+
+**Corollary (nearly-linear positive tight paths).** Every reversal-odd boundary tournament represented by directed-pair strict comparisons (8) admits a positive vertex-simple tight path on \(n/2^{O(\sqrt{\log n\log\log n})}\) vertices, by the preceding acyclic-transfer theorem and the Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner monotone-path theorem. The original graph vertices are distinct; their labels provide distinct cube directions in the corresponding direction-only physical coloring.
+
+The rigidity admits a quantitative form *without assuming reversal oddness*. For each unordered triple \(\{a,b,c\}\), say it is **defective** if at least one of its three possible middle vertices violates \(h(c,b,a)=1-h(a,b,c)\), with \(h\) still defined by (8). Let \(B\) be the number of defective unordered triples.
+
+**Theorem (rank-height/defect tradeoff).** If the directed score \(\lambda\) takes \(m\) distinct values, then
+\[
+\boxed{B\ \ge\ \frac n6\left(\frac{(n-1)^2}{2m-1}-(n-1)\right)_+.}
+\tag{11}
+\]
+In particular, if there are no defective triples then
+\[
+\boxed{m\ge \lceil n/2\rceil;}
+\tag{12}
+\]
+if \(m=O(\log n)\) along a family with \(n\to\infty\), then \(B=\Omega(n^3/\log n)\).
+
+**Proof.** Normalize all distinct \(\lambda\)-values to consecutive ranks \(1,\ldots,m\) as in the preceding theorem and use the same symmetric integer scores (10), which range from \(2\) to \(2m\). If two incident edges \(\{a,b\},\{b,c\}\) have equal symmetric score, reversal oddness at middle vertex \(b\) is impossible: otherwise the first theorem's strict-inequality argument, which uses only reversal oddness at that triple, would force one of the two unequal strict orders. Fix \(b\), and let \(d_t(b)\) count its \(n-1\) incident edges with score \(t\in\{2,\ldots,2m\}\). Every colliding pair of edges produces a reversal violation with middle \(b\). By Cauchy–Schwarz,
+\[
+\begin{aligned}
+\sum_{t=2}^{2m}\binom{d_t(b)}2
+&=\frac12\left(\sum_t d_t(b)^2-(n-1)\right)\\
+&\ge\frac12\left(\frac{(n-1)^2}{2m-1}-(n-1)\right).
+\end{aligned}
+\]
+Summing over \(b\) counts at most three violating middle-vertex choices for each defective unordered triple. Dividing by three and taking the nonnegative part gives (11). If \(B=0\), every star has \(n-1\) pairwise distinct symmetric integer scores in a set of size \(2m-1\), implying (12). The asymptotic defect bound follows by substituting \(m=O(\log n)\) into (11). \(\square\)
+
+**Scope and consequence.** The proof holds for arbitrary asymmetric ordered-pair scores, arbitrary discrete ranking/tie patterns, and (by rank normalization) every totally ordered score set, including lexicographically ordered tuples. It is an exact no-go for transferring an \(O(\log n)\)-height *directed-pair strict-comparison* construction to an ordinary boundary 3-tournament. It does **not** imply global edge-orderability for arbitrary boundary 3-tournaments, because their line-graph comparison orientations can contain directed cycles. It makes no assertion about unrestricted exterior-dependent physical 3-face colorings or unrestricted NORI1. A full ordinary boundary theorem must exploit mechanisms beyond strict comparisons of directed-pair potentials.

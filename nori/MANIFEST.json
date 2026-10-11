@@ -166,9 +166,9 @@
     },
     "nori_article_iii_reachability": {
       "composition": {
-        "body_chars": 3828,
-        "composed_through_revision": 4452,
-        "composition_version": 1,
+        "body_chars": 4633,
+        "composed_through_revision": 4809,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_section_position_now": 3,
@@ -177,7 +177,7 @@
           "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "source_note": "Connects established Feder–Subi path formulation and Leader–Long geodesic equivalence to NORI1 and exact three-face doubling limitations.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -242,9 +242,9 @@
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 6203,
-        "composed_through_revision": 4800,
-        "composition_version": 5,
+        "body_chars": 14509,
+        "composed_through_revision": 4859,
+        "composition_version": 14,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -253,7 +253,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Integrates the final sharpest proven exponent 1/3 sparse exterior-support boundary transfer and selective-pair robust snake lemma.",
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -261,9 +261,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 3946,
-        "composed_through_revision": 4793,
-        "composition_version": 2,
+        "body_chars": 8660,
+        "composed_through_revision": 4852,
+        "composition_version": 8,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -272,7 +272,7 @@
           "sections_now": 2
         },
         "has_composition": true,
-        "source_note": "Adds Leader-Long established n/2 partial monotone cube-geodesic baseline; full antipodal remains open.",
+        "source_note": "Integrates exact k-direction color-prescription equivalence and established finite geodesic A8 into seven-direction unrestricted NORI1 theorem.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -281,9 +281,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-10T17:12:28.425999+00:00",
+  "generated_at": "2026-10-11T02:37:43.224963+00:00",
   "item_count": 0,
   "mirror_format": 19,
+  "research_note_count": 3,
   "result_count": 0,
   "schema": "nori",
   "section_versions": {
@@ -390,8 +391,8 @@
     "nori_edge_affine_blocks": {
       "composition": {
         "body_chars": 2713,
-        "composed_through_revision": 4449,
-        "composition_version": 1,
+        "composed_through_revision": 4823,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 1,
@@ -400,7 +401,7 @@
           "subsections_now": 1
         },
         "has_composition": true,
-        "source_note": "Selective section synthesis from a single established edge-coloring subsection.",
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -409,18 +410,18 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 2064,
-        "composed_through_revision": 4450,
-        "composition_version": 1,
+        "body_chars": 6587,
+        "composed_through_revision": 4851,
+        "composition_version": 4,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
-          "subsections_now": 1
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Selective section synthesis from a single established edge-coloring subsection.",
+        "source_note": "Integrates exact arbitrary one-switch k-cube to every larger NORI1 k-coordinate prescription equivalence and literature-derived seven-direction universal consequence.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -509,18 +510,18 @@
     },
     "nori_reachability_and_splicing": {
       "composition": {
-        "body_chars": 6398,
-        "composed_through_revision": 4326,
-        "composition_version": 4,
+        "body_chars": 7459,
+        "composed_through_revision": 4806,
+        "composition_version": 5,
         "frontier": {
-          "current": false,
+          "current": true,
           "latest_subsection_no_now": 7,
-          "latest_subsection_no_when_composed": 10,
-          "subsections_existing_when_composed": 10,
+          "latest_subsection_no_when_composed": 7,
+          "subsections_existing_when_composed": 4,
           "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Dependency refresh after repaired two-window subsection frontier.",
+        "source_note": "Adds properly attributed Leader–Long/Feder–Subi edge-geodesic equivalence and precise NORI3 doubling limitation; refreshes current direct-child dependencies.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -569,18 +570,18 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 9998,
-        "composed_through_revision": 4799,
-        "composition_version": 7,
+        "body_chars": 21521,
+        "composed_through_revision": 4858,
+        "composition_version": 20,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 5,
-          "latest_subsection_no_when_composed": 5,
-          "subsections_existing_when_composed": 5,
-          "subsections_now": 5
+          "latest_subsection_no_now": 9,
+          "latest_subsection_no_when_composed": 9,
+          "subsections_existing_when_composed": 9,
+          "subsections_now": 9
         },
         "has_composition": true,
-        "source_note": "Updated Section to strongest exponent 1/3 theorem, robust clean-terminal-pair snake, after subsection full rewrite.",
+        "source_note": "",
         "stale": false,
         "stale_dependencies": []
       },
@@ -648,7 +649,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1187,
+  "snapshot_revision": 1249,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -683,15 +684,15 @@
     "affine_and_nonlinear_edge_coloring_families": {
       "composition": {
         "body_chars": 3698,
-        "composed_through_revision": 4447,
-        "composition_version": 1,
+        "composed_through_revision": 4822,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Selective manuscript synthesis of proved original edge-coloring Items.",
+        "source_note": "Consolidate existing result from Article III; retain the original affine and block manuscript",
         "stale": false,
         "stale_dependencies": []
       },
@@ -716,6 +717,25 @@
       },
       "development_version": 1,
       "section_id": "nori_affine_exterior_colorings",
+      "version": 1
+    },
+    "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
+      "composition": {
+        "body_chars": 10340,
+        "composed_through_revision": 4850,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Proved exact multifacet bridge equivalence between unrestricted NORI1 k-direction color prescription and arbitrary k-cube one-switch antipodal geodesic; combines with established SAT geodesic A8 to give universal seven-direction prescription in all larger dimensions.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "antipodal_root_profile_paths_and_deleted_product_extraction": {
@@ -984,6 +1004,25 @@
       "section_id": "nori_local_connector_geometry",
       "version": 1
     },
+    "coupled_chronological_saddle_potentials_and_checkerboard_obstructions": {
+      "composition": {
+        "body_chars": 12864,
+        "composed_through_revision": 4857,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Formatting repair: render exact finite Python enumeration certificate as a proper fenced code block; mathematical assertions unchanged",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
     "covered_root_separators_and_live_edge_antipodal_carriers": {
       "composition": {
         "body_chars": 10169,
@@ -1138,16 +1177,16 @@
     },
     "doubling_equivalence_and_the_two_window_splice_obstruction": {
       "composition": {
-        "body_chars": 14709,
-        "composed_through_revision": 4325,
-        "composition_version": 4,
+        "body_chars": 19045,
+        "composed_through_revision": 4804,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Renewed Item-frontier anchor following same-session Item metadata version update.",
+        "source_note": "Established literature: Feder–Subi (2013) original path conjecture; Leader–Long (2014) geodesic equivalence with complete physical-edge construction and proof. Preserves distinct three-face caveat.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1174,6 +1213,25 @@
       "section_id": "nori_affine_exterior_colorings",
       "version": 2
     },
+    "endpoint_density_snakes_and_bounded_algebraic_degree": {
+      "composition": {
+        "body_chars": 10238,
+        "composed_through_revision": 4847,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Adds cube-translation-subgroup square-root theorem and dense-affine global coefficient-rank corollary; full physical translation proof.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
     "endpoint_opposed_full_path_permutohedral_packets": {
       "composition": {
         "body_chars": 24996,
@@ -1195,16 +1253,16 @@
     },
     "endpoint_tournament_factorization_and_monochromatic_orders": {
       "composition": {
-        "body_chars": 12426,
-        "composed_through_revision": 4303,
-        "composition_version": 2,
+        "body_chars": 28933,
+        "composed_through_revision": 4833,
+        "composition_version": 6,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Composition refreshed against complete housed Item set after regrouping; preserves source proofs and appends scope-specific new results.",
+        "source_note": "Proves position-indexed transitive-tournament Hamilton ordering via a rank potential, and isolates both nontransitive chronology failure and the K4 parity-coupling obstruction",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1307,6 +1365,44 @@
       "section_id": "nori_affine_exterior_colorings",
       "version": 2
     },
+    "full_geodesic_color_profiles_span_the_entire_binary_space": {
+      "composition": {
+        "body_chars": 6707,
+        "composed_through_revision": 4834,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "All NORI1 edge colorings: full geodesic indexed profiles affinely span F2^n; universal two-direction color prescription; square-potential proof",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing": {
+      "composition": {
+        "body_chars": 11950,
+        "composed_through_revision": 4829,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Uniform random nonlinear BC physical NORI3 almost surely has monochromatic full geodesic; Janson all-word universality for prime n; smoothed arbitrary base boundary tournament plus random affine exterior even support yields one order realizing every word with exact 4-root fibers. Full second-moment, AP packing and GF2 rank proofs.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
     "global_geodesic_density_and_cyclic_root_transport_bounds": {
       "composition": {
         "body_chars": 16203,
@@ -1343,6 +1439,25 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier": {
+      "composition": {
+        "body_chars": 8660,
+        "composed_through_revision": 4807,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Layer-varying boundary snake, sqrt(n) physical geodesics for rank-homogeneous globally dependent NORI3, robust selective-pair rank-defect theorem and dense necessary sensitivity for hypothetical logarithmic compatible obstruction.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
     "logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry": {
@@ -1461,16 +1576,16 @@
     },
     "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments": {
       "composition": {
-        "body_chars": 7272,
-        "composed_through_revision": 4760,
-        "composition_version": 1,
+        "body_chars": 12373,
+        "composed_through_revision": 4825,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Near-linear acyclic boundary-tournament geodesic transfer from published edge-order altitude theorem; sharp scope for exterior fibers",
+        "source_note": "Proves exact directed-pair comparison symmetrization and quantitative logarithmic-rank boundary reversal-defect obstruction; integrates with near-linear acyclic transfer",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1951,6 +2066,25 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "universal_three_direction_edge_color_prescription": {
+      "composition": {
+        "body_chars": 4647,
+        "composed_through_revision": 4840,
+        "composition_version": 1,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
+        "has_composition": true,
+        "source_note": "Proved universal three-direction prescription in all NORI1 dimensions via antipodal cyclic root slides, rigid 3-cube avoidance and a same-root adjacent physical square swap.",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     }
   },

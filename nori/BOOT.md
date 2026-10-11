@@ -6,9 +6,9 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read KNOWN_OBSTRUCTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; judge mathematical significance independently. A session may end with no publication.
+For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. Follow ONLY relevant notes, not all of them at startup. Notes are non-manuscript memory and never rank the research agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
-Snapshot revision: 1187
-Generated: 2026-10-10T17:12:28.425999+00:00
+Snapshot revision: 1249
+Generated: 2026-10-11T02:37:43.224963+00:00

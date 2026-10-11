@@ -10,6 +10,10 @@ Fix an ordered terminal pair J=(a,b) and D=[n] without {a,b}. For a cube root x,
 
 The physical terminal order matters. Ordinary concatenation of arbitrary monochromatic three-window paths creates two new ordered windows at the seam, and the colors of those windows are not determined by the two interior monochromatic colors. In the reversed-two-tail construction, the actual common root, complementary supports, and reversed terminal pairs provide the special face identifications that make extraction valid. Thus a topological coincidence of support labels is useful precisely when it retains these data.
 
+## Classical one-face doubling versus ordered-three-face splicing
+
+Feder–Subi (2013) proposed the arbitrary-edge one-switch **path** conjecture. Leader–Long (2014, arXiv:1301.2195, Proposition 3.6) strengthened it to **geodesics** and proved that its all-dimensional validity is equivalent to full monochromatic antipodal geodesics for every antipodally odd physical-edge coloring (NORI1): \(B_n\Rightarrow A_n\) and \(A_{n+1}\Rightarrow B_n\). The explicit physical-edge doubling, both proof directions and primary citations are recorded in the Section *Doubling, complementary reachability, and geodesic splicing*. The same doubling applied to physical ordered three-faces leaves two unprescribed seam windows and an ordered-reversal obstruction, so it does not furnish an analogous NORI3 implication.
+
 ## Accessibility and state carriers
 
 For an undirected edge coloring, let E_q(x,S) assert existence of a q-monochromatic geodesic from x with direction support S. For nonempty S, deleting its first direction proves

@@ -29,6 +29,36 @@ The monochromatic bit is deliberately forgotten; the ordered two-direction termi
 
 # What cube doubling does for ordered three-face colorings
 
+## Established one-face theorem: Feder–Subi formulation and Leader–Long equivalence
+
+**Historical attribution (literature, not an original NORI result).** Feder and Subi conjectured that every *arbitrary* binary coloring of the undirected edges of the cube has an antipodal *path* with at most one color change. Their conjecture did not require a shortest path: Tomás Feder and Carlos Subi, *On hypercube labellings and antipodal monochromatic paths*, Discrete Applied Mathematics **161** (2013), 1421–1426, DOI 10.1016/j.dam.2012.12.025. Imre Leader and Eoin Long proposed the corresponding **geodesic** strengthening and established the equivalence below: *Long geodesics in subgraphs of the cube*, Discrete Mathematics **326** (2014), 29–33, DOI 10.1016/j.disc.2014.02.013; Proposition 3.6 in arXiv:1301.2195v1, Proposition 4.6 in a later author version.
+
+Write \(c_i(x)\) for the color of the physical (undirected) edge \(\{x,x\oplus e_i\}\), so \(c_i(x)=c_i(x\oplus e_i)\). An *antipodally odd* coloring satisfies \(c_i(\bar x)=1-c_i(x)\). Define \(A_n\) to mean that every antipodally odd binary physical-edge coloring of \(Q_n\) has a **monochromatic full antipodal geodesic**; define \(B_n\) to mean that every *arbitrary* binary physical-edge coloring of \(Q_n\) has a **full antipodal geodesic with at most one color change**.
+
+**Theorem (Leader–Long, dimension-shift equivalence).** For all \(n\ge2\),
+\[
+ B_n\Longrightarrow A_n,\qquad A_{n+1}\Longrightarrow B_n.
+\]
+Consequently \((\forall n\, A_n)\) holds if and only if \((\forall n\, B_n)\). This theorem concerns ordinary physical edges (NORI1).
+
+**Proof, including a concrete legal doubling.** Let \(c\) be any physical edge coloring of \(Q_n\), introduce an extra direction \(s\), and set
+\[
+ C_i(x,0)=c_i(x),\qquad
+ C_i(x,1)=1-c_i(\bar x)\ (i\in[n]),\qquad
+ C_s(x,t)=x_1. \tag{E1}
+\]
+The first two formulas are physical because \(c_i\) is independent of its own \(i\)-bit; the last is independent of the \(s\)-bit. Complementing all \(n+1\) coordinates interchanges the two \(i\)-facets and complements their colors; the \(s\)-edge colors also complement because \(x_1\) does. Thus \(C\) is an honest antipodally odd coloring of every physical edge in \(Q_{n+1}\).
+
+Assume \(A_{n+1}\). Take a \(C\)-monochromatic full antipodal geodesic and reverse its traversal if needed so it crosses \(s\) from 0 to 1. Let \(L:x\to y\) be its lower-facet portion in original-coordinate directions \(U\), and \(R:y\to\bar x\) its upper-facet portion in directions \(V=[n]\setminus U\). Both carry one color \(q\). The original-coordinate antipodal image \(\bar R:\bar y\to x\) is colored \(1-q\) by the upper-facet formula in (E1). Concatenate the reversed paths \(L^{-1}:y\to x\), of color \(q\), and \(\bar R^{-1}:x\to\bar y\), of color \(1-q\). The resulting path \(y\to\bar y\) uses precisely the disjoint coordinate sets \(U,V\), each direction once, and changes color at most once. This proves \(B_n\); an empty segment creates no difficulty.
+
+Conversely, assume \(B_n\) and let \(c\) itself be antipodally odd. Split a full one-switch antipodal geodesic from \(x\) to \(\bar x\) into a \(q\)-monochromatic first portion \(L:x\to y\) and a \((1-q)\)-monochromatic second portion \(R:y\to\bar x\). Antipodality makes \(\bar R:\bar y\to x\) \(q\)-monochromatic. Thus \(L^{-1}:y\to x\) followed by \(\bar R^{-1}:x\to\bar y\) is a monochromatic full antipodal geodesic, using each original direction once. This proves \(A_n\). \(\square\)
+
+**Implication and strict boundary of transfer.** Solving the unrestricted NORI1 monochromatic full-geodesic conjecture in all dimensions is *equivalent* to solving the arbitrary-edge one-switch **geodesic** conjecture. The original Feder–Subi arbitrary-edge one-switch **path** conjecture is a separately stated, weaker goal. The direct argument relies on a single edge-color junction between two blocks. For ordered physical three-face colorings, two additional splice windows arise, and reversal of the ordered free triple matters. The counterexample and obstruction below rigorously explain why the one-face proof does not transfer verbatim.
+
+Primary sources: https://arxiv.org/pdf/1301.2195 ; https://doi.org/10.1016/j.disc.2014.02.013 ; https://theory.stanford.edu/~tomas/antipod.pdf ; https://doi.org/10.1016/j.dam.2012.12.025
+
+---
+
 Let b be an arbitrary binary coloring of ordered three-faces in Q_n. Form Q_(n+1)=Q_n x {0,1} with new direction g. On faces omitting g, define C((F,0),pi)=b(F,pi) and C((F,1),pi)=1-b(bar F,rev pi). On g-containing ordered faces choose colors in arbitrary complementary antipodal-reversal pairs. Then C(bar E,rev pi)=1-C(E,pi), so this is the exact ordered-three-face analogue of the antipodally odd doubled edge coloring. The naive formula C((F,1),pi)=1-b(F,pi) generally violates NORI oddness: reversal of the ordered triple is mandatory.
 
 LEMMA (two new splice windows). Suppose b is reversal-blind, meaning b(F,rev pi)=b(F,pi). Let an antipodal full geodesic in the doubled cube start in the lower facet, cross g once, and have a monochromatic C-word of color q. Let its pre-g direction list be U and its post-g list V, with starting lower vertex x and crossing vertex y (in Q_n coordinates). Complement every Q_n vertex of its upper-facet suffix, giving a directed path from bar y to x in direction order V; concatenate the original lower prefix x to y in direction order U. The resulting Q_n path from bar y to y is a full antipodal geodesic with order (V,U). Every triple completely inside V has b-color 1-q; every triple completely inside U has b-color q. The only unprescribed triples are the two windows straddling the V|U splice (or fewer when one block is short). Thus the decoded b-word has the form (1-q,...,1-q, z_1,z_2,q,...,q) and may have THREE color changes. When both long constant flanks exist it has at most one change exactly when (z_1,z_2) is NOT (q,1-q). The forbidden pair creates (1-q,q,1-q,q) with three changes.

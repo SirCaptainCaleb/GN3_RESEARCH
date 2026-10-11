@@ -6,4 +6,4 @@ Before a subsidiary calculation, say what precise general implication its best a
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
-Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening; keep failed routine investigations private. Inconclusive work with no paper-worthy outcome is entirely acceptable.
+Put correct, significant mathematics into the coherent manuscript. Preserve decisive counterexamples and honest hypotheses; consolidate redundant strengthening. Save a separate research note only for precise decision-changing obstructions, conjectures, approaches or partial arguments. Update existing notes instead of duplicates; distinguish proved, bounded computational, method-specific and inconclusive negative information. Epistemic and lifecycle status are distinct. No quotas, required notes, progress reports or ranked agenda. Inconclusive work without a manuscript or a note is acceptable.

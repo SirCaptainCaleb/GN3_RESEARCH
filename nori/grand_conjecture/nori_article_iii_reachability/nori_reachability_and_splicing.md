@@ -40,6 +40,12 @@ Conversely, let \(P\) be a good full order \((p_1,\ldots,p_n)\) from root \(x\).
 
 The proof works for ordered \(k\)-faces with a common terminal memory of \(k-1\) directions. The two-tail overlap (1) is therefore a faithful, color-free target for a topological or combinatorial proof of NORI.
 
+## Historical edge-color baseline: Feder–Subi and Leader–Long
+
+Feder and Subi (2013) conjectured a one-switch antipodal *path* for every arbitrary binary edge coloring of \(Q_n\). Leader and Long (2014, Proposition 3.6 of arXiv:1301.2195v1) formulated the **geodesic** version and proved its all-dimensional equivalence to monochromatic antipodal geodesics for all antipodally odd physical-edge colorings (NORI1). More precisely, if \(A_n\) denotes odd-color monochromatic full-geodesic closure and \(B_n\) denotes arbitrary-color one-switch full-geodesic closure, then \(B_n\Rightarrow A_n\) and \(A_{n+1}\Rightarrow B_n\). The exact legal one-coordinate doubling, both proof directions and references appear in *Doubling equivalence and the two-window splice obstruction*.
+
+This is a theorem about **edges**. In the corresponding ordered-three-face setting, concatenation introduces two new colored windows at the seam; a further order-reversal incompatibility prevents the naive extension. The counterexample in that Subsection establishes the distinction.
+
 ## Why direct cube doubling requires care
 
 Let \(b\) be any binary coloring of ordered three-faces of \(Q_n\), and introduce a new coordinate \(g\). On faces omitting \(g\), color the lower facet by \(b(F,\pi)\) and the upper by
