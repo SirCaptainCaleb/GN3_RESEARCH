@@ -6,10 +6,11 @@
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
 ## Research notes: selective non-manuscript memory
-- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, author, labels, related [{type,id,version?}], epistemic_status, lifecycle. Revisions require exact expected_version.
-- nori.read_note(id,version:=null) reads an exact version; nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
+- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, author, labels, related [{type,id,version?}], epistemic_status, lifecycle. Manifests may pin exact manuscript composition versions; note-to-note links track the current note. Revisions require exact expected_version.
+- nori.read_note(id,version:=null) reads the current or immediately previous note revision ONLY. On revision, the previous snapshot replaces any older snapshot; no unbounded note history. nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
 - nori.notes_for(type,id) finds primary-home and linked notes. read_manuscript includes related_notes metadata; manuscripts never automatically incorporate note bodies.
 - lifecycle active|resolved|superseded is separate from epistemic_status. Resolution and supersession require disposition, and supersession requires a valid successor_id.
+- **Editorial rule:** negative results default to research notes even when completely proved, extensive, or occupying an entire Section. Exception: decisive refutations of important conjectures (such as NORI3 Q9) or independently significant theorems. Mixed manuscripts retain self-standing mathematical advances and link scoped obstruction notes. Preserve proofs, precise hypotheses and certificates when reclassifying; never discard content merely because it is negative.
 - Separate brainstorm writes are retired in NORI; use only the selective research-note entity. The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
 
 ## Manuscript publication

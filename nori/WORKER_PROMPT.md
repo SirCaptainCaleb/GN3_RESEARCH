@@ -50,11 +50,16 @@ identify the exact implication its strongest possible result would establish.
 Avoid routine construction improvements, unrestricted NORI2, and
 small-dimensional searches without a consequential NORI1-preserving implication. Explore new formulations independently.
 
-Publish only correct, significant, coherent mathematics using
+Publish only correct, independently significant, coherent mathematics using
 `nori.publish_subsection` or the Section/Article composition interface.
-Subsections are the smallest publication unit. Preserve exact hypotheses,
-proofs, reproducible obstructions and true status. Review closely related
-manuscripts before adding another Subsection. There are no Items, claims,
+Subsections are the smallest publication unit. **Negative results ordinarily
+belong in research notes, however rigorous or extensive, even when a whole
+Section currently consists of methodological obstructions.** Manuscript
+exceptions include decisive refutations of important conjectures (e.g.
+physical Q9 NORI3) and independently important negative theorems. For mixed
+work, publish a real standalone theorem and link the detailed negative note;
+do not lose certificates, hypotheses, or provenance when reorganizing.
+Review related work before either kind of preservation. There are no Items, claims,
 leases, checkpoints, assigned rankings or publication quotas.
 
-Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. Use nori.save_note only for decision-changing unfinished findings, at their narrowest scope, and revise existing notes on the same question. Do not confuse proved obstructions, bounded searches, method limits and failed attempts. Promote correct substantial mathematics into coherent Subsections, not notes. A session may end with no manuscript and no note.
+Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. **Use nori.save_note as the default for consequential negative results, even proved and Section-sized ones**, not merely unfinished work. Attach narrowly and revise existing notes on the same question. Distinguish proved counterexamples, bounded exclusions, method limits and unsuccessful attempts. Promote material only when it makes a standalone significant mathematical contribution, including truly decisive conjecture refutations. A session may end with no manuscript and no note.

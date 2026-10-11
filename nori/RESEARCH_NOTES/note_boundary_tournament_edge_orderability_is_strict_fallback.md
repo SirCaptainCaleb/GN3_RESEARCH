@@ -6,7 +6,8 @@
 - Labels: obstruction, approach
 - Lifecycle: active
 - Epistemic status: proved
-- Version: 1
+- Current version: 1
+- Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
 - Disposition: none
