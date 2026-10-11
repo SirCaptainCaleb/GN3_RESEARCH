@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: independent audit reconciled 36 keep 17 move 15 split 7 consolidate
+# NORI assembled publication: one structure one conjecture resolving both problems guidance 2026-10-11
 
 on:
   workflow_dispatch:
