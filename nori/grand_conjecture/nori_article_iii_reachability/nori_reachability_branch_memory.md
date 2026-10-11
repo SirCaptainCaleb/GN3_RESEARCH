@@ -19,3 +19,7 @@ These data define a signed profile nerve by retaining witness labels and exchang
 For a genuine k-edge path P, record its endpoints, first and last two directions, terminal window colors and switch count truncated at two. Its endpoint difference records the used direction support. This state is sufficient to check admissibility of endpoint extensions only after the new physical seam windows have been evaluated. The rank-six braid construction identifies distinct histories with one reduced boundary state and thereby exhibits nontrivial incidence hidden by state compression. The corresponding physical square has to be certified with its actual paths, rather than filled combinatorially by the mere equality of state labels.
 
 A topological extraction theorem must therefore produce a profile coincidence with one common root and complementary reversed tails, and provide a physical lift of any quotient-level path. Accessibility and the braid construction supply exact constraints on this missing theorem.
+
+## Research-note boundary after independent audit
+
+The Boolean-downset counterexample is documented in a note; exact two-shore and physical root-fiber claims remain published.

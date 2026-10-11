@@ -51,8 +51,6 @@ Apply the exact flipper lifting lemma to the set \(A'\): any one-change antipoda
 
 The restriction is a sufficient reduction; it does not assert that arbitrary NORI counterexamples possess any universal flipper.
 
-For every n>=7 there is a NORI antipodal-reversal-odd ordered-three-face coloring with pointwise reversal-evenness, affine single-exterior-bit color on each face, and a coordinate order for which EVERY starting vertex produces at least two color changes.
 
-Construction: On ordered free triples (1,2,3), (2,3,4), (3,4,5), (4,5,6), and (i,i+1,i+2) for i>=5, assign face colors respectively y_n, 1+y_1, y_1, y_n, y_1 (sum mod 2; y is the physical exterior-bit assignment). Along order (1,...,n) from x, the color word is (x_n,x_1,1+x_1,x_n,1+x_1,...,1+x_1). Its first five bits are 00101, 01000, 10111, or 11010 according to (x_1,x_n)=(0,0),(1,0),(0,1),(1,1); each has at least two switches, and the remaining bits repeat its fifth bit. Give reversed ordered triples the same function on their common face. Fill all other reversal-pairs using an arbitrary single exterior bit y_r (possible since n>=7). Each function changes under exterior-bit complement, so c(bar F,rev pi)=1+c(F,pi) globally. This proves the claim.
 
-Research consequence: oddness plus exact face-locality does not force a good root for any fixed coordinate order. A grand-closure argument must exchange direction orders as well as roots. This is a proof obstruction to root-only Hamming-layer or fixed-permutation surjectivity arguments, not a counterexample to the grand conjecture.
+*Exact scoped proof in note* note_rooted_restriction_and_good_root_density_limitations.

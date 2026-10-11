@@ -9,3 +9,7 @@ The surviving Subsections develop exact seven-direction endpoint pivots and wing
 Two detailed negative arguments originally developed inside the chronological-saddle manuscript—why large checkerboard-free submatrix extraction cannot yield the general altitude bound, and a finite four-local Hamilton completion obstruction—have been moved verbatim into a note attached to that Subsection. They are valuable boundaries of methods but not independently theorems solving either full-class target. The prior complete composition is still accessible by exact historical version.
 
 The layered boundary-snake theorem, quantitative order and pivot statements, and remaining exact obstruction-compatible positive proofs retain their publication standing. Neither comparison-DAG reachability nor line-graph trails should be mistaken for vertex-simple original-graph tight paths.
+
+## Research-note boundary after independent audit
+
+Comparison-cycle and chronological parity failures are in notes; original-vertex-simple path and seven-coordinate factorization theorems remain as manuscripts.

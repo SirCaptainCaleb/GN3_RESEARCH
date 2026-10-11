@@ -23,7 +23,9 @@ Conversely suppose m(z,z') lies in one witnessed prefix simplex of K_q(z), corre
 
 **Root-color symmetry.** Under physical antipodality alpha(r,s)=(1-r,s), one has alpha(m(z,z'))=m(bar z,bar z'); oddness sends K_q(z) to K_(1-q)(bar z). Both the midpoint representation and its witness test are fully antipodally equivariant.
 
-**Limit.** Other points of F_z intersect F_z' may lie in K_q(z) and K_r(z') without monochromatic shortest paths between z,z'. The theorem singles out canonical midpoint points as the faithful labels; a general topological intersection theorem must force one of these certified points, rather than an arbitrary geometric crossing. For full antipodal targets, F_z intersect F_bar z={o}, so every intersection is automatically canonical.
+
+
+*The exact scoped proof is preserved in research note* note_terminal_basins_and_root_profile_nerve_extraction_limits.
 
 ## A color-free 2n-bit reachability holonomy graph: odd signed cycles force closure
 
@@ -104,12 +106,6 @@ x\ \xrightarrow{u_1,\ldots,u_s,a,b}\ y,
 \]
 Trimming its first direction u_1 produces the suffix geodesic from x⊕e_{u_1} to y, with ordered terminal pair (a,b) and a subsequence of the original monochromatic windows. Thus x⊕e_{u_1} lies in T_J(y). Repeat through u_2,...,u_s to b_0. These vertices form a shortest path within the root facet H_y, since each step removes one disagreement coordinate with b_0. The analogous proof applies to revJ at the antipodal corner b_1. QED.
 
-**Exact topological problem.** The grand NORI conjecture is equivalent to the impossibility of TWO DISJOINT geodesically corner-rooted terminal basins T_J(y) and T_revJ(y^D) for EVERY choice of y,a,b. This is a precise two-shore Hex/Hartman connector formulation:
-- the opposite base corners b_0 and b_1 lie in a physical d-cube H;
-- each basin contains its entire radius-1 star and is geodesically connected to its base;
-- basin membership means ACTUAL monochromatic ordered-face-window geodesic reachability and records NO color;
-- an intersection yields one genuine full good geodesic with no uncontrolled seam windows.
 
-Importantly, two arbitrary rooted connected radius-one neighborhoods of opposite corners CAN be disjoint for d>=3; topology must use the coupling among basin families for different tails J and terminal vertices y. The next research goal is a simultaneous Sperner/KKM/Hex argument enforcing intersection across the collection of all such coupled accessible basins, not a false pointwise Helly assertion for a single pair.
 
-The topology of an abstract target carrier cannot be used to infer a path unless its simplices satisfy the literal geodesic-certification rule. Several counterexamples here delimit that rule sharply.
+*The scope-specific limitation and complete proof are preserved in linked research note note_terminal_basins_and_root_profile_nerve_extraction_limits.*

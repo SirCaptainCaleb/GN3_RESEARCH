@@ -324,11 +324,11 @@ Apply the exact flipper lifting lemma to the set \(A'\): any one-change antipoda
 
 The restriction is a sufficient reduction; it does not assert that arbitrary NORI counterexamples possess any universal flipper.
 
-For every n>=7 there is a NORI antipodal-reversal-odd ordered-three-face coloring with pointwise reversal-evenness, affine single-exterior-bit color on each face, and a coordinate order for which EVERY starting vertex produces at least two color changes.
 
-Construction: On ordered free triples (1,2,3), (2,3,4), (3,4,5), (4,5,6), and (i,i+1,i+2) for i>=5, assign face colors respectively y_n, 1+y_1, y_1, y_n, y_1 (sum mod 2; y is the physical exterior-bit assignment). Along order (1,...,n) from x, the color word is (x_n,x_1,1+x_1,x_n,1+x_1,...,1+x_1). Its first five bits are 00101, 01000, 10111, or 11010 according to (x_1,x_n)=(0,0),(1,0),(0,1),(1,1); each has at least two switches, and the remaining bits repeat its fifth bit. Give reversed ordered triples the same function on their common face. Fill all other reversal-pairs using an arbitrary single exterior bit y_r (possible since n>=7). Each function changes under exterior-bit complement, so c(bar F,rev pi)=1+c(F,pi) globally. This proves the claim.
 
-Research consequence: oddness plus exact face-locality does not force a good root for any fixed coordinate order. A grand-closure argument must exchange direction orders as well as roots. This is a proof obstruction to root-only Hamming-layer or fixed-permutation surjectivity arguments, not a counterexample to the grand conjecture.
+*Exact scoped proof in note* note_rooted_restriction_and_good_root_density_limitations.
+
+
 
 ### Affine change syndromes and exact root-count phenomena
 
@@ -336,55 +336,9 @@ Research consequence: oddness plus exact face-locality does not force a good roo
 
 Fix a coordinate order and vary the starting vertex in an affine coloring of physical ordered faces. The successive color changes are affine functions of the root bits; good paths correspond to syndrome vectors of Hamming weight at most one. This linear-algebraic translation gives exact fiber counts, quantitative generic success and sharp rank-deficient obstructions.
 
-## A valid antipodally odd affine edge coloring with reachability nerve chi=2, Lefschetz=0
 
-On Q_4={0,1}^4, define the color of direction-i edges by
-\[
-c_1(x)=x_3,\qquad c_2(x)=x_4,\qquad
-c_3(x)=x_4,\qquad c_4(x)=x_3,
-\]
-where c_i is independent of x_i as required for an undirected edge coloring. Every c_i depends on exactly one *exterior* bit, so complementing all cube bits flips every edge color: c_i(bar x)=1-c_i(x). Hence the original antipodal-odd edge axiom holds.
 
-For the COLOR-FREE monochromatic geodesic reachability nerve K_R on 16 cube-vertex labels, the exact simplicial face counts are
-\[
-(f_0,\ldots,f_{15})=
-(16,120,560,1820,4368,8008,11440,12870,11440,7992,4320,1752,504,92,8,0).
-\]
-Therefore
-\[
-\boxed{\chi(K_R)=\sum_{k=0}^{15}(-1)^k f_k=2.}
-\]
-The counts of τ-invariant simplices supported on respectively r antipodal vertex pairs, r=1,...,8, are
-\[
-(a_1,\ldots,a_8)=(8,28,56,70,52,22,4,0).
-\]
-An invariant simplex with r antipodal pairs has 2r vertices and τ acts as r disjoint vertex transpositions; its contribution to the antipodal Lefschetz number is \((-1)^{(2r-1)}(-1)^r=(-1)^{r+1}\). Hence
-\[
-\boxed{L(\tau)=\sum_{r=1}^8(-1)^{r+1}a_r=0.}
-\]
-Nevertheless ALL eight antipodal edges {x,bar x} belong to K_R: R(x)∩R(bar x) is nonempty for every x.
-
-**Exact reproducibility without black-box search.** For each root x, define dynamic Boolean arrays r_q(x,S) on coordinate subsets S⊆[4]:
-\[
-r_q(x,\varnothing)=1,\qquad
-r_q(x,S)=\bigvee_{i\in S}\bigl[
-r_q(x,S\setminus\{i\})\ \land\
-(c_i(x\oplus(S\setminus\{i\}))=q)
-\bigr].
-\]
-Then R(x) consists exactly of x⊕S for which r_0(x,S)∨r_1(x,S)=1. Enumerating x in binary order 0000 through 1111 and encoding R(x) as a 16-bit mask with target z at bit position z gives
-\[
-(0fff,0fff,0fff,0fff,\ ff7f,ffbf,ffdf,ffef,\
-f7ff,fbff,fdff,feff,\ fff0,fff0,fff0,fff0).
-\]
-The nerve simplex test is the direct formula
-\[
-\sigma\in K_R\ \Longleftrightarrow\
-\exists z\in Q_4:\ \sigma\subseteq R(z),
-\]
-using symmetry R(z) as the set of roots that can reach z. Counting nonempty bitmask subsets of the displayed region masks produces exactly the face counts above. Counting masks closed under z→15⊕z produces a_r.
-
-**Implication.** The raw reachability nerve does not universally have odd Euler characteristic, and the antipodal involution need not have nonzero Lefschetz number, EVEN when every antipodal pair has an intersection certificate. Consequently neither invariant alone can prove the grand edge conjecture on this nerve. This is a precise, fully specified counterexample to an overly strong topological forcing hypothesis; it does NOT refute the edge conjecture or the exact fixed-point equivalence. A refined nerve, local carrier condition, or higher-order reachability incidence theorem is necessary.
+*Exact scoped proof in note* note_nori_carrier_requires_joint_actual_geodesic_witnesses.
 
 ## Random affine NORI: most colorings are full-rank at EVERY chosen permutation with a quantitative constant bound
 
@@ -543,25 +497,11 @@ These conditions exactly say that the first exceptional physical ordered-three-f
 
 **Known closure instance.** When n is even and h≡0 (more generally h≡constant or h(i,j,k)=q+η_i+η_j+η_k), the cyclic-three-chain template yields an antipodally connected chart graph in every dimension n>=8. This has been fully proved separately in Item nori_even_dimension_three_arbitrary_nonlinear_coordinate_faults_full_grand_closure_20261008. Empirical finite checks are NOT a proof of chart connectivity for arbitrary allowed h; no such universal assertion is made here. The unrestricted grand conjecture remains open.
 
-## A sharp structural obstruction to completing NORI by sparse-fault clean-prefix charts alone
 
-Fix a distinguished three-coordinate set K⊂[n], let D=[n]\K of size m=n−3>=3, and let \mathscr T be the set of unordered triples of directions inside D on which a proposed clean full-exterior-parity reference MAY fail. The recent robust-root-chart closure results construct actual monochromatic-prefix witness charts ONLY from direction permutations p of D whose every consecutive 3-direction window avoids \mathscr T.
 
-**THEOREM (one-coordinate star destroys every clean full prefix).** Fix ANY direction t∈D, and put
-\[
-\mathscr T_t=\{T\in\binom D3:t\in T\}.
-\]
-Then \(|\mathscr T_t|=\binom{m-1}{2}=\Theta(m^2)\). EVERY permutation p=(p_1,...,p_m) of D contains AT LEAST ONE consecutive 3-direction window whose unordered direction set belongs to \mathscr T_t. Consequently there are NO admissible clean-prefix order charts if one insists on avoiding all triples in \mathscr T_t, regardless of the color values, physical faces, or NORI antipodal-reversal law.
+*Exact scoped proof in note* note_clean_prefix_sparse_fault_chart_obstruction.
 
-**Proof.** The distinguished direction t appears at some position j of the permutation. Because m>=3, at least one consecutive block of three positions contains j (choose the first block if j<=3, the last block if j>=m−2, and any containing block otherwise). That consecutive three-direction set contains t, and so belongs to \mathscr T_t. Since every p has such a window, no clean avoiding permutation exists. The number of forbidden unordered triples is exactly \binom{m-1}{2}. QED.
 
-**THEOREM (single-root-bit polarization stops at exactly r exceptional terminal windows).** More generally, in the ordered-r-face model, appending k exceptional coordinate directions to a clean prefix gives k exceptional r-windows. One of those exceptional directions belongs to ALL k free coordinate sets IF AND ONLY IF k<=r. For k>=r+1 the first and last exceptional windows have DISJOINT exceptional-direction sets. For active NORI r=3, toggling one exceptional root bit can preserve every exceptional suffix window at once when k<=3, but not k>=4. This is the already proved terminal-common-free-coordinate theorem nori_suffix_polarization_terminal_r_window_common_free_direction_sharp_threshold_20261008.
-
-**CONCLUSION (method barrier, NOT conjecture counterexample).** These two elementary facts show why the recent O(n²) arbitrary-fault robustness cannot be promoted to unrestricted NORI merely by tightening the random-order avoidance bound: an explicit O(n²)-size forbidden family blocks ALL clean order witnesses. Furthermore, folding that fourth problematic direction into K and attempting the same single-root-bit suffix-polarization proof fails at exactly four exceptional windows. The *grand conjecture itself* is not contradicted. But unrestricted closure needs genuinely NEW machinery: (i) actual reachability/terminal-memory charts that traverse non-reference windows rather than avoiding them, (ii) a multi-bit or root-mobile polarization allowing four or more exceptional windows, or (iii) a direct topological forcing theorem for exact complementary reversed-tail label intersections with no parity normal form.
-
-**Research priority.** Treat 'extend quadratic r' and 'remove parity reference' as qualitatively different problems. The first cannot logically settle the second. Aim instead at the general NORI exact color-free reversed-tail reachability sets R_J(x), preserving ordered two-direction memory, and force R_(a,b)(x) ∩ complement_D(R_(b,a)(x)) nonempty for some root x.
-
-The rigorous closure theorems apply to the stated number and location of arbitrary faults; sharp obstruction constructions show why the same argument cannot simply be iterated to cover unrestricted colorings.
 
 ### Exterior face charts and Fourier transport
 

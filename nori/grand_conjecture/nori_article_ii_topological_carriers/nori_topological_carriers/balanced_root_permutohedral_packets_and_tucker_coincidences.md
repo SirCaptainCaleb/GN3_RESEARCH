@@ -58,9 +58,9 @@ Concretely, at ACTUAL endpoint-opposed permutation vertices q_x(pi)=0, the color
   s_j(pi)=w_j(x,pi) xor w_(j+1)(x,pi), j=1,...,n−3,
 has ODD Hamming weight, and in a hypothetical counterexample at least THREE 1s. Physical reversal sends this change vector to its position reversal, while keeping the root x fixed. The missing extraction step is to turn this equivariant MULTI-SWITCH LABELING into a continuous sphere map on ALL of Z_x (or a combinatorial Tucker complementary-edge certificate whose physical local repair yields a good path). Merely assigning switch labels at permutation vertices does NOT automatically define such a map on higher-dimensional faces; proving the extension is the essential combinatorial obligation INSIDE the high-index topological frame.
 
-**CRITICAL COMPARISON WITH THE OLD PATH-HISTORY INDEX-ONE BARRIER.** The earlier NORI history-poset carrier has small Z2 index because its legal-prefix topology collapses. P_n is a DIFFERENT, canonically supplied, centrally symmetric convex polytopal COMPLETION of the set of all FULL direction orders, with index n−2 on its boundary. Its higher faces encode permutations and their swaps, NOT automatically compatible monochromatic paths. Theorem2 gives a literal actual geodesic at the FIRST zero-level because endpoint imbalance is 1-Lipschitz under legitimate adjacent swaps. Higher-dimensional Tucker extraction STILL requires additional physical-cell compatibility rather than treating arbitrary PL barycenters as real geodesics. This is the sharp, topology-first direction for global closure.
 
-**Status.** Theorem1–3 and the conditional obstruction in Corollary4 are proved. Constructing the sphere map Phi_x or a valid combinatorial carrier extraction remains open; unrestricted grand NORI closure has NOT been obtained.
+
+*The exact scoped proof is preserved in research note* note_nori_carrier_requires_joint_actual_geodesic_witnesses.
 
 ## Quantitative actual-path separator: at least n−1 endpoint-opposed full permutations per root
 
@@ -195,6 +195,6 @@ The synchronized full-path corridors from Item \`nori_same_order_antipodal_root_
 
 **Why this is mathematically useful.** Earlier permutohedral Tucker labels track internal switch positions but do not control how switches change when ROOT is antipodally complemented. Formula (3) supplies that missing PHYSICAL comparison without inventing an abstract sign-vector action: at any fixed complete order, the antipodal root transfer is a gauge transformation by a same-face reversal asymmetry word. It is compatible with order-reversal and is an actual 1-dimensional chain-complex coboundary identity. It suggests constructing a two-parameter root/order carrier with the switch-change 1-cochain and its cross-root gauge \(r\), then deriving a nontrivial holonomy obstruction when certified cells are glued around root-cube and permutohedral exchange cycles.
 
-**Crucial limitation.** The cochain may be identically zero: a coloring independent of reversing local three-direction order has \(r_j=0\) everywhere, and the two antipodal-root switch vectors then coincide, even if BOTH contain many switches (as in the valid full exterior-parity coloring). Consequently the coboundary identity alone cannot reduce switches or force grand closure. A proof must combine it with genuine root mobility over MORE THAN one antipodal pair and/or with a nontrivial coupled topological class. No universal holonomy contradiction is asserted.
 
-To turn these packets into grand closure, one needs a constructive root/order exchange that both respects the antipodal label correspondence and controls the defect of the stitched path.
+
+*The scope-specific limitation and complete proof are preserved in linked research note note_nori_carrier_requires_joint_actual_geodesic_witnesses.*

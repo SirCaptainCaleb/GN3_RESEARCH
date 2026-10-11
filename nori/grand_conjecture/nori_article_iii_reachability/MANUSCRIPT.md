@@ -165,16 +165,9 @@ Then P_q(x) intersects P_r(bar x) if and only if R_q(x) intersects R_r(bar x): t
 
 **Labeling research program (not a proved topological theorem).** Give a state with antipodal root label x an *actual realizable witness* (q,S), meaning a q-monochromatic geodesic from x to x XOR S. Under the antipodal root involution the companion root is bar x. A successful topological coincidence must force labels S and [n]\S, or equivalently the same actual target z, and it must ensure both certificates refer to the same antipodal root pair. Construct local transition/carrier rules respecting jointly realizable entire geodesics; prove a specific antipodal-label/coincidence theorem from them. Arbitrary selections including the always-reachable empty support S=empty can avoid the desired coincidence, so ordinary equivariance alone cannot force it. The required additional hypothesis must come from growth, maximality, or color-consistent repairs. For ordered-three-face NORI, retain the user's shared physical-target idea as the outer target while adding a separate two-window seam certificate before final extraction.
 
-## Fixed-target local-index no-go: sparse reachable cones in an antipodally odd coloring
 
-For every even n>=4 take the antipodally odd exterior-parity edge coloring c_i(v)=sum_(j neq i) v_j mod2. Fix physical target z=0^n. Every edge incident with z is color zero. After traversing the first edge to e_j, each unused-direction edge e_j->e_j XOR e_i (i neq j) has color one. Therefore every monochromatic geodesic starting at z has length at most one. In the affine root-target fiber F_z,
-K_0(z) is exactly the n-legged star of simplex edges from the diagonal root corner (z,empty support) to the n neighboring root corners; K_1(z) contains only its apex. The union K(z) is the same star.
 
-Under beta simultaneous root and support complement, beta K(z) is the opposite n-legged star at the antipodal corner of F_z. For n>=4 the two stars have no common Boolean vertices (one uses roots of Hamming weight 0 or1, the other roots of weight n or n-1). In their common simplicial triangulation they are disjoint subcomplexes.
-
-Nevertheless the coloring has a monochromatic antipodal geodesic: choose an initial root with n/2 zero-bits and n/2 one-bits and traverse the directions in an alternating zero/one pattern. By the direct color formula c_(p_k)=P(x) XOR(k-1) XOR x_(p_k), all traversed edges then have equal color.
-
-Thus the antipodal S^(n-1) link of a SINGLE fixed-target fiber and the fact that its reachable sets contain all n one-step rays cannot, by themselves, force antipodal reachable-root coincidence. A forcing proof must choose the target globally, couple several target fibers through the actual colored-edge facet transport, or use a different genuinely color-dependent boundary condition. This provides an explicit obstruction to applying a fixed-target Borsuk--Ulam theorem without verifying its hypotheses, not a counterexample to the global conjecture.
+*The exact scoped proof is preserved in research note* note_terminal_basins_and_root_profile_nerve_extraction_limits.
 
 ## Near-complementary monochromatic branches: the one-coordinate completion law
 
@@ -259,43 +252,9 @@ The active k=3 case has m=5.
 
 **Research link.** This imposes a strong necessary local reachability coverage on any hypothetical counterexample to full NORI: almost all roots (proportion at least 1-4/n) possess nontrivial monochromatic terminal-two-tail reachability labels of support rank 2. The next closure obligation is to use antipodal symmetry, root mobility, and the exact REVERSED-TWO-TAIL complementary-support equivalence to turn this abundant low-rank reachability into a complementary high-rank collision. The density bound by itself does not supply that collision.
 
-## Valid NORI coloring with NO monochromatic spanning geodesic in any of four parallel codimension-two facets
 
-Fix n>=7, choose U⊆[n] of size m=n-2>=5, and let [n]\U={a,b}. Mark any two distinct coordinate directions u*,v* inside U, and call all other directions of U unmarked. For every ordered triple (i,j,k) of distinct directions FROM U define
-\[
-f(i,j,k)=
-\begin{cases}
-1,& j\text{ is unmarked and at least one of }i,k\text{ is marked},\\
-0,&\text{otherwise}.
-\end{cases}
-\]
-This f is reversal-even, f(k,j,i)=f(i,j,k). Define colors on ALL physical ordered three-faces whose free directions lie in U by
-\[
-c(F,(i,j,k))=f(i,j,k)\oplus t_a(F),
-\]
-where t_a(F) is the fixed exterior a-bit. Since a lies outside U, it is fixed on each such face. If \bar F is antipodal, t_a(\bar F)=1-t_a(F), and reversal-evenness gives
-\[
-c(\bar F,(k,j,i))=f(k,j,i)\oplus(1-t_a(F))=1-c(F,(i,j,k)).
-\]
-Thus this partial coloring respects the active NORI axiom. Extend arbitrarily, orbit by orbit, to all ordered faces with at least one free direction outside U; the involution (F,pi)↦(\bar F,rev pi) is free so this always yields a globally valid NORI coloring.
 
-**THEOREM.** For this full valid coloring, NONE of the FOUR parallel U-facets contains a monochromatic complete U-geodesic, in EITHER traversal orientation or from ANY projected root. Consequently the color-free four-facet first–last direction graph H_U(r) of the canonical cap theorem is EMPTY for every r∈Q_U.
-
-**Proof.** Fix a permutation p=(p1,...,pm) of U and any facet exterior bits. Its m-2 ordered-three-face window colors equal
-\[
-f(p_i,p_{i+1},p_{i+2})\oplus t_a,\qquad 1\le i\le m-2.
-\]
-The physical U-exterior bits do not appear in f, so the word is root-independent inside the facet up to the fixed global flip t_a.
-
-We prove its f-word contains BOTH symbols 0 and1. If either marked coordinate appears in an internal position 2,...,m-1, the window centered there has f=0, since the middle direction is marked. If instead both marked positions are endpoints 1,m, the window (p2,p3,p4) consists entirely of unmarked directions for m>=5, so again f=0.
-
-For f=1, it suffices to find two adjacent positions k,k+1, with one position marked and the other unmarked, such that the unmarked position is internal (2,...,m-1). Such a pair must exist: otherwise any marked-to-unmarked boundary could only have its unmarked position at one of the endpoints, forcing the entire interval of internal positions to be marked or all transitions to occur only at ends. The first is impossible since m-2>=3 but only two marked directions exist. The latter possibility would make the marked positions consist only of a subset of the two endpoints, with both marks at endpoints; then positions 1 and 2 form a boundary whose unmarked index 2 is internal, a contradiction. More directly, if the marks are adjacent at positions 1,2 or m-1,m, the boundary at positions 2,3 or m-2,m-1 works; in all other arrangements at least one marked coordinate has an internal unmarked neighbor. Choose the triple centered at this internal unmarked position and having the marked adjacent position as an endpoint; then f=1.
-
-Hence the f-word contains 0 and1 for EVERY direction permutation, so no full U-geodesic is monochromatic. Complementing the word by t_a does not change this. There are no actual monochromatic U-spanning witnesses in any of four facets, and H_U(r) has no edges. QED.
-
-**Important strategic guardrail.** A dimension-independent proof of grand NORI closure CANNOT begin by claiming that for every (or every prescribed) n-2 support U the four-facet memory graph H_U(r) is nonempty or nonbipartite. This fully legal coloring annihilates that graph for the selected U, while grand closure itself may hold elsewhere. Thus the cap-cycle extraction theorem, although correct, must be combined with a global support-selection argument or with shorter monochromatic reachability. The example is direction-only within U plus one exterior-bit affine twist, so it is not an exotic nonlinear obstruction.
-
-Under hypothetical failure the cap conditions force a rigid bipartition on available near-spanning cores. A valid construction must still prove those cores exist in the required parallel facets.
+See the linked research note for the precise four-facet obstruction.
 
 ### Maximal reachability supports and antipodal missing-facet bounds
 
@@ -535,7 +494,9 @@ Conversely suppose m(z,z') lies in one witnessed prefix simplex of K_q(z), corre
 
 **Root-color symmetry.** Under physical antipodality alpha(r,s)=(1-r,s), one has alpha(m(z,z'))=m(bar z,bar z'); oddness sends K_q(z) to K_(1-q)(bar z). Both the midpoint representation and its witness test are fully antipodally equivariant.
 
-**Limit.** Other points of F_z intersect F_z' may lie in K_q(z) and K_r(z') without monochromatic shortest paths between z,z'. The theorem singles out canonical midpoint points as the faithful labels; a general topological intersection theorem must force one of these certified points, rather than an arbitrary geometric crossing. For full antipodal targets, F_z intersect F_bar z={o}, so every intersection is automatically canonical.
+
+
+*The exact scoped proof is preserved in research note* note_terminal_basins_and_root_profile_nerve_extraction_limits.
 
 ## A color-free 2n-bit reachability holonomy graph: odd signed cycles force closure
 
@@ -616,15 +577,9 @@ x\ \xrightarrow{u_1,\ldots,u_s,a,b}\ y,
 \]
 Trimming its first direction u_1 produces the suffix geodesic from x⊕e_{u_1} to y, with ordered terminal pair (a,b) and a subsequence of the original monochromatic windows. Thus x⊕e_{u_1} lies in T_J(y). Repeat through u_2,...,u_s to b_0. These vertices form a shortest path within the root facet H_y, since each step removes one disagreement coordinate with b_0. The analogous proof applies to revJ at the antipodal corner b_1. QED.
 
-**Exact topological problem.** The grand NORI conjecture is equivalent to the impossibility of TWO DISJOINT geodesically corner-rooted terminal basins T_J(y) and T_revJ(y^D) for EVERY choice of y,a,b. This is a precise two-shore Hex/Hartman connector formulation:
-- the opposite base corners b_0 and b_1 lie in a physical d-cube H;
-- each basin contains its entire radius-1 star and is geodesically connected to its base;
-- basin membership means ACTUAL monochromatic ordered-face-window geodesic reachability and records NO color;
-- an intersection yields one genuine full good geodesic with no uncontrolled seam windows.
 
-Importantly, two arbitrary rooted connected radius-one neighborhoods of opposite corners CAN be disjoint for d>=3; topology must use the coupling among basin families for different tails J and terminal vertices y. The next research goal is a simultaneous Sperner/KKM/Hex argument enforcing intersection across the collection of all such coupled accessible basins, not a false pointwise Helly assertion for a single pair.
 
-The topology of an abstract target carrier cannot be used to infer a path unless its simplices satisfy the literal geodesic-certification rule. Several counterexamples here delimit that rule sharply.
+*The scope-specific limitation and complete proof are preserved in linked research note note_terminal_basins_and_root_profile_nerve_extraction_limits.*
 
 ## Terminal memory and branch splicing
 
@@ -723,34 +678,9 @@ Let Q_n be an UNDIRECTED binary edge-colored cube satisfying c(bar e)=1−c(e). 
 
 **Proof.** A shortest x→x⊕S path changes every coordinate of S once. Deleting its last edge leaves a monochromatic geodesic from x to x⊕(S\{i}) for the last direction i. Repeat for prefixes. QED.
 
-**THEOREM 2 (explicit counterexample to full downward closure under active edge oddness).** On Q_3 choose the following binary colors for the 12 UNDIRECTED physical edges, written in the convention with coordinate bits (x_1,x_2,x_3) and the displayed bitstrings interpreted as subsets of coordinates, so '100' means e_1:
-\[
-\begin{array}{c|c}
-\text{edge endpoints}&\text{color}\\\hline
-000-100&0\\
-001-101&0\\
-010-110&1\\
-011-111&1\\
-000-010&0\\
-001-011&1\\
-100-110&0\\
-101-111&1\\
-000-001&1\\
-010-011&0\\
-100-101&1\\
-110-111&0
-\end{array}
-\]
-Each physical edge paired with its coordinatewise antipodal image has exactly complementary color, so the coloring is valid.
 
-There is a monochromatic color-0 geodesic
-\[
-000\to100\to110\to111,
-\]
-so \(\{1,2,3\}\in\mathcal R_{000}\). But \(101\notin R(000)\): its only two geodesics from 000 are
-\(000\to100\to101\), colored (0,1), and \(000\to001\to101\), colored (1,0), neither monochromatic. Thus \(\{1,3\}\notin\mathcal R_{000}\), despite being a subset of \(\{1,2,3\}\).
 
-**CONSEQUENCE.** Even in the simpler edge-colored proving ground, antipodally odd monochromatic-geodesic reachability need NOT be an order ideal of the Boolean lattice. A proof using full downward closure, the ordinary face-KKM covering property for ALL lower-dimensional coordinate faces, or intersections of arbitrary reachable support subsets is INVALID without additional arguments. The TRUE invariant is *geodesic accessibility along SOME prefix chain*, not inclusion of every sub-support. This sharp distinction is essential when trying to extend the proven special parity-root chart connectivity to unrestricted NORI via a general topological reachability theorem.
+*The exact Boolean-downset counterexample is documented in a linked research note.*
 
 ## EXACT second-index criterion for a two-shore carrier with one contractible shore: an antipodal path IN THE OVERLAP
 

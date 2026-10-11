@@ -33,3 +33,7 @@ There is a separate obstruction to orienting a simple zero-seam-side label conti
 ## Extraction frontier
 
 The transport theorem yields genuine antipodal paths in window space, a nontrivial quotient-cover class, and exponentially many monochromatic four-edge connectors. Full NORI requires a single n-edge geodesic with at most one change. The missing theorem is a certificate-preserving global compatibility rule that selects connectors with matching physical roots, ordered terminal pairs, and complementary remaining coordinate supports. The local existence and density results above establish the carrier geometry for that global problem.
+
+## Research-note boundary after independent audit
+
+The alternating shuttle-square counterexample and duplicate refinement are now in a linked note; the genuine shuttle-distance and induced-square proofs remain published.

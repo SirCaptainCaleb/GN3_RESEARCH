@@ -6,7 +6,7 @@
 - Labels: obstruction, counterexample
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -16,6 +16,7 @@
 ## Related references
 
 - subsection:sharp_rooted_obstructions_to_one_change_antipodal_geodesics, exact version 3
+- subsection:exact_change_vector_fibers_and_affine_obstruction_certificates, exact version 2
 
 ## Research note
 
@@ -121,3 +122,12 @@ For \(n=6m\), the three chain lengths are \(2m,2m,2m\). Without an exceptional p
 Because the coloring is invariant under permutations of coordinate names, every root of a feasible Hamming weight admits an order placing its one-bits into a suitable chain pattern. This proves (3). Summing the binomial layers gives the exact formula (4), and the displayed asymptotic follows from the central binomial estimate for fixed offsets \(j\). The distance and translation assertions follow immediately. \(\square\)
 
 **Implication for a general proof.** A universal argument cannot assume a fixed positive fraction of good starting roots, or guarantee a good root within \(o(n)\) bit flips of an arbitrary prescribed root. This obstruction arises in the same exterior-parity class for which every *fixed order* has eight monochromatic starts; abundance over orders can coexist with severe geometric concentration of successful roots. The theorem concerns a structured legal coloring and does not weaken the unrooted NORI conjecture.
+
+
+Source: exact_change_vector_fibers_and_affine_obstruction_certificates composition v2
+
+For every n>=7 there is a NORI antipodal-reversal-odd ordered-three-face coloring with pointwise reversal-evenness, affine single-exterior-bit color on each face, and a coordinate order for which EVERY starting vertex produces at least two color changes.
+
+Construction: On ordered free triples (1,2,3), (2,3,4), (3,4,5), (4,5,6), and (i,i+1,i+2) for i>=5, assign face colors respectively y_n, 1+y_1, y_1, y_n, y_1 (sum mod 2; y is the physical exterior-bit assignment). Along order (1,...,n) from x, the color word is (x_n,x_1,1+x_1,x_n,1+x_1,...,1+x_1). Its first five bits are 00101, 01000, 10111, or 11010 according to (x_1,x_n)=(0,0),(1,0),(0,1),(1,1); each has at least two switches, and the remaining bits repeat its fifth bit. Give reversed ordered triples the same function on their common face. Fill all other reversal-pairs using an arbitrary single exterior bit y_r (possible since n>=7). Each function changes under exterior-bit complement, so c(bar F,rev pi)=1+c(F,pi) globally. This proves the claim.
+
+Research consequence: oddness plus exact face-locality does not force a good root for any fixed coordinate order. A grand-closure argument must exchange direction orders as well as roots. This is a proof obstruction to root-only Hamming-layer or fixed-permutation surjectivity arguments, not a counterexample to the grand conjecture.

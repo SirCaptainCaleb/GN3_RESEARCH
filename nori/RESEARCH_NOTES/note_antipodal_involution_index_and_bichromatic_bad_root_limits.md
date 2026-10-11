@@ -6,7 +6,7 @@
 - Labels: obstruction, counterexample
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 1
+- Current version: 2
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -16,6 +16,7 @@
 ## Related references
 
 - subsection:two_sided_helly_root_sheets_and_high_index_support_selection, exact version 1
+- subsection:two_sided_helly_root_sheets_and_high_index_support_selection, exact version 2
 
 ## Research note
 
@@ -107,3 +108,24 @@ Because i occurs at exactly ONE position in the permutation, at most TWO of the 
 \n\n**Direct certificate for part (4).** The shared endpoint-opposed order in this explicit parity example needs no appeal to the general Kneser theorem: choose any full permutation placing the unique exceptional direction i in one of the MIDDLE positions 4,...,n−3 (available for n≥8). Formula (2) then assigns even parity zero to the six first/last position bits at root z; the antipodal root has the same even parity because six bits are complemented. Hence both rooted full paths have opposite endpoint colors in that identical direction order. Their lower bound n−5 on internal switches continues to apply. This gives a completely explicit obstruction certificate.
 
 The strong antipodal index of an ambient path complex does not guarantee a selector into the low-dimensional subset of compatible terminal memories. A valid proof must provide that selector or a replacement certificate.
+
+Additional extracted proof/scope from two_sided_helly_root_sheets_and_high_index_support_selection, source composition v2
+
+THEOREM 4 (the universal index-FOUR CEILING: short physical root sheets cannot supply an index-n proof). Assume the GRAND conjecture FAILS, hence no admitted path is full, U is off the diagonal and swap acts FREELY. Let U_3 be the union of boxes B(P) for length-THREE (one-window) paths. These paths are automatically admitted for EVERY ordered triple, root, and physical exterior assignment. Consequently
+ U_3 = ⋃_(W⊂[n], |W|=3; exterior bits ε∈{0,1}^([n]\W))
+        F_W(ε) × F_W(1−ε),
+where F_W(ε) is the full 3-dimensional root coordinate face with bits ε fixed outside W. This is coloring-independent.
+
+Put δ(a,b)=b−a. Each 3-path box has δ_i=±1 outside its three free directions and arbitrary δ_i∈[−1,1] in those three directions. Hence δ(U_3) is PRECISELY the THREE-SKELETON X_3=(∂[−1,1]^n)^(3) of the centrally antipodal cube boundary. The map
+  s(δ)=((1−δ)/2,(1+δ)/2)
+is an equivariant section X_3→U_3 of δ. The homotopy keeping δ fixed and moving the midpoint (a+b)/2 linearly to (1/2,...,1/2) remains IN THE ORIGINAL BOX: outside W the two bits are already complementary endpoints, while inside W both coordinates are free. Thus U_3 Θ-equivariantly STRONGLY deformation retracts onto the section s(X_3).
+
+The free antipodal three-skeleton X_3 has cohomological Z2 index EXACTLY 3 for n>=4. Upper bound: dim X_3=3. Lower bound: X_3/Θ is the 3-skeleton of ∂[−1,1]^n/Θ≅RP^(n−1), with its ordinary quotient cubical CW structure. Inclusion of a CW 3-skeleton into RP^(n−1) induces an INJECTION in H³(F2), so the third power of the first antipodal-cover class survives.
+
+Now every LONGER admitted path (k>=4) has root-sheet dimension m(k)<=2, so B(P) has dimension at most FOUR (k=4:4; k=5:2; k>=6:0). The finite union U is a Θ-invariant cubical CW complex obtained by attaching to U_3 ONLY cubical cells of dimension <=4 (some attachments may share faces), hence its free-action quotient (U/Θ,U_3/Θ) has no relative cochains above degree4. Therefore H^j(U/Θ,U_3/Θ;F2)=0 for j>=5. Since U_3/Θ≃X_3/Θ has no cohomology above degree3, the long exact pair sequence gives
+   H^j(U/Θ;F2)=0 for ALL j>=5.
+So ind_Z2(U)<=4. Conversely U_3⊂U has w_1^3≠0, so ind_Z2(U)>=3. By equivariant nerve equivalence E≃_Θ U,
+   3 <= ind_Z2(E) <= 4.
+This is UNIFORM in cube dimension n and in the physical NORI coloring under the grand no-closure assumption.
+
+**CRUCIAL TOPOLOGICAL CONSEQUENCE.** The universal 3-face geometry furnishes exactly a genuine index-3 antipodal base, and longer fixed-window root sheets can raise it at most to index4. For n>=5, the exact signed-unused Tucker closure criterion demands index>=n to force a zero in R^n. Therefore NO argument operating solely on the static two-sided root-invariance boxes of certified <=1-switch paths can provide such a high-index proof. To reach the unrestricted GRAND NORI conjecture, one MUST adjoin genuinely NEW topological cells coming from ORDER/PREFIX EXCHANGES, WITNESS-PRESERVING TRANSPORT, root/support memory holonomy, or higher-dimensional compatible repairs whose equivariant topology is not captured by the boxes. The theorem is an exact constructive carrier and an exact sharp dimensional NO-GO, not a counterexample to grand NORI.

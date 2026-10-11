@@ -6,7 +6,7 @@
 - Labels: obstruction, partial_argument
 - Lifecycle: active
 - Epistemic status: method_limitation
-- Current version: 1
+- Current version: 5
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -17,6 +17,10 @@
 
 - subsection:opposite_corner_terminal_basins_and_freudenthal_reachability_cones, exact version 1
 - subsection:root_profile_nerves_and_signed_mixed_branch_interfaces, exact version 1
+- subsection:exact_target_reachability_and_antipodal_intersection_extraction, exact version 1
+- subsection:barycentric_reachability_carriers_and_antipodal_boundary_maps, exact version 1
+- subsection:antipodal_root_profile_paths_and_deleted_product_extraction, exact version 1
+- subsection:barycentric_reachability_carriers_and_antipodal_boundary_maps, exact version 2
 
 ## Research note
 
@@ -205,3 +209,73 @@ exponentially. Indeed, within a mixed pair the color-0 supports are exactly \(\v
 
 
 A topological coincidence in this nerve implies grand closure only when it realizes complementary supports with compatible endpoint memories at the same root. The interface, not the separate large shores, is the active topological target.
+
+---
+
+Source: exact_target_reachability_and_antipodal_intersection_extraction prior composition v1
+
+## Fixed-target local-index no-go: sparse reachable cones in an antipodally odd coloring
+
+For every even n>=4 take the antipodally odd exterior-parity edge coloring c_i(v)=sum_(j neq i) v_j mod2. Fix physical target z=0^n. Every edge incident with z is color zero. After traversing the first edge to e_j, each unused-direction edge e_j->e_j XOR e_i (i neq j) has color one. Therefore every monochromatic geodesic starting at z has length at most one. In the affine root-target fiber F_z,
+K_0(z) is exactly the n-legged star of simplex edges from the diagonal root corner (z,empty support) to the n neighboring root corners; K_1(z) contains only its apex. The union K(z) is the same star.
+
+Under beta simultaneous root and support complement, beta K(z) is the opposite n-legged star at the antipodal corner of F_z. For n>=4 the two stars have no common Boolean vertices (one uses roots of Hamming weight 0 or1, the other roots of weight n or n-1). In their common simplicial triangulation they are disjoint subcomplexes.
+
+Nevertheless the coloring has a monochromatic antipodal geodesic: choose an initial root with n/2 zero-bits and n/2 one-bits and traverse the directions in an alternating zero/one pattern. By the direct color formula c_(p_k)=P(x) XOR(k-1) XOR x_(p_k), all traversed edges then have equal color.
+
+Thus the antipodal S^(n-1) link of a SINGLE fixed-target fiber and the fact that its reachable sets contain all n one-step rays cannot, by themselves, force antipodal reachable-root coincidence. A forcing proof must choose the target globally, couple several target fibers through the actual colored-edge facet transport, or use a different genuinely color-dependent boundary condition. This provides an explicit obstruction to applying a fixed-target Borsuk--Ulam theorem without verifying its hypotheses, not a counterexample to the global conjecture.
+
+
+
+---
+
+Source: barycentric_reachability_carriers_and_antipodal_boundary_maps prior composition v1
+
+**Limit.** Other points of F_z intersect F_z' may lie in K_q(z) and K_r(z') without monochromatic shortest paths between z,z'. The theorem singles out canonical midpoint points as the faithful labels; a general topological intersection theorem must force one of these certified points, rather than an arbitrary geometric crossing. For full antipodal targets, F_z intersect F_bar z={o}, so every intersection is automatically canonical.
+
+
+
+## Exact failed Boolean-downset implication from antipodal_root_profile_paths_and_deleted_product_extraction
+
+**THEOREM 2 (explicit counterexample to full downward closure under active edge oddness).** On Q_3 choose the following binary colors for the 12 UNDIRECTED physical edges, written in the convention with coordinate bits (x_1,x_2,x_3) and the displayed bitstrings interpreted as subsets of coordinates, so '100' means e_1:
+\[
+\begin{array}{c|c}
+\text{edge endpoints}&\text{color}\\\hline
+000-100&0\\
+001-101&0\\
+010-110&1\\
+011-111&1\\
+000-010&0\\
+001-011&1\\
+100-110&0\\
+101-111&1\\
+000-001&1\\
+010-011&0\\
+100-101&1\\
+110-111&0
+\end{array}
+\]
+Each physical edge paired with its coordinatewise antipodal image has exactly complementary color, so the coloring is valid.
+
+There is a monochromatic color-0 geodesic
+\[
+000\to100\to110\to111,
+\]
+so \(\{1,2,3\}\in\mathcal R_{000}\). But \(101\notin R(000)\): its only two geodesics from 000 are
+\(000\to100\to101\), colored (0,1), and \(000\to001\to101\), colored (1,0), neither monochromatic. Thus \(\{1,3\}\notin\mathcal R_{000}\), despite being a subset of \(\{1,2,3\}\).
+
+**CONSEQUENCE.** Even in the simpler edge-colored proving ground, antipodally odd monochromatic-geodesic reachability need NOT be an order ideal of the Boolean lattice. A proof using full downward closure, the ordinary face-KKM covering property for ALL lower-dimensional coordinate faces, or intersections of arbitrary reachable support subsets is INVALID without additional arguments. The TRUE invariant is *geodesic accessibility along SOME prefix chain*, not inclusion of every sub-support. This sharp distinction is essential when trying to extend the proven special parity-root chart connectivity to unrestricted NORI via a general topological reachability theorem.
+
+
+
+Additional extracted proof/scope from barycentric_reachability_carriers_and_antipodal_boundary_maps, source composition v2
+
+**Exact topological problem.** The grand NORI conjecture is equivalent to the impossibility of TWO DISJOINT geodesically corner-rooted terminal basins T_J(y) and T_revJ(y^D) for EVERY choice of y,a,b. This is a precise two-shore Hex/Hartman connector formulation:
+- the opposite base corners b_0 and b_1 lie in a physical d-cube H;
+- each basin contains its entire radius-1 star and is geodesically connected to its base;
+- basin membership means ACTUAL monochromatic ordered-face-window geodesic reachability and records NO color;
+- an intersection yields one genuine full good geodesic with no uncontrolled seam windows.
+
+Importantly, two arbitrary rooted connected radius-one neighborhoods of opposite corners CAN be disjoint for d>=3; topology must use the coupling among basin families for different tails J and terminal vertices y. The next research goal is a simultaneous Sperner/KKM/Hex argument enforcing intersection across the collection of all such coupled accessible basins, not a false pointwise Helly assertion for a single pair.
+
+The topology of an abstract target carrier cannot be used to infer a path unless its simplices satisfy the literal geodesic-certification rule. Several counterexamples here delimit that rule sharply.

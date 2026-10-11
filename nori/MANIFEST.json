@@ -1,6 +1,6 @@
 {
   "active_section_count": 16,
-  "active_subsection_count": 60,
+  "active_subsection_count": 51,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -118,9 +118,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 1784,
-        "composed_through_revision": 4891,
-        "composition_version": 37,
+        "body_chars": 1834,
+        "composed_through_revision": 4978,
+        "composition_version": 39,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -129,7 +129,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
+        "source_note": "Refresh Article publication dependency frontier after consolidation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -138,64 +138,7 @@
     "nori_article_ii_topological_carriers": {
       "composition": {
         "body_chars": 1205,
-        "composed_through_revision": 4913,
-        "composition_version": 3,
-        "frontier": {
-          "current": true,
-          "latest_section_position_now": 3,
-          "latest_section_position_when_composed": 3,
-          "sections_existing_when_composed": 3,
-          "sections_now": 3
-        },
-        "has_composition": true,
-        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "version": 2
-    },
-    "nori_article_iii_reachability": {
-      "composition": {
-        "body_chars": 1093,
-        "composed_through_revision": 4893,
-        "composition_version": 3,
-        "frontier": {
-          "current": true,
-          "latest_section_position_now": 3,
-          "latest_section_position_when_composed": 3,
-          "sections_existing_when_composed": 3,
-          "sections_now": 3
-        },
-        "has_composition": true,
-        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "version": 2
-    },
-    "nori_article_iv_windows": {
-      "composition": {
-        "body_chars": 3099,
-        "composed_through_revision": 4899,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "latest_section_position_now": 2,
-          "latest_section_position_when_composed": 2,
-          "sections_existing_when_composed": 2,
-          "sections_now": 2
-        },
-        "has_composition": true,
-        "source_note": "Refresh composed dependencies after selective publication audit",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "version": 2
-    },
-    "nori_article_v_local_connectors": {
-      "composition": {
-        "body_chars": 1135,
-        "composed_through_revision": 4914,
+        "composed_through_revision": 4968,
         "composition_version": 4,
         "frontier": {
           "current": true,
@@ -205,16 +148,35 @@
           "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
+        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
         "stale": false,
         "stale_dependencies": []
       },
-      "version": 3
+      "version": 2
     },
-    "nori_article_vi_affine_exterior": {
+    "nori_article_iii_reachability": {
       "composition": {
-        "body_chars": 1007,
-        "composed_through_revision": 4900,
+        "body_chars": 1093,
+        "composed_through_revision": 4969,
+        "composition_version": 4,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 3,
+          "latest_section_position_when_composed": 3,
+          "sections_existing_when_composed": 3,
+          "sections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_iv_windows": {
+      "composition": {
+        "body_chars": 3099,
+        "composed_through_revision": 4970,
         "composition_version": 3,
         "frontier": {
           "current": true,
@@ -224,7 +186,45 @@
           "sections_now": 2
         },
         "has_composition": true,
-        "source_note": "Refresh composed dependencies after selective publication audit",
+        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_v_local_connectors": {
+      "composition": {
+        "body_chars": 1135,
+        "composed_through_revision": 4979,
+        "composition_version": 6,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 3,
+          "latest_section_position_when_composed": 3,
+          "sections_existing_when_composed": 3,
+          "sections_now": 3
+        },
+        "has_composition": true,
+        "source_note": "Refresh Article publication dependency frontier after consolidation",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "version": 3
+    },
+    "nori_article_vi_affine_exterior": {
+      "composition": {
+        "body_chars": 1007,
+        "composed_through_revision": 4972,
+        "composition_version": 4,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 2,
+          "latest_section_position_when_composed": 2,
+          "sections_existing_when_composed": 2,
+          "sections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
         "stale": false,
         "stale_dependencies": []
       },
@@ -233,8 +233,8 @@
     "nori_article_vii_seven_coordinate": {
       "composition": {
         "body_chars": 1789,
-        "composed_through_revision": 4915,
-        "composition_version": 15,
+        "composed_through_revision": 4980,
+        "composition_version": 17,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -243,7 +243,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
+        "source_note": "Refresh Article publication dependency frontier after consolidation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -252,8 +252,8 @@
     "nori_article_viii_edges": {
       "composition": {
         "body_chars": 1335,
-        "composed_through_revision": 4896,
-        "composition_version": 9,
+        "composed_through_revision": 4974,
+        "composition_version": 10,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -262,7 +262,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
+        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
         "stale": false,
         "stale_dependencies": []
       },
@@ -271,20 +271,20 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-11T03:13:53.143011+00:00",
+  "generated_at": "2026-10-11T03:30:55.730748+00:00",
   "item_count": 0,
   "mirror_format": 19,
-  "research_note_count": 14,
+  "research_note_count": 20,
   "result_count": 0,
   "retired_section_count": 2,
-  "retired_subsection_count": 15,
+  "retired_subsection_count": 24,
   "schema": "nori",
   "section_versions": {
     "nori_affine_exterior_colorings": {
       "composition": {
-        "body_chars": 9760,
-        "composed_through_revision": 4897,
-        "composition_version": 3,
+        "body_chars": 9982,
+        "composed_through_revision": 4956,
+        "composition_version": 4,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 6,
@@ -293,7 +293,7 @@
           "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Refresh exact active Subsection frontier following research-note migration",
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -302,9 +302,9 @@
     },
     "nori_affine_sensitivity": {
       "composition": {
-        "body_chars": 897,
-        "composed_through_revision": 4889,
-        "composition_version": 2,
+        "body_chars": 1091,
+        "composed_through_revision": 4957,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 8,
@@ -313,7 +313,7 @@
           "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -342,9 +342,9 @@
     },
     "nori_connector_root_hubs": {
       "composition": {
-        "body_chars": 1068,
-        "composed_through_revision": 4911,
-        "composition_version": 3,
+        "body_chars": 1273,
+        "composed_through_revision": 4958,
+        "composition_version": 4,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
@@ -353,7 +353,7 @@
           "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -402,18 +402,18 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 2135,
-        "composed_through_revision": 4883,
-        "composition_version": 33,
+        "body_chars": 2400,
+        "composed_through_revision": 4975,
+        "composition_version": 35,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 17,
-          "latest_subsection_no_when_composed": 17,
-          "subsections_existing_when_composed": 15,
-          "subsections_now": 15
+          "latest_subsection_no_now": 16,
+          "latest_subsection_no_when_composed": 16,
+          "subsections_existing_when_composed": 9,
+          "subsections_now": 9
         },
         "has_composition": true,
-        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
+        "source_note": "Refresh exact active Subsection dependency frontier after consolidation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -422,8 +422,88 @@
     },
     "nori_local_connector_geometry": {
       "composition": {
-        "body_chars": 1121,
-        "composed_through_revision": 4910,
+        "body_chars": 1296,
+        "composed_through_revision": 4976,
+        "composition_version": 5,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 6,
+          "latest_subsection_no_when_composed": 6,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Refresh exact active Subsection dependency frontier after consolidation",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_physical_window_transport": {
+      "composition": {
+        "body_chars": 4835,
+        "composed_through_revision": 4961,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
+        "has_composition": true,
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_reachability_and_splicing": {
+      "composition": {
+        "body_chars": 7653,
+        "composed_through_revision": 4962,
+        "composition_version": 6,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 7,
+          "latest_subsection_no_when_composed": 7,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
+        "has_composition": true,
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_reachability_branch_memory": {
+      "composition": {
+        "body_chars": 3125,
+        "composed_through_revision": 4963,
+        "composition_version": 2,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 10,
+          "latest_subsection_no_when_composed": 10,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
+        "has_composition": true,
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_reachability_topological_extraction": {
+      "composition": {
+        "body_chars": 1151,
+        "composed_through_revision": 4964,
         "composition_version": 3,
         "frontier": {
           "current": true,
@@ -433,87 +513,7 @@
           "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_physical_window_transport": {
-      "composition": {
-        "body_chars": 4613,
-        "composed_through_revision": 4439,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 3,
-          "latest_subsection_no_when_composed": 3,
-          "subsections_existing_when_composed": 1,
-          "subsections_now": 1
-        },
-        "has_composition": true,
-        "source_note": "Synthesis of physical two-step shuttles, sharp antipodal distance, averaged connectors, and exact no-fill obstructions.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_reachability_and_splicing": {
-      "composition": {
-        "body_chars": 7459,
-        "composed_through_revision": 4806,
-        "composition_version": 5,
-        "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 7,
-          "latest_subsection_no_when_composed": 7,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
-        },
-        "has_composition": true,
-        "source_note": "Adds properly attributed Leader–Long/Feder–Subi edge-geodesic equivalence and precise NORI3 doubling limitation; refreshes current direct-child dependencies.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_reachability_branch_memory": {
-      "composition": {
-        "body_chars": 2948,
-        "composed_through_revision": 4441,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 10,
-          "latest_subsection_no_when_composed": 10,
-          "subsections_existing_when_composed": 2,
-          "subsections_now": 2
-        },
-        "has_composition": true,
-        "source_note": "Selective section synthesis from established physical and topological subsection arguments.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_reachability_topological_extraction": {
-      "composition": {
-        "body_chars": 942,
-        "composed_through_revision": 4886,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "latest_subsection_no_now": 6,
-          "latest_subsection_no_when_composed": 6,
-          "subsections_existing_when_composed": 2,
-          "subsections_now": 2
-        },
-        "has_composition": true,
-        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -522,18 +522,18 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 2089,
-        "composed_through_revision": 4912,
-        "composition_version": 21,
+        "body_chars": 2301,
+        "composed_through_revision": 4977,
+        "composition_version": 23,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
           "latest_subsection_no_when_composed": 9,
-          "subsections_existing_when_composed": 9,
-          "subsections_now": 9
+          "subsections_existing_when_composed": 8,
+          "subsections_now": 8
         },
         "has_composition": true,
-        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
+        "source_note": "Refresh exact active Subsection dependency frontier after consolidation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -542,18 +542,18 @@
     },
     "nori_topological_carriers": {
       "composition": {
-        "body_chars": 1526,
-        "composed_through_revision": 4909,
-        "composition_version": 4,
+        "body_chars": 1754,
+        "composed_through_revision": 4966,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 11,
           "latest_subsection_no_when_composed": 11,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
+        "source_note": "Independent audit: exact surviving manuscript dependencies and scoped-note separation",
         "stale": false,
         "stale_dependencies": []
       },
@@ -601,7 +601,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1294,
+  "snapshot_revision": 1357,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -635,16 +635,16 @@
     },
     "affine_change_syndromes_and_exact_root_count_phenomena": {
       "composition": {
-        "body_chars": 10661,
-        "composed_through_revision": 4284,
-        "composition_version": 1,
+        "body_chars": 7981,
+        "composed_through_revision": 4937,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Audit split: negative proof into note_nori_carrier_requires_joint_actual_geodesic_witnesses",
         "stale": false,
         "stale_dependencies": []
       },
@@ -673,16 +673,16 @@
     },
     "antipodal_root_profile_paths_and_deleted_product_extraction": {
       "composition": {
-        "body_chars": 12680,
-        "composed_through_revision": 4288,
-        "composition_version": 1,
+        "body_chars": 11074,
+        "composed_through_revision": 4945,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Move false Boolean-downset implication to note",
         "stale": false,
         "stale_dependencies": []
       },
@@ -711,16 +711,16 @@
     },
     "arbitrary_nonlinear_coordinate_faults_and_robust_affine_closure": {
       "composition": {
-        "body_chars": 11615,
-        "composed_through_revision": 4286,
-        "composition_version": 1,
+        "body_chars": 7943,
+        "composed_through_revision": 4941,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Audit split: negative proof into note_clean_prefix_sparse_fault_chart_obstruction",
         "stale": false,
         "stale_dependencies": []
       },
@@ -730,16 +730,16 @@
     },
     "balanced_root_permutohedral_packets_and_tucker_coincidences": {
       "composition": {
-        "body_chars": 22197,
-        "composed_through_revision": 4291,
-        "composition_version": 1,
+        "body_chars": 20681,
+        "composed_through_revision": 4953,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Complete editorial extraction to existing note",
         "stale": false,
         "stale_dependencies": []
       },
@@ -749,16 +749,16 @@
     },
     "barycentric_reachability_carriers_and_antipodal_boundary_maps": {
       "composition": {
-        "body_chars": 13829,
-        "composed_through_revision": 4278,
-        "composition_version": 1,
+        "body_chars": 12421,
+        "composed_through_revision": 4955,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
+        "source_note": "Complete editorial extraction to existing note",
         "stale": false,
         "stale_dependencies": []
       },
@@ -785,56 +785,18 @@
       "section_id": "nori_connector_root_hubs",
       "version": 1
     },
-    "bounded_nori2_switches_from_finite_exterior_coordinate_support": {
-      "composition": {
-        "body_chars": 7069,
-        "composed_through_revision": 4764,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "All-dimensional NORI2 finite-exterior-support bound t+1 using Raynaud directed 2-colored Hamilton paths; full physical-square proof",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
-    "central_face_topological_packets_and_safe_carrier_obstructions": {
-      "composition": {
-        "body_chars": 15460,
-        "composed_through_revision": 4275,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_carriers",
-      "version": 1
-    },
     "codimension_two_reachability_facets_and_terminal_cap_rigidity": {
       "composition": {
-        "body_chars": 10937,
-        "composed_through_revision": 4277,
-        "composition_version": 1,
+        "body_chars": 6776,
+        "composed_through_revision": 4927,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
+        "source_note": "Negative four-facet obstruction extracted",
         "stale": false,
         "stale_dependencies": []
       },
@@ -863,16 +825,16 @@
     },
     "connector_square_certificates_and_monochromatic_edge_shadows": {
       "composition": {
-        "body_chars": 3747,
-        "composed_through_revision": 4902,
-        "composition_version": 2,
+        "body_chars": 14104,
+        "composed_through_revision": 4925,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Extracted method-specific negative arguments verbatim to note note_certification_shadow_realization_and_root_domination_limits",
+        "source_note": "Full proof merged from covered_root_separators_and_live_edge_antipodal_carriers",
         "stale": false,
         "stale_dependencies": []
       },
@@ -897,25 +859,6 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
-      "version": 1
-    },
-    "covered_root_separators_and_live_edge_antipodal_carriers": {
-      "composition": {
-        "body_chars": 10169,
-        "composed_through_revision": 4274,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
       "version": 1
     },
     "cyclic_edge_seams_parity_monodromy_and_root_slide_defects": {
@@ -996,16 +939,16 @@
     },
     "dimension_five_closure_and_cyclic_windows": {
       "composition": {
-        "body_chars": 22221,
-        "composed_through_revision": 4298,
-        "composition_version": 3,
+        "body_chars": 7328,
+        "composed_through_revision": 4929,
+        "composition_version": 4,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Elevation after topical regrouping: direct Item manifest refreshed; full current core proofs retained or re-synthesized.",
+        "source_note": "Audit split: negative proof to note_q5_seven_flipper_and_root_density_extensions",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1110,16 +1053,16 @@
     },
     "endpoint_tournament_factorization_and_monochromatic_orders": {
       "composition": {
-        "body_chars": 28933,
-        "composed_through_revision": 4833,
-        "composition_version": 6,
+        "body_chars": 26174,
+        "composed_through_revision": 4943,
+        "composition_version": 7,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Proves position-indexed transitive-tournament Hamilton ordering via a rank potential, and isolates both nontransitive chronology failure and the K4 parity-coupling obstruction",
+        "source_note": "Audit split: negative proof into note_chronological_local_center_parity_and_rank_potential_limitations",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1129,16 +1072,16 @@
     },
     "exact_change_vector_fibers_and_affine_obstruction_certificates": {
       "composition": {
-        "body_chars": 8020,
-        "composed_through_revision": 4301,
-        "composition_version": 2,
+        "body_chars": 6762,
+        "composed_through_revision": 4939,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Composition refreshed against complete housed Item set after regrouping; preserves source proofs and appends scope-specific new results.",
+        "source_note": "Audit split: negative proof into note_rooted_restriction_and_good_root_density_limitations",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1148,16 +1091,16 @@
     },
     "exact_target_reachability_and_antipodal_intersection_extraction": {
       "composition": {
-        "body_chars": 9332,
-        "composed_through_revision": 4276,
-        "composition_version": 1,
+        "body_chars": 7581,
+        "composed_through_revision": 4933,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
+        "source_note": "Audit split: negative proof to note_terminal_basins_and_root_profile_nerve_extraction_limits",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1298,25 +1241,6 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
-    "logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry": {
-      "composition": {
-        "body_chars": 8356,
-        "composed_through_revision": 4787,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Sparse triplewise support extraction plus ordered Ramsey; logarithmic paths without reversal oddness and near-linear average sensitivity barrier",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
       "composition": {
         "body_chars": 13813,
@@ -1329,25 +1253,6 @@
         },
         "has_composition": true,
         "source_note": "Adds exact 1/3 Hamming distance to boundary tournaments and a physical-fiber counterexample to a naive (3,3) lower-bound transfer",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
-    "logarithmic_monochromatic_path_obstruction_and_near_linear_switch_amplification": {
-      "composition": {
-        "body_chars": 4907,
-        "composed_through_revision": 4772,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Antichain-rank two-sentinel physical construction: logarithmic longest monochromatic geodesics, near-linear compulsory switches for fixed k>=3; exact physical checks.",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1376,16 +1281,16 @@
     },
     "near_midpoint_hub_witnesses_and_concrete_splice_failure_tests": {
       "composition": {
-        "body_chars": 21688,
-        "composed_through_revision": 4906,
-        "composition_version": 2,
+        "body_chars": 20560,
+        "composed_through_revision": 4949,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Extracted method-specific negative arguments verbatim to note note_fixed_hub_six_square_end_face_extension_failure",
+        "source_note": "Complete editorial extraction to existing note",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1410,25 +1315,6 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
-      "version": 1
-    },
-    "nori2_sentinel_barrier_and_exact_one_switch_examples": {
-      "composition": {
-        "body_chars": 12332,
-        "composed_through_revision": 4794,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Directed two-color Hamilton-cycle theorem strengthens one-sentinel closure to arbitrary asymmetric pair functions; retains symmetric sharpness and source proofs",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
       "version": 1
     },
     "odd_ordered_window_cycles_and_short_monochromatic_connector_density": {
@@ -1471,16 +1357,16 @@
     },
     "physical_window_shift_paths_and_root_shuttle_transport": {
       "composition": {
-        "body_chars": 18124,
-        "composed_through_revision": 4319,
-        "composition_version": 2,
+        "body_chars": 12638,
+        "composed_through_revision": 4947,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Added newly housed proved source and refreshed complete direct Item manifest.",
+        "source_note": "Separate alternating-square counterexample and duplicate refinement",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1545,37 +1431,18 @@
       "section_id": "nori_reachability_topological_extraction",
       "version": 2
     },
-    "seven_coordinate_shared_pivot_endpoint_constraints": {
-      "composition": {
-        "body_chars": 2635,
-        "composed_through_revision": 4317,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Current one-item shared-pivot theorem composed from its full proof.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_seven_coordinate_structure",
-      "version": 2
-    },
     "seven_coordinate_wing_factorization_and_exact_obstruction": {
       "composition": {
-        "body_chars": 13602,
-        "composed_through_revision": 4304,
-        "composition_version": 2,
+        "body_chars": 16386,
+        "composed_through_revision": 4920,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Composition refreshed against complete housed Item set after regrouping; preserves source proofs and appends scope-specific new results.",
+        "source_note": "Preserved the complete original endpoint-pivot proof",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1585,16 +1452,16 @@
     },
     "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support": {
       "composition": {
-        "body_chars": 8821,
-        "composed_through_revision": 4776,
-        "composition_version": 1,
+        "body_chars": 17383,
+        "composed_through_revision": 4921,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Sharp Θ(log n) extremal monochromatic geodesic length for fixed exterior-support NORI3; self-contained ordered-Ramsey terminal-pair ideal bound",
+        "source_note": "Full proof merged from logarithmic_geodesics_from_sparse_exterior_dependence_without_reversal_symmetry",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1661,16 +1528,16 @@
     },
     "two_sided_helly_root_sheets_and_high_index_support_selection": {
       "composition": {
-        "body_chars": 15779,
-        "composed_through_revision": 4908,
-        "composition_version": 2,
+        "body_chars": 12740,
+        "composed_through_revision": 4951,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Extracted method-specific negative arguments verbatim to note note_antipodal_involution_index_and_bichromatic_bad_root_limits",
+        "source_note": "Complete editorial extraction to existing note",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1678,56 +1545,18 @@
       "section_id": "nori_topological_carriers",
       "version": 1
     },
-    "unbounded_compulsory_switches_for_every_even_ordered_face_dimension": {
-      "composition": {
-        "body_chars": 8363,
-        "composed_through_revision": 4749,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Replaces weaker two-sentinel proof by sharp one-sentinel sign-and-selector construction, matching odd-k switch bound",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
-    "unbounded_compulsory_switches_for_every_odd_ordered_face_dimension": {
-      "composition": {
-        "body_chars": 10605,
-        "composed_through_revision": 4753,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Sharp odd-k insertion lemma improves maximum switch loss k-1 to k-2 and improves every odd-k forced-switch bound by one.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
     "unbounded_mandatory_color_changes_from_multilevel_local_minima": {
       "composition": {
-        "body_chars": 11307,
-        "composed_through_revision": 4752,
-        "composition_version": 2,
+        "body_chars": 35755,
+        "composed_through_revision": 4924,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Sharpens ternary sentinel loss from two to one using boundary parity; establishes exact multilevel family minimum 2r-3 and witnesses.",
+        "source_note": "Full proof merged from unbounded_compulsory_switches_for_every_odd_ordered_face_dimension",
         "stale": false,
         "stale_dependencies": []
       },

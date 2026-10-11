@@ -9,3 +9,7 @@ A topological zero need not itself be a single physical good geodesic. Method-sp
 ## Editorial note integration
 
 The specific high-index involution mismatch and bichromatic bad-root constructions from the two-sided Helly manuscript now belong to its linked research note. Only the positive macroscopic Tucker and two-sided witness results remain in the current Subsection composition.
+
+## Research-note boundary after independent audit
+
+The sector-cut carrier, static-index ceiling, and index mismatch belong to linked notes; full witness packet and exact Helly constructions remain in the published Subsections.

@@ -6,7 +6,7 @@
 - Labels: obstruction, partial_argument
 - Lifecycle: active
 - Epistemic status: method_limitation
-- Current version: 2
+- Current version: 6
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r4593_2
 - Updated session: session_nori_r4593_2
@@ -22,6 +22,10 @@
 - subsection:ordered_segment_posets_memory_braids_and_equivariant_collapse, exact version 1
 - subsection:physical_root_order_prisms_and_balanced_two_cap_packets, exact version 1
 - subsection:static_path_nerve_index_limits_and_five_block_root_repairs, exact version 1
+- subsection:central_face_topological_packets_and_safe_carrier_obstructions, exact version 1
+- subsection:balanced_root_permutohedral_packets_and_tucker_coincidences, exact version 1
+- subsection:affine_change_syndromes_and_exact_root_count_phenomena, exact version 1
+- subsection:balanced_root_permutohedral_packets_and_tucker_coincidences, exact version 2
 
 ## Research note
 
@@ -493,3 +497,144 @@ for each c and unordered A. These conditions pair the six A's per c into three c
 The surviving global target is a color-dependent obstruction to extending the 30-bit local atlases consistently across overlapping B-faces and genuine root transport. This theorem classifies the exact local failure configurations and does NOT assert unrestricted grand closure.
 
 Five-direction repair diagrams are locally rich, but their solutions need not glue globally across different permutohedron faces. A dynamic, physically certified carrier is necessary to exceed the static-index ceiling.
+
+---
+
+## Complete migrated Subsection: Central-face topological packets and safe-carrier obstructions
+
+Source: `central_face_topological_packets_and_safe_carrier_obstructions`, composition v1
+
+# Central-face topological packets and safe-carrier obstructions
+
+Full permutohedral antipodality supplies odd maps built from actual central ordered-face colors. To extract a full good path, however, the zero has to lie on a physically safe face where the required path witnesses can be combined. These results study the central color, endpoint caps and the permutation subfaces on which localization is possible.
+
+THEOREM (EVEN-n FULL SPHERE ACTUAL TWO-CAP CENTRAL WINDOW POLARIZATION). Let n=2m>=8 be EVEN, let c be any active NORI binary coloring, fix ANY full-path root x, distinguished coordinate i, and two further directions a,b. Put T=[n] minus{i,a,b}, |T|=n−3. For each ACTUAL full x-rooted direction permutation pi, write its ordered 3-face color word w_1,...,w_(n−2) of EVEN length 2m−2. Let A(pi)=w_(m−1), B(pi)=w_m be its two central window colors. Define the genuinely physical central polarization scalar h(pi)=A(pi)+B(pi)−1∈{−1,0,+1}. Under full-path active NORI reversal at the SAME root, w(rev pi)=1−reverse(w(pi)), so (A(rev pi),B(rev pi))=(1−B(pi),1−A(pi)), and h(rev pi)=−h(pi). Thus h is an EXACT odd scalar even though neither central face color alone is odd under reversal.
+Simultaneously, for every j∈T let s_j(pi)=1 if coordinate j occurs before i in pi and 0 otherwise, so s_j(rev pi)=1−s_j(pi). The full permutohedral boundary P_n is the free antipodal sphere S^(n−2). Affinely extend the odd vertex map
+ F(pi)=((s_j(pi)−1/2)_(j∈T), h(pi))∈R^(n−2)
+over the centrally equivariant barycentric subdivision, by first taking the arithmetic means of original vertex values on each proper face. Borsuk–Ulam forces F(z)=0 for some z in the boundary. The unique minimal proper face H containing z has zero in the convex hull of its ACTUAL original order-vertex values. By Caratheodory, choose at most n−1 ACTUAL full geodesics pi_r∈H and positive weights alpha_r summing1 with
+  E_alpha[s_j]=1/2 for ALL j∈T,
+  E_alpha[h]=0.
+As in the preceding odd-n two-cap packet theorem, their common proper permutohedral face H lies in a facet H_S fixing one nonempty proper prefix support S, and the balances force S⊆{a,b} (EARLY cap) or [n] minus S⊆{a,b} (LATE cap). Thus this is a genuinely witnessed single-face, one/two-direction cap packet in EVERY EVEN n>=8, with full physical i-edge coordinate balance plus EXACT central polarization balance.
+PHYSICAL DICHOTOMY. Since h(pi) is +1 iff the two central physical windows are both color1, -1 iff they are both color0, and0 iff they have opposite colors, the forced packet obeys precisely one OR BOTH alternatives: (A) it contains an ACTUAL full geodesic with a CENTRAL COLOR CHANGE w_(m−1)!=w_m; OR (B) it contains two ACTUAL full geodesics with monochromatic CENTRAL TWO-WINDOW CONNECTORS of OPPOSITE colors0 and1. If case (A) is absent, then h takes only ±1, E[h]=0 forces equal total packet weights on each color, and the earlier two-color conditional-mean argument applies: the mean before-i positions for q=0 andq=1 are coordinatewise complementary, and some opposite-colored central-connector pair differs in at least ceil((n−3)/2) physical i-edge position coordinates, all in T.
+The dichotomy holds for EVERY choice of x,i,a,b and uses neither virtual geodesic witnesses nor an unproved complementarity of individual profiles. A central switch in case(A) can be part of an otherwise highly alternating BAD path; opposite monochromatic central two-window colors in case(B) can live on disjoint physical squares. The remaining NORI grand closure gap is actual path-memory alignment and extraction, not a failure of full-sphere color balance.
+
+THEOREM (ACTUAL LOCAL CENTRAL-COLOR INTERFACE IN A FORCED HIGH-RANK TWO-CAP FACE). Let n=2m+1>=7 be ODD, and let c be any active NORI coloring of physical ORDERED 3-faces. Fix ANY actual full-geodesic root x, one coordinate direction i, and two other cap directions a,b. Put T=[n] minus{i,a,b}. The full-sphere Borsuk–Ulam theorem nori_odd_full_permutohedron_two_cap_actual_opposite_central_face_colors_20261008 forces a PROPER permutohedron face H containing ACTUAL full x-rooted direction permutations π0,π1 whose CENTRAL ordered-three-face window colors are OPPOSITE. Furthermore, the same face supports balanced i-edge positions in every j∈T. The strengthened large-block theorem nori_balanced_permutohedral_packet_has_single_large_free_block_full_support_cube_20261008 says that the ordered partition defining H has one freely permutable block B containing all i∪T (at least n−2 directions), and all remaining directions are drawn from {a,b}; any two vertices of H are connected by a path of legal adjacent TRANSPOSITIONS within the ordered partition's individual blocks.
+Follow an actual connected 1-skeleton path inside H from π0 to π1. Since the TRUE central ordered-three-face color differs at its endpoints, some consecutive two ORIGINAL permutohedron vertices π,σ along this path have different central ordered-face colors. Write π=(p1,...,pn), and σ equal to π with the adjacent positions s,s+1 exchanged. The central physical ordered-three-face window of a full n-edge path is window index m (one-based), whose free ordered direction triple is (p_m,p_(m+1),p_(m+2)) and whose physical root is the cube vertex after the first m−1 coordinate changes. If a swap is strictly before positions m−1,m OR strictly after positions m+2,m+3, it leaves this ENTIRE actual physical ordered-face OBJECT unchanged: earlier swaps use the same prefix support, and later swaps do not affect the central triple. Thus opposite central colors force
+  s∈{m−1,m,m+1,m+2}.
+This localizes the real color crossing to one of FOUR CENTRAL ADJACENT SWAPS, with both full paths remaining in ONE COMMON high-dimensional permutohedron face and sharing the same literal early/late at-most-two-direction cap set.
+PHYSICAL TWO-FACE OVERLAP. The opposite-colored central ordered-three-face objects F_pi and F_sigma ALWAYS have a COMMON PHYSICAL 2-DIMENSIONAL CUBE SQUARE (although their ordered triple labels may differ):
+ - if s=m or m+1, the central FREE 3-direction SET and its exterior fixed bits are IDENTICAL, so the two windows occupy the EXACT SAME underlying physical 3-face, in two different orders. Their colors differ because of ORDER rather than physical location;
+ - if s=m−1, swapping the direction immediately before the central window with its first direction changes the free triple by replacing one direction. The two physical faces intersect on the square free in the remaining last two central directions. This is verified by comparing the prefix vertices: the swapped coordinate removed from the old free set has already been flipped on the old path, while the incoming new free coordinate has already been flipped on the new path; their fixed bits agree in the intersection;
+ - if s=m+2, swapping the last central direction with the immediately following direction again replaces one free direction, and the two physical faces intersect on the square free in the other first two central directions.
+Thus for EVERY root x and prescribed i,a,b in odd n, there is one physical 2-square Q lying inside TWO actual ordered physical three-faces with OPPOSITE colors, whose associated full antipodal x-rooted geodesics differ by exactly one coordinate adjacent swap inside one proper face H with a freely permutable block of dimension at least n−3. The cube square Q is an actual physical interface, not a virtual convex balanced zero, and no antipodal pair of full geodesics is being confused with distinct branches.
+LIMITATION. The two opposite-colored ordered THREE-face windows need not be consecutive windows of a SINGLE full geodesic; they may occupy the same face with two different ordered triples, or two distinct physical faces intersecting on a square. All other ordered window colors along either full path remain uncontrolled. Hence the result is a color-interface forcing mechanism and a concrete exchange move, NOT NORI grand one-switch closure. The outstanding local-to-global obligation is a physically certified four-window/order memory switch that absorbs this adjacent central color interface into a single <=1-switch full antipodal geodesic, potentially via root-square rotation and reversed-terminal reachability.
+
+## Exact equivariant sector-cut atlas for physical monochromatic connectors and global switch defect
+
+Let n>=5 and c be an ACTIVE NORI binary coloring of actual physical ordered three-faces, c(tau u)=c(u)+1 in F_2, where tau(F,(a,b,d))=(bar F,(d,b,a)). Let H be the actual physical ordered-window shift graph: vertices are physical ordered 3-face windows, and an undirected edge uv records two consecutive windows of a genuine four-edge geodesic. For each cube coordinate i let H_i be the sector subgraph induced by the actual windows containing i, retaining exactly those H-shift edges on which i belongs to the TWO overlapping middle directions of the underlying four-direction word. Earlier Item nori_certified_square_complex_connected_antipodal_one_class_20261008 proved H_i is connected.
+
+**THEOREM 1 (exact phase-cut identity).** For a vertex u=(F,(a,b,d)) of H_i, define s_i(u)=1 iff i=b is in the MIDDLE position of the ordered free triple, and 0 iff i=a or i=d. Define the binary phase
+ g_i(u)=c(u)+s_i(u).
+Then:
+(A) s_i(tau u)=s_i(u), g_i(tau u)=1+g_i(u).
+(B) Every genuine sector shift uv in H_i changes s_i by one, so
+ 1{c(u)=c(v)} = g_i(u)+g_i(v) (in F_2).
+Consequently the entire set of genuine monochromatic four-edge connector edges involving direction i is EXACTLY the graph edge boundary
+ delta_{H_i} A_i,
+where A_i={u in V(H_i):g_i(u)=0}. The two phase shores A_i and its complement are interchanged by tau, and every even-length sector path from u to tau u crosses the good connector cut an ODD number of times.
+
+Proof. On a genuine four-direction shift (a,b,d,e), the sector coordinates are precisely i=b or i=d. If i=b, its position changes 2->1; if i=d, its position changes 3->2. Thus s_i differs on the adjacent actual windows. Substituting g_i=c+s_i gives g_i(u)+g_i(v)=c(u)+c(v)+1, which equals 1 exactly for same-color windows. Reversing an ordered triple fixes the predicate of the middle position; NORI oddness flips c, proving (A). As g_i labels the sides of A_i, the good-edge equality set is its exact edge cut. For a path from u to tau u, summing g_i differences telescopes to1, so the number of good cut crossings is odd. QED.
+
+**THEOREM 2 (complete multi-coordinate compatibility; exact converse).** For every ordered physical window u=(F,(a,b,d)) the three sector phases satisfy
+ g_a(u)=g_d(u)=c(u),   g_b(u)=1+c(u).
+Thus on any shared vertex u of H_i and H_j, the transition law is
+  g_i(u)+g_j(u) = s_i(u)+s_j(u).                 (GLUE)
+Conversely, suppose that for each direction i a binary labeling g_i of ALL physical windows containing i is given, satisfying (i) g_i(tau u)=1+g_i(u), and (ii) GLUE on every shared window. Then c(u)=g_i(u)+s_i(u) is independent of which free direction i is chosen, defines a UNIQUE genuine active NORI coloring on ALL physical ordered faces, and its i-middle monochromatic connectors are precisely the edges crossing delta A_i. Therefore active NORI colorings are EXACTLY equivariantly antipodal families of binary sector shores satisfying the explicit physical window overlap equations GLUE. The sector shores cannot be varied independently.
+
+Proof. The displayed phase identities follow by the definition of s. For the converse, GLUE makes g_i+s_i equal for all three free coordinates of each actual ordered-face window, hence defines one well-defined c(u). Since tau preserves each s_i and flips each g_i, c(tau u)=1+c(u). Its values belong to ACTUAL physical face windows (rather than different hub representatives), so face locality is automatic. The first theorem then recovers the exact sector cut sets. QED.
+
+**THEOREM 3 (exact rooted full-geodesic cut energy).** Let P be ANY actual FULL n-edge geodesic from a physical root x with direction order p=(p1,...,pn). Let u_t be its actual ordered three-face window with tuple (p_t,p_(t+1),p_(t+2)), for t=1,...,n-2. On the t-th consecutive-window shift e_t=(u_t,u_(t+1)), both coordinates p_(t+1),p_(t+2) belong to the overlapping middle pair, and both belong to their H_i sectors. Then
+  D(P) = sum_(t=1)^(n-3) 1{ g_(p_(t+1))(u_t)=g_(p_(t+1))(u_(t+1)) }
+       = sum_(t=1)^(n-3) 1{ g_(p_(t+2))(u_t)=g_(p_(t+2))(u_(t+1)) },
+where D(P) is the EXACT number of ordered-three-face window color switches of P (ordinary integer sum).
+Thus active NORI grand closure is equivalent to a PHYSICAL FULL ROOTED direction-distinct window walk crossing its current sector cut on ALL BUT AT MOST ONE of its n-3 actual window-shift edges, with the sector on each shift selected from its pair of middle free directions. The root, physical faces and global direction order remain mandatory witness data. Arbitrary paths in H or across sector cuts cannot be substituted for a full cube geodesic.
+
+Proof. By Theorem 1, for each actual shift and either middle coordinate i, g_i has equal endpoints iff its physical face colors differ. Sum this exact bitwise equivalence over the n-3 shifts. QED.
+
+**THEOREM 4 (cohomological localization of the temporal and connector classes).** On each connected sector graph H_i, the intrinsic temporal 1-cocycle beta_H(e)=1 on every physical shift edge is the exact coboundary delta s_i. The same-color connector cochain alpha_H(e)=1{c(u)=c(v)} is the exact coboundary delta g_i. On quotient H_i/tau, however, alpha_bar represents precisely the NONZERO antipodal-cover class w_i, while beta_bar represents zero. To see this, choose one lift of each quotient vertex; the voltage t(e) is the tau-swap of its terminal chosen lift. Antivariance g_i(tau u)=g_i(u)+1 gives alpha_bar(e)= t(e)+delta(g_i on chosen lifts). Since s_i is tau-invariant, beta_bar=delta(s_i on chosen lifts), so [alpha_bar]=w_i and [beta_bar]=0. Connectivity of H_i makes its free quotient cover connected and hence w_i nonzero.
+
+Globally H is covered by the sectors H_i: every shift belongs to exactly the two sectors indexed by its middle pair. On the full H, beta is NONEXACT, by the physical 5-window pentagon on which beta evaluates1. Therefore the global temporal obstruction is produced by JOINING DIFFERENT SECTOR CHARTS; within each individual H_i the same parity is a coboundary. This mathematically identifies the cross-chart gluing requirement that all one-sector cut-count arguments lose.
+
+**Research consequence / exact gap.** The improved exponentially numerous good sector cut edges (Item nori_equivariant_window_shift_short_antipodal_path_many_middle_connectors_20261009) supply dense genuine interfaces between antipodally paired phases, and this Item shows how the interfaces overlap at each physical window. Grand closure requires finding ONE injective full geodesic meeting all but at most one of its successive rotating sector cuts. A nonzero first cover class or abundant sector cut crossings alone does not synchronize the cuts. The next forcing target is a higher-dimensional physical window/terminal-memory comparison of these sector shores whose nonzero obstruction compels the exact same-root complementary reversed-two-tail reachability pair.
+
+Central color polarization is stronger than an abstract Borsuk–Ulam zero but weaker than a one-switch full geodesic. The stated examples and local atlas calculations identify the precise face-compatibility conditions still missing.
+
+---
+
+Source: balanced_root_permutohedral_packets_and_tucker_coincidences prior composition v1
+
+**CRITICAL COMPARISON WITH THE OLD PATH-HISTORY INDEX-ONE BARRIER.** The earlier NORI history-poset carrier has small Z2 index because its legal-prefix topology collapses. P_n is a DIFFERENT, canonically supplied, centrally symmetric convex polytopal COMPLETION of the set of all FULL direction orders, with index n−2 on its boundary. Its higher faces encode permutations and their swaps, NOT automatically compatible monochromatic paths. Theorem2 gives a literal actual geodesic at the FIRST zero-level because endpoint imbalance is 1-Lipschitz under legitimate adjacent swaps. Higher-dimensional Tucker extraction STILL requires additional physical-cell compatibility rather than treating arbitrary PL barycenters as real geodesics. This is the sharp, topology-first direction for global closure.
+
+**Status.** Theorem1–3 and the conditional obstruction in Corollary4 are proved. Constructing the sphere map Phi_x or a valid combinatorial carrier extraction remains open; unrestricted grand NORI closure has NOT been obtained.
+
+
+
+Source: affine_change_syndromes_and_exact_root_count_phenomena composition v1
+
+## A valid antipodally odd affine edge coloring with reachability nerve chi=2, Lefschetz=0
+
+On Q_4={0,1}^4, define the color of direction-i edges by
+\[
+c_1(x)=x_3,\qquad c_2(x)=x_4,\qquad
+c_3(x)=x_4,\qquad c_4(x)=x_3,
+\]
+where c_i is independent of x_i as required for an undirected edge coloring. Every c_i depends on exactly one *exterior* bit, so complementing all cube bits flips every edge color: c_i(bar x)=1-c_i(x). Hence the original antipodal-odd edge axiom holds.
+
+For the COLOR-FREE monochromatic geodesic reachability nerve K_R on 16 cube-vertex labels, the exact simplicial face counts are
+\[
+(f_0,\ldots,f_{15})=
+(16,120,560,1820,4368,8008,11440,12870,11440,7992,4320,1752,504,92,8,0).
+\]
+Therefore
+\[
+\boxed{\chi(K_R)=\sum_{k=0}^{15}(-1)^k f_k=2.}
+\]
+The counts of τ-invariant simplices supported on respectively r antipodal vertex pairs, r=1,...,8, are
+\[
+(a_1,\ldots,a_8)=(8,28,56,70,52,22,4,0).
+\]
+An invariant simplex with r antipodal pairs has 2r vertices and τ acts as r disjoint vertex transpositions; its contribution to the antipodal Lefschetz number is \((-1)^{(2r-1)}(-1)^r=(-1)^{r+1}\). Hence
+\[
+\boxed{L(\tau)=\sum_{r=1}^8(-1)^{r+1}a_r=0.}
+\]
+Nevertheless ALL eight antipodal edges {x,bar x} belong to K_R: R(x)∩R(bar x) is nonempty for every x.
+
+**Exact reproducibility without black-box search.** For each root x, define dynamic Boolean arrays r_q(x,S) on coordinate subsets S⊆[4]:
+\[
+r_q(x,\varnothing)=1,\qquad
+r_q(x,S)=\bigvee_{i\in S}\bigl[
+r_q(x,S\setminus\{i\})\ \land\
+(c_i(x\oplus(S\setminus\{i\}))=q)
+\bigr].
+\]
+Then R(x) consists exactly of x⊕S for which r_0(x,S)∨r_1(x,S)=1. Enumerating x in binary order 0000 through 1111 and encoding R(x) as a 16-bit mask with target z at bit position z gives
+\[
+(0fff,0fff,0fff,0fff,\ ff7f,ffbf,ffdf,ffef,\
+f7ff,fbff,fdff,feff,\ fff0,fff0,fff0,fff0).
+\]
+The nerve simplex test is the direct formula
+\[
+\sigma\in K_R\ \Longleftrightarrow\
+\exists z\in Q_4:\ \sigma\subseteq R(z),
+\]
+using symmetry R(z) as the set of roots that can reach z. Counting nonempty bitmask subsets of the displayed region masks produces exactly the face counts above. Counting masks closed under z→15⊕z produces a_r.
+
+**Implication.** The raw reachability nerve does not universally have odd Euler characteristic, and the antipodal involution need not have nonzero Lefschetz number, EVEN when every antipodal pair has an intersection certificate. Consequently neither invariant alone can prove the grand edge conjecture on this nerve. This is a precise, fully specified counterexample to an overly strong topological forcing hypothesis; it does NOT refute the edge conjecture or the exact fixed-point equivalence. A refined nerve, local carrier condition, or higher-order reachability incidence theorem is necessary.
+
+
+
+Additional extracted proof/scope from balanced_root_permutohedral_packets_and_tucker_coincidences, source composition v2
+
+**Crucial limitation.** The cochain may be identically zero: a coloring independent of reversing local three-direction order has \(r_j=0\) everywhere, and the two antipodal-root switch vectors then coincide, even if BOTH contain many switches (as in the valid full exterior-parity coloring). Consequently the coboundary identity alone cannot reduce switches or force grand closure. A proof must combine it with genuine root mobility over MORE THAN one antipodal pair and/or with a nontrivial coupled topological class. No universal holonomy contradiction is asserted.
+
+To turn these packets into grand closure, one needs a constructive root/order exchange that both respects the antipodal label correspondence and controls the defect of the stitched path.

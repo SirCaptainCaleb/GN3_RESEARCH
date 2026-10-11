@@ -9,3 +9,7 @@ The inability of a particular certified-square carrier to force Tucker index two
 ## Editorial note integration
 
 The globally missing middle-pair realizations and witness-root domination counterexamples from the connector-shadow manuscript have been transferred with their exact proofs to a linked research note. Its current publication retains the affirmative six-edge monochromatic hub theorem.
+
+## Research-note boundary after independent audit
+
+The covered-root separator theorem has been consolidated into the connector-square proof; no redundant Subsection remains.

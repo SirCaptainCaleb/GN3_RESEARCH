@@ -9,3 +9,7 @@ The extensive obstruction theory for incompatible opposite-color terminal caps a
 ## Editorial note integration
 
 The fixed-hub six-square end-face extension failure is documented verbatim in a note; the current near-midpoint manuscript retains the constructive two-seam splice, same-center witness, and moving-hub transport lemmas.
+
+## Research-note boundary after independent audit
+
+The physical-window degeneration and bad-rectangle limitations now live in linked notes, while actual splicing and moving-hub theorems remain published.

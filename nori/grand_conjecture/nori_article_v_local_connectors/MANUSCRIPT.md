@@ -16,7 +16,43 @@ The inability of a particular certified-square carrier to force Tucker index two
 
 *Full Section composition: [source manuscript](nori_local_connector_geometry.md).*
 
-### Covered-root separators and live-edge antipodal carriers
+### Connector square certificates and monochromatic edge shadows
+
+# Connector square certificates and monochromatic edge shadows
+
+A monochromatic four-geodesic passing through an edge or root square is a physical certificate: the neighboring ordered three-faces have equal color on one actual path. As those certificates are glued along their physical edges, a two-color shadow appears, with either a shared edge certified by both colors or a rigid one-color assignment. Local square combinatorics then constrains allowable extensions.
+
+## Monochromatic six-edge hub geodesics from finite ordered-hypergraph Ramsey
+
+Let \(c(F,\pi)\in\{0,1\}\) be ANY coloring of physical ORDERED three-dimensional faces in Q_n. We impose NO antipodal or reversal condition. Let \(N=R_3(6;64)\) denote any finite 64-color Ramsey number guaranteeing a monochromatic six-vertex subset in every 64-coloring of 3-element subsets of an N-element set.
+
+**Theorem (unconditional six-edge monochromatic hub path).** For all \(n\ge N\), EVERY cube vertex z lies on a monochromatic cube geodesic of length SIX whose four ordered-three-face windows all contain z as a common physical vertex. In particular, for n>=N the maximum monochromatic-geodesic length is at least six, independently of the coloring.
+
+**Proof.** Fix z and a fixed linear order on the n coordinate directions. To every 3-element set T={a<b<c}, assign its ordered-face **profile**
+\[
+\Phi_z(T)=\big(c(F(z;T),\pi):\pi\text{ ranges over all six permutations of }(a,b,c)\big)\in\{0,1\}^6.
+\]
+This gives at most 64 colors on triples of coordinate directions. By the definition of N, there is a six-element subset W={p1<...<p6} on which \Phi_z is constant on all C(6,3) three-subsets. In particular, for all increasing ordered triples of p's, the common ordered-face color is one fixed bit q.
+
+Start at the cube vertex \(x=z\oplus\{p_1,p_2,p_3\}\), and traverse the six distinct coordinates in order p1,...,p6. The path is a six-edge geodesic, and after the first three edges it passes through z. Its four successive ordered-three-face windows have triples
+\[
+(p_1,p_2,p_3),\ (p_2,p_3,p_4),\ (p_3,p_4,p_5),\ (p_4,p_5,p_6).
+\]
+Each physical three-face contains z: the first ends at z, the last starts there, and the middle two pass through it. Hence all four are among the prescribed equal-color faces F(z;T), so every window color equals q. QED.
+
+**Optimal hub-span observation.** All ordered three-edge windows of any L-edge geodesic share a common physical vertex precisely when their vertex-index intervals [0,3],[1,4],...,[L-3,L] have nonempty intersection. This requires L-3<=3, or L<=6. Thus the fixed-hub reduction to ONE ordered triple coloring can certify six-edge monochromatic paths but cannot by itself certify longer paths: an L>=7 path has no common vertex in all its three-face windows. Proving unbounded-length monochromatic geodesics therefore requires coherent color transport between distinct hub vertices, not merely a stronger Ramsey bound on one hub.
+
+**General k-face extension.** For ordered k-face colorings, put N_k=R_k(2k;2^{k!}). If n>=N_k, every cube vertex z lies on a monochromatic 2k-edge geodesic with all k-edge windows passing through z. The proof labels each k-subset by its k!-entry ordered color profile and selects 2k coordinate directions with constant profile. The window intersection criterion is L<=2k.
+
+**Relation to NORI.** For active ordered-three-face NORI, the resulting six-edge monochromatic path supplies an actual reachable terminal-two-tail support of size four from some root. This is a qualitative dimension-independent reachability-rank floor in very high dimensions, stronger than the universal four-edge seed. It does not force complementary reversed-tail support overlap and therefore does not prove grand closure.
+
+
+
+
+
+## Consolidated independent proof: covered-root separator theorem
+
+Previous Subsection `covered_root_separators_and_live_edge_antipodal_carriers`, exact original composition version 1.
 
 # Covered-root separators and live-edge antipodal carriers
 
@@ -66,40 +102,6 @@ Every four-word has i among its two middle coordinates, so each step flips the b
 **Role.** A finite six-shift reversal certificate replaces the larger H_i connectivity-and-bipartition argument for excluding a globally missing coordinate. It does not force compatible long monochromatic paths, and does not improve the sharp equivariant index-one bound on the certified-square complex (Item nori_actual_nori_coloring_sharp_certified_square_index_one_20261008).
 
 Even a densely covered antipodal carrier can have small cohomological index. Coverage and separation are useful only to the extent that their connecting edges preserve monochromatic path certificates.
-
-### Connector square certificates and monochromatic edge shadows
-
-# Connector square certificates and monochromatic edge shadows
-
-A monochromatic four-geodesic passing through an edge or root square is a physical certificate: the neighboring ordered three-faces have equal color on one actual path. As those certificates are glued along their physical edges, a two-color shadow appears, with either a shared edge certified by both colors or a rigid one-color assignment. Local square combinatorics then constrains allowable extensions.
-
-## Monochromatic six-edge hub geodesics from finite ordered-hypergraph Ramsey
-
-Let \(c(F,\pi)\in\{0,1\}\) be ANY coloring of physical ORDERED three-dimensional faces in Q_n. We impose NO antipodal or reversal condition. Let \(N=R_3(6;64)\) denote any finite 64-color Ramsey number guaranteeing a monochromatic six-vertex subset in every 64-coloring of 3-element subsets of an N-element set.
-
-**Theorem (unconditional six-edge monochromatic hub path).** For all \(n\ge N\), EVERY cube vertex z lies on a monochromatic cube geodesic of length SIX whose four ordered-three-face windows all contain z as a common physical vertex. In particular, for n>=N the maximum monochromatic-geodesic length is at least six, independently of the coloring.
-
-**Proof.** Fix z and a fixed linear order on the n coordinate directions. To every 3-element set T={a<b<c}, assign its ordered-face **profile**
-\[
-\Phi_z(T)=\big(c(F(z;T),\pi):\pi\text{ ranges over all six permutations of }(a,b,c)\big)\in\{0,1\}^6.
-\]
-This gives at most 64 colors on triples of coordinate directions. By the definition of N, there is a six-element subset W={p1<...<p6} on which \Phi_z is constant on all C(6,3) three-subsets. In particular, for all increasing ordered triples of p's, the common ordered-face color is one fixed bit q.
-
-Start at the cube vertex \(x=z\oplus\{p_1,p_2,p_3\}\), and traverse the six distinct coordinates in order p1,...,p6. The path is a six-edge geodesic, and after the first three edges it passes through z. Its four successive ordered-three-face windows have triples
-\[
-(p_1,p_2,p_3),\ (p_2,p_3,p_4),\ (p_3,p_4,p_5),\ (p_4,p_5,p_6).
-\]
-Each physical three-face contains z: the first ends at z, the last starts there, and the middle two pass through it. Hence all four are among the prescribed equal-color faces F(z;T), so every window color equals q. QED.
-
-**Optimal hub-span observation.** All ordered three-edge windows of any L-edge geodesic share a common physical vertex precisely when their vertex-index intervals [0,3],[1,4],...,[L-3,L] have nonempty intersection. This requires L-3<=3, or L<=6. Thus the fixed-hub reduction to ONE ordered triple coloring can certify six-edge monochromatic paths but cannot by itself certify longer paths: an L>=7 path has no common vertex in all its three-face windows. Proving unbounded-length monochromatic geodesics therefore requires coherent color transport between distinct hub vertices, not merely a stronger Ramsey bound on one hub.
-
-**General k-face extension.** For ordered k-face colorings, put N_k=R_k(2k;2^{k!}). If n>=N_k, every cube vertex z lies on a monochromatic 2k-edge geodesic with all k-edge windows passing through z. The proof labels each k-subset by its k!-entry ordered color profile and selects 2k coordinate directions with constant profile. The window intersection criterion is L<=2k.
-
-**Relation to NORI.** For active ordered-three-face NORI, the resulting six-edge monochromatic path supplies an actual reachable terminal-two-tail support of size four from some root. This is a qualitative dimension-independent reachability-rank floor in very high dimensions, stronger than the universal four-edge seed. It does not force complementary reversed-tail support overlap and therefore does not prove grand closure.
-
-
-
-
 
 ## Dead-edge rigidity and extension constraints
 
@@ -533,7 +535,6 @@ The sum around all seven edges is therefore 1, as required. This makes a cross-r
 **Suggested next implication to prove.** Search for actual W_good triangles allowing two such exterior-bit seven-cycles on distinct coordinates d,e to commute through good-window path homotopies. Any resulting certified annular transport around an antipodal root loop would activate the team's proved beta_bar cup w forcing criterion. The current theorem provides explicit, universally valid root-mobile one-dimensional cycles and common physical hubs for that search, but does not establish commuting homotopies or grand closure.
 
 
-**Audit addendum (physical good-window quotient, 2026-10-09).** The "certified root squares" in Theorem 3 are squares ONLY in the redundant hub-coordinate PARAMETER graph. Toggling either shared free direction b or c fixes BOTH underlying ordered physical faces, so the four hub-chart comparisons all project to ONE and the SAME edge of the actual good-window complex W_good. Therefore these squares are DEGENERATE after physical-face identification and must NEVER be counted as nondegenerate 2-cells, an annulus, or evidence for a mixed cup product in W_good. The first genuine exterior-root transport (toggle a direction e outside {a,b,c,d}) is the six-window hexagon completely classified in proved Item nori_exterior_root_transport_hexagon_exact_good_triangles_rigidity_dichotomy_20261009. Its local triangles may fail simultaneously; when present they collapse across free chord edges and leave an induced S1. This addendum sharpens the precise scope of the earlier state-space observation while preserving its pointwise identities and averaging theorem.
 
 
-The explicit bad rectangles show that a common midpoint and opposite central colors alone are not a closure certificate. The repair complex must also control physical seam windows and their root-bit dependence.
+*The scope-specific limitation and complete proof are preserved in linked research note note_fixed_hub_six_square_end_face_extension_failure.*
