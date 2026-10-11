@@ -724,16 +724,19 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
                 write(root / "RESEARCH_NOTES" / "HISTORY" / name / ("v" + str(h["version"]) + ".md"), text_)
             entry = "- [" + n["title"] + "](" + name + ".md) (" + n["home_type"] + ":" + n["home_id"] + "; " + n.get("lifecycle","active") + "; " + n.get("epistemic_status","open") + ")"
             note_index.append(entry)
+            paragraphs = [p.strip().replace("\n", " ") for p in (n.get("body") or "").split("\n\n")]
+            insight = next((p for p in paragraphs if p and not p.startswith("#")), "")
+            q_entry = entry + (" — " + insight[:290] + ("…" if len(insight)>290 else "") if insight else "")
             for typ, ident in [(n["home_type"],n["home_id"])] + [
                 (ref["type"],ref["id"]) for ref in refs if ref.get("type") in ("article","section","subsection")
             ]:
                 by_manuscript.setdefault((typ,ident), []).append(n)
             if n.get("lifecycle") != "active":
-                by_question["closed"].append(entry + " — " + str(n.get("disposition") or ""))
+                by_question["closed"].append(q_entry + " — " + str(n.get("disposition") or ""))
             elif "obstruction" in (n.get("labels") or []) and n.get("epistemic_status") in ("proved","method_limitation"):
-                by_question["obstructions"].append(entry)
+                by_question["obstructions"].append(q_entry)
             else:
-                by_question["active"].append(entry)
+                by_question["active"].append(q_entry)
         write(root / "RESEARCH_NOTES" / "README.md", "\n".join(note_index))
         for (typ,ident), entries in by_manuscript.items():
             lines = [
@@ -748,11 +751,14 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
             "# Consequential questions and established obstructions", "",
             "Discovery map, NOT a ranked task list. Consult manuscripts and KNOWN_OBSTRUCTIONS.md for proved mathematics. Read only relevant notes.", "",
             "## Open questions and mechanisms", "",
-            *(by_question["active"] or ["- None recorded."]),
+            *(by_question["active"][:12] or ["- None recorded."]),
+            *(["- Additional open notes: see README.md or search_notes; the displayed selection is alphabetical, not a ranking."] if len(by_question["active"])>12 else []),
             "", "## Established and method-scoped obstructions", "",
-            *(by_question["obstructions"] or ["- See KNOWN_OBSTRUCTIONS.md."]),
+            *(by_question["obstructions"][:12] or ["- See KNOWN_OBSTRUCTIONS.md."]),
+            *(["- Further obstructions: see README.md or search_notes."] if len(by_question["obstructions"])>12 else []),
             "", "## Resolved and superseded", "",
-            *(by_question["closed"] or ["- None recorded."])
+            *(by_question["closed"][:6] or ["- None recorded."]),
+            *(["- More resolved/superseded notes: see README.md or search_notes."] if len(by_question["closed"])>6 else [])
         ]
         write(root / "RESEARCH_NOTES" / "QUESTIONS.md", "\n".join(question_map))
 
