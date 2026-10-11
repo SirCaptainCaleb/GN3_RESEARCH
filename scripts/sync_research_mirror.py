@@ -431,6 +431,9 @@ def build(schema: str):
             rec["type"] = node["type"]
             projected[group].append(rec)
     data.update(projected)
+    if schema == 'nori':
+        # Retired mathematical units remain in database history, not in publication.
+        data['section_subsections'] = [x for x in data['section_subsections'] if x.get('archived_at') is None]
     rev = context(schema, "revision")
     universal_docs = context(schema, "universal_documents")
     broadcasts = context(schema, "startup_broadcasts")
@@ -648,7 +651,7 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
 
     subsection_index = [
         "# Subsections", "",
-        "Subsections are organizational containers with optional publication-quality compositions. Their mathematical development lives exclusively in their Items and Results.",
+        "Subsections are coherent publication manuscripts. Negative-result notes remain separate, and retired Subsections are excluded from the current tree.",
         "",
     ]
     for s in sorted(
