@@ -674,6 +674,86 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
         toolkit_index.append("Toolkit is empty.")
     write(root / "TOOLKIT" / "README.md", "\n".join(toolkit_index))
 
+
+    if schema == "nori":
+        # Independent research-memory export, excluded from manuscript compositions.
+        notes = sorted(data["research_notes"], key=lambda n: ((n.get("title") or "").casefold(), n["id"]))
+        history = data["research_note_versions"]
+        note_index = [
+            "# NORI selective research notes", "",
+            "Non-manuscript research memory. Manuscript text and numbering are unaffected.",
+            "Find related notes using nori.notes_for(type,id), search with nori.search_notes, or read exact history using nori.read_note(id,version).", "",
+        ]
+        by_manuscript = {}
+        by_question = {"active": [], "obstructions": [], "closed": []}
+        for n in notes:
+            name = safe_name(n["id"])
+            meta = [
+                "# " + n["title"], "",
+                "- Stable ID: " + n["id"],
+                "- Primary home: " + n["home_type"] + ":" + n["home_id"],
+                "- Labels: " + ", ".join(n.get("labels") or []),
+                "- Lifecycle: " + n.get("lifecycle","active"),
+                "- Epistemic status: " + n.get("epistemic_status","open"),
+                "- Version: " + str(n.get("version")),
+                "- Created session: " + n.get("created_session",""),
+                "- Updated session: " + n.get("updated_session",""),
+                "- Disposition: " + str(n.get("disposition") or "none"),
+                "- Successor: " + str(n.get("successor_id") or "none"),
+                "", "## Related references", "",
+            ]
+            refs = n.get("related") or []
+            meta.extend(["- " + str(ref.get("type")) + ":" + str(ref.get("id")) +
+                         (", exact version " + str(ref["version"]) if "version" in ref else "")
+                         for ref in refs] or ["- None"])
+            meta += ["", "## Research note", "", n.get("body") or ""]
+            write(root / "RESEARCH_NOTES" / (name + ".md"), "\n".join(meta))
+            for h in history:
+                if h.get("note_id") != n["id"]:
+                    continue
+                snap = h.get("snapshot") or {}
+                text_ = "\n".join(["# " + str(snap.get("title")), "",
+                          "- Note: " + n["id"], "- Version: " + str(h["version"]),
+                          "- Session: " + str(h.get("session_id")),
+                          "- Recorded: " + str(h.get("recorded_at")),
+                          "- Lifecycle: " + str(snap.get("lifecycle")),
+                          "- Epistemic status: " + str(snap.get("epistemic_status")),
+                          "", str(snap.get("body") or "")])
+                write(root / "RESEARCH_NOTES" / "HISTORY" / name / ("v" + str(h["version"]) + ".md"), text_)
+            entry = "- [" + n["title"] + "](" + name + ".md) (" + n["home_type"] + ":" + n["home_id"] + "; " + n.get("lifecycle","active") + "; " + n.get("epistemic_status","open") + ")"
+            note_index.append(entry)
+            for typ, ident in [(n["home_type"],n["home_id"])] + [
+                (ref["type"],ref["id"]) for ref in refs if ref.get("type") in ("article","section","subsection")
+            ]:
+                by_manuscript.setdefault((typ,ident), []).append(n)
+            if n.get("lifecycle") != "active":
+                by_question["closed"].append(entry + " — " + str(n.get("disposition") or ""))
+            elif "obstruction" in (n.get("labels") or []) and n.get("epistemic_status") in ("proved","method_limitation"):
+                by_question["obstructions"].append(entry)
+            else:
+                by_question["active"].append(entry)
+        write(root / "RESEARCH_NOTES" / "README.md", "\n".join(note_index))
+        for (typ,ident), entries in by_manuscript.items():
+            lines = [
+                "# Research notes linked to " + typ + " " + ident, "",
+                "Sidecar only; no note body is included in the mathematical manuscript.", "",
+            ]
+            for n in sorted(entries,key=lambda n:n["title"].casefold()):
+                lines.append("- [" + n["title"] + "](../" + safe_name(n["id"]) + ".md) — " +
+                             n.get("lifecycle","active") + "/" + n.get("epistemic_status","open"))
+            write(root / "RESEARCH_NOTES" / "BY_MANUSCRIPT" / (safe_name(ident) + ".md"), "\n".join(lines))
+        question_map = [
+            "# Consequential questions and established obstructions", "",
+            "Discovery map, NOT a ranked task list. Consult manuscripts and KNOWN_OBSTRUCTIONS.md for proved mathematics. Read only relevant notes.", "",
+            "## Open questions and mechanisms", "",
+            *(by_question["active"] or ["- None recorded."]),
+            "", "## Established and method-scoped obstructions", "",
+            *(by_question["obstructions"] or ["- See KNOWN_OBSTRUCTIONS.md."]),
+            "", "## Resolved and superseded", "",
+            *(by_question["closed"] or ["- None recorded."])
+        ]
+        write(root / "RESEARCH_NOTES" / "QUESTIONS.md", "\n".join(question_map))
+
     for b in data["brainstorms"]:
         write(
             root / "BRAINSTORMS" / (safe_name(b["id"]) + ".md"),
