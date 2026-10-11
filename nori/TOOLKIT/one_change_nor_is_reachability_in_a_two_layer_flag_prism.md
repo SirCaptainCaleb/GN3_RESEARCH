@@ -4,7 +4,7 @@
 
 ## Statement
 
-For any coordinate arity r, the NOR one-change problem is exactly a directed reachability problem on the memory-state flag complex with two color phases. The underlying memory states are ordered consecutive-rank flags in sd(Delta^{n-1}); adjoining the pre-switch/post-switch phase embeds the automaton in a refinement of Delta^{n-1} x [0,1]. A spanning one-change order is precisely a directed source-to-sink path in one of the two initial-color copies.
+For reversal-odd direction-only ordered r-tuple colorings, a two-phase flag-memory automaton with the first complete r-window initialized in its ACTUAL color q is exact for words beginning in q and having at most one change. The union over q is the unrestricted one-change decision problem. Physical NORI colorings require additional root and face memory.
 
 ## Body
 
@@ -31,7 +31,7 @@ The directed automaton has:
 - a horizontal transition in phase 1 when c=1-q;
 - no transition from phase 1 on a color-q window.
 
-Before the first complete r-window exists, initialization edges are unconstrained and simply build the memory tail.
+Before the first complete r-window exists, initialization edges are unconstrained and simply build the memory tail. On the FIRST complete r-window, initialize only if its color equals q, entering phase 0; a transition into phase 1 is forbidden at this initialization step. Once this q-colored first window has been read, later windows follow the phase-0 horizontal, phase-0-to-1 switch, and phase-1 horizontal rules. This enforces a nonempty first run of actual color q.
 
 ### Exactness theorem
 
@@ -74,11 +74,18 @@ A minimum-counterexample proof would therefore aim to show that every proper sid
 Choosing a switch time in a completed permutation is the discrete counterpart of choosing an affine threshold separating the signed points epsilon_i(1,t_i). The two-layer automaton retains the same threshold parameter before the permutation is completed, so unlike a chamberwise Radon certificate it is compatible with prefixes and with the simplex face structure.
 
 
+### Initialization correction and model scope
+
+The first complete r-window MUST have color q in the q-copy. Without this condition, a word 1^(n-r+1) would be accepted by the q=0 automaton via an immediate phase switch, contradicting the claim that q is the actual initial color. With the stated first-window check, a source-to-sink path in the q-copy is equivalent to a word beginning in q with at most one switch, including zero switches. The union of both q-copies is equivalent to the unrestricted direction-only one-change word predicate.
+
+This memory automaton encodes a reversal-odd coloring h of ordered coordinate r-tuples. Arbitrary NORI physical-edge colorings require the actual root vertex and physical window-state information; the direction-only flag prism alone is insufficient.
+
+
 ## Metadata
 
 - ID: one_change_nor_is_reachability_in_a_two_layer_flag_prism
 - Kind: toolkit
-- Version: 1
-- Math version: 1
+- Version: 3
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted

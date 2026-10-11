@@ -54,7 +54,7 @@ This gives a local formulation suited to connector/Sperner arguments: closure me
 
 - ID: ternary_reversal_odd_labels_are_endpoint_selectors
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

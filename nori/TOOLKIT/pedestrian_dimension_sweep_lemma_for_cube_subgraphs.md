@@ -70,7 +70,7 @@ This does not by itself solve the antipodal or spanning NOR problems, but it sep
 
 - ID: pedestrian_dimension_sweep_lemma_for_cube_subgraphs
 - Kind: toolkit
-- Version: 2
+- Version: 3
 - Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted

@@ -36,7 +36,7 @@ This lets spare antipodal target dimensions be converted into geometric control 
 
 - ID: relative_order_gauges_force_common_face_blocks
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

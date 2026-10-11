@@ -73,7 +73,7 @@ This is the appropriate place to apply a Connector/Sperner/Hex principle: any to
 
 - ID: ternary_memory_lift_is_the_flag_adjacency_graph_of_the_simplex
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

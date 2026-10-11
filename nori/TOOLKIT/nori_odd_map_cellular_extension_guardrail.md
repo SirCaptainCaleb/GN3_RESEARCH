@@ -12,7 +12,7 @@ Let K be a finite simplicial complex with a simplicial fixed-point-free involuti
 
 - ID: nori_odd_map_cellular_extension_guardrail
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

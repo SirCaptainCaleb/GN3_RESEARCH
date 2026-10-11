@@ -1,24 +1,8 @@
 # Article VII — Seven-coordinate structural and tournament methods
 
-## Article setting and orientation
-
-The single active research objective is to identify ONE intrinsic mathematical structure C and ONE precise conjecture U about C whose proof, through explicit specialization theorems, settles unrestricted NORI1 and the full ordinary boundary 3-tournament long-path problem. This Article supplies the ordered-triple tests of that one proposed structure and conjecture. A global strict edge order is one useful comparison model, but the full boundary family also includes non-edge-orderable tournaments. The structural challenge is to transfer a common actual-witness or compatibility principle from the NORI1 laboratory to original-vertex-simple tight paths.
-
-The current Section establishes genuine mathematical theorems about seven-direction endpoint and wing factorizations, admissible physical boundary-compatible three-face families, and edge-ordered/ac\-yclic boundary-tournament increasing paths under their precise hypotheses. Its chronological-saddle construction equates a full alternating increasing Hamilton path with adjacent-exchange extremality for a triangular edge-rank potential, and derives chain-prefix/minimax connector criteria. The full-class path/defect reduction measures the effect of bad ordered-triple windows on extracted monochromatic vertex-simple paths. These are useful affirmative structural statements, not a proof of the unrestricted conjecture.
-
-*Full Article composition: [source manuscript](../nori_article_vii_seven_coordinate.md).*
-
 ## Seven-coordinate endpoint constraints and tournament structure
 
-The research objective is ONE concrete mathematical structure C and ONE conjecture U(C) whose proof resolves both unrestricted NORI1 and the long vertex-simple monochromatic tight-path question for every ordinary boundary 3-tournament. This Section develops the ordered-triple structural test cases for that unification. A boundary 3-tournament assigns b(a,b,c) to each ordered triple of distinct original vertices with reversal oddness b(c,b,a)=1−b(a,b,c). No global edge order is assumed. Edge-order-realizable tournaments, characterized by an acyclic orientation of the line graph L(K_n), are a strict and useful fallback, not the full theorem.
-
-The surviving Subsections develop exact seven-direction endpoint pivots and wing factorizations, boundary-tour\-nament monochromatic orders under stated additional hypotheses, physical sparse-exterior transfers, and positive generically full geodesic existence for restricted classes. The strongest chronological-saddle manuscript establishes an exact coupling of an alternating increasing Hamilton path with extremization of a triangular edge-rank potential; its threshold-chain and hereditary minimax connector lemmas and full-class path/defect reduction remain published. These statements retain original-vertex simplicity and state exactly where acyclic comparisons or exterior-bit restrictions enter.
-
-*Full Section composition: [source manuscript](nori_seven_coordinate_structure.md).*
-
-### Seven-coordinate wing factorization and exact obstruction
-
-# A seven-coordinate wing decomposition
+### A seven-coordinate wing decomposition
 
 Fix a binary coloring \(c\) of ordered three-faces of \(Q_7\). No antipodal symmetry is required in this subsection. Consider the complete direction order \(p=(a,b,c,d,e,f,g)\), and denote its consecutive window colors by \(w_1,\ldots,w_5\).
 
@@ -56,9 +40,9 @@ Such a word has at most one change whenever either endpoint equals \(M\). Conseq
 
 Theorems 1–2 are local conclusions for unrestricted face colorings. They give a precise necessary condition on every seven-coordinate order in a hypothetical NORI counterexample. To prove dimension-seven closure, one must additionally use the antipodal-reversal relations between *different* orders to contradict the stipulated endpoint rigidity, or find an order whose wing minima sum to at most one.
 
-## Recent consequences and compatibility conditions
+#### Recent consequences and compatibility conditions
 
-# Four-core flat bridge: generalized seven-dimensional one-flipper closure
+### Four-core flat bridge: generalized seven-dimensional one-flipper closure
 
 Let \(B=A\sqcup M\), \(|A|=4\), \(M=\{u,v\}\), and \(V=B\sqcup\{g\}\). Let \(c\) be an antipodal-reversal-odd ordered-three-face coloring of \(Q_7\), and suppose \(g\) is a universal exterior flipper. Write \(c(F,\pi)=x_g(F)\oplus h(F_B,\pi)\) on every ordered face avoiding \(g\), where \(h\) is an induced, completely arbitrary ordered-three-face coloring of \(Q_B\), satisfying antipodal-reversal *evenness* by the symmetry transfer. No position independence is assumed for \(h\).
 
@@ -126,7 +110,7 @@ Repeating the same argument with the order \((a,b,c,g,d,v,u)\), using the second
 
 **Scope and significance.** Conditions (T) and (F) are structural hypotheses on the six-dimensional reversal-even residual. The theorem tolerates arbitrary nonlinear dependence on all exterior bits in that residual, provided (T) and (F) hold, and *complete* arbitrary dependence on exterior bits for every \(g\)-containing face. It strengthens the earlier prescribed sparse two-mark template: that template has a four-core \(A\) with its AAA-prefix colors both zero, and the explicit marked-tail pattern makes (T) hold. In an unresolved one-flipper counterexample, for every four-set \(A\) satisfying (T), **every** permutation of \(A\) must have at least one residual start whose two first-window colors differ; otherwise (F) would hold and the counterexample would collapse. This leaves an explicit residual dichotomy to attack.
 
-# One universal flipper with coordinate-only residual: full Q7 closure
+### One universal flipper with coordinate-only residual: full Q7 closure
 
 Let \(V=B\sqcup\{g\}\), \(|B|=6\), and let \(c\) be an antipodal-reversal-odd binary coloring of ordered three-faces of \(Q_7\). Assume
 
@@ -164,11 +148,11 @@ Indeed, write \(r=|A|\). If \(r\) is even, the symmetry-transfer theorem makes t
 
 **Research frontier.** The odd-flipper six-residual case has now been solved whenever the residual is position-independent. The remaining six-residual bottleneck is *genuine dependence on the fixed exterior face bits*. The finite classification explicitly isolates this distinction: reversal-even *coordinate-triple* obstructions are all two-mark, and every one of them lifts successfully. This does not prove arbitrary NORI in dimension seven or higher.
 
-## Consolidated endpoint-pivot theorem, with original proof
+#### Consolidated endpoint-pivot theorem, with original proof
 
 Former source `seven_coordinate_shared_pivot_endpoint_constraints`, exact version 2.
 
-## Endpoint pivots for ordered-face galleries
+#### Endpoint pivots for ordered-face galleries
 
 Let \(k\ge2\), and let \(c(F,\pi)\in\{0,1\}\) color ordered \(k\)-faces of a Boolean cube, independently of the traversal corner. On a geodesic segment with distinct direction order \(p_1,\ldots,p_m\), let \(w_i\) be its \(i\)-th consecutive ordered-\(k\)-face color. Fix all starting bits except those specified below.
 
@@ -199,9 +183,7 @@ When \(k=3\), the two cases are the six-move independent endpoint square and the
 
 ### Endpoint-tournament factorization and monochromatic orders
 
-# Endpoint-tournament factorization and monochromatic orders
-
-## Arbitrary middle-sign twists: a spanning theorem from oriented Hamilton paths
+#### Arbitrary middle-sign twists: a spanning theorem from oriented Hamilton paths
 
 Let \(V\) be a set of \(n\) coordinate directions, \(T\) an arbitrary tournament on \(V\), and \(s:V\to\{0,1\}\) *any* binary function. Set
 \[
@@ -261,7 +243,7 @@ Thus \(p\) is a spanning positive tight path. The physical cube path traversing 
 
 **External theorem used.** F. Havet and S. Thomassé, *Oriented Hamiltonian Paths in Tournaments: A Proof of Rosenfeld's Conjecture*, Journal of Combinatorial Theory, Series B **78** (2000), 243–273, DOI 10.1006/jctb.1999.1945. The published theorem has three small antidirected-path exceptions on 3, 5, and 7 vertices; there are no exceptions on at least eight vertices.
 
-## Two arbitrary middle-local tournament types: a linear guarantee
+#### Two arbitrary middle-local tournament types: a linear guarantee
 
 The preceding theorem assumes all middle-vertex comparison tournaments are a single tournament or its reverse. A different parity argument retains *two completely unrelated* comparison tournaments.
 
@@ -292,7 +274,7 @@ If \(a=b_0\), the equal-size interleaving already spans \(V\). If \(a=b_0+1\), i
 
 ---
 
-## Elementary all-dimensional theorem with one exceptional middle sign
+#### Elementary all-dimensional theorem with one exceptional middle sign
 
 Let \(V\) be a set of \(n\ge3\) coordinate directions, \(T\) an arbitrary tournament on \(V\), and \(s:V\to\mathbb F_2\) a function constant on \(V\setminus\{v\}\) for some \(v\in V\). Let \(t(a,c)\in\mathbb F_2\) be 0 when \(a\to c\) in \(T\) and 1 when \(c\to a\). Define the position-independent ordered-face coloring
 \[
@@ -324,7 +306,7 @@ All middle positions \(p_2,\ldots,p_{n-1}\) avoid \(v\), so this value is consta
 
 **Scope.** This solves a nontrivial all-dimensional subclass of coordinate-only, reversal-odd ternary colorings, including every endpoint-tournament labeling \(t(a,c)\) and every perturbation by a single exceptional middle direction. It does not treat general triangle-dependent ternary colorings or exterior-face-dependent NORI. The proof exhibits the potential usefulness of balanced two-path covers with prescribed extreme vertices as a replacement for one-switch endpoint repairs.
 
-# Facet monochromatic lifting and a face-dependent tournament-factorized class
+### Facet monochromatic lifting and a face-dependent tournament-factorized class
 
 **Lemma (monochromatic facet lifting).** Let \(n\ge4\), \(g\in[n]\), and let \(c\) be any binary coloring of ordered three-faces of \(Q_n\), without a symmetry assumption. If one facet \(H=\{x:x_g=\varepsilon\}\cong Q_{n-1}\) contains a full \((n-1)\)-direction geodesic all of whose ordered-three-face windows have the same color, then the full \(Q_n\) has an antipodal geodesic with at most one color change.
 
@@ -340,7 +322,7 @@ where \(t(a,d)=0\) for \(a\to d\) in some tournament on \([n]\setminus\{g\}\), \
 
 **Research role.** A single suitably structured facet suffices for full one-change closure. In particular, face-dependent behavior outside that facet and across the entering ordered-three-face window cannot spoil the construction. This is a route for extending monochromatic coordinate-only theorems to genuine face-dependent NORI families.
 
-## Recent consequences and compatibility conditions
+#### Recent consequences and compatibility conditions
 
 **Theorem.** There is a coordinate-only reversal-odd ordered-three-face coloring of Q_7 with no monochromatic six-direction geodesic in any coordinate facet. It nevertheless admits a full one-change geodesic. Thus the six-direction monochromatic-five-facet theorem cannot be extended by requiring a monochromatic (n-1)-facet in every dimension.
 
@@ -389,7 +371,7 @@ has word 00111.
 
 **Research implication.** Retain one-change facet witnesses as the induction state. Their compatibility on a common cyclic direction order can force full closure even when every monochromatic facet is absent. This example supports the cyclic-witness target and identifies a strict limitation of demanding monochromatic facet transfer at every stage.
 
-# Dimension-independent adjacent-order exchange law
+### Dimension-independent adjacent-order exchange law
 
 Let \(n\ge4\), \(x\in Q_n\), and \(p=(p_1,\ldots,p_n)\) be a permutation of the coordinate directions. For \(1\le i\le n-2\), let \(W_i(x,p)\) be the *actual* ordered three-face window of the full geodesic from \(x\) following \(p\), and let \(w_i(x,p)=c(W_i(x,p))\) for an arbitrary binary ordered-face coloring \(c\). For \(1\le i\le n-3\), write \(d_i(x,p)=w_i(x,p)\oplus w_{i+1}(x,p)\). Let \(\tau_kp\) interchange adjacent directions \(p_k,p_{k+1}\), where \(1\le k\le n-1\).
 
@@ -430,7 +412,7 @@ Thus the graph of full orders, with edges given by adjacent swaps, is the **perm
 
 **Research obligation.** This lemma gives a dimension-independent local move for a possible minimal-defect exchange/descent argument. It is not itself a decreasing-move theorem. A closure proof must show that the no-good-geodesic hypothesis, together with cross-root face-fiber incidence and antipodal reversal, forces either a strictly improving local exchange (possibly following a finite sequence of nonincreasing exchanges) or a topological obstruction to all local minima. Such a proof would apply uniformly to every dimension, unlike further Q7 subclass classifications.
 
-## Chronologically prescribed transitive tournaments: a rank-potential theorem and the coupled-parity obstruction
+#### Chronologically prescribed transitive tournaments: a rank-potential theorem and the coupled-parity obstruction
 
 A tempting strengthening of the two-parity factorization method is to replace one fixed comparison tournament by a tournament that varies with the *position* in a path. The correct transitive case has a simple exact solution. It still does not synchronize the two interleaved parity paths.
 
@@ -469,9 +451,7 @@ has **every triple centered in \(B\)** positive. Its remaining windows, centered
 
 ### Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments
 
-# Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments
-
-## Scope and principal transfer theorem
+#### Scope and principal transfer theorem
 
 Let \(V\) be an \(n\)-element coordinate set, \(n\ge3\). A **boundary 3-tournament** is a function \(b(a,b,c)\in\{0,1\}\) on ordered triples of distinct coordinates obeying \(b(c,b,a)=1-b(a,b,c)\). The corresponding direction-only coloring of genuine physical ordered 3-faces is
 \[
@@ -516,7 +496,7 @@ Choose any cube starting vertex \(x\) and traverse distinct coordinate direction
 
 **Length convention.** The edge-ordered increasing path has \(\ell\) edges and \(\ell+1\) distinct original vertices. These \(\ell+1\) distinct vertices become \(\ell+1\) cube coordinate directions. Thus there is no hidden loss through repeated original vertices, and there is no appeal to an arbitrary directed path of \(L(K_V)\).
 
-## What directed cycles can obstruct
+#### What directed cycles can obstruct
 
 **Corollary.** Any sequence of direction-only boundary 3-tournaments \(b_n\) whose longest monochromatic cube geodesic has \(o(n^{1-o(1)})\) length (in particular \(O(\sqrt n)\)) must have a **directed cycle in its line-graph comparison orientation** for all sufficiently large \(n\).
 
@@ -526,7 +506,7 @@ This is the contrapositive of the theorem. It gives a precise requirement for a 
 
 The converse is false: presence of a directed cycle says nothing by itself about the largest monochromatic simple path. It only obstructs an exact edge-order realization. The orientation and realizability correspondence are proved independently in the sibling manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability*.
 
-## Exact limitation: exterior dependence
+#### Exact limitation: exterior dependence
 
 The theorem applies to the **direction-only** coloring (1), and in particular to every edge-ordered complete graph. For a general physical coloring \(c(F,(a,b,c))\), even assuming
 \[
@@ -544,19 +524,19 @@ A sufficient **global-flatness hypothesis** for the proof is that one total edge
 \]
 This is stronger than separate fiberwise acyclicity. Identifying a weaker coherent-transport hypothesis under which (3) persists is an explicit structural problem with a clear mathematical payoff.
 
-## Relation to NORI-k switch amplification
+#### Relation to NORI-k switch amplification
 
 The unbounded-switch multilevel coloring of ordered physical 3-faces uses the reversal-even rule \(h(a,b,c)=h(c,b,a)\), so it violates the extra boundary symmetry (6). The present theorem gives a strong lower bound on **long monochromatic paths** for an acyclic subclass of the reversal-odd boundary-compatible colorings; it makes no assertion for boundary tournaments with directed cycles, and no assertion for arbitrary exterior-dependent colorings satisfying (6).
 
 In particular, the old NORI3 obstruction does not imply an edge-ordered increasing-path obstruction. The near-linear bound (3) is an application of the published Bucić–Kwan–Pokrovskiy–Sudakov–Tran–Wagner theorem, **not** a new lower bound for altitude. The contribution here is the exact incidence- and face-consistent transfer and its explicit boundary on possible counterexamples.
 
-## References
+#### References
 
 M. Bucić, M. Kwan, A. Pokrovskiy, B. Sudakov, T. Tran, A. Z. Wagner, *Nearly-linear monotone paths in edge-ordered graphs*, Israel Journal of Mathematics **238** (2020), 663–685. DOI: 10.1007/s11856-020-2035-7. arXiv:1809.01468.
 
 See also the companion NORI research manuscript *Scope of the distinguished-coordinate counterexamples and edge-order realizability* for the exact correspondence between boundary 3-tournaments and orientations of \(L(K_n)\).
 
-## Directed-pair rank rigidity and quantitative boundary defects
+#### Directed-pair rank rigidity and quantitative boundary defects
 
 The following rigidity result closes a natural attempt to enlarge the edge-ordered boundary-tournament class by assigning asymmetric scores to *ordered* pairs.
 
@@ -612,11 +592,9 @@ Summing over \(b\) counts at most three violating middle-vertex choices for each
 **Scope and consequence.** The proof holds for arbitrary asymmetric ordered-pair scores, arbitrary discrete ranking/tie patterns, and (by rank normalization) every totally ordered score set, including lexicographically ordered tuples. It is an exact no-go for transferring an \(O(\log n)\)-height *directed-pair strict-comparison* construction to an ordinary boundary 3-tournament. It does **not** imply global edge-orderability for arbitrary boundary 3-tournaments, because their line-graph comparison orientations can contain directed cycles. It makes no assertion about unrestricted exterior-dependent physical 3-face colorings or unrestricted NORI1. A full ordinary boundary theorem must exploit mechanisms beyond strict comparisons of directed-pair potentials.
 
 
-### Polynomial monochromatic geodesics from sparse triplewise exterior support
+### Long monochromatic NORI3 geodesics under sparse triplewise exterior dependence
 
-# Long monochromatic NORI3 geodesics under sparse triplewise exterior dependence
-
-## Theorem
+#### Theorem
 
 Let \(V\) be the \(n\) coordinate directions of \(Q_n\). Let \(c(F,(a,b,c))\in\{0,1\}\) color *physical ordered three-faces*. Assume **same-face reversal oddness**
 \[
@@ -645,7 +623,7 @@ L_{\max}(c)\ge1+\sqrt{(n-t-1)/2}\quad(n-t\ge3).
 
 Condition (R) is exactly the additional same-face reversal symmetry proposed for **boundary-compatible NORI3**. When the ordinary NORI law \(c(\bar F,\operatorname{rev}\pi)=1-c(F,\pi)\) also holds, (R) is equivalent to the additional antipodal invariance \(c(\bar F,\pi)=c(F,\pi)\). No antipodal hypothesis beyond (R) is needed for the theorem.
 
-## Lemma: robust boundary snake with selectively discarded terminal pairs
+#### Lemma: robust boundary snake with selectively discarded terminal pairs
 
 A **partial boundary 3-tournament** on \(N\) vertices has a set of available unordered triples. For every available triple, exactly one ordering of each same-middle reversal pair is a positive directed triple; unavailable triples have no positive orderings. For an unordered pair \(e=\{u,v\}\), let \(b(e)\) be the number of unavailable triples containing \(e\). Fix \(b\ge0\), call \(e\) *clean* when \(b(e)\le b\), and let
 \[
@@ -671,7 +649,7 @@ This proves (4). The positive tight path is *vertex-simple in the original \(N\)
 
 When \(b=0,\alpha=1\), (4) recovers the scrapbook's \(L\ge1+\sqrt{(N-1)/2}\). This robust version is useful even when many triples are unavailable, provided most terminal pairs have few unavailable extensions.
 
-## Random extraction: retain good triples and clean pairs
+#### Random extraction: retain good triples and clean pairs
 
 Assume \(d\ge1\). Choose each original direction independently with probability
 \[
@@ -709,7 +687,7 @@ Put \(z=L-1\). If \(z\ge\sqrt\mu\), the claimed bound follows. Otherwise \(z^2\l
 \]
 Since \(\sqrt\mu=(n/d)^{1/3}\), this proves the explicit estimate in (1).
 
-## Exact physical-fiber realization and root consistency
+#### Exact physical-fiber realization and root consistency
 
 Fix a single cube vertex \(x_0\in Q_n\) BEFORE orienting any available triple. For every good triple \(T\subseteq X\), the support \(S_T\) lies outside \(X\), so none of its influential fixed exterior bits ever changes along *any* cube path using directions from \(X\). Thus for every ordering \(\pi\) of \(T\), all actual physical faces with free directions \(T\) encountered by such paths have exactly the color determined by \(\pi\) and \(x_0|_{S_T}\), regardless of other exterior-coordinate bits. This defines one direction-only same-face reversal-odd tournament chart on the good triples. Omit the bad triples altogether.
 
@@ -717,7 +695,7 @@ By the robust snake lemma, there is a positive directed tight path \(u_1,\ldots,
 
 For \(d=0\), take \(X=V\) and apply the complete Devine–Milans snake theorem. For a common exterior support \(S\), choose \(X=V\setminus S\), freeze \(S\)-bits at \(x_0\), and apply the complete theorem on \(n-t\) directions. This proves (2)–(3). \(\square\)
 
-## Consequences, prior improvements, and boundary of applicability
+#### Consequences, prior improvements, and boundary of applicability
 
 This resolves a nontrivial intermediate structural class: **polynomial-length monochromatic paths survive both same-face reversal oddness and arbitrary triple-specific exterior interactions of bounded support**, even though no global exterior support is available. The earlier hypergraph-independent-set proof supplied only exponent \(1/6\). A first robust snake bound controlling missing triples per vertex improved it to \(1/4\). The selective-terminal-pair lemma above gives the current strongest exponent \(1/3\), making the earlier arguments valid but superseded.
 
@@ -725,11 +703,9 @@ For legal boundary-compatible NORI3, complement invariance implies that a face c
 
 **Source attribution.** The complete boundary-tournament \(1+\sqrt{(N-1)/2}\) terminal-pair bound is from R. C. Devine and K. G. Milans, *Tight paths in fully directed hypergraphs*, the supplied scrapbook, sections “Antisymmetric Tournaments” and “Boundary Tournaments.” The partial-tournament clean-pair lemma, probabilistic extraction, and physical-face transfer giving exponent \(1/3\) above are new to this manuscript.
 
-### Layered boundary snakes and a dense rank-sensitivity barrier
+### Layered boundary snakes and the dense rank-sensitivity barrier
 
-# Layered boundary snakes and the dense rank-sensitivity barrier
-
-## Main abstract theorem: one boundary tournament per step
+#### Main abstract theorem: one boundary tournament per step
 
 Let \(V\) be an \(n\)-element set. For every \(j\ge0\), choose **arbitrary**, possibly unrelated functions \(h_j(a,b,c)\in\{0,1\}\) on distinct ordered triples satisfying same-middle reversal oddness \(h_j(c,b,a)=1-h_j(a,b,c)\). Then there exist \(L\ge1+\sqrt{(n-1)/2}\) **distinct** vertices \(v_1,\ldots,v_L\) with \(h_{i-1}(v_i,v_{i+1},v_{i+2})=1\) for all \(1\le i\le L-2\).
 
@@ -741,7 +717,7 @@ For \(u,w\in U_r\), orient \(u\to w\) iff \(h_{r-2}(u,v,w)=1\). (Appending to an
 \]
 This proves the theorem; the resulting path is vertex-simple in \(V\), not merely a walk in the terminal-pair graph.
 
-## Physical face transfer: all exterior bits may matter
+#### Physical face transfer: all exterior bits may matter
 
 Let \(c(F,\pi)\) color physical ordered 3-faces of \(Q_n\), obeying \(c(F,\operatorname{rev}\pi)=1-c(F,\pi)\). Suppose for each ordered triple \(\pi\) the color depends on the fixed exterior vector only through its **Hamming weight**:
 \[
@@ -752,7 +728,7 @@ The \(h_j\) are arbitrary and reversal-odd, with no bound on exterior support or
 
 For legal NORI3, the combined antipodal-reversal law and separate same-face reversal oddness amount to antipodal invariance \(c(\bar F,\pi)=c(F,\pi)\). In (1) this holds precisely when \(h_j(\pi)=h_{n-3-j}(\pi)\). This defines a substantial subclass of boundary-compatible NORI3 allowing arbitrary nonlinear dependence on all \(n-3\) exterior coordinates. The sparse-triplewise-support theorem cannot address this subclass when the essential exterior support is full.
 
-## Partial layered tournament and selective terminal-pair robustness
+#### Partial layered tournament and selective terminal-pair robustness
 
 For \(j\in\{0,\ldots,n-3\}\), call an unordered direction triple \(T\) *rank-flat at layer \(j\)* if, for all six orderings of \(T\), the physical ordered-face color is identical over all exterior assignments with exactly \(j\) ones. Write \(B_j\) for the family of triples that are **not** rank-flat at layer \(j\). On rank-flat triples, define the constant chart \(h_j\); due to same-face reversal oddness this is a partial boundary tournament. Unavailable triples receive no orientations. For formal use beyond physical layer \(n-3\), extend charts arbitrarily to complete reversal-odd tournaments; no geodesic with distinct directions uses these extra layers.
 
@@ -784,7 +760,7 @@ L_{\max}(c)\ge1+\frac{\sqrt{b^2+2(n-1)}-b}{2}.
 \]
 In particular \(b=O(\sqrt n)\) still forces \(L_{\max}=\Omega(\sqrt n)\), with arbitrary physical exterior dependence on the exceptional triple faces.
 
-## Consequential obstruction for hypothetical logarithmic boundary-compatible colorings
+#### Consequential obstruction for hypothetical logarithmic boundary-compatible colorings
 
 Rearrange (2):
 \[
@@ -798,7 +774,7 @@ If a family of *boundary-compatible* legal physical NORI3 colorings has \(L_{\ma
 \]
 In words: for all but \(o(n^2)\) unordered direction pairs \(e\), there must be **some exterior Hamming-weight layer**, potentially depending on \(e\), at which more than \(b(n)\) choices of third direction yield genuinely rank-nonflat physical triples. For instance one may take \(b(n)=n/(\log n\log\log n)\). Thus any logarithmic obstruction preserving boundary tournaments must have **widely distributed identity-sensitive exterior dependence**, rather than merely global dependence on the number of exterior ones or sensitivity concentrated around a few pairs. This necessity does NOT construct such an obstruction or resolve unrestricted boundary-compatible NORI3.
 
-## Several exterior coordinate types
+#### Several exterior coordinate types
 
 If the directions are partitioned into \(t\) classes and the colors of faces with three free directions in each class depend on exterior bits only through **counts of ones per class**, choose the largest class \(D\), with \(m\ge\lceil n/t\rceil\). A cube geodesic starting at \(0^n\) using only \(D\) leaves other classes at exterior count zero and increases the active class exterior count by one at every triple window. The abstract layer theorem applied to \(D\) gives a genuine monochromatic path of length
 \[
@@ -808,11 +784,9 @@ This again permits dependence on arbitrarily many exterior bits.
 
 **Attribution and scope.** The complete boundary-tournament terminal-pair snake bound is the Devine–Milans scrapbook result. The layer-varying extension, the physical rank-homogeneous transfer, the selectively pruned layer-defect inequality, and the dense rank-nonflatness necessity are proved here. The independent sparse-support \(\Omega((n/d)^{1/3})\) result covers a different class. No claim of a universal square-root bound for fully arbitrary physical boundary-compatible NORI3 is made.
 
-### Generic full geodesics in physical boundary-compatible NORI3 and affine smoothing
+### Generic full monochromatic geodesics in physical boundary-compatible NORI3
 
-# Generic full monochromatic geodesics in physical boundary-compatible NORI3
-
-## Statement and distinction from the deterministic conjecture
+#### Statement and distinction from the deterministic conjecture
 
 A boundary-compatible NORI3 coloring on physical ordered 3-faces of Q_n satisfies BOTH
 \[
@@ -845,7 +819,7 @@ This is legal BC for every choice of the vectors. For n>=15, with probability at
 
 No theorem here claims the deterministic square-root lower bound for EVERY exterior-dependent boundary-compatible coloring. The Devine–Milans terminal-pair snake guarantees the square-root bound for ordinary direction-only boundary tournaments; our new results establish that generic exterior dependence, however global, is not itself an obstruction.
 
-## Lemma: independent arithmetic-progression full direction orders
+#### Lemma: independent arithmetic-progression full direction orders
 
 Let n>=5, and for each unit a of Z/nZ set
 \[
@@ -853,7 +827,7 @@ p^{(a)}=(0,a,2a,\ldots,(n-1)a)\pmod n.
 \]
 This is a permutation of ALL n cube coordinate directions. Its n-2 consecutive unordered triple windows are three-term arithmetic progressions \(\{j a,(j+1)a,(j+2)a\}\), whose common step is \(\pm a\). Such a three-element set has a UNIQUE middle vertex for a unit a: if a second vertex were its arithmetic midpoint, then \(3a=0\pmod n\), impossible for n>3 when a is a unit. Thus progressions arising from \(p^{(a)}\) and \(p^{(b)}\) can coincide as unordered triples only when \(a=\pm b\pmod n\). Choose one representative a from each pair \(\{a,-a\}\) of units. We obtain \(K=\varphi(n)/2\) FULL direction orders whose unordered consecutive-triple sets are PAIRWISE DISJOINT. In either of our random models, events depending on the face data of these respective orders are consequently independent.
 
-## Proof of Theorem A: complete physical-face second moment and Janson bound
+#### Proof of Theorem A: complete physical-face second moment and Janson bound
 
 Fix one full direction order p and one target word w of m=n-2 bits. Starting at a cube vertex x and traversing the n distinct directions in p order gives a true full antipodal geodesic. Because of BC antipodal invariance, starts x and \(\bar x\) give IDENTICAL window words in the same order p. Select one representative x from each of the \(M=2^{n-1}\) antipodal root pairs.
 
@@ -906,7 +880,7 @@ Raise this bound to the K independent full-order trials to obtain (A2). If n is 
 \]
 proving Corollary A3. All root and face comparisons here use ACTUAL physical exterior assignments and their precise antipodal identifications; the paths always use n distinct coordinates.
 
-## Proof of Theorem B: root-map surjectivity and generic affine row rank
+#### Proof of Theorem B: root-map surjectivity and generic affine row rank
 
 For each ordered face, reversing its free tuple flips the boundary-tournament base bit b but preserves the affine coefficient vector, and complementing its exterior bits leaves the affine correction unchanged because the vector has even parity. Hence (B1) satisfies BC on every physical ordered face.
 
@@ -933,7 +907,7 @@ For nonempty J⊆{1,...,m}, the XOR \(\bigoplus_{i\in J}A_i\) is uniform on \(\s
 \]
 So the full-rank probability for ANY fixed full direction order is greater than 0.45. The K=φ(n)/2 arithmetic-progression orders above use disjoint unordered triples and hence independent coefficient vectors. Their row-full-rank events are independent. All fail with probability less than \(0.55^K\). On the complementary event, at least one order realizes ALL window words with exactly four roots each by (B2). This proves Theorem B.
 
-## Relation to established work and open frontier
+#### Relation to established work and open frontier
 
 The deterministic affine change-vector and syndrome framework, including exact root counts and a corank-at-most-one guarantee for one-switch words, already appears in the earlier NORI Subsection *Exact change-vector fibers and affine obstruction certificates*. It is NOT claimed as an original theorem here. This manuscript's distinct contributions are the independent arithmetic-progression full-order packing, the physical antipodal-orbit second moment/Janson results for arbitrary nonlinear BC colorings, and the quantitative adversarial-base random-affine smoothing theorem.
 
@@ -941,13 +915,11 @@ Devine–Milans (supplied *Scrapbook*, “Antisymmetric Tournaments”) proves E
 
 **Verification.** Independent GF(2) rank simulations verified the order-packing triple disjointness and generic full-row-rank rates on n=9,11,13,15,17,19,21,25 (300 trials each). Independent face-orbit sampling checked the full physical nonlinear model in n=7,8,9,10 (500 trials each). A further exhaustive-root linear-algebra implementation verified the previously known corank-to-switch consequence for 500 random face-affine matrices in every n=5,...,11. These tests supplement, rather than replace, the exact proofs above.
 
-### Endpoint-density snakes and bounded algebraic degree
-
-# Endpoint-density snakes and bounded-degree physical NORI3
+### Endpoint-density snakes and bounded-degree physical NORI3
 
 Let V be the n>=3 coordinate directions. Assume a binary coloring c(F,(u,v,w)) of genuine ordered physical three-faces satisfies **separate same-face reversal oddness** c(F,(w,v,u))=1-c(F,(u,v,w)). Combined with ordinary NORI antipodal-reversal oddness, this is exactly the boundary-compatible class with antipodal invariance. Antipodal invariance is not needed in our proof.
 
-## Theorem 1: endpoint-density terminal-pair snake
+#### Theorem 1: endpoint-density terminal-pair snake
 
 Call an r-direction-distinct rooted cube geodesic *positive* when all r-2 consecutive ordered-three-face windows have color 1. Paths of length two are positive vacuously. A negative geodesic reverses to a positive one along the **same physical faces** under same-face reversal oddness; thus the maximal positive length L is the maximal monochromatic length.
 
@@ -969,13 +941,13 @@ Choose u of outdegree at least (|U_r|-1)/2 in this tournament, and a positive ma
 
 The same observation gives the classical Devine--Milans sqrt(n) snake theorem when colors are direction-only: each maximizing terminal sequence then works at EVERY cube endpoint and delta=1.
 
-## Lemma: root multiplicity for low-degree Boolean equations
+#### Lemma: root multiplicity for low-degree Boolean equations
 
 If f_1,...,f_t are Boolean polynomial functions on F_2^n of algebraic normal form degree <=d and have one simultaneous root with f_i=1 for all i, then they have at least 2^{max(n-dt,0)} such roots.
 
 **Proof.** The simultaneous-satisfaction indicator P(x)=product_i f_i(x) is a nonzero multilinear Boolean polynomial of degree at most dt (reducing x_i^2=x_i). The classical Reed--Muller minimum-weight lemma asserts that a nonzero degree-at-most-D polynomial on n Boolean variables is nonzero at least 2^{n-D} times when D<=n, and at least once otherwise. An elementary proof writes P(x',x_n)=x_n Q(x')+R(x'). If Q=0 the support is twice the support of nonzero R; if Q!=0, for every x' with Q(x')=1 exactly one of P(x',0),P(x',1) is 1, and deg Q<=D-1. Induction supplies at least 2^{n-1-(D-1)}=2^{n-D} such x'. QED.
 
-## Theorem 2: logarithmic geodesics under arbitrarily dense bounded algebraic degree
+#### Theorem 2: logarithmic geodesics under arbitrarily dense bounded algebraic degree
 
 Suppose additionally that, for every ordered free triple pi, the color c(F,pi) is a Boolean polynomial of degree at most d in the actual n-3 fixed exterior coordinates of F, with no restriction on WHICH exterior bits appear and no support bound. Then the maximum monochromatic cube geodesic length L satisfies
 \[
@@ -995,7 +967,7 @@ for EVERY pair e, whence delta>=2^{-d(L-2)}. Substitution in Theorem 1 yields (2
 d(L-2)+2log_2(L-1)>=log_2((n-1)/2),
 and (3) follows by bounding the log(L-1) term with 2log log n+O(1), unless L is already greater than 2log n. QED.
 
-## Structural fallout and precise limits
+#### Structural fallout and precise limits
 
 Equation (1) is an all-dimensional physical-root coherence criterion: if globally maximal positive terminal-pair paths have a constant-average density of possible cube endpoints, the Devine--Milans sqrt(n) path bound survives in full physical boundary-compatible NORI3. Failure of such a long-path bound requires significant localization of maximal terminal paths in the endpoint cube, not merely variation of local face colors.
 
@@ -1011,7 +983,7 @@ The result uses same-face reversal oddness essentially. It does not establish a 
 
 **Checks:** Direct exhaustive evaluation of randomly generated legal affine boundary-compatible physical colorings in dimensions n=4,5,6 verified the endpoint-density inequality and the root-multiplicity claim, using actual physical exterior-bit evaluation. The proofs do not depend on these computations.
 
-## Corollary: cube-translation symmetry and global coefficient rank restore square-root paths
+#### Corollary: cube-translation symmetry and global coefficient rank restore square-root paths
 
 Let H be a subgroup of the F_2^n translation group acting on Q_n. Suppose c(F+h,pi)=c(F,pi) for EVERY actual physical ordered face and h in H. Translating a globally maximizing positive terminal-path witness for any unordered pair e by all h in H preserves its positive colors and terminal order, while producing |H| DISTINCT ending cube vertices. Consequently the maximizing-endpoint density obeys delta>=|H|/2^n. The endpoint-density theorem gives
 \[
@@ -1030,9 +1002,7 @@ Proof uses exactly the same physical-fiber translation for every window, not jus
 
 ### Coupled chronological saddle potentials and checkerboard obstructions
 
-# Coupled chronological saddle potentials and checkerboard obstructions
-
-## 1. An exact simultaneous-compatibility criterion
+#### 1. An exact simultaneous-compatibility criterion
 
 Let \(A=\{a_1,\dots,a_p\}\) and \(B=\{b_1,\dots,b_q\}\) be the parts of an edge-ordered complete bipartite graph, with \(p=q\) or \(p=q+1\). Write \(w(a,b)\) for the distinct numerical ranks of its edges. For an ordering \(A^\ast=(a_1,\dots,a_p)\) and \(B^\ast=(b_1,\dots,b_q)\), define
 \[
@@ -1066,7 +1036,7 @@ Thus the two chronological tournament constraints admit an exact **pure local sa
 
 The criterion uses only ranks of edges between \(A\) and \(B\) and makes no assumption on edges within the two parts. It therefore transfers directly to the edge-order-generated ordinary boundary 3-tournament on an interleaving of those directions. For physical cube three-faces the transfer is valid for direction-only colors, where every exterior fiber has the same chart.
 
-## 2. Threshold chain graphs and the two-by-two obstruction
+#### 2. Threshold chain graphs and the two-by-two obstruction
 
 Call a \(2\times2\) submatrix of the weight matrix **checkerboard-obstructed** when the two entries on one diagonal are both smaller than the entries on the other diagonal. This includes the symmetric case with the roles of the diagonals reversed. Equivalently, its two smallest edges are disjoint. An initial edge segment is its set of smallest \(t\) edges, and a **chain graph** means a bipartite graph with nested neighborhoods on either side, equivalently no induced \(2K_2\).
 
@@ -1076,7 +1046,7 @@ Call a \(2\times2\) submatrix of the weight matrix **checkerboard-obstructed** w
 
 On an obstructed \(K_{2,2}\), no alternating spanning path has strictly increasing ranks: the first and last edges in any three-edge path are disjoint, hence constitute one diagonal; its middle edge belongs to the other diagonal.
 
-## 3. A hereditary minimax connector lemma
+#### 3. A hereditary minimax connector lemma
 
 **Theorem 3 (row-maximum / column-minimum pivot).** Let \(M\) be a real matrix whose every \(2\times2\) submatrix is checkerboard-free. There exists an entry \(M_{ab}\) which is simultaneously a maximum in row \(a\) and a minimum in column \(b\). The same conclusion holds in every nonempty submatrix.
 
@@ -1103,7 +1073,7 @@ As finite evidence, exhaustive enumeration of all \(6!\) orders of \(K_{3,2}\) i
 
 
 
-## 6. A full-class path/defect reduction
+#### 6. A full-class path/defect reduction
 
 Let \(h\) be any ordinary boundary 3-tournament on \(N\) vertices (with no global-edge-order hypothesis), and let \(p=(p_1,\dots,p_N)\) be a permutation. Define the number of bad windows relative to the target color 1 by
 \[
@@ -1133,6 +1103,6 @@ Consequently at most \(2\sqrt N/c\) blocks are removed. Concatenate their vertex
 
 The triangular potential (1) applies specifically to globally edge-ordered instances, whereas the defect variable (8) is meaningful in the **full** ordinary boundary class. Their relationship is a candidate direction for research, not an asserted transfer to unrestricted NORI1: the latter requires independent physical-edge and root-fiber compatibility.
 
-## Status and significance
+#### Status and significance
 
 Theorems 1, 3, 4, Propositions 2, 5 and Lemmas 6–7 are proved with exact hypotheses; the chain-prefix Hamilton conjecture remains OPEN. This package isolates a joint local-saddle mechanism, a genuine four-local obstruction, a probabilistic barrier to extracting clean submatrices, and a quantitative route by which stronger coupling could improve the full ordinary-boundary lower bound. No theorem here settles unrestricted NORI1 or the Hamilton/long-path problem for every ordinary boundary 3-tournament.

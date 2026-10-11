@@ -87,7 +87,7 @@ A one-change Hamilton order asks for a chamber in which the oriented triangle si
 
 - ID: ternary_nor_decomposes_into_triangle_orientation_and_defect_vertex
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

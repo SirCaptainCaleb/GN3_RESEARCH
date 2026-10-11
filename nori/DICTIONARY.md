@@ -1,19 +1,99 @@
-## Foundations
+## Boundary Tournaments
 
-antipodal reversal of a geodesic: For an oriented length-three cube geodesic P=(x0,x1,x2,x3), its antipodal reversal is J(P)=(bar x3,bar x2,bar x1,bar x0).
-  Note: This—not ordinary reversal—is the NORI coloring involution.
+boundary 3-tournament: A function b on ordered triples of distinct vertices with b(c,b,a)=1−b(a,b,c).
+  Note: No global ordering of graph edges is required.
+
+comparison digraph: The digraph on unordered pairs of a boundary 3-tournament's vertices with an arc {a,b}→{b,c} when a,b,c are distinct and b(a,b,c)=1.
+
+direction-only coloring: An ordered-three-face coloring c(F,(a,b,c))=b(a,b,c), independent of the face's fixed coordinates.
+
+edge-orderable boundary tournament: A boundary 3-tournament b for which a strict total order < of unordered vertex pairs satisfies b(a,b,c)=1 if and only if {a,b}<{b,c}.
+  Note: Equivalent to acyclicity of the comparison digraph.
+
+monochromatic tight path: A sequence of distinct vertices whose consecutive ordered triples have one common value under a binary boundary 3-tournament coloring.
+
+tight path: A sequence (v_1,…,v_m) of distinct vertices such that every consecutive ordered triple is a hyperedge of the specified directed 3-uniform hypergraph.
+  Note: Distinctness is in the original vertex set.
+
+## Conjectures
+
+NORI1: The k=1 case of NORI_K: binary colorings of cube edges with c(bar e)=1−c(e). The open NORI1 full-geodesic conjecture asserts that every such coloring of Q_n admits a monochromatic antipodal geodesic.
+  Note: The coloring class NORI1 and the conjecture about it are distinct.
+
+NORI2: The k=2 case of NORI_K: binary colorings of ordered two-faces (F,π) satisfying c(bar F,rev π)=1−c(F,π).
+  Note: NORI2 designates the class, not any proposed path-length or switch bound.
+
+NORI3: The k=3 instance of NORI_K: binary colorings c(F,π) of three-dimensional faces with ordered free coordinates and c(bar F,rev π)=1−c(F,π).
+  Note: NORI3 names this class, not a conjecture. The original universal assertion that some full antipodal geodesic has at most one color change was refuted in Q9. More strongly, some NORI3 colorings have no monochromatic coordinate-distinct geodesic longer than O(log n), by the two-sentinel antichain theorem valid for each fixed k≥3.
+
+## Constructions
+
+sentinel coordinate: A distinguished cube coordinate whose role in the free directions or fixed bits separates cases of a coloring construction.
+  Note: Used in the Q9 counterexample.
+
+## Cube Geometry
+
+antipodal face: The face bar F is obtained from a face F by complementing every fixed coordinate; the free-coordinate set is unchanged.
+
+antipodal geodesic: An n-edge path in Q_n from x to its bitwise complement bar x, changing each coordinate once.
+  Note: Specify its start vertex and direction order when needed.
+
+antipodal reversal of a geodesic: The map (x_0,…,x_m)↦(bar x_m,…,bar x_0).
+  Note: Reverses direction order and complements the face.
+
+color change: A position between adjacent entries of a binary color word at which the values differ; synonymous with switch.
+
+color word: The sequence of colors of consecutive ordered k-face windows along a directed cube geodesic.
+  Note: For an m-edge path, m−k+1 windows exist when m≥k.
+
+exterior coordinates: The coordinates fixed on a cube face, complementary to its free-coordinate directions.
+
+ordered three-face: A three-dimensional cube face F together with an ordering of its three free directions.
+  Note: No traversal corner is distinguished.
+
+ordered-three-face antipodal coloring: A binary function c(F,π) on ordered three-faces with c(bar F,rev π)=1−c(F,π).
+  Note: The NORI3 coloring class.
+
+root: The first vertex of a directed cube geodesic.
+  Note: Root-dependent assertions must say whether it is prescribed.
+
+## Cube Models
+
+NORI switch number S_3(n): S_3(n)=max_c min_P #{i:c_i(P)≠c_{i+1}(P)}, where c ranges over NORI3 colorings and P over antipodal geodesics of Q_n.
+  Note: A property of the k=3 coloring class.
+
+NORI_K: For 1≤k≤n, the class of binary colorings c(F,π) of pairs comprising a k-dimensional face F of Q_n and an ordering π of its k free coordinate directions, satisfying c(bar F,rev π)=1−c(F,π). A length-n antipodal geodesic has n−k+1 consecutive ordered k-face windows.
+  Note: NORI_K names the coloring class, not a conjecture; NORIK is synonymous. The discarded universal one-switch assertion concerns the k=3 case. For every fixed k≥3 and n≥k+2, the two-sentinel antichain construction supplies a coloring with no monochromatic coordinate-distinct geodesic longer than 3m+3k−4, where m=min{d≥2: binom(d,floor(d/2))≥n−2}=O(log n). Its proof is preserved in the foundational Section of Article I.
+
+NORIK [alias -> NORI_K]: 
+  Note: Short spelling of NORI_K.
+
+## Foundations
 
 length-three cube geodesic: An ordered four-vertex path in Q_n crossing three distinct coordinate directions.
   Note: A colored object is four cube vertices, not a triple of coordinate labels.
 
-NORI conjecture: Every binary coloring of ordered three-dimensional cube faces satisfying antipodal face complement plus reversal of free-coordinate order admits an antipodal geodesic with at most one color change across consecutive ordered three-faces.
-  Note: This replaces the false unrestricted based-window conjecture.
+## Local Geometry
 
-NORI odd coloring: A coloring c of all directed length-three geodesics of Q_n such that c(J(P))=1-c(P) for every geodesic P.
-  Note: Historical definition of unrestricted based-window odd coloring; NOT the active NORI coloring class. Rank parity refutes its associated conjecture.
+certified edge: A cube edge lying on at least one monochromatic four-edge geodesic for the specified ordered-three-face coloring.
 
-ordered three-face: A three-dimensional face of the Boolean cube together with an ordering of its three free coordinate directions.
-  Note: The traversal corner is immaterial.
+dead edge: A cube edge lying on no monochromatic four-edge geodesic for the specified ordered-three-face coloring.
 
-ordered-three-face antipodal coloring: A binary coloring c(F,pi) of three-dimensional cube faces with ordered free coordinates, satisfying c(bar F,rev pi)=1-c(F,pi).
-  Note: Current NORI class; colors may vary between faces but not between initial corners of one face with fixed coordinate order.
+## Terminology
+
+NORI conjecture [alias -> NORI3]: 
+  Note: Historical alias for the refuted unrestricted one-switch assertion concerning NORI3; it is not synonymous with the class NORI3.
+
+NORI odd coloring: Ambiguous historical term for a coloring of directed three-edge windows rather than of ordered cube faces.
+  Note: Specify the model.
+
+## Prohibited
+
+actual [prohibited]: 
+  Note: Rhetorical modifier in compositions; express the mathematical claim instead.
+
+exact [prohibited]: 
+  Note: Filler modifier in compositions; specify the equation or hypothesis instead.
+
+physical [prohibited]: 
+  Note: Redundant modifier in compositions; name the face, edge, or path in the definition.

@@ -1,24 +1,8 @@
 # Article VIII - Antipodally odd edge colorings
 
-## Article setting and orientation
-
-The unrestricted NORI1 problem remains open for arbitrary antipodally odd colorings of undirected physical cube edges. Within NORI's current research direction, it serves as a rich physical-edge laboratory for discovering one intrinsic object class C and one conjecture U(C), whose witnesses also yield long original-vertex-simple monochromatic tight paths in ordinary boundary tournaments. Its significant unconditional results already include the full affine-span theorem for direction-indexed colors along complete antipodal geodesics and universal simultaneous prescription on three selected directions.
-
-The multifacet bridge establishes an exact dimension-prescription equivalence: for each k, general one-switch geodesic closure in an arbitrary k-cube corresponds to prescribing arbitrary colors on any k selected directions in every larger antipodally odd physical-edge cube. With the established finite-dimensional input, this proves universal seven-direction prescription. None of these theorems, by itself, supplies an all-monochromatic full geodesic in arbitrary dimension.
-
-*Full Article composition: [source manuscript](../nori_article_viii_edges.md).*
-
 ## Central edge carriers and antipodal topology
 
-The physical-edge NORI1 family supplies the toy laboratory for discovering ONE intrinsic object class C and ONE precise conjecture U(C) intended to settle both original problems. Its genuine positive theorems hold independently of any affine modeling hypothesis. Full antipodal geodesic color-profile vectors have affine span equal to the entire binary direction-color space, and every choice of colors on three prescribed original directions occurs on a full geodesic. These results do not yet guarantee the one completely constant color vector.
-
-The multifacet bridging theorem identifies unrestricted k-dimensional one-switch closure with simultaneous prescription on any k selected directions in all larger antipodally odd cubes, preserving physical edge identities. In particular, established dimension-eight closure input yields universal seven-direction prescription; the unrestricted eight-direction case remains open under the theorem's stated equivalence.
-
-*Full Section composition: [source manuscript](nori_edge_central_carriers.md).*
-
-### Full-geodesic color profiles span the entire binary space
-
-# The full-geodesic color-profile span theorem for unrestricted NORI1
+### The full-geodesic color-profile span theorem for unrestricted NORI1
 
 Let \(n\ge2\) and let \(c_i(u)\in\mathbb F_2\) be the color of the **physical undirected** edge \(\{u,u\oplus e_i\}\) of the Boolean cube \(Q_n\). Assume the exact NORI1 conditions
 \[
@@ -114,9 +98,7 @@ Thus the result is not merely an existential use of linear algebra: the proof is
 Full affine **span** of \(\mathcal W(c)\) does not imply \(\mathcal W(c)=\mathbb F_2^n\), nor that either constant vector \(0^n\) or \(1^n\) is attained. Full monochromatic NORI1 remains open. The precise missing implication is an additional *joint higher-order compatibility theorem* raising these independent parity separations and two-coordinate prescriptions to an all-coordinate word realization (or merely a monochromatic full word). The theorem also makes no claim about unrestricted ordinary boundary 3-tournaments; there the colored objects are ordered triples, and the square-gradient identity of physical edges has no direct analogue.
 
 
-### Universal three-direction edge-color prescription
-
-# Universal three-direction prescription for unrestricted antipodally odd cube-edge colorings
+### Universal three-direction prescription for unrestricted antipodally odd cube-edge colorings
 
 **Theorem.** Let \(n\ge3\) and let \(c_i(x)\in\mathbb F_2\) color each *physical undirected* direction-\(i\) edge of \(Q_n\), satisfying
 \[
@@ -155,11 +137,9 @@ But these are exactly the colors of the first and second edges in the original p
 
 **Consistency check (not used in proof).** Direct enumeration of all \(2^{16}\) legal physical antipodally odd edge colorings of \(Q_4\) found complete four-bit profile coverage; separate binary-integer feasibility tests found no obstruction to triple prescription in dimensions five, six, and seven. The argument above is valid in every dimension independently of these checks.
 
-### Antipodal multifacet bridge and seven-coordinate universality
+### Antipodal multifacet bridging: an exact localization theorem for unrestricted NORI1
 
-# Antipodal multifacet bridging: an exact localization theorem for unrestricted NORI1
-
-## Statement and historical context
+#### Statement and historical context
 
 Let \(k\ge2\). Define \(B_k\) to be the **Leader–Long/Feder–Subi geodesic one-switch assertion in dimension \(k\)**:
 
@@ -180,7 +160,7 @@ In particular, the property that *every* legal antipodally odd physical-edge col
 
 The implication \(B_k\Rightarrow P_{n,S}\) uses **all** \(n-k\) exterior directions as a single antipodal bridge between opposite physical \(k\)-faces; no colors along the bridge need to be specified.
 
-## Proof of the forward implication
+#### Proof of the forward implication
 
 Assume \(B_k\). Fix \(n>k\), \(S\), a legal physical antipodally odd edge coloring \(c\) of \(Q_n\), and an arbitrary target \(t=(t_i)_{i\in S}\).
 
@@ -206,7 +186,7 @@ Now construct a **genuine full \(n\)-direction cube geodesic**, starting at \((u
 
 All \(n\) directions are used exactly once, so the constructed path is a genuine full antipodal geodesic. On its \(U\)-edges, the lower-facet formula (2) and the undirected reversal of the 0-block give actual \(c\)-color \(t_i\). On its \(V\)-edges, each upper-facet edge is the **global cube antipode** of the corresponding lower-facet physical edge of \(R\) (after projecting the \(Q_S\)-antipodal reversal); its actual \(c\)-color is therefore the complement of the original lower color \(d_i\oplus t_i=1\oplus t_i\), namely \(t_i\). The intervening \(D\)-edges have arbitrary colors, which do not affect the required prescription. Thus \(P_{n,S}\) holds. \(\square\)
 
-## Proof of the reverse implication
+#### Proof of the reverse implication
 
 Assume \(P_{n,S}\). Let \(d\) be **any** arbitrary binary coloring of the undirected edges of \(Q_k\). Pick a distinguished exterior direction \(s\in D=[n]\setminus S\). Define a physical edge coloring \(c\) of \(Q_n\) using \(d\), with \(u\in Q_S\), \(z\in Q_D\), and one distinguished original coordinate \(i_0\in S\):
 
@@ -235,7 +215,7 @@ uses every \(S\) direction exactly once and changes \(d\)-color **at most once**
 
 **Additional switch-count transfer.** The forward proof works without assuming the \(d\)-geodesic has only one change. Given an arbitrary \(d\)-antipodal geodesic with \(r\ge1\) switches, choose the \(U|V\) split at **any one of its color changes**. Reversing the first block preserves its internal switch count; antipodally reversing and complementing the second block preserves its internal switch count; the chosen seam changes from a switch to a match. Hence the selected-direction color word on the resulting \(Q_n\) full geodesic, compared with any prescribed directionwise target \(t\), has exactly **\(r-1\)** switches. For \(r=0\), place all \(S\)-directions on one side of the exterior bridge; the selected word remains constant. Thus any upper bound on switches in arbitrary \(k\)-cube colorings transfers to a one-smaller bound for the **selected** direction word of every larger NORI1 coloring (not to the full \(n\)-edge color word, whose exterior bridge colors are uncontrolled).
 
-## Consequence: universal seven-direction color prescription
+#### Consequence: universal seven-direction color prescription
 
 **Corollary 2 (all \(n\): every seven selected colors are realizable).** For every dimension \(n\ge8\), every legal antipodally odd physical-edge coloring of \(Q_n\), every set \(S\subseteq[n]\) of size \(k\le7\), and every prescribed color vector \(t\in\mathbb F_2^S\), there exists a genuine **full \(n\)-edge antipodal geodesic** whose \(k\) selected edges have **exactly** the specified colors.
 

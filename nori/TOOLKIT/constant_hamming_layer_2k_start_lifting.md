@@ -42,7 +42,7 @@ The assertion counts starts making the *exterior Hamming weight* constant. Other
 
 - ID: constant_hamming_layer_2k_start_lifting
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

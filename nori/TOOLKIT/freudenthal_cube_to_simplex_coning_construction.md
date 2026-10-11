@@ -76,7 +76,7 @@ The next question is not whether the cube completion is a simplex: it is. The ne
 
 - ID: freudenthal_cube_to_simplex_coning_construction
 - Kind: toolkit
-- Version: 2
+- Version: 3
 - Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted

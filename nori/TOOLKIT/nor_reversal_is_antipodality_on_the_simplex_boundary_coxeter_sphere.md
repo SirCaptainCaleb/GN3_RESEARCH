@@ -38,7 +38,7 @@ This places the exact NOR obstruction in a standard setting for Tucker/Ky Fan, e
 
 - ID: nor_reversal_is_antipodality_on_the_simplex_boundary_coxeter_sphere
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
