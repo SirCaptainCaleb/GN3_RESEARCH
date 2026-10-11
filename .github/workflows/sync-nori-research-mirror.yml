@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: revision 1250 final research-notes artifact and lookup freshness
+# NORI assembled publication: publish negative-result note-default editorial guidance
 
 on:
   workflow_dispatch:
