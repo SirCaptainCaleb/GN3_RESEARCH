@@ -368,7 +368,7 @@ def api_text(schema: str) -> str:
 
 ## Startup and reading
 - `nori.boot()` once per independent conversation only. Reuse its `session_id` for every subsequent write. In continued sessions call `nori.status()` and `nori.changes(snapshot_revision, null, 100)`.
-- Read `OVERVIEW.md`, `KNOWN_OBSTRUCTIONS.md`, all eight Article compositions, and the relevant Section/Subsection manuscripts. `nori.search(query, filters := {})` searches **current composed manuscript text**, overview and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
+- Read the active Article compositions and relevant Section/Subsection manuscripts, including the curated known-obstructions Appendix inside the manuscript when pertinent. `nori.search(query, filters := {})` searches current composed manuscript text and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
 ## Research notes: selective non-manuscript memory
@@ -447,101 +447,12 @@ def build(schema: str):
         key=lambda d: (d.get("position") is None, d.get("position") or 0, d.get("id") or "")
     )
 
-    write(root / "OVERVIEW.md", doc_md(overview) if overview else "# Overview\n\nNo overview.")
+    if schema != "nori":
+        write(root / "OVERVIEW.md", doc_md(overview) if overview else "# Overview\n\nNo overview.")
     write(root / "GUIDE.md", doc_md(guide) if guide else "# Guide\n\nNo guide.")
     write(root / "REFLEXES.md", doc_md(reflexes) if reflexes else "# Research Reflexes\n\nNo reflexes.")
     write(root / "DICTIONARY.md", dictionary_text(data["dictionary"]))
     write(root / "API.md", api_text(schema))
-    if schema == "nori":
-        # Shared GUIDE.md and REFLEXES.md are supplied exclusively by universal_documents.
-        # Project-specific research state and startup instructions belong in NORI data,
-        # the live boot/help functions, and the generated project worker prompt.
-        appendix = latest_composition(data, "subsection", "appendix_known_obstructions_to_proposed_nori_mechanisms")
-        if appendix:
-            write(root / "KNOWN_OBSTRUCTIONS.md", appendix.get("body") or "")
-        write(root / "WORKER_PROMPT.md", """# NORI research worker
-
-You are an independent mathematician studying surviving NORI problems after the unrestricted grand conjecture was disproved.
-Use Supabase RESEARCH (`fewmvjslkhoygixiimgn`), schema `nori`.
-In a new conversation begin with `select * from nori.boot();` and preserve
-its session_id. In this continuing conversation reuse the existing session_id;
-refresh with `nori.status()` and `nori.changes(...)`.
-
-Read BOOT.md, OVERVIEW.md, GUIDE.md, REFLEXES.md, KNOWN_OBSTRUCTIONS.md,
-API.md and all eight Article compositions; investigate relevant Sections and
-Subsections, especially the legal Q9 counterexample, multilevel switch amplification,
-and self-dual Devine-Milans logarithmic-path construction.
-The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
-Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
-The original universal square-root monochromatic-path target is also false.
-
-The grand research objective is ONE CONCRETE STRUCTURE and ONE CONJECTURE
-about that structure whose resolution settles BOTH original problems:
-(A) the unrestricted, antipodally odd physical-edge NORI1 conjecture;
-(B) the target long monochromatic VERTEX-SIMPLE tight-path statement
-    for all ordinary reversal-odd boundary 3-tournaments, not merely
-    those arising from global edge orders.
-
-Invent the class C of objects, a SINGLE intrinsic witness/property W(X),
-and the exact quantified statement U: every admissible X in C has W(X)
-(or its mathematically specified quantitative version). Prove honest
-maps from EVERY instance of A and EVERY instance of B into C. Prove
-the deductions W(X(c)) => the NORI1 full monochromatic antipodal
-cube geodesic, and W(X(b)) => the required ORIGINAL-VERTEX-SIMPLE
-monochromatic tight path of the stated length. Explain why ONE
-mechanism certifies both; a tagged disjoint union, a conjunction of
-unrelated conjectures, or two separate case proofs is not enough.
-Give the actual logical implications. If disproving U would not
-also resolve both originals, expose that asymmetry and strengthen
-the formulation if possible rather than claiming a full resolution.
-The choice of C and U is the main open design problem.
-
-
-NORI1 is a productive TOY LABORATORY. Explore its physical squares,
-root consistency, antipodal pairings, full-geodesic witnesses and
-restricted examples to discover the right general statement. Explain how
-a lemma from that toy model could extend to the ordered-triple setting
-and what extra seam/compatibility difficulty must be overcome.
-Independent rigorous NORI1 results are useful background, but orient
-the new research toward the common structural proof.
-
-Test each proposed shared mechanism against ordinary boundary tournaments,
-including non-edge-orderable examples. Edge-ordered K_n tournaments
-are helpful examples and fallback models, but the target boundary
-family includes every reversal-odd triple coloring. Ensure any inferred
-path is vertex-simple in the ORIGINAL K_n, not only in the ordered-pair
-transition digraph. Track exact physical faces and starting-root
-compatibility in the cube specialization.
-
-An optional candidate: on physical ordered three-faces impose separate
-same-face reversal oddness and antipodal invariance. It contains all
-ordinary boundary tournaments and excludes the known logarithmic
-three-face obstructions, but literal reversal oddness degenerates at
-k=1. Find a natural common definition covering this mismatch, or invent
-a different one. Test whether one genuinely compatible selection or
-path theorem follows from it.
-
-Before investing deeply in a subsidiary problem, identify how its best
-outcome would inform the unified theorem. A rigorous disproof of one
-unifying mechanism, with an exact compatibility obstruction, can be
-valuable. Original mathematical exploration is encouraged; the expected
-result is a better common theorem, not a tally of isolated advances.
-
-Publish only correct, independently significant, coherent mathematics using
-`nori.publish_subsection` or the Section/Article composition interface.
-Subsections are the smallest publication unit. **Negative results ordinarily
-belong in research notes, however rigorous or extensive, even when a whole
-Section currently consists of methodological obstructions.** Manuscript
-exceptions include decisive refutations of important conjectures (e.g.
-physical Q9 NORI3) and independently important negative theorems. For mixed
-work, publish a real standalone theorem and link the detailed negative note;
-do not lose certificates, hypotheses, or provenance when reorganizing.
-Review related work before either kind of preservation. There are no Items, claims,
-leases, checkpoints, assigned rankings or publication quotas.
-
-Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and related notes before revisiting a route. **Use nori.save_note as the default for consequential negative results, even proved and Section-sized ones**, not merely unfinished work. Attach narrowly and revise existing notes on the same question. Distinguish proved counterexamples, bounded exclusions, method limits and unsuccessful attempts. Promote material only when it makes a standalone significant mathematical contribution, including truly decisive conjecture refutations. A session may end with no manuscript and no note.
-""")
-
     broadcast_lines = [
         "# Startup broadcasts", "",
         "These persistent project directives remain in force until explicitly removed.",
@@ -733,12 +644,12 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
             write(root / "RESEARCH_NOTES" / "BY_MANUSCRIPT" / (safe_name(ident) + ".md"), "\n".join(lines))
         question_map = [
             "# Consequential questions and established obstructions", "",
-            "Discovery map, NOT a ranked task list. Consult manuscripts and KNOWN_OBSTRUCTIONS.md for proved mathematics. Read only relevant notes.", "",
+            "Discovery map, NOT a ranked task list. Consult the active manuscript (including its known-obstructions appendix) for proved mathematics. Read only relevant notes.", "",
             "## Open questions and mechanisms", "",
             *(by_question["active"][:12] or ["- None recorded."]),
             *(["- Additional open notes: see README.md or search_notes; the displayed selection is alphabetical, not a ranking."] if len(by_question["active"])>12 else []),
             "", "## Established and method-scoped obstructions", "",
-            *(by_question["obstructions"][:12] or ["- See KNOWN_OBSTRUCTIONS.md."]),
+            *(by_question["obstructions"][:12] or ["- Review the known-obstructions appendix in the active manuscript."]),
             *(["- Further obstructions: see README.md or search_notes."] if len(by_question["obstructions"])>12 else []),
             "", "## Resolved and superseded", "",
             *(by_question["closed"][:6] or ["- None recorded."]),
@@ -803,13 +714,11 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
 
     boot = f"""# Startup instructions
 
-Review startup_notices returned by boot().
+Review startup notices returned by the project's boot API. Preserve its session ID for the conversation and refresh live status/changes on follow-ups.
 
-Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read grand_conjecture/README.md.
+Read BROADCASTS.md first. Then read GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and the manuscript tree under grand_conjecture/. Select pertinent Article compositions, their supporting Section/Subsection proofs, and relevant research notes. The project's objective and known obstructions are defined in its research state, not duplicated in auxiliary documents.
 
-Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
-
-For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. The research agenda is to identify ONE intrinsically defined structure and ONE conjecture about it, with explicit reductions demonstrating that resolving that conjecture resolves unrestricted NORI1 and the ordinary boundary-tournament long-path target. NORI1 provides toy models for finding the conjecture; boundary tournaments test its same witness property. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+Use the snapshot revision below as the freshness baseline when calling changes(...); refresh the artifact if it is stale. Follow the project's actual publication hierarchy, and preserve precise hypotheses and proofs.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
