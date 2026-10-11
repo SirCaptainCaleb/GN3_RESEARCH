@@ -372,8 +372,8 @@ def api_text(schema: str) -> str:
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
 ## Research notes: selective non-manuscript memory
-- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, author, labels, related [{type,id,version?}], epistemic_status, lifecycle. Revisions require exact expected_version.
-- nori.read_note(id,version:=null) reads an exact version; nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
+- nori.save_note(session,payload,expected_version:=null): create title/body with home_type=project|article|section|subsection and home_id (nori for project); optional stable id, author, labels, related [{type,id,version?}], epistemic_status, lifecycle. Manifests may pin exact manuscript composition versions; note-to-note links track the current note. Revisions require exact expected_version.
+- nori.read_note(id,version:=null) reads the current or immediately previous note revision ONLY. On revision, the previous snapshot replaces any older snapshot; no unbounded note history. nori.search_notes(query:='',filters:={}) searches/browses with home_type,home_id,label,lifecycle,epistemic_status,linked_to,limit,offset.
 - nori.notes_for(type,id) finds primary-home and linked notes. read_manuscript includes related_notes metadata; manuscripts never automatically incorporate note bodies.
 - lifecycle active|resolved|superseded is separate from epistemic_status. Resolution and supersession require disposition, and supersession requires a valid successor_id.
 - Separate brainstorm writes are retired in NORI; use only the selective research-note entity. The selective RESEARCH_NOTES/QUESTIONS.md map records alternatives and obstructions without ordering the agenda. Read pertinent notes, not all notes at startup.
@@ -681,8 +681,8 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
         history = data["research_note_versions"]
         note_index = [
             "# NORI selective research notes", "",
-            "Non-manuscript research memory. Manuscript text and numbering are unaffected.",
-            "Find related notes using nori.notes_for(type,id), search with nori.search_notes, or read exact history using nori.read_note(id,version).", "",
+            "Non-manuscript research memory. Manuscript text and numbering are unaffected. Only the current revision and one immediately prior snapshot are retained.",
+            "Find related notes using nori.notes_for(type,id), search with nori.search_notes, or read the current/previous revision via nori.read_note(id,version).", "",
         ]
         by_manuscript = {}
         by_question = {"active": [], "obstructions": [], "closed": []}
@@ -696,7 +696,8 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
                 "- Labels: " + ", ".join(n.get("labels") or []),
                 "- Lifecycle: " + n.get("lifecycle","active"),
                 "- Epistemic status: " + n.get("epistemic_status","open"),
-                "- Version: " + str(n.get("version")),
+                "- Current version: " + str(n.get("version")),
+                "- Retention: current and at most one previous snapshot",
                 "- Created session: " + n.get("created_session",""),
                 "- Updated session: " + n.get("updated_session",""),
                 "- Disposition: " + str(n.get("disposition") or "none"),
