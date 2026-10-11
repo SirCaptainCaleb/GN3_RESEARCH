@@ -749,6 +749,7 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
                 by_question["obstructions"].append(q_entry)
             else:
                 by_question["active"].append(q_entry)
+        note_index += ["", "[Editorial migration map: retired Subsections and their preserved destinations](MIGRATION.md)"]
         write(root / "RESEARCH_NOTES" / "README.md", "\n".join(note_index))
         for (typ,ident), entries in by_manuscript.items():
             lines = [
@@ -792,6 +793,18 @@ Persist manuscript advances selectively. Check RESEARCH_NOTES/QUESTIONS.md and r
             for note in notes:
                 if any(ref.get("type") == "subsection" and ref.get("id") == old["id"] for ref in (note.get("related") or [])):
                     links.append("[" + note["title"] + "](" + safe_name(note["id"]) + ".md)")
+            replacement_id = (old.get("data") or {}).get("editorial_consolidated_into")
+            if replacement_id:
+                successor = next((x for x in data["nodes"] if x.get("id") == replacement_id), None)
+                sec_id = successor.get("section_id") if successor else None
+                if successor and not sec_id:
+                    sec_id = (successor.get("data") or {}).get("section_id")
+                art_id = next((a["article_id"] for a in data["article_sections"] if a.get("section_id") == sec_id), None)
+                if art_id:
+                    links.append("[Complete proof consolidated into " + replacement_id + "](../grand_conjecture/" +
+                                 art_id + "/" + sec_id + "/" + replacement_id + ".md)")
+                else:
+                    links.append("Complete proof consolidated into active Subsection " + replacement_id)
             migration.append("- " + old["id"] + " (" + str(old.get("section_id") or "?") + ") -> " +
                             (", ".join(links) if links else "UNLINKED: audit needed"))
         migration += ["", "## Fully retired Sections", ""]
