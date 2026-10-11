@@ -1,6 +1,6 @@
 # Consequential questions and established obstructions
 
-Discovery map, NOT a ranked task list. Consult manuscripts and KNOWN_OBSTRUCTIONS.md for proved mathematics. Read only relevant notes.
+Discovery map, NOT a ranked task list. Consult the active manuscript (including its known-obstructions appendix) for proved mathematics. Read only relevant notes.
 
 ## Open questions and mechanisms
 

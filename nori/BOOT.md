@@ -1,14 +1,10 @@
 # Startup instructions
 
-Review startup_notices returned by boot().
+Review startup notices returned by the project's boot API. Preserve its session ID for the conversation and refresh live status/changes on follow-ups.
 
-Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read grand_conjecture/README.md.
+Read BROADCASTS.md first. Then read GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and the manuscript tree under grand_conjecture/. Select pertinent Article compositions, their supporting Section/Subsection proofs, and relevant research notes. The project's objective and known obstructions are defined in its research state, not duplicated in auxiliary documents.
 
-Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
-
-For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. The research agenda is to identify ONE intrinsically defined structure and ONE conjecture about it, with explicit reductions demonstrating that resolving that conjecture resolves unrestricted NORI1 and the ordinary boundary-tournament long-path target. NORI1 provides toy models for finding the conjecture; boundary tournaments test its same witness property. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.
-
-Then begin research under GUIDE.md and REFLEXES.md.
+Use the snapshot revision below as the freshness baseline when calling changes(...); refresh the artifact if it is stale. Follow the project's actual publication hierarchy, and preserve precise hypotheses and proofs.
 
 Snapshot revision: 1379
-Generated: 2026-10-11T11:24:22.522292+00:00
+Generated: 2026-10-11T11:34:31.575134+00:00

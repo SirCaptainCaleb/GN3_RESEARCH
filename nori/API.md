@@ -2,7 +2,7 @@
 
 ## Startup and reading
 - `nori.boot()` once per independent conversation only. Reuse its `session_id` for every subsequent write. In continued sessions call `nori.status()` and `nori.changes(snapshot_revision, null, 100)`.
-- Read `OVERVIEW.md`, `KNOWN_OBSTRUCTIONS.md`, all eight Article compositions, and the relevant Section/Subsection manuscripts. `nori.search(query, filters := {})` searches **current composed manuscript text**, overview and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
+- Read the active Article compositions and relevant Section/Subsection manuscripts, including the curated known-obstructions Appendix inside the manuscript when pertinent. `nori.search(query, filters := {})` searches current composed manuscript text and Toolkit. `nori.read_manuscript(type,id,version := null)` reads exact historical composition versions.
 - The hierarchy is Article → Section → Subsection, where **Subsection is the smallest durable publication unit**. No Item creation, enumeration or editing, and no Result nodes.
 
 ## Research notes: selective non-manuscript memory
