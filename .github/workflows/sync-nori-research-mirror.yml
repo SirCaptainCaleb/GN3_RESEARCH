@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: revision 1251 negative-result note-default guidance freshness
+# NORI assembled publication: 15 retired subsections 4 splits 2 retired sections and artifact migration map
 
 on:
   workflow_dispatch:
