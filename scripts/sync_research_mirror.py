@@ -388,7 +388,7 @@ def api_text(schema: str) -> str:
 
 ## History and judgment
 - For retired identifiers only: `nori.historical_item(old_id)`, `nori.historical_find(query,limit)` redirect to the fixed GitHub backup and successor Subsection. Historic Items are not active research.
-- Research objective: one coherent unifying theorem or mechanism with honest, nontrivial specializations to unrestricted NORI1 and every ordinary boundary 3-tournament; NORI1 is a useful model, and boundary tournaments test the common principle. Explain how each subsidiary proof contributes to this shared program.
+- Grand objective: define ONE natural mathematical structure C and ONE concrete conjecture U(C). Prove explicit reductions showing that resolving U settles both unrestricted NORI1 and the intended long vertex-simple tight-path conclusion for ALL ordinary boundary tournaments. Use NORI1 as a toy mathematical laboratory and boundary tournaments as a test of the SAME conjecture. Explain the implication from U to BOTH results, and what refuting U would establish.
 - A serious session may produce **nothing worth publishing**. No tasks, claims, leases, checkpoints, ranked queue, or mandatory progress report.
 """
 
@@ -459,19 +459,24 @@ def build(schema: str):
 
 **Publish mathematics that resolves consequential questions after the unrestricted NORI3 conjecture's refutation. Establish correctness, precise scope, and its effect on an open problem.**
 
-## One central research objective: a genuine unification
+## One structure, one conjecture, two exact consequences
 
-**Develop and prove one natural mathematical theory that treats unrestricted NORI1 and ordinary boundary 3-tournaments as instances of the same structural phenomenon.** The research target is one common theorem, selection mechanism, representation, or transfer principle with nontrivial long-path implications in BOTH settings—not two proofs conducted in parallel and grouped under one title.
+**The grand research task is to DEFINE ONE concrete mathematical structure and FORMULATE ONE mathematically precise conjecture about that structure, whose resolution would resolve both unrestricted NORI1 and the target long monochromatic vertex-simple tight-path problem for ordinary boundary 3-tournaments.** Discovering the right object and conjecture is itself the central creative problem. A general vocabulary, analogy, common slogan, or theorem only about one of the two families is not enough.
 
-The first test family comprises every antipodally odd coloring of genuine undirected physical cube edges, including nonlinear NORI1 colorings. The second comprises every ordinary reversal-odd boundary 3-tournament on triples of distinct directions, with no assumed global edge order. An edge-ordered comparison tournament is a useful especially concrete example; ultimately the common framework should account for the full boundary family. For both families the path must be a legitimate path in the original structure, respecting physical edge/face identity and original-vertex simplicity where relevant.
+An acceptable proposed unification must specify:
 
-**NORI1 as a mathematical laboratory.** Work freely on physical-edge colorings, even on specialized constructions, to discover the geometry, root-consistency, common-witness selection, or splicing principle that a unified theorem may need. A NORI1 lemma is most useful when accompanied by a plausible lift to ordered-triple paths or a precise account of the extra seam windows to be handled. Complete standalone positive theorems remain valid mathematical background, but the research agenda is the shared mechanism rather than improvement of NORI1 bounds for their own sake.
+1. **One class of objects** \(\mathcal C\), described by explicit intrinsic data, operations and structural axioms. It should not be a tagged disjoint union of a NORI1 class and a boundary-tournament class.
+2. **One conjecture** \(\mathbf U\) stated entirely in the language of those objects, quantifying over the intended class and making a definite path/selection/witness assertion (including a meaningful quantitative bound where appropriate).
+3. **Two exact encoding and extraction theorems.** Show that *every* legal antipodally odd coloring of undirected physical cube edges yields an object of \(\mathcal C\), and *every* ordinary reversal-odd boundary 3-tournament, including non-edge-orderable instances, yields an object of the SAME class. Explain how a witness of \(\mathbf U\) produces a full monochromatic antipodal cube geodesic in the first case and the desired original-vertex-simple monochromatic tight path in the second.
+4. **Resolution logic.** Write the actual implications, not merely an aspiration: prove that a proof of \(\mathbf U\) gives both desired results. Ideally build reductions strong enough that a refutation of \(\mathbf U\) also provides a meaningful resolution of both, or clearly identify why a negative answer would instead require refinement. Calling the conjecture a resolution of both requires the appropriate logical deductions.
 
-**Boundary tournaments as a stress test of the same idea.** When a proposed unifying object or hypothesis is on the table, use arbitrary boundary tournaments—including pathological non-edge-orderable cases—to determine whether the object is defined, whether it yields actual vertex-simple paths, and whether the proof transports. Calculations about comparisons, rank potentials and edge orders are valuable when they test or sharpen that common mechanism.
+The NORI1 family permits arbitrary nonlinear physical-edge colorings; the boundary family permits every ordered triple coloring \(b(a,b,c)\) satisfying \(b(c,b,a)=1-b(a,b,c)\), without a global edge order. Physical edge/face identities, antipodal symmetry, genuine root compatibility and original-vertex simplicity must survive the relevant reductions. At three-face level, two additional seam windows are a central obstacle: proving an edge-color statement without those windows does not establish the ordered-triple consequence.
 
-The most compelling progress is a structural statement with honest specialization maps and compatible witnesses for both test families, followed by a common proof or transparent transfer. Even a carefully proved obstruction can help when it isolates why a candidate unification fails and what exact compatibility condition is missing.
+**Use NORI1 as a toy laboratory.** Its physical squares, rooted antipodal pairings, witness intersections and geodesic operations may reveal what the unified objects and axiom should be. Such exploratory work is welcome, including on restricted model cases, when it illuminates a plausible one-structure conjecture.
 
-Study the existing manuscripts and relevant notes as evidence, not as the research agenda. Invent and challenge representations independently. Work on whatever subsidiary question seems most likely to expose the shared principle; if its best conceivable outcome would not inform the common theorem, reassess its usefulness. A serious investigation may conclude that a proposed unification cannot work or may have no publication-worthy outcome.
+**Use ordinary boundary tournaments to test the same proposed structure.** Test every suggested operation and witness theorem on arbitrary reversal-odd tournaments, including non-edge-orderable cases, to determine whether the one conjecture genuinely has the needed vertex-simple tight-path consequence.
+
+Researchers are free to invent different candidate structures and challenge prior formulations. Judge mathematical progress by movement toward ONE well-posed conjecture and its TWO rigorous specialization deductions, not by separately accumulating progress on the two original problems.
 
 Before investing deeply in a subsidiary question, identify the mathematical implication that would make its solution useful. Make that implication explicit enough to examine. If the strongest plausible answer would leave the main argument in essentially the same position, reconsider the question.
 
@@ -481,17 +486,17 @@ When an approach already has substantial development, assess what additional ins
 
 Spend your effort on the strongest mathematical opportunity you can identify. Report an inconclusive outcome plainly when that is where the investigation ends.
 
-## How to evaluate a candidate unification
+## Mathematical acceptance test for the grand conjecture
 
-Describe the common objects and their structural assumptions first, then give two honest specializations:
-1. **Physical-edge NORI1:** arbitrary antipodally odd physical edge colorings of Q_n, not just affine or symmetric subclasses.
-2. **Ordinary boundary 3-tournaments:** direction-only ordered triples b(a,b,c) satisfying b(c,b,a)=1-b(a,b,c), including instances whose incident-edge comparisons are not induced by a global edge order.
+For a proposed object class \(\mathcal C\) and candidate conjecture \(\mathbf U\), provide an explicit mathematical certificate of the following form:
 
-Show why a common path/witness concept specializes to full cube geodesics in the first family and original-vertex-simple monochromatic tight paths in the second. Explain exactly what theorem would follow in each family and which step still needs proof. A tentative common notion may legitimately start in a toy subclass, provided the missing route to both full classes is made mathematically explicit.
+- **Intrinsic definition:** specify \(\mathcal C\), its admissible finite objects, its allowed local-to-global operations and a *single* witness predicate \(W(X)\). State \(\mathbf U:\ \forall X\in\mathcal C,\ W(X)\) (or a precise quantitative variant).
+- **NORI1 reduction:** for each arbitrary antipodally odd physical-edge coloring \(c\), construct \(X(c)\in\mathcal C\) and prove \(W(X(c))\) yields a genuine full monochromatic antipodal cube geodesic.
+- **Boundary reduction:** for each ordinary reversal-odd ordered-triple tournament \(b\), construct \(X(b)\in\mathcal C\) and prove \(W(X(b))\) yields a monochromatic tight path of the required quantified length with distinct original vertices. Edge-orderable tournaments alone are a helpful example, not the whole class.
+- **One common reason:** justify why the same axioms and witness predicate handle both encodings. Mere disjoint tagging, two independent clauses or parallel proofs under one heading is not a unification.
+- **Logical closure:** state explicitly which conjectures would follow from a proof of \(\mathbf U\). Explain the status of counterexamples to \(\mathbf U\); if falsity would not settle both originals, that asymmetry is a research gap, not an already completed full reduction.
 
-For higher ordered faces, reversal oddness and antipodal invariance are natural structural candidates. At k=1, reversal of a one-letter word is the identity; a useful uniform formalism must account for that degeneracy without eliminating arbitrary NORI1 colorings. Physical-face consistency, the two additional ordered-triple seam windows, and simultaneous rather than pairwise witness realizability are important tests. Edge-ordered tournaments furnish an instructive tractable case, while the full reversal-odd boundary family is the intended specialization.
-
-Judge progress by whether it advances the shared mathematical statement, not by the number of separate peripheral bounds proved.
+NORI1 toy lemmas can suggest the candidate \(W\); boundary examples expose missing face-memory and vertex-simplicity constraints. Same-face reversal oddness, antipodal invariance, witness nerves and paired-root selection are possible inspirations, not assumed solutions. A candidate structure need not be perfect on its first attempt: record its exact domain, the missing specialization theorem and a concrete path to strengthening it. Pursue the conjecture whose verified implications reach both original problems.
 
 ## Selective research notes — separate from manuscript publication
 Save a note only when another researcher could make a materially better decision. Use the narrowest primary home (Project, Article, Section or Subsection), and link additional relevant manuscripts or notes. Record the precise claim, scope, evidence, why it matters, and a discriminating next step where applicable. Before starting or revisiting an approach, inspect the Known obstructions appendix and only the relevant notes. Extend existing notes on the same question rather than fragmenting them.
@@ -513,9 +518,9 @@ Use the boot session_id for writes. Publish Subsections with `publish_subsection
 """)
         write(root / "REFLEXES.md", """# NORI research reflexes
 
-Work toward ONE structural theorem or bridge unifying arbitrary antipodally odd NORI1 physical-edge colorings and ordinary reversal-odd boundary 3-tournaments. Build a single shared definition with honest specialization and path-witness maps for both. NORI1 is a useful toy laboratory; boundary tournaments are a test of the proposed shared mechanism. Seek a real common argument rather than parallel work on separate conjectures. Challenge inherited representations, and use the repository to test new ideas.
+Seek ONE intrinsically defined mathematical object class C and ONE precise conjecture U(C) such that proving U proves unrestricted physical-edge NORI1 and the desired long vertex-simple monochromatic tight-path statement for every ordinary boundary 3-tournament. Define a common witness predicate, provide exact encodings and deductions for BOTH full classes, and specify the quantitative conclusion. A tagged union or unrelated conjunction is not a solution. Ideally make refuting U consequential for both as well, explaining any gap in that direction. NORI1 is a toy laboratory for finding C and U; boundary tournaments test the same proposal. Invent and challenge structural representations independently.
 
-Before a subsidiary calculation, articulate how its strongest conceivable answer would improve a shared theorem, a specialization map, or a common-witness mechanism. A useful NORI1 toy theorem can illuminate the missing ordered-triple seam constraints. Examine whether a string of easy extensions suggests a better common representation.
+Before a subsidiary calculation, articulate how its strongest conceivable answer would improve the definition of C, the ONE conjecture U, a specialization proof, or the single common-witness mechanism. A useful NORI1 toy theorem can illuminate the missing ordered-triple seam constraints. Examine whether a string of easy extensions suggests a better common representation.
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
@@ -540,18 +545,27 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-There is ONE grand research objective: find a natural mathematical framework
-and prove a common theorem unifying two model families:
-(A) every unrestricted, antipodally odd coloring of physical cube edges
-    (NORI1, including arbitrary nonlinear instances);
-(B) every ordinary reversal-odd boundary 3-tournament b on ordered triples,
-    b(c,b,a)=1-b(a,b,c), with its actual vertex-simple tight paths.
-These are TWO TESTS OF ONE THEOREM, not two independent research programs.
-Describe the common objects, the maps from both full classes, the
-compatible path witnesses and the mathematical conclusion obtained in
-each specialization. The unification should do real work in both
-classes; presenting two unrelated theorems in one definition is not
-a shared mechanism.
+The grand research objective is ONE CONCRETE STRUCTURE and ONE CONJECTURE
+about that structure whose resolution settles BOTH original problems:
+(A) the unrestricted, antipodally odd physical-edge NORI1 conjecture;
+(B) the target long monochromatic VERTEX-SIMPLE tight-path statement
+    for all ordinary reversal-odd boundary 3-tournaments, not merely
+    those arising from global edge orders.
+
+Invent the class C of objects, a SINGLE intrinsic witness/property W(X),
+and the exact quantified statement U: every admissible X in C has W(X)
+(or its mathematically specified quantitative version). Prove honest
+maps from EVERY instance of A and EVERY instance of B into C. Prove
+the deductions W(X(c)) => the NORI1 full monochromatic antipodal
+cube geodesic, and W(X(b)) => the required ORIGINAL-VERTEX-SIMPLE
+monochromatic tight path of the stated length. Explain why ONE
+mechanism certifies both; a tagged disjoint union, a conjunction of
+unrelated conjectures, or two separate case proofs is not enough.
+Give the actual logical implications. If disproving U would not
+also resolve both originals, expose that asymmetry and strengthen
+the formulation if possible rather than claiming a full resolution.
+The choice of C and U is the main open design problem.
+
 
 NORI1 is a productive TOY LABORATORY. Explore its physical squares,
 root consistency, antipodal pairings, full-geodesic witnesses and
@@ -865,7 +879,7 @@ Use the extracted artifact as the working research context. Read BROADCASTS.md *
 
 Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
-For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. The research agenda is ONE unifying theorem for unrestricted NORI1 and ordinary boundary tournaments, with NORI1 available as a toy laboratory and boundary tournaments serving as a full-class test of the same structure. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
+For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Article's composition and relevant Section/Subsection manuscripts. The research agenda is to identify ONE intrinsically defined structure and ONE conjecture about it, with explicit reductions demonstrating that resolving that conjecture resolves unrestricted NORI1 and the ordinary boundary-tournament long-path target. NORI1 provides toy models for finding the conjecture; boundary tournaments test its same witness property. Follow ONLY relevant notes, not all of them at startup. **Negative mathematical results normally belong to research notes even if rigorous and Section-sized; decisive conjecture refutations and independently important negative theorems are manuscript exceptions.** Keep proofs and provenance when reclassifying mixed manuscripts. Notes never rank the agenda. Article-level MANUSCRIPT.md files assemble the hierarchy. The Subsection is the smallest publication unit; a session may end with no manuscript and no note.\n\nThen begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
