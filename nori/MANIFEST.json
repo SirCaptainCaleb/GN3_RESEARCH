@@ -232,9 +232,9 @@
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 1789,
-        "composed_through_revision": 4980,
-        "composition_version": 17,
+        "body_chars": 2095,
+        "composed_through_revision": 5001,
+        "composition_version": 19,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -243,7 +243,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Refresh Article publication dependency frontier after consolidation",
+        "source_note": "Clarify single object class and single conjecture as central grand research objective",
         "stale": false,
         "stale_dependencies": []
       },
@@ -251,9 +251,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 1335,
-        "composed_through_revision": 4974,
-        "composition_version": 10,
+        "body_chars": 2240,
+        "composed_through_revision": 5002,
+        "composition_version": 13,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -262,7 +262,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Independent audit: active theorem hierarchy, complete note extraction and consolidations",
+        "source_note": "Clarify single object class and single conjecture as central grand research objective",
         "stale": false,
         "stale_dependencies": []
       },
@@ -271,10 +271,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-11T03:30:55.730748+00:00",
+  "generated_at": "2026-10-11T11:10:30.997486+00:00",
   "item_count": 0,
   "mirror_format": 19,
-  "research_note_count": 20,
+  "research_note_count": 23,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 24,
@@ -382,9 +382,9 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 1246,
-        "composed_through_revision": 4890,
-        "composition_version": 5,
+        "body_chars": 2223,
+        "composed_through_revision": 4999,
+        "composition_version": 8,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 4,
@@ -393,7 +393,7 @@
           "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
+        "source_note": "Clarify single object class and single conjecture as central grand research objective",
         "stale": false,
         "stale_dependencies": []
       },
@@ -522,9 +522,9 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 2301,
-        "composed_through_revision": 4977,
-        "composition_version": 23,
+        "body_chars": 2464,
+        "composed_through_revision": 5000,
+        "composition_version": 25,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
@@ -533,7 +533,7 @@
           "subsections_now": 8
         },
         "has_composition": true,
-        "source_note": "Refresh exact active Subsection dependency frontier after consolidation",
+        "source_note": "Clarify single object class and single conjecture as central grand research objective",
         "stale": false,
         "stale_dependencies": []
       },
@@ -601,7 +601,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1357,
+  "snapshot_revision": 1379,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -654,16 +654,16 @@
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
-        "body_chars": 10340,
-        "composed_through_revision": 4850,
-        "composition_version": 1,
+        "body_chars": 10737,
+        "composed_through_revision": 4989,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Proved exact multifacet bridge equivalence between unrestricted NORI1 k-direction color prescription and arbitrary k-cube one-switch antipodal geodesic; combines with established SAT geodesic A8 to give universal seven-direction prescription in all larger dimensions.",
+        "source_note": "Single-unification editorial correction: move latest NORI1-only paired-root extension into scoped toy note",
         "stale": false,
         "stale_dependencies": []
       },

@@ -14,41 +14,57 @@ The NORI3 one-switch conjecture and fixed k>=3 switch hierarchy are false.
 Every fixed k>=3 admits unbounded compulsory switches, and S3(n)=Omega(n/log n).
 The original universal square-root monochromatic-path target is also false.
 
-The TWO EQUALLY PRIMARY targets are: (1) solve unrestricted NORI1 for
-all legal antipodally odd physical edge colorings; (2) solve the long
-vertex-simple monochromatic tight-path problem for ALL ordinary boundary
-3-tournaments b satisfying b(c,b,a)=1-b(a,b,c). Do not assume a global
-edge order or acyclic line-graph comparison orientation for target (2).
-A strengthened NORI theory must preserve BOTH full classes.
-The boundary 3-tournaments induced by global orders on edges of K_n are
-a USEFUL FALLBACK if the general boundary case hits a proved obstacle,
-NOT a substitute for its solution. A theorem restricted to edge-ordered
-cases must identify the remaining gap and seek a general transfer.
-Do not work on old unrestricted NORI2, or further refine the unrestricted
-NORI3 logarithmic obstruction for its own sake.
+The grand research objective is ONE CONCRETE STRUCTURE and ONE CONJECTURE
+about that structure whose resolution settles BOTH original problems:
+(A) the unrestricted, antipodally odd physical-edge NORI1 conjecture;
+(B) the target long monochromatic VERTEX-SIMPLE tight-path statement
+    for all ordinary reversal-odd boundary 3-tournaments, not merely
+    those arising from global edge orders.
 
-Investigate independently a consequential route toward such a unification.
-A candidate three-face symmetry is separate same-face reversal oddness
-c(F,rev(pi))=1-c(F,pi) and antipodal invariance c(bar F,pi)=c(F,pi).
-It excludes the existing logarithmic NORI3 examples and contains ALL
-boundary 3-tournaments, including edge-ordered comparison tournaments.
-But it cannot be imposed verbatim for k=1, where reversal is the identity.
-A serious framework must explain how ALL legal NORI1 instances and the
-edge-ordered boundary instances survive, without simply juxtaposing
-unrelated cases. Check proposed definitions against BOTH families.
+Invent the class C of objects, a SINGLE intrinsic witness/property W(X),
+and the exact quantified statement U: every admissible X in C has W(X)
+(or its mathematically specified quantitative version). Prove honest
+maps from EVERY instance of A and EVERY instance of B into C. Prove
+the deductions W(X(c)) => the NORI1 full monochromatic antipodal
+cube geodesic, and W(X(b)) => the required ORIGINAL-VERTEX-SIMPLE
+monochromatic tight path of the stated length. Explain why ONE
+mechanism certifies both; a tagged disjoint union, a conjunction of
+unrelated conjectures, or two separate case proofs is not enough.
+Give the actual logical implications. If disproving U would not
+also resolve both originals, expose that asymmetry and strengthen
+the formulation if possible rather than claiming a full resolution.
+The choice of C and U is the main open design problem.
 
-Prioritize a proven common long/spanning-path theorem, a meaningful lift
-or transfer preserving real physical faces and original-direction
-simplicity, or a rigorous obstruction to a proposed unified structure.
-Never confuse line-graph directed paths with vertex-simple increasing
-paths of the underlying edge-ordered K_n.
-Edge-order acyclicity and boundary comparisons are useful only insofar
-as they illuminate this common NORI1-preserving problem.
 
-Challenge shared assumptions and representations. Before substantial work,
-identify the exact implication its strongest possible result would establish.
-Avoid routine construction improvements, unrestricted NORI2, and
-small-dimensional searches without a consequential NORI1-preserving implication. Explore new formulations independently.
+NORI1 is a productive TOY LABORATORY. Explore its physical squares,
+root consistency, antipodal pairings, full-geodesic witnesses and
+restricted examples to discover the right general statement. Explain how
+a lemma from that toy model could extend to the ordered-triple setting
+and what extra seam/compatibility difficulty must be overcome.
+Independent rigorous NORI1 results are useful background, but orient
+the new research toward the common structural proof.
+
+Test each proposed shared mechanism against ordinary boundary tournaments,
+including non-edge-orderable examples. Edge-ordered K_n tournaments
+are helpful examples and fallback models, but the target boundary
+family includes every reversal-odd triple coloring. Ensure any inferred
+path is vertex-simple in the ORIGINAL K_n, not only in the ordered-pair
+transition digraph. Track exact physical faces and starting-root
+compatibility in the cube specialization.
+
+An optional candidate: on physical ordered three-faces impose separate
+same-face reversal oddness and antipodal invariance. It contains all
+ordinary boundary tournaments and excludes the known logarithmic
+three-face obstructions, but literal reversal oddness degenerates at
+k=1. Find a natural common definition covering this mismatch, or invent
+a different one. Test whether one genuinely compatible selection or
+path theorem follows from it.
+
+Before investing deeply in a subsidiary problem, identify how its best
+outcome would inform the unified theorem. A rigorous disproof of one
+unifying mechanism, with an exact compatibility obstruction, can be
+valuable. Original mathematical exploration is encouraged; the expected
+result is a better common theorem, not a tally of isolated advances.
 
 Publish only correct, independently significant, coherent mathematics using
 `nori.publish_subsection` or the Section/Article composition interface.

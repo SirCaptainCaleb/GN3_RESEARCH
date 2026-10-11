@@ -5,6 +5,7 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 
 - [A fixed-hub six-square cannot be extended by preserving both end faces](note_fixed_hub_six_square_end_face_extension_failure.md) (subsection:near_midpoint_hub_witnesses_and_concrete_splice_failure_tests; active; method_limitation)
 - [Affine, nonlinear, and central-layer NORI1 edge-model investigations](note_edge_affine_models_and_central_tight_path_working_memory.md) (article:nori_article_viii_edges; active; proposed)
+- [Antipodal square rigidity excludes equality in the NORI1 pedestrian bound](note_pedestrian_square_rigidity_nori1.md) (section:nori_edge_central_carriers; resolved; proved)
 - [Antipodal-involution index differences and bichromatic bad-root limitations](note_antipodal_involution_index_and_bichromatic_bad_root_limits.md) (subsection:two_sided_helly_root_sheets_and_high_index_support_selection; active; proved)
 - [Can a colorful topological selection complex preserve joint path realizability?](note_joint_realizability_selection_for_nori1_and_boundary_tournaments.md) (project:nori; active; proposed)
 - [Carrier compatibility must mean common realizability, not just pairwise window agreement](note_nori_carrier_requires_joint_actual_geodesic_witnesses.md) (article:nori_article_ii_topological_carriers; active; method_limitation)
@@ -14,7 +15,9 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Clean-prefix sparse-fault charts cannot force general closure](note_clean_prefix_sparse_fault_chart_obstruction.md) (subsection:arbitrary_nonlinear_coordinate_faults_and_robust_affine_closure; active; proved)
 - [Feasible uncertified-direction shadows and witness-root domination obstructions](note_certification_shadow_realization_and_root_domination_limits.md) (subsection:connector_square_certificates_and_monochromatic_edge_shadows; active; proved)
 - [Four-facet geodesic avoidance and limits of codimension-two lifting](note_codim_two_facet_lifting_failure_certificates.md) (subsection:codimension_two_reachability_facets_and_terminal_cap_rigidity; active; proved)
+- [Linear height barrier for global ordered-pair transition ranks](note_boundary_pair_rank_linear_height_barrier.md) (section:nori_seven_coordinate_structure; resolved; proved)
 - [Ordinary boundary 3-tournaments need not come from a global edge order](note_boundary_tournament_edge_orderability_is_strict_fallback.md) (section:nori_seven_coordinate_structure; active; proved)
+- [Paired-start exact criterion for NORI1 as a unification toy model](note_antipodal_paired_start_nori1_toy_unification_probe.md) (subsection:antipodal_multifacet_bridge_and_seven_coordinate_universality; active; proved)
 - [Restricted NORI2 Raynaud–sentinel theorems and finite-exterior-support bounds](note_nori2_restricted_raynaud_sentinel_and_sparse_exterior_scope.md) (section:nori_foundations; active; proved)
 - [Root-shuttle alternating square obstruction and exact duplicate-refinement record](note_root_shuttle_alternating_diagonal_and_duplicate_refinement_limits.md) (subsection:physical_window_shift_paths_and_root_shuttle_transport; active; proved)
 - [Root-slide selector topology: what high index cannot extract](note_root_slide_selector_and_topological_index_limits.md) (section:nori_topological_obstructions; active; method_limitation)

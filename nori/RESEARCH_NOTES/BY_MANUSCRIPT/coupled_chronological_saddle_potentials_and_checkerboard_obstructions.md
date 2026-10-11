@@ -4,3 +4,4 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [Checkerboard-free extraction and four-local Hamilton completion limitations](../note_checkerboard_submatrix_and_four_local_hamilton_completion_limits.md) — active/proved
 - [Checkerboard-free extraction and four-local Hamilton completion limitations](../note_checkerboard_submatrix_and_four_local_hamilton_completion_limits.md) — active/proved
+- [Linear height barrier for global ordered-pair transition ranks](../note_boundary_pair_rank_linear_height_barrier.md) — resolved/proved

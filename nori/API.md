@@ -22,5 +22,5 @@
 
 ## History and judgment
 - For retired identifiers only: `nori.historical_item(old_id)`, `nori.historical_find(query,limit)` redirect to the fixed GitHub backup and successor Subsection. Historic Items are not active research.
-- Publish correct consequential mathematics on the remaining NORI extremal and restricted-class questions. Establish correctness, explain its mathematical significance, and integrate it into a coherent argument.
+- Grand objective: define ONE natural mathematical structure C and ONE concrete conjecture U(C). Prove explicit reductions showing that resolving U settles both unrestricted NORI1 and the intended long vertex-simple tight-path conclusion for ALL ordinary boundary tournaments. Use NORI1 as a toy mathematical laboratory and boundary tournaments as a test of the SAME conjecture. Explain the implication from U to BOTH results, and what refuting U would establish.
 - A serious session may produce **nothing worth publishing**. No tasks, claims, leases, checkpoints, ranked queue, or mandatory progress report.

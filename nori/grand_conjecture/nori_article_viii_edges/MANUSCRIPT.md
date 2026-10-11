@@ -2,7 +2,7 @@
 
 ## Article setting and orientation
 
-The separate NORI1 problem remains open for arbitrary antipodally odd colorings of undirected physical cube edges. Its significant unconditional results already include the full affine-span theorem for direction-indexed colors along complete antipodal geodesics and universal simultaneous prescription on three selected directions.
+The unrestricted NORI1 problem remains open for arbitrary antipodally odd colorings of undirected physical cube edges. Within NORI's current research direction, it serves as a rich physical-edge laboratory for discovering one intrinsic object class C and one conjecture U(C), whose witnesses also yield long original-vertex-simple monochromatic tight paths in ordinary boundary tournaments. Its significant unconditional results already include the full affine-span theorem for direction-indexed colors along complete antipodal geodesics and universal simultaneous prescription on three selected directions.
 
 The multifacet bridge establishes an exact dimension-prescription equivalence: for each k, general one-switch geodesic closure in an arbitrary k-cube corresponds to prescribing arbitrary colors on any k selected directions in every larger antipodally odd physical-edge cube. With the established finite-dimensional input, this proves universal seven-direction prescription. None of these theorems, by itself, supplies an all-monochromatic full geodesic in arbitrary dimension.
 
@@ -10,7 +10,7 @@ The multifacet bridge establishes an exact dimension-prescription equivalence: f
 
 ## Central edge carriers and antipodal topology
 
-The physical-edge problem retains genuine positive theorems independent of any affine modeling hypothesis. Full antipodal geodesic color-profile vectors have affine span equal to the entire binary direction-color space, and every choice of colors on three prescribed original directions occurs on a full geodesic. These results do not yet guarantee the one completely constant color vector.
+The physical-edge NORI1 family supplies the toy laboratory for discovering ONE intrinsic object class C and ONE precise conjecture U(C) intended to settle both original problems. Its genuine positive theorems hold independently of any affine modeling hypothesis. Full antipodal geodesic color-profile vectors have affine span equal to the entire binary direction-color space, and every choice of colors on three prescribed original directions occurs on a full geodesic. These results do not yet guarantee the one completely constant color vector.
 
 The multifacet bridging theorem identifies unrestricted k-dimensional one-switch closure with simultaneous prescription on any k selected directions in all larger antipodally odd cubes, preserving physical edge identities. In particular, established dimension-eight closure input yields universal seven-direction prescription; the unrestricted eight-direction case remains open under the theorem's stated equivalence.
 
@@ -249,3 +249,5 @@ For \(n\le8\), the stronger statement that **all \(n\) prescribed direction colo
 - Imre Leader and Eoin Long, *Long geodesics in subgraphs of the cube*, Discrete Mathematics 326 (2014), 29–33; https://arxiv.org/abs/1301.2195 .
 - Markus Kirchweger, Tomáš Peitl, Bernardo Subercaseaux, Stefan Szeider, *From the Finite to the Infinite: Sharper Asymptotic Bounds on Norin's Conjecture via SAT* (2025), arXiv:2511.08386, specifically Theorem 1 and the separate SAT geodesic encoding \(\Psi_n\); https://arxiv.org/html/2511.08386 .
 - Tomáš Feder and Carlos Subi, *On hypercube labellings and antipodal monochromatic paths*, Discrete Applied Mathematics 161 (2013), 1421–1426 (original unrestricted-edge one-switch *path* conjecture; the geodesic strengthening is due to Leader–Long).
+
+**Unification scope:** This established NORI1 localization theorem is retained as prior mathematics, not an independent current research target. A later NORI1 paired-start toy theorem, originally published in composition v2, is preserved with its complete proof in note `note_antipodal_paired_start_nori1_toy_unification_probe`; no transfer to ordinary boundary tournaments has been established.

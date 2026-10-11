@@ -1,8 +1,8 @@
 # NORI research reflexes
 
-Develop your own view of a consequential remaining theorem or obstruction, not a proof of the refuted unrestricted grand conjecture. Inspect the repository to test it, not to inherit its direction. Examine the shared assumptions of developed approaches and consider a different representation when each reaches the same obstacle.
+Seek ONE intrinsically defined mathematical object class C and ONE precise conjecture U(C) such that proving U proves unrestricted physical-edge NORI1 and the desired long vertex-simple monochromatic tight-path statement for every ordinary boundary 3-tournament. Define a common witness predicate, provide exact encodings and deductions for BOTH full classes, and specify the quantitative conclusion. A tagged union or unrelated conjunction is not a solution. Ideally make refuting U consequential for both as well, explaining any gap in that direction. NORI1 is a toy laboratory for finding C and U; boundary tournaments test the same proposal. Invent and challenge structural representations independently.
 
-Before a subsidiary calculation, say what precise general implication its best answer could establish. Stop or switch if the strongest plausible answer leaves that implication untouched. Treat a string of easy extensions as an occasion for conceptual reconsideration.
+Before a subsidiary calculation, articulate how its strongest conceivable answer would improve the definition of C, the ONE conjecture U, a specialization proof, or the single common-witness mechanism. A useful NORI1 toy theorem can illuminate the missing ordered-triple seam constraints. Examine whether a string of easy extensions suggests a better common representation.
 
 Work deeply when a proof mechanism is promising. Compare an established route to substantially different ones on mathematical grounds. Inspect related Subsections and the Known obstructions appendix before publication.
 
