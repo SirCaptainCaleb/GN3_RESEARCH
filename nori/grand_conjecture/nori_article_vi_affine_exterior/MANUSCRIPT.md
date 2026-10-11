@@ -2,9 +2,9 @@
 
 ## Article setting and orientation
 
-For a physical ordered three-face (F,pi), let b_j(F) be the bit fixed outside its three free coordinates. Its color may depend on all these exterior bits and on their free-direction order. In structured families, this dependence can be controlled by the starting root of a full geodesic.
+The affine exterior-parity manuscripts prove exact starting-root solution counts and develop affine change-vector syndrome methods. Other surviving results provide endpoint-deletion inequalities, six-window root control, controlled nonlinear fault tolerance, and local physical exterior-chart interpolation. These are positive mathematical statements for their stated structural hypotheses; no unrestricted NORI3 existence theorem follows.
 
-Consider c(F,pi)=f(pi)+sum_{j outside free(F)} b_j(F) modulo two, with arbitrary direction-order function f. Fix an order p=(p_1,...,p_n) and initial root x. The j-th ordered three-window has its three free directions p_j,p_(j+1),p_(j+2), with earlier used directions at bits opposite their starting values and later unused exterior coordinates at their starting values. Hence its color is an affine function of x. The difference between consecutive window colors is affine in x as well, with the root coefficients determined by which coordinate enters and leaves the window. These equations permit exact counting of roots realizing prescribed color-change patterns in the exterior-parity class, including monochromatic full paths. Since the underlying structure is algebraic, much of this closure theory holds without global antipodal oddness.
+The six-path forcing-certificate lifting obstruction is a separate rigorous, method-specific negative result. Its signed exterior-bit holonomy calculation and complete original proof now reside in a linked research note, not in a standalone Subsection. This classification does not prohibit lifting under a different globally compatible forcing network. Any transfer to the unrestricted NORI1 or ordinary boundary-tournament objectives must preserve actual physical faces and coordinate simplicity.
 
 *Full Article composition: [source manuscript](../nori_article_vi_affine_exterior.md).*
 
@@ -459,9 +459,9 @@ These results solve broad affine and near-affine subclasses and quantify the exc
 
 ## Nonlinear faults, exterior sensitivity and holonomy
 
-A physical ordered three-face coloring may depend arbitrarily on its fixed exterior coordinate bits. For a direction word p=(p_1,...,p_n), the consecutive windows along the full rooted geodesic are functions of the starting root x; every window ignores the three free coordinates in its own ordered triple.
+For a six-direction word (a,b,c,d,e,f), the four window colors under two selected root-bit changes have the exact form (A(u), B, C, D(v)). The endpoint-control theorem specifies when these four symbols can be made to have at most one change. Separate affine change-map and nonlinear-tail theorems show how controlled exterior sensitivities yield genuine monochromatic or one-switch geodesics for the stated structured families.
 
-For six distinct directions (a,b,c,d,e,f), fix all root bits except x_d=u and x_c=v. The four consecutive window colors have the form
+The Fourier/exterior-chart Subsection develops local root interpolation, physical gluing and explicitly restricted computer-assisted results, without asserting unrestricted NORI3 closure. The signed exterior-bit holonomy obstruction to naively embedding a particular six-path forcing certificate has been migrated to a research note, where its complete certificate and exact scope remain available.
 
 *Full Section composition: [source manuscript](nori_affine_sensitivity.md).*
 
@@ -494,25 +494,6 @@ Assume an antipodal-reversal-odd coloring of Q_6 has no one-change antipodal geo
 
 Proof:
 By the two-junta theorem C_{abc}=F(x_d,x_e) is independent of x_f. The complementary ordered triples (d,e,f) and (e,d,f) are face-independent and opposite-colored, because the color on the complementary triple is determined by which of d,e comes first. Compare full six-step orders (d,e,f,a,b,c) and (e,d,f,a,b,c), starting at the same cube vertex. Their first window colors are opposite; their third window has identical ordered free axes (f,a,b) and the same exterior fixed bits (d and e have both been traversed), and their fourth window is also identical (a,b,c) with the same exterior bits. Write the two words as (0,B,C,D) and (1,B',C,D), after possibly exchanging 0 and 1. If C=D, whichever order has first color 1-C gives a word (1-C,*,C,C), which necessarily has at most one change. Therefore global failure forces C≠D at every starting vertex. The third window is C_{fab}, depending on exterior coordinates {c,d,e}; the fourth is C_{abc}, depending on {d,e,f}. Their d,e exterior bits agree after traversing the common initial block {d,e,f}, whereas their remaining exterior bits x_c and x_f range independently. Hence C_{fab}(z_d,z_e,z_c)=1-C_{abc}(z_d,z_e,z_f) for every choice of these bits. Both color functions are independent of their respective leftover exterior coordinate and F_{fab}=1-F_{abc} on d,e. Thus C_{fab} is also sensitive in both d and e. Apply the same argument to C_{fab}, whose fourth coordinate among {a,b,c,f} is c, to conclude C_{cfa}=1-C_{fab}=F_{abc}; then apply it to C_{cfa} with fourth coordinate b to conclude C_{bcf}=1-C_{cfa}=1-F_{abc}. This yields the alternating four-cycle.
-
-### Exterior-bit holonomy and the six-path extension obstruction
-
-Let \(S=\{a,b,c,d,e,f\}\subsetneq V\), and suppose \(g\in V\setminus S\). Consider attempting to reuse the six-geodesic forcing certificate of the dimension-six theorem inside an \(S\)-coordinate block of \(Q_V\), with the \(g\)-coordinate untraversed throughout the four consecutive length-three windows associated with each of the six orders. Each window in one such geodesic has the same fixed \(g\)-bit \(z_i\), determined by the starting vertex and by whether \(g\) occurs before or after the entire \(S\)-block.
-
-**Lemma (exterior-bit parity obstruction).** There is no choice of bits \(z_1,z_2,z_4\in\mathbb F_2\) for the first, second, and fourth rows of the dimension-six forcing table that simultaneously preserves all three face identifications used in that proof:
-(i) row 2's first \(dcb\)-window is the antipodal reversal of row 1's second \(bcd\)-window;
-(ii) row 4's first \(dcb\)-window is likewise the antipodal reversal of row 1's second \(bcd\)-window;
-(iii) row 4's last \(fea\)-window is the antipodal reversal of row 2's last \(aef\)-window.
-
-**Proof.** To be antipodal reversals in the ambient cube, the fixed exterior \(g\)-bits of two compared faces must be complements. Relation (i) forces \(z_2=1\oplus z_1\), relation (ii) forces \(z_4=1\oplus z_1\), and relation (iii) forces \(z_4=1\oplus z_2=z_1\). Thus \(z_1=1\oplus z_1\), impossible. \(\square\)
-
-**General parity principle.** Build a graph whose vertices are windows or blocks with a fixed value of a chosen outside coordinate \(g\); mark an identification edge 0 when the two windows are required to be the same ordered face, and mark it 1 when the two windows are required to be antipodal reversals. Existence of consistent \(g\)-bit assignments is equivalent to the parity label being a coboundary: every cycle must contain an even number of edges marked 1. The equivalence follows by propagating one chosen root bit along edges; consistency on cycles is necessary and sufficient. In the six-path forcing gadget, rows 1,2,4 form a triangle with three marked-1 edges, giving odd holonomy.
-
-**Precise extension obligation.** A dimension-raising use of this six-path gadget must (a) traverse at least one additional coordinate between selected comparison windows in some path, so the exterior bit changes within that path, or (b) replace at least one of the three antipodal comparisons by another valid forcing relation. Simply appending or prepending all additional coordinates to contiguous six-coordinate blocks cannot preserve the proof's face identifications. This is a limitation of this particular forcing certificate; it does not assert any obstruction to the grand conjecture for \(n\ge7\).
-
-## Recent consequences and compatibility conditions
-
-
 
 ### Arbitrary nonlinear-coordinate faults and robust affine closure
 

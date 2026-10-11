@@ -2,71 +2,19 @@
 
 ## Article setting and orientation
 
-**Universal seven-direction NORI1 prescription (new exact localization + established finite input).** For every legal antipodally odd physical-edge coloring of Q_n, any seven chosen direction colors can be simultaneously prescribed on a genuine full antipodal geodesic, in every dimension n>=7. More precisely the arbitrary k-cube one-switch geodesic assertion B_k is equivalent to full n-geodesic prescription on any k selected directions for *every larger n>k*. The proof is a physical multifacet bridge: reverse the first color block of a k-facet geodesic, traverse all exterior coordinates, then reverse and antipodally reflect its second block; all selected colors align because exterior opposite facets have complementary edge colors. A converse sentinel construction yields B_k exactly. Known SAT-certified geodesic NORI1 through dimension eight (Kirchweger--Peitl--Subercaseaux--Szeider 2025, arXiv:2511.08386, Theorem 1), combined with Leader--Long's A_(k+1) => B_k dimension shift, supplies the seven-color consequence. The earlier universal three-direction theorem remains independently elementary. Prescribing eight directions for all n>=9 is equivalent to the still-open B_8. Full NORI1 and the ordinary boundary tournament problem remain unresolved. See Section *Central edge carriers and antipodal topology*, Subsection *Antipodal multifacet bridge and seven-coordinate universality*.
+The separate NORI1 problem remains open for arbitrary antipodally odd colorings of undirected physical cube edges. Its significant unconditional results already include the full affine-span theorem for direction-indexed colors along complete antipodal geodesics and universal simultaneous prescription on three selected directions.
 
-**Universal unrestricted NORI1 three-direction prescription (new theorem).** Every legal antipodally odd coloring of physical undirected cube edges, with *arbitrary nonlinear exterior dependence*, realizes **all eight color assignments on any three preselected coordinate directions** along genuine full antipodal geodesics. The proof is a self-contained physical-edge argument: if a triple and its antipodal complement were missing, three cyclic geodesic root slides would force the first three colors in every such direction order to alternate, while a same-root swap of the first two directions forces their edge colors to agree, a contradiction. The theorem strengthens the earlier full affine-span and two-direction prescription results. Any unrealizable full target must involve compatibility among at least **four** prescribed directions; existence of a fully monochromatic path remains open. Exact proof in Section *Central edge carriers and antipodal topology*, Subsection *Universal three-direction edge-color prescription*.
+The multifacet bridge establishes an exact dimension-prescription equivalence: for each k, general one-switch geodesic closure in an arbitrary k-cube corresponds to prescribing arbitrary colors on any k selected directions in every larger antipodally odd physical-edge cube. With the established finite-dimensional input, this proves universal seven-direction prescription. None of these theorems, by itself, supplies an all-monochromatic full geodesic in arbitrary dimension.
 
 *Full Article composition: [source manuscript](../nori_article_viii_edges.md).*
 
-## Affine and block edge-coloring families
-
-For a physical edge coloring of Q_n let c_i(x) denote the color of the i-edge at x. Edge invariance is c_i(x)=c_i(x xor e_i), and antipodal oddness is c_i(bar x)=1-c_i(x). Given a permutation p and root x, the full antipodal geodesic with order p has j-th edge color c_(p_j)(x xor {p_1,...,p_(j-1)}). We study classes in which this sequence can be prescribed, rather than merely made constant.
-
-Suppose c_i(x)=b_i+sum_j A_ij x_j over F_2. Physicality means A_ii=0; antipodal oddness means every row sum of A is one. Given a desired color vector w indexed by directions, the geodesic equations become
-
-*Full Section composition: [source manuscript](nori_edge_affine_blocks.md).*
-
-### Affine and nonlinear edge-coloring families
-
-# Affine and nonlinear block families in the antipodally odd edge problem
-
-For physical undirected edges of Q_n, write c_i(x) for the color of the edge in direction i incident with x; thus c_i(x)=c_i(x xor e_i). Antipodal oddness is c_i(bar x)=1-c_i(x). A full direction-distinct geodesic starting from root x in order p=(p_1,...,p_n) has colors c_(p_j)(x xor {p_1,...,p_(j-1)}). Unlike ordered-three-face NORI, each new step contributes exactly one edge color, so global color words can be studied by choosing the root and permutation.
-
-## Affine coloring and change equations
-
-Let c_i(x)=b_i+sum_j A_ij x_j over F_2, with A_ii=0 and each row of A having odd sum. These conditions ensure physical-edge invariance and antipodal oddness. A prescribed direction-color word w imposes n linear equations on x and order-dependent crossing corrections: at step j, the equation is (Ax)_(p_j)=w_j+b_(p_j)+sum_(ell<j) A_(p_j,p_ell). A root realizing w therefore exists whenever its right side lies in the column image of A. If A is surjective this holds for every order and word.
-
-For deficient rank, the existing corank-one and corank-two closure theorems exploit changes of the direction permutation to alter the residual syndrome. An adjacent swap of directions i,j changes the right-hand sides only through the mutual coefficients A_ij,A_ji, giving an explicit square-or-braid adjustment. The established odd-odd interleaving theorem proves that rank-two affine odd colorings realize every prescribed direction-indexed color vector; corank at most two likewise admits a global syndrome construction. These are stronger than the monochromatic closure required by the original edge conjecture.
-
-## Functional block colorings
-
-Partition the direction set into blocks B_1,...,B_m and assign each block a Boolean color function of designated driving coordinates. If all coordinates of a block are traversed consecutively, the colors within that block remain constant whenever the function depends only on coordinates outside that block. The problem reduces to selecting a block order and starting input bits that realize desired block colors.
-
-For disjoint driver supports the root bits can be chosen independently, and the established functional-block theorem realizes every desired block-color pattern under its stated self-dual and dependency hypotheses. The nonlinear extension replaces linear parity gates with odd self-dual Boolean functions; the proof uses the freedom to choose appropriate inputs and a whole-block schedule, and includes overlapping driver supports in the specialized functional-driver setting. These statements concern their explicit block architectures, where the local root constraints can be solved consistently.
-
-## Central-rank structured families
-
-Additional edge-coloring families have colors uniform on one central exterior-Hamming-rank layer (in even dimension), or on paired near-central layers (in odd dimension). Their proofs select a monotone middle-level crossing, then choose the initial and terminal subpaths to fit the specified color vector. Robust versions tolerate a bounded number of faulty central edges by counting many candidate geodesics and avoiding corrupted edges. Such results describe large structured classes with unconditional full-geodesic closure; uniformity and quantitative fault hypotheses are essential.
-
-Taken together, affine syndrome surjectivity, block scheduling and central-rank crossings give independent mechanisms for realizing monochromatic and even arbitrarily prescribed edge-color words. Their successful extraction relies on the single-edge window structure and does not automatically transfer to physical ordered-three-face NORI.
-
 ## Central edge carriers and antipodal topology
 
-For every integer k>=2 and every larger dimension n>k, the following are equivalent: (B_k) every arbitrary physical edge 2-coloring of Q_k has a full antipodal geodesic with at most one color change; and (P_n,k) every legal antipodally odd physical-edge coloring of Q_n realizes each prescribed assignment on any fixed k selected directions along a full n-direction antipodal geodesic. The new Subsection "Antipodal multifacet bridge and seven-coordinate universality" proves both implications by an exact physical multifacet bridge and a reversed doubling.
+The physical-edge problem retains genuine positive theorems independent of any affine modeling hypothesis. Full antipodal geodesic color-profile vectors have affine span equal to the entire binary direction-color space, and every choice of colors on three prescribed original directions occurs on a full geodesic. These results do not yet guarantee the one completely constant color vector.
 
-Leader--Long proved that geodesic odd closure A_(k+1) implies B_k. Kirchweger, Peitl, Subercaseaux and Szeider (2025, arXiv:2511.08386, Theorem 1) verified the geodesic statement A_8 by SAT; smaller dimensions were known. Hence any seven prescribed direction colors are simultaneously realizable for all n>7, with no restriction on nonlinear exterior dependence. For n<=8 every full target vector is attainable by known finite-dimensional odd-geodesic closure and directionwise reweighting. Eight prescribed coordinates in dimension at least nine remain open, equivalent under the bridge to B_8. This exact reduction is restricted to physical edges: ordered three-face paths have two uncontrolled splice windows.
+The multifacet bridging theorem identifies unrestricted k-dimensional one-switch closure with simultaneous prescription on any k selected directions in all larger antipodally odd cubes, preserving physical edge identities. In particular, established dimension-eight closure input yields universal seven-direction prescription; the unrestricted eight-direction case remains open under the theorem's stated equivalence.
 
 *Full Section composition: [source manuscript](nori_edge_central_carriers.md).*
-
-### Central-layer edge carriers and tight paths
-
-# Central cube-edge carriers and tight paths
-
-Let n=2k and consider an antipodally odd coloring of physical edges of Q_n. A full monotone geodesic from 0 to 1 is encoded by an ordering of the n coordinate directions. Its vertices at rank j correspond to the nested j-subsets of the already used directions. Replacing one selected direction within a k-subset produces a Johnson-graph adjacency.
-
-## Exact central tight-path transfer
-
-For the central-vertex-gated edge-coloring models, a middle-belt monochromatic geodesic is equivalent to a tight path of complementary-odd colored k-subsets on 2k-1 distinct directions. Consecutive k-subsets overlap in k-1 directions; all distinct direction entries matter because a repeated cube coordinate would cease to yield a geodesic. The proved completion theorem extends a qualifying tight path with 2k-2 distinct directions to one with 2k-1 by choosing between the two unused directions and using complementary oddness. Together these are an exact conditional translation of the original edge problem into a central hypergraph problem.
-
-The transfer has sharply delimited scope. Valid odd edge colorings can forbid all monochromatic antipodal geodesics constrained to a fixed middle-belt scheme, even if a monochromatic full geodesic exists elsewhere. Hence middle-belt nonexistence cannot be treated as failure of the original unrestricted conjecture.
-
-## Cubical curvature and realizations
-
-For a physical two-face, define mod-two curvature as the parity of its four edge colors. In odd ambient dimension, antipodal oddness forces at least 2^(n-2) odd-curvature squares, and the established functional-matching constructions attain this bound. The result supplies a quantitative geometric obstruction to flatness.
-
-In even dimension, the converse type of phenomenon is possible: arbitrary complementary-odd middle-layer hypergraph labels extend to globally flat antipodally odd physical edge colorings. Thus vanishing curvature is compatible with flexible middle-layer data and does not by itself decide the existence of an extractable central path.
-
-These theorems identify an exact Johnson/tight-path carrier, its completion mechanism, and its two main limitations: middle-belt root constraints and independent central color assignments. The remaining original edge-color conjecture calls for a root-mobile global carrier or a compatible path exchange beyond one middle belt.
 
 ### Full-geodesic color profiles span the entire binary space
 

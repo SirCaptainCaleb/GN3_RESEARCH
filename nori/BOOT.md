@@ -10,5 +10,5 @@ For NORI, read KNOWN_OBSTRUCTIONS.md and RESEARCH_NOTES/QUESTIONS.md, each Artic
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
-Snapshot revision: 1251
-Generated: 2026-10-11T02:54:16.055437+00:00
+Snapshot revision: 1294
+Generated: 2026-10-11T03:13:53.143011+00:00

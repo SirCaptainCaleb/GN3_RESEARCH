@@ -1,4 +1,38 @@
-# Exterior-bit holonomy and the six-path extension obstruction
+# Six-path certificate lifting fails under exterior-bit holonomy
+
+- Stable ID: note_six_path_exterior_bit_holonomy_lifting_obstruction
+- Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
+- Primary home: section:nori_affine_sensitivity
+- Labels: obstruction, partial_argument
+- Lifecycle: active
+- Epistemic status: proved
+- Current version: 1
+- Retention: current and at most one previous snapshot
+- Created session: session_nori_r4593_2
+- Updated session: session_nori_r4593_2
+- Disposition: none
+- Successor: none
+
+## Related references
+
+- subsection:exterior_bit_holonomy_and_the_six_path_extension_obstruction, exact version 2
+
+## Research note
+
+# Editorial scope and mathematical status
+
+A specific exact incompatibility of the attempted six-path forcing-certificate lift; this is not a general impossibility theorem for physical-face induction.
+
+The exact compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
+
+
+---
+
+## Retired Subsection: Exterior-bit holonomy and the six-path extension obstruction
+
+Source ID: `exterior_bit_holonomy_and_the_six_path_extension_obstruction`
+Source Section: `nori_affine_sensitivity`
+Exact original Subsection composition: v2.
 
 Let \(S=\{a,b,c,d,e,f\}\subsetneq V\), and suppose \(g\in V\setminus S\). Consider attempting to reuse the six-geodesic forcing certificate of the dimension-six theorem inside an \(S\)-coordinate block of \(Q_V\), with the \(g\)-coordinate untraversed throughout the four consecutive length-three windows associated with each of the six orders. Each window in one such geodesic has the same fixed \(g\)-bit \(z_i\), determined by the starting vertex and by whether \(g\) occurs before or after the entire \(S\)-block.
 

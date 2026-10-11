@@ -1,4 +1,38 @@
-# Sharp rooted obstructions to one-change antipodal geodesics
+# Rooted one-switch failures and exact good-root localization obstructions
+
+- Stable ID: note_rooted_restriction_and_good_root_density_limitations
+- Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
+- Primary home: section:nori_foundations
+- Labels: obstruction, counterexample
+- Lifecycle: active
+- Epistemic status: proved
+- Current version: 1
+- Retention: current and at most one previous snapshot
+- Created session: session_nori_r4593_2
+- Updated session: session_nori_r4593_2
+- Disposition: none
+- Successor: none
+
+## Related references
+
+- subsection:sharp_rooted_obstructions_to_one_change_antipodal_geodesics, exact version 3
+
+## Research note
+
+# Editorial scope and mathematical status
+
+Exact results for prescribed-root strengthenings and thin good-root regions; these constrain rooted proof strategies, not the already-refuted unrestricted three-face conjecture.
+
+The exact compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
+
+
+---
+
+## Retired Subsection: Sharp rooted obstructions to one-change antipodal geodesics
+
+Source ID: `sharp_rooted_obstructions_to_one_change_antipodal_geodesics`
+Source Section: `nori_foundations`
+Exact original Subsection composition: v3.
 
 # Rooted obstructions and sharp dimension-five root density
 

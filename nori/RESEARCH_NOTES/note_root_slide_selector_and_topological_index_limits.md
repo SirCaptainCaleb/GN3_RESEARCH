@@ -1,4 +1,38 @@
-# Root-slide obstruction classes and antipodal selector topology
+# Root-slide selector topology: what high index cannot extract
+
+- Stable ID: note_root_slide_selector_and_topological_index_limits
+- Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
+- Primary home: section:nori_topological_obstructions
+- Labels: obstruction, approach
+- Lifecycle: active
+- Epistemic status: method_limitation
+- Current version: 1
+- Retention: current and at most one previous snapshot
+- Created session: session_nori_r4593_2
+- Updated session: session_nori_r4593_2
+- Disposition: none
+- Successor: none
+
+## Related references
+
+- subsection:root_slide_obstruction_classes_and_antipodal_selector_topology, exact version 1
+
+## Research note
+
+# Editorial scope and mathematical status
+
+Proof-level record of the root-slide selection obstruction; topological index alone does not witness the required physical NORI path.
+
+The exact compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
+
+
+---
+
+## Retired Subsection: Root-slide obstruction classes and antipodal selector topology
+
+Source ID: `root_slide_obstruction_classes_and_antipodal_selector_topology`
+Source Section: `nori_topological_obstructions`
+Exact original Subsection composition: v1.
 
 # Root-slide obstruction classes and antipodal selector topology
 

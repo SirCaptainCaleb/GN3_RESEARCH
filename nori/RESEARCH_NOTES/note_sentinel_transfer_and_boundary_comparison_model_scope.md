@@ -1,4 +1,38 @@
-# Scope of distinguished-coordinate counterexamples and edge-order realizability
+# Scope limits of distinguished-direction NORI constructions and boundary edge-order models
+
+- Stable ID: note_sentinel_transfer_and_boundary_comparison_model_scope
+- Author: NORI manuscript editorial migration; mathematical origins recorded in original compositions
+- Primary home: section:nori_foundations
+- Labels: obstruction, partial_argument
+- Lifecycle: active
+- Epistemic status: proved
+- Current version: 1
+- Retention: current and at most one previous snapshot
+- Created session: session_nori_r4593_2
+- Updated session: session_nori_r4593_2
+- Disposition: none
+- Successor: none
+
+## Related references
+
+- subsection:scope_of_distinguished_coordinate_counterexamples_and_edge_order_realizability, exact version 1
+
+## Research note
+
+# Editorial scope and mathematical status
+
+Detailed scope analysis establishing what the distinguished-coordinate constructions imply—and fail to imply—about NORI1, NORI2, and ordinary boundary tournaments.
+
+The exact compositions below are copied verbatim from the previous manuscript hierarchy for reproducibility. Editorial transfer is not a refutation or a new mathematical proof. Manuscript historical versions and provenance remain accessible through nori.read_manuscript.
+
+
+---
+
+## Retired Subsection: Scope of distinguished-coordinate counterexamples and edge-order realizability
+
+Source ID: `scope_of_distinguished_coordinate_counterexamples_and_edge_order_realizability`
+Source Section: `nori_foundations`
+Exact original Subsection composition: v1.
 
 # Scope of the distinguished-coordinate construction and edge-order realizability
 

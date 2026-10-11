@@ -1,4 +1,6 @@
 {
+  "active_section_count": 16,
+  "active_subsection_count": 60,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -80,12 +82,6 @@
         "math_version": 1,
         "position": 3,
         "version": 1
-      },
-      {
-        "id": "nori_maximal_geodesic_exchanges",
-        "math_version": 1,
-        "position": 4,
-        "version": 1
       }
     ],
     "nori_article_vi_affine_exterior": [
@@ -112,12 +108,6 @@
     ],
     "nori_article_viii_edges": [
       {
-        "id": "nori_edge_affine_blocks",
-        "math_version": 1,
-        "position": 1,
-        "version": 1
-      },
-      {
         "id": "nori_edge_central_carriers",
         "math_version": 1,
         "position": 2,
@@ -128,9 +118,9 @@
   "article_versions": {
     "nori_article_i_conjecture": {
       "composition": {
-        "body_chars": 24708,
-        "composed_through_revision": 4796,
-        "composition_version": 36,
+        "body_chars": 1784,
+        "composed_through_revision": 4891,
+        "composition_version": 37,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -139,7 +129,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Integrates directed pair one-sentinel Raynaud NORI2 closure",
+        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
         "stale": false,
         "stale_dependencies": []
       },
@@ -147,9 +137,9 @@
     },
     "nori_article_ii_topological_carriers": {
       "composition": {
-        "body_chars": 3950,
-        "composed_through_revision": 4451,
-        "composition_version": 1,
+        "body_chars": 1205,
+        "composed_through_revision": 4913,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_section_position_now": 3,
@@ -158,7 +148,7 @@
           "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
         "stale": false,
         "stale_dependencies": []
       },
@@ -166,9 +156,9 @@
     },
     "nori_article_iii_reachability": {
       "composition": {
-        "body_chars": 4633,
-        "composed_through_revision": 4809,
-        "composition_version": 2,
+        "body_chars": 1093,
+        "composed_through_revision": 4893,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_section_position_now": 3,
@@ -177,7 +167,7 @@
           "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Connects established Feder–Subi path formulation and Leader–Long geodesic equivalence to NORI1 and exact three-face doubling limitations.",
+        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
         "stale": false,
         "stale_dependencies": []
       },
@@ -186,8 +176,8 @@
     "nori_article_iv_windows": {
       "composition": {
         "body_chars": 3099,
-        "composed_through_revision": 4453,
-        "composition_version": 1,
+        "composed_through_revision": 4899,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -196,7 +186,7 @@
           "sections_now": 2
         },
         "has_composition": true,
-        "source_note": "Standalone selective article synthesis from proved section arguments.",
+        "source_note": "Refresh composed dependencies after selective publication audit",
         "stale": false,
         "stale_dependencies": []
       },
@@ -204,18 +194,18 @@
     },
     "nori_article_v_local_connectors": {
       "composition": {
-        "body_chars": 4938,
-        "composed_through_revision": 4723,
-        "composition_version": 2,
+        "body_chars": 1135,
+        "composed_through_revision": 4914,
+        "composition_version": 4,
         "frontier": {
           "current": true,
-          "latest_section_position_now": 4,
-          "latest_section_position_when_composed": 4,
-          "sections_existing_when_composed": 4,
-          "sections_now": 4
+          "latest_section_position_now": 3,
+          "latest_section_position_when_composed": 3,
+          "sections_existing_when_composed": 3,
+          "sections_now": 3
         },
         "has_composition": true,
-        "source_note": "Integrates and contextualizes the exact all-dimensional adjacent-swap plateau theorem.",
+        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
         "stale": false,
         "stale_dependencies": []
       },
@@ -223,9 +213,9 @@
     },
     "nori_article_vi_affine_exterior": {
       "composition": {
-        "body_chars": 3381,
-        "composed_through_revision": 4455,
-        "composition_version": 1,
+        "body_chars": 1007,
+        "composed_through_revision": 4900,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
@@ -234,7 +224,7 @@
           "sections_now": 2
         },
         "has_composition": true,
-        "source_note": "Standalone selective article composition with the proved mathematical frontier.",
+        "source_note": "Refresh composed dependencies after selective publication audit",
         "stale": false,
         "stale_dependencies": []
       },
@@ -242,9 +232,9 @@
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
-        "body_chars": 14509,
-        "composed_through_revision": 4859,
-        "composition_version": 14,
+        "body_chars": 1789,
+        "composed_through_revision": 4915,
+        "composition_version": 15,
         "frontier": {
           "current": true,
           "latest_section_position_now": 1,
@@ -253,7 +243,7 @@
           "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "",
+        "source_note": "Refresh Article after mixed Subsection obstruction extraction",
         "stale": false,
         "stale_dependencies": []
       },
@@ -261,18 +251,18 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 8660,
-        "composed_through_revision": 4852,
-        "composition_version": 8,
+        "body_chars": 1335,
+        "composed_through_revision": 4896,
+        "composition_version": 9,
         "frontier": {
           "current": true,
           "latest_section_position_now": 2,
           "latest_section_position_when_composed": 2,
-          "sections_existing_when_composed": 2,
-          "sections_now": 2
+          "sections_existing_when_composed": 1,
+          "sections_now": 1
         },
         "has_composition": true,
-        "source_note": "Integrates exact k-direction color-prescription equivalence and established finite geodesic A8 into seven-direction unrestricted NORI1 theorem.",
+        "source_note": "Publication-focused Article synopsis after archiving method-specific negative results",
         "stale": false,
         "stale_dependencies": []
       },
@@ -281,27 +271,29 @@
   },
   "brainstorm_count": 0,
   "composition_model": "recursive-composition-v7",
-  "generated_at": "2026-10-11T02:54:16.055437+00:00",
+  "generated_at": "2026-10-11T03:13:53.143011+00:00",
   "item_count": 0,
   "mirror_format": 19,
-  "research_note_count": 3,
+  "research_note_count": 14,
   "result_count": 0,
+  "retired_section_count": 2,
+  "retired_subsection_count": 15,
   "schema": "nori",
   "section_versions": {
     "nori_affine_exterior_colorings": {
       "composition": {
         "body_chars": 9760,
-        "composed_through_revision": 4312,
-        "composition_version": 2,
+        "composed_through_revision": 4897,
+        "composition_version": 3,
         "frontier": {
-          "current": false,
+          "current": true,
           "latest_subsection_no_now": 6,
-          "latest_subsection_no_when_composed": 7,
-          "subsections_existing_when_composed": 7,
+          "latest_subsection_no_when_composed": 6,
+          "subsections_existing_when_composed": 4,
           "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Integrated topical subsection results and refreshed direct composition dependencies.",
+        "source_note": "Refresh exact active Subsection frontier following research-note migration",
         "stale": false,
         "stale_dependencies": []
       },
@@ -310,18 +302,18 @@
     },
     "nori_affine_sensitivity": {
       "composition": {
-        "body_chars": 3785,
-        "composed_through_revision": 4446,
-        "composition_version": 1,
+        "body_chars": 897,
+        "composed_through_revision": 4889,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 8,
           "latest_subsection_no_when_composed": 8,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "Selective section synthesis of rooted physical geometry and controlled exterior sensitivity.",
+        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
         "stale": false,
         "stale_dependencies": []
       },
@@ -350,18 +342,18 @@
     },
     "nori_connector_root_hubs": {
       "composition": {
-        "body_chars": 3351,
-        "composed_through_revision": 4444,
-        "composition_version": 1,
+        "body_chars": 1068,
+        "composed_through_revision": 4911,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
           "latest_subsection_no_when_composed": 9,
-          "subsections_existing_when_composed": 3,
-          "subsections_now": 3
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Selective proof-oriented synthesis of physical connector lemmas.",
+        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
         "stale": false,
         "stale_dependencies": []
       },
@@ -371,37 +363,17 @@
     "nori_cyclic_window_transport": {
       "composition": {
         "body_chars": 16870,
-        "composed_through_revision": 4321,
-        "composition_version": 2,
-        "frontier": {
-          "current": false,
-          "latest_subsection_no_now": 4,
-          "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 3
-        },
-        "has_composition": true,
-        "source_note": "Bottom-up synchronization after direct subsection Item-intake recomposition; proofs retained.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_edge_affine_blocks": {
-      "composition": {
-        "body_chars": 2713,
-        "composed_through_revision": 4823,
+        "composed_through_revision": 4898,
         "composition_version": 3,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
-          "subsections_now": 1
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "",
+        "source_note": "Refresh exact active Subsection frontier following research-note migration",
         "stale": false,
         "stale_dependencies": []
       },
@@ -410,18 +382,18 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 6587,
-        "composed_through_revision": 4851,
-        "composition_version": 4,
+        "body_chars": 1246,
+        "composed_through_revision": 4890,
+        "composition_version": 5,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 4,
           "latest_subsection_no_when_composed": 4,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
         },
         "has_composition": true,
-        "source_note": "Integrates exact arbitrary one-switch k-cube to every larger NORI1 k-coordinate prescription equivalence and literature-derived seven-direction universal consequence.",
+        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
         "stale": false,
         "stale_dependencies": []
       },
@@ -430,18 +402,18 @@
     },
     "nori_foundations": {
       "composition": {
-        "body_chars": 31255,
-        "composed_through_revision": 4795,
-        "composition_version": 32,
+        "body_chars": 2135,
+        "composed_through_revision": 4883,
+        "composition_version": 33,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 17,
           "latest_subsection_no_when_composed": 17,
-          "subsections_existing_when_composed": 17,
-          "subsections_now": 17
+          "subsections_existing_when_composed": 15,
+          "subsections_now": 15
         },
         "has_composition": true,
-        "source_note": "Integrates Raynaud directed-pair one-sentinel one-switch theorem",
+        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
         "stale": false,
         "stale_dependencies": []
       },
@@ -450,38 +422,18 @@
     },
     "nori_local_connector_geometry": {
       "composition": {
-        "body_chars": 4287,
-        "composed_through_revision": 4306,
-        "composition_version": 1,
-        "frontier": {
-          "current": false,
-          "latest_subsection_no_now": 6,
-          "latest_subsection_no_when_composed": 9,
-          "subsections_existing_when_composed": 9,
-          "subsections_now": 3
-        },
-        "has_composition": true,
-        "source_note": "Coherent thematic synthesis of direct subsection proofs with precise physical window hypotheses and limits.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "math_version": 1,
-      "version": 1
-    },
-    "nori_maximal_geodesic_exchanges": {
-      "composition": {
-        "body_chars": 6429,
-        "composed_through_revision": 4722,
-        "composition_version": 2,
+        "body_chars": 1121,
+        "composed_through_revision": 4910,
+        "composition_version": 3,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 1,
-          "latest_subsection_no_when_composed": 1,
-          "subsections_existing_when_composed": 1,
-          "subsections_now": 1
+          "latest_subsection_no_now": 6,
+          "latest_subsection_no_when_composed": 6,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Integrates the all-dimensional maximal-switch one-move plateau and refreshes direct subsection provenance.",
+        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
         "stale": false,
         "stale_dependencies": []
       },
@@ -550,18 +502,18 @@
     },
     "nori_reachability_topological_extraction": {
       "composition": {
-        "body_chars": 5927,
-        "composed_through_revision": 4440,
-        "composition_version": 1,
+        "body_chars": 942,
+        "composed_through_revision": 4886,
+        "composition_version": 2,
         "frontier": {
           "current": true,
-          "latest_subsection_no_now": 9,
-          "latest_subsection_no_when_composed": 9,
-          "subsections_existing_when_composed": 4,
-          "subsections_now": 4
+          "latest_subsection_no_now": 6,
+          "latest_subsection_no_when_composed": 6,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Integrates four reachability-carrier subsections, retaining edge/NORI extraction distinction and exact physical hypotheses.",
+        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
         "stale": false,
         "stale_dependencies": []
       },
@@ -570,9 +522,9 @@
     },
     "nori_seven_coordinate_structure": {
       "composition": {
-        "body_chars": 21521,
-        "composed_through_revision": 4858,
-        "composition_version": 20,
+        "body_chars": 2089,
+        "composed_through_revision": 4912,
+        "composition_version": 21,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
@@ -581,7 +533,7 @@
           "subsections_now": 9
         },
         "has_composition": true,
-        "source_note": "",
+        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
         "stale": false,
         "stale_dependencies": []
       },
@@ -590,18 +542,18 @@
     },
     "nori_topological_carriers": {
       "composition": {
-        "body_chars": 10471,
-        "composed_through_revision": 4311,
-        "composition_version": 2,
+        "body_chars": 1526,
+        "composed_through_revision": 4909,
+        "composition_version": 4,
         "frontier": {
-          "current": false,
-          "latest_subsection_no_now": 12,
-          "latest_subsection_no_when_composed": 12,
-          "subsections_existing_when_composed": 12,
-          "subsections_now": 8
+          "current": true,
+          "latest_subsection_no_now": 11,
+          "latest_subsection_no_when_composed": 11,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
         },
         "has_composition": true,
-        "source_note": "Elevation after repartition into focused subsections: new major lemmas integrated into mathematical narrative and direct dependencies fully refreshed.",
+        "source_note": "Split mixed Subsection obstructions into notes while retaining independent theorems",
         "stale": false,
         "stale_dependencies": []
       },
@@ -610,18 +562,18 @@
     },
     "nori_topological_obstructions": {
       "composition": {
-        "body_chars": 3064,
-        "composed_through_revision": 4442,
-        "composition_version": 1,
+        "body_chars": 737,
+        "composed_through_revision": 4885,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "latest_subsection_no_now": 9,
           "latest_subsection_no_when_composed": 9,
-          "subsections_existing_when_composed": 3,
-          "subsections_now": 3
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
         },
         "has_composition": true,
-        "source_note": "Selective section synthesis from established physical and topological subsection arguments.",
+        "source_note": "Publication-focused recomposition after complete transfer of method obstructions to notes",
         "stale": false,
         "stale_dependencies": []
       },
@@ -649,7 +601,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1251,
+  "snapshot_revision": 1294,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -679,25 +631,6 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
-      "version": 1
-    },
-    "affine_and_nonlinear_edge_coloring_families": {
-      "composition": {
-        "body_chars": 3698,
-        "composed_through_revision": 4822,
-        "composition_version": 3,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Consolidate existing result from Article III; retain the original affine and block manuscript",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_edge_affine_blocks",
       "version": 1
     },
     "affine_change_syndromes_and_exact_root_count_phenomena": {
@@ -833,25 +766,6 @@
       "section_id": "nori_reachability_topological_extraction",
       "version": 1
     },
-    "bichromatic_root_diamonds_and_mixed_terminal_cap_obstruction": {
-      "composition": {
-        "body_chars": 13924,
-        "composed_through_revision": 4287,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_connector_root_hubs",
-      "version": 1
-    },
     "bichromatic_six_move_hubs_and_two_color_connector_density": {
       "composition": {
         "body_chars": 16165,
@@ -909,44 +823,6 @@
       "section_id": "nori_topological_carriers",
       "version": 1
     },
-    "central_layer_edge_carriers_and_tight_paths": {
-      "composition": {
-        "body_chars": 2421,
-        "composed_through_revision": 4448,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Selected tight-path transfer, complement-odd completion, and square-curvature results.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_edge_central_carriers",
-      "version": 1
-    },
-    "certified_four_geodesic_squares_and_physical_edge_coverage": {
-      "composition": {
-        "body_chars": 10924,
-        "composed_through_revision": 4267,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_local_connector_geometry",
-      "version": 1
-    },
     "codimension_two_reachability_facets_and_terminal_cap_rigidity": {
       "composition": {
         "body_chars": 10937,
@@ -987,16 +863,16 @@
     },
     "connector_square_certificates_and_monochromatic_edge_shadows": {
       "composition": {
-        "body_chars": 16211,
-        "composed_through_revision": 4285,
-        "composition_version": 1,
+        "body_chars": 3747,
+        "composed_through_revision": 4902,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Extracted method-specific negative arguments verbatim to note note_certification_shadow_realization_and_root_domination_limits",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1006,16 +882,16 @@
     },
     "coupled_chronological_saddle_potentials_and_checkerboard_obstructions": {
       "composition": {
-        "body_chars": 12864,
-        "composed_through_revision": 4857,
-        "composition_version": 2,
+        "body_chars": 9209,
+        "composed_through_revision": 4904,
+        "composition_version": 3,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Formatting repair: render exact finite Python enumeration certificate as a proper fenced code block; mathematical assertions unchanged",
+        "source_note": "Extracted method-specific negative arguments verbatim to note note_checkerboard_submatrix_and_four_local_hamilton_completion_limits",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1040,25 +916,6 @@
       },
       "development_version": 1,
       "section_id": "nori_local_connector_geometry",
-      "version": 1
-    },
-    "cubical_tucker_labels_and_fixed_point_extraction_barriers": {
-      "composition": {
-        "body_chars": 24089,
-        "composed_through_revision": 4295,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Comparison and conditional use of existing cubical fixed-point toolkit, preserving necessary genuine path-label extraction hypotheses.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_carriers",
       "version": 1
     },
     "cyclic_edge_seams_parity_monodromy_and_root_slide_defects": {
@@ -1308,25 +1165,6 @@
       "section_id": "nori_reachability_and_splicing",
       "version": 1
     },
-    "exterior_bit_holonomy_and_the_six_path_extension_obstruction": {
-      "composition": {
-        "body_chars": 2739,
-        "composed_through_revision": 4302,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Composition refreshed against complete housed Item set after regrouping; preserves source proofs and appends scope-specific new results.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_affine_sensitivity",
-      "version": 2
-    },
     "exterior_face_charts_and_fourier_transport": {
       "composition": {
         "body_chars": 12465,
@@ -1517,25 +1355,6 @@
       "section_id": "nori_foundations",
       "version": 1
     },
-    "maximal_geodesic_blockers_and_snake_exchanges": {
-      "composition": {
-        "body_chars": 21571,
-        "composed_through_revision": 4721,
-        "composition_version": 2,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Adds constructive all-dimensional reversal-odd flat worst-case adjacent-swap trap, ruling out strict local descent even with arbitrary root moves.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_maximal_geodesic_exchanges",
-      "version": 1
-    },
     "maximal_reachability_supports_and_antipodal_missing_facet_bounds": {
       "composition": {
         "body_chars": 11854,
@@ -1557,16 +1376,16 @@
     },
     "near_midpoint_hub_witnesses_and_concrete_splice_failure_tests": {
       "composition": {
-        "body_chars": 23706,
-        "composed_through_revision": 4281,
-        "composition_version": 1,
+        "body_chars": 21688,
+        "composed_through_revision": 4906,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Extracted method-specific negative arguments verbatim to note note_fixed_hub_six_square_end_face_extension_failure",
         "stale": false,
         "stale_dependencies": []
       },
@@ -1631,44 +1450,6 @@
       "section_id": "nori_cyclic_window_transport",
       "version": 1
     },
-    "opposite_corner_terminal_basins_and_freudenthal_reachability_cones": {
-      "composition": {
-        "body_chars": 11620,
-        "composed_through_revision": 4265,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_reachability_topological_extraction",
-      "version": 1
-    },
-    "ordered_segment_posets_memory_braids_and_equivariant_collapse": {
-      "composition": {
-        "body_chars": 10796,
-        "composed_through_revision": 4282,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_carriers",
-      "version": 1
-    },
     "physical_good_window_complexes_temporal_parity_and_root_transport": {
       "composition": {
         "body_chars": 24305,
@@ -1687,25 +1468,6 @@
       "development_version": 1,
       "section_id": "nori_topological_obstructions",
       "version": 2
-    },
-    "physical_root_order_prisms_and_balanced_two_cap_packets": {
-      "composition": {
-        "body_chars": 10281,
-        "composed_through_revision": 4273,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_carriers",
-      "version": 1
     },
     "physical_window_shift_paths_and_root_shuttle_transport": {
       "composition": {
@@ -1783,63 +1545,6 @@
       "section_id": "nori_reachability_topological_extraction",
       "version": 2
     },
-    "root_profile_nerves_and_signed_mixed_branch_interfaces": {
-      "composition": {
-        "body_chars": 14276,
-        "composed_through_revision": 4283,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_reachability_topological_extraction",
-      "version": 1
-    },
-    "root_slide_obstruction_classes_and_antipodal_selector_topology": {
-      "composition": {
-        "body_chars": 8885,
-        "composed_through_revision": 4263,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused editorial composition: core proved source arguments integrated under a single topical mathematical advance; redundant or orthogonal Items retained for later elevation.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_obstructions",
-      "version": 1
-    },
-    "scope_of_distinguished_coordinate_counterexamples_and_edge_order_realizability": {
-      "composition": {
-        "body_chars": 6876,
-        "composed_through_revision": 4726,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Analytic proofs for lower-arity distinguished-coordinate families and exact line-graph realization; candidate stronger symmetry clearly conjectural",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 1
-    },
     "seven_coordinate_shared_pivot_endpoint_constraints": {
       "composition": {
         "body_chars": 2635,
@@ -1897,25 +1602,6 @@
       "section_id": "nori_foundations",
       "version": 1
     },
-    "sharp_rooted_obstructions_to_one_change_antipodal_geodesics": {
-      "composition": {
-        "body_chars": 8283,
-        "composed_through_revision": 4689,
-        "composition_version": 3,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Typography correction for exact thin-shell theorem; mathematics unchanged.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_foundations",
-      "version": 2
-    },
     "six_move_endpoint_control_and_exterior_sensitivity_rigidity": {
       "composition": {
         "body_chars": 6097,
@@ -1934,25 +1620,6 @@
       "development_version": 1,
       "section_id": "nori_affine_sensitivity",
       "version": 2
-    },
-    "static_path_nerve_index_limits_and_five_block_root_repairs": {
-      "composition": {
-        "body_chars": 16606,
-        "composed_through_revision": 4293,
-        "composition_version": 1,
-        "frontier": {
-          "current": true,
-          "development_version_now": 1,
-          "development_version_when_composed": 1
-        },
-        "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
-        "stale": false,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_topological_carriers",
-      "version": 1
     },
     "two_cap_centering_and_moving_physical_seam_square_directions": {
       "composition": {
@@ -1994,16 +1661,16 @@
     },
     "two_sided_helly_root_sheets_and_high_index_support_selection": {
       "composition": {
-        "body_chars": 25411,
-        "composed_through_revision": 4292,
-        "composition_version": 1,
+        "body_chars": 15779,
+        "composed_through_revision": 4908,
+        "composition_version": 2,
         "frontier": {
           "current": true,
           "development_version_now": 1,
           "development_version_when_composed": 1
         },
         "has_composition": true,
-        "source_note": "Focused composition of representative proved source arguments with the precise hypotheses, contradictions, and extraction limits; other related Items retained.",
+        "source_note": "Extracted method-specific negative arguments verbatim to note note_antipodal_involution_index_and_bichromatic_bad_root_limits",
         "stale": false,
         "stale_dependencies": []
       },

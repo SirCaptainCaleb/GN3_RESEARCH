@@ -2,15 +2,17 @@
 
 ## Article setting and orientation
 
-**Chronological compatibility and defect reduction.** Section VII now proves that an alternating increasing Hamilton path in an edge-ordered bipartite graph is exactly an adjacent-swap local saddle of a triangular edge-rank potential, minimizing in one parity permutation and maximizing in the other. It also proves a hereditary minimax pivot theorem for checkerboard-free (chain-prefix) matrices, an O(log n) probabilistic ceiling on extracting checkerboard-free complete bipartite subgraphs from arbitrary edge orders, and a K5 obstruction to four-local Hamilton completion. For every ordinary boundary 3-tournament, a spanning order with D bad windows yields a positive path of order at least 2+ceil((N-2-D)/(D+1)) when positive windows exist; o(sqrt(n)) defect would surpass the square-root lower bound. The checkerboard-free spanning conjecture remains open, as do the two full grand goals.
+The target boundary-tournament problem concerns *every* ordinary reversal-odd ordered-triple orientation, without assuming that its incident-edge comparisons extend to one global total order of E(K_n). Such an order exists precisely when the comparison orientation of L(K_n) is acyclic; the edge-ordered subclass is an explicit fallback, never a substitute for the full target. NORI1's full class of arbitrary antipodally odd physical cube-edge colorings is the other equally primary research objective.
 
-**Time-indexed local orders and the coupled-parity obstruction.** Every *chronologically prescribed* sequence of transitive tournaments on \(m\) vertices admits a spanning path whose \(i\)-th edge follows tournament \(i\), proved by minimizing a cumulative rank-assignment potential. This allows one parity's entire sequence of boundary-tournament windows to be made positive for any fixed order of the other parity, whenever the corresponding middle-local tournaments are transitive. Synchronizing both parities is a distinct obligation: the three ordered perfect-matchings of \(K_4\) give an ordinary edge-ordered boundary tournament with transitive local tournaments but no monochromatic spanning tight path, since the first and last edges in every four-vertex path receive the same matching weight. All ordinary boundary tournaments retain the established square-root lower bound; the full long-path question is open. Exact arguments are in Section VII, *Endpoint-tournament factorization and monochromatic orders* (Subsection composition v6).
+The current Section establishes genuine mathematical theorems about seven-direction endpoint and wing factorizations, admissible physical boundary-compatible three-face families, and edge-ordered/ac\-yclic boundary-tournament increasing paths under their precise hypotheses. Its chronological-saddle construction equates a full alternating increasing Hamilton path with adjacent-exchange extremality for a triangular edge-rank potential, and derives chain-prefix/minimax connector criteria. The full-class path/defect reduction measures the effect of bad ordered-triple windows on extracted monochromatic vertex-simple paths. These are useful affirmative structural statements, not a proof of the unrestricted conjecture.
 
 *Full Article composition: [source manuscript](../nori_article_vii_seven_coordinate.md).*
 
 ## Seven-coordinate endpoint constraints and tournament structure
 
+Two mathematical objectives must remain distinct: a long vertex-simple monochromatic tight path in every ordinary boundary 3-tournament, and unrestricted antipodally odd physical-edge NORI1 closure. A boundary 3-tournament assigns b(a,b,c) to each ordered triple of distinct original vertices with reversal oddness b(c,b,a)=1−b(a,b,c). No global edge order is assumed. Edge-order-realizable tournaments, characterized by an acyclic orientation of the line graph L(K_n), are a strict and useful fallback, not the full theorem.
 
+The surviving Subsections develop exact seven-direction endpoint pivots and wing factorizations, boundary-tour\-nament monochromatic orders under stated additional hypotheses, physical sparse-exterior transfers, and positive generically full geodesic existence for restricted classes. The strongest chronological-saddle manuscript establishes an exact coupling of an alternating increasing Hamilton path with extremization of a triangular edge-rank potential; its threshold-chain and hereditary minimax connector lemmas and full-class path/defect reduction remain published. These statements retain original-vertex simplicity and state exactly where acyclic comparisons or exterior-bit restrictions enter.
 
 *Full Section composition: [source manuscript](nori_seven_coordinate_structure.md).*
 
@@ -1108,68 +1110,7 @@ The missing step is **global compatibility**: choosing successive pivots and the
 
 As finite evidence, exhaustive enumeration of all \(6!\) orders of \(K_{3,2}\) identifies exactly 264 checkerboard-free orders; all have an increasing alternating spanning path beginning and ending in the larger part. Enumeration of all \(9!\) orders of \(K_{3,3}\) identifies exactly 30,240 checkerboard-free orders; all have an increasing alternating spanning path. These finite checks establish **no** general Hamilton theorem.
 
-## 4. Why extraction of large checkerboard-free submatrices cannot yield the general altitude bound
 
-**Theorem 4 (logarithmic clean-submatrix barrier).** In a uniformly random ordering of all edges of \(K_N\), with probability tending to one, every checkerboard-free complete bipartite subgraph with disjoint parts of the same order \(k\) satisfies
-\[
-k\le \left(\frac8{\log(3/2)}+o(1)\right)\log N.
-\tag{5}
-\]
-
-**Proof.** Fix disjoint sets \(A,B\) of size \(k\). Partition \(\lfloor k/2\rfloor\) disjoint pairs from \(A\), and likewise from \(B\). The pair products generate \(\lfloor k/2\rfloor^2\) edge-disjoint \(K_{2,2}\) rectangles. For each rectangle, among the six choices of its two smallest edges exactly two choices yield a disjoint pair; its checkerboard-obstruction probability is \(1/3\). Relative orders on disjoint edge sets in a uniform random permutation are independent. Hence
-\[
-\Pr[(A,B)\ \text{checkerboard-free}]
-\le (2/3)^{\lfloor k/2\rfloor^2}.
-\]
-There are at most \(N^{2k}\) ordered pairs \((A,B)\). The union bound gives
-\[
-\Pr[\exists\ \text{checkerboard-free }K_{k,k}]
-\le N^{2k}(2/3)^{\lfloor k/2\rfloor^2}.
-\tag{6}
-\]
-For \(k=\lceil C\log N\rceil\), the logarithm of (6) equals at most
-\[
-\left(2C-\frac{C^2}{4}\log(3/2)+o(1)\right)(\log N)^2,
-\]
-which tends to \(-\infty\) for every \(C>8/\log(3/2)\). The forbidden-rectangle property is hereditary, so exclusion of size \(\lceil C\log N\rceil\) excludes every larger such subgraph. Let \(C\) approach the displayed constant. \(\square\)
-
-Consequently, attempting to prove a polynomial or nearly linear monotone-path bound for *every* edge order by extracting **one** checkerboard-free \(K_{k,k}\) cannot succeed. A successful general argument must accommodate checkerboards and coordinate their effects.
-
-## 5. A finite obstruction to four-local Hamilton completion
-
-**Proposition 5.** There is an edge ordering of \(K_5\) for which every induced \(K_4\) admits an increasing Hamilton path but \(K_5\) admits none.
-
-**Proof (exact certificate).** On vertices \(0,1,2,3,4\), rank the ten edges from 0 to 9 in the following increasing order:
-\[
-14,\quad12,\quad03,\quad04,\quad23,\quad34,\quad02,\quad13,\quad24,\quad01.
-\tag{7}
-\]
-For each deleted vertex \(v=0,1,2,3,4\), the four-vertex sequences
-\[
-(1,2,3,4),\quad(0,3,2,4),\quad(0,4,3,1),\quad
-(1,4,0,2),\quad(2,3,1,0),
-\]
-respectively, are increasing Hamilton paths in the remaining graph. Their edge-rank sequences are, respectively,
-\[
-(1,4,5),\quad(2,4,8),\quad(3,5,7),\quad(0,3,6),\quad(4,7,9).
-\]
-A complete finite enumeration of vertex-simple directed increasing paths of orders \(2,3,4,5\) gives counts \(20,30,12,0\). These counts can be reproduced without a solver by the following certificate:
-
-```python
-from itertools import permutations
-edges = ["14","12","03","04","23","34","02","13","24","01"]
-rank = {frozenset(map(int,e)):i for i,e in enumerate(edges)}
-def increasing(p):
-    e = [rank[frozenset((p[i],p[i+1]))] for i in range(len(p)-1)]
-    return all(x < y for x,y in zip(e,e[1:]))
-print([sum(increasing(p) for p in permutations(range(5),k))
-       for k in (2,3,4,5)])
-# [20, 30, 12, 0]
-```
-
-Therefore every four-vertex restriction has a positive spanning tight path under the associated global-edge-order boundary tournament, but the five-vertex tournament has no positive spanning tight path. Reverse orientation converts increasing paths to decreasing paths, so no negative spanning tight path exists either. \(\square\)
-
-This invalidates the inference from Hamiltonicity of every induced four-vertex boundary chart to global Hamiltonicity. It does not limit the established long-path theorems.
 
 ## 6. A full-class path/defect reduction
 
