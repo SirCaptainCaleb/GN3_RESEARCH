@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: compact evidence-oriented research-note map final verification
+# NORI assembled publication: revision 1250 final research-notes artifact and lookup freshness
 
 on:
   workflow_dispatch:
