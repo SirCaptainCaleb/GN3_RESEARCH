@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# NORI assembled publication: update startup to NORI1-preserving strengthened structures only
+# NORI assembled publication: selective research-note layer and manuscript-preserving artifact refresh
 
 on:
   workflow_dispatch:
