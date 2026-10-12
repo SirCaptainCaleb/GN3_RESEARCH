@@ -749,28 +749,35 @@ Generated: {rev.get('generated_at')}
     if schema == "nori":
         # Only selected-child parent compositions represent current papers.
         by_id = {n["id"]: n for n in data["nodes"]}
-        superseded = {
-            n["id"] for n in data["nodes"]
-            if n.get("data", {}).get("research_status") == "superseded"
+        # research_status is absent for ordinary active nodes in the current schema.
+        # Export only active, non-archived papers; other states remain in Supabase.
+        def is_active_node(n):
+            return (
+                not n.get("archived_at")
+                and (n.get("data") or {}).get("research_status") in (None, "active")
+            )
+        active_node_ids = {
+            n["id"] for n in data["nodes"] if is_active_node(n)
         }
-        current_articles = [a for a in articles if a["id"] not in superseded]
+        current_articles = [a for a in articles if a["id"] in active_node_ids]
+        active_article_ids = {a["id"] for a in current_articles}
         for node in tree:
             relative = Path(node["path"])
             if relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "grand_conjecture":
                 raise ValueError(f"invalid canonical tree path: {relative}")
+            # Omit every manuscript nested under an inactive Article or Section.
+            if len(relative.parts) >= 3 and relative.parts[1] not in active_article_ids:
+                continue
+            if len(relative.parts) >= 4 and relative.parts[2] not in active_node_ids:
+                continue
             identifier = relative.stem
-            node_info = by_id.get(identifier, {})
-            if node_info.get("type") in ("article", "section"):
+            node_info = by_id.get(identifier)
+            if node_info and not is_active_node(node_info):
+                continue
+            if node_info and node_info.get("type") in ("article", "section"):
                 # Eliminate independently authored parent summaries.
                 continue
-            if identifier in superseded:
-                write(root / "SUPERSEDED" / relative.relative_to("grand_conjecture"),
-                      "# SUPERSEDED RESEARCH — retained for historical reference\n\n"
-                      + (node_info.get("data", {}).get("superseded_reason") or
-                         "Superseded by the refutation of the NORI3 one-switch conjecture.")
-                      + "\n\n" + (node.get("content") or ""))
-            else:
-                write(root / relative, node.get("content") or "")
+            write(root / relative, node.get("content") or "")
         # Latest database parent composition is the selected-child assembly.
         current_comps = {}
         for composition in data["compositions"]:
@@ -780,7 +787,6 @@ Generated: {rev.get('generated_at')}
                     composition.get("composition_version") or 0
                 ) > (current_comps[key].get("composition_version") or 0):
                     current_comps[key] = composition
-        active_article_ids = {a["id"] for a in current_articles}
         article_by_section = {
             x["section_id"]: x["article_id"]
             for x in data["article_sections"]
@@ -792,25 +798,17 @@ Generated: {rev.get('generated_at')}
                 raise ValueError(f"missing assembled Article composition {a['id']}")
             write(root / "grand_conjecture" / a["id"] / "MANUSCRIPT.md", comp["body"])
         for section_id, article_id in article_by_section.items():
-            if section_id in superseded:
+            if section_id not in active_node_ids:
                 continue
             comp = current_comps.get(("section", section_id))
             if not comp:
                 raise ValueError(f"missing assembled Section composition {section_id}")
             write(root / "grand_conjecture" / article_id / section_id / "MANUSCRIPT.md", comp["body"])
 
-        archive = ["# Superseded research", "",
-                   "These manuscripts retain their proofs but are not active.",
-                   ""]
-        for a in articles:
-            if a["id"] in superseded:
-                archive.append("- " + a["title"] + ": " +
-                    str(by_id[a["id"]].get("data", {}).get("superseded_reason") or "Superseded"))
-        write(root / "SUPERSEDED" / "README.md", "\n".join(archive))
         index = ["# Active research Articles", "",
                  "Each paper assembles selected Subsection compositions through "
-                 "Section compositions. Superseded work is retained in "
-                 "[SUPERSEDED](../SUPERSEDED/README.md).", ""]
+                 "Section compositions. Inactive and superseded Articles remain "
+                 "in Supabase and are excluded from this artifact.", ""]
         for a in current_articles:
             index.append(f"- [{a.get('title') or a['id']}]({safe_name(a['id'])}/MANUSCRIPT.md)")
     else:
@@ -842,7 +840,7 @@ Generated: {rev.get('generated_at')}
                 "version": d.get("version"),
                 "composition": composition_status(data, "article", d["id"]),
             }
-            for d in articles
+            for d in (current_articles if schema == "nori" else articles)
         },
         "article_sequences": {
             d["id"]: [
@@ -857,7 +855,7 @@ Generated: {rev.get('generated_at')}
                     key=lambda x: x.get("position") or 0,
                 )
             ]
-            for d in articles
+            for d in (current_articles if schema == "nori" else articles)
         },
         "section_versions": {
             r["id"]: {
