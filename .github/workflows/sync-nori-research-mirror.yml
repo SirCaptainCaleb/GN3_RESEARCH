@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI complete two-port curvature theorem and double-cographic reduction.
+# Article XI cube square-exchange rigidity and Q9 proof, quantitative stability notes.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
