@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Refresh after Article XI canonical two-port line-graph curvature theorem.
+# Article XI complete two-port curvature theorem and double-cographic reduction.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
