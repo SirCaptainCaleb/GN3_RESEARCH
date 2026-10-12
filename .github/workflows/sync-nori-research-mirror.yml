@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI theorem: geodesic hexagon homology, affine charge, and resource-half-excess normal form.
+# Article XI: geodesic parity certificates, two-star repairs, saturated integral incidence, and Fourier potentials.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
