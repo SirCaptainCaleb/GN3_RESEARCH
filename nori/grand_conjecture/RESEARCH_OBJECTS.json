@@ -153,6 +153,14 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_frontier_separation_and_cross_intersecting_reachable_families",
+            "type": "subsection",
+            "title": "Antipodal frontier separation and cross-intersecting reachable families",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
             "type": "subsection",
             "title": "Antipodal multifacet bridge and seven-coordinate universality",
@@ -252,6 +260,14 @@
             "id": "common_facet_terminal_lifting_and_exterior_color_stability",
             "type": "subsection",
             "title": "Common-facet terminal lifting and exterior color stability",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection",
+            "type": "subsection",
+            "title": "Common-terminal monochromatic arm bases and rooted Boolean complement intersection",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -729,6 +745,14 @@
             "research_status": "active"
         },
         {
+            "id": "random_smoothing_and_the_failure_of_global_edge_order_purification",
+            "type": "subsection",
+            "title": "Random smoothing and the failure of global edge-order purification",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data",
             "type": "subsection",
             "title": "Reconstruction of antipodally odd edge colorings from local turn data",
@@ -844,6 +868,14 @@
             "id": "the_common_path_symmetry_problem",
             "type": "subsection",
             "title": "The common path-symmetry problem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "three_matroid_hamiltonian_galleries_and_bounded_cost_block_reversal",
+            "type": "subsection",
+            "title": "Three-matroid Hamiltonian galleries and bounded-cost block reversal",
             "version": 1,
             "superseded": false,
             "research_status": "active"

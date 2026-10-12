@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 103,
+  "active_subsection_count": 107,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 570594,
-        "composed_through_revision": 7027,
-        "composition_version": 160,
+        "body_chars": 622276,
+        "composed_through_revision": 7072,
+        "composition_version": 172,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T19:38:56.569242+00:00",
+  "generated_at": "2026-10-12T19:58:40.903912+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 93,
+  "research_note_count": 98,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 386136,
-        "composed_through_revision": 7026,
-        "composition_version": 125,
+        "body_chars": 437818,
+        "composed_through_revision": 7071,
+        "composition_version": 137,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2300,
+  "snapshot_revision": 2345,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -386,6 +386,23 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "antipodal_frontier_separation_and_cross_intersecting_reachable_families": {
+      "composition": {
+        "body_chars": 6048,
+        "composed_through_revision": 7065,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Near-complete monochromatic geodesic equivalence and cross-rank SAT clauses",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
@@ -509,14 +526,14 @@
     },
     "boundary_tournament_antipodal_graphic_flat_matroids_and_the_separate_resource_selector_layer": {
       "composition": {
-        "body_chars": 8654,
-        "composed_through_revision": 7020,
-        "composition_version": 1,
+        "body_chars": 29562,
+        "composed_through_revision": 7047,
+        "composition_version": 7,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "All-dimensional boundary cover graphic/partition matroid classification, non-basis-graph theorem, and opposite-terminal graphic resource-basis packing criterion.",
+        "source_note": "Simultaneous two-color resource rank and Hamilton-connected support; arbitrary gate placement on a neutral Hamilton path; rare-gate probability obstruction.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -601,6 +618,23 @@
         },
         "has_composition": true,
         "source_note": "Clarify group action on roots",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection": {
+      "composition": {
+        "body_chars": 6738,
+        "composed_through_revision": 7070,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two same-color common-terminal arms characterize one-turn Hamilton paths; doubled graphic matroid basis and NORI1-aligned complement-pair reachability formulation.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1611,6 +1645,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "random_smoothing_and_the_failure_of_global_edge_order_purification": {
+      "composition": {
+        "body_chars": 11306,
+        "composed_through_revision": 7057,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Extended common random smoothing principle to antipodally odd cube-edge colorings",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data": {
       "composition": {
         "body_chars": 7467,
@@ -1864,6 +1915,23 @@
       },
       "development_version": 1,
       "section_id": "nori_unification_foundations",
+      "version": 1
+    },
+    "three_matroid_hamiltonian_galleries_and_bounded_cost_block_reversal": {
+      "composition": {
+        "body_chars": 6650,
+        "composed_through_revision": 7054,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Three-matroid Hamiltonian path theorem and sharp bounded-cost nonlocal block-reversal exchange.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "three_turn_boundary_reconstruction_and_legal_turn_contraction": {

@@ -4355,6 +4355,233 @@ The cube's pointed contact graph always has a port-parallel loop by the known ex
 
 The **shared** matroid class is therefore the antipodal graph-cover, graphic-flat, orbit-partition, and pointed-binary construction. The **distinct admissible selectors** are (i) a displacement-minimal lifted fundamental circuit for the cube and (ii) an opposite-terminal union that is a basis of \(\mathsf R_n=M(K_n)\) for boundary tournaments. A unification theorem must preserve this second level of independent resources rather than replacing it by port parallelism.
 
+#### 5. A pulled-back original-resource matroid on covering transitions
+
+Fix the initial ordered pair \((u,v)\). For each covering edge
+\[
+e_{abc}=\{(a,b),(b,c)\}\in E(\mathscr S_n),
+\]
+label its original resource by \(\lambda(e_{abc})=\{b,c\}\in E(K_n)\). This is well-defined because an undirected covering edge has a unique ordered-triple index. Define the parallel-extension pullback matroid
+\[
+\boxed{\mathsf N_{uv}=\lambda^*(M(K_n)/\{u,v\})}
+\tag{10}
+\]
+on the same covering-transition ground set as \(\mathsf G_n=M(\mathscr S_n)\). Thus \(A\subseteq E(\mathscr S_n)\) is independent in \(\mathsf N_{uv}\) if the resource labels \(\lambda(A)\) are distinct and
+\[
+\{\{u,v\}\}\cup\lambda(A)\in\mathcal I(M(K_n)).
+\tag{11}
+\]
+
+**Theorem 4 (resource independence of coherent forward words).** A coherent forward covering-state path starting at \((u,v)\) with no repeated covering edge decodes to an injective original-vertex word if and only if its edge set is independent in \(\mathsf N_{uv}\). When these conditions hold, its edge set is also independent in the covering graphic matroid \(\mathsf G_n\).
+
+*Proof.* The initial original edge \(\{u,v\}\) followed by the labels of the successive forward covering edges is the entire original edge sequence of the decoded word. An injective word traces a graph path with pairwise distinct original resource labels, so (11) holds. Conversely, revisiting an original vertex yields a closed nonbacktracking segment, because consecutive triples use three distinct original vertices. That segment either repeats a resource edge or contains a graph cycle, contradicting the label distinctness or original graphic independence in (11). For an injective word, its oriented-pair covering states are distinct, so the covering edges form a graph path and are independent in \(\mathsf G_n\). \(\square\)
+
+**Proposition 5 (plain matroid intersection does not enforce coherent paths).** On five original vertices there exists a reversal-odd boundary coloring whose red covering edge set contains a common independent set of size \(n-2=3\) in \(\mathsf G_5\) and \(\mathsf N_{01}\), yet no red or blue spanning tight path exists.
+
+*Proof.* Use the representative bit mask \(\mathrm{0x3ed25058}\), with representatives ordered by increasing middle vertex followed by increasing outer pair \(a<c\). The full \(5!=120\) word enumeration in the five-cycle sharpness Subsection establishes that all spanning words have at least one turn, so no monochromatic spanning word exists. Nevertheless, the three covering edges indexed by
+\[
+\boxed{(0,1,3),\ (0,1,4),\ (0,2,3)}
+\tag{12}
+\]
+are red. They form a covering graph forest (two share only state \((0,1)\), and the third is disjoint). Their original resource labels are \(\{1,3\},\{1,4\},\{2,3\}\). Adding the initial resource \(\{0,1\}\) gives a spanning tree of \(K_5\). Hence the three covering edges are independent in both matroids, attaining resource rank \(3\), but they are not a single forward coherent state path. \(\square\)
+
+This yields two graphic-derived matroids on the same boundary covering-edge set, plus the antipodal orbit partition matroid that parametrizes all reversal-odd colorings. Theorem 4 proves resource independence is an ordinary matroid constraint on directed forward paths. Proposition 5 shows a common independent set of full resource rank need not be a forward path: its **directed adjacency and route connectedness** must be retained as a separate admissibility condition. Thus a matroid-based spanning one-turn proof needs an exchange principle compatible with the coherent directed path language, not plain matroid intersection alone.
+
+#### 6. Near-complete resource support in every boundary coloring
+
+There is a strong universal abundance theorem for the original-resource labels of a **fixed** color, independent of any randomization or exchange choices.
+
+Fix one color \(\varepsilon\), and let \(B_\varepsilon\) consist of covering edges of that color. Using the resource labeling \(\lambda(e_{abc})=\{b,c\}\), put
+\[
+\boxed{
+\Lambda_\varepsilon=\lambda(B_\varepsilon)
+\subseteq E(K_n).
+}
+\tag{13}
+\]
+
+**Theorem 6 (missing resources form a matching).** For every ordinary reversal-odd boundary 3-tournament on \(n\ge3\) vertices, and for each \(\varepsilon\in\{0,1\}\),
+\[
+\boxed{
+E(K_n)\setminus\Lambda_\varepsilon
+\text{ is a matching}.
+}
+\tag{14}
+\]
+In particular,
+\[
+\boxed{
+|\Lambda_\varepsilon|\ge\binom n2-\left\lfloor\frac n2\right\rfloor,
+\qquad r_{M(K_n)}(\Lambda_\varepsilon)=n-1.
+}
+\tag{15}
+\]
+Thus every fixed color appears on a collection of forward covering transitions whose **original-resource labels already span the full graphic resource matroid**.
+
+*Proof.* For each middle vertex \(b\), restrict the boundary coloring to the ordered triples \((a,b,c)\) with \(a,c\ne b\). Reversal oddness makes the color-\(\varepsilon\) triples into the arcs of a tournament \(T_b^\varepsilon\) on \(V\setminus\{b\}\), oriented \(a\to c\) when \(b(a,b,c)=\varepsilon\). The resource edge \(\{b,c\}\) occurs as \(\lambda(e_{abc})\) for some color-\(\varepsilon\) triple with middle \(b\) if and only if \(c\) has positive indegree in \(T_b^\varepsilon\).
+
+Suppose two missing resource edges \(\{b,c\}\) and \(\{b,d\}\) share the same vertex \(b\). Their absence implies both \(c\) and \(d\) have indegree zero in \(T_b^\varepsilon\). But a tournament has at most one vertex of indegree zero, because the edge between any two proposed sources must enter one of them. This is impossible. Hence the missing-edge graph has maximum degree at most one, proving (14). The stated cardinality bound follows. The complement of a matching in \(K_n\) is connected for \(n\ge3\); its graphic rank is \(n-1\). \(\square\)
+
+**Corollary 7 (two forced outgoing fans).** If a resource edge \(\{b,c\}\) is absent from \(\Lambda_\varepsilon\), then for every \(a\notin\{b,c\}\),
+\[
+\boxed{
+b(c,b,a)=\varepsilon,\qquad b(b,c,a)=\varepsilon.
+}
+\tag{16}
+\]
+Equivalently, both ordered-pair states \((c,b)\) and \((b,c)\) have all \(n-2\) possible **outgoing forward transitions** of color \(\varepsilon\).
+
+*Proof.* Absence of resource \(\{b,c\}\) means each triple \((a,b,c)\) and \((a,c,b)\) has the opposite color \(1-\varepsilon\). Reverse both triples and apply reversal oddness. \(\square\)
+
+The matching bound is attainable: the missing resource sets for the five-vertex mask \(\mathrm{0x3ed25058}\) in Proposition 5 are the two disjoint edges \(\{1,2\}\) and \(\{3,4\}\). More generally the independent local tournament choices at each middle vertex permit any prescribed matching as the missing color-\(\varepsilon\) resource support for \(n\ge4\): make the designated partner a zero-indegree source at each matched vertex, and choose source-free local tournaments at unmatched vertices.
+
+This theorem clarifies why ordinary graphic rank arguments on \(\mathsf R_n\) alone cannot settle the spanning conjecture. Every color already has an almost-complete **resource support graph**, and therefore abundant spanning trees. The obstruction must occur in the directed overlap constraints coupling **successive** resource edges, not in the ability to select independent resources individually. The forced outgoing fans (16) may supply useful local rerouting operations for an eventual rank-preserving opposite-terminal exchange theorem.
+
+#### 7. Missing resource edges are forced color-change gates
+
+The outgoing-fan phenomenon in Corollary 7 has a dual incoming constraint. Let \(e=\{b,c\}\) be an original resource edge absent from the color-\(\varepsilon\) support \(\Lambda_\varepsilon\).
+
+**Theorem 8 (forced phase gate at a missing resource).** For every \(a\notin\{b,c\}\),
+\[
+\boxed{
+\begin{aligned}
+b(a,b,c)&=1-\varepsilon,&
+b(b,c,a)&=\varepsilon,\\
+b(a,c,b)&=1-\varepsilon,&
+b(c,b,a)&=\varepsilon.
+\end{aligned}}
+\tag{17}
+\]
+Consequently **every** coherent forward tight path that passes through either ordered-pair state \((b,c)\) or \((c,b)\) as an interior state makes a color change from \(1-\varepsilon\) to \(\varepsilon\) at that state. All incoming transitions to either state have color \(1-\varepsilon\), and all outgoing transitions have color \(\varepsilon\).
+
+*Proof.* The first and third displayed triples have resource label \(\{b,c\}\) in the color-\(\varepsilon\) resource map. Since this label is absent, both triples have color \(1-\varepsilon\). The second and fourth triples are their reversal pairs, so reversal oddness forces color \(\varepsilon\). The incoming and outgoing transition description follows from the ordered-pair covering graph. \(\square\)
+
+**Corollary 9 (forced-gate packing restriction).** Let \(F_\varepsilon=E(K_n)\setminus\Lambda_\varepsilon\), a matching by Theorem 6. In any spanning tight word with at most one internal color change, there is at most one consecutive original pair from \(F_\varepsilon\) occurring as an interior ordered-pair state; if such a pair occurs, the unique change is from \(1-\varepsilon\) to \(\varepsilon\) at that pair. A monochromatic spanning tight word cannot contain any missing-resource pair as an interior state. The endpoints of the word may contain such a pair without triggering an internal comparison.
+
+Theorem 8 converts a missing resource into a **deterministic two-color switching interface**. In particular, instead of treating missing labels solely as rank defects, a proposed spanning one-turn proof may use one as its intended seam and seek two independent monochromatic arms attaching on opposite sides. The missing edges themselves form a matching, so there can be no overlapping gate constraints based at the same original vertex. This is a structural lead, not a completed spanning one-turn theorem.
+
+#### 8. A common full-rank resource-cocircuit axiom for cube and boundary models
+
+The resource-support theorem has a direct counterpart in NORI1 and therefore supplies another **intrinsic hypothesis shared by the two canonical models**.
+
+Let \(\mathsf R\) denote the original-resource matroid of a polarized exchange-gallery system and \(\Lambda_\varepsilon\) the set of resource labels occurring on primitive states or forward transitions of color \(\varepsilon\). Consider the matroid property
+\[
+\boxed{
+r_{\mathsf R}(\Lambda_0)
+=r_{\mathsf R}(\Lambda_1)
+=r(\mathsf R).
+}
+\tag{18}
+\]
+Equivalently, **each color support meets every cocircuit of the original-resource matroid**. This equivalence is standard: a set spans a matroid if and only if it intersects every cocircuit.
+
+**Theorem 10 (common cocircuit-hitting resource supports).** Both canonical Article XI models satisfy (18) for every permitted reversal-odd coloring, with the following refinements.
+
+(a) For the antipodal \(n\)-cube, \(\mathsf R\) is the free matroid on the \(n\) coordinate directions. Each color occurs on precisely \(2^{n-2}\) edges of each coordinate direction, for \(n\ge2\). In particular, \(\Lambda_0=\Lambda_1=[n]\), and each color meets every singleton cocircuit.
+
+(b) For the ordinary boundary 3-tournament, \(\mathsf R=M(K_n)\), and for every nonempty proper \(S\subset[n]\),
+\[
+\boxed{
+|\Lambda_\varepsilon\cap\delta_{K_n}(S)|
+\ge |S|(n-|S|)-\min(|S|,n-|S|).
+}
+\tag{19}
+\]
+Consequently the resource-support graph \(([n],\Lambda_\varepsilon)\) is \((n-2)\)-edge-connected for every \(n\ge3\), and it contains a Hamilton cycle whenever \(n\ge4\).
+
+*Proof.* For (a), the \(2^{n-1}\) cube edges of any coordinate direction split into \(2^{n-2}\) antipodal edge pairs, and reversal oddness selects one edge of each color in each pair. For (b), Theorem 6 says the missing resource-edge graph is a matching. At most \(\min(|S|,n-|S|)\) edges of that matching cross a cut \(\delta(S)\), proving (19). Its minimum over nontrivial \(S\) is at least \(n-2\) for \(n\ge3\), giving the edge-connectivity bound. Since the support graph has minimum degree at least \(n-2\ge n/2\) for \(n\ge4\), Dirac's Hamilton-cycle theorem applies. \(\square\)
+
+The common full-rank cocircuit-hitting condition (18) is a natural addition to the proposed abstract class of **polarized resource-exchange matroids**. It is an all-color, all-dimensional restriction stronger than merely saying that the uncolored gallery system admits every resource permutation. But it is still not a path selector: the five-vertex counterexample in Proposition 5 has almost-complete full-rank red resource support and even a Hamilton resource cycle, without any coherent monochromatic spanning tight path. A closure proof must exploit **how** these abundant resource labels are realized by adjacent colored covering transitions.
+
+#### 9. Matroid base-packing abundance for each color
+
+The cocircuit-hitting theorem also yields a quantitative **spanning-basis packing** result for the color-specific resource supports. This survives in arbitrarily large order and can be useful for future exchange arguments that must avoid a bounded set of resource labels.
+
+**Theorem 11 (boundary spanning-tree packing).** For an ordinary reversal-odd boundary 3-tournament on \(n\ge4\) vertices, let \(B_\varepsilon\) be the colored covering edges and let \(\Lambda_\varepsilon=\lambda(B_\varepsilon)\). Then \(\Lambda_\varepsilon\) contains at least
+\[
+\boxed{k_n=\left\lfloor\frac{n-2}{2}\right\rfloor}
+\tag{20}
+\]
+pairwise edge-disjoint spanning trees of \(K_n\). Equivalently, the pullback resource matroid
+\[
+\lambda^*M(K_n)
+\]
+on the covering-transition ground set contains \(k_n\) pairwise disjoint bases comprised entirely of color-\(\varepsilon\) transitions.
+
+*Proof.* By Theorem 10(b), the resource-support graph \(([n],\Lambda_\varepsilon)\) is \((n-2)\)-edge-connected, hence \(2k_n\)-edge-connected. For every partition of its vertex set into \(t\ge2\) nonempty parts, each part has at least \(2k_n\) crossing incidences. Counting edges crossing between parts twice gives at least \(k_n t\ge k_n(t-1)\) such edges. The Nash-Williams–Tutte spanning-tree packing criterion therefore supplies \(k_n\) edge-disjoint spanning trees. For each tree edge choose one color-\(\varepsilon\) covering transition with that resource label. Since the trees have disjoint resource-edge sets, these choices give disjoint bases of the parallel-extension pullback matroid. \(\square\)
+
+**Proposition 12 (cube analogue).** For the antipodally odd \(n\)-cube, \(n\ge2\), let \(\lambda\) label each colored cube edge by its coordinate direction and let \(\mathsf R\) be the free matroid on \([n]\). For either fixed color, the parallel-extension pullback \(\lambda^*\mathsf R\) on the cube-edge set contains
+\[
+\boxed{2^{n-2}}
+\tag{21}
+\]
+pairwise disjoint full-rank bases, and no larger number is possible.
+
+*Proof.* In each direction there are precisely \(2^{n-2}\) edges of each color, by Theorem 10(a). A basis of the parallel-extension free matroid chooses one edge in every direction. Pair the direction-\(i\) edges arbitrarily with the indices \(1,\ldots,2^{n-2}\); selecting the edges with the same index across all directions gives \(2^{n-2}\) disjoint bases. Conversely every such basis consumes one colored edge of each direction, and only \(2^{n-2}\) are available. \(\square\)
+
+Hence **both canonical models have many single-color full-rank resource bases**, in addition to the covering graphic-flat and pointed binary matroid structure. The quantitative base-packing property is still weaker than the spanning-path conjectures, because independent resource representatives chosen from different covering states need not be geometrically adjacent or coherently directed. The challenge is to turn this substantial matroid-rank redundancy into a **coherent basis-path selector** using covering monodromy and the antipodal path language.
+
+#### 10. Common two-color resource bases and the rarity of forced gates
+
+The preceding full-rank and base-packing statements concern each color separately. The two colors also share a substantial **common** graphic resource support, even in worst-case tournaments.
+
+Let \(F_\varepsilon=E(K_n)\setminus\Lambda_\varepsilon\) denote the color-\(\varepsilon\) missing-resource matching, and define
+\[
+\boxed{
+H_b=([n],\Lambda_0\cap\Lambda_1)
+=K_n-(F_0\cup F_1).
+}
+\tag{22}
+\]
+
+**Theorem 13 (simultaneous full rank and Hamiltonian common support).** For every ordinary reversal-odd boundary tournament:
+\[
+\boxed{
+F_0\cap F_1=\varnothing,\quad
+\Delta(F_0\cup F_1)\le2,\quad
+\delta(H_b)\ge n-3.
+}
+\tag{23}
+\]
+Consequently, for \(n\ge5\),
+\[
+\boxed{r_{M(K_n)}(\Lambda_0\cap\Lambda_1)=n-1;}
+\tag{24}
+\]
+for \(n\ge6\), \(H_b\) has a Hamiltonian cycle; and for \(n\ge7\), \(H_b\) is Hamilton-connected.
+
+*Proof.* A resource edge \(\{u,v\}\) cannot be absent from both color supports, since each ordered triple entering the state \((u,v)\) has one of the two colors and would represent that same resource edge. Thus \(F_0\cap F_1=\varnothing\). By Theorem 6 each \(F_\varepsilon\) is a matching, so their union has maximum degree at most two, proving (23). For \(n\ge5\), each component of \(H_b\) contains at least \(\delta(H_b)+1\ge n-2\) vertices. Two components would require at least \(2(n-2)>n\) vertices, impossible; thus \(H_b\) is connected and its original graphic resource rank is \(n-1\). For \(n\ge6\), \(\delta(H_b)\ge n-3\ge n/2\), so Dirac's theorem gives a Hamiltonian cycle. For \(n\ge7\), every pair of nonadjacent vertices has degree sum at least \(2(n-3)\ge n+1\); Ore's Hamilton-connectedness theorem gives a Hamilton path between any prescribed pair of vertices. \(\square\)
+
+The common-support graph omits a graph of maximum degree two whose components are isolated vertices, alternating paths, and even alternating cycles (the two omitted matchings alternate in any nontrivial cycle). In particular, **the same original resource basis can be represented by transitions of either color**, though the two representations need not be coherently adjacent or have compatible roots.
+
+**Corollary 14 (any designated gate can occupy the unique unsupported position).** Let \(n\ge7\), and let \(e=\{u,v\}\in F_0\cup F_1\) be any missing-resource edge. There exists a Hamiltonian vertex order \(w\) containing \(u,v\) consecutively in an *interior* position, such that
+\[
+\boxed{
+E(w)\setminus\{e\}\subseteq\Lambda_0\cap\Lambda_1.
+}
+\tag{25}
+\]
+
+*Proof.* By Theorem 13, the common-support graph \(H_b\) has a Hamiltonian path with prescribed endpoints \(u,v\). Adding the missing edge \(e=uv\) closes this path into a Hamiltonian cycle in which \(e\) is the sole edge outside \(H_b\). Delete a cycle edge not incident with \(e\) to obtain a spanning Hamiltonian path in which \(e\) is an interior resource edge and all other resource edges belong to both color supports. \(\square\)
+
+This is a **resource-geometric**, not a colored-forward-path, statement: the color-\(\varepsilon\) representative of each common resource edge may occur at a completely different ordered-pair state. The theorem shows that the *placement* of a forced switching gate is never obstructed by ordinary graphic basis availability in orders \(n\ge7\). Forward path coherence remains the difficulty.
+
+**Proposition 15 (forced gates are exponentially rare under random coloring).** Under the uniform probability measure on reversal-odd boundary 3-tournaments,
+\[
+\boxed{
+\mathbb E|F_\varepsilon|
+=\binom n2\,2^{-2(n-2)},\qquad
+\Pr(F_0\cup F_1\ne\varnothing)
+\le n(n-1)\,2^{-2(n-2)}.
+}
+\tag{26}
+\]
+In particular, with probability \(1-O(n^2 4^{-n})\), the **two** resource supports both equal the entire edge set \(E(K_n)\); no forced switching gate exists.
+
+*Proof.* For a given edge \(\{u,v\}\), its absence from \(\Lambda_\varepsilon\) requires that all \(n-2\) ordered triples entering \((u,v)\) have color \(1-\varepsilon\), and likewise all \(n-2\) triples entering \((v,u)\). These are \(2(n-2)\) distinct reversal-pair bits: the first group has middle vertex \(u\), the second middle vertex \(v\), and no pair is the reversal of another in the same group or across groups. They are independent fair bits, so the absence event has probability \(2^{-2(n-2)}\). Sum over the \(\binom n2\) possible edges and use Markov's inequality and a union bound over both colors to obtain (26). \(\square\)
+
+**Research limitation and next target.** The missing-resource matching and its phase gates are valuable *conditional* rerouting devices, but Proposition 15 rules out any universal proof that requires at least one missing resource: nearly all colorings have none. The stronger shared full-rank property (24) remains available even then. The natural missing theorem is therefore a **coherent basis-path synchronization principle**, converting the two full-color representatives of a common resource basis into oppositely rooted monochromatic arms whose union is independent, with at most one phase seam. Neither ordinary graphic matroid intersection nor uncolored Hamiltonicity implies that synchronization, as the preceding finite obstructions demonstrate.
+
 ### Conflict-graph purification and robust transfer of monotone paths
 
 Let \(V\) be an \(n\)-element set, \(n\ge3\). A *boundary coloring* is a map \(b:V_{\ne}^3\to\{0,1\}\) satisfying \(b(c,v,a)=1-b(a,v,c)\). Let \(\prec\) be a total ordering of \(E(K_V)\), and let
@@ -4437,3 +4664,331 @@ for an absolute constant \(C_0\). Applying Theorem 1 gives a comparison-faithful
 Corollary 2 now applies with this lower bound. In particular, a polynomially small synchronization error \(m=O(n^{2+\delta})\) yields a monochromatic path of length \(n^{1-\delta-o(1)}\).
 
 The case \(m=o(n^3)\) gives an unbounded path but does not itself imply a path of length \(n^{1-o(1)}\). A stronger transfer would have to exploit path-wise avoidance of errors while retaining many adjacent edges of the ordered complete graph. The conflict-free subgraph in Theorem 1 is a graph-theoretic comparison certificate; the path's original-vertex simplicity is preserved by its graphic-matroid independence.
+
+### Random smoothing and the failure of global edge-order purification
+
+Let \(V\) be a set of \(n\) vertices, \(n\ge3\). A reversal-odd coloring is a map \(b_0:V_{\ne}^3\to\{0,1\}\) satisfying \(b_0(c,v,a)=1-b_0(a,v,c)\). Fix \(0<\rho\le1/2\). Independently for each reversal class \(\{(a,v,c),(c,v,a)\}\), choose a Bernoulli random variable \(Z_{\{a,v,c\}}\) of parameter \(\rho\), and define
+\[
+b(a,v,c)=b_0(a,v,c)\oplus Z_{\{a,v,c\}}.
+\tag{1}
+\]
+Thus \(b\) is again reversal-odd.
+
+**Theorem 1 (near-spanning paths after independent perturbation).**
+Fix an ordered pair \(u,v\) of distinct vertices, a color \(\epsilon\in\{0,1\}\), and \(0<\delta<1\). Put
+\[
+r=\left\lceil \rho^{-1}\log(n/\delta)\right\rceil .
+\]
+If \(r\le n-2\), then with probability at least \(1-\delta\), the coloring \(b\) admits a vertex-simple \(\epsilon\)-monochromatic tight path beginning with \(u,v\), using at least \(n-r\) vertices. In particular, when \(\rho n/\log n\to\infty\), with probability tending to one every ordered starting pair and each prescribed color admits such a path on \(n-O(\rho^{-1}\log n)\) vertices.
+
+*Proof.* Build a sequence \(v_1=u,v_2=v,\ldots\) by greedily appending any unused \(w\) for which \(b(v_{i-1},v_i,w)=\epsilon\). To decide whether the next extension exists, reveal the colors of the triples \((v_{i-1},v_i,w)\) for unused \(w\). Every one of their reversal classes has middle vertex \(v_i\). The vertices \(v_i\) used as centers at successive stages are distinct, hence none of these classes has been queried at an earlier stage. Conditional on the complete past of the algorithm, the new bits are independent and each has probability at least \(\rho\) of yielding the desired color, whatever the deterministic values of \(b_0\). If \(k\) vertices remain unused, the conditional probability of failure is at most
+\[
+(1-\rho)^k\le e^{-\rho k}.
+\]
+Before \(n-r\) vertices have been used, \(k\ge r\), and there are at most \(n\) opportunities to fail. A union bound gives probability of failure at most \(ne^{-\rho r}\le\delta\). For the uniform assertion choose \(r=\lceil6\rho^{-1}\log n\rceil\), giving failure probability at most \(n^{-5}\) for each of fewer than \(2n^2\) starting-pair/color choices. A final union bound completes the proof. \(\square\)
+
+A spanning subgraph \(G\subseteq K_V\) is called *comparison-orderable for \(b\)* if some strict total ordering of \(E(G)\) induces \(b(a,v,c)\) on every pair of incident edges \(av,vc\in E(G)\). Such a graph has a transitive induced subtournament on \(N_G(v)\) for every vertex \(v\): its local arc \(a\to c\) is defined by \(b(a,v,c)\), and a single ordering of the incident edges at \(v\) determines all its arcs.
+
+**Lemma 2 (edge-disjoint triangle packing).** For any integer \(d\ge3\), the complete graph \(K_d\) contains at least \(d(d-1)/18\) triangles with pairwise disjoint edge sets.
+
+*Proof.* Greedily select a triangle and remove every triangle sharing one of its three edges. Each selection removes at most \(3(d-2)\) triangles, while \(K_d\) originally contains \(\binom d3\) triangles. At least \(\binom d3/[3(d-2)]=d(d-1)/18\) selections are possible. \(\square\)
+
+**Theorem 3 (uniform obstruction to comparison-orderable subgraphs).**
+For every deterministic baseline \(b_0\), with probability tending to one as \(n\to\infty\), every comparison-orderable spanning subgraph \(G\subseteq K_V\), even allowing its edge ordering to depend on \(b\) and \(G\), satisfies
+\[
+\boxed{\quad
+\Delta(G)<\left\lceil\frac{200\log n}{\rho}\right\rceil
+\quad\text{whenever the right side is at most }n-1.\quad}
+\tag{2}
+\]
+Consequently all such \(G\) satisfy
+\[
+\boxed{\quad |E(G)|=O\!\left(\frac{n\log n}{\rho}\right). \quad}
+\tag{3}
+\]
+The implicit constant is absolute, independent of \(b_0\).
+
+*Proof.* Fix a center \(v\) and a \(d\)-set \(S\subseteq V\setminus\{v\}\), where \(d=\lceil200(\log n)/\rho\rceil\le n-1\). For a triple \(\{a,c,e\}\subseteq S\), the restriction of the tournament \(b(\cdot,v,\cdot)\) to those three vertices is cyclic with probability at least \(\rho/4\). Indeed, if it is transitive in \(b_0\), flipping just the comparison between the first and last vertices in its transitive order produces a directed cycle, with probability \(\rho(1-\rho)^2\ge\rho/4\). If it is initially cyclic, keeping all three comparisons unchanged has probability \((1-\rho)^3\ge1/8\ge\rho/4\).
+
+Choose the edge-disjoint triangle packing of Lemma 2 on \(S\). The corresponding cyclic-triangle events involve disjoint comparison variables and are therefore independent. Since there are at least \(d(d-1)/18\) such triangles,
+\[
+\Pr\bigl(b(\cdot,v,\cdot)|_S\text{ is transitive}\bigr)
+\le\left(1-\frac{\rho}{4}\right)^{d(d-1)/18}
+\le \exp\left(-\frac{\rho d(d-1)}{72}\right).
+\]
+The probability that some \(v\) and \(d\)-set \(S\) have a transitive induced local tournament is at most
+\[
+n\binom{n-1}{d}\exp\left(-\frac{\rho d(d-1)}{72}\right)
+\le n\exp\left(d\log n-\frac{\rho d(d-1)}{72}\right)=o(1).
+\tag{4}
+\]
+The last relation follows from \(d\ge200(\log n)/\rho\). On the complementary event, no comparison-orderable graph can have a vertex of degree at least \(d\), since that vertex's neighbor set contains such a transitive \(d\)-set. This proves (2). If \(d>n-1\), (3) is trivial from \(|E(G)|\le\binom n2\); otherwise use the degree bound. \(\square\)
+
+**Corollary 4 (near-extremal coloring with almost-spanning paths but no dense orderable subgraph).**
+There exist reversal-odd boundary colorings \(b_n\) on \(n\) vertices for which simultaneously
+\[
+\boxed{\frac{D(b_n)}{E_n}\ge \frac23-O(n^{-1/3}),}\tag{5}
+\]
+every ordered pair and both colors initiate a monochromatic tight path on \(n-O(n^{1/3}\log n)\) vertices, and every comparison-orderable subgraph \(G\subseteq K_n\) satisfies
+\[
+\boxed{|E(G)|=O(n^{4/3}\log n),\qquad
+\Delta(G)=O(n^{1/3}\log n).}\tag{6}
+\]
+Here \(D(b)\) counts disagreeing edges of the legal-turn reversal quotient and \(E_n=n(n-1)(n-2)(n-3)/2\).
+
+*Proof.* Randomly assign distinct real labels to \(E(K_n)\), and let \(b_0\) compare consecutive edge labels. Each legal turn \((a,b,c,d)\) involves three distinct edges with independent labels, so the probability of a changed comparison is \(2/3\). By averaging, there exists a deterministic edge order with \(D(b_0)/E_n\ge2/3\). Perturb this \(b_0\) as in (1) with \(\rho=n^{-1/3}\).
+
+The two reversal classes involved in each legal turn are distinct, so their flips are independent. Write \(h=2\rho(1-\rho)\). The perturbed turn disagrees with probability \(h+(1-2h)d_0\), where \(d_0\in\{0,1\}\) is its original disagreement bit. Since \(1-2h=(1-2\rho)^2\ge0\),
+\[
+\frac{\mathbb E D(b)}{E_n}
+=h+(1-2h)\frac{D(b_0)}{E_n}
+\ge\frac23-\frac h3\ge\frac23-\frac23\rho.
+\tag{7}
+\]
+There are \(N_n=n\binom{n-1}{2}\) independently perturbed reversal classes, and changing one flip changes \(D\) by at most \(2(n-3)\). The bounded-differences inequality therefore gives, for any \(t>0\),
+\[
+\Pr\left(\frac{D(b)}{E_n}<\frac{\mathbb E D(b)}{E_n}-t\right)
+\le \exp(-t^2N_n/2).
+\tag{8}
+\]
+Taking \(t=\rho\) proves (5) with probability tending to one. Theorem 1, with \(\delta=n^{-5}\) and a union bound over all starting ordered pairs and colors, gives the claimed paths. Theorem 3 gives (6). All three events occur simultaneously with probability tending to one, proving existence. \(\square\)
+
+The contrast is structural: even when an unrestricted boundary coloring is arbitrarily close in normalized disagreement density to the extremal value \(2/3\), and supports near-spanning monochromatic paths, a subgraph on which *any* total edge ordering realizes all its local comparisons may have only \(O(n^{4/3}\log n)\) edges. Resource-simple paths can navigate mutually incompatible comparisons globally, so an exchange theorem seeking long paths must retain only the comparisons used by the evolving witness rather than insist upon one global edge-order representation.
+
+**Theorem 5 (near-geodesic smoothing of antipodally odd cube colorings).**
+Let \(Q_n\) be the \(n\)-dimensional cube, let \(c_0:E(Q_n)\to\{0,1\}\) satisfy \(c_0(\tau e)=1-c_0(e)\), where \(\tau\) is antipodal reversal, and fix a root vertex \(x\) and color \(\epsilon\). Independently for each antipodal pair of cube edges \(\{e,\tau e\}\), flip both assigned colors with probability \(\rho\), where \(0<\rho\le1/2\). Put \(r=\lceil\rho^{-1}\log(n/\delta)\rceil\) for \(0<\delta<1\). If \(2\le r\le n-1\), with probability at least \(1-\delta\) there is an \(\epsilon\)-monochromatic path beginning at \(x\) that uses \(n-r\) distinct coordinate directions, and hence is a geodesic of length \(n-r\). If \(\rho n/\log n\to\infty\), such a path has length \(n-o(n)\) with probability tending to one, for each prescribed root and color.
+
+*Proof.* Identify vertices relative to \(x\) with subsets \(S\subseteq[n]\), and regard the directed edge \(e(S,i)\) from \(x^S\) to \(x^{S\cup\{i\}}\), \(i\notin S\), as a possible increasing-resource move. Greedily select an unused coordinate \(i\) whenever \(c(e(S,i))=\epsilon\). We show that, as long as \(|S|\le n-2\), all candidate antipodal edge orbits at the current step are distinct and have never been queried at an earlier step.
+
+Indeed, let \(T\subsetneq S\) be a previously visited coordinate set, and let \(e(T,j)\) have been queried at that step. The current edge \(e(S,i)\) cannot equal \(e(T,j)\), since these two edges have different lower endpoints. If \(e(S,i)=\tau e(T,j)\), comparison of the endpoints with their ranks in the Boolean lattice gives
+\[
+S=[n]\setminus(T\cup\{j\}),\qquad
+S\cup\{i\}=[n]\setminus T.
+\]
+Thus \(i=j\) and \(S\cap T=\varnothing\). Since \(T\subseteq S\), we have \(T=\varnothing\), and then \(S=[n]\setminus\{i\}\), contradicting \(|S|\le n-2\). Distinct current candidate coordinates also represent distinct antipodal edge orbits. This proves freshness until the final coordinate.
+
+Consequently, conditional on all previously queried colors, when \(k=n-|S|\ge2\) unused coordinates remain, the candidate colors are independent, each with probability at least \(\rho\) of equaling \(\epsilon\). The conditional chance that all \(k\) extensions fail is at most \(e^{-\rho k}\). Until length \(n-r\) has been reached, at least \(r\ge2\) coordinates remain. At most \(n\) stages are tested, so the total failure probability is at most \(ne^{-\rho r}\le\delta\). Each selected coordinate is used once, so the resulting path is a geodesic. \(\square\)
+
+**Common probabilistic mechanism.** Theorem 1 and Theorem 5 both exploit a graded extension system in which each extension consumes a new resource and its local candidates belong to noise variables unexposed at previous stages. For boundary tournaments the new resource is the next terminal vertex, giving a previously unused middle vertex for every new triple comparison. For cube geodesics the new resource is the next coordinate, and antipodal edge-orbit collisions are excluded until the final step by the Boolean-lattice complement relation. This common mechanism gives near-full-length single-color paths under independent perturbations, while the deterministic problem demands a zero-defect selection under arbitrary signatures; the cube theorem makes no claim about extending the last \(r\) coordinates in the prescribed color.
+
+
+### Three-matroid Hamiltonian galleries and bounded-cost block reversal
+
+Let \(n\ge4\) and let \(b(a,v,c)\in\{0,1\}\) be a reversal-odd boundary 3-tournament:
+\[
+b(c,v,a)=1-b(a,v,c)
+\]
+for pairwise distinct letters. For an injective word \(P=(v_1,\ldots,v_m)\), write its triple-color sequence \(c_P(i)=b(v_i,v_{i+1},v_{i+2})\), and let \(\mathrm{sw}(P)=\sum_{i=1}^{m-3}\mathbf1_{\{c_P(i)\ne c_P(i+1)\}}\).
+
+**Theorem 1 (Hamiltonian words as three-matroid common independent sets).** Let \(A=\{(u,v):u,v\in[n],u\ne v\}\) be the directed arcs of the complete graph. On this common ground set define the graphic matroid \(M_{\rm gr}\) of \(K_n\), treating both directions of an undirected edge as parallel elements; the indegree partition matroid \(M_{\rm in}\), allowing at most one arc entering each vertex; and the outdegree partition matroid \(M_{\rm out}\), allowing at most one arc leaving each vertex. The common independent sets of cardinality \(n-1\) are precisely the directed Hamiltonian paths:
+\[
+\boxed{\{B\subseteq A:|B|=n-1,\ B\in\mathcal I(M_{\rm gr})\cap\mathcal I(M_{\rm in})\cap\mathcal I(M_{\rm out})\}.}
+\tag{1}
+\]
+
+*Proof.* A graphic-independent set of \(n-1\) arcs has an underlying spanning tree in \(K_n\). The two partition matroid bounds give each vertex total degree at most two. Every degree-two spanning tree is an undirected Hamiltonian path. Its internal vertices each have one incoming and one outgoing arc, ensuring a consistently directed Hamiltonian path. Conversely such a path satisfies all three conditions. \(\square\)
+
+**Proposition 2 (a single matroid does not encode the paths).** For every \(n\ge4\), the undirected edge sets of Hamiltonian paths of \(K_n\) do not form the bases of any matroid on \(E(K_n)\).
+
+*Proof.* Let \(P=(0,1,2,3,\ldots,n-1)\) and \(Q=(0,2,1,3,\ldots,n-1)\). The differences between their edge sets are
+\[
+E(P)\setminus E(Q)=\{\{0,1\},\{2,3\}\},\quad
+E(Q)\setminus E(P)=\{\{0,2\},\{1,3\}\}.
+\]
+Remove \(e=\{0,1\}\) from \(P\). Adding \(\{0,2\}\) gives degree three at vertex 2 and is not a path. Adding \(\{1,3\}\) creates triangle \(1,2,3,1\) and leaves vertex 0 isolated. No element of \(E(Q)\setminus E(P)\) provides the required basis exchange, so the axiom fails. \(\square\)
+
+**Theorem 3 (uniformly bounded cost for nonlocal block reversal).** For any injective word \(P=(v_1,\ldots,v_m)\), \(m\ge4\), and any \(1\le a<b\le m\), let \(P^{[a,b]}\) be obtained by reversing the contiguous block \(v_a,\ldots,v_b\). Then
+\[
+\boxed{\bigl|\mathrm{sw}(P^{[a,b]})-\mathrm{sw}(P)\bigr|\le6.}
+\tag{2}
+\]
+The bound is independent of \(m\) and the number of reversed vertices. For Hamiltonian words the operation preserves all three matroid independence conditions from Theorem 1, and modifies at most two edges of the underlying undirected Hamiltonian spanning tree.
+
+*Proof.* Every triple window fully inside the reversed block becomes, after reindexing, the reversal of its corresponding former triple. Reversal-oddness complements every such color while reversing their order. Comparing consecutive triple colors strictly within this block therefore yields the same number of changes before and after reversal. Triple windows fully outside the block are unchanged. Only windows crossing its boundaries can change nontrivially: their possible start indices are \(a-2,a-1\) on the left and \(b-1,b\) on the right. Each pair of boundary-crossing windows belongs to at most three switch comparisons; every other comparison is either unchanged or belongs to the reversed-and-complemented interior, where the total is preserved. Thus no more than six switch indicators can change, proving (2).
+
+Reversing a block preserves the vertex set and injectivity of the word, so the resulting Hamiltonian path is again a common independent set of cardinality \(n-1\). At the undirected graph level, every interior edge of the reversed block remains present. Only the two external boundary edges, if present, are replaced:
+\[
+\{v_{a-1},v_a\}\mapsto\{v_{a-1},v_b\},\qquad
+\{v_b,v_{b+1}\}\mapsto\{v_a,v_{b+1}\}.
+\]
+Thus at most two graphic-basis edges change. \(\square\)
+
+**Proposition 4 (the constant six is sharp).** For \(n=14\), consider
+\[
+P=(0,1,2,3,4,5,6,7,8,9,10,11,12,13)
+\]
+and the block reversal of positions 8 through 11 (one-based),
+\[
+P'=(0,1,2,3,4,5,6,10,9,8,7,11,12,13).
+\]
+The following triple-color words are simultaneously realizable by a reversal-odd tournament:
+\[
+c_P=011000000000,\qquad c_{P'}=011001011010.
+\tag{3}
+\]
+Every triple reversal-orbit occurring in both words receives consistent complementary labels upon orientation reversal; assign colors on all other triple orbits freely. The two words have switch counts two and eight. Hence equality is achieved in (2). \(\square\)
+
+**Corollary 5 (connected nonlocal gallery with bounded edge and cost changes).** The graph of directed Hamiltonian paths joined by contiguous-block reversals is connected. Any two such words can be joined by at most \(n-1\) reversals, each changing at most two underlying graphic-basis edges and at most six color switches.
+
+*Proof.* Reversing an adjacent pair swaps two consecutive symbols, and adjacent transpositions generate all permutations. For the quantitative bound, repeatedly locate the desired next symbol of a target word and reverse the block from its current position to the current target position, fixing one additional prefix symbol at each step. At most \(n-1\) reversals suffice. Apply Theorem 3 to each operation. \(\square\)
+
+**Implications and limitations.** This is an admissibility-preserving *nonlocal* exchange on Hamiltonian paths, with a dimension-independent cost Lipschitz constant. It differs from formal binary hexagon reductions or signed-incidence lattice generation because every intermediate object is a connected, resource-simple directed path. The theorem does not guarantee a descending reversal from each nonoptimal Hamiltonian path; it gives no universal upper bound on the minimum switch count. Arbitrary antipodally odd cube-edge colorings do not acquire the same block-reversal property on proper coordinate subcubes: complementarity is imposed only by the full antipodal involution. A future shared theorem needs the analogous globally legal move in each model, not an unqualified transfer of this tournament-specific operation.
+
+A prospective approach is to combine the nonlocal reversal graph with cut-connectivity constraints and a low-cost witness principle. The difficult remaining step is to prove that this connected family must contain a path with a long constant-color run, rather than merely controlling how much one move can change the cost.
+
+Fix an antipodally odd binary edge coloring \(c\) of \(Q_n\), a root \(x\), and identify the directed resource-flat automaton with the Boolean lattice \(2^{[n]}\). Write \(\bar S=[n]\setminus S\). For the rooted edge \(S\to S\cup\{i\}\), deck oddness takes the form
+\[
+c_x(S,S+i)=1-c_x(\overline{S+i},\bar S).
+\tag{1}
+\]
+Let \(U\subseteq2^{[n]}\) contain \(\varnothing\), avoid complementary pairs, and be forward-closed under color-zero arcs. Such a family is the dual reachability-cut certificate from the preceding flat-automaton Subsection.
+
+**Theorem 1 (antipodal frontier separation).** No directed Boolean-lattice edge runs from \(U\) to its antipodal image \(\bar U=\{\bar T:T\in U\}\). Equivalently, there do not exist \(S,T\in U\) such that
+\[
+\boxed{S\cap T=\varnothing,\qquad |S|+|T|=n-1.}\tag{2}
+\]
+
+*Proof.* Suppose \(S\in U\) and \(S+i=\bar T\in\bar U\), with \(i\notin S\). Since \(U\cap\bar U=\varnothing\), this edge leaves \(U\), so its color is one. Reflection under complementation reverses this directed Boolean edge, producing
+\[
+T=\overline{S+i}\longrightarrow\bar S.
+\]
+Its initial point \(T\) lies in \(U\), while its terminal point \(\bar S\) lies in \(\bar U\), hence it also leaves \(U\) and must have color one. But the two reflected cube edges are antipodal and must have opposite colors by (1). Contradiction. A directed edge \(S\to\bar T\) exists if and only if \(S\cap T=\varnothing\) and \(|S|+|T|=n-1\), proving the equivalence. \(\square\)
+
+**Theorem 2 (cross-level Hall inequalities).** Put \(U_s=U\cap\binom{[n]}s\). If \(s+t=n-1\) with \(s\ne t\), then
+\[
+\boxed{\frac{|U_s|}{\binom ns}+
+\frac{|U_t|}{\binom nt}\le1.}\tag{3}
+\]
+In particular, since \(U_0=\{\varnothing\}\), it follows that \(U_{n-1}=\varnothing\).
+
+*Proof.* Consider the bipartite disjointness graph between all \(s\)-subsets and all \(t\)-subsets. It is biregular: each \(s\)-set has \(n-s=t+1\) disjoint \(t\)-neighbors, and each \(t\)-set has \(n-t=s+1\) disjoint \(s\)-neighbors. Theorem 1 says that every neighbor of a member of \(U_s\) lies outside \(U_t\). Counting these edges by their two ends gives
+\[
+(t+1)|U_s|\le(s+1)(\binom nt-|U_t|).
+\]
+Use \((t+1)\binom ns=(s+1)\binom nt\) to obtain (3). Taking \(s=0,t=n-1\) proves the final statement. \(\square\)
+
+**Corollary 3 (odd-dimensional Erdős–Ko–Rado obstruction).** For \(n=2k+1\), \(k\ge1\), the reachable middle family \(U_k\) is pairwise intersecting. Consequently,
+\[
+\boxed{|U_k|\le\binom{2k}{k-1}.}\tag{4}
+\]
+For \(k\ge2\), equality in the Erdős–Ko–Rado inequality forces \(U_k\) to be a full star (all \(k\)-subsets containing one distinguished coordinate).
+
+*Proof.* Two disjoint \(k\)-sets would violate (2), since \(2k=n-1\). Apply the classical Erdős–Ko–Rado theorem to the intersecting \(k\)-uniform family on \(2k+1>2k\) elements. Its equality characterization for \(k\ge2\) gives the star structure. \(\square\)
+
+**Consequence for NORI1.** In a hypothetical counterexample, the true color-zero reachable set \(R_x\) meets the hypotheses for every cube root \(x\). Thus (2)–(4) impose additional cross-rank constraints simultaneously on all rooted reachability families. The inequalities apply only under the complement-free hypothesis: colorings with a monochromatic full geodesic may violate them. They strengthen the SAT counterexample certificate, but do not independently prove that the certificate is impossible.
+
+**Corollary 4 (near-complete monochromatic geodesics suffice).** For any \(n\ge3\), the following statements are equivalent under antipodally odd undirected cube-edge coloring:
+
+(i) there exists a monochromatic full antipodal \(n\)-edge geodesic;
+
+(ii) there exists a monochromatic geodesic of \(n-1\) edges, using all but one coordinate direction;
+
+(iii) some rooted color-zero resource reachability family contains a subset of cardinality \(n-1\).
+
+*Proof.* (i) implies (ii) by truncation. To see (ii) implies (i), take its two endpoints \(a,b\), which differ in all directions except \(j\). Appending the edge in direction \(j\) from either end gives an antipodal \(n\)-edge geodesic. These two extension edges are antipodal translates of one another and therefore have opposite colors. One of them has the color of the original \((n-1)\)-edge path, yielding a monochromatic full geodesic. For (iii), a rooted color-zero path using \(n-1\) resources is such a geodesic; conversely any monochromatic \((n-1)\)-edge geodesic can be deck-translated if needed to give a color-zero witness. \(\square\)
+
+This shows that, in the free-coordinate matroid model, it would already suffice to force rank \(n-1\) in the color-zero flat automaton for **one** root, rather than force two complementary reachable flats directly. In a hypothetical counterexample, the accessible rank of every rooted color-zero automaton is at most \(n-2\), consistent with the conclusion \(U_{n-1}=\varnothing\) of Theorem 2.
+
+**Corollary 5 (cross-level SAT strengthening).** The factorial-free counterexample SAT formulation in the flat-automaton Subsection can be strengthened, without changing satisfiability, by adding binary clauses
+\[
+\boxed{\neg r_{x,S}\vee\neg r_{x,T}
+\quad\text{for every root }x,\ S\cap T=\varnothing,\ 
+|S|+|T|=n-1.}\tag{5}
+\]
+These clauses are logical consequences of the original color-edge closure, antipodal oddness, and complementary exclusion constraints. In particular the clauses \(r_{x,\varnothing}\) force all membership variables \(r_{x,T}\) of cardinality \(n-1\) to be false.
+
+*Proof.* Any satisfying assignment defines a complement-free outward color-zero-closed family \(U_x=\{S:r_{x,S}=1\}\). Apply Theorem 1 separately to each root. \(\square\)
+
+For odd \(n=2k+1\), the clause family includes disjointness constraints between all reachable \(k\)-sets. By Corollary 3 these induce the Erdős–Ko–Rado bound \( |U_{x,k}|\le\binom{2k}{k-1}\). This gives a small, intrinsic collection of resource-level constraints that can be propagated by SAT or cutting-plane solvers. No large-dimensional conclusion is inferred from solver timeouts.
+
+### Common-terminal monochromatic arm bases and rooted Boolean complement intersection
+
+The spanning at-most-one-turn conjecture for ordinary reversal-odd boundary 3-tournaments has a simpler equivalent form than opposite-ordered-pair terminal packing. It asks for two same-colored tight paths ending at the **same original vertex**, using complementary sets of other vertices. Their union is a basis of a doubled graphic matroid. No matching penultimate ordered pairs or prescribed bridging-triple color is required.
+
+Fix a reversal-odd boundary coloring \(b(a,v,c)\in\mathbb F_2\) on a set \(V\) of order \(n\ge3\). Admit one-vertex and two-vertex tight paths as vacuously monochromatic in either color.
+
+**Theorem 1 (single-terminal two-arm characterization).** The following assertions are equivalent:
+
+(i) Some injective ordering \(W\) of all \(V\) has at most one change among its successive ordered-triple colors.
+
+(ii) There are a vertex \(v\), a color \(\varepsilon\), and two vertex-simple \(\varepsilon\)-monochromatic tight paths \(P,Q\), **both ending at \(v\)**, with
+\[
+\boxed{V(P)\cap V(Q)=\{v\},\qquad V(P)\cup V(Q)=V.}
+\tag{1}
+\]
+
+*Proof.* For (ii), write \(P=(p_1,\ldots,p_r,v)\), \(Q=(q_1,\ldots,q_s,v)\) and concatenate
+\[
+W=(p_1,\ldots,p_r,v,q_s,\ldots,q_1).
+\]
+This word is injective and spanning. All triples wholly inside \(P\) have color \(\varepsilon\), and all triples wholly inside the reverse of \(Q\) have color \(1-\varepsilon\). There is only one additional junction triple \((p_r,v,q_s)\), which has one of those two colors. Thus the full color word has at most one change. If either arm is a single vertex, the concatenation is the other monochromatic path.
+
+Conversely, if the one change of \(W=(w_1,\ldots,w_n)\) occurs between its triple windows starting at indices \(i\) and \(i+1\), take \(v=w_{i+2}\), let \(P=(w_1,\ldots,w_{i+2})\), and take \(Q=(w_n,\ldots,w_{i+2})\), the reverse of the suffix beginning at \(v\). If the initial triple color is \(\varepsilon\), then \(P\) has all triple colors \(\varepsilon\), whereas the original suffix has triple colors \(1-\varepsilon\); reversal makes all triples of \(Q\) color \(\varepsilon\). Their vertex sets partition \(V\) around \(v\). The alternative pivot \(v=w_{i+1}\) works as well, giving **two adjacent seam-pivot choices**. If \(W\) is monochromatic, take \(P=W\) and \(Q=(w_n)\). \(\square\)
+
+#### Parallel-extension graphic matroid
+
+Let \(2K_n\) be the multigraph obtained by duplicating every edge of \(K_n\), giving each original edge a \(P\)-copy and a \(Q\)-copy, and let
+\[
+\boxed{\mathsf R_n^{(2)}=M(2K_n).}
+\tag{2}
+\]
+For a path \(P\), write \(E_P(P)\) for its consecutive-original-vertex edges in the \(P\)-copy, and similarly \(E_Q(Q)\).
+
+**Theorem 2 (rooted two-arm basis-packing equivalence).** If \(P,Q\) are vertex-simple tight words ending at the same original vertex \(v\), then
+\[
+\boxed{
+E_P(P)\cup E_Q(Q)\in\mathcal I(\mathsf R_n^{(2)})
+\iff
+V(P)\cap V(Q)=\{v\}.
+}
+\tag{3}
+\]
+Such a union is a basis if and only if the two arms also cover \(V\). Hence the spanning one-turn conjecture is equivalent to the existence of a **same-color common-terminal arm pair whose union is a basis of the rank-\((n-1)\) graphic matroid \(\mathsf R_n^{(2)}\)**.
+
+*Proof.* Each arm is a simple graph path. If their vertex sets meet only at \(v\), their doubled-edge union is a tree. Otherwise the two paths from \(v\) to any other common vertex form a graphic cycle, with doubled shared edges contributing two-element parallel cycles when necessary. Thus graphic independence is equivalent to intersection only at \(v\). An independent connected graph whose arms cover all \(n\) vertices has \(n-1\) edges, hence is a graphic-matroid basis; conversely a graphic basis requires all \(n\) vertices. Apply Theorem 1. \(\square\)
+
+The parallel copies matter: in the simple graphic matroid \(M(K_n)\), two identical suffix edges collapse set-theoretically and might falsely appear independent. In \(M(2K_n)\) their repetition is a graphic two-cycle, so the basis condition alone enforces disjointness away from the root.
+
+#### Rooted Boolean-lattice complement formulation
+
+For each \(v\in V\) and color \(\varepsilon\), define
+\[
+\boxed{
+\mathcal A_v^\varepsilon=
+\{S\subseteq V\setminus\{v\}:
+\exists\text{ an injective }\varepsilon\text{-monochromatic tight word}\\
+\text{on }S\cup\{v\}\text{ ending at }v\}.
+}
+\tag{4}
+\]
+The singleton path \((v)\) witnesses the empty set, and all singleton subsets are witnessed by two-vertex paths. The complete family is the union of reachability states from the ordered-terminal resource automaton after forgetting the penultimate vertex.
+
+**Theorem 3 (rooted complementary reachability).** A boundary tournament has a spanning at-most-one-turn tight path if and only if
+\[
+\boxed{
+\exists\,v\in V,\ \varepsilon\in\mathbb F_2,\ S\subseteq V\setminus\{v\}:
+\quad
+S,\ (V\setminus\{v\})\setminus S\in\mathcal A_v^\varepsilon.
+}
+\tag{5}
+\]
+
+*Proof.* Two complementary reachable subsets give two same-color arms ending at \(v\) whose only shared original vertex is \(v\), and their union covers \(V\). Theorem 1 glues them into a one-turn spanning word. Conversely the two-arm decomposition in Theorem 1 yields precisely these complementary resource subsets. \(\square\)
+
+**Corollary 4 (a sufficient rooted-majority criterion).** If some \(v,\varepsilon\) satisfies
+\[
+\boxed{|\mathcal A_v^\varepsilon|>2^{n-2},}
+\tag{6}
+\]
+then a spanning one-turn tight path exists, by pigeonholing the \(2^{n-1}\) subsets into \(2^{n-2}\) complementary pairs. This inequality is a proposed proof route, **not** an established universal lower bound.
+
+#### Unification with NORI1
+
+The cube's free-resource automaton already gives rooted color-zero reachability families \(R_x\subseteq2^{[n]}\), and Article XI proves NORI1 equivalent to the existence of a root \(x\) for which
+\[
+\boxed{\exists S:\quad S,\ [n]\setminus S\in R_x.}
+\tag{7}
+\]
+Theorem 3 now places the ordinary boundary spanning one-turn conjecture in **the identical formal rooted complement-pair template**, but on original-vertex subsets \(V\setminus\{v\}\). The resource independence of two boundary arms is captured by the parallel-extension graphic matroid \(\mathsf R_n^{(2)}\), while cube coordinate resource independence is captured by the free matroid. This removes the two-vertex seam-matching constraint from the boundary selector and makes the common open question precise: **under which shared intrinsic polarized-exchange axioms must a rooted monochromatic reachable-set family intersect its Boolean complement image?**
+
+These results are equivalences and sufficient criteria, not a proof of the required complementary intersection in every coloring.
