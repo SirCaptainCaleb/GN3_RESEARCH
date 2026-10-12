@@ -329,6 +329,14 @@
             "research_status": "active"
         },
         {
+            "id": "exact_homology_of_global_geodesic_exchange_hexagons",
+            "type": "subsection",
+            "title": "Exact homology of global geodesic-exchange hexagons",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "extremal_exterior_cube_rigidity_and_terminal_phase_separation",
             "type": "subsection",
             "title": "Extremal exterior-cube rigidity and terminal phase separation",
@@ -593,6 +601,14 @@
             "research_status": "active"
         },
         {
+            "id": "quadratic_intersection_and_port_cocycle_balance",
+            "type": "subsection",
+            "title": "Quadratic intersection and port-cocycle balance",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs",
             "type": "subsection",
             "title": "Rainbow terminal-edge theorem for locally tournament-ordered graphs",
@@ -788,6 +804,14 @@
             "id": "universal_three_direction_edge_color_prescription",
             "type": "subsection",
             "title": "Universal three-direction edge-color prescription",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect",
+            "type": "subsection",
+            "title": "Zero-turn contraction, pointed odd girth, and the cube geodesic distance defect",
             "version": 1,
             "superseded": false,
             "research_status": "active"

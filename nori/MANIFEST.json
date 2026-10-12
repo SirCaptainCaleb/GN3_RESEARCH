@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 86,
+  "active_subsection_count": 89,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 375572,
-        "composed_through_revision": 6812,
-        "composition_version": 103,
+        "body_chars": 414902,
+        "composed_through_revision": 6860,
+        "composition_version": 114,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T16:00:15.15589+00:00",
+  "generated_at": "2026-10-12T17:33:52.064275+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 79,
+  "research_note_count": 81,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 226948,
-        "composed_through_revision": 6811,
-        "composition_version": 76,
+        "body_chars": 248628,
+        "composed_through_revision": 6856,
+        "composition_version": 83,
         "frontier": {
           "current": null
         },
@@ -226,9 +226,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 148553,
-        "composed_through_revision": 6779,
-        "composition_version": 29,
+        "body_chars": 166203,
+        "composed_through_revision": 6859,
+        "composition_version": 33,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2094,
+  "snapshot_revision": 2134,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -754,6 +754,23 @@
         },
         "has_composition": true,
         "source_note": "Port-cycle versions of simultaneous derivative signs, Borsuk–Ulam galleries, and their terminal-hole consequences from Article X.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "exact_homology_of_global_geodesic_exchange_hexagons": {
+      "composition": {
+        "body_chars": 17648,
+        "composed_through_revision": 6858,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Adds explicit direct-sum normal forms for the full turn cycle space via exchange hexagons, fixed stars, and one port geodesic.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1321,6 +1338,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "quadratic_intersection_and_port_cocycle_balance": {
+      "composition": {
+        "body_chars": 7197,
+        "composed_through_revision": 6855,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Four-cocycle local modular switches and short-cocircuit caution",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs": {
       "composition": {
         "body_chars": 4059,
@@ -1744,6 +1778,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
+      "composition": {
+        "body_chars": 14467,
+        "composed_through_revision": 6849,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Graphic-matroid spanning-forest basis formulation of shortest positive-loop circuit and NORI1 fundamental-circuit distance criterion.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     }
   },
