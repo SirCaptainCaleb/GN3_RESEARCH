@@ -2,6 +2,7 @@
 
 Sidecar only; no note body is included in the mathematical manuscript.
 
+- [Adjacent-face universality and simultaneous endpoint intersection](../note_article_x_two_face_independence_reduction_20261011.md) — active/proved
 - [Affine Q4 certificate: convex reachability intersections need not splice](../note_affine_q4_convexified_reachability_false_intersection.md) — active/proved
 - [Affine, nonlinear, and central-layer NORI1 edge-model investigations](../note_edge_affine_models_and_central_tight_path_working_memory.md) — active/proposed
 - [Antipodal geodesic concatenation and monochromatic reachability intersections](../note_antipodal_geodesic_reachability_splicing.md) — active/proved

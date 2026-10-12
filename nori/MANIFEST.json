@@ -1,6 +1,6 @@
 {
-  "active_section_count": 4,
-  "active_subsection_count": 23,
+  "active_section_count": 5,
+  "active_subsection_count": 27,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -31,6 +31,14 @@
         "id": "nori_edge_central_carriers",
         "math_version": 1,
         "position": 2,
+        "version": 1
+      }
+    ],
+    "nori_article_x_switch_induction": [
+      {
+        "id": "nori_codimension_two_switch_induction",
+        "math_version": 1,
+        "position": 1,
         "version": 1
       }
     ]
@@ -83,9 +91,24 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 21805,
-        "composed_through_revision": 5098,
-        "composition_version": 14,
+        "body_chars": 36150,
+        "composed_through_revision": 6291,
+        "composition_version": 22,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 1
+    },
+    "nori_article_x_switch_induction": {
+      "composition": {
+        "body_chars": 19857,
+        "composed_through_revision": 6317,
+        "composition_version": 5,
         "frontier": {
           "current": null
         },
@@ -99,20 +122,36 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-11T21:32:28.377337+00:00",
+  "generated_at": "2026-10-12T01:34:59.42709+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 40,
+  "research_note_count": 46,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
   "schema": "nori",
   "section_versions": {
+    "nori_codimension_two_switch_induction": {
+      "composition": {
+        "body_chars": 19782,
+        "composed_through_revision": 6316,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 21756,
-        "composed_through_revision": 5093,
-        "composition_version": 9,
+        "body_chars": 36101,
+        "composed_through_revision": 6290,
+        "composition_version": 17,
         "frontier": {
           "current": null
         },
@@ -173,7 +212,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1533,
+  "snapshot_revision": 1591,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -222,14 +261,14 @@
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
-        "body_chars": 10532,
-        "composed_through_revision": 4989,
-        "composition_version": 3,
+        "body_chars": 10549,
+        "composed_through_revision": 6264,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Single-unification editorial correction: move latest NORI1-only paired-root extension into scoped toy note",
+        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
         "stale": null,
         "stale_dependencies": []
       },
@@ -340,14 +379,14 @@
     },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
-        "body_chars": 6583,
-        "composed_through_revision": 4834,
-        "composition_version": 1,
+        "body_chars": 6586,
+        "composed_through_revision": 6268,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "All NORI1 edge colorings: full geodesic indexed profiles affinely span F2^n; universal two-direction color prescription; square-potential proof",
+        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
         "stale": null,
         "stale_dependencies": []
       },
@@ -387,6 +426,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "inductive_low_switch_endpoint_coincidence_in_adjacent_codimension_two_faces": {
+      "composition": {
+        "body_chars": 2707,
+        "composed_through_revision": 6295,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Article X inductive endpoint-alignment program",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier": {
@@ -438,6 +494,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "penultimate_length_extension_and_parallel_face_endpoint_exclusion": {
+      "composition": {
+        "body_chars": 14308,
+        "composed_through_revision": 6289,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Parallel-face switch bound and symmetric global switch comparison",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
@@ -508,6 +581,40 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "signed_partition_balancing_and_simultaneous_one_switch_endpoints": {
+      "composition": {
+        "body_chars": 8800,
+        "composed_through_revision": 6315,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Strengthened from affine block parity to arbitrary shifted block-radial edge colorings",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "simultaneous_partition_balancing_and_low_switch_terminal_alignment": {
+      "composition": {
+        "body_chars": 8194,
+        "composed_through_revision": 6308,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "the_common_path_symmetry_problem": {
       "composition": {
         "body_chars": 2357,
@@ -561,14 +668,14 @@
     },
     "universal_three_direction_edge_color_prescription": {
       "composition": {
-        "body_chars": 4574,
-        "composed_through_revision": 4840,
-        "composition_version": 1,
+        "body_chars": 4585,
+        "composed_through_revision": 6269,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Proved universal three-direction prescription in all NORI1 dimensions via antipodal cyclic root slides, rigid 3-cube avoidance and a same-root adjacent physical square swap.",
+        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
         "stale": null,
         "stale_dependencies": []
       },
@@ -579,7 +686,7 @@
   },
   "toolkit_count": 30,
   "universal_document_versions": {
-    "guide": 48,
+    "guide": 49,
     "reflexes": 26,
     "research_architecture_design_principles": 1
   }

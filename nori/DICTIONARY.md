@@ -46,16 +46,31 @@ color change: A position between adjacent entries of a binary color word at whic
 color word: The sequence of colors of consecutive ordered k-face windows along a directed cube geodesic.
   Note: For an m-edge path, m−k+1 windows exist when m≥k.
 
+corresponding vertices: Vertices x and y in parallel faces of a cube are corresponding if they differ only in coordinates outside the shared free-coordinate set of those faces. Equivalently, their projections onto the shared free-coordinate set are equal.
+  Note: Parallel faces have the same set of free-coordinate directions; their fixed-coordinate assignments may differ in several coordinates.
+
 exterior coordinates: The coordinates fixed on a cube face, complementary to its free-coordinate directions.
 
 k-cp: A path is k-cp (color-partitioned) if its edges admit a partition into at most k consecutive subpaths such that every ordered-face window fully contained within each subpath has the same color. Windows crossing a partition boundary are unrestricted. Equivalently, it is a concatenation of at most k monochromatic subpaths. The color word of the whole path may have more than k-1 changes.
   Note: The parameter k counts monochromatic subpaths, not color changes in the full window word. For an edge coloring, a 2-cp has at most one color change. For ordered higher-dimensional face colorings, boundary-crossing windows may contribute additional color changes. Two monochromatic geodesics from antipodal cube vertices to a common vertex always concatenate into a 2-cp antipodal geodesic, regardless of their colors.
+
+k-splice: In an edge-colored cube, a geodesic decomposed into at most k+1 consecutive monochromatic geodesic subpaths. Equivalently, an edge-colored geodesic with at most k switches.
+  Note: The concatenation itself must be a geodesic: its constituent direction supports are pairwise disjoint.
+
+k-switch: In an edge-colored cube, a geodesic whose edge-color word has exactly k changes. The phrase at most k switches permits fewer changes.
+  Note: Always refers to a geodesic in NORI usage.
+
+long path: A path in a cube face that traverses every free-coordinate direction of that face. A long geodesic traverses every free direction exactly once and joins antipodal vertices of the face.
+  Note: Longness is relative to the containing face; a general long path need not be a geodesic.
 
 ordered three-face: A three-dimensional cube face F together with an ordering of its three free directions.
   Note: No traversal corner is distinguished.
 
 ordered-three-face antipodal coloring: A binary function c(F,π) on ordered three-faces with c(bar F,rev π)=1−c(F,π).
   Note: The NORI3 coloring class.
+
+parallel faces: Two cube faces are parallel if the set of coordinate directions spanned by one is a subset (possibly equal) of the set of coordinate directions spanned by the other, in either order. Equivalently, their free-coordinate sets are comparable by inclusion.
+  Note: Parallelism includes equal-dimensional faces and faces with nested free-direction sets; the faces need not be nested as vertex sets.
 
 root: The first vertex of a directed cube geodesic.
   Note: Root-dependent assertions must say whether it is prescribed.

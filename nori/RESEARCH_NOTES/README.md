@@ -3,6 +3,7 @@
 Non-manuscript research memory. Manuscript text and numbering are unaffected. Only the current revision and one immediately prior snapshot are retained.
 Find related notes using nori.notes_for(type,id), search with nori.search_notes, or read the current/previous revision via nori.read_note(id,version).
 
+- [Adjacent-face universality and simultaneous endpoint intersection](note_article_x_two_face_independence_reduction_20261011.md) (article:nori_article_x_switch_induction; active; proved)
 - [Affine Q4 certificate: convex reachability intersections need not splice](note_affine_q4_convexified_reachability_false_intersection.md) (article:nori_article_ix_unification; active; proved)
 - [Affine, nonlinear, and central-layer NORI1 edge-model investigations](note_edge_affine_models_and_central_tight_path_working_memory.md) (article:nori_article_viii_edges; active; proposed)
 - [Alternating geodesic-window colors at every order](note_uniform_length_all_roots_obstruction.md) (article:nori_article_ix_unification; active; proved)
@@ -20,6 +21,7 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Color-blind antipodal reachability criterion for NORI1](note_antipodal_midpoint_splice_candidate.md) (article:nori_article_ix_unification; active; proved)
 - [Common Freudenthal carrier: topological intersection certifies antipodal geodesic splicing](note_common_freudenthal_reachability_intersection_extraction.md) (article:nori_article_ix_unification; active; proved)
 - [Common triangulation of monochromatic reachability](note_common_triangulation_reachability_intersection_20261011.md) (article:nori_article_ix_unification; active; proved)
+- [Complementary one-switch reachability interface and facet-splice reduction to NORI1](note_bbd345b274280f29fb227353.md) (subsection:penultimate_length_extension_and_parallel_face_endpoint_exclusion; active; open)
 - [Eight-way block reversal does not repair boundary-tournament seams](note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) (article:nori_article_ix_unification; active; method_limitation)
 - [Exponentially sparse reachability and successful roots in NORI1](note_nori1_exponentially_sparse_reachability_20261011.md) (project:nori; active; proved)
 - [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](note_grand_structure_uniform_length_geodesics.md) (article:nori_article_ix_unification; active; open)
@@ -27,7 +29,9 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Induced reachability complexes in one fixed triangulation](note_induced_reachability_complexes_fixed_triangulation.md) (article:nori_article_ix_unification; active; proved)
 - [Induced reachability subcomplexes in one fixed cube triangulation](note_fixed_triangulation_induced_reachability_endpoint_intersection.md) (article:nori_article_ix_unification; active; proved)
 - [Linear height barrier for global ordered-pair transition ranks](note_boundary_pair_rank_linear_height_barrier.md) (article:nori_article_ix_unification; resolved; proved)
+- [Low-switch terminal sets need not meet antipodal geodesics](note_article_x_low_switch_terminal_geodesic_avoidance_20261011.md) (article:nori_article_x_switch_induction; active; proved)
 - [Monochromatic geodesic reachability forms accessible families, not necessarily simplicial complexes](note_geodesic_reachability_accessibility_not_simplicial.md) (article:nori_article_ix_unification; active; proved)
+- [Opposite-face switch splicing and four-face phase frustration](note_e65b46a713231daff9904b47.md) (subsection:penultimate_length_extension_and_parallel_face_endpoint_exclusion; active; proved)
 - [Ordered-pair antipodal edge model: a three-step connectivity obstruction](note_ordered_pair_antipodal_graph_bridge_and_decoding_obstruction_20261011.md) (article:nori_article_ix_unification; active; proved)
 - [Ordinary boundary 3-tournaments need not come from a global edge order](note_boundary_tournament_edge_orderability_is_strict_fallback.md) (article:nori_article_ix_unification; active; proved)
 - [Orientation-sensitive odd-window grand-conjecture candidate](note_orientation_sensitive_odd_window_grand_candidate_20261011.md) (article:nori_article_ix_unification; active; proposed)
@@ -38,7 +42,9 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Root-slide selector topology: what high index cannot extract](note_root_slide_selector_and_topological_index_limits.md) (article:nori_article_ix_unification; active; method_limitation)
 - [Rooted 2-cp failures and exact good-root localization obstructions](note_rooted_restriction_and_good_root_density_limitations.md) (section:nori_foundations; active; proved)
 - [Scope limits of distinguished-direction NORI constructions and boundary edge-order models](note_sentinel_transfer_and_boundary_comparison_model_scope.md) (article:nori_article_ix_unification; active; proved)
+- [Sparse low-switch endpoint sets and exact paired alignment in signed rank-parity colorings](note_article_x_signed_rank_parity_endpoint_sparsity_20261011.md) (article:nori_article_x_switch_induction; active; proved)
 - [Speculative LINP application of entropy compression](note_entropy_compression_linp_scope_20261011.md) (project:nori; active; proposed)
+- [Successor-coordinate obstruction and dependency-graph criterion for synchronized switch carriers](note_successor_coordinate_obstruction_synchronized_switch_carriers_20261011.md) (subsection:penultimate_length_extension_and_parallel_face_endpoint_exclusion; active; proved)
 - [Terminal-basin and root-profile nerve extraction gaps](note_terminal_basins_and_root_profile_nerve_extraction_limits.md) (article:nori_article_ix_unification; active; method_limitation)
 - [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](note_tetrahedral_parity_boundary_no_spanning_tight_path.md) (article:nori_article_ix_unification; active; proved)
 - [Unbounded switches in reversal-coherent higher odd faces](note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) (article:nori_article_ix_unification; active; proved)

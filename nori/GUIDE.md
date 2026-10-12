@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Research independently and develop mathematics toward the current project's stated conjecture or problem. The mathematical objective, established results, obstructions, admissible objects, and open questions belong in the project's **research state**, not in this shared guide. Read that state before selecting a direction; question inherited approaches and formulations when the mathematics warrants it.
+Research independently and develop mathematics toward the current project's stated conjecture or problem. The mathematical objective, established results, obstructions, admissible objects, and open questions belong in the project's **research state**, not in this shared guide. Before beginning mathematical research, read the complete compositions of all active Articles; inactive Articles need not be read. Read that state before selecting a direction; question inherited approaches and formulations when the mathematics warrants it.
 
 ## Session lifecycle
 
@@ -34,7 +34,7 @@ A higher-level manuscript should be self-contained to the extent required by its
 
 ## Concurrency and verification
 
-Read current compositions and relevant prior arguments before editing. Use optimistic versions and the project's transaction or staging facilities when multiple researchers may write concurrently. Verify that edits persist, that the active hierarchy is coherent, and that all necessary mathematical evidence remains accessible.
+Read all active Article compositions and relevant prior arguments before editing; inactive Articles need not be read. Use optimistic versions and the project's transaction or staging facilities when multiple researchers may write concurrently. Verify that edits persist, that the active hierarchy is coherent, and that all necessary mathematical evidence remains accessible.
 
 This guide is **schema-independent**. Consult the current project's research state and API for its particular conjecture, node hierarchy, publication rules, and tool names.
 

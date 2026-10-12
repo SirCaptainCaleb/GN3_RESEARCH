@@ -1,0 +1,50 @@
+# Simultaneous partition balancing and low-switch terminal alignment
+
+# Simultaneous low-switch terminals from signed coordinate partitions
+
+Let \(\mathcal P\) be a partition of \([m]\), choose \(\varepsilon_B\in\mathbb F_2\) for each \(B\in\mathcal P\), and choose an arbitrary vector \(u\in\mathbb F_2^m\). Define the binary coloring of undirected edges of \(Q_m\) by
+\[
+d_i(x)=\varepsilon_{B(i)}\oplus\bigoplus_{j\in B(i)\setminus\{i\}}(x_j\oplus u_j),\qquad i\in[m], \tag{1}
+\]
+where \(B(i)\) is the block containing \(i\). The right side is invariant under changing \(x_i\).
+
+**Theorem (signed-partition simultaneous endpoints).** For any two colorings \(d,e\) of the form (1), allowing independent partitions, block constants, and vectors \(u,v\), there exists \(x\in Q_m\) supporting a spanning antipodal geodesic with at most two switches for \(d\) and one with at most one switch for \(e\), both terminating at \(x\). Another (possibly different) common terminal supports the reversed pair of switch bounds. In symbols,
+\[
+E_2(d)\cap E_1(e)\ne\varnothing,\qquad
+E_1(d)\cap E_2(e)\ne\varnothing. \tag{2}
+\]
+If the coordinate shifts coincide, \(u=v\), then \(E_1(d)\cap E_1(e)\ne\varnothing\). In that case, if the partition of \(d\) has only even-sized blocks, \(E_0(d)\cap E_1(e)\ne\varnothing\); if both partitions have only even-sized blocks, \(E_0(d)\cap E_0(e)\ne\varnothing\).
+
+**Lemma 1 (signed incidence balancing).** Let \(G=(L,R;E)\) be any finite bipartite multigraph and let \(a_{v,e}\in\{-1,+1\}\) be specified for every incidence \(v\in e\). There exist signs \(y_e\in\{-1,+1\}\) such that
+\[
+\left|\sum_{e\ni v} a_{v,e}y_e\right|\le1\quad(v\in R),
+\qquad
+\left|\sum_{e\ni v} a_{v,e}y_e\right|\le2\quad(v\in L),\tag{3}
+\]
+and every odd-degree vertex has absolute sum at most one. Moreover each even-degree vertex in \(R\) has sum zero. The two sides can be interchanged.
+
+*Proof.* Treat each connected component separately. If the component has odd-degree vertices, introduce an auxiliary vertex joined to each of them by one new edge. Assign arbitrary signs to the two incidences of every auxiliary edge. The number of odd-degree vertices is even, so the augmented multigraph is Eulerian. Traverse an Euler circuit beginning at the auxiliary vertex. Choose the sign of its first edge freely. Whenever an edge \(f\) follows an edge \(e\) at vertex \(w\), choose \(y_f\) so that \(a_{w,e}y_e+a_{w,f}y_f=0\). This cancels each consecutive arrival-departure pair. All original vertices have signed sum zero in the augmented graph, because the only potentially unmatched pair occurs at the auxiliary starting vertex. Removing the auxiliary edges leaves sum zero at original even-degree vertices and sum of absolute value one at original odd-degree vertices.
+
+If every vertex of a component has even degree, choose a starting vertex \(w\in L\) for its Euler circuit and use the same cancellation rule. Every vertex other than \(w\) has sum zero; the two boundary incidences at \(w\) contribute a sum of magnitude at most two. Isolated vertices have sum zero. This proves (3) and the stronger assertions. Starting the even-degree components on the other side interchanges \(L,R\). \(\square\)
+
+**Lemma 2 (balanced-block traversals).** In a block \(B\) of size \(\ell\), put \(z_j=x_j\oplus u_j\) and \(k=\sum_{j\in B}z_j\). If \(\ell\) is odd and \(|2k-\ell|\le1\), the directions of \(B\) admit a monochromatic spanning traversal from \(x\). The same holds if \(\ell\) is even and \(2k=\ell\); in that case either color may be chosen. If \(\ell\) is even and \(|2k-\ell|=2\), there is a spanning traversal with at most one switch.
+
+*Proof.* When \(\ell=2r\) and \(k=r\), alternate flips of initially one- and zero-valued \(z\)-bits. Beginning with a one-bit gives constant color \(\varepsilon_B\oplus(r-1\bmod2)\); beginning with a zero-bit gives the complementary color. When \(k=r+1\), alternate a one-bit then a zero-bit for \(r-1\) pairs, followed by the two remaining one-bits. The first \(2r-1\) edges all have color \(\varepsilon_B\oplus(r\bmod2)\), while the last has the opposite color. For \(k=r-1\), alternate a zero-bit then a one-bit for \(r-1\) pairs, followed by two remaining zero-bits. Again only the final edge differs in color. If \(\ell=2r+1\) and \(k=r\) or \(r+1\), alternate flips beginning and ending with a bit of the initially more numerous value. Throughout this traversal the parity of the number of other one-valued \(z\)-bits is \(r\bmod2\); the word is monochromatic. \(\square\)
+
+**Lemma 3 (three-phase assembly).** Suppose the directions are partitioned into disjoint blocks, and each block has a spanning traversal with at most one color change, with each block-edge color depending only on coordinates in that block. Then all block traversals can be interleaved to give a spanning geodesic with at most two changes. If every block admits a monochromatic traversal, a spanning geodesic with at most one change exists; if every block admits either monochromatic color, a monochromatic spanning geodesic exists.
+
+*Proof.* Regard a block path with one change as either \(0^a1^b\) or \(1^a0^b\). In the first phase traverse the zero-prefixes of all \(0^a1^b\) paths. In the second phase traverse their one-suffixes, the one-prefixes of all \(1^a0^b\) paths, and all constant-one blocks. In the third phase traverse the zero-suffixes of the \(1^a0^b\) paths and all constant-zero blocks. The within-block edge order is preserved, so every specified edge color remains valid. The resulting word has form \(0^*1^*0^*\). The monochromatic-block claims follow by grouping the blocks according to their colors, or choosing the same color for all. \(\square\)
+
+*Proof of the theorem.* Construct the bipartite incidence graph between the partition blocks defining \(d\) and \(e\), with one edge for each coordinate \(i\). At its \(d\)-end give edge \(i\) incidence sign \((-1)^{u_i}\), and at its \(e\)-end use \((-1)^{v_i}\). Choose \(y_i\) by Lemma 1, taking the \(e\)-blocks to be the right vertices, and select \(x_i\) through \(y_i=(-1)^{x_i}\). The signed sum at a block is then
+\[
+\sum_{i\in B}(-1)^{x_i\oplus u_i}
+=|B|-2\sum_{i\in B}(x_i\oplus u_i)
+\tag{4}
+\]
+for \(d\), with \(v\) in place of \(u\) for \(e\). Every \(e\)-block has discrepancy at most one, so Lemmas 2 and 3 give a spanning geodesic with at most one change under \(e\). Every \(d\)-block has discrepancy at most two, and the odd blocks have discrepancy at most one; Lemmas 2 and 3 give a spanning geodesic with at most two changes under \(d\). Both may start at \(x\), so their reversals terminate at \(x\). Interchanging sides proves the other intersection in (2).
+
+If \(u=v\), replace \(x\) throughout by \(x\oplus u\), reducing to two unshifted block partitions. Their incidence multigraph admits an equitable two-coloring of its edges: attach one auxiliary vertex to each side, join each odd-degree original vertex to the auxiliary vertex on the opposite side, and join the auxiliary vertices to each other when their degrees are odd. The augmented graph is bipartite and Eulerian. Alternating 0/1 around each even-length Euler circuit gives each original block equal color counts when its size is even and counts differing by one when its size is odd. Thus every block in both partitions satisfies the stronger hypotheses of Lemma 2 for a monochromatic traversal. Lemma 3 gives one-switch paths in both colorings, and monochromatic paths whenever all blocks of the corresponding partition have even size. \(\square\)
+
+**Corollary (ambient NORI1).** Let \(c\) be an antipodally odd coloring of \(Q_{m+2}\). Suppose its restrictions to two adjacent codimension-two faces are of form (1), with independent partitions, block constants, and shifts. Then \(\mu(c)\le2\). If the two shifts coincide and one partition has only even-sized blocks, then \(\mu(c)=0\).
+
+*Proof.* The theorem gives corresponding terminal vertices with switch counts \(r\le2,s\le1\). Theorem 10 of Article VIII yields \(\mu(c)\le2\). Under the final hypotheses, the theorem gives \(r=0,s\le1\) after possibly interchanging faces. The symmetric bound gives \(\mu(c)\le1\); evenness of the minimum full-path switch count under antipodal oddness forces \(\mu(c)=0\). \(\square\)

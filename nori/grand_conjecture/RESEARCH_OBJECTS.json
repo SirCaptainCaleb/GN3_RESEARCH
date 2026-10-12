@@ -33,9 +33,25 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_x_switch_induction",
+            "type": "article",
+            "title": "Article X — Low-switch induction through parallel codimension-two faces",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_edge_central_carriers",
             "type": "section",
             "title": "Central edge carriers and antipodal topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_codimension_two_switch_induction",
+            "type": "section",
+            "title": "Codimension-two face induction and corresponding endpoints",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -161,6 +177,14 @@
             "research_status": "active"
         },
         {
+            "id": "inductive_low_switch_endpoint_coincidence_in_adjacent_codimension_two_faces",
+            "type": "subsection",
+            "title": "Inductive low-switch endpoint coincidence in adjacent codimension-two faces",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier",
             "type": "subsection",
             "title": "Layered boundary snakes and a dense rank-sensitivity barrier",
@@ -180,6 +204,14 @@
             "id": "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments",
             "type": "subsection",
             "title": "Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "penultimate_length_extension_and_parallel_face_endpoint_exclusion",
+            "type": "subsection",
+            "title": "Penultimate-length extension and parallel-face endpoint exclusion",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -212,6 +244,22 @@
             "id": "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support",
             "type": "subsection",
             "title": "Sharp logarithmic monochromatic paths under bounded exterior support",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "signed_partition_balancing_and_simultaneous_one_switch_endpoints",
+            "type": "subsection",
+            "title": "Signed partition balancing and simultaneous one-switch endpoints",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "simultaneous_partition_balancing_and_low_switch_terminal_alignment",
+            "type": "subsection",
+            "title": "Simultaneous partition balancing and low-switch terminal alignment",
             "version": 1,
             "superseded": false,
             "research_status": "active"
