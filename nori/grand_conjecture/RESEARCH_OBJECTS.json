@@ -297,6 +297,14 @@
             "research_status": "active"
         },
         {
+            "id": "five_cycle_turn_density_and_six_resource_marked_intersection_theorem",
+            "type": "subsection",
+            "title": "Five-cycle turn-density and six-resource marked intersection theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "folded_cube_cycle_space_presentation_and_antipodal_girth",
             "type": "subsection",
             "title": "Folded-cube cycle-space presentation and antipodal girth",
@@ -596,6 +604,14 @@
             "id": "the_common_path_symmetry_problem",
             "type": "subsection",
             "title": "The common path-symmetry problem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "three_turn_boundary_reconstruction_and_legal_turn_contraction",
+            "type": "subsection",
+            "title": "Three-turn boundary reconstruction and legal-turn contraction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
