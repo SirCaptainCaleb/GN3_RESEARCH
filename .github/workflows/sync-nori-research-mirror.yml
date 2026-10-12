@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI: complete signed/unsigned Hamiltonian Smith forms; path cones and cut constraints.
+# Article XI: all-dimensional signed and unsigned Smith forms; parity-complete adjacent-swap lattice; global path cut constraints.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
