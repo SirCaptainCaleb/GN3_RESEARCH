@@ -4,6 +4,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
 - [Bipartite highly connected square-generated two-covers still fail P4](../note_nori_xi_bipartite_square_generated_high_connectivity_p4_failure.md) — active/proved
+- [Boundary colorings with identical component flats but different monochromatic Hamilton status](../note_nori_xi_boundary_identical_flats_different_forward_hamilton_witness.md) — active/proved
 - [Boundary Hamiltonian tight-window Smith forms: proved in all orders](../note_ed5bae5d779fba468cf28cbc.md) — active/proved
 - [Boundary n=4 tetrahedral triangle components give loop-free contact K4](../note_nori_xi_boundary_n4_no_port_loop_tetrahedral_triangles.md) — active/proved
 - [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
@@ -24,6 +25,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Q5 red tree contains two antipodal pairs but no red cycle](../note_nori_xi_q5_two_pair_red_tree.md) — active/proved
 - [Q5 red tree has one defective antipodal pair and one geodesic pair](../note_nori_xi_q5_defective_pair_in_red_tree_with_good_pair.md) — active/proved
 - [Q6 red tree with unique antipodal pair of distance eight](../note_nori_xi_q6_single_contact_tree_defect.md) — active/proved
+- [Random sparse comparison conflicts limit purification density](../note_107241b2b413871f8fbe6866.md) — active/proved
 - [Short legal cocircuit with two-point intersection need not be resource-simple](../note_nori_xi_two_intersection_not_directed_resource_faithful.md) — active/proved
 - [Terminal-shell rigidity and nongeodesic antipodal component obstruction](../note_nori_xi_terminal_shell_and_component_local_non_geodesic_obstruction.md) — active/proved
 - [Three-connectivity does not force a prescribed pair into one cocircuit of a cocycle](../note_nori_xi_three_connected_matroid_two_port_cocycle_separation.md) — active/proved

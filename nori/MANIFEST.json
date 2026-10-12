@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 551647,
-        "composed_through_revision": 7015,
-        "composition_version": 157,
+        "body_chars": 570594,
+        "composed_through_revision": 7027,
+        "composition_version": 160,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T19:32:56.387869+00:00",
+  "generated_at": "2026-10-12T19:38:56.569242+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 91,
+  "research_note_count": 93,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 367189,
-        "composed_through_revision": 7014,
-        "composition_version": 122,
+        "body_chars": 386136,
+        "composed_through_revision": 7026,
+        "composition_version": 125,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2289,
+  "snapshot_revision": 2300,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -509,14 +509,15 @@
     },
     "boundary_tournament_antipodal_graphic_flat_matroids_and_the_separate_resource_selector_layer": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 8654,
+        "composed_through_revision": 7020,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "All-dimensional boundary cover graphic/partition matroid classification, non-basis-graph theorem, and opposite-terminal graphic resource-basis packing criterion.",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -609,14 +610,15 @@
     },
     "conflict_graph_path_transfer": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 5450,
+        "composed_through_revision": 7017,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "Conflict-graph Caro-Wei transfer and altitude bounds for imperfect edge-order comparators",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -897,14 +899,14 @@
     },
     "exact_signed_and_unsigned_hamiltonian_window_lattices": {
       "composition": {
-        "body_chars": 14126,
-        "composed_through_revision": 7013,
-        "composition_version": 3,
+        "body_chars": 18951,
+        "composed_through_revision": 7025,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Signed semigroup saturation, uniform middle-resource matroid projection, and global cut constraints on unsigned Hamiltonian paths.",
+        "source_note": "Proves all-dimensional parity-even generation by local adjacent-swap signed Hamiltonian window differences.",
         "stale": null,
         "stale_dependencies": []
       },

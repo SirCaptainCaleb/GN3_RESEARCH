@@ -166,3 +166,68 @@ In particular, the complete Smith congruence plus nonnegativity and the uniform-
 For (22), partition the vertex set into \(S\dot\cup S^c\) with \(|S|,|S^c|\ge3\). Choose one omitted middle vertex \(u\in S\) and \(v\in S^c\). For every other center \(b\), choose distinct \(a,c\) from the same side as \(b\) and different from \(b\); put a single one in the coordinate \([a,b,c]\), with all other coordinates zero. Different centers give different triple-orbit coordinates, so the resulting \(z\) is \(0/1\), has \(n-2\) ones, and has middle-resource projection \(\mathbf1-e_u-e_v\). The unsigned Smith theorem puts it in \(\Lambda_n\), because its coordinate sum equals \(n-2\). But no chosen triple crosses the partition, giving \(\langle q_S,z\rangle=0\), contrary to (21). \(\square\)
 
 **Implication for the unification program.** The two lattice theorems eliminate divisibility ambiguity but do not replace coherent resource-independent path geometry. Signed cones are non-pointed because reversal negates generators; unsigned convex path incidence has additional global connectivity inequalities invisible to both the Smith lattice and its uniform-matroid middle-resource projection. A common matroidal low-switch selector must preserve **graphic connectivity across cuts**, in addition to linear incidence and resource independence. The new conclusions are polyhedral obstructions to a proposed shortcut, not proofs of the unrestricted cube or boundary-tournament existence conjectures.
+
+## Complete local-exchange generation for signed Hamiltonian windows
+
+Keep \(n\ge5\), and write \(s_\pi\in\mathbb Z^{\mathcal T_n}\) for the signed triple-window incidence vector of a Hamiltonian word \(\pi\). Let
+\[
+E_n^\pm=\operatorname{span}_{\mathbb Z}
+\{s_\pi-s_{\pi'}:\ \pi'\text{ is obtained from }\pi
+\text{ by one adjacent transposition}\}.
+\tag{23}
+\]
+
+**Theorem 6 (all signed adjacent-swap differences generate the parity lattice).** For every \(n\ge5\),
+\[
+\boxed{
+E_n^\pm=
+\left\{z\in\mathbb Z^{\mathcal T_n}:
+\sum_t z_t\equiv0\pmod2\right\}.
+}
+\tag{24}
+\]
+Equivalently, the integer matrix of all signed adjacent-swap differences has full rational column rank and a Smith normal form with \(|\mathcal T_n|-1\) unit factors and one factor two. This holds in both odd and even orders.
+
+*Proof.* Adjacent transpositions generate the connected Cayley graph of the permutation group, so \(E_n^\pm\) also equals the lattice of all pairwise differences \(s_\pi-s_\sigma\).
+
+First classify annihilators over fields. Let \(z\) be a linear functional vanishing on these differences. Then \(\langle z,s_\pi\rangle=K\) is constant over all Hamiltonian words \(\pi\). Comparing terminal adjacent swaps gives the same four-cycle relation (S) used in Theorem 2.
+
+For a field of characteristic different from two, Theorem 2's local-potential argument turns any solution of (S) into an oriented graph cut
+\[
+z_{uab}=v_{\{a,b\}}-v_{\{u,a\}}
+\]
+on \(F=L(K_n)\). Its Hamiltonian sum is the potential of the final unordered edge minus that of the first. Since any ordered pair of disjoint original \(K_n\)-edges occurs as these endpoints, constant value \(K\) forces all potentials to agree (compare through a third edge disjoint from any intersecting pair), giving \(z=0\). Thus the swap-difference matrix has full rank over every field of characteristic different from two, including \(\mathbb Q\).
+
+In characteristic two, the unsigned four-cycle classification from Theorem 1 applies: every solution of (S) is
+\[
+z_{abc}=u_{\{a,b\}}+u_{\{b,c\}}+\zeta.
+\]
+Its Hamiltonian evaluation is
+\[
+u_{\{v_1,v_2\}}+u_{\{v_{n-1},v_n\}}+(n-2)\zeta=K.
+\]
+Constancy over arbitrary disjoint endpoint pairs again forces \(u\) to be constant. Hence the only annihilating weightings are the constant triple-orbit cochains \(z_{abc}=\zeta\), a one-dimensional space over \(\mathbb F_2\). Therefore the integral cokernel
+\[
+C=\mathbb Z^{\mathcal T_n}/E_n^\pm
+\]
+is finite with no odd-primary torsion, and \(\dim_{\mathbb F_2}(C/2C)=1\). It is a nonzero cyclic 2-group. Its unique nonzero modular annihilator is the all-one cochain, which evaluates to one on every coordinate vector, so every standard coordinate class \(e_t\) generates \(C\).
+
+The symmetric group acts on \(C\) by relabeling oriented triples. Every transposition is conjugate, while automorphisms of a cyclic group commute. A transposition of two labels outside a fixed triple fixes its coordinate generator, so it acts trivially; hence every transposition acts trivially. But transposing the first and last labels of the fixed triple reverses its orientation and sends \(e_t\) to \(-e_t\). Thus \(2e_t=0\), forcing \(C\cong\mathbb Z/2\mathbb Z\).
+
+Every signed Hamiltonian incidence vector has coordinate sum congruent to \(n-2\pmod2\), independent of its orientation signs. Accordingly every difference \(s_\pi-s_\sigma\) has even coordinate sum. The even-sum lattice has index two in \(\mathbb Z^{\mathcal T_n}\), as does \(E_n^\pm\); inclusion implies equality and proves (24). \(\square\)
+
+**Corollary 7 (difference-only versus full signed path lattices).** For \(n\ge5\),
+\[
+\boxed{
+\Lambda_n^\pm/E_n^\pm\cong
+\begin{cases}
+\mathbb Z/2\mathbb Z,&n\text{ odd},\\
+0,&n\text{ even}.
+\end{cases}}
+\tag{25}
+\]
+Thus in even orders the entire signed Hamiltonian path incidence lattice is generated by adjacent-swap differences. In odd orders a single signed Hamiltonian path vector supplies the remaining parity-odd class.
+
+*Proof.* Combine Theorem 6 with Theorem 2 and note that the coordinate sum of each signed Hamiltonian incidence vector has parity \(n-2\). \(\square\)
+
+**Interpretation for the matroidal unification project.** The signed Hamiltonian *resource-incidence* exchange system is integrally complete up to a single unavoidable parity class; it has no residual affine resource charge analogous to the \(n-1\)-dimensional charge space of cube geodesic six-turn exchanges. Yet this does not imply low color cost or long monochromatic tight paths. Differences between signed Hamiltonian vectors are formal integer relations, and their all-dimensional generation need not yield a sequence of legal, monotone-cost, resource-independent galleries. The remaining common problem is nonlinear **accessibility and positivity**, not generation of the integral incidence lattice.
