@@ -121,6 +121,14 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_boolean_lattice_terminal_polarity_and_spanning_one_turn_paths",
+            "type": "subsection",
+            "title": "Antipodal Boolean-lattice terminal polarity and spanning one-turn paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_diagonal_compression_and_local_face_certificates",
             "type": "subsection",
             "title": "Antipodal diagonal compression and local face certificates",
@@ -161,6 +169,14 @@
             "research_status": "active"
         },
         {
+            "id": "balanced_hexagon_cocircuit_generators_of_global_geodesic_exchange",
+            "type": "subsection",
+            "title": "Balanced hexagon cocircuit generators of global geodesic exchange",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture",
             "type": "subsection",
             "title": "Binary-generator Cayley lifts and the generalized port-intersection conjecture",
@@ -180,6 +196,14 @@
             "id": "boundary_tournaments_and_doubled_line_graph_matroids",
             "type": "subsection",
             "title": "Boundary tournaments and doubled line-graph matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cayley_two_design_conservation",
+            "type": "subsection",
+            "title": "Cayley two-design conservation",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -217,6 +241,14 @@
             "research_status": "active"
         },
         {
+            "id": "constant_port_intersection_rigidity_and_the_ninth_cube",
+            "type": "subsection",
+            "title": "Constant port intersection rigidity and the ninth cube",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "corresponding_switch_crossover_and_odd_defect_cancellation",
             "type": "subsection",
             "title": "Corresponding-switch crossover and odd-defect cancellation",
@@ -233,9 +265,25 @@
             "research_status": "active"
         },
         {
+            "id": "curvature_sector_cocircuit_weight_enumerators_and_sharp_fiber_conservation",
+            "type": "subsection",
+            "title": "Curvature-sector cocircuit weight enumerators and sharp fiber conservation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem",
             "type": "subsection",
             "title": "Cyclic-turn averaging, disjoint exchanges, and the ten-dimensional two-switch theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "deck_displacement_two_port_exchange",
+            "type": "subsection",
+            "title": "Deck-displacement two-port exchange",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -332,6 +380,14 @@
             "id": "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing",
             "type": "subsection",
             "title": "Generic full geodesics in physical boundary-compatible NORI3 and affine smoothing",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality",
+            "type": "subsection",
+            "title": "Graphic-matroid Hamilton path overlaps and random boundary pattern universality",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -585,9 +641,25 @@
             "research_status": "active"
         },
         {
+            "id": "signed_turn_adjacency_spectrum_and_global_cycle_density",
+            "type": "subsection",
+            "title": "Signed turn adjacency spectrum and global cycle density",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "simultaneous_partition_balancing_and_low_switch_terminal_alignment",
             "type": "subsection",
             "title": "Simultaneous partition balancing and low-switch terminal alignment",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "spanning_one_turn_gallery_conjecture_and_opposite_terminal_monochromatic_packing",
+            "type": "subsection",
+            "title": "Spanning one-turn gallery conjecture and opposite-terminal monochromatic packing",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -604,6 +676,14 @@
             "id": "star_bundle_rigidity_and_the_weighted_monochromatic_component_quotient",
             "type": "subsection",
             "title": "Star-bundle rigidity and the weighted monochromatic-component quotient",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "star_triangle_exchange_components_and_the_repeated_resource_barrier",
+            "type": "subsection",
+            "title": "Star-triangle exchange components and the repeated-resource barrier",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -633,9 +713,33 @@
             "research_status": "active"
         },
         {
+            "id": "transverse_bouquet_smoothing_and_phase_preserving_cocircuit_amalgamation",
+            "type": "subsection",
+            "title": "Transverse bouquet smoothing and phase-preserving cocircuit amalgamation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "twisted_cycle_reflection_and_the_six_resource_one_turn_theorem",
             "type": "subsection",
             "title": "Twisted-cycle reflection and the six-resource one-turn theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_path_connector_theorem_for_all_bipointed_cocircuit_sectors",
+            "type": "subsection",
+            "title": "Two-path connector theorem for all bipointed cocircuit sectors",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_port_sector_cogirth_and_simultaneous_intersection_selectors",
+            "type": "subsection",
+            "title": "Two-port sector cogirth and simultaneous intersection selectors",
             "version": 1,
             "superseded": false,
             "research_status": "active"

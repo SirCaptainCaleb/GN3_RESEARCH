@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 71,
+  "active_subsection_count": 84,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 247162,
-        "composed_through_revision": 6648,
-        "composition_version": 60,
+        "body_chars": 363754,
+        "composed_through_revision": 6791,
+        "composition_version": 97,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T07:41:19.65354+00:00",
+  "generated_at": "2026-10-12T15:18:08.30572+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 63,
+  "research_note_count": 74,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 110686,
-        "composed_through_revision": 6647,
-        "composition_version": 35,
+        "body_chars": 215130,
+        "composed_through_revision": 6790,
+        "composition_version": 70,
         "frontier": {
           "current": null
         },
@@ -226,9 +226,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 136405,
-        "composed_through_revision": 6537,
-        "composition_version": 27,
+        "body_chars": 148553,
+        "composed_through_revision": 6779,
+        "composition_version": 29,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1922,
+  "snapshot_revision": 2064,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -318,6 +318,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "antipodal_boolean_lattice_terminal_polarity_and_spanning_one_turn_paths": {
+      "composition": {
+        "body_chars": 10037,
+        "composed_through_revision": 6697,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-dimensional terminal subset-state DAG; complement-reversal color-changing anti-isomorphism; spanning one-turn antipodal intersection equivalence and complementary-layer criteria.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "antipodal_diagonal_compression_and_local_face_certificates": {
@@ -405,6 +422,23 @@
       "section_id": "nori_foundations",
       "version": 2
     },
+    "balanced_hexagon_cocircuit_generators_of_global_geodesic_exchange": {
+      "composition": {
+        "body_chars": 5978,
+        "composed_through_revision": 6789,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Combined star-triangle and port-free hexagon generators and geodesic weight intermediate-value theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture": {
       "composition": {
         "body_chars": 5911,
@@ -449,6 +483,23 @@
         },
         "has_composition": true,
         "source_note": "Boundary tournament two-cover construction and dual-cycle reconstruction; minimum port cocircuits and graphic-independence decoding.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "cayley_two_design_conservation": {
+      "composition": {
+        "body_chars": 7745,
+        "composed_through_revision": 6757,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete stationary-child fiber proof and invariant-cube enumeration",
         "stale": null,
         "stale_dependencies": []
       },
@@ -523,6 +574,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "constant_port_intersection_rigidity_and_the_ninth_cube": {
+      "composition": {
+        "body_chars": 8362,
+        "composed_through_revision": 6778,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Adds all-dimensional rigidity-sharpened staircase bound on antipodal geodesic color changes.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "corresponding_switch_crossover_and_odd_defect_cancellation": {
       "composition": {
         "body_chars": 5687,
@@ -557,6 +625,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "curvature_sector_cocircuit_weight_enumerators_and_sharp_fiber_conservation": {
+      "composition": {
+        "body_chars": 5601,
+        "composed_through_revision": 6730,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Weight enumerator transfer, sharp conservation law, and degree-balanced extremal colorings",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem": {
       "composition": {
         "body_chars": 7592,
@@ -572,6 +657,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "deck_displacement_two_port_exchange": {
+      "composition": {
+        "body_chars": 8432,
+        "composed_through_revision": 6753,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Boundary tournament two-class association scheme and exact child weight count",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
@@ -795,16 +897,32 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "graphic_nullity_interval_extraction_and_defect_weighted_port_cocircuit_decoding": {
       "composition": {
-        "body_chars": 12268,
-        "composed_through_revision": 6646,
-        "composition_version": 3,
+        "body_chars": 15071,
+        "composed_through_revision": 6663,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Cyclic seam optimization identity, polarity-contact equivalence, and curvature coupling",
+        "source_note": "Trimmed cyclic-interval extraction and recovery of marked boundary seam estimate",
         "stale": null,
         "stale_dependencies": []
       },
@@ -848,14 +966,15 @@
     },
     "independent_port_preserving_contractions_and_fundamental_cocircuit_repair": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 7641,
+        "composed_through_revision": 6657,
+        "composition_version": 3,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "Exact bipointed cocycle-support cohesion criterion and conditional two-port transfer",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -1304,6 +1423,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "signed_turn_adjacency_spectrum_and_global_cycle_density": {
+      "composition": {
+        "body_chars": 5977,
+        "composed_through_revision": 6720,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Signed-adjacency polynomial identity with integer-arithmetic interpolation certificate; all-dimensional spectral density bound",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "simultaneous_partition_balancing_and_low_switch_terminal_alignment": {
       "composition": {
         "body_chars": 8194,
@@ -1319,6 +1455,23 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "spanning_one_turn_gallery_conjecture_and_opposite_terminal_monochromatic_packing": {
+      "composition": {
+        "body_chars": 10985,
+        "composed_through_revision": 6666,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Revised spanning one-turn boundary and NORI1 unification, precise marked-cocircuit equivalence, opposite-terminal two-arm packing theorem, and exhaustive six-vertex cyclic obstruction.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy": {
@@ -1353,6 +1506,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "star_triangle_exchange_components_and_the_repeated_resource_barrier": {
+      "composition": {
+        "body_chars": 6337,
+        "composed_through_revision": 6775,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cube parent-component enumeration and resource-excess exchange barrier",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits": {
@@ -1406,6 +1576,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "transverse_bouquet_smoothing_and_phase_preserving_cocircuit_amalgamation": {
+      "composition": {
+        "body_chars": 20894,
+        "composed_through_revision": 6726,
+        "composition_version": 12,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Regular n(n-2)-fiber two-port cocircuit exchange and exact sector counts",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "twisted_cycle_reflection_and_the_six_resource_one_turn_theorem": {
       "composition": {
         "body_chars": 6899,
@@ -1416,6 +1603,40 @@
         },
         "has_composition": true,
         "source_note": "All-dimensional twisted-cycle tail reflection, terminal seam exchange identity, and hereditary six-resource one-turn theorem with multiplicity at least 18.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "two_path_connector_theorem_for_all_bipointed_cocircuit_sectors": {
+      "composition": {
+        "body_chars": 4918,
+        "composed_through_revision": 6690,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two vertex-disjoint connector theorem and all four bipointed sectors with zero-cost Menger criterion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "two_port_sector_cogirth_and_simultaneous_intersection_selectors": {
+      "composition": {
+        "body_chars": 5566,
+        "composed_through_revision": 6675,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two-port sector cogirth, coloring/orientation intersection formulas, coherent directed closing criterion, and open selector conjecture.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1459,14 +1680,14 @@
     },
     "unification_conjecture_hierarchy_and_shared_matroid_gallery_axioms": {
       "composition": {
-        "body_chars": 14428,
-        "composed_through_revision": 6589,
-        "composition_version": 1,
+        "body_chars": 15888,
+        "composed_through_revision": 6678,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Consolidated program: pointed cover axioms, three conjecture levels, counterexamples, Cayley generalization, and decorated gallery implications.",
+        "source_note": "note_nori_xi_balanced_shortcut_refutes_port_amplification",
         "stale": null,
         "stale_dependencies": []
       },
