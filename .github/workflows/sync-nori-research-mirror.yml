@@ -1,6 +1,6 @@
 name: NORI | Refresh research artifact
 # Refresh NORI research artifact from the current Supabase state.
-# Manual refresh requested after GUIDE.md publication-standard revision.
+# Manual refresh requested after Article XI matroidal turn geometry publication.
 # NORI assembled publication: canonical manuscript only, universal guide/reflexes, no overview appendix mirror or worker prompt
 
 on:
