@@ -441,6 +441,14 @@
             "research_status": "active"
         },
         {
+            "id": "iterated_line_graph_curvature_and_the_boundary_tournament_monodromy_tower",
+            "type": "subsection",
+            "title": "Iterated line-graph curvature and the boundary-tournament monodromy tower",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier",
             "type": "subsection",
             "title": "Layered boundary snakes and a dense rank-sensitivity barrier",
@@ -452,6 +460,14 @@
             "id": "lifted_phase_transport_and_two_intersection_splicing_certificates",
             "type": "subsection",
             "title": "Lifted phase transport and two-intersection splicing certificates",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "line_graph_cycle_space_exact_sequence_and_cubical_homology_generators",
+            "type": "subsection",
+            "title": "Line-graph cycle-space exact sequence and cubical homology generators",
             "version": 1,
             "superseded": false,
             "research_status": "active"

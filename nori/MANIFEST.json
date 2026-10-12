@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 84,
+  "active_subsection_count": 86,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 363754,
-        "composed_through_revision": 6791,
-        "composition_version": 97,
+        "body_chars": 375572,
+        "composed_through_revision": 6812,
+        "composition_version": 103,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T15:18:08.30572+00:00",
+  "generated_at": "2026-10-12T16:00:15.15589+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 74,
+  "research_note_count": 79,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 215130,
-        "composed_through_revision": 6790,
-        "composition_version": 70,
+        "body_chars": 226948,
+        "composed_through_revision": 6811,
+        "composition_version": 76,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2064,
+  "snapshot_revision": 2094,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -1015,6 +1015,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "iterated_line_graph_curvature_and_the_boundary_tournament_monodromy_tower": {
+      "composition": {
+        "body_chars": 6286,
+        "composed_through_revision": 6810,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Three-level triangle generation of boundary turn-cycle space and monodromy by layer",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier": {
       "composition": {
         "body_chars": 8533,
@@ -1047,6 +1064,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "line_graph_cycle_space_exact_sequence_and_cubical_homology_generators": {
+      "composition": {
+        "body_chars": 5528,
+        "composed_through_revision": 6803,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Conclude cubical triangle square spanning proof",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {

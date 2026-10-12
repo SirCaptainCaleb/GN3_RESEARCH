@@ -3,8 +3,11 @@
 Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
+- [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
 - [Equal changed-turn density need not fix stationary-child costs without a two-design](../note_nori_xi_nondesign_density_obstruction.md) — active/proved
 - [Four-vertex parity boundary obstruction](../note_nori_xi_boundary_4_parity_obstruction.md) — active/proved
+- [Homogeneous factor separation defeats short-port amplification](../note_2768df03853d2ad4c4161f2a.md) — active/proved
+- [Line-graph cover short-systole capture](../note_0631234e60332fbab139c5d3.md) — active/proved
 - [Monochromatic terminal reachability is accessible but not a greedoid](../note_nori_xi_monochromatic_terminal_reachability_not_greedoid.md) — active/proved
 - [Nonoptimal strict local minima for adjacent-swap geodesic exchange in dimensions n>=9](../note_nori_xi_strict_geodesic_exchange_trap.md) — active/proved
 - [One-turn paths need not admit monotone insertion or adjacent-swap rerouting](../note_nori_xi_one_turn_insertion_and_adjacent_swap_traps.md) — active/proved
