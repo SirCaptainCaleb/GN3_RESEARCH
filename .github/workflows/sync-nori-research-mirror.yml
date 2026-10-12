@@ -1,5 +1,6 @@
 name: NORI | Refresh research artifact
 # Refresh NORI research artifact from the current Supabase state.
+# Manual refresh requested after GUIDE.md publication-standard revision.
 # NORI assembled publication: canonical manuscript only, universal guide/reflexes, no overview appendix mirror or worker prompt
 
 on:
