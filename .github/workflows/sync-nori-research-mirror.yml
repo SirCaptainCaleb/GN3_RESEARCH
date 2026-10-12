@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Boundary tournament pointed-matroid theorem published in Article XI.
+# Article XI conjecture-section unification synthesis published; refresh from Supabase.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
