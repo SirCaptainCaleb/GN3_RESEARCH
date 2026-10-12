@@ -97,6 +97,14 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_diagonal_compression_and_local_face_certificates",
+            "type": "subsection",
+            "title": "Antipodal diagonal compression and local face certificates",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
             "type": "subsection",
             "title": "Antipodal multifacet bridge and seven-coordinate universality",
@@ -113,9 +121,25 @@
             "research_status": "active"
         },
         {
+            "id": "blockwise_perturbation_and_dimension_free_phase_synchronization",
+            "type": "subsection",
+            "title": "Blockwise perturbation and dimension-free phase synchronization",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "color_blind_antipodal_co_reachability_characterizes_nori1",
             "type": "subsection",
             "title": "Color-blind antipodal co-reachability characterizes NORI1",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "common_facet_terminal_lifting_and_exterior_color_stability",
+            "type": "subsection",
+            "title": "Common-facet terminal lifting and exterior color stability",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -161,6 +185,14 @@
             "research_status": "active"
         },
         {
+            "id": "extremal_exterior_cube_rigidity_and_terminal_phase_separation",
+            "type": "subsection",
+            "title": "Extremal exterior-cube rigidity and terminal phase separation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "full_geodesic_color_profiles_span_the_entire_binary_space",
             "type": "subsection",
             "title": "Full-geodesic color profiles span the entire binary space",
@@ -180,6 +212,14 @@
             "id": "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine",
             "type": "subsection",
             "title": "Hereditary sentinel-word contraction and NORI counterexamples in every dimension at least nine",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "independent_direction_recolorings_preserve_low_switch_terminal_alignment",
+            "type": "subsection",
+            "title": "Independent direction recolorings preserve low-switch terminal alignment",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -233,9 +273,25 @@
             "research_status": "active"
         },
         {
+            "id": "quadratic_independence_of_antipodal_geodesic_color_profiles",
+            "type": "subsection",
+            "title": "Quadratic independence of antipodal-geodesic color profiles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs",
             "type": "subsection",
             "title": "Rainbow terminal-edge theorem for locally tournament-ordered graphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests",
+            "type": "subsection",
+            "title": "Root-uniform low-switch geodesics for affine colorings supported on forests",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -311,7 +367,7 @@
         "recovery": "Research database or historical Git commits",
         "article_count": 5,
         "section_count": 13,
-        "subsection_count": 45,
+        "subsection_count": 46,
         "included_in_current_artifact": false
     }
 }

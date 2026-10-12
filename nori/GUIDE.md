@@ -1,29 +1,46 @@
 # Research workflow
 
-## Startup and sessions
+## Purpose
 
-Start one research session per independent conversation, retaining its identifier across continuations. Refresh live status and changes when resuming. Before beginning research, read the complete compositions of every active Article, the relevant prior proofs and obstructions, and the project's artifact instructions. Inactive Articles need not be read. Use the live API for project-specific operations.
+Research independently and develop mathematics toward the current project's stated conjecture or problem. The mathematical objective, established results, obstructions, admissible objects, and open questions belong in the project's **research state**, not in this shared guide. Before beginning mathematical research, read the complete compositions of all active Articles; inactive Articles need not be read. Read that state before selecting a direction; question inherited approaches and formulations when the mathematics warrants it.
 
-## Mathematical research
+## Session lifecycle
 
-Prioritize questions whose strongest plausible resolution would materially advance the central problem. Test proposed mechanisms against unrestricted instances and existing obstructions. Distinguish proofs from evidence, isolate precise gaps, and preserve valid arguments while correcting errors. Reconsider the approach when its hypotheses repeatedly fail to cover the full problem.
+Start one session when entering a new independent conversation. Preserve its session identifier throughout follow-ups, revisions, retries, and research continuations. For a continuing conversation, refresh the project's live status and changes; do not create a new session. Use the project's current API and artifact instructions for exact commands and supported operations.
 
-## Publication threshold
+## Mathematical judgment
 
-Publication-style Subsections are reserved for consequential mathematics: unrestricted theorems, reusable structural lemmas or reductions directly advancing the central problem, substantial quantitative bounds, decisive refutations of central conjectures, and independently significant results.
+Before pursuing a substantial subsidiary question, identify what its strongest plausible resolution would imply for the central objective. Develop promising mechanisms freely. Test their hypotheses against the required full class, distinguish evidence from proof, and be prepared to change representations when repeated extensions do not overcome the main obstruction.
 
-A rigorous proof is necessary but insufficient. Before publishing, identify the concrete general implication and its role in the argument. Results about convenient restricted families (including affine, forest, partition, block-radial, or separable colorings), toy dimensions, and computational examples belong in research notes by default. Their tractability, sharpness within the family, or value as suggestive evidence does not justify manuscript inclusion. Exceptions require a proved transfer to the unrestricted setting, a decisive obstruction, or independent mathematical significance.
+Audit exact statements: locate any missing implication, false hypothesis, exceptional case, or unsupported transfer. Repair the narrowest affected argument and retain valid surrounding mathematics. State mathematical uncertainty explicitly.
 
-Apply this editorial test: would removing the result materially weaken the main argument or an independently important theorem? If not, keep useful work in research notes or omit it. Record negative results as notes by default, with manuscript exceptions for major refutations. No publication or note is required from an inconclusive investigation.
+## Manuscript standard and terminology
 
-## Manuscript and research notes
+Every written Subsection composition must read as mathematical prose ready for peer review: self-contained within its stated context, economical, grammatically polished, and mathematically rigorous. Define objects and notation before using them. Supply complete statements and proofs, give the scope of every assumption, and distinguish theorems, conjectures, and conditional statements. Avoid padding, administrative summaries, and rhetorical modifiers. In particular, the words **physical**, **actual**, and **exact** are prohibited as standalone modifiers in compositions; state the mathematical property that a modifier is trying to convey.
 
-Write Subsections as economical, self-contained, peer-review-ready mathematical prose, with precise hypotheses, statements, and proofs. State limitations and conditional conclusions. Prefer standard terminology and consult the project Dictionary for specialized terms and prohibited vocabulary. Place mathematical definitions in the Dictionary where appropriate; do not duplicate established project definitions in this guide.
+Prefer standard graph-theoretic vocabulary. Before introducing a project-specific technical term into a Subsection, add a precise canonical definition to that project's Dictionary, or use an existing entry. Use aliases and prohibited entries to prevent synonyms and drifting meanings. Dictionary entries should resolve mathematical ambiguity, not collect slogans.
 
-Use the current project's smallest publication unit and hierarchy. Assemble selected Subsections into Sections and selected Sections into Articles without separately authored higher-level mathematical prose. The assembled Article must be coherent and self-contained, without duplicated setup or unrelated material. Cite only permissible established prerequisites and make reductions explicit. Consolidate and strengthen results when this simplifies the paper.
+Selected Subsections should assemble into Sections, and selected Sections into Articles, without separately authored mathematical prose at the higher levels. The assembled Article must read as a self-contained, publication-quality paper, with no missing arguments, duplicate setup, or unrelated narrative. A section heading or other navigation generated by assembly is not an additional authored composition. Permitted external mathematical prerequisites are explicitly identified Toolkit results and the project's Dictionary; do not require the reader to chase internal development artifacts for a proof. Revise the underlying Subsection compositions and selection when the compiled paper fails these tests.
 
-Research notes preserve only decision-relevant proofs, obstructions, constructions, and calculations. Keep them concise and mathematically precise; avoid motivation essays, speculative extrapolation, and status reports. Preserve proofs and provenance when demoting existing Subsections, then reassemble affected manuscripts.
+## Publication and research memory
 
-## Verification
+Follow the **actual hierarchy and smallest publication unit** supported by the current project; different research projects need not have identical intermediate node types. Use the live schema API rather than assuming the existence of particular child objects.
 
-Use version checks and supported transaction facilities for concurrent work. Verify persistence, mathematical dependencies, and coherence after editing. Consult the project's current state, Dictionary, Toolkit, and API for project-specific rules. This guide is schema-independent.
+Promote substantive, correct mathematics selectively into a coherent manuscript. Compose from precise definitions, hypotheses, claims, proofs, logical dependencies, and clearly identified gaps. Strengthen, consolidate, and reposition theorems when this improves the argument. A composition is mathematical exposition, not an inventory of attempts.
+
+Research notes have a high admission threshold: retain only a result, obstruction, or calculation likely to change future mathematical decisions. Write mathematical statements, proofs, and certificates with only the definitions and context needed to establish the point. Eliminate motivation essays, status reports, broad commentary, duplicated conclusions, and speculative extrapolation. Prefer a compact counterexample to a discursive explanation. Apply every project Dictionary prohibition to research notes as well as manuscripts. Independently consequential refutations can warrant publication. Publication and note creation are not quotas; an inconclusive investigation may produce neither.
+
+A higher-level manuscript should be self-contained to the extent required by its project. Use the project's Dictionary and Toolkit where available; define nonstandard terminology and justify reductions. Keep mathematical dependencies accurate and omit tangential material without deleting its history.
+
+## Concurrency and verification
+
+Read all active Article compositions and relevant prior arguments before editing; inactive Articles need not be read. Use optimistic versions and the project's transaction or staging facilities when multiple researchers may write concurrently. Verify that edits persist, that the active hierarchy is coherent, and that all necessary mathematical evidence remains accessible.
+
+This guide is **schema-independent**. Consult the current project's research state and API for its particular conjecture, node hierarchy, publication rules, and tool names.
+
+## Mathematical exposition
+State each theorem, definition, and hypothesis intrinsically, so it can be understood without knowing how an earlier proof constructs its objects. Do not define a class as “objects produced by Theorem 1” or similar proof-frame references. Describe the class by mathematical properties. If a recurring construction requires a name, formulate its defining properties precisely and enter that term in the dictionary. Cite theorems for justification rather than using a reference to a proof as a substitute for a definition. The database checks prohibited vocabulary during publication; focus research attention on the mathematics, and use an explicit vocabulary override only when the wording is mathematically justified.
+
+
+## Reachability notation
+Write R(a) for vertices reachable from a by a monochromatic geodesic of either color, and R^x(a) when length x is prescribed. Use R(a;i) only when a proof requires a specified color i. Do not place the color in a subscript of R. For antipodal co-reachability and 1-splice witnesses, omit the color parameter.

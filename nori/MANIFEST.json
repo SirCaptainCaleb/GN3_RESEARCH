@@ -1,6 +1,6 @@
 {
   "active_section_count": 5,
-  "active_subsection_count": 28,
+  "active_subsection_count": 35,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -106,9 +106,9 @@
     },
     "nori_article_x_switch_induction": {
       "composition": {
-        "body_chars": 25548,
-        "composed_through_revision": 6321,
-        "composition_version": 6,
+        "body_chars": 80048,
+        "composed_through_revision": 6371,
+        "composition_version": 18,
         "frontier": {
           "current": null
         },
@@ -122,10 +122,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T02:21:27.421135+00:00",
+  "generated_at": "2026-10-12T03:43:57.404985+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 47,
+  "research_note_count": 56,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -133,9 +133,9 @@
   "section_versions": {
     "nori_codimension_two_switch_induction": {
       "composition": {
-        "body_chars": 25473,
-        "composed_through_revision": 6320,
-        "composition_version": 6,
+        "body_chars": 38497,
+        "composed_through_revision": 6378,
+        "composition_version": 19,
         "frontier": {
           "current": null
         },
@@ -212,7 +212,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1596,
+  "snapshot_revision": 1651,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -259,6 +259,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "antipodal_diagonal_compression_and_local_face_certificates": {
+      "composition": {
+        "body_chars": 11524,
+        "composed_through_revision": 6369,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "User-proposed opposing-face compression with antipodal edge selections. Complete reassembly and selection proofs; checked the word formula on 1020 word/color pairs and local two-switch lift classification on 6000 configurations.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
         "body_chars": 10549,
@@ -293,6 +310,23 @@
       "section_id": "nori_foundations",
       "version": 2
     },
+    "blockwise_perturbation_and_dimension_free_phase_synchronization": {
+      "composition": {
+        "body_chars": 8177,
+        "composed_through_revision": 6345,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Alternating-phase word lemma, block separability and one-sided signed balancing yield arbitrary local perturbation budget",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "color_blind_antipodal_co_reachability_characterizes_nori1": {
       "composition": {
         "composition_version": null,
@@ -307,6 +341,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "common_facet_terminal_lifting_and_exterior_color_stability": {
+      "composition": {
+        "body_chars": 4812,
+        "composed_through_revision": 6349,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Common-subface switch-lifting lemma and half-cube recoloring stability of the paired block-radial endpoint theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "corresponding_switch_crossover_and_odd_defect_cancellation": {
@@ -394,6 +445,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 2
     },
+    "extremal_exterior_cube_rigidity_and_terminal_phase_separation": {
+      "composition": {
+        "body_chars": 6914,
+        "composed_through_revision": 6328,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
         "body_chars": 6586,
@@ -443,6 +511,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "independent_direction_recolorings_preserve_low_switch_terminal_alignment": {
+      "composition": {
+        "body_chars": 10517,
+        "composed_through_revision": 6352,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two global direction exceptions and their asymmetric low-switch terminal certificates",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "inductive_low_switch_endpoint_coincidence_in_adjacent_codimension_two_faces": {
@@ -547,6 +632,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "quadratic_independence_of_antipodal_geodesic_color_profiles": {
+      "composition": {
+        "body_chars": 6752,
+        "composed_through_revision": 6336,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Full-class structural strengthening of Article VIII profile span; self-contained root-rotation and square-integral proof. Independently checked quadratic evaluation rank for all 65,536 antipodally odd Q4 colorings.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs": {
       "composition": {
         "body_chars": 4059,
@@ -562,6 +664,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests": {
+      "composition": {
+        "body_chars": 5766,
+        "composed_through_revision": 6364,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Formatting and terminal proof precision",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "seven_coordinate_wing_factorization_and_exact_obstruction": {
@@ -701,7 +820,7 @@
       "version": 1
     }
   },
-  "toolkit_count": 30,
+  "toolkit_count": 31,
   "universal_document_versions": {
     "guide": 49,
     "reflexes": 26,
