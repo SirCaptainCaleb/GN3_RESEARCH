@@ -177,6 +177,14 @@
             "research_status": "active"
         },
         {
+            "id": "connected_shortest_port_cocircuit_exchanges_and_gap_free_intersection_spectra",
+            "type": "subsection",
+            "title": "Connected shortest-port-cocircuit exchanges and gap-free intersection spectra",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "corresponding_switch_crossover_and_odd_defect_cancellation",
             "type": "subsection",
             "title": "Corresponding-switch crossover and odd-defect cancellation",
@@ -209,6 +217,14 @@
             "research_status": "active"
         },
         {
+            "id": "direction_deleted_port_cocircuit_reassembly_and_root_phase_duality",
+            "type": "subsection",
+            "title": "Direction-deleted port-cocircuit reassembly and root-phase duality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "endpoint_density_snakes_and_bounded_algebraic_degree",
             "type": "subsection",
             "title": "Endpoint-density snakes and bounded algebraic degree",
@@ -225,9 +241,41 @@
             "research_status": "active"
         },
         {
+            "id": "equivariant_square_derivative_galleries_for_arbitrary_port_cycles",
+            "type": "subsection",
+            "title": "Equivariant square-derivative galleries for arbitrary port cycles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "extremal_exterior_cube_rigidity_and_terminal_phase_separation",
             "type": "subsection",
             "title": "Extremal exterior-cube rigidity and terminal phase separation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "extremal_port_intersections_force_flat_exterior_stars_and_terminal_separation",
+            "type": "subsection",
+            "title": "Extremal port intersections force flat exterior stars and terminal separation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "folded_cube_cycle_space_presentation_and_antipodal_girth",
+            "type": "subsection",
+            "title": "Folded-cube cycle-space presentation and antipodal girth",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "folded_cube_line_graphs_and_local_generation_of_binary_dependencies",
+            "type": "subsection",
+            "title": "Folded-cube line graphs and local generation of binary dependencies",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -273,9 +321,25 @@
             "research_status": "active"
         },
         {
+            "id": "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds",
+            "type": "subsection",
+            "title": "Intrinsic star statistics and quantitative port-cocircuit exchange bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier",
             "type": "subsection",
             "title": "Layered boundary snakes and a dense rank-sensitivity barrier",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "lifted_phase_transport_and_two_intersection_splicing_certificates",
+            "type": "subsection",
+            "title": "Lifted phase transport and two-intersection splicing certificates",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -289,6 +353,22 @@
             "research_status": "active"
         },
         {
+            "id": "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence",
+            "type": "subsection",
+            "title": "Minimum port-cocircuit profiles, universal coordinate prescription, and quadratic independence",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "monotone_triangle_contractions_and_directional_excess_in_antipodal_turn_cycles",
+            "type": "subsection",
+            "title": "Monotone triangle contractions and directional excess in antipodal turn cycles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments",
             "type": "subsection",
             "title": "Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments",
@@ -297,9 +377,41 @@
             "research_status": "active"
         },
         {
+            "id": "odd_girth_of_the_monochromatic_component_quotient_and_antipodal_walk_duality",
+            "type": "subsection",
+            "title": "Odd girth of the monochromatic component quotient and antipodal walk duality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "odd_dimensional_port_cycles_square_derivative_rigidity_and_terminal_holes",
+            "type": "subsection",
+            "title": "Odd-dimensional port cycles: square-derivative rigidity and terminal holes",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "flagged_face_terminal_completion_and_parallel_face_exchange_for_port_cocircuits",
+            "type": "subsection",
+            "title": "Parallel-face port-cocircuit exchange at corresponding terminals",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "penultimate_length_extension_and_parallel_face_endpoint_exclusion",
             "type": "subsection",
             "title": "Penultimate-length extension and parallel-face endpoint exclusion",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "pointed_lift_duality_and_shortest_port_cocircuits",
+            "type": "subsection",
+            "title": "Pointed lift duality and shortest port cocircuits",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -388,6 +500,14 @@
             "id": "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy",
             "type": "subsection",
             "title": "Square-curvature gain in cyclic exchange averaging and reversal holonomy",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "star_bundle_rigidity_and_the_weighted_monochromatic_component_quotient",
+            "type": "subsection",
+            "title": "Star-bundle rigidity and the weighted monochromatic-component quotient",
             "version": 1,
             "superseded": false,
             "research_status": "active"

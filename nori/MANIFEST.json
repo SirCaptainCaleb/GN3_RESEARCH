@@ -1,6 +1,6 @@
 {
   "active_section_count": 6,
-  "active_subsection_count": 42,
+  "active_subsection_count": 57,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -129,9 +129,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 10597,
-        "composed_through_revision": 6426,
-        "composition_version": 1,
+        "body_chars": 129373,
+        "composed_through_revision": 6509,
+        "composition_version": 21,
         "frontier": {
           "current": null
         },
@@ -145,10 +145,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T04:44:45.592178+00:00",
+  "generated_at": "2026-10-12T05:34:31.971185+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 56,
+  "research_note_count": 60,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -204,9 +204,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 10528,
-        "composed_through_revision": 6425,
-        "composition_version": 1,
+        "body_chars": 129304,
+        "composed_through_revision": 6508,
+        "composition_version": 21,
         "frontier": {
           "current": null
         },
@@ -251,7 +251,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1702,
+  "snapshot_revision": 1783,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -433,6 +433,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "connected_shortest_port_cocircuit_exchanges_and_gap_free_intersection_spectra": {
+      "composition": {
+        "body_chars": 5344,
+        "composed_through_revision": 6470,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Dimension-independent cocircuit exchange connectedness, local even-cycle differences, and gap-free intersection spectra.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "corresponding_switch_crossover_and_odd_defect_cancellation": {
       "composition": {
         "body_chars": 5687,
@@ -501,6 +518,23 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "direction_deleted_port_cocircuit_reassembly_and_root_phase_duality": {
+      "composition": {
+        "body_chars": 7279,
+        "composed_through_revision": 6491,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Direction-deleted matroid presentation of the rooted reassembly theorem, universal phase-selection equivalence, and high-intersection facet restrictions.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "endpoint_density_snakes_and_bounded_algebraic_degree": {
       "composition": {
         "body_chars": 10058,
@@ -535,6 +569,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 2
     },
+    "equivariant_square_derivative_galleries_for_arbitrary_port_cycles": {
+      "composition": {
+        "body_chars": 7752,
+        "composed_through_revision": 6504,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Port-cycle versions of simultaneous derivative signs, Borsuk–Ulam galleries, and their terminal-hole consequences from Article X.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "extremal_exterior_cube_rigidity_and_terminal_phase_separation": {
       "composition": {
         "body_chars": 6914,
@@ -550,6 +601,74 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "extremal_port_intersections_force_flat_exterior_stars_and_terminal_separation": {
+      "composition": {
+        "body_chars": 7031,
+        "composed_through_revision": 6478,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Port-cocircuit translation of all-dimensional face completion, phase separation and square-curvature exclusion from Article X.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "flagged_face_terminal_completion_and_parallel_face_exchange_for_port_cocircuits": {
+      "composition": {
+        "body_chars": 7710,
+        "composed_through_revision": 6494,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Port-cycle translations of endpoint completion, opposite-phase certificates, exterior rigidity and parallel-face path bounds.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 2
+    },
+    "folded_cube_cycle_space_presentation_and_antipodal_girth": {
+      "composition": {
+        "body_chars": 7637,
+        "composed_through_revision": 6434,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Align statement numbering with the preceding Article XI subsection.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "folded_cube_line_graphs_and_local_generation_of_binary_dependencies": {
+      "composition": {
+        "body_chars": 5999,
+        "composed_through_revision": 6442,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Independent structure theorem; verified against current Article XI cycle-space subsection.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
@@ -637,6 +756,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds": {
+      "composition": {
+        "body_chars": 7935,
+        "composed_through_revision": 6462,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Port-matroid translation of unrestricted cyclic exchange and curvature-sensitive quantitative bounds from Article VIII.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier": {
       "composition": {
         "body_chars": 8533,
@@ -652,6 +788,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "lifted_phase_transport_and_two_intersection_splicing_certificates": {
+      "composition": {
+        "body_chars": 6349,
+        "composed_through_revision": 6507,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Lifted turn-cocycle phase transport and unrestricted adjacent-face splicing certificates for intersection two.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
@@ -671,6 +824,40 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence": {
+      "composition": {
+        "body_chars": 9270,
+        "composed_through_revision": 6473,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Marked minimum port-cocircuit decoding; bridge to arbitrary-color cubes; universal seven-direction marginals and quadratic independence.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "monotone_triangle_contractions_and_directional_excess_in_antipodal_turn_cycles": {
+      "composition": {
+        "body_chars": 5818,
+        "composed_through_revision": 6439,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Independent universal star-triangle monotonicity and near-girth reduction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments": {
       "composition": {
         "body_chars": 12271,
@@ -688,6 +875,40 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "odd_dimensional_port_cycles_square_derivative_rigidity_and_terminal_holes": {
+      "composition": {
+        "body_chars": 9086,
+        "composed_through_revision": 6482,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Port-cycle translations of odd-dimensional derivative deficits, sharp equality rigidity, and terminal-hole obstructions from Article X.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "odd_girth_of_the_monochromatic_component_quotient_and_antipodal_walk_duality": {
+      "composition": {
+        "body_chars": 14371,
+        "composed_through_revision": 6466,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uses Wu--Yang 2026 to turn the quotient-loop condition into an unconditional theorem and derive port two-intersection.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
     "penultimate_length_extension_and_parallel_face_endpoint_exclusion": {
       "composition": {
         "body_chars": 14308,
@@ -703,6 +924,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "pointed_lift_duality_and_shortest_port_cocircuits": {
+      "composition": {
+        "body_chars": 11182,
+        "composed_through_revision": 6451,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete pointed matroid duality manuscript, including explicit dual matrix and cographic restriction.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
@@ -890,6 +1128,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "star_bundle_rigidity_and_the_weighted_monochromatic_component_quotient": {
+      "composition": {
+        "body_chars": 5961,
+        "composed_through_revision": 6497,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp sparse-cut threshold and weighted star-bundle rigidity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits": {
