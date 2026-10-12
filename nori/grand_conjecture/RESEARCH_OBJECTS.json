@@ -177,6 +177,14 @@
             "research_status": "active"
         },
         {
+            "id": "bicycle_space_rank_and_tutte_evaluation_of_port_intersection_quadratics",
+            "type": "subsection",
+            "title": "Bicycle-space rank and Tutte evaluation of port intersection quadratics",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture",
             "type": "subsection",
             "title": "Binary-generator Cayley lifts and the generalized port-intersection conjecture",
@@ -300,6 +308,14 @@
             "id": "direction_deleted_port_cocircuit_reassembly_and_root_phase_duality",
             "type": "subsection",
             "title": "Direction-deleted port-cocircuit reassembly and root-phase duality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "discrete_hodge_stability_and_the_asymptotically_sharp_two_thirds_turn_theorem",
+            "type": "subsection",
+            "title": "Discrete Hodge stability and the asymptotically sharp two-thirds turn theorem",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -441,6 +457,14 @@
             "research_status": "active"
         },
         {
+            "id": "integral_saturation_and_fourier_rigidity_of_geodesic_incidence",
+            "type": "subsection",
+            "title": "Integral saturation and Fourier rigidity of geodesic incidence",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds",
             "type": "subsection",
             "title": "Intrinsic star statistics and quantitative port-cocircuit exchange bounds",
@@ -489,9 +513,25 @@
             "research_status": "active"
         },
         {
+            "id": "metric_loop_lifting_and_the_geodesicity_excess_certificate",
+            "type": "subsection",
+            "title": "Metric loop lifting and the geodesicity-excess certificate",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence",
             "type": "subsection",
             "title": "Minimum port-cocircuit profiles, universal coordinate prescription, and quadratic independence",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "monochromatic_component_quotients_as_canonical_pointed_cographic_restriction_minors",
+            "type": "subsection",
+            "title": "Monochromatic-component quotients as canonical pointed cographic restriction minors",
             "version": 1,
             "superseded": false,
             "research_status": "active"

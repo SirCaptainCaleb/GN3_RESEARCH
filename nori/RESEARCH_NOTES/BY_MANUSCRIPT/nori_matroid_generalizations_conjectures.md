@@ -3,10 +3,13 @@
 Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
+- [Bipartite highly connected square-generated two-covers still fail P4](../note_nori_xi_bipartite_square_generated_high_connectivity_p4_failure.md) — active/proved
+- [Boundary tight-window incidence Smith forms and conjectured length torsion](../note_ed5bae5d779fba468cf28cbc.md) — active/open
 - [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
 - [Equal changed-turn density need not fix stationary-child costs without a two-design](../note_nori_xi_nondesign_density_obstruction.md) — active/proved
 - [Four-vertex parity boundary obstruction](../note_nori_xi_boundary_4_parity_obstruction.md) — active/proved
 - [Global exchange hexagon rank: proved affine homology theorem](../note_article_xi_hexagon_exchange_rank_deficiency_20261012.md) — active/proved
+- [Highly connected graph covers violate P4 despite large local quadratic rank](../note_nori_xi_high_connectivity_cover_p4_failure.md) — active/proved
 - [Homogeneous factor separation defeats short-port amplification](../note_2768df03853d2ad4c4161f2a.md) — active/proved
 - [Line-graph cover short-systole capture](../note_0631234e60332fbab139c5d3.md) — active/proved
 - [Lovasz local lemma block-random geodesic idea](../note_nori_xi_lll_block_random_geodesic_tangent.md) — active/open
@@ -16,5 +19,6 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Phase-rigid six-vertex boundary tournament and global endpoint lock in seven vertices](../note_nori_xi_phase_rigid_and_seven_vertex_endpoint_lock.md) — active/proved
 - [Port-support rank bound and composite cocircuits in the two-port lift](../note_nori_xi_multiport_graphic_nullity_and_composite_cocircuits.md) — active/proved
 - [Short legal cocircuit with two-point intersection need not be resource-simple](../note_nori_xi_two_intersection_not_directed_resource_faithful.md) — active/proved
+- [Terminal-shell rigidity and nongeodesic antipodal component obstruction](../note_nori_xi_terminal_shell_and_component_local_non_geodesic_obstruction.md) — active/proved
 - [Three-connectivity does not force a prescribed pair into one cocircuit of a cocycle](../note_nori_xi_three_connected_matroid_two_port_cocycle_separation.md) — active/proved
 - [Two-port cocircuit sector fails under independent port-preserving contraction](../note_nori_xi_two_port_contraction_separates_ports.md) — active/proved

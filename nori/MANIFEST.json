@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 89,
+  "active_subsection_count": 94,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 414902,
-        "composed_through_revision": 6860,
-        "composition_version": 114,
+        "body_chars": 483422,
+        "composed_through_revision": 6935,
+        "composition_version": 136,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T17:33:52.064275+00:00",
+  "generated_at": "2026-10-12T18:08:23.853973+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 81,
+  "research_note_count": 85,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 248628,
-        "composed_through_revision": 6856,
-        "composition_version": 83,
+        "body_chars": 298964,
+        "composed_through_revision": 6934,
+        "composition_version": 101,
         "frontier": {
           "current": null
         },
@@ -226,9 +226,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 166203,
-        "composed_through_revision": 6859,
-        "composition_version": 33,
+        "body_chars": 184387,
+        "composed_through_revision": 6918,
+        "composition_version": 37,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2134,
+  "snapshot_revision": 2209,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -432,6 +432,23 @@
         },
         "has_composition": true,
         "source_note": "Combined star-triangle and port-free hexagon generators and geodesic weight intermediate-value theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "bicycle_space_rank_and_tutte_evaluation_of_port_intersection_quadratics": {
+      "composition": {
+        "body_chars": 10518,
+        "composed_through_revision": 6933,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Refine source attribution for binary-matroid Tutte bicycle evaluation",
         "stale": null,
         "stale_dependencies": []
       },
@@ -710,6 +727,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "discrete_hodge_stability_and_the_asymptotically_sharp_two_thirds_turn_theorem": {
+      "composition": {
+        "body_chars": 7041,
+        "composed_through_revision": 6927,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Added quantitative six-resource port-cocircuit abundance with local triangle stability",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "endpoint_density_snakes_and_bounded_algebraic_degree": {
       "composition": {
         "body_chars": 10058,
@@ -763,14 +797,14 @@
     },
     "exact_homology_of_global_geodesic_exchange_hexagons": {
       "composition": {
-        "body_chars": 17648,
-        "composed_through_revision": 6858,
-        "composition_version": 4,
+        "body_chars": 23988,
+        "composed_through_revision": 6878,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Adds explicit direct-sum normal forms for the full turn cycle space via exchange hexagons, fixed stars, and one port geodesic.",
+        "source_note": "Two-star homological repair theorem for all odd-monodromy turn cycles, with precise geometric cost caveat.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -916,14 +950,15 @@
     },
     "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 4242,
+        "composed_through_revision": 6865,
+        "composition_version": 1,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "Published all-dimensional Hamilton graphic-basis overlap second-moment theorem and fixed fractional-selector obstruction, retained as distinct from deterministic conjecture.",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -1013,6 +1048,23 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "integral_saturation_and_fourier_rigidity_of_geodesic_incidence": {
+      "composition": {
+        "body_chars": 11842,
+        "composed_through_revision": 6917,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Coordinate-potential formulation of the Fourier kernel and alternative proof of flat geodesic spectrum rigidity.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds": {
@@ -1117,6 +1169,23 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "metric_loop_lifting_and_the_geodesicity_excess_certificate": {
+      "composition": {
+        "body_chars": 5782,
+        "composed_through_revision": 6914,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cube metric loop excess is even repeated-coordinate defect, equivalent NORI1 criterion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence": {
       "composition": {
         "body_chars": 9270,
@@ -1132,6 +1201,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "monochromatic_component_quotients_as_canonical_pointed_cographic_restriction_minors": {
+      "composition": {
+        "body_chars": 3652,
+        "composed_through_revision": 6896,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Canonical odd-cycle pointed cographic restriction minor and complete port cocircuit classification",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "monotone_triangle_contractions_and_directional_excess_in_antipodal_turn_cycles": {
@@ -1340,14 +1426,14 @@
     },
     "quadratic_intersection_and_port_cocycle_balance": {
       "composition": {
-        "body_chars": 7197,
-        "composed_through_revision": 6855,
-        "composition_version": 4,
+        "body_chars": 8847,
+        "composed_through_revision": 6872,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Four-cocycle local modular switches and short-cocircuit caution",
+        "source_note": "Proof of component quotient compression and cycle-rank corollary",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1782,14 +1868,14 @@
     },
     "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
       "composition": {
-        "body_chars": 14467,
-        "composed_through_revision": 6849,
-        "composition_version": 3,
+        "body_chars": 31890,
+        "composed_through_revision": 6924,
+        "composition_version": 8,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Graphic-matroid spanning-forest basis formulation of shortest positive-loop circuit and NORI1 fundamental-circuit distance criterion.",
+        "source_note": "Clarify existential and edgewise loop criteria without changing proved statements.",
         "stale": null,
         "stale_dependencies": []
       },
