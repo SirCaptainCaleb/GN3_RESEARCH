@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 63,
+  "active_subsection_count": 65,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 156753,
-        "composed_through_revision": 6542,
-        "composition_version": 28,
+        "body_chars": 192527,
+        "composed_through_revision": 6591,
+        "composition_version": 43,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T06:13:01.608906+00:00",
+  "generated_at": "2026-10-12T06:27:12.124919+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 61,
+  "research_note_count": 62,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 20277,
-        "composed_through_revision": 6541,
-        "composition_version": 3,
+        "body_chars": 56051,
+        "composed_through_revision": 6590,
+        "composition_version": 18,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1816,
+  "snapshot_revision": 1864,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -491,14 +491,15 @@
     },
     "common_signed_cover_matroids_and_resource_constrained_coxeter_window_routes": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 5304,
+        "composed_through_revision": 6586,
+        "composition_version": 12,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "Specify homogeneous covering axioms and conjectural status",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -1015,6 +1016,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "polarized_basis_exchange_galleries_twisted_closure_and_seam_controlled_intersection_conjecture": {
+      "composition": {
+        "body_chars": 16006,
+        "composed_through_revision": 6560,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Added the complete executable standard-library certificate reproducing the two finite obstructions.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
       "composition": {
         "body_chars": 9446,
@@ -1336,6 +1354,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "unification_conjecture_hierarchy_and_shared_matroid_gallery_axioms": {
+      "composition": {
+        "body_chars": 14428,
+        "composed_through_revision": 6589,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Consolidated program: pointed cover axioms, three conjecture levels, counterexamples, Cayley generalization, and decorated gallery implications.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "universal_three_direction_edge_color_prescription": {

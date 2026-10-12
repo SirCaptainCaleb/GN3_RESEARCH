@@ -31,6 +31,7 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Disjoint monochromatic terminal sets for neighboring affine tree colorings](note_7917ed35754f3a1aa1845e98.md) (article:nori_article_x_switch_induction; active; proved)
 - [Eight-way block reversal does not repair boundary-tournament seams](note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) (article:nori_article_ix_unification; active; method_limitation)
 - [Exponentially sparse reachability and successful roots in NORI1](note_nori1_exponentially_sparse_reachability_20261011.md) (project:nori; active; proved)
+- [Four-vertex parity boundary obstruction](note_nori_xi_boundary_4_parity_obstruction.md) (section:nori_matroid_generalizations_conjectures; active; proved)
 - [Generalized port-cocircuit amplification conjecture and scope obstructions](note_article_xi_generalized_matroid_port_amplification_20261012.md) (article:nori_article_xi_matroidal_turn_geometry; active; open)
 - [Geodesic-circuit parity cannot characterize admissible turn cochains](note_nori_xi_geodesic_cycle_span_parity_obstruction.md) (article:nori_article_xi_matroidal_turn_geometry; active; proved)
 - [Global exceptional dependencies obstruct fixed-root blockwise phase synchronization](note_ea03ea6253e2715a2822c13c.md) (article:nori_article_x_switch_induction; active; proved)

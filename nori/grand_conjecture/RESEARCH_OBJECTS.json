@@ -449,6 +449,14 @@
             "research_status": "active"
         },
         {
+            "id": "polarized_basis_exchange_galleries_twisted_closure_and_seam_controlled_intersection_conjecture",
+            "type": "subsection",
+            "title": "Polarized basis-exchange galleries, twisted closure, and seam-controlled intersection conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support",
             "type": "subsection",
             "title": "Polynomial monochromatic geodesics from sparse triplewise exterior support",
@@ -596,6 +604,14 @@
             "id": "unbounded_switches_under_reversal_coherence_in_arities_congruent_to_one_modulo_four",
             "type": "subsection",
             "title": "Unbounded switches under reversal coherence in arities congruent to one modulo four",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "unification_conjecture_hierarchy_and_shared_matroid_gallery_axioms",
+            "type": "subsection",
+            "title": "Unification conjecture hierarchy and shared matroid-gallery axioms",
             "version": 1,
             "superseded": false,
             "research_status": "active"
