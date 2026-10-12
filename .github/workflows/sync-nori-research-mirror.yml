@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI: three-matroid legal path model, sharp bounded-cost block reversal, and nonoptimal 2-opt plateau note.
+# Article XI: two-resource Hamiltonian recognition, legal one-for-two augmentation, and factor-three switch-rank theorem.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
