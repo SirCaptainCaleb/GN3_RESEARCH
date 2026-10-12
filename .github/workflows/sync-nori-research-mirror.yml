@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/sync-nori-research-mirror.yml
+      - scripts/sync_research_mirror.py
 
 concurrency:
   group: nori-schema-artifact-refresh
