@@ -57,6 +57,7 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Rooted 2-cp failures and exact good-root localization obstructions](note_rooted_restriction_and_good_root_density_limitations.md) (section:nori_foundations; active; proved)
 - [Scope limits of distinguished-direction NORI constructions and boundary edge-order models](note_sentinel_transfer_and_boundary_comparison_model_scope.md) (article:nori_article_ix_unification; active; proved)
 - [Short detours in monochromatic antipodal paths](note_nori_xi_triple_coordinate_shortcut.md) (article:nori_article_xi_matroidal_turn_geometry; active; proved)
+- [Short legal cocircuit with two-point intersection need not be resource-simple](note_nori_xi_two_intersection_not_directed_resource_faithful.md) (section:nori_matroid_generalizations_conjectures; active; proved)
 - [Sparse low-switch endpoint sets and exact paired alignment in signed rank-parity colorings](note_article_x_signed_rank_parity_endpoint_sparsity_20261011.md) (article:nori_article_x_switch_induction; active; proved)
 - [Speculative LINP application of entropy compression](note_entropy_compression_linp_scope_20261011.md) (project:nori; active; proposed)
 - [Successor-coordinate obstruction and dependency-graph criterion for synchronized switch carriers](note_successor_coordinate_obstruction_synchronized_switch_carriers_20261011.md) (subsection:penultimate_length_extension_and_parallel_face_endpoint_exclusion; active; proved)

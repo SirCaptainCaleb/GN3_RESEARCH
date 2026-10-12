@@ -337,6 +337,14 @@
             "research_status": "active"
         },
         {
+            "id": "graphic_nullity_interval_extraction_and_defect_weighted_port_cocircuit_decoding",
+            "type": "subsection",
+            "title": "Graphic-nullity interval extraction and defect-weighted port cocircuit decoding",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine",
             "type": "subsection",
             "title": "Hereditary sentinel-word contraction and NORI counterexamples in every dimension at least nine",
@@ -348,6 +356,14 @@
             "id": "independent_direction_recolorings_preserve_low_switch_terminal_alignment",
             "type": "subsection",
             "title": "Independent direction recolorings preserve low-switch terminal alignment",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "independent_port_preserving_contractions_and_fundamental_cocircuit_repair",
+            "type": "subsection",
+            "title": "Independent port-preserving contractions and fundamental-cocircuit repair",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -612,6 +628,14 @@
             "id": "three_turn_boundary_reconstruction_and_legal_turn_contraction",
             "type": "subsection",
             "title": "Three-turn boundary reconstruction and legal-turn contraction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "twisted_cycle_reflection_and_the_six_resource_one_turn_theorem",
+            "type": "subsection",
+            "title": "Twisted-cycle reflection and the six-resource one-turn theorem",
             "version": 1,
             "superseded": false,
             "research_status": "active"

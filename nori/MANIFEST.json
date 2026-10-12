@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 68,
+  "active_subsection_count": 71,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 212275,
-        "composed_through_revision": 6612,
-        "composition_version": 49,
+        "body_chars": 247162,
+        "composed_through_revision": 6648,
+        "composition_version": 60,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T06:47:46.721339+00:00",
+  "generated_at": "2026-10-12T07:41:19.65354+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 62,
+  "research_note_count": 63,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 75799,
-        "composed_through_revision": 6611,
-        "composition_version": 24,
+        "body_chars": 110686,
+        "composed_through_revision": 6647,
+        "composition_version": 35,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1885,
+  "snapshot_revision": 1922,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -695,14 +695,15 @@
     },
     "five_cycle_turn_density_and_six_resource_marked_intersection_theorem": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 6177,
+        "composed_through_revision": 6635,
+        "composition_version": 2,
         "frontier": {
-          "current": false,
-          "development_version_now": 1,
-          "development_version_when_composed": null
+          "current": null
         },
-        "has_composition": false,
-        "stale": false,
+        "has_composition": true,
+        "source_note": "Cross-reference and sharpen the one-turn consequence through the subsequent tail-reflection theorem.",
+        "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -794,6 +795,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "graphic_nullity_interval_extraction_and_defect_weighted_port_cocircuit_decoding": {
+      "composition": {
+        "body_chars": 12268,
+        "composed_through_revision": 6646,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cyclic seam optimization identity, polarity-contact equivalence, and curvature coupling",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine": {
       "composition": {
         "body_chars": 7697,
@@ -826,6 +844,22 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "independent_port_preserving_contractions_and_fundamental_cocircuit_repair": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "inductive_low_switch_endpoint_coincidence_in_adjacent_codimension_two_faces": {
@@ -1357,14 +1391,31 @@
     },
     "three_turn_boundary_reconstruction_and_legal_turn_contraction": {
       "composition": {
-        "body_chars": 2837,
-        "composed_through_revision": 6610,
+        "body_chars": 12348,
+        "composed_through_revision": 6632,
+        "composition_version": 6,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Parity-sharpened cocircuit transport from three to two added switches",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "twisted_cycle_reflection_and_the_six_resource_one_turn_theorem": {
+      "composition": {
+        "body_chars": 6899,
+        "composed_through_revision": 6629,
         "composition_version": 1,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Three-turn reconstruction theorem and short non-port cocircuit certificates",
+        "source_note": "All-dimensional twisted-cycle tail reflection, terminal seam exchange identity, and hereditary six-resource one-turn theorem with multiplicity at least 18.",
         "stale": null,
         "stale_dependencies": []
       },
