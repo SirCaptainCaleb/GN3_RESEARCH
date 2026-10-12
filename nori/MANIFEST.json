@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 65,
+  "active_subsection_count": 66,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 192527,
-        "composed_through_revision": 6591,
-        "composition_version": 43,
+        "body_chars": 207121,
+        "composed_through_revision": 6604,
+        "composition_version": 47,
         "frontier": {
           "current": null
         },
@@ -151,7 +151,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T06:27:12.124919+00:00",
+  "generated_at": "2026-10-12T06:45:51.438077+00:00",
   "item_count": 0,
   "mirror_format": 20,
   "research_note_count": 62,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 56051,
-        "composed_through_revision": 6590,
-        "composition_version": 18,
+        "body_chars": 70645,
+        "composed_through_revision": 6603,
+        "composition_version": 22,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1864,
+  "snapshot_revision": 1877,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -491,14 +491,14 @@
     },
     "common_signed_cover_matroids_and_resource_constrained_coxeter_window_routes": {
       "composition": {
-        "body_chars": 5304,
-        "composed_through_revision": 6586,
-        "composition_version": 12,
+        "body_chars": 5561,
+        "composed_through_revision": 6592,
+        "composition_version": 13,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Specify homogeneous covering axioms and conjectural status",
+        "source_note": "Clarify group action on roots",
         "stale": null,
         "stale_dependencies": []
       },
@@ -980,6 +980,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "orientation_curvature_and_a_canonical_two_port_lift_for_polarized_galleries": {
+      "composition": {
+        "body_chars": 14333,
+        "composed_through_revision": 6602,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Adds the cover-independent canonical line-graph contact curvature and cohomology splitting of the two-port lift.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "penultimate_length_extension_and_parallel_face_endpoint_exclusion": {

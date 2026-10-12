@@ -425,6 +425,14 @@
             "research_status": "active"
         },
         {
+            "id": "orientation_curvature_and_a_canonical_two_port_lift_for_polarized_galleries",
+            "type": "subsection",
+            "title": "Orientation curvature and a canonical two-port lift for polarized galleries",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "flagged_face_terminal_completion_and_parallel_face_exchange_for_port_cocircuits",
             "type": "subsection",
             "title": "Parallel-face port-cocircuit exchange at corresponding terminals",

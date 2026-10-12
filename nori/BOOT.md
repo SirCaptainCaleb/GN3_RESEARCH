@@ -6,5 +6,5 @@ Read BROADCASTS.md first. Then read GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md
 
 Use the snapshot revision below as the freshness baseline when calling changes(...); refresh the artifact if it is stale. Follow the project's actual publication hierarchy, and preserve precise hypotheses and proofs.
 
-Snapshot revision: 1864
-Generated: 2026-10-12T06:27:12.124919+00:00
+Snapshot revision: 1877
+Generated: 2026-10-12T06:45:51.438077+00:00
