@@ -1,12 +1,12 @@
-# Boundary tight-window incidence Smith forms and conjectured length torsion
+# Boundary Hamiltonian tight-window Smith forms: proved in all orders
 
 - Stable ID: note_ed5bae5d779fba468cf28cbc
 - Author: unspecified; session provenance retained
 - Primary home: section:nori_matroid_generalizations_conjectures
 - Labels: computation, smith-normal-form, lattice, conjecture
 - Lifecycle: active
-- Epistemic status: open
-- Current version: 1
+- Epistemic status: proved
+- Current version: 3
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r6379_4
 - Updated session: session_nori_r6379_4
@@ -21,7 +21,7 @@
 
 # Integral incidence of boundary-tournament tight windows: finite Smith forms
 
-**Status: finite computations and an all-order divisibility observation. The extrapolated lattice identity remains open.**
+**Status: the all-dimensional unsigned and signed Smith-form theorems are proved in Article XI Subsection 35. The finite computations below are independent verification.**
 
 For \(n\ge4\), index columns by reversal orbits of ordered triples of distinct labels, \((a,b,c)\sim(c,b,a)\). There are \(N=n(n-1)(n-2)/2\) columns. For each permutation \(\pi=(v_1,\ldots,v_n)\), define its unsigned Hamiltonian tight-window incidence vector
 \[
@@ -50,10 +50,12 @@ The zero invariant factors in order four account for rational rank deficiency; a
 
 **Order-eight modular check:** For \(n=8\), the matrix has 40,320 rows and 168 columns; modular elimination gives rank 168 in characteristic five, and rank 167 in characteristics two and three. This matches but does not prove the prediction of one Smith factor six.
 
-**Conjecture (tight-window integral lattice).** For all \(n\ge5\),
+**Theorem (tight-window integral lattice; proved in Article XI Subsection 35).** For all \(n\ge5\),
 \[
 \boxed{\Lambda_n^{BT}=L_n.}
 \]
 Equivalently the Smith diagonal contains \(N-1\) units and one nonunit entry \(n-2\). This has not been proved for arbitrary \(n\). Verification uses all permutations, lexicographically canonicalized triple reversal orbits, and integer Smith normal form using SymPy, rather than approximate floating-point rank.
 
 **Unification warning:** Cube geodesic unsigned turn incidence has a saturated integer lattice in every \(n\ge5\) by the Fourier theorem in Article XI Subsection 21. Boundary Hamiltonian tight-window incidence has nontrivial torsion in the displayed orders. Therefore integral lattice saturation is not a common hypothesis for *these two incidence models*. The tournament object here records triple resources, not the full signed two-port cocircuit representation, and these should not be equated. The underlying graph-cover and resource-gallery conjecture remains open.
+
+**Resolution (12 October 2026).** The conjectured unsigned Smith form is now proved for all n>=5 in Article XI Subsection 35 (Complete Hamiltonian Window Lattices): the integer row lattice consists of all integer triple-orbit vectors whose coordinate sum is divisible by n-2; the integral cokernel is cyclic of order n-2. The signed reversal-sensitive Hamiltonian incidence lattice is also determined for all n>=5: trivial cokernel for odd n and Z/2 for even n. Both proofs are published in the assembled Article XI manuscript. The numerical table remains a cross-check, not the basis of the theorem.

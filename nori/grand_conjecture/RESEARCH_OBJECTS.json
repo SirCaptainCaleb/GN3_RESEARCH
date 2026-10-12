@@ -129,6 +129,14 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_cut_pair_separation_and_four_sector_cocycle_geometry",
+            "type": "subsection",
+            "title": "Antipodal cut-pair separation and four-sector cocycle geometry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_diagonal_compression_and_local_face_certificates",
             "type": "subsection",
             "title": "Antipodal diagonal compression and local face certificates",
@@ -209,6 +217,14 @@
             "research_status": "active"
         },
         {
+            "id": "boundary_tournament_antipodal_graphic_flat_matroids_and_the_separate_resource_selector_layer",
+            "type": "subsection",
+            "title": "Boundary-tournament antipodal graphic-flat matroids and the separate resource-selector layer",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cayley_two_design_conservation",
             "type": "subsection",
             "title": "Cayley two-design conservation",
@@ -236,6 +252,14 @@
             "id": "common_facet_terminal_lifting_and_exterior_color_stability",
             "type": "subsection",
             "title": "Common-facet terminal lifting and exterior color stability",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "conflict_graph_path_transfer",
+            "type": "subsection",
+            "title": "Conflict graph path transfer",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -321,6 +345,22 @@
             "research_status": "active"
         },
         {
+            "id": "disjoint_antipodal_geodesic_packings_and_independent_short_port_cocircuit_tests",
+            "type": "subsection",
+            "title": "Disjoint antipodal geodesic packings and independent short-port cocircuit tests",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "edge_order_synchronization_and_stability_of_extremal_boundary_colorings",
+            "type": "subsection",
+            "title": "Edge-order synchronization and stability of extremal boundary colorings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "endpoint_density_snakes_and_bounded_algebraic_degree",
             "type": "subsection",
             "title": "Endpoint-density snakes and bounded algebraic degree",
@@ -353,6 +393,14 @@
             "research_status": "active"
         },
         {
+            "id": "exact_signed_and_unsigned_hamiltonian_window_lattices",
+            "type": "subsection",
+            "title": "Exact signed and unsigned Hamiltonian window lattices",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "extremal_exterior_cube_rigidity_and_terminal_phase_separation",
             "type": "subsection",
             "title": "Extremal exterior-cube rigidity and terminal phase separation",
@@ -372,6 +420,14 @@
             "id": "five_cycle_turn_density_and_six_resource_marked_intersection_theorem",
             "type": "subsection",
             "title": "Five-cycle turn-density and six-resource marked intersection theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "flat_graded_resource_automata_and_antipodal_reachability_certificates",
+            "type": "subsection",
+            "title": "Flat-graded resource automata and antipodal reachability certificates",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -404,6 +460,14 @@
             "id": "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing",
             "type": "subsection",
             "title": "Generic full geodesics in physical boundary-compatible NORI3 and affine smoothing",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "global_antipodal_graphic_flat_covers_and_rainbow_spanning_forest_chambers",
+            "type": "subsection",
+            "title": "Global antipodal graphic-flat covers and rainbow spanning-forest chambers",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -524,6 +588,14 @@
             "id": "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence",
             "type": "subsection",
             "title": "Minimum port-cocircuit profiles, universal coordinate prescription, and quadratic independence",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "modular_complementary_resource_flats_and_opposite_terminal_path_gluing",
+            "type": "subsection",
+            "title": "Modular complementary resource flats and opposite-terminal path gluing",
             "version": 1,
             "superseded": false,
             "research_status": "active"

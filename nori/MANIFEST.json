@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 94,
+  "active_subsection_count": 103,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 483422,
-        "composed_through_revision": 6935,
-        "composition_version": 136,
+        "body_chars": 551647,
+        "composed_through_revision": 7015,
+        "composition_version": 157,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T18:08:23.853973+00:00",
+  "generated_at": "2026-10-12T19:32:56.387869+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 85,
+  "research_note_count": 91,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 298964,
-        "composed_through_revision": 6934,
-        "composition_version": 101,
+        "body_chars": 367189,
+        "composed_through_revision": 7014,
+        "composition_version": 122,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2209,
+  "snapshot_revision": 2289,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -330,6 +330,23 @@
         },
         "has_composition": true,
         "source_note": "All-dimensional terminal subset-state DAG; complement-reversal color-changing anti-isomorphism; spanning one-turn antipodal intersection equivalence and complementary-layer criteria.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "antipodal_cut_pair_separation_and_four_sector_cocycle_geometry": {
+      "composition": {
+        "body_chars": 10303,
+        "composed_through_revision": 6991,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Generalize graphic–partition component realizability to all free two-covers; show shared cube and boundary specializations.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -490,6 +507,22 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "boundary_tournament_antipodal_graphic_flat_matroids_and_the_separate_resource_selector_layer": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "boundary_tournaments_and_doubled_line_graph_matroids": {
       "composition": {
         "body_chars": 11623,
@@ -568,6 +601,22 @@
         "has_composition": true,
         "source_note": "Clarify group action on roots",
         "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "conflict_graph_path_transfer": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
         "stale_dependencies": []
       },
       "development_version": 1,
@@ -744,6 +793,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "disjoint_antipodal_geodesic_packings_and_independent_short_port_cocircuit_tests": {
+      "composition": {
+        "body_chars": 5439,
+        "composed_through_revision": 6976,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Independent packing probability bound and odd-degree obstruction to full factorization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "edge_order_synchronization_and_stability_of_extremal_boundary_colorings": {
+      "composition": {
+        "body_chars": 6955,
+        "composed_through_revision": 6959,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Quantitative stability toward global edge orderings, with self-contained tournament score lemma",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "endpoint_density_snakes_and_bounded_algebraic_degree": {
       "composition": {
         "body_chars": 10058,
@@ -810,6 +893,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "exact_signed_and_unsigned_hamiltonian_window_lattices": {
+      "composition": {
+        "body_chars": 14126,
+        "composed_through_revision": 7013,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Signed semigroup saturation, uniform middle-resource matroid projection, and global cut constraints on unsigned Hamiltonian paths.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "extremal_exterior_cube_rigidity_and_terminal_phase_separation": {
@@ -880,6 +980,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 2
     },
+    "flat_graded_resource_automata_and_antipodal_reachability_certificates": {
+      "composition": {
+        "body_chars": 10269,
+        "composed_through_revision": 6966,
+        "composition_version": 6,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Antipodal root pair quotient and reduced SAT encoding",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "folded_cube_cycle_space_presentation_and_antipodal_girth": {
       "composition": {
         "body_chars": 7637,
@@ -946,6 +1063,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "global_antipodal_graphic_flat_covers_and_rainbow_spanning_forest_chambers": {
+      "composition": {
+        "body_chars": 11435,
+        "composed_through_revision": 7000,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal regular-cover color-class graphic cycle-rank conservation, with cube and boundary specializations and global tree-obstruction interpretation.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality": {
@@ -1201,6 +1335,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "modular_complementary_resource_flats_and_opposite_terminal_path_gluing": {
+      "composition": {
+        "body_chars": 5934,
+        "composed_through_revision": 6988,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Boolean complementary reachability theorem and boundary counting obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "monochromatic_component_quotients_as_canonical_pointed_cographic_restriction_minors": {
@@ -1868,14 +2019,14 @@
     },
     "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
       "composition": {
-        "body_chars": 31890,
-        "composed_through_revision": 6924,
-        "composition_version": 8,
+        "body_chars": 35606,
+        "composed_through_revision": 6937,
+        "composition_version": 9,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Clarify existential and edgewise loop criteria without changing proved statements.",
+        "source_note": "All-dimensional endpoint-star independent tree and graphic-rank lower bound 2n+2q−2 for shortest monochromatic antipodal distance defect.",
         "stale": null,
         "stale_dependencies": []
       },

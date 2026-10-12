@@ -4,9 +4,11 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
 - [Bipartite highly connected square-generated two-covers still fail P4](../note_nori_xi_bipartite_square_generated_high_connectivity_p4_failure.md) — active/proved
-- [Boundary tight-window incidence Smith forms and conjectured length torsion](../note_ed5bae5d779fba468cf28cbc.md) — active/open
+- [Boundary Hamiltonian tight-window Smith forms: proved in all orders](../note_ed5bae5d779fba468cf28cbc.md) — active/proved
+- [Boundary n=4 tetrahedral triangle components give loop-free contact K4](../note_nori_xi_boundary_n4_no_port_loop_tetrahedral_triangles.md) — active/proved
 - [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
 - [Equal changed-turn density need not fix stationary-child costs without a two-design](../note_nori_xi_nondesign_density_obstruction.md) — active/proved
+- [Flat-graded antipodal reachability SAT checks](../note_nori_xi_flat_sat_benchmarks.md) — active/computational
 - [Four-vertex parity boundary obstruction](../note_nori_xi_boundary_4_parity_obstruction.md) — active/proved
 - [Global exchange hexagon rank: proved affine homology theorem](../note_article_xi_hexagon_exchange_rank_deficiency_20261012.md) — active/proved
 - [Highly connected graph covers violate P4 despite large local quadratic rank](../note_nori_xi_high_connectivity_cover_p4_failure.md) — active/proved
@@ -18,6 +20,10 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [One-turn paths need not admit monotone insertion or adjacent-swap rerouting](../note_nori_xi_one_turn_insertion_and_adjacent_swap_traps.md) — active/proved
 - [Phase-rigid six-vertex boundary tournament and global endpoint lock in seven vertices](../note_nori_xi_phase_rigid_and_seven_vertex_endpoint_lock.md) — active/proved
 - [Port-support rank bound and composite cocircuits in the two-port lift](../note_nori_xi_multiport_graphic_nullity_and_composite_cocircuits.md) — active/proved
+- [Q4 single-antipodal-pair red tree saturates rank bound](../note_nori_xi_q4_single_contact_tree.md) — active/proved
+- [Q5 red tree contains two antipodal pairs but no red cycle](../note_nori_xi_q5_two_pair_red_tree.md) — active/proved
+- [Q5 red tree has one defective antipodal pair and one geodesic pair](../note_nori_xi_q5_defective_pair_in_red_tree_with_good_pair.md) — active/proved
+- [Q6 red tree with unique antipodal pair of distance eight](../note_nori_xi_q6_single_contact_tree_defect.md) — active/proved
 - [Short legal cocircuit with two-point intersection need not be resource-simple](../note_nori_xi_two_intersection_not_directed_resource_faithful.md) — active/proved
 - [Terminal-shell rigidity and nongeodesic antipodal component obstruction](../note_nori_xi_terminal_shell_and_component_local_non_geodesic_obstruction.md) — active/proved
 - [Three-connectivity does not force a prescribed pair into one cocircuit of a cocycle](../note_nori_xi_three_connected_matroid_two_port_cocycle_separation.md) — active/proved

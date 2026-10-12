@@ -2897,6 +2897,43 @@ Apply Theorem 17. \(\square\)
 
 Theorems 15 and 17 identify a pair of common matroidal constraints: the entire positive-turn edge multiset is an Eulerian cycle in the graphic matroid of the contact graph, and it has even cardinality. Equivalently, its evaluation under the constant-one edge functional is zero. These conditions survive arbitrary deck-odd recoloring in both canonical systems. They do not force a length-\(n\) lift of a port-parallel loop; that additional metric selection is the remaining obstruction to NORI1.
 
+#### 10. Endpoint-star tree certificate and rank amplification
+
+The preceding results measure a hypothetical defect \(q_d>0\) by the length of a monochromatic antipodal path. The regular cubical endpoint stars force that metric defect to appear as **graphic rank** in the corresponding monochromatic component.
+
+**Theorem 19 (endpoint-star independent-tree bound).** Let \(c\) be any antipodally odd two-coloring of \(E(Q_n)\), \(n\ge3\), and suppose \(x\) and \(x^*\) belong to one monochromatic component \(R\). Let \(P=(v_0=x,v_1,\ldots,v_L=x^*)\) be a *shortest* monochromatic path between these two endpoints, where \(L\ge n\). Then the union of \(P\) with **all monochromatic edges incident to either endpoint** is a tree having
+\[
+\boxed{L+n-2\text{ edges and }L+n-1\text{ vertices}.}
+\tag{24}
+\]
+In particular, writing \(M(R)\) for the graphic cycle matroid of the monochromatic component,
+\[
+\boxed{\operatorname{rank}M(R)=|V(R)|-1\ge L+n-2.}
+\tag{25}
+\]
+
+*Proof.* If a monochromatic edge joined \(v_0\) to a later path vertex \(v_j\) with \(j\ge2\), replacing the initial \(j\) path edges by this edge would shorten the monochromatic path from \(x\) to \(x^*\), contradicting minimality. The same argument at \(v_L\) shows that its only monochromatic neighbor on \(P\) is \(v_{L-1}\). By deck oddness, the monochromatic endpoint degrees satisfy
+\[
+\deg_c(x)+\deg_c(x^*)=n,
+\]
+because each coordinate-direction edge at \(x\) is paired with the oppositely colored edge at \(x^*\). The \(n\) endpoint-neighbor vertices are all distinct for \(n\ge3\): the neighbors of \(x\) and \(x^*\) belong to Hamming layers one and \(n-1\), respectively. Among those \(n\) monochromatic endpoint-neighbor vertices, only \(v_1\) and \(v_{L-1}\) belong to \(P\). Every other endpoint red edge therefore attaches a new leaf to \(P\), and there are \(n-2\) such edges. The resulting union is a tree with the asserted sizes. It is a graphic independent set in \(M(R)\), so the rank inequality follows. \(\square\)
+
+**Corollary 20 (rank cost of cubical geodesic defect).** Let \(\ell_1(c)=n+2q_d\) be the shortest monochromatic antipodal-path length from Theorem 3, and let \(R\) be a monochromatic component containing a pair achieving this length. Then
+\[
+\boxed{
+|V(R)|\ge 2n+2q_d-1,\qquad
+\operatorname{rank}M(R)\ge2n+2q_d-2.
+}
+\tag{26}
+\]
+Consequently, **if every monochromatic component containing an antipodal pair has fewer than \(2n+1\) vertices, then NORI1 holds for that coloring.** Conversely, a hypothetical counterexample to NORI1 must have every such component of order at least \(2n+1\).
+
+*Proof.* Substitute \(L=n+2q_d\) into Theorem 19; if \(q_d>0\), integrality makes \(q_d\ge1\), giving the threshold. For another self-contact component the same argument uses its own shortest antipodal distance, which is no smaller than \(\ell_1(c)\). \(\square\)
+
+Theorem 19 is a useful graphic-matroid rank constraint on any port-parallel bundle: a self-contact loop with shortest lift of length \(n+2q\) can occur only in a monochromatic component carrying an independent tree of rank at least \(2n+2q-2\). The proof uses the combination of shortest-path chordlessness and complementary antipodal endpoint stars, not binary parity alone.
+
+**Scope.** The rank bound by itself does not force \(q=0\). A partial monochromatic subgraph can contain a length-\(n+2\) antipodal path, both complementary endpoint stars, and no shorter path between its chosen endpoints, with \(2n+1\) vertices. Extending such a partial subgraph to a full deck-odd coloring may create additional monochromatic antipodal geodesics elsewhere. Thus Theorem 19 supplies a rigorous rank barrier for a hypothetical counterexample but not its exclusion.
+
 Let M be a finite binary matroid with distinguished port p, and let X be a binary cycle containing p. Every binary cocycle Y has even intersection with X by binary orthogonality. Define q_X(Y) to be half the intersection cardinality, reduced modulo two.
 
 **Theorem 1 (quadratic intersection refinement).** The function q_X on the binary cocycle space W of M is quadratic. Its polar form is B_X(Y,Z)=|X intersect Y intersect Z| modulo two. This is an alternating bilinear form. If K is the port-free cocycle subspace and its polar restriction has rank 2r, then among all port-containing cocycles the fraction with intersection congruent to two modulo four differs from one half by at most 2^(-r-1). In particular, a positive polar rank forces at least one quarter of port-containing cocycles to have intersection congruent to two modulo four.
@@ -3369,3 +3406,786 @@ Set \(q_*(d)=\sum_i k_i\). Since \(r=g_{p,2}(d)-1\), Theorem 1 yields (2). If \(
 *Proof.* Such a turn has \(\ell_e\le n-1\); Theorem 2 forces \(\ell_*\ge n-1\), so \(\ell_*=n-1\), and (3) applies. \(\square\)
 
 This metric reformulation isolates the full remaining obstruction as the presence of repeated coordinate directions in a shortest zero-turn lift of a changed-turn loop. The pointed cographic restriction minor records which loops exist, while the distances \(\ell_e\) require the zero-turn component geometry discarded by that minor. A universal short-port result therefore needs a hypothesis controlling these **loop-lifting distances**, rather than only its circuit and cocircuit incidence algebra.
+
+Let A be a directed graph whose arcs carry labels in a loopless resource matroid N. Starting from a vertex v and the closure F of an independent resource set, construct a flat-graded automaton with states (v,F). For an arc from v to w labeled e outside F, advance to (w,cl(F union {e})). Every transition increases matroid rank by one. The resulting automaton paths are in bijection with coherent directed walks whose resource labels, together with the initial independent set, remain independent. The automaton is acyclic. This follows immediately from the matroid independence exchange criterion: appending e preserves independence if and only if e is outside the closure of the previously chosen elements.
+
+**Corollary 2 (canonical specializations).** For the cube, take the bidirected Q_n and the free matroid on n coordinate directions; label each cube edge by its direction and begin with the empty flat. From root x a state is (x XOR S,S) with S a subset of directions. Rank n forces every coordinate to be used once, producing an antipodal geodesic.
+
+For ordinary boundary 3-tournaments, take directed ordered-pair states (u,v) and transitions (u,v) to (v,w) for three distinct letters. Use the graphic matroid of K_V. Label each transition by the new resource edge {v,w}, and begin at (u,v) with the flat of {u,v}. After a forward prefix the selected graphic edges form a connected vertex path; its closure contains all edges between previously visited vertices. Thus the next resource {v,w} increases rank if and only if w is new. This automaton recognizes precisely forward vertex-injective tight paths. Reaching graphic rank h means the underlying word uses h+1 original vertices and h-1 ordered triples.
+
+*Proof.* In the cube, free-matroid independence is nonrepetition of coordinate directions. In the boundary model, the graphic closure of a connected tree on a visited vertex set is the set of all complete-graph edges internal to that set. Rank-increasing ordered-pair transitions therefore append a fresh vertex, and the converse holds for every injective tight-path word. QED.
+
+**Theorem 3 (antipodal Boolean reachability criterion for NORI1).** Fix an antipodally odd coloring \(c\) of \(Q_n\) and a root \(x\). Identify its free-resource automaton with the Boolean lattice \(2^{[n]}\), where the directed arc \(S\to S\cup\{i\}\) has the color of the cube edge from \(x+\mathbf1_S\) in direction \(i\). Define
+\[
+R_x=\{S\subseteq[n]:\text{a color-zero directed path runs from }\varnothing\text{ to }S\}.
+\tag{1}
+\]
+Then, for every \(S\subseteq[n]\), the rooted cube has a geodesic whose edge colors are first zero and then one, with the switch at the vertex \(x+\mathbf1_S\), if and only if
+\[
+\boxed{S\in R_x\ \text{and}\ [n]\setminus S\in R_x.}\tag{2}
+\]
+Empty initial or terminal color blocks are allowed. Consequently unrestricted NORI1 is equivalent to
+\[
+\boxed{\exists x\in Q_n:\ R_x\text{ contains a complementary pair of subsets}.}\tag{3}
+\]
+A hypothetical NORI1 counterexample would have \(R_x\cap\{[n]\setminus S:S\in R_x\}=\varnothing\) for every root, and hence \(|R_x|\le2^{n-1}\) for every root.
+
+*Proof.* Antipodal oddness makes the arc
+\[
+S\to S\cup\{i\}
+\]
+opposite in color to its complemented reverse
+\[
+[n]\setminus(S\cup\{i\})\to[n]\setminus S.
+\]
+Therefore reversing and complementing a color-zero path from \(\varnothing\) to \([n]\setminus S\) yields a color-one path from \(S\) to \([n]\). Concatenate with the zero path from \(\varnothing\) to \(S\) to obtain the specified one-switch geodesic. The converse follows by reversing and complementing the color-one suffix. A geodesic with one linear color switch has precisely one cyclic turn disagreement: its closing turn compares the terminal color with the deck complement of the initial color. Cyclically rerooting at the changed turn therefore gives a monochromatic antipodal geodesic. Conversely any monochromatic geodesic, after deck reversal if necessary, is a color-zero geodesic rooted at some \(x\), and gives the complementary pair \(\varnothing,[n]\). Finally a family of subsets avoiding complementary pairs has size at most \(2^{n-1}\), by pairing every subset with its complement. \(\square\)
+
+**Theorem 4 (antipodal cut duality).** For a fixed rooted cube \(x\), let \(R_x\) be as in Theorem 3. The absence of a color-zero-then-color-one antipodal geodesic rooted at \(x\) is equivalent to the existence of a set \(\mathcal U_x\subseteq2^{[n]}\) satisfying all three conditions:
+\[
+\varnothing\in\mathcal U_x,\qquad
+\mathcal U_x\cap\{\bar S:S\in\mathcal U_x\}=\varnothing,\qquad
+\text{every outward Boolean-lattice arc of }\mathcal U_x\text{ has color one.}
+\tag{4}
+\]
+Here \(\bar S=[n]\setminus S\). Accordingly, failure of unrestricted NORI1 is equivalent to the existence of such a family \(\mathcal U_x\) for every root \(x\), all arising from the same antipodally odd cube-edge coloring.
+
+*Proof.* If no one-switch geodesic exists from \(x\), Theorem 3 shows that \(R_x\) contains no complementary pair; it contains the empty set, and any outward arc of \(R_x\) must have color one by the definition of color-zero reachability. Thus \(\mathcal U_x=R_x\) works. Conversely, if \(\mathcal U_x\) satisfies (4), no color-zero directed path from the empty set can leave \(\mathcal U_x\), because its first outward arc would have color one. Hence \(R_x\subseteq\mathcal U_x\) and is complement-free, so Theorem 3 excludes the rooted one-switch witness. Apply this for all roots, using Theorem 3's equivalence with global NORI1. \(\square\)
+
+The families in (4) need not be order ideals: directed monochromatic reachability can omit a subset even while reaching some of its supersets by another coordinate order. This is an antipodal-cut certificate, not an ordinary monotone Boolean-lattice ideal.
+
+**Corollary 5 (resource-flat groupoid constraints).** For every root \(x\), the reachability families also satisfy:
+\[
+\begin{aligned}
+&S\in R_x\Longrightarrow S\in R_{x+\mathbf1_S},\\
+&S\in R_x,\quad T\in R_{x+\mathbf1_S},\quad S\cap T=\varnothing
+\Longrightarrow S\cup T\in R_x .
+\end{aligned}
+\tag{5}
+\]
+The first property comes from reversing a color-zero geodesic, and the second from concatenating two coordinate-disjoint color-zero geodesics. Thus the root-indexed antipodal cuts of a hypothetical counterexample cannot be chosen independently: their reachable families obey the symmetric partial-composition laws (5).
+
+The formulation supplies a precise target for Tucker-, Sperner-, or KKM-type arguments. To prove unrestricted NORI1 it suffices to show that no deck-odd cube-edge coloring supports a compatible system of complement-free, color-one-boundary families as in (4) and (5). Theorem 4 does not establish that impossibility.
+
+**Theorem 6 (factorial-free SAT obstruction certificate).** For \(n\ge3\), introduce one Boolean coloring variable per antipodal orbit of cube edges, and one Boolean membership variable \(r_{x,S}\) for every cube root \(x\) and coordinate subset \(S\subseteq[n]\). Let \(\gamma_{x,S,i}\) denote the color-one Boolean expression of the edge from \(x+\mathbf1_S\) in unused coordinate direction \(i\). Consider the clauses
+\[
+\begin{array}{ll}
+r_{x,\varnothing},&\text{all }x,\\
+\neg r_{x,S}\vee\gamma_{x,S,i}\vee r_{x,S\cup\{i\}},&
+\text{all }x,S,i\notin S,\\
+\neg r_{x,S}\vee\neg r_{x,\bar S},&
+\text{all }x,\text{ one representative per complement pair }S,\bar S.
+\end{array}
+\tag{6}
+\]
+This formula is satisfiable if and only if an antipodally odd coloring of \(Q_n\) exists with no monochromatic antipodal geodesic. Its size is
+\[
+\boxed{n2^{n-2}+4^n\text{ variables},\qquad
+(n+1)2^{2n-1}+2^n\text{ clauses}.}\tag{7}
+\]
+
+*Proof.* The coloring variables determine one deck-odd coloring by giving opposite colors to paired antipodal edges. For each root, the first two clause families make \(U_x=\{S:r_{x,S}=1\}\) contain the empty subset and be closed under every color-zero forward transition. The third clause family makes it free of complementary pairs. By Theorem 4 this excludes a NORI1 witness. Conversely, if a counterexample coloring exists, take \(U_x\) to be the true zero-reachable family \(R_x\). Theorem 4 guarantees every clause. There are \(n2^{n-2}\) edge orbits and \(4^n\) root-subset memberships; the forward transitions number \(n2^{2n-1}\), complement pairs \(2^{2n-1}\), and initial-root clauses \(2^n\). \(\square\)
+
+**Corollary 7 (resource-groupoid strengthening).** Adding
+\[
+r_{x,S}\Longrightarrow r_{x+\mathbf1_S,S},\qquad
+r_{x,S}\wedge r_{x+\mathbf1_S,T}
+\Longrightarrow r_{x,S\cup T}\quad(S\cap T=\varnothing)
+\tag{8}
+\]
+does not change satisfiability. Indeed the true reachable sets satisfy these implications by path reversal and disjoint-resource concatenation, so they still witness the converse direction.
+
+This gives a finite resource-sensitive dual certificate of a potential counterexample, with a clause count growing as \(O(n4^n)\) instead of the factorial number of rooted geodesics. It is not a uniform proof of unsatisfiability.
+
+**Corollary 8 (antipodal root reduction).** In Theorem 6 the rooted membership variables and clauses may be imposed only for a transversal \(T\) of antipodal vertex pairs. The smaller formula is satisfiable if and only if a counterexample coloring exists. Its size is
+\[
+\boxed{n2^{n-2}+2^{2n-1}\text{ Boolean variables},\qquad
+(n+1)2^{2n-2}+2^{n-1}\text{ clauses}.}\tag{9}
+\]
+For \(n=7\), this is 224 coloring variables, 8192 rooted variables, and 32,832 clauses before symmetry constraints.
+
+*Proof.* Any counterexample coloring has complement-free true reachable families at every root, so restrict to \(T\). Conversely, if a monochromatic antipodal geodesic existed, reversing it and translating by the deck involution would give geodesics of both colors rooted at both antipodal endpoints. One endpoint lies in \(T\), and its color-zero path forces both the empty set and its complement into that root's SAT membership family, contradicting the complementary-pair clauses. Thus the restricted formula excludes all counterexample witnesses if unsatisfiable. Halving the roots halves the reachability variables and clauses. \(\square\)
+
+This is an equivalent finite-dimensional decision procedure, not a uniform proof over all dimensions.
+
+### Edge-order synchronization and stability of extremal boundary colorings
+
+Let \(n\ge6\), and let \(V_n\) consist of real functions \(x(a,b,c)=-x(c,b,a)\) on ordered triples of distinct labels. Its dimension is \(N=n(n-1)(n-2)/2\). The legal-turn reversal quotient has \(E=N(n-3)\) edges. For sign-valued \(x\), let \(D(x)\) count disagreeing turns. Recall the signed adjacency operator
+\[
+(Ax)(a,b,c)=\sum_{d\notin\{a,b,c\}}[x(b,c,d)+x(d,a,b)]
+\]
+with spectrum contained in \(\{-(n-2),-2,0,1,n-2\}\). Its smallest eigenspace is
+\[
+\mathcal E_-=\{f_s(a,b,c)=s_{ab}-s_{bc}:s_{ab}=s_{ba},\ \sum_{b\ne a}s_{ab}=0\}.
+\]
+Let \(\mathcal G=\{f:f(a,b,c)=u_b(a)-u_b(c)\}\) be the direct sum of local gradient spaces; then \(\mathcal E_-\subseteq\mathcal G\).
+
+**Theorem 1 (canonical symmetric edge potential).** For \(x\in V_n\) define
+\[
+d_b(a)=\sum_{c\notin\{a,b\}}x(a,b,c),\quad
+h_{ab}=d_b(a)+d_a(b),\quad H_a=\sum_{b\ne a}h_{ab}.
+\]
+The symmetric weights
+\[
+\boxed{s_{ab}=\frac1{2(n-1)}
+\left(h_{ab}-\frac{H_a+H_b}{n-2}\right)}
+\tag{1}
+\]
+have zero row sums and determine the orthogonal projection
+\(\Pi_-x=f_s\) onto \(\mathcal E_-\). The nonnegative global synchronization defect
+\[
+\Gamma(x)=\|\Pi_{\mathcal G}x-\Pi_-x\|^2
+\]
+has the explicit expression
+\[
+\boxed{\Gamma(x)=
+\frac1{n-1}\sum_b\sum_{a\ne b}d_b(a)^2-
+\frac1{2(n-1)}\sum_{a<b}
+\left(h_{ab}-\frac{H_a+H_b}{n-2}\right)^2.}
+\tag{2}
+\]
+
+*Proof.* Reversal skewness gives \(\sum_{a\ne b}d_b(a)=0\), hence \(\sum_aH_a=0\). Formula (1) has zero row sums. For any symmetric zero-row-sum array \(t\), define \(f_t(a,b,c)=t_{ab}-t_{bc}\). Expanding over outer pairs yields
+\[
+\langle x,f_t\rangle=\sum_{a<b}h_{ab}t_{ab},\qquad
+\langle f_s,f_t\rangle=2(n-1)\sum_{a<b}s_{ab}t_{ab}.
+\]
+Their difference is zero because \(h_{ab}-2(n-1)s_{ab}=(H_a+H_b)/(n-2)\) is orthogonal to \(t\). This proves the projection claim. The local gradient projection has coordinates \((d_b(a)-d_b(c))/(n-1)\) and squared norm \((n-1)^{-1}\sum_{a\ne b}d_b(a)^2\). The norm of \(f_s\) is \(2(n-1)\sum_{a<b}s_{ab}^2\). Subtraction of the nested projection norms proves (2). \(\square\)
+
+For each center \(b\), orient its tournament of outer labels by \(x(a,b,c)\), and let \(t_b\) count directed cyclic triangles, \(T(x)=\sum_b t_b\).
+
+**Theorem 2 (joint curvature and synchronization penalty).** Every sign-valued reversal-skew \(x\) obeys
+\[
+\boxed{\frac{D(x)}E\le
+\frac23+\frac{n-2}{2(n-3)(n-1)}
+-\frac{2(n-4)T(x)}{(n-1)E}
+-\frac{(n-4)\Gamma(x)}{4E}.}
+\tag{3}
+\]
+*Proof.* The complete-graph Hodge identity yields
+\(\|x-\Pi_{\mathcal G}x\|^2=n(n-2)(n-3)/6+8T(x)/(n-1)\).
+Nested orthogonal projections add \(\Gamma(x)\) to this squared distance. The spectral gap between \(-(n-2)\) and the remaining eigenvalues, which are at least \(-2\), gives
+\[
+\langle x,Ax\rangle\ge-(n-2)N+
+(n-4)\|x-\Pi_-x\|^2.
+\]
+Use \(\langle x,Ax\rangle=2E-4D(x)\) and simplify. \(\square\)
+
+**Lemma 3 (elementary tournament stability).** A tournament on \(m\ge3\) vertices with \(t\) cyclic triangles can be made transitive by reversing at most \(8m^2(t/m^3)^{1/3}\) arcs, with zero changes when \(t=0\).
+
+*Proof.* List vertices in increasing outdegree \(d_0\le\cdots\le d_{m-1}\). Counting transitive triples by their source gives
+\(\sum_i i^2-\sum_i d_i^2=2t\).
+For each \(k\), the \(k\) lowest-degree vertices have at least \(\binom{k}{2}\) internal wins, so \(\sum_{i<k}(d_i-i)\ge0\). Summation by parts against increasing \(d_i\) yields \(\sum_i(i-d_i)d_i\ge0\), hence
+\[
+\sum_i(i-d_i)^2\le2t. \tag{4}
+\]
+An inversion in the score order is an arc \(i\to j\) with \(i<j\). It belongs to at least \(d_j-d_i+1\) cyclic triangles, as follows by comparing the two endpoint outdegrees and partitioning their other neighbors into four orientation types.
+
+Set \(\delta=t/m^3\), \(\eta=\delta^{1/3}\), \(\theta=\delta^{1/2}\), assuming \(t>0\). At most \(2t/(\eta^2m^2)\) vertices have \(|d_i-i|>\eta m\), so at most \(2t/(\eta^2m)\) inversion arcs touch such vertices. Among the remaining vertices, at most \((\theta+2\eta)m^2\) pairs have rank separation at most \((\theta+2\eta)m\). Every other inverted arc has outdegree gap greater than \(\theta m\), hence participates in at least \(\theta m\) cyclic triangles. Since each cyclic triangle has three arcs, there are at most \(3t/(\theta m)\) such inversions. The total is at most
+\[
+m^2\big(\theta+2\eta+2\delta/\eta^2+3\delta/\theta\big)
+=m^2(4\delta^{1/3}+4\delta^{1/2})
+\le8m^2\delta^{1/3}.
+\]
+Reversing the inversions gives a transitive order. \(\square\)
+
+
+**Theorem 4 (near-extremal stability toward edge orderings).** Define
+\[
+\varepsilon=\max\{0,\,2/3-D(x)/E\},\qquad
+z=\varepsilon+\frac{n-2}{2(n-3)(n-1)}.
+\]
+There exist pairwise distinct symmetric edge weights \(s_{ab}=s_{ba}\) such that the comparison coloring \(x_s(a,b,c)=\operatorname{sgn}(s_{ab}-s_{bc})\) differs from \(x\) on at most \(O(Nz^{1/9})\) reversal classes of triples, with an absolute implied constant. Consequently \(D(x_n)/E_n\ge2/3-o(1)\) forces agreement with an edge-ordered boundary coloring on \(1-o(1)\) of all triple classes.
+
+*Proof.* The nonnegative penalties in (3) give
+\[
+\frac{2(n-4)T}{(n-1)E}+\frac{(n-4)\Gamma}{4E}\le z.
+\]
+Writing \(m=n-1\), we have \(T/(nm^3)\le3z/10\) and \(\Gamma/N\le6z\). Apply Lemma 3 to the \(n\) local tournaments. Jensen's inequality supplies a reversal-skew coloring \(y\), whose local tournaments are all transitive, with \(R\) altered triple classes satisfying
+\[
+R/N\le \frac{16m}{m-1}(T/(nm^3))^{1/3}
+\le20z^{1/3}. \tag{5}
+\]
+Take the symmetric potential \(s\) computed by (1), so \(\Pi_-x=f_s\). Projection contractivity, \(\|x-y\|^2=4R\), and the definition of \(\Gamma\) give
+\[
+\|\Pi_{\mathcal G}y-f_s\|^2\le8R+2\Gamma. \tag{6}
+\]
+The signed outdegree scores of a transitive tournament on \(m\) vertices are \(-(m-1),-(m-3),\ldots,m-1\). Consequently the local gradient projection \((\Pi_{\mathcal G}y)(a,b,c)\) has the same sign as \(y(a,b,c)\) and magnitude \(2|i-j|/m\), where \(i,j\) are their local ranks.
+
+For any \(0<\theta<1\), the fraction of outer pairs with rank separation smaller than \(\theta m\) is at most \(2m\theta/(m-1)\). Every other pair at which \(y\) and the sign of \(f_s\) disagree contributes at least \(4\theta^2\) to (6). Perturb the finitely many symmetric weights generically by sufficiently small amounts to eliminate ties while preserving all strict comparisons. Thus
+\[
+\frac{\operatorname{dist}(x,x_s)}N
+\le\frac RN+\frac{2m}{m-1}\theta+
+\frac{8R+2\Gamma}{4\theta^2N}. \tag{7}
+\]
+Taking \(\theta=z^{1/9}\) when \(z<1\), and applying (5) and the preceding bounds, proves the assertion. For \(z\ge1\) the bound is immediate after enlarging its absolute constant. \(\square\)
+
+The theorem concerns unrestricted reversal-odd boundary tournaments; the edge-ordered subclass emerges quantitatively in the near-extremal density regime. Transferring long vertex-simple paths across exceptional triples requires a separate robustness argument.
+
+
+### NORI Article XI — precise Smith form for boundary-tournament tight windows
+
+**Theorem (proved, n >= 5).** Let T_n be the reversal-orbits of distinct ordered triples (a,b,c)~(c,b,a), N=n(n-1)(n-2)/2. Let h_pi be the 0/1 incidence vector of the n-2 consecutive triple windows in any Hamiltonian word pi. Then
+
+  span_Z{h_pi: pi in S_n}
+    = {z in Z^N: sum(z) = 0 mod (n-2)}.
+
+Thus Z^N/span_Z{h_pi} = Z/(n-2), and the Smith normal form has N-1 ones and one n-2. This proves the earlier Smith-form conjecture, not merely the n=5,6,7 computations.
+
+**Local swaps.** If a Hamiltonian word ends u,a,b,c, exchanging b,c gives the identity for an annihilating triple weighting w_{abc}=w_{cba}:
+
+  w_{uab}+w_{abc}-w_{uac}-w_{acb}=0. (E)
+
+For characteristic different from two, fix middle symbol a. Equation (E) says the differences of the symmetric matrix M_a(u,b)=w_{uab} between columns b,c do not depend on row u. The standard complete-graph additive lemma (solve three pair equations and extend by column differences) gives M_a(u,b)=s_a(u)+s_a(b). Set P_ab=s_a(b)+s_b(a). Substitution in E shows P_ab-P_ac=s_c(b)-s_b(c), independent of a, so another application of the lemma gives P_ab=gamma_a+gamma_b. Adding/subtracting these two identities gives s_a(b)=gamma_b, hence w_{abc}=gamma_a+gamma_c.
+
+The Hamiltonian sum is 2 sum gamma_i minus the gamma values at the four end positions. Swapping an interior-position label with an end-position label forces all gamma_i equal. So w is constant, and the word constraint is (n-2)w=0. This proves the claimed annihilator dimension for all fields of odd characteristic and for characteristic zero.
+
+For characteristic two, each relation (E) is a four-cycle in F=L(K_n) with vertices ua,ab,bc,ac. These squares generate the even-length subspace of Z_1(F;F2): the cycle space is generated by star triangles (three K_n edges at a vertex) and edge triangles (three K_n edges forming a triangle). An E square is the symmetric difference of an edge triangle on ab,ac,bc and a star triangle on ua,ab,ac. Two K_n edge triangles sharing an original K_n edge are congruent via the same star triangle; the adjacency graph of K_n triangles is connected. Thus all generating triangles are congruent modulo E squares, and their common odd parity proves the square span is precisely the even-cycle subspace.
+
+Therefore every F2 annihilating weighting of (E) has the form
+  w_{abc}=u_{ab}+u_{bc}+z,
+a cut cochain on F plus a constant. Summing over a Hamiltonian word telescopes the cut, yielding u_{v1v2}+u_{v(n-1)vn}+(n-2)z=0. Any two disjoint edges of K_n can be the first and last. For two edges sharing a vertex, a third edge disjoint from both exists since n>=5; comparing these pairs forces their u-values equal. Connectivity of L(K_n) forces u constant. Thus w=z constant and (n-2)z=0. Hence over *every* field the annihilator has dimension one precise when its characteristic divides n-2; otherwise it is zero.
+
+**Integral step.** The Hamiltonian incidence matrix has full rational rank, so C=Z^N/L is finite. In every characteristic its corank is <=1, making C cyclic. For each prime dividing |C|, the unique modular annihilator is the all-one cochain, nonzero on every basis vector e_t; therefore every e_t generates C. S_n acts on C by relabeling. Since Aut(C) is abelian, conjugate transpositions induce the same automorphism. A transposition of two labels outside a fixed triple exists (n>=5) and fixes the generator e_t; it therefore acts trivially. Thus all transpositions, hence all permutations, act trivially, and every e_t is the same element e of C. Each Hamiltonian row has n-2 windows, giving (n-2)e=0. Conversely total coordinate sum modulo n-2 gives a surjection C -> Z/(n-2). Hence C is precise Z/(n-2).
+
+**Significance.** The cube's geodesic unsigned incidence lattice was proved saturated for n>=5. The boundary-tournament Hamiltonian triple-window lattice has precisely one length-based torsion factor n-2, and no other hidden integrality defects. The theorem concerns unsigned triple-window incidence, not the entire pointed two-port cocircuit incidence matrix. It does not yield positivity, a monochromatic tight path, or unrestricted NORI1; the nonlinear low-cost gallery selector remains open.
+
+
+#### Signed Hamiltonian tight-window incidence: complete Smith form
+
+Choose one oriented representative of every reversal class \(t=[a,b,c]=[c,b,a]\). Each Hamiltonian word \(\pi\) determines a signed incidence vector \(s_\pi\in\mathbb Z^{\mathcal T_n}\), in which a triple window contributes \(+1\) if it agrees with the chosen orientation of its reversal orbit, and \(-1\) if it is reversed. Write \(\Lambda_n^\pm=\operatorname{span}_{\mathbb Z}\{s_\pi\}\).
+
+**Theorem 2 (signed Smith form).** For all \(n\ge5\),
+\[
+\boxed{\mathbb Z^{\mathcal T_n}/\Lambda_n^\pm\cong
+\begin{cases}
+0,&n\ \text{odd},\\
+\mathbb Z/2\mathbb Z,&n\ \text{even}.
+\end{cases}}
+\]
+Thus the signed Hamiltonian incidence matrix has full rational column rank. All nonzero Smith invariant factors are one in odd orders, and there is a single factor two in even orders.
+
+*Proof.* We first compute its linear annihilator over fields. For characteristic different from two, represent an annihilating weighting by \(z_{abc}=-z_{cba}\). The terminal adjacent-swap comparison gives, for pairwise distinct \(u,a,b,c\),
+\[
+z_{uab}+z_{abc}-z_{uac}-z_{acb}=0.\tag{S}
+\]
+Interpret triple reversal orbits as oriented edges of \(F=L(K_n)\), where \((u,a,b)\) is the edge from \(\{u,a\}\) to \(\{a,b\}\).
+
+Fix \(a\) and put \(M_a(u,b)=z_{uab}\); this is antisymmetric in \(u,b\). The relation (S) says \(M_a(u,b)-M_a(u,c)\) is independent of \(u\) outside \(\{a,b,c\}\). It follows that the triangular circulation
+\[
+T_a(u,b,c)=M_a(u,b)+M_a(b,c)+M_a(c,u)
+\]
+does not change if any one of the three arguments is replaced by a fourth distinct label. Comparing such replacements on four labels shows \(T_a(u,b,c)=-T_a(u,b,c)\); since the field characteristic is not two, \(T_a=0\). Thus there are potentials \(r_a(b)\) with
+\[
+z_{uab}=r_a(b)-r_a(u).
+\]
+Substituting this form in (S), the skew function \(P_{ab}=r_a(b)-r_b(a)\) has zero triangular circulation on \(K_n\); hence \(P_{ab}=\gamma_b-\gamma_a\) for some \(\gamma\). The potentials
+\[
+v_{\{a,b\}}=r_a(b)+\gamma_a
+\]
+are symmetric, since \(r_a(b)-r_b(a)=\gamma_b-\gamma_a\), and yield
+\[
+\boxed{z_{uab}=v_{\{a,b\}}-v_{\{u,a\}}.}
+\]
+This is a graph coboundary on \(F\). In a Hamiltonian tight-window sequence it telescopes to the potential of the final unordered edge minus that of the initial unordered edge. Any two disjoint \(K_n\) edges can occur as these endpoints. If two edges intersect, a third edge disjoint from both exists for \(n\ge5\), so comparison through that edge forces their potentials to agree as well. Therefore every \(v_{\{a,b\}}\) is equal and \(z=0\). The signed incidence matrix has full column rank over every field of characteristic other than two.
+
+Over characteristic two, the orientation signs disappear. The unsigned Smith-form theorem above says that its nullity is zero when \(n\) is odd and one when \(n\) is even; in the latter case the unique annihilator is the constant triple-orbit weighting.
+
+The integral cokernel \(C^\pm=\mathbb Z^{\mathcal T_n}/\Lambda_n^\pm\) is finite because of rational full column rank. It has no odd-primary torsion and its reduction modulo two has dimension zero for odd \(n\), one for even \(n\). Therefore it is trivial for odd \(n\) and a cyclic \(2\)-group for even \(n\). In the even case, each coordinate class \(e_t\) generates \(C^\pm\), since the unique modular annihilator is constant and nonzero at every triple orbit.
+
+Relabeling gives an action of \(S_n\) on the cokernel. Since a cyclic group has abelian automorphism group, conjugate transpositions induce the same automorphism. For any fixed oriented triple, two unused labels exist when \(n\ge5\). Their transposition fixes its generating coordinate class and must act as identity. Thus every transposition acts trivially. But exchanging the first and third labels of a triple sends its signed coordinate class \(e_t\) to \(-e_t\). Consequently \(2e_t=0\), so the cokernel has exponent two. It is nonzero in even orders by its mod-two deficiency; hence \(C^\pm=\mathbb Z/2\mathbb Z\). \(\square\)
+
+**Scope.** These two Smith-form results concern unsigned and reversal-signed Hamiltonian triple-window incidences. They are not statements about all pointed dual-matroid cocircuits. The unsigned length congruence and residual signed parity describe linear integer obstructions; they do not produce nonnegative path representations, low-switch geodesics, or long monochromatic boundary-tournament tight paths.
+
+#### Nonnegative cones and the missing connectivity constraints
+
+The integral lattice identities above admit a sharp positivity analysis.
+
+**Theorem 3 (the signed Hamiltonian semigroup has no convex restriction).** Let
+\[
+\mathsf S_n^\pm=\left\{\sum_{\pi\in S_n}m_\pi s_\pi:
+m_\pi\in\mathbb Z_{\ge0}\right\}
+\]
+be the nonnegative integral semigroup generated by the signed Hamiltonian triple-window incidence vectors. For every \(n\ge5\),
+\[
+\boxed{
+\mathsf S_n^\pm=\Lambda_n^\pm
+=\begin{cases}
+\mathbb Z^{\mathcal T_n},&n\text{ odd},\\
+\{z\in\mathbb Z^{\mathcal T_n}:\sum_tz_t\equiv0\pmod2\},
+&n\text{ even}.
+\end{cases}}
+\tag{16}
+\]
+The real cone generated by these signed vectors is the entire real space \(\mathbb R^{\mathcal T_n}\).
+
+*Proof.* Reversing a Hamiltonian vertex word reverses all of its triple windows, so
+\[
+s_{\pi^R}=-s_\pi.
+\]
+Every integer linear combination of signed path vectors can therefore be rewritten as a nonnegative integer combination, by replacing a negatively weighted path with its reversal. Hence the signed semigroup equals its generated integer lattice. The signed Smith theorem gives this lattice as the entire space in odd orders and a subgroup of index two in even orders. For even \(n\), each signed row has even coordinate sum, and the parity-even subgroup itself has index two, identifying the lattice. Full rational column rank and the availability of both \(s_\pi\) and \(-s_\pi\) make the real cone equal to the whole space. \(\square\)
+
+This theorem warns against treating nonnegative coefficients in a **signed** incidence expansion as a positive witness: reversal provides a negative representative for every path, so the semigroup has no pointed-cone geometry. The relevant convex constraints must instead retain orientation-specific feasibility or use unsigned incidences.
+
+For unsigned windows let
+\[
+P_n=\operatorname{conv}\{h_\pi:\pi\in S_n\}
+\subseteq\mathbb R^{\mathcal T_n},
+\tag{17}
+\]
+and define the middle-resource projection
+\[
+(Mz)_v=\sum_{\substack{a,c\in[n]\setminus\{v\}\\a<c}}
+z_{[a,v,c]},\qquad v\in[n].
+\tag{18}
+\]
+
+**Theorem 4 (uniform-matroid base projection).** For \(n\ge5\),
+\[
+\boxed{
+M(P_n)=\left\{y\in[0,1]^n:
+\sum_{v=1}^n y_v=n-2\right\}
+=B(U_{n-2,n}),
+}
+\tag{19}
+\]
+the base polytope of the uniform matroid of rank \(n-2\).
+
+*Proof.* A Hamiltonian word uses each vertex as a middle vertex of a triple window precisely when that vertex is neither its first nor its last label. Hence
+\[
+Mh_\pi=\mathbf1-e_{v_1}-e_{v_n}.
+\]
+Every unordered pair of possible endpoints occurs in a Hamiltonian word, so the images of path vectors are all \(0/1\) vectors with \(n-2\) ones. Their convex hull is the hypersimplex \(B(U_{n-2,n})\). \(\square\)
+
+The base-polytope projection captures the resource independence used by Hamiltonian words, but it does not capture their connectedness.
+
+**Theorem 5 (cut inequalities and disconnected lattice certificates).** For every nonempty proper vertex set \(S\subsetneq[n]\), define
+\[
+q_S([a,b,c])=
+\mathbf1\bigl(\{a,b\}\in\delta_{K_n}(S)
+\text{ or }\{b,c\}\in\delta_{K_n}(S)\bigr).
+\tag{20}
+\]
+Every unsigned Hamiltonian path-incidence vector satisfies
+\[
+\boxed{\langle q_S,h_\pi\rangle\ge1,}
+\tag{21}
+\]
+and therefore so does every \(z\in P_n\). For every \(n\ge6\), however, there exists a \(0/1\) vector \(z\in\mathbb Z^{\mathcal T_n}\) satisfying all of the following:
+\[
+\boxed{
+\begin{gathered}
+z\ge0,\quad\sum_tz_t=n-2,\quad
+z\in\Lambda_n,\quad
+Mz=\mathbf1-e_u-e_v\in B(U_{n-2,n}),\\
+\langle q_S,z\rangle=0\text{ for some nontrivial }S.
+\end{gathered}}
+\tag{22}
+\]
+In particular, the complete Smith congruence plus nonnegativity and the uniform-matroid resource-base constraints are insufficient to characterize a Hamiltonian path or its convex hull.
+
+*Proof.* Every Hamiltonian word visits vertices in both \(S\) and its complement, so at least one of its consecutive \(K_n\) edges crosses \(\delta(S)\). That edge belongs to at least one of the \(n-2\) consecutive triple windows, proving (21).
+
+For (22), partition the vertex set into \(S\dot\cup S^c\) with \(|S|,|S^c|\ge3\). Choose one omitted middle vertex \(u\in S\) and \(v\in S^c\). For every other center \(b\), choose distinct \(a,c\) from the same side as \(b\) and different from \(b\); put a single one in the coordinate \([a,b,c]\), with all other coordinates zero. Different centers give different triple-orbit coordinates, so the resulting \(z\) is \(0/1\), has \(n-2\) ones, and has middle-resource projection \(\mathbf1-e_u-e_v\). The unsigned Smith theorem puts it in \(\Lambda_n\), because its coordinate sum equals \(n-2\). But no chosen triple crosses the partition, giving \(\langle q_S,z\rangle=0\), contrary to (21). \(\square\)
+
+**Implication for the unification program.** The two lattice theorems eliminate divisibility ambiguity but do not replace coherent resource-independent path geometry. Signed cones are non-pointed because reversal negates generators; unsigned convex path incidence has additional global connectivity inequalities invisible to both the Smith lattice and its uniform-matroid middle-resource projection. A common matroidal low-switch selector must preserve **graphic connectivity across cuts**, in addition to linear incidence and resource independence. The new conclusions are polyhedral obstructions to a proposed shortcut, not proofs of the unrestricted cube or boundary-tournament existence conjectures.
+
+### Antipodal cut-pair separation and four-sector cocycle geometry
+
+The component-contact minor records the intersections of monochromatic components with their deck images. Here we recover additional information lost under zero-turn contraction: the *boundaries of a monochromatic component and its deck image are disjoint graphic-matroid cocycles*. This yields a canonical four-sector quotient with prescribed boundary colors, and a matroid-intersection characterization of which vertex sets can occur as monochromatic components under a deck-odd coloring.
+
+Let \(G\) be a finite connected graph with a fixed-point-free involution \(\tau\) that acts freely on edges, and let \(c:E(G)\to\mathbb F_2\) obey \(c(\tau e)=1+c(e)\). The antipodal cube \(Q_n\), \(n\ge3\), is the principal example. The graph cuts \(\delta_G(S)\) form the cocycle space of the graphic matroid \(M(G)\).
+
+#### 1. Disjoint antipodal cut cocycles
+
+**Theorem 1 (component-cut disjointness).** Let \(R\subseteq V(G)\) be the vertex set of one connected color-zero component, excluding isolated zero-degree vertices. Then
+\[
+\boxed{\delta_G(R)\subseteq c^{-1}(1),\qquad
+\delta_G(\tau R)=\tau\delta_G(R)\subseteq c^{-1}(0),}
+\tag{1}
+\]
+and therefore
+\[
+\boxed{\delta_G(R)\cap\delta_G(\tau R)=\varnothing.}
+\tag{2}
+\]
+
+*Proof.* An edge leaving a full color-zero connected component cannot itself have color zero, since its exterior endpoint would belong to the same component. Thus \(\delta_G(R)\) is blue. Applying \(\tau\) converts those edges to red and gives the boundary of \(\tau R\), proving (1) and (2). \(\square\)
+
+**Corollary 2 (antipodal cocycle pair).** The two graphic-matroid cocycles \(\delta_G(R)\) and \(\delta_G(\tau R)\) have disjoint supports, are exchanged by \(\tau\), and have the same cardinality. Their union is the cocycle
+\[
+\boxed{
+\delta_G(R)\sqcup\delta_G(\tau R)
+=\delta_G(R\mathbin{\triangle}\tau R).
+}
+\tag{3}
+\]
+If \(R\) contains an antipodal pair, then \(R\cap\tau R\ne\varnothing\), and this pair of separated cuts coexists with a port-parallel loop in the pointed component-contact minor.
+
+*Proof.* Binary cut addition obeys \(\delta(A)\triangle\delta(B)=\delta(A\triangle B)\). The supports are disjoint by (2), and \(\tau\) exchanges them. \(\square\)
+
+#### 2. Canonical four-sector geometry
+
+Define a partition of \(V(G)\):
+\[
+\boxed{
+I=R\cap\tau R,\quad
+A=R\setminus\tau R,\quad
+B=\tau R\setminus R=\tau A,\quad
+O=V(G)\setminus(R\cup\tau R).
+}
+\tag{4}
+\]
+The sectors \(I,O\) are \(\tau\)-invariant; \(\tau\) exchanges \(A\) and \(B\).
+
+**Theorem 3 (four-sector forbidden diagonals and forced colors).** No edge joins \(I\) to \(O\), and no edge joins \(A\) to \(B\):
+\[
+\boxed{E_G(I,O)=E_G(A,B)=\varnothing.}
+\tag{5}
+\]
+Every edge between distinct sectors belongs to one of the four other cross-sector classes. Its color is forced:
+\[
+\boxed{
+c(E_G(I,A))=0,\quad
+c(E_G(B,O))=0,\quad
+c(E_G(I,B))=1,\quad
+c(E_G(A,O))=1.
+}
+\tag{6}
+\]
+Edges contained within an individual sector are not assigned a color by (5)–(6).
+
+*Proof.* An edge between \(I\) and \(O\) crosses both boundaries \(\delta(R)\) and \(\delta(\tau R)\); so does an edge between \(A\) and \(B\). Theorem 1 forbids such edges. An \(I\)-to-\(A\) edge crosses \(\delta(\tau R)\), hence is red. An \(I\)-to-\(B\) edge crosses \(\delta(R)\), hence is blue. The other two cases are symmetric and give (6). \(\square\)
+
+Equivalently, the sector label defines a \(\tau\)-equivariant graph map to a four-cycle with cyclic sectors \(I,A,O,B\), allowing stationary steps, and with the two opposite diagonals forbidden. Red and blue boundary edges alternate around this four-cycle. The quotient is a global compatibility constraint between the color-zero component \(R\), the color-one component \(\tau R\), and their interface \(I\), not merely a statement about one component in isolation.
+
+#### 3. Which sets can be monochromatic components?
+
+Let \(G\) be any finite connected graph with a fixed-point-free involution acting freely on edges, as at the start of this Subsection. A deck edge orbit is the two-element pair \(\{e,\tau e\}\). For a vertex set \(R\), let \(G_R=G[R]\) be its induced graph. The edge orbits partition \(E(G_R)\) into classes of size one or two. Let \(P_\tau(R)\) be the partition matroid on \(E(G_R)\) permitting at most one selected edge from each antipodal orbit. Let \(M(G_R)\) be the graphic cycle matroid of the induced graph.
+
+**Theorem 4 (graphic–partition matroid component characterization).** For a nonempty \(R\subseteq V(G)\), there exists a deck-odd edge coloring of the full covering graph for which \(R\) is precisely one connected red component if and only if
+\[
+\boxed{
+\delta_G(R)\cap\tau\delta_G(R)=\varnothing
+}
+\tag{7}
+\]
+and
+\[
+\boxed{
+\max\{|T|:T\in\mathcal I(M(G_R))\cap\mathcal I(P_\tau(R))\}
+=|R|-1.
+}
+\tag{8}
+\]
+The second condition says that \(G_R\) has a spanning tree containing no antipodal pair of edges.
+
+*Proof.* For necessity, let \(R\) be a red component of a deck-odd coloring. Condition (7) is Theorem 1. Choose a red spanning tree of \(R\). It is independent in \(M(G_R)\), has \(|R|-1\) edges, and cannot contain both members of an antipodal edge pair because they have complementary colors. Thus (8) holds.
+
+For sufficiency, choose a spanning tree \(T\subseteq E(G_R)\) meeting each edge orbit at most once. For each orbit that meets \(\delta(R)\), color its unique boundary member blue and its antipode red; this prescription is consistent because (7) forbids both orbit members from lying in \(\delta(R)\). On every still-uncolored edge orbit meeting \(T\), declare its member in \(T\) red and its antipode blue; there is no conflict because the orbit contains at most one tree edge, and any tree edge whose antipode was a boundary edge has already been colored red. Color the remaining orbits arbitrarily with complementary bits. All boundary edges of \(R\) are blue, so no red path exits \(R\); every edge of \(T\) is red, so \(R\) is red connected. Hence \(R\) is one full red component. \(\square\)
+
+**Corollary 5 (intrinsic partition-cut test).** Condition (8) holds if and only if for every partition
+\(\mathcal P=\{R_1,\ldots,R_k\}\) of the vertex set \(R\) into \(k\ge2\) nonempty parts,
+\[
+\boxed{
+\#\left\{\text{antipodal edge orbits containing an edge of }
+G_R\text{ crossing }\mathcal P\right\}\ge k-1.
+}
+\tag{9}
+\]
+Thus (7) together with (9) gives a criterion expressed entirely by **disjoint antipodal graphic cocycles and edge-orbit matroid rank**, without quantification over edge colorings.
+
+*Proof.* Apply the matroid-intersection min–max theorem to \(M(G_R)\) and \(P_\tau(R)\). For any edge subset \(F\subseteq E(G_R)\), the graphic rank is \(|R|-\kappa(F)\), where \(\kappa(F)\) is the number of connected components of \((R,F)\). The partition rank on \(E(G_R)\setminus F\) is the number of antipodal edge orbits represented there. Therefore the intersection has a common independent set of size \(|R|-1\) precisely when, for all \(F\),
+\[
+\#\{\text{orbits represented in }E(G_R)\setminus F\}
+\ge\kappa(F)-1.
+\]
+The crossing edges of the component partition of \(F\) lie outside \(F\), so (9) implies the inequalities. Conversely, for an arbitrary partition \(\mathcal P\), take \(F\) to contain all edges internal to its parts. The remaining edges are its crossing edges and \(\kappa(F)\ge k\), proving (9). \(\square\)
+
+#### 4. Consequences for the spanning-geodesic selector
+
+For a cube coloring \(c\), take a red component \(R\) containing an antipodal pair. The component is subject simultaneously to (i) the graphic-rank amplification bound from the preceding Subsection, (ii) the antipodal cocycle separation (7), and (iii) the orbit-rainbow connectivity condition (8). The induced four-sector partition constrains every edge leaving \(R\) and every edge leaving its antipodal blue mate \(\tau R\).
+
+These conditions provide an intrinsic matroidal class of admissible **monochromatic component supports**, not merely of signed turn graphs. Nevertheless, they characterize which supports are possible under *some* deck-odd coloring, not which edges inside such a support are red under a previously fixed coloring. A vertex-simple antipodal geodesic lying in \(Q_n[R]\) need not be red. Therefore the characterization alone does not establish NORI1.
+
+The next closure problem is to combine the two-cut sector geometry with resource-simple fundamental-circuit exchange. It would suffice to prove that in every admissible fixed coloring, some self-antipodal red component contains a **red** shortest antipodal path. Disjoint graphic cocycle pairs and the partition-cut criterion are additional constraints that any purported counterexample must satisfy; in isolation they do not imply the desired distance equality.
+
+#### 5. Shared specialization to both canonical systems
+
+**Corollary 6 (common component-support structure).** Theorems 1–4 and Corollary 5 apply to both canonical Article XI graph coverings:
+
+(i) the \(n\)-regular antipodal cube cover \(Q_n\to Q_n/\tau\), whose covering edges are cube edges; and
+
+(ii) the \(2(n-2)\)-regular ordered-pair cover \(S(K_n)\to L(K_n)\) used for ordinary reversal-odd boundary 3-tournaments, whose covering edges are ordered triples \((a,b,c)\), with deck reversal \((c,b,a)\).
+
+For both systems, every monochromatic component \(R\) and its opposite-colored deck image \(\tau R\) determine disjoint antipodal cut cocycles and the same four-sector constraints. A candidate monochromatic component support is realizable by a deck-odd coloring if and only if its antipodal cut pair is disjoint and its induced graph has an edge-orbit-rainbow spanning tree, equivalently the partition-cut inequalities (9).
+
+*Proof.* In either cover, the deck involution acts freely on vertices and edges and complements edge-state colors. The proofs above use only those conditions and the graphic–partition matroid intersection theorem. \(\square\)
+
+In the boundary model, the vertices of \(S(K_n)\) are ordered pairs of original vertices. Thus red connectivity of an ordered-pair component does not ensure a forward vertex-simple tight path. The shared cocycle and component-realizability structures are independent of, but compatible with, the additional original-resource matroid required for the spanning one-turn conjecture.
+
+Let \(Q_n\) be the \(n\)-cube, \(n\ge3\), \(\tau(x)=x+\mathbf1_{[n]}\), and \(H_n=L(Q_n/\tau)\), whose \(n2^{n-2}\) vertices correspond to antipodal orbits of cube edges. Fix any order \(\pi=(1,\ldots,n)\) of coordinate directions. For a starting vertex \(x\), let \(C_x^\pi\subseteq H_n\) be the simple length-\(n\) turn cycle of the antipodal geodesic starting at \(x\) and visiting coordinates in order \(\pi\).
+
+**Theorem 1 (geodesic vertex-disjoint packing).** For even \(n\ge4\), choose one representative \(x\) from each antipodal pair of even-parity cube vertices. The family of cycles \(C_x^\pi\), indexed by those \(2^{n-2}\) roots, partitions \(V(H_n)\) into pairwise vertex-disjoint cycles of length \(n\). In particular it is a 2-factor of \(H_n\), all of whose components are shortest odd-monodromy turn cycles.
+
+For odd \(n\ge3\), choose every even-parity cube vertex \(x\) whose first two coordinates are zero. The resulting \(2^{n-3}\) cycles \(C_x^\pi\) are pairwise vertex-disjoint.
+
+*Proof.* Along a fixed order \(\pi\), the state corresponding to direction \(i\) on the path from \(x\) is the cube edge starting at \(x\) translated by the fixed preceding-coordinate prefix. Suppose the projected edge states in direction \(i\) from roots \(x,y\) coincide. Two unoriented cube edges lie in the same antipodal orbit precisely when one is the other, its endpoint reversal, its antipodal translate, or the endpoint reversal of that translate. Translating away the common coordinate prefix gives
+\[
+\boxed{y\in\{x,\ x+e_i,\ \tau x,\ \tau x+e_i\}.}\tag{1}
+\]
+For even \(n\), both selected roots have even parity, excluding \(x+e_i\) and \(\tau x+e_i\). The two remaining possibilities are the same selected root or its antipode, and the latter is excluded by choosing one representative from each pair. Thus the cycles are vertex-disjoint. Their number times \(n\) equals \(|V(H_n)|\), proving the partition assertion.
+
+For odd \(n\), \(x+e_i\) and \(\tau x\) have odd parity, so neither is selected. The point \(\tau x+e_i\) has at least one of its first two coordinates equal to one, whether \(i\) belongs to those two directions or not. Since all selected roots have both coordinates zero, this final possibility is also excluded. Their number is \(2^{n-3}\), proving the second assertion. \(\square\)
+
+**Corollary 2 (pointed-cocircuit sunflower).** Let \(D_n\) be the pointed binary turn matroid and \(p\) its distinguished port. Each cycle \(C_x^\pi\) determines a shortest port cocircuit \(Y_x=E(C_x^\pi)\cup\{p\}\). The family of such cocircuits satisfies
+\[
+\boxed{Y_x\cap Y_y=\{p\}\quad(x\ne y),}\tag{2}
+\]
+and has cardinality \(2^{n-2}\) when \(n\) is even, and \(2^{n-3}\) when \(n\) is odd.
+
+*Proof.* Disjoint turn-cycle vertex sets give disjoint turn-edge sets, while each port cocircuit contains \(p\). \(\square\)
+
+**Theorem 3 (exponential-probability monochromatic NORI1).** Color each antipodal orbit of cube edges independently with an unbiased bit, giving its antipodal mate the complementary bit. Then the probability that the coloring has a monochromatic full antipodal geodesic obeys
+\[
+\boxed{
+\Pr(\mathrm{NORI1\ witness})
+\ge
+\begin{cases}
+1-\left(1-\dfrac{n}{2^{n-1}}\right)^{2^{n-2}}
+\ge1-e^{-n/2},&n\text{ even},\\[6pt]
+1-\left(1-\dfrac{n}{2^{n-1}}\right)^{2^{n-3}}
+\ge1-e^{-n/4},&n\text{ odd}.
+\end{cases}}\tag{3}
+\]
+
+*Proof.* For one fixed antipodal-geodesic turn cycle, the \(n\) cube-edge states belong to distinct antipodal edge orbits. Their edge colors are therefore independent unbiased bits. The cyclic comparison of consecutive states uses the deck complement of the first bit at the closing seam. The cyclic number of disagreements is one precisely when the linear color word is constant, or changes once between two constant blocks. There are \(2\) constant words and \(2(n-1)\) one-change words, among \(2^n\) equally likely words. Thus
+\[
+\Pr(w_d(C)=1)=\frac{2n}{2^n}=\frac{n}{2^{n-1}}.
+\]
+A cycle of cyclic turn weight one can be rerooted at its changed turn to give a monochromatic full antipodal geodesic. By Theorem 1, the cycles in the selected packing have disjoint edge-state orbit sets. Thus their weight-one events are independent. The complement of the event that at least one succeeds has probability \((1-n/2^{n-1})^k\), where \(k\) is the size of the packing. Substituting the two values of \(k\) gives (3); the exponential estimates follow from \(1-z\le e^{-z}\). \(\square\)
+
+**Proposition 4 (why the full 2-factor is restricted to even dimension).** For odd \(n\), the turn graph \(H_n\) cannot have a partition of its vertices into antipodal-geodesic turn cycles, regardless of coordinate ordering.
+
+*Proof.* Such a partition would cover every edge of the folded cube \(G_n=Q_n/\tau\) by edge-disjoint closed geodesic walks. Each component is a graph cycle, so their union would give every vertex of \(G_n\) even degree. But \(G_n\) is \(n\)-regular with \(n\) odd. This is impossible. \(\square\)
+
+The two-factor theorem produces many independently testable shortest port cocircuits, and the probability bound quantifies how unlikely a counterexample is under an unbiased deck-odd coloring. It does not prove the worst-case conjecture: an adversarial coloring could make all members of one packing have at least three disagreements. Relations between different packings, rather than independence within a single packing, would be needed for a deterministic closure.
+
+Let \(N\) be a finite loopless matroid of rank \(r\), let \(I_0\) be an independent set spanning the **anchor flat** \(F_0=\operatorname{cl}_N(I_0)\), and let \(B_1,B_2\) be independent resource sets containing \(I_0\). Put \(F_i=\operatorname{cl}_N(B_i)\).
+
+**Theorem 1 (modular complementary-flat gluing).** If
+\[
+\boxed{
+F_1\wedge F_2=F_0,\qquad
+F_1\vee F_2=E(N),\qquad
+r(F_1)+r(F_2)=r(F_0)+r(N),}
+\tag{1}
+\]
+then
+\[
+\boxed{B_1\cap B_2=I_0,\qquad B_1\cup B_2\text{ is a basis of }N.}\tag{2}
+\]
+Conversely, if \(B_1\cap B_2=I_0\) and \(B_1\cup B_2\) is a basis, all three relations in (1) hold. Thus (1) characterizes pairs of **complementary modular flats over \(F_0\)** whose bases glue to one full resource basis.
+
+*Proof.* Since \(B_i\) is independent and contains a basis \(I_0\) of \(F_0\), it cannot contain any further element of \(F_0\). A common element of \(B_1,B_2\) belongs to \(F_1\cap F_2=F_0\); hence their intersection is \(I_0\). The union therefore has cardinality
+\[
+|B_1\cup B_2|=r(F_1)+r(F_2)-r(F_0)=r(N).
+\]
+It spans \(F_1\vee F_2=E(N)\). A spanning set of size \(r(N)\) is a basis, proving (2).
+
+Conversely, assume \(B_1\cap B_2=I_0\) and their union is a basis. Their closures jointly span \(N\), so \(F_1\vee F_2=E(N)\). The basis cardinality gives \(r(F_1)+r(F_2)-r(F_0)=r(N)\). By submodularity,
+\[
+r(F_1\cap F_2)\le r(F_1)+r(F_2)-r(F_1\vee F_2)=r(F_0).
+\]
+But \(F_0\subseteq F_1\cap F_2\), so their ranks agree; since both are flats, \(F_1\cap F_2=F_0\). All conditions in (1) follow. \(\square\)
+
+**Theorem 2 (colored opposite-terminal gluing).** Suppose \(B_1,B_2\) arise from two same-colored coherent paths in a deck-reversal-odd path system, and their distinguished terminal states are opposite and compatible: reversing and deck-translating the second path can be concatenated with the first along the shared anchor, without introducing any additional turn. If their resource flats satisfy (1), the concatenated path uses a full basis of resources and has at most one color change.
+
+*Proof.* The reversal-deck operation complements the colors of the second arm. By terminal compatibility the two arms concatenate into one coherent path, with no extra interior transition beyond their joining seam. Theorem 1 says their combined resource set, counting the anchor once, is a full independent basis. Each arm was monochromatic, and the transformed second arm has the opposite color, so the concatenation has at most one color change. \(\square\)
+
+The compatibility hypothesis in Theorem 2 is essential: complementary matroid flats alone do not encode the order in which directed path states can be joined. The theorem isolates resource-basis gluing as a modular-flat property and forward coherence as a separate signed-cover condition.
+
+**Corollary 4 (boundary graphic flats form a Boolean sublattice).** Fix an unordered pair {u,v} and put A=V without {u,v}. Among flats of the graphic matroid M(K_V), consider only F_S=E(K_{S union {u,v}}), for S subset A. They are a Boolean sublattice: F_S meet F_T=F_(S intersect T), F_S join F_T=F_(S union T), with rank r(F_S)=|S|+1. Every pair is modular. The flat F_empty is the common anchor edge {u,v}, and F_A is the full resource flat. Therefore two terminal arms have complementary modular flats if and only if their sets of visited vertices outside {u,v} are complementary subsets of A.
+
+**Theorem 5 (opposite-terminal complementary-family criterion).** For an ordinary reversal-odd boundary 3-tournament on \(V\), fix distinct \(u,v\) and a color \(\varepsilon\). Put \(A=V\setminus\{u,v\}\), and define
+\[
+\mathcal R^\varepsilon_{uv}
+=\{S\subseteq A:\text{there is a vertex-simple monochromatic }\varepsilon
+\text{ tight path ending at }(u,v)
+\text{ whose vertex set is }S\cup\{u,v\}\}.
+\tag{4}
+\]
+The vacuous two-vertex path is allowed. Then the boundary tournament has a spanning tight path with at most one internal color change if and only if
+\[
+\boxed{
+\exists u\ne v,\ \varepsilon,\ S\subseteq A:
+S\in\mathcal R^\varepsilon_{uv},\quad
+A\setminus S\in\mathcal R^\varepsilon_{vu}.}
+\tag{5}
+\]
+Consequently, if the spanning one-turn conjecture fails for a coloring, then for every unordered pair \(\{u,v\}\) and both colors \(\varepsilon\),
+\[
+\boxed{
+|\mathcal R^\varepsilon_{uv}|+
+|\mathcal R^\varepsilon_{vu}|\le2^{n-2}.}\tag{6}
+\]
+
+*Proof.* The resource footprints of the two paths in (5) have original vertex sets meeting only at \(u,v\) and covering \(V\). Their terminal ordered pairs are opposite and their triple colors coincide. The opposite-terminal packing theorem in Article XI (or Theorem 2 above) joins them into a vertex-simple spanning path with at most one color change. Conversely, any such path splits at its color-change seam into two same-colored terminal arms after reversal of the suffix; for a monochromatic word take one arm to be the vacuous two-vertex path. Their outside vertex sets are complementary, proving (5). In the absence of any such witness, \(\mathcal R^\varepsilon_{uv}\) and the complement image \(\{A\setminus T:T\in\mathcal R^\varepsilon_{vu}\}\) are disjoint subsets of \(2^A\). Since complementation is a bijection, their cardinalities sum to at most \(2^{|A|}=2^{n-2}\). \(\square\)
+
+**Comparison with the cube.** In the free-matroid cube automaton, NORI1 is equivalent to a complementary pair inside one rooted color-zero reachable family \(R_x\subseteq2^{[n]}\); failure imposes \(|R_x|\le2^{n-1}\) for every root. In the boundary system the same Boolean-complement obstruction acts *between* the two opposite-terminal families \(\mathcal R^\varepsilon_{uv}\) and \(\mathcal R^\varepsilon_{vu}\). The shared proposed proof principle is therefore a **complementary reachable-flat intersection theorem** for compatible monochromatic arms, rather than an unrestricted short-cocircuit intersection theorem. The counting bounds are necessary conditions for failure, not proofs that failure is impossible.
+
+### Global antipodal graphic-flat covers and rainbow spanning-forest chambers
+
+The preceding four-sector theorem describes one monochromatic component and its opposite-colored deck image. The following characterization instead controls the **entire partition of the covering graph into monochromatic components at once**. Its hypotheses and conclusions are intrinsic to a graphic matroid, an edge-free involutive automorphism, and the corresponding partition matroid on deck edge orbits. It applies to both the cube and the ordered-pair cover of ordinary boundary 3-tournaments.
+
+Let \(G=(V,E)\) be a finite connected graph with a fixed-point-free involutive automorphism \(\tau\) acting freely on edges, and let \(M=M(G)\) be its graphic cycle matroid. For a partition \(\Pi\) of \(V\) into nonempty parts, define its graphic flat
+\[
+\boxed{
+F_\Pi=\{uv\in E:u,v\text{ lie in the same part of }\Pi\}.
+}
+\tag{1}
+\]
+This is a flat of \(M\); its rank is \(r_M(F_\Pi)=|V|-|\Pi|\). The deck image \(\tau F_\Pi\) is the flat for the partition \(\tau\Pi\).
+
+Call a forest \(T\subseteq F_\Pi\) **orbit-rainbow** if it contains at most one element from each two-element edge orbit \(\{e,\tau e\}\). Call it a **spanning forest of \(\Pi\)** if the connected components of \((V,T)\) are precisely the parts of \(\Pi\).
+
+#### 1. Global flat-cover characterization
+
+**Theorem 1 (antipodal flat-cover realization).** The partition \(\Pi\) is the partition of all vertices into color-zero connected components of some deck-odd edge coloring \(c:E(G)\to\mathbb F_2\) if and only if both conditions hold:
+\[
+\boxed{F_\Pi\cup\tau F_\Pi=E(G),}
+\tag{2}
+\]
+and
+\[
+\boxed{\text{there exists an orbit-rainbow spanning forest }T
+\text{ of }\Pi.}
+\tag{3}
+\]
+Equivalently, with \(P_\tau\) the orbit partition matroid on \(E\),
+\[
+\boxed{
+\max\{|T|:T\subseteq F_\Pi,\ 
+T\in\mathcal I(M)\cap\mathcal I(P_\tau)\}
+=r_M(F_\Pi)=|V|-|\Pi|.
+}
+\tag{4}
+\]
+
+*Proof.* Suppose \(c\) is deck-odd with red component partition \(\Pi\). Choose a spanning forest \(T\) in the red-edge subgraph. Every red edge has both endpoints in the same red component, so it belongs to \(F_\Pi\). The deck image of every blue edge is red and therefore lies in \(F_\Pi\), so every blue edge lies in \(\tau F_\Pi\). Thus \(E=F_\Pi\cup\tau F_\Pi\). The red forest \(T\) is independent in \(M\) and cannot contain both members of a deck edge orbit, since their colors are opposite; it spans all parts of \(\Pi\), proving (3).
+
+Conversely, suppose (2) and (3). For each edge orbit \(\{e,\tau e\}\), at least one member belongs to \(F_\Pi\). If the orbit meets \(T\), declare its unique tree edge red and its mate blue. Otherwise select any member of the orbit lying in \(F_\Pi\) to be red, and its mate blue. These prescriptions are consistent because \(T\) is orbit-rainbow. They define a deck-odd coloring in which **every red edge lies in** \(F_\Pi\) and **every tree edge lies among the red edges**. Therefore no red edge joins two different parts of \(\Pi\), while \(T\) red-connects each part. The red component partition is \(\Pi\). \(\square\)
+
+**Corollary 2 (all-component cut separation).** If \(\Pi\) is realizable, no graph edge simultaneously crosses a part boundary of \(\Pi\) and the corresponding boundary of \(\tau\Pi\). In other words, for every \(e=uv\),
+\[
+\boxed{
+u\not\sim_\Pi v\ \Longrightarrow\ \tau u\sim_\Pi\tau v.
+}
+\tag{5}
+\]
+Here \(\sim_\Pi\) means belonging to the same part. For a specified red component \(R\in\Pi\), this implies the disjoint cocycles \(\delta(R)\cap\tau\delta(R)=\varnothing\) of the preceding Subsection.
+
+*Proof.* Equation (2) says every edge is internal to \(\Pi\) or internal to \(\tau\Pi\). The two formulations are equivalent. If an edge leaves \(R\), it crosses \(\Pi\), so its deck image is internal to \(\Pi\), and cannot leave the corresponding deck image component. \(\square\)
+
+This is stronger organizational information than imposing antipodal boundary separation on one red component at a time: it specifies a pair of **graphic-matroid flats that cover all covering edges simultaneously**.
+
+#### 2. A global matroid-intersection cut test
+
+**Theorem 3 (refinement-partition criterion).** Given a vertex partition \(\Pi\), the orbit-rainbow forest condition (3) is equivalent to the following inequalities. For every partition \(\mathcal Q\) of \(V\) that refines \(\Pi\),
+\[
+\boxed{
+\#\bigl\{\{e,\tau e\}:
+e\in F_\Pi\text{ joins distinct parts of }\mathcal Q\bigr\}
+\ge |\mathcal Q|-|\Pi|.
+}
+\tag{6}
+\]
+Thus a proposed component partition is realizable precisely when its two antipodal graphic flats cover \(E\) and all inequalities (6) hold.
+
+*Proof.* If an orbit-rainbow spanning forest \(T\) exists, then contracting each part of \(\mathcal Q\) within its containing \(\Pi\)-part requires at least \(|\mathcal Q|-|\Pi|\) forest edges crossing \(\mathcal Q\). Those forest edges belong to different deck orbits, proving (6).
+
+For sufficiency, apply the matroid-intersection min–max theorem to the restrictions of \(M\) and \(P_\tau\) to \(F_\Pi\). For any \(A\subseteq F_\Pi\), let \(\mathcal Q\) be the partition of \(V\) into connected components of \((V,A)\). It refines \(\Pi\), with
+\[
+r_M(A)=|V|-|\mathcal Q|,\quad
+r_M(F_\Pi)=|V|-|\Pi|.
+\]
+Every edge of \(F_\Pi\) crossing \(\mathcal Q\) lies in \(F_\Pi\setminus A\). Thus (6) gives
+\[
+r_{P_\tau}(F_\Pi\setminus A)
+\ge|\mathcal Q|-|\Pi|
+=r_M(F_\Pi)-r_M(A).
+\]
+This is the matroid-intersection min–max criterion for a common independent subset of \(F_\Pi\) of size \(r_M(F_\Pi)\). Such a common independent set is the required orbit-rainbow spanning forest of \(\Pi\). \(\square\)
+
+#### 3. Boolean chambers of compatible colorings
+
+For fixed \(\Pi\) satisfying (2) and any orbit-rainbow spanning forest \(T\) of \(\Pi\), let
+\[
+\mathcal O_{\rm amb}(\Pi)
+=\{\{e,\tau e\}: e,\tau e\in F_\Pi\}
+\tag{7}
+\]
+be the set of **ambiguous edge orbits**, whose two members are both internal to red components. Let \(\mathcal O(T)\) be the edge orbits represented by \(T\).
+
+**Proposition 4 (basis chambers).** The family of all deck-odd colorings in which \(T\) is red and no red edge leaves a part of \(\Pi\) is an affine Boolean cube of dimension
+\[
+\boxed{
+|\mathcal O_{\rm amb}(\Pi)\setminus\mathcal O(T)|.
+}
+\tag{8}
+\]
+In every such coloring, each edge in \(F_\Pi\setminus\tau F_\Pi\) is **forced red**, each edge in \(\tau F_\Pi\setminus F_\Pi\) is **forced blue**, and the remaining choices occur independently on the ambiguous orbits not constrained by \(T\). Every compatible coloring with red component partition \(\Pi\) belongs to at least one of these spanning-forest chambers.
+
+*Proof.* For a deck orbit with only one member in \(F_\Pi\), that member must be red so red edges cannot leave the components; the other member is blue. For an orbit with both members in \(F_\Pi\), either orientation is permitted unless the orbit meets \(T\), in which case its tree member is forced red. The choices on distinct unconstrained orbits are independent. Each resulting coloring contains \(T\) and has red edges only in \(F_\Pi\), so its red components are the parts of \(\Pi\). Conversely, any coloring giving \(\Pi\) has a red spanning forest \(T\), belongs to the associated chamber, and meets the stated conditions. \(\square\)
+
+**Corollary 5 (a forced-edge geodesic certificate).** In the antipodal cube, suppose a realizable partition \(\Pi\) has a monochromatic antipodal geodesic using only edges from the forced-red set \(F_\Pi\setminus\tau F_\Pi\). Then **every** deck-odd coloring with red component partition \(\Pi\) satisfies NORI1.
+
+*Proof.* The edges of such a geodesic are red by Proposition 4 for every compatible coloring, so the path is a monochromatic full antipodal geodesic. \(\square\)
+
+The certificate is sufficient, not asserted to hold in every realizable partition. In particular, when \(F_\Pi=E\), the forced-red set is empty, and the certificate does not apply.
+
+#### 4. Relationship to both canonical pointed matroids
+
+In the cube, the graphic matroid is \(M(Q_n)\) and \(\tau\) is coordinate complementation. In the ordinary boundary-tournament covering, use \(M(S(K_n))\), whose edge states are reversal-paired ordered triples. Both have the same full component-partition characterization (2), (4) and the refinement cut test (6).
+
+This theorem coordinates *all* monochromatic components across the two sheets of their regular covering, beyond the Eulerian zero-turn contact graph and the local four-sector pair for a single component. It also exposes the coloring choices not fixed by component connectivity as independent ambiguous edge-orbit variables. Nevertheless, it does not alone prove the deterministic spanning-path targets. In the cube, geodesicity must still be certified by a red resource-simple antipodal path in at least one component; in the boundary model, the original-vertex graphic-resource independence and forward ordered-pair coherence remain additional requirements. The global flat-cover constraints give an intrinsic common class within which a future geodesic or one-turn selector theorem must operate.
+
+#### 5. Global cycle-rank conservation
+
+The flat-cover theorem gives a common partition-based representation; regularity imposes an additional **global graphic-matroid nullity budget** that cannot be detected inside a single component.
+
+**Theorem 6 (fixed red cycle-rank budget).** Let \(G\) be a finite \(d\)-regular graph on \(N\) vertices with a free vertex-and-edge involution \(\tau\), and let \(c\) be any deck-odd edge coloring. Let \(\Pi_c\) be its partition into color-zero connected components, including isolated vertices, with \(\kappa=|\Pi_c|\). Then the nullity of its color-zero edge set in the graphic matroid \(M(G)\) is
+\[
+\boxed{
+\dim Z(G_{\rm red})
+=|E_{\rm red}|-r_M(E_{\rm red})
+=\frac{(d-4)N}{4}+\kappa.
+}
+\tag{9}
+\]
+In particular,
+\[
+\boxed{
+\sum_{R\in\Pi_c}
+\left(|E_{\rm red}(R)|-|R|+1\right)
+=\frac{(d-4)N}{4}+\kappa.
+}
+\tag{10}
+\]
+
+*Proof.* The covering graph has \(dN/2\) edges. Since every antipodal edge orbit consists of one red and one blue edge, \(|E_{\rm red}|=dN/4\), independently of the coloring. The graphic rank of the red subgraph is \(N-\kappa\), because its connected components are the parts of \(\Pi_c\), including isolated vertices. Subtracting rank from edge count proves (9); summing the component cyclomatic numbers proves (10). \(\square\)
+
+**Corollary 7 (the two canonical budgets).** For an antipodally odd edge coloring of \(Q_n\), whose \(2^n\) vertices have degree \(n\),
+\[
+\boxed{\dim Z((Q_n)_{\rm red})=(n-4)2^{n-2}+\kappa.}
+\tag{11}
+\]
+For an ordinary reversal-odd boundary coloring on the ordered-pair covering graph \(S(K_n)\), which has \(N=n(n-1)\) vertices and degree \(d=2(n-2)\),
+\[
+\boxed{
+\dim Z((S(K_n))_{\rm red})
+=\frac{n(n-1)(n-4)}2+\kappa.
+}
+\tag{12}
+\]
+
+The budget is global: it does **not** assert that every self-antipodal red component contains a red circuit. Research-note constructions in Q4–Q6 exhibit self-antipodal components that are trees, including one with a two-unit geodesicity defect. Such tree components contribute zero to (10), forcing the total cycle-rank budget to reside elsewhere. This is a rigorous indication that a successful matroid closure argument may need to compare distinct monochromatic components and their graphic cycles through the shared antipodal flat-cover constraints, rather than optimizing only one port-loop component.
