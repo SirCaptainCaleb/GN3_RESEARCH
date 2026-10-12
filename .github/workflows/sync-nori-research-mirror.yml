@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI conjecture-section unification synthesis published; refresh from Supabase.
+# Refresh after Article XI canonical two-port line-graph curvature theorem.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
