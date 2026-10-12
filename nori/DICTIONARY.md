@@ -1,115 +1,48 @@
-## Boundary Tournaments
+## Canonical Terms
+
+antipodal: For vertices, bitwise complements within the containing cube or face. For a face, complement every fixed coordinate while retaining its free directions.
+  Note: The antipode within a face complements just that face's free coordinates.
+
+block: A member B of a stated partition of a coordinate set.
+  Note: Blocks are pairwise disjoint and cover that set.
 
 boundary 3-tournament: A function b on ordered triples of distinct vertices with b(c,b,a)=1−b(a,b,c).
   Note: No global ordering of graph edges is required.
 
-comparison digraph: The digraph on unordered pairs of a boundary 3-tournament's vertices with an arc {a,b}→{b,c} when a,b,c are distinct and b(a,b,c)=1.
+corresponding: Vertices in parallel cube faces are corresponding when their projections onto the common free-coordinate set agree.
+  Note: They may differ in the other coordinates.
 
-direction-only coloring: An ordered-three-face coloring c(F,(a,b,c))=b(a,b,c), independent of the face's fixed coordinates.
+edge-orderable: Describes a boundary 3-tournament b for which some total order of unordered vertex pairs has b(a,b,c)=1 exactly when {a,b}<{b,c}.
+  Note: Equivalently, its comparison digraph is acyclic.
 
-edge-orderable boundary tournament: A boundary 3-tournament b for which a strict total order < of unordered vertex pairs satisfies b(a,b,c)=1 if and only if {a,b}<{b,c}.
-  Note: Equivalent to acyclicity of the comparison digraph.
+equitable balancing: Let G=(L union R,E) be a bipartite multigraph. Assign to each incidence (v,e) a fixed sign s(v,e) in {-1,+1}. An equitable balancing is a choice z(e) in {-1,+1} for every edge e such that the discrepancy D(v)=|sum_{e incident to v} s(v,e)z(e)| is at most 1 at every vertex, except for explicitly permitted exceptional vertices, where D(v) is at most 2.
+  Note: For the one-sided signed balancing theorem in Article X, exceptions are permitted only on one specified side, with at most one exceptional vertex per connected component having all degrees even; components with an odd-degree vertex have no exceptions. Without such an exception allowance, all discrepancies are at most 1.
 
-monochromatic tight path: A sequence of distinct vertices whose consecutive ordered triples have one common value under a binary boundary 3-tournament coloring.
+long: A path in a cube face is long if its initial and terminal vertices are antipodal within that face.
+  Note: Longness is relative to the specified containing face and is determined by the endpoints. A long geodesic traverses each free-coordinate direction of the face exactly once.
+
+one-sided: An equitable balancing is one-sided when exceptions are allowed on only one of the two sides of its bipartite incidence graph; every vertex on the other side must satisfy D(v)<=1.
+  Note: In Article X, the exceptional side has at most one vertex of discrepancy 2 in each all-even-degree component. Either side may be designated as exceptional.
+
+ordered k-face: A k-dimensional cube face F together with an ordering pi=(i_1,...,i_k) of its k free-coordinate directions.
+  Note: No traversal starting vertex is specified by an ordered k-face.
+
+parallel: Two cube faces are parallel if their spanned direction sets are comparable by inclusion, including equality.
+  Note: Faces need not be nested as vertex sets.
+
+signed: For an incidence multigraph, assigns a sign in {-1,+1} independently to each vertex-edge incidence.
+  Note: A balancing with edge signs z_e then uses signed sums sum_(e incident to v) sigma_(v,e) z_e.
+
+splice: A joining of consecutive monochromatic segments into a geodesic, with disjoint coordinate-direction supports.
+  Note: The k-splice convention refers to at most k+1 monochromatic segments on a long geodesic.
+
+switch: A change of color between consecutive entries of an edge-color word.
+  Note: The k-switch convention means exactly k such changes on a long geodesic. 'At most k switches' allows fewer.
 
 tight path: A sequence (v_1,…,v_m) of distinct vertices such that every consecutive ordered triple is a hyperedge of the specified directed 3-uniform hypergraph.
   Note: Distinctness is in the original vertex set.
 
-## Conjectures
-
-NORI1: The k=1 case of NORI_K: binary colorings of cube edges with c(bar e)=1−c(e). The open NORI1 full-geodesic conjecture asserts that every such coloring of Q_n admits a monochromatic antipodal geodesic.
-  Note: The coloring class NORI1 and the conjecture about it are distinct.
-
-NORI2: The k=2 case of NORI_K: binary colorings of ordered two-faces (F,π) satisfying c(bar F,rev π)=1−c(F,π).
-  Note: NORI2 designates the class, not any proposed path-length or switch bound.
-
-NORI3: The k=3 instance of NORI_K: binary colorings c(F,π) of three-dimensional faces with ordered free coordinates and c(bar F,rev π)=1−c(F,π).
-  Note: NORI3 names this class, not a conjecture. The original universal assertion that some full antipodal geodesic has at most one color change was refuted in Q9. More strongly, some NORI3 colorings have no monochromatic coordinate-distinct geodesic longer than O(log n), by the two-sentinel antichain theorem valid for each fixed k≥3.
-
-## Constructions
-
-sentinel coordinate: A distinguished cube coordinate whose role in the free directions or fixed bits separates cases of a coloring construction.
-  Note: Used in the Q9 counterexample.
-
-## Cube Geometry
-
-antipodal face: The face bar F is obtained from a face F by complementing every fixed coordinate; the free-coordinate set is unchanged.
-
-antipodal geodesic: An n-edge path in Q_n from x to its bitwise complement bar x, changing each coordinate once.
-  Note: Specify its start vertex and direction order when needed.
-
-antipodal reversal of a geodesic: The map (x_0,…,x_m)↦(bar x_m,…,bar x_0).
-  Note: Reverses direction order and complements the face.
-
-color change: A position between adjacent entries of a binary color word at which the values differ.
-
-color word: The sequence of colors of consecutive ordered k-face windows along a directed cube geodesic.
-  Note: For an m-edge path, m−k+1 windows exist when m≥k.
-
-corresponding vertices: Vertices x and y in parallel faces of a cube are corresponding if they differ only in coordinates outside the shared free-coordinate set of those faces. Equivalently, their projections onto the shared free-coordinate set are equal.
-  Note: Parallel faces have the same set of free-coordinate directions; their fixed-coordinate assignments may differ in several coordinates.
-
-exterior coordinates: The coordinates fixed on a cube face, complementary to its free-coordinate directions.
-
-k-cp: A path is k-cp (color-partitioned) if its edges admit a partition into at most k consecutive subpaths such that every ordered-face window fully contained within each subpath has the same color. Windows crossing a partition boundary are unrestricted. Equivalently, it is a concatenation of at most k monochromatic subpaths. The color word of the whole path may have more than k-1 changes.
-  Note: The parameter k counts monochromatic subpaths, not color changes in the full window word. For an edge coloring, a 2-cp has at most one color change. For ordered higher-dimensional face colorings, boundary-crossing windows may contribute additional color changes. Two monochromatic geodesics from antipodal cube vertices to a common vertex always concatenate into a 2-cp antipodal geodesic, regardless of their colors.
-
-k-splice: In an edge-colored cube, a geodesic decomposed into at most k+1 consecutive monochromatic geodesic subpaths. Equivalently, an edge-colored geodesic with at most k switches.
-  Note: The concatenation itself must be a geodesic: its constituent direction supports are pairwise disjoint.
-
-k-switch: In an edge-colored cube, a geodesic whose edge-color word has exactly k changes. The phrase at most k switches permits fewer changes.
-  Note: Always refers to a geodesic in NORI usage.
-
-long path: A path in a cube face that traverses every free-coordinate direction of that face. A long geodesic traverses every free direction exactly once and joins antipodal vertices of the face.
-  Note: Longness is relative to the containing face; a general long path need not be a geodesic.
-
-ordered three-face: A three-dimensional cube face F together with an ordering of its three free directions.
-  Note: No traversal corner is distinguished.
-
-ordered-three-face antipodal coloring: A binary function c(F,π) on ordered three-faces with c(bar F,rev π)=1−c(F,π).
-  Note: The NORI3 coloring class.
-
-parallel faces: Two cube faces are parallel if the set of coordinate directions spanned by one is a subset (possibly equal) of the set of coordinate directions spanned by the other, in either order. Equivalently, their free-coordinate sets are comparable by inclusion.
-  Note: Parallelism includes equal-dimensional faces and faces with nested free-direction sets; the faces need not be nested as vertex sets.
-
-root: The first vertex of a directed cube geodesic.
-  Note: Root-dependent assertions must say whether it is prescribed.
-
-## Cube Models
-
-NORI color-change number S_3(n): S_3(n)=max_c min_P #{i:c_i(P)≠c_{i+1}(P)}, where c ranges over NORI3 colorings and P over antipodal geodesics of Q_n.
-  Note: A property of the k=3 coloring class.
-
-NORI_K: For 1≤k≤n, the class of binary colorings c(F,π) of pairs comprising a k-dimensional face F of Q_n and an ordering π of its k free coordinate directions, satisfying c(bar F,rev π)=1−c(F,π). A length-n antipodal geodesic has n−k+1 consecutive ordered k-face windows.
-  Note: NORI_K names the coloring class, not a conjecture; NORIK is synonymous. The discarded universal 2-cp assertion concerns the k=3 case. For every fixed k≥3 and n≥k+2, the two-sentinel antichain construction supplies a coloring with no monochromatic coordinate-distinct geodesic longer than 3m+3k−4, where m=min{d≥2: binom(d,floor(d/2))≥n−2}=O(log n). Its proof is preserved in the foundational Section of Article I.
-
-NORIK [alias -> NORI_K]: 
-  Note: Short spelling of NORI_K.
-
-## Foundations
-
-length-three cube geodesic: An ordered four-vertex path in Q_n crossing three distinct coordinate directions.
-  Note: A colored object is four cube vertices, not a triple of coordinate labels.
-
-## Local Geometry
-
-certified edge: A cube edge lying on at least one monochromatic four-edge geodesic for the specified ordered-three-face coloring.
-
-dead edge: A cube edge lying on no monochromatic four-edge geodesic for the specified ordered-three-face coloring.
-
-## Reachability
-
-monochromatic reachability: R(a) denotes all endpoints of monochromatic geodesics rooted at a, in either color, including a. R^x(a) restricts to length x. When a proof requires color i, write R(a;i) or R^x(a;i).
-
-## Terminology
-
-NORI conjecture [alias -> NORI3]: 
-  Note: Historical alias for the refuted unrestricted 2-cp assertion concerning NORI3; it is not synonymous with the class NORI3.
-
-NORI odd coloring: Ambiguous historical term for a coloring of directed three-edge windows rather than of ordered cube faces.
-  Note: Specify the model.
-
-## Prohibited
+## Forbidden
 
 actual [prohibited]: 
   Note: Rhetorical modifier in compositions; express the mathematical claim instead.
@@ -126,6 +59,12 @@ genuine [prohibited]:
 literally [prohibited]: 
   Note: Avoid redundant emphasis in mathematical compositions.
 
+NORI conjecture [prohibited]: 
+  Note: Ambiguous historical name for the refuted NORI3 one-switch conjecture; specify the exact statement.
+
+NORI odd coloring [prohibited]: 
+  Note: Ambiguous historical model name; specify NORI1, NORI2, NORI3 or the window model.
+
 physical [prohibited]: 
   Note: Redundant modifier in compositions; name the face, edge, or path in the definition.
 
@@ -134,3 +73,35 @@ really [prohibited]:
 
 truly [prohibited]: 
   Note: Avoid redundant emphasis in mathematical compositions.
+
+## Notation
+
+D(B,x;t): For a coordinate block B, cube vertex x and shift t, D(B,x;t)=|sum_(i in B)(-1)^(x_i xor t_i)|.
+  Note: Block imbalance; D_B(x;t) is equivalent notation. If t=0, write D(B,x).
+
+E_r(d): For binary edge coloring d of Q_m, E_r(d)={x in Q_m : f_d(x)<=r}.
+  Note: Set of terminals of long geodesics with at most r switches; closed under vertex complementation.
+
+f_d(x): Minimum number of switches among long geodesics in Q_m terminating at x, for an undirected-edge coloring d.
+  Note: Reversing the geodesic gives the equivalent minimum over geodesics rooted at x.
+
+k-splice: A long geodesic in an edge-colored cube decomposable into at most k+1 consecutive monochromatic geodesic segments, equivalently a long geodesic having at most k switches.
+  Note: Unless another path length is explicitly specified, k-splice refers to a long geodesic relative to its containing face. The constituent segments have disjoint direction supports.
+
+k-switch: A long geodesic in an edge-colored cube whose edge-color word has exactly k changes.
+  Note: Unless a different path length is explicitly specified, k-switch refers to a long geodesic relative to its containing face. At most k switches allows fewer changes.
+
+NORI1: The k=1 case of NORI_K: binary colorings of cube edges with c(bar e)=1−c(e). The open NORI1 full-geodesic conjecture asserts that every such coloring of Q_n admits a monochromatic antipodal geodesic.
+  Note: The coloring class NORI1 and the conjecture about it are distinct.
+
+NORI2: The k=2 case of NORI_K: binary colorings of ordered two-faces (F,π) satisfying c(bar F,rev π)=1−c(F,π).
+  Note: NORI2 designates the class, not any proposed path-length or switch bound.
+
+NORI3: The k=3 instance of NORI_K: binary colorings c(F,π) of three-dimensional faces with ordered free coordinates and c(bar F,rev π)=1−c(F,π).
+  Note: NORI3 names this class, not a conjecture. The original universal assertion that some full antipodal geodesic has at most one color change was refuted in Q9. More strongly, some NORI3 colorings have no monochromatic coordinate-distinct geodesic longer than O(log n), by the two-sentinel antichain theorem valid for each fixed k≥3.
+
+NORI_K: For 1≤k≤n, the class of binary colorings c(F,π) of pairs comprising a k-dimensional face F of Q_n and an ordering π of its k free coordinate directions, satisfying c(bar F,rev π)=1−c(F,π). A length-n antipodal geodesic has n−k+1 consecutive ordered k-face windows.
+  Note: NORI_K names the coloring class, not a conjecture. The discarded universal 2-cp assertion concerns the k=3 case. For every fixed k≥3 and n≥k+2, the two-sentinel antichain construction supplies a coloring with no monochromatic coordinate-distinct geodesic longer than 3m+3k−4, where m=min{d≥2: binom(d,floor(d/2))≥n−2}=O(log n). Its proof is preserved in the foundational Section of Article I.
+
+R(a): For a cube vertex a, the set of endpoints of monochromatic geodesics rooted at a, in either color; include a via the empty geodesic.
+  Note: Use R^r(a) for length r and R(a;i), R^r(a;i) when requiring color i.

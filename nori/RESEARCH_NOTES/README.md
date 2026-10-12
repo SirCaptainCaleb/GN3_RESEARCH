@@ -26,6 +26,7 @@ Find related notes using nori.notes_for(type,id), search with nori.search_notes,
 - [Exponentially sparse reachability and successful roots in NORI1](note_nori1_exponentially_sparse_reachability_20261011.md) (project:nori; active; proved)
 - [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](note_grand_structure_uniform_length_geodesics.md) (article:nori_article_ix_unification; active; open)
 - [Historical based-window rank-parity obstruction and start-only classification](note_historical_based_window_rank_parity_20261011.md) (project:nori; active; proved)
+- [Independent adjacent-face restrictions under antipodal oddness](note_b914a735e7a51f4c96d8c54a.md) (article:nori_article_x_switch_induction; active; proved)
 - [Induced reachability complexes in one fixed triangulation](note_induced_reachability_complexes_fixed_triangulation.md) (article:nori_article_ix_unification; active; proved)
 - [Induced reachability subcomplexes in one fixed cube triangulation](note_fixed_triangulation_induced_reachability_endpoint_intersection.md) (article:nori_article_ix_unification; active; proved)
 - [Linear height barrier for global ordered-pair transition ranks](note_boundary_pair_rank_linear_height_barrier.md) (article:nori_article_ix_unification; resolved; proved)

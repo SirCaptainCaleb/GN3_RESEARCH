@@ -121,6 +121,14 @@
             "research_status": "active"
         },
         {
+            "id": "corresponding_switch_crossover_and_odd_defect_cancellation",
+            "type": "subsection",
+            "title": "Corresponding-switch crossover and odd-defect cancellation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "coupled_chronological_saddle_potentials_and_checkerboard_obstructions",
             "type": "subsection",
             "title": "Coupled chronological saddle potentials and checkerboard obstructions",

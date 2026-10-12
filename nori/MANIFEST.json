@@ -1,6 +1,6 @@
 {
   "active_section_count": 5,
-  "active_subsection_count": 27,
+  "active_subsection_count": 28,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -106,9 +106,9 @@
     },
     "nori_article_x_switch_induction": {
       "composition": {
-        "body_chars": 19857,
-        "composed_through_revision": 6317,
-        "composition_version": 5,
+        "body_chars": 25548,
+        "composed_through_revision": 6321,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
@@ -122,10 +122,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T01:34:59.42709+00:00",
+  "generated_at": "2026-10-12T02:21:27.421135+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 46,
+  "research_note_count": 47,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -133,9 +133,9 @@
   "section_versions": {
     "nori_codimension_two_switch_induction": {
       "composition": {
-        "body_chars": 19782,
-        "composed_through_revision": 6316,
-        "composition_version": 5,
+        "body_chars": 25473,
+        "composed_through_revision": 6320,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
@@ -212,7 +212,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1591,
+  "snapshot_revision": 1596,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -307,6 +307,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "corresponding_switch_crossover_and_odd_defect_cancellation": {
+      "composition": {
+        "body_chars": 5687,
+        "composed_through_revision": 6319,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Generalizes Article VIII synchronized-switch splicing to arbitrary odd switch counts, with independent terminal-square alternative.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "coupled_chronological_saddle_potentials_and_checkerboard_obstructions": {
