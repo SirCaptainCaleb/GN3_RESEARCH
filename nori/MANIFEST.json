@@ -1,6 +1,6 @@
 {
-  "active_section_count": 5,
-  "active_subsection_count": 35,
+  "active_section_count": 6,
+  "active_subsection_count": 42,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -37,6 +37,14 @@
     "nori_article_x_switch_induction": [
       {
         "id": "nori_codimension_two_switch_induction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
+    ],
+    "nori_article_xi_matroidal_turn_geometry": [
+      {
+        "id": "nori_matroid_rainbow_circuit_geometry",
         "math_version": 1,
         "position": 1,
         "version": 1
@@ -91,9 +99,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 36150,
-        "composed_through_revision": 6291,
-        "composition_version": 22,
+        "body_chars": 60490,
+        "composed_through_revision": 6429,
+        "composition_version": 27,
         "frontier": {
           "current": null
         },
@@ -106,9 +114,24 @@
     },
     "nori_article_x_switch_induction": {
       "composition": {
-        "body_chars": 80048,
-        "composed_through_revision": 6371,
-        "composition_version": 18,
+        "body_chars": 107645,
+        "composed_through_revision": 6423,
+        "composition_version": 26,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 1
+    },
+    "nori_article_xi_matroidal_turn_geometry": {
+      "composition": {
+        "body_chars": 10597,
+        "composed_through_revision": 6426,
+        "composition_version": 1,
         "frontier": {
           "current": null
         },
@@ -122,7 +145,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T03:43:57.404985+00:00",
+  "generated_at": "2026-10-12T04:44:45.592178+00:00",
   "item_count": 0,
   "mirror_format": 20,
   "research_note_count": 56,
@@ -133,9 +156,9 @@
   "section_versions": {
     "nori_codimension_two_switch_induction": {
       "composition": {
-        "body_chars": 38497,
-        "composed_through_revision": 6378,
-        "composition_version": 19,
+        "body_chars": 107570,
+        "composed_through_revision": 6422,
+        "composition_version": 27,
         "frontier": {
           "current": null
         },
@@ -149,9 +172,9 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 36101,
-        "composed_through_revision": 6290,
-        "composition_version": 17,
+        "body_chars": 60441,
+        "composed_through_revision": 6428,
+        "composition_version": 22,
         "frontier": {
           "current": null
         },
@@ -178,6 +201,22 @@
       },
       "math_version": 1,
       "version": 2
+    },
+    "nori_matroid_rainbow_circuit_geometry": {
+      "composition": {
+        "body_chars": 10528,
+        "composed_through_revision": 6425,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
     },
     "nori_seven_coordinate_structure": {
       "composition": {
@@ -212,7 +251,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1651,
+  "snapshot_revision": 1702,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -276,6 +315,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "antipodal_facet_exchange_chains_through_simultaneous_square_defects": {
+      "composition": {
+        "body_chars": 6663,
+        "composed_through_revision": 6394,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
         "body_chars": 10549,
@@ -291,6 +347,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "antipodally_connected_galleries_of_simultaneous_square_defects": {
+      "composition": {
+        "body_chars": 12394,
+        "composed_through_revision": 6421,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Normalize equation cross-references",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
     "appendix_known_obstructions_to_proposed_nori_mechanisms": {
@@ -392,6 +465,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem": {
+      "composition": {
+        "body_chars": 7592,
+        "composed_through_revision": 6380,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
@@ -666,6 +756,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data": {
+      "composition": {
+        "body_chars": 7467,
+        "composed_through_revision": 6400,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
     "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests": {
       "composition": {
         "body_chars": 5766,
@@ -717,6 +824,23 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "sharp_square_derivative_deficits_and_terminal_holes_in_odd_dimensional_cubes": {
+      "composition": {
+        "body_chars": 8526,
+        "composed_through_revision": 6384,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal odd-dimensional derivative bound and its Article X terminal-hole consequence",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
     "signed_partition_balancing_and_simultaneous_one_switch_endpoints": {
       "composition": {
         "body_chars": 8800,
@@ -749,6 +873,40 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy": {
+      "composition": {
+        "body_chars": 9275,
+        "composed_through_revision": 6388,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits": {
+      "composition": {
+        "body_chars": 10470,
+        "composed_through_revision": 6424,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Relocated and extended the proved matroid representation from Article VIII; the earlier proof remains versioned in its original subsection.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "the_common_path_symmetry_problem": {

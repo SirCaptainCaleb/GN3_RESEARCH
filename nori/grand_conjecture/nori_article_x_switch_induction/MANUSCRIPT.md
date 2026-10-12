@@ -923,3 +923,317 @@ If \(M(x)\) were nonempty, choose \(p\in M(x)\subseteq H_2(d,x)\). A compressed 
 Finally, reverse that face path so it terminates at \(x\). Its final color remains \(s\), since its switch count is even. Appending either square route introduces at most two switches. If either route introduced fewer than two, a full path would have at most three and imply \(\mu(c)\le2\). Both new comparisons must therefore switch on both routes, giving (16). \(\square\)
 
 The induction conclusion is a local certificate in an arbitrary face coloring, obtained by varying the antipodal selections. The remaining configurations in (15)–(16) specify where the two-edge lift can introduce its additional switches. Excluding those configurations globally, or finding a compressed witness whose square lift has at most three switches, would complete the proposed two-switch induction.
+
+##### Sharp square-derivative deficits and terminal holes
+
+Let \(n\ge3\) be odd. For an antipodally odd coloring \(c\) of undirected edges of \(Q_n\), write \(c_i(x)\) for the color of \(\{x,x^i\}\). Then
+\[
+c_i(x^i)=c_i(x),\qquad c_i(\bar x)=1+c_i(x).
+\tag{1}
+\]
+All color arithmetic is in \(\mathbb F_2\). Write \(\mu(c)\) for the minimum switch count on a long geodesic of \(Q_n\).
+
+For distinct directions \(i,j\), each \((i,j)\)-square is indexed by a projected vertex \(z\in Q_{[n]\setminus\{i,j\}}\). Its cross-derivatives
+\[
+d_{ij}(z)=c_i(x)+c_i(x^j),\qquad
+d_{ji}(z)=c_j(x)+c_j(x^i)
+\tag{2}
+\]
+are independent of the omitted bits of \(x\). Set
+\[
+B_{ij}=\{z:(d_{ij}(z),d_{ji}(z))\ne(1,1)\},\quad
+D=\sum_{i<j}|B_{ij}|,
+\tag{3}
+\]
+\[
+Z_i=\sum_{j\ne i}|\{z:d_{ij}(z)=0\}|,\qquad
+K=\sum_{i<j}|\{z:d_{ij}(z)+d_{ji}(z)=1\}|.
+\tag{4}
+\]
+
+**Theorem 1 (sharp bound and rigidity).** Every coloring satisfying (1) in odd dimension has
+\[
+Z_i\ge2^{n-2}\ (i\in[n]),\qquad K\ge2^{n-2},\qquad
+\boxed{D\ge(n+1)2^{n-3}.}
+\tag{5}
+\]
+The final bound is sharp for every odd \(n\ge3\). Equality holds precisely for colorings
+\[
+\boxed{c_i(x)=a_i+\sum_{j\notin\{i,p(i)\}}x_j,}
+\tag{6}
+\]
+where \(a_i\in\mathbb F_2\) and the directed partner map \(p\) pairs \(n-1\) coordinates into reciprocal pairs, with the remaining coordinate \(w\) pointing to a member of one pair. Every coloring of form (6) admits a monochromatic long geodesic. Consequently,
+\[
+\boxed{\mu(c)\ge4\ \Longrightarrow\ D\ge(n+1)2^{n-3}+2.}
+\tag{7}
+\]
+
+*Proof.* Fix direction \(i\), and regard \(c_i\) as a function of the \(d=n-1\) other bits \(y\), where \(d\) is even. Put
+\[
+f_i(y)=(-1)^{c_i(y)+\sum_{j\ne i}y_j}.
+\tag{8}
+\]
+Antipodal oddness gives \(f_i(\bar y)=-f_i(y)\), so its mean is zero. The value of \(f_i\) changes along a \(j\)-edge precisely when \(d_{ij}=0\). In the Walsh expansion \(f_i=\sum_S\widehat f_i(S)\chi_S\), Parseval and the elementary directional-edge count give
+\[
+Z_i=2^{d-1}\sum_{S\ne\varnothing}|S|\widehat f_i(S)^2
+\ge2^{d-1}\sum_{S\ne\varnothing}\widehat f_i(S)^2
+=2^{n-2}.
+\tag{9}
+\]
+Equality forces Fourier degree one. Since \(f_i^2=1\), writing \(f_i=\sum_j b_j\chi_{\{j\}}\) and comparing the coefficients of \(\chi_{\{j,k\}}\) gives \(b_jb_k=0\) for distinct \(j,k\). Thus \(f_i\) is a signed coordinate character. Reversing (8), equality in (9) is equivalent to
+\[
+c_i(x)=a_i+\sum_{j\notin\{i,p(i)\}}x_j
+\quad\text{for some }p(i)\ne i.
+\tag{10}
+\]
+
+For the curvature count, fix a direction ordering \(\pi\), and reverse it through \(\binom n2\) adjacent swaps, each unordered pair of directions crossing once. At any root \(x\), the color word for the reversed order is the complemented reversal of the original word, by (1). Their color sums therefore differ by \(n=1\pmod2\). Each adjacent swap changes that sum by \(d_{ij}+d_{ji}\) at the intervening square. Hence an odd number of the squares in the swap sequence have nonzero curvature at every root. Summing over \(2^n\) roots, each square is counted four times: its swapped directions and earlier direction set are fixed, while the two square-coordinate bits of the root vary freely. Therefore \(4K\ge2^n\), proving the middle bound in (5).
+
+A square with derivative pair \((1,1)\) contributes \(0,0,0\) to the counts \((D,\sum_iZ_i,K)\). A square with \((0,0)\) contributes \((1,2,0)\); a square with \((1,0)\) or \((0,1)\) contributes \((1,1,1)\). Thus
+\[
+2D=\sum_iZ_i+K\ge(n+1)2^{n-2},
+\tag{11}
+\]
+proving the last bound in (5).
+
+Equality in (11) forces equality in (9) for every \(i\) and equality in the curvature bound. Hence (10) holds for every direction. In that case,
+\[
+d_{ij}+d_{ji}=[p(i)=j]+[p(j)=i]
+\tag{12}
+\]
+is constant over all \((i,j)\)-squares. Since \(K=2^{n-2}\), there is precisely one unordered direction pair with a nonreciprocal partner relation. The directed graph of \(p\) has one outgoing arc at each vertex; all but one arcs belong to reciprocal pairs. Its structure is therefore the paired map with one unmatched vertex described in the theorem. Conversely, that map has \(Z_i=2^{n-2}\) for all \(i\), and one direction pair of nonzero curvature, so it attains (5).
+
+We prove monochromaticity for every equality coloring, allowing arbitrary constants \(a_i\). Write the reciprocal pairs as \(\{u_r,v_r\}\), \(1\le r\le m=(n-1)/2\), with unmatched vertex \(w\). Choose a permutation of directions, with position \(t_i\) for direction \(i\), such that
+\[
+t_{u_r}+t_{v_r}=1+a_{u_r}+a_{v_r}\pmod2.
+\tag{13}
+\]
+This permutation exists by assigning the pairs successively to positions of the required parities. Among any odd number of unused positions, one parity class has one more position than the other. For a required same-parity pair, use two positions of the larger class; for a required opposite-parity pair, use one position of each class. The remaining classes again differ by one, and the final unused position is assigned to \(w\).
+
+Let \(S_i\) be the directions preceding \(i\) in this permutation and set
+\[
+\eta_i=a_i+(t_i-1)+[p(i)\in S_i].
+\tag{14}
+\]
+Equation (13) ensures \(\eta_{u_r}=\eta_{v_r}=:\eta_r\). Choose arbitrary bits \(T,q\). Prescribe the root-coordinate pair sums
+\[
+s_r=x_{u_r}+x_{v_r}=T+q+\eta_r,
+\tag{15}
+\]
+set \(x_w=T+\sum_rs_r\), and set \(x_{p(w)}=T+q+\eta_w+x_w\). Complete the remaining root bits so that all prescribed pair sums hold; the conditions are compatible since \(p(w)\) belongs to one reciprocal pair. These assignments give \(\sum_i x_i=T\). At the step traversing direction \(i\), equation (6) now yields
+\[
+c_i(x^{S_i})
+=T+x_i+x_{p(i)}+\eta_i=q
+\tag{16}
+\]
+for each paired direction by (15), and also for \(w\) by its prescribed coordinate. Thus the full path is monochromatic.
+
+Antipodal complementation preserves both cross-derivatives of every square, and pairs the projected vertices \(z,\bar z\). Since \(n-2\ge1\), those vertices differ, and \(D\) is even. Any coloring with \(\mu(c)\ge4\) lies outside the equality family by the preceding construction, giving the strict even-integer bound (7). \(\square\)
+
+**Theorem 2 (global terminal-hole obstruction).** Assume \(n\ge5\) odd. For each pair \(i<j\), consider the four codimension-two faces obtained by fixing bits \(i,j\), and project their long-geodesic terminals with at most two switches onto the common \(Q_{n-2}\). Let \(H_{ij}\) be the complement of the union of these four projected terminal sets. If \(\mu(c)\ge4\), then
+\[
+\boxed{B_{ij}\subseteq H_{ij}\quad(i<j),}
+\tag{17}
+\]
+\[
+\boxed{\sum_{i<j}|H_{ij}|\ge(n+1)2^{n-3}+2,\qquad
+\sum_{j\ne i}|H_{ij}|\ge2^{n-2}\quad(i\in[n]).}
+\tag{18}
+\]
+Furthermore, fix a direction \(i\) and identify the direction-\(i\) edges of \(Q_n\) with vertices of \(Q_{n-1}\). Along every long geodesic of this edge-position cube, an odd number of crossed edges have \(d_{ij}=0\), where \(j\) is the crossed direction. Each corresponding \((i,j)\)-square belongs to \(H_{ij}\) under projection.
+
+*Proof.* Suppose a projection \(z\) is the terminal of a long geodesic \(P\) with at most two switches in one of the four \((n-2)\)-faces. Write \(x\) for its terminal corner and \(q\) for its last color. When \(\mu(c)\ge4\), \(P\) must have two switches: appending both exterior directions to a path with at most one switch would produce at most three switches, implying \(\mu(c)\le2\) by the evenness of \(\mu(c)\). Append the two exterior directions to \(P\) in either order. Each full geodesic has at most four switches and therefore must have four. Both added comparisons must be switches. The two square edges leaving \(x\) have color \(1+q\), and the two entering its opposite corner have color \(q\). It follows that \(d_{ij}(z)=d_{ji}(z)=1\). This proves (17). The bounds (18) follow from (17), (5), (7), and the definition of \(Z_i\).
+
+For the last assertion, a long geodesic in the edge-position cube joins \(y\) to \(\bar y\) and has \(n-1\) edges. The sum of its crossed derivatives is \(c_i(y)+c_i(\bar y)=1\). Since \(n-1\) is even, an odd number of these derivatives vanish. Each vanishing derivative marks a square belonging to \(B_{ij}\subseteq H_{ij}\). \(\square\)
+
+**Corollary (a two-switch certificate).** In odd dimension \(n\ge5\), the inequality
+\[
+\sum_{i<j}|H_{ij}|\le(n+1)2^{n-3}+1
+\tag{19}
+\]
+implies \(\mu(c)\le2\).
+
+The directional constraint applies to every antipodal geodesic in each edge-position cube and couples the four-face terminal sets across all exterior direction pairs. No antipodal symmetry is assumed for the edge coloring restricted to an individual face.
+
+##### Simultaneous square defects and antipodal facet exchanges
+
+Let \(n\ge5\) be odd. Color the undirected edges of \(Q_n=\{0,1\}^n\) by bits \(c_i(x)\), where \(c_i(x)\) denotes the edge incident with \(x\) in direction \(i\), and assume
+\[
+c_i(x^i)=c_i(x),\qquad c_i(\bar x)=1+c_i(x).
+\tag{1}
+\]
+Arithmetic of colors is in \(\mathbb F_2\). For \(i\ne j\), put
+\[
+d_{ij}(x)=c_i(x)+c_i(x^j).
+\tag{2}
+\]
+This depends only on the \((i,j)\)-square containing \(x\).
+
+Triangulate each facet of the geometric cube \([0,1]^n\) by its Freudenthal (monotone-chain) simplices, consistently on intersecting facets. The resulting complex \(\mathcal T\) triangulates \(\partial[0,1]^n\cong S^{n-1}\). Its maximal simplices have as vertices the \(n\) successive corners of a geodesic traversing every free direction of one coordinate facet, starting with all its free bits zero. Call these *facet chains*. Two facet chains are adjacent if their maximal simplices share a codimension-one simplex, equivalently if their sets of \(n\) vertices share \(n-1\) vertices. Cube complementation sends each facet chain, with its order reversed, to another facet chain.
+
+For a nonempty \(I\subseteq[n]\), call a facet chain \(P=(v_0,\ldots,v_{n-1})\) **\(I\)-defect-complete** when, for every \(i\in I\), there is a step \(v_t\to v_{t+1}=v_t^j\) with \(j\ne i\) and
+\[
+d_{ij}(v_t)=0.
+\tag{3}
+\]
+Let \(\Gamma_I\) be the graph induced by these chains under the preceding adjacency.
+
+**Theorem 1 (simultaneous defect carriers).** For every nonempty \(I\subseteq[n]\) with \(|I|\le n-1\), the graph \(\Gamma_I\) has a vertex. If
+\[
+1\le |I|\le n-2,
+\tag{4}
+\]
+then \(\Gamma_I\) has a connected component preserved by cube complementation. In particular, there is a sequence
+\[
+P_0,P_1,\ldots,P_s=\bar P_0
+\tag{5}
+\]
+of \(I\)-defect-complete facet chains such that successive chains share \(n-1\) vertices. All conclusions hold for arbitrary colorings satisfying (1).
+
+*Proof.* For \(i\in[n]\) define at each cube vertex
+\[
+a_i(x)=(-1)^{\,c_i(x)+\sum_{h\ne i}x_h}.
+\tag{6}
+\]
+Since \(n-1\) is even, (1) gives \(a_i(\bar x)=-a_i(x)\). Moreover, \(a_i(x^i)=a_i(x)\), whereas for \(j\ne i\),
+\[
+a_i(x^j)=-a_i(x)\quad\Longleftrightarrow\quad d_{ij}(x)=0.
+\tag{7}
+\]
+For \(I=\{i_1,\ldots,i_r\}\), assign the vector
+\(a_I(x)=(a_{i_1}(x),\ldots,a_{i_r}(x))\in\{-1,1\}^r\)
+to the vertices of \(\mathcal T\), and extend affinely over every simplex. This defines a continuous map
+\[
+A_I:|\mathcal T|\longrightarrow\mathbb R^r,\qquad
+A_I(\bar z)=-A_I(z),
+\tag{8}
+\]
+because the Freudenthal triangulation of the cubical boundary is preserved by complementation.
+
+When \(r\le n-1\), Borsuk–Ulam applied to
+\(|\mathcal T|\cong S^{n-1}\) gives \(z\) with \(A_I(z)=0\). Choose a maximal simplex \(\sigma\) containing \(z\), and let \(P\) be its facet chain. The zero vector is a convex combination of the vectors \(a_I(v)\) at vertices of \(P\). For each \(i\in I\), both signs therefore occur among the \(a_i\)-values along \(P\). Some consecutive vertices of \(P\) have opposite \(a_i\)-values; equation (7) shows that this step has direction \(j\ne i\) and satisfies (3). Thus \(P\) belongs to \(\Gamma_I\).
+
+Assume next that \(r\le n-2\), and let \(Z=A_I^{-1}(0)\). It is a nonempty finite polyhedron with finitely many connected components, preserved as a collection by complementation. We show that some component \(W\) satisfies \(\bar W=W\). Otherwise, the components can be divided into two disjoint closed unions \(Z_+\), \(Z_-\) interchanged by complementation. With distance measured in the ambient Euclidean space, define
+\[
+g(z)=\operatorname{dist}(z,Z_-)-\operatorname{dist}(z,Z_+)
+\quad(z\in|\mathcal T|).
+\tag{9}
+\]
+Then \(g\) is continuous and odd, and \(g\ne0\) on \(Z\). The map \((A_I,g):S^{n-1}\to\mathbb R^{r+1}\) is consequently odd and nowhere zero, contrary to Borsuk–Ulam because \(r+1\le n-1\). This proves the existence of \(W\).
+
+Let \(\mathcal D\) be the graph of maximal simplices meeting \(Z\), joined across codimension-one faces. All such simplices give \(I\)-defect-complete chains by the first part of the proof. The maximal simplices containing any one point \(z\in Z\) are ridge-connected: they constitute the maximal simplices of the star of the minimal face supporting \(z\), whose link in the triangulated sphere is connected in its facet-adjacency graph. Consequently two components of \(\mathcal D\) cannot have closed unions meeting at a point of \(Z\). The connected set \(W\) therefore meets maximal simplices in a single component \(D\) of \(\mathcal D\). Since \(\bar W=W\), this component is preserved by complementation. It lies in \(\Gamma_I\); the component of \(\Gamma_I\) containing \(D\) is also preserved by complementation. Choosing any chain in it and connecting it by graph edges to its complement proves (5). \(\square\)
+
+For each \(i<j\), project the four codimension-two faces with fixed directions \(i,j\) onto the common \(Q_{n-2}\), and let \(H_{ij}\) be the complement of the union of the projected terminals of their spanning geodesics with at most two color changes.
+
+**Corollary 2 (simultaneous terminal-hole exchanges).** Suppose \(\mu(c)\ge4\). For any \(I\subseteq[n]\), \(|I|\le n-1\), there exists a facet chain \(P\) such that for every \(i\in I\), one of its steps in a direction \(j\ne i\) lies on an \((i,j)\)-square whose projection belongs to \(H_{\min(i,j),\max(i,j)}\). For \(1\le |I|\le n-2\), the graph of facet chains with this property has a complementation-invariant connected component, and consequently contains an antipodal exchange sequence as in (5).
+
+*Proof.* The terminal-hole theorem for odd-dimensional cubes gives
+\[
+d_{ij}(x)=0\quad\Longrightarrow\quad
+x|_{[n]\setminus\{i,j\}}\in H_{\min(i,j),\max(i,j)}
+\tag{10}
+\]
+under \(\mu(c)\ge4\): a square with \(d_{ij}=0\) cannot have both cross-derivatives equal to one. Each step certified by (3) therefore certifies the required terminal hole. The asserted graph contains \(\Gamma_I\), is preserved by complementation, and consequently has an invariant connected component whenever \(\Gamma_I\) does. \(\square\)
+
+The conclusion couples terminal holes for as many as \(n-1\) selected directions along one facet chain, and for \(n-2\) directions along an antipodally connected exchange family. A terminal-hole certificate specifies an excluded endpoint of a short face geodesic; it does not provide a short geodesic through that point. In particular, the theorem supplies a global connectivity constraint on the holes of a hypothetical four-switch coloring, while the corresponding-low-switch-terminal intersection required for the Article X induction remains open.
+
+##### Antipodally connected galleries of simultaneous square defects
+
+Let \(n\ge3\) be odd, and let \(c\) be a binary coloring of the undirected edges of \(Q_n\) satisfying \(c(\bar e)=1-c(e)\). Write \(c_i(x)\) for the color of the direction-\(i\) edge at \(x\), so that
+\[
+c_i(x^i)=c_i(x),\qquad c_i(\bar x)=1-c_i(x).
+\]
+For distinct \(i,j\), put \(d_{ij}(x)=c_i(x)+c_i(x^j)\) in \(\mathbb F_2\). This derivative depends only on the \((i,j)\)-square containing \(x\).
+
+Let \(T\) be the restriction to \(\partial[0,1]^n\) of the Freudenthal triangulation of the cube. Its vertices are those of \(Q_n\); its maximal simplices are the chains in coordinate facets, each encoding a geodesic traversing the \(n-1\) free directions of that facet. Complementation \(\tau(x)=\bar x\) is a simplicial involution of \(T\).
+
+Define vertex signs
+\[
+g_i(x)=(-1)^{\,c_i(x)+\sum_{j\ne i}x_j},\qquad i\in[n]. \tag{1}
+\]
+Since \(n-1\) is even,
+\[
+g_i(\bar x)=-g_i(x),\qquad g_i(x^i)=g_i(x),\qquad
+g_i(x^j)=-g_i(x)\ \Longleftrightarrow\ d_{ij}(x)=0
+\quad(j\ne i). \tag{2}
+\]
+Fix a nonempty \(I\subseteq[n]\). Call a simplex of \(T\) *\(I\)-mixed* when, for each \(i\in I\), both signs of \(g_i\) occur among its vertices. Define a graph \(\mathcal G_I\) whose vertices are the maximal \(I\)-mixed simplices of \(T\), with two joined when they share an \(I\)-mixed codimension-one face. The involution \(\tau\) acts on this graph.
+
+**Theorem 1 (connected antipodal square-defect gallery).** For every \(I\subseteq[n]\) with \(1\le |I|\le n-2\), the graph \(\mathcal G_I\) has a connected component invariant under \(\tau\). Every simplex represented by a vertex of \(\mathcal G_I\) encodes a geodesic \(P\) in a coordinate facet such that for each \(i\in I\) some step of \(P\), in a direction \(j\ne i\), lies on an \((i,j)\)-square satisfying
+\[
+d_{ij}=0. \tag{3}
+\]
+The threshold \(n-2\) cannot be replaced by \(n-1\) for arbitrary antipodally odd edge colorings.
+
+We first record the connectivity principle underlying the theorem.
+
+**Lemma 2 (connected zero component).** Let \(S^d\) have a finite antipodally invariant triangulation, and let \(F:S^d\to\mathbb R^k\) be an odd piecewise-linear map, where \(1\le k\le d-1\). Then \(F^{-1}(0)\) has a connected component invariant under the antipodal involution.
+
+*Proof.* Borsuk–Ulam makes \(Z=F^{-1}(0)\) nonempty. As the zero set of a map affine on finitely many simplices, \(Z\) is a finite polyhedron and has finitely many connected components. Suppose the involution exchanges the components in disjoint pairs. Assign the constants \(+1\) and \(-1\) to the two components in each pair. This defines a continuous odd map \(h:Z\to\{-1,1\}\). Extend \(h\) to a continuous real function \(h_0\) on \(S^d\), and replace the extension with \((h_0(x)-h_0(-x))/2\). The resulting function \(H\) is odd and agrees with \(h\) on \(Z\). The map
+\[
+x\longmapsto(F(x),H(x))\in\mathbb R^{k+1}
+\]
+is odd and nowhere zero: \(F\ne0\) off \(Z\), while \(H=\pm1\) on \(Z\). Since \(k+1\le d\), this contradicts Borsuk–Ulam. Thus some component of \(Z\) is invariant. \(\square\)
+
+*Proof of Theorem 1.* Extend the vertex functions \(g_i\), \(i\in I\), affinely across the simplices of \(T\), obtaining \(F_I:|T|\to\mathbb R^{|I|}\). Equation (2) and antipodal invariance of \(T\) make \(F_I\) continuous and odd. Since \(|T|\cong S^{n-1}\) and \(|I|\le n-2\), Lemma 2 gives a connected \(\tau\)-invariant component \(Z_0\) of \(F_I^{-1}(0)\).
+
+If \(z\in Z_0\) and \(\rho\) is the smallest simplex containing \(z\), then \(0=F_I(z)\) is a convex combination of the vectors \((g_i(v))_{i\in I}\) at vertices \(v\) of \(\rho\). Because each coordinate of each vertex vector is \(\pm1\), both signs occur on \(\rho\) for every \(i\in I\). Thus \(\rho\) and all its containing simplices are \(I\)-mixed.
+
+Consider the maximal simplices meeting \(Z_0\). The finite closed cover of the connected space \(Z_0\) by their intersections with \(Z_0\) has connected intersection graph. Whenever two of these maximal simplices share a point \(z\in Z_0\), their common face contains the smallest simplex \(\rho\) containing \(z\). The maximal simplices containing \(\rho\) form a ridge-connected gallery in the triangulated sphere. Each intermediate ridge contains \(\rho\), hence is \(I\)-mixed. Therefore the maximal simplices meeting \(Z_0\) belong to one connected component of \(\mathcal G_I\). Their collection is invariant under \(\tau\), so that component is invariant as well.
+
+For the path assertion, write the vertices of a maximal simplex as a chain \(v_0,\ldots,v_{n-1}\) with successive cube edges in the free directions of its facet. For each \(i\in I\), the signs \(g_i(v_s)\) cannot be constant. At some successive pair they differ. The traversed direction \(j\) differs from \(i\), since \(g_i\) is unchanged across direction-\(i\) edges. Equation (2) then gives \(d_{ij}=0\) on the square through that step. This proves (3).
+
+To see sharpness, for \(1\le i<n\) define
+\[
+c_i(x)=x_{i+1}+\sum_{j\ne i}x_j\pmod2,
+\]
+and put \(c_n(x)=x_1\). Each function is independent of its own direction bit and is antipodally odd because \(n\) is odd. For \(I=[n-1]\), equation (1) yields \(g_i(x)=(-1)^{x_{i+1}}\). A maximal boundary simplex is \(I\)-mixed precisely when it lies in one of the two facets \(x_1=0\) or \(x_1=1\): in these facets its vertex chain traverses every direction \(2,\ldots,n\), whereas any other facet fixes some \(x_{i+1}\). The two families have no adjacency in \(\mathcal G_I\), and complementation exchanges them. Hence no connected component is invariant. \(\square\)
+
+**Proposition 4 (one simultaneous facet chain at the next threshold).** For any \(I\subseteq[n]\) with \(|I|=n-1\), there exists a geodesic spanning a coordinate facet such that, for every \(i\in I\), one of its steps lies in a direction \(j\ne i\) on a square with \(d_{ij}=0\).
+
+*Proof.* The vertex signs \(g_i\) of (1), for \(i\in I\), extend to the odd piecewise-linear map \(F_I:S^{n-1}\to\mathbb R^{n-1}\) used above. Borsuk–Ulam supplies a zero in some maximal simplex of \(T\). On the vertex chain of that simplex, each \(g_i\) takes both signs, so (2) provides the required step. The sharpness construction in Theorem 1 shows why existence here cannot be strengthened to a connected antipodally invariant mixed-ridge gallery. \(\square\)
+
+**Corollary 3 (connected terminal-hole galleries under a four-switch obstruction).** Suppose \(n\ge5\) is odd and \(\mu(c)\ge4\). For \(i<j\), let \(H_{ij}\subseteq Q_{n-2}\) be the complement of the union of the projected terminal sets of spanning geodesics having at most two switches in the four codimension-two faces perpendicular to \(i,j\). For every \(I\subseteq[n]\) with \(|I|\le n-2\), there is a connected, antipodally invariant gallery of coordinate-facet geodesics such that every geodesic in the gallery, for each \(i\in I\), crosses some edge in direction \(j\ne i\) whose associated \((i,j)\)-square projects to a point of \(H_{ij}\).
+
+*Proof.* Under \(\mu(c)\ge4\), every square with \(d_{ij}=0\) projects into \(H_{ij}\). Indeed, if its projection were the terminal of a spanning face geodesic with at most two switches, appending the exterior directions \(i,j\) in either order would produce a full geodesic with at most four switches. The evenness of \(\mu(c)\) forces the face path to have two switches and both full completions to have four, which in turn forces both derivatives of the terminal square to equal one, a contradiction. Apply Theorem 1. \(\square\)
+
+The corollary supplies a connected antipodal carrier of simultaneously witnessed square defects. The witnesses are facet geodesics along which zero derivatives occur; their edge-color words may have arbitrarily many switches. An endpoint-coincidence conclusion would additionally require a theorem relating the connected defect gallery to the terminal sets of low-switch paths. Neither connectedness nor the zero-set theorem supplies that extraction.
+
+###### Even-character simultaneous square witnesses
+
+The preceding gallery construction extends to arbitrary even coordinate masks and to either parity of the cube dimension. Let \(n\ge3\), and let \(c_i(v)\) be the colors of an antipodally odd undirected-edge coloring of \(Q_n\). For \(i\ne j\), write \(d_{ij}(v)=c_i(v)+c_i(v^j)\) in \(\mathbb F_2\).
+
+Fix an indexed family \(\mathcal A=((i_\alpha,S_\alpha))_{\alpha=1}^r\), where \(i_\alpha\in[n]\) and \(S_\alpha\subseteq[n]\setminus\{i_\alpha\}\) has even cardinality. Repeated directions are permitted. Call a facet chain \(P=(v_0,\ldots,v_{n-1})\) a witness for \(\mathcal A\) if, for each \(\alpha\), some step \(v_t\to v_{t+1}=v_t^{j}\), with \(j\ne i_\alpha\), satisfies
+\[
+d_{i_\alpha j}(v_t)\ne \mathbf1_{\{j\in S_\alpha\}}. \tag{4}
+\]
+
+**Theorem 5 (simultaneous even-character galleries).** If \(r\le n-1\), some facet chain witnesses \(\mathcal A\). If \(r\le n-2\), the graph of witnessing facet chains, adjacent when their simplices share a codimension-one face in the Freudenthal triangulation of \(\partial[0,1]^n\), contains a connected component invariant under complementation. The bound \(r\le n-2\) for invariant connectivity is sharp, in every dimension \(n\ge3\).
+
+*Proof.* For each \(\alpha\), assign the sign
+\[
+g_\alpha(v)=(-1)^{\,c_{i_\alpha}(v)+
+                       \sum_{j\in S_\alpha}v_j}. \tag{5}
+\]
+The exponent is modulo two. Since \(c_{i_\alpha}(\bar v)=1+c_{i_\alpha}(v)\) and \(|S_\alpha|\) is even, \(g_\alpha(\bar v)=-g_\alpha(v)\). Because \(i_\alpha\notin S_\alpha\), the sign is constant along direction-\(i_\alpha\) edges. Along a direction-\(j\) edge, its sign changes precisely when
+\[
+d_{i_\alpha j}(v)+\mathbf1_{\{j\in S_\alpha\}}=1, \tag{6}
+\]
+equivalently when (4) holds.
+
+Affinely extend the \(r\) vertex signs to a map \(G:|\mathcal T|\to\mathbb R^r\) on the antipodally invariant Freudenthal triangulation \(\mathcal T\) of the cubical boundary. The map is continuous and odd. When \(r\le n-1\), Borsuk--Ulam gives \(z\in G^{-1}(0)\). Each coordinate of the vertex images is a sign. Thus every maximal simplex containing \(z\) has both signs in each coordinate. Its ordered vertex chain has a sign-changing step for each \(\alpha\), which witnesses (4) by (6).
+
+When \(r\le n-2\), Lemma 2 (connected zero component) above gives an antipodally invariant connected component of \(G^{-1}(0)\). The star-and-ridge argument in the proof of Theorem 1 carries this component into a single connected component of witnessing maximal simplices, preserved by complementation. This proves the first two assertions.
+
+For sharpness, set \(c_i(v)=v_{i+1}\) for \(i<n\), and \(c_n(v)=v_1\). This coloring is undirected-edge well defined and antipodally odd. Choose \(r=n-1\) and \((i_\alpha,S_\alpha)=(\alpha,\varnothing)\), \(\alpha=1,\ldots,n-1\). For every \(i<n\), the sole direction \(j\) in which \(d_{ij}=1\) is \(j=i+1\). A witnessing facet chain must therefore traverse every direction \(2,\ldots,n\), forcing its fixed direction to be \(1\). Witnessing chains occur in the two opposite facets \(v_1=0\) and \(v_1=1\). These facets are disjoint, so no adjacency component contains chains from both; complementation exchanges the two collections. Hence no component is invariant. \(\square\)
+
+**Corollary 6 (simultaneous derivatives of both values).** Let \(n\ge5\) be odd and \(I\subseteq[n]\) satisfy \(2|I|\le n-2\). There is an antipodally invariant connected gallery of facet-spanning geodesics in which every geodesic, for each \(i\in I\), crosses both (possibly distinct) squares with
+\[
+d_{ij}=0\quad\text{and}\quad d_{ik}=1,
+\qquad j,k\ne i. \tag{7}
+\]
+The two derivative witnesses may use different directions and positions.
+
+*Proof.* For each \(i\in I\), insert the two constraints \((i,\varnothing)\) and \((i,[n]\setminus\{i\})\) into \(\mathcal A\). Both masks have even size because \(n\) is odd. Equation (4) for the empty mask forces derivative one, while (4) for the full exterior mask forces derivative zero. Apply Theorem 5 with \(r=2|I|\). \(\square\)
+
+These simultaneous witnesses hold without restrictions on the dependence of individual edge colors. They refine the square-defect carrier theorem by including both derivative signs and repeated coordinate constraints. The gallery certifies square crossings; a low-switch geodesic still requires an additional extraction argument.

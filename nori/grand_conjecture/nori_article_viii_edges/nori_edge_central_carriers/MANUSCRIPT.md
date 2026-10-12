@@ -407,3 +407,411 @@ Whichever value \(p\) has, one of the two square routes completing \(P\) consist
 This proves (10.1). Swapping \(F\) with \(F^a\) proves (10.2), and the final claims follow because \(\mu(c)\) is even. \(\square\)
 
 **Geometric interpretation.** The terminal square has four candidate completions, two from each face. If the two completions of one path are both forced to exceed the proposed bound, their bridge-edge colors force a low-switch completion of the other. The bound is uniform in the dimension of the cube and in both face-path switch counts.
+
+
+Let \(n\ge5\), and let \(c\) color the undirected edges of \(Q_n\) with values in \(\{0,1\}\), subject to \(c(\bar e)=1-c(e)\). Write \(c_i(v)\) for the color of the edge in direction \(i\) incident with \(v\). Let \(\sigma(P)\) denote the number of color changes on a full antipodal geodesic \(P\), and put \(\mu(c)=\min_P\sigma(P)\).
+
+For \(0\le k\le n\) set \(m(k)=\min\{k,n-k\}\) and define
+\[
+\lambda_n(k)=
+\begin{cases}
+0,&m(k)=0,\\
+\dfrac{4k(n-k)(m(k)-1)}{n(n-1)(n-2)},&0<m(k)<n/2,\\
+\dfrac{4k(n-k)(m(k)-2)}{n(n-1)(n-3)},&m(k)=n/2.
+\end{cases}\tag{1}
+\]
+The last case occurs only when \(n\) is even. Set
+\[
+q_n=\left\lfloor\frac{n-1}{3}\right\rfloor,\qquad
+\Phi_n(k)=\frac{2k(n-k)}{n-1}-\frac{q_n}{2}\lambda_n(k).\tag{2}
+\]
+
+**Theorem 1 (unrestricted exchange-averaging bound).** Every antipodally odd coloring of the edges of \(Q_n\) satisfies
+\[
+\boxed{\mu(c)\le
+2\left\lfloor
+\frac{\max_{0\le k\le n}\Phi_n(k)-1}{2}
+\right\rfloor.}\tag{3}
+\]
+No restriction is imposed on the dependence of an edge color on the other coordinates.
+
+**Corollary 2 (dimension ten).** Every antipodally odd edge coloring of \(Q_{10}\) has a full antipodal geodesic with at most two changes:
+\[
+\boxed{\mu(c)\le2\qquad(n=10).}\tag{4}
+\]
+
+**Corollary 3 (linear bound in all dimensions).** Uniformly over antipodally odd edge colorings,
+\[
+\mu(c)\le \frac{28\sqrt7-40}{81}\,n+O(1)
+       =0.42075354\ldots\,n+O(1).\tag{5}
+\]
+
+The proof counts disagreements between incident edge colors and improves the resulting average by exchanging disjoint pairs of consecutive directions.
+
+**Lemma 4 (cyclic comparison identity).** Let \(P\) start at \(x\), traverse directions \(p_1,\ldots,p_n\), and have edge-color word \(w_1,\ldots,w_n\). Put \(v_s=x\oplus e_{p_1}\oplus\cdots\oplus e_{p_s}\), and for distinct \(i,j\) write \(d_{ij}(v)=[c_i(v)\ne c_j(v)]\). Define
+\[
+T(P)=\sum_{s=1}^{n-1}d_{p_s,p_{s+1}}(v_s)
+                         +d_{p_n,p_1}(v_n).\tag{6}
+\]
+Then
+\[
+T(P)=\sum_{s=1}^{n-1}[w_s\ne w_{s+1}]
+                         +[w_n\ne1-w_1]\tag{7}
+\]
+is a positive odd integer. A cyclic rotation of \(P\), with its root moved along the geodesic, has \(T(P)-1\) changes. If \(P\) is chosen uniformly among all \(2^n n!\) rooted full geodesics, and \(k_v=|\{i:c_i(v)=1\}|\), then
+\[
+\mathbb E T(P)=\frac{2}{(n-1)2^n}
+                    \sum_{v\in Q_n}k_v(n-k_v).\tag{8}
+\]
+
+*Proof.* The first \(n-1\) terms of (6) are the successive comparisons in the word of \(P\). At \(v_n=\bar x\), the incoming \(p_n\)-edge has color \(w_n\), while the \(p_1\)-edge has color \(1-w_1\), by antipodal oddness. This proves (7). The XOR of its \(n\) comparison bits is one, hence \(T(P)\) is odd.
+
+Moving the root across the first \(s\) directions and transferring those directions to the end gives the color word
+\[
+w_{s+1},\ldots,w_n,1-w_1,\ldots,1-w_s.
+\]
+Its \(n-1\) comparisons omit one of the \(n\) comparisons of (7), and the omitted position ranges over all \(n\) positions as \(s\) varies. One omitted comparison can be a change, giving \(T(P)-1\).
+
+For a uniformly rooted full geodesic, at each of the \(n\) positions in (6) the vertex is uniform in \(Q_n\), and the incident directions form a uniform ordered pair of distinct directions. At vertex \(v\), there are \(2k_v(n-k_v)\) bichromatic ordered pairs among the \(n(n-1)\) possibilities. Adding their expected contributions over \(n\) positions proves (8). \(\square\)
+
+**Lemma 5 (exchange gain from a colored vertex star).** Sample uniformly a vertex \(v\) and four distinct ordered directions \(h,i,j,\ell\). Consider a full geodesic with consecutive directions \(h,i,j,\ell\) such that its vertex after the \(h\)-step is \(v\). Let \(\Delta\) be the change in \(T\) when \(i,j\) are exchanged. Then
+\[
+\mathbb E|\Delta|\ge\frac1{2^n}\sum_{v\in Q_n}\lambda_n(k_v).\tag{9}
+\]
+
+*Proof.* Only the comparisons at the three vertices \(v,v^i\) or \(v^j\), and \(v^{ij}\) can change. Hence, with the sign convention new minus old,
+\[
+\begin{aligned}
+\Delta={}&d_{h,j}(v)-d_{h,i}(v)
++d_{j,i}(v^j)-d_{i,j}(v^i)\\
+&+d_{i,\ell}(v^{ij})-d_{j,\ell}(v^{ij}).\tag{10}
+\end{aligned}
+\]
+Fix \(v,i,j,\ell\). The last four terms are independent of \(h\). When \(c_i(v)=c_j(v)\), use the lower bound zero. Otherwise the first two terms total \(+1\) or \(-1\), with the sign determined by \(c_h(v)\).
+
+Let \(a,b\) count the directions of the two colors among the \(n-3\) remaining directions after excluding \(i,j,\ell\). For any real \(K\), the triangle inequality gives
+\[
+\frac{a|K+1|+b|K-1|}{n-3}
+\ge\frac{2\min(a,b)}{n-3}.\tag{11}
+\]
+This bounds the conditional mean of \(|\Delta|\) over \(h\).
+
+Fix \(k=k_v\), \(m=\min(k,n-k)\). The probability that uniformly chosen distinct \(i,j\) are bichromatic is \(2k(n-k)/(n(n-1))\). Conditional on this event, removal of \(i,j\) leaves color counts \(m-1,n-m-1\). Choose \(\ell\) uniformly from the other \(n-2\) directions. If \(m<n/2\), the mean of the smaller remaining color count after removal of \(\ell\) is \((m-1)(n-3)/(n-2)\). If \(m=n/2\), it is \(m-2\). Combining these quantities with (11) gives the two nonzero cases of \(\lambda_n(k)\) in (1). For \(m=0\), there are no bichromatic pairs. Average over \(v\) to obtain (9). \(\square\)
+
+*Proof of Theorem 1.* Select the \(q=q_n\) adjacent pairs of positions
+\[
+(2,3),\ (5,6),\ (8,9),\ldots,
+(2+3(q-1),3+3(q-1)).\tag{12}
+\]
+Each has a preceding and following direction. For a full geodesic \(P\), let \(\Delta_s(P)\) be the difference in \(T(P)\) caused by exchanging the directions in pair \(s\).
+
+The three consecutive comparison positions affected by each exchange are disjoint from those affected by the other exchanges in (12). Exchanging a pair also preserves the vertex and used-coordinate set following its second step. Thus the changes are additive. Choosing the exchanges independently, the least comparison count among the resulting \(2^q\) orders is
+\[
+T(P)+\sum_{s=1}^q\min\{0,\Delta_s(P)\}.\tag{13}
+\]
+Now choose \(P\) uniformly among all rooted full geodesics. Swapping either specified pair is an involution of this uniform space, so \(\mathbb E\Delta_s(P)=0\). Using \(\min(0,z)=(z-|z|)/2\), equations (8)--(9) give
+\[
+\begin{aligned}
+\mathbb E[\text{quantity in (13)}]
+&\le\frac1{2^n}\sum_v
+\left(\frac{2k_v(n-k_v)}{n-1}
+-\frac q2\lambda_n(k_v)\right)\\
+&\le \max_{0\le k\le n}\Phi_n(k).
+\end{aligned}\tag{14}
+\]
+There is therefore a modified full geodesic with \(T\) no larger than the right side. Its \(T\) is odd. Lemma 4 and the parity of \(T\) give (3). \(\square\)
+
+*Proof of Corollary 2.* For \(n=10\), \(q_n=3\) and \(\Phi_{10}(k)=\Phi_{10}(10-k)\). Substitution in (1)--(2), for \(k=0,1,2,3,4,5\), gives
+\[
+0,\quad2,\quad\frac{154}{45},\quad\frac{259}{60},
+\quad\frac{71}{15},\quad\frac{305}{63}.
+\]
+Thus \(\max_k\Phi_{10}(k)=305/63<5\). The odd positive integer \(T\) of the supplied full geodesic is at most three. A root rotation therefore gives \(\mu(c)\le2\). \(\square\)
+
+*Proof of Corollary 3.* Let \(t=\min(k,n-k)/n\in[0,1/2]\). Since \(q_n=n/3+O(1)\), equations (1)--(2) yield uniformly in \(k\)
+\[
+\frac{\Phi_n(k)}n
+=2t(1-t)-\frac23t^2(1-t)+O(n^{-1}).\tag{15}
+\]
+The polynomial is maximized on \([0,1/2]\) at \(t_*=(4-\sqrt7)/3\), with value \((28\sqrt7-40)/81\). Insert this maximum into (3). \(\square\)
+
+The inequalities constrain every admissible coloring through the degrees of the two colors at its vertices. They combine antipodal root rotation with several simultaneously available path exchanges. The ten-dimensional conclusion does not require an inductive hypothesis or a structural classification of face colorings.
+
+Let \(n\ge5\), and let \(c\) be an antipodally odd coloring of the undirected edges of \(Q_n\). Write \(c_i(v)\) for the color of the edge in direction \(i\) incident with \(v\), and set
+\[
+d_{ij}(v)=[c_i(v)\ne c_j(v)],\qquad
+k_v=\sum_i c_i(v),\qquad m_v=\min(k_v,n-k_v).
+\]
+For \(i\ne j\), put \(v^{ij}=v\oplus e_i\oplus e_j\) and define the square curvature
+\[
+\kappa_{ij}(v)=c_i(v)\oplus c_j(v^i)\oplus c_i(v^j)\oplus c_j(v).
+\tag{1}
+\]
+All sums in (1) are modulo two. Since \(c_i(v^j)=c_i(v^{ij})\) and \(c_j(v^i)=c_j(v^{ij})\), we have
+\[
+\boxed{\kappa_{ij}(v)=d_{ij}(v)\oplus d_{ij}(v^{ij}).}\tag{2}
+\]
+Thus curvature is the disagreement between the two opposite-vertex bichromatic-turn indicators of a square.
+
+Recall the functions \(\lambda_n(k)\), \(\Phi_n(k)\), and \(q_n=\lfloor(n-1)/3\rfloor\) from the preceding cyclic-turn exchange theorem. Define
+\[
+\eta_n(k)=
+\begin{cases}
+0,&\min(k,n-k)=0,\\[1mm]
+\dfrac{2(\min(k,n-k)-1)}{n-2}
++\dfrac{\mathbf1_{\{n\ {\rm even},\,k=n/2\}}}{n-3},
+&\min(k,n-k)\ge1,
+\end{cases}
+\tag{3}
+\]
+and the nonnegative curvature-weighted statistic
+\[
+\mathcal K_n(c)=
+\frac1{2^n n(n-1)}
+\sum_{v\in Q_n}\sum_{i\ne j}
+[d_{ij}(v)=1,\ d_{ij}(v^{ij})=0]\,
+\eta_n(k_v).
+\tag{4}
+\]
+
+**Theorem 1 (curvature-sensitive all-dimensional exchange bound).** Every antipodally odd edge coloring of \(Q_n\), \(n\ge5\), satisfies
+\[
+\boxed{\displaystyle
+\mu(c)\le 2\left\lfloor
+\frac{\frac1{2^n}\sum_v\Phi_n(k_v)
+-\frac{q_n}{2}\mathcal K_n(c)-1}{2}
+\right\rfloor.}
+\tag{5}
+\]
+In particular, a counterexample to \(\mu(c)\le2\) in dimension \(n\) must satisfy
+\[
+\boxed{\displaystyle
+\frac1{2^n}\sum_v\Phi_n(k_v)
+-\frac{q_n}{2}\mathcal K_n(c)\ge5.}
+\tag{6}
+\]
+The improvement over the earlier exchange bound is additive and nonnegative for every coloring, with a positive contribution whenever some curved square has a bichromatic corner at which both edge colors occur at least twice.
+
+**Proof.** For a uniformly chosen vertex \(v\) and distinct ordered directions \(h,i,j,\ell\), form the two full geodesics differing by the exchange of adjacent directions \(i,j\) inside the consecutive block \(h,i,j,\ell\), with \(v\) immediately after \(h\). Let \(\Delta\) be the change in their cyclic turn counts. Set \(w=v^{ij}\). The comparison formula established in the preceding exchange lemma is
+\[
+\Delta=d_{hj}(v)-d_{hi}(v)
++d_{ij}(v^j)-d_{ij}(v^i)
++d_{i\ell}(w)-d_{j\ell}(w).\tag{7}
+\]
+Here \(d_{ij}=d_{ji}\). The middle difference is zero if \(d_{ij}(v)=d_{ij}(w)\), and is \(+1\) or \(-1\) otherwise; this follows from the four-corner identity
+\[
+d_{ij}(v)\oplus d_{ij}(v^i)\oplus
+d_{ij}(v^j)\oplus d_{ij}(w)=0.\tag{8}
+\]
+
+There are four possibilities for \((d_{ij}(v),d_{ij}(w))\).
+
+When it equals \((0,0)\), all three differences in (7) vanish.
+
+When it equals \((1,1)\), the middle difference vanishes and each outer difference is \(+1\) or \(-1\). Fixing \(\ell\), the first difference takes these two signs as the color of \(h\) varies. There are \(n-3\) choices of \(h\), with color multiplicities \(a,b\) among these directions. The triangle inequality shows that the mean of \(|\Delta|\) over \(h\) is at least \(2\min(a,b)/(n-3)\). Averaging over \(\ell\) yields the lower bound
+\[
+g_n(k_v)=
+\begin{cases}
+\dfrac{2(m_v-1)}{n-2},&2m_v<n,\\
+\dfrac{2(m_v-2)}{n-3},&2m_v=n,
+\end{cases}\tag{9}
+\]
+provided \(d_{ij}(v)=1\).
+
+When the pair is \((1,0)\), the last difference vanishes, and the middle difference has absolute value one. The first difference has the two possible signs according to the color of \(h\). Since \(h\) is uniform among the \(n-2\) directions outside \(\{i,j\}\), the mean satisfies
+\[
+\mathbb E_{h,\ell}|\Delta|
+\ge g_n'(k_v):=\frac{2(m_v-1)}{n-2}.\tag{10}
+\]
+Thus relative to the bound (9), this case supplies the extra \(g_n'(k_v)-g_n(k_v)\), which is \(1/(n-3)\) when \(n\) is even and \(k_v=n/2\), and zero otherwise.
+
+Finally, when the pair is \((0,1)\), the first difference vanishes and the middle difference has absolute value one. The last difference, as \(\ell\) varies among the \(n-2\) remaining directions, has two possible signs. Consequently
+\[
+\mathbb E_{h,\ell}|\Delta|\ge g_n'(k_w).\tag{11}
+\]
+Averaging (11) over uniformly chosen \(v,i,j\) and replacing \(v\) by \(w=v^{ij}\) identifies its contribution with the \((1,0)\) cases, weighted by \(g_n'(k_v)\). Combining the four cases, using (9)--(11), gives
+\[
+\boxed{
+\mathbb E|\Delta|
+\ge \frac1{2^n}\sum_v\lambda_n(k_v)+\mathcal K_n(c).
+}\tag{12}
+\]
+Indeed, the first term is the mean over bichromatic ordered pairs at \(v\) of the bound \(g_n(k_v)\), and the remaining two contributions total \(2g_n'-g_n=\eta_n\) on the \((1,0)\) cases.
+
+Apply the \(q_n\) independent position-pair exchanges from the preceding theorem. Their changes in cyclic turn count are additive; each has mean zero and has the absolute-change estimate (12). As before, averaging over the initial rooted geodesic and choosing the better orientation of every exchange gives a full geodesic with odd cyclic turn count at most
+\[
+\frac1{2^n}\sum_v\Phi_n(k_v)-\frac{q_n}{2}\mathcal K_n(c).
+\]
+Cyclically rotating its coordinate order removes one changed comparison, proving (5). If \(\mu(c)>2\), then this odd turn count is at least five, yielding (6). \(\square\)
+
+**Corollary 2 (a restriction on eleven-dimensional counterexamples).** Suppose \(n=11\) and every vertex is incident with five or six edges of color one. Let
+\[
+\delta(c)=
+\frac{\#\{\text{two-dimensional faces with odd curvature}\}}
+{\binom{11}{2}2^9}.
+\tag{13}
+\]
+Then
+\[
+\boxed{
+\mu(c)\le
+2\left\lfloor\frac{58/11-(2/3)\delta(c)-1}{2}\right\rfloor.
+}\tag{14}
+\]
+In particular, \(\delta(c)>9/22\) implies \(\mu(c)\le2\). Every putative four-switch example with balanced incident-color degrees must have \(\delta(c)\le9/22\).
+
+*Proof.* At every vertex, \(\Phi_{11}(k_v)=58/11\) and \(m_v=5\), so \(\eta_{11}(k_v)=8/9\). On each odd-curvature square, precisely two of its four vertices satisfy \(d_{ij}(v)=1\) and \(d_{ij}(v^{ij})=0\). Counting both orders of \(i,j\) gives \(\mathcal K_{11}(c)=(4/9)\delta(c)\). Since \(q_{11}=3\), substitute in (5). \(\square\)
+
+The curvature statistic also obeys an independent parity law.
+
+**Theorem 3 (antipodal reversal holonomy).** Let \(P\) be any full antipodal geodesic, rooted at \(x\), with direction order \(p_1,\ldots,p_n\). Reverse this order at the same root by adjacent exchanges. If \(S_1,\ldots,S_{\binom n2}\) are the successive squares traversed by any reduced adjacent-transposition reversal, then
+\[
+\boxed{\bigoplus_{r=1}^{\binom n2}\kappa(S_r)=n\pmod2.}\tag{15}
+\]
+Consequently, in every odd dimension, every such reversal sequence encounters an odd number of curved squares. Writing \(\delta_{ij}\) for the proportion of curved squares parallel to directions \(i,j\), every admissible coloring in odd dimension satisfies
+\[
+\boxed{\sum_{i<j}\delta_{ij}\ge1,\qquad
+\delta(c):=\frac1{\binom n2}\sum_{i<j}\delta_{ij}
+\ge \frac1{\binom n2}.}\tag{16}
+\]
+The second bound is sharp even among colorings for which every vertex is incident with \((n-1)/2\) or \((n+1)/2\) edges of color one.
+
+*Proof.* Let \(w_1,\ldots,w_n\) be the edge colors along \(P\). The geodesic with reversed direction order and the same root has colors \(1-w_n,\ldots,1-w_1\), because each of its edges is antipodal to the corresponding edge of \(P\). Therefore the parity of the sum of its edge colors differs by \(n\pmod2\). Each adjacent transposition replaces a two-edge route across a square by the other two-edge route, changing this parity by the square curvature. Summing over the reversal proves (15).
+
+For odd \(n\), the number of curved squares in every reversal is odd and positive. Choose the root and the original order uniformly. Each unordered direction pair is exchanged once in the reduced reversal, and the square at which it is exchanged is uniform among the \(2^{n-2}\) squares of those directions (by translation symmetry of the sampled root). Hence the expected number of curved squares in the reversal is \(\sum_{i<j}\delta_{ij}\), proving (16).
+
+For sharpness, write \(n=2m+1\), designate the final coordinate by \(u\), and on an edge in direction \(i\) assign
+\[
+c_{2a-1}(v)=v_u,\qquad c_{2a}(v)=1-v_u
+\quad(1\le a\le m),\qquad
+c_u(v)=v_1\oplus\cdots\oplus v_{2m-1}.
+\tag{17}
+\]
+These values are independent of the coordinate being traversed, so define undirected-edge colors. All defining functions change under complementation of every coordinate, making the coloring antipodally odd. Every pair \(2a-1,2a\) contributes one edge of each color at every vertex, while direction \(u\) contributes either color; the degree condition follows. The curvature vanishes on every direction pair except \(\{2m,u\}\), and every square in that pair has curvature one. Thus \(\sum_{i<j}\delta_{ij}=1\), proving sharpness. \(\square\)
+
+Theorems 1 and 3 combine two complementary constraints on unrestricted instances: color imbalance at individual vertex stars governs the baseline cyclic turn count, while nonflat two-faces force extra exchange opportunities. The sharpness example shows that parity alone supplies only \(O(n^{-2})\) square-curvature density in odd dimension; stronger dimension-uniform conclusions require additional correlations between these local statistics.
+
+Fix \(n\ge3\), and let \(V=\{0,1\}^n\). For each vertex \(v\) and distinct coordinate directions \(i,j\), consider a symmetric binary array \(D=(d_{ij}(v))\), with \(d_{ij}(v)=d_{ji}(v)\). Write \(v^i=v\oplus e_i\) and \(\bar v=v\oplus(1,\ldots,1)\). We impose the following relations:
+\[
+\begin{array}{ll}
+\text{triangle:}&d_{ij}(v)\oplus d_{jk}(v)\oplus d_{ik}(v)=0
+\quad(i,j,k\text{ distinct}),\\
+\text{square:}&d_{ij}(v)\oplus d_{ij}(v^i)\oplus
+d_{ij}(v^j)\oplus d_{ij}(v^{ij})=0,\\
+\text{antipodal:}&d_{ij}(\bar v)=d_{ij}(v).
+\end{array}\tag{1}
+\]
+For a root \(x\) and an ordering \(\pi=(p_1,\ldots,p_n)\) of the directions, put
+\[
+v_s=x\oplus e_{p_1}\oplus\cdots\oplus e_{p_s},
+\quad v_n=\bar x,
+\]
+and define its cyclic turn sum
+\[
+\Theta_D(x,\pi)=
+\sum_{s=1}^{n-1}d_{p_s,p_{s+1}}(v_s)
++d_{p_n,p_1}(\bar x),\tag{2}
+\]
+where the sum in (2) is over the ordinary integers.
+
+**Theorem 1 (complete reconstruction from incidence disagreements).** Suppose \(D\) satisfies the triangle and square relations of (1). There is an undirected-edge coloring \(c:E(Q_n)\to\{0,1\}\) such that
+\[
+\boxed{d_{ij}(v)=c_i(v)\oplus c_j(v)
+\quad\text{for all }v,\ i\ne j,}\tag{3}
+\]
+where \(c_i(v)\) is the color of the edge in direction \(i\) incident with \(v\). The coloring is unique up to complementation of all edge colors.
+
+If \(D\) also satisfies the antipodal relation, the reconstructed coloring obeys
+\[
+c_i(\bar v)=c_i(v)\oplus\varepsilon
+\quad\text{for every }v,i,\tag{4}
+\]
+with one constant \(\varepsilon\in\{0,1\}\). Moreover
+\[
+\boxed{\Theta_D(x,\pi)\equiv\varepsilon\pmod2
+\quad\text{for every root and every ordering}.}\tag{5}
+\]
+Consequently, \(D\) arises from an antipodally odd edge coloring if and only if it satisfies all three relations of (1) and \(\Theta_D(x,\pi)\) is odd for one (equivalently every) root and ordering. For such an array, the compatible antipodally odd edge colorings are precisely a complementary pair.
+
+*Proof.* Fix a reference direction \(1\), and define vertex functions
+\[
+r_1(v)=0,\qquad r_i(v)=d_{1i}(v)\quad(i\ne1).\tag{6}
+\]
+The triangle relation implies \(r_i(v)\oplus r_j(v)=d_{ij}(v)\) for all distinct \(i,j\).
+
+For every direction \(i\), define an edge cochain
+\[
+a_i(v)=r_i(v)\oplus r_i(v^i).\tag{7}
+\]
+It has the same value at the two endpoints of an \(i\)-edge. Its sum around any square in directions \(i,j\) equals
+\[
+\begin{aligned}
+&a_i(v)\oplus a_j(v^i)\oplus a_i(v^j)\oplus a_j(v)\\
+&\qquad=d_{ij}(v)\oplus d_{ij}(v^i)
+\oplus d_{ij}(v^j)\oplus d_{ij}(v^{ij})=0.\tag{8}
+\end{aligned}
+\]
+Thus \(a\) is a gradient on the cube: a binary vertex function \(f\) exists satisfying
+\[
+f(v)\oplus f(v^i)=a_i(v)\quad\text{for every }v,i.\tag{9}
+\]
+For completeness, construct \(f(v)\) by summing \(a\) along any path from the zero vertex to \(v\). Backtracking along an edge changes the sum by zero; interchanging two consecutive different coordinate steps changes it by the square sum (8), also zero. Such operations connect any two cube walks with the same endpoints, so the definition is independent of the walk.
+
+Set
+\[
+c_i(v)=r_i(v)\oplus f(v).\tag{10}
+\]
+Equations (7) and (9) give \(c_i(v)=c_i(v^i)\), so (10) defines a coloring of undirected edges. Equation (6) and the triangle relation yield
+\(c_i(v)\oplus c_j(v)=d_{ij}(v)\), proving existence.
+
+For uniqueness, suppose \(c'\) has the same incidence disagreements. At every vertex, the values \(c_i'(v)\oplus c_i(v)\) are independent of \(i\); call this value \(b(v)\). As both colorings are constant along each edge in its direction, \(b(v)=b(v^i)\) for every \(i\), hence \(b\) is constant on the connected cube. Therefore \(c'=c\) or \(c'=1-c\).
+
+Assume now the antipodal relation of (1). At vertex \(v\),
+\[
+[c_i(\bar v)\oplus c_i(v)]\oplus
+[c_j(\bar v)\oplus c_j(v)]
+=d_{ij}(\bar v)\oplus d_{ij}(v)=0.
+\]
+So \(\varepsilon(v):=c_i(\bar v)\oplus c_i(v)\) is independent of \(i\). Evaluating at vertices \(v,v^i\), using the \(i\)-edge at each and its antipodal edge, gives \(\varepsilon(v^i)=\varepsilon(v)\). Connectivity implies one constant \(\varepsilon\), proving (4).
+
+Let \(w_1,\ldots,w_n\) be the edge-color word on the geodesic rooted at \(x\) with direction order \(\pi\). Each interior term of (2) equals \(w_s\oplus w_{s+1}\). Its final term equals \(w_n\oplus w_1\oplus\varepsilon\), because the \(p_1\)-edge at \(\bar x\) has color \(w_1\oplus\varepsilon\). The XOR of these \(n\) terms is \(\varepsilon\), proving (5). The stated criterion follows. \(\square\)
+
+**Theorem 2 (intrinsic switch-count and counterexample criterion).** Suppose \(D\) satisfies the four requirements of Theorem 1, including odd cyclic turn parity, and let \(c\) be either reconstructed coloring. Then
+\[
+\boxed{\displaystyle
+\mu(c)=\min_{x,\pi}\Theta_D(x,\pi)-1.}\tag{11}
+\]
+In particular,
+\[
+\boxed{
+\mu(c)\le2\iff
+\Theta_D(x,\pi)\le3
+\text{ for some }x,\pi,}\tag{12}
+\]
+and a hypothetical unrestricted counterexample to the two-switch bound is equivalently an array obeying (1) and oddness for which
+\[
+\boxed{\Theta_D(x,\pi)\ge5\quad
+\text{for every }x,\pi.}\tag{13}
+\]
+The values of \(\mu(c)\), the set of roots of low-switch geodesics, and their endpoint sets are determined by \(D\).
+
+*Proof.* The number of color changes on the path with root \(x\) and order \(\pi\) is
+\[
+\sigma_c(x,\pi)=\sum_{s=1}^{n-1}d_{p_s,p_{s+1}}(v_s).\tag{14}
+\]
+Thus \(\Theta_D(x,\pi)\) is \(\sigma_c(x,\pi)\) plus a binary seam comparison, and it is always odd by Theorem 1. Cyclically rotate the direction order, changing the root from \(x\) to one of the intermediate vertices along the original path. As in the cyclic comparison identity, the resulting color words are successive cyclic shifts of
+\[
+w_1,\ldots,w_n,1-w_1,\ldots,1-w_n.
+\]
+The rotations preserve \(\Theta_D\) and respectively omit each of its \(n\) seam comparisons. Since \(\Theta_D\) is odd, at least one comparison is a change, and some rotation has \(\Theta_D-1\) changes.
+
+Conversely, every geodesic has \(\sigma_c\ge\Theta_D-1\), because its seam comparison is at most one. Applying the preceding rotation to a geodesic minimizing \(\Theta_D\) proves (11). Oddness of \(\Theta_D\) yields (12)--(13). Equation (14) proves the statement about roots and endpoints. \(\square\)
+
+**Corollary 3 (size of the unrestricted class).** For \(n\ge3\), the arrays \(D\) satisfying (1) and the oddness condition constitute an affine binary space of dimension
+\[
+\boxed{n\,2^{n-2}-1.}\tag{15}
+\]
+
+*Proof.* The \(n2^{n-1}\) undirected edges of \(Q_n\) form \(n2^{n-2}\) disjoint antipodal pairs. Choosing one edge color per pair determines an antipodally odd coloring, so these colorings form an affine binary space of dimension \(n2^{n-2}\). Their passage to \(D\) is linear with a one-dimensional kernel, namely uniform global color complementation, by Theorem 1. Its image therefore has affine dimension \(n2^{n-2}-1\). \(\square\)
+
+The reconstruction identifies local consistency conditions sufficient to recover all unrestricted edge colorings up to their irrelevant global color phase. In particular, the low-switch problem may be phrased entirely in terms of antipodally even vertex-indexed incidence disagreements, subject to triangle, square and one global oddness constraint. The cyclic comparison and curvature-sensitive exchange inequalities then become inequalities intrinsic to \(D\); any low-switch terminal-alignment argument can be formulated in the same data without committing to a choice of edge-color phase.

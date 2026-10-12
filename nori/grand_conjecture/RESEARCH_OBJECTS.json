@@ -41,6 +41,22 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_xi_matroidal_turn_geometry",
+            "type": "article",
+            "title": "Article XI — Matroidal Turn Geometry and Rainbow-Circuit Exchange",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_matroid_rainbow_circuit_geometry",
+            "type": "section",
+            "title": "Antipodal turn quotients and rainbow-circuit geometry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_edge_central_carriers",
             "type": "section",
             "title": "Central edge carriers and antipodal topology",
@@ -105,9 +121,25 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_facet_exchange_chains_through_simultaneous_square_defects",
+            "type": "subsection",
+            "title": "Antipodal facet-exchange chains through simultaneous square defects",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
             "type": "subsection",
             "title": "Antipodal multifacet bridge and seven-coordinate universality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "antipodally_connected_galleries_of_simultaneous_square_defects",
+            "type": "subsection",
+            "title": "Antipodally connected galleries of simultaneous square defects",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -156,6 +188,14 @@
             "id": "coupled_chronological_saddle_potentials_and_checkerboard_obstructions",
             "type": "subsection",
             "title": "Coupled chronological saddle potentials and checkerboard obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem",
+            "type": "subsection",
+            "title": "Cyclic-turn averaging, disjoint exchanges, and the ten-dimensional two-switch theorem",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -289,6 +329,14 @@
             "research_status": "active"
         },
         {
+            "id": "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data",
+            "type": "subsection",
+            "title": "Reconstruction of antipodally odd edge colorings from local turn data",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests",
             "type": "subsection",
             "title": "Root-uniform low-switch geodesics for affine colorings supported on forests",
@@ -313,6 +361,14 @@
             "research_status": "active"
         },
         {
+            "id": "sharp_square_derivative_deficits_and_terminal_holes_in_odd_dimensional_cubes",
+            "type": "subsection",
+            "title": "Sharp square-derivative deficits and terminal holes in odd-dimensional cubes",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "signed_partition_balancing_and_simultaneous_one_switch_endpoints",
             "type": "subsection",
             "title": "Signed partition balancing and simultaneous one-switch endpoints",
@@ -324,6 +380,22 @@
             "id": "simultaneous_partition_balancing_and_low_switch_terminal_alignment",
             "type": "subsection",
             "title": "Simultaneous partition balancing and low-switch terminal alignment",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy",
+            "type": "subsection",
+            "title": "Square-curvature gain in cyclic exchange averaging and reversal holonomy",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits",
+            "type": "subsection",
+            "title": "The antipodal line-graph cover and weighted rainbow circuits",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -367,7 +439,7 @@
         "recovery": "Research database or historical Git commits",
         "article_count": 5,
         "section_count": 13,
-        "subsection_count": 46,
+        "subsection_count": 47,
         "included_in_current_artifact": false
     }
 }
