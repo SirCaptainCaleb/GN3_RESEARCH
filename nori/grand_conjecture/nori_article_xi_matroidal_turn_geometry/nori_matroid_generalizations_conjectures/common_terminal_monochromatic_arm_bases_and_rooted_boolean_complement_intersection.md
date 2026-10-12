@@ -91,3 +91,130 @@ The cube's free-resource automaton already gives rooted color-zero reachability 
 Theorem 3 now places the ordinary boundary spanning one-turn conjecture in **the identical formal rooted complement-pair template**, but on original-vertex subsets \(V\setminus\{v\}\). The resource independence of two boundary arms is captured by the parallel-extension graphic matroid \(\mathsf R_n^{(2)}\), while cube coordinate resource independence is captured by the free matroid. This removes the two-vertex seam-matching constraint from the boundary selector and makes the common open question precise: **under which shared intrinsic polarized-exchange axioms must a rooted monochromatic reachable-set family intersect its Boolean complement image?**
 
 These results are equivalences and sufficient criteria, not a proof of the required complementary intersection in every coloring.
+
+## 5. Computational obstruction to the majority shortcut
+
+The sufficient majority condition (6) is **not a universal consequence** of boundary reversal oddness. A reproducible order-eight reversal-odd coloring, stored in the research note *Eight-vertex obstruction to rooted-majority reachability*, has
+\[
+\boxed{\max_{v,\varepsilon}|\mathcal A_v^\varepsilon|=64=2^{8-2},}
+\tag{8}
+\]
+with no root-color family larger than half the Boolean lattice. Yet it has the spanning one-turn tight word
+\[
+\boxed{(0,1,3,4,5,6,2,7),}
+\tag{9}
+\]
+whose triple colors are \((0,0,0,1,1,1)\).
+
+The complete representative-bit mask, the 16 rooted family sizes, and an independent standard-library enumeration certificate are preserved in that research note. The equivalence in Theorem 3 remains valid; this finite obstruction rules out only a proof relying on **strict rooted cardinality majority**. A universal theorem must force complementary reachability by more structural means, such as a linked exchange between the two monochromatic arms or a topological/intersection property stronger than set cardinality.
+
+## 6. The rooted path-basis polynomial and an integer counting identity
+
+The same-terminal equivalence admits an all-dimensional **enumerative** refinement. It expresses the number of spanning at-most-one-turn words as a full-rank coefficient of squared monochromatic path-generating polynomials, and exposes a systematic characteristic-two cancellation in the corresponding doubled graphic-matroid basis count.
+
+For each \(v\in V\) and \(\varepsilon\in\{0,1\}\), define the ordinary commuting-variable polynomial
+\[
+\boxed{
+P_v^\varepsilon(\mathbf x)
+=\sum_{\substack{P\text{ vertex-simple }\varepsilon\text{-monochromatic}\\
+                   \text{tight word ending at }v}}
+\prod_{u\in V(P)\setminus\{v\}}x_u.
+}
+\tag{10}
+\]
+Include singleton and two-vertex words, which are vacuously monochromatic in each color. The coefficient
+\[
+a_v^\varepsilon(S)=[x_S]P_v^\varepsilon
+\]
+is the number of monochromatic rooted paths using precisely \(S\cup\{v\}\). Thus the support of \(P_v^\varepsilon\) is the rooted family \(\mathcal A_v^\varepsilon\) defined above. Let \(H_0(b)\) and \(H_1(b)\) denote the respective numbers of ordered spanning tight words having zero and precisely one internal color change.
+
+**Theorem 5 (rooted full-rank path-pair identity).** For every ordinary reversal-odd boundary coloring on \(n\ge3\) vertices,
+\[
+\boxed{
+\sum_{v\in V}\sum_{\varepsilon=0}^1
+\left[x_{V\setminus\{v\}}\right]
+\bigl(P_v^\varepsilon(\mathbf x)\bigr)^2
+=4H_0(b)+2H_1(b).
+}
+\tag{11}
+\]
+Equivalently, with \(U_v=V\setminus\{v\}\),
+\[
+\boxed{
+\sum_{v,\varepsilon}\ \sum_{S\subseteq U_v}
+a_v^\varepsilon(S)a_v^\varepsilon(U_v\setminus S)
+=4H_0(b)+2H_1(b).
+}
+\tag{12}
+\]
+
+*Proof.* Each summand on the left counts an **ordered pair** of same-colored monochromatic tight words \(P,Q\) ending at one vertex \(v\), with disjoint other-vertex sets that together exhaust \(V\). Their union is a doubled-graphic-matroid basis by Theorem 2. Theorem 1 glues the ordered pair to the spanning word \(W=P+\operatorname{reverse}(Q)\), which has at most one internal color change.
+
+Conversely, fix a spanning word \(W=(w_1,\ldots,w_n)\). A decomposition at a pivot \(v=w_j\) is forced by the word: \(P=(w_1,\ldots,w_j)\), \(Q=(w_n,\ldots,w_j)\). They have a common monochromatic color \(\varepsilon\) precisely when the prefix triples before the bridging position \(j-1\) all have color \(\varepsilon\), and the suffix triples after that bridging position all have color \(1-\varepsilon\).
+
+If \(W\) has precisely one turn between the triple windows starting at positions \(i\) and \(i+1\), then there are precisely **two** admissible pivots \(j=i+1,i+2\), each with color \(\varepsilon\) equal to the initial run color. Thus \(W\) occurs twice on the left.
+
+If \(W\) is monochromatic of color \(\eta\), two admissible pivots \(j=n-1,n\) use common arm color \(\eta\), while two pivots \(j=1,2\) use common arm color \(1-\eta\) (the short arm is vacuously monochromatic). Thus \(W\) occurs four times, including when \(n=3\), where the coincident middle pivot is counted once in each of the two different colors. Words with at least two changes admit no decomposition, since the only omitted crossing triple cannot suppress both changes. Summing multiplicities proves (11) and (12). \(\square\)
+
+**Corollary 6 (basis-polynomial positivity certificate).** The spanning one-turn conjecture for a fixed boundary coloring is equivalent to strict positivity of the coefficient sum in (11). Each nonzero contributing monomial pair is a feasible full-rank basis in the doubled graphic matroid \(\mathsf R_n^{(2)}\), with both arms constrained to be monochromatic directed tight paths.
+
+**Corollary 7 (parity cancellation).** For every \(v,\varepsilon\), and every \(n\ge2\),
+\[
+\boxed{
+\left[x_{U_v}\right](P_v^\varepsilon)^2\equiv0\pmod2.
+}
+\tag{13}
+\]
+This holds regardless of the coloring and regardless of whether any complementary arm pair exists.
+
+*Proof.* The coefficient is
+\(\sum_{S\subseteq U_v}a(S)a(U_v\setminus S)\).
+As \(U_v\ne\varnothing\), complementation has no fixed subset. Terms come in equal pairs indexed by \(S\) and \(U_v\setminus S\), so the sum is even. \(\square\)
+
+Thus a direct **modulo-two full-rank coefficient** of the symmetric two-arm basis enumerator vanishes identically and cannot certify the desired intersection. This is consistent with, but conceptually distinct from, the binary pointed-matroid cycle–cocycle orthogonality: it reflects the exchange involution swapping the two arms. A proof using algebraic counting must retain asymmetry between the arms, richer integer coefficients, or geometric information about the reachability supports. The identity itself is an integral enumerative theorem, not an existence proof.
+
+## 7. Canonical phase choice at the root and a symmetric-matrix cancellation
+
+The local tournament at a shared terminal vertex is not an additional feasibility constraint for two-arm gluing; it canonically selects **which of the two reversed Hamilton orders places the bridge on the first color run**.
+
+**Proposition 8 (unique bridge-phase orientation).** Fix \(\varepsilon,v\), and let \(P,Q\) be two distinct vertex-simple color-\(\varepsilon\) tight words ending at \(v\), with disjoint nonterminal vertex sets, and suppose both arms have length at least two. Let \(u,w\) be their penultimate vertices. Then \(u\ne w\), and precisely one of the two Hamilton orders
+\[
+\boxed{P+\operatorname{rev}(Q),\qquad Q+\operatorname{rev}(P)}
+\tag{14}
+\]
+has the joining triple of color \(\varepsilon\); the other has its joining triple of color \(1-\varepsilon\).
+
+*Proof.* The two joining triples are \((u,v,w)\) and \((w,v,u)\), whose colors are complementary by reversal oddness. All remaining triples lie in the monochromatic first arm or the reversed second arm. The claimed phase choice follows. \(\square\)
+
+Thus the orientation at a local tournament vertex is responsible for **selecting** the color-change position, but does not prevent the one-turn spanning path once the doubled-graphic-matroid basis pair exists. In particular, trying to impose a preselected junction color on *both* splicing orientations would introduce an unnecessary restriction.
+
+For nontrivial arms define terminal refined polynomials
+\[
+P_{u,v}^{\varepsilon}(\mathbf x)=
+\sum_{\substack{P\ \varepsilon\text{-monochromatic}\\
+\operatorname{last2}(P)=(u,v)}}
+\prod_{a\in V(P)\setminus\{v\}}x_a.
+\tag{15}
+\]
+They give a local matrix representation of the full-rank complementary coefficient. Write
+\(A^{\varepsilon}_v(u,w)=\mathbf1_{\{b(u,v,w)=\varepsilon\}}\) for distinct \(u,w\).
+Then
+\[
+A_v^\varepsilon(u,w)+A_v^\varepsilon(w,u)=1,
+\tag{16}
+\]
+and, because commuting polynomials multiply symmetrically,
+\[
+\boxed{
+\sum_{u\ne w}
+A_v^\varepsilon(u,w)
+P_{u,v}^{\varepsilon}P_{w,v}^{\varepsilon}
+=
+\frac12\sum_{u\ne w}
+P_{u,v}^{\varepsilon}P_{w,v}^{\varepsilon}.
+}
+\tag{17}
+\]
+All coefficients on the right are even before the division by two, by pairing \((u,w)\) and \((w,u)\). Taking the full-resource coefficient counts the unordered compatible rooted basis pairs with both arms nontrivial, each with its canonical bridge-color orientation. The remaining pairs involving a singleton arm contribute separately and correspond to monochromatic spanning paths.
+
+Equation (17) shows the **skew-symmetric part of the local tournament adjacency matrix cancels** in this symmetric two-arm enumerator. Any future parity or Pfaffian argument must break the arm-swap symmetry before summing, rather than expect the local skew part to survive a symmetric quadratic form. This reinforces the integer-vs-binary distinction in Corollary 7 and points toward asymmetric terminal-root weights or a signed **two-arm linkage invariant** as a possible algebraic route.

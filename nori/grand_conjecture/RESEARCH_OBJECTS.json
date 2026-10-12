@@ -745,6 +745,14 @@
             "research_status": "active"
         },
         {
+            "id": "random_hamiltonian_absorption_via_transversal_matroids",
+            "type": "subsection",
+            "title": "Random Hamiltonian absorption via transversal matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "random_smoothing_and_the_failure_of_global_edge_order_purification",
             "type": "subsection",
             "title": "Random smoothing and the failure of global edge-order purification",
@@ -777,6 +785,14 @@
             "research_status": "active"
         },
         {
+            "id": "rooted_hamiltonian_windows_and_sharp_random_perturbation_threshold",
+            "type": "subsection",
+            "title": "Rooted Hamiltonian windows and sharp random perturbation threshold",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "seven_coordinate_wing_factorization_and_exact_obstruction",
             "type": "subsection",
             "title": "Seven-coordinate wing factorization and exact obstruction",
@@ -788,6 +804,14 @@
             "id": "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support",
             "type": "subsection",
             "title": "Sharp logarithmic monochromatic paths under bounded exterior support",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "sharp_rootwise_random_cube_geodesics_by_singleton_block_second_moments",
+            "type": "subsection",
+            "title": "Sharp rootwise random cube geodesics by singleton-block second moments",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -905,6 +929,14 @@
             "research_status": "active"
         },
         {
+            "id": "two_color_kneser_stability_and_sharp_middle_rank_reachability_bounds",
+            "type": "subsection",
+            "title": "Two-color Kneser stability and sharp middle-rank reachability bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "two_path_connector_theorem_for_all_bipointed_cocircuit_sectors",
             "type": "subsection",
             "title": "Two-path connector theorem for all bipointed cocircuit sectors",
@@ -916,6 +948,14 @@
             "id": "two_port_sector_cogirth_and_simultaneous_intersection_selectors",
             "type": "subsection",
             "title": "Two-port sector cogirth and simultaneous intersection selectors",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_resource_hamiltonian_recognition_and_monochromatic_forest_rank",
+            "type": "subsection",
+            "title": "Two-resource Hamiltonian recognition and monochromatic forest rank",
             "version": 1,
             "superseded": false,
             "research_status": "active"

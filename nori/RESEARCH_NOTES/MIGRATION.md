@@ -24,6 +24,7 @@ Editorial retirement preserves entire proof texts in notes and original exact co
 
 ## Active Subsections with extracted negative proof blocks
 
+- [Certified seven- and eight-vertex boundary spanning one-turn closure](note_nori_xi_certified_boundary_one_turn_orders_seven_eight.md) -> common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection (source composition v2)
 - [Checkerboard-free extraction and four-local Hamilton completion limitations](note_checkerboard_submatrix_and_four_local_hamilton_completion_limits.md) -> coupled_chronological_saddle_potentials_and_checkerboard_obstructions (source composition v2)
 - [Chronological center-transitivity and parity synchronization limitations](note_chronological_local_center_parity_and_rank_potential_limitations.md) -> endpoint_tournament_factorization_and_monochromatic_orders (source composition v6)
 - [Disjoint monochromatic terminal sets for neighboring affine tree colorings](note_7917ed35754f3a1aa1845e98.md) -> root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests (source composition v3)

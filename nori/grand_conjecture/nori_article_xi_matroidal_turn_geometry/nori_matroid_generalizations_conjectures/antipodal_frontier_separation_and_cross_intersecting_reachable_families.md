@@ -64,3 +64,31 @@ These clauses are logical consequences of the original color-edge closure, antip
 *Proof.* Any satisfying assignment defines a complement-free outward color-zero-closed family \(U_x=\{S:r_{x,S}=1\}\). Apply Theorem 1 separately to each root. \(\square\)
 
 For odd \(n=2k+1\), the clause family includes disjointness constraints between all reachable \(k\)-sets. By Corollary 3 these induce the Erdős–Ko–Rado bound \( |U_{x,k}|\le\binom{2k}{k-1}\). This gives a small, intrinsic collection of resource-level constraints that can be propagated by SAT or cutting-plane solvers. No large-dimensional conclusion is inferred from solver timeouts.
+
+**Corollary 6 (Hilton–Milner stability of a hypothetical counterexample).** Suppose \(n=2k+1\) with \(k\ge2\), and suppose the antipodally odd coloring has no monochromatic antipodal geodesic. Then at every root \(x\), the middle-level reachable family
+\[
+\mathcal F_x=R_x\cap\binom{[n]}k
+\]
+obeys the following alternative:
+\[
+\boxed{
+\bigcap_{S\in\mathcal F_x}S\ne\varnothing
+\quad\text{or}\quad
+|\mathcal F_x|\le\binom{2k}{k-1}-k+1.}
+\tag{6}
+\]
+In particular, for \(Q_7\), if a counterexample had at least fourteen reachable triples at some root, all those triples would necessarily contain one common coordinate. If it had fifteen, they would form a full star on that coordinate.
+
+*Proof.* By Corollary 3, \(\mathcal F_x\) is an intersecting \(k\)-uniform family on \(2k+1\) elements. If its total intersection is empty, the classical Hilton–Milner stability theorem for nontrivial intersecting families bounds its size by
+\[
+\binom{n-1}{k-1}-\binom{n-k-1}{k-1}+1
+=\binom{2k}{k-1}-k+1.
+\]
+Otherwise it has a shared coordinate. The \(Q_7\) thresholds are \(15-3+1=13\) and the EKR maximum \(15\). \(\square\)
+
+**Prospective proof route.** The missing global step can be sharpened to a root-coupling problem: if a hypothetical counterexample has many reachable rank-\(k\) flats, their common coordinate is nearly forced. One could seek a contradiction between the resulting root-dependent central-coordinate assignments, reversal symmetry, and the composition law
+\[
+S\in R_x,\quad T\in R_{x+\mathbf1_S},\quad S\cap T=\varnothing
+\Longrightarrow S\cup T\in R_x.
+\]
+Theorem 1 and the Hilton–Milner bound are unconditional restrictions on the hypothetical counterexample, but do not establish the needed global counting lower bound.

@@ -1,6 +1,6 @@
 {
   "active_section_count": 7,
-  "active_subsection_count": 107,
+  "active_subsection_count": 112,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -135,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 622276,
-        "composed_through_revision": 7072,
-        "composition_version": 172,
+        "body_chars": 678767,
+        "composed_through_revision": 7129,
+        "composition_version": 187,
         "frontier": {
           "current": null
         },
@@ -151,10 +151,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T19:58:40.903912+00:00",
+  "generated_at": "2026-10-12T20:41:21.712568+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 98,
+  "research_note_count": 105,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +210,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 437818,
-        "composed_through_revision": 7071,
-        "composition_version": 137,
+        "body_chars": 494309,
+        "composed_through_revision": 7128,
+        "composition_version": 152,
         "frontier": {
           "current": null
         },
@@ -273,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2345,
+  "snapshot_revision": 2402,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -390,14 +390,14 @@
     },
     "antipodal_frontier_separation_and_cross_intersecting_reachable_families": {
       "composition": {
-        "body_chars": 6048,
-        "composed_through_revision": 7065,
-        "composition_version": 2,
+        "body_chars": 7782,
+        "composed_through_revision": 7073,
+        "composition_version": 3,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Near-complete monochromatic geodesic equivalence and cross-rank SAT clauses",
+        "source_note": "Hilton–Milner rigidity of middle-level reachable families and root-coupling program",
         "stale": null,
         "stale_dependencies": []
       },
@@ -627,14 +627,14 @@
     },
     "common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection": {
       "composition": {
-        "body_chars": 6738,
-        "composed_through_revision": 7070,
-        "composition_version": 1,
+        "body_chars": 15602,
+        "composed_through_revision": 7103,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Two same-color common-terminal arms characterize one-turn Hamilton paths; doubled graphic matroid basis and NORI1-aligned complement-pair reachability formulation.",
+        "source_note": "Canonical one-turn bridge-phase orientation of unordered arms and cancellation of tournament skew matrix in symmetric full-resource basis polynomial.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1645,6 +1645,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "random_hamiltonian_absorption_via_transversal_matroids": {
+      "composition": {
+        "body_chars": 6510,
+        "composed_through_revision": 7084,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Transversal-matroid insertion absorption, conditional exposures and Hall matching under independent reversal-odd noise",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "random_smoothing_and_the_failure_of_global_edge_order_purification": {
       "composition": {
         "body_chars": 11306,
@@ -1713,6 +1730,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "rooted_hamiltonian_windows_and_sharp_random_perturbation_threshold": {
+      "composition": {
+        "body_chars": 6563,
+        "composed_through_revision": 7113,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Clarified fixed-pattern versus simultaneous pattern quantifiers",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "seven_coordinate_wing_factorization_and_exact_obstruction": {
       "composition": {
         "body_chars": 16343,
@@ -1745,6 +1779,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "sharp_rootwise_random_cube_geodesics_by_singleton_block_second_moments": {
+      "composition": {
+        "body_chars": 8251,
+        "composed_through_revision": 7109,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Opposite-chain edge exclusion and prescribed-profile cube smoothing theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "sharp_square_derivative_deficits_and_terminal_holes_in_odd_dimensional_cubes": {
@@ -1985,6 +2036,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "two_color_kneser_stability_and_sharp_middle_rank_reachability_bounds": {
+      "composition": {
+        "body_chars": 6654,
+        "composed_through_revision": 7123,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp Q5 and Q7 families and complete two-orbit extremal classification",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "two_path_connector_theorem_for_all_bipointed_cocircuit_sectors": {
       "composition": {
         "body_chars": 4918,
@@ -2012,6 +2080,23 @@
         },
         "has_composition": true,
         "source_note": "Two-port sector cogirth, coloring/orientation intersection formulas, coherent directed closing criterion, and open selector conjecture.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "two_resource_hamiltonian_recognition_and_monochromatic_forest_rank": {
+      "composition": {
+        "body_chars": 17883,
+        "composed_through_revision": 7127,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "A one-for-two legal resource augmentation and factor-three switch cost comparison.",
         "stale": null,
         "stale_dependencies": []
       },

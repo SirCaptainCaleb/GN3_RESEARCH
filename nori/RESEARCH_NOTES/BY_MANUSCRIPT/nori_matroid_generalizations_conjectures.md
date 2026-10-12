@@ -7,12 +7,17 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Boundary colorings with identical component flats but different monochromatic Hamilton status](../note_nori_xi_boundary_identical_flats_different_forward_hamilton_witness.md) — active/proved
 - [Boundary Hamiltonian tight-window Smith forms: proved in all orders](../note_ed5bae5d779fba468cf28cbc.md) — active/proved
 - [Boundary n=4 tetrahedral triangle components give loop-free contact K4](../note_nori_xi_boundary_n4_no_port_loop_tetrahedral_triangles.md) — active/proved
+- [Certified seven- and eight-vertex boundary spanning one-turn closure](../note_nori_xi_certified_boundary_one_turn_orders_seven_eight.md) — active/proved
 - [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
 - [Connected boundary red covering graph and 88 port loops without a monochromatic Hamilton tight path](../note_nori_xi_boundary_n5_connected_red_cover_no_mono_hamilton.md) — active/proved
+- [Cube monochromatic rooted reachability can violate greedoid exchange](../note_nori_xi_reachability_not_a_greedoid.md) — active/computational
+- [Eight-vertex obstruction to rooted-majority reachability](../note_nori_xi_rooted_majority_fails_on_eight_vertices.md) — active/proved
 - [Equal changed-turn density need not fix stationary-child costs without a two-design](../note_nori_xi_nondesign_density_obstruction.md) — active/proved
+- [Explicit antipodally odd Q7 coloring realizes sharp 26-set middle Kneser bound at one root without rank-six reachability](../note_nori_xi_q7_kneser_extremal_root_reachability.md) — active/computational
 - [Failed two-arm local uncrossing forces an oriented four-cycle](../note_nori_xi_two_arm_uncrossing_four_cycle_failure_certificate.md) — active/proved
 - [Five-cube example: no root exceeds EKR middle-level density despite monochromatic geodesics](../note_nori_xi_middle_rank_reachability_density_not_enough.md) — active/computational
 - [Flat-graded antipodal reachability SAT checks](../note_nori_xi_flat_sat_benchmarks.md) — active/computational
+- [Forced terminal two-faces of near-full monochromatic cube geodesics](../note_nori_xi_near_full_terminal_squares.md) — active/proved
 - [Four-vertex parity boundary obstruction](../note_nori_xi_boundary_4_parity_obstruction.md) — active/proved
 - [Global exchange hexagon rank: proved affine homology theorem](../note_article_xi_hexagon_exchange_rank_deficiency_20261012.md) — active/proved
 - [Highly connected graph covers violate P4 despite large local quadratic rank](../note_nori_xi_high_connectivity_cover_p4_failure.md) — active/proved
@@ -20,6 +25,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Line-graph cover short-systole capture](../note_0631234e60332fbab139c5d3.md) — active/proved
 - [Lovasz local lemma block-random geodesic idea](../note_nori_xi_lll_block_random_geodesic_tangent.md) — active/open
 - [Monochromatic terminal reachability is accessible but not a greedoid](../note_nori_xi_monochromatic_terminal_reachability_not_greedoid.md) — active/proved
+- [Near-antipodal reachable pairs can overlap and invalidate diameter shortcut](../note_nori_xi_near_antipodal_diameter_failure.md) — active/computational
 - [Nonoptimal Hamiltonian block-reversal local minimum in a boundary tournament](../note_156a77d90f624435a83d5d6f.md) — active/proved
 - [Nonoptimal strict local minima for adjacent-swap geodesic exchange in dimensions n>=9](../note_nori_xi_strict_geodesic_exchange_trap.md) — active/proved
 - [One-turn paths need not admit monotone insertion or adjacent-swap rerouting](../note_nori_xi_one_turn_insertion_and_adjacent_swap_traps.md) — active/proved
@@ -31,6 +37,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Q6 red tree with unique antipodal pair of distance eight](../note_nori_xi_q6_single_contact_tree_defect.md) — active/proved
 - [Random smoothing forces near-spanning monochromatic tight paths](../note_491e495cff336492c0ec3f2a.md) — active/proved
 - [Random sparse comparison conflicts limit purification density](../note_107241b2b413871f8fbe6866.md) — active/proved
+- [Rooted monochromatic reachability violates delta-matroid symmetric exchange](../note_nori_xi_rooted_monochromatic_family_not_delta_matroid.md) — active/proved
 - [Short legal cocircuit with two-point intersection need not be resource-simple](../note_nori_xi_two_intersection_not_directed_resource_faithful.md) — active/proved
 - [Terminal-shell rigidity and nongeodesic antipodal component obstruction](../note_nori_xi_terminal_shell_and_component_local_non_geodesic_obstruction.md) — active/proved
 - [Three-connectivity does not force a prescribed pair into one cocircuit of a cocycle](../note_nori_xi_three_connected_matroid_two_port_cocycle_separation.md) — active/proved
