@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI: all-dimensional signed and unsigned Smith forms; parity-complete adjacent-swap lattice; global path cut constraints.
+# Article XI: three-matroid legal path model, sharp bounded-cost block reversal, and nonoptimal 2-opt plateau note.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
