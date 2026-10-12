@@ -1,5 +1,5 @@
 name: NORI | Refresh research artifact
-# Article XI cube square-exchange rigidity and Q9 proof, quantitative stability notes.
+# Research notes: linear neighboring-root gap and homogeneous signed product obstruction.
 # Canonical manuscript only; regenerate from Supabase.
 on:
   workflow_dispatch:
