@@ -1358,70 +1358,21 @@ If (ii) holds, every \(h\) assigns at that \(x\) a phase admitted by (7), and (4
 
 This characterization transfers the codimension-one reassembly theorem from Article X into the pointed matroid of Article XI. It couples a direction-deleted graphic restriction, an antipodally odd selection of joining phases, and minimum port-cocircuit intersections. The rooted criterion is unrestricted in the dimension, color dependence and choice of the deleted direction.
 
-### Flagged face-terminal completion and parallel-face exchange
+### Parallel-face port-cocircuit exchange at corresponding terminals
 
-Let \(n\ge4\), \(H_n=L(Q_n)/\langle\tau\rangle\), and let \((D_n,p)\) be the pointed dual binary matroid. Fix a binary cycle \(X\in Z(D_n)\) containing \(p\), and put \(d(t)=\mathbf1_{\{t\in X\}}\). Let
+Let \(n\ge4\), \(H_n=L(Q_n)/\langle\tau\rangle\), and let \((D_n,p)\) be the pointed binary matroid of the antipodal turn covering. Fix a port-containing binary cycle \(X\) of \(D_n\), let \(d_X(t)=\mathbf1_{\{t\in X\}}\) for turns \(t\in E(H_n)\), and put
 \[
 I(X)=\min\{|X\cap Y|:Y\in\mathcal C^*(D_n),\ p\in Y,\ |Y|=n+1\}.
 \tag{1}
 \]
-For any direction-distinct cube path \(P\) with successive edges \(e_1,\ldots,e_m\), let \(\mathscr T(P)\) be the ordered sequence of its \(m-1\) consecutive turns in \(H_n\), and set
+For a direction-distinct cube path \(P=(e_1,\ldots,e_m)\), define the integer turn weight
 \[
-r_X(P)=\sum_{t\in\mathscr T(P)}d(t).
+r_X(P)=\sum_{j=1}^{m-1}d_X(\{[e_j],[e_{j+1}]\}).
 \tag{2}
 \]
-This is its number of edge-color changes, independently of the complementary choice of cube-edge coloring reconstructed from \(X\). For two paths ending at one cube vertex \(x\), define their terminal-phase disagreement by
-\[
-\epsilon_X(P,Q)=
-\begin{cases}
-d\bigl(\{\,[e_m(P)],[e_m(Q)]\,\}\bigr),&e_m(P)\ne e_m(Q),\\
-0,&e_m(P)=e_m(Q),
-\end{cases}
-\tag{3}
-\]
-where the displayed turn is taken at their common terminal vertex. This quantity likewise depends only on \(X\).
+It equals the number of edge-color changes in \(P\) for either cube coloring recovered from \(X\). The pointed matroid formula says that the minimum switch count over all full antipodal geodesics is \(I(X)-2\). In particular, \(I(X)\) is even.
 
-**Theorem (face completion and opposite-phase certificate).** Let \(F\subset Q_n\) be a coordinate \(k\)-face with \(t=n-k\ge1\) exterior directions. Suppose \(P\subset F\) is a spanning geodesic ending at \(x\), and put \(r=r_X(P)\). Then
-\[
-\boxed{I(X)\le 2+2\left\lfloor\frac{r+t}{2}\right\rfloor.}
-\tag{4}
-\]
-If another geodesic \(Q\subset F\), spanning \(F\) and terminating at the same \(x\), satisfies \(r_X(Q)\le r\) and \(\epsilon_X(P,Q)=1\), then
-\[
-\boxed{I(X)\le2+2\left\lfloor\frac{r+t-1}{2}\right\rfloor.}
-\tag{5}
-\]
-If \(I(X)\ge r+t+2\), the labels on every turn joining two successive edges in any completion of \(P\) by all exterior directions are one. Equivalently, if the terminal edge of \(P\) has reconstructed color \(\rho\), then every exterior edge joining \(x^S\) to \(x^{S\cup\{i\}}\), for \(S\subsetneq T\), has color
-\[
-\boxed{c(x^S,x^{S\cup\{i\}})=1+\rho+|S|\pmod2.}
-\tag{6}
-\]
-Equation (6) describes an intrinsic turn condition, since complementing \(c\) and \(\rho\) simultaneously preserves every displayed equality.
-
-*Proof.* Append any permutation of the \(t\) exterior directions to \(P\), producing a full antipodal geodesic with at most \(r+t\) changes. A rooted full geodesic having \(z\) changes yields, by cyclic root rotation and the odd closing-turn parity, a rooted full geodesic with at most \(2\lfloor z/2\rfloor\) changes. The pointed-matroid identity \(I(X)=\mu+2\) proves (4).
-
-For (5), choose an exterior geodesic \(W\) beginning at \(x\). Its first-edge color agrees with the final color of either \(P\) or \(Q\), because their terminal colors are opposite by (3). Appending \(W\) to that face geodesic adds at most \(t-1\) changes, giving (5) after cyclic root rotation.
-
-Finally suppose \(I(X)\ge r+t+2\), equivalently \(\mu\ge r+t\). Every completion of \(P\) has at most \(r+t\) changes, so every one has precisely \(r+t\); in particular all \(t\) new comparisons, including the seam after the terminal edge of \(P\), are changes. For any subset \(S\) of exterior directions and \(i\notin S\), choose the completing order to traverse \(S\) first and \(i\) next. Its edge at rank \(|S|\) has color \(1+\rho+|S|\), proving (6). \(\square\)
-
-**Corollary (terminal square signatures under a port obstruction).** Suppose \(I(X)\ge6\).
-
-(a) Every spanning geodesic of any codimension-two face has \(r_X(P)\ge2\). If one has \(r_X(P)=2\) and ends at \(x\), with exterior directions \(a,b\), its exterior-square turn labels satisfy
-\[
-\boxed{
-d_{ab}([x])=d_{ab}([x^{ab}])=0,\qquad
-d_{ab}([x^a])=d_{ab}([x^b])=1.}
-\tag{7}
-\]
-Any other face-spanning geodesic at the same terminal having at most two changes has terminal-phase disagreement zero with \(P\).
-
-(b) Every spanning geodesic of any codimension-three face has at least one change. If one has precisely one change, its exterior three-cube has the rank-alternating edge colors (6), and any other path at the same terminal with at most one change has the same final phase.
-
-*Proof.* In codimension two, a path with \(r\le1\) would make the right-hand side of (4) at most four, contrary to \(I(X)\ge6\). With \(r=2\), the extremal condition \(I(X)\ge r+t+2=6\) yields (6). The two exterior edges at the original corner have equal colors, the two at the opposite corner have equal colors, and the two mixed corners see different incoming and outgoing colors. This gives (7). Different terminal phases would invoke (5) and yield \(I(X)\le4\). The proof in codimension three is identical with \(r=1,t=3\). \(\square\)
-
-The preceding certificates concern two face paths at a common terminal. A second transport law uses paths in *adjacent* codimension-two faces, even if their last colors have no prescribed relation.
-
-**Theorem (parallel-face port intersection bound).** Fix two directions \(a,b\), a codimension-two face \(F\) in which their coordinates are fixed, and its neighbor \(F^a\). Suppose \(P\subset F\) and \(Q\subset F^a\) span their faces and terminate at corresponding vertices \(x,x^a\). Put \(r=r_X(P)\), \(s=r_X(Q)\). Then
+**Theorem (parallel-face intersection bound).** Fix two directions \(a,b\), a codimension-two face \(F\) in which their coordinates are fixed, and the neighboring face \(F^a\). Suppose \(P\subset F\) and \(Q\subset F^a\) span their faces and terminate at corresponding vertices \(x,x^a\). Write \(r=r_X(P)\) and \(s=r_X(Q)\). Then
 \[
 \boxed{
 I(X)\le2+
@@ -1429,21 +1380,17 @@ I(X)\le2+
 \max\bigl(r,2\lceil s/2\rceil\bigr),\
 \max\bigl(s,2\lceil r/2\rceil\bigr)
 \right\}.}
-\tag{8}
+\tag{3}
 \]
-In particular, if \(r=0,s\le1\), then
-\[
-\boxed{I(X)=2,}
-\tag{9}
-\]
-and if \(r,s\le2\), then \(I(X)\le4\).
+Consequently, a monochromatic face-spanning path matched to a path of at most one change in the adjacent face forces \(I(X)=2\). Two matched face-spanning paths with at most two changes each force \(I(X)\le4\).
 
-*Proof.* Reconstruct an edge coloring \(c\), and write \(\rho,\sigma\) for the last edge colors of \(P,Q\). Label the four exterior square edges
+*Proof.* Recover an antipodally odd cube-edge coloring \(c\) from \(X\). Write \(\rho,\sigma\) for the final colors of \(P,Q\), respectively. Label the four edges of the exterior square at their terminals:
 \[
 A=c(xx^a),\quad B=c(xx^b),\quad
 C=c(x^ax^{ab}),\quad D=c(x^bx^{ab}).
+\tag{4}
 \]
-Completing \(P\) and \(Q\) along the two square routes gives four full antipodal geodesics with change numbers
+Completing either face path by the two possible exterior square routes gives four full antipodal geodesics with respective switch counts
 \[
 \begin{array}{ll}
 r+[\rho\ne A]+[A\ne C],&
@@ -1451,28 +1398,35 @@ r+[\rho\ne B]+[B\ne D],\\
 s+[\sigma\ne A]+[A\ne B],&
 s+[\sigma\ne C]+[C\ne D].
 \end{array}
-\tag{10}
+\tag{5}
 \]
-Each is at least \(I(X)-2\), after the parity reduction explained in the first proof. We establish
-\[
-I(X)-2\le M:=\max\{r,2\lceil s/2\rceil\},
-\tag{11}
-\]
-then interchange \(F,F^a\) for the other term in (8).
+For every rooted full geodesic with \(z\) changes, cyclic rotation of the root gives another full geodesic with at most \(2\lfloor z/2\rfloor\) changes. Indeed, when \(z\) is odd, the closing antipodal comparison has value zero, and cutting the cyclic turn word at a changed comparison removes one switch. Thus any bound for a completion in (5) yields the corresponding even bound on \(I(X)-2\).
 
-If \(r\) is even and \(M\ge r+2\), either completion of \(P\) suffices. If \(r\) is odd and \(M\ge r+1\), a completion of \(P\) has at most \(r+2\) changes and hence an even reduction of at most \(r+1\). It remains to consider \(M=r\). If \(r\) is even and both completions of \(P\) were insufficient, their two additional comparisons would have to be changes, forcing
+First prove
+\[
+I(X)-2\le M:=\max\{r,2\lceil s/2\rceil\}.
+\tag{6}
+\]
+If \(r\) is even and \(M\ge r+2\), either completion of \(P\) has at most \(r+2\le M\) changes. If \(r\) is odd and \(M\ge r+1\), either completion has at most \(r+2\) changes, which is odd; cyclic reduction gives at most \(r+1\le M\). It remains to consider \(M=r\).
+
+If \(r\) is even and both completions of \(P\) failed to yield at most \(r\) after cyclic reduction, each would introduce two new switches. Their square-edge constraints are
 \[
 A=B=1+\rho,\qquad C=D=\rho.
+\tag{7}
 \]
-One of the routes completing \(Q\) then consists of two edges in its final color \(\sigma\), producing a full path with at most \(s\le2\lceil s/2\rceil\le r\) changes, a contradiction.
+One of the two completing routes for \(Q\) then has both edges of color \(\sigma\), so it gives a full geodesic with at most \(s\le2\lceil s/2\rceil\le r\) changes, a contradiction.
 
-If \(r\) is odd, \(2\lceil s/2\rceil\le r-1\). When \(s\le r-2\), any completion of \(Q\) has at most \(r\) changes and its parity reduction gives at most \(r-1\). Otherwise \(s=r-1\), which is even. If both completions of \(Q\) were insufficient, both would add two changes, forcing
+If \(r\) is odd, \(2\lceil s/2\rceil\le r-1\). When \(s\le r-2\), any completion of \(Q\) has at most \(s+2\le r\) changes; cyclic reduction gives at most \(r-1\). The remaining case is \(s=r-1\), with \(s\) even. If both completions of \(Q\) failed to yield at most \(r-1\), they would both introduce two switches, forcing
 \[
 A=C=1+\sigma,\qquad B=D=\sigma.
+\tag{8}
 \]
-One of the routes completing \(P\) is then monochromatic in its final phase \(\rho\), giving \(r\) changes and hence at most \(r-1\) after rotation, again a contradiction. This proves (11) and therefore (8). The cases (9) and \(r,s\le2\) follow by direct substitution, using \(I(X)\ge2\). \(\square\)
+One of the two routes completing \(P\) then consists of edges of color \(\rho\), producing \(r\) switches and hence at most \(r-1\) after cyclic reduction, again a contradiction.
 
-Theorems (4)--(8) transfer codimension-two terminal methods to the cycle–cocircuit problem with only two additional pieces of combinatorial data: the selected partial paths and their endpoints. All switch counts and relative terminal phases are read from the port-cycle incidence vector, and every conclusion bounds intersection with a minimum port cocircuit. The need for *jointly witnessed terminals* is retained; it cannot be replaced by intersections of unmarked support sets.
+This proves (6). Interchanging \(F\) and \(F^a\) proves
+\(I(X)-2\le\max\{s,2\lceil r/2\rceil\}\). Taking the smaller bound proves (3). Substituting \((r,s)=(0,0),(0,1)\), or \(r,s\le2\), proves the consequences. \(\square\)
+
+The theorem uses two marked face paths with **corresponding terminal vertices**, an additional geometric condition on top of their individual turn weights. It adds an inter-face intersection certificate to the single-face completion and exterior-star rigidity theorems. Both paths, their turns, and the matching of their terminals can be read from the direction-labeled cube covering, while their switch counts are simply incidences with the port cycle \(X\).
 
 ### Equivariant square-derivative galleries for arbitrary port cycles
 
@@ -1624,3 +1578,361 @@ The same argument, interchanging \(P,Q\), proves (ii). If both conclusions were 
 *Proof.* The first assertion is the contrapositive of Theorem 2. The second is the last assertion of Theorem 3. \(\square\)
 
 The transport \(\rho_X\) is a cocycle primitive on the lifted line graph. It expresses the phase information needed in the adjacent-face splicing theorems of Article VIII directly through the binary cycle \(X\). Theorems 2--3 give checkable geometric certificates forcing a shortest port cocircuit \(Y\) with \(|X\cap Y|=2\), the monochromatic intersection target.
+
+### Reversal-odd boundary tournaments as pointed turn matroids
+
+Let \(V\) be a set of \(n\ge5\) vertices. An ordinary boundary 3-tournament is a function
+\[
+b:V_{\neq}^{3}\longrightarrow\mathbb F_2,\qquad
+b(c,b_0,a)=1+b(a,b_0,c),
+\tag{1}
+\]
+where \(V_{\neq}^{3}\) is the set of triples with pairwise distinct entries; \(b_0\) denotes the middle entry, to distinguish it from the function \(b\). The long-path witness is an injective word \(v_1,\ldots,v_m\) for which all \(m-2\) triple values \(b(v_i,v_{i+1},v_{i+2})\) agree.
+
+**Proposition 1 (line-graph orientation).** Boundary 3-tournaments on \(V\) are in bijection with orientations of the ordinary line graph \(L(K_V)\). The edge between \(\{a,b_0\}\) and \(\{b_0,c\}\) is directed from the former to the latter precisely when \(b(a,b_0,c)=0\). A positive tight path corresponds to a directed walk through the successive vertices
+\[
+\{v_1,v_2\},\{v_2,v_3\},\ldots,\{v_{m-1},v_m\}
+\tag{2}
+\]
+of \(L(K_V)\), with consecutive incidences alternating endpoints of their common \(K_V\)-edge and with the symbols \(v_i\) pairwise distinct.
+
+*Proof.* Every edge of \(L(K_V)\) has a unique middle vertex \(b_0\) of \(K_V\), and is represented by a reversal pair \((a,b_0,c),(c,b_0,a)\). Equation (1) chooses one of the two orientations. Conversely every orientation makes this choice and defines the reversal-odd function. In (2), consecutive edges of \(L(K_V)\) represent the triples \((v_i,v_{i+1},v_{i+2})\). A zero value means the traversal follows the prescribed orientation. The incidence and injectivity conditions are precisely the conditions that this walk comes from an injective word of original vertices. \(\square\)
+
+Define the **triple-overlap graph** \(\widetilde T_V\) to have vertex set \(V_{\neq}^3\), with an undirected edge between
+\[
+(a,b_0,c)\quad\text{and}\quad(b_0,c,d)
+\tag{3}
+\]
+whenever \(a,b_0,c,d\) are pairwise distinct. Reversal \(J(a,b_0,c)=(c,b_0,a)\) is a fixed-point-free involution of \(\widetilde T_V\), and it maps the edge in (3) to the edge between \((d,c,b_0)\) and \((c,b_0,a)\). Put
+\[
+T_V=\widetilde T_V/\langle J\rangle,\qquad
+\pi:\widetilde T_V\longrightarrow T_V.
+\tag{4}
+\]
+
+**Lemma 2 (connected double cover).** For \(n\ge5\), \(\widetilde T_V\) and \(T_V\) are connected, and \(\pi\) is a regular two-sheeted graph covering. Their orders are
+\[
+|V(T_V)|=\frac{(n)_3}{2},\qquad
+|E(T_V)|=\frac{(n)_4}{2},\qquad
+\deg_{T_V}(x)=2(n-3),
+\tag{5}
+\]
+where \((n)_r=n(n-1)\cdots(n-r+1)\).
+
+*Proof.* A triple \((a,b_0,c)\) has \(n-3\) neighbors of the form \((b_0,c,d)\) and \(n-3\) of the form \((d,a,b_0)\). These are distinct, and no pair consists of reversals of one another: the middle two symbols of the starting triple are distinct. Thus the free involution also acts freely on edges and gives a graph covering; counting vertices and edges gives (5).
+
+For connectivity, fix the middle symbol \(b_0\). Any first entry \(a\) can be changed to \(e\notin\{b_0,c\}\) through
+\[
+(a,b_0,c)\ --\ (b_0,c,d)\ --\ (e,b_0,c),
+\tag{6}
+\]
+choosing \(d\notin\{a,b_0,c,e\}\), possible because \(n\ge5\). A symmetrical two-step walk changes the last entry while fixing the first and middle entries. These operations connect all ordered triples having the same middle symbol: the graph of ordered pairs of distinct elements of \(V\setminus\{b_0\}\), with changes of one entry, is connected. Finally (3) changes the middle symbol from \(b_0\) to any chosen \(c\ne b_0\) by selecting \(a,d\) distinct from the two. Hence \(\widetilde T_V\) is connected. \(\square\)
+
+Let \(\alpha:Z_1(T_V;\mathbb F_2)\to\mathbb F_2\) denote the covering-monodromy functional: a closed walk has \(\alpha=0\) when its lift closes, and \(\alpha=1\) when its lift ends at the reversed triple. Choose any binary edge cochain \(a\in C^1(T_V;\mathbb F_2)\) representing \(\alpha\). Let \(B\) be the binary vertex-edge incidence matrix of \(T_V\), and introduce a distinguished element \(p\). Set
+\[
+\widehat A_V=
+\begin{pmatrix}B&0\\a&1\end{pmatrix},
+\qquad D_V^{\mathrm{BT}}=M(\widehat A_V)^*.
+\tag{7}
+\]
+The pointed binary matroid depends only on \(V\) and the overlap/reversal structure, independently of a tournament coloring.
+
+**Theorem 3 (boundary tournament–port-cycle correspondence).** A boundary tournament \(b\) defines a turn cochain on \(T_V\) by
+\[
+d_b(\pi\{t,s\})=b(t)+b(s).
+\tag{8}
+\]
+It obeys
+\[
+\boxed{d_b=a+\delta f,\qquad f\in C^0(T_V;\mathbb F_2),}
+\tag{9}
+\]
+and the binary cycles of \(D_V^{\mathrm{BT}}\) containing \(p\) are precisely
+\[
+\boxed{X_b=\operatorname{supp}(d_b)\cup\{p\}.}
+\tag{10}
+\]
+Every port-containing binary cycle of \(D_V^{\mathrm{BT}}\) is of this form. The two boundary tournaments inducing a given port cycle are complementary: \(b\) and \(1+b\). Furthermore,
+\[
+\boxed{
+\mathcal C^*(D_V^{\mathrm{BT}})\cap\{Y:p\in Y\}
+=\{\,C\cup\{p\}: C\subseteq T_V\text{ a simple cycle with }\alpha(C)=1\,\}.
+}
+\tag{11}
+\]
+For such a cocircuit and a port cycle,
+\[
+\boxed{|X_b\cap(C\cup\{p\})|=1+|\operatorname{supp}(d_b)\cap C|
+\quad\text{is a positive even integer}.}
+\tag{12}
+\]
+
+*Proof.* Because \(b(Jt)=b(t)+1\), the sum \(b(t)+b(s)\) is unchanged on applying \(J\) to an overlap edge, so (8) is well-defined. Lift a closed walk \(C\) of \(T_V\), starting at \(t\). Telescoping (8) along the lift gives \(d_b(C)=b(t)+b(J^{\alpha(C)}t)=\alpha(C)\). Since \(a\) represents the same functional on cycles, \(d_b+a\) annihilates every graphic cycle. The cut-cycle orthogonality of a connected graph implies \(d_b+a=\delta f\).
+
+Conversely any cochain \(d=a+\delta f\) pulls back to a coboundary on the connected graph \(\widetilde T_V\), since its sum on every lifted closed cycle vanishes. Integrate from one triple \(t_0\) to obtain \(b\). Because the covering involution preserves the pullback cochain, \(b(Jt)+b(t)\) is constant on the connected covering graph; evaluating on an odd-monodromy lifted walk gives the constant one. Thus (1) holds. The integration is unique up to a global constant, producing the two complementary colorings.
+
+The row space of (7) is the binary cycle space of its dual and consists of \((\delta f,0)\) and \((a+\delta f,1)\), proving (10). A port-containing circuit of \(M(\widehat A_V)\), equivalently a port-containing cocircuit of \(D_V^{\mathrm{BT}}\), has a graphic Eulerian part with monodromy one. Its minimality forces this part to be a single simple odd-monodromy cycle, proving (11). Finally \(d_b(C)=\alpha(C)=1\), so its integer support weight on \(C\) is odd; adjoining the common port proves (12). \(\square\)
+
+Since \(|V(T_V)|=(n)_3/2\) and \(|E(T_V)|=(n)_4/2\), the dual matroid has rank
+\[
+\operatorname{rank}D_V^{\mathrm{BT}}
+=\frac{(n)_4-(n)_3}{2}+1.
+\tag{13}
+\]
+
+**Theorem 4 (tight-path decoding).** Let \(3\le m\le n\). For an injective word \(v=(v_1,\ldots,v_m)\), define the forward overlap path \(\gamma_v\) in \(\widetilde T_V\) through
+\[
+t_i=(v_i,v_{i+1},v_{i+2}),\qquad 1\le i\le m-2,
+\tag{14}
+\]
+and let \(\pi\gamma_v\) denote its projected path in \(T_V\). Then
+\[
+\boxed{
+\sum_{i=1}^{m-3}
+[b(v_i,v_{i+1},v_{i+2})\ne b(v_{i+1},v_{i+2},v_{i+3})]
+=|\operatorname{supp}(d_b)\cap E(\pi\gamma_v)|.
+}
+\tag{15}
+\]
+Consequently \(b\) has a vertex-simple monochromatic tight path on \(m\) original vertices if and only if
+\[
+\boxed{
+\min_{\substack{v_1,\ldots,v_m\in V\\\text{pairwise distinct}}}
+|X_b\cap E(\pi\gamma_v)|=0.
+}
+\tag{16}
+\]
+The same condition characterizes the existence of a positive tight path, since reversing an injective word complements and reverses its color word.
+
+*Proof.* Each edge of \(\gamma_v\) is the overlap of the consecutive triples in (14). By (8), it is labeled one precisely when their colors differ. Pairwise distinct symbols imply that the projected vertices and edges of \(\gamma_v\) are not repeated, so the right side of (15) counts each transition once. Vanishing means the triple-color word is constant, proving (16). The reversal identity (1) changes a constant-one word into a constant-zero word. \(\square\)
+
+**Proposition 5 (bounded odd-girth).** For every \(n\ge5\), the least size of a port-containing cocircuit of \(D_V^{\mathrm{BT}}\) is seven. Equivalently, the least length of a cycle of \(T_V\) with monodromy one is six.
+
+*Proof.* Choose five distinct symbols \(a,b_0,c,d,e\). The following is a six-edge path in \(\widetilde T_V\):
+\[
+\begin{split}
+(a,b_0,c)&\;--\;(b_0,c,e)\;--\;(d,b_0,c)\;--\;(e,d,b_0)\\
+&\;--\;(d,b_0,a)\;--\;(b_0,a,e)\;--\;(c,b_0,a).
+\end{split}
+\tag{17}
+\]
+Its endpoints are reversals, and its six intermediate reversal-orbits are distinct. Its projection is therefore a simple six-cycle with monodromy one.
+
+To verify minimality uniformly in \(n\), a path of length at most five from a triple to its reverse uses at most eight symbols: each overlap step retains two existing symbols and introduces at most one. Relabel those symbols into \(\{0,\ldots,7\}\). It is enough to verify in the graph on the \(336\) ordered triples of eight symbols that \((2,1,0)\) lies outside the radius-five ball around \((0,1,2)\). The following exhaustive finite check uses precisely the adjacency definition (3):
+\[
+\begin{array}{l}
+R=\{(0,1,2)\};\\
+\text{repeat five times: }\;
+R\leftarrow R\cup\bigcup_{(a,b_0,c)\in R}
+\{(b_0,c,d),(d,a,b_0):d\notin\{a,b_0,c\}\};\\
+(2,1,0)\notin R.
+\end{array}
+\tag{18}
+\]
+For reproducibility, the respective distance-layer cardinalities through radius five are \(1,10,55,162,97,10\); a sixth step reaches the reversed triple. This computation covers every possible path of length at most five in any order \(n\), because of the eight-symbol cutoff. Thus the least odd-monodromy cycle has length six, and (11) gives cocircuit size seven. \(\square\)
+
+**Witness distinction.** In the cube case of Article XI, shortest odd-monodromy cycles themselves encode full antipodal geodesics. In the boundary-tournament matroid, port cocircuits of size seven exist uniformly in \(n\), while the long-path target in (16) is a *forward*, symbol-injective overlap path that need not be closed. Accordingly (16) is the pertinent cycle–path zero-intersection problem; the short port cocircuits of (11) encode local reversal monodromy and do not themselves encode long tight paths. This distinction also records both endpoint-seam constraints implicitly in the ordered overlap path: concatenations must preserve directed pair overlaps and the injectivity of the underlying word.
+
+## Matroid Generalizations and Short-Port Intersection Conjectures
+
+Let \(M\) be a finite binary matroid and let \(p\in E(M)\) belong to a circuit and a cocircuit. Define the **port cogirth**
+\[
+g_p(M)=\min\{|Y|:Y\in\mathcal C^*(M),\ p\in Y\},
+\]
+where \(Z(M)\) denotes the binary cycle space. For an even positive integer \(b\), define the **short-port intersection property** \(P_b(M,p)\) by
+\[
+\boxed{\forall X\in Z(M)\ (p\in X),\quad
+\exists Y\in\mathcal C^*(M):
+p\in Y,\ |Y|=g_p(M),\ |X\cap Y|\le b.}\tag{1}
+\]
+Cycle–cocircuit orthogonality over \(\mathbb F_2\) forces every intersection in (1) to have positive even cardinality.
+
+In Article XI's pointed dual \(D_n\), shortest port cocircuits are the cyclic turn encodings of antipodal geodesics, and every port-containing binary cycle encodes an antipodally odd cube-edge coloring. Thus \(P_4(D_n,p)\) is equivalent to the unrestricted two-switch conjecture, while \(P_2(D_n,p)\) is equivalent to monochromatic NORI1.
+
+**Proposition 1 (small port cogirth).** Every pointed binary matroid with \(g_p(M)\le5\) has \(P_4\). Every pointed binary matroid with \(g_p(M)\le3\) has \(P_2\).
+
+*Proof.* Fix any shortest port cocircuit \(Y\). For every binary cycle \(X\ni p\), the intersection \(X\cap Y\) is nonempty, even, and of size at most \(g_p(M)\). The asserted bounds follow. \(\square\)
+
+**Theorem 2 (port-cogirth-preserving contraction inheritance).** Let \(T\subseteq E(M)\setminus\{p\}\), put \(M_0=M/T\), and assume
+\[
+g_p(M)=g_p(M_0).\tag{2}
+\]
+For any positive even \(b\), if \(P_b(M_0,p)\) holds, then \(P_b(M,p)\) holds.
+
+*Proof.* Write \(S=E(M)\setminus T\). Take any binary cycle \(X\in Z(M)\) with \(p\in X\). The restriction \(X_0=X\cap S\) is a binary cycle of \(M/T\), and \(p\in X_0\). Choose by \(P_b(M_0,p)\) a cocircuit \(Y\ni p\) of \(M_0\) satisfying \(|Y|=g_p(M_0)\) and \(|X_0\cap Y|\le b\). Cocircuits of \(M/T\) are precisely the cocircuits of \(M\) disjoint from \(T\). Hence \(Y\) is a cocircuit of \(M\), and (2) makes it shortest among those containing \(p\). Finally \(Y\subseteq S\) gives
+\[
+|X\cap Y|=|X_0\cap Y|\le b.
+\]
+\(\square\)
+
+**Corollary 3 (cubical contraction class).** Suppose a pointed binary matroid \(M\) has a contraction \(M/T\cong D_n\), with \(p\notin T\), and \(g_p(M)=n+1\). Then \(P_b(D_n,p)\) implies \(P_b(M,p)\). For \(b=2,4\), the universal \(P_b\) assertion over all such matroids and all \(n\ge3\) is equivalent to the respective cube conjecture, since the class includes \(M=D_n\) with \(T=\varnothing\).
+
+The theorem applies without restrictions on the number of elements, representational rank, or other circuits of \(M\). The port cogirth equality is essential to lifting a *minimum-size* cocircuit from the contraction.
+
+Let \((N,t)\) be a simple binary matroid represented by pairwise distinct nonzero vectors \(S\cup\{t\}\subseteq V=\mathbb F_2^r\), with \(t\) in the span of \(S\). Let
+\[
+q=\min\{|C|:C\text{ a circuit of }N,\ t\in C\}\ge4,
+\qquad \ell=q-1.
+\tag{1}
+\]
+Define \(K=\operatorname{Cay}(V,S)\), the graph with edges \(\{x,x+s\}\) for \(x\in V,s\in S\), and let \(\tau(x)=x+t\). Since \(t\notin S\) and \(t\) is not the sum of two distinct members of \(S\), \(\tau\) acts freely on edges and the quotient \(G=K/\langle\tau\rangle\) is a simple connected graph. Put \(H=L(G)\), and let \(B_H\) denote its binary vertex-edge incidence matrix. The two-sheeted cover \(L(K)\to H\) has a monodromy class represented by an edge cochain \(a\in\mathbb F_2^{E(H)}\). Adjoin a port column \(p\) and define the pointed binary matroid
+\[
+\boxed{\mathfrak D(N,t)
+= M\!\left(\begin{array}{c|c}B_H&0\\a&1\end{array}\right)^*.}
+\tag{2}
+\]
+Changing the cochain representing monodromy adds a cut to \(a\), inducing an elementary row operation in (2). Binary representations of a fixed binary matroid are equivalent under invertible linear changes of coordinates, which induce Cayley-graph isomorphisms. Thus the pointed isomorphism type in (2) depends only on \((N,t)\).
+
+**Theorem 1 (invariant cube core and port cogirth).** The port cogirth of \(\mathfrak D(N,t)\) is \(q\). Moreover, there exists a contraction
+\[
+\boxed{\mathfrak D(N,t)/T\cong D_\ell,\qquad
+g_p(\mathfrak D(N,t))=g_p(D_\ell)=\ell+1=q,}
+\tag{3}
+\]
+where \(D_\ell\) is the pointed dual associated with antipodally odd edge colorings of \(Q_\ell\).
+
+*Proof.* Choose a shortest circuit \(C\ni t\) of \(N\), and put \(A=C\setminus\{t\}\). The \(\ell\) vectors of \(A\) are linearly independent, with sum \(t\). For any \(x\in V\), the edges of \(K\) in directions \(A\) on \(x+\operatorname{span}(A)\) form a cube \(Q_\ell\) invariant under \(\tau\). This cube is induced in \(K\). Indeed, if \(s\in S\setminus A\) were in \(\operatorname{span}(A)\), simplicity would give \(s=\sum_{a\in W}a\) for some \(W\subseteq A\) with \(|W|\ge2\); then
+\[
+t=s+\sum_{a\in A\setminus W}a
+\]
+would express \(t\) using \(\ell-|W|+1<\ell\) generators, contradicting (1). Hence its quotient is an induced folded cube inside \(G\), and the associated line graph \(H_\ell\) is an induced subgraph of \(H\). Restrict the matrix preceding dualization in (2) to its turn edges together with \(p\). After deleting zero incidence rows, the restriction is row-equivalent to the pointed matrix defining \(D_\ell^*\), because the restricted covering-monodromy class is that of the antipodal cube covering. Duality exchanges deletion before dualization with contraction afterward. This gives the contraction in (3).
+
+A cocircuit of \(\mathfrak D(N,t)\) containing \(p\) is a circuit of the matrix preceding dualization that contains \(p\). Its deletion of \(p\) is a simple cycle \(C_H\) of \(H\) with odd covering monodromy. Lift the cyclic sequence of line-graph vertices to edges of \(K\) ending at the translate by \(t\) of the first edge. Their successive contact vertices determine a walk in \(K\) from some \(u\) to \(u+t\), using at most \(|C_H|\) generator steps. Every such walk uses at least \(\ell\) steps, since a shortest generator expression for \(t\) has length \(\ell\) by (1). Thus \(|C_H|\ge\ell\). Conversely, a path in the invariant cube using each generator of \(A\) once joins \(u\) to \(u+t\), and cyclic completion of its turn sequence gives an odd-monodromy cycle of \(H\) with length \(\ell\). Therefore the shortest port cocircuit has size \(\ell+1=q\). \(\square\)
+
+**Conjecture 2 (binary-generator short-port intersection).** Every simple pointed binary matroid \((N,t)\) satisfying (1) has
+\[
+\boxed{P_4(\mathfrak D(N,t),p):\quad
+\forall X\in Z(\mathfrak D(N,t)),\ p\in X,\quad
+\exists Y\in\mathcal C^*(\mathfrak D(N,t)):
+p\in Y,\ |Y|=q,\ |X\cap Y|\le4.}
+\tag{4}
+\]
+The strengthened conjecture \(P_2\) replaces the intersection bound four by two.
+
+**Corollary 3 (equivalence of the generalized conjecture and NORI1).** Conjecture 2 for all \((N,t)\) is equivalent to the unrestricted two-switch edge-coloring conjecture for hypercubes. The \(P_2\) version is equivalent to the unrestricted monochromatic-geodesic conjecture.
+
+*Proof.* By Theorem 1 and the port-cogirth-preserving contraction theorem of the preceding Subsection, the corresponding cube assertion for every dimension \(\ell\ge3\) implies (4) for every \((N,t)\). Conversely, choose \(N=U_{\ell,\ell+1}\), the binary uniform matroid of rank \(\ell\) with one additional element \(t\) equal to the sum of the \(\ell\) basis elements. The Cayley graph is then \(Q_\ell\) and \(\mathfrak D(N,t)=D_\ell\). Applying (4) gives the original assertion in every dimension. The same reasoning applies to \(P_2\). \(\square\)
+
+For a non-cubical instance take \(V=\mathbb F_2^6\) and
+\[
+S=\{e_1,\ldots,e_6,\ e_1+e_2+e_6\},\qquad
+t=e_1+e_2+e_3+e_4+e_5.
+\]
+There are two shortest five-generator expressions for \(t\), using respectively \(\{e_1,\ldots,e_5\}\) and \(\{e_3,e_4,e_5,e_6,e_1+e_2+e_6\}\). Thus \(\mathfrak D(N,t)\) has distinct invariant-cube cores. The graph \(K\) has 64 vertices of degree seven; \(G\) has 32 vertices and 112 edges; \(H\) has 112 vertices and 672 turns. Consequently \(\mathfrak D(N,t)\) has 673 elements, rank 561, and port cogirth six, while its cogirth-preserving cubical contraction \(D_5\) has 161 elements and rank 121.
+
+This construction gives a matroidal generalization with arbitrary binary dependencies among the generators. The equivalence in Corollary 3 also identifies its current limitation: the sufficient contraction hypothesis already contains the cube's central difficulty. A broader intrinsic characterization that dispenses with cubical contraction, or one that also encodes ordinary reversal-odd boundary tournaments with the same witness principle, remains open.
+
+Let \(n\ge4\) and let \(b(u,v,w)\in\mathbb F_2\), for distinct \(u,v,w\in[n]\), satisfy \(b(w,v,u)=1+b(u,v,w)\). All binary additions below are modulo two, but switch weights are integer sums.
+
+**Theorem 1 (boundary-tournament double cover).** Let \(S_n\) be the undirected graph on ordered pairs \((u,v)\), \(u\ne v\), with an edge between \((u,v)\) and \((v,w)\) whenever \(u,v,w\) are distinct. The involution \(\rho(u,v)=(v,u)\) acts freely on its vertices and edges. There is a connected regular two-sheeted covering
+\[
+\boxed{S_n\longrightarrow F_n=L(K_n),\qquad (u,v)\mapsto\{u,v\},}
+\tag{1}
+\]
+and
+\[
+\boxed{H_n^{\mathrm{BT}}=L(S_n)/\langle\rho\rangle\cong L^2(K_n).}
+\tag{2}
+\]
+The boundary tournament \(b\) amounts to an antipodally odd coloring \(c_b\) of the *edges* of \(S_n\): the edge \((u,v)(v,w)\) receives color \(b(u,v,w)\), and
+\[
+c_b(\rho e)=1+c_b(e).\tag{3}
+\]
+Furthermore
+\[
+|V(S_n)|=n(n-1),\quad |E(S_n)|=n(n-1)(n-2),\quad
+|E(F_n)|=n\binom{n-1}{2}.\tag{4}
+\]
+
+*Proof.* Each undirected edge of \(S_n\) has a unique natural orientation \((u,v)\to(v,w)\). Applying \(\rho\) to this edge produces the edge naturally oriented \((w,v)\to(v,u)\), so (3) is precisely the reversal-oddness of \(b\). Above the vertex \(\{u,v\}\) of \(L(K_n)\) lie two states \((u,v)\) and \((v,u)\). At either state, the neighbors project bijectively to all edges of \(K_n\) incident to \(\{u,v\}\); thus (1) is a regular covering. For four distinct \(u,v,w,z\), the walk
+\[
+(u,v),(v,w),(z,v),(v,u)
+\]
+joins the states of a fiber. As \(L(K_n)\) is connected, the cover is connected. Line graphs preserve this covering and its deck quotient, proving (2). Ordered-pair and ordered-triple counting gives (4). \(\square\)
+
+**Theorem 2 (shared pointed binary lift).** For any connected regular two-sheeted graph cover \(\widetilde F\to F\) with deck involution \(\rho\), let \(H=L(F)=L(\widetilde F)/\rho\). Color the edges of \(\widetilde F\) by a function \(c\) with \(c(\rho e)=1+c(e)\). For incident cover edges \(e,f\), define the projected turn cochain
+\[
+d([\{e,f\}])=c(e)+c(f).\tag{5}
+\]
+If \(\alpha\) is the covering monodromy on the binary cycle space of \(H\), then the cochains arising in this way comprise the affine coset
+\[
+\boxed{d\in a+B^1(H;\mathbb F_2),\quad d(C)=\alpha(C)
+\text{ for every binary cycle }C,}\tag{6}
+\]
+where \(a\) represents \(\alpha\). The coloring is reconstructed from \(d\) up to global color complementation. With \(B_H\) the binary incidence matrix, define the pointed binary matroid
+\[
+\boxed{D(F,\rho)=
+M\left(\begin{array}{c|c}B_H&0\\a&1\end{array}\right)^*,}\tag{7}
+\]
+with distinguished element \(p\). Its binary cycles through \(p\) are \(X_d=\operatorname{supp}(d)\cup\{p\}\), while cocircuits through \(p\) are \(Y_C=C\cup\{p\}\) for odd-monodromy simple cycles \(C\) of \(H\). Their intersections satisfy
+\[
+|X_d\cap Y_C|=1+\sum_{e\in C}d(e)\equiv0\pmod2.\tag{8}
+\]
+In particular, boundary tournaments modulo global complementation correspond bijectively to the port-containing cycles of \(D_n^{\mathrm{BT}}=D(F_n,\rho)\), an affine space of dimension
+\[
+\boxed{n\binom{n-1}{2}-1.}\tag{9}
+\]
+Taking \(\widetilde F=Q_n\), \(F=Q_n/\langle\tau\rangle\), recovers the pointed cube matroid of Article XI.
+
+*Proof.* Equation (5) is unchanged when both incident edges are acted upon by \(\rho\). A closed walk in \(H\) lifts to a turn walk in \(L(\widetilde F)\) whose final edge is either the initial edge or its deck image; telescoping the color differences gives \(d(C)=\alpha(C)\). Choose a reference odd coloring \(c_0\), selecting one cover edge from each deck pair. Its turn cochain \(a_0\) has these same cycle sums. Hence every admissible \(d\) differs from \(a_0\) by a coboundary \(\delta f\). Lifting \(f\) to a deck-invariant edge function on \(\widetilde F\) produces \(c=c_0+f\); connectedness shows that global complementation is the sole ambiguity. The dual cycle space in (7) is the row space of the displayed matrix. A minimal dependence containing the port comprises the port and one simple cycle on which \(a\) has odd sum. These observations yield (8). Connectedness gives the cut-space dimension \(|V(H)|-1=|E(F)|-1\), proving (9). \(\square\)
+
+**Theorem 3 (the short-port decoding obstruction).** For \(n\ge4\), the port cogirth of \(D_n^{\mathrm{BT}}\) is four:
+\[
+\boxed{g_p(D_n^{\mathrm{BT}})=4.}\tag{10}
+\]
+Its shortest port cocircuits correspond to the three-edge stars \(\{va,vb,vc\}\) of the original complete graph \(K_n\), with \(a,b,c,v\) distinct. Consequently *every* port-containing cycle \(X\) and *every* shortest port cocircuit \(Y\) satisfy
+\[
+\boxed{|X\cap Y|\in\{2,4\}.}\tag{11}
+\]
+Thus a universal four-intersection theorem for this pointed matroid says nothing about long vertex-simple monochromatic tight paths.
+
+*Proof.* The three-step cover walk
+\[
+(a,v),(v,b),(c,v),(v,a)=\rho(a,v)
+\]
+projects to a triangle in \(F_n=L(K_n)\), on vertices \(\{va,vb,vc\}\), with nontrivial monodromy. Its three consecutive cover edges project to a monodromy-one turn triangle in \(H=L(F_n)\), producing a port cocircuit of size four. There are no shorter simple cycles in \(H\), proving (10). Every graph triangle in a line graph \(L(F)\) is either a triangle of edges incident at one vertex of \(F\) (whose lifted turn monodromy is zero), or the three consecutive edges of a triangle of \(F\). Triangles of \(F_n=L(K_n)\) themselves come from either three edges incident at one vertex of \(K_n\), with monodromy one, or the three edges of a triangle of \(K_n\), with monodromy zero: the latter lifts to the closed directed state path \((a,b),(b,c),(c,a),(a,b)\). This classifies the shortest port cocircuits. Binary cycle--cocircuit orthogonality makes their intersections even; since both sets contain \(p\), such an intersection is either two or four. \(\square\)
+
+**Corollary 4 (local tournaments and two-intersection).** The shortest port cocircuit arising from the star \(\{va,vb,vc\}\) has intersection two with \(X_{d_b}\) if the restriction of the middle-local tournament at \(v\) to \(\{a,b,c\}\) is transitive, and intersection four if it is a directed three-cycle. In particular, for every \(n\ge5\), all port-containing cycles \(X\) have a *shortest* port cocircuit \(Y\) with
+\[
+\boxed{|X\cap Y|=2.}\tag{12}
+\]
+For \(n=4\), taking every middle-local tournament to be cyclic produces a port cycle whose intersection with every shortest port cocircuit is four.
+
+*Proof.* Order \(a<b<c\) and set \(x=b(a,v,b)\), \(y=b(b,v,c)\), \(z=b(a,v,c)\). The corresponding cyclic turn word lifts from three cover edges colored \(x,1-y,1-z\), and its integer cyclic switch weight is
+\[
+w=[x=y]+[y\ne z]+[z\ne x].
+\]
+This equals three precisely when \(x=y\ne z\), the cyclic tournament, and one otherwise. Its port intersection is \(w+1\). Every tournament on at least four vertices contains a transitive triangle: choose a vertex with at least two outneighbors or at least two inneighbors. The local tournament has \(n-1\ge4\) vertices when \(n\ge5\). The cyclic choices at \(n=4\) are permitted independently at each center. \(\square\)
+
+**Theorem 5 (the missing auxiliary graphic matroid).** A vertex tuple \(P=(v_1,\ldots,v_m)\), \(m\ge3\), determines a naturally directed path in \(S_n\) through states
+\[
+s_i=(v_i,v_{i+1})\quad(1\le i<m),
+\]
+whose \(m-2\) edges \(e_i=s_i s_{i+1}\) are colored
+\(b(v_i,v_{i+1},v_{i+2})\). Let \(t_i\) be the turn of \(H_n^{\mathrm{BT}}\) induced by \(e_i,e_{i+1}\). Then
+\[
+\boxed{d_b(t_i)=
+b(v_i,v_{i+1},v_{i+2})+
+b(v_{i+1},v_{i+2},v_{i+3}).}\tag{13}
+\]
+The tuple \(P\) is vertex-simple precisely when its projected state set
+\[
+\{\{v_i,v_{i+1}\}:1\le i<m\}
+\tag{14}
+\]
+is independent in the *graphic matroid* \(M(K_n)\), provided the cover path follows the natural orientations of all \(S_n\)-edges. Consequently the maximum length of a positive tight path in \(b\) is the maximum size of a naturally directed \(S_n\)-path whose projected state labels form an independent set in \(M(K_n)\) and whose induced \(H_n^{\mathrm{BT}}\)-turn path has all turn labels zero.
+
+*Proof.* Consecutive edges of the directed state path share the state \((v_{i+1},v_{i+2})\), proving (13). Its projected states are the consecutive edges of the original vertex walk in \(K_n\). A vertex-simple walk is a tree path and its edge set is graphic-independent. Conversely, a repeated original vertex in a nonbacktracking walk, as enforced by the state transitions, creates a closed subwalk of length at least three and hence a graphic cycle. Thus graphic independence is equivalent to vertex simplicity. An all-zero turn word makes all consecutive triple colors agree. If their common color is zero, reversal of the original tuple complements every triple color, yielding a positive tight path of the same length; therefore the maximum for positive words equals the maximum for arbitrary monochromatic words. \(\square\)
+
+**Theorem 6 (shared short-cycle generation).** Let \(\widetilde F\to F\) be any regular connected two-cover, let \(H=L(F)\), and denote the monodromies by \(\beta\) on \(F\) and \(\alpha\) on \(H\). If \(T_H\) is the span of triangles inside vertex-star cliques of \(H\), then the incidence-subdivision turn map yields
+\[
+0\longrightarrow T_H\longrightarrow Z_1(H;\mathbb F_2)
+\xrightarrow{\varphi}Z_1(F;\mathbb F_2)\longrightarrow0,
+\qquad \alpha=\beta\circ\varphi.
+\tag{15}
+\]
+In the boundary-tournament case, \(\ker\alpha\) is generated by (a) star triangles of \(H_n^{\mathrm{BT}}\), (b) turn triangles corresponding to three-edge triangles in \(K_n\), and (c) binary sums of two turn triangles corresponding to three-edge stars in \(K_n\). These generators have support cardinality at most six. In the cube case, the kernel is generated by star triangles and square turn cycles, as proved earlier in Article XI.
+
+*Proof.* A turn between two \(F\)-edges incident at \(v\) maps to the sum of their two incident half-edges in the subdivision of \(F\). This gives a surjection of binary cycle spaces from \(H=L(F)\) onto \(F\). The kernel in each incident-edge clique is its graph cycle space, generated by triangles, proving (15). The covering monodromy tracks the lifted contact-vertex walk, so \(\alpha=\beta\circ\varphi\). Apply the same sequence to \(F_n=L(K_n)\). Its cycle space is generated by three-edge stars of \(K_n\) and three-edge triangles of \(K_n\), since the cycle space of \(K_n\) is triangle-generated. The first type has \(\beta=1\) and the second \(\beta=0\), by Theorem 3. Therefore \(\ker\beta\) is generated by the second type and binary sums of pairs of the first type. Lift these elements back through \(\varphi\), adding the star-triangle kernel \(T_H\), to obtain the asserted generators. The cube comparison follows from the previously established square-generation theorem. \(\square\)
+
+**Research consequence.** Cube edge colorings and boundary tournaments share the same functorial pointed binary *line-graph cover lift*, the affine turn cohomology class, and bounded-support generators for its monodromy-zero cycles. But the boundary-tournament four-intersection property is automatic because its port cogirth is four. Long tight paths correspond instead to zero-turn paths satisfying coherent orientation and an independent-set condition in \(M(K_n)\). Accordingly, a common theorem strong enough to advance both problems needs the pointed matroid *decorated with a matroid-constrained path family*, rather than just its collection of shortest port cocircuits. This identifies a structural research direction; it does not assert the unresolved long-path or two-switch conjectures.

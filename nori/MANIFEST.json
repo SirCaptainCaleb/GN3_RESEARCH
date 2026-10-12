@@ -1,6 +1,6 @@
 {
-  "active_section_count": 6,
-  "active_subsection_count": 57,
+  "active_section_count": 7,
+  "active_subsection_count": 63,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -47,6 +47,12 @@
         "id": "nori_matroid_rainbow_circuit_geometry",
         "math_version": 1,
         "position": 1,
+        "version": 1
+      },
+      {
+        "id": "nori_matroid_generalizations_conjectures",
+        "math_version": 1,
+        "position": 2,
         "version": 1
       }
     ]
@@ -129,9 +135,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 129373,
-        "composed_through_revision": 6509,
-        "composition_version": 21,
+        "body_chars": 156753,
+        "composed_through_revision": 6542,
+        "composition_version": 28,
         "frontier": {
           "current": null
         },
@@ -140,15 +146,15 @@
         "stale": null,
         "stale_dependencies": []
       },
-      "version": 1
+      "version": 2
     }
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T05:34:31.971185+00:00",
+  "generated_at": "2026-10-12T06:13:01.608906+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 60,
+  "research_note_count": 61,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -202,11 +208,27 @@
       "math_version": 1,
       "version": 2
     },
+    "nori_matroid_generalizations_conjectures": {
+      "composition": {
+        "body_chars": 20277,
+        "composed_through_revision": 6541,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 129304,
-        "composed_through_revision": 6508,
-        "composition_version": 21,
+        "body_chars": 136405,
+        "composed_through_revision": 6537,
+        "composition_version": 27,
         "frontier": {
           "current": null
         },
@@ -251,7 +273,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 1783,
+  "snapshot_revision": 1816,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -383,6 +405,23 @@
       "section_id": "nori_foundations",
       "version": 2
     },
+    "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture": {
+      "composition": {
+        "body_chars": 5911,
+        "composed_through_revision": 6534,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cayley lift theorem, general P4 and P2 conjectures, and cube equivalence",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "blockwise_perturbation_and_dimension_free_phase_synchronization": {
       "composition": {
         "body_chars": 8177,
@@ -398,6 +437,23 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "boundary_tournaments_and_doubled_line_graph_matroids": {
+      "composition": {
+        "body_chars": 11623,
+        "composed_through_revision": 6540,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Boundary tournament two-cover construction and dual-cycle reconstruction; minimum port cocircuits and graphic-independence decoding.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "color_blind_antipodal_co_reachability_characterizes_nori1": {
@@ -431,6 +487,22 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "common_signed_cover_matroids_and_resource_constrained_coxeter_window_routes": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "connected_shortest_port_cocircuit_exchanges_and_gap_free_intersection_spectra": {
@@ -622,14 +694,14 @@
     },
     "flagged_face_terminal_completion_and_parallel_face_exchange_for_port_cocircuits": {
       "composition": {
-        "body_chars": 7710,
-        "composed_through_revision": 6494,
-        "composition_version": 1,
+        "body_chars": 4415,
+        "composed_through_revision": 6511,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Port-cycle translations of endpoint completion, opposite-phase certificates, exterior rigidity and parallel-face path bounds.",
+        "source_note": "Consolidated with existing extremal port terminal subsection: retained only the complementary adjacent-face matched-terminal intersection theorem.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -960,6 +1032,40 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "port_cogirth_preserving_contractions_and_binary_generator_cayley_lift_matroids": {
+      "composition": {
+        "body_chars": 3780,
+        "composed_through_revision": 6521,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Prove induced cubical minor and port-cogirth equality",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "port_cogirth_short_intersections_and_contraction_inheritance": {
+      "composition": {
+        "body_chars": 2671,
+        "composed_through_revision": 6531,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "General pointed binary-matroid definition and port-cogirth-preserving contraction theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "quadratic_independence_of_antipodal_geodesic_color_profiles": {
       "composition": {
         "body_chars": 6752,
@@ -1009,6 +1115,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "reversal_odd_boundary_tournaments_as_pointed_turn_matroids": {
+      "composition": {
+        "body_chars": 10392,
+        "composed_through_revision": 6526,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Reversal-overlap covering representation for arbitrary ordinary boundary 3-tournaments, pointed binary matroid duality, simple-tight-path decoding, and six-cycle odd-girth certificate.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
     "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests": {

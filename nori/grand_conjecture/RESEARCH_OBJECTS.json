@@ -44,7 +44,7 @@
             "id": "nori_article_xi_matroidal_turn_geometry",
             "type": "article",
             "title": "Article XI — Matroidal Turn Geometry and Rainbow-Circuit Exchange",
-            "version": 1,
+            "version": 2,
             "superseded": false,
             "research_status": "active"
         },
@@ -85,6 +85,14 @@
             "type": "section",
             "title": "Foundational closure theorems and rooted obstructions",
             "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_matroid_generalizations_conjectures",
+            "type": "section",
+            "title": "Matroid Generalizations and Short-Port Intersection Conjectures",
+            "version": 1,
             "superseded": false,
             "research_status": "active"
         },
@@ -153,6 +161,14 @@
             "research_status": "active"
         },
         {
+            "id": "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture",
+            "type": "subsection",
+            "title": "Binary-generator Cayley lifts and the generalized port-intersection conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "blockwise_perturbation_and_dimension_free_phase_synchronization",
             "type": "subsection",
             "title": "Blockwise perturbation and dimension-free phase synchronization",
@@ -161,9 +177,25 @@
             "research_status": "active"
         },
         {
+            "id": "boundary_tournaments_and_doubled_line_graph_matroids",
+            "type": "subsection",
+            "title": "Boundary tournaments and doubled line-graph matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "color_blind_antipodal_co_reachability_characterizes_nori1",
             "type": "subsection",
             "title": "Color-blind antipodal co-reachability characterizes NORI1",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "common_signed_cover_matroids_and_resource_constrained_coxeter_window_routes",
+            "type": "subsection",
+            "title": "Common signed-cover matroids and resource-constrained Coxeter-window routes",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -425,6 +457,22 @@
             "research_status": "active"
         },
         {
+            "id": "port_cogirth_short_intersections_and_contraction_inheritance",
+            "type": "subsection",
+            "title": "Port cogirth, short intersections, and contraction inheritance",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "port_cogirth_preserving_contractions_and_binary_generator_cayley_lift_matroids",
+            "type": "subsection",
+            "title": "Port-cogirth-preserving contractions and binary-generator Cayley lift matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "quadratic_independence_of_antipodal_geodesic_color_profiles",
             "type": "subsection",
             "title": "Quadratic independence of antipodal-geodesic color profiles",
@@ -444,6 +492,14 @@
             "id": "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data",
             "type": "subsection",
             "title": "Reconstruction of antipodally odd edge colorings from local turn data",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "reversal_odd_boundary_tournaments_as_pointed_turn_matroids",
+            "type": "subsection",
+            "title": "Reversal-odd boundary tournaments as pointed turn matroids",
             "version": 1,
             "superseded": false,
             "research_status": "active"
