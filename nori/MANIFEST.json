@@ -1,6 +1,6 @@
 {
-  "active_section_count": 7,
-  "active_subsection_count": 112,
+  "active_section_count": 9,
+  "active_subsection_count": 140,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -55,6 +55,22 @@
         "position": 2,
         "version": 1
       }
+    ],
+    "nori_article_xii_resource_constrained_hamming_graphs": [
+      {
+        "id": "nori_xii_definitions_full_rank_phase",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
+    ],
+    "nori_article_xiii_binary_involutive_rainbow_paths": [
+      {
+        "id": "nori_xiii_minimum_color_degree_foundations",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
     ]
   },
   "article_versions": {
@@ -75,9 +91,9 @@
     },
     "nori_article_ix_unification": {
       "composition": {
-        "body_chars": 2473,
-        "composed_through_revision": 6257,
-        "composition_version": 1,
+        "body_chars": 8939,
+        "composed_through_revision": 7363,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
@@ -135,9 +151,39 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 678767,
-        "composed_through_revision": 7129,
-        "composition_version": 187,
+        "body_chars": 896088,
+        "composed_through_revision": 7370,
+        "composition_version": 243,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_xii_resource_constrained_hamming_graphs": {
+      "composition": {
+        "body_chars": 7816,
+        "composed_through_revision": 7360,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
+    "nori_article_xiii_binary_involutive_rainbow_paths": {
+      "composition": {
+        "body_chars": 8569,
+        "composed_through_revision": 7378,
+        "composition_version": 1,
         "frontier": {
           "current": null
         },
@@ -151,10 +197,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-12T20:41:21.712568+00:00",
+  "generated_at": "2026-10-13T03:34:33.254169+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 105,
+  "research_note_count": 128,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -210,9 +256,9 @@
     },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 494309,
-        "composed_through_revision": 7128,
-        "composition_version": 152,
+        "body_chars": 711630,
+        "composed_through_revision": 7369,
+        "composition_version": 208,
         "frontier": {
           "current": null
         },
@@ -258,8 +304,40 @@
     },
     "nori_unification_foundations": {
       "composition": {
-        "body_chars": 2411,
-        "composed_through_revision": 6256,
+        "body_chars": 8877,
+        "composed_through_revision": 7362,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_xii_definitions_full_rank_phase": {
+      "composition": {
+        "body_chars": 7734,
+        "composed_through_revision": 7359,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_xiii_minimum_color_degree_foundations": {
+      "composition": {
+        "body_chars": 8491,
+        "composed_through_revision": 7377,
         "composition_version": 1,
         "frontier": {
           "current": null
@@ -273,7 +351,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2402,
+  "snapshot_revision": 2651,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -301,6 +379,40 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "affine_cube_edge_colorings_and_elimination_of_rank_one_obstructions": {
+      "composition": {
+        "body_chars": 9322,
+        "composed_through_revision": 7303,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Add random affine influence-rank expectation and uniform closure probability",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "affine_root_syndrome_gallery_transport_and_corank_one_closure": {
+      "composition": {
+        "body_chars": 15635,
+        "composed_through_revision": 7312,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank-two nonsymmetric affine closure by four-block coordinate scheduling",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "alternating_rook_galleries_and_the_root_rank_criterion_for_simple_tight_paths": {
@@ -558,6 +670,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "canonical_central_polarity_of_partition_matroid_hamming_roots": {
+      "composition": {
+        "body_chars": 6362,
+        "composed_through_revision": 7289,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Automorphism-center classification and undecorated canonical polarized matroid class",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "cayley_two_design_conservation": {
       "composition": {
         "body_chars": 7745,
@@ -635,6 +764,23 @@
         },
         "has_composition": true,
         "source_note": "Canonical one-turn bridge-phase orientation of unordered arms and cancellation of tournament skew matrix in symmetric full-resource basis polynomial.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "commuting_turn_cohomology_and_intrinsic_antipodal_holonomy": {
+      "composition": {
+        "body_chars": 10749,
+        "composed_through_revision": 7325,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Add invariant turn-cut dimension and holonomy coset classification",
         "stale": null,
         "stale_dependencies": []
       },
@@ -744,6 +890,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "cycle_dominating_resource_matroids_and_an_improved_terminal_extension_theorem": {
+      "composition": {
+        "body_chars": 14945,
+        "composed_through_revision": 7197,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Spectral central-symmetry dichotomy of Hamming root models",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem": {
       "composition": {
         "body_chars": 7592,
@@ -776,6 +939,40 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "definitions_full_rank_conjecture_and_rigorous_endpoint_reductions": {
+      "composition": {
+        "body_chars": 7659,
+        "composed_through_revision": 7358,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Add graph-only foundations and resource rank proof",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xii_definitions_full_rank_phase",
+      "version": 1
+    },
+    "definitions_principal_conjecture_and_quantitative_variants": {
+      "composition": {
+        "body_chars": 8407,
+        "composed_through_revision": 7376,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Initial independent formulation of the binary-involutive rainbow path conjecture",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xiii_minimum_color_degree_foundations",
       "version": 1
     },
     "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
@@ -839,6 +1036,23 @@
         },
         "has_composition": true,
         "source_note": "Independent packing probability bound and odd-degree obstruction to full factorization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "edge_free_factorwise_polarities_and_the_maximal_hamming_reduction": {
+      "composition": {
+        "body_chars": 5788,
+        "composed_through_revision": 7271,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Edge-freeness characterization and maximal coordinatewise NORI1 reduction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -982,6 +1196,22 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "finite_state_affine_resource_galleries_and_paired_type_cancellation": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "five_cycle_turn_density_and_six_resource_marked_intersection_theorem": {
       "composition": {
         "body_chars": 6177,
@@ -1082,6 +1312,57 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "full_rank_hamming_galleries_permutation_model_and_determinant_transport": {
+      "composition": {
+        "body_chars": 5752,
+        "composed_through_revision": 7254,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Proofs of full-rank gallery permutation, unimodularity and signed endpoint degree",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "fundamental_circuit_pivots_dual_basis_sweeps_and_faithful_ordered_exchanges": {
+      "composition": {
+        "body_chars": 7074,
+        "composed_through_revision": 7151,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Derived from intrinsic fundamental-circuit pivot and dual-basis sweep analysis",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "fundamental_exchange_forests_and_rank_one_dual_rigidity": {
+      "composition": {
+        "body_chars": 4830,
+        "composed_through_revision": 7213,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Fundamental-graph pivot classification and canonical exchange-gradient resource criterion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing": {
@@ -1322,6 +1603,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "linear_factor_count_path_growth_in_triangle_polarized_hamming_graphs": {
+      "composition": {
+        "body_chars": 5446,
+        "composed_through_revision": 7267,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Transfer of Leader–Long geodesic theorem to mixed triangular Hamming turns and generic matroid core lemma",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "linear_hamming_factor_count_paths_from_weighted_edge_transfer": {
+      "composition": {
+        "body_chars": 3701,
+        "composed_through_revision": 7262,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Weighted one-step transfer and uniform Hamming-root factor bound",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
       "composition": {
         "body_chars": 13611,
@@ -1337,6 +1652,40 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "matroid_independent_tournament_paths_and_terminal_growth": {
+      "composition": {
+        "body_chars": 5682,
+        "composed_through_revision": 7155,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "maximum_clique_incidence_roots_and_matroidal_terminal_tournament_paths": {
+      "composition": {
+        "body_chars": 10635,
+        "composed_through_revision": 7176,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Additional nonuniform rank-two member of the intrinsic root-basis class",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
     "metric_loop_lifting_and_the_geodesicity_excess_certificate": {
@@ -1509,6 +1858,23 @@
       "section_id": "nori_edge_central_carriers",
       "version": 1
     },
+    "periodic_exchange_strands_and_resource_capacity": {
+      "composition": {
+        "body_chars": 4993,
+        "composed_through_revision": 7183,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Canonical component-decomposition clarification",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "pointed_lift_duality_and_shortest_port_cocircuits": {
       "composition": {
         "body_chars": 11182,
@@ -1536,6 +1902,23 @@
         },
         "has_composition": true,
         "source_note": "Added the complete executable standard-library certificate reproducing the two finite obstructions.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "polarized_hamming_turn_geometry_and_a_single_quantitative_nori1_equivalence": {
+      "composition": {
+        "body_chars": 7594,
+        "composed_through_revision": 7259,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Matroidal Hamming class, uniform terminal theorem, displacement conjecture, and NORI1 equivalence",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1713,6 +2096,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "root_basis_star_geometry_and_a_uniform_square_root_path_theorem": {
+      "composition": {
+        "body_chars": 20034,
+        "composed_through_revision": 7279,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Intrinsic coordinate-projection characterization of root-independent and full-rank paths",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests": {
       "composition": {
         "body_chars": 5766,
@@ -1883,6 +2283,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "spectral_rigidity_for_partition_matroids": {
+      "composition": {
+        "body_chars": 6132,
+        "composed_through_revision": 7234,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Self-contained proof of Johnson Cartesian primality",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy": {
       "composition": {
         "body_chars": 9275,
@@ -1934,6 +2351,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "terminal_set_growth_for_matroid_sliding_window_galleries": {
+      "composition": {
+        "body_chars": 6578,
+        "composed_through_revision": 7186,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Additive terminal capacity formula for partition matroids",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "ternary_hamming_turn_conservation_and_linear_paths": {
+      "composition": {
+        "body_chars": 8972,
+        "composed_through_revision": 7282,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Critical predecessor-profile rigidity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits": {
       "composition": {
         "body_chars": 10470,
@@ -1953,14 +2404,14 @@
     },
     "the_common_path_symmetry_problem": {
       "composition": {
-        "body_chars": 2357,
-        "composed_through_revision": 6255,
-        "composition_version": 1,
+        "body_chars": 8823,
+        "composed_through_revision": 7361,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Opening scope of Article IX",
+        "source_note": "Record boundary line-graph coherence and vertex-simple reconstruction lemma",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2002,6 +2453,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "transitive_star_terminal_bounds_for_spectral_resource_paths": {
+      "composition": {
+        "body_chars": 2687,
+        "composed_through_revision": 7220,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Local transitivity improves the matroid terminal bound",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "transverse_bouquet_smoothing_and_phase_preserving_cocircuit_amalgamation": {
       "composition": {
         "body_chars": 20894,
@@ -2012,6 +2480,57 @@
         },
         "has_composition": true,
         "source_note": "Regular n(n-2)-fiber two-port cocircuit exchange and exact sector counts",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "triangle_square_rigidity_of_canonical_hamming_resource_matroids": {
+      "composition": {
+        "body_chars": 8474,
+        "composed_through_revision": 7317,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unrestricted local triangle-square matroid rigidity and sharpness of axioms",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "triangular_turns_and_resource_path_growth": {
+      "composition": {
+        "body_chars": 4606,
+        "composed_through_revision": 7224,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "General two-color triangular-turn terminal theorem and spectral-root specialization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "twisted_and_periodic_gallery_cut_calculus_for_cubes_and_boundary_tournaments": {
+      "composition": {
+        "body_chars": 8821,
+        "composed_through_revision": 7368,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Adjacent permutation-exchange curvature bounds for both cyclic gallery systems",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2140,14 +2659,14 @@
     },
     "unification_conjecture_hierarchy_and_shared_matroid_gallery_axioms": {
       "composition": {
-        "body_chars": 15888,
-        "composed_through_revision": 6678,
-        "composition_version": 2,
+        "body_chars": 16240,
+        "composed_through_revision": 7342,
+        "composition_version": 3,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "note_nori_xi_balanced_shortcut_refutes_port_amplification",
+        "source_note": "Correct distinction between spanning one-change boundary target and weak square-root consequence",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2172,6 +2691,40 @@
       "section_id": "nori_edge_central_carriers",
       "version": 1
     },
+    "universal_twisted_gallery_switch_enumerators_and_monochromatic_count_bounds": {
+      "composition": {
+        "body_chars": 10712,
+        "composed_through_revision": 7334,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unrestricted switch-count variance certificate and Q5 balanced-case identity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "weighted_detour_gluing_and_matroidal_hamming_density": {
+      "composition": {
+        "body_chars": 21307,
+        "composed_through_revision": 7300,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Hamiltonian-connected one-vertex augmentation theorem and exact deletion inequality",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
     "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
       "composition": {
         "body_chars": 35606,
@@ -2192,7 +2745,7 @@
   },
   "toolkit_count": 31,
   "universal_document_versions": {
-    "guide": 49,
+    "guide": 51,
     "reflexes": 26,
     "research_architecture_design_principles": 1
   }

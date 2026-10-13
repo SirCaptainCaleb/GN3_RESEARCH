@@ -1,0 +1,57 @@
+# Article XII — Resource-Constrained Hamming Graphs and One-Change Path Geometry
+
+## Foundations: Hamming resources, polarizations, and phase transport
+
+### Article XII — Definitions and full-resource path geometry
+
+**Research status.** The full-rank Hamming assertion below is proposed, not proved. Its two endpoint implications are proved. The goal is to test whether its intermediate cases have independent mathematical structure.
+
+**Graph.** Let \(k\ge1,q\ge2\) and \(G=H(k,q)=K_q^{\square k}\) with vertices \([q]^k\); \(x\sim y\) iff they differ in one coordinate. For an edge \(e=xy\), write \(j(e)\in[k]\) for its changed coordinate and \(a(e)=\{x_{j(e)},y_{j(e)}\}\) for the unordered pair of symbols. A turn is an ordered triple of pairwise distinct vertices \((u,v,w)\) with \(u\sim v\sim w\). It is triangular if \(u\sim w\), otherwise Cartesian. In Hamming graphs these cases correspond to consecutive moves in the same coordinate versus distinct coordinates.
+
+**Resource multigraphs.** For any path \(P\), form \(T_j(P)\), a multigraph on the \(q\) symbols in coordinate \(j\), adding the edge \(a(e)\) for each traversal with \(j(e)=j\). Repetitions, even from different Hamming fibers, become parallel edges. Resource independence means all \(T_j(P)\) are forests; resource spanning means all are spanning trees. Since a forest on \(q\) vertices has at most \(q-1\) edges, a resource-independent path has length at most \(k(q-1)\), and equality holds if and only if it spans all resources. A closed positive-length subwalk projects to a closed symbol walk in some factor, yielding a cycle or repeated edge; hence resource independence also enforces vertex simplicity.
+
+**Optional linear encoding.** Let \(W=\bigoplus_{j=1}^k\{z\in\mathbb R^q:\sum_a z_a=0\}\). Represent a direction-\(j\) edge whose symbol pair is \(\{a,b\}\) by \(\mathbf e_a-\mathbf e_b\) in summand \(j\), and zero elsewhere. These columns give a matroid of rank \(k(q-1)\); independence is the forest condition by the graphic incidence-vector criterion. The matroid is a parallel extension of \(\bigoplus_jM(K_q)\), and equals the projected edge-difference matroid of the second adjacency eigenspace of \(H(k,q)\). Matroid language is **not required** to state the main conjecture.
+
+---
+
+### Candidate full-strength Hamming connection-and-anchor conjecture
+
+**Status:** Exploratory conjecture, not established or verified beyond its rigorous endpoint reductions. The purpose is to determine whether homogeneous Hamming graphs support a substantive intermediate theorem implying both unrestricted NORI1 and the reversal-odd boundary one-change Hamiltonian conjecture. Avoid describing the previously proposed zero-turn square-root Hamming path bound as a full unification.
+
+Let \(k\ge1,q\ge2\), \(G=H(k,q)=K_q^{\square k}\), and \(r=k(q-1)\). Choose \(c:E(G)\to\mathbb F_2\) and \(b(u,v,w)\in\mathbb F_2\) for every ordered two-edge turn with pairwise distinct vertices. Require
+\[
+b(u,v,w)+b(w,v,u)=\mathbf1_{\{uw\in E(G)\}},\tag{T1}
+\]
+\[
+b(u,v,w)=c(uv)+c(vw)\quad(uw\notin E(G)).\tag{T2}
+\]
+When \(q=2\), \(k\ge2\), require antipodal oddness \(c(\tau e)=1-c(e)\) under the cubical complement \(\tau\). For \(q>2\) impose no global central-involution condition, as the homogeneous Hamming automorphism group has trivial center. In the exceptional graph \(H(1,2)=K_2\), a free edge antipode does not exist; this trivial dimension should be treated separately.
+
+An ordinary graph path \(P=(v_0,\ldots,v_\ell)\) is **root-resource independent** iff for each Cartesian factor \(j\), the multigraph on the \(q\) symbols whose edges record the \(j\)-coordinate transitions of \(P\) is a forest (including repeated transitions as parallel edges). It is **root-resource spanning** iff those transition graphs are spanning trees in every factor. Then necessarily \(\ell=r\), and this criterion is equivalent to being a basis of \(N_{\mathrm{sp}}(G)=\bigoplus_jM(K_q)\).
+
+Define the turn word \(b_i=b(v_{i-1},v_i,v_{i+1})\), \(1\le i<\ell\). Let \(T(P)=\{i: v_{i-1}v_{i+1}\in E(G)\}\), the indices of **triangular** turns, listed in increasing order \(i_1<\cdots<i_t\). Every turn outside \(T(P)\) is a **Cartesian** (nontriangular) turn. Define the intrinsic **connection-and-anchor switch cost** (ordinary integer sum; xor in the summands)
+\[
+\boxed{\mathsf S(P)=
+\sum_{i\notin T(P)}b_i+
+\sum_{a=1}^{t-1}\left(b_{i_a}+b_{i_{a+1}}+\sum_{j=i_a+1}^{i_{a+1}-1}b_j\right)_{\mathbb F_2}.}\tag{C}
+\]
+If \(t\le1\), the second sum is empty. The first sum is ordinary integer sum of bits.
+
+Equivalent two-state description: choose an initial phase \(s_1\in\mathbb F_2\), and for each turn \(i\), put \(s_{i+1}=s_i+b_i\) for nontriangular turns and \(s_{i+1}=b_i\) for triangular turns. Then \(\mathsf S(P)=\min_{s_1}\sum_{i=1}^{\ell-1}\mathbf1_{\{s_{i+1}\ne s_i\}}\). Nontriangular turns *transport* the phase via a binary connection; triangular turns *anchor* its observed value. The equivalence follows by cutting at triangle indices: every nontriangular turn changes the phase iff its bit is one, while each anchored triangle after the first incurs a change iff its color differs from the preceding triangle's phase transported across the intervening nontriangular turns. Initial phase can be chosen to make the first triangle cost zero.
+
+**Full-strength exploratory conjecture (FHRC).** For every \(G,c,b\) obeying the conditions above, there exists a root-resource-spanning path \(P\) of length \(r=k(q-1)\) with
+\[
+\boxed{\mathsf S(P)\le1.}\tag{FHRC}
+\]
+
+**Endpoint 1 (cube).** For \(q=2\), triangles do not occur. Thus \(\mathsf S(P)=\sum_{i=1}^{n-1}(c(e_i)+c(e_{i+1}))_{\mathbb F_2}\), which counts changes in the edge-color word. Resource spanning gives an antipodal geodesic of \(n\) steps. Under antipodal oddness, the Article X cyclic-rotation theorem converts at most one change to a monochromatic geodesic. Hence FHRC implies unrestricted NORI1.
+
+**Endpoint 2 (boundary).** For \(k=1,q=n\), all turns are triangular, \(G=K_n\), and (T1) says precisely that the ordered-triple coloring is reversal-odd. The edge coloring \(c\) is unconstrained and irrelevant to the cost. Resource spanning gives a path of \(n-1\) edges, hence a Hamiltonian permutation of all \(n\) original vertices. Formula (C) becomes
+\[
+\mathsf S(P)=\sum_{i=1}^{n-3}(b(v_i,v_{i+1},v_{i+2})+b(v_{i+1},v_{i+2},v_{i+3}))_{\mathbb F_2},
+\]
+the number of changes in the boundary triple-color word. Hence FHRC implies the full reversal-odd boundary one-switch Hamiltonian conjecture.
+
+**Graph-only meaning of the matroid.** In \(Q_n\), the forest criterion forbids repeated coordinate directions. In \(K_n\), a forest path with \(n-1\) edges is Hamiltonian. In mixed \(H(k,q)\), each factor's recorded symbol transitions form a spanning tree. Cartesian prime-factor decomposition of \(G\) and opposite-edge transport across product squares make this condition intrinsic to the product graph; matroid language facilitates exchange and circuit arguments but is not required to state the problem.
+
+**Important caution.** While the resource geometry has a canonical spectral derivation, the anchored/transported phase rule is at present a proposed interpolation. The different semantics of \(c\) and \(b\) at the two endpoints, the cubical-only antipodal condition, and the change in local geometry from squares to triangles remain warning signs against announcing a settled unification. FHRC may be false in an intermediate Hamming graph. Its value would depend on surviving counterexample searches and yielding intermediate theorems not obtained by handling the endpoints separately. A more intrinsic route might instead use polarized coherent galleries on partition-matroid basis graphs, retaining \(J(n,2)\) directly rather than replacing it by its complete-graph root.

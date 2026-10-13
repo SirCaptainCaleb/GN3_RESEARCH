@@ -440,7 +440,7 @@ if __name__ == '__main__':
 
 ### Unified matroid conjectures: common axioms, implications, and obstructions
 
-This Subsection assembles the Article XI exploration of generalized binary matroid intersection properties and the comparison with reversal-odd boundary 3-tournaments. The goal is an abstract theorem implying **both** unrestricted monochromatic NORI1 and a long vertex-simple monochromatic boundary-tournament tight path. It separates established facts from proposed conjectures; none of the proposed universal intersection implications below has been proved.
+This Subsection assembles the Article XI exploration of generalized binary matroid intersection properties and the comparison with reversal-odd boundary 3-tournaments. The full-strength goal is an abstract theorem implying **both** unrestricted monochromatic NORI1 and the boundary one-change Hamiltonian conjecture: a vertex-simple tight path through all original vertices, with at most one change among its consecutive triple colors. A long monochromatic boundary tight path is only an established weaker consequence. It separates established facts from proposed conjectures; none of the proposed universal intersection implications below has been proved.
 
 #### A. The shared pointed line-graph double cover
 
@@ -512,7 +512,7 @@ If \(q=1\), (5) supplies a full \(n\)-resource cube gallery with cyclic turn wei
 \[
 \boxed{\left\lceil\frac{m-2}{4}\right\rceil+2=\Omega(\sqrt n)}\tag{7}
 \]
-original vertices. Thus (5) would resolve the two target problems simultaneously. This is a *conditional implication*, not a proof of (5).
+original vertices. Thus (5) would establish NORI1 and a weaker monochromatic boundary square-root theorem, not the full one-change Hamiltonian boundary conjecture; the latter needs rank \(n-1\) and a one-switch tight triple-color word. This is a *conditional implication*, not a proof of (5).
 
 **Conjecture C (independence-preserving exchange and rank growth).** Seek a local, color-cost-controlled exchange operation acting on galleries or marked cocircuits that preserves the appropriate auxiliary resource matroid and legal transition language. It should remove repeated-resource excess or increase the independent resource rank without growing \(|X\cap Y|\) beyond the appropriate seam budget. In the cube, the obstacle is an extra coordinate traversal in a low-weight monodromy-one cycle; in the boundary model, the obstacle is extending a zero-turn directed tight path without repeating an original vertex. A sufficiently strong iterative rank-growth or defect-reduction lemma would lead to Conjecture B. The desired operation must be expressed in local basis/circuit language without assuming the sought low-intersection witness.
 
@@ -5627,3 +5627,2415 @@ A canonical family \(H(c;T)\) is disjoint from a majority family \(J(U)\) precis
 Two canonical families cannot be disjoint. If their centers coincide, a triple containing the center and meeting both exceptional triples belongs to both. If their centers \(c,d\) differ, a triple \(\{c,d,a\}\) belongs to both provided \(\{d,a\}\) meets the first exceptional triple and \(\{c,a\}\) meets the second. Such \(a\) exists unless both exceptional triples are disjoint and exclude both centers, which is impossible for distinct \(c,d\) on seven labels. This proves the two types and their counts. \(\square\)
 
 The sharp configuration classification describes a **single root's** Kneser layer only. It does not imply the global existence of a counterexample to NORI1.
+
+Let \(G=(V,E)\) be a finite simple graph with at least one edge, and let \(N\) be a matroid on \(E\). Assume
+\[
+\tag{1}
+\mathcal I(N)\subseteq\mathcal I(M(G)),\qquad
+\delta_G(v)\in\mathcal I(N)\quad(v\in V),
+\]
+where \(M(G)\) is the graphic matroid and \(\delta_G(v)\) is the star at \(v\). At each vertex \(v\), prescribe an arbitrary tournament \(T_v\) on \(\delta_G(v)\). A vertex word \(P=(v_1,\ldots,v_\ell)\) is an *independent tournament path* when its consecutive edges are pairwise distinct, their set is independent in \(N\), and
+\[
+v_{i-1}v_i\longrightarrow v_iv_{i+1}\quad\text{in }T_{v_i}
+\qquad(2\le i<\ell).
+\]
+Condition (1) implies that an independent tournament path has distinct vertices. Indeed, a closed subwalk with pairwise distinct edges contains a graph cycle, contradicting independence in \(N\).
+
+**Theorem (matroid terminal-growth bound).** Let \(L\) be the maximum number of vertices in an independent tournament path, and let \(\bar d=2|E|/|V|\). Then
+\[
+\boxed{\quad\frac{\bar d}{2}\le(L-1)^2,\qquad
+L\ge1+\sqrt{\frac{\bar d}{2}}.\quad}\tag{2}
+\]
+The bound holds for arbitrary matroids \(N\), including nonrepresentable matroids.
+
+*Proof.* For every \(e=uv\in E\), let \(r(e)\) be the maximum order of an independent tournament path ending in either \(u,v\) or \(v,u\). Orient \(e\) toward the last vertex of one maximizing path. Some vertex \(v\) receives at least \(\bar d/2\) oriented edges. For \(2\le r\le L\), write \(D_r(v)\) for the incoming edges with \(r(e)=r\), and let \(q=|D_r(v)|\).
+
+For \(q>0\), choose \(e=uv\in D_r(v)\) which beats at least \((q-1)/2\) other members of \(D_r(v)\) in \(T_v\). Let \(P\) be an independent tournament path of order \(r\) ending in \(u,v\), and put \(A=E(P)\). Then \(r_N(A)=r-1\). If \(f=vw\in D_r(v)\) is beaten by \(e\) and \(f\notin\operatorname{cl}_N(A)\), the word obtained by appending \(w\) to \(P\) has independent edge set \(A\cup\{f\}\). By (1), this set is a forest; consequently \(w\) is new to \(P\). The tournament comparison at \(v\) is legal, so the new word is an independent tournament path of order \(r+1\), contradicting \(r(f)=r\).
+
+Thus every member of \(D_r(v)\) beaten by \(e\) belongs to \(\operatorname{cl}_N(A)\). Since \(\delta_G(v)\) is independent in \(N\),
+\[
+\bigl|\delta_G(v)\cap\operatorname{cl}_N(A)\bigr|
+\le r_N(A)=r-1.
+\]
+One of these edges is \(e\). Hence \((q-1)/2\le r-2\), giving \(q\le2r-3\). Summing over terminal ranks yields
+\[
+\frac{\bar d}{2}\le d^-(v)
+=\sum_{r=2}^{L}|D_r(v)|
+\le\sum_{r=2}^{L}(2r-3)
+=(L-1)^2.
+\]
+This proves (2). \(\square\)
+
+**Transitive refinement.** If every \(T_v\) is transitive, then
+\[
+\boxed{\quad \bar d\le L(L-1),\qquad
+L-1\ge\frac{\sqrt{1+4\bar d}-1}{2}.\quad}\tag{3}
+\]
+
+*Proof.* In the preceding proof, the tournament induced on \(D_r(v)\) has a vertex beating all \(q-1\) others. Thus \(q-1\le r-2\), so \(q\le r-1\). Summing gives
+\[
+\bar d/2\le\sum_{r=2}^{L}(r-1)=L(L-1)/2.
+\]
+Solving this quadratic proves (3). \(\square\)
+
+**Corollary 1 (ordinary reversal-odd boundary tournaments).** Let \(b(a,v,c)\in\{0,1\}\) satisfy \(b(c,v,a)=1-b(a,v,c)\) on distinct triples from an \(n\)-element set. Take \(G=K_n\), \(N=M(K_n)\), and orient the local tournament \(T_v\) by
+\[
+av\longrightarrow vc\quad\Longleftrightarrow\quad b(a,v,c)=1.
+\]
+Every independent tournament path is a vertex-simple monochromatic tight path of color one, and conversely. Thus there is such a path on at least
+\[
+\boxed{1+\sqrt{(n-1)/2}}\tag{4}
+\]
+vertices, with integer rounding understood.
+
+*Proof.* Every vertex star of \(K_n\) is a forest, hence independent in its graphic matroid. The condition on \(b\) says precisely that the comparisons at each vertex form a tournament. Along an independent tournament path every triple color is one; ordinary graph paths have independent edge sets in \(M(K_n)\). Apply the theorem with \(\bar d=n-1\). \(\square\)
+
+**Corollary 2 (cube geodesics with at most one switch).** For every binary coloring \(c\) of the edges of \(Q_n\), there exists a coordinate-distinct geodesic of length at least
+\[
+\boxed{\left\lceil\frac{\sqrt{4n+1}-1}{2}\right\rceil}\tag{5}
+\]
+whose edge-color word is weakly increasing. In particular it has at most one color change, and this applies to every NORI1 coloring.
+
+*Proof.* On \(E(Q_n)\), let \(N\) be the partition matroid with capacity one in each parallel-coordinate class. Its independent edge sets use each direction at most once, hence contain no graph cycle. At each cube vertex, the \(n\) incident edges use distinct directions, so the whole star is independent. Order each local star with all color-zero edges preceding color-one edges, resolving ties arbitrarily, and let \(T_v\) be the resulting transitive tournament. A path independent in \(N\) uses distinct coordinate directions and is therefore a geodesic. Along every admissible path, the colors are weakly increasing. The chosen local tournaments are transitive, so apply (3) with \(\bar d=n\). \(\square\)
+
+The common mechanism is a rank obstruction to extending a maximum terminal path: a rank-\((r-1)\) flat meets an independent vertex star in at most \(r-1\) edges. In the boundary model, the resource matroid is graphic. In the cube model, it is a coordinate partition matroid subordinate in independence to the graphic matroid of the cube. This supplies one intrinsic matroidal proof of the square-root scale in both models and improves the weaker proper-label cube estimate obtained by separately charging repeated vertices and directions. The passage from a partial low-switch cube geodesic to a full monochromatic antipodal geodesic remains open; (1) alone does not encode antipodal color polarization.
+
+### Fundamental-circuit pivots, dual-basis sweeps, and faithful ordered exchanges
+
+Let \(M\) be a finite loopless matroid on \(E\), and let \(\Gamma(M)\) denote its basis-exchange graph. For an oriented edge \(B\to B'=B-a+e\), let \(C_M(e,B)\) be the fundamental circuit of \(e\) with respect to \(B\). The circuit contains \(a,e\), since replacing \(a\) by \(e\) gives a basis.
+
+**Theorem 1 (canonical pivot of a small fundamental circuit).** Suppose every circuit of \(M\) has cardinality at most three. Each oriented basis exchange \(B\to B-a+e\) admits a unique intrinsic label of one of the following types:
+\[
+\begin{array}{ll}
+\text{parallel exchange:}& C_M(e,B)=\{a,e\};\\
+\text{triangular exchange:}& C_M(e,B)=\{a,b,e\},\quad
+b\in B\cap B'.
+\end{array}
+\tag{1}
+\]
+In the triangular case the ordered triple \((a,b,e)\) is determined by the oriented exchange and the matroid. Reversing the exchange changes it to \((e,b,a)\). The labels are preserved by every matroid isomorphism.
+
+*Proof.* The element \(e\) is outside \(B\), and a fundamental circuit contains \(e\) together with at least one element of \(B\). Because \(B-a+e\) is independent, \(a\) is in this circuit. The size bound gives the two displayed possibilities; in the size-three case the third element \(b\) belongs to \(B\setminus\{a\}=B\cap B'\). Fundamental circuits are unique. For the reverse exchange \(B'\to B\), the fundamental circuit of \(a\) with respect to \(B'\) is the same circuit: its removal of \(e\) restores the basis, and its removal of \(b\) also yields a basis by the fundamental-circuit exchange criterion. The description is matroid-theoretic and therefore commutes with isomorphisms. \(\square\)
+
+The theorem identifies the local middle element of a boundary triple as a *fundamental-circuit pivot*. It also identifies a cubical coordinate exchange with a two-element fundamental circuit. No auxiliary ordering of the retained basis elements is used in either case.
+
+**Theorem 2 (faithfulness rigidity for uniform sliding windows).** Fix \(1\le r<n\). Map an injective ordered \((r+1)\)-tuple
+\[
+(a,x_1,\ldots,x_{r-1},e)
+\]
+to the oriented basis exchange
+\[
+\{a,x_1,\ldots,x_{r-1}\}
+\longrightarrow
+\{x_1,\ldots,x_{r-1},e\}
+\tag{2}
+\]
+of \(U_{r,n}\). Every oriented edge of \(\Gamma(U_{r,n})=J(n,r)\) has precisely \((r-1)!\) preimages. Hence an oriented exchange determines its ordered sliding window if and only if \(r\le2\).
+
+For \(r=2\), arbitrary reversal-odd boundary 3-tournaments on \([n]\) are in bijection with orientations of \(J(n,2)\): orient the edge
+\[
+\{a,b\}\longrightarrow\{b,e\}
+\]
+when \(b(a,b,e)=1\). Every orientation of \(J(n,2)\) arises. For \(r\ge3\), some reversal-odd ordered-\((r+1)\)-window colorings cannot descend to orientations of the basis-exchange graph.
+
+*Proof.* The ordered source and target bases in (2) recover \(a\) as their deleted element, \(e\) as their inserted element, and the unordered set \(X=B\cap B'\) of their \(r-1\) retained elements. The preimages are precisely the permutations of \(X\). This gives the factorial and the characterization \(r\le2\). When \(r=2\), the sole retained element is \(b\), and reversing the graph edge reverses \((a,b,e)\). Thus the reversal-odd identity specifies one orientation of each undirected graph edge with no further compatibility conditions. When \(r\ge3\), choose two different permutations of \(X\) and give their windows different binary colors; assign the complementary colors to their reversed windows, then fill the remaining reversal orbits arbitrarily. The coloring is reversal-odd but assigns different colors to the same directed exchange, so it does not descend. \(\square\)
+
+**Theorem 3 (dual-basis permutation sweeps).** In both canonical models the colored states along a complete path admit distinct intrinsic resource labels forming one basis of the dual matroid.
+
+(i) Let \(M=\bigoplus_{i=1}^kU_{1,2}\). Every dual basis \(D\) has complementary primal basis \(B=E\setminus D\). For each permutation \(d_1,\ldots,d_k\) of \(D\), let \(B_j\) arise from \(B_{j-1}\) by exchanging its element parallel to \(d_j\) for \(d_j\). Then
+\[
+B=B_0,B_1,\ldots,B_k=D
+\tag{3}
+\]
+is an antipodal geodesic of the \(k\)-cube. Its \(k=r(M^*)\) exchange edges have distinct two-element-circuit labels indexed by \(D\); every antipodal geodesic from \(B\) is obtained from one such permutation.
+
+(ii) Let \(M=U_{2,n}\), \(n\ge3\). Every dual basis \(D\) has complementary primal basis \(\{s,t\}\). For each permutation \(d_1,\ldots,d_{n-2}\) of \(D\), the word
+\[
+(s,d_1,\ldots,d_{n-2},t)
+\tag{4}
+\]
+defines a path in \(J(n,2)\) through its consecutive unordered pairs. Its \(n-2=r(M^*)\) oriented exchanges are labeled, in order, by the distinct triangular-circuit pivots \(d_1,\ldots,d_{n-2}\). Conversely, the original-element Hamiltonian tight words with endpoints \(s,t\) are precisely (4).
+
+In both instances, the reversal operation on complete paths acts on the corresponding color words by
+\[
+w\longmapsto\overline{\operatorname{rev}(w)}.
+\tag{5}
+\]
+
+*Proof.* The complement of a primal basis is a dual basis. In (i), each \(d_j\) belongs to a different parallel pair, so all exchanges are legal and no pair is toggled twice. A path from \(B\) to \(E\setminus B\) has length at least \(k\), and equality forces every pair to be toggled once. In (ii), consecutive unordered pairs of the displayed word intersect in the single middle element; every pair is a basis and every original vertex appears once. The ordered-triple labels are its successive windows, whose middle elements are precisely the members of \(D\). Conversely, a Hamiltonian tight word determines its two endpoints and the order of its interior elements. The reversal of a boundary word reverses and complements each triple label by reversal oddness. For the cube, reverse the geodesic and apply the canonical complementation map to every basis; the antipodal odd edge rule complements the reversed sequence of edge colors. This proves (5). \(\square\)
+
+**Corollary 4 (the common resource parameter).** The natural number of primitive colored states of a complete gallery is
+\[
+\boxed{r(M^*)=|E(M)|-r(M)}
+\tag{6}
+\]
+in both canonical models: \(k\) for the cube and \(n-2\) for the boundary tournament. The canonical exchange label is an inserted element in (i) and a retained fundamental-circuit pivot in (ii). For uniform rank \(r\ge3\), the underlying oriented basis-exchange graph alone loses \((r-1)!\)-fold ordered-window information.
+
+This identifies a common matroidal resource budget and a choice-free source of its local exchange labels. It leaves two additional ingredients to a path-existence theorem: a compatible global polarity of colored exchange states, and a rank-increasing exchange rule that preserves a coherent path with distinct resources. In the cube the antipode acts on bases; in uniform rank two, reversal acts on directed exchanges. The two actions have different domains, and the colored signed-cover matroid requires the additional gallery information developed elsewhere in Article XI.
+
+Let \(M\) be a finite matroid of rank \(r\ge1\) on a ground set \(E\), with \(N=|E|\). Write \(\mathcal B(M)\) for its bases and \(\mathcal I_{r-1}(M)\) for its independent \((r-1)\)-sets. For each \(1\le j\le N-r\), choose an arbitrary binary coloring \(\beta_j\) of the oriented edges of the basis-exchange graph, satisfying
+\[
+\beta_j(B',B)=1-\beta_j(B,B')\qquad(B,B'\text{ adjacent}).\tag{1}
+\]
+A **sliding-window gallery** of order \(m\) is an injective word \(v_1,\ldots,v_m\), \(m\ge r\), for which each consecutive \(r\)-set
+\[
+B_i=\{v_i,\ldots,v_{i+r-1}\},\qquad1\le i\le m-r+1,
+\]
+is a basis. The gallery is **positive** if \(\beta_i(B_i,B_{i+1})=1\) for \(1\le i\le m-r\). The stage colorings \(\beta_i\) may vary independently.
+
+**Theorem (terminal-set growth).** Let \(L\) be the maximum order of a positive sliding-window gallery. Then
+\[
+\boxed{|\mathcal B(M)|\le|\mathcal I_{r-1}(M)|(L-r+1)^2,\qquad
+L\ge r-1+\sqrt{\frac{|\mathcal B(M)|}{|\mathcal I_{r-1}(M)|}}.}\tag{2}
+\]
+The conclusion requires neither representability nor simplicity nor an edge ordering.
+
+*Proof.* Every basis supports a gallery of order \(r\), with no colored transitions. For each basis \(B\), let \(\ell(B)\) be the maximum order of a positive gallery terminating with the \(r\)-set \(B\). Choose such a gallery with final word \(x,s_1,\ldots,s_{r-1}\), and assign \(B\) to the independent set \(S=\{s_1,\ldots,s_{r-1}\}\). 
+
+Fix an independent \((r-1)\)-set \(S\), an integer \(s\in\{r,\ldots,L\}\), and put
+\[
+U_{S,s}=\{x\notin S:S\cup\{x\}\text{ was assigned to }S,\ \ell(S\cup\{x\})=s\},\qquad q=|U_{S,s}|.
+\]
+If \(s=N\), then \(q\le N-r+1\le 2(s-r)+1\), so (3) follows immediately. Suppose henceforth that \(s<N\). The bases \(S\cup\{x\}\), \(x\in U_{S,s}\), form a complete exchange clique. Equation (1) makes \(\beta_{s-r+1}\) a tournament on this clique. Choose \(x\) having at least \((q-1)/2\) outgoing comparisons of color one. The selected \(s\)-element gallery for \(S\cup\{x\}\) ends in \(x,s_1,\ldots,s_{r-1}\). If an outgoing neighbor \(y\in U_{S,s}\) did not already occur in the gallery, appending \(y\) would preserve distinctness, add the valid basis window \(S\cup\{y\}\), and fulfill the prescribed positive stage comparison. This would give \(\ell(S\cup\{y\})\ge s+1\), a contradiction. Thus all favorable neighbors occur among the earlier \(s-r\) vertices, and
+\[
+(q-1)/2\le s-r,\qquad |U_{S,s}|\le2(s-r)+1.\tag{3}
+\]
+The number of bases assigned to \(S\) is at most
+\[
+\sum_{s=r}^{L}(2(s-r)+1)=(L-r+1)^2.
+\]
+Summing over all \(S\in\mathcal I_{r-1}(M)\) gives (2). \(\square\)
+
+**Corollary 1 (uniform matroids of every rank).** For \(1\le r<n\), every reversal-odd coloring of oriented exchanges of \(U_{r,n}\) admits a positive injective sliding-window gallery with
+\[
+\boxed{L\ge r-1+\sqrt{\frac{n-r+1}{r}}.}\tag{4}
+\]
+The assertion remains valid for independently chosen reversal-odd colorings at every stage.
+
+*Proof.* In \(U_{r,n}\), all \(r\)-sets are bases and all \((r-1)\)-sets are independent, so
+\[
+|\mathcal B|/|\mathcal I_{r-1}|=\binom nr/\binom n{r-1}=(n-r+1)/r.
+\]
+Apply (2). \(\square\)
+
+When \(r=2\), \(S=\{b\}\) and the oriented exchange \(S\cup\{a\}\to S\cup\{c\}\) is the ordered triple \((a,b,c)\). Thus (4) is \(L\ge1+\sqrt{(n-1)/2}\), recovering the Devine--Milans terminal-pair theorem for every ordinary reversal-odd boundary 3-tournament. Its stage-dependent version recovers the layered terminal-pair extension in Article VII. For every fixed \(r\), (4) is a square-root lower bound with distinct original resources. The complete exchange clique above a codimension-one independent set is the shared local mechanism.
+
+**Corollary 2 (cubical specialization and its limitation).** Let \(M_n=\bigoplus_{i=1}^nU_{1,2}\), so its basis graph is \(Q_n\). Designate one element in each parallel pair as zero, and let \(\varepsilon(B)\) count the other selected elements modulo two. For an arbitrary undirected-edge coloring \(c\) of \(Q_n\), define the stage-dependent oriented coloring
+\[
+\boxed{\beta_j(B,B')=c(\{B,B'\})+\varepsilon(B)+(j-1)\pmod2.}\tag{5}
+\]
+Every positive sliding-window gallery for (5) induces a monochromatic cube geodesic, using \(m-n\) different directions if the gallery has order \(m\).
+
+*Proof.* Each basis window of length \(n\) chooses one element of every parallel pair. When the window shifts, its entering element must be the parallel mate of the departing element. The injective word therefore exchanges every pair at most once, so the basis windows trace a geodesic. Every basis exchange changes \(\varepsilon\) by one, giving \(\beta_j(B',B)=1-\beta_j(B,B')\). Along the gallery, \(\varepsilon(B_j)=\varepsilon(B_1)+(j-1)\), whence
+\[
+\beta_j(B_j,B_{j+1})=c(\{B_j,B_{j+1}\})+\varepsilon(B_1).
+\]
+Positivity makes the traversed cube edges monochromatic. \(\square\)
+
+For this cubical matroid, however,
+\[
+\frac{|\mathcal B(M_n)|}{|\mathcal I_{n-1}(M_n)|}
+=\frac{2^n}{n2^{n-1}}=\frac2n.\tag{6}
+\]
+Therefore (2) offers no guaranteed positive exchange beyond the initial basis window, whereas a full antipodal geodesic requires gallery order \(2n\). In contrast, the ratio for \(U_{2,n}\) is \((n-1)/2\). The terminal-set method gives a common witness predicate and proves the tournament square-root estimate, while (6) pinpoints its inability to force the spanning cubical witness. A unified spanning theorem must supply an additional global exchange or antipodal-splicing principle beyond the terminal-set tournament comparison.
+
+**Corollary 3 (parallel-factor law for terminal capacity).** For a loopless partition matroid \(M=\bigoplus_{j=1}^tU_{r_j,m_j}\) with \(r_j\ge1\), the terminal-set ratio in (2) obeys
+\[
+\boxed{\frac{|\mathcal B(M)|}{|\mathcal I_{r-1}(M)|}
+=\left(\sum_{j=1}^{t}\frac{r_j}{m_j-r_j+1}\right)^{-1}.}\tag{7}
+\]
+*Proof.* An independent \((r-1)\)-set is obtained by choosing \(r_j-1\) elements in one summand \(j\) and bases in all others. Therefore
+\[
+|\mathcal I_{r-1}(M)|
+=\sum_j \binom{m_j}{r_j-1}\prod_{\ell\ne j}\binom{m_\ell}{r_\ell}.
+\]
+Divide by \(|\mathcal B(M)|=\prod_\ell\binom{m_\ell}{r_\ell}\), and use \(\binom{m_j}{r_j-1}/\binom{m_j}{r_j}=r_j/(m_j-r_j+1)\). \(\square\)
+
+The reciprocal terminal capacity is additive under direct sums. Thus the uniform rank-two model has one large rank-one contraction fiber, producing a square-root gain, whereas the cubical model has \(n\) small contraction fibers whose reciprocal contributions add to \(n/2\). This formula expresses quantitatively why terminal-fiber growth by itself cannot recover the cube's full antipodal geodesic.
+
+### Intrinsic largest-clique incidence roots and a terminal-tournament path theorem
+
+Let \(M\) be a finite matroid, let \(\Gamma(M)\) be its basis-exchange graph, and let \(\mathscr K(M)\) be the family of cliques of **maximum cardinality** in \(\Gamma(M)\). Construct the canonical bipartite incidence graph
+\[
+I(M)=\bigl(\mathcal B(M)\sqcup\mathscr K(M),\ \{BK:B\in K\}\bigr).
+\]
+An incidence side is called *thin* when every vertex on that side has degree two. Whenever \(I(M)\) is the edge-subdivision of a connected simple graph, denote the graph obtained by suppressing its thin side by \(G(M)\). This construction uses only the basis graph and its maximum cliques; it is invariant under matroid isomorphism.
+
+#### Theorem 1 (three intrinsic root reconstructions)
+
+For \(n\ge3\) and \(m\ge3\), the following matroids have thin incidence sides and root graphs:
+\[
+\begin{array}{c|c|c|c}
+M&\Gamma(M)&\text{thin side}&G(M)\\ \hline
+\bigoplus_{i=1}^n U_{1,2}&Q_n&\mathscr K(M)&Q_n\\
+U_{2,n},\ n\ge5&J(n,2)&\mathcal B(M)&K_n\\
+U_{1,m}\oplus U_{1,m}&K_m\square K_m&\mathcal B(M)&K_{m,m}.
+\end{array}
+\]
+
+**Proof.** The first basis graph is the cube \(Q_n\). Because it is triangle-free, its largest cliques are its edges, each incident with two basis vertices. Thus \(I(M)\) is the edge subdivision of \(Q_n\), with the clique side thin.
+
+For \(U_{2,n}\), bases are unordered pairs \(\{a,b\}\) and adjacent when they share a symbol. Its basis graph is \(J(n,2)=L(K_n)\). Every clique of size at least four consists of pairs sharing a single symbol; the other maximal cliques consist of the three edges of a triangle. For \(n\ge5\), the largest cliques are therefore the \(n\) stars
+\[
+K_a=\{\{a,b\}:b\ne a\},\qquad a\in[n].
+\]
+Each basis \(\{a,b\}\) lies in precisely \(K_a,K_b\). Suppressing the basis vertices of \(I(M)\) gives \(K_n\).
+
+For \(U_{1,m}\oplus U_{1,m}\), bases are ordered pairs \((i,j)\in[m]^2\), and exchange replaces one coordinate. The basis graph is \(K_m\square K_m\). Its \(2m\) largest cliques are its rows and columns, and each basis lies in one of each. The incidence root is \(K_{m,m}\). \(\square\)
+
+For any **basis-side thin** instance with a simple root \(G(M)\), the edge \(uv\) of \(G(M)\) is the unique basis \(B\) belonging to the two clique vertices \(u,v\). If two edges of \(G(M)\) meet at \(v\), their bases both lie in the clique \(v\), hence are adjacent in \(\Gamma(M)\). Thus every orientation of the corresponding basis-exchange edges induces a tournament on the incident root edges at \(v\). The restriction is canonical under basis-graph isomorphism and permits cyclic local tournaments.
+
+#### Theorem 2 (terminal-tournament path transfer)
+
+Suppose \(M\) has a basis-side thin incidence graph with connected simple root \(G=G(M)\). Orient the edges of \(\Gamma(M)\) arbitrarily. Then \(G\) admits a vertex-simple path \(v_1,\dots,v_L\) whose successive root edges are locally increasing at every common vertex:
+\[
+(v_iv_{i+1})\longrightarrow(v_{i+1}v_{i+2})
+\]
+in the induced tournament on the edges incident with \(v_{i+1}\), for every \(i\). Moreover
+\[
+\boxed{\ \frac{\overline d(G)}2\le (L-1)^2\ },\qquad
+L\ge 1+\sqrt{\frac{\overline d(G)}2},
+\]
+where \(\overline d(G)=2|E(G)|/|V(G)|\). In particular, for \(M=U_{2,n}\), every arbitrary reversal-odd boundary \(3\)-tournament admits a monochromatic vertex-simple tight path on at least \(1+\sqrt{(n-1)/2}\) original vertices.
+
+**Proof.** The root's tournament comparisons are induced by the given basis-graph orientation. Let \(L\) be the maximum order of a vertex-simple positively directed path. For each edge \(e\) of \(G\), let \(\ell(e)\) be the maximum order of a positively directed vertex-simple path ending with \(e\), in either direction. Choose a maximizing path and orient \(e\) toward its terminal vertex. Some root vertex \(v\) receives at least \(\overline d(G)/2\) such chosen orientations.
+
+For \(2\le r\le L\), let \(S_r\) be the set of incoming edges \(uv\) with \(\ell(uv)=r\), and put \(s_r=|S_r|\). The tournament induced among the \(s_r\) edges has an edge with at least \((s_r-1)/2\) outneighbors. Choose its witness path of order \(r\) ending \(uv\). Every outneighbor edge \(vw\) with \(w\) outside that witness path would extend it to a positive vertex-simple path of order \(r+1\), contradicting \(\ell(vw)=r\). Apart from the previous vertex \(u\), at most \(r-2\) original vertices are unavailable. Hence
+\[
+(s_r-1)/2\le r-2,\qquad s_r\le 2r-3.
+\]
+Summing gives
+\[
+\frac{\overline d(G)}2\le\deg^-(v)=\sum_{r=2}^{L}s_r
+\le\sum_{r=2}^{L}(2r-3)=(L-1)^2.
+\]
+For \(U_{2,n}\), the reconstruction gives \(G=K_n\) and \(\overline d(G)=n-1\); an arbitrary orientation of each Johnson star encodes an arbitrary reversal-odd middle-vertex tournament. Root vertex-simplicity is the distinct-symbol condition for the corresponding tight path. \(\square\)
+
+#### Interpretation and limitation
+
+Both initial matroids lie in the intrinsic class for which the largest-clique incidence graph is a subdivision of a simple graph. Their thin sides, however, differ. In the rank-two uniform family, bases become *edges* of the root and their overlapping exchanges define arbitrary local tournaments. In the cubical family, largest cliques become *edges* of the root; the original two-color antipodal condition belongs to the root-edge data, with the coordinate classes recoverable from opposite edges of its squares.
+
+Thus Theorem 2 supplies the quantitative square-root mechanism for the boundary family, while the cubical instance instead falls under the properly resource-labeled terminal-path theorem already established in Article VII. The latter provides a coordinate-distinct increasing geodesic of order at least \((5+\sqrt{1+4n})/4\), after locally ordering the two edge colors, but does not yield a full monochromatic antipodal geodesic. The incidence reconstruction is a common intrinsic geometry, not yet a unified full-strength existence conjecture.
+
+The condition alone also does not force one-switch spanning paths: the matroid \(U_{1,3}\oplus U_{1,3}\) lies in the class and has root \(K_{3,3}\); a nine-edge globally ordered tournament instance admits no Hamilton path with at most one change of turn-color (see the scoped research note 'Rook-graph counterexample to incidence-gallery one-switch spanning'). Any stronger common conjecture needs additional intrinsic assumptions encoding the relevant endpoint and resource conditions.
+
+#### Theorem 3 (a root-basis filter excluding the rook family)
+
+The property that \(G(M)\) is itself a matroid basis-exchange graph is invariant under matroid isomorphism. It holds in the first two rows of Theorem 1, since \(Q_n=\Gamma(\bigoplus U_{1,2})\) and \(K_n=\Gamma(U_{1,n})\). It fails in the third row for **every** \(m\ge3\): \(K_{m,m}\) cannot be a matroid basis graph.
+
+**Proof.** In a matroid basis graph, suppose bases \(B,D\) are at distance two. Write \(B=S\cup\{a,b\}\) and \(D=S\cup\{c,d\}\), with the four indicated elements distinct. Every common neighbor of \(B\) and \(D\) is among
+\[
+S\cup\{a,c\},\quad S\cup\{a,d\},\quad
+S\cup\{b,c\},\quad S\cup\{b,d\}.
+\]
+Those four possible common neighbors induce, when all are bases, a \(4\)-cycle: neighboring sets share three of the four displayed exchange elements; opposite sets differ by two. Thus a distance-two pair in a basis graph has at most four common neighbors, and no three of them can be pairwise nonadjacent. In \(K_{m,m}\), any two vertices from one part are at distance two and have \(m\) pairwise nonadjacent common neighbors. For \(m\ge5\), their number alone is impossible; for \(m=3,4\), their independence is impossible. \(\square\)
+
+Consequently the class
+\[
+\mathcal C_{\mathrm{root}}=
+\{M:I(M)\text{ is a simple connected edge subdivision with a thin side,
+and }G(M)\text{ is itself a matroid basis graph}\}
+\]
+is defined from the matroid without reference to either target problem, contains both canonical families, and excludes the entire rook family. Theorems 1–2 remain valid within this refinement. No full-strength one-switch or antipodal-geodesic guarantee for this refined class has been established.
+
+#### Theorem 4 (triangle-free matroid basis graphs are cubical)
+
+If the basis-exchange graph of a finite matroid \(M\) is triangle-free, then, up to loops and coloops, \(M\) is a direct sum of copies of \(U_{1,2}\). Conversely, every such direct sum has triangle-free basis graph. In particular, a connected triangle-free basis-exchange graph is a hypercube.
+
+**Proof.** Fix a basis \(B\). For any nonloop \(e\notin B\), its fundamental circuit \(C_B(e)\) must contain precisely one element \(b\in B\): if it contained two distinct basis elements \(b,b'\), then \(B-b+e\) and \(B-b'+e\) would both be bases adjacent to \(B\) and to one another, forming a triangle. Therefore each nonloop element outside \(B\) is parallel to a unique element of \(B\). Every nonloop belongs to one of the parallel classes indexed by \(B\), and \(M\) is the direct sum of rank-one uniform matroids on those classes. A class of three or more elements yields three pairwise adjacent bases by independently choosing one member, again forming a triangle. Each nontrivial parallel class consequently has size two. Conversely, replacing either member in any two-element parallel class independently gives the cube graph. \(\square\)
+
+This classification shows that the triangle-free incidence branch has rigid intrinsic matroid structure. An extension claiming that the cube and the uniform rank-two models share a nontrivial self-dual *basis-vertex* polarity must still confront their distinct automorphism-equivariance properties, as recorded in the canonical-polarity obstruction note.
+
+**A nonuniform member of the refined class.** Let \(M\) be the rank-two matroid on six elements with three parallel classes of size two. Its bases are the two-element sets meeting distinct parallel classes, and its basis graph is \(L(K_{2,2,2})\). Every vertex of \(K_{2,2,2}\) has degree four, so the largest cliques of this line graph are its stars (size four), exceeding its triangle cliques (size three). Consequently the largest-clique incidence root is \(G(M)=K_{2,2,2}\). This root is isomorphic to \(J(4,2)=\Gamma(U_{2,4})\): partition the six two-element subsets of a four-element set into three complementary pairs; precisely the complementary pairs are nonadjacent in \(J(4,2)\). Hence \(M\in\mathcal C_{\mathrm{root}}\), despite being neither a uniform rank-two matroid nor a direct sum of rank-one two-element matroids. This demonstrates that the filter defines a class broader than the two motivating matroids.
+
+Let \(M=\bigoplus_{j=1}^{t}U_{r_j,m_j}\) be a loopless partition matroid decomposed into its connected matroid components, with \(1\le r_j<m_j\) or \(r_j=m_j=1\) (singleton coloops). Let its component ground sets be \(E_j\), and put \(r=\sum_jr_j\), \(N=\sum_jm_j\). A **resource-simple sliding-window gallery** of order \(m\) is an injective word \(w_1,\ldots,w_m\), \(m\ge r\), such that every consecutive length-\(r\) set \(B_i=\{w_i,\ldots,w_{i+r-1}\}\) is a basis. Its exchanged basis arcs are \(B_i\to B_{i+1}\).
+
+**Theorem (periodic component strands).** A word of distinct ground elements with a basis as its initial length-\(r\) window is a resource-simple sliding-window gallery if and only if
+\[
+\boxed{w_i\text{ and }w_{i+r}\text{ belong to the same connected component of }M}
+\quad(1\le i\le m-r).\tag{1}
+\]
+Thus every gallery decomposes into \(r\) strands indexed by positions modulo \(r\); each strand stays inside one connected component. Conversely every such component schedule can be realized by choosing distinct elements in the prescribed components, subject only to their cardinalities.
+
+*Proof.* The \(i\)-th basis window contains \(r_j\) elements of block \(E_j\) for every \(j\). The next window deletes \(w_i\) and inserts \(w_{i+r}\). Since all block counts must be preserved, both belong to the same block. This proves necessity. Conversely, if the entering and departing elements always belong to the same block, each transition preserves the block counts \(r_j\). By induction every length-\(r\) window is a basis, proving sufficiency. Distinctness gives a resource-simple gallery. \(\square\)
+
+**Theorem (resource-capacity formula).** Fix a nonnegative integer \(q\), the proposed number of successive basis exchanges, and write
+\[
+q=ar+s,\qquad a\ge0,\quad 0\le s<r.
+\]
+A resource-simple sliding-window gallery with \(q\) exchanges (word order \(r+q\)) exists if and only if both
+\[
+\boxed{m_j\ge(a+1)r_j\text{ for every }j,}\tag{2}
+\]
+and
+\[
+\boxed{\sum_{j=1}^{t}\min\{r_j,m_j-(a+1)r_j\}\ge s.}\tag{3}
+\]
+In particular, these conditions compute the maximum uncolored resource-simple gallery length for every partition matroid in all ranks.
+
+*Proof.* Choose the initial length-\(r\) block schedule with \(r_j\) positions labeled \(j\). By (1) the block schedule repeats with period \(r\). In the first \(r+q=(a+1)r+s\) positions, each block \(j\) occurs \((a+1)r_j+t_j\) times, where \(t_j\) is the number of labels \(j\) among the first \(s\) positions of the initial period. We have \(0\le t_j\le r_j\), \(\sum_jt_j=s\). Distinct resources can be chosen if and only if \((a+1)r_j+t_j\le m_j\) for each \(j\). Such integers \(t_j\) exist precisely under (2) and (3). Indeed, (3) says the available nonnegative prefix capacities \(\min\{r_j,m_j-(a+1)r_j\}\) can be allocated to total \(s\); after choosing the \(t_j\), arrange the first \(s\) positions accordingly, fill the remaining \(r-s\) positions to reach initial counts \(r_j\), and populate the strands by distinct resources. \(\square\)
+
+**Corollary (criterion for a full-resource word).** A resource-simple sliding-window gallery using every nonloop element of \(M\) exists if and only if, writing \(h=\lfloor N/r\rfloor\),
+\[
+\boxed{h r_j\le m_j\le(h+1)r_j\quad\text{for every }j.}\tag{4}
+\]
+*Proof.* Apply (2)--(3) with \(q=N-r=(h-1)r+(N-hr)\). The excess capacities \(u_j=m_j-h r_j\) sum to \(s=N-hr<r\). Feasibility requires \(u_j\ge0\) and \(\sum\min(r_j,u_j)\ge\sum u_j\), equivalently \(0\le u_j\le r_j\). \(\square\)
+
+**Canonical cases.** For \(M=\bigoplus_{i=1}^nU_{1,2}\), one strand corresponds to each parallel pair and contains at most two elements. Consequently any maximal uncolored gallery has length \(2n\): its first \(n\) entries choose one representative from each pair, and its final \(n\) entries are the corresponding mates in the same order. The basis windows form a coordinate-distinct antipodal cube geodesic. For \(M=U_{2,n}\), all positions share one component; every injective word of length at least two is a gallery, giving ordinary vertex-simple tight paths of a boundary 3-tournament. More generally, for \(M=U_{r,n}\) the same one-component rule gives vertex-simple length-\(r\) window galleries.
+
+**Geometric implication.** The periodic component-strand rule is a common intrinsic gallery geometry underlying both canonical models. Its capacity theorem separates **combinatorial admissibility** (which positions and resources may occur) from the **color feasibility** treated by terminal-set tournament growth. In particular, full-resource uncolored galleries exist for both models; their color existence problems have qualitatively different strength. The all-dimensional mixed example \(Q_k\square K_3\) constructed in the associated obstruction note satisfies (4), while its deck-odd reversal-odd coloring prohibits positive galleries of \(r\) exchanges. This proves that the periodicity and capacity axioms alone cannot supply the desired colored diameter bound.
+
+### Cycle-dominating resource matroids and a unified tournament-extension bound
+
+Let \(G=(V,E)\) be a finite connected simple graph with at least one edge. Let \(N\) be a matroid on the set \(E\). Assume
+
+1. every vertex star \(E(v)\subseteq E\) is independent in \(N\);
+2. every cycle of \(G\) is dependent in \(N\).
+
+The second hypothesis implies that every \(N\)-independent edge set is a forest. In particular, a walk whose traversed edges form an independent family in \(N\) has no repeated vertex. At each \(v\), equip \(E(v)\) with an arbitrary tournament \(T_v\). A path \(v_1,\ldots,v_\ell\) is **admissible** if its successive edges are \(N\)-independent and
+\[
+(v_{i-1}v_i)\longrightarrow(v_iv_{i+1})\quad \text{in }T_{v_i}
+\qquad(2\le i\le \ell-1).
+\]
+Let \(L\) be the maximum order of an admissible path.
+
+**Theorem 1 (cycle-dominating matroid terminal bound).** Under these two matroid hypotheses,
+\[
+\boxed{\frac{\bar d(G)}2\le (L-1)^2,\qquad
+L\ge 1+\sqrt{\frac{\bar d(G)}2},}
+\qquad
+\bar d(G)=\frac{2|E|}{|V|}.
+\tag{1}
+\]
+
+**Proof.** For each root edge \(e\), let \(r(e)\) be the maximum order of an admissible path ending with \(e\) in either direction. Orient \(e\) toward the last vertex of a maximizing path. Some \(v\) receives at least \(\bar d(G)/2\) oriented edges. For \(2\le r\le L\), let
+\[
+U_r(v)=\{uv:u\to v,\ r(uv)=r\},\qquad q_r=|U_r(v)|.
+\]
+Select \(uv\in U_r(v)\) dominating at least \((q_r-1)/2\) members of \(U_r(v)\) under \(T_v\). Let \(P\) be an admissible \(r\)-vertex witness ending in \(u,v\), and write \(X=E(P)\), an independent set of rank \(r-1\) in \(N\).
+
+For a dominated edge \(vw\in U_r(v)\setminus\{uv\}\), suppose that \(vw\notin\operatorname{cl}_N(X)\). Then \(X+vw\) is independent. Its edge set is a forest, so \(w\) cannot already belong to \(P\): otherwise \(X+vw\) would contain the cycle formed by the segment of \(P\) from \(w\) to \(v\) and \(vw\), contrary to hypothesis 2. The tournament comparison at \(v\) allows an admissible extension of \(P\) to \(w\), giving a path of order \(r+1\) ending with \(vw\). This contradicts \(r(vw)=r\). Thus **every dominated edge lies in** \(\operatorname{cl}_N(X)\).
+
+Because \(E(v)\) is independent in \(N\), its subset \(E(v)\cap\operatorname{cl}_N(X)\) is independent and therefore has size at most
+\[
+\operatorname{rk}_N\operatorname{cl}_N(X)=r-1.
+\]
+One member is \(uv\), so at most \(r-2\) other members of \(U_r(v)\) can be dominated by \(uv\). Hence
+\[
+\frac{q_r-1}{2}\le r-2,\qquad q_r\le 2r-3.
+\]
+Summing over \(r\) at the chosen \(v\),
+\[
+\frac{\bar d(G)}2\le \deg^-(v)
+=\sum_{r=2}^{L}q_r
+\le\sum_{r=2}^{L}(2r-3)=(L-1)^2.
+\]
+This proves (1). \(\square\)
+
+The statement strengthens the properly edge-labeled tournament theorem from Article VII whenever the associated color-partition resource matroid has the cycle-dependence property. That theorem counts a repeated vertex and a repeated resource separately, whereas here both obstructions are captured by a single matroid closure.
+
+**Corollary 2 (proper colorings without rainbow cycles).** Let the edges of \(G\) be properly colored with arbitrary labels, and assume every graph cycle repeats at least one label. Give each vertex star an arbitrary tournament. Then there is a vertex-simple, rainbow, locally tournament-increasing path of order at least
+\[
+1+\sqrt{\bar d(G)/2}.
+\tag{2}
+\]
+
+**Proof.** Let \(N\) be the partition matroid of edges grouped by label, of capacity one per class. Properness makes each star independent; the absence of rainbow cycles makes every graph cycle dependent in \(N\). Apply Theorem 1. \(\square\)
+
+In particular the result applies to partial cubes, with their canonical edge labels given by the hypercube-coordinate classes: edges sharing a coordinate have the same label, each star has distinct coordinate labels, and every closed walk uses each coordinate an even number of times.
+
+#### Intrinsic vector-difference resource quotients
+
+Let \(\phi:V(G)\to\mathbb R^d\) be a map and represent an edge \(uv\) by \(d_{uv}=\phi(v)-\phi(u)\), with any choice of edge direction. Denote by \(N_\phi\) the linear matroid of these columns. Since every oriented graph-cycle sums to zero, every graph cycle is dependent in \(N_\phi\). If the vectors
+\[
+\{\phi(w)-\phi(v):w\in N_G(v)\}
+\]
+are linearly independent for each \(v\), then Theorem 1 applies. Equivalently, \(N_\phi\) is a representable quotient of the graphic matroid \(M(G)\), with independent vertex stars.
+
+For the cube \(Q_n\), take \(\phi(x)=x\in\mathbb R^n\). Its edge vectors are \(\pm e_i\) and \(N_\phi\) is the coordinate-partition matroid. Independent edge sequences are precisely coordinate-distinct walks, and hence cube geodesics. Order incident cube edges locally by their arbitrary binary colors, breaking ties to form a tournament. Every admissible path has a weakly increasing color word and at most one switch. Since \(\bar d(Q_n)=n\), Theorem 1 yields
+
+\[
+\boxed{\text{a coordinate-distinct at-most-one-switch cube geodesic with at least }
+\left\lceil\sqrt{n/2}\right\rceil\text{ edges}.}
+\tag{3}
+\]
+No antipodal coloring hypothesis is required. This improves the general one-switch partial-geodesic constant in the Article VII terminal theorem. The statement is a partial-geodesic theorem; it does not establish a monochromatic antipodal geodesic.
+
+For \(K_n\), take \(\phi(v)=e_v\in\mathbb R^n\). The edge vectors \(e_v-e_u\) represent \(M(K_n)\), since an edge set is independent precisely when it is a forest. Every star is independent. For any reversal-odd boundary coloring \(b(a,v,w)\), orient the tournament at \(v\) from \(av\) to \(vw\) when \(b(a,v,w)=1\). An admissible path is then a monochromatic, vertex-simple tight path, and (1) gives
+\[
+\boxed{L\ge1+\sqrt{(n-1)/2}.}
+\tag{4}
+\]
+
+Thus the two witness constraints arise from one natural construction: vertex-difference matroids whose independent sets are forests and whose local stars are independent.
+
+#### Canonical spectral construction
+
+There is a representation-free way to obtain these resource matroids from the reconstructed graph. For any connected graph \(G\), let \(A\) be its real symmetric adjacency matrix and let \(\lambda_2\) denote its second largest **distinct** adjacency eigenvalue. Let \(P\) be the orthogonal projection onto the corresponding eigenspace and put
+\[
+\phi_G(v)=P\mathbf e_v,\qquad
+N_{\mathrm{sp}}(G)=N_{\phi_G}.
+\tag{5}
+\]
+The construction is invariant under every automorphism of \(G\): its defining projection is a polynomial in \(A\). It is a linear quotient of the graphic matroid. If each vertex star is independent in \(N_{\mathrm{sp}}(G)\), Theorem 1 applies without selecting a separate resource representation.
+
+**Theorem 3 (spectral recovery of both canonical resources).** For \(n\ge3\),
+\[
+N_{\mathrm{sp}}(Q_n)=\bigoplus_{i=1}^n U_{1,2^{n-1}}
+\quad\text{on the \(n\) direction classes of cube edges},
+\tag{6}
+\]
+and
+\[
+N_{\mathrm{sp}}(K_n)=M(K_n).
+\tag{7}
+\]
+The cube's \(\lambda_2=n-2\) eigenspace has dimension \(n\), and the complete graph's \(\lambda_2=-1\) eigenspace has dimension \(n-1\). In both graphs the vectors of any vertex star form a basis of the \(\lambda_2\) eigenspace.
+
+**Proof.** For \(Q_n\), the functions \(\chi_i(x)=(-1)^{x_i}\), \(1\le i\le n\), are mutually orthogonal adjacency eigenvectors with eigenvalue \(n-2\); the Boolean-character decomposition gives the remaining eigenvalues \(n-2k\), so they span the eigenspace immediately below \(n\). Identifying that eigenspace with \(\mathbb R^n\), the projection of \(\mathbf e_x\) has coordinates proportional to \((\chi_1(x),\ldots,\chi_n(x))\). For adjacent \(x,x+e_i\), the difference is a nonzero multiple of \(e_i\). Thus its edge-column matroid is the direction-partition matroid; the \(n\) vectors at every vertex form a basis.
+
+For \(K_n\), \(A=J-I\) has the constant eigenspace of eigenvalue \(n-1\) and its orthogonal complement, of eigenvalue \(-1\). Hence \(P=I-\frac1nJ\), and
+\[
+\phi_G(v)-\phi_G(u)=\mathbf e_v-\mathbf e_u.
+\]
+These columns represent \(M(K_n)\). Its \(n-1\) incident-edge vectors at any vertex form a basis of the standard zero-sum representation. \(\square\)
+
+Define the **spectral root class** to consist of matroids \(M\) for which the largest-clique incidence graph is a subdivision of a connected simple graph \(G(M)\), the root \(G(M)\) is itself a matroid basis graph, and every root star is independent in \(N_{\mathrm{sp}}(G(M))\). These are intrinsic properties of \(M\). Theorem 3 and the earlier incidence reconstructions place both canonical target families in this class.
+
+The rank-two matroid with three parallel classes of size two, which belongs to the broader root-basis class, does not satisfy the spectral-star condition: its incidence root is \(K_{2,2,2}\), regular of degree \(4\), whereas its second adjacency eigenspace has dimension \(3\), so no four incident spectral differences can be independent. Thus spectral-star independence makes a further structural distinction without referring to the desired path conclusion.
+
+The spectral construction identifies the common resource geometry and proves the bound (1). The full NORI1 conclusion requires a separate rank-saturation mechanism compatible with antipodal color reversal.
+
+#### The homogeneous Hamming interpolation
+
+The canonical spectral-resource construction extends simultaneously to all Cartesian powers of complete graphs, providing an intermediate family between the cube and the complete graph.
+
+**Theorem 4 (spectral resource geometry of Hamming graphs).** Let
+\[
+H(k,q)=\underbrace{K_q\square\cdots\square K_q}_{k\text{ factors}},
+\qquad k\ge1,\ q\ge2.
+\]
+Then \(H(k,q)\) is a connected \(d=k(q-1)\)-regular matroid basis graph, namely the basis graph of \(\bigoplus_{i=1}^k U_{1,q}\). Its second adjacency eigenspace has eigenvalue
+\[
+\lambda_2=d-q
+\]
+and dimension \(d\). In a suitable orthogonal coordinate system, its canonical projection \(\phi_{H(k,q)}\) is proportional to
+\[
+(a_1,\ldots,a_k)\longmapsto
+\bigl(\mathbf e_{a_1}-q^{-1}\mathbf1,\ldots,
+\mathbf e_{a_k}-q^{-1}\mathbf1\bigr)
+\in\bigoplus_{i=1}^k\mathbf1^\perp\subset(\mathbb R^q)^k.
+\tag{8}
+\]
+Every vertex star represents a basis of the \(d\)-dimensional spectral resource matroid.
+
+For each coordinate \(i\), the resource vectors of transitions changing \(a_i=a\) to \(b\) are proportional to \(\mathbf e_b-\mathbf e_a\) in the \(i\)th summand. Thus the canonical resource matroid is the direct sum of \(k\) copies of the type-\(A_{q-1}\) graphic matroid \(M(K_q)\), with parallel copies of each transition \(\{a,b\}\) across the different settings of the other \(k-1\) coordinates. A walk has an independent resource-edge sequence precisely when the transitions within every coordinate form an edge-simple forest in that coordinate's \(K_q\). Such a walk cannot revisit any coordinate value after leaving it, and is a vertex-simple path.
+
+Moreover, through any specified initial vertex there exists an independent path with \(d\) edges, saturating the resource rank.
+
+**Proof.** The eigenvalues of the \(K_q\) adjacency matrix on the constant and zero-sum spaces are respectively \(q-1\) and \(-1\), with multiplicities \(1\) and \(q-1\). The adjacency matrix of their Cartesian product is the sum of the adjacency operators on the \(k\) factors. Its leading eigenvalue is \(d\); replacing the constant space in precisely one factor by its zero-sum space produces the next eigenvalue \(d-q\), with total multiplicity \(k(q-1)=d\). Orthogonal projection of a vertex delta function to this eigenspace gives (8), up to a common nonzero normalization. An edge changes one coordinate, so its gradient is a single type-\(A_{q-1}\) root in one factor; all other blocks vanish. This proves the resource-matroid decomposition.
+
+At a vertex \(a\), the \(q-1\) vectors \(\mathbf e_b-\mathbf e_{a_i}\) as \(b\) runs over the other symbols form a basis of the zero-sum space in factor \(i\). Over all coordinates they form a basis of the full spectral eigenspace. An independent edge sequence cannot contain a closed cycle among the transitions in any coordinate. The successive coordinate values form a trail in \(K_q\); a repeated coordinate value would produce a cycle in that trail. For rank saturation, fix any order of the \(k\) coordinates and, one coordinate at a time, change its value through all \(q\) symbols without repetition. The resulting \(k(q-1)\) transitions form a forest in each coordinate factor and are independent. \(\square\)
+
+At the two extremes,
+\[
+H(n,2)=Q_n,\qquad H(1,n)=K_n,
+\]
+and their spectral resource matroids specialize respectively to coordinate independence and graphic independence. Theorem 1 therefore gives the uniform quantitative bound
+\[
+L\ge 1+\sqrt{k(q-1)/2}
+\tag{9}
+\]
+for arbitrary local tournaments on every homogeneous Hamming graph, with spectral-resource-independent paths. The endpoint examples recover the cube one-switch partial-geodesic result (under local color ordering) and the ordinary boundary-tournament square-root result (under reversal-odd turn ordering).
+
+The intermediate family is a statement about *resource-root graphs*; it does not assert that every \(H(k,q)\) appears as the maximum-clique incidence root of an input matroid \(M\) from the previous section. Its usefulness is that the two extremal resource matroids are specializations of the same automorphism-invariant spectral construction, with a common full-rank uncolored path geometry.
+
+**Proposition 5 (spectral antipodes occur only at the cubical endpoint).** For \(k\ge1\), \(q\ge2\), the convex hull of the spectral vertex embedding \(\phi_{H(k,q)}(V)\) is centrally symmetric if and only if \(q=2\). When \(q=2\), its central reflection is the hypercube complement map \(a\mapsto\bar a\); when \(k=1\) and \(q>2\), the root is a simplex and has no centrally induced vertex antipode.
+
+**Proof.** Formula (8) identifies the spectral convex hull, up to a common dilation, with a Cartesian product of \(k\) centered \((q-1)\)-simplices. For \(q=2\), each simplex is a segment, and their product is centrally symmetric. For \(q>2\), project onto any coordinate summand. A centrally symmetric convex body has centrally symmetric linear images, whereas the simplex with vertices \(\mathbf e_a-q^{-1}\mathbf1\), \(a\in[q]\), has no central symmetry: its centroid is the only possible center and the negative of \(\mathbf e_a-q^{-1}\mathbf1\) is not another vertex when \(q>2\). Hence the product is not centrally symmetric. \(\square\)
+
+This proposition localizes a necessary distinction in the polarization problem: the spectral map produces the cube's vertex antipode intrinsically, while in the complete-graph endpoint the reversal-odd operation must be imposed on oriented exchanges or turns. In either case reversal of an oriented edge changes its spectral resource vector by a sign, but that common linear sign involution does not itself impose the original two-color constraints.
+
+Let \(M\) be a finite matroid obtained as a direct sum of nontrivial uniform matroids
+\[
+M=\bigoplus_{j=1}^{t}U_{r_j,m_j},\qquad 1\le r_j<m_j,
+\]
+and let \(G=\Gamma(M)\) be its basis-exchange graph. Thus
+\[
+G=\mathop{\square}_{j=1}^{t}J(m_j,r_j),\qquad
+d=\deg(G)=\sum_{j=1}^{t}r_j(m_j-r_j).
+\]
+Let \(A_G\) be its adjacency matrix, \(P_2\) the orthogonal projection onto the eigenspace \(W_2\) of its second largest distinct adjacency eigenvalue, and \(N_{\rm sp}(G)\) the linear matroid on graph edges \(uv\) represented by \(P_2({\bf e}_u-{\bf e}_v)\).
+
+**Theorem (spectral-star rigidity).** The following are equivalent:
+
+(i) The edge vectors in every vertex star of \(G\) are independent in \(N_{\rm sp}(G)\).
+
+(ii) There is an integer \(q\ge2\) such that every summand has \(m_j=q\) and \(r_j\in\{1,q-1\}\).
+
+(iii) \(G\cong H(t,q)=K_q^{\square t}\) for some \(q\ge2\).
+
+Under these conditions,
+\[
+\dim W_2=d=t(q-1),\qquad
+\operatorname{rk}N_{\rm sp}(G)=d;
+\]
+each vertex star is a basis of \(N_{\rm sp}(G)\), and \(N_{\rm sp}(G)\) has minimum possible rank among matroids on \(E(G)\) in which all vertex stars are independent.
+
+*Proof.* The adjacency spectrum of a Johnson graph \(J(m,r)\), for \(1\le r<m\), consists of the distinct eigenvalues
+\[
+\theta_\ell=(r-\ell)(m-r-\ell)-\ell,\qquad 0\le\ell\le\min(r,m-r),
+\]
+with the second one \(\theta_1=r(m-r)-m\) of multiplicity \(m-1\). Thus its spectral gap between the largest and second-largest adjacency eigenvalues is \(m\).
+
+The adjacency operator of a Cartesian product is the sum of the lifted factor adjacency operators. Put \(m_*=\min_jm_j\). The second-largest eigenvalue of \(G\) is therefore \(d-m_*\), and its multiplicity is
+\[
+D=\dim W_2=\sum_{\{j:m_j=m_*\}}(m_j-1).\tag{1}
+\]
+For every \(j\),
+\[
+r_j(m_j-r_j)\ge m_j-1,\tag{2}
+\]
+with equality if and only if \(r_j=1\) or \(r_j=m_j-1\). As each summand is nontrivial, (1)--(2) give \(d\ge D\), and equality holds if and only if all \(m_j=m_*\) and each rank is \(1\) or \(m_*-1\). Since the \(d\) incident edge vectors at a vertex lie in the \(D\)-dimensional space \(W_2\), condition (i) requires \(d\le D\). Hence (i) implies (ii).
+
+Under (ii), every Johnson factor is \(J(q,1)\cong J(q,q-1)\cong K_q\), proving (iii). Conversely, every Johnson graph \(J(m,r)\), \(1\le r<m\), has triangle-connected edge set (the graph whose vertices are its edges and whose adjacencies join two edges belonging to one triangle is connected), unless it consists of a single edge. Indeed, two exchanges at the same basis are joined by a sequence of triangle moves that alternately hold the entering or departing element fixed; the line graph of the complete bipartite fundamental exchange graph \(K_{r,m-r}\) is connected. Connectedness of \(J(m,r)\) then joins the triangle chains across bases. In a Cartesian product, the edges of every triangle lie in one factor, so a triangle-connected Johnson factor cannot split across distinct Cartesian factors. Therefore if (iii) holds, each Johnson factor is one complete factor \(K_q\), and hence \(r_j\in\{1,m_j-1\}\) and \(m_j=q\).
+
+To prove (iii) implies (i), identify the second eigenspace of \(H(t,q)\) with \(\bigoplus_{j=1}^t{\bf1}^{\perp}\subseteq(\mathbb R^q)^t\). The projected difference vector for an edge changing symbol \(a\) to \(b\) in factor \(j\) is, up to a common nonzero scalar, \({\bf e}_b-{\bf e}_a\) in the \(j\)-th summand and zero elsewhere. At any vertex, the \(q-1\) incident vectors in factor \(j\) form a basis of that summand. All incident vectors are therefore a basis of \(W_2\). Connectedness ensures that the projected differences of graph edges span all of \(W_2\), because edge differences span the coordinate hyperplane perpendicular to the all-ones vector, which contains \(W_2\). Hence the edge-column matroid has rank \(d\).
+
+Finally, any matroid on \(E(G)\) with an independent vertex star has rank at least \(d\). The spectral resource matroid attains this lower bound. \(\square\)
+
+**Corollary (intrinsic minimal resource geometry of the canonical roots).** For \(Q_n=H(n,2)\), the minimal-rank spectral resource matroid is the partition matroid on coordinate-direction edge classes, of rank \(n\). For \(K_n=H(1,n)\), it is the graphic matroid \(M(K_n)\), of rank \(n-1\). In both cases, every vertex star is a resource basis. These are two specializations of the same automorphism-invariant spectral projection, with the resource rank equal to the graph degree.
+
+**Scope.** The theorem classifies the spectral-star condition *within partition-matroid basis graphs*. It does not classify all matroid basis graphs satisfying that condition. Its two extremal cases are the root graphs naturally associated with the NORI1 cube and the boundary 3-tournament Johnson basis graph, respectively: the boundary root is \(K_n\), recovered as the line-graph root of \(J(n,2)\) for \(n\ge4\). It provides a structural class and a minimum-rank resource representation but does not force full-rank positively oriented paths.
+
+**Corollary (functorial polarization threshold).** Let \(X=V(H(t,q))\) with the natural action of \(\operatorname{Aut}(H(t,q))=S_q\wr S_t\). If \(q\ge3\), every equivariant self-map \(X\to X\) is the identity. If \(q=2\), the equivariant self-maps are the identity and simultaneous coordinate complementation.
+
+*Proof.* The automorphism group acts transitively. An equivariant map is determined by the image of the all-zero vertex, which must be fixed by its stabilizer. For \(q\ge3\), the stabilizer contains an independent \(S_{q-1}\) permutation group on the unused alphabet symbols in every factor, and therefore fixes only the all-zero vertex. For \(q=2\), the stabilizer permutes the \(t\) factors and fixes the two constant binary words; the two resulting equivariant maps are identity and complementation. \(\square\)
+
+Thus the canonical fixed-point-free antipode of \(Q_t\) disappears immediately upon passing to the next homogeneous Hamming interpolation \(H(t,3)\). Any formulation encompassing arbitrary complete-graph roots must locate its reversal structure on oriented exchange flags or another derived carrier.
+
+Let \(G=(V,E)\) be a finite simple graph. Let \(\mathsf R\) be a matroid of rank \(d\), represented by nonzero vectors \(\{a_\ell:\ell\in\Lambda\}\) over a field \(\mathbb F\). Suppose the edges of \(G\) carry labels \(\lambda:E\to\Lambda\) and there is an injective vertex potential \(\phi:V\to\mathbb F^N\), where the vectors \(a_\ell\) also lie in \(\mathbb F^N\), with the following properties:
+
+1. For every oriented edge \(uv\), \(\phi(v)-\phi(u)\) is a nonzero scalar multiple of \(a_{\lambda(uv)}\).
+2. At every vertex \(v\), the \(d\) labels on its incident edges form a basis of \(\mathsf R\).
+
+The second condition makes \(G\) \(d\)-regular. We call this the **basis-star condition**. In this Subsection, a path is resource-independent if its edge-label multiset contains no repetitions and is independent in \(\mathsf R\). Equip each vertex \(v\) with an arbitrary tournament \(T_v\) on the edges incident with \(v\). A resource-independent path \(v_1,\ldots,v_\ell\) is admissible if \(v_{i-1}v_i\to v_iv_{i+1}\) in \(T_{v_i}\) at every internal vertex. The tournament data are entirely unrestricted.
+
+**Lemma 1 (independent resources enforce vertex simplicity).** Every resource-independent walk in \(G\) is vertex-simple. Furthermore, two resource-independent walks terminating at the same vertex, whose combined edge-label multiset is independent, have no common vertex other than their terminal vertex.
+
+*Proof.* A nonempty closed subwalk whose labels are independent would give, by telescoping the potential \(\phi\), a nontrivial linear relation among their representing vectors: every traversed edge contributes a nonzero scalar and no label occurs twice. This is impossible. Therefore an independent-resource walk has no repeated vertex. If two walks with a common terminal \(t\) met again at \(z\ne t\), their subwalks from \(t\) to \(z\) would give two representations of \(\phi(z)-\phi(t)\). Subtracting these expressions would produce a nontrivial dependence among their combined distinct labels. Hence their intersection consists only of \(t\). \(\square\)
+
+**Theorem 2 (basis-star terminal-edge theorem).** In the preceding setting, there is an admissible resource-independent path with \(L\) vertices satisfying
+\[
+\boxed{\quad d/2\le (L-1)^2,\qquad L\ge 1+\sqrt{d/2}.\quad} \tag{1}
+\]
+
+*Proof.* For an undirected edge \(e\), let \(h(e)\) be the greatest order of an admissible resource-independent path with \(e\) as its last edge, in either orientation. A two-vertex path is admissible, so \(2\le h(e)\le d+1\). Orient \(e\) toward the terminal vertex of a path attaining \(h(e)\), resolving ties arbitrarily. Since \(G\) is \(d\)-regular, the average indegree in the resulting orientation is \(d/2\); choose a vertex \(v\) with at least this indegree.
+
+For \(2\le k\le L:=\max_e h(e)\), let \(U_k\) consist of the edges oriented toward \(v\) for which \(h(e)=k\), and put \(q=|U_k|\). If \(q=0\) there is nothing to prove. The tournament on \(U_k\) has an edge \(uv\) beating at least \((q-1)/2\) other members \(vw\) of \(U_k\). By the choice of the orientation, there is an admissible resource-independent path \(P=(v_1,\ldots,v_{k-2},u,v)\) attaining \(h(uv)=k\).
+
+Write \(S\) for the span of the \(k-1\) representing vectors corresponding to the labels of the edges of \(P\). Suppose that a beaten edge \(vw\in U_k\) has \(a_{\lambda(vw)}\notin S\). Then \(P\) followed by \(vw\) has independent labels, and it obeys the required tournament comparison at \(v\). Lemma 1 guarantees that the resulting walk has distinct vertices. It is therefore an admissible resource-independent \((k+1)\)-vertex path ending in \(vw\), contrary to \(h(vw)=k\).
+
+Every edge of \(U_k\) beaten by \(uv\) consequently has its representing vector in \(S\). The vectors labeling the full star at \(v\) constitute a basis of \(\mathsf R\); at most \(\dim S=k-1\) of them can lie in \(S\). One of these vectors labels the incoming edge \(uv\), which does not beat itself. Therefore at most \(k-2\) other star edges can be beaten, and
+\[
+(q-1)/2\le k-2,\qquad q\le 2k-3.
+\]
+Summing over all terminal orders,
+\[
+d/2\le\deg^-(v)=\sum_{k=2}^{L}|U_k|
+\le\sum_{k=2}^{L}(2k-3)=(L-1)^2.
+\]
+This proves (1). \(\square\)
+
+The proof uses the matroid span to control both possible failures of extension: a repeated label and a repeated vertex. The vertex-potential identity in Lemma 1 makes the second failure automatically dependent on the first. This removes the second obstruction term in the proper-edge-label terminal theorem of Article VII, while allowing labels to recur at different vertices.
+
+##### Canonical realization on products of simplices
+
+Let \(M=\bigoplus_{j=1}^t U_{r_j,E_j}\), where \(1\le r_j<|E_j|=:m_j\). Its connected-component partition is intrinsic to \(M\). Define the componentwise rank-one reduction
+\[
+M^\flat=\bigoplus_{j=1}^t U_{1,E_j},
+\qquad
+G_M=\Gamma(M^\flat)\cong \mathop{\square}_{j=1}^t K_{m_j}.
+\tag{2}
+\]
+The vertices of \(G_M\) are tuples \(x=(x_1,\ldots,x_t)\), with \(x_j\in E_j\); an edge changes one component coordinate from \(a\) to \(b\).
+
+Let
+\[
+\mathsf R_M=\bigoplus_{j=1}^t M(K_{E_j}),\qquad
+d=\operatorname{rk}(\mathsf R_M)=\sum_{j=1}^t(m_j-1).
+\tag{3}
+\]
+Represent the edge \(ab\) in the \(j\)-th clique by \(e_b-e_a\in\mathbb R^{E_j}\), and write \(\lambda(xy)=(j,\{a,b\})\) for the edge label when \(x,y\) differ in component \(j\). The vertex potential
+\[
+\phi(x)=\bigoplus_{j=1}^t e_{x_j}\in\bigoplus_{j=1}^t\mathbb R^{E_j}
+\tag{4}
+\]
+is injective. Its derivative along \(xy\) is the root \(e_b-e_a\) with the appropriate orientation. At \(x\), the root vectors of its \(m_j-1\) incident edges in coordinate \(j\) are
+\[
+\{e_b-e_{x_j}:b\in E_j\setminus\{x_j\}\}.
+\tag{5}
+\]
+These form a basis of the type-\(A_{m_j-1}\) root space. Taking their union over the different components gives a basis of \(\mathsf R_M\).
+
+**Proposition (coordinatewise simple-path criterion).** Let
+\[
+G=\mathop{\square}_{j=1}^t K_{m_j},\qquad
+R=\bigoplus_{j=1}^t M(K_{m_j}),
+\]
+with the canonical labels \(\lambda(xy)=(j,\{a,b\})\) on steps changing coordinate \(j\) from \(a\) to \(b\). For any finite walk \(P=(x^0,\ldots,x^\ell)\) in \(G\), let \(P_j\) be the sequence of coordinate-\(j\) values obtained from \(x_j^0,\ldots,x_j^\ell\) by suppressing consecutive repeats. Then the following are equivalent:
+
+(a) the multiset of all step labels along \(P\) is independent in \(R\);
+
+(b) for every \(j\), the entries of \(P_j\) are pairwise distinct.
+
+Under either condition, \(P\) is a vertex-simple path and \(\ell\le\operatorname{rk}(R)=\sum_j(m_j-1)\). Equality holds if and only if \(P_j\) is a Hamiltonian path in the complete graph \(K_{m_j}\) for every coordinate \(j\).
+
+*Proof.* The labels contributed by coordinate \(j\) are the consecutive edges of the walk \(P_j\) in \(K_{m_j}\). A multiset of edges is independent in the graphic matroid if and only if it has no repeated edge and its underlying graph is a forest. A walk using only edges of a forest, each at most once, cannot revisit a vertex: a segment between successive visits would be a nonempty closed trail, necessarily containing either a repeated edge or a cycle. Conversely, a walk with pairwise distinct vertices forms a simple path, whose edges are independent in the graphic matroid. Since \(R\) is the direct sum of its factor matroids, applying this equivalence in every coordinate proves (a)\(\Leftrightarrow\)(b).
+
+If \(x^p=x^q\) for \(p<q\), some coordinate changes between those two times, and its suppressed coordinate sequence revisits its initial value, contradicting (b). Hence \(P\) is vertex-simple. In coordinate \(j\), pairwise distinct entries imply at most \(m_j-1\) changes. Summing gives \(\ell\le\sum_j(m_j-1)\). Equality holds precisely when every coordinate changes \(m_j-1\) times and thus visits all its \(m_j\) symbols. \(\square\)
+
+**Canonical interpretations.** When all \(m_j=2\), a full-rank independent gallery changes each binary coordinate once; it is a cube antipodal geodesic. When \(t=1\) and \(m_1=n\), a full-rank independent gallery is a Hamiltonian vertex word in \(K_n\), and its successive two-edge windows are the ordered triples of the boundary tournament. For general \(t\), a full-rank gallery is a path whose projections onto every clique factor are Hamiltonian paths, with the factor moves interleaved arbitrarily. This is a common *geometric* witness language derived from the intrinsic direct-sum graphic-root matroid. Color-compatible existence is the additional problem.
+
+
+**Corollary 3 (uniform Hamming-graph theorem).** For every Cartesian product of nontrivial cliques \(G=\square_{j=1}^t K_{m_j}\), endowed with arbitrary local tournaments on its incident edges, there is a vertex-simple tournament-admissible path whose labels are independent in \(\bigoplus_j M(K_{m_j})\) and which has at least
+\[
+\boxed{1+\sqrt{\tfrac12\sum_j(m_j-1)}} \tag{6}
+\]
+vertices.
+
+This establishes one intrinsic root-matroid extension theorem for all rank-one partition-matroid basis graphs. The source matroid ranks \(r_j\) determine additional color-carrier geometry but play no role in the root-basis terminal inequality.
+
+##### Both canonical source models
+
+For \(M_{\rm cub}=\bigoplus_{i=1}^nU_{1,2}\), the reduction \(M_{\rm cub}^\flat=M_{\rm cub}\) has \(G_M=Q_n\) and \(\mathsf R_M\cong U_{n,n}\). Given any coloring of undirected cube edges, order the edges incident with each cube vertex first by increasing color and then by an arbitrary tie-break. Each local tournament is transitive. An admissible path has independent direction labels and therefore is a geodesic; its edge-color word is weakly increasing. Theorem 2 supplies a geodesic of at least
+\[
+\boxed{\sqrt{n/2}}\tag{7}
+\]
+edges and at most one color change. This applies, in particular, to every NORI1 antipodally odd coloring. It strengthens the partial-geodesic bound obtained by applying the proper-label estimate of Article VII directly.
+
+For \(M_{\rm bd}=U_{2,n}\), the reduction is \(U_{1,n}\), so \(G_M=K_n\), \(\mathsf R_M=M(K_n)\), and
+\[
+\Gamma(M_{\rm bd})=J(n,2)=L(G_M).
+\tag{8}
+\]
+Let \(b(a,v,c)\in\{0,1\}\) be an arbitrary reversal-odd boundary coloring. At vertex \(v\) of \(K_n\), orient the local comparison \(av\to vc\) precisely when \(b(a,v,c)=1\). Reversal oddness makes this a tournament. Theorem 2 produces a vertex-simple path of order at least
+\[
+\boxed{1+\sqrt{(n-1)/2}}\tag{9}
+\]
+on which every consecutive triple has color one. Reversal gives an equally long color-zero path. In this model the independent-root predicate is the original-vertex graphic independence: a simple tight path uses a forest of consecutive original edges.
+
+Thus the same rank \(d\), the same star-basis hypothesis, and the same terminal-edge proof explain both square-root bounds. In the cube the resulting geodesic is only partial; neither Theorem 2 nor Corollary 3 promotes it to a monochromatic full antipodal geodesic. Such a promotion would require the global antipodal coloring law and the additional square-exchange geometry.
+
+##### Two-arm resource bases
+
+The potential argument also supplies a common geometric gluing rule. Let \(P,Q\) be two paths ending at a common vertex \(t\), and suppose the multiset of labels of their combined edges is a basis of \(\mathsf R\). Lemma 1 makes their union a simple path, obtained by concatenating \(P\) with the reversal of \(Q\). For the two canonical color-carrier grades this has a common binary conclusion:
+
+- For undirected edge colors, two same-colored monochromatic arms concatenate to a monochromatic path. On the cube, full root rank \(n\) forces every coordinate to occur once, hence the other endpoints are antipodes.
+- For reversal-odd colors on oriented two-edge windows, two same-colored monochromatic arms concatenate to a path with at most one color change among successive windows. Windows in the reversed arm have the complementary color, and the one junction window can only extend one of these two color runs. On \(K_n\), full root rank \(n-1\) forces a Hamiltonian tight word.
+
+Conversely, a full monochromatic cube geodesic splits into two monochromatic arms with a basis union. The common-terminal two-arm theorem elsewhere in Article XI establishes the converse for boundary Hamiltonian words with at most one change, including its junction cases. In this way a single resource-basis packing predicate expresses both spanning conclusions; its universal existence remains conjectural. Theorem 2 supplies quantitative rank-growth toward that predicate without assuming it.
+
+##### Linear monochromatic paths from edge-density and root independence
+
+The root-potential hypotheses strengthen the standard greedy rainbow-path argument for a properly edge-labelled graph. In particular, the independent-star property suffices without requiring the star to span all of \(\mathsf R\).
+
+**Lemma 4 (minimum degree forces independent-root path length).** Suppose \(G\) has an injective vertex potential and a root representation as above, and the edge labels incident with each vertex are independent in \(\mathsf R\). Every nonempty edge-subgraph \(H\subseteq G\) of minimum degree \(\delta(H)\) contains a resource-independent path of at least \(\delta(H)\) edges.
+
+*Proof.* Choose a resource-independent path \(P=(v_0,\ldots,v_\ell)\) in \(H\) with maximal length, and let \(S\) be the linear span of its \(\ell\) resource vectors. If an edge \(v_\ell w\) of \(H\) has label outside \(S\), then adding it preserves resource independence. Moreover \(w\) is new: for any \(w=v_i\) already on \(P\), the vector \(\phi(w)-\phi(v_\ell)\) is a linear combination of the root vectors labeling the terminal subpath of \(P\), hence the label of \(v_\ell w\) lies in \(S\). Thus maximality forces every \(H\)-edge incident with \(v_\ell\) to have its label in \(S\). The independent-star condition bounds their number by \(\dim S=\ell\). Therefore \(\ell\ge \deg_H(v_\ell)\ge\delta(H)\). \(\square\)
+
+**Theorem 5 (density-to-resource-rank bound).** Under the conditions of Lemma 4, every nonempty edge-subgraph \(H=(V,E_H)\subseteq G\), including isolated vertices in \(V\), contains a resource-independent path of length at least
+\[
+\boxed{\left\lceil\frac{|E_H|}{|V|}\right\rceil .}\tag{10}
+\]
+
+*Proof.* Put \(a=|E_H|/|V|>0\). Iteratively delete a vertex whose degree in the remaining subgraph is strictly smaller than \(a\), if one exists. All vertices cannot be deleted: charge every edge to its endpoint deleted first. Were every vertex deleted, fewer than \(a|V|=|E_H|\) edge incidences would be charged, while each original edge is charged once. Hence a nonempty subgraph \(K\subseteq H\) survives with \(\delta(K)\ge a\). Lemma 4 gives a resource-independent path of at least \(\delta(K)\) edges, at least the ceiling in (10). \(\square\)
+
+**Theorem 6 (free-resource rank potential).** Assume in addition that \(\mathsf R\) is free, and fix any total order on its edge-label ground set \(\Lambda\). For any edge-subgraph \(H=(V,E_H)\) with proper edge labelling and the same injective root potential, let \(L_H(v)\) be the greatest length of a path ending at \(v\) whose resource labels occur in strictly increasing order. Then
+\[
+\boxed{\sum_{v\in V} L_H(v)\ge 2|E_H|.}\tag{11}
+\]
+In particular \(H\) contains a resource-independent path of length at least \(2|E_H|/|V|\).
+
+*Proof.* We argue by induction on \(|E_H|\). The assertion is immediate when \(E_H=\varnothing\). Choose an edge \(e=xy\) with maximal label and put \(H'=H-e\). By properness, the label of every last edge in a strictly increasing path of \(H'\) ending at \(x\) or \(y\) is smaller than \(\lambda(e)\): no other edge at either endpoint has this label. Since \(\mathsf R\) is free, appending \(e\) to either such path preserves resource independence; injectivity of the vertex potential ensures the new endpoint has not been visited. Write \(a=L_{H'}(x)\) and \(b=L_{H'}(y)\). If \(a=b\), appending \(e\) increases both endpoint maxima by at least one, and their sum increases by at least two. If, say, \(a\ge b+1\), appending \(e\) to a maximizing path ending at \(x\) increases the maximum at \(y\) by at least \(a+1-b\ge2\). In every case the sum of all endpoint maxima increases by at least two when \(e\) is restored. The induction hypothesis proves (11). \(\square\)
+
+The argument is the increasing-geodesic potential method of Leader and Long, *Long geodesics in subgraphs of the cube*, extended here to any faithful free-resource voltage graph with proper labelling. The representation-theoretic role of freeness is explicit: a newly largest label has no circuit dependence on previously used labels. The potential hypothesis makes an attempted endpoint repetition a consequence of precisely such a circuit.
+
+**Corollary 7 (sharp known density bound for cube edge colors).** Every two-coloring of \(E(Q_n)\) has a monochromatic coordinate-distinct geodesic of length at least \(\lceil n/2\rceil\). For an antipodally odd coloring, each of the two colors admits such a geodesic.
+
+*Proof.* The coordinate-root matroid \(U_{n,n}\) is free, the coordinate edge labelling is proper, and its natural vertex potential is injective. The cube has \(n2^{n-1}\) edges. Under any two-coloring, a color occurs on at least \(n2^{n-2}\) edges. Apply Theorem 6 with \(|V|=2^n\). Under antipodal oddness, each edge-color class contains \(n2^{n-2}\) edges, so the argument applies to both classes. \(\square\)
+
+The first conclusion is the Leader--Long monochromatic-geodesic corollary, recovered through Theorem 6; the both-color formulation follows from antipodal balance. This result supersedes the weaker density-to-rank bound \(\lceil n/4\rceil\) that Theorem 5 supplies in the cube. Theorem 5 retains its independent significance for represented resource matroids with circuits.
+
+**Proposition 8 (triangle obstruction to free-resource induction).** The induction proving (11) fails in general for graphic resource matroids, even on \(K_3\). Give the three edges the increasing order \(ab<bc<ac\) and use the incidence-root representation of \(M(K_3)\). In \(H'=K_3-ac\), a maximal increasing path ending at \(c\) is \(a,b,c\), using resources \(ab,bc\). The remaining largest root \(ac\) lies in their span and its addition would close a triangle and repeat \(a\). Restoring \(ac\) raises the sum of the three endpoint maxima by only one, whereas the free-resource proof requires an increment of two.
+
+*Proof.* The incidence identity \(e_c-e_a=(e_b-e_a)+(e_c-e_b)\) is the graphic circuit relation. The lengths of maximal increasing paths ending at \(a,b,c\), respectively, are \((1,1,2)\) in \(H'\). In \(H\) they are \((2,1,2)\): the additional increasing path \(b,c,a\) increases the maximum at \(a\) by one, while the dependent edge cannot extend the two-edge path ending at \(c\). Thus the sum increases from four to five. \(\square\)
+
+This circuit obstruction is independent of the second complication in ordinary boundary tournaments: arbitrary reversal-odd boundary data prescribe different local tournaments, which need not be restrictions of one globally ordered root set. The former prevents automatic independent extension; the latter prevents applying the global increasing-path induction. The root-basis terminal theorem permits both and retains the common square-root conclusion.
+
+The different grades of the two original coloring systems also matter. In a cube, a monochromatic *edge* set is a dense graph whose average degree can be used in Theorem 6. In a boundary tournament, color is assigned to consecutive *turns*, and a color class does not determine an undirected edge-subgraph of comparable density. Together, freeness of the resource matroid and the carrier grade explain why a linear monochromatic *partial* cube geodesic is accessible by this method, whereas the common local-tournament proof only gives the square-root boundary estimate. A full monochromatic antipodal cube geodesic still requires the global opposition condition and additional exchange geometry.
+
+Let \(M\) be a finite matroid on \(E\), and let \(\Gamma(M)\) be its basis-exchange graph. For a basis \(B\), the **fundamental exchange graph** \(F_B\) is the bipartite graph on \(B\sqcup(E\setminus B)\), with edge \(be\) precisely when \(B-b+e\) is a basis. Loops and coloops become isolated vertices; the remaining connected components correspond to the connected matroid components.
+
+Define the canonical basis-incidence embedding
+\[
+\Phi:\mathcal B(M)\longrightarrow\mathbb R^E,\qquad
+\Phi(B)=\sum_{b\in B}{\bf e}_b.
+\]
+An exchange edge \(B\to B-b+e\) has difference vector \({\bf e}_e-{\bf e}_b\).
+
+**Theorem (exchange-forest rigidity).** The following conditions are equivalent.
+
+(i) For every basis \(B\), the exchange-difference vectors of the edges incident with \(B\) are linearly independent.
+
+(ii) For every basis \(B\), the fundamental exchange graph \(F_B\) is a forest.
+
+(iii) Every connected component of \(M\) is a loop, a coloop, a uniform rank-one matroid \(U_{1,m}\), or its dual \(U_{m-1,m}\).
+
+In particular, the canonical basis-incidence resource matroid has independent stars throughout the basis-exchange graph precisely for direct sums of rank-one or corank-one uniform matroids.
+
+*Proof.* The difference vectors \({\bf e}_e-{\bf e}_b\) at a basis \(B\) are the oriented vertex-edge incidence columns of \(F_B\), viewed in \(\mathbb R^E\). Incidence columns are independent if and only if the corresponding graph has no cycle, so (i) and (ii) are equivalent.
+
+We prove (ii) implies (iii). Suppose an induced path
+\[
+b_1-e_1-b_2-e_2\tag{1}
+\]
+occurs in \(F_B\), with \(b_1,b_2\in B\) and \(e_1,e_2\notin B\). Thus
+\[
+B-b_1+e_1,\quad B-b_2+e_1,\quad B-b_2+e_2
+\]
+are bases, whereas \(B-b_1+e_2\) is dependent. Put \(A=B\setminus\{b_1,b_2\}\), and contract \(A\). In the rank-two matroid \(M/A\), the pair \(\{b_2,e_2\}\) is dependent, while \(\{b_1,e_2\}\) and \(\{b_2,e_1\}\) are bases. Therefore \(b_2\) and \(e_2\) are nonloops in the same parallel class, and \(\{e_1,e_2\}\) is a basis. Lifting to \(M\) shows
+\[
+B-\{b_1,b_2\}+\{e_1,e_2\}\ \text{is a basis}.\tag{2}
+\]
+
+Pivot from \(B\) to the adjacent basis \(B'=B-b_2+e_1\). The four substitutions
+\[
+B'-b_1+b_2,\quad B'-e_1+b_2,\quad
+B'-e_1+e_2,\quad B'-b_1+e_2
+\]
+are all bases, by the hypotheses and (2). Hence \(F_{B'}\) contains a four-cycle on bipartition \(\{b_1,e_1\}\sqcup\{b_2,e_2\}\), contradicting (ii). Thus **no** fundamental exchange graph can contain an induced four-vertex path.
+
+We next recall why the connected components of \(F_B\) correspond to those of \(M\). Let \(S_1,\ldots,S_h\) be the vertex sets of the components of \(F_B\), and let \(B_j=B\cap S_j\). Every \(e\in S_j\setminus B_j\) belongs to the closure of \(B_j\), since its fundamental circuit relative to \(B\) is contained in \(S_j\). Therefore \(\operatorname{rk}_M(S_j)=|B_j|\). As \(\sum_j|B_j|=\operatorname{rk}(M)\), the rank-additivity criterion implies \(M=\bigoplus_jM|S_j\). Conversely each matroid direct-sum component induces no fundamental exchanges with other components. Thus a connected, nontrivial component of \(M\) yields a connected \(F_B\).
+
+By (ii), each such graph is a tree, and by the preceding pivot argument it contains no induced four-vertex path. A connected tree with no four-vertex path is a star. Since the star spans every element of its connected matroid component, one side of its bipartition has a single vertex. Thus that component has rank one or corank one. A connected rank-one matroid is \(U_{1,m}\), and a connected corank-one matroid is its dual \(U_{m-1,m}\). Loops and coloops are harmless singleton components. This proves (iii).
+
+Conversely, for \(U_{1,m}\) the graph \(F_B\) is \(K_{1,m-1}\), and for \(U_{m-1,m}\) it is \(K_{m-1,1}\). Direct sums give disjoint unions of these stars and isolated vertices, which are forests. Hence (iii) implies (ii). \(\square\)
+
+**Application to the two canonical root graphs.** The basis graph \(Q_n\) of \(\bigoplus^nU_{1,2}\) has a canonical embedding \(\Phi\) whose incident differences are independent: its resources are the \(n\) parallel classes of coordinate directions. The original basis graph \(J(n,2)\) of \(U_{2,n}\), \(n\ge4\), fails this condition because \(F_B=K_{2,n-2}\) has cycles. Its intrinsic line-graph root \(K_n=\Gamma(U_{1,n})\), however, satisfies the condition, and its exchange-difference vectors represent the graphic matroid \(M(K_n)\). Thus the passage from the boundary model's Johnson basis graph to its complete-graph root is mathematically necessary for this common independent-star resource mechanism.
+
+The theorem is an ordinary-matroid obstruction to using canonical basis-indicator gradients directly in both problems, and provides a structural reason for examining a derived root graph equipped with a graphic or spectral resource matroid.
+
+**Theorem (transitive-star terminal bound).** Let \(G\) be a connected finite simple graph of average degree \(d\), and \(N\) a matroid on \(E(G)\) in which every vertex star is independent and every graph cycle is dependent. At each vertex equip the incident edges with a transitive tournament. An admissible path has an \(N\)-independent edge set and respects the tournaments at successive edges. If \(L\) is the maximum number of vertices of an admissible path, then
+\[
+\boxed{d\le L(L-1).}
+\]
+**Proof.** For each edge \(e\), choose a longest admissible path ending with \(e\) in either direction, orient \(e\) toward its witness terminal, and let \(r(e)\) be its witness order. Some vertex \(v\) receives at least \(d/2\) edges. Let \(U_r\) be the incoming edges with \(r(e)=r\). The transitive tournament on \(U_r\) has an edge \(uv\) beating all others. Let \(P\) be its \(r\)-vertex witness and \(X=E(P)\), independent of rank \(r-1\). Any other \(vw\in U_r\) outside \(\operatorname{cl}_N(X)\) extends \(P\): independence of \(X+vw\) precludes a repeated vertex because every graph cycle is \(N\)-dependent, and the terminal comparison is favorable. This contradicts \(r(vw)=r\). Thus \(U_r\subseteq E(v)\cap\operatorname{cl}_N(X)\). As the star is independent, \(|U_r|\le r-1\). Summing gives \(d/2\le\sum_{r=2}^L(r-1)=L(L-1)/2\). \(\square\)
+
+**Corollary (binary cube-edge colors).** Every binary coloring of \(E(Q_n)\) has a coordinate-distinct geodesic with at most one color change and at least
+\[
+\boxed{\left\lceil(\sqrt{4n+1}-1)/2\right\rceil}
+\]
+edges. Use the coordinate-partition resource matroid and order each star by edge color, breaking ties arbitrarily. Every admissible path has distinct coordinates and a weakly increasing color word; the cube has average degree \(n\). Antipodal oddness is not needed.
+
+**Corollary (locally transitive boundary tournaments).** If the comparison tournament at each middle vertex of a reversal-odd boundary \(3\)-tournament is transitive, there is a monochromatic vertex-simple tight path with at least \(1+(\sqrt{4n-3}-1)/2\) vertices. Use \(G=K_n\), \(N=M(K_n)\), and \(d=n-1\). The local orders may be mutually inconsistent.
+
+**Interpolation.** If every induced subtournament on \(q\) edges of any star has a vertex beating at least \(\alpha(q-1)\) others, \(1/2\le\alpha\le1\), the same proof gives \(d/2\le (L-1)+(L-1)(L-2)/(2\alpha)\), since \(\alpha(|U_r|-1)\le r-2\). It specializes to the arbitrary-tournament bound at \(\alpha=1/2\) and the theorem at \(\alpha=1\).
+
+An \(n\)-edge one-switch geodesic in the antipodally odd cube would settle NORI1 by odd-change rotation; the result here supplies a longer partial path.
+
+Let \(G=(V,E)\) be a finite connected simple graph and let \(N\) be a matroid on \(E\) such that
+\[
+\text{each vertex star }E(v)\text{ is independent in }N,
+\qquad
+\text{every graph cycle is dependent in }N.\tag{1}
+\]
+Let \(c:E\to\mathbb F_2\) be an arbitrary edge coloring. Give each nonbacktracking oriented two-edge walk \((u,v,w)\), with \(u\ne w\), a bit \(b(u,v,w)\). Assume
+\[
+b(u,v,w)=c(uv)+c(vw)\pmod2\qquad\text{if }uw\notin E,\tag{2}
+\]
+and
+\[
+b(u,v,w)+b(w,v,u)=1\pmod2\qquad\text{if }uw\in E.\tag{3}
+\]
+Thus a turn with nonadjacent outside vertices tests agreement of its incident edge colors, whereas a turn belonging to a triangle has an arbitrarily oriented comparison. The two conditions are equivalent to a reversal law
+\[
+b(u,v,w)+b(w,v,u)=\mathbf1_{\{uw\in E\}},
+\]
+together with the potential condition (2) on nontriangular turns.
+
+Call a vertex-simple path \(P=(v_0,\ldots,v_\ell)\) **accepted** if \(\{v_{i-1}v_i:1\le i\le\ell\}\) is independent in \(N\) and \(b(v_{i-1},v_i,v_{i+1})=0\) for every internal turn.
+
+**Theorem (two-color triangular-turn terminal bound).** Under (1)--(3), there exists an accepted path of at least
+\[
+\boxed{\ell\ge\frac12\sqrt{\bar d(G)},\qquad \bar d(G)=\frac{2|E|}{|V|}}\tag{4}
+\]
+edges. Its edge set can be chosen monochromatic under \(c\).
+
+*Proof.* Partition \(E=E_0\sqcup E_1\) by the edge coloring \(c\). At least one color class, say \(E_s\), has at least \(|E|/2\) edges. Hence the spanning monochromatic subgraph \(G_s=(V,E_s)\) has average degree at least \(\bar d(G)/2\). Some nontrivial connected component \(H\) of \(G_s\) has average degree at least \(\bar d(G)/2\).
+
+For every vertex \(v\in V(H)\), define a tournament on the incident edges of \(H\). Given two incident edges \(uv\), \(vw\), if \(u,w\) are adjacent in \(G\), orient their tournament comparison from \(uv\) to \(vw\) when \(b(u,v,w)=0\), and in the opposite direction otherwise. Condition (3) ensures that one orientation is accepted. If \(u,w\) are nonadjacent in \(G\), both edges have color \(s\), so (2) gives
+\[
+b(u,v,w)=c(uv)+c(vw)=0,
+\]
+and the reversed turn also has value zero. Either orientation may be chosen in the tournament. Thus **every forward comparison of these vertex-star tournaments is an accepted turn**.
+
+The restriction \(N|E(H)\) has independent vertex stars and dependent graph cycles, by (1). Apply the cycle-dominating resource-matroid terminal-path theorem to \(H\) with the constructed local tournaments. It gives a path with \(N\)-independent edge set, all its turns accepted, and at least
+\[
+\sqrt{\bar d(H)/2}\ge\sqrt{\bar d(G)/4}
+\]
+edges. Since the path lies in \(H\subseteq G_s\), all its edges also have color \(s\). \(\square\)
+
+**Corollary (common spectral-root bound).** Let \(G=H(k,q)=K_q^{\square k}\), \(k\ge1,q\ge2\), and let \(N=N_{\rm sp}(G)\) be its canonical second-adjacency-eigenspace edge-difference matroid. Then (1) holds, \(\bar d(G)=k(q-1)\), and every turn system (2)--(3) admits an accepted \(N\)-independent path of at least
+\[
+\boxed{\frac12\sqrt{k(q-1)}}\tag{5}
+\]
+edges.
+
+*Proof.* The second-eigenspace difference vectors are supported within individual Cartesian factors, representing a direct sum of \(k\) copies of \(M(K_q)\). The vectors in every vertex star form a basis of \(N\). Graph cycles are dependent because their oriented edge differences telescope to zero. The graph is \(k(q-1)\)-regular. Apply (4). \(\square\)
+
+**Canonical specializations.** For \(G=Q_n=H(n,2)\), every nonbacktracking turn has nonadjacent outside vertices, so the turn condition (2) reduces to \(b(u,v,w)=c(uv)+c(vw)\). An accepted resource-independent path is a monochromatic coordinate-distinct cube geodesic. Consequently **every** binary coloring of the edges of \(Q_n\), without any antipodal condition, admits such a geodesic of at least \(\frac12\sqrt n\) edges.
+
+For \(G=K_n=H(1,n)\), every turn has adjacent outside vertices; (3) is the reversal-odd boundary 3-tournament rule, and condition (2) is vacuous. Here the auxiliary edge coloring \(c\) may be chosen constant. Applying the terminal-path theorem directly to the full \(K_n\) recovers the stronger boundary estimate
+\[
+\ell\ge\sqrt{(n-1)/2}.\tag{6}
+\]
+The spectral resource matroid is \(M(K_n)\), so independence is equivalent to vertex simplicity along a path.
+
+These instances share a single accepted-turn predicate, a single star-independent cycle-dominating resource matroid hypothesis, and a common terminal-set counting proof. To force the full \(n\)-edge cubical geodesic, an additional global condition must strengthen the square-root estimate (5).
+
+Let \(D_F(u,v)\) be the greatest length of a vertex-simple path from \(u\) to \(v\) in a finite graph \(F\), with \(D_F(v,v)=0\) and \(D_F(u,v)=-\infty\) for vertices in different connected components. For connected \(F\), write
+\[
+S_F(z)=\sum_{v\in V(F)}D_F(z,v),\qquad
+W_D(F)=\sum_{\{u,v\}\subseteq V(F)}D_F(u,v).
+\]
+
+**Lemma 1 (rooted detour bound).** For every connected graph \(F\) with \(m\) edges and root \(z\),
+\[
+\boxed{S_F(z)\ge m.}\tag{1}
+\]
+*Proof.* Run undirected depth-first search rooted at \(z\), obtaining a rooted tree \(T\). Every edge of \(F\) connects a vertex to an ancestor in \(T\). Assign the edge to its deeper endpoint \(v\). The number of edges so assigned is at most the depth \(d_T(z,v)\), because different assigned edges reach different ancestors of \(v\). Therefore
+\[
+m\le\sum_vd_T(z,v)\le\sum_vD_F(z,v)=S_F(z).
+\]
+Each tree path is a simple path of \(F\). \(\square\)
+
+**Lemma 2 (one-vertex gluing).** Let connected graphs \(A,B\) meet at a single vertex \(z\), with no other connections, and have respective orders \(a,b\) and sizes \(m_A,m_B\). Then
+\[
+W_D(A\cup B)=W_D(A)+W_D(B)+(b-1)S_A(z)+(a-1)S_B(z).\tag{2}
+\]
+If each summand satisfies \(W_D(A)\ge(a-1)m_A\) and \(W_D(B)\ge(b-1)m_B\), then their union \(F\), of order \(a+b-1\) and size \(m_A+m_B\), satisfies
+\[
+\boxed{W_D(F)\ge(|V(F)|-1)|E(F)|.}\tag{3}
+\]
+*Proof.* A simple path between vertices in \(A\) cannot leave \(A\), because its return would repeat \(z\). For \(u\in A-\{z\}\), \(v\in B-\{z\}\), the longest simple \(u\)-to-\(v\) path concatenates a longest \(u\)-to-\(z\) path in \(A\) with a longest \(z\)-to-\(v\) path in \(B\). Thus \(D_F(u,v)=D_A(u,z)+D_B(z,v)\); summing the three pair types gives (2). Lemma 1 supplies \(S_A(z)\ge m_A\) and \(S_B(z)\ge m_B\). Substitution gives
+\[
+W_D(F)\ge(a-1)m_A+(b-1)m_B+(b-1)m_A+(a-1)m_B=(a+b-2)(m_A+m_B).
+\]
+\(\square\)
+
+**Theorem 3 (natural detour-index classes).** Every block graph, every cactus graph, and every outerplanar graph \(F\) satisfies \(W_D(C)\ge(|V(C)|-1)|E(C)|\) in each connected component \(C\).
+
+*Proof.* A complete graph \(K_s\) has \(D(u,v)=s-1\) for every distinct pair, giving equality \(W_D(K_s)=(s-1)\binom{s}{2}\). On a cycle \(C_s\), the longer arc between any pair is a simple path of length at least \(s/2\); for \(s\ge4\),
+\[
+W_D(C_s)\ge\tbinom{s}{2}\frac{s}{2}\ge s(s-1),
+\]
+and for \(s=3\) the cycle is a clique. Lemma 2 propagates the bound through cut vertices, proving the claims for block graphs (all blocks cliques) and cactus graphs (all blocks cycles or bridges).
+
+For outerplanar graphs it suffices to consider a two-connected block of order \(s\). Such a block has a Hamiltonian outer-face boundary and at most \(2s-3\) edges. When \(s\ge6\), its cycle already guarantees
+\[
+W_D(F)\ge\tbinom{s}{2}\frac{s}{2}\ge(s-1)(2s-3)\ge(s-1)|E(F)|.
+\]
+For \(s=5\), the cycle provides detours of length at least three for all ten unordered pairs, so \(W_D(F)\ge30>4(2s-3)=28\). For \(s=4\), the four-cycle has detour index \(16>3(2s-3)=15\). For \(s=3\), the block is \(K_3\). Lemma 2 concludes the proof. \(\square\)
+
+**Theorem 4 (detour-index criterion for arbitrary endpoint weights).** Suppose every connected component \(C\) of a graph \(F\) of order \(s\ge2\) satisfies \(W_D(C)\ge(s-1)|E(C)|\). Then, for every real weight function \(w:V(F)\to\mathbb R\),
+\[
+\boxed{
+\sum_{v\in V(F)}\max_{u\in V(F)}
+\bigl(w(u)+D_F(u,v)\bigr)\ge\sum_{v\in V(F)}w(v)+2|E(F)|.
+}\tag{4}
+\]
+*Proof.* For each nontrivial component \(C\) independently choose a uniform random derangement \(\pi_C\). The image \(\pi_C(v)\) is uniformly distributed over the other \(s-1\) vertices. Thus
+\[
+\mathbb E\sum_{v\in C}D_C(\pi_C(v),v)
+=\frac{2W_D(C)}{s-1}\ge 2|E(C)|.
+\]
+Set \(\pi(v)=v\) for isolated vertices. Some component-preserving permutation \(\pi\) has \(\sum_vD_F(\pi(v),v)\ge2|E(F)|\). For arbitrary weights, the left side of (4) is at least
+\[
+\sum_v \bigl(w(\pi(v))+D_F(\pi(v),v)\bigr)
+=\sum_v w(v)+\sum_vD_F(\pi(v),v),
+\]
+as required. \(\square\)
+
+**Theorem 5 (matroidal Hamming-product density theorem).** Let
+\[
+G=\mathop{\square}_{j=1}^{t}K_{m_j},\quad
+R=\bigoplus_{j=1}^{t} M(K_{m_j}),
+\]
+and label an edge changing coordinate \(j\) from symbol \(a\) to \(b\) by the graphic root resource \((j,\{a,b\})\). Let \(H\) be any edge-subgraph of \(G\), retaining all vertices. Assume that every graph of \(H\)-edges within every one-coordinate fiber satisfies the componentwise detour-index criterion of Theorem 4. Then \(H\) has a simple path with an \(R\)-independent set of edge labels and length at least
+\[
+\boxed{\left\lceil\frac{2|E(H)|}{|V(G)|}\right\rceil.}\tag{5}
+\]
+This holds whenever the fiber graphs are block graphs or outerplanar graphs.
+
+*Proof.* Fix factor order \(1,\ldots,t\). Let \(L_0(x)=0\), and inductively let \(L_j(x)\) be the greatest length of a path of \(H\) ending at \(x\) that uses only factors \(1,\ldots,j\), in nondecreasing factor order, traversing within each factor a single simple path among that factor's symbols. Each such path has \(R\)-independent labels: in each factor the traversed roots form a simple graph path, a forest in \(M(K_{m_j})\), and distinct factors belong to different direct summands. These paths are vertex-simple because their potential \(\phi(x)=\oplus_i e_{x_i}\) is injective and a repeated vertex would produce a dependence among traversed root vectors.
+
+Fix a \(j\)-coordinate fiber \(F\). Any preceding path using only the first \(j-1\) factors keeps coordinate \(j\) fixed at some \(u\). Extending it by a simple path along fiber \(F\) from \(u\) to \(v\) retains root independence and vertex simplicity. Hence the dynamic-programming recurrence is
+\[
+L_j(v)=\max_{u\in V(F)}\{L_{j-1}(u)+D_F(u,v)\}.\tag{6}
+\]
+Apply (4) to the weights \(L_{j-1}\) in every such fiber. Sum the resulting inequalities over fibers and successively over \(j\):
+\[
+\sum_{x\in V(G)}L_t(x)\ge 2|E(H)|.
+\]
+Some terminal \(x\) therefore has \(L_t(x)\ge 2|E(H)|/|V(G)|\); integrality proves (5). \(\square\)
+
+**Corollary 6 (canonical models).** All edge-subgraphs of \(Q_n=(K_2)^{\square n}\) satisfy the hypothesis of Theorem 5, since their one-coordinate fibers are isolated vertices or \(K_2\). The conclusion recovers the Leader--Long density theorem for coordinate-distinct cube geodesics and yields monochromatic paths of at least \(n/2\) edges in each color for antipodally odd colorings. The other canonical source model \(U_{2,n}\) has rank-one reduction \(U_{1,n}\), with basis graph \(K_n\) and resource matroid \(M(K_n)\): here the full graph's fiber is a clique, so the theorem guarantees a graphic-independent length-\((n-1)\) path. Boundary coloring resides instead on oriented two-edge windows, so the earlier root-basis tournament path theorem controls its unrestricted monochromatic \(\Omega(\sqrt n)\) paths.
+
+**Remaining conjecture.** It remains to show whether \(W_D(F)\ge(|V(F)|-1)|E(F)|\) holds for every finite connected graph. The preceding results reduce any counterexample to a two-connected graph and prove the conjecture on natural families independent of either NORI construction. The full monochromatic antipodal cube geodesic requires further use of its global color-reversal polarity.
+
+##### Rooted strengthening and reduction to two-connected blocks
+
+The preceding detour-index theorem has a stronger rooted version on these graph families. For a connected graph \(F\), define
+\[
+\Delta_F(z)=S_F(z)-2|E(F)|+\deg_F(z).
+\]
+The proposed unrestricted **rooted detour inequality** is \(\Delta_F(z)\ge0\) for every root \(z\).
+
+**Lemma 8 (rooted inequality is preserved by one-sums).** Suppose connected graphs \(A,B\) meet in one cut vertex \(q\), and \(\Delta_A(x)\ge0\) and \(\Delta_B(y)\ge0\) for every respective root \(x,y\). Then \(\Delta_{A\cup B}(z)\ge0\) for every root \(z\) of their union.
+
+*Proof.* At the shared root, \(S_{A\cup B}(q)=S_A(q)+S_B(q)\), and both edge counts and degrees add, so \(\Delta_{A\cup B}(q)=\Delta_A(q)+\Delta_B(q)\ge0\). For a root \(z\in A-\{q\}\), maximal simple paths from \(z\) to \(B-\{q\}\) pass through \(q\). Hence
+\[
+S_{A\cup B}(z)=S_A(z)+S_B(q)+(b-1)D_A(z,q),
+\]
+where \(b=|V(B)|\). Since \(\deg_{A\cup B}(z)=\deg_A(z)\), this gives
+\[
+\Delta_{A\cup B}(z)=\Delta_A(z)+\Delta_B(q)+(b-1)D_A(z,q)-\deg_B(q)\ge0.
+\]
+Here \(D_A(z,q)\ge1\) and \(\deg_B(q)\le b-1\). The other case is symmetric. \(\square\)
+
+**Theorem 9 (rooted inequality for outerplanar, cactus, and block graphs).** Every graph belonging to any of these three classes satisfies, in each connected component and for every root \(z\),
+\[
+\boxed{\sum_{v\in V(F)}D_F(z,v)\ge2|E(F)|-\deg_F(z).}\tag{8}
+\]
+
+*Proof.* For a clique \(K_s\), every root-to-other-vertex detour has length \(s-1\), so \(S(z)=(s-1)^2=2\binom{s}{2}-(s-1)\). For a cycle \(C_s\), its two neighbors of \(z\) can each be reached around the opposite arc in \(s-1\) edges. Thus \(S(z)\ge 2(s-1)=2|E(C_s)|-\deg(z)\). Lemma 8 settles block graphs and cacti.
+
+For a two-connected outerplanar graph \(F\) of order \(s\), the Hamiltonian outer-face cycle provides two root-to-neighbor detours of length \(s-1\), and each of the remaining \(s-3\) vertices is reachable along the longer of two cycle arcs, giving a detour of length at least \(s/2\). Therefore
+\[
+S_F(z)\ge 2(s-1)+(s-3)\frac{s}{2}
+=\frac{s^2+s-4}{2}.
+\]
+For \(s\ge4\), this is at least \(4s-8\), since the difference is \((s-3)(s-4)/2\). Outerplanarity gives \(m\le2s-3\), and two-connectivity gives \(\deg_F(z)\ge2\), so
+\[
+2m-\deg_F(z)\le4s-8\le S_F(z).
+\]
+For \(s=3\), the block is \(K_3\). Lemma 8 extends the result from blocks to all outerplanar graphs. \(\square\)
+
+**Corollary 10 (rooted inequality implies the conjectural unrestricted weighted theorem).** If the rooted inequality (8) holds for every connected graph \(F\), then the detour-index inequality \(W_D(F)\ge(|V(F)|-1)|E(F)|\), and hence Theorems 4--5 without fiber restrictions, follow.
+
+*Proof.* Summing (8) over all \(n\) choices of root gives
+\[
+2W_D(F)=\sum_z S_F(z)\ge 2n|E(F)|-\sum_z\deg_F(z)
+=2(n-1)|E(F)|.
+\]
+Apply the derangement argument of Theorem 4 to deduce the unrestricted weighted inequality. \(\square\)
+
+The rooted inequality is presently a **conjecture** outside the proved graph families. Lemma 8 reduces its search for counterexamples to two-connected blocks. The rooted and unrooted assertions have been tested on all connected labeled graphs of order at most six and on samples of seven-vertex graphs, without yielding a counterexample; such finite checks are diagnostic only.
+
+##### Complete bipartite and complete split blocks
+
+Two families with arbitrarily large non-outerplanar two-connected blocks also satisfy the rooted inequality, with explicit slack.
+
+**Theorem 11 (complete bipartite blocks).** Let \(F=K_{a,b}\), where \(1\le a\le b\). For a root \(z\) in the part of size \(a\),
+\[
+\boxed{S_F(z)-(2|E(F)|-\deg_F(z))=2(a-1)^2.}\tag{9}
+\]
+For a root \(z\) in the part of size \(b\),
+\[
+\boxed{S_F(z)-(2|E(F)|-\deg_F(z))=
+\begin{cases}
+2(a-1)^2,&b=a,\\
+2a(a-1),&b>a.
+\end{cases}}\tag{10}
+\]
+In particular every complete bipartite graph satisfies the rooted detour inequality.
+
+*Proof.* A simple path in a bipartite graph alternates the two parts. The greatest possible length of a path from a vertex of the smaller part to a vertex of the other part is \(2a-1\); between two vertices of the smaller part it is \(2(a-1)\). Between two vertices of the larger part it is \(2a\) when \(b>a\), and \(2(a-1)\) when \(b=a\). These maxima are attained by alternating paths using the allowed number of vertices in each part. Thus, for a root in the smaller part,
+\[
+S_F(z)=2(a-1)^2+b(2a-1),\quad
+2|E(F)|-\deg(z)=2ab-b=b(2a-1),
+\]
+giving (9). For a root in the larger part and \(b>a\),
+\[
+S_F(z)=2a(b-1)+a(2a-1),\quad
+2|E(F)|-\deg(z)=2ab-a.
+\]
+Subtracting yields \(2a(a-1)\). When \(a=b\), the two parts are symmetric and (9) applies. \(\square\)
+
+**Theorem 12 (complete split blocks).** Let \(F=K_s\vee\overline{K_t}\), with \(s\ge1\) clique vertices and \(t\ge1\) independent vertices. Write \(C\) for the clique part and \(I\) for the independent part. For \(z\in C\),
+\[
+\boxed{S_F(z)-(2|E(F)|-\deg(z))=
+\begin{cases}
+t(t-1),&t\le s-1,\\
+(s-1)^2,&t\ge s.
+\end{cases}}\tag{11}
+\]
+For \(z\in I\),
+\[
+\boxed{S_F(z)-(2|E(F)|-\deg(z))=
+\begin{cases}
+(t-1)^2,&t\le s,\\
+s(s-1),&t\ge s+1.
+\end{cases}}\tag{12}
+\]
+In particular every complete split graph satisfies the rooted detour inequality.
+
+*Proof.* Let \(L_{CC},L_{CI},L_{II}\) be the greatest simple-path lengths between two distinct vertices of the indicated types. In a path, independent vertices must be separated by clique vertices. Conversely any ordering of the required clique and independent vertices respecting that separation is a path in the join. Consequently
+\[
+L_{CC}=s+\min(t,s-1)-1,\quad
+L_{CI}=s+\min(t,s)-1,\quad
+L_{II}=s+\min(t,s+1)-1.
+\]
+(The \(CC\) and \(II\) expressions are used only if those endpoint types occur.) Therefore
+\[
+S_F(z)=
+\begin{cases}
+(s-1)L_{CC}+tL_{CI},& z\in C,\\
+sL_{CI}+(t-1)L_{II},& z\in I.
+\end{cases}
+\]
+The graph has \(m=\binom{s}{2}+st\) edges, a clique vertex has degree \(s-1+t\), and an independent vertex has degree \(s\). Substituting the three displayed path-length formulas and simplifying in the two threshold ranges gives (11) and (12). Every right-hand side is nonnegative. \(\square\)
+
+**Corollary 13 (high-treewidth fiber family).** The rooted inequality (8), the detour-index hypothesis of Theorem 4, and the weighted endpoint inequality (4) hold on every connected graph whose blocks belong to the union of the following classes: outerplanar graphs, complete bipartite graphs, and complete split graphs. Consequently Theorem 5 holds for arbitrary Hamming-product edge-subgraphs all of whose one-coordinate fiber components have blocks of these types.
+
+*Proof.* Theorems 9, 11, and 12 establish the rooted bound on each block, and Lemma 8 propagates it through the block-cut tree. Summing over roots and applying Theorem 4 establishes the weighted inequality. Theorem 5 then applies fiberwise. \(\square\)
+
+These new block families include two-connected graphs of arbitrarily large treewidth (complete bipartite graphs with both part sizes increasing, and dense complete split graphs). They extend the preceding result beyond sparse planar exchange geometries. The stronger unrestricted rooted inequality remains open.
+
+##### Dominant independent parts and complete multipartite graphs
+
+We extend the rooted-detour inequality to graphs containing a complete bipartite spanning subgraph with a sufficiently large independent side, and thence to all complete multipartite graphs. The proofs use the preceding complete-bipartite slack formulas and the classical Ore Hamiltonian-connectedness theorem.
+
+**Theorem 14 (stability under filling the smaller side of a biclique).** Let \(a\ge b\ge1\) be integers. Let \(A,B\) be disjoint vertex sets of cardinalities \(a,b\). Define
+\[
+G=\overline{K_a}\vee H,
+\]
+where \(H\) is an arbitrary simple graph on \(B\); thus \(A\) is independent and all \(ab\) edges between \(A,B\) belong to \(G\). Then for every root \(z\in V(G)\),
+\[
+\boxed{S_G(z)\ge 2|E(G)|-\deg_G(z).}\tag{13}
+\]
+For \(b\ge2\), a uniform lower bound for the rooted slack is
+\[
+\Delta_G(z):=S_G(z)-2|E(G)|+\deg_G(z)
+\ge(b-1)(b-2).
+\tag{14}
+\]
+
+*Proof.* Let \(G_0=K_{a,b}\subseteq G\), and let \(e=|E(H)|\le\binom b2\). Since adding edges does not reduce any longest simple-path length, \(S_G(z)\ge S_{G_0}(z)\). Also
+\[
+|E(G)|=ab+e,\qquad
+\deg_G(z)=\deg_{G_0}(z)+\deg_H(z),
+\]
+where \(\deg_H(z)=0\) for \(z\in A\). Therefore
+\[
+\Delta_G(z)\ge\Delta_{G_0}(z)-2e+\deg_H(z)
+\ge\Delta_{G_0}(z)-2e.
+\tag{15}
+\]
+The complete-bipartite formulas in Theorem 11 give \(\Delta_{G_0}(z)\ge 2(b-1)^2\) for every root: the smaller part of \(K_{a,b}\) has order \(b\), and the displayed root slack on either side has this lower bound. Thus
+\[
+\Delta_G(z)\ge2(b-1)^2-b(b-1)=(b-1)(b-2)\ge0
+\]
+when \(b\ge2\). If \(b=1\), the only possible \(H\) has no edges and \(G=K_{a,1}\), already covered by Theorem 11. \(\square\)
+
+The theorem allows an arbitrary pattern of up to \(\binom b2\) internal edges on \(B\), independent of whether the resulting graph is chordal, planar, or multipartite. The hypothesis is intrinsic: \(G\) contains an independent set of size at least half its order, every vertex of which is adjacent to every vertex outside that set.
+
+**Theorem 15 (all complete multipartite graphs).** Every connected complete multipartite graph \(G=K_{a_1,\ldots,a_t}\) satisfies the rooted-detour inequality (13) for every root.
+
+*Proof.* Let \(n=\sum_i a_i\) and \(a=\max_i a_i\). If \(a\ge n/2\), choose a part \(A\) of order \(a\) and let \(B=V(G)\setminus A\) have size \(b=n-a\le a\). All edges between \(A\) and \(B\) occur and \(A\) is independent. Theorem 14 applies, regardless of the internal multipartite graph on \(B\).
+
+Now suppose \(a<n/2\). Since \(a\) is integral, \(a\le(n-1)/2\). Every nonadjacent pair \(u,v\) belongs to one common part of cardinality \(s\le a\), so
+\[
+\deg_G(u)+\deg_G(v)=2(n-s)\ge n+1.
+\]
+By Ore's Hamiltonian-connectedness theorem (Ore's degree-sum criterion for Hamiltonian-connected graphs, as recalled in Gould–Yu, *On hamiltonian-connected graphs*, J. Graph Theory 18 (1994), 841–860), \(G\) has a Hamiltonian path between every pair of distinct vertices. Hence \(D_G(z,v)=n-1\) for every \(v\ne z\), and
+\[
+S_G(z)=(n-1)^2\ge\sum_{v\ne z}\deg_G(v)=2|E(G)|-\deg_G(z),
+\]
+since every degree is at most \(n-1\). For orders \(n\le2\) the claim follows by direct inspection. \(\square\)
+
+**Corollary 16 (weighted detours and Hamming products).** The weighted endpoint inequality (4) holds for every graph whose connected components are complete multipartite, or whose blocks are complete multipartite, outerplanar, complete bipartite, or complete split graphs. The matroidal Hamming-product density theorem (Theorem 5) therefore applies whenever all one-coordinate fiber components have blocks from this enlarged list.
+
+*Proof.* Theorem 15 and Lemma 8 verify the rooted inequality through one-sum gluing. Summation over roots yields the detour-index inequality; Theorem 4 supplies arbitrary endpoint weights, which Theorem 5 propagates factor by factor. \(\square\)
+
+The complete-multipartite result covers high-connectivity and arbitrarily large graphic circuits without requiring a bounded treewidth or chordal graph structure. It leaves the unrestricted rooted-detour and vertex-deletion conjectures open.
+
+
+##### Augmentation from a Hamiltonian-connected core
+
+**Theorem 17 (sharp vertex-deletion inequality).** Let \(G\) be connected and \(H=G-v\) Hamiltonian-connected. Write \(N=|V(H)|\), \(K=N_G(v)\), and \(k=|K|\). Then for every \(z\in V(H)\),
+\[
+\boxed{S_G(z)-S_H(z)\ge 2k-\mathbf1_{\{z\in K\}}.}\tag{16}
+\]
+Consequently the rooted-detour inequality holds at every root of \(G\).
+
+*Proof.* For \(N=1\) the graph is \(K_2\). Suppose \(N\ge2\). If \(K=\{z\}\), then \(D_G(z,v)=1=2k-\mathbf1_{\{z\in K\}}\) and every old endpoint detour can only increase. In every other case there is a neighbor \(u\in K-\{z\}\). A Hamiltonian \(z\)-to-\(u\) path in \(H\), followed by \(uv\), shows \(D_G(z,v)=N\). Every existing endpoint \(w\ne z\) has \(D_H(z,w)=N-1\), and its new detour length is either \(N-1\) or \(N\). The latter occurs whenever a Hamiltonian \(z\)-to-\(w\) path in \(H\) has two consecutive vertices in \(K\): insert \(v\) between them.
+
+If \(2k-\mathbf1_{\{z\in K\}}\le N\), the newly available endpoint \(v\) supplies the claimed increase. If \(k>\lceil N/2\rceil\), any Hamiltonian path in \(H\) has two consecutive vertices in \(K\), since at most \(\lceil N/2\rceil\) positions of a path can be chosen without consecutive positions. All \(N-1\) old endpoints therefore gain one, and \(S_G(z)-S_H(z)=2N-1\ge2k-\mathbf1_{\{z\in K\}}\). The sole remaining possibility is \(N=2m-1\), \(k=m\), \(z\notin K\). Choose \(w\in K\) and a Hamiltonian \(z\)-to-\(w\) path in \(H\). An alternating placement of \(m\) marked \(K\)-vertices among \(2m-1\) positions with no adjacent marks must start with a marked position; since \(z\notin K\), a consecutive \(K\)-pair must occur. Inserting \(v\) gives a gain of one at endpoint \(w\), producing the required increment \(N+1=2m=2k\). This proves (16).
+
+Because \(H\) is Hamiltonian-connected, \(S_H(z)=(N-1)^2\ge 2|E(H)|-\deg_H(z)\); adding (16) proves the rooted inequality on \(H\)'s vertices. At root \(v\) there are two cases. If \(k\ge2\), for each \(w\in H\) choose \(u\in K-\{w\}\), traverse a Hamiltonian \(u\)-to-\(w\) path of \(H\) after the initial edge \(vu\), and obtain \(D_G(v,w)=N\). Thus \(S_G(v)=N^2\ge 2|E(H)|+k=2|E(G)|-\deg_G(v)\). If \(k=1\), let \(u\) be the sole neighbor; then
+\[
+S_G(v)=N+S_H(u)=N+(N-1)^2
+\ge2|E(H)|+1=2|E(G)|-\deg_G(v).
+\]
+This completes the proof. \(\square\)
+
+The result is an unconditional one-vertex extension theorem for *arbitrary attachment neighborhoods*, provided the core is Hamiltonian-connected. Its proof isolates the failure mechanism for general vertex deletion: the desired detour increment is available by inserting a vertex between adjacent neighbors on a long endpoint path. It remains open whether an aggregate version of this argument works for arbitrary connected deletion cores.
+
+
+Let \(G=H(k,3)=K_3^{\square k}\), \(k\ge1\), with canonical edge-resource matroid \(N=N_{\mathrm{sp}}(G)\cong\bigoplus_{j=1}^kM(K_3)\). Let \(c:E(G)\to\mathbb F_2\) and let \(b(u,v,w)\) label ordered two-edge turns under the intrinsic rules
+\[
+b(u,v,w)+b(w,v,u)=\mathbf1_{\{uw\in E(G)\}}\pmod2,\qquad
+b(u,v,w)=c(uv)+c(vw)\quad\text{if }uw\notin E(G).\tag{1}
+\]
+A path is **accepted** if all internal \(b\)-turns are zero and its edge resources are independent in \(N\).
+
+A **coordinate triangle** arises by fixing all but one coordinate. If its three edges are monochromatic, its three unoriented two-edge walks have one accepted orientation apiece. These orientations induce a tournament on their endpoint pairs. Call the triangle **defective** if this tournament is transitive; let \(B\) be the total number of defective coordinate triangles.
+
+**Theorem (ternary turn conservation).** There exists an accepted monochromatic \(N\)-independent path of length
+\[
+\boxed{\ell\ge\left\lceil k-\frac{B}{2\cdot3^k}\right\rceil\ge\left\lceil\frac{5k}{6}\right\rceil.}\tag{2}
+\]
+Consequently the Hamming-root factor-count conjecture \(\ell\ge k\) holds for all \(k\le5\); it also holds for arbitrary \(k\) whenever no coordinate triangle is defective. In particular, it holds whenever every coordinate triangle is bichromatic.
+
+*Proof.* Let \(F\) be any subgraph of a coordinate \(K_3\) whose edges have one fixed color. Let \(D_F(u,v)\) denote the greatest length of an accepted simple \(u\)-to-\(v\) path within \(F\), taking \(D_F(u,u)=0\) and \(-\infty\) for unreachable pairs. Every single edge is accepted. Put \(\delta(F)=1\) if \(F=K_3\) and its accepted two-step endpoint tournament is transitive; put \(\delta(F)=0\) otherwise.
+
+**Local permutation lemma.** There exists a permutation \(\pi\) of the three vertices of \(F\), using only reachable source-target pairs, for which
+\[
+\sum_v D_F(\pi(v),v)\ge 2|E(F)|-\delta(F).\tag{3}
+\]
+For zero edges choose the identity; for one edge transpose its endpoints to obtain total length two. For two edges \(F=a-b-c\), reversal oddness on its triangular turn accepts one of \(a-b-c\), \(c-b-a\). If the former is accepted, use the cyclic source-target assignment \(a\to c,\ c\to b,\ b\to a\), giving total length \(2+1+1=4\); reverse it in the other case. For three edges, each ordered pair has a direct path of length one, and one orientation of each two-edge path is accepted. These longer path orientations constitute a tournament on three vertices. Its cyclic case admits a cyclic permutation with three length-two paths, total six. Its transitive case admits a cyclic permutation with two forward arcs of length two and one reverse arc of length one, total five. This establishes (3).
+
+For any real weight function \(w\) on the three vertices, put \(T_F(w)(v)=\max_u\{w(u)+D_F(u,v)\}\). The permutation lemma implies
+\[
+\sum_v T_F(w)(v)\ge\sum_v w(v)+2|E(F)|-\delta(F),\tag{4}
+\]
+because \(\sum_vw(\pi(v))=\sum_vw(v)\).
+
+Now choose one edge color \(s\). Process coordinates in order \(1,\ldots,k\), and define \(L_j(x)\) as the largest length of a color-\(s\) accepted path ending at \(x\), whose coordinate indices are nondecreasing and whose successive moves within one coordinate visit distinct symbols. Set \(L_0(x)=0\). For each \(j\)-coordinate triangle fiber, with color-\(s\) edge subgraph \(F\), the dynamic-programming recurrence is
+\[
+L_j(v)=\max_u\{L_{j-1}(u)+D_F(u,v)\}.\tag{5}
+\]
+The concatenated path is accepted: turns internal to one coordinate segment are accepted by definition of \(D_F\); turns joining different factors have nonadjacent outer vertices, and their label is \(s+s=0\) by (1). Its edge-resource family is independent because within each coordinate factor it is a simple path in the root \(K_3\), hence a forest in the corresponding direct-sum factor \(M(K_3)\). Nondecreasing factor order also makes the full vertex path simple.
+
+Apply (4) to weights \(L_{j-1}\) in every fiber of coordinate \(j\), and sum over the \(3^{k-1}\) fibers. Then
+\[
+\sum_{x\in V(G)}L_j(x)\ge\sum_xL_{j-1}(x)+2|E_s^{(j)}|-B_s^{(j)},
+\]
+where \(E_s^{(j)}\) comprises the color-\(s\) edges of the \(j\)-factor and \(B_s^{(j)}\) its defective monochromatic triangles. Summing across coordinates gives
+\[
+\sum_x L_k^{(s)}(x)\ge 2|E_s|-B_s.\tag{6}
+\]
+Summing (6) over the two colors gives
+\[
+\sum_x\bigl(L_k^{(0)}(x)+L_k^{(1)}(x)\bigr)
+\ge 2|E(G)|-B=2k3^k-B.
+\]
+Thus some color and some terminal vertex satisfy
+\[
+L_k^{(s)}(x)\ge k-\frac B{2\cdot3^k}.
+\]
+There are \(k3^{k-1}\) coordinate triangles, so \(B\le k3^{k-1}\), and (2) follows. For \(k\le5\), \(\lceil5k/6\rceil=k\); if \(B=0\), the first inequality gives \(\ell\ge k\). \(\square\)
+
+**Interpretation.** The local weighted transfer contribution equals \(2|E(F)|\) except for a transitive monochromatic coordinate triangle, which can lose one unit. Every other fiber, including a bichromatic triangle, conserves the full weighted transfer budget. This gives the first linear-in-\(k\) bound for arbitrary polarized ternary Hamming systems, establishes the full factor-count guarantee in dimensions \(k\le5\), and reduces the unrestricted ternary gap to controlling global compensation for transitive monochromatic triangles. The binary endpoint remains the NORI1 antipodal spanning problem.
+
+**Corollary (critical six-factor rigidity).** If a triangular-turn system on \(H(6,3)\) has no accepted monochromatic resource-independent path of length six, then (i) all \(6\cdot3^5=2\cdot3^6\) coordinate triangles are defective, hence monochromatic with transitive accepted-turn tournaments; (ii) there are \(3^6\) defective triangles of each color; and (iii) for every permutation \(\sigma\) of the six factor indices, each color \(s\), and each terminal vertex \(x\), the longest accepted color-\(s\) path whose coordinate segments occur in order \(\sigma\) and do not revisit a symbol within one segment has length five.
+
+*Proof.* Put \(V=3^6\). The bound (2) forces \(B\ge2V\) if no length-six path exists, while the total number of coordinate triangles equals \(2V\). Thus every coordinate triangle is defective. Let \(B_s\) count the defective triangles of color \(s\). Every edge of color \(s\) lies in one of these monochromatic coordinate triangles, so \(|E_s|=3B_s\). The transfer inequality (6) gives
+\[
+\sum_x L_6^{(s)}(x)\ge2|E_s|-B_s=5B_s.
+\]
+Since every terminal length is at most five, the sum is at most \(5V\), hence \(B_s\le V\). As \(B_0+B_1=2V\), equality holds: \(B_0=B_1=V\). Therefore \(\sum_xL_6^{(s)}(x)\ge5V\) while each summand is at most five, so every \(L_6^{(s)}(x)=5\). The dynamic-programming proof is invariant under permutations of the coordinate order, giving the terminal conclusion for every \(\sigma\). \(\square\)
+
+This isolates the equality case: a perfectly balanced system of transitive monochromatic coordinate triangles with flat five-edge terminal profiles under all \(6!\) factor orders.
+
+**Lemma (forced predecessor profile in the critical case).** In the hypothetical six-factor counterexample of the preceding corollary, fix any order of factors, its final factor \(j\), and a coordinate-\(j\) fiber. If the fiber is monochromatic in color \(s\), then the three values of \(L_5^{(s)}\) just before processing that fiber are, in some order,
+\[
+\boxed{(3,3,4),}\tag{7}
+\]
+with the value four located at the sink of the fiber's accepted two-step endpoint tournament. For the other color, whose fiber edge subgraph is empty, all three predecessor values are five.
+
+*Proof.* By the corollary, for both colors and every terminal vertex, \(L_6^{(s)}=5\). Equality also holds in every summed local transfer inequality (4): the two colors' total transfer lower bounds sum to the maximum possible \(10\cdot3^6\), and each of their terminal outputs is at most five. Thus on a defective color-\(s\) triangle, with input weights \(w\), the transfer output \(T_F(w)\) is the constant vector \((5,5,5)\) and \(\sum w=10\).
+
+Relabel the triangle so its accepted length-two endpoint tournament is transitive \(a\to b\), \(a\to c\), \(b\to c\). Every direct edge has length one; the accepted length-two arcs have length two. Therefore
+\[
+T_F(w)(a)=\max\{w_a,w_b+1,w_c+1\},\quad
+T_F(w)(b)=\max\{w_b,w_a+2,w_c+1\},\quad
+T_F(w)(c)=\max\{w_c,w_a+2,w_b+2\}.
+\]
+To reach output five at \(a\), some predecessor other than \(a\) must have weight four (the possibility \(w_a=5\) would force the output at \(b\) to be at least seven). Weight four at \(b\) would force output at \(c\) to be at least six. Hence \(w_c=4\). The output constraints at \(b,c\) give \(w_a,w_b\le3\), and the sum \(\sum w=10\) forces \(w_a=w_b=3\). When the fiber has no edges of color \(1-s\), its transfer map is the identity, so the opposite-color predecessor vector is \((5,5,5)\). \(\square\)
+
+Thus a six-factor counterexample would force a specific \((3,3,4)\) profile around every last-factor monochromatic triangle, in every permutation of the six factors.
+
+### Permutation galleries, unimodular transport, and endpoint degrees
+
+Let \(H(k,q)=K_q^{\square k}\) with \(k\ge1,q\ge2\), and \(N_{\rm sp}\) its canonical spectral-resource matroid on graph edges. Fix a root \(x\), let \(d=k(q-1)\), and put
+\[
+D_x=\{(i,b): i\in[k],\ b\in[q]\setminus\{x_i\}\},
+\qquad |D_x|=d.
+\]
+Orient a root edge by the direction of traversal. Its spectral difference vector is \(e_b-e_a\) in coordinate summand \(i\) when that coordinate changes from \(a\) to \(b\).
+
+**Theorem 1 (full-rank gallery permutation correspondence).** Every \(N_{\rm sp}\)-independent path of length \(d\) beginning at \(x\) is obtained uniquely from a permutation \(\pi=(t_1,\ldots,t_d)\) of \(D_x\): for \(t_j=(i,b)\), replace the current \(i\)-th coordinate value by \(b\). Every such permutation yields a resource-independent path.
+
+**Proof.** Resource independence means the transitions in each coordinate form a forest in the graphic matroid \(M(K_q)\). Since the coordinate transitions form a trail, they cannot revisit a coordinate symbol. Rank saturation forces \(q-1\) transitions in each coordinate, so the successive visited symbols are a permutation of the \(q-1\) symbols other than \(x_i\). Interleaving the \(k\) coordinate sequences gives a permutation of \(D_x\). Conversely a permutation of \(D_x\) gives a simple coordinate path in each complete-graph factor, hence a forest, and the resource vectors for different factors occupy direct-sum subspaces. The entire set of \(d\) edge vectors is therefore independent. \(\square\)
+
+**Corollary 2 (diametral endpoints and uniform fibers).** Every full-rank path from \(x\) finishes at some \(y\) differing from \(x\) in all \(k\) coordinates. Every such \(y\) occurs, and the number of full-rank paths with prescribed directed endpoints \(x,y\) is
+\[
+\boxed{\frac{d!}{(q-1)^k}}.
+\tag{1}
+\]
+In particular there are \(d!\) full-rank paths from \(x\), distributed uniformly among the \((q-1)^k\) diametral endpoints.
+
+**Proof.** In each coordinate the prescribed terminal symbol is the last visited among \(q-1\) tokens. Choose the orders of the \(q-2\) remaining tokens in \((q-2)!\) ways, and interleave the \(k\) ordered coordinate sequences in \(d!/((q-1)!)^k\) ways. Their product is (1). \(\square\)
+
+In the cube endpoint \(H(n,2)=Q_n\), this is the familiar \(n!\) antipodal geodesics between fixed endpoints. At \(H(1,n)=K_n\) the count becomes \((n-2)!\) Hamilton paths between prescribed distinct vertices.
+
+**Theorem 3 (unimodular triangular change of basis).** Let \(w_{i,b}=e_b-e_{x_i}\), for \((i,b)\in D_x\), be the root-star basis of the spectral resource space. For \(\pi=(t_1,\ldots,t_d)\), write \(u_j\) for the vector of its \(j\)-th oriented path edge, and \(p(j)<j\) for the previous occurrence of the coordinate of \(t_j\), if one exists. Then
+\[
+u_j=w_{t_j}-w_{t_{p(j)}} ,
+\]
+where the second term is zero if \(p(j)\) does not exist. The matrix with columns \(u_j\) in the ordered basis \((w_{t_1},\ldots,w_{t_d})\) is unitriangular. Consequently, relative to any fixed ordering of the root-star basis,
+\[
+\boxed{\det(u_1,\ldots,u_d)=\operatorname{sgn}(\pi).}
+\tag{2}
+\]
+Adjacent token swaps reverse this determinant, thereby connecting resource-basis orientation to the permutohedral exchange graph.
+
+**Proof.** The changed coordinate goes from the value visited at its previous occurrence (or \(x_i\) for its first occurrence) to the newly named symbol. Subtracting their root-star vectors gives the identity above. The new token contributes diagonal coefficient one and any previous token contributes a coefficient in an earlier row. Hence the matrix is unitriangular, and the remaining determinant sign is the sign of the ordering permutation. \(\square\)
+
+**Proposition 4 (signed endpoint enumeration).** Fix \(x\) and a diametral endpoint \(y\). The signed sum \(\sum_{\pi:x\to y}\operatorname{sgn}(\pi)\) is zero for \(q\ge4\), and also for \(q=2,k\ge2\). For \(q=3\), its absolute value is \(k!\), with the sign depending on the reference token order.
+
+**Proof.** When \(q\ge4\), each factor has at least two nonterminal tokens. Interchange two chosen nonterminal tokens from one factor in the permutation word. The endpoint stays fixed, and the determinant changes sign; this is a sign-reversing fixed-point-free involution. For \(q=2,k\ge2\), each factor has one token, and every permutation has the same endpoint. Transpose the positions of two fixed tokens to pair signs.
+
+For \(q=3\), the prescribed endpoint leaves a pair of ordered tokens in each coordinate. Every endpoint gallery is a shuffle of these \(k\) ordered pairs. Partition the \(2k\) word positions into adjacent slots \((1,2),(3,4),\ldots,(2k-1,2k)\). For a shuffle in which one slot contains tokens from different coordinates, choose the first such slot and swap its two tokens. This is a fixed-point-free sign-reversing involution, preserving each coordinate's internal token order. The surviving shuffles have every slot occupied by the two tokens of the same coordinate in their prescribed order. There are \(k!\) such shuffles. Permuting two complete slots makes four elementary transpositions, so all survivors have the same sign. The signed sum thus has absolute value \(k!\). \(\square\)
+
+**Interpretation.** The cube and rank-two uniform endpoints have a common permutation-gallery and unimodular resource orientation algebra. The untwisted signed degree cancels at both endpoints for growing rank; the ternary Hamming interpolation retains a nonzero integer signed endpoint enumerator. This alone does not force any color-coherent gallery. Any determinant-degree attempt for arbitrary cube antipodal coloring must incorporate the coloring, root transport, or a signed-cover twist.
+
+### Polarized Hamming turn geometry and the displacement conjecture
+
+Let \(M=\bigoplus_{i=1}^{k}U_{r_i,E_i}\), with \(m_i:=|E_i|\ge2\) and \(1\le r_i<m_i\). The summand ground sets are the intrinsic connected components of \(M\). Define
+\[
+M^\flat=\bigoplus_iU_{1,E_i},\quad
+G=\Gamma(M^\flat)=\square_iK_{E_i},\quad
+N=\bigoplus_i M(K_{E_i}),\quad
+d=\operatorname{rk}(N)=\sum_i(m_i-1).
+\tag{1}
+\]
+An edge changing symbol \(a\) to \(b\) in factor \(i\) carries resource \((i,\{a,b\})\), represented by \(e_b-e_a\) in the \(i\)-th summand. The potential \(\Phi(x)=\bigoplus_i e_{x_i}\) is injective; its edge differences realize \(N\). Consequently every star of \(G\) is an \(N\)-basis, and every graph cycle is \(N\)-dependent.
+
+A **factorwise polarity** \(\tau\) is either the identity, or a product of fixed-point-free involutions \(\tau_i:E_i\to E_i\) on all factors, with \(k\ge2\) in the latter case. Put \(\chi_\tau=0\) in the identity case and \(1\) otherwise. Equivalently, \(\chi_\tau\) is the canonical faithful character of \(\langle\tau\rangle\) into \(\mathbb F_2\), including the trivial group. Let \(c:E(G)\to\mathbb F_2\) color undirected edges and satisfy
+\[
+c(\tau e)=c(e)+\chi_\tau.
+\tag{2}
+\]
+For each nonbacktracking turn \((u,v,w)\), prescribe a bit \(b(u,v,w)\) according to the **triangle-curvature rule**
+\[
+\boxed{
+\begin{cases}
+b(u,v,w)+b(w,v,u)=1,&uw\in E(G),\\
+b(u,v,w)=c(uv)+c(vw),&uw\notin E(G).
+\end{cases}}
+\tag{3}
+\]
+The triangular case is an unrestricted tournament comparison; the other case tests edge-color agreement. For products of cliques, a turn is triangular precisely when its two steps change one factor. Both clauses are invariant under isomorphisms of the matroid with its chosen polarity.
+
+Call a path \(P=(v_0,\ldots,v_\ell)\) an **accepted gallery** when its edge resources are \(N\)-independent, its graph edges have a common \(c\)-color, and every interior turn has bit \(b=0\). Matroid independence entails vertex simplicity because a closed subwalk yields an \(N\)-dependent cycle. The witness predicate is uniform across all members of this class.
+
+**Theorem 1 (common rank-growth bound).** Every preceding geometry has an accepted gallery with
+\[
+\ell\ge\left\lceil\tfrac12\sqrt d\right\rceil .
+\tag{4}
+\]
+
+*Proof.* One \(c\)-color class spans at least half the edges of the \(d\)-regular graph \(G\). Its spanning subgraph \(H\) has average degree at least \(d/2\). At every vertex of \(H\), put a tournament on the incident edges: for a pair forming a triangular turn, favor the bit-zero direction, which is unique by (3); for a nontriangular turn, both bit values are zero because both edges have the same color, so choose either direction. Restrict \(N\) to the edges of \(H\). Vertex stars remain independent, and all cycles of \(H\) remain dependent. The cycle-dominating resource-matroid terminal theorem of Article XI provides an \(N\)-independent path respecting these tournaments and containing at least \(\sqrt{\bar d(H)/2}\ge\sqrt d/2\) edges. Its turns have bit zero and its edges share one color. Taking the ceiling proves the claim. \(\square\)
+
+The **polar displacement** is the intrinsic quantity
+\[
+\rho(G,\tau):=\min_x d_G(x,\tau x)=k\chi_\tau.
+\tag{5}
+\]
+
+**Conjecture U (polarized Hamming displacement).** Every preceding geometry admits an accepted gallery with
+\[
+\boxed{\ell\ge \max\left\{
+\left\lceil\tfrac12\sqrt{\operatorname{rk}N}\right\rceil,\,
+\rho(G,\tau)\right\}.}
+\tag{6}
+\]
+This is one quantitative conjecture over a continuous family of root-exchange geometries. It uses the same resource-independence, color-consistency, and turn-admissibility witness in every instance.
+
+**Theorem 2 (NORI1 equivalence).** Conjecture U over the entire polarized Hamming class holds if and only if NORI1 holds for every admissible dimension.
+
+*Proof that U implies NORI1.* For \(M=\bigoplus_{i=1}^nU_{1,2}\), \(G=Q_n\), \(N\) is the coordinate-partition resource matroid of rank \(n\), and \(\tau\) toggles all \(n\) factors. An arbitrary antipodally odd coloring of undirected cube edges satisfies (2), while all nonbacktracking turns are nontriangular and (3) becomes \(b(u,v,w)=c(uv)+c(vw)\). Thus accepted galleries are monochromatic coordinate-distinct geodesics. Equation (6) forces \(n\) edges. Independence then forces each coordinate to appear once, so the endpoints are antipodal.
+
+*Proof that NORI1 implies U.* For identity polarity, Theorem 1 proves (6). Suppose \(\tau=\prod_i\tau_i\) is nontrivial. Choose any \(a_i\in E_i\) and consider the induced cube
+\[
+Q(a)=\prod_i\{a_i,\tau_i(a_i)\}\subseteq G.
+\tag{7}
+\]
+It is invariant under \(\tau\), and \(\tau\) acts on it as cube complementation. By (2), the restriction of \(c\) is antipodally odd. NORI1 supplies a monochromatic geodesic of \(k\) edges within this cube. Each step changes a different factor, so its \(N\)-resources lie in different direct summands and are independent. Every turn changes two factors; hence its outside endpoints are nonadjacent in \(G\) and its bit is zero by (3). It is an accepted gallery of length \(k=\rho(G,\tau)\). Theorem 1 separately gives a gallery of length at least \(\lceil\sqrt d/2\rceil\). Taking the longer witness establishes (6). \(\square\)
+
+**Corollary 3 (both original models).** The cube model \(M=\bigoplus U_{1,2}\), with its canonical nontrivial polarity, yields a full monochromatic antipodal geodesic by U. For the boundary model \(M=U_{2,n}\), the root is \(G=K_n\), \(N=M(K_n)\), \(d=n-1\), and \(\tau=\mathrm{id}\). Choose \(c\equiv0\). All turns are triangular, so any reversal-odd boundary coloring \(b(a,v,w)\) satisfies (3). Accepted galleries are vertex-simple bit-zero tight paths. Theorem 1 gives at least \(1+\lceil\sqrt{n-1}/2\rceil\) original vertices, and the unpartitioned terminal bound in Article XI improves this to \(1+\sqrt{(n-1)/2}\). Reversing the original vertex word gives the opposite color.
+
+**Corollary 4 (even-alphabet antipodal extension).** Assuming NORI1, for any \(k\ge2\), any even \(m_i\ge2\), any factorwise fixed-point-free \(\tau\), and any edge coloring of \(\square_iK_{m_i}\) with \(c(\tau e)=1-c(e)\), there is a monochromatic path of \(k\) edges from some \(x\) to \(\tau x\), using every factor once. No triangle-turn comparison restricts this witness. This follows from the invariant cube (7).
+
+**Proposition 5 (polarity is invisible locally).** In a nontrivially polarized product, fix \(x\) and \(R\) with \(2R<k\). Any arbitrary coloring of the edges induced by the radius-\(R\) ball about \(x\) extends to a global coloring satisfying (2).
+
+*Proof.* If an edge \(e\) and \(\tau e\) both lay within that ball, some vertex \(y\) and its image \(\tau y\) would both be within distance \(R\) of \(x\). This contradicts \(k=d_G(y,\tau y)\le2R\). The edge action is free, since \(\tau\) changes every factor and \(k\ge2\), so each edge orbit has size two. Choose the prescribed bit on the unique orbit representative lying in the ball, put its complement on the translated edge, and fill all other orbits arbitrarily. \(\square\)
+
+Theorem 1 is a uniform local rank-growth mechanism common to both examples. Theorem 2 shows that promoting this mechanism to full polar displacement is equivalent to the unresolved NORI1 assertion. The freedom in triangular turns and the forced color-potential rule on commuting-factor turns arise from the same graph's intrinsic local geometry. The current implication from NORI1 to U uses an invariant cube slice, leaving open a direct rank-saturation proof that interacts with all factors without restricting to that slice.
+
+Let \(G=H(k,q)=K_q^{\square k}\), \(k\ge1,q\ge2\), with canonical spectral edge-resource matroid
+\[
+N_{\rm sp}(G)\cong\bigoplus_{j=1}^kM(K_q).
+\]
+Let \((b,c)\) be an arbitrary triangular-turn system:
+\[
+b(u,v,w)+b(w,v,u)=\mathbf1_{\{uw\in E(G)\}},\qquad b(u,v,w)=c(uv)+c(vw)\quad(uw\notin E(G)),\tag{1}
+\]
+with binary arithmetic. A path is **accepted** when all turns have label zero and the traversed edge resources are independent in \(N_{\rm sp}(G)\).
+
+**Theorem (uniform linear factor bound).** Every system (1) admits an accepted monochromatic path with
+\[
+\boxed{\ell\ge\left\lceil\frac{k}{2}\right\rceil.}\tag{2}
+\]
+In combination with the cycle-dominating resource-matroid terminal theorem, this gives
+\[
+\boxed{\ell\ge\max\left\{\left\lceil\frac{k}{2}\right\rceil,\left\lceil\frac12\sqrt{k(q-1)}\right\rceil\right\}.}\tag{3}
+\]
+No antipodal condition, representability assumption beyond the canonical spectral resource, or restriction on triangle-turn orientations is required.
+
+*Proof.* Fix one edge color \(s\). Process factors in the order \(1,\ldots,k\). Define \(L_j(x)\) as the maximum length of a color-\(s\) path ending at \(x\) that uses at most one edge from each factor \(1,\ldots,j\), with factor indices strictly increasing. Put \(L_0(x)=0\). A transition between different factors is nontriangular and has turn label \(s+s=0\); no turn inside a factor occurs. Consequently every such path is accepted. The use of each factor at most once guarantees independence in the direct-sum graphic resource matroid.
+
+For a \(j\)-coordinate fiber, let \(F\) be the subgraph of \(K_q\) consisting of its color-\(s\) edges, and let \(w\) be the weights \(L_{j-1}\) at its \(q\) vertices. The new terminal weights are
+\[
+T_F(w)(v)=\max\bigl\{w(v),\max_{u:\,uv\in E(F)}(w(u)+1)\bigr\}.\tag{4}
+\]
+Put \(\delta_v=T_F(w)(v)-w(v)\ge0\). For each edge \(uv\in E(F)\), the inequalities \(T_F(w)(u)\ge w(v)+1\) and \(T_F(w)(v)\ge w(u)+1\) imply
+\[
+\delta_u+\delta_v\ge2.
+\]
+Summing over edges, and using \(\deg_F(v)\le q-1\), yields
+\[
+2|E(F)|\le\sum_v\deg_F(v)\delta_v\le(q-1)\sum_v\delta_v.
+\]
+Thus
+\[
+\sum_vT_F(w)(v)\ge\sum_vw(v)+\frac{2|E(F)|}{q-1}.\tag{5}
+\]
+Sum (5) over all \(j\)-coordinate fibers and then \(j=1,\ldots,k\):
+\[
+\sum_{x\in V(G)}L_k(x)\ge\frac{2|E_s|}{q-1}.\tag{6}
+\]
+Since the regular graph \(G\) has \(q^k\) vertices and \(k(q-1)q^k/2\) edges, one color class contains at least \(k(q-1)q^k/4\) edges. For that color, (6) shows some terminal \(x\) satisfies
+\[
+L_k(x)\ge\frac{2|E_s|}{(q-1)q^k}\ge\frac{k}{2}.
+\]
+Integrality proves (2); combining with the previously established root-resource square-root bound proves (3). \(\square\)
+
+**Strengthening for nonhomogeneous Hamming products.** The same argument applies to
+\[
+G=\square_{j=1}^kK_{q_j},\qquad q_j\ge2,
+\]
+with root resources \(\bigoplus_jM(K_{q_j})\), because each \(j\)-fiber contributes \(2|E_s^{(j)}|/(q_j-1)\). Summing over the two color classes, the total normalized contribution is
+\[
+\frac1{|V(G)|}\sum_{j=1}^k\frac{2|E(G)^{(j)}|}{q_j-1}
+=\sum_{j=1}^k1=k.
+\]
+Hence some color has a path of length at least \(\lceil k/2\rceil\), for any factor sizes, under the same intrinsic nontriangular potential condition.
+
+**Relation to the central conjecture.** The theorem explains why the factor-count scale \(k\) is available independently of the spectral degree \(k(q-1)\): each Cartesian factor supplies one unit of aggregate weighted terminal growth across both colors. It proves half the proposed spanning factor-count guarantee uniformly, while the ternary turn-conservation theorem improves the coefficient to \(5/6\) for \(q=3\) and isolates its remaining loss to transitive monochromatic coordinate triangles.
+
+### Linear resource-independent path growth from square-flat turns
+
+Let \(H(k,q)=K_q^{\square k}\), \(k\ge1,q\ge2\), and let \(N_{\rm sp}\) be its canonical spectral resource matroid of rank \(d=k(q-1)\). Let \(b(u,v,w)\in\mathbb F_2\) be defined on all nonbacktracking ordered turns, satisfying the mixed triangle/square axioms:
+
+(i) if \(uw\in E(H)\), then \(b(u,v,w)+b(w,v,u)=1\);
+
+(ii) there is one global edge coloring \(c:E(H)\to\mathbb F_2\) such that \(b(u,v,w)=c(uv)+c(vw)\) whenever \(uw\notin E(H)\).
+
+A zero-turn path has \(b=0\) at every internal turn, and it is resource-independent when its edge vectors are independent in \(N_{\rm sp}\). The involution hypothesis at the cubical endpoint, when applicable, can be imposed additionally; it is unnecessary here.
+
+**Theorem 1 (factor-count linear guarantee).** Every such mixed triangle/square turn system contains a zero-turn \(N_{\rm sp}\)-independent path with at least
+\[
+\boxed{\ell\ge \lceil k/2\rceil}
+\tag{1}
+\]
+edges. The bound is uniform in \(q\) and valid for arbitrary triangular reversal-odd comparisons.
+
+**Proof.** Choose any two symbols in each \(K_q\) factor and let \(C\subseteq H(k,q)\) be the induced copy of the hypercube \(Q_k\) on their \(2^k\) product vertices. Every two successive edges of a geodesic in \(C\) change distinct Cartesian factors. Therefore the two outer vertices of every such turn differ in two factors and are nonadjacent in the full Hamming graph. By (ii) its turn label is the sum of the colors of the two edges.
+
+The restriction of \(c\) to \(C\) gives a binary edge coloring of \(Q_k\). Of its two monochromatic subgraphs, at least one has average degree at least \(k/2\), because \(Q_k\) is \(k\)-regular and the edge sets partition its edges. By the Leader–Long long-geodesic theorem (Imre Leader and Eoin Long, *Long geodesics in subgraphs of the cube*, Discrete Mathematics 326 (2014), 29–33), any subgraph of a hypercube of average degree \(a\) contains a graph geodesic of at least \(a\) edges. Hence the denser color subgraph of \(C\) contains a monochromatic geodesic with at least \(\lceil k/2\rceil\) edges.
+
+Such a geodesic changes each cube coordinate at most once. Its consecutive edge colors coincide; by (ii), all its turn labels are zero. The spectral resource vectors of its edges lie in distinct coordinate summands and are linearly independent. Thus it is an accepted zero-turn \(N_{\rm sp}\)-independent path of the required length. \(\square\)
+
+In conjunction with the general mixed-turn terminal bound previously proved in Article XI, of order \(\sqrt{k(q-1)}\), this yields complementary, simultaneous guarantees of linear growth in factor count and square-root growth in resource rank:
+\[
+\ell_{\max}\ge \max\!\left\{\lceil k/2\rceil,\ \tfrac12\sqrt{k(q-1)}\right\}.
+\tag{2}
+\]
+Formula (2) is a lower-bound combination; the stronger proposed unified conjecture asks for \(\ell\ge k\) in addition to the square-root term. The remaining gap is therefore a factor at most two in the factor-count branch.
+
+**Lemma 2 (matroidal minimum-degree growth).** Let \(G\) be a finite simple graph with a matroid \(N\) on \(E(G)\) such that each vertex star is independent in \(N\) and every graph cycle is dependent in \(N\). If a subgraph \(F\subseteq G\) has minimum degree \(\delta\), then from every vertex of \(F\) there is an \(N\)-independent simple path with at least \(\delta\) edges.
+
+**Proof.** Start at any vertex. If the current path has \(r<\delta\) edges, its edge set \(X\) is independent of rank \(r\). At the terminal vertex \(v\), the incident \(F\)-edges are independent in \(N\), so at most \(r\) of them can belong to \(\operatorname{cl}_N(X)\). Thus some incident edge \(e=vw\) is outside the closure, and \(X+e\) remains independent. If \(w\) were an earlier vertex of the path, \(X+e\) would contain a graph cycle and therefore be dependent, a contradiction. Hence the path can be extended. Continue until it has at least \(\delta\) edges. \(\square\)
+
+**Corollary 3 (self-contained density bound).** Under the hypotheses of Lemma 2, every subgraph \(F\subseteq G\) of average degree \(a\) contains an \(N\)-independent simple path of length at least \(a/2\). Moreover, for every two-color edge coloring of a \(d\)-regular graph \(G\) under these hypotheses, some monochromatic \(N\)-independent path has length at least \(d/4\).
+
+**Proof.** Iteratively delete vertices of current degree below \(a/2\). Such deletions strictly increase the average degree of the remaining nonempty graph, so a nonempty subgraph with minimum degree at least \(a/2\) remains. Apply Lemma 2. For a two-coloring, one color subgraph has average degree at least \(d/2\); apply the first assertion to it. \(\square\)
+
+This corollary supplies a self-contained weaker version of (1), namely \(\ell\ge k/4\) on any induced \(Q_k\), without invoking the sharper Leader–Long theorem.
+
+**Scope and asymmetry.** The rank-\(k\) root cube witness in Theorem 1 uses only cross-factor square-flat turns. Consequently it survives completely arbitrary and non-edge-orderable triangular comparisons. At the boundary endpoint \(k=1\), however, it supplies just one edge and does not replace the square-root boundary-tournament theorem. The mixed turn system combines the flat edge-potential geometry responsible for linear-in-\(k\) growth with freely oriented triangular comparisons responsible for the separate \(\sqrt{d}\) tournament bound.
+
+### Edge-free coordinatewise polarities and the maximal Hamming reduction
+
+Let \(G=\square_{i=1}^kK_{E_i}\), with \(|E_i|\ge2\). Let \(\tau=\prod_i\tau_i\) be any coordinatewise involution of \(G\), allowing fixed symbols in the individual factors. Define
+\[
+J(\tau)=\{i:\operatorname{Fix}(\tau_i)=\varnothing\},
+\qquad h(\tau)=|J(\tau)|.
+\tag{1}
+\]
+A nontrivial binary edge polarity is an undirected-edge coloring \(c\) satisfying \(c(\tau e)=1-c(e)\).
+
+**Theorem 1 (edge-freeness and displacement).** For a nonidentity coordinatewise involution \(\tau\), the following are equivalent:
+
+(i) \(\tau\) fixes no undirected edge of \(G\);
+
+(ii) \(h(\tau)\ge2\);
+
+(iii) there exists a binary edge polarity \(c\) with \(c(\tau e)=1-c(e)\).
+
+Furthermore, for every coordinatewise involution, including the identity,
+\[
+\boxed{\min_{x\in V(G)} d_G(x,\tau x)=h(\tau).}
+\tag{2}
+\]
+
+*Proof.* Every factor indexed by \(J(\tau)\) changes its symbol at every vertex, while every factor outside \(J(\tau)\) has at least one fixed symbol. A shortest Hamming path from \(x\) to \(\tau x\) changes precisely the factors on which \(x_i\ne\tau_i x_i\). Choosing fixed symbols in the other factors gives (2).
+
+Assume \(h(\tau)\ge2\). An edge \(e\) changes one coordinate \(j\), leaving every other coordinate constant. At least one factor in \(J(\tau)\setminus\{j\}\) changes its constant symbol under \(\tau\); thus \(\tau e\ne e\), proving (i).
+
+Conversely, assume \(h(\tau)\le1\) and \(\tau\) is nonidentity. Choose a component \(j\) in which \(\tau_j\) exchanges two distinct symbols \(a,b\); if \(h(\tau)=1\), take the sole fixed-point-free component for \(j\). For every \(i\ne j\), choose a fixed symbol of \(\tau_i\), possible by the definition of \(h\). Then the edge whose changing coordinate \(j\) joins \(a\) to \(b\), with all other coordinates fixed, is stabilized setwise by \(\tau\). Hence (i) implies (ii). An edge-stabilizing involution cannot support an odd binary edge polarity since it would require \(c(e)=1-c(e)\). If all edge orbits have size two, assign one arbitrary bit per orbit and its complement to the other edge, producing such a coloring. This proves the equivalence. \(\square\)
+
+**Theorem 2 (NORI1 gives full intrinsic displacement).** Suppose \(\tau\) is nonidentity and \(h(\tau)\ge2\). Let \(c\) be any edge polarity of \(G\) and \(b\) any turn system obeying the triangle-curvature rule
+\[
+b(u,v,w)+b(w,v,u)=1\quad(uw\in E(G)),
+\qquad b(u,v,w)=c(uv)+c(vw)\quad(uw\notin E(G)).
+\tag{3}
+\]
+Assuming NORI1, there is a monochromatic accepted gallery \(P\) from \(x\) to \(\tau x\) of length \(h(\tau)\). Its edge labels are independent in the canonical resource matroid
+\(N=\bigoplus_i M(K_{E_i})\).
+
+*Proof.* For every \(i\in J(\tau)\) choose a symbol \(a_i\), and in every component outside \(J(\tau)\) choose a fixed symbol \(f_i=\tau_i(f_i)\). The induced subgraph
+\[
+Q=\prod_{i\in J(\tau)}\{a_i,\tau_i(a_i)\}
+ \times\prod_{i\notin J(\tau)}\{f_i\}
+\tag{4}
+\]
+is an \(h(\tau)\)-cube invariant under \(\tau\), whose restricted involution is its antipode. The restriction of \(c\) to \(Q\) is therefore antipodally odd. NORI1 supplies a monochromatic geodesic \(P\) joining antipodal vertices of \(Q\). The gallery changes every active component once, using pairwise different direct summands of \(N\), so its resource labels are independent. Consecutive steps change different factors, making the endpoints of their turn nonadjacent in the ambient Hamming graph. The second rule in (3) makes the bit of every interior turn zero. Since \(Q\) is induced, \(P\) is a path of \(G\) and its endpoints are \(x,\tau x\). Its length is \(h(\tau)\), which equals the minimum displacement by Theorem 1. \(\square\)
+
+**Corollary 3 (largest coordinatewise polarized class).** Let \(\mathcal H\) consist of all pairs \((M,\tau)\) where \(M=\bigoplus_iU_{r_i,E_i}\) is a partition matroid and \(\tau\) acts coordinatewise on its intrinsic rank-one reduction, subject to either \(\tau=\mathrm{id}\) or \(h(\tau)\ge2\). Equip these pairs with undirected colors and the turn rule (3), imposing \(c(\tau e)=c(e)+\chi_\tau\), where \(\chi_\tau=0\) for the identity and \(1\) otherwise. Every member has an accepted gallery of length at least \(\lceil\sqrt{\operatorname{rk}N}/2\rceil\), by the cycle-dominating resource-matroid terminal theorem. The single strengthened assertion
+\[
+\boxed{\ell\ge\max\left\{
+\left\lceil\tfrac12\sqrt{\operatorname{rk}N}\right\rceil,\,
+\min_x d_G(x,\tau x)\right\}
+\tag{5}
+\]
+for an accepted gallery in every member of \(\mathcal H\) is equivalent to NORI1.
+
+*Proof.* The uniform rank-growth theorem in the preceding Article XI Hamming Subsection applies unchanged to \(\mathcal H\); its proof does not require nontrivial polarity. In the nontrivial case Theorem 2 supplies an independent witness of length equal to the second term of (5). The longer of these two witnesses proves (5) assuming NORI1. Conversely take \(M=\bigoplus_{i=1}^n U_{1,2}\) with its antipodal involution. Then the second term of (5) is \(n\), and an accepted gallery of \(n\) edges is a monochromatic antipodal cube geodesic. Thus (5) entails NORI1. \(\square\)
+
+Theorem 1 establishes why this class is maximal among coordinatewise involutions admitting an odd coloring on undirected edges: every excluded nonidentity involution stabilizes an edge and admits no such coloring. Theorem 2 extends the antipodal cube transfer to Hamming products with odd-sized factors, arbitrary mixed component ranks, and fixed symbols in some factors; only the \(h(\tau)\) forced-moving components enter the invariant cube. This extension retains the same graphic resource matroid and the same local turn law that yield unrestricted boundary-tournament square-root paths when \(\tau\) is the identity.
+
+### Canonical central polarity of partition-matroid Hamming roots
+
+Let \(M=\bigoplus_{i\in I}U_{r_i,E_i}\), with \(1\le r_i<|E_i|\). The connected-component decomposition is intrinsic to \(M\). Define the rank-one reduction and its root graph
+\[
+M^\flat=\bigoplus_{i\in I}U_{1,E_i},
+\qquad G_M=\Gamma(M^\flat)=\square_{i\in I}K_{E_i}.
+\tag{1}
+\]
+Put \(I_2=\{i:|E_i|=2\}\), \(s=|I_2|\). On every two-element ground set the exchange of its elements is a choice-free involution. Let
+\[
+\eta_M(x)_i=
+\begin{cases}
+E_i\setminus\{x_i\},&i\in I_2,\\
+x_i,&i\notin I_2.
+\end{cases}
+\tag{2}
+\]
+Here \(x=(x_i)\) is a basis of \(M^\flat\), and in the first case the complement is understood as its unique member. The map \(\eta_M\) depends only on \(M\).
+
+**Theorem 1 (center of the root-matroid automorphism group).** If \(s=0\), the center of \(\operatorname{Aut}(M^\flat)\) is trivial. If \(s\ge1\), it has order two and is generated by \(\eta_M\). Thus the unique possible nonidentity root automorphism commuting with all automorphisms of \(M^\flat\) is simultaneous exchange of every two-element component.
+
+*Proof.* For every \(m\ge2\), let \(k_m\) denote the number of components of size \(m\). The action on the ground set identifies
+\[
+\operatorname{Aut}(M^\flat)
+=\prod_{m\ge2}\left(S_m^{k_m}\rtimes S_{k_m}\right)
+\tag{3}
+\]
+(the factor for \(k_m=0\) is omitted). A central element must normalize and centralize the independent symmetric groups acting within individual components. Conjugation carries the subgroup supported on a component \(i\) to the subgroup supported on its image; commuting with all such subgroups forces each component to be preserved individually. The restriction to a component of size \(m\) must then lie in \(Z(S_m)\), which is trivial for \(m\ge3\) and is \(S_2\) when \(m=2\). Finally, centrality with respect to permutations of equally sized components forces all two-element components to be flipped together or none to be flipped. Both choices commute with every automorphism. Thus the claimed center consists of \(\mathrm{id}\) and \(\eta_M\) when \(s\ge1\), and only \(\mathrm{id}\) otherwise. \(\square\)
+
+**Theorem 2 (maximal canonical odd-coloring domain).** If \(s\ge1\), the canonical involution \(\eta_M\) has graph displacement
+\[
+d_{G_M}(x,\eta_M x)=s\qquad\text{for every }x.
+\tag{4}
+\]
+It acts without fixed undirected graph edges if and only if \(s\ge2\). Consequently a binary edge coloring satisfying
+\[
+c(\eta_M e)=1-c(e)
+\tag{5}
+\]
+exists if and only if \(s\ge2\).
+
+*Proof.* Formula (2) changes the coordinate on each of the \(s\) two-element factors and fixes all others, giving (4). If \(s=1\), fix arbitrary coordinates in the other factors and take the edge that changes the unique two-element factor; it is preserved as an undirected edge by \(\eta_M\). If \(s\ge2\), every graph edge changes just one factor, while \(\eta_M\) flips at least one other factor; hence the edge moves to a different edge. The edge-orbit action then consists of two-element orbits, and assigning complementary colors to their two members gives (5). A fixed edge would require its color to equal its complement, which is impossible. \(\square\)
+
+Define the **canonical polarized partition class**
+\[
+\mathcal C_{\rm can}=
+\{M=\bigoplus_iU_{r_i,E_i}:s(M)=0\text{ or }s(M)\ge2\},
+\tag{6}
+\]
+and put \(\tau_M=\eta_M\) for \(s\ge2\), and \(\tau_M=\mathrm{id}\) for \(s=0\). This polarization is canonically determined by the undecorated matroid \(M\); no symbols, matchings, preferred bases, or external involutions are chosen. The excluded case \(s=1\) is precisely the case when the only nonidentity central involution would stabilize an undirected edge. Equip the root graph with the canonical graphic resource matroid
+\[
+N_M=\bigoplus_i M(K_{E_i})
+\tag{7}
+\]
+and the mixed turn law: on triangular turns, reversal exchanges bit zero and bit one, while on nontriangular turns the bit is the sum of the two incident graph-edge colors. A witness is a monochromatic path with independent \(N_M\)-resources and all turn bits zero.
+
+**Corollary 3 (undecorated common class and quantitative conjecture).** Both \(M_{\rm cub}=\bigoplus_{i=1}^nU_{1,2}\) for \(n\ge2\) and \(M_{\rm bd}=U_{2,n}\) for \(n\ge3\) lie in \(\mathcal C_{\rm can}\). In the former, \((G_M,\tau_M)=(Q_n,\text{complement})\); in the latter, \((G_M,\tau_M)=(K_n,\mathrm{id})\). The resource rank is
+\(d=\sum_i(|E_i|-1)\).
+On this class the single strengthened path assertion
+\[
+\boxed{\ell\ge\max\left\{
+\left\lceil\tfrac12\sqrt d\right\rceil,\ s(M)
+\right\}}
+\tag{8}
+\]
+for a monochromatic resource-independent accepted gallery is equivalent to NORI1.
+
+*Proof.* The universal \(\lceil\sqrt d/2\rceil\) lower bound follows from the cycle-dominating resource-matroid terminal theorem, as in the preceding polarized Hamming Subsection. In the cube model the canonical polarity is complement and \(s=d=n\), so (8) gives a full monochromatic antipodal geodesic. For the reverse implication, assume NORI1. When \(s=0\) the terminal theorem proves (8). When \(s\ge2\), fix one symbol in each factor of size at least three and retain both symbols of each two-element factor. The induced \(s\)-cube is invariant under \(\eta_M\), which acts as the antipode there. The restricted edge coloring is odd. NORI1 yields a monochromatic geodesic changing every two-element factor once; it has independent root-graphic resources and all its turns are nontriangular, so the turn bits vanish. This yields a gallery of length \(s\). Take the longer of this witness and the terminal-theorem witness to obtain (8). In the boundary model \(s=0,d=n-1\), the root is \(K_n\), and the triangular turn law realizes every ordinary reversal-odd boundary tournament, giving the common square-root bound. \(\square\)
+
+**Interpretation.** Simultaneous binary-factor complementation is the unique nontrivial symmetry canonically available from the root-matroid automorphism group. Arbitrary pairings in factors of size at least four lead to legitimate *chosen* polarizations but cannot be obtained as automorphism-equivariant operations on those factors. The canonical class (6) therefore answers the intrinsic-polarization objection for the partition-matroid Hamming family. The rank-saturation term of (8) remains equivalent to NORI1; the shared resource-rank growth mechanism is proved independently.
+
+### Affine cube-edge colorings: permutation syndromes and elimination of two-dimensional obstructions
+
+Let \(Q_n\) have coordinates in \(\mathbb F_2^n\). Consider arbitrary affine binary colors on its undirected coordinate edges,
+\[
+c_i(x)=a_i+\sum_{j\ne i}B_{ij}x_j,
+\qquad a\in\mathbb F_2^n,\quad B\in\mathbb F_2^{n\times n},\quad B_{ii}=0.
+\tag{1}
+\]
+The formula is independent of the toggled bit \(x_i\), as required for an undirected edge color. The antipodal oddness condition \(c_i(x+\mathbf1)=c_i(x)+1\) is equivalent to
+\[
+B\mathbf1=\mathbf1.
+\tag{2}
+\]
+The matrix \(B\) is the linear cross-coordinate influence operator of the edge coloring. Write \(V=\mathbb F_2^n/\operatorname{im}B\), and denote the quotient map by \(p:\mathbb F_2^n\to V\).
+
+For a permutation \(\pi=(i_1,\dots,i_n)\), put
+\[
+v_\pi(i)=\sum_{j\text{ occurring before }i\text{ in }\pi} B_{ij}.
+\tag{3}
+\]
+A geodesic beginning at \(x\) and flipping the coordinates in order \(\pi\) has color word, indexed by its step directions,
+\[
+c_{\pi}(x)=a+Bx+v_\pi.
+\tag{4}
+\]
+It is monochromatic if and only if
+\[
+a+v_\pi\in\operatorname{im}B.
+\tag{5}
+\]
+Indeed a constant color-one word can be converted to a color-zero word by replacing its root \(x\) by \(x+\mathbf1\), using (2). The obstruction to a given order is therefore the quotient syndrome \(p(a+v_\pi)\).
+
+**Lemma 1 (cyclic rotation identity).** If \(\pi=(i,i_2,\ldots,i_n)\) and \(\operatorname{rot}\pi=(i_2,\ldots,i_n,i)\), then
+\[
+v_{\operatorname{rot}\pi}=v_\pi+e_i+Be_i,
+\qquad
+p(v_{\operatorname{rot}\pi})=p(v_\pi)+p(e_i).
+\tag{6}
+\]
+For every permutation the \(n\) cyclic rotations consequently trace in \(V\) a closed walk whose successive increments are \(p(e_{i_1}),\ldots,p(e_{i_n})\).
+
+*Proof.* Moving the first direction \(i\) to the end changes its own predecessor parity from zero to \(\sum_{j\ne i}B_{ij}=1\). For every other direction \(j\), the presence of \(i\) among its predecessors is removed, changing its parity by \(B_{ji}\). Thus the syndrome difference is \(e_i+Be_i\). The second equation follows by quotienting by \(\operatorname{im}B\), and the cyclic walk follows by iteration. The walk closes because \(\sum_i p(e_i)=p(\mathbf1)=0\) by (2). \(\square\)
+
+**Theorem 2 (affine rank-codimension-two closure).** Suppose (1)--(2) hold and
+\[
+\boxed{\operatorname{rank}_{\mathbb F_2}B\ge n-2.}
+\tag{7}
+\]
+Then there exist a starting vertex \(x\) and a coordinate permutation \(\pi\) such that the entire antipodal geodesic \(x\to x+\mathbf1\) following \(\pi\) is monochromatic. In particular every antipodally odd affine cube-edge coloring whose cross-influence matrix has nullity at most two satisfies NORI1.
+
+More precisely, for every \(a\), the quotient-syndrome set
+\[
+\boxed{\{p(v_\pi):\pi\in S_n\}=V}
+\tag{8}
+\]
+whenever \(\dim V\le2\). If \(\dim V=0\), every permutation admits a monochromatic geodesic; for each successful permutation, the number of roots of either prescribed constant color is \(2^{n-\operatorname{rank}B}\), and the roots for opposite colors are antipodal translates.
+
+*Proof.* Let \(t=\dim V=n-\operatorname{rank}B\). The claim is immediate for \(t=0\), since then \(V=0\). If \(t=1\), the classes \(p(e_i)\) span \(V\), so some \(i\) has \(p(e_i)\ne0\). Take any permutation starting with \(i\). Lemma 1 shows that its syndrome and the syndrome of its cyclic rotation differ by the nonzero element of \(V\), and hence together attain all of \(V\).
+
+Now let \(t=2\). Put \(w_i=p(e_i)\in V\cong\mathbb F_2^2\). Their sum vanishes by (2), and they span \(V\), since the \(e_i\) span \(\mathbb F_2^n\). Suppose there are distinct indices \(i,j,h\) with
+\[
+w_i=w_h=u\ne0,\qquad w_j=v\notin\{0,u\}.
+\tag{9}
+\]
+Choose a permutation beginning \((i,j,h)\). Its first four cyclic-rotation syndromes, by (6), differ from the first by
+\[
+0,\quad u,\quad u+v,\quad v,
+\]
+which exhaust \(V\). Thus (8) follows in this case.
+
+It remains to show that (9) can fail only in a special configuration and that this configuration also satisfies (8). Let \(N_u,N_v,N_{u+v}\) be the multiplicities of the three nonzero vectors of \(V\) among the \(w_i\). The identity \(\sum_iw_i=0\) forces
+\[
+N_u\equiv N_v\equiv N_{u+v}\pmod2.
+\tag{10}
+\]
+Since the \(w_i\) span \(V\), if some nonzero value occurs at least twice and another linearly independent nonzero value occurs, (9) holds. If no such pair exists, (10) implies that the only nonzero \(w_i\) are three distinct values \(u,v,u+v\), each appearing once. Denote their indices by \(i,j,h\) respectively. All other \(w_\ell\) vanish.
+
+Because \(p(Be_\ell)=0\) for every \(\ell\), this exceptional configuration gives
+\[
+B_{i\ell}u+B_{j\ell}v+B_{h\ell}(u+v)=0.
+\]
+Linear independence of \(u,v\) yields
+\[
+B_{i\ell}=B_{j\ell}=B_{h\ell}\qquad\text{for every }\ell.
+\tag{11}
+\]
+The three rows \(i,j,h\) of \(B\) coincide. Their diagonal entries vanish, so their entries in the three columns \(i,j,h\) are all zero. By (2), their common row has odd sum; consequently some index \(z\notin\{i,j,h\}\) satisfies
+\[
+B_{iz}=B_{jz}=B_{hz}=1,\qquad w_z=0.
+\tag{12}
+\]
+
+Choose \(\pi=(i,z,j,h,\ldots)\). Its first cyclic-rotation syndromes attain the three values
+\[
+p(v_\pi)+\{0,u,u+v\};
+\]
+the missing fourth value is \(p(v_\pi)+v\). Swap the adjacent symbols \(z,j\), obtaining \(\pi'=(i,j,z,h,\ldots)\). An adjacent transposition of directions \(j,z\) changes \(v_\pi\) by
+\(B_{jz}e_j+B_{zj}e_z\). By (12),
+\[
+p(v_{\pi'})=p(v_\pi)+w_j=p(v_\pi)+v,
+\]
+the missing value. Thus the two permutations together with the displayed cyclic rotations exhaust \(V\). This proves (8) for \(t=2\).
+
+Finally, (8) permits choosing \(\pi\) so that \(p(v_\pi)=p(a)\), making (5) hold. The system \(Bx=a+v_\pi\) then has \(2^{n-\operatorname{rank}B}\) roots. Adding \(\mathbf1\) to any solution changes all its edge colors from zero to one by (2), proving the last assertion. \(\square\)
+
+**Corollary 3 (necessary structure of affine counterexamples).** An affine antipodally odd counterexample to NORI1, if one exists, must have
+\[
+\boxed{\dim\ker B^{\mathsf T}\ge3.}
+\tag{13}
+\]
+Furthermore for any \(B\) satisfying (2), the quotient syndrome of a cyclically rotated permutation changes by a coordinate class \(p(e_i)\). Thus the possible affine obstruction is a simultaneous multi-syndrome obstruction on the permutation exchange geometry; no obstruction of dimension one or two survives arbitrary cyclic rotations and adjacent transpositions.
+
+The theorem is dimension-independent, and imposes no symmetry on \(B\). Its proof uses the same resource-permutation language as the dual-basis galleries of Article XI. It establishes full rank saturation for a broad affine NORI1 class, while leaving nonlinear colorings and affine influence matrices of nullity at least three open.
+
+#### 4. Uniform random affine closure probability
+
+Consider the uniform ensemble of affine antipodally odd cube-edge colorings (1): choose each intercept \(a_i\) independently and uniformly, and independently choose each row \(B_{i,*}\) uniformly among binary vectors with \(B_{ii}=0\) and odd Hamming weight. Every admissible affine coloring occurs with equal probability.
+
+**Theorem 4 (random influence rank).** For \(n\ge3\), if \(T=n-\operatorname{rank}B=\dim\ker B^{\mathsf T}\), then
+\[
+\boxed{\mathbb E(2^T-1)=1-2^{1-n}.}
+\tag{14}
+\]
+Consequently,
+\[
+\boxed{\Pr(T\ge3)\le\frac{1-2^{1-n}}7<\frac17,}
+\tag{15}
+\]
+and, by Theorem 2, the probability that an affine antipodally odd cube-edge coloring admits a full monochromatic antipodal geodesic is at least
+\[
+\boxed{1-\frac{1-2^{1-n}}7>\frac67.}
+\tag{16}
+\]
+The conclusion is uniform in the dimension and in the arbitrary intercept vector.
+
+*Proof.* Expand \(2^T-1=\sum_{y\ne0}\mathbf1_{\{y^{\mathsf T}B=0\}}\). Since \(B\mathbf1=\mathbf1\), any left-kernel vector \(y\) has even Hamming weight, so an odd-weight \(y\) contributes zero probability. For an even-weight nonzero \(y\), choose two distinct positions \(i,j\) in its support. A uniform row \(B_{i,*}\) is supported on the odd-parity affine hyperplane with coordinate \(i\) fixed to zero; its translation space is
+\[
+W_i=\{z:z_i=0,\ z\cdot\mathbf1=0\}.
+\]
+For \(n\ge3\), the sum \(W_i+W_j\) is the full even-parity hyperplane \(W=\{z:z\cdot\mathbf1=0\}\). Indeed \(W_i^\perp=\langle\mathbf1,e_i\rangle\) and \(W_j^\perp=\langle\mathbf1,e_j\rangle\), whose intersection is \(\langle\mathbf1\rangle\); taking orthogonal complements proves the claim. The sum of the two independent uniform rows is consequently uniform on an even-parity affine coset, which here equals \(W\). Adding the other independently chosen rows in the even support of \(y\) preserves uniformity on \(W\), since their total parity is even. Thus
+\[
+\Pr(y^{\mathsf T}B=0)=|W|^{-1}=2^{-(n-1)}
+\]
+for every even-weight nonzero \(y\). There are \(2^{n-1}-1\) such vectors. Summing proves (14). On the event \(T\ge3\), the number \(2^T-1\) is at least seven, so Markov's inequality gives (15). Theorem 2 guarantees the desired geodesic on the complementary event \(T\le2\), proving (16). \(\square\)
+
+The estimate concerns an ensemble of arbitrary affine cross-coordinate influence operators, including nonsymmetric ones. It is independent of the chosen coordinate order and complements the permutation-syndrome closure theorem, which applies deterministically whenever \(T\le2\).
+
+### Affine root-syndrome gallery transport and corank-one closure
+
+Let \(n\ge2\), \(M\in\mathbb F_2^{n\times n}\) have zero diagonal and \(M\mathbf1=\mathbf1\), and color the undirected coordinate-\(i\) edges of \(Q_n\) by
+\[
+c_i(x)=a_i+\sum_jM_{ij}x_j.
+\tag{1}
+\]
+The row-oddness condition \(M\mathbf1=\mathbf1\) is the antipodal-odd coloring law. For a coordinate permutation \(\pi\in S_n\), put
+\[
+t_i(\pi)=\sum_{\pi^{-1}(j)<\pi^{-1}(i)}M_{ij}.
+\tag{2}
+\]
+Let \(R=\operatorname{im}M\), \(q=n-\operatorname{rk}M\), and \(\Phi(\pi)=t(\pi)+R\in\mathbb F_2^n/R\).
+
+**Theorem 1 (root criterion).** A monochromatic full geodesic with coordinate order \(\pi\) exists if and only if \(\Phi(\pi)=a+R\). For each qualifying \(\pi\), there are \(2^{q+1}\) directed monochromatic geodesics with that order, counted over both colors and all roots. Swapping two consecutive directions \(i,j\) changes the quotient syndrome by
+\[
+\boxed{\Phi(\pi')-\Phi(\pi)=\Delta_{ij}+R,\qquad
+\Delta_{ij}=M_{ij}e_i+M_{ji}e_j.}
+\tag{3}
+\]
+
+**Proof.** The edge traversed in direction \(i\) from root \(x\), after visiting the earlier directions, has color \(a_i+(Mx)_i+t_i(\pi)\). Hence the full word is constant \(s\) if and only if \(Mx=a+t(\pi)+s\mathbf1\). Since \(\mathbf1=M\mathbf1\in R\), existence is independent of \(s\) and is equivalent to the quotient criterion. Each solvable equation has \(2^q\) solutions \(x\) for either \(s\). Adjacent exchange modifies only the two preceding-direction sums for \(i,j\), giving (3). \(\square\)
+
+**Theorem 2 (universal quotient span and balanced characters).** For every matrix satisfying (1),
+\[
+\boxed{R+\operatorname{span}\{\Delta_{ij}:i<j\}=\mathbb F_2^n.}
+\tag{4}
+\]
+Consequently the affine span of \(\Phi(S_n)\) is the entire quotient. Moreover, every nonzero linear character of \(\mathbb F_2^n/R\) takes each of its values on at least \((n-1)!\) permutations.
+
+**Proof.** A vector \(z\) annihilating both \(R\) and all the \(\Delta_{ij}\) obeys \(M^Tz=0\) and \(z_iM_{ij}+z_jM_{ji}=0\) for all \(i\ne j\). Fixing \(i\) and summing the latter relations over \(j\ne i\) gives
+\[
+0=z_i\sum_jM_{ij}+\sum_jM_{ji}z_j=z_i+(M^Tz)_i=z_i.
+\]
+Thus \(z=0\), proving (4). Every \(\Delta_{ij}\) appears as a difference of \(\Phi\)-values on two permutations in which \(i,j\) are adjacent, giving the affine-span assertion.
+
+For nonzero \(z\in\ker M^T\), (4) ensures some \(i,j\) satisfy \(z\cdot\Delta_{ij}=1\). There are \((n-1)!\) permutations containing \(i,j\) consecutively in that order and the same number containing \(j,i\) consecutively. Swapping the two entries pairs them and flips the value of \(z\cdot\Phi\). Thus each character value occurs at least \((n-1)!\) times. \(\square\)
+
+**Corollary 3 (unrestricted nonsymmetric affine closure in corank at most one).** If \(\operatorname{rk}M\ge n-1\), then for every choice of \(a\), the coloring (1) admits a monochromatic full antipodal geodesic. There are \(2n!\) directed such geodesics when \(\operatorname{rk}M=n\), and at least \(4(n-1)!\) when \(\operatorname{rk}M=n-1\).
+
+**Proof.** If \(q=0\), the quotient is trivial and every order qualifies. If \(q=1\), Theorem 2 forces both elements of the quotient to be attained and guarantees at least \((n-1)!\) permutations in either class. Apply Theorem 1. \(\square\)
+
+**Proposed affine quotient-surjectivity conjecture.** Every zero-diagonal row-odd binary matrix satisfies
+\[
+\Phi(S_n)=\mathbb F_2^n/\operatorname{im}M.
+\tag{5}
+\]
+Its proof would settle all antipodally odd *affine* cube-edge colorings. Full affine span from Theorem 2 is a necessary step but does not alone imply (5) when \(q\ge2\). The general nonlinear NORI1 conjecture remains separate.
+
+**Falsification check.** Direct exhaustive enumeration of all row-odd zero-diagonal matrices at dimensions \(3,4,5\) found no counterexample to (5): respectively \(8,256,32768\) matrices. The largest observed coranks were respectively \(1,2,3\). No computation is used in the proofs.
+
+**Relationship to prior work.** The manuscript's forest-coupling theorem gives rooted switch bounds for sparse symmetric \(M\). The results here apply to arbitrary nonsymmetric matrices of corank at most one and establish an unrestricted-dimensional gallery-exchange span statement for every affine antipodally odd interaction matrix.
+
+#### Theorem 4 (corank-two affine NORI1 closure)
+
+Under the assumptions of Theorem 1, if
+\[
+\boxed{\operatorname{rk}_{\mathbb F_2}M\ge n-2,}
+\tag{11}
+\]
+then **every** choice of \(a\) yields a monochromatic full antipodal geodesic. When \(\operatorname{rk}M=n-2\), there are at least \(16\) directed monochromatic full geodesics. Thus affine root-syndrome surjectivity (5) holds for quotient dimensions \(q=0,1,2\), with no symmetry condition on \(M\).
+
+**Lemma 4.1 (cyclic gallery transport).** Let \(\pi=(i_1,\ldots,i_n)\) and let \(\rho\pi=(i_2,\ldots,i_n,i_1)\). In \(Q=\mathbb F_2^n/\operatorname{im}M\), write \(g_i=e_i+\operatorname{im}M\). Then
+\[
+\boxed{\Phi(\rho\pi)=\Phi(\pi)+g_{i_1}.}
+\tag{12}
+\]
+Successive cyclic rotations visit the cosets
+\[
+\Phi(\pi),\quad\Phi(\pi)+g_{i_1},\quad
+\Phi(\pi)+g_{i_1}+g_{i_2},\quad\ldots.
+\tag{13}
+\]
+
+**Proof.** Moving \(i_1\) from first to last reverses its order relative to every other direction. Its own coordinate of \(t\) changes by \(\sum_{j\ne i_1}M_{i_1j}=1\), while coordinate \(j\ne i_1\) changes by \(M_{j i_1}\). Thus
+\[
+t(\rho\pi)+t(\pi)=e_{i_1}+Me_{i_1},
+\]
+whose quotient class is \(g_{i_1}\). Iteration proves (13). \(\square\)
+
+**Proof of Theorem 4.** The cases \(q=0,1\) are Corollary 3, so suppose \(q=2\). The \(n\) vectors \(g_i\in Q=\mathbb F_2^2\) span \(Q\) and satisfy \(\sum_i g_i=\mathbf1+\operatorname{im}M=0\).
+
+First suppose some nonzero class \(u\in Q\) occurs as \(g_i=g_{i'}=u\) at two distinct coordinates, and some other coordinate has class \(v\notin\{0,u\}\). Take a permutation beginning with \(i,j,i'\), where \(g_j=v\). By (13), four successive cyclic rotations have syndrome classes
+\[
+z,\quad z+u,\quad z+u+v,\quad z+v.
+\]
+They are the four elements of \(Q\). Therefore \(\Phi(S_n)=Q\).
+
+Otherwise, because the \(g_i\) span \(Q\) and sum to zero, the only nonzero \(g_i\)'s consist of **three distinct nonzero classes appearing once each**. Denote the corresponding coordinates by \(a,b,c\), and let \(S=\{a,b,c\}\). Every \(e_u\) with \(u\notin S\) lies in \(R=\operatorname{im}M\), and \(e_a+e_b+e_c\in R\). These \(n-2\) vectors are independent, so
+\[
+R=\operatorname{span}\{e_u:u\notin S\}
++\operatorname{span}\{e_a+e_b+e_c\}.
+\tag{14}
+\]
+Every column \(Me_j\) lies in \(R\); restriction of such a column to the coordinates \(a,b,c\) therefore has either \(000\) or \(111\). Consequently rows \(a,b,c\) of \(M\) are identical; denote their common row by \(w\). The zero diagonal gives \(w_a=w_b=w_c=0\). Since the row sum is odd, some \(u\notin S\) satisfies \(w_u=1\).
+
+Choose permutations beginning with the four-letter blocks
+\[
+(a,b,c,u),\qquad (a,u,b,c),\qquad
+(b,u,a,c),\qquad (c,u,a,b),
+\]
+and place all other coordinates afterward, in any common order. For their syndrome vectors \(t(\pi)\), the entries at \(a,b,c\) are respectively
+\[
+000,\qquad 011,\qquad 101,\qquad 110.
+\]
+Indeed, within \(S\) the common row \(w\) vanishes, all other outside coordinates come after the block, and the sole preceding \(w\)-active coordinate inside the block is \(u\). By (14), the four triples represent the four quotient classes. Hence \(\Phi(S_n)=Q\) also in this case.
+
+For any \(a+R\), therefore, a qualifying permutation exists. Reversing a qualifying permutation gives another: because \(M\mathbf1=\mathbf1\), formula (2) gives \(t(\operatorname{rev}\pi)=t(\pi)+\mathbf1\), and \(\mathbf1\in R\). The two permutations are distinct for \(n\ge3\). Each supplies \(2^{q+1}=8\) directed full monochromatic geodesics by Theorem 1, giving the lower bound \(16\). \(\square\)
+
+**Scope.** This handles affine antipodally odd cube-edge colorings whenever the binary interaction matrix has corank at most two. It strengthens the corank-one case without assuming symmetry or a sparse interaction graph. The first unresolved affine quotient dimension is \(q=3\).
+
+#### Theorem 5 (fixed-support rank-defect control)
+
+The following holds even for a zero-diagonal affine matrix \(M\) without the row-oddness condition. Write \(q=n-\operatorname{rk}M\). There is a set \(I\subseteq[n]\) of cardinality \(q\), depending only on \(M\), with this property: **for every prescribed permutation \(\pi\)** there is a root \(x\) for which all edges of its full geodesic in directions outside \(I\) have color zero. Its color-one counterpart on those directions exists whenever \(M\mathbf1=\mathbf1\). In particular, some full antipodal geodesic has at most \(q\) color changes:
+\[
+\boxed{\mu(c)\le n-\operatorname{rk}M.}
+\tag{15}
+\]
+
+**Proof.** Choose \(I\) such that the coordinate cosets \(\{e_i+R:i\in I\}\) form a basis of \(\mathbb F_2^n/R\), with \(R=\operatorname{im}M\). Then every coset has one representative supported on \(I\). For any \(\pi\), choose that representative \(w\) for the coset \(a+t(\pi)+R\). Solve \(Mx=a+t(\pi)+w\). Formula (4) of Theorem 1 says the associated edge-color vector is \(w\), vanishing outside \(I\). If \(M\mathbf1=\mathbf1\), replace \(x\) by \(x+\mathbf1\) to complement the colors. Finally choose \(\pi\) to traverse every direction outside \(I\) first and the \(q\) directions in \(I\) last. Its word is \(0^{n-q}w_I\), which changes color at most \(q\) times. \(\square\)
+
+For \(q=1\) and antipodal oddness, the ordinary odd-change rotation of the full path converts the resulting at-most-one-switch path into a monochromatic full path. Theorem 4 strengthens this conclusion to the larger class \(q=2\).
+
+#### Theorem 6 (binary cut transport and a Gray-code saturation criterion)
+
+For any subset \(S\subseteq[n]\), let \(\mathbf1_S\) be its indicator vector. Moving a consecutive initial block whose coordinate set is \(S\) to the end of the permutation, preserving the internal order of both blocks, changes its syndrome by
+\[
+\boxed{\Phi(\text{block rotated }\pi)-\Phi(\pi)=\mathbf1_S+R.}
+\tag{16}
+\]
+Indeed the cross-block swaps contribute
+\[
+\sum_{i\in S,j\notin S}\Delta_{ij}
+=\mathbf1_S+M\mathbf1_S
+\]
+because each full transposition star obeys
+\(\sum_{j\ne i}\Delta_{ij}=e_i+Me_i\) and the internal pairs cancel twice. Reduction modulo \(R\) proves (16).
+
+More generally, suppose the projected coordinate vectors \(g_i=e_i+R\) contain a quotient basis \(h_1,\ldots,h_q\) with at least \(2^{q-j}\) distinct coordinate representatives of \(h_j\) for every \(j=1,\ldots,q\). Then \(\Phi:S_n\to\mathbb F_2^n/R\) is surjective, and every affine antipodally odd coloring with this matrix \(M\) has a monochromatic full geodesic.
+
+**Proof.** The standard reflected binary Gray sequence on \(\mathbb F_2^q\) visits all \(2^q\) vectors, starting at zero, using \(2^{q-j}\) steps in basis direction \(h_j\). Choose distinct coordinates representing those steps and place them first in a coordinate permutation, ordered as in this Gray sequence; place the remaining coordinates afterward. By Lemma 4.1, consecutive cyclic rotations traverse its successive quotient prefix sums. They visit all \(2^q\) quotient syndromes, proving surjectivity and then the existence assertion by Theorem 1. \(\square\)
+
+The cut identity (16) is the affine root-transport analogue of the cycle–cocycle relation: the sum of local pair exchanges across a coordinate cut equals its indicator modulo the root-change image. The Gray-code condition is a sufficient structural criterion, while Theorem 4 proves the entire corank-two family without a repetition hypothesis.
+
+#### Theorem 7 (all rank-two antipodally odd affine interactions admit monochromatic full paths)
+
+Suppose \(M_{ii}=0\), \(M\mathbf1=\mathbf1\), and
+\[
+\boxed{\operatorname{rk}_{\mathbb F_2}M=2.}
+\tag{17}
+\]
+Then for every constant vector \(a\), the affine coloring \(c_i(x)=a_i+(Mx)_i\) admits a monochromatic antipodal geodesic. Moreover, there exist two fixed coordinate directions \(u,t\), depending only on \(M\), such that for every \(a\) a monochromatic full geodesic begins at one of the four roots \(0,e_u,e_t,e_u+e_t\).
+
+**Proof.** Because all rows of \(M\) have odd parity, and the two-dimensional row space contains only two odd-parity vectors, there are precisely two distinct row types \(v,w\). Let \(A\) be the nonempty set of row indices of type \(v\) and \(B\) those of type \(w\), partitioning \([n]\). The zero diagonal forces \(v_i=0\) for \(i\in A\) and \(w_j=0\) for \(j\in B\). Therefore
+\[
+U=\operatorname{supp}v\subseteq B,\qquad
+T=\operatorname{supp}w\subseteq A,
+\]
+and both \(|U|\) and \(|T|\) are odd. For any \(u\in U\) and \(t\in T\), the columns of \(M\) satisfy
+\[
+Me_u=\mathbf1_A,\qquad Me_t=\mathbf1_B.
+\tag{18}
+\]
+Hence the root-change image is \(R=\operatorname{span}\{\mathbf1_A,\mathbf1_B\}\).
+
+Choose bits \(\alpha,\beta\), and define target labels \(h_i=a_i+\alpha\) on \(A\) and \(h_j=a_j+\beta\) on \(B\). Because \(|T|\) is odd, one can choose \(\alpha\) so that
+\[
+|T_0|:=|\{i\in T:h_i=0\}|\quad\text{is even};
+\]
+because \(|U|\) is odd, choose \(\beta\) so that
+\[
+|U_0|:=|\{j\in U:h_j=0\}|\quad\text{is odd}.
+\]
+Write \(T_1=T\setminus T_0\), \(U_1=U\setminus U_0\). Construct a coordinate permutation whose active-coordinate blocks occur in the order
+\[
+\boxed{T_0,\quad U_0,\quad T_1,\quad U_1.}
+\tag{19}
+\]
+Every \(i\in T_0\) encounters zero earlier members of \(U\), so \(t_i(\pi)=0=h_i\). Every \(j\in U_0\) encounters \(|T_0|\) earlier members of \(T\), an even number, so \(t_j(\pi)=0=h_j\). Every \(i\in T_1\) encounters \(|U_0|\) earlier members of \(U\), an odd number, so \(t_i(\pi)=1=h_i\). Every \(j\in U_1\) encounters all \(|T|\) earlier members of \(T\), also odd, so \(t_j(\pi)=1=h_j\).
+
+For \(i\in A\setminus T\), the same formula \(t_i(\pi)=|\{u\in U:u\text{ precedes }i\}|\pmod2\) applies. Insert such an inactive coordinate at the very beginning if \(h_i=0\), and at the very end if \(h_i=1\). For \(j\in B\setminus U\), insert it at the beginning if \(h_j=0\) and at the end if \(h_j=1\). Their insertion does not change any active parity, since inactive \(A\)-vertices are absent from \(T\) and inactive \(B\)-vertices are absent from \(U\). All target equalities \(t_i(\pi)=h_i\) are therefore realized.
+
+Thus
+\[
+a+t(\pi)=\alpha\mathbf1_A+\beta\mathbf1_B
+=M(\alpha e_u+\beta e_t).
+\]
+Choose root \(x=\alpha e_u+\beta e_t\). The edge-color formula (4) yields
+\[
+a+Mx+t(\pi)=0,
+\]
+so the full path from \(x\) in direction order \(\pi\) is monochromatic. The possible roots form the stated four-element set. \(\square\)
+
+**Corollary (affine gap reduced to intermediate ranks).** A zero-diagonal row-odd binary matrix has rank at least two: if it had rank one, all nonzero odd rows would coincide, and the zero diagonal would force their common row to vanish. Combining Theorems 4 and 7, every antipodally odd affine cube-edge coloring is solved when
+\[
+\operatorname{rk}M=2\quad\text{or}\quad \operatorname{rk}M\ge n-2.
+\]
+The first potentially unresolved interaction ranks are \(3\le\operatorname{rk}M\le n-3\), beginning at dimension \(n=6\). In particular all affine antipodally odd cube-edge colorings in dimensions \(n\le5\) are covered by theorems in this subsection.
+
+**Structural interpretation.** A rank-two odd interaction matrix forces a bipartite two-row-type dependence system. The four-block permutation (19) is an explicit resource-basis gallery that solves the root syndrome. It complements the high-rank quotient approach and applies in arbitrarily large dimensions with corank \(n-2\).
+
+### Triangle–square rigidity of canonical Hamming resource matroids
+
+Let \(G=\square_{i=1}^k K_{E_i}\) be a finite Cartesian product of nontrivial complete graphs, with \(|E_i|=m_i\ge2\). Write \(A_i\subseteq E(G)\) for the graph edges changing coordinate \(i\), and \(d=\sum_i(m_i-1)\). A **Cartesian square** is a four-cycle obtained by changing two different coordinates, and a **fiber triangle** is a three-cycle obtained by changing one coordinate. A matroid \(N\) on the graph-edge ground set \(E(G)\) is said to have **local resource compatibility** if:
+
+(S) every graph vertex star \(\delta_G(x)\) is independent in \(N\);
+
+(T) every fiber triangle is dependent in \(N\);
+
+(P) the two opposite graph edges of each Cartesian square are parallel elements of \(N\).
+
+These axioms refer only to the graph's intrinsic local geometry and the circuit/independence structure of \(N\). No representation, spectral projection, orientation, or edge coloring is assumed.
+
+For the product \(G\), define \(R(G)\) to be the matroid on \(E(G)\) obtained by giving each edge \(e\in A_i\), joining symbols \(a,b\in E_i\), the graphic resource label \((i,\{a,b\})\). On the set of distinct labels the matroid is
+\[
+R_0(G)=\bigoplus_{i=1}^k M(K_{E_i});
+\tag{1}
+\]
+the matroid \(R(G)\) is its parallel extension in which different graph edges with a common label are parallel.
+
+**Theorem 1 (local resource rigidity).** A matroid \(N\) on \(E(G)\) satisfies (S), (T), and (P) if and only if
+\[
+\boxed{N=R(G).}
+\tag{2}
+\]
+In particular, the three local matroid axioms determine the complete independence system, and
+\[
+\boxed{\operatorname{rk}N=\sum_{i=1}^k(m_i-1)=\deg G.}
+\tag{3}
+\]
+Every graph cycle is then \(N\)-dependent, and every resource-independent graph walk has distinct vertices.
+
+*Proof.* Fix a vertex \(o=(o_1,\ldots,o_k)\) of \(G\). For each factor \(i\), let \(B_i\) be the \(m_i-1\) edges incident with \(o\) that change coordinate \(i\), and put \(B=\bigcup_i B_i=\delta_G(o)\). By (S), \(B\) is independent.
+
+First consider an arbitrary edge of type \(i\), changing the two symbols \(a,b\in E_i\), in a fiber whose other coordinates need not agree with those of \(o\). Change those other coordinates one at a time until the fiber coincides with the fiber of \(o\). At every change the edge is opposite a corresponding edge in a Cartesian square. By (P), its resource element is parallel to the corresponding element in the next fiber. Hence it is parallel to the edge \(e^i_{ab}\) of type \(i\) in the reference fiber through \(o\).
+
+If \(a=o_i\) or \(b=o_i\), the element \(e^i_{ab}\) belongs to \(B_i\). Otherwise the edges \(e^i_{o_i a}, e^i_{o_i b},e^i_{ab}\) form a fiber triangle. By (T) its three elements are dependent, and by (S) each pair is independent since any pair shares a graph vertex. Thus the triangle is a three-element circuit, giving
+\[
+e^i_{ab}\in\operatorname{cl}_N
+\{e^i_{o_i a},e^i_{o_i b}\}
+\subseteq\operatorname{cl}_N(B_i).
+\tag{4}
+\]
+Together with opposite-edge parallel transport this proves
+\[
+A_i\subseteq\operatorname{cl}_N(B_i)
+\qquad\text{for every }i.
+\tag{5}
+\]
+The \(B_i\)'s are disjoint subsets of the independent set \(B\), so \(r_N(A_i)=|B_i|=m_i-1\), while \(B\) spans all of \(E(G)\). Therefore
+\[
+r_N(E(G))=|B|=\sum_i r_N(A_i).
+\tag{6}
+\]
+Rank additivity across the partition \(E(G)=\bigsqcup_i A_i\) implies
+\[
+N=\bigoplus_i N|A_i.
+\tag{7}
+\]
+
+It remains to determine the single-factor restriction. By (P), all copies of a given edge \(\{a,b\}\) in distinct fibers are parallel, and every such parallel class contains the reference-fiber edge \(e^i_{ab}\). Consider the induced restriction \(N_i\) to the reference-fiber edges of \(K_{E_i}\). Every vertex star in \(K_{E_i}\) is independent by (S), and every triangle is a three-element circuit by (S) and (T).
+
+We claim that \(N_i=M(K_{E_i})\). Every graph spanning tree \(T\) of \(K_{E_i}\) can be turned into the star at \(o_i\) through successive **triangle pivots** that preserve matroid span. Root \(T\) at \(o_i\). Whenever a vertex \(v\) has depth at least two, let \(u\) be its parent and \(p\) the parent of \(u\). Replace the tree edge \(uv\) by the complete-graph edge \(pv\). The result is another spanning tree with smaller total depth, and the triangle \(pu,uv,pv\) is a three-element circuit. Because \(pu\) remains in the tree, the outgoing and incoming edges lie in each other's closure together with \(pu\), so the two spanning-tree edge sets have the same closure and rank. Repeating the operation eventually yields the star at \(o_i\), which is independent of rank \(m_i-1\). Thus **every spanning tree has rank \(m_i-1\) and is independent**, and every graph forest, being extendible to a spanning tree, is independent in \(N_i\).
+
+Conversely, take any graph cycle \(C\) of \(K_{E_i}\), with vertex set \(S\), and choose \(z\in S\). Its star edges \(\{zv:v\in S\setminus\{z\}\}\) form an independent family of \(|S|-1\) elements. Every edge \(uv\) of the cycle not incident with \(z\) belongs to the closure of \(zu,zv\) by the triangular circuit; edges incident with \(z\) already belong to the star. Hence the \(|S|\) edges of \(C\) have rank at most \(|S|-1\), so \(C\) is dependent. Consequently the independent sets of \(N_i\) are precisely the graph forests, proving \(N_i=M(K_{E_i})\).
+
+Equations (7) and the parallel-class description now give \(N=R(G)\). Conversely, in \(R(G)\) every graph vertex star uses distinct edges of the factor-graphic root stars, and their union is independent in the direct sum; any triangle in a factor is a graphic cycle; and opposite Cartesian-square edges share the same factor and unordered pair of symbols, hence are parallel. Thus \(R(G)\) satisfies (S), (T), and (P), proving (2).
+
+Finally every closed graph walk projects in every coordinate to a closed walk of the corresponding complete graph. If the original walk is nonempty, some coordinate projection is nontrivial; its multiset of graphic resource labels contains a repeated edge or a cycle, and so is dependent. The original edge set is dependent in \(R(G)\). In particular a resource-independent walk cannot repeat a vertex. \(\square\)
+
+**Corollary 2 (intrinsic matroidal unification).** For
+\[
+M_{\rm cub}=\bigoplus_{i=1}^nU_{1,2},
+\qquad M_{\rm bd}=U_{2,n},
+\tag{8}
+\]
+the connected-component rank-one reduction \(M^\flat\) and its basis graph \(G=\Gamma(M^\flat)\) recover the two canonical root graphs \(Q_n\) and \(K_n\). Theorem 1 uniquely determines their resource matroids from vertex-star independence, triangle dependence, and Cartesian-square parallelism:
+\[
+R(Q_n)=\text{coordinate-direction partition matroid on cube edges},
+\quad
+R(K_n)=M(K_n).
+\tag{9}
+\]
+Thus both resource-independence notions have a common choice-free characterization using ordinary matroid circuits and the local graph structure. The turn bits and global involution are additional data that remain necessary for the colored path assertion.
+
+**Proposition 3 (logical sharpness of the three axioms).** Each hypothesis (S), (T), and (P) is needed for uniqueness.
+
+- Without (S), take \(G=K_3\), and put the rank-one uniform matroid \(U_{1,3}\) on its graph edges. Its triangle is dependent, and (P) is vacuous, while the canonical resource is \(M(K_3)=U_{2,3}\).
+- Without (T), take \(G=K_3\) and the free rank-three matroid on its graph edges. Every star is independent and (P) is vacuous, but the canonical triangle circuit disappears.
+- Without (P), take \(G=Q_2=C_4\) and \(N=U_{2,4}\) on its four graph edges. Every two-edge star is independent, and (T) is vacuous; the four-cycle is dependent, but opposite edges are independent rather than parallel. The canonical resource instead is \(U_{1,2}\oplus U_{1,2}\).
+
+These examples also show that star independence and graph-cycle dependence alone do not determine the cube resource matroid: the commuting-square condition (P) carries essential information.
+
+**Interpretation.** The rank-one reduction of the source matroid supplies the common Hamming root geometry. Theorem 1 recovers the full resource matroid solely from its local triangle/square behavior, with no spectral or vector choice. Independent-star terminal arguments therefore have a canonical combinatorial foundation in both source models. The missing step toward the full NORI1 statement is a global antipodal rank-saturation argument for arbitrary edge colorings; Theorem 1 isolates its resource geometry from the unconstrained coloring problem.
+
+### Commuting-turn cohomology and intrinsic antipodal holonomy
+
+Let \(G=\square_{i=1}^k K_{E_i}\), where \(k\ge2\) and \(|E_i|\ge2\). The **commuting-turn graph** \(T(G)\) is the following ordinary undirected graph:
+- its vertices are the graph edges \(e\in E(G)\);
+- \(e,f\) are adjacent in \(T(G)\) if they are distinct incident edges of \(G\) which change *different* Cartesian coordinates.
+
+Equivalently, their ordered two-edge turn \((u,v,w)\) has nonadjacent outside endpoints \(u,w\). A binary value on each edge of \(T(G)\) is thus an assignment to the underlying *unoriented* commuting turns of \(G\).
+
+**Lemma 1 (connectivity).** If \(k\ge2\), the graph \(T(G)\) is connected.
+
+*Proof.* The line graph \(L(G)\) is connected since \(G\) is connected. Every adjacency \(ef\) in \(L(G)\) between edges of different Cartesian factors is also an edge of \(T(G)\). If \(e,f\) are incident at \(v\) and change the same factor \(i\), choose any edge \(g\) incident at \(v\) changing a different factor \(j\ne i\). Then \(e,g,f\) is a two-edge walk in \(T(G)\). Thus every line-graph adjacency can be replaced by a \(T(G)\)-walk of length at most two, proving connectivity. \(\square\)
+
+**Theorem 2 (choice-free reconstruction of edge colors from commuting turns).** Let \(B:E(T(G))\to\mathbb F_2\). The following are equivalent:
+
+(i) for every cycle \(C\) of \(T(G)\), \(\sum_{t\in C}B(t)=0\);
+
+(ii) there exists \(c:E(G)\to\mathbb F_2\) such that
+\[
+B(\{e,f\})=c(e)+c(f)
+\quad\text{for every }\{e,f\}\in E(T(G)).
+\tag{1}
+\]
+
+When these conditions hold, \(c\) is unique up to simultaneous complementation on all edges of \(G\). In particular, for any graph edges \(e,f\), the quantity
+\[
+\delta_B(e,f)=\sum_{t\in P}B(t)
+\tag{2}
+\]
+is independent of the choice of \(T(G)\)-path \(P:e\leadsto f\), and satisfies \(\delta_B(e,f)=c(e)+c(f)\).
+
+*Proof.* Under (ii), the sum around every cycle telescopes to zero. Conversely, fix \(e_0\in E(G)=V(T(G))\), set \(c(e_0)=0\), and for any \(e\) define \(c(e)\) to be the sum of \(B\) along a \(T(G)\)-path from \(e_0\) to \(e\). Condition (i) makes this path independent, and adding the values at adjacent vertices gives (1). If \(c'\) also satisfies (1), then \(c+c'\) is constant along every edge of the connected graph \(T(G)\), so it is globally constant. Equation (2) follows from the same telescoping argument. \(\square\)
+
+Let \(\tau\) be any involutive automorphism of \(G\) preserving the Cartesian factor directions, such as the canonical central polarity determined by the two-element components of a partition matroid. It acts on \(T(G)\). Say \(B\) is \(\tau\)-invariant if \(B(\tau t)=B(t)\).
+
+**Theorem 3 (intrinsic oddness as a path integral).** Suppose \(B\) satisfies Theorem 2 and is \(\tau\)-invariant. Then there exists one bit \(\omega_\tau(B)\in\mathbb F_2\), independent of the graph edge \(e\), such that
+\[
+\boxed{\omega_\tau(B)=\delta_B(e,\tau e)
+=c(e)+c(\tau e).}
+\tag{3}
+\]
+It is independent of the choice of the reconstructed edge coloring \(c\). In particular,
+\[
+\boxed{\omega_\tau(B)=1
+\quad\Longleftrightarrow\quad
+c(\tau e)=1-c(e)\ \text{for all }e\in E(G).}
+\tag{4}
+\]
+
+*Proof.* Let \(h(e)=c(e)+c(\tau e)\). For adjacent \(e,f\) in \(T(G)\),
+\[
+h(e)+h(f)
+=B(\{e,f\})+B(\{\tau e,\tau f\})=0
+\]
+by invariance. Connectivity of \(T(G)\) makes \(h\) constant. By Theorem 2 this constant equals the path integral \(\delta_B(e,\tau e)\). Replacing \(c\) by \(c+1\) leaves \(h\) unchanged. The equivalence (4) follows. \(\square\)
+
+For a nontrivial canonical polarity \(\eta\) involving at least two two-element factors, \(\eta\) acts freely on \(E(G)\). The class \(\omega_\eta(B)=1\) is therefore possible: assign arbitrary complementary colors on the two-member orbits of \(\eta\), and construct \(B\) using (1). Formula (3) recovers the familiar nontrivial deck parity entirely from commuting-turn data, without introducing a separate chosen edge coloring.
+
+#### A graph-and-matroid intrinsic turn system
+
+For \(k\ge2\), equip every ordered nonbacktracking turn \((u,v,w)\) with a bit \(b(u,v,w)\) subject to:
+
+(C1) if \(u,w\) are nonadjacent, then \(b(u,v,w)=b(w,v,u)\); these common values form \(B:E(T(G))\to\mathbb F_2\) satisfying the cycle condition of Theorem 2;
+
+(C2) if \(u,w\) are adjacent, then \(b(u,v,w)+b(w,v,u)=1\), with no other restrictions on these triangular comparisons;
+
+(C3) when the canonical polarity \(\eta\) is nontrivial, \(B\) is \(\eta\)-invariant and \(\omega_\eta(B)=1\).
+
+Define an **accepted resource gallery** to be a path \(P=(v_0,\ldots,v_\ell)\) whose graph edges are independent in the uniquely determined triangle–square resource matroid \(R(G)\) of the preceding Article XI Subsection and for which, at every internal vertex, both
+\[
+b(v_{j-1},v_j,v_{j+1})=0,\qquad
+\delta_B(v_{j-1}v_j,v_jv_{j+1})=0.
+\tag{5}
+\]
+The second constraint is intrinsic by Theorem 2. On nontriangular turns, the two constraints coincide.
+
+For the one-factor case \(G=K_m\), the commuting-turn graph has no edges. Use instead the intrinsic triangular rule \(b(a,v,c)+b(c,v,a)=1\) and define an accepted gallery using the first constraint of (5) alone. This is the boundary-tournament specialization and involves no edge-color potential.
+
+**Corollary 4 (faithful decoding of the canonical examples).**
+
+(a) For \(M=\bigoplus_{i=1}^nU_{1,2}\), \(n\ge2\), its rank-one root is \(G=Q_n\) and its canonical polarity is cube complementation. Every nonbacktracking turn is commuting, so the turn bit is \(\delta_B(e,f)\). A turn system satisfying (C1)--(C3) is equivalent, up to simultaneous exchange of the color names, to an arbitrary antipodally odd binary coloring of undirected cube edges. The accepted resource galleries are its monochromatic coordinate-distinct geodesics. In particular, a gallery of length \(n\) is a monochromatic antipodal geodesic.
+
+(b) For \(M=U_{2,n}\), \(n\ge3\), the root is \(G=K_n\), and the canonical polarity is the identity. Every nonbacktracking turn is triangular. The turn rule is precisely an arbitrary reversal-odd boundary 3-tournament on distinct ordered triples, and the accepted resource galleries are its monochromatic vertex-simple tight paths.
+
+*Proof.* Part (a) follows from Theorems 2--3 and the triangle–square rigidity characterization \(R(Q_n)\) as the coordinate-direction partition matroid. Part (b) follows from the absence of commuting turns in a complete graph and \(R(K_n)=M(K_n)\), whose independent paths are precisely the vertex-simple paths in the original complete graph. \(\square\)
+
+**Corollary 5 (a turn-only unified conjecture).** Let \(\mathcal C_{\rm can}\) be the intrinsic partition-matroid class whose number \(s\) of two-element connected components satisfies \(s=0\) or \(s\ge2\). Let \(G=\Gamma(M^\flat)\), \(k\) be its Cartesian-factor count, and \(d=\operatorname{rk}R(G)\). Use the turn-only systems (C1)--(C3) for \(k\ge2\) and the unrestricted triangular turn system for \(k=1\). The single quantitative conjecture
+\[
+\boxed{
+L\ge\max\left\{
+\left\lceil\frac{k}{2}\right\rceil,
+\left\lceil\frac{\sqrt d}{2}\right\rceil,
+s
+\right\}
+}
+\tag{6}
+\]
+for an accepted resource gallery is equivalent to NORI1.
+
+*Proof.* The factor-count bound \(\lceil k/2\rceil\) is already established for arbitrary edge colors on Hamming products by the monochromatic factorwise transfer theorem in Article XI. The resource-rank bound \(\lceil\sqrt d/2\rceil\) is established by the cycle-dominating resource-matroid terminal theorem. Both apply to the reconstructed \(c\) by Theorem 2, and for \(k=1\) the rank theorem applies directly to the unrestricted local tournament. If \(s\ge2\), the canonical polarity acts by simultaneous complementation of all binary factors and fixes the remaining factors. Under NORI1, restrict the reconstructed odd coloring to a cube obtained by retaining those binary factors and fixing the others. A monochromatic \(s\)-edge antipodal geodesic on that slice is resource-independent and accepted, giving the third bound. Conversely the pure cube case has \(k=s=d=n\), so (6) forces a monochromatic antipodal geodesic and hence NORI1. \(\square\)
+
+The reconstructed color bit is a gauge choice: changing it globally affects none of the turn data, holonomy, or accepted galleries. Thus both the resource matroid and the antipodal color law can be specified using intrinsic circuit geometry and a binary turn cocycle. The nontrivial remaining mathematical task is the full-rank path-existence theorem for such unrestricted polarized turn systems.
+
+#### Dimension of the intrinsic odd-holonomy space
+
+**Theorem 6 (two cosets of invariant commuting-turn cuts).** Let \(\tau\) be a fixed-point-free involution on the vertices of the connected graph \(T(G)\), induced by a factor-preserving graph involution of \(G\). Put \(2m=|V(T(G))|=|E(G)|\), and let \(\mathcal B^\tau\) be the vector space of \(\tau\)-invariant edge functions \(B:E(T(G))\to\mathbb F_2\) whose sum around every graph cycle vanishes. Then
+\[
+\boxed{\dim_{\mathbb F_2}\mathcal B^\tau=m.}
+\tag{7}
+\]
+The map \(B\mapsto\omega_\tau(B)\) is a surjective linear functional on this space. Its two fibers have
+\[
+\boxed{|\{B\in\mathcal B^\tau:\omega_\tau(B)=\epsilon\}|
+=2^{m-1}\quad(\epsilon\in\mathbb F_2).}
+\tag{8}
+\]
+In particular, antipodally odd edge colorings modulo simultaneous exchange of the two colors correspond bijectively to the nonzero-holonomy fiber.
+
+*Proof.* By Theorem 2, the cycle-zero cochains on \(T(G)\) are precisely the image of the graph coboundary map \(d:C^0(T(G);\mathbb F_2)\to C^1(T(G);\mathbb F_2)\), whose kernel consists of the two constant vertex functions. By Theorem 3, \(dc\) is \(\tau\)-invariant precisely when \(c+\tau c=\alpha\mathbf1\) for some \(\alpha\in\mathbb F_2\), and then \(\omega_\tau(dc)=\alpha\). On each of the \(m\) two-element vertex orbits of \(\tau\), choose the value of \(c\) at one representative freely; the other value is forced to be \(c+\alpha\). Thus all such potentials \(c\), allowing either \(\alpha\), form an \((m+1)\)-dimensional vector space. Quotienting by the one-dimensional constant kernel of \(d\) gives dimension \(m\), proving (7). Both values of \(\alpha\) occur (choose representative values all zero, and then choose either value of \(\alpha\)), so \(\omega_\tau\) is surjective, with kernel of dimension \(m-1\). This proves (8). \(\square\)
+
+For the canonical cube \(Q_n\), \(n\ge2\), the commuting-turn graph has \(|E(Q_n)|=n2^{n-1}\) vertices and its antipodal involution pairs them freely, so \(m=n2^{n-2}\). Thus the entire unrestricted space of antipodally odd edge colorings, modulo exchanging the colors, is a single nonzero-holonomy coset of cardinality \(2^{n2^{n-2}-1}\). No regularity restriction is imposed on the colorings.
+
+### Universal twisted-gallery switch enumeration and degree mixing
+
+Let \(n\ge2\) and let \(c:E(Q_n)\to\mathbb F_2\) be any undirected edge coloring satisfying \(c(\bar e)=1-c(e)\). For the \(T=2^n n!\) rooted directed full geodesics \((x,\pi)\), let \(S_j\) count those with \(j\) changes in their length-\(n\) edge-color word. There is no affine or other regularity assumption.
+
+**Theorem 1 (switch spectrum under rooted rotations).** For \(2r+1\le n\),
+\[
+\boxed{(2r+1)S_{2r+1}=(n-2r-1)S_{2r}.}\tag{1}
+\]
+In particular
+\[
+\boxed{S_1=(n-1)S_0.}\tag{2}
+\]
+More strongly, there are integers \(A_{2r+1}\ge0\) such that
+\[
+\boxed{S_{2r}=2(2r+1)A_{2r+1},\quad
+S_{2r+1}=2(n-2r-1)A_{2r+1}.}\tag{3}
+\]
+
+**Proof.** If a path \(P=(x;i_1,\dots,i_n)\) has color word \(w=(w_1,\dots,w_n)\), its rooted cyclic rotation
+\[
+R(P)=(x^{i_1};i_2,\dots,i_n,i_1)
+\]
+has color word
+\[
+\boxed{w(R(P))=(w_2,\dots,w_n,1-w_1).}\tag{4}
+\]
+The last new edge is antipodal to the original first edge. The action \(R\) has orbit size \(2n\): before \(n\) steps the coordinate permutation has not returned, and after \(n\) steps the root becomes its antipode. The associated length-\(2n\) circular word is \(w_1,\dots,w_n,1-w_1,\dots,1-w_n\). Define its half-circle change count
+\[
+k(P)=\sum_{i=1}^{n-1}[w_i\ne w_{i+1}]+[w_n\ne1-w_1].
+\]
+It is odd, because its transitions change the initial bit to its complement. It is invariant under \(R\). In an orbit with \(k=2r+1\), every rooted linear word omits one of the \(n\) comparisons of a twisted half-circle. If the omitted comparison is a change, the linear word has \(k-1=2r\) changes; otherwise it has \(k=2r+1\). Over all \(2n\) rotations, \(2k\) omit a change and \(2(n-k)\) omit an equality. Thus each orbit contributes \(2(2r+1)\) paths of type \(2r\) and \(2(n-2r-1)\) paths of type \(2r+1\). Summation gives (1)--(3). \(\square\)
+
+**Theorem 2 (local color mixing determines the first cyclic moment).** Put \(a(v)=\deg_{c=0}(v)\), the number of zero-color edges incident with vertex \(v\). For uniformly random rooted full geodesic \(P\),
+\[
+\boxed{\mathbb E k(P)=\frac{2}{2^n(n-1)}
+\sum_{v\in Q_n}a(v)(n-a(v)).}\tag{5}
+\]
+
+**Proof.** Each of the \(n-1\) internal transitions of the full geodesic is an ordered pair of distinct directions at a uniformly random cube vertex. The closing comparison is between the final edge and the antipodal image of the initial edge at the terminal vertex; its vertex and ordered direction pair have the same uniform law. At a vertex \(v\), the proportion of mixed-color ordered edge pairs is
+\[
+\frac{2a(v)(n-a(v))}{n(n-1)}.
+\]
+Summing the \(n\) cyclic comparisons and averaging proves (5). \(\square\)
+
+**Corollary 3 (quantitative existence criterion).** For every antipodally odd coloring,
+\[
+\boxed{S_0\ge2^{n-1}(n-1)!\,
+\max\left\{0,\ 3-\frac{2}{2^n(n-1)}
+\sum_v a(v)(n-a(v))\right\}.}\tag{6}
+\]
+In particular, if the mean of \(a(v)(n-a(v))\) over cube vertices is less than \(3(n-1)/2\), a monochromatic antipodal geodesic exists.
+
+**Proof.** Let \(p\) be the fraction of rotation orbits with \(k=1\). All other odd switch counts are at least three, hence \(\mathbb E k\ge p+3(1-p)\) and \(p\ge(3-\mathbb E k)/2\). Each orbit has \(2n\) rooted paths; a \(k=1\) orbit has two monochromatic paths, and no other orbit has any. Thus \(S_0=(T/n)p=2^n(n-1)!p\). Substitute (5). \(\square\)
+
+**Corollary 4 (sharp low-dimensional witness multiplicities).** Every antipodally odd coloring has
+\[
+\boxed{S_0(Q_3)\ge8,\qquad S_0(Q_4)\ge16.}\tag{7}
+\]
+Both bounds are attained. In \(Q_4\), equality holds if and only if each vertex has two edges of each color.
+
+**Proof.** For \(n=3\), integer \(a\) satisfies \(a(3-a)\le2\), so \(\mathbb E k\le2\); (6) gives \(S_0\ge8\). The coloring
+\[
+c_1=x_2,\quad c_2=x_1,\quad c_3=1+x_1
+\]
+is antipodally odd, and both colors occur at every vertex, making \(\mathbb E k=2\). Since the twisted count \(k\in\{1,3\}\), the proof of (6) gives \(S_0=8\).
+
+For \(n=4\), \(a(4-a)\le4\) gives \(\mathbb E k\le8/3\), and (6) yields \(S_0\ge16\). The coloring
+\[
+c_1=x_2,\quad c_2=x_1,\quad c_3=1+x_2,\quad c_4=1+x_1
+\]
+is antipodally odd and has two colors of each type in every vertex star. Its cyclic counts likewise belong to \(\{1,3\}\), so it attains \(S_0=16\). Conversely, equality \(S_0=16\) forces the mean in (5) to be \(8/3\); hence every vertex maximizes \(a(4-a)\), meaning \(a(v)=2\) for all \(v\). \(\square\)
+
+**Corollary 5 (rigidity of a putative \(Q_5\) counterexample).** If an antipodally odd coloring of \(Q_5\) had no monochromatic antipodal geodesic, then every vertex would have two or three edges of color zero, and **every** rooted full geodesic would have cyclic switch number \(k=3\). Its ordinary switch word would always have two or three changes, with \(3S_3=2S_2\).
+
+**Proof.** Since \(a(5-a)\le6\), (5) gives \(\mathbb E k\le3\). If \(S_0=0\), Theorem 1 excludes any \(k=1\) rotation orbit, so \(k\ge3\) everywhere. Equality of the upper and lower means forces \(a(v)\in\{2,3\}\) at every vertex and \(k=3\) throughout. Equation (1) for \(r=1\) completes the statement. \(\square\)
+
+**Scope.** These theorems hold for *every* legal antipodally odd cube-edge coloring, unlike affine-subclass results. The odd-switch rotation is established elsewhere in Article XI; Theorem 1 upgrades it to full integer-valued switch-spectrum relations, and Theorem 2 connects those counts to a simple vertex-degree observable. The sharp multiplicity bound settles dimensions 3 and 4 by a new count and yields explicit sufficient conditions in all dimensions. For large \(n\), the first-moment threshold is not sufficient near balanced vertex stars: one would need further moments or square-turn correlations to force \(k=1\). No unrestricted NORI1 proof follows from the displayed bounds alone.
+
+#### Theorem 6 (rank-one antipodal completion and facet enumeration)
+
+Let \(M_{n-1}(c)\) denote the number of **directed** monochromatic geodesics of length \(n-1\) in \(Q_n\), counted with their initial vertices and their ordered sets of \(n-1\) distinct coordinate directions. Then
+\[
+\boxed{M_{n-1}(c)=2S_0(c),\qquad
+S_1(c)=\frac{n-1}{2}M_{n-1}(c).}
+\tag{10}
+\]
+Moreover, writing \(F_{j,0}=\{x\in Q_n:x_j=0\}\), and letting \(B(F_{j,0})\) count all monochromatic directed full geodesics within the \((n-1)\)-dimensional face \(F_{j,0}\) under the inherited coloring, one has
+\[
+\boxed{S_0(c)=\sum_{j=1}^n B(F_{j,0}).}
+\tag{11}
+\]
+
+**Proof.** Let \(P\) be a monochromatic geodesic of length \(n-1\), from \(x\) to \(y\), missing direction \(j\). Then \(y=\bar x^{j}\). The \(j\)-edge at the start, \(xx^{j}\), and the \(j\)-edge at the end, \(yy^{j}\), are antipodal images of each other. By the oddness condition, their colors are opposite. Precisely one of them agrees with the common color of \(P\), allowing one and only one monochromatic full-geodesic extension by adding direction \(j\) at the appropriate end. Conversely, deleting the first or the last edge of any monochromatic full geodesic produces two different directed \((n-1)\)-edge monochromatic geodesics, each of which is uniquely extended back to the original full geodesic. This is a two-to-one correspondence, proving the first identity in (10). The second identity follows from (2).
+
+Every \((n-1)\)-edge cube geodesic lies in precisely one coordinate facet, determined by its omitted direction \(j\) and the fixed \(j\)-bit of its vertices. The cube antipode maps the facet \(F_{j,0}\) bijectively to its opposite facet \(F_{j,1}\), reversing all edge colors; hence their monochromatic spanning-geodesic counts coincide. Therefore
+\[
+M_{n-1}(c)=\sum_{j=1}^n \bigl(B(F_{j,0})+B(F_{j,1})\bigr)
+=2\sum_{j=1}^n B(F_{j,0}).
+\]
+Combine with \(M_{n-1}(c)=2S_0(c)\) to obtain (11). \(\square\)
+
+This count identity makes precise the distinction between **partial witness growth** and **rank saturation**. An \((n-1)\)-resource monochromatic path extends automatically, thanks to the antipodal pair of final resource ports. However, a path of only \(\sqrt n\), \(n/2\), or \(n-2\) independent resources need not have such an antipodal pair at its endpoints. An unrestricted proof via the common matroid terminal theorem must therefore either grow witnesses up to rank \(n-1\) or find an analogue of the complementary-endport completion mechanism at larger resource defect. The reversal-odd boundary tournament does not automatically possess this two-end extension rule, so the possible unification must encode different seam arities without discarding the resource constraints.
+
+#### Theorem 7 (second-moment certificate for arbitrary antipodally odd colorings)
+
+Let \(n\ge3\), let \(K\) be the largest odd integer at most \(n\), and regard \(k(P)\in\{1,3,\ldots,K\}\) as a random variable over uniformly chosen rooted full geodesics. Put \(m_1=\mathbb E k\), \(m_2=\mathbb E k^2\). Then
+\[
+\boxed{
+S_0\ge
+2^{n-1}(n-1)!\,
+\max\left\{0,\frac{m_2-(K+3)m_1+3K}{K-1}\right\}.}
+\tag{12}
+\]
+This is a second-moment certificate independent of any affine or regularity condition.
+
+**Proof.** The polynomial \(g(k)=(k-3)(K-k)\) vanishes at \(k=3,K\), is nonnegative at every admissible odd \(k\ge3\), and has \(g(1)=-2(K-1)\). If \(p\) is the fraction of rotation orbits with \(k=1\), it follows that
+\[
+\mathbb E g(k)\ge -2(K-1)p.
+\]
+But \(-\mathbb E g(k)=m_2-(K+3)m_1+3K\). As proved in Corollary 3, \(S_0=2^n(n-1)!p\). The inequality follows. \(\square\)
+
+**Corollary 8 (a variance characterization of the balanced \(Q_5\) case).** Suppose \(n=5\) and every vertex star has zero-color degree two or three. Then \(m_1=3\), and
+\[
+\boxed{S_0(c)=96\,\operatorname{Var}(k).}
+\tag{13}
+\]
+Consequently in this balanced-star regime, a monochromatic antipodal geodesic exists if and only if the cyclic switch number is not constant over the rooted full geodesics.
+
+**Proof.** By (5), balanced stars give \(m_1=3\). The cyclic switch count can be \(1,3,5\). Its probabilities at 1 and 5 are equal because their contributions to \(m_1-3\) are opposite. If that common probability is \(p\), then \(\operatorname{Var}(k)=4p+4p=8p\), while \(S_0=2^5\cdot4!p=768p\). Therefore \(S_0=96\operatorname{Var}(k)\). \(\square\)
+
+This suggests a possible unrestricted strategy beyond average-degree bounds: estimate cyclic-switch variance (or suitable higher positive polynomial moments) from square-turn correlations and rooted gallery exchanges. The first moment depends only on the vertex color degrees; the second moment detects correlations across turns and may remain informative when all vertex stars are perfectly balanced. Formula (13) is a sharp manifestation in dimension five. It is not, by itself, a proof that such variance must be positive in every balanced coloring.
+
+### Cyclic switch calculus for cube galleries and arbitrary boundary tournaments
+
+#### A binary local system and its cut identity
+
+Let \(m\ge3\), \(h\in\{1,\ldots,m\}\), and \(w_i\in\mathbb F_2\), indexed by integers, satisfy
+\[
+w_{i+m}=w_i+\eta,\qquad\eta\in\mathbb F_2.
+\]
+Put \(d_i=w_i+w_{i+1}\pmod2\), and let \(D=\sum_{i=0}^{m-1}d_i\) be an integer sum. Then \(d\) is \(m\)-periodic and
+\[
+D\equiv\eta\pmod2.
+\]
+A retained switch-window with seam width \(h\) has cost
+\[
+J_s=D-\sum_{j=s}^{s+h-1}d_j.
+\]
+**Lemma 1 (cyclic cut transfer).** The cut costs obey
+\[
+\boxed{\sum_{s=0}^{m-1}J_s=(m-h)D,\qquad
+\sum_{s=0}^{m-1}z^{J_s}
+=\sum_{s=0}^{m-1}z^{D-\sum_{j=s}^{s+h-1}d_j}.}
+\]
+In particular, a cut with cost at most one exists if and only if one block of \(h\) consecutive comparisons contains at least \(D-1\) changes.
+
+*Proof.* The switch sequence is periodic because the twist cancels when taking adjacent differences. Its cyclic XOR telescopes to \(\eta\), proving parity. Each comparison belongs to \(h\) deleted blocks and \(m-h\) retained blocks, proving the sum formula. The generating-function identity is termwise. \(\square\)
+
+#### Cubical odd-monodromy specialization
+
+Let \(c:E(Q_n)\to\mathbb F_2\) be arbitrary except for \(c(\bar e)=1-c(e)\). Moving the first step of a rooted full geodesic to its end, while shifting the root over that edge, transforms its color word by
+\[
+(w_0,\ldots,w_{n-1})\mapsto(w_1,\ldots,w_{n-1},1-w_0).
+\]
+Therefore \(m=n,\eta=1,h=1\). A rooted rotation orbit has \(2n\) members and contains two lifts of each cyclic cut. If its odd cyclic switch count is \(D\), the orbit has \(2D\) paths with \(D-1\) ordinary switches and \(2(n-D)\) paths with \(D\) switches. The universal switch-spectrum identity from the preceding subsection follows. The presence of a monochromatic full geodesic is equivalent to existence of a rooted cyclic gallery with \(D=1\).
+
+#### Boundary even-monodromy specialization
+
+Let \(V\) be an \(n\)-vertex set, \(n\ge4\), and let \(b(a,v,c)\) be an arbitrary reversal-odd boundary coloring:
+\[
+b(c,v,a)=1-b(a,v,c).
+\]
+Take any oriented Hamiltonian cycle \(C=(v_0,\ldots,v_{n-1})\), modulo rotations but not reversal, and define, with subscripts modulo \(n\),
+\[
+t_i=b(v_{i-1},v_i,v_{i+1}),\qquad
+d_i=t_i+t_{i+1}\pmod2,\qquad D(C)=\sum_i d_i.
+\]
+The word \(t\) is \(n\)-periodic, so \(D(C)\) is even. Open the cycle into the Hamiltonian path
+\(P_s=(v_s,v_{s+1},\ldots,v_{s+n-1})\).
+The path's turn colors are \(t_{s+1},\ldots,t_{s+n-2}\); their switch count is
+\[
+\boxed{\sigma(P_s)=D(C)-(d_{s-2}+d_{s-1}+d_s).}
+\tag{1}
+\]
+Thus the seam width is \(h=3\), rather than the cubical \(h=1\).
+
+**Theorem 2 (boundary Hamiltonian cycle-window theorem).** Each oriented Hamiltonian cycle supplies \(n\) distinct Hamiltonian paths, and
+\[
+\boxed{\sum_{s=0}^{n-1}\sigma(P_s)=(n-3)D(C).}
+\tag{2}
+\]
+The number of cyclic cuts with at most one switch equals the number of cyclic length-three blocks of \(d(C)\) containing at least \(D(C)-1\) ones. Hence:
+
+- For \(D(C)=0\), all \(n\) cuts give monochromatic Hamiltonian paths.
+- For \(D(C)=2\), at least four cuts give Hamiltonian paths with at most one switch.
+- For \(D(C)=4\), some cut works if and only if three consecutive entries of \(d(C)\) are one.
+- For \(D(C)\ge6\), no cyclic cut works.
+
+The spanning one-switch Hamiltonian boundary conjecture is consequently equivalent to the existence of a Hamiltonian cycle with \(D(C)\le2\), or one with \(D(C)=4\) and three consecutive changes.
+
+*Proof.* Each permutation of the \(n\) original vertices opens a unique oriented Hamiltonian cycle, obtained by appending its closing edge. Formula (1) omits three consecutive circular comparisons and retains the \(n-3\) internal comparisons. Apply Lemma 1 to obtain (2) and the cut condition. Since \(D\) is even, the four listed cases exhaust the possibilities. For \(D=2\), each of the two changed comparisons belongs to three deleted three-blocks; their combined set contains at least four different blocks. At \(D=4\), deleting at least three changed comparisons requires an all-one three-block; at \(D\ge6\), three deletions cannot leave fewer than three changes. \(\square\)
+
+**Corollary 3 (unconditional spanning one-switch path on five vertices).** Every binary coloring of ordered triples on \(n\le5\) distinct vertices, even without reversal oddness, has a Hamiltonian vertex ordering whose consecutive triple-color word has at most one switch.
+
+*Proof.* For \(n\le4\) there are at most two successive triple colors. At \(n=5\), any cyclic binary five-term turn word has \(D\in\{0,2,4\}\). The first two cases are covered by Theorem 2. In the last case, the cyclic comparison word has four ones and one zero, and therefore three consecutive ones. Theorem 2 applies. \(\square\)
+
+**Theorem 4 (boundary quartet-discrepancy moment).** Let
+\[
+\beta(b)=\frac1{n(n-1)(n-2)(n-3)}
+\sum_{\substack{a,u,v,d\in V\\\mathrm{distinct}}}
+\mathbf1_{\{b(a,u,v)\ne b(u,v,d)\}}.
+\]
+For uniform oriented Hamiltonian cycle \(C\) and uniform Hamiltonian path \(P\),
+\[
+\boxed{\mathbb E D(C)=n\beta(b),\qquad
+\mathbb E\sigma(P)=(n-3)\beta(b).}
+\tag{3}
+\]
+In particular, if \(\beta(b)<4/n\), there is a Hamiltonian path with at most one switch.
+
+*Proof.* Four consecutive vertices in a uniformly random oriented Hamiltonian cycle form a uniformly random ordered quadruple of distinct vertices. Thus each cyclic turn comparison changes color with probability \(\beta(b)\), giving the first equality. Averaging (2) over cycles, whose cuts partition the permutations, gives the second. If the mean cyclic count is below four, some cycle has even count zero or two; apply Theorem 2. \(\square\)
+
+#### Mathematical distinction
+
+Both models encode the turn defects of full-resource galleries as cyclic \(\mathbb F_2\)-differences. An existence witness is a cut whose deleted seam contains nearly all defects. This is a shared statement valid for all legal colorings; no affinity, local transitivity, or special edge order is involved.
+
+The cube has odd monodromy and a one-comparison seam; the boundary has even monodromy and a three-comparison seam. For the former, existence is governed solely by the smallest cyclic change count \(D=1\). For the latter, the relative positions of up to four cyclic changes also matter. Consequently a proof of the boundary conjecture must control clustering or reductions of cyclic turn defects, not just their total. The results give a common analytic mechanism but do not assert that a general unifying existence theorem has been proved.
+
+#### 5. Quantized local exchange curvature
+
+**Lemma 5 (adjacent-exchange Lipschitz bounds).** On the graph of full-resource galleries related by transposing adjacent steps, the cyclic switch count \(D\) changes as follows:
+
+(a) For arbitrary antipodally odd cubical edge colors, transposing two consecutive directions changes \(D\) by an even integer of absolute value at most two.
+
+(b) For arbitrary boundary triple colors, transposing two consecutive vertices in a cyclic Hamiltonian ordering changes \(D\) by an even integer of absolute value at most four.
+
+Both statements hold without assuming the target conjectures.
+
+**Proof.** The cyclic switch count of a binary color word is the number of unequal adjacent colors, including the twisted closing comparison in (a) and the periodic closing comparison in (b). In both cases its parity is preserved under gallery transpositions: odd in (a), even in (b).
+
+In (a), exchanging two consecutive coordinate steps replaces two edges of a single coordinate square; all the other path edges stay unchanged. Thus only two neighboring entries of the length-\(n\) edge-color word can change, affecting at most three consecutive cyclic comparisons. The integer difference of switch counts is even, so its magnitude is at most two.
+
+In (b), swapping two consecutive vertices in the Hamiltonian cycle changes only the four consecutive triple colors whose centers are the swapped vertices or their two immediate neighbors. All other turn colors are unchanged. Therefore at most five cyclic comparisons are affected. The integer difference is even, hence of magnitude at most four. \(\square\)
+
+**Variational consequence.** A gallery minimizing the cyclic switch count is automatically stable under every adjacent exchange. In the cube its local energy increments belong to \(\{0,2\}\), and for boundary Hamiltonian cycles they belong to \(\{0,2,4\}\). To prove the target from such a minimum, one must show that an odd local minimum with \(D\ge3\) (cube), respectively a boundary local minimum outside the \(D\le2\)/clustered-\(D=4\) extraction classes, is impossible or can be escaped by a coordinated sequence of zero-cost exchanges. The support bounds make this a finite-neighborhood curvature problem, not a solution in themselves.

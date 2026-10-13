@@ -2,7 +2,7 @@
 
 # Unified matroid conjectures: common axioms, implications, and obstructions
 
-This Subsection assembles the Article XI exploration of generalized binary matroid intersection properties and the comparison with reversal-odd boundary 3-tournaments. The goal is an abstract theorem implying **both** unrestricted monochromatic NORI1 and a long vertex-simple monochromatic boundary-tournament tight path. It separates established facts from proposed conjectures; none of the proposed universal intersection implications below has been proved.
+This Subsection assembles the Article XI exploration of generalized binary matroid intersection properties and the comparison with reversal-odd boundary 3-tournaments. The full-strength goal is an abstract theorem implying **both** unrestricted monochromatic NORI1 and the boundary one-change Hamiltonian conjecture: a vertex-simple tight path through all original vertices, with at most one change among its consecutive triple colors. A long monochromatic boundary tight path is only an established weaker consequence. It separates established facts from proposed conjectures; none of the proposed universal intersection implications below has been proved.
 
 ## A. The shared pointed line-graph double cover
 
@@ -74,7 +74,7 @@ If \(q=1\), (5) supplies a full \(n\)-resource cube gallery with cyclic turn wei
 \[
 \boxed{\left\lceil\frac{m-2}{4}\right\rceil+2=\Omega(\sqrt n)}\tag{7}
 \]
-original vertices. Thus (5) would resolve the two target problems simultaneously. This is a *conditional implication*, not a proof of (5).
+original vertices. Thus (5) would establish NORI1 and a weaker monochromatic boundary square-root theorem, not the full one-change Hamiltonian boundary conjecture; the latter needs rank \(n-1\) and a one-switch tight triple-color word. This is a *conditional implication*, not a proof of (5).
 
 **Conjecture C (independence-preserving exchange and rank growth).** Seek a local, color-cost-controlled exchange operation acting on galleries or marked cocircuits that preserves the appropriate auxiliary resource matroid and legal transition language. It should remove repeated-resource excess or increase the independent resource rank without growing \(|X\cap Y|\) beyond the appropriate seam budget. In the cube, the obstacle is an extra coordinate traversal in a low-weight monodromy-one cycle; in the boundary model, the obstacle is extending a zero-turn directed tight path without repeating an original vertex. A sufficiently strong iterative rank-growth or defect-reduction lemma would lead to Conjecture B. The desired operation must be expressed in local basis/circuit language without assuming the sought low-intersection witness.
 

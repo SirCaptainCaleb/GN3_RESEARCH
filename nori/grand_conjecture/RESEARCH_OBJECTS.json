@@ -49,6 +49,22 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_xii_resource_constrained_hamming_graphs",
+            "type": "article",
+            "title": "Article XII — Resource-Constrained Hamming Graphs and One-Change Path Geometry",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_article_xiii_binary_involutive_rainbow_paths",
+            "type": "article",
+            "title": "Article XIII — Rainbow Paths with a Color-Reversing Binary Edge Involution",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_rainbow_circuit_geometry",
             "type": "section",
             "title": "Antipodal turn quotients and rainbow-circuit geometry",
@@ -89,9 +105,25 @@
             "research_status": "active"
         },
         {
+            "id": "nori_xii_definitions_full_rank_phase",
+            "type": "section",
+            "title": "Foundations: Hamming resources, polarizations, and phase transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_generalizations_conjectures",
             "type": "section",
             "title": "Matroid Generalizations and Short-Port Intersection Conjectures",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_xiii_minimum_color_degree_foundations",
+            "type": "section",
+            "title": "Minimum color degree and the involutive one-switch path problem",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -108,6 +140,22 @@
             "id": "a_legal_q15_counterexample_to_unrooted_nori_via_a_three_class_reversal_even_word_obstruction",
             "type": "subsection",
             "title": "A legal Q15 counterexample to unrooted NORI via a three-class reversal-even word obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "affine_cube_edge_colorings_and_elimination_of_rank_one_obstructions",
+            "type": "subsection",
+            "title": "Affine cube-edge colorings and elimination of rank-one obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "affine_root_syndrome_gallery_transport_and_corank_one_closure",
+            "type": "subsection",
+            "title": "Affine root-syndrome gallery transport and corank-one closure",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -233,6 +281,14 @@
             "research_status": "active"
         },
         {
+            "id": "canonical_central_polarity_of_partition_matroid_hamming_roots",
+            "type": "subsection",
+            "title": "Canonical central polarity of partition-matroid Hamming roots",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cayley_two_design_conservation",
             "type": "subsection",
             "title": "Cayley two-design conservation",
@@ -268,6 +324,14 @@
             "id": "common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection",
             "type": "subsection",
             "title": "Common-terminal monochromatic arm bases and rooted Boolean complement intersection",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "commuting_turn_cohomology_and_intrinsic_antipodal_holonomy",
+            "type": "subsection",
+            "title": "Commuting-turn cohomology and intrinsic antipodal holonomy",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -321,6 +385,14 @@
             "research_status": "active"
         },
         {
+            "id": "cycle_dominating_resource_matroids_and_an_improved_terminal_extension_theorem",
+            "type": "subsection",
+            "title": "Cycle-dominating resource matroids and an improved terminal-extension theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem",
             "type": "subsection",
             "title": "Cyclic-turn averaging, disjoint exchanges, and the ten-dimensional two-switch theorem",
@@ -332,6 +404,22 @@
             "id": "deck_displacement_two_port_exchange",
             "type": "subsection",
             "title": "Deck-displacement two-port exchange",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "definitions_full_rank_conjecture_and_rigorous_endpoint_reductions",
+            "type": "subsection",
+            "title": "Definitions, full-rank conjecture, and rigorous endpoint reductions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "definitions_principal_conjecture_and_quantitative_variants",
+            "type": "subsection",
+            "title": "Definitions, principal conjecture, and quantitative variants",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -364,6 +452,14 @@
             "id": "disjoint_antipodal_geodesic_packings_and_independent_short_port_cocircuit_tests",
             "type": "subsection",
             "title": "Disjoint antipodal geodesic packings and independent short-port cocircuit tests",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "edge_free_factorwise_polarities_and_the_maximal_hamming_reduction",
+            "type": "subsection",
+            "title": "Edge-free factorwise polarities and the maximal Hamming reduction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -433,6 +529,14 @@
             "research_status": "active"
         },
         {
+            "id": "finite_state_affine_resource_galleries_and_paired_type_cancellation",
+            "type": "subsection",
+            "title": "Finite-state affine resource galleries and paired-type cancellation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "five_cycle_turn_density_and_six_resource_marked_intersection_theorem",
             "type": "subsection",
             "title": "Five-cycle turn-density and six-resource marked intersection theorem",
@@ -468,6 +572,30 @@
             "id": "full_geodesic_color_profiles_span_the_entire_binary_space",
             "type": "subsection",
             "title": "Full-geodesic color profiles span the entire binary space",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "full_rank_hamming_galleries_permutation_model_and_determinant_transport",
+            "type": "subsection",
+            "title": "Full-rank Hamming galleries: permutation model and determinant transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "fundamental_exchange_forests_and_rank_one_dual_rigidity",
+            "type": "subsection",
+            "title": "Fundamental exchange forests and rank-one dual rigidity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "fundamental_circuit_pivots_dual_basis_sweeps_and_faithful_ordered_exchanges",
+            "type": "subsection",
+            "title": "Fundamental-circuit pivots, dual-basis sweeps, and faithful ordered exchanges",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -585,9 +713,41 @@
             "research_status": "active"
         },
         {
+            "id": "linear_factor_count_path_growth_in_triangle_polarized_hamming_graphs",
+            "type": "subsection",
+            "title": "Linear factor-count path growth in triangle-polarized Hamming graphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "linear_hamming_factor_count_paths_from_weighted_edge_transfer",
+            "type": "subsection",
+            "title": "Linear Hamming factor-count paths from weighted edge transfer",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament",
             "type": "subsection",
             "title": "Logarithmic monochromatic NORI3 paths from a self-dual (3,3)-tournament",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "matroid_independent_tournament_paths_and_terminal_growth",
+            "type": "subsection",
+            "title": "Matroid-independent tournament paths and terminal growth",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "maximum_clique_incidence_roots_and_matroidal_terminal_tournament_paths",
+            "type": "subsection",
+            "title": "Maximum-clique incidence roots and matroidal terminal-tournament paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -681,6 +841,14 @@
             "research_status": "active"
         },
         {
+            "id": "periodic_exchange_strands_and_resource_capacity",
+            "type": "subsection",
+            "title": "Periodic exchange strands and resource capacity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "pointed_lift_duality_and_shortest_port_cocircuits",
             "type": "subsection",
             "title": "Pointed lift duality and shortest port cocircuits",
@@ -692,6 +860,14 @@
             "id": "polarized_basis_exchange_galleries_twisted_closure_and_seam_controlled_intersection_conjecture",
             "type": "subsection",
             "title": "Polarized basis-exchange galleries, twisted closure, and seam-controlled intersection conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "polarized_hamming_turn_geometry_and_a_single_quantitative_nori1_equivalence",
+            "type": "subsection",
+            "title": "Polarized Hamming turn geometry and a single quantitative NORI1 equivalence",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -777,6 +953,14 @@
             "research_status": "active"
         },
         {
+            "id": "root_basis_star_geometry_and_a_uniform_square_root_path_theorem",
+            "type": "subsection",
+            "title": "Root-basis star geometry and a uniform square-root path theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests",
             "type": "subsection",
             "title": "Root-uniform low-switch geodesics for affine colorings supported on forests",
@@ -857,6 +1041,14 @@
             "research_status": "active"
         },
         {
+            "id": "spectral_rigidity_for_partition_matroids",
+            "type": "subsection",
+            "title": "Spectral rigidity for partition matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy",
             "type": "subsection",
             "title": "Square-curvature gain in cyclic exchange averaging and reversal holonomy",
@@ -876,6 +1068,22 @@
             "id": "star_triangle_exchange_components_and_the_repeated_resource_barrier",
             "type": "subsection",
             "title": "Star-triangle exchange components and the repeated-resource barrier",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "terminal_set_growth_for_matroid_sliding_window_galleries",
+            "type": "subsection",
+            "title": "Terminal-set growth for matroid sliding-window galleries",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "ternary_hamming_turn_conservation_and_linear_paths",
+            "type": "subsection",
+            "title": "Ternary Hamming turn conservation and linear paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -913,9 +1121,41 @@
             "research_status": "active"
         },
         {
+            "id": "transitive_star_terminal_bounds_for_spectral_resource_paths",
+            "type": "subsection",
+            "title": "Transitive-star terminal bounds for spectral-resource paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "transverse_bouquet_smoothing_and_phase_preserving_cocircuit_amalgamation",
             "type": "subsection",
             "title": "Transverse bouquet smoothing and phase-preserving cocircuit amalgamation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "triangle_square_rigidity_of_canonical_hamming_resource_matroids",
+            "type": "subsection",
+            "title": "Triangle-square rigidity of canonical Hamming resource matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "triangular_turns_and_resource_path_growth",
+            "type": "subsection",
+            "title": "Triangular turns and resource-path growth",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "twisted_and_periodic_gallery_cut_calculus_for_cubes_and_boundary_tournaments",
+            "type": "subsection",
+            "title": "Twisted and periodic gallery cut calculus for cubes and boundary tournaments",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -988,6 +1228,22 @@
             "id": "universal_three_direction_edge_color_prescription",
             "type": "subsection",
             "title": "Universal three-direction edge-color prescription",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_twisted_gallery_switch_enumerators_and_monochromatic_count_bounds",
+            "type": "subsection",
+            "title": "Universal twisted-gallery switch enumerators and monochromatic count bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "weighted_detour_gluing_and_matroidal_hamming_density",
+            "type": "subsection",
+            "title": "Weighted detour gluing and matroidal Hamming density",
             "version": 1,
             "superseded": false,
             "research_status": "active"

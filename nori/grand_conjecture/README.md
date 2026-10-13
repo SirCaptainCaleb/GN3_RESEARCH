@@ -2,6 +2,8 @@
 
 Each paper assembles selected Subsection compositions through Section compositions. Inactive and superseded Articles remain in Supabase and are excluded from this artifact.
 
+- [Article XII — Resource-Constrained Hamming Graphs and One-Change Path Geometry](nori_article_xii_resource_constrained_hamming_graphs/MANUSCRIPT.md)
+- [Article XIII — Rainbow Paths with a Color-Reversing Binary Edge Involution](nori_article_xiii_binary_involutive_rainbow_paths/MANUSCRIPT.md)
 - [Article I — Antipodal-reversal-odd geodesic colorings of the cube](nori_article_i_conjecture/MANUSCRIPT.md)
 - [Article VII — Seven-coordinate structural and tournament methods](nori_article_vii_seven_coordinate/MANUSCRIPT.md)
 - [Article VIII - Antipodally odd edge colorings](nori_article_viii_edges/MANUSCRIPT.md)

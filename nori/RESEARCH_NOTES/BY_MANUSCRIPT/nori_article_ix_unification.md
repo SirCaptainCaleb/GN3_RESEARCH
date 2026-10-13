@@ -19,6 +19,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](../note_grand_structure_uniform_length_geodesics.md) — active/open
 - [Induced reachability complexes in one fixed triangulation](../note_induced_reachability_complexes_fixed_triangulation.md) — active/proved
 - [Induced reachability subcomplexes in one fixed cube triangulation](../note_fixed_triangulation_induced_reachability_endpoint_intersection.md) — active/proved
+- [Intrinsic partition exchange rigidity and the absence of a common basis antipode](../note_1ed6f8ad701e2224c78db097.md) — active/proved
 - [Linear height barrier for global ordered-pair transition ranks](../note_boundary_pair_rank_linear_height_barrier.md) — resolved/proved
 - [Monochromatic geodesic reachability forms accessible families, not necessarily simplicial complexes](../note_geodesic_reachability_accessibility_not_simplicial.md) — active/proved
 - [Ordered-pair antipodal edge model: a three-step connectivity obstruction](../note_ordered_pair_antipodal_graph_bridge_and_decoding_obstruction_20261011.md) — active/proved
@@ -36,6 +37,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Terminal-basin and root-profile nerve extraction gaps](../note_terminal_basins_and_root_profile_nerve_extraction_limits.md) — active/method_limitation
 - [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
 - [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
+- [Two-step rainbow-resource diversity and monochromatic two-step counting](../note_c12cd5a8ceac4f8a596a3186.md) — active/proved
 - [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
 - [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
 - [Withdrawn proposal: balanced antipodal reachability](../note_orientation_sensitive_balanced_antipodal_reachability_candidate_20261011.md) — active/proposed

@@ -3,28 +3,44 @@
 Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
+- [All-dimensional mixed partition obstruction to deck-odd diameter amplification](../note_85eaa1b47921437682abc652.md) — active/proved
+- [Auxiliary Hamming path-growth conjecture only](../note_425eeea30418204de135d02f.md) — active/conjecture
 - [Bipartite highly connected square-generated two-covers still fail P4](../note_nori_xi_bipartite_square_generated_high_connectivity_p4_failure.md) — active/proved
 - [Boundary colorings with identical component flats but different monochromatic Hamilton status](../note_nori_xi_boundary_identical_flats_different_forward_hamilton_witness.md) — active/proved
 - [Boundary Hamiltonian tight-window Smith forms: proved in all orders](../note_ed5bae5d779fba468cf28cbc.md) — active/proved
 - [Boundary n=4 tetrahedral triangle components give loop-free contact K4](../note_nori_xi_boundary_n4_no_port_loop_tetrahedral_triangles.md) — active/proved
+- [Canonical basis polarity and rank-two orientation count obstructions](../note_nori_xi_no_canonical_basis_polarity_and_rank_two_orientation_count.md) — active/proved
+- [Canonical polarity obstruction for cube and Johnson basis graphs](../note_3412ba19595819819a0e3745.md) — active/proved
+- [Canonical resource recovery and the basis-polarity obstruction for partition matroid unification](../note_90fc247db08fb0d2da5cba30.md) — active/proved
 - [Certified seven- and eight-vertex boundary spanning one-turn closure](../note_nori_xi_certified_boundary_one_turn_orders_seven_eight.md) — active/proved
 - [Complementary-arm counting potential and centerwise comparison sensitivities](../note_nori_xi_complementary_arm_count_and_sensitivities.md) — active/proved
 - [Connected boundary red covering graph and 88 port loops without a monochromatic Hamilton tight path](../note_nori_xi_boundary_n5_connected_red_cover_no_mono_hamilton.md) — active/proved
+- [Counting obstruction for rank-two oriented matroids](../note_76f72143394b352a032112f9.md) — active/proved
 - [Cube monochromatic rooted reachability can violate greedoid exchange](../note_nori_xi_reachability_not_a_greedoid.md) — active/computational
+- [Dual-basis sweeps and the obstruction to basis-level polarization](../note_nori_xi_dual_basis_sweeps_and_intrinsic_polarization_obstructions.md) — active/proved
 - [Eight-vertex obstruction to rooted-majority reachability](../note_nori_xi_rooted_majority_fails_on_eight_vertices.md) — active/proved
 - [Equal changed-turn density need not fix stationary-child costs without a two-design](../note_nori_xi_nondesign_density_obstruction.md) — active/proved
+- [Equivariant base polarities of all partition matroids](../note_d341cf1be211f33e23ee1842.md) — active/proved
+- [Exchangeability-root graph collapses to matroid connected components](../note_nori_xi_exchangeability_clique_collapse_for_all_matroids_20261012.md) — active/proved
+- [Exchangeability-root graph collapses to matroid connected components](../note_nori_xi_exchangeability_clique_collapse_for_all_matroids_20261012.md) — active/proved
 - [Explicit antipodally odd Q7 coloring realizes sharp 26-set middle Kneser bound at one root without rank-six reachability](../note_nori_xi_q7_kneser_extremal_root_reachability.md) — active/computational
 - [Failed two-arm local uncrossing forces an oriented four-cycle](../note_nori_xi_two_arm_uncrossing_four_cycle_failure_certificate.md) — active/proved
 - [Five-cube example: no root exceeds EKR middle-level density despite monochromatic geodesics](../note_nori_xi_middle_rank_reachability_density_not_enough.md) — active/computational
 - [Flat-graded antipodal reachability SAT checks](../note_nori_xi_flat_sat_benchmarks.md) — active/computational
 - [Forced terminal two-faces of near-full monochromatic cube geodesics](../note_nori_xi_near_full_terminal_squares.md) — active/proved
 - [Four-vertex parity boundary obstruction](../note_nori_xi_boundary_4_parity_obstruction.md) — active/proved
+- [Full-strength Hamming connection-and-anchor conjecture: graph-only resources and caveats](../note_3e8c9b2222b28ff64228d016.md) — active/conjecture
 - [Global exchange hexagon rank: proved affine homology theorem](../note_article_xi_hexagon_exchange_rank_deficiency_20261012.md) — active/proved
 - [Highly connected graph covers violate P4 despite large local quadratic rank](../note_nori_xi_high_connectivity_cover_p4_failure.md) — active/proved
 - [Homogeneous factor separation defeats short-port amplification](../note_2768df03853d2ad4c4161f2a.md) — active/proved
+- [Intrinsic exchange-root graphic matroid and equivariant base-polarity obstruction](../note_nori_xi_intrinsic_exchange_root_matroid_and_base_polarity_obstruction_20261012.md) — active/proved
+- [Intrinsic partition exchange rigidity and the absence of a common basis antipode](../note_1ed6f8ad701e2224c78db097.md) — active/proved
 - [Line-graph cover short-systole capture](../note_0631234e60332fbab139c5d3.md) — active/proved
+- [Linear-root separation, graded two-arm gluing, and an antipodal cycle obstruction](../note_0709496a145316f7a5c9c564.md) — active/proved
 - [Lovasz local lemma block-random geodesic idea](../note_nori_xi_lll_block_random_geodesic_tangent.md) — active/open
+- [Middle-layer parity coloring obstructs fixed-root permutation-gallery extraction](../note_e84142ee316f5320d93955f5.md) — active/proved
 - [Monochromatic terminal reachability is accessible but not a greedoid](../note_nori_xi_monochromatic_terminal_reachability_not_greedoid.md) — active/proved
+- [Multiplicity and permutation-order richness of half-spanning monochromatic cube geodesics](../note_f5fa6d34a8644cdd6722cde6.md) — active/proved
 - [Near-antipodal reachable pairs can overlap and invalidate diameter shortcut](../note_nori_xi_near_antipodal_diameter_failure.md) — active/computational
 - [Nonoptimal Hamiltonian block-reversal local minimum in a boundary tournament](../note_156a77d90f624435a83d5d6f.md) — active/proved
 - [Nonoptimal strict local minima for adjacent-swap geodesic exchange in dimensions n>=9](../note_nori_xi_strict_geodesic_exchange_trap.md) — active/proved
@@ -37,8 +53,13 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Q6 red tree with unique antipodal pair of distance eight](../note_nori_xi_q6_single_contact_tree_defect.md) — active/proved
 - [Random smoothing forces near-spanning monochromatic tight paths](../note_491e495cff336492c0ec3f2a.md) — active/proved
 - [Random sparse comparison conflicts limit purification density](../note_107241b2b413871f8fbe6866.md) — active/proved
+- [Rigidity of one-sided maximum-clique incidence roots](../note_3eeffa31af212f35660ce209.md) — active/proved
+- [Rook-graph counterexample to incidence-gallery one-switch spanning](../note_0933e3d4eb6a612d1c80122e.md) — active/proved
 - [Rooted monochromatic reachability violates delta-matroid symmetric exchange](../note_nori_xi_rooted_monochromatic_family_not_delta_matroid.md) — active/proved
 - [Short legal cocircuit with two-point intersection need not be resource-simple](../note_nori_xi_two_intersection_not_directed_resource_faithful.md) — active/proved
 - [Terminal-shell rigidity and nongeodesic antipodal component obstruction](../note_nori_xi_terminal_shell_and_component_local_non_geodesic_obstruction.md) — active/proved
 - [Three-connectivity does not force a prescribed pair into one cocircuit of a cocycle](../note_nori_xi_three_connected_matroid_two_port_cocycle_separation.md) — active/proved
+- [Three-level orientations defeat dual-rank galleries in rank-two uniform products](../note_nori_xi_chromatic_orientation_obstruction_for_uniform_rank_two_products.md) — active/proved
 - [Two-port cocircuit sector fails under independent port-preserving contraction](../note_nori_xi_two_port_contraction_separates_ports.md) — active/proved
+- [Vertex-deletion inequality for rooted detours: sharp inductive route to full matroidal density](../note_812705187d7c6e4f04b5f752.md) — active/proposed
+- [Weighted detour assignment conjecture and a Hamming-product matroidal Dirac reduction](../note_fc56720c4e5464b1f47f4ab4.md) — active/proposed
