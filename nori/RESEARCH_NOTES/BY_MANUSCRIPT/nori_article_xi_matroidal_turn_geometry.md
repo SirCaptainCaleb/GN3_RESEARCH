@@ -4,6 +4,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [All-dimensional mixed partition obstruction to deck-odd diameter amplification](../note_85eaa1b47921437682abc652.md) — active/proved
 - [Canonical polarity obstruction for cube and Johnson basis graphs](../note_3412ba19595819819a0e3745.md) — active/proved
+- [Color-transitive product obstruction and primitive short-circuit classification](../note_nori_xiii_transitive_product_and_short_circuit_classification_20261013.md) — active/proved
 - [Corrected four-block one-detour antipodal path bound and Q11 obstruction](../note_article_xi_one_detour_monochromatic_path_20261012.md) — active/proved
 - [Dual-basis sweeps and the obstruction to basis-level polarization](../note_nori_xi_dual_basis_sweeps_and_intrinsic_polarization_obstructions.md) — active/proved
 - [Exchangeability-root graph collapses to matroid connected components](../note_nori_xi_exchangeability_clique_collapse_for_all_matroids_20261012.md) — active/proved

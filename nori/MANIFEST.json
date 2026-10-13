@@ -1,6 +1,6 @@
 {
-  "active_section_count": 9,
-  "active_subsection_count": 142,
+  "active_section_count": 10,
+  "active_subsection_count": 147,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -69,6 +69,14 @@
         "id": "nori_xiii_color_preserving_involution_problem",
         "math_version": 1,
         "position": 1,
+        "version": 2
+      }
+    ],
+    "nori_article_xiv_type_a_rook_gallery_topology": [
+      {
+        "id": "nori_type_a_rook_gallery_topology",
+        "math_version": 1,
+        "position": 1,
         "version": 1
       }
     ]
@@ -91,9 +99,9 @@
     },
     "nori_article_ix_unification": {
       "composition": {
-        "body_chars": 8939,
-        "composed_through_revision": 7363,
-        "composition_version": 4,
+        "body_chars": 19088,
+        "composed_through_revision": 7539,
+        "composition_version": 10,
         "frontier": {
           "current": null
         },
@@ -102,7 +110,7 @@
         "stale": null,
         "stale_dependencies": []
       },
-      "version": 2
+      "version": 4
     },
     "nori_article_vii_seven_coordinate": {
       "composition": {
@@ -181,9 +189,9 @@
     },
     "nori_article_xiii_binary_involutive_rainbow_paths": {
       "composition": {
-        "body_chars": 10679,
-        "composed_through_revision": 7440,
-        "composition_version": 17,
+        "body_chars": 12945,
+        "composed_through_revision": 7475,
+        "composition_version": 22,
         "frontier": {
           "current": null
         },
@@ -192,15 +200,30 @@
         "stale": null,
         "stale_dependencies": []
       },
-      "version": 3
+      "version": 4
+    },
+    "nori_article_xiv_type_a_rook_gallery_topology": {
+      "composition": {
+        "body_chars": 19949,
+        "composed_through_revision": 7546,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 1
     }
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-13T04:47:09.31139+00:00",
+  "generated_at": "2026-10-13T20:23:35.993847+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 130,
+  "research_note_count": 156,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -302,11 +325,27 @@
       "math_version": 1,
       "version": 1
     },
+    "nori_type_a_rook_gallery_topology": {
+      "composition": {
+        "body_chars": 19881,
+        "composed_through_revision": 7545,
+        "composition_version": 5,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
     "nori_unification_foundations": {
       "composition": {
-        "body_chars": 8877,
-        "composed_through_revision": 7362,
-        "composition_version": 4,
+        "body_chars": 19026,
+        "composed_through_revision": 7520,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
@@ -336,9 +375,9 @@
     },
     "nori_xiii_color_preserving_involution_problem": {
       "composition": {
-        "body_chars": 10612,
-        "composed_through_revision": 7439,
-        "composition_version": 8,
+        "body_chars": 12887,
+        "composed_through_revision": 7474,
+        "composition_version": 13,
         "frontier": {
           "current": null
         },
@@ -348,10 +387,10 @@
         "stale_dependencies": []
       },
       "math_version": 1,
-      "version": 1
+      "version": 2
     }
   },
-  "snapshot_revision": 2713,
+  "snapshot_revision": 2813,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -379,6 +418,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "a_linear_zero_switch_rainbow_path_bound_for_proper_edge_colorings": {
+      "composition": {
+        "body_chars": 1673,
+        "composed_through_revision": 7470,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Clarify that the proper-coloring bound imposes no ordinary-color covariance.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xiii_color_preserving_involution_problem",
       "version": 1
     },
     "affine_cube_edge_colorings_and_elimination_of_rank_one_obstructions": {
@@ -430,6 +486,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "alternating_type_a_roots_characterize_hamilton_tight_paths": {
+      "composition": {
+        "body_chars": 7615,
+        "composed_through_revision": 7544,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Correct article-local source pointer after promotion to Article XIV.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
     "antipodal_boolean_lattice_terminal_polarity_and_spanning_one_turn_paths": {
@@ -621,14 +694,14 @@
     },
     "binary_latin_square_obstruction_to_the_color_degree_bound": {
       "composition": {
-        "body_chars": 2535,
-        "composed_through_revision": 7428,
-        "composition_version": 1,
+        "body_chars": 2502,
+        "composed_through_revision": 7467,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Infinite counterexamples via binary Latin-square coloring",
+        "source_note": "Remove unnecessary ordinary-color-preservation hypothesis from edge-orbit lemma.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -922,6 +995,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "cyclic_color_variation_and_unavoidable_root_selection": {
+      "composition": {
+        "body_chars": 4027,
+        "composed_through_revision": 7511,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Root selection and cyclic-variation results consolidated in Article IX.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_unification_foundations",
       "version": 1
     },
     "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem": {
@@ -1229,6 +1319,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "fixed_order_freedom_and_the_necessity_of_coupled_root_order_selection": {
+      "composition": {
+        "body_chars": 6098,
+        "composed_through_revision": 7519,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Four fixed-order and sparse-permutation theorems with proofs; existing Article IX terminology requires inherited vocabulary override.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_unification_foundations",
+      "version": 1
+    },
     "flagged_face_terminal_completion_and_parallel_face_exchange_for_port_cocircuits": {
       "composition": {
         "body_chars": 4415,
@@ -1533,6 +1640,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "introduction_problems_geometry_and_research_objectives": {
+      "composition": {
+        "body_chars": 12185,
+        "composed_through_revision": 7541,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Self-contained Article XIV introduction: goals, both original classes, root selection, faithful rook model, type-A Gram extraction, Wu–Yang proof scope, and topological research obligations.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
     "involutive_rook_graph_counterexamples_in_every_binary_dimension": {
@@ -2421,14 +2545,14 @@
     },
     "the_color_preserving_involution_conjecture": {
       "composition": {
-        "body_chars": 3626,
-        "composed_through_revision": 7438,
-        "composition_version": 4,
+        "body_chars": 4267,
+        "composed_through_revision": 7473,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Motivation and minimal-strengthening research objective for NORI1 and boundary tournaments",
+        "source_note": "Specify the involution as a vertex-domain graph automorphism and edge notation solely as its induced action; no ordinary-color preservation requirement.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2777,7 +2901,7 @@
       "version": 1
     }
   },
-  "toolkit_count": 31,
+  "toolkit_count": 34,
   "universal_document_versions": {
     "guide": 51,
     "reflexes": 26,

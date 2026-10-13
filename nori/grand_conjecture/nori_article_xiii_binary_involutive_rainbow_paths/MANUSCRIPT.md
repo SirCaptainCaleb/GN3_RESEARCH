@@ -1,10 +1,21 @@
-# Article XIII — Rainbow Paths with a Color-Preserving Involution
+# Article XIII — Rainbow Paths under a Vertex Involution
 
-## Color-preserving involutions and one-switch rainbow paths
+## Vertex involutions and one-switch rainbow paths
 
 The problem originates in **NORI1** and **reversal-odd boundary 3-tournaments**. We seek the weakest natural graph-theoretic hypotheses that encompass both classes and guarantee long rainbow paths with few binary-label switches. In particular, the binary labeling must remain unrestricted beyond the required involutive reversal; no additional relations between overlapping boundary triples may be assumed.
 
-Let \(G=(V,E)\) be a finite connected simple graph with an ordinary edge coloring \(\lambda:E\to\mathcal C\), a binary edge labeling \(\chi:E\to\{0,1\}\), and an involutive vertex automorphism \(\tau\) satisfying \(\chi(\tau e)=1-\chi(e)\). Put \(k=\hat\delta(G,\lambda)=\min_{v\in V}|\{\lambda(e):e\ni v\}|\). The initial one-switch target asks for a vertex-simple rainbow path of at least \(k\) edges and at most one change in its \(\chi\)-sequence; the counterexamples below refute stronger special cases. Researchers should seek **minimal structural strengthenings applicable to both motivating classes**, and may examine weaker quantitative targets, especially linear-length paths with logarithmically many switches. Conditions must arise from their graph/resource geometry, not extra assumptions on their freely chosen binary labels.
+Let \(G=(V,E)\) be a finite connected simple graph with an ordinary edge coloring \(\lambda:E\to\mathcal C\), a binary edge labeling \(\chi:E\to\{0,1\}\), and a **vertex involution** \(\tau:V(G)\to V(G)\) satisfying
+\[
+\tau^2=\operatorname{id}_{V(G)},\qquad
+\{u,v\}\in E(G)\ \Longleftrightarrow\
+\{\tau(u),\tau(v)\}\in E(G).
+\]
+Thus \(\tau\) is a graph automorphism with domain **the vertices, not the edges**. Throughout Article XIII, the notation \(\tau e\), for \(e=\{u,v\}\), means only the uniquely induced edge \(\{\tau(u),\tau(v)\}\). In particular **there is no independently chosen involution of the edge set**. The reversal-odd condition is
+\[
+\chi(\{\tau(u),\tau(v)\})=1-\chi(\{u,v\})
+\quad\text{for every }\{u,v\}\in E(G).
+\]
+The ordinary coloring \(\lambda\) is unrestricted under \(\tau\); in particular, \(\lambda(\tau e)\) may differ from \(\lambda(e)\). Put \(k=\hat\delta(G,\lambda)=\min_{v\in V}|\{\lambda(e):e\ni v\}|\). The initial one-switch target asks for a vertex-simple rainbow path of at least \(k\) edges and at most one change in its \(\chi\)-sequence; the counterexamples below refute stronger special cases. Researchers should seek **minimal structural strengthenings applicable to both motivating classes**, and may examine weaker quantitative targets, especially linear-length paths with logarithmically many switches. Conditions must arise from their graph and color-incidence geometry, not extra assumptions on their freely chosen binary labels.
 
 **Theorem XIII.1 (eight-vertex counterexample).** A connected simple graph on eight vertices admits a proper three-edge-coloring \(\lambda\), a fixed-point-free involution \(\tau\) preserving \(\lambda\), and an edge labeling \(\chi\) reversed by \(\tau\), such that every rainbow path of length three has \(\chi\)-word \(010\) or \(101\). Thus \(\hat\delta(G,\lambda)=3\), but the longest rainbow path with at most one \(\chi\)-change has length two.
 
@@ -87,7 +98,7 @@ and \(\chi\)-word \(001100\). Thus this graph contains a rainbow path of length 
 
 ##### An infinite family of rainbow-path obstructions
 
-**Lemma.** Let \(\tau\) be an involutive automorphism of a graph \(G\) preserving an edge coloring \(\lambda\). There exists a binary edge labeling \(\chi\) satisfying \(\chi(\tau e)=1-\chi(e)\) for all \(e\in E(G)\) if and only if \(\tau\) fixes no edge setwise.
+**Lemma.** Let \(\tau\) be an involutive vertex automorphism of a graph \(G\). There exists a binary edge labeling \(\chi\) satisfying \(\chi(\tau e)=1-\chi(e)\) for all \(e\in E(G)\) if and only if \(\tau\) fixes no edge setwise.
 
 **Proof.** A fixed edge would require \(\chi(e)=1-\chi(e)\). Conversely, when \(\tau\) acts without fixed edges, its edge orbits have size two. Label the two edges in each orbit \(0\) and \(1\). \(\square\)
 
@@ -129,3 +140,21 @@ The last equality holds because \(d\ge2\). Hence the endpoints have equal indice
 L_0R_0L_aR_tL_0
 \]
 has colors \(0,a,a+t,t\), all distinct, and all four edges have \(\chi\)-label \(0\). Thus allowing rainbow cycles removes the obstruction in this four-color example.
+
+##### Linear zero-switch paths for proper edge colorings
+
+**Theorem.** Let \(G\) be a finite simple graph with a proper edge coloring \(\lambda\) and minimum degree \(k\geq 1\). For every binary edge labeling \(\chi:E(G)\to\{0,1\}\), there is a vertex-simple \(\lambda\)-rainbow path of at least \(k/8\) edges whose edges share the same \(\chi\)-label.
+
+**Proof.** Write \(n=|V(G)|\), \(m=|E(G)|\). For some \(b\in\{0,1\}\), the spanning subgraph \(H\) comprising the edges with \(\chi=b\) has at least \(m/2\) edges, hence average degree
+\[
+D=\frac{2|E(H)|}{n}\geq \frac mn=\frac{\overline d(G)}2\geq \frac k2.
+\]
+There is a nonempty subgraph \(J\subseteq H\) of minimum degree at least \(D/2\). Indeed, if none existed, iterative deletion of vertices of current degree strictly less than \(D/2\) could delete the entire graph, removing fewer than \(nD/2=|E(H)|\) edges in total, an impossibility. Therefore \(\delta(J)\geq k/4\).
+
+Let \(P=v_0v_1\ldots v_\ell\) be a longest vertex-simple \(\lambda\)-rainbow path in \(J\). At most \(\ell\) edges at the terminal vertex \(v_\ell\) lead to earlier vertices of \(P\). Among its edges to vertices outside \(P\), at most \(\ell\) carry colors used by \(P\), since the coloring is proper. Thus \(\deg_J(v_\ell)\leq 2\ell\), since otherwise \(P\) extends by an edge to a new vertex of a new color. Consequently
+\[
+\ell\geq\frac{\delta(J)}2\geq \frac k8.
+\]
+Every edge of \(J\) has binary label \(b\), so \(P\) has zero binary-label changes. \(\square\)
+
+The bound requires no symmetry hypothesis on \(\lambda\) or \(\chi\); it also applies when an involutive vertex automorphism reverses \(\chi\) and changes ordinary edge colors.

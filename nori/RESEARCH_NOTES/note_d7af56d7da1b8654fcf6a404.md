@@ -1,0 +1,30 @@
+# Fixed-order flexibility and joint root-permutation selection
+
+- Stable ID: note_d7af56d7da1b8654fcf6a404
+- Author: unspecified; session provenance retained
+- Primary home: article:nori_article_ix_unification
+- Labels: 
+- Lifecycle: active
+- Epistemic status: proved
+- Current version: 3
+- Retention: current and at most one previous snapshot
+- Created session: session_nori_r7442_2
+- Updated session: session_nori_r7442_2
+- Disposition: none
+- Successor: none
+
+## Related references
+
+- None
+
+## Research note
+
+For n>=2, fix a dimension order pi=(i1,...,in). Any prescribed functions F_k(x) satisfying F_k(x xor e_ik)=F_k(x) and F_k(bar x)=1-F_k(x) can be realized as the kth edge-color functions, for all cube roots x simultaneously, by a unique legal NORI1 coloring. Namely define c_ik(y)=F_k(y xor e_i1 xor ... xor e_i(k-1)). This ignores the toggled bit and is odd under cube complement. Conversely every NORI1 coloring defines functions F_k with those properties. Thus independent positions at one fixed direction order impose no extra cross-position consistency; changing orders is needed to couple them.
+
+For any fixed pi, relabel pi=(1,...,n) and set c_1(x)=x_2 and c_k(x)=x_1 xor (k mod2) for 2<=k<=n. This is legal and reversal odd. Every full pi-path, whatever its root, has alternating colors from positions 2 through n, hence at least n-2 switches, and there are roots realizing n-2 switches. Yet a monochromatic full geodesic exists: choose root x_1=0,x_2=1, follow odd indices in {2,...,n}, then dimension 1, then even indices. Every resulting edge has color 1. Thus changing the root alone with a fixed direction order is insufficient for NORI1 when n>=4, even though the instance has global monochromatic closure.
+
+Boundary analogue: for n>=4, the n ordered consecutive triples of one prescribed cyclic Hamiltonian order lie in distinct reversal pairs; therefore their n colors may be assigned arbitrarily and extended to a reversal-odd boundary coloring. For n>=6 choose the cyclic bit word alternating (with one equal seam if n odd). Every cut/rotation then retains at least two switches. Hence a preselected cyclic order cannot be rescued solely by choosing where to cut. Both problems demand comparisons between distinct complete orders, where local labels become tied by shared edges or ordered triples. Root and permutation choices for NORI1 must be coupled; the boundary case requires permutation selection. A topological common proof needs to exploit overlap among different orders, not rely only on one order's antipodal symmetry.
+
+QUANTITATIVE THEOREM (winning dimension orders can be exponentially sparse). Let n>=4, N=n-1, and retain the same NORI1 coloring form c_1(x)=x_2; c_k(x)=x_1 xor alpha_k for k>=2, where alpha_2=0 and the N bits alpha_2,...,alpha_n contain p=floor(N/2) ones and q=ceil(N/2) zeros. A full monochromatic geodesic exists: start at x_1=0,x_2=1, traverse all alpha=1 dimensions, then direction1, then all alpha=0 dimensions, obtaining constant color1. Now consider ANY permutation sigma of n dimensions, with root unrestricted. Delete direction1 from sigma and let beta be the induced word of alpha bits. On both sides of direction1, each edge color is the corresponding alpha bit xor the same root-dependent constant (the constant flips after direction1). Therefore every neighboring alpha transition in beta, except possibly the ONE adjacency interrupted by direction1, forces a binary switch on the full geodesic for EVERY root. Hence min_root sw(P(root,sigma))>=T(beta)-1, where T counts transitions in beta. In particular, if some root admits a one-switch full geodesic, then T(beta)<=2. A random sigma induces a UNIFORMLY random balanced binary beta of length N with p ones, so the fraction of permutations admitting any one-switch root is at most N/binomial(N,p). Proof of the count: among balanced binary words, T<=2 means either two runs (2 words) or three runs with a split of the first/last majority bit, giving (p-1)+(q-1) words; total 2+p-1+q-1=N words. Since binomial(N,floor(N/2)) grows as order 2^N/sqrt(N), the fraction is O(N^(3/2)/2^N). This quantitative bound holds despite the explicit monochromatic path. For instance n=20 gives at most 19/binomial(19,9)=19/92378, about 0.0206 percent of dimension orders. Thus even unlimited root search at a randomly selected dimension order can fail with probability tending exponentially to one.
+
+BOUNDARY SPARSITY ANALOGUE WITH A MONOCHROMATIC WITNESS. On symbols [n] with their usual numerical order, define the reversal-odd boundary tournament b(a,b,c)=1 if a<c, and 0 if a>c. The Hamilton ordering (1,2,...,n) has all its consecutive triple bits 1, so the desired witness exists. Yet a uniform random permutation pi=(v1,...,vn) has a one-switch triple-color word with probability at most [(2^k-2)/k!] [(2^l-2)/l!], where k=ceil(n/2), l=floor(n/2) and n>=4. Indeed the odd-position word (v1,v3,v5,...) and even-position word (v2,v4,v6,...) are independent uniformly random relative permutations (conditional on their underlying symbol sets), and the two subsequences of triple comparisons are precisely their successive ascent/descent signs. A binary comparison word with at most one change makes the underlying relative permutation either increasing-then-decreasing or decreasing-then-increasing. For length h>=2 the number of such permutations is 2^h-2: each mountain is specified by the subset of elements to the left of the maximum (2^(h-1) choices), each valley by the subset to the left of the minimum (another 2^(h-1)), and the monotone increasing/decreasing permutations were double counted. Since having at most one switch in the interleaved triple word requires at most one change in EACH of its two parity subsequences, multiplication gives the bound. It tends to zero faster than exponentially, despite the visible monochromatic increasing Hamilton path. Together with the cube result above, this shows that simple random-permutation averaging cannot serve as a full-strength path-selector even in structured examples of BOTH classes.

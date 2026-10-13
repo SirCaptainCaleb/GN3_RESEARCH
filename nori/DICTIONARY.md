@@ -12,6 +12,9 @@ boundary 3-tournament: A function b on ordered triples of distinct vertices with
 corresponding: Vertices in parallel cube faces are corresponding when their projections onto the common free-coordinate set agree.
   Note: They may differ in the other coordinates.
 
+dimensions: Independent directions or axes in a product, cube, grid, or related combinatorial structure. A dimension identifies a direction, not a position along it.
+  Note: Prefer dimension (or dimensions) for a single direction or axis. Keep distinct from a coordinate, which identifies location in a grid.
+
 edge-orderable: Describes a boundary 3-tournament b for which some total order of unordered vertex pairs has b(a,b,c)=1 exactly when {a,b}<{b,c}.
   Note: Equivalently, its comparison digraph is acyclic.
 
@@ -50,6 +53,9 @@ actual [prohibited]:
 concrete [prohibited]: 
   Note: Avoid redundant emphasis in mathematical compositions.
 
+coordinate [prohibited; use dimensions]: Do not use coordinate to mean a direction, axis, or dimension.
+  Note: User explanation: “I like coordinate for identifying location in a grid, but you guys keep using it to mean a single direction. The misusage of the semantics is driving this restriction.” The word has a legitimate location meaning, but the prohibition prevents persistent misuse of it as a direction. Use dimension or dimensions for directions.
+
 exact [prohibited]: 
   Note: Filler modifier in compositions; specify the equation or hypothesis instead.
 
@@ -70,6 +76,9 @@ physical [prohibited]:
 
 really [prohibited]: 
   Note: Avoid redundant emphasis in mathematical compositions.
+
+resource [prohibited]: 
+  Note: Use color.
 
 truly [prohibited]: 
   Note: Avoid redundant emphasis in mathematical compositions.

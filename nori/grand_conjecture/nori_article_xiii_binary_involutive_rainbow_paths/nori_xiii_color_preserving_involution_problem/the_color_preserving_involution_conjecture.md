@@ -2,7 +2,18 @@
 
 The problem originates in **NORI1** and **reversal-odd boundary 3-tournaments**. We seek the weakest natural graph-theoretic hypotheses that encompass both classes and guarantee long rainbow paths with few binary-label switches. In particular, the binary labeling must remain unrestricted beyond the required involutive reversal; no additional relations between overlapping boundary triples may be assumed.
 
-Let \(G=(V,E)\) be a finite connected simple graph with an ordinary edge coloring \(\lambda:E\to\mathcal C\), a binary edge labeling \(\chi:E\to\{0,1\}\), and an involutive vertex automorphism \(\tau\) satisfying \(\chi(\tau e)=1-\chi(e)\). Put \(k=\hat\delta(G,\lambda)=\min_{v\in V}|\{\lambda(e):e\ni v\}|\). The initial one-switch target asks for a vertex-simple rainbow path of at least \(k\) edges and at most one change in its \(\chi\)-sequence; the counterexamples below refute stronger special cases. Researchers should seek **minimal structural strengthenings applicable to both motivating classes**, and may examine weaker quantitative targets, especially linear-length paths with logarithmically many switches. Conditions must arise from their graph/resource geometry, not extra assumptions on their freely chosen binary labels.
+Let \(G=(V,E)\) be a finite connected simple graph with an ordinary edge coloring \(\lambda:E\to\mathcal C\), a binary edge labeling \(\chi:E\to\{0,1\}\), and a **vertex involution** \(\tau:V(G)\to V(G)\) satisfying
+\[
+\tau^2=\operatorname{id}_{V(G)},\qquad
+\{u,v\}\in E(G)\ \Longleftrightarrow\
+\{\tau(u),\tau(v)\}\in E(G).
+\]
+Thus \(\tau\) is a graph automorphism with domain **the vertices, not the edges**. Throughout Article XIII, the notation \(\tau e\), for \(e=\{u,v\}\), means only the uniquely induced edge \(\{\tau(u),\tau(v)\}\). In particular **there is no independently chosen involution of the edge set**. The reversal-odd condition is
+\[
+\chi(\{\tau(u),\tau(v)\})=1-\chi(\{u,v\})
+\quad\text{for every }\{u,v\}\in E(G).
+\]
+The ordinary coloring \(\lambda\) is unrestricted under \(\tau\); in particular, \(\lambda(\tau e)\) may differ from \(\lambda(e)\). Put \(k=\hat\delta(G,\lambda)=\min_{v\in V}|\{\lambda(e):e\ni v\}|\). The initial one-switch target asks for a vertex-simple rainbow path of at least \(k\) edges and at most one change in its \(\chi\)-sequence; the counterexamples below refute stronger special cases. Researchers should seek **minimal structural strengthenings applicable to both motivating classes**, and may examine weaker quantitative targets, especially linear-length paths with logarithmically many switches. Conditions must arise from their graph and color-incidence geometry, not extra assumptions on their freely chosen binary labels.
 
 **Theorem XIII.1 (eight-vertex counterexample).** A connected simple graph on eight vertices admits a proper three-edge-coloring \(\lambda\), a fixed-point-free involution \(\tau\) preserving \(\lambda\), and an edge labeling \(\chi\) reversed by \(\tau\), such that every rainbow path of length three has \(\chi\)-word \(010\) or \(101\). Thus \(\hat\delta(G,\lambda)=3\), but the longest rainbow path with at most one \(\chi\)-change has length two.
 

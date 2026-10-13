@@ -12,7 +12,7 @@
             "id": "nori_article_ix_unification",
             "type": "article",
             "title": "Article IX — Unification of NORI1 and Boundary Tournaments",
-            "version": 2,
+            "version": 4,
             "superseded": false,
             "research_status": "active"
         },
@@ -59,8 +59,16 @@
         {
             "id": "nori_article_xiii_binary_involutive_rainbow_paths",
             "type": "article",
-            "title": "Article XIII — Rainbow Paths with a Color-Preserving Involution",
-            "version": 3,
+            "title": "Article XIII — Rainbow Paths under a Vertex Involution",
+            "version": 4,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_article_xiv_type_a_rook_gallery_topology",
+            "type": "article",
+            "title": "Article XIV — Type-A Rook Galleries and Antipodal Chain Topology",
+            "version": 1,
             "superseded": false,
             "research_status": "active"
         },
@@ -84,14 +92,6 @@
             "id": "nori_codimension_two_switch_induction",
             "type": "section",
             "title": "Codimension-two face induction and corresponding endpoints",
-            "version": 1,
-            "superseded": false,
-            "research_status": "active"
-        },
-        {
-            "id": "nori_xiii_color_preserving_involution_problem",
-            "type": "section",
-            "title": "Color-preserving involutions and one-switch rainbow paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -137,9 +137,33 @@
             "research_status": "active"
         },
         {
+            "id": "nori_type_a_rook_gallery_topology",
+            "type": "section",
+            "title": "Type-A rook galleries and antipodal chain topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_xiii_color_preserving_involution_problem",
+            "type": "section",
+            "title": "Vertex involutions and one-switch rainbow paths",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "a_legal_q15_counterexample_to_unrooted_nori_via_a_three_class_reversal_even_word_obstruction",
             "type": "subsection",
             "title": "A legal Q15 counterexample to unrooted NORI via a three-class reversal-even word obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "a_linear_zero_switch_rainbow_path_bound_for_proper_edge_colorings",
+            "type": "subsection",
+            "title": "A linear zero-switch rainbow path bound for proper edge colorings",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -164,6 +188,14 @@
             "id": "alternating_rook_galleries_and_the_root_rank_criterion_for_simple_tight_paths",
             "type": "subsection",
             "title": "Alternating rook galleries and the root-rank criterion for simple tight paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "alternating_type_a_roots_characterize_hamilton_tight_paths",
+            "type": "subsection",
+            "title": "Alternating type-A roots characterize Hamilton tight paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -401,6 +433,14 @@
             "research_status": "active"
         },
         {
+            "id": "cyclic_color_variation_and_unavoidable_root_selection",
+            "type": "subsection",
+            "title": "Cyclic color variation and unavoidable root selection",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem",
             "type": "subsection",
             "title": "Cyclic-turn averaging, disjoint exchanges, and the ten-dimensional two-switch theorem",
@@ -545,6 +585,14 @@
             "research_status": "active"
         },
         {
+            "id": "fixed_order_freedom_and_the_necessity_of_coupled_root_order_selection",
+            "type": "subsection",
+            "title": "Fixed-order freedom and the necessity of coupled root-order selection",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "flat_graded_resource_automata_and_antipodal_reachability_certificates",
             "type": "subsection",
             "title": "Flat-graded resource automata and antipodal reachability certificates",
@@ -676,6 +724,14 @@
             "id": "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds",
             "type": "subsection",
             "title": "Intrinsic star statistics and quantitative port-cocircuit exchange bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "introduction_problems_geometry_and_research_objectives",
+            "type": "subsection",
+            "title": "Introduction — problems, geometry, and research objectives",
             "version": 1,
             "superseded": false,
             "research_status": "active"

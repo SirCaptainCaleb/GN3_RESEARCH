@@ -2,7 +2,7 @@
 
 ### An infinite family of rainbow-path obstructions
 
-**Lemma.** Let \(\tau\) be an involutive automorphism of a graph \(G\) preserving an edge coloring \(\lambda\). There exists a binary edge labeling \(\chi\) satisfying \(\chi(\tau e)=1-\chi(e)\) for all \(e\in E(G)\) if and only if \(\tau\) fixes no edge setwise.
+**Lemma.** Let \(\tau\) be an involutive vertex automorphism of a graph \(G\). There exists a binary edge labeling \(\chi\) satisfying \(\chi(\tau e)=1-\chi(e)\) for all \(e\in E(G)\) if and only if \(\tau\) fixes no edge setwise.
 
 **Proof.** A fixed edge would require \(\chi(e)=1-\chi(e)\). Conversely, when \(\tau\) acts without fixed edges, its edge orbits have size two. Label the two edges in each orbit \(0\) and \(1\). \(\square\)
 

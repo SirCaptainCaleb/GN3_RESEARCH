@@ -4,6 +4,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [Affine Q4 certificate: convex reachability intersections need not splice](../note_affine_q4_convexified_reachability_false_intersection.md) — active/proved
 - [Alternating geodesic-window colors at every order](../note_uniform_length_all_roots_obstruction.md) — active/proved
+- [Antipodal Boolean-chain windows and the permutohedral path-compatibility nerve](../note_f1aa91ddfe072707ee3e4da0.md) — active/proved
 - [Antipodal geodesic concatenation and monochromatic reachability intersections](../note_antipodal_geodesic_reachability_splicing.md) — active/proved
 - [Antipodal-involution index differences and bichromatic bad-root limitations](../note_antipodal_involution_index_and_bichromatic_bad_root_limits.md) — active/proved
 - [Can a colorful topological selection complex preserve joint path realizability?](../note_joint_realizability_selection_for_nori1_and_boundary_tournaments.md) — active/proposed
@@ -13,8 +14,11 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Common Freudenthal carrier: topological intersection certifies antipodal geodesic splicing](../note_common_freudenthal_reachability_intersection_extraction.md) — active/proved
 - [Common triangulation of monochromatic reachability](../note_common_triangulation_reachability_intersection_20261011.md) — active/proved
 - [Common triangulation of monochromatic reachability](../note_common_triangulation_reachability_intersection_20261011.md) — active/proved
+- [Cyclic variation criterion for boundary one-switch Hamilton paths and comparison with NORI1 rerooting](../note_a31f3ced5651f1da607b547c.md) — active/proved
+- [Cyclic variation plateaus: root slides, adjacent exchanges, and a four-switch boundary barrier](../note_4faa19538adf3c3d215f274d.md) — active/proved
 - [Eight-way block reversal does not repair boundary-tournament seams](../note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) — active/method_limitation
 - [Eight-way block reversal does not repair boundary-tournament seams](../note_boundary_tournament_fixed_block_eight_seam_obstruction_20261011.md) — active/method_limitation
+- [Fixed-order flexibility and joint root-permutation selection](../note_d7af56d7da1b8654fcf6a404.md) — active/proved
 - [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](../note_grand_structure_uniform_length_geodesics.md) — active/open
 - [Grand-conjecture structure should yield uniformly colored fixed-length geodesics](../note_grand_structure_uniform_length_geodesics.md) — active/open
 - [Induced reachability complexes in one fixed triangulation](../note_induced_reachability_complexes_fixed_triangulation.md) — active/proved
@@ -32,11 +36,14 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Refuted reversal-coherent odd-face conjecture](../note_reversal_coherent_odd_face_grand_conjecture_candidate.md) — active/refuted
 - [Reversal-odd transition networks: shared encoding and terminal-support obstruction](../note_reversible_transition_networks_terminal_support_obstruction_20261011.md) — active/proved
 - [Reversal-odd transition networks: shared encoding and terminal-support obstruction](../note_reversible_transition_networks_terminal_support_obstruction_20261011.md) — active/proved
+- [Root-fiber switch spectrum for a symmetric NORI1 edge coloring](../note_52fd24abbc3549954285b0a5.md) — active/proved
 - [Root-slide selector topology: what high index cannot extract](../note_root_slide_selector_and_topological_index_limits.md) — active/method_limitation
 - [Scope limits of distinguished-direction NORI constructions and boundary edge-order models](../note_sentinel_transfer_and_boundary_comparison_model_scope.md) — active/proved
 - [Terminal-basin and root-profile nerve extraction gaps](../note_terminal_basins_and_root_profile_nerve_extraction_limits.md) — active/method_limitation
 - [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
 - [Tetrahedral parity blocks all monochromatic boundary Hamilton paths on four vertices](../note_tetrahedral_parity_boundary_no_spanning_tight_path.md) — active/proved
+- [Third-vertex resource labels: sharp two-window decoding and four-vertex one-switch barrier](../note_xiii_third_vertex_rainbow_decoding_two_loss_20261013.md) — active/proved
+- [Topological simultaneous selection for independent ordinary and binary path colorings](../note_7ea4564909b0e4f8475aac6c.md) — active/proposed
 - [Two-step rainbow-resource diversity and monochromatic two-step counting](../note_c12cd5a8ceac4f8a596a3186.md) — active/proved
 - [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
 - [Unbounded switches in reversal-coherent higher odd faces](../note_reversal_coherent_k5_unbounded_switch_obstruction_20261011.md) — active/proved
