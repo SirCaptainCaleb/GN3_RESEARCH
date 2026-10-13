@@ -1,6 +1,6 @@
 {
   "active_section_count": 9,
-  "active_subsection_count": 140,
+  "active_subsection_count": 142,
   "article_sequences": {
     "nori_article_i_conjecture": [
       {
@@ -181,9 +181,9 @@
     },
     "nori_article_xiii_binary_involutive_rainbow_paths": {
       "composition": {
-        "body_chars": 766,
-        "composed_through_revision": 7419,
-        "composition_version": 11,
+        "body_chars": 10679,
+        "composed_through_revision": 7440,
+        "composition_version": 17,
         "frontier": {
           "current": null
         },
@@ -197,10 +197,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-13T03:55:52.543475+00:00",
+  "generated_at": "2026-10-13T04:47:09.31139+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 128,
+  "research_note_count": 130,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -336,9 +336,9 @@
     },
     "nori_xiii_color_preserving_involution_problem": {
       "composition": {
-        "body_chars": 699,
-        "composed_through_revision": 7418,
-        "composition_version": 2,
+        "body_chars": 10612,
+        "composed_through_revision": 7439,
+        "composition_version": 8,
         "frontier": {
           "current": null
         },
@@ -351,7 +351,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2691,
+  "snapshot_revision": 2713,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -617,6 +617,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "binary_latin_square_obstruction_to_the_color_degree_bound": {
+      "composition": {
+        "body_chars": 2535,
+        "composed_through_revision": 7428,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Infinite counterexamples via binary Latin-square coloring",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xiii_color_preserving_involution_problem",
       "version": 1
     },
     "blockwise_perturbation_and_dimension_free_phase_synchronization": {
@@ -1518,6 +1535,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "involutive_rook_graph_counterexamples_in_every_binary_dimension": {
+      "composition": {
+        "body_chars": 4381,
+        "composed_through_revision": 7434,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xiii_color_preserving_involution_problem",
+      "version": 1
+    },
     "iterated_line_graph_curvature_and_the_boundary_tournament_monodromy_tower": {
       "composition": {
         "body_chars": 6286,
@@ -2387,14 +2421,14 @@
     },
     "the_color_preserving_involution_conjecture": {
       "composition": {
-        "body_chars": 637,
-        "composed_through_revision": 7417,
-        "composition_version": 2,
+        "body_chars": 3626,
+        "composed_through_revision": 7438,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Condensed Article XIII to its precise standalone conjecture",
+        "source_note": "Motivation and minimal-strengthening research objective for NORI1 and boundary tournaments",
         "stale": null,
         "stale_dependencies": []
       },

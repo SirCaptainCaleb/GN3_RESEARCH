@@ -249,6 +249,14 @@
             "research_status": "active"
         },
         {
+            "id": "binary_latin_square_obstruction_to_the_color_degree_bound",
+            "type": "subsection",
+            "title": "Binary Latin-square obstruction to the color-degree bound",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture",
             "type": "subsection",
             "title": "Binary-generator Cayley lifts and the generalized port-intersection conjecture",
@@ -668,6 +676,14 @@
             "id": "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds",
             "type": "subsection",
             "title": "Intrinsic star statistics and quantitative port-cocircuit exchange bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "involutive_rook_graph_counterexamples_in_every_binary_dimension",
+            "type": "subsection",
+            "title": "Involutive rook-graph counterexamples in every binary dimension",
             "version": 1,
             "superseded": false,
             "research_status": "active"
