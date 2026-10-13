@@ -181,9 +181,9 @@
     },
     "nori_article_xiii_binary_involutive_rainbow_paths": {
       "composition": {
-        "body_chars": 1978,
-        "composed_through_revision": 7415,
-        "composition_version": 10,
+        "body_chars": 766,
+        "composed_through_revision": 7419,
+        "composition_version": 11,
         "frontier": {
           "current": null
         },
@@ -197,7 +197,7 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-13T03:53:54.211023+00:00",
+  "generated_at": "2026-10-13T03:55:52.543475+00:00",
   "item_count": 0,
   "mirror_format": 20,
   "research_note_count": 128,
@@ -336,9 +336,9 @@
     },
     "nori_xiii_color_preserving_involution_problem": {
       "composition": {
-        "body_chars": 1911,
-        "composed_through_revision": 7413,
-        "composition_version": 1,
+        "body_chars": 699,
+        "composed_through_revision": 7418,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
@@ -351,7 +351,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2688,
+  "snapshot_revision": 2691,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -2387,14 +2387,14 @@
     },
     "the_color_preserving_involution_conjecture": {
       "composition": {
-        "body_chars": 1847,
-        "composed_through_revision": 7412,
-        "composition_version": 1,
+        "body_chars": 637,
+        "composed_through_revision": 7417,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Replacement of Article XIII with only the color-preserving involution conjecture",
+        "source_note": "Condensed Article XIII to its precise standalone conjecture",
         "stale": null,
         "stale_dependencies": []
       },
