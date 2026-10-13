@@ -66,7 +66,7 @@
     ],
     "nori_article_xiii_binary_involutive_rainbow_paths": [
       {
-        "id": "nori_xiii_minimum_color_degree_foundations",
+        "id": "nori_xiii_color_preserving_involution_problem",
         "math_version": 1,
         "position": 1,
         "version": 1
@@ -181,9 +181,9 @@
     },
     "nori_article_xiii_binary_involutive_rainbow_paths": {
       "composition": {
-        "body_chars": 8569,
-        "composed_through_revision": 7378,
-        "composition_version": 1,
+        "body_chars": 1978,
+        "composed_through_revision": 7415,
+        "composition_version": 10,
         "frontier": {
           "current": null
         },
@@ -192,12 +192,12 @@
         "stale": null,
         "stale_dependencies": []
       },
-      "version": 2
+      "version": 3
     }
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-13T03:34:33.254169+00:00",
+  "generated_at": "2026-10-13T03:53:54.211023+00:00",
   "item_count": 0,
   "mirror_format": 20,
   "research_note_count": 128,
@@ -334,10 +334,10 @@
       "math_version": 1,
       "version": 1
     },
-    "nori_xiii_minimum_color_degree_foundations": {
+    "nori_xiii_color_preserving_involution_problem": {
       "composition": {
-        "body_chars": 8491,
-        "composed_through_revision": 7377,
+        "body_chars": 1911,
+        "composed_through_revision": 7413,
         "composition_version": 1,
         "frontier": {
           "current": null
@@ -351,7 +351,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 2651,
+  "snapshot_revision": 2688,
   "startup_broadcasts": [
     {
       "body": "no new broadcasts",
@@ -956,23 +956,6 @@
       },
       "development_version": 1,
       "section_id": "nori_xii_definitions_full_rank_phase",
-      "version": 1
-    },
-    "definitions_principal_conjecture_and_quantitative_variants": {
-      "composition": {
-        "body_chars": 8407,
-        "composed_through_revision": 7376,
-        "composition_version": 1,
-        "frontier": {
-          "current": null
-        },
-        "has_composition": true,
-        "source_note": "Initial independent formulation of the binary-involutive rainbow path conjecture",
-        "stale": null,
-        "stale_dependencies": []
-      },
-      "development_version": 1,
-      "section_id": "nori_xiii_minimum_color_degree_foundations",
       "version": 1
     },
     "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
@@ -2400,6 +2383,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "the_color_preserving_involution_conjecture": {
+      "composition": {
+        "body_chars": 1847,
+        "composed_through_revision": 7412,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Replacement of Article XIII with only the color-preserving involution conjecture",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_xiii_color_preserving_involution_problem",
       "version": 1
     },
     "the_common_path_symmetry_problem": {

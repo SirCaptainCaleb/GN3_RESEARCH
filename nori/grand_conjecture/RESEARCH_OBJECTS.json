@@ -59,8 +59,8 @@
         {
             "id": "nori_article_xiii_binary_involutive_rainbow_paths",
             "type": "article",
-            "title": "Article XIII — Rainbow Paths with a Color-Reversing Binary Edge Involution",
-            "version": 2,
+            "title": "Article XIII — Rainbow Paths with a Color-Preserving Involution",
+            "version": 3,
             "superseded": false,
             "research_status": "active"
         },
@@ -84,6 +84,14 @@
             "id": "nori_codimension_two_switch_induction",
             "type": "section",
             "title": "Codimension-two face induction and corresponding endpoints",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_xiii_color_preserving_involution_problem",
+            "type": "section",
+            "title": "Color-preserving involutions and one-switch rainbow paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -116,14 +124,6 @@
             "id": "nori_matroid_generalizations_conjectures",
             "type": "section",
             "title": "Matroid Generalizations and Short-Port Intersection Conjectures",
-            "version": 1,
-            "superseded": false,
-            "research_status": "active"
-        },
-        {
-            "id": "nori_xiii_minimum_color_degree_foundations",
-            "type": "section",
-            "title": "Minimum color degree and the involutive one-switch path problem",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -412,14 +412,6 @@
             "id": "definitions_full_rank_conjecture_and_rigorous_endpoint_reductions",
             "type": "subsection",
             "title": "Definitions, full-rank conjecture, and rigorous endpoint reductions",
-            "version": 1,
-            "superseded": false,
-            "research_status": "active"
-        },
-        {
-            "id": "definitions_principal_conjecture_and_quantitative_variants",
-            "type": "subsection",
-            "title": "Definitions, principal conjecture, and quantitative variants",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1097,6 +1089,14 @@
             "research_status": "active"
         },
         {
+            "id": "the_color_preserving_involution_conjecture",
+            "type": "subsection",
+            "title": "The color-preserving involution conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "the_common_path_symmetry_problem",
             "type": "subsection",
             "title": "The common path-symmetry problem",
@@ -1262,8 +1262,8 @@
         "status": "superseded",
         "recovery": "Research database or historical Git commits",
         "article_count": 5,
-        "section_count": 13,
-        "subsection_count": 47,
+        "section_count": 14,
+        "subsection_count": 54,
         "included_in_current_artifact": false
     }
 }
