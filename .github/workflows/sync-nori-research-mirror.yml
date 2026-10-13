@@ -1,6 +1,6 @@
 name: NORI | Refresh research artifact
 # Article XI: two-resource Hamiltonian recognition, legal one-for-two augmentation, and factor-three switch-rank theorem.
-# Canonical manuscript only; regenerated for color-preserving Article XIII. Assigned-Article reading startup refresh.
+# Canonical manuscript only; regenerated for concise Article XIII. Assigned-Article reading startup refresh.
 on:
   workflow_dispatch:
   push:
