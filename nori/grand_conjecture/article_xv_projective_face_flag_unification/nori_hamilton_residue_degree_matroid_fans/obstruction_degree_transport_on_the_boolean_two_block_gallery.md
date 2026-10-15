@@ -1,0 +1,17 @@
+# Obstruction-degree transport on the Boolean two-block gallery
+
+### Transport of top obstruction degrees along three-block residues
+
+Let \(n\ge5\), \(d=n-2\), and let \(X\cong S^d\) be the dual type-A Coxeter cell complex of Hamilton orders on \(n\) symbols, with free order-reversal involution \(J\). Put \(Y=X/J\cong\mathbb RP^d\). Consider an odd map from \(X^{(d-1)}\) to the unit sphere \(S^{d-1}\) of the sign representation. Each orbit of top cells carries a modulo-two attaching degree.
+
+**Theorem 1 (connected degree-transfer graph).** The top-cell orbits are indexed by unordered bipartitions \(\{A,V\setminus A\}\), with \(\varnothing\ne A\subsetneq V\). The codimension-one cell orbits are indexed by ordered three-block partitions, modulo reversal. A three-block residue \(A|B|C\) joins the two top-cell orbits represented by \(A|(B\cup C)\) and \((A\cup B)|C\). The resulting graph on top-cell orbits is connected.
+
+*Proof.* A dual cell indexed by an ordered partition of \(V\) into \(k\) nonempty blocks has dimension \(n-k\). Its codimension-one incidences arise by merging two neighboring blocks. This gives the claimed description. In the graph, the bipartitions represented by proper sets \(A\subsetneq A'\) are adjacent: use the three blocks \(A|(A'\setminus A)|(V\setminus A')\). From any proper set repeatedly delete an element until a singleton remains. Singleton partitions are connected using a two-element union. Hence the graph is connected. \(\square\)
+
+**Theorem 2 (arbitrary redistribution of the unavoidable odd obstruction).** Keeping the equivariant map fixed through dimension \(d-2\), changes of its fillings on the \((d-1)\)-cells can produce every modulo-two top-cell degree vector with odd total sum. In particular, all nonzero obstruction degrees can be concentrated in any prescribed top-cell orbit.
+
+*Proof.* The first equivariant obstruction is the mod-two Euler class of \(d\) copies of the tautological line bundle on \(Y=\mathbb RP^d\), namely \(\alpha^d\). Its evaluation on the fundamental class is one, so the sum of top-cell degrees is odd for every choice of fillings.
+
+Let \(C\) be a codimension-one cell of \(Y\). Modify its map to \(S^{d-1}\) in the interior by inserting a sphere map of degree one, leaving its boundary fixed. Such a modification exists because \(\pi_{d-1}(S^{d-1})=\mathbb Z\). The two top cells incident with \(C\) each have their attaching degree changed by one modulo two; no other top-cell degree changes. Thus each edge of the graph from Theorem 1 permits toggling its two endpoint entries. In a connected graph, these edge-toggle vectors span the subspace of even-sum vectors over \(\mathbb F_2\), as follows by using a spanning tree to move units between vertices. The starting degree vector has odd sum; adding every even-sum vector realizes every odd-sum vector. Lift each cell modification to its opposite partner in \(X\) to retain equivariance. \(\square\)
+
+**Consequence.** For the critically compressed switch-bivector labeling, individual top-cell obstruction degrees depend on choices of intermediate fillings; only their global cohomology class is forced. A color-sensitive proof of the boundary one-switch conjecture must therefore supply a coherent normalization of those fillings and derive a contradiction for the resulting global obstruction. No argument based solely on vanishing degrees for separately chosen two-block cells establishes such a normalization.

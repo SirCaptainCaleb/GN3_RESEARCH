@@ -1,4 +1,4 @@
-## Antipodal turn quotients and rainbow-circuit geometry
+## Antipodal Turn Quotients and Rainbow-Circuit Geometry
 
 Let \(n\ge3\), let \(Q_n\) be the \(n\)-dimensional cube, and let \(L=L(Q_n)\) be its line graph. Thus vertices of \(L\) are edges of \(Q_n\), and the edges of \(L\) are pairs of distinct cube edges meeting at one cube vertex. The antipodal involution \(\tau\) of \(Q_n\) induces a free involution on \(L\). Write
 \[

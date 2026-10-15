@@ -2,6 +2,7 @@
 
 Each paper assembles selected Subsection compositions through Section compositions. Inactive and superseded Articles remain in Supabase and are excluded from this artifact.
 
+- [Article XV: Projective Face-Flag Unification](article_xv_projective_face_flag_unification/MANUSCRIPT.md)
 - [Article XII — Resource-Constrained Hamming Graphs and One-Change Path Geometry](nori_article_xii_resource_constrained_hamming_graphs/MANUSCRIPT.md)
 - [Article XIII — Rainbow Paths under a Vertex Involution](nori_article_xiii_binary_involutive_rainbow_paths/MANUSCRIPT.md)
 - [Article I — Antipodal-reversal-odd geodesic colorings of the cube](nori_article_i_conjecture/MANUSCRIPT.md)

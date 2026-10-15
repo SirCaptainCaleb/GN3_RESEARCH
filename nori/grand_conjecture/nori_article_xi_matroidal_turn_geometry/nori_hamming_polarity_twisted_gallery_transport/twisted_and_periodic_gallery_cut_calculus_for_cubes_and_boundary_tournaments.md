@@ -113,3 +113,38 @@ In (a), exchanging two consecutive coordinate steps replaces two edges of a sing
 In (b), swapping two consecutive vertices in the Hamiltonian cycle changes only the four consecutive triple colors whose centers are the swapped vertices or their two immediate neighbors. All other turn colors are unchanged. Therefore at most five cyclic comparisons are affected. The integer difference is even, hence of magnitude at most four. \(\square\)
 
 **Variational consequence.** A gallery minimizing the cyclic switch count is automatically stable under every adjacent exchange. In the cube its local energy increments belong to \(\{0,2\}\), and for boundary Hamiltonian cycles they belong to \(\{0,2,4\}\). To prove the target from such a minimum, one must show that an odd local minimum with \(D\ge3\) (cube), respectively a boundary local minimum outside the \(D\le2\)/clustered-\(D=4\) extraction classes, is impossible or can be escaped by a coordinated sequence of zero-cost exchanges. The support bounds make this a finite-neighborhood curvature problem, not a solution in themselves.
+
+
+## Switch signatures as the prescribed covering class
+
+**Theorem 6 (odd vertex labels versus switch cohomology).** Let \(H\) be a finite graph with a fixed-point-free involution \(R\) on vertices and edges, let \(G=H/R\), and let \(\alpha=w_1(H\to G)\in H^1(G;\mathbb F_2)\). An edge signature \(s:E(G)\to\mathbb F_2\) arises from an odd vertex coloring \(c(Rv)=1+c(v)\) by
+\[
+s([uv])=c(u)+c(v)
+\]
+if and only if
+\[
+\boxed{[s]=\alpha.}\tag{6}
+\]
+For connected \(G\), the coloring is unique up to simultaneous complementation; in general it has one binary choice on each quotient component.
+
+*Proof.* Select one lift \(\widetilde v\) of each quotient vertex. Put \(\eta(vw)=0\) if the lift of \(vw\) from \(\widetilde v\) reaches \(\widetilde w\), and \(\eta(vw)=1\) if it reaches \(R\widetilde w\). This cochain represents \(\alpha\). Writing \(b(v)=c(\widetilde v)\), oddness gives \(s(vw)=\eta(vw)+b(v)+b(w)\), so \([s]=\alpha\). Conversely, if \(s+\eta=\delta b\), assign \(c(\widetilde v)=b(v)\) and \(c(R\widetilde v)=1+b(v)\). These assignments induce \(s\) on every edge orbit. Any two potential choices differ by a locally constant function on \(G\). \(\square\)
+
+**Corollary 7 (legal perturbations are graph cuts).** Two legal signatures on \(G\) differ by a coboundary \(\delta f\), i.e. by toggling all signature edges crossing a vertex cut. Changing just one switch while leaving all others unchanged is legal precisely when the selected edge of \(G\) is a bridge.
+
+*Proof.* Theorem 6 says both signatures lie in the same affine coset \(\alpha+B^1(G;\mathbb F_2)\). A one-edge indicator is a graph coboundary if and only if that edge lies on no graph cycle. \(\square\)
+
+**Theorem 8 (common switch-only encoding for both unrestricted gallery problems).** There are native graphs \(H_\square,H_\partial\) on which the two original reversal-odd bit colorings become odd vertex colorings, and the switches become representatives of the corresponding covering class.
+
+For NORI1, take \(H_\square=L(Q_n)\), whose vertices are cube edges and whose adjacencies are incident pairs of distinct cube edges. Antipodal inversion acts freely. The quotient \(G_\square=L(Q_n)/A\cong L(Q_n/A)\) has vertices representing antipodal pairs of cube edges and edges representing projective turns. The NORI1 conclusion is equivalent to: every edge signature on \(G_\square\) in the class \(\alpha_\square\) admits a dimension-simple projective Petrie loop with precisely **one** active turn.
+
+For ordinary reversal-odd boundary 3-tournaments, take \(H_\partial\) whose vertices are ordered triples \((a,b,c)\) of distinct symbols, with an undirected edge joining \((a,b,c)\) to \((b,c,d)\) for every ordered quadruple of distinct symbols. The involution \(R(a,b,c)=(c,b,a)\) preserves adjacency and reverses transition orientations. The quotient \(G_\partial=H_\partial/R\) has one edge for each reversal-orbit of four-symbol transitions. Every unrestricted odd triple coloring becomes an odd vertex coloring of \(H_\partial\). The boundary conclusion is equivalent to: every signature representing \(\alpha_\partial\) admits a vertex-simple Hamilton triple-overlap path with **at most one** active transition.
+
+Neither \(G_\square\) nor \(G_\partial\) has bridges. In \(G_\square\), each turn belongs to a triangle formed by three edges incident at one projective cube vertex, since \(n\ge3\). In \(G_\partial\), every transition belongs to the four-cycle obtained by rotating its four distinct symbols:
+\[
+(a,b,c)\to(b,c,d)\to(c,d,a)\to(d,a,b)\to(a,b,c).
+\]
+Its quotient remains a cycle. Thus no single-switch deletion is legal in either unrestricted class.
+
+*Proof.* Apply Theorem 6 to the graphs and involutions defined above. Cube edge bits become vertex bits of the line graph and their changes occur on turn edges. The closed projective Petrie path represents a nontrivial lift and has an odd number of changes; one change is equivalent, by cyclic root sliding, to a monochromatic antipodal half-geodesic. Consecutive ordered triples of a Hamilton vertex order trace a path in \(H_\partial\), and its changes are the transition signature. The graph-cycle assertions prove the bridge claim. \(\square\)
+
+**Research consequence.** This is one common structural encoding of the two full unrestricted coloring classes; it does **not** yet prove one substantive shared path-existence theorem. Their distinguished complete path families differ. It does correct the natural switch-criticality induction: legal perturbations are whole graph cuts, not deletion of arbitrary isolated turns. The signed-graph class \(\alpha+B^1\), together with the prescribed dimension-simple or vertex-simple path family, is the proper object for cut-critical investigations.

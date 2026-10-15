@@ -2,6 +2,7 @@
 
 Sidecar only; no note body is included in the mathematical manuscript.
 
+- [A complete cyclic root fan can have no one-switch Hamilton cut](../note_5333eb60dbc1119861bbb7a9.md) — active/proved
 - [Affine Q4 certificate: convex reachability intersections need not splice](../note_affine_q4_convexified_reachability_false_intersection.md) — active/proved
 - [Alternating geodesic-window colors at every order](../note_uniform_length_all_roots_obstruction.md) — active/proved
 - [Antipodal Boolean-chain windows and the permutohedral path-compatibility nerve](../note_f1aa91ddfe072707ee3e4da0.md) — active/proved
@@ -32,6 +33,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Orientation-sensitive odd-window grand-conjecture candidate](../note_orientation_sensitive_odd_window_grand_candidate_20261011.md) — active/proposed
 - [Orientation-sensitive odd-window grand-conjecture candidate](../note_orientation_sensitive_odd_window_grand_candidate_20261011.md) — active/proposed
 - [Paired-start exact criterion for NORI1 as a unification toy model](../note_antipodal_paired_start_nori1_toy_unification_probe.md) — active/proved
+- [Rank-simple path certificates and why geodesic components cannot replace components](../note_c40478944a3a0cee145070b3.md) — active/proved
 - [Refuted reversal-coherent odd-face conjecture](../note_reversal_coherent_odd_face_grand_conjecture_candidate.md) — active/refuted
 - [Refuted reversal-coherent odd-face conjecture](../note_reversal_coherent_odd_face_grand_conjecture_candidate.md) — active/refuted
 - [Reversal-odd transition networks: shared encoding and terminal-support obstruction](../note_reversible_transition_networks_terminal_support_obstruction_20261011.md) — active/proved

@@ -73,10 +73,18 @@
             "research_status": "active"
         },
         {
+            "id": "article_xv_projective_face_flag_unification",
+            "type": "article",
+            "title": "Article XV: Projective Face-Flag Unification",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_rainbow_circuit_geometry",
             "type": "section",
-            "title": "Antipodal turn quotients and rainbow-circuit geometry",
-            "version": 1,
+            "title": "Antipodal Turn Quotients and Rainbow-Circuit Geometry",
+            "version": 2,
             "superseded": false,
             "research_status": "active"
         },
@@ -105,6 +113,30 @@
             "research_status": "active"
         },
         {
+            "id": "nori_type_a_rook_gallery_topology",
+            "type": "section",
+            "title": "Coxeter Galleries and Flag Geometry",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_cubical_curvature_exchange_topology",
+            "type": "section",
+            "title": "Cubical Curvature and Exchange Topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_hamilton_residue_degree_matroid_fans",
+            "type": "section",
+            "title": "Degree Theory on Hamilton Residues and Matroid Fans",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_foundations",
             "type": "section",
             "title": "Foundational closure theorems and rooted obstructions",
@@ -121,9 +153,57 @@
             "research_status": "active"
         },
         {
+            "id": "nori_freudenthal_carriers_equivariant_topology",
+            "type": "section",
+            "title": "Freudenthal Carriers and Equivariant Topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_graphic_boundary_tournament_exchange_geometry",
+            "type": "section",
+            "title": "Graphic and Boundary-Tournament Exchange Geometry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_hamming_polarity_twisted_gallery_transport",
+            "type": "section",
+            "title": "Hamming Gallery Polarities and Twisted Transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_matroidal_reachability_long_path_bounds",
+            "type": "section",
+            "title": "Matroidal Reachability and Long-Path Bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_generalizations_conjectures",
             "type": "section",
-            "title": "Matroid Generalizations and Short-Port Intersection Conjectures",
+            "title": "Polarized Matroid Galleries and Port-Cocircuit Geometry",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "opposed_projective_face_windows_and_complete_paths",
+            "type": "section",
+            "title": "Projective Face Flags and Intrinsic Monodromy",
+            "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_rectified_graphs_cyclic_path_geometry",
+            "type": "section",
+            "title": "Rectified Graphs and Cyclic Path Geometry",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -137,9 +217,25 @@
             "research_status": "active"
         },
         {
-            "id": "nori_type_a_rook_gallery_topology",
+            "id": "nori_switch_bivector_grassmannian_obstructions",
             "type": "section",
-            "title": "Type-A rook galleries and antipodal chain topology",
+            "title": "Switch Bivectors and Grassmannian Obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_switch_filtered_chains_obstructions",
+            "type": "section",
+            "title": "Switch-Filtered Chains and Obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_type_d_trees_petrie_algebra",
+            "type": "section",
+            "title": "Type-D Chamber Trees and Petrie Algebra",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -169,6 +265,22 @@
             "research_status": "active"
         },
         {
+            "id": "a_one_chain_per_degree_antipodal_transfer_tower",
+            "type": "subsection",
+            "title": "A one-chain-per-degree antipodal transfer tower",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "affine_antipodal_cube_colorings_force_straddling_top_cell_grassmannian_obstructions",
+            "type": "subsection",
+            "title": "Affine antipodal cube colorings force straddling top-cell Grassmannian obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "affine_cube_edge_colorings_and_elimination_of_rank_one_obstructions",
             "type": "subsection",
             "title": "Affine cube-edge colorings and elimination of rank-one obstructions",
@@ -177,9 +289,49 @@
             "research_status": "active"
         },
         {
+            "id": "affine_dependence_labels_and_carriers_at_every_word_position",
+            "type": "subsection",
+            "title": "Affine dependence labels and carriers at every word position",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "affine_dependence_labels_on_hamilton_middle_vertices",
+            "type": "subsection",
+            "title": "Affine dependence labels on Hamilton middle vertices",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "affine_root_selectors_cycle_constraints_and_odd_degree_permutahedral_transport",
+            "type": "subsection",
+            "title": "Affine root selectors, cycle constraints, and odd-degree permutahedral transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "affine_root_syndrome_gallery_transport_and_corank_one_closure",
             "type": "subsection",
             "title": "Affine root-syndrome gallery transport and corank-one closure",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "all_rank_antipodal_cubical_resolution_and_sharp_projective_cosystoles",
+            "type": "subsection",
+            "title": "All-rank antipodal cubical resolution and sharp projective cosystoles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "all_rank_coxeter_generator_homotopies_and_the_top_dimensional_boundary_defect",
+            "type": "subsection",
+            "title": "All-rank Coxeter generator homotopies and the top-dimensional boundary defect",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -196,6 +348,14 @@
             "id": "alternating_type_a_roots_characterize_hamilton_tight_paths",
             "type": "subsection",
             "title": "Alternating type-A roots characterize Hamilton tight paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "antiparallel_switch_wedge_exchanges_and_the_endpoint_dichotomy",
+            "type": "subsection",
+            "title": "Antiparallel switch-wedge exchanges and the endpoint dichotomy",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -241,9 +401,25 @@
             "research_status": "active"
         },
         {
+            "id": "antipodal_incidence_cocycles",
+            "type": "subsection",
+            "title": "Antipodal incidence cocycles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "antipodal_multifacet_bridge_and_seven_coordinate_universality",
             "type": "subsection",
             "title": "Antipodal multifacet bridge and seven-coordinate universality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "antipodal_prefix_complements_and_dimension_drop",
+            "type": "subsection",
+            "title": "Antipodal prefix complements and dimension drop",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -273,6 +449,14 @@
             "research_status": "active"
         },
         {
+            "id": "bi_monochromatic_interval_exclusion_and_an_equivariant_sphere_of_codimension_three",
+            "type": "subsection",
+            "title": "Bi-monochromatic interval exclusion and an equivariant sphere of codimension three",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "bicycle_space_rank_and_tutte_evaluation_of_port_intersection_quadratics",
             "type": "subsection",
             "title": "Bicycle-space rank and Tutte evaluation of port intersection quadratics",
@@ -297,9 +481,57 @@
             "research_status": "active"
         },
         {
+            "id": "bipartite_block_order_cross_favorability_and_checkerboard_transfers",
+            "type": "subsection",
+            "title": "Bipartite block-order cross-favorability and checkerboard transfers",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "blockwise_euler_parity_for_equivariant_top_cells",
+            "type": "subsection",
+            "title": "Blockwise Euler parity for equivariant top cells",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "blockwise_perturbation_and_dimension_free_phase_synchronization",
             "type": "subsection",
             "title": "Blockwise perturbation and dimension-free phase synchronization",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "boolean_reachability_posets_and_complementary_geodesic_gluing",
+            "type": "subsection",
+            "title": "Boolean reachability posets and complementary geodesic gluing",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "boundary_carriers_homotopy_types_and_explicit_filling_classes",
+            "type": "subsection",
+            "title": "Boundary carriers: homotopy types and explicit filling classes",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "boundary_overlap_cocycles_and_the_shared_antipodal_covering_class",
+            "type": "subsection",
+            "title": "Boundary overlap cocycles and the shared antipodal covering class",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "boundary_reversal_oddness_fills_every_rank_two_switch_wedge_residue",
+            "type": "subsection",
+            "title": "Boundary reversal oddness fills every rank-two switch-wedge residue",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -321,9 +553,41 @@
             "research_status": "active"
         },
         {
+            "id": "bourginyang_index_descent_through_prescribed_dimension_supports",
+            "type": "subsection",
+            "title": "Bourgin–Yang index descent through prescribed dimension supports",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "braid_fillings_and_commuting_square_winding_in_second_switch_topology",
+            "type": "subsection",
+            "title": "Braid fillings and commuting-square winding in second-switch topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "canonical_central_polarity_of_partition_matroid_hamming_roots",
             "type": "subsection",
             "title": "Canonical central polarity of partition-matroid Hamming roots",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "canonical_permutahedral_contraction_and_protected_endpoint_faces",
+            "type": "subsection",
+            "title": "Canonical permutahedral contraction and protected endpoint faces",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cartesian_factorization_of_paired_roots_and_interaction_prime_reduction",
+            "type": "subsection",
+            "title": "Cartesian factorization of paired roots and interaction-prime reduction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -337,9 +601,57 @@
             "research_status": "active"
         },
         {
+            "id": "center_indexed_alternating_forms_for_all_boundary_tournaments",
+            "type": "subsection",
+            "title": "Center-indexed alternating forms for all boundary tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "centrally_symmetric_permutahedral_counterexamples_to_the_opposed_window_conjecture",
+            "type": "subsection",
+            "title": "Centrally symmetric permutahedral counterexamples to the opposed-window conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "chiral_turn_holonomy_and_root_slide_identities",
+            "type": "subsection",
+            "title": "Chiral turn holonomy and root slide identities",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "codimension_three_two_color_intervals_force_alternating_end_cubes",
+            "type": "subsection",
+            "title": "Codimension-three two-color intervals force alternating end-cubes",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "color_blind_antipodal_co_reachability_characterizes_nori1",
             "type": "subsection",
             "title": "Color-blind antipodal co-reachability characterizes NORI1",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "color_filtered_freudenthal_exchange_defects",
+            "type": "subsection",
+            "title": "Color-filtered Freudenthal exchange defects",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "color_stable_endpoint_carriers_and_mixed_star_localization",
+            "type": "subsection",
+            "title": "Color-stable endpoint carriers and mixed-star localization",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -377,6 +689,38 @@
             "research_status": "active"
         },
         {
+            "id": "complementary_monochromatic_path_pairs_as_common_full_rank_certificates",
+            "type": "subsection",
+            "title": "Complementary monochromatic path pairs as common full-rank certificates",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "complementary_rank_geodesic_counting_and_parity_blindness",
+            "type": "subsection",
+            "title": "Complementary-rank geodesic counting and parity blindness",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "complete_cycle_extension_criterion_for_colorings_on_projected_geodesic_subgraphs",
+            "type": "subsection",
+            "title": "Complete cycle-extension criterion for colorings on projected geodesic subgraphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "complete_face_flag_basis_paths_and_antipodal_spheres",
+            "type": "subsection",
+            "title": "Complete face-flag basis paths and antipodal spheres",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "conflict_graph_path_transfer",
             "type": "subsection",
             "title": "Conflict graph path transfer",
@@ -393,9 +737,25 @@
             "research_status": "active"
         },
         {
+            "id": "connectedness_iff_greedy_boundary_zero_free_and_dual_equivariant_rigidity",
+            "type": "subsection",
+            "title": "Connectedness iff greedy boundary zero-free and dual equivariant rigidity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "constant_port_intersection_rigidity_and_the_ninth_cube",
             "type": "subsection",
             "title": "Constant port intersection rigidity and the ninth cube",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "convex_separation_fails_for_rank_simple_antipodal_prefix_carriers_in_all_large_dimensions",
+            "type": "subsection",
+            "title": "Convex separation fails for rank-simple antipodal prefix carriers in all large dimensions",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -417,6 +777,70 @@
             "research_status": "active"
         },
         {
+            "id": "coxeter_flag_parity_transport_and_curvature_reconstruction_up_to_one_phase",
+            "type": "subsection",
+            "title": "Coxeter flag-parity transport and curvature reconstruction up to one phase",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "coxeter_element_cosets_and_a_unified_one_switch_conjecture",
+            "type": "subsection",
+            "title": "Coxeter-element cosets and a unified one-switch conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "coxeter_window_switch_moments_and_a_boundary_spectral_polynomial",
+            "type": "subsection",
+            "title": "Coxeter-window switch moments and a boundary spectral polynomial",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "critical_dimensional_contraction_of_rational_switch_bivectors",
+            "type": "subsection",
+            "title": "Critical-dimensional contraction of rational switch bivectors",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cross_orientation_root_intersections_for_distinct_square_factorizations",
+            "type": "subsection",
+            "title": "Cross-orientation root intersections for distinct square factorizations",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cube_antipodal_edge_stabilizers_and_symmetric_middle_layer_paths",
+            "type": "subsection",
+            "title": "Cube antipodal-edge stabilizers and symmetric middle-layer paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cubical_square_curvature_and_chiral_exchange_laws",
+            "type": "subsection",
+            "title": "Cubical square curvature and chiral exchange laws",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "curvature_realization_gauge_phases_and_rooted_square_defect_transport",
+            "type": "subsection",
+            "title": "Curvature realization, gauge phases, and rooted square-defect transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "curvature_sector_cocircuit_weight_enumerators_and_sharp_fiber_conservation",
             "type": "subsection",
             "title": "Curvature-sector cocircuit weight enumerators and sharp fiber conservation",
@@ -433,6 +857,14 @@
             "research_status": "active"
         },
         {
+            "id": "cyclic_bi_surjective_overlap_and_terminal_defect_exchange",
+            "type": "subsection",
+            "title": "Cyclic bi-surjective overlap and terminal defect exchange",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cyclic_color_variation_and_unavoidable_root_selection",
             "type": "subsection",
             "title": "Cyclic color variation and unavoidable root selection",
@@ -441,9 +873,33 @@
             "research_status": "active"
         },
         {
+            "id": "cyclic_simple_root_fans_and_root_sensitive_monodromy",
+            "type": "subsection",
+            "title": "Cyclic simple-root fans and root-sensitive monodromy",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cyclic_variation_selection_for_antipodal_and_boundary_path_galleries",
+            "type": "subsection",
+            "title": "Cyclic variation selection for antipodal and boundary path galleries",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem",
             "type": "subsection",
             "title": "Cyclic-turn averaging, disjoint exchanges, and the ten-dimensional two-switch theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "cylindrical_counterexample_padding_and_sparse_grassmannian_closure_reduction",
+            "type": "subsection",
+            "title": "Cylindrical counterexample padding and sparse Grassmannian closure reduction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -465,9 +921,49 @@
             "research_status": "active"
         },
         {
+            "id": "degree_one_obstruction_on_a_two_block_hamilton_residue",
+            "type": "subsection",
+            "title": "Degree-one obstruction on a two-block Hamilton residue",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "dihedral_full_path_symmetry_and_the_root_gluing_obstruction",
+            "type": "subsection",
+            "title": "Dihedral full-path symmetry and the root gluing obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture",
             "type": "subsection",
             "title": "Dimension-nine counterexample to the physical ordered-three-face NORI conjecture",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "dimension_simple_petrie_presentation_of_the_full_projective_cycle_space",
+            "type": "subsection",
+            "title": "Dimension-simple Petrie presentation of the full projective cycle space",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "dimension_simple_reachability_and_second_switch_chain_obstructions",
+            "type": "subsection",
+            "title": "Dimension-simple reachability and second-switch chain obstructions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "directed_influence_components_and_monotone_seam_lifting",
+            "type": "subsection",
+            "title": "Directed influence components and monotone seam lifting",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -521,6 +1017,14 @@
             "research_status": "active"
         },
         {
+            "id": "endpoint_symmetric_affine_chambers_and_toroidal_loss_of_antipodal_index",
+            "type": "subsection",
+            "title": "Endpoint-symmetric affine chambers and toroidal loss of antipodal index",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "endpoint_tournament_factorization_and_monochromatic_orders",
             "type": "subsection",
             "title": "Endpoint-tournament factorization and monochromatic orders",
@@ -529,9 +1033,33 @@
             "research_status": "active"
         },
         {
+            "id": "equivariant_bridge_transport",
+            "type": "subsection",
+            "title": "Equivariant bridge transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "equivariant_component_nerve_map_and_the_fixed_incidence_edge_threshold",
+            "type": "subsection",
+            "title": "Equivariant component-nerve map and the fixed-incidence-edge threshold",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "equivariant_square_derivative_galleries_for_arbitrary_port_cycles",
             "type": "subsection",
             "title": "Equivariant square-derivative galleries for arbitrary port cycles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "equivariant_winding_and_the_bockstein_obstruction",
+            "type": "subsection",
+            "title": "Equivariant winding and the Bockstein obstruction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -553,6 +1081,30 @@
             "research_status": "active"
         },
         {
+            "id": "exchange_completeness_and_product_factorization_of_flags",
+            "type": "subsection",
+            "title": "Exchange completeness and product factorization of flags",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "explicit_higher_coherences_for_every_rank_two_type_b_coxeter_relation",
+            "type": "subsection",
+            "title": "Explicit higher coherences for every rank-two type-B Coxeter relation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "external_tournament_scores_canonically_resolve_tetrahedral_symmetry",
+            "type": "subsection",
+            "title": "External tournament scores canonically resolve tetrahedral symmetry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "extremal_exterior_cube_rigidity_and_terminal_phase_separation",
             "type": "subsection",
             "title": "Extremal exterior-cube rigidity and terminal phase separation",
@@ -561,9 +1113,25 @@
             "research_status": "active"
         },
         {
+            "id": "extremal_geodesic_blockers_and_exponential_paired_root_stability",
+            "type": "subsection",
+            "title": "Extremal geodesic blockers and exponential paired-root stability",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "extremal_port_intersections_force_flat_exterior_stars_and_terminal_separation",
             "type": "subsection",
             "title": "Extremal port intersections force flat exterior stars and terminal separation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "extreme_switch_face_selectors_and_central_rank_localization",
+            "type": "subsection",
+            "title": "Extreme-switch face selectors and central-rank localization",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -617,6 +1185,46 @@
             "research_status": "active"
         },
         {
+            "id": "forest_monochromatic_endpoint_complexes_collapse_to_turn_graphs",
+            "type": "subsection",
+            "title": "Forest monochromatic endpoint complexes collapse to turn graphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "formal_switch_deformation_and_the_quadratic_exchange_defect",
+            "type": "subsection",
+            "title": "Formal switch deformation and the quadratic exchange defect",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "free_lie_algebra_and_petrie_cycles",
+            "type": "subsection",
+            "title": "Free Lie algebra and Petrie cycles",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "full_quadratic_switch_bivectors_preserve_straddling_unit_degree",
+            "type": "subsection",
+            "title": "Full quadratic switch bivectors preserve straddling unit degree",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "full_quadratic_switch_tensors_admit_rank_two_color_sensitive_convex_fillings",
+            "type": "subsection",
+            "title": "Full quadratic switch tensors admit rank-two color-sensitive convex fillings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "full_geodesic_color_profiles_span_the_entire_binary_space",
             "type": "subsection",
             "title": "Full-geodesic color profiles span the entire binary space",
@@ -641,9 +1249,25 @@
             "research_status": "active"
         },
         {
+            "id": "fundamental_circuit_intervals_and_reversal_of_matroid_flags",
+            "type": "subsection",
+            "title": "Fundamental-circuit intervals and reversal of matroid flags",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "fundamental_circuit_pivots_dual_basis_sweeps_and_faithful_ordered_exchanges",
             "type": "subsection",
             "title": "Fundamental-circuit pivots, dual-basis sweeps, and faithful ordered exchanges",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "gauge_critical_switches_and_clustered_witnesses_on_full_paths",
+            "type": "subsection",
+            "title": "Gauge critical switches and clustered witnesses on full paths",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -665,6 +1289,22 @@
             "research_status": "active"
         },
         {
+            "id": "global_petrie_switch_moment_and_local_turn_counting",
+            "type": "subsection",
+            "title": "Global Petrie switch moment and local-turn counting",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "graded_projective_homology_flux_and_its_limits",
+            "type": "subsection",
+            "title": "Graded projective homology flux and its limits",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality",
             "type": "subsection",
             "title": "Graphic-matroid Hamilton path overlaps and random boundary pattern universality",
@@ -681,9 +1321,41 @@
             "research_status": "active"
         },
         {
+            "id": "greedy_matroid_fans_and_duality",
+            "type": "subsection",
+            "title": "Greedy matroid fans and duality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "hamilton_orders_as_longest_induced_johnson_paths",
+            "type": "subsection",
+            "title": "Hamilton orders as longest induced Johnson paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "hereditary_reversal_cover_switch_sets_and_deletion_critical_paths",
+            "type": "subsection",
+            "title": "Hereditary reversal-cover switch sets and deletion-critical paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine",
             "type": "subsection",
             "title": "Hereditary sentinel-word contraction and NORI counterexamples in every dimension at least nine",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "homotopy_constant_prefix_carriers_and_unrestricted_degree_transport",
+            "type": "subsection",
+            "title": "Homotopy-constant prefix carriers and unrestricted degree transport",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -721,6 +1393,14 @@
             "research_status": "active"
         },
         {
+            "id": "interior_exchange_parity_and_endpoint_switch_defects",
+            "type": "subsection",
+            "title": "Interior exchange parity and endpoint switch defects",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds",
             "type": "subsection",
             "title": "Intrinsic star statistics and quantitative port-cocircuit exchange bounds",
@@ -732,6 +1412,14 @@
             "id": "introduction_problems_geometry_and_research_objectives",
             "type": "subsection",
             "title": "Introduction — problems, geometry, and research objectives",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "introduction_one_switch_paths_through_opposed_face_flags",
+            "type": "subsection",
+            "title": "Introduction: one-switch paths through opposed face flags",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -756,6 +1444,14 @@
             "id": "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier",
             "type": "subsection",
             "title": "Layered boundary snakes and a dense rank-sensitivity barrier",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "lie_endpoint_compression_for_filtered_root_wall_variation",
+            "type": "subsection",
+            "title": "Lie endpoint compression for filtered root wall variation",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -788,6 +1484,46 @@
             "id": "linear_hamming_factor_count_paths_from_weighted_edge_transfer",
             "type": "subsection",
             "title": "Linear Hamming factor-count paths from weighted edge transfer",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "linear_threshold_coset_colorings_admit_one_switch_full_paths",
+            "type": "subsection",
+            "title": "Linear-threshold coset colorings admit one-switch full paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "lipschitz_variation_under_exchanges_and_an_unbounded_root_seam",
+            "type": "subsection",
+            "title": "Lipschitz variation under exchanges and an unbounded root seam",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "local_cycle_integration_and_the_overlap_graph_cohomology_gap",
+            "type": "subsection",
+            "title": "Local cycle integration and the overlap graph cohomology gap",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "local_exchange_axioms_reconstruct_the_two_coloring_classes",
+            "type": "subsection",
+            "title": "Local exchange axioms reconstruct the two coloring classes",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "local_turn_first_moments_for_unrestricted_antipodal_and_boundary_galleries",
+            "type": "subsection",
+            "title": "Local-turn first moments for unrestricted antipodal and boundary galleries",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -841,6 +1577,22 @@
             "research_status": "active"
         },
         {
+            "id": "monochromatic_geodesic_endpoint_posets_and_a_global_rank_bounded_target",
+            "type": "subsection",
+            "title": "Monochromatic geodesic endpoint posets and a global rank-bounded target",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "monochromatic_prefix_complexes_and_rank_preserving_transport",
+            "type": "subsection",
+            "title": "Monochromatic prefix complexes and rank-preserving transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "monochromatic_component_quotients_as_canonical_pointed_cographic_restriction_minors",
             "type": "subsection",
             "title": "Monochromatic-component quotients as canonical pointed cographic restriction minors",
@@ -857,9 +1609,65 @@
             "research_status": "active"
         },
         {
+            "id": "multi_root_cech_chains_and_the_switch_filtration",
+            "type": "subsection",
+            "title": "Multi-root Cech chains and the switch filtration",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments",
             "type": "subsection",
             "title": "Nearly-linear monochromatic geodesics for acyclic boundary 3-tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nested_positive_prefix_carriers_and_coherent_lower_skeleton_filling",
+            "type": "subsection",
+            "title": "Nested positive-prefix carriers and coherent lower-skeleton filling",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nonbacktracking_color_components_and_the_first_antipodal_chain_equation",
+            "type": "subsection",
+            "title": "Nonbacktracking color components and the first antipodal chain equation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nonlinear_tree_incidence_realization_and_cycle_syndrome_reduction",
+            "type": "subsection",
+            "title": "Nonlinear tree incidence realization and cycle-syndrome reduction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "obstruction_degree_transport_on_the_boolean_two_block_gallery",
+            "type": "subsection",
+            "title": "Obstruction-degree transport on the Boolean two-block gallery",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "odd_face_folding_two_polarity_certificates_and_transverse_curvature_oscillation",
+            "type": "subsection",
+            "title": "Odd face folding, two-polarity certificates, and transverse curvature oscillation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "odd_girth_and_frustration_of_switch_component_quotients",
+            "type": "subsection",
+            "title": "Odd girth and frustration of switch component quotients",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -881,9 +1689,81 @@
             "research_status": "active"
         },
         {
+            "id": "odd_dimensional_top_cohomology_cancellation_in_the_bi_monochromatic_seam",
+            "type": "subsection",
+            "title": "Odd-dimensional top-cohomology cancellation in the bi-monochromatic seam",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "odd_walk_characterization_of_the_first_antipodal_chain_lift",
+            "type": "subsection",
+            "title": "Odd-walk characterization of the first antipodal chain lift",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "off_residue_tournaments_remove_the_rank_three_equivariant_filling_obstruction",
+            "type": "subsection",
+            "title": "Off-residue tournaments remove the rank-three equivariant filling obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "one_direction_path_witnesses_and_a_2_sat_closure_reduction",
+            "type": "subsection",
+            "title": "One-direction path witnesses and a 2-SAT closure reduction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "orientation_curvature_and_a_canonical_two_port_lift_for_polarized_galleries",
             "type": "subsection",
             "title": "Orientation curvature and a canonical two-port lift for polarized galleries",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "orientation_gauges_and_a_common_involutive_directed_arc_symmetry",
+            "type": "subsection",
+            "title": "Orientation gauges and a common involutive directed-arc symmetry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "oriented_switch_plane_charts_and_the_grassmannian_index_obstruction",
+            "type": "subsection",
+            "title": "Oriented switch-plane charts and the Grassmannian index obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "parabolic_character_obstruction_and_the_first_coxeter_one_switch_theorem",
+            "type": "subsection",
+            "title": "Parabolic character obstruction and the first Coxeter one-switch theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "parabolic_fixed_space_surplus_and_equivariant_stiefel_fillings",
+            "type": "subsection",
+            "title": "Parabolic fixed-space surplus and equivariant Stiefel fillings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "parabolic_syndrome_saturation_by_commuting_exchanges_and_root_slides",
+            "type": "subsection",
+            "title": "Parabolic syndrome saturation by commuting exchanges and root slides",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -893,6 +1773,22 @@
             "type": "subsection",
             "title": "Parallel-face port-cocircuit exchange at corresponding terminals",
             "version": 2,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "parity_obstructions_without_local_incidence_descent",
+            "type": "subsection",
+            "title": "Parity obstructions without local incidence descent",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "pendant_tree_elimination_and_cross_favorability_on_the_interaction_2_core",
+            "type": "subsection",
+            "title": "Pendant-tree elimination and cross-favorability on the interaction 2-core",
+            "version": 1,
             "superseded": false,
             "research_status": "active"
         },
@@ -908,6 +1804,14 @@
             "id": "periodic_exchange_strands_and_resource_capacity",
             "type": "subsection",
             "title": "Periodic exchange strands and resource capacity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "permutahedral_prefix_degree_and_universal_product_obstruction",
+            "type": "subsection",
+            "title": "Permutahedral prefix degree and universal product obstruction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -937,6 +1841,14 @@
             "research_status": "active"
         },
         {
+            "id": "polygonal_rank_two_monodromy_and_exchange_seams",
+            "type": "subsection",
+            "title": "Polygonal rank-two monodromy and exchange seams",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support",
             "type": "subsection",
             "title": "Polynomial monochromatic geodesics from sparse triplewise exterior support",
@@ -956,6 +1868,62 @@
             "id": "port_cogirth_preserving_contractions_and_binary_generator_cayley_lift_matroids",
             "type": "subsection",
             "title": "Port-cogirth-preserving contractions and binary-generator Cayley lift matroids",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "positive_prefix_stiefel_chart_and_the_intrinsic_top_cell_threshold",
+            "type": "subsection",
+            "title": "Positive-prefix Stiefel chart and the intrinsic top-cell threshold",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "primary_projective_obstruction_and_root_slide_monodromy_in_dimension_simple_coxeter_chains",
+            "type": "subsection",
+            "title": "Primary projective obstruction and root-slide monodromy in dimension-simple Coxeter chains",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "primary_cell_antipodal_separation_and_obstruction_parity",
+            "type": "subsection",
+            "title": "Primary-cell antipodal separation and obstruction parity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "prismatic_vertex_figures_and_triangle_square_port_transport",
+            "type": "subsection",
+            "title": "Prismatic vertex figures and triangle-square port transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "projective_face_incidences_and_intrinsic_flag_rotation",
+            "type": "subsection",
+            "title": "Projective face incidences and intrinsic flag rotation",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "projective_rainbow_geodesic_cycles_and_three_hit_switch_criticality",
+            "type": "subsection",
+            "title": "Projective rainbow geodesic cycles and three-hit switch criticality",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "projective_square_curvature_and_the_antipodal_exchange_disk_identity",
+            "type": "subsection",
+            "title": "Projective square curvature and the antipodal exchange-disk identity",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1001,9 +1969,65 @@
             "research_status": "active"
         },
         {
+            "id": "rank_three_coherence_defect_despite_complete_square_fillings",
+            "type": "subsection",
+            "title": "Rank-three coherence defect despite complete square fillings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "rank_three_convex_obstruction_in_ordinary_boundary_tournaments",
+            "type": "subsection",
+            "title": "Rank-three convex obstruction in ordinary boundary tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "rank_two_prefix_data_reconstructs_the_full_coloring",
+            "type": "subsection",
+            "title": "Rank-two prefix data reconstructs the full coloring",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "rank_two_zero_switch_holes_and_their_three_cube_coherence_defect",
+            "type": "subsection",
+            "title": "Rank-two zero-switch holes and their three-cube coherence defect",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data",
             "type": "subsection",
             "title": "Reconstruction of antipodally odd edge colorings from local turn data",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "rectified_graphs_and_complete_path_decoding",
+            "type": "subsection",
+            "title": "Rectified graphs and complete path decoding",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "residual_face_descent_barriers_from_complementary_monochromatic_arms",
+            "type": "subsection",
+            "title": "Residual-face descent barriers from complementary monochromatic arms",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "resolving_affine_reversal_fixed_points_into_type_a_antipodal_boundary_spheres",
+            "type": "subsection",
+            "title": "Resolving affine reversal fixed points into type-A antipodal boundary spheres",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1017,9 +2041,33 @@
             "research_status": "active"
         },
         {
+            "id": "reversal_odd_quadratic_switch_bivectors_and_exact_switch_rank",
+            "type": "subsection",
+            "title": "Reversal-odd quadratic switch bivectors and exact switch rank",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "root_selection_is_essential_six_vertex_closure_and_a_seven_vertex_obstruction",
+            "type": "subsection",
+            "title": "Root selection is essential: six-vertex closure and a seven-vertex obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "root_basis_star_geometry_and_a_uniform_square_root_path_theorem",
             "type": "subsection",
             "title": "Root-basis star geometry and a uniform square-root path theorem",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "root_slide_invariant_twisted_switch_filtration_and_uniform_quadratic_exchange_defects",
+            "type": "subsection",
+            "title": "Root-slide-invariant twisted switch filtration and uniform quadratic exchange defects",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1033,9 +2081,33 @@
             "research_status": "active"
         },
         {
+            "id": "rooted_five_vertex_tight_paths_and_mixed_one_factor_hamming_graphs",
+            "type": "subsection",
+            "title": "Rooted five-vertex tight paths and mixed one-factor Hamming graphs",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "rooted_hamiltonian_windows_and_sharp_random_perturbation_threshold",
             "type": "subsection",
             "title": "Rooted Hamiltonian windows and sharp random perturbation threshold",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "seam_transgression_for_the_two_color_endpoint_quotient",
+            "type": "subsection",
+            "title": "Seam transgression for the two-color endpoint quotient",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "seam_component_multigraphs_and_monochromatic_localization_of_the_second_obstruction",
+            "type": "subsection",
+            "title": "Seam-component multigraphs and monochromatic localization of the second obstruction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1049,6 +2121,22 @@
             "research_status": "active"
         },
         {
+            "id": "sharp_convex_carriers_for_centered_switch_wedges_on_flag_residues",
+            "type": "subsection",
+            "title": "Sharp convex carriers for centered switch wedges on flag residues",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "sharp_four_symbol_rigidity_for_fixed_switch_positions_on_hamilton_cells",
+            "type": "subsection",
+            "title": "Sharp four-symbol rigidity for fixed switch positions on Hamilton cells",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support",
             "type": "subsection",
             "title": "Sharp logarithmic monochromatic paths under bounded exterior support",
@@ -1057,9 +2145,25 @@
             "research_status": "active"
         },
         {
+            "id": "sharp_rank_three_homology_of_the_alternating_cube_prefix_union",
+            "type": "subsection",
+            "title": "Sharp rank-three homology of the alternating cube prefix union",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "sharp_rootwise_random_cube_geodesics_by_singleton_block_second_moments",
             "type": "subsection",
             "title": "Sharp rootwise random cube geodesics by singleton-block second moments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "sharp_spanning_tree_obstruction_to_pointwise_low_switch_freudenthal_coverage",
+            "type": "subsection",
+            "title": "Sharp spanning-tree obstruction to pointwise low-switch Freudenthal coverage",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1089,9 +2193,41 @@
             "research_status": "active"
         },
         {
+            "id": "signed_type_b_chambers_as_paired_symbol_type_a_hamilton_orders",
+            "type": "subsection",
+            "title": "Signed type-B chambers as paired-symbol type-A Hamilton orders",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "signed_support_retraction_of_geodesic_endpoint_posets_and_sharp_equivariant_index",
+            "type": "subsection",
+            "title": "Signed-support retraction of geodesic endpoint posets and sharp equivariant index",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "simultaneous_partition_balancing_and_low_switch_terminal_alignment",
             "type": "subsection",
             "title": "Simultaneous partition balancing and low-switch terminal alignment",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "six_vertex_boundary_one_switch_theorem_from_coxeter_spectra",
+            "type": "subsection",
+            "title": "Six-vertex boundary one-switch theorem from Coxeter spectra",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "smith_transfer_equivalence_and_the_canonical_second_tower_obstruction",
+            "type": "subsection",
+            "title": "Smith transfer equivalence and the canonical second tower obstruction",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1105,6 +2241,14 @@
             "research_status": "active"
         },
         {
+            "id": "spectral_cosystolic_separation_of_cube_and_boundary_switch_spaces",
+            "type": "subsection",
+            "title": "Spectral cosystolic separation of cube and boundary switch spaces",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "spectral_rigidity_for_partition_matroids",
             "type": "subsection",
             "title": "Spectral rigidity for partition matroids",
@@ -1113,9 +2257,33 @@
             "research_status": "active"
         },
         {
+            "id": "square_carrier_obstructions_and_switch_filtration",
+            "type": "subsection",
+            "title": "Square carrier obstructions and switch filtration",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "square_defects_and_path_order_holonomy_in_dimension_simple_chain_lifts",
+            "type": "subsection",
+            "title": "Square defects and path-order holonomy in dimension-simple chain lifts",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy",
             "type": "subsection",
             "title": "Square-curvature gain in cyclic exchange averaging and reversal holonomy",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "star_interaction_graphs_force_paired_roots_in_arbitrary_dimension",
+            "type": "subsection",
+            "title": "Star interaction graphs force paired roots in arbitrary dimension",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1137,6 +2305,38 @@
             "research_status": "active"
         },
         {
+            "id": "stiefel_and_grassmannian_obstruction_of_a_straddling_switch_plane",
+            "type": "subsection",
+            "title": "Stiefel and Grassmannian obstruction of a straddling switch plane",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "switch_filtered_rees_chains_and_root_contraction",
+            "type": "subsection",
+            "title": "Switch-filtered Rees chains and root contraction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "systolic_cycles_characterize_complete_cube_geodesics",
+            "type": "subsection",
+            "title": "Systolic cycles characterize complete cube geodesics",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "template_free_star_colorings_and_limits_of_matching_induction",
+            "type": "subsection",
+            "title": "Template-free star colorings and limits of matching induction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "terminal_set_growth_for_matroid_sliding_window_galleries",
             "type": "subsection",
             "title": "Terminal-set growth for matroid sliding-window galleries",
@@ -1148,6 +2348,30 @@
             "id": "ternary_hamming_turn_conservation_and_linear_paths",
             "type": "subsection",
             "title": "Ternary Hamming turn conservation and linear paths",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "tetrahedral_parity_and_rank_three_convex_switch_obstruction",
+            "type": "subsection",
+            "title": "Tetrahedral parity and rank-three convex switch obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "tetrahedral_parity_tensor_obstruction",
+            "type": "subsection",
+            "title": "Tetrahedral parity tensor obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "the_antipodal_line_graph_cover_and_one_crossing_basis_cycles",
+            "type": "subsection",
+            "title": "The antipodal line-graph cover and one-crossing basis cycles",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1177,6 +2401,30 @@
             "research_status": "active"
         },
         {
+            "id": "the_oriented_interval_torus_and_alternating_puncture_degrees",
+            "type": "subsection",
+            "title": "The oriented-interval torus and alternating puncture degrees",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "three_block_plucker_sign_monotonicity_and_switch_confinement",
+            "type": "subsection",
+            "title": "Three-block Plucker sign monotonicity and switch confinement",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "three_cube_chain_homotopy_for_every_adjacent_geodesic_exchange",
+            "type": "subsection",
+            "title": "Three-cube chain homotopy for every adjacent geodesic exchange",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "three_matroid_hamiltonian_galleries_and_bounded_cost_block_reversal",
             "type": "subsection",
             "title": "Three-matroid Hamiltonian galleries and bounded-cost block reversal",
@@ -1188,6 +2436,22 @@
             "id": "three_turn_boundary_reconstruction_and_legal_turn_contraction",
             "type": "subsection",
             "title": "Three-turn boundary reconstruction and legal-turn contraction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "total_positivity_and_the_safe_cut_cone_of_a_quadratic_switch_bivector",
+            "type": "subsection",
+            "title": "Total positivity and the safe cut cone of a quadratic switch bivector",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "tournament_interleaving_and_functional_dependency_geodesics",
+            "type": "subsection",
+            "title": "Tournament interleaving and functional-dependency geodesics",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1209,6 +2473,22 @@
             "research_status": "active"
         },
         {
+            "id": "transverse_curvature_oscillation_along_near_spanning_monochromatic_geodesics",
+            "type": "subsection",
+            "title": "Transverse curvature oscillation along near-spanning monochromatic geodesics",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "triangle_square_complex_and_antipodal_cohomology",
+            "type": "subsection",
+            "title": "Triangle-square complex and antipodal cohomology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "triangle_square_rigidity_of_canonical_hamming_resource_matroids",
             "type": "subsection",
             "title": "Triangle-square rigidity of canonical Hamming resource matroids",
@@ -1225,9 +2505,25 @@
             "research_status": "active"
         },
         {
+            "id": "truncated_equivariant_chain_transfers_and_the_bockstein_obstruction",
+            "type": "subsection",
+            "title": "Truncated equivariant chain transfers and the Bockstein obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "twisted_and_periodic_gallery_cut_calculus_for_cubes_and_boundary_tournaments",
             "type": "subsection",
             "title": "Twisted and periodic gallery cut calculus for cubes and boundary tournaments",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "twisted_involution_stabilizers_and_dyadic_block_actions",
+            "type": "subsection",
+            "title": "Twisted involution stabilizers and dyadic block actions",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1244,6 +2540,38 @@
             "id": "two_color_kneser_stability_and_sharp_middle_rank_reachability_bounds",
             "type": "subsection",
             "title": "Two-color Kneser stability and sharp middle-rank reachability bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_color_prefix_carriers_and_universal_root_transport",
+            "type": "subsection",
+            "title": "Two-color prefix carriers and universal root transport",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_color_rank_jumps_and_the_half_dimensional_reversal_obstruction",
+            "type": "subsection",
+            "title": "Two-color rank jumps and the half-dimensional reversal obstruction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_end_localization_of_second_switch_chain_extensions",
+            "type": "subsection",
+            "title": "Two-end localization of second-switch chain extensions",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "two_hub_selector_obstruction_and_cross_hub_path_interleaving",
+            "type": "subsection",
+            "title": "Two-hub selector obstruction and cross-hub path interleaving",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1273,6 +2601,30 @@
             "research_status": "active"
         },
         {
+            "id": "two_step_bi_monochromatic_diamonds_and_splitting_of_the_top_rank_reversal_cover",
+            "type": "subsection",
+            "title": "Two-step bi-monochromatic diamonds and splitting of the top-rank reversal cover",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "type_d_chambers_as_spanning_geodesic_trees_and_disjoint_square_pivots",
+            "type": "subsection",
+            "title": "Type-D chambers as spanning geodesic trees and disjoint square pivots",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "type_d_common_refinement_of_rooted_freudenthal_triangulations",
+            "type": "subsection",
+            "title": "Type-D common refinement of rooted Freudenthal triangulations",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "unbounded_mandatory_color_changes_from_multilevel_local_minima",
             "type": "subsection",
             "title": "Unbounded mandatory color changes from multilevel local minima",
@@ -1297,6 +2649,38 @@
             "research_status": "active"
         },
         {
+            "id": "universal_path_cross_favorability_by_a_66_state_finite_induction",
+            "type": "subsection",
+            "title": "Universal path cross-favorability by a 66-state finite induction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_path_local_cross_favorability_66_core_finite_induction",
+            "type": "subsection",
+            "title": "Universal path-local cross-favorability: 66-core finite induction",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_petrie_shift_on_maximal_face_flags",
+            "type": "subsection",
+            "title": "Universal Petrie shift on maximal face flags",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_positive_prefix_collisions_and_global_parity",
+            "type": "subsection",
+            "title": "Universal positive-prefix collisions and global parity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "universal_three_direction_edge_color_prescription",
             "type": "subsection",
             "title": "Universal three-direction edge-color prescription",
@@ -1308,6 +2692,22 @@
             "id": "universal_twisted_gallery_switch_enumerators_and_monochromatic_count_bounds",
             "type": "subsection",
             "title": "Universal twisted-gallery switch enumerators and monochromatic count bounds",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "universal_variable_prefix_degree_on_two_block_cells",
+            "type": "subsection",
+            "title": "Universal variable prefix degree on two-block cells",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "unused_coordinate_sections_localize_reversal_index_to_monochromatic_supports",
+            "type": "subsection",
+            "title": "Unused-coordinate sections localize reversal index to monochromatic supports",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1327,6 +2727,14 @@
             "version": 1,
             "superseded": false,
             "research_status": "active"
+        },
+        {
+            "id": "zigzag_comparison_complexes_and_the_antipodal_sphere_of_hamilton_galleries",
+            "type": "subsection",
+            "title": "Zigzag comparison complexes and the antipodal sphere of Hamilton galleries",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
         }
     ],
     "publication": "active_only",
@@ -1335,7 +2743,7 @@
         "recovery": "Research database or historical Git commits",
         "article_count": 5,
         "section_count": 14,
-        "subsection_count": 54,
+        "subsection_count": 56,
         "included_in_current_artifact": false
     }
 }

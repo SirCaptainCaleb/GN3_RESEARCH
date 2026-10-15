@@ -1,7 +1,33 @@
 {
-  "active_section_count": 10,
-  "active_subsection_count": 147,
+  "active_section_count": 21,
+  "active_subsection_count": 311,
   "article_sequences": {
+    "article_xv_projective_face_flag_unification": [
+      {
+        "id": "opposed_projective_face_windows_and_complete_paths",
+        "math_version": 1,
+        "position": 1,
+        "version": 2
+      },
+      {
+        "id": "nori_rectified_graphs_cyclic_path_geometry",
+        "math_version": null,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "nori_switch_bivector_grassmannian_obstructions",
+        "math_version": null,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "nori_hamilton_residue_degree_matroid_fans",
+        "math_version": null,
+        "position": 4,
+        "version": 1
+      }
+    ],
     "nori_article_i_conjecture": [
       {
         "id": "nori_foundations",
@@ -47,12 +73,30 @@
         "id": "nori_matroid_rainbow_circuit_geometry",
         "math_version": 1,
         "position": 1,
-        "version": 1
+        "version": 2
       },
       {
         "id": "nori_matroid_generalizations_conjectures",
         "math_version": 1,
         "position": 2,
+        "version": 2
+      },
+      {
+        "id": "nori_graphic_boundary_tournament_exchange_geometry",
+        "math_version": null,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "nori_matroidal_reachability_long_path_bounds",
+        "math_version": null,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "nori_hamming_polarity_twisted_gallery_transport",
+        "math_version": null,
+        "position": 5,
         "version": 1
       }
     ],
@@ -77,11 +121,50 @@
         "id": "nori_type_a_rook_gallery_topology",
         "math_version": 1,
         "position": 1,
+        "version": 2
+      },
+      {
+        "id": "nori_cubical_curvature_exchange_topology",
+        "math_version": null,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "nori_freudenthal_carriers_equivariant_topology",
+        "math_version": null,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "nori_type_d_trees_petrie_algebra",
+        "math_version": null,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "nori_switch_filtered_chains_obstructions",
+        "math_version": null,
+        "position": 5,
         "version": 1
       }
     ]
   },
   "article_versions": {
+    "article_xv_projective_face_flag_unification": {
+      "composition": {
+        "body_chars": 1229090,
+        "composed_through_revision": 9304,
+        "composition_version": 321,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 2
+    },
     "nori_article_i_conjecture": {
       "composition": {
         "body_chars": 109071,
@@ -159,9 +242,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 896088,
-        "composed_through_revision": 7370,
-        "composition_version": 243,
+        "body_chars": 904293,
+        "composed_through_revision": 8472,
+        "composition_version": 246,
         "frontier": {
           "current": null
         },
@@ -204,9 +287,9 @@
     },
     "nori_article_xiv_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 19949,
-        "composed_through_revision": 7546,
-        "composition_version": 3,
+        "body_chars": 878461,
+        "composed_through_revision": 9310,
+        "composition_version": 180,
         "frontier": {
           "current": null
         },
@@ -220,10 +303,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-13T20:23:35.993847+00:00",
+  "generated_at": "2026-10-15T01:24:57.877786+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 156,
+  "research_note_count": 216,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -243,6 +326,22 @@
         "stale_dependencies": []
       },
       "math_version": 1,
+      "version": 1
+    },
+    "nori_cubical_curvature_exchange_topology": {
+      "composition": {
+        "body_chars": 102914,
+        "composed_through_revision": 8435,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
       "version": 1
     },
     "nori_edge_central_carriers": {
@@ -277,11 +376,75 @@
       "math_version": 1,
       "version": 2
     },
+    "nori_freudenthal_carriers_equivariant_topology": {
+      "composition": {
+        "body_chars": 247647,
+        "composed_through_revision": 8976,
+        "composition_version": 14,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
+    "nori_graphic_boundary_tournament_exchange_geometry": {
+      "composition": {
+        "body_chars": 222261,
+        "composed_through_revision": 8219,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
+    "nori_hamilton_residue_degree_matroid_fans": {
+      "composition": {
+        "body_chars": 36080,
+        "composed_through_revision": 8227,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
+    "nori_hamming_polarity_twisted_gallery_transport": {
+      "composition": {
+        "body_chars": 103234,
+        "composed_through_revision": 8309,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
     "nori_matroid_generalizations_conjectures": {
       "composition": {
-        "body_chars": 711630,
-        "composed_through_revision": 7369,
-        "composition_version": 208,
+        "body_chars": 206460,
+        "composed_through_revision": 8471,
+        "composition_version": 210,
         "frontier": {
           "current": null
         },
@@ -291,13 +454,13 @@
         "stale_dependencies": []
       },
       "math_version": 1,
-      "version": 1
+      "version": 2
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
         "body_chars": 184387,
-        "composed_through_revision": 6918,
-        "composition_version": 37,
+        "composed_through_revision": 8217,
+        "composition_version": 38,
         "frontier": {
           "current": null
         },
@@ -307,6 +470,38 @@
         "stale_dependencies": []
       },
       "math_version": 1,
+      "version": 2
+    },
+    "nori_matroidal_reachability_long_path_bounds": {
+      "composition": {
+        "body_chars": 187874,
+        "composed_through_revision": 8220,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
+    "nori_rectified_graphs_cyclic_path_geometry": {
+      "composition": {
+        "body_chars": 147216,
+        "composed_through_revision": 8970,
+        "composition_version": 17,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
       "version": 1
     },
     "nori_seven_coordinate_structure": {
@@ -325,11 +520,43 @@
       "math_version": 1,
       "version": 1
     },
+    "nori_switch_bivector_grassmannian_obstructions": {
+      "composition": {
+        "body_chars": 106775,
+        "composed_through_revision": 8388,
+        "composition_version": 11,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
+    "nori_switch_filtered_chains_obstructions": {
+      "composition": {
+        "body_chars": 125138,
+        "composed_through_revision": 8375,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
+      "version": 1
+    },
     "nori_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 19881,
-        "composed_through_revision": 7545,
-        "composition_version": 5,
+        "body_chars": 153307,
+        "composed_through_revision": 9309,
+        "composition_version": 118,
         "frontier": {
           "current": null
         },
@@ -339,6 +566,22 @@
         "stale_dependencies": []
       },
       "math_version": 1,
+      "version": 2
+    },
+    "nori_type_d_trees_petrie_algebra": {
+      "composition": {
+        "body_chars": 249379,
+        "composed_through_revision": 9153,
+        "composition_version": 45,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": null,
       "version": 1
     },
     "nori_unification_foundations": {
@@ -388,10 +631,35 @@
       },
       "math_version": 1,
       "version": 2
+    },
+    "opposed_projective_face_windows_and_complete_paths": {
+      "composition": {
+        "body_chars": 938965,
+        "composed_through_revision": 9303,
+        "composition_version": 296,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 2
     }
   },
-  "snapshot_revision": 2813,
+  "snapshot_revision": 4576,
   "startup_broadcasts": [
+    {
+      "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
+      "broadcast_id": "nori_coherent_subsection_editing_and_section_reorganization_20261014",
+      "created_at": "2026-10-14T12:52:59.062123+00:00",
+      "creation_revision": 8231,
+      "priority": 30,
+      "scope": "nori",
+      "title": "Manuscript hierarchy updated: revise Subsections, organize Sections"
+    },
     {
       "body": "no new broadcasts",
       "broadcast_id": "nori_no_new_broadcasts_20261009",
@@ -437,6 +705,40 @@
       "section_id": "nori_xiii_color_preserving_involution_problem",
       "version": 1
     },
+    "a_one_chain_per_degree_antipodal_transfer_tower": {
+      "composition": {
+        "body_chars": 4067,
+        "composed_through_revision": 8126,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Finite tower equivalence with NORI1 and stepwise homology obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "affine_antipodal_cube_colorings_force_straddling_top_cell_grassmannian_obstructions": {
+      "composition": {
+        "body_chars": 9088,
+        "composed_through_revision": 8319,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Straddling full switch degree equals signed graphical zonotope transport",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "affine_cube_edge_colorings_and_elimination_of_rank_one_obstructions": {
       "composition": {
         "body_chars": 9322,
@@ -451,7 +753,58 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "affine_dependence_labels_and_carriers_at_every_word_position": {
+      "composition": {
+        "body_chars": 7585,
+        "composed_through_revision": 7890,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Positive affine-dependence certificate for words with two switches; strict labels at every position yield nested acyclic carriers and a stronger all-dimensional positional localization. Integral formula audited on 2040 sign words.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "affine_dependence_labels_on_hamilton_middle_vertices": {
+      "composition": {
+        "body_chars": 8927,
+        "composed_through_revision": 7894,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Hamilton-center embedding converts complemented reversal into antipodality in a fixed sparse type-A target. All adjacent-order edges and opposite-color invariant-center cells have nested contractible carriers.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "affine_root_selectors_cycle_constraints_and_odd_degree_permutahedral_transport": {
+      "composition": {
+        "body_chars": 28327,
+        "composed_through_revision": 8892,
+        "composition_version": 6,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "2026-10-14: paired-root lower bound for partial reader edge colorings via leaf insertion; arbitrary one-direction nonlinear NORI1 closure and monochromatic path count.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "affine_root_syndrome_gallery_transport_and_corank_one_closure": {
@@ -468,7 +821,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "all_rank_antipodal_cubical_resolution_and_sharp_projective_cosystoles": {
+      "composition": {
+        "body_chars": 8676,
+        "composed_through_revision": 8374,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rigidity of minimum degree-one projective cosystoles and Petrie transversals",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "all_rank_coxeter_generator_homotopies_and_the_top_dimensional_boundary_defect": {
+      "composition": {
+        "body_chars": 6637,
+        "composed_through_revision": 7743,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-rank type-B Coxeter generator homotopies with explicit top-dimensional obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
       "version": 1
     },
     "alternating_rook_galleries_and_the_root_rank_criterion_for_simple_tight_paths": {
@@ -505,6 +892,23 @@
       "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
+    "antiparallel_switch_wedge_exchanges_and_the_endpoint_dichotomy": {
+      "composition": {
+        "body_chars": 8292,
+        "composed_through_revision": 8054,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Classification of antiparallel extreme-switch bivectors, flat-square exceptions, universal projected one-skeleton",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "antipodal_boolean_lattice_terminal_polarity_and_spanning_one_turn_paths": {
       "composition": {
         "body_chars": 10037,
@@ -536,7 +940,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "antipodal_diagonal_compression_and_local_face_certificates": {
@@ -587,7 +991,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "antipodal_incidence_cocycles": {
+      "composition": {
+        "body_chars": 21819,
+        "composed_through_revision": 8434,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete Fourier eigenvalue proof of stationary switch rigidity and explicit monochromatic geodesic certificate",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
       "version": 1
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
@@ -605,6 +1026,23 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "antipodal_prefix_complements_and_dimension_drop": {
+      "composition": {
+        "body_chars": 2658,
+        "composed_through_revision": 7800,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Equivariant homotopy dimension drop from disjoint geodesic-prefix cones",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "antipodally_connected_galleries_of_simultaneous_square_defects": {
@@ -655,7 +1093,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "bi_monochromatic_interval_exclusion_and_an_equivariant_sphere_of_codimension_three": {
+      "composition": {
+        "body_chars": 6853,
+        "composed_through_revision": 8031,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Full proof of two-color rank gap and hemisphere equivariant suspension target",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "bicycle_space_rank_and_tutte_evaluation_of_port_intersection_quadratics": {
@@ -672,7 +1127,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "binary_generator_cayley_lifts_and_the_generalized_port_intersection_conjecture": {
@@ -709,6 +1164,40 @@
       "section_id": "nori_xiii_color_preserving_involution_problem",
       "version": 1
     },
+    "bipartite_block_order_cross_favorability_and_checkerboard_transfers": {
+      "composition": {
+        "body_chars": 6753,
+        "composed_through_revision": 8917,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Bipartite two-block opposite-order root criterion and linear Boolean transfer on even cycles",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "blockwise_euler_parity_for_equivariant_top_cells": {
+      "composition": {
+        "body_chars": 2345,
+        "composed_through_revision": 8395,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Borel Euler parity versus three-symbol even-degree map",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "blockwise_perturbation_and_dimension_free_phase_synchronization": {
       "composition": {
         "body_chars": 8177,
@@ -726,6 +1215,74 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "boolean_reachability_posets_and_complementary_geodesic_gluing": {
+      "composition": {
+        "body_chars": 6476,
+        "composed_through_revision": 7720,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rooted monochromatic geodesic reachability partial orders, complementary pair one-switch equivalence, and rank-preserving root transport",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "boundary_carriers_homotopy_types_and_explicit_filling_classes": {
+      "composition": {
+        "body_chars": 42428,
+        "composed_through_revision": 8280,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete the cube specialization for n-1 and n fixed positions under the strict feasibility supplied by the full-path labels.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "boundary_overlap_cocycles_and_the_shared_antipodal_covering_class": {
+      "composition": {
+        "body_chars": 3314,
+        "composed_through_revision": 7873,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Reversal-odd boundary overlap cocycle and shared antipodal local-incidence representation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
+    "boundary_reversal_oddness_fills_every_rank_two_switch_wedge_residue": {
+      "composition": {
+        "body_chars": 3625,
+        "composed_through_revision": 8074,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Color-sensitive convex filling on all boundary rank-two Coxeter residues",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "boundary_tournament_antipodal_graphic_flat_matroids_and_the_separate_resource_selector_layer": {
       "composition": {
         "body_chars": 29562,
@@ -740,7 +1297,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "boundary_tournaments_and_doubled_line_graph_matroids": {
@@ -760,6 +1317,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "bourginyang_index_descent_through_prescribed_dimension_supports": {
+      "composition": {
+        "body_chars": 4257,
+        "composed_through_revision": 8207,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Bourgin-Yang relative cup-product proof for support-filtered reversal index",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "braid_fillings_and_commuting_square_winding_in_second_switch_topology": {
+      "composition": {
+        "body_chars": 6660,
+        "composed_through_revision": 7643,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uniform parabolic braid filling and commuting-square degree-one obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "canonical_central_polarity_of_partition_matroid_hamming_roots": {
       "composition": {
         "body_chars": 6362,
@@ -774,7 +1365,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "canonical_permutahedral_contraction_and_protected_endpoint_faces": {
+      "composition": {
+        "body_chars": 5857,
+        "composed_through_revision": 8301,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Canonical even tangent field and protected terminal faces from total positivity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "cartesian_factorization_of_paired_roots_and_interaction_prime_reduction": {
+      "composition": {
+        "body_chars": 123839,
+        "composed_through_revision": 9278,
+        "composition_version": 35,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Quadratic moment-code support indecomposability of minimal obstructions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "cayley_two_design_conservation": {
@@ -794,6 +1419,74 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "center_indexed_alternating_forms_for_all_boundary_tournaments": {
+      "composition": {
+        "body_chars": 6273,
+        "composed_through_revision": 7556,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Faithful center-indexed exterior-form theorem and single-form obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "centrally_symmetric_permutahedral_counterexamples_to_the_opposed_window_conjecture": {
+      "composition": {
+        "body_chars": 8974,
+        "composed_through_revision": 7770,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Normalize the subsection heading for article assembly; mathematical proof unchanged.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "chiral_turn_holonomy_and_root_slide_identities": {
+      "composition": {
+        "body_chars": 3814,
+        "composed_through_revision": 7841,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cyclic chiral root-slide holonomy and type-A fixed-root opposition",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "codimension_three_two_color_intervals_force_alternating_end_cubes": {
+      "composition": {
+        "body_chars": 5809,
+        "composed_through_revision": 8058,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-dimensional residual path exclusion and forced flat 3-face colors",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
     "color_blind_antipodal_co_reachability_characterizes_nori1": {
       "composition": {
         "composition_version": null,
@@ -808,6 +1501,40 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "color_filtered_freudenthal_exchange_defects": {
+      "composition": {
+        "body_chars": 3218,
+        "composed_through_revision": 7790,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Full-rank monochromatic Freudenthal exchange defects and antipodal covariance",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "color_stable_endpoint_carriers_and_mixed_star_localization": {
+      "composition": {
+        "body_chars": 8060,
+        "composed_through_revision": 7668,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-position color-anchor equivariant chain carriers and root-fixed mixed-star primary obstruction localization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "common_facet_terminal_lifting_and_exterior_color_stability": {
@@ -858,7 +1585,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "commuting_turn_cohomology_and_intrinsic_antipodal_holonomy": {
@@ -875,7 +1602,75 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "complementary_monochromatic_path_pairs_as_common_full_rank_certificates": {
+      "composition": {
+        "body_chars": 6467,
+        "composed_through_revision": 7727,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Full-strength red/blue complementary-support gluing certificates for NORI1 and reversal-odd boundary tournaments",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "complementary_rank_geodesic_counting_and_parity_blindness": {
+      "composition": {
+        "body_chars": 6702,
+        "composed_through_revision": 7635,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complementary rank convolution identity and a positive parity-blind family",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "complete_cycle_extension_criterion_for_colorings_on_projected_geodesic_subgraphs": {
+      "composition": {
+        "body_chars": 5325,
+        "composed_through_revision": 7778,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete relative cycle constraints and extension multiplicities on projected geodesic families",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "complete_face_flag_basis_paths_and_antipodal_spheres": {
+      "composition": {
+        "body_chars": 3731,
+        "composed_through_revision": 7679,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Relocated Article XIV face-flag path and sphere theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "conflict_graph_path_transfer": {
@@ -892,7 +1687,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "connected_shortest_port_cocircuit_exchanges_and_gap_free_intersection_spectra": {
@@ -912,6 +1707,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "connectedness_iff_greedy_boundary_zero_free_and_dual_equivariant_rigidity": {
+      "composition": {
+        "body_chars": 4703,
+        "composed_through_revision": 8183,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp connectedness criterion and equivariant rigidity of reversal-dual greedy maps",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
     "constant_port_intersection_rigidity_and_the_ninth_cube": {
       "composition": {
         "body_chars": 8362,
@@ -927,6 +1739,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "convex_separation_fails_for_rank_simple_antipodal_prefix_carriers_in_all_large_dimensions": {
+      "composition": {
+        "body_chars": 7506,
+        "composed_through_revision": 7933,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Single-root legal reachability realization theorem and infinite-dimensional nonseparable convex prefix-cone construction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "corresponding_switch_crossover_and_odd_defect_cancellation": {
@@ -963,6 +1792,142 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "coxeter_element_cosets_and_a_unified_one_switch_conjecture": {
+      "composition": {
+        "body_chars": 7484,
+        "composed_through_revision": 7578,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uniform Coxeter-group coset one-switch conjecture, equivalence proofs, and sharp subgroup obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "coxeter_flag_parity_transport_and_curvature_reconstruction_up_to_one_phase": {
+      "composition": {
+        "body_chars": 4596,
+        "composed_through_revision": 7773,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Coxeter flag-parity transport and one-phase reconstruction from square curvature",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "coxeter_window_switch_moments_and_a_boundary_spectral_polynomial": {
+      "composition": {
+        "body_chars": 8164,
+        "composed_through_revision": 7613,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal Coxeter switch expectation, cube sum of squares, and computer-assisted boundary spectral polynomial",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "critical_dimensional_contraction_of_rational_switch_bivectors": {
+      "composition": {
+        "body_chars": 4672,
+        "composed_through_revision": 8092,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Kronecker-Eisenstein rational bivector separation in dimension n-2",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "cross_orientation_root_intersections_for_distinct_square_factorizations": {
+      "composition": {
+        "body_chars": 41207,
+        "composed_through_revision": 8782,
+        "composition_version": 10,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Hall-Rado rank-deficiency certificate: empty cross-factor root intersection forces two units of local safe-check deficiency",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "cube_antipodal_edge_stabilizers_and_symmetric_middle_layer_paths": {
+      "composition": {
+        "body_chars": 4378,
+        "composed_through_revision": 8403,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cycle criterion for cube symmetry and full monochromatic middle-layer geodesic",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "cubical_square_curvature_and_chiral_exchange_laws": {
+      "composition": {
+        "body_chars": 3594,
+        "composed_through_revision": 7856,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cubical square curvature controls chiral turn exchange and satisfies Bianchi",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "curvature_realization_gauge_phases_and_rooted_square_defect_transport": {
+      "composition": {
+        "body_chars": 12794,
+        "composed_through_revision": 7752,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uniform distribution of every complete geodesic color word within a prescribed curvature fiber",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "curvature_sector_cocircuit_weight_enumerators_and_sharp_fiber_conservation": {
       "composition": {
         "body_chars": 5601,
@@ -994,7 +1959,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "cyclic_bi_surjective_overlap_and_terminal_defect_exchange": {
+      "composition": {
+        "body_chars": 35618,
+        "composed_through_revision": 9236,
+        "composition_version": 11,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Checkerboard defect saturation reduced to pure frustrated bijection parity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "cyclic_color_variation_and_unavoidable_root_selection": {
@@ -1014,6 +1996,23 @@
       "section_id": "nori_unification_foundations",
       "version": 1
     },
+    "cyclic_simple_root_fans_and_root_sensitive_monodromy": {
+      "composition": {
+        "body_chars": 6894,
+        "composed_through_revision": 7549,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Cyclic simplex fan theorem, mod-two parity and common flag involution",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
     "cyclic_turn_averaging_disjoint_exchanges_and_the_ten_dimensional_two_switch_theorem": {
       "composition": {
         "body_chars": 7592,
@@ -1029,6 +2028,40 @@
       },
       "development_version": 1,
       "section_id": "nori_edge_central_carriers",
+      "version": 1
+    },
+    "cyclic_variation_selection_for_antipodal_and_boundary_path_galleries": {
+      "composition": {
+        "body_chars": 105704,
+        "composed_through_revision": 8969,
+        "composition_version": 17,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Dimension-induction attempt: even boundary cross-root lifting, odd boundary obstruction, interior-seam example, and return to stripe/empty-root propagation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "cylindrical_counterexample_padding_and_sparse_grassmannian_closure_reduction": {
+      "composition": {
+        "body_chars": 6074,
+        "composed_through_revision": 8251,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Counterexample padding and sparse power-of-two Grassmannian completion reduction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
       "version": 1
     },
     "deck_displacement_two_port_exchange": {
@@ -1065,6 +2098,40 @@
       "section_id": "nori_xii_definitions_full_rank_phase",
       "version": 1
     },
+    "degree_one_obstruction_on_a_two_block_hamilton_residue": {
+      "composition": {
+        "body_chars": 1842,
+        "composed_through_revision": 8111,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Product hexagon top-degree obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
+    "dihedral_full_path_symmetry_and_the_root_gluing_obstruction": {
+      "composition": {
+        "body_chars": 3962,
+        "composed_through_revision": 7849,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Dihedral type-A opposition shared by NORI1 and boundary tournaments, with explicit cube root-gluing obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "dimension_nine_counterexample_to_the_physical_ordered_three_face_nori_conjecture": {
       "composition": {
         "body_chars": 10607,
@@ -1080,6 +2147,57 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "dimension_simple_petrie_presentation_of_the_full_projective_cycle_space": {
+      "composition": {
+        "body_chars": 31521,
+        "composed_through_revision": 8416,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unrestricted Q6 affine coloring demonstrates the aggregate matching certificate is insufficient by itself",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
+      "version": 1
+    },
+    "dimension_simple_reachability_and_second_switch_chain_obstructions": {
+      "composition": {
+        "body_chars": 11927,
+        "composed_through_revision": 7626,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Dimension-simple Wu–Yang adaptation: reachability gluing, Coxeter second-switch equivariant skeleton and precise cellwise obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "directed_influence_components_and_monotone_seam_lifting": {
+      "composition": {
+        "body_chars": 95599,
+        "composed_through_revision": 9302,
+        "composition_version": 30,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Projection-site cyclic cross counterexamples force a globally oriented Hamilton feedback cycle.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "direction_deleted_port_cocircuit_reassembly_and_root_phase_duality": {
@@ -1113,7 +2231,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "disjoint_antipodal_geodesic_packings_and_independent_short_port_cocircuit_tests": {
@@ -1130,7 +2248,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "edge_free_factorwise_polarities_and_the_maximal_hamming_reduction": {
@@ -1147,7 +2265,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
       "version": 1
     },
     "edge_order_synchronization_and_stability_of_extremal_boundary_colorings": {
@@ -1164,7 +2282,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "endpoint_density_snakes_and_bounded_algebraic_degree": {
@@ -1184,6 +2302,23 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 1
     },
+    "endpoint_symmetric_affine_chambers_and_toroidal_loss_of_antipodal_index": {
+      "composition": {
+        "body_chars": 7348,
+        "composed_through_revision": 7971,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Affine C torus realization of both endpoint root exchanges, reversal action, and vanishing cover obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "endpoint_tournament_factorization_and_monochromatic_orders": {
       "composition": {
         "body_chars": 26034,
@@ -1201,6 +2336,40 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 2
     },
+    "equivariant_bridge_transport": {
+      "composition": {
+        "body_chars": 2932,
+        "composed_through_revision": 7810,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Equivariant sphere-complement zigzag across each colored dimension edge",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "equivariant_component_nerve_map_and_the_fixed_incidence_edge_threshold": {
+      "composition": {
+        "body_chars": 6414,
+        "composed_through_revision": 8167,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Equivariant nerve map and square-zero covering-class criterion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
     "equivariant_square_derivative_galleries_for_arbitrary_port_cycles": {
       "composition": {
         "body_chars": 7752,
@@ -1216,6 +2385,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "equivariant_winding_and_the_bockstein_obstruction": {
+      "composition": {
+        "body_chars": 5126,
+        "composed_through_revision": 7767,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Integral Bockstein winding class and higher obstruction skeleton for opposed face-flag spheres",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "exact_homology_of_global_geodesic_exchange_hexagons": {
@@ -1249,7 +2435,58 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "exchange_completeness_and_product_factorization_of_flags": {
+      "composition": {
+        "body_chars": 5692,
+        "composed_through_revision": 7705,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "General local extension and product decomposition theorems for simple face flags",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "explicit_higher_coherences_for_every_rank_two_type_b_coxeter_relation": {
+      "composition": {
+        "body_chars": 6115,
+        "composed_through_revision": 7748,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-rank second-order cubical homotopies for type-B Coxeter braid and commuting relations",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
+    "external_tournament_scores_canonically_resolve_tetrahedral_symmetry": {
+      "composition": {
+        "body_chars": 3750,
+        "composed_through_revision": 8345,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Coherent exterior-channel simplex interpolation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "extremal_exterior_cube_rigidity_and_terminal_phase_separation": {
@@ -1269,6 +2506,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "extremal_geodesic_blockers_and_exponential_paired_root_stability": {
+      "composition": {
+        "body_chars": 32287,
+        "composed_through_revision": 8554,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Fiber transfer and finite mixed-integer four-cube favorable-root minimum",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "extremal_port_intersections_force_flat_exterior_stars_and_terminal_separation": {
       "composition": {
         "body_chars": 7031,
@@ -1286,6 +2540,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "extreme_switch_face_selectors_and_central_rank_localization": {
+      "composition": {
+        "body_chars": 5219,
+        "composed_through_revision": 7786,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Extreme-switch graph selector and equivariant central-rank localization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "finite_state_affine_resource_galleries_and_paired_type_cancellation": {
       "composition": {
         "composition_version": null,
@@ -1299,7 +2570,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
       "version": 1
     },
     "five_cycle_turn_density_and_six_resource_marked_intersection_theorem": {
@@ -1367,7 +2638,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "folded_cube_cycle_space_presentation_and_antipodal_girth": {
@@ -1404,6 +2675,57 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "forest_monochromatic_endpoint_complexes_collapse_to_turn_graphs": {
+      "composition": {
+        "body_chars": 4972,
+        "composed_through_revision": 8156,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Homotopy equivalence for forest interval posets and star homology",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "formal_switch_deformation_and_the_quadratic_exchange_defect": {
+      "composition": {
+        "body_chars": 5034,
+        "composed_through_revision": 7924,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Formal switch-weighted Freudenthal chains and rank-independent quadratic local exchange formula",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "free_lie_algebra_and_petrie_cycles": {
+      "composition": {
+        "body_chars": 18828,
+        "composed_through_revision": 8114,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Publish previously unconfirmed root-changing wall rank reduction and cubical shadow cancellation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
+      "version": 1
+    },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
         "body_chars": 6586,
@@ -1421,6 +2743,40 @@
       "section_id": "nori_edge_central_carriers",
       "version": 1
     },
+    "full_quadratic_switch_bivectors_preserve_straddling_unit_degree": {
+      "composition": {
+        "body_chars": 3686,
+        "composed_through_revision": 8199,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal switch wedge sign cone and top degree",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
+    "full_quadratic_switch_tensors_admit_rank_two_color_sensitive_convex_fillings": {
+      "composition": {
+        "body_chars": 5890,
+        "composed_through_revision": 8264,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Terminal braid weighted separator for complete quadratic switch bivectors; sharp rank-three failure",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "full_rank_hamming_galleries_permutation_model_and_determinant_transport": {
       "composition": {
         "body_chars": 5752,
@@ -1435,7 +2791,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "fundamental_circuit_intervals_and_reversal_of_matroid_flags": {
+      "composition": {
+        "body_chars": 2798,
+        "composed_through_revision": 8105,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two-ended matroid flat-chain reversal theorem with adjacent-exchange control",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
     "fundamental_circuit_pivots_dual_basis_sweeps_and_faithful_ordered_exchanges": {
@@ -1452,7 +2825,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "fundamental_exchange_forests_and_rank_one_dual_rigidity": {
@@ -1469,7 +2842,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "gauge_critical_switches_and_clustered_witnesses_on_full_paths": {
+      "composition": {
+        "body_chars": 211169,
+        "composed_through_revision": 9251,
+        "composition_version": 55,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-dimensional strict-descent obstruction under maximal switch congestion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "generic_full_geodesics_in_physical_boundary_compatible_nori3_and_affine_smoothing": {
@@ -1503,7 +2893,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "global_petrie_switch_moment_and_local_turn_counting": {
+      "composition": {
+        "body_chars": 161162,
+        "composed_through_revision": 9152,
+        "composition_version": 39,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "All-rank Reed--Muller state-boundary moment theorem and nonaffine local choice simplex obstruction beyond rank three",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
+      "version": 1
+    },
+    "graded_projective_homology_flux_and_its_limits": {
+      "composition": {
+        "body_chars": 5056,
+        "composed_through_revision": 8159,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Verified affine Q7 wall obstruction and chamber loop flux coboundary",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
       "version": 1
     },
     "graphic_matroid_hamilton_path_overlaps_and_random_boundary_pattern_universality": {
@@ -1520,7 +2944,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "graphic_nullity_interval_extraction_and_defect_weighted_port_cocircuit_decoding": {
@@ -1540,6 +2964,57 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "greedy_matroid_fans_and_duality": {
+      "composition": {
+        "body_chars": 3890,
+        "composed_through_revision": 8147,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Connected matroid greedy basis labels have universal degree one and exact dual complement reversal",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
+    "hamilton_orders_as_longest_induced_johnson_paths": {
+      "composition": {
+        "body_chars": 2960,
+        "composed_through_revision": 7886,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Hamilton boundary paths are exactly maximum induced Johnson-graph paths",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "hereditary_reversal_cover_switch_sets_and_deletion_critical_paths": {
+      "composition": {
+        "body_chars": 11595,
+        "composed_through_revision": 8533,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Relative switch integrability and component overlap holonomy for tight witness cycles",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "hereditary_sentinel_word_contraction_and_nori_counterexamples_in_every_dimension_at_least_nine": {
       "composition": {
         "body_chars": 7697,
@@ -1555,6 +3030,23 @@
       },
       "development_version": 1,
       "section_id": "nori_foundations",
+      "version": 1
+    },
+    "homotopy_constant_prefix_carriers_and_unrestricted_degree_transport": {
+      "composition": {
+        "body_chars": 5239,
+        "composed_through_revision": 8362,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Homotopy equivalence of nested positive carriers and top-degree gauge transport",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "independent_direction_recolorings_preserve_low_switch_terminal_alignment": {
@@ -1625,6 +3117,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "interior_exchange_parity_and_endpoint_switch_defects": {
+      "composition": {
+        "body_chars": 5024,
+        "composed_through_revision": 7899,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Switch parity and two-step exchange law, including a flat-square filtration-jump obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "intrinsic_star_statistics_and_quantitative_port_cocircuit_exchange_bounds": {
       "composition": {
         "body_chars": 7935,
@@ -1640,6 +3149,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_rainbow_circuit_geometry",
+      "version": 1
+    },
+    "introduction_one_switch_paths_through_opposed_face_flags": {
+      "composition": {
+        "body_chars": 6280,
+        "composed_through_revision": 7761,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Update the universal assertion to refuted, preserving the original full-strength targets and all established flag geometry.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "introduction_problems_geometry_and_research_objectives": {
@@ -1690,7 +3216,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "layered_boundary_snakes_and_a_dense_rank_sensitivity_barrier": {
@@ -1708,6 +3234,23 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "lie_endpoint_compression_for_filtered_root_wall_variation": {
+      "composition": {
+        "body_chars": 8184,
+        "composed_through_revision": 8108,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Endpoint locality, four-endpoint Dynkin cancellation, universal first switch variation and grade-crossing moment formula",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
       "version": 1
     },
     "lifted_phase_transport_and_two_intersection_splicing_certificates": {
@@ -1741,7 +3284,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "linear_factor_count_path_growth_in_triangle_polarized_hamming_graphs": {
@@ -1758,7 +3301,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
       "version": 1
     },
     "linear_hamming_factor_count_paths_from_weighted_edge_transfer": {
@@ -1775,7 +3318,91 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "linear_threshold_coset_colorings_admit_one_switch_full_paths": {
+      "composition": {
+        "body_chars": 5319,
+        "composed_through_revision": 7583,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Constructive unified theorem for equivariant linear thresholds and compatible monotone aggregations",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "lipschitz_variation_under_exchanges_and_an_unbounded_root_seam": {
+      "composition": {
+        "body_chars": 5451,
+        "composed_through_revision": 7919,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp adjacent-exchange variation bounds and linear jump at root flip",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "local_cycle_integration_and_the_overlap_graph_cohomology_gap": {
+      "composition": {
+        "body_chars": 20069,
+        "composed_through_revision": 8440,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp four-five cycle generation and bounded switch integration",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "local_exchange_axioms_reconstruct_the_two_coloring_classes": {
+      "composition": {
+        "body_chars": 5342,
+        "composed_through_revision": 7567,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Local exchange, cyclic-transport and reversal reconstruction theorems; Coxeter chamber realization",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "local_turn_first_moments_for_unrestricted_antipodal_and_boundary_galleries": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_unification_foundations",
       "version": 1
     },
     "logarithmic_monochromatic_nori3_paths_from_a_self_dual_33_tournament": {
@@ -1809,7 +3436,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "maximum_clique_incidence_roots_and_matroidal_terminal_tournament_paths": {
@@ -1826,7 +3453,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "metric_loop_lifting_and_the_geodesicity_excess_certificate": {
@@ -1843,7 +3470,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "minimum_port_cocircuit_profiles_universal_coordinate_prescription_and_quadratic_independence": {
@@ -1877,7 +3504,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "monochromatic_component_quotients_as_canonical_pointed_cographic_restriction_minors": {
@@ -1894,7 +3521,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "monochromatic_geodesic_endpoint_posets_and_a_global_rank_bounded_target": {
+      "composition": {
+        "body_chars": 8168,
+        "composed_through_revision": 7826,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Global endpoint poset of original monochromatic geodesics; metric-additive order has coherent path decoding, nested cone carriers, explicit reversal-equivariant rank map, and support-preserving root transport.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "monochromatic_prefix_complexes_and_rank_preserving_transport": {
+      "composition": {
+        "body_chars": 10486,
+        "composed_through_revision": 7781,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Contractible Freudenthal prefix-cone carriers, antipodal gluing equivalences, red-edge cone transport, and near-complement obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "monotone_triangle_contractions_and_directional_excess_in_antipodal_turn_cycles": {
@@ -1914,6 +3575,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "multi_root_cech_chains_and_the_switch_filtration": {
+      "composition": {
+        "body_chars": 3825,
+        "composed_through_revision": 7936,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Multi-root filtered Cech chain resolution and proof that its ordinary nerve exceeds the source dimension",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
     "nearly_linear_monochromatic_geodesics_for_acyclic_boundary_3_tournaments": {
       "composition": {
         "body_chars": 12271,
@@ -1929,6 +3607,74 @@
       },
       "development_version": 1,
       "section_id": "nori_seven_coordinate_structure",
+      "version": 1
+    },
+    "nested_positive_prefix_carriers_and_coherent_lower_skeleton_filling": {
+      "composition": {
+        "body_chars": 8644,
+        "composed_through_revision": 8355,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Nested positive cone carriers give coherent lower skeleton and all dimensional Stiefel Whitney top obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "nonbacktracking_color_components_and_the_first_antipodal_chain_equation": {
+      "composition": {
+        "body_chars": 8194,
+        "composed_through_revision": 8151,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Corrected classification of colored endpoint components and first chain equation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "nonlinear_tree_incidence_realization_and_cycle_syndrome_reduction": {
+      "composition": {
+        "body_chars": 87678,
+        "composed_through_revision": 9287,
+        "composition_version": 27,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Clarify that the signed leaf-port trichotomy precedes enforcement of parent-local output equations.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "obstruction_degree_transport_on_the_boolean_two_block_gallery": {
+      "composition": {
+        "body_chars": 3390,
+        "composed_through_revision": 8118,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Connected two-block incidence graph and gauge transport of mod-two top degrees",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
       "version": 1
     },
     "odd_dimensional_port_cycles_square_derivative_rigidity_and_terminal_holes": {
@@ -1948,6 +3694,57 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "odd_dimensional_top_cohomology_cancellation_in_the_bi_monochromatic_seam": {
+      "composition": {
+        "body_chars": 5458,
+        "composed_through_revision": 8242,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Odd-dimensional top-rank parity cancellation and one-degree index strengthening",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "odd_face_folding_two_polarity_certificates_and_transverse_curvature_oscillation": {
+      "composition": {
+        "body_chars": 19026,
+        "composed_through_revision": 8975,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Quantitative antipodal empty-corridor bound: monochromatic codimension-two geodesics force at least twice their dimension many empty neighboring-face roots",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "odd_girth_and_frustration_of_switch_component_quotients": {
+      "composition": {
+        "body_chars": 4142,
+        "composed_through_revision": 8477,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Short odd circuits survive nonswitch contraction and maximum-cut frustration has quantitative lower bounds",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "odd_girth_of_the_monochromatic_component_quotient_and_antipodal_walk_duality": {
       "composition": {
         "body_chars": 14371,
@@ -1965,6 +3762,56 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "odd_walk_characterization_of_the_first_antipodal_chain_lift": {
+      "composition": {
+        "body_chars": 5324,
+        "composed_through_revision": 8163,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Bipartite-double-cover reduction and odd walk criterion for first tower equation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "off_residue_tournaments_remove_the_rank_three_equivariant_filling_obstruction": {
+      "composition": {
+        "composition_version": null,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
+        "has_composition": false,
+        "stale": false,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "one_direction_path_witnesses_and_a_2_sat_closure_reduction": {
+      "composition": {
+        "body_chars": 5872,
+        "composed_through_revision": 9119,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Bounded shared-site 2SAT kernel and fourteen path-pair witnesses",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "orientation_curvature_and_a_canonical_two_port_lift_for_polarized_galleries": {
       "composition": {
         "body_chars": 16648,
@@ -1980,6 +3827,125 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "orientation_gauges_and_a_common_involutive_directed_arc_symmetry": {
+      "composition": {
+        "body_chars": 2631,
+        "composed_through_revision": 7586,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Orientation gauge theorem aligning NORI1 and boundary arc symmetries",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "oriented_switch_plane_charts_and_the_grassmannian_index_obstruction": {
+      "composition": {
+        "body_chars": 6080,
+        "composed_through_revision": 8080,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Oriented-plane local charts and power-of-two Grassmannian index obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "parabolic_character_obstruction_and_the_first_coxeter_one_switch_theorem": {
+      "composition": {
+        "body_chars": 4283,
+        "composed_through_revision": 7593,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uniform parabolic character lemma and common three-slot case",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "parabolic_fixed_space_surplus_and_equivariant_stiefel_fillings": {
+      "composition": {
+        "body_chars": 8756,
+        "composed_through_revision": 8322,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Exact k-minus-two fixed-space surplus; universal local equivariant Grassmannian fillings and anchored tournament symmetry breaking",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "parabolic_syndrome_saturation_by_commuting_exchanges_and_root_slides": {
+      "composition": {
+        "body_chars": 6930,
+        "composed_through_revision": 8365,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Corank-three braid plus cyclic slide and star-shaped example",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "parity_obstructions_without_local_incidence_descent": {
+      "composition": {
+        "body_chars": 3089,
+        "composed_through_revision": 7574,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Matched constructions showing shared-incidence consistency is indispensable",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "pendant_tree_elimination_and_cross_favorability_on_the_interaction_2_core": {
+      "composition": {
+        "body_chars": 29036,
+        "composed_through_revision": 9173,
+        "composition_version": 9,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unicyclic nonlinear pendant-tree closure from one acyclic-facet core",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "penultimate_length_extension_and_parallel_face_endpoint_exclusion": {
@@ -2013,7 +3979,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "permutahedral_prefix_degree_and_universal_product_obstruction": {
+      "composition": {
+        "body_chars": 3744,
+        "composed_through_revision": 8130,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Degree-one centered prefix maps of permutahedra and their product; quadratic switch robustness",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
       "version": 1
     },
     "pointed_lift_duality_and_shortest_port_cocircuits": {
@@ -2064,7 +4047,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "polygonal_rank_two_monodromy_and_exchange_seams": {
+      "composition": {
+        "body_chars": 3439,
+        "composed_through_revision": 7713,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Intrinsic rank-two polygonal exchange relations and square-seam criterion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "polynomial_monochromatic_geodesics_from_sparse_triplewise_exterior_support": {
@@ -2118,6 +4118,125 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "positive_prefix_stiefel_chart_and_the_intrinsic_top_cell_threshold": {
+      "composition": {
+        "body_chars": 4955,
+        "composed_through_revision": 8268,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sphere retract of transversal oriented planes, universal positive-prefix chart, top-cell index threshold",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "primary_cell_antipodal_separation_and_obstruction_parity": {
+      "composition": {
+        "body_chars": 6586,
+        "composed_through_revision": 7692,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Global cellwise antipodal separation theorem and odd primary-obstruction evaluation on projective homology",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "primary_projective_obstruction_and_root_slide_monodromy_in_dimension_simple_coxeter_chains": {
+      "composition": {
+        "body_chars": 7316,
+        "composed_through_revision": 7665,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Primary projective obstruction and Poincare-dual root-slide cycle on residual parabolic cells",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "prismatic_vertex_figures_and_triangle_square_port_transport": {
+      "composition": {
+        "body_chars": 8387,
+        "composed_through_revision": 7967,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "General polygonal port transport and permutahedral limitation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "projective_face_incidences_and_intrinsic_flag_rotation": {
+      "composition": {
+        "body_chars": 5632,
+        "composed_through_revision": 7764,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Record the proved failure of the universal opposed-window assertion while retaining its definition and faithful specializations.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "projective_rainbow_geodesic_cycles_and_three_hit_switch_criticality": {
+      "composition": {
+        "body_chars": 26126,
+        "composed_through_revision": 8560,
+        "composition_version": 8,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Quantitative local swap variance and balanced-case near-monochromatic abundance",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "projective_square_curvature_and_the_antipodal_exchange_disk_identity": {
+      "composition": {
+        "body_chars": 14988,
+        "composed_through_revision": 7723,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Extremal one-square-per-antipodal-exchange-disk rigidity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "quadratic_independence_of_antipodal_geodesic_color_profiles": {
       "composition": {
         "body_chars": 6752,
@@ -2149,7 +4268,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "rainbow_terminal_edge_theorem_for_locally_tournament_ordered_graphs": {
@@ -2183,7 +4302,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "random_smoothing_and_the_failure_of_global_edge_order_purification": {
@@ -2200,7 +4319,75 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "rank_three_coherence_defect_despite_complete_square_fillings": {
+      "composition": {
+        "body_chars": 5896,
+        "composed_through_revision": 8070,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Nonvanishing relative third homology despite flat and filled boundary squares",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "rank_three_convex_obstruction_in_ordinary_boundary_tournaments": {
+      "composition": {
+        "body_chars": 3140,
+        "composed_through_revision": 8085,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Complete finite coloring table, 24-word verification, antiparallel rank-three pair",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "rank_two_prefix_data_reconstructs_the_full_coloring": {
+      "composition": {
+        "body_chars": 3529,
+        "composed_through_revision": 7833,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank-two prefix triangle reconstruction and full monotone path local-to-global condition",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "rank_two_zero_switch_holes_and_their_three_cube_coherence_defect": {
+      "composition": {
+        "body_chars": 11299,
+        "composed_through_revision": 7999,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal projective square class from binomial parity and complete symmetric cocycle classification",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
       "version": 1
     },
     "reconstruction_of_antipodally_odd_edge_colorings_from_local_turn_data": {
@@ -2220,6 +4407,57 @@
       "section_id": "nori_edge_central_carriers",
       "version": 1
     },
+    "rectified_graphs_and_complete_path_decoding": {
+      "composition": {
+        "body_chars": 4899,
+        "composed_through_revision": 7876,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rectified cube and hypersimplex representation with star-alternating path decoder",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "residual_face_descent_barriers_from_complementary_monochromatic_arms": {
+      "composition": {
+        "body_chars": 12952,
+        "composed_through_revision": 7814,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank-weighted sharp descent inequality and unique flat-square gate root-holonomy",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "resolving_affine_reversal_fixed_points_into_type_a_antipodal_boundary_spheres": {
+      "composition": {
+        "body_chars": 9755,
+        "composed_through_revision": 7996,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Root-index cancellation for the normalized distance map",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "reversal_odd_boundary_tournaments_as_pointed_turn_matroids": {
       "composition": {
         "body_chars": 10392,
@@ -2237,6 +4475,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "reversal_odd_quadratic_switch_bivectors_and_exact_switch_rank": {
+      "composition": {
+        "body_chars": 7807,
+        "composed_through_revision": 8016,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Revised scope after rational bivector compression",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "root_basis_star_geometry_and_a_uniform_square_root_path_theorem": {
       "composition": {
         "body_chars": 20034,
@@ -2251,7 +4506,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "root_selection_is_essential_six_vertex_closure_and_a_seven_vertex_obstruction": {
+      "composition": {
+        "body_chars": 5138,
+        "composed_through_revision": 7617,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rooted six-vertex DPLL proof and certified seven-vertex counterexample",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "root_slide_invariant_twisted_switch_filtration_and_uniform_quadratic_exchange_defects": {
+      "composition": {
+        "body_chars": 6413,
+        "composed_through_revision": 7945,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Twisted cyclic switch excess, uniform quadratic Freudenthal exchange defects and gate rigidity",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
       "version": 1
     },
     "root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests": {
@@ -2271,6 +4560,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "rooted_five_vertex_tight_paths_and_mixed_one_factor_hamming_graphs": {
+      "composition": {
+        "body_chars": 8983,
+        "composed_through_revision": 7604,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Added root-intersection gluing theorem and mixed-product compatibility corollaries",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
     "rooted_hamiltonian_windows_and_sharp_random_perturbation_threshold": {
       "composition": {
         "body_chars": 6563,
@@ -2285,7 +4591,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "seam_component_multigraphs_and_monochromatic_localization_of_the_second_obstruction": {
+      "composition": {
+        "body_chars": 3578,
+        "composed_through_revision": 8203,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Refined seam incidence graph and internal monochromatic second-stage homology",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "seam_transgression_for_the_two_color_endpoint_quotient": {
+      "composition": {
+        "body_chars": 4685,
+        "composed_through_revision": 8122,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Seam short cochain sequence and reversal-cover power transgression",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
       "version": 1
     },
     "seven_coordinate_wing_factorization_and_exact_obstruction": {
@@ -2305,6 +4645,40 @@
       "section_id": "nori_seven_coordinate_structure",
       "version": 2
     },
+    "sharp_convex_carriers_for_centered_switch_wedges_on_flag_residues": {
+      "composition": {
+        "body_chars": 4272,
+        "composed_through_revision": 8062,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp universal convex-carrier criterion and rank-two residue fillings",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "sharp_four_symbol_rigidity_for_fixed_switch_positions_on_hamilton_cells": {
+      "composition": {
+        "body_chars": 5513,
+        "composed_through_revision": 8138,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp n=8 cutoff and color-realizable degree-one two-block cells",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
     "sharp_logarithmic_monochromatic_paths_under_bounded_exterior_support": {
       "composition": {
         "body_chars": 17177,
@@ -2322,6 +4696,23 @@
       "section_id": "nori_foundations",
       "version": 1
     },
+    "sharp_rank_three_homology_of_the_alternating_cube_prefix_union": {
+      "composition": {
+        "body_chars": 5684,
+        "composed_through_revision": 8134,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp integral relative rank-two theorem and annular six-triangle decomposition",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
     "sharp_rootwise_random_cube_geodesics_by_singleton_block_second_moments": {
       "composition": {
         "body_chars": 8251,
@@ -2336,7 +4727,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "sharp_spanning_tree_obstruction_to_pointwise_low_switch_freudenthal_coverage": {
+      "composition": {
+        "body_chars": 7979,
+        "composed_through_revision": 8024,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Typographic correction of terminal subset in the canonical tree path",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
       "version": 1
     },
     "sharp_square_derivative_deficits_and_terminal_holes_in_odd_dimensional_cubes": {
@@ -2373,6 +4781,23 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "signed_support_retraction_of_geodesic_endpoint_posets_and_sharp_equivariant_index": {
+      "composition": {
+        "body_chars": 6834,
+        "composed_through_revision": 7980,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Independent all-dimensional signed-support reduction and sharpness proof",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
     "signed_turn_adjacency_spectrum_and_global_cycle_density": {
       "composition": {
         "body_chars": 5977,
@@ -2388,6 +4813,23 @@
       },
       "development_version": 1,
       "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "signed_type_b_chambers_as_paired_symbol_type_a_hamilton_orders": {
+      "composition": {
+        "body_chars": 4946,
+        "composed_through_revision": 7561,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Signed Coxeter chamber embedding of NORI1 into paired-symbol type A",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
     "simultaneous_partition_balancing_and_low_switch_terminal_alignment": {
@@ -2407,6 +4849,40 @@
       "section_id": "nori_codimension_two_switch_induction",
       "version": 1
     },
+    "six_vertex_boundary_one_switch_theorem_from_coxeter_spectra": {
+      "composition": {
+        "body_chars": 6489,
+        "composed_through_revision": 7621,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Computer-assisted spectral proof of six-vertex boundary one-switch closure with extremal eigenspace exclusion",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "smith_transfer_equivalence_and_the_canonical_second_tower_obstruction": {
+      "composition": {
+        "body_chars": 4445,
+        "composed_through_revision": 8196,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Smith transfer proof of tower-index equivalence and Tate second obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
     "spanning_one_turn_gallery_conjecture_and_opposite_terminal_monochromatic_packing": {
       "composition": {
         "body_chars": 10985,
@@ -2417,6 +4893,23 @@
         },
         "has_composition": true,
         "source_note": "Revised spanning one-turn boundary and NORI1 unification, precise marked-cocircuit equivalence, opposite-terminal two-arm packing theorem, and exhaustive six-vertex cyclic obstruction.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroid_generalizations_conjectures",
+      "version": 1
+    },
+    "spectral_cosystolic_separation_of_cube_and_boundary_switch_spaces": {
+      "composition": {
+        "body_chars": 3301,
+        "composed_through_revision": 8470,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Lower signed-spectral switch bound and sharp cube comparison",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2438,7 +4931,24 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "square_carrier_obstructions_and_switch_filtration": {
+      "composition": {
+        "body_chars": 6882,
+        "composed_through_revision": 7868,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank-two four-root carrier homology and full-rank switch-count gluing filtration",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
       "version": 1
     },
     "square_curvature_gain_in_cyclic_exchange_averaging_and_reversal_holonomy": {
@@ -2458,6 +4968,23 @@
       "section_id": "nori_edge_central_carriers",
       "version": 1
     },
+    "square_defects_and_path_order_holonomy_in_dimension_simple_chain_lifts": {
+      "composition": {
+        "body_chars": 12599,
+        "composed_through_revision": 7653,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Perfect-matching obstruction under boundary root-slide repairs",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "star_bundle_rigidity_and_the_weighted_monochromatic_component_quotient": {
       "composition": {
         "body_chars": 5961,
@@ -2475,6 +5002,23 @@
       "section_id": "nori_matroid_rainbow_circuit_geometry",
       "version": 1
     },
+    "star_interaction_graphs_force_paired_roots_in_arbitrary_dimension": {
+      "composition": {
+        "body_chars": 26694,
+        "composed_through_revision": 8643,
+        "composition_version": 10,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Star projection by Boolean Poincare and a dimension-independent transverse square-influence obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "star_triangle_exchange_components_and_the_repeated_resource_barrier": {
       "composition": {
         "body_chars": 6337,
@@ -2489,7 +5033,75 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "stiefel_and_grassmannian_obstruction_of_a_straddling_switch_plane": {
+      "composition": {
+        "body_chars": 5168,
+        "composed_through_revision": 8191,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Variable-rank straddling switch plane represents generator of top Stiefel and Grassmannian homotopy",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
+    "switch_filtered_rees_chains_and_root_contraction": {
+      "composition": {
+        "body_chars": 6611,
+        "composed_through_revision": 7928,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "True switch-filtered Rees chains, apex-preserving filtered contraction, and one-edge state update",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "systolic_cycles_characterize_complete_cube_geodesics": {
+      "composition": {
+        "body_chars": 3770,
+        "composed_through_revision": 7881,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Shortest essential rectified-cube cycles are complete antipodal geodesics",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "template_free_star_colorings_and_limits_of_matching_induction": {
+      "composition": {
+        "body_chars": 2110,
+        "composed_through_revision": 8982,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Probabilistic counterexamples to template containment on connected interaction stars",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "terminal_set_growth_for_matroid_sliding_window_galleries": {
@@ -2506,7 +5118,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "ternary_hamming_turn_conservation_and_linear_paths": {
@@ -2523,7 +5135,58 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "tetrahedral_parity_and_rank_three_convex_switch_obstruction": {
+      "composition": {
+        "body_chars": 3396,
+        "composed_through_revision": 8088,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Tetrahedral 24-flag bad residue with canceling extreme wedges and common-factor plane sphere",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "tetrahedral_parity_tensor_obstruction": {
+      "composition": {
+        "body_chars": 4508,
+        "composed_through_revision": 8289,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Klein-four symmetry cancellation of full quadratic switch bivectors",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "the_antipodal_line_graph_cover_and_one_crossing_basis_cycles": {
+      "composition": {
+        "body_chars": 5738,
+        "composed_through_revision": 7860,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "NORI1 equivalence to one-crossing essential basis cycles in antipodal line-graph double cover",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
       "version": 1
     },
     "the_antipodal_line_graph_cover_and_weighted_rainbow_circuits": {
@@ -2577,6 +5240,57 @@
       "section_id": "nori_unification_foundations",
       "version": 1
     },
+    "the_oriented_interval_torus_and_alternating_puncture_degrees": {
+      "composition": {
+        "body_chars": 6758,
+        "composed_through_revision": 8010,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Intrinsic punctured-torus topology of ordered cube interval posets",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "three_block_plucker_sign_monotonicity_and_switch_confinement": {
+      "composition": {
+        "body_chars": 3400,
+        "composed_through_revision": 8257,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Three-block prefix-wedge universal sign and switch-confinement obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "three_cube_chain_homotopy_for_every_adjacent_geodesic_exchange": {
+      "composition": {
+        "body_chars": 3308,
+        "composed_through_revision": 7735,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Uniform three-cube correction for adjacent full-geodesic exchanges",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
     "three_matroid_hamiltonian_galleries_and_bounded_cost_block_reversal": {
       "composition": {
         "body_chars": 6650,
@@ -2591,7 +5305,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
       "version": 1
     },
     "three_turn_boundary_reconstruction_and_legal_turn_contraction": {
@@ -2611,6 +5325,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "total_positivity_and_the_safe_cut_cone_of_a_quadratic_switch_bivector": {
+      "composition": {
+        "body_chars": 4537,
+        "composed_through_revision": 8246,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Order-two total positivity of Brownian bridge Gram kernel and zero-free cone of contractions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "tournament_interleaving_and_functional_dependency_geodesics": {
+      "composition": {
+        "body_chars": 15903,
+        "composed_through_revision": 9308,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Proved quotient projection and one-hole minimal obstruction reduction, supplying an all-corank induction target.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
     "transitive_star_terminal_bounds_for_spectral_resource_paths": {
       "composition": {
         "body_chars": 2687,
@@ -2625,7 +5373,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "transverse_bouquet_smoothing_and_phase_preserving_cocircuit_amalgamation": {
@@ -2645,6 +5393,40 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "transverse_curvature_oscillation_along_near_spanning_monochromatic_geodesics": {
+      "composition": {
+        "body_chars": 9520,
+        "composed_through_revision": 7853,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "One-sided blue Freudenthal exchange defect equals transverse curvature along every red near-spanning corridor",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
+    "triangle_square_complex_and_antipodal_cohomology": {
+      "composition": {
+        "body_chars": 6559,
+        "composed_through_revision": 7865,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Star-triangle and cube-square complex is simply connected; NORI1 is the unique nonzero quotient cover class",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
     "triangle_square_rigidity_of_canonical_hamming_resource_matroids": {
       "composition": {
         "body_chars": 8474,
@@ -2659,7 +5441,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
       "version": 1
     },
     "triangular_turns_and_resource_path_growth": {
@@ -2676,24 +5458,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
-    "twisted_and_periodic_gallery_cut_calculus_for_cubes_and_boundary_tournaments": {
+    "truncated_equivariant_chain_transfers_and_the_bockstein_obstruction": {
       "composition": {
-        "body_chars": 8821,
-        "composed_through_revision": 7368,
-        "composition_version": 2,
+        "body_chars": 5501,
+        "composed_through_revision": 8099,
+        "composition_version": 1,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Adjacent permutation-exchange curvature bounds for both cyclic gallery systems",
+        "source_note": "Augmented chain-map Bockstein criterion on the half-dimensional type-A Coxeter skeleton",
         "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "twisted_and_periodic_gallery_cut_calculus_for_cubes_and_boundary_tournaments": {
+      "composition": {
+        "body_chars": 13572,
+        "composed_through_revision": 8308,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Common switch-only covering cohomology and cut-criticality for unrestricted cube and boundary classes; permit historical inherited vocabulary",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
       "version": 1
     },
     "twisted_cycle_reflection_and_the_six_resource_one_turn_theorem": {
@@ -2713,6 +5512,23 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "twisted_involution_stabilizers_and_dyadic_block_actions": {
+      "composition": {
+        "body_chars": 4452,
+        "composed_through_revision": 8399,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal odd-color stabilizer theorem and sharp dyadic separation",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
     "two_color_kneser_stability_and_sharp_middle_rank_reachability_bounds": {
       "composition": {
         "body_chars": 6654,
@@ -2727,7 +5543,75 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "two_color_prefix_carriers_and_universal_root_transport": {
+      "composition": {
+        "body_chars": 16349,
+        "composed_through_revision": 8027,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unfiltered equivariant flatness admits color-independent edge-star countermodel",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "two_color_rank_jumps_and_the_half_dimensional_reversal_obstruction": {
+      "composition": {
+        "body_chars": 6509,
+        "composed_through_revision": 8043,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharp rank-jump theorem and improved half-dimensional antipodal target",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "two_end_localization_of_second_switch_chain_extensions": {
+      "composition": {
+        "body_chars": 7047,
+        "composed_through_revision": 7650,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Acyclic-carrier extension over all two-end-stable Coxeter cells; precise remaining parabolic support",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_filtered_chains_obstructions",
+      "version": 1
+    },
+    "two_hub_selector_obstruction_and_cross_hub_path_interleaving": {
+      "composition": {
+        "body_chars": 23311,
+        "composed_through_revision": 8913,
+        "composition_version": 7,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Sharpness audit: the 36-favorable/16-paired witness proves the nine-sixteenths favorable constant; sharpness of the one-eighth paired bound remains unproved",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
       "version": 1
     },
     "two_path_connector_theorem_for_all_bipointed_cocircuit_sectors": {
@@ -2778,7 +5662,58 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
+      "version": 1
+    },
+    "two_step_bi_monochromatic_diamonds_and_splitting_of_the_top_rank_reversal_cover": {
+      "composition": {
+        "body_chars": 3450,
+        "composed_through_revision": 8232,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Rank-two bi-monochromatic extension and top-seam parity splitting",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
+      "version": 1
+    },
+    "type_d_chambers_as_spanning_geodesic_trees_and_disjoint_square_pivots": {
+      "composition": {
+        "body_chars": 17933,
+        "composed_through_revision": 8050,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Root-slide orbit multiset is preserved at highest-ranked chamber exchanges",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
+      "version": 1
+    },
+    "type_d_common_refinement_of_rooted_freudenthal_triangulations": {
+      "composition": {
+        "body_chars": 3618,
+        "composed_through_revision": 7903,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Common type-D source complex for all rooted Freudenthal carriers and first-edge type-B flag pairing",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_d_trees_petrie_algebra",
       "version": 1
     },
     "unbounded_mandatory_color_changes_from_multilevel_local_minima": {
@@ -2832,6 +5767,74 @@
       "section_id": "nori_matroid_generalizations_conjectures",
       "version": 1
     },
+    "universal_path_cross_favorability_by_a_66_state_finite_induction": {
+      "composition": {
+        "body_chars": 33067,
+        "composed_through_revision": 9200,
+        "composition_version": 10,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Equality classification for the eight-failure shared-site bound",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "universal_path_local_cross_favorability_66_core_finite_induction": {
+      "composition": {
+        "body_chars": 9995,
+        "composed_through_revision": 9068,
+        "composition_version": 4,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Boundary-face counterexample delimiting path-to-cycle induction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "universal_petrie_shift_on_maximal_face_flags": {
+      "composition": {
+        "body_chars": 5488,
+        "composed_through_revision": 7697,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal suffix-overlap theorem and cyclic switch variation on simple-polytope flags",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "universal_positive_prefix_collisions_and_global_parity": {
+      "composition": {
+        "body_chars": 14315,
+        "composed_through_revision": 8387,
+        "composition_version": 3,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Universal fixed-prefix sharpness benchmark and complete local degree one",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
     "universal_three_direction_edge_color_prescription": {
       "composition": {
         "body_chars": 4585,
@@ -2863,7 +5866,41 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_hamming_polarity_twisted_gallery_transport",
+      "version": 1
+    },
+    "universal_variable_prefix_degree_on_two_block_cells": {
+      "composition": {
+        "body_chars": 4054,
+        "composed_through_revision": 8142,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Every variable-rank straddling pair has canonical boundary degree one",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_hamilton_residue_degree_matroid_fans",
+      "version": 1
+    },
+    "unused_coordinate_sections_localize_reversal_index_to_monochromatic_supports": {
+      "composition": {
+        "body_chars": 2477,
+        "composed_through_revision": 8187,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Unused-direction sign sections and simultaneous coverage theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_freudenthal_carriers_equivariant_topology",
       "version": 1
     },
     "weighted_detour_gluing_and_matroidal_hamming_density": {
@@ -2880,7 +5917,7 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
@@ -2897,11 +5934,28 @@
         "stale_dependencies": []
       },
       "development_version": 1,
-      "section_id": "nori_matroid_generalizations_conjectures",
+      "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "zigzag_comparison_complexes_and_the_antipodal_sphere_of_hamilton_galleries": {
+      "composition": {
+        "body_chars": 6446,
+        "composed_through_revision": 7553,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Independent dual-cone nerve theorem and positive-cone obstruction",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     }
   },
-  "toolkit_count": 34,
+  "toolkit_count": 35,
   "universal_document_versions": {
     "guide": 51,
     "reflexes": 26,
