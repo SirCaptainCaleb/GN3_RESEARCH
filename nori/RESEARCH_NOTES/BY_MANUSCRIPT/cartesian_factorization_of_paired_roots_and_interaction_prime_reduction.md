@@ -3,3 +3,4 @@
 Sidecar only; no note body is included in the mathematical manuscript.
 
 - [Closure target: arbitrary rooted-tree feedback cores](../note_52a4e86281f8662364985427.md) — active/conjectured
+- [Exponentially sparse antipodal reachability in connected legal colorings](../note_nori_affine_connected_sparse_antipodal_root_20261016.md) — active/proved

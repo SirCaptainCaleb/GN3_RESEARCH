@@ -30,4 +30,5 @@ Editorial retirement preserves entire proof texts in notes and original exact co
 - [Disjoint monochromatic terminal sets for neighboring affine tree colorings](note_7917ed35754f3a1aa1845e98.md) -> root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests (source composition v3)
 - [Paired-dimension colorings give a low-index global endpoint quotient](note_cfb2ea26b51b2a8827e349cd.md) -> monochromatic_geodesic_endpoint_posets_and_a_global_rank_bounded_target (source composition v1)
 - [Paired-start exact criterion for NORI1 as a unification toy model](note_antipodal_paired_start_nori1_toy_unification_probe.md) -> antipodal_multifacet_bridge_and_seven_coordinate_universality (source composition v2)
+- [Sharp half-dimensional face barrier and complementary one-detour caps](note_b66c53fabb05bd80fde3cd28.md) -> zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect (source composition v12)
 - [Two-switch lifting patterns for antipodal diagonal compression](note_diagonal_compression_two_switch_lifting_patterns_20261012.md) -> antipodal_diagonal_compression_and_local_face_certificates (source composition v1)

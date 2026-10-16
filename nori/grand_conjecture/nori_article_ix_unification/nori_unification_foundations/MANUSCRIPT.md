@@ -104,7 +104,7 @@ This is well defined because it ignores bit \(x_i\), and \(c_i(\bar x)=1-c_i(x)\
 \[
 b_k=r+x_{\pi_k}+k-1\pmod2.
 \]
-Therefore \(b_k\ne b_{k+1}\) precisely when the two corresponding bits of \(x\) are equal. A permutation minimizing switches alternates the zero and one entries of \(x\) as long as possible; the surplus of the majority bit forces exactly \(\max\{0,|n-2w|-1\}\) neighboring equal pairs. \(\square\)
+Therefore \(b_k\ne b_{k+1}\) precisely when the two corresponding bits of \(x\) are equal. A permutation minimizing switches alternates the zero and one entries of \(x\) as long as possible; the surplus of the majority bit forces precisely \(\max\{0,|n-2w|-1\}\) neighboring equal pairs. \(\square\)
 
 In this coloring, roots admitting a one-switch full geodesic have weights \(m-1,m,m+1\), while roots admitting a monochromatic full geodesic have weight \(m\). In particular every full geodesic from \(0^n\), regardless of direction order, has \(n-1\) switches. Root selection from \(0^n\) requires changing at least \(m-1\) root bits to find a one-switch path; bounded-radius root repair is insufficient.
 
@@ -115,6 +115,57 @@ Article IX already establishes the antipodal cyclic-rotation identity for NORI1.
 Thus both full-strength targets can be formulated as **small cyclic variation of overlapping complete paths**. Adjacent exchanges alter only bounded intervals of the cyclic label word. Nevertheless strict local descent fails: at cube root \(0^n\), adjacent direction swaps and single root slides preserve the high variation \(n-1\), although elsewhere \(D=1\). A successful common selection theorem needs global root and ordering compatibility.
 
 The NORI1 cyclic identity is already proved in Article IX; Theorems 1 and 2 and the plateau obstruction are detailed in research notes note_a31f3ced5651f1da607b547c, note_52fd24abbc3549954285b0a5, and note_4faa19538adf3c3d215f274d, all attached to Article IX. No unified long-path theorem is asserted.
+
+#### Balanced lifts preserve a linear rootwise switch obstruction
+
+Fix even \(d\ge2\), and take the parity coloring from Theorem 2,
+\(f_i(x)=\sum_{j\ne i}x_j\pmod2\).
+Its complementary paired lift \(C\) on \(Q_{2d}\) is
+\[
+C_i(x,y)=f_i(x),\qquad
+C_{d+i}(x,y)=1+f_i(x),\qquad 1\le i\le d.
+\tag{CV1}
+\]
+This is a legal antipodally odd vertex-balanced coloring: paired incident edge colors are complementary at every vertex. Every face retaining a union of complete free-direction pairs is balanced.
+
+**Theorem (linear rootwise switch obstruction).** For every vertex \(z=(0^d,y)\) and every direction-simple path \(P\) rooted at \(z\), if \(P\) has length \(\ell\) and \(s\) changes in its temporal color word, then
+\[
+\boxed{\ell\le d+s+1.}\tag{CV2}
+\]
+In particular, every full antipodal geodesic rooted at \(z\) has at least \(d-1\) switches; a rooted direction-simple path with at most one switch has length at most \(d+2\). Therefore paths with \(o(d)\) switches from these roots have length at most \(d+o(d)\), while the cube dimension is \(2d\).
+
+*Proof.* Delete from \(P\) every step in a new direction \(d+i\), leaving \(r\) steps in old directions. Since each old direction is used at most once and the old vertex begins at \(0^d\), immediately before the \(k\)-th remaining step precisely \(k-1\) old bits have been flipped and the bit of the current direction is still zero. Its color is therefore
+\[
+f_{i_k}(x)=k-1\pmod2.
+\]
+Thus the subsequence of old-step colors alternates \(0101\cdots\), and has \(r-1\) switches for \(r\ge1\). Deleting entries from a binary word cannot increase the number of switches, so \(r\le s+1\); this is also true for \(r=0\). The path uses at most \(d\) new directions, yielding \(\ell\le d+r\le d+s+1\). Setting \(\ell=2d\) proves the full-geodesic claim. \(\square\)
+
+This gives arbitrarily large balanced, paired-face-balanced legal colorings in which no path beginning at a specified root can simultaneously be near spanning and have sublinear switch count. The underlying parity coloring still has monochromatic full geodesics at other roots. Hence existential root selection is indispensable in any asymptotic low-switch route to unrestricted NORI1.
+
+
+**Sharpness of the full-geodesic rooted switch bound.** In the coloring (CV1), the minimum switch count among all full antipodal geodesics starting at \((0^d,y)\) is \(d-1\) for every even \(d\ge2\) and every \(y\). Thus
+\[
+\boxed{\min_{\pi\in S_{2d}}\operatorname{sw}_C(P((0^d,y),\pi))=d-1.}\tag{CV3}
+\]
+
+*Proof.* The lower bound is (CV2). For the upper bound traverse dimensions in the order
+\[
+1,d+1,\ 2,d+2,\ \ldots,\ d-2,2d-2,\quad
+d-1,\ 2d,\ 2d-1,\ d.
+\tag{CV4}
+\]
+When \(d=2\), the initial repeated pairs are absent and (CV4) is \((1,4,3,2)\). All \(2d\) directions occur once.
+
+The old directions occur in increasing order and their temporal colors alternate, with old step \(i\) colored \(i-1\bmod2\). For \(1\le i\le d-2\), the new direction \(d+i\) immediately follows old step \(i\), at which point \(i\) old bits have been flipped, including bit \(i\). Its color is
+\(1+f_i(x)=1+(i-1)=i\bmod2\),
+which equals the color of old step \(i+1\).
+
+After old step \(d-1\), the new direction \(2d\) has color
+\(1+f_d(x)=1+(d-1)=0\bmod2\),
+matching old step \(d-1\). The next step \(2d-1\) has color
+\(1+f_{d-1}(x)=1+(d-2)=1\bmod2\),
+matching the final old step \(d\). Every inserted new-direction edge therefore belongs to one of the two neighboring constant-color runs. No additional switches are created, and the full path has the \(d-1\) switches already present in its alternating old-direction subsequence. \(\square\)
+
 
 ### Fixed-order freedom and coupled root-order selection
 
@@ -185,3 +236,138 @@ which decays faster than exponentially.
 Both motivating families can possess a good complete path while suitable dimension or vertex orders are rare. Their restrictions to a *frozen order* allow extensive independent prescriptions, so neither choosing a root after freezing the order nor selecting a random order is a universal method. A common topological selection theorem must exploit the *overlaps among different complete permutations*, together with root changes in NORI1; its proof cannot rely on favorable behavior of a predetermined chamber. This is an obstruction to proposed selection methods, not an existence proof of the full common conjecture.
 
 Research note with expanded comparisons: note_d7af56d7da1b8654fcf6a404.
+
+#### Even-root path packets and two-row adjacent-swap transport
+
+This establishes a full and economical state model for **arbitrary** antipodally odd cube-edge colorings. No affine, dependency, or low-switch hypotheses are assumed.
+
+Fix \(n\ge2\), a dimension order \(\pi=(i_0,\ldots,i_{n-1})\), and put \(E_n=\{x\in\mathbb F_2^n:\sum_jx_j=0\pmod2\}\). For \(x\in E_n\) let \(W_x^\pi\in\{0,1\}^n\) be the edge-color word of the rooted geodesic that traverses \(\pi\) from \(x\). The **packet matrix** is \(W^\pi=(W_x^\pi)_{x\in E_n}\).
+
+**Theorem 1 (path partition and packet realization).** For fixed \(\pi\), the rooted geodesics \(\{P_x^\pi:x\in E_n\}\) partition the undirected edges of \(Q_n\). A packet matrix \(W=(W_x(k))\) is the matrix of an antipodally odd coloring if and only if, for every \(k\) and even root \(x\),
+\[
+\boxed{W_{\rho_k(x)}(k)=1-W_x(k),\qquad
+\rho_k(x)=\begin{cases}\bar x,&n\text{ even},\\
+\bar x\oplus e_{i_k},&n\text{ odd}.
+\end{cases}} \tag{PK1}
+\]
+For \(n\ge2\), every \(\rho_k\) is a fixed-point-free involution of \(E_n\). There are \(n2^{n-2}\) freely chosen packet entries, one per antipodal edge pair; there are no additional cross-column constraints.
+
+*Proof.* Fix an undirected direction-\(i_k\) edge. Its two prospective roots in the order-\(\pi\) path family are its two endpoints toggled by the preceding prefix \(\{i_0,\ldots,i_{k-1}\}\). These roots differ in one bit, so precisely one belongs to \(E_n\). This proves partition and unrestricted realization of undirected-edge colorings.
+
+If \(n\) is even, antipodal complementation preserves root parity and sends the entire path \(P_x^\pi\) to \(P_{\bar x}^\pi\), making corresponding edge colors opposite. If \(n\) is odd, the antipodal image of a direction-\(i_k\) edge of \(P_x^\pi\) lies on \(P_{\bar x\oplus e_{i_k}}^\pi\), traversed from its other endpoint. These are the two relations (PK1). Conversely, each edge and its antipode are represented in the partition by these two specified packet entries, so (PK1) is sufficient. The involutions have no fixed points since \(n\ge2\). \(\square\)
+
+**Theorem 2 (synchronized two-row square exchange).** Let \(\pi'\) be obtained from \(\pi\) by swapping successive directions \(a=i_k,b=i_{k+1}\), and let \(z=e_a\oplus e_b\). For every even root \(x\), its new word is unchanged outside positions \(k,k+1\), while
+\[
+\boxed{
+\bigl(W_x^{\pi'}(k),W_x^{\pi'}(k+1)\bigr)
+=\bigl(W_{x\oplus z}^{\pi}(k+1),
+       W_{x\oplus z}^{\pi}(k)\bigr).
+}\tag{PK2}
+\]
+Thus each adjacent direction transposition acts on \(W\) by exchanging and reversing the two-letter blocks at the two packet rows \(x,x\oplus z\). The rows are paired by a fixed-point-free involution of \(E_n\). The complete family of packet matrices over all \(\pi\) is obtained from any one realized packet matrix by these deterministic reversible gates.
+
+*Proof.* Let \(S\) be the direction prefix preceding \(a,b\), and \(v=x\oplus\mathbf1_S\). Path \(P_x^\pi\) uses the square route \(v\to v\oplus e_a\to v\oplus e_a\oplus e_b\). Path \(P_{x\oplus z}^\pi\) uses the opposite route \(v\oplus z\to v\oplus e_b\to v\). After swapping \(a,b\), the first rooted path uses the opposite route in reverse and hence reads the old second path's two colors in reverse order. The other positions read the same undirected edges as before. This proves (PK2). Every permutation arises from adjacent transpositions, and both sides of (PK2) are defined by the same underlying coloring. \(\square\)
+
+**Corollary 3 (precise unrestricted closure reformulation).** NORI1 holds in dimension \(n\) if and only if **every** binary packet matrix satisfying (PK1), after some sequence of gates (PK2), has a row with at most one adjacent color change. The at-most-one-change condition suffices because the antipodal root-slide identity turns a one-change word into a monochromatic word. Conversely, if a coloring has a monochromatic geodesic from an odd root, then one cyclic root slide reaches an even root with at most one change; a monochromatic geodesic from an even root is already a witness. Thus all starting-root parities are represented.
+
+**Theorem 4 (order-specific switch moment from local turns).** Let \(\epsilon(v)\) denote Hamming-weight parity. For two distinct directions \(a,b\), set
+\[
+D_{ab}^{p}
+=\sum_{\epsilon(v)=p}
+ \mathbf1\{c_a(v)\ne c_b(v\oplus e_a)\},\qquad p\in\{0,1\}.
+\tag{PK3}
+\]
+Then \(D_{ab}^p=D_{ba}^p\). For every dimension order \(\pi=(i_0,\ldots,i_{n-1})\),
+\[
+\boxed{
+\sum_{x\in E_n}\operatorname{sw}(W_x^\pi)
+=\sum_{k=0}^{n-2}D_{i_k,i_{k+1}}^{\,k\bmod2}.
+}\tag{PK4}
+\]
+Moreover,
+\[
+D_{ab}^{p}
+=\sum_{\epsilon(v)=1-p}
+ \mathbf1\{c_a(v)\ne c_b(v)\}. \tag{PK5}
+\]
+If \(n\) is odd and the coloring is antipodally odd, then \(D_{ab}^{0}=D_{ab}^{1}\). Consequently for odd \(n\), minimizing the average switch count over fixed direction orders is the minimum-weight Hamiltonian **path** problem on the complete direction graph with symmetric edge weights \(D_{ab}=D_{ab}^0\); for even \(n\), it is the analogous alternating-parity cost along the Hamiltonian path.
+
+*Proof.* For the order-\(\pi\) path rooted at even \(x\), the vertex immediately before the successive \(a,b\) steps equals \(v=x\oplus\mathbf1_{\{i_0,\ldots,i_{k-1}\}}\), which ranges over every vertex of parity \(k\bmod2\) as \(x\) ranges over \(E_n\). The two encountered colors are \(c_a(v),c_b(v\oplus e_a)\), proving (PK4). Replacing \(v\) with \(v\oplus e_a\) gives (PK5), since an undirected direction-\(a\) edge has \(c_a(v\oplus e_a)=c_a(v)\). Replacing \(v\) with \(v\oplus e_a\oplus e_b\) shows that the direction-reversed comparison is the same, proving symmetry. If \(n\) is odd, antipodal complementation exchanges the two vertex parity classes and complements both incident edge colors, leaving their disagreement unchanged, so the two weights coincide. \(\square\)
+
+**Corollary 5 (weighted order certificate).** If some direction order satisfies
+\[
+\sum_{k=0}^{n-2}D_{i_k,i_{k+1}}^{k\bmod2}<2^n,
+\tag{PK6}
+\]
+then its \(2^{n-1}\) even-root packet words include a word with at most one switch and NORI1 holds for that coloring. Thus any hypothetical bad coloring must make every alternating-parity Hamiltonian path have cost at least \(2^n\). For odd \(n\), these are ordinary symmetric Hamiltonian-path costs with weights determined solely by bichromatic turns at cube vertices.
+
+*Proof.* If every packet word had at least two switches, their sum would be at least \(2|E_n|=2^n\), contradicting (PK6). Apply Corollary 3. \(\square\)
+
+**Scope.** The packet gate is a full realization model, not a local proof of existence: there are arbitrary antiperiodically constrained binary matrices with no constant row before applying gates. The new information is that all inter-order dependencies are captured by a universal, reversible two-row transport rule (PK2), and that its first-switch moment has the closed local-turn formula (PK4). No claim that the weighted Hamiltonian-path criterion always holds is made; for random legal colorings its costs are typically much larger than the threshold.
+
+
+#### The universal incident-color metric and spanning-tree closure certificate
+
+The even-root packet identity (PK4) has a simpler all-root version, valid for **arbitrary binary undirected edge colorings**, whether or not they are antipodally odd.
+
+For every cube vertex \(v\) and direction \(i\), let \(c_i(v)\in\{0,1\}\) denote the color of the incident direction-\(i\) edge. For distinct directions \(i,j\), define
+\[
+d_c(i,j)=2^{-n}|\{v\in Q_n:c_i(v)\ne c_j(v)\}|,\qquad
+d_c(i,i)=0. \tag{IM1}
+\]
+Each direction thus has a binary signature \((c_i(v))_{v\in Q_n}\); \(d_c\) is its normalized Hamming pseudometric. In particular it is symmetric, nonnegative, and satisfies the triangle inequality. It may identify two directions whose signatures agree.
+
+**Theorem (fixed-order switch identity).** For every direction order \(\pi=(i_0,\ldots,i_{n-1})\) and uniform starting vertex \(X\in Q_n\),
+\[
+\boxed{\mathbb E_X\,\operatorname{sw}(W_X^\pi)
+=\sum_{k=0}^{n-2}d_c(i_k,i_{k+1}).} \tag{IM2}
+\]
+
+*Proof.* Immediately before traversing successive directions \(a=i_k\) and \(b=i_{k+1}\), the current vertex is \(V=X\oplus\mathbf1_{\{i_0,\ldots,i_{k-1}\}}\). Uniformity of \(X\) makes \(V\) uniform over all vertices. The two edge colors are \(c_a(V)\) and \(c_b(V\oplus e_a)\). Changing variables to \(Y=V\oplus e_a\), the first color becomes \(c_a(Y)\), since direction-\(a\) edge colors ignore toggling bit \(a\), while the second becomes \(c_b(Y)\). Thus the expected switch indicator at the \(k\)-th boundary is \(d_c(a,b)\), independently of the other entries of \(\pi\). Sum over all boundaries. \(\square\)
+
+This identity holds without antipodality and without the packet parity restriction. For antipodally odd \(c\), it is the average of the two parity-resolved packet identities (PK4).
+
+**Corollary (metric Hamiltonian-path closure).** Suppose \(c\) is antipodally odd. If the complete weighted graph on the directions, with edge lengths \(d_c(i,j)\), has a Hamiltonian path of total weight less than two, then \(c\) admits a monochromatic full antipodal geodesic.
+
+*Proof.* Use that Hamiltonian path as the direction order. By (IM2), the average over roots of the nonnegative integer number of switches is less than two. Some root has at most one switch, which root-slides to a monochromatic full path by antipodal oddness. \(\square\)
+
+**Theorem (spanning-tree certificate).** Suppose \(c\) is antipodally odd. Let \(T\) be any spanning tree on the \(n\) directions, with weight \(w(T)=\sum_{ij\in T}d_c(i,j)\) and weighted tree diameter
+\[
+\operatorname{diam}(T)=\max_{u,v}\operatorname{dist}_T(u,v).
+\]
+If
+\[
+\boxed{2w(T)-\operatorname{diam}(T)<2,} \tag{IM3}
+\]
+then \(c\) has a monochromatic antipodal geodesic. In particular \(w(T)<1\) suffices.
+
+*Proof.* Choose tree vertices \(u,v\) separated by a tree-diameter path. Traverse the tree starting at \(u\) and ending at \(v\), visiting every edge outside that path twice and every edge on it once. The walk has length \(2w(T)-\operatorname{diam}(T)\). List the tree vertices in their order of first encounter along this walk and shortcut repeated vertices, preserving the final destination when necessary. By the triangle inequality, one obtains a Hamiltonian path through all directions whose length is at most that of the walk. If (IM3) holds, apply the preceding corollary. \(\square\)
+
+**Corollary (necessary metric expansion in a hypothetical counterexample).** If an antipodally odd coloring has no monochromatic full geodesic, then every Hamiltonian direction path has \(d_c\)-length at least two and, for every spanning tree \(T\),
+\[
+\boxed{2w(T)-\operatorname{diam}(T)\ge2.} \tag{IM4}
+\]
+In particular every minimum spanning tree has weight at least one. These are necessary conditions, not a contradiction.
+
+**Scope and provenance of the idea.** The pseudometric is not imposed: it arises directly by viewing each direction's incident-edge colors as a binary vector. The identity (IM2) is an unrestricted combinatorial first-moment formula. It yields a polynomial-time sufficient certificate through tree weights, while the full Hamiltonian path minimization can be harder. Random or highly dispersed direction signatures can make all relevant path lengths much larger than two, so the metric criterion is not expected to prove NORI1 by itself. Its value is an explicit test connecting local vertex color structure to complete geodesic orders, with no unproved gluing step.
+
+
+#### Permutation-reader witness abundance and a first-moment limitation
+
+For any derangement \(\sigma\) of the direction set and any fixed signs \(\alpha_i\), the coloring \(c_i(x)=x_{\sigma(i)}+\alpha_i\) is antipodally odd. Fix any direction order \(\pi=(i_0,\ldots,i_{n-1})\). Its color word from root \(x\) is
+\[
+W_x^\pi(k)=x_{\sigma(i_k)}+\alpha_{i_k}
++\mathbf1_{\{\sigma(i_k)\text{ precedes }i_k\text{ in }\pi\}}
+\pmod2.\tag{PR1}
+\]
+As \(x\) ranges over all roots this maps bijectively onto all binary length-\(n\) words, because \(\sigma\) permutes the root bits. Thus every fixed dimension order admits two monochromatic rooted paths, one of each color, and \(2n\) one-change-or-better rooted paths.
+
+Nonetheless, the incident-color pseudometric of (IM1) satisfies \(d_c(i,j)=1/2\) for every distinct pair, since the two direction colors read different uniformly independent vertex bits. Every dimension-order Hamiltonian path therefore has weight \((n-1)/2\), which is at least two when \(n\ge5\). Thus the sufficient first-moment criterion does not detect witnesses even when every direction order has them. This is a rigorous limitation, not an obstruction to NORI1.
+
+Averaging (IM2) over a uniformly random permutation, each unordered direction pair is consecutive with probability \(2/n\), so
+\[
+\mathbb E_{X,\pi}\operatorname{sw}(W_X^\pi)
+=\frac2n\sum_{i<j}d_c(i,j)
+=\frac{2^{1-n}}n\sum_{v\in Q_n}s_v(n-s_v),\tag{PR2}
+\]
+where \(s_v\) is the number of color-one edges incident with \(v\). This recovers the previously published global Petrie local-turn first moment. Formula (IM2) refines it order by order; the root-by-root word information in the packet gate (PK2) is strictly richer than either mean.

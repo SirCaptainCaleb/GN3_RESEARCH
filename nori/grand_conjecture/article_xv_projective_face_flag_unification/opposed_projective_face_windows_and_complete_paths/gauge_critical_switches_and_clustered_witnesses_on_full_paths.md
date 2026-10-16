@@ -400,6 +400,119 @@ The set \(B_z\) has size \(a(P)\). If \(a(P)=2\), either legal bridge bit gives 
 \]
 Thus a hypothetical lower-dimensional coloring with no paired root and larger \(A_0\) creates fewer bad bridge assignments; one with every antipodal pair meeting \(A_0\) on one side gives only one bad assignment. This is a counting refinement of the paired-root criterion, not a proof that a paired root must exist.
 
+## Bridge input supports and minimal influence criticality
+
+Let \(f\) be an arbitrary binary edge coloring of \(Q_d\), \(d\ge1\), and set \(B=A_0(f)\). In its odd bridge extension \(C(f,q)\), the lower facet is \(f\), the upper facet has the complemented antipodal coloring, and the bridge color \(q:Q_d\to\mathbb F_2\) satisfies \(q(\bar x)=1-q(x)\).
+
+For \(x,y\in B\), put
+\[
+E(x,y)=\{i\in[d]:x_i=y_i\},\qquad
+\mathcal E(B)=\{E(x,y):x,y\in B\}.
+\tag{BS1}
+\]
+A set \(S\subseteq[d]\) is a transversal of \(\mathcal E(B)\) if it meets every member. An empty member prevents a transversal. Let \(\pi_S\) denote projection onto the bits indexed by \(S\). Saying that \(q\) depends only on \(S\) permits some bits of \(S\) to be inessential.
+
+**Theorem (bridge input-support criterion).** For every nonempty \(S\subseteq[d]\), the following conditions are equivalent:
+1. Some odd bridge function depending only on \(S\) makes \(C(f,q)\) bad.
+2. The sets \(\pi_S(B)\) and \(\overline{\pi_S(B)}\) are disjoint.
+3. \(S\) is a transversal of \(\mathcal E(B)\).
+
+If these conditions hold, the number of such bridge functions is
+\[
+\boxed{
+2^{\,2^{|S|-1}-|\pi_S(B)|}.
+}
+\tag{BS2}
+\]
+If they fail, this number is zero.
+
+*Proof.* The bridge correspondence says that a monochromatic full path through the bridge above \(x\) exists when the facet has a full path of orientation \(q(x)^*(1-q(x))^*\) rooted at \(x\). Reversal gives \(A_1(f)=\bar B\). Therefore badness is equivalent to
+\[
+q=1\ \hbox{on }B,\qquad q=0\ \hbox{on }\bar B.
+\tag{BS3}
+\]
+For a function depending only on \(S\), these prescriptions descend to \(\pi_S(B)\) and its antipodal image. An odd function on \(Q_S\) extends the prescriptions if and only if those sets are disjoint: assign the forced values there and choose opposite values arbitrarily on every unprescribed antipodal pair. This proves equivalence of the first two conditions.
+
+A projection collision means \(\pi_S(x)=\pi_S(\bar y)\) for some \(x,y\in B\). This holds precisely when \(x_i\ne y_i\) for every \(i\in S\), or \(S\cap E(x,y)=\varnothing\). Its exclusion is the transversal condition. Finally, disjointness makes every member of \(\pi_S(B)\) prescribe one distinct antipodal pair. There are \(2^{|S|-1}\) pairs in total. The remaining pairs have two independent choices each, proving (BS2). \(\square\)
+
+This criterion distinguishes the existence of an odd separating bridge function from the essential input set of a specified function. The latter can contain redundant inputs. Replacing it by a separator on a smaller transversal changes only its direction class.
+
+**Theorem (private agreement witnesses at minimum influence).** Suppose bad legal odd colorings exist in dimension \(n\), and choose one, \(c\), minimizing the number of arcs of its directed influence graph. For a direction \(j\), let
+\[
+N_j=\{i\ne j:\partial_i c_j\not\equiv0\}
+\]
+be the essential input set of its edge-color function, and let \(f\) be the ordinary coloring in the facet \(j=0\). Then \(N_j\) is inclusion-minimal among the nonempty transversals of \(\mathcal E(A_0(f))\).
+
+If \(|N_j|\ge2\), then for every \(h\in N_j\) there are roots \(x,y\in A_0(f)\), with full nondecreasing witness paths, satisfying
+\[
+\boxed{x_h=y_h,\qquad x_i=1-y_i\quad(i\in N_j\setminus\{h\}).}
+\tag{BS4}
+\]
+For \(z=\bar y\), this gives
+\[
+\boxed{
+x\in A_0(f),\quad z\in A_1(f),\quad
+x_h\ne z_h,\quad
+x_i=z_i\quad(i\in N_j\setminus\{h\}).
+}
+\tag{BS5}
+\]
+Moreover,
+\[
+\boxed{\partial_hc_j(x)=1.}
+\tag{BS6}
+\]
+
+*Proof.* The coloring \(c\) is the bridge extension of its facet \(f\), with bridge function \(q=c_j\). Oddness makes \(N_j\) nonempty. The preceding theorem makes \(N_j\) a transversal. If a proper nonempty subset were a transversal, replacing \(c_j\) by an odd bad separator depending only on that subset would preserve badness and remove at least one influence arc. No other direction function changes. This contradicts minimality.
+
+For \(|N_j|\ge2\), the nonempty set \(N_j\setminus\{h\}\) is not a transversal. Choose \(E(x,y)\) disjoint from it. Since \(N_j\) itself meets this edge, its intersection with \(N_j\) is precisely \(\{h\}\), proving (BS4). Reversing the nondecreasing full witness from \(y\) gives a nonincreasing full witness from \(z=\bar y\), proving (BS5).
+
+Badness and (BS3) give \(c_j(x)=1\) and \(c_j(z)=0\). Their assignments on \(N_j\) differ only at \(h\). Since \(c_j\) ignores every bit outside \(N_j\), the values at \(x\oplus e_h\) and \(z\) agree. Hence \(\partial_hc_j(x)=1\). \(\square\)
+
+There are no essential input sets of size two for an odd Boolean function: on two bits, its two antipodal values determine one signed bit reader. Thus the second theorem applies in particular to every non-reader direction, whose essential input set has at least three members.
+
+**Corollary (affine rank of the favorable-root projection).** Under minimum influence, let \(N=N_j\), \(k=|N|\ge2\), and \(C=\pi_N(A_0(f))\subseteq\mathbb F_2^N\). Then
+\[
+\boxed{
+\dim\operatorname{aff}_{\mathbb F_2} C
+\ge
+\begin{cases}
+k,&k\ \mathrm{even},\\
+k-1,&k\ \mathrm{odd}.
+\end{cases}
+}
+\tag{BS7}
+\]
+Consequently \(|C|\ge k+1\) for even \(k\), and \(|C|\ge k\) for odd \(k\). When \(k\) is odd, the affine hull is either the full input cube or one of its two total-parity hyperplanes. In particular every nonconstant linear form other than total parity takes both values on \(C\).
+
+*Proof.* Formula (BS4) puts the vectors
+\[
+w_h=\mathbf1_N+e_h\quad(h\in N)
+\]
+in the difference span of \(C\). For \(\lambda\in\mathbb F_2^N\),
+\[
+\sum_h\lambda_hw_h
+=\lambda+\left(\sum_h\lambda_h\right)\mathbf1_N.
+\]
+When \(k\) is even, these vectors are linearly independent. When \(k\) is odd, their sole nonzero linear dependence uses all \(k\) vectors, and their span is the even-weight hyperplane. This proves the rank bounds and the alternatives for the affine hull. A set with affine dimension \(r\) has at least \(r+1\) members. The final assertion follows because the annihilator of the even-weight subspace consists of zero and the total-parity linear form. \(\square\)
+
+**Corollary (non-affine directions force full affine span).** Among bad colorings minimizing the number of influence arcs, further minimize the number of direction-edge functions that are non-affine over \(\mathbb F_2\). Then, for every such non-affine direction \(j\), the projection
+\[
+\boxed{\pi_{N_j}(A_0(f))}
+\]
+affinely spans the whole input cube \(\mathbb F_2^{N_j}\). Here affineness concerns the Boolean algebraic normal form; parity on several inputs is affine.
+
+*Proof.* A non-affine odd function has at least three essential inputs. Write \(N=N_j\), \(k=|N|\), and \(C=\pi_N(A_0(f))\). If \(k\) is even, (BS7) gives full affine span. If \(k\) is odd and the affine hull is proper, (BS7) makes it a total-parity hyperplane. Replace \(c_j\) by the affine parity function taking value one on that hyperplane. Since \(k\) is odd, the replacement is odd. It takes value one on \(C\), zero on \(\bar C\), and thus preserves badness by (BS3). Its essential input set is still \(N\), so the number of influence arcs is unchanged. The number of non-affine direction functions decreases, contradicting secondary minimality. \(\square\)
+
+For comparison, if \(c_j=a+\sum_{i\in N_j}x_i\) is affine and \(|N_j|\ge3\), oddness makes \(|N_j|\) odd. Badness places \(C\) in the value-one parity hyperplane, and (BS7) makes its affine hull the whole hyperplane. Thus the rank alternative isolates where affine parity transport can apply and where a non-affine obstruction must carry fully spanning favorable-root data.
+
+**Equivalent elimination rule.** Fix \(h\in N_j\) with \(|N_j|\ge2\). If there are no two nondecreasing facet witnesses satisfying (BS4), then the support criterion constructs a bad odd coloring with direction-\(j\) colors independent of bit \(h\), without adding any influence arc. Consequently a minimal obstruction must supply the private witness pair for every essential input of every non-reader direction simultaneously.
+
+**Scope of the witnesses.** Formula (BS5) prescribes agreement on the other inputs read by \(j\). The roots may differ on bits outside \(N_j\), and their path orders and phase seams can differ. Even when \(N_j=[n]\setminus\{j\}\), so these two roots are adjacent, opposite exclusive orientations alone do not yield paired roots; the neighboring-root obstruction proved below already excludes that inference. The new requirement is their simultaneous occurrence at every essential input under a legitimate minimum-influence choice of the full bad coloring. Coupling these retained paths to the square-flatness witnesses remains a closure problem.
+
+The support criterion and count were independently checked for every antipodal-pair-free subset of \(Q_d\), \(1\le d\le3\), and every nonempty support. All 597 support-count comparisons agreed with (BS2); all 54 private-input incidences for nonsingleton minimal supports in dimension three had witnesses (BS4). These checks support the statements; their proofs are dimension-uniform.
+
+
 ## Root-profile barriers and the middle ranks of a critical pair
 
 The paired-root route requires the paths' color arms and dimension supports. Two simpler closure proposals, based on root density and neighboring root labels, have explicit obstructions.
@@ -1527,7 +1640,7 @@ The repaired coloring may acquire new dependencies on other components; the theo
 
 **Corollary (polarization-only empty roots resist a one-edge paired repair).** When every original component root admits at least one orientation, changing one arbitrary edge cannot turn an empty full root into a paired root. In particular no vertex of (EC1) can be healed in this way.
 
-**Coupling to Article XIV.** A gate corridor forces neighboring face roots to be empty. If a critical one-edge repair produces paired witnesses at one of those roots, (EC2) locates a component that is itself empty there, and every unaffected factor must provide a common-color monochromatic path. The repair therefore resolves a local feedback obstruction at that prescribed root. Independent components with opposing one-sided orientations can supply an empty corridor, but cannot supply such a paired repair.
+**Coupling to Article XIV.** A separately certified gate forces the neighboring face root to be empty. A monochromatic codimension-two face path certifies gates at its two endpoints; the former inference of gates at every interior vertex has been withdrawn in the corrected folding and transverse-strip subsections. Thus the following coupling applies at certified gate sites, without assuming a gate throughout the corridor. If a critical one-edge repair produces paired witnesses at one of those roots, (EC2) locates a component that is itself empty there, and every unaffected factor must provide a common-color monochromatic path. The repair therefore resolves a local feedback obstruction at that prescribed root. Independent components with opposing one-sided orientations can supply an empty corridor, but cannot supply such a paired repair.
 
 This separates two structural sources of the corridor and narrows the missing induction: transport the critical witness into its locally empty component, preserving its seam and direction set, and then apply the rooted feedback exclusions or cross-profile stripe rule. The original causal transport obstruction still prevents an automatic passage to a different favorable root.
 
@@ -1810,6 +1923,60 @@ In particular, the fiber hypothesis holds when \(c\) has at most four nonsimple 
 **Path toward closure.** The arc-complement condition supplies surviving feedback; (AS2) now requires that feedback to control the activity of each participating coupling. A closing argument must show that these mixed-derivative requirements either expose a square at a cross-favorable root or admit a feedback-reducing monochromatic connector. Neither conclusion follows from the projection lemma alone. In particular, it does not supply arbitrary prescribed roots in the residual feedback block, and it does not upgrade cycle survival to vertex-disjoint cycle packing.
 
 
+## Simultaneous prescribed roots outside all directed cycles
+
+Let \(f,g\) be arbitrary binary edge colorings on \(Q_d\), and let \(D\) be a common directed influence supergraph. An arc \(i\to j\) permits the direction-\(j\) edge color in either coloring to depend on bit \(i\). Let \(B_1,\ldots,B_t\) be the strongly connected components in a topological order, and put \(R_\nu=B_1\cup\cdots\cup B_{\nu-1}\). Define
+\[
+\rho_\nu=\min_{v,w\in Q_{R_\nu}}
+\left|A_0(f^{(\nu)}_v)\cap A_1(g^{(\nu)}_w)\right|,
+\]
+where \(f^{(\nu)}_v,g^{(\nu)}_w\) are the induced \(B_\nu\)-colorings at the stated earlier-bit assignments. Later bits cannot affect these colorings.
+
+Let \(S\) be the set of vertices of \(D\) belonging to no directed cycle. Since influence graphs have no loops, these are precisely the singleton strongly connected components. Put \(T=[d]\setminus S\).
+
+**Theorem (simultaneous prescription on all singleton components).** If \(\rho_\nu>0\) for every nonsingleton component, then every prescribed assignment \(u\in Q_S\) satisfies
+\[
+\boxed{
+\left|\{x\in A_0(f)\cap A_1(g):x_S=u\}\right|
+\ge\prod_{\nu:\,|B_\nu|\ge2}\rho_\nu>0.
+}
+\tag{SPC1}
+\]
+No restriction on arrows between \(S\) and \(T\) is imposed.
+
+*Proof.* Process the components in their topological order. Maintain roots on the processed dimensions admitting both an \(f\)-path with word \(0^*1^*\) and a \(g\)-path with word \(1^*0^*\), while satisfying all prescriptions in the processed singleton components.
+
+At a nonsingleton component \(B_\nu\), choose one witness of each orientation at a retained root, and let \(v,w\) be their respective phase seams. There are at least \(\rho_\nu\) common roots for the two induced \(B_\nu\)-colorings. Insert their two full monotone paths at the corresponding seams. Earlier edge colors are independent of the \(B_\nu\)-bits, so the enlarged paths retain their monotone words. Each old root therefore has at least \(\rho_\nu\) extensions.
+
+At a singleton component \(\{i\}\), use its prescribed starting bit \(u_i\). Its induced edge has a constant color in each of the two seam fibers, and its one-step path has both monotone orientations. Inserting it at each seam preserves both full words. This extends every old root with the prescribed bit and imposes no further restriction.
+
+Starting from the empty root and multiplying the nonsingleton extension counts proves (SPC1). \(\square\)
+
+Thus one can prescribe source singletons, singletons between feedback components, and terminal singletons simultaneously. The cross-root choices in the nonsingleton components can depend on all prescriptions; the theorem asserts projection surjectivity and a lower bound in every prescribed fiber.
+
+For the known cross-favorability modules it suffices that every conditional pair in each nonsingleton component lies in the relevant class. In particular, the hypothesis holds if every component of \(D\) has at most two vertices of internal indegree greater than one, by the established two-target theorem, including its stated computer-assisted ingredient.
+
+**Corollary (square-derivative activity must involve a surviving cycle vertex).** Let \(c\) be an antipodally odd coloring, fix distinct directions \(h,j\), and set \(D'=D(c)-\{h,j\}\). Suppose every nonsingleton component of \(D'\) satisfies the preceding conditional cross-favorability hypothesis for the two horizontal colorings \(f_{01},f_{00}\). If \(c\) is bad and \(h\to j\) is an influence arc, then some vertex \(v\) lying on a directed cycle of \(D'\) satisfies
+\[
+\boxed{\partial_v\partial_hc_j\not\equiv0.}
+\tag{SPC2}
+\]
+
+*Proof.* Let \(S\) consist of the vertices lying on no directed cycle of \(D'\), and let \(T\) be its complement. The theorem supplies a cross root in
+\[
+L_{h,j}=A_0(f_{01})\cap A_1(f_{00})
+\]
+over every assignment of the \(S\)-bits. Badness forces \(\partial_hc_j=0\) at all these cross roots by square flatness. If \(\partial_v\partial_hc_j\) vanished for every \(v\in T\), then \(\partial_hc_j\) would depend only on \(S\). Its vanishing at a cross root over every \(S\)-assignment would make it identically zero, contradicting \(h\to j\). Thus a vertex \(v\in T\) satisfies (SPC2), and every member of \(T\) lies on a directed cycle. \(\square\)
+
+**Corollary (four exceptional directions).** If \(c\) has at most four direction-edge functions that are not signed one-bit readers, and \(h,j\) are two of them, then every bad coloring with \(h\to j\) obeys (SPC2).
+
+*Proof.* After deleting \(h,j\), at most two direction functions can have more than one essential input. Restriction to any earlier-state fiber cannot create an essential input. Every nonsingleton component therefore has at most two internally branching targets, so the established cross-favorability theorem supplies the hypothesis of (SPC1). \(\square\)
+
+This strengthens the earlier descendant condition: the mixed derivative in (SPC2) uses a bit on a surviving directed cycle. The argument retains separate seams for the two witnesses and makes no prescription on the cyclic bits. Obtaining compatible cross roots across different omitted direction pairs remains necessary for a general closure proof.
+
+An independent subset-reachability calculation tested 300 unrelated coloring pairs on six dimensions with component order \(2,1,2,1\), allowing arbitrary dependencies from earlier to later blocks. All 1200 assignments of the interstitial and terminal singleton bits had at least four cross roots, as predicted by the two square-component factors. The theorem follows from the component induction above.
+
+
 ## Switch-component intersection lemma
 
 Let \(f:Q_m\to\mathbb F_2\) be antipodally odd. Let \(\Gamma_f\) be the subgraph of cube edges across which \(f\) changes.
@@ -2088,3 +2255,3160 @@ The antipodal Petrie cycle has color word \(w\bar w\). Its length-\(n\) window s
 Under adjacent exchanges, the binary entries \(b_k\), each attached to its direction, merely undergo adjacent transpositions. In (EP2) the one-positions of \(b\) are \(2,4,\ldots,2m-2,2m-1\). A constant-zero word requires one-positions \(1,3,\ldots,2m-1\); a constant-one word requires \(0,2,\ldots,2m-2\). For binary strings containing equally many ones, the minimum adjacent-transposition distance equals the sum of absolute differences between corresponding ordered one-positions. These distances are \(m-1\) and \(2m-1\), respectively. Repeatedly exchanging the first pair of ones remaining in the central block of (EP2) attains the former bound: the two-switch word remains two-switch until the final exchange makes it constant zero. \(\square\)
 
 Consequently maximum simultaneous switching of direction-color functions does not imply an immediately improving square exchange, even allowing Petrie rotations. An exchange-based NORI1 proof must accommodate nondecreasing steps or use a global invariant detecting improving sequences whose length grows with dimension.
+
+
+## Parity completion and the sizes of maximal disjoint odd switch families
+
+Let \(m\ge1\), and let \(f_1,\ldots,f_k:Q_m\to\mathbb F_2\) be antipodally odd Boolean functions with pairwise disjoint switch sets \(E(f_i)\). Constants differing by one give the same switch set. Write
+\[
+p(x)=\sum_{j=1}^m x_j,\qquad
+h(x)=p(x)+\sum_{i=1}^k f_i(x).
+\tag{PC1}
+\]
+All sums of Boolean functions in this subsection are in \(\mathbb F_2\).
+
+**Theorem (completion by the unused edges).** The residual function \(h\) satisfies
+\[
+\boxed{
+E(h)=E(Q_m)\setminus\bigcup_{i=1}^kE(f_i),\qquad
+h(\bar x)+h(x)=m+k\pmod2.
+}
+\tag{PC2}
+\]
+In particular, whenever \(m-k\) is odd, \(h\) is an odd function that can be adjoined to the family. The enlarged switch sets partition all cube edges, so the enlarged family is maximal under adjoining further odd functions.
+
+*Proof.* Across a cube edge, \(p\) changes once. At most one retained function changes, by disjointness. Consequently \(h\) changes precisely when none of the retained functions changes. This proves the switch-set formula. Complementing all bits changes \(p\) by \(m\) and each \(f_i\) by one, proving the antipodal formula. If \(m-k\) is odd, this makes \(h\) odd; its switch set is disjoint from every retained set and fills their complement. An odd function is nonconstant and has a nonempty switch set. Thus an additional odd function cannot have switch set disjoint from this edge partition. \(\square\)
+
+**Corollary (complete classification of maximal family sizes).** For \(m\ge1\), the possible cardinalities \(k\) of maximal pairwise-disjoint odd switch families on \(Q_m\) are precisely
+\[
+\boxed{1\le k\le m,\qquad k\equiv m\pmod2.}
+\tag{PC3}
+\]
+
+*Proof.* Every odd function changes an odd positive number of times on each full antipodal geodesic. Disjointness therefore gives \(k\le m\). An empty family is extendible by a bit reader. If \(m-k\) were odd, the completion theorem would extend the family, contradicting maximality.
+
+Conversely, fix a positive \(k\le m\) of the same parity as \(m\). Partition the dimensions into \(k\) nonempty odd-sized blocks: one block of size \(m-k+1\) and \(k-1\) singleton blocks suffice. For each block \(B\), take \(f_B(x)=\sum_{j\in B}x_j\). Each function is odd, and its switch set consists of all edges in the dimensions of \(B\). These sets partition \(E(Q_m)\), proving maximality. \(\square\)
+
+Thus the previously proved exclusion of maximal families of size \(m-1\) extends to every odd deficiency. Every positive even deficiency is attained. The examples can include a function that is not a signed one-bit reader: parity on an odd-sized block of size at least three has this property.
+
+**Proposition (residual level-set criterion at even deficiency).** Suppose \(m-k\) is even, and let \(\Gamma\) be the graph formed by the union of the retained switch sets. Then \(h\) is antipodally even and
+\[
+\boxed{\Gamma=Q_m[h^{-1}(0)]\ \sqcup\ Q_m[h^{-1}(1)].}
+\tag{PC4}
+\]
+The family is maximal if and only if at least one of these two induced graphs has a connected component preserved by antipodal complementation.
+
+*Proof.* Formula (PC2) makes \(h\) even and says that a cube edge belongs to \(\Gamma\) precisely when its endpoints have the same \(h\)-value, proving (PC4). A further odd function can be adjoined precisely when it is constant on every connected component of \(\Gamma\). If some component contains \(x,\bar x\), such constancy contradicts oddness. If no component is antipodally invariant, pair each component with its distinct antipodal mate and assign the values zero and one to the two members of every pair. The resulting function is odd and has no switch edge in \(\Gamma\), so it extends the family. \(\square\)
+
+**Scope for the feedback argument.** The residual \(h\) is an auxiliary Boolean function. It need not be one of the direction-edge color functions, and adjoining it does not recolor a NORI1 instance or preserve an assigned direction for the new function. The theorem completes the switch-channel saturation analysis: odd deficiency is settled by an explicit formula, while even deficiency is governed by antipodal components inside an even Boolean level set. Converting that component information into a monochromatic direction-simple path in the original coloring remains an additional requirement.
+
+An independent enumeration of all switch sets of odd Boolean functions in dimensions one through four found maximal family sizes respectively \(\{1\},\{2\},\{1,3\},\{2,4\}\). It also checked (PC2) for every disjoint family of odd deficiency in those dimensions. These calculations verify the formulas on finite instances; the proofs above apply in every dimension.
+
+
+## Facet-imbalance extremality and weighted-majority closure
+
+Let \(n\ge2\), let \(c\) be any legal antipodally odd coloring of \(E(Q_n)\), and write \(\sigma_i(x)=(-1)^{c_i(x)}\). Define the signed color imbalance of the facet \(x_j=0\) by
+\[
+B_j=\sum_{i\ne j}\ \sum_{\substack{x_i=0\\x_j=0}}\sigma_i(x),\qquad
+\mathcal E(c)=\sum_{j=1}^n B_j^2.
+\tag{FE1}
+\]
+The opposite facet has imbalance \(-B_j\). Index antipodal edge pairs by \(p\). For a representative direction-\(i\) edge with sign \(s_p\), choose an incident vertex \(x\) and set \(v_{p,i}=0\), \(v_{p,j}=(-1)^{x_j}\) for \(j\ne i\). Then \(B=\sum_p s_pv_p\), and
+\[
+\boxed{\mathcal E(c^{[p]})-\mathcal E(c)
+=4\left((n-1)-s_p\langle B,v_p\rangle\right).}
+\tag{FE2}
+\]
+
+**Lemma (weighted-majority path).** Let \(a_1,\ldots,a_n\ge0\), with at least two positive weights, and assume \(\sum_{j\ne i}a_j(-1)^{x_j}\ne0\) for every direction \(i\) and vertex \(x\). The direction-\(i\) edge-sign coloring
+\[
+\sigma_i(x)=\operatorname{sgn}\sum_{j\ne i}a_j(-1)^{x_j}
+\tag{FE3}
+\]
+has a monochromatic full antipodal geodesic.
+
+*Proof.* Partition the positive weights into \(P,N\) minimizing \(D=|a(P)-a(N)|\), with \(a(P)\ge a(N)\). Transferring an \(i\in P\) to \(N\) would reduce the discrepancy if \(a_i<D\). Equality \(a_i=D\) would give a zero sum in (FE3), by choosing positive signs on \(N\) and negative signs on \(P\setminus\{i\}\). Hence \(a_i>D\) for every \(i\in P\). If zero-weight dimensions exist, then \(D>0\), since otherwise their field can vanish.
+
+Choose a root with bit-sign \(+1\) on \(P\) and \(-1\) on \(N\), and traverse the \(N\) dimensions first, the zero-weight dimensions next, and the \(P\) dimensions last, in arbitrary order within each group. At an \(N\)-step the field excluding its negative current weight is at least \(D+a_i>0\). At a zero-weight step the field is \(a(P)+a(N)>0\). At a \(P\)-step the field is at least \(a_i-D>0\), the lower bound occurring if \(i\) is last in \(P\). All edges have sign \(+1\). \(\square\)
+
+**Theorem (all facet-energy local maxima are good).** If no legal single-antipodal-edge-pair flip raises \(\mathcal E(c)\), then \(c\) has a monochromatic full antipodal geodesic.
+
+*Proof.* Formula (FE2) gives \(s_p\langle B,v_p\rangle\ge n-1>0\) on every edge pair. Thus every direction-\(i\) edge sign equals the sign of the nonvanishing field \(\sum_{j\ne i}B_j(-1)^{x_j}\). At least two \(B_j\) are nonzero. Changing the initial-bit conventions to absorb the signs of \(B_j\) transforms the field to (FE3) with \(a_j=|B_j|\). Apply the lemma. \(\square\)
+
+**Corollary (extremal counterexample and critical repairs).** If NORI1 fails in dimension \(n\), choose a bad legal coloring maximizing \(\mathcal E\) among all bad legal colorings. It has at least one \(\mathcal E\)-increasing antipodal edge-pair flip; every increasing flip heals the coloring. Every monochromatic full geodesic in any repaired coloring passes through the flipped pair strictly internally, by the critical-restoration theorem proved earlier in this Subsection.
+
+This reduces a possible energy-extremal closure proof to reconciling the repaired internal pivots with the positive energy gradient. The result has no bounded-hub or affine hypothesis, but does not yet transfer the monochromatic repaired path back to the bad coloring.
+
+
+**Corollary (uniform energy gain at frustrated pairs).** With the notation (FE1)--(FE2), call an antipodal edge pair \(p\) *frustrated* when \(h_p=s_p\langle B,v_p\rangle\le0\). Every bad legal coloring has at least one frustrated pair, and flipping any frustrated pair increases the facet energy by at least \(4(n-1)\):
+\[
+\boxed{h_p\le0\implies \mathcal E(c^{[p]})-\mathcal E(c)\ge4(n-1).}
+\tag{FE4}
+\]
+In a bad coloring maximizing \(\mathcal E\) among bad colorings, **all** frustrated pairs are healing; every monochromatic antipodal geodesic after any such repair traverses that pair strictly internally.
+
+*Proof.* If there were no frustrated pairs, then \(h_p>0\) everywhere, so every edge sign agrees with the nonzero field \(\sum_{j\ne i}B_j(-1)^{x_j}\). The weighted-majority lemma supplies a monochromatic geodesic. The gain follows from (FE2). Maximality over bad colorings makes every improving flip healing, and the internal-pivot theorem applies. \(\square\)
+
+This identifies the distinguished repairs using only facet imbalances and edge colors, and quantifies their gain independently of dimension-specific classification. Repeatedly flipping any frustrated pair strictly raises \(\mathcal E\); the process terminates at a weighted-majority coloring with a monochromatic full geodesic. Pulling a witness back through the flips remains the closure problem.
+
+
+
+
+### Weak threshold agreement and positive spanning in every obstruction
+
+The weighted-majority argument extends to arbitrary tie colors. This removes the nonvanishing-field assumption and gives a necessary geometric condition on every unrestricted bad coloring.
+
+For \(a\in\mathbb R^n\), define the field of a direction-\(i\) edge by
+\[
+H_a(x,i)=\sum_{j\ne i}a_j(-1)^{x_j}.
+\tag{WT1}
+\]
+It is independent of the chosen endpoint and changes sign under antipodal complementation.
+
+**Theorem (weak threshold closure, including all ties).** Let \(n\ge2\), and let \(c\) be any antipodally odd edge coloring. If there is a nonzero vector \(a\) such that
+\[
+\boxed{(-1)^{c_i(x)}H_a(x,i)\ge0
+\quad\text{on every edge},}
+\tag{WT2}
+\]
+then \(c\) has a monochromatic full antipodal geodesic. The colors on all zero-field edges are arbitrary, subject only to antipodal oddness.
+
+*Proof.* Choose a root \(x\) with \((-1)^{x_j}a_j=|a_j|\), assigning the zero-weight bits arbitrarily. Traverse all zero-weight directions first, followed by the positive-weight directions in any order. During the first block every field is \(\sum_j|a_j|>0\), so every edge has color zero.
+
+Write the positive weights in their chosen order as \(b_1,\ldots,b_r\). At the \(t\)-th step of this second block the field is
+\[
+M_t=\sum_{k>t}b_k-\sum_{k<t}b_k.
+\]
+For \(1\le t<r\), \(M_t-M_{t+1}=b_t+b_{t+1}>0\). Thus these fields strictly decrease, with at most one zero. By (WT2), the corresponding color word consists of zeros, at most one arbitrary tie bit, and then ones. It has the form \(0^*1^*\). This also covers \(r=1\), when the single positive-weight step has zero field. The full path uses every direction once. The established antipodal root-slide surgery turns it into a monochromatic full antipodal geodesic. \(\square\)
+
+This proof also strengthens Article XIV's type-B threshold theorem. Genericity of the weight vector is unnecessary. The order restriction placing zero-weight directions first matters: it prevents a block of independently colored zero-field observations.
+
+Choose one representative \(e_p\) of each antipodal edge pair, with direction \(i\), sign \(s_p=(-1)^{c(e_p)}\), and vector \(v_p\) as in (FE1): its \(i\)-th entry is zero and its other entries are \((-1)^{x_j}\). Put \(w_p=s_pv_p\). Replacing \(e_p\) by its antipode changes both \(s_p\) and \(v_p\) by a minus sign, so \(w_p\) is intrinsic to the pair.
+
+**Corollary (positive spanning is necessary for badness).** Every bad legal coloring satisfies
+\[
+\boxed{0\in\operatorname{int}\operatorname{conv}\{w_p:p\text{ an antipodal edge pair}\}.}
+\tag{WT3}
+\]
+Equivalently, for every nonzero \(a\in\mathbb R^n\), there are pairs \(p,q\) with
+\[
+\langle a,w_p\rangle<0<\langle a,w_q\rangle.
+\tag{WT4}
+\]
+
+*Proof.* If zero is not in the interior of this finite convex hull, finite-dimensional separation provides a nonzero \(a\) with \(\langle a,w_p\rangle\ge0\) for every \(p\), after reversing \(a\) if necessary. This is (WT2), contradicting badness. Conversely, failure of either strict inequality in (WT4) gives such a separator, and the usual supporting-hyperplane criterion makes (WT3) and (WT4) equivalent. \(\square\)
+
+**Corollary (strictly frustrated repairs, with the zero-energy case separated).** Let \(n\ge3\), and choose a bad coloring maximizing \(\mathcal E=\sum_jB_j^2\) among bad colorings. If \(B\ne0\), some pair satisfies
+\[
+h_p=s_p\langle B,v_p\rangle<0.
+\]
+Every such pair is healing, and
+\[
+\boxed{\mathcal E(c^{[p]})-\mathcal E(c)\ge4(n+1).}
+\tag{WT5}
+\]
+If instead \(B=0\), every single-pair flip is healing, and every facet has no empty roots: its two disjoint orientation-root sets partition its vertex set.
+
+*Proof.* For \(B\ne0\), apply (WT4) with \(a=B\). Each facet contains \((n-1)2^{n-2}\) edges, an even number, so each \(B_j\), and hence each \(h_p\), is even. Strict negativity gives \(h_p\le-2\). Formula (FE2) proves (WT5), and maximality over bad colorings makes the flip healing.
+
+For \(B=0\), (FE2) gives energy gain \(4(n-1)>0\) at every pair. Thus every flip heals. In any direction, an empty bridge-root pair would permit a nonhealing flip by the restoration-fan theorem. There are therefore no empty roots in any facet. Paired roots are already excluded by badness, giving the asserted partition. \(\square\)
+
+The positive-spanning condition is necessary, not sufficient, for a bad coloring. It does not establish that an energy-extremal obstruction has a separating vector. The remaining task is to use the original path witnesses attached to the forced healing pairs to contradict (WT3), or to obtain an original paired root directly. In particular, the case \(B=0\) cannot be discarded by applying the threshold theorem with the zero vector.
+
+An independent path evaluator checked the constructive weak-threshold proof and the resulting monochromatic root-slide on 1400 colorings in dimensions two through eight, using signed integer weights, zero weights, and independently assigned legal tie colors. The argument above is dimension-uniform and does not depend on these checks.
+
+
+## Global extremal imbalance and antipodal-path transversal stability
+
+For an arbitrary coloring of cube edges, with no locality or symmetry assumptions, let \(q=2^{n-1}\) and \(M_i\) be the set of all direction-\(i\) edges. Call \(E\) a transversal if it meets every full antipodal geodesic.
+
+**Theorem (sharp minimum).** A transversal has at least \(q\) edges, with equality if and only if \(E=M_i\) for some \(i\).
+
+*Proof.* Given a direction ordering, the \(q\) full geodesics beginning at even-parity roots partition all edges, one from each direction at each root. A fixed direction edge is produced from two possible roots of opposite parity, so appears once. Thus a transversal has size at least \(q\). At equality every full geodesic, for every order and starting root, meets \(E\) once. On an arbitrary square write edge indicators \(a,b,c,d\) so the two routes from its first corner have sums \(a+c,b+d\). Exchanging their first two directions gives \(a+c=b+d\). Starting from an adjacent corner gives \(a+b=c+d\). Thus \(a=d,b=c\), showing that opposite square edges agree. Every direction matching is connected by these square comparisons, so \(E\) is a union of complete direction matchings. Size \(q\) forces a single matching. \(\square\)
+
+**Theorem (quantitative stability).** If \(E\) is a transversal of size \(q+t\), put \(\epsilon=t/q\). Some direction \(i\) satisfies
+\[
+\boxed{|E\triangle M_i|
+\le t\left(1+\frac{n(n-1)}{1+\epsilon}\right)
+\le [1+n(n-1)]t.}\tag{BI1}
+\]
+
+*Proof.* Let \(r_i(x)\) be the membership indicator of the direction-\(i\) edge at \(x\), and \(p_i=\mathbb E_xr_i(x)\), so \(\sum_i p_i=1+\epsilon\). For uniform starting root and direction order, let \(K\) count the traversed edges in \(E\). As \(E\) is a transversal,
+\[
+K\ge1,\qquad\mathbb EK=1+\epsilon.
+\]
+Swapping a random consecutive direction pair \(i,j\) inside its square changes the path count from \(K\) to \(K'\). Both are at least one. Thus \(|K-K'|\le(K-1)+(K'-1)\), and the expectation of the absolute square-route difference \(a+c-b-d\) is at most \(2\epsilon\). Exchanging from the adjacent square corner gives the same bound for \(a+b-c-d\). Since the sum of these two signed differences is \(2(a-d)\), uniformly averaging over square locations and ordered directions yields
+\[
+\frac1{n(n-1)}\sum_i\sum_{j\ne i}
+\Pr_x[r_i(x)\ne r_i(x^j)]\le2\epsilon.
+\]
+The Boolean-cube Poincare inequality therefore gives
+\[
+\sum_i p_i(1-p_i)
+\le\frac14\sum_i\sum_{j\ne i}
+\Pr_x[r_i(x)\ne r_i(x^j)]
+\le\tfrac12n(n-1)\epsilon.
+\]
+Consequently
+\[
+\max_i p_i
+\ge\frac{\sum_i p_i^2}{\sum_i p_i}
+\ge1-\frac{n(n-1)\epsilon}{2(1+\epsilon)}.
+\]
+For such an \(i\), the mismatch count satisfies
+\[
+|E\triangle M_i|/q
+=(1-p_i)+\sum_{j\ne i}p_j
+=2+\epsilon-2p_i,
+\]
+which proves (BI1). \(\square\)
+
+**Theorem (global counterexample imbalance gap).** If a binary edge coloring of \(Q_n\), \(n\ge2\), has no paired root, then
+\[
+\boxed{
+\min(|E_0|,|E_1|)
+\ge 2^{n-1}+
+\left\lceil\frac{2^{n-2}}{1+n(n-1)}\right\rceil.}
+\tag{BI2}
+\]
+
+*Proof.* Either color class \(E\) is a transversal, otherwise the opposite color supplies a monochromatic full geodesic and hence a paired root. Write \(|E|=q+t\). By (BI1), a matching \(M_i\) differs from \(E\) in at most \(D=[1+n(n-1)]t\) edges. Color the matching with the color of \(E\), and all other directions oppositely. From any common root this reference coloring has opposite monotone geodesics, one traversing \(i\) first and the other last, with the remaining directions in a fixed order. For uniformly random roots the expected combined encounters of both paths with changed edges is \(2|E\triangle M_i|/q\). If \(D<q/2\), some root supports both reference paths without traversing changed edges, so also supports both in the given coloring. Therefore \(D\ge q/2\); integrality gives (BI2). \(\square\)
+
+**Implication for unrestricted NORI1.** In any antipodally odd coloring of \(Q_{n+1}\) with no monochromatic antipodal geodesic, **every** \(n\)-dimensional facet coloring has no paired root by the established bridge equivalence. Therefore its two color classes satisfy (BI2) on every facet. This supplies a dimension-uniform necessary condition on any putative minimal counterexample. It does not prove closure: a further argument must couple imbalance restrictions on intersecting facets.
+
+
+## One-facet extremality produces exponentially many critical repairs
+
+Let \(n\ge3\). In any hypothetical bad legal coloring of \(Q_n\), write \(B_j\) for the signed imbalance of the facet \(F_{j,0}=\{x_j=0\}\), as in (FE1), and put
+\[
+M(c)=\max_{1\le j\le n}|B_j(c)|.
+\]
+
+**Theorem (extremal minority-edge saturation).** Suppose NORI1 fails in \(Q_n\). Choose a bad legal coloring \(c\) maximizing \(M(c)\) over all bad colorings, and a facet \(F=F_{j,s}\) having maximum absolute imbalance. Designate its more frequent color by \(b\), choosing either one in a tie. Then for **every** edge \(e\subset F\) of minority color \(1-b\), the legal antipodal-pair flip \(c^{[e]}\) is good. Every color-\(b\) monochromatic full geodesic in \(c^{[e]}\) uses \(e\) strictly internally. Furthermore, the minority edges give at least \(2^{n-2}+1\) distinct healing antipodal edge pairs in this single facet. The sharper quantitative blocker gap previously established in this Subsection raises this to
+\[
+\boxed{
+2^{n-2}+\left\lceil
+\frac{2^{n-3}}{1+(n-1)(n-2)}
+\right\rceil .
+}
+\tag{FE5}
+\]
+
+*Proof.* Antipodal complementation sends \(F\) to the opposite facet and reverses its edge colors. Flipping the antipodal pair of any minority edge \(e\subset F\) changes that edge in \(F\) from \(1-b\) to \(b\), increasing the absolute imbalance of \(F\) by two (also if the imbalance was zero). Therefore \(M(c^{[e]})\ge M(c)+2\). By maximality of \(c\) among bad colorings, \(c^{[e]}\) is good. The universal internal-pivot theorem applies to each healing pair; a color-\(b\) monochromatic full geodesic in the repaired coloring can only use \(e\) from the changed antipodal pair, so \(e\) occurs internally.
+
+Let \(m=n-1\). The induced coloring of \(F\cong Q_m\) contains no monochromatic full antipodal geodesic: otherwise its two antipodal endpoints would be paired favorable roots, and the bridge selector theorem would already make the original \(c\) good. Thus each of its color classes hits every full antipodal \(m\)-geodesic. The minimum geodesic-blocker theorem gives each class at least \(2^{m-1}\) edges, with equality only for one complete direction class. Equality would give monotone paired roots by putting that direction first or last, again making \(c\) good. Hence each class has at least \(2^{m-1}+1\) edges, and the previously proved quantitative blocker gap (BI2) yields the displayed stronger bound. Distinct edges of \(F\) belong to distinct antipodal edge pairs, since the mates lie in the opposite facet. \(\square\)
+
+**Closure target.** An imbalance-extremal hypothetical counterexample has exponentially many distinct *minority-to-majority healing pairs concentrated in one facet*, each carrying a strictly internal universal monochromatic pivot in its repaired coloring. A closing lemma must use the simultaneous location and routing constraints of these repair witnesses to construct a monochromatic geodesic before any recoloring. This extremality makes no structural assumption on the coloring.
+
+
+
+### Extremizing squared facet imbalance in a hypothetical bad coloring
+
+Let \(N\ge3\), let \(c\) be antipodally odd on undirected edges of \(Q_N\), and encode colors as signs \(s(e)\in\{-1,1\}\), with \(s(\bar e)=-s(e)\). Set
+\[
+B(F)=\sum_{e\subset F}s(e),\qquad
+\Phi(c)=\sum_{F\ {\rm facet}}B(F)^2.
+\]
+For an antipodal edge orbit \([e]\) put
+\[
+T_e=s(e)\sum_{F\ {\rm facet}:\ e\subset F}B(F).
+\]
+Antipodal replacement of the representative reverses both signs, leaving \(T_e\) unchanged.
+
+**Theorem (imbalance drift and random baseline).** If \(c^{[e]}\) is obtained by flipping the two edges of \([e]\), then
+\[
+\boxed{\Phi(c^{[e]})-\Phi(c)=8(N-1-T_e).}\tag{IE1}
+\]
+Summing over all \(N2^{N-2}\) edge orbits gives
+\[
+\boxed{\sum_{[e]}[\Phi(c^{[e]})-\Phi(c)]
+=4\bigl(N(N-1)2^{N-1}-\Phi(c)\bigr).}\tag{IE2}
+\]
+The quantity \(N(N-1)2^{N-1}\) is also the expectation of \(\Phi\) for a uniformly random antipodally odd edge coloring.
+
+*Proof.* Each edge \(e\) lies in \(N-1\) facets, and no proper facet contains both \(e\) and its antipode. On each facet containing \(e\), the flip changes \(B\) to \(B-2s(e)\), changing its square by \(4-4s(e)B\). Its antipodal facet contributes the same change. This gives (IE1). Also
+\[
+\sum_{[e]}T_e
+=\tfrac12\sum_{\rm all\ edges\ e}s(e)\sum_{F\ni e}B(F)
+=\tfrac12\sum_FB(F)^2=\Phi(c)/2.
+\]
+Summation proves (IE2). Every facet has \((N-1)2^{N-2}\) edges, independently and symmetrically signed under a random legal coloring, so the expectation of its squared imbalance is that edge count. There are \(2N\) facets. \(\square\)
+
+**Corollary (extremal bad-coloring pivot condition).** Assume a bad legal coloring exists, and choose one maximizing \(\Phi\) among all bad legal colorings. Every orbit with \(T_e<N-1\) must be healing: flipping it produces a monochromatic full antipodal geodesic. In the original coloring, its changed edge occurs strictly inside a full geodesic and is the sole edge with the opposite color, so the original path has two adjacent switches. If instead a bad coloring minimizes \(\Phi\), the same statement holds for every orbit with \(T_e>N-1\).
+
+*Proof.* The indicated flip strictly improves the chosen potential by (IE1), so it cannot stay bad. Apply the existing universal internal-pivot theorem to the repaired monochromatic geodesic: if its changed edge were absent or terminal, the original would have a path with at most one switch, which already forces a monochromatic antipodal geodesic. \(\square\)
+
+In particular a maximum-energy bad coloring below the random baseline must have a healing positive-drift orbit, and a minimum-energy bad coloring above the baseline has a healing negative-drift orbit. This is a global criticality condition with no restricted-interaction hypothesis. To obtain closure it must be combined with the overlap structure of the forced internal two-switch paths.
+
+## Free bridge variations force root coverage at small facet energy
+
+Retain the facet imbalances \(B_j\) and energy \(\mathcal E(c)=\sum_jB_j^2\) from (FE1). Suppose bad colorings exist in dimension \(n\ge2\), and choose a bad coloring \(c\) maximizing this energy among all bad colorings in that dimension. Dimension minimality may be imposed before this maximization.
+
+For each direction \(j\), let \(f_j\) be the ordinary coloring of the facet \(x_j=0\), and let
+\[
+U_j=V(Q_{n-1})\setminus\bigl(A_0(f_j)\cup A_1(f_j)\bigr),
+\qquad K_j=\tfrac12|U_j|.
+\tag{FB1}
+\]
+Thus \(U_j\) consists of roots admitting neither monotone orientation. It is antipodally invariant by reversal. Badness gives \(P(f_j)=\varnothing\), so
+\[
+|A_0(f_j)|=|A_1(f_j)|=2^{n-2}-K_j.
+\tag{FB2}
+\]
+
+**Lemma (joint variations through empty bridge pairs).** Fix \(j\). Arbitrary simultaneous flips of the direction-\(j\) antipodal edge pairs indexed by \(U_j/\{u,\bar u\}\) preserve badness. For every subcollection \(F\) of these pairs, the vectors and signs of (FE1)--(FE2) satisfy
+\[
+\boxed{
+\sum_{p\in F}s_p\langle B,v_p\rangle
+\ge
+\left\|\sum_{p\in F}s_pv_p\right\|_2^2.
+}
+\tag{FB3}
+\]
+In particular, at every empty bridge root \(u\),
+\[
+\boxed{
+(-1)^{c_j(u)}
+\sum_{h\ne j}B_h(-1)^{u_h}\ge n-1.
+}
+\tag{FB4}
+\]
+
+*Proof.* The horizontal coloring \(f_j\) is unchanged by any direction-\(j\) recoloring. At an empty root, neither bridge color has a monotone certificate. Thus changing any number of these bridge pairs cannot create a monochromatic full geodesic; the bridge correspondence makes all these changes jointly bad.
+
+Flipping a subcollection \(F\) changes the imbalance vector to
+\[
+B-2\sum_{p\in F}s_pv_p.
+\]
+Its squared norm cannot exceed \(\mathcal E(c)\), by the selected maximality over bad colorings. Expanding the squared norm proves (FB3). A singleton has \(\|v_p\|_2^2=n-1\), giving (FB4). \(\square\)
+
+Thus every root with
+\[
+\left|\sum_{h\ne j}B_h(-1)^{u_h}\right|<n-1
+\]
+admits one monotone orientation in \(f_j\). More generally this is true whenever the left side of (FB4), with its sign, is less than \(n-1\). Its available orientation is \(1-c_j(u)\), since the other orientation would already give a monochromatic full path in \(c\).
+
+**Theorem (quantitative root-coverage bound).** For every direction \(j\),
+\[
+\boxed{
+K_j^2\le\mathcal E(c)-B_j^2,\qquad
+(n-1)K_j\le\mathcal E(c)-B_j^2.
+}
+\tag{FB5}
+\]
+Consequently, putting \(R_j=(\mathcal E(c)-B_j^2)^{1/2}\),
+\[
+\boxed{
+|A_0(f_j)|=|A_1(f_j)|
+\ge
+2^{n-2}-\min\left\{R_j,\frac{R_j^2}{n-1}\right\}.
+}
+\tag{FB6}
+\]
+
+*Proof.* Fix the signs on all edge pairs other than the \(K_j\) empty direction-\(j\) pairs. Their contributions to the facet imbalance vector have the form
+\[
+B(t)=A+\sum_{p=1}^{K_j}t_pv_p,\qquad t_p\in\{-1,1\},
+\tag{FB7}
+\]
+where \(v_{p,j}=0\), every other entry of \(v_p\) is \(1\) or \(-1\), and \(A_j=B_j\). Every choice of \(t\) remains bad by the lemma.
+
+Average \(\|B(t)\|_2^2\) over independent fair signs. The mixed terms cancel, giving
+\[
+\mathbb E_t\|B(t)\|_2^2
+=\|A\|_2^2+(n-1)K_j
+\ge B_j^2+(n-1)K_j.
+\]
+Each value of this norm is at most \(\mathcal E(c)\), proving the second inequality in (FB5).
+
+Choose any \(h\ne j\). The \(h\)-th component in (FB7) is \(A_h+\sum_pt_pv_{p,h}\). Its maximum absolute value over the free signs is \(|A_h|+K_j\ge K_j\). At such a choice, the \(j\)-th component is still \(B_j\). Hence the energy is at least \(B_j^2+K_j^2\), proving the first inequality. Formula (FB6) follows from (FB2). \(\square\)
+
+**Corollary (imbalance versus empty-root density).** Let \(M=2^{n-2}\). If every facet imbalance satisfies \(|B_h|\le b\), then every facet of this energy-maximizing bad coloring obeys
+\[
+\boxed{
+\frac{|U_j|}{2^{n-1}}
+=\frac{K_j}{M}
+\le \frac{\sqrt{n-1}\,b}{M}.
+}
+\tag{FB8}
+\]
+Conversely, if some facet has empty-root fraction at least \(\delta>0\), then a different facet has imbalance at least \(\delta M/\sqrt{n-1}\).
+
+*Proof.* Formula (FB5) gives \(K_j^2\le\sum_{h\ne j}B_h^2\le(n-1)b^2\). The converse follows by taking the largest absolute term among the same \(n-1\) imbalances. \(\square\)
+
+These conditions apply to an unrestricted energy-maximizing hypothetical counterexample. Small facet imbalance forces nearly complete coverage by the two disjoint monotone-root sets. Large empty-root sets force a quantitatively imbalanced facet. The joint variation inequalities (FB3) retain the compatibility of every collection of free bridge changes in one direction. Neither conclusion establishes paired-root existence: the two orientations can occupy different roots, and a closing argument must use their retained full paths.
+
+The single-pair energy identity was independently checked on 1000 flips in random legal odd colorings of dimensions three through seven. The two norm bounds and the singleton condition were also checked on 500 independently generated free-sign optimization problems of the form (FB7), with all free assignments enumerated. The latter verify the variational calculation; they are auxiliary optimization systems rather than bad-coloring examples.
+
+
+
+**Corollary (isolated-defect geodesic abundance).** With \(c,F,b\) as in the preceding one-facet extremality theorem, for each minority edge \(e\subset F\) there is a full antipodal geodesic \(P_e\) whose color word is \(b^{a_e}(1-b)b^{n-a_e-1}\), with \(1\le a_e\le n-2\), and with \(e\) as the unique wrong-color edge. Hence the original bad coloring contains at least the bound (FE5) distinct undirected full antipodal geodesics having a single strictly internal wrong-color edge in \(F\).
+
+*Proof.* Take a color-\(b\) monochromatic full antipodal geodesic in \(c^{[e]}\). By internal restoration criticality it uses \(e\) strictly internally. Undoing that flip changes only the color at \(e\) along this path. The path for each \(e\) is distinct because its unique wrong-color edge identifies \(e\). \(\square\)
+
+These geodesics are simultaneous witnesses in the unchanged extremal bad coloring, not merely in its separate repairs. Their interaction remains a closure question.
+
+
+**Corollary (lexicographic facet-and-energy extremality).** Assume a bad legal coloring exists in \(Q_n\). Choose one maximizing the pair \((M(c),\mathcal E(c))\) lexicographically, where \(M(c)\) is the largest absolute facet imbalance and \(\mathcal E\) is (FE1). Let \(F\) be a maximizing facet, free in all dimensions except \(j\), and let \(g\) be its induced ordinary coloring. Then:
+
+(i) Every minority edge in \(F\) is a healing pair, yielding all the isolated-defect witnesses of (FE6).
+
+(ii) Every antipodal pair \(p\) of direction-\(j\) edges for which \(s_p\langle B,v_p\rangle<n-1\) is healing.
+
+(iii) Let \(A(g)\) be the set of roots admitting a nondecreasing full facet path, with the bridge selector oriented as in the previously established restoration-fan theorem. For every direction-\(j\) pair disjoint from the antipodal root pairs represented in \(A(g)\), one has
+\[
+\boxed{s_p\langle B,v_p\rangle\ge n-1.}
+\tag{FE7}
+\]
+
+*Proof.* Claim (i) follows from the maximizing-facet theorem: its flip raises \(M\). Flipping a direction-\(j\) edge pair leaves the colors of all edges in \(F\) unchanged, so it leaves the chosen facet imbalance unchanged and hence cannot lower \(M\). If such a flip raises \(\mathcal E\) by (FE2), lexicographic maximality forces goodness, proving (ii). By the restoration-fan theorem, a direction-\(j\) pair disjoint from \(A(g)\) and its antipodal image is not a healing pair. Thus its flip stays bad and cannot raise \(\mathcal E\), yielding (iii). \(\square\)
+
+This simultaneously places exponentially many critical pivots in one facet and forces all nonhealing bridge pairs to align, with margin, with a weighted-majority field determined by the entire coloring. A closing argument must exploit the incompatibility, if any, between these routing constraints and the paired-root geometry of \(A(g)\).
+## Simultaneous facet repairs and interval certificates
+
+Assume a bad antipodally odd coloring c of Q_n exists and choose one maximizing the largest absolute signed facet imbalance among bad colorings. Let F be a maximizing facet, b its majority color, and D its minority-colored edge set.
+
+**Theorem (simultaneous repair saturation).** Every nonempty S subset D gives a good coloring c^[S] after flipping all antipodal edge pairs indexed by S.
+
+*Proof.* Each flipped minority edge increases the absolute signed imbalance of F by two. Thus the imbalance after all flips is |B_F(c)|+2|S|, exceeding the extremal maximum among bad colorings. QED.
+
+There is an intrinsic description of the resulting paths. Fix a rooted full antipodal geodesic P. Define A_P={e in D:e belongs to P} and C_P={e in D:bar e belongs to P}. Call P eligible when every edge of color 1-b in the original coloring lies in D. For eligible P, it is monochromatic of color b after flips S precisely when A_P subset S and C_P intersect S is empty. A_P is nonempty by badness of c, and A_P,C_P are disjoint because P uses every dimension once.
+
+**Corollary (Boolean interval covering).** With [A,T] denoting all sets S such that A subset S subset T,
+[
+2^D\setminus\{\varnothing\}=
+\bigcup_{P\text{ eligible}}[A_P,D\setminus C_P].
+\tag{BR1}
+]
+*Proof.* Every nonempty S produces a monochromatic full path by the theorem. Its antipodal image has the opposite color, hence some monochromatic full path has color b. Such a path is eligible and fulfills the stated incidence conditions. Conversely each listed interval supplies a color-b monochromatic full path after those flips, and its members are nonempty. QED.
+
+**Corollary (path-certificate mass).** For independent Bernoulli-p selection of S subset D and each 0<=p<=1,
+[
+1-(1-p)^{|D|}\le\sum_{P\text{ eligible}}p^{|A_P|}(1-p)^{|C_P|}.
+\tag{BR2}
+]
+*Proof.* Take the union bound on the interval cover. QED.
+
+This furnishes dimension-uniform simultaneous repair constraints without a structural hypothesis on the direction functions. Whether such an interval covering can be excluded using dimension-simple path intersections remains open.
+
+### A common extremizer for paired-root criticality and bridge energy
+
+The one-facet and squared-energy arguments can be coupled to the bridge-independent minimum obstruction, with their quantifiers retained.
+
+Suppose bad legal colorings exist in dimension \(n=d+1\). Let
+\[
+m_d=\min\{|E_1(f)|: f\text{ colors }Q_d,\ P(f)=\varnothing\},
+\qquad L_d=d2^{d-1}.
+\]
+The minimum exists by the odd bridge equivalence. Global color complementation preserves paired-root absence, so \(m_d\le L_d/2\). Let \(M_*=\max_{c\ {\rm bad}}\max_j|B_j(c)|\).
+
+**Theorem (identification of the two extremal problems).**
+\[
+\boxed{M_*=L_d-2m_d.}
+\tag{CE1}
+\]
+Every facet attaining \(M_*\), with its minority color called one, is a minimum-one-edge paired-root obstruction. Consequently, repairing any nonempty subset of its minority edges creates a paired root in the facet itself. Every legal bridge assignment over the repaired facet is good.
+
+*Proof.* Every facet of every bad legal coloring is paired-root-free. Its minority class has at least \(m_d\) edges, so its absolute imbalance is at most \(L_d-2m_d\). This proves the upper bound in (CE1). Conversely choose a minimizer \(f\). The bridge equivalence supplies a bad extension \(C(f,q)\), whose lower facet has imbalance \(L_d-2m_d\). This proves equality. An attaining facet therefore has \(m_d\) minority edges. Any nonempty minority repair lowers this count and must have a paired root by the definition of \(m_d\). The universal bridge criterion gives the final statement. \(\square\)
+
+**Corollary (simultaneous criticality and free-bridge bounds).** Choose \(c\) maximizing \((M(c),\mathcal E(c))\) lexicographically among bad legal colorings, and let \(F=\{x_j=0\}\) be an attaining facet, after a cube symmetry. Its ordinary coloring \(f\), with colors normalized as above, has all the bridge-independent repairs in the theorem. At the same time, all joint free-bridge inequalities (FB3)--(FB8) hold for its empty-root pair count \(K_j\). In particular,
+\[
+\boxed{K_j^2\le\mathcal E(c)-B_j^2,\qquad
+dK_j\le\mathcal E(c)-B_j^2.}
+\tag{CE2}
+\]
+
+*Proof.* Any simultaneous change of the direction-\(j\) bridge bits at empty roots stays bad and leaves \(F\) unchanged. Its value of \(M\) is at least \(M_*\), because \(F\) still attains that value, and at most \(M_*\), by the definition of the global maximum. Thus \(M\) remains equal to \(M_*\). Lexicographic maximality now makes \(\mathcal E\) maximal over this entire free-bridge cube. The proofs of (FB3)--(FB8) apply verbatim to direction \(j\). \(\square\)
+
+This common extremizer combines two previously separate sources of information: every nonempty minority repair gives opposite monotone paths at a common root, independently of the bridge; every empty root supplies a jointly free bridge bit subject to the quadratic bounds. The assertion about (FB3)--(FB8) is for the chosen maximizing facet. Lexicographic maximality alone does not justify those inequalities for every other direction.
+
+**Closure attempt and remaining lemma.** The most direct continuation is to apply the singleton repair normal form (Propositions 22--23) simultaneously to this facet's minority edges. Each repair either joins two original zero arms through its single changed edge, or creates one orientation at a root already carrying the opposite original orientation. To close the argument, these witnesses must force compatible original arms at one root. The energy bounds constrain how many roots can be empty, while the weak-threshold theorem constrains signs of the full coloring's facet vectors; neither currently aligns the direction supports or interior seams of the repair witnesses. The common extremizer removes the incompatibility of the extremization choices, but this path-compatibility lemma remains unproved.
+
+
+## Free-bridge twisting and root-activation congestion
+
+Let \(n\ge3\), and suppose there exists a bad antipodally odd coloring \(c\) of \(Q_n\). Choose \(c\) maximizing its largest absolute facet imbalance among all bad colorings, and fix a maximizing facet \(F=\{x_j=0\}\). Complement both color labels if needed so that color zero is more frequent in \(F\). Let \(D\) denote its color-one edges, \(g=c|_F\), and \(A=A_0(g)\) the roots admitting a full \(0^*1^*\) facet path. Put \(m=n-1\) and
+\[
+q=2^{m-1},\quad
+U=Q_m\setminus(A\cup\bar A),\quad K=|U|/2=q-|A|.
+\]
+The sets \(A,\bar A\) are disjoint by badness and the bridge equivalence. Let \(S\) be the zero-colored bridge selector; hence \(S\cap A=\varnothing\). Let \(\Omega=S\setminus U\), the fixed selected roots on the occupied antipodal root pairs. Then \(|\Omega|=|A|=q-K\).
+
+**Lemma (free-selector dichotomy).** For every nonempty \(H\subseteq D\), let \(g^H\) be obtained from \(g\) by recoloring all edges of \(H\) zero and put \(A_H=A_0(g^H)\). At least one of the following holds:
+\[
+\boxed{
+\Omega\cap A_H\ne\varnothing,\qquad
+\exists u\in U:\ u,\bar u\in A_H.
+}
+\tag{FR1}
+\]
+
+*Proof.* After flipping \(H\) and the corresponding antipodal edge mates, the imbalance of \(F\) strictly exceeds its maximum in \(c\). The resulting legal coloring is good for **every** choice of colors on bridge pairs indexed by \(U/\{u,\bar u\}\), since bridge changes leave the facet unchanged. Keep all other bridge choices fixed as in \(c\). By the bridge equivalence, each of these selectors must meet \(A_H\). If \(\Omega\cap A_H\) were empty and no pair \(u,\bar u\subset U\) belonged to \(A_H\), choose in every free bridge pair the member outside \(A_H\). The resulting selector would avoid \(A_H\), contradiction. \(\square\)
+
+**Lemma (a paired-root gain from one edge creates a monochromatic facet path).** Let \(h\) be any binary edge coloring of \(Q_m\), and let \(e\) be one edge. Suppose \(u,\bar u\notin A_0(h)\) but \(u,\bar u\in A_0(h^e)\), where \(h^e\) reverses the color of \(e\). Then \(h^e\) admits a monochromatic full geodesic from \(u\) to \(\bar u\) traversing \(e\). The corresponding geodesic in \(h\) has the color of every edge except \(e\) constant; the edge \(e\) is strictly internal.
+
+*Proof.* The two \(0^*1^*\) paths from \(u\) and \(\bar u\) in \(h^e\) both traverse \(e\), since neither exists in \(h\). Reverse the latter, giving a \(1^*0^*\) path from \(u\) to \(\bar u\) through \(e\). Both paths traverse \(e\) in the same orientation and at the same rank, because the rank of each vertex from \(u\) equals its Hamming distance from \(u\). If the new color of \(e\) is zero, splice the zero prefix of the first path through \(e\) to the zero suffix of the reversed second path. If it is one, splice the one prefix of the second path to the one suffix of the first. The meeting vertex determines the set of previously used dimensions, so the splice is a full geodesic. Returning to \(h\) changes only \(e\). If \(e\) were terminal, reversing this nearly monochromatic path if necessary would produce a \(0^*1^*\) full path from \(u\) or \(\bar u\) in \(h\), contrary to the hypothesis. \(\square\)
+
+**Theorem (activation congestion in a maximizing facet).** Write
+\[
+\delta_m=\left\lceil\frac{2^{m-2}}{1+m(m-1)}\right\rceil,
+\qquad |D|\ge q+\delta_m,
+\]
+where the lower bound is the previously established geodesic-blocker gap. For each \(e\in D\) for which \(A_0(g^e)\) contains an antipodal pair lying in \(U\), designate \(e\) a *paired activation*; let \(r\) be their number. Every paired activation produces a monochromatic full geodesic in \(g^e\) with \(e\) as its unique strictly internal defect in \(g\).
+
+Assign each remaining \(e\in D\) to a root \(y(e)\in\Omega\cap A_0(g^e)\), whose existence follows from (FR1). For \(y\in\Omega\), put \(d_y=|\{e:y(e)=y\}|\). Then
+\[
+\boxed{\sum_{y\in\Omega}(d_y-1)_+\ge\delta_m+K-r.}
+\tag{FR2}
+\]
+In particular, either at least \(\delta_m+K\) minority-edge repairs create paired roots on formerly empty root pairs, or two distinct minority-edge repairs activate the same previously unfavorable bridge root.
+
+*Proof.* There are \(|D|-r\) assigned edges and at most \(|\Omega|=q-K\) occupied targets. Therefore
+\[
+\sum_y(d_y-1)_+\ge |D|-r-|\Omega|
+\ge (q+\delta_m)-r-(q-K)=\delta_m+K-r.
+\]
+The monochromatic facet-path assertion follows from the preceding shared-edge splicing lemma. \(\square\)
+
+This reduction uses the full dimension-simple bridge correspondence and has no restriction on direction interactions. To complete NORI1 through this route, one must show that paired activations or collisions of restored monotone paths cannot persist in an imbalance-maximal bad coloring. Mere collisions do not automatically yield a monotone path: two different edge recolorings can each repair the same root while neither path exists before recoloring.
+
+
+
+## Same-facet pivot injection into three-switch projective cycles
+
+**Lemma.** In an antipodally odd coloring of \(Q_N\), fix a facet \(F\) and a color \(b\). A projective dimension-simple Petrie cycle with three switched comparisons supports at most one interior pivot \(e\subset F\) of color \(1-b\) whose removal from a full geodesic leaves a monochromatic word of color \(b\).
+
+*Proof.* Such a geodesic has color word \(b^a(1-b)b^{N-a-1}\), \(1\le a\le N-2\). Its projective completion has two switches adjacent to the unique wrong-color observation and the third switch at the twisted closing seam. In a cyclic sequence with three switches, at most two observations can each be incident to two switches; if two exist they are adjacent across a switched comparison (the triangle case has the same property).
+
+If two different pivots in \(F\) existed on one such cycle, their quotient observations would therefore be adjacent across a switch. Any incident lift between two horizontal edges in \(F\) and their antipodal partners connects either both edges in \(F\) or both antipodes in the opposite facet: mixing these is impossible because the fixed facet bits differ. Both valid lifts have equal edge colors, since the given pivots both have color \(1-b\) and antipodal reversal changes both. Their quotient comparison therefore cannot switch, a contradiction. \(\square\)
+
+**Theorem.** Suppose a bad antipodally odd coloring of \(Q_N\), \(N\ge4\), maximizes the largest absolute facet imbalance among bad colorings. Let \(F\) be a maximizing facet and \(R\) its minority-color edges. If \(Z_1(c)\) counts projective Petrie cycles with three switches, then
+\[
+\boxed{Z_1(c)\ge |R|\ge2^{N-2}+
+\left\lceil\frac{2^{N-3}}{1+(N-1)(N-2)}\right\rceil.}
+\]
+*Proof.* The maximal-facet healing theorem supplies, for each \(e\in R\), a full geodesic with \(e\) its only wrong-color edge and lying internally. Its projective completion has three switches. Choose one such cycle for each \(e\). The preceding lemma says distinct edges of \(R\) cannot yield the same cycle. The final inequality is the already proved unrestricted imbalance gap applied to the facet's induced coloring. \(\square\)
+
+This doubles the previous generic grade-one witness bound in the extremal same-facet setting. It is a necessary condition on every possible unrestricted counterexample, not a new locality hypothesis. The lower bound by itself does not establish closure.
+
+
+Corollary: In a bad coloring maximizing facet imbalance, there are more minority edges in the maximizing facet than majority-colored bridges perpendicular to that facet. Each minority edge has a full antipodal repair witness of the majority color, whose unique perpendicular bridge was unchanged. Pigeonhole therefore forces distinct minority pivots whose repair paths cross the same bridge edge. Their projective three-switch completions are distinct by the preceding pivot-injection theorem. This is an unavoidable global two-cycle configuration in any hypothetical counterexample, and is a precise target for a further exchange argument.
+
+## Minority-repair dependency digraphs and shared-bridge obstructions
+
+The simultaneous repair theorem above covers every nonempty set of minority edges in a maximizing facet. The next lemmas identify which subsets already have witnesses coming from the singleton repairs, and show why a collision of bridges alone is not enough for closure.
+
+Fix a legal coloring c and a facet F with preferred color b. Let D be a set of edges of color 1-b in F. Assume for each e in D there is a full antipodal geodesic P_e whose only edge of color 1-b is e, strictly internally. (An imbalance-maximizing bad coloring has this property for its entire minority set.)
+
+Define a directed graph T on D by
+\[
+e\longrightarrow f \quad\Longleftrightarrow\quad f\ne e\ \text{and}\ \bar f\in P_e.
+\tag{RD1}
+\]
+Its outgoing degree is at most n-2, because a full geodesic P_e uses e, one edge perpendicular to F, and at most n-2 edges in the opposite facet.
+
+**Theorem (dependency-sink repair certificate).** If a nonempty set S subset D has some e in S without an outgoing neighbor in S, then the simultaneous antipodal pair flip at S has a monochromatic full geodesic, witnessed by P_e. Hence every set S for which the induced directed graph T[S] is acyclic is automatically repaired by one of the chosen singleton witnesses.
+
+*Proof.* Originally P_e consists entirely of color b edges except e. Flipping all pairs indexed by S changes e to b. It does not change any other edge of P_e: no other member of D occurs on P_e, and the only other potentially changed edges are antipodal mates bar f with f in S. By the sink hypothesis P_e avoids all such edges. Thus P_e is entirely color b after the simultaneous recoloring. QED.
+
+**Corollary (large independent repair subcubes).** There is a subset I of D of size at least \(|D|/(2n-3)\) such that every nonempty subset S of I is repaired by the already chosen singleton witnesses. In particular, the simultaneous repair condition on 2^D contains a Boolean subcube of dimension at least \(|D|/(2n-3)\) that imposes no additional witness condition beyond singleton healing.
+
+*Proof.* The underlying undirected graph of T has average degree at most 2(n-2). The standard greedy/random-order independent-set bound gives an independent set I of size at least |D|/(2n-3). Any nonempty S subset I has a sink. QED.
+
+**Proposition (exponentially many same-bridge pivots at an empty facet-root pair).** Fix integers \(m\ge4\) and \(a,b,c\ge1\) with \(a+b+c+1=m\). On Q_m color the edges between Hamming layers of ranks k and k+1 by 1 when k<a or k=a+b, and by 0 otherwise. Every full path from 0^m to 1^m then has color word
+\[
+1^a0^b1\,0^c,
+\]
+and every reverse path has \(0^c1\,0^b1^a\). Hence neither pole belongs to the nondecreasing favorable-root set A_0.
+
+Embed this coloring as the lower facet F of Q_{m+1}, define its antipodal extension in the upper facet, and color the bridge at y=1^m by zero (therefore the bridge at 0^m has color one). Then for each edge e in the rank-(a+b) layer of F there is a full antipodal geodesic P_e traversing the SAME color-zero bridge at y, whose only color-one edge is e and for which e is strictly internal. There are
+\[
+\boxed{(m-a-b)\binom{m}{a+b}}
+\tag{RD2}
+\]
+different such edges and witnesses, of order \(\sqrt m\,2^m\) when the defect layer is central.
+
+*Proof.* Choose any monotone facet path from 0^m to 1^m through e, and write its vertices after the first a dimensions as x. From (x,0), follow the remainder of that path to (y,0), cross the fixed bridge, then in the upper facet traverse the antipodal image of the first a edges, from (y,1) to (bar x,1). In the lower segment the word is \(0^b1\,0^c\). The bridge and all upper edges have color zero, by construction and antipodal oddness. Hence the only nonzero edge is e and it occurs internally. There are \((m-a-b)\binom{m}{a+b}\) rank-(a+b) edges, and different e give different paths. QED.
+
+The proposition is a counterexample to any claim that two, or even exponentially many, distinct internal defect paths passing through one bridge whose antipodal facet roots are both unfavorable must splice into a favorable facet path. The global bad-coloring hypothesis and its constraints across all bridges cannot be discarded. The dependency digraph also shows that only subsets whose chosen witnesses all inhibit each other (which necessarily contain a directed cycle) have a chance to add information beyond singleton repairs.
+
+
+## Bridge-distance holonomy and sharp two-cycle separation
+
+**Theorem (bridge-distance holonomy).** Fix a facet F of Q_n and let P_e be full antipodal geodesics oriented from F to its opposite facet, each crossing a bridge at y_e and having a single strictly internal minority pivot e in F. Define e->f if P_e traverses bar f in the opposite facet. For any edge e of direction i in F put R_y(e)={l!=i:e_l!=y_l}, and d_y(e)=|R_y(e)|, the distance from y to edge e. If e->f then R_{y_e}(e) union {i} is a subset of R_{y_e}(f), hence d_{y_e}(f)>=d_{y_e}(e)+1. Proof: dir f=k has not flipped before the bridge, so k is not in R_{y_e}(e). Any l in R_{y_e}(e) flips after e but before the bridge, hence bar f_l=y_e_l and f_l!=y_e_l. Direction i flips at e and cannot flip again, so bar f_i=y_e_i and f_i!=y_e_i. Thus the inclusion. For a directed cycle e_1->...->e_t->e_1, sum the inequalities and reindex to obtain t<=sum_s[d_{y_(s-1)}(e_s)-d_{y_s}(e_s)]<=sum_s d_H(y_(s-1),y_s), using the 1-Lipschitz property of edge-distance. No cycle can occur when all bridge positions coincide. Moreover, if e->f and f->e, y=y_e,z=y_f, i=dir e,k=dir f, then y_i!=z_i and y_k!=z_k. For any l outside i,k with y_l=z_l, the two inclusion relations show e_l=f_l. If this common bit disagrees with y_l, l must be traversed after e and before the bridge on P_e; if it agrees, l must be traversed after the bridge and before bar f. Therefore every step before e or after bar f occurs in a direction where y,z disagree, outside i,k. If a_e counts the steps before e and b_e those after bar f, d_H(y,z)>=2+a_e+b_e>=3. The two bridges have the same color, hence are not antipodal; d_H(y,z)<=m-1 with m=n-1. Sharpness: in Q5, bit4 facet direction, prescribe colors (0,1,0,0,0) on the rooted full geodesics (root,order)=(1,(2,0,4,3,1)) and (5,(2,1,4,3,0)). These prescriptions occupy seven compatible antipodal edge-pair orbits and can be completed arbitrarily. The minority pivots e=(0,4),f=(1,1) are internal; P_e contains bar f=(1,28), P_f contains bar e=(0,26). Their bridge positions 4 and3 in Q4 have Hamming distance3. This is a legal coloring but not claimed bad. The metric obstruction localizes any cyclic critical-repair interactions to differing bridge positions, beyond fixed-bridge collisions.
+
+### Full rank-growth identity and reinforced bridge-cycle holonomy
+
+With the bridge dependency notation of (BH1), let \(P_e\) traverse \(e\) in the lower facet, cross the bridge at \(y=y_e\), and later traverse \(\bar f\) in the upper facet. Let \(a_e\) count steps before \(e\), and \(b_e\) steps after \(\bar f\). Then
+\[
+\boxed{d_y(f)-d_y(e)=1+a_e+b_e.}\tag{BH6}
+\]
+
+*Proof.* Distinct dimensions on a full path fall into the five groups: before \(e\), at \(e\), between \(e\) and the bridge, between the bridge and \(\bar f\), at \(\bar f\), and after \(\bar f\). Each dimension before \(e\) or after \(\bar f\) has the fixed bit of \(e\) equal to \(y\), and that of \(f\) opposite \(y\); so it contributes one to \(d_y(f)-d_y(e)\). The direction of \(e\) contributes one as well. Each dimension strictly between \(e\) and the bridge disagrees with \(y\) at both \(e\) and \(f\), contributing zero to the difference. Each dimension strictly between the bridge and \(\bar f\) agrees with \(y\) at both, also contributing zero. Finally, the direction of \(f\) contributes zero by definition. Summing gives (BH6). \(\square\)
+
+**Theorem (reinforced cycle-perimeter bound).** A dependency cycle \(e_1\to\cdots\to e_t\to e_1\), with bridges \(y_s=y_{e_s}\), prefix lengths \(a_s\) before each \(e_s\), and suffix lengths \(b_s\) after each \(\bar e_{s+1}\), satisfies
+\[
+\boxed{\sum_{s=1}^t d_H(y_s,y_{s+1})
+\ge\sum_{s=1}^t(1+a_s+b_s)\ge2t.}
+\tag{BH7}
+\]
+*Proof.* Sum (BH6) over the cycle, cyclically reindex and apply the 1-Lipschitz inequality for \(y\mapsto d_y(e)\), as in the proof of (BH2). Each minority pivot is strictly internal, hence \(a_s\ge1\). \(\square\)
+
+This strengthens the previously published perimeter bound from \(t\) to \(2t\), with additional penalties for long witness arms. The rank-growth identity was independently checked for every admissible pivot/upper-mate position and direction order in Q3, Q4, Q5 (8, 192, 3840 instances); the argument above holds for all dimensions.
+
+
+Rooted reachability repair lemma. For arbitrary edge coloring, a root initially lacking nondecreasing geodesics becomes favorable after changing one edge from one to zero precisely when the edge tail is reachable from the root through zero edges and its head admits a nondecreasing completion to the antipode. This follows by splitting the repaired path at its changed zero edge. The two endpoint sets are disjoint before repair.
+
+**Two-phase rooted restoration theorem.** For arbitrary edge coloring f and root r not admitting a nondecreasing full geodesic, orient the cube from r by subsets. Write Z for zero-only reachable states, V for nondecreasing-prefix reachable states, U for states permitting nondecreasing completion to the top, and O for states permitting all-one completion. Then Z intersect U and V intersect O are both empty. Changing a one edge u-v to zero restores r precisely when u lies in Z and v lies in U. Changing a zero edge u-v to one restores r precisely when u lies in V and v lies in O. Necessity follows by splitting a newly favorable path at the recolored edge, and sufficiency by concatenating its specified prefix and suffix.
+
+**Transverse facet synchronization theorem.** In a bad odd cube coloring, any antipodal edge pair whose reversal makes the coloring good gives a rooted edge repair in every facet transverse to its direction. To see this, take a monochromatic zero antipodal geodesic after reversal. Its bridge in each other direction remains zero, so the bridge correspondence identifies a favorable root in the repaired lower facet. The same root was not favorable before reversal, or the original cube coloring would have been good. All these root repairs are synchronized by one geodesic.
+
+## Facet energy as first-level Walsh mass
+
+Let c be any antipodally odd binary coloring of E(Q_n), n>=3. Put \(\sigma_i(x)=(-1)^{c_i(x)}\), independent of bit i, \(d(x)=\sum_i\sigma_i(x)\), and let B_j be the signed color sum of edges internal to facet x_j=0. Write \(\widehat d(S)=2^{-n}\sum_xd(x)(-1)^{\sum_{i\in S}x_i}\).
+
+**Theorem.** For all j,
+\[
+\boxed{B_j=\tfrac14\sum_x(-1)^{x_j}d(x)
+=2^{n-2}\widehat d(\{j\}),\quad
+\mathcal E(c)=2^{2n-4}\sum_j\widehat d(\{j\})^2.}
+\tag{FW1}
+\]
+The Walsh spectrum of d is supported on odd subsets S other than the full set [n].
+
+*Proof.* Since \(\sigma_j\) ignores bit j and is odd when the other bits are complemented, its sum over the facet x_j=0 is zero. Summing d over that facet counts each horizontal edge twice and each vertical edge with total zero; hence \(\sum_{x_j=0}d(x)=2B_j\). Antipodal oddness gives \(\sum_{x_j=1}d(x)=-2B_j\), proving (FW1). The function d is antipodally odd, so all even Walsh levels vanish. For every i, \(\sigma_i\) ignores x_i, so its Fourier coefficient on [n] vanishes; the same holds for d. \(\square\)
+
+**Corollary (unrestricted spectral sufficiency, including equality).** Every legal coloring satisfying
+\[
+\boxed{\mathcal E(c)\ge2^{2n-4}(n^2-6n+6)}
+\tag{FW2}
+\]
+admits a monochromatic full antipodal geodesic. The same conclusion holds if \(\sum_S\widehat d(S)^2\ge n^2-6(n-1)\).
+
+*Proof.* Let \(r(x)\) be the number of incident edges of color one. Then \(d(x)=n-2r(x)\) and \(r(x)(n-r(x))=(n^2-d(x)^2)/4\). Thus the projective-vertex bichromatic-turn count is
+\[
+N_c=\tfrac18\sum_x(n^2-d(x)^2)
+=2^{n-3}\left(n^2-\sum_S\widehat d(S)^2\right).
+\tag{FW3}
+\]
+The mixed exchange variance theorem in “Global Petrie switch moment and local-turn counting” proves that a constant Petrie grade must equal one. Therefore every bad coloring has mean Petrie grade strictly greater than three, so \(N_c>3\cdot2^{n-2}(n-1)\). It follows that \(\sum_S\widehat d(S)^2<n^2-6(n-1)\). Parseval and (FW1) give \(\mathcal E(c)<2^{2n-4}(n^2-6n+6)\). The contrapositives prove both assertions. \(\square\)
+
+The same mixed exchange theorem supplies a positive quantitative gap below these bad-coloring bounds in dimensions at least six. In dimension five, the pointwise inequality \(d(x)^2\ge1\) already reaches the equality threshold, giving an analytic NORI1 proof; the accompanying multiplicity argument gives at least three monochromatic-zero unoriented full antipodal geodesics.
+
+The identity gives a direct relation between the facet-energy extremal argument and the global Petrie turn moments, without restricting the coloring class. It measures only first-order spatial imbalance, so its sufficient condition need not hold for well-distributed colorings.
+
+
+Bridge-root metric theorem. Bridge-root metric selection theorem (unrestricted, n>=3). Let P be a full dimension-simple antipodal geodesic, and for each direction j let w_j be the lower endpoint of its unique direction-j edge, represented by bits outside j. Define D_ij=1+d_H(w_i restricted away from i,j, w_j restricted away from i,j). Then D_ij=|rank_P(i)-rank_P(j)|. Indeed, a bit k outside i,j differs at the two bridge endpoints precisely when direction k occurs strictly between i,j along P. Conversely, suppose a family of candidate bridge endpoints has D_ij=|rank(i)-rank(j)| for some permutation of the n directions. Adjacent directions in that permutation have D=1, so their endpoint labels agree at every bit other than their two direction bits. Hence for any fixed k, the kth bits of the other endpoints are constant on each side of k in the proposed order. If k is internal, the two endpoints adjacent to k have D=2; every shared bit other than k agrees by the adjacent-pair equalities, so their kth bits differ. Choose initial root bit r_k as the common kth bit of all earlier endpoints if there are earlier ones; if k is first, set r_k to the complement of the common kth bit of all later endpoints. Then w_j(k)=r_k XOR [k precedes j] for all j different from k. The path starting at r and traversing the proposed order has precisely the given bridge endpoints. The line metric recovers the direction order up to reversal and then determines the unoriented geodesic uniquely. This was exhaustively audited over all candidate bridge endpoint assignments: 24 valid families in Q3 and 192 in Q4, matching their numbers of unoriented antipodal geodesics. NORI1 therefore has a complete unrestricted metric-selection reformulation: For an odd cube-edge coloring c, in each direction j let Z_j be the lower endpoints of its zero edges (one choice from every antipodal edge pair). A monochromatic-zero antipodal geodesic exists if and only if one can select w_j in Z_j for every j so that D is a consecutive-integer line metric. A healing antipodal edge orbit produces an otherwise zero-colored line-metric selection with its unique wrong-color chosen edge in the healed direction.
+
+
+**Corollary (enumeration and the random baseline).** In \(Q_n\), \(n\ge3\), the number of valid bridge-root line-metric selections equals
+\[
+\boxed{2^{n-1}n!}.
+\]
+For a uniformly random antipodally odd coloring of cube edges, the expected number of monochromatic-zero full antipodal geodesics is
+\[
+\boxed{\mathbb E N_0=\frac{n!}{2}}.
+\]
+*Proof.* Every unoriented full geodesic has two oriented descriptions, obtained by choosing its first endpoint and an ordering of all \(n\) directions. There are \(2^n n!\) oriented descriptions, and the bridge-root characterization is a bijection on unoriented geodesics. This gives \(2^{n-1}n!\) signatures. For a fixed full geodesic, its \(n\) edges belong to distinct antipodal edge orbits because the directions are distinct. Their colors are therefore independent fair bits under a uniformly random odd coloring, so the chance all edges are zero is \(2^{-n}\). Sum over geodesics by linearity of expectation. \(\square\)
+
+The factorial random baseline supports the proposed distribution-versus-extremal viewpoint, but it does not establish existence for every coloring; a deterministic transversality or path-exchange argument is still needed.
+
+
+
+**Lemma (one-direction overlap rigidity).** Let \(P,Q\) be dimension-simple full antipodal geodesics in \(Q_n\), \(n\ge3\), that use the same undirected edge in every direction except possibly direction \(i\). Either they coincide up to reversal, or their differing direction-\(i\) edges form an antipodal pair and both are terminal edges of their respective paths.
+
+*Proof.* Delete the direction-\(i\) edge of \(P\). If it was internal, the remaining edge set forms two nonempty paths. Among their four candidate endpoint pairs, only the original joining pair differs in one bit: every other pair differs in at least two, since the removed direction is distinct from every remaining path direction. Thus the deleted edge is the unique reconnection. If the removed edge was terminal, the remaining edges form one path of length \(n-1\). Completing it by a direction-\(i\) edge requires extending one endpoint or the other; these two edges are antipodal because the remaining chain traverses every other direction once. \(\square\)
+
+**Corollary (distinct defects force two changed directions).** In an antipodally odd coloring, two full geodesics with distinct unique wrong-color edges of the same minority color and every other edge of the opposite majority color must differ in their selected undirected edges in at least two direction classes. Otherwise the unique wrong-color edges would be identical or antipodal, contrary to their distinctness and common color.
+
+This supplies a two-direction separation condition on the full bridge signatures of the different critical repair geodesics forced by extremal facet imbalance.
+
+
+
+## Universal triangle-compatible selectors and tournament closure
+
+Let \(n\ge3\). For every direction \(i\), let \(\chi_i\) color its lower-edge endpoints \(w\in\mathbb F_2^{[n]\setminus\{i\}}\), with antipodal oddness \(\chi_i(\bar w)=1+\chi_i(w)\). A bridge-row family \(W=(w_1,\ldots,w_n)\) has symmetric pair labels \(\tau_{ij}=w_i(j)+w_j(i)\). Define **triangle compatibility** by
+\[
+\boxed{\tau_{ij}+\tau_{jk}+\tau_{ki}=1\quad(i,j,k\text{ distinct}).}\tag{TC1}
+\]
+
+**Theorem (tournament representation).** Equation (TC1) is equivalent to the existence of a vertex \(r\in\mathbb F_2^n\) and a tournament \(T\) on the direction set for which
+\[
+\boxed{w_i(j)=r_j+[j\prec_T i]\quad(i\ne j).}\tag{TC2}
+\]
+The two representations are \((r,T)\) and \((\bar r,T^{\rm rev})\). The family represents a full antipodal dimension-simple geodesic precisely when the tournament is transitive.
+
+*Proof.* Equation (TC2) implies \(\tau_{ij}=1+r_i+r_j\), giving (TC1). Conversely, the triangle equations imply the symmetric pair values \(1+\tau_{ij}\) form a coboundary on \(K_n\); choose \(r_1=0\) and \(r_j=1+\tau_{1j}\). Then \(1+\tau_{ij}=r_i+r_j\). Define the indicator of \(j\prec_T i\) to be \(w_i(j)+r_j\). Opposite indicators sum to \(\tau_{ij}+r_i+r_j=1\); hence these prescribe a tournament. The coboundary potential \(r\) is unique up to global complementation, which reverses \(T\). A tournament describes a direction order if and only if it is transitive. \(\square\)
+
+**Theorem (equipartition of compatible monochromatic rows).** For every antipodally odd edge coloring, the number of triangle-compatible families with all chosen direction edges color zero is independent of the coloring:
+\[
+\boxed{|\{W:\text{(TC1)},\ \chi_i(w_i)=0\ \forall i\}|=2^{\binom n2-1}.}\tag{TC3}
+\]
+
+*Proof.* The \(\binom n2\) pair labels have \(2^{n-1}\) feasible assignments, determined by \(\tau_{1j}\) for \(j>1\). For each prescribed pair bit \(\tau_{ij}\), there are two assignments to its two directed entries \(w_i(j),w_j(i)\). Thus \(2^{\binom n2+n-1}\) families satisfy (TC1).
+
+Complementing a row \(w_i\) toggles both of its contributions in each triangle containing \(i\), leaving (TC1) unchanged. These independent row flips act freely with orbit size \(2^n\). Antipodal oddness guarantees that complementing row \(i\) toggles precisely the selected color \(\chi_i(w_i)\), with all other colors unaffected. Therefore each orbit contains one member with all selected colors zero. Division by \(2^n\) proves (TC3). \(\square\)
+
+**Unrestricted NORI1 reformulation.** The conjecture holds if and only if at least one of the \(2^{\binom n2-1}\) guaranteed all-zero triangle-compatible families has a transitive tournament. Thus the pairwise and triangle consistency constraints never obstruct selection; the remaining problem is global tournament acyclicity.
+
+**Obstruction to closing by local compatibility alone.** For even \(n\), take the valid antipodally odd coloring \(\chi_i(w)=\sum_{j\ne i}w_j\). Fix any tournament \(T\), including a tournament with directed triangles, and let \(d_i\) be its indegrees. Put \(R=\binom n2\bmod2\), \(r_i=R+d_i\bmod2\). Since \(n\) is even, \(\sum_i r_i=R\), and the compatible rows (TC2) have
+\[
+\chi_i(w_i)=\sum_{j\ne i}r_j+d_i=R+r_i+d_i=0.
+\]
+Thus directed triangles do occur among all-zero compatible families. A proof of NORI1 needs a mechanism selecting a transitive member, not just a nonempty compatible family.
+
+Exhaustive checks in dimensions three and four confirmed the respective constant numbers four and 32 of all-zero compatible families for every odd coloring. The theorem is dimension-uniform and does not rely on these checks.
+
+
+
+### Self-switching tournament normalization and its local-descent obstruction
+
+For a tournament \(T\) on \([n]\), let \(b_i(T)\) denote the Boolean vector of its in-neighbors at \(i\): \(b_i(j)=[j\prec_T i]\). Given an arbitrary antipodally odd cube-edge coloring with local functions \(\chi_i\), put
+\[
+s_i(T)=\chi_i(b_i(T)),\qquad
+F_\chi(T)=\operatorname{Switch}_{s(T)}(T),
+\tag{TN1}
+\]
+where switching reverses an arc \(i,j\) precisely when \(s_i+s_j=1\).
+
+**Theorem (canonical all-zero normalization).** For every tournament \(T\), the bridge rows
+\[
+w_i=b_i(T)+s_i(T)\mathbf1_{[n]\setminus\{i\}}
+\tag{TN2}
+\]
+are triangle-compatible and all have color zero. The starting root associated with the tournament representation of these rows is \(r=s(T)\), and its tournament is \(F_\chi(T)\). Moreover, the map \(T\mapsto(w_i)\) has fibers precisely \(\{T,T^{\rm rev}\}\). Consequently it parametrizes the \(2^{\binom n2-1}\) all-zero compatible families by tournaments modulo reversal.
+
+*Proof.* Since each \(\chi_i\) is antipodally odd, \(\chi_i(w_i)=\chi_i(b_i)+s_i=0\). The rows are obtained from tournament rows by independent complementation, which preserves triangle compatibility. Relative to root \(s\), their pair directions are
+\[
+w_i(j)+s_j=b_i(j)+s_i+s_j,
+\]
+namely the tournament obtained by the indicated star switches.
+
+If \(T\) and \(S\) give the same rows, their input in-neighbor vectors are equal or complementary at each vertex, according to their differences in correction bits \(s_i\). Antisymmetry of tournament arcs forces these differences to agree for all vertices. They are therefore either all zero, giving \(T=S\), or all one, giving \(S=T^{\rm rev}\). Conversely reversal complements every \(b_i\) and toggles every \(s_i\), leaving (TN2) unchanged. \(\square\)
+
+**Single-arc response.** Let \(T^{ij}\) reverse just the arc \(i,j\). Only \(s_i,s_j\) can change. Write
+\(\delta_i=s_i(T^{ij})+s_i(T)\), \(\delta_j=s_j(T^{ij})+s_j(T)\). Then
+\[
+\boxed{
+F_\chi(T^{ij})
+=\operatorname{Switch}_{\delta_i e_i+\delta_j e_j}
+\bigl(F_\chi(T)^{ij}\bigr).
+}
+\tag{TN3}
+\]
+The derivatives \(\delta_i,\delta_j\) are the Boolean sensitivities of the two incident direction functions at their present input vectors.
+
+**Contrast with ordinary tournaments.** If \(D(T)\) is the number of directed triangles, then
+\[
+D(T)=\binom n3-\sum_v\binom{d_v^+(T)}2.
+\]
+Reversing an arc \(a\to b\) changes this count by \(d_a^+(T)-d_b^+(T)-1\). Every nontransitive tournament contains a directed triangle, along which at least one arc has \(d_a^+\le d_b^+\); reversing that arc strictly lowers \(D\). Thus ordinary triangle count has no nontransitive single-arc local minima. Equation (TN3) shows why this descent does not automatically extend to all-zero normalized tournaments: the incident star responses can undo the improvement.
+
+**Finite obstruction to a naive descent proof.** In \(Q_4\), number antipodal edge-orbit variables by direction \(i=0,1,2,3\), with canonical lower endpoints respectively \(0,2,4,6\) for direction 0; \(0,1,4,5\) for direction 1; and \(0,1,2,3\) for each of directions 2,3. Set their color bits to the 16-bit mask \(\texttt{0x5af1}\), and give the antipodal edge the opposite color. Encode a tournament by six bits for pairs \((01),(02),(03),(12),(13),(23)\), bit one meaning the first vertex precedes the second. Direct substitution into (TN1) yields
+\[
+F_\chi(14)=36,\qquad D(36)=1,
+\]
+whereas for single-arc input neighbors \(14\oplus2^k\), \(k=0,\ldots,5\), the respective outputs are
+\[
+34,\ 12,\ 19,\ 44,\ 45,\ 4,
+\]
+all of which have two directed triangles. Thus a cyclic normalized output can be a strict local minimum under every input single-arc change, despite the same coloring admitting monochromatic antipodal geodesics elsewhere.
+
+**Global closure formulation.** NORI1 is equivalent to requiring a transitive tournament in the image of \(F_\chi\) for every antipodally odd coloring. A proof must use more than simple triangle-count descent on the single-arc exchange graph.
+
+
+
+### Zero bridge-row extension and pairwise uniformity
+
+Fix \(I\subseteq[n]\), \(1\le k=|I|\le n\), and prescribe one zero-colored bridge row \(w_i\) for every \(i\in I\). Assume these rows satisfy the triangle equations (TC1) on triples internal to \(I\). Then the number of completions to triangle-compatible all-zero bridge families is
+\[
+\boxed{2^{\binom{n-k}{2}}.}\tag{TE1}
+\]
+A violation of an internal triangle equation prevents completion.
+
+*Proof.* Put \(h=n-k\). The tournament-potential representation (TC2) gives a potential on \(I\) unique up to common complementation, since all its internal triangle equations hold. Choose potential values on the other \(h\) directions freely and choose one directed entry for every pair among those directions freely. Entries in the opposite orientations and across \(I\) are then determined. After identifying the global complementary potentials, there are \(2^{h+\binom h2}\) triangle-compatible extensions with arbitrary colors in the unknown rows. Independently complementing any unknown row preserves all triangle equations and flips only that row's chosen edge color by antipodal oddness. Every free row-flip orbit of size \(2^h\) has one member with all unknown colors zero. Division proves (TE1). \(\square\)
+
+**Consequences.** Any two zero-colored bridge edges in distinct directions extend to such a family, regardless of their positions. Under the uniform distribution on all-zero triangle-compatible families, any two selected rows are independent and uniform over their respective sets of zero edges. Any \(n-1\) prescribed zero rows satisfying their internal triple equations have a unique final zero-row completion.
+
+The first compatibility obstruction occurs at triples of directions, not pairs. Selecting a *transitive* tournament still requires an additional global condition.
+
+
+
+### Sequential extension and a universal branching law
+
+Let \(W\) range over all-zero triangle-compatible bridge families of a legal odd coloring of \(Q_n\), \(n\ge3\). Fix any order of the directions and suppose \(k\ge1\) bridge rows have been prescribed with zero color and all internal triangle equations holding.
+
+**Theorem (regular next-row branching).** The next unselected direction has precisely
+\[
+\boxed{2^{n-k-1}}
+\tag{SE1}
+\]
+possible zero-colored bridge rows that preserve the triangle equations. Every such choice has the same number of subsequent all-zero completions, namely \(2^{\binom{n-k-1}{2}}\). Consequently, uniformly sampling one of the admissible next rows at every stage produces the uniform distribution on all \(2^{\binom n2-1}\) compatible all-zero families.
+
+*Proof.* Let \(j\) be the next direction and choose one prior direction \(i_0\). For every other previously selected \(i\), its triangle equation with \(j,i_0\) prescribes the parity \(w_j(i)+w_j(i_0)\). These \(k-1\) independent affine equations on the \(n-1\) bits of \(w_j\) are consistent because the previous rows satisfy their internal triangle equations. Their solution set is an affine subspace of dimension \(n-k\), stable under complementing every bit of \(w_j\). Antipodal oddness selects precisely one zero-colored row from each complementary pair, leaving \(2^{n-k-1}\) possibilities. The constant remaining completion count follows from (TE1); multiplication of branching factors gives the stated total. \(\square\)
+
+In particular, the first two selected bridge rows are independent and uniform over their respective zero-edge sets; the first restrictions arise when selecting a third direction. The final row is uniquely determined.
+
+
+Fix k directions of an odd coloring of Q_n. The law of their selected bridge rows under a uniformly random all-zero triangle-compatible family is a convex mixture of the corresponding laws for odd Q_k colorings. For each partial row u, let a_i(u) count zero full rows restricting to u. Antipodal oddness gives a_i(u)+a_i(complement u)=2^(n-k). The extension theorem counts full completions of any compatible k-row tuple as 2^binomial(n-k,2) times the product of its a_i values. Normalize these counts into independent probabilities for random odd Q_k edge colors. Since every such Q_k coloring has the same number of compatible zero-row families, averaging its uniform distribution recovers the projected law. This transfers all local tournament-event probability bounds across dimensions.
+
+
+### Star-critical tournament classification
+
+For a nontransitive tournament \(T\), call \(i\) a star-critical center if reversing every incident arc makes \(T\) transitive. In dimension \(n\ge4\), there are at most two such centers. If \(i,j\) are both centers, every third vertex \(h\) has opposite relations with \(i,j\):
+\[
+[h\to i]\ne[h\to j].
+\tag{SC1}
+\]
+Indeed, choose transitive \(L=S_iT\). Another center \(j\) requires \(S_{\{i,j\}}L\) transitive. Switching a subset of a transitive tournament preserves transitivity precisely when the subset is an initial or terminal segment in its linear order. Since \(i\) must be internal in \(L\), the two-set \(\{i,j\}\) is its first two or final two members. Consequently every \(\{i,j,h\}\) is cyclic in \(T\), and at most one additional center exists.
+
+Counting pairs \((L,i)\) with \(L\) transitive and \(i\) internal gives \(n!(n-2)\). Of these, \(2n!\) have \(i\) second or penultimate, each arising twice from a two-center tournament. Therefore the number of tournaments with two, one, or zero centers is respectively
+\[
+n!,\quad (n-4)n!,\quad 2^{\binom n2}-(n-2)n!.
+\]
+These assertions were also exhaustively checked for \(n=4,5,6\).
+
+
+Same-facet healing-pair exclusion. In any bad legal odd coloring, a single zero-compatible bridge family cannot certify two distinct healing edge pairs whose newly zero members belong to the same facet F. Indeed, changing a direction-i antipodal edge pair acts on the compatible ensemble by complementing row i, and thus switches the induced tournament star at i. Two certified repairs in directions i,j would make them two star-critical centers of one nontransitive tournament. By the previously proved two-center theorem, the two chosen rows have opposite bits in every other direction. Yet the original chosen zero edges are antipodes of both healing edges in F, so lie together in the opposed facet and agree at its normal bit, contradiction. The row-extension theorem also shows that each antipodal pair flip acts on a block of 2^binomial(n-1,2) compatible families, leaving all others unchanged. Consequently the certification families of distinct minority-edge repairs in any imbalance-maximizing facet are disjoint.
+
+
+### Global repair-budget identity
+
+Let \(c\) be a bad antipodally odd coloring of \(Q_n\), \(n\ge4\), let \(\mathcal W(c)\) be its \(2^{\binom n2-1}\) compatible all-zero bridge families, and let \(N_0(d)\) count monochromatic-zero full antipodal geodesics of a legal coloring \(d\). For the associated tournament \(T_W\), put
+\[
+\kappa(T_W)=|\{i:S_iT_W\text{ is transitive}\}|.
+\]
+
+**Theorem (critical-neighbor identity).**
+\[
+\boxed{
+\sum_{\text{antipodal edge pairs }[e]}N_0(c^{[e]})
+=\sum_{W\in\mathcal W(c)}\kappa(T_W)
+\le 2^{\binom n2}.}
+\tag{RB1}
+\]
+For every fixed facet \(F\), let \(D_F\) be its edges of color one. Then
+\[
+\boxed{\sum_{e\in D_F}N_0(c^{[e]})
+\le 2^{\binom n2-1}.}
+\tag{RB2}
+\]
+
+*Proof.* The one-pair surgery bijection complements the direction-\(i\) selected row in precisely those old compatible families selecting the old zero member of \([e]\). An all-zero transitive family of the changed coloring must arise in this block, since \(c\) is bad; its old tournament has star-critical center \(i\). Conversely each star-critical center \(i\) of an old family specifies a unique affected antipodal edge pair whose reversal makes its row-complement family transitive. This gives equality in (RB1). The two-center theorem bounds \(\kappa\le2\).
+
+For (RB2), the same-facet disjointness theorem shows that each old compatible family can certify at most one changed pair having its one-colored member in \(F\). Sum the corresponding incidence counts. \(\square\)
+
+These are dimension-uniform upper bounds on *total monochromatic path multiplicity produced by single-pair repairs of a bad coloring*. Combined with facet-imbalance extremality they turn the proof target into finding a sufficient lower bound on the repair multiplicities; mere existence of one geodesic per repaired edge does not exhaust the available budget.
+
+
+
+## Uniform switching-class fiber theorem
+
+Let \(\mathcal W(c)\) be the all-zero triangle-compatible bridge families for an arbitrary antipodally odd coloring of \(Q_n\), \(n\ge3\). Partition tournaments on \([n]\) by star switching: two tournaments are equivalent if one is obtained from the other by reversing all arcs crossing a vertex subset. Reverse all arcs to pair each switching class \(C\) with a distinct class \(C^{\rm rev}\).
+
+**Theorem.** Every reversal-pair of tournament switching classes accounts for precisely
+\[
+\boxed{2^{n-1}}
+\tag{EQ1}
+\]
+different all-zero compatible bridge families, independent of the coloring. There are \(2^{\binom n2-n}\) such class-pairs.
+
+*Proof.* Vertex-star switches form a free group of size \(2^{n-1}\) modulo simultaneous switching of all vertices. Thus every switching class contains \(2^{n-1}\) tournaments. Global arc reversal cannot be achieved by a star switch when \(n\ge3\): it would require \(s_i+s_j=1\) for all pairs, impossible on any triple. Therefore each reversal-pair contains \(2^n\) tournaments.
+
+The proved map \(T\mapsto W(T)\) obtained by independently complementing its reader rows according to their colors identifies precisely \(T\) and its global reversal, and no other pair. The normalized tournament of \(W(T)\) is star-switching-equivalent to \(T\), so it belongs to the same reversal-pair. Divide \(2^n\) by two to get (EQ1), and divide the total \(2^{\binom n2}\) tournaments by \(2^n\) to count class-pairs. \(\square\)
+
+**Corollary.** Reversal-paired switching classes that contain a transitive tournament are indexed by unoriented cyclic orders of directions, numbering \((n-1)!/2\). Every such cyclic-order fiber contains \(2^{n-1}\) all-zero compatible families regardless of coloring.
+
+*Proof.* Switching a transitive tournament preserves transitivity precisely when the switched subset is a prefix or suffix of its linear order. The resulting transitive tournaments are its cyclic rotations. Global reversal identifies reversal orientations of the same unoriented cyclic order. Apply (EQ1). \(\square\)
+
+**Fixed-order Boolean normalization.** Choose an ordered direction sequence \(L=(i_1,\ldots,i_n)\), and let \(b_i(L)\) be the predecessor bit vector at site \(i\). Every tournament in its switching class has the form \(S_vL\) for a vertex switch vector \(v\in\mathbb F_2^n/\langle\mathbf1\rangle\). Define
+\[
+p_i(v)=\chi_i(b_i(L)+v|_{[n]\setminus\{i\}}).
+\]
+Then \(p_i\) is independent of bit \(v_i\) and satisfies \(p_i(\bar v)=1+p_i(v)\). The all-zero normalized tournament is
+\[
+\boxed{F_\chi(S_vL)=S_{p(v)}L.}\tag{EQ2}
+\]
+The bit \(p_i(v)\) is also the color at direction \(i\) along the full geodesic with root \(v\) and direction order \(L\). Consequently the normalized tournament is transitive if and only if this path's color word has at most one change.
+
+*Proof.* In the switched input tournament \(S_vL\), the in-neighbor vector at site \(i\) is \(b_i(L)+v_i\mathbf1+v_{-i}\). Antipodal oddness gives its color \(s_i=v_i+p_i(v)\). Normalizing by the star vector \(s\) therefore produces \(S_{s+v}L=S_{p(v)}L\). The other assertions follow from the usual cube path bit update and the prefix/suffix characterization of transitivity after switching a linear order. \(\square\)
+
+The fiber theorem shows the compatibility ensemble is uniformly distributed among *reversal-paired switching classes*, including many classes without transitive representatives. It does not assert that each transitive-eligible class contains a transitive all-zero family. NORI1 requires at least one of the \((n-1)!/2\) eligible fibers to contain such a family.
+
+
+
+### Sharp Q4 multiplicity and global four-direction majority
+
+**Theorem.** Every antipodally odd edge coloring of \(Q_4\) has at least four monochromatic-zero full antipodal geodesics. Equality holds precisely when every vertex has two edges of each color.
+
+*Proof.* There are 24 projective Petrie cycles of order four, each with one or three switched comparisons. If \(Z\) have one switch, the total switch count is \(72-2Z\). Each antipodal incidence-turn comparison belongs to two Petrie cycles. Therefore, with \(r(v)\) the number of color-one edges incident to \(v\),
+\[
+72-2Z=\sum_{v\in Q_4}r(v)(4-r(v))\le16\cdot4=64.
+\]
+Hence \(Z\ge4\). Equality forces \(r(v)=2\) at every vertex, and this condition also suffices. Each one-switch cycle corresponds to a zero monochromatic full antipodal geodesic. \(\square\)
+
+Sharpness: \(c_0=1+x_3,\ c_1=1+x_2,\ c_2=x_3,\ c_3=x_2\). Each of the pairs \((c_0,c_2)\), \((c_1,c_3)\) is complementary at every vertex, giving degree balance and four zero geodesics.
+
+**Corollary (four-direction transitivity).** For any antipodally odd coloring of \(Q_n\), \(n\ge4\), any fixed four directions form a transitive subtournament with probability at least \(1/8\) in a uniformly sampled all-zero triangle-compatible bridge family.
+
+*Proof.* The projective mixture theorem expresses this marginal as a mixture of uniform compatible-family distributions from odd colorings of \(Q_4\). Every such coloring has 32 compatible zero-row families and at least four transitive members. Therefore the probability is at least \(4/32\). The displayed coloring attains equality in dimension four. \(\square\)
+
+
+## Simultaneous ascent from a facet-energy extremizer
+
+Let n>=3 and c be an antipodally odd binary edge coloring. Index antipodal edge pairs by p, choose one direction-i edge from p with sign s_p=(-1)^{c(e)}, and let v_p have entry zero at i and entry (-1)^{x_j} at j!=i, where x is either endpoint of the chosen edge. Set w_p=s_pv_p; it is independent of which antipodal representative is chosen. Define
+\[
+B=\sum_pw_p,\qquad \mathcal E(c)=\|B\|^2,\qquad h_p=\langle B,w_p\rangle.
+\]
+
+**Theorem (multi-pair energy identity).** For every set S of antipodal edge pairs,
+\[
+\boxed{\mathcal E(c^{[S]})-\mathcal E(c)
+=4\left(\left\|\sum_{p\in S}w_p\right\|^2-\sum_{p\in S}h_p\right).}
+\tag{MA1}
+\]
+*Proof.* Flipping p changes its contribution to B from w_p to -w_p. Thus \(B(c^{[S]})=B(c)-2\sum_{p\in S}w_p\). Expanding its squared norm proves (MA1). \(\square\)
+
+**Corollary (Boolean saturation of strict frustration).** Suppose c is bad and maximizes \(\mathcal E\) over all bad legal colorings of Q_n. Put
+\[
+F_-=\{p:h_p<0\},\qquad F_0=\{p:h_p=0\}.
+\]
+Every nonempty S subset F_- union F_0 which intersects F_- produces a good coloring c^[S]. In particular, every nonempty subset of F_- heals c. For n>=3, all h_p are even integers, so
+\[
+\boxed{\mathcal E(c^{[S]})-\mathcal E(c)\ge8|S\cap F_-|>0.}
+\tag{MA2}
+\]
+The previously proved weak-threshold/positive-spanning theorem guarantees \(F_-\ne\varnothing\) whenever \(B\ne0\).
+
+*Proof.* For p in F_- each h_p<=-2, and for p in F_0 each h_p=0. The squared norm in (MA1) is nonnegative, so the displayed gain follows. Maximality among bad colorings forces c^[S] to be good. The integrality and parity of h_p follow because each signed facet sum B_j contains \((n-1)2^{n-2}\) signs, an even number for n>=3. \(\square\)
+
+**Corollary (zero-imbalance isolation and direction parity).** Suppose instead the same extremal bad coloring has B=0, and let S be a nonempty set of antipodal edge pairs. Any S with \(\sum_{p\in S}w_p\ne0\) heals c. If \(\sum_{p\in S}w_p=0\), writing \(m_i(S)\) for the number of S-pairs in direction i gives
+\[
+\boxed{m_i(S)\equiv |S|\pmod2\qquad\text{for every i}.}
+\tag{MA3}
+\]
+Moreover, no nonempty S of size one or two has zero vector sum. Consequently:
+- for all n>=4, every nonempty S of size at most three heals;
+- for even n, every odd-cardinality S heals, regardless of its size;
+- for odd n, every odd-cardinality S of size less than n heals.
+
+*Proof.* With B=0, (MA1) equals \(4\|\sum_{p\in S}w_p\|^2\). For each fixed dimension i, the ith entry of w_p is zero when p has direction i and is +1 or -1 otherwise. Its sum has parity \(|S|-m_i(S)\), proving (MA3). A zero sum of two vectors would require \(w_p=-w_q\). Different directions have zeros in different entries; in one direction \(v_p=\pm v_q\) means the chosen edges are antipodal, hence p=q, excluded by S being a set. Thus no two distinct vectors cancel. A singleton is nonzero as well. For odd |S|, (MA3) demands m_i(S) odd for all i; this is impossible if n is even, and implies |S|>=n if n is odd. These observations prove all three statements. \(\square\)
+
+The multi-pair identity applies to every coloring. Its two corollaries are global necessary constraints on an energy-maximizing counterexample, with no assumption on the edge-direction functions. The zero-imbalance case, in particular, would be isolated from other bad colorings throughout its radius-three orbit-flip Hamming ball in dimensions at least four. No incompatibility with the simultaneous-restoration path witnesses is presently established.
+
+
+
+### Low-dimensional imbalance and switch identities
+
+Let \(r(v)\) count color-one edges incident to vertex \(v\); let \(Z_s\) count projective Petrie cycles with \(s\) switched comparisons. As established, \(Z_1=N_0(c)\).
+
+**Four-dimensional theorem.** For any antipodally odd coloring of \(Q_4\),
+\[
+\boxed{N_0(c)=4+\tfrac12\sum_{v\in Q_4}(r(v)-2)^2.}\tag{VI4}
+\]
+*Proof.* There are 24 projective Petrie cycles, with one or three switches each. The total switched-comparison count is \(72-2Z_1\). Every antipodal turn pair occurs twice among these cycles, so it is also
+\(\sum_vr(v)(4-r(v))=64-\sum_v(r(v)-2)^2\). Equate and solve. \(\square\)
+
+**Five-dimensional theorem.** For any antipodally odd coloring of \(Q_5\),
+\[
+\boxed{N_0(c)=Z_5+\tfrac32\sum_{v\in Q_5}
+[6-r(v)(5-r(v))].}\tag{VI5}
+\]
+*Proof.* There are 192 projective Petrie cycles, with odd switch counts one, three, or five. The total is \(576-2Z_1+2Z_5\). Each antipodal turn pair occurs six times, so the same total is \(3\sum_vr(v)(5-r(v))\). Equating these yields (VI5). \(\square\)
+
+**Consequences.** In dimension four, vertex-perfect balance minimizes \(N_0\) at four; imbalance strictly increases it. In dimension five, a hypothetical bad coloring must be balanced at every vertex, have no five-switch Petrie cycles, and hence have three switches on every Petrie cycle. These are global identities for all legal colorings, not locality statements.
+
+
+## Edge extension and fault tolerance for weak weighted-majority colors
+
+**Theorem (every weak-majority edge extends).** Let n>=3 and a_i>=0 not all zero. Put Phi(x)=sum_i a_i(-1)^(x_i), and give a direction-i edge e the color zero when its midpoint potential H(e)=(Phi(u)+Phi(v))/2 is positive, color one when H(e) is negative, and any antipodally odd tie color when H(e)=0. Then every zero edge lies on a monochromatic-zero full antipodal geodesic; likewise every one edge lies on a monochromatic-one full antipodal geodesic.
+
+*Proof.* Start from a zero edge e of direction i, whose midpoint potential is nonnegative, and regard it as a path with used dimensions S={i}. Its endpoints u,v agree on all unused bits. Define H_S=(Phi(u)+Phi(v))/2=sum_(j notin S)a_j epsilon_j, where epsilon_j is their common bit sign. For any unused j, adding its edge at u or v gives midpoint potentials Phi(u)-a_j epsilon_j and Phi(v)-a_j epsilon_j, whose maximum is at least H_S-a_j epsilon_j. After the extension the new endpoint-average potential is H_S-a_j epsilon_j.
+
+Choose a reserved unused dimension for the last extension: one with positive a_j epsilon_j if possible, otherwise one of weight zero if possible, otherwise any. Extend all other unused dimensions in this order: negative a_j epsilon_j, zero a_j, then positive a_j epsilon_j. During negative steps H_S>=0 and the maximal candidate midpoint exceeds H_S; removing negative signed weights makes H_S increase. During zero steps the maximal candidate midpoint is at least H_S, which is positive unless all unprocessed signed weights are zero. In the latter case H_S=0 implies all weights other than a_i were zero from the start; as the weights are not all zero, a_i>0 and the two endpoint potentials are +a_i and -a_i, so one zero-step candidate still has positive midpoint. During positive steps before the reserved final direction, H_S is the sum of remaining positive weights, including at least one other positive weight, and the best midpoint is strictly positive. Thus all nonfinal edges can be chosen color zero. When only one direction j remains, the two candidate j-edges at the path endpoints are antipodal mates, and one is color zero. Adding it yields a zero full geodesic through e. Antipodal complementation proves the color-one statement. QED.
+
+**Corollary (single-direction tolerance).** Flipping any fewer than 2^(n-2) antipodal edge pairs contained in one direction preserves a monochromatic full antipodal geodesic: choose one of the 2^(n-2) unflipped zero edges in that direction, extend it as above, and note that the resulting path uses that direction only once.
+
+**Corollary (unrestricted necessary frustration).** In any hypothetical bad odd coloring c with nonzero signed facet-imbalance vector B, let h_p=s_p sum_(j ne dir p)B_j(-1)^(x_j) be the alignment of each antipodal edge-pair sign with its B-weighted field, and put F={p:h_p<0}. Then F meets at least two directions, or |F|>=2^(n-2). In particular |F|>=2. Proof: reverse all strictly misaligned pairs to obtain an antipodally odd weak weighted-majority coloring with weights |B_j| and the same tie colors. If the reversal set lay within one direction with size less than 2^(n-2), the tolerance corollary would make the original c good, contradiction. The previously proved positive-spanning lemma guarantees F nonempty whenever c is bad and B!=0. QED.
+
+The edge-extension property covers all edges of both colors, not merely one constructed full geodesic. The final corollary imposes an unrestricted necessary condition on every counterexample with B!=0; no restricted coloring hypothesis is imposed on c.
+
+
+## Turn-moment edge-flip gradient and classification of stationary odd colorings
+
+Let \(n\ge3\) and \(c\) be any antipodally odd coloring of \(Q_n\). Put \(s_i(x)=(-1)^{c_i(x)}\), independent of bit \(i\), \(r(x)=|\{i:s_i(x)=-1\}|\), and \(d(x)=\sum_i s_i(x)=n-2r(x)\). Let \(M=2^{n-2}(n-1)!\) be the number of projective Petrie cycles and \(S(c)\) their aggregate switched-comparison count. From the universal first-turn incidence identity,
+\[
+S(c)=\frac{(n-2)!}{2}\sum_{x\in Q_n}r(x)(n-r(x)).
+\tag{TG1}
+\]
+
+**Theorem (one-pair turn-moment gradient).** Let \([e]\) be an antipodal edge pair in direction \(i\), represented by \(e=xx^i\), and put \(s=s_i(x)\). Then
+\[
+\boxed{S(c^{[e]})-S(c)
+=2(n-2)![s(n-r(x)-r(x^i))-1]
+=(n-2)![s(d(x)+d(x^i))-2].}
+\tag{TG2}
+\]
+Moreover,
+\[
+\boxed{\sum_{[e]}[S(c^{[e]})-S(c)]
+=2nM-4S(c).}
+\tag{TG3}
+\]
+
+*Proof.* Inverting \([e]\) changes \(r(x),r(x^i)\) by \(s\) and changes the degrees at their antipodes by \(-s\). Antipodal oddness gives \(r(\bar x)=n-r(x)\). For \(q(t)=t(n-t)\), the difference \(q(t+s)-q(t)=s(n-2t)-1\). Therefore the change in \(\sum q(r)\) is \(4[s(n-r(x)-r(x^i))-1]\), proving (TG2).
+
+Every switched comparison in a projective Petrie cycle compares two edge observations in distinct directions, hence depends on two different antipodal edge-pair variables. Flipping either one toggles that comparison. Summing the changes over all pair flips contributes \(2(1-2X)\) for each old switch indicator \(X\in\{0,1\}\). There are \(nM\) comparisons altogether, proving (TG3). \(\square\)
+
+**Theorem (all locally stationary colorings).** Every pair-flip gradient in (TG2) vanishes if and only if \(n\) is even and
+\[
+\boxed{s_i(x)=\varepsilon_i(-1)^{\sum_{j\ne i}x_j}
+\quad\text{for each }i,\qquad \varepsilon_i\in\{\pm1\}.}
+\tag{TG4}
+\]
+For any coloring (TG4) and every permutation \(\pi=(i_1,\ldots,i_n)\), there is precisely one starting vertex whose full geodesic in order \(\pi\) has color zero throughout. Consequently
+\[
+\boxed{N_0(c)=n!/2}
+\tag{TG5}
+\]
+for all stationary colorings. In odd dimension, no legal odd coloring has all pair-flip gradients zero.
+
+*Proof.* If all gradients vanish, then for every \(x,i\),
+\[
+d(x)+d(x^i)=2s_i(x).
+\tag{TG6}
+\]
+Summing over directions gives \(\sum_i d(x^i)=(2-n)d(x)\): the cube adjacency operator acts on \(d\) with eigenvalue \(2-n\). Its Walsh characters \(\chi_A(x)=(-1)^{\sum_{j\in A}x_j}\) have eigenvalues \(n-2|A|\), hence \(d\) has Walsh support entirely in degree \(n-1\). Formula (TG6) states \(s_i=\frac12(I+\mathrm{flip}_i)d\). This projection kills every character containing \(i\), retaining from degree \(n-1\) only the single character missing \(i\). As \(s_i\) is sign-valued, its surviving coefficient is \(\varepsilon_i\in\{\pm1\}\), proving (TG4). Antipodal oddness of (TG4) requires \(n-1\) odd, hence \(n\) even. Conversely for even \(n\), every displayed coloring satisfies (TG6), and all gradients vanish.
+
+Write \(\varepsilon_i=(-1)^{b_i}\). Given a direction permutation \(\pi\), define \(R=\sum_i b_i+\binom n2\pmod2\) and the starting bits
+\[
+x_{i_k}=b_{i_k}+R+k-1\pmod2.
+\]
+Since \(n\) is even, \(\sum_i x_i=R\). The sign at the direction-\(i_k\) edge of the resulting geodesic is
+\[
+(-1)^{b_{i_k}+\sum_{j\ne i_k}x_j+(k-1)}=1.
+\]
+Conversely demanding all signs equal one forces these same starting bits, proving uniqueness. Every undirected geodesic has two orientations, so \(n!\) oriented zero geodesics give \(N_0=n!/2\). \(\square\)
+
+**Interpretation.** The signed Hamming-weight-parity family suggested by the user is the entire stationary locus of the global Petrie first moment. It is not bad: each direction ordering supports a zero monochromatic geodesic. Thus any hypothetical bad coloring has at least one nonzero first-moment pair-flip gradient. The averaged drift (TG3) measures how far its turn moment lies above or below the random-color baseline \(nM/2\), providing a global extremal pivot criterion independent of special coloring subclasses.
+
+
+
+## Middle-layer path design and spectral isolation of the parity stationary locus
+
+Continue the preceding turn-moment stationary classification. Write \(n=2m\ge4\), and let \(\mathcal P\) be the family
+\[
+s_i(x)=\varepsilon_i(-1)^{\sum_{j\ne i}x_j},\qquad
+\varepsilon_i=(-1)^{b_i}.
+\]
+There is one color-zero full antipodal geodesic for each direction order, giving \(n!/2\) unoriented geodesics.
+
+**Theorem (middle-layer incidence design).** Fix \(c\in\mathcal P\), and put
+\[
+R_0=\sum_i b_i+\binom n2\pmod2,\qquad K_n=\binom{n-1}{m}.
+\]
+For each direction \(i\), the zero-colored direction-\(i\) edges appearing on any monochromatic-zero full geodesic have lower endpoints \(w_i\) characterized by
+\[
+\boxed{\left|\{j\ne i:w_i(j)+b_j+R_0=1\}\right|=m.}
+\tag{PD1}
+\]
+All \(K_n\) such edges occur, and each lies on precisely \(n!/(2K_n)\) unoriented color-zero full antipodal geodesics.
+
+*Proof.* Let \(\pi\) be a direction order, and let \(p_j\in\{1,\ldots,n\}\) be the position of direction \(j\). By the stationary classification, its unique all-zero starting root has bit \(x_j=b_j+R_0+p_j-1\). At the direction-\(i\) bridge, the other bits are
+\[
+w_i(j)=b_j+R_0+p_j-1+[p_j<p_i]\pmod2.
+\]
+Thus the adjusted bit in (PD1) is one if and only if \(p_j\) is odd and precedes \(p_i\), or is even and follows \(p_i\). If \(p_i=k\), these contribute \(\lfloor k/2\rfloor\) and \(m-\lfloor k/2\rfloor\) directions, totaling \(m\).
+
+Conversely every \(m\)-subset of the remaining directions occurs as the adjusted one-set: put \(i\) first, assign those \(m\) labels to the even positions, and the remaining labels to the other odd positions. Permuting the remaining direction labels acts transitively on the \(K_n\) adjusted middle-layer vectors and preserves the number of orders yielding each vector. Since there are \(n!\) direction orders and every order has a unique zero starting root, each edge is used by \(n!/K_n\) oriented geodesics or \(n!/(2K_n)\) unoriented ones. \(\square\)
+
+**Corollary (exponential perturbation tolerance in arbitrary directions).** If \(c\in\mathcal P\), and \(c'\) differs from \(c\) on fewer than
+\[
+\boxed{K_n=\binom{n-1}{n/2}}
+\tag{PD2}
+\]
+antipodal edge pairs, then \(c'\) has a monochromatic-zero full antipodal geodesic. The edge-orbit transversal number of the original color-zero geodesic family of \(c\) is \(K_n\).
+
+*Proof.* The \(n!\) oriented zero paths from the theorem each use \(n\) distinct edge orbits. Every orbit lies on at most \(n!/K_n\) of them. Recoloring fewer than \(K_n\) orbits cannot meet all \(n!\) paths by the union bound; an untouched path stays monochromatic zero. Conversely, all \(K_n\) supported zero edge orbits in any fixed direction meet every original zero path, proving the transversal number. This converse concerns destruction of the **original** path family, not necessarily all zero paths appearing after recoloring. \(\square\)
+
+The theorem quantifies the user's parity-of-Hamming-weight example. Despite rapid color oscillations along some prescribed pole-to-pole paths, these colorings support an evenly spread middle-layer design of monochromatic full paths, robust against exponentially many arbitrary edge-orbit perturbations.
+
+**Theorem (spectral rigidity of near-stationary turn gradients).** For any odd coloring \(c\) write
+\[
+h_i(x)=\frac{d(x)+d(x^i)}2-s_i(x),\qquad
+\mathcal R(c)=\sum_{x,i}h_i(x)^2.
+\tag{PD3}
+\]
+With \(\Delta_e S=S(c^{[e]})-S(c)\), one has
+\[
+\boxed{\sum_{[e]}(\Delta_e S)^2=(n-2)!^2\mathcal R(c).}
+\tag{PD4}
+\]
+When \(n\) is even, some stationary parity coloring \(p\in\mathcal P\) differs from \(c\) on at most \(\mathcal R(c)/8\) antipodal edge pairs. Therefore every hypothetical bad coloring in even dimension obeys
+\[
+\boxed{\mathcal R(c)\ge8\binom{n-1}{n/2},
+\qquad
+\sum_{[e]}(\Delta_e S)^2
+\ge8(n-2)!^2\binom{n-1}{n/2}.}
+\tag{PD5}
+\]
+For odd \(n\), every legal coloring satisfies
+\[
+\boxed{\mathcal R(c)\ge n2^n.}
+\tag{PD6}
+\]
+
+*Proof.* The flip formula (TG2) gives \(\Delta_eS=2(n-2)!\,s_i(x)h_i(x)\). Each antipodal edge orbit accounts for four \((x,i)\) instances with equal squared residual, proving (PD4).
+
+For the Fourier bound, write the Walsh coefficient of \(s_i\) on \(A\subseteq[n]\) as \(a_{i,A}\), zero when \(i\in A\), and set \(A_A=\sum_{i\notin A}a_{i,A}\). For \(\ell=n-|A|\) missing directions, the residual's squared Fourier coefficients obey
+\[
+\sum_{i\notin A}(A_A-a_{i,A})^2
+=\sum_{i\notin A}a_{i,A}^2+(\ell-2)A_A^2.
+\tag{PD7}
+\]
+All \(s_i\) are antipodally odd, so \(A\) must have odd cardinality. For even \(n\), the top permissible degree is \(n-1\); its sole coefficient for direction \(i\) is
+\(\alpha_i=\widehat{s_i}([n]\setminus\{i\})\), and its contribution to (PD7) vanishes. All other permissible \(A\) have \(\ell\ge3\). Parseval and (PD7) give
+\[
+\mathcal R(c)\ge2^n\sum_i(1-\alpha_i^2).
+\]
+Choose the parity signs \(\varepsilon_i\) to match \(\operatorname{sgn}\alpha_i\). The number of differing antipodal edge pairs is
+\[
+D=2^{n-3}\sum_i(1-|\alpha_i|)
+\le 2^{n-3}\sum_i(1-\alpha_i^2)
+\le\mathcal R(c)/8.
+\]
+The perturbation-tolerance corollary makes \(D\ge K_n\) for every bad coloring, proving (PD5).
+
+For odd \(n\), degree \(n-1\) is even and hence forbidden by oddness. Every possible \(A\) has \(\ell\ge2\); (PD7) bounds the total residual energy below by \(2^n\sum_i\|s_i\|_2^2= n2^n\), proving (PD6). \(\square\)
+
+These are unconditional, dimension-uniform structural inequalities for all hypothetical NORI1 counterexamples, obtained without specializing their edge colorings. They make the well-distributed stationary example a quantitatively isolated region of guaranteed-good colorings. Closure still requires controlling colorings far from every parity stationary state.
+
+
+
+## General first-moment inversion and compulsory high-switch budget
+
+For any antipodally odd coloring \(c\) of \(Q_n\), \(n\ge3\), let \(Z_{2j+1}\) count projective Petrie cycles having \(2j+1\) switched comparisons; only odd switch counts occur. Write
+\[
+M=2^{n-2}(n-1)!,\qquad
+I(c)=\sum_{x\in Q_n}\left(r(x)-\frac n2\right)^2.
+\]
+Recall the universal turn-incidence identity \(S=\frac{(n-2)!}{2}\sum_x r(x)(n-r(x))\).
+
+**Theorem (all-dimensional imbalance/high-switch identity).**
+\[
+\boxed{
+N_0(c)=
+2^{n-4}(n-2)!\,[6(n-1)-n^2]
++\frac{(n-2)!}{4}I(c)
++\sum_{\substack{j\ge2\\2j+1\le n}}(j-1)Z_{2j+1}.
+}
+\tag{HI1}
+\]
+
+*Proof.* Since every projective Petrie cycle has an odd number of switches,
+\[
+M=Z_1+Z_3+\sum_{j\ge2}Z_{2j+1},
+\quad
+S=Z_1+3Z_3+\sum_{j\ge2}(2j+1)Z_{2j+1}.
+\]
+Eliminating \(Z_3\) gives \(Z_1=(3M-S)/2+\sum_{j\ge2}(j-1)Z_{2j+1}\). By the one-switch/Petrie correspondence \(Z_1=N_0(c)\). Finally,
+\[
+\sum_xr(x)(n-r(x))=2^n\frac{n^2}{4}-I(c),
+\]
+and substitution yields (HI1). \(\square\)
+
+**Corollary (high-switch necessity in any bad coloring).** If \(N_0(c)=0\), then
+\[
+\boxed{
+\sum_{j\ge2}(j-1)Z_{2j+1}
+=2^{n-4}(n-2)!\,[n^2-6(n-1)]
+-\frac{(n-2)!}{4}I(c).
+}
+\tag{HI2}
+\]
+Thus every hypothetical counterexample must simultaneously obey an upper bound on vertex degree-imbalance energy and a prescribed positive amount of five-or-more-switch Petrie activity. The Q4 and Q5 formulas (VI4)--(VI5) are the first two instances of (HI1).
+
+For a minimum-dimensional bad coloring the two sources of nonexistence must be combined: forcing extra color imbalance increases the positive term in (HI1), while suppressing high-switch cycles decreases its last term. The identity alone does not bound those competing terms sufficiently in large dimensions. Unlike a small-order enumeration, (HI1) applies uniformly in every dimension and is available for any future second-moment or extremal argument.
+
+### Multiplicity of simultaneous critical repairs
+
+Let c be an antipodally odd edge coloring of Q_n, and let F be a facet. Suppose D is a set of one-colored edges in F and for every e in D there exists a full dimension-simple antipodal geodesic P_e with e its unique one-colored edge, occurring strictly internally. Define a directed graph T on D by e->f if f differs from e and P_e traverses the antipodal mate of f. Since P_e contains its pivot e, a bridge perpendicular to F and at most n-2 edges in the opposite facet, the outdegree is at most n-2.
+
+**Theorem (quantitative simultaneous repair).** Let c^S swap the colors of the antipodal edge pairs indexed by S subset D, and let Z(c^S) count unoriented all-zero full antipodal geodesics. Then
+\[
+\boxed{Z(c^S)\ge
+|\{e\in S:N_T^+(e)\cap S=\varnothing\}|.}\tag{QR1}
+\]
+Consequently there is an independent set I in the undirected graph underlying T such that
+\[
+\boxed{|I|\ge\left\lceil\frac{|D|}{2n-3}\right\rceil,\qquad
+Z(c^S)\ge|S|\text{ for every }S\subseteq I.}\tag{QR2}
+\]
+Thus all nonempty vertices of the Boolean recoloring face supported on I admit monochromatic full geodesics. A vertex corresponding to a k-element subset S has at least k distinct all-zero geodesics.
+
+*Proof.* If e belongs to S and has no outgoing neighbor in S, its path P_e becomes all zero when the edge pair indexed by e is swapped: e is the unique initially one-colored edge on P_e, and P_e avoids the antipodal mate of every other swapped member f in S. Two such paths P_e are distinct, since the unique one-colored pivot in the original coloring is different. Counting them proves (QR1).
+
+The underlying undirected graph has at most (n-2)|D| edges by summing the directed outdegrees. The elementary Turan or Caro--Wei bound gives an independent set of size at least |D|^2/(2(n-2)|D|+|D|)=|D|/(2n-3). Every e in any subset S of this independent set has no neighbor in S, so (QR1) yields (QR2). QED.
+
+**Corollary (robustness in a neighboring Boolean face).** If S is a random subset of I obtained by including each element independently with probability 1/2, then
+\[
+\boxed{\mathbb E Z(c^S)\ge|I|/2,\qquad
+\Pr[Z(c^S)\ge|I|/3]\ge1-e^{-|I|/36}.}\tag{QR3}
+\]
+Indeed Z(c^S)>=|S| and |S| has a binomial distribution. Applying the multiplicative Chernoff inequality with relative deficit one-third yields the displayed probability.
+
+In particular, if c were a bad coloring selected to maximize facet imbalance, the established private internal repair theorem supplies D on a maximizing facet with
+\[
+|D|\ge 2^{n-2}+
+\left\lceil\frac{2^{n-3}}{1+(n-1)(n-2)}\right\rceil.
+\]
+Thus the dimension of its neighboring Boolean face satisfies
+\[
+\boxed{|I|\ge\left\lceil
+\frac{2^{n-2}+\lceil2^{n-3}/[1+(n-1)(n-2)]\rceil}{2n-3}
+\right\rceil.}\tag{QR4}
+\]
+This multiplicity result strengthens the previously established independent-repair-face existence theorem: all selected private witnesses survive simultaneously, not just one. It is a necessary neighborhood condition on a hypothetical counterexample, not a proof that one cannot exist.
+
+
+Parity stationary geodesic transversal theorem. In even dimension n=2m, each direction-i supported zero edge is indexed by an m-subset A of the other directions; for a direction permutation pi, A comprises labels in odd positions before i and even positions after i. Any two supported zero edges from different directions coexist on some zero antipodal geodesic. Construct the permutation for rows A at i and B at j: if i belongs to B, put i first, fill even positions by A, place j at position 2(m-|A intersect B|) if j in A or one later otherwise, then assign remaining labels to slots before/after j according to B. If i does not belong to B, choose h in A intersect B, put h first and i second, fill remaining even positions by A excluding h, and perform the same construction with intersection count reduced by one. All counts fit because both subsets have size m. Consequently every minimum path transversal of size K=binomial(n-1,m) is precisely the entire supported set of edges in one direction. Proof: each supported edge appears on the same number of paths, so a size-K hitting set must meet each path once; two chosen edges in different directions would occur together on a path. Any arbitrary recoloring restricted to one direction of a stationary parity coloring remains good, because the unaffected normal facet is antipodally even and has a paired nondecreasing favorable root; whichever antipodal bridge is zero gives a zero geodesic. Hence any hypothetical bad legal coloring has distance at least K+1 from every stationary parity coloring, strengthening the spectral residual necessary condition to R>=8(K+1).
+
+Global parity foliation theorem. Let n be even and P range over all unoriented full antipodal geodesics of Q_n. For each sign vector epsilon in {+-1}^n, let p_epsilon be the legal stationary parity coloring s_i(x)=epsilon_i times (-1) to the sum of bits outside direction i. Every full geodesic P is monochromatic zero in one and only one p_epsilon: it traverses one edge in each direction, so each edge's zero requirement uniquely determines the sign epsilon_i. Therefore the 2^n stationary parity zero-path families partition all 2^(n-1) n! unoriented full geodesics into equal classes of n!/2 paths. For any legal odd coloring c define the discrepancy set F_epsilon of antipodal edge orbits where c differs from p_epsilon. Then the number N0(c) of zero geodesics equals the sum over epsilon of the number of p_epsilon-zero geodesics avoiding F_epsilon. Thus badness is equivalent to F_epsilon meeting every zero geodesic in every parity family simultaneously. These transversals are strongly coupled: toggling one parity sign epsilon_i complements all direction-i orbit memberships and leaves every other direction untouched, so F_epsilon xor F_epsilon-flipped-i equals the full set M_i of 2^(n-2) direction-i orbits. The previous minimum-transversal rigidity makes every individual discrepancy set of a bad coloring have size at least binomial(n-1,n/2)+1. The remaining all-dimensional closure task is to prove that this correlated Boolean cube of discrepancy transversals cannot exist, rather than trying to bound a single transversal independently.
+
+## Complementary monochromatic arms and locally obstructed critical flips
+
+Let \(c\) be a legal antipodally odd edge coloring of \(Q_n\), \(n\ge3\), with no monochromatic full antipodal geodesic. For a vertex \(u\), color \(b\), and a direction \(i\), define \(\mathcal R_b(u;i)\) to be the family of subsets \(S\subseteq[n]\setminus\{i\}\) for which there is a monochromatic color-\(b\) geodesic starting at \(u\) and traversing precisely the directions in \(S\) once each.
+
+**Theorem (critical-pair complementary-arm criterion).** Let \(e=uv\) have direction \(i\) and original color \(1-b\). Flipping its antipodal pair \(\{e,\bar e\}\) produces a monochromatic full antipodal geodesic if and only if there is a nonempty proper subset \(S\subset[n]\setminus\{i\}\) such that
+\[
+\boxed{S\in\mathcal R_b(u;i),\qquad
+([n]\setminus(\{i\}\cup S))\in\mathcal R_b(v;i).}
+\tag{CA1}
+\]
+
+*Proof.* Since \(c\) is bad, any monochromatic full geodesic after the flip must traverse one of \(e,\bar e\). If it uses \(\bar e\), apply antipodal complementation: the resulting geodesic traverses \(e\) and has color \(b\), since the post-flip coloring remains antipodally odd. Thus it suffices to consider a monochromatic color-\(b\) full path through \(e\). Split at \(e\). The two remaining arms are monochromatic color \(b\) already in \(c\), have disjoint sets of traversed directions, and together use every direction other than \(i\), proving (CA1). Their direction sets are both nonempty: if either arm were empty, the original coloring would have a full antipodal geodesic with at most one switch, contradicting badness by the established root-slide lemma.
+
+Conversely, take the two arms asserted by (CA1), reverse the first one, traverse \(e\), and follow the second. Since the arms use complementary direction sets and both avoid \(i\), the concatenated path traverses all \(n\) directions once. Its endpoints are antipodal. After flipping \(e,\bar e\), every edge on this path has color \(b\). \(\square\)
+
+For a direction-\(i\) edge \(e=uv\) of color \(1-b\), let \(D_b(u;e)\subseteq[n]\setminus\{i\}\) be the directions of color-\(b\) edges incident with \(u\), and similarly at \(v\).
+
+**Corollary (two-sided local Hall obstruction).** If
+\[
+\boxed{\nexists\ j\in D_b(u;e),\ k\in D_b(v;e)\quad\text{with }j\ne k,}
+\tag{CA2}
+\]
+then the antipodal pair of \(e\) is nonhealing. In particular, every edge incident to a monochromatic vertex is nonhealing; the same holds when the opposite-colored neighbors at both endpoints occur in a common single direction and no other opposite-colored neighbors exist.
+
+*Proof.* Under (CA1), the first edge of the \(u\)-arm and the first edge of the \(v\)-arm have distinct directions, since their direction sets are disjoint and nonempty. They belong to the respective sets in (CA2). \(\square\)
+
+**Corollary (monochromatic vertices force nonhealing pairs).** Let \(M(c)\) be the set of cube vertices whose incident \(n\) edges all have the same color. Then the number of nonhealing antipodal edge pairs is at least
+\[
+\boxed{\left\lceil\frac{n|M(c)|}{4}\right\rceil.}
+\tag{CA3}
+\]
+Whenever \(M(c)\) is nonempty, there are at least \(n\) such pairs.
+
+*Proof.* The set \(M(c)\) is closed under antipodal complementation. Every edge incident with any vertex in \(M(c)\) is nonhealing by (CA2). In the projective vertex/edge-orbit incidence graph, each antipodal vertex pair represented by \(M(c)\) contributes \(n\) incidences, and an antipodal edge pair has at most two projective endpoints. Thus there are at least \(n(|M(c)|/2)/2\) nonhealing edge-pair orbits. A fixed monochromatic vertex itself contributes \(n\) distinct incident edge-pair orbits. \(\square\)
+
+**Corollary (unrestricted energy-extremal obstruction).** Choose any bad coloring maximizing the facet-imbalance energy \(\mathcal E=\sum_jB_j^2\) among bad colorings, and put \(h_p=\langle B,w_p\rangle\) as previously. Every pair failing (CA2)'s local Hall condition must obey
+\[
+\boxed{h_p\ge n-1.}
+\tag{CA4}
+\]
+If \(B=0\), then no pair fails (CA2), and every vertex sees both colors.
+
+*Proof.* Such a pair is nonhealing, hence its flip remains bad. Energy maximality gives \(\mathcal E(c^{[p]})-\mathcal E(c)\le0\). Apply the proved flip identity \(4[(n-1)-h_p]\). For \(B=0\), all h_p vanish, contradicting (CA4) at a locally obstructed pair. \(\square\)
+
+The criterion (CA1) is a restatement of restoration criticality in complementary direction-set geometry, and (CA2)--(CA4) sharpen the necessary local structure of an unrestricted extremal bad coloring. They do **not** exclude balanced mixed-vertex colorings and do not settle NORI1. The closure issue is to show that the complementary-arm constraints for **all** antipodal edge pairs cannot hold simultaneously when every full geodesic is bichromatic.
+
+
+Bridge-selector invariance. Under antipodally even lower-facet coloring, favorable-root weights agree at antipodal roots. Hence the bridge sum for monochromatic full paths is unchanged by every legal bridge flip. For a stationary parity coloring in even dimension, recoloring any number of edge pairs in one direction preserves its full zero path count n factorial divided by two.
+
+Fourier geodesic multiplicity. Sharp unrestricted Fourier lower bound on monochromatic path multiplicity. Let n even, K=binomial(n-1,n/2), and c any legal odd coloring. For each direction i let alpha_i be the Walsh coefficient of its signed edge-color function on the full set of other n-1 directions. For stationary parity sign vector epsilon in plus-minus-one to the n, its antipodal edge-pair distance D(epsilon) from c equals 2^(n-3) times (n minus sum_i epsilon_i alpha_i). Each stationary coloring has n!/2 zero full paths, and each supported edge orbit belongs to n!/(2K) of them. The elementary union bound leaves at least n!/2 times positive-part(1-D(epsilon)/K) stationary zero paths surviving all discrepancies. The parity foliation theorem makes these surviving paths disjoint as epsilon varies. Thus N0(c) is at least n!/2 times the sum over all epsilon of positive-part(1-D(epsilon)/K). Equality holds at every stationary parity coloring: its own term is one, all other terms vanish since changing a parity sign differs on 2^(n-2)>K edge-pair orbits. This quantitative lower bound applies to every legal coloring and is sharper than using only the nearest stationary parity reference.
+
+
+### Two-scale robustness and distributed Fourier obstruction
+
+Let \(n=2m\ge4\), \(K=\binom{n-1}{m}\), and \(p\) a stationary parity coloring. Fix one direction \(i\). Let \(q\) be obtained from \(p\) by arbitrary recolorings of antipodal edge pairs in direction \(i\), with no changes to other directions. Let \(M=n!/2\).
+
+**Theorem (uniform incidence envelope).** The coloring \(q\) has \(N_0(q)=M\). For any antipodal edge orbit \([e]\) in a different direction \(j\ne i\), at most \(2M/K\) of these zero geodesics traverse \([e]\).
+
+*Proof.* The count is conserved by the preceding antipodally-even facet bridge-selector theorem. Let \(p^{(i)}\) be the stationary parity coloring obtained by reversing *all* direction-\(i\) edge pairs of \(p\). The horizontal facet colorings of \(p,q,p^{(i)}\) are the same. For any lower-facet antipodal bridge-root pair, the selector of \(q\) chooses either the zero bridge of \(p\) or that of \(p^{(i)}\). The corresponding fan of zero full geodesics therefore agrees with the fan in one of those two stationary colorings. Consequently
+\[
+\mathcal G_0(q)\subseteq\mathcal G_0(p)\cup\mathcal G_0(p^{(i)}).
+\]
+Each stationary family has \(M\) paths and each orbit in direction \(j\) lies on at most \(M/K\) of them, by the proved middle-layer design theorem. The bound \(2M/K\) follows. \(\square\)
+
+**Corollary (large arbitrary changes in one direction).** After the arbitrary direction-\(i\) recolorings above, change an additional \(t\) antipodal edge pairs in *any other directions*. The resulting coloring \(c\) satisfies
+\[
+\boxed{N_0(c)\ge M\left(1-\frac{2t}{K}\right)_+.}
+\tag{DR1}
+\]
+In particular it is good whenever \(t<K/2\), regardless of how many direction-\(i\) pairs were changed.
+
+*Proof.* Each additional orbit flip can destroy at most \(2M/K\) paths of the zero family of \(q\). Apply the union bound to all \(t\) changes. \(\square\)
+
+**Corollary (unrestricted distributed nonstationarity).** If \(c\) is a hypothetical bad legal coloring of even-dimensional \(Q_n\), let
+\(\alpha_j=\widehat{s_j}([n]\setminus\{j\})\) be its highest admissible Walsh coefficients. Then for **every** direction \(i\),
+\[
+\boxed{
+\sum_{j\ne i}(1-|\alpha_j|)
+\ \ge\ \frac{K}{2^{n-2}}.
+}
+\tag{DR2}
+\]
+
+*Proof.* For any stationary parity reference \(p\), write \(D_j(p,c)\) for the number of mismatching direction-\(j\) antipodal edge pairs. If \(\sum_{j\ne i}D_j(p,c)<K/2\), the two-scale robustness theorem makes \(c\) good, contradiction. Choose the reference sign in every direction to minimize its mismatches, giving \(D_j=2^{n-3}(1-|\alpha_j|)\). Substitution yields (DR2). \(\square\)
+
+This applies to all hypothetical NORI1 counterexamples, not a restricted coloring class: the only use of the stationary reference is to quantify the distribution of the arbitrary coloring's parity discrepancy across directions. It complements the total residual gap (PD5) by preventing the highest-order spectral defect from concentrating in any single direction. The constant factor two is an incidence envelope, not a claim of invariance of individual path signatures.
+
+
+## Even-dimensional equivariant parity-transversal reduction
+
+Write \(Q_{n+1}=Q_n\times Q_1\). A bad antipodally odd coloring c of Q_n extends to a bad coloring c' of Q_(n+1): use c unchanged in each horizontal facet, and color the new-direction edges by any bit function b(x) satisfying b(bar x)=1-b(x). Every monochromatic full geodesic of c' would project, after deleting its one new-direction step, to a monochromatic full geodesic of c. Thus proving NORI1 in all even dimensions suffices for every dimension.
+
+**Theorem (even-dimensional parity-transversal equivalence).** Let n be even and let O be the antipodal edge-pair orbits. Let M_i subset O be the orbits in direction i, and let p_0 be the stationary parity coloring with
+\[
+p_{0,i}(x)=\sum_{j\ne i}x_j\pmod2.
+\]
+For each a in F_2^n put \(p_{a,i}=p_{0,i}+a_i\), and let P_a be the set of its monochromatic-zero full antipodal geodesics. For every a define
+\[
+\boxed{t_i(a)=a_i+\sum_j a_j\pmod2.}\tag{ET1}
+\]
+Then \(P_a=t(a)+P_0\). Given any legal coloring c, define its difference-orbit set \(F=\{[e]:c(e)\ne p_0(e)\}\). Then c is bad if and only if every set
+\[
+\boxed{F_a=F\mathbin{\triangle}\bigcup_{i:a_i=1}M_i}\tag{ET2}
+\]
+meets every full geodesic in \(t(a)+P_0\). Consequently NORI1 in all dimensions is equivalent to excluding such a simultaneous family of transversals F_a for all even n.
+
+*Proof.* Since n is even, the linear map \(t\mapsto(\sum_{j\ne i}t_j)_i\) is invertible: if its output is a, summing a gives \(\sum_jt_j\), so inversion gives (ET1). Translating a direction-i edge by t changes its parity coloring by \(\sum_{j\ne i}t_j=a_i\). Thus t translates the full zero-geodesic family P_0 onto P_a. Replacing p_0 by p_a complements the edge signs precisely on M_i for directions with a_i=1, giving (ET2). A full geodesic zero under p_a remains zero under c if and only if none of its edges lies in the corresponding mismatch-orbit set F_a. This proves the equivalence in even dimensions. The lifting construction in the opening paragraph proves the equivalence with unrestricted NORI1. QED.
+
+The reduction preserves dimension-simplicity and the antipodal involution. It isolates a global combinatorial closure target: the 2^n coupled discrepancy transversals, linked by whole-direction complementation and hypercube translation, must be incompatible. Individual transversal-size bounds do not by themselves rule them out.
+
+
+
+## Sharp incidence envelope after arbitrary one-direction parity recoloring
+
+Let \(n=2m\ge4\), \(K=\binom{n-1}{m}\), \(M=n!/2\), and let \(p\) be any stationary parity coloring of \(Q_n\). Fix a direction \(i\). Let \(q\) be obtained from \(p\) by changing an arbitrary collection of antipodal edge pairs of direction \(i\) and none in other directions.
+
+**Theorem (sharp exterior edge-orbit incidence).** Every antipodal edge orbit \([e]\) in direction \(j\ne i\) belongs to at most
+\[
+\boxed{\left(\frac32-\frac1n\right)\frac{M}{K}}
+\tag{SE1}
+\]
+monochromatic-zero antipodal full geodesics of \(q\). The bound is attained, for each distinct \(i,j\), by some choice of changed direction-\(i\) pairs and of the exterior orbit \([e]\). All such \(q\) have \(N_0(q)=M\).
+
+*Proof.* The path-count conservation law gives \(N_0(q)=M\). Let \(p^{(i)}\) be the stationary coloring obtained by changing every pair in direction \(i\). In each antipodal direction-\(i\) bridge pair the zero selector of \(q\) chooses independently the selector of \(p\) or that of \(p^{(i)}\). If a direction-\(j\) edge orbit lies in the support of only one of these stationary zero-path families, it occurs on at most \(M/K\) zero paths of \(q\); if in neither, on none. We calculate the maximum when it belongs to both.
+
+Use the stationary middle-layer labeling: for each direction permutation \(\pi\) let \(A_\ell(\pi)\subset[n]\setminus\{\ell\}\) be the \(m\)-set of directions in odd positions preceding \(\ell\) or even positions following \(\ell\). The zero full geodesic determined by \(\pi\) traverses the direction-\(\ell\) orbit labeled by \(A_\ell(\pi)\), and every unoriented path has two direction-permutation descriptions.
+
+An external \(j\)-orbit common to both supports is represented in \(p\) by an \(m\)-set \(A=\{i\}\cup U\), \(|U|=m-1\), and in \(p^{(i)}\) (via facet antipodal reflection to the \(p\) family) by \(B=\{i\}\cup V\), where \(U,V\) partition the other \(n-2\) directions and both have size \(m-1\). The \(K\) supported \(i\)-orbits are labeled by \(m\)-sets \(C\subset[n]\setminus\{i\}\), the same orbits for both stationary colorings.
+
+Let \(G(A,C)\) count permutations with \(A_j(\pi)=A\) and \(A_i(\pi)=C\). Put \(\delta=[j\in C]\), \(a=|C\cap U|\). The directions strictly between \(i,j\) along such a permutation form the set
+\[
+H=U\mathbin{\triangle}(C\setminus\{j\}),
+\quad
+k=|H|=2m-1-\delta-2a.
+\tag{SE2}
+\]
+Among these \(k\) labels, \(\lfloor k/2\rfloor\) belong to \(U\), and \(\lceil k/2\rceil\) to \(V\). Conversely, any ordering with this interval set and the parity conditions yields the requested two labels. Counting possible positions of \(i,j\) and then permutations within the four membership/interval groups gives
+\[
+\begin{aligned}
+g(2t)&=2(m-t)(t!)^2((m-1-t)!)^2,\\
+g(2t+1)&=2(t+1)(t!)^2((m-1-t)!)^2,
+\end{aligned}
+\tag{SE3}
+\]
+where \(G(A,C)=g(k)\). Indeed, for even \(k=2t\) the allowed ordered position pairs number \(2(m-t)\) and the four groups have sizes \(t,t,m-1-t,m-1-t\); for odd \(k=2t+1\) the allowed position pairs number \(2(m-t-1)\) and the groups have sizes \(t,t+1,m-1-t,m-2-t\).
+
+For the partner label \(B\), the intervening set is complementary to \(H\) within the \(n-2\) remaining directions, hence \(G(B,C)=g(n-2-k)\). To maximize the number of selected zero paths through \([e]\), independently choose for each \(i\)-orbit \(C\) the bridge selector contributing the larger of these two counts. Thus the maximal *oriented* incidence is
+\[
+\sum_C \max(G(A,C),G(B,C)).
+\]
+If \(j\in C\), then \(a\in\{0,\ldots,m-1\}\), with
+\(\binom{m-1}a^2\) possibilities for \(C\). Substitution into (SE3) makes this group's contribution
+\(2((m-1)!)^2\max(a+1,m-a)\).
+If \(j\notin C\), then \(a\in\{1,\ldots,m-1\}\), with
+\(\binom{m-1}a\binom{m-1}{a-1}\) possibilities, contributing
+\(2((m-1)!)^2\max(a,m-a)\).
+Summing gives
+\[
+\begin{split}
+&2((m-1)!)^2\left[
+\sum_{a=0}^{m-1}\max(a+1,m-a)
++\sum_{a=1}^{m-1}\max(a,m-a)\right]\\
+&\hspace{10mm}=(3m^2-m)((m-1)!)^2.
+\end{split}
+\]
+Every supported external orbit occurs on \(n!/K=2m^2((m-1)!)^2\) oriented paths in its stationary family. Their ratio is
+\((3m-1)/(2m)=3/2-1/n\).
+Passing to unoriented paths divides numerator and denominator by two and proves (SE1). Choosing each bridge selector to maximize its local contribution gives equality. \(\square\)
+
+**Corollary (improved two-scale robustness).** After arbitrary direction-\(i\) pair recolorings of a stationary parity coloring, reverse an additional \(t\) pairs in other directions. The final legal coloring \(c\) satisfies
+\[
+\boxed{N_0(c)\ge\frac{n!}{2}
+\left(1-\frac{(3/2-1/n)t}{K}\right)_+.}
+\tag{SE4}
+\]
+Consequently a hypothetical bad coloring must have, outside each chosen direction, at least
+\(K/(3/2-1/n)\) discrepant edge pairs relative to every stationary reference.
+
+**Corollary (strengthened unrestricted distributed spectral obstruction).**
+For any hypothetical bad coloring in even dimension,
+\[
+\boxed{
+\sum_{j\ne i}(1-|\alpha_j|)
+\ge
+\frac{4n}{3n-2}\,
+\frac{\binom{n-1}{n/2}}{2^{n-2}}
+\quad\text{for every }i.}
+\tag{SE5}
+\]
+*Proof of corollaries.* At most \((3/2-1/n)M/K\) zero paths are destroyed by each additional edge-pair reversal; apply the union bound. For the spectral statement choose stationary signs minimizing the number
+\(2^{n-3}(1-|\alpha_j|)\) of mismatching edge orbits in direction \(j\), and rearrange the necessary edge-count inequality. \(\square\)
+
+The coefficient in the exterior-edge incidence theorem is sharp for each even dimension, and improves the previous factor two. No locality or special-form hypothesis is placed on a hypothetical bad coloring; the stationary family is used only as a universal comparison.
+
+## Counterexample-preserving balance and finite-order pseudorandom padding
+
+Write an antipodally odd cube-edge coloring as functions c_i(x) in {0,1}, independent of bit x_i, satisfying c_i(bar x)=1-c_i(x). A coloring is *bad* if no monochromatic dimension-simple geodesic joins antipodal vertices.
+
+**Theorem (perfect-balance lift).** Every legal coloring c of Q_n has a legal lift B(c) on Q_(2n), given by
+\[
+\boxed{B(c)_i(x,y)=c_i(x),\qquad B(c)_{n+i}(x,y)=1-c_i(x).}\tag{BL1}
+\]
+At each vertex the two incident-color degrees both equal n. A monochromatic full geodesic of B(c) projects, by deleting its y-direction steps, to a monochromatic full geodesic of c. Consequently c bad implies B(c) bad, and unrestricted NORI1 is equivalent to its restriction to legal edge colorings of even-dimensional cubes which are perfectly balanced at every vertex.
+
+*Proof.* Each rule ignores its own direction bit. Under full antipodal complementation both types of colors reverse, as c is odd. Each pair of directions i,n+i has complementary incident colors. Projecting a full lifted geodesic onto the first n bits deletes each y step and leaves each old direction once; the remaining colors agree with those in c. Hence a monochromatic lifted path would produce one in c. QED.
+
+### Defect-preserving perfect-balance lift and simultaneous first-excess reduction
+
+Recall the perfect-balance lift \(B(c)\) of (BL1): for \(c\) on \(Q_n\), \(B(c)_i(x,y)=c_i(x)\) and \(B(c)_{n+i}(x,y)=1-c_i(x)\). For each legal antipodally odd coloring \(c\), let \(r(c)\) be the minimum number of color-one edges on a full antipodal geodesic. Write \(g_k(c;x)\) for the number of oriented full antipodal geodesics starting at \(x\) and having \(k\) color-one edges, and set \(d(x)=|\{i:c_i(x)=1\}|\).
+
+**Theorem (defect-preserving balanced doubling).** For all legal \(c\) and all \(0\le k\le n\),
+\[
+\boxed{r(B(c))=r(c),}\tag{BL5}
+\]
+\[
+\boxed{g_k(B(c))\ge 2^n\sum_{x\in Q_n}d(x)!(n-d(x))!g_k(c;x).}\tag{BL6}
+\]
+In particular, every full antipodal geodesic of \(c\) extends to a full antipodal geodesic of \(B(c)\) with the same number of color-one edges.
+
+*Proof.* Let \(P\) be any full antipodal geodesic in \(c\), starting at \(x\) and ending at \(\bar x\), and put \(J=\{i:c_i(x)=1\}\). Start at any \((x,y)\) in \(Q_{2n}\). First traverse all auxiliary directions \(n+i\) with \(i\in J\), in arbitrary order. Their colors are zero because \(B(c)_{n+i}(x,y')=1-c_i(x)=0\). Next traverse all old directions following \(P\), with no auxiliary changes. Their colors reproduce those of \(P\). Finally traverse auxiliary directions \(n+i\) for \(i\notin J\), in arbitrary order. Their colors are zero since \(B(c)_{n+i}(\bar x,y')=1-c_i(\bar x)=c_i(x)=0\). This traverses every direction once and joins \((x,y)\) to \((\bar x,\bar y)\), without introducing color-one edges. Each root \(y\) and pair of auxiliary-block orderings give distinct oriented extensions. There are \(2^n |J|!(n-|J|)!\) such extensions per original rooted geodesic; distinct old geodesics have distinct projections. Summing over \(x\) gives (BL6).
+
+Conversely, project any full antipodal geodesic of \(B(c)\) to the \(x\)-bits and delete its auxiliary steps. The result is a full antipodal geodesic in \(c\), and all its color-one edges remain color one in the lifted path. Therefore \(r(B(c))\ge r(c)\). The constructed extension of a minimizing old path gives the opposite inequality, proving (BL5). \(\square\)
+
+**Corollary (balanced first-excess branch is universally sufficient).** Unrestricted NORI1 is equivalent to the following assertion: every vertex-balanced antipodally odd coloring of any even-dimensional cube that has a full antipodal geodesic with precisely one color-one edge also has a monochromatic full antipodal geodesic.
+
+Indeed, a hypothetical unrestricted counterexample yields, by the established first-excess reduction, a bad legal \(c\) with \(r(c)=1\). The coloring \(B(c)\) is vertex-balanced by (BL1), and (BL5) gives \(r(B(c))=1\), hence it is a balanced bad coloring retaining a one-defect full geodesic. The converse is immediate. This also establishes equivalence when the balanced class is restricted to lifts of form (BL1), provided the one-defect condition is imposed.
+
+**Corollary (noise-trace endpoint multiplicity survives balancing).** For the established deformation \(F_c(t)=\operatorname{tr}(P_n((A_n+t(2R_c-A_n))/2)^n)\), the noise-trace distance theorem gives
+\[
+\boxed{\operatorname{ord}_{t=1}F_{B(c)}(t)=\operatorname{ord}_{t=1}F_c(t)=r(c).}\tag{BL7}
+\]
+Thus the established perfect-balance reduction simultaneously preserves the number of defects required to make a full antipodal geodesic monochromatic. It places the balanced Boolean matrix constraints and first-excess obstruction on one hypothetical counterexample; excluding the latter configuration remains open.
+
+**Theorem (balanced lift with arbitrarily high fixed-order marginal independence).** Fix n>=2, t>=1, and any legal coloring c on Q_n. For every k>=2 define a coloring C_k(c) on Q_N, N=2n+2k, with bits (x_1,...,x_n,y_1,...,y_n,a_1,...,a_k,b_1,...,b_k): use (BL1) in the first 2n directions and, cyclically for j=1,...,k, set
+\[
+\boxed{C_{a_j}(x,y,a,b)=a_{j+1},\qquad C_{b_j}(x,y,a,b)=1-a_{j+1}.}\tag{BL2}
+\]
+The notation a_(k+1)=a_1 is used. Then C_k(c) is legal, balanced at every vertex, and preserves badness by projection onto x. Moreover, at least
+\[
+\boxed{\frac{2^t\binom kt}{\binom{2n+2k}t}}\tag{BL3}
+\]
+of all t-element subsets of directions have *mutually independent fair* incident edge colors when the cube vertex is chosen uniformly. The fraction tends to 1 for fixed n,t as k grows. All direction pairs except the k complementary gadget pairs and the at most binom(2n,2) pairs within the old/compensator block have normalized Hamming distance 1/2.
+
+*Proof.* The gadget rule in direction a_j reads only bit a_(j+1), distinct from a_j because k>=2; the rule in direction b_j ignores b_j. Every gadget function changes color under antipodal complementation. Each gadget pair has opposite incident colors, giving perfect local balance together with (BL1). Projecting a monochromatic full path onto the x directions would make a monochromatic full path in c, proving badness preservation.
+
+The common color source of gadget pair j is the uniform bit a_(j+1). Distinct gadget pairs read different source bits, which are independent. Thus choosing one of two directions from each of t distinct gadget pairs gives independent uniform incident colors. There are 2^t binom(k,t) such choices out of binom(N,t) choices. Every gadget color is also independent of the old and compensator colors, which are functions only of x, giving the pairwise statement. QED.
+
+**Corollary (equivalent balanced pseudorandom closure branch).** For every fixed t and every epsilon>0, NORI1 for all legal colorings with equal incident degrees at every vertex and at least a proportion 1-epsilon of t-subsets of directions showing independent fair incident colors would imply unrestricted NORI1. Indeed, a bad coloring could be lifted by (BL2) into this class for all sufficiently large k. The converse is immediate.
+
+For an arbitrary perfectly balanced coloring of Q_N, let s_i(v)=(-1)^{c_i(v)}. Since sum_i s_i(v)=0 pointwise,
+\[
+\boxed{\sum_{i<j}\mathbb E_v[s_i(v)s_j(v)]=-N/2.}\tag{BL4}
+\]
+Every correlation is at least -1; therefore no balanced coloring can have fewer than N/2 direction pairs with nonzero correlation. The lifted C_k(c) has at most N/2+O(n^2) potentially correlated pairs, asymptotically attaining this necessary number as k tends to infinity for fixed n.
+
+By the unrestricted mean-switch identity, every balanced lift has expected switch count N/2, its maximal value. Thus neither maximal mean switching nor independence on almost every fixed-size family of incident directions, in isolation, distinguishes universally good colorings from possible balanced bad extensions. The conjecture still requires geometric compatibility of complete dimension-simple paths.
+
+
+
+### Sparse exterior support and localized obstruction for arbitrary counterexamples
+
+Retain even \(n=2m\ge4\), \(K=\binom{n-1}{m}\), a stationary parity coloring \(p\), and a distinguished direction \(i\). Let \(p^{(i)}\) reverse all its direction-\(i\) edge pairs. For \(j\ne i\), let \(\mathcal L_j(p)\) and \(\mathcal L_j(p^{(i)})\) be their supported direction-\(j\) antipodal edge orbits in monochromatic-zero full paths. Put
+\[
+\mathcal U_{i,j}(p)=\mathcal L_j(p)\cup\mathcal L_j(p^{(i)}).
+\]
+
+**Theorem (support intersection count).** For every \(j\ne i\),
+\[
+\boxed{
+|\mathcal L_j(p)\cap\mathcal L_j(p^{(i)})|
+=\binom{n-2}{m-1},
+\qquad
+|\mathcal U_{i,j}(p)|
+=2K-\binom{n-2}{m-1}.}
+\tag{SU1}
+\]
+In particular,
+\[
+\boxed{
+2^{n-2}-2K+\binom{n-2}{m-1}
+}
+\]
+direction-\(j\) edge orbits are absent from *every* zero geodesic of every legal coloring obtained by arbitrary changes to \(p\) confined to direction \(i\).
+
+*Proof.* The middle-layer representation of the stationary path design assigns every supported orbit in direction \(j\) a unique \(m\)-subset \(A\subset[n]\setminus\{j\}\). Translating from \(p\) to \(p^{(i)}\) reflects all bits outside \(i\); modulo antipodal edge identification, this toggles the \(i\)-th bit of the direction-\(j\) orbit. The toggled row has adjusted weight \(m-1\), whose complement represents a supported orbit, precisely when \(i\in A\). Thus the common supported orbits correspond to the \(m\)-subsets containing \(i\), numbering \(\binom{n-2}{m-1}\). Inclusion-exclusion proves (SU1). Every zero path after a direction-\(i\) selector change belongs to one of the two stationary zero-path families by the bridge-fan decomposition, so outside their union no orbit can be traversed. \(\square\)
+
+**Corollary (localized sharp robustness).** Let \(c\) be any legal antipodally odd coloring, and let \(q\) be the coloring obtained from the stationary reference \(p\) by giving it precisely \(c\)'s direction-\(i\) edge colors while retaining \(p\) elsewhere. Define
+\[
+t_{\mathrm{active}}(c;p,i)=
+\sum_{j\ne i}
+|\{[e]\in\mathcal U_{i,j}(p):c(e)\ne p(e)\}|.
+\]
+Then
+\[
+\boxed{
+N_0(c)\ge\frac{n!}{2}
+\left(1-\frac{(3/2-1/n)t_{\mathrm{active}}(c;p,i)}K\right)_+.
+}
+\tag{SU2}
+\]
+Consequently a hypothetical bad coloring must satisfy
+\[
+\boxed{
+t_{\mathrm{active}}(c;p,i)\ge
+\left\lceil\frac{K}{3/2-1/n}\right\rceil
+\quad\text{for every stationary }p\text{ and every }i.}
+\tag{SU3}
+\]
+
+*Proof.* The path family of \(q\) has size \(n!/2\), and every path's exterior edges lie in the indicated union of supports. Recoloring orbits outside that union leaves these paths unchanged. Every recoloring inside the union destroys at most the sharp exterior incidence maximum from (SE1). The union bound proves (SU2); setting \(N_0(c)=0\) yields (SU3). \(\square\)
+
+Thus each hypothetical counterexample must be misaligned with *every* stationary comparison state on a sizable number of orbits belonging to sparse, explicitly known exterior middle-layer windows. This is stronger than a bound on its total parity discrepancy alone, yet it still does not exclude globally distributed colorings.
+
+
+### Connected balanced padding with independent marginals and sparse square curvature
+
+**Theorem (counterexample-preserving connected lift).** Every bad antipodally odd coloring in dimension n has bad lifts in all dimensions 2n+2k, k>=max(2,n-1), which are perfectly balanced at every vertex and have connected undirected direction-influence graph. For every fixed t, almost all t-subsets of directions exhibit mutually independent uniform incident-edge colors; moreover almost every pair of directions has zero cubical square curvature. Thus the corresponding class is sufficient to settle unrestricted NORI1.
+
+*Construction and proof.* Let c be an odd undirected Q_n edge coloring, n>=2. For k>=max(2,n-1), on Q_(2n+2k) with bits (x,y,a,b), set C_i=c_i(x), C_(y_i)=1-c_i(x), C_(a_j)=a_(j+1)+x_1+x_(r(j)), C_(b_j)=1+C_(a_j) mod2, where cyclic j and r(j)=2+((j-1) mod(n-1)). This is antipodally odd and pointwise degree-balanced; projecting any monochromatic full geodesic to the first n directions gives one in c. The undirected influence graph is connected: gadget a_j form a cycle, each b_j attaches to it, every x_i occurs in some gadget rule, and each y_i reads a nonconstant odd c_i. Conditional on x, the gadget source bits a_(j+1) are independent and uniform; hence 2^t binom(k,t)/binom(2n+2k,t) of all t-subsets of directions have independent fair incident colors. At most binom(2n,2)+6k direction pairs have nonzero square curvature: at most 4k gadget-old interactions, 2k adjacent-gadget interactions, and all old-old pairs. Thus this exceptional fraction approaches zero as k grows. If a bad coloring exists, it has connected perfectly balanced bad lifts with arbitrary fixed-order local color independence and locally flat squares on all but a vanishing proportion of direction sets. Hence proving NORI1 in this class implies NORI1 unrestricted. Independently audited at all vertices of Q14 for n=3,k=4; script nori_balanced_connected_padding_audit.py, SHA256 d67ebb15ce17e24a60a27663cec56a86d7e8e64e2257914579f8ba7d6607a809.
+### Middle-rank support crossing in balanced cubes
+
+For a balanced antipodally odd coloring of Q_(2m), define R_b^k(r) to be the k-element direction sets S which support some color-b dimension-simple path from root r to r xor 1_S.
+
+**Theorem (universal halfpath expansion).** For every root r, color b, and 0<=k<=m,
+\[
+\boxed{|R_b^k(r)|\ge\binom mk.}\tag{HC1}
+\]
+*Proof.* For S in R_b^k, the reached vertex has m incident b-edges, at most k of which use directions in S. Hence at least m-k b-edges extend to distinct (k+1)-direction supports. Every support T of size k+1 has at most k+1 predecessors. Thus \((k+1)|R_b^{k+1}(r)|\ge(m-k)|R_b^k(r)|\); induction from |R_b^0|=1 proves (HC1). QED.
+
+**Theorem (complementary halfpath criterion).** A legal coloring of Q_(2m) has a monochromatic full antipodal geodesic if and only if there are a root r and an m-set S such that
+\[
+\boxed{S\in R_0^m(r)\quad\text{and}\quad [2m]\setminus S\in R_1^m(r).}\tag{HC2}
+\]
+*Proof.* Choose a zero m-step path from r to v=r xor 1_S and a one m-step path from r using the complementary direction set. Antipodal translation converts the latter path to a zero path from bar r to v. Reverse and concatenate with the first half; their direction sets partition [2m], giving a zero full geodesic. Conversely split any zero full geodesic after m steps. Reverse and antipodally translate its second half to get the complementary one path from r. A one full geodesic becomes zero under antipodal translation. QED.
+
+**Corollary (closure-equivalent middle-rank intersection).** Combining (HC2) with the badness-preserving perfect-balance lift, unrestricted NORI1 is equivalent to the statement that for every balanced legal coloring in every even dimension there exists a root r for which
+\[
+R_0^m(r)\cap\{[2m]\setminus T:T\in R_1^m(r)\}\ne\varnothing.
+\tag{HC3}
+\]
+Each family is nonempty at every root by (HC1), but demanding (HC3) root by root is false. On Q_6 set c_i(x,y)=x_((i+1) mod3) and c_(3+i)(x,y)=1-x_((i+1) mod3), i=0,1,2. At r=0, the reachable zero halfpath supports are represented by bit masks \(\{11,14,21,22,35,37\}\), whereas the one halfpath supports comprise only mask 56. The complement of mask 56 is 7, absent from the zero set. The coloring is nevertheless good. Thus a closure argument must couple different roots, not merely demand complementary midpoint supports at each root.
+
+
+## Directional affinity of full-geodesic counts
+
+Let \(c\) be an antipodally odd binary edge coloring of \(Q_n\), and let \(Z(c)\) count its monochromatic-zero unoriented full antipodal geodesics. Write \(M_i\) for the antipodal edge-pair orbits in direction \(i\), and \(c^{[S]}\) for simultaneous reversal of the orbits in \(S\).
+
+**Theorem (directional modularity).** For every \(S\subseteq M_i\),
+\[
+Z(c^{[S]})=Z(c)+\sum_{p\in S}(Z(c^{[\{p\}]})-Z(c)).\tag{DM1}
+\]
+*Proof.* Every full geodesic uses one edge in direction \(i\). Its monochromatic-zero indicator changes under \(S\) only through the reversal of that edge's orbit, so its change is the sum of its changes under the singleton reversals in \(S\). Sum over geodesics. \(\square\)
+
+**Corollary (simultaneous repair).** If \(c\) is bad, then
+\[
+Z(c^{[S]})=\sum_{p\in S}Z(c^{[\{p\}]}).\tag{DM2}
+\]
+Therefore a same-direction recoloring heals \(c\) if and only if it includes a healing singleton. If every member of \(S\) is healing, then \(Z(c^{[S]})\ge|S|\).
+
+**Theorem (Boolean fibers of bad completions).** Fix the colors of all edge orbits outside direction \(i\). For each orbit \(p=\{e_p,\bar e_p\}\in M_i\), let \(L_p^+\), respectively \(L_p^-\), be the number of full geodesics through \(e_p\), respectively \(\bar e_p\), whose other \(n-1\) edges are zero. If the zero member of \(p\) is chosen by \(\eta_p\in\{+,-\}\), then
+\[
+Z(\eta)=\sum_{p\in M_i}L_p^{\eta_p},\qquad
+\min_\eta Z(\eta)=\sum_{p\in M_i}\min(L_p^+,L_p^-).\tag{DM3}
+\]
+In particular, bad completions form either the empty set or a Boolean subcube of the direction-\(i\) orbit assignments.
+
+*Proof.* Each zero full geodesic is counted by the summand corresponding to its unique direction-\(i\) orbit. Since all summands are nonnegative, \(Z(\eta)=0\) precisely when every selected \(L_p^{\eta_p}\) vanishes. The choices at different orbits are independent. \(\square\)
+
+**Corollary (zero-energy extremal rigidity).** If a bad coloring \(c\) maximizes the facet-imbalance energy among bad colorings and its imbalance vector \(B\) vanishes, then each singleton flip raises its energy by \(4(n-1)\) and therefore heals. Consequently, for each direction \(i\), \(c\)'s orbit assignment is the unique bad completion with all other directions held fixed; moreover \(Z(c^{[S]})\ge|S|\) for every nonempty \(S\subseteq M_i\).
+
+The theorem applies to unrestricted colorings. It constrains the bad set on each direction fiber, without imposing consistency of those fibers across distinct directions.
+
+
+## Facet balance and sharp opposite face extremes under counterexample-preserving lifts
+
+For an antipodally odd edge coloring C of Q_N, let s_i(v)=(-1)^{C_i(v)}. Call C *vertex-balanced* when \(\sum_i s_i(v)=0\) for every vertex v. This requires even N.
+
+**Theorem (balanced facets).** Every vertex-balanced antipodally odd coloring has equally many edges of the two colors in every facet.
+
+*Proof.* Fix a facet F by setting bit i to b. Double-counting its internal signed edges gives
+\[
+2\sum_{e\subset F}s(e)
+=\sum_{v\in F}\sum_{j\ne i}s_j(v)
+=-\sum_{v\in F}s_i(v).
+\]
+The direction-i edge function s_i ignores bit i and is odd under complementing all other bits. Its sum over the remaining \(N-1\) freely varying bits is zero. Thus the facet signed-edge sum vanishes. \(\square\)
+
+In particular, in a vertex-balanced legal coloring the vertex and facet edge-count imbalances both attain their minimum, zero. The unrestricted mean-switch identity gives the maximum possible mean switch count, \(N/2\). This does not require the colors to be evenly distributed on smaller-dimensional faces.
+
+**Theorem (near-extremal monochromatic faces and approximate independent local colors).** Let c be any antipodally odd coloring of Q_n, n>=3. For every integer k>=3 there is an antipodally odd coloring C of Q_N, N=2n+2k, such that:
+
+1. C is vertex-balanced, and its undirected direction-influence graph is connected.
+2. Any monochromatic full antipodal geodesic of C projects onto a monochromatic full antipodal geodesic of c.
+3. C contains a monochromatic k-dimensional face, and \(k=N/2-n\). Every monochromatic face of any vertex-balanced coloring of Q_N has dimension at most N/2, so this approaches the upper bound with additive deficit n.
+4. Fix t. At least the proportion
+\[
+\boxed{\frac{2^t\binom{k}{t}}{\binom{2n+2k}{t}}}\tag{BE1}
+\]
+of all t-element direction sets have a joint distribution of incident colors at a uniformly chosen vertex whose total-variation distance from t independent fair bits is at most \(k\,2^{2-k}\). For n,t fixed, the proportion tends to one and the total-variation bound tends to zero as k grows.
+
+*Construction.* Let \(\beta:\{0,1\}^n\to\{0,1\}\) be antipodally odd and sensitive to every input bit. Such a function exists for n>=3: for odd n use the parity of all n bits; for even n>=4 use majority, breaking ties by the first bit. Use old bits x_i, compensator bits y_i, and k pairs of new bits u_j,v_j, with indices j interpreted cyclically. Define
+\[
+H_j(v)=\mathbf1_{\{v_\ell:\ell\ne j\text{ are all equal}\}},\qquad
+g_j(x,u,v)=
+\begin{cases}
+\beta(x),&H_j(v)=1,\\
+u_{j+1},&H_j(v)=0,
+\end{cases}\tag{BE2}
+\]
+and put
+\[
+\boxed{C_{x_i}=c_i(x),\quad C_{y_i}=1-c_i(x),\quad
+C_{u_j}=g_j,\quad C_{v_j}=1-g_j.}\tag{BE3}
+\]
+
+*Proof.* Every old rule ignores its own direction bit. The rule g_j does not read u_j since k>=3; it also does not read v_j, since H_j omits v_j. The test H_j is unchanged when all v bits are complemented. Both beta(x) and u_(j+1) change their bits under full antipodal complementation, so g_j does too. All rules therefore satisfy the undirected-edge and antipodal-odd requirements. Each old/compensator pair and each new pair contribute opposite incident colors, proving vertex balance.
+
+Deleting all non-x steps from a full monochromatic geodesic of C yields a full monochromatic geodesic of c, proving the projection assertion. The undirected influence graph is connected: each new u_j reads u_(j+1) when H_j=0, yielding a cycle; each v_j rule reads u_(j+1), attaching v_j; each g_j depends on beta(x) when H_j=1, and beta is sensitive to every x_i; each compensator y_i reads an old x-bit since the odd Boolean function c_i is nonconstant.
+
+Fix all old, compensator, and v bits, with v_1=...=v_k=0, and allow the k bits u_1,...,u_k to vary freely. Then H_j=1 for every j, so the induced k-face has every edge of color beta(x), proving the monochromatic-face assertion. Conversely, if an r-face is monochromatic with color b, each of its vertices has at least r incident edges of color b. Vertex balance implies r<=N/2.
+
+For the distributional assertion, let E be the event that H_j(v)=1 for some j. Each H_j depends on k-1 independent v-bits and satisfies
+\[
+\Pr(H_j=1)=2^{2-k},\qquad
+\Pr(E)\le k2^{2-k}.\tag{BE4}
+\]
+Conditional on the complementary event, all g_j are the mutually independent fair bits u_(j+1). Event E depends only on v and is independent of all u bits. Thus any t incident colors chosen from distinct new pairs, taking either u_j or v_j in each pair, are within total-variation distance at most Pr(E) of t independent fair bits. There are \(2^t\binom{k}{t}\) such selections, proving (BE1). \(\square\)
+
+**Corollary (joint extremization does not force the conjecture).** For every fixed t and epsilon>0, unrestricted NORI1 is equivalent to NORI1 for even-dimensional legal colorings which are vertex-balanced and interaction-connected, contain a monochromatic face of dimension at least \((1/2-\epsilon)N\), and have incident-color distributions within epsilon of independent fair bits on at least a fraction \(1-\epsilon\) of t-direction subsets.
+
+Indeed, if a bad coloring c existed then (BE3), for large k, would give bad colorings satisfying all four restrictions. This exhibits the coexistence of perfect vertex and facet balance, almost maximal monochromatic-face dimension, and asymptotically independent local color samples. The residual closure question is global compatibility of full dimension-simple geodesics, not either local extremum separately.
+
+An independent enumeration of Q_14, taking n=3 and k=4, verified undirectedness, antipodal oddness, vertex balance, interaction connectivity, and the monochromatic-face condition at every vertex. It also checked the two-gadget color distribution and the guard-event probability. Reproducible script nori_self_guarded_extremes_audit.py.
+
+
+
+## Two freely recolored directions: terminal-path conservation and exterior robustness
+
+Let \(n=2m\ge4\), \(p_k(x)=b_k+\sum_{\ell\ne k}x_\ell\bmod2\) be a stationary parity coloring, and \(i\ne j\) be directions. Let \(q\) be any antipodally odd coloring agreeing with \(p\) outside directions \(i,j\). Write \(T=(n-1)!\) and \(H=\binom{n-2}{m-1}\).
+
+**Theorem (terminal geodesic conservation).** The number of unoriented monochromatic-zero full antipodal geodesics of \(q\) with direction \(i\) terminal is \(T\); likewise for \(j\).
+
+*Proof.* Fix an order \(\pi\) beginning with \(i\), and initial vertex \(x\), with \(R=\sum_kx_k\bmod2\). Requiring the edges in each unchanged direction \(k\notin\{i,j\}\) to be zero gives \(x_k=R+b_k+\pi^{-1}(k)-1\bmod2\). The \(n-2\) equations leave four roots, parametrized by \(x_i,x_j\). Holding \(x_j\) fixed and toggling \(x_i\) complements all bits of the root other than \(x_j\), so the observed direction-\(j\) edge changes to its antipodal mate and its color toggles. Thus two of the four roots have zero color in every step after the initial \(i\)-step.
+
+When the initial step is one, delete it and append its antipodal mate to the far end; this root-slide gives a zero full geodesic with \(i\) terminal. Each target unoriented zero path with \(i\) terminal has two source representations: its zero orientation starting with \(i\), and the path starting with the antipodal \(i\)-edge (color one), followed by the original remaining zero chain backwards. Both sources use the same edges in all directions except \(i\). Therefore \(2(n-1)!\) candidates produce \(T\) targets. \(\square\)
+
+**Theorem (exterior incidence).** Every antipodal edge orbit in a direction \(k\notin\{i,j\}\) belongs to at most \(T/H\) of the conserved terminal zero geodesics.
+
+*Proof.* The four roots satisfying the unchanged direction constraints, for a fixed order starting with \(i\), are precisely the zero roots for four stationary parity references obtained by independently toggling their \(i,j\) sign offsets. Within the \(i\)-terminal zero family of each reference, every supported exterior orbit appears \(T/H\) times and the support is a middle layer of \(H\) projective orbits. Toggling the \(i\) sign preserves each exterior middle-layer support by complementing the remaining \(n-2\) bits; toggling the \(j\) sign sends it to a disjoint support by toggling one adjusted bit. Hence a fixed exterior orbit occurs in zero or two reference families. It appears in at most \(2T/H\) source paths, and each target has two sources with the same exterior edges, yielding \(T/H\). \(\square\)
+
+**Consequences.** The two terminal families each have \(T\) members; their intersection has at most \(2(n-2)!\), by fixing both terminal directions and an order of the other \(n-2\), so
+\[
+\boxed{N_0(q)\ge 2(n-2)!(n-2).}\tag{TD1}
+\]
+If \(c\) further differs from \(q\) on \(t\) antipodal edge pairs outside \(i,j\), then
+\[
+\boxed{N_0(c)\ge T(1-t/H)_+.}\tag{TD2}
+\]
+This follows by charging at most \(T/H\) terminal paths to every additional changed orbit. In particular every hypothetical bad odd coloring \(c\) in even dimension has, outside **every** pair of directions \(i,j\), at least \(H\) edge-pair discrepancies relative to every stationary parity reference. If \(\alpha_k=\widehat{s_k}([n]\setminus\{k\})\) are its top admissible Walsh coefficients, choosing the reference signs independently to minimize directionwise discrepancies yields
+\[
+\boxed{\sum_{k\notin\{i,j\}}(1-|\alpha_k|)\ge
+\binom{n-2}{m-1}/2^{n-3}.}\tag{TD3}
+\]
+These conclusions are restrictions on unrestricted hypothetical counterexamples, not a special-coloring assumption. The terminal count and exterior incidences were separately audited in dimensions four and six.
+
+
+
+## Bounded-Fourier-degree balanced lifts: a barrier to spectral-only closure
+
+**Theorem (counterexample-preserving low-degree lift).** Let \(n\ge3\), and let \(c\) be any antipodally odd binary edge coloring of \(Q_n\). For every \(k\ge0\), there exists a vertex-balanced antipodally odd coloring \(C\) of \(Q_N\), \(N=2n+2k\), satisfying:
+
+(i) every monochromatic full antipodal geodesic in \(C\) projects to a monochromatic full antipodal geodesic in \(c\);
+
+(ii) each signed direction-edge function of \(C\) has Walsh degree at most \(n-1\), regardless of \(k\);
+
+(iii) every vertex and facet has zero color imbalance, and every highest-permitted Walsh coefficient
+\(\widehat{s^{C}_a}([N]\setminus\{a\})\) vanishes.
+
+*Proof.* Write the axes as original \(x_1,\ldots,x_n\), compensators \(y_1,\ldots,y_n\), and new pairs \(u_1,v_1,\ldots,u_k,v_k\). Choose an antipodally odd Boolean function \(\beta(x)\), for instance \(x_1\). Set
+\[
+\boxed{
+C_{x_i}(x,y,u,v)=c_i(x),\quad
+C_{y_i}(x,y,u,v)=1-c_i(x),\quad
+C_{u_j}=\beta(x),\quad C_{v_j}=1-\beta(x).}
+\tag{BL1}
+\]
+All direction rules ignore their own direction bits. Under global antipodal complementation, every displayed bit changes because each \(c_i\) and \(\beta\) is antipodally odd. Thus \(C\) is legal.
+
+At each vertex, each compensator pair \(x_i,y_i\) contributes one edge of each color, as does each new pair \(u_j,v_j\), proving vertex balance. Facet balance then follows by the established balanced-facet theorem. In signed form, every rule depends only on the original \(n\) bits. The \(c_i\) rule ignores \(x_i\), so its Walsh degree is at most \(n-1\); the companion has the same spectrum up to sign, while the new rules \(\beta(x)=x_1\) have degree one. For \(N>n\), no direction rule has Fourier mass at degree \(N-1\); this proves (ii),(iii).
+
+A full dimension-simple geodesic in \(Q_N\) traverses each original \(x_i\)-direction once. Deleting all other steps produces a full antipodal geodesic in the \(x\)-cube. Its \(x_i\)-edge colors are unchanged from \(c_i(x)\), so if the full path is monochromatic then so is the projected path. \(\square\)
+
+**Corollary (spectral-barrier implication).** If NORI1 fails in any dimension, it fails in infinitely many arbitrarily large even dimensions with vertex and facet imbalance identically zero, and with all direction-color Fourier spectra supported in degrees at most a constant depending only on the original counterexample. In particular the top Walsh coefficients \(\alpha_i\) of all these counterexamples vanish, as does the entire vertex-degree field \(d(v)\). Their high-parity spectral discrepancy from stationary states is maximal in every direction.
+
+Consequently neither the positive first-level facet-energy condition nor proximity to the top-degree stationary parity characters, nor any criterion based only on those two regimes, can settle unrestricted NORI1 without an additional global compatibility invariant. This corollary concerns a hypothetical counterexample and does not construct one.
+
+
+## Counterexample-preserving one-source padding and imbalanced extremal reduction
+
+Let \(c=(c_1,\ldots,c_n)\) be an antipodally odd binary edge coloring of \(Q_n\), represented by functions \(c_i(x)\) independent of bit \(i\). Fix an original direction \(j\), let \(k\ge1\), and put \(N=n+k\). On \(Q_N\) with vertex bits \((x,z)\in Q_n\times Q_k\), define
+\[
+\boxed{
+C_i(x,z)=c_i(x)\ (1\le i\le n),\qquad
+C_{n+t}(x,z)=x_j\ (1\le t\le k).
+}
+\tag{IP1}
+\]
+
+**Theorem (badness-preserving imbalanced padding).** The coloring \(C\) is antipodally odd. If \(c\) is bad, then every coloring obtained from \(C\) by independently reversing any subset of the antipodal edge pairs in its \(k\) added directions is bad. These are
+\[
+\boxed{2^{k2^{N-2}}}
+\tag{IP2}
+\]
+distinct bad legal colorings in dimension \(N\).
+
+*Proof.* An old direction rule ignores every new bit and remains odd under full complementation. A new rule \(x_j\) ignores its new direction and reverses under complementing all vertex bits. Thus \(C\) is legal. Every full dimension-simple antipodal geodesic in the lifted cube projects, on deleting the new-direction steps, to a full dimension-simple antipodal geodesic of \(Q_n\): it traverses each old direction once, and the old edge colors are those of \(c\). Therefore a monochromatic full path in any stated recoloring would project to one in \(c\), contrary to badness. There are \(2^{N-2}\) antipodal edge pairs per added direction, giving (IP2). \(\square\)
+
+Let \(F_j=\{x:x_j=0\}\) in the original cube, and let \(t_j\) be its number of one-colored internal edges. Write \(F'_j\) for the corresponding facet of \(Q_N\).
+
+**Theorem (arbitrarily polarized facets).** In the lifted coloring (IP1), the number of one-colored edges within \(F'_j\) is \(2^k t_j\), while the total number of edges in that facet is \((N-1)2^{N-2}\). Consequently
+\[
+\boxed{
+\frac{\#\{\text{one-colored edges in }F'_j\}}
+{\#E(F'_j)}
+=\frac{t_j}{(N-1)2^{n-2}}
+\le\frac{n-1}{N-1}\longrightarrow0
+\quad(k\to\infty).
+}
+\tag{IP3}
+\]
+Writing \(B_j(c)\) for the signed imbalance of \(F_j\), the imbalances satisfy
+\[
+\boxed{B'_j=2^k B_j(c)+k\,2^{N-2}.}
+\tag{IP4}
+\]
+In particular \(\lim_{k\to\infty}B'_j/[(N-1)2^{N-2}]=1\).
+
+*Proof.* Each old internal edge of \(F_j\) occurs in \(2^k\) copies, and every added-direction edge inside \(F'_j\) has color zero because \(x_j=0\). Each added direction contributes \(2^{N-2}\) such zero edges. Counting the old and new edges proves both assertions. The original facet has \((n-1)2^{n-2}\) edges, giving the upper bound. \(\square\)
+
+**Corollary (the nonzero-energy extremal branch suffices for closure).** If a bad legal coloring exists in some dimension \(n\), then in dimension \(n+1\) there is a bad coloring with a nonzero signed facet-imbalance vector. Consequently that dimension admits an energy-maximizing bad coloring with nonzero imbalance, where \(\mathcal E=\sum_iB_i^2\).
+
+*Proof.* Use \(k=1\) and choose the new rule to be either \(x_j\) or \(1-x_j\). Both preserve badness by projection. Their distinguished facet imbalances are \(2B_j(c)+2^{n-1}\) and \(2B_j(c)-2^{n-1}\), which cannot both vanish. Therefore at least one bad extension has positive energy. An energy maximum over the finite bad-coloring space of \(Q_{n+1}\) has energy no smaller, and its imbalance vector is nonzero. \(\square\)
+
+This removes the \(B=0\) case from a strategy that seeks to contradict the existence of energy-maximizing bad colorings in arbitrary dimensions, since any lower-dimensional counterexample may first be lifted once. Conversely, (IP3) shows that a dimension-independent positive upper bound on the fraction of monochromatic edges within a single facet cannot by itself prove the conjecture: conditional on any bad coloring, there are bad lifts with a facet arbitrarily close to monochromatic. The fixed-dimensional extremality and simultaneous-restoration restrictions remain meaningful.
+
+
+
+### Two-way balanced lift and factorial geodesic-count transfer
+
+Let \(c\) color \(Q_n\) antipodally oddly, \(n\ge2\). Take its balanced low-degree lift \(C\) to \(Q_{2n+2k}\) as defined in (BL1), with \(D=n+2k\) auxiliary directions. Then
+\[
+\boxed{N_0(C)>0\iff N_0(c)>0,}\tag{BL2}
+\]
+and
+\[
+\boxed{N_0(C)\ge
+2^{D}(\lfloor n/2\rfloor+k)!(\lceil n/2\rceil+k)!\,N_0(c).}
+\tag{BL3}
+\]
+
+*Proof.* A zero full geodesic in \(C\) projects to a zero full geodesic in \(c\), by deleting every auxiliary step. For the converse, orient a zero full geodesic \(P\) of \(c\) from vertex \(x\) to \(\bar x\). Each original direction function \(c_i\) has opposite values at these endpoints. Insert the auxiliary \(y_i\)-step, whose color is \(1-c_i\), before \(P\) when \(c_i(x)=1\) and after \(P\) otherwise. For each extra auxiliary pair \(u_j,v_j\), whose colors are \(\beta(x)\) and \(1-\beta(x)\), insert one step before and the other after \(P\), where each has color zero. Since all auxiliary colors depend only on the original \(x\)-bits, these insertions do not affect one another.
+
+If \(a\) of the values \(c_i(x)\) equal one, there are \(a+k\) auxiliary steps before \(P\) and \(n-a+k\) after. Their orders can be chosen freely, as can the \(2^D\) starting auxiliary bit strings. This yields \(2^D(a+k)!(n-a+k)!\) lifts per oriented original zero path. The opposite orientation exchanges \(a\) and \(n-a\) and reverses the lifts; hence the same expression counts unoriented lifted paths per unoriented original path. Factorial log-convexity makes the product smallest for \(a\) nearest \(n/2\), proving (BL3). \(\square\)
+
+**Full gap-allocation count.** Choose one orientation \(P=(x_0,\ldots,x_n)\) per unoriented zero path of \(c\), and write \(h_d(x)\) for the edge color of auxiliary direction \(d\) at original vertex \(x\). Assign each auxiliary direction a gap \(\sigma(d)\in\{0,\ldots,n\}\) in which \(h_d(x_{\sigma(d)})=0\), and order the directions within each gap. Then
+\[
+\boxed{N_0(C)=2^D\sum_{P\in\mathcal G_0(c)}
+\ \sum_{\sigma:\ h_d(x_{\sigma(d)})=0\ \forall d}
+\prod_{t=0}^n|\sigma^{-1}(t)|!.}
+\tag{BL4}
+\]
+This follows by bijectively encoding each lifted unoriented path by the orientation projecting to the chosen \(P\), the admissible gap assignment, orders inside gaps, and starting auxiliary bits.
+
+The lift therefore transfers geodesic existence in both directions, while increasing path multiplicity at least factorially, despite perfect balance and bounded Fourier degree.
+
+
+
+### Co-singleton Fourier coupling of vertex imbalance and high parity
+
+Let \(c\) be an antipodally odd coloring of \(Q_N\), \(N\ge3\). Put \(s_i(x)=(-1)^{c_i(x)}\), \(d(x)=\sum_i s_i(x)=N-2r(x)\), and \(\alpha_i=\widehat{s_i}([N]\setminus\{i\})\).
+
+**Theorem.** For each \(i\),
+\[
+\boxed{\alpha_i=\widehat d([N]\setminus\{i\}),}\tag{VB1}
+\]
+and
+\[
+\boxed{\sum_i\alpha_i^2
+\le 2^{-N}\sum_x d(x)^2
+=\frac4{2^N}\sum_x(r(x)-N/2)^2.}\tag{VB2}
+\]
+In particular, **vertex-balanced colorings have \(\alpha_i=0\) in every direction**.
+
+*Proof.* The signed direction rule \(s_j\) ignores its own bit \(x_j\). If \(j\ne i\), the Walsh character of the set \([N]\setminus\{i\}\) depends on \(x_j\), so \(\widehat{s_j}([N]\setminus\{i\})=0\). Taking this Walsh coefficient in \(d=\sum_j s_j\) therefore leaves only \(\widehat{s_i}([N]\setminus\{i\})\). Orthogonality of the co-singleton Walsh characters and Bessel's inequality imply the squared-energy bound. The final equality uses \(d=N-2r\). \(\square\)
+
+**Interpretation.** High-parity spectral concentration forces a lower bound on squared vertex imbalance. Conversely a perfectly vertex-balanced coloring has no high-parity direction coefficient, regardless of how its remaining Fourier spectrum is distributed. Since counterexample-preserving balanced lifts exist, parity-neighborhood and facet-imbalance conditions alone cannot eliminate hypothetical unrestricted counterexamples: a global path-compatibility constraint is necessary.
+
+
+### Closure-equivalent dominant-reader reduction
+
+Let \(g:\mathbb N\to\mathbb N\) be any function satisfying \(g(N)\to\infty\) as \(N\to\infty\). Consider the class of antipodally odd edge colorings of \(Q_N\) for which some direction \(j\) satisfies
+\[
+\boxed{c_i(x)=x_j\quad\text{for all but at most }g(N)\text{ directions }i.}
+\tag{DR1}
+\]
+In particular all the indicated directions are distinct from \(j\); the remaining direction functions are unrestricted.
+
+**Theorem (dominant-reader equivalence).** NORI1 holds for every antipodally odd edge coloring in every dimension if and only if it holds for every coloring in (DR1), for any fixed unbounded function \(g\).
+
+*Proof.* One implication is immediate. Conversely, suppose an arbitrary bad coloring \(c\) of \(Q_n\) exists. Choose \(N>n\) so large that \(g(N)\ge n\), and apply the imbalanced padding construction (IP1) with \(k=N-n\), choosing any original direction \(j\). The resulting legal coloring \(C\) is bad by projection, while its \(N-n\) added directions all have rule \(C_i=x_j\). Only the \(n\) original directions may violate (DR1), and \(n\le g(N)\). Thus the restricted assertion would fail as well. \(\square\)
+
+The equivalence holds, for example, with \(g(N)=\max(1,\lfloor\log\log N\rfloor)\), or with \(g(N)=\lfloor\epsilon N\rfloor\) for any fixed \(\epsilon>0\). The latter form states that restricting to colorings with a common signed reader on at least a \((1-\epsilon)\)-fraction of directions leaves NORI1 unchanged.
+
+**Caveat.** The exceptional direction functions in (DR1) may represent an arbitrary \(Q_n\) coloring and retain the entire obstruction under projection. The theorem is a counterexample-preserving reduction, not an independent proof of compatibility for a bounded-hub reader class. A proof exploiting the dominant reader must control an exceptional core whose size is unbounded, albeit arbitrarily slowly growing.
+
+
+
+### Balanced NORI1 as a reversible Eulerian alternating-rainbow path problem
+
+Let \(n=2m\), and orient every edge of \(Q_n\) from its even-parity endpoint to its odd-parity endpoint when its color is zero, and in the opposite direction when its color is one. Denote the resulting digraph by \(D_c\).
+
+**Theorem (Eulerian correspondence).** The coloring \(c\) is vertex-balanced if and only if \(D_c\) is Eulerian, meaning indegree equals outdegree \(m\) at each vertex. Moreover, when \(c\) is antipodally odd, the antipodal map \(\tau\) reverses every directed arc of \(D_c\). Conversely, every Eulerian orientation of \(Q_{2m}\) for which \(\tau\) reverses all arcs defines a vertex-balanced antipodally odd coloring by making even-to-odd arcs color zero and odd-to-even arcs color one.
+
+*Proof.* At an even vertex, a zero edge points outward and a one edge inward; at an odd vertex the roles reverse. Equal color degrees \(m,m\) are therefore equivalent to equal directed in/out degrees at each vertex. For even \(n\), antipodal complementation preserves vertex parity. If the coloring is odd, the antipodal edge has the opposite color, hence the orientation prescribed by the rule reverses under \(\tau\). The converse follows by reversing these implications. \(\square\)
+
+**Geodesic equivalence.** In this digraph, a monochromatic-zero antipodal full geodesic is a path traversing each direction once whose arc traversal signs alternate forward/backward/forward/backward, starting with forward at an even initial vertex and backward at an odd initial vertex. The antipodal image supplies the complementary monochromatic-one geodesic, so zero suffices. Combined with the established counterexample-preserving balanced lift, unrestricted NORI1 is equivalent to the following dimension-uniform statement:
+
+> Every Eulerian orientation of an even-dimensional hypercube for which antipodal complementation reverses all arcs contains a full antipodal direction-rainbow path whose traversal alternates with the bipartite parity.
+
+**Halfpath guarantee and remaining obstruction.** From every root of such an orientation, there is a monochromatic-zero direction-simple path of length \(m\) and a monochromatic-one such path of length \(m\): at stage \(t<m\), at least \(m-t>0\) of the \(m\) incident edges of either color have as-yet-unused directions. Grand-theorem closure demands a root and a pair of these opposite-color halfpaths with complementary used direction sets, as in the existing halfpath criterion; this rootwise condition is not automatic, and examples in Article XV show it may fail at specified roots.
+
+The Eulerian correspondence is a structural equivalence, not a claim that an arbitrary Eulerian graph satisfies the desired rainbow-path property. It isolates the crucial global obstruction beyond first-order vertex balance.
+
+
+
+
+### Antipodal alternating-cycle switch connectivity and monochromatic two-path rigidity
+
+Let \(n=2m\ge4\), and let \(c,d\) be antipodally odd vertex-balanced undirected binary edge colorings of \(Q_n\). Write \(\tau x=\bar x\). Call a *paired alternating-cycle switch* the operation of reversing colors on the edge-disjoint union of two distinct antipodal images \(C,\tau C\), where \(C\) is an even simple cycle with colors alternating around it. Such a switch preserves antipodal oddness and all vertex color degrees.
+
+**Theorem (balanced odd configuration space is connected under paired alternating-cycle switches).** Every pair \(c,d\) as above is related by a sequence of paired alternating-cycle switches. The cycles of each switch can be chosen edge-disjoint from those of every other switch, all alternating with respect to the initial coloring \(c\). The intermediate colorings remain vertex-balanced and antipodally odd. If \(D=\{e:c(e)\ne d(e)\}\), the number of switches is at most \(|D|/8\).
+
+*Proof.* Antipodal oddness of \(c,d\) implies \(\tau D=D\). At every vertex, the number of incident \(D\)-edges colored zero by \(c\) equals the number colored one: each change from zero to one is compensated by a change from one to zero because \(c,d\) have the same zero degree \(m\). Orient the \(D\)-edges from even to odd vertices when colored zero by \(c\), and from odd to even vertices when colored one. The resulting digraph \(H\) is Eulerian, and \(\tau\) reverses every arc.
+
+Choose, at one representative \(v\) of each antipodal vertex pair, an arbitrary bijection \(f_v\) from the incoming arcs at \(v\) to the outgoing arcs at \(v\). At \(\tau v\), transport its inverse: the incoming arc \(\tau b\), corresponding to an outgoing arc \(b\) at \(v\), is followed by the outgoing arc \(\tau f_v^{-1}(b)\). These transition bijections first partition the directed edges of \(H\) into closed directed trails, and \(\tau\) maps each trail to another trail with reversed cyclic order. No trail can be invariant under this action: a reflection of the cyclic list of vertices that preserves their alternating parity classes fixes a vertex position, contradicting the fixed-point-free antipodal map. To obtain simple cycles, whenever a trail visits a vertex \(v\) more than once, exchange the outgoing successors of two of its incoming arcs at \(v\), and simultaneously perform the antipodally corresponding inverse exchange at \(\tau v\). The trail and its distinct antipodal partner each split into two shorter closed trails. Repeating this operation strictly increases the number of trails and ultimately yields simple directed cycles. These cycles still occur in distinct antipodal pairs \(C,\tau C\), and the paired cycles have disjoint edges, although they may share vertices. They alternate zero and one because the digraph orientation follows zero edges even-to-odd and one edges odd-to-even.
+
+Switch the colors on each pair \(C\cup\tau C\). At each vertex, each switched cycle contributes the same number of incident zero and one edges, so vertex balance is preserved. The switched edge set is \(\tau\)-invariant, so oddness is preserved. The paired cycles partition \(D\); switching all pairs therefore changes \(c\) into \(d\). Every cycle has at least four edges, and distinct antipodal partners contribute at least eight, proving the switch bound. \(\square\)
+
+**Theorem (monochromatic component two-connectivity).** Let \(f\) be any vertex-balanced binary coloring of \(Q_{2m}\), without an antipodal hypothesis, with \(m\ge2\). Each connected component of either monochromatic graph is two-vertex-connected.
+
+*Proof.* Let \(K\) be an \(m\)-regular connected bipartite component with classes \(A,B\), and suppose \(v\in A\) were a cut vertex. For every component \(U\) of \(K-v\), put \(A_U=A\cap U\), \(B_U=B\cap U\). Counting incident edges from the two sides gives
+\[
+m|A_U|+d(v,U)=m|B_U|,
+\]
+hence \(d(v,U)=m(|B_U|-|A_U|)\) is a positive multiple of \(m\). Summing over the components gives \(\sum_Ud(v,U)=m\), so there can be only one component, a contradiction. The case \(v\in B\) is symmetric. \(\square\)
+
+**Corollary (two disjoint monochromatic antipodal paths).** In every vertex-balanced antipodally odd \(Q_{2m}\) coloring, \(m\ge2\), both colors have a component containing an antipodal pair, and within each such component any antipodal pair is joined by two internally vertex-disjoint monochromatic paths. Their union is a simple monochromatic cycle of length at least \(2n\). Indeed the established monochromatic antipodal-path theorem supplies one such component; antipodal complementation supplies the opposite color, and the preceding two-connectivity theorem and Menger's theorem give the paths.
+
+The paired switches supply dimension-uniform exchanges within the balanced legal class. A switch can change the presence of monochromatic antipodal geodesics, and the two-path theorem does not control repeated directions; imposing a potential compatible with these cycle switches remains the global closure problem.
+
+
+
+### Commuting antipodal square flips in the closure-equivalent paired-flat class
+
+Fix \(N=2m\ge4\) and a partition of its dimensions into pairs \(P_i=\{i,i'\}\), \(1\le i\le m\). A *paired-flat coloring* is determined by functions
+\[
+f_i:\mathbb F_2^{[N]\setminus P_i}\longrightarrow\mathbb F_2,
+\qquad f_i(\bar z)=1+f_i(z),
+\]
+with undirected edge rules \(c_i(z)=f_i(z|_{[N]\setminus P_i})\) and \(c_{i'}(z)=1+f_i(z|_{[N]\setminus P_i})\). Each rule disregards both bits in its pair. All these colorings are vertex-balanced and antipodally odd.
+
+**Theorem (paired-square Boolean configuration cube).** For a fixed direction pairing, the class of paired-flat colorings is a Boolean cube of
+\[
+\boxed{K=m\,2^{N-3}}
+\tag{EC1}
+\]
+independent parameters. Its elementary parameter flips have the following graph-theoretic description: choose a square face supported on some \(P_i\) and simultaneously reverse the four colors on that face and on its distinct antipodal image. Every such operation preserves the paired-flat class. The operations commute, are independent, and connect all \(2^K\) paired-flat colorings. In every one of these colorings the cube edges partition into \(m2^{N-2}\) alternating squares supported on the direction pairs, arranged into \(K\) antipodal square pairs.
+
+*Proof.* For a fixed \(i\), the two incident edge colors in the directions \(i,i'\) are complementary, independently of their own two bits. Thus each square with free directions \(P_i\) has its \(i\)-edges of color \(f_i\) and its \(i'\)-edges of the opposite color. The four edges alternate colors cyclically. As the other \(N-2\) bits vary, these faces partition all edges in directions \(P_i\); varying \(i\) partitions the edge set of \(Q_N\). Their antipodal images are distinct for \(N\ge4\).
+
+The \(2^{N-2}\) values of the outside bits for \(f_i\) form \(2^{N-3}\) antipodal pairs, and \(f_i(\bar z)=1+f_i(z)\) leaves one independent bit for each pair. Different \(i\) have independent rules. Hence there are \(K=m2^{N-3}\) independent bits and \(2^K\) colorings. Flipping a pair of antipodal \(P_i\)-squares toggles the corresponding value of \(f_i\) and its antipodal companion, without changing any other parameter. The square edge sets are pairwise disjoint, so these flips commute and every intermediate coloring retains the alternating-square partition. \(\square\)
+
+**Corollary (unrestricted closure reduction to commuting square flips).** Every legal antipodally odd coloring \(b\) of \(Q_m\) admits a paired-flat lift on \(Q_{2m}\) with rules
+\[
+c_i(x,y)=b_i(x),\qquad c_{i'}(x,y)=1+b_i(x).
+\tag{EC2}
+\]
+The lift has a monochromatic full antipodal geodesic if and only if \(b\) does. Thus unrestricted NORI1 is equivalent to monochromatic full-geodesic existence for every paired-flat coloring in every even dimension. In particular any hypothetical counterexample has a paired-flat representative lying in a \(K\)-dimensional commuting-square exchange cube, where every edge of the ambient cube belongs to one of the alternating square faces.
+
+*Proof.* The functions \(b_i\) ignore their own bits, so (EC2) lies in the paired-flat class. A monochromatic full geodesic in the lift projects, after omission of the primed steps, to a monochromatic full geodesic in \(b\). Conversely, given one in \(b\), each primed step has the desired color at one of its two old endpoints because its rule is antipodally odd, so place it before or after the old geodesic accordingly. The primed steps do not affect other edge colors. \(\square\)
+
+This parametrization identifies a large family of legal local exchanges inside a class sufficient for unrestricted theorem closure. Local square abundance and commuting connectivity can coexist with a hypothetical counterexample; an extremal proof must control how geodesic reachability changes under these flips.
+
+
+
+
+### Covering radius of the successful paired-flat exchange region
+
+Let \(N=2m\ge4\), and let \(\mathscr C_N\cong Q_K\), \(K=m2^{N-3}\), be the Boolean parameter cube of all paired-flat legal colorings for a fixed pairing of the \(N\) directions. Adjacency means switching one antipodal pair of alternating squares. Write \(\mathscr G_N\) for configurations admitting a monochromatic full antipodal geodesic. Antipodal oddness ensures that every such coloring also has a color-zero full antipodal geodesic.
+
+For a full geodesic \(P\), let \(O(P)\subseteq[K]\) record the square-pair parameter orbits traversed by its edges, and let \(S_P\) be the set of configurations making every edge of \(P\) color zero. Whenever \(S_P\) is nonempty, it is a subcube of codimension \(|O(P)|\le N\). We have \(\mathscr G_N=\bigcup_{P}S_P\).
+
+**Theorem (covering radius, neighborhood, and density).**
+Every configuration of \(\mathscr C_N\) is within at most \(m=N/2\) square-pair switches of a successful configuration. Every \(g\in\mathscr G_N\) has at least \(K-N\) successful neighbors, and
+\[
+\boxed{|\mathscr G_N|\ge2^{K-N+1}.}\tag{EC5}
+\]
+
+*Proof.* Fix a root \(x\) and take the full direction order \(P=(1,\ldots,m,1',\ldots,m')\). Between its two steps of pair \(i\), precisely \(m-1\) directions outside that pair are used. Since \(0<m-1<N-2\), their assignments outside pair \(i\) are neither equal nor complementary. Hence the two edges lie in distinct antipodal square-pair parameter orbits. Different pairs have disjoint parameter sets, so \(|O(P)|=N\).
+
+The subcube \(S_P\) prescribes \(N\) independent parameter bits. Its antipodal path \(\tau P\) encounters the same parameter orbits with opposite edge colors, so \(S_{\tau P}\) prescribes the complementary \(N\) bits. Their distance requirements from any configuration sum to \(N\); consequently at least one lies at distance at most \(m\). The two subcubes are disjoint and each has \(2^{K-N}\) vertices, proving the density bound.
+
+Given \(g\in\mathscr G_N\), fix one all-zero full geodesic \(Q\). Any parameter switch outside \(O(Q)\) leaves all its edges unchanged. There are at least \(K-N\) such switches. \(\square\)
+
+
+**Theorem (high connectivity of successful square-switch configurations).** For every even \(N\ge10\), the induced graph \(\mathscr G_N\) is connected, has diameter at most \(K+N\), and has vertex connectivity
+\[
+\boxed{\kappa(\mathscr G_N)\ge K-N.}\tag{EC6}
+\]
+
+*Proof.* Choose any two successful configurations \(g,h\) and zero full geodesics \(P,Q\) in them. Each full geodesic traverses two edges of each direction pair, so \(O(P)\cup O(Q)\) contains at most four square-pair orbits of any fixed direction pair.
+
+For a uniformly random root \(x\), take the repeated-sweep full geodesic \(R_x\) with order \(1,\ldots,m,1',\ldots,m'\). At each of its two edges in pair \(i\), the outside-bit assignment modulo antipodal complementation is uniformly distributed among the \(2^{N-3}\) square-pair orbits of type \(i\). Thus the union bound gives
+\[
+\Pr\bigl(O(R_x)\cap(O(P)\cup O(Q))\ne\varnothing\bigr)
+\le\frac{8m}{2^{N-3}}<1\qquad(N\ge10).
+\tag{EC7}
+\]
+Choose a path \(R\) for which these orbit sets are disjoint. By the preceding theorem, \(S_R\) is a nonempty parameter subcube of codimension \(N\). The intersections \(S_P\cap S_R\) and \(S_Q\cap S_R\) are nonempty: the two families of prescribed parameter bits are disjoint in each intersection. Starting from \(g\), change at most \(N\) parameters in \(O(R)\) to reach \(S_P\cap S_R\), retaining the successful path \(P\). Do the same from \(h\) to reach \(S_Q\cap S_R\). The resulting configurations can be connected inside \(S_R\) by at most \(K-N\) more switches. All intermediate configurations remain successful, proving the diameter claim.
+
+For vertex connectivity, remove any set \(U\) of fewer than \(K-N\) successful configurations. The subcubes \(S_P,S_Q,S_R\) have dimension at least \(K-N\), so each remains connected after the removal by the vertex connectivity theorem for ordinary hypercubes. Each of \(S_P\cap S_R\), \(S_Q\cap S_R\) has at least \(2^{K-2N}>K-N>|U|\) vertices, so both intersections retain vertices. Connect surviving \(g,h\) through the three surviving subcubes. This proves (EC6). \(\square\)
+
+The bounds hold for arbitrary nonlinear rules in the counterexample-preserving paired-flat class. In a hypothetical counterexample dimension \(N\ge10\), the unsuccessful configurations constitute holes in a highly vertex-connected region of successful configurations; they cannot separate that region under legal paired-square switches.
+
+
+### One-Lipschitz minority defect and trapped paired turns
+
+For a paired-flat legal coloring \(c\) of \(Q_N\), let
+\[
+m(c)=\min_{P\ {\rm full\ geodesic}}\min\{N_0(P),N_1(P)\}
+\]
+be its global minority count. Antipodal complementation of a full geodesic reverses all colors, so \(m(c)\) equals the minimum number of color-one edges on a full geodesic.
+
+**Theorem (one-Lipschitz minority defect).** If paired-flat legal colorings \(c,d\) differ by one antipodal pair of alternating square switches, then
+\[
+\boxed{|m(c)-m(d)|\le1.}\tag{EC8}
+\]
+Consequently, with the successful configuration region \(\mathscr G_N\) of (EC5),
+\[
+\boxed{m(c)\le\operatorname{dist}_{\mathscr C_N}(c,\mathscr G_N)
+\le N/2.}\tag{EC9}
+\]
+
+*Proof.* Choose a full geodesic \(P\) with precisely \(k=m(c)\) color-one edges. Its first and last edges are color zero: if either endpoint edge had color one, orient \(P\) to put it first and cyclically transfer that first edge to the end. Its antipodal translate has color zero, reducing the color-one count, a contradiction.
+
+Let \(F,\tau F\) be the switched faces. The geodesic uses at most two edges of \(F\cup\tau F\), because only the two paired directions are free. If it uses two edges of the same face, these are consecutive and have opposite colors; switching both preserves the number \(k\) of color-one edges. If it uses one edge, the count changes by at most one. If it uses one edge of each face, those edges are the first and last steps: traversing both complementary outside-bit assignments forces the path to start in the first face and end in the second, with the two paired directions exhausted at those steps. Both affected edges therefore have color zero by the first paragraph. After switching them, there are \(k+2\) color-one edges, at the first and last steps. Cyclically moving the first edge to the end complements its color under antipodal oddness and leaves all other colors unchanged; the rotated full geodesic has \(k+1\) color-one edges. Thus in every case \(m(d)\le m(c)+1\). Interchanging \(c,d\) proves (EC8). Along a shortest switch path from \(c\) to \(\mathscr G_N\), the minority defect falls from \(m(c)\) to zero and changes by at most one per step, giving the lower bound in (EC9). The upper bound is (EC5). \(\square\)
+
+**Corollary (exposed-defect descent and a necessary local trap condition).** Let \(P\) attain \(m(c)=k>0\). If some color-one edge of \(P\) is the only edge of \(P\) belonging to its antipodal square-pair parameter orbit, switching that orbit produces \(d\) with
+\[
+\boxed{m(d)=k-1.}\tag{EC10}
+\]
+Consequently, at any configuration \(c\) that is a local minimum of the function \(m\) under antipodal paired-square switches, every color-one edge of every minimizing geodesic is immediately adjacent along that geodesic to a color-zero edge in the other direction of the same paired square.
+
+*Proof.* The prescribed switch changes just the exposed color-one edge of \(P\) to color zero, so \(m(d)\le k-1\); (EC8) gives the reverse inequality. If no reducing switch exists, every minority edge of every minimizing path must share its square-pair parameter orbit with another traversed edge. Two traversed edges in antipodal companion squares would occupy the first and last steps, which are color zero for a minimizing path. Thus the minority edge shares an individual square with its paired direction step. Those two steps are consecutive and have opposite colors, as claimed. \(\square\)
+
+This provides a dimension-uniform integer-valued potential for the complete paired-flat configuration cube. Local minima away from the successful region, if present, must be supported entirely by adjacent opposite-color paired turns. No assertion is made that such local minima exist or that all paired-turn traps can be eliminated.
+
+
+
+
+### Unary-spectator single-square critical normal form
+
+Call a coloring \(C\) a *unary-spectator pair extension* of a paired-flat coloring \(b\) on \(Q_N\) if it is defined on \(Q_{N+2}\) by keeping all old direction rules independent of the new pair, and adjoining complementary rules \(h(x)=x_t\) and \(1+h(x)\) for one old direction \(t\).
+
+**Theorem (single-spike obstruction to unrestricted NORI1).** If unrestricted NORI1 fails, there exist an even \(N\), a bad paired-flat legal coloring \(b\) of \(Q_N\), a unary-spectator pair extension \(C\) of \(b\), and an antipodal square-pair orbit \(E\) supported on an old direction pair, such that:
+
+1. \(C\) is bad, and has a full geodesic with one one-edge, belonging to \(E\), and all remaining edges zero. The witness has no adjacent paired-direction turns.
+2. The coloring \(G\) obtained by flipping the eight edges of \(E\) in \(C\) is paired-flat, balanced, odd, and successful.
+3. Every monochromatic-zero full geodesic of \(G\) uses at least one edge of \(E\).
+
+Thus a counterexample forces the existence of a successful coloring differing from a one-way unary-spectator extension by one antipodal pair of squares, with a mandatory square orbit for all its zero full geodesics.
+
+*Proof.* For an arbitrary bad odd coloring \(c\) of \(Q_d\), let \(W(c)\subseteq\mathbb F_2^d\) be its full-geodesic direction-color profile support. It is nonempty, closed under complementation, and misses both constant words. Choose a missing profile \(u\) adjacent in the profile cube to some attained \(w\). Direction-wise recoloring by \(u\) produces another legal coloring whose profile support is \(W(c)+u\). Both constants remain absent, since \(u,\bar u\notin W(c)\), while \(w+u\) has Hamming weight one. Thus a bad one-defect coloring exists in dimension \(d\).
+
+Apply the complementary paired lift to obtain a bad paired-flat coloring \(b\) on \(Q_{2d}\). The profile-cylinder identity ensures that it retains a full geodesic \(P\) with one one-edge. Since \(m(b)=1\), the endpoints of \(P\) are zero, by cyclic root rotation. Each adjacent paired turn contains one one-edge, so \(P\) has at most one paired turn.
+
+If such a turn occurs, add one unary spectator pair with reader \(h(x)=x_t\), choosing \(t\) as the second direction in the turn. Place one red spectator step between the turn's two old steps, and its other red step after the old path. Their colors are red because \(h\) flips between these two old vertices. If the path is already turn-free, add the spectator pair with any old-bit reader; place one red step before the old path and the other after it. In either case the new full geodesic \(R\) has one one-edge and no paired turns. Projection onto the old dimensions proves that the extension \(C\) remains bad.
+
+By the turn-free square-orbit criterion, the unique one-edge of \(R\) lies in a square-pair orbit \(E\) containing no zero-edge of \(R\). Flip \(E\). All edges of \(R\) become zero in the resulting legal paired-flat coloring \(G\), proving its success. If \(G\) possessed a zero full geodesic avoiding \(E\), that geodesic would remain zero in \(C\), contradicting badness. This proves (1)--(3). \(\square\)
+
+**Equivalent local closure target.** NORI1 holds if and only if every unary-spectator pair extension \(C\) of every paired-flat legal core, whenever \(C\) has a one-defect full geodesic, remains successful whenever any one old-pair square-orbit flip makes it successful. Necessity follows from NORI1, and sufficiency from the theorem. A stronger sufficient statement would require a zero geodesic in the switched successful coloring avoiding the flipped orbit. This formulation retains arbitrary nonlinear rules in the old core while confining the new cross-pair dependence to one unary reader and one changed square orbit.
+
+### Counterexample-preserving spectator-pair defect stabilization
+
+Let \(c\) be paired-flat and antipodally odd on \(Q_N\), \(N\ge4\) even. Let \(P\) be a full geodesic with \(k=m(c)\) one-edges and \(r\) adjacent turns whose directions belong to the same prescribed pair. Each turn has opposite edge colors, so \(r\le k\).
+
+**Theorem.** There is a paired-flat odd coloring \(C\) on \(Q_{N+2\lceil r/2\rceil}\) such that \(C\) is successful if and only if \(c\) is,
+\[
+\boxed{m(C)=m(c)=D(C)=k,}\tag{EC15}
+\]
+and \(C\) has a turn-free minority-minimizing full geodesic. In fact \(k\) successive antipodal square-pair flips produce \(C=C_0,\ldots,C_k\) with \(m(C_t)=k-t\).
+
+*Proof.* Group the paired turns into pairs, leaving one singleton if necessary. For a group of two turns at intermediate old-path vertices \(u,v\), choose an old direction \(t\) traversed between \(u,v\). Adjoin a fresh spectator direction pair with complementary color rules \(h(z)=z_t\) and \(1+h(z)\). Since \(h(u)\ne h(v)\), its two distinct red directions can be traversed at \(u\) and \(v\), separating both old paired turns. For a singleton turn at vertex \(u\), choose an old direction \(t\) still unused at \(u\). Then \(h(u)\ne h(\bar x)\), where \(x\) is the old root; traverse one red spectator step at \(u\) and the complementary red step after the old path, at \(\bar x\). All spectator rules ignore spectator bits, and old rules ignore them too, so the insertions preserve every old edge color. They create a full geodesic \(R\) with \(k\) one-edges and no adjacent paired turns.
+
+Every full path of \(C\) projects to an old full path with unchanged old colors, so \(m(C)\ge k\), and \(R\) gives equality. A red full path of \(c\) extends to one of \(C\) by using the red member of each spectator pair before the old path and the other after it, since each reader \(h\) reverses under the old antipode. Thus failure and success are both preserved.
+
+Two edges of a turn-free full path can share a square-pair parameter orbit only when they lie in its first and last positions; the endpoint edges of \(R\) are red because \(R\) minimizes its minority count. Therefore the \(k\) one-edges of \(R\) lie in distinct parameter orbits containing no red edge of \(R\). Switch those orbits successively. After \(t\) switches, \(R\) has \(k-t\) one-edges, while the established one-Lipschitz bound for square switches gives minority count at least \(k-t\). Hence every switch strictly lowers the defect and the last coloring is successful. The switch distance equals \(k\). \(\square\)
+
+The witness removes all paired-turn traps by adding at most \(2\lceil m(c)/2\rceil\) directions, preserving arbitrarily nonlinear old rules and preserving counterexamples.
+
+### Cartesian stabilization of square-switch defect descent
+
+Let \(c\) be a paired-flat antipodally odd coloring of \(Q_{2m}\). Write \(k=m(c)\) for its minority defect, \(D(c)\) for its square-switch distance to the successful region, and \(\rho(c)\) for the minimum number of adjacent paired-direction turns on a full geodesic with \(k\) one-colored edges, as defined in (EC11). Let \(g\) be any successful paired-flat coloring of \(Q_b\), \(b\ge4\) even.
+
+**Theorem (stabilized equality and monotone defect descent).** If \(b\ge\rho(c)\), then
+\[
+\boxed{D(c\boxtimes g)=m(c\boxtimes g)=m(c)=k.}\tag{EC13}
+\]
+There are \(k\) distinct antipodal square-pair parameters \(E_1,\ldots,E_k\) in the product configuration such that switching them successively produces legal colorings \(C_0=c\boxtimes g,C_1,\ldots,C_k\) with
+\[
+\boxed{m(C_t)=k-t\quad(0\le t\le k).}\tag{EC14}
+\]
+
+*Proof.* Choose a full geodesic \(P\) of \(c\) with \(k\) one-edges and \(\rho(c)\) paired turns. Its first and last edges are zero by cyclic root rotation. Every paired turn contains one edge of each color, so \(\rho(c)\le k\). Choose a zero full geodesic \(Q\) in \(g\). Interleave one successive edge of \(Q\) between the two edges of each paired turn of \(P\), and place any remaining edges of \(Q\) after all \(P\)-steps. Since the product factors are independent, the resulting full geodesic \(R\) has \(k\) one-edges.
+
+Consider the two \(c\)-factor steps of any direction pair. Their exterior assignments in \(c\) are equal precisely when they are consecutive in the projected \(P\)-order, or antipodal precisely when they are its first and last steps. In the former case the inserted \(Q\)-step changes one \(g\)-bit between the two steps. Their exterior assignments in the product are therefore distinct modulo full antipodal complementation (as \(b\ge4\)), so they lie in different square-pair parameter orbits. In the latter case both steps are zero, being the first and last edges of the minimizing \(P\). Other pairs have disjoint parameter sets. Consequently every one-edge of \(R\) belongs to a parameter orbit containing no zero-edge of \(R\), and the \(k\) one-edges represent distinct parameter orbits.
+
+Switch these \(k\) orbits in any order. After \(t\) switches, \(R\) has \(k-t\) one-edges, so \(m(C_t)\le k-t\). By minority additivity (FM3), \(m(C_0)=m(c)+m(g)=k\); the one-Lipschitz switch theorem (EC8) gives \(m(C_t)\ge k-t\). Thus equality holds throughout and \(C_k\) is successful. The same lower bound yields \(D(C_0)\ge k\), proving (EC13). \(\square\)
+
+This rules out persistence of positive local minima of the minority-defect potential under sufficiently large independent successful padding. The initial product may remain bad: the switches alter its coloring, so the theorem is a legal-edit statement.
+
+### Cartesian-product square avoidance and interaction components
+
+Let \(a,b\ge4\) be even and let \(c,d\) be successful paired-flat legal colorings on \(Q_a,Q_b\). In their independent Cartesian product, a *square-pair orbit* is an antipodal pair of squares whose free directions form one prescribed pair.
+
+**Theorem (square avoidance in successful products).** For every square-pair orbit \(E\) of \(c\boxtimes d\), a color-zero full antipodal geodesic avoids \(E\). More generally, if \(E_1,\ldots,E_t\) are square-pair orbits all supported on direction pairs of \(c\), and \(b+1>2t\), there exists a zero full product geodesic avoiding them simultaneously. The symmetric assertion holds for orbits supported on \(d\).
+
+*Proof.* Choose zero full geodesics \(P,Q\) in \(c,d\). If \(E_j\) is supported on a \(c\)-pair, its external bits in the \(d\)-factor specify a vertex \(y_j\in Q_b\), and its antipodal companion specifies \(\bar y_j\). Along \(Q\), the \(b+1\) vertices are distinct. Thus if \(b+1>2t\), some vertex \(y\) of \(Q\) avoids all pairs \(\{y_j,\bar y_j\}\). Traverse \(Q\) to \(y\), perform the entire \(P\) while keeping the \(d\)-bits fixed at \(y\), then finish \(Q\). Factor independence makes this a zero full antipodal geodesic. Its steps in \(c\) have \(d\)-bits equal to \(y\), hence avoid every \(E_j\), and its steps in \(d\) have directions outside the \(E_j\). The single-orbit case uses \(b\ge4\). Interchanging factors covers an orbit supported in \(d\). \(\square\)
+
+**Corollary (connected pair-interaction obstruction).** Define the undirected interaction graph on direction pairs by joining \(i,j\) when the paired rule \(f_i\) reads some bit of pair \(j\), or conversely. If a successful paired-flat coloring fails square avoidance for some orbit, this interaction graph is connected.
+
+*Proof.* If the graph is disconnected, each rule depends only on bits belonging to its own connected component. The coloring is an independent Cartesian product of at least two paired-flat legal colorings. A zero full geodesic of the product projects to zero full geodesics in every factor, making each factor successful. Group one factor against the product of the remaining factors and apply the preceding theorem. \(\square\)
+
+These results hold with arbitrarily many nonlinear direction rules. The stabilization theorem concerns successful legal edits; the avoidance theorem concerns monochromatic paths in the original successful coloring. A potential failure of universal square avoidance must be supported by interaction-connected pairs rather than by independent successful factors.
+
+### Antipodally twisted perfect-matching involutions and double-occurrence words
+
+Continue with a paired-flat coloring of \(Q_{2m}\), whose paired dimensions are \(P_i=\{i,i'\}\). Write \(S_i\) for the translation that flips both bits in \(P_i\), and put \(\tau=S_1\cdots S_m\), the full antipodal translation. For each \(i\) define a map \(T_i:Q_{2m}\to Q_{2m}\) by traversing the unique color-zero edge among the two incident edges in \(P_i\).
+
+**Theorem (paired-flat permutation representation).** The maps \(T_i\) are fixed-point-free involutions with the following properties:
+\[
+\boxed{\quad
+T_i(x)\text{ differs from }x\text{ in one bit of }P_i,\qquad
+\tau T_i\tau=S_iT_i,\qquad
+(\tau T_i)^2=S_i.
+\quad}\tag{EC3}
+\]
+They commute with \(S_i\), and the red graph is the edge-disjoint union of the \(m\) perfect matchings defined by the \(T_i\). The blue matching in \(P_i\) is \(S_iT_i\).
+
+Conversely, any family of involutions \(T_i\) satisfying the first two conditions in (EC3), for a fixed pairing of the bits, determines a unique paired-flat antipodally odd vertex-balanced coloring by declaring the \(T_i\)-edges red and the remaining pair edges blue.
+
+*Proof.* On every square with free dimensions \(P_i\), the unique red neighbor of each vertex lies in the same one of the two directions, since the two parallel edges have a common color and the other pair has the complementary color. Hence \(T_i\) is a perfect matching, \(T_i^2=1\), and it commutes with \(S_i\). The antipodal image of its red edge is the blue edge in the same pair; the blue neighbor map is \(S_iT_i\), so \(\tau T_i\tau=S_iT_i\). Multiplication by \(T_i\) gives \((\tau T_i)^2=S_i\).
+
+For the converse, an involution that changes just one of the two bits in \(P_i\) restricts, with all other bits fixed, to a perfect matching of a square. Every perfect matching consisting of square edges selects one of the two parallel edge pairs. Hence the selection is independent of both bits within \(P_i\). The relation \(\tau T_i\tau=S_iT_i\) makes the chosen red direction switch to the complementary member of \(P_i\) at the antipodal outside assignment. The resulting pair rule is antipodally odd, flat on its paired square, and contributes one red and one blue edge at each vertex. Applying this independently for all \(i\) proves the assertion. \(\square\)
+
+**Corollary (unrestricted double-occurrence-word reformulation).** NORI1 is equivalent to the following permutation theorem.
+
+For every \(m\ge2\) and every family \(T_1,\ldots,T_m\) satisfying (EC3), there exist a vertex \(x\in Q_{2m}\) and a word \(w=(i_1,\ldots,i_{2m})\) in which each symbol \(i\in[m]\) occurs twice, such that
+\[
+\boxed{\qquad T_{i_{2m}}\cdots T_{i_1}(x)=\tau x.\qquad}\tag{EC4}
+\]
+Indeed each step is a red edge, and its symbol identifies the pair in which a bit flips. If each pair is used twice and the endpoint is antipodal, the two different bits in every pair must each have flipped once, so the path is a full antipodal geodesic. Conversely a red full antipodal geodesic uses both dimensions in every pair once and gives (EC4). The paired-flat closure equivalence (EC2) completes the reduction.
+
+The relations in (EC3) encode antipodal color reversal entirely within permutations, while (EC4) isolates the remaining dimension-simple word problem. A fixed repeated sweep \(w=(1,\ldots,m,1,\ldots,m)\) need not work; the existence quantifier over double-occurrence words is essential.
+
+**Witness for failure of a prescribed double sweep.** For \(m=3\), pair dimensions \((0,3),(1,4),(2,5)\), and take \(f_0=x_1,\ f_1=x_0,\ f_2=x_1\). The word \((0,1,2,0,1,2)\) does not carry any vertex to its antipode. Indeed, to use both directions of pair \(0\), the two visits to \(T_0\) must see distinct values of \(x_1\). Between these visits, only the first \(T_1\) can modify \(x_1\), so that visit must flip \(x_1\). Likewise, to use both directions of pair \(2\), its two visits must see distinct values of \(x_1\); between them only the second \(T_1\) can modify \(x_1\), so it must also flip \(x_1\). Thus the two visits to pair \(1\) both flip the same bit, precluding an antipodal endpoint. Yet the order \((0,2,1,0,1,2)\), from a suitable root, does succeed. This exhibits the distinction between one chosen word and the existential assertion (EC4).
+
+
+
+
+### One-paired-square boundary reduction for hypothetical counterexamples
+
+**Theorem (square-adjacent critical counterexample).** If unrestricted NORI1 fails, there are two paired-flat antipodally odd vertex-balanced colorings \(b,g\) of the same \(Q_{2m}\), \(m\ge2\), and an antipodal pair of square faces \(F,\tau F\) supported on one paired direction set \(P_i=\{i,i'\}\), with the following properties:
+
+1. \(b\) admits no monochromatic full antipodal geodesic, while \(g\) admits one.
+2. \(b\) and \(g\) differ only on the eight edges of \(F\cup\tau F\); on these edges their colors are complementary.
+3. The bad coloring \(b\) has a full antipodal geodesic with precisely one color-one edge, in a direction of \(P_i\). This exceptional edge belongs to \(F\cup\tau F\).
+
+*Proof.* By the paired-flat lift equivalence, a bad paired-flat coloring exists. A good paired-flat coloring exists as well: begin with any legal odd coloring admitting a monochromatic full geodesic, for example one with all noninitial direction rules equal to the initial vertex bit and the remaining rule reading another bit, and apply the paired lift. By the Boolean parameter theorem (EC1), the configuration graph of paired-flat colorings for the fixed pairing is connected by single antipodal square-pair flips. Follow a path in that graph from a bad coloring to a good one and select adjacent vertices \(b,g\) at a bad-to-good transition. This proves (1)--(2).
+
+Antipodal oddness implies that a monochromatic geodesic in \(g\) may be chosen to have color zero. Let \(P\) be such a geodesic. In each of the squares \(F,\tau F\), its edges alternate zero and one. A full geodesic can use at most two edges of one two-dimensional face, and if it uses two, they must be consecutive along the face: once it leaves the face in an outside dimension, it cannot return without repeating that dimension. Thus a zero geodesic traverses at most one edge of each alternating square. It therefore encounters at most two switched edges, both of them zero in \(g\) and one in \(b\), and all other steps remain zero. Because \(b\) is bad, at least one switched edge occurs. If both occur, the corresponding directions are \(i,i'\). We show that the two exceptional edges are the first and last steps of \(P\). The fixed outside-bit assignments of \(F\) and \(\tau F\) are complementary. Since every outside dimension is traversed just once, encountering both faces forces the path to begin in the first face met and finish in the other. It cannot use either paired dimension before the first exceptional edge: such an earlier step would lie in the same alternating square, and the two steps would have different colors, contrary to the monochromaticity of \(P\) in \(g\). Similarly no paired step can follow the last exceptional edge. Hence the affected edges occupy positions one and \(2m\). Under the cyclic root rotation that moves the first edge of \(P\) to its end, the transferred first edge becomes its antipodal mate and reverses color in \(b\), while all other edge colors are unchanged. The resulting full geodesic has just one color-one edge, coming from the former final edge and belonging to \(F\cup\tau F\). If \(P\) meets only one switched edge, it already has just one color-one edge in \(b\). As \(b\) is bad, the zero-defect case cannot occur. This proves (3). \(\square\)
+
+**Closure consequence.** To establish unrestricted NORI1 it is sufficient to exclude a bad paired-flat coloring which is a single antipodal paired-square flip away from a successful paired-flat coloring. The theorem places a single defect on an antipodal square carrier while retaining vertex balance and the paired-flat constraints. This is a legal-coloring extremal reduction, rather than a restriction to colorings with finitely many nonlinear direction rules.
+
+
+### Midpoint halfpath convolution identity
+
+Let \(n=2m\ge2\), and let \(c\) be any antipodally odd binary edge coloring of \(Q_n\), not necessarily balanced. For each root \(r\), \(m\)-subset \(S\subset[n]\), and color \(b\in\{0,1\}\), let \(A_b(r,S)\) count ordered length-\(m\) dimension-simple geodesics from \(r\) using the direction set \(S\) with all edges color \(b\). Let \(N_0(c)\) count unoriented monochromatic-zero full antipodal geodesics.
+
+**Theorem (midpoint convolution).**
+\[
+\boxed{
+2N_0(c)=
+\sum_{r\in Q_{2m}}\ 
+\sum_{\substack{S\subset[2m]\\ |S|=m}}
+A_0(r,S)\,A_1(r,S^c).}
+\tag{MC1}
+\]
+Using antipodal oddness, equivalently
+\[
+\boxed{
+2N_0(c)=\sum_{r,S:\,|S|=m}
+A_0(r,S)\,A_0(\bar r,S^c).}
+\tag{MC2}
+\]
+
+*Proof.* An ordered pair of halfpaths counted by one summand in (MC1) consists of a zero path \(P\) from \(r\) to \(u=r\oplus S\) and a one path \(Q\) from \(r\) to \(v=r\oplus S^c\). Antipodal complementation of \(Q\) is a zero path from \(\bar r\) to \(\bar v=u\), since \(\bar r\oplus S^c=r\oplus S\). Reverse that latter halfpath and concatenate it with \(P\); the result is a zero full antipodal geodesic from \(r\) to \(\bar r\) through its middle vertex \(u\). Conversely, every *oriented* zero full antipodal geodesic uniquely splits at its middle vertex into the two halfpaths just described, the second recovered by reversing and antipodally complementing the terminal half. Thus the right side of (MC1) counts oriented zero full geodesics. Each unoriented path has two orientations, proving the factor two. Antipodal complementation sends a one path from \(r\) with direction set \(S^c\) to a zero path from \(\bar r\) with the same direction set, proving (MC2). \(\square\)
+
+**Balanced closure interpretation.** In a vertex-balanced legal coloring of \(Q_{2m}\), the greedy unused-direction argument shows \(A_0(r,\cdot)\) and \(A_1(r,\cdot)\) each have total weight at least \(m!\) at every root. The positive quantities in (MC1) can nevertheless have disjoint support at specified roots, as documented in Article XV. The unrestricted grand theorem is equivalent, via the balanced lift, to asserting that the total bilinear midpoint convolution cannot vanish in a balanced coloring. Equation (MC1) is a quantitative global formulation of the previously established halfpath-overlap criterion, not a solution of that assertion.
+
+
+
+
+## Entropy amplification of hypothetical counterexamples and global counting closure
+
+The freedom in added directions has a strong counting consequence. It persists under perfect balance, using many choices of balanced ordinary colorings in the added fibers. Throughout, logarithms in this subsection are to base two.
+
+For \(N\ge2\), put
+\[
+L_N=N2^{N-2}.
+\]
+There are \(L_N\) antipodal edge orbits in \(Q_N\), so the total number of legal odd colorings is \(2^{L_N}\). Let \(B_N\) count those having no monochromatic full antipodal geodesic, and let \(B_N^{\rm bal}\) count the vertex-balanced members. Write \(T_N^{\rm bal}\) for the total number of balanced legal colorings in even dimension.
+
+**Theorem (unrestricted counting amplification).** If a bad legal coloring exists in dimension \(d\), then for every \(N>d\),
+\[
+\boxed{B_N\ge2^{(N-d)2^{N-2}},\qquad
+\frac{B_N}{2^{L_N}}\ge2^{-d2^{N-2}}.}\tag{EA1}
+\]
+
+*Proof.* Keep the old \(d\) direction rules independent of the added bits, and color every antipodal edge orbit in every added direction freely. There are \((N-d)2^{N-2}\) independent free bits. Any monochromatic full geodesic in an extension would project onto a monochromatic full geodesic in the old cube, contrary to badness. Distinct free assignments give distinct legal colorings. This is the earlier free-direction extension count, stated in normalized counting form. \(\square\)
+
+### A pairing count for balanced ordinary cube colorings
+
+Let \(a_k\) be the number of ordinary binary edge colorings of \(Q_k\) in which each vertex has \(k/2\) incident edges of each color; antipodal oddness is not imposed here. We use even \(k\ge2\).
+
+**Lemma (elementary Eulerian-orientation count).** For any finite simple \(2r\)-regular graph with \(v\) vertices, its number of Eulerian orientations is at least
+\[
+\left(\frac{\binom{2r}{r}}{2^r}\right)^v.
+\]
+Consequently,
+\[
+\boxed{
+a_k\ge
+\left(\frac{\binom{k}{k/2}}{2^{k/2}}\right)^{2^k}.
+}\tag{EA2}
+\]
+
+*Proof.* Pair the \(2r\) incident edges at each vertex. There are
+\[
+(2r-1)!!=\frac{(2r)!}{2^r r!}
+\]
+local choices. Any resulting transition system decomposes the undirected edges into closed trails; orient each trail to obtain an Eulerian orientation compatible with those pairings. Thus every transition system admits at least one compatible Eulerian orientation.
+
+For a fixed Eulerian orientation, each vertex has \(r\) incoming and \(r\) outgoing edges. A compatible pairing must pair incoming to outgoing, giving precisely \(r!\) choices per vertex. Counting compatible pairs of a transition system and an Eulerian orientation therefore gives
+\[
+\#\operatorname{EO}(G)\,(r!)^v
+\ge ((2r-1)!!)^v,
+\]
+which is the asserted bound.
+
+For \(Q_k\), orient a zero edge from the even endpoint to the odd endpoint and a one edge in the reverse direction. Having \(k/2\) edges of each color at every vertex is equivalent to an Eulerian orientation. This is a bijection, proving (EA2). \(\square\)
+
+### Balanced extensions retain full ambient entropy
+
+**Theorem (balanced counting amplification).** Suppose a balanced bad legal coloring exists on \(Q_d\), with \(d\) even. For every even \(k\ge2\), put \(N=d+k\). Then
+\[
+\boxed{
+B_N^{\rm bal}\ge a_k^{\,2^{d-1}}
+\ge
+2^{\,2^{N-1}\left(\log\binom{k}{k/2}-k/2\right)}.
+}\tag{EA3}
+\]
+In particular,
+\[
+\boxed{
+\log B_N^{\rm bal}
+\ge
+\bigl(N-d-2\log(N-d+1)\bigr)\,2^{N-2}.
+}\tag{EA4}
+\]
+
+*Proof.* Write vertices as \((x,z)\in Q_d\times Q_k\), and keep every old direction rule equal to its original rule, independent of \(z\).
+
+For each antipodal pair \(\{x,\bar x\}\) of old vertices, choose an arbitrary balanced ordinary coloring \(g_x\) of the new-direction fiber \(\{x\}\times Q_k\). On the opposite old fiber define
+\[
+g_{\bar x}(e)=1-g_x(\bar e),
+\]
+where the antipode on the right is taken in the added \(Q_k\). This gives global antipodal oddness. Both auxiliary fibers are balanced. The old edges supply \(d/2\) zeros at every vertex and the new edges supply \(k/2\), so the full coloring is balanced.
+
+All such extensions are bad by projection to the fixed old directions. The \(2^{d-1}\) old antipodal vertex pairs have independent choices, giving the first bound in (EA3). Substitute (EA2) for the second. Finally
+\(\binom{k}{k/2}\ge2^k/(k+1)\), since the largest of the \(k+1\) binomial coefficients is at least their average. This proves (EA4). \(\square\)
+
+The same fiber construction applied to a fixed successful balanced legal four-cube proves, without a counterexample hypothesis,
+\[
+\log T_N^{\rm bal}=(1-o(1))L_N
+\qquad(N\longrightarrow\infty,\ N\text{ even}).
+\tag{EA5}
+\]
+One such four-cube has
+\(c_0=x_1,\ c_1=x_0,\ c_2=1-x_1,\ c_3=1-x_0\).
+Use this as the old block in the proof and retain the same count of balanced extensions; projection-based badness is unnecessary for counting admissible extensions.
+
+**Corollary (zero-or-full entropy dichotomy).** Define
+\[
+s_N=\frac{\log(1+B_N)}{L_N},\qquad
+s_N^{\rm bal}=\frac{\log(1+B_N^{\rm bal})}{L_N}.
+\]
+Then
+\[
+\boxed{
+\begin{array}{ll}
+\text{NORI1 holds in every dimension}
+&\Longrightarrow s_N=s_N^{\rm bal}=0,\\
+\text{NORI1 fails in some dimension}
+&\Longrightarrow
+\displaystyle\lim_{N\to\infty}s_N
+=\displaystyle\lim_{\substack{N\to\infty\\N\ {\rm even}}}s_N^{\rm bal}=1.
+\end{array}}
+\tag{EA6}
+\]
+In the first line the balanced expression is read in even dimensions.
+
+*Proof.* Universal NORI1 makes both bad counts zero. Any failure supplies a bad coloring for (EA1), forcing \(s_N\to1\). The established balanced counterexample-preserving reduction supplies a fixed even-dimensional balanced bad coloring; (EA4) forces \(s_N^{\rm bal}\to1\). Both expressions have limsup at most one from the total count \(2^{L_N}\). \(\square\)
+
+**Global counting closure criterion.** Each of the following would prove unrestricted NORI1:
+
+1. For some fixed \(\eta>0\) and arbitrarily large even \(N\),
+   \[
+   B_N^{\rm bal}\le2^{(1-\eta)L_N}.
+   \tag{EA7}
+   \]
+2. Under the uniform distribution on all legal odd colorings,
+   \[
+   \Pr(\text{bad})\le2^{-a_N2^{N-2}}
+   \tag{EA8}
+   \]
+   along an unbounded sequence, where \(a_N\to\infty\).
+3. Under the uniform distribution on balanced legal colorings,
+   the same bound (EA8) holds along an unbounded even sequence with
+   \(a_N/\log N\to\infty\).
+
+The first follows from (EA6); the second contradicts (EA1). For the third, (EA4) and \(T_N^{\rm bal}\le2^{L_N}\) give the necessary lower bound
+\[
+\Pr_{\rm bal}(\text{bad})
+\ge2^{-[d+2\log(N-d+1)]2^{N-2}}
+\tag{EA9}
+\]
+whenever a fixed balanced bad old block exists.
+
+These are uniform entropy or probability targets. No such upper bound is established here.
+
+### Counterexample amplification inside a single gauge orbit
+
+There is also an orbitwise consequence directly relevant to the recent uniform-gauge second-moment bounds.
+
+**Theorem (positive-entropy bad gauge flats).** If a balanced bad coloring exists in fixed even dimension \(d\), then for arbitrarily large even \(N=d+k\) there is a gauge orbit \(\mathcal O_N\), with a balanced representative, containing at least
+\[
+\boxed{
+2^{\,2^{k-1}-1}=2^{\,2^{-d}M_N-1}
+\quad\text{bad colorings},\qquad M_N=2^{N-1}.
+}\tag{EA10}
+\]
+They arise from a linear family of invariant vertex gauges.
+
+*Proof.* Take any balanced bad extension from (EA3). Apply gauges
+\[
+h(x,z)=a(z),\qquad a(\bar z)=a(z).
+\]
+All old-direction edge colors remain fixed because their endpoints have the same \(z\). Every resulting coloring is consequently bad by projection. There are \(2^{k-1}\) independent values of \(a\). Two such gauges have the same edge coboundary precisely when their difference is constant, since the full cube is connected. Their distinct resulting colorings therefore number \(2^{2^{k-1}-1}\). The starting representative is balanced; the other gauges are required only to be legal odd colorings. \(\square\)
+
+Hence a uniform bound
+\[
+\boxed{
+\sup_{\substack{\mathcal O\text{ has a}\\\text{balanced representative}}}
+\log(1+\#\{\text{bad members of }\mathcal O\})
+=o(2^{N-1})
+}\tag{EA11}
+\]
+would also prove NORI1. The known \(O(2^{-N})\) bound on the bad *fraction* of each orbit leaves its permitted bad count at nearly the full orbit entropy. A hypothetical failure supplies the structured large families in (EA10), so the count distinction matters.
+
+**Relation to parity-peeling independence.** Let a parity-peelable family contain \(r\) projective Petrie cycles. Reading a peeling order backward, its first cycle contributes \(N\) vertices and every later one contributes at least \(N-2\) new projective vertices. Thus
+\[
+r\le\frac{M_N-2}{N-2}.
+\tag{EA12}
+\]
+The common individual success probability is \(p=N/M_N\). Even a largest family certified independent by that criterion has \(rp\le N/(N-2)\). Its joint-failure estimate \((1-p)^r\) alone therefore stays on a constant scale as \(N\) grows. Higher-moment or compression arguments need information from the non-peelable incidence clusters identified in the curvature manuscript.
+
+**Research consequence.** Counterexample-preserving extremization produces a precise global entropy target: save any fixed positive fraction of the \(L_N\) edge-orbit bits when encoding balanced bad colorings. Entropy compression permits repairs that temporarily raise grade, which is compatible with the strict exchange islands proved in the cyclic-variation manuscript. A closing argument still requires an injective encoding, a decoder, and the strict record-count bound (EA7); these objects remain to be constructed.
+
+**Face-network compression milestone.** The subsequent odd-face-network theorem in *Curvature realization, gauge phases and rooted square-defect transport* proves a bad fraction at most \(\exp(-2^{N-O(\sqrt N)})\) inside every invariant gauge orbit, using a preferred face-parity lemma, a block root slide that corrects the seam parity, and entropy covering over all translations. Its disjoint-network construction includes an explicit decoder. The translated edge-noise networks in *Sharp rootwise random cube geodesics by singleton-block second moments* prove the unconditional uniform-random bound \(\Pr(\mathrm{bad})\le\exp(-2^{N-O(N^{1/3})})\), together with a decoder saving \(2^{N-O(N^{1/3})}\) edge-orbit bits. These are proved partial compression bounds. Their guaranteed savings have vanishing normalized size relative to \(L_N\), so the fixed entropy deficit in (EA7) remains open.
+
+The elementary pairing bound was checked by direct balanced-factor enumeration on \(Q_2,Q_4\): the counts are \(2,2970\), exceeding the respective lower bounds \(1,(3/2)^{16}\). The extension and entropy arguments are dimension-uniform proofs independent of these checks.
+
+
+## Pathwise pseudorandom padding and Gaussian bulk with a retained obstruction
+
+The balance and independent-marginal reductions admit a stronger probabilistic form. Their local independence persists for samples taken at distinct positions of a random full geodesic, including positions far apart along the path. Nevertheless the probability of a monochromatic full path retains a factor determined by the original coloring.
+
+Fix an antipodally odd coloring \(c\) of \(Q_n\), and let \(B(c)\) be its balanced lift on the \(x,y\) directions. For \(k\ge2\), append the independent cyclic gadget
+\[
+C_{a_j}=a_{j+1},\qquad C_{b_j}=1-a_{j+1}\quad(j\bmod k).
+\tag{PP1}
+\]
+Together with \(C_{x_i}=c_i(x)\), \(C_{y_i}=1-c_i(x)\), this defines \(C_k\) on \(Q_N\), \(N=2n+2k\). Sample a starting vertex uniformly and a full direction order uniformly and independently. Let \(W\) be its binary edge-color word and \(X\) its number of ones.
+
+**Theorem (growing-order path sampling).** For any prescribed \(t\) distinct positions of \(W\), with \(t\le k\), the joint color distribution has total-variation distance at most
+\[
+1-\frac{2^t(k)_t}{(N)_t}
+\ \le\ \frac{2nt}{N}+\binom t2\frac{2k}{N(N-1)}
+\tag{PP2}
+\]
+from \(t\) independent fair bits. Here \((q)_t=q(q-1)\cdots(q-t+1)\). In particular, for fixed \(n\) this distance tends to zero whenever \(t=o(\sqrt N)\).
+
+*Proof.* Call the sampled directions admissible when they are gadget directions drawn from distinct pairs \(\{a_j,b_j\}\). Their probability is \(2^t(k)_t/(N)_t\). Condition on a complete direction order with this property. The color at a sampled occurrence from pair \(j\) is its starting bit \(a_{j+1}\), plus a bit determined by the order and by which member of the pair was chosen. Distinct pairs use distinct independent starting bits. Thus the conditional law is the uniform product law for every admissible order. The total-variation bound follows by coupling. Failure of admissibility requires an old/compensator direction at some sampled position, or both members of one gadget pair at two sampled positions. A union bound gives the second inequality. \(\square\)
+
+**Theorem (full count distribution and Gaussian limit).** Let \(X_B\) be the color-one count on a uniform rooted full geodesic of \(B(c)\). For a uniform order of the \(2k\) gadget directions, let
+\[
+R=\#\{j:\operatorname{pos}(a_{j+1})\text{ lies strictly between }
+\operatorname{pos}(a_j)\text{ and }\operatorname{pos}(b_j)\}.
+\tag{PP3}
+\]
+Then \(X_B\) is independent of the gadget count, and
+\[
+X\ \stackrel{\mathrm{law}}=\ X_B+k-R+2\operatorname{Bin}(R,1/2),
+\tag{PP4}
+\]
+where the binomial variable has the displayed conditional distribution given the gadget order. For fixed \(c\), as \(k\to\infty\),
+\[
+\frac{X-N/2}{\sqrt{N/6}}\ \Longrightarrow\ \mathcal N(0,1).
+\tag{PP5}
+\]
+
+*Proof.* The restrictions of a uniform direction permutation to the two disjoint blocks are independent uniform permutations; their relative interleaving does not alter either block's colors. The starting bits in the two blocks are independent as well.
+
+In gadget pair \(j\), the two sampled colors are complementary unless the direction \(a_{j+1}\) occurs between its two members. In that exceptional case they agree and contribute either zero or two ones with equal probability. Distinct pairs read distinct initial \(a\)-bits, so these choices are conditionally independent. This proves (PP4).
+
+Generate the gadget order by assigning independent continuous uniform priorities to its directions. Each event in (PP3) has probability \(1/3\), whence \(\mathbb ER=k/3\). Its indicator depends only on the priorities of \(a_j,b_j,a_{j+1}\). For \(k\ge4\), nonadjacent indicators on the cyclic index set are independent. Thus \(\operatorname{Var}R=O(k)\), and \(R/k\to1/3\) in probability. Conditional on the order, the centered gadget count is a sum of \(R\) independent fair signs. Its characteristic function after division by \(\sqrt{k/3}\) is
+\[
+\mathbb E\left[\cos\!\left(t/\sqrt{k/3}\right)^R\right]
+\longrightarrow e^{-t^2/2}.
+\]
+Indeed, the logarithm of the quantity inside the expectation is \(-3t^2R/(2k)+O(R/k^2)\); convergence in probability and boundedness give the limit. The bounded term \(X_B-n\) disappears after normalization, and \(N/6=(n+k)/3\). This proves (PP5). \(\square\)
+
+**Proposition (the rare-event factor is retained).** Define the probability generating functions \(H_C(z)=\mathbb E z^X\) and \(H_B(z)=\mathbb E z^{X_B}\). Then
+\[
+H_C(z)=H_B(z)\,
+\mathbb E\left[z^{k-R}\left(\frac{1+z^2}{2}\right)^R\right],
+\qquad
+\Pr(X=0)=\Pr(X_B=0)\,2^{-k}\Pr(R=k).
+\tag{PP6}
+\]
+Moreover \(\Pr(R=k)>0\).
+
+*Proof.* The generating-function identity follows from (PP4), with the expression interpreted as a polynomial. A zero gadget count requires \(R=k\) and the zero outcome in every pair, giving the second identity. To see positivity, assign distinct priorities in \((0,1)\) to the \(a_j\). If \(a_{j+1}\) is later than \(a_j\), place \(b_j\) later than \(a_{j+1}\); otherwise place \(b_j\) earlier than \(a_{j+1}\). All these inequalities hold on a nonempty open set of priorities. \(\square\)
+
+Consequently this padding preserves monochromatic full-geodesic existence in both directions. Projection gives one implication. Conversely, any zero full path in \(c\) lifts to \(B(c)\) by placing each \(y_i\) before or after the old path where its color is zero; the gadget has a zero full path by the positivity just proved. Concatenation yields a zero full path in \(C_k\).
+
+**Theorem (connected version with almost maximal monochromatic faces).** Replace the gadget in (PP1) by the guarded gadget from the face-extremization theorem:
+\[
+g_j=
+\begin{cases}
+\beta(x),&\text{all }b_\ell,\ \ell\ne j,\text{ are equal},\\
+a_{j+1},&\text{otherwise},
+\end{cases}
+\qquad C_{a_j}=g_j,\quad C_{b_j}=1-g_j.
+\tag{PP7}
+\]
+Here \(k\ge3\), and \(\beta\) is odd and sensitive to every old bit, as in that theorem. Its random full color word is within total-variation distance
+\[
+\epsilon_k\le (N+1)k2^{2-k}
+\tag{PP8}
+\]
+of the word for (PP1). Hence (PP2) holds with the additional error \(\epsilon_k\), and the Gaussian limit (PP5) remains valid. These colorings are perfectly balanced, have connected undirected influence graph, contain a monochromatic \(k\)-face, and preserve badness by projection.
+
+*Proof.* Couple the two colorings using the same starting vertex and direction order. At each of the \(N+1\) visited vertices, each guard has probability \(2^{2-k}\): conditional on the direction order, its starting \(b\)-bits remain independent and uniform after the deterministic prefix flips. A union bound over vertices and guards proves (PP8). If no guard is active, the full words agree. The other properties are those established for the guarded construction. \(\square\)
+
+**Closure consequence and scope.** If NORI1 fails, it has counterexample sequences satisfying all the preceding balance, connectivity, large-face and growing-order path-sampling properties, whose full-path color counts converge to the Gaussian law (PP5). Thus a bulk central-limit argument, even combined with these properties, leaves the essential rare-event positivity question unresolved. Formula (PP6) identifies what remains: complete-path compatibility is retained as a multiplicative factor from the fixed original block. A useful probabilistic closure argument must establish positivity at this scale, or supply a structural estimate that rules out a vanishing original factor. These are conditional consequences of a hypothetical counterexample, not constructions of counterexamples.
+
+An independent enumeration verified (PP4) and its generating-function coefficients on all 384 rooted full paths of the four-direction gadget and all 46,080 rooted full paths of the six-direction gadget. The arguments above are dimension-uniform.
+
+
+## Balanced second-turn discrepancy forces beyond-half geodesics
+
+Let \(N=2m\ge4\), and let \(c\) be a vertex-balanced antipodally odd edge coloring of \(Q_N\). For each vertex \(v\), put
+\[
+D(v)=\{j:c_j(v)=0\},\qquad |D(v)|=m.
+\]
+Define the total Boolean influence of the direction functions by
+\[
+\mathcal I(c)=\sum_{i,j=1}^N
+\Pr_v[c_j(v)\ne c_j(v\oplus e_i)].
+\tag{BH1}
+\]
+Let \(M_{m+1}^0(c)\) count unoriented zero-colored direction-simple paths of length \(m+1\).
+
+**Theorem (quantitative beyond-half guarantee).**
+\[
+\boxed{
+M_{m+1}^0(c)\ge
+2^{N-3}(m-2)!\,\mathcal I(c)
+\ge N2^{N-3}(m-2)!.
+}
+\tag{BH2}
+\]
+The same bound holds for color one. In particular every balanced odd coloring has a monochromatic geodesic strictly longer than half the dimension. The bound is attained in dimension four.
+
+*Proof.* Count rooted ordered two-step zero paths \((u,u^i,u^{ij})\) for which direction \(j\) is one-colored at \(u\). Their number is
+\[
+T_0=\sum_{u,i:\,c_i(u)=0}|D(u^i)\setminus D(u)|.
+\tag{BH3}
+\]
+The directions are automatically distinct, since a direction-\(i\) edge has the same color at its two ends. Define \(T_1\) by the same sum restricted to one-colored direction-\(i\) edges. Equal cardinalities of \(D(u)\) and \(D(u^i)\) give
+\[
+|D(u^i)\setminus D(u)|
+=|D(u)\setminus D(u^i)|
+=\tfrac12|D(u^i)\mathbin{\triangle}D(u)|.
+\]
+Antipodal complementation exchanges zero and one edges and replaces each \(D(v)\) by its complement. Therefore \(T_0=T_1\), and summing the last display over \(u,i\) yields
+\[
+\boxed{T_0=T_1=2^{N-2}\mathcal I(c).}
+\tag{BH4}
+\]
+
+Extend each two-step zero path counted by \(T_0\) to an ordered zero path of length \(m\). After \(t<m\) steps at least \(m-t\) zero directions remain unused, so there are at least \((m-2)!\) extensions. Let \(S\) be the \(m\) directions of such an extension. Its second direction \(j\) lies outside \(D(u)\); hence the two \(m\)-sets \(S,D(u)\) differ. Choose, by a fixed deterministic rule, some \(a\in D(u)\setminus S\). Prepend the zero edge \(u^a u\). The resulting path has \(m+1\) distinct directions and is all zero.
+
+This map from extended ordered paths to ordered \((m+1)\)-paths is injective: delete the first edge of the output to recover the extension, including its distinguished initial two-step path. Thus there are at least \(T_0(m-2)!\) ordered zero paths of length \(m+1\). Dividing by two proves the first inequality in (BH2).
+
+For each \(j\), antipodal oddness implies
+\[
+\sum_i\Pr_v[c_j(v)\ne c_j(v^i)]\ge1.
+\]
+Indeed, follow any fixed full direction order from \(v\) to \(\bar v\). The value of \(c_j\) changes at least once, and averaging the number of changes over the uniform starting vertex gives the displayed sum. Summing over \(j\) yields \(\mathcal I(c)\ge N\). Antipodal translation supplies the color-one assertion. \(\square\)
+
+**Sharpness audit in dimension four.** Enumeration of all 65,536 antipodally odd colorings found 48 vertex-balanced colorings. Their minimum zero-path count at length three is eight, equal to (BH2), and their minimum count \(T_0\) is sixteen, equal to (BH4) with \(\mathcal I=4\). The proof does not rely on this enumeration.
+
+**Relation to averaging and to padding.** The usual minimum-degree argument reaches \(m\) from every root. The extra step in (BH2) uses a globally forced discrepancy between the direction sets available at neighboring vertices. Balance turns that discrepancy into the symmetric count (BH4), and oddness gives its positive lower bound. This retains information absent from a count of incident zero degrees alone.
+
+For the unguarded balanced cyclic padding \(C_k\) of a fixed \(c\) on \(Q_n\), direct summation of influences gives
+\[
+\mathcal I(C_k)=2\mathcal I(c)+2k,\qquad
+\mathcal I(C_k)-N=2(\mathcal I(c)-n).
+\tag{BH5}
+\]
+Thus arbitrary padding preserves the total excess influence above its balanced minimum. A dimension-uniform theorem forcing that excess to diverge along every sequence of balanced counterexamples would close NORI1, by (BH5). Such a theorem is presently unproved; (BH2) establishes the first extension beyond the halfpath threshold, without asserting iteration to full length.
+
+
+## Weighted Leader--Long surplus and polarized-product invariance
+
+Leader and Long prove that, for any fixed order of the cube directions, the average length of a longest increasing geodesic ending at a vertex of a cube subgraph is at least its average degree. See I. Leader and E. Long, *Long geodesics in subgraphs of the cube*, Discrete Mathematics 326 (2014), 29--33, Theorem 2.1, doi:10.1016/j.disc.2014.02.013. Here increasing refers to the direction order. The update proof gives the following weighted refinement, which identifies the surplus retained by this averaging argument.
+
+**Theorem (weighted surplus identity).** Let \(G\) be a spanning subgraph of \(Q_d\); isolated vertices are allowed. Give direction \(i\) weight \(w_i\ge0\), and process the directions in a fixed order. Let \(L_{<i}(v)\) be the maximum weight of an increasing path ending at \(v\) using only earlier directions, and let \(L(v)\) be the final maximum. Then
+\[
+\boxed{
+\sum_v L(v)=
+2\sum_{uv\in E(G)}w_{\operatorname{dir}(uv)}
++\sum_i\ \sum_{\substack{uv\in E(G)\\\operatorname{dir}(uv)=i}}
+\bigl(|L_{<i}(u)-L_{<i}(v)|-w_i\bigr)_+.
+}
+\tag{LLS1}
+\]
+
+*Proof.* Direction-\(i\) edges form a matching. Across one such edge, if the previous maxima are \(a,b\), the new maxima are
+\(\max(a,b+w_i)\) and \(\max(b,a+w_i)\).
+A newly appended direction cannot repeat an earlier direction, so these are the path maxima. Their total increase is
+\(2w_i+(|a-b|-w_i)_+\).
+Unmatched vertices keep their previous values. Summing all updates proves (LLS1). \(\square\)
+
+**Theorem (product invariance).** Form \(G'=G\square Q_k\), retain the old direction weights, and give the new directions arbitrary nonnegative weights \(u_1,\ldots,u_k\). For any interleaving of the new directions with a fixed old order,
+\[
+L_{G'}(v,z)=L_G(v)+\sum_{a=1}^ku_a.
+\tag{LLS2}
+\]
+Consequently the normalized difference between the two sides of the weighted Leader--Long lower bound is unchanged:
+\[
+\frac{\sum_{v,z}L_{G'}(v,z)-2\sum_{e\in E(G')}w_e}{2^{d+k}}
+=
+\frac{\sum_vL_G(v)-2\sum_{e\in E(G)}w_e}{2^d}.
+\tag{LLS3}
+\]
+
+*Proof.* Projection of an increasing path to \(G\) bounds its old weight by \(L_G(v)\); its new weight is at most \(\sum_a u_a\). Conversely, take a maximizing old path ending at \(v\) and insert every new direction in its designated position in the full direction order, choosing its starting bits to end at \(z\). All new edges are present, so this realizes the upper bound. The average weighted degree also increases by \(\sum_a u_a\), proving (LLS3). \(\square\)
+
+**Application to the polarized-facet reduction.** In the one-source padding \(C_{n+a}=x_j\), the zero-edge graph of the facet \(x_j=0\) is precisely \(G\square Q_k\), where \(G\) is the old zero-edge graph of that facet. Hence the facet becoming almost monochromatic introduces no additional normalized surplus in this averaging argument, even with arbitrary nonnegative direction weights. The old deficit remains after the auxiliary contribution is subtracted. A closing refinement must control the endpoint direction sets or another compatibility quantity beyond this longest-increasing-path average. The beyond-half theorem above supplies one such additional quantity, the change of available zero directions across an edge.
+
+
+
+## Rooted halfpath-support rigidity and maximal monochromatic-face packing
+
+Let \(n=2m\ge4\), and let \(c\) be a vertex-balanced antipodally odd coloring of \(Q_n\). For a root \(u\), color \(b\), and \(m\)-subset \(S\subset[n]\), let \(A_b(u,S)\) count ordered monochromatic-\(b\) geodesics using the directions \(S\). Put \(\mathcal F_b(u)=\{S:A_b(u,S)>0\}\).
+
+**Theorem (singleton support iff monochromatic half-dimensional face).** The family \(\mathcal F_b(u)\) contains just one \(m\)-set if and only if the \(m\)-face through \(u\) whose free directions are \(D_b(u)=\{i:c_i(u)=b\}\) is monochromatic color \(b\). In this case
+\[
+\boxed{\mathcal F_b(u)=\{D_b(u)\},\quad A_b(u,D_b(u))=m!.}\tag{RF1}
+\]
+This face is an isolated connected component of the color-\(b\) edge graph.
+
+*Proof.* At each vertex the color-\(b\) degree is \(m\), so any monochromatic color-\(b\) direction-simple path of length \(t<m\) can be extended: at least \(m-t>0\) incident directions remain unused. Every initial direction \(i\in D_b(u)\) therefore belongs to the support of an \(m\)-path. If this support is a singleton \(\{S\}\), then \(D_b(u)\subseteq S\), so \(S=D_b(u)\).
+
+Inductively all vertices \(v=u\oplus\mathbf1_T\) of the face, \(T\subseteq S\), can be reached by zero-or-one monochromatic paths using only directions in \(T\). At a reached vertex with \(|T|<m\), if any color-\(b\) edge had direction \(j\notin S\), taking it and extending to \(m\) steps would yield a root-\(u\) halfpath with a direction set other than \(S\). Hence all \(m\) color-\(b\) edges at \(v\) have directions in \(S\), making every internal edge of the face color \(b\) and every boundary edge the other color. The face is an isolated component. Conversely, if this face is monochromatic, vertex balance forces all boundary edges to have the other color. All color-\(b\) halfpaths are confined to the face and may traverse its \(m\) free directions in all \(m!\) orders. \(\square\)
+
+**Theorem (maximal-face packing under badness).** If \(N_0(c)=0\), no monochromatic-zero \(m\)-face intersects a monochromatic-one \(m\)-face. Writing \(H_b\) for the number of color-\(b\) monochromatic \(m\)-faces, one has
+\[
+\boxed{H_0=H_1\le2^{m-1}.}\tag{RF2}
+\]
+At least \(2^{2m-1}\) vertices have \(|\mathcal F_b(u)|\ge2\), for each \(b\).
+
+*Proof.* At any common vertex \(u\) of opposite-color \(m\)-faces, their free directions are the complementary sets \(D_0(u),D_1(u)\). Their monochromatic halfpaths therefore combine, by the midpoint gluing lemma, to form a zero full antipodal geodesic.
+
+Distinct monochromatic \(m\)-faces of the same color are disjoint: intersecting faces would need the same free directions at a shared vertex, then would be identical. Opposite-color faces must also be disjoint in a bad coloring. Antipodal oddness bijects the two types, so \(H_0=H_1=H\). Their \(2H\) disjoint sets of \(2^m\) vertices fit inside \(2^{2m}\), proving the bound. By (RF1), vertices with singleton halfpath support are precisely the vertices in such faces, yielding the final conclusion. \(\square\)
+
+**Same-color midpoint convolution.** Reversing both halfpaths in the preceding midpoint identity yields
+\[
+\boxed{2N_0(c)=\sum_{u\in Q_{2m}}\sum_{|S|=m}A_0(u,S)A_0(u,S^c).}\tag{RF3}
+\]
+Both factors count zero halfpaths from a common midpoint whose direction sets are complementary. This holds even without vertex balance, and shows that every root's zero halfpath-support family must be complement-free in a hypothetical bad coloring.
+
+These global assertions do not assume any special construction for an unrestricted hypothetical counterexample. They link maximal monochromatic faces, concentrated midpoint supports, and the sought complementary-halfpath overlap.
+
+
+Maximal half-face separation. In vertex-balanced Q_(2m), every color-b monochromatic m-face uses all m available b incident edges at each vertex, so every boundary edge has the opposite color. A monochromatic zero m-face F and monochromatic one m-face G, if disjoint, cannot have adjacent vertices: their joining boundary edge would be forced to have both colors. For a hypothetical bad coloring, F and the antipode of every other zero m-face Fprime are disjoint, and therefore separated by Hamming distance at least two. Let S,T be the free direction sets of F,Fprime and let a,a-prime be their fixed bit assignments. The distance equals the number of jointly fixed directions h outside S union T on which a_h equals a-prime_h. Thus there are at least two such directions. In particular abs(S intersect T) >= 2 for every pair of zero maximal faces. Their free direction sets form a pairwise two-intersecting family, and their fixed bit labels satisfy a stronger agreement condition. This global obstruction holds for any hypothetical balanced counterexample.
+
+
+### Kleitman anticode bound for all maximal monochromatic half-faces
+
+Let \(c\) be a hypothetical bad vertex-balanced antipodally odd coloring of \(Q_{2m}\), \(m\ge2\). Let \(A\subseteq Q_{2m}\) be the union of all monochromatic-zero \(m\)-faces, and \(H\) their number.
+
+**Theorem (diameter obstruction).** Every two vertices in \(A\) have Hamming distance at most \(2m-2\), and therefore
+\[
+\boxed{
+H\le \left\lfloor 2^{-m}
+\sum_{j=0}^{m-1}\binom{2m}{j}\right\rfloor
+=\left\lfloor2^{m-1}-2^{-m-1}\binom{2m}{m}\right\rfloor.}
+\tag{KA1}
+\]
+In particular the respective upper bounds on \(H\) for \(m=2,3,4,5\) are \(1,2,5,12\), strengthening the elementary \(2^{m-1}\) bound.
+
+*Proof.* Let \(\bar A\) be the vertexwise antipode of \(A\), which is precisely the union of the monochromatic-one \(m\)-faces. The earlier maximal-face theorems show that in a bad coloring \(A\cap\bar A=\varnothing\) and, more strongly, no cube edge joins \(A\) to \(\bar A\). If some \(u,v\in A\) had Hamming distance \(2m\), then \(u=\bar v\in\bar A\), contradiction. If their distance were \(2m-1\), then \(u\) would be adjacent to \(\bar v\in\bar A\), another contradiction. Thus the diameter of \(A\) is at most \(2m-2\).
+
+By the Kleitman diameter theorem (D. J. Kleitman, *On a combinatorial conjecture of Erdős*, 1966), any subset of the binary \(2m\)-cube with diameter at most \(2m-2=2(m-1)\) has at most the volume of a Hamming ball of radius \(m-1\), equal to \(\sum_{j=0}^{m-1}\binom{2m}{j}\). The \(H\) monochromatic-zero maximal faces are vertex-disjoint and each contains \(2^m\) vertices. Consequently \(H2^m=|A|\) satisfies the displayed bound. The binomial identity follows by symmetry. \(\square\)
+
+The theorem is an all-dimensional necessary condition on hypothetical balanced counterexamples, not a reduction to colorings that happen to have a maximal monochromatic face. It quantifies the previously identified antipodal separation of all maximal-face vertices. Because known counterexample-preserving lifts need not create an \(m\)-face, this face-count obstruction alone does not settle NORI1.
+
+
+
+### Backward extension of halfpaths and rootwise escape
+
+Let \(n=2m\ge4\) and let \(c\) be a vertex-balanced antipodally odd coloring. For \(b\in\{0,1\}\) let \(D_b(u)=\{i:c_i(u)=b\}\), let \(A_b(u,S)\) count ordered length-\(m\) color-\(b\) geodesics rooted at \(u\) using the \(m\)-set \(S\), and let \(L_b^{m+1}\) count ordered color-\(b\) \((m+1)\)-geodesics.
+
+**Theorem (backward-extension count).**
+\[
+\boxed{L_b^{m+1}=\sum_{u\in Q_{2m}}\sum_{|S|=m}
+|D_b(u)\setminus S|A_b(u,S).}\tag{BE1}
+\]
+A vertex \(u\) is the second vertex of a monochromatic color-\(b\) path of length \(m+1\) if and only if its color-\(b\) halfpath support \(\mathcal F_b(u)=\{S:A_b(u,S)>0\}\) is not a singleton, equivalently \(u\) is outside every monochromatic color-\(b\) \(m\)-face.
+
+*Proof.* Every unused color-\(b\) direction \(j\in D_b(u)\setminus S\) supplies a zero-or-one colored edge \(u^j\to u\) of color \(b\). Prepending that edge to the ordered \(m\)-path yields an \((m+1)\)-geodesic. Every such oriented longer path has a unique decomposition given by its first edge and its remaining \(m\)-path. This proves the count. Since \(D_b(u)\) has size \(m\) and the halfpath-support theorem gives nonempty support, the sum at \(u\) is zero only when every supported \(S\) equals \(D_b(u)\), which the singleton-face rigidity theorem characterizes. \(\square\)
+
+**Corollary (rootwise escape obstruction).** In any hypothetical bad balanced coloring, for **every** vertex \(u\) at least one color \(b\) admits a monochromatic \((m+1)\)-geodesic with \(u\) its second vertex:
+\[
+\boxed{|\mathcal F_0(u)|\ge2\quad\text{or}\quad|\mathcal F_1(u)|\ge2.}\tag{BE2}
+\]
+Indeed simultaneous singleton supports would be the complementary sets \(D_0(u),D_1(u)\), producing a full zero antipodal geodesic by midpoint gluing.
+
+For each color separately, the number of vertices in the second position of some monochromatic \((m+1)\)-geodesic is at least
+\[
+\boxed{2^{2m}-2^m\left\lfloor2^{-m}
+\sum_{j=0}^{m-1}\binom{2m}{j}\right\rfloor.}\tag{BE3}
+\]
+This follows because the exceptional vertices with singleton support are precisely those in maximal monochromatic faces, whose number is bounded by the preceding Kleitman anticode theorem. Thus in a hypothetical counterexample, both colors have spatially widespread beyond-half paths; the rootwise distribution, rather than length-increment iteration, is the remaining global compatibility target.
+
+
+
+### Double-escape population and a local non-gluing example
+
+Let \(n=2m\ge4\), let \(c\) be a hypothetical bad vertex-balanced antipodally odd coloring, and call \(u\) *\(b\)-escaping* if it is the second vertex of a monochromatic color-\(b\) geodesic of length \(m+1\). Equivalently, \(|\mathcal F_b(u)|\ge2\), by the backward-extension and singleton-face theorems.
+
+**Theorem.** The number of vertices escaping in both colors is
+\[
+\boxed{2^{2m}-2^{m+1}H\ge\binom{2m}{m},}\tag{DE1}
+\]
+where \(H\) is the number of monochromatic-zero \(m\)-faces.
+
+*Proof.* Vertices not escaping in color zero are precisely the union \(A\) of those \(H\) disjoint zero faces, so \(|A|=2^mH\). Antipodal oddness identifies the vertices not escaping in color one with \(\bar A\). The two collections are disjoint in a bad coloring because complementary singleton supports at the same root give a monochromatic full antipodal geodesic. Thus both-color escape occurs precisely outside \(A\cup\bar A\). The previous Kleitman diameter theorem bounds \(|A|\) by
+\(\sum_{j=0}^{m-1}\binom{2m}j=2^{2m-1}-\frac12\binom{2m}m\), proving (DE1). \(\square\)
+
+**Double escape alone does not force rootwise midpoint overlap.** A reproducible \(Q_6\) example is obtained from three sign-opposed direction pairs \((x_i,y_i)\), \(i=0,1,2\). For each \(i\), list the four remaining direction bits in increasing order as a number \(z\) from 0 to 15. Define an odd Boolean function \(f_i\) by reading the bit at index \(z\) from the respective mask \((33,232,59)\) for \(z<8\), and setting \(f_i(z)=1-f_i(15-z)\) for \(z\ge8\). Color the paired directions by \(c_{x_i}=f_i,\ c_{y_i}=1-f_i\). The coloring is undirected, antipodally odd, and vertex-balanced.
+
+At root \(u=3\), enumeration of all ordered monochromatic three-geodesics gives support masks
+\[
+\mathcal F_0(3)=\{7,11,26,35,42,44,56\},
+\quad
+\mathcal F_1(3)=\{11,14,41,42,44,49\}.
+\]
+Both colors escape, but these families contain no complementary pair of six-bit supports. Thus the midpoint convolution at this root is zero even though both escaping paths exist. This is a rootwise obstruction, not a NORI1 counterexample; the global overlap must be established by coupling different roots.
+
+
+## Walk potentials, derivative-run erasure, and extremal-lift invariance
+
+The toolkit's Minty argument optimizes an additive walk score and erases nonprofitable excursions. The graph construction in *Odd girth and frustration of switch component quotients* realizes a cube analogue: for an antipodal walk \(W\), its length \(L(W)\) plus completed turn count
+\[
+g(W)=\sum_{t<L}[w_t\ne w_{t+1}]+[w_L=w_1]
+\tag{ME1}
+\]
+is the length of an odd closed walk in the graph consisting of the zero cube edges and all antipodal matching edges. For even dimension, its minimum is the odd girth of that graph. Under vertex balance the graph is regular. This retains ordinary graph distances and allows local Bellman inequalities.
+
+Here we identify the cost of erasing a repeated direction, and show that the extremal lifts preserve the full tradeoff between walk length and completed turn count.
+
+**Lemma (twisted subsequence monotonicity).** If \(v\) is a nonempty subsequence of a binary word \(w\), then \(g(v)\le g(w)\).
+
+*Proof.* Extend \(w\) by the rule \(w_{t+L}=1-w_t\). Its adjacent comparisons have period \(L\), and their sum in one period is \(g(w)\). For the chosen subsequence positions \(s_1<\cdots<s_r\), compare successively \(w_{s_1},\ldots,w_{s_r},w_{s_1+L}\). Each comparison is bounded by the sum of adjacent comparisons on the corresponding interval. The intervals partition a period. Their sum is \(g(v)\), proving the claim. \(\square\)
+
+Fix an integer \(\lambda\ge1\), and minimize
+\[
+\Phi_\lambda(W)=\lambda L(W)+g(W)
+\tag{ME2}
+\]
+over all cube walks joining any root to its antipode, with minimum length used to break ties.
+
+**Proposition (finite walk optimization and ordinary erasure).** A minimizer exists. It repeats no cube vertex, and no two of its vertices belong to the same antipodal pair except its two endpoints.
+
+*Proof.* A full geodesic is a candidate of finite value, while \(\Phi_\lambda\ge\lambda L+1\). Thus only finitely many bounded-length walks need be considered. If a vertex repeats, delete the intervening closed subwalk. The color word becomes a subsequence, so \(g\) does not increase and length decreases, contradicting minimality.
+
+If a proper subwalk joins two antipodal vertices, its ordinary variation is at most that of the whole walk. Its completed turn count is the least odd integer at least its ordinary variation. The whole completed count is also odd and is at least that variation, so the subwalk has no greater completed count. Choosing the subwalk as the new antipodal walk reduces length, again a contradiction. \(\square\)
+
+**Theorem (direction-folding derivative-run bound).** Suppose a walk has direction word \(A\,i\,U\,i\,B\), with no occurrence of \(i\) in \(U\). Remove the two displayed \(i\)-steps and translate the intervening segment across direction \(i\), obtaining a legal walk \(W'\) with the same endpoints and length \(L-2\). Along the old middle segment, let
+\[
+h_t=\partial_i c_{j_t}(v_t)
+\]
+be the color change caused by this translation. Let \(r(h)\) be the number of nonempty runs of ones in this derivative word. Then
+\[
+\boxed{g(W')-g(W)\le2r(h).}
+\tag{ME3}
+\]
+Consequently, in a minimizer of (ME2), every such repeated-direction interval satisfies
+\[
+\boxed{r(h)\ge\lambda+1.}
+\tag{ME4}
+\]
+In particular, minimizing length plus completed turn count forces at least two separated active-derivative runs inside every repeated-direction interval.
+
+*Proof.* First delete the colors of the two displayed \(i\)-edges from the word of \(W\), giving a virtual word \(v\); subsequence monotonicity gives \(g(v)\le g(W)\). The legal folded word differs from \(v\) by XOR with the derivative word \(h\) on the middle segment and zero elsewhere. There is at least one edge outside that segment: otherwise the two displayed \(i\)-steps would give even \(i\)-parity for an antipodal walk. The padded derivative word has \(2r(h)\) cyclic changes. Only at those comparisons can the completed turn word change, proving (ME3).
+
+For a minimizing walk, the shorter folded walk cannot have equal or smaller \(\Phi_\lambda\). Hence \(g(W')-g(W)>2\lambda\). Both grades are odd, so their difference is at least \(2\lambda+2\). Combine with (ME3). \(\square\)
+
+Thus the direction-erasure condition is measured by ordered runs of square derivatives along the intervening walk. Ordinary loop erasure is automatic; dimension erasure requires this further transport control.
+
+### The full length--turn frontier survives balanced extremization
+
+For an odd coloring \(c\) of \(Q_n\), define
+\[
+\ell_c(r)=
+\min\{L(W):W\text{ joins some }x\text{ to }\bar x,\ g(W)\le r\},
+\tag{ME5}
+\]
+with value \(+\infty\) for an empty family. The root is variable. Let \(B(c)\) be the balanced lift on \(Q_{2n}\):
+\(B_{x_i}=c_i(x)\), \(B_{y_i}=1-c_i(x)\).
+
+**Theorem (frontier preservation).** For every \(r\ge1\),
+\[
+\boxed{\ell_{B(c)}(r)=\ell_c(r)+n.}
+\tag{ME6}
+\]
+For the independent cyclic-gadget extension \(C_k\) on \(N=2n+2k\) directions,
+\[
+\boxed{\ell_{C_k}(r)-N=\ell_c(r)-n.}
+\tag{ME7}
+\]
+Consequently, for every \(\lambda\ge1\), the normalized minimum walk potential is preserved:
+\[
+\boxed{
+\min_W[\lambda(L(W)-N)+g(W)-1]\text{ on }C_k
+=
+\min_W[\lambda(L(W)-n)+g(W)-1]\text{ on }c.
+}
+\tag{ME8}
+\]
+
+*Proof.* Project any lifted antipodal walk to its original directions. It remains an antipodal walk with the same old colors. Its completed grade does not increase, by subsequence monotonicity. Each auxiliary direction occurs an odd positive number of times, so projection removes at least the number of auxiliary directions. This gives the lower bounds in (ME6),(ME7).
+
+For the converse, take an old antipodal walk \(W\). Root sliding along the concatenation of \(W\) and its antipodal image cyclically rotates its completed comparison word, preserving length and grade. Cut immediately after a changed comparison, and use antipodal complementation if needed. The resulting walk starts and ends with color zero, has ordinary variation \(g(W)-1\), and retains its original length and grade.
+
+For each \(y_i\), its edge color \(1-c_i(x)\) has opposite values at the two old endpoints. Insert the \(y_i\)-step before or after \(W\), wherever that color is zero. Auxiliary steps affect none of the old rules or one another. The lifted word has zero prefixes and suffixes around the old word and hence the same completed grade. Its length increases by \(n\).
+
+The independent cyclic gadget has a zero full geodesic, as established by the between-position construction in the pathwise padding theorem. Insert one such gadget geodesic among the zero prefix steps. This adds \(2k\) steps and no grade. The upper bounds follow. Equality of the normalized minima follows either from the two walk maps or by minimizing the frontier formulas. \(\square\)
+
+**Connected guarded version.** For fixed \(c\) on \(Q_n\), \(n\ge3\), the connected guarded balanced lift also satisfies (ME7) for all sufficiently large \(k\), simultaneously for every \(r\).
+
+*Proof.* The projection lower bound still holds. Choose one minimizing old walk for each finite frontier value needed: there are finitely many such values, since a full geodesic has grade at most \(n\), and \(\ell_c(r)=n\) for every \(r\ge n\). For one selected old walk of length \(L\), use the preceding construction with a fixed zero gadget geodesic and fixed direction order. Its \(b\)-starting bits are free: the unguarded gadget rules ignore them. At every visited vertex they are still uniform after fixed prefix flips. The probability that any guard is active anywhere along this lifted walk is at most
+\[
+(L+n+2k+1)\,k\,2^{2-k}.
+\]
+For sufficiently large \(k\) this is less than one. Choose starting \(b\)-bits avoiding every guard. The guarded walk then has the same colors, length and grade as its unguarded version. Apply this separately to the finite collection of frontier witnesses. Infinite frontier values remain infinite by projection. \(\square\)
+
+**Closure plan.** A bound forcing the normalized minimum in (ME8) to vanish for balanced colorings would prove NORI1: vanishing forces both \(L=N\) and \(g=1\), and root sliding gives a monochromatic full geodesic. The extremal reductions preserve this entire optimization problem, including the connected guarded version. The new local obstruction (ME4) identifies what an erasure proof must overcome: separated derivative runs on every repeated-direction interval. A proof coupling these runs across the minimizing walk, using balance and the complementary antipodal edge rules, remains open.
+
+An independent evaluator verified (ME3) on 5,000 direction-fold configurations in dimensions three through seven. The proofs apply to all stated dimensions.
+
+
+Universal double-escape equivalence. Universal two-way balanced double-escape lift. In Q6 use paired direction bits a_i,b_i for i modulo 3. Let g_(a_i)=a_(i+1)+a_(i+2)+b_(i+1) modulo 2 and g_(b_i)=1-g_(a_i). Each pair is oppositely colored at every vertex; the rules ignore their own bits and depend on three other bits, so g is legal antipodally odd and vertex balanced. Starting at zero and traversing (a0,b1,b0,a2,a1,b2) gives a zero full antipodal geodesic. The gadget has no monochromatic three-face: a hypothetical such face must have one free direction in each a_i,b_i pair; changing either free bit of pair i toggles g_(a_(i-1)), hence changes the color of the selected free edge of pair i-1, contradiction. For any original legal odd coloring c of Q_n and integer k>=0, take the already-proved two-way vertex-balanced bounded-Fourier lift ctilde_k on Q_(2n+2k) and form independent-block product C_k=ctilde_k box g on Q_(2n+2k+6). A zero full geodesic in the product projects to one in c. Conversely a zero full geodesic in c lifts to one in ctilde_k, and concatenating with the exhibited zero geodesic in g gives one in the product. Thus C_k has a zero full geodesic if and only if c does. The product is vertex-balanced and odd. Its monochromatic maximal half-face would need all n+k free directions of the corresponding color in the first block and all three in the gadget block, forcing a monochromatic three-face of g; impossible. By the previously proved singleton halfpath support and backward extension theorems, at every vertex both colors admit multiple halfpath direction sets and geodesics of length N/2+1 with that vertex second. Every direction rule has Fourier degree <=max(n-1,3), independent of k; balance kills all top permissible Walsh coefficients. Consequently unrestricted NORI1 is equivalent to its restriction to balanced even-dimensional colorings having no monochromatic half-dimensional face, equivalently double escape at every vertex. The reduction preserves badness in arbitrarily high dimensions and is not a proof of NORI1.
+
+
+### Independent-block product geodesic count and irreducible minimal counterexamples
+
+Let \(c\) and \(g\) be arbitrary binary edge colorings of \(Q_a\) and \(Q_b\). Form their independent-block product \(C=c\Box g\), meaning a direction in either factor retains its original edge-color rule and ignores the other block.
+
+**Theorem (product path multiplicativity).**
+\[
+\boxed{N_0(C)=2\binom{a+b}{a}N_0(c)N_0(g).}\tag{PG1}
+\]
+In particular \(N_0(C)>0\) if and only if both factors have a zero monochromatic full antipodal geodesic.
+
+*Proof.* An oriented full zero geodesic of \(C\) projects to an oriented full zero geodesic of each factor. Conversely, any two such factor paths combine into a full zero product geodesic in any of the \(\binom{a+b}{a}\) interleavings of their two fixed direction orders. These operations are inverse, so the number of oriented zero product geodesics is
+\[
+\binom{a+b}{a}\,[2N_0(c)]\,[2N_0(g)].
+\]
+Every unoriented full geodesic has two orientations, proving (PG1). \(\square\)
+
+If the two factors are legal antipodally odd colorings, so is their product. Thus any hypothetical bad independent-block product must have a bad factor. Consequently a **minimum-dimensional bad odd coloring** is indecomposable as a nontrivial independent-block product of legal odd colorings. This makes precise the distinction between an irreducible proof obstruction and arbitrary balanced or double-escape padding.
+
+For the six-direction gadget (DG1), an enumeration of its \(2^6\cdot6!\) oriented full paths gives \(N_0(g)=216\). Consequently for a legal coloring \(d\) of \(Q_a\),
+\[
+\boxed{N_0(d\Box g)=432\binom{a+6}{6}N_0(d).}\tag{PG2}
+\]
+This quantitative identity strengthens the two-way product argument: when the base is bad, the product is bad; when it is good, the number of zero antipodal geodesics is amplified by the displayed combinatorial factor. The statement applies in all dimensions and does not require Fourier or balance hypotheses.
+
+
+
+## A sharp gap above the minimum size of balanced monochromatic components
+
+**Theorem (cube minimum-degree size gap).** Let \(X\ne\varnothing\) be a vertex subset of \(Q_d\) (or \(Q_D\) with \(D\ge d\)) whose induced cube subgraph has minimum degree at least \(d\). Then either \(X\) is a \(d\)-dimensional face and \(|X|=2^d\), or
+\[
+\boxed{|X|\ge 3\cdot2^{d-1}.}\tag{CG1}
+\]
+For \(d\ge2\) the second bound is attained by the Cartesian product of the six-cycle on \(Q_3\setminus\{000,111\}\) with \(Q_{d-2}\); for \(d=1\), a three-vertex path attains the bound.
+
+*Proof.* Induct on \(d\), with a secondary induction on the ambient dimension to discard fixed directions. For \(d=0\), a singleton is a zero-face, and every larger set has at least two vertices. For \(d\ge1\), choose a direction in which \(X\) meets both opposite facets; if no such direction remains after discarding fixed directions, the set is a singleton, contrary to its positive minimum degree. Let \(X_0,X_1\) be the two sections of \(X\) in that direction, identified with subsets of \(Q_{D-1}\). Each has minimum internal degree at least \(d-1\), because at most one neighbor of each vertex lies in the other section. By induction each section is either a \((d-1)\)-face of \(2^{d-1}\) vertices or has at least \(3\cdot2^{d-2}\) vertices.
+
+If neither is minimal, their total has at least \(3\cdot2^{d-1}\) vertices. Otherwise suppose \(X_0=F\) is a \((d-1)\)-face. Every vertex of \(F\) has internal degree \(d-1\), so minimum degree \(d\) forces its crossing neighbor into \(X_1\); thus \(F\subseteq X_1\) under the section identification. If \(X_1=F\), then \(X\) is a \(d\)-face. Otherwise let \(Y=X_1\setminus F\). Every vertex of \(Y\) has no crossing neighbor in \(X_0=F\), and has at most one neighbor in \(F\), since any vertex outside a cube face has at most one neighbor in that face. Thus the induced graph of \(Y\) has minimum degree at least \(d-1\). The usual cube minimum-degree lower bound, proved by the same induction, gives \(|Y|\ge2^{d-1}\). Hence \(|X|\ge|X_0|+|F|+|Y|\ge3\cdot2^{d-1}\). \(\square\)
+
+**Corollary (monochromatic component gap).** In any vertex-balanced binary edge coloring of \(Q_{2m}\), each connected component of either monochromatic edge graph has either \(2^m\) vertices and is an isolated monochromatic \(m\)-face, or at least
+\[
+\boxed{3\cdot2^{m-1}}
+\tag{CG2}
+\]
+vertices. In particular, in the counterexample-preserving double-escape reduction (DG2), neither color has a minimal face component, and each has at most \(\lfloor 2^{m+1}/3\rfloor\) components.
+
+*Proof.* Every vertex has degree \(m\) in each monochromatic edge graph. Its component vertex set has minimum induced-cube degree at least \(m\), so (CG1) applies. If the component has \(2^m\) vertices its set is a face; the component already contains all \(m\) internal edges at each vertex, making it an isolated monochromatic face. Conversely such a face is a component. If no such component exists, divide the total \(2^{2m}\) cube vertices by the lower bound (CG2). \(\square\)
+
+This global expansion gap applies to all balanced colorings, with no assumption on local readers, Fourier spectra, or dimensions of hypothetical counterexamples. It quantifies how far a component must grow once its rooted halfpath support escapes a single maximal face. The bound alone does not force complementary halfpaths, since the component vertex sets may be large while their geodesic midpoint supports remain separated.
+
+
+
+### Attribution and proof-status clarification for the minimum-degree gap
+
+The cube minimum-degree gap (CG1), though given above with a self-contained induction, is a previously established theorem of **Andris Ambainis and Jevgenijs Vihrovs**, *Size of Sets with Small Sensitivity: A Generalization of Simon's Lemma*, Theory and Applications of Models of Computation (TAMC 2015), Lecture Notes in Computer Science **9076**, pp. 122–133, DOI **10.1007/978-3-319-17142-5_12**; available also as ECCC report TR14-077 (2014). In their language, a subset of \(Q_D\) with sensitivity at most \(D-d\) has cardinality either \(2^d\) or at least \(3\cdot2^{d-1}\). The sensitivity bound is equivalent to minimum induced degree at least \(d\). Thus (CG1) is **the Ambainis–Vihrovs first gap theorem**, not a new theorem.
+
+The NORI1-specific **corollary** derived here remains: each color component in a vertex-balanced \(Q_{2m}\) is either an isolated monochromatic \(m\)-face of size \(2^m\), or contains at least \(3\cdot2^{m-1}\) vertices; in the double-escape reduction, there are no components of the first type. The interpretation and interaction with the earlier halfpath-support and universal-lift results are the contribution to Article XV. Any later presentation should explicitly credit Ambainis and Vihrovs for the gap itself.
+
+
+Wu and Yang, arXiv:2607.19276v1 (2026), proved the ordinary monochromatic antipodal path conjecture but explicitly left the geodesic strengthening open. Their rook-label construction uses ordinary monochromatic graph connectivity, which is transitive. Our legal odd Q3 coloring c0=x2, c1=1+x0, c2=1+x1 shows that monochromatic geodesic reachability is not transitive: zero geodesics join 000 to 110 and 110 to 011, but no zero geodesic joins 000 to 011. Thus no direct replacement of ordinary components by geodesic-reachability classes is possible. The path theorem makes the minimum monochromatic antipodal walk length finite, of the form n+2e with integer e>=0. NORI1 requires e=0, and any counterexample would have e>=1.
+
+Shortest-walk square-derivative budget. The 2026 Wu-Yang monochromatic antipodal path theorem ensures that a shortest monochromatic antipodal walk P exists for every legal odd coloring. Let its length be L=n+2e. For each direction i appearing 2k_i+1 times, consider the 2k_i intervals between successive occurrences. Every interval contains an active square derivative delta_i c_j(v)=c_j(v) xor c_j(v^i)=1 on one of its traversed j edges. Indeed, write P=A i B i C and remove the two displayed i steps while translating B in bit i; this yields a shorter antipodal walk. If all i-derivatives along B vanish, the shorter walk remains monochromatic, contradicting shortest length. Intervals for each i are disjoint, hence summing derivative incidences over each path-edge occurrence and each direction i gives at least sum_i 2k_i = L-n=2e. This is a uniform walk-erasure obstruction, not proof of e=0. Example Q4 coloring c0=x1, c1=x0+x2+x3, c2=x0+x1+x3, c3=x0+x1+x2 has all-zero antipodal path rooted at vertex 1 of direction word 0,2,0,3,0,1 but no zero geodesic at that root. Each of the two successive direction-zero intervals contains a nonzero square derivative. The repeated-direction budget complements the Minty-style fold potential in Article XV.
+
+
+## Global root-changing near-antipodal shortcuts
+
+Let \(n\ge3\), and let \(c\) be any antipodally odd coloring. By Wu--Yang's path theorem choose a shortest monochromatic-zero antipodal path
+\(P=(v_0,\ldots,v_L)\), \(v_L=\bar v_0\), minimizing length over **all endpoint roots**. Write \(L=n+2e\).
+
+**Theorem (root-changing shortcut).** For \(0\le i<j\le L\),
+\[
+\boxed{d_H(v_i,v_j)=n\ \Longrightarrow\ j-i=L,}\tag{SC1}
+\]
+and
+\[
+\boxed{d_H(v_i,v_j)=n-1\ \Longrightarrow\ j-i\ge L-1.}\tag{SC2}
+\]
+
+*Proof.* If \(v_j=\bar v_i\), the zero subpath from \(v_i\) to \(v_j\) would be a shorter antipodal path unless \(i=0,j=L\).
+
+If \(d_H(v_i,v_j)=n-1\), the vertices \(v_j,\bar v_i\) are adjacent. If the joining edge is zero, append it to the zero segment \(v_i\to\cdots\to v_j\), producing a zero antipodal walk of length \(j-i+1\). If the joining edge is one, its antipodal mate from \(v_i\) to \(\bar v_j\) is zero. Append that mate to the reversed zero segment \(v_j\to\cdots\to v_i\), giving a zero antipodal walk of the same length. In both cases shortest-length minimality forces \(j-i+1\ge L\). Any closed subwalk can be erased. \(\square\)
+
+**Corollary (rainbow-window extraction).** Any monochromatic antipodal path containing a contiguous block of \(n-1\) pairwise distinct directions implies the existence of a monochromatic *full antipodal geodesic*, possibly from a different root. In particular, if \(e\ge1\), every block of \(n-1\) successive steps along a globally shortest monochromatic antipodal path must repeat some direction.
+
+*Proof.* The endpoints of the block differ in \(n-1\) directions. The unique edge from one to the antipode of the other, or its antipodal mate, has the desired color. Adding it to the block or its reversal gives a monochromatic \(n\)-step antipodal geodesic. \(\square\)
+
+**Corollary (buried central repetition for one detour).** If \(L=n+2\), a unique direction appears three times and all others once. Write the three occurrence positions \(1\le a<b<c\le n+2\). Each of the four length-\((n-1)\) windows must contain at least two of these appearances. Their median \(b\) therefore belongs to the intersection of the four windows, giving
+\[
+\boxed{4\le b\le n-1.}\tag{SC3}
+\]
+In particular this shortest-walk configuration requires \(n\ge5\). This global restriction is stronger than mere active square derivatives and uses the freedom to change antipodal roots, which fixed-root shortening lacks.
+
+The theorem is a dimension-uniform necessary condition on shortest monochromatic antipodal paths; it does not yet force \(e=0\) in arbitrary dimension.
+
+
+
+### Systolic anticode of a shortest monochromatic antipodal path
+
+Let \(n\ge3\), and let \(P=(v_0,\ldots,v_L)\) be a globally shortest monochromatic antipodal path for an antipodally odd coloring. By the root-changing shortcut theorem (SC1)--(SC2),
+\[
+\boxed{\operatorname{diam}_H\{v_1,\ldots,v_{L-1}\}\le n-2.}\tag{SA1}
+\]
+Indeed any two of these vertices have index difference at most \(L-2\), hence cannot be antipodal or nearly antipodal. In particular their projected classes in the folded cube form a simple essential cycle whose inner vertices are a Hamming anticode.
+
+**Theorem (topological shortest-path length bound).** Write \(n=2m\) or \(n=2m+1\). Then
+\[
+\boxed{
+L\le
+\begin{cases}
+1+\displaystyle\sum_{j=0}^{m-1}\binom{2m}{j},& n=2m,\\[2mm]
+1+\displaystyle2\sum_{j=0}^{m-1}\binom{2m}{j},& n=2m+1.
+\end{cases}
+}\tag{SA2}
+\]
+Together with \(L\equiv n\pmod2\), this bounds the minimum detour excess of any legal coloring.
+
+*Proof.* The interior set contains \(L-1\) distinct vertices (the chosen path is shortest), and has Hamming diameter at most \(n-2\) by (SA1). The classical Kleitman diameter/anticode theorem bounds a subset of \(Q_{2m}\) of diameter at most \(2m-2\) by the Hamming-ball volume \(\sum_{j=0}^{m-1}\binom{2m}{j}\). In \(Q_{2m+1}\), the diameter threshold \(2m-1\) gives the sharp maximum \(2\sum_{j=0}^{m-1}\binom{2m}{j}\), the size of two adjacent radius-\((m-1)\) balls with overlapping centers handled in their union description. Apply those established inequalities to the interior set. \(\square\)
+
+**Corollary (geodesic closure for \(Q_4\) from the ordinary-path theorem).** For \(n=4\), (SA2) gives \(L\le6\). Parity forces \(L=4\) or \(6\). If \(L=6\), the path uses one direction three times and each other direction once. The median repeated occurrence would have to lie in \([4,n-1]=[4,3]\) by (SC3), impossible. Therefore \(L=4\): every legal odd \(Q_4\) coloring has a monochromatic antipodal geodesic.
+
+The preceding is an alternative proof of this known finite-dimensional case. The all-dimensional anticode consequence (SA1) is a new application to our shortest-path extremization, not a claim to have discovered Kleitman's established diameter theorem. It remains far from proving \(L=n\) for unrestricted dimension \(n\).
+
+
+
+### Balance and global path minimality give a one-third volume bound
+
+The codimension-one extension lemma is already established in earlier NORI research. The contribution here is its combination with a **monochromatic induced-path boundary count** and perfect vertex balance.
+
+Let \(n=2m\ge4\), and let \(c\) be a vertex-balanced antipodally odd coloring of \(Q_n\). Choose a globally shortest monochromatic-zero antipodal path \(P=(v_0,\ldots,v_L)\); its existence follows from Wu--Yang, and antipodal symmetry makes both colors equivalent. Put \(X=\{v_1,\ldots,v_{L-1}\}\), \(Y=\bar X\), and \(Z=Q_n\setminus(X\cup Y)\).
+
+**Theorem (balanced shortest-walk cut bound).**
+\[
+\boxed{L-1\le
+\left\lfloor\frac{m2^{2m}-2}{3m-2}\right\rfloor.}\tag{BC1}
+\]
+Thus \(L\le(1/3+O(1/m))2^{2m}\) in the balanced regime.
+
+*Proof.* By the known root-changing near-antipodal completion lemma, \(X\cap Y=\varnothing\) and no cube edge connects \(X\) to \(Y\). Indeed an internal antipodal pair would give a shorter zero antipodal subpath, and an internal near-antipodal pair could be completed at one of its two roots to a shorter zero antipodal walk.
+
+The color-zero induced subgraph on \(X\) has only the \(L-2\) internal successive edges of \(P\). Any other color-zero chord would replace a longer subpath and shorten \(P\).
+
+All vertices have color-zero degree \(m\). Consequently the number of zero edges crossing from \(X\) to its complement is
+\[
+m|X|-2(L-2)=(m-2)|X|+2.\tag{BC2}
+\]
+None reaches \(Y\), so all reach \(Z\). Each vertex in \(Z\) has zero degree \(m\), hence can receive at most \(m\) crossing zero edges from \(X\). Thus
+\[
+(m-2)|X|+2\le m|Z|=m(2^{2m}-2|X|).
+\]
+Rearrangement proves (BC1). \(\square\)
+
+**Corollary (combined anticode/cut bound).** The previously proved anticode constraint gives
+\[
+\boxed{
+L-1\le\min\left\{
+\sum_{j=0}^{m-1}\binom{2m}{j},
+\left\lfloor\frac{m2^{2m}-2}{3m-2}\right\rfloor
+\right\}.}\tag{BC3}
+\]
+The cut bound improves the Kleitman volume bound starting in dimension \(n=12\). The asymptotic fractions are respectively \(1/3\) and \(1/2\).
+
+**Status.** This is an unconditional dimension-uniform upper bound on the length of a shortest monochromatic antipodal path in a balanced coloring; it does not prove NORI1, and does not automatically furnish an equivalent bound in an original coloring before balanced lifting. The new counting ingredient is that a minimal monochromatic antipodal path is an induced path **in its own color graph**, and its interior is separated from its antipodal image.
+
+
+
+### Stronger shortest-path expansion from cubical two-step bypass rigidity
+
+Retain a vertex-balanced antipodally odd coloring of \(Q_n\), \(n=2m\ge4\), and a globally shortest monochromatic-zero antipodal path \(P=(v_0,\ldots,v_L)\). Put \(X=\{v_1,\ldots,v_{L-1}\}\), \(Y=\bar X\), \(Z=Q_n\setminus(X\cup Y)\), and \(t=|X|=L-1\).
+
+**Lemma (external two-neighbor rigidity).** Every \(z\in Z\) has at most two color-zero neighbors on \(X\). If there are two, they are vertices \(v_i,v_{i+2}\) two steps apart on \(P\), and \(z\) is the other corner of their unique dimension-two square. Consequently, at most \(L-3=t-2\) vertices of \(Z\) have two color-zero neighbors in \(X\).
+
+*Proof.* If \(z\) were joined by zero edges to \(v_i\) and \(v_j\) with \(j-i>2\), replacing the color-zero subpath of \(P\) between them by \(v_i,z,v_j\) would shorten the antipodal zero walk by at least two steps, contradicting global minimality. Distinct neighbors of \(z\) lie in the same cube bipartition class, hence their path indices have the same parity. Therefore any two such indices differ by two. Three indices would include a pair differing by at least four, impossible. For each consecutive two-step subpath \(v_i,v_{i+1},v_{i+2}\), the endpoints differ in two directions (as \(P\) is vertex-simple), so there is only one other common cube neighbor besides \(v_{i+1}\). Thus there is at most one possible double-neighbor vertex for each of the \(L-3\) internal two-step subpaths. \(\square\)
+
+**Theorem (improved antipoidal shortest-path volume bound).**
+\[
+\boxed{
+L-1\le\left\lfloor\frac{2^n-4}{m-1}\right\rfloor
+\quad (n=2m\ge4).}\tag{BP1}
+\]
+In particular \(L=O(2^n/n)\), a factor of order \(n\) below the ambient cube size, with a stronger exponent-independent prefactor than the preceding one-third bound.
+
+*Proof.* As in the preceding theorem, established near-antipodal root-changing completion gives \(X\cap Y=\varnothing\) and no cube edge from \(X\) to \(Y\). The color-zero induced graph on \(X\) contains only its \(L-2\) successive path edges. Therefore the number of zero edges leaving \(X\) into \(Z\) is
+\[
+B=m|X|-2(L-2)=(m-2)t+2.
+\]
+Let \(N\) be the number of vertices \(z\in Z\) incident to at least one such edge, and let \(D\) count vertices with two. The lemma gives \(B=N+D\) and \(D\le t-2\), hence
+\[
+N\ge (m-2)t+2-(t-2)=(m-3)t+4.
+\]
+But \(N\le |Z|=2^n-2t\), so
+\[
+(m-1)t\le2^n-4,
+\]
+proving (BP1). \(\square\)
+
+**Corollary (best combined geometric bounds).** With the classical Kleitman anticode bound, the previous simple cut bound, and (BP1), one has
+\[
+L-1\le
+\min\left\{
+\sum_{j=0}^{m-1}\binom{2m}{j},\
+\left\lfloor\frac{m2^n-2}{3m-2}\right\rfloor,\
+\left\lfloor\frac{2^n-4}{m-1}\right\rfloor
+\right\}.
+\tag{BP2}
+\]
+The square-bypass bound improves the Kleitman bound from dimension eight onward. It uses only the **existing** codimension-one shortcut, the induced-path property of shortest monochromatic walks, balance, and the two-common-neighbor geometry of cube squares. This is a global length bound and not yet a proof that the minimum length equals \(n\).
+
+**Generalization.** If the color-zero degree is at least \(d\ge2\) at every vertex of the path, the same argument gives
+\[
+(d-1)(L-1)\le2^n-4,
+\]
+without needing vertex balance elsewhere. In a legal antipodally odd coloring, the balanced case \(d=n/2\) gives the displayed strongest uniform version.
+
+
+
+### Antipodally separated color neighborhoods of globally shortest monochromatic paths
+
+Let \(c\) be a vertex-balanced antipodally odd coloring of \(Q_n\), \(n=2m\ge6\). Let \(P=(v_0,\ldots,v_L)\) be a globally shortest monochromatic-zero antipodal path, over all roots; the shortest color-one length equals \(L\) by antipodal complementation. Put \(X=\{v_1,\ldots,v_{L-1}\}\), \(Y=\bar X\), and \(Z=Q_n\setminus(X\cup Y)\). Let
+\[
+N=\{z\in Z:\ c(v_i z)=0\text{ for some }1\le i<L\}
+\]
+denote the exterior color-zero neighborhood of \(X\).
+
+**Theorem (four-vertex antipodal neighborhood overlap).**
+\[
+\boxed{|N\cap\bar N|\le4.}\tag{AN1}
+\]
+The overlap can occur only at the two endpoints \(v_0,\bar v_0\) and at the other two corners of the squares associated with the first and last directions of \(P\).
+
+*Proof.* Suppose \(z\in N\cap\bar N\). Choose \(i,j\in\{1,\ldots,L-1\}\) with red edges \(zv_i\) and \(\bar z v_j\). By antipodal oddness, the edge from \(z\) to \(\bar v_j\) is blue. From \(z\), traverse this blue edge to \(\bar v_j\), follow the blue antipodal image of the subpath of \(P\) from \(v_j\) to \(v_i\), and finish with the antipodal blue mate of the red edge \(v_i z\), joining \(\bar v_i\) to \(\bar z\). The result is a monochromatic-blue antipodal walk from \(z\) to \(\bar z\) of length
+\[
+\boxed{|i-j|+2.}\tag{AN2}
+\]
+Its length cannot be less than the global shortest \(L\). But \(|i-j|\le L-2\) for internal indices, so necessarily \(|i-j|=L-2\) and \(\{i,j\}=\{1,L-1\}\).
+
+Write \(a,b\) for the first and last path directions. They are distinct: otherwise \(v_1=\bar v_{L-1}\), an internal antipodal pair contradicting shortestness. The two internal vertices \(v_1,\bar v_{L-1}\) equal \(v_0^a,v_0^b\), so they have only the common cube neighbors \(v_0,v_0^{a,b}\). The reversed extreme pair similarly has common neighbors \(\bar v_0,\bar v_0^{a,b}\). This gives at most four candidates for \(z\), proving (AN1). \(\square\)
+
+**Theorem (improved shortest-path volume bound).**
+\[
+\boxed{
+L-1\le\left\lfloor\frac{2^n-4}{n-4}\right\rfloor
+\qquad (n=2m\ge6).}\tag{AN3}
+\]
+Thus \(L=O(2^n/n)\), with half the leading coefficient of the previous square-bypass bound (BP1).
+
+*Proof.* Put \(t=|X|=L-1\). As previously established, \(X\cap\bar X=\varnothing\) with no cube edge joining these sets; the color-zero edges inside \(X\) are only its \(t-1\) successive path edges. Vertex balance therefore gives \((m-2)t+2\) red edges from \(X\) to \(Z\). The square-bypass lemma says each \(z\in Z\) has at most two red neighbors in \(X\), and at most \(t-2\) vertices have two; hence
+\[
+|N|\ge(m-3)t+4.
+\]
+Antipodal complementation preserves \(Z\), and (AN1) gives
+\[
+2|N|-4\le |N\cup\bar N|\le |Z|=2^n-2t.
+\]
+Combining yields
+\(2(m-3)t+8-4\le2^n-2t\), or
+\[
+2(m-2)t\le2^n-4.
+\]
+Since \(2(m-2)=n-4\), this is (AN3). \(\square\)
+
+**Combined bound and provenance.** The best of the Kleitman anticode, initial balanced boundary and two-neighbor bound, and (AN3) applies. The antipodal neighborhood bound improves the anticode bound already from \(n=8\), and the asymptotic upper fraction is now \(1/n\), rather than \(1/3\) or \(2/n\). The **codimension-one completion lemma is old**; what is added here is a color-sensitive antipodal separation of an entire *neighborhood* of a globally extremized path, followed by a balanced expansion count. It is not yet a proof that the shortest path has no repeated directions.
+
+
+
+### Layered antipodal separation for every shortest monochromatic path
+
+Let \(c\) be an antipodally odd coloring of \(Q_n\), and let \(P=(v_0,\ldots,v_L)\) be a globally shortest zero antipodal path. Put \(X=\{v_1,\ldots,v_{L-1}\}\), \(Z=Q_n\setminus(X\cup\bar X)\). For an integer \(r\ge1\), let
+\[
+U_r=\{z\in Z:\text{there is a zero path of length at most }r\text{ from }z\text{ to }X\}.
+\]
+For \(z\in U_r\cap\overline{U_s}\), choose zero paths of lengths \(a\le r,b\le s\) from \(z\) to \(v_i\), and from \(\bar z\) to \(v_j\), with \(1\le i,j<L\).
+
+**Theorem (antipodal attachment separation).** Any such attachments satisfy
+\[
+\boxed{a+b+|i-j|\ge L.}\tag{LA1}
+\]
+If \(r+s<L\), their anchor indices obey
+\[
+\boxed{|i-j|\ge L-r-s,\qquad
+\min(i,j)\le r+s-1,\quad
+\max(i,j)\ge L-(r+s-1).}\tag{LA2}
+\]
+Thus antipodal overlap of \(r\)- and \(s\)-step monochromatic neighborhoods of the interior of a shortest antipodal path can only arise from attachments at the first or last \(r+s-1\) interior positions.
+
+*Proof.* Concatenate the zero path from \(z\) to \(v_i\), the zero segment of \(P\) from \(v_i\) to \(v_j\), and the zero path from \(v_j\) to \(\bar z\). This is a zero antipodal walk from \(z\) to \(\bar z\) of length \(a+|i-j|+b\). Global shortestness implies this length is at least \(L\), proving (LA1). Since internal indices range between \(1,L-1\), rearranging yields (LA2). Neither the argument nor its inequality requires antipodal color reversal once the shortest color-zero antipodal path is available.
+
+**Corollary (bounded Hamming endpoint collars).** If \(r+s<L\) and \(z\in U_r\cap\overline{U_s}\), then
+\[
+\boxed{z\in B_H(v_0,r+s+\min(r,s)-1)
+\ \cup\ B_H(\bar v_0,r+s+\min(r,s)-1).}\tag{LA3}
+\]
+*Proof.* If \(i<j\), (LA2) gives \(i\le r+s-1\) and \(L-j\le r+s-1\). Hence
+\(d_H(z,v_0)\le a+i\le2r+s-1\).
+Also \(d_H(z,\bar v_j)\le b\le s\) and
+\(d_H(\bar v_j,v_0)\le L-j\le r+s-1\),
+so \(d_H(z,v_0)\le r+2s-1\). Take the smaller bound. If \(i>j\), the analogous argument centers the Hamming ball at \(\bar v_0\). \(\square\)
+
+For \(r=s=1\), (LA2) forces \(\{i,j\}=\{1,L-1\}\); cube common-neighbor geometry gives the sharper earlier bound \(|U_1\cap\overline{U_1}|\le4\). This proof also corrects an unnecessary attribution in the earlier AN1 argument: the overlap constraint itself is a shortest-*red*-path fact, while antipodal oddness is used in the earlier result to exclude arbitrary cube edges between the path interior and its antipode.
+
+**Role in closure.** The inequalities apply in any dimension and at every neighborhood depth, providing a precise obstruction to placing monochromatic reachability layers on both sides of the antipodal involution. They do not alone imply geodesic existence, because arbitrary balanced counterexample-preserving lifts can have detour excess independent of ambient dimension, making pure volume bounds too weak.
+
+
+
+## Square-pattern budget in perfectly balanced antipodally odd cubes
+
+Let \(n=2m\ge4\), and let \(c\) be any vertex-balanced antipodally odd binary edge coloring of \(Q_n\). Classify every undirected square by the number of its color-one edges. Put \(H_k\) for the number of squares with \(k\) color-one edges. Further split the two-one-edge count \(H_2=H_2^{\mathrm{opp}}+H_2^{\mathrm{adj}}\), according to whether the two color-one edges are opposite (parallel) or adjacent.
+
+**Theorem (opposite-edge-square identity).**
+\[
+\boxed{
+H_0=H_4,\qquad H_1=H_3,\qquad
+H_2^{\mathrm{opp}}=m2^{n-2}+2H_4,
+\qquad
+H_2^{\mathrm{adj}}=2^n\binom m2-4H_4-2H_3.
+}
+\tag{SQ1}
+\]
+In particular **every** vertex-balanced odd \(Q_{2m}\) contains at least
+\[
+\boxed{m\,2^{n-2}}\tag{SQ2}
+\]
+squares whose edges alternate in pairs of opposite colors around the boundary (the two color-one edges are parallel, as are the two color-zero edges).
+
+*Proof.* The cube has \(Q=2^{n-2}\binom n2\) squares. Antipodal complementation maps a square with \(k\) one-edges to a different square with \(4-k\), proving \(H_k=H_{4-k}\). At every vertex there are \(m\) incident one-edges, so the total number of unordered one-colored incident edge pairs (one-colored wedges) is \(W=2^n\binom m2\). Each one-color wedge determines one square. A square with four one-edges contributes four such wedges; a square with three contributes two; a square with two adjacent one-edges contributes one; all remaining patterns contribute none. Therefore
+\[
+W=4H_4+2H_3+H_2^{\mathrm{adj}}.
+\]
+Likewise
+\(Q=2H_4+2H_3+H_2^{\mathrm{adj}}+H_2^{\mathrm{opp}}\).
+Eliminating the latter unknown gives
+\[
+H_2^{\mathrm{opp}}=Q-W+2H_4.
+\]
+Because \(n=2m\),
+\(Q-W=2^{n-2}[\binom{2m}{2}-4\binom m2]=m2^{n-2}\).
+This proves all identities. \(\square\)
+
+**Defect transport interpretation.** When a color-one edge in direction \(i\) belongs to such a two-and-two opposite-edge square and both adjacent transverse edges are zero, its parallel direction-\(i\) partner is also one. The two zero transverse edges transport the nonzero direction-\(i\) defect to a parallel edge without changing color. If the parallel \(i\)-edge is zero instead, the three zero edges provide a length-three monochromatic bypass of the original defect. This distinction gives a global supply of transport squares but does not ensure that the transport chain reaches a zero \(i\)-edge; closed trapped components remain possible.
+
+**Audits.** The square identity was checked across all 48 vertex-balanced odd colorings of \(Q_4\), where the square counts are \(H_0=H_4=1\), \(H_1=H_3=4\), \(H_2^{\mathrm{adj}}=4\), \(H_2^{\mathrm{opp}}=10\), and in random balanced odd colorings of \(Q_6\) and \(Q_8\). The theorem is dimension-uniform; these checks are not used in the proof.
+
+The identity establishes a rigid local-square budget for every balanced counterexample, a candidate global constraint for the repeated-direction/defect-transport problem rather than another restricted-class NORI1 proof.
+
+
+
+### A balanced odd obstruction to single-direction defect transport closure
+
+The abundant opposite-colored-square count (SQ1) does **not** imply that transporting a one-colored direction-\(i\) edge defect along two zero-colored transverse edges eventually reaches a zero-colored direction-\(i\) edge. A legal balanced \(Q_4\) counterexample is
+\[
+\boxed{
+c_0=x_2,\quad c_1=1-x_2,\quad
+c_2=x_0,\quad c_3=1-x_0
+\qquad(\bmod2).}\tag{ST1}
+\]
+Every rule ignores its own bit, flips under antipodal complementation, and each direction pair \((0,1)\), \((2,3)\) contributes one zero and one one edge at every vertex. Thus the coloring is vertex-balanced and antipodally odd; as known, it has monochromatic full antipodal geodesics.
+
+Consider a direction-zero one-colored edge \(e\), where \(x_2=1\). At both its endpoints, the perpendicular direction 1 is zero-colored. Directions 2 and 3 have opposite colors at the two endpoints (their rules depend on \(x_0\)), so neither can provide a pair of zero transverse edges. Thus its only permitted all-zero transverse transport is across direction 1, to the parallel direction-zero edge \(e^1\). But \(c_0=x_2\), so \(e^1\) is still color one. Transporting again returns to \(e\). Each direction-zero defect is therefore trapped in a two-edge transport component containing no zero direction-zero edge.
+
+**Interpretation.** Balance guarantees, by a pigeonhole argument, at least one common zero transverse direction across any one-colored edge: each endpoint has \(m\) zero lateral directions among \(2m-1\). The transport graph may nevertheless be a closed component containing no zero edge of the defective direction, even with the legal antipodal symmetry. The all-dimensional square budget forces many such transport squares but not a successful fixed-direction repair. A possible grand-theorem closure proof must combine *different defective directions*, different paths, or the global topological parity obstruction rather than iterating a single color-preserving square move to termination.
+
+
+
+### Four endpoint-square exchanges for minimal antipodal paths
+
+Let \(c\) be an antipodally odd binary coloring of \(Q_n\). Choose a globally shortest monochromatic-zero antipodal path \(P=(v_0,\ldots,v_L)\). Write \(u=v_0\), let \(a,b\) be its first and last directions, and put \(z=u^{a,b}\). The established internal-antipodal shortcut shows \(a\ne b\). Write \(A=c_b(u^a)\), \(B=c_a(u^b)\). Then \(c_a(u)=0\) and \(c_b(u)=1\), using antipodal oddness on the last edge.
+
+**Endpoint-square exchange lemma.** If \((A,B)\ne(1,0)\), the following is a second monochromatic-zero antipodal path with the same length \(L\):
+\[
+\begin{array}{c|l}
+(A,B)&\text{new vertex sequence}\\
+(0,0)&u^b,z,v_1,v_2,\ldots,v_{L-1}\\
+(1,1)&v_1,v_2,\ldots,v_{L-1},\bar z,\bar v_1\\
+(0,1)&z,v_1,v_2,\ldots,v_{L-1},\bar z.
+\end{array}
+\]
+The pattern \((1,0)\) gives no exchange by these three operations.
+
+*Proof.* In the first construction, the new initial edges have colors \(c_a(u^b)=B=0\) and \(c_b(u^a)=A=0\), and its terminal vertex is \(\overline{u^b}=v_{L-1}\). In the second, the new terminal edges have colors \(1-B=0\) and \(1-A=0\) by antipodal oddness, and the last vertex is \(\bar v_1\). In the third the new initial and final edge colors are \(A=0\) and \(1-B=0\), with antipodal endpoints \(z,\bar z\). Retained internal edges remain zero. Any repeated vertex in a constructed walk would permit a shorter zero antipodal walk, violating the global choice of \(L\); thus the walks are paths. \(\square\)
+
+**Neighborhood implication.** Let \(X=\{v_1,\ldots,v_{L-1}\}\), and let \(N\) be its exterior zero neighborhood in the complement of \(X\cup\bar X\). The prior antipodal-overlap theorem shows \(N\cap\bar N\subseteq\{u,\bar u,z,\bar z\}\). The pair \(\{u,\bar u\}\) is always present, while \(\{z,\bar z\}\) is present precisely when \((A,B)=(0,1)\). Hence \(|N\cap\bar N|\) is two or four, and the extra overlap encodes a length-preserving root exchange.
+
+**No forced blocked square.** The legal odd \(Q_4\) coloring \(c_0=x_1\), \(c_1=c_2=c_3=x_0\) has 24 unoriented zero antipodal geodesics. For each oriented zero geodesic its endpoint-square pattern belongs to \(\{(0,0),(0,1),(1,1)\}\), never \((1,0)\). Indeed direction 0 must be first or last: if it were internal, the first and last other-direction edge colors would impose opposing values of \(x_0\). If direction 0 is first, \(A=0\); if last, \(B=1\). Thus minimizing path length alone cannot force a blocked endpoint square.
+
+This exchange lemma should be compared with the prior endpoint-rotation arguments in Article X before treating it as a distinct proof mechanism. It gives a finite move graph on globally minimal witnesses, not a demonstration that any move reduces the detour excess.
+
+
+### Probabilistic closure status: exponential smoothing and a marginal-counting barrier
+
+The random-cube geodesics Subsection now proves independent-round amplification, (SR1)--(SR5). Uniformly over every legal baseline, fixed-root prescribed-word failure under antipodal edge-orbit noise has order at most \(\exp[-c n\rho]\), for an absolute \(c>0\). A root-star obstruction gives the matching exponential order for monochromatic prescriptions. Under uniform legal coloring, the global bad fraction is at most \(\exp[-2^{n-O(\log n)}]\); the associated failure-list encoding saves \(2^{n-O(\log n)}\) bits.
+
+The same Subsection proves a dimension-uniform obstruction to closing (EA7) by refining marginal network counts alone. If a test subgraph \(K\) contains at most one edge from each antipodal orbit, its local no-zero-full-geodesic failure list has entropy deficit at most \(|E(K)|/n\). Set all edges of a least frequent direction in \(K\) to one to obtain this bound. Consequently disjoint-support coding, and weighted Shearer estimates using only those marginal failure lists, can save at most \(L_n/n\), where \(L_n=n2^{n-2}\).
+
+Thus the quantitative improvement and the limitation have complementary roles. The fixed entropy-deficit closure criterion remains a viable unrestricted target, but reaching it requires joint compatibility beyond marginal failure-list counting, or test supports containing antipodal partner edges. This barrier applies to all orbit-simple test subgraphs, with no restriction to a particular face partition or network shape.
+
+
+### Complete classification of rooted profile parity obstructions
+
+The full-geodesic profile Subsection now proves (RA1)--(RA8). Let \(V\) be the span of all binary square-exchange profile changes. At every root \(x\), the affine profile hull is \(x+a+V\). Its annihilator has a canonical basis consisting of indicators of disjoint autonomous flat direction blocks of positive even size. These are all rooted profile parity restrictions; direction rules outside a block may read its bits.
+
+Balance supplies an additional inequality. Every such flat odd block has signed degree imbalance at least two somewhere. Its rules read only its own bits, so the positive imbalances of different blocks can be attained simultaneously. If there are \(t\) blocks and \(p\) other directions, then \(2t\le p\), and the blocks themselves contain at least \(2t\) directions. Therefore
+\[
+t\le\lfloor n/4\rfloor,\qquad
+\dim\operatorname{aff}\mathcal W_x=n-t\ge\lceil3n/4\rceil.
+\]
+Explicit balanced legal examples attain equality in every even dimension \(n\ge4\).
+
+Under the standard complementary lift, \(V_{L(c)}=V_c\oplus\mathbb F_2^n\), so the number of parity restrictions remains unchanged. The known rootwise support factorization preserves forbidden old profiles at the same time. Thus the remaining obstruction lies in attainment within these affine cosets, and persists even in balanced lifts whose rooted affine ranks approach their full dimensions. This specifies the higher-order exchange compatibility required by profile-based closure arguments.
+
+
+### Balanced two-nonlinear switching closure and sign audit
+
+The paired-direction manuscript now closes the full balanced two-nonunary branch. Its switching proof has two independent transport formulations: common four-pivot transport, and transport restricted to the mixed distinguished-reader locus \(X=-Y\).
+
+The remaining incompatible mutual-reader case has two sign configurations, \(s_u=\mu Y,\ s_v=\mu X\). For \(\mu=1\), a zero \(u,v\)-path passes through \(X=Y=1\); both exceptional steps can be inserted there, independently of the selector and all exterior bits. The uniform frozen-core absorption argument handles the unary exterior. For \(\mu=-1\), balance pairs every remaining unary rule into an opposite same-reader pair. Their transport graph, restricted at the exceptional steps to \(X=-Y\), has a strongly connected set containing an antipodal pair. On that locus \(s_a,s_b\) are complementary, and an odd sign transition on an arc supplies both zero exceptional edges. Paired-leaf extension and autonomous-component products give the SCC in arbitrary dimension.
+
+The sign distinction is included explicitly in the manuscript's four-pivot proof as well. Together with the complementary closure and the one-exception theorem, this proves NORI1 for every balanced legal coloring with at most two nonunary direction rules. The result places no bound on their nonlinear reader supports. The restricted transport construction was checked on all eight elementary \(Q_6\) interfaces and twelve \(Q_8\) interfaces including an autonomous paired-reader cycle; the proof is independent of those checks.
+
+
+### Antipodal exposure: a nonlinear transport extension invariant
+
+The paired-direction Subsection proves (OE1)--(OE6). For a strongly connected transport set \(C\), let \(\mathcal E(C)\) consist of all full cube states encountered between exceptional steps in witnesses with endpoints in \(C\). Adjoin a direction whose rule is any odd Boolean function \(g\) of the old bits, with old nonexceptional rules ignoring the new bit.
+
+The full lifted set \(C\times\mathbb F_2\) is strongly connected precisely when \(g\) vanishes somewhere in \(\mathcal E(C)\). Consequently this lift works for every odd \(g\) precisely when \(\mathcal E(C)\) contains an antipodal pair. Moreover \(\mathcal E(C\times\mathbb F_2)\) contains \(\mathcal E(C)\times\mathbb F_2\). This proves a reusable induction invariant under arbitrary nonlinear odd feedforward extensions. Adding complementary rule pairs preserves balance, and yields closure modules with arbitrarily many nonlinear rules around complementary exceptional cores or the solved negative mutual-reader switching core.
+
+The proof inserts a new zero edge outside an old witness to lift it without changing the new state bit, and inserts it at an exposed zero of \(g\) to toggle that bit within the strongly connected set. Oddness provides complementary values at the full witness endpoints and on exposed antipodal states.
+
+A legal balanced successful \(Q_6\) example shows that requiring loops for every exceptional-bit assignment is too strong for general cyclic interfaces: its universally looped states all have one fixed bit. Its transport SCC nevertheless exposes all cube states, satisfying the weaker invariant. Thus the closing target is cyclic-block transport with antipodal exposure. Existence of an antipodal transport SCC for arbitrary fixed-complementary-pair interfaces would settle unrestricted NORI1 via the established balanced paired lift.

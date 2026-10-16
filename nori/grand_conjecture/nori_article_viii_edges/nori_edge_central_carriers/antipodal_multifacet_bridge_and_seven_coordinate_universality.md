@@ -94,3 +94,128 @@ For \(n\le8\), the stronger statement that **all \(n\) prescribed direction colo
 - Tomáš Feder and Carlos Subi, *On hypercube labellings and antipodal monochromatic paths*, Discrete Applied Mathematics 161 (2013), 1421–1426 (original unrestricted-edge 2-cp *path* conjecture; the geodesic strengthening is due to Leader–Long).
 
 **Unification scope:** This established NORI1 localization theorem is retained as prior mathematics, not an independent current research target. A later NORI1 paired-start toy theorem, originally published in composition v2, is preserved with its complete proof in note `note_antipodal_paired_start_nori1_toy_unification_probe`; no transfer to ordinary boundary tournaments has been established.
+
+
+## Near-spanning one-change paths: an unrestricted dimension-uniform closure equivalence
+
+Let \(d\) be an arbitrary binary edge coloring of \(Q_n\), with **no antipodal condition**. Define \(L_1(d)\) to be the maximum length of a direction-simple path (using each direction at most once) whose edge-color word has at most one change. The full-length condition \(L_1(d)=n\) is exactly the arbitrary-color geodesic two-color-path assertion \(B_n\).
+
+**Theorem (asymptotic one-change closure equivalence).** The following assertions are equivalent:
+
+1. Unrestricted antipodally odd NORI1 holds in every dimension.
+2. \(B_n\) holds for arbitrary two-edge-colorings of \(Q_n\), for every dimension \(n\).
+3. A uniform function \(f(n)=o(n)\) exists such that every arbitrary coloring \(d\) of \(Q_n\) satisfies
+   \[
+   \boxed{L_1(d)\ge n-f(n).}\tag{NS1}
+   \]
+4. Some fixed \(C\) exists such that every arbitrary coloring \(d\) of \(Q_n\) satisfies \(L_1(d)\ge n-C\).
+
+Thus a universal \(n-O(\sqrt n)\), \(n-O(\log n)\), or bounded-deficit **one-change** direction-simple path theorem for arbitrary two-edge-colorings would prove NORI1 in every dimension.
+
+*Proof.* To obtain \(1\Rightarrow2\), fix an arbitrary colored \(Q_k\). The already established multifacet bridge theorem gives \(B_k\Longleftrightarrow P_{k+1,S}\), where \(S\) is the \(k\)-set of horizontal directions in a legal antipodally odd coloring of \(Q_{k+1}\). Under NORI1, every directionwise prescribed \(k+1\)-bit profile occurs: reverse all edge colors in each selected direction wherever the target bit is one, apply NORI1, then if necessary antipodally translate a monochromatic-one full path to a monochromatic-zero path. Hence \(P_{k+1,S}\) holds, and the bridge theorem yields \(B_k\).
+
+For \(2\Rightarrow1\), apply \(B_n\) directly to a legal antipodally odd edge coloring of \(Q_n\). This gives a full antipodal geodesic with at most one color change. If it has one change, cyclically slide the root past that change. Antipodal oddness complements the moved prefix colors and makes the resulting full antipodal geodesic monochromatic, as proved in the penultimate-length/root-rotation lemma above. Thus NORI1 holds.
+
+Clearly 2 implies 3 and 4. Conversely, if 2 fails, select a fixed arbitrary colored \(Q_d\) with \(L_1(a)\le d-1\). Form its \(h\)-fold independent Cartesian power \(a^{\boxtimes h}\) on \(Q_{hd}\). A direction-simple path with at most one change in this product projects onto each factor as a direction-simple path whose color word, being a subsequence of the full word, also has at most one change. Each factor therefore contributes at most \(d-1\) moves. Consequently
+\[
+\boxed{L_1(a^{\boxtimes h})\le h(d-1)=hd-h.}\tag{NS2}
+\]
+The loss of \(h=n/d\) moves is linear in the ambient dimension \(n=hd\), violating 3 and 4. Therefore either 3 or 4 forces 2. This proves all equivalences. \(\square\)
+
+**Significance and calibration.** This closure-equivalent asymptotic assertion concerns **arbitrary**, potentially imbalanced, nonlinear two-edge-colorings of the cube. The requirement of at most one color change is indispensable: uniformly near-spanning *monochromatic* direction-simple paths are impossible for arbitrary colorings with half the directions permanently assigned to each color. Conversely, the full geodesic 2-cp assertion is sufficient for NORI1 because antipodal root rotation eliminates a single change. The tensor-power argument shows that any genuinely sublinear loss in the weaker partial-path statement automatically collapses to the exact full geodesic theorem. This is a possible approach through an approximate path theorem rather than an induction through individual dimensions.
+
+
+
+### Two-phase trace tensorization and multiplicative counterexamples
+
+For any arbitrary undirected binary edge coloring \(d\) of \(Q_q\), let \(R_d\) and \(B_d\) be its color-zero and color-one adjacency matrices, \(P_q\) the antipodal permutation, and define the nonnegative numbers
+\[
+M_{q,k}(d)=\operatorname{tr}(P_qR_d^kB_d^{q-k}),
+\qquad 0\le k\le q.
+\tag{TS1}
+\]
+The Leader--Long full one-change property holds for \(d\) if and only if some \(M_{q,k}(d)\) is positive, because every full path changing from one to zero can be reversed.
+
+**Theorem (binomial two-phase tensorization).** If \(d=d_1\boxtimes d_2\) is an independent Cartesian product of arbitrary binary edge colorings on \(Q_a,Q_b\), with \(N=a+b\), then
+\[
+\boxed{
+M_{N,k}(d)=
+\sum_{r=\max(0,k-b)}^{\min(a,k)}
+\binom{k}{r}\binom{N-k}{a-r}
+M_{a,r}(d_1)M_{b,k-r}(d_2).
+}\tag{TS2}
+\]
+Thus a product coloring admits a full one-change antipodal geodesic if and only if *both* factors admit such geodesics.
+
+*Proof.* The product matrices satisfy
+\[
+R_d=R_1\otimes I+I\otimes R_2,\quad
+B_d=B_1\otimes I+I\otimes B_2,\quad P_N=P_a\otimes P_b.
+\]
+Expand both powers binomially; their respective factor summands commute because they act on disjoint coordinates. A term has nonzero antipodal trace in a factor only if its total number of moves in that factor is at least the factor's dimension. Since the total number of moves is exactly \(N=a+b\), each factor must use precisely its own dimension, giving \(r+(a-r)=a\) and \(k-r+(b-k+r)=b\), whence (TS2). Every summand is nonnegative. If both factors have positive mixed traces at seam ranks \(r_1,r_2\), take \(k=r_1+r_2\); the associated binomial coefficient product is strictly positive. Conversely a positive summand implies both factors have a one-change geodesic. \(\square\)
+
+**Corollary (exact multiplicativity of failure).** A fixed arbitrary-color \(B_d\) counterexample generates full one-change geodesic counterexamples in every product dimension \(hd\). The amplification is stronger at the partial-path level: every one-change direction-simple path in the \(h\)-fold product misses at least \(h\) directions, by (NS2). If the original coloring is antipodally odd then all its seam counts are equal by the separate uniform-seam identity (SM1) in the matrix Subsection, and Vandermonde's identity reduces (TS2) to the previously proved monochromatic-trace tensorization.
+
+This exhibits two complementary, exact closure obstructions: multiplicativity of the zero/nonzero full-geodesic two-phase trace, and additivity of the deficit for its partial-path relaxation.
+
+
+
+### Exact invariance of the full-path minimum switch number under Cartesian powers
+
+For an arbitrary binary edge coloring \(d\) of \(Q_q\), write \(\mu(d)\) for the minimum number of edge-color changes among full antipodal geodesics of \(Q_q\). Retain \(L_1(d)\), the largest length of a direction-simple path with at most one color change.
+
+**Theorem (switch-minimum product invariance).** For every arbitrary binary edge coloring \(d\) and every \(h\ge1\),
+\[
+\boxed{\mu(d^{\boxtimes h})=\mu(d).}\tag{SP1}
+\]
+More generally, if \(d_1,\ldots,d_h\) are distinct independent factors, then
+\[
+\boxed{\mu(d_1\boxtimes\cdots\boxtimes d_h)\ge\max_j\mu(d_j).}\tag{SP2}
+\]
+
+*Proof.* A full product geodesic uses each direction exactly once. Deleting from its direction order all moves outside a given factor leaves a full antipodal geodesic of that factor. Its positional color word is a subsequence of the product path's word, so its number of switches cannot exceed that of the product. Minimizing proves (SP2) and the lower bound in (SP1).
+
+For the upper bound in (SP1), choose a full factor geodesic whose color word has precisely \(s=\mu(d)\) changes, giving \(s+1\) successive monochromatic runs. In each of the \(h\) independent copies choose the identical geodesic with the identical color sequence. Interleave the direction words **run by run**: first traverse the first run of each copy, then the second run of each copy, and so forth. Independence of factors makes this a full product geodesic, and its concatenated color word has the same \(s\) switches. Hence \(\mu(d^{\boxtimes h})\le s\), completing the proof. \(\square\)
+
+**Counterexample-amplification dichotomy.** If an arbitrary-color one-change counterexample \(d\) exists in dimension \(q\), then \(\mu(d)=s\ge2\). For every \(h\),
+\[
+\boxed{
+\mu(d^{\boxtimes h})=s,\qquad
+hq-L_1(d^{\boxtimes h})\ge h.
+}\tag{SP3}
+\]
+The first equality is (SP1); the second follows from (NS2). Thus the identical Cartesian powers simultaneously have a **bounded** number of unavoidable full-geodesic color changes and a **linear** deficit in their longest one-change partial geodesic.
+
+**Consequence for approximate proof strategies.** Any dimension-uniform bound of the form
+\[
+\boxed{n-L_1(d)\le g(\mu(d))}
+\tag{SP4}
+\]
+with finite \(g(s)\) independent of \(n\), if proved for all arbitrary binary cube edge colorings, would imply the entire Leader--Long one-change geodesic conjecture and hence unrestricted NORI1. Indeed a hypothetical counterexample and its powers violate (SP4) by (SP3). Conversely if the grand conjecture holds, the left side vanishes. Therefore (SP4) is itself grand-theorem equivalent, regardless of how rapidly \(g\) grows.
+
+In particular, an \(O(\sqrt n)\) full-geodesic switch bound, such as the theorem of Hollom (2026), does not **by itself** entail an \(n-o(n)\) one-change partial-path bound through a generic compression inequality depending only on the number of switches. Such a compression theorem would need to exclude the tensor-power obstruction using additional global structure, or equivalently settle the conjecture.
+
+
+
+### Dual approximation from above: shortest one-change antipodal paths
+
+For arbitrary two-edge-colorings \(d\) of \(Q_n\), define \(\ell_1(d)\in\{n,n+2,n+4,\ldots\}\cup\{\infty\}\) to be the minimum length of an antipodal path with at most one edge-color change; assign \(\infty\) if no such path exists. The color word may consist of one or two monochromatic runs. The conjectured full one-change geodesic is equivalent to \(\ell_1(d)=n\), since any antipodal path of length \(n\) is a full geodesic.
+
+**Theorem (shortest one-change antipodal path tensorization).** For every arbitrary edge coloring \(d\) and \(h\ge1\),
+\[
+\boxed{\ell_1(d^{\boxtimes h})=h\,\ell_1(d),}\tag{AP1}
+\]
+with the convention \(h\infty=\infty\). Hence unrestricted NORI1 is equivalent to the following *approximation from above*: there exists a uniform function \(f(n)=o(n)\) such that every arbitrary two-edge-coloring of \(Q_n\) admits an antipodal path of at most one color change and length at most \(n+f(n)\). The analogous assertion with \(f(n)=C\), a fixed constant, is also equivalent.
+
+*Proof.* Let \(P\) be a one-change antipodal walk in the product \(Q_{hd}\). Its projection to each \(d\)-dimensional factor is an antipodal walk whose color word is a subsequence of the word of \(P\), and so has at most one change. Erasing any closed subwalk preserves its endpoints and cannot increase the number of color changes, since deletion of a contiguous block from a binary word does not increase its number of changes. Thus each factor projection has at least \(\ell_1(d)\) steps, giving \(|P|\ge h\ell_1(d)\). If \(\ell_1(d)=\infty\), this proves the product likewise admits no one-change antipodal path.
+
+Conversely, choose a shortest one-change antipodal path \(P_d\) in \(Q_d\), with color word \(0^a1^b\) after optional reversal and color renaming (either run may be empty). In all \(h\) factors follow its first monochromatic run, sequentially, then follow its second monochromatic run in all factors, sequentially. This is a simple antipodal path of the product: at every step at least one factor advances along its own simple path, and factor progress is monotone. It has \(h(a+b)=h\ell_1(d)\) edges and at most one change, proving the reverse inequality and (AP1).
+
+If NORI1 holds, then by the earlier exact equivalence the arbitrary-color one-change full geodesic theorem holds, so \(\ell_1(d)=n\) for every \(d\), establishing either asymptotic assertion. Conversely suppose an arbitrary-color \(B_d\) counterexample exists. Either \(\ell_1(d)=\infty\), violating the bound immediately, or parity of antipodal path lengths forces \(\ell_1(d)\ge d+2\). By (AP1), its \(h\)-fold power has \(\ell_1(d^{\boxtimes h})\ge h(d+2)=hd+2h\), giving a fixed positive fractional excess \(2/d\) along dimensions \(hd\), contrary to any uniform \(f(n)=o(n)\) or fixed \(C\). By the already established all-dimensional equivalence of \(B_d\) and NORI1, the assertion follows. \(\square\)
+
+**Two-sided near-geodesic closure targets.** The dimension-uniform NORI1 problem is now equivalently expressible by either of two sublinear approximations to a one-change geodesic for *arbitrary* two-edge-colorings:
+
+- **From below:** a direction-simple path with at most one change of length \(n-o(n)\), by (NS1).
+- **From above:** an antipodal path with at most one change of length \(n+o(n)\), by (AP1).
+
+Both implications back to full closure are proved by Cartesian-power amplification. The second formulation asks for quantitative near-geodesicity inside the original Feder--Subi one-change antipodal *path* problem, which remains stronger than the settled unrestricted original Norine monochromatic-antipodal-*path* result. In particular the known existence of a monochromatic antipodal path for odd colorings does not establish (AP1)'s approximating hypothesis for arbitrary colorings. These statements provide global proof targets rather than independent proofs of their hypotheses.

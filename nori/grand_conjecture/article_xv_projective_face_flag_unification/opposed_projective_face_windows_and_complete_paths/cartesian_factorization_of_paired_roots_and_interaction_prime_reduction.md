@@ -1183,3 +1183,297 @@ Equivalently, no proper nonempty source-closed direction set can equal the suppo
 *Proof.* By the quadratic-moment period theorem, \(u\in\ker M\) implies \(f_k(x+u)=f_k(x)\) for every \(k\) and \(x\). If there were no arc from \(T=[n]\setminus S\) into \(S\), the color function of every \(S\)-direction edge would be independent of all \(T\)-bits. Flipping all bits of \(S\) is precisely translation by \(u\), and preserves every \(T\)-direction edge color. Thus (PB1) would hold and the periodic-block restoration theorem would contradict minimality. \(\square\)
 
 This condition applies to nonlinear period words of arbitrary support, including the twelve-point flat-free example above: a complete projective subgeometry is unnecessary. It couples the binary-matroid moment kernel to the condensation structure of the directed influence graph. A future proof through this route would need either to produce a period word whose support is source-closed, or to show that the forced incoming arcs for every proper period support cannot coexist in a minimal obstruction.
+
+
+## Strongly connected nonlinear influence with sparse favorable roots
+
+**Theorem.** For every \(n=2m\ge6\), pair directions \(a_t=2t,b_t=2t+1\) and define an ordinary cube-edge coloring by
+\[
+f_{b_t}(x)=x_{a_t},\qquad
+f_{a_t}(x)=x_{b_t}+\prod_{j\ne a_t}(1+x_j)
+\quad\text{over }\mathbb F_2. \tag{SC1}
+\]
+Its full directed influence graph (arrow \(j\to i\) when \(f_i\) reads bit \(j\)) is strongly connected, yet
+\[
+\boxed{A_0(f)=\{x:(x_{a_t},x_{b_t})\ne(1,1)\ \forall t\},\quad
+|A_0(f)|=3^m,\quad |P(f)|=2^m.} \tag{SC2}
+\]
+Consequently even one strongly connected influence component may have favorable-root density \((3/4)^m\) and paired-root density \((1/2)^m\), both tending to zero.
+
+*Proof.* Compare (SC1) with the Cartesian product \(h_{a_t}(x)=x_{b_t},h_{b_t}(x)=x_{a_t}\) of reciprocal-reader squares. The sole alterations are that the \(m\) even-direction edges incident with \(0^n\) change from color zero to one.
+
+Every root with pairs in \(\{00,01,10\}\) remains rising-favorable. For every \(00\) pair traverse \(b_t\) during the initial all-zero phase, and \(a_t\) later in the all-one phase. For every \(01\) pair traverse \(a_t,b_t\) successively, both color one. For every \(10\) pair traverse \(b_t,a_t\) successively, again both color one. Shuffle these within-pair steps to put all zero edges first. Every traversed even edge then sees \(x_{b_t}=1\), so its exceptional product term is zero. This constructs the required path.
+
+Conversely suppose a rising full path begins at a root containing a pair \(11\). Within that pair the first step has color one, and the second would have color zero unless it is an altered even edge. Thus its odd step must precede its even step, and the even step must be the altered edge **entering** vertex \(0^n\). At most one \(11\) pair can be repaired in this way, because the geodesic visits \(0^n\) at most once.
+
+At the moment of arrival at \(0^n\), consider any different pair. It cannot start at \(11\) by the preceding argument. Starting pattern \(10\) leaves its odd edge untraversed with color zero, forbidden after the previously traversed color-one edge. Starting \(00\) leaves both directions untraversed, and its first remaining edge is color zero unless it is the altered even edge immediately **leaving** \(0^n\). Starting \(01\) leaves its even edge untraversed, also of color zero unless it is the same immediately outgoing altered edge. Hence each of the other \(m-1\ge2\) pairs would require the single outgoing edge of \(0^n\), impossible. Thus no rising root contains \(11\), proving the first formula of (SC2).
+
+The function \(f_{a_t}\) reads every other bit: for a bit other than \(b_t\), vary that bit with all other inputs zero; for \(b_t\), set a third bit to one to suppress the product and expose its linear dependence. Each \(f_{b_t}\) reads \(x_{a_t}\). Therefore every direction can reach an even direction, and the even directions reach every vertex through their odd partners: the directed influence graph is strongly connected.
+
+Reversing a full path gives \(A_1(f)=\overline{A_0(f)}\). Hence paired roots require each two-bit block to be neither \(00\) nor \(11\), leaving precisely \(01,10\) and giving \(|P(f)|=2^m\). \(\square\)
+
+**Implication.** This example does not refute NORI1: \(f\) is an ordinary facet coloring with many paired roots. It refutes a proposed dimension-independent density route even after imposing strong connectivity of the *directed* influence core. Strong-connectivity reductions must retain root-compatibility data rather than infer majority from irreducibility.
+
+
+## Antipodally odd strongly connected cubes with sparse monochromatic starting roots
+
+The preceding ordinary-facet construction extends to the original NORI1 class, where sparsity concerns starting vertices of monochromatic antipodal geodesics themselves.
+
+**Theorem.** For each \(m\ge3\), put \(n=2m\), pair directions \(a_t=2t,b_t=2t+1\), and adjoin a bridge direction \(h=n\). Write vertices of \(Q_{n+1}\) as \((y,s)\in Q_n\times\mathbb F_2\). Define
+\[
+\begin{aligned}
+c_{b_t}(y,s)&=y_{a_t},\\
+c_{a_t}(y,0)&=y_{b_t}+\prod_{j\ne a_t}(1+y_j),\\
+c_{a_t}(y,1)&=y_{b_t}+\prod_{j\ne a_t}y_j,\\
+c_h(y,s)&=y_{a_0}.
+\end{aligned} \tag{SO1}
+\]
+All operations in the color rules are over \(\mathbb F_2\). This is an antipodally odd coloring of undirected edges of \(Q_{2m+1}\), and its directed influence graph is strongly connected. The set \(M(c)\) of starting vertices of monochromatic dimension-simple antipodal geodesics is
+\[
+\boxed{M(c)=
+\{(y,s): (y_{a_t},y_{b_t})\in\{01,10\}
+\text{ for every }t,\quad s\in\{0,1\}\}.} \tag{SO2}
+\]
+In particular
+\[
+\boxed{|M(c)|=2^{m+1},\qquad
+|M(c)|/2^{2m+1}=2^{-m}.} \tag{SO3}
+\]
+
+*Proof.* For any lower direction \(i\), formula (SO1) is independent of the bit \(y_i\); the bridge color is independent of \(s\). Antipodal complementation sends \(s\) to \(1-s\) and \(y\) to \(\bar y\). It flips all odd-direction colors, exchanges the lower product \(\prod_{j\ne a_t}(1+y_j)\) with the upper product \(\prod_{j\ne a_t}y_j\), and flips \(c_h=y_{a_0}\). Hence the coloring is antipodally odd.
+
+Compare with the base coloring
+\[
+d_{a_t}(y,s)=y_{b_t},\quad
+d_{b_t}(y,s)=y_{a_t},\quad d_h(y,s)=y_{a_0}.
+\]
+The only changes from \(d\) are the even-direction edges incident with \(y=0^n\) in the lower bridge facet, whose colors switch \(0\to1\), and the even-direction edges incident with \(y=1^n\) in the upper bridge facet, whose colors switch \(1\to0\). These are the two *exceptional stars*.
+
+A monochromatic zero path cannot traverse a changed lower-star edge, which has color one. Suppose it uses a changed upper-star edge. Its lower-bit projection visits \(1^n\) in the upper facet. At most two edges of its full geodesic are incident with this vertex, so among the \(m\ge3\) direction pairs at least one pair uses no exceptional edge. In that unaffected pair both traversal colors must be zero under the reciprocal-reader base rules. The initial pair must therefore be \(01\) or \(10\), and its two-step trajectory passes through \(00\) rather than \(11\). Thus this pair cannot have both bits one at the upper corner, a contradiction.
+
+Likewise a monochromatic one path cannot traverse a changed upper-star edge of color zero. If it used a changed lower-star edge, it would visit \(0^n\) in the lower facet. Some direction pair would be unaffected by the at most two incident edges. For the unaffected pair, both base traversal colors are one only if its initial bits are \(01\) or \(10\); its two-step trajectory then passes through \(11\), never \(00\). This contradicts visiting the lower corner. Hence **no monochromatic path uses any exceptional edge**.
+
+Under the base reciprocal-reader rules, a two-direction block admits a monochromatic traversal iff its initial bits are \(01\) or \(10\). Since every full path traverses both directions of every block, the preceding paragraph proves the necessary part of (SO2).
+
+Conversely let all starting blocks be \(01\) or \(10\), with either initial bridge bit \(s\). Construct a color-zero full path as follows. If \(y_{a_0}=0\), traverse the bridge first. If \(y_{a_0}=1\), traverse \(a_0\) first, then the bridge. The bridge is crossed when \(y_{a_0}=0\), hence with color zero. Complete every block with a color-zero reciprocal-reader order: for \(01\) traverse odd then even, and for \(10\) traverse even then odd, respecting the previously traversed \(a_0\) when applicable. Process other blocks one after another. Throughout, at least one block not currently being traversed has one bit equal to one, while no block ever has both bits one. Consequently the path visits neither \(0^n\) nor \(1^n\) during a traversal of a lower-direction edge, so it uses no exceptional edge and remains monochromatic zero. This proves sufficiency.
+
+For strong connectivity, the lower facet already has the strongly connected directed influence graph of (SC1). These dependencies persist in (SO1). The bridge rule gives an arrow \(a_0\to h\); the different lower and upper even-direction color functions give arrows \(h\to a_t\) for every \(t\). Thus \(h\) belongs to the same strongly connected component as all lower directions. Finally the \(m\) independent choices \(01,10\) and the two bridge bits give (SO3). \(\square\)
+
+**Consequence for closure methods.** In an antipodally odd NORI1 instance, even a single strongly connected directed influence component can admit monochromatic geodesics from an exponentially small proportion of vertices. The conjecture concerns existence, not root density. A universal local-to-global proof based on majority of starting roots cannot be rescued by requiring strong connectivity or antipodal oddness. This is an explicit positive NORI1 family, not a counterexample.
+
+
+## Two-fold path packing and robust odd-coloring closure
+
+Fix \(m\ge2\), \(n=2m+1\), with direction pairs \(a_t=2t,b_t=2t+1\), \(0\le t<m\), and an additional direction \(h=2m\). Define the antipodally odd edge coloring
+\[
+d_{a_t}(x)=x_{b_t},\quad d_{b_t}(x)=x_{a_t},
+\quad d_h(x)=x_{a_0}. \tag{RP1}
+\]
+Select roots whose paired bits each equal \(01\) or \(10\), allowing either initial \(h\)-bit. There are \(2^{m+1}\) roots. At each such root \(x\), choose the following direction order \(P_x\). In block zero, traverse \(h,b_0,a_0\) if its starting bits are \(01\), or \(a_0,h,b_0\) if they are \(10\). Subsequently, for \(t=1,\ldots,m-1\), traverse \(b_t,a_t\) if block \(t\) starts \(01\), or \(a_t,b_t\) if it starts \(10\). Direct substitution in (RP1) shows that every \(P_x\) is an all-zero full antipodal geodesic.
+
+**Theorem (at most two paths per antipodal edge pair).** Every antipodal pair of undirected cube edges occurs in at most two paths of the family \(\{P_x\}\).
+
+*Proof.* Because \(d\) is antipodally odd and the selected paths are all-zero, only one member of an antipodal edge pair can occur in the family.
+
+Fix an undirected edge in a lower direction belonging to block \(t\). At its traversal, all blocks before \(t\) have finished and all blocks after \(t\) remain untouched. The bit state of every other block therefore recovers that block's initial \(01/10\) pattern uniquely. If \(t>0\), the bridge has already been crossed, so its current bit recovers the initial bridge bit. If \(t=0\), its bridge-crossing status is determined by the initial pattern of block zero, so the initial bridge bit is again uniquely determined after choosing that pattern. The active block \(t\) has only two possible initial patterns, proving that the edge appears in at most two selected paths.
+
+For a bridge edge, the nonzero-index blocks have not yet been traversed, and their initial patterns are read directly. At the bridge traversal, block zero is in state \(01\) if it began \(01\), or state \(00\) if it began \(10\), recovering its starting pattern. Only the starting bridge bit may vary, and there are two choices. Hence every edge lies on at most two selected paths. \(\square\)
+
+**Corollary (exponential tolerance to arbitrary recoloring).** Suppose an odd edge coloring \(c\) differs from \(d\) on at most \(t\) antipodal edge pairs, with no restriction on the positions, directions or dependencies of those changes. Then at least
+\[
+\boxed{\max\{0,2^{m+1}-2t\}} \tag{RP2}
+\]
+of the selected rooted geodesics are still monochromatic zero in \(c\). In particular, every such \(c\) with \(t<2^m\) satisfies NORI1.
+
+*Proof.* Each flipped antipodal edge pair spoils at most two selected paths. The union of spoiled paths has size at most \(2t\), so the remaining paths retain their original monochromatic words. \(\square\)
+
+**Scope.** This gives a positive dimension-uniform class closed under exponentially many arbitrary nonlinear antipodal edge-pair recolorings, without assuming acyclic or bounded-feedback influence graphs. It is a certificate-packing theorem for a restricted but robust neighborhood of the reader-pair coloring, not an unrestricted NORI1 proof.
+
+
+**Proposition (sharpness for the selected certificate family).** The minimum number of antipodal edge pairs meeting every selected canonical path \(P_x\) in (RP1) is precisely \(2^m\).
+
+*Proof.* By the two-fold incidence theorem, fewer than \(2^m\) edge pairs can meet at most \(2t<2^{m+1}\) selected paths, so the transversal number is at least \(2^m\). Every selected path traverses one bridge edge. The bridge crossings have lower-bit patterns consisting of \(01\) or \(00\) in block zero and \(01\) or \(10\) in every other block, so there are \(2^m\) distinct bridge-edge antipodal pairs used by the family. Their union meets every selected path. Thus the lower bound is attained. \(\square\)
+
+This sharpness refers to interception of the **fixed canonical path family**, not to the minimum number of edge-pair recolorings needed to eliminate *all* monochromatic paths of the original coloring. In general those are different transversal problems.
+
+
+## Even-dimensional extension and a global distance bound for hypothetical obstructions
+
+**Theorem (paired-reader error tolerance in every dimension).** Let \(n\ge2\) and \(m=\lfloor n/2\rfloor\). For even \(n=2m\), define the antipodally odd reciprocal-reader coloring
+\[
+d_{2t}(x)=x_{2t+1},\qquad d_{2t+1}(x)=x_{2t},
+\quad 0\le t<m. \tag{RE1}
+\]
+For each of the \(2^m\) starting roots whose paired bits are all \(01\) or \(10\), choose the full path that visits the blocks in order, traversing their odd direction before their even direction if the block starts \(01\), and their even direction before their odd direction if it starts \(10\). Every selected path is all-zero.
+
+Every antipodal edge pair occurs in at most two selected paths. Consequently changing the colors on any \(t\) antipodal edge pairs leaves at least \(\max\{0,2^m-2t\}\) selected monochromatic paths; in particular \(t<2^{m-1}\) preserves NORI1.
+
+*Proof.* A lower-direction edge in block \(j\) occurs after every earlier block was fully toggled and before every later block was touched. Its incident bit values recover the initial patterns in all the other blocks. For its own block, either of the two initial patterns \(01,10\) is possible, and no third pattern is admitted. Thus the edge lies on at most two selected paths. Antipodal oddness ensures its antipodal mate, which is color one, lies on none. The preceding path-packing union bound proves the assertion. \(\square\)
+
+The odd-dimensional case \(n=2m+1\) was proved above using one extra bridge reader, with \(2^{m+1}\) selected paths and robustness for \(t<2^m\).
+
+**Corollary (uniform necessary Hamming separation).** In every dimension \(n\ge2\), let \(\mathscr D_n\) contain the relevant paired-reader baseline(s) above, together with all their images under cube automorphisms (bit translations and permutations of dimensions) and optional global exchange of edge colors. Define \(d_{\rm odd}(c,d)\) as the number of antipodal pairs of undirected edges on which two antipodally odd colorings differ. If a bad antipodally odd coloring \(c\) of \(Q_n\) exists, then
+\[
+\boxed{\min_{d\in\mathscr D_n}d_{\rm odd}(c,d)\ge
+2^{\lceil n/2\rceil-1}.} \tag{RE2}
+\]
+Indeed every coloring closer than this to any one of these templates retains one of its explicit monochromatic path certificates. The cube automorphisms and global color exchange preserve the oddness condition, path existence and antipodal edge-pair distance.
+
+**Limitation.** The inequality is a universal necessary property of any bad coloring in odd or even dimension, not a contradiction: the space of legal colorings is much larger than the union of these Hamming balls. It supplies a distance-from-tractable-templates parameter for future minimal-counterexample extremization. It does not support an assertion that a bad coloring must be close to some template.
+
+
+**Low-dimensional endpoint.** The odd-dimensional canonical bridge construction and two-fold incidence proof also hold for \(m=1\), where there is one reciprocal reader pair and one bridge direction. Its four selected roots give four zero-colored paths, and each antipodal edge pair meets at most two of them. Thus the bound (RE2) includes \(n=3\); the even construction includes \(n=2\). These endpoint verifications require no additional dimension hypothesis.
+
+
+## Optimal edge-disjoint monochromatic geodesic packings in even dimension
+
+The earlier reciprocal-reader packing has edge-pair multiplicity two and yields radius roughly \(2^{n/2}\). A different construction gives the largest possible disjoint certificate family in **every even dimension**, improving the guaranteed legal-coloring perturbation radius to order \(2^n\). Its argument is a direct partition of cube edges, without any auxiliary geometry.
+
+**Theorem (fixed-order antipodal geodesic decomposition).** Let \(n\ge2\) be even and fix a direction permutation \(\pi\). For every even-Hamming-parity root \(x\), let \(P_x^\pi\) be the rooted full cube geodesic traversing the directions in order \(\pi\). Then the \(2^{n-1}\) paths \(P_x^\pi\) partition \(E(Q_n)\). Antipodal complementation sends \(P_x^\pi\) onto \(P_{\bar x}^\pi\), and because \(n\) is even, both roots have even parity.
+
+*Proof.* Fix an edge in direction \(i\), and let \(S_i\) be the set of directions preceding \(i\) in \(\pi\). The two potential roots from which the given edge is traversed at step \(i\) are the endpoints of that edge with the bits of \(S_i\) toggled. They differ in the single bit \(i\), so precisely one has even parity. Thus the paths partition the edges. Complementing all vertex bits transforms a \(\pi\)-ordered path rooted at \(x\) into a \(\pi\)-ordered path rooted at \(\bar x\). \(\square\)
+
+**Theorem (optimal zero-path packing with antipodal oddness).** Let \(g\) be any Boolean labeling of the even-parity roots obeying \(g(\bar x)=1-g(x)\). For each undirected edge \(e\), let \(x(e)\) be its unique even-parity root in the preceding decomposition and put
+\[
+c_g(e)=g(x(e)). \tag{OP1}
+\]
+Then \(c_g(\bar e)=1-c_g(e)\), and precisely \(2^{n-2}\) of the paths \(P_x^\pi\) are monochromatic zero. These zero paths are edge-disjoint and use no two edges from the same antipodal edge pair. Hence changing colors on any \(t\) antipodal edge pairs preserves at least
+\[
+\boxed{\max\{0,2^{n-2}-t\}} \tag{OP2}
+\]
+of the chosen zero geodesics. The size \(2^{n-2}\) is the largest possible number of pairwise edge-disjoint zero full geodesics in any antipodally odd coloring of \(Q_n\).
+
+*Proof.* Antipodality follows because \(x(\bar e)=\overline{x(e)}\). Each \(P_x^\pi\) has constant color \(g(x)\), and the involution on even roots exchanges the two labels, giving precisely \(2^{n-2}\) zero paths. Each antipodal edge pair has one zero and one one-colored edge, and the partition uses each zero edge once. A recoloring of one antipodal edge pair therefore spoils at most one selected zero path, proving (OP2). Finally any odd edge coloring has precisely \(n2^{n-2}\) zero edges, whereas each edge-disjoint monochromatic zero full geodesic consumes \(n\) of them. Thus at most \(2^{n-2}\) such paths exist. \(\square\)
+
+**A simple explicit baseline.** With \(\pi=(0,\ldots,n-1)\), choose \(g(x)=x_0\) on even-parity roots. Formula (OP1) then becomes
+\[
+\boxed{c_0(x)=\sum_{j=1}^{n-1}x_j,\qquad
+c_i(x)=1+x_0\ \ (1\le i<n),} \tag{OP3}
+\]
+where the first sum and all subsequent additions are modulo two. All even-parity starting roots with \(x_0=0\) follow the order \(\pi\) along a monochromatic zero path; the paths partition the zero-colored edges.
+
+**Odd-dimensional extension.** For odd \(n\ge3\), let \(d=n-1\) be even and use the baseline (OP3) on both horizontal facets of \(Q_d\times Q_1\), independent of the added bridge bit \(s\). Color each bridge edge above \(y\) by \(y_0\). This full coloring is antipodally odd: the horizontal baseline is odd under complementing \(y\), and the bridge value \(y_0\) is odd as well. For each even-parity lower root \(y\) with \(y_0=0\), start at \((y,0)\), cross the bridge first (color zero), and then traverse all \(d\) horizontal directions in fixed order (all zero). These \(2^{n-3}\) monochromatic full paths are pairwise edge-disjoint and avoid antipodal pairs of each other's edges. Accordingly, arbitrary recoloring on \(t<2^{n-3}\) antipodal edge pairs preserves a monochromatic geodesic.
+
+**Odd-dimensional parity obstruction to perfect edge packing.** Suppose \(n\) is odd and \(k\) monochromatic-zero antipodal geodesics are pairwise edge-disjoint. Their antipodal images are \(k\) edge-disjoint one-colored geodesics and are edge-disjoint from the zero paths. The union therefore consists of \(2k\) edge-disjoint full geodesics. At each cube vertex, every zero path with that vertex as endpoint has its antipodal image also ending there; endpoint-degree contributions occur in pairs, whereas every internal path visit contributes two. Thus the degree of this union at every vertex is even. Since \(\deg_{Q_n}(v)=n\) is odd, at least one edge incident with each vertex remains unused. Counting degrees yields
+\[
+2kn\le (n-1)2^{n-1},
+\quad\text{so}\quad
+\boxed{k\le \left\lfloor\frac{n-1}{n}2^{n-2}\right\rfloor.} \tag{OP4}
+\]
+In particular the even-dimensional perfect packing of \(2^{n-2}\) zero paths is impossible in odd dimension. No claim that the odd construction attains the best possible bound is made.
+
+**Necessary distance from tractable templates.** Let \(\mathscr D_n\) contain these even-dimensional fixed-order partition colorings for all \(\pi,g\), and for odd dimension the corresponding bridge extensions and cube-symmetry copies. If a bad antipodally odd coloring \(c\) of \(Q_n\) exists, then its antipodal-edge-pair Hamming distance from every member \(d\in\mathscr D_n\) obeys
+\[
+\boxed{
+d_{\rm odd}(c,d)\ge
+\begin{cases}
+2^{n-2},&n\text{ even},\\
+2^{n-3},&n\text{ odd}.
+\end{cases}} \tag{OP5}
+\]
+This strengthens the previously published reciprocal-reader radius for all sufficiently large dimensions. It is only a necessary exclusion region, not a proof that arbitrary colorings are close to any of these templates.
+
+
+**Partition certificate identity.** In (OP1), every independent antipodal edge-pair variable has one zero-colored edge. The \(2^{n-2}\) selected zero geodesics partition these variables into disjoint sets \(B_x\), each of size \(n\). For any family \(F\) of flipped edge pairs, the number of selected surviving monochromatic-zero geodesics is
+\[
+2^{n-2}-|\{x:B_x\cap F\ne\varnothing\}|. \tag{OP6}
+\]
+Thus hitting every member of this selected family needs \(2^{n-2}\) flips. This does not imply that every monochromatic path of the perturbed coloring is destroyed.
+
+
+### Complete nonlinear influence with exponentially sparse antipodal roots
+
+**Theorem (component classification and sharp root support for an all-to-all nonlinear family).** For each integer \(k\ge3\), there is an antipodally odd coloring \(c\) of the undirected edges of \(Q_{2k}\) with the following properties.
+
+1. Every direction function is nonlinear, and for each pair of distinct directions \(a,b\), its derivative \(\partial_b c_a\) is nonzero somewhere. Thus the directed influence graph is the complete loopless digraph.
+2. Its red spanning subgraph has \(2^k-k+1\) connected components, with the component descriptions below.
+3. The set \(S(c)\) of roots joined to their antipodes by a monochromatic path, with no path-length restriction, is exactly
+\[
+S(c)=\bigl\{x:\text{all dimension pairs are }01\text{ or }10\bigr\}
+\cup
+\bigl\{x:\text{one pair is }00,\text{ one distinct pair is }11,
+\text{ and all others are }01\text{ or }10\bigr\}.
+\]
+Each root in this set admits a monochromatic **full antipodal geodesic of each color**. In particular,
+\[
+\boxed{|S(c)|=2^k+k(k-1)2^{k-2},\quad
+\frac{|S(c)|}{2^{2k}}=\left(1+\frac{k(k-1)}4\right)2^{-k}.}
+\]
+There is therefore no positive uniform lower bound on the proportion of roots admitting any monochromatic antipodal path, even within legal colorings whose directed influence graph is complete and whose every direction rule is nonlinear.
+
+*Construction and legality.* Partition the dimensions into \(k\) ordered pairs. Put
+\[
+z_j=x_{2j-1}\oplus x_{2j},
+\qquad
+F_j(x)=\prod_{\ell\ne j} z_\ell.
+\]
+Define
+\[
+c_{2j-1}(x)=x_{2j}\oplus F_j(x),\qquad
+c_{2j}(x)=x_{2j-1}\oplus F_j(x).
+\tag{SR1}
+\]
+Each function is independent of its own dimension bit. Every \(z_\ell\) is invariant under complementing all bits; the partner bit in each expression toggles under complementation. Hence the coloring is antipodally odd. If \(k\ge3\), the products \(F_j\) have Boolean degree \(k-1\ge2\), so every direction rule is nonlinear. The partner-bit derivative is one, and changing either bit in any other pair changes \(F_j\) whenever all the remaining \(z_\ell\) equal one. Thus every off-diagonal derivative is nonzero.
+
+*Red component classification.* Regard each two-bit pair as one of four states \(A=00\), \(B=11\), \(U=01\), \(V=10\); call \(U,V\) odd. Since \(F_j=1\) precisely when all other pairs are odd, the red edges in pair \(j\), with all other pairs fixed, are exactly
+\[
+\begin{array}{c|c}
+ F_j=0&A\leftrightarrow U,\quad A\leftrightarrow V\\
+ F_j=1&B\leftrightarrow U,\quad B\leftrightarrow V.
+\end{array}
+\tag{SR2}
+\]
+There are three types of red components:
+
+- \(C_-\): configurations containing no \(B\) and at least one \(A\). A final remaining \(A\) cannot change, since then \(F_j=1\); no \(B\) can be created while an \(A\) remains. Using one \(A\) as an anchor, any other pair can be changed among \(A,U,V\), and the anchor can be moved. Thus \(C_-\) is connected.
+- \(C_+\): configurations with all pairs odd, together with configurations containing exactly one \(B\), with any number of \(A\)'s. From a state with a single \(B\), change every \(A\) to an odd pair using \(F_j=0\); then change the last \(B\) to odd using \(F_j=1\). Every all-odd configuration is connected to every other by the two-edge red move \(U\to B\to V\) (or its reverse), using one pair at a time. Every such configuration is therefore in one component, and transitions (SR2) preserve the displayed set.
+- For every fixed \(J\subseteq[k]\) with \(|J|\ge2\), \(C_J\): the configurations whose set of \(B\)-pairs is exactly \(J\). Each \(B\) is frozen, as another \(B\) makes \(F_j=0\). Every remaining pair can move among \(A,U,V\) using \(F_j=0\), so \(C_J\) is a connected component.
+
+These sets partition the entire cube, and (SR2) shows no red edge joins distinct listed sets. There are \(1+1+(2^k-k-1)=2^k-k+1\) components.
+
+*Antipodal roots.* Vertex antipodality interchanges \(A\) and \(B\), and interchanges \(U\) and \(V\). No vertex of \(C_-\) has its antipode in \(C_-\). In \(C_J\), \(|J|\ge2\), the fixed \(B\)-indices of any vertex and of its antipode are disjoint, so its antipode belongs to another red component. For \(x\in C_+\), the antipode also belongs to \(C_+\) precisely when either all pairs are odd or there is one \(A\) and one \(B\). This proves the asserted root set for red connectivity. In every legal coloring, antipodal reflection followed by path reversal interchanges red and blue paths with the same antipodal endpoints, so the blue and red antipodal root sets coincide.
+
+*Full-geodesic witnesses.* If all pairs are odd, in each pair take the red two-edge path through \(B\), interchanging \(U\) and \(V\); the other pairs stay odd. Concatenation traverses every dimension once and joins the root to its antipode. If \(i\) is the unique \(A\)-pair and \(j\ne i\) the unique \(B\)-pair, first change \(A_i\) to odd (\(F_i=0\) because of \(B_j\)), then change \(B_j\) to odd (\(F_j=1\)). Now all pairs are odd. Traverse each other odd pair through \(B\) as above, reversing it in two red steps. Next change the odd pair \(i\) to \(B_i\) (\(F_i=1\)), then the odd pair \(j\) to \(A_j\) (\(F_j=0\) because of \(B_i\)). Every dimension has been traversed once, every step was red, and each pair has become its antipode. Antipodal reflection and reversal supply a blue full geodesic from the same root.
+
+There are \(2^k\) all-odd roots, and \(k(k-1)2^{k-2}\) roots having one \(A\), one \(B\) and otherwise odd pairs, giving the count.
+
+*Interpretation.* This family is maximally interacting and nonlinear. Its favorable-root density is exponentially small even for antipodal paths allowed to repeat dimensions. Consequently root-density or local-influence expansion arguments require assumptions stronger than directed strong connectivity and nonlinearity. The theorem supplies an all-dimensional obstruction to such proposed closure mechanisms; it does not refute unrestricted NORI1.
+
+
+**Corollary (perfectly balanced, nonlinear, connected colorings with exponentially sparse antipodal roots).** Let \(c^{(k)}\) be the \(2k\)-dimensional family defined by (SR1), for \(k\ge3\). Form the complementary paired lift \(B(c^{(k)})\) on \(Q_{4k}\) with edge rules
+\[
+B_i(x,y)=c^{(k)}_i(x),\qquad
+B_{2k+i}(x,y)=1\oplus c^{(k)}_i(x)\quad(1\le i\le2k).
+\]
+Then this coloring is legal and has precisely \(2k\) incident edges of each color at every vertex. All \(4k\) direction functions are nonlinear, and its undirected direction-interaction graph is connected. Its root set supporting a monochromatic antipodal path of either color, with arbitrary permitted path length, is
+\[
+\boxed{S(B(c^{(k)}))=S(c^{(k)})\times Q_{2k}.}
+\]
+Every favorable root supports a monochromatic full antipodal geodesic of both colors. Its favorable-root density is
+\[
+\boxed{\left(1+\frac{k(k-1)}4\right)2^{-k}
+=\exp(-\Omega(4k)).}
+\]
+
+*Proof.* Each paired original/dummy direction gives one edge of each color at each vertex, and antipodal oddness follows from that of \(c^{(k)}\). Every rule is a copy or complement of a nonlinear rule. All original directions interact pairwise by the preceding theorem; each dummy direction depends nontrivially on every original direction other than its matched one, so the undirected interaction graph is connected. An antipodal monochromatic path in the lift projects to one in \(c^{(k)}\). Conversely, for any monochromatic antipodal path in \(c^{(k)}\), each dummy direction can be traversed once at the beginning or end, choosing the endpoint with the requested color, as its paired dummy rule has complementary values at the antipodal endpoints of the original path. This proves the displayed root-set identity. For roots with a full original geodesic, the same insertion produces a full geodesic in the doubled cube. Divide the favorable-root count in the preceding theorem by the number of original roots; doubling multiplies both numerator and denominator by \(2^{2k}\). \(\square\)
+
+This supplies exponential sparsity even under vertex balance, pairwise complementary directions, nonlinear rules in every direction, and undirected interaction connectedness simultaneously. The directed feedback core need not contain the dummy directions, which are sinks; thus the conclusion makes no assertion of strong connectivity for the directed influence graph.
+
+
+### Orbit-disjoint geodesic packing and edge-critical boundary reduction
+
+An antipodal edge orbit is a pair \(\{e,\bar e\}\) of undirected edges. A legal edge-pair flip reverses both colors in one orbit. Call a successful legal coloring *edge-critical* if some such single flip produces a coloring with no monochromatic full antipodal geodesic. Two full geodesics are *orbit-disjoint* when no edge of one is equal or antipodal to an edge of the other. Paths of a common color that are orbit-disjoint form independently persistent certificates under edge-pair flips.
+
+**Theorem (orbit-disjoint product block paths).** Suppose \(c^{(1)},\ldots,c^{(r)}\), \(r\ge2\), are legal successful colorings of cubes \(Q_{n_j}\), \(n_j\ge2\). Their independent Cartesian product has \(r\) pairwise orbit-disjoint monochromatic full antipodal geodesics, all starting at one root and all ending at its antipode.
+
+*Proof.* Antipodal translation allows the choice of one red full geodesic \(P_j\) from \(a_j\) to \(\bar a_j\) in each factor. Concatenate these blocks in the \(r\) cyclic orders of the factors. The resulting red geodesics share root \(a=(a_1,\ldots,a_r)\). In any fixed factor \(j\), the set of other factor blocks already completed when block \(j\) is traversed is distinct among the cyclic orders; hence each edge of \(P_j\) is traversed at a different tuple of spectator endpoints. Two such product edges could be antipodal only if their factor-\(j\) edges were antipodal, but both have the same factor edge of \(P_j\), which is different from its antipodal edge since \(n_j\ge2\). Different factor directions cannot share an edge orbit. Therefore the \(r\) geodesics are pairwise orbit-disjoint. \(\square\)
+
+**Theorem (spectator parity-code packing).** Suppose a legal successful coloring \(c\) of \(Q_m\), \(m\ge2\), is extended by \(k\ge1\) spectator directions whose rules are odd under antipodal reflection of the original bits, and are independent of all spectator bits. The extension contains \(2^{k-1}\) pairwise orbit-disjoint monochromatic full antipodal geodesics of one color.
+
+*Proof.* Take a red original geodesic \(P\) from \(x\) to \(\bar x\), and denote the \(k\) spectator rules by \(g_j(x)\). For every starting spectator vector \(y\) of even Hamming parity, traverse each direction \(j\) with \(g_j(x)=0\) before \(P\), followed by \(P\), followed by each remaining spectator direction at \(\bar x\). These are red full antipodal geodesics. Different even-parity vectors differ in at least two spectator bits. Their original-direction edges belong to distinct antipodal edge orbits because they use the same original edge in different spectator layers and an original edge is different from its antipodal mate. For each fixed spectator direction \(j\), the paths differ in a spectator bit other than \(j\), so those edges also belong to different edge orbits. \(\square\)
+
+**Corollary (necessary structure of first-failure colorings).** If unrestricted NORI1 fails in dimension \(n\ge4\), then there exists a successful edge-critical coloring \(c\) in that dimension. Every such edge-critical coloring has connected undirected direction-interaction graph and has at most one direction of outdegree zero in its directed influence graph.
+
+*Proof.* The space of legal colorings is a Boolean cube whose variables are antipodal edge orbits. Connect any known successful coloring to a counterexample by a sequence of single-orbit flips. The first step leaving the successful set has a successful edge-critical predecessor. If that predecessor had disconnected undirected interaction graph, it would factor into at least two independent legal colorings, each successful because any monochromatic full product geodesic projects to full monochromatic geodesics in the factors. The product theorem would supply two orbit-disjoint geodesics, at least one surviving any single-orbit flip. Similarly, if it had two sink directions, deleting them simultaneously expresses it as a two-spectator extension of a legal lower-dimensional coloring. Projecting a successful full geodesic shows that the retained base is successful; the spectator packing theorem with \(k=2\) again supplies two orbit-disjoint geodesics. Both conclusions contradict edge-criticality. \(\square\)
+
+In particular, a proposed dimension-uniform theorem saying that every successful legal coloring with connected interaction graph and at most one sink can avoid each prescribed antipodal edge orbit would imply unrestricted NORI1 by the first-failure argument. The necessary structure above is unconditional; it applies to a hypothetical failure with arbitrarily many nonlinear direction rules.

@@ -337,3 +337,23 @@ Rearranging proves (25). The contrapositive gives the equivalent compatibility a
 **Corollary 31 (where a paired-root gluing obstruction must concentrate).** If a pair of conditional terminal-fiber colorings has disjoint required monotone-root sets, then *any chosen family* of local safe-check spaces must have a subfamily with at least two units of deficiency relative to rank two per factor. Thus a single rank-one factor among rank-two factors cannot prevent root overlap, agreeing with Theorem 26. A no-safe-hyperplane factor can supply two deficiency units by itself; Theorem 28 explains a separate mechanism by which sufficient neighboring rank surplus can nevertheless absorb such a factor.
 
 **Closure use.** This converts failure of affine-safe-check gluing into a rank-deficient *subcollection* of interacting factors. A future supported-chain or Smith-index proof need not repair all factor overlaps uniformly: it may instead localize its obstruction to one Hall-deficient cluster, where two or more effective safe-check degrees are missing. However, the existence of such a cluster does not imply a counterexample to the underlying paired-root conjecture; larger-root-set compatibility may survive despite the failure of all selected parity checks.
+
+
+## One-forbidden-root gluing on unrestricted factor-incidence graphs
+
+Let H be a finite loopless multigraph without isolated vertices, with one binary variable x_e on each edge. At each vertex v impose a constraint L_v on its incident variables that forbids at most one binary assignment. Assume every degree-one vertex is unconstrained.
+
+**Theorem (two assignments per connected component).** There exist at least 2^{c(H)} simultaneous satisfying edge assignments, where c(H) is the number of connected components. The lower bound is attained for suitable forbidden patterns on cycles.
+
+*Proof.* It suffices to treat connected H. Orient its edges so every constrained vertex has an incoming edge. When H has a cycle, orient a cycle cyclically, orient spanning trees away from that cycle, and orient the remaining edges arbitrarily. When H is a tree, orient away from a leaf, which is unconstrained. For each directed edge u->v, choose its variable to disagree with the forbidden pattern at v on that edge, if one is present. Thus all constrained vertices are satisfied.
+
+Suppose the satisfying assignment x is unique. Flipping any one edge e must violate a constraint at an endpoint of e. A constrained vertex can witness such a violation for at most one incident edge: its forbidden assignment differs from x on at least one bit, and if changing one bit makes it forbidden, that bit is uniquely determined. Thus |E(H)| is at most the number k of constrained vertices. In a tree, k<=|V(H)|-2<|E(H)|. Otherwise, |E(H)|>=|V(H)|>=k. Equality throughout forces a connected unicyclic graph, every vertex constrained and therefore of degree at least two. Hence H is a cycle (including a two-cycle with parallel edges). At every vertex the forbidden word differs from x in one of its two incident bits. The bitwise complement of x differs from that forbidden word in the other bit and hence also satisfies every constraint, contradicting uniqueness. There are at least two solutions for connected H, and components multiply. QED.
+
+**Corollary (cross-factor root gluing without restrictions on overlap cycles).** Let f,g be arbitrary binary edge colorings of Q_B, each with an independent Cartesian factorization into nonempty dimension blocks, with possibly different partitions U,V. Suppose each f-factor excludes at most one root from A_0 and each g-factor excludes at most one root from A_1, where A_0 consists of roots of nondecreasing full color words and A_1 of roots of nonincreasing full color words. Let H be the bipartite multigraph whose vertices are the factors and whose dimension-labeled edges indicate membership in one factor of each partition. Then
+\[
+|A_0(f)\cap A_1(g)|\ge 2^{c(H)}.
+\]
+
+*Proof.* The favorable-root set of a Cartesian product is the Cartesian product of the factor favorable-root sets: concatenate the zero-colored and one-colored portions of factor paths in the required order; deleting other factors' steps gives necessity. A common root is consequently a binary labeling of H's edges satisfying the factor constraints. A one-dimensional factor admits both roots under either orientation, so leaves are unconstrained. Apply the theorem. QED.
+
+This removes the pseudoforest assumption from the earlier factor-overlap theorem when each factor has at most one forbidden root. It is consistent with the higher-rank safe-check theorems below, and is a conditional cross-root theorem rather than unrestricted NORI1.

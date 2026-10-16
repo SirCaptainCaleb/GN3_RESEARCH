@@ -1,0 +1,59 @@
+# Research notes linked to subsection paired_direction_involutions_and_geodesic_endpoint_matchings
+
+Sidecar only; no note body is included in the mathematical manuscript.
+
+- [Affine Q4 rootwise two-sweep obstruction](../note_4249d4d63044d21ce99cd577.md) — active/proved
+- [All-frozen-face obstruction with only three nonlinear rules](../note_64c1bc948d542f0488a0cc4d.md) — active/proved
+- [Antipodal holonomy criterion and antipodal-free Gray fixed-point cycles](../note_8ba05f2d130689dd10defb83.md) — active/proved
+- [Antipodally odd Q5 refutes rootwise arbitrary-order paired-sweep completion](../note_aaeeb3d9a2885c2a0594b9b1.md) — active/proved
+- [Antipodally paired directed two-factorizations and reversible matching permutations](../note_4ccaecb55fbb2f780f09fd90.md) — active/proved
+- [Antipodally symmetric two-tour decompositions with minimum red-blue switching](../note_7ce045c53d8abf1f2a582334.md) — active/proved
+- [Balanced antipodal cube fields: even tangency and unavoidable lift zero fibers](../note_9de9db3231c997553b3ec396.md) — active/proved
+- [Balanced cubes with exponentially sparse two-sweep roots among monochromatic-geodesic roots](../note_cbff1d0ca5b44250a00331ce.md) — active/proved
+- [Balanced Q12 refutes existential two-sweep and sublinear mismatch hypotheses](../note_a16c9ca04fb509fefb7004e3.md) — active/proved
+- [Balanced three-nonlinear closure when the three residual readers are the exceptional directions](../note_56f6c47654c469c68402402e.md) — active/proved
+- [Balanced three-nonlinear Q6 needs exterior motion to repair a frozen core](../note_a0a46cd69a593ffb929f8036.md) — active/proved
+- [Balanced three-nonlinear two-internal-reader closure through a paired residual reader](../note_95362730bed6abbdc8b02eac.md) — active/proved
+- [Canonical paired-sweep conjugacy and rootwise invariance under balanced lifts](../note_e5b581e8e2c4615b297e9252.md) — active/proved
+- [Commutators and direction influence](../note_9958891ee795dab0c72382d4.md) — active/proved
+- [Complementary two-nonlinear NORI1 criterion via antipodal implication SCC](../note_2c2534948b2bd8e6e31d74d0.md) — active/proved
+- [Complete balanced three-nonlinear closure when the unary fringe has one exceptional reader](../note_4e39815b2afb4340c19d280d.md) — active/proved
+- [Different-order paired sweeps miss nearly all geodesic roots in balanced products](../note_78e576f3e7d22d6858302956.md) — active/proved
+- [Doubled-direction chord crossings factor red holonomy into square commutators](../note_f45cc9ea86406fa362616dde.md) — active/proved
+- [Edge-disjoint geodesic packing and Eulerian cycle-flip stability of spectator lifts](../note_3adba95286c707867e3fac73.md) — active/proved
+- [Eulerian ice-orientation and directed square decomposition of balanced lifts](../note_f8bcb3c72b1840a3e67f021b.md) — active/proved
+- [Exponential directed-hexagon traps for monotone antipodal square flips](../note_f28a330e41dfeee470febbf2.md) — active/proved
+- [Fixed-order two-sweep obstruction with linear antipodal deficiency](../note_98d33b60443a012a2b979e4a.md) — active/proved
+- [Folded-cube voltage obstruction for directed cycle factors](../note_6104ffc9973da59afce84629.md) — active/proved
+- [Forced directed square cycles and antipodal Eulerian square flips](../note_9550a80f40ced217faa99e1d.md) — active/proved
+- [Forward influence-cone obstruction for doubled-direction holonomy](../note_87aec5ba5386ea640f6aecb0.md) — active/proved
+- [Fourier energy identity for local red holonomy of odd cube colorings](../note_d1fbe01886986ad3f9139461.md) — active/proved
+- [Frozen three-exception linearization and mandatory external influence](../note_ebf7afa6438f399815734985.md) — active/proved
+- [Half-root antipodal geodesic theorem for switched three-exception reader stars](../note_9b4ac1d6f7f7c621f3949bbd.md) — active/proved
+- [Interlacement geometry of simple paired-cover bigons](../note_0cc55ed501605ffd6b5857ed.md) — active/proved
+- [Interval-Helly certificate for completing geodesics into paired sweeps](../note_e8196b0ae668f63fde480bb4.md) — active/proved
+- [Lazy paired-sweep trace rigidity](../note_7f1c738f71aa44e8bdf763ad.md) — active/proved
+- [Minimum-influence three-nonlinear cubic rigidity and no-feedback closure](../note_nori_minimum_influence_cubic_common_readers_and_feedback_20261015.md) — active/proved
+- [Monotone antipodal directed-cycle reconfiguration of balanced cube colorings](../note_28253102a7f86f01503ff6a5.md) — active/proved
+- [Monotone-trail edge-order extremality equivalent to unrestricted NORI1](../note_9ca179259bc29d08b2cb25ea.md) — active/proved
+- [One retained nonlinear rule guarantees n-k+1 shattered profile directions](../note_a911fda99b9f0c1c144cc819.md) — active/proved
+- [One-crossing holonomy needs a mutual-curvature square and synchronized exterior](../note_2fce38941871a7cb3e236d36.md) — active/proved
+- [Optimal color-change Euler circuits and colorwise flow splitting](../note_b82fae07b1a890e93003724d.md) — active/proved
+- [Paired-lift red and blue graphs cover a smaller cube and lift Euler tours](../note_ed4e8d984354e6f37261be13.md) — active/proved
+- [Paired-lift sweep operator intertwining and all even antipodal trace moments](../note_c0b01709e1b450e26fb30b68.md) — active/proved
+- [Rainbow matchings and the APS expansion obstruction in legal cube colorings](../note_ff817c340f78afdb8b73c22f.md) — active/proved
+- [Reader-chain subdivision closes the rooted paired-reader three-nonlinear branch](../note_93f3f3c67ccccb85170dd72a.md) — active/proved
+- [Reader-core metric factorization and invariant antipodal detour under balanced lifts](../note_f444f30e8dd9ece68d4b5734.md) — active/proved
+- [Red swap commutators detect directed influence and square curvature](../note_d9ad6ce94cd579333c618de8.md) — active/proved
+- [Reversal pairing makes unweighted antipodal-bigon holonomy counts even](../note_74ea54e866c70d37dba2eb94.md) — active/proved
+- [Signed edge ranks, antipodal greedy commutators, and balanced circulation](../note_7b30080ed8a97993dde54e84.md) — active/proved
+- [Simple antipodal bigon normal form for paired-cover monochromatic geodesics](../note_c944daa4c653527d2f6bf61e.md) — active/proved
+- [Six-cube root with no directed square despite antipodal balance](../note_609265aef7e29918a02d1b66.md) — active/proved
+- [Symmetrized sweep matrix and lazy interpolation to the NORI1 trace](../note_81b00318c640fbbd4d739ad3.md) — active/proved
+- [Tensorization of reversible-sweep witnesses and exponential rarity in balanced good cubes](../note_6927ebc76b2a03c463c9e3ba.md) — active/proved
+- [Ternary switching transport needs four-chromatic forcing](../note_76115e8a3bf31b8c93b606bf.md) — active/proved
+- [Three-exception active-fiber closure](../note_470e0e5dfdb70b9ddbd65258.md) — active/proved
+- [Three-nonlinear dimension-uniform closures by frozen three- and four-direction cores](../note_nori_three_nonlinear_internal_reader_six_pivot_closure_20261015.md) — active/proved
+- [Three-nonlinear eight-pivot closure for every internal paired reader](../note_79706c96899a6e835f8f9378.md) — active/proved
+- [Three-nonlinear residual-one selector slice theorem](../note_5f4f8336d17b9a21052a07c5.md) — active/proved
+- [Two antipodally exchanged Euler tours with equal direction counts](../note_cb4cc525fb527667f8ac08bf.md) — active/proved

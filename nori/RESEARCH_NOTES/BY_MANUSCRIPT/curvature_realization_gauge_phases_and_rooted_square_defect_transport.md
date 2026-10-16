@@ -1,0 +1,6 @@
+# Research notes linked to subsection curvature_realization_gauge_phases_and_rooted_square_defect_transport
+
+Sidecar only; no note body is included in the mathematical manuscript.
+
+- [Gauge-averaged avoidance of one antipodal vertex pair](../note_vertex_avoidance_gauge_flux_20261015.md) — active/proved
+- [Transverse-square curvature charges for repeated directions in shortest antipodal paths](../note_795db3e27f0fa0b4cf85057a.md) — active/proved

@@ -1,104 +1,45 @@
 # Transverse curvature oscillation along near-spanning monochromatic geodesics
 
-# Transverse curvature oscillation along near-spanning monochromatic geodesics
+# Endpoint residual barriers and corrected transverse oscillation
 
-This subsection extracts an all-dimensional rigidity theorem from the complementary-arm residual-face barrier (Article XIV, Subsection 41). It directly links full-rank monochromatic reachability to **changes of ordinary square curvature along two transverse strips**. No restricted coloring subclass, regularity condition, or small-order enumeration is assumed.
+This subsection records the endpoint consequences of complementary monochromatic arms. An earlier version applied the residual-face gluing theorem at the common root of the arms. Its residual face is instead based at an arm endpoint. The assertions of a barrier at every interior corridor vertex, the resulting corridor-wide ordinary-curvature oscillation, and the associated one-sided exchange-defect profile are withdrawn.
 
-Let \(n\ge3\), \(D=[n]\), and let \(c\) be any undirected binary cube-edge coloring with \(c(\tau e)=1-c(e)\). Use red \(0\), blue \(1\), and let \(\kappa(F)=\sum_{e\subset\partial F}c(e)\pmod2\). Suppose, for contradiction, that \(c\) admits **no monochromatic full antipodal geodesic**. Equivalently, it admits no full antipodal geodesic with at most one color change, since moving the root across the unique change converts such a path into a monochromatic one.
+Let c be an antipodally odd coloring of Q_n, and suppose it has no monochromatic full antipodal geodesic. Let P=(v_0,...,v_m) be a red dimension-simple path, and let M be its unused directions.
 
-## Theorem 1 (a residual-face barrier propagates along an entire monochromatic geodesic)
+## Theorem 1 (endpoint residual-face barriers)
 
-Let \(P=(v_0,v_1,\ldots,v_m)\) be a monochromatic red cube geodesic of length \(m=n-|M|\), where \(M\ne\varnothing\) is the set of dimensions not traversed by \(P\). For every \(0\le t\le m\), and for every permutation \(\sigma\) of \(M\), the monotone path across the face
+Every full path through the M-face based at v_0, starting at v_0, contains a descent 10. The same holds at v_m. If m>0 and |M|>=2, the two disjoint endpoint faces together contain at least 2|M|(|M|-1) descending directed two-edge turns.
+
+*Proof.* At v_0 take the empty red arm and the whole path P as the other arm. The residual-face gluing theorem then has its starting corner v_0. Repeat from v_m with reversed P. The two faces are disjoint when m>0. Apply the sharp residual-face turn bound separately. Splitting P at an interior vertex produces arms ending at v_0 and v_m, so it gives these same endpoint faces, rather than an additional face at the splitting vertex. QED.
+
+For |M|=1 the endpoint barrier is impossible, recovering the full-geodesic extension principle for a monochromatic path of length n-1.
+
+## Theorem 2 (translated color oscillation in codimension two)
+
+Let M={a,b}. At each endpoint u in {v_0,v_m}, the residual square is a gate:
 \[
-F_t=F_M(v_t)
-\tag{1}
+c_a(u)=c_b(u)=1,\qquad c_b(u+a)=c_a(u+b)=0.
 \]
-starting at \(v_t\) and following the dimensions of \(M\) in order \(\sigma\) has a blue-to-red descent \(1\to0\).
+For h in {a,b}, let w_j^(h) be the color of the j-th edge of P+h. Then the word w^(h) contains both 01 and 10.
 
-The \(m+1\) residual faces \(F_0,\ldots,F_m\) are pairwise distinct and have disjoint vertex sets. If \(|M|\ge2\), each face contains at least \(|M|(|M|-1)\) descending directed two-edge turns, so the union of these faces contains at least
+*Proof.* Both residual square routes must descend, giving the displayed gates. For k the other unused direction, the path consisting of the h-edge at v_0, then P+h, then the k-edge to the antipode of v_0 has word 1 w^(h) 0. It uses every direction once. If w^(h) had no 01, this full word would have at most one switch, which yields a monochromatic full path by root sliding. Reversing P gives 1 rev(w^(h)) 0, forcing 10 as well. Only the two endpoint gates are used. QED.
+
+In particular, a hypothetical bad coloring cannot contain a monochromatic (n-2)-path when n<=4, since its translated word is too short to have both transitions.
+
+## The strip formula and its scope
+
+Put h_j=c_h(v_j), let d_j be the j-th direction of P, and put
 \[
-\boxed{(n-|M|+1)|M|(|M|-1)}
-\tag{2}
+\kappa_j^{(h)}=\kappa(F_{\{h,d_j\}}(v_{j-1})).
 \]
-distinct such turns.
-
-*Proof.* Split \(P\) at \(v_t\) into its initial and terminal portions and reverse the first portion. These give two red geodesics from \(v_t\) to \(v_0\) and \(v_m\), with disjoint dimension supports partitioning \(D\setminus M\). Apply the two-arm residual-face gluing theorem of Subsection 41, at root \(v_t\). If a monotone route through the face \(F_M(v_t)\) lacked a blue-to-red descent, then gluing the two red arms across that route would give a complete antipodal geodesic with at most one switch, contrary to hypothesis. The faces \(F_t\) have free dimensions \(M\), and the fixed bits outside \(M\) are the pairwise different vertices of the simple geodesic \(P\). Hence they are pairwise disjoint. Each has at least \(|M|(|M|-1)\) descending two-edge turns by the sharp residual-face turn inequality of Subsection 41. Disjointness makes the counts additive. \(\square\)
-
-For \(|M|=1\), the theorem gives an immediate contradiction: a one-edge path has no two-edge descent. This recovers the observation that a monochromatic geodesic of length \(n-1\) forces a full monochromatic antipodal geodesic somewhere.
-
-## Theorem 2 (the two transverse curvature words must oscillate in both directions)
-
-Suppose \(|M|=2\), say \(M=\{i,j\}\). Write \(m=n-2\), and let \(d_t\) be the dimension traversed from \(v_{t-1}\) to \(v_t\), \(1\le t\le m\). Then at every vertex \(v_t\) of \(P\),
+Since P is red,
 \[
-\boxed{
-c_i(v_t)=c_j(v_t)=1,\quad
-c_j(v_t\oplus e_i)=c_i(v_t\oplus e_j)=0.
-}
-\tag{3}
+w_j^{(h)}=\kappa_j^{(h)}+h_{j-1}+h_j\pmod2.
 \]
-For each missing dimension \(a\in\{i,j\}\), define a **transverse curvature word**
+Consequently the corrected curvature word on the right has both transitions. Endpoint gates give h_0=h_m=1 and hence
 \[
-\boxed{
-W^{(a)}_t
-=\kappa\!\left(F_{\{a,d_t\}}(v_{t-1})\right),
-\qquad 1\le t\le m.
-}
-\tag{4}
+\sum_j\kappa_j^{(h)}=\sum_jw_j^{(h)}\pmod2.
 \]
-Then each \(W^{(a)}\) contains **both** transitions
-\[
-\boxed{01\quad\text{and}\quad10}
-\tag{5}
-\]
-as adjacent two-letter subwords. Equivalently, the curvature of the successive side squares is neither nonincreasing nor nondecreasing. In particular, each of the two strips contains a curved square and a flat square, and has at least two changes in its curvature word.
+They do not force the interior h_j to equal one. Ordinary curvature need not coincide termwise with the translated color word by this argument. Likewise, the earlier corner-independent one-sided Freudenthal defect formula requires blue transverse edges at both ends of each individual side square; that condition has only been established for a side square when its two transverse edges are separately known to be blue.
 
-*Proof.* The two-dimensional part of Theorem 1 says that for every \(t\), both monotone paths across \(F_{\{i,j\}}(v_t)\) must have color word \(10\). This gives the blue-out/red-in gate (3).
-
-For \(a=i\), the strip square \(F_{\{i,d_t\}}(v_{t-1})\) has longitudinal base edge \(v_{t-1}v_t\) red, and its two transverse dimension-\(i\) edges incident with \(v_{t-1},v_t\) are blue by (3). Their contributions cancel modulo two, so
-\[
-\boxed{
-W^{(i)}_t
-=c(\{v_{t-1}\oplus e_i,v_t\oplus e_i\}).
-}
-\tag{6}
-\]
-The same argument holds with \(i\) replaced by \(j\). Thus the curvature word along either strip is the color word of the translated path \(P+a\), which uses all dimensions of \(D\setminus\{i,j\}\) once.
-
-For either \(a\), let \(b\) be the other missing dimension. Starting from \(v_0\), take the blue dimension-\(a\) edge to \(v_0+a\), traverse the translated path \(P+a\), and finally take the red dimension-\(b\) edge from \(v_m+a\) to \(v_m+i+j=\tau v_0\). The gate (3) guarantees both endpoint colors. This is a complete dimension-simple antipodal geodesic with word
-\[
-\boxed{1\,W^{(a)}\,0.}
-\tag{7}
-\]
-If \(W^{(a)}\) had no ascending transition \(01\), its word would belong to \(1^*0^*\), so (7) would have at most one change, contradicting the hypothesis. Thus \(W^{(a)}\) contains \(01\).
-
-Now reverse the original red geodesic \(P\). Its vertices run from \(v_m\) back to \(v_0\), so it remains red and the same gates (3) hold at each vertex. Repeating the construction from the reversed path gives the complete word
-\[
-1\,\operatorname{rev}(W^{(a)})\,0.
-\]
-It must also have more than one switch, forcing an ascending transition \(01\) in the reversed curvature word, equivalently a descending transition \(10\) in \(W^{(a)}\). This proves (5). \(\square\)
-
-**Corollary 3 (two-dimensional long-path obstruction).** Every red geodesic using all but two dimensions in a hypothetical NORI1 counterexample determines two **different transverse square-curvature strips**. Along each strip the curvature must change at least twice, in both binary directions; in particular each contains at least one face of curvature \(1\) and one of curvature \(0\). The \(n-1\) parallel residual squares along the original path have curvature zero and carry the unique blue-out/red-in pattern. The same theorem holds with the colors exchanged.
-
-For \(n=4\), the translated strip words have length \(2\) and cannot contain both kinds of transition. Therefore Theorem 2, together with the earlier rank-\((n-1)\) geodesic extension principle, rules out any monochromatic geodesic of length \(n-2\) in a hypothetical counterexample. This is an incidental low-dimensional consequence; the theorem's main content is the uniform all-rank curvature-oscillation requirement.
-
-**Remark (why this is stronger than the square gate alone).** The flatness of each residual \(\{i,j\}\)-square is a single local parity condition. Theorem 2 forces *variability of the ordinary curvature on other squares*, in two separate dimensions, **along the entire ordered red path**. The two transitions are constrained in the path's dimension order. This is new color-sensitive incidence information that the projective class \([\bar\kappa]\) does not capture by itself. It is a necessary condition under the no-full-geodesic hypothesis, not a proof that such a coloring exists. The next proof question is whether the imposed red-prefix corridor barriers and two transverse curvature oscillations can be incompatible with the all-rank Coxeter exchange homotopies after aggregating them across roots and dimension orders.
-
-## Corollary 4 (one-sided Freudenthal defects on every transverse strip)
-
-Under Theorem 2's hypotheses, consider the side square
-\[
-G_t^{(a)}=F_{\{a,d_t\}}(v_{t-1}),\qquad a\in\{i,j\}.
-\]
-Let \(\Omega_b(G_t^{(a)};z)\) denote the mod-two parity of monochromatic color-\(b\) two-step routes across this square, rooted at any corner \(z\) of the square (as in Subsections 21 and 39). Then **for all four corners**,
-\[
-\boxed{
-\Omega_0(G_t^{(a)};z)=0,\qquad
-\Omega_1(G_t^{(a)};z)=\kappa(G_t^{(a)})=W_t^{(a)}.
-}
-\tag{8}
-\]
-Thus the blue exchange-defect sequence along each strip contains both binary transitions \(01\) and \(10\), while the red exchange defect vanishes identically along that strip.
-
-*Proof.* The longitudinal base edge in dimension \(d_t\) has color \(0\). Both transverse edges in dimension \(a\) have color \(1\) by the gate condition (3). The remaining longitudinal edge has color \(W_t^{(a)}\), by equation (6). The two root-based routes therefore have respective color words \(01\) and \(1W_t^{(a)}\). Neither route is red-monochromatic; precisely one is blue-monochromatic if and only if \(W_t^{(a)}=1\). This proves (8) at the base corner. The formula for the two root-relative route counts is unchanged at the other corners, because the two parallel \(a\)-edges both have color \(1\), giving zero parallel-edge discrepancy in dimension \(a\). Apply the root-corner transport identity in Subsection 31 to conclude corner independence. The oscillation assertion follows from Theorem 2. \(\square\)
-
-**Implication for color-filtered chain corrections.** Along any near-spanning red geodesic under a hypothetical counterexample, the two transverse strips are rank-simple sequences of adjacent squares with \(\Omega_0=0\) and non-monotone \(\Omega_1\). This supplies a forced, position-dependent pattern **directly on the internal Freudenthal facet defects** of Subsection 39, rather than only on their color-blind sum. For a blue base geodesic, the two color roles are interchanged. Any proposed global cancellation must respect these one-sided defect profiles, since they follow from the original unrestricted coloring and the no-full-geodesic assumption.
+At either endpoint, a full monochromatic face path supplies both ordinary monotone orientations. The adjacent parallel face roots at that endpoint are empty by the two-step lift. This proves at least two empty roots in each adjacent face when m>=1. It does not prove the former 2m bound. Interior seams and transverse edge colors remain part of the unrestricted closure problem.

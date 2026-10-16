@@ -952,6 +952,14 @@ Consequently **NORI1 in dimension \(m+1\)** is equivalent to: *Every arbitrary b
 
 *Proof.* A monochromatic folded geodesic may be reversed so that it begins in \(F_{00}\), crosses its formal joining edge at vertex \(u\), and ends in \(F_{11}\). If its color is \(t=q(u)\), let its first segment in \(F_{00}\) run from \(z\) to \(u\) in color \(t\). Reverse that segment to obtain \(u\to z\) in color \(t\). Its last segment \(u\to\bar z\) in the second face transforms, by antipodal translation and reversal, into a color-\((1-t)\) segment \(z\to\bar u\) in \(F_{00}\). These two segments use disjoint dimension sets and concatenate to the certificate in (1). Conversely, given a face path \(u\to z\to\bar u\) with colors \(t\) then \(1-t\), reverse its first segment, traverse the formal joining edge at \(u\) in color \(t=q(u)\), and translate and reverse the second segment to form a folded monochromatic full path. This proves (2). Reversal of a face path proves (3). If \(T_f(u)=\{0,1\}\), any odd assignment \(q\) matches a certificate at that \(u\). If no \(T_f(u)\) contains both colors, choose \(q(u)\) outside \(T_f(u)\) independently on every antipodal vertex pair; (3) makes these choices compatible with oddness, and (2) yields no monochromatic folded full path. This proves (4). Every legally colored \(Q_{m+1}\) is a folded coloring by taking the two facets opposing across one dimension, proving the final equivalence. \(\square\)
 
+#### Corollary 1A (arbitrary joining values and one-switch folding)
+
+The monochromatic-path equivalence (2) holds for every joining function q, with arbitrary values at antipodal sites. In this broader setting, existence of any full path with at most one switch, existence of a monochromatic full path, and existence of a paired root in the folded cube are equivalent.
+
+Indeed, orient the full path from the lower facet to the upper one and write its color word as a q(u) b. Reversing the lower prefix and then appending the reversed antipodal image of the upper suffix gives a full f-path from u with word rev(a) rev(1-b). For an original word with at most one switch, this word is nondecreasing when q(u)=0 and nonincreasing when q(u)=1. The face certificate then constructs a monochromatic full path through the same joining edge. This calculation uses the complemented-antipodal relation between the two horizontal facets.
+
+Consequently, if P(f) is empty, all arbitrary joining functions avoiding a monochromatic full path form the Boolean face q=1 on A_0(f), q=0 on A_1(f), with all empty sites free individually. Throughout this face the folded cube has no full monotone orientation at any root. The detailed proof and individual joining-edge criticality classification appear in Article XV's one-direction 2-SAT subsection, under “Arbitrary bridge folding gives a unary completion formula.”
+
 #### Theorem 2 (one-exception lifting, conditional on the induction hypothesis)
 
 Assume NORI1 holds in dimension \(n-1=m+1\). Then every legally colored \(Q_n\) has a full dimension-simple geodesic with all but at most one edge of the same color:
@@ -989,36 +997,15 @@ then, in the absence of a monochromatic full \(Q_n\) geodesic, **every** such pa
 
 *Proof.* Each two-step diagonal path is bichromatic, so its word is \(01\) or \(10\). The curvature is the xor of both two-step word parities, hence zero. If the first face certificate has word \(0^r1^{m-r}\), its folded color-zero path expands to \(0^r h_1h_2 0^{m-r}\), where \(h_1h_2\) is either available square word. For \(h=10\) this has at most one switch when \(r=0\); for \(h=01\) it has at most one switch when \(r=m\). Similarly the color-one certificate gives \(1^s h_1h_2 1^{m-s}\), which has at most one switch when \(h=10,s=m\) or when \(h=01,s=0\). The root-slide lemma then forbids the corresponding endpoint cases. When both words occur, all endpoint cases are excluded. The gate/stripe parallel-edge assertions follow by direct inspection of the four square-edge colors and the root-defect identity in Subsection 31. \(\square\)
 
-#### Theorem 5 (monochromatic face paths force gates and transverse-curvature oscillation)
+#### Theorem 5 (endpoint gates and translated-color oscillation)
 
-Assume no monochromatic full geodesic exists in \(Q_n\). Let \(P=(v_0,\ldots,v_m)\) be a monochromatic **red** full geodesic inside \(F_{00}\), with \(m=n-2\), using all remaining dimensions once. At **every** \(v_j\), the two portions of \(P\), read outward, are red geodesics with disjoint dimension sets partitioning the \(m\) face dimensions. The two-arm residual-square lemma of Article XIV, Subsection 41, therefore forces the joining square in \(a,b\) at each \(v_j\) to be a *gate 10*: both outgoing \(a,b\)-edges are blue, and the two edges entering the opposite corner are red. Stripes are impossible along \(P\).
+Assume no monochromatic full geodesic exists. Let P=(v_0,...,v_m) be a red full geodesic inside F_00. At each endpoint u=v_0,v_m, the joining square is a gate 10. For either unused direction h, the color word of P+h contains both 01 and 10.
 
-At either chosen endpoint \(u\) of \(P\), the monochromatic face geodesic supplies **both** face-polarity certificates, by allowing one run to be empty. Choosing \(u=v_0\), the two expansions through the gate may be taken with words
-\[
-\boxed{0^m10\qquad\text{and}\qquad10\,1^m,}
-\tag{7}
-\]
-whose unique minority edges occur at positions \(n-1\) and \(2\), respectively.
+*Proof.* Apply the two-arm residual-square theorem with one empty arm and the whole monochromatic path as the other arm. Its residual square is based at the endpoint of the empty arm, giving the gates at v_0 and v_m. A path taking the initial h-edge, traversing P+h, and taking the final other unused direction has word 1 w^(h) 0. A missing 01 would make this word have at most one switch. Reversing P also forces 10 in w^(h). QED.
 
-Let \(d_j\) be the dimension of the edge \(v_{j-1}v_j\), and for \(h\in\{a,b\}\) define
-\[
-W^{(h)}_j=\kappa(F_{\{h,d_j\}}(v_{j-1})),
-\qquad 1\le j\le m.
-\tag{8}
-\]
-The gate condition implies that each curvature word \(W^{(h)}\) is the edge-color word of the shifted copy \(P+h\): the side square has one red base edge and two blue connecting edges, whose contributions cancel modulo two. For \(k=\{a,b\}\setminus\{h\}\), adjoining a blue initial \(h\)-edge, traversing \(P+h\), then adjoining the red terminal \(k\)-edge gives a full dimension-simple antipodal geodesic with word
-\[
-\boxed{1\,W^{(h)}\,0.}
-\tag{9}
-\]
-If \(W^{(h)}\) contains no \(01\), then (9) has at most one switch and gives NORI1 by a root slide. Applying the same construction to reversed \(P\) forces an occurrence of \(10\). Therefore
-\[
-\boxed{\text{Both }W^{(a)},W^{(b)}\text{ contain }01\text{ and }10.}
-\tag{10}
-\]
-This is the transverse-curvature oscillation theorem from Article XIV, Subsection 47, now shown to be the precise obstruction along the **two transverse paths separating the folded one-exception lifts**. On each side square the red Freudenthal exchange defect is zero and the blue defect equals the curvature, as proved in that subsection.
+**Correction of the corridor inference.** Splitting P at an interior vertex produces two arms ending at v_0 and v_m. The residual-face theorem places the residual face at an arm endpoint, not at their common root. Thus this argument gives no gate at an arbitrary interior vertex. The previous claims of gates throughout the corridor, oscillation of ordinary curvature throughout its transverse strips, and corridor-wide empty-root propagation are withdrawn. The endpoint statement and oscillation of translated color words are valid in every dimension.
 
-**Scope.** The folding equivalence does not establish NORI1; Theorems 2–3 require the \((n-1)\)-dimensional NORI1 induction hypothesis. The curvature oscillation in Theorem 5 is conditional on a monochromatic full path within one of the \((n-2)\)-faces, which the induction hypothesis alone does not supply: its two-polarity certificates may have both nonempty color runs. The remaining proof problem is to derive similarly strong strip constraints from two distinct strict one-switch certificates at a common vertex, or to show that the defect-bearing joining squares cannot be compatible across multiple choices of dimension pairs.
+At either endpoint the face path supplies both polarities. The two one-exception expansions from Theorem 2 remain available. Folding alone does not supply a monochromatic full path in the face: the induction hypothesis supplies paired monotone certificates, whose runs may both be nonempty.
 
 #### Proposition 7 (the transverse strip identity for arbitrary face paths)
 
@@ -1046,7 +1033,7 @@ Thus the **corrected transverse curvature word**
 \widehat W_j^{(h)}=\kappa_j^{(h)}+h_{j-1}+h_j
 \tag{13}
 \]
-equals the xor \(w_j+w_j^{(h)}\) of the base and translated color words. The gate corridor from Theorem 5 forces every \(h_j=1\) along a red monochromatic \(P\), so \(\widehat W^{(h)}=\kappa^{(h)}=w^{(h)}\). This is why the earlier two-sided oscillation applies directly to ordinary curvature.
+equals the xor \(w_j+w_j^{(h)}\) of the base and translated color words. For a red monochromatic P the corrected word equals w^(h) and has both transitions by Theorem 5. Only h_0=h_m=1 is forced. Interior h_j are not determined, so ordinary curvature cannot be substituted for the corrected word without an additional argument.
 
 For a **strict one-switch** face certificate obtained only from Theorem 1's induction hypothesis, the transverse connecting-edge bits \(h_j\) need not be constant, and the base word \(w\) is not constant. Equation (11) shows the additional information that must be controlled to extend the oscillation theorem: ordinary curvature alone need not equal the translated color word. The required next statement would couple both one-switch face certificates at the common vertex to force compatible restrictions on the transverse connecting-edge profiles. This is an open step, not a consequence of the folding equivalence.
 
@@ -1110,9 +1097,7 @@ The same conclusion holds for the other adjacent face \(g_{10}\).
 
 There is also a direct route interpretation: at a gate's adjacent corners, one diagonal route is monochromatic zero and the other monochromatic one. Either face orientation at that corner would therefore lift to a monochromatic full path. Thus the adjacent root is empty even without first supplying a paired certificate at the gate corner.
 
-**Corollary (empty neighboring roots along a monochromatic face corridor).** Under Theorem 5, every vertex \(v_j\) of its monochromatic face geodesic is a root admitting neither monotone orientation in either adjacent translated face. The gate corridor supplies a monochromatic diagonal of each color from the adjacent face corner, and the lifting lemma excludes both orientations.
-
-This strengthens the earlier statement that adjacent gate corners cannot be paired: they cannot support either full monotone orientation. Their rooted interaction structure must therefore evade the rootwise rooted-tree feedback coverage theorem.
+**Corollary (empty neighboring endpoint roots).** Under Theorem 5, the two endpoints v_0,v_m are empty roots in either adjacent translated face. Each endpoint gate supplies a monochromatic diagonal of either color from the adjacent corner, so the lifting lemma excludes both orientations. The same conclusion at interior corridor vertices has not been proved.
 
 ##### A local odd-cycle certificate
 
@@ -1128,19 +1113,9 @@ Hence \(K_x\) is bipartite, colored by the incident edge bits. Conversely, an od
 **Independent reconstruction.** An unrelated evaluator constructed 1338 certificate lifts across two-step routes in odd cubes of dimensions four through six and directly checked their complete direction orders, edge colors, and antipodal endpoints. The stripe and gate statements follow from the four displayed Boolean clauses in every dimension.
 
 
-**Corollary (antipodal empty-corridor bound).** Put \(m=n-2\ge1\). If a bad odd coloring has a monochromatic full geodesic in one \(m\)-face, then each adjacent parallel \(m\)-face coloring \(g\) satisfies
-\[
-\boxed{
-|\{r:r\notin A_0(g)\cup A_1(g)\}|\ge2m,\qquad
-|A_0(g)\cup A_1(g)|\le2^m-2m.
-}
-\tag{CP7}
-\]
-In particular \(|A_0(g)|\le2^m-2m\).
+**Corollary (antipodal empty-endpoint bound).** If a bad odd coloring has a monochromatic full path in an (n-2)-face of positive dimension m, each adjacent parallel face has at least two empty roots, namely the two antipodal endpoints of that path. Consequently its favorable-root union has size at most 2^m-2. The former bound 2^m-2m used the unsupported interior gate inference and is withdrawn.
 
-*Proof.* Every one of the \(m+1\) corridor vertices is empty by the gate propagation rule. The empty-root set is antipodally invariant. A dimension-simple full geodesic's vertex set intersects its antipodal translate only in its two endpoints: a proper nonempty direction prefix cannot equal the complement of another prefix. Their union therefore has \(2(m+1)-2=2m\) vertices. \(\square\)
-
-Thus an adjacent fiber with every root admitting at least one orientation, including the rootwise rooted-tree feedback class, rules out such a monochromatic corridor in a bad coloring. The bound applies in every dimension and preserves the positions of all corridor roots; it supplies a quantitative constraint for coupling them to the critical repair witnesses.
+An adjacent face in which every root admits at least one orientation therefore rules out such a monochromatic face path in a hypothetical bad coloring. This qualitative conclusion needs only the endpoint gates.
 
 
 ### Single-root reachability realization and failure of convex antipodal separation

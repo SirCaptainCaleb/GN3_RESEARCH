@@ -153,6 +153,40 @@ The argument is the increasing-geodesic potential method of Leader and Long, *Lo
 
 The first conclusion is the Leader--Long monochromatic-geodesic corollary, recovered through Theorem 6; the both-color formulation follows from antipodal balance. This result supersedes the weaker density-to-rank bound \(\lceil n/4\rceil\) that Theorem 5 supplies in the cube. Theorem 5 retains its independent significance for represented resource matroids with circuits.
 
+
+### Equality rigidity and a strict antipodal density bound
+
+**Lemma (regular geodesic rigidity).** Let \(1\le k\le n\), and let \(H\) be a \(k\)-regular spanning edge-subgraph of \(Q_n\). If \(H\) contains no geodesic of length \(k+1\), every connected component of \(H\) is a \(k\)-dimensional face of \(Q_n\).
+
+*Proof.* Let \(S(x)\subseteq[n]\) be the \(k\) directions of the edges of \(H\) incident with \(x\). Every direction-distinct \(H\)-path of length \(r<k\) can be extended at its last vertex: of its \(k\) incident directions, at most \(r\) have already been used. Thus every such path extends to length \(k\).
+
+Every length-\(k\) geodesic beginning at \(x\) uses precisely the directions \(S(x)\). Indeed, if its direction set omitted \(j\in S(x)\), prepending the edge \(x+e_j,x\) would give a direction-distinct \(H\)-path of length \(k+1\), contrary to hypothesis.
+
+Let \(xy\) be an edge of \(H\), in direction \(i\). If \(k=1\), then \(S(x)=S(y)=\{i\}\). Suppose \(k\ge2\). If some \(j\in S(y)\setminus S(x)\) existed, the two-edge path \(x,y,y+e_j\) would have distinct directions \(i,j\); extend it to length \(k\). Its direction set would contain \(j\notin S(x)\), contradicting the preceding paragraph. Therefore \(S(y)\subseteq S(x)\), and cardinality \(k\) gives \(S(y)=S(x)\). Hence \(S\) is constant along every \(H\)-edge. The component containing \(x\) contains every vertex obtained by toggling arbitrary directions from \(S(x)\), since these edges remain present, and contains no other vertex, since all its edges have directions in \(S(x)\). It is the \(k\)-face through \(x\). \(\square\)
+
+**Theorem (equality classification in the Leader–Long bound).** Let \(1\le k\le n\) and \(H\subseteq Q_n\) be a spanning edge-subgraph with
+\[
+|E(H)|=k2^{n-1}.
+\tag{12}
+\]
+Then \(H\) has a geodesic of length \(k+1\), unless its connected components are \(k\)-dimensional faces. Conversely, a partition into \(k\)-faces attains (12) and has no geodesic longer than \(k\).
+
+*Proof.* Suppose no geodesic has length \(k+1\). For any total order \(\pi\) of the directions, let \(L_\pi(x)\) be the longest geodesic ending at \(x\) whose directions are strictly increasing in \(\pi\). The increasing-geodesic inequality (11) gives
+\[
+\sum_x L_\pi(x)\ge2|E(H)|=k2^n.
+\]
+As every \(L_\pi(x)\le k\), equality holds and \(L_\pi(x)=k\) for every vertex and every order. Fix \(x\) and choose \(\pi\) placing the \(d_H(x)\) incident directions of \(H\) before all other directions. Every increasing geodesic ending at \(x\) has its final direction among these first \(d_H(x)\) directions, so its length is at most \(d_H(x)\). Thus \(d_H(x)\ge k\). The average degree of \(H\) is \(k\) by (12), hence \(d_H(x)=k\) at every vertex. Apply the preceding lemma. Conversely, paths inside a \(k\)-face use at most its \(k\) free directions, and a spanning partition into such faces has \(2^{n-k}\cdot k2^{k-1}=k2^{n-1}\) edges. \(\square\)
+
+**Theorem (unique two-color extremizer at half dimension).** Let \(n=2m\ge2\). In every binary edge-coloring of \(Q_n\), either a color class contains a geodesic of length \(m+1\), or there is a fixed \(m\)-element set \(S\subseteq[n]\) such that precisely the edges in directions \(S\) have color zero. Conversely, this constant direction split has no monochromatic geodesic longer than \(m\).
+
+*Proof.* Suppose neither color has a geodesic of length \(m+1\). The increasing-geodesic inequality (11) bounds the edges in each color class by \(m2^{n-1}\). Their total is \(n2^{n-1}=2m2^{n-1}\), so both bounds are attained. The equality-classification theorem above shows that each monochromatic component is an \(m\)-face. Let \(S(x)\) be the color-zero directions incident with \(x\). Across a zero-colored edge, \(S\) stays constant because the endpoints are in the same zero-colored \(m\)-face. Across a one-colored edge, its complement \([n]\setminus S\) stays constant because the endpoints are in the same one-colored \(m\)-face. Connectivity of \(Q_n\) makes \(S(x)\) independent of \(x\). This gives the fixed direction split. In that split each monochromatic component is an \(m\)-face, so each geodesic has length at most \(m\). \(\square\)
+
+**Corollary (strict half-dimensional geodesic bound).** For every \(m\ge1\), every antipodally odd binary edge-coloring of \(Q_{2m}\) has, in **each** color, a geodesic of length at least \(m+1\).
+
+*Proof.* A fixed direction split is invariant under antipodal inversion, while an antipodally odd coloring reverses the colors of every antipodal edge pair. The theorem therefore supplies a monochromatic geodesic of length \(m+1\). Antipodal inversion carries any such geodesic to one of the other color, completing the proof. \(\square\)
+
+This strict bound improves the general density-only lower bound (Corollary 7) by one in every even dimension. The uniqueness theorem classifies all two-colorings attaining the density bound, independently of antipodal oddness. Obtaining a full antipodal geodesic of length \(2m\) remains open.
+
 **Proposition 8 (triangle obstruction to free-resource induction).** The induction proving (11) fails in general for graphic resource matroids, even on \(K_3\). Give the three edges the increasing order \(ab<bc<ac\) and use the incidence-root representation of \(M(K_3)\). In \(H'=K_3-ac\), a maximal increasing path ending at \(c\) is \(a,b,c\), using resources \(ab,bc\). The remaining largest root \(ac\) lies in their span and its addition would close a triangle and repeat \(a\). Restoring \(ac\) raises the sum of the three endpoint maxima by only one, whereas the free-resource proof requires an increment of two.
 
 *Proof.* The incidence identity \(e_c-e_a=(e_b-e_a)+(e_c-e_b)\) is the graphic circuit relation. The lengths of maximal increasing paths ending at \(a,b,c\), respectively, are \((1,1,2)\) in \(H'\). In \(H\) they are \((2,1,2)\): the additional increasing path \(b,c,a\) increases the maximum at \(a\) by one, while the dependent edge cannot extend the two-edge path ending at \(c\). Thus the sum increases from four to five. \(\square\)

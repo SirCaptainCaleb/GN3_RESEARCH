@@ -1378,6 +1378,616 @@ The local cross-interface graph of Article XIV records the first possibility: an
 **Current strategy.** Continue the hereditary repair induction using full direction orders and seam positions. Whenever a proposed witness transport crosses a gate, apply the empty-root rule to the neighboring face; whenever it creates opposite face polarities, apply the stripe rule. The earlier endpoint transport obstruction shows why these positions must remain in the inductive state. This returns the closure search to structural analysis at the first point where the smaller certificates fail to align.
 
 
+#### Sharp antiperiodic first-harmonic criterion for NORI1
+
+Inspired by Mykkeltveit's de Bruijn cycle-transversal theorem (Toolkit id \`literature_mykkeltveit_de_bruijn_fourier_cycle_transversal\`), we use a complex first Fourier harmonic, distinct from the Boolean Fourier polynomial (UF1)--(UF3).
+
+Write \(\zeta=e^{\pi i/n}\), \(s_j=(-1)^{w_j}\), and
+\[
+F_n(w)=\sum_{j=0}^{n-1}s_j\zeta^j,\qquad M_n=\csc(\pi/(2n)).
+\tag{AF1}
+\]
+Here \(n\ge2\). The antiperiodic extension \(s_{j+n}=-s_j\) has first length-\(2n\) Fourier coefficient \(2F_n(w)\).
+
+**Theorem (sharp Fourier inequality).**
+\[
+\boxed{|F_n(w)|\le M_n,}
+\tag{AF2}
+\]
+with equality iff \(w\) has at most one adjacent color change.
+
+*Proof.* The antiperiodic shift \(T(s_0,\ldots,s_{n-1})=(s_1,\ldots,s_{n-1},-s_0)\) satisfies \(F_n(Ts)=\zeta^{-1}F_n(s)\). Iterating \(T\) sends each zero- or one-change word to a constant word, and
+\[
+\left|\sum_{j=0}^{n-1}\zeta^j\right|=2/|1-\zeta|=M_n.
+\]
+For arbitrary \(s,\theta\),
+\[
+\operatorname{Re}(e^{-i\theta}F_n(s))
+=\sum_j s_j\cos(j\pi/n-\theta)
+\le\sum_j|\cos(j\pi/n-\theta)|. \tag{AF3}
+\]
+The sampled angles span less than a semicircle, so signs of the cosines change at most once. Choosing either sign at a zero sample produces a zero- or one-change word \(u\), and the right-hand side is
+\(\operatorname{Re}(e^{-i\theta}F_n(u))\le |F_n(u)|=M_n\). Optimizing over \(\theta\) proves (AF2). Under equality, \(s\) agrees with the signs of the cosines on every nonzero sample; at most one sample vanishes, and either sign there leaves at most one change. \(\square\)
+
+**Theorem (sharp harmonic attainment is NORI1).** Let \(c\) be an antipodally odd coloring of the undirected edges of \(Q_n\). For a vertex \(x\) and direction permutation \(\pi\), denote the color word of the complete geodesic by \(w(x,\pi)\). Then
+\[
+\boxed{\text{a monochromatic antipodal geodesic exists}
+\quad\Longleftrightarrow\quad
+\max_{x,\pi}|F_n(w(x,\pi))|=M_n.}\tag{AF4}
+\]
+
+*Proof.* The root slide
+\(\mathcal T(x,\pi)=(x+e_{\pi_1},(\pi_2,\ldots,\pi_n,\pi_1))\)
+acts on the color word by
+\[
+w(\mathcal T(x,\pi))=(w_1,\ldots,w_{n-1},1-w_0), \tag{AF5}
+\]
+using the antipodal-odd color of the moved edge. This is precisely \(T\) on the spins and preserves \(|F_n|\). If \(w\) has a single change after position \(k\), then \(k\) root slides produce a constant word: the old final block is followed by the complement of the old first block. The converse is immediate, and (AF2) supplies the equivalence. \(\square\)
+
+**Corollary (Fourier phase section).** Each rooted-geodesic root-slide orbit has \(2n\) states: \(\mathcal T^n(x,\pi)=(\bar x,\pi)\), and \(\mathcal T^{2n}(x,\pi)=(x,\pi)\). If \(F_n(w(x,\pi))\ne0\), there is a unique state in its orbit such that
+\[
+\operatorname{Im}F_n(w(x,\pi))\le0<
+\operatorname{Im}\bigl(\zeta^{-1}F_n(w(x,\pi))\bigr). \tag{AF6}
+\]
+The \(2n\) complex phases form a regular \(2n\)-gon, and one step crosses from the closed lower half-plane to the open upper half-plane. For zero-harmonic orbits choose a representative by a fixed total order. The resulting canonical set has
+\[
+\boxed{2^{n-1}(n-1)!} \tag{AF7}
+\]
+rooted paths, and the maximum in (AF4) is unchanged when restricted to that set.
+
+**Scope and obstruction to a direct de Bruijn transfer.** The section (AF6) intersects all root-slide orbits; it is not known to meet every directed cycle in the larger adjacent-exchange graph. The de Bruijn argument depends on every nonrotation transition adding a real scalar to its Fourier mode. For a cube path, swapping adjacent directions at positions \(j,j+1\) changes the harmonic by
+\[
+\Delta F_n=\zeta^j\bigl((s'_j-s_j)+\zeta(s'_{j+1}-s_{j+1})\bigr). \tag{AF8}
+\]
+The change need not lie on a common real line. A closure theorem would therefore need a new color-sensitive exchange constraint or a proof that the sharp maximum (AF2) is forced by the available paths; neither follows from the phase section.
+
+
+#### Rank-two quadratic objective common to NORI1 and boundary tight paths
+
+For a legal length-\(m\) complete path \(P\) with color spins \(s_0(P),\ldots,s_{m-1}(P)\), define
+\[
+Q_m(P)=\left|\sum_{j=0}^{m-1}s_j(P)e^{\pi i j/m}\right|^2
+=m+2\sum_{0\le i<j<m}\cos\!\left(\frac{\pi(j-i)}m\right)s_i(P)s_j(P).
+\tag{QF1}
+\]
+The Gram matrix is \(C_{ij}=\cos(\pi(i-j)/m)=\cos(\pi i/m)\cos(\pi j/m)+\sin(\pi i/m)\sin(\pi j/m)\), hence positive semidefinite of rank two for \(m\ge2\).
+
+**Corollary (common quadratic witness).** Every binary color word satisfies
+\[
+Q_m(P)\le\csc^2(\pi/(2m)),
+\tag{QF2}
+\]
+with equality if and only if the word has at most one change. This follows from the antiperiodic first-harmonic theorem (AF2).
+
+For NORI1 on \(Q_n\), with \(m=n\), existence of a monochromatic full geodesic is equivalent to a legal rooted full path attaining (QF2), because a one-change extremizer root-slides to a monochromatic path. For ordinary boundary tournaments, when the goal is a full tight path with at most one binary color change, existence of the desired path is likewise equivalent to attainment of (QF2) by one of its legal tight paths. The two applications share the same extremal objective but have different legal path systems and exchange constraints.
+
+The objective (QF1) has degree two in the observed color spins. The *indicator* of attaining its maximum remains higher degree in general, as in the preexisting Boolean Fourier formula (UF1)--(UF3). Thus (QF1) is a low-rank numerical reformulation, not a degree-two expression for the one-change indicator. A common proof still needs structural information forcing extremal attainment in both classes.
+
+
+#### Sharp second-best harmonic energy and spin-flip ascent
+
+Retain \(F_m(s)=\sum_{j=0}^{m-1}s_j e^{\pi i j/m}\), \(Q_m(s)=|F_m(s)|^2\), \(M_m=\csc(\pi/(2m))\).
+
+**Lemma (unrestricted strict ascent).** For \(m\ge3\), if a spin word \(s\) has two or more adjacent changes, a single spin flip strictly raises \(Q_m\).
+
+*Proof.* If \(F_m(s)=0\), flipping any spin increases \(Q_m\) from zero to four. Otherwise choose \(\theta=\arg F_m(s)\). On the sampled semicircle, signs of \(\cos(j\pi/m-\theta)\) change at most once. Since \(s\) has at least two changes, there is a \(j\) with \(s_j\cos(j\pi/m-\theta)<0\). Flipping spin \(j\) changes the Fourier vector by \(-2s_je^{\pi i j/m}\); consequently
+\[
+Q_m(s^{(j)})-Q_m(s)
+=4-4|F_m(s)|s_j\cos(j\pi/m-\theta)>4. \tag{SG1}
+\]
+\(\square\)
+
+**Theorem (sharp spectral gap).** For \(m\ge3\), if a word has two or more adjacent changes, then
+\[
+\boxed{
+Q_m(s)\le \csc^2(\pi/(2m))-8\cos(\pi/m).
+} \tag{SG2}
+\]
+Equality is attained by \(s=(+,-,+,\ldots,+)\) and its antiperiodic rotations.
+
+*Proof.* Maximize \(Q_m\) over the finite set of words with at least two changes. The strict-ascent lemma supplies a one-spin flip that increases \(Q_m\); by the selected word's maximality among nonextremizers, that flip must yield a zero- or one-change word. Antiperiodic rotation and spin negation preserve the energy and move any zero- or one-change word to the all-plus word. Thus we need examine a word obtained from all-plus by changing one spin in an interior position \(1\le j\le m-2\).
+
+Put \(a=\pi/(2m)\) and \(\zeta=e^{2ia}\). Since \(\sum_{t=0}^{m-1}\zeta^t=M_m e^{i(m-1)a}\),
+\[
+Q_m(s)=\left|\sum_{t=0}^{m-1}\zeta^t-2\zeta^j\right|^2
+=M_m^2+4-4M_m\cos((2j-m+1)a).
+\]
+The right side is largest at \(j=1\) or \(m-2\), with cosine \(\sin(3a)\). Using \(M_m\sin a=1\) and \(\sin(3a)=3\sin a-4\sin^3 a\),
+\[
+Q_m(s)\le M_m^2+4-4M_m\sin(3a)
+=M_m^2-8+16\sin^2 a=M_m^2-8\cos(\pi/m).
+\]
+The displayed example attains equality. \(\square\)
+
+**Corollary (quantitative NORI and boundary witness threshold).** If a legal complete path \(P\) of length \(m\ge3\) has
+\[
+Q_m(P)>\csc^2(\pi/(2m))-8\cos(\pi/m),
+\]
+then its color word has at most one change. For an antipodally odd NORI1 coloring, root sliding then produces a monochromatic full geodesic; for an ordinary boundary tight-path instance, it yields the required one-change witness.
+
+**Scope.** The ascent lemma applies to arbitrary binary words. Flipping a single edge observation is generally not realizable by changing a rooted geodesic while preserving the coloring and dimension-simple constraint. A closure theorem still needs a legal path-exchange mechanism that approaches or crosses the sharp threshold.
+
+
+#### Balanced realization of a Petrie cycle and all its immediate exchanges
+
+Perfect vertex balance leaves the complete color data of one projective Petrie cycle and its immediate square exchanges freely prescribable. The construction below makes this freedom compatible, in arbitrarily large dimension, with realization of every binary full-geodesic profile.
+
+Number the directions \(0,\ldots,n-1\), let \(n=2m\ge8\), and fix the standard full geodesic
+\[
+v_j=\sum_{t<j}e_t,\qquad P=(v_0,\ldots,v_n).
+\]
+Extend it by \(v_{j+n}=\bar v_j\); its directions repeat modulo \(n\). Denote its projective Petrie cycle by \(C\). For each \(j\) modulo \(n\), its adjacent exchange replaces the two steps in directions \(j,k\), where \(k=j+1\pmod n\), by the other side of their square:
+\[
+v_j\longrightarrow v_j+e_k\longrightarrow v_{j+2}.
+\tag{BR1}
+\]
+For \(j=n-1\), this uses the first edge of the antipodal copy of \(P\).
+
+**Theorem (balanced square-neighborhood realization).** Prescribe arbitrary colors for the \(n\) successive edge orbits of \(C\), and arbitrary ordered color pairs for all \(n\) alternate two-edge routes (BR1). There is an antipodally odd vertex-balanced coloring realizing all these prescriptions. It can be obtained from a fixed balanced unary coloring by changing at most \(24n\) cube edges.
+
+*Proof.* Pair direction \(i\) with \(i+m\), for \(0\le i<m\). Seek rules of the form
+\[
+\boxed{c_i(x)=f_i(x|_{[n]\setminus\{i,i+m\}}),\qquad
+c_{i+m}(x)=1-c_i(x),}\tag{BR2}
+\]
+where each \(f_i\) is antipodally odd on its \(n-2\) input bits. These rules ignore their own edge directions and give precisely \(m\) edges of each color at every vertex.
+
+For each underlying function \(f_i\), the prescribed original edges in its two directions have input states
+\[
+A_i=v_i|_{[n]\setminus\{i,i+m\}},\qquad
+B_i=v_{i+m}|_{[n]\setminus\{i,i+m\}}.
+\]
+Their Hamming distance is \(m-1\), and their distances to each other's antipodes are also \(m-1\). In either direction, the two alternate-square edges have input states differing from the corresponding original state in the preceding or following direction bit. At the cyclic seam, take the antipodal representative before making this comparison. Those two bits are distinct and belong to the input set.
+
+Thus the six prescribed projective input states for \(f_i\) lie in radius-one neighborhoods of \(A_i,B_i\), with antipodal representatives allowed. The four centers \(A_i,\bar A_i,B_i,\bar B_i\) have pairwise distances at least \(m-1\ge3\). Their radius-one neighborhoods are disjoint. Within each of the two relevant neighborhoods the center and its two specified neighbors are distinct. All six input states are consequently distinct even after antipodal identification. Their values may be assigned independently; the direction \(i+m\) prescriptions are converted to \(f_i\)-values by complementing their requested colors. Assign complementary values at the six antipodal input states.
+
+Complete each \(f_i\) using the default unary rule
+\[
+f_i^*(x)=x_{i+1}.
+\tag{BR3}
+\]
+The reader \(i+1\) belongs to its input set. Both the prescribed input set and its values respect complementation, so using (BR3) elsewhere gives an odd Boolean function. This proves legality and balance.
+
+At most twelve input states per \(f_i\) differ from the default. Each input state represents two undirected edges in each of its two paired directions. Hence at most \(4\cdot12m=24n\) cube edges change. \(\square\)
+
+##### Full profile support survives every such local prescription
+
+**Theorem (simultaneous full support).** For every even \(n=2m\ge18\), the completion in (BR2)--(BR3), for *any* of the prescribed square-neighborhood data above, realizes every binary direction-indexed color profile:
+\[
+\boxed{\mathcal W(c)=\mathbb F_2^n.}\tag{BR4}
+\]
+
+*Proof.* All rules of the default coloring \(c^*\) are unary. The established all-dimensional one-reader theorem, followed by whole-direction color reversals and antipodal translation, realizes any specified binary profile on a default full geodesic with some direction order \(\pi\). Every default rule reads one of the bits in
+\[
+J=\{1,\ldots,m\}.
+\]
+Therefore the remaining \(m\) initial bits
+\[
+F=\{0,m+1,\ldots,2m-1\}
+\]
+may be varied freely, keeping \(\pi\) and the initial \(J\)-bits fixed, without changing this profile.
+
+Choose those free initial bits uniformly. Every paired set \(\{i,i+m\}\) contains precisely one bit from \(F\). At any specified step in either paired direction, the input state of \(f_i\) is therefore uniform on an affine subcube of dimension \(m-1\). Its probability of hitting the set of at most twelve modified input states is at most \(12/2^{m-1}\). A union bound over the \(2m\) steps gives
+\[
+\Pr(\text{some traversed edge uses a modified input})
+\le\frac{24m}{2^{m-1}}<1
+\qquad(m\ge9).
+\tag{BR5}
+\]
+Choose free bits avoiding every modified input. The resulting geodesic retains its prescribed default profile in \(c\). Repeat the argument for each target profile; its root and order are allowed to vary. This proves (BR4). \(\square\)
+
+The result concerns one global construction in every stated dimension. It retains arbitrary local square data while guaranteeing all \(2^n\) profiles elsewhere.
+
+##### Strict grade-three islands in the balanced exchange gallery
+
+For a projective Petrie cycle, let \(g(C)\) be its completed odd turn grade. Form the gallery whose vertices are these cycles and whose edges are adjacent direction exchanges at any root slide. The sublevel gallery at three is the induced graph on \(g\le3\).
+
+**Theorem (balanced grade-three exchange islands).** For every even \(n\ge10\), there exists a legal vertex-balanced coloring and a projective Petrie cycle \(C\) with
+\[
+\boxed{g(C)=3,\qquad g(C')=5
+\quad\text{for every immediate adjacent-exchange neighbor }C'.}
+\tag{BR6}
+\]
+For every even \(n\ge18\), the coloring can simultaneously satisfy (BR4), and hence have monochromatic full antipodal geodesics. Thus its grade-three sublevel gallery contains an isolated grade-three vertex alongside grade-one vertices.
+
+*Proof.* Let
+\[
+a=b=\lfloor n/3\rfloor,\qquad d=n-a-b,
+\]
+and prescribe on \(P\) the word \(0^a1^b0^d\). Its completed comparison word \(\delta\) has three ones, with successive cyclic gaps \(a,b,d\), all at least three. Every consecutive triple
+\[
+(\delta_{j-1},\delta_j,\delta_{j+1})
+\]
+therefore contains at most one one.
+
+Choose the alternate two-edge color word at exchange \(j\) to differ from the *old positional word* by \((\alpha_j,\beta_j)\), according to
+\[
+\begin{array}{c|c}
+(\delta_{j-1},\delta_j,\delta_{j+1})&(\alpha_j,\beta_j)\\ \hline
+(1,0,0)&(0,1)\\
+(0,1,0)&(1,1)\\
+(0,0,1)\ \text{or}\ (0,0,0)&(1,0).
+\end{array}
+\tag{BR7}
+\]
+The positions in this table are word positions after the exchange, rather than direction-indexed colors. At the cyclic seam use \(b_{j+n}=1-b_j\), where \(b\) is the prescribed color word.
+
+Changing those two observations toggles their three incident turn bits by
+\[
+(\alpha_j,\ \alpha_j+\beta_j,\ \beta_j).
+\tag{BR8}
+\]
+In every row of (BR7), the total turn count rises by two. All other turns stay unchanged, so every exchanged cycle has grade five. The square-neighborhood realization theorem implements all these choices simultaneously in a balanced legal coloring. When \(n\ge18\), its specified default completion has full profile support by (BR4). \(\square\)
+
+**Explicit successful ten-dimensional instance.** Apply the deterministic completion (BR3) and table (BR7) to \(n=10\) and the word \(0001110000\). Besides its isolated grade-three cycle, it has a full zero geodesic with initial support
+\[
+\{0,3,4,6,8\}
+\]
+and direction order
+\[
+(7,8,0,4,1,3,5,9,2,6).
+\tag{BR9}
+\]
+Direct evaluation of the rules defined above gives ten zeros. Thus a globally successful balanced coloring already supplies the obstruction in dimension ten.
+
+**Verification.** Independent evaluation of (BR7) and the completed rules in dimensions \(10,12,14,20\) gave grade three for the prescribed cycle and grade five for each of its cyclic adjacent exchanges. Arbitrary prescribed original words and alternate color pairs were also checked for input consistency in 100 trials each in dimensions \(8,10,12,18\). Balance and oddness were checked exhaustively in the ten-dimensional instance. The dimension-uniform proofs use input-state separation, the union bound, and the three-bit identity (BR8), independently of these checks.
+
+**Implication for a Minty-style closure proof.** A grade-three cycle may require a first step through grade five before any adjacent-exchange route can reach a successful cycle. Root slides and reversal preserve its grade and stay in the same projective cycle. Consequently an approach confined to nonincreasing grade, even allowing neutral exchanges, faces the obstruction (BR6). A local argument using a single cycle, its immediate exchanges, and balance also faces unrestricted realization of all those local data by (BR2). A closure argument must use compatibility across larger families of cycles, a higher-grade intermediate state, or a walk relaxation with an additional global objective. The unrestricted NORI1 conjecture remains open.
+
+
+##### Mesoscopic exchange-ball indistinguishability under full profile saturation
+
+A cycle in the **projective square-exchange gallery** is a simple antipodal-quotient Petrie cycle traversing all cube directions once. Two cycles are adjacent when an exchange of successive direction steps replaces one two-edge square route with the other (including the cyclic seam). Let \(\mathcal B_R(C)\) be the radius-\(R\) ball of cycles around a chosen cycle \(C\) in this gallery, with no restriction on intermediate turn grades.
+
+Write \(E_{\mathrm{orb}}(\mathcal B_R(C))\) for the set of antipodal undirected-edge orbits traversed by at least one cycle in the ball.
+
+**Lemma (gallery-ball edge exposure).** In every dimension \(n\ge3\),
+\[
+\boxed{
+|E_{\mathrm{orb}}(\mathcal B_R(C))|
+\le n+2\sum_{j=1}^{R}n^j.
+}\tag{BE1}
+\]
+*Proof.* Every cycle uses \(n\) distinct edge orbits, and a single adjacent exchange changes at most two of them. The gallery has degree at most \(n\), since there are \(n\) cyclic adjacent pairs of directions. Choose a breadth-first tree of the ball from \(C\). There are at most \(n^j\) vertices at distance \(j\). On adjoining each tree vertex, at most two edge orbits not present in its parent are added. This proves (BE1). \(\square\)
+
+Recall the exponentially robust legal full-profile and chronological-word packing theorem (RPC1): for any fixed \(A>6e\) and all sufficiently large \(n\), there exists a legal coloring \(d\) of \(Q_n\) possessing, for **each** binary direction-profile target and each chronological-word target, at least
+\[
+K_n=\lfloor\gamma_A2^{\lfloor n/2\rfloor}\rfloor
+\]
+pairwise antipodal-edge-orbit-disjoint full geodesics. Thus any modification of fewer than \(K_n\) edge-orbit color variables preserves full profile and chronological-word surjectivity.
+
+**Theorem (mesoscopic exchange-ball cloning).** Let \(c\) be **any** legal antipodally odd coloring of \(Q_n\), \(C\) any projective direction-rainbow Petrie cycle, and \(R\ge0\) an integer satisfying
+\[
+\boxed{n+2\sum_{j=1}^{R}n^j<K_n.}\tag{BE2}
+\]
+Then there exists another legal antipodally odd coloring \(\widetilde c\) of the *same* \(Q_n\) such that
+
+(i) every edge color on every projective cycle in \(\mathcal B_R(C)\) is unchanged: \(\widetilde c(e)=c(e)\) on all their represented edge orbits;
+
+(ii) every cycle of the ball retains its projective turn grade, and every exchange relation and color pattern entirely within this ball is unchanged;
+
+(iii) \(\widetilde c\) realizes **every** direction-indexed full-geodesic color profile and **every** temporal \(n\)-letter color word, and in particular has a monochromatic full antipodal geodesic.
+
+*Proof.* Pick any robust coloring \(d\) supplied by (RPC1). Let \(E=E_{\mathrm{orb}}(\mathcal B_R(C))\), with \(|E|<K_n\) by the lemma. On every orbit in \(E\), replace the value of \(d\) by the prescribed value of \(c\), and on its antipodal partner replace the value by its complement. Leave \(d\) unchanged on all other edge orbits. The prescribed pattern is consistent because \(c\) is legal. Thus \(\widetilde c\) remains antipodally odd, undirected, and agrees with \(c\) on all edges traversed by cycles in the ball. This proves (i)--(ii). The recoloring changes fewer than \(K_n\) antipodal orbit variables, so for each target binary profile and word, at least one of the \(K_n\) orbit-disjoint witnessing geodesics of \(d\) is untouched. Therefore every target remains attained, proving (iii). \(\square\)
+
+**Corollary (growing-radius indistinguishability).** Fix any \(\varepsilon\in(0,\tfrac12)\). For all sufficiently large \(n\), condition (BE2) holds for
+\[
+\boxed{
+0\le R\le
+\left\lfloor(\tfrac12-\varepsilon)\frac{n\log2}{\log n}\right\rfloor-3.
+}\tag{BE3}
+\]
+Consequently every possible colored exchange-ball pattern around an arbitrary legal cycle, even through radius of order \(n/\log n\), can be replicated without change inside a globally successful coloring with full profile and chronological-word support.
+
+*Proof.* For \(n\ge2\), \(n+2\sum_{j=1}^Rn^j\le4n^{R+1}\). Under (BE3), this is \(O(2^{(1/2-\varepsilon)n})\), while \(K_n\ge\gamma_A 2^{n/2-O(1)}-1\). Hence (BE2) holds for large \(n\). \(\square\)
+
+**Scope and methodological consequence.** The theorem is a *realization and indistinguishability* result, not a refutation of NORI1. It applies even if the source coloring \(c\) were hypothetically bad; only the preserved region is copied, while the many distant edges may change. It strengthens the radius-one balanced neighborhood realization (BR2)--(BR4) in a different direction: arbitrary initial legal colorings and a growing exchange radius, with full target saturation guaranteed in the completion, but **without** requiring the completion to remain vertex-balanced. In particular, any proposed criterion that identifies the *global* absence of a one-turn cycle from solely the finite colored data of an \(R\)-ball around one selected Petrie cycle, with \(R\) as in (BE3), cannot be valid. Closure must use global exchange information, or properties involving more than this local ball; an isolated grade-three critical cycle by itself is consistent with many faraway monochromatic witnesses.
+
+
+
+##### Cartesian amplification of exchange distance from three-turn cycles to one-turn witnesses
+
+Let \(\mathcal G(c)\) be the projective full-geodesic square-exchange gallery of a legal antipodally odd coloring \(c\). Its vertices are direction-rainbow Petrie cycles in the antipodal quotient cube, and its edges are cyclic adjacent direction swaps. Write \(\mathcal G_1(c)\) for its cycles of completed turn grade one and
+\[
+d_\square(C,\mathcal G_1(c))
+=\min_{C'\in\mathcal G_1(c)}\{\text{square exchanges along a gallery walk }C\to C'\},
+\]
+with value \(+\infty\) if no such cycle exists. This distance does **not** bound the grades along intermediate cycles.
+
+**Lemma (factor projection is nonexpansive in the sum metric).** Let \(c=c^{(1)}\boxtimes\cdots\boxtimes c^{(m)}\) be an independent Cartesian product of legal colorings. Every projective full-geodesic cycle \(C\) of the product has well-defined factor projections \(C_j\in\mathcal G(c^{(j)})\), obtained by retaining only steps in factor \(j\). For a single square exchange \(C\to C'\), either every factor projection is unchanged, or there is a unique factor \(j\) in which \(C_j,C'_j\) are square-exchange neighbors. In particular,
+\[
+\boxed{
+\sum_{j=1}^m d_{\square,j}(C_j,C'_j)\le1
+}\tag{BE4}
+\]
+and for any two product cycles \(C,D\),
+\[
+\boxed{
+d_\square(C,D)\ge\sum_{j=1}^m d_{\square,j}(C_j,D_j).
+}\tag{BE5}
+\]
+
+*Proof.* Choose any rooted representative of the product cycle and restrict its root bits and temporal direction order to each Cartesian factor. Interleaving steps in other factors does not affect colors or vertices of the projected factor path. Cyclic shifts of the global representative restrict to cyclic shifts of each factor representative, and global antipodal translation restricts to its factor analogues, so the projected projective cycles are well defined. A swap of two consecutive global directions belonging to distinct factors does not alter either factor's relative order or rooted edge sequence, and hence fixes every projected cycle. A swap involving two directions of one factor changes only their relative order in that factor; they are cyclically adjacent there, so this produces at most one factor square-exchange step. This proves (BE4). Summing (BE4) along any gallery walk and applying the triangle inequality in each factor gives (BE5). \(\square\)
+
+**Theorem (tensor lower bound on escape-to-one-turn distance).** For the above independent product and every full product cycle \(C\),
+\[
+\boxed{
+d_\square(C,\mathcal G_1(c))
+\ \ge\
+\sum_{j=1}^m d_{\square,j}(C_j,\mathcal G_1(c^{(j)})).
+}\tag{BE6}
+\]
+*Proof.* A one-turn projective product cycle admits a full representative with monochromatic temporal word: cyclically move its root across the unique projective turn. Projecting this monochromatic full geodesic onto every factor gives a monochromatic full geodesic in that factor. Thus each factor projection of a grade-one product cycle lies in the corresponding \(\mathcal G_1(c^{(j)})\). Apply (BE5) to a shortest gallery walk from \(C\) to any grade-one product cycle, and minimize its factor distances. \(\square\)
+
+**Theorem (linear-depth grade-three traps despite universal profile support).** For every integer \(m\ge1\), there is a **vertex-balanced legal antipodally odd** coloring \(c_m\) on
+\[
+\boxed{Q_{18m}}\tag{BE7}
+\]
+that realizes every binary full-geodesic direction-indexed color profile and every projective color degree permitted by its factor witnesses, contains monochromatic full antipodal geodesics, and contains a projective direction-rainbow cycle \(C_m\) of grade three with
+\[
+\boxed{
+d_\square(C_m,\mathcal G_1(c_m))\ge2m=\frac{n}{9}.
+}\tag{BE8}
+\]
+
+*Proof.* The established balanced local-square realization theorem (BR6), together with its full-profile completion (BR4), supplies a legal vertex-balanced coloring \(b\) on \(Q_{18}\) whose standard full geodesic has chronological color word \(0^6 1^6 0^6\). Its projective cycle \(C_*\) has grade three, and **every** adjacent square-exchange neighbor has grade five. Therefore \(d_\square(C_*,\mathcal G_1(b))\ge2\). The same coloring has full direction-profile support by (BR4), hence possesses monochromatic full geodesics.
+
+Take the independent product \(c_m=b^{\boxtimes m}\). It is legal, antipodally odd, and vertex-balanced, and its direction-profile support is the Cartesian product of the full supports of the \(m\) factors, hence the full binary cube of size \(18m\). Interleave the chosen factor geodesics *run by run*: first all six-edge zero prefixes, then all six-edge one middles, finally all six-edge zero suffixes. This is a full product geodesic with word
+\[
+0^{6m}1^{6m}0^{6m},
+\]
+so its projective cycle \(C_m\) has grade three. Every projected factor cycle is \(C_*\), and (BE6) yields
+\[
+d_\square(C_m,\mathcal G_1(c_m))
+\ge\sum_{j=1}^m d_\square(C_*,\mathcal G_1(b))
+\ge2m.
+\]
+Monochromatic product full geodesics exist by concatenating monochromatic factor geodesics of the same color, using antipodal translation where necessary. \(\square\)
+
+**Implications and boundary.** The coloring family is globally successful, even profile-universal and vertex-balanced, yet an arbitrarily chosen three-turn projective cycle can be linearly far in the unrestricted square-exchange graph from *every* one-turn witness. Intermediate grades are completely unrestricted in (BE8), so permitting uphill excursions alone does not yield a bounded-length repair. This substantially strengthens the one-step grade-five island phenomenon (BR6). It refutes a universal \(o(n)\)-exchange repair principle from an arbitrary grade-three witness. It does **not** rule out a proof using a different strategically selected witness, a global extremization criterion, or a nonlocal operation affecting several Cartesian factors simultaneously.
+
+
+
+##### Connectivity and a quadratic diameter bound for the ungraded Petrie gallery
+
+The square-exchange gallery has a purely combinatorial connectivity property, independent of the edge coloring. To avoid identifying the two orientations of a cycle, work first with **oriented** projective direction-rainbow Petrie cycles; the unoriented gallery is their quotient.
+
+**Theorem (ungraded gallery diameter).** For every \(n\ge2\), the oriented projective full-geodesic square-exchange gallery is connected, with diameter at most
+\[
+\boxed{(n-1)(2n-3)+\binom{n-1}{2}.}\tag{BE9}
+\]
+Consequently the same bound holds for its unoriented quotient.
+
+*Proof.* Distinguish direction zero. An oriented projective Petrie cycle can be represented uniquely by a root \(x\) with bit \(x_0=0\) and a full direction order
+\[
+(0,\pi_1,\ldots,\pi_{n-1}),
+\]
+with all \(\pi_j\) distinct and in \(\{1,\ldots,n-1\}\). Indeed cyclic root rotation moves its unique direction-zero edge to the first position, while its antipodal mate gives the complementary root, of which precisely one has bit zero equal to zero.
+
+Swapping two adjacent entries among \(\pi_1,\ldots,\pi_{n-1}\) is an allowed square exchange and does not alter \(x\). Thus the tail can be arbitrarily permuted in at most \(\binom{n-1}{2}\) exchanges.
+
+To toggle any selected root bit \(i>0\), first move direction \(i\) to the front of the tail by at most \(n-2\) adjacent swaps. The order begins \((0,i,\ldots)\). Exchange the leading directions, producing \((i,0,\ldots)\), and cyclically slide the root through the new first \(i\)-edge until the order begins with direction zero again. This changes the canonical root to \(x+e_i\); bit zero remains zero. The resulting tail has moved \(i\) to its end. Restore the original tail order using at most \(n-2\) adjacent swaps. The total cost of toggling root bit \(i\) while preserving the desired tail is at most \(2n-3\).
+
+Thus any two canonical roots can be connected by changing at most \(n-1\) bits, using at most \((n-1)(2n-3)\) moves. Afterward reorder the tail to the desired permutation in at most \(\binom{n-1}{2}\) moves. This proves connectivity and (BE9). Passing to the unoriented quotient cannot increase distances. \(\square\)
+
+**Corollary (what an unrestricted exchange-to-one-turn assertion means).** For any legal coloring \(c\), the existence of a gallery walk from one (equivalently every) projective three-turn cycle to some projective one-turn cycle, with no restriction on its intermediate grades or its length, is *equivalent to the existence of a one-turn cycle itself*, provided a three-turn cycle is present. The gallery walk then exists for every coloring solely by the connectivity theorem. In the one-defect normalization (GD4), obtaining the desired one-turn endpoint would settle NORI1; connectivity supplies no additional color-based existence information.
+
+*Proof.* If a one-turn cycle exists, the connectivity theorem joins it to every starting cycle. Conversely any walk ending at one-turn exhibits such a cycle. A one-turn projective cycle corresponds by cyclic root rotation to a monochromatic full antipodal geodesic. \(\square\)
+
+Together with the linear-distance trap (BE8), this establishes that a useful exchange proof must involve **more** than abstract connectivity and an unspecified uphill detour. It may control a structural potential, restrict a strategically extremized starting witness, exploit correlated collections of cycles, or give a color-based reason that a one-turn endpoint must exist. Even the bound (BE9) on gallery diameter holds in hypothetical counterexamples and therefore has no NORI1-closing force by itself.
+
+
+
+##### Audited eighteen-cube escape distance five; linear amplification
+
+Take the deterministic balanced legal coloring b on Q_18 of (BR2)--(BR7), with original projective Petrie cycle C_* supported on the standard direction order 0,1,...,17 and chronological word 0^6 1^6 0^6. The completed coloring uses the two-bit-paired rules of (BR2), the BR7 alternate square prescriptions and the default unary rule (BR3); it realizes every direction-profile by (BR4).
+
+**Computer-assisted finite lemma (certified escape depth).**
+\[
+\boxed{d_\square(C_*,\mathcal G_1(b))=5.}\tag{BE10}
+\]
+
+*Finite proof certificate.* Represent every oriented projective cycle canonically by its first direction zero and a root with bit zero equal to zero. Generate each of its 18 square-exchange neighbors by rotating to one cyclic adjacent pair, swapping the two directions, then returning to canonical form. Evaluate the resulting direction-order path with the deterministic BR2--BR3 coloring. Its odd projective grade is its internal switch count plus one if its final and initial edge colors agree. Exhaustive breadth-first enumeration yields the following size and grade counts on the successive distance layers:
+\[
+\begin{array}{c|r|rrrrrrr}
+R&\#&g=1&g=3&g=5&g=7&g=9&g=11&g=13\\
+0&1&0&1&0&0&0&0&0\\
+1&18&0&0&18&0&0&0&0\\
+2&171&0&15&25&131&0&0&0\\
+3&1140&0&42&263&343&492&0&0\\
+4&5985&0&182&954&2051&1792&1006&0\\
+5&26334&2&666&3647&8003&8517&4422&1077
+\end{array}\tag{BE11}
+\]
+No grade-one cycle lies within four exchanges. The sequence of cyclic exchange indices (zero-based)
+\[
+\boxed{6,\ 5,\ 9,\ 8,\ 10}\tag{BE12}
+\]
+changes the original grade three through grades 5,3,5,3,1, and ends at the full direction order
+\[
+(0,1,2,3,4,7,5,6,10,8,11,9,12,13,14,15,16,17),
+\]
+whose temporal edge-color word is all zeros. This proves the upper and lower distance bounds. The layer counts and path were independently checked by a deterministic self-contained Python audit (petrie_grade18_exchange_audit.py), using only bit arithmetic, set-based breadth-first enumeration, and assertions. It also verifies edge-direction invariance, antipodal oddness, and balance in the stated rule system. The computer-assisted component is solely the finite enumeration (BE11), not the product induction.
+
+**Theorem (linear-depth successful balanced three-turn cycles).** For every integer h>=1, let N=18h. There exists a legal vertex-balanced antipodally odd coloring c_h of Q_N realizing *every* binary direction-indexed full-geodesic profile, with monochromatic full geodesics, and with a projective grade-three cycle C_h such that
+\[
+\boxed{d_\square(C_h,\mathcal G_1(c_h))
+\ge5h=\frac{5N}{18}.}\tag{BE13}
+\]
+No upper bound on turn grades along the exchange walk is imposed.
+
+*Proof.* Let c_h be the independent h-fold Cartesian power b^{\boxtimes h}. It is legal, balanced and full-profile-universal, by factor product rules and (BR4). Choose in every factor a copy of C_* and interleave its three chronological runs, first all six-edge zero prefixes, then all six-edge one middles, then all six-edge zero suffixes. The product full path has word 0^{6h}1^{6h}0^{6h}, hence its projective cycle C_h has grade three and projects to C_* in every factor. Every global square exchange changes the projected projective cycle in at most one factor (BE4)--(BE6). Since any global grade-one witness must project to a grade-one factor cycle, its distance from C_h is at least the sum of factor distances, namely 5h. A monochromatic full product geodesic exists by concatenating same-color monochromatic geodesics of the factors. \(\square\)
+
+The finite certificate strengthens the symbolic exchange-distance bound 1/9 from (BE8) to 5/18. It proves a *global* linear obstacle to repairing an arbitrarily selected three-turn witness through adjacent square exchanges, even when intermediate grades are unrestricted and the coloring itself is successful and profile-universal. It does not refute NORI1.
+
+
+##### Paired-turn non-isolation and its sharp balanced converse
+
+Let C be a projective direction-rainbow Petrie cycle of a legal antipodally odd coloring, represented by a temporal edge word 0^a 1 0^b, with a,b>=1.
+
+**Theorem (two unavoidable nonascending exchanges).** Swapping the exceptional one-colored edge with either its immediately preceding or following zero-colored edge gives a projective Petrie cycle of grade at most three. If the coloring has no grade-one cycle, both neighbors have grade three. For n>=4 these are distinct neighbors, so a singleton-defect grade-three cycle cannot be isolated in the grade-three sublevel gallery of a hypothetical NORI1 counterexample.
+
+*Proof.* Projectively complete the edge-color word with the antiperiodic rule. A swap changes two adjacent edge-color observations and affects only their three surrounding turn bits; the change of turn count is even. In each of the two swaps next to the singleton defect, the three-turn window initially contains at least the two switched turns surrounding that defect. If its count is two, the replacement window retains an even count, hence at most two; if its count is three, the replacement count is odd, hence at most three. All outside turns stay unchanged. Therefore the grade cannot increase beyond three. Positive odd grades below four are one and three. The two transpositions are different for n>=4. \(\square\)
+
+**Theorem (balanced sharpness).** In every even dimension n=2m>=18 there is a legal vertex-balanced coloring with full profile support W(c)=F_2^n and a one-exception Petrie cycle C of word
+\[
+0^{m-1}\,1\,0^m,
+\]
+with precisely two grade-three immediate exchange neighbors, no grade-one immediate neighbor, and grade five at all its remaining n-2 neighbors.
+
+*Proof.* In the balanced local-square realization theorem (BR2)--(BR5), prescribe the indicated original word. The two cyclic adjacent swaps touching its lone one-colored edge originally replace pairs 01 and 10. Prescribe alternate color pair 11 in each case; because the outer edges are zero, this preserves the local count of two turns and gives grade three. The three cyclic switched turns are otherwise separated by gaps at least three. Every remaining swap therefore sees at most one original turn in its three-turn window; use the alternate-pair prescription (BR7) to increase the number of turns by two, producing grade five. All n local prescriptions are jointly realizable by the balanced construction (BR2), and in n>=18 its default completion retains full profile support (BR4), including monochromatic full geodesics. \(\square\)
+
+Thus the two nonascending square exchanges forced by a singleton defect are the strongest purely first-neighborhood conclusion possible, even in perfectly balanced globally successful profile-universal colorings. They do not alone yield a one-turn witness.
+
+
+
+##### Linear-depth single-defect Petrie traps via three separated directional anchors
+
+Write \(H_2(\alpha)=-\alpha\log_2\alpha-(1-\alpha)\log_2(1-\alpha)\), and fix a constant \(0<\alpha<1/4\) with \(H_2(\alpha)<1/2\), for instance \(\alpha=1/10\). Let \(R=\lfloor\alpha n\rfloor\).
+
+**Theorem (linear-radius singleton-defect exchange traps).** For every sufficiently large \(n\), there exists a legal antipodally odd coloring \(c\) of \(Q_n\) attaining every direction-indexed full-geodesic binary color profile and every chronological color word, with a projective Petrie cycle \(C\) whose representative full path has a single color-one edge and
+\[
+\boxed{d_\square(C,\mathcal G_1(c))>R.}\tag{AT3}
+\]
+In particular, the coloring is globally successful although no projective cycle obtainable from this singleton-defect \(C\) in at most \(\lfloor n/10\rfloor\) adjacent square exchanges has grade one.
+
+*Proof.* Fix the standard oriented projective cycle \(C\) rooted at the zero vector with direction order \(0,1,\ldots,n-1\). Choose three marked directions
+\[
+p=\lfloor n/4\rfloor,\quad q=\lfloor n/2\rfloor,\quad r=\lfloor3n/4\rfloor.
+\]
+They occur in the canonical cyclic order \(0,p,q,r\), with successive gaps of order \(n/4\). Prescribe on the original path the word having a single color-one edge in direction \(q\), every other edge being color zero.
+
+An oriented projective cycle has a canonical lift whose first step is in direction zero and whose starting root has bit zero equal to zero. Among cycles obtained from \(C\) by at most \(R\) cyclic adjacent exchanges, the four marked directions \(0,p,q,r\) retain their cyclic order: changing their order would require first bringing two originally separated marked directions into cyclic adjacency, requiring at least the number of intervening directions, which is larger than \(R\) for all sufficiently large \(n\). Hence **every** canonical full path in the exchange ball uses the marked directions in the linear order \(p,q,r\).
+
+For each \(i\in\{p,q,r\}\), consider all direction-\(i\) edge orbits visited by cycles in this ball. The projective direction-\(i\) edge orbits form a folded \((n-1)\)-cube. One square exchange changes the used direction-\(i\) orbit, if at all, by one transverse step. Therefore the number of visited orbits in that direction is at most
+\[
+B_{n-1}(R)=\sum_{j=0}^R\binom{n-1}{j}.
+\tag{AT4}
+\]
+Prescribe color zero on **every encountered direction-\(p\) and direction-\(r\) edge**, and color one on **every encountered direction-\(q\) edge**, always evaluated on the canonical representative. These prescriptions are simultaneously consistent with antipodal oddness: all three marked directions are nonzero, and every canonical lift uses them after direction zero, so both endpoints of each encountered marked-direction edge have bit zero equal to one. Its antipodal mate has bit zero equal to zero and can never be an observed canonical representative of that direction. Thus the same antipodal edge orbit cannot receive conflicting prescribed colors. On the remaining \(n-3\) original C-orbits, prescribe color zero as well; all these original orbits have distinct directions, and their mates receive the complementary values. The total number of prescribed edge-orbit variables is at most
+\[
+\boxed{3B_{n-1}(R)+n.}\tag{AT5}
+\]
+
+Every canonical path of every cycle in the ball uses a direction-\(p\) edge of color zero, later a direction-\(q\) edge of color one, and still later a direction-\(r\) edge of color zero. Its temporal word therefore has **at least two internal color changes**, so its positive odd projective turn grade is at least three. In particular **no grade-one cycle is present anywhere in the ball**. This argument uses an ordered three-color pattern, not just the presence of both colors.
+
+By the established exponentially robust legal profile-and-word packing theorem (RPC1), for any fixed \(A>6e\), in every sufficiently large dimension there exists a legal coloring \(d\) having at least \(K_n=\lfloor\gamma_A2^{\lfloor n/2\rfloor}\rfloor\) pairwise antipodal-edge-orbit-disjoint geodesic witnesses of **every** direction profile and **every** temporal color word. Since \(H_2(\alpha)<1/2\),
+\[
+3B_{n-1}(\lfloor\alpha n\rfloor)+n
+\le 2^{(H_2(\alpha)+o(1))n}<K_n
+\]
+for all sufficiently large n. Modify fewer than \(K_n\) orbit variables of \(d\) to implement all the above finite local prescriptions. Each target still has at least one untouched geodesic witness, so the resulting legal coloring \(c\) attains every direction profile and every temporal word. On the other hand, its entire radius-\(R\) exchange ball about the prescribed singleton-defect C contains no grade-one cycle. This proves the theorem. \(\square\)
+
+**Theorem (balanced amplification).** For every sufficiently large \(n\), the complementary paired lift \(L(c)\) is a legal, perfectly vertex-balanced coloring on \(Q_N\), \(N=2n\), with full direction-profile support and monochromatic full geodesics. It contains a singleton-defect projective Petrie cycle \(C^+\) satisfying
+\[
+\boxed{d_\square(C^+,\mathcal G_1(L(c)))>\lfloor N/20\rfloor.}\tag{AT6}
+\]
+
+*Proof.* Use old rules \(L(c)_i(x,z)=c_i(x)\) and paired new rules \(L(c)_{n+i}(x,z)=1+c_i(x)\). Every old/new pair contributes one edge of each color at every vertex, so this is a legal balanced coloring. The full-profile cylinder property (SM3) preserves profile universality.
+
+For the original singleton-defect path P rooted at x, put every new direction n+i with \(c_i(x)=1\) before P and every new direction with \(c_i(x)=0\) after P. Such new edges are zero: before P their color is \(1+c_i(x)=0\), and after P it is \(1+c_i(\bar x)=c_i(x)=0\). Thus the lifted full path has the same single defect and projects to C.
+
+Project any full projective cycle of the lifted cube onto its old directions. The result is a projective full cycle in the original cube. A square exchange involving two old steps projects to at most one cyclic adjacent square exchange; an exchange involving a new step does not change the old projected cycle because old rules ignore all new bits. Thus projection does not increase gallery distance. Every lifted grade-one cycle has a monochromatic full representative, whose projection is a monochromatic full path of the original coloring, and therefore projects to an old grade-one cycle. Applying (AT3) yields (AT6). \(\square\)
+
+**Audit and consequence.** The preliminary approach of coloring all off-C local edges blue was insufficient: a mixed binary temporal word may have just one switch and give projective grade one. The proof above replaces it by **three ordered anchored directions of colors 0,1,0**. That stronger condition guarantees the needed two internal changes throughout the ball, and the projection argument proves a linear-depth singleton-defect trap even under vertex balance and profile universality. Hence a proposed NORI1 proof cannot rely on a sublinear number of adjacent direction exchanges from an arbitrarily chosen one-defect witness; global selection or nonlocal moves remain necessary.
+
+
+##### Linear-radius exchange-ball cloning for arbitrary legal colorings
+
+The direction-orbit exposure bound (AT4) improves the earlier crude branching-tree estimate (BE1), independently of whether the distinguished cycle has a singleton defect.
+
+**Theorem (linear-radius full-neighborhood indistinguishability).** Fix \(0<\alpha<1/2\) with \(H_2(\alpha)<1/2\), such as \(\alpha=1/10\), and put \(R=\lfloor\alpha n\rfloor\). For every sufficiently large \(n\), every legal antipodally odd coloring \(c\) of \(Q_n\), and every projective direction-rainbow Petrie cycle \(C\), there exists a second legal coloring \(\widetilde c\) of the same cube such that:
+
+(i) every undirected edge color on every projective Petrie cycle within \(R\) adjacent square exchanges of \(C\) agrees with \(c\), including the complementary antipodal mate values;
+
+(ii) all those cycles retain their projective grades, all neighbor relations, and all local color patterns inside the ball;
+
+(iii) \(\widetilde c\) realizes every binary direction-indexed full-geodesic profile and every chronological full-geodesic word. In particular, \(\widetilde c\) has monochromatic full antipodal geodesics.
+
+*Proof.* Let \(E_{\rm orb}(\mathcal B_R(C))\) be the union of the antipodal edge orbits used by cycles in the gallery ball. For each direction i, its edge orbits form a folded \((n-1)\)-cube; exchanging adjacent directions i,j replaces its direction-i edge orbit by the neighboring parallel orbit across j. Hence the direction-i orbit stays within the folded Hamming ball of radius R about the orbit on C. Such a ball has at most \(\sum_{j=0}^R\binom{n-1}{j}\) members, so
+\[
+\boxed{
+|E_{\rm orb}(\mathcal B_R(C))|
+\le n\sum_{j=0}^R\binom{n-1}{j}
+\le2^{(H_2(\alpha)+o(1))n}.
+}\tag{BE14}
+\]
+For a fixed \(A>6e\), the established robust packing result (RPC1) gives a legal coloring \(d\) of \(Q_n\) having \(K_n=\lfloor\gamma_A2^{\lfloor n/2\rfloor}\rfloor\) pairwise antipodal-edge-orbit-disjoint witnesses for *every* direction profile and every chronological word. For sufficiently large n the bound (BE14) is smaller than \(K_n\), since \(H_2(\alpha)<1/2\). On every edge orbit in \(E_{\rm orb}(\mathcal B_R(C))\), overwrite \(d\)'s color with the corresponding color of the original legal coloring \(c\), and set its mate to the complementary color. This is consistent because c is legal and uses fewer than \(K_n\) orbit modifications. The resulting coloring \(\widetilde c\) agrees with c on the entire R-ball. For any target profile or chronological word, at most \(K_n-1\) of its \(K_n\) orbit-disjoint witnesses are affected, leaving at least one untouched. Thus \(\widetilde c\) is simultaneously profile-universal and word-universal, proving every claim. \(\square\)
+
+The entropy equation \(H_2(\alpha)=1/2\) has its smaller solution near \(0.1100\). Thus the theorem permits every fixed linear-radius fraction below this value, a substantial strengthening of (BE3), which permitted only order \(n/\log n\). This result does **not** preserve vertex balance for arbitrary input c, but the singleton-defect specialization (AT6) does produce balanced, full-profile-universal examples with linear exchange-depth.
+
+**Interpretation.** No property determined solely by the colored projective square-exchange ball of radius \(\lfloor0.1n\rfloor\) around one fixed witness cycle can certify global failure of NORI1. Whatever locally compatible pattern is present around that cycle can also be embedded, unchanged through this linear radius, in a legal coloring with full profile and word support. Any exchange-based closure proof must compare globally selected witnesses, exploit nonlocal moves, or use relations involving multiple distant exchange neighborhoods.
+
+
+##### Deterministic quarter-dimension singleton-defect exchange traps
+
+The robust packing theorem is not needed to build singleton-defect traps with a linear exchange barrier. A unary default coloring provides a larger radius and preserves full direction-profile support by a free-root argument.
+
+**Theorem (quarter-dimension trap).** For every sufficiently large integer \(m\), put \(n=4m\). There is a legal antipodally odd coloring \(c\) of \(Q_n\) with
+\[
+\boxed{\mathcal W(c)=\mathbb F_2^n,}\tag{AT7}
+\]
+and a projective direction-rainbow Petrie cycle \(C\) represented by a full geodesic of temporal word
+\[
+0^{2m}\,1\,0^{2m-1}
+\]
+such that
+\[
+\boxed{d_\square(C,\mathcal G_1(c))\ge m=n/4.}\tag{AT8}
+\]
+The bound permits all intermediate turn grades. In particular the coloring itself has monochromatic full antipodal geodesics, but the designated single-defect cycle needs at least \(n/4\) adjacent square exchanges to reach any one-turn cycle.
+
+*Proof.* Use the standard direction order \(0,1,\ldots,n-1\) from the zero root for the distinguished cycle C. Mark four cyclic directions
+\[
+0,\quad p=m,\quad q=2m,\quad r=3m.
+\]
+Any cyclic adjacent transposition sequence of fewer than m exchanges preserves the cyclic order of these four marked directions: initially each pair of successive marked directions has \(m-1\) unmarked directions between it, so at least m swaps are needed to transpose two marked directions. Thus in the canonical representative (starting with direction zero), every cycle within \(m-1\) exchanges traverses p, then q, then r in that order.
+
+Begin with the unary legal odd coloring
+\[
+\boxed{d_0(x)=x_1,\qquad d_i(x)=x_0\quad(1\le i<n).}\tag{AT9}
+\]
+Its full direction-profile support is all \(\mathbb F_2^n\), with a large family of witnesses for each target profile. Indeed, given target \(w\), start with bit \(x_0=0\), order all nonzero directions i with \(w_i=0\) before direction zero and all those with \(w_i=1\) after it, and choose starting bit
+\[
+x_1=w_0+\mathbf1_{\{1\text{ placed before }0\}}\pmod2.
+\]
+This gives color w_i on every direction i, while the remaining \(n-2\) starting bits are unconstrained.
+
+Let \(\mathcal B_{m-1}(C)\) be the projective square-exchange ball. For every direction-p and direction-r edge orbit encountered by any canonical representative in this ball, change the color of its encountered edge to zero and that of its antipodal mate to one. These changes are consistent: a canonical representative has initial bit zero equal to zero and takes direction zero first, so every subsequent edge in any nonzero direction has bit zero equal to one at both endpoints. An antipodal mate has bit zero equal to zero and is never an observed canonical edge in that direction. Leave all encountered direction-q edges at the default color one. Finally change to zero the colors of each original C-edge in the other nonzero directions, which are default-one; direction zero is already zero at the original root. The resulting legal odd coloring c has the advertised singleton word along C.
+
+By the folded direction-orbit estimate (AT4), each of the two modified marked directions contributes at most
+\[
+B_{n-1}(m-1)=\sum_{j=0}^{m-1}\binom{n-1}{j}
+\]
+changed edge-orbit variables, and the remaining original-C adjustments contribute at most n. Thus the modification set \(\mathscr M\) satisfies
+\[
+\boxed{|\mathscr M|\le 2B_{n-1}(m-1)+n.}\tag{AT10}
+\]
+
+Now fix any prescribed full direction-profile target w, and choose the unary-default geodesic order and its bits \(x_0,x_1\) as above. Vary independently the other \(n-2\) starting bits. For each nonzero direction i, its traversed undirected edge orbit is uniform on a family of at least \(2^{n-3}\) distinct antipodal edge orbits: the n-3 free bits other than i determine distinct orbits, since bit zero is fixed at this step. Hence the probability that the selected default witness traverses any one modified orbit of direction i is at most \(2^{-(n-3)}\). Direction-zero edges were not modified. By the union bound,
+\[
+\Pr\{\text{some used orbit lies in }\mathscr M\}
+\le\frac{2B_{n-1}(m-1)+n}{2^{n-3}}=o(1).
+\tag{AT11}
+\]
+The last equality follows from the standard entropy estimate
+\(B_{n-1}(m-1)\le2^{(H_2(1/4)+o(1))n}\)
+and \(H_2(1/4)<1\). For every sufficiently large n, choose free starting bits avoiding all altered orbits. That geodesic still realizes the target profile w in the modified coloring c. As w was arbitrary, (AT7) follows.
+
+Finally, every cycle \(C'\) within at most \(m-1\) adjacent exchanges of C retains the cyclic marked-direction order \(0,p,q,r\). Its canonical full path meets a direction-p edge of color zero, then a direction-q edge of color one, then a direction-r edge of color zero, by the corresponding orbit prescriptions. It therefore has at least two internal switches, and its positive odd projective grade is at least three. There is no grade-one cycle within that radius, proving (AT8). \(\square\)
+
+**Corollary (balanced one-eighth-dimension trap).** For every sufficiently large m there exists a perfectly vertex-balanced legal antipodally odd coloring of \(Q_N\), \(N=8m\), with full binary direction-profile support, monochromatic full geodesics, and a single-defect projective cycle C^+ for which
+\[
+\boxed{d_\square(C^+,\mathcal G_1)\ge m=N/8.}\tag{AT12}
+\]
+
+*Proof.* Apply the complementary paired lift to the coloring c of the theorem. Each old/new direction pair contributes one incident edge of each color, establishing balance. The established profile-cylinder identity (SM3) preserves full profile support. Lift the singleton-defect full geodesic by inserting each new direction \(n+i\) before it if \(c_i(x)=1\) at the old root x, or after it if \(c_i(x)=0\). Both choices give a zero-colored new edge because the new rule is \(1+c_i\) and c is antipodally odd. The lifted cycle therefore still has one defect and projects onto C.
+
+Projection of a lifted projective cycle to the old directions is a projective full cycle of c. Adjacent square exchange projects to at most one old adjacent square exchange (zero if one exchanged direction is new). A one-turn lifted cycle admits a monochromatic representative, which projects to a monochromatic full old geodesic and hence an old one-turn cycle. Thus its gallery distance from the lifted initial cycle is at least the old distance \(m\). \(\square\)
+
+**Interpretation.** The three-direction anchor method (AT3)--(AT6) is strengthened to a deterministic quarter-dimension distance barrier, without probabilistic smoothing: the unary star (AT9) retains n-2 free initial bits for every target profile, enough to avoid all altered orbits in two marked direction classes. The balanced lift retains a one-eighth-dimension obstruction. Thus even a singleton-defect projective cycle in a completely profile-universal, vertex-balanced and globally successful legal coloring can lie linearly far from all one-turn cycles. This does not rule out a closure argument that chooses a specially extremized witness or performs exchanges beyond adjacent direction swaps.
+
+
 ### Lipschitz variation under exchanges and an unbounded root seam
 
 The twisted cyclic-variation invariant \(D\) of the preceding subsection depends only on the canonical flag-rotation orbit, not on the root selected within the orbit. Its behavior under individual Coxeter rank exchanges makes the key distinction between the two motivating geometries precise: exchanges preserving the starting cube root are local in \(D\), but the exchange changing that root can alter \(D\) by an amount linear in dimension.

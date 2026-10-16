@@ -13,3 +13,4 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Sharp obstruction skeleton for critical switch vectors](../note_9cd0740e0da3b7c59714ce3a.md) — active/proved
 - [Six-vertex boundary orientation forces at least four cyclic switches](../note_91b400f5dab6ecb7fa885a97.md) — active/proved
 - [The initial eight-flag cube dihedral residue can have nonzero second-switch winding](../note_60128847912e44568120189a.md) — active/proved
+- [Walsh residual moments and forced spectral clusters in balanced odd cube colorings](../note_nori_forced_neartop_walsh_spectrum_20261015.md) — active/proved

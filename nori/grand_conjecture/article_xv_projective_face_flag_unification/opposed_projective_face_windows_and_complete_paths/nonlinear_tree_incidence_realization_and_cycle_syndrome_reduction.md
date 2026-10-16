@@ -679,3 +679,24 @@ Hence \(r_f+r_g=p_f+p_g\), and the two choices of \(x_w\) realize both pairs of 
 All three cases occur on a two-direction tree with constant colors at \(v\). For the diagonal, choose \((U,V)=(1,0)\) and \(f_w=0,g_w=1\). For the antidiagonal, choose \((U,V)=(1,1)\) and \(f_w=g_w=0\). For the full relation, take \(s=0,(U,V)=(1,0)\) and \(f_w(x_v)=x_v,\ g_w(x_v)=1-x_v\).
 
 **Consequence for induction.** When the two paths belong to unrelated colorings, deleting a leaf must retain whether its two observations at the parent agree, disagree, or are unrestricted, together with the parent root bit and traversal colors. Replacing all leaf interfaces by opposite-bit observations loses admissible pairs already in dimension two. The unconditional opposite-bit interface for two paths in a *single* coloring uses the common-coloring hypothesis essentially. The parity relation (SI1) and the three-way relation (SI3), subsequently intersected with the parent-local color equations, describe the boundary information needed by a simultaneous-root induction on trees.
+
+
+## Quantitative gluing across a constant direction
+
+Let F be any binary coloring of Q_(m+1) in which all edges in one direction i have common color t. Let g_0 and g_1 be its two induced Q_m facet colorings, and write A_0,A_1 for the respective rising and falling starting-root sets.
+
+**Theorem (sharp cross-seam multiplicity).**
+\[
+\boxed{|P(F)|\ge 2\,|A_0(g_0)\cap A_1(g_1)|.}\tag{CG1}
+\]
+Furthermore the two cross intersections \(A_0(g_0)\cap A_1(g_1)\) and \(A_0(g_1)\cap A_1(g_0)\) have equal size. The coefficient two is sharp.
+
+*Proof.* Reversing a full path identifies \(A_1(g_s)=\overline{A_0(g_s)}\). The antipodal map therefore bijects the two cross intersections; denote their common size by K.
+
+If t=0, any starting root (s,y) with y in \(A_0(g_{1-s})\cap A_1(g_s)\) is paired: for the rising witness traverse i first and then a rising path in facet 1-s; for the falling witness traverse a falling path in facet s and then i last. If t=1, any (s,y) with y in \(A_0(g_s)\cap A_1(g_{1-s})\) is paired: place i last on the rising path and first on the falling path. Thus each of the two i-facets contains at least K paired roots, proving (CG1).
+
+When g_0=g_1=g and other edge colors are independent of bit i, F is the Cartesian product of g with a single constant-colored direction. Projecting full paths and inserting the constant-colored step at the appropriate phase seam gives \(P(F)=P(g)\times\{0,1\}\), hence equality in (CG1). \(\square\)
+
+**Corollary.** If both facet colorings each have a one-vertex directed feedback set, the existing two-color cross-root theorem implies \(|P(F)|\ge2^m\). If both are two-hub stars (possibly with unrelated hub functions and leaf templates), the established cross-root bound implies \(|P(F)|\ge2^{m-2}\).
+
+The quantitative statement makes the source-direction induction bottleneck explicit. A strengthened two-hub cross-root lower bound \(2^{m-2}\) would give \(|P(F)|\ge2^{m-1}\), matching the proposed feedback-number-two paired-root multiplicity. Such a cross-root improvement is not proved here.

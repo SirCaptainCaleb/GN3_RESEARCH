@@ -793,3 +793,343 @@ j+1,j+2,\ldots,j-1,j.
 Hence every successive forward arc occurs. Joining the already established \(j\to j+1\) gives (CF2). \(\square\)
 
 In particular, if the union pair has no directed Hamilton cycle of this orientation, the shared-projection cross-root assertion holds in every dimension. The other unresolved shared-site prototype, \(H(a,b)=a\land b\), has two incoming neighbor influences and requires a different structural argument.
+
+
+## Root-diagonal transport and cross-favorability under one feedback vertex
+
+For any binary coloring f of undirected edges of Q_n, let D(f) contain an arrow j->i when a direction-i edge color depends on bit j. Let A_0(f), A_1(f) be roots of full dimension-simple geodesics with words 0^*1^*, 1^*0^* respectively. We assume n>=2. A direction h is a feedback vertex when D(f)-h is acyclic.
+
+**Lemma 1 (all-root acyclic geodesics).** An edge coloring with acyclic directed influence graph has a rising full geodesic from every root. The assertion remains true after restricting to any set of directions and fixing the remaining bits.
+
+*Proof.* Choose a sink direction i: its bit influences no other edge color. By induction take a rising geodesic on the other directions. Insert i at its zero-to-one seam, putting its step in the appropriate color block. The original steps retain their colors, giving a rising complete geodesic. Induced dependency subgraphs of a DAG remain acyclic. QED.
+
+**Theorem 2 (hub fiber and diagonal transport).** Suppose D(f)-h is acyclic. Write x=(s,y), separating the h-bit s from the remaining bits y. Then
+
+\[
+\boxed{x\in A_0(f)\ \text{or}\ x\oplus e_h\in A_0(f).}\tag{HD1}
+\]
+
+For every j distinct from h,
+
+\[
+\boxed{x\in A_0(f)\ \text{or}\ x\oplus e_h\oplus e_j\in A_0(f).}\tag{HD2}
+\]
+
+Furthermore each fixed-h-bit face meets A_0(f). The same assertions hold with A_1(f) in place of A_0(f).
+
+*Proof.* Fix s,y. In the facet h=s choose, by Lemma 1, a rising complete geodesic over a set T of nonhub directions, leaving all other bits fixed. Write B for its zero-prefix directions and z=y xor 1_B for the endpoint of that prefix. All edges in the remaining suffix T\B have color one.
+
+For (HD1), take T to be all nonhub directions. If the hub edge over z has color zero, start at x, traverse B, cross the hub edge, then take a rising full geodesic on the remaining directions in h=1-s. If the hub edge has color one, start at x xor e_h, take a rising geodesic over B in the facet h=1-s, cross the same hub edge, and follow the original color-one suffix T\B in h=s. All restricted remaining colorings are acyclic, so the required rising insertions exist and both resulting routes traverse each dimension once.
+
+For (HD2), take T=[n]\{h,j}, with bit j held at its value in y. If the hub edge over z has color zero, use B from x, cross the hub edge, and finish by a rising geodesic over all remaining nonhub directions, including j, in h=1-s. If the hub edge has color one, start at x xor e_h xor e_j, traverse B union {j} by a rising geodesic in h=1-s, and arrive at leaf state z. Cross the hub edge and follow the original color-one suffix T\B in h=s. The original suffix has the same edge colors because the state at its beginning is z in both paths. These are rising full geodesics.
+
+To prove the fixed-face assertion, choose any nonhub vertex z and fixed hub bit s. If the hub edge over z is zero, take it first from (s,z) and follow a rising nonhub geodesic in h=1-s. If its color is one, begin at (s,bar z), follow a rising nonhub geodesic in h=s ending at (s,z), and take the hub edge last. Either way the starting hub bit is s. Applying the proof to the complementary coloring 1-f proves the falling variants. QED.
+
+**Corollary 3 (square restriction).** On any root square spanned by h and another direction j, at most two roots fail A_0(f). If two fail, they share the same h-bit. The same holds for A_1(f).
+
+*Proof.* The fiber property HD1 permits at most one failure for each fixed j-bit. If two failures had different h-bits they would form the forbidden diagonal in HD2. QED.
+
+**Theorem 4 (two-coloring one-feedback-vertex closure).** Suppose f and g are arbitrary edge colorings of Q_n, and there exist h,k for which D(f)-h and D(g)-k are acyclic. Then
+
+\[
+\boxed{A_0(f)\cap A_1(g)\ne\varnothing.}\tag{HD3}
+\]
+
+When h and k are distinct,
+
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2^{n-2}.}\tag{HD4}
+\]
+
+*Proof.* Suppose first h and k are distinct. Fix all root bits outside {h,k}, giving a four-root square. By Corollary 3, the roots in this square outside A_0(f) number at most two; if two, they form a pair with common h-bit. Likewise roots outside A_1(g) number at most two; if two, they form a pair with common k-bit. A two-point h-row and a two-point k-column intersect. Hence the union of these two unfavorable sets occupies at most three of the four roots. The square contains a cross-favorable root, and all 2^{n-2} disjoint squares give HD4.
+
+Now let h=k. For each nonhub bit vector y, HD1 supplies at least one of (0,y),(1,y) in A_0(f), and at least one in A_1(g). Suppose their intersection were empty. Every such hub fiber would then have one favorable root of each type, at opposite hub bits. Thus its unfavorable A_0(f)-root would have the form (s(y),y). Applying HD2 to neighboring nonhub states y,y xor e_j forces s(y)=s(y xor e_j). Connectivity of Q_{n-1} makes s constant. One fixed-h-bit face would then have no A_0(f)-root, contradicting Theorem 2. QED.
+
+**Corollary 5 (combined influence components).** Let D=D(f) union D(g). If every strongly connected component of D has a feedback vertex, then A_0(f) intersects A_1(g).
+
+*Proof.* In the directed-component seam-insertion theorem, each conditional pair on a strongly connected component has influence graphs contained in the induced digraph of D on that component. Its feedback vertex works for both conditional colorings, so Theorem 4 gives cross-favorability for each component. The component product is positive. Singleton components follow from Lemma 1. QED.
+
+Theorem 4 allows arbitrary nonlinear dependence at the exceptional directions and different dependency structures for f,g. A hypothetical failure of unrestricted two-color cross-favorability must therefore contain a strongly connected component of the combined influence graph requiring at least two vertex deletions to become acyclic. The checkerboard obstruction conjectured for one multi-input direction is eliminated when deleting that direction leaves an acyclic influence digraph.
+
+
+## Arbitrary-subset hub transport and sharp half-cube cross-root bound
+
+The preceding diagonal transfer admits a stronger form, with a subset of nonhub directions replacing the single direction j.
+
+**Theorem 6 (arbitrary-subset transport).** If D(f)-h is acyclic, then for every root x=(s,y) and every subset J of nonhub directions,
+
+\[
+\boxed{(s,y)\in A_0(f)\quad\text{or}\quad
+(1-s,y\oplus\mathbf1_J)\in A_0(f).}\tag{HT1}
+\]
+
+The same holds for A_1(f). Consequently, one of the two full (n-1)-dimensional faces h=0 or h=1 lies entirely inside A_0(f), and one of them lies entirely inside A_1(f).
+
+*Proof.* Fix J and set T=[n]\setminus(\{h\}\cup J). In the facet h=s, with all J-bits frozen at their values in y, use the acyclic all-root lemma to find a rising geodesic over T. Write B for its zero-prefix directions and z=y xor 1_B for the prefix endpoint. Every edge in the remaining T\B suffix has color one.
+
+If the hub edge over z has color zero, from (s,y) traverse B along its color-zero prefix, cross the hub edge, and traverse all unread nonhub directions in a rising order in the facet h=1-s. This is possible because the induced influence digraph is acyclic.
+
+If the hub edge over z has color one, start at (1-s,y xor 1_J), traverse B union J in a rising order in the facet h=1-s, cross the hub edge at z, and traverse the original all-one suffix T\B in the facet h=s. Both constructions use every direction once. This proves HT1.
+
+Fix s. If any root (s,y) is unfavorable, HT1, as J ranges through all subsets of the nonhub directions, places every root (1-s,y') in A_0(f). If the h=s face has no unfavorable root, it is already fully favorable. Applying the argument to 1-f gives the A_1 conclusion. QED.
+
+**Lemma 7 (antipodal-pair coverage within each hub facet).** For each fixed hub bit s, at least 2^(n-2) starting roots of that facet lie in A_0(f), and at least 2^(n-2) lie in A_1(f).
+
+*Proof.* For each nonhub bit vector y, inspect the color t of the hub edge over y. If t=0, the root (s,y) is rising-favorable: cross h first, then take an acyclic rising full geodesic in the opposite facet. If t=1, the root (s,bar y) is rising-favorable: take an acyclic rising full geodesic in the facet h=s from bar y to y, and cross h last. Thus every antipodal pair {y,bar y} of nonhub starting vectors contains at least one rising-favorable root in the fixed hub facet. There are 2^(n-2) such pairs. Color complementation gives the falling assertion. QED.
+
+**Theorem 8 (sharp favorable-root and two-color intersection bounds).** If D(f)-h is acyclic, then
+
+\[
+\boxed{|A_0(f)|\ge3\cdot2^{n-2},\qquad
+|A_1(f)|\ge3\cdot2^{n-2}.}\tag{HT2}
+\]
+
+If f,g have possibly different feedback vertices, with D(f)-h and D(g)-k acyclic, then
+
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2^{n-1}.}\tag{HT3}
+\]
+
+Both numerical bounds are sharp for every n>=2.
+
+*Proof.* By Theorem 6, one hub facet is entirely contained in A_0(f), contributing 2^(n-1) roots; by Lemma 7 the other contributes at least 2^(n-2). The argument applies also to A_1. For two colorings, inclusion-exclusion and HT2 yield
+
+\[
+|A_0(f)\cap A_1(g)|
+\ge |A_0(f)|+|A_1(g)|-2^n
+\ge 2^{n-1}.
+\]
+
+For sharpness, take the reciprocal two-direction readers f_1(x)=x_2 and f_2(x)=x_1, and give all other directions constant edge colors independent of the first two bits and of one another. On Q_2 the rising favorable-root set has three vertices and the paired-root set has two. Cartesian factorization with the independent constant directions gives |A_0(f)|=3·2^(n-2) and |A_0(f) intersect A_1(f)|=2^(n-1). The dependency digraph consists of a two-cycle and isolated vertices, so deleting either cycle direction makes it acyclic. QED.
+
+This strengthens Theorem 4 above: the cross-root conclusion has a sharp half-cube lower bound for both coincident and distinct feedback vertices. It extends the previously established nonlinear-star root bound to arbitrary nonlinear acyclic dependence among all nonhub directions.
+
+
+**Corollary 9 (universal antipodal transversal).** If D(f)-h is acyclic and g is any edge coloring of the same cube, then
+
+\[
+\boxed{|A_0(f)\cap P(g)|\ge\tfrac12|P(g)|.}\tag{HT4}
+\]
+
+In particular, every coloring g with a paired root is cross-favorable against f, even if g has unrestricted nonlinear influence. The analogous inequality holds for A_1(f).
+
+*Proof.* The paired-root set P(g)=A_0(g)\cap A_1(g) is invariant under antipodal complementation, because reversing a full geodesic changes its monotonic orientation. Every antipodal pair in P(g) has one endpoint in each fixed-h-bit face. Theorem 6 puts one whole fixed-h-bit face in A_0(f). Therefore that face contains |P(g)|/2 paired roots of g, proving HT4. Complementing the coloring f proves the falling version. QED.
+
+This extends the functional-cycle antipodal-transversal criterion to every coloring admitting a one-direction feedback vertex, without restrictions on its nonlinear edge functions away from the feedback vertex beyond acyclicity of their induced influence digraph.
+
+
+**Corollary 10 (sharp componentwise paired-root multiplicity).** Let D=D(f) union D(g), and suppose every nontrivial strongly connected component C of D has a vertex whose deletion makes D[C] acyclic. If s is the number of strongly connected components of D having at least two vertices, then
+
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2^{n-s}.}\tag{HT5}
+\]
+
+In particular, if f=g, then |P(f)|>=2^(n-s). The bound is attained when f=g is a Cartesian product of reciprocal two-direction readers, with any number of independent constant directions.
+
+*Proof.* The directed-component product theorem inserts separate monotone paths at their respective seams and multiplies cross-root counts. A nontrivial component of order m has at least 2^(m-1) compatible roots by Theorem 8, uniformly over earlier-facet assignments in the two colorings. Every singleton component has two compatible root bits because its edge color is constant after the earlier bits are fixed. Multiplying the component bounds gives 2^(n-s). For sharpness each reciprocal-reader pair contributes two paired roots on two dimensions and each isolated constant direction contributes two; Cartesian factorization gives the claimed equality. QED.
+
+
+## Fiberwise paired roots and antipodal diagonal squares
+
+Let \(f\) be any binary coloring of the undirected edges of \(Q_n\), with directed influence digraph \(D(f)\). Assume \(D(f)-h\) is acyclic. Write a cube root as \((s,y)\), separating its bit \(s\) in direction \(h\) from its remaining bit vector \(y\), and put \(P(f)=A_0(f)\cap A_1(f)\).
+
+**Theorem (paired-root fiber property).** For every nonhub vector \(y\), at least one of \((0,y),(1,y)\) belongs to \(P(f)\). Consequently \(|P(f)|\ge2^{n-1}\). There is an antipodally equivariant Boolean selector \(s(y)\) satisfying
+\[
+\boxed{(s(y),y)\in P(f),\qquad s(\bar y)=1-s(y).}\tag{PF1}
+\]
+
+*Proof.* The preceding hub-fiber transport theorem gives at least one point of \(A_0(f)\) in each two-vertex hub fiber. By complementing every edge color, the same holds for \(A_1(f)\). If these two favorable sets were disjoint on a particular fiber, there would be an \(s\) for which \((s,y)\notin A_0(f)\) and \((1-s,y)\notin A_1(f)\). Reversing a full geodesic shows \(A_1(f)=\overline{A_0(f)}\), so \((s,\bar y)\notin A_0(f)\). This contradicts the earlier antipodal-pair coverage lemma, which guarantees that either \((s,y)\) or \((s,\bar y)\) belongs to \(A_0(f)\) for every fixed hub bit \(s\). Thus each hub fiber meets \(P(f)\). Since \(P(f)\) is invariant under full antipodal complementation, choose a paired-root hub bit on each pair of complementary nonhub states, and choose the complementary hub bit at the complementary state. This yields (PF1). \(\square\)
+
+**Theorem (many diagonal paired-root squares).** If \(n\ge2\), at least \(2^{n-2}\) distinct cubical squares involving direction \(h\) have a pair of opposite vertices in \(P(f)\). The bound is sharp.
+
+*Proof.* Fix the selector \(s\) in (PF1), and let \(\partial s\) be the edges of \(Q_{n-1}\) whose endpoint selector values differ. Follow a uniformly random full antipodal geodesic in \(Q_{n-1}\), choosing its root uniformly and its direction permutation uniformly. Because \(s(\bar y)=1-s(y)\), the number of selector changes is odd and at least one. The traversed edge of any specified direction is uniformly distributed among the \(2^{n-2}\) edges of that direction. Consequently,
+\[
+1\le\mathbb E[\text{selector changes}]
+=\frac{|\partial s|}{2^{n-2}},
+\]
+so \(|\partial s|\ge2^{n-2}\).
+
+For each edge \(\{y,y\oplus e_j\}\in\partial s\), the vertices \((s(y),y)\) and \((s(y\oplus e_j),y\oplus e_j)\) are opposite corners of the cubical square with directions \(h,j\), and both belong to \(P(f)\). Different nonhub edges give different squares. For equality take reciprocal readers in directions \(h,j\), with all other direction colors constant and independent. Then each hub fiber has a unique paired root, whose hub bit is \(1-y_j\); the selector changes only on the \(2^{n-2}\) edges of direction \(j\). \(\square\)
+
+These conclusions hold for unrestricted nonlinear edge functions at the feedback vertex and arbitrary acyclic interactions among the remaining direction classes. The diagonal squares provide a family of paired-root path-exchange certificates for attempts to restore a second feedback direction.
+
+
+### Equality rigidity and spectral surplus of paired-root diagonal squares
+
+Let s:Q_d -> F_2 be any antipodally odd Boolean selector, s(bar y)=1-s(y), including those obtained from the one-feedback-vertex paired-root fiber theorem. Let B(s) be the number of its bichromatic cube edges. Put sigma(y)=(-1)^{s(y)}, and use the normalized Walsh expansion
+\[
+\sigma(y)=\sum_{S\subseteq[d]}\widehat\sigma(S)\chi_S(y),\qquad
+\chi_S(y)=(-1)^{\sum_{i\in S}y_i}.
+\]
+
+**Theorem (sharp rigidity and surplus identity).** The Fourier coefficients of sigma vanish for all even-size S, and
+\[
+\boxed{
+\frac{B(s)}{2^{d-1}}-1
+=\sum_{\substack{S\subseteq[d]\\ |S|\ge3,\ |S|\ {\rm odd}}}
+(|S|-1)\widehat\sigma(S)^2.}\tag{FS1}
+\]
+In particular B(s)>=2^(d-1), with equality if and only if
+\[
+\boxed{s(y)=y_j+\epsilon\pmod2}
+\]
+for some direction j and bit epsilon. Moreover
+\[
+\boxed{
+\sum_{\substack{|S|\ge3\\ |S|\ {\rm odd}}}
+\widehat\sigma(S)^2
+\le \frac{B(s)-2^{d-1}}{2^d}.}\tag{FS2}
+\]
+
+*Proof.* The antipodal identity sigma(bar y)=-sigma(y) implies
+\(\widehat\sigma(S)=(-1)^{|S|+1}\widehat\sigma(S)\); hence every even-level coefficient vanishes. Parseval gives \(\sum_S\widehat\sigma(S)^2=1\).
+
+For direction i, the normalized probability of a selector change under bit i is
+\[
+\Pr[\sigma(y)\ne\sigma(y\oplus e_i)]
+=\frac14\mathbb E[(\sigma(y)-\sigma(y\oplus e_i))^2]
+=\sum_{S\ni i}\widehat\sigma(S)^2.
+\]
+There are 2^(d-1) undirected edges in each direction. Summing gives
+\[
+B(s)=2^{d-1}\sum_S|S|\widehat\sigma(S)^2.
+\]
+Subtract the Parseval identity and use the vanishing of even-level coefficients to obtain (FS1). Since every surviving term with |S|>=3 has |S|-1>=2, (FS2) follows.
+
+If equality holds, sigma has only level-one coefficients, so
+\(\sigma(y)=\sum_i a_i(-1)^{y_i}\). The Boolean identity \(\sigma(y)^2=1\) implies \(\sum_i a_i^2=1\) and \(a_i a_j=0\) for all i distinct from j, by comparing the independent Walsh coefficients on pairs. Thus a single a_j equals +1 or -1, and sigma is a signed single-bit character. This is equivalent to the displayed form for s. Conversely, such a selector changes only on the 2^(d-1) edges of direction j. \(\square\)
+
+When d=n-1, the theorem classifies every minimum-size family of paired-root diagonal squares arising from a feedback-vertex selector. For an extremal choice of selector, either the section is a signed one-bit reader, or a strictly positive cut surplus is forced; FS2 quantitatively controls the non-reader spectral mass.
+
+
+## Componentwise closure with owner-local hub dependence
+
+The former version of the multi-hub strongly connected component theorem (CH2) omitted a necessary hypothesis. Its proof invoked the unconditional hub-lifting assertion MH1, disproved by the four-dimensional counterexample in the two-hub selector Subsection. The original proof does not establish its stated conclusion when a leaf can influence more than one hub. The following corrected statement supplies a rigorous dimension-uniform component theorem.
+
+Let \(D(f)\) be the directed influence digraph of an arbitrary binary edge coloring \(f\) of \(Q_N\). Order its strongly connected components \(C_1,\ldots,C_t\) so that the colors of directions in \(C_j\) may depend on preceding components but are independent of all later components. Suppose that for each \(C_j\) there is a nonempty designated hub set \(H_j\subseteq C_j\), with \(h_j=|H_j|\le4\), such that:
+
+1. Every direction \(i\in C_j\setminus H_j\) has a globally fixed unary rule
+\[
+f_i(x)=a_i+\lambda_i x_{p(i)},\qquad
+a_i,\lambda_i\in\mathbb F_2,\quad p(i)\in H_j.
+\tag{CH-C1}
+\]
+In particular these leaf rules do not vary with assignments to preceding components.
+
+2. For each such \(i\), all hub-direction edge-color functions \(f_h\), \(h\in H_j\setminus\{p(i)\}\), are independent of \(x_i\). A hub can depend arbitrarily on its own leaves, other hub bits, and earlier-component bits. No hub may read a leaf assigned to another hub.
+
+Put \(\beta_1=\beta_2=2\), \(\beta_3=4\), and \(\beta_4=2\).
+
+**Theorem (owner-local SCC cross-seam lifting).** Under these hypotheses,
+\[
+\boxed{|P(f)|\ge\prod_{j=1}^{t}\beta_{h_j}>0.}
+\tag{CH-C2}
+\]
+For components with four hubs the theorem uses the previously certified unrestricted \(Q_4\) favorable-root minimum of nine; for up to three hubs it uses the corresponding \(Q_1,Q_2,Q_3\) bounds. It is enough that conditions (CH-C1) and (2) hold componentwise; the hub functions may change arbitrarily with preceding bits.
+
+*Proof.* Suppose we have selected a paired starting root on the previously processed components and its rising and falling full witness paths. They have possibly different zero-to-one seam states in earlier directions. Condition on these two earlier seam states to obtain two colorings of the next component. Their hub functions may differ, but by (CH-C1) their leaf functions agree and remain unary in their designated reader hub. Condition (2) gives owner-local independence in both conditional colorings.
+
+Apply the corrected owner-local cross-hub lifting theorem to these two conditional colorings. The rising hub coloring with all leaves fixed to zero and the falling hub coloring with all leaves fixed to one each have at least \(a_h\) favorable hub roots, where \(a_1=2,\ a_2=3,\ a_3=6,\ a_4=9\). By inclusion-exclusion their opposite-orientation root sets intersect in at least \(2a_h-2^h\) hub roots: respectively \(2,2,4,2\). Each such hub root extends to one common starting root of the two component paths.
+
+Insert the rising component path at the zero-to-one seam of the earlier rising witness and the falling component path at that of the earlier falling witness. Colors of earlier directions are independent of later bits by the condensation ordering, and the component paths use the new directions once each. Hence the full resulting paths remain monotone and share the same combined starting root. Distinct hub roots produce distinct extensions, and extensions of distinct earlier roots remain distinct. Inducting over the component order proves (CH-C2). \(\square\)
+
+**Construction.** With the SCC decomposition and designated owner-local unary rules supplied, one paired root and two witness orders can be found using \(O(N)\) direction-edge evaluations and \(O(N^2)\) elementary operations. Tabulate the hub colorings on at most four bits at the two earlier seam states, enumerate hub roots and orders to find a cross-favorable hub root, choose each leaf's starting bit by the two-case owner-local lemma, and topologically sort the monotone phase-compatible precedence constraints. Only a bounded number of hub-edge evaluations is needed per component and at most two unary leaf evaluations per nonhub direction. Updating explicit witness orders by insertion takes \(O(N^2)\) list operations. This construction does not include discovery of the influence digraph from an oracle.
+
+**Scope and correction.** The theorem does not cover arbitrary three- or four-hub stars. In particular merely having globally fixed unary reader rules for nonhubs, or only three branching vertices in a strongly connected component, is insufficient for the owner-local proof: nonlinear hub functions might read a leaf assigned to a different hub. The previous unrestricted CH2 statement and its unrestricted constructive corollary are withdrawn as unsupported by that argument. This qualification leaves the separately proved one-feedback and two-hub-star results intact.
+
+
+## Permutation-reader SCC closure with variable predecessor conditions
+
+**Theorem.** Let F color the undirected edges of Q_N. Assume every strongly connected component C of the directed influence graph either satisfies a previously proved positive cross-favorable criterion, or has three hubs h_0,h_1,h_2 and three fixed disjoint nonhub groups L_0,L_1,L_2, with arbitrary multiplicities. At each fixed assignment y of preceding-component bits, require that all leaves w in L_i obey
+\[
+F^y_w(z)=z_{h_{\sigma_y(i)}}+a_{i,y}\pmod2,
+\tag{CPS1}
+\]
+where the reader assignment \(\sigma_y\) is **any permutation** of the three hubs and the offsets \(a_{i,y}\) are arbitrary. Both the permutation and offsets may change with y. Hub edge functions are unrestricted nonlinear functions of every other internal bit and may also change with y.
+
+Then F has a paired root. In particular every antipodally odd coloring on Q_(N+1) with such a lower-facet coloring has a monochromatic full antipodal geodesic, regardless of bridge-edge colors.
+
+*Proof.* Process the directed SCCs in topological order. At any step choose rising and falling geodesics from a common root in the processed prefix, with seam states y_0 and y_1. The next block's conditional colorings F^{y_0} and F^{y_1} satisfy the full permutation-reader cross theorem (PRH2), even when their reader permutations, offsets, and nonlinear hub tables differ. They therefore admit rising and falling full block geodesics from a common block root. Insert each block path into the respective prior seam. Previous edge colors ignore future block bits, so neither path's earlier colors change. Each enlarged path remains monotone and uses all directions once. Repeat for all components; the other allowed component classes use their previously established cross-root lemmas. Apply the free-bridge equivalence to obtain the final statement. \(\square\)
+
+**Constructive form.** Given the SCC decomposition and reader assignments, each three-hub block can be solved using at most 192 evaluations of the two conditional hub-edge truth tables: clone-contract its leaf groups to one representative each, add any absent dummy groups, enumerate roots and orders in the resulting Q_6 core, and lift the chosen paths by consecutive leaf duplication. Across all components this gives O(N) edge-color evaluations and O(N^2) elementary list operations, exclusive of finding the SCC decomposition from an arbitrary black-box coloring.
+
+**Boundary.** Reader maps with repeated hub assignments, or leaf offsets varying within a fixed group, are not covered. This all-dimensional component theorem uses a computer-assisted six-cube core but does not invoke the earlier refuted unrestricted hub-to-leaf polarization lemma.
+
+## Paired-root enumeration of unary functional influence
+
+Let f be a binary edge coloring of Q_n in which each direction i is constant or of the form \(f_i=x_{p(i)}+\epsilon_i\pmod2\), with p(i) different from i. Its directed influence graph has indegree at most one. Let the directed cycles have lengths \(\ell_1,\ldots,\ell_t\). For a starting root x put \(\alpha_i=x_{p(i)}+\epsilon_i\) on each cycle.
+
+**Theorem.** The root x belongs to \(P(f)\) if and only if the bits alpha_i are nonuniform on every directed reader cycle. Consequently
+\[
+\boxed{|P(f)|=2^{n-\sum_j\ell_j}\prod_{j=1}^t(2^{\ell_j}-2)
+\ge2^{n-\tau(D(f))}.}\tag{UF1}
+\]
+Equality in the feedback multiplicity inequality holds precisely when every directed cycle has length two. If all directions are readers, a paired root supports monochromatic full geodesics of both colors.
+
+*Proof.* If alpha is constant, say a, on one reader cycle, the earliest cycle step in any order sees its parent unflipped and has color a, while the latest sees its parent flipped and has color 1-a. Thus a=0 rules out falling geodesics and a=1 rules out rising geodesics. Such a root cannot be paired.
+
+Otherwise, for either chosen color b impose that p(i) precede i in each cycle precisely when alpha_i+b=1. Nonuniform alpha guarantees that these constraints are not a directed cycle. A topological order makes every cycle step color b. Combine separate reader-cycle components, choosing color zero on all cycles for rising paths and color one for falling paths. Constant-source components are inserted in the appropriate monotone color phase. Attach every noncycle reader direction outward from its parent: because its edge color toggles when the parent is crossed, insert its direction immediately before or after the parent's step to match the parent step color. This does not modify previous direction colors; each initial new bit is arbitrary. Therefore both monotone paths start from the same root and the criterion is sufficient. When every component contains a reader cycle, choose the same monochromatic color throughout to obtain two monochromatic witnesses.
+
+Each reader cycle admits 2^ell initial assignments, just two of which yield uniform alpha; all noncycle bits are free. This gives (UF1). The cycles are disjoint, so their number is tau(D). Each factor 2^ell-2 is at least 2^(ell-1), with equality only for ell=2. QED.
+
+Independently verified over every signed-reader Q3 and Q4 coloring, every mixed constant/reader Q2--Q4 coloring, and random Q5--Q6 colorings (nori_signed_reader_roots_audit.py and nori_mixed_functional_roots_audit.py).
+
+
+## Conditional three-hub SCC closure for arbitrary reader maps
+
+The three-group cross-root theorem (NM5) removes the bijectivity requirement from the earlier conditional permutation-reader SCC argument.
+
+**Theorem (unrestricted map selection at every seam).** Let F be an ordinary binary coloring of Q_N, and order the strongly connected components of its directed influence graph topologically. Suppose each component is either already covered by a previously established positive conditional cross-root theorem, or has three hubs \(h_0,h_1,h_2\) and three fixed disjoint nonhub groups \(L_0,L_1,L_2\), of arbitrary sizes, with the following property. For every assignment \(y\) of earlier-component bits, all leaves \(w\in L_i\) satisfy
+\[
+\boxed{F^y_w(z)=z_{h_{\rho_y(i)}}+a_{i,y}\pmod2,}\tag{RSC1}
+\]
+where \(\rho_y:\{0,1,2\}\to\{0,1,2\}\) is **any** map, not necessarily injective, and \(a_{i,y}\) are arbitrary signs uniform within each group. The three hub-edge functions of each conditional coloring may depend nonlinearly on all other component bits and arbitrarily on preceding bits.
+
+Then F has a paired root. In particular every antipodally odd coloring of Q_(N+1) whose selected N-facet satisfies this hypothesis has a monochromatic full antipodal geodesic, for any legal perpendicular bridge coloring.
+
+*Proof.* Maintain rising and falling full geodesics from a common root on the already processed SCC prefix. Their monotone phase seams may be at different prefix vertices y_0,y_1. The conditional colorings F^{y_0},F^{y_1} on the next component have the same fixed leaf groups, but can have entirely different maps \(\rho_{y_0},\rho_{y_1}\), offsets, and nonlinear hub functions. By (NM5), they have a common starting component root supporting rising and falling full component geodesics. Insert those geodesics into the two prefix seams. Earlier-direction edge colors are independent of later-component bits by the topological order, so the resulting full paths preserve their colors and use each direction once. Induction yields a paired root. Other allowed component types use their previously proved cross-root criteria. The free-bridge equivalence transfers the paired root to a monochromatic antipodal geodesic in the larger odd coloring. \(\square\)
+
+**Constructive consequence.** With the decomposition, three group assignments, and conditional reader rules supplied, a root and both witnessing direction orders can be constructed using O(N) edge-color evaluations and O(N^2) order-list operations. At each stage contract a representative leaf of each nonempty group (add dummy leaves for absent groups), tabulate both six-dimensional conditional hub models using at most 192 hub-edge evaluations, and enumerate 64 roots and 720 orders to locate a cross-root. Expand each selected leaf step consecutively across its group and insert the two component orders into the previous seams. The constant six-dimensional search is warranted by the computer-assisted theorem. Discovering the influence graph from unrestricted black-box data is excluded from the stated query complexity.
+
+**Limit.** This settles the global SCC branch with any three-group signed reader maps, even if all three groups read the same hub at one seam and three different hubs at the other. It does not handle arbitrarily many distinct joint leaf types or nonlinear multi-hub leaf rules, and it does not close unrestricted NORI1.
+
+
+## Rooted phase signatures and omission rigidity under one-way extensions
+
+Let c be any binary undirected-edge coloring of Q_n. Adjoin r dummy directions y, retaining original colors c_i(x) independently of y, and assign each dummy direction j an arbitrary color f_j(x) depending only on the original vertex x, independently of all dummy bits. For a root x and integer k>=1, let M_k(c,x) be the greatest length of a direction-simple path beginning at x with at most k color changes. Let O_k(c,x) be the family of sets of omitted original directions for paths attaining M_k(c,x). Then for every dummy root y, M_k(C,(x,y))=r+M_k(c,x), and O_k(C,(x,y))=O_k(c,x). In particular every maximum path in C traverses all r dummy directions, and the old-direction omission spectrum is unchanged. The same holds separately for path words with colors 0-star-1-star and 1-star-0-star. Proof: projecting away dummy steps gives the upper bound and shows every maximum extension projects to a maximum source path. Conversely choose any source maximum path. If it has a color change, pause at one such transition vertex v, traverse all dummy edges of the old color and then all dummy edges of the next color; the dummy colors f_j(v) remain fixed because dummy steps do not change x. This inserts every dummy edge without adding a change. For a monochromatic path, insert dummy edges at its beginning or end, grouped by color, requiring at most one change. Both groups retain the prescribed monotone color-word orientation as appropriate. Thus every source maximal omission set lifts and no additional omission set arises. For r=1 this holds for every undirected coloring of the new edges, because such a color is necessarily independent of its own new bit. Rootwise favorable full-geodesic sets of a single dummy extension consequently factor as the source favorable-root set times Q_1. If a hypothetical minimum-dimension coloring of Q_n had no full one-change geodesic, every codimension-one facet would have a full one-change path by minimality, so its maximum one-change paths would omit each of the n directions in some example. Therefore changing which single dummy direction survives in an independent double cannot give an obstruction based solely on globally omitted direction sets; an additional constraint relating roots or opposite facets would be needed.
+
+MINIMAL-COUNTEREXAMPLE SATURATION. Suppose c is a hypothetical minimum-dimensional arbitrary binary cube-edge coloring of Q_n with no full one-change antipodal geodesic. Every restriction of c to either facet omitting direction i is then a coloring of Q_(n-1) with a full one-change geodesic. Thus L_1(c)=n-1 and every singleton {i}, i in [n], occurs as the omission set of some maximum one-change path of c. In its independent double c box c, maximum length equals 2n-2. Every cross-block pair {i,n+j} occurs as the omission set of a maximum one-change path, by choosing paths in a facet omitting i in the first factor and in a facet omitting j in the second, reversing path orientations as needed and interleaving their zero and one portions. Conversely the factor projection bounds demand that every maximum product path omit one direction in each block, so the complete omission family of global maxima is { {i,n+j} : i,j in [n] }, of cardinality n^2. Every (2n-1)-face of the product contains a maximum product path as well. Therefore even complete coverage of every admissible two-direction omission pair across longest paths does not imply a one-change spanning geodesic. A dimension-deletion strategy must exploit rooted endpoint, phase-seam or inter-layer color dependence, not omission supports alone.
+
+ROOTED PHASE-SIGNATURE FACTORIZATION. For root x in c and an oriented word 0-star-1-star, define S(c;x) as the family of ordered disjoint direction sets (A,B) for which there exists a direction-simple path rooted at x, traversing precisely A during its zero phase and B during its one phase. Empty phases are allowed. The transition vertex is x xor A and the endpoint is x xor A xor B. For independent product colorings c box d, with disjoint direction labels, the entire rooted signature family factorizes: S(c box d;(x,y)) = { (A union A', B union B') : (A,B) in S(c;x), (A',B') in S(d;y) }. Necessity follows by projecting any global 0-star-1-star path onto the two blocks; sufficiency follows by interleaving both zero prefixes first and both one suffixes afterward. The analogous formula holds with colors reversed. Hence rooted oriented maximum lengths satisfy M_up(c box d;(x,y)) = M_up(c;x)+M_up(d;y), and likewise for M_down. Unoriented rooted maximum length is the maximum of these two phasewise sums; unlike global maximum lengths it need not equal the sum of the two unoriented rooted maxima. The sets of attainable transition vertices and attainable omitted direction sets likewise factor under a fixed oriented phase and fixed optimal length. This proves that the full switch-vertex signature information in an independent product carries no cross-block correlation: deletion based only on its two phase direction sets cannot enforce an exchange between factors.
+
+SMALL-DIMENSION AUDIT. For randomized undirected edge colorings on factor cubes of dimensions (1,2),(2,2),(2,3),(3,3), rooted feasible signature families were enumerated by exhaustive direction-subset dynamic programming and agreed with their Cartesian products at every root. Separate randomized checks verified the rooted one-way extension identity and its omission spectrum for source dimensions through five and several multi-dummy extensions.
+
+## Minimal-counterexample feedback and axis-face restrictions
+
+STRONGLY CONNECTED MINIMAL-COUNTEREXAMPLE REDUCTION. In a binary edge coloring c of Q_n, draw a directed influence arc j->i when the i-edge color function changes under toggling bit j at some vertex. Suppose a nonempty proper set R has no incoming influence from its complement S, so all R-edge colors are independent of S-bits. If the R-coloring admits a full 0-star-1-star geodesic and every induced S-coloring at a frozen R-vertex admits some full 0-star-1-star geodesic, then c admits a full 0-star-1-star geodesic: run the R zero prefix, insert a full S zero-then-one path at its transition vertex, and finish the R one suffix. The S root can be chosen after the R transition vertex is fixed, and R steps do not read S-bits. In particular, a hypothetical minimum-dimensional counterexample to existence of an unrestricted full one-change geodesic must have a strongly connected directed influence graph. Otherwise choose a source strongly connected component R and use the minimality hypothesis on R and each conditional S-coloring, both lower-dimensional, to construct the full geodesic. This strengthens the elementary fact that a minimal counterexample cannot have a dummy-like sink direction. It is a reduction for the auxiliary arbitrary-coloring one-change problem, not by itself a proof of NORI1 or its universal paired-root condition.
+
+AXIS-FACE NO-GO. Every axis-aligned face of an independent product c box d is itself the independent product of faces of c and d. For a fixed global phase orientation, its rooted phase-signature family therefore remains a Cartesian product, even when that face is selected adaptively according to a prior switch vertex. Thus deletion of axis directions within independently copied colorings cannot generate cross-factor phase constraints. Coupling via nonproduct color dependence, or additional antipodal/root information, would be required for the proposed amplification-then-restriction contradiction.
+
+## Cyclic sink-component elimination
+
+Let c be antipodally odd on Q_n, K a proper nonempty set of at most seven directions, R its complement. Assume that no direction in K influences an edge rule in R. Then c_R is a legal antipodally odd coloring on Q_R. The full-geodesic profile support and shortest monochromatic antipodal length satisfy W(c)=W(c_R) times F_2^K and ell(c)=ell(c_R)+|K|.
+
+Proof. The established arbitrary-color at-most-one-switch geodesic theorem B_k holds for each k<=7. Fix any antipodal walk P in Q_R from z to bar z and target bits t_i on K. On the lower K-face at exterior vertex z let d_i(u)=c_i(u,z) xor t_i. Choose a K-geodesic with d-word zero^a one^(k-a); reverse the traversal first if necessary. If its zero-block U runs u0 to ua and its one-block is V, the following Q_n antipodal walk has each K-step of color t_i: start at (ua,z), traverse reverse U, follow P with K vertex fixed at u0, and traverse reverse of the full antipodal image of V in the upper K-face. The original zero-block gives c-color t; antipodal complementation makes the one-block give c-color t too. This walk preserves the complete ordered exterior projection P; if P is a full geodesic, the result is a full geodesic.
+
+All R-rules ignore bits in K. Consequently every full c-geodesic projects to one of c_R, and any prescribed profile of c_R together with any K profile is realized by the above construction. Hence W(c)=W(c_R) times F_2^K. Likewise, any monochromatic antipodal c-path projects to a monochromatic antipodal walk of c_R with at least ell(c_R) exterior steps, and it has at least |K| new steps. For the reverse bound, choose a shortest monochromatic c_R-antipodal path as P and prescribe all K colors equal to its color. The constructed antipodal c-walk is monochromatic of length ell(c_R)+|K|. Loop-erasure and the lower bound prove the length identity. Minority defect, profile-support deficit and detour thus persist.
+
+If every strongly connected component in the directed influence graph has size <=7, repeatedly remove a sink SCC by the theorem. The final SCC has size <=7, where the established finite NORI theorem implies all direction-profile targets are realized: recolor any direction according to a prescribed target and take a monochromatic path; antipodal reflection provides both constant colors. Back-substituting the profile cylinders gives W(c)=F_2^n for the original coloring. In particular, every NORI1 counterexample has an SCC of size >=8. Every sink SCC of a minimum-dimensional counterexample has size >=8, because otherwise deletion produces a smaller counterexample.
+
+### Branching-sparse sink sets of unbounded size
+
+Let c be legal and K a nonempty sink set in its directed influence graph, with R=[n]\K nonempty. Put H={i in K: i influences at least two different direction rules}, L=K\H. Assume |H|<=7; no bound on |K|. Then W(c)=W(c_R) times F_2^K and ell(c)=ell(c_R)+|K|.
+
+Single-edge repair lemma: If an antipodal walk uses direction i once and every out-neighbor of i also occurs at most once, and i has at most one out-neighbor j, its i-step can be assigned either color while retaining all other traversed edge colors. If j precedes i, move i to the last step, otherwise to the first. This crosses no direction whose color rule depends on bit i. For first i, replace root x, order (i,sigma) by root bar(x+e_i), order (i,reverse sigma); only the first edge becomes antipodal, the remainder is traversed backwards. For last i, replace root x, order (sigma,i) by root bar x+e_i, order (reverse sigma,i). This toggles only the last edge. Both manipulations preserve antipodality even when exterior directions repeat.
+
+Profile factorization: Start with any full c_R geodesic realizing arbitrary exterior profile w, append each L direction once, and use the established B_k antipodal two-phase bridge on H (size<=7) to prescribe all H edge colors while retaining the ordered exterior skeleton. All R colors stay w, since K has no arcs into R. For each i in L, the only possible out-neighbor lies in K and is traversed once. Apply the single-edge repair lemma to set its profile bit, preserving all previous profile bits. Every (w,t_K) therefore occurs. Conversely every full c-geodesic projects to a full c_R geodesic with unchanged R colors.
+
+Metric identity: The projection lower bound gives ell(c)>=ell(c_R)+|K|. Start from a shortest monochromatic R antipodal path, append the L steps once, prescribe color zero on H by the B_k bridge (allowing repeated R directions), then set each L step to zero using the same individual repair. R-edge colors are unchanged. This yields a monochromatic antipodal walk of length ell(c_R)+|K|, and loop-erasure proves equality.
+
+Corollary: Every sink strongly connected component in a minimum-dimensional NORI1 counterexample must have at least eight directions with at least two outgoing influence neighbors. Otherwise this theorem deletes it and yields a smaller counterexample. A directed cycle of any length is therefore an eliminable sink component.
+
+**Whole-graph case.** If the influence graph has a single strongly connected component, the sink set is not proper and cannot be deleted. The earlier low-outdegree profile-cylinder theorem and seven-direction prescription theorem nonetheless force at least eight branching directions in any bad coloring. The corollary for every sink SCC of a minimum counterexample uses this separate argument in the one-component case.

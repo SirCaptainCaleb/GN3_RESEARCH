@@ -348,3 +348,208 @@ Thus a hypothetical paired-root-free coloring requires at least **five** nonunif
 *Proof.* Substitute \(m_4=9\) into Theorem 15. QED.
 
 **Limitation of cardinality-only transfer.** The \(r\)-fold Cartesian product of the extremal square coloring has \(m_{2r}\le3^r\). For \(k=6\), this gives \(m_6\le27<32\), so the numerical intersection term in (18) need not be positive once six arbitrary direction classes are permitted. Further progress toward full NORI1 requires structural compatibility, not just favorable-root cardinalities.
+
+## Inclusion-minimal blockers with sparse roots and complete influence
+
+The Hamming-layer activation example in the gauge research notes can be strengthened to an ordinary coloring with no monochromatic full geodesic, an inclusion-minimal one-colored blocker, and complete directed influence. Thus the obstruction to repair-root counting persists when every direction is nonconstant and all directions interact.
+
+Fix \(r\ge1\), put \(m=2r+1\) and \(d=m+1\), and write vertices as \((x,h)\in Q_m\times Q_1\). Define the monotone antipodally odd Boolean function
+\[
+g(x,h)=\mathbf1_{\{|x|+2h\ge r+2\}},
+\qquad
+f_i(z)=g(z)+g(z\oplus e_i)\pmod2.
+\tag{MB1}
+\]
+Let \(D=E_1(f)\).
+
+**Theorem.** The coloring (MB1) has the following properties.
+
+1. Both color classes meet every full antipodal geodesic. The set \(D\) is inclusion-minimal with this property.
+2. Recoloring any nonempty subset of \(D\) zero creates a monochromatic full antipodal geodesic between \(0^d\) and \(1^d\). These two fixed roots are empty in the original coloring.
+3. Every ordered pair of distinct directions is an influence arc.
+4. The favorable and paired-root sets coincide and have the following description:
+\[
+\begin{aligned}
+A_0(f)=A_1(f)=P(f)
+={}&\{(x,0):|x|\in\{r,r+1,r+2\}\}\\
+&\ \cup\{(x,1):|x|\in\{r-1,r,r+1\}\}.
+\end{aligned}
+\tag{MB2}
+\]
+Consequently,
+\[
+\boxed{
+|D|=2(r+1)\binom{2r+1}{r},\quad
+|P(f)|=2\left[\binom{2r+1}{r-1}
++2\binom{2r+1}{r}\right],
+}
+\tag{MB3}
+\]
+and
+\[
+\boxed{
+\frac{|A_0(f)\cup A_1(f)|}{2^d}
+\sim\frac{3}{\sqrt{\pi r}}\longrightarrow0.
+}
+\tag{MB4}
+\]
+
+*Proof.* The total weight in the threshold defining \(g\) is \(2r+3\). Complementing every bit sends its integer weighted sum \(t\) to \(2r+3-t\), so \(g(\bar z)=1-g(z)\). It follows that \(f(\bar e)=f(e)\).
+
+Every full antipodal geodesic has an odd number of \(D\)-edges, because its \(g\)-values telescope from \(g(z)\) to \(1-g(z)\). Thus it cannot be all zero. Its length \(d=2r+2\) is even, so it cannot be all one either.
+
+Each edge \(e\in D\) extends to a path that only changes bits from zero to one from \(0^d\) to \(1^d\). Along this path \(g\) is nondecreasing and changes once, at \(e\). Therefore \(e\) is the only \(D\)-edge on that full geodesic. This proves inclusion minimality and also proves the simultaneous repair assertion: for any nonempty repaired subset, choose any one of its edges and its private path. At both poles every incident edge has color zero. Every full path between the poles meets \(D\), so neither pole admits a monotone color word.
+
+For a base direction \(i\), direct differentiation of (MB1) gives
+\[
+f_i(x,h)=1
+\Longleftrightarrow
+|x_{\setminus i}|+2h=r+1,
+\qquad
+f_h(x)=1
+\Longleftrightarrow |x|\in\{r,r+1\}.
+\tag{MB5}
+\]
+These equations show that each base direction reads every other base bit and the hub bit, and that the hub reads every base bit. For example, to see a base-to-base dependence, fix \(h=0\), set \(r\) of the other \(2r-1\) base bits to one, and toggle the remaining input bit. Hub dependence in a base function is witnessed by setting its other base bits all zero when \(r=1\), and to weight \(r-1\) generally. Hub-function dependence on a base input is witnessed by giving the other base bits weight \(r-1\). This proves the complete influence claim.
+
+The vertices incident to \(D\) are precisely the right-hand side of (MB2), by (MB5). A vertex outside this set, and its antipode, have only zero incident edges. Every full path from one to the other contains a one, so its word begins and ends in zero with a one in between. Such a vertex is empty.
+
+It remains to exhibit a monotone full word at every listed vertex. Since \(f\) is antipodally even, \(A_0(f)\) is antipodally invariant. Reversal therefore gives \(A_1(f)=A_0(f)\). It suffices to treat \(h=0\) and the three listed base weights; the other cases follow by antipodality. In the orders below, a downward base step toggles an initially one bit and an upward step toggles an initially zero bit; each chosen bit is used once.
+
+If \(|x|=r\), traverse the hub first, then \(r\) downward/upward pairs, then the one remaining upward step. Equation (MB5) gives word \(1^{2r+1}0\).
+
+If \(|x|=r+1\), take one downward step, traverse the hub, and then take \(r\) downward/upward pairs. The word is \(0\,1^{2r+1}\).
+
+If \(|x|=r+2\), take \(r-1\) downward/upward pairs, three downward steps, and finally the hub. The word is \(1^{2r-1}0^3\). This includes \(r=1\), when the first block is empty.
+
+All three orders use every direction once. They prove (MB2).
+
+Counting (MB5) gives \(2m\binom{2r}{r-1}\) base edges and \(2\binom{2r+1}{r}\) hub edges in \(D\). The identity \(m\binom{2r}{r-1}=r\binom{2r+1}{r}\) gives (MB3). Counting the levels in (MB2) gives the root formula there. Finally,
+\(\binom{2r+1}{r}/2^{2r+1}\sim1/\sqrt{\pi r}\) and
+\(\binom{2r+1}{r-1}/\binom{2r+1}{r}=r/(r+2)\),
+which prove (MB4). \(\square\)
+
+**Consequence for the critical-repair route.** Inclusion minimality of a full-geodesic blocker, absence of monochromatic full geodesics, complete directed influence, and simultaneous healing of every nonempty minority repair are compatible with favorable-root density tending to zero. All minority-edge repairs can also activate the same originally empty antipodal root pair. A counting argument assigning repairs to newly favorable roots therefore requires additional information from paired-root absence in the original extremal facet. The family above has the paired roots displayed in (MB2), and every odd bridge extension of it satisfies NORI1 by the paired-root criterion.
+
+An independent subset-state path evaluator verified (MB2), absence of both monochromatic full-path colors, the private pole-to-pole witness for every minority edge, and complete directed influence in dimensions four, six, and eight. The corresponding minority-edge counts were 12, 60, and 280, and the paired-root counts were 14, 50, and 182.
+
+
+## Non-cut minimal geodesic blockers under two-sided blocking
+
+For an arbitrary binary coloring of \(Q_d\), call \(D\subseteq E(Q_d)\) a **full-geodesic blocker** if every dimension-simple antipodal geodesic traverses an edge of \(D\). Call \(D\) inclusion-minimal if deletion of any one of its edges destroys the blocker property. An edge set is a **cut** when its indicator is of the form \(1_D(\{x,x+e_i\})=\phi(x)+\phi(x+e_i)\) for some Boolean vertex potential \(\phi\). A cut has even intersection parity with every cubical square.
+
+**Theorem (dimension-uniform nonintegrable critical blockers).** For every \(d\ge4\), there is a coloring of \(Q_d\) with minority-colored edge class \(D_d\) such that:
+
+1. Both \(D_d\) and its complement meet every full antipodal geodesic; hence the coloring has no monochromatic full geodesic of either color.
+2. \(D_d\) is inclusion-minimal as a full-geodesic blocker. Every edge of \(D_d\) has a private full geodesic containing no other edge of \(D_d\).
+3. \(D_d\) is not a cut: its indicator has odd sum on a cubical square.
+4. \(|D_d|=13\cdot2^{d-4}\), and the coloring has \(|P(f)|=12\cdot2^{d-4}\) paired roots.
+
+In particular, even the joint requirements of minority-blocker minimality and complementary-color geodesic blocking, valid in an imbalance-extremal hypothetical paired-root counterexample, do not force the minority edges to be a potential cut. The constructed colorings themselves are **not** paired-root counterexamples.
+
+*Base coloring.* In \(Q_4\), encode an edge by \((i,x)\), where \(0\le i<4\), the \(i\)-th bit of \(x\) is zero, and the edge joins \(x\) to \(x+e_i\). Let
+\[
+\begin{split}
+D_4=\{&(0,0),(0,2),\\
+ &(1,0),(1,4),(1,5),(1,8),(1,9),(1,12),(1,13),\\
+ &(2,1),(2,3),(3,1),(3,3)\}.
+\end{split}\tag{NC1}
+\]
+Color these 13 edges one and the remaining 19 edges zero.
+
+*Finite certificate.* Enumerate each starting vertex \(r\in\{0,\ldots,15\}\) and every permutation \(\pi\) of the four direction indices. At step \(t\), the edge is
+\[
+\left(\pi_t,\left(r\mathbin{\mathrm{xor}}\sum_{s<t}2^{\pi_s}\right)
+\mathbin{\mathrm{and}}\neg 2^{\pi_t}\right).
+\tag{NC2}
+\]
+All 384 rooted direction orders have between one and three edges of \(D_4\). Thus each color class is a blocker. An independent full-path dynamic program gives
+\[
+A_0(f)=\{0,2,4,5,6,7,8,9,10,11,12,13,14,15\}
+\]
+and
+\[
+P(f)=\{0,2,4,5,6,7,8,9,10,11,13,15\}.
+\tag{NC3}
+\]
+To verify inclusion minimality without trusting any optimization solver, the following pairs \((e;\,r,\pi)\) give private witnesses: a rooted full geodesic starting at \(r\) and traversing directions \(\pi\) meets \(D_4\) only in edge \(e\):
+\[
+\begin{array}{c|c@{\qquad}c|c}
+e&(r,\pi)&e&(r,\pi)\\
+(0,0)&(3,1023)&(0,2)&(1,1023)\\
+(1,0)&(0,1203)&(1,4)&(0,2103)\\
+(1,5)&(0,2013)&(1,8)&(0,3102)\\
+(1,9)&(0,3012)&(1,12)&(0,2310)\\
+(1,13)&(0,2031)&(2,1)&(3,1203)\\
+(2,3)&(1,1203)&(3,1)&(3,1302)\\
+(3,3)&(1,1302)&&
+\end{array}
+\tag{NC4}
+\]
+The compact word \(1023\), for example, denotes the direction order \((1,0,2,3)\). The square in directions \(0,1\), based at \(x=0\), has four edges \((0,0),(1,0),(0,2),(1,1)\), precisely three of which belong to \(D_4\). Hence its parity is odd, so \(D_4\) is not a cut.
+
+*All-dimensional extension.* For \(d>4\), identify \(Q_d=Q_4\times Q_{d-4}\). Color each first-four-direction edge according to \(D_4\), independently of its \(Q_{d-4}\) bit vector; color every remaining-direction edge zero. Let \(D_d\) be the resulting cylinder over \(D_4\). A full \(d\)-geodesic projects, after omitting steps outside the first four directions, to a full \(Q_4\) geodesic. It therefore uses both colors among those four steps, proving the two-sided blocking assertion.
+
+To prove inclusion minimality, fix any lifted edge \((e,z)\in D_d\). Choose its private \(Q_4\) witness from (NC4), start with auxiliary bits \(\bar z\), traverse all auxiliary directions first, and then traverse the private \(Q_4\) path with auxiliary bits fixed at \(z\). There are no D-edges during the auxiliary prefix, and the \(Q_4\) segment has just the chosen lifted edge. This is a private full \(d\)-geodesic. The odd square persists in every four-bit fiber, proving non-cutness.
+
+Finally, the coloring is the Cartesian product of the \(Q_4\) base coloring and constant-zero single-direction colorings. Paired-root sets multiply across independent factors, so (NC3) gives \(|P(f)|=12\cdot2^{d-4}\). The edge count follows from the cylinder construction. \(\square\)
+
+**Closure consequence.** A paired-root-free extremal facet has a minimal minority geodesic blocker and a blocking majority complement. The theorem shows those two hypergraph conditions alone do not imply integrability into a vertex potential, even in unbounded dimension. The extra condition still unused in this construction is **paired-root absence**, which excludes (NC3). Any attempt to obtain a cut normal form for a hypothetical extremizer must exploit the full incompatibility of its rising and falling root certificates, rather than blocker minimality and two-sided monochromatic blocking alone.
+
+
+## Antipodal private-witness compatibility uses paired-root absence
+
+For a one-colored edge e of an ordinary coloring f, write Z_e for the roots z admitting a full path from z to bar z on which e is the sole one-colored edge. Equivalently, changing e to zero makes that path monochromatic zero.
+
+**Theorem (antipodal private witnesses force four original paired roots).** If
+\[
+z\in Z_e\cap Z_{\bar e},
+\]
+then every endpoint of e and bar e belongs to P(f).
+
+*Proof.* Orient the i-edge e as u to v according to the initial i-bit of z. Its antipodal edge is traversed in that same bit orientation as bar v to bar u. Choose private paths
+\[
+P:z\longrightarrow u\longrightarrow v\longrightarrow\bar z,\qquad
+Q:z\longrightarrow\bar v\longrightarrow\bar u\longrightarrow\bar z.
+\]
+All segments other than the two displayed i-edges are zero. If S is the direction set before e in P, then the direction set before bar e in Q is T=[d]\setminus(S\cup\{i\}), because their starting points differ by the complement of all bits other than i.
+
+From u, reverse the zero prefix of P, then follow the zero prefix of Q, then traverse bar e. These direction sets are S,T,{i}; the resulting full path to bar u has word 0^(d-1)1. Alternatively traverse e, then the zero suffix of P, then the reversed zero suffix of Q. Its word is 10^(d-1), again ending at bar u. Thus u is paired.
+
+From v, follow the suffix of P, then the reversed suffix of Q, then traverse bar e backward. This gives 0^(d-1)1 to bar v. Traversing e backward and then the reversed prefix of P and the prefix of Q gives 10^(d-1) to bar v. Thus v is paired. Reversal supplies the same conclusion at bar u and bar v. QED.
+
+**Corollary (rootwise antipodal exclusion for zero repairs).** In a paired-root-free coloring,
+\[
+Z_e\cap Z_{\bar e}=\varnothing
+\]
+for every antipodal edge pair whose two members are one-colored. For any fixed root, at most one member of each such pair can be a zero-repair witness. In particular, if a one-colored class D is itself antipodally invariant, each root activates at most |D|/2 of its single-edge zero repairs.
+
+This uses paired-root absence in the original coloring, rather than only two-sided blocking or minimality. It explains why the sparse-root threshold example above can have all private repairs at the same poles: its boundary endpoints are already paired.
+
+**Corollary (antipodally invariant minimal blockers have paired boundary).** Suppose D is an antipodally invariant full-geodesic blocker that is inclusion-minimal among antipodally invariant blockers. Color D one and its complement zero. Every vertex incident with D is paired.
+
+*Proof.* For e in D, deleting the orbit {e,bar e} destroys blocking. A witnessing full path meets D only within that orbit. Since both edges have direction i and a full path uses i once, it meets precisely one member, say e. Antipodally translate this private path and reverse it. Antipodal invariance preserves all colors, so the resulting path starts at the same root and has bar e as its sole one. Apply the theorem. Every orbit has such a witness. QED.
+
+The corollary does not assert that an arbitrary paired-root-free extremizer is an antipodally invariant minimal blocker. Odd bridge facets are arbitrary ordinary colorings, and minimum one-count among paired-root-free colorings guarantees healing to paired roots rather than healing to a monochromatic zero path. A repair may create only one previously missing monotone orientation at a root that already supported the other. Those cases must remain in the global implication argument.
+
+**Independent check.** Full direction-order enumeration checked the theorem for all ordinary colorings in dimensions two and three, and for 300 random colorings in dimension four and 100 in dimension five. Among 4512 colorings there were 21952 ordered root/edge private-witness incidences with the antipodal mate also private at the same root. All four endpoints were paired in every case. The proof above is dimension-uniform and does not rely on this computation.
+
+**Current closure plan.** The one-direction completion formula in the adjacent 2-SAT subsection retains the rising and falling full-path witnesses at every root. A complete proof would derive a variable and its negation in one strongly connected implication component for every exterior coloring. Square exchanges must be applied with their path endpoints; rootwise support projection alone is insufficient. The theorem above disposes of a specific shared-root antipodal zero-repair configuration. A general argument forcing a contradictory implication cycle, including repairs that create only a missing orientation, remains unproved.
+
+
+### Joint antipodal paired repairs transport exclusive orientations
+
+Let f have no paired root, and let e,bar e both have color one. Write f_e and f_(bar e) for the separate zero repairs. If a root z lies in P(f_e) intersect P(f_(bar e)), then z was originally exclusive: it belonged to precisely one of A_0(f),A_1(f).
+
+Moreover orient e=u to v according to z's initial bit in its direction, so its mate is bar v to bar u. If z originally belonged to A_1(f), then
+\[
+u,\bar v\in A_0(f)\setminus A_1(f),\qquad
+v,\bar u\in A_1(f)\setminus A_0(f).
+\]
+If z originally belonged to A_0(f), the two displayed orientation labels are interchanged.
+
+*Proof.* If z was originally empty, both repaired orientations must use the changed edge. Write their common edge displacement from z as S. The prefix before that edge of the repaired ascending path is zero. The suffix after that edge of the repaired descending path is zero. Joining these two segments through the changed edge gives a full zero path after repair, since their direction sets are S, the changed direction, and its remaining complement. Thus z belongs to both Z_e and Z_(bar e), contrary to the preceding theorem and paired-root absence.
+
+Suppose z originally belonged only to A_1. In each repair choose its newly created ascending path. The segment before the changed edge is zero. These two prefix direction sets are complementary within all directions other than the changed direction. Reversing the first prefix and following the second gives a zero path from u to bar v using all other directions. Appending bar e, which is one in f, yields an original ascending full path from u. Reversing the roles gives an ascending full path from bar v. Reversal gives the descending certificates at their antipodes v and bar u. Paired-root absence makes each membership exclusive. If z originally belonged only to A_0, use the zero suffixes of the newly created descending paths instead; they give ascending certificates at v and bar u and descending certificates at u and bar v. QED.
+
+This condition retains orientation information that disappears when repairs are counted only by their root locations. It does not yet exclude shared repairs at an exclusive root. Nor does criticality force the requisite overlap between antipodal repair-root sets; a one-colored class may contain no antipodal edge pair. Closing the general implication graph requires additional compatibility across different directions.

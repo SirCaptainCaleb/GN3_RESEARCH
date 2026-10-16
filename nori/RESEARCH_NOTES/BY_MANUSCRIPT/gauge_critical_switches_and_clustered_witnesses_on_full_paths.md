@@ -4,3 +4,40 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single branching target across two reducible feedback components leaves prescribed restoration roots empty](../note_0868fc3b9c03299a5e19a9b8.md) — active/proved
 - [A tree interaction face with empty endpoint roots and one internal defect](../note_0ef014a49eca70c6785725e2.md) — active/proved
+- [Antipodal degree duality, alternating-cycle normal form and universal degree-pattern realization](../note_nori_degree_dual_alternating_cycles_and_folded_cube_orientation_20261015.md) — active/proved
+- [Balanced odd cubes with half the directions unavailable as first monochromatic steps](../note_nori_balanced_half_direction_first_step_obstruction_20261015.md) — active/proved
+- [Balanced six-cube refutes canonical star-midpoint completion](../note_nori_balanced_q6_canonical_star_midpoint_failure_20261015.md) — active/proved
+- [Bridge-distance holonomy of critical repair dependencies](../note_nori_bridge_holonomy_dependencies_20261015.md) — active/proved
+- [Bridge-distance holonomy of critical repair dependencies](../note_nori_bridge_holonomy_dependencies_20261015.md) — active/proved
+- [Bridge-root line metric and one-edge rigidity](../note_eeeacb5aff2df062871b1761.md) — active/proved
+- [Bridge-root line metric equivalence for cube geodesics](../note_c943eddf68ee0a9b46e8164c.md) — active/proved
+- [Bridge-selector invariance lemma](../note_1cec0cf1ee972479b6768c98.md) — active/proved
+- [Connected balanced padding with independent marginals and sparse curvature](../note_a0ae471c244d734296847e87.md) — active/proved
+- [Degree-conditioned favorable-root characterization equivalent to unrestricted NORI1](../note_nori_balanced_bridge_degree_root_equivalence_20261015.md) — active/proved
+- [Disconnected favorable-root set on Q4](../note_ad3350250b41eda07935d8c9.md) — active/proved
+- [Every weak-majority edge extends to a monochromatic antipodal geodesic](../note_nori_weak_majority_edge_extension_20261015.md) — active/proved
+- [Facet imbalance extremality and weighted-majority local maxima](../note_nori_facet_imbalance_extremal_20261014.md) — active/proved
+- [Folded-cube orientation and paired-square reductions](../note_nori_folded_cube_semieulerian_alternating_girth_equivalence_20261015.md) — active/proved
+- [Hall expansion for balanced geodesic-support layers and Aharoni-Haxell midpoint obstruction](../note_1ff21b3c669e3aeae6196e4a.md) — active/proved
+- [Hamming-layer barriers admit exponentially many paired-root repairs](../note_nori_hamming_layer_mass_paired_activations_20261015.md) — active/proved
+- [Isolated projective Petrie cycles under cyclic square exchanges](../note_nori_even_exchange_isolation_20261014.md) — active/proved
+- [Isolated projective Petrie cycles under cyclic square exchanges](../note_nori_even_exchange_isolation_20261014.md) — active/proved
+- [Linear antipodal detours inside connected switch components](../note_nori_antipodal_switch_component_long_detours_20261015.md) — active/proved
+- [Linear antipodal detours inside connected switch components](../note_nori_antipodal_switch_component_long_detours_20261015.md) — active/proved
+- [Maximal opposite-face separation and two-intersection condition](../note_3d7c892fd57a7f1274daf07a.md) — active/proved
+- [Open full middle-layer packing after one-direction selector changes](../note_d48a286f13775bffb842e5ba.md) — active/conjectured
+- [Open global weighted paired-root inequality](../note_6e4ee587a1b892b8a3d15834.md) — active/conjectured
+- [Parity stationary foliation and correlated transversals](../note_fb6ca8b242f5737d27902545.md) — active/proved
+- [Parity stationary zero-path transversal rigidity](../note_fd86346fbf048f06527d086f.md) — active/proved
+- [Projective grade descent can be trapped away from grade one](../note_4b6e28c8e1a57de33de47338.md) — active/proved
+- [Projective mixture theorem](../note_a1d25129435af858a173d291.md) — active/proved
+- [Q4 weighted-majority path-packing obstruction and fractional certificate](../note_nori_weak_majority_packing_counterexample_q4_20261015.md) — active/proved
+- [Restoration reachability characterization](../note_a4864a35163570542cbc67b6.md) — active/proved
+- [Shared bridge does not force rooted splice](../note_a014c912786f52574b0bd26d.md) — active/proved
+- [Sharp spectral multiplicity inequality](../note_2156aeb90a17f7cad5afae57.md) — active/proved
+- [Shortest antipodal walk square-derivative budget](../note_92a76c6358e805801170c0ae.md) — active/proved
+- [Sorting parallel facet colors can create a monochromatic antipodal geodesic in an ordinary cube](../note_parallel_facet_compression_creates_zero_geodesic_20261015.md) — active/proved
+- [Transverse facet repair synchronization](../note_5dd4e13ff16c4fbd97617dc3.md) — active/proved
+- [Two phase restoration cuts](../note_f59e74d95b60e26b34ade887.md) — active/proved
+- [Universal double-escape balanced reduction gadget](../note_701d5a72dc49165e8c5dec13.md) — active/proved
+- [Wu Yang 2026 path theorem and geodesic rook-label obstruction](../note_d4b1f0b89bec3224588d0169.md) — active/proved

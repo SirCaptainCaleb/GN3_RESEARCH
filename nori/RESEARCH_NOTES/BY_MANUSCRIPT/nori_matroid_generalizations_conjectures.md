@@ -5,6 +5,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [A single balanced shortcut refutes short-port amplification with all proposed hypotheses](../note_nori_xi_balanced_shortcut_refutes_port_amplification.md) — active/proved
 - [All-dimensional mixed partition obstruction to deck-odd diameter amplification](../note_85eaa1b47921437682abc652.md) — active/proved
 - [Auxiliary Hamming path-growth conjecture only](../note_425eeea30418204de135d02f.md) — active/conjecture
+- [Balanced middle half-geodesic direction sets violate matroid basis exchange in every even dimension](../note_nori_balanced_q6_middle_reachability_not_matroid_20261015.md) — active/proved
 - [Bipartite highly connected square-generated two-covers still fail P4](../note_nori_xi_bipartite_square_generated_high_connectivity_p4_failure.md) — active/proved
 - [Boundary colorings with identical component flats but different monochromatic Hamilton status](../note_nori_xi_boundary_identical_flats_different_forward_hamilton_witness.md) — active/proved
 - [Boundary Hamiltonian tight-window Smith forms: proved in all orders](../note_ed5bae5d779fba468cf28cbc.md) — active/proved

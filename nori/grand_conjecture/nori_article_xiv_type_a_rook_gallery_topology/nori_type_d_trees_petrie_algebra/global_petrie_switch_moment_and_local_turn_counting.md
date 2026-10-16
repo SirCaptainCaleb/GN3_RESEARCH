@@ -1778,3 +1778,1175 @@ is an affine set of dimension zero for \(r=2\), an affine line for \(r=3\), but 
 **Corollary (why rank three is special).** For rank three, each active dimension offers two admissible state edges, and changing its choice toggles one four-point affine face. Therefore changes of selections are governed by a binary linear space, as used in the earlier \(\mathrm{RM}(1,3)\) proof. From rank four onward, the linear span of allowed four-point face toggles includes formal sums that would use **multiple edges or zero edges for the same dimension** and thus are not valid dimension-simple walks. A proof based only on solving the Reed--Muller moment constraints (RM1)--(RM2) would not establish the required rainbow one-edge-per-dimension selection.
 
 **Path toward closure.** An all-rank extension requires a *nonlinear selection/restoration lemma*: given a desired antipodal degree boundary in the permitted Reed--Muller coset, choose one eligible edge from each affine-hyperplane family while maintaining connectivity. The affine rank-three proof solved the boundary choice because each family was a two-point affine line; at higher rank one must preserve the local choice simplex rather than replace it by its much larger affine hull. This is precisely the control point where matroidal selection, state-walk connectivity, and the earlier restoration lemmas may combine.
+
+
+## Coloring-variable polynomial and its two-orbit kernel
+
+Let \(\mathcal O_n\) consist of the \(n2^{n-2}\) antipodal edge pairs of \(Q_n\), \(n\ge3\). Choose one edge \(e_p\) from each orbit \(p\), and assign an independent sign \(z_p\in\{-1,1\}\) to it; its mate receives sign \(-z_p\). Let \(Z_n(z)\) count unoriented full antipodal geodesics consisting entirely of color zero. Equivalently, \(Z_n(z)\) counts projective Petrie cycles of twisted switch grade zero.
+
+**Theorem (root-slide Fourier cancellation).** The multilinear expansion of \(Z_n\) has constant term \(n!/2\), all odd degrees vanish, and
+\[
+\boxed{\deg Z_n\le 2\lfloor(n-1)/2\rfloor.}
+\tag{CF1}
+\]
+More explicitly, choose on each projective Petrie cycle \(C\) one length-\(n\) window with signs \(t_1,\ldots,t_n\), where \(t_i=\epsilon_i z_{p_i}\) and the \(p_i\) are distinct antipodal edge orbits. Then
+\[
+\boxed{Z_n(z)=2^{1-n}\sum_C\sum_{k=0}^{n-1}
+ \sum_{\substack{T\subseteq[n]\\|T|\ \mathrm{even}}}
+ (-1)^{|T\cap[k]|}\prod_{i\in T}t_i.}
+\tag{CF2}
+\]
+For a nonempty even set \(T=\{a_1<\cdots<a_{2h}\}\), its root-slide multiplier is
+\[
+\boxed{\sum_{k=0}^{n-1}(-1)^{|T\cap[k]|}
+=n-2\sum_{j=1}^h(a_{2j}-a_{2j-1}).}
+\tag{CF3}
+\]
+
+*Proof.* A rooted length-\(n\) window with edge signs \(u_i\) is monochromatic zero precisely when \(2^{-n}\prod_i(1+u_i)=1\). The \(2n\) windows of one projective cycle occur in antipodal pairs with sign vectors \(u\) and \(-u\). Adding the two indicators leaves only even-degree products, with factor \(2^{1-n}\). Consecutive root slides replace \(t_1\) with \(-t_1\) at the opposite end, giving (CF2). Summing degree zero over all \(2^{n-2}(n-1)!\) cycles yields \(n!/2\). For \(|T|\) even, the parity of \(|T\cap[k]|\) equals one on the intervals \(a_1\le k<a_2,\ldots,a_{2h-1}\le k<a_{2h}\). Counting their lengths proves (CF3). If n is even and T=[n], its alternating multiplier vanishes; if n is odd, T=[n] is absent because its size is odd. This gives (CF1). \(\square\)
+
+**Theorem (two-orbit Fourier coefficient).** Let \(p,q\in\mathcal O_n\) have different directions \(i,j\). Choose their signed representative edges \(e_p,e_q\), and let \(r\in\{0,\ldots,n-2\}\) count the bits on which their endpoints disagree after deleting bits \(i,j\). Then
+\[
+\boxed{
+\widehat Z_n(\{p,q\})
+=2^{1-n}(n-2-2r)\,r!\,(n-2-r)!.
+}
+\tag{CF4}
+\]
+For \(p,q\) in the same direction, the coefficient vanishes.
+
+*Proof.* Fix two ordinary cube edges e,f of different directions i,j, and put r equal to their projected Hamming distance away from i,j. The number of unoriented full antipodal geodesics containing both edges is
+\[
+\boxed{N(e,f)=r!(n-1-r)!.}
+\tag{CF5}
+\]
+Indeed, orient a path to encounter e before f. The r dimensions on which the endpoints differ away from i,j must be traversed between e and f, in any of r! orders. The remaining n-2-r dimensions may be divided freely between the prefix before e and the suffix after f. Summing over the prefix size a gives
+\[
+r!\sum_{a=0}^{n-2-r}\binom{n-2-r}{a}a!(n-2-r-a)!
+=r!(n-1-r)!.
+\]
+Replacing f with its antipodal mate complements those n-2 projected bits, giving \(N(e,\bar f)=(n-2-r)!(r+1)!\). In the degree-two coefficient of \(Z_n\), paths containing two chosen representatives or both antipodes contribute positively, and paths containing one representative and the other's antipode contribute negatively. Antipodal symmetry therefore gives
+\[
+\widehat Z_n(\{p,q\})=2^{-n}\,2[N(e_p,e_q)-N(e_p,\bar e_q)].
+\]
+Simplifying yields (CF4). A full geodesic uses each dimension once, so it cannot contain two different edge orbits of the same direction. \(\square\)
+
+**Corollary (quadratic Walsh mass).** Denote by \(V_2(n)=\sum_{|T|=2}\widehat Z_n(T)^2\) the squared norm of the quadratic projection. Then
+\[
+\boxed{
+V_2(n)=\binom n2\,2^{-n}(n-2)!
+\sum_{r=0}^{n-2}(n-2-2r)^2\,r!\,(n-2-r)!.
+}
+\tag{CF6}
+\]
+Thus \(\operatorname{Var}_{z}Z_n(z)\ge V_2(n)\). For \(n=3,4\) there are no higher nonconstant Fourier degrees, so the inequality is an equality, giving \(V_2(3)=3/4\) and \(V_2(4)=12\).
+
+*Proof.* Fix directions i,j. There are \(2^{n-2}\) orbits in direction i. For a fixed one, count all direction-j orbits by taking both lifts of each orbit and dividing by two; for projected separation r there are \(2\binom{n-2}{r}\) such lifts. Squaring (CF4), summing over r, and then over the \(\binom n2\) direction pairs gives
+\[
+\binom n2\,2^{n-2}\sum_{r=0}^{n-2}
+\binom{n-2}{r}\left[
+2^{1-n}(n-2-2r)r!(n-2-r)!\right]^2,
+\]
+which simplifies to (CF6). Orthogonality of Boolean Walsh characters proves the variance assertion. \(\square\)
+
+The coefficient (CF4) is a radial, signed interaction kernel across pairs of cube-edge orbits. Its sign reverses on replacing either edge by its antipode; it vanishes at middle projected distance \(r=(n-2)/2\) when n is even. In dimensions three and four it reduces the complete witness count to a quadratic function of edge signs. Beginning in dimension five, higher even Walsh degrees appear. These identities do not prove the strict positivity of \(Z_n(z)\), but provide explicit global correlation terms to compare with the local-turn moment identities.
+
+
+## Twisted-window parity balance and Hamming-sphere repair transform
+
+Let \(n\ge3\), and let \(c\) be any antipodally odd binary edge coloring of \(Q_n\). Let \(\mathcal G_n\) be the unoriented full antipodal geodesics, so \(|\mathcal G_n|=2^{n-1}n!\). For \(P\in\mathcal G_n\), let \(t_c(P)\) be the number of its edges of color one and let \(A_t(c)=|\{P:t_c(P)=t\}|\). The color-one count is independent of path orientation.
+
+**Theorem (universal parity equidistribution).** Every projective Petrie cycle \(C\) contains \(2n\) unoriented full antipodal geodesics, precisely \(n\) of which have an even number of color-one edges and \(n\) an odd number. Consequently
+\[
+\boxed{\sum_{t\text{ even}}A_t(c)=\sum_{t\text{ odd}}A_t(c)
+=2^{n-2}n!,\qquad
+\sum_{t=0}^n(-1)^tA_t(c)=0.}
+\tag{HP1}
+\]
+Also \(A_t(c)=A_{n-t}(c)\).
+
+*Proof.* Enumerate the \(2n\) edge-color signs of a projective Petrie cycle cyclically as \(s_0,\ldots,s_{2n-1}\), so \(s_{k+n}=-s_k\). Each consecutive length-n window is a full antipodal geodesic. Its sign product \(q_k=\prod_{h=0}^{n-1}s_{k+h}=(-1)^{t_c(P_k)}\) satisfies \(q_{k+1}=q_k(s_{k+n}/s_k)=-q_k\). Therefore the 2n windows alternate between even and odd one-edge count, proving the per-cycle balance. Summing over the \(2^{n-2}(n-1)!\) cycles proves (HP1). Antipodal complementation sends every color-one count t to n-t, proving symmetry. \(\square\)
+
+For a set \(F\subseteq\mathcal O_n\) of antipodal edge-pair orbits, let \(c^F\) flip precisely these orbit colors, and denote \(M=|\mathcal O_n|=n2^{n-2}\). As above, \(Z_n(c)\) counts color-zero full antipodal geodesics.
+
+**Theorem (Hamming-sphere path-count transform).** For every legal coloring,
+\[
+\boxed{
+\sum_{F\subseteq\mathcal O_n}u^{|F|}Z_n(c^F)
+=(1+u)^{M-n}\sum_{t=0}^n A_t(c)u^t.}
+\tag{HP2}
+\]
+In particular, for \(0\le k\le M\),
+\[
+\boxed{\sum_{\substack{F\subseteq\mathcal O_n\\|F|=k}}Z_n(c^F)
+=\sum_{t=0}^n A_t(c)\binom{M-n}{k-t},}
+\tag{HP3}
+\]
+where the binomial coefficient is zero outside its usual range. For independent orbit flips with probability \(p\),
+\[
+\boxed{\mathbb E_p Z_n(c^F)
+=\sum_{t=0}^n A_t(c)\,p^t(1-p)^{n-t}.}
+\tag{HP4}
+\]
+
+*Proof.* Fix a full antipodal geodesic \(P\). Its n edges use different antipodal edge-pair orbits, one in each direction. To make every edge of P color zero after flipping F, the restriction of F to these n orbits must consist precisely of the \(t_c(P)\) color-one edges. The other \(M-n\) orbit variables are free. The generating contribution of P to the left side is therefore \(u^{t_c(P)}(1+u)^{M-n}\). Sum over P to get (HP2). Extracting coefficients gives (HP3). Substituting independent Bernoulli flips proves (HP4). \(\square\)
+
+When \(c\) is bad, \(A_0(c)=A_n(c)=0\); the radius-one sphere sum in (HP3) is \(A_1(c)\), counting one-defect paths. Formula (HP1) says that even and odd defect counts across the complete geodesic family must nevertheless be equal. These relations expose the limits of counting solely by the number of wrong-color edges: the location and order of switches still matter to NORI1. The proofs require neither a coloring factorization nor a bounded-interaction hypothesis.
+
+
+## Prescribed-edge chain incidence and all Walsh coefficients
+
+Fix n>=3. For a finite set \(\mathcal E=\{e_1,\ldots,e_k\}\) of distinct ordinary cube edges, define \(N(\mathcal E)\) to be the number of unoriented full antipodal geodesics containing every edge in \(\mathcal E\). If two prescribed edges have the same direction, then \(N(\mathcal E)=0\). For one prescribed edge, \(N(\mathcal E)=n!\).
+
+Suppose \(2\le k\le n\) and the prescribed directions are distinct. For each ordering \(\sigma=(e_{\sigma(1)},\ldots,e_{\sigma(k)})\) of the prescribed edges, write \(d_a\) for the direction of its a-th edge and \(b_a(h)\) for the fixed bit of that edge in dimension \(h\ne d_a\). Call the ordering *compatible* when:
+
+(i) for each marked direction \(d_b\), the values \(b_a(d_b)\) at all \(a<b\) agree, the values at all \(a>b\) agree, and these two values are opposite when both sides are nonempty;
+
+(ii) for every unmarked dimension \(h\notin\{d_1,\ldots,d_k\}\), the sequence \(b_1(h),\ldots,b_k(h)\) has at most one transition.
+
+For a compatible ordering, let \(g_0(\sigma)\) count the unmarked dimensions whose bit sequence is constant, and \(g_a(\sigma)\) count unmarked dimensions whose unique transition falls between prescribed edges a and a+1, for \(1\le a<k\). Thus \(\sum_{a=0}^{k-1}g_a=n-k\).
+
+**Theorem (general prescribed-edge incidence).**
+\[
+\boxed{
+N(\mathcal E)=\frac12
+\sum_{\sigma\ {\rm compatible}}
+  (g_0(\sigma)+1)!\prod_{a=1}^{k-1}g_a(\sigma)!.
+}
+\tag{CI1}
+\]
+
+*Proof.* Orient any full geodesic containing all marked edges and list those edges in their order of occurrence. Since the path flips each dimension once, the fixed bits of every marked direction must be constant before its own traversal and constant with opposite value afterward, giving condition (i). Each unmarked dimension flips once, so its bits along the marked edges may change at most once, giving (ii). If the bits are constant, the dimension occurs either before the first marked edge or after the last; otherwise its unique change determines the interval in which it is traversed.
+
+Conversely, fix a compatible ordering. The \(g_a\) dimensions assigned to an internal gap may be traversed in any \(g_a!\) orders. Divide the \(g_0\) constant-bit dimensions into those traversed before the first marked edge and those after the last. Summing over the size of the first group yields
+\[
+\sum_{j=0}^{g_0}\binom{g_0}{j}j!(g_0-j)!=(g_0+1)!.
+\]
+The marked-direction bits determine their unique flip orientations; the unmarked dimensions outside the marked interval have their flip orientations set by the chosen prefix/suffix assignment. Hence each choice yields one rooted full geodesic realizing the prescribed ordered edges. Every unoriented geodesic has two orientations, counted under opposite marked-edge orders, so divide by two. \(\square\)
+
+**Corollary (all coloring-variable Fourier coefficients).** With \(Z_n(z)\), antipodal orbit variables \(z_p\), and representatives \(e_p\) as in (CF2), for any set \(T=\{p_1,\ldots,p_k\}\) of distinct antipodal edge-pair orbits,
+\[
+\boxed{
+\widehat Z_n(T)=2^{-n}
+\sum_{\epsilon\in\{0,1\}^k}(-1)^{|\epsilon|}
+\,N(\{e_{p_a}^{(\epsilon_a)}:a=1,\ldots,k\}),
+}
+\tag{CI2}
+\]
+where \(e_p^{(0)}=e_p\) and \(e_p^{(1)}=\bar e_p\). In particular, the coefficient vanishes if T includes two orbits of the same direction.
+
+*Proof.* Expand the monochromatic-zero indicator of each full geodesic as \(2^{-n}\prod_{e\in P}(1+\mathrm{sign}(e))\). The coefficient of \(\prod_{p\in T}z_p\) is \(2^{-n}\) times the sum, over all geodesics using each orbit in T, of the product of the signs comparing their used edges to the chosen orbit representatives. Grouping by the antipodal lift choices \(\epsilon\) gives (CI2), and the incidence counts are furnished by (CI1). \(\square\)
+
+For \(k=2\), the two compatible orders in (CI1) give \(N(e,f)=r!(n-1-r)!\), reproducing (CF5) and its radial quadratic kernel (CF4). For larger k the formula replaces an enumeration over all \(2^{n-1}n!\) unoriented geodesics by at most \(2^k k!\) compatibility tests with factorial gap weights. This is an incidence formula for the unrestricted coloring-variable polynomial. The sign cancellations in (CI2) do not themselves establish \(Z_n(z)>0\).
+
+The compatibility formula was independently compared with direct enumeration for randomly selected edge families of sizes two through four in dimensions three through five, with agreement in every tested instance. The preceding proof does not depend on finite enumeration.
+
+
+## Walsh spectral diagonalization of the quadratic path-count kernel
+
+Retain the orbit-sign polynomial \(Z_n\) and its degree-two homogeneous term \(Q_2\) from (CF1)--(CF6). Extend the edge signs of a legal coloring to functions \(s_i:\mathbb F_2^n\to\{-1,1\}\), with \(s_i\) independent of bit i and \(s_i(\bar x)=-s_i(x)\). For \(S\subseteq[n]\), write
+\[
+a_{i,S}=2^{-n}\sum_xs_i(x)(-1)^{\sum_{j\in S}x_j},
+\qquad
+\widehat d(S)=\sum_{i\notin S}a_{i,S},
+\]
+where \(a_{i,S}=0\) if \(i\in S\). By antipodal oddness, only odd |S| occur.
+
+**Theorem (Walsh block decomposition).**
+\[
+\boxed{
+Q_2(c)=\frac{n!}{4}
+\sum_{\substack{S\subseteq[n]\\ |S|\ {\rm odd}}}
+\frac{\widehat d(S)^2-\sum_{i\notin S}a_{i,S}^2}{|S|+2}.
+}
+\tag{WS1}
+\]
+In the orthonormal coloring-variable basis obtained by Walsh-transforming each direction's antipodal sign pairs, the symmetric matrix of the quadratic form has one block for each odd \(S\), indexed by the \(n-|S|\) directions outside S. Each such block has diagonal zero and all off-diagonal entries
+\[
+\boxed{\lambda_{n,|S|}=\frac{n!}{2^{n-1}(|S|+2)}.}
+\tag{WS2}
+\]
+Its eigenvalues are \((n-|S|-1)\lambda_{n,|S|}\) once and \(-\lambda_{n,|S|}\) with multiplicity \(n-|S|-1\). The least eigenvalue of the full quadratic-kernel matrix is \(-n!/(3\cdot2^{n-1})\).
+
+*Proof.* For distinct directions i,j, the two-orbit kernel (CF4) is \(g(r)=2^{1-n}(m-2r)r!(m-r)!\) where \(m=n-2\) and r is the Hamming distance of the two lower-endpoint bit strings away from i,j. Sum over all ordinary edge representatives in both antipodal orbits, dividing by four. The sign changes under antipodality cancel the corresponding sign change in g. Averaging the two bits i,j leaves only the Walsh characters supported outside i,j. The convolution on \(\mathbb F_2^m\) is diagonal in those characters, with multiplier
+\[
+\Lambda_s=\sum_{v\in\mathbb F_2^m}g(|v|)(-1)^{\sum_{l\in S}v_l},
+\qquad s=|S|\ {\rm odd}.
+\]
+Use the beta integral \(r!(m-r)!=(m+1)!\int_0^1 t^r(1-t)^{m-r}\,dt\). The weighted character sum inside the integral simplifies to
+\[
+\sum_v (m-2|v|)t^{|v|}(1-t)^{m-|v|}(-1)^{\sum_{l\in S}v_l}
+=(m-s)(1-2t)^{s+1}+s(1-2t)^{s-1}.
+\]
+Since s is odd, integration gives
+\[
+\Lambda_s=2^{-m-1}(m+1)!
+\left(\frac{m-s}{s+2}+1\right)
+=\frac{n!}{2^{n-1}(s+2)}.
+\]
+The orbit-variable norm on direction i is \(2^{n-2}\sum_S a_{i,S}^2\), by Parseval. The same factor \(2^{n-2}\) occurs in the convolution, so the induced orthonormal quadratic matrix has off-diagonal entries \(\Lambda_s\). Therefore
+\[
+Q_2(c)=\frac{n!}{2}\sum_{S\ {\rm odd}}\frac{\sum_{i<j,\ i,j\notin S}a_{i,S}a_{j,S}}{|S|+2},
+\]
+which is (WS1). The block eigenvalues follow from the matrix with constant off-diagonal entries. The largest \(\Lambda_s\) is attained at s=1, which has \(n-1\ge2\) available directions, so the least full eigenvalue is \(-\Lambda_1\). \(\square\)
+
+**Corollary (sharp quadratic lower bound).** For every legal coloring,
+\[
+\boxed{Q_2(c)\ge-\frac{n\,n!}{12},\qquad
+\frac{n!}{2}+Q_2(c)\ge\frac{(6-n)n!}{12}.}
+\tag{WS3}
+\]
+For every even n>=4, the first inequality is attained by legal colorings having equally many edges of each color incident at every vertex.
+
+*Proof.* The numerator in each summand of (WS1) is at least \(-\sum_{i\notin S}a_{i,S}^2\), and \((|S|+2)^{-1}\le1/3\). Parseval gives \(\sum_{i,S}a_{i,S}^2=n\). This proves (WS3).
+
+For sharpness in even dimension, partition the n directions into pairs \(\{u_t,v_t\}\), and for each pair choose a third direction \(j_t\notin\{u_t,v_t\}\). Set \(s_{u_t}(x)=(-1)^{x_{j_t}}\) and \(s_{v_t}(x)=-(-1)^{x_{j_t}}\). All signs are well-defined on unoriented cube edges and reverse under antipodal complementation. Their signed vertex degrees cancel pairwise, so \(d(x)=0\). Every \(s_i\) is supported on Walsh level one and has unit norm. Equality holds in both inequalities used above. \(\square\)
+
+**Consequence for polynomial positivity.** For n=3,4, \(Z_n=n!/2+Q_2\), recovering a strictly positive count and the known low-dimensional closures. For n=5, the same quadratic truncation has positive lower bound \(10\), but its quartic term is not sign-definite. For n=6 the lower bound on the quadratic truncation is zero. From every even dimension n>=8, the balanced legal colorings in the proof satisfy
+\[
+\boxed{\frac{n!}{2}+Q_2(c)=\frac{(6-n)n!}{12}<0,}
+\]
+although the complete path-count polynomial \(Z_n(c)\) is nonnegative by definition. Thus higher-degree correlations are indispensable for any general proof based on a nonnegative quadratic truncation. This gives a dimension-uniform obstruction within the unrestricted legal coloring class and clarifies why vertex and facet balance alone cannot settle NORI1.
+
+## Full-geodesic color-count variance
+
+For an ordinary edge coloring f of Q_n, let f_i(x) be its direction-i color (independent of x_i), with Walsh coefficient a_i(S). Choose a uniform root and a uniform permutation of directions, and let X count color-one edges on the resulting full antipodal geodesic. Define p_i=a_i(empty), and k_s=1/(s+1) for even s, 1/(s+2) for odd s.
+
+**Theorem.**
+\[
+\boxed{EX=\sum_i p_i,\quad
+\operatorname{Var}X=\sum_{S\ne\varnothing}[(1-k_{|S|})\sum_{i\notin S}a_i(S)^2+k_{|S|}(\sum_{i\notin S}a_i(S))^2].}
+\tag{GV1}
+\]
+In particular \(\operatorname{Var}X\ge(2/3)\sum_i p_i(1-p_i)\).
+
+*Proof.* At its direction-i step the geodesic visits R xor the bits preceding i in the permutation. Fourier-expand f_i at this vertex and average over the uniform root R. All distinct Walsh characters are orthogonal. For fixed nonempty S, the diagonal permutation sign products are one; the cross product for i,j outside S equals (-1) to the number of S-elements lying between i and j. Placing i,j into the s+1 gaps of the s ordered S-elements gives (s+1)(s+2) equally likely arrangements, and signed total (s+1)+(sum_{a=0}^s(-1)^a)^2. The sign correlation is therefore k_s. Regrouping coefficients gives (GV1). Since k_s<=1/3, discard its nonnegative square and use Parseval and f_i^2=f_i. QED.
+
+**Corollary (sharp antipodal balance).** In every antipodally odd coloring, \(EX=n/2\) and \(\operatorname{Var}X\ge n/6\). Equality holds precisely for signed-reader rules \(f_i=x_{p(i)}+\epsilon_i\pmod2\), with \(p(i)\ne i\), and equally many readers of signs zero and one for each input bit. These equality colorings satisfy NORI1 by the directed functional-cycle theorem. Equality occurs for n divisible by four through products of the four-dimensional rules \(f_0=x_2,f_1=1+x_2,f_2=x_0,f_3=1+x_0\).
+
+*Proof.* Oddness balances each f_i and eliminates even nonempty Walsh degrees. Equality in the variance bound forces support on singleton degrees and zero sums of coefficients sharing a reader bit. A Boolean linear Walsh polynomial has just one nonzero coefficient: its square has zero off-constant Walsh coefficients. Hence the signed-reader form and balance. Each directed influence vertex has one predecessor, so all nontrivial strongly connected components are directed cycles, already closed. The four-bit formula attains the bound; Cartesian factors add variances. QED.
+
+If both colors occur on every full geodesic, then 1<=X<=n-1, so the variance is at most (EX-1)(n-1-EX). This furnishes a global spectral sufficient criterion for monochromatic geodesics, but its bounds do not close unrestricted NORI1.
+
+Independent check: nori_geodesic_variance_audit.py enumerates all rooted geodesics for random Q3--Q5 colorings and compares the Walsh variance with direct rational arithmetic.
+
+
+## Random-coloring second moment and the forest of geodesic overlaps
+
+Let \(n\ge3\), let \(\mathcal O_n\) be the \(n2^{n-2}\) antipodal edge orbits, and independently give each orbit one fair sign, with opposite signs on its two edges. Let \(Z(c)\) be the number of unoriented monochromatic-zero full antipodal geodesics. There are \(T=2^{n-1}n!\) unoriented full geodesics, and \(\mu=\mathbb EZ=T2^{-n}=n!/2\).
+
+**Lemma (symmetric-row projective forest).** Let \(A=(A_{ij})\) be any symmetric zero-diagonal Boolean \(n\)-by-\(n\) matrix. Write \(a_i\in\mathbb F_2^n\) for row i, and put \([x]=\{x,\bar x\}\). On the projective cube \(Q_n/\{x\sim\bar x\}\), select the n direction-labeled edges
+\[
+E_i=\{[a_i],[a_i+e_i]\},\qquad i=1,\ldots,n.
+\]
+For \(n\ge3\), these edges form a forest.
+
+*Proof.* Edges of distinct directions are distinct: their endpoint differences are \(e_i,e_j\) modulo the line generated by \(\mathbf1\), and these differ for \(n\ge3\). If the selected graph had a cycle, every direction would occur at most once, while a lifted closed projective walk must have direction sum either zero or \(\mathbf1\). Thus the cycle would use all n directions, with sum \(\mathbf1\); its lift is a full antipodal geodesic. Orient that lift from some root r, and write \(t_i\) for whether its direction-i edge equals the representative at \(a_i\) or its antipodal mate. If j is different from i, the fixed j-bit of that edge gives
+\[
+r_j+[j\prec i]=A_{ij}+t_i\pmod2.
+\]
+Exchanging i,j and using \(A_{ij}=A_{ji}\) yields
+\[
+(r_i+t_i)+(r_j+t_j)=1\pmod2
+\]
+for every distinct i,j. Three binary values cannot be pairwise unequal, contradiction. \(\square\)
+
+**Lemma (degree exponential bound).** If H is a simple graph with m edges, then
+\[
+\boxed{\sum_{v:d_H(v)>0}(2^{d_H(v)}-2)\le2^m-2.}
+\tag{SM1}
+\]
+A star attains equality.
+
+*Proof.* For m=1 the sum is zero. Delete an edge uv of a simple graph with m>=2 edges. If its former endpoint degrees are a,b, the change in the sum is \(g(a)+g(b)\), where \(g(1)=0\) and \(g(t)=2^{t-1}\) for t>=2. If either degree is one, the increment is at most \(2^{m-1}\). Otherwise a+b<=m+1, because the sets of edges incident with u,v overlap in precisely uv, and convexity gives \(2^{a-1}+2^{b-1}\le 2^{m-2}+2\le 2^{m-1}\), with m=3 checked as equality. Inducting after deletion proves (SM1). \(\square\)
+
+**Theorem (a majority of random legal colorings close NORI1).** For every n>=3,
+\[
+\boxed{
+\mathbb E Z^2\le(2-2^{1-n})\mu^2,\qquad
+\Pr(Z>0)\ge\frac1{2-2^{1-n}}>\frac12.
+}
+\tag{SM2}
+\]
+
+*Proof.* Fix one unoriented full geodesic P. For any second geodesic Q, let a(P,Q) be the number of shared ordinary edges, and b(P,Q) the number of edges of Q that are antipodal mates of edges of P. Conditioning on P being monochromatic zero, the probability that Q is also monochromatic zero is zero if b>0, and otherwise \(2^{-(n-a)}\). Thus, by path transitivity under cube symmetries,
+\[
+\frac{\mathbb EZ^2}{\mu^2}
+=\mathbb E_Q\bigl[2^{a(P,Q)}\mathbf1_{\{b(P,Q)=0\}}\bigr].
+\tag{SM3}
+\]
+Orient P from zero and relabel dimensions so its order is \(1,\ldots,n\). Generate Q by choosing a uniform permutation \(\pi\) and a uniform starting vertex x. For each i, define its inversion row \(a_i^\pi(j)=1\) if i,j have reversed relative order in \(\pi\) versus \(1,\ldots,n\), and zero otherwise, with \(a_i^\pi(i)=0\). The inversion matrix is symmetric. For fixed \(\pi\), Q uses the direction-i edge of P if \(x_j=a_i^\pi(j)\) for all j different from i; it uses the antipodal mate if \(x_j=1-a_i^\pi(j)\) for all such j.
+
+Therefore, after identifying antipodal starting vertices, the two projective root pairs at which Q encounters orbit i are the endpoints of \(E_i=\{[a_i^\pi],[a_i^\pi+e_i]\}\). The lemma says the n such edges form a forest H_pi, in particular a simple graph with n edges.
+
+For each root x define \(\eta_i(x)\in\{-1,0,1\}\) to equal +1 when Q uses P's direction-i edge, -1 for its antipodal mate, and zero otherwise. Then
+\[
+2^{a(P,Q)}\mathbf1_{\{b(P,Q)=0\}}
+=\prod_{i=1}^n(1+\eta_i(x)).
+\]
+At an antipodal root pair [x] of degree d in H_pi, all factors outside its d incident edges equal one. The other factors are each zero or two; under x->bar x their signs reverse. If d=0, the pair contributes two to the sum of this product over its two roots. If d>0, that sum is at most \(2^d\) (it vanishes when positive and negative signs coexist). Hence
+\[
+\mathbb E_x\prod_i(1+\eta_i(x))
+\le 1+2^{-n}\sum_{v:d_{H_\pi}(v)>0}(2^{d_{H_\pi}(v)}-2)
+\le 2-2^{1-n}
+\]
+by (SM1). Average over \(\pi\) and apply (SM3). Finally, Cauchy--Schwarz gives \(\Pr(Z>0)\ge(\mathbb EZ)^2/\mathbb EZ^2\), proving (SM2). \(\square\)
+
+This is a theorem for the full legal coloring space rather than a special coloring family. It verifies a distributional form of the intuition that most balanced-looking colorings possess monochromatic geodesics, but does not eliminate a worst-case bad coloring. The forest lemma may be useful independently: it describes the incidence overlap of two complete direction orders through the symmetric inversion matrix.
+
+**Computational audit.** Direct enumeration of all second paths Q relative to a fixed P gives \(\mathbb EZ^2/\mu^2=13/12,13/12,339/320,5969/5760\) for n=3,4,5,6 respectively (the last two values are best treated as checks of a pair-count implementation; their decimal values are approximately 1.059375 and 1.036285). These are below the proven general bound; no finite check is used in the proof.
+
+
+## Mean overlap-root collisions
+
+With the projective root forest H_pi associated to a fixed canonical full geodesic P and a uniform second direction order pi, put C2(H_pi)=sum_v binom(deg_H_pi(v),2).
+
+**Theorem (reciprocal-binomial collision identity).** For every n>=3,
+\[
+\boxed{E_{\pi} C2(H_\pi)=2\sum_{r=0}^{n-2}\binom{n-1}{r}^{-1}\le10/3.}
+\tag{SM4}
+\]
+The expectation tends to two as n increases.
+
+*Proof.* Choose two reference edges of distinct directions at path positions i<j, with r=j-i-1 directions strictly between them. The two-edge incidence formula gives N(e_i,e_j)=r!(n-1-r)! and N(e_i,bar e_j)=(n-2-r)!(r+1)!. The number of unoriented geodesics using both antipodal orbit classes is therefore 2[N(e_i,e_j)+N(e_i,bar e_j)]=2n r!(n-2-r)!. For a fixed permutation pi, its two projective root edges E_i,E_j can meet in at most one projective root. When they meet, the two antipodal root lifts give two rooted paths of order pi using both orbits. Each unoriented geodesic has two rooted descriptions as order and root vary, so the number of pi where E_i,E_j meet equals the number of unoriented geodesics just counted. Dividing by n! yields probability 2r!(n-2-r)!/(n-1)! for this pair. There are n-1-r pairs of positions with separation r. Summing gives SM4.
+
+For m>=2 let S_m=sum_{r=0}^{m-1}1/binom(m,r). Directly S_2=3/2 and S_3=S_4=5/3. The difference S_(m+1)-S_m equals (1-sum_{r=1}^{m-1}r/binom(m,r))/(m+1), which is nonpositive: the first and last summands total one. Thus S_m<=5/3 for every m>=2. The interior reciprocal-binomial sum is O(1/m), hence S_m approaches one. QED.
+
+**Corollary.** For every k>=2, the probability that H_pi has a projective root incident to at least k of its n edges is at most (10/3)/binom(k,2), by Markov's inequality. Hence the expected number of pairwise overlap collisions remains bounded independently of dimension, even though rare orders permit a star on all n edges. Controlling high-degree overlap stars is a potential next step in sharpening the random-coloring theorem; it does not settle existence for every coloring.
+
+## Exponentially rare bad colorings and factorial witness concentration
+
+Continue to let \(Z(c)\) count color-zero unoriented antipodal geodesics, and let \(T=2^{n-1}n!\), \(\mu=\mathbb EZ=n!/2\). We sharpen the second moment (SM2) to a relative variance tending to zero exponentially.
+
+Fix a reference unoriented geodesic \(P=(e_1,\ldots,e_n)\), traversed in that order, and let \(A=\{e_{i_1},\ldots,e_{i_k}\}\) for indices \(1\le i_1<\cdots<i_k\le n\), \(k\ge1\). Put
+\[
+g_j=i_{j+1}-i_j-1\quad(1\le j<k),
+\qquad
+u=i_1-1+n-i_k.
+\]
+
+**Lemma (ordered-chain edge containment).** The number \(N_P(A)\) of unoriented full antipodal geodesics that contain all the specified ordinary edges of P is
+\[
+\boxed{N_P(A)=(u+1)!\prod_{j=1}^{k-1}g_j! \le (n-k+1)!.}
+\tag{RC1}
+\]
+For a singleton A the same formula is \(n!\).
+
+*Proof.* A full geodesic Q containing the specified edges must traverse them in their order along P or the reverse order. Indeed, a full cube geodesic flips each dimension once. If the first two marked edges are traversed in the forward orientation, the bits already flipped force all later marked edges to occur forward and in increasing order; the reverse case is symmetric. Orient Q so its marked edges occur forward. Between \(e_{i_j}\) and \(e_{i_{j+1}}\), the \(g_j\) intervening directions must all occur, in any of \(g_j!\) orders. Each remaining unmarked direction is outside the interval between the first and last marked edges, so may occur before the first or after the last; counting its choice of side and its ordering gives
+\[
+\sum_{h=0}^{u}\binom uh h!(u-h)!=(u+1)!.
+\]
+This orientation identifies each unoriented Q once, proving the count. Since \((u+1)+\sum_jg_j=n-k+1\), supermultiplicativity of factorials yields the inequality. \(\square\)
+
+**Theorem (strong random-coloring abundance).** For every n>=3 set
+\[
+\varepsilon_n=2^{1-n}\sum_{k=1}^n\frac{n-k+1}{k!}
+\le \frac{n(e-1)}{2^{n-1}}.
+\tag{RC2}
+\]
+Then
+\[
+\boxed{
+\frac{\operatorname{Var}(Z)}{\mu^2}\le\varepsilon_n,\qquad
+\Pr(Z=0)\le\frac{\varepsilon_n}{1+\varepsilon_n}
+<\varepsilon_n.
+}
+\tag{RC3}
+\]
+Moreover, for every \(0<\delta<1\),
+\[
+\boxed{
+\Pr\left[\left|Z-\tfrac{n!}{2}\right|\ge \delta\tfrac{n!}{2}\right]
+\le\varepsilon_n/\delta^2.
+}
+\tag{RC4}
+\]
+
+*Proof.* In the second-moment formula (SM3), for a second geodesic Q let \(a(P,Q)\) count edges shared with P and \(b(P,Q)\) count edges that are antipodal mates of P-edges. Discarding the nonpositive effect of conflicting antipodal mates gives
+\[
+\frac{\mathbb EZ^2}{\mu^2}
+=\mathbb E_Q\bigl[2^{a(P,Q)}\mathbf1_{\{b(P,Q)=0\}}\bigr]
+\le\mathbb E_Q2^{a(P,Q)}.
+\]
+Since \(2^{a(P,Q)}=\sum_{A\subseteq E(P)}\mathbf1_{\{A\subseteq E(Q)\}}\), the chain-containment lemma gives
+\[
+\begin{aligned}
+\mathbb E_Q2^{a(P,Q)}
+&=1+\frac1{T}\sum_{\varnothing\ne A\subseteq E(P)}N_P(A)\\
+&\le1+\frac1{2^{n-1}n!}\sum_{k=1}^n\binom nk(n-k+1)!\\
+&=1+\varepsilon_n.
+\end{aligned}
+\]
+For each k, \((n-k+1)/k!\le n/k!\), and the sum of \(1/k!\) over all k>=1 is e-1, proving (RC2). Subtract one to obtain the relative variance bound. The second-moment/Cauchy inequality gives \(\Pr(Z>0)\ge1/(1+\varepsilon_n)\). Chebyshev's inequality yields (RC4). \(\square\)
+
+**Corollary (almost all legal colorings have factorially many witnesses).** Uniformly over the full \(2^{n2^{n-2}}\)-element legal coloring space, the bad fraction is \(O(n2^{-n})\). For example, with probability at least \(1-4\varepsilon_n\), the coloring has at least \(n!/4\) monochromatic-zero unoriented full antipodal geodesics and equally many monochromatic-one geodesics, the latter by antipodal inversion. No restricted family or asymptotic independence assumption is involved.
+
+The theorem converts the proposed well-distribution intuition into quantitative concentration for **all** independently random antipodally odd colorings. It does not rule out exceptional worst-case colorings. This makes the outstanding closure question more sharply extremal: it must exclude a potential zero in the tail of a path-count distribution whose relative variance is exponentially small.
+
+**Verification.** The chain-containment formula (RC1) was independently compared with all nonempty subsets of the edges of a fixed geodesic in dimensions 3,4,5,6; the enumerations agreed for respectively 7,15,31,63 subsets. Its proof and the concentration inequalities are dimension-uniform.
+
+## Rooted switch distribution under projective root slides
+
+Let c be an antipodally odd edge coloring of Q_n, n>=3. Write H_s for the number of rooted, directed full antipodal geodesics with s ordinary color switches. Let M=2^(n-2)(n-1)! be the number of projective Petrie cycles, and N_g the number of such cycles having g bichromatic projective turns, where g is odd.
+
+**Theorem (all-dimensional switch histogram).**
+\[
+\boxed{H_{g-1}=4gN_g,\quad H_g=4(n-g)N_g.}\tag{RD1}
+\]
+Hence for all h with 2h+1<=n,
+\[
+\boxed{(2h+1)H_{2h+1}=(n-2h-1)H_{2h}.}\tag{RD2}
+\]
+In particular H_1=(n-1)H_0. Therefore a legal coloring has a one-switch full geodesic if and only if it has a monochromatic full geodesic.
+
+*Proof.* If a full path has color word (w_1,...,w_n), rotate its direction order cyclically and move the starting root across its first edge. Antipodal oddness makes the new word (w_2,...,w_n,1-w_1). The twisted comparison count
+\[
+g=\sum_{j<n}[w_j\ne w_{j+1}]+[w_n=w_1]
+\]
+is odd and unchanged under this root slide. With S the ordinary switch count, g=S+1 if S is even and g=S otherwise. Each projective Petrie cycle has 4n rooted directed full-path descriptions (both path orientations and both antipodal lifts). Among these descriptions, each of its n twisted turn positions is omitted from the ordinary comparison list four times. Omitting any of the g bichromatic turns yields S=g-1; omitting one of the n-g monochromatic turns yields S=g. This proves (RD1)--(RD2). QED.
+
+**Theorem (rooted switch moments from projective turn incidence).** Write \(T_1=\sum_Cg(C)=(n-2)!N_c\), \(T_2=\sum_C\binom{g(C)}2\), where the preceding turn-pair kernel computes T_2. Then
+\[
+\boxed{E S=\frac{(n-1)T_1}{nM},\qquad
+E S^2=\frac{(n-1)T_1+2(n-2)T_2}{nM}.}\tag{RD3}
+\]
+Consequently
+\[
+\boxed{\operatorname{Var}S=
+\frac{(n-1)T_1+2(n-2)T_2}{nM}
+-\left(\frac{(n-1)T_1}{nM}\right)^2.}\tag{RD4}
+\]
+If G is the twisted turn count on a uniformly random projective cycle, with mean m, then
+\[
+\boxed{\operatorname{Var}S=\frac{n-2}{n}\operatorname{Var}G+
+\frac{m(n-m)}{n^2},\qquad
+\Pr(S\text{ even})=\frac{E S}{n-1}.}\tag{RD5}
+\]
+
+*Proof.* Conditional on G=g, (RD1) gives S=g-1 with probability g/n and S=g with probability (n-g)/n. Thus E(S|g)=(n-1)g/n and E(S^2|g)=(n-2)g^2/n+g/n. Average, use sum_C g^2=T_1+2T_2, and subtract the squared mean. QED.
+
+### Vertex polarization, average switching, and limits of second moments
+
+At a vertex x put sigma_i(x)=(-1)^{c_i(x)}, and d(x)=sum_i sigma_i(x). Thus d(x) is the signed imbalance of the n incident edge colors.
+
+**Proposition (degree-imbalance identity).** For any binary edge coloring of Q_n (ordinary or antipodally odd),
+\[
+\boxed{\mathbb E S=\frac n2-\frac{1}{2n\,2^n}\sum_{x\in Q_n}d(x)^2.}\tag{RD6}
+\]
+Therefore E S<=n/2, with equality precisely when every vertex sees n/2 incident edges of each color; this requires n even. For n odd, \(ES\le(n^2-1)/(2n)\).
+
+*Proof.* Each adjacent pair of steps in a uniform full path meets at a uniformly random vertex, and the two incident directions are uniform among the binom(n,2) unordered pairs. At vertex x, if s_x incident edges have color one, the number of bichromatic direction pairs is s_x(n-s_x)=(n^2-d(x)^2)/4. Multiply its uniform average by (n-1)/binom(n,2), obtaining (RD6). QED.
+
+**Example (maximum mean switching coexists with many zero-switch paths).** In Q4 take c_0=x_2,c_1=1+x_2,c_2=x_0,c_3=1+x_0. Every vertex has d(x)=0, so ES=2, the maximum possible. Nevertheless the rooted switch histogram is (H_0,H_1,H_2,H_3)=(16,48,240,80): sixteen rooted geodesics are monochromatic. A high expected switch count does not imply NORI1 failure.
+
+**Closure interpretation.** For a hypothetical bad coloring, RD2 forces H_0=H_1=0, equivalently every projective cycle has at least three bichromatic turns. Its first- and second-moment restrictions are precisely the local-turn conditions already derived in this Subsection: RD3--RD5 translate them to the distribution of rooted switches but do not strengthen the existing quadratic closure certificate. The missing ingredient is a constraint on correlations of compatible turns beyond their numerical first two moments.
+
+**Reproducibility.** nori_root_switch_distribution_audit.py (SHA256 16d90bf1e3165938ab92d44c3c230cb5d272df770ae0aeadbdd3c95dc0c369b2) checks RD1--RD5 by direct rooted-path enumeration and rational arithmetic in dimensions two through six. nori_root_switch_exhaustive_q4.cpp (SHA256 1fee6bc81af0eef651821ea51944d616bf6570d95d7439a4cb76d311d4556be8) exhaustively verifies RD2 on all 65,536 legal Q4 colorings. The root-slide proof is dimension-uniform and is independent of these checks.
+
+### Coupling red-edge-count variance to mean switching
+
+Let X count color-one steps and S count color switches on a uniform rooted full geodesic of an antipodally odd coloring. Put d(x)=sum_i(-1)^{c_i(x)} and \(\Delta=n/2-\mathbb ES=\mathbb E_x d(x)^2/(2n)\).
+
+**Theorem (spectral trade-off).**
+\[
+\boxed{\operatorname{Var}X\ge n/6+
+\begin{cases}\Delta/2&n\text{ odd},\\
+n\Delta/(2(n+1))&n\text{ even}.\end{cases}}\tag{VT1}
+\]
+
+*Proof.* Write a_i(T) for the Walsh coefficients of c_i and b(T)=sum_i a_i(T)=-d-hat(T)/2. All nonempty Walsh supports are odd. The previously proved full-geodesic count-variance formula and Parseval give
+\[
+\operatorname{Var}X-n/6=
+\tfrac14\sum_{|T|\text{ odd}}\frac{\widehat d(T)^2}{|T|+2}
++\sum_{|T|\ge3,\ |T|\text{ odd}}
+(\tfrac13-\tfrac1{|T|+2})\sum_{i\notin T}a_i(T)^2.
+\]
+All terms are nonnegative. Since no direction-i function depends on i, the largest possible odd size |T| is n-2 when n is odd, or n-1 when n is even. Applying Parseval to d and dropping the final nonnegative sum yields (VT1). QED.
+
+The locally balanced signed-reader example on Q4 has Delta=0 and Var X=n/6, yet admits monochromatic full geodesics. Thus this trade-off quantifies the distribution-versus-imbalance tension without itself closing NORI1.
+
+Independent check: nori_variance_switch_tradeoff_audit.py verifies the spectral identity and direct rooted-path moments over random legal colorings in Q3--Q6.
+
+
+## A mixed exchange inequality and rigidity of constant Petrie grade
+
+Let \(c\) be any antipodally odd edge coloring of \(Q_n\), \(n\ge5\). Write \(r(x)\) for the number of color-one edges incident to \(x\). Let \(G\) be the number of switched comparisons on a uniformly random projective Petrie cycle, including its twisted closing comparison, and put \(\mu=\mathbb E G\). Thus \(G\) is a positive odd integer.
+
+**Theorem (exchange variance bound).**
+\[
+\boxed{
+\operatorname{Var}G\ge
+\frac{\mathbb E_x[r(x)(r(x)-1)(n-r(x))(n-r(x)-1)]}
+{n(n-1)(n-2)(n-3)}.
+}
+\tag{MX1}
+\]
+In particular,
+\[
+\boxed{
+\operatorname{Var}G\ge
+\frac{(n-1)\mu(\mu-2)}
+{4n(n-2)(n-3)}.
+}
+\tag{MX2}
+\]
+
+*Proof.* Put \(s_i(x)=(-1)^{c_i(x)}\) and \(x^i=x\oplus e_i\). Choose five distinct directions \(i,j,k,t,\ell\). Fix a vertex \(x\) and an order \(\rho\) of the directions other than \(k,i,j,\ell\). Let \(P_k\) start at \(x^k\) and have order \((k,i,j,\ell,\rho)\), and let \(P'_k\) use \((k,j,i,\ell,\rho)\) from the same root. Obtain \(\rho_t\) by replacing the occurrence of \(t\) in \(\rho\) with \(k\); define \(P_t,P'_t\) using root \(x^t\), first directions \(t,i,j,\ell\) or \(t,j,i,\ell\), and tail \(\rho_t\).
+
+Only three comparisons change in each adjacent exchange. Abbreviate
+\[
+a=s_i(x),\ b=s_j(x^i),\ c=s_j(x),\ d=s_i(x^j),\
+u_k=s_k(x),\ u_t=s_t(x),\ v=s_\ell(x^{ij}).
+\]
+Writing \(g(P)\) for the completed Petrie grade of \(P\), direct expansion of \([p\ne q]=(1-pq)/2\) gives
+\[
+g(P_k)-g(P'_k)
+=-\tfrac12\{u_k(a-c)+(ab-cd)+v(b-d)\}.
+\]
+The corresponding formula for \(t\) differs only in its incoming sign. Hence
+\[
+\boxed{
+g(P_k)-g(P'_k)-g(P_t)+g(P'_t)
+=-\tfrac12(u_k-u_t)(a-c).
+}
+\tag{MX3}
+\]
+
+Sample \(x\) uniformly, the five directions uniformly without repetition, and \(\rho\) uniformly. Each of the four full paths is marginally uniform among rooted direction-ordered full geodesics. Each completed grade therefore has mean \(\mu\) and variance \(\operatorname{Var}G\), since every projective Petrie cycle has the same number of rooted descriptions. Cauchy's inequality bounds the expected square of the left side of (MX3) by \(16\operatorname{Var}G\).
+
+The right side has square four precisely when both pairs of incident directions \(i,j\) and \(k,t\) have opposite colors. At a fixed \(x\), this event has probability
+\[
+\frac{4r(x)(r(x)-1)(n-r(x))(n-r(x)-1)}
+{n(n-1)(n-2)(n-3)}.
+\]
+Averaging proves (MX1).
+
+Put \(q(x)=r(x)(n-r(x))\). The first-turn incidence identity gives
+\[
+\mathbb E_xq(x)=\frac{n-1}{2}\mu.
+\]
+Moreover \(r(r-1)(n-r)(n-r-1)=q(q-(n-1))\). Jensen's inequality yields
+\(\mathbb E q(q-(n-1))\ge(\mathbb E q)^2-(n-1)\mathbb E q\).
+Substitution in (MX1) proves (MX2). \(\square\)
+
+**Theorem (uniform-grade rigidity).** For \(n\ge3\), if every projective Petrie cycle of a legal odd coloring has the same grade, that grade is one. Every such cycle therefore contains a monochromatic full antipodal geodesic.
+
+*Proof.* For \(n\ge5\), zero variance in (MX1) forces
+\[
+r(x)\in\{0,1,n-1,n\}\quad\text{at every vertex}.
+\]
+Thus \(r(x)(n-r(x))\le n-1\), and the first-turn identity gives \(\mu\le2\). A constant positive odd grade with this bound is one. For \(n=3,4\), the elementary bound \(r(n-r)\le\lfloor n^2/4\rfloor\) gives respectively \(\mu\le2\) and \(\mu\le8/3\), with the same conclusion. The one-switch Petrie criterion supplies the monochromatic geodesic. \(\square\)
+
+**Corollary (closure at equality in the first-moment criterion).** Every legal odd coloring satisfies NORI1 whenever
+\[
+\boxed{\mathbb E G\le3,}
+\tag{MX4}
+\]
+or equivalently whenever its incident-edge imbalance \(d(x)=n-2r(x)\) satisfies
+\[
+\boxed{\mathbb E_xd(x)^2\ge n^2-6(n-1).}
+\tag{MX5}
+\]
+
+*Proof.* If there were no grade-one cycle, all grades would be at least three. Under (MX4), every grade would then equal three, contradicting uniform-grade rigidity. The first-turn identity gives
+\(\mu=(n^2-\mathbb E_xd(x)^2)/(2(n-1))\), proving the equivalence. \(\square\)
+
+Thus the previously proved strict first-moment sufficiency extends through its equality boundary in every dimension. In particular every hypothetical bad coloring has both a grade-three-or-higher distribution and nonzero grade variance.
+
+**Corollary (analytic five-dimensional closure and multiplicity).** Every legally colored \(Q_5\) has at least three monochromatic-zero unoriented full antipodal geodesics.
+
+*Proof.* In dimension five, \(d(x)\) is odd, so \(\mathbb E_xd(x)^2\ge1=25-6\cdot4\). The preceding corollary proves existence directly.
+
+For the count, use the established identity
+\[
+N_0=Z_5+\tfrac32\sum_x[6-r(x)(5-r(x))],
+\]
+where \(Z_5\) counts grade-five projective cycles. If some vertex has \(r\notin\{2,3\}\), its summand is at least two; its antipodal vertex contributes the same amount. Hence \(N_0\ge6\).
+
+Otherwise all vertices have \(r\in\{2,3\}\), giving \(\mu=3\) and \(N_0=Z_5\). Since \(G\in\{1,3,5\}\), one has
+\(\operatorname{Var}G=8N_0/M\), where \(M=192\) is the number of projective Petrie cycles. Formula (MX1) gives \(\operatorname{Var}G\ge12/120=1/10\). Therefore \(N_0\ge M/80=12/5\); integrality gives \(N_0\ge3\). \(\square\)
+
+**Corollary (quantitative gap for every possible counterexample).** For \(n\ge6\), let \(b_n\) be the largest odd integer at most \(n\), and put
+\[
+\eta_n=\frac{3(n-1)}
+{4n(n-2)(n-3)(b_n-3)}.
+\]
+Every bad legal coloring must satisfy
+\[
+\boxed{
+\mathbb E G\ge3+\eta_n,\qquad
+\mathbb E_xd(x)^2\le n^2-6(n-1)-2(n-1)\eta_n.
+}
+\tag{MX6}
+\]
+
+*Proof.* Under badness, \(3\le G\le b_n\). The inequality
+\(\mathbb E[(G-3)(b_n-G)]\ge0\) gives
+\(\operatorname{Var}G\le(\mu-3)(b_n-\mu)\le(\mu-3)(b_n-3)\).
+On the other hand, (MX2) and \(\mu\ge3\) give
+\(\operatorname{Var}G\ge3(n-1)/(4n(n-2)(n-3))\).
+Combine these inequalities and translate the mean using the first-turn identity. \(\square\)
+
+The mixed exchange identity retains compatibility between four full geodesics sharing one square and differing in their incoming direction. It supplies a coloring-level restriction beyond scalar support and integrality of a hypothetical grade histogram. It closes the uniform-grade obstruction and the first-moment equality case. General closure still requires excluding the nonconstant distributions supported on grades at least three that satisfy (MX1)--(MX6).
+
+An independent evaluator checked (MX3) on 2000 randomly selected four-path configurations in dimensions five through nine. Complete rooted-path counts in independently generated \(Q_5,Q_6\) colorings verified (MX1), (MX2), and the mean conversion using rational arithmetic. The proofs above apply in every stated dimension.
+
+## Bounded-order switch moments do not force monochromatic paths
+
+**Theorem (integer moment-matching obstruction).** For every fixed m and every sufficiently large n, a nonnegative integer projective grade histogram with no grade-one cycles can have the same first m scalar moments as the affine legal coloring c_i(x)=x_{i+1 mod n}. It can also satisfy every rooted switch-count ratio from the root-slide theorem and match the first m rooted switch moments. The constructed histogram is not claimed realizable as a cube coloring.
+
+*Proof.* The integer construction and Lagrange interpolation argument are as follows.
+For any fixed order m, in all large dimensions there are nonnegative integer projective switch-grade histograms supported on grades at least three with the same first m moments as the affine coloring c_i=x_{i+1 mod n}. Construct by Lagrange interpolation: start from N_g=((n-1)!/2) binom(n,g); delete N_1=n!/2 and redistribute it over m+1 central odd grades gj by adding N_1 Lj(1), where Lj are the interpolation basis polynomials at gj. Polynomial moment matching follows from interpolation; factorial divisibility gives integer counts; central binomial growth dominates the adjustments and makes them nonnegative. Rooted switch moments match as well. n15 m2 normalized fake histogram (0,455,3003,6585,4780,1455,105,1) versus affine (15,455,3003,6435,5005,1365,105,1). Abstract fake histogram is not claimed realizable. Script nori_fixed_moment_obstruction.py.
+## Switch-spacing identities and single-edge repair multiplicity
+
+Fix an antipodally odd edge coloring c of Q_n, n>=3. Every full direction-simple antipodal geodesic has a color word w of length n. Let H_{2,d} count **rooted directed** full geodesics whose color words have precisely two adjacent-position switches, separated by d steps, 1<=d<=n-2. On a projective Petrie cycle C, the n cyclic twisted comparisons form an odd binary turn word \(\delta(C)\in\{0,1\}^n\). Put \(g(C)=\sum_j\delta_j\). If \(g(C)=3\), its three cyclic gaps between consecutive switched turns are positive integers with sum n. Let \(\Gamma_d(c)\) count these gaps of size d across all cycles of grade three, with multiplicity.
+
+**Theorem (two-switch spacing).** For every n and every legal c,
+\[
+\boxed{H_{2,d}=4\Gamma_d(c).}\tag{SG1}
+\]
+In particular, if \(Z_0(c)\) denotes the number of monochromatic-zero unoriented full geodesics and c^{[e]} denotes the coloring obtained by swapping the colors on the antipodal edge pair [e], then
+\[
+\boxed{
+\sum_{[e]}\bigl|\mathcal G_0(c^{[e]})\setminus\mathcal G_0(c)\bigr|
+=2Z_0(c)+\Gamma_1(c).}\tag{SG2}
+\]
+For a bad coloring, \(Z_0(c)=0\), so the left side is \(\sum_{[e]}Z_0(c^{[e]})\). Thus the total zero-geodesic multiplicity created by single-pair repairs is precisely the number of adjacent switched-turn gaps on grade-three Petrie cycles. In particular it equals the star-critical-neighbor count \(\sum_{W\in\mathcal W(c)}\kappa(T_W)\) from the preceding tournament surgery theorem.
+
+*Proof.* Root sliding cyclically shifts the projective turn word, deleting one of its n entries from the ordinary switch comparisons; reversing the path changes its orientation but not the turn gaps. A grade-three cycle contributes four rooted full paths of switch count two for each of its three omitted switched turns. When one turn is omitted, the remaining two switches are separated by the cyclic gap between them, proving (SG1). Conversely, any rooted two-switch full path belongs to a grade-three cycle and corresponds to precisely one such omission.
+
+A previously nonmonochromatic full geodesic becomes all zero after swapping one antipodal edge pair if and only if it originally had precisely one color-one edge; a full geodesic uses each direction only once and hence meets at most one member of the flipped edge orbit. For a unique internal one-edge defect, the path word has two consecutive switches (gap one). The number of such unoriented paths equals \(H_{2,1}/4=\Gamma_1\): every path has two root orientations, and antipodal translation pairs unique-one defects with unique-zero defects. For a terminal one-edge defect, the projective cycle has grade one. Every grade-one cycle yields two unoriented full geodesics with one terminal color-one edge, as follows by enumerating its cyclic root slides. There are \(Z_0(c)\) grade-one cycles. Summing both defect types gives (SG2). The bad-coloring and tournament claims follow immediately. \(\square\)
+
+**Theorem (local triple-turn incidence).** Choose one undirected edge e=uv from each antipodal edge orbit and let b=c(e). Define
+\[
+A_e=\{i\ne\operatorname{dir}(e):c_i(u)=1-b\},\quad
+B_e=\{j\ne\operatorname{dir}(e):c_j(v)=1-b\},
+\]
+and \(q(e)=|A_e||B_e|-|A_e\cap B_e|\). This integer is independent of the chosen orientation and antipodal representative of e. Let \(A(c)=\sum_C\sum_{j=0}^{n-1}\delta_j(C)\delta_{j+1}(C)\), with indices modulo n. Then
+\[
+\boxed{A(c)=(n-3)!\sum_{[e]}q(e).}\tag{SG3}
+\]
+Consequently any bad coloring satisfies
+\[
+\boxed{\sum_{[e]}Z_0(c^{[e]})=\Gamma_1(c)
+\le (n-3)!\sum_{[e]}q(e).}\tag{SG4}
+\]
+
+*Proof.* At a projective cycle's chosen central edge orbit [e], adjacent switched turns mean that the predecessor and successor edge colors both differ from b. Their respective directions i,j must be distinct and different from the central direction. At the chosen lift e=uv, precisely \(|A_e||B_e|-|A_e\cap B_e|\) such ordered triples of directions occur. Each three-step cube path extends to a projective dimension-simple Petrie cycle in \((n-3)!\) ways, by arranging the unused directions after the triple. A cycle meets the specified central edge orbit once, so this extension count has no duplication. Count all such triples over the central edge orbits to obtain (SG3). The final inequality follows from (SG2) and the fact that every adjacent gap on a grade-three cycle contributes to A(c). \(\square\)
+
+**Interpretation.** Formula (SG2) identifies the geometric portion of the projective three-turn population that governs critical single-edge repairs: not all grade-three cycles, but those with at least one pair of consecutive switched turns. Formula (SG3) computes the total adjacent-turn mass across *all* grades using only pairs of local incident-edge neighborhoods. These identities couple the turn-position distribution to the extremal repair-budget and same-facet injection theorems, but (SG4) alone does not contradict the existence of a bad coloring: higher-grade cycles may consume most of the local adjacency mass.
+
+**Independent verification.** nori_projective_gap_count_audit.py enumerates and quotients rooted full paths into Petrie cycles and verifies (SG1) on Q3--Q6. nori_adjacent_turn_local_audit.py verifies (SG3) independently on Q3--Q6. nori_repair_turn_identity_audit.py independently counts all one-edge-defect full paths and verifies (SG2) on Q3--Q6.
+
+## Coloring-space birth--death identities and the repair Laplacian
+
+For an antipodally odd coloring c of Q_n let \(\mathcal O_n\) be its \(m=n2^{n-2}\) antipodal edge-pair orbits. Let \(c^{[e]}\) denote the coloring obtained by swapping the colors on orbit [e]. Let \(\mathcal G\) be the \(2^{n-1}n!\) unoriented dimension-simple full antipodal geodesics. For each \(0\le k\le n\), write \(P_k(c)=|\{P\in\mathcal G:P\text{ has }k\text{ color-one edges}\}|\), so \(Z(c)=P_0(c)\). Define the coloring-space Laplacian
+\[
+(\mathcal L F)(c)=\sum_{[e]\in\mathcal O_n}[F(c^{[e]})-F(c)].
+\]
+
+**Theorem (Ehrenfest path-count recurrence).** For every legal c and \(0\le k\le n\), with \(P_{-1}=P_{n+1}=0\),
+\[
+\boxed{\mathcal L P_k=(k+1)P_{k+1}+(n-k+1)P_{k-1}-nP_k.}\tag{EL1}
+\]
+Moreover \(P_k=P_{n-k}\) and \(\sum_kP_k=2^{n-1}n!\).
+
+*Proof.* Fix one unoriented full geodesic P with k color-one edges. Its n edges belong to distinct antipodal edge orbits, because every direction is traversed only once. Flipping any of the \(m-n\) other orbits leaves its color word unchanged. Flipping any of its k one-edge orbits decreases its color-one count by one, while flipping any of its n-k zero-edge orbits increases it by one. Summing contributions over all geodesics proves (EL1). Antipodal translation maps each full geodesic to a different one with complementary edge-color word, giving \(P_k=P_{n-k}\). The total count is \(2^{n-1}n!\). \(\square\)
+
+**Corollary (monochromatic repair identity).** Let \(\Gamma_1(c)\) count cyclic gaps of length one between adjacent switched turns on the projective Petrie cycles with precisely three switched turns, as defined in the preceding switch-spacing theorem. Then
+\[
+\boxed{\mathcal L Z=\Gamma_1-(n-2)Z,}\tag{EL2}
+\]
+and equivalently
+\[
+\boxed{\sum_{[e]}Z(c^{[e]})=(m-n+2)Z(c)+\Gamma_1(c).}\tag{EL3}
+\]
+In particular, at a hypothetical NORI1 counterexample \(c\), \(Z(c)=0\) and
+\(\mathcal L Z(c)=\Gamma_1(c)\). This is the number of monochromatic-zero geodesics produced collectively by all single-orbit color reversals.
+
+*Proof.* Take k=0 in (EL1) to get \(\mathcal L Z=P_1-nZ\). The switch-spacing repair theorem gives \(P_1=2Z+\Gamma_1\), as each color-one singleton defect is either terminal on a grade-one cycle or internal on a grade-three cycle with adjacent turns. Substitute to obtain both identities. \(\square\)
+
+**Theorem (Krawtchouk diagonalization).** For \(0\le r\le n\) define
+\[
+K_r(k)=\sum_{j=0}^r(-1)^j\binom kj\binom{n-k}{r-j},
+\quad F_r(c)=\sum_{k=0}^nK_r(k)P_k(c).
+\]
+Then
+\[
+\boxed{\mathcal L F_r=-2rF_r,\qquad F_r=0\ \text{for odd }r.}\tag{EL4}
+\]
+In particular the coloring-space Laplacian evolution of the full-geodesic edge-count histogram is the Ehrenfest chain on n bits, notwithstanding that the ambient coloring cube has \(n2^{n-2}\) independent edge-orbit bits.
+
+*Proof.* For a full geodesic P put \(s_e=(-1)^{c(e)}\) on its n edge orbits. The coefficient of \(z^r\) in \(\prod_{e\in P}(1+zs_e)\) is \(K_r(X_P)\), where \(X_P\) is the number of color-one edges of P. It is a sum of degree-r characters in the coloring-orbit variables. The Laplacian flips every edge-orbit sign independently and acts on a degree-r character by multiplication by \(-2r\), proving the eigenvalue. Replacing P by its antipodal translate negates all n edge signs, and so negates every odd-degree character; summing P and its translate yields \(F_r=0\) for odd r. \(\square\)
+
+The Laplacian identity makes the coupling between root-slide turn geometry and one-edge repair sensitivity explicit. It does not settle NORI1: nonnegative functions on a connected hypercube can vanish at vertices with positive Laplacian, so a maximum-principle argument requires an additional structural inequality.
+
+**Independent audit.** nori_flip_laplacian_audit.py enumerates all unoriented full geodesics, all orbit flips affecting them, and verifies (EL1) and antipodal symmetry on random colorings in Q3--Q6. The preceding nori_repair_turn_identity_audit.py verifies the link \(P_1=2Z+\Gamma_1\) independently over the same dimensions.
+
+## Projective switch chirality and critical repair cycles
+
+Let c be an antipodally odd edge coloring of Q_n. For a rooted full geodesic on a projective Petrie cycle C, write w_0,...,w_(n-1) for its binary edge-color word and
+\[
+\delta_i=[w_i\ne w_{i+1}]\quad(0\le i<n-1),\qquad
+\delta_{n-1}=[w_{n-1}=w_0],\quad g=\sum_i\delta_i.
+\]
+The projective turn count g is odd, and the Petrie cycle has 4n rooted directed descriptions. Write X(P)=sum_i w_i, S(P)=sum_(i<n-1)[w_i != w_(i+1)].
+
+**Theorem (even-dimensional switch chirality).** For even n define
+\[
+\boxed{\eta(C)=(-1)^{X(P)}\sum_{j=0}^{n-1}(-1)^j\delta_{j-1\bmod n}.}\tag{PC1}
+\]
+This is invariant under root slides and reversal of path orientation. Moreover
+\[
+\boxed{\eta(C)\equiv g(C)\pmod4,\qquad |\eta(C)|\le\min\{g(C),n-g(C)\},}\tag{PC2}
+\]
+and
+\[
+\boxed{\sum_{P\in\mathcal R(C)}(-1)^{X(P)}t^{S(P)}
+=4\eta(C)(t^{g-1}-t^g).}\tag{PC3}
+\]
+For odd n the signed polynomial on the left vanishes. Half of the rooted descriptions of each cycle have even X, in any dimension.
+
+*Proof.* Root slide changes w to (w_1,...,w_(n-1),1-w_0), reversing parity of X and rotating the delta positions. Since n is even, the alternating sum changes sign, and eta is invariant. Path reversal reverses the ordinary word and retains the closing twisted comparison; reindexing shows eta unchanged. Let a count switched delta_(j-1) with j odd. The alternating sum is g-2a, and a is congruent modulo two to sum_(i even)delta_i, which equals X modulo two because the adjacent pairs (w_0,w_1),(w_2,w_3),... partition the word. Since g is odd, multiplying g-2a by (-1)^X gives g modulo four. The alternating sum is at most g in magnitude, and equally the negative sum over its n-g zero positions, proving (PC2). Along successive root slides, X parity alternates and S=g-delta at the omitted comparison. Summing over 2n slides and two orientations gives (PC3). For odd n the latter n slides have opposite parity and cancel. QED.
+
+**Corollary (Walsh degree).** With s_i=(-1)^{w_i},
+\[
+\boxed{\eta(C)=\tfrac12\left[\prod_{i=1}^{n-2}s_i
+-\sum_{j=1}^{n-1}(-1)^j\prod_{i\notin\{j-1,j\}}s_i\right].}\tag{PC4}
+\]
+This follows by substituting delta_(j-1)=(1-s_(j-1)s_j)/2 for j>=1 and delta_(n-1)=(1+s_(n-1)s_0)/2 into (PC1). Thus eta is a homogeneous polynomial of degree n-2 in the edge-color signs. Its positional dependence is not captured by a bounded collection of scalar switch moments.
+
+**Corollary (negative-chirality three-switch repairs).** For even n>=4 and g(C)=3,
+\[
+\boxed{\eta(C)\in\{-1,3\}.}\tag{PC5}
+\]
+The value three holds if and only if the three switched positions have the same parity; therefore every grade-three cycle having adjacent switched turns has eta=-1. If Gamma_1 counts adjacent switched-turn gaps among grade-three cycles, and N_(3,-1) counts their negative-chirality class,
+\[
+\boxed{\Gamma_1\le2N_{(3,-1)}.}\tag{PC6}
+\]
+In a hypothetical bad even-dimensional coloring chosen to maximize facet imbalance, let D be the minority-color edges of a maximizing facet. The established private-pivot and same-facet injection theorems give distinct grade-three cycles with adjacent switches for every e in D. Hence
+\[
+\boxed{N_{(3,-1)}\ge |D|\ge2^{n-2}+
+\left\lceil\frac{2^{n-3}}{1+(n-1)(n-2)}\right\rceil.}\tag{PC7}
+\]
+*Proof.* The congruence and bound (PC2) leave only -1 and 3 when g=3. A positive alternating sum of magnitude three forces all switched turns onto one parity class; the complementary parity condition is forced by the congruence. Among three switch positions on an even cycle, at most two gaps have size one. Finally, the private critical repair witness has a unique internal opposite-color observation and hence an adjacent switch pair; the previous same-facet injection guarantees distinct cycles. QED.
+
+**Proposition (root-slide color-count walk).** Along successive root slides, X_(k+1)-X_k is either -1 or 1 and X_(k+n)=n-X_k. Therefore each projective cycle contains a rooted path with central color-one count n/2 for even n; for odd n it contains both central counts floor(n/2) and ceil(n/2). Each such central count appears on at least four of the cycle's 4n rooted descriptions. A grade-one cycle is equivalent to the root-slide walk reaching either boundary X=0 or X=n.
+
+Independent complete binary-word verification of (PC1)--(PC6) for even n=4,6,8,10,12,14 and independent projective-cycle enumeration of random odd edge colorings in Q3--Q6 support the proofs (nori_chirality_word_exhaustive.py; nori_parity_switch_chirality_audit.py). The full derivation is recorded in nori_chiral_switch_geometry.md.
+
+
+## Finite-independence concentration and a positivity limitation
+
+Let \(Z(c)\) count monochromatic-zero unoriented antipodal full geodesics, \(\mu=n!/2\), and \(\varepsilon_n=2^{1-n}\sum_{k=1}^{n}(n-k+1)/k!\).
+
+**Theorem (\(2n\)-wise independence).** If a distribution on antipodally odd edge colorings has unbiased, mutually independent signs on every set of at most \(2n\) antipodal edge-pair orbits, then
+\[
+\boxed{\mathbb EZ=\mu,\quad
+\operatorname{Var} Z\le\varepsilon_n\mu^2,\quad
+\Pr(Z=0)\le\frac{\varepsilon_n}{1+\varepsilon_n}.}
+\tag{FI1}
+\]
+Also \(\Pr(|Z-\mu|\ge\delta\mu)\le\varepsilon_n/\delta^2\) for every \(\delta>0\).
+
+*Proof.* Each full-path monochromatic indicator depends on \(n\) distinct edge-pair signs. A product of two indicators depends on at most \(2n\) such signs. Their joint moments through order two therefore agree with the uniform independent-coloring model. Apply the proven factorial-incidence variance estimate, Cauchy--Schwarz, and Chebyshev's inequality. \(\square\)
+
+**Proposition (low-order moments do not ensure nonvanishing).** For \(n\ge4\), put \(K=2^{n-2}\), select \(K\) edge-pair signs \(z_{p_r}\) in one direction and \(K\) signs \(z_{q_r}\) in a second direction, and define
+\[
+\boxed{F(z)=\frac{n!}{K}\sum_{r=1}^K\frac{1-z_{p_r}z_{q_r}}2.}
+\tag{FI2}
+\]
+Then \(F\ge0\), \(\mathbb EF=n!/2\), \(\operatorname{Var}(F)/(\mathbb EF)^2=1/K=2^{2-n}\), and \(F\) has degree two and no odd Fourier coefficients or same-direction interactions. Yet \(F(z)=0\) whenever \(z_{p_r}=z_{q_r}\) for all \(r\).
+
+*Proof.* The \(K\) summands are independent Bernoulli-half variables under uniform signs, yielding the moments by direct calculation. Every nonconstant Fourier term combines different directions. Choosing paired signs equal makes every summand zero. \(\square\)
+
+Thus \(2n\)-wise independent ensembles cannot be supported entirely on bad colorings, but concentration and broad Fourier symmetries alone cannot imply pointwise existence. A closing proof must use the specific cube-geodesic incidence structure.
+
+## Sharp variance and face discrepancy in balanced antipodal colorings
+
+Let n>=4 be even, c an antipodally odd edge coloring of Q_n, and s_i(x)=(-1)^{c_i(x)}. Assume sum_i s_i(x)=0 for all x. Let a_i(S) denote the Walsh coefficient of s_i on S, and X the number of color-one edges along a uniform rooted full antipodal geodesic.
+
+**Theorem (sharp variance bounds).**
+\[
+\boxed{\frac n6\le \operatorname{Var}(X)\le\frac{n(n-2)}{4(n-1)}.}\tag{VB1}
+\]
+Both bounds are attained for all even n>=4, and every balanced coloring in Q4 has variance 2/3.
+
+*Proof.* Undirectedness gives a_i(S)=0 if i belongs to S, and oddness permits only odd |S|. Balance gives sum_i a_i(S)=0 at every nonempty S. Substituting into the full-geodesic color-count variance identity yields
+\[
+\operatorname{Var}(X)=\frac14\sum_{i,S:\ |S|\ {\rm odd}}
+\left(1-\frac1{|S|+2}\right)a_i(S)^2.\tag{VB2}
+\]
+If |S|=n-1, only one i can support a_i(S), so balance forces it to vanish. Therefore 1<=|S|<=n-3, and Parseval gives sum_(i,S) a_i(S)^2=n. The coefficient in (VB2) lies between 2/3 and (n-2)/(n-1), proving (VB1). For equality, partition directions into pairs {i,j}, choose an odd set S_ij avoiding both, and set s_i=chi_(S_ij), s_j=-chi_(S_ij). Choosing all |S_ij|=1 attains the lower bound; choosing all |S_ij|=n-3 attains the upper. For n=4 these coincide. QED.
+
+**Corollary (spectral equality).** The lower extreme requires all signed edge-color functions to have Walsh degree one, hence to be signed singleton-reader rules; balance requires cancellation of positive and negative readers for each read dimension. The upper extreme requires all their nonzero Walsh coefficients to have degree n-3, and then every cube face with at least three free dimensions has as many edges of one color as of the other.
+
+**Proposition (face discrepancy).** If a face F fixes the dimensions in I to values b, then
+\[
+\boxed{\sum_{e\subset F}s(e)=
+-2^{n-|I|-1}\sum_{i\in I}\ 
+\sum_{\substack{S\subseteq I\setminus\{i\}\\|S|\ {\rm odd}}}
+a_i(S)(-1)^{\sum_{j\in S}b_j}.}\tag{VB3}
+\]
+All faces of codimension at most r are balanced if and only if every coefficient a_i(S) with |S|<r vanishes.
+
+*Proof.* Summing the vertex-balance identity over F shows that twice its internal signed-edge sum is minus the sum of its incident signs in fixed directions. Expanding in Walsh characters and averaging over free bits gives (VB3). Vanishing of low-degree coefficients is sufficient for all faces with at most r fixed dimensions. Conversely, for any S with |S|<r and i outside S, choose I=S union {i}. The Fourier coefficient of the character S in (VB3), viewed as a function of the fixed bits b, is a nonzero multiple of a_i(S); balance of that face for all b forces it to vanish. QED.
+
+The upper-variance equality class balances every face of dimension at least three, while the lower class is already solved by functional influence. The bounds alone do not imply NORI1.
+
+Audit: nori_balance_face_spectral_audit.py exhaustively tested 65,536 legal colorings of Q4, finding 48 balanced colorings, and checked all faces and direct rooted-geodesic variances for the two extremizing constructions in Q4 and Q6.
+
+
+## Square-face imbalance and total Boolean influence
+
+In even dimension n>=4, let c be a vertex-balanced antipodally odd coloring and s_i(x)=(-1)^(c_i(x)). For each free direction pair {i,j}, let D_ij(z) be the sum of the four signed edge colors on the corresponding square with the other n-2 bits fixed to z. Set Q(c)=sum_(i<j) E_z[D_ij(z)^2]. Let a_i(S) be the Walsh coefficient of s_i on S and let I(c)=sum_(i,S)|S|a_i(S)^2, the total Boolean influence of the direction color functions.
+
+**Theorem (sharp square-energy identity).**
+\[
+\boxed{Q(c)=4[n(n-2)-I(c)],\quad 4n\le Q(c)\le4n(n-3).}\tag{SQ1}
+\]
+Both endpoints are attained. Q=4n if and only if all nonzero a_i(S) lie on Walsh level n-3; Q=4n(n-3) if and only if all lie on level one. They are, respectively, the maximum-variance and minimum-variance classes of the preceding theorem.
+
+*Proof.* Directly averaging the four square-edge signs gives D_ij(z)=2 sum_(S disjoint {i,j}) (a_i(S)+a_j(S)) chi_S(z). Parseval shows Q/4=sum_S sum_(i<j, i,j not in S)(a_i(S)+a_j(S))^2. For each S, vertex balance gives sum_(i notin S)a_i(S)=0. With l=n-|S| this inner sum is (l-2)sum_(i notin S)a_i(S)^2. Summing and applying Parseval sum_(i,S)a_i(S)^2=n yields Q/4=n(n-2)-I. Only odd Walsh degrees 1,...,n-3 can occur; the bound and equality characterization follow. Signed Walsh characters paired with negatives attain both endpoints. QED.
+
+Every square has signed sum 0, plus or minus 2, or plus or minus 4. Since Q>=4n and each nonzero squared sum is at most 16, **at least n*2^(n-4) square faces** have unequal numbers of the two colors.
+
+**Beyond-half corollary.** Combining SQ1 with the existing balanced influence/path-count theorem for n=2m gives
+\[
+M_{m+1}^0(c)\ge 2^{n-3}(m-2)!\bigl[n(n-2)-Q(c)/4\bigr].
+\]
+Thus the maximum-variance class also minimizes square discrepancy and maximizes the influence-based guarantee of monochromatic paths longer than half the dimension.
+
+Independent square-face enumeration in dimensions four, six, and eight and rooted full-geodesic enumeration in dimensions four and six confirm the formulas (nori_square_discrepancy_spectral_audit.py).
+
+
+## Counterexample-preserving approach to both variance endpoints
+
+Let c be any antipodally odd coloring on Q_n, with signed direction-edge functions sigma_i(x), and write A(c)=sum_(i,S)[1-1/(|S|+2)]hat(sigma_i)(S)^2, the sum over all nonzero Walsh coefficients. For every k>=1, construct two legal colorings C_low,C_high on Q_N, N=2n+2k. Use variables x_i,y_i, and k pairs u_j,v_j. Let s_(x_i)=sigma_i(x), s_(y_i)=-sigma_i(x). In the low construction set s_(u_j)=chi_{x_1}, s_(v_j)=-chi_{x_1}. In the high construction set s_(u_j)=chi_{T_j}, s_(v_j)=-chi_{T_j}, where T_j is all N dimensions except u_j,v_j,x_1. Every T_j has odd size N-3.
+
+**Theorem.** Both C_low and C_high are undirected and antipodally odd, with N/2 incident edges of each color at every vertex. Each monochromatic full geodesic projects, by deletion of its extra directions, to a monochromatic full geodesic of c; hence hypothetical badness is preserved. If X counts red edges of a uniformly sampled rooted full geodesic, then
+\[
+\boxed{\operatorname{Var}(X_{low})=A(c)/2+k/3,\quad
+\operatorname{Var}(X_{high})=A(c)/2+\frac{k}{2}\frac{N-2}{N-1}.}\tag{EP1}
+\]
+Consequently, using the sharp balanced bounds,
+\[
+\boxed{
+\operatorname{Var}(X_{low})-N/6=A(c)/2-n/3,\quad
+V_{max}(N)-\operatorname{Var}(X_{high})
+=\frac n2\frac{N-2}{N-1}-A(c)/2.}\tag{EP2}
+\]
+Both nonnegative gaps remain bounded as k grows, so their variance-per-dimension limits are 1/6 and 1/4, respectively.
+
+*Proof.* Each signed rule ignores its own bit and reverses under full complementation. Within each pair the signs cancel, giving vertex balance. All original direction colors depend only on the old x bits, so every monochromatic full path projects to one for c. The balanced Fourier variance identity gives Var X=(1/4)sum_(directions i, Walsh sets S)[1-1/(|S|+2)]hat s_i(S)^2. The old and compensator rules contribute A(c)/2; each signed gadget pair contributes one half times its Walsh weight, 2/3 for degree one and (N-2)/(N-1) for degree N-3. This yields EP1 and EP2. QED.
+
+For each fixed r<N-3, every codimension-r face whose fixed directions are all new gadget directions is balanced in C_high, since each fixed direction character has Walsh degree N-3 and averages to zero over the free directions. The proportion of such faces is binom(2k,r)/binom(N,r), tending to one for fixed n,r.
+
+This proves that if bad colorings exist, they can be lifted to vertex-balanced bad colorings within bounded **absolute** variance of either sharp bound and with vanishing relative variance gap. Such relative-variance closeness alone therefore cannot prove NORI1; sharp equality and minimum-dimension stability remain plausible closure routes.
+
+Verified by exhaustive 46,080-rooted-path enumeration in Q6 and randomized independent Q8,Q10,Q12 path checks (nori_balanced_variance_extreme_padding_audit.py).
+
+
+## Balanced antipodal colorings necessarily have nonzero square curvature
+
+**Theorem.** Every vertex-balanced antipodally odd edge coloring of Q_n, n even and at least four, has a two-dimensional square whose four edges have odd color sum, hence three edges of one color and one of the other.
+
+*Proof.* If all square curvatures vanish, square-path integration produces a Boolean vertex potential phi with c_i(x)=phi(x)+phi(x^i) modulo two. Put h(x)=(-1)^phi(x), t(x)=h(x)h(bar x). The signed edge color is s_i(x)=h(x)h(x^i). Vertex balance gives sum_i s_i(x)=0, equivalently Ah=0 for the n-cube adjacency operator A. Its Fourier eigenvalues are n-2|S|, so h has Walsh support only at weight n/2. It follows that h(bar x)=(-1)^(n/2)h(x) and t(x)=(-1)^(n/2) is constant. But oddness s_i(bar x)=-s_i(x) gives t(x)t(x^i)=-1 for every x,i, contradiction. Therefore some square has odd parity. QED.
+
+A square with four edges of the same color has nonzero signed edge imbalance but zero parity curvature. This theorem thus strengthens the preceding compulsory square-imbalance bound by forcing a three-to-one face somewhere. It is compatible with sparse-curvature counterexample-preserving padding, which only drives curvature density toward zero.
+
+Independent audit nori_balanced_curvature_audit.py: among all 65,536 antipodally odd Q4 colorings, all 48 balanced colorings have eight odd-parity square faces; signed Walsh pairs in Q6,Q8 were also tested.
+
+
+### Quantitative curvature density of balanced odd colorings
+
+**Theorem.** For even n>=4, if c is antipodally odd and vertex-balanced, the fraction epsilon of square faces with odd four-edge color sum satisfies
+\[
+\boxed{\varepsilon\ge\frac{2}{(n-1)(n^2+1)}.}
+\]
+At least ceil(n*2^(n-2)/(n^2+1)) squares are curved.
+
+*Proof.* Fix any Boolean gradient g_i(x)=phi(x)+phi(x^i) and let delta be its normalized edge disagreement with c. Put h=(-1)^phi and A the cube adjacency operator. Because c has zero signed incident-degree sum, writing B(x) for mismatched incident edges gives ||Ah||_2^2<=4 E B^2<=4n^2 delta. All nonzero Walsh eigenvalues of A have magnitude at least two, so the distance squared of h from its kernel (the Fourier level n/2) is at most n^2 delta. Antipodal translation multiplies this kernel by (-1)^(n/2). Thus t(x)=h(x)h(bar x) disagrees with that constant on at most n^2 delta vertices. By oddness of c and the error bound, the gradient g is antipodally odd on at least 1-2delta of oriented edges. Its oddness at (x,x^i) is equivalent to t(x)!=t(x^i), an event of probability at most 2n^2 delta. Therefore delta>=1/[2(n^2+1)].
+
+Choose a random basepoint b and a random order pi of dimensions. Integrate the c-edge bits along the prescribed shortest b-to-x paths to define a vertex potential phi_(b,pi). For an edge (x,x^i), the defect of the resulting gradient equals a sum modulo two of curvatures on at most n-1 squares, obtained by commuting the i-step past later differing directions j. Each j is included with probability 1/4, and the square position is uniform under random b. The expected gradient disagreement is at most (n-1)epsilon/4. Combine this with the preceding lower bound on delta. QED.
+
+This is quantitative rank-two curvature forcing, compatible with the counterexample-preserving lifts whose curvature fractions tend to zero. A Q4 exhaustive audit verified the bounds on all 48 balanced colorings over all 384 path-integral gauges each: nori_balanced_curvature_stability_audit.py.
+
+
+### Simultaneous marginal independence and sparse curvature at both variance endpoints
+
+The two counterexample-preserving balanced lifts (EP1)--(EP2) admit a strengthening. Keep the old and compensator direction signs s_(x_i)=sigma_i(x), s_(y_i)=-sigma_i(x). Let k>=3 and use k complementary gadget pairs u_j,v_j.
+
+For the low-variance version, replace the common old-bit reader by s_(u_j)=(-1)^(u_(j+1)), s_(v_j)=-s_(u_j), with cyclic j. These k reader bits are mutually independent and uniform; all gadgets remain degree-one Walsh signs, so the lower variance formula EP1 is unchanged. Every curved square involving any gadget direction has another gadget direction from an adjacent reader pair; at most 2k gadget-only direction pairs may be curved. There are no gadget-old curved pairs, and at most binom(2n,2) old-only pairs can be curved.
+
+For the high-variance version, retain s_(u_j)=chi_(T_j) and s_(v_j)=-chi_(T_j), where T_j is all N=2n+2k dimensions except u_j,v_j,x_1. The k Walsh characters chi_(T_j) are linearly independent as Boolean linear functions: for an even nonempty subset J of their indices, a gadget bit u_j with j in J occurs in the sum of their supports an odd number of times; for an odd subset J, any old compensator bit y_i occurs an odd number of times. Thus the k gadget source signs are independent uniform bits. Between different gadget pairs, each sign reads the other's two bits, so both mixed partial derivatives equal one and their square curvature cancels. Within a paired block both derivatives vanish. A gadget/old direction pair has curvature one precisely when the old direction is not x_1. Consequently at most 2k(2n-1)+binom(2n,2) direction pairs are curved.
+
+**Corollary.** Fix a legal original c, a positive integer t and an epsilon>0. For all sufficiently large k, both low- and high-variance badness-preserving lifts are pointwise balanced, within an epsilon fraction of their respective variance-per-dimension extrema, have independent fair incident colors on at least a proportion 1-epsilon of all t-element direction sets, and have vanishing curvature on at least a proportion 1-epsilon of direction pairs. Their paths project onto paths of c, so if c were bad, both lifts would remain bad.
+
+This simultaneous preservation rules out any dimension-uniform closure argument using only approximate extremal variance, independent fixed-order marginals, and sparse square curvature. Audited by nori_extreme_variance_independence_curvature_audit.py, checking Walsh-source ranks and all gadget-pair curvature classes for n=2,3,4 and k=3,5,9.
+
+## Antipodal matching traces and the complete projective switch spectrum
+
+Let c be an antipodally odd coloring of the cube Q_n (n>=3). Let R be the adjacency matrix of its zero-edge subgraph, P the permutation matrix x->bar x, and A the full cube adjacency matrix. Then P^2=I and PRP=A-R. For a rooted antipodal geodesic with color word w_0,...,w_(n-1), let the cyclic twisted turn bits be delta_j=[w_j!=w_(j+1)] for j<n-1 and delta_(n-1)=[w_(n-1)=w_0]. The odd integer g=sum delta_j is invariant under root sliding and path reversal. Write N_g for the number of projective Petrie cycles of grade g; each has 4n rooted descriptions.
+
+**Theorem (switch spectrum as an adjacency trace).** Set T(z)=(I+zP)R. Then
+\[
+\boxed{\sum_{g\ {\rm odd}}N_gz^g=
+\frac{\operatorname{tr}(T(z)^n)-\operatorname{tr}(T(-z)^n)}{4n}.}\tag{AT1}
+\]
+In particular,
+\[
+\boxed{N_1=\frac12\operatorname{tr}(PR^n),}
+\tag{AT2}
+\]
+and N1>0 is equivalent to a monochromatic full antipodal geodesic.
+
+*Proof.* Expand tr(T(z)^n) into cyclic walks having n zero cube edges with an optional antipodal matching step preceding each. A term with odd matching count g is closed only when the XOR of its n cube-step directions is the all-ones vector. Since there are n steps, every direction occurs once. Unfold those zero edges through the antipodal map to obtain a dimension-simple full geodesic. Conversely, the colors w of any rooted full geodesic prescribe the matching step in cyclic gap j precisely when delta_j=1: one-colored edges are antipodally translated to zero edges, and matching steps join successive translated pieces. The construction identifies the two antipodal descriptions of the same marked zero-edge walk. Thus each 4n-description projective cycle of grade g produces 2n terms in the odd part of the trace, giving (AT1). For g=1 the only matching step closes an all-zero geodesic. Cyclicity of the trace also gives [z]tr(T(z)^n)=n tr(PR^n), proving (AT2). QED.
+
+**Corollary (fixed pinching endpoints).** Put Pi_+=(I+P)/2 and Pi_-=(I-P)/2. Then
+\[
+\boxed{\operatorname{tr}(T(\pm1)^n)
+=\operatorname{tr}((\Pi_\pm A\Pi_\pm)^n),\qquad
+\sum_gN_g=2^{n-2}(n-1)!.}\tag{AT3}
+\]
+*Proof.* The identity PRP=A-R gives 2Pi_± R Pi_±=Pi_± A Pi_±. Use cyclic trace invariance and T(±1)=2Pi_± R. Subtracting the two endpoint values gives tr(PA^n)=2^n n!, since an antipodal n-step walk has each direction once. Divide by 4n as in (AT1). QED.
+
+These identities unify the projective grade distribution and the antipodal-matching graph of the odd-girth formulation. The ordinary balanced matrix closure statement is: for each even n and every zero-edge adjacency R satisfying PRP=A-R and R1=(n/2)1, prove tr(PR^n)>0. By the balanced counterexample-preserving lift, this single inequality would settle unrestricted NORI1. The endpoint identities alone do not imply its positivity.
+
+Independent verification: nori_projective_trace_polynomial_audit.py used integer matrix powers and independent rooted-path enumeration in Q3 through Q6, matching every odd-degree coefficient.
+
+### Matching-weighted shortest odd walks recover the switch spectrum
+
+Retain the preceding zero-edge matrix R, antipodal permutation P, and projective counts N_g. Set K(u)=R+uP. For odd r>=1 define B_r=[u^r]tr(K(u)^(n+r)).
+
+**Theorem (triangular weighted-walk reconstruction).**
+\[
+\boxed{B_r=2(n+r)\sum_{\substack{g\le r\\g\ {\rm odd}}}
+\binom{n+(r-g)/2-1}{(r-g)/2}N_g.}\tag{MW1}
+\]
+Equivalently,
+\[
+\boxed{\sum_{r\ {\rm odd}\ge1}\frac{B_r}{2(n+r)}z^r
+=(1-z^2)^{-n}\sum_{g\ {\rm odd}}N_gz^g.}\tag{MW2}
+\]
+Thus B_1=2(n+1)N_1 and B_3=2(n+3)(N_3+nN_1).
+
+*Proof.* A closed walk contributing to B_r has r antipodal matching steps and n zero cube-edge steps. Since r is odd, the cube-step directions XOR to the all-ones vector. There are only n cube steps, hence each direction appears once. Unfolding gives a rooted full geodesic of projective grade g. In its j-th cyclic gap, the matching-step count must equal the twisted comparison bit delta_j modulo two; write it delta_j+2h_j with h_j>=0. There are binom(n+h-1,h) ways to distribute h=(r-g)/2 extra matching-edge backtracking pairs over the n gaps. Every rooted path and its antipodal translate yield the same walk with a distinguished cube step. Every cyclic trace walk of length n+r has n cube-step marks but n+r possible starting positions, with periodic walks counted by their positions. Multiplying the rooted-path grade count 4nN_g by (n+r)/(2n) and the weak-composition count proves (MW1). The generating function of these compositions is (1-z²)^(-n), proving (MW2). QED.
+
+**Corollary (midpoint trace).** For even n=2m,
+\[
+\boxed{2N_1=\operatorname{tr}(PR^{2m})
+=\sum_{x,v\in Q_{2m}}(R^m)_{xv}(R^m)_{\bar x,v}.}\tag{MW3}
+\]
+Every nonzero summand has d(x,v)=m, so its two factors count monochromatic half-geodesics from antipodal roots to a common middle vertex. This identifies the matrix closure coefficient with the complementary middle-rank crossing criterion.
+
+*Proof.* Trace cyclicity and R symmetry give tr(PR^(2m))=tr(R^m P R^m); expand entries. If both length-m walks exist, the triangle inequality gives d(x,v)<=m and d(bar x,v)<=m. Since these distances sum to 2m, each equals m, so both walks are dimension-simple half-geodesics. QED.
+
+The positive triangular transform MW1 separates three-switch cycles from repeated matching-edge excursions on one-switch cycles. It also connects odd-girth, root-coupled midpoint reachability, and the full projective grade polynomial in one adjacency representation. Verifications: nori_projective_trace_polynomial_audit.py (Q3--Q6) and nori_weighted_antipodal_trace_audit.py (Q4,Q6).
+
+### Full coloring-space grade flux under antipodal edge-pair recolorings
+
+Let O be the set of antipodal edge-pair orbits of Q_n and c^[e] the coloring formed by reversing one orbit [e]. On functions of legal odd colorings, put
+\[
+(\mathcal L F)(c)=\sum_{[e]\in O}(F(c^{[e]})-F(c)).
+\]
+For each odd grade g, let N_g(c) count projective Petrie cycles of grade g. Define
+\[
+A_g(c)=\sum_{C:\,g(C)=g}\sum_{j=0}^{n-1}\delta_j(C)\delta_{j+1}(C),\qquad
+B_g(c)=\sum_{C:\,g(C)=g}\sum_{j=0}^{n-1}(1-\delta_j(C))(1-\delta_{j+1}(C)),
+\tag{GF1}
+\]
+with cyclic indices and A_g=B_g=N_g=0 outside admissible grades. Thus A_g counts adjacent pairs of switched turns, and B_g counts adjacent pairs of unswitched turns.
+
+**Theorem (grade-flux equation).** For every odd g,
+\[
+\boxed{\mathcal L N_g=B_{g-2}+A_{g+2}-A_g-B_g.}\tag{GF2}
+\]
+Moreover
+\[
+\boxed{B_g-A_g=(n-2g)N_g,\qquad
+\mathcal L T_1=2nM-4T_1,}\tag{GF3}
+\]
+where \(T_1=\sum_g gN_g\) and \(M=2^{n-2}(n-1)!\) is the total number of projective cycles.
+
+*Proof.* A projective Petrie cycle traverses precisely n distinct antipodal edge-pair orbits, one per direction. Reversing any one of these orbits changes one edge-color spin in the twisted cyclic word and therefore toggles its two neighboring turn bits \(\delta_j,\delta_{j+1}\). A neighboring pair 00 becomes 11, increasing grade by two; 11 becomes 00, decreasing grade by two; 01 and 10 exchange positions and retain the grade. Summing over all orbit flips and all projective cycles gives the incoming terms \(B_{g-2}\), \(A_{g+2}\), and the outgoing terms \(-B_g-A_g\), proving (GF2).
+
+For each twisted turn word with g ones, let a,b,t count its cyclic adjacent patterns 11, 00 and 01, respectively; the number of 10 patterns also equals t. Counting zeros and ones at the left endpoint of each cyclic pair yields g=a+t and n-g=b+t, hence b-a=n-2g. Summing over cycles gives the first relation in (GF3). The sum of changes in grade over all n possible orbit flips on a cycle is \(2(b-a)=2(n-2g)\). Sum this identity over cycles to obtain the second relation. QED.
+
+**Corollary (critical repair recovery).** The grade-one equation is
+\[
+\boxed{\mathcal L N_1=A_3-(n-2)N_1.}\tag{GF4}
+\]
+Here A_3 is the adjacent switched-turn gap count \(\Gamma_1\) from the single-edge repair theorem. At a hypothetical counterexample \(N_1=0\), the total number of monochromatic-zero geodesics appearing among all single-orbit neighboring colorings equals A_3. Thus the repair Laplacian is the first boundary equation of the full grade-flux system.
+
+**Corollary (equilibrium grade profile).** Under independent uniformly random choices of the antipodal edge-orbit colors,
+\[
+\boxed{\mathbb E N_g=\frac{(n-1)!}{2}\binom ng
+\quad (g\text{ odd}),\qquad
+\mathbb E A_g=\frac{g(g-1)}{n-1}\mathbb E N_g,\qquad
+\mathbb E B_g=\frac{(n-g)(n-g-1)}{n-1}\mathbb E N_g.}\tag{GF5}
+\]
+Consequently \(\mathbb E B_g=\mathbb E A_{g+2}\): the grade flux is in detailed balance in the uniform coloring ensemble.
+
+*Proof.* On any fixed rooted full path, its n edge-orbit colors are independent unbiased bits. The cyclic twisted turn vector is uniform among the \(2^{n-1}\) odd-parity binary vectors. Conditional on g ones, it is a uniform g-subset of the n turn positions. Counting cyclic 11 and 00 adjacent pairs yields the two expectations, and the projective count has \(M\) cycles. QED.
+
+The system (GF2) is not closed on scalar grade counts: its transition rates retain the adjacency of switched turns. It makes the missing geometric information explicit, while the flux drift (GF3) recovers the quadratic global first-moment potential. In particular its one-grade boundary equation does not by itself rule out a coloring with N_1=0.
+
+Independent audit: nori_grade_flip_laplacian_audit.py computes all single-pair recoloring neighbors and independent rooted-path grade/adjacency statistics for sample legal colorings in dimensions 3, 4 and 5. Every grade-flux identity was verified.
+
+### Balanced colorings are strict one-flip maxima of total projective grade
+
+Let n=2m, and let c be a vertex-balanced antipodally odd coloring of Q_n. Set \(T_1(c)=\sum_Cg(C)\), the sum of projective grades. Then every antipodal edge-pair orbit [e] satisfies
+\[
+\boxed{T_1(c^{[e]})=T_1(c)-2(n-2)!.}\tag{GF6}
+\]
+Furthermore, every vertex-balanced coloring attains the maximum possible T1 among all legal colorings.
+
+*Proof.* Write r(x) for the number of one-colored edges incident at x. The local turn-incidence identity gives \(T_1(c)=(n-2)!/2\sum_xr(x)(n-r(x))\). Each summand is at most m², and balance makes every summand m². Flipping the antipodal orbit [e] changes the incident one-degree at its four distinct endpoints from m to m+1 or m-1, while leaving all other vertex degrees fixed. Since \((m\pm1)(m\mp1)=m^2-1\), each affected summand drops by one. The total grade therefore falls by \(4(n-2)!/2=2(n-2)!\). QED.
+
+In particular, the first-grade boundary flux of a hypothetical balanced bad coloring is nonnegative, \(\mathcal L N_1=A_3\), whereas its total-grade moment falls under every single orbit flip. The simultaneous opposite directions of these two grade potentials show why maximizing the global switched-turn count by vertex balance is not, alone, a descent proof for monochromatic geodesics. The Q4 balanced-coloring enumeration verifies that all single-orbit neighbors decrease T1 by four.
+
+
+## Direction-toggle Petrie duality and the associated binary incidence code
+
+Fix n>=3 and an antipodally odd binary edge coloring c of Q_n. Let O be its antipodal edge-pair orbits, and let C run over the 2^(n-2)(n-1)! projective Petrie cycles. Each C uses n different edge-pair orbits, one per direction, denoted p_i(C). Choose a full window in C and let beta_C in F2^n be its direction-indexed color word. Let H_pi be the 2n vertices of the standard projective Petrie cycle in F2^n in C's direction order pi, starting at zero.
+
+**Theorem (dual-cycle incidence).** For I subset[n], write c^I for reversal of all colors in directions I, and Z(c^I) for the number of monochromatic-zero full antipodal geodesics. Then
+\[
+\boxed{Z(c^I)=\sum_C {\bf1}\{I\in\beta_C+H_{\pi(C)}\}.}\tag{DP1}
+\]
+Hence \(\sum_{I\subset[n]}Z(c^I)=2^{n-1}n!\), and \(Z(c^I)=Z(c^{[n]\setminus I})\).
+
+*Proof.* Sliding a full path window to its next position removes an edge of direction pi(k) and introduces its antipodal mate, which has opposite color. Thus its direction-indexed color word flips only bit pi(k). Across 2n slides the successive words are precisely beta_C+H_pi; each appears once. The window is monochromatic zero after reversing whole directions I if and only if its original color-one direction set equals I. Summing over C proves the formulas. \(\square\)
+
+For arbitrary edge-pair flips represented by z in F2^O, define
+\[
+\boxed{L(z)_{C,i}=z_{p_i(C)}.}\tag{DP2}
+\]
+Then the dual cycle belonging to C is translated by L(z)_C. The map L is injective and, regarding its output as blocks indexed by C, has minimum nonzero block support (n-1)!.
+
+*Proof.* A flipped pair affects precisely the cycles containing that orbit, and shifts their direction-indexed color word in the direction of the orbit. Every edge-pair orbit belongs to (n-1)! projective Petrie cycles: count cycle-orbit incidences, using cube symmetry and the total n*2^(n-2)*(n-1)! incidences among n*2^(n-2) orbits. Therefore any nonempty z affects at least (n-1)! cycle blocks, and a singleton z attains equality. Every orbit occurs in some cycle, proving injectivity. \(\square\)
+
+**Equivalent covering formulation.** Fix a reference coloring c0 and put H_C=beta_C(c0)+H_pi(C). NORI1 in dimension n holds if and only if
+\[
+\boxed{\operatorname{im}L\ \cap\
+\prod_C\bigl(F2^n\setminus H_C\bigr)=\varnothing.}\tag{DP3}
+\]
+Here the product is indexed by projective Petrie cycles, and the comparison uses the block values L(z)_C. Indeed, if c0^z is bad then every translated cycle avoids zero, equivalently L(z)_C avoids H_C, and vice versa. This is a linear-incidence code constrained to meet a specified cyclic set in at least one block; it makes the cross-order consistency requirement explicit without restricting the original coloring.
+
+The linear code is a repetition-incidence encoding, not a nonvanishing proof. Each individual block constraint leaves almost all its 2^n patterns admissible, and the full-cover assertion depends on correlations between blocks.
+
+
+## One-order dual coverage and adjacent-exchange geometry
+
+For n>=3 and a permutation pi of directions, let H_pi be the 2n-vertex projective Petrie cycle in F2^n with successive flip order pi. For an antipodally odd coloring c and root x let
+\[
+F_\pi(x)_i=c_i(x+\mathbf1_{\{j:j\text{ precedes }i\text{ in }\pi\}}).
+\]
+The dual cycle through this rooted path has vertex set \(F_\pi(x)+H_\pi\). Let \(U_\pi(c)=\bigcup_x(F_\pi(x)+H_\pi)\).
+
+**Lemma (translated Petrie intersections).** For v in F2^n, the size of \(H_\pi\cap(H_\pi+v)\) is 2n when v=0 or v=all-ones, is four when the support of v is a nonempty proper cyclic interval in pi, and is zero otherwise.
+
+*Proof.* The two vertices of H_pi differ in precisely the set of directions traversed along one of the two arcs between them. An arc shorter than n uses distinct consecutive directions. For a nonempty proper interval there are two occurrences of that arc in the length-2n cycle, together with their reversed endpoint descriptions, giving four intersection vertices. No other displacement is possible, except the full antipodal displacement stabilizing the cycle. \(\square\)
+
+**Theorem (sharp single-order coverage).** For every legal c and every pi,
+\[
+\boxed{|U_\pi(c)|\ge4n-4.}\tag{OC1}
+\]
+Equality is possible for all n>=3.
+
+*Proof.* F_pi is antipodally odd and each output component ignores the identically indexed input bit. The image is therefore antipodally invariant. If it contained only one complementary pair {u,bar u}, write F_pi(x)=u+h(x)all-ones. Since each F_pi(x)_i ignores x_i, the scalar function h would ignore every input bit and hence be constant, contradicting oddness. Thus the image contains at least two distinct complementary pairs. They give two distinct translates of H_pi, each of size 2n, and their intersection has at most four vertices by the preceding lemma. This proves (OC1).
+
+For sharpness choose pi=(0,1,...,n-1) and c_0(x)=x_1, c_i(x)=1-x_0 for every i>0. These rules ignore their own direction bits and are antipodally odd. The image of F_pi is {0,all-ones,e_0,all-ones+e_0}. Its two dual cycles are H_pi and H_pi+e_0, which intersect in four vertices, so their union has size 4n-4. \(\square\)
+
+**Adjacent-swap theorem.** Let pi' exchange adjacent directions i,j in pi, after predecessor set S. At a fixed root x put y=x+1_S. The direction-indexed color words differ only at i,j:
+\[
+\boxed{
+F_{\pi'}(x)_i+F_\pi(x)_i=c_i(y+e_j)+c_i(y),\quad
+F_{\pi'}(x)_j+F_\pi(x)_j=c_j(y)+c_j(y+e_i).
+}\tag{OC2}
+\]
+Their summed difference is the square color parity of the four i,j edges. The dual Petrie cycles associated to pi,pi' and the same root meet in 2n-2 vertices when neither bit changes, in six when both change, and in four when only one changes.
+
+*Proof.* All path edges outside the interchanged pair have the same input bits in both orders. The two changed edges lie on opposite sides of the i,j square based at y, proving (OC2). Comparing the two prefix cycles before/after the swap reduces their intersections, for the four possible bit differences, to the stated 2n-2,6,4,4 possibilities. \(\square\)
+
+**Theorem (mandatory activity across direction orders).** For every legal c, root x, and direction i, at least (n-1)! adjacent-transposition edges of the permutation graph change the ith bit of F_pi(x). Consequently at least n!/2 distinct adjacent swaps change at least one bit.
+
+*Proof.* Define f_i(S)=c_i(x+1_S) for S subset[n]\{i}. Antipodal oddness and independence from direction i give f_i(S^c)=1-f_i(S). Along every maximal chain from empty to all n-1 remaining directions, f_i therefore changes at least once. There are (n-1)! such chains, and each chain edge corresponds to one adjacent swap involving i; these swaps are distinct for fixed i. Summing over i counts each active adjacent swap at most twice, giving n!/2. For even n the bound is sharp: pair up directions and let each direction color equal the vertex bit of its partner. Then precisely the swaps of paired directions are active, numbering n!/2. \(\square\)
+
+The results apply to all legal colorings without any interaction restriction. They prove strong movement of dual-cycle positions between permutations, but do not force the combined dual-cycle family to cover the full toggle cube; in particular the sharp single-order example can leave exponentially many vertices uncovered.
+
+
+### Rigidity and stability at the minimum fixed-order coverage
+
+Retain the root-to-pattern map F_pi and the covered toggle set U_pi for a fixed direction order pi.
+
+**Theorem (four-value structural classification).** Suppose the image of F_pi comprises four words. Then the direction set admits a nontrivial partition \([n]=J\sqcup K\), and there are Boolean functions \(A:Q_J\to F2\), \(B:Q_K\to F2\), each reversing its value under antipodal complementation, together with fixed bits u_i, such that
+\[
+\boxed{
+F_\pi(x)_i=u_i+A(x_J)\quad(i\in K),\qquad
+F_\pi(x)_i=u_i+B(x_K)\quad(i\in J).
+}\tag{RCV1}
+\]
+Conversely every map of this form has four values, is antipodally odd, and ignores matching input bits.
+
+*Proof.* The image is antipodally invariant, so write it as \(\{u,u+\mathbf1,u+w,u+w+\mathbf1\}\), with w distinct from zero and all ones. Put J=supp(w), K=its complement. Each value can be expressed uniquely as \(u+h(x)\mathbf1+t(x)w\). For i in K the output is \(u_i+h(x)\), and independence from input bit i forces h to depend only on x_J. For i in J the output is \(u_i+h(x)+t(x)\), which must depend only on x_K. Call these functions A and B. Antipodal oddness of the output implies \(A(\bar x_J)=1-A(x_J)\) and similarly for B. Conversely odd A,B are surjective, their independent inputs produce four output words, and the remaining properties are immediate. \(\square\)
+
+In particular, undoing the fixed prefix shifts that relate F_pi to c shows that any coloring with four output patterns in some order has bipartite direction-influence graph: direction functions indexed by J read only bits in K, and those indexed by K read only bits in J.
+
+**Theorem (sharpness rigidity and quantitative stability).** For n>=5:
+1. If \(|U_\pi(c)|=4n-4\), then the image of F_pi consists of four words and the partition J,K in (RCV1) has J a nonempty proper *cyclic interval* of pi.
+2. If \(|U_\pi(c)|<6n-12\), then the image of F_pi consists of four words, hence c has bipartite direction-influence graph.
+3. More generally, if the image of F_pi contains m antipodal word pairs and \(m\le(n+2)/2\), then
+\[
+\boxed{|U_\pi(c)|\ge 2nm-2m(m-1).}\tag{RCV2}
+\]
+
+*Proof.* Each antipodal image pair contributes one translate of the 2n-vertex Petrie cycle H_pi. Distinct translates intersect in at most four vertices by the translated-cycle intersection lemma. Given m distinct translates, add them successively; the t-th contributes at least \(2n-4(t-1)\) new vertices, proving (RCV2) for the stated range. Two translates therefore cover at least 4n-4. If a third distinct translate occurs, it adds at least 2n-8>0 since n>=5. Thus equality, or coverage below 6n-12, forces m=2, giving four output words. When m=2, the coverage equals 4n-4 precisely if the difference w between the image-pair representatives has support a cyclic interval in pi; otherwise the translates are disjoint and coverage is 4n. This proves all assertions. \(\square\)
+
+For an extremal coloring meeting the 4n-4 lower bound, the cyclic interval condition additionally implies that the original direction rules within each block agree up to fixed color offsets with one common odd Boolean function of the opposite block. Indeed, the pi-prefix translations restricted to the opposite cyclic block are either constant across the whole first block, or differ by complementing that entire opposite block; oddness absorbs the latter change into one fixed output bit.
+
+These are unrestricted structural statements about the lowest possible one-order coverage; they do not show that every bipartite coloring is good, nor do they force global coverage when larger image sets occur. The threshold 6n-12 records how much coverage growth is required before an interaction graph not fitting a bipartition can arise.
+
+
+## Adjacent-color differences turn dual Petrie cycles into Hamming balls
+
+Fix n>=3 and an antipodally odd edge coloring c of Q_n. For a direction order pi=(pi_1,...,pi_n), write beta_pi(x) in F2^n for the direction-indexed edge-color word of the full antipodal geodesic from root x traversed in order pi. Define its internal switch-signature
+\[
+\boxed{D_\pi(x)_k=\beta_\pi(x)_{\pi_k}+\beta_\pi(x)_{\pi_{k+1}}\pmod2,\qquad 1\le k<n.}\tag{HB1}
+\]
+Let S_pi(c) be the set of distinct D_pi(x) as x varies. Let U_pi(c) be the whole-direction toggle assignments covered by dual Petrie cycles with cyclic direction order pi, as previously.
+
+**Theorem (dual Petrie balls).** With N_1(S) denoting the closed radius-one Hamming neighborhood of S in F2^(n-1),
+\[
+\boxed{|U_\pi(c)|=2|N_1(S_\pi(c))|,\qquad
+|S_\pi(c)|=\tfrac12|\operatorname{im}\beta_\pi|.}\tag{HB2}
+\]
+
+*Proof.* The adjacent-difference map \(\partial_\pi:F2^n\to F2^{n-1}\) sends a direction-indexed color vector to its n-1 neighboring differences. Its kernel consists of zero and the all-ones vector. Thus it identifies the projective toggle cube F2^n/<ones> with F2^(n-1). The 2n-vertex dual Petrie cycle through beta_pi(x) is obtained by successively toggling a prefix of pi, modulo overall complement. Its n projective vertices are beta_pi(x) plus the prefix masks of lengths 0,1,...,n-1. Under \(\partial_\pi\), these prefix masks map to zero and the n-1 distinct unit vectors. Hence that dual cycle becomes the Hamming ball of radius one centered at D_pi(x). Taking the union across all roots gives the first equation. Since beta_pi(bar x)=beta_pi(x)+ones, each adjacent-difference value corresponds to one antipodal pair in the image of beta_pi, giving the second equation. \(\square\)
+
+**Corollary (Harper-optimal fixed-order coverage).** Put d=n-1, m=|S_pi(c)|, and let I_m be the initial segment of size m of the simplicial order on Q_d. Harper's vertex-isoperimetric theorem gives
+\[
+\boxed{|U_\pi(c)|\ge2|N_1(I_m)|.}\tag{HB3}
+\]
+In particular, whenever \(1\le m\le n\),
+\[
+\boxed{|U_\pi(c)|\ge
+2\left(1+m(n-1)-\binom m2\right).}\tag{HB4}
+\]
+
+*Proof.* The lower bound is Harper's vertex-isoperimetric theorem applied to the set S_pi(c). If m<=d+1, its simplicial initial segment consists of zero together with m-1 distinct unit vectors. Its radius-one neighborhood comprises zero, all d unit vectors, and the pairs of unit vectors meeting at least one of the m-1 selected ones. Therefore its size is \(1+d+\binom d2-\binom{d-m+1}2=1+md-\binom m2\). Apply (HB2). \(\square\)
+
+**Corollary (strict bad-coloring three-center bound).** If a hypothetical bad coloring c in dimension n>=5 has at least three antipodal pairs in the image of beta_pi, then
+\[
+\boxed{|U_\pi(c)|\ge6n-10.}\tag{HB5}
+\]
+This improves the earlier three-translate estimate 6n-12 by two. If beta_pi has two antipodal output pairs, the previous four-output rigidity theorem applies; when its two translates overlap, the resulting coloring has a monochromatic full path by the two-block common-reader closure theorem. Thus any bad coloring must satisfy
+\[
+\boxed{|U_\pi(c)|\ge\min\{4n,6n-10\}\quad\text{for every }\pi.}\tag{HB6}
+\]
+For n>=5 the minimum equals 4n.
+
+*Proof.* At least three antipodal image pairs give m>=3 centers. If m>3, select three centers and apply (HB4) to that three-element subset; enlarging S cannot decrease its neighborhood. The two-center case follows the previously proved fixed-order rigidity and two-block closure. \(\square\)
+
+The radius-one ball model is a structural restatement of the direction-toggle covering problem for each order, not a proof of cross-order closure. It identifies the finite-order obstruction precisely: a bad coloring would require zero to avoid N_1(S_pi(c)) for every pi, while the sets S_pi(c) arise from one shared family of edge-color functions and are constrained by all adjacent-order swaps.

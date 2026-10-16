@@ -262,3 +262,59 @@ Every such cycle has a root rotation giving at most 2k-2 ordinary switches.
 *Proof.* Substitute a=2k,b=2k+1 in (24). The fraction simplifies to (4k^2-1)/(16k^2-1). The projective switch count H is odd, supported on [1,4k+1], and its mean under the local balance assumption is 2k+1. Let t=Pr(H<2k+1). Write A=2k for the maximum downward deviation and B=2k for the maximum upward deviation. Positive and negative deviations have the same expectation m<=tA. Their squares are bounded by B and A times their absolute magnitudes, so Var(H)<=m(A+B)<=8k^2t. Combine with (25) to obtain (26). QED.
 
 This quantifies, rather than merely asserts, the obstruction to uniform projective switch count in locally balanced colorings. It provides polynomially many near-monochromatic geodesics in the extremal balancing regime, without coordinating a family of critical witness cycles.
+
+### A low-turn Petrie cycle gives a full rainbow forest with one antipodal joining cycle
+
+Let \(c\) be a legal antipodally odd coloring of \(Q_n\), \(n\ge2\). Take a full antipodal geodesic \(P\) with word \(w\), and follow it by its antipodal translate. The resulting simple Petrie cycle has length \(2n\) and cyclic word \(w\bar w\). Put
+\[
+q=\operatorname{sw}(w)+[w_1=w_n].
+\]
+This positive odd integer is its projective turn grade.
+
+**Theorem (single-cycle forest certificate).** The red edges of this Petrie cycle form a vertex-disjoint linear forest \(F\) with \(n\) edges, using every direction once, and with \(q\) nonempty path components. Its \(2q\) endpoints are closed under antipodality. Joining each endpoint to its antipode by an auxiliary link turns \(F\) into one simple cycle, containing \(n\) cube edges and \(q\) auxiliary links.
+
+*Proof.* Every direction occurs twice on the Petrie cycle, on antipodal edges with opposite colors. Thus precisely one occurrence belongs to \(F\). The number of cyclic color changes is \(2q\), so there are \(q\) red runs and \(q\) blue runs, all nonempty. The red runs are vertex-disjoint paths. Their endpoints are precisely the color-change vertices, which antipodality permutes.
+
+For connectedness after adding the links, index the alternating runs cyclically by \(0,\ldots,2q-1\), with the red runs at even indices. Antipodality advances by \(q\) runs: it preserves their cyclic order, exchanges their colors, and has square equal to a full turn. The link at the end of red run \(2j\) therefore reaches the start of red run \(2j+q+1\). On the \(q\) red components this is the permutation
+\[
+j\longmapsto j+(q+1)/2\pmod q.
+\]
+Since \(\gcd(q,(q+1)/2)=1\), it is one cycle. Internal forest vertices have degree two, and the matching of endpoints gives degree two at every other vertex. Thus the joined graph is one cycle, with \(n+q\) vertices and edges. \(\square\)
+
+The auxiliary links represent antipodal pairs, and are not cube edges. For \(q=1\), the forest itself is a monochromatic full antipodal geodesic. For larger \(q\), the theorem keeps the complete direction set while identifying precisely the \(q\) antipodal joins that obstruct a single cube path.
+
+**Corollary (Hollom-to-rainbow transfer).** Every legal odd coloring has such a forest with
+\[
+q\le(\pi/2+o(1))\sqrt n.
+\]
+Indeed Hollom's geodesic theorem supplies \(P\) with at most \((\pi/2+o(1))\sqrt n\) internal switches, and the projective correction is at most one. Thus the initial rainbow-forest stage is available in the cube with every direction represented and only a square-root number of components. No density assumption on a monochromatic component is used.
+
+### Eulerian completion of the forest transitions
+
+**Lemma (prescribed unoriented forest transitions).** In a finite undirected graph of even degree at every vertex, every specified linear forest can be oriented as a union of directed paths within some Eulerian orientation of the whole graph.
+
+*Proof.* At each internal vertex of a forest path, pair its two incident forest edges. Extend these disjoint partial pairings to pair all incident edges at every vertex; the remaining number is even. The transition pairings decompose the graph's edges into closed trails. Orient each trail cyclically. Every prescribed pair consists of one entering and one leaving edge, so each forest path is coherently directed. Every vertex has equal indegree and outdegree. \(\square\)
+
+For a perfectly balanced cube with \(4\mid n\), each monochromatic graph has even degree \(n/2\). The red forest in the preceding theorem can therefore be retained as directed paths in an Eulerian orientation of the red graph. The orientation of each component is selected by the completed transitions. The lemma does not prescribe those orientations independently, and does not orient the auxiliary antipodal joining cycle as a directed cycle. That compatibility remains part of a prospective absorption argument.
+
+### A quantitative absorption target sufficient for unrestricted closure
+
+The three methods now supply a common object: a full-direction monochromatic forest with \(O(\sqrt n)\) components, one antipodal joining cycle, and an Eulerian orientation preserving its path transitions in the balanced dimensions divisible by four. A sufficient missing statement is the following.
+
+**Conditional absorption statement.** In perfectly balanced legal odd cubes of dimension divisible by four, any forest certificate above with \(q=O(\sqrt n)\) can be replaced by a monochromatic direction-simple path of length \(n-o(n)\), uniformly over the coloring and certificate.
+
+For example, a bound on the lost directions of \(Aq(\log n)^B\), with fixed constants \(A,B\), would suffice. The replacement may change the root, directions used, and all forest edges; no local extension or prescribed-endpoint assertion is required.
+
+**Proposition (this absorption statement closes NORI1).** The conditional statement implies unrestricted NORI1.
+
+*Proof.* Let \(L(c)\) be the largest length of a monochromatic geodesic in \(c\), allowing partial direction sets. For legal odd colorings,
+\[
+L(c\boxtimes d)=L(c)+L(d).
+\]
+Projection of a monochromatic geodesic to either Cartesian factor is a monochromatic geodesic, proving the upper bound. Antipodal translation interchanges colors, so longest monochromatic factor paths can be chosen with the same color and concatenated, proving the lower bound. Therefore the deficit \(\Delta(c)=\dim(c)-L(c)\) is additive.
+
+Suppose a perfectly balanced legal odd coloring \(c\) in dimension \(n_0\), divisible by four, were bad. Its deficit is an integer at least one. Its \(t\)-fold Cartesian power is perfectly balanced and has deficit \(t\Delta(c)\). Hollom supplies a forest certificate with \(O(\sqrt{tn_0})\) components in that power. The conditional absorption statement would give deficit \(o(tn_0)\), contradicting additivity as \(t\to\infty\). Thus all balanced colorings in these dimensions satisfy NORI1. The established counterexample-preserving complementary balancing extension, followed if necessary by a Cartesian square, transfers every hypothetical unrestricted counterexample to this class. \(\square\)
+
+This is a sufficient closure target, not a proved absorption theorem. The available Eulerian orientation gives closed walks with reusable directions; the absorption statement must retain distinct directions. The APS random-direction reserve does not directly provide the needed connections, because a cube subgraph restricted to a proper direction subset splits into faces. The preceding formulation isolates the global joining problem while allowing sublinear loss, instead of requiring a single local repair to preserve every direction.
+
+**Finite audit.** For every binary word of lengths two through nine, direct construction verified the odd grade, the number of red forest components, antipodal pairing of endpoints, and connectedness of the degree-two graph obtained by adding the links. The argument above proves these assertions in all dimensions.

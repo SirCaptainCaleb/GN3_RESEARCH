@@ -1246,6 +1246,131 @@ In particular, any further linear quotient of \(V\) is again admissible.
 The reduction uses affine invariance and full direction permutations throughout. It makes no claim that nonlinear cube-edge colorings, or boundary-tournament colorings, admit analogous linear quotient syndromes.
 
 
+#### Cyclic Fourier discrepancy and high-distance affine closure
+
+Continue with an antipodally odd affine coloring \(f_i(x)=\alpha_i+(Ax)_i\), where \(A_{ii}=0\) and \(A\mathbf1=\mathbf1\). Write \(V=\mathbb F_2^n/\operatorname{im}A\), \(k=\dim V\), and \(\sigma(\pi)=[\alpha+r_\pi]\). Let \(\mu\) be the probability distribution of \(\sigma(\pi)\) when \(\pi\) is uniformly sampled from all \(n!\) direction orders.
+
+The dual space of \(V\) is \(W=\ker A^{\mathsf T}\). For \(z\in W\), let \(\widehat\mu(z)=\mathbb E_\pi(-1)^{z\cdot\sigma(\pi)}\), and write \(w(z)=|\operatorname{supp}z|\). Every \(z\in W\) has even weight since
+\[
+z\cdot\mathbf1=z^{\mathsf T}A\mathbf1=0. \tag{FD1}
+\]
+
+**Theorem 11 (cyclic Fourier discrepancy).** For every nonzero \(z\in W\), with positive even weight \(w=w(z)\),
+\[
+\boxed{|\widehat\mu(z)|
+\le \sqrt{\frac{n-w}{n(w+1)}}.} \tag{FD2}
+\]
+The bound is uniform in the offset \(\alpha\) and the matrix entries of \(A\), subject to the stated antipodal and undirected-edge hypotheses.
+
+*Proof.* Let \(\rho\) cyclically rotate a direction order. The root-slide identity (CR3) gives, for \(0\le t<n\),
+\[
+(-1)^{z\cdot\sigma(\rho^t\pi)}
+=(-1)^{z\cdot\sigma(\pi)}
+ (-1)^{\sum_{s=1}^t z_{\pi_s}}.
+\]
+Define \(S_z(\pi)=\sum_{t=0}^{n-1}(-1)^{\sum_{s=1}^t z_{\pi_s}}\). Uniform permutation sampling is invariant under each cyclic rotation, so
+\[
+|\widehat\mu(z)|
+\le\frac1n\mathbb E_\pi |S_z(\pi)|
+\le\frac1n\sqrt{\mathbb E_\pi S_z(\pi)^2}. \tag{FD3}
+\]
+
+We compute its second moment. Read the cyclic sequence \(z_{\pi_1},\ldots,z_{\pi_n}\), which has precisely \(w=2h\) entries equal to one. Its cyclic gaps between successive ones have positive lengths
+\(\ell_1,\ldots,\ell_{2h}\) summing to \(n\). Since the number of ones is even, rotating the sequence changes \(S_z\) only by a global sign. Choosing one of the marked positions as a distinguished cyclic origin leaves \(S_z^2\) unchanged and makes the gap vector uniform among positive compositions of \(n\) into \(2h\) parts.
+
+Put \(N=n-2h\), \(a_j=\ell_j-1\), and \(U=a_1+a_3+\cdots+a_{2h-1}\). Then \(a_j\ge0\), \(\sum a_j=N\), and the alternating-sign sum equals \(S_z=\pm(2U-N)\). Stars-and-bars gives
+\[
+\Pr(U=u)=
+\frac{\binom{u+h-1}{h-1}
+      \binom{N-u+h-1}{h-1}}
+     {\binom{N+2h-1}{2h-1}}.
+\]
+This beta-binomial distribution has \(\mathbb E U=N/2\) and
+\[
+\operatorname{Var}(U)=\frac{N(N+2h)}{4(2h+1)}
+=\frac{n(n-w)}{4(w+1)}.
+\]
+Thus
+\[
+\mathbb E_\pi S_z(\pi)^2
+=4\operatorname{Var}(U)
+=\frac{n(n-w)}{w+1}.
+\]
+Substitution into (FD3) proves (FD2). \(\square\)
+
+**Corollary 12 (uniform favorable-order and path counts).** Put
+\[
+D(W)=\sum_{z\in W\setminus\{0\}}
+ \sqrt{\frac{n-w(z)}{n(w(z)+1)}}. \tag{FD4}
+\]
+For every syndrome target \(v\in V\),
+\[
+\boxed{
+\mu(v)\ge2^{-k}\bigl(1-D(W)\bigr).
+} \tag{FD5}
+\]
+If \(D(W)<1\), every syndrome occurs, and therefore every affine offset \(\alpha\) has a monochromatic full antipodal geodesic. There are at least
+\[
+\boxed{n!\bigl(1-D(W)\bigr)} \tag{FD6}
+\]
+rooted, direction-ordered all-zero full geodesics, counted with their starting roots. The same lower bound holds for all-one rooted full geodesics.
+
+*Proof.* Fourier inversion on \(V\) gives
+\[
+\mu(v)=2^{-k}\left(
+1+\sum_{z\in W\setminus\{0\}}
+ (-1)^{z\cdot v}\widehat\mu(z)\right).
+\]
+Use Theorem 11 term by term. For a successful order \(\pi\), the linear system \(Ax=\alpha+r_\pi\) has \(2^k\) solutions, all giving all-zero full paths. Hence the total all-zero rooted-path count is \(2^k n!\mu(0)\), bounded below by (FD6). Antipodal translation exchanges the zero and one colors. \(\square\)
+
+**Corollary 13 (dual-distance sufficient condition).** Let \(d=\min_{z\in W\setminus\{0\}}w(z)\), with \(k\ge1\). If
+\[
+\boxed{(2^k-1)\sqrt{\frac{n-d}{n(d+1)}}<1,} \tag{FD7}
+\]
+then the affine coloring has a monochromatic full antipodal geodesic. In particular \(d\ge(2^k-1)^2\) suffices.
+
+*Proof.* The function \(w\mapsto(n-w)/(n(w+1))\) is decreasing. Consequently (FD4) is bounded by the left side of (FD7). For the final sufficient inequality, \((n-d)/n<1\) and \(d+1>(2^k-1)^2\) establish the strict inequality. Apply Corollary 12. \(\square\)
+
+**Closure significance and limitation.** The bound controls the distribution of *full dimension-order monochromatic solvability* by the weight distribution of the left-kernel code, rather than the cube's dimension or a feedback-graph size. It is especially effective when the cokernel is small and all nonzero codewords have large Hamming support. In contrast, short even kernel relations permit large Fourier biases, and the estimate alone cannot exclude a one-hole obstruction for arbitrary matrices. The general affine saturation lemma remains open.
+
+
+#### An abstract one-hole obstruction to star identities alone
+
+The full-affine spanning statement (CR9) leaves open a potential surjectivity argument using only symmetric pair weights and their star sums. Such an argument is impossible without further structural hypotheses.
+
+**Proposition 14 (star-compliant, one-hole weighted inversion map).** Take \(V=\mathbb F_2^3\), four ordered labels \(0,1,2,3\), and symmetric pair weights encoded as binary integers
+\[
+(K_{01},K_{02},K_{03},K_{12},K_{13},K_{23})
+=(0,1,2,3,4,4). \tag{OH1}
+\]
+Define \(v_i=\sum_{j\ne i}K_{ij}\). Then
+\[
+(v_0,v_1,v_2,v_3)=(3,7,6,2), \qquad
+\operatorname{span}\{v_0,v_1,v_2,v_3\}=V, \tag{OH2}
+\]
+and \(\sum_i v_i=0\), but the weighted inversion sums over all 24 permutations take precisely seven values:
+\[
+\boxed{
+\left\{\sum_{\substack{i<j\\\pi^{-1}(i)>\pi^{-1}(j)}}K_{ij}:
+\pi\in\mathfrak S_4\right\}
+=V\setminus\{5\}.} \tag{OH3}
+\]
+Thus star-curvature constraints and affine spanning are insufficient to eliminate the one-hole obstruction.
+
+*Proof.* The star sums are computed directly from (OH1); for instance \(v_0=0+1+2=3\) and \(v_1=0+3+4=7\). The three values \(3,7,6\) are linearly independent over \(\mathbb F_2\), so the span is \(V\). To verify (OH3), the multiplicities of inversion sums \(0,1,\ldots,7\), in increasing binary-integer order, are
+\[
+\boxed{(6,2,4,4,4,0,2,2),} \tag{OH4}
+\]
+obtained by grouping the 24 permutations according to their inversion sets. These multiplicities sum to 24 and show that 5 alone is absent. \(\square\)
+
+**Important limitation of the example.** The weights (OH1) are not of the matrix-compatible form \(K_{ij}=A_{ij}v_i+A_{ji}v_j\) for a zero-diagonal row-odd matrix with \(v_i=[e_i]\) in its cokernel. Indeed \(K_{13}=4\) is not in
+\[
+\operatorname{span}\{v_1,v_3\}
+=\operatorname{span}\{7,2\}=\{0,7,2,5\}.
+\]
+Thus this proposition does not contradict affine corank-two closure or the proposed general affine theorem. It identifies the pairwise support identity, together with \(pA=0\) and \(A\mathbf1=\mathbf1\), as indispensable input for any general one-hole exclusion proof. The example is a finite refutation of an auxiliary overstrong lemma, not a counterexample to NORI1.
+
+
 ### Coxeter-window switch moments and a boundary spectral polynomial
 
 We work with the Coxeter-coset representations of Article XIV. A general averaging identity permits direct comparison of the canonical type-A and type-B models without losing full-path admissibility.

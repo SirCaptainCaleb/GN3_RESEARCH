@@ -246,3 +246,273 @@ After the prefix, all nonexceptional bits have toggled. Every exceptional direct
 Finally, a composition of bi-surjective Boolean relations is bi-surjective; once a three-pair relation occurs, every later composition contains at least three pairs, so its cyclic trace is nonempty. If all relations are two-pair bijections, the product is either identity or swap. The identity case supplies two satisfying assignments of the exceptional root bits, giving \(2^{m+1}\) full roots; the swap case has no solution for this prefix strategy. QED.
 
 **Residual obstruction.** Hence a cyclic cross-root counterexample, if it exists, has either adjacent non-bi-surjective sites, or the following checkerboard-parity form: one entire parity class is deficient, every site of the other parity has an equality/inequality \(D_i\), and the XOR of these relation signs around that parity cycle is one. The latter condition is an obstruction to the *common-prefix construction*, not an established obstruction to cross-favorability itself. Restoring it requires letting at least one exceptional direction cross before some of the nonexceptional directions, potentially at different positions in the two monotone paths.
+
+
+## Near-universal roots for cyclic majority gates
+
+Let \(n\ge3\). Write a cycle-local coloring as \(h_i(x)=H_i(x_{i-1},x_{i+1})\). Fix direction \(j\) and a bit \(t\). Assume that for each \(i\ne j\), precisely three inputs of \(H_i\) have color \(t\), with unique minority input \((a_i,b_i)\); the table \(H_j\) is arbitrary.
+
+**Lemma (co-singleton relations).** Let \(R_1,\ldots,R_m\) be Boolean binary relations omitting precisely one pair \((p_k,q_k)\). Their relational product is full, or omits precisely the pair \((p_1,q_m)\). The latter occurs if and only if \(q_k\ne p_{k+1}\) for all \(k<m\).
+
+*Proof.* For \(R_1\circ R_2\) to omit \((s,t)\), both choices of the intermediate bit must fail. This forces \(s=p_1,t=q_2,q_1\ne p_2\). Otherwise the product is full. A full relation composed with a bi-surjective relation remains full. Induction proves the claim. \(\square\)
+
+**Theorem (two exceptional roots).** Require direction \(j\) to be last (\(\epsilon=0\)) or first (\(\epsilon=1\)). Except for at most two starting roots, a full dimension-simple geodesic with that extreme position of \(j\) can be chosen with color \(t\) in every other direction. There are two failing roots if \(a_{j+1}=b_{j-1}\), and none otherwise. In the former case they are the two solutions of
+\[
+\boxed{x_j=a_{j+1}+\epsilon,\qquad
+x_i+x_{i+1}=a_{i+1}+b_i
+\quad(i=j+1,\ldots,j-2),}
+\tag{MG1}
+\]
+where the second index range follows the cyclic path away from \(j\).
+
+*Proof.* For an order of directions let \(u_i=1\) if \(i\) precedes \(i+1\). The direction-\(i\) edge reads
+\((x_{i-1}+u_{i-1},x_{i+1}+1-u_i)\). Its color is \(t\) unless
+\[
+(u_{i-1},u_i)=(p_i,q_i)
+=(a_i+x_{i-1},1+b_i+x_{i+1}).
+\tag{MG2}
+\]
+When \(j\) is last, \(u_j=0,u_{j-1}=1\); when it is first, \(u_j=1,u_{j-1}=0\). The other orientation variables form a path and any assignment of them yields an acyclic order of all directions with \(j\) in the prescribed extreme position. Thus the required path exists precisely when the pair \((u_j,u_{j-1})=(\epsilon,1-\epsilon)\) belongs to the composition of the \(n-1\) relations excluding the forbidden pair (MG2) at each \(i\ne j\).
+
+By the lemma, failure occurs precisely when
+\(p_{j+1}=\epsilon,\ q_{j-1}=1-\epsilon,\ q_i\ne p_{i+1}\) for \(i=j+1,\ldots,j-2\). Substitution gives \(a_{j+1}=b_{j-1}\) and (MG1). These \(n-2\) consecutive pair-sum equations on the \(n-1\) bits outside \(j\) have two solutions once \(x_j\) is fixed. \(\square\)
+
+**Corollary (paired roots).** The coloring \(h\) satisfies
+\[
+\boxed{|P(h)|\ge2^n-4.}
+\tag{MG3}
+\]
+If \(a_{j+1}\ne b_{j-1}\), then every root is paired. For \(t=0\), the \(j\)-last word \(0^{n-1}*\) is nondecreasing and the \(j\)-first word \(*0^{n-1}\) is nonincreasing; for \(t=1\) the extreme roles reverse. Their exceptional root sets are disjoint because (MG1) prescribes opposite values for \(x_j\). \(\square\)
+
+
+Corollary (two coloring root intersection). If two cyclic-neighbor colorings have, outside one common exceptional direction, three of four local inputs of a uniform target color in each coloring separately, then |A_0(f) intersection A_1(g)| >= 2^n-4. Proof: apply the preceding two-exception theorem to f with the extreme yielding a nondecreasing word, and independently to g with the extreme yielding a nonincreasing word. Each favorable-root set omits at most two roots; their intersection omits at most four. The exceptional direction functions and the two target colors are arbitrary.
+
+
+### Three-quarter coverage with mixed parity and majority sites
+
+For a cycle-local coloring \(h\) of \(Q_n\), \(n\ge3\), fix a direction \(j\) and a target color \(t\). Write \(R_i=\{(a,b):H_i(a,b)=t\}\) for \(i\ne j\).
+
+**Theorem (one flexible site suffices for three-quarter coverage).** Suppose every \(R_i\), \(i\ne j\), is bi-surjective. If at least one of them has three or four pairs, then at least \(3\cdot2^{n-2}\) starting roots admit a full geodesic with direction \(j\) at either specified extreme (first, or last) and all other traversed edges colored \(t\). Consequently
+\[
+\boxed{|A_0(h)|,|A_1(h)|\ge3\cdot2^{n-2}.}\tag{MG5}
+\]
+If all the \(R_i\) are two-pair bijections, the same prescribed-extreme construction is possible from precisely \(2^{n-1}\) roots.
+
+*Proof.* Fix an extreme for \(j\) and let \(u_i=1\) mean that \(i\) precedes \(i+1\) in the direction order. The extreme fixes \(u_j\) and \(u_{j-1}\) to opposite bits. As in the preceding theorem, the other comparisons form a path. At each site \(i\ne j\), the observed neighbor bits are
+\((x_{i-1}+u_{i-1},x_{i+1}+1-u_i)\).
+
+Every bi-surjective binary relation contains an equality or inequality matching. Choose a site \(k\) with \(|R_k|\ge3\). Restrict its relation to any three permitted pairs; at every other site restrict to a permitted matching
+\[
+a+b=\delta_i.
+\]
+The matching equations become
+\[
+u_{i-1}+u_i=x_{i-1}+x_{i+1}+1+\delta_i
+\quad(i\notin\{j,k\}).\tag{MG6}
+\]
+They propagate the orientation bits uniquely from the two fixed endpoints along the two disjoint segments ending next to site \(k\). The inputs observed at \(k\) are consequently affine functions of the starting root, of the form
+\[
+\boxed{L(x)=x_j+x_{j+1}+x_k+\alpha,\qquad
+R(x)=x_j+x_{j-1}+x_k+\beta,}\tag{MG7}
+\]
+where \(\alpha,\beta\) depend on the selected matchings and extreme order. These expressions follow by summing (MG6) along each segment: all interior bit contributions cancel in pairs. The formulas also hold when a segment is empty.
+
+The linear map \(x\mapsto(L(x),R(x))\) has rank two. If \(k=j+1\), then \(L=x_j+\alpha\) and \(R\) contains \(x_{j-1}\); if \(k=j-1\), the analogous statement holds with \(R=x_j+\beta\). Otherwise \(x_{j+1}\) occurs in \(L\) but not \(R\), and \(x_{j-1}\) occurs in \(R\) but not \(L\). These indices are distinct because \(n\ge3\). Hence every input pair at \(k\) occurs at \(2^{n-2}\) roots. Only the one excluded pair fails the chosen restricted system, so it succeeds for \(3\cdot2^{n-2}\) roots. The unrestricted system permits at least these roots.
+
+If all sites are matchings, propagate (MG6) through the entire open path. The fixed endpoint comparison holds if and only if one affine equation on the root bits is satisfied; its nonconstant linear part is \(x_{j-1}+x_{j+1}\). Thus precisely half the roots succeed. Finally, choose \(j\) last when \(t=0\) and first when \(t=1\) to obtain \(A_0\), and the opposite extreme to obtain \(A_1\). \(\square\)
+
+
+
+### Near-universal paired roots for one arbitrary direction among parity sites
+
+**Theorem (punctured affine-cycle root bound).** Let \(n\ge3\), fix \(j\), and color edges in directions \(i\ne j\) by
+\[
+h_i(x)=a_i+x_{i-1}+x_{i+1},
+\]
+with arbitrary offsets \(a_i\in\mathbb F_2\). The remaining edge-color function \(h_j=H(x_{j-1},x_{j+1})\) is arbitrary. Then
+\[
+\boxed{P(h)=V(Q_n)\quad(n\ {\rm even}),\qquad
+|P(h)|\ge2^n-2\quad(n\ {\rm odd}).}\tag{PA1}
+\]
+
+*Proof.* Fix starting root \(x\). Let \(b_i=a_i+x_{i-1}+x_{i+1}\) for \(i\ne j\), and define \(u_i=1\) if direction \(i\) precedes \(i+1\). The color read at direction \(i\ne j\) is
+\[
+c_i=b_i+1+u_{i-1}+u_i.
+\]
+For all these colors to equal a prescribed \(t\), the \(n-1\) constraints on the path of orientation variables away from \(j\) have a unique solution once \(u_j\) is fixed, subject to the endpoint equation
+\[
+\boxed{u_j+u_{j-1}=(n-1)(1+t)+S(x),\qquad
+S(x)=\sum_{i\ne j}b_i=\sum_{i\ne j}a_i+x_{j-1}+x_{j+1}.}
+\tag{PA2}
+\]
+
+If \(n\) is even, take \(t=S(x)\); then (PA2) gives \(u_j+u_{j-1}=1\). Choose \(j\) last if \(t=0\), first if \(t=1\). The corresponding color word is \(0^{n-1}*\) or \(*1^{n-1}\), hence nondecreasing. Reversing the extreme choice gives \(*0^{n-1}\) or \(1^{n-1}*\), hence nonincreasing. The orientation is acyclic because \(j\) is an extreme, and the path constraints supply a total order. Thus every root is paired.
+
+Suppose \(n\) is odd. If \(S(x)=1\), equation (PA2) again permits both extreme choices, independently of \(t\), yielding both monotone orientations. Now assume \(S(x)=0\). Choose \(u_j=u_{j-1}=s\in\{0,1\}\). The bit pair read at direction \(j\) is
+\[
+v_s=(x_{j-1}+s,\ x_{j+1}+1-s),
+\]
+and the two values \(v_0,v_1\) are complementary. Put \(t_s=H(v_s)\), and solve (PA2) with all other direction colors equal to \(t_s\). If the resulting orientation is acyclic, the full path is monochromatic \(t_s\), so \(x\in P(h)\).
+
+An orientation of a simple cycle fails acyclicity precisely when every \(u_i=s\). Such an orientation has \(c_i=b_i+1\) at each \(i\ne j\). Therefore the selected construction can be cyclic only when all \(b_i\) equal a common bit \(r\) and \(t_s=1+r\). If the \(b_i\) are not constant, both choices of \(s\) work. If they are constant, the root can fail the construction only if
+\[
+H(v_0)=H(v_1)=1+r.
+\tag{PA3}
+\]
+For these roots, \(S(x)=0\) implies
+\(x_{j-1}+x_{j+1}=\sum_{i\ne j}a_i\). Thus \(\{v_0,v_1\}\) is the same complementary pair of two-bit inputs for every candidate root, independent of \(r\). If \(H\) takes different values on this pair, (PA3) never holds. Otherwise let its common value be \(h\); then (PA3) forces \(r=1+h\).
+
+Finally, the \(n-1\) equations \(b_i=r\) for \(i\ne j\) form a path on the starting-bit indices: the edges \(\{i-1,i+1\}\) form one cycle for odd \(n\), and deletion of the \(j\)-edge opens it. Fixing one starting bit propagates all the others, leaving precisely two solutions, which are antipodal. Hence at most two roots can fail to be paired. \(\square\)
+
+
+
+**Theorem (target-rich cyclic cross-favorability).** Let \(f,g\) be two arbitrary cycle-local binary edge colorings of \(Q_n\), \(n\ge3\). Suppose there is a direction \(j\) and independently chosen target bits \(t_f,t_g\) such that
+\[
+\boxed{
+\{(a,b):F_i(a,b)=t_f\},\quad
+\{(a,b):G_i(a,b)=t_g\}
+\text{ are bi-surjective for every }i\ne j.}
+\tag{TR1}
+\]
+No condition is imposed on \(F_j,G_j\). Then
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2^{n-1}.}
+\tag{TR2}
+\]
+In particular every such pair is cross-favorable, irrespective of the strong connectivity of its union influence graph.
+
+*Proof.* For each coloring \(h\in\{f,g\}\), one of two cases holds. If some nonexceptional target relation has at least three pairs, the preceding three-quarter coverage theorem gives
+\[
+|A_0(h)|,|A_1(h)|\ge3\cdot2^{n-2}.
+\]
+Otherwise all nonexceptional relations are two-pair matching relations. Then every \(H_i\), \(i\ne j\), is an affine neighbor-parity function, so the punctured affine-cycle theorem gives \(P(h)=V(Q_n)\) for even \(n\), and \(|P(h)|\ge2^n-2\) for odd \(n\). In particular, for every \(n\ge3\),
+\[
+|A_0(h)|,|A_1(h)|\ge2^n-2\ge3\cdot2^{n-2}.
+\]
+Thus both \(A_0(f)\) and \(A_1(g)\) contain at least three quarters of all roots. Inclusion-exclusion proves (TR2). \(\square\)
+
+For a binary two-input function, a target preimage is bi-surjective precisely when it is a complementary-input matching, a three-point relation, or the full relation. Thus (TR1) allows arbitrary mixtures of neighbor-parity functions and three-to-one Boolean gates with a common majority target, as well as constant functions having that target. The common target may differ between \(f\) and \(g\). One-input projections and gates whose minority color is prescribed as the target are excluded by (TR1).
+
+**Corollary (unicyclic interactions with attached trees).** Let an arbitrary cube-edge coloring have a unicyclic direction-interaction component with nonlinear pendant trees. Form the two induced cyclic core colorings \(g^0,g^1\) in the pendant-tree elimination theorem. If they satisfy (TR1) for some common exceptional core direction \(j\), then the full coloring has at least \(2^{m-1}\) paired roots, where \(m\) is the length of the core cycle. The universal bridge equivalence supplies monochromatic antipodal geodesics in every odd next-dimensional extension of this facet coloring.
+
+*Proof.* Apply (TR2) to the two induced core colorings and lift each of the \(2^{m-1}\) common core roots through the opposite-bit pendant-tree interfaces. Distinct core roots give distinct full roots. Apply the bridge correspondence. \(\square\)
+
+
+
+**Strengthening (independent exceptional directions).** In the target-rich cyclic cross-favorability theorem, the exceptional direction of \(f\) may differ from that of \(g\). Precisely, choose \(j_f,j_g\) independently, and require bi-surjectivity of the \(t_f\)-preimage for each \(F_i\), \(i\ne j_f\), and of the \(t_g\)-preimage for each \(G_i\), \(i\ne j_g\). The same bound
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2^{n-1}}
+\]
+holds. Indeed, each coloring's three-quarter favorable-root estimate is independent of the other's exceptional direction; their two favorable-root sets meet by inclusion-exclusion. The unicyclic pendant-tree corollary likewise allows distinct exceptional sites in its two induced core colorings.
+
+
+
+### Universal cross-favorability for two unary cycle-local colorings
+
+**Theorem.** Suppose each site-local function of two unrelated edge colorings \(f,g\) of \(Q_n\), \(n\ge3\), is a constant or a possibly complemented projection of one neighboring bit. Then
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2.}\tag{UC1}
+\]
+The combined influence digraph is allowed to be strongly connected.
+
+**Root lemma.** Represent each nonconstant local function as \(h_i=x_{r(i)}+a_i\), where its reader \(r(i)\) neighbors \(i\). Reader cycles are reciprocal two-cycles or one full directed cycle; all other reader components are trees attached to cycles or rooted at constant directions. Unless the reader graph is a full directed cycle, \(x\in A_0(h)\) precisely when, for every reciprocal reader pair \(i\leftrightarrow j\),
+\[
+(x_i,x_j)\ne(1+a_j,1+a_i),\tag{UC2}
+\]
+and \(x\in A_1(h)\) precisely when \((x_i,x_j)\ne(a_j,a_i)\) for each pair.
+
+*Proof.* The two local orders on a reciprocal pair have color words
+\((x_j+a_i,x_i+1+a_j)\) and \((x_i+a_j,x_j+1+a_i)\). Both descend precisely at (UC2), and both ascend precisely at the second forbidden input. Otherwise choose monotone orders on the disjoint reciprocal pairs and shuffle their zero prefixes before their one suffixes; insert constant-colored singleton directions. Add reader-tree children outward from their parents: the new child reads color \(b=x_p+a_i\) immediately before the parent step, and \(1-b\) immediately after it. If the parent step has color \(c\), insert before if \(b\le c\), and afterward otherwise. This preserves nondecreasing order and does not affect earlier edge colors. Reverse the inequalities for nonincreasing order.
+
+For a full directed reader cycle, prescribing every traversal color zero orients the reader precedences acyclically except at the two uniform initial reader-color patterns. At the all-zero pattern, a succession along the cycle gives the nondecreasing word \(0\,1^{n-1}\). At the all-one pattern every full order begins with color one and ends with color zero, so no nondecreasing order exists. Consequently \(A_0(h)\) omits precisely the all-one reader-pattern root, and, on complementing colors, \(A_1(h)\) omits precisely the all-zero root. \(\square\)
+
+*Proof of the theorem.* If either coloring has a full reader cycle, its required favorable-root set misses one root, whereas the other has at least three favorable roots; hence the intersection has at least two.
+
+Otherwise the sets \(E_f,E_g\) of reciprocal reader edges are matchings of the direction cycle. By the lemma, each matching-edge occurrence prohibits one assignment on the two endpoint root bits. An edge common to both matchings has no other incident constraint edge and permits at least two assignments. Remove these isolated double-edge components. The remaining edges occur singly, each permitting three of the four endpoint assignments. The constraint graph is a disjoint union of paths, isolated vertices, and possibly a simple cycle.
+
+Each path and isolated vertex admits at least two assignments. A cycle admits one because the composition of three-pair Boolean relations is full or itself a three-pair relation, each having a diagonal pair. It admits at least two: given a satisfying assignment, either some one-bit flip is also satisfying, or every one-bit flip violates a clause. In the latter case each of the \(m\) variables needs a distinct blocking clause among the \(m\) edge clauses. Thus every clause has one true and one false signed atom in the original assignment. Complementing all bits also satisfies every clause. Taking products over components proves at least two common roots, and the root lemma gives their two opposite monotone full geodesics. \(\square\)
+
+**Extension and audits.** Apply the argument componentwise for any common direction-interaction graph of maximum degree two. Exhaustive computation of all \(6^4=1296\) unary \(Q_4\) colorings and \(6^5=7776\) unary \(Q_5\) colorings confirmed the root lemma for every coloring, with minimum cross-root intersection cardinalities two and six respectively. The lower bound two is attained by alternating reciprocal pairs in even dimension, whose combined influence graph is bidirected around the entire cycle.
+
+
+
+**Sharpness in every even dimension.** Let \(n=2m\ge4\), with cyclic indices, and define two unary colorings by
+\[
+f_i(x)=
+\begin{cases}1+x_{i+1},&i\text{ even},\\x_{i-1},&i\text{ odd},\end{cases}
+\qquad
+g_i(x)=
+\begin{cases}1+x_{i-1},&i\text{ even},\\x_{i+1},&i\text{ odd}.\end{cases}
+\]
+The reciprocal reader pairs of \(f\) are the edges \((0,1),(2,3),\ldots\), while those of \(g\) are the complementary perfect matching \((1,2),(3,4),\ldots,(n-1,0)\). Applying the root lemma, a root belongs to \(A_0(f)\) precisely when no even-edge pair \((x_i,x_{i+1})\) is \((1,0)\); it belongs to \(A_1(g)\) precisely when no odd-edge pair is \((1,0)\). Therefore simultaneous favorability imposes
+\[
+x_0\le x_1\le\cdots\le x_{n-1}\le x_0,
+\]
+and hence
+\[
+\boxed{A_0(f)\cap A_1(g)=\{0^n,1^n\}.}
+\]
+Each undirected neighbor edge belongs to one reciprocal reader matching, so the combined directed influence graph contains both arc orientations on every edge and is strongly connected. Thus the lower bound two in the unary cross-favorability theorem is optimal in every even dimension, even under maximal union-feedback connectivity.
+
+**Failure of a universal favorable-root density bound.** For the single coloring \(h_{2k}=x_{2k+1}\), \(h_{2k+1}=x_{2k}\) on \(Q_{2m}\), the root lemma gives
+\[
+|A_0(h)|=|A_1(h)|=3^m,\qquad |P(h)|=2^m.
+\]
+Thus \(|A_0(h)|/2^{2m}=(3/4)^m\to0\), despite abundant paired roots. Any dimension-uniform cyclic cross-root proof relying on both favorable-root sets occupying more than half the cube cannot cover even these unary colorings.
+
+
+
+### Global unary-reader cross-favorability: arbitrary reader graphs
+
+The preceding unary cyclic theorem is a special case of the following dimension-uniform result, whose proof does not require any common interaction graph.
+
+**Theorem (global two-color unary-reader closure).** Let \(n\ge2\) and let \(f,g\) be two arbitrary edge colorings of \(Q_n\), each direction function being either constant or of the form \(h_i(x)=x_{r(i)}+a_i\), with an arbitrary reader \(r(i)\ne i\). Reader maps and offsets may differ between the two colorings. Then
+\[
+\boxed{|A_0(f)\cap A_1(g)|\ge2.}\tag{GU1}
+\]
+
+**Root-cycle lemma.** For a unary coloring \(h\), let \(\mathcal C(h)\) denote the vertex-disjoint directed cycles of its functional reader digraph \(i\mapsto r(i)\), with constants terminating other reader chains. All reader cycles have length at least two. Then for any root \(x\),
+\[
+\begin{aligned}
+x\in A_0(h)&\iff
+\forall C\in\mathcal C(h)\ \exists i\in C:
+x_{r(i)}+a_i=0,\\
+x\in A_1(h)&\iff
+\forall C\in\mathcal C(h)\ \exists i\in C:
+x_{r(i)}+a_i=1.
+\end{aligned}\tag{GU2}
+\]
+
+*Proof.* Restrict a full traversal to the directions in a reader cycle \(C\). If every initial reader color equals one, the first step in that cycle sees its reader not yet traversed and has color one, whereas the last sees its reader already traversed and has color zero. Thus no nondecreasing full traversal is possible. Likewise, uniform initial reader color zero forbids a nonincreasing traversal.
+
+Conversely, for a nonuniform initial reader-color pattern on \(C\), require each traversed color to be zero. This prescribes relative precedences on its directed cycle, forming an acyclic orientation unless every initial reader color is identical. A topological order consequently realizes an all-zero word. At the uniform-zero pattern, the successive cyclic order has word \(0\,1^{|C|-1}\), which is nondecreasing. Thus the first test of (GU2) is sufficient on each reader cycle. Select such a local order on every disjoint reader cycle and shuffle their steps with zero prefixes preceding one suffixes; add constant sites as singleton steps. Incorporate all attached reader trees outward from their parents: a new child with initial parent-reader color \(b\) can be inserted before its parent with color \(b\), or after with color \(1-b\). One choice preserves nondecreasing order, and already present edge colors are unaffected. This proves the first equivalence. Complementing the coloring proves the second. \(\square\)
+
+*Proof of the theorem.* Each cycle in \(\mathcal C(f)\) forbids just one full assignment on its reader-cycle root bits, namely the assignment making all its initial reader colors one. Similarly each cycle in \(\mathcal C(g)\) forbids one assignment making all its initial reader colors zero. Let \(\mathcal F\) be the combined family of these constraints and write \(m=|\mathcal F|\).
+
+Cycles within one reader digraph are vertex-disjoint. Therefore every constraint has at least two variables, while each variable belongs to at most two constraints, at most one from each coloring. Every collection of \(k\) constraints consequently touches at least \(k\) variables, since its total variable incidences lie between \(2k\) and twice its number of distinct variables. By Hall's marriage theorem, assign to every constraint a different one of its variables. Set that designated variable opposite to its forbidden value within its assigned constraint. Since no variable is designated twice, every constraint is satisfied regardless of the values of the other variables. The \(n-m\) undesignated variables are free, giving at least \(2^{n-m}\) common roots.
+
+If \(m<n\), this is already at least two. If \(m=n\), all constraint cycles have length two and every variable occurs in both colorings' constraint families. Thus those families are two perfect matchings on the \(n\) variables. Their union consists of alternating even cycles and doubled edges. On a doubled edge, its two forbidden pairs leave at least two assignments. On a simple alternating cycle, each edge forbids one pair. A satisfying assignment exists by the preceding Hall argument. If no single-variable flip of that assignment is satisfying, every variable must have a different blocking edge clause. Since the cycle has equally many variables and clauses, each clause then has one true and one false signed atom, so complementing all bits gives a second satisfying assignment. Hence every component has at least two assignments. This proves (GU1). \(\square\)
+
+The preceding cyclic sharpness example realizes two common roots in every even dimension, so the global lower bound cannot be improved.
+
+**Independent audit.** The characterization (GU2) and lower bound (GU1) were independently checked by enumeration of all full direction orders on random arbitrary reader graphs: 400 independent coloring pairs in dimension four, 500 in dimension five, and 90 in dimension six, checking every root in each instance. All tests passed.
+
+
+
+### Simultaneous orientation control for several unary reader colorings
+
+The Hall argument generalizes to an arbitrary finite family of unary reader colorings.
+
+**Theorem (multi-coloring reader-cycle Hall criterion).** Let \(h^{(1)},\ldots,h^{(q)}\) be unary-reader edge colorings of \(Q_n\), and prescribe for each coloring either a nondecreasing \(0^*1^*\) or a nonincreasing \(1^*0^*\) full antipodal geodesic from a shared root. Let \(\mathcal F\) be the family of all directed reader cycles of the \(q\) colorings, counted separately for each coloring, and put \(m=|\mathcal F|\). Assume the bipartite incidence graph between \(\mathcal F\) and the \(n\) direction bits has a matching that covers every cycle. Then at least
+\[
+\boxed{2^{n-m}}
+\]
+starting roots satisfy all \(q\) prescribed favorable-orientation requirements simultaneously. The full geodesics may use different direction orders.
+
+In particular, the hypothesis holds whenever every directed reader cycle in every coloring has length at least \(q\), because each direction bit occurs in at most one cycle per coloring, hence in at most \(q\) cycles altogether.
+
+*Proof.* By the root-cycle characterization (GU2), each directed reader cycle \(C\) contributes a single forbidden full pattern on the starting bits indexed by \(C\). Its pattern depends on the prescribed orientation and that coloring's offsets, but not on any other coloring. Match each cycle \(C\) to a distinct direction bit \(i(C)\in C\). Assign \(x_{i(C)}\) the value opposite the forbidden value at that bit in this cycle. This violates the forbidden pattern of \(C\), independently of the values assigned to its other bits. Since matching representatives are distinct, all assignments are compatible. The remaining \(n-m\) root bits are free; every resulting root satisfies all reader-cycle conditions, and (GU2) provides all required full paths.
+
+For the sufficient length condition, any \(k\) cycles contribute at least \(qk\) variable incidences; each direction occurs in at most \(q\) of those cycles. Their union therefore has at least \(k\) distinct variables. Hall's theorem supplies the required matching. \(\square\)
+
+For \(q=2\) no extra length hypothesis is necessary, since every reader cycle has length at least two. The earlier global two-color theorem improves the resulting positive bound to the sharp uniform lower bound of two, including the saturated matching case \(m=n\). For \(q\ge3\), the Hall count remains a general constructive existence and multiplicity theorem whenever its stated incidence condition is met.

@@ -1745,6 +1745,14 @@
             "research_status": "active"
         },
         {
+            "id": "paired_direction_involutions_and_geodesic_endpoint_matchings",
+            "type": "subsection",
+            "title": "Paired-direction involutions and geodesic endpoint matchings",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "parabolic_character_obstruction_and_the_first_coxeter_one_switch_theorem",
             "type": "subsection",
             "title": "Parabolic character obstruction and the first Coxeter one-switch theorem",

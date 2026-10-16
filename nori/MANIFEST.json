@@ -1,6 +1,6 @@
 {
   "active_section_count": 21,
-  "active_subsection_count": 311,
+  "active_subsection_count": 312,
   "article_sequences": {
     "article_xv_projective_face_flag_unification": [
       {
@@ -152,9 +152,9 @@
   "article_versions": {
     "article_xv_projective_face_flag_unification": {
       "composition": {
-        "body_chars": 1229090,
-        "composed_through_revision": 9304,
-        "composition_version": 321,
+        "body_chars": 1913320,
+        "composed_through_revision": 10882,
+        "composition_version": 540,
         "frontier": {
           "current": null
         },
@@ -182,9 +182,9 @@
     },
     "nori_article_ix_unification": {
       "composition": {
-        "body_chars": 19088,
-        "composed_through_revision": 7539,
-        "composition_version": 10,
+        "body_chars": 35973,
+        "composed_through_revision": 10579,
+        "composition_version": 15,
         "frontier": {
           "current": null
         },
@@ -212,9 +212,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 60490,
-        "composed_through_revision": 6429,
-        "composition_version": 27,
+        "body_chars": 239057,
+        "composed_through_revision": 10811,
+        "composition_version": 83,
         "frontier": {
           "current": null
         },
@@ -242,9 +242,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 904293,
-        "composed_through_revision": 8472,
-        "composition_version": 246,
+        "body_chars": 1358860,
+        "composed_through_revision": 10914,
+        "composition_version": 369,
         "frontier": {
           "current": null
         },
@@ -287,9 +287,9 @@
     },
     "nori_article_xiv_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 878461,
-        "composed_through_revision": 9310,
-        "composition_version": 180,
+        "body_chars": 1092139,
+        "composed_through_revision": 10344,
+        "composition_version": 241,
         "frontier": {
           "current": null
         },
@@ -303,10 +303,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-15T01:24:57.877786+00:00",
+  "generated_at": "2026-10-16T19:23:17.932753+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 216,
+  "research_note_count": 362,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -330,9 +330,9 @@
     },
     "nori_cubical_curvature_exchange_topology": {
       "composition": {
-        "body_chars": 102914,
-        "composed_through_revision": 8435,
-        "composition_version": 7,
+        "body_chars": 207633,
+        "composed_through_revision": 10343,
+        "composition_version": 32,
         "frontier": {
           "current": null
         },
@@ -346,9 +346,9 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 60441,
-        "composed_through_revision": 6428,
-        "composition_version": 22,
+        "body_chars": 239008,
+        "composed_through_revision": 10810,
+        "composition_version": 78,
         "frontier": {
           "current": null
         },
@@ -378,9 +378,9 @@
     },
     "nori_freudenthal_carriers_equivariant_topology": {
       "composition": {
-        "body_chars": 247647,
-        "composed_through_revision": 8976,
-        "composition_version": 14,
+        "body_chars": 246951,
+        "composed_through_revision": 9765,
+        "composition_version": 16,
         "frontier": {
           "current": null
         },
@@ -394,9 +394,9 @@
     },
     "nori_graphic_boundary_tournament_exchange_geometry": {
       "composition": {
-        "body_chars": 222261,
-        "composed_through_revision": 8219,
-        "composition_version": 1,
+        "body_chars": 267636,
+        "composed_through_revision": 10710,
+        "composition_version": 12,
         "frontier": {
           "current": null
         },
@@ -458,9 +458,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 184387,
-        "composed_through_revision": 8217,
-        "composition_version": 38,
+        "body_chars": 205508,
+        "composed_through_revision": 10899,
+        "composition_version": 46,
         "frontier": {
           "current": null
         },
@@ -474,9 +474,9 @@
     },
     "nori_matroidal_reachability_long_path_bounds": {
       "composition": {
-        "body_chars": 187874,
-        "composed_through_revision": 8220,
-        "composition_version": 1,
+        "body_chars": 575945,
+        "composed_through_revision": 10913,
+        "composition_version": 105,
         "frontier": {
           "current": null
         },
@@ -490,9 +490,9 @@
     },
     "nori_rectified_graphs_cyclic_path_geometry": {
       "composition": {
-        "body_chars": 147216,
-        "composed_through_revision": 8970,
-        "composition_version": 17,
+        "body_chars": 204130,
+        "composed_through_revision": 10881,
+        "composition_version": 30,
         "frontier": {
           "current": null
         },
@@ -554,9 +554,9 @@
     },
     "nori_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 153307,
-        "composed_through_revision": 9309,
-        "composition_version": 118,
+        "body_chars": 160209,
+        "composed_through_revision": 9321,
+        "composition_version": 120,
         "frontier": {
           "current": null
         },
@@ -570,9 +570,9 @@
     },
     "nori_type_d_trees_petrie_algebra": {
       "composition": {
-        "body_chars": 249379,
-        "composed_through_revision": 9153,
-        "composition_version": 45,
+        "body_chars": 352132,
+        "composed_through_revision": 9950,
+        "composition_version": 77,
         "frontier": {
           "current": null
         },
@@ -586,9 +586,9 @@
     },
     "nori_unification_foundations": {
       "composition": {
-        "body_chars": 19026,
-        "composed_through_revision": 7520,
-        "composition_version": 6,
+        "body_chars": 35911,
+        "composed_through_revision": 10578,
+        "composition_version": 11,
         "frontier": {
           "current": null
         },
@@ -634,9 +634,9 @@
     },
     "opposed_projective_face_windows_and_complete_paths": {
       "composition": {
-        "body_chars": 938965,
-        "composed_through_revision": 9303,
-        "composition_version": 296,
+        "body_chars": 1566281,
+        "composed_through_revision": 10831,
+        "composition_version": 502,
         "frontier": {
           "current": null
         },
@@ -649,7 +649,7 @@
       "version": 2
     }
   },
-  "snapshot_revision": 4576,
+  "snapshot_revision": 6179,
   "startup_broadcasts": [
     {
       "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
@@ -1013,14 +1013,14 @@
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
-        "body_chars": 10549,
-        "composed_through_revision": 6264,
-        "composition_version": 4,
+        "body_chars": 23914,
+        "composed_through_revision": 10085,
+        "composition_version": 8,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
+        "source_note": "Dual near-geodesic asymptotic equivalence via shortest one-change antipodal path tensorization",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1166,14 +1166,14 @@
     },
     "bipartite_block_order_cross_favorability_and_checkerboard_transfers": {
       "composition": {
-        "body_chars": 6753,
-        "composed_through_revision": 8917,
-        "composition_version": 1,
+        "body_chars": 14966,
+        "composed_through_revision": 9999,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Bipartite two-block opposite-order root criterion and linear Boolean transfer on even cycles",
+        "source_note": "Strengthen one-sided reader theorem to arbitrary offsets via five-block single-pivot geodesic",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1387,14 +1387,14 @@
     },
     "cartesian_factorization_of_paired_roots_and_interaction_prime_reduction": {
       "composition": {
-        "body_chars": 123839,
-        "composed_through_revision": 9278,
-        "composition_version": 35,
+        "body_chars": 159491,
+        "composed_through_revision": 10608,
+        "composition_version": 46,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Quadratic moment-code support indecomposability of minimal obstructions",
+        "source_note": "Orbit-disjoint product packing and structural constraints on critical successful colorings",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1862,14 +1862,14 @@
     },
     "cross_orientation_root_intersections_for_distinct_square_factorizations": {
       "composition": {
-        "body_chars": 41207,
-        "composed_through_revision": 8782,
-        "composition_version": 10,
+        "body_chars": 44650,
+        "composed_through_revision": 9387,
+        "composition_version": 11,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Hall-Rado rank-deficiency certificate: empty cross-factor root intersection forces two units of local safe-check deficiency",
+        "source_note": "Append all-graph one-forbidden-root orientation theorem; audited proof.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1913,14 +1913,14 @@
     },
     "curvature_realization_gauge_phases_and_rooted_square_defect_transport": {
       "composition": {
-        "body_chars": 12794,
-        "composed_through_revision": 7752,
-        "composition_version": 2,
+        "body_chars": 123312,
+        "composed_through_revision": 10342,
+        "composition_version": 26,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Uniform distribution of every complete geodesic color word within a prescribed curvature fiber",
+        "source_note": "Quantitative curvature lower bound for every facet of balanced odd cubes via Walsh spectral stability",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1964,14 +1964,14 @@
     },
     "cyclic_bi_surjective_overlap_and_terminal_defect_exchange": {
       "composition": {
-        "body_chars": 35618,
-        "composed_through_revision": 9236,
-        "composition_version": 11,
+        "body_chars": 61817,
+        "composed_through_revision": 9384,
+        "composition_version": 21,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Checkerboard defect saturation reduced to pure frustrated bijection parity",
+        "source_note": "Simultaneous q-coloring unary reader cycle constraints under a Hall matching condition.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1981,14 +1981,14 @@
     },
     "cyclic_color_variation_and_unavoidable_root_selection": {
       "composition": {
-        "body_chars": 4027,
-        "composed_through_revision": 7511,
-        "composition_version": 1,
+        "body_chars": 7656,
+        "composed_through_revision": 10577,
+        "composition_version": 3,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Root selection and cyclic-variation results consolidated in Article IX.",
+        "source_note": "Sharp explicit full-geodesic order for balanced rootwise linear switch obstruction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2032,14 +2032,14 @@
     },
     "cyclic_variation_selection_for_antipodal_and_boundary_path_galleries": {
       "composition": {
-        "body_chars": 105704,
-        "composed_through_revision": 8969,
-        "composition_version": 17,
+        "body_chars": 162590,
+        "composed_through_revision": 10880,
+        "composition_version": 30,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Dimension-induction attempt: even boundary cross-root lifting, odd boundary obstruction, interior-seam example, and return to stripe/empty-root propagation",
+        "source_note": "Deterministic unary-star completion yields quarter-dimension singleton-defect traps and balanced one-eighth bound",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2185,14 +2185,14 @@
     },
     "directed_influence_components_and_monotone_seam_lifting": {
       "composition": {
-        "body_chars": 95599,
-        "composed_through_revision": 9302,
-        "composition_version": 30,
+        "body_chars": 140304,
+        "composed_through_revision": 10618,
+        "composition_version": 46,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Projection-site cyclic cross counterexamples force a globally oriented Hamilton feedback cycle.",
+        "source_note": "Unbounded sink components with at most seven branching directions",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2508,14 +2508,14 @@
     },
     "extremal_geodesic_blockers_and_exponential_paired_root_stability": {
       "composition": {
-        "body_chars": 32287,
-        "composed_through_revision": 8554,
-        "composition_version": 7,
+        "body_chars": 50426,
+        "composed_through_revision": 9749,
+        "composition_version": 11,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Fiber transfer and finite mixed-integer four-cube favorable-root minimum",
+        "source_note": "Joint antipodal repairs: shared roots must be originally exclusive and force opposite exclusive endpoint orientations",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2592,14 +2592,14 @@
     },
     "fixed_order_freedom_and_the_necessity_of_coupled_root_order_selection": {
       "composition": {
-        "body_chars": 6098,
-        "composed_through_revision": 7519,
-        "composition_version": 1,
+        "body_chars": 19346,
+        "composed_through_revision": 9476,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Four fixed-order and sparse-permutation theorems with proofs; existing Article IX terminology requires inherited vocabulary override.",
+        "source_note": "Permutation-reader word bijection and exact fixed-order metric limitation.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2643,14 +2643,14 @@
     },
     "folded_cube_cycle_space_presentation_and_antipodal_girth": {
       "composition": {
-        "body_chars": 7637,
-        "composed_through_revision": 6434,
-        "composition_version": 2,
+        "body_chars": 18038,
+        "composed_through_revision": 10898,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Align statement numbering with the preceding Article XI subsection.",
+        "source_note": "note_4187542e7d64101a7b17ab40",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2660,14 +2660,14 @@
     },
     "folded_cube_line_graphs_and_local_generation_of_binary_dependencies": {
       "composition": {
-        "body_chars": 5999,
-        "composed_through_revision": 6442,
-        "composition_version": 1,
+        "body_chars": 16703,
+        "composed_through_revision": 10852,
+        "composition_version": 5,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Independent structure theorem; verified against current Article XI cycle-space subsection.",
+        "source_note": "note_109fed8ab11109462178ad55",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2728,14 +2728,14 @@
     },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
-        "body_chars": 6586,
-        "composed_through_revision": 6268,
-        "composition_version": 2,
+        "body_chars": 171707,
+        "composed_through_revision": 10809,
+        "composition_version": 52,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
+        "source_note": "Rainbow, Hollom, and Eulerian synthesis: dimension-uniform proofs and explicit conditional absorption target",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2847,14 +2847,14 @@
     },
     "gauge_critical_switches_and_clustered_witnesses_on_full_paths": {
       "composition": {
-        "body_chars": 211169,
-        "composed_through_revision": 9251,
-        "composition_version": 55,
+        "body_chars": 528263,
+        "composed_through_revision": 10830,
+        "composition_version": 168,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "All-dimensional strict-descent obstruction under maximal switch congestion",
+        "source_note": "Unary spectator single-square critical normal form and closure reduction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2898,14 +2898,14 @@
     },
     "global_petrie_switch_moment_and_local_turn_counting": {
       "composition": {
-        "body_chars": 161162,
-        "composed_through_revision": 9152,
-        "composition_version": 39,
+        "body_chars": 263853,
+        "composed_through_revision": 9949,
+        "composition_version": 71,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "All-rank Reed--Muller state-boundary moment theorem and nonaffine local choice simplex obstruction beyond rank three",
+        "source_note": "Hamming-ball quotient of dual Petrie cycles and Harper-optimal coverage inequalities",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3645,14 +3645,14 @@
     },
     "nonlinear_tree_incidence_realization_and_cycle_syndrome_reduction": {
       "composition": {
-        "body_chars": 87678,
-        "composed_through_revision": 9287,
-        "composition_version": 27,
+        "body_chars": 89733,
+        "composed_through_revision": 9507,
+        "composition_version": 28,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Clarify that the signed leaf-port trichotomy precedes enforcement of parent-local output equations.",
+        "source_note": "Sharp quantitative multiplicity across a constant direction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3713,14 +3713,14 @@
     },
     "odd_face_folding_two_polarity_certificates_and_transverse_curvature_oscillation": {
       "composition": {
-        "body_chars": 19026,
-        "composed_through_revision": 8975,
-        "composition_version": 4,
+        "body_chars": 18328,
+        "composed_through_revision": 9764,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Quantitative antipodal empty-corridor bound: monochromatic codimension-two geodesics force at least twice their dimension many empty neighboring-face roots",
+        "source_note": "Arbitrary joining values: one-switch folding yields a monochromatic full path through the same joining edge; Boolean-face classification",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3730,14 +3730,14 @@
     },
     "odd_girth_and_frustration_of_switch_component_quotients": {
       "composition": {
-        "body_chars": 4142,
-        "composed_through_revision": 8477,
-        "composition_version": 1,
+        "body_chars": 108755,
+        "composed_through_revision": 10161,
+        "composition_version": 28,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Short odd circuits survive nonswitch contraction and maximum-cut frustration has quantitative lower bounds",
+        "source_note": "Full walk-frontier tensorization, grade-three bounded-overhead closure, fixed-weight potential saturation; vocabulary normalization",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3797,14 +3797,14 @@
     },
     "one_direction_path_witnesses_and_a_2_sat_closure_reduction": {
       "composition": {
-        "body_chars": 5872,
-        "composed_through_revision": 9119,
-        "composition_version": 2,
+        "body_chars": 31683,
+        "composed_through_revision": 9846,
+        "composition_version": 11,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Bounded shared-site 2SAT kernel and fourteen path-pair witnesses",
+        "source_note": "Exact binomial one-edge-count distribution for uniformly sampled counterexample-preserving facet pivots, with mean/variance set by favorable and empty roots.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3861,6 +3861,23 @@
       },
       "development_version": 1,
       "section_id": "nori_switch_bivector_grassmannian_obstructions",
+      "version": 1
+    },
+    "paired_direction_involutions_and_geodesic_endpoint_matchings": {
+      "composition": {
+        "body_chars": 351538,
+        "composed_through_revision": 10912,
+        "composition_version": 96,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Influence-cone holonomy obstruction and single-crossing mutual square bridge theorem",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_matroidal_reachability_long_path_bounds",
       "version": 1
     },
     "parabolic_character_obstruction_and_the_first_coxeter_one_switch_theorem": {
@@ -4205,14 +4222,14 @@
     },
     "projective_rainbow_geodesic_cycles_and_three_hit_switch_criticality": {
       "composition": {
-        "body_chars": 26126,
-        "composed_through_revision": 8560,
-        "composition_version": 8,
+        "body_chars": 33202,
+        "composed_through_revision": 10812,
+        "composition_version": 9,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Quantitative local swap variance and balanced-case near-monochromatic abundance",
+        "source_note": "Rainbow, Hollom, and Eulerian synthesis: dimension-uniform proofs and explicit conditional absorption target",
         "stale": null,
         "stale_dependencies": []
       },
@@ -4494,14 +4511,14 @@
     },
     "root_basis_star_geometry_and_a_uniform_square_root_path_theorem": {
       "composition": {
-        "body_chars": 20034,
-        "composed_through_revision": 7279,
-        "composition_version": 5,
+        "body_chars": 25060,
+        "composed_through_revision": 10022,
+        "composition_version": 7,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Intrinsic coordinate-projection characterization of root-independent and full-rank paths",
+        "source_note": "Sharp two-color equality classification and antipodal strict bound",
         "stale": null,
         "stale_dependencies": []
       },
@@ -4715,14 +4732,14 @@
     },
     "sharp_rootwise_random_cube_geodesics_by_singleton_block_second_moments": {
       "composition": {
-        "body_chars": 8251,
-        "composed_through_revision": 7109,
-        "composition_version": 3,
+        "body_chars": 39518,
+        "composed_through_revision": 10636,
+        "composition_version": 9,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Opposite-chain edge exclusion and prescribed-profile cube smoothing theorem",
+        "source_note": "Robust hereditary full-profile completion: exponentially many orbit-disjoint witnesses per target",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5344,14 +5361,14 @@
     },
     "tournament_interleaving_and_functional_dependency_geodesics": {
       "composition": {
-        "body_chars": 15903,
-        "composed_through_revision": 9308,
-        "composition_version": 4,
+        "body_chars": 22801,
+        "composed_through_revision": 9320,
+        "composition_version": 6,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Proved quotient projection and one-hole minimal obstruction reduction, supplying an all-corank induction target.",
+        "source_note": "Abstract four-label inversion system proves star identities and affine spanning alone permit a one-hole image; isolates the indispensable matrix-supported weight condition.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5395,14 +5412,14 @@
     },
     "transverse_curvature_oscillation_along_near_spanning_monochromatic_geodesics": {
       "composition": {
-        "body_chars": 9520,
-        "composed_through_revision": 7853,
-        "composition_version": 2,
+        "body_chars": 3673,
+        "composed_through_revision": 9734,
+        "composition_version": 3,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "One-sided blue Freudenthal exchange defect equals transverse curvature along every red near-spanning corridor",
+        "source_note": "Endpoint audit: residual faces lie at arm endpoints; retain translated-color oscillation and withdraw unsupported interior propagation",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5599,14 +5616,14 @@
     },
     "two_hub_selector_obstruction_and_cross_hub_path_interleaving": {
       "composition": {
-        "body_chars": 23311,
-        "composed_through_revision": 8913,
-        "composition_version": 7,
+        "body_chars": 57289,
+        "composed_through_revision": 9676,
+        "composition_version": 17,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Sharpness audit: the 36-favorable/16-paired witness proves the nine-sixteenths favorable constant; sharpness of the one-eighth paired bound remains unproved",
+        "source_note": "Sharp computer-assisted 36/64 majority for nonlinear nonbijective three-reader Q6, plus universal three-group reader-map cross-root closure by the previous one-bijective theorem.",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5837,14 +5854,14 @@
     },
     "universal_three_direction_edge_color_prescription": {
       "composition": {
-        "body_chars": 4585,
-        "composed_through_revision": 6269,
-        "composition_version": 2,
+        "body_chars": 4582,
+        "composed_through_revision": 10098,
+        "composition_version": 4,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Nonmathematical prohibited-vocabulary normalization in existing manuscript",
+        "source_note": "Remove redundant transfer addendum; stronger seven-direction bridge already published",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5922,14 +5939,14 @@
     },
     "zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect": {
       "composition": {
-        "body_chars": 35606,
-        "composed_through_revision": 6937,
-        "composition_version": 9,
+        "body_chars": 80963,
+        "composed_through_revision": 10709,
+        "composition_version": 20,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "All-dimensional endpoint-star independent tree and graphic-rank lower bound 2n+2q−2 for shortest monochromatic antipodal distance defect.",
+        "source_note": "Citation and priority correction linking eta to Article VIII FM3 SM2 GD3",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5955,7 +5972,7 @@
       "version": 1
     }
   },
-  "toolkit_count": 35,
+  "toolkit_count": 38,
   "universal_document_versions": {
     "guide": 51,
     "reflexes": 26,

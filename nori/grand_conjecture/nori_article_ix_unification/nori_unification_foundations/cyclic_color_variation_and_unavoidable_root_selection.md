@@ -39,7 +39,7 @@ This is well defined because it ignores bit \(x_i\), and \(c_i(\bar x)=1-c_i(x)\
 \[
 b_k=r+x_{\pi_k}+k-1\pmod2.
 \]
-Therefore \(b_k\ne b_{k+1}\) precisely when the two corresponding bits of \(x\) are equal. A permutation minimizing switches alternates the zero and one entries of \(x\) as long as possible; the surplus of the majority bit forces exactly \(\max\{0,|n-2w|-1\}\) neighboring equal pairs. \(\square\)
+Therefore \(b_k\ne b_{k+1}\) precisely when the two corresponding bits of \(x\) are equal. A permutation minimizing switches alternates the zero and one entries of \(x\) as long as possible; the surplus of the majority bit forces precisely \(\max\{0,|n-2w|-1\}\) neighboring equal pairs. \(\square\)
 
 In this coloring, roots admitting a one-switch full geodesic have weights \(m-1,m,m+1\), while roots admitting a monochromatic full geodesic have weight \(m\). In particular every full geodesic from \(0^n\), regardless of direction order, has \(n-1\) switches. Root selection from \(0^n\) requires changing at least \(m-1\) root bits to find a one-switch path; bounded-radius root repair is insufficient.
 
@@ -50,3 +50,53 @@ Article IX already establishes the antipodal cyclic-rotation identity for NORI1.
 Thus both full-strength targets can be formulated as **small cyclic variation of overlapping complete paths**. Adjacent exchanges alter only bounded intervals of the cyclic label word. Nevertheless strict local descent fails: at cube root \(0^n\), adjacent direction swaps and single root slides preserve the high variation \(n-1\), although elsewhere \(D=1\). A successful common selection theorem needs global root and ordering compatibility.
 
 The NORI1 cyclic identity is already proved in Article IX; Theorems 1 and 2 and the plateau obstruction are detailed in research notes note_a31f3ced5651f1da607b547c, note_52fd24abbc3549954285b0a5, and note_4faa19538adf3c3d215f274d, all attached to Article IX. No unified long-path theorem is asserted.
+
+## Balanced lifts preserve a linear rootwise switch obstruction
+
+Fix even \(d\ge2\), and take the parity coloring from Theorem 2,
+\(f_i(x)=\sum_{j\ne i}x_j\pmod2\).
+Its complementary paired lift \(C\) on \(Q_{2d}\) is
+\[
+C_i(x,y)=f_i(x),\qquad
+C_{d+i}(x,y)=1+f_i(x),\qquad 1\le i\le d.
+\tag{CV1}
+\]
+This is a legal antipodally odd vertex-balanced coloring: paired incident edge colors are complementary at every vertex. Every face retaining a union of complete free-direction pairs is balanced.
+
+**Theorem (linear rootwise switch obstruction).** For every vertex \(z=(0^d,y)\) and every direction-simple path \(P\) rooted at \(z\), if \(P\) has length \(\ell\) and \(s\) changes in its temporal color word, then
+\[
+\boxed{\ell\le d+s+1.}\tag{CV2}
+\]
+In particular, every full antipodal geodesic rooted at \(z\) has at least \(d-1\) switches; a rooted direction-simple path with at most one switch has length at most \(d+2\). Therefore paths with \(o(d)\) switches from these roots have length at most \(d+o(d)\), while the cube dimension is \(2d\).
+
+*Proof.* Delete from \(P\) every step in a new direction \(d+i\), leaving \(r\) steps in old directions. Since each old direction is used at most once and the old vertex begins at \(0^d\), immediately before the \(k\)-th remaining step precisely \(k-1\) old bits have been flipped and the bit of the current direction is still zero. Its color is therefore
+\[
+f_{i_k}(x)=k-1\pmod2.
+\]
+Thus the subsequence of old-step colors alternates \(0101\cdots\), and has \(r-1\) switches for \(r\ge1\). Deleting entries from a binary word cannot increase the number of switches, so \(r\le s+1\); this is also true for \(r=0\). The path uses at most \(d\) new directions, yielding \(\ell\le d+r\le d+s+1\). Setting \(\ell=2d\) proves the full-geodesic claim. \(\square\)
+
+This gives arbitrarily large balanced, paired-face-balanced legal colorings in which no path beginning at a specified root can simultaneously be near spanning and have sublinear switch count. The underlying parity coloring still has monochromatic full geodesics at other roots. Hence existential root selection is indispensable in any asymptotic low-switch route to unrestricted NORI1.
+
+
+**Sharpness of the full-geodesic rooted switch bound.** In the coloring (CV1), the minimum switch count among all full antipodal geodesics starting at \((0^d,y)\) is \(d-1\) for every even \(d\ge2\) and every \(y\). Thus
+\[
+\boxed{\min_{\pi\in S_{2d}}\operatorname{sw}_C(P((0^d,y),\pi))=d-1.}\tag{CV3}
+\]
+
+*Proof.* The lower bound is (CV2). For the upper bound traverse dimensions in the order
+\[
+1,d+1,\ 2,d+2,\ \ldots,\ d-2,2d-2,\quad
+d-1,\ 2d,\ 2d-1,\ d.
+\tag{CV4}
+\]
+When \(d=2\), the initial repeated pairs are absent and (CV4) is \((1,4,3,2)\). All \(2d\) directions occur once.
+
+The old directions occur in increasing order and their temporal colors alternate, with old step \(i\) colored \(i-1\bmod2\). For \(1\le i\le d-2\), the new direction \(d+i\) immediately follows old step \(i\), at which point \(i\) old bits have been flipped, including bit \(i\). Its color is
+\(1+f_i(x)=1+(i-1)=i\bmod2\),
+which equals the color of old step \(i+1\).
+
+After old step \(d-1\), the new direction \(2d\) has color
+\(1+f_d(x)=1+(d-1)=0\bmod2\),
+matching old step \(d-1\). The next step \(2d-1\) has color
+\(1+f_{d-1}(x)=1+(d-2)=1\bmod2\),
+matching the final old step \(d\). Every inserted new-direction edge therefore belongs to one of the two neighboring constant-color runs. No additional switches are created, and the full path has the \(d-1\) switches already present in its alternating old-direction subsequence. \(\square\)
