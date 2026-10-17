@@ -155,8 +155,39 @@ def sparse_affine_example7():
     assert sum((E-mean)**2*v for E,v in formal.items())/23040==var
     print('n=7 sparser balanced affine example verified:',support_counts)
 
+
+def binomial_square_moment_family():
+    """Independent finite checks of the all-dimensional binomial-square formula."""
+    from fractions import Fraction
+    from math import comb, factorial
+    for m in range(1,9):
+        h=Counter()
+        for positions in it.combinations(range(2*m),m):
+            w=[int(i in positions) for i in range(2*m)]
+            interior=sum(w[i]!=w[i+1] for i in range(2*m-1))
+            for b in (0,1):
+                X=interior+(b!=w[0])+(w[-1]!=(1-b))
+                assert X%2==1
+                h[(X-1)//2]+=1
+        C=comb(2*m,m)
+        assert all(h[j]==2*comb(m,j)**2 for j in range(m+1))
+        p=[Fraction(comb(m,j)**2,C) for j in range(m+1)]
+        q=[Fraction(comb(m,j)**2+(-1)**(j+1)*comb(m,j),C)
+           for j in range(m+1)]
+        assert q[0]==0 and all(v>=0 for v in q) and sum(q)==1
+        M=2**(2*m-1)*factorial(2*m)
+        assert all((M*v).denominator==1 for v in q)
+        for k in range(m):
+            assert sum(p[j]*(2+4*j)**k for j in range(m+1))==sum(
+                q[j]*(2+4*j)**k for j in range(m+1))
+        if m>=2:
+            diff=sum((q[j]-p[j])*(2+4*j)**m for j in range(m+1))
+            assert diff==Fraction((-1)**(m+1)*4**m*factorial(m),C)
+    print('binomial-square run counts and moment-matching formal profiles verified through n=17')
+
 if __name__=='__main__':
     for n in (3,4,5,6):test_incidence(n)
     spectrum7()
     example7()
     sparse_affine_example7()
+    binomial_square_moment_family()
