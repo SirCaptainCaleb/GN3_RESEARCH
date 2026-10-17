@@ -24,11 +24,15 @@ Editorial retirement preserves entire proof texts in notes and original exact co
 
 ## Active Subsections with extracted negative proof blocks
 
+- [Balanced Q7 defeats every three-character root-Walsh minor](note_be85d81b3c8929b59cfbffef.md) -> integral_saturation_and_fourier_rigidity_of_geodesic_incidence (source composition v5)
 - [Certified seven- and eight-vertex boundary spanning one-turn closure](note_nori_xi_certified_boundary_one_turn_orders_seven_eight.md) -> common_terminal_monochromatic_arm_bases_and_rooted_boolean_complement_intersection (source composition v2)
 - [Checkerboard-free extraction and four-local Hamilton completion limitations](note_checkerboard_submatrix_and_four_local_hamilton_completion_limits.md) -> coupled_chronological_saddle_potentials_and_checkerboard_obstructions (source composition v2)
 - [Chronological center-transitivity and parity synchronization limitations](note_chronological_local_center_parity_and_rank_potential_limitations.md) -> endpoint_tournament_factorization_and_monochromatic_orders (source composition v6)
 - [Disjoint monochromatic terminal sets for neighboring affine tree colorings](note_7917ed35754f3a1aa1845e98.md) -> root_uniform_low_switch_geodesics_for_affine_colorings_supported_on_forests (source composition v3)
+- [Exponential size barrier for sparse root-Walsh forcing minors](note_7d57a9fb16864260c6242635.md) -> integral_saturation_and_fourier_rigidity_of_geodesic_incidence (source composition v5)
+- [Odd-dimensional co-singleton Fourier variance theorem and Q7 forcing example](note_6326d62436c98f33daab7695.md) -> integral_saturation_and_fourier_rigidity_of_geodesic_incidence (source composition v6)
 - [Paired-dimension colorings give a low-index global endpoint quotient](note_cfb2ea26b51b2a8827e349cd.md) -> monochromatic_geodesic_endpoint_posets_and_a_global_rank_bounded_target (source composition v1)
 - [Paired-start exact criterion for NORI1 as a unification toy model](note_antipodal_paired_start_nori1_toy_unification_probe.md) -> antipodal_multifacet_bridge_and_seven_coordinate_universality (source composition v2)
 - [Sharp half-dimensional face barrier and complementary one-detour caps](note_b66c53fabb05bd80fde3cd28.md) -> zero_turn_contraction_pointed_odd_girth_and_the_cube_geodesic_distance_defect (source composition v12)
+- [Two-sector Fourier Gram verification and balanced six-cube certificate](note_0da913946a11ff209a926daf.md) -> integral_saturation_and_fourier_rigidity_of_geodesic_incidence (source composition v3)
 - [Two-switch lifting patterns for antipodal diagonal compression](note_diagonal_compression_two_switch_lifting_patterns_20261012.md) -> antipodal_diagonal_compression_and_local_face_certificates (source composition v1)

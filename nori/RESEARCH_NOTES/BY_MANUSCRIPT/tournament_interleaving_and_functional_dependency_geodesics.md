@@ -11,6 +11,8 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Middle-vertex switching conjecture for tournament-derived boundary triples](../note_694bfab8e37835cd0d7fe712.md) — active/conjectural
 - [Nonlinear odd-block profile universality and fixed-root affine parity fibers](../note_b0698e44167f7e8225cad75c.md) — active/proved
 - [Nonlinear odd-block profile universality and fixed-root affine parity fibers](../note_b0698e44167f7e8225cad75c.md) — active/proved
+- [Odd-cycle quadratic NORI1 colorings defeat translation-invisible nonlinear reset](../note_1144806daa685ed219c20135.md) — active/proved
+- [Odd-cycle quadratic NORI1 colorings defeat translation-invisible nonlinear reset](../note_1144806daa685ed219c20135.md) — active/proved
 - [Order-uniform nonlinear triangular Boolean profile bijections for NORI1](../note_b7650be8a633481e699bfc0f.md) — active/proved
 - [Order-uniform nonlinear triangular Boolean profile bijections for NORI1](../note_b7650be8a633481e699bfc0f.md) — active/proved
 - [Three-phase parity reset eliminates arbitrary nonlinear cyclic feedback and realizes every geodesic color profile](../note_7e460db93c91b696deaed281.md) — active/proved

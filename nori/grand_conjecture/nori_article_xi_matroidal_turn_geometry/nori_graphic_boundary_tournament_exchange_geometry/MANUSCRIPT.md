@@ -2134,6 +2134,49 @@ For both systems, every monochromatic component \(R\) and its opposite-colored d
 
 In the boundary model, the vertices of \(S(K_n)\) are ordered pairs of original vertices. Thus red connectivity of an ordered-pair component does not ensure a forward vertex-simple tight path. The shared cocycle and component-realizability structures are independent of, but compatible with, the additional original-resource matroid required for the spanning one-turn conjecture.
 
+#### 6. Cube-component Hamming diameter and realization
+
+The four-sector separation has an additional metric consequence for the cube.
+
+**Theorem 7 (unpaired-sector anticode).** Let \(n\ge2\) and \(R\) be the vertex set of any red connected component of an antipodally odd coloring of \(Q_n\). Use the four sectors \(I,A,B,O\) from (4), with \(p=|I|\). Then
+\[
+\operatorname{diam}_{Q_n}(A)\le n-2,
+\tag{10}
+\]
+\[
+|A|\le D_n:=
+\begin{cases}
+2^{n-1}-\frac12\binom n{n/2},&n\text{ even},\\
+2^{n-1}-\binom{n-1}{(n-1)/2},&n\text{ odd},
+\end{cases}
+\tag{11}
+\]
+and
+\[
+|O|\ge
+\begin{cases}
+\binom n{n/2}-p,&n\text{ even},\\
+2\binom{n-1}{(n-1)/2}-p,&n\text{ odd}.
+\end{cases}
+\tag{12}
+\]
+In particular, a red component containing only one antipodal vertex pair in \(Q_8\) leaves at least \(68\) vertices outside itself and its antipodal image.
+
+*Proof.* By Theorem 3, \(A\cap B=\varnothing\) and no edge joins \(A\) to \(B=\tau A\). If \(x,y\in A\) have Hamming distance \(n\), they are antipodal, so \(x\in I\), a contradiction. If their distance is \(n-1\), then \(x\) and \(\tau y\in B\) are adjacent, another contradiction. Thus \(\operatorname{diam}(A)\le n-2\). Kleitman's Boolean diameter theorem gives \(\sum_{i=0}^{d}\binom ni\) as the maximum cardinality of a family with diameter at most \(2d\), and \(\sum_{i=0}^{d}\binom ni+\binom{n-1}d\) for diameter at most \(2d+1\). Setting the diameter to \(n-2\) gives (11). Since \(I,A,B,O\) partition the cube and \(|A|=|B|\), we have \(|O|=2^n-p-2|A|\), yielding (12). \(\square\)
+
+The conclusion concerns whole monochromatic connected components. Rooted monotone reachability sets need not satisfy the same diameter bound, as shown by an existing \(Q_5\) counterexample in the research archive.
+
+**Corollary 8 (geometric support criterion with at most one paired vertex orbit).** Let \(S\) be a nonempty subset of \(V(Q_n)\), \(n\ge2\), and form the sectors \(I=S\cap\tau S\), \(A=S\setminus\tau S\), \(B=\tau A\), \(O=V(Q_n)\setminus(S\cup\tau S)\). Suppose \(|I|\le2\). Then \(S\) is the vertex set of a red connected component of some legal coloring if and only if \(Q_n[S]\) is connected and
+\[
+E_{Q_n}(I,O)=E_{Q_n}(A,B)=\varnothing.
+\tag{13}
+\]
+If \(I=\varnothing\), this is equivalent to connectedness and \(\operatorname{diam}(S)\le n-2\). If \(I=\{u,\tau u\}\), it is equivalent to connectedness, \(\operatorname{diam}(S\setminus I)\le n-2\), and \(N(u)\cup N(\tau u)\subseteq S\cup\tau S\).
+
+*Proof.* Necessity follows from Theorem 3. Conversely, since \(I\) is empty or consists of the two nonadjacent antipodal vertices \(u,\tau u\), every edge induced by \(S\) has its antipodal mate outside \(S\). Condition (13) ensures that no two boundary edges of \(S\) are antipodal. Prescribe red on every induced edge of \(S\), blue on every edge leaving \(S\), and extend arbitrarily to the remaining antipodal edge orbits with opposite colors on mates. The prescriptions are consistent. The red subgraph induced by \(S\) is the connected graph \(Q_n[S]\), with no red edge leaving \(S\), so \(S\) is one red component. The metric reformulations follow from the same argument as (10). \(\square\)
+
+The corollary removes the orbit-rainbow matroid condition of Theorem 4 in the special case \(|I|\le2\): there are then no antipodal edge pairs wholly inside \(Q_n[S]\). For larger paired sectors the general matroid-intersection criterion remains necessary.
+
 Let \(Q_n\) be the \(n\)-cube, \(n\ge3\), \(\tau(x)=x+\mathbf1_{[n]}\), and \(H_n=L(Q_n/\tau)\), whose \(n2^{n-2}\) vertices correspond to antipodal orbits of cube edges. Fix any order \(\pi=(1,\ldots,n)\) of coordinate directions. For a starting vertex \(x\), let \(C_x^\pi\subseteq H_n\) be the simple length-\(n\) turn cycle of the antipodal geodesic starting at \(x\) and visiting coordinates in order \(\pi\).
 
 **Theorem 1 (geodesic vertex-disjoint packing).** For even \(n\ge4\), choose one representative \(x\) from each antipodal pair of even-parity cube vertices. The family of cycles \(C_x^\pi\), indexed by those \(2^{n-2}\) roots, partitions \(V(H_n)\) into pairwise vertex-disjoint cycles of length \(n\). In particular it is a 2-factor of \(H_n\), all of whose components are shortest odd-monodromy turn cycles.

@@ -1433,7 +1433,7 @@ is valid but much weaker; it must not be mistaken for the effective parity-peeli
 
 The preceding repair and odd-face network results concern the event that *at least one* geodesic becomes monochromatic under an invariant vertex gauge. For a **prescribed family** of full geodesics, simultaneous repair is governed by a finite binary graph-incidence system. Importantly, ordinary square curvature does not capture its entire obstruction, because the projective antipodal identification creates additional closed walks.
 
-Fix \(n\ge3\), a legal antipodally odd coloring \(c\), and a nonempty finite family \(\mathscr P\) of rooted, oriented full antipodal geodesics. Build a labeled undirected **multigraph** \(H_{\mathscr P}\) as follows: its vertices are the antipodal vertex pairs \([x]=\{x,\bar x\}\) visited by at least one member of \(\mathscr P\). For **each occurrence** of a physical cube edge \(e=\{x,x^i\}\) in any \(P\in\mathscr P\), insert a graph edge joining \([x]\) to \([x^i]\), with binary label \(c(e)\). Keep parallel occurrences, including the two antipodal lifts of one projective edge, as separate graph edges. Put \(v=|V(H_{\mathscr P})|\), and let \(q\) be the number of connected components of this multigraph.
+Fix \(n\ge3\), a legal antipodally odd coloring \(c\), and a nonempty finite family \(\mathscr P\) of rooted, oriented full antipodal geodesics. Build a labeled undirected **multigraph** \(H_{\mathscr P}\) as follows: its vertices are the antipodal vertex pairs \([x]=\{x,\bar x\}\) visited by at least one member of \(\mathscr P\). For **each occurrence** of a cube edge \(e=\{x,x^i\}\) in any \(P\in\mathscr P\), insert a graph edge joining \([x]\) to \([x^i]\), with binary label \(c(e)\). Keep parallel occurrences, including the two antipodal lifts of one projective edge, as separate graph edges. Put \(v=|V(H_{\mathscr P})|\), and let \(q\) be the number of connected components of this multigraph.
 
 **Theorem (complete affine overlap-syndrome criterion).** The following are equivalent:
 
@@ -1505,7 +1505,7 @@ which are antipodal lifts of one projective edge and consequently have opposite 
 
 **Finite audit.** The flat example was checked by enumerating all invariant gauges in \(Q_4\): for \(P=(0,1,2,3)\) and \(Q=(1,2,3,0)\) from root zero, each has \(32\) successful gauges among \(256\), but their joint success count is zero. In contrast, exchanging the first two adjacent steps yields two paths having \(16\) common zero gauges, as predicted by the fresh-square extension. The general assertions are proved by incidence linear algebra and do not rely on these checks.
 
-**Consequence for face-network closure.** The obstruction to making any *fixed collection* of network path witnesses simultaneously zero is now a finite affine cycle-syndrome, with two distinct sources: local cubical square curvature and projective antipodal holonomy. A tree of flat adjacent-square exchanges with fresh projective vertices always repairs, whereas collisions of previously used projective vertices can create global incompatibilities even when all local square curvatures vanish. This gives a concrete target for overlap arguments among odd-face networks: control the cycle syndromes produced when their path families reuse projective vertices, rather than impose pairwise square-flatness alone. The theorem does not establish a successful witness for the original ungauged coloring.
+**Consequence for face-network closure.** The obstruction to making any *fixed collection* of network path witnesses simultaneously zero is now a finite affine cycle-syndrome, with two distinct sources: local cubical square curvature and projective antipodal holonomy. A tree of flat adjacent-square exchanges with fresh projective vertices always repairs, whereas collisions of previously used projective vertices can create global incompatibilities even when all local square curvatures vanish. This gives a specific target for overlap arguments among odd-face networks: control the cycle syndromes produced when their path families reuse projective vertices, rather than impose pairwise square-flatness alone. The theorem does not establish a successful witness for the original ungauged coloring.
 
 
 
@@ -1715,3 +1715,38 @@ r>\frac{V}{4(d+1)^3}
 Since \(t_H(c)\ge r\), the asserted bound follows. \(\square\)
 
 **Scope and comparison.** The previously established global balanced-curvature density theorem is stronger when curvature is aggregated over the whole cube. The new feature of (BS1) is **uniform localization to every single facet**: no facet of a balanced odd cube can have curvature support smaller than exponential scale \(2^n/\operatorname{poly}(n)\). This is a quantitative obstruction to a bad balanced coloring whose curvature were confined to a small collection of distant facets. It does not imply geodesic existence, and counterexample-preserving lifts with a vanishing *fraction* of curved squares remain compatible with the bound.
+
+
+## Leading Boolean-degree charges of unrestricted square curvature
+
+For a Boolean function \(f\), write \(D_vf(x)=f(x+v)+f(x)\). Let \(e_d(z_1,\ldots,z_m)\) be the elementary symmetric multilinear polynomial of degree \(d\) over \(\mathbb F_2\). Algebraic degree refers to the unique multilinear polynomial representation.
+
+**Theorem (leading curvature charges).** Let \(n\ge4\) and let \(c=(c_i)\) be an arbitrary legal antipodally odd coloring of \(Q_n\). There are unique bits \(a_i\) such that
+\[
+c_i(x)=a_i e_{n-2}(x_{[n]\setminus\{i\}})+r_i(x),\qquad \deg r_i\le n-3. \tag{LC1}
+\]
+For each pair \(i\ne j\), its square curvature satisfies
+\[
+\boxed{\ \kappa_{ij}=D_jc_i+D_ic_j
+=(a_i+a_j)e_{n-3}(x_{[n]\setminus\{i,j\}})+s_{ij},
+\quad\deg s_{ij}\le n-4.\ } \tag{LC2}
+\]
+In particular all square curvatures have degree at most \(n-4\) if and only if \(a_1=\cdots=a_n\). If \(a_i=1\), then \(D_vc_i\) has degree \(n-3\) for every \(v\) whose projection away from direction \(i\) is neither zero nor the all-ones vector. Consequently the full translation stabilizer of \(c_i\) is \(\{0,e_i\}\).
+
+Under a vertex gauge \(c\mapsto c+\delta h\), where \(h(x+\mathbf1)=h(x)\), all charges \(a_i\) change by one common bit \(t\). Both choices of \(t\) are realized, since
+\[
+h_*(x)=\prod_{j=1}^{n-1}(x_j+x_n) \tag{LC3}
+\]
+is antipodally invariant and its gauge changes every charge by one. Hence the leading square curvatures determine the charge vector modulo its common complement, and this indeterminacy is realized by a legal vertex gauge.
+
+*Proof.* Because \(c_i\) ignores \(x_i\), regard it as a function \(f\) of \(m=n-1\ge3\) variables. Legal antipodal oddness gives \(f(z+\mathbf1_m)=f(z)+1\), so \(f\) is balanced and its full-degree polynomial coefficient vanishes. For \(j\in[m]\), let \(b_j\) denote the coefficient of the degree-\((m-1)\) monomial missing \(j\). The coefficient of the degree-\((m-2)\) monomial missing \(j,k\) in \(D_{\mathbf1_m}f=1\) is \(b_j+b_k\). Thus all \(b_j\) equal a bit \(a_i\), giving (LC1). For a general translation \(v\), the same coefficient in \(D_vf\) is \(a_i(v_j+v_k)\). When \(a_i=1\), it is nonzero for some pair unless \(v\) is zero or all ones. The all-ones derivative equals one, proving the translation statement.
+
+Differentiating (LC1) in direction \(j\ne i\) gives leading term \(a_i e_{n-3}(x_{[n]\setminus\{i,j\}})\). Adding the corresponding derivative of \(c_j\) gives (LC2).
+
+Now let \(h(x+\mathbf1)=h(x)\). Its support is antipodally paired, so its full-degree coefficient is zero. The same calculation, with \(D_{\mathbf1}h=0\), shows that the homogeneous degree-\((n-1)\) part of \(h\) is \(t e_{n-1}(x)\) for a bit \(t\). Its derivative \(D_ih\) has leading degree-\((n-2)\) part \(t e_{n-2}(x_{[n]\setminus\{i\}})\), shifting every \(a_i\) by \(t\). Each factor \(x_j+x_n\) in (LC3) is invariant under antipodality, and its product has degree-\((n-1)\) part \(e_{n-1}(x)\). This yields \(t=1\). \(\square\)
+
+**Corollary (one-orbit normalization preserving a selected geodesic).** In any legal coloring, one can make all \(a_i=1\) by changing at most one antipodal orbit of undirected edges in each direction. The changed orbits can be chosen disjoint from any prescribed full antipodal geodesic; all its colors remain unchanged.
+
+*Proof.* For the rule \(c_i\), add the indicator of an antipodal pair of its \(n-1\) input vectors. This reverses the colors on one antipodal edge orbit in direction \(i\), preserves legality, and changes its leading polynomial component by \(e_{n-2}\), hence toggles \(a_i\). There are \(2^{n-2}\ge4\) edge orbits in each direction; a full geodesic meets only one of them. Choose another whenever a toggle is needed. \(\square\)
+
+The charge identity is valid for all legal colorings, in both dimension parities. Maximal Boolean rule degree and translation rigidity therefore admit sparse legal normalization while keeping any chosen path profile. The curvature constraints alone do not force a monochromatic geodesic in the original coloring.

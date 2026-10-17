@@ -34,13 +34,16 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Parity stationary zero-path transversal rigidity](../note_fd86346fbf048f06527d086f.md) — active/proved
 - [Projective grade descent can be trapped away from grade one](../note_4b6e28c8e1a57de33de47338.md) — active/proved
 - [Projective mixture theorem](../note_a1d25129435af858a173d291.md) — active/proved
+- [Q4 pairwise intersecting non-Helly geodesic supports](../note_nori_q4_nonhelly_geodesic_packing_obstruction_20261016.md) — active/proved
 - [Q4 weighted-majority path-packing obstruction and fractional certificate](../note_nori_weak_majority_packing_counterexample_q4_20261015.md) — active/proved
+- [Rank-budget red reachability and Cartesian convolution](../note_642c96640cf19870b83b4bf7.md) — active/proved
 - [Restoration reachability characterization](../note_a4864a35163570542cbc67b6.md) — active/proved
 - [Shared bridge does not force rooted splice](../note_a014c912786f52574b0bd26d.md) — active/proved
 - [Sharp spectral multiplicity inequality](../note_2156aeb90a17f7cad5afae57.md) — active/proved
 - [Shortest antipodal walk square-derivative budget](../note_92a76c6358e805801170c0ae.md) — active/proved
 - [Sorting parallel facet colors can create a monochromatic antipodal geodesic in an ordinary cube](../note_parallel_facet_compression_creates_zero_geodesic_20261015.md) — active/proved
 - [Square-coherence obstruction: strongly connected unimodular shift countermodels](../note_nori_arc_digraph_eulerian_high_chromatic_no_alt_cycles_20261016.md) — active/proved
+- [Tensor amplification of shortest monochromatic antipodal path excess](../note_98b1e0fc35badd4e7eb3124d.md) — active/proved
 - [Transverse facet repair synchronization](../note_5dd4e13ff16c4fbd97617dc3.md) — active/proved
 - [Two phase restoration cuts](../note_f59e74d95b60e26b34ade887.md) — active/proved
 - [Universal directed edge expansion and strong connectivity of near-balanced folded cubes](../note_nori_folded_nearbalanced_directed_cut_expansion_20261016_r10917.md) — active/proved

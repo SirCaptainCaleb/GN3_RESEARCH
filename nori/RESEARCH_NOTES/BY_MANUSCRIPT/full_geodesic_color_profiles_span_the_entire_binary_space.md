@@ -4,17 +4,51 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [Affine four-cube local trap for one-defect repair](../note_be11d1bef73ca93879ad1812.md) — active/proved
 - [Affine Q4 refutes adjacent-root continuity of tropical orientation](../note_5254370ba9df341879017dad.md) — active/proved
+- [Auxiliary inversion graphs and Fourier criteria for affine NORI1](../note_nori_affine_profile_fourier_inversion_graphs_20261017_r11401.md) — active/proved
 - [Balanced locally pseudorandom full-support cubes with linear profile entropy deficit](../note_ded4d59493b8ae2a89e0e418.md) — active/proved
 - [Canonical even autonomous gradient blocks classify rooted affine profile constraints](../note_8ea98c5469f2f46a628ea93b.md) — active/proved
+- [Cartesian tensor powers defeat rooted-geodesic reachability volume](../note_a916d6521b5fc62715b8c654.md) — active/proved
+- [Cyclic first-moment Fourier forcing and dimension-free signed graph bounds](../note_nori_cyclic_first_absolute_moment_fourier_20261017_r11427.md) — active/proved
+- [Cyclic Fourier decay, automorphism-free affine Hall certificates and graph-bias refinements](../note_nori_cyclic_rotation_fourier_weight_20261017_r11421.md) — active/proved
 - [Cyclic precedence obstruction to all proper rooted profile prescriptions](../note_dcf71a720b27f7b6e3f7521f.md) — active/proved
+- [Cyclic turn traps: local minimum criterion and dimension-nine onset](../note_92eb553fc2ddb8a42607edd2.md) — active/proved
+- [Diagonal fiber cycle rigidity, sharp radial distance, and exponential overlaps](../note_nori_diagonal_fibers_directed_cycle_rigidity_20261017.md) — active/proved
+- [Dihedral root transport classification and cyclic anti-correlation](../note_fd1bec3611385a3cdf60a079.md) — active/proved
 - [Directed-influence profile repair and acyclic-set shattering](../note_0d2e31445ff29dd522342e21.md) — active/proved
+- [Exponential obstruction to predetermined full-geodesic order families](../note_e5572067634c6bf8277b665a.md) — active/proved
 - [Flat four-cube gradient coloring has rootwise affine-admissible monochromatic holes](../note_ca8a9cc70cc4c604420c3425.md) — active/proved
 - [Formal all-positive zero-gap model blocks scalar seam-only closure](../note_e12864e8f47949a308f9fb9c.md) — active/proved
 - [Free full-profile factors under odd reader-core extensions](../note_63c6e60d172d380b682b859f.md) — active/proved
+- [Full-affine-span and balanced obstructions to anchored profile transport](../note_nori_anchored_profile_transport_radius_two_20261016_r11254.md) — active/proved
+- [Global diagonal-fiber compatibility, overlap connectivity, and sharp strong-orientation obstructions](../note_nori_joint_cyclic_orientations_sparse_fibers_20261017_r11435.md) — active/proved
+- [Global turn-star census and sharp all-dimensional imbalance theorem](../note_a70c2616fcd96d9edcd7574f.md) — active/proved
+- [Matching flats: full linear rank and exponential realizability gap](../note_nori_affine_matching_flat_rigidity_20261017_r11377.md) — active/proved
+- [Minimum exchange-rank rigidity and universal rooted profile gap](../note_1d8199539b2aa9784e6659ac.md) — active/proved
+- [Nonlinear diagonal laws with diameter-four expanding root-profile incidence](../note_nori_nonlinear_diagonal_graph_expander_20261016_r11254.md) — active/proved
+- [Nonlinear rooted full profiles violate delta-matroid exchange under balance and full affine span](../note_nori_nonlinear_root_profiles_violate_delta_matroid_20261017_r11336.md) — active/proved
 - [Normalized counterexample forces an adjacent zero-gap critical seam](../note_5afd314b9b4400f9b0b5ffaf.md) — active/proved
 - [One-switch bridge equivalence, seven-wise support, and profile multiplicity](../note_nori_partial_profiles_one_switch_equivalence_20261016_r10917.md) — active/proved
+- [Optimal direction-order routing in strongly connected hub colorings](../note_nori_strong_hub_optimal_profile_matching_order_complexity_20261017.md) — active/proved
+- [Parity-hub fixed-order bijections with full rooted affine span and thin supporting-root fibers](../note_nori_parity_hub_fixed_order_bijections_thin_roots_20261016_r11295.md) — active/proved
+- [Permutation-quotient actions: twin swaps and complete relabeling symmetries](../note_nori_affine_quotient_twin_order_action_20261017_r11413.md) — active/proved
+- [Poisson profile occupancy and covariance laws for uniform legal cube colorings](../note_09c2afedfed635c4842cd6ff.md) — active/proved
+- [Profile-critical edge orbits: three-dimensional obstruction and computational Q4/Q5 exclusion](../note_6f6b320f698318cecb8efd89.md) — active/tested
+- [Profile-critical edge orbits: three-dimensional obstruction and computational Q4/Q5 exclusion](../note_6f6b320f698318cecb8efd89.md) — active/tested
+- [Quantitative path stretch, one-detour conversion, and a universal root-rotation defect bound](../note_nori_monochromatic_antipodal_distance_tensor_and_defect_bridge_20261017_r11435.md) — active/proved
+- [Radial incidence twins with independent square curvature and geodesic transport](../note_nori_radial_majority_middle_sphere_prefix_failure_20261017_r11336.md) — active/proved
+- [Rooted profile rigidity, image bounds, and source-SCC affine transport](../note_nori_weight_flat_roots_signed_square_rigidity_20261017.md) — active/proved
 - [Rootwise profile affine cosets and sharp half-dimensional span](../note_019945e5faa732f94a3e1fce.md) — active/proved
+- [Rotation and reversal admit all-dimensional root-profile Hall countermodels](../note_nori_cyclic_profile_hall_countermodel_20261016_r11254.md) — active/proved
+- [Sharp half-dimensional root-transport obstruction and balanced linear-distance lift](../note_nori_sharp_anchored_profile_transport_chain_20261016_r11254.md) — active/proved
+- [Six-cube absence of critical profile orbits and universal direction-profile attainment](../note_nori_q6_profile_critical_sat_extension_r11435.md) — active/tested
 - [Six-path parity certificate in Q3 and linear parity obstructions in Q4 and Q5](../note_nori_six_path_parity_certificate_q3_and_failure_q4_q5_20261016.md) — active/proved
 - [Six-path parity certificate in Q3 and linear parity obstructions in Q4 and Q5](../note_nori_six_path_parity_certificate_q3_and_failure_q4_q5_20261016.md) — active/proved
+- [Square-bridge conservation and mixed-derivative incidence transitions](../note_nori_nonlinear_square_bridge_components_20261017_r11254.md) — active/proved
+- [Ten-path decision-tree certificate for four-cube internal critical-edge repair](../note_nori_q4_ten_path_critical_surgery_r11435.md) — active/proved
+- [Three local laws reconstruct antipodally odd cube colorings from full geodesic profiles](../note_nori_profile_integrability_three_local_laws_20261016_r11254.md) — active/proved
 - [Triangular influence extensions preserve profile support and antipodal detour](../note_0376b6fe4ccdb7f35660555e.md) — active/proved
+- [Uncolored geodesic-orbit obstacle avoidance: SAT verification in Q5 and Q6](../note_5b414417345132263ada227d.md) — active/tested
+- [Uncolored geodesic-orbit obstacle avoidance: SAT verification in Q5 and Q6](../note_5b414417345132263ada227d.md) — active/tested
 - [Uniform full-profile frequencies coexist with exponentially fragmented root fibers](../note_nori_profile_root_incidence_disconnected_20261016_r10917.md) — active/proved
+- [Universal profiles, saturation, and nonbinary rooted delta-matroids](../note_nori_common_diagonal_odd_reader_cycles_20261016_r11254.md) — active/proved
+- [Unrestricted orbit surgery and gap-free, binomial-positive geodesic spectra](../note_143f396e6155ca89c587d00f.md) — active/proved

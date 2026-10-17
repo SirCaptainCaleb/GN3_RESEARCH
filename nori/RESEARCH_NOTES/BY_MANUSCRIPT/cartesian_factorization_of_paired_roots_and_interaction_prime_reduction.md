@@ -9,3 +9,4 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Middle-level favorable-root shells and index-one root topology under complete direction interaction](../note_b4d7a9679a92be8f7d7af1c4.md) — active/proved
 - [Middle-level favorable-root shells and index-one root topology under complete direction interaction](../note_b4d7a9679a92be8f7d7af1c4.md) — active/proved
 - [Q4 red geodesic extremizers and obstruction to local unary compression](../note_nori_q4_red_geodesic_count_extremizers_20261016_r10917.md) — active/computational
+- [Universal nonlinear interaction-star embedding preserves all successful roots](../note_nori_universal_nonlinear_interaction_star_embedding_20261017.md) — active/proved

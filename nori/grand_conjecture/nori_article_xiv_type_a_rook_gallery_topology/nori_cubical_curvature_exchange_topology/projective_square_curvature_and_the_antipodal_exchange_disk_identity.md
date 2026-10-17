@@ -208,3 +208,63 @@ Conversely, this one-square-per-disk property implies the support has size \(2^{
 which is the number of disks. Each disk contributes at least one incidence, so each contributes precisely one. Conversely, double counting a family with one supported face per disk gives the asserted support size. \(\square\)
 
 For odd-dimensional color curvature, this means every coloring attaining Theorem 6's lower bound has a perfect transversal property across the **entire collection of dimension-simple antipodal exchange disks**. The extremal coloring (12) realizes it by concentrating all curvature on one dimension pair. This rigidity is not a classification of all extremizers; showing whether other dimension-pair arrangements attain the same bound is a separate question and is not needed for the present theorem.
+
+## Exchange-disk Radon rigidity and classification of every sharp curvature representative
+
+Fix \(n\ge3\). Let \(\mathcal F_n\) be the antipodal square-face orbits of \(Q_n\). For any function \(f:\mathcal F_n\to\mathbb R\), define its **exchange-disk transform**
+\[
+(Rf)(x,\pi)=\sum_{1\le a<b\le n}f([F_{ab}(x,\pi)]),
+\tag{RD1}
+\]
+where \(F_{ab}(x,\pi)\) denotes the canonical square in the exchange disk of the rooted full geodesic \(P(x,\pi)\), as defined in Theorem 1 above.
+
+**Theorem 12 (full real kernel of the disk transform).** The transform \(Rf\) is independent of the rooted full geodesic \((x,\pi)\) if and only if \(f\) is constant on the family of all square orbits in any given unordered pair of dimensions. More precisely, if \((Rf)(x,\pi)=c\) for all \(x,\pi\), then there are real numbers \(\lambda_{ij}\) with
+\[
+f([F])=\lambda_{ij}\quad\text{whenever }F
+\text{ has free dimensions }\{i,j\},\qquad
+\sum_{i<j}\lambda_{ij}=c.
+\tag{RD2}
+\]
+Consequently
+\[
+\boxed{\dim\ker R=\binom n2-1,\qquad
+\operatorname{rank}_{\mathbb R}R=
+\binom n2(2^{n-3}-1)+1.}
+\tag{RD3}
+\]
+
+*Proof.* For each unordered pair \(i<j\), let \(f_{ij}(z)\) be the value of \(f\) on the square with free dimensions \(i,j\) and other fixed vertex bits \(z\). The equality \(f_{ij}(z+\mathbf1)=f_{ij}(z)\) permits a real Walsh expansion
+\[
+f_{ij}(z)=\sum_{\substack{S\subseteq[n]\setminus\{i,j\}\\ |S|\text{ even}}}
+a_{ij}(S)(-1)^{\sum_{k\in S}z_k}.
+\tag{RD4}
+\]
+On the disk of \((x,\pi)\), the outside bits of its \(i,j\) square are those of \(x\), toggled in precisely the dimensions occurring strictly between \(i,j\) in \(\pi\). Thus for any fixed nonempty even \(S\), the coefficient of the root Walsh character indexed by \(S\) in \(Rf(x,\pi)\) equals
+\[
+\sum_{\substack{i<j\\i,j\notin S}}
+a_{ij}(S)\,
+(-1)^{|S\cap B_\pi(i,j)|},
+\tag{RD5}
+\]
+where \(B_\pi(i,j)\) is the set of directions strictly between \(i,j\) in the order.
+
+For \(i\notin S\), put \(\epsilon_i=(-1)^{|\{k\in S:k\prec_\pi i\}|}\). The sign in (RD5) equals \(\epsilon_i\epsilon_j\). Every assignment of \(\epsilon_i\in\{-1,+1\}\) for \(i\notin S\) is realizable by a permutation: put the positive-sign directions before the first member of \(S\), the negative-sign directions between its first and second members, and all remaining members of \(S\) afterward. The hypothesis that \(Rf\) is constant in \(x\) makes (RD5) vanish for every such assignment. Hence
+\[
+\sum_{i<j,\ i,j\notin S}a_{ij}(S)\epsilon_i\epsilon_j=0
+\quad\text{for every sign assignment}.
+\]
+Orthogonality of the degree-two Walsh characters forces every \(a_{ij}(S)=0\) for \(S\ne\varnothing\). Therefore every \(f_{ij}\) is constant, with value \(\lambda_{ij}=a_{ij}(\varnothing)\). Conversely such functions give constant disk transform equal to \(\sum_{i<j}\lambda_{ij}\), proving (RD2). There are \(\binom n2 2^{n-3}\) square orbits, and the kernel consists of the \(\binom n2\) dimension-pair constants with one relation, giving (RD3). \(\square\)
+
+**Corollary 13 (classification of all minimizers of the projective two-cosystole).** Every projective cubical two-cocycle representing \(u^2\in H^2(\mathbb{RP}^{n-1};\mathbb F_2)\) with minimum support \(2^{n-3}\) equals \(\bar K_{ab}\) for a unique unordered pair of dimensions \(\{a,b\}\), where \(\bar K_{ab}\) is one on all \(\{a,b\}\)-square orbits and zero on all other square orbits. In particular there are precisely \(\binom n2\) minimum-support cocycle representatives of \(u^2\).
+
+*Proof.* Corollary 11 established that a minimum-support representative meets every projective exchange disk in precisely one square: its zero-one support indicator \(f\) satisfies \(Rf=1\) for all rooted full geodesics. Theorem 12 gives \(f(F)=\lambda_{ij}\) on every \(\{i,j\}\)-square. Since \(f\) is zero-one valued, the \(\lambda_{ij}\) belong to \(\{0,1\}\), and \(\sum\lambda_{ij}=1\) shows that precisely one is one. Each \(\bar K_{ab}\) represents \(u^2\) and attains the bound by Theorem 8 and Corollary 9. \(\square\)
+
+**Corollary 14 (all minimum-curvature legal colorings in odd dimensions).** For odd \(n\ge3\), a legal antipodally odd edge coloring has the minimum number \(2^{n-3}\) of curved antipodal square orbits if and only if its curvature equals \(K_{ab}\) for some pair \(\{a,b\}\). The number of such legal colorings is
+\[
+\boxed{\binom n2\,2^{2^{n-1}}.}\tag{RD6}
+\]
+*Proof.* In odd dimension its projective curvature represents \(u^2\); apply Corollary 13. By the curvature-fiber classification in the accompanying curvature-realization Subsection, each admissible curvature has \(2^{2^{n-1}}\) distinct legal coloring lifts. The \(\binom n2\) curvature representatives are disjoint fibers. \(\square\)
+
+**Finite audit.** Computing the real ranks of the exchange-disk incidence matrices for \(n=3,4,5,6\) gives \(1,7,31,106\), respectively, agreeing with (RD3). The matrix sizes are \(48\times3\), \(384\times12\), \(3840\times40\), and \(46080\times120\). The all-dimensional Fourier proof does not depend on these computations.
+
+This classifies the sharp cases of the previously established projective two-cosystole, not just the minimum support value. It leaves unrestricted NORI1 open: the classification constrains the curvature of its sharp colorings but makes no assumption about the remaining legal colorings.

@@ -2382,3 +2382,621 @@ Therefore
 \tag{FM13}
 \]
 Direct integer enumeration confirms that precisely \(3648\) of the \(2^6 6!=46080\) rooted full antipodal geodesics realize this pattern. The six-cube witness disproves a proposed \(1/12\) lower bound, while (FM7) is unconditional in the ambient dimension.
+
+
+### Sharp leading-degree charge bound for rooted profile affine rank
+
+For \(n\ge4\), let \(\mathcal W_x(c)\) denote the direction-indexed profiles of full antipodal geodesics rooted at \(x\), and let
+\[
+V(c)=\operatorname{span}_{\mathbb F_2}\{
+(D_jc_i(u))e_i+(D_ic_j(u))e_j : i\ne j,\ u\in Q_n\}.
+\]
+The rooted affine-coset theorem above identifies \(\dim\operatorname{aff}\mathcal W_x(c)=\dim V(c)\), independently of \(x\).
+
+The legal rule \(c_i\) is antipodally odd on its \(m=n-1\) other input bits. Balancedness makes the degree-\(m\) monomial coefficient vanish. Writing \(b_j\) for the coefficient of the degree-\((m-1)\) monomial missing input \(j\), the identity \(D_{\mathbf1_m}c_i=1\) gives \(b_j+b_k=0\) from each degree-\((m-2)\) monomial missing \(j,k\). Thus all \(b_j\) agree. Write \(a_i\) for their common bit, so the degree-\((n-2)\) component of \(c_i\) is
+\[
+a_i e_{n-2}(x_{-i}),
+\]
+with \(e_d\) the degree-\(d\) elementary symmetric polynomial. Put \(z=|\{i:a_i=0\}|\).
+
+**Theorem (sharp leading-charge rank inequality).** For every legal coloring with \(z\ge1\),
+\[
+\boxed{\dim\operatorname{aff}\mathcal W_x(c)\ge n-\lfloor z/2\rfloor \quad\text{at every root }x.}\tag{CR1}
+\]
+Equality is attained for each \(n\ge4\) and each \(1\le z\le n\). If \(z=0\), the rooted affine rank equals \(n\) unless the coloring is flat, in which case \(n\) is even and the rank is \(n-1\). Both alternatives occur in even dimensions; in odd dimensions only the full-rank alternative occurs.
+
+*Proof of bound.* The rooted affine restriction classification above states that the codimension \(t=n-\dim V(c)\) equals the number of disjoint unmarked connected components of the exchange graph, each an autonomous flat block containing at least two directions and an even number of directions. Every rule within such a block \(C\) depends only on the vertex bits indexed by \(C\). If \(a_i=1\), then \(c_i\) has algebraic degree \(n-2\), whose homogeneous part \(e_{n-2}(x_{-i})\) depends essentially on every one of the other \(n-1\) bits. Thus a block containing \(i\) must be \(C=[n]\). For a full flat block, the identity \(D_jc_i=D_ic_j\) and comparison of degree-\((n-3)\) terms imply that all \(a_i\) coincide. If \(z\ge1\) and some \(a_i=1\), this is impossible. Therefore all unmarked blocks are contained in the zero-charge directions. If all charges vanish, this containment is immediate. Every block contains at least two directions, so \(t\le\lfloor z/2\rfloor\), proving (CR1). If \(z=0\), the only possible unmarked block is the whole direction set. The exchange classification gives codimension one when it exists, and zero otherwise. The whole block is flat and even-sized, proving the exceptional case.
+
+*Proof of sharpness.* Select \(z\) zero-charge directions, form \(k=\lfloor z/2\rfloor\) disjoint pairs \(\{p,q\}\) among them, and prescribe \(c_p=x_q,\ c_q=x_p\) on each pair. These are autonomous flat source blocks. For each positive-charge direction \(h\), take \(c_h=x_s+\mathbf1_{\{b,\bar b\}}(x_{-h})\), where \(s\ne h\) is one of the zero-charge directions and \(b,\bar b\) is any antipodal pair of its \(n-1\) input vectors. This rule is antipodally odd and has degree \(n-2\), with leading charge one, because the antipodal-pair indicator has homogeneous part \(e_{n-2}\). If \(z\) is odd, make the remaining unpaired zero-charge direction read one positive-charge bit, when present, or a bit from a selected pair when \(z=n\). This rule is unary with leading charge zero. The \(k\) chosen pairs remain unmarked flat blocks. All positive-charge directions are excluded from unmarked proper blocks by the preceding argument, and the remaining zero-charge direction cannot form an unmarked block alone. Hence \(t=k\) and equality holds.
+
+For \(z=0\), a flat example in each even dimension is \(c_i=D_iF\) with
+\[
+F(x)=\sum_{j<k}x_jx_k+\prod_{j=1}^{n-1}(x_j+x_n).
+\]
+Every rule has leading charge one. Recoloring two distinct antipodal edge orbits in one direction preserves all charges and destroys flatness, supplying full-rank examples in even dimensions. In odd dimensions take independently for each direction \(i\) an odd unary rule plus an antipodally paired input indicator, yielding \(a_i=1\); flatness is impossible in odd dimension. \(\square\)
+
+**Corollary (sparse full-rank normalization preserving prescribed paths).** For any legal \(c\) on \(Q_n\), \(n\ge4\), and any collection \(\mathscr P\) of fewer than \(2^{n-2}\) full antipodal geodesics, there is a legal \(c'\), differing from \(c\) on at most \(n\) antipodal orbits of undirected edges, such that every path in \(\mathscr P\) retains its direction-indexed color profile and
+\[
+\boxed{\operatorname{aff}\mathcal W_x(c')=\mathbb F_2^n
+\quad\text{for all roots }x.}\tag{CR2}
+\]
+
+*Proof.* Choose one direction \(r\) whose desired leading charge is zero, and prescribe charge one in every other direction. If a charge must be toggled, change the colors of one antipodal edge orbit in that direction. This is equivalent to adding the indicator of an antipodal input pair to the corresponding rule, which toggles its leading coefficient \(a_i\) and preserves legality. Each direction has \(2^{n-2}\) antipodal edge orbits; fewer than that many geodesics can meet fewer than that many orbits, so one orbit is available disjoint from every path in \(\mathscr P\). Do this independently for at most \(n\) directions. The resulting charge vector has \(z=1\), so (CR1) gives full rooted affine rank, while every selected path retains all its colors. \(\square\)
+
+**Finite audit.** Exhaustive evaluation of all \(65536\) legal colorings on \(Q_4\) confirms (CR1) and its sharpness. For zero-charge counts \(z=0,1,2,3,4\), respectively, the minimum rooted affine ranks are \(3,4,3,3,2\). Precisely 128 all-positive-charge colorings have rank three, and every one of them is flat. All all-positive-charge nonflat colorings have rank four. This confirms the general argument without replacing it.
+
+These rank conclusions concern the affine hulls of rooted profile sets. A full affine hull alone does not guarantee attainment of any prescribed full profile.
+
+
+### Universal fixed-root two-direction shattering dichotomy
+
+**Theorem.** Let \(n\ge2\), let \(c\) be any legal antipodally odd coloring, fix a root \(x\), and select two distinct directions \(i,j\). Let \(\operatorname{pr}_{ij}\mathcal W_x(c)\) denote the set of two-bit indexed color profiles on these directions, obtained from full antipodal geodesics rooted at \(x\). Then:
+\[
+\boxed{
+\operatorname{pr}_{ij}\mathcal W_x(c)=
+\begin{cases}
+\{(a,b),(1+a,1+b)\},&
+c_i(y)=y_j+\alpha,\quad c_j(y)=y_i+\beta
+\text{ for some }\alpha,\beta,\\
+\mathbb F_2^2,&\text{otherwise}.
+\end{cases}}
+\tag{TP1}
+\]
+Thus a fixed root shatters every pair of directions except autonomous reciprocal-reader pairs. In the exceptional case \(a+b=x_i+x_j+\alpha+\beta+1\), and both complementary patterns occur. This classification is independent of the selected root.
+
+*Proof.* Let \(\pi\) be an order from \(x\), and consider the reversed order \(\pi^{\mathrm{rev}}\) from the SAME root. Antipodally translate the original geodesic and reverse its traversal: this gives an \(x\)-rooted geodesic in reversed order whose indexed profile is \(\mathbf1+w(x,\pi)\). Thus every rooted profile set, and every two-bit projection, is invariant under bitwise complement. A nonempty complement-invariant subset of \(\mathbb F_2^2\) has size two or four unless it has been reduced to a single complement orbit (which is the size-two case). Suppose its projection has size two. Then the parity \(w_i+w_j\) is constant over every rooted full direction order.
+
+Fix \(k\notin\{i,j\}\) and any subset \(S\subseteq[n]\setminus\{i,k\}\). Choose a full direction order from \(x\) with prefix \(S\), followed by \(i,k\) consecutively, and the other directions afterward. Exchange this adjacent pair. Only the profile entries indexed by \(i,k\) can change, and the change in the \(i\)-entry is \(D_kc_i(x+\mathbf1_S)\). The \(j\)-entry is unchanged. Constancy of \(w_i+w_j\) forces \(D_kc_i(x+\mathbf1_S)=0\). Since \(S\) varies over all subsets outside \(\{i,k\}\), and \(c_i\) is independent of its own bit \(i\), we have \(D_kc_i\equiv0\). Repeating with \(j,k\) gives \(D_kc_j\equiv0\) for every \(k\notin\{i,j\}\). By undirected-edge consistency, \(c_i\) ignores \(i\) and \(c_j\) ignores \(j\), so \(c_i\) is a function of \(x_j\) alone, and \(c_j\) a function of \(x_i\) alone. Antipodal oddness forces these unary functions to be \(x_j+\alpha\) and \(x_i+\beta\).
+
+Conversely, when these reciprocal-reader formulas hold, the two profiles are \(w_i=x_j+\alpha+[j\prec i]\) and \(w_j=x_i+\beta+[i\prec j]\), whence \(w_i+w_j=x_i+x_j+\alpha+\beta+1\), independent of order. Opposite relative orders occur, giving the two complementary patterns. For any other legal coloring, the two-pattern alternative is impossible by the preceding argument. Complement invariance then forces the full four-pattern projection. \(\square\)
+
+**Independent finite audit:** exhaustive checks across all four legal \(Q_2\) colorings, all 64 legal \(Q_3\) colorings, and all 65536 legal \(Q_4\) colorings confirmed (TP1) for every root and every ordered pair of distinct directions. The proof is independent of these checks.
+
+**Scope.** This gives simultaneous two-bit forcing at a prescribed root for every non-exceptional direction pair, while the seven-direction theorem concerns unrooted prescriptions. The obstruction for three or more bits is fundamentally different: pairwise full projections need not imply three-bit saturation, as seen in rooted cyclic-reader examples. The result is consistent with and refines the existing autonomous-flat-block classification.
+
+
+### Universal three-direction rooted-profile trichotomy
+
+**Theorem.** Let \(n\ge3\), fix any legal NORI1 coloring \(c\), any starting root \(x\), and any three distinct directions \(S=\{i,j,k\}\). Set \(T=\operatorname{pr}_S\mathcal W_x(c)\subseteq\mathbb F_2^3\). Then one of the following holds:
+
+1. If \(S\) contains an autonomous reciprocal-reader pair \(p,q\), with \(c_p(y)=y_q+\alpha,\ c_q(y)=y_p+\beta\) on the whole cube, then \(T\) consists of the four three-bit patterns satisfying
+\[
+w_p+w_q=x_p+x_q+\alpha+\beta+1.
+\]
+2. If \(S\) contains no such pair, then \(|T|\in\{6,8\}\). If \(|T|=6\), the two missing patterns are bitwise complements.
+
+Thus without a reciprocal-reader pair, at every fixed root one may prescribe three direction colors with at most one complementary pair of exceptions. All three cardinalities 4,6,8 occur already in dimensions at most four.
+
+*Proof.* The rooted profile set is closed under bitwise complement, by antipodal translation followed by path reversal. Consequently \(T\) is a union of complementary pairs and \(|T|\in\{2,4,6,8\}\). The preceding two-direction shattering theorem says that any pair projection has two values only when that pair is autonomous reciprocal-reader, and otherwise has four.
+
+The value \(|T|=2\) would make every pair projection a complementary pair. This would require at least two reciprocal-reader pairs sharing a direction, impossible: the shared direction rule would have to be both \(y_p+\alpha\) and \(y_q+\beta\) for distinct input bits \(p,q\).
+
+Suppose \(|T|=4\). It is a union of two complementary pairs, hence an affine plane
+\[
+T=u+\operatorname{span}\{\mathbf1,v\}
+\]
+for a vector \(v\notin\{0,\mathbf1\}\). The nonzero normal of this plane is orthogonal to \(\mathbf1\), so in dimension three it has Hamming weight two. Thus some two-direction projection of \(T\) is a complementary pair, forcing an autonomous reciprocal-reader pair by the previous theorem. Conversely, if \(S\) contains such a pair, its parity equation restricts \(T\) to four patterns. The already established lower bound \(|T|\ge4\) gives equality and all four patterns occur. In the absence of any exceptional pair, \(|T|\) is 6 or 8, and complement symmetry pairs the two missing patterns when there are six. \(\square\)
+
+*Sharp examples.* In \(Q_3\), \(c_0=x_1,\ c_1=x_0,\ c_2=x_0\) gives case 1 for pair \(\{0,1\}\). In \(Q_3\), the cyclic-reader coloring \(c_0=x_1,\ c_1=x_2,\ c_2=x_0\) has six rooted three-bit profiles, omitting \(\mathbf0,\mathbf1\) at root zero. In \(Q_4\), let \(c_0=c_1=c_2=x_3,\ c_3=x_0\); inserting each of directions \(0,1,2\) before or after direction 3 permits all eight projected profiles from every root.
+
+*Independent verification.* Complete enumeration for every legal coloring, root and triple found in \(Q_3\) cardinality counts \(4:384,\ 6:128\), and in \(Q_4\) counts \(4:196608,\ 6:1073152,\ 8:2924544\), agreeing with the proof. These counts enumerate (coloring,root,unordered direction triple) instances.
+
+This is an unrestricted rooted statement and identifies the smallest arity at which non-affine omissions can appear: two-direction omissions are autonomous affine reciprocal-reader constraints, while three-direction omissions may be nonlinear and are limited to one complementary pair.
+
+
+## Four-local coherence and 4n-fiber theorem for antipodal edge-orbit supports
+
+For \(n\ge2\), select one antipodal orbit \(O_i\) of undirected edges in each direction \(i\). Record a representative vector of its bits outside \(i\) as \(s_i=(s_{ij})_{j\ne i}\), understood modulo the all-one vector. The selection is *coherent* if its selected orbits form the support of a rooted full antipodal geodesic.
+
+**Theorem (four-direction local-to-global coherence).** For \(n\ge4\), an orbit selection is coherent if and only if its restriction to every four-direction set is coherent in that four-cube. Constructively, put \(q_{ij}=1+s_{ij}+s_{ji}\). The selection is coherent precisely when:
+
+(a) \(q_{ij}+q_{jk}+q_{ki}=0\) for all distinct \(i,j,k\), so one can solve \(y_i+y_j=q_{ij}\); and
+
+(b) the tournament with arrow \(j\to i\) when \(s_{ij}+y_i=1\) is Seidel-switching equivalent to a transitive tournament, equivalently contains no induced diamond (a directed triangle plus one vertex dominating or dominated by that triangle).
+
+*Proof.* In a path rooted at \(x\), let \(\pi\) be the direction order, and let \(t_i\) specify which antipodal representative of \(O_i\) was used. At direction \(i\), the current bit \(j\ne i\) equals \(x_j+[j\prec_\pi i]\). Accordingly
+\[
+[j\prec_\pi i]=x_j+s_{ij}+t_i.
+\]
+Adding the analogous relation with \(i,j\) exchanged gives \(y_i+y_j=q_{ij}\) for \(y_i=x_i+t_i\), hence the triple equations. Conversely, after solving them, the precedence rule becomes
+\[
+[j\prec_\pi i]=s_{ij}+y_i+x_i+x_j. \tag{OC1}
+\]
+Changing root \(x\) reverses precisely the tournament arrows crossing the cut \(\{i:x_i=1\}\). Therefore a root/order pair realizes every selected orbit if and only if its switched tournament is transitive; then set \(t_i=x_i+y_i\).
+
+For completeness, the standard tournament-switching lemma has an elementary four-vertex proof. Encode a tournament by skew signs \(a_{ij}=\pm1\) and define on four vertices \(a,b,c,d\) the Pfaffian \(p=a_{ab}a_{cd}-a_{ac}a_{bd}+a_{ad}a_{bc}\). The four-vertex classification gives \(|p|=3\) for a diamond and \(|p|=1\) otherwise. A switch multiplies \(p\) by the product of its four vertex signs, hence preserves the diamond property. If a tournament has no diamond, choose a vertex \(v\) and switch its in-neighborhood to make \(v\) dominate the other vertices. A directed triangle among those vertices would form a diamond with \(v\). Thus the remainder is triangle-free and transitively ordered; the full switched tournament is transitive. The converse follows from the switching invariance of diamonds. The triple equations and diamond exclusions are detected on three and four directions respectively. Therefore coherence on every four-direction restriction implies global coherence. \(\square\)
+
+**Theorem (fiber and enumeration).** Every coherent selection has precisely \(4n\) rooted, ordered full geodesic realizations. Consequently
+\[
+\boxed{\#\{\text{full-geodesic antipodal edge-orbit supports}\}=2^{n-2}(n-1)!.}\tag{OC2}
+\]
+
+*Proof.* The triple equations have two complementary solutions \(y\). For either \(y\), roots \(x\) giving a transitive switched tournament have the following count. Begin with a transitive tournament ordered \(1,\ldots,n\). Switching a subset preserves transitivity if and only if its binary membership changes at most once along the order; otherwise a membership pattern \(010\) or \(101\) produces a directed triangle. The allowed subsets are prefixes and suffixes, yielding \(n\) switching cuts modulo complement and \(2n\) root bit vectors \(x\). Each such root determines one order. The two possible \(y\) give opposite orders, hence \(4n\) rooted geodesics. They are the cyclic root slides and reversals of any representative. As the cube has \(2^n n!\) rooted full geodesics, division by \(4n\) gives (OC2). \(\square\)
+
+**Corollary (one profile cycle per orbit support).** In any legal antipodally odd coloring, the \(4n\) paths in a coherent orbit-support fiber realize \(2n\) distinct direction-indexed profiles, each twice (by reversal). Starting from a profile \(w\) and direction order \(\pi\), cyclic root slides give
+\[
+w_t=w+\sum_{r=1}^{t}e_{\pi_{1+((r-1)\bmod n)}}\quad(0\le t<2n),\qquad w_{2n}=w.
+\]
+These profiles form an antipodal \(2n\)-cycle in the Boolean profile cube. Thus the global full-profile family is a union of profile cycles indexed by coherent orbit supports.
+
+**Independent exhaustive audit.** All \(8,256,32768\) one-orbit-per-direction selections in \(Q_3,Q_4,Q_5\), respectively, were compared with direct enumeration of all rooted full geodesics. The coherent support counts were \(4,24,192\), and the triple-plus-diamond criterion matched every instance. The canonical \(Q_5\) orbit selection with direction-indexed orbit IDs \((28,31,6,14,19)\) fails the triple equation on \((0,1,2)\). For the legal coloring with orbit mask \(0x666ae4b58c\), all 50 rooted red geodesics meet this incoherent five-orbit selection. This distinguishes the coherent-path obstacle property (verified computationally for \(Q_5,Q_6\)) from avoidance of arbitrary one-orbit-per-direction sets, which is false already in \(Q_5\).
+
+
+## The regular graph of coherent orbit supports and its mod-four orientation obstruction
+
+Let \(n\ge4\). Let \(\mathcal O_n\) be the set of coherent orbit supports, one antipodal undirected-edge orbit in each direction, constructed in the preceding four-direction coherence theorem. Define the **support exchange graph** \(G_n\) on \(\mathcal O_n\): distinct supports \(O,O'\) are adjacent if they differ in precisely two direction orbit choices. The fiber theorem above associates to every support a cyclic direction order, defined up to rotation and reversal.
+
+**Theorem (rigid recovery and full exchange-graph classification).** The following statements hold for every \(n\ge4\).
+
+1. Distinct supports differ in at least two directions. Any prescribed \(n-1\) orbit choices admit at most one coherent completion.
+2. If \(O\) is coherent and \(a,b\) are two directions, then there is at most one other coherent support sharing all orbit choices except possibly \(a,b\). Such a different completion exists **if and only if \(a,b\) are adjacent in the cyclic direction order of \(O\)**. It is obtained by swapping those two consecutive directions in a rooted full geodesic representing \(O\), after a cyclic root slide if necessary.
+3. \(G_n\) is connected, \(n\)-regular, vertex- and edge-transitive. It has
+\[
+|V(G_n)|=2^{n-2}(n-1)!,\qquad |E(G_n)|=2^{n-3}n!.
+\tag{OG1}
+\]
+4. \(G_n\) is bipartite if and only if \(n\equiv0,1\pmod4\). It is nonbipartite for \(n\equiv2,3\pmod4\).
+5. For every legal coloring \(c\), the antipodally invariant \(2n\)-cycles of direction-indexed color profiles belonging to two adjacent supports have at least four common profile vertices (two vertices and their antipodes).
+
+*Proof of rigid reconstruction and adjacency.* Fix two coherent orbit choices \(O,O'\) agreeing outside \(\{a,b\}\). Write \(I=[n]\setminus\{a,b\}\), with \(|I|\ge2\), and fix representatives \(s_i=(s_{ij})_{j\ne i}\) for the common orbits, \(i\in I\). Recall the triangle relations \(q_{ij}=1+s_{ij}+s_{ji}=y_i+y_j\). Fix a solution \(y_i\) on \(I\) once and for all. For each of the two as-yet unspecified orbit rows, changing its antipodal representative flips its entire row \(s_a\) or \(s_b\) and changes the corresponding \(y\)-bit. Normalize representatives so \(y_a=y_b=0\). For \(i\in I\), the triangle equations then uniquely force
+\[
+s_{ai}=1+s_{ia}+y_i,\qquad s_{bi}=1+s_{ib}+y_i.
+\]
+The remaining relation \(q_{ab}=y_a+y_b=0\) forces \(s_{ab}+s_{ba}=1\). There are therefore at most two parity-compatible completions: they differ by reversing only the arc \(a,b\) of the tournament constructed from the \(s_i,y_i\). If just one direction \(a\) were missing, its bits on all other directions would similarly be determined modulo the common complement, yielding only one orbit choice; this proves assertion 1.
+
+Switch the common tournament to a transitive one, with linear order \(\pi\) representing \(O\). Reversing its arc \(a,b\) produces a switching-transitive tournament if \(a,b\) are consecutive in \(\pi\), since their exchange simply changes the total order, or if they are the first and last elements of \(\pi\), since one can cyclically rotate the order by a root switch before exchanging them. Conversely, if \(a,b\) are not adjacent in the cyclic order, write them as \(a\prec k\prec b\) with some \(k\), and choose a fourth vertex \(\ell\) outside their closed interval (available precisely because cyclic adjacency fails). Reversing \(a\to b\) forms a directed triangle on \(a,k,b\), while \(\ell\) dominates or is dominated by that triangle, an induced diamond. The four-direction coherence theorem prohibits such a completion. When the exchange is allowed, swapping adjacent directions changes only their two traversed cube edges. Each new direction edge belongs to a different antipodal orbit because the two edges lie in the same two-dimensional face, not in antipodal faces for \(n\ge3\). Thus both orbit choices change, proving assertion 2.
+
+*Proof of graph symmetry and connectedness.* Each coherent support has \(n\) cyclicly adjacent pairs, one neighbor for each by assertion 2, proving regularity. A cube symmetry maps any rooted, ordered full geodesic to any other, proving vertex-transitivity. It also maps any adjacent direction exchange, following a cyclic root slide, to any other, proving edge-transitivity. Any two full rooted orders are connected by permutations of adjacent positions and cyclic root slides: adjacent transpositions generate all orders at a fixed root; placing a chosen direction first and performing a cyclic slide changes only that root bit, so all roots are reachable. Slides leave orbit supports unchanged, and adjacent exchanges move along edges of \(G_n\). Hence \(G_n\) is connected. The support count \(2^{n-2}(n-1)!\) was established above; multiplying by \(n/2\) gives the edge count.
+
+*Proof of the mod-four parity dichotomy.* Let \(\operatorname{sgn}(\pi)\) be the sign of a permutation of the \(n\) directions, and put
+\[
+\chi(x,\pi)=(-1)^{(n-1)|x|}\operatorname{sgn}(\pi).
+\tag{OG2}
+\]
+A cyclic root slide from \((x,(i,\rho))\) to \((x+e_i,(\rho,i))\) changes the permutation sign by \((-1)^{n-1}\) and the root weight parity by one, hence preserves \(\chi\). Path reversal sends \((x,\pi)\) to \((\bar x,\operatorname{rev}\pi)\); the root factor changes by \((-1)^{n(n-1)}=1\), whereas the permutation factor changes by \((-1)^{n(n-1)/2}\). All rooted paths representing one support are generated by slides and reversal, by the \(4n\)-fiber theorem. Thus \(\chi\) is well defined on coherent supports precisely when \(n(n-1)/2\) is even, equivalent to \(n\equiv0,1\pmod4\). In those dimensions, an adjacent exchange reverses \(\chi\), so \(G_n\) is bipartite. In the other dimensions, connect any path to its reversal by adjacent transpositions and cyclic slides (possible by the connectivity argument). The two paths represent the same support, while their \(\chi\)-values are opposite. Slides preserve \(\chi\) and each exchange reverses it. The resulting closed walk in \(G_n\) therefore contains an odd number of edges, proving nonbipartiteness.
+
+*Proof of the four-point profile overlap.* Let adjacent supports \(O,O'\) be represented by paths rooted at the same \(x\), with direction orders \((A,i,j,B)\) and \((A,j,i,B)\), respectively. Let their indexed profiles be \(w,w'\), and write \(w'=w+\delta\), where square locality gives \(\delta\in\{0,e_i,e_j,e_i+e_j\}\). Let \(p=w+\sum_{a\in A}e_a\). By cyclic root transport, the profile cycle of \(O\) contains
+\[
+\{p,p+e_i,p+e_i+e_j\},
+\]
+whereas the cycle of \(O'\) contains
+\[
+\{p+\delta,p+\delta+e_j,p+\delta+e_i+e_j\}.
+\]
+For each of the four possibilities for \(\delta\), these sets have at least two common vertices. Their antipodes belong to both cycles as well. For \(n\ge4\), all four are distinct, proving assertion 5. \(\square\)
+
+**Independent full-graph audit.** Breadth-first generation from the canonical rooted path, using all cyclic adjacent swaps, recovered all coherent orbit supports in \(n=3,4,5,6,7\), with vertex counts \(4,24,192,1920,23040\) and respective degrees \(3,4,5,6,7\). In these dimensions the graph is bipartite for \(n=4,5\), and nonbipartite for \(n=3,6,7\). The measured graph diameters are respectively \(1,4,7,9,13\); no general diameter formula is asserted.
+
+**Research significance and limit.** This theorem upgrades four-direction recognition to a complete metric-neighbor and orientation classification of the geometric orbit-support space. In particular each edge of the \(n\)-regular support graph corresponds to a specified two-direction square exchange, while the coloring assigns overlapping profile cycles to its vertices. Profile-cycle overlap and ordinary connectedness were established earlier independently; the new content is the support graph's intrinsic metric rigidity, neighbor classification, uniform degree, and mod-four parity dichotomy. Neither support-graph connectedness nor its parity by itself guarantees that a particular profile, such as the constant zero word, is attained.
+
+
+## Factorial extension law for two prescribed antipodal cube-edge orbits
+
+Fix \(n\ge2\) and distinct directions \(i,j\). Let \(A\) be an antipodal orbit of undirected direction-\(i\) cube edges and \(B\) an antipodal orbit of direction-\(j\) cube edges. Choose arbitrary representative bit rows \(s_i=(s_{ik})_{k\ne i}\) and \(s_j=(s_{jk})_{k\ne j}\). Define
+\[
+D=\{k\in[n]\setminus\{i,j\}:s_{ik}\ne s_{jk}\},\quad b=|D|,\quad c=n-2-b.
+\]
+Replacing either representative by its antipode exchanges \(b\) and \(c\), so \(b!c!\) is an intrinsic quantity of the pair \(A,B\).
+
+**Theorem (two-orbit factorial extension).** The number of coherent full-geodesic orbit supports containing both \(A\) and \(B\) is
+\[
+\boxed{N_n(A,B)=b!\,(n-2-b)!.}\tag{OF1}
+\]
+Consequently **any** pair of antipodal undirected-edge orbits in distinct directions extends to some full antipodal geodesic, without any coloring hypotheses. The number of rooted, ordered full geodesics realizing both prescribed orbits is \(4n\,b!c!\).
+
+*Proof.* Count first the rooted, ordered full geodesics in which direction \(i\) is visited before direction \(j\). For their direction-\(i\) and direction-\(j\) edges, let \(t_i,t_j\in\mathbb F_2\) indicate which of the two antipodal representatives of \(A,B\) is used. For an outside direction \(k\ne i,j\), the bit at the \(i\)-edge is \(x_k+[k\prec i]=s_{ik}+t_i\), whereas at the \(j\)-edge it is \(x_k+[k\prec j]=s_{jk}+t_j\). As \(i\prec j\), subtraction gives
+\[
+[i\prec k\prec j]=s_{ik}+s_{jk}+t_i+t_j.
+\tag{OF2}
+\]
+Thus the set of directions strictly between \(i,j\) equals \(D\) when \(t_i+t_j=0\) and equals the complement of \(D\) in \([n]\setminus\{i,j\}\) otherwise. Each value of \(t_i+t_j\) comes from two choices of \((t_i,t_j)\).
+
+For the first case, directions of \(D\) can be arranged between \(i,j\) in \(b!\) ways, while each direction of its \(c\)-element complement lies either before \(i\) or after \(j\). Summing over all possible subsets before \(i\), their permutations contribute
+\[
+\sum_{r=0}^c\binom cr\,r!\,(c-r)!=(c+1)c!.
+\]
+The first case therefore supplies \(2b!(c+1)c!\) rooted paths. Exchanging \(b,c\) supplies \(2c!(b+1)b!\) in the second case. For every choice, the starting root is uniquely forced: its \(i,j\) bits are determined by the selected representative edges, and each remaining root bit is determined from the direction-\(i\) edge and its position relative to \(i\). Hence the number of rooted paths having \(i\prec j\) is
+\[
+2b!c![(c+1)+(b+1)]=2n\,b!c!.
+\]
+Each coherent orbit support is represented by \(4n\) rooted paths, with precisely half satisfying \(i\prec j\), because reversal pairs the two relative orders. Dividing by \(2n\) gives (OF1), and multiplying by \(4n\) gives the final count. \(\square\)
+
+**Corollary (one- and two-orbit incidence and collision moments).** Every individual antipodal direction-edge orbit belongs to \((n-1)!\) coherent supports. For a uniformly random coherent support \(O\),
+\[
+\Pr[O_i=A]=2^{-(n-2)},\qquad
+\Pr[O_i=A,\ O_j=B]=\frac{b!\,(n-2-b)!}{2^{n-2}(n-1)!}.
+\tag{OF3}
+\]
+If \(O^*\) is a fixed coherent support with cyclic order \(0,1,\ldots,n-1\), let \(X\) count the direction orbits common to \(O,O^*\). Then
+\[
+\mathbb EX=\frac{n}{2^{n-2}},\qquad
+\mathbb E\binom X2=\frac{\displaystyle\sum_{k=0}^{n-2}k!(n-1-k)!}{2^{n-2}(n-1)!}.
+\tag{OF4}
+\]
+Indeed, a canonical pair of directions separated by \(k\) intervening directions contributes \(k!(n-2-k)!\) coherent supports; summing over \((n-1-k)\) possible pairs at that separation yields \(\sum_{k=0}^{n-2}k!(n-1-k)!\). In particular, for \(n\ge5\) at least the fraction \(1-n/2^{n-2}\) of all coherent supports avoid all direction orbits in an arbitrary prescribed one-orbit-per-direction obstacle set, by the union bound. This is an uncolored geometric avoidance statement; it does not force a monochromatic witness.
+
+**Independent finite audit.** All possible distinct-direction pairs of antipodal edge orbits were checked against enumeration of full coherent supports for \(n=3,4,5,6\). The numbers of pair selections tested were \(12,96,640,3840\), respectively, with no discrepancies from (OF1). For \(n=5\), the number of completions is 6 when \(b=0\) or 3 and 2 when \(b=1\) or 2. For \(n=6\), completion counts are 24,6,4 for \(b=0/4,1/3,2\), respectively.
+
+**Scope.** The two-orbit extension law is sharp and unrestricted at the level of geometric orbit supports. Compatible triples and quadruples are governed by the parity and diamond restrictions proved above, and partial orbit selections in more directions need not extend. The law does not assume or establish any color-profile saturation.
+
+
+## Color-sensitive profile-cycle overlap detects every curved square
+
+Retain the coherent orbit-support graph \(G_n\) defined above, with an edge joining two supports that differ in two direction orbits. For a legal antipodally odd coloring \(c\), let \(C_c(O)\subseteq\mathbb F_2^n\) be the antipodally invariant \(2n\)-cycle of direction-indexed geodesic color profiles associated with the support \(O\).
+
+**Theorem (three overlap sizes and curvature detection).** Let \(n\ge5\), and let adjacent supports \(O,O'\) be represented by rooted paths sharing root \(x\) and differing by exchange of two consecutive directions \(i,j\) after a common prefix. Let \(y\) be the vertex reached after that prefix, and put
+\[
+a=D_j c_i(y),\qquad b=D_i c_j(y),\qquad
+\kappa_{ij}(y)=a+b.
+\]
+Then
+\[
+\boxed{
+|C_c(O)\cap C_c(O')|=
+\begin{cases}
+2n-2,&(a,b)=(0,0),\\
+4,&(a,b)=(1,0)\text{ or }(0,1),\\
+6,&(a,b)=(1,1).
+\end{cases}}
+\tag{PO1}
+\]
+Consequently the overlap has four vertices if and only if the exchanged cube square is curved. The alternatives six and \(2n-2\) distinguish the two possibilities for an uncurved square.
+
+*Proof.* Cyclic root slides preserve the entire profile cycle, so move the common prefix beyond the final position, leaving the two compared orders \((i,j,k_1,\ldots,k_m)\) and \((j,i,k_1,\ldots,k_m)\), where \(m=n-2\). Translate both profile cycles by the same bit vector so the first has initial profile zero. The second initial profile is \(\delta=ae_i+be_j\), since adjacent exchange changes only the \(i,j\) profile entries, by the respective cross-differences.
+
+Put \(I=e_i+e_j\), \(R=\sum_{r=1}^m e_{k_r}\), and \(S_t=\sum_{r=1}^t e_{k_r}\). The first profile cycle contains, over outside-direction mask zero, the three vertices \(0,e_i,I\), and over outside mask \(R\), the three vertices \(R,R+e_j,R+I\). Over each mask \(S_t\), \(1\le t<m\), it has one vertex \(S_t+I\), and over each mask \(R+S_t\) one vertex \(R+S_t\).
+
+The swapped cycle has over outside mask zero the vertices \(\delta,\delta+e_j,\delta+I\), over \(R\) the vertices \(\delta+R,\delta+R+e_i,\delta+R+I\), and over the other masks respectively the vertices \(\delta+S_t+I\) and \(\delta+R+S_t\). Because \(m\ge3\), all outside masks displayed in these different groups are distinct, so intersections are computed separately within each group. When \(\delta=0\), the two zero-mask and \(R\)-mask groups contribute two common vertices each and the \(2(m-1)\) other vertices coincide, giving \(2n-2\). When \(\delta=e_i\) or \(e_j\), each three-vertex group contributes two and no remaining vertices coincide, giving four. When \(\delta=I\), the two three-vertex groups coincide entirely and no remaining vertices coincide, giving six. Finally \(\kappa_{ij}=a+b\) by the square-curvature identity, proving the criterion. \(\square\)
+
+**Corollary (global curvature census in the support exchange graph).** Write \(M(c)\) for the number of antipodal square-face orbits with nonzero curvature. For \(n\ge5\),
+\[
+\boxed{\#\{OO'\in E(G_n):|C_c(O)\cap C_c(O')|=4\}
+=2(n-2)!\,M(c).}\tag{PO2}
+\]
+*Proof.* Each support exchange edge is associated with the antipodal orbit of the square on which its adjacent order exchange occurs. By cube-automorphism transitivity, each square orbit occurs equally often. There are \(2^{n-3}n!\) support-exchange edges and \(\binom n2 2^{n-3}\) square orbits. The common multiplicity is their ratio \(2(n-2)!\). Apply (PO1). \(\square\)
+
+**Sharp odd-dimensional consequence.** For every odd \(n\ge5\), every legal coloring has at least
+\[
+\boxed{2^{n-2}(n-2)!}
+\tag{PO3}
+\]
+edges of \(G_n\) with four-point profile-cycle overlap. Equality holds if and only if its curvature is \(K_{ab}\) for one pair of dimensions \(a,b\), by the sharp square-curvature bound and the new minimizer classification in the projective exchange-disk Subsection. In an equality case, the four-overlap support-graph edges are precisely the edges that exchange the cyclically neighboring directions \(a,b\).
+
+**Independent audit.** For \(n=4,5,6,7,8\), randomly generated legal antipodally odd colorings and random adjacent exchanges were compared against directly generated profile cycles, with 300 tests in each dimension and no discrepancy from the three-case formula. The condition \(n\ge5\) separates the two uncurved values \(6\) and \(2n-2\); for \(n=4\) they coincide.
+
+These identities measure the curvature of an arbitrary original coloring through its induced profile cycles, without changing that coloring. They do not force a prescribed profile to occur: odd-dimensional colorings have many four-overlap edges, but a connection from the overlap census to a monochromatic full geodesic remains open.
+
+
+## Full coloring reconstruction from unlabeled geodesic profile cycles
+
+For n>=3 let E be the M=n2^(n-2) antipodal orbits of undirected cube edges. A coherent orbit support O has one orbit per direction. Let C_c(O) be the set of 2n indexed profiles of the rooted geodesics whose edge orbit support is O.
+
+**Cycle stabilizer lemma.** For a direction permutation pi, let V_pi be the 2n cyclic prefix-sum vectors of pi repeated twice. The only binary translations preserving V_pi are 0 and the all-one vector. Indeed V_pi induces a chordless 2n-cycle inside Q_n. At a vertex the two incident cycle-edge labels are one of the unordered pairs {pi_t,pi_(t+1)}. For n>=3 these n pairs are distinct. A translating automorphism preserving the cycle must take the initial vertex to itself or the antipodal vertex, since only these two have its unordered incident label pair. Both translations preserve the cycle.
+
+**Theorem (all partial tomography fibers).** Fix any collection A of coherent supports, and form an undirected co-occurrence graph H_A on the M edge-orbit vertices by joining every two that lie in a common support from A; retain isolated orbit vertices. If H_A has k connected components, then for EVERY legal coloring c,
+\[
+\boxed{|\{d:C_d(O)=C_c(O)\text{ for all }O\in A\}|=2^k.}\tag{T1}
+\]
+All such d arise by independently reversing the orbit colors throughout any selected connected component of H_A.
+
+*Proof.* The difference g=d+c is constant on each antipodal edge orbit. On a given support O, every rooted path profile changes by the same indexed vector g|_O, so C_d(O)=C_c(O)+g|_O. The cycle stabilizer lemma implies equality if and only if g|_O is the all-zero or all-one vector. This says g is constant on each edge of the co-occurrence graph, hence on each connected component. There are 2^k choices, and all preserve the measurements. QED.
+
+The previously established two-orbit factorial extension theorem shows that any two edge orbits in different directions occur on one coherent full geodesic; orbits in the same direction connect through a third orbit. Thus the full co-occurrence graph is connected, and the **global reconstruction theorem** follows:
+\[
+\boxed{ C_c(O)=C_d(O)\text{ for every coherent }O
+\iff d=c\text{ or }d=1+c. }\tag{T2}
+\]
+
+**Theorem (fixed-order folded-cube tomography).** Fix a single direction order pi and write O_x for the orbit support of the full path starting at x with order pi. Then O_x=O_y if and only if y=x or y=bar x. The 2^(n-1) supports are naturally indexed by vertices [x] of the folded cube Q_n/(x~bar x), and its n2^(n-2) undirected edges are naturally indexed by antipodal cube-edge orbits. Under these bijections O_[x] is the STAR of [x]. Therefore the 2^(n-1) measured profile cycles C_c(O_x), for all x with x_0=0, reconstruct c up to global complementation.
+
+*Proof.* Direction-i orbit coincidence for roots x,y in the same order is equivalent to x+y in {0,e_i,1,1+e_i}. Intersecting these sets across every i gives {0,1} for n>=3, proving the first assertion. For distinct projective roots [x],[y], their supports share a direction-i orbit precisely when [y]=[x+e_i]. Every cube-edge orbit occurs at some root of the fixed direction order. These observations identify edge orbits with the edges of the connected n-regular folded cube, and each O_[x] with a vertex star. The union of every vertex star yields a connected co-occurrence graph, so (T1) leaves only the global complement. Reconstruction is constructive: invert each cycle to recover all n incident orbit colors up to one common bit, and synchronize those bits along common folded edges. QED.
+
+**Sharp two-error detection.** Two legal colorings not related by global complementation differ in at least two of these fixed-order cycle measurements. A single antipodal edge-orbit recoloring changes precisely two cycles and realizes equality. The lower bound follows because the folded cube minus one vertex remains connected for n>=3, so a nonconstant edge-bit difference cannot be constant on the stars of all but one vertex.
+
+**Measurement lower bound.** A single support cycle yields at most 2^(n-1) outcomes from its n orbit bits, by the stabilizer lemma. Since legal colorings modulo complement number 2^(M-1), every predetermined measurement family that always reconstructs c modulo complement has at least
+\[
+\left\lceil (n2^{n-2}-1)/(n-1)\right\rceil
+\tag{T3}
+\]
+supports. The fixed-order construction uses 2^(n-1), fewer than twice this lower bound.
+
+**Finite audit.** All 64 legal Q3 colorings give 32 fixed-order cycle signatures, each with a complementary pair of colorings. All 65536 legal Q4 colorings give 32768 signatures, likewise with fibers of size two. Full-family Q4 verification using all 24 coherent supports gives the same result. Independent code: nori_profile_cycle_tomography_verify.py and nori_profile_cycle_reconstruction_fast.cpp.
+
+These tomography statements are unrestricted and retain all original edge-coloring information modulo global color reversal. They do not establish attainment of a specified profile; reconstructed colorings need not have their profile sets saturated.
+
+
+## Highest Boolean derivatives of full-geodesic profile-support incidence
+
+Fix n>=3 and set M=n2^(n-2). Each legal antipodally odd coloring is encoded by one Boolean orbit variable z_e for every antipodal orbit e of undirected cube edges. Let S_n be the coherent n-orbit full-geodesic supports. For any target indexed profile w define the Boolean function
+\[
+F_w(z)=\sum_{O\in S_n}\mathbf1_{\{w\in C_z(O)\}}\pmod2. \tag{BD1}
+\]
+Thus F_w is the parity of the number of different coherent supports realizing w; the rooted path count is twice that number.
+
+**Theorem (full leading-degree classification, all dimensions).** For every target w:
+
+(a) For odd n>=3, the unique squarefree Boolean algebraic normal form of F_w has degree n-1. Its highest-degree monomials are
+\[
+\prod_{j\ne i}z_{e_j(O)}\qquad(O\in S_n,\ i\in[n]), \tag{BD2}
+\]
+all with coefficient one. Their number is n2^(n-2)(n-1)!.
+
+(b) For even n>=6, F_w has degree n-2. Its highest-degree monomials are
+\[
+\prod_{j\notin\{i,k\}}z_{e_j(O)},\tag{BD3}
+\]
+where i,k are nonadjacent in the cyclic direction order of O and have odd cyclic separation. Every such coefficient is one. Their number is
+\[
+\frac{n(n-4)}4\,2^{n-2}(n-1)!. \tag{BD4}
+\]
+
+(c) In n=4, the degree is at most one by the same proof; separate complete enumeration of all 65536 legal colorings shows F_w is the zero function. The theorem in (a),(b) does not rely on this finite observation.
+
+The highest-degree homogeneous part is independent of the target w, so F_w+F_v has strictly lower degree for every pair of targets w,v when n is odd >=3 or even >=6.
+
+*Proof.* For each O fix a rooted representative with cyclic direction order pi. Varying the n independent orbit bits of O translates all its indexed path profiles by the same n-bit word. Its profile set consists of the 2n vertices of a cyclic-prefix walk using pi twice. Thus the local indicator \(\mathbf1_{\{w\in C_z(O)\}}\) has 2n accepting assignments among its 2^n orbit-bit inputs. Its degree-n squarefree coefficient is 2n modulo two, hence zero.
+
+The coefficient of the monomial omitting just direction i is the parity of the number of accepting assignments with the i-th bit fixed zero. The profile cycle has n complementary vertex pairs, so this count is n, independent of root representative, target w, or any orbit-bit translation. It is one when n is odd and zero when n is even. The previously proved rigid completion theorem states that any n-1 prescribed orbit choices in different directions belong to at most one coherent support (the n=3 case follows also from the factorial two-orbit extension law). Therefore in odd n none of these degree-(n-1) coefficients can cancel between different supports, proving (a).
+
+For even n, fix two orbit input bits for directions i,k and vary the other n-2. If their positions in the linear representative pi differ by d, where 1<=d<n, the cyclic-prefix cycle has each equal-bit pair (00 and 11) occurring n-d times and each unequal-bit pair (01 and 10) occurring d times. As n is even, all four multiplicities have parity d mod2. Hence the degree-(n-2) local coefficient is d mod2 independently of the target and orbit signs.
+
+Now fix n-2 orbit variables from one coherent support O, omitting directions i,k. By the two-completion refinement of rigid orbit coherence, there is a second coherent support with these n-2 orbit choices if and only if i,k are cyclically adjacent in O; then their two nonzero degree-(n-2) contributions cancel. If i,k are cyclically nonadjacent, O is the sole completion, and the coefficient is one precisely when their cyclic positional separation is odd. Such nonadjacent odd-distance pairs exist for every even n>=6. Their number in a cyclic order of n directions is n(n-4)/4; distinct supports give distinct degree-(n-2) monomials by unique completion. This proves (b), while the same calculation gives the degree-one bound in n=4. Translation of a support-local profile cycle does not change any of the leading coefficients in (a),(b), proving target-independence. \(\square\)
+
+**Corollary (universal high-order recoloring parity identities).** Fix ANY legal coloring z and a coherent support O. If n is odd, omit one chosen direction i and independently flip the n-1 remaining antipodal edge orbits of O in all 2^(n-1) ways. The XOR of F_w over the resulting colorings equals one, for every w. If n is even >=6, omit two cyclically nonadjacent directions at odd separation and flip the other n-2 orbit bits in every possible way; the analogous XOR over 2^(n-2) colorings also equals one. These identities are insensitive to all original colors outside the selected recoloring orbits. They follow by taking the corresponding iterated Boolean derivatives of (BD1).
+
+In particular, for every profile w at least fraction 2^(-(n-1)) of all legal colorings in odd dimensions and fraction 2^(-(n-2)) in even dimensions n>=6 have an odd, thus nonzero, number of supports realizing w. This is a theorem across varying colorings and does NOT assert that every single coloring has a monochromatic geodesic.
+
+**Verification.** Direct rooted-path dynamic programming verified the parity derivative identities on independent legal colorings in dimensions n=3,4,5,6,7,8. Enumeration of coherent supports and the proposed leading monomials in dimensions 3,4,5,6,7 yields counts 12,0,960,5760,161280, agreeing with (BD2),(BD4). A Q5 coloring represented by antipodal edge-orbit mask 0x78b5f2f3e has 138 rooted red full paths and hence 69 red-active coherent supports, verifying that the even-count phenomenon of Q4 fails already in Q5. Supporting artifacts: nori_witness_parity_boolean_degree_theorem.md, nori_profile_recoloring_parity_verify.py, nori_profile_incidence_degree_verify.py, and nori_profile_incidence_leading_terms_verify.py.
+
+**Research significance and limitation.** The polynomial's highest Boolean derivatives are forced by coherent-support rigidity and cycle incidence, without restricting the original coloring. This supplies a uniform algebraic normal form constraint on global witness incidence and disproves extrapolating the Q4 coloring-independent even-count invariant. Because the nonzero derivatives compare different orbit-recolored colorings, they do not force a witness in one specified coloring; unrestricted NORI1 remains open.
+
+
+## Gauge parity cancellation and a parity-blind curvature fiber
+
+Fix n>=3, put V=2^(n-1), and write G for the antipodally invariant vertex-gauge group modulo constants, with |G|=2^(V-1). A gauge acts on a legal coloring by c_i^h(x)=c_i(x)+h(x)+h(x+e_i). Let F_w(c) be the parity of the number of coherent antipodal edge-orbit supports whose profile cycles contain w.
+
+**Theorem (all-dimensional gauge XOR identity).** For EVERY legal coloring, profile target, and n>=3,
+\[
+\boxed{\bigoplus_{h\in G}F_w(c^h)=0.}\tag{GP1}
+\]
+More sharply, for a fixed coherent support O, the number of h in G such that w lies on the profile cycle of O in c^h equals n*2^(V-n).
+
+*Proof.* The projective path of O is a simple cycle of length n in the folded cube. Restricting gauges to its n vertex classes gives all even-parity n-bit edge changes uniformly: the cycle coboundary has rank n-1. Its 2n-word profile cycle contains n even-parity and n odd-parity words. Therefore n of the even edge changes align the cycle with any selected w, each having 2^(V-n) gauge preimages. Since V-n>=1 for n>=3, this number is even. Summing over coherent supports proves the XOR identity. \(\square\)
+
+**Finite symbolic theorem (Q5 gauge-degree and locality).** Write z for the 40 independent antipodal edge-orbit color bits and h for the 16 projective vertex-gauge bits. In the squarefree Boolean polynomial expansion of F_0(z+delta h), no monomial contains three or more gauge bits. Moreover every quadratic gauge monomial h_u*h_v has u,v adjacent in the folded five-cube. Thus for every original legal Q5 coloring c, F_0(c^h) is a quadratic function of gauge potentials involving only terms on folded-cube edges.
+
+*Finite proof.* Sum the red-path predicate products over all 16 projective root representatives and all 120 direction orders. Each predicate is the product over its five edges of (1+sign(e)+z_(orbit(e))+h_(first-endpoint(e))+h_(second-endpoint(e))). Root reversal implies that this sum modulo two equals F_0. Expand in the 56-variable squarefree ring, combining repeated monomials modulo two. A deterministic complete coefficient enumerator produces 9888 nonzero monomials, partitioned by gauge degree as 1824, 4800, 3264, 0, 0, ... . Every gauge-degree-two monomial is supported on an edge of the folded Q5. The finite certificate enumerates all polynomial coefficients over unrestricted z, rather than testing selected colorings.
+
+**Finite theorem (Q5 curvature-fiber parity blindness).** Put b_i(x)=x_4 for i=0,1,2,3 and b_4(x)=x_3. This is legal; its curvature is nonzero precisely on square families in direction pairs {0,4},{1,4},{2,4}, for 12 antipodal square orbits. Every one of the 65536 legal Q5 colorings with this complete prescribed curvature obeys
+\[
+\boxed{F_w(c)=0\quad\text{for every target }w.}\tag{GP2}
+\]
+
+*Finite certificate.* The curvature-fiber theorem provides two gauge phases, each with 32768 colorings. For canonical antipodal edge-orbit variables, b is encoded by the all-zero mask, while the other phase has mask 0x9210810201 (complement all direction-zero edges). Substituting either phase mask in the complete symbolic polynomial gives the zero polynomial in all gauge bits. Thus F_0 vanishes on the entire curvature fiber. Complementing direction classes preserves curvature and translates any indexed profile to zero, proving GP2 for all targets. An independent dynamic-programming verifier enumerates both gauge phases and confirms that all 65536 colorings have even red-support counts, between 24 and 192, with no coloring devoid of red supports.
+
+**Non-invariance under general gauges.** Curvature does not determine F_0 in general: legal Q5 orbit mask 0x78b5f2f3e gives 69 red-active supports; flipping one antipodal vertex star at folded vertex zero yields 54 supports without changing curvature.
+
+The all-dimensional GP1 identity and the Q5 parity-blind curvature fiber are obstructions to deriving NORI1 via an odd gauge-averaged or curvature-fiber support-incidence parity. They do not negate monochromatic geodesic existence. The finite results rely on independently executable exhaustive symbolic and numerical verifiers preserved in nori_gauge_parity_obstruction.md, nori_q5_gauge_parity_symbolic.cpp, and nori_q5_curvature_fiber_parity_verify.cpp.
+
+
+
+## Integer-square rigidity of rooted color counts
+
+Let \(H_x(\pi)\) count the color-one edges on the antipodal full geodesic rooted at \(x\) and ordered by \(\pi\in S_n\). A root has *constant color count* if \(H_x\) is independent of the order. Let \(\Gamma(c)\) be the undirected interaction graph on the \(n\) directions, joining \(i,j\) if either \(\partial_jc_i\) or \(\partial_ic_j\) is nonzero at some vertex.
+
+**Theorem (root rigidity).** If \(\Gamma(c)\) has \(q\) connected components, the set \(F(c)\) of roots having constant color count is either empty or a coset of the binary span of the component indicator vectors. Hence
+\[
+\boxed{|F(c)|\in\{0,2^q\}.}
+\]
+Whenever \(F(c)\ne\varnothing\), each interaction component has even order, and every full geodesic rooted at \(x\in F(c)\) contains \(n/2\) edges of each color. If \(\Gamma(c)\) is connected, \(F(c)\) is empty or a single antipodal pair.
+
+*Proof.* Reversing the direction order from the same root replaces each used edge by its antipodal mate, and therefore \(H_x(\operatorname{rev}\pi)=n-H_x(\pi)\). Constancy forces \(H_x=n/2\). Adjacent swaps generate the permutation group. On any square, write the four edge colors as \(a,b,d,e\), with the two rooted two-step routes having color-one counts \(a+b\) and \(d+e\). The swap changes the full-path count by \(a+b-d-e\). Every square is visited as two consecutive steps by some full path rooted at \(x\), with orientation determined by \(x\). Thus \(x\in F(c)\) if and only if \(a+b=d+e\), as integers, on every square oriented from \(x\).
+
+Take \(x,y=x\oplus\mathbf1_T\in F(c)\), with \(i\in T\) and \(j\notin T\). On any \(i,j\)-square the two rooted orientations give \(a+b=d+e\) and \(a+d=b+e\). Hence \(a=e\), \(b=d\): the two direction colors are unaffected by flipping the other direction on this face. As the face is arbitrary, \(\Gamma(c)\) has no edge crossing \(T\) and its complement. Therefore \(T\) is a union of interaction components.
+
+Conversely, because the cross-component derivatives vanish, \(c\) factors as a Cartesian product of legal antipodally odd colorings. A rooted full-path count is the sum of the corresponding factor counts and is constant precisely when every factor count is constant. Complementing all the bits in one factor complements its edge colors and preserves constant count. Thus complementing any selection of interaction components of a root in \(F(c)\) produces another member; the preceding necessity proves this gives all of \(F(c)\). Each factor admitting such a root has even dimension by the first paragraph. \(\square\)
+
+**Signed-square criterion.** For each \(i,j\)-square anchored at the corner with \(i,j\) bits zero, let \(a,b,d,e\) be its edge colors as above. A flat root must obey
+\[
+x_i\oplus x_j=0\implies a+b=d+e,\qquad
+x_i\oplus x_j=1\implies a+d=b+e.
+\]
+Conversely these conditions on all squares imply constant count, by adjacent-swap connectivity. Intersecting the permitted parities over every face of a given direction pair, then solving the resulting XOR equations, determines \(F(c)\) using \(O(n^2 2^n)\) square evaluations. If a square has odd color parity \(a+b+d+e=1\pmod2\), neither orientation is balanced and \(F(c)=\varnothing\).
+
+**Corollary (four-path majority witnesses).** For every root \(x\notin F(c)\), some oriented square has unequal two-route color-one counts. Extend both routes to full rooted geodesics with identical prefix and suffix. Their red counts differ, and reversing both orders complements their counts. Among these at most four rooted geodesics, one has more than \(n/2\) color-one edges and another has more than \(n/2\) color-zero edges. Consequently this conclusion holds at every root when some square has odd binary curvature, and outside at most one antipodal pair when \(\Gamma(c)\) is connected.
+
+**Theorem (self-dual integer potentials).** At the zero root, constant color count is equivalent to the existence of an integer function \(\rho:2^{[n]}\to\mathbb Z\) satisfying
+\[
+\rho(\varnothing)=0,\qquad
+\rho(A+i)-\rho(A)\in\{0,1\},\qquad
+\rho(A)=|A|+\rho([n]\setminus A)-\rho([n]),
+\]
+such that \(c_i(A)=\rho(A+i)-\rho(A)\). Necessarily \(\rho([n])=n/2\).
+
+*Proof.* The integer square identities make the color-one path integral from the empty set to \(A\) independent of the increasing path; call it \(\rho(A)\). The increment condition follows from the binary edge colors. Put \(\rho^*(A)=|A|+\rho([n]\setminus A)-\rho([n])\). Antipodal oddness yields \(\rho^*(A+i)-\rho^*(A)=1-c_i([n]\setminus(A+i))=c_i(A)\). Since both functions vanish at the empty set they coincide. Conversely the stated conditions make the increments binary and antipodally opposed, and their sums telescope along every full path. Self-duality at \(A=[n]\) gives \(2\rho([n])=n\). \(\square\)
+
+**Sharp complete-interaction construction.** For \(n=2r\) take \(\rho(A)=\min(|A|,r)\), the rank function of the self-dual uniform matroid \(U_{r,2r}\). Here \(c_i(x)=1\) if and only if fewer than \(r\) other vertex bits are one. Every pair of directions interacts, so \(\Gamma(c)\) is complete. The zero and all-one roots have constant count \(r\), and the first theorem excludes any others. A monochromatic full antipodal geodesic nevertheless exists: start at a vertex with \(r\) one-bits and \(r\) zero-bits, alternately flip one initially one-bit and one initially zero-bit. Each edge has color one. The connection between flat roots and self-dual integer ranks requires neither linearity nor matroid submodularity in general.
+
+
+## Antipodal permutation-clique anti-concentration for fixed-root full profiles
+
+Let n>=3, let c be ANY legal antipodally odd coloring of the undirected edges of Q_n, and let x be any root. For a full indexed target w, put
+\[
+N_x(w)=|\{\pi\in S_n:\ w(x,\pi)=w\}|.
+\]
+For a permutation pi and direction i, write Pred_pi(i) for the set of directions preceding i. Call two orders pi,sigma **antipodally conflicting at i** when
+\[
+\operatorname{Pred}_\pi(i)\ \sqcup\ \operatorname{Pred}_\sigma(i)
+=[n]\setminus\{i\}.
+\tag{AC1}
+\]
+Their rooted direction-i edges are antipodal mates; hence both orders cannot realize the same target indexed color w.
+
+**Theorem (universal sharp constant for target-order multiplicity).** For all fixed roots and legal colorings,
+\[
+\boxed{N_x(w)\le n!/3\quad(n=3,4),\qquad
+N_x(w)\le n!/4\quad(n\ge5).}
+\tag{AC2}
+\]
+The bound n!/4 is attained in Q5 by a coloring whose rules are majority functions of three possibly complemented other bits. The n!/3 bound is attained in Q4. Thus 1/4 is the best dimension-independent upper constant applying to all n>=5.
+
+*Proof.* For n=3, the three permutations (012),(120),(201) are pairwise conflicting. For n=4 the three permutations (0123),(1230),(3021) are pairwise conflicting, at directions 0,3,2, respectively. For n>=5, choose five distinguished directions labeled 0,1,2,3,4 and let L=(n-1,n-2,...,5) denote the descending list of remaining directions. Construct four complete direction orders
+\[
+A=(L,0,1,2,3,4),\quad
+B=(1,3,2,4,0,L),\quad
+C=(4,L,0,2,1,3),\quad
+D=(3,4,2,L,0,1).
+\tag{AC3}
+\]
+A direct predecessor-set check shows conflicting directions for the six pairs AB,AC,AD,BC,BD,CD are respectively 0,4,2,2,1,3, independent of the length of L. No two members of this quartet can realize one full indexed target.
+
+Relabel all n direction symbols simultaneously by any permutation g of [n]. The resulting three or four orders are again pairwise conflicting, so at most one realizes w. Sum this inequality over all n! relabelings g. For each template order A, the map g->gA is a bijection of S_n, and likewise for all other templates. Thus 4N_x(w)<=n! for n>=5, or 3N_x(w)<=n! in dimensions 3,4. This proves (AC2). \(\square\)
+
+**Explicit sharp Q5 example.** Let Maj(a,b,c) be the Boolean majority function of three bits. Define five edge-color rules by
+\[
+\begin{aligned}
+c_0(x)&=\operatorname{Maj}(1+x_2,x_3,x_4),\\
+c_1(x)&=\operatorname{Maj}(1+x_0,1+x_2,x_4),\\
+c_2(x)&=\operatorname{Maj}(1+x_0,x_3,x_4),\\
+c_3(x)&=\operatorname{Maj}(1+x_0,1+x_2,x_4),\\
+c_4(x)&=\operatorname{Maj}(1+x_0,1+x_2,x_3).
+\end{aligned}
+\tag{AC4}
+\]
+Each rule ignores its own direction bit. Because Maj complements upon complementing all three arguments, all five rules obey antipodal oddness. Exhaustive evaluation of the 120 direction orders at root 00000 gives N_0(00000)=30=5!/4. The full profile-frequency histogram is 30,30,10,10 and eight occurrences of 5, summing to 120. In Q4, a legal orbit coloring with canonical little-endian 16-bit mask 0x300c has eight all-red orders from root zero, attaining 4!/3.
+
+**Scope.** This anti-concentration theorem concerns a FULL n-direction indexed target profile. The four-order clique does not by itself imply an analogous bound for a target prescribed on only five directions inside a larger cube: averaging over all relabelings changes that five-direction set. The proof does not imply N_x(w)>0, and hence does not establish NORI1. It provides a new coloring-independent permutation-incompatibility structure for one FIXED original coloring, distinct from earlier gauge or recoloring averages. Direct program verification tests the quartet for n=5,...,19 and independently evaluates the sharp Q5 example; see nori_permutation_conflict_anticoncentration.md and nori_permutation_conflict_verify.py.
+
+
+## Unbounded antipodal permutation-conflict cliques: vanishing rooted profile mass
+
+Fix n>=3, a legal antipodally odd edge coloring c of Q_n, a root x, and a direction-indexed complete color target w. Put N_x(w)=#{pi in S_n: profile_c(x,pi)=w}. For a direction order pi let P_pi(i) be the set of directions preceding i. Two orders pi,sigma **conflict at i** if P_{\pi}(i)\mathbin{\triangle}P_{\sigma}(i)=[n]\{i}. Their rooted direction-i edges are antipodal and therefore cannot both have target color w_i. This is the predecessor-conflict graph on S_n.
+
+**Theorem (unbounded conflict cliques).** For every integer t>=5, the conflict graph on S_n contains a clique of t permutations whenever
+\[
+\boxed{n\ge\binom t2-2.}\tag{NC1}
+\]
+Consequently, for n>=8, putting
+\[
+K(n)=\left\lfloor(1+\sqrt{8n+17})/2\right\rfloor,
+\]
+every legal coloring, root and complete target satisfy
+\[
+\boxed{N_x(w)\le n!/K(n).}\tag{NC2}
+\]
+In particular the probability of a prescribed complete target under a uniformly random full direction order is at most (1+o(1))/sqrt(2n), uniformly over all legal colorings and roots. The rooted indexed profile distribution has min-entropy at least log_2 K(n).
+
+*Proof by nested-cut augmentation.* Define a **nested-cut clique** to be a collection of pairwise-conflicting direction orders pi_a, each with a designated prefix A_a, such that (i) the A_a form a chain under inclusion and (ii) for every pair a,b, some conflicting direction i_ab is in precisely one of A_a,A_b.
+
+A nested-cut clique of t orders on direction set D can be augmented to t+1 orders by introducing t new directions e_1,...,e_t. Insert the entire helper block in reverse order at the designated cut in each old order, preserving the designated old prefix A_a. Every old pair remains conflicting at its previous witness: all added directions now precede that witness in one order and follow it in the other, by (ii).
+
+List the t old rows in decreasing order of inclusion A_{a_1} superset ... superset A_{a_t}. Assign helper e_s to row a_s. Since the complements D\A_{a_s} form an increasing chain, choose a permutation of the old directions in which these complements are nested prefixes, and form a new direction order by inserting each e_s immediately after all old directions of D\A_{a_s} have appeared. This new order lists the helpers in forward order, opposite to the old rows. For each old row a_s, its predecessor set at e_s among old directions is A_{a_s}, while in the new order it is D\A_{a_s}; its predecessor bits on all other helpers are also opposite. Thus the new order conflicts with old row a_s at helper direction e_s.
+
+Give the new order its designated cut after its final direction. Its prefix is the entire enlarged direction set, containing every old prefix. For old/new pairs, their helper witness e_s lies after the old cut and before the new cut; old/old cut separation was preserved. Therefore the enlarged family is another nested-cut clique.
+
+The induction starts with the following five orders in dimension eight and their specified cut lengths:
+\[
+\begin{array}{ll}
+A=(0,1,2,3,4,5,6,7),& |A_A|=0;\\
+B=(1,2,3,4,6,5,7,0),& |A_B|=8;\\
+C=(3,6,4,5,7,2,0,1),& |A_C|=6;\\
+D=(6,7,5,0,4,1,2,3),& |A_D|=3;\\
+E=(7,0,5,1,2,4,3,6),& |A_E|=1.
+\end{array}
+\tag{NC3}
+\]
+Their cut prefixes are the nested sets empty, {7}, {5,6,7}, {2,3,4,5,6,7}, [8]. Conflict witnesses for AB,AC,AD,AE,BC,BD,BE,CD,CE,DE are respectively 0,2,5,7,1,4,5,3,4,6; each belongs to precisely one of the two cut prefixes. Hence the five-order seed satisfies both invariants.
+
+Iterating augmentation gives t orders on 8+sum_{j=5}^{t-1}j=binom(t,2)-2 directions. To enlarge the ambient dimension by one while keeping t fixed, insert the new direction at the selected cut of every order, retaining each original prefix as its selected cut. Every pairwise witness remains conflicting because the new direction is on opposite sides of that witness in the two orders. Nesting and cut separation persist. This proves (NC1) for every n above the threshold.
+
+Finally, relabel all n directions simultaneously in a fixed clique of K(n) orders. Every relabeled clique contains at most one path realizing w. Sum that inequality over all n! relabelings; each slot of the clique ranges bijectively over all n! rooted direction orders. Hence K(n)N_x(w)<=n!, proving (NC2). \(\square\)
+
+**Proposition (independence-number interpretation).** Let G_n be the predecessor-conflict graph. Then
+\[
+\boxed{\max_{c,x,w}N_x(w)=\alpha(G_n).}\tag{NC4}
+\]
+Indeed, accepting orders form an independent set. Conversely, given ANY independent family of orders at one root and a chosen profile w, prescribe color w_i on the direction-i edge visited by every order in the family. Two such prescriptions on an antipodal edge orbit contradict one another precisely when the two orders conflict. Thus independence ensures compatible prescriptions, and the unconstrained edge orbits can be colored freely with antipodally opposite colors. The maximum is attained by some legal coloring.
+
+**Proposition (matching bound on every conflict clique).** If t orders form a clique, then t<=n+1, and if t is odd, t<=n. For every direction i, the predecessor sets P_pi(i) over clique members are pairwise distinct: if pi,sigma conflict at j!=i, the relative order of i and j differs, while if they conflict at i their predecessor sets are complementary. Therefore the pairs conflicting at any fixed direction i form a matching, because each predecessor set has only one complement among the distinct sets. Assign a witnessing direction to each pair in the clique. This properly edge-colors K_t with at most n colors. Its edge chromatic number is t-1 for even t and t for odd t, giving the bound.
+
+**Independent audit.** A recursive verifier checks the initial nested-cut clique, all pairwise witnesses, the augmentations, and single-direction inflation. It produces cliques of sizes 5 through 20 in ambient dimensions 8,13,19,26,34,43,53,64,76,89,103,118,134,151,169,188, respectively. The source is nori_conflict_clique_induction_verify.py and the full derivation is nori_nested_cut_permutation_cliques.md. The proof does not depend on these computations. The prior bounds n!/3 for n=3,4 and n!/4 for 5<=n<=7 remain as published. No sharpness assertion is made for NC2 in n>=8.
+
+**Scope.** The bound tends to zero with dimension for the frequency of each full target among all orders at a fixed root. An upper bound on a prescribed target's frequency does NOT prove its attainment, and unrestricted NORI1 remains open.
+
+
+**Corollary (first-direction coloring of the conflict graph).** Two conflicting full direction orders cannot share their first direction: at that direction their predecessor sets are both empty; at every other direction both predecessor sets contain that shared first direction, precluding complementary predecessors. Nor can they share their last direction, by the dual argument. Hence the predecessor-conflict graph G_n is n-partite via the first direction (also via the last direction), and every conflict clique has at most n members. Conversely, all (n-1)! permutations with the same first direction are pairwise nonconflicting and, by the independent-set realization proposition above, can simultaneously attain any selected target from a selected root in some legal coloring. Thus for n>=8 the optimal rooted target multiplicity satisfies
+\[
+\boxed{(n-1)!\le \max_{c,x,w}N_x(w)=\alpha(G_n)\le n!/K(n).}
+\]
+
+
+## Catalan root-packing duality and sharp even-dimensional permutation-conflict bounds
+
+For n=2m>=2, let G_n be the predecessor-conflict graph from the preceding theorem: two complete direction orders pi,sigma are adjacent when for some direction i their predecessor sets have symmetric difference [n]\{i}. The paths from any common root use antipodal direction-i edges and cannot both realize one indexed target profile.
+
+**Theorem (Catalan packing bound).** Every clique in G_(2m) has size at most m+1:
+\[
+\boxed{\omega(G_{2m})\le m+1.}\tag{CP1}
+\]
+If a clique has m+1 orders, their corresponding families of Dyck-admissible balanced roots partition the middle layer of the cube.
+
+*Proof.* Consider the previously studied legal balanced-majority coloring
+\[
+b_i(x)=\mathbf1\{\sum_{j\ne i}x_j\ge m\}.
+\]
+It ignores x_i and is antipodally odd since the other-bit count t changes to 2m-1-t. Let D be any m-set of directions and root x_D have ones precisely in D. A full rooted path orders the initially one-valued directions as down steps and initially zero-valued directions as up steps. At a vertex of total weight h, a down step is red precisely if h<=m; an up step is red precisely if h<m. Thus the full path is red precisely when its direction word is a Dyck word, with every prefix containing at least as many members of D as nonmembers.
+
+For a FIXED permutation pi, the number of balanced roots D yielding a red full path is Catalan C_m=(1/(m+1))*binom(2m,m): choose the down-step positions among the 2m positions to form a Dyck word. For two conflicting orders pi,sigma, their sets of successful balanced roots are disjoint; otherwise both paths would be red at their conflicting antipodal edge pair. Hence a clique of t permutations supplies t disjoint C_m-element subsets of the binom(2m,m) balanced roots. Therefore t*C_m<=binom(2m,m), proving t<=m+1. If equality holds, those Dyck-root sets cover the full middle layer and form the claimed partition. \(\square\)
+
+**Corollary (sharp rooted complete-target multiplicities in Q2,Q4,Q6,Q8).** Recall the independent-set realization theorem
+\[
+\max_{c,x,w}N_x(w)=\alpha(G_n).
+\]
+At every balanced root of the majority coloring, the red rooted orders are obtained by freely relabeling the m down and m up steps of a Dyck word. Their number is
+\[
+(m!)^2 C_m=(2m)!/(m+1).\tag{CP2}
+\]
+Therefore \(\alpha(G_{2m})\ge(2m)!/(m+1)\) in every even dimension. If a clique of m+1 orders exists, averaging its images under all direction relabelings gives the reverse inequality and hence equality. Earlier certified cliques of sizes 2,3,4,5 in dimensions 2,4,6,8 attain the bound. Consequently
+\[
+\boxed{\alpha(G_2)=1,\quad\alpha(G_4)=8,\quad
+\alpha(G_6)=180,\quad\alpha(G_8)=8064.}\tag{CP3}
+\]
+These equalities maximize the number of rooted orders realizing ANY prescribed full target across all unrestricted legal colorings and all roots. Every corresponding clique gives a partition of the balanced middle-layer roots into its Catalan-red-root classes.
+
+**Asymptotic counterweight to strong anti-concentration claims.** The majority coloring exhibits, in every even dimension 2m, a prescribed rooted full target of frequency 1/(m+1)=2/(n+2). Therefore no universal exponentially decaying bound on the maximal rooted target probability is possible. Together with the preceding nested-cut clique bound O(n^(-1/2)), it sandwiches optimal worst-case target concentration between 2/(n+2) along even n and 1/K(n) in all n>=8. It does not establish NORI1 or any fixed-coloring target existence.
+
+**Independent audit.** The verifier nori_catalan_conflict_duality_verify.py tests the majority rule and Dyck correspondence in dimensions 2,4,6,8,10; counts all rooted red orders through n=8, and verifies that the published cliques in n=2,4,6,8 partition the sets of respectively 2,6,20,70 balanced roots into Catalan classes of sizes 1,2,5,14. No discrepancies were found. Full derivation: nori_catalan_conflict_duality.md. The majority coloring as an example was previously known to the archive; its new application here is the universal clique packing theorem and the sharp unrestricted multiplicity computation through n=8.
+
+
+**Odd-dimensional reader lift and universal logarithmic min-entropy scale.** For n=2m+1, start with the legal majority coloring on the first 2m directions. Add a direction z whose edge color is x_a, where a is one initially-one direction of a balanced starting root; leave the old direction color rules independent of z. The resulting coloring is legal and antipodally odd. For every all-red old path, inserting z after the direction-a step produces an all-red full path.
+
+In a Dyck word of length 2m, the position d_k of its k-th downstep is smaller than the position u_k of its k-th upstep. Therefore the sum of all downstep positions is less than m(2m+1)/2, and an initially-one direction a has, averaged over the equally labeled red paths, mean rank smaller than (2m+1)/2. Consequently strictly more than half of all insertion slots occur after a. Since the original rooted red fraction is 1/(m+1), the extended rooted red fraction is strictly greater than 1/(2m+2)=1/(n+1).
+
+Together with the even-dimensional balanced-majority fraction 2/(n+2), this establishes
+\[
+\boxed{\max_{c,x,w} N_x(w)/n!\ge1/(n+1)}
+\]
+for all n>=2 (strictly for odd n>=3). Combined with the earlier upper bound 1/K(n) for n>=8, the smallest possible rooted profile min-entropy across legal colorings is of order log n: it lies between log_2 K(n) and log_2(n+1). Thus any proposed universal exponentially small upper bound on individual rooted profile masses is false. Independent enumeration gives red rooted order counts 2,26,804,45648,4135680 in the odd-dimensional reader-lift examples n=3,5,7,9,11, respectively. This is an extremal obstruction, not a route to positivity of a prescribed profile in one original coloring.
+
+
+## Exponential nonadaptive order-family obstruction
+
+For n>=4 let m=floor(n/4). Any coloring-independent family of fewer than 3^m direction orders fails, for some legal antipodally odd coloring of Q_n, to provide a one-switch full geodesic from ANY root. The Q4 selector uses c0=x3,c1=1+x2,c2=1+x3,c3=x2: among 24 orders, only the eight rotations/reversals of 0123 are usable. The other cyclic classes 0132 and 0213 give temporal color words (a,1+b,b,a) and (a,1+a,b,1+b), each with at least two changes from all roots. Partition 4m directions into four-sets. Every proposed global order specifies a vector of m unoriented cyclic types, each taking 3 values. Choose a missing vector and relabel independent Q4 selectors on the blocks to make only that vector usable; any remaining direction reads the first block. Every proposed global order is bad in a block and therefore has at least two changes globally. The same argument shows that for any coloring-independent random distribution of orders, some legal coloring admits a usable order with probability at most 3^(-m), even with all roots tested; K prechosen samples have worst-case success probability at most K*3^(-m). Complete Q4 census: 48 legal colorings with 8 usable orders, 1488 with 16, 64000 with 24. Independent Q8 product verifier checks 8 proposed orders over all 256 roots. Full proof and code in attached nori_exponential_order_family_obstruction.md. This restricts nonadaptive order selection, not unrestricted NORI1.
+
+## Strict nonoptimal local turn-energy minima
+
+For a coherent cube geodesic support O, let T(O) be the number of changes in its 2n-step antipodally complementary cyclic edge-color word. T is always 2 modulo 4; T=2 means O supports a monochromatic geodesic. The union of O and its n adjacent-exchange neighbors involves 3n independent antipodal edge orbits: per direction the original orbit and the two alternatives toggling a cyclic neighbor. A prescribed cyclic color word on O can be extended to a legal coloring with every neighbor having strictly more turns precisely when each monochromatic cyclic run has length at least three. Proof: exchanging adjacent directions replaces two neighboring color bits and their antipodes. The maximum increase in the local three-gap transition count is two when the original local transition count is zero or one, and zero otherwise; the new orbit choices of distinct neighbors are independent. Consequently for every odd s>=3 and n>=3s one can prescribe T(O)=2s and all neighbors T=2s+4. A second path with the same direction order rooted at e0+e2 uses no prescribed orbit in these dimensions, so set every edge of that path red, giving another support R with T(R)=2. Thus strict nonmonochromatic local minima first occur in dimension nine, with central first-half word 000111000. The all-dimensional proof and verifier are in attached files nori_strict_cyclic_turn_traps.md and nori_strict_turn_trap_verifier.py; checks passed for n=9,10,15,20,27. This precludes strict local turn descent as a universal NORI1 forcing argument.
+
+## Global turn-star census, sharp imbalance moments and forcing criterion
+
+For n>=3, let O_n be the 2^(n-2)(n-1)! coherent antipodal edge-orbit supports of full geodesics, and T_c(O) the cyclic number of color transitions along the 2n-edge antipodally complementary cycle of O. Write r(x) for the number of color-one incident edges at cube vertex x, so r(bar x)=n-r(x). Define signed vertex-star imbalance S(x)=sum_i (-1)^(c_i(x))=n-2r(x).
+
+THEOREM 1 (global turn/star census, unrestricted): sum_(O in O_n) T_c(O) = 2(n-2)! sum_[x] r(x)(n-r(x)), where [x] denotes an antipodal vertex pair. Equivalently E_O T_c(O) = [n^2-E_x S(x)^2]/(n-1). PROOF: Each support contributes n wedge incidences in the folded cube Q_n/(x~bar x). There are 2^(n-1) binom(n,2) projective wedges; the automorphism group is transitive on them. Thus every wedge is contained in n*2^(n-2)(n-1)!/[2^(n-1)binom(n,2)]=(n-2)! supports. At x, precisely r(x)(n-r(x)) pairs of unlike-colored incident edges give projective wedge color changes. Each projective change appears twice on its 2n-edge antiperiodic cycle. Double count. Expand (n-2r)^2=n^2-4r(n-r).
+
+THEOREM 2 (sharp range and signed-star inequality): For every legal coloring, 2<=E_O T_c(O)<=n+1 for odd n, and <=n^2/(n-1) for even n>=4. Both bounds are attained for every dimension. The lower inequality is equivalent to E_x S(x)^2 <= (n-1)^2+1. Equality on the low-energy end holds iff EVERY coherent support contains a monochromatic full geodesic. Equality on the upper-energy end holds iff every vertex has as balanced a red/blue incident star as possible: r in {(n-1)/2,(n+1)/2} for odd n or r=n/2 for even n.
+
+PROOF: Each antiperiodic cyclic word has 2 modulo 4 transitions, at least 2. Hence E T>=2. The upper bounds use the parity-pointwise inequalities S(x)^2>=1 for odd n, S(x)^2>=0 for even n. Sharp low-energy construction: c_0(x)=x_1, c_i(x)=x_0 for i>=1. At antipodal representatives x_0=0, the red degree is x_1, producing sum_[x]r(n-r)=2^(n-2)(n-1), so E T=2. Sharp high-energy construction, even n>=4: pair (0,1) with c_0=x_2,c_1=1+x_2 and pair each (2k,2k+1), k>=1, with c_(2k)=x_0,c_(2k+1)=1+x_0. Every pair contributes one color-one incident edge, so r=n/2. For odd n>=3 use c_0=x_1,c_1=1+x_0,c_2=x_0, then each remaining pair (3,4),(5,6),... reads x_0 with opposite offsets. This yields r=(n-1)/2+x_1. All rules ignore their own direction and are odd under antipodal complementation.
+
+THEOREM 3 (quantitative certificate for NORI1): Put Delta=(n-1)^2+1-E_x S(x)^2>=0. The fraction of coherent supports containing a monochromatic full geodesic is >=max(0,1-Delta/[4(n-1)]). In particular E_x S(x)^2>n^2-6(n-1) guarantees a monochromatic full antipodal geodesic. PROOF: T_c(O)=2+4h(O) with nonnegative integer h. The turn/star identity gives E_O h=Delta/[4(n-1)]. Every nonmonochromatic support has h>=1, so Markov bounds its fraction. For n=3,4, the universal upper bounds n+1=4 and n^2/(n-1)=16/3 are below six, giving a short direct proof of the NORI1 geodesic statement in these dimensions. For n>=5 the moment condition does not cover all legal colorings.
+
+Independent incidence and direct-energy enumeration verifies Theorem 1 for n=3,4,5,6: projective wedge multiplicities 1,2,6,24 and support counts 4,24,192,1920. The explicit extremizers have been independently checked for every dimension n=3,...,12. Full proof and verifiers in nori_turn_star_moment_theorem.md, nori_global_turn_energy_verify.py, nori_turn_star_extremizers_verify.py. A mathematical theorem for arbitrary nonlinear legal colorings; no assumption of monochromatic connectivity or local descent. The unrestricted dimension-uniform NORI1 conjecture remains open.

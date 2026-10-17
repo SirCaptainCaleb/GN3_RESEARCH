@@ -3,4 +3,5 @@
 Sidecar only; no note body is included in the mathematical manuscript.
 
 - [Gauge-averaged avoidance of one antipodal vertex pair](../note_vertex_avoidance_gauge_flux_20261015.md) — active/proved
+- [Minimum-component repairs and Kleitman anticode corollaries](../note_nori_isolated_geodesic_tree_all_dimensions_20261016.md) — active/proved
 - [Transverse-square curvature charges for repeated directions in shortest antipodal paths](../note_795db3e27f0fa0b4cf85057a.md) — active/proved

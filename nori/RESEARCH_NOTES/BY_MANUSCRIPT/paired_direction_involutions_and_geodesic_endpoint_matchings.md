@@ -32,8 +32,11 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Doubled-direction chord crossings factor red holonomy into square commutators](../note_f45cc9ea86406fa362616dde.md) — active/proved
 - [Edge-disjoint geodesic packing and Eulerian cycle-flip stability of spectator lifts](../note_3adba95286c707867e3fac73.md) — active/proved
 - [Eulerian ice-orientation and directed square decomposition of balanced lifts](../note_f8bcb3c72b1840a3e67f021b.md) — active/proved
+- [Even-dimensional parallel antipodal geodesic decompositions and commuting matrix transport](../note_93458617c01d31157bad648e.md) — active/proved
 - [Exponential directed-hexagon traps for monotone antipodal square flips](../note_f28a330e41dfeee470febbf2.md) — active/proved
 - [Exponential scarcity of successful doubled-word fiber roots](../note_941ca0a67fb72860f9a076ba.md) — active/proved
+- [Field-uniform obstruction to fixed geodesic calibrations and Pfaffian parity](../note_nori_pfaffian_mod8_does_not_determine_geodesic_parity_20261016.md) — active/proved
+- [Field-uniform obstruction to fixed geodesic calibrations and Pfaffian parity](../note_nori_pfaffian_mod8_does_not_determine_geodesic_parity_20261016.md) — active/proved
 - [Fixed-order two-sweep obstruction with linear antipodal deficiency](../note_98d33b60443a012a2b979e4a.md) — active/proved
 - [Folded-cube voltage obstruction for directed cycle factors](../note_6104ffc9973da59afce84629.md) — active/proved
 - [Forced directed square cycles and antipodal Eulerian square flips](../note_9550a80f40ced217faa99e1d.md) — active/proved
@@ -41,6 +44,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Fourier energy identity for local red holonomy of odd cube colorings](../note_d1fbe01886986ad3f9139461.md) — active/proved
 - [Free-facet complementary forks, bridge-selector min-max formula, and an equivalent unrestricted NORI1 criterion](../note_e7b7a163e29ec5ef6157008f.md) — active/proved
 - [Frozen three-exception linearization and mandatory external influence](../note_ebf7afa6438f399815734985.md) — active/proved
+- [Global complete-bipartite rigidity of missing ordered direction pairs](../note_b99a0178fa4b19af3942f7a2.md) — active/proved
 - [Half-root antipodal geodesic theorem for switched three-exception reader stars](../note_9b4ac1d6f7f7c621f3949bbd.md) — active/proved
 - [Interlacement geometry of simple paired-cover bigons](../note_0cc55ed501605ffd6b5857ed.md) — active/proved
 - [Interval-Helly certificate for completing geodesics into paired sweeps](../note_e8196b0ae668f63fde480bb4.md) — active/proved
@@ -60,8 +64,6 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Optimal color-change Euler circuits and colorwise flow splitting](../note_b82fae07b1a890e93003724d.md) — active/proved
 - [Paired-lift red and blue graphs cover a smaller cube and lift Euler tours](../note_ed4e8d984354e6f37261be13.md) — active/proved
 - [Paired-lift sweep operator intertwining and all even antipodal trace moments](../note_c0b01709e1b450e26fb30b68.md) — active/proved
-- [Q5 Pfaffian mod-eight phase fails to determine red geodesic parity](../note_nori_pfaffian_mod8_does_not_determine_geodesic_parity_20261016.md) — active/proved
-- [Q5 Pfaffian mod-eight phase fails to determine red geodesic parity](../note_nori_pfaffian_mod8_does_not_determine_geodesic_parity_20261016.md) — active/proved
 - [Rainbow matchings and the APS expansion obstruction in legal cube colorings](../note_ff817c340f78afdb8b73c22f.md) — active/proved
 - [Reader-chain subdivision closes the rooted paired-reader three-nonlinear branch](../note_93f3f3c67ccccb85170dd72a.md) — active/proved
 - [Reader-core metric factorization and invariant antipodal detour under balanced lifts](../note_f444f30e8dd9ece68d4b5734.md) — active/proved
@@ -75,6 +77,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Simple antipodal bigon normal form for paired-cover monochromatic geodesics](../note_c944daa4c653527d2f6bf61e.md) — active/proved
 - [Six-cube root with no directed square despite antipodal balance](../note_609265aef7e29918a02d1b66.md) — active/proved
 - [Symmetrized sweep matrix and lazy interpolation to the NORI1 trace](../note_81b00318c640fbbd4d739ad3.md) — active/proved
+- [Tensor-amplified universal direction-order and oracle lower bounds](../note_70621a748bfe31ef875aac53.md) — active/proved
 - [Tensorization of reversible-sweep witnesses and exponential rarity in balanced good cubes](../note_6927ebc76b2a03c463c9e3ba.md) — active/proved
 - [Ternary switching transport needs four-chromatic forcing](../note_76115e8a3bf31b8c93b606bf.md) — active/proved
 - [Three-exception active-fiber closure](../note_470e0e5dfdb70b9ddbd65258.md) — active/proved

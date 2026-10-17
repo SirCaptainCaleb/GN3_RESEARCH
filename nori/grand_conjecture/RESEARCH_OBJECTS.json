@@ -81,6 +81,14 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_xvi_obstruction_compatibility_and_closure",
+            "type": "article",
+            "title": "Article XVI — NORI1: Obstruction Compatibility and Routes to Closure",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_rainbow_circuit_geometry",
             "type": "section",
             "title": "Antipodal Turn Quotients and Rainbow-Circuit Geometry",
@@ -156,6 +164,14 @@
             "id": "nori_freudenthal_carriers_equivariant_topology",
             "type": "section",
             "title": "Freudenthal Carriers and Equivariant Topology",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_obstruction_compatibility_and_closure_strategy",
+            "type": "section",
+            "title": "Global compatibility and routes to closure",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -380,6 +396,14 @@
             "id": "antipodal_diagonal_compression_and_local_face_certificates",
             "type": "subsection",
             "title": "Antipodal diagonal compression and local face certificates",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "antipodal_endpoint_absorption_monochromatic_distances_and_curvature_shortcuts",
+            "type": "subsection",
+            "title": "Antipodal endpoint absorption, monochromatic distances, and curvature shortcuts",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -1649,6 +1673,14 @@
             "research_status": "active"
         },
         {
+            "id": "obstruction_compatibility_and_a_programme_for_nori1_closure",
+            "type": "subsection",
+            "title": "Obstruction compatibility and a programme for NORI1 closure",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "obstruction_degree_transport_on_the_boolean_two_block_gallery",
             "type": "subsection",
             "title": "Obstruction-degree transport on the Boolean two-block gallery",
@@ -1932,6 +1964,14 @@
             "id": "projective_square_curvature_and_the_antipodal_exchange_disk_identity",
             "type": "subsection",
             "title": "Projective square curvature and the antipodal exchange-disk identity",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "projective_two_turn_incidence_fourier_kernel_rigidity_and_the_five_cube_theorem",
+            "type": "subsection",
+            "title": "Projective two-turn incidence, Fourier kernel rigidity, and the five-cube theorem",
             "version": 1,
             "superseded": false,
             "research_status": "active"

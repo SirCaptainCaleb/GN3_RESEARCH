@@ -1,6 +1,6 @@
 {
-  "active_section_count": 21,
-  "active_subsection_count": 312,
+  "active_section_count": 22,
+  "active_subsection_count": 315,
   "article_sequences": {
     "article_xv_projective_face_flag_unification": [
       {
@@ -147,14 +147,22 @@
         "position": 5,
         "version": 1
       }
+    ],
+    "nori_article_xvi_obstruction_compatibility_and_closure": [
+      {
+        "id": "nori_obstruction_compatibility_and_closure_strategy",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
     ]
   },
   "article_versions": {
     "article_xv_projective_face_flag_unification": {
       "composition": {
-        "body_chars": 1944850,
-        "composed_through_revision": 11195,
-        "composition_version": 550,
+        "body_chars": 1946196,
+        "composed_through_revision": 11491,
+        "composition_version": 551,
         "frontier": {
           "current": null
         },
@@ -212,9 +220,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 298141,
-        "composed_through_revision": 11250,
-        "composition_version": 102,
+        "body_chars": 414242,
+        "composed_through_revision": 11508,
+        "composition_version": 129,
         "frontier": {
           "current": null
         },
@@ -242,9 +250,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 1485990,
-        "composed_through_revision": 11253,
-        "composition_version": 408,
+        "body_chars": 1506910,
+        "composed_through_revision": 11481,
+        "composition_version": 414,
         "frontier": {
           "current": null
         },
@@ -287,9 +295,24 @@
     },
     "nori_article_xiv_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 1176953,
-        "composed_through_revision": 11237,
-        "composition_version": 258,
+        "body_chars": 1186305,
+        "composed_through_revision": 11332,
+        "composition_version": 260,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 1
+    },
+    "nori_article_xvi_obstruction_compatibility_and_closure": {
+      "composition": {
+        "body_chars": 31399,
+        "composed_through_revision": 11502,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
@@ -303,10 +326,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-17T01:31:34.16527+00:00",
+  "generated_at": "2026-10-17T23:35:31.35514+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 411,
+  "research_note_count": 467,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -330,9 +353,9 @@
     },
     "nori_cubical_curvature_exchange_topology": {
       "composition": {
-        "body_chars": 250744,
-        "composed_through_revision": 11236,
-        "composition_version": 41,
+        "body_chars": 260096,
+        "composed_through_revision": 11331,
+        "composition_version": 43,
         "frontier": {
           "current": null
         },
@@ -346,9 +369,9 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 298092,
-        "composed_through_revision": 11249,
-        "composition_version": 97,
+        "body_chars": 414193,
+        "composed_through_revision": 11507,
+        "composition_version": 124,
         "frontier": {
           "current": null
         },
@@ -394,9 +417,9 @@
     },
     "nori_graphic_boundary_tournament_exchange_geometry": {
       "composition": {
-        "body_chars": 267636,
-        "composed_through_revision": 10710,
-        "composition_version": 12,
+        "body_chars": 271044,
+        "composed_through_revision": 11307,
+        "composition_version": 13,
         "frontier": {
           "current": null
         },
@@ -458,9 +481,9 @@
     },
     "nori_matroid_rainbow_circuit_geometry": {
       "composition": {
-        "body_chars": 205508,
-        "composed_through_revision": 10899,
-        "composition_version": 46,
+        "body_chars": 223020,
+        "composed_through_revision": 11480,
+        "composition_version": 51,
         "frontier": {
           "current": null
         },
@@ -486,6 +509,22 @@
         "stale_dependencies": []
       },
       "math_version": null,
+      "version": 1
+    },
+    "nori_obstruction_compatibility_and_closure_strategy": {
+      "composition": {
+        "body_chars": 31327,
+        "composed_through_revision": 11501,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
       "version": 1
     },
     "nori_rectified_graphs_cyclic_path_geometry": {
@@ -634,9 +673,9 @@
     },
     "opposed_projective_face_windows_and_complete_paths": {
       "composition": {
-        "body_chars": 1597811,
-        "composed_through_revision": 11194,
-        "composition_version": 512,
+        "body_chars": 1599157,
+        "composed_through_revision": 11490,
+        "composition_version": 513,
         "frontier": {
           "current": null
         },
@@ -649,7 +688,7 @@
       "version": 2
     }
   },
-  "snapshot_revision": 6516,
+  "snapshot_revision": 6772,
   "startup_broadcasts": [
     {
       "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
@@ -928,14 +967,14 @@
     },
     "antipodal_cut_pair_separation_and_four_sector_cocycle_geometry": {
       "composition": {
-        "body_chars": 10303,
-        "composed_through_revision": 6991,
-        "composition_version": 2,
+        "body_chars": 13709,
+        "composed_through_revision": 11306,
+        "composition_version": 3,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Generalize graphic–partition component realizability to all free two-covers; show shared cube and boundary specializations.",
+        "source_note": "note_nori_isolated_geodesic_tree_all_dimensions_20261016",
         "stale": null,
         "stale_dependencies": []
       },
@@ -958,6 +997,23 @@
       },
       "development_version": 1,
       "section_id": "nori_codimension_two_switch_induction",
+      "version": 1
+    },
+    "antipodal_endpoint_absorption_monochromatic_distances_and_curvature_shortcuts": {
+      "composition": {
+        "body_chars": 7266,
+        "composed_through_revision": 11506,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Endpoint absorption and original-color curvature shortcuts for shortest monochromatic antipodal paths",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "antipodal_facet_exchange_chains_through_simultaneous_square_defects": {
@@ -1913,14 +1969,14 @@
     },
     "curvature_realization_gauge_phases_and_rooted_square_defect_transport": {
       "composition": {
-        "body_chars": 123312,
-        "composed_through_revision": 10342,
-        "composition_version": 26,
+        "body_chars": 127343,
+        "composed_through_revision": 11265,
+        "composition_version": 27,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Quantitative curvature lower bound for every facet of balanced odd cubes via Walsh spectral stability",
+        "source_note": "Leading-degree curvature charges, gauge shifts, and path-preserving sparse orbit normalization; provenance note_1144806daa685ed219c20135",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2728,14 +2784,14 @@
     },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
-        "body_chars": 212990,
-        "composed_through_revision": 11177,
-        "composition_version": 66,
+        "body_chars": 293839,
+        "composed_through_revision": 11430,
+        "composition_version": 86,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Improved universal three-direction prescription probability and a six-cube upper obstruction",
+        "source_note": "Universal cyclic-turn census and sharp star-imbalance forcing theorem",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2847,14 +2903,14 @@
     },
     "gauge_critical_switches_and_clustered_witnesses_on_full_paths": {
       "composition": {
-        "body_chars": 528263,
-        "composed_through_revision": 10830,
-        "composition_version": 168,
+        "body_chars": 529609,
+        "composed_through_revision": 11489,
+        "composition_version": 169,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Unary spectator single-square critical normal form and closure reduction",
+        "source_note": "Cartesian amplification of shortest monochromatic antipodal paths",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3102,14 +3158,14 @@
     },
     "integral_saturation_and_fourier_rigidity_of_geodesic_incidence": {
       "composition": {
-        "body_chars": 11842,
-        "composed_through_revision": 6917,
-        "composition_version": 2,
+        "body_chars": 29348,
+        "composed_through_revision": 11479,
+        "composition_version": 7,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Coordinate-potential formulation of the Fourier kernel and alternative proof of flat geodesic spectrum rigidity.",
+        "source_note": "Odd-dimensional high-order Fourier variance forcing theorem",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3658,6 +3714,23 @@
       },
       "development_version": 1,
       "section_id": "opposed_projective_face_windows_and_complete_paths",
+      "version": 1
+    },
+    "obstruction_compatibility_and_a_programme_for_nori1_closure": {
+      "composition": {
+        "body_chars": 31234,
+        "composed_through_revision": 11500,
+        "composition_version": 2,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Editorial verification: normalize inline source formatting and resolve the balanced-reconfiguration note ID; mathematical assessment unchanged.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_obstruction_compatibility_and_closure_strategy",
       "version": 1
     },
     "obstruction_degree_transport_on_the_boolean_two_block_gallery": {
@@ -4239,19 +4312,36 @@
     },
     "projective_square_curvature_and_the_antipodal_exchange_disk_identity": {
       "composition": {
-        "body_chars": 14988,
-        "composed_through_revision": 7723,
-        "composition_version": 4,
+        "body_chars": 20305,
+        "composed_through_revision": 11330,
+        "composition_version": 5,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Extremal one-square-per-antipodal-exchange-disk rigidity",
+        "source_note": "Fourier rigidity of exchange-disk transform and complete classification of sharp projective curvature representatives",
         "stale": null,
         "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "nori_cubical_curvature_exchange_topology",
+      "version": 1
+    },
+    "projective_two_turn_incidence_fourier_kernel_rigidity_and_the_five_cube_theorem": {
+      "composition": {
+        "body_chars": 27918,
+        "composed_through_revision": 11482,
+        "composition_version": 6,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Zero-frequency Gram spectrum and stronger unrestricted monochromatic-support certificate",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_edge_central_carriers",
       "version": 1
     },
     "quadratic_independence_of_antipodal_geodesic_color_profiles": {
