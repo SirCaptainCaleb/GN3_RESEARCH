@@ -1133,3 +1133,152 @@ Metric identity: The projection lower bound gives ell(c)>=ell(c_R)+|K|. Start fr
 Corollary: Every sink strongly connected component in a minimum-dimensional NORI1 counterexample must have at least eight directions with at least two outgoing influence neighbors. Otherwise this theorem deletes it and yields a smaller counterexample. A directed cycle of any length is therefore an eliminable sink component.
 
 **Whole-graph case.** If the influence graph has a single strongly connected component, the sink set is not proper and cannot be deleted. The earlier low-outdegree profile-cylinder theorem and seven-direction prescription theorem nonetheless force at least eight branching directions in any bad coloring. The corollary for every sink SCC of a minimum counterexample uses this separate argument in the one-component case.
+
+
+### Acyclic sandwich prescription and single-feedback forcing
+
+Let \(c\) be any legal antipodally odd coloring on \(Q_n\). Its directed influence graph has \(j\to i\) when \(\partial_jc_i\) is nonzero somewhere. Let \(I\subseteq[n]\) induce an acyclic influence graph, let \(J=[n]\setminus I\), and choose a topological order \(i_1,\ldots,i_m\) of \(I\).
+
+**Theorem A (full rootwise prescription on acyclic directions).** For every root \(x\), every target bit vector \(t_I\), and every chosen ordering of \(J\), there is a full antipodal geodesic from \(x\) whose colors in directions \(I\) are \(t_I\). Thus
+\[
+\boxed{\mathcal W_x(c)|_I=\mathbb F_2^I,\qquad
+|\mathcal W_x(c)|\ge2^{|I|}.}\tag{FVS-A}
+\]
+In particular, for directed feedback vertex number \(\tau\), every root realizes at least \(2^{n-\tau}\) different full color profiles.
+
+*Proof.* Let \(B=\{i\in I:c_i(x)=t_i\}\). Traverse \(B\) in reverse topological order, then all of \(J\) in the chosen order, then \(I\setminus B\) in forward topological order. Before a vertex \(i\in B\), no direction on which \(c_i\) depends has been flipped, so the color is \(c_i(x)=t_i\). Before a vertex \(i\in I\setminus B\), every direction on which \(c_i\) depends has been flipped, so antipodal oddness and independence from its own bit give color \(1+c_i(x)=t_i\). Directions that are not incoming influences have no effect on \(c_i\). The word uses all directions once. \(\square\)
+
+**Theorem B (triangular root-state bijection).** For fixed starting bits \(x_J\) and target \(t_I\), put
+\[
+b_i(x)=1+c_i(x)+t_i,\qquad
+y_i=x_i+b_i(x)\quad (i\in I).\tag{FVS-B}
+\]
+The map \(x_I\mapsto y_I\) is a bijection, and \(y_I\) is the state on the \(I\)-bits immediately before the middle \(J\)-block in the preceding construction.
+
+*Proof.* For \(i=i_k\), the rule \(c_i(x)\) depends only on \(x_J\) and earlier \(I\)-bits \(x_{i_1},\ldots,x_{i_{k-1}}\), because its incoming influences in \(I\) precede it and the rule ignores its own bit. Therefore \(y_{i_k}=x_{i_k}+g_k(x_J,x_{i_1},\ldots,x_{i_{k-1}})\). This triangular map is inverted recursively in topological order. The middle-state identity follows because the initial block flips just those \(i\) having \(b_i=1\). \(\square\)
+
+**Theorem C (one-feedback full-profile theorem and root density).** If \(D(c)-h\) is acyclic for some direction \(h\), then for every desired full color profile \(t\in\mathbb F_2^n\),
+\[
+\boxed{|\{x:t\in\mathcal W_x(c)\}|\ge2^{n-1}.}\tag{FVS-C}
+\]
+In particular at least half of all cube vertices start a red full antipodal geodesic, proving NORI1 in this class. This holds for unrestricted nonlinear direction rules and is sharp for every \(n\ge2\).
+
+*Proof.* Apply Theorem B with \(I=[n]\setminus\{h\}\), \(J=\{h\}\). For either value of \(x_h\), the state \(y_I\) before the \(h\)-step runs bijectively through \(\mathbb F_2^{n-1}\) as the other root bits vary. The rule \(c_h\) ignores \(x_h\), while oddness implies \(c_h(y_I+1_I)=1+c_h(y_I)\). Thus half the choices of \(y_I\) give prescribed color \(t_h\) in direction \(h\). Every other direction already has its prescribed color by Theorem A. There are \(2^{n-2}\) such roots for each value of \(x_h\), totaling \(2^{n-1}\). For a single witness, choose either \(y_I=0\) or \(1_I\) to achieve \(t_h\), invert the triangular map, and form the sandwich word. Given the influence order, this requires \(O(n)\) color-rule evaluations.
+
+For sharpness, use \(c_0=x_1,\ c_1=x_0,\ c_i=x_0\) for \(2\le i<n\). Its influence graph becomes acyclic on deleting direction zero. Both directions zero and one can have prescribed colors \(t_0,t_1\) along a full geodesic only if \(x_0+x_1=1+t_0+t_1\), which holds for half the roots. Whenever it holds, put the remaining directions before or after direction zero according to whether their desired color agrees with the currently held bit zero. Thus half the roots, and no more, realize \(t\). \(\square\)
+
+**Large strongly connected nonlinear example.** For \(n\ge6\), set
+\[
+c_0=M(x_1,x_{n-2},x_{n-1}),\quad c_1=x_0,\quad c_2=x_1,\quad
+c_3=M(x_0,x_1,x_2),\quad c_i=x_{i-1}\ (4\le i<n),
+\]
+where \(M(a,b,c)=ab+ac+bc\). The rules are edge-consistent and odd. Their influence graph contains the directed Hamilton circuit \(0\to1\to\cdots\to n-1\to0\), and so forms one strongly connected component of size \(n\); deleting direction zero leaves an acyclic influence graph. Theorem C gives at least \(2^{n-1}\) successful starting roots even in this nonlinear, non-star, unbounded strongly connected case.
+
+**Limitation for larger feedback sets.** The single middle-block construction need not succeed for feedback sets of size two. On \(Q_3\), take \(I=\{2\}\), \(J=\{0,1\}\), and \(c_0=x_2,\ c_1=1+x_2,\ c_2=x_0\). No fixed \(01\)-face has a red two-edge geodesic because its two direction colors are opposed. Still the root with \(x_0=1,x_2=0\) and direction order \((0,2,1)\) gives an all-red full geodesic. This delineates the reach of the sandwich construction without assuming a further collective-to-single extraction principle.
+
+A direct \(Q_7\) test verified all \(128\cdot32\) fixed-root prescriptions for one induced five-direction acyclic subset, as well as \(64\) red roots out of \(128\) for a nonlinear coloring with one feedback direction.
+
+
+### Two-feedback forcing by opposite-color square rigidity and a pivot
+
+Let \(c\) be any legal antipodally odd undirected-edge coloring of \(Q_n\), \(n\ge2\). Assume that there are two directions \(a,b\) such that the induced directed influence graph on \(I=[n]\setminus\{a,b\}\) is acyclic. Fix a topological order \(i_1,\ldots,i_m\) of \(I\).
+
+**Theorem (two-feedback monochromatic closure and full-profile surjectivity).** Every prescribed vector \(t\in\mathbb F_2^n\) occurs as the direction-indexed color profile of some full antipodal geodesic. In particular, a red full antipodal geodesic exists, establishing NORI1 for all legal nonlinear colorings whose directed influence graph has feedback vertex number at most two. The directed influence graph before deletion may be one strongly connected component of unbounded size.
+
+*Proof.* It suffices to find a fully red geodesic: for arbitrary \(t\), replacing the edge color \(c_i\) by \(c_i+t_i\) preserves edge consistency, antipodal oddness, and the entire directed influence graph. Apply the red case to the recolored system.
+
+We use the acyclic sandwich normalization from the preceding theorem. Given a root \(x\), let \(B=\{i\in I:c_i(x)=0\}\), and let \(A=I\setminus B\). Traverse \(B\) in reverse topological order, then directions \(a,b\) in any chosen order, then \(A\) in forward topological order. Every \(I\)-edge is red. For fixed root bits \(x_a,x_b\), the \(I\)-state just before the \(ab\)-block is
+\[
+y_i=x_i+1+c_i(x)\quad(i\in I).
+\tag{FVS-D1}
+\]
+The map \(x_I\mapsto y_I\) is bijective: each \(c_{i_k}(x)\) depends only on the two fixed \(ab\)-bits and preceding input bits in \(I\), so the equations invert recursively.
+
+**Case 1: one \(ab\)-square has a red two-edge route.** Choose its \(I\)-face position \(y\), its starting \(ab\)-bits \(u\), and a red route with order either \(ab\) or \(ba\). Fix \(x_{ab}=u\) and invert (FVS-D1) to recover \(x_I\). The sandwich word is a red full antipodal geodesic.
+
+**Case 2: no \(ab\)-square has a red two-edge route.** Antipodal oddness carries any blue two-edge route in an \(ab\)-face at position \(y\) to a red route in the antipodal \(ab\)-face at position \(\bar y\). Hence no \(ab\)-face has a monochromatic two-edge route of either color. A square edge-coloring with neither a red nor a blue two-edge route must alternate colors around its four-cycle. It follows that all \(a\)-edges in each face share one color and all \(b\)-edges the opposite color. Therefore
+\[
+\boxed{c_a(z)=g(z_I),\qquad c_b(z)=1+g(z_I),}\tag{FVS-D2}
+\]
+with no dependence on the \(a,b\) bits. The function \(g\) is antipodally odd, so \(g(\bar y)=1+g(y)\). Necessarily \(I\ne\varnothing\), and some direction \(k\in I\) and vertex \(y\in\mathbb F_2^I\) satisfy \(g(y+e_k)=1+g(y)\). The same derivative condition holds at \(\bar y\).
+
+Choose any intermediate \(ab\)-bit pair \(u\). If \(c_k(y,u)=1\), replace \((y,u)\) by \((\bar y,\bar u)\); then \(c_k(y,u)=0\) by antipodal oddness, while \(g\) still changes across the direction \(k\). Let \(f=a\) when \(g(y)=0\) and \(f=b\) when \(g(y)=1\), and write \(s\) for the other member of \(\{a,b\}\). Choose the initial \(ab\)-bits \(x_{ab}=u+e_f\). Then direction \(f\) is red at \(I\)-state \(y\), the direction-\(k\) edge at state \((y,u)\) is red, and direction \(s\) is red at \(I\)-state \(y+e_k\), since \(g\) changes across \(k\).
+
+To make all remaining directions red, define a modified triangular map on roots by
+\[
+y_k=x_k,\qquad y_i=x_i+1+c_i(x)\quad(i\in I\setminus\{k\}).
+\tag{FVS-D3}
+\]
+For fixed \(x_{ab}\), this map is bijective. Indeed, fix \(x_k=y_k\) first; solve the other root bits in the selected topological order, each equation involving only already recovered predecessors in \(I\). Invert (FVS-D3) for the selected \(y\), obtaining a root \(x\).
+
+Now let \(B=\{i\in I\setminus\{k\}:c_i(x)=0\}\) and \(A=I\setminus(B\cup\{k\})\). Traverse the following direction word:
+\[
+\boxed{(B\text{ in reverse topological order})\,f\,k\,s\,
+(A\text{ in forward topological order}).}\tag{FVS-D4}
+\]
+Before \(f\), the \(I\)-state is \(y\), and after \(f\) the \(ab\)-state is \(u\). Thus the three central edges \(f,k,s\) are red by construction. Each direction \(i\in B\) is red because none of its input directions has been flipped when it is traversed: the earlier topological directions are still unflipped, and \(k,a,b\) have not yet been crossed. Each direction \(i\in A\) is red because all its input directions have already been flipped: the earlier topological directions were used in \(B\) or earlier in \(A\), and \(k,a,b\) have been crossed. Antipodal oddness gives the required red color in this latter case. Every direction occurs once, proving the theorem. \(\square\)
+
+**Constructive cost.** Given the influence topological order and query access to the edge rules, Case 1 can test every \(ab\)-face using \(O(2^{n-2})\) face positions (and four starting corners each), then invert the triangular normalization using \(O(n)\) further evaluations. In Case 2, a pivotal edge of \(g\) can be located using \(O(n)\) queries by comparing \(g\) along any direction-simple path from \(0^I\) to \(1^I\), since these endpoint values differ. Antipodal oddness chooses a red pivot. The modified triangular map then gives a full red geodesic using \(O(n)\) further edge evaluations. No success-density or collective exchange theorem is used.
+
+**Finite independent test.** A separate implementation generated random legal odd nonlinear color rules with all \(I\)-rules constrained only by the stated acyclic influence order and unrestricted \(a,b\)-rules. It reconstructed and checked individual all-red full direction words in dimensions three through eight. The rigid second case was also independently tested on 300 randomly generated instances in each of dimensions three through eight and dimension ten. Every constructed path was verified to traverse all directions once and have only red edges.
+
+**Why the rigidity matters.** The direct sandwich can fail even if a red full geodesic exists; for instance \(c_a=x_k,\ c_b=1+x_k,\ c_k=x_a\) has no red \(ab\)-route in any \(ab\)-face. The pivot word (FVS-D4) repairs this failure by inserting one direction where the complementary helper colors reverse. For larger feedback sets, absence of a monochromatic full face path does not enforce a similarly simple pair of complementary rules. The proved theorem does not claim closure beyond feedback number two.
+
+
+**Irreducible two-feedback nonlinear witness family.** On six directions \(0,\ldots,5\), define
+\[
+c_0=M(x_2,x_4,x_5),\quad c_1=x_0,\quad c_2=x_1,\quad
+c_3=M(x_5,x_1,x_2),\quad c_4=x_3,\quad c_5=x_4.
+\tag{FVS-D5}
+\]
+The dependency graph contains vertex-disjoint directed triangles \(0\to1\to2\to0\) and \(3\to4\to5\to3\). The majority rules give influence arcs \(1,2\to3\) and \(4,5\to0\), making the full graph strongly connected. Deleting both directions \(0,3\) leaves the acyclic arcs \(1\to2\) and \(4\to5\). The feedback vertex number is therefore two: at least one vertex of each of the two disjoint triangles must be deleted, and the pair \(0,3\) suffices. Both majority rules are nonlinear and antipodally odd; all other rules are unary and odd.
+
+For every \(n\ge6\) one may lengthen the first directed triangle into an arbitrarily long directed cycle by inserting new unary-reader directions along the edge returning to \(0\), and replacing \(x_2\) in the first majority rule by the bit of the final inserted direction. Both disjoint directed cycles survive and the graph remains strongly connected, while deleting \(0,3\) leaves a directed acyclic graph. Thus the two-feedback theorem handles arbitrary large strongly connected nonlinear systems whose minimum feedback number is two and to which the preceding one-feedback theorem does not apply. In the six-direction instance an exhaustive rooted geodesic enumeration found 58 of the 64 vertices supporting red full geodesics, including, for root \(x=1\) (integer bitmask), the red direction word \((0,5,4,3,2,1)\). The enumeration is illustrative only; existence is proved by the theorem above.
+
+
+**Fiberwise geodesic-count identity for acyclic complements.** In the setting of Theorem A, fix a prescribed complete profile \(t=(t_I,t_J)\). Let \(G_{c,I,J}^{\rm sand}(t)\) count rooted direction orders of the canonical form
+\[
+(B_x\text{ reversed in topological order})\,\sigma\,
+(I\setminus B_x\text{ in forward topological order}),
+\]
+where \(B_x=\{i\in I:c_i(x)=t_i\}\) and \(\sigma\) ranges over all permutations of \(J\), that realize the prescribed profile \(t\). For each \(y\in Q_I\), let \(c^{\,y}|_J\) be the ordinary induced coloring of the \(J\)-face at fixed \(I\)-state \(y\), and let \(N_{t_J}(c^{\,y}|_J)\) count its rooted full-geodesic orders with profile \(t_J\). Then
+\[
+\boxed{
+G_{c,I,J}^{\rm sand}(t)=\sum_{y\in Q_I}N_{t_J}(c^{\,y}|_J).
+}\tag{FVS-D6}
+\]
+In particular, if even one \(J\)-face has a full geodesic with profile \(t_J\), the ambient cube has a full geodesic with profile \(t\).
+
+*Proof.* For each fixed starting \(J\)-state \(u\), the triangular map \(x_I\mapsto y_I\) from Theorem B is bijective. Every canonical sandwich from \(x=(x_I,u)\) has profile \(t_I\) on \(I\) and traverses \(J\) from \((y_I,u)\) using the chosen permutation \(\sigma\). Thus such a sandwich realizes the full target if and only if the \(J\)-face geodesic from \(u\) in direction order \(\sigma\) realizes \(t_J\). The triangular map gives a bijection between rooted ambient sandwiches and all rooted \(J\)-face geodesics counted in the right side, proving the identity. \(\square\)
+
+The identity holds even though an induced \(J\)-face need not itself be antipodally odd. Therefore lower-dimensional NORI1 cannot be applied directly to an arbitrary induced face; the opposite-face rigidity in the two-feedback theorem is precisely what is needed when every individual \(J\)-face fails the desired profile.
+
+
+### Canonical directed-cycle ancestor core
+
+Let K be the direction labels from which a directed influence path reaches a directed cycle, and let S be all other directions. The induced influence graph on S is acyclic, and no influence arrow goes from S into K. Thus the K-direction rules give a legal odd coloring cK independent of S.
+
+**Theorem.** For every root (u,v) in QK times QS, the attained direction-indexed full-geodesic profiles satisfy W_(u,v)(c)=W_u(cK) times F2^S. Hence the favorable roots for every target full profile t form R_t(c)=R_(tK)(cK) times QS. In particular NORI1 holds for c iff it holds for cK, and the fraction of favorable roots is unchanged. K is the unique minimal set whose complement is acyclic and does not influence K.
+
+**Proof.** Projection of a full geodesic onto K gives one inclusion. For the other inclusion, begin with a geodesic on K having any prescribed profile. Insert the directions of S one at a time in topological influence order. Each new direction rule ignores subsequent inserted bits and is odd on the current subcube, so its colors at the endpoints of the current full geodesic differ. Inserting its edge at the suitable endpoint achieves either prescribed new color, while the earlier rules ignore its bit and their colors persist. This works with any fixed initial S-bits. Minimality of K follows because every directed cycle and all its directed ancestors belong to any set with the two claimed graph properties. The complement of K is peeled by successive singleton sink component deletions. Full detail and independent finite checks are in research note note_5284951226306cf15a399152.
+
+
+**Quantitative one-direction extension identity.** Let d be any legal odd coloring on Q_m, and append one new direction s, leaving old edge rules unchanged and coloring s-edges by an arbitrary odd function h of the old vertex bits. For a full oriented rooted path P in d, let Z_b(P) count its visited vertices z with h(z)=b. If N_t(d) counts oriented rooted full paths with direction-indexed color profile t, then
+
+N_(t,b)(d+) = 2 sum_(P with profile t) Z_b(P).
+
+Indeed every extended path uniquely projects to an old path plus the insertion position of s and its initial s-bit. Both s-bit choices work, and the new edge has color h(z) at its insertion point. The old path runs between antipodes, so h has different values at its endpoints; hence 1<=Z_b(P)<=m. Consequently
+
+2 N_t(d) <= N_(t,b)(d+) <= 2m N_t(d),
+and N_(t,0)(d+) + N_(t,1)(d+) = 2(m+1) N_t(d).
+
+Thus the full color-profile root set is lifted as a Cartesian product while oriented witness multiplicities obey a separate explicit insertion-weighted formula. This was checked independently for random legal odd base colorings on Q2, Q3 and Q4, for all roots, color targets and insertion positions.
+
+
+### Logarithmic antipodal-face search for the two-feedback theorem
+
+Assume a legal odd coloring has a supplied pair a,b whose deletion leaves acyclic influence on I. There is a deterministic construction of a full red geodesic using O(n) edge-rule queries, improving the exhaustive conditional-face search in the preceding two-feedback proof. For y in Q_I, inspect the ab-square at y and its antipodal square at bar(y). If either has a red two-step route, lift it via the acyclic triangular root normalization. If neither has one, oddness rules out blue two-step routes as well; both squares must be alternating, with direction-a edges of color g(y) and direction-b edges of the opposite color. The antipodal square satisfies g(bar(y))=1+g(y).
+
+Start with endpoints y=0 and z=1_I. If their paired faces are unfavorable, both alternate and g(y) differs from g(z). Repeatedly choose a midpoint m by flipping half the bits separating y,z, test m and bar(m), and either lift a red route found there or keep the half-interval on which g differs. After at most ceil(log2(n-2)) steps, adjacent alternating faces y and y+e_k have different g-values. Choose ab-bits u so c_k(y,u)=0: if the first choice fails, antipodally translate the two faces and u, which complements the k-edge color while preserving the alternating pattern. Let f be the red feedback direction at y and s the other. Then f,k,s is a red three-step path, using initial ab-bits u+e_f. Invert the modified triangular equations x_k=y_k and y_i=x_i+1+c_i(x) for all other i in I. The resulting full direction order is: before-block directions with c_i(x)=0 in reverse topological order; then f,k,s; then the remaining directions with c_i(x)=1 in forward topological order. Every edge is red by the same predecessor-dependence argument as the previous theorem. For n=2 the initial ab-face already contains a red route. The O(n) total query bound includes triangular inversion. It assumes the feedback pair and influence topological order are provided, not discovered from a black-box oracle.
+
+Independent implementations tested 400 random legal odd acyclic-complement inputs in every dimension 3 through 7 and 60 in dimensions 8 through 10; all returned words were fully verified. An additional 100 trials in every dimension 3 through 10 forced all ab-faces to be alternating, so that the pivot branch was mandatory; all succeeded. This is a constructive speedup of the proved feedback-two theorem, not a new bounded-class extension.

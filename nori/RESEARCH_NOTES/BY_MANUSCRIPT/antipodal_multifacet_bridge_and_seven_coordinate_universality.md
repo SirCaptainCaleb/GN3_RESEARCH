@@ -7,4 +7,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Cartesian product laws for one-change paths](../note_2e28c8ef292896a4e14c8a5f.md) — active/proved
 - [Exponentially sparse monotone-geodesic antipodal root pairs](../note_423a483ddff4ece6052c1cfe.md) — active/proved
 - [Folded cube Gram-graph fragmentation](../note_f41d55f03e3dd6b0cf8a62d1.md) — active/proved
+- [Four-direction profile prescription via the strict half-switch theorem](../note_a515267775f6b443b9f6e162.md) — active/proved
 - [Paired-start exact criterion for NORI1 as a unification toy model](../note_antipodal_paired_start_nori1_toy_unification_probe.md) — active/proved
+- [Seven-direction-assisted universal profile completion and passive paired-lift factorization](../note_c5083237403b6c2c6a02fef1.md) — active/proved
+- [Two-helper universal profile completion and sharp one-helper passivity](../note_2ae1db9f5fcdd07c304ba96e.md) — active/proved

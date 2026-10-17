@@ -219,3 +219,176 @@ If NORI1 holds, then by the earlier exact equivalence the arbitrary-color one-ch
 - **From above:** an antipodal path with at most one change of length \(n+o(n)\), by (AP1).
 
 Both implications back to full closure are proved by Cartesian-power amplification. The second formulation asks for quantitative near-geodesicity inside the original Feder--Subi one-change antipodal *path* problem, which remains stronger than the settled unrestricted original Norine monochromatic-antipodal-*path* result. In particular the known existence of a monochromatic antipodal path for odd colorings does not establish (AP1)'s approximating hypothesis for arbitrary colorings. These statements provide global proof targets rather than independent proofs of their hypotheses.
+
+
+## Strict half-switch and four-direction prescription
+
+# Strict half-switch bound and four-direction prescription
+
+Let d be an arbitrary two-coloring of undirected edges of Q_n. Write r(v), b(v)=n-r(v) for its incident color degrees, and s(P) for the number of color changes on a full antipodal geodesic.
+
+**Lemma.** For a uniformly random root and full direction order,
+\[
+\mathbb E\,s(P)=\frac{2}{n2^n}\sum_{v\in Q_n}r(v)b(v)
+\le \frac2n\left\lfloor\frac{n^2}4\right\rfloor.
+\tag{1}
+\]
+*Proof.* At each of the n-1 intermediate vertices the ordered pair of successive distinct directions is uniform among n(n-1) pairs, and the vertex is uniform over Q_n. At v precisely 2r(v)b(v) of the ordered direction pairs switch color. Summing their probabilities proves (1). \(\square\)
+
+**Theorem (strict half-switch).** For every even n=2h>=4, any arbitrary coloring of Q_n has a full antipodal geodesic with at most h-1 color changes. For odd n, (1) guarantees at most (n-1)/2.
+
+*Proof.* The odd-dimensional claim follows by the integer-valued switch count. When n=2h>=4, (1) gives expectation at most h. If all full geodesics had at least h switches, then all of them would have precisely h. For every vertex x and two distinct directions i,j, start a full path at x with first direction i and last direction j. Parity of its h switches implies
+\[
+d_i(x)+d_j(\bar x)=h\bmod2.
+\tag{2}
+\]
+For any distinct i,k choose j outside {i,k}; (2) gives d_i(x)=d_k(x). Every vertex therefore has a monochromatic star, hence by connectivity the entire coloring is constant. It then has zero-switch full paths, contradicting h>=2. \(\square\)
+
+**Corollary (arbitrary-color four-cube).** Every arbitrary red-blue edge coloring of Q4 has a full antipodal geodesic with at most one switch, without any antipodal relation. Independently, a binary integer feasibility program on the 32 Q4 edges, excluding eight one-switch color words on each of its 192 unoriented full antipodal geodesics, was infeasible under SciPy/HiGHS. The proof does not rely on that audit.
+
+**Theorem (unrestricted four-direction NORI1 prescription).** Let n>=4 and c be any binary undirected-edge coloring of Q_n obeying c_i(x+e_i)=c_i(x), c_i(bar x)=1+c_i(x). For any four distinct directions S and desired t in F2^S, some full antipodal geodesic has direction-indexed colors t on S.
+
+*Proof.* For n>4, apply the previously proved multifacet bridge equivalence B_k iff P_(n,S) in this subsection at k=4. In brief, on a lower S-face recolor each direction i by t_i, take its zero-then-one one-switch full path, reverse the zero prefix, traverse all exterior directions to the opposite face, and traverse the reversal of the antipodal image of the one suffix. This is a full geodesic whose S-edges have colors t_i.
+
+For n=4, directionwise recolor by t_i and use the preceding four-cube corollary to obtain a path from u to bar u with red prefix U and blue suffix V. Starting at the switch vertex, reverse U and then reverse the antipodal image of V. Antipodal oddness makes both parts red; they traverse complementary direction subsets and join antipodal endpoints. Undo the recoloring to obtain prescribed profile t. \(\square\)
+
+The four-direction theorem strengthens the previous three-direction prescription for all legal NORI1 colorings. The small-dimensional one-switch statement is known in the literature; the displayed argument gives an elementary proof. The general switch bound does not settle the arbitrary-color one-switch problem beyond dimension four.
+
+## Passive lift profile factorization and active completion
+
+# Passive lift profile factorization and four-direction-assisted active completion
+
+Let c be any binary undirected-edge coloring of Q_n satisfying c_i(x+e_i)=c_i(x) and c_i(bar x)=1+c_i(x). For any such coloring write W(c) for its set of direction-indexed color profiles of rooted, ordered full antipodal geodesics.
+
+**Theorem 1 (passive paired lift has a product profile support).** Define the conventional paired lift on Q_(2n) by
+\[
+\widetilde c_i(x,y)=c_i(x),\qquad
+\widetilde c_{n+i}(x,y)=1+c_i(x)\quad(1\le i\le n).
+\tag{PC1}
+\]
+Then
+\[
+\boxed{W(\widetilde c)=W(c)\times\mathbb F_2^n.}\tag{PC2}
+\]
+The paired lift is legal and antipodally odd, and contains a monochromatic full antipodal geodesic if and only if c does.
+
+*Proof.* Project any full geodesic of the lift to the first n vertex bits and delete the y-steps. The remaining path is a full antipodal geodesic in c with the same old-direction profile, proving the upper containment in (PC2). Conversely, select any full base geodesic starting at x, with direction order pi and old profile u. Given any desired dummy-direction word v, place dummy direction n+i before all old directions if v_i=1+c_i(x), and after all old directions otherwise. Before the base path its dummy color is 1+c_i(x); after the base path, at bar x, its dummy color is c_i(x). Thus its dummy word is v and its old word is u. The starting dummy bits are arbitrary, establishing the product support. Monochromaticity equivalence follows by taking zero targets and by the projection. \(\square\)
+
+**Lemma 2 (one-helper rigidity).** Suppose C is any legal antipodally odd coloring of Q_(n+1) whose old-direction coloring on the face y=0 is c. Then for every old direction i and x,
+\[
+\boxed{C_i(x,1)=c_i(x)=C_i(x,0).}\tag{PC3}
+\]
+*Proof.* The global antipode sends (x,1) to (bar x,0), so C_i(x,1)=1+C_i(bar x,0)=1+c_i(bar x)=c_i(x). \(\square\)
+
+**Theorem 3 (universal active completion with n-3 helpers).** Let n>=4 and c be any legal antipodally odd coloring of Q_n. Fix any four-element direction subset S, put T=[n]\setminus S, and choose s in S. Introduce auxiliary bits y_* and y_i for i in T, in total m=1+|T|=n-3 additional cube directions. Define C on Q_(n+m) by
+\[
+C_i(x,y)=
+\begin{cases}
+c_i(x),&i\in S,\\
+c_i(x)+y_i+y_*,&i\in T,
+\end{cases}
+\qquad
+C_{y_j}(x,y)=x_s\quad(j\in T\cup\{*\}).
+\tag{PC4}
+\]
+Then C is legal and antipodally odd, its restriction to the face y=0 in old directions agrees with c, and
+\[
+\boxed{W(C)=\mathbb F_2^{n+m}=\mathbb F_2^{2n-3}.}\tag{PC5}
+\]
+Every target profile is attained using an order in which one selected set of auxiliary directions comes before all original directions, with the remaining auxiliary directions after them.
+
+*Proof.* Each old-direction rule ignores its own original bit; each auxiliary rule x_s ignores its own auxiliary bit. Under the global antipode, c_i flips, the even expressions y_i+y_* do not flip, and x_s flips. Hence C is legal and odd, and at y=0 the old rules equal c.
+
+Fix any target full profile (w,v), with old word w in F2^n and auxiliary word v in F2^m. By the universal four-direction prescription theorem in the previous subsection development, choose a full old-direction geodesic from some x in some order pi whose colors agree with w on S. Let d_i be its old profile for i in T. Define b=x_s. Place auxiliary direction y_j before the entire old geodesic if v_j=b, and after it if v_j=1+b. These helper edges then have precisely their prescribed colors, because the s-th old bit changes from b to 1+b during the old full path.
+
+Let E_j indicate whether helper direction j is in the early group. Choose the auxiliary bit values y_j^{mid} during the old geodesic so that y_*^{mid}=0 and y_i^{mid}=d_i+w_i for i in T. Take the initial auxiliary root values y_j^{start}=y_j^{mid}+E_j. After the early helper moves, the helper values equal the prescribed mid values; they remain fixed throughout the old-direction segment. For every i in T, its color along that segment is c_i+ y_i^{mid}+y_*^{mid}=d_i+(d_i+w_i)=w_i; for i in S, its color is w_i by selection of the base path. The remaining auxiliary moves have color v_j. Every old and auxiliary direction is used once. Thus the target profile is attained. \(\square\)
+
+**Lemma 4 (helper information-capacity bound for frozen-state control).** If a Boolean control map H:F2^m->F2^t obeys H(y+\mathbf1)=H(y), then its image contains at most 2^(m-1) elements. Surjectivity onto F2^t therefore requires m>=t+1. The control map H(y)=(y_i+y_*)_(i in T) used in (PC4), with t=|T|=n-4 and m=t+1, attains this information bound.
+
+*Proof.* An antipodally even H factors through the quotient of F2^m by the two-element subgroup generated by the all-one vector, whose cardinality is 2^(m-1). The displayed H maps onto F2^t by choosing y_*=0 and the y_i independently. \(\square\)
+
+**Computer audit.** For n=4,5,6, four random legal odd base colorings per dimension were tested against 250 independently random full-profile targets, using a brute-force four-direction base witness finder and the construction from Theorem 3. All 3000 targets were attained, and legality was tested separately. The paired-lift factorization (PC2) was checked by full root/order enumeration for four random base colorings in each of dimensions n=2 and n=3.
+
+**Scope.** These statements apply to every legal odd base coloring, regardless of nonlinear dependencies. The passive factorization shows why adding directions that never influence the original color rules cannot erase a missing profile. The active completion supplies enough independent antipodally even phase controls to remove all remaining profile constraints after a four-direction base witness. Since it changes the old-direction rules outside y=0, it is not a counterexample-preserving reduction and does not prove NORI1 in dimension n.
+
+### Seven-direction-assisted control reduction
+
+**Theorem 5 (seven-prescription assisted completion).** Let n>=9 and let c be any legal antipodally odd coloring of Q_n. Choose a set S of seven original directions and write T=[n]\S. Add m=|T|+1=n-6 auxiliary bits, one bit y_i for each i in T and one reference bit y_*. Choose s in S. Define
+\[
+C_i(x,y)=c_i(x)\ (i\in S),\qquad
+C_i(x,y)=c_i(x)+y_i+y_*\ (i\in T),\qquad
+C_{y_j}(x,y)=x_s\ (j\in T\cup\{*\}).
+\tag{PC6}
+\]
+Then C is legal and odd, agrees with c on the all-zero auxiliary face, and has every direction-indexed full-geodesic color profile in F2^(2n-6). The number n-6 supersedes the weaker n-3 helper bound from Theorem 3 above, which used only four-direction prescription.
+
+*Proof.* The preexisting universal seven-direction prescription theorem in this subsection follows from the established monochromatic geodesic theorem in Q8 (Kirchweger, Peitl, Subercaseaux and Szeider, 2025) and the multifacet bridge. For a desired original word w, choose a full base geodesic with prescribed colors w on S. As in Theorem 3, place each helper before or after the base full path depending on its desired color and the starting s-th bit. With the helper-state reference value y_* chosen as zero during the old-direction segment, set each auxiliary mid-state bit y_i equal to the discrepancy between c_i along the chosen base path and the target w_i. The auxiliary starts are obtained by undoing the designated early flips. All original and auxiliary target colors follow as in Theorem 3. The two legality identities hold because each phase term y_i+y_* is antipodally even and each auxiliary edge color x_s is odd under antipodality. \(\square\)
+
+The general form is a profile-completion principle: if k designated original directions can be assigned arbitrary colors by a full base geodesic, then n-k+1 antipodally paired phase-control helpers suffice to make every profile realizable in a face-preserving extension, for k<n. The antipodally even phase map uses its 2^(n-k) possible relative helper states fully, attaining the information-capacity limit for independent correction of the remaining n-k edge colors during one frozen helper-state segment.
+
+This is an active extension, not a counterexample-preserving lift. The project already had seven-direction prescription before the present note; that previously known theorem supplies the improved helper budget.
+
+## Sharp one-helper passivity and two-helper universal profile completion
+
+## Sharp one-helper passivity and two-helper universal profile completion
+
+Let n>=2 and let c be any legal antipodally odd binary undirected-edge coloring of Q_n, so c_i(x+e_i)=c_i(x) and c_i(bar x)=1+c_i(x). Write W(c) for the set of direction-indexed binary profiles of full antipodal geodesics.
+
+**Theorem 1 (one-helper extension factorization).** Let C be any legal odd coloring of Q_(n+1), with one new bit z, such that C_i(x,0)=c_i(x) for all original directions i. Then necessarily
+\[
+C_i(x,z)=c_i(x)\quad\text{for both }z\in F_2,
+\tag{EH1}
+\]
+and
+\[
+\boxed{W(C)=W(c)\times F_2.}\tag{EH2}
+\]
+*Proof.* Oddness gives C_i(x,1)=1+C_i(bar x,0)=1+c_i(bar x)=c_i(x). The new-direction edge has rule C_z(x,z)=d(x), independent of z; global oddness forces d(bar x)=1+d(x). Projection of any full extension geodesic onto original directions gives a full base geodesic, proving inclusion in W(c) times F2. Conversely, choose a base geodesic realizing w from root x. Put the new-direction step before all original steps if the desired z-color equals d(x), and after all original steps otherwise. At the latter position its color is d(bar x)=1+d(x). The original profile remains w in either placement. This proves (EH2). \(\square\)
+
+**Theorem 2 (two-helper universal full-profile completion).** Every legal odd coloring c of Q_n, n>=2, admits a legal odd extension C to Q_(n+2), agreeing with c on the auxiliary face (u,v)=00, for which
+\[
+\boxed{W(C)=F_2^{n+2}.}\tag{EH3}
+\]
+Such an extension may be defined explicitly by
+\[
+b_i(x)=x_{i+1\bmod n},\qquad
+C_i(x,u,v)=
+\begin{cases}
+c_i(x),&u=v,\\
+b_i(x),&u\ne v,
+\end{cases}\ (0\le i<n),
+\tag{EH4}
+\]
+\[
+\boxed{C_u(x,u,v)=v,\qquad C_v(x,u,v)=x_0.}\tag{EH5}
+\]
+For any prescribed target profile, the resulting witness starts in the original auxiliary face 00 and uses just one of the two guard-direction arrangements u, old steps, v or v, old steps, u.
+
+*Proof.* In (EH4), c_i and b_i each ignore their own x_i and are odd under global x complementation; the equality predicate u=v is unchanged when u,v are both flipped. The rule C_u=v ignores u and flips under global antipodality; C_v=x_0 ignores v and flips under global antipodality. Thus C is legal and odd, and agrees with c on the 00 face.
+
+Prescribe an old-direction word w=(w_0,...,w_(n-1)) and new-direction bits (p,q)=(w_u,w_v). Put
+\[
+\boxed{x_0=1+p+q.}\tag{EH6}
+\]
+Consider the cyclic-reader coloring b on Q_n. Given any direction permutation pi, its profile equations are
+\[
+w_i=x_{i+1\bmod n}+[\ i+1\bmod n\text{ appears before }i\text{ in }\pi\ ].
+\tag{EH7}
+\]
+These determine one root x for every pi,w. Choosing pi=(n-1,0,1,...,n-2) gives x_0=w_(n-1), while choosing pi=(0,1,...,n-1) gives x_0=1+w_(n-1). Since n>=2, the two lists are valid, and one of them produces the desired x_0 from (EH6).
+
+Start C at (x,0,0). If p=0, take the complete direction order (u,pi,v). The first new step has color C_u=0, then the original steps are on the face (u,v)=(1,0), where their colors are b and yield w; finally v is used at original endpoint bar x, giving color C_v(bar x,1,0)=1+x_0=q. If p=1, use the order (v,pi,u). Its first new edge has color C_v(x,0,0)=x_0=q; the old steps occur at auxiliary state (0,1), again giving w; the last u-edge has color C_u=1=p. In both cases the path traverses all n+2 directions once, terminates at (bar x,1,1), and realizes (w,p,q). \(\square\)
+
+**Corollary 3 (two auxiliary bits suffice without a partial-prescription theorem).** The active-completion construction in the same subsection that used n-6 helper bits based on the known seven-direction prescription is superseded as an upper bound on the number of helpers: a pair of helpers suffices for all n>=2. In contrast, one-helper extensions have the product property (EH2) and cannot create missing original-direction profiles. In particular, a face-preserving full-profile extension theorem by itself supplies no information about whether W(c) contains a given profile, since (EH3) holds for every legal base c independently of its profile support.
+
+**Finite audit.** The constructive witness formulas were checked against independently generated legal odd base edge colorings for dimensions n=2,3,4,5,6. All 2^(n+2) target profiles were tested for n=2,3,4,5, and 200 sampled targets for n=6, including verification of the returned rooted geodesic endpoint and all edge colors. The dimension-uniform proof does not rely on this enumeration.
+
+**Scope.** The construction requires adding dimensions and modifies old-direction edge colors on auxiliary faces with u different from v. Consequently it is not a counterexample-preserving lift and does not settle unrestricted NORI1. The primary conclusion is a sharp distinction between passive one-helper extensions and programmable two-helper extensions.
+
+### Factorial witness lower bound for two-helper completion
+
+**Corollary 4 (uniform factorial witness multiplicity).** For the two-helper extension C in (EH4)-(EH5), every prescribed profile in F2^(n+2) is attained by at least n! rooted, ordered full antipodal geodesics.
+
+*Proof.* Fix a target (w,p,q). Among all n! permutations pi, half place original direction 0 before direction n-1 and half place it after. Equation (EH7) then determines x_0 as one of the two values w_(n-1) or 1+w_(n-1), respectively. Hence n!/2 direction permutations give the root parity (EH6), and each determines a full geodesic starting on the 00 auxiliary face with the target profile. Reversing these paths gives another n!/2 rooted full geodesics starting on the 11 auxiliary face, with unchanged direction-indexed colors. These two classes are disjoint by starting auxiliary state, yielding n! witnesses. \(\square\)
+
+The result counts rooted, ordered paths. In the absence of any assumptions on c it supplies a uniform positive lower bound for every profile of the extension.

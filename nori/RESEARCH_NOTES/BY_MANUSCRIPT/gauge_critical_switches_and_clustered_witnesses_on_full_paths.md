@@ -4,6 +4,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 
 - [A single branching target across two reducible feedback components leaves prescribed restoration roots empty](../note_0868fc3b9c03299a5e19a9b8.md) — active/proved
 - [A tree interaction face with empty endpoint roots and one internal defect](../note_0ef014a49eca70c6785725e2.md) — active/proved
+- [All-dimensional rooted rainbow two-direction obstruction](../note_nori_all_odd_rooted_rainbow_deficit_20261016.md) — active/proved
 - [Antipodal degree duality, alternating-cycle normal form and universal degree-pattern realization](../note_nori_degree_dual_alternating_cycles_and_folded_cube_orientation_20261015.md) — active/proved
 - [Balanced odd cubes with half the directions unavailable as first monochromatic steps](../note_nori_balanced_half_direction_first_step_obstruction_20261015.md) — active/proved
 - [Balanced six-cube refutes canonical star-midpoint completion](../note_nori_balanced_q6_canonical_star_midpoint_failure_20261015.md) — active/proved
@@ -17,9 +18,11 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Disconnected favorable-root set on Q4](../note_ad3350250b41eda07935d8c9.md) — active/proved
 - [Every weak-majority edge extends to a monochromatic antipodal geodesic](../note_nori_weak_majority_edge_extension_20261015.md) — active/proved
 - [Facet imbalance extremality and weighted-majority local maxima](../note_nori_facet_imbalance_extremal_20261014.md) — active/proved
+- [Folded-cube cut rigidity, primitive walks, and rooted cycle obstruction](../note_nori_folded_cube_transit_conservation_20261016_r10917.md) — active/proved
 - [Folded-cube orientation and paired-square reductions](../note_nori_folded_cube_semieulerian_alternating_girth_equivalence_20261015.md) — active/proved
 - [Hall expansion for balanced geodesic-support layers and Aharoni-Haxell midpoint obstruction](../note_1ff21b3c669e3aeae6196e4a.md) — active/proved
 - [Hamming-layer barriers admit exponentially many paired-root repairs](../note_nori_hamming_layer_mass_paired_activations_20261015.md) — active/proved
+- [Infinite unimodular shift countermodels with odd skew Pfaffian](../note_nori_shift_odd_pfaffian_countermodels_20261016_r10917.md) — active/proved
 - [Isolated projective Petrie cycles under cyclic square exchanges](../note_nori_even_exchange_isolation_20261014.md) — active/proved
 - [Isolated projective Petrie cycles under cyclic square exchanges](../note_nori_even_exchange_isolation_20261014.md) — active/proved
 - [Linear antipodal detours inside connected switch components](../note_nori_antipodal_switch_component_long_detours_20261015.md) — active/proved
@@ -37,7 +40,9 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Sharp spectral multiplicity inequality](../note_2156aeb90a17f7cad5afae57.md) — active/proved
 - [Shortest antipodal walk square-derivative budget](../note_92a76c6358e805801170c0ae.md) — active/proved
 - [Sorting parallel facet colors can create a monochromatic antipodal geodesic in an ordinary cube](../note_parallel_facet_compression_creates_zero_geodesic_20261015.md) — active/proved
+- [Square-coherence obstruction: strongly connected unimodular shift countermodels](../note_nori_arc_digraph_eulerian_high_chromatic_no_alt_cycles_20261016.md) — active/proved
 - [Transverse facet repair synchronization](../note_5dd4e13ff16c4fbd97617dc3.md) — active/proved
 - [Two phase restoration cuts](../note_f59e74d95b60e26b34ade887.md) — active/proved
+- [Universal directed edge expansion and strong connectivity of near-balanced folded cubes](../note_nori_folded_nearbalanced_directed_cut_expansion_20261016_r10917.md) — active/proved
 - [Universal double-escape balanced reduction gadget](../note_701d5a72dc49165e8c5dec13.md) — active/proved
 - [Wu Yang 2026 path theorem and geodesic rook-label obstruction](../note_d4b1f0b89bec3224588d0169.md) — active/proved

@@ -152,9 +152,9 @@
   "article_versions": {
     "article_xv_projective_face_flag_unification": {
       "composition": {
-        "body_chars": 1913320,
-        "composed_through_revision": 10882,
-        "composition_version": 540,
+        "body_chars": 1944850,
+        "composed_through_revision": 11195,
+        "composition_version": 550,
         "frontier": {
           "current": null
         },
@@ -212,9 +212,9 @@
     },
     "nori_article_viii_edges": {
       "composition": {
-        "body_chars": 239057,
-        "composed_through_revision": 10811,
-        "composition_version": 83,
+        "body_chars": 298141,
+        "composed_through_revision": 11250,
+        "composition_version": 102,
         "frontier": {
           "current": null
         },
@@ -242,9 +242,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 1358860,
-        "composed_through_revision": 10914,
-        "composition_version": 369,
+        "body_chars": 1485990,
+        "composed_through_revision": 11253,
+        "composition_version": 408,
         "frontier": {
           "current": null
         },
@@ -287,9 +287,9 @@
     },
     "nori_article_xiv_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 1092139,
-        "composed_through_revision": 10344,
-        "composition_version": 241,
+        "body_chars": 1176953,
+        "composed_through_revision": 11237,
+        "composition_version": 258,
         "frontier": {
           "current": null
         },
@@ -303,10 +303,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-16T19:23:17.932753+00:00",
+  "generated_at": "2026-10-17T01:31:34.16527+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 362,
+  "research_note_count": 411,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -330,9 +330,9 @@
     },
     "nori_cubical_curvature_exchange_topology": {
       "composition": {
-        "body_chars": 207633,
-        "composed_through_revision": 10343,
-        "composition_version": 32,
+        "body_chars": 250744,
+        "composed_through_revision": 11236,
+        "composition_version": 41,
         "frontier": {
           "current": null
         },
@@ -346,9 +346,9 @@
     },
     "nori_edge_central_carriers": {
       "composition": {
-        "body_chars": 239008,
-        "composed_through_revision": 10810,
-        "composition_version": 78,
+        "body_chars": 298092,
+        "composed_through_revision": 11249,
+        "composition_version": 97,
         "frontier": {
           "current": null
         },
@@ -474,9 +474,9 @@
     },
     "nori_matroidal_reachability_long_path_bounds": {
       "composition": {
-        "body_chars": 575945,
-        "composed_through_revision": 10913,
-        "composition_version": 105,
+        "body_chars": 703075,
+        "composed_through_revision": 11252,
+        "composition_version": 144,
         "frontier": {
           "current": null
         },
@@ -554,9 +554,9 @@
     },
     "nori_type_a_rook_gallery_topology": {
       "composition": {
-        "body_chars": 160209,
-        "composed_through_revision": 9321,
-        "composition_version": 120,
+        "body_chars": 201912,
+        "composed_through_revision": 11204,
+        "composition_version": 128,
         "frontier": {
           "current": null
         },
@@ -634,9 +634,9 @@
     },
     "opposed_projective_face_windows_and_complete_paths": {
       "composition": {
-        "body_chars": 1566281,
-        "composed_through_revision": 10831,
-        "composition_version": 502,
+        "body_chars": 1597811,
+        "composed_through_revision": 11194,
+        "composition_version": 512,
         "frontier": {
           "current": null
         },
@@ -649,7 +649,7 @@
       "version": 2
     }
   },
-  "snapshot_revision": 6179,
+  "snapshot_revision": 6516,
   "startup_broadcasts": [
     {
       "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
@@ -1013,14 +1013,14 @@
     },
     "antipodal_multifacet_bridge_and_seven_coordinate_universality": {
       "composition": {
-        "body_chars": 23914,
-        "composed_through_revision": 10085,
-        "composition_version": 8,
+        "body_chars": 41683,
+        "composed_through_revision": 11248,
+        "composition_version": 13,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Dual near-geodesic asymptotic equivalence via shortest one-change antipodal path tensorization",
+        "source_note": "note_2ae1db9f5fcdd07c304ba96e",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1387,14 +1387,14 @@
     },
     "cartesian_factorization_of_paired_roots_and_interaction_prime_reduction": {
       "composition": {
-        "body_chars": 159491,
-        "composed_through_revision": 10608,
-        "composition_version": 46,
+        "body_chars": 170462,
+        "composed_through_revision": 11089,
+        "composition_version": 49,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Orbit-disjoint product packing and structural constraints on critical successful colorings",
+        "source_note": "note_b4d7a9679a92be8f7d7af1c4",
         "stale": null,
         "stale_dependencies": []
       },
@@ -1624,14 +1624,14 @@
     },
     "complementary_rank_geodesic_counting_and_parity_blindness": {
       "composition": {
-        "body_chars": 6702,
-        "composed_through_revision": 7635,
-        "composition_version": 1,
+        "body_chars": 11303,
+        "composed_through_revision": 11054,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Complementary rank convolution identity and a positive parity-blind family",
+        "source_note": "Signed path-orbit incidence law and dimension-uniform frustrated path triangles",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2185,14 +2185,14 @@
     },
     "directed_influence_components_and_monotone_seam_lifting": {
       "composition": {
-        "body_chars": 140304,
-        "composed_through_revision": 10618,
-        "composition_version": 46,
+        "body_chars": 160849,
+        "composed_through_revision": 11193,
+        "composition_version": 53,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Unbounded sink components with at most seven branching directions",
+        "source_note": "Antipodal bisection oracle algorithm",
         "stale": null,
         "stale_dependencies": []
       },
@@ -2728,14 +2728,14 @@
     },
     "full_geodesic_color_profiles_span_the_entire_binary_space": {
       "composition": {
-        "body_chars": 171707,
-        "composed_through_revision": 10809,
-        "composition_version": 52,
+        "body_chars": 212990,
+        "composed_through_revision": 11177,
+        "composition_version": 66,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Rainbow, Hollom, and Eulerian synthesis: dimension-uniform proofs and explicit conditional absorption target",
+        "source_note": "Improved universal three-direction prescription probability and a six-cube upper obstruction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3865,14 +3865,14 @@
     },
     "paired_direction_involutions_and_geodesic_endpoint_matchings": {
       "composition": {
-        "body_chars": 351538,
-        "composed_through_revision": 10912,
-        "composition_version": 96,
+        "body_chars": 478598,
+        "composed_through_revision": 11251,
+        "composition_version": 135,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Influence-cone holonomy obstruction and single-crossing mutual square bridge theorem",
+        "source_note": "Stable pivotal connector abundance under sparse direct-path defects",
         "stale": null,
         "stale_dependencies": []
       },
@@ -4987,14 +4987,14 @@
     },
     "square_defects_and_path_order_holonomy_in_dimension_simple_chain_lifts": {
       "composition": {
-        "body_chars": 12599,
-        "composed_through_revision": 7653,
-        "composition_version": 3,
+        "body_chars": 55694,
+        "composed_through_revision": 11235,
+        "composition_version": 12,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Perfect-matching obstruction under boundary root-slide repairs",
+        "source_note": "Sparse vertex-star gauge repair of prescribed profiles",
         "stale": null,
         "stale_dependencies": []
       },
@@ -5361,14 +5361,14 @@
     },
     "tournament_interleaving_and_functional_dependency_geodesics": {
       "composition": {
-        "body_chars": 22801,
-        "composed_through_revision": 9320,
-        "composition_version": 6,
+        "body_chars": 59875,
+        "composed_through_revision": 11203,
+        "composition_version": 13,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Abstract four-label inversion system proves star identities and affine spanning alone permit a one-hole image; isolates the indispensable matrix-supported weight condition.",
+        "source_note": "note_7e460db93c91b696deaed281",
         "stale": null,
         "stale_dependencies": []
       },

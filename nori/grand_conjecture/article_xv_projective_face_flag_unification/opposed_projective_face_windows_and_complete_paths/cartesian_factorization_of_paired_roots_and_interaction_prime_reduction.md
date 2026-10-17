@@ -1387,7 +1387,7 @@ Thus hitting every member of this selected family needs \(2^{n-2}\) flips. This 
 
 1. Every direction function is nonlinear, and for each pair of distinct directions \(a,b\), its derivative \(\partial_b c_a\) is nonzero somewhere. Thus the directed influence graph is the complete loopless digraph.
 2. Its red spanning subgraph has \(2^k-k+1\) connected components, with the component descriptions below.
-3. The set \(S(c)\) of roots joined to their antipodes by a monochromatic path, with no path-length restriction, is exactly
+3. The set \(S(c)\) of roots joined to their antipodes by a monochromatic path, with no path-length restriction, is precisely
 \[
 S(c)=\bigl\{x:\text{all dimension pairs are }01\text{ or }10\bigr\}
 \cup
@@ -1415,7 +1415,7 @@ c_{2j}(x)=x_{2j-1}\oplus F_j(x).
 \]
 Each function is independent of its own dimension bit. Every \(z_\ell\) is invariant under complementing all bits; the partner bit in each expression toggles under complementation. Hence the coloring is antipodally odd. If \(k\ge3\), the products \(F_j\) have Boolean degree \(k-1\ge2\), so every direction rule is nonlinear. The partner-bit derivative is one, and changing either bit in any other pair changes \(F_j\) whenever all the remaining \(z_\ell\) equal one. Thus every off-diagonal derivative is nonzero.
 
-*Red component classification.* Regard each two-bit pair as one of four states \(A=00\), \(B=11\), \(U=01\), \(V=10\); call \(U,V\) odd. Since \(F_j=1\) precisely when all other pairs are odd, the red edges in pair \(j\), with all other pairs fixed, are exactly
+*Red component classification.* Regard each two-bit pair as one of four states \(A=00\), \(B=11\), \(U=01\), \(V=10\); call \(U,V\) odd. Since \(F_j=1\) precisely when all other pairs are odd, the red edges in pair \(j\), with all other pairs fixed, are precisely
 \[
 \begin{array}{c|c}
  F_j=0&A\leftrightarrow U,\quad A\leftrightarrow V\\
@@ -1426,8 +1426,8 @@ Each function is independent of its own dimension bit. Every \(z_\ell\) is invar
 There are three types of red components:
 
 - \(C_-\): configurations containing no \(B\) and at least one \(A\). A final remaining \(A\) cannot change, since then \(F_j=1\); no \(B\) can be created while an \(A\) remains. Using one \(A\) as an anchor, any other pair can be changed among \(A,U,V\), and the anchor can be moved. Thus \(C_-\) is connected.
-- \(C_+\): configurations with all pairs odd, together with configurations containing exactly one \(B\), with any number of \(A\)'s. From a state with a single \(B\), change every \(A\) to an odd pair using \(F_j=0\); then change the last \(B\) to odd using \(F_j=1\). Every all-odd configuration is connected to every other by the two-edge red move \(U\to B\to V\) (or its reverse), using one pair at a time. Every such configuration is therefore in one component, and transitions (SR2) preserve the displayed set.
-- For every fixed \(J\subseteq[k]\) with \(|J|\ge2\), \(C_J\): the configurations whose set of \(B\)-pairs is exactly \(J\). Each \(B\) is frozen, as another \(B\) makes \(F_j=0\). Every remaining pair can move among \(A,U,V\) using \(F_j=0\), so \(C_J\) is a connected component.
+- \(C_+\): configurations with all pairs odd, together with configurations containing precisely one \(B\), with any number of \(A\)'s. From a state with a single \(B\), change every \(A\) to an odd pair using \(F_j=0\); then change the last \(B\) to odd using \(F_j=1\). Every all-odd configuration is connected to every other by the two-edge red move \(U\to B\to V\) (or its reverse), using one pair at a time. Every such configuration is therefore in one component, and transitions (SR2) preserve the displayed set.
+- For every fixed \(J\subseteq[k]\) with \(|J|\ge2\), \(C_J\): the configurations whose set of \(B\)-pairs is precisely \(J\). Each \(B\) is frozen, as another \(B\) makes \(F_j=0\). Every remaining pair can move among \(A,U,V\) using \(F_j=0\), so \(C_J\) is a connected component.
 
 These sets partition the entire cube, and (SR2) shows no red edge joins distinct listed sets. There are \(1+1+(2^k-k-1)=2^k-k+1\) components.
 
@@ -1477,3 +1477,133 @@ An antipodal edge orbit is a pair \(\{e,\bar e\}\) of undirected edges. A legal 
 *Proof.* The space of legal colorings is a Boolean cube whose variables are antipodal edge orbits. Connect any known successful coloring to a counterexample by a sequence of single-orbit flips. The first step leaving the successful set has a successful edge-critical predecessor. If that predecessor had disconnected undirected interaction graph, it would factor into at least two independent legal colorings, each successful because any monochromatic full product geodesic projects to full monochromatic geodesics in the factors. The product theorem would supply two orbit-disjoint geodesics, at least one surviving any single-orbit flip. Similarly, if it had two sink directions, deleting them simultaneously expresses it as a two-spectator extension of a legal lower-dimensional coloring. Projecting a successful full geodesic shows that the retained base is successful; the spectator packing theorem with \(k=2\) again supplies two orbit-disjoint geodesics. Both conclusions contradict edge-criticality. \(\square\)
 
 In particular, a proposed dimension-uniform theorem saying that every successful legal coloring with connected interaction graph and at most one sink can avoid each prescribed antipodal edge orbit would imply unrestricted NORI1 by the first-failure argument. The necessary structure above is unconditional; it applies to a hypothetical failure with arbitrarily many nonlinear direction rules.
+
+
+## Quantitative facet gates and path-count extremization
+
+Let \(a\) be an arbitrary binary edge coloring of \(Q_m\), \(m\ge1\). Write \(h_a(z)\) for the number of full geodesics rooted at \(z\) whose color word is \(0^p1^{m-p}\) for some \(0\le p\le m\), counting path orders separately. For an odd Boolean function \(g\), satisfying \(g(\bar z)=1-g(z)\), construct the legal coloring of \(Q_{m+1}\)
+\[
+C_i(x,0)=a_i(x),\qquad C_i(x,1)=1-a_i(\bar x)\ (i<m),\qquad C_m(x,t)=g(x).
+\tag{FG1}
+\]
+Let \(N_R(C_g)\) count its rooted red full antipodal geodesics.
+
+**Theorem (optimal gate).**
+\[
+\boxed{N_R(C_g)=2\sum_{z:g(z)=0}h_a(z).}\tag{FG2}
+\]
+Consequently, over all odd gates,
+\[
+\boxed{\min_gN_R(C_g)=2\sum_{\{z,\bar z\}}\min(h_a(z),h_a(\bar z)),}\tag{FG3}
+\]
+\[
+\boxed{\max_gN_R(C_g)=2\sum_{\{z,\bar z\}}\max(h_a(z),h_a(\bar z)),}\tag{FG4}
+\]
+and \(N_R(C_g)+N_R(C_{1-g})=2\sum_z h_a(z)\). Both extrema are attained by selecting, independently in each antipodal pair, the endpoint with the smaller or larger path count as the red vertex of the new-direction edge.
+
+*Proof.* A red full geodesic starting in the lower facet crosses the new direction at \((z,0)\to(z,1)\), so \(g(z)=0\). Before crossing, its base projection is a red path from some \(x\) to \(z\) using dimensions \(S\); afterward, its upper-facet portion is red from \(z\) to \(\bar x\) using \([m]\setminus S\). Complementing and reversing the upper portion gives a blue path under \(a\) from \(x\) to \(\bar z\). Reversing the red prefix and following the resulting blue path produces a full \(0^*1^*\) geodesic from \(z\) to \(\bar z\). Conversely, cutting such a geodesic at the switch recovers both portions. A red full geodesic starting in the upper facet gives a second copy through the same \(z\). This proves (FG2). The condition \(g(\bar z)=1-g(z)\) permits one eligible vertex per antipodal pair, independently of all other pairs. Minimizing or maximizing the indicated contributions proves (FG3)--(FG4) and the complementary-gate identity. \(\square\)
+
+**Subset-count algorithm.** For \(S\subseteq[m]\), let \(R_x(S)\), respectively \(B_x(S)\), count the red, respectively blue, geodesics from \(x\) to \(x\oplus\mathbf1_S\) that use all dimensions of \(S\). They satisfy the recurrence
+\[
+R_x(S)=\sum_{i\in S}[a_i(x\oplus\mathbf1_{S\setminus\{i\}})=0]R_x(S\setminus\{i\}),
+\quad R_x(\varnothing)=1,
+\]
+with blue recurrence obtained by replacing color zero by one. Then
+\[
+\boxed{h_a(z)=\sum_{S\subseteq[m]}R_{z\oplus\mathbf1_S}(S)
+ B_{z\oplus\mathbf1_S}([m]\setminus S).}\tag{FG5}
+\]
+Computing both recurrences for all base roots uses \(O(m4^m)\) arithmetic operations. The optimal gate is then obtained from the \(2^{m-1}\) antipodal pairs, without enumerating the \(2^{2^{m-1}}\) admissible gates.
+
+**Sharp insertion bounds.** When \(a\) is itself antipodally odd, both horizontal facets in (FG1) equal \(a\). Each red full base geodesic permits insertion of the new red step at between one and \(m\) of its \(m+1\) vertices: its antipodal endpoints have opposite gate colors. Accounting for the two initial facet choices yields
+\[
+\boxed{2N_R(a)\le N_R(C_g)\le2mN_R(a).}\tag{FG6}
+\]
+Both bounds occur in every \(m\ge2\) with the same legal base coloring
+\[
+a_0(x)=x_1,\qquad a_i(x)=x_0\quad(1\le i<m).
+\]
+A red full base geodesic traverses dimension zero first from \(x_0=1,x_1=0\), or last from \(x_0=0,x_1=1\), and traverses the other dimensions in any order. Thus \(N_R(a)=2^{m-1}(m-1)!\). Every internal vertex on these red paths has \(x_0=0\). The odd gate \(g(x)=1-x_0\), red only at \(x_0=1\), admits one insertion per path and attains the lower bound. The odd gate \(g(x)=x_0\), red only at \(x_0=0\), admits \(m\) insertions per path and attains the upper bound. \(\square\)
+
+The known qualitative facet bridge states that every odd gate has positive \(N_R(C_g)\) if and only if some antipodal pair satisfies \(h_a(z)h_a(\bar z)>0\). Equations (FG2)--(FG6) refine this bridge by determining the minimum and maximum counts and the corresponding optimal gates.
+
+
+**Corollary (factorized gate-count distribution).** Under the hypotheses and notation of (FG1)--(FG4), the full counting polynomial over admissible odd gate functions factors as
+\[
+\boxed{\sum_{\substack{g:Q_m\to\mathbb F_2\\g(\bar z)=1-g(z)}}t^{N_R(C_g)/2}
+=\prod_{\{z,\bar z\}}\bigl(t^{h_a(z)}+t^{h_a(\bar z)}\bigr).}\tag{FG7}
+\]
+Consequently, for a uniformly random odd gate,
+\[
+\boxed{\mathbb E_gN_R(C_g)=\sum_z h_a(z),\qquad
+\operatorname{Var}_gN_R(C_g)
+=\sum_{\{z,\bar z\}}\bigl(h_a(z)-h_a(\bar z)\bigr)^2.}\tag{FG8}
+\]
+The number of odd gates producing zero red full geodesics equals
+\[
+\boxed{\prod_{\{z,\bar z\}}\left([h_a(z)=0]+[h_a(\bar z)=0]\right).}\tag{FG9}
+\]
+In particular that product is positive precisely when the paired-root set \(P(a)\) is empty.
+
+*Proof.* The contribution of each antipodal pair to \(N_R(C_g)/2\) in (FG2) is one of the two integers \(h_a(z),h_a(\bar z)\), chosen independently of the contributions from every other pair. Multiplying the two-term generating factors gives (FG7). Each choice has probability one-half, so linearity of expectation and independence give (FG8); the variance of twice a fair choice between \(u\) and \(v\) equals \((u-v)^2\). The constant term of (FG7) counts gates for which every chosen contribution vanishes, giving (FG9). \(\square\)
+
+Equivalently, with one independent sign \(\varepsilon_{\{z,\bar z\}}\in\{-1,1\}\) for each antipodal pair, \(N_R(C_g)\) is the Rademacher sum \(\sum_z h_a(z)+\sum_{\{z,\bar z\}}\varepsilon_{\{z,\bar z\}}(h_a(z)-h_a(\bar z))\). This is an identity of the complete distribution over all legal extensions of a fixed lower-facet coloring.
+
+
+## Middle-level favorable-root geometry and antipodal index
+
+## Middle-level roots and topology of antipodal favorable sets
+
+Let \(a_i(x)=\bigoplus_{j\ne i}x_j\) define an undirected-edge coloring of \(Q_m\). Each rule ignores its own direction bit and depends on every other direction; the undirected interaction graph is complete. Let \(A(a)\) be the set of starting vertices of full antipodal geodesics with nondecreasing color word \(0^K1^{m-K}\), and \(P(a)=A(a)\cap\overline{A(a)}\).
+
+**Theorem 1 (middle-level root characterization).** For \(m=2h+1\),
+\[
+A(a)=P(a)=\{x:|x|=h\text{ or }h+1\}.
+\tag{ML1}
+\]
+For \(m=2h\),
+\[
+A(a)=\begin{cases}
+\{x:|x|=h\text{ or }h+1\}&h\text{ even},\\
+\{x:|x|=h-1\text{ or }h\}&h\text{ odd},
+\end{cases}
+\qquad P(a)=\{x:|x|=h\}.
+\tag{ML2}
+\]
+Every admitted root has a witness whose direction order is obtained by arranging its starting vertex bits into a specified alternating pattern.
+
+*Proof.* Let \(p=|x|\bmod2\), and let \(\pi\) be a full direction order. Immediately before step \(k\), the total parity has changed by \(k-1\bmod2\), while the \(\pi_k\)-th starting bit is unchanged. Thus its edge color is \(w_k=p\oplus(k-1\bmod2)\oplus x_{\pi_k}\). The required profile \(w_k=[k>K]\) forces
+\[
+x_{\pi_k}=p\oplus(k-1\bmod2)\oplus[k>K].
+\tag{ML3}
+\]
+The word \(((k-1\bmod2)\oplus[k>K])_{k=1}^m\) contains \(h+1\) ones for even \(K\), or \(h\) for odd \(K\), when \(m=2h+1\); when \(m=2h\) the respective counts are \(h\) and \(h-1\). For even \(p\) the forced starting word has this weight, while for odd \(p\) its weight is the complement. Requiring \(|x|\equiv p\pmod2\) gives the displayed layers. Conversely, for every weight in the displayed list, choose a permitted cut \(K\) and rearrange the starting bits to satisfy (ML3). In odd dimension, antipodal translation leaves every \(a_i\) unchanged; hence \(A(a)=\overline{A(a)}\). In even dimension, intersecting the two adjacent levels with their antipodal images leaves the central level. \(\square\)
+
+Given any vertex subset \(V\subseteq Q_m\), let \(\mathcal K(V)\) be the cubical complex consisting of all faces of \(Q_m\) whose vertices belong to \(V\).
+
+**Theorem 2 (complete interaction with cohomological index one).** For every odd \(m=2h+1\ge3\), \(\mathcal K(P(a))\) is the connected middle-level graph between the weights \(h\) and \(h+1\). Its vertex number, edge number, and integral first Betti number are
+\[
+|V|=2\binom{2h+1}{h},\qquad |E|=(h+1)\binom{2h+1}{h},\qquad
+b_1=(h-1)\binom{2h+1}{h}+1.
+\tag{ML4}
+\]
+Antipodal complementation acts freely on the realization. Its double-cover characteristic class \(\omega\in H^1(\mathcal K(P(a))/\tau;\mathbb F_2)\) satisfies
+\[
+\omega\ne0,\qquad \omega^2=0.
+\tag{ML5}
+\]
+In particular the cohomological index stays one, although the cube dimension grows without bound and the direction-interaction graph is complete.
+
+*Proof.* No two-dimensional cube face lies in just two consecutive Hamming-weight levels, so the induced cubical complex is one-dimensional. Each weight-\(h\) vertex has \(h+1\) neighbors of weight \(h+1\), giving the edge count. Two weight-\(h\) subsets differing by one exchange connect through their union; the Johnson exchange graph is connected, hence so is the middle-level graph. Its first Betti number is \(|E|-|V|+1\). For \(m\ge3\), antipodality neither fixes a vertex nor exchanges the endpoints of any graph edge, so its action on the realization is free. The covering is nontrivial because the covering graph is connected. Its quotient is again a graph and has vanishing second cohomology. Therefore its nonzero covering class squares to zero. \(\square\)
+
+**Theorem 3 (arbitrarily high-dimensional torus root complexes).** Let \(b_r\) on \(Q_{3r}\) be the Cartesian product of \(r\) copies of the three-dimensional coloring from Theorem 1. Then
+\[
+\mathcal K(P(b_r))\cong(S^1)^r,\qquad
+H_j(\mathcal K(P(b_r));\mathbb Z)\cong\mathbb Z^{\binom rj}\quad(0\le j\le r).
+\tag{ML6}
+\]
+Antipodality acts as a half-turn in each circle factor; its quotient is a torus, and its associated double-cover class has cohomological index one.
+
+*Proof.* The three-dimensional favorable and paired-root set is \(Q_3\setminus\{000,111\}\), whose induced graph is a six-cycle. The existing Cartesian favorable-root and paired-root factorization shows that the product coloring's paired-root set is the Cartesian product of these six-vertex sets. Faces supported on a vertex Cartesian product are products of supported factor faces, giving the cubical product of \(r\) circles. The homology is obtained by the Kunneth formula. Complementing the three bits moves each six-cycle vertex to the opposite vertex, inducing simultaneous half-turns on the torus. Its quotient is a torus, modeled as \(\mathbb R^r/(\mathbb Z^r+\mathbb Z(\frac12,\ldots,\frac12))\). Its nontrivial degree-one covering class squares to zero in the cohomology ring of a torus. \(\square\)
+
+The theorems provide a constructive family of geodesic witnesses through (ML3). They also show that complete direction interaction and the paired-root property do not force favorable-root complexes to be contractible or to have cohomological index growing with ambient dimension. The results do not prove unrestricted paired-root existence.

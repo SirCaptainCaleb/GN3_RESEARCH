@@ -1934,6 +1934,458 @@ These circulations concern optimal terminal-color responses. They differ from ra
 **Finite audit.** Independent subset dynamic programming checked the root-switch formula on the balanced lifts with \(N=4,8\). Rational arithmetic checked the response identity at all three ranks of the \(N=4\) lift: the total currents are \(-128/3,-64/3,-32/3\), the mean slacks are \(0,1/12,1/12\), and the successive potentials are \(2/3,11/12,1\). These checks support the formulas; the dimension-uniform conclusions follow from the proofs above.
 
 
+#### Sharp order-template complexity for direction-indexed color profiles
+
+For a legal coloring \(c\) and a permutation \(\pi\in S_n\), let
+\[
+W_\pi(c)=\{w(x,\pi):x\in Q_n\}\subseteq\mathbb F_2^n,
+\]
+where \(w_i(x,\pi)\) is the color encountered when direction \(i\) is traversed. The global profile set is \(W(c)=\bigcup_\pi W_\pi(c)\). For \(s\in\mathbb F_2^n\), define the direction-gauge recoloring \(c^s_i(x)=c_i(x)\oplus s_i\). This recoloring remains legal and satisfies \(W_\pi(c^s)=W_\pi(c)\oplus s\).
+
+**Theorem (minimum fixed-order image).** For every legal coloring of \(Q_n\), \(n\ge2\), and every permutation \(\pi\),
+\[
+\boxed{|W_\pi(c)|\ge4.}\tag{OT1}
+\]
+The bound is sharp simultaneously for every permutation, for every \(n\ge2\).
+
+*Proof.* Write \(F(x)=w(x,\pi)\). Antipodal oddness gives \(F(\bar x)=\mathbf1\oplus F(x)\), so the image consists of complement-pairs. For each \(i\), \(F_i(x)\) ignores the input bit \(x_i\): the prefix preceding direction \(i\) excludes that direction, and \(c_i\) ignores its own bit. Suppose the image had only two members \(a,\bar a\). Then \(F(x)=a\oplus h(x)\mathbf1\) for one Boolean function \(h\). Because every output \(F_i\) ignores \(x_i\), \(h\) ignores every input bit, hence is constant. This contradicts \(F(\bar x)=\mathbf1\oplus F(x)\). The image is nonempty and complement-invariant, so its cardinality is at least four. The coloring below attains four. \(\square\)
+
+**Theorem (sharp exponential obstruction to predetermined orders).** Fix \(n\ge2\). There is a legal affine coloring \(c^\star\) such that
+\[
+\boxed{\min\{|P|:P\subseteq S_n,\quad\bigcup_{\pi\in P}W_\pi(c^\star)=\mathbb F_2^n\}
+=2^{n-2}.}\tag{OT2}
+\]
+In particular, for every coloring-independent collection \(P\) of fewer than \(2^{n-2}\) direction permutations, there is a legal affine coloring \(d\) for which no order in \(P\) gives a monochromatic full antipodal geodesic, from any starting root and in either color.
+
+*Proof.* Set
+\[
+c^\star_0(x)=x_1,\qquad c^\star_i(x)=x_0\quad(1\le i<n).
+\]
+Every rule ignores its own bit and is reversed by antipodal complementation. For a fixed order \(\pi\), let \(S_\pi\subseteq\{1,\ldots,n-1\}\) be its directions occurring after direction zero. Then
+\[
+w_i(x,\pi)=x_0\oplus\mathbf1_{\{i\in S_\pi\}}
+\quad(i\ge1),
+\]
+and
+\[
+w_0(x,\pi)=x_1\oplus\mathbf1_{\{1\text{ occurs before }0\}}.
+\]
+Thus \(W_\pi(c^\star)\) comprises four vectors: the zero-direction bit is arbitrary, while the vector in the other \(n-1\) slots is either \(\mathbf1_{S_\pi}\) or \(\mathbf1_{\bar S_\pi}\). As \(S_\pi\) ranges over all subsets, these four-element sets form a partition of \(\mathbb F_2^n\), indexed by the \(2^{n-2}\) complementary pairs \(\{S,\bar S\}\) of subsets of \(\{1,\ldots,n-1\}\). Every subset \(S\) is realized by putting its complement before direction zero and \(S\) afterward. This proves (OT2).
+
+If \(|P|<2^{n-2}\), its profile union omits some vector \(s\). Direction-gauge recoloring \(d=(c^\star)^s\) makes a full path red precisely when its original profile is \(s\). Hence none of the tested orders admits a red full geodesic. If one of them admitted a blue full geodesic, translating its starting root antipodally while retaining the same order would give a red full geodesic, a contradiction. This proves the last assertion. \(\square\)
+
+**Interpretation and limitation.** The existing rotation-orbit theorem (RO1) and full affine-span theorem establish strong constraints on \(W(c)\) for all legal colorings, but do not control the number of orders needed to cover its attainable profiles. This sharp exponential obstruction already occurs in affine colorings; therefore no fixed family of subexponentially many direction orders can guarantee a monochromatic geodesic for every legal coloring. The theorem concerns coloring-independent order templates: an algorithm choosing orders in response to the coloring is outside its scope. It neither asserts nor refutes the unrestricted NORI1 conjecture.
+
+
+**Corollary (full derivative data cannot select a small universal order template).** The \(2^n\) legal colorings \(c^{\star,s}_i=c^\star_i\oplus s_i\), \(s\in\mathbb F_2^n\), used in (OT2) have identical nonconstant Boolean derivative data: for every \(i\), every nonempty set \(J\subseteq[n]\), and every \(x\),
+\[
+\partial_J c^{\star,s}_i(x)=\partial_J c^\star_i(x).
+\]
+In particular they have the same directed influence graph and the same pattern of noncommuting direction pairs. If a method assigns to each coloring a set of direction orders using only its Boolean derivatives of positive order (or any invariant determined by those derivatives), and promises that some assigned order supports a monochromatic full antipodal geodesic, then that method must assign at least \(2^{n-2}\) orders to this common derivative class.
+
+*Proof.* Every nonempty Boolean derivative annihilates an additive constant \(s_i\), proving identical derivative data. The method must therefore assign the same order family \(P\) to all \(c^{\star,s}\). By (OT2), fewer than \(2^{n-2}\) orders miss a direction-indexed profile \(s\) in the base coloring, so the recoloring \(c^{\star,s}\) has no monochromatic full antipodal geodesic with any order in \(P\). \(\square\)
+
+**Signed-order cancellation obstruction.** For the same star-reader coloring \(c^\star\), in every dimension \(n\ge3\) and at every root \(x\),
+\[
+\boxed{
+\sum_{\substack{\pi\in S_n:\\(x,\pi)\text{ is a red full geodesic}}}
+\operatorname{sgn}(\pi)=0.}\tag{OT3}
+\]
+Indeed red direction steps \(i\ge1\) require \(x_0=0\) before direction zero and \(x_0=1\) afterward. Thus any all-red full word has direction zero first (when \(x_0=1\)) or last (when \(x_0=0\)), with all \(n-1\) remaining directions in an arbitrary order. The direction-zero rule \(c_0=x_1\) determines whether that root permits the corresponding placement but imposes no restrictions on the internal order. For \(n-1\ge2\), the \(S_{n-1}\) alternating signs cancel. Nevertheless this coloring has
+\[
+N_R(c^\star)=2^{n-1}(n-1)!>0
+\]
+rooted red full geodesics. Hence nonvanishing of the alternating-signed full-geodesic count at some root is a false strengthening of NORI1 in every dimension \(n\ge3\).
+
+
+#### Unary-reader betweenness and sharp universal-order systems in dimensions three and four
+
+Let \(n\ge3\), choose a map \(r:[n]\to[n]\) with \(r(i)\ne i\), and constants \(\varepsilon_i\in\mathbb F_2\). Set
+\[
+c_i(x)=x_{r(i)}\oplus\varepsilon_i.
+\tag{UB1}
+\]
+These are legal antipodally odd edge colors. For a direction permutation \(\pi\), write \(j\prec_\pi i\) when \(j\) is visited before \(i\).
+
+**Theorem (reader-betweenness certificate).** An order \(\pi\) supports a monochromatic full antipodal geodesic, from some starting vertex, if and only if for each \(j\in\operatorname{im}r\), the values
+\[
+\boxed{\varepsilon_i\oplus\mathbf1_{\{j\prec_\pi i\}},
+\qquad i\in r^{-1}(j)}
+\tag{UB2}
+\]
+are all equal. When this holds, for each specified color there are \(2^{n-|\operatorname{im}r|}\) starting roots giving a monochromatic full geodesic in that order. Thus the good order set is the solution set of a family of elementary precedence/betweenness constraints.
+
+*Proof.* At the moment direction \(i\) is traversed, its reader bit \(x_{r(i)}\) has been toggled if and only if \(r(i)\prec_\pi i\). Its edge color is therefore
+\[
+x_{r(i)}\oplus\varepsilon_i\oplus\mathbf1_{\{r(i)\prec_\pi i\}}.
+\]
+To make every edge have a prescribed common color \(t\), solve the equation \(x_{r(i)}=t\oplus\varepsilon_i\oplus\mathbf1_{\{r(i)\prec_\pi i\}}\) for each direction. Equations with different reader bits are independent, and those sharing a reader agree precisely under (UB2). Each reader bit is then prescribed, while the \(n-|\operatorname{im}r|\) other starting bits are free. \(\square\)
+
+**Theorem (one successful unoriented order in \(Q_3\) and \(Q_4\)).** For \(n=3\), the affine legal coloring
+\[
+c_0=1\oplus x_1,\qquad c_1=x_2,\qquad c_2=x_1
+\tag{UB3}
+\]
+admits monochromatic full antipodal geodesics only in orders \((0,1,2)\) and \((2,1,0)\).
+
+For \(n=4\), the coloring
+\[
+\boxed{c_0=1\oplus x_1,\quad c_1=1\oplus x_2,\quad
+c_2=x_1,\quad c_3=x_2}
+\tag{UB4}
+\]
+admits them only in orders \((0,1,2,3)\) and \((3,2,1,0)\). All listed orders admit both colors with suitable roots.
+
+*Proof.* In (UB3), directions zero and two share reader one and have opposite additive constants. Condition (UB2) forces direction one between zero and two, leaving only the two listed orders.
+
+In (UB4), directions zero and two share reader one with opposite constants, forcing direction one between zero and two. Directions one and three share reader two with opposite constants, forcing direction two between one and three. These two betweenness relations force \(0\prec1\prec2\prec3\), or its reversal. By (UB2), each listed order admits \(2^{4-2}=4\) starting roots in each color. The three-dimensional example admits \(2^{3-2}=2\) roots in each color per listed order. \(\square\)
+
+Define a *universal order family* \(P\subseteq S_n\) to be a set of direction orders such that every legal coloring of \(Q_n\) has a monochromatic full antipodal geodesic whose order belongs to \(P\). Let \(u_n\) be its minimum size when such families exist.
+
+**Corollary (minimum universal families at small dimension).**
+\[
+\boxed{u_3=3,\qquad u_4=12.}\tag{UB5}
+\]
+In particular, the prior dimension-uniform template lower bound \(2^{n-2}\) is not sharp at \(n=3,4\).
+
+*Proof.* Permuting direction names in either witness (UB3) or (UB4) realizes an arbitrary chosen reversal pair as the only successful order pair. Thus a universal \(P\) must include at least one representative of every reversal pair, requiring \(n!/2\) orders. Conversely, monochromatic full geodesic existence in these dimensions has been verified by enumerating all \(2^6=64\) legal colorings of \(Q_3\) and all \(2^{16}=65536\) legal colorings of \(Q_4\). Every enumerated coloring has at least one successful order. Reversing a monochromatic path preserves its color, so taking one order from each reversal pair then gives a universal family of size \(n!/2\).
+
+For reproducibility, encode a legal coloring by one binary choice on each orbit of undirected edges under antipodal translation. Enumerate orbits by scanning canonical edges \((x,x\oplus e_i)\), \(x<x\oplus e_i\), first in increasing \(x\), then \(i\). For each orbit bit assignment, check all roots and all direction permutations; a permutation is successful if its path-color word is constant for some root. The enumeration found no coloring with an empty successful-order set; its seven different successful-order masks in dimension three are the seven nonempty unions of three reversal pairs. In dimension four it found 1093 distinct successful-order masks, none empty, including every singleton reversal pair. \(\square\)
+
+**Scope.** The formulas give a dimension-uniform certificate for unary-reader colorings and explicit small-dimensional obstructions for fixed-order proof templates. The factorial template lower bound for all dimensions remains unproved. A finite search over all \(1{,}048{,}576\) legal affine colorings of \(Q_5\) found at least two successful reversal pairs in each, so the particular four-direction gadget does not immediately extend to dimension five inside the affine class. The universal NORI1 conjecture is not resolved by these findings.
+
+
+##### Rootwise affine profile-hull rigidity
+
+For a legal odd coloring \(c\) of \(Q_n\), let \(w(x,\pi)\in\mathbb F_2^n\) record the full geodesic edge colors by direction and set \(\mathcal W_x=\{w(x,\pi):\pi\in S_n\}\).
+
+**Theorem.** There is a root-independent binary subspace \(L(c)\subseteq\mathbb F_2^n\) with a basis of disjoint nonempty even-size support indicators, such that
+\[
+\boxed{\operatorname{aff}\mathcal W_x=x+\operatorname{aff}\mathcal W_0,\qquad
+\dim\operatorname{aff}\mathcal W_x=n-\dim L(c)\ge\lceil n/2\rceil.}
+\tag{RHA1}
+\]
+Both dimension bounds are attained for every \(n\ge2\).
+
+*Proof.* Define \(L_x\) as the annihilator of all differences \(w(x,\pi)+w(x,\sigma)\). By exchanging adjacent directions \(i,j\) after an arbitrary prefix set \(S\) of other directions, \(y\in L_x\) if and only if the weighted edge rule \(\omega_i=y_i c_i\) has zero square curl. Varying \(S\) visits every \(ij\)-square, irrespective of the fixed root, so \(L_x=L(c)\) for all \(x\). The square condition is
+\[
+y_i\Delta_jc_i(z)+y_j\Delta_ic_j(z)=0
+\quad(z\in Q_n,\ i\ne j).
+\tag{RHA2}
+\]
+For each fixed square its solution condition is one of \(y_i=0\), \(y_j=0\), \(y_i=y_j\), or vacuous. All these conditions are preserved under bitwise AND as well as XOR. Thus \(L(c)\) is a Boolean subring of \(\mathbb F_2^n\), whose minimal nonempty support sets are disjoint atoms, and all supports are unions of these atoms.
+
+For \(y\in L(c)\), closedness of \(\omega\) implies \(\omega_i(z)=\phi_y(z)+\phi_y(z+e_i)\) for some vertex potential. Hence every full geodesic has weighted color sum
+\[
+y\cdot w(x,\pi)=g_y(x):=\phi_y(x)+\phi_y(\bar x).
+\]
+Oddness gives \(g_y(x+e_i)+g_y(x)=\omega_i(x)+\omega_i(\bar x)=y_i\); thus \(g_y(x)=g_y(0)+y\cdot x\). But \(g_y(\bar x)=g_y(x)\), so \(y\cdot\mathbf1=0\). Each atom therefore has even size, yielding \(\dim L\le\lfloor n/2\rfloor\). Since the affine annihilator is \(L\), all affine hulls are cosets of \(L^\perp\). The relation \(g_y(x)=g_y(0)+y\cdot x\) implies the claimed root-translation law.
+
+For sharpness, use pairs \((a_r,b_r)\) with \(c_{a_r}(z)=z_{b_r}, c_{b_r}(z)=z_{a_r}\). Then \(L\) consists of vectors constant on each pair, with dimension \(\lfloor n/2\rfloor\). For odd \(n\), add a last direction \(k\) with \(c_k(z)=z_0\), forcing \(y_k=0\) but not constraining the pair indicators. \(\square\)
+
+**Limitation.** For the legal odd \(Q_3\) coloring \(c_0=x_1,c_1=x_2,c_2=x_0\), the space \(L\) is zero, so every rooted affine hull equals \(\mathbb F_2^3\). Nevertheless at root zero the six direction orders realize precisely the six nonconstant profiles; neither \(000\) nor \(111\) occurs at that root. Thus full affine-hull dimension does not imply rootwise profile completeness.
+
+**Fixed-order converse.** For any selected permutation \(\pi\), the full profile maps \(F_\pi:x\mapsto w(x,\pi)\) are precisely the antipodally odd maps \(F:Q_n\to Q_n\) whose \(i\)-th output ignores input bit \(i\). Necessity follows from legal edge coloring. For sufficiency, let \(P_i\) be the preceding-direction mask and prescribe \(c_i(z)=F_i(z+P_i)\). Every such map has at least four output patterns for \(n\ge2\), sharply: an image of only \(\{u,\bar u\}\) would require a common odd scalar \(h(x)\) independent of every input bit, impossible; the map \(F_0=x_1,F_i=x_0\ (i\ge1)\) has four outputs.
+
+
+**Corollary (complete fixed-root two-direction prescription).** For any fixed root \(x\in Q_n\), any two directions \(i\ne j\), and target pair \((a,b)\in\mathbb F_2^2\), there exists a full geodesic from \(x\) whose direction-\(i\) and direction-\(j\) colors are \((a,b)\), unless
+\[
+c_i(z)=z_j+\alpha,\qquad c_j(z)=z_i+\beta\qquad(z\in Q_n)
+\tag{RHA4}
+\]
+for some constants \(\alpha,\beta\). In the exceptional case the realized pair set at \(x\) consists of precisely two complementary pairs and satisfies
+\[
+w_i(x,\pi)+w_j(x,\pi)=x_i+x_j+\alpha+\beta+1
+\quad\text{for every }\pi.
+\tag{RHA5}
+\]
+The exceptional pairs form a matching of directions, so at most \(\lfloor n/2\rfloor\) direction pairs fail four-pattern prescription at any root.
+
+*Proof.* Reversing any full order while keeping \(x\) fixed complements each direction-indexed color: the predecessor set of direction \(i\) becomes its complement among all other directions, so legality and oddness give \(w(x,\pi^{\rm rev})=\mathbf1+w(x,\pi)\). Thus the projection of \(\mathcal W_x\) to the chosen two bits is complement-invariant. If it does not realize all four bit pairs, it realizes a single complementary pair, so \(w_i+w_j\) is independent of the order. By (RHA2), this is equivalent to the square-closedness of the cochain with nonzero labels only in directions \(i,j\). On each square of directions \(i,k\) for \(k\notin\{i,j\}\), closedness forces \(\Delta_k c_i=0\); similarly \(\Delta_k c_j=0\). Since \(c_i\) ignores bit \(i\) and is antipodally odd, it must then have the form \(c_i=z_j+\alpha\), and likewise \(c_j=z_i+\beta\). Conversely (RHA4) makes all weighted square curls vanish and yields (RHA5) by either relative ordering of \(i,j\). The two complementary pairs both occur by reversing an order. Two exceptional pairs cannot share a direction because an edge rule cannot equal both different input bits up to constants. \(\square\)
+
+**Explicit four-witness decoder.** If (RHA4) fails, the weighted cochain supported on \(\{i,j\}\) has a square of nonzero flux, in some pair of square directions \(p,q\). Choose a prefix of the full direction order so that the square reached from the prescribed root \(x\) is that square; interchange the adjacent directions \(p,q\) and keep the suffix unchanged. This produces two full paths from \(x\) with opposite \((i,j)\)-color parity. Reverse each order, still rooted at \(x\), to complement both profile bits, producing all four prescribed pairs. The construction uses at most four explicit full paths once the nonzero-flux square has been identified.
+
+**Sharp failure for three directions.** On \(Q_n\), \(n\ge3\), put \(c_0=x_1,c_1=x_2,c_2=x_0\), and for \(k\ge3\) put \(c_k=x_0\). These rules are legal and odd. For root zero, restriction of any full path color profile to directions \(0,1,2\) is determined solely by their relative order and consists precisely of the six nonconstant three-bit words; neither \(000\) nor \(111\) can occur on these three directions. Nevertheless every pair of these three directions admits all four patterns. Thus the two-direction prescription theorem cannot be extended to three directions using only legal oddness and a fixed root.
+
+
+##### Cyclic reader rooted support obstruction
+
+For n>=3 define c_i(z)=z_(i+1 mod n), a legal odd edge coloring. At a root x set b_i=x_(i+1). The full direction-indexed color profiles are all binary words except b and its complement. Proof: desired colors orient the cyclic precedence constraints between i and i+1; a total order exists unless all comparisons orient the cycle consistently. At root zero every nonconstant word occurs, and every proper-subset color prescription occurs, yet neither monochromatic profile does. For a given full profile precisely two antipodal roots fail to realize it. The constructive order comes from topological sorting. This does not contradict NORI1, since every other root realizes both monochromatic profiles. A full generalization and proof for arbitrary unary-reader functional digraphs is preserved in research note note_dcf71a720b27f7b6e3f7521f, version 2.
+
+
+#### Tournament comparison gauges: uniform profiles and the order constraint
+
+Let \(c_i(x)\) be any legal antipodally odd edge coloring of \(Q_n\), and set \(m=\binom n2\). An arbitrary comparison system \(b\) is a family of bits \(b_i(j)\) for \(i\ne j\) satisfying \(b_i(j)\oplus b_j(i)=1\); if transitive, it encodes a complete direction order with \(b_i(j)=1\) when \(j\) precedes \(i\). Define the relaxed color profile
+\[
+W_i(x,b)=c_i\left(x\oplus\sum_{j\ne i}b_i(j)e_j\right).
+\tag{TG1}
+\]
+This agrees with a full-geodesic profile on transitive comparisons.
+
+**Theorem (nonlinear tournament-gauge trivialization).** Put
+\[
+q_i(j)=b_i(j)\oplus x_i\oplus x_j \quad(i\ne j);
+\tag{TG2}
+\]
+the \(q_i(j)\) also obey \(q_i(j)\oplus q_j(i)=1\). Then
+\[
+\boxed{W_i(x,b)=x_i\oplus c_i(q_i),}
+\tag{TG3}
+\]
+where \(q_i\) is any vertex with its non-\(i\) bits equal to \(q_i(j)\). The map \((x,b)\mapsto(q,W(x,b))\) is a bijection of \(\mathbb F_2^n\times\mathbb F_2^m\). Consequently, every desired profile \(s\in\mathbb F_2^n\) occurs for precisely \(2^m\) root-comparison pairs, one for each \(q\), and the inverse is constructive:
+\[
+\boxed{x_i=s_i\oplus c_i(q_i),\qquad
+b_i(j)=q_i(j)\oplus x_i\oplus x_j.}
+\tag{TG4}
+\]
+
+*Proof.* The \(j\)-th bit used to evaluate \(c_i\) in (TG1), for \(j\ne i\), is \(x_j\oplus b_i(j)=q_i(j)\oplus x_i\). Thus when \(x_i=1\) all the input bits on which \(c_i\) can depend are complemented. Oddness under global complementation, together with independence of input bit \(i\), gives (TG3). Given \(q,s\), the formula independently determines every root bit \(x_i\); it then reconstructs all comparisons. Conversely (TG2) recovers \(q\) from any original pair, proving bijectivity. \(\square\)
+
+**Corollary (independent one-output repairs).** Flipping a root bit \(x_i\) together with every comparison \(b_i(j),b_j(i)\) incident with direction \(i\) leaves \(q\) unchanged and toggles only output \(W_i\). These \(n\) repairs commute, act freely, and yield one copy of every profile in each orbit.
+
+**Corollary (transitive-tournament criterion).** For a prescribed \(s\), construct \(x(q;s),b(q;s)\) by (TG4). The number of rooted complete geodesics with color profile \(s\) equals
+\[
+\boxed{\#\{q:b(q;s)\text{ is a transitive tournament}\}.}
+\tag{TG5}
+\]
+This follows by restricting the bijection to the root-comparison pairs arising from true direction orders.
+
+**Cyclic-reader obstruction.** Let \(n\ge3\) and let \(r\) be a cyclic permutation of all directions. The rules \(c_i(x)=x_{r(i)}\) give a legal coloring. At root zero, a zero-color profile requires \(i\) to precede \(r(i)\) for every \(i\). An arbitrary comparison system can satisfy these cyclic demands, but no transitive comparison system can. Thus relaxation to arbitrary comparisons eliminates all color equations but does not imply root-preserving geodesic existence.
+
+**Unrestricted NORI1 equivalence.** Directionwise color complements preserve legality. Since a profile \(w\) becomes \(w\oplus s\) after complementing all edges in direction classes indicated by \(s\), and antipodal translation converts blue full geodesics to red ones, unrestricted NORI1 in dimension \(n\) is logically equivalent to every legal coloring attaining every target profile. Formula (TG5) rewrites this as the existence of at least one transitive switched tournament for every legal coloring and target. The gauge theorem does not prove the transitivity assertion; the distinction is the remaining obstruction.
+
+Independent finite verification checked all comparison-root pairs in dimensions \(2,3,4\) for random legal colorings and randomized one-output repairs and inverse reconstruction in dimensions \(5,6\).
+
+
+**Proposition (strict local trap for tournament-triangle descent in dimension four).** Let \(n=4\) and use the legal unary-reader coloring
+\[
+\boxed{c_0(x)=x_1,\quad c_1(x)=x_2,\quad c_2(x)=x_0,\quad c_3(x)=x_0.}
+\tag{TG7}
+\]
+Prescribe the direction-indexed target \(s=(0,0,1,0)\). Encode a comparison system \(q\) by a six-bit mask in the unordered-pair order \(01,02,03,12,13,23\), with \(q_i(j)\) as its bit for \(i<j\) and \(q_j(i)=1\oplus q_i(j)\). For every \(q\), construct \(x(q;s),b(q;s)\) from (TG4), and let \(E(q)\) be the number of directed triangles of the tournament \(b(q;s)\).
+
+Then \(q=5\) is a strict positive local minimum:
+\[
+\boxed{E(5)=1,\qquad
+E(5\oplus2^r)=2\quad(0\le r<6).}
+\tag{TG8}
+\]
+Nevertheless \(16\) of the \(64\) possible \(q\)-states satisfy \(E(q)=0\), so the target \(s\) is realized by ordinary monochromaticity-profile geodesics. In particular, single-comparison descent on the number of cyclic triangles cannot guarantee a transitive witness, even for affine unary-reader rules and even when a successful witness exists.
+
+*Proof.* From (TG4), at \(q=5\) the constructed root is \(x=1\) (low-bit-first) and the switched comparison mask is \(b=2\). This tournament has the unique directed triangle \(012\). Flipping each of the six input comparison bits produces, respectively, the following triples of input mask, resulting comparison mask, and set of directed triangles:
+\[
+\begin{array}{c|c|l}
+4&4&013,\ 023\\
+7&42&023,\ 123\\
+1&50&012,\ 023\\
+13&19&013,\ 123\\
+21&18&012,\ 123\\
+37&34&012,\ 023
+\end{array}
+\]
+Each row has two directed triangles, proving (TG8). Direct enumeration of the 64 six-bit comparison masks using the displayed linear reader rules gives 16 masks with zero directed triangles; for instance \(q=0\) yields \(x=8\) and a transitive switched tournament. Every claim is a finite binary calculation with six input bits. \(\square\)
+
+This is a warning against substituting an unproved local acyclicity-descent principle for the original NORI1 difficulty. The unrestricted profile uniformity (TG3)--(TG4) is fully constructive, but order transitivity is not locally forced by that construction.
+
+
+##### Sharp root-anchored switch bounds and rank-homogeneous colorings
+
+For any legal antipodally odd edge coloring \(c\), put \(s_x(c)=\min_{\pi\in S_n}\operatorname{sw}(c;x,\pi)\).
+
+**Theorem (rooted switch extremum).** The maximum of \(s_x(c)\) over all legal colorings and all roots is \(n-1\) when \(n\ge2\) is even, and \(n-2\) when \(n\ge3\) is odd. Both bounds are attained by legal affine colorings for which every order from the chosen root has the same switch count.
+
+For even \(n\), put \(c_i(z)=\sum_{j\ne i}z_j\). Every rule reads \(n-1\) other bits and is antipodally odd. At root zero, the color of step \(k\), with \(k\) starting at zero, is \(k\bmod2\), independently of order. Hence every path has \(n-1\) switches.
+
+For odd \(n\), designate \(j=n-1\) and \(A=[n]\setminus\{j\}\). Put \(c_i(z)=\sum_{k\in A\setminus\{i\}}z_k\) for \(i\in A\), and \(c_j(z)=z_0\). Each rule is odd. At root zero the color subsequence of the \(A\)-edges is \(0101\ldots01\), containing \(n-2\) switches, for every order. Inserting the \(j\)-edge between opposite subsequence colors does not change the switch count; inserted first its color is zero and matches the first \(A\)-edge; inserted last its color is one and matches the last \(A\)-edge. Thus every full path has \(n-2\) switches.
+
+For the odd-dimensional upper bound, suppose every full path from one root \(x\) alternates at every step. Compare two orders beginning \(i,j,k\) and \(j,i,k\), for three distinct directions. Both reach the same \(k\)-edge in step two, so alternation forces the first-step colors of \(i,j\) to agree. Thus all initial edge colors equal some \(a\). Every edge of rank \(k\) relative to \(x\) lies on a rooted full geodesic at step \(k\); therefore its color must be \(a+k\bmod2\). The antipodal mate of a rank-zero edge has rank \(n-1\), and oddness forces \(n-1\) odd, contradicting odd \(n\). The even-dimensional upper bound \(n-1\) is immediate.
+
+**Theorem (rank-homogeneous classification).** For a fixed root \(x\), the full traversal color sequence is independent of direction order if and only if every rank-\(k\) edge relative to \(x\) has a common color \(a_k\). Such an edge coloring is legal and antipodally odd if and only if
+\[
+\boxed{a_{n-1-k}=1+a_k\quad(0\le k<n).}\tag{RS2}
+\]
+No such coloring exists for odd \(n\). For even \(n\), the \(2^{n/2}\) permissible sequences yield the rules
+\[
+c_i(z)=a_{\sum_{j\ne i}(z_j+x_j)}
+\]
+and exhaust all possibilities. The only even-dimensional colorings attaining \(n-1\) switches from \(x\) are the two alternating rank sequences.
+
+**Corollary (root-weight switch landscape).** For even \(n=2h\) and the parity coloring \(c_i(z)=\sum_{j\ne i}z_j\), let the root have Hamming weight \(r\). Then
+\[
+\boxed{s_x(c)=\max\{0,2|r-h|-1\}.}\tag{RS4}
+\]
+Indeed along an order \(\pi\), write \(b_k=x_{\pi_k}\) and the traversed color \(y_k=p(x)+b_k+k\bmod2\). Within each constant run of \(y\), the bits \(b_k\) alternate. A sequence of \(s\) color switches has \(s+1\) runs, so \(|n-2r|\le s+1\), yielding the lower bound. For \(r\ne h\), let \(d=|r-h|\): order first \(2d\) bits of the majority value, then alternate the remaining minority and majority bits starting with the minority. This produces \(2d-1\) switches. For \(r=h\), order the original bits alternately, producing a constant color word. Thus the very same coloring makes every order from a pole root fully alternating but admits monochromatic full geodesics from each middle-rank root.
+
+The extremum maximizes over the coloring and a selected root, not over roots after first optimizing the coloring. It does not imply failure of NORI1.
+
+
+**Theorem (two-color middle-layer completion for rank-homogeneous colorings).** Let \(n=2h\) and let \(c\) be a legal odd rank-homogeneous coloring relative to a root \(x\), with edge color \(a_k\) between Hamming ranks \(k,k+1\) relative to \(x\). For every vertex \(z\) at Hamming distance \(h\) from \(x\), there are at least \((h!)^2\) monochromatic full antipodal geodesics in each of the two colors beginning at \(z\). Specifically, the \((h!)^2\) paths that alternately flip a bit initially differing from \(x\) and then a bit initially agreeing with \(x\), starting with the former, all have color \(a_{h-1}\). The \((h!)^2\) paths with the opposite alternation, starting with an agreeing bit, all have color \(a_h=1+a_{h-1}\).
+
+*Proof.* Vertex \(z\) has \(h\) bits differing from \(x\) and \(h\) agreeing bits. Choose arbitrary orderings of these two \(h\)-element sets and interleave them alternately. Starting with a differing bit yields a walk between ranks \(h\) and \(h-1\); every traversed edge is consequently of color \(a_{h-1}\). Starting with an agreeing bit yields a walk between ranks \(h\) and \(h+1\), every edge having color \(a_h\). Both direction orders use every direction once and end at the antipode of \(z\), so they are full antipodal geodesics. The legal odd rank condition gives \(a_h=1+a_{h-1}\). There are \(h!\) independent orders for each bit class, and all resulting paths are distinct. \(\square\)
+
+This is a direct single-witness construction for both colors from every middle-layer root. It applies to all \(2^{n/2}\) rank-homogeneous legal odd colorings, including the fully alternating-root extremizer, and shows that a prescribed root can have the maximum possible switch complexity while every one of the \(\binom{2h}{h}\) middle-layer roots has at least \((h!)^2\) full geodesics of each color.
+
+
+**Sharp red and blue witness count within the rank-homogeneous class.** Summing the two-color middle-layer theorem over all binomial(2h,h) middle-layer roots gives at least binomial(2h,h)*(h!)^2=(2h)! oriented rooted red full geodesics, and the same number blue. Equality for both colors is achieved by the alternating rank sequence a_k=k modulo two (and its global color complement): the root-weight formula (RS4) shows that no full monochromatic geodesic begins outside the middle layer, while the middle-layer full paths are precisely those alternating the initially matching and differing bit classes. Hence N_R(c)>=n! and N_B(c)>=n! throughout the rank-homogeneous legal class, with sharp equality at the maximal-pole-switch coloring. The theorem is not claimed for all legal colorings; Q4 colorings with fewer red witnesses are known.
+
+##### Root-star exclusion and sharp isodiametric mixed-star bound
+
+Let \(c\) be any legal antipodally odd coloring of \(Q_n\), \(n\ge2\), and put \(s_i(x)=c_i(x)\), the incident direction-color vector. For root \(x\), the first and last steps of every full geodesic have colors \(s_i(x)\) and \(1-s_j(x)\) in their respective directions \(i,j\). Therefore its direction-indexed profile \(w(x,\pi)\) agrees with \(s(x)\) in some direction and disagrees in another:
+\[
+\boxed{\mathcal W_x(c)\cap\{s(x),\mathbf1+s(x)\}=\varnothing.}
+\tag{RS1}
+\]
+In particular, \(|\mathcal W_x(c)|\le2^n-2\), and a monochromatic full geodesic can be rooted only at a vertex whose incident edges include both colors. Cyclic reader colorings \(c_i(x)=x_{i+1\bmod n}\) attain equality for every root when \(n\ge3\).
+
+Put \(A=\{x:s(x)=\mathbf0\}\), \(B=\{x:s(x)=\mathbf1\}\), and \(M=Q_n\setminus(A\cup B)\), the mixed-star vertex set. Antipodal oddness gives \(B=\bar A\). No edge joins \(A\) to \(B\), as its color would have to be simultaneously red and blue. Hence any \(u,v\in A\) obey \(d_H(u,v)\le n-2\): a distance \(n\) would give \(u=\bar v\in B\), and a distance \(n-1\) would make \(u\) adjacent to \(\bar v\in B\).
+
+**Theorem (sharp mixed-star cardinality).** For every legal odd coloring of \(Q_n\),
+\[
+\boxed{|M|\ge
+\begin{cases}
+\binom{n}{n/2},&n\text{ even},\\[2pt]
+2\binom{n-1}{(n-1)/2},&n\text{ odd}.
+\end{cases}}
+\tag{RS2}
+\]
+Both bounds are attained in every dimension \(n\ge2\), by legal colorings for which **every** mixed-star vertex supports a monochromatic full antipodal geodesic. Thus the minimum candidate-root count is of order \(2^n/\sqrt n\), not a positive dimension-independent fraction of all roots.
+
+*Proof.* The Hamming diameter of \(A\) is at most \(n-2\). Kleitman's sharp binary diameter bound therefore gives, for \(n=2m\),
+\[
+|A|\le\sum_{k=0}^{m-1}\binom{2m}{k}
+=\tfrac12(2^{2m}-\binom{2m}{m}),
+\]
+and for \(n=2m+1\),
+\[
+|A|\le2\sum_{k=0}^{m-1}\binom{2m}{k}
+=2^{2m}-\binom{2m}{m}.
+\]
+Since \(|M|=2^n-2|A|\), these inequalities give (RS2).
+
+For sharpness when \(n=2m\), color every edge between Hamming layers \(k\) and \(k+1\) red for \(k<m\), and blue for \(k\ge m\). Antipodal edges have opposite colors because their lower ranks are \(k\) and \(2m-1-k\). The all-red-star vertices are precisely levels \(0,\ldots,m-1\), the all-blue-star vertices are levels \(m+1,\ldots,2m\), and \(M\) is level \(m\). From any \(x\in M\), flip its \(m\) one-bits first, followed by its \(m\) zero-bits: all \(2m\) edges are red and the endpoint is \(\bar x\).
+
+For \(n=2m+1\), distinguish one direction \(j\), and let \(k\) count the ones in the other \(2m\) bits. Give every edge in a direction \(i\ne j\) color red when its lower endpoint among those \(2m\) bits has weight less than \(m\), and blue otherwise. Give a direction-\(j\) edge color zero when \(k<m\), one when \(k>m\), and, at \(k=m\), the value of one distinguished non-\(j\) bit. All rules ignore their own flipped bit and are antipodally odd. The all-red-star region is \(k<m\), its antipodal all-blue-star region is \(k>m\), and \(M\) comprises both \(j\)-layers of \(k=m\), having \(2\binom{2m}{m}\) vertices. From any \(x\in M\), flip its \(m\) one-bits among the other directions, then flip \(j\) at level \(k=0\), then flip its remaining \(m\) zero-bits. This is a red full antipodal geodesic, proving the claimed sharpness and constructive sufficiency for these extremizers. \(\square\)
+
+RS1 is a necessary condition on each single full geodesic, not merely an aggregate parity condition. RS2 is a separate sharp restriction on the geometry of possible roots; it does not infer NORI1 merely from the abundance of mixed-star vertices.
+
+
+**Catalan enumeration in the even-dimensional extremizer.** In the \(n=2m\) middle-layer construction above, the successful red roots are precisely the \(\binom{2m}{m}\) vertices at Hamming rank \(m\). Starting from such a root, each of its \(m\) one-bits flipped to zero is a down-step and each of its \(m\) zero-bits flipped to one is an up-step. A path remains entirely red if and only if its rank never exceeds \(m\), so its down/up word is a Dyck word of semilength \(m\). Every Dyck word admits \((m!)^2\) ways of ordering the two sets of named directions. Thus each mixed root has \(C_m(m!)^2\) red antipodal full geodesics, where \(C_m=(m+1)^{-1}\binom{2m}{m}\) is the Catalan number, and the total oriented red-geodesic count is
+\[
+\boxed{N_R=(2m)!\,C_m.}\tag{RS3}
+\]
+Every such root supports the same number of blue geodesics by reversing the direction order. No root outside the middle layer can support a monochromatic full antipodal geodesic, because its full incident star has just one color.
+
+**Complete rooted-profile census in dimension four.** There are \(4\cdot2^{4-2}=16\) antipodal edge-orbit bits and therefore \(65536\) legal odd colorings of \(Q_4\). Exhaustively evaluating the \(24\) full geodesic direction orders at root zero for each legal coloring gives the following frequency table:
+\[
+\begin{array}{c|rrrrrr}
+|\mathcal W_0|&4&6&8&10&12&14\\
+\text{colorings}&48&720&7904&17280&29824&9760.
+\end{array}\tag{RS4}
+\]
+The frequencies total \(65536\). The 48 minimum cases comprise precisely three perfect matchings of the four direction labels with 16 independent binary phase choices; for each matched pair \(i,j\), its edge rules are \(c_i=x_j+a_i\) and \(c_j=x_i+a_j\). Thus the minimum rooted profile count in \(Q_4\) is four and its extremizers are completely classified. The maximum 14 coincides with the root-star upper bound (RS1). A reproducible finite certificate indexes the 16 antipodal edge orbits, stores the orbit-variable index and antipodal sign of each edge on every one of the 24 rooted paths, enumerates all \(2^{16}\) orbit assignments, and counts distinct resulting four-bit profiles. This census is a finite computational result and is not used in the unrestricted theorem (RS2).
+
+
+##### A strengthened universal three-direction probability bound
+
+Let \(n\ge3\). For each direction \(i\), write the legal antipodally odd edge-color sign rule \(f_i(x)=(-1)^{c_i(x)}\). Then \(f_i(x\oplus e_i)=f_i(x)\), \(f_i(\bar x)=-f_i(x)\), and \(f_i:\mathbb F_2^n\to\{-1,1\}\). Let \(Y_i\) be the sign of the direction-\(i\) edge on a uniformly sampled rooted full antipodal geodesic, sampled uniformly over all \(2^n n!\) root-and-order pairs. The Fourier correlation identity of (FM1) is
+\[
+\mathbb E(Y_iY_j)
+=\sum_{T\subseteq[n],\ |T|\ {\rm odd}}
+\frac{\widehat f_i(T)\widehat f_j(T)}{|T|+2}
+\qquad(i\ne j).
+\tag{FM6}
+\]
+
+**Theorem (noise-coupled three-direction lower bound).** For any three distinct directions \(i,j,k\) and any target signs \(\eta_i,\eta_j,\eta_k\in\{-1,1\}\),
+\[
+\boxed{\Pr(Y_i=\eta_i,\ Y_j=\eta_j,\ Y_k=\eta_k)\ge\frac{31}{432}.}
+\tag{FM7}
+\]
+Equivalently, every legal coloring realizes each prescribed color pattern on three selected directions on at least \((31/432)2^n n!\) rooted full antipodal geodesics. This strengthens the \(1/16\) bound of (FM5).
+
+*Proof.* Multiply the three rules by their target signs, writing \(g_1=\eta_i f_i\), \(g_2=\eta_j f_j\), \(g_3=\eta_k f_k\). The new rules are still odd \(\{-1,1\}\)-valued functions. Let \(T_\rho\) be the Boolean noise operator, defined by \(\widehat{T_\rho g}(A)=\rho^{|A|}\widehat g(A)\), and set
+\[
+S(t)=\sum_{1\le a<b\le3}\langle g_a,T_tg_b\rangle,\qquad 0\le t\le1.
+\]
+Equation (FM6) and \(1/(|A|+2)=\int_0^1t^{|A|+1}\,dt\) imply
+\[
+R:=\eta_i\eta_j\mathbb E(Y_iY_j)+
+\eta_i\eta_k\mathbb E(Y_iY_k)+
+\eta_j\eta_k\mathbb E(Y_jY_k)
+=\int_0^1tS(t)\,dt.
+\tag{FM8}
+\]
+
+We establish two lower bounds on \(S(t)\). First put \(h_a=T_{\sqrt t}g_a\). Self-adjointness and the semigroup law give
+\[
+2S(t)=\|h_1+h_2+h_3\|_2^2-\sum_{a=1}^3\|h_a\|_2^2.
+\]
+All \(g_a\) are odd and have squared norm one; hence
+\(\|h_a\|_2^2=\sum_{|A|\ {\rm odd}}t^{|A|}\widehat g_a(A)^2\le t\).
+Consequently
+\[
+S(t)\ge-\frac{3t}{2}.
+\tag{FM9}
+\]
+
+For the second bound, sample a uniform latent cube vertex \(Z\), and conditional on \(Z\) sample three independent noisy copies \(X_1,X_2,X_3\), each with bitwise correlation \(\sqrt t\) with \(Z\). Any two copies then have correlation \(t\), so
+\[
+S(t)=\mathbb E\bigl[g_1(X_1)g_2(X_2)+g_1(X_1)g_3(X_3)+g_2(X_2)g_3(X_3)\bigr].
+\]
+For any three signs \(u,v,w\), the quantity \(uv+uw+vw\) is either \(3\) or \(-1\). Therefore
+\[
+S(t)\ge-1.
+\tag{FM10}
+\]
+Combining (FM8)--(FM10),
+\[
+R\ge-\int_0^1t\min(1,3t/2)\,dt
+=-\frac{23}{54}.
+\]
+Antipodal translation of the starting root negates all \(Y_r\), so every odd joint moment vanishes. Expanding the three target-event indicators gives
+\[
+\Pr(Y_i=\eta_i,Y_j=\eta_j,Y_k=\eta_k)
+=\frac{1+R}{8}
+\ge\frac18\left(1-\frac{23}{54}\right)
+=\frac{31}{432}.
+\qquad\square
+\]
+
+**Theorem (a six-cube obstruction to a \(1/12\) universal constant).** There is a legal coloring of \(Q_6\) for which one prescribed three-direction pattern occurs with probability \(19/240\). Thus the optimal dimension-uniform constant in (FM7) lies in
+\[
+\boxed{\frac{31}{432}\le p_3^{\rm opt}\le\frac{19}{240}.}
+\tag{FM11}
+\]
+To define the coloring, put \(U=(-1)^{x_3}\), \(V=(-1)^{x_4}\), \(W=(-1)^{x_5}\), and let \(\operatorname{maj}(u,v,w)\) be the majority sign of three signs. Define the signs on directions \(0,1,2\) by
+\[
+f_0=-W,\quad
+f_1=\operatorname{maj}(U,V,W),\quad
+f_2=\operatorname{maj}(-U,-V,W),
+\tag{FM12}
+\]
+and on the other directions put \(f_3=(-1)^{x_4}\), \(f_4=(-1)^{x_5}\), \(f_5=(-1)^{x_3}\). Each rule ignores its own input bit and is odd under antipodal complementation, so these rules define a legal coloring.
+
+Using
+\[
+f_1=\frac{U+V+W-UVW}{2},\qquad
+f_2=\frac{-U-V+W-UVW}{2},
+\]
+the three correlations of the selected direction colors obtained from (FM6) are
+\[
+\mathbb E(Y_0Y_1)=-\frac16,\qquad
+\mathbb E(Y_0Y_2)=-\frac16,\qquad
+\mathbb E(Y_1Y_2)=-\frac1{30}.
+\]
+Therefore
+\[
+\boxed{\Pr(Y_0=Y_1=Y_2=+1)
+=\frac18\left(1-\frac16-\frac16-\frac1{30}\right)
+=\frac{19}{240}.}
+\tag{FM13}
+\]
+Direct integer enumeration confirms that precisely \(3648\) of the \(2^6 6!=46080\) rooted full antipodal geodesics realize this pattern. The six-cube witness disproves a proposed \(1/12\) lower bound, while (FM7) is unconditional in the ambient dimension.
+
+
 ### Universal three-direction prescription for unrestricted antipodally odd cube-edge colorings
 
 **Theorem.** Let \(n\ge3\) and let \(c_i(x)\in\mathbb F_2\) color each * undirected* direction-\(i\) edge of \(Q_n\), satisfying
@@ -2193,6 +2645,178 @@ If NORI1 holds, then by the earlier exact equivalence the arbitrary-color one-ch
 
 Both implications back to full closure are proved by Cartesian-power amplification. The second formulation asks for quantitative near-geodesicity inside the original Feder--Subi one-change antipodal *path* problem, which remains stronger than the settled unrestricted original Norine monochromatic-antipodal-*path* result. In particular the known existence of a monochromatic antipodal path for odd colorings does not establish (AP1)'s approximating hypothesis for arbitrary colorings. These statements provide global proof targets rather than independent proofs of their hypotheses.
 
+
+#### Strict half-switch and four-direction prescription
+
+### Strict half-switch bound and four-direction prescription
+
+Let d be an arbitrary two-coloring of undirected edges of Q_n. Write r(v), b(v)=n-r(v) for its incident color degrees, and s(P) for the number of color changes on a full antipodal geodesic.
+
+**Lemma.** For a uniformly random root and full direction order,
+\[
+\mathbb E\,s(P)=\frac{2}{n2^n}\sum_{v\in Q_n}r(v)b(v)
+\le \frac2n\left\lfloor\frac{n^2}4\right\rfloor.
+\tag{1}
+\]
+*Proof.* At each of the n-1 intermediate vertices the ordered pair of successive distinct directions is uniform among n(n-1) pairs, and the vertex is uniform over Q_n. At v precisely 2r(v)b(v) of the ordered direction pairs switch color. Summing their probabilities proves (1). \(\square\)
+
+**Theorem (strict half-switch).** For every even n=2h>=4, any arbitrary coloring of Q_n has a full antipodal geodesic with at most h-1 color changes. For odd n, (1) guarantees at most (n-1)/2.
+
+*Proof.* The odd-dimensional claim follows by the integer-valued switch count. When n=2h>=4, (1) gives expectation at most h. If all full geodesics had at least h switches, then all of them would have precisely h. For every vertex x and two distinct directions i,j, start a full path at x with first direction i and last direction j. Parity of its h switches implies
+\[
+d_i(x)+d_j(\bar x)=h\bmod2.
+\tag{2}
+\]
+For any distinct i,k choose j outside {i,k}; (2) gives d_i(x)=d_k(x). Every vertex therefore has a monochromatic star, hence by connectivity the entire coloring is constant. It then has zero-switch full paths, contradicting h>=2. \(\square\)
+
+**Corollary (arbitrary-color four-cube).** Every arbitrary red-blue edge coloring of Q4 has a full antipodal geodesic with at most one switch, without any antipodal relation. Independently, a binary integer feasibility program on the 32 Q4 edges, excluding eight one-switch color words on each of its 192 unoriented full antipodal geodesics, was infeasible under SciPy/HiGHS. The proof does not rely on that audit.
+
+**Theorem (unrestricted four-direction NORI1 prescription).** Let n>=4 and c be any binary undirected-edge coloring of Q_n obeying c_i(x+e_i)=c_i(x), c_i(bar x)=1+c_i(x). For any four distinct directions S and desired t in F2^S, some full antipodal geodesic has direction-indexed colors t on S.
+
+*Proof.* For n>4, apply the previously proved multifacet bridge equivalence B_k iff P_(n,S) in this subsection at k=4. In brief, on a lower S-face recolor each direction i by t_i, take its zero-then-one one-switch full path, reverse the zero prefix, traverse all exterior directions to the opposite face, and traverse the reversal of the antipodal image of the one suffix. This is a full geodesic whose S-edges have colors t_i.
+
+For n=4, directionwise recolor by t_i and use the preceding four-cube corollary to obtain a path from u to bar u with red prefix U and blue suffix V. Starting at the switch vertex, reverse U and then reverse the antipodal image of V. Antipodal oddness makes both parts red; they traverse complementary direction subsets and join antipodal endpoints. Undo the recoloring to obtain prescribed profile t. \(\square\)
+
+The four-direction theorem strengthens the previous three-direction prescription for all legal NORI1 colorings. The small-dimensional one-switch statement is known in the literature; the displayed argument gives an elementary proof. The general switch bound does not settle the arbitrary-color one-switch problem beyond dimension four.
+
+#### Passive lift profile factorization and active completion
+
+### Passive lift profile factorization and four-direction-assisted active completion
+
+Let c be any binary undirected-edge coloring of Q_n satisfying c_i(x+e_i)=c_i(x) and c_i(bar x)=1+c_i(x). For any such coloring write W(c) for its set of direction-indexed color profiles of rooted, ordered full antipodal geodesics.
+
+**Theorem 1 (passive paired lift has a product profile support).** Define the conventional paired lift on Q_(2n) by
+\[
+\widetilde c_i(x,y)=c_i(x),\qquad
+\widetilde c_{n+i}(x,y)=1+c_i(x)\quad(1\le i\le n).
+\tag{PC1}
+\]
+Then
+\[
+\boxed{W(\widetilde c)=W(c)\times\mathbb F_2^n.}\tag{PC2}
+\]
+The paired lift is legal and antipodally odd, and contains a monochromatic full antipodal geodesic if and only if c does.
+
+*Proof.* Project any full geodesic of the lift to the first n vertex bits and delete the y-steps. The remaining path is a full antipodal geodesic in c with the same old-direction profile, proving the upper containment in (PC2). Conversely, select any full base geodesic starting at x, with direction order pi and old profile u. Given any desired dummy-direction word v, place dummy direction n+i before all old directions if v_i=1+c_i(x), and after all old directions otherwise. Before the base path its dummy color is 1+c_i(x); after the base path, at bar x, its dummy color is c_i(x). Thus its dummy word is v and its old word is u. The starting dummy bits are arbitrary, establishing the product support. Monochromaticity equivalence follows by taking zero targets and by the projection. \(\square\)
+
+**Lemma 2 (one-helper rigidity).** Suppose C is any legal antipodally odd coloring of Q_(n+1) whose old-direction coloring on the face y=0 is c. Then for every old direction i and x,
+\[
+\boxed{C_i(x,1)=c_i(x)=C_i(x,0).}\tag{PC3}
+\]
+*Proof.* The global antipode sends (x,1) to (bar x,0), so C_i(x,1)=1+C_i(bar x,0)=1+c_i(bar x)=c_i(x). \(\square\)
+
+**Theorem 3 (universal active completion with n-3 helpers).** Let n>=4 and c be any legal antipodally odd coloring of Q_n. Fix any four-element direction subset S, put T=[n]\setminus S, and choose s in S. Introduce auxiliary bits y_* and y_i for i in T, in total m=1+|T|=n-3 additional cube directions. Define C on Q_(n+m) by
+\[
+C_i(x,y)=
+\begin{cases}
+c_i(x),&i\in S,\\
+c_i(x)+y_i+y_*,&i\in T,
+\end{cases}
+\qquad
+C_{y_j}(x,y)=x_s\quad(j\in T\cup\{*\}).
+\tag{PC4}
+\]
+Then C is legal and antipodally odd, its restriction to the face y=0 in old directions agrees with c, and
+\[
+\boxed{W(C)=\mathbb F_2^{n+m}=\mathbb F_2^{2n-3}.}\tag{PC5}
+\]
+Every target profile is attained using an order in which one selected set of auxiliary directions comes before all original directions, with the remaining auxiliary directions after them.
+
+*Proof.* Each old-direction rule ignores its own original bit; each auxiliary rule x_s ignores its own auxiliary bit. Under the global antipode, c_i flips, the even expressions y_i+y_* do not flip, and x_s flips. Hence C is legal and odd, and at y=0 the old rules equal c.
+
+Fix any target full profile (w,v), with old word w in F2^n and auxiliary word v in F2^m. By the universal four-direction prescription theorem in the previous subsection development, choose a full old-direction geodesic from some x in some order pi whose colors agree with w on S. Let d_i be its old profile for i in T. Define b=x_s. Place auxiliary direction y_j before the entire old geodesic if v_j=b, and after it if v_j=1+b. These helper edges then have precisely their prescribed colors, because the s-th old bit changes from b to 1+b during the old full path.
+
+Let E_j indicate whether helper direction j is in the early group. Choose the auxiliary bit values y_j^{mid} during the old geodesic so that y_*^{mid}=0 and y_i^{mid}=d_i+w_i for i in T. Take the initial auxiliary root values y_j^{start}=y_j^{mid}+E_j. After the early helper moves, the helper values equal the prescribed mid values; they remain fixed throughout the old-direction segment. For every i in T, its color along that segment is c_i+ y_i^{mid}+y_*^{mid}=d_i+(d_i+w_i)=w_i; for i in S, its color is w_i by selection of the base path. The remaining auxiliary moves have color v_j. Every old and auxiliary direction is used once. Thus the target profile is attained. \(\square\)
+
+**Lemma 4 (helper information-capacity bound for frozen-state control).** If a Boolean control map H:F2^m->F2^t obeys H(y+\mathbf1)=H(y), then its image contains at most 2^(m-1) elements. Surjectivity onto F2^t therefore requires m>=t+1. The control map H(y)=(y_i+y_*)_(i in T) used in (PC4), with t=|T|=n-4 and m=t+1, attains this information bound.
+
+*Proof.* An antipodally even H factors through the quotient of F2^m by the two-element subgroup generated by the all-one vector, whose cardinality is 2^(m-1). The displayed H maps onto F2^t by choosing y_*=0 and the y_i independently. \(\square\)
+
+**Computer audit.** For n=4,5,6, four random legal odd base colorings per dimension were tested against 250 independently random full-profile targets, using a brute-force four-direction base witness finder and the construction from Theorem 3. All 3000 targets were attained, and legality was tested separately. The paired-lift factorization (PC2) was checked by full root/order enumeration for four random base colorings in each of dimensions n=2 and n=3.
+
+**Scope.** These statements apply to every legal odd base coloring, regardless of nonlinear dependencies. The passive factorization shows why adding directions that never influence the original color rules cannot erase a missing profile. The active completion supplies enough independent antipodally even phase controls to remove all remaining profile constraints after a four-direction base witness. Since it changes the old-direction rules outside y=0, it is not a counterexample-preserving reduction and does not prove NORI1 in dimension n.
+
+##### Seven-direction-assisted control reduction
+
+**Theorem 5 (seven-prescription assisted completion).** Let n>=9 and let c be any legal antipodally odd coloring of Q_n. Choose a set S of seven original directions and write T=[n]\S. Add m=|T|+1=n-6 auxiliary bits, one bit y_i for each i in T and one reference bit y_*. Choose s in S. Define
+\[
+C_i(x,y)=c_i(x)\ (i\in S),\qquad
+C_i(x,y)=c_i(x)+y_i+y_*\ (i\in T),\qquad
+C_{y_j}(x,y)=x_s\ (j\in T\cup\{*\}).
+\tag{PC6}
+\]
+Then C is legal and odd, agrees with c on the all-zero auxiliary face, and has every direction-indexed full-geodesic color profile in F2^(2n-6). The number n-6 supersedes the weaker n-3 helper bound from Theorem 3 above, which used only four-direction prescription.
+
+*Proof.* The preexisting universal seven-direction prescription theorem in this subsection follows from the established monochromatic geodesic theorem in Q8 (Kirchweger, Peitl, Subercaseaux and Szeider, 2025) and the multifacet bridge. For a desired original word w, choose a full base geodesic with prescribed colors w on S. As in Theorem 3, place each helper before or after the base full path depending on its desired color and the starting s-th bit. With the helper-state reference value y_* chosen as zero during the old-direction segment, set each auxiliary mid-state bit y_i equal to the discrepancy between c_i along the chosen base path and the target w_i. The auxiliary starts are obtained by undoing the designated early flips. All original and auxiliary target colors follow as in Theorem 3. The two legality identities hold because each phase term y_i+y_* is antipodally even and each auxiliary edge color x_s is odd under antipodality. \(\square\)
+
+The general form is a profile-completion principle: if k designated original directions can be assigned arbitrary colors by a full base geodesic, then n-k+1 antipodally paired phase-control helpers suffice to make every profile realizable in a face-preserving extension, for k<n. The antipodally even phase map uses its 2^(n-k) possible relative helper states fully, attaining the information-capacity limit for independent correction of the remaining n-k edge colors during one frozen helper-state segment.
+
+This is an active extension, not a counterexample-preserving lift. The project already had seven-direction prescription before the present note; that previously known theorem supplies the improved helper budget.
+
+#### Sharp one-helper passivity and two-helper universal profile completion
+
+#### Sharp one-helper passivity and two-helper universal profile completion
+
+Let n>=2 and let c be any legal antipodally odd binary undirected-edge coloring of Q_n, so c_i(x+e_i)=c_i(x) and c_i(bar x)=1+c_i(x). Write W(c) for the set of direction-indexed binary profiles of full antipodal geodesics.
+
+**Theorem 1 (one-helper extension factorization).** Let C be any legal odd coloring of Q_(n+1), with one new bit z, such that C_i(x,0)=c_i(x) for all original directions i. Then necessarily
+\[
+C_i(x,z)=c_i(x)\quad\text{for both }z\in F_2,
+\tag{EH1}
+\]
+and
+\[
+\boxed{W(C)=W(c)\times F_2.}\tag{EH2}
+\]
+*Proof.* Oddness gives C_i(x,1)=1+C_i(bar x,0)=1+c_i(bar x)=c_i(x). The new-direction edge has rule C_z(x,z)=d(x), independent of z; global oddness forces d(bar x)=1+d(x). Projection of any full extension geodesic onto original directions gives a full base geodesic, proving inclusion in W(c) times F2. Conversely, choose a base geodesic realizing w from root x. Put the new-direction step before all original steps if the desired z-color equals d(x), and after all original steps otherwise. At the latter position its color is d(bar x)=1+d(x). The original profile remains w in either placement. This proves (EH2). \(\square\)
+
+**Theorem 2 (two-helper universal full-profile completion).** Every legal odd coloring c of Q_n, n>=2, admits a legal odd extension C to Q_(n+2), agreeing with c on the auxiliary face (u,v)=00, for which
+\[
+\boxed{W(C)=F_2^{n+2}.}\tag{EH3}
+\]
+Such an extension may be defined explicitly by
+\[
+b_i(x)=x_{i+1\bmod n},\qquad
+C_i(x,u,v)=
+\begin{cases}
+c_i(x),&u=v,\\
+b_i(x),&u\ne v,
+\end{cases}\ (0\le i<n),
+\tag{EH4}
+\]
+\[
+\boxed{C_u(x,u,v)=v,\qquad C_v(x,u,v)=x_0.}\tag{EH5}
+\]
+For any prescribed target profile, the resulting witness starts in the original auxiliary face 00 and uses just one of the two guard-direction arrangements u, old steps, v or v, old steps, u.
+
+*Proof.* In (EH4), c_i and b_i each ignore their own x_i and are odd under global x complementation; the equality predicate u=v is unchanged when u,v are both flipped. The rule C_u=v ignores u and flips under global antipodality; C_v=x_0 ignores v and flips under global antipodality. Thus C is legal and odd, and agrees with c on the 00 face.
+
+Prescribe an old-direction word w=(w_0,...,w_(n-1)) and new-direction bits (p,q)=(w_u,w_v). Put
+\[
+\boxed{x_0=1+p+q.}\tag{EH6}
+\]
+Consider the cyclic-reader coloring b on Q_n. Given any direction permutation pi, its profile equations are
+\[
+w_i=x_{i+1\bmod n}+[\ i+1\bmod n\text{ appears before }i\text{ in }\pi\ ].
+\tag{EH7}
+\]
+These determine one root x for every pi,w. Choosing pi=(n-1,0,1,...,n-2) gives x_0=w_(n-1), while choosing pi=(0,1,...,n-1) gives x_0=1+w_(n-1). Since n>=2, the two lists are valid, and one of them produces the desired x_0 from (EH6).
+
+Start C at (x,0,0). If p=0, take the complete direction order (u,pi,v). The first new step has color C_u=0, then the original steps are on the face (u,v)=(1,0), where their colors are b and yield w; finally v is used at original endpoint bar x, giving color C_v(bar x,1,0)=1+x_0=q. If p=1, use the order (v,pi,u). Its first new edge has color C_v(x,0,0)=x_0=q; the old steps occur at auxiliary state (0,1), again giving w; the last u-edge has color C_u=1=p. In both cases the path traverses all n+2 directions once, terminates at (bar x,1,1), and realizes (w,p,q). \(\square\)
+
+**Corollary 3 (two auxiliary bits suffice without a partial-prescription theorem).** The active-completion construction in the same subsection that used n-6 helper bits based on the known seven-direction prescription is superseded as an upper bound on the number of helpers: a pair of helpers suffices for all n>=2. In contrast, one-helper extensions have the product property (EH2) and cannot create missing original-direction profiles. In particular, a face-preserving full-profile extension theorem by itself supplies no information about whether W(c) contains a given profile, since (EH3) holds for every legal base c independently of its profile support.
+
+**Finite audit.** The constructive witness formulas were checked against independently generated legal odd base edge colorings for dimensions n=2,3,4,5,6. All 2^(n+2) target profiles were tested for n=2,3,4,5, and 200 sampled targets for n=6, including verification of the returned rooted geodesic endpoint and all edge colors. The dimension-uniform proof does not rely on this enumeration.
+
+**Scope.** The construction requires adding dimensions and modifies old-direction edge colors on auxiliary faces with u different from v. Consequently it is not a counterexample-preserving lift and does not settle unrestricted NORI1. The primary conclusion is a sharp distinction between passive one-helper extensions and programmable two-helper extensions.
+
+##### Factorial witness lower bound for two-helper completion
+
+**Corollary 4 (uniform factorial witness multiplicity).** For the two-helper extension C in (EH4)-(EH5), every prescribed profile in F2^(n+2) is attained by at least n! rooted, ordered full antipodal geodesics.
+
+*Proof.* Fix a target (w,p,q). Among all n! permutations pi, half place original direction 0 before direction n-1 and half place it after. Equation (EH7) then determines x_0 as one of the two values w_(n-1) or 1+w_(n-1), respectively. Hence n!/2 direction permutations give the root parity (EH6), and each determines a full geodesic starting on the 00 auxiliary face with the target profile. Reversing these paths gives another n!/2 rooted full geodesics starting on the 11 auxiliary face, with unchanged direction-indexed colors. These two classes are disjoint by starting auxiliary state, yielding n! witnesses. \(\square\)
+
+The result counts rooted, ordered paths. In the absence of any assumptions on c it supplies a uniform positive lower bound for every profile of the extension.
 
 ### Penultimate-length extension and parallel-face endpoint exclusion
 

@@ -1371,6 +1371,324 @@ obtained by grouping the 24 permutations according to their inversion sets. Thes
 Thus this proposition does not contradict affine corank-two closure or the proposed general affine theorem. It identifies the pairwise support identity, together with \(pA=0\) and \(A\mathbf1=\mathbf1\), as indispensable input for any general one-hole exclusion proof. The example is a finite refutation of an auxiliary overstrong lemma, not a counterexample to NORI1.
 
 
+#### Nonlinear triangular Boolean profiles
+
+#### Nonlinear triangular Boolean profiles force monochromatic full cube geodesics
+
+Let \(n\ge2\) and \(c=(c_i)_{i=1}^n\) be the binary direction rules of an undirected-edge coloring of \(Q_n\): \(c_i(x+e_i)=c_i(x)\). Antipodal oddness, when required, is \(c_i(x+\mathbf1)=1+c_i(x)\), with addition in \(\mathbb F_2\). For each permutation \(\pi\), define the full-geodesic color profile \(\Phi_\pi(x)\in\mathbb F_2^n\) with its entries indexed by direction labels, so
+\[
+[\Phi_\pi(x)]_i=c_i(x+q_i(\pi)),\qquad
+q_i(\pi)=\sum_{\pi^{-1}(j)<\pi^{-1}(i)}e_j.
+\tag{TN1}
+\]
+
+**Theorem 1 (triangular nonlinear profile bijection).** Suppose there is an invertible binary matrix \(L\in\mathrm{GL}_n(\mathbb F_2)\) and Boolean functions \(h_i:\mathbb F_2^{i-1}\to\mathbb F_2\) such that, writing \(y=Lx\),
+\[
+\boxed{c_i(x)=y_i+h_i(y_1,\ldots,y_{i-1})\qquad (1\le i\le n).}
+\tag{TN2}
+\]
+Then for *every* direction permutation \(\pi\), the map \(\Phi_\pi:Q_n\to Q_n\) is bijective. In particular, for every prescribed color word \(w\in Q_n\), each order \(\pi\) admits one and only one initial vertex with profile \(w\). If the coloring is antipodally odd, every order admits a monochromatic red and a monochromatic blue full antipodal geodesic, on antipodal initial vertices. There are \(n!\) oriented red full geodesics and \(n!/2\) unoriented red full geodesics.
+
+*Proof.* Write \(y=Lx\), and put \(v_i=Lq_i(\pi)\), a vector depending on the chosen order but not on \(x\). Then
+\[
+[\Phi_\pi(x)]_i=y_i+(v_i)_i+
+h_i(y_1+(v_i)_1,\ldots,y_{i-1}+(v_i)_{i-1}).
+\tag{TN3}
+\]
+For prescribed profile \(w\), solve (TN3) in the order \(i=1,\ldots,n\): the first equation determines \(y_1\), the second determines \(y_2\), and so on. Each equation contains its newly introduced unknown \(y_i\) with coefficient one and depends otherwise only on already determined bits. Thus there is one solution \(y\), and \(L^{-1}y\) gives one initial vertex \(x\). This works for every \(\pi,w\). Antipodal oddness implies \(\Phi_\pi(x+\mathbf1)=\Phi_\pi(x)+\mathbf1\), so the red and blue roots are antipodal. For each of \(n!\) direction orders there is one oriented red geodesic; reversing its direction gives the opposite orientation of the same red path, proving the unoriented count. \(\square\)
+
+**Equivalent derivative certificate.** Define \(f(y)=c(L^{-1}y)\) and Boolean differences \(\partial_j f_i(y)=f_i(y)+f_i(y+e_j)\). Condition (TN2) is equivalent to
+\[
+\boxed{\partial_i f_i\equiv1,\qquad \partial_j f_i\equiv0\quad(j>i).}
+\tag{TN4}
+\]
+The first condition integrates to \(f_i=y_i+h_i(y_{<i})\), and the second makes \(h_i\) independent of every later variable. Therefore (TN4) is an order-independent, verifiable Boolean-Jacobian certificate for one-root solvability of every complete color profile.
+
+**Example with unbounded nonlinear directions.** Index directions and vertex bits by \(0,\ldots,n-1\), and take \(n\ge5\). Define the antipodally even, degree-two Boolean function
+\[
+H(x_1,x_2,x_3)=(x_1+x_2)(x_2+x_3),
+\]
+and let
+\[
+\boxed{c_i(x)=x_{(i+1)\bmod n}+[i\ge4]H(x_1,x_2,x_3)\quad(0\le i<n).}
+\tag{TN5}
+\]
+Every rule ignores its own vertex bit: for \(i\le3\) the nonlinear term is absent, and for \(i\ge4\) the term depends only on \(x_1,x_2,x_3\). The cyclic reader index \((i+1)\bmod n\) never equals \(i\). Since \(H(x+\mathbf1)=H(x)\), every rule changes color under antipodality. Thus the coloring is legal and antipodally odd.
+
+Let \(L\) be the cyclic permutation matrix \(y_i=x_{(i+1)\bmod n}\). For \(i\le3\) we have \(c_i=y_i\); for \(i\ge4\),
+\[
+c_i=y_i+(y_0+y_1)(y_1+y_2),
+\]
+which is triangular in the \(y\)-variables. Therefore Theorem 1 applies. There are \(n-4\) nonlinear rules, all of algebraic degree two, for arbitrarily large \(n\). Independent enumeration for \(n=5\) and \(n=7\) verified edge consistency, antipodal oddness, and bijectivity of the color-profile map for all \(5!=120\) and \(7!=5040\) direction orders, respectively.
+
+*Placement and scope.* The invertible affine dependency-matrix theorem is the case \(h_i\) affine, after a suitable invertible linear transformation. The present theorem permits arbitrary nonlinear triangular transformations, with unboundedly many nonlinear direction rules. It forces NORI1 on this family by substitution, without using root-density bounds or cooperation between paths. It does not imply that every legal odd coloring possesses a triangular presentation.
+
+##### Order-wise bijectivity beyond first-level Fourier rank
+
+**Corollary (profile bijections with singular linear Fourier matrix).** For every \(n\ge6\), define
+\[
+c_i(x)=x_{i+1}\quad(0\le i<n-1),\qquad
+c_{n-1}(x)=x_0+H(x_1,x_2,x_3,x_4),
+\tag{TN6}
+\]
+where
+\[
+H=\operatorname{Maj}(x_1+x_2,\ x_1+x_3,\ x_1+x_4)
+\]
+and \(\operatorname{Maj}(a,b,d)=ab+ad+bd\) is the three-input majority function over \(\mathbb F_2\). Because each difference \(x_1+x_j\) is invariant under complementing every vertex bit, \(H\) is antipodally even. Every rule ignores its own direction bit, so (TN6) is a legal antipodally odd coloring. With \(L\) the cyclic permutation \(y_i=x_{(i+1)\bmod n}\), the only nonlinear term is in the final output, and it depends on \(y_0,y_1,y_2,y_3\); Theorem 1 therefore makes \(\Phi_\pi\) bijective for every \(\pi\).
+
+Let \(s_i(x)=(-1)^{c_i(x)}\), and let \(M_{ij}=\mathbb E_x s_i(x)(-1)^{x_j}\) be the matrix of first-level Walsh coefficients. The three differences \((x_1+x_2,x_1+x_3,x_1+x_4)\) are uniformly distributed on \(\mathbb F_2^3\), so their majority is a fair bit and \(\mathbb E(-1)^H=0\). Also \(H\) ignores \(x_0\). Consequently
+\[
+M_{n-1,0}=\mathbb E(-1)^H=0,\qquad
+M_{n-1,j}=\mathbb E(-1)^{x_0+H+x_j}=0
+\quad(j\ne0),
+\tag{TN7}
+\]
+as the independent fair bit \(x_0\) forces cancellation. Thus the full \(n\)-entry last row of the first-level Fourier matrix is zero, even though all \(n!\) geodesic profile maps are bijections. For \(n=6\), enumeration verified the Walsh cancellation and all 720 color-profile bijections.
+
+This example shows that full-color-profile solvability can be an entirely nonlinear triangular phenomenon not visible to first-order Walsh rank. It is not a counterexample to NORI1.
+
+#### Acyclic-orientation model for affine geodesic profiles
+
+#### Acyclic-orientation model for affine geodesic profiles
+
+Let \(c_i(x)=\alpha_i+(Ax)_i\) be an affine binary edge coloring of \(Q_n\), with \(A\in M_n(\mathbb F_2)\), \(A_{ii}=0\), \(A\mathbf1=\mathbf1\). Thus the coloring is invariant on each undirected direction edge and is antipodally odd. Put
+\[
+V=\mathbb F_2^n/\operatorname{im}A,\qquad v_i=[e_i]\in V,\qquad
+\gamma_{ij}=A_{ij}v_i+A_{ji}v_j\in V\quad(i\ne j).
+\tag{FO1}
+\]
+Let \(H_A\) be the undirected graph on \([n]\) with edges \(ij\) for which \(\gamma_{ij}\ne0\). For a direction order \(\pi\), define \((r_\pi)_i=\sum_{j\text{ before }i}A_{ij}\), so that the direction-indexed color profile from root \(x\) is
+\[
+w(x,\pi)=\alpha+Ax+r_\pi.
+\tag{FO2}
+\]
+
+**Theorem 1 (acyclic-orientation cokernel model).** Fix a reference total order \(\pi_0\) and orient every edge of \(H_A\) from earlier to later under \(\pi_0\). If \(O\) is any acyclic orientation of \(H_A\), let \(I(O)\) be its set of edges oriented opposite to this reference orientation. Then the attainable color-profile set is
+\[
+\boxed{\mathcal W(c)=
+\bigcup_{O\text{ acyclic}}
+\left(\alpha+r_{\pi_0}
++\sum_{ij\in I(O)}(A_{ij}e_i+A_{ji}e_j)
++\operatorname{im}A\right).}
+\tag{FO3}
+\]
+In particular its number of profiles depends on \(A\), not on the affine constant \(\alpha\). The unrestricted affine profile-surjectivity question is equivalent to whether the images in \(V\) of the inversion-label sums of acyclic orientations of \(H_A\) exhaust \(V\).
+
+*Proof.* Moving adjacent directions \(i,j\) past one another changes \(r_\pi\) by \(A_{ij}e_i+A_{ji}e_j\). For arbitrary orders \(\pi,\pi_0\), one can sort \(\pi\) into \(\pi_0\) by swapping each reversed pair once (a reduced word for their relative permutation). Thus \([r_\pi]+[r_{\pi_0}]\) is the sum of \(\gamma_{ij}\) over the pairs whose relative order differs. The pairs outside \(H_A\) contribute zero modulo \(\operatorname{im}A\). Restricting a total order to edges of \(H_A\) always gives an acyclic orientation; conversely every acyclic orientation of a finite graph has a total-order extension. Therefore the image of all \(r_\pi\) modulo \(\operatorname{im}A\) is precisely the finite set in (FO3). Equation (FO2) gives the asserted union of cosets. \(\square\)
+
+**Lemma 2 (automatic span of all exchange labels).** Without any acyclicity hypothesis,
+\[
+\boxed{\sum_{j\ne i}\gamma_{ij}=v_i,\qquad
+\operatorname{span}_{\mathbb F_2}\{\gamma_{ij}:ij\in E(H_A)\}=V.}
+\tag{FO4}
+\]
+*Proof.* Since \(\sum_{j\ne i}A_{ij}=1\) and \(\sum_{j\ne i}A_{ji}v_j=[Ae_i]=0\), the first identity follows. The vectors \(v_i\) span \(V\), hence so do the exchange labels. \(\square\)
+
+**Theorem 3 (forest criterion and polynomial-time construction).** If \(H_A\) is a forest, then
+\[
+\boxed{\mathcal W(c)=\mathbb F_2^n}
+\tag{FO5}
+\]
+for every affine constant \(\alpha\). Given any desired profile \(w\), a full antipodal geodesic with profile \(w\) can be constructed by Gaussian elimination and topological sorting in polynomial time.
+
+*Proof.* A forest has no directed cycles under any orientation, so every subset \(T\subseteq E(H_A)\) can be realized as the reversed-edge set \(I(O)\) of some acyclic orientation \(O\). Thus (FO3) realizes every subset sum of \(\gamma_{ij}\). By (FO4) those sums cover \(V\), giving (FO5). Constructively, solve in \(V\) for coefficients \(t_{ij}\) such that \(\sum t_{ij}\gamma_{ij}=[w+\alpha+r_{\pi_0}]\). Reverse the reference orientation on the selected forest edges and topologically sort the resulting directed forest, obtaining an order \(\pi\). Equations (FO3)-(FO4) then ensure \(w+\alpha+r_\pi\in\operatorname{im}A\), so solve \(Ax=w+\alpha+r_\pi\) by Gaussian elimination. Equation (FO2) proves that the resulting geodesic has profile \(w\). \(\square\)
+
+**Corollary 4 (odd-degree forest dependency graphs).** If \(T\) is any forest in which every vertex has odd degree, let \(A\) be its binary adjacency matrix. The legal antipodally odd coloring
+\[
+c_i(x)=\alpha_i+\sum_{j:\{i,j\}\in E(T)}x_j
+\]
+has complete direction-indexed color-profile support, for every \(\alpha\). Indeed \(A_{ii}=0\), \(A\mathbf1=\mathbf1\), and \(\gamma_{ij}=0\) outside \(E(T)\); hence \(H_A\subseteq T\).
+
+**Corollary 5 (simultaneously unbounded cokernel and nonunary dependence).** For any odd \(h\ge3\), let \(T_h\) have vertices consisting of a hub \(o\), branch vertices \(b_1,\ldots,b_h\), and two private leaves \(a_j,d_j\) for each branch. Its edges are \(ob_j,b_ja_j,b_jd_j\). Then \(n=3h+1\), every vertex has odd degree, the binary adjacency matrix \(A_h\) has rank \(2h\), and its cokernel has dimension \(h+1\). The hub and all \(h\) branch vertices have at least three readers, so the number of nonunary direction rules is \(h+1\). By Corollary 4 every direction-indexed profile occurs, even though both the cokernel dimension and number of nonunary rows diverge with \(n\).
+
+*Rank proof.* Each leaf column is \(e_{b_j}\), so the leaf columns span the \(h\)-dimensional branch subspace. The column of branch vertex \(b_j\) is \(e_o+e_{a_j}+e_{d_j}\). These \(h\) columns are independent modulo the branch subspace, because their disjoint private-leaf supports are nonzero. The hub column is \(\sum_{j=1}^h e_{b_j}\) and is already in the branch subspace. Hence \(\operatorname{rank}A_h=2h\). The number of branch readers is three; the hub degree \(h\) is odd, so all row sums equal one. \(\square\)
+
+**Audit.** A Gaussian-elimination and topological-sort implementation constructed geodesics with prescribed independently randomized color profiles in the \(T_h\) families for \(h=3,5,7,9\) (dimensions \(10,16,22,28\)); 200 target profiles were tested per instance. The computed ranks were \(6,10,14,18\), respectively, agreeing with \(2h\). Separately, all 32,768 legal affine five-direction dependency matrices were checked for full profile support, as were 10,000 sampled legal affine six-direction matrices. These finite checks support, but do not establish, surjectivity for arbitrary affine matrices; only the forest theorem and its corollaries are proved.
+
+*Scope.* The acyclic-orientation description (FO3) is valid for all legal affine colorings, not just forests. In general a cyclic exchange-support graph need not admit arbitrary choices of inverted edges; the full affine profile-surjectivity conjecture remains open beyond established classes. The forest theorem does not assert the unrestricted nonlinear NORI1 conjecture.
+
+#### Universal local cycle transparency and one-cycle affine profiles
+
+#### Universal local cycle transparency and one-cycle affine profile surjectivity
+
+Let \(c_i(x)=\alpha_i+(Ax)_i\) be an affine antipodally odd edge coloring of \(Q_n\), where \(A_{ii}=0\) and \(A\mathbf1=\mathbf1\). Put \(V=\mathbb F_2^n/\operatorname{im}A\), \(v_i=[e_i]\in V\), and \(\gamma_{ij}=A_{ij}v_i+A_{ji}v_j\in V\). Let \(H_A\) be the undirected graph with edges \(ij\) precisely when \(\gamma_{ij}\ne0\). Every orientation of \(H_A\) induced by a total order is acyclic, and every acyclic orientation arises from some total order. Fixing a reference orientation, its reversed-edge sum determines the class of the color-profile offset modulo \(\operatorname{im}A\).
+
+**Lemma 1 (universal vertex-star identity).** For every direction \(i\),
+\[
+\boxed{v_i=\sum_{j\ne i}\gamma_{ij}.}\tag{CL1}
+\]
+*Proof.* The first contribution is \((\sum_{j\ne i}A_{ij})v_i=v_i\), because row \(i\) has odd sum. The second is \([\sum_j A_{ji}e_j]=[Ae_i]=0\). \(\square\)
+
+**Theorem 2 (local cycle transparency in arbitrary affine exchange graphs).** Let \(C\) be any simple undirected cycle of length \(\ell\ge3\) in \(H_A\), and let \(W_C\subseteq V\) be the span of all exchange labels from edges not belonging to \(C\). In the quotient \(\widetilde V=V/W_C\), there exists a nonempty proper subset \(D\subsetneq E(C)\) satisfying
+\[
+\boxed{\sum_{e\in D}\widetilde\gamma_e=0.}\tag{CL2}
+\]
+Consequently, every attainable class in \(\widetilde V\) of an orientation of \(C\) is also attained by an orientation in which \(C\) is not directed. This conclusion imposes no assumptions on other cycles elsewhere in \(H_A\).
+
+*Proof.* All directions outside \(C\) have \(\widetilde v_j=0\), by the vertex-star identity: every edge incident to such \(j\) lies outside \(C\). For a vertex \(i\) on \(C\), denote its two incident cycle labels by \(\gamma_{i-}\), \(\gamma_{i+}\), giving \(\widetilde v_i=\widetilde\gamma_{i-}+\widetilde\gamma_{i+}\). Fix an edge \(e=ij\) on the cycle, with predecessor edge \(e_-\) at \(i\) and successor edge \(e_+\) at \(j\), following an arbitrary cyclic order. Put \(a=A_{ij}\), \(b=A_{ji}\), with \((a,b)\ne(0,0)\) because \(\gamma_e\ne0\). The definition of \(\gamma_e\) gives
+\[
+(1+a+b)\widetilde\gamma_e+
+a\widetilde\gamma_{e_-}+
+b\widetilde\gamma_{e_+}=0.
+\tag{CL3}
+\]
+If \((a,b)=(1,0)\), the predecessor label vanishes; if \((a,b)=(0,1)\), the successor label vanishes. If both equal one, the sum of the predecessor, central, and successor labels vanishes. For \(\ell\ge4\), these are nonempty proper edge subsets, proving (CL2).
+
+It remains to treat a triangle on which every cycle edge has \(a=b=1\). At each of its three vertices, the two internal readers give even parity. Since every row of \(A\) has odd sum, each triangle vertex \(i\) has some reader \(j\) outside the triangle with \(A_{ij}=1\). In \(\widetilde V\), both \(\widetilde v_j=0\) and \(\widetilde\gamma_{ij}=0\), whether \(ij\) lies outside \(C\) as an edge of \(H_A\) or has label zero. The equation \(\widetilde\gamma_{ij}=A_{ij}\widetilde v_i+A_{ji}\widetilde v_j\) therefore yields \(\widetilde v_i=0\). Thus all triangle labels \(\widetilde\gamma_{ij}\) vanish, and any singleton triangle edge establishes (CL2). If at least one triangle edge is asymmetric, the first two cases of (CL3) already apply.
+
+The two directed orientations of \(C\) differ by reversing every cycle edge. Let \(D\) be the proper nonempty zero-sum subset supplied above. Reversing the edges in \(D\) changes no class in \(\widetilde V\), and sends either directed orientation to a nondirected orientation. \(\square\)
+
+**Theorem 3 (one-cycle affine closure with constructive witnesses).** If \(H_A\) contains at most one undirected cycle in total, then every direction-indexed full-geodesic color profile is realized:
+\[
+\boxed{\mathcal W(c)=\mathbb F_2^n.}\tag{CL4}
+\]
+For a prescribed profile, a starting root and direction order can be constructed in polynomial time by binary Gaussian elimination, cycle repair, and a topological sort.
+
+*Proof.* If \(H_A\) is a forest, this is the previously proved forest theorem. Otherwise let \(C\) be its unique cycle and put \(W=W_C\). The noncycle edges induce a forest. For a desired target offset class \(t\in V\), first choose a subset of cycle-edge reversals whose labels have image \(t+W\) in \(V/W\). This is possible because all exchange labels together span \(V\). If these reversals make the cycle directed, change them on a nonempty proper subset from Theorem 2; the quotient class is unchanged, but the cycle becomes nondirected. The remaining difference in \(V\) lies in \(W\), so choose orientations of noncycle edges to match it, using their spanning definition. Regardless of those tree-edge orientations, the full orientation of \(H_A\) remains acyclic because its only possible undirected cycle is not directed. Topologically sort to obtain a total direction order \(\pi\), then solve \(Ax=w+\alpha+r_\pi\). The prescribed profile follows. All operations are polynomial-time linear algebra or graph algorithms. \(\square\)
+
+**Nonforest example.** In dimension five, take the binary row masks
+\[
+(A_0,A_1,A_2,A_3,A_4)=(2,13,2,7,8),
+\]
+meaning
+\[
+c_0=x_1+\alpha_0,\quad c_1=x_0+x_2+x_3+\alpha_1,\quad
+c_2=x_1+\alpha_2,\quad c_3=x_0+x_1+x_2+\alpha_3,\quad
+c_4=x_3+\alpha_4.
+\]
+Every row has odd weight and zero diagonal. The cokernel has dimension two, with representatives \(v=(1,2,3,2,2)\) in a fixed two-bit basis. Its nonzero exchange-label graph has edges \(01,03,12,23,34\), containing the four-cycle \(0-1-2-3-0\) and a pendant edge \(34\). Independent dynamic programming confirms all four cokernel classes occur. Theorem 3 proves this directly and for all affine constants.
+
+**Scope and methodological caution.** The cycle-transparency theorem holds for *every* legal affine matrix and identifies a universal forced relation near each cycle. The full-surjectivity corollary requires at most one cycle. For graphs with multiple interacting cycles, repairing one directed cycle may change other cycles, so Theorem 2 must not be interpreted as a global acyclic-orientation selection theorem. Neither result proves unrestricted affine or nonlinear NORI1.
+
+#### Odd paired-block nonlinear profile universality
+
+### Odd paired-block profile universality with nonlinear later-bit gates
+
+All sums are in F2. For a subset S of direction labels, write p_S(x)=sum_(i in S)x_i. A full-geodesic profile records the edge colors indexed by direction.
+
+Lemma 1 (odd bipartite four-run ordering). Let U,V be disjoint nonempty direction sets of odd sizes, and define the cube-edge colors c_i(x)=beta_i+p_V(x) for i in U, c_j(x)=beta_j+p_U(x) for j in V, where beta_i are arbitrary constants. Fix any starting root x. A profile w is attained by some full direction order from x if and only if
+sum_(i in U union V)(w_i+beta_i)=1+p_U(x)+p_V(x). (L1)
+Consequently the rootwise profile image contains 2^(|U|+|V|-1) words and each prescribed word is attained from 2^(|U|+|V|-1) roots.
+
+Proof. The vertex function Q(x)=p_U(x)p_V(x) has derivative Q(x)+Q(x+e_i) equal to the partner-block parity for any i. Along a full geodesic, the sum of these derivatives telescopes to Q(x)+Q(bar x)=1+p_U(x)+p_V(x), since both block sizes are odd. This proves necessity. For sufficiency, put z_i=w_i+beta_i+p_V(x) on U and z_i=w_i+beta_i+p_U(x) on V; (L1) makes the total number of ones in z odd. Write U0,U1,V0,V1 for the four lists partitioned by z value, and a=|U1|, b=|V1|. When a is odd and b even, take the direction order U0,V0,U1,V1. The number of preceding V-moves has parity zero on U0 and one on U1 because |V0| is odd; the number of preceding U-moves is even on V0 because |U0| is even, and odd on V1 because |U| is odd. This realizes z, hence w. When a is even and b odd, use V0,U0,V1,U1, with the symmetric verification. For any prescribed w, condition (L1) is one nonzero root-bit parity equation, giving the root count. QED.
+
+Theorem 2 (arbitrary nonlinear one-way gates). Partition all n dimensions into r ordered pairs of odd-sized nonempty blocks (U_t,V_t), 1<=t<=r. Set L_t=union_(s>t)(U_s union V_s). For every individual direction i in U_t union V_t choose alpha_i in F2 and an arbitrary Boolean function f_i on the L_t bits satisfying f_i(bar z)=f_i(z). Define c_i(x)=alpha_i+p_(V_t)(x)+f_i(x_(L_t)) for i in U_t, and c_i(x)=alpha_i+p_(U_t)(x)+f_i(x_(L_t)) for i in V_t. Then c is a legal antipodally odd edge coloring, and every binary direction-indexed profile is attained by a full antipodal geodesic. All witnesses can use orders that traverse the block pairs in sequence, with at most four runs inside each pair.
+
+More strongly, for any fixed starting vertex x, the profiles attained by these pair-consecutive direction orders are precisely the solutions w to the r parity equations
+sum_(i in U_t union V_t)(w_i+alpha_i+f_i(x_(L_t)))=1+p_(U_t)(x)+p_(V_t)(x), 1<=t<=r. (L2)
+They form an affine subspace of codimension r and size 2^(n-r). For each prescribed w, the number of roots satisfying (L2) is 2^(n-r), and all such roots admit a pair-consecutive geodesic with profile w.
+
+Proof. An old-direction rule is unchanged on its undirected edge because it reads only its opposite block and later blocks. Under global antipodal translation the parity of its opposite odd block flips and the even gate f_i does not, establishing legality. During traversal of the t-th pair, later bits remain fixed and earlier bits do not occur in that pair's rules. The frozen pair coloring therefore has the form of Lemma 1, with constants beta_i=alpha_i+f_i(x_(L_t)). Lemma 1 establishes (L2), including the sufficiency by four-run order for each pair. The r conditions involve disjoint target-bit sets and hence have rank r for fixed x. To prescribe w and choose a starting root, process pairs from r backwards to 1. Once the later root bits are chosen, the t-th equation requires only one parity on the current pair's root bits and permits 2^(|U_t|+|V_t|-1) assignments. Their product is 2^(n-r). For every resulting root, concatenate the four-run direction orders supplied by Lemma 1. QED.
+
+The gates may have unbounded Boolean degree and vary independently with i. For instance, if there are r>=3 pairs, take f_i(x)=product_(s>t)(x_(u_s)+x_(v_s)) for all i in U_t with t<=r-2, where u_s in U_s and v_s in V_s are fixed representatives. Each factor is antipodally even; the earliest gate has degree r-1. Taking |U_t|=|V_t|=3 gives 3(r-2) nonlinear rows of degree at least two.
+
+Theorem 3 (affine odd-clone lift with matched invertible core). Let m be even and B in GL_m(F2) satisfy B_aa=0, B*1=1, and B_(2t-1,2t)=B_(2t,2t-1)=1 for each matching pair. Partition [n] into odd-sized nonempty blocks D_1,...,D_m. For i in D_a set
+c_i(x)=alpha_i+sum_(b=1)^m B_ab p_(D_b)(x). (L3)
+Then c is legal and antipodally odd, its affine reader matrix has rank m, and every full direction-indexed color profile occurs.
+
+Proof. Let p_b be the initial parity of D_b. When the pair (D_(2t-1),D_(2t)) is traversed after all earlier pairs, the frozen part of the color in D_a equals alpha_i+(Bp)_a+sum_(b<2t-1)B_ab, and every preceding direction of its matched block toggles that color once. For any prescribed profile, Lemma 1 allows choosing arbitrary effective phases for each matched pair subject only to one selectable odd parity condition; choose them to support a four-run order. This determines the desired vector q=Bp, because the earlier-completed-block correction is known for every a. Invert B to obtain p, select root bits with those block parities, and concatenate the matched-pair four-run orders. The reader matrix is the composition of the surjective block-parity map, invertible B, and injective block-repetition map, proving rank m. QED.
+
+Corollary. For any odd p,q>=1, the complete bipartite reader graph K_(p,q) gives a legal affine coloring of rank 2 and corank p+q-2 whose exchange graph has (p-1)(q-1) independent cycles; its complete profile support follows from Theorem 3. For any even m, B=I+J (J the all-one matrix) satisfies B^2=I and has reciprocal pairs; all complete multipartite reader graphs with m odd-sized classes therefore satisfy the same full-profile conclusion with rank m, regardless of their many interacting cycles.
+
+Independent tests used randomly generated antipodally even truth-table gates separately for every direction in Q_10, Q_12 and Q_14, constructing 1,000 prescribed profiles per instance and checking legality. The affine matched-core construction was checked on 250-300 prescribed targets in dimensions 6, 10 and 16. These are finite audits of the dimension-uniform proofs. The result covers unrestricted nonlinear complexity inside one-way gated paired-block systems but does not establish NORI1 for arbitrary legal colorings.
+
+#### Cyclic paired-gate feedback and Boolean fixed-point obstructions
+
+#### Cyclic paired-gate feedback encodes Boolean fixed points
+
+Let \(r\ge1\), with \(2r\) directions named \(a_t,b_t\) for \(1\le t\le r\). Write \(u_t=x_{a_t}\), \(v_t=x_{b_t}\), and \(p_t=u_t+v_t\), with arithmetic in \(\mathbb F_2\). Choose arbitrary Boolean functions \(f_t:\mathbb F_2^{r-1}\to\mathbb F_2\), each acting on the list of parities \(p_s\), \(s\ne t\), and define
+\[
+\boxed{c_{a_t}(x)=v_t+f_t(p_{-t}),\qquad c_{b_t}(x)=u_t.}\tag{FB1}
+\]
+Every direction rule is constant along its own undirected edge. Antipodal translation changes \(u_t,v_t\) individually but preserves every parity \(p_s\), so (FB1) is a legal antipodally odd coloring in every dimension \(2r\).
+
+Let a *pair-consecutive* direction order be one in which the two directions \(a_t,b_t\) of each pair are adjacent, while the \(r\) pairs may be permuted and oriented internally. For a target direction-indexed profile \(w\), define \(b_t=1+w_{a_t}+w_{b_t}\) and the Boolean map \(T_f(p)=(p_t+f_t(p_{-t}))_{t=1}^r\).
+
+**Theorem 1 (feedback-profile fiber formula).** The number of rooted oriented full antipodal geodesics of (FB1) with profile \(w\) and a pair-consecutive order is
+\[
+\boxed{N_w^{\mathrm{pc}}=2^r\,r!\,|\{p\in\mathbb F_2^r:T_f(p)=b\}|.}\tag{FB2}
+\]
+In particular, a red pair-consecutive full geodesic exists if and only if \(T_f(p)=\mathbf1\) is solvable.
+
+*Proof.* When the two directions of pair \(t\) are consecutive, every other pair is either entirely untouched or entirely traversed. Thus its parity \(p_s\) has its starting value during the two steps of pair \(t\). If \(a_t\) is followed by \(b_t\), the corresponding profile bits are \(w_{a_t}=v_t+f_t(p_{-t})\), \(w_{b_t}=u_t+1\). If \(b_t\) is followed by \(a_t\), they are \(w_{b_t}=u_t\), \(w_{a_t}=v_t+1+f_t(p_{-t})\). In both orders,
+\[
+w_{a_t}+w_{b_t}=1+p_t+f_t(p_{-t}).\tag{FB3}
+\]
+Conversely, if (FB3) matches the target pair-bit sum, then for a fixed root precisely one of the two internal orders yields the two individually prescribed colors: switching the internal order complements both profile bits. For each admissible parity vector \(p\) there are \(2^r\) starting roots realizing it, each pair has one forced internal order, and the \(r\) pairs can be permuted in \(r!\) ways without changing their parity inputs. This proves (FB2). \(\square\)
+
+**Theorem 2 (arbitrary Boolean fixed-point realization).** Let \(F:\mathbb F_2^r\to\mathbb F_2^r\) be an arbitrary Boolean map, represented by a Boolean circuit. Construct a legal odd coloring of \(Q_{4r}\) with \(2r\) named pairs, \(P_i=(a_i,b_i)\) and \(Q_i=(c_i,d_i)\). Define the pair parities \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{c_i}+x_{d_i}\), and direction-color rules
+\[
+\begin{array}{ll}
+c_{a_i}=x_{b_i}+q_i, & c_{b_i}=x_{a_i},\\
+c_{c_i}=x_{d_i}+F_i(p), & c_{d_i}=x_{c_i}.
+\end{array}\tag{FB4}
+\]
+All gates read only other pairs' parities, so this belongs to the cyclic paired-gate family (FB1). The rooted oriented red full-geodesic count among orders keeping every \(P_i\) and \(Q_i\) consecutive is
+\[
+\boxed{2^{2r}(2r)!\,|\operatorname{Fix}(F)|.}\tag{FB5}
+\]
+In particular, such a red geodesic exists if and only if \(F\) has a fixed point.
+
+*Proof.* Applying (FB3) with target profile zero to the \(P_i\) pair yields \(p_i+q_i=1\); applying it to \(Q_i\) yields \(q_i+F_i(p)=1\). Eliminating \(q\) gives \(F_i(p)=p_i\) for all \(i\). Each fixed point \(p\) determines \(q=\mathbf1+p\); the \(2r\) pair parities admit \(2^{2r}\) starting roots, each has a unique red orientation within each pair, and all \((2r)!\) orders of the pairs succeed. \(\square\)
+
+**Corollary 3 (SAT universality of static pair schedules).** For a Boolean formula \(\psi(z_1,\ldots,z_r)\), set \(F_1(z)=z_1+1+\psi(z)\) and \(F_i(z)=z_i\) for \(i>1\). Then \(\operatorname{Fix}(F)=\{z:\psi(z)=1\}\), so the legal odd edge-coloring in (FB4) has a red pair-consecutive full geodesic if and only if \(\psi\) is satisfiable. With Boolean-circuit encodings of the color rules, existence of a red pair-consecutive antipodal geodesic is NP-complete even for the family (FB4), and counting such rooted ordered red geodesics determines the number of satisfying assignments after division by \(2^{2r}(2r)!\). This is a restricted scheduling problem; it does not claim NP-hardness or failure of unrestricted monochromatic geodesic existence.
+
+**Four-dimensional obstruction repaired by interleaving.** Let \(r=2\), \(f_1(p_2)=p_2\), and \(f_2(p_1)=p_1+1\). Then the pair-consecutive all-red conditions are \(p_1+p_2=1\) and \(p_1+p_2=0\), so no such path exists. Nevertheless, from root \((u_1,v_1,u_2,v_2)=(0,0,0,0)\), the order
+\[
+\boxed{b_1,\ b_2,\ a_1,\ a_2}\tag{FB6}
+\]
+has four red edges and terminates at the antipode. The second pair's parity is temporarily toggled when the first \(a\)-direction is evaluated; this defeats the inconsistent static parity constraints.
+
+**Finite feedback audit, not a universal theorem.** For \(r=3\), all \(16^3=4096\) choices of the functions \(f_t:\mathbb F_2^2\to\mathbb F_2\) were enumerated. Each corresponding legal odd \(Q_6\) coloring attained all 64 direction-indexed profiles using direction orders with at most two simultaneously open pairs (a pair is open after its first and before its second step). In 816 instances pair-consecutive orders already attained all profiles; in the other 3280 some profile required interleaving. Random samples for \(r=4\) likewise had width-two profile witnesses. These finite observations do not establish a dimension-uniform width-two theorem.
+
+The reduction identifies a limitation of any argument that assumes the parity equations of cyclically dependent interfaces can always be solved simultaneously: such equations represent arbitrary Boolean fixed-point problems. Allowing interleaving introduces intermediate-state changes absent from those static equations. The existence of full monochromatic geodesics without pair-consecutive restriction remains a separate question.
+
+#### Three-phase parity reset eliminates arbitrary nonlinear feedback
+
+#### Three-phase reset theorem: arbitrary cyclic pair-feedback gates are profile-universal
+
+Let \(r\ge1\) and index \(2r\) cube directions by \(a_i,b_i\) (\(i\in[r]\)). Write \(u_i=x_{a_i}\), \(v_i=x_{b_i}\) and \(p_i=u_i+v_i\). For every \(i\), let \(f_i:\mathbb F_2^{[r]\setminus\{i\}}\to\mathbb F_2\) be an unrestricted Boolean function (there is no acyclicity, locality, degree, or rank hypothesis), and define
+\[
+\boxed{c_{a_i}(x)=v_i+f_i(p_{-i}),\qquad c_{b_i}(x)=u_i.}\tag{TR1}
+\]
+Every rule ignores its own direction bit. Global antipodal translation complements \(u_i,v_i\), but preserves each \(p_j\), so the coloring is legal and antipodally odd.
+
+**Theorem 1 (unrestricted feedback profile universality).** For every coloring (TR1), every prescribed direction-indexed binary profile \(w\in\mathbb F_2^{2r}\) occurs on a full antipodal geodesic. In symbols,
+\[
+\boxed{\mathcal W(c)=\mathbb F_2^{2r}.}\tag{TR2}
+\]
+More strongly, fix any order \(\sigma\in S_r\) of the \(a_i\)-directions. There is a constructive full geodesic with profile \(w\), using the following three-phase form: an initial group of selected \(b\)-directions, then the \(a\)-directions in order \(\sigma\), then the remaining \(b\)-directions. Its initial vertex and the membership of the two \(b\)-groups are obtained with precisely \(r\) evaluations of the Boolean gates.
+
+*Proof.* For \(i\ne j\) define \(k_{ij}=[a_j\text{ precedes }a_i\text{ in }\sigma]\), and regard \(k_{i,-i}\in\mathbb F_2^{r-1}\) as a fixed input for the \(i\)-th gate. For the desired profile \(w\), set
+\[
+\boxed{p_i=1+w_{a_i}+w_{b_i}+f_i(k_{i,-i}),}\tag{TR3}
+\]
+\[
+\boxed{u_i=w_{b_i}+1+p_i,\qquad v_i=u_i+p_i.}\tag{TR4}
+\]
+Start at the vertex with the indicated \(u_i,v_i\). First traverse every direction \(b_i\) for which \(p_i=1\), in arbitrary order. Second traverse all \(a_i\) in order \(\sigma\). Third traverse all \(b_i\) with \(p_i=0\), in arbitrary order.
+
+After phase one, \(v_i\) has become \(u_i\) for every \(i\), since the initial \(b_i\)-bit differs from \(u_i\) by \(p_i\) and \(b_i\) is flipped once precisely when \(p_i=1\). Thus every pair parity is zero before phase two. During phase two, just before \(a_i\), the current pair-parity vector outside \(i\) is precisely \(k_{i,-i}\), independently of the starting vertex. Furthermore \(v_i=u_i\) before \(a_i\), so
+\[
+c_{a_i}=u_i+f_i(k_{i,-i})=w_{a_i}
+\]
+by (TR3)-(TR4). For the direction \(b_i\), if \(p_i=1\), it was traversed in phase one and its color was \(u_i=w_{b_i}\). If \(p_i=0\), it is traversed in phase three, after \(a_i\) has flipped \(u_i\), so its color is \(u_i+1=w_{b_i}\). Every direction is used once. Therefore the path is a full antipodal geodesic and has all prescribed colors. \(\square\)
+
+**Corollary 2 (many constructive witnesses and oracle complexity).** For every target \(w\), each one of the \(r!\) orders \(\sigma\) gives a rooted, ordered full geodesic of profile \(w\), with different orders on the \(a_i\). Consequently
+\[
+\boxed{G_c(w)\ge r!\qquad\text{for all }w.}\tag{TR5}
+\]
+For a fixed \(\sigma\), only the \(r\) Boolean values \(f_i(k_{i,-i})\) are queried. The root and path are constructed with \(O(r^2)\) elementary operations, apart from those queries, regardless of the functions' Boolean degree or circuit complexity. For fixed \(\sigma\) and \(w\), the root and partition of \(b\)-steps in this particular three-phase scheme are uniquely determined by (TR3)-(TR4).
+
+**Corollary 3 (static SAT-hardness versus unrestricted constructive solvability).** The earlier fixed-point encoding remains valid: restricting (TR1) to pair-consecutive orders makes existence of a red full geodesic equivalent to a Boolean fixed-point equation and is NP-complete under circuit input. Removing that restriction yields the explicit algorithm of Theorem 1. Thus the SAT obstruction is solely an artifact of forbidding dynamic interleaving; arbitrary Boolean feedback does not obstruct full profiles in this entire family. The theorem supersedes the previous uncertainty about unrestricted profile attainment for (TR1); whether two simultaneously open pairs always suffice is a separate bounded-width scheduling question and is not needed for NORI1 closure within this family.
+
+**Gauge-reset interpretation.** Phase one moves the root onto the diagonal subcube \(\{x_{a_i}=x_{b_i}\ \forall i\}\); phase two evaluates all nonlinear feedback gates on a completely predetermined chain of pair-parity states \(0,e_{\sigma_1},e_{\sigma_1}+e_{\sigma_2},\ldots\); phase three completes the antipodal traversal. This temporary reset breaks every apparent feedback cycle without solving any fixed-point equation.
+
+**Independent audit.** Implemented the construction with independently sampled unrestricted Boolean truth tables for each gate, random profiles and random \(\sigma\). Verified legality by symbolic inspection and directly simulated 300 target profiles per sample in dimensions \(4,6,8,10,16,24\), all successful. These finite tests supplement the dimension-uniform proof.
+
+*Scope.* The theorem covers cyclic dependence of arbitrary complexity through other pairs' XOR parities, with the private \(b_i\)-directions serving as resettable auxiliary bits. It does not establish a comparable reset mechanism for an arbitrary legal odd coloring of \(Q_n\); in particular a counterexample-preserving paired lift need not possess these programmable scratch-bit rules.
+
 ### Coxeter-window switch moments and a boundary spectral polynomial
 
 We work with the Coxeter-coset representations of Article XIV. A general averaging identity permits direct comparison of the canonical type-A and type-B models without losing full-path admissibility.
@@ -1850,6 +2168,54 @@ and both counts zero at every other root. Since \(m\ge2\), all counts in (10) ar
 **Implication for adapting Wu–Yang (arXiv:2607.19276, Sections 2 and 5).** The source Freudenthal simplices already describe dimension-simple monotone paths. Wu–Yang's proof obtains its ordinary rook labeling by passing through unrestricted connected components, which forgets whether the connecting monochromatic paths reuse dimensions. Equations (1)–(4) offer a rank-sensitive replacement for the component separation, and (3) supplies a cut-compatible counting law. However, the counterexample (8)–(10) shows that reducing these nonnegative integer path counts modulo two can annihilate every full-geodesic witness at every root. Therefore a modified chain argument cannot use just the mod-two scalar coefficient of the symmetric two-arm enumerator as its existence detector. It must retain dimension-set supports, asymmetric path order data, or finer geometric information before taking a mod-two obstruction.
 
 **Relation to companion work.** The common-terminal two-arm polynomial for boundary tournaments in Article XI also has a symmetric-arm characteristic-two cancellation. Here the rank-resolved convolution (3) and the even-dimensional family (8) are specific to antipodally odd *edge* colorings and use their reversal-plus-antipode bijection. This makes the obstruction to direct binary counting visible on both sides of the intended unification. Neither theorem proves the NORI1 existence conjecture; it identifies a faithful dimension-simple calculation and a limitation of its parity compression.
+
+#### Signed path-orbit incidence and incompatible monochromatic geodesics
+
+Let \(c\) range over legal antipodally odd binary edge colorings of \(Q_n\). Choose one reference edge in each of the \(m=n2^{n-2}\) antipodal orbits of undirected edges, so each coloring is specified by independent binary bits \(z_o\). A full antipodal geodesic \(P\) uses one orbit per direction. Its direction-\(i\) edge in orbit \(o\) has color \(z_o\oplus s_{P,o}\), where \(s_{P,o}\) records which member of that orbit occurs.
+
+For any finite nonempty family \(\mathcal P\) of full geodesics, construct a signed bipartite incidence graph \(B(\mathcal P)\) with left vertices the paths \(P\), right vertices the edge orbits \(o\) they use, and edge label \(s_{P,o}\). Write \(v\) for its number of orbit vertices and \(k\) for its number of connected components.
+
+**Theorem (signed-incidence realization and probability).** The paths in \(\mathcal P\) can all be monochromatic (not necessarily in the same color) in a legal coloring if and only if the binary sum of incidence labels is zero around every cycle of \(B(\mathcal P)\). Moreover,
+\[
+\boxed{
+\mathbb P_c[\text{all }P\in\mathcal P\text{ monochromatic}]
+=\begin{cases}
+2^{k-v},&\text{all incidence cycles have even label sum},\\
+0,&\text{otherwise}.
+\end{cases}}\tag{SI1}
+\]
+In the positive case the satisfying colorings form an affine subspace of \(\mathbb F_2^m\) of dimension \(m-v+k\).
+
+*Proof.* Introduce an unknown color \(t_P\) for each selected path. Its monochromaticity is equivalent to
+\[
+z_o\oplus t_P=s_{P,o}\quad\text{for every incidence }P-o.
+\]
+Summing these equations around an incidence cycle yields the stated necessary condition. Conversely, in each connected component of the incidence graph choose one variable freely, then propagate the equations along a spanning tree. The equations on remaining edges hold precisely when all fundamental cycles have even label sum. Thus one binary degree of freedom survives per connected component, and the \(m-v\) unused orbit-color bits are unconstrained. There are \(2^{m-v+k}\) satisfying colorings among the \(2^m\) legal colorings, proving (SI1). \(\square\)
+
+**Corollary (two-path overlap law).** Let two full geodesics \(P,Q\) have \(t\) shared antipodal edge-orbits. If \(t\le1\), their monochromaticity events are independent, with joint probability \(2^{2-2n}\). If \(t\ge2\), write \(d_o=s_{P,o}\oplus s_{Q,o}\) at each common orbit. If the \(d_o\) disagree then the joint probability is zero; if they agree then it equals \(2^{t+1-2n}\). Hence sharing at least two orbits creates either positive correlation or incompatibility. This follows directly by applying (SI1) to the union of two star incidence graphs.
+
+**Theorem (frustrated triple of full geodesics in every dimension).** For any \(n\ge3\), put \(E=(3,4,\ldots,n-1)\) and consider the three full geodesics from the zero vertex with direction orders
+\[
+\boxed{P=(0,1,2,E),\qquad Q=(0,2,E,1),\qquad R=(1,0,2,E).}\tag{SI2}
+\]
+Any two of these can be monochromatic simultaneously in some legal coloring, but no legal coloring can make all three monochromatic.
+
+*Proof.* Paths \(P,Q\) use the same first edge, forcing equal monochromatic colors if both succeed. Paths \(P,R\) reach \(e_0\oplus e_1\) after their first two moves, and share the remaining edges (directions \(2,E\)), also forcing equal colors. The final direction-one edge of \(Q\), from \(\mathbf1\oplus e_1\) to \(\mathbf1\), is antipodal to the first edge of \(R\), from \(0\) to \(e_1\). It forces opposite colors. These three requirements contradict one another.
+
+For pairwise realizability, \(P,Q\) have just one common edge orbit (their first edge), and \(Q,R\) have just one (the opposite end edges). Their respective incidence graphs have no cycles. Paths \(P,R\) share all the same edges from direction two onward, and have no further common edge orbit; every resulting incidence cycle has even label sum. Hence each pair is individually realizable by the preceding theorem. \(\square\)
+
+The pairwise probabilities in (SI2) are
+\[
+\boxed{
+\mathbb P(M_PM_Q=1)=2^{2-2n},\quad
+\mathbb P(M_PM_R=1)=2^{-n-1},\quad
+\mathbb P(M_QM_R=1)=2^{2-2n},\quad
+\mathbb P(M_PM_QM_R=1)=0.}\tag{SI3}
+\]
+The orbit incidence counts were independently verified by a signed disjoint-set algorithm for every \(3\le n\le10\).
+
+This supplies a dimension-uniform signed-graphic description of joint full-geodesic events and a minimal three-path failure of pairwise compatibility. It does not prove unrestricted NORI1, which asks for at least one monochromatic path in each legal coloring.
+
 
 ### Coxeter flag parity and curvature reconstruction
 

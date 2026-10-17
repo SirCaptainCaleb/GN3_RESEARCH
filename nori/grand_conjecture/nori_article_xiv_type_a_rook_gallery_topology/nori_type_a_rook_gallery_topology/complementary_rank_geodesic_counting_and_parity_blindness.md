@@ -80,3 +80,50 @@ and both counts zero at every other root. Since \(m\ge2\), all counts in (10) ar
 **Implication for adapting Wu–Yang (arXiv:2607.19276, Sections 2 and 5).** The source Freudenthal simplices already describe dimension-simple monotone paths. Wu–Yang's proof obtains its ordinary rook labeling by passing through unrestricted connected components, which forgets whether the connecting monochromatic paths reuse dimensions. Equations (1)–(4) offer a rank-sensitive replacement for the component separation, and (3) supplies a cut-compatible counting law. However, the counterexample (8)–(10) shows that reducing these nonnegative integer path counts modulo two can annihilate every full-geodesic witness at every root. Therefore a modified chain argument cannot use just the mod-two scalar coefficient of the symmetric two-arm enumerator as its existence detector. It must retain dimension-set supports, asymmetric path order data, or finer geometric information before taking a mod-two obstruction.
 
 **Relation to companion work.** The common-terminal two-arm polynomial for boundary tournaments in Article XI also has a symmetric-arm characteristic-two cancellation. Here the rank-resolved convolution (3) and the even-dimensional family (8) are specific to antipodally odd *edge* colorings and use their reversal-plus-antipode bijection. This makes the obstruction to direct binary counting visible on both sides of the intended unification. Neither theorem proves the NORI1 existence conjecture; it identifies a faithful dimension-simple calculation and a limitation of its parity compression.
+
+## Signed path-orbit incidence and incompatible monochromatic geodesics
+
+Let \(c\) range over legal antipodally odd binary edge colorings of \(Q_n\). Choose one reference edge in each of the \(m=n2^{n-2}\) antipodal orbits of undirected edges, so each coloring is specified by independent binary bits \(z_o\). A full antipodal geodesic \(P\) uses one orbit per direction. Its direction-\(i\) edge in orbit \(o\) has color \(z_o\oplus s_{P,o}\), where \(s_{P,o}\) records which member of that orbit occurs.
+
+For any finite nonempty family \(\mathcal P\) of full geodesics, construct a signed bipartite incidence graph \(B(\mathcal P)\) with left vertices the paths \(P\), right vertices the edge orbits \(o\) they use, and edge label \(s_{P,o}\). Write \(v\) for its number of orbit vertices and \(k\) for its number of connected components.
+
+**Theorem (signed-incidence realization and probability).** The paths in \(\mathcal P\) can all be monochromatic (not necessarily in the same color) in a legal coloring if and only if the binary sum of incidence labels is zero around every cycle of \(B(\mathcal P)\). Moreover,
+\[
+\boxed{
+\mathbb P_c[\text{all }P\in\mathcal P\text{ monochromatic}]
+=\begin{cases}
+2^{k-v},&\text{all incidence cycles have even label sum},\\
+0,&\text{otherwise}.
+\end{cases}}\tag{SI1}
+\]
+In the positive case the satisfying colorings form an affine subspace of \(\mathbb F_2^m\) of dimension \(m-v+k\).
+
+*Proof.* Introduce an unknown color \(t_P\) for each selected path. Its monochromaticity is equivalent to
+\[
+z_o\oplus t_P=s_{P,o}\quad\text{for every incidence }P-o.
+\]
+Summing these equations around an incidence cycle yields the stated necessary condition. Conversely, in each connected component of the incidence graph choose one variable freely, then propagate the equations along a spanning tree. The equations on remaining edges hold precisely when all fundamental cycles have even label sum. Thus one binary degree of freedom survives per connected component, and the \(m-v\) unused orbit-color bits are unconstrained. There are \(2^{m-v+k}\) satisfying colorings among the \(2^m\) legal colorings, proving (SI1). \(\square\)
+
+**Corollary (two-path overlap law).** Let two full geodesics \(P,Q\) have \(t\) shared antipodal edge-orbits. If \(t\le1\), their monochromaticity events are independent, with joint probability \(2^{2-2n}\). If \(t\ge2\), write \(d_o=s_{P,o}\oplus s_{Q,o}\) at each common orbit. If the \(d_o\) disagree then the joint probability is zero; if they agree then it equals \(2^{t+1-2n}\). Hence sharing at least two orbits creates either positive correlation or incompatibility. This follows directly by applying (SI1) to the union of two star incidence graphs.
+
+**Theorem (frustrated triple of full geodesics in every dimension).** For any \(n\ge3\), put \(E=(3,4,\ldots,n-1)\) and consider the three full geodesics from the zero vertex with direction orders
+\[
+\boxed{P=(0,1,2,E),\qquad Q=(0,2,E,1),\qquad R=(1,0,2,E).}\tag{SI2}
+\]
+Any two of these can be monochromatic simultaneously in some legal coloring, but no legal coloring can make all three monochromatic.
+
+*Proof.* Paths \(P,Q\) use the same first edge, forcing equal monochromatic colors if both succeed. Paths \(P,R\) reach \(e_0\oplus e_1\) after their first two moves, and share the remaining edges (directions \(2,E\)), also forcing equal colors. The final direction-one edge of \(Q\), from \(\mathbf1\oplus e_1\) to \(\mathbf1\), is antipodal to the first edge of \(R\), from \(0\) to \(e_1\). It forces opposite colors. These three requirements contradict one another.
+
+For pairwise realizability, \(P,Q\) have just one common edge orbit (their first edge), and \(Q,R\) have just one (the opposite end edges). Their respective incidence graphs have no cycles. Paths \(P,R\) share all the same edges from direction two onward, and have no further common edge orbit; every resulting incidence cycle has even label sum. Hence each pair is individually realizable by the preceding theorem. \(\square\)
+
+The pairwise probabilities in (SI2) are
+\[
+\boxed{
+\mathbb P(M_PM_Q=1)=2^{2-2n},\quad
+\mathbb P(M_PM_R=1)=2^{-n-1},\quad
+\mathbb P(M_QM_R=1)=2^{2-2n},\quad
+\mathbb P(M_PM_QM_R=1)=0.}\tag{SI3}
+\]
+The orbit incidence counts were independently verified by a signed disjoint-set algorithm for every \(3\le n\le10\).
+
+This supplies a dimension-uniform signed-graphic description of joint full-geodesic events and a minimal three-path failure of pairwise compatibility. It does not prove unrestricted NORI1, which asks for at least one monochromatic path in each legal coloring.
