@@ -123,7 +123,40 @@ def example7():
             assert c(x,i)!=c(x^127,i)
     print('n=7 balanced coloring and moment-matching zero-witness histogram verified')
 
+
+def sparse_affine_example7():
+    """Second balanced coloring with only 480 good coherent supports."""
+    from collections import Counter
+    n=7
+    d=(1,0,0,6,6,1,1)
+    b=(0,1,0,0,1,0,1)
+    counts=Counter()
+    for pi in it.permutations(range(n)):
+        for x0,x1,x6 in it.product((0,1),repeat=3):
+            x={0:x0,1:x1,6:x6}
+            seen=set()
+            seq=[]
+            for i in pi:
+                seq.append(b[i]^x[d[i]]^(d[i] in seen))
+                seen.add(i)
+            m=sum(seq[j]!=seq[j+1] for j in range(n-1))
+            m+=(seq[-1]==seq[0])
+            counts[2*m]+=1
+    assert counts=={2:840,6:19656,10:18648,14:1176},counts
+    support_counts={E:4*v//7 for E,v in counts.items()}
+    assert support_counts=={2:480,6:11232,10:10656,14:672}
+    assert sum(support_counts.values())==23040
+    mean=sum(E*v for E,v in support_counts.items())/23040
+    var=sum((E-mean)**2*v for E,v in support_counts.items())/23040
+    assert mean==8 and var==28/5
+    formal={6:12672,10:9216,14:1152}
+    assert sum(formal.values())==23040
+    assert sum(E*v for E,v in formal.items())/23040==mean
+    assert sum((E-mean)**2*v for E,v in formal.items())/23040==var
+    print('n=7 sparser balanced affine example verified:',support_counts)
+
 if __name__=='__main__':
     for n in (3,4,5,6):test_incidence(n)
     spectrum7()
     example7()
+    sparse_affine_example7()
