@@ -3,6 +3,7 @@ name: NORI | Refresh research artifact
 # Research context snapshot refresh: include the self-contained Article XIV introduction and type-A rook-gallery results.
 # Refresh requested 2026-10-14: rebuild NORI research-context artifact from the latest nori schema.
 # Refresh requested 2026-10-16: regenerate NORI artifact with latest Eulerian and doubled-direction holonomy research.
+# Refresh requested 2026-10-16: regenerate NORI research artifact with latest geodesic profile transport and root-fiber results.
 on:
   workflow_dispatch:
   push:
