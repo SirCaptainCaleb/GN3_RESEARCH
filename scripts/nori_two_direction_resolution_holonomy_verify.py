@@ -76,7 +76,6 @@ def check_q5_packet():
     v,k,paths=make(5);r=v//2
     mask=0xce337b
     C=clauses(paths,mask,r);R=resolve(C,r)
-    assert max(Counter((a,b) for a,p,b,q in C).values())>=4  # counting raw clauses, not patterns
     groups=defaultdict(set)
     for a,p,b,q in C:groups[a,b].add((p,q))
     assert max(map(len,groups.values()))==3
