@@ -98,7 +98,7 @@ def boundary():
     print('Boundary: no full 12-clause copy among 16 orbit gauges')
 
 if __name__=='__main__':
-    for a,b,cases in ((3,1,6),(4,1,6),(3,2,6),(4,2,4),(3,3,3),(5,1,2)):
+    for a,b,cases in ((3,1,10),(4,1,10),(3,2,10),(4,2,6),(3,3,5),(5,1,3)):
         for seed in range(cases):test(a,b,seed)
         print('PASS Q%d x Q%d (%d cases)'%(a,b,cases))
     majority()
