@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Two-direction paired-geodesic resolution, parity holonomy, and Q5 certificate.
 
-Checks all 256 prescribed-color assignments in Q4, a 7-geodesic Q5
+Checks all 256 prescribed-color assignments in Q4, a 6-geodesic Q5
 forcing packet without an ordinary four-clause orbit-pair packet, plus
 sampled partial colorings in Q5 and Q6. Python standard library only.
 """
@@ -85,7 +85,6 @@ def check_q5_packet():
         (15,(2,3,1,0,4),0,(0,0,9,0)),
         (0,(0,4,3,2,1),1,(0,1,8,0)),
         (2,(1,0,4,3,2),1,(0,1,8,1)),
-        (8,(3,0,1,2,4),1,(0,1,9,1)),
         (3,(0,2,3,4,1),0,(1,0,9,1)),
         (8,(3,1,0,2,4),1,(1,1,8,1)),
     ]
@@ -102,7 +101,7 @@ def check_q5_packet():
         assert any(assignment[a]==p and assignment[b]==q
                    for _,_,_,(a,p,b,q) in cert)
     print("Q5: mask 0xce337b has no direct 4-clause orbit-pair certificate,")
-    print("but the 7 named geodesics force one for every free-color assignment.")
+    print("but the 6 named geodesics force one for every free-color assignment.")
 
 def check_sample(n,count):
     v,k,paths=make(n);r=v//2
