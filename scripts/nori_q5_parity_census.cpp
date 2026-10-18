@@ -55,7 +55,7 @@ std::vector<Pattern> generate(){
     if(out.size()!=1920)std::abort();
     return out;
 }
-int diamonds(uint32_t mask,const std::vector<Pattern>& data){
+int diamonds(uint32_t mask,const std::vector<Pattern>& data,bool* star){
     uint16_t C[8][2]={};
     for(const auto& d:data)if((mask&d.test)==d.want)
         C[d.a][d.p]|=uint16_t(1u<<(2*d.b+d.q));
@@ -76,22 +76,29 @@ int diamonds(uint32_t mask,const std::vector<Pattern>& data){
             }
         }
     }
-    int total=0;
-    for(int b=0;b<8;b++)for(int c=b+1;c<8;c++)total+=(R[b][c]==15);
+    int total=0,common=255;
+    for(int b=0;b<8;b++)for(int c=b+1;c<8;c++)if(R[b][c]==15){
+        total++;common&=(1<<b)|(1<<c);
+    }
+    *star=(common!=0);
     return total;
 }
 int main(){
     auto data=generate();
     std::array<uint64_t,29> hist={};
     std::vector<uint32_t> minimizers;
+    uint64_t starCount=0;
     constexpr int M=1<<24;
     #pragma omp parallel
     {
         std::array<uint64_t,29> local={};
         std::vector<uint32_t> minimal;
+        uint64_t localStars=0;
         #pragma omp for schedule(static)
         for(int m=0;m<M;m++){
-            int d=diamonds(uint32_t(m),data);
+            bool star=false;
+            int d=diamonds(uint32_t(m),data,&star);
+            if(star)localStars++;
             local[d]++;
             if(d<=4)minimal.push_back(uint32_t(m));
         }
@@ -99,6 +106,7 @@ int main(){
         {
             for(int k=0;k<29;k++)hist[k]+=local[k];
             minimizers.insert(minimizers.end(),minimal.begin(),minimal.end());
+            starCount+=localStars;
         }
     }
     uint64_t sum=0;
@@ -106,10 +114,11 @@ int main(){
         if(hist[k])std::printf("diamonds %d: %llu\n",k,(unsigned long long)hist[k]);
         sum+=hist[k];
     }
-    if(sum!=M||hist[0]||hist[1]||hist[2]||hist[3]||hist[4]!=104){
+    if(sum!=M||starCount!=0||hist[0]||hist[1]||hist[2]||hist[3]||hist[4]!=104){
         std::fprintf(stderr,"census mismatch\n");return 1;
     }
     std::sort(minimizers.begin(),minimizers.end());
+    std::printf("COMMON_VERTEX_STAR_COUNT=%llu\n",(unsigned long long)starCount);
     std::printf("TOTAL=%llu MIN=4 COUNT=%zu\n",(unsigned long long)sum,minimizers.size());
     std::printf("MIN_MASKS=");
     for(uint32_t m:minimizers)std::printf("%06x,",m);
