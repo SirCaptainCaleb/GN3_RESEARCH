@@ -112,8 +112,43 @@ def check_sample(n,count):
         assert opposite_parity_pair(R) is not None
     print("Q%d: %d sampled partial colorings have a parity diamond" % (n,count))
 
+
+def check_affine_q5():
+    n=5
+    v,k,paths=make(n)
+    full=(1<<n)-1
+    keys=[]
+    for i in range(2,n):
+        for x in range(1<<n):
+            y=x&~(1<<i)
+            a=min(y,(y^full)&~(1<<i))
+            if (i,a) not in keys:keys.append((i,a))
+    assert len(keys)==k==24
+    choices=[]
+    for i in range(2,n):
+        choices.append([(m,b) for m in range(1<<n)
+                        if not ((m>>i)&1) and m.bit_count()%2==1
+                        for b in (0,1)])
+    histogram=Counter()
+    for rows in product(*choices):
+        mask=0
+        for j,(i,x) in enumerate(keys):
+            m,b=rows[i-2]
+            if ((m&x).bit_count()%2)^b:mask|=1<<j
+        R=resolve(clauses(paths,mask,v//2),v//2)
+        pair=defaultdict(set)
+        for a,p,b,q in R:
+            if a!=b:pair[min(a,b),max(a,b)].add((p,q) if a<b else (q,p))
+        count=sum(len(vals)==4 for vals in pair.values())
+        assert count>=4,(rows,mask)
+        histogram[count]+=1
+    assert sum(histogram.values())==4096
+    print("Q5: 4096 affine partial colorings audited;",
+          "parity-diamond pairs range",min(histogram),max(histogram))
+
 if __name__=="__main__":
     check_q4()
     check_q5_packet()
     check_sample(5,200)
     check_sample(6,80)
+    check_affine_q5()
