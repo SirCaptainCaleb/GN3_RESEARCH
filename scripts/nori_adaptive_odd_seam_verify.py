@@ -63,7 +63,7 @@ def majority():
     assert all(h(x)^h(x^31) for x in range(32))
     assert all(any(h(x)==h(x^(1<<k)) for x in range(32))
                for k in (2,3,4))
-    f=lambda x,i:(x&~(1<<i)).bit_count()%2
+    f=lambda x,i:(x>>((i+1)%5))&1
     C=clauses(6,lambda z,i:f(z&31,i) if i<5 else h(z&31))
     B=clauses(5,f)
     for w in (0,1):
