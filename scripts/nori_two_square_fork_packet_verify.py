@@ -60,7 +60,7 @@ def packet(n):
             v^=1<<i
         assert v==(root^((1<<n)-1))
         assert free[0]==((0,0),0)
-        assert free[1][0]==((1,5),) or free[1][0]==(1,4)
+        assert free[1][0] in ((1,4),(1,5))
         rows.append((tag,t,free))
     assert len(used_fixed)==2*(n-2)
     for a,b4,b5 in product((0,1),repeat=3):
