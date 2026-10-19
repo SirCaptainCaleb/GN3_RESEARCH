@@ -8,5 +8,6 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Exponentially sparse antipodal reachability in connected legal colorings](../note_nori_affine_connected_sparse_antipodal_root_20261016.md) — active/proved
 - [Middle-level favorable-root shells and index-one root topology under complete direction interaction](../note_b4d7a9679a92be8f7d7af1c4.md) — active/proved
 - [Middle-level favorable-root shells and index-one root topology under complete direction interaction](../note_b4d7a9679a92be8f7d7af1c4.md) — active/proved
+- [Prescribed-geodesic orbit-disjoint packing: Q4 failure and Q5–Q6 SAT evidence](../note_c8dc961d4c5753b48b7efdcb.md) — active/tested
 - [Q4 red geodesic extremizers and obstruction to local unary compression](../note_nori_q4_red_geodesic_count_extremizers_20261016_r10917.md) — active/computational
 - [Universal nonlinear interaction-star embedding preserves all successful roots](../note_nori_universal_nonlinear_interaction_star_embedding_20261017.md) — active/proved

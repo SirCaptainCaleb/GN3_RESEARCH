@@ -1,0 +1,36 @@
+# Research notes linked to subsection obstruction_compatibility_and_a_programme_for_nori1_closure
+
+Sidecar only; no note body is included in the mathematical manuscript.
+
+- [Acyclic-orientation ceiling for nonlinear half-sweep permutation ranks](../note_nori_permutation_sweep_acyclic_orientation_rank_barrier_r11755.md) — active/proved
+- [All-dimensional cyclic pair-gate sensitivity product and three-pair compatibility forcing](../note_nori_cyclic_pair_gate_sensitivity_product_r11510.md) — active/proved
+- [All-dimensional nested-core phase-immune forcing and odd-matrix peeling conjecture](../note_nori_nested_core_phase_peeling_r11660.md) — active/proved
+- [All-state four-gate feedback rigidity and paired-flat eight-cube compatibility dichotomy](../note_nori_rank_four_pointwise_sensitivity_cycle_r11510.md) — active/proved
+- [Analytic Fano quartet forcing and dimension-uniform projective row-distance rigidity](../note_nori_analytic_fano_quartet_row_distance_r11715.md) — active/proved
+- [Anchored quadratic three-face incompatibility and blue-surplus deletion duality](../note_nori_xvi_anchored_three_face_surplus_duality_20261018_r11531.md) — active/proved
+- [Complete six-pair parity peeling and unbounded feedback-core forcing](../note_nori_m6_full_peeling_feedback_core_r11685.md) — active/proved
+- [Critical-orbit nonlinear square repair and sharp local packing capacity](../note_nori_projective_support_code_fractional_critical_boundary_20261017_r11510.md) — active/proved
+- [Critical-orbit second-moment relaxation: Q4 infeasible, Q5 feasible](../note_nori_critical_orbit_sa2_rank_gap_20261017_r11510.md) — active/tested
+- [Dimension-uniform affine return holonomy, adaptive six-cube certificates, and nonlinear eight-cube phase transport](../note_nori_affine_holonomy_joint_phase_forcing_r11510.md) — active/proved
+- [Dimension-uniform rank-four peeling through complementary column pairs and Fano quartet compatibility](../note_nori_rank4_fano_column_quartet_forcing_r11704.md) — active/proved
+- [Disjoint full-geodesic packing and square-switch resilience](../note_nori_disjoint_packing_square_stability_r11876.md) — active/proved
+- [Even-lift Fano full peeling and one rank-five nine-label orbit](../note_06dff05d6f7fd88cbc73aa03.md) — active/proved
+- [Fiberwise six-cube geodesic forcing and global eight-cube SAT audit](../note_nori_q6_parity_fiber_sharp_q8_global_sat_r11510.md) — active/tested
+- [Four-majority fixed-word root theorem and seven-order joint forcing certificate](../note_nori_majority_static_and_seven_order_joint_forcing_r11510.md) — active/tested
+- [Four-pair reader-cycle synchronization and parity-guard red-face forcing](../note_nori_fourcycle_parity_sync_r11510.md) — active/proved
+- [Independent affine-eight and rank-five twelve-label finite closure certificates](../note_43efdcdab134f6eee75a199b.md) — active/proved
+- [Isolated chord bound for phase-immune return corank and ten-word Q6 phase forcing](../note_nori_phase_interlacement_corank_r11640.md) — active/proved
+- [Paired midpoint collisions: unrestricted tensor identity and raw critical-scarcity barrier](../note_nori_xvi_midpoint_tensor_product_and_scarcity_barrier_20261018_r11755.md) — active/proved
+- [Q6 paired-square switches span every rootwise linear witness-census variation](../note_nori_xvi_linear_root_census_square_switch_obstruction_20261018_r11755.md) — active/proved
+- [Quadratic face gluing, anchored incompatibility, and orbit-capacity limits](../note_nori_xvi_odd_rank_quadratic_face_pairwise_gluing_20261018_r11531.md) — active/proved
+- [Quadratic geodesic incidence: Q4 identity and Q5 characteristic-101 obstruction](../note_nori_quadratic_geodesic_calibrations_q4_q5_20261018_r11755.md) — active/proved
+- [Rank-five odd-matrix parity-peeling theorem, all sizes](../note_92ce6bdf09135a7de5fb4d8a.md) — active/proved
+- [Rank-five seven- and eight-label exhaustive closure](../note_e0b0dbd2a0b6034b9262aa4a.md) — active/proved
+- [Secondary blue-cut stability and stronger anchored triple](../note_nori_xvi_secondary_face_cut_gap_20261018.md) — active/proved
+- [Shared-root tournament spine completion and two-edge derivative repair](../note_24cf31cdfe8898112fa59bd7.md) — active/proved
+- [Sharp Boolean-face supercut and adjacent-red-anchor forcing](../note_nori_xvi_near_minimum_monotone_face_cut_rigidity_20261018_r11531.md) — active/proved
+- [Spectral cross-layer stability, cubic blue costs, and deep-orbit capacity](../note_nori_xvi_spectral_cross_layer_blue_surplus_20261018_r11531.md) — active/proved
+- [Ten-cube nonlinear-phase fiberwise forcing and transported-incidence cancellation](../note_nori_m5_parity_static_transport_certificate_r11626.md) — active/proved
+- [Three-pair joint obstruction rigidity and universal activated-cycle dichotomy](../note_nori_three_pair_obstruction_compatibility_r11510.md) — active/proved
+- [Walk-pumping collapse and shortest-path blue cut forcing](../note_nori_xvi_walk_pumping_shortest_repair_20261018.md) — active/proved
+- [Weighted face-cut capacity, quadratic rainbow packing and minimum rigidity](../note_nori_xvi_weighted_face_cut_dual_20261018_r11531.md) — active/proved

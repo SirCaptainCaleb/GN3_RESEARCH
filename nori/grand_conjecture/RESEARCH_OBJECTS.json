@@ -89,6 +89,14 @@
             "research_status": "active"
         },
         {
+            "id": "nori_article_xvii_sustained_research_and_unrestricted_forcing",
+            "type": "article",
+            "title": "Article XVII — Sustained Research and Unrestricted Forcing",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "nori_matroid_rainbow_circuit_geometry",
             "type": "section",
             "title": "Antipodal Turn Quotients and Rainbow-Circuit Geometry",
@@ -220,6 +228,14 @@
             "id": "nori_rectified_graphs_cyclic_path_geometry",
             "type": "section",
             "title": "Rectified Graphs and Cyclic Path Geometry",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "nori_sustained_full_class_research_programme",
+            "type": "section",
+            "title": "Research judgment and unrestricted forcing mechanisms",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -825,6 +841,14 @@
             "research_status": "active"
         },
         {
+            "id": "creative_routes_to_unrestricted_forcing_and_a_carry_forward_map",
+            "type": "subsection",
+            "title": "Creative routes to unrestricted forcing and a carry-forward map",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "critical_dimensional_contraction_of_rational_switch_bivectors",
             "type": "subsection",
             "title": "Critical-dimensional contraction of rational switch bivectors",
@@ -1012,6 +1036,14 @@
             "id": "disjoint_antipodal_geodesic_packings_and_independent_short_port_cocircuit_tests",
             "type": "subsection",
             "title": "Disjoint antipodal geodesic packings and independent short-port cocircuit tests",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "edge_conditioned_turn_census_and_critical_flip_forcing",
+            "type": "subsection",
+            "title": "Edge-conditioned turn census and critical-flip forcing",
             "version": 1,
             "superseded": false,
             "research_status": "active"
@@ -2060,6 +2092,14 @@
             "id": "rectified_graphs_and_complete_path_decoding",
             "type": "subsection",
             "title": "Rectified graphs and complete path decoding",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
+            "id": "research_judgment_publication_restraint_and_the_present_closure_frontier",
+            "type": "subsection",
+            "title": "Research judgment, publication restraint, and the present closure frontier",
             "version": 1,
             "superseded": false,
             "research_status": "active"

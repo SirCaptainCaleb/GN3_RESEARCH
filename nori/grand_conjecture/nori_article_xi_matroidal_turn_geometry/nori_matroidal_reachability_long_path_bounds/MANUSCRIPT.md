@@ -6411,3 +6411,32 @@ N3(i,j) >= max(0, 2^(n-2)-4(n-2)q).
 Proof. Put m=n-2 and index ij-squares by their remaining bit pattern y in Q_m. Let q_y count red ordered ij paths inside square y, so sum_y q_y=q. Call y good when q_y=q_(bar y)=0. Since each face with positive q_y makes at most two members of its antipodal pair bad, the set B of non-good faces has |B|<=2q and is antipodally invariant. Each good square has neither a red nor a blue ij-route: a blue route would become red in its antipodal mate. Hence the two i-edges of square y have one common color g(y), while its two j-edges have color 1+g(y). The function g on the good faces obeys g(bar y)=1+g(y).
 
 Extend g arbitrarily to an antipodally odd Boolean function on all Q_m, choosing complementary values on each missing antipodal pair. This extension is balanced, so the edge-isoperimetric inequality of Q_m gives at least 2^(m-1) undirected edges across which its value changes. At most m|B|<=2mq of these edges touch a bad face. Thus at least 2^(m-1)-2mq boundary edges have both endpoints good. Their collection is invariant under antipodal translation. Each antipodal pair of such boundary edges in Q_m lifts to eight middle-direction edges in Q_n across the two ij-fibers; the eight split into four complementary antipodal color pairs, furnishing four red ordered three-edge connectors ikj. Hence each good-good boundary edge contributes on average two red three-step connectors, and N3>=2(2^(m-1)-2mq)=2^m-4mq. Negative lower bounds may be replaced by zero. When q=0, the bound recovers the sharp N3>=2^(n-2) theorem; when q is small, it proves robustness under exceptional direct paths. Combining this with the isodiametric estimate in the preceding result gives N3>=max(0,2^(n-2)-4(n-2)q,T_n-q), where T_n is the parity-dependent central-binomial connector bound.
+
+
+
+#### Quadratic joint-path calibration in four dimensions
+
+A full antipodal geodesic is taken unoriented: the two opposite rooted traversals represent the same path. Let \(\mathcal G_4\) be the 192 such geodesics, listed by initial root \(0,\ldots,7\) and lexicographic dimension order. For any legal coloring \(c\) let \(I_c(P)\) indicate that all edges of \(P\) are red. Number the 71 orbits of unordered distinct pairs \(\{P,Q\}\) under the 384 cube automorphisms by scanning pairs in lexicographic order and numbering an orbit on its first appearance; write \(o(P,Q)\) for its index.
+
+**Theorem (integer quadratic calibration in \(Q_4\); exhaustive finite proof).** For every antipodally odd edge coloring \(c\) of \(Q_4\),
+\[
+\sum_{P<Q}a_{o(P,Q)}I_c(P)I_c(Q)=48.
+\tag{QC1}
+\]
+The nonzero coefficients \((j,a_j)\) are
+\[
+\begin{gathered}
+(0,4),(2,1),(3,-10),(4,-6),(6,6),(8,22),(12,12),
+(13,-4),(14,-11),(17,1),(18,-4),(19,9),(21,-6),
+(23,6),(25,-6),(28,8),(30,6),(34,-14),(35,15),
+(37,6),(38,-12),(39,6),(41,-12),(44,8),(46,6),
+(52,-4),(56,-12),(57,6),(60,6),(61,-12),(62,-2),
+(66,-12),(67,6),(68,6).
+\end{gathered}
+\tag{QC2}
+\]
+All other coefficients vanish.
+
+*Proof.* Enumerate the 16 antipodal edge orbits by scanning each undirected edge in ascending smaller endpoint and dimension, assigning a bit on first encounter, and complementing the assigned bit on its antipodal mate. The associated \(2^{16}\) masks enumerate every legal coloring. For each of the 192 paths, precompute the required values of its four orbit bits. Enumerate all 384 cube automorphisms (translations followed by permutations), computing all 71 unordered-path-pair orbit classes. For each of the 65,536 masks, evaluate the left side of (QC1) by integer arithmetic. The standalone C++17 verifier enumerates every mask and reports value 48 in every case, and red path counts between 4 and 24. This is a finite exhaustive proof of (QC1). Since a coloring with no red full path makes the left side zero, the identity certifies the already established four-dimensional NORI1 case. \(\square\)
+
+The certificate is a higher-order joint-incidence identity, escaping the established nonexistence of coloring-independent linear calibrations. Its scope is dimension four. Research note `note_nori_quadratic_geodesic_calibrations_q4_q5_20261018_r11755` preserves the coefficient convention, verifier details, and a separate modular obstruction: over \(\mathbb F_{101}\), no coloring-independent geodesic-indicator polynomial of degree at most two with nonzero constant exists in any dimension \(n\ge5\). This last obstruction permits higher-degree and coloring-dependent certificates; unrestricted NORI1 and the boundary-tournament transfer remain open.

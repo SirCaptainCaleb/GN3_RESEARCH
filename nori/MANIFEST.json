@@ -1,6 +1,6 @@
 {
-  "active_section_count": 22,
-  "active_subsection_count": 315,
+  "active_section_count": 23,
+  "active_subsection_count": 318,
   "article_sequences": {
     "article_xv_projective_face_flag_unification": [
       {
@@ -155,14 +155,22 @@
         "position": 1,
         "version": 1
       }
+    ],
+    "nori_article_xvii_sustained_research_and_unrestricted_forcing": [
+      {
+        "id": "nori_sustained_full_class_research_programme",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      }
     ]
   },
   "article_versions": {
     "article_xv_projective_face_flag_unification": {
       "composition": {
-        "body_chars": 1946196,
-        "composed_through_revision": 11491,
-        "composition_version": 551,
+        "body_chars": 2104603,
+        "composed_through_revision": 11901,
+        "composition_version": 590,
         "frontier": {
           "current": null
         },
@@ -250,9 +258,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 1506910,
-        "composed_through_revision": 11481,
-        "composition_version": 414,
+        "body_chars": 1509636,
+        "composed_through_revision": 11784,
+        "composition_version": 415,
         "frontier": {
           "current": null
         },
@@ -310,8 +318,23 @@
     },
     "nori_article_xvi_obstruction_compatibility_and_closure": {
       "composition": {
-        "body_chars": 31399,
-        "composed_through_revision": 11502,
+        "body_chars": 283851,
+        "composed_through_revision": 11844,
+        "composition_version": 55,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "version": 1
+    },
+    "nori_article_xvii_sustained_research_and_unrestricted_forcing": {
+      "composition": {
+        "body_chars": 33600,
+        "composed_through_revision": 11912,
         "composition_version": 2,
         "frontier": {
           "current": null
@@ -326,10 +349,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-17T23:35:31.35514+00:00",
+  "generated_at": "2026-10-19T15:41:21.506881+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 467,
+  "research_note_count": 520,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -497,9 +520,9 @@
     },
     "nori_matroidal_reachability_long_path_bounds": {
       "composition": {
-        "body_chars": 703075,
-        "composed_through_revision": 11252,
-        "composition_version": 144,
+        "body_chars": 705801,
+        "composed_through_revision": 11783,
+        "composition_version": 145,
         "frontier": {
           "current": null
         },
@@ -513,9 +536,9 @@
     },
     "nori_obstruction_compatibility_and_closure_strategy": {
       "composition": {
-        "body_chars": 31327,
-        "composed_through_revision": 11501,
-        "composition_version": 2,
+        "body_chars": 283779,
+        "composed_through_revision": 11843,
+        "composition_version": 55,
         "frontier": {
           "current": null
         },
@@ -548,6 +571,22 @@
         "body_chars": 111715,
         "composed_through_revision": 6198,
         "composition_version": 28,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "assembled from selected child compositions",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "math_version": 1,
+      "version": 1
+    },
+    "nori_sustained_full_class_research_programme": {
+      "composition": {
+        "body_chars": 33538,
+        "composed_through_revision": 11911,
+        "composition_version": 2,
         "frontier": {
           "current": null
         },
@@ -673,9 +712,9 @@
     },
     "opposed_projective_face_windows_and_complete_paths": {
       "composition": {
-        "body_chars": 1599157,
-        "composed_through_revision": 11490,
-        "composition_version": 513,
+        "body_chars": 1757564,
+        "composed_through_revision": 11900,
+        "composition_version": 552,
         "frontier": {
           "current": null
         },
@@ -688,8 +727,17 @@
       "version": 2
     }
   },
-  "snapshot_revision": 6772,
+  "snapshot_revision": 7175,
   "startup_broadcasts": [
+    {
+      "body": "User-requested corrective research guidance, issued 19 October 2026 UTC (18 October EDT), session session_nori_r11739_1.\n\nRead the current opening assessment in Article XVI, Subsection obstruction_compatibility_and_a_programme_for_nori1_closure, composition 21 or its successor. It supersedes the priority ordering of the historical thirty-direction catalogue.\n\nPRIMARY CLOSURE TARGET: preserve existence of a monochromatic full antipodal geodesic across one legal antipodally paired alternating-square switch in arbitrary nonlinear paired-flat colorings. The established balanced good/bad boundary normalization and two-hit temporal-word involution reduce a hypothetical failure to the strict one-internal-hit configuration. Balance and this square-boundary criticality already coexist; treat normalization as resolved.\n\nRESEARCH GATES: Before extending a subsidiary line, state what its strongest plausible theorem implies for unrestricted NORI1 and identify the missing transfer. Prioritize a theorem producing the hypotheses of an existing forcing mechanism. For affine peeling, seek an arbitrary-rank theorem or a nonlinear transfer; further finite-rank ceilings alone receive secondary priority. The standard balanced lift retains arbitrary nonlinear gates, and a permitted square switch can leave the affine-gate class. For seam packets, seek a dimension-uniform transport or clause-generation invariant, allowing certificate size to grow. For face cuts, prove that a hypothetical counterexample supplies the necessary red anchors and overlapping blocked faces before refining prescribed examples further.\n\nQUANTITATIVE CORRECTIONS: The walk-pumping result collapses the intrinsic uniform odd-occurrence Gibbs energy and hybrid/coupled policies containing it to an existing rooted geodesic-defect quantity. Consult note_nori_xvi_walk_pumping_shortest_repair_20261018 v3 and the scope correction in note_nori_xvi_budgeted_bigon_partition_exchange_20261017_r11435 v19. Retain valid pathwise certificates; seek a universal upper-bound mechanism on a justified family such as shortest paths. A statistic dominating minority defect needs a uniform o(n) bound for amplification; its own tensor additivity is optional. Unanchored weighted face capacity, bounded-degree blocker relaxations, and independent pivot-square packing have proved limitations; reopen them only with a specific additional ingredient addressing those limitations.\n\nPreserve independent judgment and pursue alternatives when their closure implication is stronger. Distinguish forcing theorems, hypothesis-production theorems, equivalences, restricted-family results, computations, and method obstructions. Preserve existing proofs and publication history. Grand closure also requires the boundary-tournament reduction with distinct original vertices; record that obligation separately from cube-only progress.",
+      "broadcast_id": "nori_closure_corrective_guidance_20261019",
+      "created_at": "2026-10-19T00:39:01.580946+00:00",
+      "creation_revision": 11750,
+      "priority": 10,
+      "scope": "nori",
+      "title": "Closure priorities: nonlinear square boundary and explicit transfer obligations"
+    },
     {
       "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
       "broadcast_id": "nori_coherent_subsection_editing_and_section_reorganization_20261014",
@@ -1899,6 +1947,23 @@
       "section_id": "nori_type_a_rook_gallery_topology",
       "version": 1
     },
+    "creative_routes_to_unrestricted_forcing_and_a_carry_forward_map": {
+      "composition": {
+        "body_chars": 20329,
+        "composed_through_revision": 11910,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "User-requested creative research programme and disposition of all thirty directions from Article XVI; open statements distinguished from established implications.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_sustained_full_class_research_programme",
+      "version": 1
+    },
     "critical_dimensional_contraction_of_rational_switch_bivectors": {
       "composition": {
         "body_chars": 4672,
@@ -2305,6 +2370,23 @@
       },
       "development_version": 1,
       "section_id": "nori_graphic_boundary_tournament_exchange_geometry",
+      "version": 1
+    },
+    "edge_conditioned_turn_census_and_critical_flip_forcing": {
+      "composition": {
+        "body_chars": 148303,
+        "composed_through_revision": 11746,
+        "composition_version": 29,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Two disjoint Q5 three-root forcing packets imply six-path connector-orbit avoidance",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_obstruction_compatibility_and_closure_strategy",
       "version": 1
     },
     "edge_free_factorwise_polarities_and_the_maximal_hamming_reduction": {
@@ -2903,14 +2985,14 @@
     },
     "gauge_critical_switches_and_clustered_witnesses_on_full_paths": {
       "composition": {
-        "body_chars": 529609,
-        "composed_through_revision": 11489,
-        "composition_version": 169,
+        "body_chars": 687936,
+        "composed_through_revision": 11899,
+        "composition_version": 208,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Cartesian amplification of shortest monochromatic antipodal paths",
+        "source_note": "Universal temporal derivative and all-even midpoint incidence obstruction; proof note_a33d0ec0d34a24ff85f2b99b",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3718,14 +3800,14 @@
     },
     "obstruction_compatibility_and_a_programme_for_nori1_closure": {
       "composition": {
-        "body_chars": 31234,
-        "composed_through_revision": 11500,
-        "composition_version": 2,
+        "body_chars": 135233,
+        "composed_through_revision": 11842,
+        "composition_version": 26,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Editorial verification: normalize inline source formatting and resolve the balanced-reconfiguration note ID; mathematical assessment unchanged.",
+        "source_note": "Dimension-uniform dependency saturation bound and exact terminal seam to one-change geodesic transfer; research priority correction",
         "stale": null,
         "stale_dependencies": []
       },
@@ -3938,14 +4020,14 @@
     },
     "paired_direction_involutions_and_geodesic_endpoint_matchings": {
       "composition": {
-        "body_chars": 478598,
-        "composed_through_revision": 11251,
-        "composition_version": 135,
+        "body_chars": 481322,
+        "composed_through_revision": 11782,
+        "composition_version": 136,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Stable pivotal connector abundance under sparse direct-path defects",
+        "source_note": "Q4 joint-geodesic quadratic incidence identity, with linked Q5 modular limitation",
         "stale": null,
         "stale_dependencies": []
       },
@@ -4529,6 +4611,23 @@
       },
       "development_version": 1,
       "section_id": "nori_rectified_graphs_cyclic_path_geometry",
+      "version": 1
+    },
+    "research_judgment_publication_restraint_and_the_present_closure_frontier": {
+      "composition": {
+        "body_chars": 13119,
+        "composed_through_revision": 11907,
+        "composition_version": 1,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "User-requested research assessment; sources reviewed through gauge composition 208 and Article XVI composition 55. No new closure theorem claimed.",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_sustained_full_class_research_programme",
       "version": 1
     },
     "residual_face_descent_barriers_from_complementary_monochromatic_arms": {

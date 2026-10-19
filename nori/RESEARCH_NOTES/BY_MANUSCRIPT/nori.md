@@ -13,3 +13,4 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Quadratic parity orbit obstruction](../note_c4030d8ef52caece9057b58d.md) — active/open
 - [Score-channel simplex filling](../note_81c60593c949ae6fadbed8be.md) — active/open
 - [Speculative LINP application of entropy compression](../note_entropy_compression_linp_scope_20261011.md) — active/proposed
+- [Unrestricted matrix rank theorem](../note_d0da03890cda4141501176d0.md) — active/proved

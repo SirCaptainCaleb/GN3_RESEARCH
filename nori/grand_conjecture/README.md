@@ -13,3 +13,4 @@ Each paper assembles selected Subsection compositions through Section compositio
 - [Article XI — Matroidal Turn Geometry and Rainbow-Circuit Exchange](nori_article_xi_matroidal_turn_geometry/MANUSCRIPT.md)
 - [Article XIV — Type-A Rook Galleries and Antipodal Chain Topology](nori_article_xiv_type_a_rook_gallery_topology/MANUSCRIPT.md)
 - [Article XVI — NORI1: Obstruction Compatibility and Routes to Closure](nori_article_xvi_obstruction_compatibility_and_closure/MANUSCRIPT.md)
+- [Article XVII — Sustained Research and Unrestricted Forcing](nori_article_xvii_sustained_research_and_unrestricted_forcing/MANUSCRIPT.md)

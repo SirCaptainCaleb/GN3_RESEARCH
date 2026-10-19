@@ -5413,3 +5413,1247 @@ The proof inserts a new zero edge outside an old witness to lift it without chan
 
 A legal balanced successful \(Q_6\) example shows that requiring loops for every exceptional-bit assignment is too strong for general cyclic interfaces: its universally looped states all have one fixed bit. Its transport SCC nevertheless exposes all cube states, satisfying the weaker invariant. Thus the closing target is cyclic-block transport with antipodal exposure. Existence of an antipodal transport SCC for arbitrary fixed-complementary-pair interfaces would settle unrestricted NORI1 via the established balanced paired lift.
 \n\n**Cartesian amplification of minimum monochromatic antipodal path length.** For a legal coloring c of Q_n let L(c) be the shortest red antipodal path length (finite by Wu--Yang, 2026), and e(c)=(L(c)-n)/2. The antipodal map exchanges colors, so the red minimum equals the overall monochromatic minimum. For legal block-product colorings c and d, both conditions remain legal, and L(c boxplus d)=L(c)+L(d). Indeed every red antipodal product path projects to red antipodal walks in both factors, whose lengths sum to at least L(c)+L(d); concatenating shortest red paths attains equality. Hence e(c boxplus d)=e(c)+e(d). If a uniform bound L(c)<=n+o(n) held in every sufficiently large dimension, any putative counterexample c with e(c)>0 would yield tensor powers of dimensions kn with linearly growing excess ke(c), a contradiction. Likewise E(n)=max_c e(c) obeys E(n+m)>=E(n)+E(m) for n,m>=2. If E(n0)>=a>0, tensor floor((n-2)/n0) copies with an arbitrary legal remainder of dimension at least two to give liminf E(n)/n>=a/n0. Thus NORI1 is equivalent to a uniform sublinear additive detour upper bound, and failure of NORI1 forces a linear detour gap in all sufficiently large dimensions. This is an all-dimensional forcing implication, with the sublinear estimate itself open. Independent proof recorded in note_98b1e0fc35badd4e7eb3124d.\n
+
+### Two-hit temporal-word transport across one antipodal alternating-square switch
+
+Let \(c\) be any legal antipodally odd coloring of \(Q_N\), \(N\ge3\). Fix an alternating square \(F\) with free directions \(i,j\), its antipodal square \(\tau F\), and the legal coloring \(c'=T_Fc\) obtained by complementing their eight edges. For a rooted full geodesic \(P\), let \(h_F(P)\in\{0,1,2\}\) be the number of its traversed edges belonging to \(F\cup\tau F\); let \(w_c(P)\in\{0,1\}^N\) be its *temporal* edge-color word.
+
+**Theorem (two-hit full-word involution).** There exists an explicit involutive bijection \(\Phi\) from the \(h_F=2\) rooted full geodesics of \(c\) onto those of \(c'\), satisfying
+\[
+\boxed{w_c(P)=w_{c'}(\Phi P)\quad\text{in every temporal position}.}\tag{EC14}
+\]
+
+*Proof.* If both hits lie in the same switched square, the hits must be consecutive, because each direction outside its free pair is traversed only once. Swap the two consecutive directions \(i,j\) in \(P\), keeping its root. The alternate two-step route follows the other two edges of the same alternating square. Its two colors before switching are the complements of the original colors in corresponding temporal positions, so after switching they match. Every other path edge is unchanged. Swapping back gives the inverse.
+
+If the two hits lie in opposite squares, their outside-bit assignments are complements. All \(N-2\) outside directions are therefore traversed between the hits, so the two hits occur as the first and last edges. Up to interchanging \(i,j\), let \(P\) have root \(x\) and direction order \((i,\rho,j)\), with \(\rho\) the other \(N-2\) directions. Put \(u=x\oplus e_i\), \(v=\bar x\oplus e_j\), \(x'=x\oplus e_i\oplus e_j\), and construct
+\[
+x'\xrightarrow{j}u\xrightarrow{\rho}v\xrightarrow{i}\bar{x'}.
+\]
+The interior edges agree with those of \(P\); the first and last edges are the alternate edges on \(F,\tau F\). The alternating pattern and switch make their new colors agree positionwise with the old endpoint colors. Applying this transformation again returns \((x,(i,\rho,j))\). Interchanging the directions and the order of the two opposite faces covers the remaining orientations. Both cases exhaust \(h_F=2\). \(\square\)
+
+**Corollary (all full-word changes are carried by one-hit paths).** For each temporal word \(w\), the number of \(h_F=0\) paths with word \(w\) and the number of \(h_F=2\) paths with word \(w\) are separately invariant under \(T_F\). Consequently the difference of the full temporal-word enumerators of \(c,c'\) is supported entirely on the \(h_F=1\) sector.
+
+**Corollary (strictly internal square carrier at a good-to-bad boundary).** If \(c\) admits an all-zero full geodesic and \(T_Fc\) admits no monochromatic full geodesic, then **every** all-zero full geodesic of \(c\) meets \(F\cup\tau F\) in precisely one edge, strictly internally. A zero-hit red path would survive unchanged, and a two-hit red path would survive through the involution. A one-hit red path produces a one-blue path after switching. Were its single blue edge first or last, the cyclic root rotation would replace it with its red antipodal mate, producing a red full geodesic after the switch. All cases except the single internal hit are excluded. \(\square\)
+
+In particular, the already proved paired-flat balanced square-adjacent counterexample normalization of this Subsection improves: if NORI1 fails, there is a balanced good/bad paired-flat square-switch boundary for which every red witness on the good side crosses the switched square pair in one strictly internal red edge; the bad side has a corresponding full path with one strictly internal blue edge. The two-opposite-endpoint hit case permitted by the earlier reduction is eliminated by a joint root/endpoint-order exchange. This is an unrestricted geometric strengthening and leaves the remaining one-internal-hit configuration unresolved.
+
+Reproducible verification: research note \`note_nori_double_square_temporal_word_transport_r11510\`, session \`session_nori_r11510_3\`; 440,576 two-hit path tests in dimensions three through five, including involution tests. The argument above proves the theorem for all dimensions.
+
+
+### Two-pair seam forcing and mutual-reader traps
+
+Let N=2m>=6 and c be any paired-flat antipodally odd coloring. Each prescribed direction pair P={i,i'} has red/blue gate f_P independent of both bits in P, with colors f_P and 1+f_P, and f_P(bar x)=1+f_P(x).
+
+**Theorem (four-direction seam forcing).** Fix two pairs P,Q, let J be the remaining N-4 directions, and suppose a zero full J-geodesic H goes from (u,y) to (u,bar y), freezing the four P,Q bits at u. Rename them 0,1 in P and 2,3 in Q. At J-root y write the two gates a(x2,x3), b(x0,x1). Then H extends to an all-zero full antipodal geodesic unless a=x_r+alpha, r in {2,3}, b=x_s+beta, s in {0,1}, and
+  a(u)=1_{s=0}, b(u)=1_{r=2}. (SC1)
+If a,b are such mutual unary readers, the exceptional seam positions form a four-vertex affine subcube.
+
+**Four-bit proof.** Let A be the ordinary Q4 coloring with rules a,1+a,b,1+b. The colors of the four missing directions after H are A^+_i(v)=1+A_i(bar v), by antipodal oddness. A completion is an order pi of 0,1,2,3 and a cut k in {0,...,4}; start at u xor the first k directions of pi, use A-red edges for the first k steps, traverse H, and use A^+-red edges for the last 4-k steps. Translate u to 0000, write a,b as four-bit truth-table integers. The following 24 pairs (pi,k) cover 252 of the 256 table pairs:
+(0213,0),(0213,4),(0231,2),
+(0312,0),(0312,2),(0312,3),
+(1203,1),(1203,3),(1230,2),
+(1302,1),(1302,2),(1302,3),
+(2013,2),(2031,1),(2031,3),
+(2103,2),(2130,0),(2130,4),
+(3021,1),(3021,2),(3021,4),
+(3120,0),(3120,2),(3120,4).
+Each is verified by evaluating the four traversed edge bits with A before the cut and A^+ afterward. The four uncovered table pairs are (3,10),(5,5),(10,3),(12,12), precisely (SC1) at u=0. Translation gives the displayed criterion for any u. Conversely, under (SC1), A^+=A because both gates are complement-odd on Q4. At u, each pair's zero edge toggles the bit not read by the other gate. Both reader bits stay fixed, hence the entire red component of u is a four-cycle using those two unread directions. No red full antipodal Q4 path contains u. Thus the four exceptions cannot be completed. This proves both directions of the local lemma. The insertion described above lifts the lemma to the original Q_N. QED.
+
+**Global support confinement.** In a hypothetical bad paired-flat c, fix any P,Q and J-root y. Let U_y be the set of all u in F_2^4 supporting an all-zero full J-geodesic rooted at (u,y), allowing any order. If U_y is nonempty, the two outer gate restrictions at y must be mutual unary readers, and U_y lies in the four-vertex exceptional affine subcube (SC1). Thus |U_y|<=4. Either a single J-witness at a non-unary interface, or five J-witnesses from distinct u at a common J-root y, forces a full red antipodal geodesic. The hypotheses are tested within one arbitrary paired-flat coloring; they impose no global Boolean degree or feedback restriction.
+
+**Endpoint-pair factorization.** Fix one pair P={i,j}, and the four faces F_u with its bits frozen to u. Every rooted full face path with temporal color word w has two full-path completions with the pair directions at its first and last steps in opposite orders, of words 0w0 and 1w1. For the (i,H,j) completion the endpoint colors are f_P(y) and 1+f_P(bar y)=f_P(y); swapping i,j complements both. Therefore the temporal blue-count polynomial for all rooted full paths whose first and last directions are the members of P is
+ F_{c;P}^{end}(z)=(1+z^2) sum_{u in F_2^2} F_{c|F_u}(z).
+This full temporal-word multiset is invariant under arbitrary changes to the odd pair gate f_P, with other pair gates fixed. The identity holds for all paired-flat legal Q_N, N>=4.
+
+**Scope and verification.** The four-bit calculation is an all-dimensional conditional forcing mechanism, with a finite Boolean certificate. It does not guarantee a red J-geodesic in every coloring, so NORI1 remains open. The self-contained checker nori_two_pair_seam_certificate.py verified all 4096 (a,b,u) instances against all 120 order/cut possibilities, checked the 24-route certificate, and verified 20 nonlinear Q8 lifts. Full proof nori_two_pair_seam_forcing.md.
+
+### Paired rank-two sensitivity forcing and irreducible all-pair circuits
+
+**Proved.** Full proof at /mnt/data/nori_pair_sensitivity_circuit.md and checker at /mnt/data/nori_pair_circuit_activation.py. The first assertion is positive and constructive. The second explains the limit of induction from smaller paired faces. NORI1 remains open.
+
+**THEOREM 1 (rank-two product identity).** On an ordinary, possibly non-antipodal-odd paired-flat Q4, split directions into A={a0,a1} and B={b0,b1}. Let edge colors be c_(a_i)(p,q)=a(q)+i and c_(b_j)(p,q)=b(p)+j, over F2, for arbitrary gates a,b:F2^2->F2. Denote by E(a), E(b) the numbers of undirected input-square edges where the respective gate changes. The number of rooted all-red full geodesics is
+   R=2 E(a) E(b).
+The number of rooted all-blue full geodesics obeys the same identity. In particular R>0 iff both gates are nonconstant, and then R>=8.
+
+**Proof.** Two red consecutive edges cannot lie in the same direction pair, because traversing its chosen red direction leaves that pair gate unchanged and the other direction blue. Thus every red full path has pair word ABAB or BABA. For ABAB choose a sensitivity edge of a in B-input direction beta and a sensitivity edge of b in A-input direction gamma. Put alpha=1-gamma. On the first edge choose the endpoint q where a(q)=alpha, and on the second choose t where b(t)=beta. Set initial A-bit pair p=t+e_alpha. Then directions (a_alpha,b_beta,a_gamma,b_(1-beta)) from root (p,q) are all red: first gate values select alpha,beta, and the chosen sensitivities flip them to gamma,1-beta for the last two steps. Every red ABAB witness uniquely specifies those two input sensitivity edges, so there are E(a)E(b). Swapping A and B gives the same number for BABA. Complementing both gates preserves their edge-boundary sizes, proving the blue statement. QED.
+
+**DIMENSION-UNIFORM FACE COUNT.** For any legal paired-flat Q_(2m), fix two paired groups A,B and freeze all remaining direction bits at y. Write a_y,b_y for the induced four-face gates. Then the total number of rooted red four-face geodesics, summed over all frozen y, is
+  2 sum_y E(a_y) E(b_y).
+This measures simultaneously active reciprocal influences using the SAME frozen assignment. Separate influence counts do not determine it.
+
+**THEOREM 2 (globally essential cyclic-reader witness).** For every m>=2, define paired directions P_i={a_i,b_i}={2i,2i+1}, indices cyclic modulo m, with legal gates c_(a_i)(x)=x_(a_(i-1)), c_(b_i)(x)=1+x_(a_(i-1)). Every vertex has one red and one blue edge from each pair, and the group-influence graph is a directed m-cycle. This coloring has a full all-red antipodal geodesic but NO proper nonempty paired-direction face has a monochromatic full geodesic relative to that face.
+
+**Proof.** From root x_(a0)=1, all other bits 0, traverse
+  b1, a0, a_(m-1), a_(m-2), ..., a1, b0, b2, ..., b_(m-1).
+The first b1 reads a0=1 and is red; a0 and the descending a_i read predecessors still zero and are red; a1 reads a0 after its flip to zero and is red; b0 and the remaining b_i read predecessors now one and are red. Each direction is used once and the endpoint is antipodal. For any proper nonempty subset S of paired groups, there is i in S with predecessor i-1 outside S. Throughout every face freezing all other groups, group i's gate is constant, so its two directions have opposite constant colors. A full spanning S-face geodesic uses both; hence no such path is monochromatic. QED.
+
+**RESEARCH SCOPE.** The positive local mechanism is simultaneous reciprocal gate sensitivity. The reader-cycle example proves that even a successful coloring may have no monochromatic full geodesic in any proper pair-face, including all codimension-four faces tested by the preceding seam theorem. Thus a universal proof must also construct global irreducible all-pair witnesses. The example does not rule out counterexample-specific hereditary forcing.
+
+**TESTS.** Independent complete-root/order checking of all 256 four-bit gate-pairs confirms R=2 E(a)E(b), with 196 positive cases and 60 constant-gate cases. The full reader-cycle construction and the proper-pair-subset criterion were checked for m=2,...,12, with dimension-uniform proofs above.
+
+### Even sweep parity and operator-level Cartesian transfer (October 2026)
+
+In the paired-flat red matching model, write fiber bits \(t_i=x_{2i}\) and base pair parities \(p_i=x_{2i}\oplus x_{2i+1}\). Each red pair gate \(U_i\) is a fiber shear \(t_i\mapsto t_i\oplus h_i(p_{-i},t_{-i})\), with all other fiber bits unchanged. Antipodal oddness yields \(h_i(p_{-i},t_{-i}+\mathbf1)=1+h_i(p_{-i},t_{-i})\). Thus, on every fixed-base fiber of cardinality \(2^m\), the induced shear permutation has \(2^{m-2}\) disjoint transpositions. A complete order of the \(m\) red gates therefore has permutation sign \((-1)^{m2^{m-2}}=+1\) for every \(m\ge2\). All complete-sweep comparison holonomies \(\Phi_\rho^{-1}\Phi_\pi\) consequently lie in the alternating group \(A_{2^m}\), without any linearity hypothesis on the selectors.
+
+Combined with the established full-sweep holonomy generation theorem, this excludes a red covering with precisely one two-sheet component and every other component single-sheeted. Indeed, transitivity on that two-point component forces an odd transposition of the entire fiber, contradicting even holonomy. Unlike the earlier antipodal two-sheet exclusion, this new statement does not require the two-sheet component to contain antipodes.
+
+For independent paired-flat colorings on \(m,k\) direction pairs, let \(B^c_p(t,s)\) count full red sweeps with given input/output fiber states. All interleavings of two fixed factor orders have identical endpoints, and there are \(\binom{m+k}m\) such interleavings. Thus the full matrices satisfy
+\[
+B^{c\boxplus d}_{(p,q)}=\binom{m+k}m\,B^c_p\otimes B^d_q.
+\]
+Writing \(P=B/m!\) and \(K=PP^\top\), one obtains \(P_{\rm product}=P_c\otimes P_d\), \(K_{\rm product}=K_c\otimes K_d\). The comparison holonomy group similarly factors as a direct product, and the product collision spectrum consists of products of factor eigenvalues. For connected component fibers, the spectral gap is the lesser of the two factor gaps. This operator law strengthens the earlier scalar midpoint-count tensor identity.
+
+These are necessary structural constraints, not a proof of a one-step antipodal collision. The proofs and standalone verification are preserved in research note \`note_fdf278eae230ca4aac3ec185\`, version 2, with local files \`nori_even_holonomy_tensor_theorem.md\` and \`nori_even_sweep_holonomy_verify.py\`.
+
+
+**Antipodal endcap intertwining for complete red sweeps.** Write \(J(t)=t+\mathbf1\) on fiber states and \(T_i(t)=t+e_i\). Antipodal oddness yields \(U_iJ=T_iJU_i\), equivalently \(U_i J U_i^{-1}=T_iJ\), interpreting the gate on its appropriate source and target parity fibers. Therefore for every pair order \(\pi=(i_1,\ldots,i_m)\) and every fiber root \(t\),
+\[
+[\Phi_\pi(t)+\Phi_\pi(t+\mathbf1)]_{i_1}=0.
+\]
+Indeed the two initial complementary roots have opposite gate-control values for the first pair, so their \(i_1\)-bits agree after that red move; subsequent moves in other pairs preserve that bit. Applying the same reasoning to the reverse gate order proves the dual constraint
+\[
+[\Phi_\pi^{-1}(s)+\Phi_\pi^{-1}(s+\mathbf1)]_{i_m}=0.
+\]
+Equivalently \(\Phi_\pi J\Phi_\pi^{-1}\) preserves both first-label fiber-bit hyperplanes, and \(\Phi_\pi^{-1}J\Phi_\pi\) preserves last-label hyperplanes. These hold for arbitrary nonlinear legal paired-flat gates and are directly path-realizable, unlike abstract support-matching constraints. The complete proofs and finite Q4/Q6/Q8 checks are in research note \`note_fdf278eae230ca4aac3ec185\`, v3. Neither identity alone proves the unrestricted two-different-order antipodal midpoint collision.
+
+
+### Rank-two parity-peeling square closure
+Every static odd-row zero-diagonal rank-two paired-flat reader with arbitrary nonlinear parity phases admits a red antipodal geodesic in each parity fiber. Partition its rows into two types u,v, choose mutually reading labels a,b, and let s list all other rows of the first type followed by those of the second. The word s a b a b reverse(s) has 2^(m-2) successful fiber roots per base. The outer prefix sends the all-one displacement to e_a+e_b; the central four-gate square has invertible active displacement matrix [[1,1],[1,0]]. The outer suffix inverts the prefix because the paired occurrences read the same parity-phase keys. The theorem and the more general even-predecessor certificate are proved in note_c8f556bc515815b03a2f2f9a and nori_rank_two_parity_shell_forcing.md.
+
+
+**Proof of the general parity-peeling certificate.** Suppose \(A_{ab}=A_{ba}=1\) and the remaining labels \(s_1,\ldots,s_{m-2}\) obey \(\sum_{\ell<k}A_{s_k,s_\ell}=0\) modulo two. For the prefix red sweep \(H\), let \(E_i=I+e_iA_{i,*}\) be its linear gate. Start with difference vector \(\mathbf1\). At step \(s_k\), previously visited difference bits are zero and all unvisited bits are one. Oddness of the row then makes the new bit \(1+\sum_jA_{s_kj}d_j=\sum_{\ell<k}A_{s_k,s_\ell}=0\). Thus \(H_{\mathrm{lin}}\mathbf1=e_a+e_b\).
+
+Each outer label is visited again after the central square and later outer labels have returned. Its two phase keys differ only in its own parity bit, which its phase function ignores. Consequently the full word \(s\,a b a b\,s^{\mathrm{rev}}\) acts affinely as \(H^{-1}CH\), where \(C\) is the central four-step return. To produce global displacement \(\mathbf1\), it suffices that \(C(y)=y+e_a+e_b\). Since \(A_{ab}=A_{ba}=1\), the active two-dimensional linear parts of the red gates are \(E_a=\begin{psmallmatrix}1&1\\0&1\end{psmallmatrix}\) and \(E_b=\begin{psmallmatrix}1&0\\1&1\end{psmallmatrix}\). Their four-step return has displacement matrix \((E_bE_a)^2+I=\begin{psmallmatrix}1&1\\1&0\end{psmallmatrix}\), invertible. For every assignment to the other \(m-2\) fiber bits, precisely one active two-bit assignment gives the desired shift, for any affine phase values. There are therefore \(2^{m-2}\) successful roots per starting parity fiber. A red antipodal path of length \(2m\) is a full geodesic.
+
+
+**Why rank two always peels.** For \(A\) of rank two with all rows odd, the two-dimensional row space has precisely two nonzero vectors of odd weight, \(u,v\); their sum has even weight. Each matrix row is \(u\) or \(v\). Let \(I,J\) denote the nonempty row classes of \(u,v\). As \(A_{ii}=0\), \(\operatorname{supp}u\subseteq J\) and \(\operatorname{supp}v\subseteq I\). Choose \(a\in I\cap\operatorname{supp}v\) and \(b\in J\cap\operatorname{supp}u\), both nonempty because \(u,v\) are odd. Then \(A_{ab}=A_{ba}=1\). Order the other labels by listing \(I\setminus\{a\}\) first, then \(J\setminus\{b\}\). An \(I\)-row reads only \(J\) and sees no prior reader. A \(J\)-row reads \(v\), supported in \(I\), and sees parity \(\sum_{i\in I\setminus\{a\}}v_i=(\sum_iv_i)+v_a=1+1=0\). Thus the even-predecessor condition is satisfied at every step. The preceding proof supplies a full red geodesic for each of \(2^{m-2}\) fiber roots in each prescribed base parity, independent of the nonlinear phase values.
+
+The construction applies to arbitrary rank whenever a mutually reading pair and an even-predecessor order exist. Related archive work separately handles the full-rank case by the Gauss--Seidel determinant identity. In the singular case, the common reader kernel satisfies \(\ker A\subseteq\ker(L_w+I)\). Combined with the archived phase-interlacement corank theorem, any phase-immune doubled word for rank \(r\) has at most \(r\) nonisolated interlacement chords. At rank two a successful word needs precisely one crossing pair: a zero-crossing word cancels through adjacent equal-label involutions and cannot reach the antipode. This gives a structural reason to seek a transported square rather than an unrestricted word.
+
+
+## Translation-orbit avoidance of paired-square switches
+
+Let \(c\) be a paired-flat legal coloring of \(Q_{2m}\), with paired direction sets \(P_i\), and suppose \(c\) has a red full antipodal geodesic. Let \(H\le\mathbb F_2^{2m}\) be a group of translations preserving every colored edge, and let \(S\) be an antipodal square-pair orbit supported on \(P_i\). Translation acts on square-pair orbits supported on \(P_i\). Write \(M=|H\cdot S|\).
+
+**Theorem (translation-orbit avoidance and simultaneous restoration).** If \(M>2t\), then for any collection \(\mathcal T\) of at most \(t\) square-pair orbits in \(H\cdot S\), there is a red full antipodal geodesic avoiding their union. In particular \(M\ge3\) guarantees that switching the colors on \(S\) preserves the existence of a monochromatic full antipodal geodesic.
+
+*Proof.* Choose a red full geodesic \(P\). It uses the two directions in \(P_i\) once each, so its two \(P_i\)-edges meet at most two distinct square-pair orbits. For uniformly chosen \(h\in H\), the translated path \(P+h\) remains a red full antipodal geodesic, since \(h\) preserves all edge colors and bit differences. The \(H\)-translates of any fixed square-pair orbit in \(H\cdot S\) are uniformly distributed over this orbit. Consequently for each \(T\in\mathcal T\), the probability that either of the two \(P_i\)-edges of \(P+h\) belongs to \(T\) is at most \(2/M\). The union bound gives
+\[
+\Pr_h[(P+h)\cap\bigcup_{T\in\mathcal T}T\ne\varnothing]\le 2t/M<1.
+\]
+Some translate therefore avoids every member of \(\mathcal T\). Any prescribed color switches on these square-pair orbits leave that red geodesic unchanged. QED.
+
+**Corollary (unread-direction obstruction at a strict critical boundary).** Suppose \(2m\ge6\), and the two directions of \(P_i\) have at least two exterior directions whose bits are not read by any paired gate. If \(c\) has a red full geodesic, one avoids every prescribed square-pair orbit supported on \(P_i\). Thus at a hypothetical good-to-bad paired-square boundary, at most one direction outside the switched pair can be globally unread.
+
+*Proof.* Translation in a globally unread direction preserves every edge color: no gate reads this bit, and each gate ignores its own paired directions. Let \(j,k\notin P_i\) be two such directions. Their translations generate a four-element group. Since there are at least four exterior directions, no nonzero translation supported on \(\{j,k\}\) complements all exterior bits. Hence the orbit of a square-pair parameter under this group has cardinality four. Apply the theorem with \(t=1\). QED.
+
+**Sharpness.** The threshold \(M>2\) cannot be reduced to \(M=2\). On \(Q_4\) use direction pairs \(A=\{0,1\}\), \(B=\{2,3\}\), with paired-flat gates \(f_A(x)=x_2\), \(f_B(x)=x_0\). Translation in direction \(3\) preserves the coloring. It acts with a two-element orbit on the antipodal \(A\)-square pairs, yet every red full antipodal geodesic meets both such square-pair orbits. Indeed the paired-direction word of a red full geodesic must alternate \(ABAB\) or \(BABA\); otherwise consecutive steps in one pair have opposite colors. In each alternating word the two \(A\)-steps differ by one exterior bit and hence meet different square-pair orbits. Thus no red full geodesic avoids either \(A\)-square-pair orbit.
+
+**Scope.** This is an all-dimensional restoration theorem with a color-preserving translation hypothesis. A hypothetical critical successful coloring must have square-orbit size at most two under its full color-preserving translation group. The statement does not impose such symmetry on arbitrary nonlinear paired-flat gates and therefore does not settle unrestricted NORI1. An exhaustive six-dimensional strengthening without any translation hypothesis is documented in the related research note \`note_nori_q6_square_orbit_avoidance_20261018_r11755\`; lifting that finite statement requires compatible paths across exterior fibers.
+
+
+## Critical pair-word sparsity and nonlinear perturbation survival
+
+Fix \(m\ge2\) and a paired-flat legal coloring \(c\) on \(Q_{2m}\), with direction pairs \((a_i,b_i)\). The red edges in pair \(i\) form a perfect matching; let \(T_i\) be its involution on vertices. A *pair word* \(w=(w_1,\ldots,w_{2m})\) uses each pair label twice. Let \(X_c(w)\) be the starting vertices of red walks along \(w\) whose terminal vertex is the antipode, and let \(r_i(w)\in\{0,1,2\}\) count occurrences of \(i\) at strictly internal positions. Every walk counted by \(X_c(w)\) is a full geodesic: in \(2m\) steps, an antipodal endpoint requires every original direction once.
+
+**Theorem 1 (critical rooted-word bound).** Suppose \(c'\) is obtained by flipping the eight edges of an alternating square in directions \(a_i,b_i\) and its antipodal square, and suppose \(c'\) has no monochromatic full geodesic. Then for *every* pair word \(w\),
+\[
+\boxed{|X_c(w)|\le 8r_i(w).}\tag{KR1}
+\]
+In particular, no red full geodesic of \(c\) begins and ends in pair \(i\); and at most eight red rooted full geodesics share any word with one occurrence of \(i\) at an endpoint. This applies to nonlinear gates.
+
+*Proof.* Of the eight switched edges, four are red in \(c\). Under the badness hypothesis every red full geodesic of \(c\) has precisely one switched edge, in an internal position. To see this, a path avoiding the switch survives. For two switched edges in one square, exchange the consecutive square directions; for one edge in each of the two antipodal squares, exchange the first and last square directions while translating the root by their sum. Either operation yields a red full geodesic of \(c'\). A one-hit path with a terminal hit becomes a one-blue-edge path in \(c'\), and cyclic rotation across that endpoint edge replaces it by its red antipodal mate, giving a red full geodesic. Thus only a single internal hit is possible.
+
+For a fixed red switched edge, one of its two orientations, and an internal position \(t\) with \(w_t=i\), the red \(w\)-walk traversing that oriented edge at \(t\) has at most one starting vertex: invert the red matching bijections forming its prefix. There are four red edges, two orientations, and \(r_i(w)\) internal positions. Counting every root by its compulsory hit gives (KR1). \(\square\)
+
+**Corollary 2 (square-boundary forcing).** If \(|X_c(w)|>8r_i(w)\) for some word \(w\), every paired alternating-square switch in pair \(i\) preserves the existence of a monochromatic full geodesic. Nine red rooted geodesics sharing a word with one endpoint occurrence of \(i\) suffice.
+
+**Theorem 3 (full-rank affine class survives one nonlinear switch).** Let the paired gates of \(c\) be
+\[
+f_i(p,q)=\sum_{j\ne i}a_{ij}q_j+\theta_i(p_{-i})\pmod2,
+\]
+where \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\); the matrix \(A=(a_{ij})\) has zero diagonal, \(A\mathbf1=\mathbf1\), and \(\det A=1\); and the phase functions \(\theta_i\) are arbitrary. For every \(m\ge4\), one antipodal alternating-square switch in any direction pair preserves a monochromatic full geodesic, including when it generates a nonlinear gate.
+
+*Proof.* If the switched pair is \(i\), choose a permutation \(\pi\) with \(i\) first, and put \(w=\pi\pi\); then \(r_i(w)=1\). For a fixed initial parity \(p\), the first sweep is an affine map of \(q\) with linear part \(F_\pi\). Relabel by \(\pi\), let \(L\) be the strictly lower triangular part of \(A\), and write the sequential equations to obtain \(F_\pi+I=(I+L)^{-1}A\). The second sweep has the same linear part; its phase offset may differ. The complete antipodal return equation is affine with coefficient
+\[
+F_\pi^2+I=(F_\pi+I)^2,
+\]
+which is invertible because \(\det A=1\). Hence in *each* of the \(2^m\) initial parity fibers there is one root producing a red full geodesic with word \(w\). Thus \(|X_c(w)|=2^m\ge16>8r_i(w)\); Corollary 2 applies. \(\square\)
+
+**Theorem 4 (multiple sparse nonlinear switches).** Under Theorem 3's hypotheses, flip any union of \(t\) antipodally paired alternating squares lying in direction pairs, with the final coloring legal. If
+\[
+\boxed{16t<2^m,}\tag{KR2}
+\]
+the final coloring retains a red full geodesic.
+
+*Proof.* Fix any \(\pi\), and set \(w=\pi\pi\). Theorem 3's linear calculation produces \(2^m\) red full geodesics of \(c\) with that word. Each square pair contains four red edges of \(c\). For each of those edges, either orientation, and either of the two positions of its pair label in \(w\), there is at most one starting root, by invertibility of the preceding matching product. Thus at most \(16t\) of the witnesses use any of the changed edges. Under (KR2), one witness remains untouched and stays red. \(\square\)
+
+Theorem 1 gives a necessary restriction on *arbitrary* nonlinear paired-flat critical good colorings, within a common fixed pair word and shared edge assignment. Theorems 3–4 give a dimension-uniform positive transfer to one or several nonlinear square perturbations of the full-rank affine-slope class. They do not prove that an arbitrary hypothetical critical good coloring has the required common-word root multiplicity, or give the vertex-simple boundary-tournament implication. This root-multiplicity production is the remaining gap.
+
+
+### Root-support robustness for arbitrary paired-flat gate systems
+
+**Theorem 5 (common-word square-fault budget).** Let \(c\) be *any* paired-flat legal coloring on \(Q_{2m}\), possibly with nonlinear gates. Suppose a pair word \(w\) has \(N=|X_c(w)|\) red antipodal roots. Let \(c^\star\) be a legal coloring obtained by switching a union of \(t\) antipodally paired alternating squares, in arbitrary direction pairs. If
+\[
+16t<N,
+\]
+then \(c^\star\) has a red full geodesic. For a *single* square pair \(S\) in pair \(i\), the sharper hypothesis \(\lvert X_c(w)\rvert>8r_i(w)\) suffices to preserve a monochromatic full geodesic, as in Theorem 1.
+
+*Proof.* Fix a switched square pair in label \(i\). There are four originally red edges in its eight-edge support. For each such edge, its two orientations, and either occurrence position of label \(i\) in \(w\), at most one initial root follows the red word \(w\) through that edge; the prefix is a bijection. Thus at most sixteen of the \(N\) witnesses meet this square pair. The union of \(t\) square pairs meets at most \(16t\) witnesses. One untouched witness survives when the inequality holds. No linearity is used. \(\square\)
+
+**Corollary 6 (nested-core nonlinear fault tolerance).** Consider paired-flat gates \(f_i(p,q)=\sum_{j\ne i}a_{ij}q_j+\theta_i(p_{-i})\), with parity-independent zero-diagonal slope matrix \(A\), odd row sums, and arbitrary phase functions. Suppose \(i_1,\ldots,i_k\) are distinct outer labels, with remaining set \(R\) of size at least two, such that \(\det A[R,R]=1\) and \(\sum_{s<t}a_{i_t,i_s}=0\) for each \(t\). For any permutation \(\pi\) of \(R\), the established nested-core forcing theorem supplies
+\[
+w=i_1\cdots i_k\,\pi\pi\,i_k\cdots i_1,\qquad |X_c(w)|=2^{m+k}.
+\]
+Consequently any union of \(t\) legal paired-square switches with \(16t<2^{m+k}\) preserves a red full geodesic. If \(m\ge4\) and \(k\ge1\), *every single* legal antipodal paired-square switch preserves a monochromatic full geodesic, because \(2^{m+k}\ge32>16\ge8r_i(w)\) for every pair \(i\). The case \(k=0\), equivalent to nonsingular \(A\), is covered by Theorem 3 by selecting \(\pi\) to start with the switched pair. Hence **every static affine-slope coloring admitting a legal nested-core peel in dimension \(2m\ge8\) remains successful under one legal square switch**, with unrestricted nonlinear phase truth tables and nonlinear output gates.
+
+*Proof.* The nested-core theorem solves the red antipodal return equation for precisely \(2^k\) starting \(q\)-states in each of the \(2^m\) parity fibers. The common-word budget of Theorem 5 gives the multi-switch result. The critical bound of Theorem 1 gives the one-switch result. \(\square\)
+
+The nested-core existence hypothesis is established for every odd-row zero-diagonal slope matrix only through the recorded finite classifications, with an arbitrary-size peeling conjecture still unresolved. The corollary is dimension-uniform **conditional on an explicit algebraic peel**, and does not imply the existence of such a peel for all matrices, nor the required nonlinear-gate transfer at arbitrary hypothetical good/bad critical boundaries.
+
+
+## Nonlinear outer gates and nonsingular inner returns
+
+All additions below are in \(\mathbb F_2\). Partition the \(2m\) cube dimensions into pairs \((a_i,b_i)\), and write \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\). A paired-flat coloring assigns the two direction colors \(f_i(p,q)\), \(1+f_i(p,q)\), where \(f_i\) ignores \(p_i,q_i\) and satisfies \(f_i(p,q+\mathbf1)=1+f_i(p,q)\). The unique red move in pair \(i\) is the involution
+\[
+T_i:(p,q)\longmapsto(p+e_i,\ q+(1+f_i(p,q))e_i).
+\tag{NO1}
+\]
+Here red denotes color zero. Antipodal complementation fixes \(p\) and sends \(q\) to \(q+\mathbf1\).
+
+**Theorem (nonlinear extension of nested-core forcing).** Let \(S=(i_1,\ldots,i_k)\) be ordered distinct pair labels, and let \(R\) be the complementary set, with \(|R|\ge2\). Suppose:
+
+1. For every \(t\), every \(p,q\), and \(D_t=R\cup\{i_{t+1},\ldots,i_k\}\),
+\[
+f_{i_t}(p,q+\mathbf1_{D_t})=1+f_{i_t}(p,q).
+\tag{NO2}
+\]
+2. For \(j\in R\), the gate has the form
+\[
+f_j(p,q)=\sum_{\ell\in R}B_{j\ell}(p_S,q_S)q_\ell+
+\theta_j(p_{\ne j},q_S),
+\tag{NO3}
+\]
+where every matrix \(B(p_S,q_S)\) has zero diagonal and is nonsingular. The phase functions are arbitrary subject to the stated paired-flat coloring law.
+
+For any fixed permutation \(\pi\) of \(R\), the pair word
+\[
+w=i_1\cdots i_k\,\pi\pi\,i_k\cdots i_1
+\tag{NO4}
+\]
+has precisely \(2^k\) red antipodal starting roots in every prescribed initial parity fiber \(p=p^0\). Each resulting \(2m\)-step walk is a full geodesic in the original cube.
+
+The matrices in (NO3) may depend nonlinearly on the outer bits. No row-sum condition is imposed on these inner matrices.
+
+*Proof.* Execute the first \(k\) moves. This prefix is a bijection from the initial parity fiber to the fiber \(p'=p^0+\mathbf1_S\). Choose the \(k\) outer bits \(z=q_S\) arbitrarily just after the prefix. During the central word \(\pi\pi\), these bits and \(p_S\) are fixed, so the inner slope matrix is one fixed nonsingular matrix \(B=B(p'_S,z)\).
+
+Relabel the inner labels in the order \(\pi\), and write \(B=L+U\) with \(L,U\) strictly lower and upper triangular. A single inner sweep has homogeneous matrix
+\[
+F=(I+L)^{-1}(I+U),\qquad F+I=(I+L)^{-1}B.
+\tag{NO5}
+\]
+Indeed, the sequential update at an inner label reads the new values at earlier labels and the old values at later labels. Its phase reads a specified parity state and the fixed outer bits, so it is independent of the inner \(q\)-variables. The two sweeps therefore have affine forms \(q_R\mapsto Fq_R+\alpha\) and \(q_R\mapsto Fq_R+\beta\), with potentially different offsets. The equation making their combined return complement every inner bit is
+\[
+(F^2+I)q_R=\mathbf1_R+F\alpha+\beta.
+\tag{NO6}
+\]
+Since \(F^2+I=(F+I)^2\) and \(F+I\) is nonsingular by (NO5), this equation has one solution for each chosen \(z\).
+
+Return through the outer labels in reverse order. At the two visits to \(i_t\), every other pair parity has the same value: deeper labels have each occurred twice, while earlier outer labels have occurred once at both visits. The gate ignores its own parity. By reverse induction, the deeper \(q\)-bits have all been complemented, while earlier outer bits have stayed fixed. Thus the two gate values differ by one, by (NO2). Their two red moves traverse opposite members of pair \(i_t\), complementing its \(q\)-bit and restoring its parity.
+
+Consequently every choice of \(z\) gives a red antipodal return. The prefix bijection gives \(2^k\) distinct initial roots. Conversely, any successful return along (NO4) complements the inner bits during the central word, since the outer moves leave them unchanged. Its inner starting state must therefore be the unique solution of (NO6) for its \(z\). This proves the root count.
+
+Each pair occurs twice. A pair's restored parity and complemented \(q\)-bit mean that its two original dimensions were traversed once each. Hence the entire walk uses all \(2m\) original dimensions once, and is a vertex-simple full antipodal geodesic. \(\square\)
+
+### Whole-gate replacement and square-switch tolerance
+
+By global oddness, (NO2) is equivalent to
+\[
+f_{i_t}(p,q+\mathbf1_{\{i_1,\ldots,i_{t-1}\}})
+=f_{i_t}(p,q).
+\tag{NO7}
+\]
+For \(t=1\), this is automatic. Later outer gates may depend nonlinearly on earlier bits through functions invariant under their simultaneous complementation.
+
+**Corollary (whole-gate replacement).** Under the theorem's hypotheses with \(k\ge1\), replace \(f_{i_1}\) by any function defining a legal paired-flat gate, leaving all other gates fixed. The same word (NO4) still has \(2^k\) successful roots in every parity fiber. More generally, all outer gates may be replaced simultaneously by arbitrary functions satisfying (NO7) and global oddness.
+
+*Proof.* Condition (NO7) for the first gate is vacuous. Conditions (NO3) for the other gates are unchanged. For the simultaneous statement, every hypothesis remains valid. Apply the theorem. \(\square\)
+
+This allows changes to an entire gate truth table. In particular, any collection of antipodally paired alternating-square switches supported on the first outer pair preserves a red full geodesic, without a bound on the collection's size.
+
+**Corollary (additional faults in arbitrary pairs).** Starting with any coloring satisfying the theorem, switch any union of \(t\) antipodally paired alternating squares in arbitrary direction pairs. If either
+\[
+4t<2^m\qquad\text{or}\qquad16t<2^{m+k},
+\tag{NO8}
+\]
+the resulting coloring has a red full geodesic. Every single such switch preserves success for \(m\ge3\).
+
+*Proof.* Word (NO4) has \(2^{m+k}\) successful roots, counting all parity fibers. One square pair contains four originally red edges. For each edge, orientation, and either occurrence of its pair label in the word, at most one starting root traverses that oriented edge there: invert the preceding matching involutions. Thus at most sixteen of these rooted paths meet one square pair, and at most \(16t\) meet the changed union. One untouched red geodesic survives when \(16t<2^{m+k}\).
+
+For the other inequality, a fixed square pair in label \(i\) has one fixed exterior pair-parity pattern \(\sigma\): its antipodal companion has the same pattern. At a specified occurrence of \(i\) in (NO4), the initial outside parity is therefore determined by \(\sigma\) and the known prefix of pair labels; only the initial bit \(p_i\) is free. Each occurrence can affect at most two initial parity fibers, so a square pair affects at most four. The theorem supplies a successful root in all \(2^m\) fibers. If \(4t<2^m\), some fiber's successful paths avoid every changed square pair. For \(t=1\) this inequality holds whenever \(m\ge3\). \(\square\)
+
+The earlier static affine nested-core theorem is recovered by taking \(B=A[R,R]\). For an outer affine gate, (NO7) becomes \(\sum_{s<t}a_{i_t,i_s}=0\). The present theorem also permits nonlinear dependence in every gate and nonlinear variation of the inner slope matrix with outer states.
+
+### An unbounded strongly connected family with every gate nonlinear
+
+Let \(k\ge3\), \(m=k+3\), with outer bits \(z_0,\ldots,z_{k-1}\) and inner bits \(u,v,w\). Define
+\[
+H(z)=\prod_{j=1}^{k-1}(z_0+z_j),\qquad
+M(u,v,w)=uv+uw+vw.
+\]
+Use gates independent of all pair parities:
+\[
+f_{z_i}=M(u,v,w)\ (0\le i<k),\qquad
+f_u=v+H(z),\quad
+f_v=w+H(z),\quad
+f_w=u+v+z_0+H(z).
+\tag{NO9}
+\]
+Each gate ignores its own bit. The function \(H\) is invariant under simultaneous complementation of all outer bits, whereas \(M\) changes value under simultaneous complementation of the three inner bits. These identities verify global oddness of every displayed gate.
+
+Choose outer order \(z_0,\ldots,z_{k-1}\). Each outer gate satisfies (NO2), since it depends only on the three inner bits. The inner slope matrix is
+\[
+B=\begin{pmatrix}0&1&0\\0&0&1\\1&1&0\end{pmatrix},\qquad \det B=1.
+\]
+The theorem therefore gives \(2^k\) successful \(q\)-roots in every parity fiber for
+\[
+z_0\cdots z_{k-1}\,u v w\,u v w\,z_{k-1}\cdots z_0.
+\tag{NO10}
+\]
+Every gate is nonlinear: \(M\) has degree two and \(H\) has degree \(k-1\). Every outer bit influences every inner gate through \(H\), and every inner bit influences every outer gate through \(M\). The directed influence graph is consequently strongly connected. Thus the theorem applies with arbitrarily many nonlinear gates and with feedback in both directions between the inner and outer sets.
+
+Because (NO9) is independent of \(p\), it also defines a legal odd edge coloring of the smaller cube \(Q_m\), with direction-\(i\) rule \(f_i(q)\). The paired coloring is its complementary lift. Project a red geodesic supplied above onto the \(a_i\)-dimensions: an \(a_i\)-step occurs precisely when \(f_i(q)=0\), each such dimension occurs once, and the \(b_i\)-steps leave \(q\) unchanged. The projection is a red full antipodal geodesic of \(Q_m\). In particular this smaller-cube family has at least \(2^k\) distinct red starting roots.
+
+### Scope
+
+The theorem establishes a dimension-uniform nonlinear forcing class and supplies the root multiplicity needed by a square-fault forcing argument. Its assumptions retain the partial-complement symmetries (NO2) and an inner block affine in its own bits with a uniformly nonsingular slope. Arbitrary nonlinear paired-flat colorings need not satisfy these assumptions. Producing such an ordered decomposition at every hypothetical strict square boundary remains open, as does the arbitrary-rank odd-matrix peeling conjecture. No boundary-tournament specialization preserving distinct original vertices is established here; unrestricted NORI1 and the grand conjecture remain open.
+
+
+## Odd singular parity cores and four-word nonlinear forcing
+
+The following argument replaces nonsingularity of an inner slope block by a four-word certificate. The argument uses shared phase values and a reduction that removes two pair labels at a time.
+
+### An odd parity core with arbitrary phase functions
+
+Let \(r\ge3\) be odd. On \(Q_{2r}\), use direction pairs \((a_i,b_i)\), pair parities \(p_i=x_{a_i}+x_{b_i}\), and bits \(q_i=x_{a_i}\). Assign pair colors \(g_i,1+g_i\), where
+\[
+g_i(p,q)=\sum_{j\ne i}q_j+\theta_i(p_{\ne i}).
+\tag{OPC1}
+\]
+The functions \(\theta_i\) are arbitrary. This coloring is antipodally even; the conclusion below permits either monochromatic color.
+
+Choose three pair labels, call them \(0,1,2\), and partition all remaining labels into ordered pairs \((a,b)\). Let \(H\) concatenate the words \(abab\) for these pairs, in any fixed order. Set
+\[
+\begin{array}{ll}
+v_A=010212,&v_B=012012,\\
+v_C=012021,&v_D=102012,
+\end{array}
+\qquad
+\mathcal V=\{Hv_A,Hv_B,Hv_C,Hv_D\}.
+\tag{OPC2}
+\]
+Each word contains every pair label twice.
+
+**Theorem (odd singular core).** For every prescribed initial parity \(p\), at least one word in \(\mathcal V\) has a monochromatic antipodal root. More precisely, the number of triples \((v,\varepsilon,q)\), where \(v\in\mathcal V\), \(\varepsilon\in\{0,1\}\), and the color-\(\varepsilon\) pair walk from \((p,q)\) ends at its antipode, is either four or twelve. Every counted walk is a full geodesic.
+
+*Proof.* Put \(y_*=\sum_iq_i\) and \(y_i=q_i\). For a color-\(\varepsilon\) move in pair \(i\), the augmented bits undergo
+\[
+(y_*,y_i)\longmapsto(y_i+c,\ y_*+c),
+\qquad c=1+\varepsilon+\theta_i(p_{\ne i}),
+\tag{OPC3}
+\]
+with all other bits unchanged, while \(p_i\) toggles. Thus each move is an affine swap. The condition that augmented bits represent original bits is
+\[
+y_*+\sum_i y_i=0.
+\tag{OPC4}
+\]
+Every affine swap preserves this parity.
+
+First take \(r=3\), temporarily allowing all four augmented bits to be independent. Normalize the prescribed initial parity to zero by translating the phase tables. Write \(\theta_i[d]\), \(0\le d<4\), for the value of \(\theta_i\) at the outside parity packed in increasing label order, with the first outside label as the low bit.
+
+For each word in (OPC2), the unsigned permutation of the four augmented bits has two cycles. The respective cycle partitions and conditions for a red augmented return \(y\mapsto y+\mathbf1\) are:
+
+| Word | Cycle supports | Required equation |
+|---|---|---|
+| \(v_A\) | \(\{*\},\{0,1,2\}\) | \(\theta_0[0]+\theta_0[1]+\theta_2[0]+\theta_2[2]=1\) |
+| \(v_B\) | \(\{*,1\},\{0,2\}\) | \(\theta_0[0]+\theta_0[3]+\theta_1[1]+\theta_1[2]+\theta_2[0]+\theta_2[3]=0\) |
+| \(v_C\) | \(\{*,0,2\},\{1\}\) | \(\theta_1[0]+\theta_1[1]+\theta_2[2]+\theta_2[3]=1\) |
+| \(v_D\) | \(\{*,0,2\},\{1\}\) | \(\theta_0[1]+\theta_0[3]+\theta_1[0]+\theta_1[2]=1\) |
+
+Here is the algebra behind the table. Compose the six swaps (OPC3) with \(\varepsilon=0\), obtaining \(y\mapsto Py+d\). The equation \((P+I)y=\mathbf1+d\) is solvable if and only if the sum of \(d\) on each permutation cycle equals the length of that cycle modulo two. Since every swap adds its offset in two positions, \(\sum d=0\), and the two cycle equations are equivalent. Substitution of the six visited phase keys gives the displayed equations. When an equation holds, two permutation cycles give four augmented solutions.
+
+The sum of the four left sides is zero, whereas the sum of their right sides is one. Consequently an odd number of the four equations holds: one or three. This is an identity on one shared collection of twelve phase values.
+
+Let \(K\) toggle only \(y_*\). Conjugating a red affine swap by \(K\) gives the corresponding blue affine swap. Hence, if \(y\) is a red augmented antipodal root, \(Ky\) is a blue augmented antipodal root for the same word. Their parities differ. For either prescribed augmented parity \(\gamma\), each red augmented root therefore determines one colored root of parity \(\gamma\): keep \(y\) in red if its parity is \(\gamma\), and use \(Ky\) in blue otherwise. This correspondence is bijective. Each feasible word supplies four colored roots of prescribed augmented parity. Taking \(\gamma=0\) proves the three-pair claim.
+
+Now remove one ordered pair \((a,b)\) using \(abab\). Let \(s,A,B\) be its initial augmented bits \(y_*,y_a,y_b\), and let \(c_1,c_2,c_3,c_4\) be the four offsets in (OPC3). The choice
+\[
+A=s+c_1+c_2+c_4,\qquad
+B=s+c_1+c_3+c_4+1
+\tag{OPC5}
+\]
+is the unique choice with prescribed center \(s\) for which this word fixes \(y_*\) and complements \(y_a,y_b\). Direct substitution into the four swaps proves the assertion. Moreover
+\[
+A+B=1+c_2+c_3
+\tag{OPC6}
+\]
+is independent of \(s\) and of the common color \(\varepsilon\). The two appearances of \(1+\varepsilon\) cancel in this sum.
+
+Every completed \(abab\) block restores its two parities and fixes the augmented center. Thus all offsets needed for later blocks are independent of the initial bits chosen in earlier blocks. Apply (OPC5) to every pair outside the distinguished triple. Let \(\Gamma\) be the sum of their values (OPC6). It depends on the phase tables and the prescribed parities, and is independent of the common color and the center bit.
+
+The remaining three-pair problem must have augmented parity \(\Gamma\), by (OPC4). The three-pair argument supplies four colored roots for each feasible distinguished word with this prescribed parity. For every such root, (OPC5) determines the earlier pair bits uniquely in the same color. Conversely every full antipodal return along a word \(Hv\) must fix the center during each completed \(abab\) block, since complementing two original \(q\)-bits preserves their sum; its initial pair bits are therefore forced by (OPC5). The three-pair correspondence gives all roots. There are four or twelve in total.
+
+Finally, restoring \(p_i\) and complementing \(q_i\) in a pair means traversing each of its two original dimensions once. Every counted walk therefore uses all \(2r\) original dimensions once. \(\square\)
+
+### Nonlinear outer gates around the singular core
+
+Return to a legal odd paired-flat coloring on \(Q_{2m}\), with gates \(f_i(p,q)\) ignoring \(p_i,q_i\). Order \(k\ge1\) outer labels \(S=(i_1,\ldots,i_k)\), and let the remaining set \(R\) have odd size \(r\ge3\). Assume the outer gates satisfy
+\[
+f_{i_t}(p,q+\mathbf1_{R\cup\{i_{t+1},\ldots,i_k\}})
+=1+f_{i_t}(p,q)
+\quad\text{for every }p,q,t,
+\tag{OPC7}
+\]
+and assume the inner gates have the form
+\[
+f_j(p,q)=\sum_{\ell\in R\setminus\{j\}}q_\ell+
+\theta_j(p_{\ne j},q_S),\qquad j\in R.
+\tag{OPC8}
+\]
+All phase functions are arbitrary subject to legality of the whole coloring. In particular global oddness makes each \(\theta_j\) odd under simultaneous complementation of \(q_S\). The inner slope block \(J_r+I_r\) is singular, of rank \(r-1\).
+
+**Theorem (four-word nonlinear forcing with a singular core).** Form the four words
+\[
+w_\nu=i_1\cdots i_k\,H v_\nu\,i_k\cdots i_1,
+\qquad \nu\in\{A,B,C,D\},
+\tag{OPC9}
+\]
+with \(H,v_\nu\) as in (OPC2) on \(R\). In every prescribed initial parity fiber, at least one of these four words has a red antipodal root. The total number of red root-word pairs in that fiber is at least \(2^{k+1}\).
+
+*Proof.* Fix the initial parity \(p^0\). For either chosen color, the outer prefix is a bijection onto parity \(p'=p^0+\mathbf1_S\). Assign its postprefix outer bits \(z=q_S\) arbitrarily. During the inner word, \(p_S,z\) stay fixed. The inner gates are (OPC1) with arbitrary phase tables, so the odd-core theorem supplies four or twelve colored root-word pairs for this \(z\).
+
+Return through the outer labels in reverse. At the two visits to \(i_t\), other pair parities agree, earlier outer bits are unchanged, and deeper bits have been complemented. Equation (OPC7) makes the two gate values complementary. In either common color, the two moves consequently traverse opposite members of pair \(i_t\). Thus every inner colored return extends to a full monochromatic antipodal geodesic.
+
+Conversely, every successful full return along (OPC9) restricts to an inner colored antipodal return, and its initial state is recovered by inverting the prefix in that color. Summing over \(2^k\) choices of \(z\) gives at least \(4\cdot2^k\) colored root-word pairs. Global oddness maps red roots to blue roots in the same initial parity fiber and with the same pair word. Half the colored pairs are red, proving the lower bound. \(\square\)
+
+The first outer gate can be replaced by any legal odd gate without changing this conclusion. More generally all outer gates may be replaced while retaining (OPC7). This follows from the proof and the equivalence between (OPC7) and invariance under simultaneous complementation of the earlier outer bits.
+
+The class permits nonlinear dependence in every gate and arbitrary parity-dependent phase tables. For example let \(k\ge3\), let \(M\) be majority on three distinguished inner bits, and set
+\[
+G(z)=z_0+\prod_{j=1}^{k-1}(z_0+z_j).
+\]
+Take every outer gate to be \(M+\phi_i(p_{\ne i})\), and every inner phase to be \(G(z)+\psi_j(p_{\ne j})\), with arbitrary \(\phi_i,\psi_j\). Both \(M\) and \(G\) are odd and nonlinear, and \(G\) depends on every outer bit. All hypotheses hold. Every gate is nonlinear, and the directed \(q\)-influence graph is strongly connected: each outer bit influences all inner gates, the inner complete dependence graph is strongly connected, and its distinguished triple influences every outer gate.
+
+### Parity transport for a family of words
+
+Let \(\mathcal W\) be any finite family of full pair words in an arbitrary legal paired-flat coloring \(c\). Suppose their red antipodal root sets jointly meet every initial parity fiber; a different word may witness each fiber. For each label \(i\), define
+\[
+\Sigma_i(\mathcal W)=
+\{(\eta_t)_{\ne i}:w\in\mathcal W,\ w_t=i,\ 
+\eta_t=\sum_{s<t}e_{w_s}\}.
+\tag{OPC10}
+\]
+Suppose gates are rewritten arbitrarily on exterior parity sets \(E_i\subseteq\mathbb F_2^{[m]\setminus\{i\}}\), and are unchanged elsewhere. The rewritten gates must define a coloring; their dependence on \(q\) inside those sets is unrestricted.
+
+**Lemma (joint word-family transport).** Every initial fiber outside
+\[
+\bigcup_i\{p:p_{\ne i}\in E_i+\Sigma_i(\mathcal W)\}
+\tag{OPC11}
+\]
+retains a red full geodesic. Consequently the rewrite preserves success whenever
+\[
+2\sum_i |E_i|\,|\Sigma_i(\mathcal W)|<2^m.
+\tag{OPC12}
+\]
+
+*Proof.* Before step \(t\), pair parity is \(p+\eta_t\), independent of the selectors. A word can consult a changed gate \(i\) only when \(p_{\ne i}\in E_i+(\eta_t)_{\ne i}\). Outside (OPC11), every red walk in every word of the family encounters unchanged selectors, so it follows the same states after the rewrite. Choose its existing red witness in that fiber. Each exterior parity assignment leaves two possibilities for \(p_i\), giving the bound (OPC12). No single word is assumed to cover all fibers. \(\square\)
+
+**Corollary (arbitrary nonlinear slab rewrites).** For the four words (OPC9), the cardinalities in (OPC10) are one on an outer label, two on a label in an \(abab\) block, and three on a distinguished triple label. Thus arbitrary nonlinear rewrites on \(s_O,s_P,s_T\) exterior parity slabs in those respective groups preserve success if
+\[
+2s_O+4s_P+6s_T<2^m.
+\tag{OPC13}
+\]
+In particular any single exterior parity slab in any pair may be rewritten, since \(m=k+r\ge4\). This includes any one antipodally paired alternating-square switch.
+
+*Proof.* An outer label's two occurrences enclose complete returns of all deeper labels, so their exterior prefix parities agree. An \(abab\) label has two exterior signatures, common to all four words. For the distinguished triple, suppressing the fixed outside prefix, the signature sets at labels \(0,1,2\) are respectively \(\{0,1,3\}\), \(\{0,1,2\}\), and \(\{0,2,3\}\), with the other two triple bits packed as above. Hence their cardinalities are three. Apply (OPC12). \(\square\)
+
+The transport lemma applies to arbitrary paired-flat colorings with a witnessed fiber-covering word family. The odd-core theorem supplies this hypothesis for (OPC7)–(OPC8) through a four-word shared-phase identity. A single common word covering all fibers is unnecessary.
+
+### Scope
+
+These theorems establish a nonlinear forcing class with a singular inner slope block and a dimension-uniform nonlinear transfer across an entire parity slab. A hypothetical strict good/bad square boundary cannot have the displayed outer decomposition and inner parity rules on its good side. The proof supplies the root and word choices and verifies simplicity in the original cube.
+
+A general nonlinear coloring need not satisfy (OPC7) or (OPC8). Deriving an appropriate decomposition, or another fiber-covering family with small sets (OPC10), at every hypothetical boundary remains open. The arbitrary-rank matrix-peeling problem is also unresolved. No reduction to vertex-simple boundary-tournament paths is asserted, and unrestricted NORI1 and grand closure remain open.
+
+
+## Paired-midpoint collision tensorization and the two-pair base (session session_nori_r11755_1)
+
+This section extends the paired-midpoint construction of note_dd297b14828b049d0221340b, with the two-part obstruction analysis in note_nori_xvi_midpoint_tensor_product_and_scarcity_barrier_20261018_r11755, version 2. For a paired-flat legal coloring on Q_(2m), let T_i be the unique red matching involution for direction pair i. For every order pi of the pair labels, write T_pi for their full sweep. Define W(c) as the number of triples (x,pi,rho) with T_pi(x)=T_rho(bar x), all roots and both orders counted. Such a collision yields a full red antipodal geodesic.
+
+**Theorem (disjoint-block tensor product).** If c and d are paired-flat legal colorings on Q_(2m) and Q_(2k), then for their disjoint-block product c box d,
+
+W(c box d)=binom(m+k,m)^2 W(c)W(d).
+
+In particular w(c)=W(c)/(m!)^2 obeys w(c box d)=w(c)w(d).
+
+**Proof.** The matching actions from the two blocks commute, since each acts only within its own block. Thus a full pair order on m+k labels has endpoint determined solely by its two restricted orders. For each prescribed ordered pair of restrictions there are binom(m+k,m) interleavings. Each equality of two full-sweep endpoints in the product splits into one such equality per block. The two independent interleavings contribute the squared binomial factor. QED.
+
+**Theorem (two-pair normalization).** Every paired-flat legal coloring on Q4 has W=8, independently of its two arbitrary legal gates.
+
+**Proof.** In F2 put p_i=x_(2i)+x_(2i+1), t_i=x_(2i). The gate outside pair 0 is t_1+a(p_1) and the gate outside pair 1 is t_0+b(p_0), because complementing both bits of the other pair must change the gate. The red pair matchings T_0,T_1 flip their corresponding parity bits and have linear parts, in t=(t_0,t_1),
+
+L_0=[[1,1],[0,1]], L_1=[[1,0],[1,1]].
+
+The resulting complete sweeps 01 and 10 have linear parts A=L_1 L_0=[[1,1],[1,0]] and B=L_0 L_1=[[0,1],[1,1]], satisfying A+B=I. Their affine constants depend on the initial p only. The antipodal map fixes p and adds (1,1) to t. For a given p, collisions with equal orders cannot happen since a sweep is a bijection. For each opposite-order choice, the equation comparing its two endpoints has coefficient matrix A+B=I on t and hence has one solution. There are four choices of p and two ordered opposite-order choices, giving W=8. QED.
+
+Consequently, for any r, a product of r paired-flat Q4 blocks has normalized count w=2^r. In Q8 the two-block product has W=binom(4,2)^2*8^2=2304 and w=4. This falls below the known first good-to-bad square-switch scarcity bound w<=12, so unconditional lower bounds on w stronger than that threshold are unavailable. The linked note records the stronger all-dimensional obstruction to combining tensor amplification with a telescoped one-switch Lipschitz estimate.
+
+**Scope.** Both the tensor identity and the two-pair computation are proved. The product argument retains arbitrary nonlinear gates. These results quantify midpoint witness multiplicity and rule out an unqualified counting shortcut; the strict one-internal-hit nonlinear square-boundary remains unresolved.
+
+### Exterior pair-parity localization and nonlinear switch distance
+
+Let \(c\) be a legal paired-flat coloring of \(Q_{2m}\), \(m\ge2\), with direction pairs \(\{a_i,b_i\}\), and use \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\) over \(\mathbb F_2\). A red pair step \(T_i\) toggles \(p_i\) and is a bijection. For a pair word \(w=(w_1,\ldots,w_{2m})\) containing each label twice, let \(X_c(w)\) be the roots of red full antipodal geodesics with that pair word and put
+\[
+\mathcal P_c(w)=\{p(x):x\in X_c(w)\}.
+\]
+For \(t\in[2m]\) set \(\eta_t=\sum_{s<t}e_{w_s}\in\mathbb F_2^m\). At step \(t\), a red \(w\)-walk starting in fiber \(p\) has pair-parity \(p+\eta_t\), independent of every gate.
+
+**Lemma 7 (exterior parity of a paired-square hit).** Fix an alternating square \(F\) in the two directions of pair \(i\), together with its antipodal square \(\bar F\), and write \(S=E(F)\cup E(\bar F)\). There is a unique \(\sigma\in\mathbb F_2^{[m]\setminus\{i\}}\) such that all vertices of \(F\cup\bar F\) have outside pair-parity \(\sigma\). If a red pair-word walk meets \(S\) at position \(t\), then \(w_t=i\) and its starting parity satisfies
+\[
+p_{-i}=\sigma+(\eta_t)_{-i}.\tag{PL1}
+\]
+Thus for a fixed occurrence position \(t\) of label \(i\), red walks hitting \(S\) start in at most two pair-parity fibers, independent of their gate functions and initial \(q\)-values.
+
+*Proof.* The exterior bits of \(F\) are fixed. Those of \(\bar F\) are their complements; simultaneous complementation of the two bits of an outside pair leaves that pair's parity unchanged. Therefore all eight square vertices have the same outside pair-parity \(\sigma\). Every pair step toggles just its own pair-parity bit. Hence the outside parity at step \(t\) is \(p_{-i}+(\eta_t)_{-i}\), which must equal \(\sigma\) when the traversed edge belongs to \(S\). This leaves just the unrestricted initial bit \(p_i\), giving two fibers. \(\square\)
+
+**Theorem 8 (fiber-support critical sparsity).** Suppose \(c'=T_Sc\) has no monochromatic full antipodal geodesic. Then, for every pair word \(w\),
+\[
+\mathcal P_c(w)\subseteq
+\bigcup_{\substack{2\le t\le2m-1\\ w_t=i}}
+\{p:p_{-i}=\sigma+(\eta_t)_{-i}\},\qquad
+|\mathcal P_c(w)|\le 2r_i(w),\tag{PL2}
+\]
+where \(r_i(w)\) is the number of internal occurrences of label \(i\). When both occurrences are internal, the right-hand union has only two fibers if pair \(i\) is isolated in the chord-interlacement graph of \(w\), and four otherwise.
+
+*Proof.* The established two-hit exchange and cyclic endpoint repair show that, under the stated badness hypothesis, every red full geodesic of \(c\) meets \(S\) in a single strictly internal edge. Apply Lemma 7 at that position to every root in \(X_c(w)\). For two internal occurrences \(s<t\), the two parity signatures coincide precisely when each other label appears an even number of times between \(s\) and \(t\). Since each label occurs twice in \(w\), this is equivalent to the absence of a chord interlacing label \(i\). Otherwise their signatures differ and the two two-fiber sets are disjoint. \(\square\)
+
+**Corollary 9 (fiber-spread preservation).** If some pair word \(w\) has red antipodal roots in more than \(2r_i(w)\) initial pair-parity fibers, *every* alternating-square switch in pair \(i\) preserves the existence of a monochromatic full geodesic. In particular, roots in all \(2^m\) fibers for one pair word guarantee preservation in every pair for \(m\ge3\), and for \(m=2\) whenever \(r_i(w)=1\).
+
+**Theorem 10 (multi-square fiber-support budget).** Let \(c^\star\) be formed by flipping a union of \(t\) antipodally paired alternating squares, each involving the two directions of one pair, with a legal final coloring. For any pair word \(w\),
+\[
+|\mathcal P_c(w)|>4t\quad\Longrightarrow\quad
+c^\star\text{ has a red full antipodal geodesic}.\tag{PL3}
+\]
+More precisely, there are at least \(|\mathcal P_c(w)|-4t\) initial pair-parity fibers in which *every* red full antipodal \(w\)-geodesic survives unchanged.
+
+*Proof.* In each switched square pair and for either of the two positions occupied by its direction-pair label in \(w\), Lemma 7 excludes every initial parity except two possibilities. Therefore each square pair can affect red \(w\)-walks in at most four initial pair-parity fibers. The union of \(t\) supports affects at most \(4t\) fibers. All red \(w\)-walks in remaining fibers traverse no switched edge, hence survive the union of flips. \(\square\)
+
+**Theorem 11 (nonlinear standard-lift and parity-static robustness).** Assume the paired-flat gates of \(c\) are independent of \(p\), but may be arbitrary nonlinear antipodally odd functions of \(q\). If \(c\) admits any red full antipodal geodesic, then the same pair word admits one in *every* initial parity fiber. Consequently:
+
+1. For \(m\ge3\), **every single legal antipodal paired-square switch preserves success**, without any affine assumption on the gates.
+2. For \(m\ge2\), any union of fewer than \(2^{m-2}\) legal paired-square switches preserves a red full antipodal geodesic.
+3. For \(m=2\), every single legal paired-square switch also preserves success.
+
+In particular these conclusions hold for every successful standard paired-flat lift \(c_{a_i}(x,y)=b_i(x)\), \(c_{b_i}(x,y)=1+b_i(x)\) of an antipodally odd coloring \(b\), regardless of the algebraic degree of its edge rules.
+
+*Proof.* With \(p\)-independent gates, each red pair-step updates \(q\) by a function of \(q\) alone. Therefore the \(q\)-return condition for any fixed pair word is independent of the initial parity \(p\). A successful root \(q\) works for all \(2^m\) initial parity fibers, proving \(\mathcal P_c(w)=\mathbb F_2^m\). For \(m\ge3\), \(2^m>4\ge2r_i(w)\), so Corollary 9 applies to any switch. If \(4t<2^m\), Theorem 10 supplies the multiple-switch assertion. Finally, for \(m=2\), a successful pair word must alternate its two labels: two consecutive occurrences of one label cancel as the same red involution and cannot yield an antipodal endpoint. In an alternating word each pair has precisely one strictly internal occurrence, hence \(r_i(w)=1\) for both \(i\), and \(2^m=4>2\); Corollary 9 applies. \(\square\)
+
+**Corollary 12 (improved affine and nested-core transfer).** Every parity-independent affine-slope paired-flat coloring with nonsingular slope matrix survives one paired-square switch already for \(m\ge2\). More generally, every parity-independent affine-slope paired-flat coloring admitting a valid nested-core peeling word survives one paired-square switch for \(m\ge3\), regardless of the rank or of the nonlinear parity-phase terms, because the established nested-core theorem supplies the *same* word and at least one antipodal red root in every starting parity fiber. For \(m=2\) the nonsingular core case gives the assertion.
+
+These results are dimension-uniform and permit nonlinear switched gates. The ordinary lift class is a strict subclass of unrestricted paired-flat colorings; iterated switches leave that class, and the theorem grants survival through a bounded number of switches from one successful parity-static seed. Unrestricted NORI1 still requires a forcing mechanism for arbitrary parity-dependent nonlinear gates. A hypothetical critical good coloring must instead concentrate all roots for every fixed word into at most four parity fibers, and at most two for words with one internal hit of the switched pair. The boundary-tournament simple-path obligation remains separate.
+
+
+### Parity-cylinder transport: arbitrary nonlinear gate rewrites on sparse slabs
+
+Let \(c,c^\star\) be two legal paired-flat colorings on \(Q_{2m}\) with the same direction-pair partition. For each gate \(i\), define its *exceptional exterior parity set*
+\[
+E_i=\{u\in\mathbb F_2^{[m]\setminus\{i\}}:\exists q,\ f_i^c(u,q)\ne f_i^{c^\star}(u,q)\}.
+\]
+The gates may differ arbitrarily as functions of \(q\) inside an exceptional parity slab, subject only to the legality and paired-flat axioms. Let \(E=(E_1,\ldots,E_m)\). For any pair word \(w=(w_1,\ldots,w_{2m})\) put \(\eta_t=\sum_{s<t}e_{w_s}\) and
+\[
+H_w(E)=
+\bigcup_{t=1}^{2m}
+\{p\in\mathbb F_2^m:
+(p+\eta_t)_{-w_t}\in E_{w_t}\}.\tag{PC1}
+\]
+
+**Theorem 13 (parity-cylinder avoidance).** Every red full antipodal \(w\)-geodesic of \(c\) whose initial parity \(p\notin H_w(E)\) remains a red full antipodal geodesic of \(c^\star\), with the same root and the same pair word. Moreover
+\[
+|H_w(E)|\le 4\sum_{i=1}^m |E_i|.\tag{PC2}
+\]
+Consequently,
+\[
+\boxed{|\mathcal P_c(w)|>4\sum_i|E_i|
+\implies c^\star\text{ has a red full antipodal geodesic}.}\tag{PC3}
+\]
+These assertions are unrestricted in the algebraic degrees of the original and modified Boolean gates.
+
+*Proof.* At step \(t\) of a red pair-word walk, the pair parity is \(p+\eta_t\). If \(p\notin H_w(E)\), the current exterior parity lies outside \(E_{w_t}\) for every step, so the two gate functions agree there at *all* states \(q\). Induction over the red pair-word walk gives identical successive vertices in the two colorings, and hence the same red geodesic. Each set in the union (PC1) contains \(2|E_{w_t}|\) initial parity vectors, because its \(w_t\)-th bit is unrestricted. Every pair label occurs twice, yielding (PC2). A successful \(p\in\mathcal P_c(w)\setminus H_w(E)\) establishes (PC3). \(\square\)
+
+**Corollary 14 (nonlinear slab robustness).** If \(c\) admits a red full antipodal geodesic with pair word \(w\) in every initial pair-parity fiber, then *any* legal paired-flat modification affecting at most \(s\) distinct exterior parity slabs, counted across pair labels, preserves a red geodesic when \(4s<2^m\). In particular, for \(m\ge3\), **one whole slab may be rewritten by an arbitrary nonlinear antipodally odd gate function**, without losing a monochromatic full geodesic. For parity-independent gates, a single successful red full geodesic supplies the required full fiber support by Theorem 11.
+
+Theorem 13 improves the earlier square-count budget when many square switches share exterior parity signatures. An exceptional slab contains up to \(2^{m-2}\) antipodally paired square-switch sites, yet its entire influence on a prescribed pair word is confined to four starting parity fibers. The geometry responsible is the projection of red pair steps to the parity cube; no independence assumption is imposed on the changed \(q\)-truth-table entries.
+
+**Finite illustration.** On \(Q_8\), generate self-dual, parity-independent red gate functions, one for each of four direction pairs. For the word \(w=(2,3,1,0,2,0,1,3)\), an instance has 32 red antipodal roots, occupying all 16 initial parity fibers. Complementing the entire gate-0 truth table on exterior parity \(p_{-0}=000\), while preserving legal self-duality, changes the full-red-root membership at precisely the four initial parity fibers \(\{10,11,14,15\}\). Twenty-four of the original 32 red roots remain, including every root in the other twelve parity fibers. This finite test checks the exceptional-fiber projection, while the theorem follows from the symbolic parity argument for all dimensions.
+
+**Limitation.** Arbitrary paired-flat colorings may have exceptional exterior parity sets covering most slabs relative to every successful parity-independent seed. Theorem 13 supplies a dimension-uniform nonlinear transfer from *fiber-spread* witnesses through sparse exterior-parity changes. Establishing such witness support at an arbitrary good/bad critical boundary is the unresolved hypothesis-production problem; the simple-path boundary-tournament conclusion remains independently open.
+
+
+### Four-root square-switch support and affine midpoint-rank stability
+
+Let \(c\) be a legal paired-flat coloring of \(Q_{2m}\) with direction pairs \(P_i=\{a_i,b_i\}\). Put \(p_i=x_{a_i}+x_{b_i}\) and \(t_i=x_{a_i}\), all in \(\mathbb F_2\). Write the pair colors as \(f_i(p_{-i},t_{-i})\) and \(1+f_i(p_{-i},t_{-i})\). The red pair-matching involution \(T_i\) flips \(p_i\) and changes \(t_i\) by \(1+f_i\). A red sweep using every pair once in order \(\pi\) induces a permutation \(F_\pi^p\) from the initial \(t\)-fiber at parity \(p\) to the terminal \(t\)-fiber at parity \(p+\mathbf1\). Define
+\[
+C_{p,\pi,\rho}(c)=\{t:F_\pi^p(t)=F_\rho^p(t+\mathbf1)\}.
+\tag{SS1}
+\]
+Every element of this set supplies a red full antipodal geodesic: the two half-sweeps meet and jointly use both directions in every pair.
+
+Let \(c'=T_Sc\) be a legal switch of an antipodal pair of alternating squares within pair \(i\). The switched gate values occur at two exterior assignments with common exterior parity \(u\) and complementary exterior fiber bits \(z,z+\mathbf1\). Let \(\alpha_{p,\pi}\) equal one when the exterior parity immediately before \(i\) is traversed in order \(\pi\) equals \(u\), and zero otherwise. This depends only on \(p,\pi,u\).
+
+**Theorem (four-root support and robust midpoint collisions).** Let
+\[
+A_{p,\pi}=\{t:F_\pi^p(t)\ne F_\pi^{\prime p}(t)\}.
+\]
+Then
+\[
+|A_{p,\pi}|=4\alpha_{p,\pi},\qquad
+|C_{p,\pi,\rho}(c')|\ge
+|C_{p,\pi,\rho}(c)|-4(\alpha_{p,\pi}+\alpha_{p,\rho}).
+\tag{SS2}
+\]
+In particular, a collision set of size greater than the subtraction budget supplies a full red antipodal geodesic in \(c'\).
+
+*Proof.* Every matching before pair \(i\) is unchanged. Their composition bijectively maps starting fiber bits to the state just before \(i\). If the exterior parity there differs from \(u\), no input is affected. If it equals \(u\), the changed inputs are the two prescribed exterior fiber-bit vectors, each with either value of \(t_i\): four states. At each changed state the other member of pair \(i\) becomes red, and the two outputs differ. All later red matchings are unchanged and compose to a bijection, so the half-sweep endpoints differ on four starting roots. A former collision persists whenever its first root is outside \(A_{p,\pi}\) and its antipodal second root is outside \(A_{p,\rho}\). The two excluded sets together contain at most \(4(\alpha_{p,\pi}+\alpha_{p,\rho})\) roots. \(\square\)
+
+**Corollary (affine collision-rank forcing).** Suppose for some \(p,\pi,\rho\) the two complete half-sweep endpoint maps are affine:
+\[
+F_\pi^p(t)=M_\pi t+b_\pi,\qquad
+F_\rho^p(t)=M_\rho t+b_\rho.
+\]
+Let \(r=\operatorname{rank}(M_\pi+M_\rho)\). Their collision set is empty or is an affine subspace with \(2^{m-r}\) elements, since its defining equation is
+\[
+(M_\pi+M_\rho)t=M_\rho\mathbf1+b_\pi+b_\rho.
+\tag{SS3}
+\]
+If the equation is consistent and
+\[
+2^{m-r}>4(\alpha_{p,\pi}+\alpha_{p,\rho}),
+\tag{SS4}
+\]
+the switched coloring \(c'\) contains a red full antipodal geodesic. The switched gate may be nonlinear, and the other initial parity fibers may contain nonlinear gates.
+
+**Corollary (adjacent interchange gives rank at most two).** Suppose the original gates \(f_i\) are affine in the fiber bits on each fixed pair-parity fiber; their slope matrices and affine offsets may depend arbitrarily on pair parity. If \(\pi,\rho\) differ by interchanging two consecutive pair labels, then
+\[
+\operatorname{rank}(M_\pi+M_\rho)\le2.
+\tag{SS5}
+\]
+Consequently, for \(m\ge6\), an antipodal midpoint collision between such orders in any parity fiber certifies preservation of a red full antipodal geodesic across **every one** paired-square switch. If only one order can read the switched parity slab, \(m\ge5\) suffices. If neither order can read that slab, one collision suffices in any dimension.
+
+*Proof.* The two affine sweeps have common initial and final segments. The exchanged two-step segments leave all fiber bits other than those of the exchanged pairs unchanged and finish in the same pair-parity fiber. Their difference therefore has image contained in a two-dimensional vector space. Left and right composition with the common invertible affine segments preserves the rank bound. A nonempty collision set has at least \(2^{m-2}\) roots by (SS3). This exceeds eight for \(m\ge6\) and exceeds four for \(m\ge5\), giving the claims by (SS2). \(\square\)
+
+For a hypothetical good-to-bad switch, every collision set in the good coloring must be covered by its two four-root exceptional sets. In an affine starting fiber, every consistent collision equation must therefore have rank large enough that \(2^{m-r}\le4(\alpha_{p,\pi}+\alpha_{p,\rho})\). The theorem combines paired-square criticality and witness multiplicity on the same coloring. It complements parity-cylinder transport, which controls the distribution of one full-path word across starting parity fibers; here multiplicity is measured within a fixed parity fiber for two independently ordered half-sweeps.
+
+This criterion is dimension-uniform and allows nonlinear gates after switching, but obtaining the necessary low-rank collision on an arbitrary critical good coloring remains open. It implies no boundary-tournament transfer without an additional reduction. A standalone checker sampled 200 legal paired-flat \(Q_6\) colorings, eight starting parity fibers, and all 15 order pairs, confirming four-root perturbation, affine collision cardinality, and rank at most two for adjacent swaps.
+
+
+## Endpoint repeated-pair-word scarcity in all even dimensions at least eight
+
+Let c be paired-flat on Q_(2m), with pairs P_i={2i,2i+1} and red matching involutions T_i. For a permutation pi, let X_c(pi pi) be the set of roots of red antipodal paths following the pair labels pi twice.
+
+**Theorem.** For every m>=4 there is a successful paired-flat legal coloring c and a pair P_0 such that X_c(pi pi) is empty whenever pi begins or ends with 0.
+
+**Seed (m=4).** Let E_i=255 xor (3<<(2i)), u=x&E_i, r=min(u,u xor E_i), and k=32i+rank_i(r), where rank_i orders the 32 canonical exterior masks increasingly starting from zero. Define f_i(x)=b_k xor [u!=r] and color directions 2i and 2i+1 respectively by f_i and 1 xor f_i. The low and high 64-bit words of b are f2f0669117119177 and 0fe04996433cc73c (hexadecimal). Since f_i ignores its pair bits and is complemented by global antipodality, this is a paired-flat legal coloring. The exhaustive standalone verifier nori_q8_endpoint_pairword_obstruction.cpp checks every edge identity and all 24 pair orders times 256 roots. All twelve words pi pi with pair 0 first or last have zero antipodal roots. The other twelve have 250 such roots. A red full geodesic has root 0 and original dimension order (1,2,4,7,0,3,6,5).
+
+**Extension lemma and proof.** Extend any successful paired-flat coloring c by one pair P_m, retaining all old gates and choosing f_m(x)=x_(2j) for one old pair j. This gate is independent of the new pair and is antipodally odd. Given a red full old geodesic, use one new-pair red edge, then the old geodesic, then the other new-pair red edge. The old path flips x_(2j), so the two new red moves use opposite dimensions and the full path is red and antipodal. Conversely a red repeated-pair geodesic pi pi in the enlarged coloring projects onto the old bits as a red geodesic pi_old pi_old: old gates ignore the new pair. If 0 is first or last in pi it is first or last in pi_old. Thus the absence of such roots is preserved. Iterate from the Q8 seed. QED.
+
+**Scope.** A positive lower bound for endpoint-prescribed X_c(pi pi) fails even among successful nonlinear paired-flat colorings and in arbitrarily high even dimension. In particular the critical square-boundary hypothesis |X_c(pi pi)|>8 cannot follow from success alone for these words. The obstruction does not exclude different pair words or additional critical-boundary hypotheses.
+
+### Midpoint bottleneck in the opposite exterior parity fibers
+
+Retain the setting of Theorem 8: a paired-flat legal coloring \(c\) on \(Q_{2m}\), a switched antipodal pair \(S\) of alternating squares in direction pair \(i\), common outside pair parity \(\sigma\), and a switched coloring \(c'=T_Sc\) having no monochromatic full geodesic. Put \(\omega=\sigma+\mathbf1\) in the \((m-1)\)-bit outside parity space. The set of starting pair-parity vectors \(p\) with \(p_{-i}=\omega\) consists of two fibers.
+
+**Theorem 15 (opposite-fiber midpoint restriction).** Every red full antipodal geodesic of \(c\) whose starting parity satisfies \(p_{-i}=\omega\) crosses \(S\) at step \(m\) or step \(m+1\). In its pair word, each label \(j\ne i\) occurs once before the switched step and once afterward. Consequently the word belongs to one of the two families
+\[
+w=\pi\,i\,v,\qquad |v|=m,\quad v\text{ a permutation of }[m]\setminus\{i\}\text{ together with }i,\tag{MB1}
+\]
+or
+\[
+w=u\,i\,\rho,\qquad |u|=m,\quad u\text{ a permutation of }[m]\setminus\{i\}\text{ together with }i,\tag{MB2}
+\]
+where \(\pi,\rho\) permute the outside labels, and the displayed central \(i\) is respectively at position \(m\) or \(m+1\). The occurrence of \(i\) in \(u\) or \(v\) is the other occurrence. In particular, no red full geodesic rooted in either opposite exterior parity fiber can have a pair word with neither central position occupied by \(i\).
+
+*Proof.* By the strict critical-boundary theorem, every red full geodesic must hit \(S\) once and internally. Its projection to the pair-parity cube is a closed walk of length \(2m\) using every label twice. The starting outside parity \(\omega\) differs from the outside parity \(\sigma\) of \(S\) in all \(m-1\) positions. A visit to \(S\) at step \(t\) therefore requires at least \(m-1\) outside-label steps before it, and at least \(m-1\) outside-label steps after it to restore the original outside parity. Thus
+\[
+t-1\ge m-1,\qquad 2m-t\ge m-1,
+\]
+so \(t\in\{m,m+1\}\). Each of the \(m-1\) outside labels must occur an odd number of times on each side of the hit; because it occurs twice in the full word, it occurs once on each side. The remaining step besides the hit and the \(2(m-1)\) outside steps is the other occurrence of \(i\), lying after the hit when \(t=m\) and before it when \(t=m+1\). This gives (MB1) and (MB2). \(\square\)
+
+**Corollary 16 (distance-dependent temporal sector).** More generally, if a red critical geodesic starts in a pair-parity fiber at outside Hamming distance \(d\) from \(\sigma\), then its unique internal switched hit occurs at a time \(t\) satisfying
+\[
+d+1\le t\le2m-d.\tag{MB3}
+\]
+This temporal restriction is independent of the within-fiber bits, nonlinear gate values and chosen path order.
+
+These are unrestricted necessary conditions on a hypothetical paired-flat square-critical boundary. When a separate theorem supplies red geodesics rooted in the opposite exterior parity fibers, Theorem 15 constrains those geodesics to two explicit midpoint-sweep families. The existence of such rooted geodesics in arbitrary dimensions, or a contradiction among their shared gate values, remains open. Neither the midpoint restriction nor the earlier fiber-cylinder transfer asserts a new universal forcing theorem.
+
+
+**Corollary (bounded-block affine exchange and switch stability).** Under the affine-fiber hypotheses above, suppose pair orders \(\pi,\rho\) have a common prefix and suffix and differ only in the order of the same \(k\) consecutive pair labels. Then
+\[
+\operatorname{rank}(M_\pi+M_\rho)\le k.
+\tag{SS6}
+\]
+If \(C_{p,\pi,\rho}(c)\ne\varnothing\) and \(m-k\ge4\), every one-square switch of \(c\) preserves a red full antipodal geodesic. If at most one of the orders reads the switched exterior parity slab, \(m-k\ge3\) suffices.
+
+*Proof.* The two middle sweeps change only the \(k\) fiber bits in their common set of pair labels. The endpoint difference is supported on those \(k\) bits. Their common invertible affine prefix and suffix preserve the difference rank, proving (SS6). Any nonempty affine collision set has at least \(2^{m-k}\) elements. This exceeds eight if \(m-k\ge4\) and exceeds four if \(m-k\ge3\); the result follows from (SS2). \(\square\)
+
+**Sharper adjacent-order case.** If the two exchanged adjacent labels include pair \(i\), the pair containing the switched square, the orders reach \(i\) with opposite values of the other exchanged pair parity. At most one order can read the modified exterior parity assignment. Thus \(\alpha_{p,\pi}+\alpha_{p,\rho}\le1\), and an affine-fiber adjacent-order collision survives any such switch whenever \(m\ge5\). If the two exchanged labels exclude \(i\), the orders have the same exterior parity before \(i\), so either neither or both are affected.
+
+The local-exchange hypothesis cannot be deduced from the existence of a red full geodesic alone. The product of \(r\) paired-flat \(Q_4\) colorings has midpoint collisions, but every collision must reverse the order of both pair labels in each factor. Hence no two orders differing only in a proper consecutive middle block can collide. This all-dimensional obstruction is proved in note_nori_global_midpoint_exchange_product_barrier_20261018_r11785. Deriving local-exchange witnesses therefore requires additional interaction hypotheses.
+
+
+### One-way gate decoupling and unrestricted nonlinear gate replacement
+
+Let \(c\) be any paired-flat legal coloring on \(Q_{2m}\) with \(m\ge2\), and let \(T_i\) be the red matching associated to pair \(i\). Write the gate selector \(f_j(p,q)\) for pair \(j\), independent of its own bits \(p_j,q_j\) and satisfying \(f_j(p,q+\mathbf1)=1+f_j(p,q)\). Say pair \(i\) is *unread by the other gates* when, for every \(j\ne i\), the selector \(f_j\) is independent of both \(p_i\) and \(q_i\). This is a one-way condition: \(f_i\) may depend arbitrarily on all other pair bits.
+
+**Theorem 17 (nonlinear unread-pair extension).** Suppose pair \(i\) is unread by the other gates. The following are equivalent:
+
+(a) \(c\) has a red full antipodal geodesic.
+
+(b) On the \(2m-2\) original directions outside pair \(i\), the inherited red pair-matching rules admit a red full antipodal geodesic, with the bits of pair \(i\) held fixed.
+
+(c) \(c\) has a red full antipodal geodesic whose pair word begins and ends with \(i\).
+
+Moreover (b) is independent of the fixed values of the two bits belonging to pair \(i\).
+
+*Proof.* In (a), delete the two steps belonging to pair \(i\) from a red full antipodal geodesic. The remaining \(2m-2\) original directions each occur once. The selectors of all remaining pair labels are independent of the bits of pair \(i\), so their red transitions depend only on the outside state. The projected trajectory is therefore a red antipodal full geodesic on the outside pairs, proving (b).
+
+For (b), choose an outside red geodesic from exterior state \(y\) to its complement \(\bar y\), with pair word \(v\), and choose any of the four possible states \(z\) of pair \(i\). In the full coloring, let \(Z=(z,y)\), and let \(X=T_i(Z)\). The first red \(i\)-step from \(X\) reaches \(Z\) because \(T_i\) is an involution. Follow the red outside geodesic to \(Z'=(z,\bar y)\); it remains red because outside gates do not read pair \(i\). Finally take the red \(i\)-step from \(Z'\).
+
+At \(Z\) and \(Z'\), the outside pair parities agree and every outside first-member bit is complemented. Antipodal oddness of the gate \(f_i\) therefore exchanges the red choice between directions \(a_i\) and \(b_i\). The first and last red \(i\)-steps traverse the two different original directions of pair \(i\). Along the middle segment every outside original direction occurs once. Thus the concatenated red path has length \(2m\) and ends at the antipode of \(X\), proving (c). Condition (c) implies (a). The outside rules are independent of the fixed state of pair \(i\), proving the final assertion. \(\square\)
+
+**Theorem 18 (arbitrary full-gate nonlinear replacement).** Suppose \(c\) is successful and pair \(i\) is unread by the other gates. Replace *the entire selector function* \(f_i(p_{-i},q_{-i})\) by any other selector \(g_i(p_{-i},q_{-i})\) obeying the paired-flat legality and antipodal oddness conditions; leave every gate \(j\ne i\) unchanged. The resulting coloring \(c^\star\) has a red full antipodal geodesic, with pair \(i\) occupying both endpoint positions. Thus any legal antipodally paired square switch in pair \(i\), and any sequence of such switches, preserves success in this class.
+
+*Proof.* By Theorem 17, the success of \(c\) supplies a red outside full geodesic using only the gates \(f_j\), \(j\ne i\). Those gates are unchanged and do not read pair \(i\). The construction (b) to (c) of Theorem 17 applies with the new legal self-dual selector \(g_i\); its two cap steps again traverse opposite original directions. Hence \(c^\star\) is successful. The number and support of changes to gate \(i\) are unrestricted. \(\square\)
+
+**Corollary 19 (dependency condition on a critical good side).** If \(c\) is successful and switching one antipodally paired alternating square in pair \(i\) produces a bad coloring, then *some other pair-gate must depend on either \(p_i\) or \(q_i\)*. Thus a hypothetical nonlinear critical boundary requires outward sensitivity from the switched pair to the remaining red matching rules. This restriction and the parity-fiber support restrictions of Theorem 8 hold on the same hypothetical coloring.
+
+Theorem 18 is a dimension-uniform nonlinear transfer mechanism with an explicit shared-coloring hypothesis; it allows arbitrary Boolean truth-table changes across **all** exterior parity slabs of one gate. It is independent of affine slopes and of the exceptional-slab budget. It does not prove that a general critical coloring possesses an unread pair. At the unrestricted boundary, proving the necessary dependence and the severe fiber localization incompatible is a separate open obligation.
+
+
+### Sink deletion as a counterexample-preserving reduction
+
+Retain Theorem 17's hypothesis: pair \(i\) is unread by every gate \(j\ne i\).
+
+**Theorem 20 (legal sink reduction and root-count factorization).** Removing pair \(i\) from \(c\) defines a legal paired-flat coloring \(c^{-i}\) on \(Q_{2(m-1)}\), whose red pair matchings are the restrictions of the \(T_j\), \(j\ne i\). For every outside pair word \(v\), containing each remaining pair twice,
+\[
+\boxed{|X_c(i\,v\,i)|=4\,|X_{c^{-i}}(v)|},\tag{SR1}
+\]
+and
+\[
+\boxed{\mathcal P_c(i\,v\,i)=\mathcal P_{c^{-i}}(v)\times\mathbb F_2},\tag{SR2}
+\]
+where the final bit corresponds to the deleted pair parity. Consequently, \(c\) has a monochromatic full antipodal geodesic if and only if \(c^{-i}\) does.
+
+*Proof.* For \(j\ne i\), the selector \(f_j\) is independent of both bits of pair \(i\), so its restriction to the remaining pair bits is well-defined. The original self-duality relation \(f_j(p,q+\mathbf1)=1+f_j(p,q)\) becomes the same relation under complementation of the remaining \(m-1\) first-member bits, since \(f_j\) ignores \(q_i\). The own-pair independence of \(f_j\) also persists. Thus the restricted rules define a legal paired-flat coloring.
+
+Fix an outside starting vertex \(y\) and any one of the four values \(z\) of the removed pair. For the full word \(i\,v\,i\), its first red step maps \(X=T_i(z,y)\) to \((z,y)\). The exterior \(v\)-walk then follows precisely the red \(v\)-walk of \(c^{-i}\), independently of \(z\). It reaches the complemented exterior vertex precisely when \(y\in X_{c^{-i}}(v)\). In that case the final red \(i\)-step uses the opposite original direction from the first, by the gate's antipodal oddness; the full endpoint is the antipode of \(X\). Conversely, if the full word reaches the antipode, its outside projection reaches the outside antipode. The map \((z,y)\mapsto X=T_i(z,y)\) is bijective and preserves the outside starting state; it gives four full starting roots for each outside successful root \(y\), proving (SR1). The four roots attain both values of the initial pair parity \(p_i\), proving (SR2).
+
+The equivalence of success follows in one direction from this construction and in the other by deleting the two \(i\)-steps of any red full antipodal geodesic, as in Theorem 17. Since any monochromatic full geodesic of a legal coloring can be globally complemented to a red one, the equivalence holds for monochromatic success. \(\square\)
+
+**Corollary 21 (dependency-core necessity).** Define a directed dependency graph on pair labels by placing \(i\to j\) whenever \(f_j\) depends on either \(p_i\) or \(q_i\). A paired-flat counterexample of least possible pair count has no vertex of outdegree zero. More generally, repeated deletion of outdegree-zero labels preserves the existence or absence of a monochromatic full antipodal geodesic, and produces a reduced legal paired-flat instance whose dependency graph has minimum outdegree at least one. Deleting such pairs also preserves nonlinear within-fiber dependencies among all remaining gates.
+
+*Proof.* An outdegree-zero label is unread by every other gate. Apply Theorem 20 to delete it, retaining a legal paired-flat instance with the same success status. Repeating terminates in the stated dependency core. A minimal counterexample cannot admit a deletion because it would produce a smaller counterexample. \(\square\)
+
+A critical square switch in pair \(i\) leaves all other gate functions unchanged, so when \(i\) is a dependency sink the reduction also proves preservation under *any entire-gate rewrite* of \(f_i\), as in Theorem 18. The sink condition itself need not hold for an arbitrary critical coloring. This result is a counterexample-preserving dimension reduction, rather than a proof that the remaining cyclic dependency core is always successful.
+
+
+## Simultaneous scarcity for all repeated pair words in Q8
+
+For any permutation pi of four pair labels, let X_c(pi pi) be the red antipodal roots for the repeated pair word. For any label i, let r_i(pi pi) count the occurrences of i in strictly internal positions.
+
+**Proposition (exhaustively verified).** There exists a successful paired-flat legal coloring c of Q8 with |X_c(pi pi)|<=8 for every pi. Hence |X_c(pi pi)|<=8r_i(pi pi) for every pi and every switched pair label i. Thus no single repeated pair word meets the known sufficient root-multiplicity criterion for a critical square switch.
+
+**Proof certificate.** In the preceding canonical Q8 gate indexing, let low 64 bits b2f0741136139912 and high 64 bits 07ec0d14623c8779 (hexadecimal). The verifier nori_q8_allpair_root_scarcity.cpp checks undirectedness, antipodal oddness, and all 24 pair permutations at all 256 roots. Every root count is between 5 and 8; their sum is 176. A red antipodal geodesic has root zero and dimension order (0,2,5,6,1,4,3,7). This finite exhaustive check proves the statement.
+
+**Scope.** Mere success fails to produce a repeated-word forcing witness, even when all possible switched pairs are considered jointly. The proposition does not impose the additional strict internal-hit conditions of a hypothetical critical good/bad boundary, and it does not address multiple pair words used together.
+
+### Global low-rank midpoint exchange in a cyclic reader system
+
+For \(m\ge3\), consider the legal paired-flat coloring \(c^{\mathrm{cyc}}\) with gates
+\[
+f_i(p,t)=t_{i+1}\quad(i\pmod m).
+\]
+Antipodal complementation changes each gate value, and each gate ignores both bits of its own pair. Its red pair matching updates \(t_i\mapsto t_i+1+t_{i+1}\), with all other fiber bits fixed. This gives a strongly connected directed cycle of dependencies.
+
+**Theorem (full-width exchange with rank two).** For
+\[
+\pi=(0,1,\ldots,m-1),\qquad \rho=(1,\ldots,m-1,0),
+\]
+in every initial pair-parity fiber \(p\),
+\[
+C_{p,\pi,\rho}(c^{\mathrm{cyc}})
+=\{t:t_1=1,\ t_2=0\}.
+\tag{CY1}
+\]
+Consequently this collision set has \(2^{m-2}\) roots, and
+\[
+\operatorname{rank}(M_\pi+M_\rho)=2.
+\tag{CY2}
+\]
+For \(m\ge6\), any single legal paired-square switch of \(c^{\mathrm{cyc}}\) retains at least \(2^{m-2}-8>0\) collisions in each initial parity fiber for these two orders.
+
+*Proof.* In order \(\pi\), pair \(i\) is read before pair \(i+1\) for \(0\le i\le m-2\), whereas pair \(m-1\) reads the already updated bit \(t_0\). Thus the output \(y=F_\pi^p(t)\) is
+\[
+y_i=t_i+1+t_{i+1}\quad(0\le i\le m-2),
+\qquad y_{m-1}=t_{m-1}+t_0+t_1.
+\]
+For order \(\rho\), the output \(z=F_\rho^p(s)\) is
+\[
+z_i=s_i+1+s_{i+1}\quad(1\le i\le m-2),
+\qquad z_{m-1}=s_{m-1}+1+s_0,
+\qquad z_0=s_0+s_1+s_2.
+\]
+Set \(s=t+\mathbf1\). Then the components \(1,\ldots,m-2\) agree automatically. Component \(m-1\) agrees precisely when \(t_1=1\), and component \(0\) agrees precisely when \(t_2=0\). This proves (CY1). The two nontrivial independent linear conditions give (CY2), and the switch-survival conclusion follows from (SS2). \(\square\)
+
+An important limitation accompanies this construction. No midpoint collision in \(c^{\mathrm{cyc}}\) comes from two orders with a common prefix and suffix that merely reorder a proper middle set of pair labels. The proof uses a label in that set whose unique reader lies outside it; this forces a surviving bit discrepancy. It is recorded, along with the product-block obstruction, in note_nori_global_midpoint_exchange_product_barrier_20261018_r11785 v2.
+
+This example exhibits a long exchange whose endpoint-map difference nevertheless has bounded rank. Thus controlling *rank* can give switch stability beyond the bounded-exchange-width regime. Producing such a low-rank compatible pair of sweeps in arbitrary nonlinear critical colorings remains the missing forcing step.
+
+
+### Terminal one- and two-pair seams force square-switch preservation
+
+Let \(c\) be a legal paired-flat coloring of \(Q_{2m}\), with direction pairs \(P_i=\{a_i,b_i\}\) and gate rules \(c_{a_i}=f_i,\ c_{b_i}=1+f_i\). Each \(f_i\) ignores its own pair and satisfies \(f_i(\bar x)=1+f_i(x)\). Put an arc \(j\to i\) in the pair-dependency digraph when \(f_i\) reads either bit of pair \(P_j\). A *terminal component* is a strongly connected component with no outgoing arcs. If \(B\) is such a component, put \(R=[m]\setminus B\). Every \(R\)-gate ignores all bits in \(B\).
+
+**Lemma (flexible terminal seam).** Suppose the \(R\)-rules have a red full antipodal geodesic \(H\), with \(R\)-root \(y\). One can complete \(H\) by inserting all \(B\)-directions before and after it, keeping its \(B\)-state \(u\) constant during \(H\), for all four \(u\in\mathbb F_2^2\) if \(|B|=1\), and for at least twelve \(u\in\mathbb F_2^4\) if \(|B|=2\). Here the \(B\)-rules may depend arbitrarily and nonlinearly on the \(R\)-bits.
+
+*Proof.* The \(R\)-edge colors are independent of \(B\), so the middle segment stays red. Let \(A\) be the ordinary paired-flat \(B\)-edge coloring in the exterior state \(y\). At \(\bar y\), antipodal oddness gives \(A^+_d(v)=1+A_d(\bar v)\). In a single pair, use at \(y\) the unique red member before \(H\) and the other member at \(\bar y\) after \(H\). The gate ignores both bits of its pair, so every prescribed middle state \(u\) is possible.
+
+For two pairs, label their dimensions \(0,1,2,3\). Write \(A_0=a(v_2,v_3), A_1=1+a(v_2,v_3), A_2=b(v_0,v_1), A_3=1+b(v_0,v_1)\), for arbitrary two-bit Boolean tables \(a,b\). For a permutation \(\pi\in S_4\), cut \(0\le h\le4\), and frozen state \(u\), take initial \(B\)-root \(u+\sum_{j\le h}e_{\pi_j}\); use the first \(h\) steps with rules \(A\), traverse \(H\), and take the remaining steps with \(A^+\). The finite four-direction seam calculation checks all \(16^2\) gate-table pairs, all sixteen middle states and all \(24\cdot5\) order/cut possibilities. For 240 table pairs all sixteen middle states work; for the other sixteen, twelve work. More intrinsically, failure occurs only for mutual unary readers \(a(v)=v_r+\alpha\), \(b(v)=v_s+\beta\), with \(r\in\{2,3\}\), \(s\in\{0,1\}\), and then only at the four \(u\) satisfying \(a(u)=\mathbf1_{\{s=0\}}\), \(b(u)=\mathbf1_{\{r=2\}}\). This proves the bound. \(\square\)
+
+**Theorem (small terminal component preserves every single square switch).** Suppose \(c\) has a red full antipodal geodesic and its pair-dependency digraph has a terminal component \(B\) of one or two pair labels. For *every* antipodal pair \(S\) of alternating squares supported in one direction pair, the switched legal coloring \(T_Sc\) has a red full antipodal geodesic.
+
+*Proof.* Delete the \(B\)-steps of an existing red full antipodal geodesic of \(c\). The other edge colors ignore \(B\), hence the remaining full \(R\)-geodesic \(H\) is red.
+
+If the switched pair lies in \(B\), the switch alters only one \(B\)-gate; the \(R\)-rules and \(H\) remain unchanged. The switched coloring still obeys the paired-flat and oddness laws, so the flexible terminal-seam lemma applied to its new \(B\)-rules completes \(H\) to a red full geodesic.
+
+Suppose the switched pair lies in \(R\). The switched set \(S\) projects onto just two complementary \(B\)-states \(u_S,\bar u_S\), corresponding to its square and antipodal square. By the lemma, choose a successful middle state \(u\) outside these two states: four choices are successful if \(|B|=1\), and at least twelve if \(|B|=2\). During the embedded middle geodesic \(H\), the state in \(B\) is \(u\), so no \(R\)-edge of \(H\) lies in \(S\). The other path edges move in \(B\)-directions and cannot lie in \(S\). The resulting red full geodesic avoids \(S\) and remains red after the switch. \(\square\)
+
+**Simultaneous avoidance corollary.** If \(|B|=2\), the same construction avoids any five prescribed antipodal square-pair orbits supported in \(R\), simultaneously: at most ten of the sixteen frozen \(B\)-states are excluded, while at least twelve support seam completion. If \(|B|=1\), it avoids one prescribed such orbit.
+
+**Critical-boundary corollary.** In any hypothetical neighboring good/bad paired-flat colorings differing by a single legal antipodal alternating-square switch, *every terminal strongly connected component of the pair-dependency digraph on the good side contains at least three pair labels*. This necessary condition coexists with the established balanced good/bad normalization and strict one-internal-hit witness restriction, and holds for nonlinear gates of unrestricted dependence elsewhere.
+
+**Small-component forcing corollary.** If every strongly connected pair-dependency component contains at most two pair labels, then the coloring has a red full antipodal geodesic. To prove this, delete a terminal component \(B\). Its removal leaves a legal paired-flat coloring on the remaining pairs, since those rules ignore \(B\) and retain the antipodal identity on their remaining inputs. Apply induction to obtain a red \(R\)-geodesic and then the flexible terminal-seam lemma. This yields arbitrarily high-dimensional nonlinear forcing. The more useful critical-boundary theorem needs only one small terminal component; it imposes no bound on the other components.
+
+**Remaining problem.** A critical good coloring may have terminal dependency components of three or more pairs. The finite six-dimensional square-avoidance theorem concerns gates odd under the six-dimensional antipode, whereas the three-pair seam at a frozen exterior state has arbitrary Boolean gate tables. Transferring six-dimensional avoidance through these two exterior layers is a separate unresolved requirement.
+
+
+**Corollary (whole-gate replacement of a small terminal block).** Under the preceding theorem, replace *all* gates with labels in \(B\) by arbitrary new legal paired-flat gates satisfying global antipodal oddness, while leaving every gate outside \(B\) unchanged. The resulting coloring has a red full antipodal geodesic. More generally, alongside these whole-gate replacements one may switch one antipodal square-pair orbit outside \(B\) when \(|B|=1\), or any set of at most five such orbits when \(|B|=2\), and retain a red full geodesic.
+
+*Proof.* The old red geodesic projects to a red full path \(H\) on the outside labels, and the outside gates are unaffected by the whole-gate replacement. Apply the flexible terminal-seam lemma to the *new* \(B\)-rules. When outside square orbits are also switched, choose a successful frozen \(B\)-state outside the at most two forbidden projections for each orbit. The middle segment then avoids every changed outside edge, while both cap segments move only in \(B\)-directions and use the new red gates. The bounds four and twelve on successful frozen states prove both assertions. \(\square\)
+
+This extends the earlier single unread-pair arbitrary-gate replacement theorem to *two mutually dependent pair gates*, with nonlinear dependence on the remaining pairs. The terminal-block hypothesis is imposed only on the unchanged outside rules; the replacement gates may introduce new incoming dependencies and need not preserve the old condensation digraph.
+
+
+### Three-pair terminal seams: nonlinear completion, exclusion, and dependency-core reduction
+
+Write \(P_i=\{a_i,b_i\}\), \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\), over \(\mathbb F_2\). A legal paired-flat coloring has red selector \(f_i(p_{-i},q_{-i})\), with \(f_i(p,q+\mathbf1)=1+f_i(p,q)\). A set \(S\) of pair labels is *outgoing-closed* when every gate labeled outside \(S\) ignores every bit belonging to \(S\). Deleting an outgoing-closed set produces a legal paired-flat coloring \(c^{-S}\), since the remaining gates inherit own-pair independence and the antipodal identity.
+
+**Finite three-pair seam lemma.** Fix three internal pair labels \(0,1,2\), and two exterior states \(y,\bar y\) connected by a red full geodesic using all exterior directions once. At \(y\), the three internal selectors \(h_i(p_{-i},q_{-i})\) are arbitrary Boolean functions of four bits. At \(\bar y\), legal antipodal oddness forces
+\[
+h_i^{+}(p_{-i},q_{-i})=1+h_i(p_{-i},q_{-i}+\mathbf1).
+\tag{TS1}
+\]
+Use the symbol \(E\) to denote the exterior red geodesic, which leaves the internal state fixed. Let a *completion word* contain each internal label twice and \(E\) once, with red matching steps at the current exterior stage.
+
+(a) For every triple of the \(2^{16}\)-choice internal gate tables and every prescribed initial internal parity \(p\in\mathbb F_2^3\), some completion word and some initial \(q\in\mathbb F_2^3\) give the internal antipode.
+
+(b) For any two antipodal pairs of frozen internal vertices, there are a completion word and a starting internal vertex such that the completed red path reaches the internal antipode and the frozen internal vertex at the \(E\)-step avoids both forbidden antipodal pairs. The starting parity may depend on the forbidden pairs.
+
+*Finite proof.* Write the six original internal bits in the order \(a_0,b_0,a_1,b_1,a_2,b_2\), and write the pre-\(E\) gate bit of label \(i\) as \(z_{i,4P+Q}\), where \(P,Q\in\mathbb F_2^2\) encode the parity and first-member bits of the other two labels in increasing order. There are 48 independent Boolean variables. For a proposed original-direction path, with \(s=0\) before \(E\) and \(s=1\) after \(E\), traversal of member \(\epsilon\in\{0,1\}\) in pair \(i\) requires the gate equation
+\[
+z_{i,\,4P+(Q+s\mathbf1)}=\epsilon+s.\tag{TS2}
+\]
+Enumerate the 630 words in the multiset \(\{0,0,1,1,2,2,E\}\), the starting internal vertices, and the two possible assignments of the first/second member order in each pair. If any candidate path demands contradictory values of one gate variable, discard it. Otherwise form the disjunctive clause saying at least one of its demanded values fails. The conjunction of all clauses is satisfiable precisely when some triple of gate tables blocks every admissible completion.
+
+For (a), fix initial parity \(000\). The 630 words, eight initial \(q\)-states and eight member-order choices give 13,440 distinct consistent blocking clauses of lengths five and six. A complete Boolean DPLL refutation visits 2,799 recursion nodes and returns UNSAT. Translation of the original six internal bits takes any prescribed parity to \(000\) and preserves (TS1), so (a) follows.
+
+For (b), translate the first forbidden antipodal middle-state pair to \(\{0,63\}\), and write the second as \(\{v,63+v\}\) with \(1\le v\le31\), using six-bit XOR for addition. For each of the 31 possibilities, enumerate all 64 starting internal vertices and retain only paths whose frozen middle state avoids these four forbidden vertices. The 31 resulting blocking CNFs are UNSAT. A direct complete DPLL refutation visits between 183 and 263 recursion nodes in each case. The clause generator and DPLL checker use integer bit operations with no SAT-library dependency. The independent earlier parity-gate and original-bit generators agree on all 13,440 clauses of (a), and the original-bit and parity-gate avoidance generators agree on sampled normalized cases. These finite, exhaustively certified lemmas impose no affine condition on the gates. \(\square\)
+
+**Theorem (three-pair outgoing-closed deletion).** Let \(c\) be an arbitrary legal paired-flat coloring of \(Q_{2m}\). If \(S\subseteq[m]\) is outgoing-closed with \(|S|=3\), then
+\[
+c\text{ has a red full antipodal geodesic}
+\quad\Longleftrightarrow\quad
+c^{-S}\text{ has one}.\tag{TS3}
+\]
+This equivalence holds separately in every prescribed starting pair-parity fiber.
+
+*Proof.* For the forward implication, project a red full geodesic onto the directions outside \(S\). Their gate functions ignore all internal bits, so projection retains the colors, uses every remaining original direction once, and reaches the outside antipode. It also preserves the starting outside pair parity. Conversely, let \(E\) be any exterior red full geodesic from \(y\) to \(\bar y\), rooted in any prescribed exterior parity fiber. It remains red regardless of the internal state because all exterior gates ignore \(S\). Freeze the internal state during \(E\); the selectors before and after \(E\) satisfy (TS1). Apply finite lemma (a) for any prescribed internal starting parity. The resulting full path is red, uses each of the six internal original directions once, and uses each exterior original direction once in \(E\). It therefore connects antipodes and proves the fiberwise assertion. \(\square\)
+
+**Theorem (two-orbit nonlinear square-switch stability).** Under the hypotheses of (TS3), suppose \(c\) is successful. Replace *all three internal gates* in \(S\) by arbitrary other legal paired-flat gates, retaining the exterior gates. In addition, switch at most two antipodally paired alternating-square orbits, each supported in a direction pair outside \(S\). The resulting legal coloring still has a red full antipodal geodesic.
+
+*Proof.* Project an original red full geodesic to an exterior red full geodesic \(E\). Each switched outside-square orbit has its two constituent squares at an antipodal pair of fixed internal vertices. By finite lemma (b), choose a completion of \(E\) under the *new* internal gates whose internal middle state avoids these at most two antipodal pairs. Throughout the exterior segment, the internal state is frozen at that middle vertex, so none of its edges belongs to any switched outside-square orbit; all exterior edges remain red. The two red internal cap segments traverse only directions in \(S\), and therefore cannot meet the switched outside edges. Their selectors are those of the new legal gates and obey (TS1). The completed geodesic remains red. \(\square\)
+
+**Corollary (dependency-core obstruction).** For the dependency digraph with an arc \(i\to j\) when gate \(j\) reads some bit of pair \(i\):
+
+1. If all strongly connected components have at most three vertices, every legal paired-flat coloring is successful, and it has a red full antipodal geodesic in every starting pair-parity fiber. Delete sink components of sizes one, two, and three successively, then reinsert them using the corresponding fiberwise seam completion lemmas.
+2. In any good-to-bad critical boundary differing by one legal antipodally paired square switch, *every terminal strongly connected component of the good-side dependency digraph has at least four vertices.* Indeed, if a terminal component has size at most three, the archived one- and two-pair terminal-seam theorems, or the three-pair theorem above, preserve red success across the switch whether it lies inside or outside the terminal component.
+3. If the switched label belongs to any outgoing-closed subset of at most three pair labels, the switch cannot destroy success. Thus a hypothetical critical switched label has a forward dependency-reachability set containing at least four labels.
+
+These results apply to arbitrary nonlinear within-pair gate truth tables. They produce a dimension-uniform *dependency-structure restriction*, not unrestricted NORI1 closure. The surviving hypothetical counterexamples have large terminal feedback components. The separate boundary-tournament simple-path conclusion remains open.
+
+
+### Unrestricted square-safe antipodal permutation rank theorem
+
+Fix any legal paired-flat coloring of \(Q_{2m}\). In a prescribed starting pair-parity fiber \(p\), every red half-sweep pair order \(\pi\) induces a permutation \(F_\pi^p\) of the \(N=2^m\) fiber states. Let \(P_\pi\) be its permutation matrix, \(J\) the complement permutation on fiber states, and
+\[
+B(A,D)=\operatorname{tr}(A^{\mathsf T}DJ).
+\tag{AR1}
+\]
+The quantity \(B(P_\pi,P_\rho)\) counts roots whose red \(\pi\)-sweep meets the red \(\rho\)-sweep from the antipodal root. Each collision produces a red full antipodal geodesic.
+
+**Theorem (unrestricted rank forcing).** If a nonempty family \(\mathcal H\) of pair orders has no such collisions, then
+\[
+\dim_{\mathbb R}\operatorname{span}
+\{P_\pi-P_{\pi_0}:\pi\in\mathcal H\}
+\le\frac{(N-1)(N-2)}2.
+\tag{AR2}
+\]
+*Proof.* Write \(U=\mathbf1\mathbf1^{\mathsf T}/N\) and \(Q_\pi=P_\pi-U\). On the space of doubly centered matrices, \(B\) has positive index \((N-1)(N/2-1)\) and negative index \((N-1)N/2\): on the column zero-sum space, \(J\) has positive and negative eigenspace dimensions \(N/2-1,N/2\), and the row zero-sum space has dimension \(N-1\). Since \(B(P_\pi,U)=B(U,P_\rho)=B(U,U)=1\), absence of collisions implies \(B(Q_\pi,Q_\rho)=-1\) for all orders. Fix \(Q_0\), whose squared \(B\)-norm is \(-1\). All differences \(Q_\pi-Q_0\) lie in the \(B\)-orthogonal complement of \(Q_0\) and are mutually \(B\)-isotropic. Their dimension is therefore bounded by the positive index, giving (AR2). \(\square\)
+
+**Critical-square corollary.** Let a paired-square switch \(S\), supported in pair \(i\) at exterior parity \(u\), transform a successful coloring into a bad one. Let \(\mathcal H(p,S)\) be the pair orders for which the exterior parity immediately before \(i\) differs from \(u\). Their complete endpoint maps are unaffected by switching \(S\). Therefore (AR2) holds for the original coloring restricted to \(\mathcal H(p,S)\), for every \(p\). If the forbidden predecessor subset has size \(k\), precisely \(k!(m-1-k)!\) orders are excluded; hence
+\[
+|\mathcal H(p,S)|\ge (m-1)(m-1)!.
+\tag{AR3}
+\]
+For \(m\ge8\), affine independence of these square-safe sweep maps forces survival of a red full geodesic, because the family is larger than the rank ceiling plus one. No affine or bounded-dependency hypothesis is imposed on the coloring itself.
+
+**Bidirectional support law.** Because each red matching is an involution,
+\[
+F_{\operatorname{rev}\pi}^{p+\mathbf1}
+=(F_\pi^p)^{-1}.
+\tag{AR4}
+\]
+Reversal preserves square safety when starting parity changes from \(p\) to \(p+\mathbf1\). Accordingly, at any hypothetical critical square, the union of all square-safe permutation graphs has no complementary pair of sources sharing one endpoint, and no complementary pair of endpoints sharing one source. Every vertex in this bipartite incidence graph has degree at most \(N/2\).
+
+The theorem gives a dimension-uniform sufficient forcing condition and an unrestricted necessary condition for criticality. Producing the required large rank or contradictory support geometry in arbitrary critical colorings is unresolved. The full proof record and finite checks appear in note_d0da03890cda4141501176d0 and nori_unrestricted_square_safe_geometry.md.
+
+
+
+### Acyclic-orientation ceiling for square-safe permutation ranks
+
+Let \(H\) be the undirected interaction graph of a legal paired-flat coloring: two pair labels \(i,j\) are adjacent if either gate \(f_i\) depends on \(p_j,q_j\), or \(f_j\) depends on \(p_i,q_i\). Let \(a(H)\) be the number of acyclic orientations of \(H\).
+
+**Theorem (order factorization).** For every prescribed starting parity \(p\), the red half-sweep endpoint permutation \(F_\pi^p\) depends only on the acyclic orientation of \(H\) induced by \(\pi\). Consequently, for any nonempty family \(\mathcal H\) of pair orders,
+\[
+\dim_{\mathbb R}\operatorname{span}\{P_\pi-P_{\pi_0}:\pi\in\mathcal H\}
+\le a(H)-1.
+\tag{AO1}
+\]
+
+*Proof.* The red pair-step involution is \(T_i(p,q)=(p+e_i,q+(1+f_i(p,q))e_i)\). If \(ij\notin E(H)\), each gate ignores both bits of the other pair, so \(T_iT_j=T_jT_i\) in every state. Swapping adjacent noninteracting labels leaves the endpoint permutation unchanged. Every linear order induces an acyclic orientation of \(H\); orders inducing the same orientation are related by swaps of adjacent incomparable labels in its topological ordering. Each such pair is nonadjacent in \(H\), so the corresponding endpoint permutations agree. At most \(a(H)\) distinct permutation matrices occur, proving (AO1). \(\square\)
+
+**Corollary (dimension-uniform limit on the rank-forcing criterion).** Put \(N=2^m\), \(D=(N-1)(N-2)/2\). The preceding criterion (AR2) can certify a monochromatic antipodal geodesic from a family of half-sweep orders only if
+\[
+a(H)\ge D+2.
+\tag{AO2}
+\]
+If \(m\ge3\) and \(H\) has at most \(2m-2\) edges, then \(a(H)\le2^{2m-2}\le D\), and no such family, including any square-safe family, can exceed the forcing rank. The statement concerns the sufficiency of the rank certificate; it makes no assertion that the coloring lacks red geodesics.
+
+Even a strongly connected pair-dependency digraph need not supply the necessary rank. Take \(f_i(p,q)=q_{i-1\pmod m}\). Its directed dependency graph is an \(m\)-cycle and \(H=C_m\), with
+\[
+a(C_m)=2^m-2,\qquad
+\dim\operatorname{span}\{P_\pi-P_{\pi_0}\}\le2^m-3.
+\tag{AO3}
+\]
+The rank ceiling in (AR2) grows on the order of \(4^m\), while (AO3) grows on the order of \(2^m\). The cyclic example is a successful coloring; it establishes a limit of the rank method under arbitrarily large strongly connected dependency blocks.
+
+The restriction is sharp enough to matter for the smallest dimension in which the safe-order count can exceed (AR2). At \(m=8\), \(N=256\) and \(D=32385\). When \(H=K_8\) with one missing edge, \(a(H)=8!-7!=35280\), leaving room for the rank criterion. With two missing edges, \(a(H)\le8!-2\cdot7!+6!=30960\); if they share a vertex, \(a(H)=8!-2\cdot7!=30240\). Indeed, the chromatic polynomials for the two missing-edge configurations are respectively \((t)_8+2(t)_7+(t)_6\) and \((t)_8+2(t)_7\), and the number of acyclic orientations is \((-1)^8\chi_H(-1)\). Deleting further edges cannot increase this number. Thus any paired-flat \(Q_{16}\) coloring with at least two missing undirected pair interactions falls below the forcing-rank threshold for every half-sweep family.
+
+
+**Corollary (nonlinear strong-feedback systems can have low half-sweep rank).** Let \(m=2k\), \(k\ge3\), and let \(H=C_k\square K_2\) be the cubic prism graph. For every label \(i\) with neighbors \(a,b,c\), prescribe
+\[
+f_i(p,q)=q_aq_b+q_aq_c+q_bq_c .
+\tag{AO4}
+\]
+Each gate is a quadratic Boolean function of its three neighbors, ignores its own pair bits, and is antipodally odd because three-variable majority complements under \(q\mapsto q+\mathbf1\). Every neighboring influence is essential, so the directed dependency graph contains both orientations of each edge of \(H\), is strongly connected, and has directed feedback vertex number equal to the vertex-cover number \(\tau(H)\). Every edge is a directed two-cycle, so a feedback set meets every edge; conversely a vertex cover leaves an independent set and hence an acyclic residual. Since \(H\) has \(3m/2\) edges and maximum degree three, \(\tau(H)\ge m/2\).
+
+Nevertheless \(|E(H)|=3m/2\le2m-2\), so (AO1) bounds the span of **every** half-sweep family below the rank-forcing threshold (AR2). Thus even full nonlinear dependence at every gate, strong connectivity, and linear directed feedback number together do not produce the rank hypothesis required by (AR2). The colorings are legal instances; no NORI1 counterexample is claimed.
+
+An independent verifier enumerates the gates, influence relations, vertex covers and acyclic orientations for \(m=6,8,10\). The triples \((m,\tau(H),a(H))\) are \((6,4,204)\), \((8,4,1862)\), \((10,6,14700)\), while the rank thresholds are \(1953,32385,522753\), respectively. The all-dimensional argument follows from the preceding proof. The verifier is \`nori_cubic_rank_barrier_verify.py\`, with the full record in \`note_nori_permutation_sweep_acyclic_orientation_rank_barrier_r11755\`.
+
+**Remaining task.** A rank-based unrestricted proof must simultaneously establish sufficiently many interaction-order classes and a lower bound on the linear independence of their endpoint maps, or supply a different forcing theorem when (AO1) makes the rank certificate unavailable. The theorem applies to arbitrary nonlinear gates, with no affine slope assumption. Its proof and calculations are retained in note \`note_nori_permutation_sweep_acyclic_orientation_rank_barrier_r11755\`.
+
+
+### Complete complementary-halfword expansion beyond balanced midpoint orders
+
+A red full antipodal geodesic need not traverse every pair once before the midpoint. The preceding rank criterion therefore tests only one class of witness. The following decomposition captures all red full antipodal geodesics without any gate restrictions.
+
+For any pair word \(\alpha=(i_1,\ldots,i_m)\) of length \(m\), let \(n_i(\alpha)\) be the occurrence count of label \(i\), and let \(F_\alpha^p\) be the fiber permutation induced by the successive red matchings. Let \(\alpha\sim\beta\) denote *complementary multiplicity*, meaning \(n_i(\alpha)+n_i(\beta)=2\) for every pair \(i\). Then \(\alpha,\beta\) have the same parity of label occurrences and their red halfwalks terminate in the same pair-parity fiber.
+
+**Theorem (all-full-path midpoint identity).** The number \(Z(c)\) of rooted red full antipodal geodesics equals
+\[
+\boxed{Z(c)=
+\sum_{p\in\mathbb F_2^m}
+\ \sum_{\substack{|\alpha|=|\beta|=m\\ \alpha\sim\beta}}
+\operatorname{tr}\bigl((P_\alpha^p)^{\mathsf T}P_\beta^pJ\bigr).}
+\tag{AR5}
+\]
+Every summand is a nonnegative integer. Hence red full antipodal geodesics are absent precisely when *every compatible halfword pairing* has zero antipodal-root midpoint incidence.
+
+*Proof.* A midpoint collision from antipodal roots joins two red halfwalks of length \(m\). Their concatenation uses each pair twice by \(\alpha\sim\beta\). The endpoints are antipodal, so the two selected original dimensions of each pair must be different, establishing a full antipodal geodesic. Conversely, split any rooted red full antipodal geodesic after \(m\) edges, let \(\alpha\) be the first-half pair word, and \(\beta\) the reverse of the second-half pair word. They are complementary, and their red halfwalks from the two antipodal roots meet at the split vertex. The constructions are inverse. \(\square\)
+
+**Corollary (cross-type rank forcing).** Choose nonempty classes \(A,B\) of length-\(m\) halfwords such that every \(\alpha\in A\) is multiplicity-complementary to every \(\beta\in B\). In one fixed starting parity fiber, let \(U_A\) and \(U_B\) be the respective real spans of differences of their red endpoint permutation matrices from a fixed representative of the same class. If no red full antipodal geodesic exists, then
+\[
+\boxed{\dim U_A+\dim U_B\le(N-1)^2.}
+\tag{AR6}
+\]
+*Proof.* As in (AR2), center every permutation matrix by subtracting the uniform doubly stochastic matrix. Zero cross midpoint incidence gives bilinear pairing \(-1\) for every centered cross pair. Subtracting the two fixed representatives makes the difference subspaces orthogonal under the nondegenerate pairing \(B\) on doubly centered matrices, of dimension \((N-1)^2\). \(\square\)
+
+The same result certifies square-switch survival when both selected halfword families never visit the switched exterior parity at any occurrence of the switched pair. In particular, (AR5) avoids assuming that every red full geodesic has a one-visit-per-pair midpoint split.
+
+An independent direct enumeration checks (AR5) against all red pair words and original starting vertices for legal nonlinear colorings in \(Q_6\) and \(Q_8\). In one \(Q_8\) instance the full count is \(16{,}724\), of which only \(8{,}606\) arise from halfwords using every pair once. The exhaustive checker is nori_complete_midpoint_verifier.py. No conclusion that the cross-type rank bounds are universally exceeded is claimed.
+
+
+### Unavoidable square-safe exchange curvature in every nonlinear paired-flat coloring
+
+Let \(m\ge3\). In a legal paired-flat coloring of \(Q_{2m}\), label direction pairs by \([m]\), write \(p_i=x_{a_i}+x_{b_i}\) and \(q_i=x_{a_i}\), and put
+\[
+T_i(p,q)=(p+e_i,\ q+e_i(1+f_i(p,q))),
+\]
+where \(f_i\) ignores its own pair and satisfies \(f_i(p,q+\mathbf1)=1+f_i(p,q)\). Each \(T_i\) is an involutive bijection. For an order \(\pi\in S_m\), write \(F_\pi^p(q)\) for the within-fiber endpoint of the red half-sweep executing \(T_{\pi_1},\ldots,T_{\pi_m}\) from \((p,q)\).
+
+Fix a pair label \(i\) and an exterior parity signature \(\sigma\in\mathbb F_2^{[m]\setminus\{i\}}\). These are the outside pair parities of an antipodal pair of alternating squares in the original directions \(a_i,b_i\). For a starting fiber \(p\), put \(D=\{j\ne i:p_j\ne\sigma_j\}\). An order \(\pi\) is *safe* when the labels preceding \(i\) form a set different from \(D\). Every red half-sweep with a safe order avoids the switched squares, regardless of its starting within-fiber bits \(q\). Let \(\mathcal H_i(p,\sigma)\) denote the safe orders.
+
+**Lemma 1 (connected safe order graph).** If \(D\ne\varnothing\), then \(\mathcal H_i(p,\sigma)\), with edges given by adjacent exchanges of two labels, is connected; moreover every label \(j\in[m]\) begins some order in \(\mathcal H_i(p,\sigma)\).
+
+*Proof.* For the first-label property, label \(i\) may come first because \(D\ne\varnothing\). For \(j\ne i\), choose a third label \(k\ne i,j\). There are orders beginning \(j,i\) with predecessor set \(\{j\}\), and orders beginning \(j,k,i\) with predecessor set \(\{j,k\}\). At most one of those sets equals \(D\); hence one order is safe.
+
+For connectivity, fix a safe permutation and let \(B\ne D\) be the set preceding \(i\). If \(D\not\subseteq B\), repeatedly exchange \(i\) leftward with the immediately preceding label. Every intermediate predecessor set is a subset of \(B\), and therefore differs from \(D\). If \(D\subsetneq B\), rearrange the labels of \(B\) using swaps not involving \(i\) until some label \(j\in D\) immediately precedes \(i\). Exchange \(i\) with \(j\). The new predecessor set \(B\setminus\{j\}\) omits \(j\in D\), so the preceding case applies and \(i\) can move left to the first position. Finally, all orders beginning with \(i\) are connected by adjacent swaps among the remaining labels, and are safe. \(\square\)
+
+**Theorem 2 (pointwise antipodal square-safe curvature).** Fix any legal paired-flat coloring, any \(i,\sigma\), and any initial parity \(p\) with \(p_{-i}\ne\sigma\). Define
+\[
+\mathcal C_p=
+\{q\in\mathbb F_2^m:\exists\pi,\pi'\in\mathcal H_i(p,\sigma)
+\text{ differing by one adjacent exchange, }
+F_\pi^p(q)\ne F_{\pi'}^p(q)\}.
+\]
+Then
+\[
+\boxed{\mathcal C_p\cup(\mathcal C_p+\mathbf1)=\mathbb F_2^m,
+\qquad |\mathcal C_p|\ge2^{m-1}.}\tag{SC1}
+\]
+For every \(q\in\mathcal C_p\), the differing half-sweep endpoints arise from a noncommuting pair of red matchings \(T_j,T_k\) reached after a red prefix; the two red half-sweeps and their exchanged pair steps avoid the designated switched squares. All assertions allow arbitrary nonlinear truth tables.
+
+*Proof.* Suppose some antipodal source pair \(q,q+\mathbf1\) lies outside \(\mathcal C_p\). By Lemma 1, the safe order graph is connected, and the maps \(\pi\mapsto F_\pi^p(q)\) and \(\pi\mapsto F_\pi^p(q+\mathbf1)\) are constant on it; write their endpoints as \(z,z'\).
+
+For each label \(j\), choose by Lemma 1 a safe order beginning with \(j\). Its first red pair step changes bit \(q_j\) to
+\[
+q_j+1+f_j(p,q),
+\]
+and none of the later pair steps changes that bit. Starting instead from \(q+\mathbf1\) gives the same \(j\)-th endpoint bit, since
+\[
+(q_j+1)+1+f_j(p,q+\mathbf1)
+=q_j+1+f_j(p,q).
+\]
+Hence \(z_j=z'_j\) for every \(j\), and therefore \(z=z'\). But each red half-sweep is a composition of bijections, so it cannot send the distinct inputs \(q,q+\mathbf1\) to the same output. This contradiction proves the first assertion, and the cardinality bound follows by pairing the \(2^m\) inputs antipodally.
+
+If two safe orders differ by exchanging adjacent \(j,k\), their common red prefix and suffix induce bijections, and different final endpoints imply the intermediate red paths \(T_jT_k\) and \(T_kT_j\) have different endpoints at the same intermediate vertex. Their difference is a nontrivial square commutator in the pair-parity quotient. Both complete orders are safe, so their red steps avoid the switched support. \(\square\)
+
+**Corollary 3 (simultaneous good/bad curvature).** Let two legal paired-flat colorings differ by one antipodally paired alternating-square switch in pair \(i\) with exterior signature \(\sigma\). For each \(p\) with \(p_{-i}\ne\sigma\), their safe half-sweep endpoint maps are identical for every order in \(\mathcal H_i(p,\sigma)\). Thus they share the set \(\mathcal C_p\), and that set has at least \(2^{m-1}\) within-fiber sources. The conclusion applies, in particular, at any hypothetical balanced good-to-bad critical boundary.
+
+*Proof.* A safe half-sweep uses pair \(i\) at outside pair-parity different from \(\sigma\), so it meets no changed edge. Its entire red trajectory and endpoint are identical in both colorings. Apply Theorem 2. \(\square\)
+
+**Scope and forcing obligation.** The theorem produces nontrivial adjacent-exchange holonomy outside a prescribed critical square for at least half the sources in each of \(2^m-2\) starting pair-parity fibers. It does not itself produce an antipodal midpoint collision or a full monochromatic geodesic. A closure argument would have to couple these unavoidable safe exchanges with the strict one-internal-hit full-geodesic witnesses in the *same* hypothetical critical coloring. The rank bounds for square-safe permutation matrices previously recorded in this Subsection give a complementary obstruction; (SC1) supplies a nonzero, rootwise curvature source without affine assumptions.
+
+**Finite verification.** An independent bit-level checker enumerates safe orders and red half-sweep endpoints for random legal nonlinear gate tables in \(Q_6\) and \(Q_8\), and checks the pointwise antipodal covering law. A separate enumerator verifies connectivity of the safe adjacent-transposition graph for every switched pair and exterior signature for \(3\le m\le6\). The proof above is dimension-uniform.
+
+
+### Why first-label symmetry and square-safe curvature alone do not force midpoint collisions
+
+The preceding curvature theorem uses first-label output constraints and bijectivity; its proof does not yet use the full prefix-causal consistency of the matchings \(T_i\). The following abstract permutation model separates those hypotheses.
+
+**Proposition (parity-preserving abstract endpoint obstruction).** On \(V=\mathbb F_2^3\), define invertible linear maps \(L_0,L_1\) by
+\[
+L_0(q_0,q_1,q_2)=(q_0+q_1,q_1,q_1+q_2),\quad
+L_1(q_0,q_1,q_2)=(q_0,q_0+q_1,q_0+q_2).
+\]
+For each \(\pi\in S_3\), put \(G_\pi=L_1\) if \(\pi_1=1\), and \(G_\pi=L_0\) otherwise. Then
+
+1. Every \(G_\pi\) is a bijection, and its first-label output bit \(G_\pi(q)_{\pi_1}\) is invariant under \(q\mapsto q+\mathbf1\). This is the pointwise antipodal identity supplied by the first red matching of a legal paired-flat coloring.
+2. For any connected subfamily of orders containing an order beginning with every label, at least one member of each antipodal source pair \(q,q+\mathbf1\) has an endpoint depending on the order. Thus the first-label covering proof of Theorem 2 applies to this abstract family.
+3. Nevertheless
+\[
+G_\pi(q)\ne G_\rho(q+\mathbf1)
+\]
+for *every* \(q,\pi,\rho\): the family has no complementary-root midpoint collisions.
+
+*Proof.* Both matrices are invertible, since \(L_0\) reconstructs \(q_1\), then \(q_0,q_2\), and \(L_1\) reconstructs \(q_0\), then \(q_1,q_2\). The first-label output bit is \(q_0+q_1\) for labels \(0,1\), and \(q_1+q_2\) for label \(2\); these expressions have even parity in the input bits and hence are invariant under complementing all three input bits. The argument proving the pointwise square-safe curvature theorem uses only this first-label identity, bijectivity, and connectivity, so it proves (2). Finally, each \(L_i\) preserves input bit parity:
+\[
+\sum_{j=0}^{2}(L_iq)_j=\sum_{j=0}^{2}q_j\pmod2.
+\]
+In odd dimension, \(q\) and \(q+\mathbf1\) have opposite parity. Thus their images under any \(G_\pi,G_\rho\) cannot coincide. \(\square\)
+
+This is an *abstract permutation-family counterexample*, not a legal paired-flat coloring. It shows that the first-label antipodal law, square-safe connectedness, and even pointwise endpoint variation are insufficient by themselves to force a midpoint collision. A closing argument must use further compatibility that the actual red half-sweep permutations satisfy.
+
+That compatibility is explicit. For an adjacent exchange of two pair labels \(j,k\) after a common prefix \(\alpha\) and before a common suffix \(\beta\), the endpoint difference factors through
+\[
+T_\beta\,T_kT_j\,T_\alpha\quad\text{versus}\quad
+T_\beta\,T_jT_k\,T_\alpha.
+\]
+After cancelling the bijective common prefix and suffix, the discrepancy is a square commutator of two matchings, affecting only the two within-fiber bits \(q_j,q_k\) at the intermediate state. On each fixed assignment of other bits, the two relevant gates are affine in their single active outside bit; thus this commutator is a permutation of the four local states arising from two affine Boolean shears. An abstract first-label permutation system need not admit any such common-gate factorization.
+
+The precise outstanding implication is therefore a *prefix-causal holonomy-to-collision principle*: show that the common nonlinear gate data and the resulting two-bit local commutators prevent all complementary halfword midpoint incidences from vanishing. The first-label curvature theorem supplies mandatory commutators even outside any selected critical square, but the parity-preserving model proves that this alone cannot complete the argument.
+
+
+### Complete-dependency nonlinear colorings with unavoidable safe curvature but no safe midpoint collision
+
+For every \(m\ge3\) there is a *successful* legal paired-flat coloring of \(Q_{2m}\) with a complete directed gate-dependency graph, whose square-safe red half-sweeps in one parity fiber have no antipodal-root midpoint collision, despite having nontrivial safe adjacent-exchange curvature on three quarters of the within-fiber roots. For \(m\ge4\), every gate can be chosen nonlinear in the within-pair \(q\)-variables. This refutes the transfer from the preceding square-safe curvature theorem to square-safe collisions even for shared nonlinear gates with dense dependencies.
+
+**Construction.** Use \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\), and red matching steps \(T_i(p,q)=(p+e_i,q+e_i(1+f_i(p,q)))\). Let \(s(0)=1\), \(s(i)=0\) for \(i>0\). Define an outside-parity row \(\alpha_i\) by \((\alpha_i)_j=1\) for every \(j>0,j\ne i\), and \((\alpha_i)_0=0\) for \(i>0\). Write \(\delta_i(p)=\mathbf1_{\{p_{-i}=\alpha_i\}}\). Choose a Boolean function \(h_i(q_{-i})\) satisfying \(h_i(0)=1\) and \(h_i(q+\mathbf1)=h_i(q)\). One may take \(h_i=1\) when \(m=3\); when \(m\ge4\), choose three distinct outside labels \(a,b,c\) and take \(h_i=1+(q_a+q_b)(q_a+q_c)\). Put
+\[
+f_i(p,q)=q_{s(i)}+\delta_i(p)h_i(q).
+\tag{DH1}
+\]
+
+The gates ignore their own pair. The first term changes by one under \(q\mapsto q+\mathbf1\), and the second is invariant, so the coloring is legal and antipodally odd. Toggling any other parity bit \(p_j\) at \(p_{-i}=\alpha_i,q=0\) changes \(f_i\), because \(h_i(0)=1\). Thus every directed dependency \(j\to i\), \(i\ne j\), is present. For \(m\ge4\), the displayed \(h_i\) has nonzero quadratic degree in \(q\), proving within-fiber nonlinearity.
+
+**A red full antipodal geodesic.** Start at \(p=(1,1,0,\ldots,0)\), \(q=(0,1,0,\ldots,0)\) and use pair word \(w=(0,1,\ldots,m-1,0,1,\ldots,m-1)\). None of the \(2m\) pair steps visits a row \(\alpha_i\): on the first sweep, gate \(0\) sees \(p_1=1\) and \(p_j=0\) for \(j\ge2\); gate \(1\) sees all later parities zero; every gate \(i\ge2\) sees \(p_1=0\). On the second sweep, gate \(0\) sees \(p_1=0\), and all other gates see \(p_0=1\). Hence the full word uses only the simpler reader gates \(g_0=q_1\), \(g_i=q_0\) for \(i>0\). The first \(0\)-step leaves \(q_0=0\), the first passage through every positive label flips that label's \(q\)-bit, the second \(0\)-step flips \(q_0\) to one, and the second passage through the positive labels leaves their bits fixed. Every \(q_i\) has therefore changed once, so the full red path ends at the antipode and traverses every original direction once.
+
+**Safe half-sweeps.** Now fix starting parity \(p=0\), switched label \(0\), and a switched square pair whose outside parity is all ones. A half-sweep order \(\pi\) avoids this square set independently of \(q\) whenever \(0\) is not its last label. These are precisely the safe orders. None reads an exceptional parity row: gate \(0\) would need to be last to read \(\alpha_0\); another gate \(i>0\) would need every other positive label before it and label \(0\) afterward, again forcing \(0\) last. Thus every safe half-sweep uses the reader gates \(g_i\).
+
+Write \(r=q_0,s=q_1\). For a safe order of type \(A\), in which label \(1\) precedes \(0\), the endpoint bits \(0,1\) are \((s,s+r+1)\). For type \(B\), in which label \(1\) follows \(0\), they are \((r+s+1,r)\). Starting from \(q+\mathbf1\), the corresponding output pairs are \((s+1,s+r+1)\) and \((r+s+1,r+1)\). Equal-type outputs from complementary roots cannot coincide. A cross-type output \(A(q)=B(q+\mathbf1)\) in the first two bits requires \((r,s)=(1,0)\). In this case a label \(j\ge2\) that follows \(0\) in the \(A\)-order has output \(q_j+1\), whereas its output in the \(B\)-order from \(q+\mathbf1\) is \(q_j\), irrespective of the latter order. Equality would force every \(j\ge2\), as well as label \(1\), to precede \(0\) in the \(A\)-order, contradicting safety. In the other cross-type case \(B(q)=A(q+\mathbf1)\), the first-two-bit condition requires \((r,s)=(0,1)\), and equality on the remaining bits would force every \(j\ge2\) to precede \(0\) in the \(A\)-order from \(q+\mathbf1\), the same contradiction. Therefore
+\[
+\boxed{F_\pi^{\,0}(q)\ne F_\rho^{\,0}(q+\mathbf1)
+\quad\text{for every }q\text{ and every two safe orders }\pi,\rho.}
+\tag{DH2}
+\]
+
+Both types of safe order exist for \(m\ge3\). Their first-two-bit outputs differ whenever \((r,s)\ne(1,1)\). When \((r,s)=(1,1)\), both types give identical first two bits and every other output bit equals its input bit, independently of the order. Thus precisely \(3\cdot2^{m-2}\) sources have order-dependent safe endpoints. Connectivity of the safe adjacent-exchange graph produces a nontrivial safe square commutator for every such source.
+
+**Consequence.** A *single legal, successful*, dense-dependency, nonlinear paired-flat coloring can possess strong safe exchange curvature and still lack *every* safe one-per-pair midpoint collision in a chosen starting parity fiber. This is a dimension-uniform obstruction to the inference that shared-gate causality plus local safe holonomy forces a safe midpoint witness. It does not refute NORI1 or the possibility of a collision using unsafe orders, other parity fibers, or complementary-multiplicity halfwords.
+
+The mechanism is a general visibility principle: any gate truth-table row at an exterior parity never encountered by the selected pair words may be changed by an antipodally even perturbation without changing those words' red endpoints. The exceptional rows \(\alpha_i\) make every dependency essential and allow nonlinear gates without affecting the safe half-sweep data. Syntactic dependency density consequently cannot replace a theorem controlling the parity rows actually traversed by the witnesses. Exhaustive finite verification for \(3\le m\le6\) accompanies the symbolic proof in nori_dense_safe_holonomy_verifier.py.
+
+
+### Tensor obstruction for midpoint rank amplification
+
+Let \(P_\pi(c,p)\) denote complete red half-sweep permutations on the \(N=2^m\) fiber states of a paired-flat coloring \(c\), starting at parity \(p\). Set \(r(c,p)=\dim_{\mathbb R}\operatorname{span}\{P_\pi\}\), \(d(c,p)=r(c,p)-1\), and \(K(c,p)=\frac1{m!}\sum_\pi P_\pi\).
+
+**Theorem.** For any independent paired-flat factors \(c,h\),
+\[
+r(c\boxtimes h,(p,q))=r(c,p)r(h,q),\qquad
+K(c\boxtimes h,(p,q))=K(c,p)\otimes K(h,q).
+\tag{TN1}
+\]
+*Proof.* Pair updates in distinct factors commute, so a combined sweep has endpoint matrix \(P_{\pi_c}(c,p)\otimes P_{\pi_h}(h,q)\). Every factor-order pair arises, and each arises in the same number \(\binom{m+k}{m}\) of interleavings. This proves both identities. The difference span has dimension \(d=r-1\), because all permutation matrices have the same sum of entries. \(\square\)
+
+Put \(T(N)=(N-1)(N-2)/2\). If \(d(c,p)\le T(N)\), then \(d(c\boxtimes h,(p,q))\le T(NM)\) for every independent factor \(h\) with \(M=2^k\) fiber states. Indeed \(r(h,q)\le(M-1)^2+1\), and
+\[
+T(NM)+1-(T(N)+1)((M-1)^2+1)
+=\tfrac12(M-1)(2N^2+3NM-6N-4M+4)>0.
+\tag{TN2}
+\]
+Moreover, \(\|K(c\boxtimes h)\|_F^2=\|K(c)\|_F^2\|K(h)\|_F^2\), with \(\|K(h)\|_F^2\ge1\). Hence independent padding cannot turn a failed rank-forcing or Frobenius-mixing certificate into a successful one.
+
+
+**Multigraded halfword theorem.** For \(a\in\{0,1,2\}^m\), let \(V_a(c,p)\) be the span of red endpoint permutation matrices for pair words in which label \(i\) occurs \(a_i\) times. For all count vectors \(a,b\) and independent paired-flat factors \(c,h\),
+\[
+\boxed{V_{(a,b)}(c\boxtimes h,(p,q))
+=V_a(c,p)\otimes V_b(h,q).}
+\tag{TN3}
+\]
+*Proof.* Every word with count vector \((a,b)\) restricts to words of count vectors \(a,b\), and its factor updates commute. Conversely every pair of factor words admits a shuffle producing the prescribed full count vector. Thus the endpoint matrices and their spans are the stated tensor products. \(\square\)
+
+For a fixed total length \(L\) and pair-count parity signature \(\sigma\), the endpoint span is a *sum* of the \(V_a\) with \(\sum_i a_i=L\), \(a\bmod2=\sigma\). It can have larger dimension than the read-once sweep span. In the Cartesian product of two paired-flat \(Q_4\) blocks with gates \(f_0=t_1,f_1=t_0,f_2=t_3,f_3=t_2\), the read-once \(Q_8\) half-sweep span has dimension four, whereas the length-four halfwords with all pair-label multiplicities even have span dimension five. The independent checker nori_halfword_graded_tensor_verify.py confirms (TN3) for all four-step count vectors in this product, and verifies the ranks.
+
+The complete midpoint identity pairs halfwords with count vector \(a\) only against halfwords with vector \(2-a\). Consequently the extra span of a coarser parity sector cannot be inserted directly into the complementary-halfword rank criterion. A closure mechanism requires relations *between distinct count-vector sectors*, arising from shared nonlinear gates or admissible exchanges between paths. These tensor identities show why independent padding of read-once orders cannot supply those relations.
+
+
+### Faithful global sweep tomography and sharp square-safe information kernel
+
+Let \(m\ge2\), \(p_i=x_{a_i}+x_{b_i}\), \(q_i=x_{a_i}\). For an arbitrary legal paired-flat coloring let
+\[
+T_i(p,q)=(p+e_i,q+e_i(1+f_i(p_{-i},q_{-i}))),\qquad
+f_i(u,v+\mathbf1)=1+f_i(u,v).
+\]
+Fix an order \(\pi=(i_1,\ldots,i_m)\) and let \(H_\pi=T_{i_m}\cdots T_{i_1}\). Its terminal within-fiber function is \(F_\pi^p(q)\), while its terminal parity is \(p+\mathbf1\).
+
+**Theorem 1 (one-order global reconstruction).** Knowledge of \(H_\pi\) for every starting vertex \((p,q)\) uniquely determines every gate \(f_i\), with no affine or bounded-dependency condition.
+
+*Proof.* The first terminal bit \(i_1\) is its value just after the first pair step. Hence \(f_{i_1}=1+q_{i_1}+(F_\pi^p(q))_{i_1}\), recovering the first gate globally. If the first \(k-1\) gates are known, their prefix bijectively transports all starting vertices to all intermediate vertices. At each intermediate vertex \(z=(p^{(k)},q^{(k)})\), the next gate satisfies \(f_{i_k}(z)=1+q^{(k)}_{i_k}+(F_\pi^p(q))_{i_k}\), because later steps never change that bit. By varying the source one recovers its entire truth table. Continue inductively. \(\square\)
+
+**Theorem 2 (maximal square-safe one-order reconstruction).** Fix a pair \(i\) and an exterior pair-parity signature \(\sigma\in\mathbb F_2^{[m]\setminus\{i\}}\). Fix any order \(\pi\) beginning with \(i\). Suppose \(F_\pi^p(q)\) is known for every within-fiber source \(q\) and every starting parity \(p\) with \(p_{-i}\ne\sigma\). These observations determine *every gate value* except those of \(f_i\) on the exterior parity row \(p_{-i}=\sigma\). Conversely, arbitrary legal changes on that single row leave all these endpoint observations unchanged.
+
+*Proof.* The first step uses gate \(i\) at initial exterior parity \(p_{-i}\). By the first-bit formula its entire table is recovered outside \(\sigma\). Process the remaining labels in order. To recover the gate of label \(j\ne i\) at an arbitrary prescribed intermediate outside parity \(u\), choose the initial bit \(p_j=1+\sigma_j\). Since \(j\) has not yet been updated, its own bit is absent from its exterior parity \(u\); the other initial parity bits may therefore be chosen to realize \(u\). But the choice of \(p_j\) ensures \(p_{-i}\ne\sigma\), so the initial \(i\)-step is safe. The known prefix is bijective on the within-fiber variables \(q\), and thus every intermediate \(q\) occurs. Its terminal \(q_j\) bit recovers the whole \(u\)-row of gate \(j\). Induct on the position of \(j\). Conversely, an \(i\)-first sweep started with \(p_{-i}\ne\sigma\) never evaluates the changed row of \(f_i\), and every other gate is identical, proving invariance of the observed endpoints. \(\square\)
+
+**Corollary 3 (sharp hidden Boolean hypercube).** The legal colorings consistent with the safe observations of Theorem 2 form a Boolean hypercube of dimension \(2^{m-2}\), hence number \(2^{2^{m-2}}\). The free bits are the values of \(f_i(\sigma,q_{-i})\) on one representative of each complementary pair \(\{q_{-i},q_{-i}+\mathbf1\}\). Toggling one free bit is precisely an antipodally paired alternating-square switch with exterior parity \(\sigma\). All other nonlinear gate values and dependencies are identified by the single safe order.
+
+**Theorem 4 (minimum eight-root distance).** For any fixed order \(\pi\) and any two distinct legal paired-flat colorings \(c,d\), their global endpoint maps \(H_\pi^c,H_\pi^d\) disagree at at least eight starting vertices. Every elementary legal antipodally paired alternating-square switch changes the endpoint map on precisely eight starting vertices.
+
+*Proof.* Let \(j\) be the first gate along \(\pi\) where the two colorings differ. All earlier gates agree, so the common prefix bijectively maps starting vertices onto all intermediate states. Choose an outside state \((p_{-j},q_{-j})\) where their \(j\)-gates differ. The gate difference is invariant under complementing the outside \(q\)-bits, so it also differs at \((p_{-j},q_{-j}+\mathbf1)\). Since the gates ignore their own \(p_j,q_j\), each outside state admits four independent own-pair choices. These eight states have distinct starting preimages. Their terminal \(q_j\) output bits differ because no later gate changes coordinate \(j\). This proves the bound. For a single square switch, exactly eight intermediate states undergo a changed red matching, and the common prefix and suffix are bijective, so the resulting endpoint maps differ on precisely eight starting vertices. \(\square\)
+
+### Optimal fixed-parity tomography as a Boolean-lattice chain-cover theorem
+
+Fix just one initial pair parity \(p\), while observing terminal endpoints from every initial \(q\) for selected pair orders. Each pair order visits gate \(i\) at the exterior parity \(p_{-i}\) toggled on the set \(S\) of labels preceding \(i\). This observation corresponds to the oriented Boolean-lattice edge \(S\to S\cup\{i\}\). A collection of orders determines every gate table precisely when its maximal chains cover every such directed edge: sufficiency follows by recovering rows in increasing cardinality of \(S\) with the known prefix gates; necessity follows by toggling an unobserved antipodally odd row, which changes no observed sweep endpoint.
+
+**Theorem 5 (optimal fixed-parity portfolio).** The minimum number of half-sweep orders whose complete terminal maps from a single starting parity fiber identify an arbitrary legal paired-flat coloring is
+\[
+\boxed{M(m)=\max_{0\le k<m}(m-k)\binom mk
+=m\binom{m-1}{\lfloor(m-1)/2\rfloor}.}
+\]
+
+*Proof.* There are \(E_k=(m-k)\binom mk=m\binom{m-1}{k}\) directed Boolean-lattice edges from rank \(k\) to \(k+1\). Every maximal chain covers one such edge, giving the lower bound \(M=\max_kE_k\). For the upper bound, put fractional flow \(M/E_k\ge1\) on each rank-\(k\) edge. At a rank-\(k\) vertex incoming and outgoing flows equal \(M/\binom mk\); the source and sink carry total flow \(M\). Therefore the directed network has a feasible flow of value \(M\) subject to integer lower bound one on every edge. Total unimodularity of the directed incidence matrix yields an integral feasible flow of the same value, with each edge carrying at least one unit. Decompose this acyclic integral flow into \(M\) maximal source-to-sink chains. They cover every lattice edge, giving a portfolio of \(M\) pair orders and completing the proof. \(\square\)
+
+The values begin \(M(2)=2\), \(M(3)=6\), \(M(4)=12\), \(M(5)=30\), \(M(6)=60\), \(M(7)=140\), \(M(8)=280\). Constructive verifiers are nori_sweep_tomography_flow.py, nori_square_safe_tomography.py, and nori_sweep_code_distance.py.
+
+**NORI1 scope.** These reconstruction and metric theorems apply to arbitrary legal nonlinear paired-flat gates and supply a full-class mechanism rather than another finite gate classification. A single globally observed sweep encodes every gate; one globally observed safe sweep encodes everything outside the unique switched exterior-parity row. A critical paired-square boundary changes one free bit in the invisible Boolean hypercube and changes the complete sweep permutation on the minimum eight-root support. This identifies the missing bridge as a relation between safe transport and paths visiting that exceptional row. It does not itself prove a monochromatic antipodal full geodesic or settle the distinct boundary-tournament problem.
+
+
+### Quadratic dependence of unrestricted red full-geodesic counts on one complete pair gate
+
+Fix \(m\ge2\) and a legal paired-flat coloring on \(Q_{2m}\). Fix every gate \(f_j\), \(j\ne i\), and allow the entire nonlinear gate \(f_i\) to vary subject to own-pair independence and the antipodal oddness law. Index its independent Boolean truth-table values by \(t=(u,[v])\), where \(u\in\mathbb F_2^{m-1}\) is outside pair parity and \([v]=\{v,v+\mathbf1\}\) is a complementary orbit of outside first-member bits. There are \(B=2^{m-1}2^{m-2}=2^{2m-3}\) independent gate bits \(h_t\).
+
+For a fixed geometric rooted full antipodal geodesic \(P\), meaning a root together with a permutation of all \(2m\) original direction indices, let \(I_P(h)\) be one if every edge of \(P\) is red and zero otherwise. Set
+\[
+Z(h)=\sum_P I_P(h),
+\]
+the number of rooted red full antipodal geodesics.
+
+**Theorem 6 (full-gate quadratic witness law).** For arbitrary fixed values of all other gates,
+\[
+\boxed{\deg Z(h)\le2}
+\tag{QR1}
+\]
+when \(Z\) is represented as the unique multilinear real polynomial in the \(B\) independent Boolean bits \(h_t\). More precisely, \(Z\) is a nonnegative sum of products of at most two literals \(h_t\) or \(1-h_t\). Therefore every third mixed Boolean derivative in distinct gate bits vanishes identically.
+
+*Proof.* A geometric full antipodal geodesic uses each original direction once, so it traverses only two edges of pair \(i\): one in direction \(a_i\) and the other in direction \(b_i\). Every other path-edge color is fixed. If any such fixed color is blue, \(I_P(h)\) vanishes. Otherwise the two pair-\(i\) red conditions prescribe at most two independent gate-table literals: the first must choose its prescribed original pair member, and the second must choose its other prescribed member. The oddness relation on the complementary \(q\)-arguments translates each condition into \(h_t=0\) or \(h_t=1\). Repeated compatible literals reduce to one; incompatible literals make the indicator zero. Consequently every nonzero \(I_P(h)\) is a product of at most two literals. Summation proves (QR1). \(\square\)
+
+**Corollary 7 (pairwise switch inclusion-exclusion).** Fix a baseline legal coloring \(c\), and select arbitrary distinct legal antipodally paired alternating-square switches \(S_1,\ldots,S_t\), all supported in the *same direction pair* \(i\), with arbitrary exterior parity and outside-bit locations. For \(A\subseteq[t]\), let \(c^A\) be the coloring obtained by applying switches with indices in \(A\); the switches commute as truth-table bit flips. Then
+\[
+\boxed{Z(c^A)=Z(c)+
+\sum_{a\in A}\bigl[Z(c^{\{a\}})-Z(c)\bigr]
++\sum_{\{a,b\}\subseteq A}
+\bigl[Z(c^{\{a,b\}})-Z(c^{\{a\}})-Z(c^{\{b\}})+Z(c)\bigr].}
+\tag{QR2}
+\]
+Thus the total red full-geodesic count across *all* combinations of same-pair switches is determined by its values at the baseline, all single switches, and all pairs of switches. There is no independent third- or higher-order switch interaction in this count.
+
+*Proof.* Apply Theorem 6 after parametrizing the selected independent gate bits by their flip indicators relative to \(c\). The resulting multilinear polynomial has degree at most two. Its constant, linear and quadratic coefficients are respectively the baseline value, first differences and mixed second differences displayed in (QR2). \(\square\)
+
+**Corollary 8 (robustness under random full-gate replacement).** If \(c\) possesses a red full antipodal geodesic, at least one quarter of all legal replacements of the *entire* gate \(f_i\), with all other gates fixed, preserve a red full antipodal geodesic. Indeed, a chosen successful geometric red path constrains at most two independent bits of the replacement gate, and each remaining truth-table bit may be assigned arbitrarily. More generally, replacing simultaneously the entire gates of \(r\) prescribed direction pairs preserves some red full antipodal geodesic for at least a \(2^{-2r}\) fraction of all their legal replacements, witnessed by any one fixed successful path.
+
+**Corollary 9 (2-CNF obstruction on the full nonlinear gate cube).** For fixed other gates, the assignments of gate \(i\) with *no* red full antipodal geodesic form the solution set of a Boolean 2-CNF formula: for every geometric full path whose fixed-gate edges are all red, forbid the conjunction of its at most two required \(f_i\)-literals. The empty conjunction contributes an impossible clause, a single literal contributes a unit clause, and two literals contribute a binary clause. The formula may have arbitrarily many clauses; this is a full-class reduction with \(2^{2m-3}\) Boolean variables, not a bounded certificate or a proof that the formula is inconsistent.
+
+The polynomial and 2-CNF formulations give a dimension-uniform compatibility calculus for varying arbitrary nonlinear truth tables of a pair gate. They complement the earlier two-direction seam clauses in Article XVI, but do not supply the missing universal unsatisfiability theorem. The lower bound in Corollary 8 concerns the survival of a *specified* successful path under random gate replacements; it is not an assertion of deterministic survival under every replacement. The independent original-direction-path checker nori_one_gate_quadratic_verifier.py enumerates all relevant red-path terms in \(Q_6\), verifies every third mixed difference vanishes across all 256 assignments of a gate, and checks nonnegativity and degree.
+
+
+### Complementary-halfword influence and the critical-square curvature barrier
+
+Complete-halfword midpoint collisions require odd finite differences of the shared pair gates. A midpoint profile without singly used pairs requires two vertex-disjoint directed dependency cycles.
+
+THEOREM A. Let w contain each pair label twice and v_k be its red matching trajectory. With visits r_i<s_i, reaching the antipode is equivalent to f_i(v_(r_i-1))+f_i(v_(s_i-1))=1 for all i. This equals the sum of finite differences f_i(v_(k-1))+f_i(v_k) over r_i<k<s_i. Every nonzero term involving a step in pair j supplies a dependency arc i->j. Proof: each pair parity returns to its start; its first-member fiber bit must flip once, meaning the two selected red directions in the pair differ. Gate i ignores its own pair, and its values telescope between the visits.
+
+THEOREM B. Split the word after m steps. Define D as pairs occurring twice in first half, Z as pairs occurring zero times, and S as pairs occurring once. Then |D|=|Z|. Any successful full geodesic forces an outgoing dependency arc from every i in D into D union S, and from every i in Z into Z union S. If G[D] is acyclic, every vertex of D has a directed path to S; likewise for Z. Proof: the odd temporal derivative for each repeated pair contains a nonzero increment caused by a pair in its own half. A finite walk following these arcs either enters S or creates a directed cycle.
+
+COROLLARY C. When S is empty and D is nonempty, the directed dependency graph contains a cycle inside D and another inside Z. These cycles are vertex disjoint. Thus if the graph has no pair of vertex-disjoint directed cycles, every complementary-halfword midpoint incidence with multiplicities only 0 or 2 vanishes: tr(P_alpha^T P_beta J)=0 for every alpha,beta with complementary all-even pair counts and every starting parity fiber. This is a shared-gate zero-incidence theorem, not a proof of unrestricted NORI1.
+CRITICAL-SQUARE CURVATURE: If a legal paired-square switch turns a successful coloring into a bad one, every red full geodesic on the good side hits the switch once internally. The switched pair step cannot commute with either neighboring red step from another pair. Otherwise swapping that adjacent pair of red moves keeps the two-step endpoint and all original directions, but moves the unique switched edge outside the switched square orbit, producing a red full geodesic surviving the switch. For adjacent pair labels i,j, local red commutation holds precisely when both finite derivatives f_i(v)+f_i(T_j v) and f_j(v)+f_j(T_i v) vanish. This adds two necessary nonzero-curvature conditions to every strict one-hit witness, but does not force such a witness to be repairable.

@@ -21,6 +21,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Binomial holonomy defects and exponentially rare bigon roots in balanced cubes](../note_5036f03c91465fde5069b3d5.md) — active/proved
 - [Binomial holonomy defects and exponentially rare bigon roots in balanced cubes](../note_5036f03c91465fde5069b3d5.md) — active/proved
 - [Canonical paired-sweep conjugacy and rootwise invariance under balanced lifts](../note_e5b581e8e2c4615b297e9252.md) — active/proved
+- [Causal rounding, ordered derivative blockers and cross-path flux integrability](../note_nori_xvi_budgeted_bigon_partition_exchange_20261017_r11435.md) — active/proved
 - [Commutators and direction influence](../note_9958891ee795dab0c72382d4.md) — active/proved
 - [Complementary two-nonlinear NORI1 criterion via antipodal implication SCC](../note_2c2534948b2bd8e6e31d74d0.md) — active/proved
 - [Complete balanced three-nonlinear closure when the unary fringe has one exceptional reader](../note_4e39815b2afb4340c19d280d.md) — active/proved
@@ -64,6 +65,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Optimal color-change Euler circuits and colorwise flow splitting](../note_b82fae07b1a890e93003724d.md) — active/proved
 - [Paired-lift red and blue graphs cover a smaller cube and lift Euler tours](../note_ed4e8d984354e6f37261be13.md) — active/proved
 - [Paired-lift sweep operator intertwining and all even antipodal trace moments](../note_c0b01709e1b450e26fb30b68.md) — active/proved
+- [Quadratic geodesic incidence: Q4 identity and Q5 characteristic-101 obstruction](../note_nori_quadratic_geodesic_calibrations_q4_q5_20261018_r11755.md) — active/proved
 - [Rainbow matchings and the APS expansion obstruction in legal cube colorings](../note_ff817c340f78afdb8b73c22f.md) — active/proved
 - [Reader-chain subdivision closes the rooted paired-reader three-nonlinear branch](../note_93f3f3c67ccccb85170dd72a.md) — active/proved
 - [Reader-core metric factorization and invariant antipodal detour under balanced lifts](../note_f444f30e8dd9ece68d4b5734.md) — active/proved
