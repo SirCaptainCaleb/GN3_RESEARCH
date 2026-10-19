@@ -29,3 +29,4 @@ jobs:
     with:
       schema: nori
     secrets: inherit
+# Refresh requested 2026-10-19: regenerate after Article XVII research assessment.
