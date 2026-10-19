@@ -72,3 +72,31 @@ for m in range(32):
     word=sum(((m>>k)&1)<<v for k,v in enumerate(var))
     assert not satisfies(six,word)
 print('PASS: all 28 two-root assignments; six-path irreducible triple-root certificate')
+
+
+# Second triadic forcing packet on projective seam roots {3,6,7}.
+# This set is disjoint from the first packet's {0,1,4}.
+another=[
+(3,(0,2,1,3,4),3,{((0,2),1),((1,4),1)}),
+(9,(2,3,0,1,4),6,{((0,4),0),((1,4),0)}),
+(0,(0,2,1,4,3),7,{((0,0),0),((1,5),0)}),
+(3,(2,1,0,3,4),3,{((0,4),1),((1,5),1)}),
+(2,(0,4,3,1,2),3,{((0,2),0),((1,4),1)}),
+(1,(0,3,4,1,2),7,{((0,0),1),((1,5),0)})]
+core=[]
+for root,pi,sr,expected in another:
+    x=root;fixed_colors=[];free_edges=[];seam=None
+    for i in pi:
+        if i==4:seam=min(x&15,(x&15)^15)
+        if i>=2:fixed_colors.append(c(x,i))
+        else:free_edges.append(orbit(x,i))
+        x^=1<<i
+    assert seam==sr and len(set(fixed_colors))==1
+    clause=frozenset((e,fixed_colors[0]^s) for e,s in free_edges)
+    assert clause==expected and clause in G[sr]
+    core.append(clause)
+var2=[idx[e] for e in ((0,2),(0,4),(0,0),(1,4),(1,5))]
+for bits in range(32):
+    word=sum(((bits>>k)&1)<<v for k,v in enumerate(var2))
+    assert not satisfies(core,word)
+print('PASS: two disjoint three-root six-path forcing packets')
