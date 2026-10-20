@@ -1,4 +1,4 @@
-# Full-sweep holonomy generation, alternating parity, and tensor transfer operators
+# Full-sweep holonomy, tensor transfer, and three-step rooted obstruction
 
 - Stable ID: note_fdf278eae230ca4aac3ec185
 - Author: unspecified; session provenance retained
@@ -6,10 +6,10 @@
 - Labels: NORI1, paired-flat, holonomy, midpoint, alternating-group, operator-tensor
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 3
+- Current version: 4
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r11531_2
-- Updated session: session_nori_r11635_1
+- Updated session: session_nori_r11974_2
 - Disposition: none
 - Successor: none
 
@@ -31,3 +31,26 @@ NEW TENSOR TRANSFER THEOREM. For legal paired-flat c on 2m directions and d on 2
 These are structural same-coloring constraints, not a proof of existence of a one-step antipodal collision. A future forcing argument must still use the paired-flat one-bit shear identities beyond alternating parity and component connectivity. Independent analytic proof is stored at /mnt/data/nori_even_holonomy_tensor_theorem.md and executable checks at /mnt/data/nori_even_sweep_holonomy_verify.py: gate and sweep permutation parities checked for Q4/Q6/Q8 samples, full product transfer distribution Q4 boxplus Q4.
 
 NEW UNIVERSAL PATH-LEVEL INTERTWINING LAW. Let J complement all fiber bits and T_i flip only fiber bit i. Each red pair gate obeys U_i J=T_i J U_i and U_i J U_i^(-1)=T_i J, with source and target parity fibers correctly understood. For a full red order pi=(i_1,...,i_m), the two output fiber words Phi_pi(t) and Phi_pi(t+allones) agree in bit i_1. The first gate's control values are complementary at antipodal input states, so their updated i_1 bits agree, and later pair gates leave that bit fixed. Dually, the two outputs of the inverse complete sweep Phi_pi^(-1) on complementary target inputs agree in its last-order bit i_m. Equivalently the conjugated antipodal involution Phi_pi J Phi_pi^(-1) preserves both hyperplanes of constant t_(i_1), while Phi_pi^(-1)J Phi_pi preserves hyperplanes of constant t_(i_m). These are path-realizable endpoint compatibility laws for every nonlinear legal paired-flat coloring, not averaged moments. They do not imply same-order endpoint collision (Phi_pi is bijective); in the existence problem one must vary the two halfpath orders and possibly the root. The updated verifier checks both laws for all complete orders and parity fibers of sampled Q4,Q6,Q8 colorings.
+
+
+## Rooted full geodesics can require three sweep comparisons
+
+Let Q_(2m) be legal paired-flat. For fixed pair parity p, let F_pi^p be the fiber endpoint permutation of a red sweep using every pair label once in order pi. Form the undirected reflexive comparison graph H_p on fiber words q by joining q,r when F_pi^p(q)=F_rho^p(r) for some complete orders pi,rho. One comparison is therefore precisely a red paired-midpoint collision. Generation of the fiber connectivity group by comparisons does not bound the number of comparisons relating a prescribed pair of roots.
+
+**Theorem.** For every m>=4 there is a legal nonlinear paired-flat coloring of Q_(2m) and a root x starting a red full antipodal geodesic, such that the comparison-graph distance between the fiber words of x and its antipode is at least three.
+
+**Base Q8 certificate.** Pair original directions (0,1),(2,3),(4,5),(6,7). For each i, pack the six outside bits into z_i in ascending direction order and put k_i=min(z_i,63-z_i). Let f_i(x)=bit_(k_i)(M_i) xor [z_i>=32] for
+
+M=(eafa8380, eaff00a2, 23532633, b2e0f8ea) (hexadecimal).
+
+The red pair-i step flips direction 2i+f_i(x). Each f_i ignores its own pair and reverses under the global antipode, so the rules give legal undirected antipodally odd edge colors. At root x=0, original-direction word (2,6,3,4,7,0,5,1) is fully red, visiting vertices
+
+0,4,68,76,92,220,221,253,255.
+
+At parity p=0000, the sets of complete-sweep fiber endpoints from q=0 and q=15 are S_0={3,9,10}, S_15={11,15}. Their comparison-graph neighborhoods (including themselves) are respectively N_0={0,2,5,6,8,10} and N_15={11,14,15}. The neighborhoods are disjoint, excluding comparison distance one or two. The edges 0--2, 2--11, 11--15 exist because the corresponding sweep-endpoint intersections are {3,9}, {4,14}, {11,15}. Thus the distance is three. This calculation enumerates 24 full pair orders for each of sixteen fiber roots; an independent enumerator checks all 256 vertex selectors, antipodal oddness, and the displayed original-direction-simple red word.
+
+**Uniform extension.** For every new pair j>=4 set f_j=x_0 and keep the four old gates independent of new bits. The old red word contains direction zero once. Insert each new even direction before that step and its odd partner after it. The new steps are red because x_0 changes from zero to one, old steps remain red, and all original directions occur once. This extends the successful rooted geodesic for arbitrary starting new-pair bits. Projecting a complete sweep upstairs onto the first four pairs gives a complete old sweep: new matching steps do not change old bits. Consequently every comparison-graph edge upstairs projects to an old comparison-graph edge (possibly a loop). Any comparison chain from the lifted root to its antipode projects to a chain from q=0 to q=15 in the base. Its length is at least three.
+
+**Four-label word certificate.** In the free product of four involutions, write C={red(rev(rho)pi):pi,rho permutations of (0,1,2,3)}, where red cancels adjacent equal letters. There are 864 words of length eight in which each letter appears twice and no adjacent letters agree. Precisely 24 are absent from C*C; they are the relabelings of (a,b,a,c,b,d,c,d). All 24 belong to C*C*C. The pair-label word of the displayed red geodesic, (1,3,1,2,3,0,2,0), is one of these 24. Hence a rooted red full Q8 geodesic whose pair-label word differs from those 24 patterns automatically has an antipodal comparison chain of length at most two, independently of the nonlinear gates. The exhibited coloring shows the exceptional three-step bound is attained. Verification forms C from the 24^2 order pairs, reduces its products, and checks all 864 words.
+
+This disproves a universal two-comparison straightening rule even after a rooted full antipodal red geodesic is given. It does not rule out another root, a three-or-more comparison argument, or unrestricted NORI1.

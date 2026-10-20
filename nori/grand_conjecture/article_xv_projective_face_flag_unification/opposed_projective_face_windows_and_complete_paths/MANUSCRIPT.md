@@ -7612,6 +7612,247 @@ THEOREM B. Split the word after m steps. Define D as pairs occurring twice in fi
 COROLLARY C. When S is empty and D is nonempty, the directed dependency graph contains a cycle inside D and another inside Z. These cycles are vertex disjoint. Thus if the graph has no pair of vertex-disjoint directed cycles, every complementary-halfword midpoint incidence with multiplicities only 0 or 2 vanishes: tr(P_alpha^T P_beta J)=0 for every alpha,beta with complementary all-even pair counts and every starting parity fiber. This is a shared-gate zero-incidence theorem, not a proof of unrestricted NORI1.
 CRITICAL-SQUARE CURVATURE: If a legal paired-square switch turns a successful coloring into a bad one, every red full geodesic on the good side hits the switch once internally. The switched pair step cannot commute with either neighboring red step from another pair. Otherwise swapping that adjacent pair of red moves keeps the two-step endpoint and all original directions, but moves the unique switched edge outside the switched square orbit, producing a red full geodesic surviving the switch. For adjacent pair labels i,j, local red commutation holds precisely when both finite derivatives f_i(v)+f_i(T_j v) and f_j(v)+f_j(T_i v) vanish. This adds two necessary nonzero-curvature conditions to every strict one-hit witness, but does not force such a witness to be repairable.
 
+##### Rank-four antipodal return kernel for arbitrary antipodally odd colorings
+
+Let \(n\ge4\), and let \(R\) be the real symmetric adjacency matrix of the red graph of an arbitrary antipodally odd binary edge coloring of \(Q_n\). Write \(P\) for the permutation matrix of the full antipode. No vertex-balance, paired-flat, affine, or restricted-dependence assumption is made. In the paired-flat specialization \(n=2m\), the red graph is \(m\)-regular. Put
+\[
+\mathcal F_R(z)=\operatorname{tr}\bigl(P(I-zR)^{-1}\bigr)
+=\sum_{k\ge0}\operatorname{tr}(PR^k)z^k.
+\tag{RK1}
+\]
+An \(n\)-step cube walk between antipodal vertices must traverse every original direction once. Consequently
+\[
+[z^n]\mathcal F_R(z)=Z(R),
+\tag{RK2}
+\]
+where \(Z(R)\) is the number of rooted red full antipodal geodesics, counting direction orders. This identifies the full geodesic count with a walk generating-function coefficient without relaxing original-direction simplicity.
+
+Consider an antipodal pair \(S=F\cup\bar F\) of alternating squares in any two distinct directions \(a,b\), and let \(R'\) be the red adjacency matrix after switching both squares. For each face \(H\in\{F,\bar F\}\), define two unit vectors \(u_a^H,u_b^H\) supported on its four vertices by
+\[
+u_a^H(x)=\tfrac12(-1)^{x_a},\qquad
+u_b^H(x)=\tfrac12(-1)^{x_b}\quad(x\in H),
+\tag{RK3}
+\]
+and zero outside \(H\). These four vectors are orthonormal. Let \(U\) be the matrix of their columns ordered as \((u_a^F,u_b^F,u_a^{\bar F},u_b^{\bar F})\). If the two red edges in \(F\) run in direction \(a\), set \(\epsilon=1\); if they run in direction \(b\), set \(\epsilon=-1\).
+
+**Theorem (rank-four switch and antipodal chirality).** The entire perturbation is
+\[
+\boxed{R'-R=UCU^{\mathsf T},\qquad
+C=\operatorname{diag}(2\epsilon,-2\epsilon,-2\epsilon,2\epsilon).}
+\tag{RK4}
+\]
+In particular \(\operatorname{rank}(R'-R)=4\), \((R'-R)^3=4(R'-R)\), and \(P(R'-R)P=-(R'-R)\).
+
+*Proof.* In each square the two red edges form the perfect matching in one face direction; switching replaces it by the other direction matching. These two commuting translations act diagonally on the four Walsh characters of the two face bits. Their difference vanishes on the constant character and the product character, and has eigenvalues \(2\epsilon,-2\epsilon\) on \(u_a^F,u_b^F\). Antipodal oddness reverses the red member in \(\bar F\), giving the opposite eigenvalues there. This proves (RK4). The four eigenvectors are orthonormal and their nonzero eigenvalues are \(+2,-2,+2,-2\), proving the rank and cubic identities. The antipode interchanges the two faces and negates each Walsh vector, thereby conjugating \(C\) to \(-C\). \(\square\)
+
+Define the red resolvent \(\mathcal G(z)=(I-zR)^{-1}\) as a formal matrix power series, together with two \(4\times4\) return kernels
+\[
+K(z)=U^{\mathsf T}\mathcal G(z)U,\qquad
+L(z)=U^{\mathsf T}\mathcal G(z)P\mathcal G(z)U.
+\tag{RK5}
+\]
+
+**Theorem (four-point resolvent transfer).** In the ring of formal power series,
+\[
+\boxed{\mathcal F_{R'}(z)-\mathcal F_R(z)
+=z\,\operatorname{tr}_4\!\left[
+\bigl(C^{-1}-zK(z)\bigr)^{-1}L(z)\right].}
+\tag{RK6}
+\]
+Consequently the change in the number of rooted red full antipodal geodesics is the coefficient of \(z^n\) on the right. All edge colors outside the two switched squares remain unchanged.
+
+*Proof.* The matrix inversion lemma applied to \(I-zR'=I-zR-zUCU^{\mathsf T}\) gives
+\[
+(I-zR')^{-1}=\mathcal G+
+z\mathcal G U(C^{-1}-zU^{\mathsf T}\mathcal G U)^{-1}U^{\mathsf T}\mathcal G.
+\]
+Multiplying by \(P\), taking the trace, and cyclically moving the four-column factors yields (RK6). All inverses exist as formal power series because \(C\) is invertible. \(\square\)
+
+**Corollary (four propagated red-wavefront computation).** Put \(V_k=R^kU\), so each \(V_k\) has only four columns. The coefficient matrices of (RK5) are
+\[
+K_k=U^{\mathsf T}V_k,\qquad
+L_k=\sum_{a+b=k}V_a^{\mathsf T}PV_b.
+\tag{RK7}
+\]
+For \(A(z)=(I-zCK(z))^{-1}=\sum A_kz^k\), the recursion
+\[
+A_0=I_4,\qquad A_k=\sum_{j=0}^{k-1}CK_jA_{k-1-j}
+\tag{RK8}
+\]
+evaluates the change in the \(n\)-step antipodal count as
+\[
+\boxed{Z(R')-Z(R)=
+\sum_{k=0}^{n-1}\operatorname{tr}_4(A_k C L_{n-1-k}).}
+\tag{RK9}
+\]
+Thus this full-class path-count response can be evaluated by propagating four signed red-walk wavefronts from the square orbit, without computing the full adjacency-matrix resolvent.
+
+**Critical-square condition and limitation.** At any hypothetical legal switch from a red-successful coloring \(R\) to a red-unsuccessful coloring \(R'\), the right-hand side of (RK9) must equal \(-Z(R)\), where \(Z(R)>0\). The previously established strict one-internal-hit and root-exclusion conditions apply to the same instance. Prohibiting this complete cancellation by a universal inequality on the kernels \(K,L\) would establish paired-flat square-switch preservation, hence unrestricted NORI1 through the known reduction. Such an inequality has not been proved: the transfer coefficient may be positive or negative. An independent script, nori_square_switch_rank4_resolvent_check.py, verifies (RK4), (RK6), and (RK9) by direct full geodesic enumeration in legal \(Q_6,Q_8\) instances, obtaining changes \(-4,-216,+208\), respectively. The rank-four transfer retains nonlinear shared-edge consistency but alone is not a proof of closure.
+
+
+**Universal first-order return-kernel identities.** In the above basis write
+\[
+Q=\begin{pmatrix}0&-I_2\\-I_2&0\end{pmatrix}.
+\]
+The antipode satisfies \(PU=UQ\), hence \(QCQ=-C\). Let \(A\) denote the adjacency matrix of the uncolored \(Q_n\). Antipodal oddness gives \(PRP=A-R\), or the anticommutator identity
+\[
+RP+PR=AP.
+\tag{RK10}
+\]
+Writing \(K(z)=\sum_{k\ge0}K_kz^k\) and \(L(z)=\sum_{k\ge0}L_kz^k\), the four-point kernels obey
+\[
+\boxed{K_0=I_4,\quad K_1=-C/2,\quad L_0=Q,\quad L_1=0.}
+\tag{RK11}
+\]
+*Proof.* Orthonormality gives \(K_0=I_4\), and \(PU=UQ\) gives \(L_0=Q\). Every red edge inside either switched square is along its selected matching direction; the two Walsh vectors on that square are eigenvectors with eigenvalues \(-\epsilon,+\epsilon\), with signs reversed in the companion square. No edge joins the two squares, whose exterior bit assignments differ in all \(n-2\ge2\) outside dimensions. Thus \(U^{\mathsf T}RU=-C/2\). Finally,
+\[
+L_1=U^{\mathsf T}(RP+PR)U=U^{\mathsf T}APU
+=(U^{\mathsf T}AU)Q=0.
+\]
+Indeed the two coordinate-direction translations within a square have opposite eigenvalues on either Walsh vector, so their sum annihilates its projection; other cube edges leave the two faces. \(\square\)
+
+These identities express shared-edge legality and antipodal oddness as restrictions on the four-dimensional return kernels. They do not by themselves impose a sign on the coefficient in (RK9); the verified examples show both signs occur.
+
+
+**Second-order universality and onset of nonlinear face curvature (paired-flat specialization).** Suppose \(n=2m\ge6\) and the red graph is paired-flat and therefore \(m\)-regular. The return kernels (RK5) satisfy the additional universal identities
+\[
+\boxed{K_2=mI_4,\qquad L_2=(2m-1)Q.}
+\tag{RK12}
+\]
+*Proof.* For either switched square, its four face vertices have one red neighbor along the chosen face direction and \(m-1\) red neighbors outside the face. The face Walsh modes \(u_a^H,u_b^H\) have unit norm and are orthogonal. Their red images restricted to the face are respectively \(\pm u_a^H,\mp u_b^H\), while outside-neighbor contributions from distinct source vertices land at distinct vertices. The red images of modes from the two antipodal squares have disjoint supports: their exterior assignments differ in \(n-2\ge4\) bits, whereas one-step exterior neighborhoods change at most one bit on either side. Therefore
+\[
+K_2=U^{\mathsf T}R^2U=(RU)^{\mathsf T}RU=mI_4.
+\]
+Write \(A\) for the complete cube adjacency. The previously established antipodal identity \(PR=(A-R)P\) gives
+\[
+U^{\mathsf T}RPRU
+=U^{\mathsf T}R(A-R)UQ
+=(U^{\mathsf T}RAU-K_2)Q.
+\]
+The sum of the two *uncolored* face-direction translations annihilates each face Walsh mode, so \(AU\) is supported on all exterior one-step neighbors. Each face vertex has \(m-1\) red exterior edges, and the distinct-neighbor and Walsh-orthogonality argument gives \(U^{\mathsf T}RAU=(m-1)I_4\). Hence \(U^{\mathsf T}RPRU=-Q\). Expanding \(L_2\) yields
+\[
+L_2=U^{\mathsf T}(R^2P+RPR+PR^2)U=mQ-Q+mQ=(2m-1)Q.
+\]
+This proves (RK12) with no restriction on nonlinear gate dependence. \(\square\)
+
+**Cubic kernel geometry.** At degree three, the two antipodal face blocks of \(K_3=U^{\mathsf T}R^3U\) cannot interact, because their exterior Hamming separation is \(n-2>3\). Within one face, an odd three-step walk can connect only pairs of vertices separated by exactly one of the two face directions. The restricted \(R^3\) matrix is symmetric and bipartite. Its Walsh compression consequently has zero mixed entry and opposite diagonal entries. Thus
+\[
+\boxed{K_3=\operatorname{diag}(k_F,-k_F,k_{\bar F},-k_{\bar F})}
+\tag{RK13}
+\]
+for two real scalars depending on the full coloring. This is the first return-kernel order where nonlinear gate information can enter; the two scalars need not agree or have fixed sign. Direct nonlinear \(Q_6,Q_8,Q_{10}\) experiments verify (RK12) and (RK13) and demonstrate variation in the cubic coefficients. The script nori_rank4_kernel_lowmoments.py checks (RK12), while nori_rank4_cubic_survey.py checks the cubic face form over independent gate samples.
+
+These relations sharpen the algebraic constraints on a hypothetical critical switch, but a complete-cancellation exclusion must still control the higher return coefficients through order \(2m\).
+
+
+**Mixed red/blue walk realization of the antipodal return kernel.** Let \(B=A-R=PRP\) be the blue adjacency matrix; this identity uses only antipodal oddness, not paired-flatness. Set \(\mathcal G_B(z)=(I-zB)^{-1}\). Since \(P\mathcal G_R(z)=\mathcal G_B(z)P\) and \(PU=UQ\), the kernel (RK5) satisfies
+\[
+\boxed{L(z)=U^{\mathsf T}\mathcal G_R(z)\mathcal G_B(z)UQ,\qquad
+L_k=U^{\mathsf T}\left(\sum_{a+b=k}R^aB^b\right)UQ.}
+\tag{RK14}
+\]
+*Proof.* Move \(P\) through the second red resolvent in \(U^{\mathsf T}\mathcal G_R P\mathcal G_R U\), then expand the product of two formal resolvents. \(\square\)
+
+The unsigned vertex-basis matrix \(\sum_{a+b=k}R^aB^b\) counts walks whose color sequence is red followed by blue, with any one cut point. Thus \(L_k\) is a signed face-Walsh compression of *actual two-phase walks in the same original coloring*, not an independent arbitrary matrix. For paired-flat \(n=2m\ge6\), one may also recover (RK12) immediately from
+\[
+L_2Q=U^{\mathsf T}(R^2+RB+B^2)U
+=U^{\mathsf T}(RA+B^2)U
+=(m-1)I_4+mI_4.
+\]
+The four-point return-kernel cancellation problem therefore retains the full shared red/blue edge consistency. None of these identities supplies the currently missing inequality ruling out the disappearance of every red full antipodal geodesic under one square switch.
+
+
+##### Concavity of the full antipodal geodesic count under one alternating-square switch
+
+Let \(c\) be any antipodally odd undirected binary edge coloring of \(Q_n\), \(n\ge3\). Fix an alternating square \(F\) on directions \(a,b\) and its antipodal square \(\bar F\). Let \(R,R'\) be the red adjacency matrices before and after complementing the eight edges in \(S=F\cup\bar F\). Set \(R_t=(1-t)R+tR'\) for a formal parameter \(t\), and write
+\[
+Z(t)=\operatorname{tr}(P R_t^n),
+\tag{QC1}
+\]
+where \(P\) is the antipodal permutation. At \(t=0,1\), \(Z(t)\) counts all rooted red full antipodal geodesics. For intermediate \(t\), it sums weights of all full direction-simple antipodal walks, assigning weight \(1-t\) to a formerly red switched edge, \(t\) to a formerly blue switched edge, one to an unchanged red edge, and zero to an unchanged blue edge.
+
+For the two-dimensional face-bit assignment \(\tau\), let \(y_\tau\in F\) and \(z_\tau\in\bar F\) have the *same* face bits and complementary values on the other \(n-2\) dimensions. Define \(h_\tau\) as the number of red geodesics from \(y_\tau\) to \(z_\tau\) using every exterior direction once, and set \(H=\sum_\tau h_\tau\). Let \(I\) count rooted full direction-simple antipodal paths with exactly two edges in \(S\), both in the same face and consecutive in the path, with their two-step block strictly away from both endpoints, and all other edges red. The two switched edges in such a path are necessarily one originally red and one originally blue.
+
+**Theorem (unrestricted quadratic concavity).**
+\[
+\boxed{Z(t)=(1-t)Z(0)+tZ(1)+t(1-t)(I+4H).}
+\tag{QC2}
+\]
+In particular, \(Z''(t)=-2(I+4H)\le0\) and
+\[
+Z(\tfrac12)=\tfrac12(Z(0)+Z(1))+\tfrac14(I+4H).
+\tag{QC3}
+\]
+No affine, vertex-balance, paired-flat, feedback, or restricted-gate hypothesis is needed.
+
+*Proof.* Every full antipodal \(n\)-step walk uses every original direction once. Consequently it can encounter \(S\) at most twice. A two-hit walk either takes the face directions \(a,b\) consecutively within one square, or uses one hit in each antipodal square, necessarily as its first and last edges. Every path in the first class has one red and one blue switched edge and, provided the other edges are red, contributes \(t(1-t)\).
+
+In the second class, the two switched edges are either both originally red or both originally blue: antipodal oddness reverses the red face-matching direction, and direction simplicity requires the first and last directions to differ. Deleting those first and last edges leaves a red exterior geodesic from \(y_\tau\) to \(z_\tau\), or its reversal. Conversely each of the \(H\) red exterior geodesics extends to four rooted cross-face two-hit paths: two with both hits red and two with both hits blue. Thus the cross-face contribution is
+\[
+2H(1-t)^2+2Ht^2.
+\]
+Each such exterior geodesic also extends to eight rooted two-hit paths with both hits in one face *at an endpoint block*: use the two face directions in either order before or after the exterior path, in either orientation. All eight have one red and one blue face edge, and contribute \(8Ht(1-t)\) in total.
+
+The remaining two-hit paths counted by \(I\) contribute \(It(1-t)\). Zero-hit paths contribute a constant. One-hit paths contribute either \(t\) or \(1-t\). Subtracting the affine interpolation of the two endpoint values, the cross-face term contributes \(-4Ht(1-t)\) and the same-face terms contribute \((8H+I)t(1-t)\). Their sum proves (QC2). \(\square\)
+
+
+**Corollary (signed four-point return-kernel inequality and higher-order cancellations).** In the rank-four notation (RK4)–(RK6), write \(E=R'-R=UCU^{\mathsf T}\), \(G(z)=(I-zR)^{-1}\), \(K(z)=U^{\mathsf T}G(z)U\), and \(L(z)=U^{\mathsf T}G(z)PG(z)U\). The resolvent formula applied to \(R_t=R+tE\) gives
+\[
+Z(t)=Z(0)+\sum_{r=1}^{n}
+t^r[z^{n-r}]\operatorname{tr}_4\bigl(C(K(z)C)^{r-1}L(z)\bigr).
+\tag{QC4}
+\]
+The quadratic theorem is therefore equivalent to the full-class matrix inequalities and identities
+\[
+\boxed{[z^{n-2}]\operatorname{tr}_4(CK(z)CL(z))=-(I+4H)\le0,}
+\tag{QC5}
+\]
+and
+\[
+\boxed{[z^{n-r}]\operatorname{tr}_4\bigl(C(K(z)C)^{r-1}L(z)\bigr)=0
+\quad(3\le r\le n).}
+\tag{QC6}
+\]
+*Proof.* Woodbury gives
+\[
+G_t-G=z\,t\,G U C(I-z\,t\,K C)^{-1}U^{\mathsf T}G.
+\]
+Expand the inverse as a formal geometric series, multiply by \(P\), take traces and then coefficient \([z^n]\). Equation (QC2) identifies the quadratic term and shows that all higher powers of \(t\) vanish. \(\square\)
+
+**Scope of the sign.** The curvature inequality (QC5) is for the total rooted antipodal trace, summed over all initial vertices. It need not hold separately for a prescribed root: in a paired-flat \(Q_6\) example whose exterior gate truth-table masks are \(0x8d4e,0x5175,0x34d3\), switching pair \(0\) at the two antipodal exterior assignments \(0,15\) gives a root-\(0\) polynomial \(Z_0(t)=4+2t^2\), whose quadratic coefficient is positive. The aggregated quadratic coefficient remains negative. Root freedom is essential to the cross-face bijections.
+
+**Critical-boundary specialization.** If \(c\) has red full antipodal geodesics but its switched neighbor has none, the existing two-hit transport theorem implies \(H=0\) because every red-red two-hit cross-face path would survive through its swapped companion. In that case
+\[
+Z(t)=(1-t)Z(0)+t(1-t)I.
+\tag{QC7}
+\]
+The coefficient sign and the hierarchy (QC6) constrain any critical-square return kernel, but (QC7) does not contradict \(Z(1)=0\). A further shared-gate inequality is required for unrestricted NORI1.
+
+**Independent audits.** The path-classification verifier nori_square_concavity_full_verifier.cpp enumerates all rooted original-direction orders in random legal \(Q_4,Q_6,Q_8\) colorings, separately counts \(I\), the cross-face paths \(4H\), the eight boundary companions per exterior path, and \(4Z(1/2)\), and verifies (QC2) in each case. Independently, nori_switch_quadratic_dp.py evaluates \(Z(-1),Z(0),Z(1)\) by direction-subset dynamic programming in \(Q_4,Q_6,Q_8,Q_{10}\), confirming a nonpositive aggregate quadratic coefficient. A rootwise checker nori_switch_rootwise_example.py verifies the failure of a rootwise curvature sign.
+
+
+**Failure of endpoint monotonicity (Q6).** Concavity (QC2) does not imply that \(Z(t)\) increases from \(t=0\). For legal paired-flat Q6 gates specified by the antipodally odd outside-pair eight-bit masks \((0xc3,0x1b,0x9f)\), switch the antipodally paired faces of pair \(0\) with outside indices \(1\) and \(14\). Exhaustive rooted direction-order enumeration yields
+\[
+Z(0)=336,\qquad Z(1)=284,\qquad I=36,\qquad H=3,
+\]
+hence
+\[
+\boxed{Z(t)=336-4t-48t^2,\quad Z'(0)=-4.}
+\tag{QC8}
+\]
+In this instance 60 mixed two-hit paths exist, of which 24 are the boundary companions of the six red-red and six blue-blue cross-face paths. An independent enumeration of all \(64\cdot6!\) rooted direction-simple full walks confirms these counts (nori_switch_path_polynomial.py). The inequality \(Z'(0)\ge0\), or equivalently \(Z(1)-Z(0)+I+4H\ge0\), is therefore false for arbitrary legal paired-flat colorings. Any proof of critical-switch preservation must use the critical hypothesis itself rather than endpoint monotonicity as a universal consequence of concavity.
+
+
+**Failure of simultaneous-switch concavity.** The preceding one-parameter concavity statement does not extend to joint concavity in two independent switch parameters. Consider the legal paired-flat \(Q_6\) coloring with outside-gate masks \((0x3a,0xbc,0x2c)\), interpreted as eight independent antipodally odd truth-table bits for the pair gates. Let \(s,t\) interpolate the antipodal square orbits of pairs \(1,2\), respectively, each with outside assignment \(5\) and its complement \(10\). Define \(Z(s,t)\) by weighting switched old-red edges by \(1-s\) or \(1-t\), switched old-blue edges by \(s\) or \(t\), and unchanged red edges by one. Rooted full-path enumeration yields
+\[
+\boxed{\operatorname{Hess} Z(0,0)=
+\begin{pmatrix}-96&68\\68&-48\end{pmatrix},
+\qquad \det\operatorname{Hess}Z(0,0)=-16.}
+\tag{QC9}
+\]
+Thus the Hessian is indefinite, even though each coordinate-direction second derivative is nonpositive. To verify, enumerate all \(2^6 6!\) root/order pairs. A path with an unchanged blue edge contributes zero. Otherwise, if it has \(r_i\) red and \(b_i\) blue edges at selected square \(i\), its weight is \(\prod_{i=1}^2(1-t_i)^{r_i}t_i^{b_i}\); differentiate this product twice at \((0,0)\) and sum over paths. Independent C++ and Python implementations agree on all three Hessian entries (nori_multiswitch_concavity_probe.cpp and nori_two_switch_hessian_probe.py). Therefore global joint concavity cannot be used to propagate the single-switch inequality through multiple legal gate switches. This finding does not affect the established one-switch identity (QC2).
+
+
 ##### Nested prefix carriers are homotopically constant; top degrees remain movable
 
 Use the notation of the preceding Subsection. For every ordered partition \(\mathcal P\) into at least two nonempty blocks, put

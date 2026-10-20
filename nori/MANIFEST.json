@@ -168,9 +168,9 @@
   "article_versions": {
     "article_xv_projective_face_flag_unification": {
       "composition": {
-        "body_chars": 2104603,
-        "composed_through_revision": 11901,
-        "composition_version": 590,
+        "body_chars": 2124432,
+        "composed_through_revision": 11968,
+        "composition_version": 600,
         "frontier": {
           "current": null
         },
@@ -349,10 +349,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-19T15:42:49.218069+00:00",
+  "generated_at": "2026-10-20T16:39:06.047406+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 520,
+  "research_note_count": 542,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -712,9 +712,9 @@
     },
     "opposed_projective_face_windows_and_complete_paths": {
       "composition": {
-        "body_chars": 1757564,
-        "composed_through_revision": 11900,
-        "composition_version": 552,
+        "body_chars": 1777393,
+        "composed_through_revision": 11967,
+        "composition_version": 562,
         "frontier": {
           "current": null
         },
@@ -727,7 +727,7 @@
       "version": 2
     }
   },
-  "snapshot_revision": 7175,
+  "snapshot_revision": 7254,
   "startup_broadcasts": [
     {
       "body": "User-requested corrective research guidance, issued 19 October 2026 UTC (18 October EDT), session session_nori_r11739_1.\n\nRead the current opening assessment in Article XVI, Subsection obstruction_compatibility_and_a_programme_for_nori1_closure, composition 21 or its successor. It supersedes the priority ordering of the historical thirty-direction catalogue.\n\nPRIMARY CLOSURE TARGET: preserve existence of a monochromatic full antipodal geodesic across one legal antipodally paired alternating-square switch in arbitrary nonlinear paired-flat colorings. The established balanced good/bad boundary normalization and two-hit temporal-word involution reduce a hypothetical failure to the strict one-internal-hit configuration. Balance and this square-boundary criticality already coexist; treat normalization as resolved.\n\nRESEARCH GATES: Before extending a subsidiary line, state what its strongest plausible theorem implies for unrestricted NORI1 and identify the missing transfer. Prioritize a theorem producing the hypotheses of an existing forcing mechanism. For affine peeling, seek an arbitrary-rank theorem or a nonlinear transfer; further finite-rank ceilings alone receive secondary priority. The standard balanced lift retains arbitrary nonlinear gates, and a permitted square switch can leave the affine-gate class. For seam packets, seek a dimension-uniform transport or clause-generation invariant, allowing certificate size to grow. For face cuts, prove that a hypothetical counterexample supplies the necessary red anchors and overlapping blocked faces before refining prescribed examples further.\n\nQUANTITATIVE CORRECTIONS: The walk-pumping result collapses the intrinsic uniform odd-occurrence Gibbs energy and hybrid/coupled policies containing it to an existing rooted geodesic-defect quantity. Consult note_nori_xvi_walk_pumping_shortest_repair_20261018 v3 and the scope correction in note_nori_xvi_budgeted_bigon_partition_exchange_20261017_r11435 v19. Retain valid pathwise certificates; seek a universal upper-bound mechanism on a justified family such as shortest paths. A statistic dominating minority defect needs a uniform o(n) bound for amplification; its own tensor additivity is optional. Unanchored weighted face capacity, bounded-degree blocker relaxations, and independent pivot-square packing have proved limitations; reopen them only with a specific additional ingredient addressing those limitations.\n\nPreserve independent judgment and pursue alternatives when their closure implication is stronger. Distinguish forcing theorems, hypothesis-production theorems, equivalences, restricted-family results, computations, and method obstructions. Preserve existing proofs and publication history. Grand closure also requires the boundary-tournament reduction with distinct original vertices; record that obligation separately from cube-only progress.",
@@ -737,6 +737,33 @@
       "priority": 10,
       "scope": "nori",
       "title": "Closure priorities: nonlinear square boundary and explicit transfer obligations"
+    },
+    {
+      "body": "Until unrestricted NORI1 is solved, allocate research effort to NORI1 alone. Defer all investigation of the boundary-tournament part of the grand conjecture, including its one-change Hamiltonian statement, common cube/tournament frameworks, and boundary-transfer arguments. Preserve the boundary target and its original-vertex simplicity condition for later resumption. This is a priority instruction; it makes no claim that the boundary statement is solved or that NORI1 alone proves the grand conjecture. Keep NORI1 work unrestricted and nonlinear.",
+      "broadcast_id": "nori_nori1_first_defer_boundary_tournament_20261019",
+      "created_at": "2026-10-19T15:53:20.548754+00:00",
+      "creation_revision": 11914,
+      "priority": 10,
+      "scope": "nori",
+      "title": "NORI1 first: defer boundary-tournament work"
+    },
+    {
+      "body": "On your next continuation, briefly reassess your current target against a plausible proof of unrestricted NORI1. State where the proposed lemma enters that proof, distinguish established links from conjectural ones, and identify the weakest statement that would suffice. Resume sustained mathematical work on that implication. Preserve freedom to choose a materially different route when the evidence warrants it.\n\nThe recent record shows repeated detours into stronger assertions about every root, selected fibers, positive density, bounded exchanges, and refined obstruction families. Such assertions deserve substantial effort when the intended argument needs them. After refuting a strengthening, return to the surviving existential question and its required hypotheses. Extend the obstruction only when doing so changes the next proof decision. A small model or affine example can decisively test a central lemma; its further classification needs a concrete purpose.\n\nFor critical-square investigations, use the simultaneous hypotheses on the same hypothetical good-to-bad boundary, including global unavoidability. Successful examples that defeat local substitutes clarify those substitutes; then return to the full boundary problem. Independent universal-estimate and representation routes remain welcome when they offer a plausible forcing mechanism.\n\nCarry a promising unresolved question across continuations. A brief conversational report of an inconclusive attempt is sufficient; persist findings selectively when they materially help future research. Current publication restraint should continue. Boundary-tournament investigation remains deferred until unrestricted NORI1 is solved. The shared workflow now incorporates these generic target-selection and continuation principles.",
+      "broadcast_id": "nori_target_selection_proof_continuation_20261020",
+      "created_at": "2026-10-20T16:34:30.290562+00:00",
+      "creation_revision": 11992,
+      "priority": 10,
+      "scope": "nori",
+      "title": "Choose the next target by its role in a proof"
+    },
+    {
+      "body": "The recent publication restraint is welcome. Please continue giving difficult unrestricted NORI1 questions sustained attention, allowing several continuations of inconclusive exploration when the mathematical evidence supports the route. Use tractable models, including affine gates and small-dimensional examples, as temporary laboratories for a precisely stated full-class mechanism. After learning from a model, return to the missing unrestricted implication. Further classifications, exact packing values, rank increases, and extensions of solved families deserve effort when they supply a credible transfer step or decisively test a live central lemma. Favor arguments retaining arbitrary nonlinear dependence, shared-edge consistency, direction simplicity, and freedom to choose the root; where useful, combine necessary conditions on the same hypothetical counterexample. Promising directions include generating witnessed clauses at a strict critical boundary, cross-root exchanges preserving used directions, and universal profile-support, shortest-path, or entropy estimates. These are suggestions for independent judgment. A serious investigation may conclude with no persisted result. Record findings selectively when they materially change the next research decision; sustained creative exploration remains the priority.",
+      "broadcast_id": "nori_gentle_redirection_to_unrestricted_mechanisms_20261019",
+      "created_at": "2026-10-19T21:45:00.366929+00:00",
+      "creation_revision": 11927,
+      "priority": 20,
+      "scope": "nori",
+      "title": "Research guidance: return to unrestricted mechanisms"
     },
     {
       "body": "Editorial architecture changed at the shared source. Subsection = stable mutable collection of related definitions, lemmas, proofs, theorems, refinements and resolved objections; do not create one new Subsection per result. Read existing relevant Subsections, revise current compositions where appropriate; create a new Subsection for distinct substantial developments, and group mature themes under coherent Sections. Section and Article manuscripts are generated from child compositions, not independently authored. Article XIV now has five thematic Sections; Article XI has five; Article XV has four. Check live Article memberships and revisions before publishing, and avoid old assumptions that these Articles each have one catch-all Section. Use research notes for selective preliminary/negative findings; preserve IDs and publication history when editing.",
@@ -2985,14 +3012,14 @@
     },
     "gauge_critical_switches_and_clustered_witnesses_on_full_paths": {
       "composition": {
-        "body_chars": 687936,
-        "composed_through_revision": 11899,
-        "composition_version": 208,
+        "body_chars": 707761,
+        "composed_through_revision": 11966,
+        "composition_version": 218,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Universal temporal derivative and all-even midpoint incidence obstruction; proof note_a33d0ec0d34a24ff85f2b99b",
+        "source_note": "Concavity scope correction: verified indefinite two-switch Hessian in legal Q6 coloring",
         "stale": null,
         "stale_dependencies": []
       },
@@ -6163,8 +6190,8 @@
   },
   "toolkit_count": 38,
   "universal_document_versions": {
-    "guide": 51,
-    "reflexes": 26,
-    "research_architecture_design_principles": 1
+    "guide": 53,
+    "reflexes": 28,
+    "research_architecture_design_principles": 3
   }
 }
