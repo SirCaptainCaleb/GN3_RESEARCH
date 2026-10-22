@@ -6,10 +6,10 @@
 - Labels: NORI1, paired-flat, midpoint-collision, dimension-uniform, rootwise-success, method-obstruction, nonlinear-parity
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 3
+- Current version: 4
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r11913_4
-- Updated session: session_nori_r11929_1
+- Updated session: session_nori_r11992_7
 - Disposition: none
 - Successor: none
 
@@ -79,3 +79,19 @@ This excludes dimension-uniform positive-density or asymptotically full-fiber mi
 ## Complete-halfwalk strengthening of the Q8 obstruction
 
 For the same four legal Q8 gates, let H_x be the set of vertices reached from x by four red steps, allowing repeated pairs, directions, and backtracking. An independent direct walk enumeration proves 24<=|H_x|<=62 for all 256 roots. Since every four-step endpoint belongs to one bipartition class containing 64 antipodal vertex pairs, the cardinality threshold |H_x|>64 would force a red eight-step antipodal walk, hence a red full geodesic. This forcing criterion is not attained at ANY root, although the coloring has a red full geodesic from every root. Moreover H_x has no complementary pair for x in {86,90,102,106,150,154}. Thus even complete halfwalks, rather than only one-visit-per-pair sweeps, do not yield a rootwise antipodal-collision property under universal rooted success. Independent verifier: nori_complete_midwalk_expansion_obstruction.py. This is a finite method obstruction; it establishes no analogous support bound in every dimension.
+
+## Bounded-asymmetry arm meetings: product obstruction (20 October 2026)
+
+For a legal paired-flat coloring with m direction pairs, define an r-asymmetric meeting from a root x to mean two red paths from x and its antipode to one endpoint, using each original direction once in their union, with the longer arm traversing both original directions of a set I of s<=r pair labels and one direction of each other pair, and the shorter arm traversing the complementary original direction of every pair outside I. The arm lengths are m+s and m-s. Roots, orders, I and the meeting endpoint may vary, subject to a prescribed initial pair-parity p.
+
+THEOREM. For each integer r>=0 and every m>=4(r+1), there is a legal paired-flat coloring of Q_(2m) in which every vertex starts a red full antipodal geodesic, but some initial pair-parity fiber admits no r-asymmetric meeting for any permitted set I, any root in that fiber, or any pair orders.
+
+PROOF. Take k=r+1 independent copies of the Q8 gate system and midpoint-negative parity 0000 given above, forming the Cartesian product on 4k pairs. Give every factor initial pair parity 0000. If an r-asymmetric meeting existed, its s<=r repeated pair labels would touch at most r factors. In an untouched factor the projections of the two arms both start at antipodal vertices, each traverse every factor pair once, and end together. That is the forbidden complementary one-per-pair midpoint meeting in parity 0000. For m>4k, append reader pairs f_j=q_0 while retaining old gates independently of the appended variables. Every alleged r-asymmetric meeting still projects to the original k factors, and the same argument applies. Each original factor has a red full geodesic from every root, so their product does as well by concatenation. The appended reader pairs preserve rootwise success by inserting their two red original directions on opposite sides of the unique original direction 0 in a core full red geodesic. QED.
+
+QUANTITATIVE COROLLARY. For the k-fold product on 4k pairs, the proportion of initial pair-parity fibers that admit any r-asymmetric meeting is at most
+
+  16^(-k) * sum_(s=0)^r binom(k,s) 15^(k-s).
+
+In each base factor, the midpoint-negative parity fiber is 0000 and the other fifteen fibers are midpoint-positive by the base certificate. An r-asymmetric meeting can involve at most r midpoint-negative factors, since each negative factor must contain one of the repeated pair labels. Counting parity fibers with at most r negative factors gives the bound. For fixed r the upper bound tends to zero as k grows. With additional reader pairs, the same bound applies to the fraction of all parity fibers, by projection.
+
+SCOPE. This rules out universal prescribed-parity meetings and any dimension-uniform positive-density guarantee for arm asymmetry bounded by a fixed r, even under rootwise red full-geodesic success. It leaves open a meeting in some adaptively selected parity fiber, a scheme with growing repeated-pair budget, and unrestricted NORI1. In particular it does not refute globally existential asymmetric meetings.

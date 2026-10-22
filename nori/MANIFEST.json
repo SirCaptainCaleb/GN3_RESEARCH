@@ -1,6 +1,6 @@
 {
   "active_section_count": 23,
-  "active_subsection_count": 318,
+  "active_subsection_count": 319,
   "article_sequences": {
     "article_xv_projective_face_flag_unification": [
       {
@@ -333,9 +333,9 @@
     },
     "nori_article_xvii_sustained_research_and_unrestricted_forcing": {
       "composition": {
-        "body_chars": 33600,
-        "composed_through_revision": 11912,
-        "composition_version": 2,
+        "body_chars": 129827,
+        "composed_through_revision": 12146,
+        "composition_version": 32,
         "frontier": {
           "current": null
         },
@@ -349,10 +349,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-20T16:39:06.047406+00:00",
+  "generated_at": "2026-10-22T01:21:46.694404+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 542,
+  "research_note_count": 567,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -584,9 +584,9 @@
     },
     "nori_sustained_full_class_research_programme": {
       "composition": {
-        "body_chars": 33538,
-        "composed_through_revision": 11911,
-        "composition_version": 2,
+        "body_chars": 129765,
+        "composed_through_revision": 12145,
+        "composition_version": 32,
         "frontier": {
           "current": null
         },
@@ -727,8 +727,26 @@
       "version": 2
     }
   },
-  "snapshot_revision": 7254,
+  "snapshot_revision": 7409,
   "startup_broadcasts": [
+    {
+      "body": "The recent return to topology and publication restraint is welcome. The next improvement is depth of mechanism. A topological vocabulary can still conceal the old cycle of a tractable strengthening, a counterexample, and a refined local classification. Give sustained attention to why unrestricted NORI1 should hold, allowing several continuations without a theorem or persisted result.\n\nRead the current full composition of central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere, together with the relevant arguments in Articles II, XIV, and XVII. The centralized Freudenthal complex is a significant shared platform: it organizes all roots and geodesic orders with antipodal symmetry and common incidence. Investigate what that joint structure makes possible. Further local classifications deserve effort when they inform a live global mechanism; the construction alone does not supply the missing forcing implication.\n\nExplore creative labelings and maps with mathematical freedom. During their development, consider what a forced zero, complementary pair, simplex, or obstruction would mean in the original coloring. Seek information that survives shared faces and can support compatible path assembly, a justified exchange, or a contradiction from the same hypothetical counterexample. These questions guide conceptual development; they do not require a complete decoding theorem before exploration begins. Labels may emerge from geometric, variational, or other structural ideas. The suggested named topological theorems and geodesic-length labels remain possibilities, not assignments.\n\nReachability data remain available, but re-encoding them needs a new mathematical reason to help. Explain what additional structure or operation addresses their established compatibility problem. Intrinsic face tables, a new carrier, convex balance, or an equivalent reformulation can be useful intermediate constructions; identify what they actually add. When several variants again end at an unspecified global compatibility or integral-witness assertion, pause the variants and investigate that assertion or reconsider the representation. Preserve freedom to choose the root, original direction simplicity, arbitrary nonlinear color dependence, and consistency on shared edges.\n\nThe median three-route telescoping identity deserves further thought because it already supplies a same-coloring, direction-preserving recombination and a conditional descent mechanism. One meaningful question is whether global topology can force its required low-energy configuration. This is a promising option, not a compulsory route or a claim that its hypotheses are attainable.\n\nAvoid defaulting to prescribed-root density, center inclusion, bounded-radius repair, higher-rank local winding classifications, or complementary-profile experiments merely because they are tractable. Pursue such questions when their answers resolve a specific uncertainty in a serious unrestricted argument. Use computation after a structural question has emerged and when its outcome changes a proof decision. Small-dimensional agreement alone is insufficient motivation for a uniform conjecture. After a counterexample, reconsider the explanation before extending the family or inventing another strengthening.\n\nContinue coherent difficult investigations across sessions. Publish selectively when a result materially advances a central mechanism or establishes an obstruction that changes a serious research decision. Routine failed attempts, isolated refinements, and repeated descriptions of the same gap need no new subsection or note. A concise conversational report can suffice, subject to required session bookkeeping. There is no discovery or publication quota. Boundary-tournament research remains deferred until unrestricted NORI1 is solved.",
+      "broadcast_id": "nori_topological_mechanisms_and_creative_labelings_20261021",
+      "created_at": "2026-10-21T13:22:47.601957+00:00",
+      "creation_revision": 12087,
+      "priority": 4,
+      "scope": "nori",
+      "title": "Deepen the topological mechanism; resist tractable side problems"
+    },
+    {
+      "body": "The user redirects the team toward combinatorial topology for unrestricted NORI1. Give sustained attention to a structural explanation of why antipodal oddness forces a monochromatic direction-simple antipodal geodesic. The current numerical conjecture, small-counterexample, refined-conjecture cycle has remained distracting even as publication has declined.\n\nRevisit Article II — Equivariant topology and Article XIV — Type-A Rook Galleries and Antipodal Chain Topology, together with relevant later topological work and the carry-forward directions in Article XVII. Read the relevant complete arguments and identify precisely what previous approaches established, where their forcing or decoding step stopped, and which assumptions caused the difficulty. Use that understanding to develop a coherent topological approach that may differ substantially from earlier constructions.\n\nSeek the appropriate objects, symmetry, maps or labeling rules, and obstruction. These may emerge gradually. Investigate how absence of a desired geodesic could induce incompatible global data, and how any topologically forced witness would retain original direction simplicity and shared-edge consistency. Developing this conceptual foundation can occupy several continuations with no theorem, computation, or publication. A complete proof continuation and a precise testable lemma may emerge later. This updates the earlier emphasis on specifying them at the outset.\n\nBorsuk–Ulam, Poincare–Miranda, Sperner-type labeling, and geodesic-length data are illustrative possibilities suggested by the user. Select a theorem or framework through its fit to the mathematical structure; these names impose no particular construction. Topology is a research priority and a working hypothesis about the mechanism of proof, with its success still to be established. Preserve independent mathematical judgment within that investigation.\n\nUse computation selectively when a developed argument presents a specific uncertainty and the outcomes would change the next proof decision. Small-dimensional numerical agreement alone is a weak basis for a general conjecture. Reassess the conceptual explanation after a counterexample instead of routinely extending the example or searching for the next stronger numerical pattern. Favor depth and continuity of thought over immediate concreteness. Boundary-tournament work remains deferred. Publication and note creation remain selective.",
+      "broadcast_id": "nori_return_to_conceptual_combinatorial_topology_20261020",
+      "created_at": "2026-10-20T23:39:57.612169+00:00",
+      "creation_revision": 12002,
+      "priority": 5,
+      "scope": "nori",
+      "title": "Research priority: sustained combinatorial topology for NORI1"
+    },
     {
       "body": "User-requested corrective research guidance, issued 19 October 2026 UTC (18 October EDT), session session_nori_r11739_1.\n\nRead the current opening assessment in Article XVI, Subsection obstruction_compatibility_and_a_programme_for_nori1_closure, composition 21 or its successor. It supersedes the priority ordering of the historical thirty-direction catalogue.\n\nPRIMARY CLOSURE TARGET: preserve existence of a monochromatic full antipodal geodesic across one legal antipodally paired alternating-square switch in arbitrary nonlinear paired-flat colorings. The established balanced good/bad boundary normalization and two-hit temporal-word involution reduce a hypothetical failure to the strict one-internal-hit configuration. Balance and this square-boundary criticality already coexist; treat normalization as resolved.\n\nRESEARCH GATES: Before extending a subsidiary line, state what its strongest plausible theorem implies for unrestricted NORI1 and identify the missing transfer. Prioritize a theorem producing the hypotheses of an existing forcing mechanism. For affine peeling, seek an arbitrary-rank theorem or a nonlinear transfer; further finite-rank ceilings alone receive secondary priority. The standard balanced lift retains arbitrary nonlinear gates, and a permitted square switch can leave the affine-gate class. For seam packets, seek a dimension-uniform transport or clause-generation invariant, allowing certificate size to grow. For face cuts, prove that a hypothetical counterexample supplies the necessary red anchors and overlapping blocked faces before refining prescribed examples further.\n\nQUANTITATIVE CORRECTIONS: The walk-pumping result collapses the intrinsic uniform odd-occurrence Gibbs energy and hybrid/coupled policies containing it to an existing rooted geodesic-defect quantity. Consult note_nori_xvi_walk_pumping_shortest_repair_20261018 v3 and the scope correction in note_nori_xvi_budgeted_bigon_partition_exchange_20261017_r11435 v19. Retain valid pathwise certificates; seek a universal upper-bound mechanism on a justified family such as shortest paths. A statistic dominating minority defect needs a uniform o(n) bound for amplification; its own tensor additivity is optional. Unanchored weighted face capacity, bounded-degree blocker relaxations, and independent pivot-square packing have proved limitations; reopen them only with a specific additional ingredient addressing those limitations.\n\nPreserve independent judgment and pursue alternatives when their closure implication is stronger. Distinguish forcing theorems, hypothesis-production theorems, equivalences, restricted-family results, computations, and method obstructions. Preserve existing proofs and publication history. Grand closure also requires the boundary-tournament reduction with distinct original vertices; record that obligation separately from cube-only progress.",
       "broadcast_id": "nori_closure_corrective_guidance_20261019",
@@ -1565,6 +1583,23 @@
       },
       "development_version": 1,
       "section_id": "nori_type_a_rook_gallery_topology",
+      "version": 1
+    },
+    "central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere": {
+      "composition": {
+        "body_chars": 96157,
+        "composed_through_revision": 12144,
+        "composition_version": 30,
+        "frontier": {
+          "current": null
+        },
+        "has_composition": true,
+        "source_note": "Relative w1 square on canonical seam Möbius carrier, with explicit color-decoding gap; session_nori_r12118_2",
+        "stale": null,
+        "stale_dependencies": []
+      },
+      "development_version": 1,
+      "section_id": "nori_sustained_full_class_research_programme",
       "version": 1
     },
     "centrally_symmetric_permutahedral_counterexamples_to_the_opposed_window_conjecture": {
@@ -6190,8 +6225,8 @@
   },
   "toolkit_count": 38,
   "universal_document_versions": {
-    "guide": 53,
+    "guide": 54,
     "reflexes": 28,
-    "research_architecture_design_principles": 3
+    "research_architecture_design_principles": 4
   }
 }

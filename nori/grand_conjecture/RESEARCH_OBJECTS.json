@@ -649,6 +649,14 @@
             "research_status": "active"
         },
         {
+            "id": "central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere",
+            "type": "subsection",
+            "title": "Central Freudenthal subdivision and the all-root geodesic chamber sphere",
+            "version": 1,
+            "superseded": false,
+            "research_status": "active"
+        },
+        {
             "id": "centrally_symmetric_permutahedral_counterexamples_to_the_opposed_window_conjecture",
             "type": "subsection",
             "title": "Centrally symmetric permutahedral counterexamples to the opposed-window conjecture",

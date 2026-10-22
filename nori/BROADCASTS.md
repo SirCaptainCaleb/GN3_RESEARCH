@@ -2,6 +2,40 @@
 
 These persistent project directives remain in force until explicitly removed.
 
+## Deepen the topological mechanism; resist tractable side problems
+
+The recent return to topology and publication restraint is welcome. The next improvement is depth of mechanism. A topological vocabulary can still conceal the old cycle of a tractable strengthening, a counterexample, and a refined local classification. Give sustained attention to why unrestricted NORI1 should hold, allowing several continuations without a theorem or persisted result.
+
+Read the current full composition of central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere, together with the relevant arguments in Articles II, XIV, and XVII. The centralized Freudenthal complex is a significant shared platform: it organizes all roots and geodesic orders with antipodal symmetry and common incidence. Investigate what that joint structure makes possible. Further local classifications deserve effort when they inform a live global mechanism; the construction alone does not supply the missing forcing implication.
+
+Explore creative labelings and maps with mathematical freedom. During their development, consider what a forced zero, complementary pair, simplex, or obstruction would mean in the original coloring. Seek information that survives shared faces and can support compatible path assembly, a justified exchange, or a contradiction from the same hypothetical counterexample. These questions guide conceptual development; they do not require a complete decoding theorem before exploration begins. Labels may emerge from geometric, variational, or other structural ideas. The suggested named topological theorems and geodesic-length labels remain possibilities, not assignments.
+
+Reachability data remain available, but re-encoding them needs a new mathematical reason to help. Explain what additional structure or operation addresses their established compatibility problem. Intrinsic face tables, a new carrier, convex balance, or an equivalent reformulation can be useful intermediate constructions; identify what they actually add. When several variants again end at an unspecified global compatibility or integral-witness assertion, pause the variants and investigate that assertion or reconsider the representation. Preserve freedom to choose the root, original direction simplicity, arbitrary nonlinear color dependence, and consistency on shared edges.
+
+The median three-route telescoping identity deserves further thought because it already supplies a same-coloring, direction-preserving recombination and a conditional descent mechanism. One meaningful question is whether global topology can force its required low-energy configuration. This is a promising option, not a compulsory route or a claim that its hypotheses are attainable.
+
+Avoid defaulting to prescribed-root density, center inclusion, bounded-radius repair, higher-rank local winding classifications, or complementary-profile experiments merely because they are tractable. Pursue such questions when their answers resolve a specific uncertainty in a serious unrestricted argument. Use computation after a structural question has emerged and when its outcome changes a proof decision. Small-dimensional agreement alone is insufficient motivation for a uniform conjecture. After a counterexample, reconsider the explanation before extending the family or inventing another strengthening.
+
+Continue coherent difficult investigations across sessions. Publish selectively when a result materially advances a central mechanism or establishes an obstruction that changes a serious research decision. Routine failed attempts, isolated refinements, and repeated descriptions of the same gap need no new subsection or note. A concise conversational report can suffice, subject to required session bookkeeping. There is no discovery or publication quota. Boundary-tournament research remains deferred until unrestricted NORI1 is solved.
+
+- ID: nori_topological_mechanisms_and_creative_labelings_20261021
+- Scope: nori
+
+## Research priority: sustained combinatorial topology for NORI1
+
+The user redirects the team toward combinatorial topology for unrestricted NORI1. Give sustained attention to a structural explanation of why antipodal oddness forces a monochromatic direction-simple antipodal geodesic. The current numerical conjecture, small-counterexample, refined-conjecture cycle has remained distracting even as publication has declined.
+
+Revisit Article II — Equivariant topology and Article XIV — Type-A Rook Galleries and Antipodal Chain Topology, together with relevant later topological work and the carry-forward directions in Article XVII. Read the relevant complete arguments and identify precisely what previous approaches established, where their forcing or decoding step stopped, and which assumptions caused the difficulty. Use that understanding to develop a coherent topological approach that may differ substantially from earlier constructions.
+
+Seek the appropriate objects, symmetry, maps or labeling rules, and obstruction. These may emerge gradually. Investigate how absence of a desired geodesic could induce incompatible global data, and how any topologically forced witness would retain original direction simplicity and shared-edge consistency. Developing this conceptual foundation can occupy several continuations with no theorem, computation, or publication. A complete proof continuation and a precise testable lemma may emerge later. This updates the earlier emphasis on specifying them at the outset.
+
+Borsuk–Ulam, Poincare–Miranda, Sperner-type labeling, and geodesic-length data are illustrative possibilities suggested by the user. Select a theorem or framework through its fit to the mathematical structure; these names impose no particular construction. Topology is a research priority and a working hypothesis about the mechanism of proof, with its success still to be established. Preserve independent mathematical judgment within that investigation.
+
+Use computation selectively when a developed argument presents a specific uncertainty and the outcomes would change the next proof decision. Small-dimensional numerical agreement alone is a weak basis for a general conjecture. Reassess the conceptual explanation after a counterexample instead of routinely extending the example or searching for the next stronger numerical pattern. Favor depth and continuity of thought over immediate concreteness. Boundary-tournament work remains deferred. Publication and note creation remain selective.
+
+- ID: nori_return_to_conceptual_combinatorial_topology_20261020
+- Scope: nori
+
 ## Closure priorities: nonlinear square boundary and explicit transfer obligations
 
 User-requested corrective research guidance, issued 19 October 2026 UTC (18 October EDT), session session_nori_r11739_1.

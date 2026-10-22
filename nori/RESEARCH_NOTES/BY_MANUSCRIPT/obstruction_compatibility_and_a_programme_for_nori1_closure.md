@@ -22,6 +22,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Four-pair reader-cycle synchronization and parity-guard red-face forcing](../note_nori_fourcycle_parity_sync_r11510.md) — active/proved
 - [Independent affine-eight and rank-five twelve-label finite closure certificates](../note_43efdcdab134f6eee75a199b.md) — active/proved
 - [Isolated chord bound for phase-immune return corank and ten-word Q6 phase forcing](../note_nori_phase_interlacement_corank_r11640.md) — active/proved
+- [Mixed antipodal face blockers and red witness edges at a globally unavoidable paired square](../note_nori_strict_square_mixed_face_blockers_r11992_6.md) — active/proved
 - [Mixed-voltage whole-gate implication transport through nonlinear fibers](../note_nori_mixed_voltage_nonlinear_gate_fiber_transport_r11913.md) — active/proved
 - [Paired midpoint collisions: unrestricted tensor identity and raw critical-scarcity barrier](../note_nori_xvi_midpoint_tensor_product_and_scarcity_barrier_20261018_r11755.md) — active/proved
 - [Q6 paired-square switches span every rootwise linear witness-census variation](../note_nori_xvi_linear_root_census_square_switch_obstruction_20261018_r11755.md) — active/proved

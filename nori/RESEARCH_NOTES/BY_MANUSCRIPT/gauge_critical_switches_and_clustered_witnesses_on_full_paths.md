@@ -5,8 +5,10 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [A single branching target across two reducible feedback components leaves prescribed restoration roots empty](../note_0868fc3b9c03299a5e19a9b8.md) — active/proved
 - [A tree interaction face with empty endpoint roots and one internal defect](../note_0ef014a49eca70c6785725e2.md) — active/proved
 - [Acyclic-orientation ceiling for nonlinear half-sweep permutation ranks](../note_nori_permutation_sweep_acyclic_orientation_rank_barrier_r11755.md) — active/proved
+- [Adjacent-root phase splice and antipodally separated successful roots](../note_nori_adjacent_root_phase_splice_and_feedforward_barrier_r11993.md) — active/proved
 - [All-dimensional rooted rainbow two-direction obstruction](../note_nori_all_odd_rooted_rainbow_deficit_20261016.md) — active/proved
 - [Alternating geodesic index vanishes despite red success in arbitrarily high dimensions](../note_nori_signed_geodesic_index_tensor_cancellation_r11984.md) — active/proved
+- [Anchored pair orders can miss every complementary red half-sweep](../note_nori_fixed_first_sweep_order_obstruction_r11992.md) — active/proved
 - [Antipodal degree duality, alternating-cycle normal form and universal degree-pattern realization](../note_nori_degree_dual_alternating_cycles_and_folded_cube_orientation_20261015.md) — active/proved
 - [Balanced odd cubes with half the directions unavailable as first monochromatic steps](../note_nori_balanced_half_direction_first_step_obstruction_20261015.md) — active/proved
 - [Balanced six-cube refutes canonical star-midpoint completion](../note_nori_balanced_q6_canonical_star_midpoint_failure_20261015.md) — active/proved
@@ -36,6 +38,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Linear antipodal detours inside connected switch components](../note_nori_antipodal_switch_component_long_detours_20261015.md) — active/proved
 - [Linear antipodal detours inside connected switch components](../note_nori_antipodal_switch_component_long_detours_20261015.md) — active/proved
 - [Maximal opposite-face separation and two-intersection condition](../note_3d7c892fd57a7f1274daf07a.md) — active/proved
+- [Mixed antipodal face blockers and red witness edges at a globally unavoidable paired square](../note_nori_strict_square_mixed_face_blockers_r11992_6.md) — active/proved
 - [Nonlinear nested returns: nonsingular cores, odd singular cores and slab transport](../note_nori_nonlinear_outer_return_forcing_r11785.md) — active/proved
 - [Nonlinear nested returns: nonsingular cores, odd singular cores and slab transport](../note_nori_nonlinear_outer_return_forcing_r11785.md) — active/proved
 - [Open full middle-layer packing after one-direction selector changes](../note_d48a286f13775bffb842e5ba.md) — active/conjectured

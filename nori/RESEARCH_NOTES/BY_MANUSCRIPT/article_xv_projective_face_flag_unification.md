@@ -2,6 +2,7 @@
 
 Sidecar only; no note body is included in the mathematical manuscript.
 
+- [Faithful edge-geodesic carrier: equivariant collapse and relative Petrie cycles](../note_nori_xiv_faithful_edge_geodesic_equivariant_collapse_petrie_relative_cycles_20261020_r12002.md) — active/proved
 - [Free rank-uniform oppositions on products of simplices](../note_9f5f5943e8387ac6b7a942d3.md) — active/proved
 - [Legal antipodal cube coloring with zero terminal braid switch-wedge average](../note_182f83468391d960dd44cf94.md) — active/proved
 - [Longest-element diagram opposition explains the distinct simplex and cube flag involutions](../note_fa432f4c92d4ae7ee11a1295.md) — active/proved

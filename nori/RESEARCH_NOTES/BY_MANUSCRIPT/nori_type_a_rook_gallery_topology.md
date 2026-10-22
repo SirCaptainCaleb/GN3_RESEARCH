@@ -12,6 +12,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Coxeter-cycle first moments and why sign characters fail parabolic descent](../note_5d7b594c61a19c3cf0c697f9.md) — active/proved
 - [Edge-star model separates topology from dimension support](../note_1c232c5361d009cf8f48baab.md) — active/proved
 - [Equivariant bridge transport for prefix complement spheres](../note_eff66ae9b06f52a8f31457e9.md) — active/proved
+- [Faithful edge-geodesic carrier: equivariant collapse and relative Petrie cycles](../note_nori_xiv_faithful_edge_geodesic_equivariant_collapse_petrie_relative_cycles_20261020_r12002.md) — active/proved
 - [Full second-switch signed spectra occur within one primary cell](../note_08c672f113501a49345e1a6d.md) — active/proved
 - [Integral antipodal sign in prefix-complement sphere transport](../note_b936a3db0eb4b65930e03489.md) — active/proved
 - [Interface color determines the gluing switch cost](../note_5854d4159f4b7d2625311136.md) — active/proved
