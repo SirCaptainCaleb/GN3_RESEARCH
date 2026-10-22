@@ -6,10 +6,10 @@
 - Labels: NORI1, topology, projective-turn, flatness, faithful-decoding, holonomy
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 7
+- Current version: 9
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r12094_2
-- Updated session: session_nori_r12118_5
+- Updated session: session_nori_r12147_4
 - Disposition: none
 - Successor: none
 
@@ -183,3 +183,39 @@ Hence \(U_{P'}\lambda(P')=U_P\lambda(P)=s(q)\). After all \(n\) root slides, \(U
 with \(s(u_n)=-s(u_0)\). All other columns are unchanged. This linear relation holds in the moving root-dependent frames, while each signed seam vector is obtained from its own original colored path. It evades the preceding no-go theorem for one global Euclidean square-affine chart.
 
 **Topological forcing obligation.** The negative affine mass equals half the excess cyclic switch defect over one. The signed moving frames provide a color-faithful geometric decoder with legitimate square and root-slide operations. No proof presently forces a selected outer-facet vertex into its own simplex. Such a global incidence or degree theorem would prove unrestricted NORI1.
+
+
+## Terminal-facet carrier degree and an off-path counterselector (session session_nori_r12147_4)
+
+Let \(n\ge3\), \(X_n\) be the dual cellulation of \(\operatorname{sd}\partial[-1,1]^n\), and \(P=(x,\pi)\) index its dual vertices (full flags). Let \(H(P)\) be the outer facet fixing dimension \(\pi_n\) to the root sign \((-1)^{x_{\pi_n}}\), and \(T_P=\operatorname{conv}\{s(u_0),\ldots,s(u_{n-1})\}\subset H(P)\).
+
+**Theorem (terminal-facet selector degree).** Any antipodally odd assignment \(v(P)\in H(P)\), satisfying \(v(\bar x,\pi)=-v(x,\pi)\), extends over \(X_n\) to an antipodally equivariant map \(V:X_n\to\partial[-1,1]^n\) of degree \(+1\), by the carriers below. Every extension within those carriers is equivariantly homotopic to the geometric identity.
+
+*Proof.* For each proper cubical face \(F\), let \(A(F)\) be the union of the outer facets containing \(F\). This union is star-shaped about every point of \(F\), since any segment from \(z\in A(F)\) to \(a\in F\) stays in an outer facet containing both. It satisfies \(F\subseteq G\Rightarrow A(G)\subseteq A(F)\) and \(A(\bar F)=-A(F)\).
+
+A dual cell \(D_\sigma\) is indexed by a partial flag \(\sigma=(F_1\subsetneq\cdots\subsetneq F_k)\) of proper faces. Every complete refining flag ends in a facet \(H\supseteq F_k\); its label lies in \(A(F_k)\). A face \(D_{\sigma'}\subset D_\sigma\) has a refined partial flag and its maximal cubical face contains \(F_k\), giving nested carriers. Extend the labels across dual cells inductively in the contractible \(A(F_k)\), pairing opposite cells by antipodality. The geometric realization of \(D_\sigma\) also lies in \(A(F_k)\), since every complete refining simplex lies in some outer facet containing \(F_k\). The same cellular carrier induction yields an equivariant homotopy from the constructed map to the geometric identity. Therefore its degree is \(+1\). \(\square\)
+
+**Off-path counterselector.** The formula \(v_*(x,\pi)=s(x\oplus e_{\pi_2})\) is antipodally odd and belongs to \(H(P)\), as \(n\ge3\). Yet \(x\oplus e_{\pi_2}\) is not a vertex of \(P\): it differs from the starting vertex in dimension \(\pi_2\), while every other listed vertex differs in dimension \(\pi_1\). Since a vertex of the cube can belong to the convex hull of cube vertices only if it is among them, \(v_*(P)\notin T_P\) for every \(P\). Nevertheless its carrier extension has degree \(+1\).
+
+For the color-defined moving-frame selector \(p_P=a_n s(q(P))\), the identity \(q_{\pi_n}=x_{\pi_n}+w_n\pmod2\) gives \(p_P\in H(P)\), and antipodal oddness gives \(p_{\tau P}=-p_P\). Thus the same degree-one extension exists for every legal coloring. Its degree, antipodality, terminal-facet containment, and integral vertex labels alone cannot force \(p_P\in T_P\). The counterselector \(v_*\) does not claim compatibility with the color-induced square-pivot equations (AF2) or cyclic selector invariance. Any forcing argument through this carrier must use such additional shared-edge constraints or a finer relative obstruction.
+
+
+## Coloring reconstruction from local selector transport (session session_nori_r12147_4)
+
+Let \(n\ge3\). An assignment \(q(x,\pi)\in\mathbb F_2^n\) to all rooted full geodesics is the selector of a unique legal antipodally odd original-edge coloring if and only if it obeys:
+
+(R) For \(\pi=(i,\pi_2,\ldots,\pi_n)\), \(q(x\oplus e_i,(\pi_2,\ldots,\pi_n,i))=q(x,\pi)\) (cyclic root slide).
+
+(V) \(q(x,\pi^{\mathrm{rev}})=\mathbf1+q(x,\pi)\) (same-root order reversal).
+
+(S) If \(\pi'\) swaps adjacent directions \(i,j\), then \(q_k(x,\pi')=q_k(x,\pi)\) for every \(k\notin\{i,j\}\) (square locality).
+
+The selector of a coloring is \(q_i(x,\pi)=x_i+c_i(e_i(P))\), where \(e_i(P)\) is the unique direction-\(i\) edge of the geodesic.
+
+*Proof.* Every legal coloring satisfies the relations by cyclic antiperiodicity, reversal, and two-direction square exchange. Conversely fix an original edge \(e=\{x,x\oplus e_i\}\). For an arbitrary order \(\alpha\) of the other directions set \(c_i(e)=x_i+q_i(x,(i,\alpha))\). Any two \(\alpha\)'s are connected by adjacent swaps avoiding \(i\), so (S) makes this independent of \(\alpha\).
+
+For endpoint independence, start with \(P=(x,(i,a_2,\ldots,a_n))\). Its reversed-order path has selector \(\mathbf1+q(P)\) by (V). Slide that path cyclically through \(n-1\) steps and then another \(n\) steps. The resulting path starts at \(x\oplus e_i\), begins with \(i\), and has selector \(\mathbf1+q(P)\) by (R). The root \(i\)-bit and selector \(i\)-bit both change, leaving their sum unchanged. Applying \(n\) slides to \((x,(i,\alpha))\) instead gives \((\bar x,(i,\alpha))\) with unchanged selector, so \(c_i(\bar e)=1+c_i(e)\).
+
+For an arbitrary path \(P=(x,\pi)\), cyclically slide its first \(k-1\) edges until its direction-\(i=\pi_k\) edge becomes first. The new root \(u_{k-1}\) has \(i\)-bit \(x_i\), and (R) preserves \(q_i\). Therefore \(c_i(e_i(P))=x_i+q_i(P)\). Every edge appears first on some full geodesic, proving uniqueness. \(\square\)
+
+**Consequence.** Under (R),(V),(S), the assertion that every selector class \([q(P)]\) avoids every vertex class on its own projected rainbow cycle is equivalent to a NORI1 counterexample. These three relations supply full shared-edge consistency, and the resulting selector has twisted defect at least three on every cycle. The terminal-facet counterselector above obeys the weaker equivariant facet-carrier conditions; an ordinary degree argument does not impose (R),(V),(S). The remaining problem is a no-avoidance theorem for their joint transport, rather than a new standalone geometric labeling.

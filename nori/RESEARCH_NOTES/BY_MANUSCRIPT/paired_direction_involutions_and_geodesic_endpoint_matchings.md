@@ -57,6 +57,7 @@ Sidecar only; no note body is included in the mathematical manuscript.
 - [Majority guard pairs preserve antipodal distances and force consecutive directions](../note_c65f6bb440b361ea762a7ef6.md) — active/proved
 - [Median shuffle lattices and one-square holonomy exchanges for simple antipodal bigons](../note_63844857c6223f15944d26f9.md) — active/proved
 - [Minimum-influence three-nonlinear cubic rigidity and no-feedback closure](../note_nori_minimum_influence_cubic_common_readers_and_feedback_20261015.md) — active/proved
+- [Monochromatic cubical fillings annihilate the higher antipodal cup products](../note_nori_xi_monochromatic_cubical_index_annihilator_r12202.md) — active/proved
 - [Monotone antipodal directed-cycle reconfiguration of balanced cube colorings](../note_28253102a7f86f01503ff6a5.md) — active/proved
 - [Monotone-trail edge-order extremality equivalent to unrestricted NORI1](../note_9ca179259bc29d08b2cb25ea.md) — active/proved
 - [Normal generation and cubical cycle-span of simple antipodal geodesic bigons](../note_6cf2c03748d63e9b6efde8f3.md) — active/proved

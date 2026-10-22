@@ -258,9 +258,9 @@
     },
     "nori_article_xi_matroidal_turn_geometry": {
       "composition": {
-        "body_chars": 1509636,
-        "composed_through_revision": 11784,
-        "composition_version": 415,
+        "body_chars": 1533603,
+        "composed_through_revision": 12215,
+        "composition_version": 422,
         "frontier": {
           "current": null
         },
@@ -333,9 +333,9 @@
     },
     "nori_article_xvii_sustained_research_and_unrestricted_forcing": {
       "composition": {
-        "body_chars": 129827,
-        "composed_through_revision": 12146,
-        "composition_version": 32,
+        "body_chars": 147595,
+        "composed_through_revision": 12233,
+        "composition_version": 37,
         "frontier": {
           "current": null
         },
@@ -349,10 +349,10 @@
   },
   "brainstorm_count": 0,
   "composition_model": "selected-child-assembly-v1",
-  "generated_at": "2026-10-22T01:21:46.694404+00:00",
+  "generated_at": "2026-10-22T20:11:25.587701+00:00",
   "item_count": 0,
   "mirror_format": 20,
-  "research_note_count": 567,
+  "research_note_count": 578,
   "result_count": 0,
   "retired_section_count": 2,
   "retired_subsection_count": 12,
@@ -520,9 +520,9 @@
     },
     "nori_matroidal_reachability_long_path_bounds": {
       "composition": {
-        "body_chars": 705801,
-        "composed_through_revision": 11783,
-        "composition_version": 145,
+        "body_chars": 729768,
+        "composed_through_revision": 12214,
+        "composition_version": 152,
         "frontier": {
           "current": null
         },
@@ -584,9 +584,9 @@
     },
     "nori_sustained_full_class_research_programme": {
       "composition": {
-        "body_chars": 129765,
-        "composed_through_revision": 12145,
-        "composition_version": 32,
+        "body_chars": 147533,
+        "composed_through_revision": 12232,
+        "composition_version": 37,
         "frontier": {
           "current": null
         },
@@ -727,7 +727,7 @@
       "version": 2
     }
   },
-  "snapshot_revision": 7409,
+  "snapshot_revision": 7497,
   "startup_broadcasts": [
     {
       "body": "The recent return to topology and publication restraint is welcome. The next improvement is depth of mechanism. A topological vocabulary can still conceal the old cycle of a tractable strengthening, a counterexample, and a refined local classification. Give sustained attention to why unrestricted NORI1 should hold, allowing several continuations without a theorem or persisted result.\n\nRead the current full composition of central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere, together with the relevant arguments in Articles II, XIV, and XVII. The centralized Freudenthal complex is a significant shared platform: it organizes all roots and geodesic orders with antipodal symmetry and common incidence. Investigate what that joint structure makes possible. Further local classifications deserve effort when they inform a live global mechanism; the construction alone does not supply the missing forcing implication.\n\nExplore creative labelings and maps with mathematical freedom. During their development, consider what a forced zero, complementary pair, simplex, or obstruction would mean in the original coloring. Seek information that survives shared faces and can support compatible path assembly, a justified exchange, or a contradiction from the same hypothetical counterexample. These questions guide conceptual development; they do not require a complete decoding theorem before exploration begins. Labels may emerge from geometric, variational, or other structural ideas. The suggested named topological theorems and geodesic-length labels remain possibilities, not assignments.\n\nReachability data remain available, but re-encoding them needs a new mathematical reason to help. Explain what additional structure or operation addresses their established compatibility problem. Intrinsic face tables, a new carrier, convex balance, or an equivalent reformulation can be useful intermediate constructions; identify what they actually add. When several variants again end at an unspecified global compatibility or integral-witness assertion, pause the variants and investigate that assertion or reconsider the representation. Preserve freedom to choose the root, original direction simplicity, arbitrary nonlinear color dependence, and consistency on shared edges.\n\nThe median three-route telescoping identity deserves further thought because it already supplies a same-coloring, direction-preserving recombination and a conditional descent mechanism. One meaningful question is whether global topology can force its required low-energy configuration. This is a promising option, not a compulsory route or a claim that its hypotheses are attainable.\n\nAvoid defaulting to prescribed-root density, center inclusion, bounded-radius repair, higher-rank local winding classifications, or complementary-profile experiments merely because they are tractable. Pursue such questions when their answers resolve a specific uncertainty in a serious unrestricted argument. Use computation after a structural question has emerged and when its outcome changes a proof decision. Small-dimensional agreement alone is insufficient motivation for a uniform conjecture. After a counterexample, reconsider the explanation before extending the family or inventing another strengthening.\n\nContinue coherent difficult investigations across sessions. Publish selectively when a result materially advances a central mechanism or establishes an obstruction that changes a serious research decision. Routine failed attempts, isolated refinements, and repeated descriptions of the same gap need no new subsection or note. A concise conversational report can suffice, subject to required session bookkeeping. There is no discovery or publication quota. Boundary-tournament research remains deferred until unrestricted NORI1 is solved.",
@@ -1587,14 +1587,14 @@
     },
     "central_freudenthal_subdivision_and_the_all_root_geodesic_chamber_sphere": {
       "composition": {
-        "body_chars": 96157,
-        "composed_through_revision": 12144,
-        "composition_version": 30,
+        "body_chars": 113917,
+        "composed_through_revision": 12231,
+        "composition_version": 35,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Relative w1 square on canonical seam Möbius carrier, with explicit color-decoding gap; session_nori_r12118_2",
+        "source_note": "Clarify face cost notation: endpoints determine direction support; preserve earlier exposition",
         "stale": null,
         "stale_dependencies": []
       },
@@ -4082,14 +4082,14 @@
     },
     "paired_direction_involutions_and_geodesic_endpoint_matchings": {
       "composition": {
-        "body_chars": 481322,
-        "composed_through_revision": 11782,
-        "composition_version": 136,
+        "body_chars": 505275,
+        "composed_through_revision": 12213,
+        "composition_version": 143,
         "frontier": {
           "current": null
         },
         "has_composition": true,
-        "source_note": "Q4 joint-geodesic quadratic incidence identity, with linked Q5 modular limitation",
+        "source_note": "Clarify selector/relative-curvature limitations by legal Q4 zero-curvature exchange with strict twisted-defect descent; retain full earlier argument.",
         "stale": null,
         "stale_dependencies": []
       },

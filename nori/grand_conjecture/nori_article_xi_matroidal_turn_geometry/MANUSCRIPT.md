@@ -14522,6 +14522,249 @@ All other coefficients vanish.
 The certificate is a higher-order joint-incidence identity, escaping the established nonexistence of coloring-independent linear calibrations. Its scope is dimension four. Research note `note_nori_quadratic_geodesic_calibrations_q4_q5_20261018_r11755` preserves the coefficient convention, verifier details, and a separate modular obstruction: over \(\mathbb F_{101}\), no coloring-independent geodesic-indicator polynomial of degree at most two with nonzero constant exists in any dimension \(n\ge5\). This last obstruction permits higher-degree and coloring-dependent certificates; unrestricted NORI1 and the boundary-tournament transfer remain open.
 
 
+#### Cycle-factor intersection cocycle and phase-independent turn obstructions
+
+Let \(n=2m\ge4\), and let \(c\) be an antipodally odd, vertex-balanced coloring of \(Q_n\). Factor the red \(m\)-regular bipartite graph into perfect matchings \(M_1,\ldots,M_m\). Write \(H=Q_n/\langle\tau\rangle\) and \(\pi:Q_n\to H\). The images \(\pi(M_j)\) are edge-disjoint spanning 2-factors of \(H\). Let \(\mathscr C=\{C_\alpha:\alpha\in A\}\) be their constituent simple cycles, and put \(N=|A|\).
+
+**Lemma (factor-cycle sections and independent phases).** Every \(C_\alpha\) has trivial \(\pi\)-voltage. Its two lifted cycles are alternating red-blue cycles. Choose one coherent lift \(s_\alpha:V(C_\alpha)\to Q_n\), with \(\pi s_\alpha(v)=v\) and adjacent sections adjacent in \(Q_n\), and fix an alternating bit assignment \(p^0_\alpha:E(C_\alpha)\to\mathbb F_2\). Precisely the legal balanced colorings inducing this same labelled voltage-zero 2-factorization are obtained by choosing independent phases \(\theta_\alpha\in\mathbb F_2\) and setting
+\[
+c(s_\alpha(e))=p^0_\alpha(e)+\theta_\alpha,\qquad
+c(\tau s_\alpha(e))=1+p^0_\alpha(e)+\theta_\alpha. \tag{CF1}
+\]
+In particular this fixed factorization supports \(2^N\) legal colorings.
+
+*Proof.* At each quotient vertex, the two projected \(M_j\)-edges are represented by red original edges at opposite antipodal lifts. Along a continuous lift of a \(C_\alpha\)-cycle, consecutive edges therefore alternate red and blue. The quotient \(H\) is bipartite because \(n\) is even, so \(C_\alpha\) has even length; its alternating lifted edge colors fit at the return vertex, showing the lift closes and the voltage is zero. Conversely, each pair of lifted even cycles admits two complementary alternating perfect-matching choices, one on either sheet. These choices are independent between the edge-disjoint quotient cycles and furnish one red matching in each factor at every original vertex; antipodal complementation supplies the corresponding blue edges. This establishes (CF1). \(\square\)
+
+**Proposition (nontrivial class localized at factor intersections).** Construct a CW complex \(X\) from the disjoint cycles \(C_\alpha\) by connecting all copies of each shared quotient vertex \(v\) with a full simplex. Collapsing these simplices identifies \(X\simeq H\). At their shared vertex define
+\[
+a_{\alpha\beta}(v)=[s_\alpha(v)=\tau s_\beta(v)]\in\mathbb F_2.
+\tag{CF2}
+\]
+Give every edge internal to a factor cycle value zero and every added factor-transition edge \((\alpha,v)(\beta,v)\) value \(a_{\alpha\beta}(v)\). These assignments constitute a cellular 1-cocycle \(a\) on \(X\), with
+\[
+\boxed{[a]=q_X^*w_1(Q_n\to H)\ne0\in H^1(X;\mathbb F_2),}
+\tag{CF3}
+\]
+where \(q_X:X\to H\) collapses each added simplex and \(q_X^*\) is its cohomological pullback. Replacing an individual section \(s_\alpha\) by its antipodal mate changes \(a\) by a coboundary.
+
+*Proof.* Each factor cycle has a continuous section of the double cover. Its two sections differ by the deck transformation. The disagreements (CF2) are transition functions; their sums vanish on every filled factor-intersection simplex, hence form a cocycle. The pullback covering is represented by that cocycle. The collapse \(X\to H\) is a homotopy equivalence because each collapsed fiber is a contractible simplex. The original covering is connected, so its first covering class is nonzero. Changing local sections is a gauge change. \(\square\)
+
+**Theorem (integral turn-defect affine class).** Let \(W=(v_0,e_1,v_1,\ldots,e_\ell,v_\ell=v_0)\) be an oriented closed quotient walk, and let \(\alpha_k\) denote the unique factor cycle containing \(e_k\). At the turn \(v_k\), taking \(e_k\) into \(v_k\) and \(e_{k+1}\) out (cyclic indices), define
+\[
+\kappa_\theta(k)=
+a_{\alpha_k\alpha_{k+1}}(v_k)
++p^0_{\alpha_k}(e_k)+p^0_{\alpha_{k+1}}(e_{k+1})
++\theta_{\alpha_k}+\theta_{\alpha_{k+1}} .
+\tag{CF4}
+\]
+This is zero precisely when the red lifts of the two incident quotient edges meet at the same original cube vertex. If consecutive edges belong to the same factor cycle, the turn has \(\kappa_\theta=1\) for every phase choice.
+
+Let \(G_W\) be the connected multigraph whose vertices are the distinct factor cycles traversed by \(W\) and whose edges are its cyclic turns, permitting loops and parallel edges. Let \(B_W\) be its vertex-edge incidence matrix over \(\mathbb F_2\), with loop columns zero. Then
+\[
+\boxed{\kappa_\theta=\kappa_0+B_W^{\mathsf T}\theta,\qquad
+[\kappa_\theta]=[\kappa_0]\in H^1(G_W;\mathbb F_2),\qquad
+\sum_k\kappa_\theta(k)=w_1(W).}
+\tag{CF5}
+\]
+The cohomology class is independent of the alternating-reference choices and of the phases \(\theta\). In particular if \(W\) uses each of the \(n\) original cube directions once, then \(w_1(W)=1\); this quotient walk lifts to a monochromatic antipodal geodesic precisely when \(\|\kappa_\theta\|_0=1\).
+
+Write \(h=|V(G_W)|\). For a prescribed turn \(k\), the condition \(\kappa_\theta=\mathbf1_k\) is solvable if and only if
+\[
+\boxed{[\kappa_0]=[\mathbf1_k]\quad\text{in }H^1(G_W;\mathbb F_2).}
+\tag{CF6}
+\]
+When solvable, exactly \(2^{N-h+1}\) choices of phase vector satisfy it. Different designated turns yield disjoint solution sets. Thus the total number of phase assignments making \(W\) a monochromatic antipodal geodesic after a cyclic root choice is
+\[
+\boxed{r(W)2^{N-h+1},\quad
+r(W)=|\{k:[\kappa_0]=[\mathbf1_k]\}|.}
+\tag{CF7}
+\]
+The intrinsic minimum possible twisted defect of \(W\), varying all phases, is the least Hamming weight of a representative of \([\kappa_0]\); it is odd for a direction-rainbow \(W\).
+
+*Proof.* For each quotient edge \(e\in C_\alpha\), its red lift meets the chosen local section \(s_\alpha\) when its color bit in (CF1) is zero, and meets the antipodal section otherwise. Their difference at a shared vertex is (CF4). For \(\alpha_k=\alpha_{k+1}\), successive edges on an alternating lifted factor cycle have opposite colors, giving one. The phase terms in (CF4) are the incidence coboundary. Summing around \(W\), each edge-color bit appears twice and cancels, leaving the sum of the factor-section transitions, which is the covering monodromy. A direction-rainbow quotient walk has monodromy one because its lift toggles all \(n\) directions once. It has an all-red lift after cutting at \(v_k\) precisely when all turns other than \(k\) are red-sheet compatible, i.e. \(\kappa_\theta=\mathbf1_k\). The interaction graph is connected by the cyclic sequence of factors, so \(\mathrm{rank}B_W=h-1\). The affine solution count and disjointness follow. \(\square\)
+
+**Forcing obligation.** This locates the nontrivial covering class on factor intersections and identifies an intrinsic obstruction, finer than the single voltage parity, to repairing any chosen direction-rainbow cycle by changing factor-cycle phases. It provides two distinct problems for unrestricted NORI1 in the balanced reduction: (i) establish phase-feasible direction-rainbow cycles, having \(r(W)>0\), for every admissible zero-voltage 2-factorization; (ii) force their affine solution sets to cover the whole phase cube \(\mathbb F_2^N\). Neither assertion follows from nonzero \(w_1\) alone. A proof of the second statement would produce original direction-simple monochromatic antipodal paths for every balanced coloring; no such proof is claimed here.
+
+#### Monochromatic cycle fillings preserve the covering class but kill its square
+
+Let \(n\ge4\), let \(c\) be an antipodally odd edge coloring of \(Q_n\), and write \(R\subseteq Q_n^{(1)}\) for its red spanning graph and \(H=Q_n^{(1)}/\tau\) for the folded quotient graph. Each antipodal edge orbit contains one red edge and one blue edge, so the restriction
+\[
+q:R\longrightarrow H
+\tag{MC1}
+\]
+is bijective on open edges and two-to-one on vertices. Let \(\mathcal D=\{D_\alpha\}\) be **any finite family of closed edge walks in \(R\)**. Build two finite two-dimensional CW complexes:
+\[
+S=R\cup_{\{D_\alpha\}}\bigcup_\alpha D^2_\alpha,\qquad
+K=H\cup_{\{q(D_\alpha)\}}\bigcup_\alpha D^2_\alpha,
+\tag{MC2}
+\]
+with one attached disk for each walk; the notation permits repeated walks and immersed attaching maps. The projection extends to \(q:S\to K\), sending corresponding disks homeomorphically to one another.
+
+**Theorem (monochromatic-filling index obstruction).** The natural connected two-sheeted graph cover \(Q_n^{(1)}\to H\) extends across all cells of \(K\). If \(w\in H^1(K;\mathbb F_2)\) is the class of that cover, then
+\[
+\boxed{w\ne0,\qquad w^2=0\in H^2(K;\mathbb F_2).}
+\tag{MC3}
+\]
+In particular, the conclusion holds when \(\mathcal D\) is a red cycle double cover furnished by a balanced 1-factorization, or when it consists of every cycle in every red 2-factor.
+
+*Proof.* Each attaching loop \(q(D_\alpha)\) has a closed lift \(D_\alpha\) in \(Q_n\), so the double cover extends over the attached disk by filling both \(D_\alpha\) and its antipodal blue translate. The covering class restricts on \(H\) to the nonzero antipodal graph-cover class. Thus \(w\ne0\), because a zero class on \(K\) would have zero restriction.
+
+The map \(q:S\to K\) identifies only antipodal vertices. Every open edge and every two-cell of \(K\) has a unique counterpart in \(S\), with the same attaching incidence in degrees one and two. Consequently the induced cellular cochain map identifies
+\[
+C^1(K;\mathbb F_2)\cong C^1(S;\mathbb F_2),\quad
+C^2(K;\mathbb F_2)\cong C^2(S;\mathbb F_2)
+\]
+and intertwines their coboundaries \(d^1\). Therefore
+\[
+\boxed{q^*:H^2(K;\mathbb F_2)\overset{\sim}{\longrightarrow} H^2(S;\mathbb F_2).}
+\tag{MC4}
+\]
+On the other hand, \(q:S\to K\) lifts to the covering complex: use each original red vertex and edge as its own lift, and each attached red disk as the lift of its corresponding disk in \(K\). Thus the pullback cover over \(S\) admits a section, implying \(q^*w=0\). Hence \(q^*(w^2)=(q^*w)^2=0\). Injectivity in (MC4) gives \(w^2=0\). \(\square\)
+
+**Scope.** The theorem applies to arbitrary antipodally odd cube-edge colorings, including highly nonlinear ones; neither regularity nor a cycle double cover is required. It excludes an approach that expects the projective \(w_1^2\) obstruction to arise from attaching only monochromatic cycle-filling disks to the folded quotient graph. It does not obstruct combinatorial arguments using the cycle structure, or topological constructions incorporating mixed-color cells. In contrast, the quotient of the full centrally triangulated cubical boundary is \(\mathbb RP^{n-1}\), where \(w_1^2\ne0\) for \(n\ge3\). To use the CDC within the central Freudenthal programme, one must control further two-dimensional incidence involving mixed-color original cube squares or enriched cells; monochromatic fillings alone cannot carry the requisite higher antipodal index.
+
+#### A phase-feasible Eulerian interaction criterion
+
+In the phase formalism (CF4)--(CF7), let \(W\) be any quotient direction-rainbow \(n\)-cycle and \(h\) the number of distinct factor cycles containing its edges. Its factor-interaction multigraph \(G_W\), including loops and parallel edges, is connected and Eulerian, with \(\beta_1(G_W)=n-h+1\). The total turn-defect parity is one.
+
+**Proposition.** If \(h\ge n-1\), then \([\kappa_0]\) has a one-edge representative in \(H^1(G_W;\mathbb F_2)\), so some factor phase assignment yields a monochromatic antipodal geodesic on \(W\).
+
+*Proof.* For \(h=n\), \(G_W\) is a single cycle and its odd cohomology class has a one-edge representative. For \(h=n-1\), it is a connected Eulerian graph of cycle rank two, hence the union of two edge-disjoint cycles sharing one vertex (loops and two-edge cycles permitted). Their turn parities sum to one, so one is odd and one even. By changing the factor phases, clear defects along a spanning forest of each cycle and retain one defect on the odd cycle, giving the asserted representative. This is a statement about existence of some phase assignment for the fixed factorization. It does not assert success for every phase assignment, nor that such a \(W\) exists for every factorization. \(\square\)
+
+**Forcing gap.** The interaction cohomology controls only \(w_1\) on a one-dimensional factor-cycle resolution; its higher powers vanish on that resolution. The monochromatic-filling theorem above shows that adding red CDC disks still has \(w_1^2=0\). Any proposed global topological forcing of a one-defect rainbow cycle must therefore exploit mixed-color two-cells and the higher-dimensional all-root Freudenthal incidence, with an integral decoding argument across square exchanges.
+
+##### The red CDC is an oriented surface before antipodal pinching
+
+In the balanced case \(n=2m\), \(m\ge2\), use the cyclic matching factorization \(M_1,\ldots,M_m\) and the red cycle double cover consisting of the cycles of \(F_i=M_i\cup M_{i+1}\), indexed modulo \(m\) (two formal copies of \(F_1\) when \(m=2\)). Build \(S\) in (MC2) by filling all these red cycles.
+
+**Proposition.** Every connected component of \(S\) is a compact oriented closed surface. The quotient complex \(K\) is obtained by identifying every antipodal vertex pair of \(S\); at each identified vertex its link is the disjoint union of two circles. Moreover the natural class \(w\in H^1(K;\mathbb F_2)\) annihilates all positive-degree-one classes:
+\[
+\boxed{w\smile u=0\quad(\forall u\in H^1(K;\mathbb F_2)).}
+\tag{MC5}
+\]
+
+*Proof.* At every vertex \(v\) of the red graph, the \(m\) incident matching edges have distinct indices. The faces from \(F_i\) produce a corner between index \(i\) and \(i+1\); the vertex link in \(S\) is the cyclic graph on these \(m\) indices (two parallel link edges when \(m=2\)). Every edge belongs to the two adjacent \(F_i\)-faces, so \(S\) is a closed surface on each connected red component. Orient every \(F_i\)-cycle so that its \(M_i\)-edges run from the even cube bipartition class to the odd class, and its \(M_{i+1}\)-edges run in the reverse direction. Each \(M_i\)-edge then receives opposite orientations in its two incident faces \(F_{i-1}\) and \(F_i\), proving orientability. The quotient map identifies only antipodal vertices, so the stated links of \(K\) follow.
+
+As in (MC4), \(q^*:H^2(K)\to H^2(S)\) is an isomorphism, while \(q^*w=0\). Hence for any \(u\in H^1(K)\),
+\(q^*(w\smile u)=q^*w\smile q^*u=0\); injectivity proves (MC5). \(\square\)
+
+This describes the relevant two-dimensional topology directly: monochromatic CDC faces assemble into oriented surfaces, and the nontrivial antipodal class in their vertex-pinched quotient lies in the radical of the degree-one cup pairing. In particular the CDC cannot alone furnish the projective cup-square obstruction of the central Freudenthal sphere. This does not preclude nonzero relative classes upon adjoining mixed-color cube faces or higher-dimensional cells.
+
+#### Directional curvature transgression to integral selector parity
+
+Let n>=3, let c be any antipodally odd binary coloring of original Q_n edges, and let M subset Y be the monochromatic-cubical/filled-red-cycle complexes of note_nori_xi_monochromatic_cubical_index_annihilator_r12202. Let beta_i be the projective directional square-curvature cocycle of Article XIV, given on original (i,j)-squares by Delta_j c_i and zero on other squares, and assigned value zero on each added red-walk disk. It is a relative 2-cocycle of (Y,M), since every monochromatic square has zero transverse derivative. Write eta_i=[beta_i] in H^2(Y,M;F2).
+
+**Theorem (canonical selector-parity transgression).** For every pair of distinct original directions i,j there is a class gamma_ij in H^1(M;F2), independent of auxiliary vertex choices, satisfying:
+\[
+\boxed{\partial_{\rm LES}\gamma_{ij}=\eta_i+\eta_j,}
+\tag{ST1}
+\]
+where partial_LES is the connecting map for (Y,M). For every complete antipodal direction-simple path P rooted at x, its quotient loop [P] in M satisfies
+\[
+\boxed{\langle\gamma_{ij},[P]\rangle
+=x_i+x_j+c(e_i(P))+c(e_j(P))
+=q_i(P)+q_j(P)\pmod2.}
+\tag{ST2}
+\]
+The classes obey gamma_ij+gamma_jk+gamma_ki=0 for distinct i,j,k. Hence if two projected full antipodal geodesics are homologous in M, their oriented canonical selectors agree modulo the all-one vector.
+
+*Proof.* Let b_i be the original 1-cochain taking value c(e) on direction-i edges and zero elsewhere; db_i=beta_i. Write f_ij(x)=x_i+x_j in F2. It is antipodally even: f_ij(bar x)=f_ij(x). Choose any vertex function t with t(bar x)=t(x)+1, e.g. t(x)=x_1, and define h_ij(x)=t(x)f_ij(x). The original 1-cochain
+\[
+a_{ij}=b_i+b_j+d h_{ij}
+\tag{ST3}
+\]
+is antipodally invariant, since
+\[
+\tau^*(b_i+b_j)+(b_i+b_j)=d f_{ij},
+\quad
+h_{ij}(\bar x)+h_{ij}(x)=f_{ij}(x).
+\]
+It therefore descends to a 1-cochain on the folded graph H, and da_ij=beta_i+beta_j on every quotient square.
+
+On a monochromatic square, both directional derivatives vanish, so da_ij=0. For any added red closed-walk disk, the period of a_ij on its boundary is zero: b_i+b_j vanishes edgewise on the red walk and dh_ij telescopes. Thus a_ij restricts to a cocycle on all of M, defining gamma_ij. Its extension to the 1-skeleton of Y has coboundary beta_i+beta_j on the mixed square cells and zero on the red disks, which proves (ST1).
+
+If t' is another antipodally odd vertex function, g=t+t' is antipodally even, so g f_ij descends to a quotient vertex cochain. The two constructions differ by its coboundary, proving gamma_ij is independent of t. The triangle identity follows because b_i+b_j+b_j+b_k+b_k+b_i=0 and f_ij+f_jk+f_ki=0 in F2.
+
+Finally, P contains one original edge e_l(P) in every direction l and runs from x to bar x. Therefore
+\[
+\sum_{e\in P}(b_i+b_j)(e)=c(e_i(P))+c(e_j(P)),
+\quad
+\sum_{e\in P}dh_{ij}=h_{ij}(\bar x)+h_{ij}(x)=x_i+x_j.
+\]
+This proves (ST2). If all pairwise selector differences agree for two geodesics, their selectors differ by one constant bit on every direction, hence are equal or antipodal. QED.
+
+**Integral transport consequence.** A gallery of original full antipodal geodesics whose projected loop differences bound 2-chains formed entirely from monochromatic cubical faces and red-cycle filling disks preserves the projective selector [q]. Crossing an original mixed square can change q_i+q_j by beta_i+beta_j of that square. This is the chain-level link between the CDC relative obstruction and the square-derivative selector transport in Article XVII.
+
+**Remaining unrestricted forcing gap.** ST1 and ST2 detect and constrain integral transports, but provide no theorem that a hypothetical bad coloring yields the necessary galleries or that the resulting selector incidences force a monochromatic full geodesic. The absolute classes [beta_i] already represent w_1^2 in the cubical projective boundary by Article XIV. The contribution here is their relative transgression to the canonical integral selector through the monochromatic CDC complex, rather than a new cup-square forcing theorem.
+
+##### Vertex-pinch source and the limit of selector transgression
+
+Keep the preceding complexes q:S->M. Their cellular cochains fit into a short sequence
+\[
+0\to C^*(M;\mathbb F_2)\xrightarrow{q^*}C^*(S;\mathbb F_2)
+\to A[0]\to0,\qquad
+A=C^0(S;\mathbb F_2)/q^*C^0(M;\mathbb F_2),
+\tag{VP1}
+\]
+because q^* is an isomorphism in every degree >=1. The associated cohomology sequence gives
+\[
+H^0(S)\to A\xrightarrow{\partial_{\rm pin}}H^1(M)
+\xrightarrow{q^*}H^1(S)\to0,\qquad
+H^k(M)\cong H^k(S)\ (k>=2).
+\tag{VP2}
+\]
+
+**Proposition.** The selector class gamma_ij of (ST1) lies in the vertex-pinching subspace:
+\[
+\boxed{\gamma_{ij}=\partial_{\rm pin}[h_{ij}],
+\quad h_{ij}(x)=t(x)(x_i+x_j),\quad q^*\gamma_{ij}=0.}
+\tag{VP3}
+\]
+The original antipodal class w likewise equals partial_pin[t], where t(bar x)=t(x)+1. Every cup product of two classes in ker(q^*:H^1(M)->H^1(S)) is zero. If S is connected, this kernel contains an n-dimensional subspace generated by w and gamma_(i,n), i=1,...,n-1.
+
+*Proof.* Along each red original edge the cochain b_i+b_j of (ST3) vanishes, so q^*(a_ij)=dh_ij on S. This is precisely the connecting construction in (VP1), proving (VP3). The same applies to w because q^*w=dt. Products vanish by injectivity of q^* in degree two. When S is connected, H^0(M)->H^0(S) is an isomorphism, so partial_pin is injective. Its classes are distinguished by the antipodal endpoint differences of their representatives: for t this difference is 1, and for h_(i,n) it is x_i+x_n. These n functions are independent on the set of antipodal vertex pairs, giving the final claim. QED.
+
+**Scope correction.** The selector cohomology and its relative directional-curvature transgression are valid integral transport results, but gamma_ij belongs to the vertex-pinch kernel and is insensitive to added red CDC disks. The CDC thus supplies a carrier in which the selector is homologically well-defined, without an independent forcing condition on rainbow path incidence. A proof of unrestricted NORI1 still needs a color-dependent mixed-square or minimum-path mechanism that produces a path with the required selector incidence.
+
+##### Zero-curvature square exchanges can strictly decrease twisted defect
+
+The selector-parity transgression (ST1)--(ST2) and the directional curvature classes track original direction-indexed edge-color changes. They do not determine the integer variation of twisted seam defect.
+
+**Proposition.** There is a legal antipodally odd coloring of \(Q_4\) and one original square exchange \(P\mapsto P'\) such that every directional square curvature on the exchanged square vanishes, the canonical selector is unchanged, and \(D(P)=3\), \(D(P')=1\).
+
+*Proof.* Over \(\mathbb F_2\), define the undirected direction-edge colors
+\[
+c_0(x)=1+x_1,\quad c_1(x)=1+x_0,\quad
+c_2(x)=x_0,\quad c_3(x)=1+x_0.
+\tag{ZF1}
+\]
+Each rule ignores its own direction bit and complements under \(x\mapsto\bar x\), so the coloring is legal. Starting at the zero vertex, the direction orders \((0,1,2,3)\) and \((0,2,1,3)\) have words
+\[
+w(P)=(1,0,1,0),\qquad w(P')=(1,1,0,0),
+\tag{ZF2}
+\]
+and twisted defects \(3\) and \(1\), respectively. They differ by the \((1,2)\)-square based at \(e_0\). Both direction-1 edges of this square are red and both direction-2 edges blue, so
+\[
+\beta_1(F)=\beta_2(F)=0.
+\tag{ZF3}
+\]
+Every original direction retains its color under the exchange; hence \(q(P)=q(P')\) and all selector-parity observables of (ST2) agree. Nevertheless the original alternating four-edge word becomes a two-run word, decreasing the seam count by two. Re-rooting \(P'\) after its two initial blue edges gives a red full antipodal geodesic. \(\square\)
+
+More generally, suppose one square has both direction-\(i\) edges color \(a\), both direction-\(j\) edges \(1-a\), and a full path traverses its \(i,j\) route consecutively. Let \(\ell,r\) be the colors of the immediately preceding and following path edges. Interchanging \(i,j\) replaces
+\((\ell,a,1-a,r)\) by \((\ell,1-a,a,r)\), with local twisted-defect change
+\[
+\Delta D=
+\begin{cases}
+-2,&(\ell,r)=(1-a,a),\\
++2,&(\ell,r)=(a,1-a),\\
+0,&\ell=r.
+\end{cases}
+\tag{ZF4}
+\]
+Thus even the complete four-edge coloring of the exchanged square, its vanishing directional curvature, and its fixed selector permit either sign of the defect change depending on the two exterior edge colors. The projective turn labels at all four square vertices equal one, so the full turn-field formalism retains information absent from the curvature pair.
+
+**Scope for the forcing programme.** Nontrivial relative curvature classes establish global mixed-square incidence but, even together with selector parity, do not detect every defect-reducing legal exchange. A topological descent argument needs the incoming and outgoing original edge-color phases adjacent to each exchanging square, or an equivalent joint path-port invariant, and must connect those phases across globally minimizing paths. The proposition is an obstruction to curvature-only defect forcing, not to unrestricted NORI1.
+
 ## Hamming Gallery Polarities and Twisted Transport
 
 ### Permutation galleries, unimodular transport, and endpoint degrees

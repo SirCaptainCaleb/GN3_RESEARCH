@@ -6,10 +6,10 @@
 - Labels: NORI1, topology, median, switch-defect, geodesic
 - Lifecycle: active
 - Epistemic status: proved
-- Current version: 5
+- Current version: 8
 - Retention: current and at most one previous snapshot
 - Created session: session_nori_r12024_2
-- Updated session: session_nori_r12118_3
+- Updated session: session_nori_r12147_2
 - Disposition: none
 - Successor: none
 
@@ -140,3 +140,47 @@ PROOF. The proved seam-window majority formula states that each red-to-blue seam
 COROLLARY (defect-three separation). For d=3, the median-to-seam face at each red-to-blue seam fixes two of the three B-blocks at their m values and frees the third. Its h-height is at least 1, while its antipodal face has height at most -1. Thus E avoids the entire six-face median-arm cover U. The antipodal index of boundary(B) minus U is n-2: the complement contains E, and it lies in the doubly punctured boundary sphere, which admits an antipodal map to S^(n-2).
 
 LIMITATION. This geometrizes the selected P's twisted defect as its number of intersections with a self-selected central hypersimplex and gives an odd-degree carrier with a witness on one shared original edge. Other geodesics can have color transitions differing from their h-height turns. Forcing compatible low-switch paths on the two sides of a crossing edge remains the needed color-sensitive transfer, particularly under the simultaneous minimum-defect inequalities.
+
+
+## Independent programmability of transverse derivative words (session session_nori_r12147_2)
+
+Fix the colors along the doubled cycle of an arbitrary direction-simple antipodal geodesic \(P\) of twisted defect \(d=2r+1\ge5\). Let \(E_0,\ldots,E_{d-1}\) be its nonempty disjoint red-run direction supports partitioning \([n]\), and \(R_j\) the red run on \(E_j\). For \(i\in E_j\), denote the unique direction-\(i\) edge of \(R_j\) by \(e_{j,i}\). For a direction-\(i\) edge \(e\) and \(T\subseteq[n]\setminus\{i\}\), let \(D_Tc(e)=c(e\oplus\mathbf1_T)+c(e)\) in \(\mathbb F_2\).
+
+**Theorem (independent transverse samples).** Keeping all colors along the doubled \(P\)-cycle fixed, the \(2n\) bits
+\[
+\{D_{E_{j+r}}c(e_{j,i}),\ D_{E_{j-r}}c(e_{j,i}):j\in\mathbb Z_d,\ i\in E_j\}
+\]
+can be assigned arbitrarily and independently in a legal antipodally odd coloring of every remaining original edge. These are the \(2d\) transverse derivative words sampled by the canonical seam-triangle median-arm construction.
+
+*Proof.* Two direction-\(i\) edges lie in the same antipodal orbit if and only if their exterior \(([n]\setminus\{i\})\)-bit vectors agree or are complementary. For fixed \(i\in E_j\), consider \(e_{j,i}\) and its translations by \(E_{j+r}\) and \(E_{j-r}\). Both translating blocks are nonempty, disjoint from \(E_j\), and distinct. Neither is all of \([n]\setminus\{i\}\), and their symmetric difference \(E_{j+r}\sqcup E_{j-r}\) also omits at least two nonempty blocks when \(d\ge5\). Consequently these three edges belong to three different antipodal orbits, with both translated orbits outside the doubled \(P\)-cycle. The supports \(E_j\) partition \([n]\), so different source pairs \((j,i)\) have different direction indices \(i\); their orbit assignments cannot collide. Since each source edge is red, assign the color on each translated orbit to equal the desired derivative bit, complement it on the antipodal mate, and assign remaining orbits arbitrarily. This independently realizes all \(2n\) bits. \(\square\)
+
+**Defect-three exception.** For \(d=3\), the two translated samples of a direction \(i\in E_j\) remain independent if \(|E_j|\ge2\). If \(E_j=\{i\}\), the two translating blocks partition \([n]\setminus\{i\}\), so their translated edges are antipodal mates and the two derivative bits sum to \(1\) in \(\mathbb F_2\). Different directions still yield independent orbits.
+
+**Implication.** A switch-variation restriction on these first-order derivative words cannot follow solely from the colors on the selected geodesic, the odd seam incidence, and consistency of the sampled translated edges. Such words admit arbitrary variation for \(d\ge5\). This does not rule out a contradiction using the additional inequalities from global defect minimality, the unsampled edges of complete square-exchange grids, or other geodesics of the same coloring. Those are the necessary sources of further forcing information.
+
+
+## Terminal-phase rigidity of tight canonical median spokes (session session_nori_r12147_2)
+
+Suppose P globally minimizes twisted defect d=2r+1>=3 in a legal original-cube coloring. Use the canonical red-to-blue seam vertices z_j (j modulo d), their common majority vertex m, and the recombinations R_j of (CS3). Set q_j=min_H sigma(H) over all direction-simple geodesics H:m->z_j, with unrestricted initial and final colors.
+
+**Theorem (tight-edge matching).** For every j, q_j+q_(j+r)>=d-3. If equality holds for j, EVERY pair of minimum-switch arms H_j,H_(j+r) has terminal colors beta_j=1 and beta_(j+r)=0 and opposite initial colors. The recombination R_j then also minimizes twisted defect. The tight edges T={j->j+r:q_j+q_(j+r)=d-3} are pairwise nonincident in the odd cyclic graph j->j+r, and |T|<=r.
+
+*Proof.* Pick independent minimum-switch arms. The established formula is
+D(R_j)=q_j+q_(j+r)+[alpha_j!=alpha_(j+r)]+[beta_(j+r)=0]+[beta_j=1].
+Its three indicator terms are at most one. Since D(R_j)>=d, the lower bound follows. If q_j+q_(j+r)=d-3, all three indicators equal one, hence the asserted phases and D(R_j)=d. This holds for every minimizing arm choice. A tight outgoing edge at j forces ALL minimizing arms H_j to finish in color one; a tight incoming edge at j forces all of them to finish in color zero. Thus consecutive directed cycle edges cannot both be tight. Because gcd(r,2r+1)=1, the directed graph is one odd cycle, giving |T|<=r. QED.
+
+For d=3 the threshold is zero, so at most one of the three canonical opposing spoke pairs admits two monochromatic arms; two individual monochromatic spokes may coexist. For d>=5, no opposing pair admits two monochromatic arms. The condition applies to an arbitrary nonlinear coloring and the same globally minimizing path. It retains terminal phases lost under the CS4 telescoping sum. Producing adjacent tight edges or proving a contradiction from equality-preserving R_j across overlapping median spokes remains open.
+
+
+## Near-tight pairs and monotone terminal-phase transport
+
+Retain globally minimum P, odd twisted defect d=2r+1>=3, common seam-majority root m, seam vertices z_j, and q_j=min sigma(H) over arms H:m->z_j. Let B_j be the nonempty set of possible final colors of minimum-switch arms, viewed as a subset of {0,1} ordered 0<1.
+
+**Proposition (two-level phase transport).** For k=j+r modulo d:
+(i) If q_j+q_k=d-3, then B_j={1}, B_k={0}, and every pair of minimum arms recombines to a global minimizer R_j.
+(ii) If q_j+q_k=d-2, then min(B_j)>=max(B_k), and every pair of minimum arms recombines to a global minimizer R_j.
+Thus all oriented seam-cycle edges with q_j+q_k<=d-2 transmit nonincreasing terminal colors, and edges at d-3 enforce strict decrease. Every directed closed cycle of such low-budget edges avoids strict decrease. In particular the canonical odd cycle contains an edge with q_j+q_(j+r)>=d-1.
+
+*Proof.* Part (i) is the prior tight-edge theorem. For (ii), q_j+q_k is odd, so the minimum switch-count parities differ. Along every arm, alpha=beta XOR (sigma mod 2). Hence the [alpha_j!=alpha_k] term in (CS3) equals one when beta_j=beta_k, and zero otherwise. The combined three endpoint indicators of (CS3) equal two when (beta_j,beta_k) is (0,0), (1,0), or (1,1), and zero for (0,1). The last option gives D(R_j)=d-2<d, violating global minimality. Every remaining option gives D(R_j)=d. Since the two minimum arms may be selected independently, all elements of B_j must be >= all elements of B_k. The cycle consequence follows by composing these inequalities; one strict drop cannot return to its starting value along a nonincreasing cycle. QED.
+
+**Research scope.** The terminal-phase monotonicity is an integer two-state law for minimum-switch arms in the same coloring, lost under the cyclic telescoping sum. No universal bound showing that enough opposite spoke pairs have budgets <=d-2 has been proved. The next forcing task is to use cross-root topology and globally minimizing recombinations to produce or constrain those low-budget pairs. Vertex balance and isolated proper-face data alone cannot do so.

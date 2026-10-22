@@ -1219,3 +1219,206 @@ At d=3 the same statement is the absolute relation <omega^2,[RP^2]>=1 on the clo
 *Proof.* Poincare-Lefschetz duality with F_2 coefficients sends omega_rel to a nonzero class in H_1(M;F_2), hence to the core-circle generator. Evaluating omega on that generator gives one, so cap/cup compatibility yields the displayed pairing. Equivalently, attaching a disk to the median boundary makes RP^2 and converts this relative square into its usual top Stiefel-Whitney square. QED.
 
 **What the class does and does not force.** This is an explicit relative projective obstruction supported on original-direction block-square exchange galleries. It exists for EVERY odd-defect full geodesic and every legal coloring, and alone implies no monochromatic original path. A proposed NORI1 topological decoder must obtain, under the *hypothetical absence* of a low-defect path, a boundary trivialization or extension condition extracted from the SAME coloring's median-arm derivative words which forces the relative square to vanish. The exact simultaneous derivative inequality established above is a possible integer-valued input, but no construction is known which turns it into such a cohomological cancellation. An ordinary uncolored cap cannot meet this obligation.
+
+
+##### Integral-selector conservation in three-route recombination
+
+For a full antipodal geodesic \(P\) rooted at \(x\), let \(e_k(P)\) be its direction-\(k\) edge. Define the oriented canonical selector \(q(P)\in\mathbb F_2^n\) by
+\[
+q(P)_k=x_k+c(e_k(P)).
+\tag{SC1}
+\]
+Its class modulo \(\mathbf1\) is the established projective seam selector.
+
+**Theorem (three-route conservation).** Let \(p_0,p_1,p_2\) lie in cyclic order on the doubled antipodal path of \(P\), all three forward gaps being strictly less than \(n\). Put \(m=\operatorname{med}(p_0,p_1,p_2)\), \(A_j=D(m,p_j)\). Choose arbitrary geodesics \(H_j:m\to p_j\); let \(C_j:p_j\to\bar p_{j+1}\) be the short backward arc of the doubled path. The three legal direction-once recombinations
+\[
+R_j=H_j*C_j*\operatorname{rev}(\bar H_{j+1}),\qquad j\in\mathbb Z/3,
+\tag{SC2}
+\]
+satisfy
+\[
+\boxed{q(R_0)+q(R_1)+q(R_2)=q(P)\quad\text{in }\mathbb F_2^n.}
+\tag{SC3}
+\]
+This holds for arbitrary nonlinear edge colors and every independent choice of the three arms.
+
+*Proof.* The three support sets \(A_j\) are disjoint and partition \([n]\), with \(\operatorname{supp}C_{j-2}=A_j\). Fix \(k\in A_j\), and let \(a_j(k)\) denote the color of the direction-\(k\) edge in \(H_j\). In the three reconstructed paths, direction \(k\) occurs once in \(H_j\), once in its antipodal reverse, and once in \(C_{j-2}\). The first two colors are \(a_j(k)\) and \(1+a_j(k)\), summing to \(1\) modulo two.
+
+Write \(w_k=c(e_k(P))\). The backward arc \(C_{j-2}\) starts at a vertex whose \(k\)-th bit equals \(m_k\); it uses \(k\) just once. Therefore the forward-oriented doubled-path edge underlying this backward step starts with \(k\)-th bit \(1-m_k\). The direction-\(k\) edge of \(P\), and its antipodal mate, start in the doubled orientation with bits \(x_k\) and \(1-x_k\) and carry colors \(w_k\) and \(1+w_k\). Hence the color of \(C_{j-2}\)'s direction-\(k\) edge is
+\[
+b_k=1+x_k+m_k+w_k.
+\tag{SC4}
+\]
+All \(R_j\) start at \(m\). Consequently their selector bits sum to
+\[
+3m_k+a_j(k)+(1+a_j(k))+b_k
+=m_k+1+b_k=x_k+w_k=q(P)_k.
+\]
+This proves (SC3) simultaneously for all directions. Every path segment is taken from the original coloring or its antipodal complement, and each reconstructed path uses every direction once. \(\square\)
+
+**Corollary (defect-three median tripod).** Suppose \(D(P)=3\), and choose \(p_0,p_1,p_2\) to be the red-to-blue seams of the doubled path, with red color \(0\). Each \(C_j\) is red. Put \(B_j=D(m,q(R_j))\). For \(k\in A_j\), its bits in the three arms used by the reconstructed paths have colors \(a_j(k),1+a_j(k),0\), so precisely one of the three selectors differs from \(m\) in direction \(k\). Thus
+\[
+\boxed{B_j=
+\{k\in A_j:a_j(k)=1\}
+\;\sqcup\;
+\{k\in A_{j+1}:a_{j+1}(k)=0\},
+\qquad [n]=B_0\sqcup B_1\sqcup B_2.}
+\tag{SC5}
+\]
+In particular,
+\[
+\boxed{\operatorname{med}(q(R_0),q(R_1),q(R_2))=m,\qquad
+q(R_0)+q(R_1)+q(R_2)=\bar m=q(P).}
+\tag{SC6}
+\]
+The original seam tripod and the three reconstructed selectors have the same median, and both define partitions of the original directions.
+
+**Equality propagation under global minimality.** If \(P\) is a globally minimum-defect path with \(D(P)=3\), let \(S\) be the total internal switch count of the three chosen arms and \(\Delta\in\{0,2\}\) their initial-color disagreement. The previously established three-route equation says \(\sum_jD(R_j)=3+2S+\Delta\). When \(S+\Delta/2=3\), each \(R_j\) is also a defect-three global minimizer; their selector supports then satisfy (SC5) simultaneously in the same coloring. The seam-majority vertices \(\overline{q(R_j)}\) of those three minimizers form a second tripod with median \(\bar m\).
+
+The remaining forcing question is whether global minimum defect, combined across this family and subsequent legal recombinations, compels some \(B_j=\varnothing\), another selector–path incidence, or strict descent. The conservation equation alone permits three positive selector supports and gives no unrestricted NORI1 closure.
+
+##### Secondary seam-radius descent under equality recombination
+
+For a twisted-defect-three full antipodal geodesic \(P\), let its three cyclic red-to-blue seam vertices be \(p_0,p_1,p_2\) and put \(m=\operatorname{med}(p_0,p_1,p_2)\). Write \(\ell_i=d_H(m,p_i)>0\), and define the **seam radius**
+\[
+\lambda(P)=\min_{i\in\mathbb Z/3}\ell_i.
+\tag{SR1}
+\]
+It is well-defined independently of the starting cut of the doubled path. If defect three occurs in a coloring, the finite family of defect-three paths contains a path minimizing this secondary integer statistic.
+
+**Lemma (four-run metric).** Let \(R\) have a length-\(n\) color word consisting of four nonempty alternating monochromatic runs of lengths \(a,b,c,d\), beginning in either color and with its first and last colors opposed. Thus its twisted defect is three. Its canonical red-to-blue seam-to-median distances are precisely the multiset
+\[
+\boxed{\{b,c,a+d\}.}
+\tag{SR2}
+\]
+
+*Proof.* For a word beginning with color zero, take \(w=0^a1^b0^c1^d\). On the doubled antiperiodic word \((w,1-w)\), the red-to-blue seams occur at indices \(a,\ a+b+c,\ n+a+b\) (cyclically modulo \(2n\)). Their forward cyclic gaps are \(b+c,\ n-c,\ n-b\), all strictly smaller than \(n\). Since each shorter arc of the doubled direction-once path is a geodesic, these gaps are the three pairwise Hamming distances of the seam vertices. The three legs from their coordinatewise median have lengths
+\[
+\frac{(b+c)+(n-b)-(n-c)}2=c,\quad
+\frac{(b+c)+(n-c)-(n-b)}2=b,\quad
+\frac{(n-c)+(n-b)-(b+c)}2=a+d.
+\]
+For a word beginning in color one, the red-to-blue seam gaps are the same three numbers in a cyclicly permuted order, proving the same multiset. \(\square\)
+
+**Theorem (secondary-minimality forbids synchronized one-switch arms).** Suppose a legal antipodally odd cube coloring has no defect-one full antipodal geodesic and admits a defect-three path. Choose \(P\) with \(D(P)=3\) minimizing \(\lambda(P)\) among all defect-three geodesics. For the canonical seam triangle of \(P\), there do not exist three independent median geodesics \(H_i:m\to p_i\) such that each \(H_i\) has precisely one internal color change and all three \(H_i\) have the same first-edge color.
+
+Indeed, this conclusion only needs minimality of \(\lambda\) within the defect-three family; the exclusion of defect one places it in the hypothetical globally minimum bad-path setting.
+
+*Proof.* Assume such arms exist. Let \(\ell_i=|D(m,p_i)|\); the supports partition \([n]\). The short connectors \(C_i:p_i\to\bar p_{i+1}\) are monochromatic red, on support \(D(m,p_{i+2})\). The known three-route recombinations
+\[
+R_i=H_i*C_i*\operatorname{rev}(\bar H_{i+1})
+\]
+are genuine direction-simple full antipodal paths, all rooted at \(m\).
+
+If the common initial color is zero, write
+\[
+w(H_i)=0^{t_i}1^{\ell_i-t_i},\qquad 1\le t_i<\ell_i.
+\]
+Then
+\[
+w(R_i)=0^{t_i}1^{\ell_i-t_i}
+0^{\ell_{i+2}+\ell_{i+1}-t_{i+1}}1^{t_{i+1}}.
+\tag{SR3}
+\]
+All four runs are nonempty; hence \(D(R_i)=3\). By (SR2),
+\(\lambda(R_i)\le\ell_i-t_i<\ell_i\). Selecting \(i\) with \(\ell_i=\lambda(P)\) contradicts the choice of \(P\).
+
+If the common initial color is one, write
+\[
+w(H_i)=1^{t_i}0^{\ell_i-t_i}.
+\]
+Then
+\[
+w(R_i)=1^{t_i}0^{\ell_i-t_i+\ell_{i+2}}
+1^{\ell_{i+1}-t_{i+1}}0^{t_{i+1}}.
+\tag{SR4}
+\]
+Again \(D(R_i)=3\), and (SR2) gives \(\lambda(R_i)\le \ell_{i+1}-t_{i+1}<\ell_{i+1}\). Choose \(i+1\) with \(\ell_{i+1}=\lambda(P)\). Contradiction. \(\square\)
+
+**Independent-face product corollary.** Let \(\mathcal U_i^b\) denote the set of direction-simple geodesics from \(m\) to \(p_i\) whose word has precisely one internal switch and starts with color \(b\). For a secondary seam-radius minimizer,
+\[
+\boxed{\forall b\in\{0,1\}\ \exists i\in\mathbb Z/3:\ \mathcal U_i^b=\varnothing.}
+\tag{SR5}
+\]
+The quantifiers follow because the three arms have disjoint direction supports and can be chosen independently; nonempty \(\mathcal U_i^b\) for every \(i\) would give the prohibited triple. This is a same-coloring integral phase-avoidance condition over three genuine cube faces.
+
+**Interpretation and surviving gap.** The earlier full-arm saturation example is viable for an arbitrary defect-three path but cannot occur at the chosen secondary-minimal defect-three path. This resolves the specific equality plateau formed by three one-switch arms with identical initial colors. Other equality patterns persist: \(S+\Delta/2=3\) allows, for example, \((S,\Delta)=(2,2)\) with a monochromatic arm or \((3,0)\) with switch counts cyclically \((0,2,1)\). A proof of unrestricted NORI1 still requires forcing a contradiction across these surviving alternatives or establishing a complementary global-topological selection theorem. The theorem does not address a hypothetical coloring whose global minimum defect exceeds three.
+
+#### Two-root red-cap exchange and sectorwise minimum-blue rigidity
+
+Fix an antipodally odd binary coloring \(c\) of \(Q_n\), \(n\ge2\). For a direction order \(\pi=(A,i,B)\), where \(A,B\) are disjoint ordered lists partitioning \([n]\setminus\{i\}\), take the two full antipodal geodesics
+\[
+P=P(x,\pi),\qquad P^\dagger=P(x\oplus e_i,\pi).
+\tag{RP1}
+\]
+Write \(a,b\) for the numbers of blue edges of \(P\) in its \(A\)-prefix and \(B\)-suffix, and \(a^\dagger,b^\dagger\) for the corresponding counts of \(P^\dagger\). The two paths traverse the SAME original direction-\(i\) edge in opposite orientations, of color \(z\). Thus \(b(P)=a+z+b\), \(b(P^\dagger)=a^\dagger+z+b^\dagger\).
+
+**Theorem (two-root red-cap exchange).** There are two full direction-once antipodal geodesics \(Q_1,Q_2\) in the original cube satisfying
+\[
+\boxed{b(Q_1)=a+b^\dagger,\qquad
+b(Q_2)=a^\dagger+b,\qquad
+b(Q_1)+b(Q_2)=b(P)+b(P^\dagger)-2z.}
+\tag{RP2}
+\]
+They have the same direction order. Namely, if \(c_i(x)=0\), they use \((i,A,B)\) and roots \(x\oplus e_i,x\). If \(c_i(x)=1\), they use \((A,B,i)\) and roots \(x,x\oplus e_i\), respectively.
+
+*Proof.* Put \(u=x\oplus\mathbf1_A\). The first path's prefix joins \(x\) to \(u\), and the second path's suffix joins \(u\) to \(\overline{x\oplus e_i}\); concatenating produces a direction-simple path \(T_1:x\to\overline{x\oplus e_i}\) using each direction other than \(i\) once and exactly \(a+b^\dagger\) blue edges. Similarly the second prefix and first suffix join into \(T_2:x\oplus e_i\to\bar x\), with \(a^\dagger+b\) blue edges. The direction-\(i\) edges at \(x\) and \(\overline{x\oplus e_i}\) are antipodal, hence one is red. Attach that red edge at the corresponding end of BOTH \(T_1,T_2\). The new paths are full antipodal geodesics, and their blue counts and orders are as asserted. \(\square\)
+
+Put \(\delta=\min_P b(P)\). The two individual inequalities \(b(Q_1),b(Q_2)\ge\delta\) give
+\[
+\boxed{a+b^\dagger\ge\delta,\qquad a^\dagger+b\ge\delta.}
+\tag{RP3}
+\]
+If \(P\) globally minimizes blue count and its direction-\(i\) edge is blue, then \(\delta=a+1+b\). Therefore
+\[
+\boxed{a^\dagger\ge a+1,\qquad b^\dagger\ge b+1,\qquad
+b(P^\dagger)\ge\delta+2.}
+\tag{RP4}
+\]
+The strict increase takes place separately in the directions before and after the blue edge. In particular no globally minimum-blue path can have blue first or last.
+
+**Corollary (critical one-blue sensitivity).** If \(\delta=1\) and \(P\) has its sole blue edge in direction \(i\), with nonempty lists \(A,B\), then \(P^\dagger\) has that same blue edge and at least one further blue edge on EACH side of it. Equivalently, if \(\mathrm{pre}_j\) is the original vertex before direction \(j\) along \(P\), then
+\[
+\boxed{\sum_{j\in A}D_i c_j(\mathrm{pre}_j)\ge1,\qquad
+\sum_{j\in B}D_i c_j(\mathrm{pre}_j)\ge1.}
+\tag{RP5}
+\]
+Here \(D_i c_j(v)=c_j(v)+c_j(v\oplus e_i)\pmod2\), with values represented by the integers zero and one. These constraints involve two disjoint sets of original square derivatives in the SAME coloring.
+
+**Corollary (pinned-edge good-to-bad boundary).** Suppose a legal coloring admits red full geodesics, all of which contain a designated red edge \(e\) of direction \(i\), and \(P\) is one such geodesic with \(e\) strictly internal. Then \(P^\dagger\) has at least one blue edge in each of its \(A\)- and \(B\)-sectors. Indeed, if the second suffix were red, \(Q_1\) would be a red full geodesic avoiding \(e\); if the second prefix were red, \(Q_2\) would be such a path. The cap edge in either new geodesic belongs to an orbit different from the internal edge \(e\), since both \(A\) and \(B\) are nonempty. Thus the red-witness unavoidability hypothesis from the critical orbit-flip reduction itself forces the two-sided transverse-sensitivity obstruction.
+
+**Scope and remaining problem.** The exchange preserves every original direction once, shared-edge coloring, and arbitrary nonlinear dependence of the coloring. It is a genuine paired-root surgery rather than a convex average of unrelated path labels. RP4 supplies a global-minimum variational condition; RP5 supplies two simultaneously witnessed square-derivative constraints around a critical one-blue geodesic. Neither alone forces an unblocked exchange: a coloring may have influence of \(i\) in both sectors. To prove unrestricted NORI1 by this method, one must combine these paired-root constraints across the common all-root Freudenthal chamber incidence or the globally pinned edge family, obtaining an inconsistency from the same hypothetical bad coloring.
+
+#### Order-independent two-root uncrossing and facewise blocking
+
+Retain the notation of (RP1). Set \(u=x\oplus\mathbf1_A\), \(v=u\oplus e_i\), and \(z=c(\{u,v\})\). For a geodesic \(H\), let \(b(H)\) be its number of blue edges. Define the face costs
+\[
+\begin{aligned}
+\alpha&=\min_{H:x\to u}b(H),&
+\alpha'&=\min_{H:x\oplus e_i\to v}b(H),\\
+\beta&=\min_{H:v\to\bar x}b(H),&
+\beta'&=\min_{H:u\to\overline{x\oplus e_i}}b(H).
+\end{aligned}
+\tag{RF1}
+\]
+Each minimum ranges over all orders of its direction set. Empty sets have zero cost.
+
+**Theorem (facewise minimum calibration).** Suppose a full geodesic \(P\) traverses directions \(A,i,B\), starts at \(x\), and minimizes the blue-edge count \(\delta\) over all roots and direction orders. Its \(A\)-prefix and \(B\)-suffix attain \(\alpha,\beta\), and
+\[
+\boxed{\delta=\alpha+z+\beta,\qquad
+\alpha'\ge\alpha+z,\qquad \beta'\ge\beta+z.}
+\tag{RF2}
+\]
+Consequently the minimum blue count over all opposite-root paths with the direction partition \(A,i,B\), allowing independent orders within \(A,B\), is at least \(\delta+2z\).
+
+*Proof.* Replacing either portion of \(P\) by a cheaper geodesic in its face would produce a full direction-once antipodal geodesic below the global minimum. Thus the portions attain \(\alpha,\beta\). Independently choose any \(A\)-geodesic \(H'_A:x\oplus e_i\to v\), and any \(B\)-geodesic \(H'_B:u\to\overline{x\oplus e_i}\). Concatenating the original prefix of \(P\) with \(H'_B\), or \(H'_A\) with the original suffix of \(P\), uses all directions other than \(i\) once. The two direction-\(i\) edges at \(x\) and \(\overline{x\oplus e_i}\) are antipodal, so one is red. Append that red edge at the suitable end of both concatenations. These two full antipodal geodesics have blue counts \(\alpha+b(H'_B)\) and \(b(H'_A)+\beta\), both at least \(\delta=\alpha+z+\beta\). Minimizing independently over the orders of \(H'_A,H'_B\) proves (RF2). The opposite-root partitioned family has least blue count \(\alpha'+z+\beta'\), giving the last assertion. \(\square\)
+
+**Corollary (disjoint transverse blockers).** Write \(p=|A|\), \(q=|B|\). The \(A\)-face from \(x\oplus e_i\) to \(v\) contains at least \(p(\alpha+z)\) blue edges, and the \(B\)-face from \(u\) to \(\overline{x\oplus e_i}\) contains at least \(q(\beta+z)\) blue edges. These faces are vertex-disjoint, since their fixed \(i\)-bits differ. In particular, if \(\delta=z=1\), then \(A,B\) are nonempty, the two original face portions of \(P\) are red, neither translated face admits a red geodesic between its specified terminals, and the translated faces together contain at least \(p+q=n-1\) distinct blue edges.
+
+*Proof.* In any Boolean \(p\)-face, cyclically rotate a fixed order of its directions to obtain \(p\) pairwise edge-disjoint geodesics between opposite corners: their next directions differ at each rank, and edges at different ranks cannot coincide. Every such path in the translated \(A\)-face contains at least \(\alpha+z\) blue edges by (RF2), yielding the first bound; the second follows identically. The faces have opposed fixed \(i\)-bits. If \(\delta=z=1\), then \(\alpha=\beta=0\). An empty side would give \(0\ge1\) in its corresponding inequality in (RF2). \(\square\)
+
+**Corollary (mandatory red edge).** Let \(P\) be a red full geodesic through an internal edge \(e=\{u,v\}\) in direction \(i\). If every red full geodesic contains \(e\), then neither translated face in (RF1) supports a red geodesic between its stated terminals. Consequently these faces contain at least \(|A|+|B|=n-1\) blue edges, none in direction \(i\).
+
+*Proof.* A red geodesic in either translated face could be joined to the corresponding red portion of \(P\) and the red cap to make a full red geodesic whose only direction-\(i\) edge is at a terminal of \(P\). Since \(A,B\) are nonempty, this edge differs from \(e\). Apply the disjoint cyclic-order geodesics in both translated faces. \(\square\)
+
+The face inequalities quantify over all direction orders, strengthening the matching-order inequalities (RP4)--(RP5). The blockers may coexist as separate face cuts. A further forcing mechanism must couple these face cuts across the common all-root Freudenthal complex, or use the full family of monochromatic witnesses pinned to a critical edge orbit. No NORI1 closure follows from these estimates alone.
