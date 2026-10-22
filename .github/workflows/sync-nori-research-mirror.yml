@@ -31,3 +31,4 @@ jobs:
     secrets: inherit
 # Refresh requested 2026-10-19: regenerate after Article XVII research assessment.
 # Refresh requested 2026-10-21: regenerate NORI research context from current Supabase nori manuscript.
+# Refresh requested 2026-10-22: regenerate NORI research context after latest Article XVII session.
